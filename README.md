@@ -23,8 +23,8 @@ conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
 pip install ninja git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
 
 # Clone the NerfBridge Repo
-git clone https://github.com/javieryu/semantics_nerf_bridge.git
-git checkout safesplat
+git clone https://github.com/chengine/safer-splat.git
+git checkout ros
 
 # Install NerfBridge (and Nerfstudio as a dependency)
 # Make sure your conda env is activated!
