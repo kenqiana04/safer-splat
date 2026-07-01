@@ -1,0 +1,14 @@
+===== START v1_bestD_repro 2026-07-01T15:23:20+08:00 =====
+[2026-07-01T15:23:31] script=/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_risk_aware_v1_pre_cbf_comparison.py
+[2026-07-01T15:23:31] scene=flight methods=['risk_aware_v1_pre_cbf'] trials=57-57
+[2026-07-01T15:23:31] risk_aware_v1_pre_cbf=candidate_budget=2000 near_distance_threshold=0.05 heading_distance_threshold=0.25 heading_cos_threshold=0.5 risk_score=risk_v2_hybrid
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt
+There are 281756 Gaussians in the GSplat model
+[2026-07-01T15:23:37] loaded_risk_score_table=work/risk_aware_cbf/results/flight_risk_score_table_v0.csv
+[2026-07-01T15:23:37] start method=risk_aware_v1_pre_cbf trial=57
+ball-to-ellipsoid
+[2026-07-01T15:23:46] done method=risk_aware_v1_pre_cbf trial=57 stop=stopped_before_goal collision=True steps=138 min_h=-0.0003094291314482689
+[2026-07-01T15:23:48] final_summary=[{"scene": "flight", "method": "risk_aware_v1_pre_cbf", "rows": 1, "success_count": 0, "collision_count": 1, "collision_free_count": 0, "stopped_before_goal_count": 1, "solver_failed_count": 0, "min_safety_h_min": -0.0003094291314482689, "min_safety_h_mean": -0.0003094291314482689, "goal_distance_reduction_ratio_mean": 0.5226823949556479, "final_goal_distance_mean": 0.26635536920716085, "closest_goal_distance_mean": 0.26635536920716085, "num_steps_mean": 138.0, "runtime_mean_mean": 0.05238800479666046, "runtime_p95_mean": 0.058430590108036994, "intervention_rate_mean": 0.6014492753623188, "control_deviation_mean_mean": 0.03891824291521867, "active_constraints_mean_mean": 187.16666666666666, "qp_infeasible_count_sum": 0}]
+[2026-07-01T15:23:48] wrote=work/risk_aware_cbf/results/flight_trial57_v1_bestD_repro
+===== DONE v1_bestD_repro 2026-07-01T15:23:49+08:00 =====

@@ -1,0 +1,33 @@
+[2026-07-01T16:18:52] run R0_default /disk1/zlab/conda_envs/safer_splat_official/bin/python /disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_risk_aware_v2_adaptive_recovery.py --scene flight --methods risk_aware_v2_adaptive_recovery --trial-start 57 --trial-end 57 --max-steps 800 --risk-score risk_v2_hybrid --output-dir work/risk_aware_cbf/results/risk_aware_v2_flight_trial57_sweep/R0_default --device cuda --resume --skip-existing --recovery-k-repulse 1.0 --recovery-k-damp 0.5 --unsafe-recovery-lambda 1.0 --critical-recovery-lambda 0.5 --recovery-near 0.15 --recovery-budget full
+[2026-07-01T16:19:25] run R1_stronger_repulse /disk1/zlab/conda_envs/safer_splat_official/bin/python /disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_risk_aware_v2_adaptive_recovery.py --scene flight --methods risk_aware_v2_adaptive_recovery --trial-start 57 --trial-end 57 --max-steps 800 --risk-score risk_v2_hybrid --output-dir work/risk_aware_cbf/results/risk_aware_v2_flight_trial57_sweep/R1_stronger_repulse --device cuda --resume --skip-existing --recovery-k-repulse 2.0 --recovery-k-damp 0.5 --unsafe-recovery-lambda 1.0 --critical-recovery-lambda 0.5 --recovery-near 0.15 --recovery-budget full
+[2026-07-01T16:19:58] run R2_more_damping /disk1/zlab/conda_envs/safer_splat_official/bin/python /disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_risk_aware_v2_adaptive_recovery.py --scene flight --methods risk_aware_v2_adaptive_recovery --trial-start 57 --trial-end 57 --max-steps 800 --risk-score risk_v2_hybrid --output-dir work/risk_aware_cbf/results/risk_aware_v2_flight_trial57_sweep/R2_more_damping --device cuda --resume --skip-existing --recovery-k-repulse 1.0 --recovery-k-damp 1.0 --unsafe-recovery-lambda 1.0 --critical-recovery-lambda 0.5 --recovery-near 0.15 --recovery-budget full
+[2026-07-01T16:20:31] run R3_larger_recovery_near /disk1/zlab/conda_envs/safer_splat_official/bin/python /disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_risk_aware_v2_adaptive_recovery.py --scene flight --methods risk_aware_v2_adaptive_recovery --trial-start 57 --trial-end 57 --max-steps 800 --risk-score risk_v2_hybrid --output-dir work/risk_aware_cbf/results/risk_aware_v2_flight_trial57_sweep/R3_larger_recovery_near --device cuda --resume --skip-existing --recovery-k-repulse 1.0 --recovery-k-damp 0.5 --unsafe-recovery-lambda 1.0 --critical-recovery-lambda 0.5 --recovery-near 0.25 --recovery-budget full
+[2026-07-01T16:21:04] run R4_full_conservative /disk1/zlab/conda_envs/safer_splat_official/bin/python /disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_risk_aware_v2_adaptive_recovery.py --scene flight --methods risk_aware_v2_adaptive_recovery --trial-start 57 --trial-end 57 --max-steps 800 --risk-score risk_v2_hybrid --output-dir work/risk_aware_cbf/results/risk_aware_v2_flight_trial57_sweep/R4_full_conservative --device cuda --resume --skip-existing --recovery-k-repulse 2.0 --recovery-k-damp 1.0 --unsafe-recovery-lambda 1.0 --critical-recovery-lambda 0.5 --recovery-near 0.25 --recovery-budget full
+Traceback (most recent call last):
+  File "/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_risk_aware_v2_trial57_sweep.py", line 245, in <module>
+    raise SystemExit(main())
+  File "/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_risk_aware_v2_trial57_sweep.py", line 238, in main
+    (args.output_dir / "sweep_metrics.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
+  File "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/json/encoder.py", line 325, in _iterencode_list
+    yield from chunks
+  File "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type int64 is not JSON serializable
+[2026-07-01T16:22:14] skip_existing R0_default
+[2026-07-01T16:22:14] skip_existing R1_stronger_repulse
+[2026-07-01T16:22:14] skip_existing R2_more_damping
+[2026-07-01T16:22:14] skip_existing R3_larger_recovery_near
+[2026-07-01T16:22:14] skip_existing R4_full_conservative
+wrote work/risk_aware_cbf/results/risk_aware_v2_flight_trial57_sweep
