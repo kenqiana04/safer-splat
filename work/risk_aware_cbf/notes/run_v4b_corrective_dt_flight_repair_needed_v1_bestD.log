@@ -1,0 +1,32 @@
+[2026-07-02T13:48:22] script=/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_v4b_corrective_dt_filter.py
+[2026-07-02T13:48:22] scene=flight method=risk_aware_v1_bestD output_dir=work/risk_aware_cbf/results/v4b_corrective_dt_flight_repair_needed_v1_bestD
+[2026-07-02T13:48:22] trials=[20, 21, 22, 46, 56, 57, 58, 66]
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt
+There are 281756 Gaussians in the GSplat model
+[2026-07-02T13:48:28] loaded_risk_score_table=work/risk_aware_cbf/results/flight_risk_score_table_v0.csv
+[2026-07-02T13:48:28] start trial=20
+ball-to-ellipsoid
+[2026-07-02T13:49:12] done trial=20 collision=False base_v=15 exec_v=15 corrections=15 failed=15
+[2026-07-02T13:49:12] start trial=21
+ball-to-ellipsoid
+[2026-07-02T13:49:28] done trial=21 collision=False base_v=0 exec_v=0 corrections=0 failed=0
+[2026-07-02T13:49:28] start trial=22
+ball-to-ellipsoid
+[2026-07-02T13:49:44] done trial=22 collision=False base_v=0 exec_v=0 corrections=0 failed=0
+[2026-07-02T13:49:44] start trial=46
+ball-to-ellipsoid
+[2026-07-02T13:49:58] done trial=46 collision=False base_v=0 exec_v=0 corrections=0 failed=0
+[2026-07-02T13:49:58] start trial=56
+ball-to-ellipsoid
+[2026-07-02T13:50:13] done trial=56 collision=False base_v=0 exec_v=0 corrections=0 failed=0
+[2026-07-02T13:50:13] start trial=57
+ball-to-ellipsoid
+[2026-07-02T13:50:27] done trial=57 collision=False base_v=0 exec_v=0 corrections=0 failed=0
+[2026-07-02T13:50:27] start trial=58
+ball-to-ellipsoid
+[2026-07-02T13:50:44] done trial=58 collision=False base_v=0 exec_v=0 corrections=0 failed=0
+[2026-07-02T13:50:44] start trial=66
+ball-to-ellipsoid
+[2026-07-02T13:50:57] done trial=66 collision=False base_v=0 exec_v=0 corrections=0 failed=0
+[2026-07-02T13:50:57] summary=[{'scene': 'flight', 'method': 'risk_aware_v1_bestD', 'rows': 8, 'navigation_executed_count': 8, 'collision_count': 0, 'collision_free_count': 8, 'qp_infeasible_count': 0, 'num_steps': 1197, 'base_margin_violation_count': 15, 'exec_margin_violation_count': 15, 'margin_violation_reduction': 0, 'correction_used_count': 15, 'correction_success_count': 0, 'correction_failed_count': 15, 'progress_mean': 0.5502362844303678, 'runtime_mean': 0.06920030725147278, 'runtime_p95': 0.2458211361197755, 'runtime_correction_mean': 0.013473465263743099, 'control_delta_mean': 0.00046338405295768203, 'min_safety_h_min': 0.00044458743650466204}]
