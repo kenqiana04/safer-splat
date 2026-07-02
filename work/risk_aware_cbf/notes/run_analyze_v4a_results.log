@@ -1,0 +1,146 @@
+{
+  "trial57_summary": [
+    {
+      "section": "projection",
+      "method": "active_set_verified_projection",
+      "rows": 1,
+      "repair_success_count": 1,
+      "repair_failure_count": 0,
+      "repair_distance_mean": 0.01999999494050517,
+      "repair_distance_p95": 0.01999999494050517,
+      "repair_distance_max": 0.01999999494050517,
+      "projection_iterations_mean": 1.0,
+      "num_candidates_evaluated_mean": 858.0,
+      "full_query_verified_count": 1
+    },
+    {
+      "section": "projection",
+      "method": "repulsion",
+      "rows": 1,
+      "repair_success_count": 1,
+      "repair_failure_count": 0,
+      "repair_distance_mean": 0.014999078278396794,
+      "repair_distance_p95": 0.014999078278396794,
+      "repair_distance_max": 0.014999078278396794,
+      "projection_iterations_mean": 3.0,
+      "num_candidates_evaluated_mean": 3.0,
+      "full_query_verified_count": 1
+    },
+    {
+      "section": "projection",
+      "method": "verified_projection",
+      "rows": 1,
+      "repair_success_count": 1,
+      "repair_failure_count": 0,
+      "repair_distance_mean": 0.01999999494050517,
+      "repair_distance_p95": 0.01999999494050517,
+      "repair_distance_max": 0.01999999494050517,
+      "projection_iterations_mean": 1.0,
+      "num_candidates_evaluated_mean": 858.0,
+      "full_query_verified_count": 1
+    }
+  ],
+  "repair_summary": [
+    {
+      "section": "projection",
+      "method": "active_set_verified_projection",
+      "rows": 8,
+      "repair_success_count": 8,
+      "repair_failure_count": 0,
+      "repair_distance_mean": 0.005625000659245944,
+      "repair_distance_p95": 0.016499996466496455,
+      "repair_distance_max": 0.01999999494050517,
+      "projection_iterations_mean": 0.625,
+      "num_candidates_evaluated_mean": 536.25,
+      "full_query_verified_count": 8
+    },
+    {
+      "section": "projection",
+      "method": "repulsion",
+      "rows": 8,
+      "repair_success_count": 8,
+      "repair_failure_count": 0,
+      "repair_distance_mean": 0.004999757520345377,
+      "repair_distance_p95": 0.013249036446282034,
+      "repair_distance_max": 0.014999078278396794,
+      "projection_iterations_mean": 1.0,
+      "num_candidates_evaluated_mean": 1.0,
+      "full_query_verified_count": 8
+    },
+    {
+      "section": "projection",
+      "method": "verified_projection",
+      "rows": 8,
+      "repair_success_count": 8,
+      "repair_failure_count": 0,
+      "repair_distance_mean": 0.005625000659245944,
+      "repair_distance_p95": 0.016499996466496455,
+      "repair_distance_max": 0.01999999494050517,
+      "projection_iterations_mean": 0.625,
+      "num_candidates_evaluated_mean": 536.25,
+      "full_query_verified_count": 8
+    }
+  ],
+  "navigation_summary": [
+    {
+      "section": "v4_active_projection_flight100",
+      "method": "risk_aware_v1_bestD",
+      "rows": 100,
+      "navigation_executed_count": 100,
+      "collision_count": 0,
+      "collision_free_count": 100,
+      "min_safety_h_min": 0.00019784551113843918,
+      "progress_mean": 0.45208792380405577,
+      "runtime_mean": 0.05755820847275613,
+      "runtime_p95": 0.06430873767938465,
+      "qp_infeasible_count": 0,
+      "repair_used_count": 8,
+      "repair_distance_mean": 0.005625000659245944
+    },
+    {
+      "section": "startguard_heuristic_reference",
+      "method": "risk_aware_v1_bestD",
+      "rows": 100,
+      "navigation_executed_count": 100,
+      "collision_count": 0,
+      "collision_free_count": 100,
+      "min_safety_h_min": 0.00019784551113843918,
+      "progress_mean": 0.45205064332574657,
+      "runtime_mean": 0.05795951384430193,
+      "runtime_p95": 0.06526291041448712,
+      "qp_infeasible_count": 0,
+      "repair_used_count": 8,
+      "repair_distance_mean": 0.004999758638790424
+    }
+  ],
+  "dt_summary": [
+    {
+      "section": "dt_repair_needed",
+      "rows": 8,
+      "num_steps": 1183,
+      "predicted_next_violation_count": 21,
+      "actual_next_violation_count": 21,
+      "min_current_h": 0.00041247426997870207,
+      "min_predicted_next_h": 0.00041247426997870207,
+      "min_actual_next_h": 0.00041247426997870207,
+      "prediction_error_mean": 0.0,
+      "prediction_error_p95": 0.0
+    },
+    {
+      "section": "dt_flight20",
+      "rows": 20,
+      "num_steps": 1735,
+      "predicted_next_violation_count": 93,
+      "actual_next_violation_count": 93,
+      "min_current_h": 0.00032773660495877266,
+      "min_predicted_next_h": 0.00032773660495877266,
+      "min_actual_next_h": 0.00032773660495877266,
+      "prediction_error_mean": 0.0,
+      "prediction_error_p95": 0.0
+    }
+  ],
+  "active_success_all": true,
+  "dt_predicted_violations": 114,
+  "dt_actual_violations": 114,
+  "recommended_decision": "PROCEED_TO_V4B_CORRECTIVE_DT_FILTER"
+}

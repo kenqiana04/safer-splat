@@ -1,0 +1,11 @@
+[2026-07-02T12:37:04] script=/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/startguard_verified_projection.py
+[2026-07-02T12:37:04] scene=flight method=all
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt
+There are 281756 Gaussians in the GSplat model
+[2026-07-02T12:37:09] start trial=57 method=repulsion
+[2026-07-02T12:37:09] done trial=57 method=repulsion success=True repaired_h=0.0006421486614271998 dist=0.014999078278396794 verified=True
+[2026-07-02T12:37:09] start trial=57 method=verified_projection
+[2026-07-02T12:37:23] done trial=57 method=verified_projection success=True repaired_h=0.0010280344868078828 dist=0.01999999494050517 verified=True
+[2026-07-02T12:37:23] start trial=57 method=active_set_verified_projection
+[2026-07-02T12:37:38] done trial=57 method=active_set_verified_projection success=True repaired_h=0.0010280344868078828 dist=0.01999999494050517 verified=True

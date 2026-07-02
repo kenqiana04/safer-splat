@@ -1,0 +1,82 @@
+[2026-07-02T12:39:02] script=/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_v4_projection_repair_needed.py
+[2026-07-02T12:39:02] scene=flight initial_safety_csv=work/risk_aware_cbf/results/startguard_flight100_v1_bestD/initial_safety_trials.csv
+[2026-07-02T12:39:02] repair_needed_trials=[20, 21, 22, 46, 56, 57, 58, 66]
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt
+There are 281756 Gaussians in the GSplat model
+[2026-07-02T12:39:06] start trial=20 method=repulsion
+[2026-07-02T12:39:07] done trial=20 method=repulsion success=True h=0.0007382184267044067 dist=0.004999998897493626
+[2026-07-02T12:39:07] start trial=20 method=verified_projection
+[2026-07-02T12:39:21] done trial=20 method=verified_projection success=True h=0.0007134404731914401 dist=0.004999987696595037
+[2026-07-02T12:39:21] start trial=20 method=active_set_verified_projection
+[2026-07-02T12:39:36] done trial=20 method=active_set_verified_projection success=True h=0.0007134404731914401 dist=0.004999987696595037
+[2026-07-02T12:39:36] start trial=21 method=repulsion
+[2026-07-02T12:39:36] done trial=21 method=repulsion success=True h=0.0007963349344208837 dist=0.005000004165779427
+[2026-07-02T12:39:36] start trial=21 method=verified_projection
+[2026-07-02T12:39:50] done trial=21 method=verified_projection success=True h=0.0006949310190975666 dist=0.005000001910681131
+[2026-07-02T12:39:50] start trial=21 method=active_set_verified_projection
+[2026-07-02T12:45:40] script=/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_v4_projection_repair_needed.py
+[2026-07-02T12:45:40] scene=flight initial_safety_csv=work/risk_aware_cbf/results/startguard_flight100_v1_bestD/initial_safety_trials.csv
+[2026-07-02T12:45:40] repair_needed_trials=[20, 21, 22, 46, 56, 57, 58, 66]
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt
+There are 281756 Gaussians in the GSplat model
+[2026-07-02T12:45:45] skip_existing trial=20 method=repulsion
+[2026-07-02T12:45:45] skip_existing trial=20 method=verified_projection
+[2026-07-02T12:45:45] skip_existing trial=20 method=active_set_verified_projection
+[2026-07-02T12:45:45] skip_existing trial=21 method=repulsion
+[2026-07-02T12:45:45] skip_existing trial=21 method=verified_projection
+[2026-07-02T12:45:45] skip_existing trial=21 method=active_set_verified_projection
+[2026-07-02T12:45:45] skip_existing trial=22 method=repulsion
+[2026-07-02T12:45:45] start trial=22 method=verified_projection
+[2026-07-02T12:45:45] done trial=22 method=verified_projection success=True h=0.0009930204832926393 dist=1.4196578824845937e-08
+[2026-07-02T12:45:45] start trial=22 method=active_set_verified_projection
+[2026-07-02T12:45:45] done trial=22 method=active_set_verified_projection success=True h=0.0009930204832926393 dist=1.4196578824845937e-08
+[2026-07-02T12:45:45] start trial=46 method=repulsion
+[2026-07-02T12:45:45] done trial=46 method=repulsion success=True h=0.0008885327260941267 dist=0.004999998880025081
+[2026-07-02T12:45:45] start trial=46 method=verified_projection
+[2026-07-02T12:49:35] script=/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_v4_projection_repair_needed.py
+[2026-07-02T12:49:35] scene=flight initial_safety_csv=work/risk_aware_cbf/results/startguard_flight100_v1_bestD/initial_safety_trials.csv
+[2026-07-02T12:49:35] repair_needed_trials=[20, 21, 22, 46, 56, 57, 58, 66]
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt
+There are 281756 Gaussians in the GSplat model
+[2026-07-02T12:49:39] skip_existing trial=20 method=repulsion
+[2026-07-02T12:49:39] skip_existing trial=20 method=verified_projection
+[2026-07-02T12:49:39] skip_existing trial=20 method=active_set_verified_projection
+[2026-07-02T12:49:39] skip_existing trial=21 method=repulsion
+[2026-07-02T12:49:39] skip_existing trial=21 method=verified_projection
+[2026-07-02T12:49:39] skip_existing trial=21 method=active_set_verified_projection
+[2026-07-02T12:49:39] skip_existing trial=22 method=repulsion
+[2026-07-02T12:49:39] skip_existing trial=22 method=verified_projection
+[2026-07-02T12:49:39] skip_existing trial=22 method=active_set_verified_projection
+[2026-07-02T12:49:39] skip_existing trial=46 method=repulsion
+[2026-07-02T12:49:39] start trial=46 method=verified_projection
+[2026-07-02T12:49:54] done trial=46 method=verified_projection success=True h=0.0006874161772429943 dist=0.005000000242706752
+[2026-07-02T12:49:54] start trial=46 method=active_set_verified_projection
+[2026-07-02T12:50:08] done trial=46 method=active_set_verified_projection success=True h=0.0006874161772429943 dist=0.005000000242706752
+[2026-07-02T12:50:08] start trial=56 method=repulsion
+[2026-07-02T12:50:08] done trial=56 method=repulsion success=True h=0.0006113918498158455 dist=3.2861395473211514e-09
+[2026-07-02T12:50:08] start trial=56 method=verified_projection
+[2026-07-02T12:50:08] done trial=56 method=verified_projection success=True h=0.0006113918498158455 dist=3.2861395473211514e-09
+[2026-07-02T12:50:08] start trial=56 method=active_set_verified_projection
+[2026-07-02T12:50:08] done trial=56 method=active_set_verified_projection success=True h=0.0006113918498158455 dist=3.2861395473211514e-09
+[2026-07-02T12:50:08] start trial=57 method=repulsion
+[2026-07-02T12:50:09] done trial=57 method=repulsion success=True h=0.0006421486614271998 dist=0.014999078278396794
+[2026-07-02T12:50:09] start trial=57 method=verified_projection
+[2026-07-02T12:50:23] done trial=57 method=verified_projection success=True h=0.0010280344868078828 dist=0.01999999494050517
+[2026-07-02T12:50:23] start trial=57 method=active_set_verified_projection
+[2026-07-02T12:50:37] done trial=57 method=active_set_verified_projection success=True h=0.0010280344868078828 dist=0.01999999494050517
+[2026-07-02T12:50:37] start trial=58 method=repulsion
+[2026-07-02T12:50:37] done trial=58 method=repulsion success=True h=0.0008719133911654353 dist=0.009998958758068915
+[2026-07-02T12:50:37] start trial=58 method=verified_projection
+[2026-07-02T12:50:52] done trial=58 method=verified_projection success=True h=0.0005571166984736919 dist=0.00999999930048029
+[2026-07-02T12:50:52] start trial=58 method=active_set_verified_projection
+[2026-07-02T12:51:06] done trial=58 method=active_set_verified_projection success=True h=0.0005571166984736919 dist=0.00999999930048029
+[2026-07-02T12:51:06] start trial=66 method=repulsion
+[2026-07-02T12:51:06] done trial=66 method=repulsion success=True h=0.0007171436445787549 dist=3.7002807947999446e-09
+[2026-07-02T12:51:06] start trial=66 method=verified_projection
+[2026-07-02T12:51:06] done trial=66 method=verified_projection success=True h=0.0007171436445787549 dist=3.7002807947999446e-09
+[2026-07-02T12:51:06] start trial=66 method=active_set_verified_projection
+[2026-07-02T12:51:06] done trial=66 method=active_set_verified_projection success=True h=0.0007171436445787549 dist=3.7002807947999446e-09
+[2026-07-02T12:51:07] summary=[{'scene': 'flight', 'method': 'repulsion', 'num_trials': 8, 'repair_success_count': 8, 'repair_failure_count': 0, 'repair_distance_mean': 0.004999757520345377, 'repair_distance_p95': 0.013249036446282034, 'repair_distance_max': 0.014999078278396794, 'repair_steps_mean': 1.0, 'projection_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 1.0, 'full_query_verified_count': 8}, {'scene': 'flight', 'method': 'verified_projection', 'num_trials': 8, 'repair_success_count': 8, 'repair_failure_count': 0, 'repair_distance_mean': 0.005625000659245944, 'repair_distance_p95': 0.016499996466496455, 'repair_distance_max': 0.01999999494050517, 'repair_steps_mean': 0.625, 'projection_iterations_mean': 0.625, 'num_candidates_evaluated_mean': 536.25, 'full_query_verified_count': 8}, {'scene': 'flight', 'method': 'active_set_verified_projection', 'num_trials': 8, 'repair_success_count': 8, 'repair_failure_count': 0, 'repair_distance_mean': 0.005625000659245944, 'repair_distance_p95': 0.016499996466496455, 'repair_distance_max': 0.01999999494050517, 'repair_steps_mean': 0.625, 'projection_iterations_mean': 0.625, 'num_candidates_evaluated_mean': 536.25, 'full_query_verified_count': 8}]
