@@ -1,0 +1,22 @@
+{
+  "args": {
+    "scene": "flight",
+    "trial_start": 0,
+    "trial_end": 99,
+    "safety_margin": 0.0005,
+    "near_unsafe_margin": 0.001,
+    "method": "risk_aware_v1_bestD",
+    "dry_run": true,
+    "initial_safety_csv": "work/risk_aware_cbf/results/startguard_initial_safety_flight_100/initial_safety_trials.csv",
+    "output_dir": "work/risk_aware_cbf/results/startguard_flight100_manifest"
+  },
+  "total_trials": 100,
+  "needs_repair_count": 8,
+  "navigate_from_original_count": 92,
+  "repair_then_navigation_count": 8,
+  "status_counts": {
+    "initial_near_unsafe": 3,
+    "initial_safe": 92,
+    "initial_unsafe": 5
+  }
+}

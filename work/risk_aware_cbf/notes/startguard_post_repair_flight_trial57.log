@@ -1,0 +1,12 @@
+[2026-07-01T17:13:17] script=/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_startguard_post_repair_navigation.py
+[2026-07-01T17:13:17] scene=flight trial=57 methods=['safer_splat_filter_post_repair', 'risk_aware_v1_bestD_post_repair']
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt
+There are 281756 Gaussians in the GSplat model
+[2026-07-01T17:13:22] loaded_risk_score_table=work/risk_aware_cbf/results/flight_risk_score_table_v0.csv
+[2026-07-01T17:13:22] start method=safer_splat_filter_post_repair mapped_method=safer_splat_filter
+ball-to-ellipsoid
+[2026-07-01T17:13:40] done method=safer_splat_filter_post_repair collision=False min_h=0.000642147846519947 runtime_mean=0.11134652208591647
+[2026-07-01T17:13:40] start method=risk_aware_v1_bestD_post_repair mapped_method=risk_aware_v1_pre_cbf
+ball-to-ellipsoid
+[2026-07-01T17:13:50] done method=risk_aware_v1_bestD_post_repair collision=False min_h=0.000642147846519947 runtime_mean=0.05505041135748958

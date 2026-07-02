@@ -1,0 +1,6 @@
+[2026-07-01T17:12:39] script=/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/startguard_repair_initial_state.py
+[2026-07-01T17:12:39] scene=flight trial=57
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt
+There are 281756 Gaussians in the GSplat model
+[2026-07-01T17:12:45] repair_summary={'scene': 'flight', 'trial': 57, 'repair_success': 'True', 'original_start_x': -0.05220765975846667, 'original_start_y': -0.11486672717071932, 'original_start_z': -0.07993204035098048, 'repaired_start_x': -0.06253296136856079, 'repaired_start_y': -0.1133786290884018, 'repaired_start_z': -0.06915494054555893, 'goal_x': 0.4322076597584667, 'goal_y': 0.1348667271707193, 'goal_z': 0.0399320403509805, 'original_min_safety_h': -0.0003094291314482689, 'repaired_min_safety_h': 0.000642147846519947, 'safety_margin': 0.0005, 'repair_distance': 0.014999072286579145, 'repair_steps': 3, 'max_repair_distance': 0.2, 'nearest_or_most_violated_gaussian_id_initial': 218853, 'nearest_or_most_violated_gaussian_id_final': 218853, 'failure_reason': ''}

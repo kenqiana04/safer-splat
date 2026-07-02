@@ -1,0 +1,307 @@
+[2026-07-02T10:25:16] script=/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_startguard_flight100.py
+[2026-07-02T10:25:16] scene=flight trials=0-99 method=safer_splat_filter dry_run=False
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt
+There are 281756 Gaussians in the GSplat model
+[2026-07-02T10:25:21] start_navigation method=safer_splat_filter trial=0 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:25:33] done method=safer_splat_filter trial=0 collision=False min_h=0.0006012368248775601 qpinfeasible=0
+[2026-07-02T10:25:33] start_navigation method=safer_splat_filter trial=1 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:25:44] done method=safer_splat_filter trial=1 collision=False min_h=0.0012490706285461783 qpinfeasible=0
+[2026-07-02T10:25:44] start_navigation method=safer_splat_filter trial=2 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:25:57] done method=safer_splat_filter trial=2 collision=False min_h=0.0007776990532875061 qpinfeasible=0
+[2026-07-02T10:25:57] start_navigation method=safer_splat_filter trial=3 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:26:08] done method=safer_splat_filter trial=3 collision=False min_h=0.0013759367866441607 qpinfeasible=0
+[2026-07-02T10:26:08] start_navigation method=safer_splat_filter trial=4 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:26:19] done method=safer_splat_filter trial=4 collision=False min_h=0.001369744655676186 qpinfeasible=0
+[2026-07-02T10:26:19] start_navigation method=safer_splat_filter trial=5 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:26:31] done method=safer_splat_filter trial=5 collision=False min_h=0.0011001419043168426 qpinfeasible=0
+[2026-07-02T10:26:31] start_navigation method=safer_splat_filter trial=6 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:26:45] done method=safer_splat_filter trial=6 collision=False min_h=0.0007961421506479383 qpinfeasible=0
+[2026-07-02T10:26:45] start_navigation method=safer_splat_filter trial=7 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:27:02] done method=safer_splat_filter trial=7 collision=False min_h=0.0005112328799441457 qpinfeasible=0
+[2026-07-02T10:27:02] start_navigation method=safer_splat_filter trial=8 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:27:17] done method=safer_splat_filter trial=8 collision=False min_h=0.0009239447535946965 qpinfeasible=0
+[2026-07-02T10:27:17] start_navigation method=safer_splat_filter trial=9 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:27:34] done method=safer_splat_filter trial=9 collision=False min_h=0.0005074029322713614 qpinfeasible=0
+[2026-07-02T10:27:34] start_navigation method=safer_splat_filter trial=10 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:27:45] done method=safer_splat_filter trial=10 collision=False min_h=0.0007119100773707032 qpinfeasible=0
+[2026-07-02T10:27:45] start_navigation method=safer_splat_filter trial=11 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:27:57] done method=safer_splat_filter trial=11 collision=False min_h=0.000669551664032042 qpinfeasible=0
+[2026-07-02T10:27:57] start_navigation method=safer_splat_filter trial=12 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:28:18] done method=safer_splat_filter trial=12 collision=False min_h=0.00034141039941459894 qpinfeasible=0
+[2026-07-02T10:28:18] start_navigation method=safer_splat_filter trial=13 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:28:41] done method=safer_splat_filter trial=13 collision=False min_h=0.0003255571937188506 qpinfeasible=0
+[2026-07-02T10:28:41] start_navigation method=safer_splat_filter trial=14 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:28:50] done method=safer_splat_filter trial=14 collision=False min_h=0.00034176651388406754 qpinfeasible=0
+[2026-07-02T10:28:50] start_navigation method=safer_splat_filter trial=15 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:28:54] done method=safer_splat_filter trial=15 collision=False min_h=0.00122303597163409 qpinfeasible=0
+[2026-07-02T10:28:54] start_navigation method=safer_splat_filter trial=16 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:28:58] done method=safer_splat_filter trial=16 collision=False min_h=0.0009070709347724915 qpinfeasible=0
+[2026-07-02T10:28:58] start_navigation method=safer_splat_filter trial=17 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:29:03] done method=safer_splat_filter trial=17 collision=False min_h=0.0006833110237494111 qpinfeasible=0
+[2026-07-02T10:29:03] start_navigation method=safer_splat_filter trial=18 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:29:05] done method=safer_splat_filter trial=18 collision=False min_h=0.000925130327232182 qpinfeasible=0
+[2026-07-02T10:29:05] start_navigation method=safer_splat_filter trial=19 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:29:07] done method=safer_splat_filter trial=19 collision=False min_h=0.0008767816470935941 qpinfeasible=0
+[2026-07-02T10:29:07] start_navigation method=safer_splat_filter trial=20 status=initial_near_unsafe start_source=repaired_start
+ball-to-ellipsoid
+[2026-07-02T10:29:32] done method=safer_splat_filter trial=20 collision=False min_h=0.0004049845738336444 qpinfeasible=0
+[2026-07-02T10:29:33] start_navigation method=safer_splat_filter trial=21 status=initial_near_unsafe start_source=repaired_start
+ball-to-ellipsoid
+[2026-07-02T10:29:53] done method=safer_splat_filter trial=21 collision=False min_h=0.0006456790724769235 qpinfeasible=0
+[2026-07-02T10:29:53] start_navigation method=safer_splat_filter trial=22 status=initial_near_unsafe start_source=repaired_start
+ball-to-ellipsoid
+[2026-07-02T10:30:13] done method=safer_splat_filter trial=22 collision=False min_h=0.000935626681894064 qpinfeasible=0
+[2026-07-02T10:30:13] start_navigation method=safer_splat_filter trial=23 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:30:35] done method=safer_splat_filter trial=23 collision=False min_h=0.0008430829038843513 qpinfeasible=0
+[2026-07-02T10:30:35] start_navigation method=safer_splat_filter trial=24 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:31:17] done method=safer_splat_filter trial=24 collision=False min_h=0.0006162081845104694 qpinfeasible=0
+[2026-07-02T10:31:17] start_navigation method=safer_splat_filter trial=25 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:31:25] done method=safer_splat_filter trial=25 collision=False min_h=0.0009727622382342815 qpinfeasible=0
+[2026-07-02T10:31:25] start_navigation method=safer_splat_filter trial=26 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:31:36] done method=safer_splat_filter trial=26 collision=False min_h=0.0005586219485849142 qpinfeasible=0
+[2026-07-02T10:31:36] start_navigation method=safer_splat_filter trial=27 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:31:49] done method=safer_splat_filter trial=27 collision=False min_h=0.0004874829901382327 qpinfeasible=0
+[2026-07-02T10:31:50] start_navigation method=safer_splat_filter trial=28 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:32:01] done method=safer_splat_filter trial=28 collision=False min_h=0.0007253899239003658 qpinfeasible=0
+[2026-07-02T10:32:01] start_navigation method=safer_splat_filter trial=29 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:32:09] done method=safer_splat_filter trial=29 collision=False min_h=0.0013604991836473346 qpinfeasible=0
+[2026-07-02T10:32:09] start_navigation method=safer_splat_filter trial=30 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:32:17] done method=safer_splat_filter trial=30 collision=False min_h=0.0015117883449420333 qpinfeasible=0
+[2026-07-02T10:32:17] start_navigation method=safer_splat_filter trial=31 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:32:43] done method=safer_splat_filter trial=31 collision=False min_h=0.00019784539472311735 qpinfeasible=0
+[2026-07-02T10:32:43] start_navigation method=safer_splat_filter trial=32 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:33:03] done method=safer_splat_filter trial=32 collision=False min_h=0.00044705800246447325 qpinfeasible=0
+[2026-07-02T10:33:03] start_navigation method=safer_splat_filter trial=33 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:33:16] done method=safer_splat_filter trial=33 collision=False min_h=0.0008493338245898485 qpinfeasible=0
+[2026-07-02T10:33:16] start_navigation method=safer_splat_filter trial=34 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:33:59] done method=safer_splat_filter trial=34 collision=False min_h=0.0005023042904213071 qpinfeasible=0
+[2026-07-02T10:33:59] start_navigation method=safer_splat_filter trial=35 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:34:42] done method=safer_splat_filter trial=35 collision=False min_h=0.0004959733923897147 qpinfeasible=0
+[2026-07-02T10:34:42] start_navigation method=safer_splat_filter trial=36 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:35:22] done method=safer_splat_filter trial=36 collision=False min_h=0.0004719898570328951 qpinfeasible=0
+[2026-07-02T10:35:22] start_navigation method=safer_splat_filter trial=37 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:36:01] done method=safer_splat_filter trial=37 collision=False min_h=0.0002964070299640298 qpinfeasible=0
+[2026-07-02T10:36:01] start_navigation method=safer_splat_filter trial=38 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:36:28] done method=safer_splat_filter trial=38 collision=False min_h=0.000319100683555007 qpinfeasible=0
+[2026-07-02T10:36:28] start_navigation method=safer_splat_filter trial=39 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:36:52] done method=safer_splat_filter trial=39 collision=False min_h=0.000562085653655231 qpinfeasible=0
+[2026-07-02T10:36:52] start_navigation method=safer_splat_filter trial=40 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:37:13] done method=safer_splat_filter trial=40 collision=False min_h=0.0008158339187502861 qpinfeasible=0
+[2026-07-02T10:37:13] start_navigation method=safer_splat_filter trial=41 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:37:34] done method=safer_splat_filter trial=41 collision=False min_h=0.0006200360367074609 qpinfeasible=0
+[2026-07-02T10:37:34] start_navigation method=safer_splat_filter trial=42 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:37:55] done method=safer_splat_filter trial=42 collision=False min_h=0.0008097157115116715 qpinfeasible=0
+[2026-07-02T10:37:55] start_navigation method=safer_splat_filter trial=43 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:38:16] done method=safer_splat_filter trial=43 collision=False min_h=0.0010607588337734342 qpinfeasible=0
+[2026-07-02T10:38:16] start_navigation method=safer_splat_filter trial=44 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:38:39] done method=safer_splat_filter trial=44 collision=False min_h=0.0010504123056307435 qpinfeasible=0
+[2026-07-02T10:38:39] start_navigation method=safer_splat_filter trial=45 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:38:58] done method=safer_splat_filter trial=45 collision=False min_h=0.000923407613299787 qpinfeasible=0
+[2026-07-02T10:38:58] start_navigation method=safer_splat_filter trial=46 status=initial_near_unsafe start_source=repaired_start
+ball-to-ellipsoid
+[2026-07-02T10:39:17] done method=safer_splat_filter trial=46 collision=False min_h=0.0008885323768481612 qpinfeasible=0
+[2026-07-02T10:39:17] start_navigation method=safer_splat_filter trial=47 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:39:34] done method=safer_splat_filter trial=47 collision=False min_h=0.001019362243823707 qpinfeasible=0
+[2026-07-02T10:39:34] start_navigation method=safer_splat_filter trial=48 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:39:51] done method=safer_splat_filter trial=48 collision=False min_h=0.0011915623908862472 qpinfeasible=0
+[2026-07-02T10:39:51] start_navigation method=safer_splat_filter trial=49 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:40:07] done method=safer_splat_filter trial=49 collision=False min_h=0.0015971445245668292 qpinfeasible=0
+[2026-07-02T10:40:07] start_navigation method=safer_splat_filter trial=50 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:40:23] done method=safer_splat_filter trial=50 collision=False min_h=0.0015385228907689452 qpinfeasible=0
+[2026-07-02T10:40:23] start_navigation method=safer_splat_filter trial=51 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:40:38] done method=safer_splat_filter trial=51 collision=False min_h=0.0017227231292054057 qpinfeasible=0
+[2026-07-02T10:40:38] start_navigation method=safer_splat_filter trial=52 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:40:54] done method=safer_splat_filter trial=52 collision=False min_h=0.0017226479249075055 qpinfeasible=0
+[2026-07-02T10:40:54] start_navigation method=safer_splat_filter trial=53 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:41:11] done method=safer_splat_filter trial=53 collision=False min_h=0.001247573527507484 qpinfeasible=0
+[2026-07-02T10:41:11] start_navigation method=safer_splat_filter trial=54 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:41:26] done method=safer_splat_filter trial=54 collision=False min_h=0.0016102256486192346 qpinfeasible=0
+[2026-07-02T10:41:26] start_navigation method=safer_splat_filter trial=55 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:42:02] done method=safer_splat_filter trial=55 collision=False min_h=0.0005405297270044684 qpinfeasible=0
+[2026-07-02T10:42:02] start_navigation method=safer_splat_filter trial=56 status=initial_near_unsafe start_source=repaired_start
+ball-to-ellipsoid
+[2026-07-02T10:42:20] done method=safer_splat_filter trial=56 collision=False min_h=0.0006113918498158455 qpinfeasible=0
+[2026-07-02T10:42:20] start_navigation method=safer_splat_filter trial=57 status=initial_unsafe start_source=repaired_start
+ball-to-ellipsoid
+[2026-07-02T10:42:38] done method=safer_splat_filter trial=57 collision=False min_h=0.000642147846519947 qpinfeasible=0
+[2026-07-02T10:42:38] start_navigation method=safer_splat_filter trial=58 status=initial_near_unsafe start_source=repaired_start
+ball-to-ellipsoid
+[2026-07-02T10:42:59] done method=safer_splat_filter trial=58 collision=False min_h=0.0004190206527709961 qpinfeasible=0
+[2026-07-02T10:42:59] start_navigation method=safer_splat_filter trial=59 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:43:25] done method=safer_splat_filter trial=59 collision=False min_h=0.00039757159538567066 qpinfeasible=0
+[2026-07-02T10:43:25] start_navigation method=safer_splat_filter trial=60 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:43:52] done method=safer_splat_filter trial=60 collision=False min_h=0.0005249995738267899 qpinfeasible=0
+[2026-07-02T10:43:52] start_navigation method=safer_splat_filter trial=61 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:44:22] done method=safer_splat_filter trial=61 collision=False min_h=0.0002332237781956792 qpinfeasible=0
+[2026-07-02T10:44:22] start_navigation method=safer_splat_filter trial=62 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:44:53] done method=safer_splat_filter trial=62 collision=False min_h=0.0005245687207207084 qpinfeasible=0
+[2026-07-02T10:44:53] start_navigation method=safer_splat_filter trial=63 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:45:11] done method=safer_splat_filter trial=63 collision=False min_h=0.0009977282024919987 qpinfeasible=0
+[2026-07-02T10:45:11] start_navigation method=safer_splat_filter trial=64 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:45:12] done method=safer_splat_filter trial=64 collision=False min_h=0.0017816860927268863 qpinfeasible=0
+[2026-07-02T10:45:12] start_navigation method=safer_splat_filter trial=65 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:45:26] done method=safer_splat_filter trial=65 collision=False min_h=0.0007117876084521413 qpinfeasible=0
+[2026-07-02T10:45:26] start_navigation method=safer_splat_filter trial=66 status=initial_near_unsafe start_source=repaired_start
+ball-to-ellipsoid
+[2026-07-02T10:45:42] done method=safer_splat_filter trial=66 collision=False min_h=0.0006006635958328843 qpinfeasible=0
+[2026-07-02T10:45:42] start_navigation method=safer_splat_filter trial=67 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:45:58] done method=safer_splat_filter trial=67 collision=False min_h=0.0009063382167369127 qpinfeasible=0
+[2026-07-02T10:45:58] start_navigation method=safer_splat_filter trial=68 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:46:12] done method=safer_splat_filter trial=68 collision=False min_h=0.000764600234106183 qpinfeasible=0
+[2026-07-02T10:46:12] start_navigation method=safer_splat_filter trial=69 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:46:25] done method=safer_splat_filter trial=69 collision=False min_h=0.0009255643235519528 qpinfeasible=0
+[2026-07-02T10:46:25] start_navigation method=safer_splat_filter trial=70 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:46:36] done method=safer_splat_filter trial=70 collision=False min_h=0.000918256351724267 qpinfeasible=0
+[2026-07-02T10:46:36] start_navigation method=safer_splat_filter trial=71 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:46:51] done method=safer_splat_filter trial=71 collision=False min_h=0.0002752299187704921 qpinfeasible=0
+[2026-07-02T10:46:51] start_navigation method=safer_splat_filter trial=72 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:47:07] done method=safer_splat_filter trial=72 collision=False min_h=0.0008008950389921665 qpinfeasible=0
+[2026-07-02T10:47:07] start_navigation method=safer_splat_filter trial=73 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:47:22] done method=safer_splat_filter trial=73 collision=False min_h=0.0008889860473573208 qpinfeasible=0
+[2026-07-02T10:47:22] start_navigation method=safer_splat_filter trial=74 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:47:38] done method=safer_splat_filter trial=74 collision=False min_h=0.0008256550645455718 qpinfeasible=0
+[2026-07-02T10:47:38] start_navigation method=safer_splat_filter trial=75 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:48:17] done method=safer_splat_filter trial=75 collision=False min_h=0.0005113949300721288 qpinfeasible=0
+[2026-07-02T10:48:17] start_navigation method=safer_splat_filter trial=76 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:48:51] done method=safer_splat_filter trial=76 collision=False min_h=0.0014110197080299258 qpinfeasible=0
+[2026-07-02T10:48:51] start_navigation method=safer_splat_filter trial=77 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:49:23] done method=safer_splat_filter trial=77 collision=False min_h=0.0028563207015395164 qpinfeasible=0
+[2026-07-02T10:49:23] start_navigation method=safer_splat_filter trial=78 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:49:53] done method=safer_splat_filter trial=78 collision=False min_h=0.00328878965228796 qpinfeasible=0
+[2026-07-02T10:49:53] start_navigation method=safer_splat_filter trial=79 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:50:24] done method=safer_splat_filter trial=79 collision=False min_h=0.001803377061150968 qpinfeasible=0
+[2026-07-02T10:50:24] start_navigation method=safer_splat_filter trial=80 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:51:01] done method=safer_splat_filter trial=80 collision=False min_h=0.0007368681253865361 qpinfeasible=0
+[2026-07-02T10:51:01] start_navigation method=safer_splat_filter trial=81 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:51:35] done method=safer_splat_filter trial=81 collision=False min_h=0.0007480989443138242 qpinfeasible=0
+[2026-07-02T10:51:35] start_navigation method=safer_splat_filter trial=82 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:52:10] done method=safer_splat_filter trial=82 collision=False min_h=0.0007962300442159176 qpinfeasible=0
+[2026-07-02T10:52:10] start_navigation method=safer_splat_filter trial=83 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:52:18] done method=safer_splat_filter trial=83 collision=False min_h=0.0006608859403058887 qpinfeasible=0
+[2026-07-02T10:52:18] start_navigation method=safer_splat_filter trial=84 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:52:22] done method=safer_splat_filter trial=84 collision=False min_h=0.0012483493192121387 qpinfeasible=0
+[2026-07-02T10:52:22] start_navigation method=safer_splat_filter trial=85 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:52:44] done method=safer_splat_filter trial=85 collision=False min_h=0.00020390900317579508 qpinfeasible=0
+[2026-07-02T10:52:44] start_navigation method=safer_splat_filter trial=86 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:53:03] done method=safer_splat_filter trial=86 collision=False min_h=0.0003816888201981783 qpinfeasible=0
+[2026-07-02T10:53:03] start_navigation method=safer_splat_filter trial=87 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:53:18] done method=safer_splat_filter trial=87 collision=False min_h=0.000787234865128994 qpinfeasible=0
+[2026-07-02T10:53:18] start_navigation method=safer_splat_filter trial=88 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:53:31] done method=safer_splat_filter trial=88 collision=False min_h=0.0009849247289821506 qpinfeasible=0
+[2026-07-02T10:53:31] start_navigation method=safer_splat_filter trial=89 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:53:42] done method=safer_splat_filter trial=89 collision=False min_h=0.0010682604042813182 qpinfeasible=0
+[2026-07-02T10:53:42] start_navigation method=safer_splat_filter trial=90 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:53:53] done method=safer_splat_filter trial=90 collision=False min_h=0.0014372396981343627 qpinfeasible=0
+[2026-07-02T10:53:53] start_navigation method=safer_splat_filter trial=91 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:54:03] done method=safer_splat_filter trial=91 collision=False min_h=0.0012566420482471585 qpinfeasible=0
+[2026-07-02T10:54:03] start_navigation method=safer_splat_filter trial=92 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:54:14] done method=safer_splat_filter trial=92 collision=False min_h=0.0010126959532499313 qpinfeasible=0
+[2026-07-02T10:54:14] start_navigation method=safer_splat_filter trial=93 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:54:29] done method=safer_splat_filter trial=93 collision=False min_h=0.0003574276342988014 qpinfeasible=0
+[2026-07-02T10:54:30] start_navigation method=safer_splat_filter trial=94 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:54:52] done method=safer_splat_filter trial=94 collision=False min_h=0.0002663765335455537 qpinfeasible=0
+[2026-07-02T10:54:52] start_navigation method=safer_splat_filter trial=95 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:55:10] done method=safer_splat_filter trial=95 collision=False min_h=0.00045991060324013233 qpinfeasible=0
+[2026-07-02T10:55:10] start_navigation method=safer_splat_filter trial=96 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:55:21] done method=safer_splat_filter trial=96 collision=False min_h=0.0012907310156151652 qpinfeasible=0
+[2026-07-02T10:55:21] start_navigation method=safer_splat_filter trial=97 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:55:31] done method=safer_splat_filter trial=97 collision=False min_h=0.001074764528311789 qpinfeasible=0
+[2026-07-02T10:55:31] start_navigation method=safer_splat_filter trial=98 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:55:41] done method=safer_splat_filter trial=98 collision=False min_h=0.0011705270735546947 qpinfeasible=0
+[2026-07-02T10:55:41] start_navigation method=safer_splat_filter trial=99 status=initial_safe start_source=original_start
+ball-to-ellipsoid
+[2026-07-02T10:55:52] done method=safer_splat_filter trial=99 collision=False min_h=0.0006012368248775601 qpinfeasible=0
+[2026-07-02T10:55:53] summary=[{'scene': 'flight', 'method': 'safer_splat_filter', 'total_trials': 100, 'initial_safe': 92, 'initial_near_unsafe': 7, 'initial_unsafe': 1, 'repair_needed_count': 8, 'repair_used_count': 8, 'repair_success_count': 8, 'repair_failure_count': 0, 'repair_distance_mean': 0.004999758638790424, 'repair_distance_p95': 0.013249031838096802, 'repair_distance_max': 0.014999072286579145, 'repair_steps_mean': 1.0, 'repair_steps_p95': 2.6499999999999995, 'repair_steps_max': 3.0, 'navigation_executed_count': 100, 'collision_count': 0, 'collision_free_count': 100, 'min_safety_h_min': 0.00019784539472311735, 'progress_mean': 0.4517657412778257, 'runtime_mean': 0.10866290991479646, 'runtime_p95': 0.12067706932965666, 'qp_infeasible_count': 0, 'original_initial_min_safety_h_min': -0.0003094291314482689}]
+STARTGUARD_BASELINE_EXIT:0
