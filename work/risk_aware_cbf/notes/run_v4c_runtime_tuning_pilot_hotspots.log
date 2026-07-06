@@ -1,0 +1,192 @@
+[2026-07-03T15:37:06] script=/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_v4c_runtime_tuning_pilot.py
+[2026-07-03T15:37:06] trials=[12, 13, 14, 31, 37, 85]
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt
+There are 281756 Gaussians in the GSplat model
+[2026-07-03T15:37:12] risk_score_table=work/risk_aware_cbf/results/flight_risk_score_table_v0.csv
+[2026-07-03T15:37:12] config={'config_id': 'R0_H3_N128_baseline', 'horizon': 3, 'num_sequences': 128, 'sequence_noise_scale': 0.15, 'w_goal': 0.2, 'w_safety': 10.0}
+[2026-07-03T15:37:12] skip_existing config=R0_H3_N128_baseline trial=12
+[2026-07-03T15:37:12] skip_existing config=R0_H3_N128_baseline trial=13
+[2026-07-03T15:37:12] skip_existing config=R0_H3_N128_baseline trial=14
+[2026-07-03T15:37:12] skip_existing config=R0_H3_N128_baseline trial=31
+[2026-07-03T15:37:12] skip_existing config=R0_H3_N128_baseline trial=37
+[2026-07-03T15:37:12] skip_existing config=R0_H3_N128_baseline trial=85
+[2026-07-03T15:37:12] config={'config_id': 'R1_H3_N64', 'horizon': 3, 'num_sequences': 64, 'sequence_noise_scale': 0.15, 'w_goal': 0.2, 'w_safety': 10.0}
+[2026-07-03T15:37:12] skip_existing config=R1_H3_N64 trial=12
+[2026-07-03T15:37:12] skip_existing config=R1_H3_N64 trial=13
+[2026-07-03T15:37:12] skip_existing config=R1_H3_N64 trial=14
+[2026-07-03T15:37:12] skip_existing config=R1_H3_N64 trial=31
+[2026-07-03T15:37:12] skip_existing config=R1_H3_N64 trial=37
+[2026-07-03T15:37:12] skip_existing config=R1_H3_N64 trial=85
+[2026-07-03T15:37:12] config={'config_id': 'R2_H3_N32', 'horizon': 3, 'num_sequences': 32, 'sequence_noise_scale': 0.15, 'w_goal': 0.2, 'w_safety': 10.0}
+[2026-07-03T15:37:12] skip_existing config=R2_H3_N32 trial=12
+[2026-07-03T15:37:12] skip_existing config=R2_H3_N32 trial=13
+[2026-07-03T15:37:12] skip_existing config=R2_H3_N32 trial=14
+[2026-07-03T15:37:12] skip_existing config=R2_H3_N32 trial=31
+[2026-07-03T15:37:12] skip_existing config=R2_H3_N32 trial=37
+[2026-07-03T15:37:12] skip_existing config=R2_H3_N32 trial=85
+[2026-07-03T15:37:12] config={'config_id': 'R3_H3_N64_conservative', 'horizon': 3, 'num_sequences': 64, 'sequence_noise_scale': 0.25, 'w_goal': 0.1, 'w_safety': 20.0}
+[2026-07-03T15:37:12] start config=R3_H3_N64_conservative trial=12
+[2026-07-03T15:44:18] script=/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_v4c_runtime_tuning_pilot.py
+[2026-07-03T15:44:18] trials=[12, 13, 14, 31, 37, 85]
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt
+There are 281756 Gaussians in the GSplat model
+[2026-07-03T15:44:25] risk_score_table=work/risk_aware_cbf/results/flight_risk_score_table_v0.csv
+[2026-07-03T15:44:25] config={'config_id': 'R0_H3_N128_baseline', 'horizon': 3, 'num_sequences': 128, 'sequence_noise_scale': 0.15, 'w_goal': 0.2, 'w_safety': 10.0}
+[2026-07-03T15:44:25] skip_existing config=R0_H3_N128_baseline trial=12
+[2026-07-03T15:44:25] skip_existing config=R0_H3_N128_baseline trial=13
+[2026-07-03T15:44:25] skip_existing config=R0_H3_N128_baseline trial=14
+[2026-07-03T15:44:25] skip_existing config=R0_H3_N128_baseline trial=31
+[2026-07-03T15:44:25] skip_existing config=R0_H3_N128_baseline trial=37
+[2026-07-03T15:44:25] skip_existing config=R0_H3_N128_baseline trial=85
+[2026-07-03T15:44:25] config={'config_id': 'R1_H3_N64', 'horizon': 3, 'num_sequences': 64, 'sequence_noise_scale': 0.15, 'w_goal': 0.2, 'w_safety': 10.0}
+[2026-07-03T15:44:25] skip_existing config=R1_H3_N64 trial=12
+[2026-07-03T15:44:25] skip_existing config=R1_H3_N64 trial=13
+[2026-07-03T15:44:25] skip_existing config=R1_H3_N64 trial=14
+[2026-07-03T15:44:25] skip_existing config=R1_H3_N64 trial=31
+[2026-07-03T15:44:25] skip_existing config=R1_H3_N64 trial=37
+[2026-07-03T15:44:25] skip_existing config=R1_H3_N64 trial=85
+[2026-07-03T15:44:25] config={'config_id': 'R2_H3_N32', 'horizon': 3, 'num_sequences': 32, 'sequence_noise_scale': 0.15, 'w_goal': 0.2, 'w_safety': 10.0}
+[2026-07-03T15:44:25] skip_existing config=R2_H3_N32 trial=12
+[2026-07-03T15:44:25] skip_existing config=R2_H3_N32 trial=13
+[2026-07-03T15:44:25] skip_existing config=R2_H3_N32 trial=14
+[2026-07-03T15:44:25] skip_existing config=R2_H3_N32 trial=31
+[2026-07-03T15:44:25] skip_existing config=R2_H3_N32 trial=37
+[2026-07-03T15:44:25] skip_existing config=R2_H3_N32 trial=85
+[2026-07-03T15:44:25] config={'config_id': 'R3_H3_N64_conservative', 'horizon': 3, 'num_sequences': 64, 'sequence_noise_scale': 0.25, 'w_goal': 0.1, 'w_safety': 20.0}
+[2026-07-03T15:44:25] start config=R3_H3_N64_conservative trial=12
+[2026-07-03T15:53:21] script=/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_v4c_runtime_tuning_pilot.py
+[2026-07-03T15:53:21] trials=[12, 13, 14, 31, 37, 85]
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt
+There are 281756 Gaussians in the GSplat model
+[2026-07-03T15:53:32] risk_score_table=work/risk_aware_cbf/results/flight_risk_score_table_v0.csv
+[2026-07-03T15:53:32] config={'config_id': 'R0_H3_N128_baseline', 'horizon': 3, 'num_sequences': 128, 'sequence_noise_scale': 0.15, 'w_goal': 0.2, 'w_safety': 10.0}
+[2026-07-03T15:53:32] skip_existing config=R0_H3_N128_baseline trial=12
+[2026-07-03T15:53:32] skip_existing config=R0_H3_N128_baseline trial=13
+[2026-07-03T15:53:32] skip_existing config=R0_H3_N128_baseline trial=14
+[2026-07-03T15:53:32] skip_existing config=R0_H3_N128_baseline trial=31
+[2026-07-03T15:53:32] skip_existing config=R0_H3_N128_baseline trial=37
+[2026-07-03T15:53:32] skip_existing config=R0_H3_N128_baseline trial=85
+[2026-07-03T15:53:32] config={'config_id': 'R1_H3_N64', 'horizon': 3, 'num_sequences': 64, 'sequence_noise_scale': 0.15, 'w_goal': 0.2, 'w_safety': 10.0}
+[2026-07-03T15:53:32] skip_existing config=R1_H3_N64 trial=12
+[2026-07-03T15:53:32] skip_existing config=R1_H3_N64 trial=13
+[2026-07-03T15:53:32] skip_existing config=R1_H3_N64 trial=14
+[2026-07-03T15:53:32] skip_existing config=R1_H3_N64 trial=31
+[2026-07-03T15:53:32] skip_existing config=R1_H3_N64 trial=37
+[2026-07-03T15:53:32] skip_existing config=R1_H3_N64 trial=85
+[2026-07-03T15:53:32] config={'config_id': 'R2_H3_N32', 'horizon': 3, 'num_sequences': 32, 'sequence_noise_scale': 0.15, 'w_goal': 0.2, 'w_safety': 10.0}
+[2026-07-03T15:53:32] skip_existing config=R2_H3_N32 trial=12
+[2026-07-03T15:53:32] skip_existing config=R2_H3_N32 trial=13
+[2026-07-03T15:53:32] skip_existing config=R2_H3_N32 trial=14
+[2026-07-03T15:53:32] skip_existing config=R2_H3_N32 trial=31
+[2026-07-03T15:53:32] skip_existing config=R2_H3_N32 trial=37
+[2026-07-03T15:53:32] skip_existing config=R2_H3_N32 trial=85
+[2026-07-03T15:53:32] config={'config_id': 'R3_H3_N64_conservative', 'horizon': 3, 'num_sequences': 64, 'sequence_noise_scale': 0.25, 'w_goal': 0.1, 'w_safety': 20.0}
+[2026-07-03T15:53:32] start config=R3_H3_N64_conservative trial=12
+ball-to-ellipsoid
+[2026-07-03T15:55:55] done config=R3_H3_N64_conservative trial=12 collision=0 base=24 exec=0 runtime=0.8213243523518308
+[2026-07-03T15:55:55] start config=R3_H3_N64_conservative trial=13
+ball-to-ellipsoid
+[2026-07-03T15:58:39] done config=R3_H3_N64_conservative trial=13 collision=0 base=28 exec=0 runtime=0.8800897324348197
+[2026-07-03T15:58:39] start config=R3_H3_N64_conservative trial=14
+ball-to-ellipsoid
+[2026-07-03T15:59:30] done config=R3_H3_N64_conservative trial=14 collision=0 base=8 exec=0 runtime=0.667265309104279
+[2026-07-03T15:59:30] start config=R3_H3_N64_conservative trial=31
+ball-to-ellipsoid
+[2026-07-03T16:02:02] done config=R3_H3_N64_conservative trial=31 collision=0 base=26 exec=0 runtime=0.9635613360667024
+[2026-07-03T16:02:02] start config=R3_H3_N64_conservative trial=37
+ball-to-ellipsoid
+[2026-07-03T16:05:28] done config=R3_H3_N64_conservative trial=37 collision=0 base=32 exec=0 runtime=0.5855289946646954
+[2026-07-03T16:05:28] start config=R3_H3_N64_conservative trial=85
+ball-to-ellipsoid
+[2026-07-03T16:08:44] done config=R3_H3_N64_conservative trial=85 collision=0 base=34 exec=0 runtime=1.0735310010347494
+[2026-07-03T16:08:44] config={'config_id': 'R4_H2_N64', 'horizon': 2, 'num_sequences': 64, 'sequence_noise_scale': 0.15, 'w_goal': 0.2, 'w_safety': 10.0}
+[2026-07-03T16:08:44] start config=R4_H2_N64 trial=12
+ball-to-ellipsoid
+[2026-07-03T16:09:59] done config=R4_H2_N64 trial=12 collision=0 base=16 exec=0 runtime=0.39437083730957023
+[2026-07-03T16:09:59] start config=R4_H2_N64 trial=13
+ball-to-ellipsoid
+[2026-07-03T16:11:56] done config=R4_H2_N64 trial=13 collision=0 base=28 exec=0 runtime=0.5970644991717894
+[2026-07-03T16:11:56] start config=R4_H2_N64 trial=14
+ball-to-ellipsoid
+[2026-07-03T16:12:33] done config=R4_H2_N64 trial=14 collision=0 base=8 exec=0 runtime=0.46473397328244415
+[2026-07-03T16:12:33] start config=R4_H2_N64 trial=31
+ball-to-ellipsoid
+[2026-07-03T16:14:07] done config=R4_H2_N64 trial=31 collision=0 base=22 exec=0 runtime=0.5885392284164062
+[2026-07-03T16:14:07] start config=R4_H2_N64 trial=37
+ball-to-ellipsoid
+[2026-07-03T16:16:28] done config=R4_H2_N64 trial=37 collision=0 base=30 exec=0 runtime=0.39347503005438983
+[2026-07-03T16:16:28] start config=R4_H2_N64 trial=85
+ball-to-ellipsoid
+[2026-07-03T16:18:33] done config=R4_H2_N64 trial=85 collision=0 base=30 exec=0 runtime=0.6669285295740564
+[2026-07-03T16:18:33] config={'config_id': 'R5_H3_N64_goal_preserving', 'horizon': 3, 'num_sequences': 64, 'sequence_noise_scale': 0.15, 'w_goal': 0.5, 'w_safety': 10.0}
+[2026-07-03T16:18:33] start config=R5_H3_N64_goal_preserving trial=12
+ball-to-ellipsoid
+[2026-07-03T16:20:56] done config=R5_H3_N64_goal_preserving trial=12 collision=0 base=24 exec=0 runtime=0.8223458432674974
+[2026-07-03T16:20:56] start config=R5_H3_N64_goal_preserving trial=13
+ball-to-ellipsoid
+[2026-07-03T16:23:42] done config=R5_H3_N64_goal_preserving trial=13 collision=0 base=28 exec=0 runtime=0.8876408438691321
+[2026-07-03T16:23:42] start config=R5_H3_N64_goal_preserving trial=14
+ball-to-ellipsoid
+[2026-07-03T16:24:33] done config=R5_H3_N64_goal_preserving trial=14 collision=0 base=8 exec=0 runtime=0.6693921643239793
+[2026-07-03T16:24:33] start config=R5_H3_N64_goal_preserving trial=31
+ball-to-ellipsoid
+[2026-07-03T16:26:53] done config=R5_H3_N64_goal_preserving trial=31 collision=0 base=24 exec=0 runtime=0.894518085853099
+[2026-07-03T16:26:53] start config=R5_H3_N64_goal_preserving trial=37
+ball-to-ellipsoid
+[2026-07-03T16:30:20] done config=R5_H3_N64_goal_preserving trial=37 collision=0 base=32 exec=0 runtime=0.5880349196056783
+[2026-07-03T16:30:20] start config=R5_H3_N64_goal_preserving trial=85
+ball-to-ellipsoid
+[2026-07-03T16:33:34] done config=R5_H3_N64_goal_preserving trial=85 collision=0 base=34 exec=0 runtime=1.0600428821287564
+[2026-07-03T16:33:34] summary=[{'config_id': 'R0_H3_N128_baseline', 'horizon': 3, 'num_sequences': 128, 'num_trials': 6, 'collision_count': 0, 'qp_infeasible_count': 0, 'base_horizon_margin_violation_count': 152, 'exec_horizon_margin_violation_count': 0, 'reduction': 152, 'predictive_recovery_used_count': 152, 'predictive_recovery_success_count': 152, 'recovery_failed_count': 0, 'min_safety_h_min': 0.0005000984529033303, 'progress_mean': 0.40656884473385074, 'runtime_mean': 1.2795216964654486, 'runtime_p95': 8.037547149664412, 'runtime_max': 1.6615226658050126, 'runtime_ratio_vs_R0': 1.0, 'control_delta_mean': 0.003965339746742719}, {'config_id': 'R1_H3_N64', 'horizon': 3, 'num_sequences': 64, 'num_trials': 6, 'collision_count': 0, 'qp_infeasible_count': 0, 'base_horizon_margin_violation_count': 152, 'exec_horizon_margin_violation_count': 0, 'reduction': 152, 'predictive_recovery_used_count': 152, 'predictive_recovery_success_count': 152, 'recovery_failed_count': 0, 'min_safety_h_min': 0.0005000984529033303, 'progress_mean': 0.40656884473385074, 'runtime_mean': 0.7990171800334397, 'runtime_p95': 4.863635580427944, 'runtime_max': 1.0339543662810995, 'runtime_ratio_vs_R0': 0.6244655188267969, 'control_delta_mean': 0.003965339746742719}, {'config_id': 'R2_H3_N32', 'horizon': 3, 'num_sequences': 32, 'num_trials': 6, 'collision_count': 0, 'qp_infeasible_count': 0, 'base_horizon_margin_violation_count': 152, 'exec_horizon_margin_violation_count': 0, 'reduction': 152, 'predictive_recovery_used_count': 152, 'predictive_recovery_success_count': 152, 'recovery_failed_count': 0, 'min_safety_h_min': 0.0005000984529033303, 'progress_mean': 0.40656884473385074, 'runtime_mean': 0.5678212067262766, 'runtime_p95': 3.3812092467211188, 'runtime_max': 0.7057589022608022, 'runtime_ratio_vs_R0': 0.4437761456447563, 'control_delta_mean': 0.003965339746742719}, {'config_id': 'R3_H3_N64_conservative', 'horizon': 3, 'num_sequences': 64, 'num_trials': 6, 'collision_count': 0, 'qp_infeasible_count': 0, 'base_horizon_margin_violation_count': 152, 'exec_horizon_margin_violation_count': 0, 'reduction': 152, 'predictive_recovery_used_count': 152, 'predictive_recovery_success_count': 152, 'recovery_failed_count': 0, 'min_safety_h_min': 0.0005000963574275374, 'progress_mean': 0.4065680056065936, 'runtime_mean': 0.8318834542761794, 'runtime_p95': 5.140621042903512, 'runtime_max': 1.0735310010347494, 'runtime_ratio_vs_R0': 0.6501518939258121, 'control_delta_mean': 0.003965310906511452}, {'config_id': 'R4_H2_N64', 'horizon': 2, 'num_sequences': 64, 'num_trials': 6, 'collision_count': 0, 'qp_infeasible_count': 0, 'base_horizon_margin_violation_count': 134, 'exec_horizon_margin_violation_count': 0, 'reduction': 134, 'predictive_recovery_used_count': 134, 'predictive_recovery_success_count': 134, 'recovery_failed_count': 0, 'min_safety_h_min': 0.0005000127712264657, 'progress_mean': 0.4082967399037172, 'runtime_mean': 0.5175186829681092, 'runtime_p95': 3.4777224132015063, 'runtime_max': 0.6669285295740564, 'runtime_ratio_vs_R0': 0.4044626084869863, 'control_delta_mean': 0.004001047713851756}, {'config_id': 'R5_H3_N64_goal_preserving', 'horizon': 3, 'num_sequences': 64, 'num_trials': 6, 'collision_count': 0, 'qp_infeasible_count': 0, 'base_horizon_margin_violation_count': 150, 'exec_horizon_margin_violation_count': 0, 'reduction': 150, 'predictive_recovery_used_count': 150, 'predictive_recovery_success_count': 150, 'recovery_failed_count': 0, 'min_safety_h_min': 0.0005000984529033303, 'progress_mean': 0.4060998624822856, 'runtime_mean': 0.8203291231746904, 'runtime_p95': 5.09169497267964, 'runtime_max': 1.0600428821287564, 'runtime_ratio_vs_R0': 0.6411216983977435, 'control_delta_mean': 0.003914796559346542}]
+[2026-07-03T16:39:42] script=/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_v4c_runtime_tuning_pilot.py
+[2026-07-03T16:39:42] trials=[12, 13, 14, 31, 37, 85]
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt
+There are 281756 Gaussians in the GSplat model
+[2026-07-03T16:39:54] risk_score_table=work/risk_aware_cbf/results/flight_risk_score_table_v0.csv
+[2026-07-03T16:39:54] config={'config_id': 'R0_H3_N128_baseline', 'horizon': 3, 'num_sequences': 128, 'sequence_noise_scale': 0.15, 'w_goal': 0.2, 'w_safety': 10.0}
+[2026-07-03T16:39:54] skip_existing config=R0_H3_N128_baseline trial=12
+[2026-07-03T16:39:54] skip_existing config=R0_H3_N128_baseline trial=13
+[2026-07-03T16:39:54] skip_existing config=R0_H3_N128_baseline trial=14
+[2026-07-03T16:39:54] skip_existing config=R0_H3_N128_baseline trial=31
+[2026-07-03T16:39:54] skip_existing config=R0_H3_N128_baseline trial=37
+[2026-07-03T16:39:54] skip_existing config=R0_H3_N128_baseline trial=85
+[2026-07-03T16:39:54] config={'config_id': 'R1_H3_N64', 'horizon': 3, 'num_sequences': 64, 'sequence_noise_scale': 0.15, 'w_goal': 0.2, 'w_safety': 10.0}
+[2026-07-03T16:39:54] skip_existing config=R1_H3_N64 trial=12
+[2026-07-03T16:39:54] skip_existing config=R1_H3_N64 trial=13
+[2026-07-03T16:39:54] skip_existing config=R1_H3_N64 trial=14
+[2026-07-03T16:39:54] skip_existing config=R1_H3_N64 trial=31
+[2026-07-03T16:39:54] skip_existing config=R1_H3_N64 trial=37
+[2026-07-03T16:39:54] skip_existing config=R1_H3_N64 trial=85
+[2026-07-03T16:39:54] config={'config_id': 'R2_H3_N32', 'horizon': 3, 'num_sequences': 32, 'sequence_noise_scale': 0.15, 'w_goal': 0.2, 'w_safety': 10.0}
+[2026-07-03T16:39:54] skip_existing config=R2_H3_N32 trial=12
+[2026-07-03T16:39:54] skip_existing config=R2_H3_N32 trial=13
+[2026-07-03T16:39:54] skip_existing config=R2_H3_N32 trial=14
+[2026-07-03T16:39:54] skip_existing config=R2_H3_N32 trial=31
+[2026-07-03T16:39:54] skip_existing config=R2_H3_N32 trial=37
+[2026-07-03T16:39:54] skip_existing config=R2_H3_N32 trial=85
+[2026-07-03T16:39:54] config={'config_id': 'R3_H3_N64_conservative', 'horizon': 3, 'num_sequences': 64, 'sequence_noise_scale': 0.25, 'w_goal': 0.1, 'w_safety': 20.0}
+[2026-07-03T16:39:54] skip_existing config=R3_H3_N64_conservative trial=12
+[2026-07-03T16:39:54] skip_existing config=R3_H3_N64_conservative trial=13
+[2026-07-03T16:39:54] skip_existing config=R3_H3_N64_conservative trial=14
+[2026-07-03T16:39:54] skip_existing config=R3_H3_N64_conservative trial=31
+[2026-07-03T16:39:54] skip_existing config=R3_H3_N64_conservative trial=37
+[2026-07-03T16:39:54] skip_existing config=R3_H3_N64_conservative trial=85
+[2026-07-03T16:39:54] config={'config_id': 'R4_H2_N64', 'horizon': 2, 'num_sequences': 64, 'sequence_noise_scale': 0.15, 'w_goal': 0.2, 'w_safety': 10.0}
+[2026-07-03T16:39:54] skip_existing config=R4_H2_N64 trial=12
+[2026-07-03T16:39:54] skip_existing config=R4_H2_N64 trial=13
+[2026-07-03T16:39:54] skip_existing config=R4_H2_N64 trial=14
+[2026-07-03T16:39:54] skip_existing config=R4_H2_N64 trial=31
+[2026-07-03T16:39:54] skip_existing config=R4_H2_N64 trial=37
+[2026-07-03T16:39:54] skip_existing config=R4_H2_N64 trial=85
+[2026-07-03T16:39:54] config={'config_id': 'R5_H3_N64_goal_preserving', 'horizon': 3, 'num_sequences': 64, 'sequence_noise_scale': 0.15, 'w_goal': 0.5, 'w_safety': 10.0}
+[2026-07-03T16:39:54] skip_existing config=R5_H3_N64_goal_preserving trial=12
+[2026-07-03T16:39:54] skip_existing config=R5_H3_N64_goal_preserving trial=13
+[2026-07-03T16:39:54] skip_existing config=R5_H3_N64_goal_preserving trial=14
+[2026-07-03T16:39:54] skip_existing config=R5_H3_N64_goal_preserving trial=31
+[2026-07-03T16:39:54] skip_existing config=R5_H3_N64_goal_preserving trial=37
+[2026-07-03T16:39:54] skip_existing config=R5_H3_N64_goal_preserving trial=85
+[2026-07-03T16:39:54] summary=[{'config_id': 'R0_H3_N128_baseline', 'horizon': 3, 'num_sequences': 128, 'num_trials': 6, 'collision_count': 0, 'qp_infeasible_count': 0, 'base_horizon_margin_violation_count': 152, 'exec_horizon_margin_violation_count': 0, 'reduction': 152, 'predictive_recovery_used_count': 152, 'predictive_recovery_success_count': 152, 'recovery_failed_count': 0, 'min_safety_h_min': 0.0005000984529033303, 'progress_mean': 0.40656884473385074, 'runtime_mean': 1.2795216964654486, 'runtime_p95': 1.6106041970092502, 'runtime_max': 1.6615226658050126, 'runtime_ratio_vs_R0': 1.0, 'control_delta_mean': 0.003965339746742719}, {'config_id': 'R1_H3_N64', 'horizon': 3, 'num_sequences': 64, 'num_trials': 6, 'collision_count': 0, 'qp_infeasible_count': 0, 'base_horizon_margin_violation_count': 152, 'exec_horizon_margin_violation_count': 0, 'reduction': 152, 'predictive_recovery_used_count': 152, 'predictive_recovery_success_count': 152, 'recovery_failed_count': 0, 'min_safety_h_min': 0.0005000984529033303, 'progress_mean': 0.40656884473385074, 'runtime_mean': 0.7990171800334397, 'runtime_p95': 1.0121273858838697, 'runtime_max': 1.0339543662810995, 'runtime_ratio_vs_R0': 0.6244655188267969, 'control_delta_mean': 0.003965339746742719}, {'config_id': 'R2_H3_N32', 'horizon': 3, 'num_sequences': 32, 'num_trials': 6, 'collision_count': 0, 'qp_infeasible_count': 0, 'base_horizon_margin_violation_count': 152, 'exec_horizon_margin_violation_count': 0, 'reduction': 152, 'predictive_recovery_used_count': 152, 'predictive_recovery_success_count': 152, 'recovery_failed_count': 0, 'min_safety_h_min': 0.0005000984529033303, 'progress_mean': 0.40656884473385074, 'runtime_mean': 0.5678212067262766, 'runtime_p95': 0.6946988549673125, 'runtime_max': 0.7057589022608022, 'runtime_ratio_vs_R0': 0.4437761456447563, 'control_delta_mean': 0.003965339746742719}, {'config_id': 'R3_H3_N64_conservative', 'horizon': 3, 'num_sequences': 64, 'num_trials': 6, 'collision_count': 0, 'qp_infeasible_count': 0, 'base_horizon_margin_violation_count': 152, 'exec_horizon_margin_violation_count': 0, 'reduction': 152, 'predictive_recovery_used_count': 152, 'predictive_recovery_success_count': 152, 'recovery_failed_count': 0, 'min_safety_h_min': 0.0005000963574275374, 'progress_mean': 0.4065680056065936, 'runtime_mean': 0.8318834542761794, 'runtime_p95': 1.0460385847927376, 'runtime_max': 1.0735310010347494, 'runtime_ratio_vs_R0': 0.6501518939258121, 'control_delta_mean': 0.003965310906511452}, {'config_id': 'R4_H2_N64', 'horizon': 2, 'num_sequences': 64, 'num_trials': 6, 'collision_count': 0, 'qp_infeasible_count': 0, 'base_horizon_margin_violation_count': 134, 'exec_horizon_margin_violation_count': 0, 'reduction': 134, 'predictive_recovery_used_count': 134, 'predictive_recovery_success_count': 134, 'recovery_failed_count': 0, 'min_safety_h_min': 0.0005000127712264657, 'progress_mean': 0.4082967399037172, 'runtime_mean': 0.5175186829681092, 'runtime_p95': 0.6494625219734896, 'runtime_max': 0.6669285295740564, 'runtime_ratio_vs_R0': 0.4044626084869863, 'control_delta_mean': 0.004001047713851756}, {'config_id': 'R5_H3_N64_goal_preserving', 'horizon': 3, 'num_sequences': 64, 'num_trials': 6, 'collision_count': 0, 'qp_infeasible_count': 0, 'base_horizon_margin_violation_count': 150, 'exec_horizon_margin_violation_count': 0, 'reduction': 150, 'predictive_recovery_used_count': 150, 'predictive_recovery_success_count': 150, 'recovery_failed_count': 0, 'min_safety_h_min': 0.0005000984529033303, 'progress_mean': 0.4060998624822856, 'runtime_mean': 0.8203291231746904, 'runtime_p95': 1.018661683059842, 'runtime_max': 1.0600428821287564, 'runtime_ratio_vs_R0': 0.6411216983977435, 'control_delta_mean': 0.003914796559346542}]

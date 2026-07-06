@@ -1,0 +1,11 @@
+[2026-07-03T12:35:19] script=/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/generate_synthetic_initial_unsafe_stress.py
+[2026-07-03T12:35:19] scene=flight seed=20260703
+[2026-07-03T12:35:19] initial_safety_csv=work/risk_aware_cbf/results/v4_startguard_active_projection_flight100_v1_bestD/initial_safety_trials.csv
+[2026-07-03T12:35:19] selected_source_trials=[0, 3, 6, 9, 12, 15, 18, 24, 28, 31, 34, 37, 40, 43, 47, 51, 54, 60, 63, 67, 70, 73, 77, 80, 83, 86, 89, 92, 95, 99]
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt
+There are 281756 Gaussians in the GSplat model
+[2026-07-03T12:35:46] retained=40 below cap=120; expanding magnitudes=[0.075, 0.1]
+/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/generate_synthetic_initial_unsafe_stress.py:373: MatplotlibDeprecationWarning: The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
+  axes[2].boxplot(by_mag, labels=[f"{m:g}" for m in mags], showfliers=False)
+[2026-07-03T12:35:51] retained_after_cap=120 counts={'synthetic_near_unsafe': 15, 'synthetic_margin_violating': 17, 'synthetic_unsafe': 88}

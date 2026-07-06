@@ -1,0 +1,247 @@
+[2026-07-03T13:26:52] script=/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_synthetic_post_repair_navigation.py
+[2026-07-03T13:26:52] selected_cases=40
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt
+There are 281756 Gaussians in the GSplat model
+[2026-07-03T13:26:59] risk_score_table=work/risk_aware_cbf/results/flight_risk_score_table_v0.csv
+[2026-07-03T13:26:59] start case=flight_synthetic_0018 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:27:17] done case=flight_synthetic_0018 use_v4c=False collision=0 base=0 exec=0 runtime=0.05207176172622928
+[2026-07-03T13:27:17] start case=flight_synthetic_0018 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:27:35] done case=flight_synthetic_0018 use_v4c=True collision=0 base=0 exec=0 runtime=0.05132380660485338
+[2026-07-03T13:27:35] start case=flight_synthetic_0019 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:27:54] done case=flight_synthetic_0019 use_v4c=False collision=0 base=0 exec=0 runtime=0.0517580509449996
+[2026-07-03T13:27:54] start case=flight_synthetic_0019 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:28:12] done case=flight_synthetic_0019 use_v4c=True collision=0 base=0 exec=0 runtime=0.051798240909128324
+[2026-07-03T13:28:12] start case=flight_synthetic_0050 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:28:48] done case=flight_synthetic_0050 use_v4c=False collision=0 base=0 exec=0 runtime=0.054449789111870005
+[2026-07-03T13:28:48] start case=flight_synthetic_0050 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:29:24] done case=flight_synthetic_0050 use_v4c=True collision=0 base=0 exec=0 runtime=0.05417783192262567
+[2026-07-03T13:29:24] start case=flight_synthetic_0104 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:29:38] done case=flight_synthetic_0104 use_v4c=False collision=0 base=0 exec=0 runtime=0.058025783449411394
+[2026-07-03T13:29:38] start case=flight_synthetic_0104 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:29:52] done case=flight_synthetic_0104 use_v4c=True collision=0 base=0 exec=0 runtime=0.05708390183746815
+[2026-07-03T13:29:52] start case=flight_synthetic_0017 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:30:09] done case=flight_synthetic_0017 use_v4c=False collision=0 base=0 exec=0 runtime=0.0517240560060381
+[2026-07-03T13:30:09] start case=flight_synthetic_0017 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:30:27] done case=flight_synthetic_0017 use_v4c=True collision=0 base=0 exec=0 runtime=0.05067020401190546
+[2026-07-03T13:30:27] start case=flight_synthetic_0004 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:30:28] done case=flight_synthetic_0004 use_v4c=False collision=0 base=13 exec=13 runtime=0.0557222543284297
+[2026-07-03T13:30:28] start case=flight_synthetic_0004 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:31:31] done case=flight_synthetic_0004 use_v4c=True collision=0 base=8 exec=0 runtime=6.888872830611136
+[2026-07-03T13:31:31] start case=flight_synthetic_0035 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:31:32] done case=flight_synthetic_0035 use_v4c=False collision=0 base=0 exec=0 runtime=0.058042049407958984
+[2026-07-03T13:31:32] start case=flight_synthetic_0035 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:31:33] done case=flight_synthetic_0035 use_v4c=True collision=0 base=0 exec=0 runtime=0.059079627972096205
+[2026-07-03T13:31:33] start case=flight_synthetic_0065 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:32:18] done case=flight_synthetic_0065 use_v4c=False collision=0 base=41 exec=41 runtime=0.055838508244890436
+[2026-07-03T13:32:18] start case=flight_synthetic_0065 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:37:37] done case=flight_synthetic_0065 use_v4c=True collision=0 base=35 exec=0 runtime=0.890305195807686
+[2026-07-03T13:37:37] start case=flight_synthetic_0071 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:38:04] done case=flight_synthetic_0071 use_v4c=False collision=0 base=8 exec=8 runtime=0.05345038176836589
+[2026-07-03T13:38:04] start case=flight_synthetic_0071 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:38:57] done case=flight_synthetic_0071 use_v4c=True collision=0 base=3 exec=0 runtime=0.16981889978230286
+[2026-07-03T13:38:57] start case=flight_synthetic_0025 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:39:14] done case=flight_synthetic_0025 use_v4c=False collision=0 base=0 exec=0 runtime=0.05787444960266825
+[2026-07-03T13:39:14] start case=flight_synthetic_0025 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:39:32] done case=flight_synthetic_0025 use_v4c=True collision=0 base=0 exec=0 runtime=0.05548773614305352
+[2026-07-03T13:39:32] start case=flight_synthetic_0003 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:39:33] done case=flight_synthetic_0003 use_v4c=False collision=0 base=0 exec=0 runtime=0.057577153046925865
+[2026-07-03T13:39:33] start case=flight_synthetic_0003 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:39:35] done case=flight_synthetic_0003 use_v4c=True collision=0 base=0 exec=0 runtime=0.05596325003231565
+[2026-07-03T13:39:35] start case=flight_synthetic_0029 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:39:50] done case=flight_synthetic_0029 use_v4c=False collision=0 base=22 exec=22 runtime=0.05718768623748184
+[2026-07-03T13:39:50] start case=flight_synthetic_0029 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:42:20] done case=flight_synthetic_0029 use_v4c=True collision=0 base=17 exec=0 runtime=1.2116109919894873
+[2026-07-03T13:42:20] start case=flight_synthetic_0044 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:42:38] done case=flight_synthetic_0044 use_v4c=False collision=0 base=0 exec=0 runtime=0.05996070231497288
+[2026-07-03T13:42:38] start case=flight_synthetic_0044 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:42:55] done case=flight_synthetic_0044 use_v4c=True collision=0 base=0 exec=0 runtime=0.05753074346482754
+[2026-07-03T13:42:55] start case=flight_synthetic_0114 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:43:07] done case=flight_synthetic_0114 use_v4c=False collision=0 base=0 exec=0 runtime=0.057484248543486875
+[2026-07-03T13:43:07] start case=flight_synthetic_0114 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:43:19] done case=flight_synthetic_0114 use_v4c=True collision=0 base=0 exec=0 runtime=0.05643498167833861
+[2026-07-03T13:43:19] start case=flight_synthetic_0048 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:43:47] done case=flight_synthetic_0048 use_v4c=False collision=0 base=0 exec=0 runtime=0.05416515021799849
+[2026-07-03T13:43:47] start case=flight_synthetic_0048 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:44:15] done case=flight_synthetic_0048 use_v4c=True collision=0 base=0 exec=0 runtime=0.053130050915150114
+[2026-07-03T13:44:15] start case=flight_synthetic_0088 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:44:31] done case=flight_synthetic_0088 use_v4c=False collision=0 base=0 exec=0 runtime=0.056514577526185245
+[2026-07-03T13:44:31] start case=flight_synthetic_0088 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:44:47] done case=flight_synthetic_0088 use_v4c=True collision=0 base=0 exec=0 runtime=0.054934715231259666
+[2026-07-03T13:44:47] start case=flight_synthetic_0051 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:45:19] done case=flight_synthetic_0051 use_v4c=False collision=0 base=0 exec=0 runtime=0.05676192745883414
+[2026-07-03T13:45:19] start case=flight_synthetic_0051 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:45:52] done case=flight_synthetic_0051 use_v4c=True collision=0 base=0 exec=0 runtime=0.055713428382543805
+[2026-07-03T13:45:52] start case=flight_synthetic_0094 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:46:26] done case=flight_synthetic_0094 use_v4c=False collision=0 base=0 exec=0 runtime=0.056173185419832024
+[2026-07-03T13:46:26] start case=flight_synthetic_0094 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:46:59] done case=flight_synthetic_0094 use_v4c=True collision=0 base=0 exec=0 runtime=0.05429991037254372
+[2026-07-03T13:46:59] start case=flight_synthetic_0049 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:47:09] done case=flight_synthetic_0049 use_v4c=False collision=0 base=0 exec=0 runtime=0.059624841162825334
+[2026-07-03T13:47:09] start case=flight_synthetic_0049 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:47:18] done case=flight_synthetic_0049 use_v4c=True collision=0 base=0 exec=0 runtime=0.058073765872155916
+[2026-07-03T13:47:18] start case=flight_synthetic_0095 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:47:52] done case=flight_synthetic_0095 use_v4c=False collision=0 base=0 exec=0 runtime=0.05661820632462599
+[2026-07-03T13:47:52] start case=flight_synthetic_0095 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:48:25] done case=flight_synthetic_0095 use_v4c=True collision=0 base=0 exec=0 runtime=0.05511344885643648
+[2026-07-03T13:48:25] start case=flight_synthetic_0075 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:48:40] done case=flight_synthetic_0075 use_v4c=False collision=0 base=0 exec=0 runtime=0.05541658562354066
+[2026-07-03T13:48:40] start case=flight_synthetic_0075 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:48:54] done case=flight_synthetic_0075 use_v4c=True collision=0 base=0 exec=0 runtime=0.053037583794106134
+[2026-07-03T13:48:54] start case=flight_synthetic_0096 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:49:30] done case=flight_synthetic_0096 use_v4c=False collision=0 base=0 exec=0 runtime=0.05849164272405843
+[2026-07-03T13:49:30] start case=flight_synthetic_0096 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:50:06] done case=flight_synthetic_0096 use_v4c=True collision=0 base=0 exec=0 runtime=0.056647754924068615
+[2026-07-03T13:50:06] start case=flight_synthetic_0068 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:50:31] done case=flight_synthetic_0068 use_v4c=False collision=0 base=0 exec=0 runtime=0.057182286435397724
+[2026-07-03T13:50:31] start case=flight_synthetic_0068 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:50:57] done case=flight_synthetic_0068 use_v4c=True collision=0 base=0 exec=0 runtime=0.05582991259432928
+[2026-07-03T13:50:57] start case=flight_synthetic_0087 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:50:58] done case=flight_synthetic_0087 use_v4c=False collision=0 base=0 exec=0 runtime=0.05534490889736584
+[2026-07-03T13:50:58] start case=flight_synthetic_0087 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:50:59] done case=flight_synthetic_0087 use_v4c=True collision=0 base=0 exec=0 runtime=0.05368891784123012
+[2026-07-03T13:50:59] start case=flight_synthetic_0073 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:51:19] done case=flight_synthetic_0073 use_v4c=False collision=0 base=0 exec=0 runtime=0.05998504242209131
+[2026-07-03T13:51:19] start case=flight_synthetic_0073 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:51:39] done case=flight_synthetic_0073 use_v4c=True collision=0 base=0 exec=0 runtime=0.05873818149509495
+[2026-07-03T13:51:39] start case=flight_synthetic_0070 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:52:04] done case=flight_synthetic_0070 use_v4c=False collision=0 base=0 exec=0 runtime=0.05344348758883736
+[2026-07-03T13:52:04] start case=flight_synthetic_0070 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:52:30] done case=flight_synthetic_0070 use_v4c=True collision=0 base=0 exec=0 runtime=0.05221600199378834
+[2026-07-03T13:52:30] start case=flight_synthetic_0107 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:52:34] done case=flight_synthetic_0107 use_v4c=False collision=0 base=15 exec=15 runtime=0.059645435735583306
+[2026-07-03T13:52:34] start case=flight_synthetic_0107 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:53:23] done case=flight_synthetic_0107 use_v4c=True collision=0 base=6 exec=0 runtime=3.0322383391903713
+[2026-07-03T13:53:23] start case=flight_synthetic_0089 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:53:40] done case=flight_synthetic_0089 use_v4c=False collision=0 base=21 exec=21 runtime=0.05651717242007413
+[2026-07-03T13:53:40] start case=flight_synthetic_0089 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:57:15] done case=flight_synthetic_0089 use_v4c=True collision=0 base=25 exec=0 runtime=1.6364840292334557
+[2026-07-03T13:57:15] start case=flight_synthetic_0085 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:57:29] done case=flight_synthetic_0085 use_v4c=False collision=0 base=0 exec=0 runtime=0.05758719992424761
+[2026-07-03T13:57:29] start case=flight_synthetic_0085 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T13:57:43] done case=flight_synthetic_0085 use_v4c=True collision=0 base=0 exec=0 runtime=0.056149977019854955
+[2026-07-03T13:57:43] start case=flight_synthetic_0064 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T13:58:18] done case=flight_synthetic_0064 use_v4c=False collision=0 base=24 exec=24 runtime=0.057407507454214794
+[2026-07-03T13:58:18] start case=flight_synthetic_0064 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T14:01:14] done case=flight_synthetic_0064 use_v4c=True collision=0 base=18 exec=0 runtime=0.6290968818492798
+[2026-07-03T14:01:14] start case=flight_synthetic_0007 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T14:01:15] done case=flight_synthetic_0007 use_v4c=False collision=0 base=0 exec=0 runtime=0.05857048328551981
+[2026-07-03T14:01:15] start case=flight_synthetic_0007 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T14:01:16] done case=flight_synthetic_0007 use_v4c=True collision=0 base=0 exec=0 runtime=0.05623086334930526
+[2026-07-03T14:01:16] start case=flight_synthetic_0083 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T14:01:41] done case=flight_synthetic_0083 use_v4c=False collision=0 base=0 exec=0 runtime=0.056380630257492625
+[2026-07-03T14:01:41] start case=flight_synthetic_0083 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T14:02:05] done case=flight_synthetic_0083 use_v4c=True collision=0 base=0 exec=0 runtime=0.05393002668197928
+[2026-07-03T14:02:05] start case=flight_synthetic_0046 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T14:02:29] done case=flight_synthetic_0046 use_v4c=False collision=0 base=0 exec=0 runtime=0.05975825799673441
+[2026-07-03T14:02:29] start case=flight_synthetic_0046 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T14:02:52] done case=flight_synthetic_0046 use_v4c=True collision=0 base=0 exec=0 runtime=0.05887588675666068
+[2026-07-03T14:02:52] start case=flight_synthetic_0086 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T14:02:53] done case=flight_synthetic_0086 use_v4c=False collision=0 base=0 exec=0 runtime=0.054689849002493754
+[2026-07-03T14:02:53] start case=flight_synthetic_0086 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T14:02:54] done case=flight_synthetic_0086 use_v4c=True collision=0 base=0 exec=0 runtime=0.05297695534924666
+[2026-07-03T14:02:54] start case=flight_synthetic_0056 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T14:03:01] done case=flight_synthetic_0056 use_v4c=False collision=0 base=11 exec=11 runtime=0.058044473065974864
+[2026-07-03T14:03:01] start case=flight_synthetic_0056 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T14:04:10] done case=flight_synthetic_0056 use_v4c=True collision=0 base=8 exec=0 runtime=1.483456922568042
+[2026-07-03T14:04:10] start case=flight_synthetic_0015 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T14:04:27] done case=flight_synthetic_0015 use_v4c=False collision=0 base=0 exec=0 runtime=0.05382348464003631
+[2026-07-03T14:04:27] start case=flight_synthetic_0015 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T14:04:45] done case=flight_synthetic_0015 use_v4c=True collision=0 base=0 exec=0 runtime=0.05395110718961945
+[2026-07-03T14:04:45] start case=flight_synthetic_0103 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T14:05:24] done case=flight_synthetic_0103 use_v4c=False collision=0 base=0 exec=0 runtime=0.054168556637034335
+[2026-07-03T14:05:24] start case=flight_synthetic_0103 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T14:06:03] done case=flight_synthetic_0103 use_v4c=True collision=0 base=0 exec=0 runtime=0.05287943637191222
+[2026-07-03T14:06:03] start case=flight_synthetic_0072 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T14:06:20] done case=flight_synthetic_0072 use_v4c=False collision=0 base=0 exec=0 runtime=0.05514664835925025
+[2026-07-03T14:06:20] start case=flight_synthetic_0072 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T14:06:36] done case=flight_synthetic_0072 use_v4c=True collision=0 base=0 exec=0 runtime=0.05354466040929159
+[2026-07-03T14:06:36] start case=flight_synthetic_0102 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T14:07:01] done case=flight_synthetic_0102 use_v4c=False collision=0 base=0 exec=0 runtime=0.05341903038852202
+[2026-07-03T14:07:01] start case=flight_synthetic_0102 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T14:07:25] done case=flight_synthetic_0102 use_v4c=True collision=0 base=0 exec=0 runtime=0.05203972219443712
+[2026-07-03T14:07:25] start case=flight_synthetic_0043 use_v4c=False
+ball-to-ellipsoid
+[2026-07-03T14:07:47] done case=flight_synthetic_0043 use_v4c=False collision=0 base=0 exec=0 runtime=0.05972352986792465
+[2026-07-03T14:07:47] start case=flight_synthetic_0043 use_v4c=True
+ball-to-ellipsoid
+[2026-07-03T14:08:08] done case=flight_synthetic_0043 use_v4c=True collision=0 base=0 exec=0 runtime=0.05860886526862522
+[2026-07-03T14:08:09] summary=[{'method': 'active_set_verified_projection+risk_aware_v1_bestD', 'use_v4c': 'False', 'selected_cases': 40, 'collision_count': 0, 'collision_free_count': 40, 'qp_infeasible_count': 0, 'min_safety_h_min': 0.0002679666504263878, 'progress_mean': 0.4800989305683755, 'runtime_mean': 0.05639427438926061, 'runtime_p95': 0.06410885299788788, 'base_horizon_margin_violation_count': 155, 'exec_horizon_margin_violation_count': 155, 'horizon_margin_violation_reduction': 0, 'predictive_recovery_used_count': 0, 'predictive_recovery_success_count': 0, 'recovery_failed_count': 0}, {'method': 'active_set_verified_projection+risk_aware_v1_bestD+V4C_H3', 'use_v4c': 'True', 'selected_cases': 40, 'collision_count': 0, 'collision_free_count': 40, 'qp_infeasible_count': 0, 'min_safety_h_min': 0.0005000726087018847, 'progress_mean': 0.47991269866079467, 'runtime_mean': 0.4425511397118004, 'runtime_p95': 1.4454115313570948, 'base_horizon_margin_violation_count': 120, 'exec_horizon_margin_violation_count': 0, 'horizon_margin_violation_reduction': 120, 'predictive_recovery_used_count': 120, 'predictive_recovery_success_count': 120, 'recovery_failed_count': 0}]

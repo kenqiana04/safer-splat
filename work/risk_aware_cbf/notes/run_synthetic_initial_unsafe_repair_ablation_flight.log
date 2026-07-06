@@ -1,0 +1,966 @@
+[2026-07-03T12:36:19] script=/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_synthetic_start_repair_ablation.py
+[2026-07-03T12:36:19] scene=flight methods=no_repair,heuristic_repulsion,verified_projection,active_set_verified_projection
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt
+There are 281756 Gaussians in the GSplat model
+[2026-07-03T12:36:23] start idx=0 case=flight_synthetic_0000 method=no_repair
+[2026-07-03T12:36:23] done case=flight_synthetic_0000 method=no_repair success=False h=0.00038116867654025555 dist=0.0 candidates=0
+[2026-07-03T12:36:23] start idx=0 case=flight_synthetic_0000 method=heuristic_repulsion
+[2026-07-03T12:36:23] done case=flight_synthetic_0000 method=heuristic_repulsion success=True h=0.0007507543778046966 dist=0.005000002057313073 candidates=1
+[2026-07-03T12:36:23] start idx=0 case=flight_synthetic_0000 method=verified_projection
+[2026-07-03T12:36:38] done case=flight_synthetic_0000 method=verified_projection success=True h=0.0005065841833129525 dist=0.004999994724025327 candidates=858
+[2026-07-03T12:36:38] start idx=0 case=flight_synthetic_0000 method=active_set_verified_projection
+[2026-07-03T12:36:52] done case=flight_synthetic_0000 method=active_set_verified_projection success=True h=0.0005065841833129525 dist=0.004999994724025327 candidates=858
+[2026-07-03T12:36:52] start idx=1 case=flight_synthetic_0001 method=no_repair
+[2026-07-03T12:36:52] done case=flight_synthetic_0001 method=no_repair success=False h=0.00014708389062434435 dist=0.0 candidates=0
+[2026-07-03T12:36:52] start idx=1 case=flight_synthetic_0001 method=heuristic_repulsion
+[2026-07-03T12:36:52] done case=flight_synthetic_0001 method=heuristic_repulsion success=True h=0.000893631367944181 dist=0.009999969410725874 candidates=2
+[2026-07-03T12:36:52] start idx=1 case=flight_synthetic_0001 method=verified_projection
+[2026-07-03T12:37:07] done case=flight_synthetic_0001 method=verified_projection success=True h=0.0005477755330502987 dist=0.009999988685180816 candidates=858
+[2026-07-03T12:37:07] start idx=1 case=flight_synthetic_0001 method=active_set_verified_projection
+[2026-07-03T12:37:21] done case=flight_synthetic_0001 method=active_set_verified_projection success=True h=0.0005477755330502987 dist=0.009999988685180816 candidates=858
+[2026-07-03T12:37:21] start idx=2 case=flight_synthetic_0002 method=no_repair
+[2026-07-03T12:37:21] done case=flight_synthetic_0002 method=no_repair success=False h=-0.0005849553272128105 dist=0.0 candidates=0
+[2026-07-03T12:37:21] start idx=2 case=flight_synthetic_0002 method=heuristic_repulsion
+[2026-07-03T12:37:21] done case=flight_synthetic_0002 method=heuristic_repulsion success=True h=0.0008817339548841119 dist=0.024989200874779398 candidates=5
+[2026-07-03T12:37:21] start idx=2 case=flight_synthetic_0002 method=verified_projection
+[2026-07-03T12:37:36] done case=flight_synthetic_0002 method=verified_projection success=True h=0.0005238981684669852 dist=0.019999983999670172 candidates=858
+[2026-07-03T12:37:36] start idx=2 case=flight_synthetic_0002 method=active_set_verified_projection
+[2026-07-03T12:37:50] done case=flight_synthetic_0002 method=active_set_verified_projection success=True h=0.0005238981684669852 dist=0.019999983999670172 candidates=858
+[2026-07-03T12:37:50] start idx=3 case=flight_synthetic_0003 method=no_repair
+[2026-07-03T12:37:50] done case=flight_synthetic_0003 method=no_repair success=True h=0.0009291222086176276 dist=0.0 candidates=0
+[2026-07-03T12:37:50] start idx=3 case=flight_synthetic_0003 method=heuristic_repulsion
+[2026-07-03T12:37:50] done case=flight_synthetic_0003 method=heuristic_repulsion success=True h=0.0009291222086176276 dist=1.1631792767198502e-08 candidates=0
+[2026-07-03T12:37:50] start idx=3 case=flight_synthetic_0003 method=verified_projection
+[2026-07-03T12:37:50] done case=flight_synthetic_0003 method=verified_projection success=True h=0.0009291222086176276 dist=1.1631792767198502e-08 candidates=0
+[2026-07-03T12:37:50] start idx=3 case=flight_synthetic_0003 method=active_set_verified_projection
+[2026-07-03T12:37:50] done case=flight_synthetic_0003 method=active_set_verified_projection success=True h=0.0009291222086176276 dist=1.1631792767198502e-08 candidates=0
+[2026-07-03T12:37:50] start idx=4 case=flight_synthetic_0004 method=no_repair
+[2026-07-03T12:37:50] done case=flight_synthetic_0004 method=no_repair success=False h=0.00018317066133022308 dist=0.0 candidates=0
+[2026-07-03T12:37:50] start idx=4 case=flight_synthetic_0004 method=heuristic_repulsion
+[2026-07-03T12:37:50] done case=flight_synthetic_0004 method=heuristic_repulsion success=True h=0.00052032177336514 dist=0.005000005640150059 candidates=1
+[2026-07-03T12:37:50] start idx=4 case=flight_synthetic_0004 method=verified_projection
+[2026-07-03T12:38:05] done case=flight_synthetic_0004 method=verified_projection success=True h=0.0005298217292875051 dist=0.004999994614358191 candidates=858
+[2026-07-03T12:38:05] start idx=4 case=flight_synthetic_0004 method=active_set_verified_projection
+[2026-07-03T12:38:19] done case=flight_synthetic_0004 method=active_set_verified_projection success=True h=0.0005298217292875051 dist=0.004999994614358191 candidates=858
+[2026-07-03T12:38:19] start idx=5 case=flight_synthetic_0005 method=no_repair
+[2026-07-03T12:38:19] done case=flight_synthetic_0005 method=no_repair success=False h=-0.0008844321710057557 dist=0.0 candidates=0
+[2026-07-03T12:38:19] start idx=5 case=flight_synthetic_0005 method=heuristic_repulsion
+[2026-07-03T12:38:20] done case=flight_synthetic_0005 method=heuristic_repulsion success=True h=0.0006364251021295786 dist=0.03688716097289455 candidates=8
+[2026-07-03T12:38:20] start idx=5 case=flight_synthetic_0005 method=verified_projection
+[2026-07-03T12:38:34] done case=flight_synthetic_0005 method=verified_projection success=True h=0.00197950704023242 dist=0.04999998489575791 candidates=858
+[2026-07-03T12:38:34] start idx=5 case=flight_synthetic_0005 method=active_set_verified_projection
+[2026-07-03T12:38:48] done case=flight_synthetic_0005 method=active_set_verified_projection success=True h=0.00197950704023242 dist=0.04999998489575791 candidates=858
+[2026-07-03T12:38:48] start idx=6 case=flight_synthetic_0006 method=no_repair
+[2026-07-03T12:38:48] done case=flight_synthetic_0006 method=no_repair success=False h=0.0004493851447477937 dist=0.0 candidates=0
+[2026-07-03T12:38:48] start idx=6 case=flight_synthetic_0006 method=heuristic_repulsion
+[2026-07-03T12:38:48] done case=flight_synthetic_0006 method=heuristic_repulsion success=True h=0.0008416870841756463 dist=0.005000016147700935 candidates=1
+[2026-07-03T12:38:48] start idx=6 case=flight_synthetic_0006 method=verified_projection
+[2026-07-03T12:39:03] done case=flight_synthetic_0006 method=verified_projection success=True h=0.0008308488177135587 dist=0.004999986846533132 candidates=858
+[2026-07-03T12:39:03] start idx=6 case=flight_synthetic_0006 method=active_set_verified_projection
+[2026-07-03T12:39:18] done case=flight_synthetic_0006 method=active_set_verified_projection success=True h=0.0008308488177135587 dist=0.004999986846533132 candidates=858
+[2026-07-03T12:39:18] start idx=7 case=flight_synthetic_0007 method=no_repair
+[2026-07-03T12:39:18] done case=flight_synthetic_0007 method=no_repair success=False h=-0.0007659237599000335 dist=0.0 candidates=0
+[2026-07-03T12:39:18] start idx=7 case=flight_synthetic_0007 method=heuristic_repulsion
+[2026-07-03T12:39:18] done case=flight_synthetic_0007 method=heuristic_repulsion success=True h=0.0006372499046847224 dist=0.02996519660136309 candidates=6
+[2026-07-03T12:39:18] start idx=7 case=flight_synthetic_0007 method=verified_projection
+[2026-07-03T12:39:33] done case=flight_synthetic_0007 method=verified_projection success=True h=0.0012397650862112641 dist=0.0499999990812996 candidates=858
+[2026-07-03T12:39:33] start idx=7 case=flight_synthetic_0007 method=active_set_verified_projection
+[2026-07-03T12:39:47] done case=flight_synthetic_0007 method=active_set_verified_projection success=True h=0.0012397650862112641 dist=0.0499999990812996 candidates=858
+[2026-07-03T12:39:47] start idx=8 case=flight_synthetic_0008 method=no_repair
+[2026-07-03T12:39:47] done case=flight_synthetic_0008 method=no_repair success=False h=-0.0006098634330555797 dist=0.0 candidates=0
+[2026-07-03T12:39:47] start idx=8 case=flight_synthetic_0008 method=heuristic_repulsion
+[2026-07-03T12:39:48] done case=flight_synthetic_0008 method=heuristic_repulsion success=True h=0.0008658923907205462 dist=0.024997870935075654 candidates=5
+[2026-07-03T12:39:48] start idx=8 case=flight_synthetic_0008 method=verified_projection
+[2026-07-03T12:40:02] done case=flight_synthetic_0008 method=verified_projection success=True h=0.0013231475604698062 dist=0.04999998459686259 candidates=858
+[2026-07-03T12:40:02] start idx=8 case=flight_synthetic_0008 method=active_set_verified_projection
+[2026-07-03T12:40:16] done case=flight_synthetic_0008 method=active_set_verified_projection success=True h=0.0013231475604698062 dist=0.04999998459686259 candidates=858
+[2026-07-03T12:40:16] start idx=9 case=flight_synthetic_0009 method=no_repair
+[2026-07-03T12:40:16] done case=flight_synthetic_0009 method=no_repair success=False h=-0.0006042910972610116 dist=0.0 candidates=0
+[2026-07-03T12:40:16] start idx=9 case=flight_synthetic_0009 method=heuristic_repulsion
+[2026-07-03T12:40:16] done case=flight_synthetic_0009 method=heuristic_repulsion success=True h=0.000875270226970315 dist=0.024999383346155923 candidates=5
+[2026-07-03T12:40:16] start idx=9 case=flight_synthetic_0009 method=verified_projection
+[2026-07-03T12:40:31] done case=flight_synthetic_0009 method=verified_projection success=True h=0.0017702222103253007 dist=0.04999998552690827 candidates=858
+[2026-07-03T12:40:31] start idx=9 case=flight_synthetic_0009 method=active_set_verified_projection
+[2026-07-03T12:40:45] done case=flight_synthetic_0009 method=active_set_verified_projection success=True h=0.0017702222103253007 dist=0.04999998552690827 candidates=858
+[2026-07-03T12:40:45] start idx=10 case=flight_synthetic_0010 method=no_repair
+[2026-07-03T12:40:45] done case=flight_synthetic_0010 method=no_repair success=False h=-0.0003086010692641139 dist=0.0 candidates=0
+[2026-07-03T12:40:45] start idx=10 case=flight_synthetic_0010 method=heuristic_repulsion
+[2026-07-03T12:40:45] done case=flight_synthetic_0010 method=heuristic_repulsion success=True h=0.000645609456114471 dist=0.015000006789953413 candidates=3
+[2026-07-03T12:40:45] start idx=10 case=flight_synthetic_0010 method=verified_projection
+[2026-07-03T12:40:59] done case=flight_synthetic_0010 method=verified_projection success=True h=0.0008681021863594651 dist=0.01999999273702873 candidates=858
+[2026-07-03T12:40:59] start idx=10 case=flight_synthetic_0010 method=active_set_verified_projection
+[2026-07-03T12:41:14] done case=flight_synthetic_0010 method=active_set_verified_projection success=True h=0.0008681021863594651 dist=0.01999999273702873 candidates=858
+[2026-07-03T12:41:14] start idx=11 case=flight_synthetic_0011 method=no_repair
+[2026-07-03T12:41:14] done case=flight_synthetic_0011 method=no_repair success=False h=0.00010386109352111816 dist=0.0 candidates=0
+[2026-07-03T12:41:14] start idx=11 case=flight_synthetic_0011 method=heuristic_repulsion
+[2026-07-03T12:41:14] done case=flight_synthetic_0011 method=heuristic_repulsion success=True h=0.000626513035967946 dist=0.014070206113500468 candidates=3
+[2026-07-03T12:41:14] start idx=11 case=flight_synthetic_0011 method=verified_projection
+[2026-07-03T12:41:28] done case=flight_synthetic_0011 method=verified_projection success=True h=0.0006416735704988241 dist=0.0099999977627869 candidates=858
+[2026-07-03T12:41:28] start idx=11 case=flight_synthetic_0011 method=active_set_verified_projection
+[2026-07-03T12:41:43] done case=flight_synthetic_0011 method=active_set_verified_projection success=True h=0.0006416735704988241 dist=0.0099999977627869 candidates=858
+[2026-07-03T12:41:43] start idx=12 case=flight_synthetic_0012 method=no_repair
+[2026-07-03T12:41:43] done case=flight_synthetic_0012 method=no_repair success=True h=0.0006062632892280817 dist=0.0 candidates=0
+[2026-07-03T12:41:43] start idx=12 case=flight_synthetic_0012 method=heuristic_repulsion
+[2026-07-03T12:41:43] done case=flight_synthetic_0012 method=heuristic_repulsion success=True h=0.0006062632892280817 dist=3.942470706118834e-09 candidates=0
+[2026-07-03T12:41:43] start idx=12 case=flight_synthetic_0012 method=verified_projection
+[2026-07-03T12:41:43] done case=flight_synthetic_0012 method=verified_projection success=True h=0.0006062632892280817 dist=3.942470706118834e-09 candidates=0
+[2026-07-03T12:41:43] start idx=12 case=flight_synthetic_0012 method=active_set_verified_projection
+[2026-07-03T12:41:43] done case=flight_synthetic_0012 method=active_set_verified_projection success=True h=0.0006062632892280817 dist=3.942470706118834e-09 candidates=0
+[2026-07-03T12:41:43] start idx=13 case=flight_synthetic_0013 method=no_repair
+[2026-07-03T12:41:43] done case=flight_synthetic_0013 method=no_repair success=False h=0.00024316401686519384 dist=0.0 candidates=0
+[2026-07-03T12:41:43] start idx=13 case=flight_synthetic_0013 method=heuristic_repulsion
+[2026-07-03T12:41:43] done case=flight_synthetic_0013 method=heuristic_repulsion success=True h=0.0006062403554096818 dist=0.00500000212234427 candidates=1
+[2026-07-03T12:41:43] start idx=13 case=flight_synthetic_0013 method=verified_projection
+[2026-07-03T12:41:58] done case=flight_synthetic_0013 method=verified_projection success=True h=0.0005585233448073268 dist=0.004999995454370658 candidates=858
+[2026-07-03T12:41:58] start idx=13 case=flight_synthetic_0013 method=active_set_verified_projection
+[2026-07-03T12:42:12] done case=flight_synthetic_0013 method=active_set_verified_projection success=True h=0.0005585233448073268 dist=0.004999995454370658 candidates=858
+[2026-07-03T12:42:12] start idx=14 case=flight_synthetic_0014 method=no_repair
+[2026-07-03T12:42:12] done case=flight_synthetic_0014 method=no_repair success=False h=-0.0003330344916321337 dist=0.0 candidates=0
+[2026-07-03T12:42:12] start idx=14 case=flight_synthetic_0014 method=heuristic_repulsion
+[2026-07-03T12:42:12] done case=flight_synthetic_0014 method=heuristic_repulsion success=True h=0.0006061709718778729 dist=0.014999998299975156 candidates=3
+[2026-07-03T12:42:12] start idx=14 case=flight_synthetic_0014 method=verified_projection
+[2026-07-03T12:42:26] done case=flight_synthetic_0014 method=verified_projection success=True h=0.0005166139453649521 dist=0.01999999323002973 candidates=858
+[2026-07-03T12:42:26] start idx=14 case=flight_synthetic_0014 method=active_set_verified_projection
+[2026-07-03T12:42:40] done case=flight_synthetic_0014 method=active_set_verified_projection success=True h=0.0005166139453649521 dist=0.01999999323002973 candidates=858
+[2026-07-03T12:42:40] start idx=15 case=flight_synthetic_0015 method=no_repair
+[2026-07-03T12:42:40] done case=flight_synthetic_0015 method=no_repair success=False h=-0.0008997067343443632 dist=0.0 candidates=0
+[2026-07-03T12:42:40] start idx=15 case=flight_synthetic_0015 method=heuristic_repulsion
+[2026-07-03T12:42:41] done case=flight_synthetic_0015 method=heuristic_repulsion success=True h=0.0006224316312000155 dist=0.08281312813350357 candidates=24
+[2026-07-03T12:42:41] start idx=15 case=flight_synthetic_0015 method=verified_projection
+[2026-07-03T12:42:55] done case=flight_synthetic_0015 method=verified_projection success=True h=0.0010615525534376502 dist=0.04999999833453098 candidates=858
+[2026-07-03T12:42:55] start idx=15 case=flight_synthetic_0015 method=active_set_verified_projection
+[2026-07-03T12:43:10] done case=flight_synthetic_0015 method=active_set_verified_projection success=True h=0.0010615525534376502 dist=0.04999999833453098 candidates=858
+[2026-07-03T12:43:10] start idx=16 case=flight_synthetic_0016 method=no_repair
+[2026-07-03T12:43:10] done case=flight_synthetic_0016 method=no_repair success=True h=0.0006190205458551645 dist=0.0 candidates=0
+[2026-07-03T12:43:10] start idx=16 case=flight_synthetic_0016 method=heuristic_repulsion
+[2026-07-03T12:43:10] done case=flight_synthetic_0016 method=heuristic_repulsion success=True h=0.0006190205458551645 dist=4.676020669534765e-09 candidates=0
+[2026-07-03T12:43:10] start idx=16 case=flight_synthetic_0016 method=verified_projection
+[2026-07-03T12:43:10] done case=flight_synthetic_0016 method=verified_projection success=True h=0.0006190205458551645 dist=4.676020669534765e-09 candidates=0
+[2026-07-03T12:43:10] start idx=16 case=flight_synthetic_0016 method=active_set_verified_projection
+[2026-07-03T12:43:10] done case=flight_synthetic_0016 method=active_set_verified_projection success=True h=0.0006190205458551645 dist=4.676020669534765e-09 candidates=0
+[2026-07-03T12:43:10] start idx=17 case=flight_synthetic_0017 method=no_repair
+[2026-07-03T12:43:10] done case=flight_synthetic_0017 method=no_repair success=False h=0.00026865361724048853 dist=0.0 candidates=0
+[2026-07-03T12:43:10] start idx=17 case=flight_synthetic_0017 method=heuristic_repulsion
+[2026-07-03T12:43:10] done case=flight_synthetic_0017 method=heuristic_repulsion success=True h=0.0006351174088194966 dist=0.005000000219290574 candidates=1
+[2026-07-03T12:43:10] start idx=17 case=flight_synthetic_0017 method=verified_projection
+[2026-07-03T12:43:24] done case=flight_synthetic_0017 method=verified_projection success=True h=0.0005774510791525245 dist=0.004999997920806323 candidates=858
+[2026-07-03T12:43:24] start idx=17 case=flight_synthetic_0017 method=active_set_verified_projection
+[2026-07-03T12:43:39] done case=flight_synthetic_0017 method=active_set_verified_projection success=True h=0.0005774510791525245 dist=0.004999997920806323 candidates=858
+[2026-07-03T12:43:39] start idx=18 case=flight_synthetic_0018 method=no_repair
+[2026-07-03T12:43:39] done case=flight_synthetic_0018 method=no_repair success=False h=-0.0002863731933757663 dist=0.0 candidates=0
+[2026-07-03T12:43:39] start idx=18 case=flight_synthetic_0018 method=heuristic_repulsion
+[2026-07-03T12:43:39] done case=flight_synthetic_0018 method=heuristic_repulsion success=True h=0.0006811193889006972 dist=0.014999966375661132 candidates=3
+[2026-07-03T12:43:39] start idx=18 case=flight_synthetic_0018 method=verified_projection
+[2026-07-03T12:43:53] done case=flight_synthetic_0018 method=verified_projection success=True h=0.0011036723153665662 dist=0.01999999782247249 candidates=858
+[2026-07-03T12:43:53] start idx=18 case=flight_synthetic_0018 method=active_set_verified_projection
+[2026-07-03T12:44:08] done case=flight_synthetic_0018 method=active_set_verified_projection success=True h=0.0011036723153665662 dist=0.01999999782247249 candidates=858
+[2026-07-03T12:44:08] start idx=19 case=flight_synthetic_0019 method=no_repair
+[2026-07-03T12:44:08] done case=flight_synthetic_0019 method=no_repair success=False h=-0.0008403070969507098 dist=0.0 candidates=0
+[2026-07-03T12:44:08] start idx=19 case=flight_synthetic_0019 method=heuristic_repulsion
+[2026-07-03T12:44:08] done case=flight_synthetic_0019 method=heuristic_repulsion success=True h=0.0007697008550167084 dist=0.06766023970278923 candidates=15
+[2026-07-03T12:44:08] start idx=19 case=flight_synthetic_0019 method=verified_projection
+[2026-07-03T12:44:23] done case=flight_synthetic_0019 method=verified_projection success=True h=0.0007668189937248826 dist=0.04999999926474837 candidates=858
+[2026-07-03T12:44:23] start idx=19 case=flight_synthetic_0019 method=active_set_verified_projection
+[2026-07-03T12:44:37] done case=flight_synthetic_0019 method=active_set_verified_projection success=True h=0.0007668189937248826 dist=0.04999999926474837 candidates=858
+[2026-07-03T12:44:37] start idx=20 case=flight_synthetic_0020 method=no_repair
+[2026-07-03T12:44:38] done case=flight_synthetic_0020 method=no_repair success=False h=-2.4436041712760925e-05 dist=0.0 candidates=0
+[2026-07-03T12:44:38] start idx=20 case=flight_synthetic_0020 method=heuristic_repulsion
+[2026-07-03T12:44:38] done case=flight_synthetic_0020 method=heuristic_repulsion success=True h=0.00066419318318367 dist=0.010000000312596976 candidates=2
+[2026-07-03T12:44:38] start idx=20 case=flight_synthetic_0020 method=verified_projection
+[2026-07-03T12:44:52] done case=flight_synthetic_0020 method=verified_projection success=True h=0.0005992068909108639 dist=0.00999999861733507 candidates=858
+[2026-07-03T12:44:52] start idx=20 case=flight_synthetic_0020 method=active_set_verified_projection
+[2026-07-03T12:45:06] done case=flight_synthetic_0020 method=active_set_verified_projection success=True h=0.0005992068909108639 dist=0.00999999861733507 candidates=858
+[2026-07-03T12:45:06] start idx=21 case=flight_synthetic_0021 method=no_repair
+[2026-07-03T12:45:06] done case=flight_synthetic_0021 method=no_repair success=True h=0.0009576749289408326 dist=0.0 candidates=0
+[2026-07-03T12:45:06] start idx=21 case=flight_synthetic_0021 method=heuristic_repulsion
+[2026-07-03T12:45:06] done case=flight_synthetic_0021 method=heuristic_repulsion success=True h=0.0009576749289408326 dist=4.788873126353055e-09 candidates=0
+[2026-07-03T12:45:06] start idx=21 case=flight_synthetic_0021 method=verified_projection
+[2026-07-03T12:45:06] done case=flight_synthetic_0021 method=verified_projection success=True h=0.0009576749289408326 dist=4.788873126353055e-09 candidates=0
+[2026-07-03T12:45:06] start idx=21 case=flight_synthetic_0021 method=active_set_verified_projection
+[2026-07-03T12:45:06] done case=flight_synthetic_0021 method=active_set_verified_projection success=True h=0.0009576749289408326 dist=4.788873126353055e-09 candidates=0
+[2026-07-03T12:45:06] start idx=22 case=flight_synthetic_0022 method=no_repair
+[2026-07-03T12:45:06] done case=flight_synthetic_0022 method=no_repair success=True h=0.0005517437821254134 dist=0.0 candidates=0
+[2026-07-03T12:45:06] start idx=22 case=flight_synthetic_0022 method=heuristic_repulsion
+[2026-07-03T12:45:06] done case=flight_synthetic_0022 method=heuristic_repulsion success=True h=0.0005517437821254134 dist=4.702202335745144e-09 candidates=0
+[2026-07-03T12:45:06] start idx=22 case=flight_synthetic_0022 method=verified_projection
+[2026-07-03T12:45:06] done case=flight_synthetic_0022 method=verified_projection success=True h=0.0005517437821254134 dist=4.702202335745144e-09 candidates=0
+[2026-07-03T12:45:06] start idx=22 case=flight_synthetic_0022 method=active_set_verified_projection
+[2026-07-03T12:45:06] done case=flight_synthetic_0022 method=active_set_verified_projection success=True h=0.0005517437821254134 dist=4.702202335745144e-09 candidates=0
+[2026-07-03T12:45:06] start idx=23 case=flight_synthetic_0023 method=no_repair
+[2026-07-03T12:45:06] done case=flight_synthetic_0023 method=no_repair success=False h=-0.00011012592585757375 dist=0.0 candidates=0
+[2026-07-03T12:45:06] start idx=23 case=flight_synthetic_0023 method=heuristic_repulsion
+[2026-07-03T12:45:06] done case=flight_synthetic_0023 method=heuristic_repulsion success=True h=0.0005509568145498633 dist=0.010000000780011831 candidates=2
+[2026-07-03T12:45:06] start idx=23 case=flight_synthetic_0023 method=verified_projection
+[2026-07-03T12:45:21] done case=flight_synthetic_0023 method=verified_projection success=True h=0.0005505081498995423 dist=0.00999999587178438 candidates=864
+[2026-07-03T12:45:21] start idx=23 case=flight_synthetic_0023 method=active_set_verified_projection
+[2026-07-03T12:45:35] done case=flight_synthetic_0023 method=active_set_verified_projection success=True h=0.0005505081498995423 dist=0.00999999587178438 candidates=864
+[2026-07-03T12:45:35] start idx=24 case=flight_synthetic_0024 method=no_repair
+[2026-07-03T12:45:35] done case=flight_synthetic_0024 method=no_repair success=False h=-0.0008997484110295773 dist=0.0 candidates=0
+[2026-07-03T12:45:35] start idx=24 case=flight_synthetic_0024 method=heuristic_repulsion
+[2026-07-03T12:45:36] done case=flight_synthetic_0024 method=heuristic_repulsion success=True h=0.000618768623098731 dist=0.04279353081444947 candidates=9
+[2026-07-03T12:45:36] start idx=24 case=flight_synthetic_0024 method=verified_projection
+[2026-07-03T12:45:50] done case=flight_synthetic_0024 method=verified_projection success=True h=0.0014042806578800082 dist=0.049999995914568024 candidates=858
+[2026-07-03T12:45:50] start idx=24 case=flight_synthetic_0024 method=active_set_verified_projection
+[2026-07-03T12:46:05] done case=flight_synthetic_0024 method=active_set_verified_projection success=True h=0.0014042806578800082 dist=0.049999995914568024 candidates=858
+[2026-07-03T12:46:05] start idx=25 case=flight_synthetic_0025 method=no_repair
+[2026-07-03T12:46:05] done case=flight_synthetic_0025 method=no_repair success=True h=0.0009603748330846429 dist=0.0 candidates=0
+[2026-07-03T12:46:05] start idx=25 case=flight_synthetic_0025 method=heuristic_repulsion
+[2026-07-03T12:46:05] done case=flight_synthetic_0025 method=heuristic_repulsion success=True h=0.0009603748330846429 dist=7.554336842898027e-09 candidates=0
+[2026-07-03T12:46:05] start idx=25 case=flight_synthetic_0025 method=verified_projection
+[2026-07-03T12:46:05] done case=flight_synthetic_0025 method=verified_projection success=True h=0.0009603748330846429 dist=7.554336842898027e-09 candidates=0
+[2026-07-03T12:46:05] start idx=25 case=flight_synthetic_0025 method=active_set_verified_projection
+[2026-07-03T12:46:05] done case=flight_synthetic_0025 method=active_set_verified_projection success=True h=0.0009603748330846429 dist=7.554336842898027e-09 candidates=0
+[2026-07-03T12:46:05] start idx=26 case=flight_synthetic_0026 method=no_repair
+[2026-07-03T12:46:05] done case=flight_synthetic_0026 method=no_repair success=True h=0.0005565705941990018 dist=0.0 candidates=0
+[2026-07-03T12:46:05] start idx=26 case=flight_synthetic_0026 method=heuristic_repulsion
+[2026-07-03T12:46:05] done case=flight_synthetic_0026 method=heuristic_repulsion success=True h=0.0005565705941990018 dist=4.818182313173682e-09 candidates=0
+[2026-07-03T12:46:05] start idx=26 case=flight_synthetic_0026 method=verified_projection
+[2026-07-03T12:46:05] done case=flight_synthetic_0026 method=verified_projection success=True h=0.0005565705941990018 dist=4.818182313173682e-09 candidates=0
+[2026-07-03T12:46:05] start idx=26 case=flight_synthetic_0026 method=active_set_verified_projection
+[2026-07-03T12:46:05] done case=flight_synthetic_0026 method=active_set_verified_projection success=True h=0.0005565705941990018 dist=4.818182313173682e-09 candidates=0
+[2026-07-03T12:46:05] start idx=27 case=flight_synthetic_0027 method=no_repair
+[2026-07-03T12:46:05] done case=flight_synthetic_0027 method=no_repair success=False h=-0.0001010531559586525 dist=0.0 candidates=0
+[2026-07-03T12:46:05] start idx=27 case=flight_synthetic_0027 method=heuristic_repulsion
+[2026-07-03T12:46:05] done case=flight_synthetic_0027 method=heuristic_repulsion success=True h=0.000563863548450172 dist=0.010000010520268953 candidates=2
+[2026-07-03T12:46:05] start idx=27 case=flight_synthetic_0027 method=verified_projection
+[2026-07-03T12:46:19] done case=flight_synthetic_0027 method=verified_projection success=True h=0.0005638920702040195 dist=0.009999997312975658 candidates=858
+[2026-07-03T12:46:19] start idx=27 case=flight_synthetic_0027 method=active_set_verified_projection
+[2026-07-03T12:46:34] done case=flight_synthetic_0027 method=active_set_verified_projection success=True h=0.0005638920702040195 dist=0.009999997312975658 candidates=858
+[2026-07-03T12:46:34] start idx=28 case=flight_synthetic_0028 method=no_repair
+[2026-07-03T12:46:34] done case=flight_synthetic_0028 method=no_repair success=False h=-0.0008990043425001204 dist=0.0 candidates=0
+[2026-07-03T12:46:34] start idx=28 case=flight_synthetic_0028 method=heuristic_repulsion
+[2026-07-03T12:46:34] done case=flight_synthetic_0028 method=heuristic_repulsion success=True h=0.0007531410083174706 dist=0.039978071452194085 candidates=8
+[2026-07-03T12:46:34] start idx=28 case=flight_synthetic_0028 method=verified_projection
+[2026-07-03T12:46:48] done case=flight_synthetic_0028 method=verified_projection success=True h=0.001530035282485187 dist=0.0499999926170887 candidates=858
+[2026-07-03T12:46:48] start idx=28 case=flight_synthetic_0028 method=active_set_verified_projection
+[2026-07-03T12:47:02] done case=flight_synthetic_0028 method=active_set_verified_projection success=True h=0.001530035282485187 dist=0.0499999926170887 candidates=858
+[2026-07-03T12:47:02] start idx=29 case=flight_synthetic_0029 method=no_repair
+[2026-07-03T12:47:02] done case=flight_synthetic_0029 method=no_repair success=True h=0.0005905348807573318 dist=0.0 candidates=0
+[2026-07-03T12:47:02] start idx=29 case=flight_synthetic_0029 method=heuristic_repulsion
+[2026-07-03T12:47:02] done case=flight_synthetic_0029 method=heuristic_repulsion success=True h=0.0005905348807573318 dist=3.182450282835554e-09 candidates=0
+[2026-07-03T12:47:02] start idx=29 case=flight_synthetic_0029 method=verified_projection
+[2026-07-03T12:47:02] done case=flight_synthetic_0029 method=verified_projection success=True h=0.0005905348807573318 dist=3.182450282835554e-09 candidates=0
+[2026-07-03T12:47:02] start idx=29 case=flight_synthetic_0029 method=active_set_verified_projection
+[2026-07-03T12:47:02] done case=flight_synthetic_0029 method=active_set_verified_projection success=True h=0.0005905348807573318 dist=3.182450282835554e-09 candidates=0
+[2026-07-03T12:47:02] start idx=30 case=flight_synthetic_0030 method=no_repair
+[2026-07-03T12:47:02] done case=flight_synthetic_0030 method=no_repair success=False h=-0.0006560444599017501 dist=0.0 candidates=0
+[2026-07-03T12:47:02] start idx=30 case=flight_synthetic_0030 method=heuristic_repulsion
+[2026-07-03T12:47:03] done case=flight_synthetic_0030 method=heuristic_repulsion success=True h=0.0006946963258087635 dist=0.02497437809820894 candidates=5
+[2026-07-03T12:47:03] start idx=30 case=flight_synthetic_0030 method=verified_projection
+[2026-07-03T12:47:17] done case=flight_synthetic_0030 method=verified_projection success=True h=0.0027640662156045437 dist=0.04999999399541776 candidates=858
+[2026-07-03T12:47:17] start idx=30 case=flight_synthetic_0030 method=active_set_verified_projection
+[2026-07-03T12:47:31] done case=flight_synthetic_0030 method=active_set_verified_projection success=True h=0.0027640662156045437 dist=0.04999999399541776 candidates=858
+[2026-07-03T12:47:31] start idx=31 case=flight_synthetic_0031 method=no_repair
+[2026-07-03T12:47:31] done case=flight_synthetic_0031 method=no_repair success=False h=0.00037249119486659765 dist=0.0 candidates=0
+[2026-07-03T12:47:31] start idx=31 case=flight_synthetic_0031 method=heuristic_repulsion
+[2026-07-03T12:47:31] done case=flight_synthetic_0031 method=heuristic_repulsion success=True h=0.0007109042489901185 dist=0.004999998426480398 candidates=1
+[2026-07-03T12:47:31] start idx=31 case=flight_synthetic_0031 method=verified_projection
+[2026-07-03T12:47:45] done case=flight_synthetic_0031 method=verified_projection success=True h=0.0005599095020443201 dist=0.00499999090191233 candidates=858
+[2026-07-03T12:47:45] start idx=31 case=flight_synthetic_0031 method=active_set_verified_projection
+[2026-07-03T12:47:59] done case=flight_synthetic_0031 method=active_set_verified_projection success=True h=0.0005599095020443201 dist=0.00499999090191233 candidates=858
+[2026-07-03T12:47:59] start idx=32 case=flight_synthetic_0032 method=no_repair
+[2026-07-03T12:47:59] done case=flight_synthetic_0032 method=no_repair success=False h=-0.0002728039980866015 dist=0.0 candidates=0
+[2026-07-03T12:47:59] start idx=32 case=flight_synthetic_0032 method=heuristic_repulsion
+[2026-07-03T12:47:59] done case=flight_synthetic_0032 method=heuristic_repulsion success=True h=0.0006314826896414161 dist=0.01499650921407593 candidates=3
+[2026-07-03T12:47:59] start idx=32 case=flight_synthetic_0032 method=verified_projection
+[2026-07-03T12:48:12] done case=flight_synthetic_0032 method=verified_projection success=True h=0.0006901713786646724 dist=0.019999989345847635 candidates=858
+[2026-07-03T12:48:12] start idx=32 case=flight_synthetic_0032 method=active_set_verified_projection
+[2026-07-03T12:48:26] done case=flight_synthetic_0032 method=active_set_verified_projection success=True h=0.0006901713786646724 dist=0.019999989345847635 candidates=858
+[2026-07-03T12:48:26] start idx=33 case=flight_synthetic_0033 method=no_repair
+[2026-07-03T12:48:26] done case=flight_synthetic_0033 method=no_repair success=False h=6.348593160510063e-06 dist=0.0 candidates=0
+[2026-07-03T12:48:26] start idx=33 case=flight_synthetic_0033 method=heuristic_repulsion
+[2026-07-03T12:48:26] done case=flight_synthetic_0033 method=heuristic_repulsion success=True h=0.0007082609226927161 dist=0.009999996525330696 candidates=2
+[2026-07-03T12:48:26] start idx=33 case=flight_synthetic_0033 method=verified_projection
+[2026-07-03T12:48:40] done case=flight_synthetic_0033 method=verified_projection success=True h=0.0006087804213166237 dist=0.009999987634207412 candidates=864
+[2026-07-03T12:48:40] start idx=33 case=flight_synthetic_0033 method=active_set_verified_projection
+[2026-07-03T12:48:55] done case=flight_synthetic_0033 method=active_set_verified_projection success=True h=0.0006087804213166237 dist=0.009999987634207412 candidates=864
+[2026-07-03T12:48:55] start idx=34 case=flight_synthetic_0034 method=no_repair
+[2026-07-03T12:48:55] done case=flight_synthetic_0034 method=no_repair success=False h=6.429286440834403e-05 dist=0.0 candidates=0
+[2026-07-03T12:48:55] start idx=34 case=flight_synthetic_0034 method=heuristic_repulsion
+[2026-07-03T12:48:55] done case=flight_synthetic_0034 method=heuristic_repulsion success=True h=0.000784962554462254 dist=0.009999885252045641 candidates=2
+[2026-07-03T12:48:55] start idx=34 case=flight_synthetic_0034 method=verified_projection
+[2026-07-03T12:49:09] done case=flight_synthetic_0034 method=verified_projection success=True h=0.0005761903012171388 dist=0.009999977065124212 candidates=858
+[2026-07-03T12:49:09] start idx=34 case=flight_synthetic_0034 method=active_set_verified_projection
+[2026-07-03T12:49:22] done case=flight_synthetic_0034 method=active_set_verified_projection success=True h=0.0005761903012171388 dist=0.009999977065124212 candidates=858
+[2026-07-03T12:49:22] start idx=35 case=flight_synthetic_0035 method=no_repair
+[2026-07-03T12:49:22] done case=flight_synthetic_0035 method=no_repair success=False h=6.338226376101375e-05 dist=0.0 candidates=0
+[2026-07-03T12:49:22] start idx=35 case=flight_synthetic_0035 method=heuristic_repulsion
+[2026-07-03T12:49:22] done case=flight_synthetic_0035 method=heuristic_repulsion success=True h=0.0007837320445105433 dist=0.010000011464511412 candidates=2
+[2026-07-03T12:49:22] start idx=35 case=flight_synthetic_0035 method=verified_projection
+[2026-07-03T12:49:36] done case=flight_synthetic_0035 method=verified_projection success=True h=0.0007725212490186095 dist=0.009999999396350892 candidates=858
+[2026-07-03T12:49:36] start idx=35 case=flight_synthetic_0035 method=active_set_verified_projection
+[2026-07-03T12:49:50] done case=flight_synthetic_0035 method=active_set_verified_projection success=True h=0.0007725212490186095 dist=0.009999999396350892 candidates=858
+[2026-07-03T12:49:50] start idx=36 case=flight_synthetic_0036 method=no_repair
+[2026-07-03T12:49:50] done case=flight_synthetic_0036 method=no_repair success=False h=-1.2025702744722366e-05 dist=0.0 candidates=0
+[2026-07-03T12:49:50] start idx=36 case=flight_synthetic_0036 method=heuristic_repulsion
+[2026-07-03T12:49:50] done case=flight_synthetic_0036 method=heuristic_repulsion success=True h=0.0006629972485825419 dist=0.00999995909107429 candidates=2
+[2026-07-03T12:49:50] start idx=36 case=flight_synthetic_0036 method=verified_projection
+[2026-07-03T12:50:03] done case=flight_synthetic_0036 method=verified_projection success=True h=0.0006580265471711755 dist=0.009999988295616978 candidates=858
+[2026-07-03T12:50:03] start idx=36 case=flight_synthetic_0036 method=active_set_verified_projection
+[2026-07-03T12:50:17] done case=flight_synthetic_0036 method=active_set_verified_projection success=True h=0.0006580265471711755 dist=0.009999988295616978 candidates=858
+[2026-07-03T12:50:17] start idx=37 case=flight_synthetic_0037 method=no_repair
+[2026-07-03T12:50:17] done case=flight_synthetic_0037 method=no_repair success=False h=2.0878564100712538e-05 dist=0.0 candidates=0
+[2026-07-03T12:50:17] start idx=37 case=flight_synthetic_0037 method=heuristic_repulsion
+[2026-07-03T12:50:17] done case=flight_synthetic_0037 method=heuristic_repulsion success=True h=0.0006649437127634883 dist=0.009997201879289425 candidates=2
+[2026-07-03T12:50:17] start idx=37 case=flight_synthetic_0037 method=verified_projection
+[2026-07-03T12:50:31] done case=flight_synthetic_0037 method=verified_projection success=True h=0.0005018977681174874 dist=0.00999998975427967 candidates=858
+[2026-07-03T12:50:31] start idx=37 case=flight_synthetic_0037 method=active_set_verified_projection
+[2026-07-03T12:50:45] done case=flight_synthetic_0037 method=active_set_verified_projection success=True h=0.0005018977681174874 dist=0.00999998975427967 candidates=858
+[2026-07-03T12:50:45] start idx=38 case=flight_synthetic_0038 method=no_repair
+[2026-07-03T12:50:45] done case=flight_synthetic_0038 method=no_repair success=False h=-7.151381578296423e-05 dist=0.0 candidates=0
+[2026-07-03T12:50:45] start idx=38 case=flight_synthetic_0038 method=heuristic_repulsion
+[2026-07-03T12:50:45] done case=flight_synthetic_0038 method=heuristic_repulsion success=True h=0.000728039420209825 dist=0.014999436018383468 candidates=3
+[2026-07-03T12:50:45] start idx=38 case=flight_synthetic_0038 method=verified_projection
+[2026-07-03T12:50:59] done case=flight_synthetic_0038 method=verified_projection success=True h=0.0005737099563702941 dist=0.010000000826514083 candidates=858
+[2026-07-03T12:50:59] start idx=38 case=flight_synthetic_0038 method=active_set_verified_projection
+[2026-07-03T12:51:12] done case=flight_synthetic_0038 method=active_set_verified_projection success=True h=0.0005737099563702941 dist=0.010000000826514083 candidates=858
+[2026-07-03T12:51:12] start idx=39 case=flight_synthetic_0039 method=no_repair
+[2026-07-03T12:51:12] done case=flight_synthetic_0039 method=no_repair success=False h=-0.00026180053828284144 dist=0.0 candidates=0
+[2026-07-03T12:51:12] start idx=39 case=flight_synthetic_0039 method=heuristic_repulsion
+[2026-07-03T12:51:13] done case=flight_synthetic_0039 method=heuristic_repulsion success=True h=0.0007171890465542674 dist=0.014997218424414973 candidates=3
+[2026-07-03T12:51:13] start idx=39 case=flight_synthetic_0039 method=verified_projection
+[2026-07-03T12:51:26] done case=flight_synthetic_0039 method=verified_projection success=True h=0.0007673926884308457 dist=0.01999999828687071 candidates=858
+[2026-07-03T12:51:26] start idx=39 case=flight_synthetic_0039 method=active_set_verified_projection
+[2026-07-03T12:51:40] done case=flight_synthetic_0039 method=active_set_verified_projection success=True h=0.0007673926884308457 dist=0.01999999828687071 candidates=858
+[2026-07-03T12:51:40] start idx=40 case=flight_synthetic_0040 method=no_repair
+[2026-07-03T12:51:40] done case=flight_synthetic_0040 method=no_repair success=False h=-0.0007418370805680752 dist=0.0 candidates=0
+[2026-07-03T12:51:40] start idx=40 case=flight_synthetic_0040 method=heuristic_repulsion
+[2026-07-03T12:51:40] done case=flight_synthetic_0040 method=heuristic_repulsion success=True h=0.00079587590880692 dist=0.029982882689038173 candidates=6
+[2026-07-03T12:51:40] start idx=40 case=flight_synthetic_0040 method=verified_projection
+[2026-07-03T12:51:54] done case=flight_synthetic_0040 method=verified_projection success=True h=0.0014453382464125752 dist=0.04999999298673335 candidates=858
+[2026-07-03T12:51:54] start idx=40 case=flight_synthetic_0040 method=active_set_verified_projection
+[2026-07-03T12:52:07] done case=flight_synthetic_0040 method=active_set_verified_projection success=True h=0.0014453382464125752 dist=0.04999999298673335 candidates=858
+[2026-07-03T12:52:07] start idx=41 case=flight_synthetic_0041 method=no_repair
+[2026-07-03T12:52:07] done case=flight_synthetic_0041 method=no_repair success=False h=-0.0008933258941397071 dist=0.0 candidates=0
+[2026-07-03T12:52:07] start idx=41 case=flight_synthetic_0041 method=heuristic_repulsion
+[2026-07-03T12:52:08] done case=flight_synthetic_0041 method=heuristic_repulsion success=True h=0.0005570276407524943 dist=0.04933612283581268 candidates=10
+[2026-07-03T12:52:08] start idx=41 case=flight_synthetic_0041 method=verified_projection
+[2026-07-03T12:52:21] done case=flight_synthetic_0041 method=verified_projection success=True h=0.0005476804217323661 dist=0.04999997851060683 candidates=858
+[2026-07-03T12:52:21] start idx=41 case=flight_synthetic_0041 method=active_set_verified_projection
+[2026-07-03T12:52:35] done case=flight_synthetic_0041 method=active_set_verified_projection success=True h=0.0005476804217323661 dist=0.04999997851060683 candidates=858
+[2026-07-03T12:52:35] start idx=42 case=flight_synthetic_0042 method=no_repair
+[2026-07-03T12:52:35] done case=flight_synthetic_0042 method=no_repair success=False h=-0.00042190661770291626 dist=0.0 candidates=0
+[2026-07-03T12:52:35] start idx=42 case=flight_synthetic_0042 method=heuristic_repulsion
+[2026-07-03T12:52:35] done case=flight_synthetic_0042 method=heuristic_repulsion success=True h=0.0007697346154600382 dist=0.019999143280096002 candidates=4
+[2026-07-03T12:52:35] start idx=42 case=flight_synthetic_0042 method=verified_projection
+[2026-07-03T12:52:48] done case=flight_synthetic_0042 method=verified_projection success=True h=0.0005634340923279524 dist=0.01999998383678932 candidates=858
+[2026-07-03T12:52:48] start idx=42 case=flight_synthetic_0042 method=active_set_verified_projection
+[2026-07-03T12:53:02] done case=flight_synthetic_0042 method=active_set_verified_projection success=True h=0.0005634340923279524 dist=0.01999998383678932 candidates=858
+[2026-07-03T12:53:02] start idx=43 case=flight_synthetic_0043 method=no_repair
+[2026-07-03T12:53:02] done case=flight_synthetic_0043 method=no_repair success=False h=-0.0008950133924372494 dist=0.0 candidates=0
+[2026-07-03T12:53:02] start idx=43 case=flight_synthetic_0043 method=heuristic_repulsion
+[2026-07-03T12:53:02] done case=flight_synthetic_0043 method=heuristic_repulsion success=True h=0.0006623780354857445 dist=0.0398048549478883 candidates=8
+[2026-07-03T12:53:02] start idx=43 case=flight_synthetic_0043 method=verified_projection
+[2026-07-03T12:53:16] done case=flight_synthetic_0043 method=verified_projection success=True h=0.0008326779352501035 dist=0.049999997542894095 candidates=858
+[2026-07-03T12:53:16] start idx=43 case=flight_synthetic_0043 method=active_set_verified_projection
+[2026-07-03T12:53:29] done case=flight_synthetic_0043 method=active_set_verified_projection success=True h=0.0008326779352501035 dist=0.049999997542894095 candidates=858
+[2026-07-03T12:53:29] start idx=44 case=flight_synthetic_0044 method=no_repair
+[2026-07-03T12:53:29] done case=flight_synthetic_0044 method=no_repair success=True h=0.0005033566849306226 dist=0.0 candidates=0
+[2026-07-03T12:53:29] start idx=44 case=flight_synthetic_0044 method=heuristic_repulsion
+[2026-07-03T12:53:29] done case=flight_synthetic_0044 method=heuristic_repulsion success=True h=0.0005033566849306226 dist=1.1937889563100044e-08 candidates=0
+[2026-07-03T12:53:29] start idx=44 case=flight_synthetic_0044 method=verified_projection
+[2026-07-03T12:53:29] done case=flight_synthetic_0044 method=verified_projection success=True h=0.0005033566849306226 dist=1.1937889563100044e-08 candidates=0
+[2026-07-03T12:53:29] start idx=44 case=flight_synthetic_0044 method=active_set_verified_projection
+[2026-07-03T12:53:30] done case=flight_synthetic_0044 method=active_set_verified_projection success=True h=0.0005033566849306226 dist=1.1937889563100044e-08 candidates=0
+[2026-07-03T12:53:30] start idx=45 case=flight_synthetic_0045 method=no_repair
+[2026-07-03T12:53:30] done case=flight_synthetic_0045 method=no_repair success=False h=-0.00038393185241147876 dist=0.0 candidates=0
+[2026-07-03T12:53:30] start idx=45 case=flight_synthetic_0045 method=heuristic_repulsion
+[2026-07-03T12:53:30] done case=flight_synthetic_0045 method=heuristic_repulsion success=True h=0.0007940713549032807 dist=0.019998718358748124 candidates=4
+[2026-07-03T12:53:30] start idx=45 case=flight_synthetic_0045 method=verified_projection
+[2026-07-03T12:53:43] done case=flight_synthetic_0045 method=verified_projection success=True h=0.0007710889913141727 dist=0.01999998598948802 candidates=858
+[2026-07-03T12:53:43] start idx=45 case=flight_synthetic_0045 method=active_set_verified_projection
+[2026-07-03T12:53:57] done case=flight_synthetic_0045 method=active_set_verified_projection success=True h=0.0007710889913141727 dist=0.01999998598948802 candidates=858
+[2026-07-03T12:53:57] start idx=46 case=flight_synthetic_0046 method=no_repair
+[2026-07-03T12:53:57] done case=flight_synthetic_0046 method=no_repair success=False h=-0.0008376992191188037 dist=0.0 candidates=0
+[2026-07-03T12:53:57] start idx=46 case=flight_synthetic_0046 method=heuristic_repulsion
+[2026-07-03T12:53:57] done case=flight_synthetic_0046 method=heuristic_repulsion success=True h=0.0008647724753245711 dist=0.044720718467755 candidates=9
+[2026-07-03T12:53:57] start idx=46 case=flight_synthetic_0046 method=verified_projection
+[2026-07-03T12:54:11] done case=flight_synthetic_0046 method=verified_projection success=True h=0.0005268141394481063 dist=0.04999999894030055 candidates=858
+[2026-07-03T12:54:11] start idx=46 case=flight_synthetic_0046 method=active_set_verified_projection
+[2026-07-03T12:54:24] done case=flight_synthetic_0046 method=active_set_verified_projection success=True h=0.0005268141394481063 dist=0.04999999894030055 candidates=858
+[2026-07-03T12:54:24] start idx=47 case=flight_synthetic_0047 method=no_repair
+[2026-07-03T12:54:24] done case=flight_synthetic_0047 method=no_repair success=False h=-0.0008456737850792706 dist=0.0 candidates=0
+[2026-07-03T12:54:24] start idx=47 case=flight_synthetic_0047 method=heuristic_repulsion
+[2026-07-03T12:54:24] done case=flight_synthetic_0047 method=heuristic_repulsion success=True h=0.0008942483691498637 dist=0.03498933589960457 candidates=7
+[2026-07-03T12:54:24] start idx=47 case=flight_synthetic_0047 method=verified_projection
+[2026-07-03T12:54:38] done case=flight_synthetic_0047 method=verified_projection success=True h=0.0010206234874203801 dist=0.0499999909858392 candidates=864
+[2026-07-03T12:54:38] start idx=47 case=flight_synthetic_0047 method=active_set_verified_projection
+[2026-07-03T12:54:52] done case=flight_synthetic_0047 method=active_set_verified_projection success=True h=0.0010206234874203801 dist=0.0499999909858392 candidates=864
+[2026-07-03T12:54:52] start idx=48 case=flight_synthetic_0048 method=no_repair
+[2026-07-03T12:54:52] done case=flight_synthetic_0048 method=no_repair success=False h=-0.000899433740414679 dist=0.0 candidates=0
+[2026-07-03T12:54:52] start idx=48 case=flight_synthetic_0048 method=heuristic_repulsion
+[2026-07-03T12:54:53] done case=flight_synthetic_0048 method=heuristic_repulsion success=False h=-0.0005530661437660456 dist=0.030673759058117867 candidates=50
+[2026-07-03T12:54:53] start idx=48 case=flight_synthetic_0048 method=verified_projection
+[2026-07-03T12:55:07] done case=flight_synthetic_0048 method=verified_projection success=True h=0.002412870991975069 dist=0.09999999425915057 candidates=858
+[2026-07-03T12:55:07] start idx=48 case=flight_synthetic_0048 method=active_set_verified_projection
+[2026-07-03T12:55:20] done case=flight_synthetic_0048 method=active_set_verified_projection success=True h=0.002412870991975069 dist=0.09999999425915057 candidates=858
+[2026-07-03T12:55:20] start idx=49 case=flight_synthetic_0049 method=no_repair
+[2026-07-03T12:55:20] done case=flight_synthetic_0049 method=no_repair success=False h=-0.0008913929923437536 dist=0.0 candidates=0
+[2026-07-03T12:55:20] start idx=49 case=flight_synthetic_0049 method=heuristic_repulsion
+[2026-07-03T12:55:22] done case=flight_synthetic_0049 method=heuristic_repulsion success=False h=-0.0008786017424426973 dist=0.01869804970920086 candidates=50
+[2026-07-03T12:55:22] start idx=49 case=flight_synthetic_0049 method=verified_projection
+[2026-07-03T12:55:36] done case=flight_synthetic_0049 method=verified_projection success=True h=0.001505439286120236 dist=0.0999999804599884 candidates=858
+[2026-07-03T12:55:36] start idx=49 case=flight_synthetic_0049 method=active_set_verified_projection
+[2026-07-03T12:55:49] done case=flight_synthetic_0049 method=active_set_verified_projection success=True h=0.001505439286120236 dist=0.0999999804599884 candidates=858
+[2026-07-03T12:55:49] start idx=50 case=flight_synthetic_0050 method=no_repair
+[2026-07-03T12:55:49] done case=flight_synthetic_0050 method=no_repair success=False h=-0.0008929139585234225 dist=0.0 candidates=0
+[2026-07-03T12:55:49] start idx=50 case=flight_synthetic_0050 method=heuristic_repulsion
+[2026-07-03T12:55:51] done case=flight_synthetic_0050 method=heuristic_repulsion success=False h=-0.0008998421835713089 dist=0.0610828697681427 candidates=50
+[2026-07-03T12:55:51] start idx=50 case=flight_synthetic_0050 method=verified_projection
+[2026-07-03T12:56:04] done case=flight_synthetic_0050 method=verified_projection success=True h=0.0017205752665176988 dist=0.0999999840711391 candidates=858
+[2026-07-03T12:56:04] start idx=50 case=flight_synthetic_0050 method=active_set_verified_projection
+[2026-07-03T12:56:18] done case=flight_synthetic_0050 method=active_set_verified_projection success=True h=0.0017205752665176988 dist=0.0999999840711391 candidates=858
+[2026-07-03T12:56:18] start idx=51 case=flight_synthetic_0051 method=no_repair
+[2026-07-03T12:56:18] done case=flight_synthetic_0051 method=no_repair success=False h=-0.0008995737298391759 dist=0.0 candidates=0
+[2026-07-03T12:56:18] start idx=51 case=flight_synthetic_0051 method=heuristic_repulsion
+[2026-07-03T12:56:20] done case=flight_synthetic_0051 method=heuristic_repulsion success=False h=-0.0008993701194413006 dist=0.061284057796001434 candidates=50
+[2026-07-03T12:56:20] start idx=51 case=flight_synthetic_0051 method=verified_projection
+[2026-07-03T12:56:34] done case=flight_synthetic_0051 method=verified_projection success=True h=0.0012957468861714005 dist=0.0999999903785753 candidates=864
+[2026-07-03T12:56:34] start idx=51 case=flight_synthetic_0051 method=active_set_verified_projection
+[2026-07-03T12:56:49] done case=flight_synthetic_0051 method=active_set_verified_projection success=True h=0.0012957468861714005 dist=0.0999999903785753 candidates=864
+[2026-07-03T12:56:49] start idx=52 case=flight_synthetic_0052 method=no_repair
+[2026-07-03T12:56:49] done case=flight_synthetic_0052 method=no_repair success=False h=-0.0006693158647976816 dist=0.0 candidates=0
+[2026-07-03T12:56:49] start idx=52 case=flight_synthetic_0052 method=heuristic_repulsion
+[2026-07-03T12:56:49] done case=flight_synthetic_0052 method=heuristic_repulsion success=True h=0.0006074873963370919 dist=0.024034618000133366 candidates=5
+[2026-07-03T12:56:49] start idx=52 case=flight_synthetic_0052 method=verified_projection
+[2026-07-03T12:57:03] done case=flight_synthetic_0052 method=verified_projection success=True h=0.002055779565125704 dist=0.04999997808222468 candidates=858
+[2026-07-03T12:57:03] start idx=52 case=flight_synthetic_0052 method=active_set_verified_projection
+[2026-07-03T12:57:17] done case=flight_synthetic_0052 method=active_set_verified_projection success=True h=0.002055779565125704 dist=0.04999997808222468 candidates=858
+[2026-07-03T12:57:17] start idx=53 case=flight_synthetic_0053 method=no_repair
+[2026-07-03T12:57:17] done case=flight_synthetic_0053 method=no_repair success=False h=-0.00039215455763041973 dist=0.0 candidates=0
+[2026-07-03T12:57:17] start idx=53 case=flight_synthetic_0053 method=heuristic_repulsion
+[2026-07-03T12:57:17] done case=flight_synthetic_0053 method=heuristic_repulsion success=True h=0.0005086752353236079 dist=0.014999435123335963 candidates=3
+[2026-07-03T12:57:17] start idx=53 case=flight_synthetic_0053 method=verified_projection
+[2026-07-03T12:57:31] done case=flight_synthetic_0053 method=verified_projection success=True h=0.0005213668337091804 dist=0.019999981553452097 candidates=858
+[2026-07-03T12:57:31] start idx=53 case=flight_synthetic_0053 method=active_set_verified_projection
+[2026-07-03T12:57:45] done case=flight_synthetic_0053 method=active_set_verified_projection success=True h=0.0005213668337091804 dist=0.019999981553452097 candidates=858
+[2026-07-03T12:57:45] start idx=54 case=flight_synthetic_0054 method=no_repair
+[2026-07-03T12:57:45] done case=flight_synthetic_0054 method=no_repair success=False h=-0.0007206992595456541 dist=0.0 candidates=0
+[2026-07-03T12:57:45] start idx=54 case=flight_synthetic_0054 method=heuristic_repulsion
+[2026-07-03T12:57:45] done case=flight_synthetic_0054 method=heuristic_repulsion success=True h=0.0005712662823498249 dist=0.02498936659150522 candidates=5
+[2026-07-03T12:57:45] start idx=54 case=flight_synthetic_0054 method=verified_projection
+[2026-07-03T12:57:59] done case=flight_synthetic_0054 method=verified_projection success=True h=0.0028006229549646378 dist=0.04999997036637545 candidates=858
+[2026-07-03T12:57:59] start idx=54 case=flight_synthetic_0054 method=active_set_verified_projection
+[2026-07-03T12:58:13] done case=flight_synthetic_0054 method=active_set_verified_projection success=True h=0.0028006229549646378 dist=0.04999997036637545 candidates=858
+[2026-07-03T12:58:13] start idx=55 case=flight_synthetic_0055 method=no_repair
+[2026-07-03T12:58:13] done case=flight_synthetic_0055 method=no_repair success=False h=-0.0008995121461339295 dist=0.0 candidates=0
+[2026-07-03T12:58:13] start idx=55 case=flight_synthetic_0055 method=heuristic_repulsion
+[2026-07-03T12:58:13] done case=flight_synthetic_0055 method=heuristic_repulsion success=True h=0.0007857560412958264 dist=0.04175747649351564 candidates=9
+[2026-07-03T12:58:13] start idx=55 case=flight_synthetic_0055 method=verified_projection
+[2026-07-03T12:58:27] done case=flight_synthetic_0055 method=verified_projection success=True h=0.000788710662163794 dist=0.04999998008243691 candidates=858
+[2026-07-03T12:58:27] start idx=55 case=flight_synthetic_0055 method=active_set_verified_projection
+[2026-07-03T12:58:41] done case=flight_synthetic_0055 method=active_set_verified_projection success=True h=0.000788710662163794 dist=0.04999998008243691 candidates=858
+[2026-07-03T12:58:41] start idx=56 case=flight_synthetic_0056 method=no_repair
+[2026-07-03T12:58:41] done case=flight_synthetic_0056 method=no_repair success=False h=-0.0008986385655589402 dist=0.0 candidates=0
+[2026-07-03T12:58:41] start idx=56 case=flight_synthetic_0056 method=heuristic_repulsion
+[2026-07-03T12:58:41] done case=flight_synthetic_0056 method=heuristic_repulsion success=True h=0.0007111206650733948 dist=0.039502585384891244 candidates=8
+[2026-07-03T12:58:41] start idx=56 case=flight_synthetic_0056 method=verified_projection
+[2026-07-03T12:58:55] done case=flight_synthetic_0056 method=verified_projection success=True h=0.0016250180779024959 dist=0.049999998637525425 candidates=858
+[2026-07-03T12:58:55] start idx=56 case=flight_synthetic_0056 method=active_set_verified_projection
+[2026-07-03T12:59:09] done case=flight_synthetic_0056 method=active_set_verified_projection success=True h=0.0016250180779024959 dist=0.049999998637525425 candidates=858
+[2026-07-03T12:59:09] start idx=57 case=flight_synthetic_0057 method=no_repair
+[2026-07-03T12:59:09] done case=flight_synthetic_0057 method=no_repair success=False h=-0.0009000002173706889 dist=0.0 candidates=0
+[2026-07-03T12:59:09] start idx=57 case=flight_synthetic_0057 method=heuristic_repulsion
+[2026-07-03T12:59:11] done case=flight_synthetic_0057 method=heuristic_repulsion success=False h=-0.0008931536576710641 dist=0.01339852437376976 candidates=50
+[2026-07-03T12:59:11] start idx=57 case=flight_synthetic_0057 method=verified_projection
+[2026-07-03T12:59:24] done case=flight_synthetic_0057 method=verified_projection success=True h=0.0006440879078581929 dist=0.04999999132548588 candidates=858
+[2026-07-03T12:59:24] start idx=57 case=flight_synthetic_0057 method=active_set_verified_projection
+[2026-07-03T12:59:38] done case=flight_synthetic_0057 method=active_set_verified_projection success=True h=0.0006440879078581929 dist=0.04999999132548588 candidates=858
+[2026-07-03T12:59:38] start idx=58 case=flight_synthetic_0058 method=no_repair
+[2026-07-03T12:59:38] done case=flight_synthetic_0058 method=no_repair success=False h=-0.0008964900625869632 dist=0.0 candidates=0
+[2026-07-03T12:59:38] start idx=58 case=flight_synthetic_0058 method=heuristic_repulsion
+[2026-07-03T12:59:39] done case=flight_synthetic_0058 method=heuristic_repulsion success=True h=0.000731526524759829 dist=0.0956395227663692 candidates=28
+[2026-07-03T12:59:39] start idx=58 case=flight_synthetic_0058 method=verified_projection
+[2026-07-03T12:59:53] done case=flight_synthetic_0058 method=verified_projection success=True h=0.0012138158781453967 dist=0.049999983474686455 candidates=858
+[2026-07-03T12:59:53] start idx=58 case=flight_synthetic_0058 method=active_set_verified_projection
+[2026-07-03T13:00:07] done case=flight_synthetic_0058 method=active_set_verified_projection success=True h=0.0012138158781453967 dist=0.049999983474686455 candidates=858
+[2026-07-03T13:00:07] start idx=59 case=flight_synthetic_0059 method=no_repair
+[2026-07-03T13:00:07] done case=flight_synthetic_0059 method=no_repair success=False h=-0.00035788456443697214 dist=0.0 candidates=0
+[2026-07-03T13:00:07] start idx=59 case=flight_synthetic_0059 method=heuristic_repulsion
+[2026-07-03T13:00:07] done case=flight_synthetic_0059 method=heuristic_repulsion success=True h=0.0005624286131933331 dist=0.014999345657389326 candidates=3
+[2026-07-03T13:00:07] start idx=59 case=flight_synthetic_0059 method=verified_projection
+[2026-07-03T13:00:22] done case=flight_synthetic_0059 method=verified_projection success=True h=0.0007915135938674212 dist=0.01999999604995756 candidates=858
+[2026-07-03T13:00:22] start idx=59 case=flight_synthetic_0059 method=active_set_verified_projection
+[2026-07-03T13:00:36] done case=flight_synthetic_0059 method=active_set_verified_projection success=True h=0.0007915135938674212 dist=0.01999999604995756 candidates=858
+[2026-07-03T13:00:36] start idx=60 case=flight_synthetic_0060 method=no_repair
+[2026-07-03T13:00:36] done case=flight_synthetic_0060 method=no_repair success=False h=-0.0008997120312415063 dist=0.0 candidates=0
+[2026-07-03T13:00:36] start idx=60 case=flight_synthetic_0060 method=heuristic_repulsion
+[2026-07-03T13:00:36] done case=flight_synthetic_0060 method=heuristic_repulsion success=True h=0.0006113395793363452 dist=0.039869589825814664 candidates=8
+[2026-07-03T13:00:36] start idx=60 case=flight_synthetic_0060 method=verified_projection
+[2026-07-03T13:00:50] done case=flight_synthetic_0060 method=verified_projection success=True h=0.0006550311809405684 dist=0.04999998706536566 candidates=858
+[2026-07-03T13:00:50] start idx=60 case=flight_synthetic_0060 method=active_set_verified_projection
+[2026-07-03T13:01:05] done case=flight_synthetic_0060 method=active_set_verified_projection success=True h=0.0006550311809405684 dist=0.04999998706536566 candidates=858
+[2026-07-03T13:01:05] start idx=61 case=flight_synthetic_0061 method=no_repair
+[2026-07-03T13:01:05] done case=flight_synthetic_0061 method=no_repair success=True h=0.0009973252890631557 dist=0.0 candidates=0
+[2026-07-03T13:01:05] start idx=61 case=flight_synthetic_0061 method=heuristic_repulsion
+[2026-07-03T13:01:05] done case=flight_synthetic_0061 method=heuristic_repulsion success=True h=0.0009973252890631557 dist=5.907151349540101e-09 candidates=0
+[2026-07-03T13:01:05] start idx=61 case=flight_synthetic_0061 method=verified_projection
+[2026-07-03T13:01:05] done case=flight_synthetic_0061 method=verified_projection success=True h=0.0009973252890631557 dist=5.907151349540101e-09 candidates=0
+[2026-07-03T13:01:05] start idx=61 case=flight_synthetic_0061 method=active_set_verified_projection
+[2026-07-03T13:01:05] done case=flight_synthetic_0061 method=active_set_verified_projection success=True h=0.0009973252890631557 dist=5.907151349540101e-09 candidates=0
+[2026-07-03T13:01:05] start idx=62 case=flight_synthetic_0062 method=no_repair
+[2026-07-03T13:01:05] done case=flight_synthetic_0062 method=no_repair success=False h=-7.931492291390896e-05 dist=0.0 candidates=0
+[2026-07-03T13:01:05] start idx=62 case=flight_synthetic_0062 method=heuristic_repulsion
+[2026-07-03T13:01:05] done case=flight_synthetic_0062 method=heuristic_repulsion success=True h=0.0005928522441536188 dist=0.009999800585816732 candidates=2
+[2026-07-03T13:01:05] start idx=62 case=flight_synthetic_0062 method=verified_projection
+[2026-07-03T13:01:19] done case=flight_synthetic_0062 method=verified_projection success=True h=0.0005926113808527589 dist=0.009999984202454779 candidates=858
+[2026-07-03T13:01:19] start idx=62 case=flight_synthetic_0062 method=active_set_verified_projection
+[2026-07-03T13:01:33] done case=flight_synthetic_0062 method=active_set_verified_projection success=True h=0.0005926113808527589 dist=0.009999984202454779 candidates=858
+[2026-07-03T13:01:33] start idx=63 case=flight_synthetic_0063 method=no_repair
+[2026-07-03T13:01:33] done case=flight_synthetic_0063 method=no_repair success=False h=-0.0008999950950965285 dist=0.0 candidates=0
+[2026-07-03T13:01:33] start idx=63 case=flight_synthetic_0063 method=heuristic_repulsion
+[2026-07-03T13:01:34] done case=flight_synthetic_0063 method=heuristic_repulsion success=True h=0.0005830988520756364 dist=0.05575381564338996 candidates=19
+[2026-07-03T13:01:34] start idx=63 case=flight_synthetic_0063 method=verified_projection
+[2026-07-03T13:01:48] done case=flight_synthetic_0063 method=verified_projection success=True h=0.0010100831277668476 dist=0.04999999080739331 candidates=858
+[2026-07-03T13:01:48] start idx=63 case=flight_synthetic_0063 method=active_set_verified_projection
+[2026-07-03T13:02:03] done case=flight_synthetic_0063 method=active_set_verified_projection success=True h=0.0010100831277668476 dist=0.04999999080739331 candidates=858
+[2026-07-03T13:02:03] start idx=64 case=flight_synthetic_0064 method=no_repair
+[2026-07-03T13:02:03] done case=flight_synthetic_0064 method=no_repair success=False h=-0.0008665054338052869 dist=0.0 candidates=0
+[2026-07-03T13:02:03] start idx=64 case=flight_synthetic_0064 method=heuristic_repulsion
+[2026-07-03T13:02:03] done case=flight_synthetic_0064 method=heuristic_repulsion success=True h=0.000665797502733767 dist=0.05077393772196296 candidates=18
+[2026-07-03T13:02:03] start idx=64 case=flight_synthetic_0064 method=verified_projection
+[2026-07-03T13:02:17] done case=flight_synthetic_0064 method=verified_projection success=True h=0.000714278663508594 dist=0.04999999910647238 candidates=858
+[2026-07-03T13:02:17] start idx=64 case=flight_synthetic_0064 method=active_set_verified_projection
+[2026-07-03T13:02:32] done case=flight_synthetic_0064 method=active_set_verified_projection success=True h=0.000714278663508594 dist=0.04999999910647238 candidates=858
+[2026-07-03T13:02:32] start idx=65 case=flight_synthetic_0065 method=no_repair
+[2026-07-03T13:02:32] done case=flight_synthetic_0065 method=no_repair success=False h=5.189975490793586e-05 dist=0.0 candidates=0
+[2026-07-03T13:02:32] start idx=65 case=flight_synthetic_0065 method=heuristic_repulsion
+[2026-07-03T13:02:32] done case=flight_synthetic_0065 method=heuristic_repulsion success=True h=0.0005714121507480741 dist=0.009999889513631071 candidates=2
+[2026-07-03T13:02:32] start idx=65 case=flight_synthetic_0065 method=verified_projection
+[2026-07-03T13:02:46] done case=flight_synthetic_0065 method=verified_projection success=True h=0.0005908499006181955 dist=0.009999987220223659 candidates=864
+[2026-07-03T13:02:46] start idx=65 case=flight_synthetic_0065 method=active_set_verified_projection
+[2026-07-03T13:03:01] done case=flight_synthetic_0065 method=active_set_verified_projection success=True h=0.0005908499006181955 dist=0.009999987220223659 candidates=864
+[2026-07-03T13:03:01] start idx=66 case=flight_synthetic_0066 method=no_repair
+[2026-07-03T13:03:01] done case=flight_synthetic_0066 method=no_repair success=False h=-0.0006902982713654637 dist=0.0 candidates=0
+[2026-07-03T13:03:01] start idx=66 case=flight_synthetic_0066 method=heuristic_repulsion
+[2026-07-03T13:03:01] done case=flight_synthetic_0066 method=heuristic_repulsion success=True h=0.0007359223673120141 dist=0.03977826254143012 candidates=8
+[2026-07-03T13:03:01] start idx=66 case=flight_synthetic_0066 method=verified_projection
+[2026-07-03T13:03:15] done case=flight_synthetic_0066 method=verified_projection success=True h=0.0013339970028027892 dist=0.04999998710447275 candidates=858
+[2026-07-03T13:03:15] start idx=66 case=flight_synthetic_0066 method=active_set_verified_projection
+[2026-07-03T13:03:30] done case=flight_synthetic_0066 method=active_set_verified_projection success=True h=0.0013339970028027892 dist=0.04999998710447275 candidates=858
+[2026-07-03T13:03:30] start idx=67 case=flight_synthetic_0067 method=no_repair
+[2026-07-03T13:03:30] done case=flight_synthetic_0067 method=no_repair success=False h=-0.0004481988726183772 dist=0.0 candidates=0
+[2026-07-03T13:03:30] start idx=67 case=flight_synthetic_0067 method=heuristic_repulsion
+[2026-07-03T13:03:30] done case=flight_synthetic_0067 method=heuristic_repulsion success=True h=0.0007958662463352084 dist=0.019999834108420895 candidates=4
+[2026-07-03T13:03:30] start idx=67 case=flight_synthetic_0067 method=verified_projection
+[2026-07-03T13:03:44] done case=flight_synthetic_0067 method=verified_projection success=True h=0.0005036416696384549 dist=0.01999999504791011 candidates=858
+[2026-07-03T13:03:44] start idx=67 case=flight_synthetic_0067 method=active_set_verified_projection
+[2026-07-03T13:03:58] done case=flight_synthetic_0067 method=active_set_verified_projection success=True h=0.0005036416696384549 dist=0.01999999504791011 candidates=858
+[2026-07-03T13:03:58] start idx=68 case=flight_synthetic_0068 method=no_repair
+[2026-07-03T13:03:58] done case=flight_synthetic_0068 method=no_repair success=False h=-0.0008958757971413434 dist=0.0 candidates=0
+[2026-07-03T13:03:58] start idx=68 case=flight_synthetic_0068 method=heuristic_repulsion
+[2026-07-03T13:03:59] done case=flight_synthetic_0068 method=heuristic_repulsion success=True h=0.0007314350223168731 dist=0.057397783719967475 candidates=33
+[2026-07-03T13:03:59] start idx=68 case=flight_synthetic_0068 method=verified_projection
+[2026-07-03T13:04:13] done case=flight_synthetic_0068 method=verified_projection success=True h=0.0014876321656629443 dist=0.05000000189606979 candidates=858
+[2026-07-03T13:04:13] start idx=68 case=flight_synthetic_0068 method=active_set_verified_projection
+[2026-07-03T13:04:28] done case=flight_synthetic_0068 method=active_set_verified_projection success=True h=0.0014876321656629443 dist=0.05000000189606979 candidates=858
+[2026-07-03T13:04:28] start idx=69 case=flight_synthetic_0069 method=no_repair
+[2026-07-03T13:04:28] done case=flight_synthetic_0069 method=no_repair success=False h=-0.0003339542308822274 dist=0.0 candidates=0
+[2026-07-03T13:04:28] start idx=69 case=flight_synthetic_0069 method=heuristic_repulsion
+[2026-07-03T13:04:28] done case=flight_synthetic_0069 method=heuristic_repulsion success=True h=0.0006047033239156008 dist=0.015000002417996445 candidates=3
+[2026-07-03T13:04:28] start idx=69 case=flight_synthetic_0069 method=verified_projection
+[2026-07-03T13:04:42] done case=flight_synthetic_0069 method=verified_projection success=True h=0.0006273911567404866 dist=0.020000000642722858 candidates=858
+[2026-07-03T13:04:42] start idx=69 case=flight_synthetic_0069 method=active_set_verified_projection
+[2026-07-03T13:04:56] done case=flight_synthetic_0069 method=active_set_verified_projection success=True h=0.0006273911567404866 dist=0.020000000642722858 candidates=858
+[2026-07-03T13:04:56] start idx=70 case=flight_synthetic_0070 method=no_repair
+[2026-07-03T13:04:56] done case=flight_synthetic_0070 method=no_repair success=False h=-0.0008999512065201998 dist=0.0 candidates=0
+[2026-07-03T13:04:56] start idx=70 case=flight_synthetic_0070 method=heuristic_repulsion
+[2026-07-03T13:04:56] done case=flight_synthetic_0070 method=heuristic_repulsion success=True h=0.0006286406423896551 dist=0.03999261783765942 candidates=8
+[2026-07-03T13:04:56] start idx=70 case=flight_synthetic_0070 method=verified_projection
+[2026-07-03T13:05:11] done case=flight_synthetic_0070 method=verified_projection success=True h=0.0014387300470843911 dist=0.05000000031199772 candidates=858
+[2026-07-03T13:05:11] start idx=70 case=flight_synthetic_0070 method=active_set_verified_projection
+[2026-07-03T13:05:24] done case=flight_synthetic_0070 method=active_set_verified_projection success=True h=0.0014387300470843911 dist=0.05000000031199772 candidates=858
+[2026-07-03T13:05:24] start idx=71 case=flight_synthetic_0071 method=no_repair
+[2026-07-03T13:05:24] done case=flight_synthetic_0071 method=no_repair success=False h=0.00012000079732388258 dist=0.0 candidates=0
+[2026-07-03T13:05:24] start idx=71 case=flight_synthetic_0071 method=heuristic_repulsion
+[2026-07-03T13:05:25] done case=flight_synthetic_0071 method=heuristic_repulsion success=True h=0.0008573204977437854 dist=0.009999818719632342 candidates=2
+[2026-07-03T13:05:25] start idx=71 case=flight_synthetic_0071 method=verified_projection
+[2026-07-03T13:05:38] done case=flight_synthetic_0071 method=verified_projection success=True h=0.0007587708532810211 dist=0.009999995947755039 candidates=858
+[2026-07-03T13:05:38] start idx=71 case=flight_synthetic_0071 method=active_set_verified_projection
+[2026-07-03T13:05:52] done case=flight_synthetic_0071 method=active_set_verified_projection success=True h=0.0007587708532810211 dist=0.009999995947755039 candidates=858
+[2026-07-03T13:05:52] start idx=72 case=flight_synthetic_0072 method=no_repair
+[2026-07-03T13:05:52] done case=flight_synthetic_0072 method=no_repair success=False h=-0.0008233534754253924 dist=0.0 candidates=0
+[2026-07-03T13:05:52] start idx=72 case=flight_synthetic_0072 method=heuristic_repulsion
+[2026-07-03T13:05:52] done case=flight_synthetic_0072 method=heuristic_repulsion success=True h=0.00057328084949404 dist=0.04711524448901747 candidates=18
+[2026-07-03T13:05:52] start idx=72 case=flight_synthetic_0072 method=verified_projection
+[2026-07-03T13:06:06] done case=flight_synthetic_0072 method=verified_projection success=True h=0.0007734961109235883 dist=0.04999999821945615 candidates=858
+[2026-07-03T13:06:06] start idx=72 case=flight_synthetic_0072 method=active_set_verified_projection
+[2026-07-03T13:06:20] done case=flight_synthetic_0072 method=active_set_verified_projection success=True h=0.0007734961109235883 dist=0.04999999821945615 candidates=858
+[2026-07-03T13:06:20] start idx=73 case=flight_synthetic_0073 method=no_repair
+[2026-07-03T13:06:20] done case=flight_synthetic_0073 method=no_repair success=False h=-0.0008489847532473505 dist=0.0 candidates=0
+[2026-07-03T13:06:20] start idx=73 case=flight_synthetic_0073 method=heuristic_repulsion
+[2026-07-03T13:06:20] done case=flight_synthetic_0073 method=heuristic_repulsion success=True h=0.0007675052620470524 dist=0.04213796603835212 candidates=10
+[2026-07-03T13:06:20] start idx=73 case=flight_synthetic_0073 method=verified_projection
+[2026-07-03T13:06:34] done case=flight_synthetic_0073 method=verified_projection success=True h=0.0005566537147387862 dist=0.0500000013806107 candidates=858
+[2026-07-03T13:06:34] start idx=73 case=flight_synthetic_0073 method=active_set_verified_projection
+[2026-07-03T13:06:48] done case=flight_synthetic_0073 method=active_set_verified_projection success=True h=0.0005566537147387862 dist=0.0500000013806107 candidates=858
+[2026-07-03T13:06:48] start idx=74 case=flight_synthetic_0074 method=no_repair
+[2026-07-03T13:06:48] done case=flight_synthetic_0074 method=no_repair success=False h=-0.00038554437924176455 dist=0.0 candidates=0
+[2026-07-03T13:06:48] start idx=74 case=flight_synthetic_0074 method=heuristic_repulsion
+[2026-07-03T13:06:48] done case=flight_synthetic_0074 method=heuristic_repulsion success=True h=0.0007637684466317296 dist=0.027224090300312535 candidates=6
+[2026-07-03T13:06:48] start idx=74 case=flight_synthetic_0074 method=verified_projection
+[2026-07-03T13:07:02] done case=flight_synthetic_0074 method=verified_projection success=True h=0.0007520884973928332 dist=0.01999999856855925 candidates=858
+[2026-07-03T13:07:02] start idx=74 case=flight_synthetic_0074 method=active_set_verified_projection
+[2026-07-03T13:07:15] done case=flight_synthetic_0074 method=active_set_verified_projection success=True h=0.0007520884973928332 dist=0.01999999856855925 candidates=858
+[2026-07-03T13:07:15] start idx=75 case=flight_synthetic_0075 method=no_repair
+[2026-07-03T13:07:15] done case=flight_synthetic_0075 method=no_repair success=False h=-0.0007871737470850348 dist=0.0 candidates=0
+[2026-07-03T13:07:15] start idx=75 case=flight_synthetic_0075 method=heuristic_repulsion
+[2026-07-03T13:07:16] done case=flight_synthetic_0075 method=heuristic_repulsion success=True h=0.0007373470580205321 dist=0.03329284227188683 candidates=7
+[2026-07-03T13:07:16] start idx=75 case=flight_synthetic_0075 method=verified_projection
+[2026-07-03T13:07:29] done case=flight_synthetic_0075 method=verified_projection success=True h=0.0016367301577702165 dist=0.0500000031537455 candidates=858
+[2026-07-03T13:07:29] start idx=75 case=flight_synthetic_0075 method=active_set_verified_projection
+[2026-07-03T13:07:44] done case=flight_synthetic_0075 method=active_set_verified_projection success=True h=0.0016367301577702165 dist=0.0500000031537455 candidates=858
+[2026-07-03T13:07:44] start idx=76 case=flight_synthetic_0076 method=no_repair
+[2026-07-03T13:07:44] done case=flight_synthetic_0076 method=no_repair success=False h=0.00034432136453688145 dist=0.0 candidates=0
+[2026-07-03T13:07:44] start idx=76 case=flight_synthetic_0076 method=heuristic_repulsion
+[2026-07-03T13:07:44] done case=flight_synthetic_0076 method=heuristic_repulsion success=True h=0.0007208480965346098 dist=0.00499999821719703 candidates=1
+[2026-07-03T13:07:44] start idx=76 case=flight_synthetic_0076 method=verified_projection
+[2026-07-03T13:07:58] done case=flight_synthetic_0076 method=verified_projection success=True h=0.0007216277299448848 dist=0.004999997353866569 candidates=858
+[2026-07-03T13:07:58] start idx=76 case=flight_synthetic_0076 method=active_set_verified_projection
+[2026-07-03T13:08:12] done case=flight_synthetic_0076 method=active_set_verified_projection success=True h=0.0007216277299448848 dist=0.004999997353866569 candidates=858
+[2026-07-03T13:08:12] start idx=77 case=flight_synthetic_0077 method=no_repair
+[2026-07-03T13:08:12] done case=flight_synthetic_0077 method=no_repair success=False h=-0.00079433957580477 dist=0.0 candidates=0
+[2026-07-03T13:08:12] start idx=77 case=flight_synthetic_0077 method=heuristic_repulsion
+[2026-07-03T13:08:12] done case=flight_synthetic_0077 method=heuristic_repulsion success=True h=0.0007032275898382068 dist=0.029999485086581703 candidates=6
+[2026-07-03T13:08:12] start idx=77 case=flight_synthetic_0077 method=verified_projection
+[2026-07-03T13:08:27] done case=flight_synthetic_0077 method=verified_projection success=True h=0.0009923152392730117 dist=0.049999995146532174 candidates=858
+[2026-07-03T13:08:27] start idx=77 case=flight_synthetic_0077 method=active_set_verified_projection
+[2026-07-03T13:08:41] done case=flight_synthetic_0077 method=active_set_verified_projection success=True h=0.0009923152392730117 dist=0.049999995146532174 candidates=858
+[2026-07-03T13:08:41] start idx=78 case=flight_synthetic_0078 method=no_repair
+[2026-07-03T13:08:41] done case=flight_synthetic_0078 method=no_repair success=False h=-0.00048137642443180084 dist=0.0 candidates=0
+[2026-07-03T13:08:41] start idx=78 case=flight_synthetic_0078 method=heuristic_repulsion
+[2026-07-03T13:08:41] done case=flight_synthetic_0078 method=heuristic_repulsion success=True h=0.0007358497241511941 dist=0.019999997924497373 candidates=4
+[2026-07-03T13:08:41] start idx=78 case=flight_synthetic_0078 method=verified_projection
+[2026-07-03T13:08:55] done case=flight_synthetic_0078 method=verified_projection success=True h=0.0007291662041097879 dist=0.019999999358838224 candidates=858
+[2026-07-03T13:08:55] start idx=78 case=flight_synthetic_0078 method=active_set_verified_projection
+[2026-07-03T13:09:09] done case=flight_synthetic_0078 method=active_set_verified_projection success=True h=0.0007291662041097879 dist=0.019999999358838224 candidates=858
+[2026-07-03T13:09:09] start idx=79 case=flight_synthetic_0079 method=no_repair
+[2026-07-03T13:09:09] done case=flight_synthetic_0079 method=no_repair success=False h=-0.0009004258317872882 dist=0.0 candidates=0
+[2026-07-03T13:09:09] start idx=79 case=flight_synthetic_0079 method=heuristic_repulsion
+[2026-07-03T13:09:10] done case=flight_synthetic_0079 method=heuristic_repulsion success=True h=0.0008331837598234415 dist=0.04513676388109475 candidates=10
+[2026-07-03T13:09:10] start idx=79 case=flight_synthetic_0079 method=verified_projection
+[2026-07-03T13:09:24] done case=flight_synthetic_0079 method=verified_projection success=True h=0.0009023804450407624 dist=0.04999999504270203 candidates=858
+[2026-07-03T13:09:24] start idx=79 case=flight_synthetic_0079 method=active_set_verified_projection
+[2026-07-03T13:09:38] done case=flight_synthetic_0079 method=active_set_verified_projection success=True h=0.0009023804450407624 dist=0.04999999504270203 candidates=858
+[2026-07-03T13:09:38] start idx=80 case=flight_synthetic_0080 method=no_repair
+[2026-07-03T13:09:38] done case=flight_synthetic_0080 method=no_repair success=False h=-0.000738471862860024 dist=0.0 candidates=0
+[2026-07-03T13:09:38] start idx=80 case=flight_synthetic_0080 method=heuristic_repulsion
+[2026-07-03T13:09:39] done case=flight_synthetic_0080 method=heuristic_repulsion success=True h=0.000886908732354641 dist=0.029891372199231294 candidates=6
+[2026-07-03T13:09:39] start idx=80 case=flight_synthetic_0080 method=verified_projection
+[2026-07-03T13:09:53] done case=flight_synthetic_0080 method=verified_projection success=True h=0.0018459669081494212 dist=0.04999998832538922 candidates=858
+[2026-07-03T13:09:53] start idx=80 case=flight_synthetic_0080 method=active_set_verified_projection
+[2026-07-03T13:10:07] done case=flight_synthetic_0080 method=active_set_verified_projection success=True h=0.0018459669081494212 dist=0.04999998832538922 candidates=858
+[2026-07-03T13:10:07] start idx=81 case=flight_synthetic_0081 method=no_repair
+[2026-07-03T13:10:07] done case=flight_synthetic_0081 method=no_repair success=True h=0.0006061489693820477 dist=0.0 candidates=0
+[2026-07-03T13:10:07] start idx=81 case=flight_synthetic_0081 method=heuristic_repulsion
+[2026-07-03T13:10:07] done case=flight_synthetic_0081 method=heuristic_repulsion success=True h=0.0006061489693820477 dist=4.34410241501356e-09 candidates=0
+[2026-07-03T13:10:07] start idx=81 case=flight_synthetic_0081 method=verified_projection
+[2026-07-03T13:10:07] done case=flight_synthetic_0081 method=verified_projection success=True h=0.0006061489693820477 dist=4.34410241501356e-09 candidates=0
+[2026-07-03T13:10:07] start idx=81 case=flight_synthetic_0081 method=active_set_verified_projection
+[2026-07-03T13:10:07] done case=flight_synthetic_0081 method=active_set_verified_projection success=True h=0.0006061489693820477 dist=4.34410241501356e-09 candidates=0
+[2026-07-03T13:10:07] start idx=82 case=flight_synthetic_0082 method=no_repair
+[2026-07-03T13:10:07] done case=flight_synthetic_0082 method=no_repair success=True h=0.0009954420384019613 dist=0.0 candidates=0
+[2026-07-03T13:10:07] start idx=82 case=flight_synthetic_0082 method=heuristic_repulsion
+[2026-07-03T13:10:07] done case=flight_synthetic_0082 method=heuristic_repulsion success=True h=0.0009954420384019613 dist=8.513237978577097e-10 candidates=0
+[2026-07-03T13:10:07] start idx=82 case=flight_synthetic_0082 method=verified_projection
+[2026-07-03T13:10:07] done case=flight_synthetic_0082 method=verified_projection success=True h=0.0009954420384019613 dist=8.513237978577097e-10 candidates=0
+[2026-07-03T13:10:07] start idx=82 case=flight_synthetic_0082 method=active_set_verified_projection
+[2026-07-03T13:10:07] done case=flight_synthetic_0082 method=active_set_verified_projection success=True h=0.0009954420384019613 dist=8.513237978577097e-10 candidates=0
+[2026-07-03T13:10:07] start idx=83 case=flight_synthetic_0083 method=no_repair
+[2026-07-03T13:10:07] done case=flight_synthetic_0083 method=no_repair success=False h=-0.0007381578907370567 dist=0.0 candidates=0
+[2026-07-03T13:10:07] start idx=83 case=flight_synthetic_0083 method=heuristic_repulsion
+[2026-07-03T13:10:08] done case=flight_synthetic_0083 method=heuristic_repulsion success=True h=0.0008769248379394412 dist=0.029940739922710465 candidates=6
+[2026-07-03T13:10:08] start idx=83 case=flight_synthetic_0083 method=verified_projection
+[2026-07-03T13:10:22] done case=flight_synthetic_0083 method=verified_projection success=True h=0.0026326957158744335 dist=0.04999999905732712 candidates=858
+[2026-07-03T13:10:22] start idx=83 case=flight_synthetic_0083 method=active_set_verified_projection
+[2026-07-03T13:10:36] done case=flight_synthetic_0083 method=active_set_verified_projection success=True h=0.0026326957158744335 dist=0.04999999905732712 candidates=858
+[2026-07-03T13:10:36] start idx=84 case=flight_synthetic_0084 method=no_repair
+[2026-07-03T13:10:36] done case=flight_synthetic_0084 method=no_repair success=False h=-0.0008968126494437456 dist=0.0 candidates=0
+[2026-07-03T13:10:36] start idx=84 case=flight_synthetic_0084 method=heuristic_repulsion
+[2026-07-03T13:10:37] done case=flight_synthetic_0084 method=heuristic_repulsion success=True h=0.0007984733674675226 dist=0.04216397937590485 candidates=9
+[2026-07-03T13:10:37] start idx=84 case=flight_synthetic_0084 method=verified_projection
+[2026-07-03T13:10:51] done case=flight_synthetic_0084 method=verified_projection success=True h=0.001501592923887074 dist=0.04999999185904977 candidates=858
+[2026-07-03T13:10:51] start idx=84 case=flight_synthetic_0084 method=active_set_verified_projection
+[2026-07-03T13:11:05] done case=flight_synthetic_0084 method=active_set_verified_projection success=True h=0.001501592923887074 dist=0.04999999185904977 candidates=858
+[2026-07-03T13:11:05] start idx=85 case=flight_synthetic_0085 method=no_repair
+[2026-07-03T13:11:05] done case=flight_synthetic_0085 method=no_repair success=False h=-0.0008787907427176833 dist=0.0 candidates=0
+[2026-07-03T13:11:05] start idx=85 case=flight_synthetic_0085 method=heuristic_repulsion
+[2026-07-03T13:11:05] done case=flight_synthetic_0085 method=heuristic_repulsion success=True h=0.0006379391998052597 dist=0.03499611952399463 candidates=7
+[2026-07-03T13:11:05] start idx=85 case=flight_synthetic_0085 method=verified_projection
+[2026-07-03T13:11:19] done case=flight_synthetic_0085 method=verified_projection success=True h=0.0006260840455070138 dist=0.04999999939856963 candidates=858
+[2026-07-03T13:11:19] start idx=85 case=flight_synthetic_0085 method=active_set_verified_projection
+[2026-07-03T13:11:34] done case=flight_synthetic_0085 method=active_set_verified_projection success=True h=0.0006260840455070138 dist=0.04999999939856963 candidates=858
+[2026-07-03T13:11:34] start idx=86 case=flight_synthetic_0086 method=no_repair
+[2026-07-03T13:11:34] done case=flight_synthetic_0086 method=no_repair success=False h=-0.0008998868288472295 dist=0.0 candidates=0
+[2026-07-03T13:11:34] start idx=86 case=flight_synthetic_0086 method=heuristic_repulsion
+[2026-07-03T13:11:34] done case=flight_synthetic_0086 method=heuristic_repulsion success=True h=0.0005036939401179552 dist=0.05835331880869902 candidates=20
+[2026-07-03T13:11:34] start idx=86 case=flight_synthetic_0086 method=verified_projection
+[2026-07-03T13:11:48] done case=flight_synthetic_0086 method=verified_projection success=True h=0.0006414359668269753 dist=0.04999999864648917 candidates=858
+[2026-07-03T13:11:48] start idx=86 case=flight_synthetic_0086 method=active_set_verified_projection
+[2026-07-03T13:12:02] done case=flight_synthetic_0086 method=active_set_verified_projection success=True h=0.0006414359668269753 dist=0.04999999864648917 candidates=858
+[2026-07-03T13:12:02] start idx=87 case=flight_synthetic_0087 method=no_repair
+[2026-07-03T13:12:02] done case=flight_synthetic_0087 method=no_repair success=False h=-0.000899484904948622 dist=0.0 candidates=0
+[2026-07-03T13:12:02] start idx=87 case=flight_synthetic_0087 method=heuristic_repulsion
+[2026-07-03T13:12:02] done case=flight_synthetic_0087 method=heuristic_repulsion success=True h=0.0005822308594360948 dist=0.044385790355301 candidates=12
+[2026-07-03T13:12:02] start idx=87 case=flight_synthetic_0087 method=verified_projection
+[2026-07-03T13:12:16] done case=flight_synthetic_0087 method=verified_projection success=True h=0.0006921048043295741 dist=0.050000001412263045 candidates=858
+[2026-07-03T13:12:16] start idx=87 case=flight_synthetic_0087 method=active_set_verified_projection
+[2026-07-03T13:12:30] done case=flight_synthetic_0087 method=active_set_verified_projection success=True h=0.0006921048043295741 dist=0.050000001412263045 candidates=858
+[2026-07-03T13:12:30] start idx=88 case=flight_synthetic_0088 method=no_repair
+[2026-07-03T13:12:30] done case=flight_synthetic_0088 method=no_repair success=False h=-0.0008999780402518809 dist=0.0 candidates=0
+[2026-07-03T13:12:30] start idx=88 case=flight_synthetic_0088 method=heuristic_repulsion
+[2026-07-03T13:12:31] done case=flight_synthetic_0088 method=heuristic_repulsion success=True h=0.0007564750267192721 dist=0.057794814055539476 candidates=19
+[2026-07-03T13:12:31] start idx=88 case=flight_synthetic_0088 method=verified_projection
+[2026-07-03T13:12:45] done case=flight_synthetic_0088 method=verified_projection success=True h=0.001545236329548061 dist=0.09999999339928638 candidates=858
+[2026-07-03T13:12:45] start idx=88 case=flight_synthetic_0088 method=active_set_verified_projection
+[2026-07-03T13:13:00] done case=flight_synthetic_0088 method=active_set_verified_projection success=True h=0.001545236329548061 dist=0.09999999339928638 candidates=858
+[2026-07-03T13:13:00] start idx=89 case=flight_synthetic_0089 method=no_repair
+[2026-07-03T13:13:00] done case=flight_synthetic_0089 method=no_repair success=False h=-0.0007147047435864806 dist=0.0 candidates=0
+[2026-07-03T13:13:00] start idx=89 case=flight_synthetic_0089 method=heuristic_repulsion
+[2026-07-03T13:13:00] done case=flight_synthetic_0089 method=heuristic_repulsion success=True h=0.0005851865280419588 dist=0.02499977155959547 candidates=5
+[2026-07-03T13:13:00] start idx=89 case=flight_synthetic_0089 method=verified_projection
+[2026-07-03T13:13:14] done case=flight_synthetic_0089 method=verified_projection success=True h=0.0027207969687879086 dist=0.05000000010770068 candidates=858
+[2026-07-03T13:13:14] start idx=89 case=flight_synthetic_0089 method=active_set_verified_projection
+[2026-07-03T13:13:28] done case=flight_synthetic_0089 method=active_set_verified_projection success=True h=0.0027207969687879086 dist=0.05000000010770068 candidates=858
+[2026-07-03T13:13:28] start idx=90 case=flight_synthetic_0090 method=no_repair
+[2026-07-03T13:13:28] done case=flight_synthetic_0090 method=no_repair success=False h=-0.0008994164527393878 dist=0.0 candidates=0
+[2026-07-03T13:13:28] start idx=90 case=flight_synthetic_0090 method=heuristic_repulsion
+[2026-07-03T13:13:29] done case=flight_synthetic_0090 method=heuristic_repulsion success=True h=0.0006011477671563625 dist=0.04362353030966381 candidates=17
+[2026-07-03T13:13:29] start idx=90 case=flight_synthetic_0090 method=verified_projection
+[2026-07-03T13:13:43] done case=flight_synthetic_0090 method=verified_projection success=True h=0.0008537693647667766 dist=0.049999995015913554 candidates=858
+[2026-07-03T13:13:43] start idx=90 case=flight_synthetic_0090 method=active_set_verified_projection
+[2026-07-03T13:13:57] done case=flight_synthetic_0090 method=active_set_verified_projection success=True h=0.0008537693647667766 dist=0.049999995015913554 candidates=858
+[2026-07-03T13:13:57] start idx=91 case=flight_synthetic_0091 method=no_repair
+[2026-07-03T13:13:57] done case=flight_synthetic_0091 method=no_repair success=True h=0.0009572890121489763 dist=0.0 candidates=0
+[2026-07-03T13:13:57] start idx=91 case=flight_synthetic_0091 method=heuristic_repulsion
+[2026-07-03T13:13:57] done case=flight_synthetic_0091 method=heuristic_repulsion success=True h=0.0009572890121489763 dist=6.0106760863078276e-09 candidates=0
+[2026-07-03T13:13:57] start idx=91 case=flight_synthetic_0091 method=verified_projection
+[2026-07-03T13:13:57] done case=flight_synthetic_0091 method=verified_projection success=True h=0.0009572890121489763 dist=6.0106760863078276e-09 candidates=0
+[2026-07-03T13:13:57] start idx=91 case=flight_synthetic_0091 method=active_set_verified_projection
+[2026-07-03T13:13:57] done case=flight_synthetic_0091 method=active_set_verified_projection success=True h=0.0009572890121489763 dist=6.0106760863078276e-09 candidates=0
+[2026-07-03T13:13:57] start idx=92 case=flight_synthetic_0092 method=no_repair
+[2026-07-03T13:13:57] done case=flight_synthetic_0092 method=no_repair success=False h=-0.0005723125650547445 dist=0.0 candidates=0
+[2026-07-03T13:13:57] start idx=92 case=flight_synthetic_0092 method=heuristic_repulsion
+[2026-07-03T13:13:57] done case=flight_synthetic_0092 method=heuristic_repulsion success=True h=0.0005507972091436386 dist=0.019999932720001404 candidates=4
+[2026-07-03T13:13:57] start idx=92 case=flight_synthetic_0092 method=verified_projection
+[2026-07-03T13:14:11] done case=flight_synthetic_0092 method=verified_projection success=True h=0.0005191357340663671 dist=0.019999994354194486 candidates=858
+[2026-07-03T13:14:11] start idx=92 case=flight_synthetic_0092 method=active_set_verified_projection
+[2026-07-03T13:14:26] done case=flight_synthetic_0092 method=active_set_verified_projection success=True h=0.0005191357340663671 dist=0.019999994354194486 candidates=858
+[2026-07-03T13:14:26] start idx=93 case=flight_synthetic_0093 method=no_repair
+[2026-07-03T13:14:26] done case=flight_synthetic_0093 method=no_repair success=False h=-0.0009220968931913376 dist=0.0 candidates=0
+[2026-07-03T13:14:26] start idx=93 case=flight_synthetic_0093 method=heuristic_repulsion
+[2026-07-03T13:14:26] done case=flight_synthetic_0093 method=heuristic_repulsion success=True h=0.000549165764823556 dist=0.05091383930102249 candidates=11
+[2026-07-03T13:14:26] start idx=93 case=flight_synthetic_0093 method=verified_projection
+[2026-07-03T13:14:40] done case=flight_synthetic_0093 method=verified_projection success=True h=0.0007313833339139819 dist=0.04999999277660455 candidates=858
+[2026-07-03T13:14:40] start idx=93 case=flight_synthetic_0093 method=active_set_verified_projection
+[2026-07-03T13:14:55] done case=flight_synthetic_0093 method=active_set_verified_projection success=True h=0.0007313833339139819 dist=0.04999999277660455 candidates=858
+[2026-07-03T13:14:55] start idx=94 case=flight_synthetic_0094 method=no_repair
+[2026-07-03T13:14:55] done case=flight_synthetic_0094 method=no_repair success=False h=-0.0008911284385249019 dist=0.0 candidates=0
+[2026-07-03T13:14:55] start idx=94 case=flight_synthetic_0094 method=heuristic_repulsion
+[2026-07-03T13:14:56] done case=flight_synthetic_0094 method=heuristic_repulsion success=True h=0.0006161214550957084 dist=0.1440525707092252 candidates=32
+[2026-07-03T13:14:56] start idx=94 case=flight_synthetic_0094 method=verified_projection
+[2026-07-03T13:15:10] done case=flight_synthetic_0094 method=verified_projection success=True h=0.001603371580131352 dist=0.09999998520750907 candidates=858
+[2026-07-03T13:15:10] start idx=94 case=flight_synthetic_0094 method=active_set_verified_projection
+[2026-07-03T13:15:24] done case=flight_synthetic_0094 method=active_set_verified_projection success=True h=0.001603371580131352 dist=0.09999998520750907 candidates=858
+[2026-07-03T13:15:24] start idx=95 case=flight_synthetic_0095 method=no_repair
+[2026-07-03T13:15:24] done case=flight_synthetic_0095 method=no_repair success=False h=-0.0007981453090906143 dist=0.0 candidates=0
+[2026-07-03T13:15:24] start idx=95 case=flight_synthetic_0095 method=heuristic_repulsion
+[2026-07-03T13:15:25] done case=flight_synthetic_0095 method=heuristic_repulsion success=True h=0.0008046751609072089 dist=0.03469139671623919 candidates=7
+[2026-07-03T13:15:25] start idx=95 case=flight_synthetic_0095 method=verified_projection
+[2026-07-03T13:15:39] done case=flight_synthetic_0095 method=verified_projection success=True h=0.0005331069696694613 dist=0.050000006890057645 candidates=858
+[2026-07-03T13:15:39] start idx=95 case=flight_synthetic_0095 method=active_set_verified_projection
+[2026-07-03T13:15:53] done case=flight_synthetic_0095 method=active_set_verified_projection success=True h=0.0005331069696694613 dist=0.050000006890057645 candidates=858
+[2026-07-03T13:15:53] start idx=96 case=flight_synthetic_0096 method=no_repair
+[2026-07-03T13:15:53] done case=flight_synthetic_0096 method=no_repair success=False h=-0.0009002116275951266 dist=0.0 candidates=0
+[2026-07-03T13:15:53] start idx=96 case=flight_synthetic_0096 method=heuristic_repulsion
+[2026-07-03T13:15:53] done case=flight_synthetic_0096 method=heuristic_repulsion success=True h=0.0006701942766085267 dist=0.0533579934636566 candidates=11
+[2026-07-03T13:15:53] start idx=96 case=flight_synthetic_0096 method=verified_projection
+[2026-07-03T13:16:07] done case=flight_synthetic_0096 method=verified_projection success=True h=0.000624479609541595 dist=0.05000000263929818 candidates=858
+[2026-07-03T13:16:07] start idx=96 case=flight_synthetic_0096 method=active_set_verified_projection
+[2026-07-03T13:16:21] done case=flight_synthetic_0096 method=active_set_verified_projection success=True h=0.000624479609541595 dist=0.05000000263929818 candidates=858
+[2026-07-03T13:16:21] start idx=97 case=flight_synthetic_0097 method=no_repair
+[2026-07-03T13:16:21] done case=flight_synthetic_0097 method=no_repair success=False h=-0.0006016560364514589 dist=0.0 candidates=0
+[2026-07-03T13:16:21] start idx=97 case=flight_synthetic_0097 method=heuristic_repulsion
+[2026-07-03T13:16:22] done case=flight_synthetic_0097 method=heuristic_repulsion success=True h=0.0005698415916413069 dist=0.02498271932999499 candidates=5
+[2026-07-03T13:16:22] start idx=97 case=flight_synthetic_0097 method=verified_projection
+[2026-07-03T13:16:36] done case=flight_synthetic_0097 method=verified_projection success=True h=0.000904449843801558 dist=0.049999992451393825 candidates=858
+[2026-07-03T13:16:36] start idx=97 case=flight_synthetic_0097 method=active_set_verified_projection
+[2026-07-03T13:16:50] done case=flight_synthetic_0097 method=active_set_verified_projection success=True h=0.000904449843801558 dist=0.049999992451393825 candidates=858
+[2026-07-03T13:16:50] start idx=98 case=flight_synthetic_0098 method=no_repair
+[2026-07-03T13:16:50] done case=flight_synthetic_0098 method=no_repair success=False h=-0.0008915120270103216 dist=0.0 candidates=0
+[2026-07-03T13:16:50] start idx=98 case=flight_synthetic_0098 method=heuristic_repulsion
+[2026-07-03T13:16:51] done case=flight_synthetic_0098 method=heuristic_repulsion success=True h=0.0005112742073833942 dist=0.04458606678121548 candidates=9
+[2026-07-03T13:16:51] start idx=98 case=flight_synthetic_0098 method=verified_projection
+[2026-07-03T13:17:05] done case=flight_synthetic_0098 method=verified_projection success=True h=0.001064449897967279 dist=0.049999992510481 candidates=858
+[2026-07-03T13:17:05] start idx=98 case=flight_synthetic_0098 method=active_set_verified_projection
+[2026-07-03T13:17:18] done case=flight_synthetic_0098 method=active_set_verified_projection success=True h=0.001064449897967279 dist=0.049999992510481 candidates=858
+[2026-07-03T13:17:18] start idx=99 case=flight_synthetic_0099 method=no_repair
+[2026-07-03T13:17:18] done case=flight_synthetic_0099 method=no_repair success=False h=-0.0008738371543586254 dist=0.0 candidates=0
+[2026-07-03T13:17:18] start idx=99 case=flight_synthetic_0099 method=heuristic_repulsion
+[2026-07-03T13:17:19] done case=flight_synthetic_0099 method=heuristic_repulsion success=True h=0.0007072417065501213 dist=0.03499447148561115 candidates=7
+[2026-07-03T13:17:19] start idx=99 case=flight_synthetic_0099 method=verified_projection
+[2026-07-03T13:17:33] done case=flight_synthetic_0099 method=verified_projection success=True h=0.0016421378822997212 dist=0.04999999196282002 candidates=858
+[2026-07-03T13:17:33] start idx=99 case=flight_synthetic_0099 method=active_set_verified_projection
+[2026-07-03T13:17:46] done case=flight_synthetic_0099 method=active_set_verified_projection success=True h=0.0016421378822997212 dist=0.04999999196282002 candidates=858
+[2026-07-03T13:17:46] start idx=100 case=flight_synthetic_0100 method=no_repair
+[2026-07-03T13:17:46] done case=flight_synthetic_0100 method=no_repair success=False h=-0.0008995048701763153 dist=0.0 candidates=0
+[2026-07-03T13:17:46] start idx=100 case=flight_synthetic_0100 method=heuristic_repulsion
+[2026-07-03T13:17:47] done case=flight_synthetic_0100 method=heuristic_repulsion success=True h=0.0007206591544672847 dist=0.044502614143360604 candidates=12
+[2026-07-03T13:17:47] start idx=100 case=flight_synthetic_0100 method=verified_projection
+[2026-07-03T13:18:01] done case=flight_synthetic_0100 method=verified_projection success=True h=0.0012058900902047753 dist=0.049999988601338904 candidates=858
+[2026-07-03T13:18:01] start idx=100 case=flight_synthetic_0100 method=active_set_verified_projection
+[2026-07-03T13:18:15] done case=flight_synthetic_0100 method=active_set_verified_projection success=True h=0.0012058900902047753 dist=0.049999988601338904 candidates=858
+[2026-07-03T13:18:15] start idx=101 case=flight_synthetic_0101 method=no_repair
+[2026-07-03T13:18:15] done case=flight_synthetic_0101 method=no_repair success=False h=-0.0008631469681859016 dist=0.0 candidates=0
+[2026-07-03T13:18:15] start idx=101 case=flight_synthetic_0101 method=heuristic_repulsion
+[2026-07-03T13:18:16] done case=flight_synthetic_0101 method=heuristic_repulsion success=True h=0.0007812113035470247 dist=0.03498257985890945 candidates=7
+[2026-07-03T13:18:16] start idx=101 case=flight_synthetic_0101 method=verified_projection
+[2026-07-03T13:18:30] done case=flight_synthetic_0101 method=verified_projection success=True h=0.001290572457946837 dist=0.04999999059444285 candidates=858
+[2026-07-03T13:18:30] start idx=101 case=flight_synthetic_0101 method=active_set_verified_projection
+[2026-07-03T13:18:44] done case=flight_synthetic_0101 method=active_set_verified_projection success=True h=0.001290572457946837 dist=0.04999999059444285 candidates=858
+[2026-07-03T13:18:44] start idx=102 case=flight_synthetic_0102 method=no_repair
+[2026-07-03T13:18:44] done case=flight_synthetic_0102 method=no_repair success=False h=-0.0008515940280631185 dist=0.0 candidates=0
+[2026-07-03T13:18:44] start idx=102 case=flight_synthetic_0102 method=heuristic_repulsion
+[2026-07-03T13:18:44] done case=flight_synthetic_0102 method=heuristic_repulsion success=True h=0.0008209183579310775 dist=0.03497527918849137 candidates=7
+[2026-07-03T13:18:44] start idx=102 case=flight_synthetic_0102 method=verified_projection
+[2026-07-03T13:18:59] done case=flight_synthetic_0102 method=verified_projection success=True h=0.0013002586783841252 dist=0.049999998149062315 candidates=858
+[2026-07-03T13:18:59] start idx=102 case=flight_synthetic_0102 method=active_set_verified_projection
+[2026-07-03T13:19:13] done case=flight_synthetic_0102 method=active_set_verified_projection success=True h=0.0013002586783841252 dist=0.049999998149062315 candidates=858
+[2026-07-03T13:19:13] start idx=103 case=flight_synthetic_0103 method=no_repair
+[2026-07-03T13:19:13] done case=flight_synthetic_0103 method=no_repair success=False h=-0.0008632160606794059 dist=0.0 candidates=0
+[2026-07-03T13:19:13] start idx=103 case=flight_synthetic_0103 method=heuristic_repulsion
+[2026-07-03T13:19:13] done case=flight_synthetic_0103 method=heuristic_repulsion success=True h=0.0007789422525092959 dist=0.03499034358784631 candidates=7
+[2026-07-03T13:19:13] start idx=103 case=flight_synthetic_0103 method=verified_projection
+[2026-07-03T13:19:27] done case=flight_synthetic_0103 method=verified_projection success=True h=0.0022157039493322372 dist=0.04999999823909928 candidates=858
+[2026-07-03T13:19:27] start idx=103 case=flight_synthetic_0103 method=active_set_verified_projection
+[2026-07-03T13:19:42] done case=flight_synthetic_0103 method=active_set_verified_projection success=True h=0.0022157039493322372 dist=0.04999999823909928 candidates=858
+[2026-07-03T13:19:42] start idx=104 case=flight_synthetic_0104 method=no_repair
+[2026-07-03T13:19:42] done case=flight_synthetic_0104 method=no_repair success=False h=-0.0009054298279806972 dist=0.0 candidates=0
+[2026-07-03T13:19:42] start idx=104 case=flight_synthetic_0104 method=heuristic_repulsion
+[2026-07-03T13:19:42] done case=flight_synthetic_0104 method=heuristic_repulsion success=True h=0.0007024358492344618 dist=0.05844309373800305 candidates=12
+[2026-07-03T13:19:42] start idx=104 case=flight_synthetic_0104 method=verified_projection
+[2026-07-03T13:19:56] done case=flight_synthetic_0104 method=verified_projection success=True h=0.002090555615723133 dist=0.10000000907480157 candidates=858
+[2026-07-03T13:19:56] start idx=104 case=flight_synthetic_0104 method=active_set_verified_projection
+[2026-07-03T13:20:11] done case=flight_synthetic_0104 method=active_set_verified_projection success=True h=0.002090555615723133 dist=0.10000000907480157 candidates=858
+[2026-07-03T13:20:11] start idx=105 case=flight_synthetic_0105 method=no_repair
+[2026-07-03T13:20:11] done case=flight_synthetic_0105 method=no_repair success=False h=-0.0008063476416282356 dist=0.0 candidates=0
+[2026-07-03T13:20:11] start idx=105 case=flight_synthetic_0105 method=heuristic_repulsion
+[2026-07-03T13:20:11] done case=flight_synthetic_0105 method=heuristic_repulsion success=True h=0.0006477036513388157 dist=0.03486431881172479 candidates=7
+[2026-07-03T13:20:11] start idx=105 case=flight_synthetic_0105 method=verified_projection
+[2026-07-03T13:20:25] done case=flight_synthetic_0105 method=verified_projection success=True h=0.0010797266149893403 dist=0.04999998365116799 candidates=858
+[2026-07-03T13:20:25] start idx=105 case=flight_synthetic_0105 method=active_set_verified_projection
+[2026-07-03T13:20:39] done case=flight_synthetic_0105 method=active_set_verified_projection success=True h=0.0010797266149893403 dist=0.04999998365116799 candidates=858
+[2026-07-03T13:20:39] start idx=106 case=flight_synthetic_0106 method=no_repair
+[2026-07-03T13:20:39] done case=flight_synthetic_0106 method=no_repair success=False h=-0.0005047061131335795 dist=0.0 candidates=0
+[2026-07-03T13:20:39] start idx=106 case=flight_synthetic_0106 method=heuristic_repulsion
+[2026-07-03T13:20:39] done case=flight_synthetic_0106 method=heuristic_repulsion success=True h=0.0005933191860094666 dist=0.01999396023931238 candidates=4
+[2026-07-03T13:20:39] start idx=106 case=flight_synthetic_0106 method=verified_projection
+[2026-07-03T13:20:54] done case=flight_synthetic_0106 method=verified_projection success=True h=0.0005146963521838188 dist=0.01999999455448992 candidates=858
+[2026-07-03T13:20:54] start idx=106 case=flight_synthetic_0106 method=active_set_verified_projection
+[2026-07-03T13:21:08] done case=flight_synthetic_0106 method=active_set_verified_projection success=True h=0.0005146963521838188 dist=0.01999999455448992 candidates=858
+[2026-07-03T13:21:08] start idx=107 case=flight_synthetic_0107 method=no_repair
+[2026-07-03T13:21:08] done case=flight_synthetic_0107 method=no_repair success=False h=-0.0008614060934633017 dist=0.0 candidates=0
+[2026-07-03T13:21:08] start idx=107 case=flight_synthetic_0107 method=heuristic_repulsion
+[2026-07-03T13:21:08] done case=flight_synthetic_0107 method=heuristic_repulsion success=True h=0.0008263658965006471 dist=0.04492288606568717 candidates=9
+[2026-07-03T13:21:08] start idx=107 case=flight_synthetic_0107 method=verified_projection
+[2026-07-03T13:21:22] done case=flight_synthetic_0107 method=verified_projection success=True h=0.0007011326961219311 dist=0.050000000115099565 candidates=858
+[2026-07-03T13:21:22] start idx=107 case=flight_synthetic_0107 method=active_set_verified_projection
+[2026-07-03T13:21:36] done case=flight_synthetic_0107 method=active_set_verified_projection success=True h=0.0007011326961219311 dist=0.050000000115099565 candidates=858
+[2026-07-03T13:21:36] start idx=108 case=flight_synthetic_0108 method=no_repair
+[2026-07-03T13:21:36] done case=flight_synthetic_0108 method=no_repair success=False h=0.00019753002561628819 dist=0.0 candidates=0
+[2026-07-03T13:21:36] start idx=108 case=flight_synthetic_0108 method=heuristic_repulsion
+[2026-07-03T13:21:36] done case=flight_synthetic_0108 method=heuristic_repulsion success=True h=0.0005111749051138759 dist=0.0050000067121764415 candidates=1
+[2026-07-03T13:21:36] start idx=108 case=flight_synthetic_0108 method=verified_projection
+[2026-07-03T13:21:51] done case=flight_synthetic_0108 method=verified_projection success=True h=0.0005504015134647489 dist=0.004999997691727423 candidates=864
+[2026-07-03T13:21:51] start idx=108 case=flight_synthetic_0108 method=active_set_verified_projection
+[2026-07-03T13:22:05] done case=flight_synthetic_0108 method=active_set_verified_projection success=True h=0.0005504015134647489 dist=0.004999997691727423 candidates=864
+[2026-07-03T13:22:05] start idx=109 case=flight_synthetic_0109 method=no_repair
+[2026-07-03T13:22:05] done case=flight_synthetic_0109 method=no_repair success=False h=-0.0005107540637254715 dist=0.0 candidates=0
+[2026-07-03T13:22:05] start idx=109 case=flight_synthetic_0109 method=heuristic_repulsion
+[2026-07-03T13:22:05] done case=flight_synthetic_0109 method=heuristic_repulsion success=True h=0.0007052503060549498 dist=0.024762614810812607 candidates=5
+[2026-07-03T13:22:05] start idx=109 case=flight_synthetic_0109 method=verified_projection
+[2026-07-03T13:22:19] done case=flight_synthetic_0109 method=verified_projection success=True h=0.0005006013670936227 dist=0.01999999830280939 candidates=864
+[2026-07-03T13:22:19] start idx=109 case=flight_synthetic_0109 method=active_set_verified_projection
+[2026-07-03T13:22:34] done case=flight_synthetic_0109 method=active_set_verified_projection success=True h=0.0005006013670936227 dist=0.01999999830280939 candidates=864
+[2026-07-03T13:22:34] start idx=110 case=flight_synthetic_0110 method=no_repair
+[2026-07-03T13:22:34] done case=flight_synthetic_0110 method=no_repair success=False h=0.00032848084811121225 dist=0.0 candidates=0
+[2026-07-03T13:22:34] start idx=110 case=flight_synthetic_0110 method=heuristic_repulsion
+[2026-07-03T13:22:34] done case=flight_synthetic_0110 method=heuristic_repulsion success=True h=0.0006636508041992784 dist=0.005000001510190825 candidates=1
+[2026-07-03T13:22:34] start idx=110 case=flight_synthetic_0110 method=verified_projection
+[2026-07-03T13:22:48] done case=flight_synthetic_0110 method=verified_projection success=True h=0.0005932793719694018 dist=0.004999977469857811 candidates=858
+[2026-07-03T13:22:48] start idx=110 case=flight_synthetic_0110 method=active_set_verified_projection
+[2026-07-03T13:23:02] done case=flight_synthetic_0110 method=active_set_verified_projection success=True h=0.0005932793719694018 dist=0.004999977469857811 candidates=858
+[2026-07-03T13:23:02] start idx=111 case=flight_synthetic_0111 method=no_repair
+[2026-07-03T13:23:02] done case=flight_synthetic_0111 method=no_repair success=False h=-0.000707653583958745 dist=0.0 candidates=0
+[2026-07-03T13:23:02] start idx=111 case=flight_synthetic_0111 method=heuristic_repulsion
+[2026-07-03T13:23:02] done case=flight_synthetic_0111 method=heuristic_repulsion success=True h=0.0005378528730943799 dist=0.029988710376455778 candidates=6
+[2026-07-03T13:23:02] start idx=111 case=flight_synthetic_0111 method=verified_projection
+[2026-07-03T13:23:17] done case=flight_synthetic_0111 method=verified_projection success=True h=0.0009574638679623604 dist=0.04999999466498886 candidates=858
+[2026-07-03T13:23:17] start idx=111 case=flight_synthetic_0111 method=active_set_verified_projection
+[2026-07-03T13:23:31] done case=flight_synthetic_0111 method=active_set_verified_projection success=True h=0.0009574638679623604 dist=0.04999999466498886 candidates=858
+[2026-07-03T13:23:31] start idx=112 case=flight_synthetic_0112 method=no_repair
+[2026-07-03T13:23:31] done case=flight_synthetic_0112 method=no_repair success=True h=0.00086169911082834 dist=0.0 candidates=0
+[2026-07-03T13:23:31] start idx=112 case=flight_synthetic_0112 method=heuristic_repulsion
+[2026-07-03T13:23:31] done case=flight_synthetic_0112 method=heuristic_repulsion success=True h=0.00086169911082834 dist=1.1682379093328477e-08 candidates=0
+[2026-07-03T13:23:31] start idx=112 case=flight_synthetic_0112 method=verified_projection
+[2026-07-03T13:23:31] done case=flight_synthetic_0112 method=verified_projection success=True h=0.00086169911082834 dist=1.1682379093328477e-08 candidates=0
+[2026-07-03T13:23:31] start idx=112 case=flight_synthetic_0112 method=active_set_verified_projection
+[2026-07-03T13:23:31] done case=flight_synthetic_0112 method=active_set_verified_projection success=True h=0.00086169911082834 dist=1.1682379093328477e-08 candidates=0
+[2026-07-03T13:23:31] start idx=113 case=flight_synthetic_0113 method=no_repair
+[2026-07-03T13:23:31] done case=flight_synthetic_0113 method=no_repair success=False h=-0.00031694892095401883 dist=0.0 candidates=0
+[2026-07-03T13:23:31] start idx=113 case=flight_synthetic_0113 method=heuristic_repulsion
+[2026-07-03T13:23:31] done case=flight_synthetic_0113 method=heuristic_repulsion success=True h=0.0006444503087550402 dist=0.019976261518062165 candidates=4
+[2026-07-03T13:23:31] start idx=113 case=flight_synthetic_0113 method=verified_projection
+[2026-07-03T13:23:45] done case=flight_synthetic_0113 method=verified_projection success=True h=0.0010273812804371119 dist=0.019999982635010478 candidates=858
+[2026-07-03T13:23:45] start idx=113 case=flight_synthetic_0113 method=active_set_verified_projection
+[2026-07-03T13:24:00] done case=flight_synthetic_0113 method=active_set_verified_projection success=True h=0.0010273812804371119 dist=0.019999982635010478 candidates=858
+[2026-07-03T13:24:00] start idx=114 case=flight_synthetic_0114 method=no_repair
+[2026-07-03T13:24:00] done case=flight_synthetic_0114 method=no_repair success=True h=0.000644547282718122 dist=0.0 candidates=0
+[2026-07-03T13:24:00] start idx=114 case=flight_synthetic_0114 method=heuristic_repulsion
+[2026-07-03T13:24:00] done case=flight_synthetic_0114 method=heuristic_repulsion success=True h=0.000644547282718122 dist=1.3192675701993069e-08 candidates=0
+[2026-07-03T13:24:00] start idx=114 case=flight_synthetic_0114 method=verified_projection
+[2026-07-03T13:24:00] done case=flight_synthetic_0114 method=verified_projection success=True h=0.000644547282718122 dist=1.3192675701993069e-08 candidates=0
+[2026-07-03T13:24:00] start idx=114 case=flight_synthetic_0114 method=active_set_verified_projection
+[2026-07-03T13:24:00] done case=flight_synthetic_0114 method=active_set_verified_projection success=True h=0.000644547282718122 dist=1.3192675701993069e-08 candidates=0
+[2026-07-03T13:24:00] start idx=115 case=flight_synthetic_0115 method=no_repair
+[2026-07-03T13:24:00] done case=flight_synthetic_0115 method=no_repair success=False h=-0.0008289988036267459 dist=0.0 candidates=0
+[2026-07-03T13:24:00] start idx=115 case=flight_synthetic_0115 method=heuristic_repulsion
+[2026-07-03T13:24:00] done case=flight_synthetic_0115 method=heuristic_repulsion success=True h=0.0007007572567090392 dist=0.039963777514811595 candidates=8
+[2026-07-03T13:24:00] start idx=115 case=flight_synthetic_0115 method=verified_projection
+[2026-07-03T13:24:14] done case=flight_synthetic_0115 method=verified_projection success=True h=0.0015694686444476247 dist=0.04999998955192357 candidates=858
+[2026-07-03T13:24:14] start idx=115 case=flight_synthetic_0115 method=active_set_verified_projection
+[2026-07-03T13:24:28] done case=flight_synthetic_0115 method=active_set_verified_projection success=True h=0.0015694686444476247 dist=0.04999998955192357 candidates=858
+[2026-07-03T13:24:28] start idx=116 case=flight_synthetic_0116 method=no_repair
+[2026-07-03T13:24:28] done case=flight_synthetic_0116 method=no_repair success=False h=-0.0008595434483140707 dist=0.0 candidates=0
+[2026-07-03T13:24:28] start idx=116 case=flight_synthetic_0116 method=heuristic_repulsion
+[2026-07-03T13:24:29] done case=flight_synthetic_0116 method=heuristic_repulsion success=True h=0.000719355302862823 dist=0.05899488779099995 candidates=12
+[2026-07-03T13:24:29] start idx=116 case=flight_synthetic_0116 method=verified_projection
+[2026-07-03T13:24:43] done case=flight_synthetic_0116 method=verified_projection success=True h=0.0008742075879126787 dist=0.04999998662001207 candidates=858
+[2026-07-03T13:24:43] start idx=116 case=flight_synthetic_0116 method=active_set_verified_projection
+[2026-07-03T13:24:57] done case=flight_synthetic_0116 method=active_set_verified_projection success=True h=0.0008742075879126787 dist=0.04999998662001207 candidates=858
+[2026-07-03T13:24:57] start idx=117 case=flight_synthetic_0117 method=no_repair
+[2026-07-03T13:24:57] done case=flight_synthetic_0117 method=no_repair success=False h=-0.00021208764519542456 dist=0.0 candidates=0
+[2026-07-03T13:24:57] start idx=117 case=flight_synthetic_0117 method=heuristic_repulsion
+[2026-07-03T13:24:57] done case=flight_synthetic_0117 method=heuristic_repulsion success=True h=0.0005717144813388586 dist=0.029977069393384757 candidates=6
+[2026-07-03T13:24:57] start idx=117 case=flight_synthetic_0117 method=verified_projection
+[2026-07-03T13:25:12] done case=flight_synthetic_0117 method=verified_projection success=True h=0.0007000260520726442 dist=0.019999994874570975 candidates=858
+[2026-07-03T13:25:12] start idx=117 case=flight_synthetic_0117 method=active_set_verified_projection
+[2026-07-03T13:25:26] done case=flight_synthetic_0117 method=active_set_verified_projection success=True h=0.0007000260520726442 dist=0.019999994874570975 candidates=858
+[2026-07-03T13:25:26] start idx=118 case=flight_synthetic_0118 method=no_repair
+[2026-07-03T13:25:26] done case=flight_synthetic_0118 method=no_repair success=False h=-0.0007486189715564251 dist=0.0 candidates=0
+[2026-07-03T13:25:26] start idx=118 case=flight_synthetic_0118 method=heuristic_repulsion
+[2026-07-03T13:25:27] done case=flight_synthetic_0118 method=heuristic_repulsion success=True h=0.000624974025413394 dist=0.059590491239155365 candidates=12
+[2026-07-03T13:25:27] start idx=118 case=flight_synthetic_0118 method=verified_projection
+[2026-07-03T13:25:41] done case=flight_synthetic_0118 method=verified_projection success=True h=0.000520042609423399 dist=0.04999998979778138 candidates=858
+[2026-07-03T13:25:41] start idx=118 case=flight_synthetic_0118 method=active_set_verified_projection
+[2026-07-03T13:25:55] done case=flight_synthetic_0118 method=active_set_verified_projection success=True h=0.000520042609423399 dist=0.04999998979778138 candidates=858
+[2026-07-03T13:25:55] start idx=119 case=flight_synthetic_0119 method=no_repair
+[2026-07-03T13:25:55] done case=flight_synthetic_0119 method=no_repair success=False h=-0.00026180053828284144 dist=0.0 candidates=0
+[2026-07-03T13:25:55] start idx=119 case=flight_synthetic_0119 method=heuristic_repulsion
+[2026-07-03T13:25:55] done case=flight_synthetic_0119 method=heuristic_repulsion success=True h=0.0007171890465542674 dist=0.014997218424415109 candidates=3
+[2026-07-03T13:25:55] start idx=119 case=flight_synthetic_0119 method=verified_projection
+[2026-07-03T13:26:09] done case=flight_synthetic_0119 method=verified_projection success=True h=0.0009366945596411824 dist=0.01999999753106614 candidates=858
+[2026-07-03T13:26:09] start idx=119 case=flight_synthetic_0119 method=active_set_verified_projection
+[2026-07-03T13:26:23] done case=flight_synthetic_0119 method=active_set_verified_projection success=True h=0.0009366945596411824 dist=0.01999999753106614 candidates=858
+[2026-07-03T13:26:24] summary=[{'method': 'active_set_verified_projection', 'synthetic_category': 'synthetic_margin_violating', 'perturbation_magnitude': '0.01', 'num_cases': 2, 'repair_success_count': 2, 'repair_success_rate': 1.0, 'full_query_verified_count': 2, 'repair_distance_mean': 0.004999996687588491, 'repair_distance_p50': 0.004999996687588491, 'repair_distance_p95': 0.004999997797484539, 'repair_distance_max': 0.004999997920806323, 'repair_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 858.0}, {'method': 'active_set_verified_projection', 'synthetic_category': 'synthetic_margin_violating', 'perturbation_magnitude': '0.02', 'num_cases': 2, 'repair_success_count': 2, 'repair_success_rate': 1.0, 'full_query_verified_count': 2, 'repair_distance_mean': 0.004999990730445662, 'repair_distance_p50': 0.004999990730445662, 'repair_distance_p95': 0.004999994225966938, 'repair_distance_max': 0.004999994614358191, 'repair_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 858.0}, {'method': 'active_set_verified_projection', 'synthetic_category': 'synthetic_margin_violating', 'perturbation_magnitude': '0.05', 'num_cases': 8, 'repair_success_count': 8, 'repair_success_rate': 1.0, 'full_query_verified_count': 8, 'repair_distance_mean': 0.008749990740483445, 'repair_distance_p50': 0.009999988159694113, 'repair_distance_p95': 0.009999998824603494, 'repair_distance_max': 0.009999999396350892, 'repair_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 858.75}, {'method': 'active_set_verified_projection', 'synthetic_category': 'synthetic_margin_violating', 'perturbation_magnitude': '0.075', 'num_cases': 4, 'repair_success_count': 4, 'repair_success_rate': 1.0, 'full_query_verified_count': 4, 'repair_distance_mean': 0.006249989933918866, 'repair_distance_p50': 0.004999997522796996, 'repair_distance_p95': 0.009249988790949222, 'repair_distance_max': 0.009999987220223659, 'repair_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 861.0}, {'method': 'active_set_verified_projection', 'synthetic_category': 'synthetic_margin_violating', 'perturbation_magnitude': '0.1', 'num_cases': 1, 'repair_success_count': 1, 'repair_success_rate': 1.0, 'full_query_verified_count': 1, 'repair_distance_mean': 0.009999995947755039, 'repair_distance_p50': 0.009999995947755039, 'repair_distance_p95': 0.009999995947755039, 'repair_distance_max': 0.009999995947755039, 'repair_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 858.0}, {'method': 'active_set_verified_projection', 'synthetic_category': 'synthetic_near_unsafe', 'perturbation_magnitude': '0.005', 'num_cases': 4, 'repair_success_count': 4, 'repair_success_rate': 1.0, 'full_query_verified_count': 4, 'repair_distance_mean': 5.240425336226171e-09, 'repair_distance_p50': 4.73244689794391e-09, 'repair_distance_p95': 7.13951728541628e-09, 'repair_distance_max': 7.554336842898027e-09, 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'active_set_verified_projection', 'synthetic_category': 'synthetic_near_unsafe', 'perturbation_magnitude': '0.01', 'num_cases': 3, 'repair_success_count': 3, 'repair_success_rate': 1.0, 'full_query_verified_count': 3, 'repair_distance_mean': 7.050725805372443e-09, 'repair_distance_p50': 4.818182313173682e-09, 'repair_distance_p95': 1.095043172179602e-08, 'repair_distance_max': 1.1631792767198502e-08, 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'active_set_verified_projection', 'synthetic_category': 'synthetic_near_unsafe', 'perturbation_magnitude': '0.05', 'num_cases': 1, 'repair_success_count': 1, 'repair_success_rate': 1.0, 'full_query_verified_count': 1, 'repair_distance_mean': 3.182450282835554e-09, 'repair_distance_p50': 3.182450282835554e-09, 'repair_distance_p95': 3.182450282835554e-09, 'repair_distance_max': 3.182450282835554e-09, 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'active_set_verified_projection', 'synthetic_category': 'synthetic_near_unsafe', 'perturbation_magnitude': '0.075', 'num_cases': 4, 'repair_success_count': 4, 'repair_success_rate': 1.0, 'full_query_verified_count': 4, 'repair_distance_mean': 8.493761789437478e-09, 'repair_distance_p50': 8.846527589818152e-09, 'repair_distance_p95': 1.189956299263431e-08, 'repair_distance_max': 1.1937889563100044e-08, 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'active_set_verified_projection', 'synthetic_category': 'synthetic_near_unsafe', 'perturbation_magnitude': '0.1', 'num_cases': 3, 'repair_success_count': 3, 'repair_success_rate': 1.0, 'full_query_verified_count': 3, 'repair_distance_mean': 6.650383616463627e-09, 'repair_distance_p50': 5.907151349540101e-09, 'repair_distance_p95': 1.246412326674777e-08, 'repair_distance_max': 1.3192675701993069e-08, 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'active_set_verified_projection', 'synthetic_category': 'synthetic_unsafe', 'perturbation_magnitude': '0.02', 'num_cases': 4, 'repair_success_count': 4, 'repair_success_rate': 1.0, 'full_query_verified_count': 4, 'repair_distance_mean': 0.014999996059315564, 'repair_distance_p50': 0.014999995271502694, 'repair_distance_p95': 0.019999997133606076, 'repair_distance_max': 0.01999999782247249, 'repair_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 859.5}, {'method': 'active_set_verified_projection', 'synthetic_category': 'synthetic_unsafe', 'perturbation_magnitude': '0.05', 'num_cases': 15, 'repair_success_count': 15, 'repair_success_rate': 1.0, 'full_query_verified_count': 15, 'repair_distance_mean': 0.035999992536613, 'repair_distance_p50': 0.04999998489575791, 'repair_distance_p95': 0.04999999913633423, 'repair_distance_max': 0.04999999926474837, 'repair_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 858.0}, {'method': 'active_set_verified_projection', 'synthetic_category': 'synthetic_unsafe', 'perturbation_magnitude': '0.075', 'num_cases': 29, 'repair_success_count': 29, 'repair_success_rate': 1.0, 'full_query_verified_count': 29, 'repair_distance_mean': 0.04241378623215505, 'repair_distance_p50': 0.0499999909858392, 'repair_distance_p95': 0.0500000046989398, 'repair_distance_max': 0.0999999840711391, 'repair_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 858.2068965517242}, {'method': 'active_set_verified_projection', 'synthetic_category': 'synthetic_unsafe', 'perturbation_magnitude': '0.1', 'num_cases': 40, 'repair_success_count': 40, 'repair_success_rate': 1.0, 'full_query_verified_count': 40, 'repair_distance_mean': 0.05199999287788348, 'repair_distance_p50': 0.04999999484045121, 'repair_distance_p95': 0.09999999344227958, 'repair_distance_max': 0.10000000907480157, 'repair_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 858.3}, {'method': 'heuristic_repulsion', 'synthetic_category': 'synthetic_margin_violating', 'perturbation_magnitude': '0.01', 'num_cases': 2, 'repair_success_count': 2, 'repair_success_rate': 1.0, 'full_query_verified_count': 2, 'repair_distance_mean': 0.005000001170817421, 'repair_distance_p50': 0.005000001170817421, 'repair_distance_p95': 0.005000002027191585, 'repair_distance_max': 0.00500000212234427, 'repair_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 1.0}, {'method': 'heuristic_repulsion', 'synthetic_category': 'synthetic_margin_violating', 'perturbation_magnitude': '0.02', 'num_cases': 2, 'repair_success_count': 2, 'repair_success_rate': 1.0, 'full_query_verified_count': 2, 'repair_distance_mean': 0.005000010893925497, 'repair_distance_p50': 0.005000010893925497, 'repair_distance_p95': 0.005000015622323392, 'repair_distance_max': 0.005000016147700935, 'repair_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 1.0}, {'method': 'heuristic_repulsion', 'synthetic_category': 'synthetic_margin_violating', 'perturbation_magnitude': '0.05', 'num_cases': 8, 'repair_success_count': 8, 'repair_success_rate': 1.0, 'full_query_verified_count': 8, 'repair_distance_mean': 0.009258408891149624, 'repair_distance_p50': 0.009999927331385758, 'repair_distance_p95': 0.012645637986354296, 'repair_distance_max': 0.014070206113500468, 'repair_iterations_mean': 1.875, 'num_candidates_evaluated_mean': 1.875}, {'method': 'heuristic_repulsion', 'synthetic_category': 'synthetic_margin_violating', 'perturbation_magnitude': '0.075', 'num_cases': 4, 'repair_success_count': 4, 'repair_success_rate': 1.0, 'full_query_verified_count': 4, 'repair_distance_mean': 0.006249973988298842, 'repair_distance_p50': 0.005000004111183633, 'repair_distance_p95': 0.009249907093412875, 'repair_distance_max': 0.009999889513631071, 'repair_iterations_mean': 1.25, 'num_candidates_evaluated_mean': 1.25}, {'method': 'heuristic_repulsion', 'synthetic_category': 'synthetic_margin_violating', 'perturbation_magnitude': '0.1', 'num_cases': 1, 'repair_success_count': 1, 'repair_success_rate': 1.0, 'full_query_verified_count': 1, 'repair_distance_mean': 0.009999818719632342, 'repair_distance_p50': 0.009999818719632342, 'repair_distance_p95': 0.009999818719632342, 'repair_distance_max': 0.009999818719632342, 'repair_iterations_mean': 2.0, 'num_candidates_evaluated_mean': 2.0}, {'method': 'heuristic_repulsion', 'synthetic_category': 'synthetic_near_unsafe', 'perturbation_magnitude': '0.005', 'num_cases': 4, 'repair_success_count': 4, 'repair_success_rate': 1.0, 'full_query_verified_count': 4, 'repair_distance_mean': 5.240425336226171e-09, 'repair_distance_p50': 4.73244689794391e-09, 'repair_distance_p95': 7.13951728541628e-09, 'repair_distance_max': 7.554336842898027e-09, 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'heuristic_repulsion', 'synthetic_category': 'synthetic_near_unsafe', 'perturbation_magnitude': '0.01', 'num_cases': 3, 'repair_success_count': 3, 'repair_success_rate': 1.0, 'full_query_verified_count': 3, 'repair_distance_mean': 7.050725805372443e-09, 'repair_distance_p50': 4.818182313173682e-09, 'repair_distance_p95': 1.095043172179602e-08, 'repair_distance_max': 1.1631792767198502e-08, 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'heuristic_repulsion', 'synthetic_category': 'synthetic_near_unsafe', 'perturbation_magnitude': '0.05', 'num_cases': 1, 'repair_success_count': 1, 'repair_success_rate': 1.0, 'full_query_verified_count': 1, 'repair_distance_mean': 3.182450282835554e-09, 'repair_distance_p50': 3.182450282835554e-09, 'repair_distance_p95': 3.182450282835554e-09, 'repair_distance_max': 3.182450282835554e-09, 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'heuristic_repulsion', 'synthetic_category': 'synthetic_near_unsafe', 'perturbation_magnitude': '0.075', 'num_cases': 4, 'repair_success_count': 4, 'repair_success_rate': 1.0, 'full_query_verified_count': 4, 'repair_distance_mean': 8.493761789437478e-09, 'repair_distance_p50': 8.846527589818152e-09, 'repair_distance_p95': 1.189956299263431e-08, 'repair_distance_max': 1.1937889563100044e-08, 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'heuristic_repulsion', 'synthetic_category': 'synthetic_near_unsafe', 'perturbation_magnitude': '0.1', 'num_cases': 3, 'repair_success_count': 3, 'repair_success_rate': 1.0, 'full_query_verified_count': 3, 'repair_distance_mean': 6.650383616463627e-09, 'repair_distance_p50': 5.907151349540101e-09, 'repair_distance_p95': 1.246412326674777e-08, 'repair_distance_max': 1.3192675701993069e-08, 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'heuristic_repulsion', 'synthetic_category': 'synthetic_unsafe', 'perturbation_magnitude': '0.02', 'num_cases': 4, 'repair_success_count': 4, 'repair_success_rate': 1.0, 'full_query_verified_count': 4, 'repair_distance_mean': 0.012499993993979268, 'repair_distance_p50': 0.012499988447965044, 'repair_distance_p95': 0.014999993511328052, 'repair_distance_max': 0.014999998299975156, 'repair_iterations_mean': 2.5, 'num_candidates_evaluated_mean': 2.5}, {'method': 'heuristic_repulsion', 'synthetic_category': 'synthetic_unsafe', 'perturbation_magnitude': '0.05', 'num_cases': 15, 'repair_success_count': 15, 'repair_success_rate': 1.0, 'full_query_verified_count': 15, 'repair_distance_mean': 0.031003604823833197, 'repair_distance_p50': 0.024997870935075654, 'repair_distance_p95': 0.07220610623200352, 'repair_distance_max': 0.08281312813350357, 'repair_iterations_mean': 6.866666666666666, 'num_candidates_evaluated_mean': 6.866666666666666}, {'method': 'heuristic_repulsion', 'synthetic_category': 'synthetic_unsafe', 'perturbation_magnitude': '0.075', 'num_cases': 29, 'repair_success_count': 27, 'repair_success_rate': 0.9310344827586207, 'full_query_verified_count': 27, 'repair_distance_mean': 0.031912332812682166, 'repair_distance_p50': 0.03469139671623919, 'repair_distance_p95': 0.04977426085742098, 'repair_distance_max': 0.05575381564338996, 'repair_iterations_mean': 10.172413793103448, 'num_candidates_evaluated_mean': 10.172413793103448}, {'method': 'heuristic_repulsion', 'synthetic_category': 'synthetic_unsafe', 'perturbation_magnitude': '0.1', 'num_cases': 40, 'repair_success_count': 37, 'repair_success_rate': 0.925, 'full_query_verified_count': 37, 'repair_distance_mean': 0.04273634937003567, 'repair_distance_p50': 0.03999261783765942, 'repair_distance_p95': 0.06680029754459797, 'repair_distance_max': 0.1440525707092252, 'repair_iterations_mean': 13.475, 'num_candidates_evaluated_mean': 13.475}, {'method': 'no_repair', 'synthetic_category': 'synthetic_margin_violating', 'perturbation_magnitude': '0.01', 'num_cases': 2, 'repair_success_count': 0, 'repair_success_rate': 0.0, 'full_query_verified_count': 0, 'repair_distance_mean': '', 'repair_distance_p50': '', 'repair_distance_p95': '', 'repair_distance_max': '', 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'no_repair', 'synthetic_category': 'synthetic_margin_violating', 'perturbation_magnitude': '0.02', 'num_cases': 2, 'repair_success_count': 0, 'repair_success_rate': 0.0, 'full_query_verified_count': 0, 'repair_distance_mean': '', 'repair_distance_p50': '', 'repair_distance_p95': '', 'repair_distance_max': '', 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'no_repair', 'synthetic_category': 'synthetic_margin_violating', 'perturbation_magnitude': '0.05', 'num_cases': 8, 'repair_success_count': 0, 'repair_success_rate': 0.0, 'full_query_verified_count': 0, 'repair_distance_mean': '', 'repair_distance_p50': '', 'repair_distance_p95': '', 'repair_distance_max': '', 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'no_repair', 'synthetic_category': 'synthetic_margin_violating', 'perturbation_magnitude': '0.075', 'num_cases': 4, 'repair_success_count': 0, 'repair_success_rate': 0.0, 'full_query_verified_count': 0, 'repair_distance_mean': '', 'repair_distance_p50': '', 'repair_distance_p95': '', 'repair_distance_max': '', 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'no_repair', 'synthetic_category': 'synthetic_margin_violating', 'perturbation_magnitude': '0.1', 'num_cases': 1, 'repair_success_count': 0, 'repair_success_rate': 0.0, 'full_query_verified_count': 0, 'repair_distance_mean': '', 'repair_distance_p50': '', 'repair_distance_p95': '', 'repair_distance_max': '', 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'no_repair', 'synthetic_category': 'synthetic_near_unsafe', 'perturbation_magnitude': '0.005', 'num_cases': 4, 'repair_success_count': 4, 'repair_success_rate': 1.0, 'full_query_verified_count': 4, 'repair_distance_mean': 0.0, 'repair_distance_p50': 0.0, 'repair_distance_p95': 0.0, 'repair_distance_max': 0.0, 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'no_repair', 'synthetic_category': 'synthetic_near_unsafe', 'perturbation_magnitude': '0.01', 'num_cases': 3, 'repair_success_count': 3, 'repair_success_rate': 1.0, 'full_query_verified_count': 3, 'repair_distance_mean': 0.0, 'repair_distance_p50': 0.0, 'repair_distance_p95': 0.0, 'repair_distance_max': 0.0, 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'no_repair', 'synthetic_category': 'synthetic_near_unsafe', 'perturbation_magnitude': '0.05', 'num_cases': 1, 'repair_success_count': 1, 'repair_success_rate': 1.0, 'full_query_verified_count': 1, 'repair_distance_mean': 0.0, 'repair_distance_p50': 0.0, 'repair_distance_p95': 0.0, 'repair_distance_max': 0.0, 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'no_repair', 'synthetic_category': 'synthetic_near_unsafe', 'perturbation_magnitude': '0.075', 'num_cases': 4, 'repair_success_count': 4, 'repair_success_rate': 1.0, 'full_query_verified_count': 4, 'repair_distance_mean': 0.0, 'repair_distance_p50': 0.0, 'repair_distance_p95': 0.0, 'repair_distance_max': 0.0, 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'no_repair', 'synthetic_category': 'synthetic_near_unsafe', 'perturbation_magnitude': '0.1', 'num_cases': 3, 'repair_success_count': 3, 'repair_success_rate': 1.0, 'full_query_verified_count': 3, 'repair_distance_mean': 0.0, 'repair_distance_p50': 0.0, 'repair_distance_p95': 0.0, 'repair_distance_max': 0.0, 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'no_repair', 'synthetic_category': 'synthetic_unsafe', 'perturbation_magnitude': '0.02', 'num_cases': 4, 'repair_success_count': 0, 'repair_success_rate': 0.0, 'full_query_verified_count': 0, 'repair_distance_mean': '', 'repair_distance_p50': '', 'repair_distance_p95': '', 'repair_distance_max': '', 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'no_repair', 'synthetic_category': 'synthetic_unsafe', 'perturbation_magnitude': '0.05', 'num_cases': 15, 'repair_success_count': 0, 'repair_success_rate': 0.0, 'full_query_verified_count': 0, 'repair_distance_mean': '', 'repair_distance_p50': '', 'repair_distance_p95': '', 'repair_distance_max': '', 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'no_repair', 'synthetic_category': 'synthetic_unsafe', 'perturbation_magnitude': '0.075', 'num_cases': 29, 'repair_success_count': 0, 'repair_success_rate': 0.0, 'full_query_verified_count': 0, 'repair_distance_mean': '', 'repair_distance_p50': '', 'repair_distance_p95': '', 'repair_distance_max': '', 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'no_repair', 'synthetic_category': 'synthetic_unsafe', 'perturbation_magnitude': '0.1', 'num_cases': 40, 'repair_success_count': 0, 'repair_success_rate': 0.0, 'full_query_verified_count': 0, 'repair_distance_mean': '', 'repair_distance_p50': '', 'repair_distance_p95': '', 'repair_distance_max': '', 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'verified_projection', 'synthetic_category': 'synthetic_margin_violating', 'perturbation_magnitude': '0.01', 'num_cases': 2, 'repair_success_count': 2, 'repair_success_rate': 1.0, 'full_query_verified_count': 2, 'repair_distance_mean': 0.004999996687588491, 'repair_distance_p50': 0.004999996687588491, 'repair_distance_p95': 0.004999997797484539, 'repair_distance_max': 0.004999997920806323, 'repair_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 858.0}, {'method': 'verified_projection', 'synthetic_category': 'synthetic_margin_violating', 'perturbation_magnitude': '0.02', 'num_cases': 2, 'repair_success_count': 2, 'repair_success_rate': 1.0, 'full_query_verified_count': 2, 'repair_distance_mean': 0.004999990730445662, 'repair_distance_p50': 0.004999990730445662, 'repair_distance_p95': 0.004999994225966938, 'repair_distance_max': 0.004999994614358191, 'repair_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 858.0}, {'method': 'verified_projection', 'synthetic_category': 'synthetic_margin_violating', 'perturbation_magnitude': '0.05', 'num_cases': 8, 'repair_success_count': 8, 'repair_success_rate': 1.0, 'full_query_verified_count': 8, 'repair_distance_mean': 0.008749990740483445, 'repair_distance_p50': 0.009999988159694113, 'repair_distance_p95': 0.009999998824603494, 'repair_distance_max': 0.009999999396350892, 'repair_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 858.75}, {'method': 'verified_projection', 'synthetic_category': 'synthetic_margin_violating', 'perturbation_magnitude': '0.075', 'num_cases': 4, 'repair_success_count': 4, 'repair_success_rate': 1.0, 'full_query_verified_count': 4, 'repair_distance_mean': 0.006249989933918866, 'repair_distance_p50': 0.004999997522796996, 'repair_distance_p95': 0.009249988790949222, 'repair_distance_max': 0.009999987220223659, 'repair_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 861.0}, {'method': 'verified_projection', 'synthetic_category': 'synthetic_margin_violating', 'perturbation_magnitude': '0.1', 'num_cases': 1, 'repair_success_count': 1, 'repair_success_rate': 1.0, 'full_query_verified_count': 1, 'repair_distance_mean': 0.009999995947755039, 'repair_distance_p50': 0.009999995947755039, 'repair_distance_p95': 0.009999995947755039, 'repair_distance_max': 0.009999995947755039, 'repair_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 858.0}, {'method': 'verified_projection', 'synthetic_category': 'synthetic_near_unsafe', 'perturbation_magnitude': '0.005', 'num_cases': 4, 'repair_success_count': 4, 'repair_success_rate': 1.0, 'full_query_verified_count': 4, 'repair_distance_mean': 5.240425336226171e-09, 'repair_distance_p50': 4.73244689794391e-09, 'repair_distance_p95': 7.13951728541628e-09, 'repair_distance_max': 7.554336842898027e-09, 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'verified_projection', 'synthetic_category': 'synthetic_near_unsafe', 'perturbation_magnitude': '0.01', 'num_cases': 3, 'repair_success_count': 3, 'repair_success_rate': 1.0, 'full_query_verified_count': 3, 'repair_distance_mean': 7.050725805372443e-09, 'repair_distance_p50': 4.818182313173682e-09, 'repair_distance_p95': 1.095043172179602e-08, 'repair_distance_max': 1.1631792767198502e-08, 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'verified_projection', 'synthetic_category': 'synthetic_near_unsafe', 'perturbation_magnitude': '0.05', 'num_cases': 1, 'repair_success_count': 1, 'repair_success_rate': 1.0, 'full_query_verified_count': 1, 'repair_distance_mean': 3.182450282835554e-09, 'repair_distance_p50': 3.182450282835554e-09, 'repair_distance_p95': 3.182450282835554e-09, 'repair_distance_max': 3.182450282835554e-09, 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'verified_projection', 'synthetic_category': 'synthetic_near_unsafe', 'perturbation_magnitude': '0.075', 'num_cases': 4, 'repair_success_count': 4, 'repair_success_rate': 1.0, 'full_query_verified_count': 4, 'repair_distance_mean': 8.493761789437478e-09, 'repair_distance_p50': 8.846527589818152e-09, 'repair_distance_p95': 1.189956299263431e-08, 'repair_distance_max': 1.1937889563100044e-08, 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'verified_projection', 'synthetic_category': 'synthetic_near_unsafe', 'perturbation_magnitude': '0.1', 'num_cases': 3, 'repair_success_count': 3, 'repair_success_rate': 1.0, 'full_query_verified_count': 3, 'repair_distance_mean': 6.650383616463627e-09, 'repair_distance_p50': 5.907151349540101e-09, 'repair_distance_p95': 1.246412326674777e-08, 'repair_distance_max': 1.3192675701993069e-08, 'repair_iterations_mean': 0.0, 'num_candidates_evaluated_mean': 0.0}, {'method': 'verified_projection', 'synthetic_category': 'synthetic_unsafe', 'perturbation_magnitude': '0.02', 'num_cases': 4, 'repair_success_count': 4, 'repair_success_rate': 1.0, 'full_query_verified_count': 4, 'repair_distance_mean': 0.014999996059315564, 'repair_distance_p50': 0.014999995271502694, 'repair_distance_p95': 0.019999997133606076, 'repair_distance_max': 0.01999999782247249, 'repair_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 859.5}, {'method': 'verified_projection', 'synthetic_category': 'synthetic_unsafe', 'perturbation_magnitude': '0.05', 'num_cases': 15, 'repair_success_count': 15, 'repair_success_rate': 1.0, 'full_query_verified_count': 15, 'repair_distance_mean': 0.035999992536613, 'repair_distance_p50': 0.04999998489575791, 'repair_distance_p95': 0.04999999913633423, 'repair_distance_max': 0.04999999926474837, 'repair_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 858.0}, {'method': 'verified_projection', 'synthetic_category': 'synthetic_unsafe', 'perturbation_magnitude': '0.075', 'num_cases': 29, 'repair_success_count': 29, 'repair_success_rate': 1.0, 'full_query_verified_count': 29, 'repair_distance_mean': 0.04241378623215505, 'repair_distance_p50': 0.0499999909858392, 'repair_distance_p95': 0.0500000046989398, 'repair_distance_max': 0.0999999840711391, 'repair_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 858.2068965517242}, {'method': 'verified_projection', 'synthetic_category': 'synthetic_unsafe', 'perturbation_magnitude': '0.1', 'num_cases': 40, 'repair_success_count': 40, 'repair_success_rate': 1.0, 'full_query_verified_count': 40, 'repair_distance_mean': 0.05199999287788348, 'repair_distance_p50': 0.04999999484045121, 'repair_distance_p95': 0.09999999344227958, 'repair_distance_max': 0.10000000907480157, 'repair_iterations_mean': 1.0, 'num_candidates_evaluated_mean': 858.3}]

@@ -1,0 +1,309 @@
+[2026-07-03T17:21:15] script=/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_v4c_hstep_predictive_recovery.py
+[2026-07-03T17:21:15] scene=flight method=risk_aware_v1_bestD output_dir=work/risk_aware_cbf/results/v4c_tuned_R4_H2_N64_flight100_v1_bestD
+[2026-07-03T17:21:15] horizon=2 num_sequences=64 activation_mode=on_margin_violation
+[2026-07-03T17:21:15] trials=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt
+There are 281756 Gaussians in the GSplat model
+[2026-07-03T17:21:21] loaded_risk_score_table=work/risk_aware_cbf/results/flight_risk_score_table_v0.csv
+[2026-07-03T17:21:21] start trial=0
+ball-to-ellipsoid
+[2026-07-03T17:21:32] done trial=0 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:21:32] start trial=1
+ball-to-ellipsoid
+[2026-07-03T17:21:43] done trial=1 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:21:43] start trial=2
+ball-to-ellipsoid
+[2026-07-03T17:21:55] done trial=2 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:21:55] start trial=3
+ball-to-ellipsoid
+[2026-07-03T17:22:06] done trial=3 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:22:06] start trial=4
+ball-to-ellipsoid
+[2026-07-03T17:22:17] done trial=4 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:22:17] start trial=5
+ball-to-ellipsoid
+[2026-07-03T17:22:29] done trial=5 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:22:29] start trial=6
+ball-to-ellipsoid
+[2026-07-03T17:22:43] done trial=6 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:22:43] start trial=7
+ball-to-ellipsoid
+[2026-07-03T17:22:59] done trial=7 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:22:59] start trial=8
+ball-to-ellipsoid
+[2026-07-03T17:23:14] done trial=8 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:23:14] start trial=9
+ball-to-ellipsoid
+[2026-07-03T17:23:30] done trial=9 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:23:30] start trial=10
+ball-to-ellipsoid
+[2026-07-03T17:23:40] done trial=10 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:23:40] start trial=11
+ball-to-ellipsoid
+[2026-07-03T17:23:52] done trial=11 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:23:52] start trial=12
+ball-to-ellipsoid
+[2026-07-03T17:25:06] done trial=12 collision=False base_h=16 exec_h=0 recovery=16 failed=0
+[2026-07-03T17:25:06] start trial=13
+ball-to-ellipsoid
+[2026-07-03T17:27:03] done trial=13 collision=False base_h=28 exec_h=0 recovery=28 failed=0
+[2026-07-03T17:27:03] start trial=14
+ball-to-ellipsoid
+[2026-07-03T17:27:38] done trial=14 collision=False base_h=8 exec_h=0 recovery=8 failed=0
+[2026-07-03T17:27:38] start trial=15
+ball-to-ellipsoid
+[2026-07-03T17:27:41] done trial=15 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:27:41] start trial=16
+ball-to-ellipsoid
+[2026-07-03T17:27:46] done trial=16 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:27:46] start trial=17
+ball-to-ellipsoid
+[2026-07-03T17:27:50] done trial=17 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:27:50] start trial=18
+ball-to-ellipsoid
+[2026-07-03T17:27:52] done trial=18 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:27:52] start trial=19
+ball-to-ellipsoid
+[2026-07-03T17:27:53] done trial=19 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:27:53] start trial=20
+ball-to-ellipsoid
+[2026-07-03T17:28:37] done trial=20 collision=False base_h=6 exec_h=0 recovery=6 failed=0
+[2026-07-03T17:28:37] start trial=21
+ball-to-ellipsoid
+[2026-07-03T17:28:56] done trial=21 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:28:56] start trial=22
+ball-to-ellipsoid
+[2026-07-03T17:29:15] done trial=22 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:29:15] start trial=23
+ball-to-ellipsoid
+[2026-07-03T17:29:37] done trial=23 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:29:37] start trial=24
+ball-to-ellipsoid
+[2026-07-03T17:30:17] done trial=24 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:30:17] start trial=25
+ball-to-ellipsoid
+[2026-07-03T17:30:25] done trial=25 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:30:25] start trial=26
+ball-to-ellipsoid
+[2026-07-03T17:30:35] done trial=26 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:30:35] start trial=27
+ball-to-ellipsoid
+[2026-07-03T17:30:57] done trial=27 collision=False base_h=3 exec_h=0 recovery=3 failed=0
+[2026-07-03T17:30:57] start trial=28
+ball-to-ellipsoid
+[2026-07-03T17:31:08] done trial=28 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:31:08] start trial=29
+ball-to-ellipsoid
+[2026-07-03T17:31:15] done trial=29 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:31:15] start trial=30
+ball-to-ellipsoid
+[2026-07-03T17:31:23] done trial=30 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:31:23] start trial=31
+ball-to-ellipsoid
+[2026-07-03T17:32:54] done trial=31 collision=False base_h=22 exec_h=0 recovery=22 failed=0
+[2026-07-03T17:32:54] start trial=32
+ball-to-ellipsoid
+[2026-07-03T17:33:21] done trial=32 collision=False base_h=2 exec_h=0 recovery=2 failed=0
+[2026-07-03T17:33:21] start trial=33
+ball-to-ellipsoid
+[2026-07-03T17:33:33] done trial=33 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:33:33] start trial=34
+ball-to-ellipsoid
+[2026-07-03T17:34:22] done trial=34 collision=False base_h=2 exec_h=0 recovery=2 failed=0
+[2026-07-03T17:34:22] start trial=35
+ball-to-ellipsoid
+[2026-07-03T17:35:14] done trial=35 collision=False base_h=3 exec_h=0 recovery=3 failed=0
+[2026-07-03T17:35:14] start trial=36
+ball-to-ellipsoid
+[2026-07-03T17:35:59] done trial=36 collision=False base_h=2 exec_h=0 recovery=2 failed=0
+[2026-07-03T17:35:59] start trial=37
+ball-to-ellipsoid
+[2026-07-03T17:38:20] done trial=37 collision=False base_h=30 exec_h=0 recovery=30 failed=0
+[2026-07-03T17:38:20] start trial=38
+ball-to-ellipsoid
+[2026-07-03T17:39:23] done trial=38 collision=False base_h=11 exec_h=0 recovery=11 failed=0
+[2026-07-03T17:39:23] start trial=39
+ball-to-ellipsoid
+[2026-07-03T17:39:45] done trial=39 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:39:45] start trial=40
+ball-to-ellipsoid
+[2026-07-03T17:40:06] done trial=40 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:40:06] start trial=41
+ball-to-ellipsoid
+[2026-07-03T17:40:27] done trial=41 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:40:27] start trial=42
+ball-to-ellipsoid
+[2026-07-03T17:40:48] done trial=42 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:40:48] start trial=43
+ball-to-ellipsoid
+[2026-07-03T17:41:09] done trial=43 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:41:09] start trial=44
+ball-to-ellipsoid
+[2026-07-03T17:41:30] done trial=44 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:41:30] start trial=45
+ball-to-ellipsoid
+[2026-07-03T17:41:49] done trial=45 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:41:49] start trial=46
+ball-to-ellipsoid
+[2026-07-03T17:42:05] done trial=46 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:42:05] start trial=47
+ball-to-ellipsoid
+[2026-07-03T17:42:20] done trial=47 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:42:20] start trial=48
+ball-to-ellipsoid
+[2026-07-03T17:42:36] done trial=48 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:42:36] start trial=49
+ball-to-ellipsoid
+[2026-07-03T17:42:52] done trial=49 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:42:52] start trial=50
+ball-to-ellipsoid
+[2026-07-03T17:43:07] done trial=50 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:43:07] start trial=51
+ball-to-ellipsoid
+[2026-07-03T17:43:20] done trial=51 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:43:20] start trial=52
+ball-to-ellipsoid
+[2026-07-03T17:43:34] done trial=52 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:43:34] start trial=53
+ball-to-ellipsoid
+[2026-07-03T17:43:48] done trial=53 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:43:48] start trial=54
+ball-to-ellipsoid
+[2026-07-03T17:44:03] done trial=54 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:44:03] start trial=55
+ball-to-ellipsoid
+[2026-07-03T17:44:38] done trial=55 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:44:38] start trial=56
+ball-to-ellipsoid
+[2026-07-03T17:44:54] done trial=56 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:44:54] start trial=57
+ball-to-ellipsoid
+[2026-07-03T17:45:11] done trial=57 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:45:11] start trial=58
+ball-to-ellipsoid
+[2026-07-03T17:45:30] done trial=58 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:45:30] start trial=59
+ball-to-ellipsoid
+[2026-07-03T17:46:18] done trial=59 collision=False base_h=6 exec_h=0 recovery=6 failed=0
+[2026-07-03T17:46:18] start trial=60
+ball-to-ellipsoid
+[2026-07-03T17:46:46] done trial=60 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:46:46] start trial=61
+ball-to-ellipsoid
+[2026-07-03T17:47:16] done trial=61 collision=False base_h=2 exec_h=0 recovery=2 failed=0
+[2026-07-03T17:47:16] start trial=62
+ball-to-ellipsoid
+[2026-07-03T17:47:45] done trial=62 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:47:45] start trial=63
+ball-to-ellipsoid
+[2026-07-03T17:48:03] done trial=63 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:48:03] start trial=64
+ball-to-ellipsoid
+[2026-07-03T17:48:03] done trial=64 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:48:03] start trial=65
+ball-to-ellipsoid
+[2026-07-03T17:48:17] done trial=65 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:48:17] start trial=66
+ball-to-ellipsoid
+[2026-07-03T17:48:32] done trial=66 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:48:32] start trial=67
+ball-to-ellipsoid
+[2026-07-03T17:48:48] done trial=67 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:48:48] start trial=68
+ball-to-ellipsoid
+[2026-07-03T17:49:02] done trial=68 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:49:02] start trial=69
+ball-to-ellipsoid
+[2026-07-03T17:49:15] done trial=69 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:49:15] start trial=70
+ball-to-ellipsoid
+[2026-07-03T17:49:26] done trial=70 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:49:26] start trial=71
+ball-to-ellipsoid
+[2026-07-03T17:50:11] done trial=71 collision=False base_h=9 exec_h=0 recovery=9 failed=0
+[2026-07-03T17:50:11] start trial=72
+ball-to-ellipsoid
+[2026-07-03T17:50:27] done trial=72 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:50:27] start trial=73
+ball-to-ellipsoid
+[2026-07-03T17:50:43] done trial=73 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:50:43] start trial=74
+ball-to-ellipsoid
+[2026-07-03T17:50:59] done trial=74 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:50:59] start trial=75
+ball-to-ellipsoid
+[2026-07-03T17:51:38] done trial=75 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:51:38] start trial=76
+ball-to-ellipsoid
+[2026-07-03T17:52:11] done trial=76 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:52:11] start trial=77
+ball-to-ellipsoid
+[2026-07-03T17:52:43] done trial=77 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:52:43] start trial=78
+ball-to-ellipsoid
+[2026-07-03T17:53:13] done trial=78 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:53:13] start trial=79
+ball-to-ellipsoid
+[2026-07-03T17:53:43] done trial=79 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:53:43] start trial=80
+ball-to-ellipsoid
+[2026-07-03T17:54:19] done trial=80 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:54:19] start trial=81
+ball-to-ellipsoid
+[2026-07-03T17:54:53] done trial=81 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:54:53] start trial=82
+ball-to-ellipsoid
+[2026-07-03T17:55:28] done trial=82 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:55:28] start trial=83
+ball-to-ellipsoid
+[2026-07-03T17:55:35] done trial=83 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:55:35] start trial=84
+ball-to-ellipsoid
+[2026-07-03T17:55:40] done trial=84 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:55:40] start trial=85
+ball-to-ellipsoid
+[2026-07-03T17:57:42] done trial=85 collision=False base_h=30 exec_h=0 recovery=30 failed=0
+[2026-07-03T17:57:42] start trial=86
+ball-to-ellipsoid
+[2026-07-03T17:58:07] done trial=86 collision=False base_h=2 exec_h=0 recovery=2 failed=0
+[2026-07-03T17:58:07] start trial=87
+ball-to-ellipsoid
+[2026-07-03T17:58:22] done trial=87 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:58:22] start trial=88
+ball-to-ellipsoid
+[2026-07-03T17:58:35] done trial=88 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:58:35] start trial=89
+ball-to-ellipsoid
+[2026-07-03T17:58:47] done trial=89 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:58:47] start trial=90
+ball-to-ellipsoid
+[2026-07-03T17:58:58] done trial=90 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:58:58] start trial=91
+ball-to-ellipsoid
+[2026-07-03T17:59:08] done trial=91 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:59:08] start trial=92
+ball-to-ellipsoid
+[2026-07-03T17:59:19] done trial=92 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T17:59:19] start trial=93
+ball-to-ellipsoid
+[2026-07-03T17:59:51] done trial=93 collision=False base_h=5 exec_h=0 recovery=5 failed=0
+[2026-07-03T17:59:51] start trial=94
+ball-to-ellipsoid
+[2026-07-03T18:00:25] done trial=94 collision=False base_h=6 exec_h=0 recovery=6 failed=0
+[2026-07-03T18:00:25] start trial=95
+ball-to-ellipsoid
+[2026-07-03T18:00:43] done trial=95 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T18:00:43] start trial=96
+ball-to-ellipsoid
+[2026-07-03T18:00:54] done trial=96 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T18:00:54] start trial=97
+ball-to-ellipsoid
+[2026-07-03T18:01:04] done trial=97 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T18:01:04] start trial=98
+ball-to-ellipsoid
+[2026-07-03T18:01:12] done trial=98 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T18:01:12] start trial=99
+ball-to-ellipsoid
+[2026-07-03T18:01:24] done trial=99 collision=False base_h=0 exec_h=0 recovery=0 failed=0
+[2026-07-03T18:01:24] summary=[{'scene': 'flight', 'method': 'risk_aware_v1_bestD', 'rows': 100, 'navigation_executed_count': 100, 'collision_count': 0, 'collision_free_count': 100, 'qp_infeasible_count': 0, 'num_steps': 14254, 'base_horizon_margin_violation_count': 193, 'exec_horizon_margin_violation_count': 0, 'horizon_margin_violation_reduction': 193, 'predictive_recovery_used_count': 193, 'predictive_recovery_success_count': 193, 'recovery_failed_count': 0, 'progress_mean': 0.44885357798689407, 'runtime_mean': 0.09595171376922278, 'runtime_p95': 0.3094275568574665, 'runtime_recovery_mean': 0.03885983833228099, 'control_delta_mean': 0.0003985954255235225, 'min_safety_h_min': 0.0005000127712264657}]
