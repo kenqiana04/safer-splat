@@ -9,11 +9,31 @@ trajs
 debug
 .html
 
-# Keep risk_aware_cbf reproducibility scripts and selected results trackable
+# Keep risk_aware_cbf reproducibility scripts and selected release results trackable
 !work/
 !work/risk_aware_cbf/
 !work/risk_aware_cbf/scripts/
+!work/risk_aware_cbf/scripts/**
 !work/risk_aware_cbf/results/
+!work/risk_aware_cbf/results/**/
+!work/risk_aware_cbf/results/**/README.md
+!work/risk_aware_cbf/results/**/*.md
+!work/risk_aware_cbf/results/**/summary*.csv
+!work/risk_aware_cbf/results/**/*summary*.csv
+!work/risk_aware_cbf/results/**/metrics.json
+!work/risk_aware_cbf/results/**/*metrics*.json
+!work/risk_aware_cbf/results/**/*analysis*.csv
+!work/risk_aware_cbf/results/**/*inventory*.csv
+!work/risk_aware_cbf/metrics/
+!work/risk_aware_cbf/metrics/**
+
+# Keep large/raw risk_aware_cbf traces out of the paper release branch
+work/risk_aware_cbf/results/**/*.jsonl
+work/risk_aware_cbf/results/**/*trace*
+work/risk_aware_cbf/results/**/trials.csv
+work/risk_aware_cbf/results/**/per_step*.csv
+work/risk_aware_cbf/results/**/active_constraints.csv
+work/risk_aware_cbf/results/**/trajectory_samples.csv
 
 # Python cache / bytecode
 __pycache__/

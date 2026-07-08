@@ -1,36 +1,13 @@
 # Risk-Aware CBF Reproducibility Manifest
 
-## Repository audit notes
+The canonical paper-release audit is the repository-level
+`REPRODUCIBILITY_MANIFEST.md`.
 
-This file records which artifacts are intended to remain version controlled.
+This scoped manifest records the local policy for `work/risk_aware_cbf/`:
 
-## Tracked artifacts
+- report markdown files are intended to remain tracked;
+- lightweight scripts belong in `work/risk_aware_cbf/scripts/`;
+- compact summaries, metrics, inventories, and report-adjacent markdown belong in `work/risk_aware_cbf/results/` or `work/risk_aware_cbf/metrics/`;
+- raw traces, per-step dumps, trial-level raw CSVs, and trajectory samples should not be committed.
 
-- Method and experiment reports under `work/risk_aware_cbf/`
-- Paper positioning documents
-- Decision notes
-- Analysis summaries
-
-## Recommended tracked execution artifacts
-
-- Key analysis scripts under `work/risk_aware_cbf/scripts/`
-- Small summary files such as CSV metrics and JSON summaries
-- Configuration files required to reproduce reported tables
-
-## Not recommended for tracking
-
-- Python bytecode (`__pycache__`, `*.pyc`)
-- Large raw logs
-- Large generated trajectories
-- Temporary debug outputs
-
-## Current scope
-
-The repository contains safety assurance development records around:
-
-- Start-Safe CBF
-- Discrete-Time Verification
-- Optional V4-C predictive recovery
-- Diagnostic efficiency branches
-
-Raw experiment regeneration should use the corresponding scripts and environment notes when available.
+The audited GitHub snapshot contains the reports, many notes, figures, and paper-material files, but it does not contain the concrete Python scripts or compact summary/metrics files referenced by several reports. See the repository-level manifest for the per-report matrix.
