@@ -9,6 +9,17 @@ trajs
 debug
 .html
 
+# Keep risk_aware_cbf reproducibility scripts and selected results trackable
+!work/
+!work/risk_aware_cbf/
+!work/risk_aware_cbf/scripts/
+!work/risk_aware_cbf/results/
+
+# Python cache / bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
 # Images
 *.jpg
 *.jpeg
@@ -21,4 +32,3 @@ debug
 *.obj
 *.mtl
 *.ply
-*.json
