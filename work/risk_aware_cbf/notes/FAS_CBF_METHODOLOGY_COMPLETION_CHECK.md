@@ -24,6 +24,21 @@ Final status:
 - Forced-candidate-aware budgeting: future work / separate design only.
 - Full100 for Adaptive V1 now: not recommended.
 
+## MPC-style Recovery
+
+Frozen as future work / negative diagnostic for the current paper.
+
+The primitive-sequence MPC-style targeted offline pilot completed H2_N64 and H3_N64 over 199 trigger rows. Both profiles produced 103 successes, 96 no-improvement rows, and 96 selected H-step margin violations. H3 increased h-improvement statistics but did not reduce the unresolved violation count, and runtime remained high.
+
+Final status:
+
+- MPC-style Recovery role: optional extension / future work, not main contribution.
+- Current primitive profile: frozen.
+- Closed-loop smoke now: not recommended.
+- Flight20 now: not recommended.
+- Full100 now: not recommended.
+- Replacement for existing V4-C / R4_H2_N64: not supported.
+
 ## Paper Readiness
 
 Current recommendation: PROCEED_TO_METHOD_AND_EXPERIMENT_WRITING.
@@ -34,7 +49,8 @@ If entering writing, the module hierarchy should be:
 2. Discrete-Time Verification as the independent sampled-data risk detector.
 3. Optional Predictive Recovery as the triggered response to DT warning/on-margin risk.
 4. Adaptive V1 only as a risk-response candidate-budgeting ablation with an explicit forced-candidate dominance limitation.
+5. MPC-style Recovery only as future work / negative diagnostic material, if mentioned at all.
 
 ## Claim Boundary
 
-No new CBF theorem is claimed. `min_safety_h` is the repository GSplat ellipsoid safety h value, not meter clearance. Synthetic starts are not official benchmark starts. Post-repair navigation is not original benchmark navigation. Adaptive V1 does not guarantee safety, does not replace DT Verification, and does not prove runtime or candidate-count improvement. Official SAFER-Splat baseline source is not modified.
+No new CBF theorem is claimed. `min_safety_h` is the repository GSplat ellipsoid safety h value, not meter clearance. Synthetic starts are not official benchmark starts. Post-repair navigation is not original benchmark navigation. Adaptive V1 does not guarantee safety, does not replace DT Verification, and does not prove runtime or candidate-count improvement. MPC-style Recovery is not closed-loop validated, is not full100 validated, does not replace V4-C, and does not support runtime or safety-improvement claims. Official SAFER-Splat baseline source is not modified.

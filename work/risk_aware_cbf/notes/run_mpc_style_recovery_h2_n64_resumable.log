@@ -1,0 +1,7 @@
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt
+There are 281756 Gaussians in the GSplat model
+[start] profile=primitive_h2_n64 horizon=2 sequence_count=64 pending=199 total=199
+[progress] 10/199 trial=7 step=130 category=success selected=smooth_previous_nominal base_min_h=0.000504237483 selected_min_h=0.000504142488 runtime=2.334s
+[progress] 20/199 trial=9 step=95 category=success selected=smooth_previous_nominal base_min_h=0.000510945451 selected_min_h=0.000510274083 runtime=2.288s
+[progress] 30/199 trial=9 step=105 category=success selected=deceleration_0.5 base_min_h=0.000613479759 selected_min_h=0.000613479759 runtime=2.402s

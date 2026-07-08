@@ -1,0 +1,862 @@
+任务名称：
+FC-Aware V1 Targeted Risk-Window Closed-Loop Extension
+
+背景：
+我当前在 /disk1/zlab/projects/safer-splat 中做小论文实验，完整方法论主线是：
+
+Certified Feasibility-Aware Start-Safe CBF
++
+Discrete-Time Verification
++
+optional triggered Predictive Recovery
+
+Adaptive V1 selected_K-only 已经证明：
+
+1. selected_K risk-response scheduling 成立。
+2. selected_K 已经真实接入 V1 candidate budgeting。
+3. DT-risk / low-margin windows 中 selected_K 会显著提高。
+4. safety metrics 没有恶化。
+5. 但没有 candidate-count reduction evidence。
+6. 没有 runtime improvement evidence。
+7. 根本原因是 forced heading candidates 主导 final candidate set。
+
+随后 FC-Aware V1 逐步完成：
+
+1. Heading Candidate Shadow Audit：
+
+   * heading candidates 是主瓶颈。
+   * heading candidates 是 forced source，不受 selected_K 直接限制。
+   * final union 没有 post-cap。
+   * heading cap 有较大 theoretical candidate-count reduction headroom。
+   * 但所有 risk-window rows 都受 cap 影响，因此不能直接 closed-loop。
+
+2. Per-Candidate Recall Audit：
+
+   * candidate source IDs exact。
+   * 但旧 saved logs 中 active / low-h IDs 不可得。
+   * recall_available=false。
+   * 不能推荐 cap。
+
+3. Exact Logging Feasibility Probe：
+
+   * final candidate source IDs exact。
+   * heading distance / cosine exact。
+   * per-candidate h values exact。
+   * low-h IDs exact。
+   * active IDs exact for wrapper replay Clarabel dual-active rows。
+   * logging overhead acceptable。
+   * 继续 exact recall audit。
+
+4. Exact Active/Low-H Recall Audit：
+
+   * target rows = 199。
+   * best deployable = nearest_first, cap=16000。
+   * deployable reduction_ratio_mean = 0.342879。
+   * dual_active_recall_min = 1.0。
+   * tight_recall_min = 1.0。
+   * low_h_recall_min = 1.0。
+   * combined_risk_recall_min = 1.0。
+   * dropped_dual_active_total = 0。
+   * dropped_tight_total = 0。
+   * dropped_low_h_total = 0。
+   * 推荐 wrapper-level capped closed-loop smoke only。
+   * 不推荐 full100。
+
+5. Wrapper-Level Capped Closed-Loop Smoke：
+
+   * profile = fc_aware_nearest_cap16000。
+   * heading cap = 16000。
+   * ranking = nearest_first。
+   * recovery disabled。
+   * no flight20。
+   * no full100。
+   * no official core source modification。
+   * trial12 step20 passed。
+   * trial13 step20 passed。
+   * trial12 step80 passed。
+   * cap applied on all capped smoke steps。
+   * candidate count 明显下降。
+   * collision_count = 0。
+   * qp_infeasible_count = 0。
+   * H1/H2/H3 violations did not increase。
+   * min_safety_h did not worsen。
+   * fallback_count = 0。
+   * recovery_used_count = 0。
+   * runtime no abnormality, but do not claim formal runtime improvement.
+
+Smoke results:
+trial12 step20:
+
+* cap_applied = 20/20
+* heading before -> after = 20995.2 -> 16000
+* final before -> after = 20999.15 -> 16007.5
+* candidate ratio = 0.7623
+* runtime mean / p95 / max = 0.0605 / 0.0620 / 0.0652
+* collision = 0
+* QP infeasible = 0
+* min_safety_h_min = 0.00321891
+* H1/H2/H3 = 0/0/0
+* fallback = 0
+* progress = 0.0226
+
+trial13 step20:
+
+* cap_applied = 20/20
+* heading before -> after = 20973.75 -> 16000
+* final before -> after = 20976.2 -> 16005.2
+* candidate ratio = 0.7630
+* runtime mean / p95 / max = 0.0612 / 0.0635 / 0.0696
+* collision = 0
+* QP infeasible = 0
+* min_safety_h_min = 0.00253570
+* H1/H2/H3 = 0/0/0
+* fallback = 0
+* progress = 0.0195
+
+trial12 step80:
+
+* cap_applied = 80/80
+* heading before -> after = 24763.625 -> 16000
+* final before -> after = 24771.6125 -> 16013.9875
+* candidate ratio = 0.6465
+* runtime mean / p95 / max = 0.0605 / 0.0628 / 0.0644
+* collision = 0
+* QP infeasible = 0
+* min_safety_h_min = 0.00116523
+* H1/H2/H3 = 0/0/0
+* fallback = 0
+* progress = 0.0931
+
+重要解释：
+当前 capped smoke 主要验证了 wrapper-level cap integration 和早期 closed-loop stability。它还没有充分覆盖 trial12 / trial13 的主要 DT-risk windows：
+
+* trial12 target window: steps 96-167
+* trial13 target window: steps 107-179
+* trial14 target window: steps 53-70
+
+因此下一步应该做 targeted risk-window closed-loop extension，而不是 flight20 或 full100。
+
+本次任务目标：
+运行 FC-Aware V1 targeted risk-window closed-loop extension，只测试：
+
+profile:
+fc_aware_nearest_cap16000
+
+baseline:
+fixed
+
+strategy:
+nearest_first + heading cap 16000
+
+scope:
+targeted trials/windows only
+
+本次目标是验证 cap16000 在真正 DT-risk / low-margin windows 内是否仍然保持：
+
+1. cap 真实接入。
+2. measured candidate count 显著下降。
+3. collision_count = 0。
+4. qp_infeasible_count = 0。
+5. min_safety_h 不恶化。
+6. H1/H2/H3 margin violations 不增加。
+7. DT_warning_count 不增加。
+8. fallback 工作正常。
+9. runtime 无异常。
+10. recovery_used_count = 0。
+
+本次不是 full100，不是 flight20，不是 final benchmark validation。
+
+仓库：
+/disk1/zlab/projects/safer-splat
+
+Conda 环境：
+safer_splat_official
+
+Python：
+Python 3.10.20
+
+运行前设置：
+cd /disk1/zlab/projects/safer-splat
+conda activate safer_splat_official
+mkdir -p /disk1/zlab/tmp
+export TMPDIR=/disk1/zlab/tmp
+export MPLCONFIGDIR=/disk1/zlab/tmp/mplconfig
+export XDG_CACHE_HOME=/disk1/zlab/tmp/xdg_cache
+export CUDA_VISIBLE_DEVICES=1
+
+注意：
+根分区 / 可能 0 可用，不要依赖根分区临时空间。所有输出必须写入 /disk1 或 work/risk_aware_cbf/ 下。
+
+严格禁止修改：
+cbf/
+splat/
+ellipsoids/
+dynamics/
+run.py
+
+只允许新增或修改：
+work/risk_aware_cbf/
+
+重要表述约束：
+
+1. 不修改 official SAFER-Splat baseline。
+2. 不声称提出新的 CBF theorem。
+3. 不声称 FC-Aware V1 单独保证安全。
+4. FC-Aware V1 是 candidate selection / efficiency support module。
+5. FC-Aware V1 不替代 Start-Safe CBF。
+6. FC-Aware V1 不替代 Discrete-Time Verification。
+7. FC-Aware V1 不替代 CBF-QP filtering。
+8. FC-Aware V1 不替代 optional Predictive Recovery。
+9. min_safety_h 是 repository GSplat ellipsoid safety h value，不是 meter clearance。
+10. margin violation 不是 collision。
+11. targeted extension 不是 full100 benchmark。
+12. targeted extension 不是 official benchmark validation。
+13. 不声称 formal runtime improvement。
+14. 不声称 safety guarantee。
+15. 不要修改 official candidate selector。
+16. 只在 wrapper 层实现 heading cap。
+17. 只测试 deployable strategy nearest_first，不使用 oracle ranking。
+18. 不要启用 V4-C recovery。
+19. 不要直接跑 flight20。
+20. 不要直接跑 full100。
+21. 如果 safety worsens，立即停止并冻结/回退。
+
+本任务边界：
+
+1. 不跑 full100。
+2. 不跑 flight20。
+3. 不启用 V4-C recovery。
+4. 不修改 cbf/、splat/、ellipsoids/、dynamics/、run.py。
+5. 只跑 targeted risk-window extension。
+6. 按阶段扩展，不一次性跑所有。
+7. 如果某阶段出现 collision、QP infeasible、min_h 明显恶化、H-step violations 增加、fallback 失效，立即停止。
+8. 如果 trial14 step80 失败，不跑 trial12/trial13 longer extension。
+9. 如果 trial12 step180 或 trial13 step190 失败，不扩大 scope。
+10. 从 targeted extension 不能直接推荐 full100。
+
+Targeted risk windows：
+
+* trial14: steps 53-70
+* trial12: steps 96-167
+* trial13: steps 107-179
+* trial7: steps 121-131
+* trial9: steps 87-111
+
+Stage order：
+Stage 1:
+trial14 max_steps 80
+Reason: covers risk-window 53-70 with moderate length.
+
+Stage 2:
+trial12 max_steps 180
+Reason: covers risk-window 96-167.
+
+Stage 3:
+trial13 max_steps 190
+Reason: covers risk-window 107-179.
+
+Stage 4 optional:
+trial7 max_steps 140 and trial9 max_steps 130
+Reason: covers smaller target windows, but only if stages 1-3 pass.
+
+Do not run flight20 or full100.
+
+一、检查当前状态
+
+Step 1:
+进入仓库并检查状态：
+
+cd /disk1/zlab/projects/safer-splat
+git status --short
+git diff --stat
+git diff --cached --stat
+
+Step 2:
+确认 forbidden directories 无修改：
+cbf/
+splat/
+ellipsoids/
+dynamics/
+run.py
+
+Step 3:
+检查已有 smoke 文件：
+work/risk_aware_cbf/REPORT_FC_AWARE_V1_CAPPED_CLOSED_LOOP_SMOKE.md
+work/risk_aware_cbf/notes/FC_AWARE_V1_CAPPED_CLOSED_LOOP_SMOKE_DECISION.md
+work/risk_aware_cbf/results/fc_aware_v1_capped_closed_loop_smoke/
+work/risk_aware_cbf/scripts/run_fc_aware_v1_capped_closed_loop_smoke.py
+work/risk_aware_cbf/scripts/analyze_fc_aware_v1_capped_closed_loop_smoke.py
+work/risk_aware_cbf/scripts/fc_aware_heading_capped_selector.py
+
+二、写 targeted extension 设计说明
+
+新增：
+work/risk_aware_cbf/notes/FC_AWARE_V1_TARGETED_EXTENSION_DESIGN.md
+
+内容包括：
+
+1. Purpose
+   说明本任务评估 FC-Aware nearest_first cap16000 在 targeted DT-risk windows 中的 closed-loop 行为。
+
+2. Why targeted extension
+   说明：
+
+* smoke 已经证明 wrapper integration。
+* 但 smoke 没有充分覆盖 trial12/trial13 risk windows。
+* 下一步必须覆盖真实 DT-risk / low-margin windows。
+* 仍然不是 full100。
+
+3. Profiles
+
+* fixed baseline
+* fc_aware_nearest_cap16000
+
+4. Target scopes
+
+* trial14 max_steps 80
+* trial12 max_steps 180
+* trial13 max_steps 190
+* optional trial7 max_steps 140
+* optional trial9 max_steps 130
+
+5. Safety guard / fallback
+   必须包括：
+
+* near keep all
+* heading nearest_first top 16000
+* full heading fallback on missing fields / guard violation
+* DT Verification guard
+* stop if collision
+* stop if QP infeasible
+* stop if min_h worsens beyond tolerance
+* stop if H1/H2/H3 violations increase substantially
+* no V4-C recovery
+
+6. Metrics
+   必须包括：
+
+* all_steps and risk_window scoped metrics
+* runtime_mean / p95 / max
+* measured_candidate_count_mean / p95 / max
+* heading_before / after
+* final_before / after
+* candidate ratio
+* cap_applied_count
+* fallback_count / reason
+* collision_count
+* qp_infeasible_count
+* min_safety_h_min
+* H1/H2/H3 margin violation counts
+* DT_warning_count
+* low_margin_count
+* progress_mean
+* recovery_used_count
+
+7. Pass / fail criteria
+   Pass:
+
+* no crash
+* no collision
+* no QP infeasible
+* no min_h degradation beyond tolerance
+* no H1/H2/H3 increase
+* no DT_warning increase
+* candidate count reduction observed
+* fallback not excessive or fallback reasons explainable
+
+Fail:
+
+* any collision
+* any QP infeasible
+* H-step margin worsens
+* min_h worsens
+* cap does not reduce final count
+* fallback always used, meaning cap effectively not applied
+
+三、更新或复用 targeted runner
+
+优先复用：
+work/risk_aware_cbf/scripts/run_fc_aware_v1_capped_closed_loop_smoke.py
+
+如果它已经支持 arbitrary trial/max_steps/output-dir，则不要新增重复 runner。
+
+如果需要新增 wrapper 脚本，可以新增：
+work/risk_aware_cbf/scripts/run_fc_aware_v1_targeted_extension.py
+
+要求：
+
+1. 只在 work/risk_aware_cbf/ 下新增或修改。
+2. 不修改 official core source。
+3. 支持 profiles：
+
+   * fixed
+   * fc_aware_nearest_cap16000
+4. 支持 target-window scoped analysis。
+5. 支持参数：
+   --trial-id
+   --max-steps
+   --target-window START:END
+   --profile fixed/fc_aware_nearest_cap16000
+   --heading-cap 16000
+   --ranking nearest_first
+   --disable-recovery
+   --enable-dt-guard
+   --enable-full-heading-fallback
+   --output-dir
+   --resume
+   --skip-existing
+   --stop-on-safety-worsen
+6. 每一步输出必须能区分：
+
+   * all_steps
+   * risk_window_flag
+7. 每一步至少记录：
+
+   * trial_id
+   * step_id
+   * profile
+   * risk_window_flag
+   * heading_before_count
+   * heading_after_count
+   * final_before_count
+   * final_after_count
+   * measured_candidate_count
+   * candidate_ratio
+   * cap_applied_flag
+   * fallback_used
+   * fallback_reason
+   * runtime_step
+   * collision_flag
+   * qp_infeasible_flag
+   * min_safety_h
+   * H1/H2/H3 violation flags
+   * DT_warning_flag
+   * low_margin_flag
+   * progress
+   * recovery_used
+8. Trial output:
+
+   * all_steps summary
+   * risk_window summary
+
+四、更新 analyzer
+
+优先复用：
+work/risk_aware_cbf/scripts/analyze_fc_aware_v1_capped_closed_loop_smoke.py
+
+如果需要新增：
+work/risk_aware_cbf/scripts/analyze_fc_aware_v1_targeted_extension.py
+
+要求：
+
+1. 比较 fixed vs capped。
+2. 分 all_steps 和 risk_window 两个 scope。
+3. 输出：
+   work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/analysis/fc_aware_targeted_extension_summary.csv
+   work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/analysis/fc_aware_targeted_extension_by_trial.csv
+   work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/analysis/fc_aware_targeted_extension_by_scope.csv
+   work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/analysis/fc_aware_targeted_extension_metrics.json
+4. 必须报告：
+
+   * measured candidate count ratio
+   * final candidate count ratio
+   * heading count ratio
+   * runtime ratio
+   * min_safety_h delta
+   * H1/H2/H3 violation deltas
+   * DT_warning delta
+   * low_margin delta
+   * progress delta
+   * fallback count
+   * unsafe_to_expand flag
+5. 如果 safety worsens，明确 unsafe_to_expand=true。
+6. 如果 risk_window safety stable and candidate count reduced，recommend targeted_more_or_flight20_candidate=false/true cautiously。
+7. 不要推荐 full100。
+
+五、运行顺序
+
+Step 1:
+检查 git 状态和 forbidden diff。
+
+Step 2:
+写 targeted extension design：
+work/risk_aware_cbf/notes/FC_AWARE_V1_TARGETED_EXTENSION_DESIGN.md
+
+Step 3:
+先运行 trial14 max_steps80 fixed / capped：
+
+python work/risk_aware_cbf/scripts/run_fc_aware_v1_capped_closed_loop_smoke.py 
+--profile fixed 
+--trial-id 14 
+--max-steps 80 
+--disable-recovery 
+--smoke 
+--output-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial14_step80/fixed
+
+python work/risk_aware_cbf/scripts/run_fc_aware_v1_capped_closed_loop_smoke.py 
+--profile fc_aware_nearest_cap16000 
+--trial-id 14 
+--max-steps 80 
+--heading-cap 16000 
+--ranking nearest_first 
+--disable-recovery 
+--enable-dt-guard 
+--enable-full-heading-fallback 
+--smoke 
+--output-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial14_step80/capped
+
+python work/risk_aware_cbf/scripts/analyze_fc_aware_v1_capped_closed_loop_smoke.py 
+--fixed-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial14_step80/fixed 
+--capped-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial14_step80/capped 
+--output-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial14_step80/analysis 
+--target-window 53:70
+
+Step 4:
+只有 trial14 pass 后，运行 trial12 max_steps180 fixed / capped：
+
+python work/risk_aware_cbf/scripts/run_fc_aware_v1_capped_closed_loop_smoke.py 
+--profile fixed 
+--trial-id 12 
+--max-steps 180 
+--disable-recovery 
+--smoke 
+--output-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial12_step180/fixed
+
+python work/risk_aware_cbf/scripts/run_fc_aware_v1_capped_closed_loop_smoke.py 
+--profile fc_aware_nearest_cap16000 
+--trial-id 12 
+--max-steps 180 
+--heading-cap 16000 
+--ranking nearest_first 
+--disable-recovery 
+--enable-dt-guard 
+--enable-full-heading-fallback 
+--smoke 
+--output-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial12_step180/capped
+
+python work/risk_aware_cbf/scripts/analyze_fc_aware_v1_capped_closed_loop_smoke.py 
+--fixed-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial12_step180/fixed 
+--capped-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial12_step180/capped 
+--output-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial12_step180/analysis 
+--target-window 96:167
+
+Step 5:
+只有 trial12 pass 后，运行 trial13 max_steps190 fixed / capped：
+
+python work/risk_aware_cbf/scripts/run_fc_aware_v1_capped_closed_loop_smoke.py 
+--profile fixed 
+--trial-id 13 
+--max-steps 190 
+--disable-recovery 
+--smoke 
+--output-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial13_step190/fixed
+
+python work/risk_aware_cbf/scripts/run_fc_aware_v1_capped_closed_loop_smoke.py 
+--profile fc_aware_nearest_cap16000 
+--trial-id 13 
+--max-steps 190 
+--heading-cap 16000 
+--ranking nearest_first 
+--disable-recovery 
+--enable-dt-guard 
+--enable-full-heading-fallback 
+--smoke 
+--output-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial13_step190/capped
+
+python work/risk_aware_cbf/scripts/analyze_fc_aware_v1_capped_closed_loop_smoke.py 
+--fixed-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial13_step190/fixed 
+--capped-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial13_step190/capped 
+--output-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial13_step190/analysis 
+--target-window 107:179
+
+Step 6:
+如果 trial14/trial12/trial13 全部 pass，可选运行 trial7 and trial9：
+
+trial7:
+
+python work/risk_aware_cbf/scripts/run_fc_aware_v1_capped_closed_loop_smoke.py 
+--profile fixed 
+--trial-id 7 
+--max-steps 140 
+--disable-recovery 
+--smoke 
+--output-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial7_step140/fixed
+
+python work/risk_aware_cbf/scripts/run_fc_aware_v1_capped_closed_loop_smoke.py 
+--profile fc_aware_nearest_cap16000 
+--trial-id 7 
+--max-steps 140 
+--heading-cap 16000 
+--ranking nearest_first 
+--disable-recovery 
+--enable-dt-guard 
+--enable-full-heading-fallback 
+--smoke 
+--output-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial7_step140/capped
+
+python work/risk_aware_cbf/scripts/analyze_fc_aware_v1_capped_closed_loop_smoke.py 
+--fixed-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial7_step140/fixed 
+--capped-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial7_step140/capped 
+--output-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial7_step140/analysis 
+--target-window 121:131
+
+trial9:
+
+python work/risk_aware_cbf/scripts/run_fc_aware_v1_capped_closed_loop_smoke.py 
+--profile fixed 
+--trial-id 9 
+--max-steps 130 
+--disable-recovery 
+--smoke 
+--output-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial9_step130/fixed
+
+python work/risk_aware_cbf/scripts/run_fc_aware_v1_capped_closed_loop_smoke.py 
+--profile fc_aware_nearest_cap16000 
+--trial-id 9 
+--max-steps 130 
+--heading-cap 16000 
+--ranking nearest_first 
+--disable-recovery 
+--enable-dt-guard 
+--enable-full-heading-fallback 
+--smoke 
+--output-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial9_step130/capped
+
+python work/risk_aware_cbf/scripts/analyze_fc_aware_v1_capped_closed_loop_smoke.py 
+--fixed-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial9_step130/fixed 
+--capped-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial9_step130/capped 
+--output-dir work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/trial9_step130/analysis 
+--target-window 87:111
+
+Step 7:
+生成 consolidated targeted extension analysis：
+如果 analyzer 支持多个 directories，则生成 combined summary。
+否则新增小脚本：
+work/risk_aware_cbf/scripts/summarize_fc_aware_v1_targeted_extension.py
+
+输出：
+work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/analysis/targeted_extension_summary.csv
+work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/analysis/targeted_extension_by_scope.csv
+work/risk_aware_cbf/results/fc_aware_v1_targeted_extension/analysis/targeted_extension_metrics.json
+
+六、生成报告
+
+新增：
+work/risk_aware_cbf/REPORT_FC_AWARE_V1_TARGETED_EXTENSION.md
+
+报告结构：
+
+# FC-Aware V1 Targeted Risk-Window Closed-Loop Extension
+
+## 1. Purpose
+
+说明本报告验证 nearest_first cap16000 在 targeted DT-risk windows 中的 closed-loop 行为。不是 full100，不是 flight20。
+
+## 2. Background
+
+总结：
+
+* selected_K-only Adaptive V1 的问题
+* forced heading bottleneck
+* exact recall audit
+* capped smoke
+* 为什么需要 targeted extension
+
+## 3. Setup
+
+说明：
+
+* profiles fixed vs fc_aware_nearest_cap16000
+* trials / target windows
+* heading cap
+* ranking
+* recovery disabled
+* fallback / guard
+* no V4-C recovery
+* no full100
+
+## 4. All-Steps Results
+
+表格按 trial：
+
+* candidate ratio
+* heading before/after
+* final before/after
+* runtime ratio
+* collision
+* QP infeasible
+* min_h delta
+* H1/H2/H3 deltas
+* fallback
+* progress
+
+## 5. Risk-Window Results
+
+重点表格：
+
+* risk_window candidate ratio
+* risk_window runtime ratio
+* risk_window min_h delta
+* risk_window H1/H2/H3 deltas
+* DT_warning delta
+* low_margin delta
+* fallback count
+* unsafe_to_expand
+
+## 6. Safety / DT Verification Check
+
+说明是否：
+
+* collision free
+* QP feasible
+* min_safety_h not worse
+* H-step margin not worse
+* DT warning not worse
+
+## 7. Candidate Reduction Check
+
+说明：
+
+* measured candidate count reduction
+* heading count reduction
+* final candidate count reduction
+* cap applied fraction
+* fallback fraction
+
+## 8. Runtime Observation
+
+只报告 observed smoke/targeted runtime，不声称 formal runtime improvement。
+
+## 9. Decision
+
+必须明确：
+
+* Continue FC-Aware V1?
+* Recommend flight20?
+* Recommend full100 now?
+* Recommend more targeted tests?
+* Paper positioning?
+
+判断：
+
+* 如果 targeted risk-window safety stable and candidate count reduced: recommend flight20_candidate_next = maybe, but not full100.
+* 如果 any safety worsens: freeze.
+* 如果 only non-risk candidate reduction but risk-window safety/candidate not good: freeze or redesign.
+* Do not recommend full100 from targeted extension alone.
+
+## 10. Limitations
+
+包括：
+
+* targeted extension only
+* not full100
+* not official benchmark
+* no safety guarantee
+* no theorem
+* h not metric clearance
+* margin violation not collision
+* no official core source modified
+
+七、生成决策说明
+
+新增：
+work/risk_aware_cbf/notes/FC_AWARE_V1_TARGETED_EXTENSION_DECISION.md
+
+内容包括：
+
+1. targeted extension 是否成功。
+2. 哪些 trials 运行。
+3. 是否覆盖 target risk windows。
+4. cap 是否持续接入。
+5. candidate count 是否下降。
+6. risk-window candidate count 是否下降。
+7. safety 是否恶化。
+8. min_h 是否恶化。
+9. H1/H2/H3 是否恶化。
+10. fallback 是否正常。
+11. runtime 是否异常。
+12. 是否建议 continue FC-Aware V1。
+13. 是否建议 flight20。
+14. 是否建议 full100 now。
+15. 是否建议作为 paper ablation。
+16. 禁止表述。
+
+八、更新 paper materials
+
+新增：
+work/risk_aware_cbf/paper_materials/FC_AWARE_V1_TARGETED_EXTENSION_POSITIONING_UPDATE.md
+
+内容包括：
+
+* targeted extension 后 FC-Aware V1 的定位
+* 是否可以作为 candidate-count ablation
+* 是否仍是 support module
+* 是否接近可写入论文实验
+* 不能声称的内容
+* 如果未做 full100，应如何表述
+
+九、最终检查
+
+完成后运行：
+
+git diff --stat
+git diff --cached --stat
+git status --short
+
+并确认：
+
+1. 没有修改 forbidden directories：
+   cbf/
+   splat/
+   ellipsoids/
+   dynamics/
+   run.py
+2. 新增和修改都在：
+   work/risk_aware_cbf/
+3. 没有跑 full100。
+4. 没有跑 flight20。
+5. 没有启用 V4-C recovery。
+6. 没有把 targeted extension 写成 benchmark。
+7. 没有声称 safety guarantee。
+8. 没有声称 new theorem。
+9. 没有把 margin violation 写成 collision。
+10. 没有把 h / min_safety_h 写成 meter clearance。
+11. scripts / results 被 .gitignore 忽略的话，在最终回复中说明。
+12. commands.txt 和 logs 仍作为 internal logs，不放进 paper_materials。
+
+十、最终回复格式
+
+请最终用中文回复，包含：
+
+1. 完成了哪些文件。
+2. 是否修改 official core source。
+3. 是否运行 trial14 step80。
+4. 是否运行 trial12 step180。
+5. 是否运行 trial13 step190。
+6. 是否运行 trial7 / trial9 optional。
+7. 是否运行 full100。
+8. 是否运行 flight20。
+9. recovery 是否 disabled。
+10. 是否覆盖 target risk windows。
+11. cap applied fraction。
+12. all-steps candidate ratio。
+13. risk-window candidate ratio。
+14. heading before / after。
+15. final before / after。
+16. runtime mean / p95 / max or ratio。
+17. collision_count。
+18. qp_infeasible_count。
+19. min_safety_h_min / delta。
+20. H1/H2/H3 violation counts / deltas。
+21. DT_warning / low_margin deltas。
+22. fallback_count / reasons。
+23. progress_mean / delta。
+24. safety 是否恶化。
+25. 是否建议 continue FC-Aware V1。
+26. 是否建议 flight20。
+27. 是否建议 full100 now。
+28. paper positioning。
+29. git diff --stat。
+30. git diff --cached --stat。
+31. git status --short。
+32. 明确说明没有修改 cbf/、splat/、ellipsoids/、dynamics/、run.py。

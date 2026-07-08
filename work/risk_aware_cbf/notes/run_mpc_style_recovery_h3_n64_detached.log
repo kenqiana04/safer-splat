@@ -1,0 +1,122 @@
+==== detached H3_N64 start 2026-07-07T11:37:00+08:00 ====
+cwd=/disk1/zlab/projects/safer-splat
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt
+There are 281756 Gaussians in the GSplat model
+[start] profile=primitive_h3_n64 horizon=3 sequence_count=64 pending=199 total=199
+[progress] 10/199 trial=7 step=130 category=success selected=vertical_up_0.5 base_min_h=0.000499622547 selected_min_h=0.000504586962 runtime=3.221s
+[progress] 20/199 trial=9 step=95 category=success selected=smooth_previous_nominal base_min_h=0.000504939235 selected_min_h=0.000503031653 runtime=3.243s
+[progress] 30/199 trial=9 step=105 category=success selected=deceleration_0.5 base_min_h=0.000613479759 selected_min_h=0.000613479759 runtime=3.340s
+[progress] 40/199 trial=12 step=99 category=success selected=smooth_previous_nominal base_min_h=0.000534264953 selected_min_h=0.000534473802 runtime=3.372s
+[progress] 50/199 trial=12 step=109 category=no_improvement selected=nominal_hold base_min_h=0.000392158865 selected_min_h=0.000392158865 runtime=3.438s
+[progress] 60/199 trial=12 step=119 category=no_improvement selected=nominal_hold base_min_h=0.000339802587 selected_min_h=0.000339802587 runtime=3.434s
+[progress] 70/199 trial=12 step=129 category=no_improvement selected=nominal_hold base_min_h=0.000419458025 selected_min_h=0.000419458025 runtime=3.386s
+[progress] 80/199 trial=12 step=139 category=success selected=nominal_hold base_min_h=0.000719089992 selected_min_h=0.000719089992 runtime=3.360s
+[progress] 90/199 trial=12 step=149 category=success selected=smooth_previous_nominal base_min_h=0.000622396241 selected_min_h=0.000623158645 runtime=3.297s
+[progress] 100/199 trial=12 step=159 category=no_improvement selected=nominal_hold base_min_h=0.000429140287 selected_min_h=0.000429140287 runtime=3.418s
+[progress] 110/199 trial=13 step=108 category=success selected=nominal_hold base_min_h=0.000597072998 selected_min_h=0.000597072998 runtime=3.339s
+[progress] 120/199 trial=13 step=118 category=no_improvement selected=nominal_hold base_min_h=0.000416666153 selected_min_h=0.000416666153 runtime=3.507s
+[progress] 130/199 trial=13 step=128 category=no_improvement selected=nominal_hold base_min_h=0.000347967376 selected_min_h=0.000347967376 runtime=3.314s
+[progress] 140/199 trial=13 step=138 category=no_improvement selected=nominal_hold base_min_h=0.000345212873 selected_min_h=0.000345212873 runtime=3.462s
+[progress] 150/199 trial=13 step=148 category=success selected=smooth_previous_nominal base_min_h=0.000536402804 selected_min_h=0.000536402804 runtime=3.436s
+[progress] 160/199 trial=13 step=158 category=success selected=nominal_hold base_min_h=0.000648456858 selected_min_h=0.000648456858 runtime=3.347s
+[progress] 170/199 trial=13 step=168 category=no_improvement selected=nominal_hold base_min_h=0.000459020142 selected_min_h=0.000459020142 runtime=3.395s
+[progress] 180/199 trial=13 step=178 category=no_improvement selected=nominal_hold base_min_h=0.000336377416 selected_min_h=0.000336377416 runtime=3.420s
+[progress] 190/199 trial=14 step=61 category=no_improvement selected=nominal_hold base_min_h=0.000450696214 selected_min_h=0.000450696214 runtime=3.403s
+[progress] 199/199 trial=14 step=70 category=no_improvement selected=nominal_hold base_min_h=0.000298623345 selected_min_h=0.000298623345 runtime=3.488s
+{
+  "args": {
+    "accel_limit": 0.1,
+    "brake_scale": 1.0,
+    "device": "cuda",
+    "dry_run": false,
+    "dt": 0.05,
+    "dt_margin": 0.0005,
+    "horizon": 3,
+    "improvement_epsilon": 1e-09,
+    "include_random": true,
+    "include_smoothing": true,
+    "input_dir": "work/risk_aware_cbf/results/adaptive_v1_targeted_dt_risk_closed_loop",
+    "lateral_scale": 0.05,
+    "max_triggers": null,
+    "output_dir": "work/risk_aware_cbf/results/mpc_style_recovery_targeted_pilot/h3_n64",
+    "profile": "primitive_h3_n64",
+    "progress_every": 10,
+    "random_noise_scale": 0.05,
+    "random_seed": 73031,
+    "resume": true,
+    "save_every": 10,
+    "sequence_count": 64,
+    "smoke": false,
+    "target_trials": null,
+    "target_windows_file": null,
+    "vertical_scale": 0.05,
+    "w_control": 0.05,
+    "w_deviation": 0.2,
+    "w_goal": 0.2,
+    "w_safe": 10.0,
+    "w_smooth": 0.1,
+    "write_sequence_rows": false
+  },
+  "base_margin_violation_count": 108,
+  "closed_loop_result": false,
+  "comparison_note": "offline trigger-state evaluator; existing R4_H2_N64 is closed-loop full100/hotspot evidence",
+  "dominant_sequence_types": [
+    [
+      "nominal_hold",
+      121
+    ],
+    [
+      "smooth_previous_nominal",
+      54
+    ],
+    [
+      "deceleration_0.5",
+      8
+    ],
+    [
+      "deceleration_0.25",
+      6
+    ],
+    [
+      "previous_safe_hold",
+      4
+    ]
+  ],
+  "dry_run": false,
+  "failed_count": 0,
+  "h_improvement_mean": 8.509316523769992e-07,
+  "h_improvement_p95": 3.2202689908444845e-06,
+  "horizon": 3,
+  "improved_but_unresolved_count": 0,
+  "min_base_horizon_h": 0.000298623344860971,
+  "min_exec_horizon_h": 0.000298623344860971,
+  "no_improvement_count": 96,
+  "not_directly_comparable_to_R4_H2_N64": true,
+  "offline_evaluator": true,
+  "partial": false,
+  "profile": "primitive_h3_n64",
+  "recovery_attempt_count": 199,
+  "runtime_max": 3.7861134372651577,
+  "runtime_mean": 3.393899027024157,
+  "runtime_p95": 3.489155124686658,
+  "selected_exec_margin_violation_count": 96,
+  "selected_sequence_type_counts": {
+    "brake_lateral_left": 1,
+    "deceleration_0.25": 6,
+    "deceleration_0.5": 8,
+    "lateral_left_1": 1,
+    "nominal_hold": 121,
+    "previous_safe_hold": 4,
+    "random_shooting_38": 1,
+    "smooth_previous_nominal": 54,
+    "vertical_down_1": 2,
+    "vertical_up_0.5": 1
+  },
+  "sequence_count": 64,
+  "smoke": false,
+  "source_file": "work/risk_aware_cbf/results/adaptive_v1_targeted_dt_risk_closed_loop/balanced/adaptive_v1_targeted_dt_risk_closed_loop_steps.csv",
+  "success_count": 103,
+  "target_trigger_source": "adaptive_v1_targeted_dt_risk_closed_loop step CSV and target windows",
+  "trigger_count": 199
+}

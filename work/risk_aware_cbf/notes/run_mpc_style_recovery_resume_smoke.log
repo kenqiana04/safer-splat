@@ -1,0 +1,83 @@
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt
+There are 281756 Gaussians in the GSplat model
+[start] profile=primitive_h2_n64 horizon=2 sequence_count=64 pending=3 total=3
+[progress] 1/3 trial=7 step=121 category=success selected=nominal_hold base_min_h=0.000649101217 selected_min_h=0.000649101217 runtime=2.226s
+[progress] 2/3 trial=7 step=122 category=success selected=smooth_previous_nominal base_min_h=0.00062508916 selected_min_h=0.000625211629 runtime=2.308s
+[progress] 3/3 trial=7 step=123 category=success selected=smooth_previous_nominal base_min_h=0.000602690969 selected_min_h=0.000602807268 runtime=2.271s
+{
+  "args": {
+    "accel_limit": 0.1,
+    "brake_scale": 1.0,
+    "device": "cuda",
+    "dry_run": false,
+    "dt": 0.05,
+    "dt_margin": 0.0005,
+    "horizon": 2,
+    "improvement_epsilon": 1e-09,
+    "include_random": true,
+    "include_smoothing": true,
+    "input_dir": "work/risk_aware_cbf/results/adaptive_v1_targeted_dt_risk_closed_loop",
+    "lateral_scale": 0.05,
+    "max_triggers": 3,
+    "output_dir": "work/risk_aware_cbf/results/mpc_style_recovery_targeted_pilot/resume_smoke_h2_n64",
+    "profile": "primitive_h2_n64",
+    "progress_every": 1,
+    "random_noise_scale": 0.05,
+    "random_seed": 73031,
+    "resume": true,
+    "save_every": 1,
+    "sequence_count": 64,
+    "smoke": true,
+    "target_trials": null,
+    "target_windows_file": null,
+    "vertical_scale": 0.05,
+    "w_control": 0.05,
+    "w_deviation": 0.2,
+    "w_goal": 0.2,
+    "w_safe": 10.0,
+    "w_smooth": 0.1,
+    "write_sequence_rows": false
+  },
+  "base_margin_violation_count": 0,
+  "closed_loop_result": false,
+  "comparison_note": "offline trigger-state evaluator; existing R4_H2_N64 is closed-loop full100/hotspot evidence",
+  "dominant_sequence_types": [
+    [
+      "smooth_previous_nominal",
+      2
+    ],
+    [
+      "nominal_hold",
+      1
+    ]
+  ],
+  "dry_run": false,
+  "failed_count": 0,
+  "h_improvement_mean": 7.958927502234776e-08,
+  "h_improvement_p95": 1.2185191735625268e-07,
+  "horizon": 2,
+  "improved_but_unresolved_count": 0,
+  "min_base_horizon_h": 0.0006026909686625004,
+  "min_exec_horizon_h": 0.0006028072675690055,
+  "no_improvement_count": 0,
+  "not_directly_comparable_to_R4_H2_N64": true,
+  "offline_evaluator": true,
+  "partial": false,
+  "profile": "primitive_h2_n64",
+  "recovery_attempt_count": 3,
+  "runtime_max": 2.3080103248357773,
+  "runtime_mean": 2.268423087274035,
+  "runtime_p95": 2.304327913187444,
+  "selected_exec_margin_violation_count": 0,
+  "selected_sequence_type_counts": {
+    "nominal_hold": 1,
+    "smooth_previous_nominal": 2
+  },
+  "sequence_count": 64,
+  "smoke": true,
+  "source_file": "work/risk_aware_cbf/results/adaptive_v1_targeted_dt_risk_closed_loop/balanced/adaptive_v1_targeted_dt_risk_closed_loop_steps.csv",
+  "success_count": 3,
+  "target_trigger_source": "adaptive_v1_targeted_dt_risk_closed_loop step CSV and target windows",
+  "trigger_count": 3
+}
