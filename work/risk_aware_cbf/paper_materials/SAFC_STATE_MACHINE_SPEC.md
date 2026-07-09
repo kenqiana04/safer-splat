@@ -262,3 +262,9 @@ interface-level, and diagnostic transitions remain separated by claim scope.
 The state machine has been instrumented in no-op mode in a tiny closed-loop
 smoke path. The online instrumentation logs state decisions and feedback
 candidates but does not execute feedback actions.
+
+## 8. Level-3A Active Warning Policy Status
+
+The Warning-Aware state S3 may emit a bounded slowdown action in Level 3A.
+This remains a minimal policy and does not implement replanning or risk-cost
+planning.

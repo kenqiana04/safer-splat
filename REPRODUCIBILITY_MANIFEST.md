@@ -201,3 +201,24 @@ performance improvement:
 
 No raw traces, per-step dumps, full `trials.csv`, active-constraint dumps,
 trajectory samples, JSONL logs, or binary files are included.
+
+## SAFC Level-3A Warning-Streak Slowdown
+
+The following artifacts validate a minimal active SAFC feedback policy at
+Level 3A. The policy applies bounded warning-streak slowdown in a smoke-first
+setting. This is not a full benchmark, does not modify official source code,
+and does not claim performance improvement.
+
+- `work/risk_aware_cbf/scripts/safc_warning_slowdown_policy.py`
+- `work/risk_aware_cbf/scripts/safc_level3a_warning_slowdown.py`
+- `work/risk_aware_cbf/REPORT_SAFC_LEVEL3A_WARNING_SLOWDOWN.md`
+- `work/risk_aware_cbf/results/safc_level3a_warning_slowdown/README.md`
+- `work/risk_aware_cbf/results/safc_level3a_warning_slowdown/policy_logic_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3a_warning_slowdown/active_smoke_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3a_warning_slowdown/activation_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3a_warning_slowdown/control_delta_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3a_warning_slowdown/metrics.json`
+- `work/risk_aware_cbf/results/safc_level3a_warning_slowdown/slowdown_notes.md`
+
+No raw traces, per-step dumps, full `trials.csv`, active-constraint dumps,
+trajectory samples, JSONL logs, or binary files are included.

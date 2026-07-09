@@ -238,3 +238,10 @@ SAFC has a Level-2 no-op instrumentation validation in
 `REPORT_SAFC_LEVEL2_NOOP_INSTRUMENTATION.md`. This validates passive insertion
 and logging in a tiny closed-loop smoke path without modifying control. It does
 not validate active feedback or performance improvement.
+
+## 8. Level-3A Warning-Streak Slowdown Status
+
+SAFC has a Level-3A minimal active feedback smoke in
+`REPORT_SAFC_LEVEL3A_WARNING_SLOWDOWN.md`. This tests bounded warning-streak
+slowdown logic and tiny-smoke integration. It does not claim benchmark-level
+safety improvement.

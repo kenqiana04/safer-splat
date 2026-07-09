@@ -140,3 +140,9 @@ new controller behavior.
 
 Feedback contracts are logged as candidates in Level 2. Interface-level
 candidates remain non-executed and do not modify control.
+
+## 11. Level-3A Active Feedback Contract Status
+
+The verification-to-command-shaping contract is instantiated as
+warning-streak slowdown in Level 3A. Its claim scope is minimal active policy
+smoke, not performance improvement.

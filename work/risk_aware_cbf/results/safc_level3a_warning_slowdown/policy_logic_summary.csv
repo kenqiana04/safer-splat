@@ -1,0 +1,11 @@
+case_id,dt_warning_any,h1_warning,h2_warning,h3_warning,warning_streak,clear_streak,previous_scale,expected_active,actual_active,expected_scale_range,actual_scale,modifies_control,bounded,passed,reason_code,notes
+no_warning_clear,False,False,False,False,0,2,1.0,False,False,"[1.000000,1.000000]",1.0,False,True,True,clear_streak_release,Bounded warning-streak slowdown decision.
+first_H1_warning,True,True,False,False,1,0,1.0,True,True,"[0.750000,0.750000]",0.75,True,True,True,H1_or_warning_streak,Bounded warning-streak slowdown decision.
+persistent_H1_warning,True,True,False,False,2,0,0.75,True,True,"[0.500000,0.500000]",0.5,True,True,True,H2_or_persistent_warning_streak,Bounded warning-streak slowdown decision.
+H2_warning,True,False,True,False,1,0,0.75,True,True,"[0.500000,0.500000]",0.5,True,True,True,H2_or_persistent_warning_streak,Bounded warning-streak slowdown decision.
+H3_warning,True,False,False,True,1,0,0.5,True,True,"[0.250000,0.250000]",0.25,True,True,True,H3_or_critical_warning_streak,Bounded warning-streak slowdown decision.
+critical_warning_streak,True,True,False,False,3,0,0.5,True,True,"[0.250000,0.250000]",0.25,True,True,True,H3_or_critical_warning_streak,Bounded warning-streak slowdown decision.
+clear_release_step1,False,False,False,False,0,1,0.25,True,True,"[0.250000,0.250000]",0.25,False,True,True,clear_hysteresis_hold,Policy scale is retained or released under hysteresis; closed-loop execution must still gate command shaping on a natural warning.
+clear_release_step2,False,False,False,False,0,2,0.25,True,True,"[0.500000,0.500000]",0.5,False,True,True,clear_streak_release,Policy scale is retained or released under hysteresis; closed-loop execution must still gate command shaping on a natural warning.
+qp_infeasible_handoff,False,False,False,False,0,0,0.25,False,False,"[1.000000,1.000000]",1.0,False,True,True,handoff_to_halt_or_recovery,Slowdown is bypassed; halt or recovery owns this condition.
+collision_handoff,False,False,False,False,0,0,0.25,False,False,"[1.000000,1.000000]",1.0,False,True,True,handoff_to_halt_or_recovery,Slowdown is bypassed; halt or recovery owns this condition.
