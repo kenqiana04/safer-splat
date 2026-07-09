@@ -225,6 +225,27 @@ and does not claim performance improvement.
 No raw traces, per-step dumps, full `trials.csv`, active constraints,
 trajectory samples, JSONL logs, images, or binary files are included.
 
+## SAFC Level-3B-R Warning Evidence Reconciliation
+
+The following artifacts reconcile report-derived warning evidence with
+executable no-op scan contexts. This does not run active slowdown, does not
+modify official source code, and does not claim performance improvement.
+
+- `work/risk_aware_cbf/scripts/safc_level3br_warning_reconciliation.py`
+- `work/risk_aware_cbf/scripts/safc_level3br_bounded_noop_window_scan.py`
+- `work/risk_aware_cbf/REPORT_SAFC_LEVEL3BR_WARNING_RECONCILIATION.md`
+- `work/risk_aware_cbf/results/safc_level3br_warning_reconciliation/README.md`
+- `work/risk_aware_cbf/results/safc_level3br_warning_reconciliation/report_context_inventory.csv`
+- `work/risk_aware_cbf/results/safc_level3br_warning_reconciliation/candidate_context_reconciliation.csv`
+- `work/risk_aware_cbf/results/safc_level3br_warning_reconciliation/bounded_noop_window_scan_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3br_warning_reconciliation/dt_margin_horizon_sensitivity_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3br_warning_reconciliation/mismatch_diagnosis_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3br_warning_reconciliation/metrics.json`
+- `work/risk_aware_cbf/results/safc_level3br_warning_reconciliation/warning_reconciliation_notes.md`
+
+No raw traces, per-step dumps, full `trials.csv`, active constraints,
+trajectory samples, JSONL logs, images, or binary files are included.
+
 ## SAFC Level-3A Warning-Streak Slowdown
 
 The following artifacts validate a minimal active SAFC feedback policy at

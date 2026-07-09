@@ -1,0 +1,8 @@
+candidate_id,scene,trial_id,case_name,steps_observed,natural_warning_steps,first_warning_step,h1_warning_steps,h2_warning_steps,h3_warning_steps,qp_infeasible_steps,collision_steps,recovery_used_steps,u_nom_modified,u_safe_modified,control_modified,warning_found,notes
+C001,flight,13,flight_trial13_reported_h3_recovery,179,47,114,43,45,47,0,0,0,False,False,False,True,Extended-window no-op audit; original u_safe executed unchanged.
+C002,flight,12,flight_trial12_reported_h3_recovery,167,45,102,41,43,45,0,0,0,False,False,False,True,Extended-window no-op audit; original u_safe executed unchanged.
+C003,flight,14,flight_trial14_reported_h3_recovery,70,11,60,9,10,11,0,0,0,False,False,False,True,Extended-window no-op audit; original u_safe executed unchanged.
+C004,flight,85,flight_trial85_h3_table,167,71,71,65,68,71,0,0,0,False,False,False,True,Extended-window no-op audit; original u_safe executed unchanged.
+C005,flight,37,flight_trial37_h3_table,200,0,,0,0,0,0,0,0,False,False,False,False,Extended-window no-op audit; original u_safe executed unchanged.
+C006,flight,31,flight_trial31_h3_table,200,60,120,56,58,60,0,0,0,False,False,False,True,Extended-window no-op audit; original u_safe executed unchanged.
+C007,flight,57,flight_trial57_initial_unsafe_diagnostic,0,0,,0,0,0,0,1,0,False,False,False,False,Extended-window no-op audit; original u_safe executed unchanged.

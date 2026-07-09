@@ -252,3 +252,9 @@ SAFC Level 3B searches for a naturally warning-rich targeted case and, if
 found, tests whether warning-streak slowdown activates under natural warning
 conditions. Its claim scope is targeted activation validation, not
 benchmark-level performance improvement.
+
+## 10. Level-3B-R Warning Reconciliation Status
+
+SAFC Level 3B-R reconciles report-derived warning evidence against executable
+no-op scan contexts. It does not run active slowdown and does not claim
+performance improvement.

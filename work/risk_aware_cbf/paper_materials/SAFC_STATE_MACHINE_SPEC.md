@@ -274,3 +274,9 @@ planning.
 The Warning-Aware state S3 is exercised only if a natural warning-rich
 candidate is found. This remains targeted activation validation and does not
 establish benchmark performance.
+
+## 10. Level-3B-R Warning Context Status
+
+S3 Warning-Aware execution requires naturally observed warning evidence in the
+executable context. Report-derived evidence must be reconciled before active
+policy claims.

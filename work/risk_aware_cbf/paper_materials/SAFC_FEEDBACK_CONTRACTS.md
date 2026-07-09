@@ -152,3 +152,9 @@ smoke, not performance improvement.
 The verification-to-command-shaping contract is tested under a targeted
 natural-warning gate. Activation, if observed, supports warning-gated command
 shaping only in the tested targeted case.
+
+## 13. Level-3B-R Reproduction Reconciliation Status
+
+The verification-to-command-shaping contract requires a naturally warning-rich
+executable context before active testing. Level 3B-R diagnoses whether such a
+context can be reproduced.
