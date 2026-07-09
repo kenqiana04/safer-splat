@@ -223,6 +223,30 @@ does not claim generalized safety performance improvement.
 No raw traces, per-step dumps, full `trials.csv`, active constraints,
 trajectory samples, JSONL logs, images, or binary files are included.
 
+## SAFC Level-3D Small Targeted Cohort A/B
+
+The following artifacts compare no-op execution and warning-streak slowdown
+over a pre-registered small targeted warning-rich cohort. This is not a full
+benchmark, does not modify official source code, and does not claim
+generalized performance improvement.
+
+- `work/risk_aware_cbf/scripts/safc_level3d_small_targeted_cohort.py`
+- `work/risk_aware_cbf/REPORT_SAFC_LEVEL3D_SMALL_TARGETED_COHORT.md`
+- `work/risk_aware_cbf/results/safc_level3d_small_targeted_cohort/README.md`
+- `work/risk_aware_cbf/results/safc_level3d_small_targeted_cohort/cohort_preregistration.csv`
+- `work/risk_aware_cbf/results/safc_level3d_small_targeted_cohort/per_candidate_baseline_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3d_small_targeted_cohort/per_candidate_active_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3d_small_targeted_cohort/per_candidate_ab_comparison.csv`
+- `work/risk_aware_cbf/results/safc_level3d_small_targeted_cohort/cohort_aggregate_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3d_small_targeted_cohort/warning_timing_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3d_small_targeted_cohort/control_scope_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3d_small_targeted_cohort/stop_reason_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3d_small_targeted_cohort/metrics.json`
+- `work/risk_aware_cbf/results/safc_level3d_small_targeted_cohort/cohort_notes.md`
+
+No raw traces, per-step dumps, full `trials.csv`, active constraints,
+trajectory samples, JSONL logs, images, or binary files are included.
+
 ## SAFC Fixed-Candidate Level-3B-Active C003 Slowdown
 
 The following artifacts test warning-gated slowdown activation on the fixed

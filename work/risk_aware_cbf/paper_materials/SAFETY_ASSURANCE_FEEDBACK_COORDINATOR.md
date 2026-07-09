@@ -271,3 +271,9 @@ SAFC Level 3C compares no-op execution and warning-streak slowdown on the fixed
 C003 context only. It validates fixed-case A/B behavior and wrapper-level
 command-scaling scope. It does not establish generalized warning reduction,
 completion improvement, benchmark performance, or real-robot readiness.
+
+## 13. Level-3D Small Targeted Cohort Status
+
+SAFC Level 3D performs a pre-registered small targeted cohort A/B comparison.
+Its claim scope is small-cohort targeted behavior, not benchmark-level or
+generalized performance improvement.

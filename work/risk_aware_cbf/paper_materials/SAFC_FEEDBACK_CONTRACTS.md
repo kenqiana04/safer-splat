@@ -173,3 +173,9 @@ execution for fixed C003 only. The active path scales only the wrapper-level
 executed command under a natural warning gate. The comparison is a targeted
 behavioral observation and not evidence of generalized performance
 improvement or benchmark-level warning reduction.
+
+## 16. Level-3D Small-Cohort Feedback Comparison Status
+
+The verification-to-command-shaping contract is compared against no-op
+execution over a pre-registered small cohort. Observed differences remain
+targeted cohort observations and must not be generalized.

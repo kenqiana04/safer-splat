@@ -294,3 +294,8 @@ C003 context. The active path enters bounded slowdown at the natural warning
 gate and modifies only the wrapper-level executed command. This validates
 fixed-case S3 behavior only and does not establish generalized warning
 reduction or planner improvement.
+
+## 13. Level-3D Small-Cohort S3 Comparison Status
+
+The S3 Warning-Aware slowdown behavior is compared with no-op execution over a
+small warning-rich cohort. This does not establish benchmark performance.

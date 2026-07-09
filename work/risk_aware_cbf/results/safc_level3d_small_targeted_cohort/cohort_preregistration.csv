@@ -1,0 +1,8 @@
+candidate_id,scene,trial_id,source_level,source_first_warning_step,included,exclusion_reason,dt_margin,horizon,max_steps,planned_baseline_runs,planned_active_runs,notes
+C001,flight,13,Level-3B-R default-context warning reproduction,114,True,,0.0005,3,160,1,1,Included default-context warning-rich candidate.
+C002,flight,12,Level-3B-R default-context warning reproduction,102,True,,0.0005,3,160,1,1,Included default-context warning-rich candidate.
+C003,flight,14,Level-3B-R default-context warning reproduction,60,True,,0.0005,3,160,1,1,Included default-context warning-rich candidate; Level 3C fixed A/B already completed.
+C004,flight,85,Level-3B-R default-context warning reproduction,71,True,,0.0005,3,160,1,1,Included default-context warning-rich candidate.
+C005,flight,37,Level-3B-R sensitivity setting only,,False,sensitivity_only_warning,0.0005,3,160,0,0,Excluded because warning appeared only in a sensitivity setting.
+C006,flight,31,Level-3B-R default-context warning reproduction,120,True,,0.0005,3,160,1,1,Included default-context warning-rich candidate.
+C007,flight,57,Level-3B-R diagnostic context,,False,initial_collision_diagnostic_context,0.0005,3,160,0,0,Excluded because it is an initial-collision diagnostic context.
