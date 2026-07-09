@@ -1,0 +1,20 @@
+metric,value,notes
+included_candidates,5,"C003,C004,C002,C001,C006"
+baseline_runs_completed,5,Count of baseline compact runs completed without script exception.
+active_runs_completed,5,Count of active compact runs completed without script exception.
+candidates_with_natural_warning_baseline,5,Baseline candidates with at least one natural H-step warning.
+candidates_with_slowdown_activation,5,"C003,C004,C002,C001,C006"
+candidates_with_active_warning_less_than_baseline,3,"C003,C002,C001"
+candidates_with_active_warning_equal_baseline,1,C006
+candidates_with_active_warning_greater_than_baseline,1,C004
+sum_baseline_warning_steps,189,Small-cohort targeted observation only.
+sum_active_warning_steps,164,Small-cohort targeted observation only.
+delta_sum_warning_steps_active_minus_baseline,-25,Active minus baseline warning-step count.
+mean_delta_warning_steps_active_minus_baseline,-5.0,Mean over pre-registered included candidates; no statistical significance claim.
+baseline_collision_count,0,Observed compact run collision flags.
+active_collision_count,0,Observed compact run collision flags.
+baseline_qp_infeasible_count,0,Observed compact run QP infeasible flags.
+active_qp_infeasible_count,0,Observed compact run QP infeasible flags.
+baseline_completed_count,0,Goal-reached completion only.
+active_completed_count,0,Goal-reached completion only.
+performance_claim_allowed,False,No generalized performance claim is allowed.

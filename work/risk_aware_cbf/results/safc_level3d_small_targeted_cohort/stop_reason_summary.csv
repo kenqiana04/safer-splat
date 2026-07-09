@@ -1,0 +1,5 @@
+mode,stop_reason,count,candidate_ids,notes
+baseline,max_steps,4,"C004,C002,C001,C006",Stop reasons are recorded as observed in compact candidate summaries.
+baseline,stalled_before_goal,1,C003,Stop reasons are recorded as observed in compact candidate summaries.
+active,max_steps,4,"C004,C002,C001,C006",Stop reasons are recorded as observed in compact candidate summaries.
+active,stalled_before_goal,1,C003,Stop reasons are recorded as observed in compact candidate summaries.

@@ -1,0 +1,77 @@
+{
+  "task": "SAFC Level-3D Small Targeted Cohort A/B",
+  "new_small_targeted_cohort_run": true,
+  "cohort_size": 5,
+  "included_candidates": [
+    "C003",
+    "C004",
+    "C002",
+    "C001",
+    "C006"
+  ],
+  "excluded_candidates": {
+    "C005": "sensitivity_only_warning",
+    "C007": "initial_collision_diagnostic_context"
+  },
+  "entrypoint": "reproduction/scripts/run_official_runpy_smoke.py",
+  "max_steps": 160,
+  "dt_margin": 0.0005,
+  "horizon": 3,
+  "controller_modified": false,
+  "official_core_source_modified": false,
+  "cbf_splat_ellipsoids_dynamics_run_modified": false,
+  "raw_traces_written": false,
+  "baseline_runs_completed": 5,
+  "active_runs_completed": 5,
+  "baseline_total_warning_steps": 189,
+  "active_total_warning_steps": 164,
+  "delta_total_warning_steps_active_minus_baseline": -25,
+  "mean_delta_warning_steps_active_minus_baseline": -5.0,
+  "candidates_active_less_warning": [
+    "C003",
+    "C002",
+    "C001"
+  ],
+  "candidates_active_equal_warning": [
+    "C006"
+  ],
+  "candidates_active_more_warning": [
+    "C004"
+  ],
+  "candidates_with_slowdown_activation": [
+    "C003",
+    "C004",
+    "C002",
+    "C001",
+    "C006"
+  ],
+  "baseline_collision_count": 0,
+  "active_collision_count": 0,
+  "baseline_qp_infeasible_count": 0,
+  "active_qp_infeasible_count": 0,
+  "baseline_completed_count": 0,
+  "active_completed_count": 0,
+  "control_scope_all_passed": true,
+  "all_slowdown_after_or_at_warning": true,
+  "performance_improvement_claimed": false,
+  "warning_reduction_claimed": false,
+  "collision_reduction_claimed": false,
+  "planner_improvement_claimed": false,
+  "statistical_significance_claimed": false,
+  "claim_level": "small_targeted_cohort_observation",
+  "limitations": [
+    "small targeted cohort only",
+    "pre-registered warning-rich candidates",
+    "not full100",
+    "not flight20",
+    "not a benchmark comparison",
+    "no statistical significance",
+    "active trajectories may diverge after slowdown",
+    "does not establish generalized performance improvement",
+    "does not modify CBF-QP",
+    "does not modify dynamics",
+    "does not validate planner integration",
+    "does not validate real-robot deployment",
+    "does not prove global safety"
+  ]
+}
