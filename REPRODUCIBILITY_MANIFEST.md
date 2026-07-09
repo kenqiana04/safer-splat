@@ -145,3 +145,18 @@ method and evidence; they are not new experimental results:
 - `work/risk_aware_cbf/paper_materials/PAPER_THEORETICAL_CONTRIBUTION_INSERT.md`
 - `work/risk_aware_cbf/paper_materials/FIGURE_AND_TABLE_CAPTIONS_THEORY.md`
 - `work/risk_aware_cbf/notes/NEXT_STEP_AFTER_THEORETICAL_SYSTEMATIZATION.md`
+
+## Safety-Assurance Feedback Coordinator Materials
+
+The following materials extend the theory and paper-organization layer with a
+feedback-augmented safety assurance architecture. They are not new
+experimental results and do not modify official source code:
+
+- `work/risk_aware_cbf/paper_materials/SAFETY_ASSURANCE_FEEDBACK_COORDINATOR.md`
+- `work/risk_aware_cbf/paper_materials/SAFC_STATE_MACHINE_SPEC.md`
+- `work/risk_aware_cbf/paper_materials/SAFC_FEEDBACK_CONTRACTS.md`
+- `work/risk_aware_cbf/paper_materials/PLANNER_INTERFACE_FOR_SAFETY_FEEDBACK.md`
+- `work/risk_aware_cbf/paper_materials/CLOSED_LOOP_ASSURANCE_PIPELINE.md`
+- `work/risk_aware_cbf/paper_materials/PAPER_INSERT_SAFC_FEEDBACK_FRAMEWORK.md`
+- `work/risk_aware_cbf/paper_materials/FIGURE_AND_TABLE_CAPTIONS_SAFC.md`
+- `work/risk_aware_cbf/notes/NEXT_STEP_AFTER_SAFC_FEEDBACK_COORDINATOR.md`
