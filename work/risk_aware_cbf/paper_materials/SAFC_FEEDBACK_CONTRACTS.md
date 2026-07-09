@@ -165,3 +165,11 @@ The verification-to-command-shaping contract is exercised on the fixed C003
 candidate only because natural warning was reproduced and slowdown was
 triggered after the warning gate. This validates activation timing and command
 scope, not performance improvement.
+
+## 15. Level-3C Fixed-Case Feedback Comparison Status
+
+The verification-to-command-shaping contract is compared against no-op
+execution for fixed C003 only. The active path scales only the wrapper-level
+executed command under a natural warning gate. The comparison is a targeted
+behavioral observation and not evidence of generalized performance
+improvement or benchmark-level warning reduction.

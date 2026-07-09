@@ -264,3 +264,10 @@ performance improvement.
 SAFC fixed-candidate Level 3B-Active tests warning-gated slowdown activation on
 the reproduced C003 warning context. Its claim scope is targeted activation
 smoke, not benchmark-level performance improvement.
+
+## 12. Level-3C Fixed-C003 Targeted A/B Status
+
+SAFC Level 3C compares no-op execution and warning-streak slowdown on the fixed
+C003 context only. It validates fixed-case A/B behavior and wrapper-level
+command-scaling scope. It does not establish generalized warning reduction,
+completion improvement, benchmark performance, or real-robot readiness.

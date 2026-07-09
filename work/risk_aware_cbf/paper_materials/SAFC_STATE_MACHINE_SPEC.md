@@ -286,3 +286,11 @@ policy claims.
 The S3 Warning-Aware state triggered bounded slowdown in the fixed C003 active
 smoke. This remains targeted activation validation and does not establish
 benchmark performance.
+
+## 12. Level-3C Fixed-Case S3 Comparison Status
+
+The S3 Warning-Aware state is compared against no-op execution in the fixed
+C003 context. The active path enters bounded slowdown at the natural warning
+gate and modifies only the wrapper-level executed command. This validates
+fixed-case S3 behavior only and does not establish generalized warning
+reduction or planner improvement.

@@ -202,6 +202,27 @@ performance improvement:
 No raw traces, per-step dumps, full `trials.csv`, active-constraint dumps,
 trajectory samples, JSONL logs, or binary files are included.
 
+## SAFC Level-3C Fixed-C003 Targeted A/B
+
+The following artifacts compare no-op execution and warning-streak slowdown on
+fixed C003 only. This is a targeted A/B observation, not a full benchmark, and
+does not claim generalized safety performance improvement.
+
+- `work/risk_aware_cbf/scripts/safc_level3c_fixed_c003_ab.py`
+- `work/risk_aware_cbf/REPORT_SAFC_LEVEL3C_FIXED_C003_AB.md`
+- `work/risk_aware_cbf/results/safc_level3c_fixed_c003_ab/README.md`
+- `work/risk_aware_cbf/results/safc_level3c_fixed_c003_ab/ab_context.csv`
+- `work/risk_aware_cbf/results/safc_level3c_fixed_c003_ab/baseline_noop_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3c_fixed_c003_ab/active_slowdown_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3c_fixed_c003_ab/ab_comparison_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3c_fixed_c003_ab/warning_timing_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3c_fixed_c003_ab/control_scope_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3c_fixed_c003_ab/metrics.json`
+- `work/risk_aware_cbf/results/safc_level3c_fixed_c003_ab/ab_notes.md`
+
+No raw traces, per-step dumps, full `trials.csv`, active constraints,
+trajectory samples, JSONL logs, images, or binary files are included.
+
 ## SAFC Fixed-Candidate Level-3B-Active C003 Slowdown
 
 The following artifacts test warning-gated slowdown activation on the fixed

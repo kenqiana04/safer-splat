@@ -1,0 +1,2 @@
+candidate_id,baseline_first_warning_step,active_first_warning_step,first_slowdown_step,slowdown_after_or_at_warning,baseline_warning_steps,active_warning_steps,slowdown_active_steps,release_observed,notes
+C003,60,60,60,True,11,10,10,False,Timing is evaluated against the natural warning observed in the active run.

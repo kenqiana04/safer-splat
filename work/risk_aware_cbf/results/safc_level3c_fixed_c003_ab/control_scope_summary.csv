@@ -1,0 +1,2 @@
+candidate_id,baseline_u_nom_modified,baseline_u_safe_internal_modified,baseline_control_modified,active_u_nom_modified,active_u_safe_internal_modified,active_wrapper_exec_command_scaled,active_command_modified_only_when_warning,max_abs_delta_u_nom,max_abs_delta_u_safe_internal,max_abs_delta_wrapper_exec_due_to_slowdown,control_scope_passed,notes
+C003,False,False,False,False,False,True,True,0.0,0.0,0.018518980592489243,True,Baseline command must remain unchanged; active may alter only wrapper-level u_exec under a natural warning.
