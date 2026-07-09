@@ -1,0 +1,4 @@
+from_state,to_state,count,first_step,last_step,reason_codes,claim_scopes,notes
+S0_PreExecutionCertification,S1_NominalFiltering,1,1,1,start_certified,noop_instrumentation_only,Compact aggregate; no per-step timeline is committed.
+S1_NominalFiltering,S2_VerifiedExecution,1,2,2,qp_success_no_warning,noop_instrumentation_only,Compact aggregate; no per-step timeline is committed.
+S2_VerifiedExecution,S2_VerifiedExecution,18,3,20,qp_success_no_warning,noop_instrumentation_only,Compact aggregate; no per-step timeline is committed.

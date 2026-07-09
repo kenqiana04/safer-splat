@@ -135,3 +135,8 @@ Feedback contracts are reconstructed from existing events as candidate or
 supported actions depending on evidence scope. Interface-level actions remain
 interface-level. Reconstruction counts do not establish performance gains or
 new controller behavior.
+
+## 10. Level-2 No-Op Feedback Candidate Logging
+
+Feedback contracts are logged as candidates in Level 2. Interface-level
+candidates remain non-executed and do not modify control.

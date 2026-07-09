@@ -231,3 +231,10 @@ SAFC has a Level-1 offline reconstruction validation in
 `REPORT_SAFC_LEVEL1_OFFLINE_RECONSTRUCTION.md`. This validation maps existing
 report-level safety events into SAFC states and feedback actions. It does not
 run new experiments or claim performance improvement.
+
+## 7. Level-2 No-Op Instrumentation Status
+
+SAFC has a Level-2 no-op instrumentation validation in
+`REPORT_SAFC_LEVEL2_NOOP_INSTRUMENTATION.md`. This validates passive insertion
+and logging in a tiny closed-loop smoke path without modifying control. It does
+not validate active feedback or performance improvement.

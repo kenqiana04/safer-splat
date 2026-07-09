@@ -256,3 +256,9 @@ if state == SAFE_HALT:
 The Level-1 reconstruction maps aggregate evidence into the state machine.
 This validates operational mappability, not closed-loop performance. Supported,
 interface-level, and diagnostic transitions remain separated by claim scope.
+
+## 7. Level-2 Online Instrumentation Status
+
+The state machine has been instrumented in no-op mode in a tiny closed-loop
+smoke path. The online instrumentation logs state decisions and feedback
+candidates but does not execute feedback actions.

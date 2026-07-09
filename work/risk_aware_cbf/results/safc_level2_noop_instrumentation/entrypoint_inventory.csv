@@ -1,0 +1,6 @@
+entrypoint_id,path,entrypoint_type,exists,selected,reason,expected_scope,modifies_control,notes
+EP001,reproduction/scripts/run_official_runpy_smoke.py,existing_smoke_wrapper,True,True,Existing one-trial official smoke wrapper with bounded n_steps.,one official trajectory with configurable short step limit,False,Preferred; imported as a module so its raw-output main is not invoked.
+EP002,run.py,official_run_entrypoint,True,False,Official entrypoint has no short-run CLI and defaults to a 100-trajectory run.,full official run,False,Not selected and never edited.
+EP003,work/risk_aware_cbf/scripts/run_v4c_hstep_predictive_recovery.py,report_referenced_command,True,False,Referenced by tracked V4-C report.,V4-C recovery evaluation,True,Present on the execution host but unsuitable for no-op Level 2; not selected.
+EP004,work/risk_aware_cbf/scripts/safc_level1_offline_reconstruction.py,unsuitable,False,False,Tracked Level-1 analysis is offline and has no closed-loop execution.,report-level offline reconstruction,False,Not a Level-2 execution entrypoint.
+EP005,reproduction/REPORT_OFFICIAL_RUN_SMOKE.md,report_referenced_command,True,False,Documents the established one-trial smoke wrapper and environment.,textual smoke evidence,False,"Evidence source, not executable."

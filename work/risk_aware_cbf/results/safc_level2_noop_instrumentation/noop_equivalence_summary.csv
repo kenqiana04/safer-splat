@@ -1,0 +1,2 @@
+trial_id,steps_observed,equivalence_check_strength,max_abs_delta_u_nom,max_abs_delta_u_safe,max_abs_delta_u_exec,all_decisions_no_op,any_modifies_control,passed,notes
+stonehenge_trial0,20,strong_action_delta_check,0.0,0.0,0.0,True,False,True,Before/after commands read from unchanged original variables around each passive decision.

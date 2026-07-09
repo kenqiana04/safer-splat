@@ -179,3 +179,25 @@ new closed-loop experiments and do not modify official source code:
 
 No raw traces, per-step dumps, full `trials.csv`, active-constraint dumps,
 trajectory samples, or JSONL logs are included.
+
+## SAFC Level-2 No-Op Instrumentation
+
+The following artifacts validate SAFC at Level 2 by inserting passive no-op
+instrumentation into a tiny closed-loop smoke path. This does not activate
+feedback policies, does not modify official source code, and does not claim
+performance improvement:
+
+- `work/risk_aware_cbf/scripts/safc_noop_state_machine.py`
+- `work/risk_aware_cbf/scripts/safc_level2_noop_instrumentation.py`
+- `work/risk_aware_cbf/REPORT_SAFC_LEVEL2_NOOP_INSTRUMENTATION.md`
+- `work/risk_aware_cbf/results/safc_level2_noop_instrumentation/README.md`
+- `work/risk_aware_cbf/results/safc_level2_noop_instrumentation/entrypoint_inventory.csv`
+- `work/risk_aware_cbf/results/safc_level2_noop_instrumentation/noop_equivalence_summary.csv`
+- `work/risk_aware_cbf/results/safc_level2_noop_instrumentation/state_transition_summary.csv`
+- `work/risk_aware_cbf/results/safc_level2_noop_instrumentation/feedback_candidate_summary.csv`
+- `work/risk_aware_cbf/results/safc_level2_noop_instrumentation/instrumentation_events_summary.csv`
+- `work/risk_aware_cbf/results/safc_level2_noop_instrumentation/metrics.json`
+- `work/risk_aware_cbf/results/safc_level2_noop_instrumentation/instrumentation_notes.md`
+
+No raw traces, per-step dumps, full `trials.csv`, active-constraint dumps,
+trajectory samples, JSONL logs, or binary files are included.
