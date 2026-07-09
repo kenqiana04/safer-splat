@@ -280,3 +280,9 @@ establish benchmark performance.
 S3 Warning-Aware execution requires naturally observed warning evidence in the
 executable context. Report-derived evidence must be reconciled before active
 policy claims.
+
+## 11. Fixed-Candidate S3 Activation Status
+
+The S3 Warning-Aware state triggered bounded slowdown in the fixed C003 active
+smoke. This remains targeted activation validation and does not establish
+benchmark performance.

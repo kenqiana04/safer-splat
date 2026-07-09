@@ -1,0 +1,2 @@
+candidate_id,first_natural_warning_step_noop,first_natural_warning_step_active,first_slowdown_step,slowdown_after_or_at_warning,slowdown_active_steps,release_observed,notes
+C003,60,60,60,True,10,False,Slowdown timing is evaluated against the natural warning in the active run.

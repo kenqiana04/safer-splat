@@ -158,3 +158,10 @@ shaping only in the tested targeted case.
 The verification-to-command-shaping contract requires a naturally warning-rich
 executable context before active testing. Level 3B-R diagnoses whether such a
 context can be reproduced.
+
+## 14. Fixed-Candidate Warning-Gated Slowdown Contract Status
+
+The verification-to-command-shaping contract is exercised on the fixed C003
+candidate only because natural warning was reproduced and slowdown was
+triggered after the warning gate. This validates activation timing and command
+scope, not performance improvement.

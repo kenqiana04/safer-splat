@@ -258,3 +258,9 @@ benchmark-level performance improvement.
 SAFC Level 3B-R reconciles report-derived warning evidence against executable
 no-op scan contexts. It does not run active slowdown and does not claim
 performance improvement.
+
+## 11. Fixed-Candidate Level-3B-Active Status
+
+SAFC fixed-candidate Level 3B-Active tests warning-gated slowdown activation on
+the reproduced C003 warning context. Its claim scope is targeted activation
+smoke, not benchmark-level performance improvement.

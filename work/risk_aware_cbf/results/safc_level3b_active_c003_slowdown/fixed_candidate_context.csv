@@ -1,0 +1,2 @@
+candidate_id,scene,trial_id,source_level,source_report,source_first_warning_step,selected_entrypoint,dt_margin,horizon,max_steps,policy,notes
+C003,flight,14,Level-3B-R,work/risk_aware_cbf/REPORT_SAFC_LEVEL3BR_WARNING_RECONCILIATION.md,60,reproduction/scripts/run_official_runpy_smoke.py,0.0005,3,100,warning_streak_slowdown,Fixed candidate selected because Level-3B-R reproduced a natural H3 warning at step 60.

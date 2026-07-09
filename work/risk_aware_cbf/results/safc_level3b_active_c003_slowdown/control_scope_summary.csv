@@ -1,0 +1,2 @@
+candidate_id,max_abs_delta_u_nom,max_abs_delta_u_safe_internal,max_abs_delta_wrapper_exec_due_to_slowdown,u_nom_modified,u_safe_internal_modified,wrapper_exec_command_scaled,command_modified_only_when_warning,control_scope_passed,notes
+C003,0.0,0.0,0.018518980592489243,False,False,True,True,True,"Only wrapper-level u_exec may differ, and only under a natural warning gate."

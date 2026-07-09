@@ -1,0 +1,2 @@
+candidate_id,scene,trial_id,steps_observed,natural_warning_steps,first_natural_warning_step,h1_warning_steps,h2_warning_steps,h3_warning_steps,qp_infeasible_steps,collision_steps,u_nom_modified,u_safe_internal_modified,control_modified,confirmed_natural_warning,active_smoke_allowed,notes
+C003,flight,14,70,11,60,9,10,11,0,0,False,False,False,True,True,"Natural H1/H2/H3 repeated-control verification; original u_safe executed unchanged. No slowdown, recovery, or planner."
