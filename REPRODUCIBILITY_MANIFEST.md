@@ -132,3 +132,16 @@ This branch intentionally avoids adding raw trace formats. Common raw result nam
 - `work/risk_aware_cbf/results/**/active_constraints.csv`
 - `work/risk_aware_cbf/results/**/trajectory_samples.csv`
 
+## Theoretical Systematization Materials
+
+The following theory and paper-organization artifacts structure the existing
+method and evidence; they are not new experimental results:
+
+- `work/risk_aware_cbf/paper_materials/THEORETICAL_SYSTEMATIZATION_OVERVIEW.md`
+- `work/risk_aware_cbf/paper_materials/FAILURE_MODE_TAXONOMY.md`
+- `work/risk_aware_cbf/paper_materials/ASSURANCE_CONTRACTS.md`
+- `work/risk_aware_cbf/paper_materials/CLAIM_BOUNDARY_TABLE.md`
+- `work/risk_aware_cbf/paper_materials/REAL_ROBOT_INTERFACE_CONTRACT.md`
+- `work/risk_aware_cbf/paper_materials/PAPER_THEORETICAL_CONTRIBUTION_INSERT.md`
+- `work/risk_aware_cbf/paper_materials/FIGURE_AND_TABLE_CAPTIONS_THEORY.md`
+- `work/risk_aware_cbf/notes/NEXT_STEP_AFTER_THEORETICAL_SYSTEMATIZATION.md`
