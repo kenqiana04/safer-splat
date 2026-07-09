@@ -1,0 +1,2 @@
+candidate_id,scene,trial_id,source_level,source_report,entrypoint,dt_margin,horizon,max_steps,baseline_mode,active_mode,policy,notes
+C003,flight,14,Level-3B-Active / Level-3B-R,work/risk_aware_cbf/REPORT_SAFC_LEVEL3B_ACTIVE_C003_SLOWDOWN.md; work/risk_aware_cbf/REPORT_SAFC_LEVEL3BR_WARNING_RECONCILIATION.md,reproduction/scripts/run_official_runpy_smoke.py,0.0005,3,100,noop,warning_streak_slowdown,warning=0.75; persistent=0.5; critical=0.25; min=0.25,Single fixed-C003 targeted A/B context; no benchmark or generalized performance claim.
