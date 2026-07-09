@@ -224,3 +224,10 @@ before physical use.
   separate observable outcomes.
 - Interface-level and future feedback actions must not be described as
   implemented results.
+
+## 6. Level-1 Offline Reconstruction Status
+
+SAFC has a Level-1 offline reconstruction validation in
+`REPORT_SAFC_LEVEL1_OFFLINE_RECONSTRUCTION.md`. This validation maps existing
+report-level safety events into SAFC states and feedback actions. It does not
+run new experiments or claim performance improvement.

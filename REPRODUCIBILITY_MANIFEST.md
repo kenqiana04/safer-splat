@@ -160,3 +160,22 @@ experimental results and do not modify official source code:
 - `work/risk_aware_cbf/paper_materials/PAPER_INSERT_SAFC_FEEDBACK_FRAMEWORK.md`
 - `work/risk_aware_cbf/paper_materials/FIGURE_AND_TABLE_CAPTIONS_SAFC.md`
 - `work/risk_aware_cbf/notes/NEXT_STEP_AFTER_SAFC_FEEDBACK_COORDINATOR.md`
+
+## SAFC Level-1 Offline Reconstruction
+
+The following artifacts validate SAFC at Level 1 by reconstructing
+state-machine events from existing reports and compact summaries. They are not
+new closed-loop experiments and do not modify official source code:
+
+- `work/risk_aware_cbf/scripts/safc_level1_offline_reconstruction.py`
+- `work/risk_aware_cbf/REPORT_SAFC_LEVEL1_OFFLINE_RECONSTRUCTION.md`
+- `work/risk_aware_cbf/results/safc_level1_offline_reconstruction/README.md`
+- `work/risk_aware_cbf/results/safc_level1_offline_reconstruction/source_inventory.csv`
+- `work/risk_aware_cbf/results/safc_level1_offline_reconstruction/event_inventory.csv`
+- `work/risk_aware_cbf/results/safc_level1_offline_reconstruction/state_transition_summary.csv`
+- `work/risk_aware_cbf/results/safc_level1_offline_reconstruction/feedback_action_summary.csv`
+- `work/risk_aware_cbf/results/safc_level1_offline_reconstruction/metrics.json`
+- `work/risk_aware_cbf/results/safc_level1_offline_reconstruction/reconstruction_notes.md`
+
+No raw traces, per-step dumps, full `trials.csv`, active-constraint dumps,
+trajectory samples, or JSONL logs are included.

@@ -1,0 +1,12 @@
+source_id,source_path,source_type,exists,tracked_assumed,used,missing_reason,evidence_scope,notes
+SRC001,work/risk_aware_cbf/REPORT_SYNTHETIC_INITIAL_UNSAFE_STRESS_TEST.md,report_markdown,True,True,True,,start_safe,Synthetic initial-unsafe repair and post-repair aggregate evidence.
+SRC002,work/risk_aware_cbf/REPORT_STARTGUARD_FLIGHT100.md,report_markdown,True,True,True,,start_safe,"Flight100 start certification, repair, and navigation aggregate evidence."
+SRC003,work/risk_aware_cbf/REPORT_STARTGUARD_TRIAL57.md,report_markdown,True,True,True,,start_safe,Trial57 start repair and post-repair navigation evidence.
+SRC004,work/risk_aware_cbf/REPORT_DISCRETE_TIME_VERIFICATION_CONSOLIDATION.md,report_markdown,True,True,True,,dt_verification,H1/H2/H3 verification-only and recovery comparison evidence.
+SRC005,work/risk_aware_cbf/REPORT_V4A_ACTIVE_PROJECTION_DT_AUDIT.md,report_markdown,True,True,True,,dt_verification,"Verified projection, navigation, and one-step DT audit evidence."
+SRC006,work/risk_aware_cbf/REPORT_V4C_HSTEP_PREDICTIVE_RECOVERY.md,report_markdown,True,True,True,,recovery,Named V4-C H-step recovery aggregate evidence.
+SRC007,work/risk_aware_cbf/REPORT_V4C_FLIGHT100_VALIDATION.md,report_markdown,True,True,True,,recovery,Named V4-C H3_N128 flight100 aggregate evidence.
+SRC008,work/risk_aware_cbf/REPORT_V4C_TUNED_FULL100_VALIDATION.md,report_markdown,True,True,True,,recovery,Named V4-C R4_H2_N64 tuned full100 aggregate evidence.
+SRC009,work/risk_aware_cbf/REPORT_FC_AWARE_V1_FLIGHT20_STOP_REASON_RECONCILIATION.md,report_markdown,True,True,True,,diagnostic_negative,Recovery-disabled FC-Aware stop/collision reconciliation evidence.
+SRC010,work/risk_aware_cbf/REPORT_MPC_STYLE_RECOVERY_TARGETED_PILOT.md,report_markdown,True,True,True,,diagnostic_negative,Primitive MPC-style offline diagnostic evidence.
+SRC011,work/risk_aware_cbf/REPORT_SAFER_BASELINE_NAVIGATION_STACK_AUDIT.md,report_markdown,True,True,True,,navigation_stack_audit,"Textual source audit of baseline, DT, and recovery interfaces."

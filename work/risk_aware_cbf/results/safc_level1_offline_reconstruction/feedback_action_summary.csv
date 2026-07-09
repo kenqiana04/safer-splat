@@ -1,0 +1,8 @@
+feedback_action,count,source_count,dominant_event_types,claim_scopes,implemented_supported_count,interface_level_count,diagnostic_only_count,notes
+activate_recovery,15,4,"dt_warning_any,recovery_success,recovery_used",implemented_supported;offline_reconstruction_only,10,0,0,"Counts are reconstructed event rows, not performance gains."
+admit_task,9,4,"start_repaired,start_certified",implemented_supported;offline_reconstruction_only,8,0,0,"Counts are reconstructed event rows, not performance gains."
+command_slowdown_candidate,10,5,"dt_warning_any,dt_warning_H1,dt_warning_H2",diagnostic_only;offline_reconstruction_only,0,0,4,"Counts are reconstructed event rows, not performance gains."
+diagnostic_only,6,3,"recovery_success,recovery_used,diagnostic_negative",diagnostic_only,0,0,6,"Counts are reconstructed event rows, not performance gains."
+no_feedback,36,9,"qp_success,collision_free",diagnostic_only;implemented_supported;offline_reconstruction_only,8,0,2,"Counts are reconstructed event rows, not performance gains."
+replan_request_candidate,6,4,"replan_candidate,diagnostic_negative,recovery_disabled",diagnostic_only;interface_level,0,4,2,"Counts are reconstructed event rows, not performance gains."
+safe_halt_candidate,6,3,collision,diagnostic_only,0,0,6,"Counts are reconstructed event rows, not performance gains."

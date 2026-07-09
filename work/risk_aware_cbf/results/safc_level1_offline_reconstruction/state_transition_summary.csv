@@ -1,0 +1,15 @@
+from_state,to_state,event_type,count,sources,feedback_actions,claim_scopes,confidence_min,notes
+S0_PreExecutionCertification,S1_NominalFiltering,start_certified,1,SRC001,admit_task,offline_reconstruction_only,medium,Grouped report-level aggregate event mappings.
+S0_PreExecutionCertification,S1_NominalFiltering,start_repaired,8,SRC001;SRC002;SRC003;SRC005,admit_task,implemented_supported,high,Grouped report-level aggregate event mappings.
+S1_NominalFiltering,S2_VerifiedExecution,qp_success,21,SRC001;SRC002;SRC003;SRC004;SRC005;SRC006;SRC007;SRC008;SRC009,no_feedback,diagnostic_only;implemented_supported;offline_reconstruction_only,high,Grouped report-level aggregate event mappings.
+S2_VerifiedExecution,S2_VerifiedExecution,collision_free,15,SRC001;SRC002;SRC003;SRC004;SRC005;SRC006;SRC007;SRC008,no_feedback,implemented_supported;offline_reconstruction_only,high,Grouped report-level aggregate event mappings.
+S2_VerifiedExecution,S3_WarningAwareExecution,dt_warning_H1,1,SRC004,command_slowdown_candidate,offline_reconstruction_only,high,Grouped report-level aggregate event mappings.
+S2_VerifiedExecution,S3_WarningAwareExecution,dt_warning_H2,1,SRC004,command_slowdown_candidate,offline_reconstruction_only,high,Grouped report-level aggregate event mappings.
+S2_VerifiedExecution,S3_WarningAwareExecution,dt_warning_H3,1,SRC004,command_slowdown_candidate,offline_reconstruction_only,high,Grouped report-level aggregate event mappings.
+S2_VerifiedExecution,S3_WarningAwareExecution,dt_warning_any,12,SRC001;SRC005;SRC006;SRC007;SRC008;SRC009;SRC010,activate_recovery;command_slowdown_candidate,diagnostic_only;offline_reconstruction_only,high,Grouped report-level aggregate event mappings.
+S2_VerifiedExecution,S6_SafeHaltAbort,collision,6,SRC002;SRC003;SRC009,safe_halt_candidate,diagnostic_only,high,Grouped report-level aggregate event mappings.
+S3_WarningAwareExecution,S4_RecoveryMode,recovery_used,7,SRC001;SRC006;SRC007;SRC008;SRC010,activate_recovery;diagnostic_only,diagnostic_only;implemented_supported,high,Grouped report-level aggregate event mappings.
+S3_WarningAwareExecution,S5_ReplanRequested,recovery_disabled,1,SRC009,replan_request_candidate,interface_level,medium,Grouped report-level aggregate event mappings.
+S3_WarningAwareExecution,S5_ReplanRequested,replan_candidate,3,SRC004;SRC005,replan_request_candidate,interface_level,medium,Grouped report-level aggregate event mappings.
+S4_RecoveryMode,S2_VerifiedExecution,recovery_success,7,SRC001;SRC006;SRC007;SRC008;SRC010,activate_recovery;diagnostic_only,diagnostic_only;implemented_supported,medium,Grouped report-level aggregate event mappings.
+S4_RecoveryMode,S5_ReplanRequested,diagnostic_negative,2,SRC010,replan_request_candidate,diagnostic_only,high,Grouped report-level aggregate event mappings.

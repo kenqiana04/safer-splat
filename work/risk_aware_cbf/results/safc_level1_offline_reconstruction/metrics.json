@@ -1,0 +1,32 @@
+{
+  "task": "SAFC Level-1 Offline Event Reconstruction",
+  "new_experiments_run": false,
+  "controller_modified": false,
+  "official_core_source_modified": false,
+  "raw_traces_used": false,
+  "sources_scanned": 11,
+  "sources_used": 11,
+  "sources_missing": 0,
+  "events_reconstructed": 88,
+  "state_transitions_reconstructed": 86,
+  "state_transition_groups": 14,
+  "feedback_actions_reconstructed": 88,
+  "feedback_action_groups": 7,
+  "implemented_supported_events": 26,
+  "interface_level_events": 4,
+  "diagnostic_only_events": 20,
+  "future_work_events": 0,
+  "collision_events_reconstructed": 6,
+  "dt_warning_events_reconstructed": 15,
+  "recovery_events_reconstructed": 14,
+  "safe_halt_candidates": 6,
+  "replan_request_candidates": 6,
+  "limitations": [
+    "offline reconstruction only",
+    "aggregate report-level evidence, not per-step replay unless compact summaries are available",
+    "does not modify controller",
+    "does not claim performance improvement",
+    "does not validate planner integration",
+    "does not validate real-robot deployment"
+  ]
+}

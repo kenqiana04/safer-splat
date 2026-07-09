@@ -250,3 +250,9 @@ if state == SAFE_HALT:
     issue_validated_stop_or_abort()
     block_aggressive_commands()
 ```
+
+## 6. Level-1 Operational Mapping
+
+The Level-1 reconstruction maps aggregate evidence into the state machine.
+This validates operational mappability, not closed-loop performance. Supported,
+interface-level, and diagnostic transitions remain separated by claim scope.

@@ -128,3 +128,10 @@ Status labels have the following meanings:
 | FBC-4 Safety-to-Risk-Cost | Low `h`, warnings, recovery frequency, deviation, infeasibility | Persistent safety/intervention evidence | Risk-cost update | Future planner integration | No risk-cost optimality |
 | FBC-5 Start/Goal-to-Waypoint-Screening | Candidate state, `h`, frame and optional rollout status | Unsafe/invalid candidate | Reject and request alternative | Future extension | Does not solve global planning |
 | FBC-6 Deployment-to-Halt | Deployment validity, solver/recovery failure | Invalid required interface or unrecoverable failure | Safe halt / abort | Deployment contract / interface-level | Fail-safe policy, not global proof |
+
+## 9. Level-1 Contract Reconstruction
+
+Feedback contracts are reconstructed from existing events as candidate or
+supported actions depending on evidence scope. Interface-level actions remain
+interface-level. Reconstruction counts do not establish performance gains or
+new controller behavior.
