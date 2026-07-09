@@ -202,6 +202,29 @@ performance improvement:
 No raw traces, per-step dumps, full `trials.csv`, active-constraint dumps,
 trajectory samples, JSONL logs, or binary files are included.
 
+## SAFC Level-3B Warning-Rich Targeted Active Slowdown
+
+The following artifacts search for a naturally warning-rich targeted case and
+test bounded warning-streak slowdown only if natural warning conditions are
+observed. This is not a full benchmark, does not modify official source code,
+and does not claim performance improvement.
+
+- `work/risk_aware_cbf/scripts/safc_level3b_warning_rich_discovery.py`
+- `work/risk_aware_cbf/scripts/safc_level3b_warning_rich_targeted.py`
+- `work/risk_aware_cbf/REPORT_SAFC_LEVEL3B_WARNING_RICH_TARGETED.md`
+- `work/risk_aware_cbf/results/safc_level3b_warning_rich_targeted/README.md`
+- `work/risk_aware_cbf/results/safc_level3b_warning_rich_targeted/candidate_source_inventory.csv`
+- `work/risk_aware_cbf/results/safc_level3b_warning_rich_targeted/warning_rich_candidate_inventory.csv`
+- `work/risk_aware_cbf/results/safc_level3b_warning_rich_targeted/targeted_noop_scan_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3b_warning_rich_targeted/targeted_active_slowdown_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3b_warning_rich_targeted/activation_gate_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3b_warning_rich_targeted/control_delta_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3b_warning_rich_targeted/metrics.json`
+- `work/risk_aware_cbf/results/safc_level3b_warning_rich_targeted/warning_rich_notes.md`
+
+No raw traces, per-step dumps, full `trials.csv`, active constraints,
+trajectory samples, JSONL logs, images, or binary files are included.
+
 ## SAFC Level-3A Warning-Streak Slowdown
 
 The following artifacts validate a minimal active SAFC feedback policy at

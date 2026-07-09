@@ -268,3 +268,9 @@ candidates but does not execute feedback actions.
 The Warning-Aware state S3 may emit a bounded slowdown action in Level 3A.
 This remains a minimal policy and does not implement replanning or risk-cost
 planning.
+
+## 9. Level-3B Targeted Warning Activation Status
+
+The Warning-Aware state S3 is exercised only if a natural warning-rich
+candidate is found. This remains targeted activation validation and does not
+establish benchmark performance.

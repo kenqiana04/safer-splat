@@ -245,3 +245,10 @@ SAFC has a Level-3A minimal active feedback smoke in
 `REPORT_SAFC_LEVEL3A_WARNING_SLOWDOWN.md`. This tests bounded warning-streak
 slowdown logic and tiny-smoke integration. It does not claim benchmark-level
 safety improvement.
+
+## 9. Level-3B Warning-Rich Targeted Status
+
+SAFC Level 3B searches for a naturally warning-rich targeted case and, if
+found, tests whether warning-streak slowdown activates under natural warning
+conditions. Its claim scope is targeted activation validation, not
+benchmark-level performance improvement.

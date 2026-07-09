@@ -1,0 +1,4 @@
+candidate_id,gate,condition,passed,observed_value,required_value,notes
+C001,natural_warning_gate,Stage-A natural_warning_steps >= required minimum,False,0,1,Stage A executes original u_safe without command shaping.
+C002,natural_warning_gate,Stage-A natural_warning_steps >= required minimum,False,0,1,Stage A executes original u_safe without command shaping.
+C003,natural_warning_gate,Stage-A natural_warning_steps >= required minimum,False,0,1,Stage A executes original u_safe without command shaping.

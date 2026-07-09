@@ -146,3 +146,9 @@ candidates remain non-executed and do not modify control.
 The verification-to-command-shaping contract is instantiated as
 warning-streak slowdown in Level 3A. Its claim scope is minimal active policy
 smoke, not performance improvement.
+
+## 12. Level-3B Targeted Activation Contract Status
+
+The verification-to-command-shaping contract is tested under a targeted
+natural-warning gate. Activation, if observed, supports warning-gated command
+shaping only in the tested targeted case.
