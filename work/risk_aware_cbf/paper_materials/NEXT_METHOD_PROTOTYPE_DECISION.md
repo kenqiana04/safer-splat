@@ -4,6 +4,18 @@
 
 Selected prototype: **R1 Verification-Aware Supervisory Mode Selection**.
 
+## Current Interface Gate
+
+The initial R1 Stage 0 audit stopped before shadow execution. The current
+worktree does not contain the importable official smoke wrapper used by prior
+SAFC/VANS runners or the callable V4-C recovery generator/evaluator required
+to form M2 on isolated cloned state. The dynamics also do not ground zero
+acceleration as a safe halt because velocity remains in the state derivative.
+
+R1 is therefore interface-blocked, not mechanism-failed. No selector,
+shadow-runner, context evaluation, or active smoke should be added until the
+exact wrapper-level interfaces are restored and re-audited.
+
 Selected hypothesis: H7, verification-aware supervisory mode selection can
 select among existing bounded modes more effectively than a single slowdown
 action.
