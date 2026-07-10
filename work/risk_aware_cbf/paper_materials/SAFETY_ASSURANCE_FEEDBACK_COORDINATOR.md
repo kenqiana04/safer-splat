@@ -277,3 +277,9 @@ completion improvement, benchmark performance, or real-robot readiness.
 SAFC Level 3D performs a pre-registered small targeted cohort A/B comparison.
 Its claim scope is small-cohort targeted behavior, not benchmark-level or
 generalized performance improvement.
+
+## 14. Level-3E Robustness Diagnosis Status
+
+SAFC Level 3E performs a bounded robustness and failure-diagnosis audit over
+the Level-3D small targeted cohort. Its claim scope is diagnostic robustness,
+not benchmark-level or generalized performance improvement.

@@ -1,0 +1,4 @@
+variant_id,variant_name,runs_completed,total_warning_steps,mean_warning_steps,candidates_less_than_level3d_baseline,candidates_equal_to_level3d_baseline,candidates_more_than_level3d_baseline,collision_count,qp_infeasible_count,completed_count,stalled_count,max_steps_count,mean_progress_proxy,control_scope_all_passed,all_slowdown_after_or_at_warning,performance_claim_allowed,notes
+A,current_policy,5,164,32.8,"C003,C002,C001",C006,C004,0,0,0,1,4,0.1599952220916748,True,True,False,"Variant aggregate is diagnostic only, not generalized evidence."
+B,milder_slowdown,5,182,36.4,"C002,C001","C003,C004,C006",,0,0,0,1,4,0.16067234873771669,True,True,False,"Variant aggregate is diagnostic only, not generalized evidence."
+C,critical_only_slowdown,5,182,36.4,"C002,C001","C003,C004,C006",,0,0,0,1,4,0.16067234873771669,True,True,False,"Variant aggregate is diagnostic only, not generalized evidence."

@@ -299,3 +299,8 @@ reduction or planner improvement.
 
 The S3 Warning-Aware slowdown behavior is compared with no-op execution over a
 small warning-rich cohort. This does not establish benchmark performance.
+
+## 14. Level-3E Diagnostic S3 Behavior Status
+
+The S3 Warning-Aware slowdown behavior is audited under bounded policy variants
+to diagnose mixed outcomes. This does not establish benchmark performance.

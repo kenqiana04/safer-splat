@@ -1,0 +1,6 @@
+candidate_id,scene,trial_id,level3d_outcome_class,level3d_baseline_warning,level3d_active_warning,level3d_delta,level3d_baseline_stop_reason,level3d_active_stop_reason,included,diagnosis_question,notes
+C003,flight,14,positive,11,10,-1,stalled_before_goal,stalled_before_goal,True,Check whether positive Level-3D behavior is robust to milder variants.,Pre-registered Level-3E diagnostic candidate.
+C004,flight,85,negative,64,68,4,max_steps,max_steps,True,Diagnose why active warning steps increased under current policy.,Pre-registered Level-3E diagnostic candidate.
+C002,flight,12,positive,38,24,-14,max_steps,max_steps,True,Check whether positive Level-3D behavior is robust to milder variants.,Pre-registered Level-3E diagnostic candidate.
+C001,flight,13,positive,35,21,-14,max_steps,max_steps,True,Check whether positive Level-3D behavior is robust to milder variants.,Pre-registered Level-3E diagnostic candidate.
+C006,flight,31,neutral,41,41,0,max_steps,max_steps,True,Diagnose whether any pre-registered variant changes warning count.,Pre-registered Level-3E diagnostic candidate.

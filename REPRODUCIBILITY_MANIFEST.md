@@ -223,6 +223,30 @@ does not claim generalized safety performance improvement.
 No raw traces, per-step dumps, full `trials.csv`, active constraints,
 trajectory samples, JSONL logs, images, or binary files are included.
 
+## SAFC Level-3E Robustness and Failure-Diagnosis Audit
+
+The following artifacts diagnose mixed outcomes from Level 3D using
+pre-registered slowdown variants over the small targeted cohort. This is not a
+full benchmark, does not modify official source code, and does not claim
+generalized performance improvement.
+
+- `work/risk_aware_cbf/scripts/safc_level3e_robustness_diagnosis.py`
+- `work/risk_aware_cbf/REPORT_SAFC_LEVEL3E_ROBUSTNESS_DIAGNOSIS.md`
+- `work/risk_aware_cbf/results/safc_level3e_robustness_diagnosis/README.md`
+- `work/risk_aware_cbf/results/safc_level3e_robustness_diagnosis/diagnosis_preregistration.csv`
+- `work/risk_aware_cbf/results/safc_level3e_robustness_diagnosis/variant_config.csv`
+- `work/risk_aware_cbf/results/safc_level3e_robustness_diagnosis/per_candidate_variant_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3e_robustness_diagnosis/variant_aggregate_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3e_robustness_diagnosis/mixed_outcome_diagnosis.csv`
+- `work/risk_aware_cbf/results/safc_level3e_robustness_diagnosis/stop_reason_diagnosis.csv`
+- `work/risk_aware_cbf/results/safc_level3e_robustness_diagnosis/control_scope_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3e_robustness_diagnosis/progress_proxy_summary.csv`
+- `work/risk_aware_cbf/results/safc_level3e_robustness_diagnosis/metrics.json`
+- `work/risk_aware_cbf/results/safc_level3e_robustness_diagnosis/robustness_notes.md`
+
+No raw traces, per-step dumps, full `trials.csv`, active constraints,
+trajectory samples, JSONL logs, images, or binary files are included.
+
 ## SAFC Level-3D Small Targeted Cohort A/B
 
 The following artifacts compare no-op execution and warning-streak slowdown
