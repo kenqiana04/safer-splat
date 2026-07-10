@@ -1,0 +1,8 @@
+candidate_id,candidate_name,candidate_type,magnitude_scale,direction_offset,generation_rule,requires_directional_semantics,included,exclusion_reason,notes
+N0,original_nominal,original,1.0,0,u_nom,False,True,,Original nominal command.
+N1,scaled_075,scaled,0.75,0,0.75 * u_nom,False,True,,Deterministic magnitude scaling only.
+N2,scaled_050,scaled,0.5,0,0.50 * u_nom,False,True,,Deterministic magnitude scaling only.
+N3,left_15_scaled_075,directional,0.75,15,planar rotation of nominal direction,True,False,directional_semantics_unsupported,Excluded unless an explicit planar heading/action-plane semantic is grounded.
+N4,right_15_scaled_075,directional,0.75,-15,planar rotation of nominal direction,True,False,directional_semantics_unsupported,Excluded unless an explicit planar heading/action-plane semantic is grounded.
+N5,left_30_scaled_050,directional,0.5,30,planar rotation of nominal direction,True,False,directional_semantics_unsupported,Excluded unless an explicit planar heading/action-plane semantic is grounded.
+N6,right_30_scaled_050,directional,0.5,-30,planar rotation of nominal direction,True,False,directional_semantics_unsupported,Excluded unless an explicit planar heading/action-plane semantic is grounded.

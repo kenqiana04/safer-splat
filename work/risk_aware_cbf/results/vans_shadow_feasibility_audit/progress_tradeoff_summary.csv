@@ -1,0 +1,6 @@
+context_candidate_id,original_warning_steps,verified_alternative_steps,verified_and_progress_better_steps,verified_and_progress_equal_steps,verified_and_progress_worse_steps,mean_selected_progress_delta,min_selected_progress_delta,max_selected_progress_delta,diagnosis,notes
+C003,11,0,0,64,6,-1.3496194566999163e-07,-1.7285346984863281e-06,0.0,no_verified_alternative,Progress proxy is diagnostic goal-distance reduction only.
+C004,64,0,19,130,11,6.588175892829895e-07,-1.0073184967041016e-05,1.6868114471435547e-05,no_verified_alternative,Progress proxy is diagnostic goal-distance reduction only.
+C002,38,1,6,146,8,5.587935447692871e-10,-8.672475814819336e-06,8.255243301391602e-06,safety_progress_tradeoff,Progress proxy is diagnostic goal-distance reduction only.
+C001,35,0,7,149,4,6.295740604400634e-08,-6.884336471557617e-06,7.659196853637695e-06,no_verified_alternative,Progress proxy is diagnostic goal-distance reduction only.
+C006,41,0,15,139,6,3.473833203315735e-07,-1.5109777450561523e-05,1.4156103134155273e-05,no_verified_alternative,Progress proxy is diagnostic goal-distance reduction only.

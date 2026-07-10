@@ -27,6 +27,10 @@
   3/5, equal in 1/5, more in 1/5, with total warning delta -25.
 - Level 3E supports targeted policy-variant observations over five candidates:
   current total 164, milder total 182, critical-only total 182.
+- VANS shadow audit supports only a counterfactual feasibility observation:
+  over five pre-registered contexts, one verified alternative nominal action
+  was observed in C002 and no progress-nonworse verified alternative was
+  observed.
 
 ## Diagnostic Claims
 
@@ -34,6 +38,8 @@
 - C006 is neutral across tested Level 3E variants.
 - No Level 3E active diagnostic run reached the goal.
 - The progress proxy is diagnostic goal-distance reduction only.
+- VANS remains a diagnostic extension: shadow-selected candidates were not
+  executed and do not establish closed-loop warning reduction.
 
 ## Interface-Level Claims
 
@@ -49,6 +55,7 @@
 - Four-wheel dynamics validation.
 - Statistical benchmark evaluation.
 - Generalized performance comparison.
+- Active Verification-Aware Nominal Action Selection.
 
 ## Prohibited Claims
 
@@ -64,4 +71,5 @@
 - new CBF theorem;
 - metric clearance when only `h` or `min_safety_h` is available;
 - SAFC active feedback is benchmark-validated;
-- warning-streak slowdown is the core performance contribution.
+- warning-streak slowdown is the core performance contribution;
+- VANS improves safety, warnings, completion, or planner quality.

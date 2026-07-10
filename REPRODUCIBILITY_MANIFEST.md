@@ -34,10 +34,10 @@ Do not track:
 
 The audited GitHub snapshot currently tracks:
 
-- 40 risk-aware CBF report markdown files
-- 163 files under `work/risk_aware_cbf/notes/`
+- 50 risk-aware CBF report markdown files
+- 166 files under `work/risk_aware_cbf/notes/`
 - 32 files under `work/risk_aware_cbf/figures/`
-- 23 files under `work/risk_aware_cbf/paper_materials/`
+- 45 files under `work/risk_aware_cbf/paper_materials/`
 
 The audited snapshot does not currently track the concrete Python scripts or result summary files referenced by several reports. This branch therefore adds trackable directories and `.gitignore` exceptions, but it does not fabricate missing scripts or summary results.
 
@@ -100,6 +100,7 @@ Status meanings:
 | `REPORT_V4C_HSTEP_PREDICTIVE_RECOVERY.md` | no | no | N/A | yes |
 | `REPORT_V4C_RUNTIME_TUNING_PILOT.md` | N/A | N/A | N/A | N/A |
 | `REPORT_V4C_TUNED_FULL100_VALIDATION.md` | N/A | N/A | N/A | N/A |
+| `REPORT_VANS_SHADOW_FEASIBILITY_AUDIT.md` | yes | yes | yes | yes |
 
 ## Release Gap List
 
@@ -263,6 +264,33 @@ generalized performance improvement.
 
 No raw traces, per-step dumps, full `trials.csv`, active constraints,
 trajectory samples, JSONL logs, images, or binary files are included.
+
+## VANS Shadow Feasibility Audit
+
+The following artifacts audit Verification-Aware Nominal Action Selection in
+shadow mode only. The selected counterfactual candidate is never executed, the
+formal trajectory keeps the original filtered command, official core source is
+not modified, and no active VANS performance claim is made.
+
+- `work/risk_aware_cbf/scripts/vans_shadow_selector.py`
+- `work/risk_aware_cbf/scripts/vans_shadow_feasibility_audit.py`
+- `work/risk_aware_cbf/REPORT_VANS_SHADOW_FEASIBILITY_AUDIT.md`
+- `work/risk_aware_cbf/paper_materials/VANS_ACTION_SEMANTICS_AUDIT.md`
+- `work/risk_aware_cbf/results/vans_shadow_feasibility_audit/README.md`
+- `work/risk_aware_cbf/results/vans_shadow_feasibility_audit/candidate_set_spec.csv`
+- `work/risk_aware_cbf/results/vans_shadow_feasibility_audit/per_candidate_shadow_summary.csv`
+- `work/risk_aware_cbf/results/vans_shadow_feasibility_audit/warning_opportunity_summary.csv`
+- `work/risk_aware_cbf/results/vans_shadow_feasibility_audit/candidate_selection_summary.csv`
+- `work/risk_aware_cbf/results/vans_shadow_feasibility_audit/progress_tradeoff_summary.csv`
+- `work/risk_aware_cbf/results/vans_shadow_feasibility_audit/runtime_overhead_summary.csv`
+- `work/risk_aware_cbf/results/vans_shadow_feasibility_audit/state_isolation_summary.csv`
+- `work/risk_aware_cbf/results/vans_shadow_feasibility_audit/metrics.json`
+- `work/risk_aware_cbf/results/vans_shadow_feasibility_audit/shadow_audit_notes.md`
+
+No raw traces, per-step dumps, full `trials.csv`, JSONL logs,
+active-constraint dumps, trajectory samples, images, or binary files are
+included. `h` and `min_safety_h` remain barrier-function margins, not metric
+clearance.
 
 ## SAFC Level-3D Small Targeted Cohort A/B
 

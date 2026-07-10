@@ -1,0 +1,6 @@
+candidate_context_id,scene,trial_id,steps_observed,original_warning_steps,full_candidate_evaluation_steps,steps_with_any_qp_feasible_alternative,steps_with_verified_alternative,steps_with_progress_nonworse_verified_alternative,shadow_selection_differs_steps,potential_warning_avoidance_steps,original_stop_reason,collision_observed,qp_infeasible_observed,progress_proxy_available,state_isolation_passed,run_completed,notes
+C003,flight,14,70,11,11,11,0,0,8,0,stalled_before_goal,False,False,True,True,True,Formal trajectory executed original u_safe; shadow candidates were not executed.
+C004,flight,85,160,64,64,64,0,0,34,0,max_steps,False,False,True,True,True,Formal trajectory executed original u_safe; shadow candidates were not executed.
+C002,flight,12,160,38,38,38,1,0,19,1,max_steps,False,False,True,True,True,Formal trajectory executed original u_safe; shadow candidates were not executed.
+C001,flight,13,160,35,35,35,0,0,14,0,max_steps,False,False,True,True,True,Formal trajectory executed original u_safe; shadow candidates were not executed.
+C006,flight,31,160,41,41,41,0,0,22,0,max_steps,False,False,True,True,True,Formal trajectory executed original u_safe; shadow candidates were not executed.
