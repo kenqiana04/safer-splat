@@ -1,0 +1,17 @@
+check_id,expected_value,observed_value,match,source_file,source_line_or_symbol,notes
+C01,scene=flight,CLI supports flight and Flight100 log uses scene=flight,true,run_v4c_hstep_predictive_recovery.py,build_parser; Flight100 log lines 1-3,Exact named dense-flight configuration.
+C02,method=risk_aware_v1_bestD,CLI supports risk_aware_v1_bestD and Flight100 log uses it,true,run_v4c_hstep_predictive_recovery.py,build_parser; Flight100 log lines 1-3,Exact named method.
+C03,horizon=3,default horizon=3,true,run_v4c_hstep_predictive_recovery.py,build_parser --horizon,Matches report and original command log.
+C04,num_sequences=128,default num_sequences=128,true,run_v4c_hstep_predictive_recovery.py,build_parser --num-sequences,Matches report and original command log.
+C05,activation_mode=on_margin_violation,default activation_mode=on_margin_violation,true,run_v4c_hstep_predictive_recovery.py,build_parser --activation-mode,Matches report and original command log.
+C06,dt_margin=0.0005,default dt_margin=0.0005,true,run_v4c_hstep_predictive_recovery.py,build_parser --dt-margin,Matches report.
+C07,warning_margin=0.0008,default warning_margin=0.0008,true,run_v4c_hstep_predictive_recovery.py,build_parser --warning-margin,Matches report.
+C08,control_scales=0;0.25;0.5;0.75;1.0,default list=0;0.25;0.5;0.75;1.0,true,run_v4c_hstep_predictive_recovery.py,build_parser --control-scale-list,Matches report.
+C09,candidate families braking;repulsive;goal-directed;mixed;random around base;repeated baseline,all families present,true,run_v4c_hstep_predictive_recovery.py,generate_sequences,Repulsive and mixed variants are conditionally enabled by named flags.
+C10,baseline H-step violation trigger,repeated baseline rollout and threshold trigger present,true,run_v4c_hstep_predictive_recovery.py,run_trial; should_activate,Base sequence is rolled out before recovery activation.
+C11,feasible selection uses weighted cost,lowest-cost passed sequence selected,true,run_v4c_hstep_predictive_recovery.py,evaluate_sequences; sequence_cost,Selection is not reconstructed.
+C12,no-feasible fallback uses maximum horizon minimum h,best_h selected and failed=true,true,run_v4c_hstep_predictive_recovery.py,evaluate_sequences,Matches reported fallback semantics.
+C13,only selected first control is executed,selected.controls[0].detach().clone(),true,run_v4c_hstep_predictive_recovery.py,evaluate_sequences,Matches report.
+C14,recovery success and failed flags,success=true for feasible selection and failed=true otherwise,true,run_v4c_hstep_predictive_recovery.py,evaluate_sequences,Matches report.
+C15,safety uses existing GSplat ellipsoid query,v4b.query_h called on rollout positions,true,run_v4c_hstep_predictive_recovery.py,rollout_sequence,No point-cloud-center substitution is introduced.
+C16,h is not metric clearance,V4-C design/report state h is repository safety value,true,V4C_HSTEP_PREDICTIVE_RECOVERY_DESIGN.md,Baseline and Safety Query,No clearance claim is made.

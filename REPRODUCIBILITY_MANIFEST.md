@@ -97,7 +97,7 @@ Status meanings:
 | `REPORT_V4A_ACTIVE_PROJECTION_DT_AUDIT.md` | N/A | N/A | N/A | N/A |
 | `REPORT_V4B_CORRECTIVE_DT_FILTER.md` | N/A | N/A | N/A | N/A |
 | `REPORT_V4C_FLIGHT100_VALIDATION.md` | N/A | N/A | N/A | N/A |
-| `REPORT_V4C_HSTEP_PREDICTIVE_RECOVERY.md` | no | no | N/A | yes |
+| `REPORT_V4C_HSTEP_PREDICTIVE_RECOVERY.md` | yes | no | N/A | yes |
 | `REPORT_V4C_RUNTIME_TUNING_PILOT.md` | N/A | N/A | N/A | N/A |
 | `REPORT_V4C_TUNED_FULL100_VALIDATION.md` | N/A | N/A | N/A | N/A |
 | `REPORT_VANS_SHADOW_FEASIBILITY_AUDIT.md` | yes | yes | yes | yes |
@@ -118,9 +118,8 @@ The following reports explicitly reference scripts or summary/metrics artifacts 
 - `REPORT_RISK_AWARE_TOPK_V0_100_AND_ABLATION.md`
 - `REPORT_RISK_AWARE_V1_ABLATION.md`
 - `REPORT_SAFER_BASELINE_NAVIGATION_STACK_AUDIT.md`
-- `REPORT_V4C_HSTEP_PREDICTIVE_RECOVERY.md`
 
-These are release gaps, not validation claims. The reports themselves are tracked, but their referenced executable scripts and compact result summaries should be added in a later release-hardening pass if they are available from the experiment machine.
+These are release gaps, not validation claims. The reports themselves are tracked, but their referenced executable scripts and compact result summaries should be added in a later release-hardening pass if they are available from the experiment machine. The V4-C runner, sweep, analysis script, and official smoke wrapper were later restored with provenance evidence; its compact raw-result summaries remain intentionally untracked.
 
 ## SAFC Method Design Failure Analysis and Redesign Program
 
@@ -229,10 +228,10 @@ trajectory samples, JSONL logs, or binary files are included.
 ## R1 Supervisory Mode Interface Audit
 
 These artifacts record a Stage 0 interface stop for the R1
-Verification-Aware Supervisory Mode Selection proposal. No shadow or active
-experiment was run because the current worktree lacks a callable V4-C recovery
-interface and the importable baseline smoke wrapper required for isolated common
-mode evaluation.
+Verification-Aware Supervisory Mode Selection proposal. A later restoration
+recovered the original V4-C and baseline-wrapper artifacts, but the current
+branch still lacks two original V4-C helper imports required for isolated M2
+evaluation. No shadow or active experiment was run.
 
 - `work/risk_aware_cbf/paper_materials/R1_SUPERVISORY_MODE_SEMANTICS_AUDIT.md`
 - `work/risk_aware_cbf/REPORT_R1_SUPERVISORY_MODE_SHADOW_AUDIT.md`
@@ -242,6 +241,29 @@ mode evaluation.
 No selector, shadow runner, raw trace, per-step dump, `trials.csv`, JSONL,
 image, model, or binary artifact is included. This is an interface limitation,
 not a closed-loop result or a negative V4-C result.
+
+## V4-C Executable Interface Restoration
+
+The following reproducibility-forensics artifacts restore provenance-confirmed,
+byte-identical lightweight V4-C execution files. They do not restore raw
+results and do not run a new experiment.
+
+- `work/risk_aware_cbf/scripts/run_v4c_hstep_predictive_recovery.py`
+- `work/risk_aware_cbf/scripts/run_v4c_hstep_predictive_sweep.py`
+- `work/risk_aware_cbf/scripts/analyze_v4c_results.py`
+- `reproduction/scripts/run_official_runpy_smoke.py`
+- `work/risk_aware_cbf/REPORT_V4C_INTERFACE_RESTORATION.md`
+- `work/risk_aware_cbf/results/v4c_interface_restoration/README.md`
+- `work/risk_aware_cbf/results/v4c_interface_restoration/source_inventory.csv`
+- `work/risk_aware_cbf/results/v4c_interface_restoration/artifact_hashes.csv`
+- `work/risk_aware_cbf/results/v4c_interface_restoration/configuration_match.csv`
+- `work/risk_aware_cbf/results/v4c_interface_restoration/interface_status.csv`
+- `work/risk_aware_cbf/results/v4c_interface_restoration/restoration_notes.md`
+- `work/risk_aware_cbf/results/v4c_interface_restoration/metrics.json`
+
+All restored artifact hashes are recorded in `artifact_hashes.csv`. The current
+branch remains blocked for R1 M2 evaluation because two original helper modules
+are still outside this restoration task's approved file list.
 
 ## SAFC Level-3C Fixed-C003 Targeted A/B
 

@@ -7,8 +7,10 @@ verification-aware supervisor that compares normal CBF-filtered execution,
 warning-gated slowdown, existing V4-C recovery, and a grounded fail-safe halt
 interface without changing the formal executed command.
 
-The result is an interface stop at Stage 0. No shadow run was performed because
-the current worktree cannot construct or isolate the required M2 recovery mode.
+The result remains an interface stop at Stage 0. A later restoration audit
+recovered the original V4-C and wrapper artifacts with confirmed hashes, but
+the current branch lacks two original V4-C helper imports. No shadow run was
+performed because M2 cannot yet be constructed and isolated in this branch.
 
 ## 2. Difference from Earlier Designs
 
@@ -19,11 +21,12 @@ requires callable and isolatable interfaces for every included productive mode.
 
 ## 3. Mode Semantics
 
-M0 uses the documented CBF-QP `u_safe` action. M1 has an implemented bounded
-wrapper-level slowdown helper. M2 is unavailable because the V4-C reports and
-design notes remain but the associated runner, candidate generator, and
-evaluator are absent from this Git worktree. M3 is interface-only: the robot
-state contains velocity, and zero acceleration does not stop current motion.
+M0 uses the restored documented CBF-QP `u_safe` wrapper. M1 has an implemented
+bounded wrapper-level slowdown helper. M2 source is now restored and its
+original environment exposes candidate generation/evaluation, but its two
+original helper imports are absent from this Git branch. M3 is interface-only:
+the robot state contains velocity, and zero acceleration does not stop current
+motion.
 
 The common H-step warning definition and diagnostic goal-distance-reduction
 proxy are documented in existing work scripts. A common runtime comparison and
@@ -47,9 +50,9 @@ measurements, fail-safe opportunities, or active-smoke target.
 
 | Item | Status |
 | --- | --- |
-| M0 normal mode | insufficient semantics in current worktree |
-| M1 slowdown mode | implemented helper; not shadow-evaluable here |
-| M2 V4-C recovery | unavailable |
+| M0 normal mode | shadow-evaluable wrapper restored |
+| M1 slowdown mode | shadow-evaluable wrapper policy |
+| M2 V4-C recovery | source restored; current-branch helper dependencies missing |
 | M3 safe halt | interface-only and excluded |
 | Common horizon comparison | insufficient semantics |
 | State isolation | not measurable |
@@ -77,8 +80,9 @@ interface blocks an executable trigger audit.
 
 `r1_decision = inconclusive_due_to_interface_limitations`
 
-Restore the exact V4-C wrapper-level recovery interface and the importable
-official smoke wrapper, then repeat Stage 0 before any shadow or active test.
+Restore the remaining provenance-confirmed V4-C helper dependencies through a
+separate scope-controlled task, then perform nonfunctional interface
+equivalence before repeating Stage 0.
 
 ## 9. Claim Boundaries
 
