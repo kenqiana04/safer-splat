@@ -1,0 +1,5 @@
+mode_id,status,included_in_future_shadow,interface_callable,state_isolated,formal_control_unchanged,common_horizon_supported,progress_proxy_supported,notes
+M0,shadow_evaluable,true,true,true,true,true,true,Existing normal CBF-filtered wrapper; no context audit run here.
+M1,shadow_evaluable,true,true,true,true,true,true,Existing bounded warning-streak slowdown semantics; no context audit run here.
+M2,shadow_evaluable,true,true,true,true,true,true,Exact V4-C functions are callable through a pure adapter using cloned state and fixed H3_N128 configuration.
+M3,interface_only,false,false,not_measured,true,false,false,No provenance-confirmed stop contract; zero acceleration is not a grounded halt for a moving double integrator.

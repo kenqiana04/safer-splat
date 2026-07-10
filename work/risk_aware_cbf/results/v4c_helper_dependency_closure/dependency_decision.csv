@@ -1,0 +1,6 @@
+scope_item,count,decision,reason
+direct_helper_modules,2,restore_exact,Both are direct module-level imports of the original V4-C runner and match Priority-1 hashes.
+additional_local_python_dependencies,0,already_present,All transitive local modules needed for import or shadow evaluation already exist in the target branch.
+stdlib_dependencies,12,stdlib,Provided by Python and never copied into the repository.
+third_party_dependencies,6,third_party_dependency,Provided by the safer_splat_official environment and never copied into the repository.
+dependency_closure,2,dependency_closure_restored_r1_stage0_ready,The exact helpers close the local import and symbol dependency gap without restoring unrelated files.

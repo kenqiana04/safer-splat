@@ -227,20 +227,20 @@ trajectory samples, JSONL logs, or binary files are included.
 
 ## R1 Supervisory Mode Interface Audit
 
-These artifacts record a Stage 0 interface stop for the R1
-Verification-Aware Supervisory Mode Selection proposal. A later restoration
-recovered the original V4-C and baseline-wrapper artifacts, but the current
-branch still lacks two original V4-C helper imports required for isolated M2
-evaluation. No shadow or active experiment was run.
+These artifacts record the updated Stage 0 interface decision for the R1
+Verification-Aware Supervisory Mode Selection proposal. The exact original
+V4-C helper dependencies are now restored, and M0-M2 are shadow-evaluable.
+M3 remains interface-only and excluded. No five-context shadow or active
+experiment was run.
 
 - `work/risk_aware_cbf/paper_materials/R1_SUPERVISORY_MODE_SEMANTICS_AUDIT.md`
 - `work/risk_aware_cbf/REPORT_R1_SUPERVISORY_MODE_SHADOW_AUDIT.md`
 - `work/risk_aware_cbf/results/r1_supervisory_mode_shadow_audit/README.md`
 - `work/risk_aware_cbf/results/r1_supervisory_mode_shadow_audit/mode_preregistration.csv`
 
-No selector, shadow runner, raw trace, per-step dump, `trials.csv`, JSONL,
-image, model, or binary artifact is included. This is an interface limitation,
-not a closed-loop result or a negative V4-C result.
+No selector, context shadow runner, raw trace, per-step dump, `trials.csv`,
+JSONL, image, model, or binary artifact is included. Stage-0 readiness is not a
+closed-loop result or a V4-C/R1 effectiveness result.
 
 ## V4-C Executable Interface Restoration
 
@@ -261,9 +261,28 @@ results and do not run a new experiment.
 - `work/risk_aware_cbf/results/v4c_interface_restoration/restoration_notes.md`
 - `work/risk_aware_cbf/results/v4c_interface_restoration/metrics.json`
 
-All restored artifact hashes are recorded in `artifact_hashes.csv`. The current
-branch remains blocked for R1 M2 evaluation because two original helper modules
-are still outside this restoration task's approved file list.
+All restored artifact hashes are recorded in `artifact_hashes.csv`. The later
+dependency-closure task restored the two exact helper modules and reopened M2
+for a separate preregistered shadow audit.
+
+## V4-C Helper Dependency Closure
+
+The following compact artifacts restore the two exact original helper imports,
+audit their minimal closure, validate required symbols, and establish a thin
+non-executing shadow interface. They do not run a new scientific experiment or
+revalidate V4-C recovery performance.
+
+- `work/risk_aware_cbf/scripts/run_risk_aware_v1_pre_cbf_comparison.py`
+- `work/risk_aware_cbf/scripts/run_v4b_corrective_dt_filter.py`
+- `work/risk_aware_cbf/scripts/audit_v4c_helper_dependency_closure.py`
+- `work/risk_aware_cbf/scripts/check_v4c_helper_symbols.py`
+- `work/risk_aware_cbf/scripts/v4c_recovery_shadow_interface.py`
+- `work/risk_aware_cbf/scripts/check_v4c_shadow_interface_equivalence.py`
+- `work/risk_aware_cbf/REPORT_V4C_HELPER_DEPENDENCY_CLOSURE.md`
+- `work/risk_aware_cbf/results/v4c_helper_dependency_closure/`
+
+No raw result, formal trajectory, active command, trace, image, model, or
+binary artifact is included.
 
 ## SAFC Level-3C Fixed-C003 Targeted A/B
 
