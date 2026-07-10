@@ -1,0 +1,23 @@
+check_id,original_value,adapter_value,match,absolute_error,tolerance,critical,notes
+config,"{""activation_mode"":""on_margin_violation"",""control_scale_list"":""0,0.25,0.5,0.75,1.0"",""dt_margin"":0.0005,""horizon"":3,""method"":""risk_aware_v1_bestD"",""num_sequences"":128,""scene"":""flight"",""warning_margin"":0.0008}","{""activation_mode"":""on_margin_violation"",""control_scale_list"":""0,0.25,0.5,0.75,1.0"",""dt_margin"":0.0005,""horizon"":3,""method"":""risk_aware_v1_bestD"",""num_sequences"":128,""scene"":""flight"",""warning_margin"":0.0008}",true,0.0,0.0,true,Same Namespace is passed to direct and adapter calls.
+state,"""a80fdbd424d8b415ff43bab78f0de8b3f7230d7079e22a60ead00da941583557""","""a80fdbd424d8b415ff43bab78f0de8b3f7230d7079e22a60ead00da941583557""",true,0.0,0.0,true,Identical real flight trial state.
+goal,"""4d3916c225f02f61a5aea9ff2dbccf7c4383514a70d1333d0d89434c08a073c0""","""4d3916c225f02f61a5aea9ff2dbccf7c4383514a70d1333d0d89434c08a073c0""",true,0.0,0.0,true,Identical official flight goal.
+u_base,"""172c8316fbd6109d5dcb5b6d6f5691f459b777df0e0cf74ffca876ad40b621f9""","""172c8316fbd6109d5dcb5b6d6f5691f459b777df0e0cf74ffca876ad40b621f9""",true,0.0,0.0,true,Identical CBF-filtered baseline control.
+u_nom,"""03e3a3c2deac8aab0e680b17482af247d17974664aaa95a02725a0738d54faf7""","""03e3a3c2deac8aab0e680b17482af247d17974664aaa95a02725a0738d54faf7""",true,0.0,0.0,true,Identical nominal control.
+seed_and_rng_policy,"""trial_step_local_default_rng""","""trial_step_local_default_rng""",true,0.0,0.0,true,Original generator owns deterministic local RNG.
+candidate_count,149,149,true,0.0,0.0,true,Original generation function used twice.
+candidate_source_list,"""16178dbd88d6980f18a24ae96223469bad86577c20e0cf571d75b4ce8e387873""","""16178dbd88d6980f18a24ae96223469bad86577c20e0cf571d75b4ce8e387873""",true,0.0,0.0,true,Digest avoids committing per-candidate output.
+candidate_first_controls,"""9ca8ed90c64b81a44a158a18e2163c30f0f26086f9efc670cc44c3c31b3731c8""","""9ca8ed90c64b81a44a158a18e2163c30f0f26086f9efc670cc44c3c31b3731c8""",true,0.0,0.0,true,Digest avoids committing per-candidate output.
+selected_index,0,0,true,0.0,0.0,true,Original evaluator owns ranking.
+selected_source,"""base_repeated""","""base_repeated""",true,0.0,0.0,true,Original evaluator owns source selection.
+selected_first_control,"[-0.09499156475067139,-0.09539289772510529,-0.09817888587713242]","[-0.09499156475067139,-0.09539289772510529,-0.09817888587713242]",true,0.0,0.0,true,Selected control is compared but never executed.
+selected_h_sequence,"[0.004177215974777937,0.004128691740334034,0.004032630007714033]","[0.004177215974777937,0.004128691740334034,0.004032630007714033]",true,0.0,0.0,true,Same GSplat rollout result.
+selected_min_h,0.004032630007714033,0.004032630007714033,true,0.0,1e-12,true,Barrier margin; not metric clearance.
+recovery_success,true,true,true,0.0,0.0,true,Original success flag.
+recovery_failed,false,false,true,0.0,0.0,true,Original failure flag.
+selected_cost,0.05992810130119324,0.05992810130119324,true,0.0,1e-12,true,Original weighted cost.
+progress_proxy,0.0010805726051330566,0.0010805726051330566,true,0.0,1e-12,true,Horizon goal-distance reduction diagnostic.
+direct_state_unchanged,true,true,true,0.0,0.0,true,Direct pure functions must not mutate x.
+adapter_state_unchanged,true,true,true,0.0,0.0,true,Adapter context tensors remain unchanged.
+formal_control_modified,false,false,true,0.0,0.0,true,No selected control is applied.
+rng_restored,true,true,true,0.0,0.0,true,Adapter restores Python NumPy Torch and initialized CUDA RNG states.

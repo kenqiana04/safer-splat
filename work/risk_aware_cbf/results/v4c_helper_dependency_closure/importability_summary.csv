@@ -1,0 +1,5 @@
+module,py_compile_passed,import_passed_4090,help_passed_4090,import_triggered_experiment,import_wrote_files,import_changed_cuda_state,import_changed_random_state,import_side_effect_status,notes
+run_risk_aware_v1_pre_cbf_comparison,true,true,true,false,false,true,true,bounded_initialization,Direct import initializes CUDA and changes Python RNG through dependency initialization; no experiment or repository write occurred.
+run_v4b_corrective_dt_filter,true,true,true,false,false,true,true,bounded_initialization,Direct import initializes CUDA and changes Python RNG through dependency initialization; no experiment or repository write occurred.
+run_v4c_hstep_predictive_recovery,true,true,true,false,false,true,true,bounded_initialization,Direct import transitively initializes CUDA and changes Python RNG; the shadow adapter restores RNG around lazy loading.
+run_official_runpy_smoke,true,true,true,false,false,not_measured,not_measured,safe,Compile/import and --help pass in the original 4090 environment; no formal smoke trial was run.
