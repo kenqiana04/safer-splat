@@ -37,7 +37,7 @@ The audited GitHub snapshot currently tracks:
 - 50 risk-aware CBF report markdown files
 - 166 files under `work/risk_aware_cbf/notes/`
 - 32 files under `work/risk_aware_cbf/figures/`
-- 54 files under `work/risk_aware_cbf/paper_materials/`
+- 55 files under `work/risk_aware_cbf/paper_materials/`
 
 The audited snapshot does not currently track the concrete Python scripts or result summary files referenced by several reports. This branch therefore adds trackable directories and `.gitignore` exceptions, but it does not fabricate missing scripts or summary results.
 
@@ -225,6 +225,23 @@ performance improvement:
 
 No raw traces, per-step dumps, full `trials.csv`, active-constraint dumps,
 trajectory samples, JSONL logs, or binary files are included.
+
+## R1 Supervisory Mode Interface Audit
+
+These artifacts record a Stage 0 interface stop for the R1
+Verification-Aware Supervisory Mode Selection proposal. No shadow or active
+experiment was run because the current worktree lacks a callable V4-C recovery
+interface and the importable baseline smoke wrapper required for isolated common
+mode evaluation.
+
+- `work/risk_aware_cbf/paper_materials/R1_SUPERVISORY_MODE_SEMANTICS_AUDIT.md`
+- `work/risk_aware_cbf/REPORT_R1_SUPERVISORY_MODE_SHADOW_AUDIT.md`
+- `work/risk_aware_cbf/results/r1_supervisory_mode_shadow_audit/README.md`
+- `work/risk_aware_cbf/results/r1_supervisory_mode_shadow_audit/mode_preregistration.csv`
+
+No selector, shadow runner, raw trace, per-step dump, `trials.csv`, JSONL,
+image, model, or binary artifact is included. This is an interface limitation,
+not a closed-loop result or a negative V4-C result.
 
 ## SAFC Level-3C Fixed-C003 Targeted A/B
 

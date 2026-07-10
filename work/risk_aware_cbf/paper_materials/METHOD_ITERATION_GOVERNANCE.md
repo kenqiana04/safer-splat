@@ -44,6 +44,14 @@ Required output:
 
 If semantics are insufficient, stop or redesign before running experiments.
 
+### R1 Interface-Stop Application
+
+The R1 Stage 0 audit applied this rule: a historical report or a text snapshot
+is not a callable recovery interface. When an included productive mode cannot
+be generated, evaluated, and isolated from cloned state, the audit stops before
+shadow execution. That is an interface limitation, not a negative method
+result, and it does not authorize a substitute control or reconstructed mode.
+
 ## Stage 3: Offline / Shadow Feasibility
 
 Required output:
