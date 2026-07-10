@@ -37,7 +37,7 @@ The audited GitHub snapshot currently tracks:
 - 50 risk-aware CBF report markdown files
 - 166 files under `work/risk_aware_cbf/notes/`
 - 32 files under `work/risk_aware_cbf/figures/`
-- 45 files under `work/risk_aware_cbf/paper_materials/`
+- 54 files under `work/risk_aware_cbf/paper_materials/`
 
 The audited snapshot does not currently track the concrete Python scripts or result summary files referenced by several reports. This branch therefore adds trackable directories and `.gitignore` exceptions, but it does not fabricate missing scripts or summary results.
 
@@ -121,6 +121,29 @@ The following reports explicitly reference scripts or summary/metrics artifacts 
 - `REPORT_V4C_HSTEP_PREDICTIVE_RECOVERY.md`
 
 These are release gaps, not validation claims. The reports themselves are tracked, but their referenced executable scripts and compact result summaries should be added in a later release-hardening pass if they are available from the experiment machine.
+
+## SAFC Method Design Failure Analysis and Redesign Program
+
+These artifacts analyze method-version failures, distinguish local mechanism
+failure from research-direction failure, and define evidence-based redesign
+decisions. They contain no new experiments and no official core-source
+modifications.
+
+- `work/risk_aware_cbf/paper_materials/METHOD_VERSION_FAILURE_LEDGER.md`
+- `work/risk_aware_cbf/paper_materials/METHOD_HYPOTHESIS_LEDGER.md`
+- `work/risk_aware_cbf/paper_materials/FAILURE_LEVEL_CLASSIFICATION.md`
+- `work/risk_aware_cbf/paper_materials/SAFC_DESIGN_SPACE_MAP.md`
+- `work/risk_aware_cbf/paper_materials/VERIFICATION_AWARE_DESIGN_SPACE_MAP.md`
+- `work/risk_aware_cbf/paper_materials/REDESIGN_CANDIDATE_MATRIX.md`
+- `work/risk_aware_cbf/paper_materials/REDESIGN_GO_NO_GO_RULES.md`
+- `work/risk_aware_cbf/paper_materials/NEXT_METHOD_PROTOTYPE_DECISION.md`
+- `work/risk_aware_cbf/paper_materials/METHOD_ITERATION_GOVERNANCE.md`
+- `work/risk_aware_cbf/notes/NEXT_STEP_AFTER_METHOD_REDESIGN_ANALYSIS.md`
+
+The selected next prototype is Verification-Aware Supervisory Mode Selection,
+with Persistent-Warning Triggered Recovery Coordination as backup. The program
+explicitly freezes failed versions rather than closing whole research
+directions after one weak implementation.
 
 ## Raw Trace Policy Check
 

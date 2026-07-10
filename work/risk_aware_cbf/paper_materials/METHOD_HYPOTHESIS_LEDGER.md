@@ -1,0 +1,26 @@
+# Method Hypothesis Ledger
+
+This ledger separates research hypotheses from the specific versions that
+tested them. A hypothesis remains open unless the falsification condition is
+met with validated implementation and measurement.
+
+| Hypothesis | Current status | Evidence for | Evidence against | Versions tested | Untested design alternatives | Falsification condition | Remains open |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| H1: Start-state certification can prevent invalid or unsafe initialization from contaminating downstream CBF execution. | supported under named settings | StartGuard, synthetic initial-unsafe stress, repair-only ablations, and post-repair navigation evidence. | No global map/robot proof; `h` is not metric clearance. | Start-Safe / FAS-CBF. | Broader maps, robot adapters, formal clearance conversion. | Validated implementation repeatedly admits unsafe starts or rejects safe starts under the named repository safety field without diagnosis. | yes, as bounded core |
+| H2: H-step verification can detect sampled-data risks not visible from one-step continuous-time filtering. | supported as diagnostic/trigger | DT warnings, V4-C triggers, SAFC warning evidence, VANS shadow warning contexts. | Margin violation is not collision; horizon/margin choices are bounded. | DT Verification, V4-B/V4-C, SAFC Levels 1-3E. | Formal sampled-data proof, adaptive horizon selection. | H-step warnings fail to identify any distinct downstream risk under correctly logged sampled dynamics across multiple scenes. | yes, as core verifier |
+| H3: Triggered predictive recovery can handle verification failure more effectively than always executing the filtered nominal command. | supported under named V4-C configurations | V4-C H3_N128 and R4_H2_N64 reduce executed horizon margin violations to zero in reported dense flight validation. | Runtime overhead remains; primitive MPC-style recovery failed as a separate version. | V4-C H3_N128, R4_H2_N64, primitive MPC-style recovery. | Two or more recovery families fail to reduce executed H-step violations under validated triggers and acceptable runtime. | yes, V4-C retained |
+| H4: A supervisory coordinator can convert safety evidence into bounded execution decisions without replacing the planner. | supported as architecture | SAFC Level 1 reconstruction, Level 2 no-op, Level 3 activation and diagnostic chain. | Particular actions such as slowdown are mixed; no benchmark active feedback claim. | SAFC architecture, warning-streak slowdown, VANS shadow audit. | State/event layer cannot be inserted without command mutation or cannot explain prior safety events. | yes, direction open |
+| H5: Post-filter command slowdown can reduce exposure to warning states. | partially supported but mechanism-limited | Level 3D total warning delta -25; 3/5 lower warning counts. | C004 higher, C006 neutral, zero completions, scale sensitivity. | Warning-streak slowdown current/milder/critical variants. | Two or more meaningfully different slowdown policies fail on the same structural reason while implementation and measurement are validated. | yes, but not core |
+| H6: Verification-aware nominal action selection can identify more verifiable nominal commands before CBF-QP filtering. | weakly supported only as diagnostic | VANS-v0 found 1 verified alternative and showed multi-candidate QP/verifier evaluation is feasible. | 0 progress-nonworse alternatives, 0 C004/C006 opportunities, magnitude-only candidate set too weak. | Magnitude-only VANS-v0. | Grounded directional/primitive/objective variants also fail to find useful alternatives without crossing planner boundaries. | yes, not closed |
+| H7: Verification-aware supervisory mode selection can select among existing bounded modes more effectively than a single slowdown action. | untested and selected for next prototype | Existing components already expose modes: original u_safe, slowdown, V4-C recovery, halt. Mixed slowdown and weak VANS suggest mode choice may matter more than scalar scaling. | No direct active evidence yet. | None; only component modes tested separately. | A shadow and single-case smoke show no mode ever dominates original/slowdown in warning contexts, or the interface cannot isolate mode choice. | yes, primary next |
+| H8: Verifier-informed nominal objective shaping may improve the safety/progress trade-off without introducing a full planner. | open but deferred | VANS-v0 suggests pre-filter nominal alternatives are evaluable; progress tradeoff can be measured. | Objective shaping risks nested optimization and planner boundary crossing. | Not directly tested. | Minimum bounded objective-shaping smoke cannot be implemented without modifying CBF-QP/planner boundaries or without unacceptable runtime. | yes, backup/deferred |
+
+## Interpretation Rules
+
+- H5 weakness does not falsify H4.
+- VANS-v0 weakness does not falsify H6 because it only tested
+  magnitude-only candidates.
+- Runtime improvement without progress improvement does not falsify
+  Risk-Aware V1; it bounds the claim to efficiency support.
+- Zero completion in slowdown studies does not falsify the safety-assurance
+  framework; it blocks completion and planner-quality claims.
