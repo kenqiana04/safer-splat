@@ -223,6 +223,23 @@ does not claim generalized safety performance improvement.
 No raw traces, per-step dumps, full `trials.csv`, active constraints,
 trajectory samples, JSONL logs, images, or binary files are included.
 
+## SAFC Final Method-Validation Package
+
+These artifacts consolidate existing methodology and validation evidence. They
+do not contain new experimental results and do not modify official core source.
+
+- `work/risk_aware_cbf/paper_materials/SAFC_FINAL_METHOD_VALIDATION_PACKAGE.md`
+- `work/risk_aware_cbf/paper_materials/SAFC_EVIDENCE_CHAIN_MATRIX.md`
+- `work/risk_aware_cbf/paper_materials/SAFC_FINAL_CLAIM_BOUNDARIES.md`
+- `work/risk_aware_cbf/paper_materials/SAFC_NEGATIVE_AND_NEUTRAL_EVIDENCE.md`
+- `work/risk_aware_cbf/paper_materials/SAFC_IMPLEMENTATION_VALIDATION_STATUS.md`
+- `work/risk_aware_cbf/paper_materials/SAFC_METHOD_COMPLETENESS_AUDIT.md`
+- `work/risk_aware_cbf/paper_materials/SAFC_FINAL_METHODOLOGY_DECISION.md`
+- `work/risk_aware_cbf/notes/NEXT_STEP_AFTER_SAFC_FINAL_VALIDATION_PACKAGE.md`
+
+No Python, CSV, JSON, raw trace, image, binary, or experiment output is added
+by this package.
+
 ## SAFC Level-3E Robustness and Failure-Diagnosis Audit
 
 The following artifacts diagnose mixed outcomes from Level 3D using
