@@ -1,0 +1,16 @@
+candidate_id,variant_id,u_nom_modified,u_safe_internal_modified,wrapper_exec_command_scaled,command_modified_only_when_warning,max_abs_delta_u_nom,max_abs_delta_u_safe_internal,max_abs_delta_wrapper_exec_due_to_slowdown,control_scope_passed,notes
+C003,A,False,False,True,True,0.0,0.0,0.018518980592489243,True,Only wrapper-level u_exec may change under a natural warning gate.
+C003,B,False,False,True,True,0.0,0.0,0.010927820578217506,True,Only wrapper-level u_exec may change under a natural warning gate.
+C003,C,False,False,True,True,0.0,0.0,0.010927820578217506,True,Only wrapper-level u_exec may change under a natural warning gate.
+C004,A,False,False,True,True,0.0,0.0,0.042157478630542755,True,Only wrapper-level u_exec may change under a natural warning gate.
+C004,B,False,False,True,True,0.0,0.0,0.022394590079784393,True,Only wrapper-level u_exec may change under a natural warning gate.
+C004,C,False,False,True,True,0.0,0.0,0.022394590079784393,True,Only wrapper-level u_exec may change under a natural warning gate.
+C002,A,False,False,True,True,0.0,0.0,0.02343866601586342,True,Only wrapper-level u_exec may change under a natural warning gate.
+C002,B,False,False,True,True,0.0,0.0,0.011196774430572987,True,Only wrapper-level u_exec may change under a natural warning gate.
+C002,C,False,False,True,True,0.0,0.0,0.011196774430572987,True,Only wrapper-level u_exec may change under a natural warning gate.
+C001,A,False,False,True,True,0.0,0.0,0.026452668011188507,True,Only wrapper-level u_exec may change under a natural warning gate.
+C001,B,False,False,True,True,0.0,0.0,0.011397704482078552,True,Only wrapper-level u_exec may change under a natural warning gate.
+C001,C,False,False,True,True,0.0,0.0,0.011397704482078552,True,Only wrapper-level u_exec may change under a natural warning gate.
+C006,A,False,False,True,True,0.0,0.0,0.035835616290569305,True,Only wrapper-level u_exec may change under a natural warning gate.
+C006,B,False,False,True,True,0.0,0.0,0.017710944637656212,True,Only wrapper-level u_exec may change under a natural warning gate.
+C006,C,False,False,True,True,0.0,0.0,0.017710944637656212,True,Only wrapper-level u_exec may change under a natural warning gate.

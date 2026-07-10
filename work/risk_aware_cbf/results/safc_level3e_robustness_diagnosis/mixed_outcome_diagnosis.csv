@@ -1,0 +1,6 @@
+candidate_id,level3d_outcome_class,best_variant_by_warning_count,worst_variant_by_warning_count,current_policy_warning,milder_policy_warning,critical_only_warning,diagnosis,recommended_policy_interpretation,notes
+C003,positive,current_policy,"milder_slowdown,critical_only_slowdown",10,11,11,current_policy_helpful,At least one variant preserves lower warning count than baseline in this diagnostic case.,Small-cohort diagnostic candidate.
+C004,negative,"milder_slowdown,critical_only_slowdown",current_policy,68,64,64,milder_policy_helpful,C004-like warning increase appears scale-sensitive under milder slowdown.,C004 negative evidence is retained.
+C002,positive,current_policy,"milder_slowdown,critical_only_slowdown",24,34,34,current_policy_helpful,At least one variant preserves lower warning count than baseline in this diagnostic case.,Small-cohort diagnostic candidate.
+C001,positive,current_policy,"milder_slowdown,critical_only_slowdown",21,32,32,current_policy_helpful,At least one variant preserves lower warning count than baseline in this diagnostic case.,Small-cohort diagnostic candidate.
+C006,neutral,"current_policy,milder_slowdown,critical_only_slowdown","current_policy,milder_slowdown,critical_only_slowdown",41,41,41,slowdown_neutral,All tested variants match baseline warning count in this context.,C006 neutral behavior is checked across all variants.

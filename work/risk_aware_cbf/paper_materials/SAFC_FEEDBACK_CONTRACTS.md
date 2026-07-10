@@ -179,3 +179,9 @@ improvement or benchmark-level warning reduction.
 The verification-to-command-shaping contract is compared against no-op
 execution over a pre-registered small cohort. Observed differences remain
 targeted cohort observations and must not be generalized.
+
+## 17. Level-3E Diagnostic Feedback Contract Status
+
+The verification-to-command-shaping contract is diagnosed under pre-registered
+policy variants. Observed differences remain diagnostic and must not be
+generalized.

@@ -1,0 +1,4 @@
+variant_id,variant_name,warning_scale,persistent_warning_scale,critical_warning_scale,min_scale,activation_rule,included,hypothesis,notes
+A,current_policy,0.75,0.5,0.25,0.25,H1/H2/H3 warning-streak slowdown,True,Reference Level-3D active policy.,Pre-registered bounded diagnostic variant.
+B,milder_slowdown,0.85,0.7,0.5,0.5,H1/H2/H3 warning-streak slowdown with milder scales,True,Diagnose whether aggressive slowdown contributes to stalling or warning increase.,Pre-registered bounded diagnostic variant.
+C,critical_only_slowdown,1.0,1.0,0.5,0.5,Only H3 or critical warning-streak slowdown changes wrapper command,True,Diagnose whether avoiding H1/H2 slowdown changes mixed outcomes.,Pre-registered bounded diagnostic variant.
