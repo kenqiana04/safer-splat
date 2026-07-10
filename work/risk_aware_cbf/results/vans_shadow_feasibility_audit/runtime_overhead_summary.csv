@@ -1,0 +1,6 @@
+context_candidate_id,candidate_set_size,full_evaluation_steps,mean_original_pipeline_runtime_sec,mean_shadow_candidate_evaluation_runtime_sec,max_shadow_candidate_evaluation_runtime_sec,estimated_runtime_multiplier,runtime_measurement_valid,notes
+C003,3,11,0.11683037038892508,0.16792869482837294,0.21236390620470047,5.31211578640065,True,Runtime is measured for audit overhead only; no real-time suitability claim.
+C004,3,64,0.11592591231456026,0.16435546642040005,0.20401282981038094,5.253288927528855,True,Runtime is measured for audit overhead only; no real-time suitability claim.
+C002,3,38,0.10924560514977202,0.15622144614709382,0.19787394627928734,5.2900063375433595,True,Runtime is measured for audit overhead only; no real-time suitability claim.
+C001,3,35,0.10817267235834152,0.15256852776460025,0.21205122210085392,5.231249661444697,True,Runtime is measured for audit overhead only; no real-time suitability claim.
+C006,3,41,0.10962970830732957,0.15498024694744714,0.20930550433695316,5.241010470801887,True,Runtime is measured for audit overhead only; no real-time suitability claim.

@@ -8,6 +8,7 @@
 | Triggered V4-C recovery | yes, named configs | yes | yes | yes, named configs | yes | not primary | yes, named configs | runtime/variant audited | no | no | optional supported recovery under named configs |
 | SAFC state/event coordination | yes | yes | yes | yes | yes | yes | yes | yes | no | no | validated supervisory module with bounded claims |
 | Warning-streak slowdown | yes | yes | no-op and active logs | yes, targeted | yes | yes | yes | yes | no | no | optional bounded feedback action / diagnostic extension |
+| Verification-Aware Nominal Action Selection | shadow selector only | yes, shadow aggregate | no | no active run | no | no | no | shadow feasibility audited | no | no | diagnostic extension; active effectiveness unvalidated |
 | Replan request | specified | partially as contract | no | no | no | no | no | no | no | no | interface-level only |
 | Planner risk-cost update | specified | no | no | no | no | no | no | no | no | no | future interface |
 | Waypoint screening | specified | no | no | no | no | no | no | no | no | no | future interface |
@@ -22,3 +23,5 @@
   pre-registered cohort.
 - **Benchmark validation** is not claimed for SAFC active feedback.
 - **Future interface** items must not be described as implemented results.
+- **Shadow validation** means counterfactual candidates were evaluated without
+  modifying executed control; it is not active closed-loop validation.

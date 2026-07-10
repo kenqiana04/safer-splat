@@ -43,7 +43,8 @@ validation support. The evidence includes:
 - Level 3B-Active fixed C003 activation;
 - Level 3C fixed C003 A/B;
 - Level 3D small targeted cohort;
-- Level 3E robustness and failure diagnosis.
+- Level 3E robustness and failure diagnosis;
+- VANS shadow-only counterfactual feasibility audit as a diagnostic extension.
 
 ## 5. Evidence Supporting the Decision
 
@@ -55,6 +56,10 @@ validation support. The evidence includes:
 - C006 remains neutral.
 - All Level 3E completion counts were 0.
 - Control scope remained wrapper-level in the tested active paths.
+- VANS shadow audit completed five pre-registered contexts with state
+  isolation passed; it found one verified alternative step in C002, zero
+  progress-nonworse verified alternative steps, and no verified alternatives
+  for C004 or C006.
 
 ## 6. Need for Level 3F
 
@@ -66,6 +71,8 @@ performance, or real-robot deployment.
 
 New method modules should stop for now. Additional modules would make the
 method story less rigorous unless tied to a single clearly blocking gap.
+Verification-Aware Nominal Action Selection is not promoted to the core method
+by the shadow audit; its decision is `retain_as_diagnostic_extension`.
 
 ## 8. Paper Outline Readiness
 
@@ -80,6 +87,8 @@ interface-level contracts, and future work.
 - Warning-streak slowdown does not generally reduce warnings.
 - Collision count comparisons do not prove generalized collision reduction.
 - Progress proxy is not completion or planner quality.
+- VANS shadow evidence is not active VANS validation and does not establish
+  warning reduction, completion improvement, or planner-quality improvement.
 - Real-robot deployment is not validated.
 - Planner integration is not complete.
 - No new CBF theorem is established.
@@ -92,4 +101,5 @@ interface-level contracts, and future work.
 - waypoint screening implementation;
 - real-robot claims;
 - new recovery branches;
+- active Verification-Aware Nominal Action Selection;
 - unsupported performance claims.

@@ -78,6 +78,7 @@ or planner optimality.
 | Level 3C | Fixed-C003 targeted A/B | C003 no-op vs active | fixed-case A/B behavior and control scope are recorded | generalized warning reduction | `work/risk_aware_cbf/REPORT_SAFC_LEVEL3C_FIXED_C003_AB.md` | `work/risk_aware_cbf/results/safc_level3c_fixed_c003_ab/` |
 | Level 3D | Small targeted cohort | five pre-registered candidates | active slowdown produced fewer warnings in 3/5, equal in 1/5, more in 1/5 | benchmark-level claim | `work/risk_aware_cbf/REPORT_SAFC_LEVEL3D_SMALL_TARGETED_COHORT.md` | `work/risk_aware_cbf/results/safc_level3d_small_targeted_cohort/` |
 | Level 3E | Robustness and failure diagnosis | three policy variants over five candidates | mixed outcomes, C004, C006, stop reasons, and scope boundaries are diagnosed | generalized performance improvement | `work/risk_aware_cbf/REPORT_SAFC_LEVEL3E_ROBUSTNESS_DIAGNOSIS.md` | `work/risk_aware_cbf/results/safc_level3e_robustness_diagnosis/` |
+| VANS Shadow | Verification-aware nominal-action selection feasibility audit | shadow-only counterfactual evaluation over five pre-registered contexts | one verified alternative nominal action was found without executing it; state isolation passed | active VANS effectiveness, warning reduction, completion improvement, planner improvement | `work/risk_aware_cbf/REPORT_VANS_SHADOW_FEASIBILITY_AUDIT.md` | `work/risk_aware_cbf/results/vans_shadow_feasibility_audit/` |
 
 ## 6. Final Evidence Summary
 
@@ -89,6 +90,9 @@ or planner optimality.
 - C004 is negative and scale-sensitive.
 - C006 is neutral.
 - All Level 3E completion counts are 0.
+- VANS shadow audit found 1 verified alternative step in C002, 0
+  progress-nonworse verified alternative steps, and no C004/C006 verified
+  alternative steps.
 - No generalized performance claim is supported.
 
 ## 7. Final Method Classification
@@ -109,6 +113,7 @@ or planner optimality.
 - fixed-candidate A/B;
 - small targeted cohort behavior;
 - policy-variant robustness diagnosis.
+- VANS shadow-only counterfactual feasibility audit as a diagnostic extension.
 
 ### Interface-level only
 
@@ -124,6 +129,7 @@ or planner optimality.
 - navigation-stack validation;
 - general performance benchmark;
 - statistical evaluation.
+- active Verification-Aware Nominal Action Selection.
 
 ## 8. Final Claim Boundary
 
@@ -142,6 +148,8 @@ real-robot validation, global safety, or a new CBF theorem.
 - Some original report contexts were not reproducible without reconciliation.
 - No real-robot validation is complete.
 - No planner integration is complete.
+- Verification-Aware Nominal Action Selection has not been actively
+  validated; shadow counterfactual opportunities are not closed-loop results.
 
 ## 10. Final Decision
 
@@ -163,3 +171,5 @@ real-robot validation, global safety, or a new CBF theorem.
 9. Claims must remain bounded to named configurations and targeted evidence.
 10. Planner integration, real-robot claims, statistical benchmarking, and new
     recovery branches should remain future work.
+11. Verification-Aware Nominal Action Selection should remain a diagnostic
+    extension unless a separate bounded active prototype is validated.
