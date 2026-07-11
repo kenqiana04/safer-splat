@@ -261,9 +261,27 @@ results and do not run a new experiment.
 - `work/risk_aware_cbf/results/v4c_interface_restoration/restoration_notes.md`
 - `work/risk_aware_cbf/results/v4c_interface_restoration/metrics.json`
 
-All restored artifact hashes are recorded in `artifact_hashes.csv`. The current
-branch remains blocked for R1 M2 evaluation because two original helper modules
-are still outside this restoration task's approved file list.
+All restored artifact hashes are recorded in `artifact_hashes.csv`. A later
+module-analysis branch restores the two exact V1/V4-B helper modules with
+Priority-1 SHA256 verification; that branch keeps R1 paused and does not run an
+R1 context audit.
+
+## V4-C Module Failure Analysis and Redesign Program
+
+The following artifacts restore only the V4-C helper closure and analyze
+V4-C independently as a triggered H-step recovery module. They define failure
+modes, candidate-family measurements, and bounded redesign proposals. No new
+trial, smoke, raw trace, raw result, image, binary, R1 experiment, or recovery
+redesign implementation is included.
+
+- `work/risk_aware_cbf/scripts/run_risk_aware_v1_pre_cbf_comparison.py`
+- `work/risk_aware_cbf/scripts/run_v4b_corrective_dt_filter.py`
+- `work/risk_aware_cbf/paper_materials/V4C_MODULE_SEMANTICS_AUDIT.md`
+- `work/risk_aware_cbf/paper_materials/V4C_FAILURE_MODE_ANALYSIS.md`
+- `work/risk_aware_cbf/paper_materials/V4C_CANDIDATE_FAMILY_AUDIT_PLAN.md`
+- `work/risk_aware_cbf/paper_materials/V4C_REDESIGN_CANDIDATE_MATRIX.md`
+- `work/risk_aware_cbf/paper_materials/NEXT_V4C_PROTOTYPE_DECISION.md`
+- `work/risk_aware_cbf/notes/NEXT_STEP_AFTER_V4C_MODULE_ANALYSIS.md`
 
 ## SAFC Level-3C Fixed-C003 Targeted A/B
 
