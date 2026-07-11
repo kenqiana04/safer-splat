@@ -1,0 +1,21 @@
+parameter,value,provenance,notes
+scene,flight,Priority-1 v4c_hstep3_flight100_v1_bestD metrics.json,Original flight scene config and checkpoint path from v1.SCENES.
+method,risk_aware_v1_bestD,Priority-1 metrics.json,Unchanged comparator method.
+horizon,3,Priority-1 metrics.json,H3_N128.
+num_sequences,128,Priority-1 metrics.json,Comparator N remains unchanged.
+activation_mode,on_margin_violation,Priority-1 metrics.json,Unchanged trigger mode.
+dt_margin,0.0005,Priority-1 metrics.json,Unchanged feasibility threshold.
+warning_margin,0.0008,Priority-1 metrics.json,Unchanged warning threshold.
+dt,0.05,Priority-1 metrics.json,Unchanged Euler step.
+max_steps,800,Priority-1 metrics.json,Unchanged stop limit.
+control_scale_list,"0,0.25,0.5,0.75,1.0",Priority-1 metrics.json,Unchanged scales.
+include_braking_sequences,true,Priority-1 metrics.json,Stage A preserves flag.
+include_repulsive_sequences,true,Priority-1 metrics.json,Stage A preserves flag.
+include_goal_directed_sequences,true,Priority-1 metrics.json,Stage A preserves flag.
+use_cem,false,Priority-1 metrics.json,Stage B preserves original false setting.
+seed_behavior,local_default_rng_73031_plus_1009_trial_plus_step,Priority-1 runner source,Stage B invokes original generator with unchanged args.
+cost_weights,"w_base=1.0;w_goal=0.2;w_smooth=0.1;w_safety=10.0",Priority-1 metrics.json,Unchanged original cost.
+startguard_projection_dir,work/risk_aware_cbf/results/v4_projection_flight_repair_needed,Priority-1 metrics.json,Unchanged repair source.
+use_startguard,true,Priority-1 metrics.json,Unchanged start repair configuration.
+checkpoint,outputs/flight/splatfacto/2024-09-12_172434/config.yml,v1.SCENES source,Original flight GSplat config.
+device,cuda:1,task preregistration,CUDA_VISIBLE_DEVICES=1 with parser device cuda.

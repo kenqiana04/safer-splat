@@ -1,0 +1,7 @@
+experiment_id,scene,trial_id,comparator,prototype,horizon,num_sequences,activation_mode,dt_margin,warning_margin,max_steps,run_order,seed_rule,included,notes
+v4c_hce_v0_active_01,flight,12,original_v4c_h3_n128,hierarchical_candidate_evaluation_v0,3,128,on_margin_violation,0.0005,0.0008,800,1,local_default_rng_73031_plus_1009_trial_plus_step,true,Formal active comparator run; warm-up excluded.
+v4c_hce_v0_active_02,flight,12,original_v4c_h3_n128,hierarchical_candidate_evaluation_v0,3,128,on_margin_violation,0.0005,0.0008,800,2,local_default_rng_73031_plus_1009_trial_plus_step,true,Formal active hierarchical run; Stage B uses original full generator.
+v4c_hce_v0_active_03,flight,13,original_v4c_h3_n128,hierarchical_candidate_evaluation_v0,3,128,on_margin_violation,0.0005,0.0008,800,3,local_default_rng_73031_plus_1009_trial_plus_step,true,Formal active hierarchical run.
+v4c_hce_v0_active_04,flight,13,original_v4c_h3_n128,hierarchical_candidate_evaluation_v0,3,128,on_margin_violation,0.0005,0.0008,800,4,local_default_rng_73031_plus_1009_trial_plus_step,true,Formal active comparator run.
+v4c_hce_v0_active_05,flight,14,original_v4c_h3_n128,hierarchical_candidate_evaluation_v0,3,128,on_margin_violation,0.0005,0.0008,800,5,local_default_rng_73031_plus_1009_trial_plus_step,true,Formal active comparator run.
+v4c_hce_v0_active_06,flight,14,original_v4c_h3_n128,hierarchical_candidate_evaluation_v0,3,128,on_margin_violation,0.0005,0.0008,800,6,local_default_rng_73031_plus_1009_trial_plus_step,true,Formal active hierarchical run.
