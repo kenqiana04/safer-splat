@@ -283,6 +283,21 @@ redesign implementation is included.
 - `work/risk_aware_cbf/paper_materials/NEXT_V4C_PROTOTYPE_DECISION.md`
 - `work/risk_aware_cbf/notes/NEXT_STEP_AFTER_V4C_MODULE_ANALYSIS.md`
 
+## R-V4C-1 Hierarchical Candidate Evaluation V0
+
+This bounded paired audit and active A/B evaluates deterministic-first V4-C
+candidate ordering on preregistered flight trials 12, 13, and 14. It preserves
+the original full search as conditional fallback and includes no full100,
+flight20, R1, planner, or core-source change.
+
+- `work/risk_aware_cbf/scripts/v4c_hierarchical_candidate_evaluator.py`
+- `work/risk_aware_cbf/scripts/v4c_candidate_family_metrics.py`
+- `work/risk_aware_cbf/scripts/check_v4c_hierarchical_contract.py`
+- `work/risk_aware_cbf/scripts/run_v4c_hierarchical_paired_audit.py`
+- `work/risk_aware_cbf/scripts/run_v4c_hierarchical_active_ab.py`
+- `work/risk_aware_cbf/results/v4c_hierarchical_candidate_evaluation_v0/`
+- `work/risk_aware_cbf/REPORT_V4C_HIERARCHICAL_CANDIDATE_EVALUATION_V0.md`
+
 ## SAFC Level-3C Fixed-C003 Targeted A/B
 
 The following artifacts compare no-op execution and warning-streak slowdown on

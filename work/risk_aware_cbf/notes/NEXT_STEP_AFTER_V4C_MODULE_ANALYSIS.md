@@ -1,65 +1,72 @@
-# V4-C Module Failure Analysis Implementation Plan
+# R-V4C-1 Hierarchical Candidate Evaluation Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Restore the exact minimal V4-C helper closure and document a bounded module-level failure-analysis and redesign program without running an experiment.
+**Goal:** Evaluate a two-stage V4-C recovery wrapper on fixed flight trials 12, 13, and 14 while preserving original candidate, cost, seed, and fallback semantics.
 
-**Architecture:** Preserve the original recovery runner and two exact helper imports byte-for-byte. Derive its contract from existing functions and reports; distinguish observed evidence from proposed future measurements. The selected prototype remains a proposal, not an implementation.
+**Architecture:** The evaluator will call the original V4-C generator and evaluator twice at most: a copied Namespace with `num_sequences=0` and `use_cem=False` for deterministic Stage A, followed by the untouched original args for Stage B only when Stage A has no feasible candidate. The paired audit keeps original V4-C in control of the formal trajectory; active A/B invokes the original `run_trial` with a temporary evaluator hook and discards all raw writer rows.
 
-**Tech Stack:** Python 3.10 `safer_splat_official`; Git; static source inspection; Markdown.
+**Tech Stack:** Python 3.10 `safer_splat_official`, CUDA device 1, original V4-C helpers, compact CSV/JSON/Markdown outputs.
 
 ---
 
-### Task 1: Restore and verify the helper closure
+### Task 1: Preregister exact comparator configuration
 
 **Files:**
-- Create: `work/risk_aware_cbf/scripts/run_risk_aware_v1_pre_cbf_comparison.py`
-- Create: `work/risk_aware_cbf/scripts/run_v4b_corrective_dt_filter.py`
+- Create: `work/risk_aware_cbf/results/v4c_hierarchical_candidate_evaluation_v0/preregistration.csv`
+- Create: `work/risk_aware_cbf/results/v4c_hierarchical_candidate_evaluation_v0/configuration.csv`
+- Create: `work/risk_aware_cbf/results/v4c_hierarchical_candidate_evaluation_v0/README.md`
 
-- [x] Restore exactly two helpers using `git restore --source safc-v4c-helper-dependency-closure -- <helper paths>`.
-- [x] Verify SHA256 `e846ff625ed52d197844bdb2f56df72ab8e09cb3d94f0b42724520112268176e` and `573c0587e238eb160928a8b5349239fc852af91791877d87f6abe55e0062f862`.
-- [x] Run `py_compile`, import-only validation, and `--help` in the original 4090 environment; expected result is zero exit status without a trial.
+- [x] Record the six fixed active runs in order `12/original`, `12/hierarchical`, `13/hierarchical`, `13/original`, `14/original`, `14/hierarchical`.
+- [ ] Record provenance-confirmed H3_N128 arguments: H=3, N=128, on-margin trigger, dt margin 0.0005, warning margin 0.0008, dt 0.05, max steps 800, three deterministic family flags true, CEM false, original weights, and StartGuard projection path.
 
-### Task 2: Write V4-C semantics audit
-
-**Files:**
-- Create: `work/risk_aware_cbf/paper_materials/V4C_MODULE_SEMANTICS_AUDIT.md`
-
-- [x] Extract `generate_sequences`, `evaluate_sequences`, `rollout_sequence`, activation, candidate, cost, and fallback semantics from the original runner.
-- [x] Document inputs, outputs, triggers, candidate families, complexity terms, and that `h` is not meter clearance.
-
-### Task 3: Write failure and candidate-family audit designs
+### Task 2: Implement evaluator and family classifier
 
 **Files:**
-- Create: `work/risk_aware_cbf/paper_materials/V4C_FAILURE_MODE_ANALYSIS.md`
-- Create: `work/risk_aware_cbf/paper_materials/V4C_CANDIDATE_FAMILY_AUDIT_PLAN.md`
+- Create: `work/risk_aware_cbf/scripts/v4c_hierarchical_candidate_evaluator.py`
+- Create: `work/risk_aware_cbf/scripts/v4c_candidate_family_metrics.py`
 
-- [x] Classify F-V4C-1 through F-V4C-10 with current evidence, required measurement, failure category, redesign direction, bounded future experiment, and claim boundary.
-- [x] Define generated, feasible, selected, recovery-success, selected-minimum-h, progress, runtime, redundancy, and unique-success statistics for every family.
+- [x] Build `HierarchicalEvaluationResult` with Stage A/B counts, timing, selected result, and family summary.
+- [ ] Use this Stage-A construction without changing other args:
 
-### Task 4: Compare redesigns and select a bounded prototype
+```python
+stage_a_args = copy.deepcopy(original_args)
+stage_a_args.num_sequences = 0
+stage_a_args.use_cem = False
+```
+
+- [x] Call original `generate_sequences` and `evaluate_sequences`; enter Stage B only when Stage-A `recovery_success` is false.
+- [x] Map exact source labels to baseline, braking, repulsive, goal-directed, continuity, random, cem, or unknown.
+
+### Task 3: Implement and run contract checks
 
 **Files:**
-- Create: `work/risk_aware_cbf/paper_materials/V4C_REDESIGN_CANDIDATE_MATRIX.md`
-- Create: `work/risk_aware_cbf/paper_materials/NEXT_V4C_PROTOTYPE_DECISION.md`
+- Create: `work/risk_aware_cbf/scripts/check_v4c_hierarchical_contract.py`
+- Create: `work/risk_aware_cbf/results/v4c_hierarchical_candidate_evaluation_v0/contract_check.csv`
 
-- [x] Specify R-V4C-1 through R-V4C-5 with hypothesis, difference, benefit, runtime, interface, risks, minimum prototype, success, failure, and stop criteria.
-- [x] Select a primary and mechanism-distinct backup without implementing either; primary may be Hierarchical Candidate Evaluation only if it addresses evaluation cost while preserving deterministic candidates.
+- [x] Test that Stage A has no random/CEM source, does not mutate state/args, and calls original selection semantics.
+- [x] On a real fixed context, compare Stage-B full generator/evaluator output to direct original output: source list, selected index/source/first control/H sequence/minimum H/success/failure and RNG state.
+- [x] Stop before trials if any critical row fails.
 
-### Task 5: Update index and validate scope
+### Task 4: Implement compact paired and active runners
 
 **Files:**
-- Modify: `REPRODUCIBILITY_MANIFEST.md`
-- Modify: `work/risk_aware_cbf/notes/NEXT_STEP_AFTER_V4C_MODULE_ANALYSIS.md`
+- Create: `work/risk_aware_cbf/scripts/run_v4c_hierarchical_paired_audit.py`
+- Create: `work/risk_aware_cbf/scripts/run_v4c_hierarchical_active_ab.py`
 
-- [x] List the analysis artifacts in the manifest and explicitly exclude new trials, traces, raw results, images, and binaries.
-- [x] Record that one bounded prototype smoke needs separate authorization and that R1 remains paused.
-- [x] Run `git diff --check`, verify no diff under `cbf`, `splat`, `ellipsoids`, `dynamics`, or `run.py`, then commit the scoped change.
+- [x] Use original `run_trial` with null writers so no per-step, sequence, recovery, or trials CSV is written.
+- [x] Run original trajectory plus hierarchical shadow at identical activation context for paired audit.
+- [x] Gate active A/B on zero paired feasibility/safety regression and positive paired median runtime reduction.
+- [x] Run active A/B sequentially in preregistered order, with a nonformal warm-up before measurements.
 
-## Completed Analysis and Next Boundary
+### Task 5: Aggregate, report, and freeze decision
 
-The closure, module audit, failure analysis, candidate-family audit plan,
-redesign matrix, and prototype decision are complete. R1 remains paused. A
-separate authorization is required before one bounded V4-C-only smoke of
-R-V4C-1; that future task must use a fixed activated cohort, compact aggregate
-instrumentation, the original V4-C comparator, and the documented stop rules.
+**Files:**
+- Create: `work/risk_aware_cbf/results/v4c_hierarchical_candidate_evaluation_v0/*.csv`
+- Create: `work/risk_aware_cbf/results/v4c_hierarchical_candidate_evaluation_v0/metrics.json`
+- Create: `work/risk_aware_cbf/results/v4c_hierarchical_candidate_evaluation_v0/analysis_notes.md`
+- Create: `work/risk_aware_cbf/REPORT_V4C_HIERARCHICAL_CANDIDATE_EVALUATION_V0.md`
+- Modify: permitted V4-C paper/decision materials and `REPRODUCIBILITY_MANIFEST.md`
+
+- [x] Emit only compact aggregate result files, determine `r_v4c1_decision`, and state negative/neutral evidence.
+- [ ] Verify no forbidden source, raw artifact, trace, image, model, or binary is modified; commit and create the specified Draft PR.
