@@ -93,7 +93,13 @@ def download(url: str, destination: Path, resume: bool) -> dict[str, object]:
     partial = destination.with_suffix(destination.suffix + ".partial")
     if destination.exists():
         return {"source_url": url, "resolved_url": url, "downloaded": True, "local_path": str(destination), "local_size": destination.stat().st_size, "sha256": sha256(destination), "verification_status": "already_present", "notes": "Existing archive was not overwritten."}
-    command = ["wget", "--continue" if resume else "--no-clobber", "--timeout=30", "--tries=5", "--server-response", f"--output-document={partial}", url]
+    head_info = head(url)
+    if head_info["head_status"] == "error":
+        raise RuntimeError(f"Official source HEAD failed: {head_info['notes']}")
+    if shutil.which("aria2c"):
+        command = ["aria2c", "--continue=true" if resume else "--continue=false", "--max-connection-per-server=8", "--split=8", "--timeout=30", "--max-tries=5", "--file-allocation=none", "--auto-file-renaming=false", f"--dir={destination.parent}", f"--out={partial.name}", url]
+    else:
+        command = ["wget", "--continue" if resume else "--no-clobber", "--timeout=30", "--tries=5", "--server-response", f"--output-document={partial}", url]
     completed = subprocess.run(command, text=True, capture_output=True, check=False)
     if completed.returncode != 0:
         raise RuntimeError(f"wget failed with exit code {completed.returncode}: {(completed.stderr or completed.stdout)[-500:]}")
@@ -104,7 +110,7 @@ def download(url: str, destination: Path, resume: bool) -> dict[str, object]:
         except (tarfile.TarError, OSError) as exc:
             raise RuntimeError(f"Downloaded archive failed gzip/tar verification: {exc}") from exc
     os.replace(partial, destination)
-    return {"source_url": url, "resolved_url": url, "downloaded": True, "local_path": str(destination), "local_size": destination.stat().st_size, "sha256": sha256(destination), "verification_status": "downloaded", "notes": f"wget completed; gzip/tar verified before atomic rename from {partial.name}"}
+    return {"source_url": url, "resolved_url": str(head_info["resolved_url"]), "downloaded": True, "local_path": str(destination), "local_size": destination.stat().st_size, "sha256": sha256(destination), "verification_status": "downloaded", "notes": f"HTTP {head_info['head_status']}; resumable downloader completed; gzip/tar verified before atomic rename from {partial.name}"}
 
 
 def clone_replica(manifest_root: Path, license_dir: Path) -> dict[str, object]:
