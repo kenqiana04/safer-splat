@@ -97,7 +97,7 @@ def download(url: str, destination: Path, resume: bool) -> dict[str, object]:
     if head_info["head_status"] == "error":
         raise RuntimeError(f"Official source HEAD failed: {head_info['notes']}")
     if shutil.which("aria2c"):
-        command = ["aria2c", "--continue=true" if resume else "--continue=false", "--max-connection-per-server=8", "--split=8", "--timeout=30", "--max-tries=5", "--file-allocation=none", "--auto-file-renaming=false", f"--dir={destination.parent}", f"--out={partial.name}", url]
+        command = ["aria2c", "--continue=true" if resume else "--continue=false", "--max-connection-per-server=32", "--split=32", "--min-split-size=1M", "--timeout=30", "--max-tries=5", "--file-allocation=none", "--auto-file-renaming=false", f"--dir={destination.parent}", f"--out={partial.name}", url]
     else:
         command = ["wget", "--continue" if resume else "--no-clobber", "--timeout=30", "--tries=5", "--server-response", f"--output-document={partial}", url]
     completed = subprocess.run(command, text=True, capture_output=True, check=False)
