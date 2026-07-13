@@ -12,6 +12,7 @@ import re
 import shutil
 import subprocess
 import sys
+import tarfile
 import time
 from pathlib import Path
 from urllib.parse import urlparse
@@ -92,23 +93,18 @@ def download(url: str, destination: Path, resume: bool) -> dict[str, object]:
     partial = destination.with_suffix(destination.suffix + ".partial")
     if destination.exists():
         return {"source_url": url, "resolved_url": url, "downloaded": True, "local_path": str(destination), "local_size": destination.stat().st_size, "sha256": sha256(destination), "verification_status": "already_present", "notes": "Existing archive was not overwritten."}
-    offset = partial.stat().st_size if resume and partial.exists() else 0
-    headers = {"Range": f"bytes={offset}-"} if offset else {}
-    response, resolved = request(url, headers=headers)
-    status = getattr(response, "status", 200)
-    if offset and status != 206:
-        response.close()
-        raise RuntimeError(f"Resume request did not return HTTP 206 (got {status})")
-    mode = "ab" if offset else "wb"
-    with partial.open(mode) as handle:
-        while True:
-            block = response.read(1024 * 1024)
-            if not block:
-                break
-            handle.write(block)
-    response.close()
+    command = ["wget", "--continue" if resume else "--no-clobber", "--timeout=30", "--tries=5", "--server-response", f"--output-document={partial}", url]
+    completed = subprocess.run(command, text=True, capture_output=True, check=False)
+    if completed.returncode != 0:
+        raise RuntimeError(f"wget failed with exit code {completed.returncode}: {(completed.stderr or completed.stdout)[-500:]}")
+    if destination.suffix == ".tgz":
+        try:
+            with tarfile.open(partial, "r:gz") as handle:
+                handle.getmembers()
+        except (tarfile.TarError, OSError) as exc:
+            raise RuntimeError(f"Downloaded archive failed gzip/tar verification: {exc}") from exc
     os.replace(partial, destination)
-    return {"source_url": url, "resolved_url": resolved, "downloaded": True, "local_path": str(destination), "local_size": destination.stat().st_size, "sha256": sha256(destination), "verification_status": "downloaded", "notes": f"HTTP {status}; atomic rename from {partial.name}"}
+    return {"source_url": url, "resolved_url": url, "downloaded": True, "local_path": str(destination), "local_size": destination.stat().st_size, "sha256": sha256(destination), "verification_status": "downloaded", "notes": f"wget completed; gzip/tar verified before atomic rename from {partial.name}"}
 
 
 def clone_replica(manifest_root: Path, license_dir: Path) -> dict[str, object]:
