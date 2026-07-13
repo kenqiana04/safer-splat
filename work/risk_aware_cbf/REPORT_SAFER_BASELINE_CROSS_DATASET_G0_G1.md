@@ -14,7 +14,7 @@
 
 ## 4. Search Scope and Dataset Inventory
 
-搜索根目录为 `/disk1/zlab/projects`、`/disk1/zlab/data`、`/disk1/zlab/datasets`、`/disk1/zlab/checkpoints`、`C:\Users\zlab\Documents` 和 `C:\Users\zlab\Desktop`。本地发现 525 个候选目录。
+搜索根目录为 `/disk1/zlab/projects`、`/disk1/zlab/data`、`/disk1/zlab/datasets`、`/disk1/zlab/checkpoints`、`C:\Users\zlab\Documents` 和 `C:\Users\zlab\Desktop`。本地发现 15 个候选目录。
 
 ## 5. Dataset Provenance
 
