@@ -33,3 +33,7 @@ The prior H2/N64 result is useful evidence that sequence-evaluation cost matters
 ## Next Boundary
 
 R1 remains paused. The next task, if separately authorized, is one bounded V4-C-only primary-prototype smoke with a fixed cohort and explicit aggregate instrumentation. It must not run flight20/full100, active R1, planner work, or safe-halt work.
+
+## Held-Out Validation Update
+
+R-V4C-1 V0 passed its comparator-defined flight H3_N128 held-out cohort: 16 trials and 201 activation contexts, with zero paired feasibility regression, zero collision/QP regression, unchanged progress, and a 79.47% activated-step median runtime reduction. Stage A selected 167 contexts; Stage B entered the remaining 34 and preserved the original full-search failed outcome. Retain this V0 only as a configuration-specific recovery-efficiency mechanism; R1 remains paused and cross-scene/generalized claims remain unsupported.

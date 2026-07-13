@@ -26,3 +26,7 @@ evaluation. F-V4C-4, F-V4C-7, and F-V4C-8 require family/selection telemetry
 before deciding whether random candidates or scalar cost are the root cause.
 F-V4C-5, F-V4C-6, and F-V4C-10 are deliberately not collapsed into a local
 recovery-success metric.
+
+## R-V4C-1 Held-Out Evidence
+
+The held-out flight H3_N128 cohort directly supports F-V4C-3: original activated-step median evaluation time was 8.00 s versus 1.64 s for hierarchical V0. F-V4C-4 is not resolved as a general claim: random was selected zero times and had zero unique-feasible contexts in this cohort, while Stage B entered 34 contexts and reproduced original failures. This is bounded evidence, not authorization to remove random families or change the original cost.

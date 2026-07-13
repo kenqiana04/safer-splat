@@ -1,0 +1,17 @@
+check_id,passed,critical,notes
+stage_a_no_random,True,True,Stage A generated with num_sequences=0.
+stage_a_no_cem,True,True,Stage A generated with use_cem=False.
+stage_a_uses_original_evaluate,True,True,Returned object is from original evaluate_sequences.
+state_unchanged_after_stage_a,True,True,Original rollout clones input state.
+original_args_unchanged_after_stage_a,True,True,Stage A uses a deep-copied Namespace.
+stage_b_source_list,True,True,Stage-B uses the untouched original full generator.
+stage_b_selected_source,True,True,Selected source matches direct original full evaluation.
+stage_b_selected_first_control,True,True,First control matches exactly.
+stage_b_h_sequence,True,True,Horizon h sequence matches exactly.
+stage_b_min_h,True,True,Selected horizon minimum h matches.
+stage_b_success_failed,True,True,Success and failure flags match.
+rng_unchanged_direct,True,True,Original local default RNG does not alter global RNG state.
+rng_unchanged_stage_b,True,True,Forced Stage-B full generation preserves global RNG state.
+state_unchanged_after_stage_b,True,True,No formal state propagation occurs in contract check.
+original_args_unchanged_after_stage_b,True,True,Full args are not mutated.
+no_formal_command_execution,True,True,"Check calls only generation/evaluation, never run_trial."
