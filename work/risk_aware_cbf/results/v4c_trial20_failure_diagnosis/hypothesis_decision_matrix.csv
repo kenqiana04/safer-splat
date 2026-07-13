@@ -1,0 +1,7 @@
+hypothesis_id,hypothesis,evidence_for,evidence_against,contexts_supporting,contexts_refuting,status,recommended_redesign,claim_boundary
+H-T20-1,search coverage,0,True,0,3,not_supported,inconclusive_due_to_evaluation_limits,representative shadow only
+H-T20-2,horizon insufficiency,0,True,0,3,not_supported,inconclusive_due_to_evaluation_limits,H4/H5 shadow only
+H-T20-3,late trigger,False,True,0,34,not_supported,none,earlier states are H3/N128 shadows only
+H-T20-4,bounded control authority,True,False,34,0,partially_supported,inconclusive_due_to_evaluation_limits,dynamics envelope is not controllability proof
+H-T20-5,family mismatch,True,False,34,0,partially_supported,inconclusive_due_to_evaluation_limits,no new primitive tested
+H-T20-6,persistent repeated context,False,True,0,0,partially_supported,inconclusive_due_to_evaluation_limits,hashed critical IDs only
