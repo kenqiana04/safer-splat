@@ -225,6 +225,18 @@ performance improvement:
 No raw traces, per-step dumps, full `trials.csv`, active-constraint dumps,
 trajectory samples, JSONL logs, or binary files are included.
 
+## R-V4C-1 Held-Out Activated Cohort
+
+The frozen V4-C hierarchical V0 held-out validation is represented by:
+
+- `work/risk_aware_cbf/scripts/select_v4c_heldout_activated_cohort.py`
+- `work/risk_aware_cbf/scripts/run_v4c_hierarchical_heldout_paired_audit.py`
+- `work/risk_aware_cbf/scripts/run_v4c_hierarchical_heldout_active_ab.py`
+- `work/risk_aware_cbf/REPORT_V4C_HIERARCHICAL_HELDOUT_ACTIVATED_COHORT.md`
+- `work/risk_aware_cbf/results/v4c_hierarchical_heldout_activated_cohort/`
+
+The compact directory contains the comparator-derived inventory, preregistered cohorts/order, contract and paired gates, aggregate A/B, stage, family, runtime, progress, safety, nonactivated-control summaries, metrics, and notes. No raw comparator `trials.csv`, controls, per-step records, JSONL, traces, trajectory samples, images, models, or checkpoints are included.
+
 ## R1 Supervisory Mode Interface Audit
 
 These artifacts record a Stage 0 interface stop for the R1

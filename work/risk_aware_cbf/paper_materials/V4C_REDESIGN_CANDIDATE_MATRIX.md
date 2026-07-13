@@ -13,3 +13,7 @@ None of these candidates is implemented by this task. Each is a bounded module-l
 ## Comparison
 
 R-V4C-1 directly addresses supported runtime concentration without changing CBF-QP or inventing a new objective. R-V4C-5 is a complementary activation mechanism. R-V4C-2 requires stronger feature/cap evidence; R-V4C-3 requires recurrence telemetry; and R-V4C-4 requires Pareto evidence before changing selection. None is a planner, learned policy, or safety proof.
+
+## R-V4C-1 Status
+
+Frozen hierarchical V0 is retained for the validated flight H3_N128 configuration only. Its held-out audit met the feasibility, safety, runtime, progress, and nonactivated-path guardrails, but Stage B was exercised only on contexts that remained failed under the original full search. No candidate-family removal, parameter tuning, broader benchmark, or R1 work is authorized by this result.
