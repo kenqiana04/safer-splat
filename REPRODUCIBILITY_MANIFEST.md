@@ -305,6 +305,20 @@ does not claim generalized safety performance improvement.
 No raw traces, per-step dumps, full `trials.csv`, active constraints,
 trajectory samples, JSONL logs, images, or binary files are included.
 
+## SAFER Baseline Cross-Dataset G0-G1 Audit
+
+The following wrapper-only artifacts perform a source-aware G0 asset inventory and provide the bounded G1 compatibility, admission, parity, smoke, and analysis pipeline. The current report records a blocked audit when verified independent assets are unavailable; it does not modify official SAFER source or claim generalized performance.
+
+- `work/risk_aware_cbf/scripts/audit_cross_dataset_scene_assets.py`
+- `work/risk_aware_cbf/scripts/validate_cross_dataset_gsplat_compatibility.py`
+- `work/risk_aware_cbf/scripts/generate_cross_dataset_baseline_pairs.py`
+- `work/risk_aware_cbf/scripts/run_safer_baseline_cross_dataset_smoke.py`
+- `work/risk_aware_cbf/scripts/analyze_safer_baseline_cross_dataset_g0_g1.py`
+- `work/risk_aware_cbf/results/safer_baseline_cross_dataset_g0_g1/`
+- `work/risk_aware_cbf/REPORT_SAFER_BASELINE_CROSS_DATASET_G0_G1.md`
+
+No third-party dataset, checkpoint, raw trace, JSONL, trajectory, image, video, or binary artifact is included.
+
 ## SAFC Final Method-Validation Package
 
 These artifacts consolidate existing methodology and validation evidence. They
