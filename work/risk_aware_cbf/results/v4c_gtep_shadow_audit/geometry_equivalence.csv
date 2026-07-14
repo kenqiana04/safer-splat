@@ -1,0 +1,4 @@
+context_id,h_source,h_adapter,h_abs_error,critical_id_source,critical_id_adapter,gradient_source_available,gradient_adapter,gradient_abs_error,normal_increases_h,state_unchanged,equivalence_passed,notes
+1,0.00036034989170730114,0.00036034989170730114,0.0,94092,94092,True,existing_query_distance_analytic,0.0,True,True,True,Adapter delegates to existing ball-to-ellipsoid analytic query; no finite differences.
+18,0.0003826146712526679,0.0003826146712526679,0.0,99455,99455,True,existing_query_distance_analytic,0.0,True,True,True,Adapter delegates to existing ball-to-ellipsoid analytic query; no finite differences.
+34,0.0004666093736886978,0.0004666093736886978,0.0,253468,253468,True,existing_query_distance_analytic,0.0,True,True,True,Adapter delegates to existing ball-to-ellipsoid analytic query; no finite differences.

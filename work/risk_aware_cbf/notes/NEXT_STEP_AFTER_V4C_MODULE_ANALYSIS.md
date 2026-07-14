@@ -1,47 +1,39 @@
-# V4-C Trial-20 Recovery Failure Diagnosis Implementation Plan
+# R-V4C-6 GTEP Shadow Audit Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Diagnose the 34 original V4-C recovery failures concentrated in flight trial 20 using fixed-comparator replay and compact shadow counterfactuals, without changing recovery controls or HCE V0.
+**Goal:** Evaluate a fixed geometry-conditioned tangential primitive bank only as a shadow counterfactual on all 34 original trial-20 activation states.
 
-**Architecture:** A diagnosis runner temporarily observes original V4-C generation/evaluation during a formal original-comparator replay, retaining only compact derived activation fields and keeping earlier states in memory. It then evaluates preregistered search, horizon, and trigger shadows on comparator-derived representative contexts. A separate dynamics helper derives bounded position-deviation envelopes without claiming safety or controllability proof.
+**Architecture:** A read-only adapter invokes the existing ball-to-ellipsoid analytic `h` and position gradient. An equivalence checker verifies source/adapter values and state isolation before a fixed primitive bank uses the original clamp, dynamics, and GSplat query for H3 rollouts; H5 is diagnostic-only and conditional.
 
-**Tech Stack:** Python 3.10 `safer_splat_official`, CUDA device 1, frozen V4-C helpers, compact CSV/JSON/Markdown artifacts.
+**Tech Stack:** Python 3.10 `safer_splat_official`, CUDA device 1, frozen GSplat/V4-C utilities, compact CSV/JSON/Markdown artifacts.
 
 ---
 
-### Task 1: Establish provenance and compact output schema
+### Task 1: Barrier semantics and adapter
 
 **Files:**
-- Create: `work/risk_aware_cbf/results/v4c_trial20_failure_diagnosis/README.md`
-- Create: `work/risk_aware_cbf/results/v4c_trial20_failure_diagnosis/preregistration.csv`
+- Create: `work/risk_aware_cbf/paper_materials/GTEP_BARRIER_GEOMETRY_SEMANTICS_AUDIT.md`
+- Create: `work/risk_aware_cbf/scripts/gsplat_barrier_geometry_adapter.py`
+- Create: `work/risk_aware_cbf/scripts/check_gtep_geometry_equivalence.py`
 
-- [x] Create the isolated branch from `a83259798e0e4b1a2c7fcdce2617ebd8783ebcc3` and a restore checkpoint.
-- [ ] Record the original H3_N128 comparator contract and mark every diagnostic as shadow-only.
+- [x] Confirm the existing ball-to-ellipsoid path returns analytic position gradients.
+- [ ] Wrap the existing query without changing `h`, check its gradient/normal/critical index and state isolation on preregistered contexts.
 
-### Task 2: Implement fixed-comparator replay observation
-
-**Files:**
-- Create: `work/risk_aware_cbf/scripts/run_v4c_trial20_failure_diagnosis.py`
-
-- [ ] Hook only original generator/evaluator calls during trial-20 formal replay and retain exactly one compact derived row per activation.
-- [ ] Assert 34 activations, 34 recovery failures, 34 executed-H violations, zero collision/QP infeasibility, and `stopped_before_goal` before running shadows.
-- [ ] Build streak, family, representative-context, and original-family compact summaries without controls, raw state vectors, or per-step trajectories.
-
-### Task 3: Implement bounded shadow diagnostics
+### Task 2: Fixed primitive bank and shadow evaluator
 
 **Files:**
-- Create: `work/risk_aware_cbf/scripts/analyze_v4c_bounded_reachability.py`
+- Create: `work/risk_aware_cbf/scripts/v4c_geometry_tangential_primitives.py`
+- Create: `work/risk_aware_cbf/scripts/run_v4c_gtep_shadow_audit.py`
 
-- [ ] Evaluate only representative comparator-derived contexts under H3/N512, H3/CEM when parser-fixed, H4/N128, H5/N128, and earlier H3/N128 states in memory.
-- [ ] Derive H1-H5 acceleration-bounded position-deviation envelopes, independent of collision geometry.
-- [ ] Emit compact variant/hypothesis summaries and a unique redesign decision.
+- [ ] Generate no more than 24 deterministic clamped P0-P6 candidates per context from the verified analytic normal.
+- [ ] Replay original trial-20 controls solely to obtain the 34 formal states, and shadow-evaluate the fixed bank with original dynamics/query semantics.
+- [ ] Emit compact family, progress, critical-ID, isolation, positive-control, and conditional H5 summaries.
 
-### Task 4: Report, verify, and publish
+### Task 3: Report and publication
 
 **Files:**
-- Create: `work/risk_aware_cbf/REPORT_V4C_TRIAL20_RECOVERY_FAILURE_DIAGNOSIS.md`
+- Create: `work/risk_aware_cbf/REPORT_V4C_GTEP_SHADOW_FEASIBILITY.md`
 - Modify: permitted V4-C materials and `REPRODUCIBILITY_MANIFEST.md`
 
-- [ ] Verify all result artifacts are compact and forbidden/core paths are unchanged.
-- [ ] Copy the final REPORT only to `C:\\Users\\zlab\\Desktop\\REPORT`, commit, push, and create the required Draft PR.
+- [ ] Validate no raw or forbidden artifacts, copy REPORT to the desktop REPORT directory, commit, push, and create the draft PR.
