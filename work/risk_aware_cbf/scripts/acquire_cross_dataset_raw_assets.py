@@ -30,6 +30,7 @@ REPLICA_TAG = "v1.0"
 RESERVE_BYTES = 50 * 1024**3
 TUM_FALLBACK_BYTES = int(0.73 * 1024**3)
 TUM_EXTRACT_ESTIMATE_BYTES = 3 * 1024**3
+REPLICA_EXTRACT_MULTIPLIER = 2
 
 
 def sha256(path: Path) -> str:
@@ -129,9 +130,14 @@ def clone_replica(manifest_root: Path, license_dir: Path) -> dict[str, object]:
     copied_license = license_dir / "replica_LICENSE.txt"
     shutil.copyfile(license_path, copied_license)
     script_text = script_path.read_text(encoding="utf-8", errors="replace")
-    urls = sorted(set(re.findall(r"https?://[^\s\"']+", script_text)))
     parts = [f"replica_v1_0.tar.gz.part{chr(first)}{chr(second)}" for first in range(ord("a"), ord("a") + 1) for second in range(ord("a"), ord("q") + 1)]
-    return {"repo": str(repo), "commit": commit, "license_path": str(copied_license), "license_sha256": sha256(license_path), "readme_sha256": sha256(readme_path), "download_script": str(script_path), "download_script_sha256": sha256(script_path), "urls": urls, "expected_parts": parts, "citation": "Straub et al., The Replica Dataset: A Digital Replica of Indoor Spaces, arXiv:1906.05797", "tag": REPLICA_TAG}
+    urls = sorted(set(re.findall(r"https?://[^\s\"']+", script_text)))
+    part_template = next((url for url in urls if "$p" in url), None)
+    if not part_template:
+        raise RuntimeError("Official Replica download script no longer exposes the expected part URL template.")
+    part_urls = [part_template.replace("$p", part[-1]) for part in parts]
+    direct_urls = [url for url in urls if "$p" not in url]
+    return {"repo": str(repo), "commit": commit, "license_path": str(copied_license), "license_sha256": sha256(license_path), "readme_sha256": sha256(readme_path), "download_script": str(script_path), "download_script_sha256": sha256(script_path), "urls": sorted(set(direct_urls + part_urls)), "expected_parts": parts, "citation": "Straub et al., The Replica Dataset: A Digital Replica of Indoor Spaces, arXiv:1906.05797", "tag": REPLICA_TAG}
 
 
 def main() -> int:
@@ -142,6 +148,7 @@ def main() -> int:
     parser.add_argument("--result-dir", type=Path, default=RESULT_DIR)
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--verify-only", action="store_true")
+    parser.add_argument("--tum-archive-provenance", choices=("not_recorded", "user_provided_local_transfer"), default="not_recorded")
     args = parser.parse_args()
     root = args.asset_root.resolve()
     downloads, raw, manifests, licenses, approvals, tmp = (root / "downloads", root / "raw", root / "manifests", root / "licenses", root / "approvals", root / "tmp")
@@ -173,26 +180,38 @@ def main() -> int:
     tum_gate.update({"dataset_id": "TUM_FR1_ROOM", "size_source": "http_head" if tum_head["content_length"] else "official_page_approximation", "estimated_extracted_bytes": TUM_EXTRACT_ESTIMATE_BYTES})
     storage_rows.append(tum_gate)
     state["tum"].update({"head": tum_head, "storage_gate": tum_gate, "download_attempted": False})
+    archive = downloads / "rgbd_dataset_freiburg1_room.tgz"
+    if archive.exists() and args.tum_archive_provenance == "user_provided_local_transfer":
+        state["tum"]["archive_provenance"] = {"mode": "user_provided_local_transfer", "direct_official_download_by_this_task": False, "notes": "User-provided local archive was transferred to the external asset root; its size matches the recorded official HEAD response."}
     if args.dataset in {"tum_rgbd", "all"} and not args.dry_run and not args.verify_only and tum_gate["storage_gate_passed"]:
-        archive = downloads / "rgbd_dataset_freiburg1_room.tgz"
         result = download(TUM_URL, archive, args.resume)
         download_rows.append({"dataset_id": "TUM_FR1_ROOM", **result})
-        state["tum"].update({"download_attempted": True, "archive": result})
+        state["tum"].update({"download_attempted": result["verification_status"] == "downloaded", "archive": result})
+        if result["verification_status"] == "downloaded":
+            state["tum"]["archive_provenance"] = {"mode": "official_automated_download", "direct_official_download_by_this_task": True, "notes": "Downloaded from the official TUM sequence URL by this task."}
+        elif "archive_provenance" not in state["tum"]:
+            state["tum"]["archive_provenance"] = {"mode": "preexisting_archive_unattributed", "direct_official_download_by_this_task": False, "notes": "Existing archive was retained without overwrite; its original acquisition path was not recorded by this task."}
     marker = approvals / "replica_research_terms_accepted.txt"
     marker_present = marker.is_file() and marker.stat().st_size > 0
     state["replica"].update({"manual_acceptance_marker_present": marker_present, "download_attempted": False, "status": "waiting_for_manual_license_confirmation" if not marker_present else "pending_storage_gate"})
     replica_urls = state["replica"].get("urls", [])
     replica_lengths = [head(url) for url in replica_urls if host_allowed(url)]
-    replica_known_bytes = sum(int(item["content_length"] or 0) for item in replica_lengths)
-    replica_gate = disk_gate(root, replica_known_bytes * 2 if replica_known_bytes else 0)
-    replica_gate.update({"dataset_id": "REPLICA_V1", "size_source": "official_download_script_head" if replica_known_bytes else "unknown", "estimated_extracted_bytes": replica_known_bytes, "replica_storage_status": "known" if replica_known_bytes else "unknown"})
+    replica_sizes_known = bool(replica_lengths) and len(replica_lengths) == len(replica_urls) and all(isinstance(item["content_length"], int) and int(item["content_length"]) > 0 for item in replica_lengths)
+    replica_known_bytes = sum(int(item["content_length"] or 0) for item in replica_lengths) if replica_sizes_known else 0
+    replica_extracted_estimate = replica_known_bytes * REPLICA_EXTRACT_MULTIPLIER if replica_sizes_known else None
+    replica_required_bytes = replica_known_bytes + int(replica_extracted_estimate or 0)
+    replica_gate = disk_gate(root, replica_required_bytes) if replica_sizes_known else {"asset_root": str(root), "total_bytes": shutil.disk_usage(root).total, "available_bytes": shutil.disk_usage(root).free, "download_estimated_bytes": None, "minimum_reserve_bytes": RESERVE_BYTES, "storage_gate_passed": False}
+    if replica_sizes_known:
+        replica_gate["download_estimated_bytes"] = replica_known_bytes
+        replica_gate["combined_space_requirement_bytes"] = replica_required_bytes
+    replica_gate.update({"dataset_id": "REPLICA_V1", "size_source": "official_download_script_head" if replica_sizes_known else "unknown", "estimated_extracted_bytes": replica_extracted_estimate, "replica_storage_status": "known" if replica_sizes_known else "unknown"})
     storage_rows.append(replica_gate)
     state["replica"].update({"storage_gate": replica_gate, "download_part_heads": replica_lengths})
     if marker_present and args.dataset in {"replica", "all"} and not args.dry_run and not args.verify_only and replica_gate["storage_gate_passed"]:
         raise RuntimeError("Replica marker is present, but automated execution of the official script is intentionally delegated to a separately reviewed invocation.")
     write_csv(args.result_dir / "source_inventory.csv", ["dataset_id", "official_source", "verified", "reference", "notes"], source_rows)
     write_csv(args.result_dir / "license_summary.csv", ["dataset_id", "license_status", "license_path", "license_sha256", "notes"], license_rows)
-    write_csv(args.result_dir / "storage_gate_summary.csv", ["dataset_id", "asset_root", "total_bytes", "available_bytes", "download_estimated_bytes", "estimated_extracted_bytes", "minimum_reserve_bytes", "storage_gate_passed", "size_source", "replica_storage_status"], storage_rows)
+    write_csv(args.result_dir / "storage_gate_summary.csv", ["dataset_id", "asset_root", "total_bytes", "available_bytes", "download_estimated_bytes", "estimated_extracted_bytes", "combined_space_requirement_bytes", "minimum_reserve_bytes", "storage_gate_passed", "size_source", "replica_storage_status"], storage_rows)
     write_csv(args.result_dir / "download_manifest.csv", ["dataset_id", "source_url", "resolved_url", "downloaded", "local_path", "local_size", "sha256", "verification_status", "notes"], download_rows)
     (manifests / "raw_acquisition_state.json").write_text(json.dumps(state, indent=2), encoding="utf-8")
     print(json.dumps({"tum_download_attempted": state["tum"].get("download_attempted"), "replica_status": state["replica"].get("status"), "replica_marker_present": marker_present}, indent=2))
