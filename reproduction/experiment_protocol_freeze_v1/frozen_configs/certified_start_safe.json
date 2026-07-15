@@ -1,0 +1,15 @@
+{
+  "id": "certified_start_safe",
+  "role": "initial-state certification and active-set verified projection",
+  "source": ["work/risk_aware_cbf/REPORT_STARTGUARD_FLIGHT100.md"],
+  "frozen_values": {
+    "trial_count": 100,
+    "initial_safe_count": 92,
+    "initial_near_unsafe_count": 7,
+    "initial_unsafe_count": 1,
+    "repair_needed_count": 8,
+    "repair_success_count": 8,
+    "reporting_rule": "original and post-repair navigation remain separate"
+  },
+  "unresolved": ["per-trial repair manifest in this repository snapshot", "historical seed"]
+}

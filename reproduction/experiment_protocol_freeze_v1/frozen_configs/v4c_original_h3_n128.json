@@ -1,0 +1,3 @@
+{
+  "id": "v4c_original", "role": "triggered predictive recovery reference", "source": ["work/risk_aware_cbf/REPORT_V4C_FLIGHT100_VALIDATION.md", "work/risk_aware_cbf/scripts/run_v4c_hstep_predictive_recovery.py"], "frozen_values": {"scene": "flight", "horizon": 3, "num_sequences": 128, "activation_mode": "on_margin_violation", "dt_margin": 0.0005, "method": "risk_aware_v1_bestD", "execute": "first selected control then replan"}, "unresolved": ["historical seed", "full hardware/warmup record"]
+}

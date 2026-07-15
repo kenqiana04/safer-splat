@@ -1,0 +1,108 @@
+{
+  "status": "PASS_WITH_UNRESOLVED_NONCRITICAL_FIELDS",
+  "freeze_parent": "41ccb54d2e9f10c0b3b559431a58a5763977d462",
+  "checks": [
+    {
+      "check": "required:EXPERIMENT_PROTOCOL_FROZEN_V1.md",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "required:METRICS_AND_FAILURE_TAXONOMY.md",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "required:config_registry.yaml",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "required:dataset_registry.yaml",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "required:trial_set_registry.yaml",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "required:provenance/commit_reachability.json",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "required:provenance/source_file_inventory.csv",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "required:commit_lock.json",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "required:freeze_bundle_sha256.json",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "all_required_commits_resolve",
+      "passed": true,
+      "detail": "all required commit objects resolve"
+    },
+    {
+      "check": "nonancestor_history_recorded",
+      "passed": true,
+      "detail": "v4c_helper_dependency_closure"
+    },
+    {
+      "check": "source_inventory_hashes",
+      "passed": true,
+      "detail": "all source hashes match"
+    },
+    {
+      "check": "source_inventory_readable",
+      "passed": true,
+      "detail": "all indexed source evidence readable"
+    },
+    {
+      "check": "freeze_bundle_hashes",
+      "passed": true,
+      "detail": "bundle hashes match"
+    },
+    {
+      "check": "heldout_count",
+      "passed": true,
+      "detail": "heldout=[20, 27, 31, 32, 34, 35, 36, 37, 38, 59, 61, 71, 85, 86, 93, 94]"
+    },
+    {
+      "check": "development_heldout_disjoint",
+      "passed": true,
+      "detail": "development [12,13,14] is disjoint"
+    },
+    {
+      "check": "trial20_order",
+      "passed": true,
+      "detail": "activation indices=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]"
+    },
+    {
+      "check": "allowed_path_only",
+      "passed": true,
+      "detail": "all changed paths are inside freeze directory"
+    },
+    {
+      "check": "freeze_parent",
+      "passed": true,
+      "detail": "merge-base=41ccb54d2e9f10c0b3b559431a58a5763977d462"
+    },
+    {
+      "check": "configuration_conflicts",
+      "passed": true,
+      "detail": "no recorded H/N/margin conflict"
+    }
+  ],
+  "failed_checks": [],
+  "note": "No GPU experiment or rerun was performed. Unresolved registry fields are explicitly marked and are not inferred."
+}

@@ -1,0 +1,20 @@
+datasets:
+  - id: stonehenge_official
+    scene: stonehenge
+    checkpoint: outputs/stonehenge/splatfacto/2024-09-11_100724/config.yml
+    checkpoint_status: source_recorded
+    data_path: data/stonehenge
+    data_path_status: unresolved_in_this_freeze
+    source: run.py:52; reproduction/OFFICIAL_DATA_REQUIREMENTS.md
+    permitted_role: G0_portability_and_G1_baseline_only
+  - id: flight_dense_official
+    scene: flight
+    checkpoint: outputs/flight/splatfacto/2024-09-12_172434/config.yml
+    checkpoint_status: source_recorded
+    data_path: data/flight/transforms.json
+    data_path_status: source_recorded
+    source: run.py:66; work/risk_aware_cbf/REPORT_RISK_AWARE_V1_FLIGHT_100_TRIAL.md
+    permitted_role: prior_same_dataset_evidence_not_cross_dataset_proof
+rules:
+  - "A target dataset is not admitted to G1 without source-recorded checkpoint and trial manifest."
+  - "Do not claim portability from the existence of a scene dispatch entry."

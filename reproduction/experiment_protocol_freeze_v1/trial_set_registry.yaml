@@ -1,0 +1,43 @@
+trial_sets:
+  - id: stonehenge_official100
+    count: 100
+    role: original_baseline_registry
+    order: source_order_required
+    source: run.py; work/risk_aware_cbf/REPORT_BASELINE_DETAILED_LOGGING.md
+  - id: flight_official100_original
+    count: 100
+    role: original_benchmark_registry
+    order: official_source_order_required
+    source: work/risk_aware_cbf/REPORT_RISK_AWARE_V1_FLIGHT_100_TRIAL.md
+  - id: flight100_post_repair
+    count: 100
+    role: separate_post_repair_registry
+    source: work/risk_aware_cbf/REPORT_STARTGUARD_FLIGHT100.md
+  - id: start_safe_repair_needed_cohort
+    count: 8
+    role: initial_repair_needed_only
+    source: work/risk_aware_cbf/REPORT_STARTGUARD_FLIGHT100.md
+  - id: v4c_development_trials
+    trials: [12, 13, 14]
+    role: development_only
+    source: work/risk_aware_cbf/REPORT_V4C_HIERARCHICAL_CANDIDATE_EVALUATION_V0.md
+  - id: v4c_heldout_activated_16
+    count: 16
+    role: heldout_only
+    source: trial_manifests/heldout_activated_16.csv
+  - id: v4c_trial20_failure_contexts
+    count: 34
+    role: targeted_diagnostic_only_in_original_order
+    source: trial_manifests/trial20_activation_contexts.csv
+  - id: gtep_trial20_shadow
+    count: 34
+    role: shadow_diagnostic_only
+    source: work/risk_aware_cbf/results/v4c_gtep_shadow_audit/trial20_context_preregistration.csv
+  - id: r1_pending
+    count: unresolved
+    role: paused_no_active_trial_registry
+    source: work/risk_aware_cbf/REPORT_R1_SUPERVISORY_MODE_SHADOW_AUDIT.md
+rules:
+  - "Original and post-repair trial sets cannot be pooled."
+  - "Development and held-out trials cannot overlap."
+  - "Trial20 targeted contexts are not a tuning set."

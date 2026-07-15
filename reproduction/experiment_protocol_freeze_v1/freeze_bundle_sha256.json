@@ -1,0 +1,165 @@
+{
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "commit_lock.json",
+      "sha256": "076c887ccc4ee46bb9436df911bc9369e04d4928c835de113b616dc1060ec9eb",
+      "size_bytes": 830
+    },
+    {
+      "path": "config_registry.yaml",
+      "sha256": "e27b000a6d1abc85cbc65c0c192d3331311e10018ca8d1ac9cc26608ceac545b",
+      "size_bytes": 5713
+    },
+    {
+      "path": "dataset_registry.yaml",
+      "sha256": "36c1461d91da7273f64f8af545f77b3dddf4f28c65061b4488204db5d13ea8c9",
+      "size_bytes": 954
+    },
+    {
+      "path": "EXPERIMENT_PROTOCOL_FROZEN_V1.md",
+      "sha256": "1190b1d3bdf46c07877eb0715e03b4e77968dbf9573ef0930c13ea6bba665454",
+      "size_bytes": 4799
+    },
+    {
+      "path": "frozen_configs/certified_start_safe.json",
+      "sha256": "d03a68989656823e78e92aa20f822bb41d540d52c33096295bec687cdb2b1625",
+      "size_bytes": 557
+    },
+    {
+      "path": "frozen_configs/dt_verification_h1.json",
+      "sha256": "cecbddb135fbff919aef80a816432897629f75bb5876d393faecc038df4ff9c2",
+      "size_bytes": 230
+    },
+    {
+      "path": "frozen_configs/dt_verification_h2.json",
+      "sha256": "d95233011d9752ade283fdcb4c27cba037587dfec534d829c45647929daf5e56",
+      "size_bytes": 230
+    },
+    {
+      "path": "frozen_configs/dt_verification_h3.json",
+      "sha256": "5b7e5d52fd47b55d97a722e21a12ccd89c002ae431b6fe1e19eea2c88f52a0d5",
+      "size_bytes": 238
+    },
+    {
+      "path": "frozen_configs/gtep_v0.json",
+      "sha256": "7f654fa7e44c278d74680055611feba9a6f3306b0125d93fa2af58363eb80645",
+      "size_bytes": 430
+    },
+    {
+      "path": "frozen_configs/risk_aware_v1_bestD.json",
+      "sha256": "d20f92b0729c08afe272530b2c86550f94f3510ef7dbe6e1941e0a7277ae89ad",
+      "size_bytes": 553
+    },
+    {
+      "path": "frozen_configs/trial20_expanded_search.json",
+      "sha256": "54d2b89a260b34df0d1558cf5e107d93ce94574965460ccce17e33e678953579",
+      "size_bytes": 463
+    },
+    {
+      "path": "frozen_configs/v4b_negative.json",
+      "sha256": "a4efd08706669effaf50695c618042de02356ce234378ea7e397a9f702ed8216",
+      "size_bytes": 336
+    },
+    {
+      "path": "frozen_configs/v4c_hce_v0.json",
+      "sha256": "62d42b4102e091366c4ea9901aef14228ecf956a4bdc6f2c7a943f33fd877693",
+      "size_bytes": 494
+    },
+    {
+      "path": "frozen_configs/v4c_original_h3_n128.json",
+      "sha256": "939512c5484ef56c10b5d4c644192f067d5a36297045c6fc9b984e3982ac7a73",
+      "size_bytes": 501
+    },
+    {
+      "path": "METRICS_AND_FAILURE_TAXONOMY.md",
+      "sha256": "2d6a19b6ffdaa332accb9fdc257dea3171074908a2d0015e1fabb736a881f717",
+      "size_bytes": 3204
+    },
+    {
+      "path": "PROTOCOL_FREEZE_IMPLEMENTATION_PLAN.md",
+      "sha256": "e5d029788e5c788903a4d6b5e1ae7edb5f815500cc7c6aecbd6140762f50300d",
+      "size_bytes": 2740
+    },
+    {
+      "path": "provenance/commit_reachability.json",
+      "sha256": "20a68149725ff32c51e8c6c3d09f957ee934a80a4154be384ef5616d7b30ed47",
+      "size_bytes": 13504
+    },
+    {
+      "path": "provenance/source_file_inventory.csv",
+      "sha256": "4642855a1f7a6e82afe72e517ff8849c2e1f9ce8df450841777be52766b8e9d1",
+      "size_bytes": 3882
+    },
+    {
+      "path": "README.md",
+      "sha256": "2f13f4ad52cb84ab88af347600bb64f1e8fc0a637516997b4ecc041a6713cd04",
+      "size_bytes": 837
+    },
+    {
+      "path": "REPORT_EXPERIMENT_PROTOCOL_FREEZE_V1.md",
+      "sha256": "17a13e02a910018030de97f0abd316b640f94f5fca14dd06f45cce7f1840b3d9",
+      "size_bytes": 4231
+    },
+    {
+      "path": "scripts/build_freeze_bundle.py",
+      "sha256": "12c0671c2e1f10b2cfc5bcb651a2b101ad00bf7315a91865099bdade303778b8",
+      "size_bytes": 804
+    },
+    {
+      "path": "scripts/build_trial_manifests.py",
+      "sha256": "59c6d0b1d44048d26784391298d29c689831206d09c30129f14f53760611b57c",
+      "size_bytes": 3149
+    },
+    {
+      "path": "scripts/collect_freeze_provenance.py",
+      "sha256": "ffcd8ac5b5a66ef72c2589582ddbadb75c98de56a0401b044ad090862e919eec",
+      "size_bytes": 5104
+    },
+    {
+      "path": "scripts/validate_freeze_bundle.py",
+      "sha256": "0b19ab90f3e7e560eb882dfb0fc45351054ac36259d6852909492114fa30ab65",
+      "size_bytes": 5446
+    },
+    {
+      "path": "scripts/write_commit_lock.py",
+      "sha256": "74e0a857ecb1d7979292481b215a72b081cd2058f7787f72fe10ccfe0d233e14",
+      "size_bytes": 1524
+    },
+    {
+      "path": "trial_manifests/flight_official100_manifest.csv",
+      "sha256": "c3dd3f3f49a79e47669b72227a4f27ab1b6aad3f700786b66f00a1483cb44450",
+      "size_bytes": 9237
+    },
+    {
+      "path": "trial_manifests/heldout_activated_16.csv",
+      "sha256": "6084dbeae4ec81c0df5a0d9f6f3b43f19507b216b530a9dbd3887ebc462a090d",
+      "size_bytes": 2858
+    },
+    {
+      "path": "trial_manifests/nonactivated_controls.csv",
+      "sha256": "63bccc32a88572d5f75d3408f5ec3c239d748d59e098f9fc54a4987fde01c809",
+      "size_bytes": 628
+    },
+    {
+      "path": "trial_manifests/stonehenge_official100_manifest.csv",
+      "sha256": "1b236bba8173c8a37fb7752fd2e2f09fc569191d6820089759b4be547bd6c344",
+      "size_bytes": 7037
+    },
+    {
+      "path": "trial_manifests/trial20_activation_contexts.csv",
+      "sha256": "e3337291e4dbb67c3333a5ac7581984a0eb82e2ae5dad2aea7d3db1fd6aaa088",
+      "size_bytes": 5493
+    },
+    {
+      "path": "trial_set_registry.yaml",
+      "sha256": "b4408731ab4d5a23cb40cc5e53ffca459722284281a7ffe9eebb57f62bf2efd2",
+      "size_bytes": 1668
+    },
+    {
+      "path": "validation_result.json",
+      "sha256": "38740cb69da646715aeec200d4e850fbdf34fb0adb7f184b7ab80b119908dda1",
+      "size_bytes": 3144
+    }
+  ]
+}
