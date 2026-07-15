@@ -3,7 +3,10 @@
 import argparse
 import csv
 import json
+import math
 from pathlib import Path
+
+import numpy as np
 
 
 def write_csv(path, rows):
@@ -19,6 +22,7 @@ def main():
     parser.add_argument("--preregistration", type=Path, required=True)
     parser.add_argument("--pose-conversion", type=Path, required=True)
     parser.add_argument("--formal-output", type=Path, required=True)
+    parser.add_argument("--manifest", type=Path)
     parser.add_argument("--out", type=Path, required=True)
     args = parser.parse_args()
     protocol = args.protocol.read_text(encoding="utf-8") if args.protocol.is_file() else ""
@@ -41,7 +45,57 @@ def main():
     rows = [{"check": name, "passed": passed, "detail": detail} for name, passed, detail in checks]
     args.out.mkdir(parents=True, exist_ok=True)
     write_csv(args.out / "protocol_contract_checks.csv", rows)
-    print("protocol_contract_passed=" + str(all(item[1] for item in checks)).lower())
+    protocol_passed = all(item[1] for item in checks)
+    if args.manifest:
+        manifest_rows = list(csv.DictReader(args.manifest.open(encoding="utf-8")))
+        expected_ids = [f"frame_{index:04d}" for index in range(300)]
+        finite = True
+        rotations_ok = True
+        quaternions_ok = True
+        inverse_ok = True
+        height_ok = True
+        positions = []
+        for item in manifest_rows:
+            try:
+                matrix = np.array([[float(item[f"c2w_{r}{c}"]) for c in range(4)] for r in range(4)])
+                rotation = matrix[:3, :3]
+                quat = np.array([float(item[key]) for key in ("quat_x", "quat_y", "quat_z", "quat_w")])
+                source = np.array([float(item[key]) for key in ("source_navmesh_point_x", "source_navmesh_point_y", "source_navmesh_point_z")])
+                finite &= bool(np.isfinite(matrix).all() and np.isfinite(quat).all() and np.isfinite(source).all())
+                rotations_ok &= abs(float(np.linalg.det(rotation)) - 1.0) < 1e-6 and float(np.max(np.abs(rotation.T @ rotation - np.eye(3)))) < 1e-6
+                quaternions_ok &= abs(float(np.linalg.norm(quat)) - 1.0) < 1e-6
+                inverse_ok &= float(np.max(np.abs(matrix @ np.linalg.inv(matrix) - np.eye(4)))) < 1e-8
+                height_ok &= float(np.max(np.abs(matrix[:3, 3] - (source + np.array([0.0, 1.5, 0.0]))))) < 1e-6
+                positions.append(source)
+            except (KeyError, ValueError, np.linalg.LinAlgError):
+                finite = rotations_ok = quaternions_ok = inverse_ok = height_ok = False
+        unique_positions = len({tuple(np.round(point, 8)) for point in positions})
+        yaw_slots = all(sorted(int(item["yaw_slot"]) for item in manifest_rows if int(item["position_index"]) == index) == [0, 1, 2] for index in range(100))
+        train_count = sum(item.get("split") == "train" for item in manifest_rows)
+        eval_count = sum(item.get("split") == "eval" for item in manifest_rows)
+        distances = [float(np.linalg.norm(positions[i + 1] - positions[i])) for i in range(len(positions) - 1) if (i + 1) // 3 != i // 3]
+        manifest_checks = [
+            ("formal_rows", len(manifest_rows) == 300, str(len(manifest_rows))),
+            ("ordered_unique_frame_ids", [item.get("frame_id") for item in manifest_rows] == expected_ids, "frame_0000_to_frame_0299"),
+            ("unique_spatial_positions", unique_positions == 100, str(unique_positions)),
+            ("three_yaw_slots_per_position", yaw_slots, "0_1_2"),
+            ("train_eval_counts", train_count == 270 and eval_count == 30, f"train={train_count};eval={eval_count}"),
+            ("all_values_finite", finite, "matrix_quaternion_source"),
+            ("quaternion_norms", quaternions_ok, "unit"),
+            ("rotation_matrices", rotations_ok, "det_and_orthogonality"),
+            ("forward_inverse_contract", inverse_ok, "c2w_times_w2c"),
+            ("camera_height_offset", height_ok, "1.50_on_plus_Y"),
+            ("spatial_path_min_spacing", bool(distances) and min(distances) >= 0.10 - 1e-6, str(min(distances) if distances else None)),
+        ]
+        write_csv(args.out / "camera_manifest_contract_checks.csv", [{"check": name, "passed": passed, "detail": detail} for name, passed, detail in manifest_checks])
+        write_csv(args.out / "camera_trajectory_statistics.csv", [{"formal_rows": len(manifest_rows), "unique_spatial_positions": unique_positions, "train_frames": train_count, "eval_frames": eval_count, "minimum_adjacent_spatial_distance": min(distances) if distances else ""}])
+        manifest_passed = all(item[1] for item in manifest_checks)
+        print("camera_manifest_contract_passed=" + str(manifest_passed).lower())
+    else:
+        manifest_passed = True
+    print("protocol_contract_passed=" + str(protocol_passed).lower())
+    if not protocol_passed or not manifest_passed:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":
