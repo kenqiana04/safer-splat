@@ -61,12 +61,21 @@ def main():
         pathfinder = sim.pathfinder
         navmesh_loaded = bool(pathfinder.load_nav_mesh(str(args.scene_root / "habitat" / "mesh_semantic.navmesh")))
         pathfinder.seed(args.seed)
-        base = pathfinder.get_random_navigable_point()
         agent = sim.initialize_agent(0)
-        state = agent.get_state()
-        state.position = base
-        agent.set_state(state)
-        depth = sim.get_sensor_observations()["depth"]
+        selected = None
+        for candidate_index in range(500):
+            base = pathfinder.get_random_navigable_point()
+            state = agent.get_state()
+            state.position = base
+            agent.set_state(state)
+            trial_depth = sim.get_sensor_observations()["depth"]
+            center = float(trial_depth[trial_depth.shape[0] // 2, trial_depth.shape[1] // 2])
+            if math.isfinite(center) and center > 0.0:
+                selected = (candidate_index, base, trial_depth)
+                break
+        if selected is None:
+            raise RuntimeError("no_positive_center_depth_in_seeded_pose_audit_sequence")
+        candidate_index, base, depth = selected
         heading = 0.0
         state = agent.get_state()
         sensor = state.sensor_states["depth"]
@@ -97,6 +106,7 @@ def main():
             "center_depth": center_depth,
             "center_ray_distance": ray_distance,
             "audit_heading_deg": heading,
+            "audit_candidate_index": candidate_index,
         }
         conversion_path = args.out / "pose_conversion_matrix.json"
         conversion_path.write_text(json.dumps(conversion, indent=2) + "\n", encoding="utf-8")
@@ -111,6 +121,7 @@ def main():
             "rotation_orthogonality_max_error": ortho,
             "center_depth": center_depth,
             "center_ray_distance": ray_distance,
+            "audit_candidate_index": candidate_index,
             "center_ray_forward_consistent": ray_ok,
             "conversion_identity": True,
             "conversion_inverse_max_error": inverse_error,
