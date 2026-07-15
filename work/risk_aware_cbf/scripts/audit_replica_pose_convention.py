@@ -26,7 +26,8 @@ def make_sim(scene_root, gpu_device):
 
     sim_cfg = habitat_sim.SimulatorConfiguration()
     sim_cfg.scene_id = str(scene_root / "mesh.ply")
-    sim_cfg.enable_physics = False
+    # Habitat-Sim requires physics to be enabled for the non-mutating raycast API.
+    sim_cfg.enable_physics = True
     sim_cfg.gpu_device_id = gpu_device
     agent_cfg = habitat_sim.agent.AgentConfiguration()
     specs = []
