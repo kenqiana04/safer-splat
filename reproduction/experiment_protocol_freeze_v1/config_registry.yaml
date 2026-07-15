@@ -1,0 +1,131 @@
+freeze_parent: 41ccb54d2e9f10c0b3b559431a58a5763977d462
+source_policy: "All values are source-backed; unresolved fields are never inferred."
+cross_dataset_protocol_reference: cross_dataset_protocol_registry.yaml
+configs:
+  - id: baseline_safer_splat
+    role: comparator
+    status: partially_resolved
+    configuration_conflict: false
+    source: run.py; work/risk_aware_cbf/REPORT_RISK_AWARE_V1_FLIGHT_100_TRIAL.md
+    known: "scene dispatch and comparator label"
+    unresolved: "exact historical seed, full CLI, hardware, warmup"
+  - id: risk_aware_topk_v0
+    role: diagnostic_candidate_budgeting
+    status: unresolved
+    configuration_conflict: false
+    source: work/risk_aware_cbf/
+    unresolved: "formal cross-dataset configuration not registered"
+  - id: risk_aware_v1_default
+    role: efficiency_support
+    status: partially_resolved
+    configuration_conflict: false
+    source: work/risk_aware_cbf/REPORT_RISK_AWARE_V1_SECOND_SCENE_FLIGHT.md
+    unresolved: "exact frozen candidate parameters"
+  - id: risk_aware_v1_bestD
+    role: efficiency_support_and_primary_wrapper_component
+    status: frozen
+    configuration_conflict: false
+    source: work/risk_aware_cbf/REPORT_RISK_AWARE_V1_FLIGHT_100_TRIAL.md; work/risk_aware_cbf/scripts/run_v4b_corrective_dt_filter.py
+    frozen_config: frozen_configs/risk_aware_v1_bestD.json
+  - id: adaptive_v1_diagnostic
+    role: diagnostic
+    status: partially_resolved
+    configuration_conflict: false
+    source: work/risk_aware_cbf/REPORT_ADAPTIVE_V1_FLIGHT20_CLOSED_LOOP.md
+    unresolved: "not promoted to formal generalization configuration"
+  - id: startguard_heuristic
+    role: initial_state_diagnostic
+    status: partially_resolved
+    configuration_conflict: false
+    source: work/risk_aware_cbf/REPORT_STARTGUARD_FLIGHT100.md
+    unresolved: "heuristic parameters not frozen for portability"
+  - id: certified_start_safe
+    role: initial_state_certification_and_repair
+    status: frozen
+    configuration_conflict: false
+    source: work/risk_aware_cbf/REPORT_STARTGUARD_FLIGHT100.md
+    frozen_config: frozen_configs/certified_start_safe.json
+  - id: dt_verification_h1
+    role: verification_ablation
+    status: frozen
+    configuration_conflict: false
+    source: work/risk_aware_cbf/REPORT_DISCRETE_TIME_VERIFICATION_CONSOLIDATION.md
+    frozen_config: frozen_configs/dt_verification_h1.json
+  - id: dt_verification_h2
+    role: verification_ablation
+    status: frozen
+    configuration_conflict: false
+    source: work/risk_aware_cbf/REPORT_DISCRETE_TIME_VERIFICATION_CONSOLIDATION.md
+    frozen_config: frozen_configs/dt_verification_h2.json
+  - id: dt_verification_h3
+    role: more_conservative_same_model_offline_reference_verification
+    status: frozen
+    configuration_conflict: false
+    source: work/risk_aware_cbf/REPORT_DISCRETE_TIME_VERIFICATION_CONSOLIDATION.md
+    frozen_config: frozen_configs/dt_verification_h3.json
+  - id: v4b_negative
+    role: negative_diagnostic
+    status: frozen
+    configuration_conflict: false
+    source: work/risk_aware_cbf/REPORT_V4C_FLIGHT100_VALIDATION.md
+    frozen_config: frozen_configs/v4b_negative.json
+  - id: v4c_original
+    role: triggered_predictive_recovery_reference
+    status: frozen
+    configuration_conflict: false
+    source: work/risk_aware_cbf/REPORT_V4C_FLIGHT100_VALIDATION.md; work/risk_aware_cbf/scripts/run_v4c_hstep_predictive_recovery.py
+    frozen_config: frozen_configs/v4c_original_h3_n128.json
+  - id: v4c_hce_v0
+    role: heldout_recovery_efficiency
+    status: frozen
+    configuration_conflict: false
+    source: work/risk_aware_cbf/REPORT_V4C_HIERARCHICAL_HELDOUT_ACTIVATED_COHORT.md; work/risk_aware_cbf/results/v4c_hierarchical_heldout_activated_cohort/contract_check.csv
+    frozen_config: frozen_configs/v4c_hce_v0.json
+  - id: trial20_expanded_search
+    role: diagnostic_only
+    status: frozen
+    configuration_conflict: false
+    source: work/risk_aware_cbf/REPORT_V4C_TRIAL20_RECOVERY_FAILURE_DIAGNOSIS.md
+    frozen_config: frozen_configs/trial20_expanded_search.json
+  - id: gtep_v0
+    role: shadow_negative_diagnostic
+    status: frozen
+    configuration_conflict: false
+    source: work/risk_aware_cbf/REPORT_V4C_GTEP_SHADOW_FEASIBILITY.md
+    frozen_config: frozen_configs/gtep_v0.json
+  - id: warning_slowdown_diagnostic
+    role: diagnostic_only
+    status: partially_resolved
+    configuration_conflict: false
+    source: work/risk_aware_cbf/scripts/safc_level3a_warning_slowdown.py
+    unresolved: "not a frozen primary configuration"
+  - id: vans_magnitude_only_diagnostic
+    role: diagnostic_only
+    status: partially_resolved
+    configuration_conflict: false
+    source: work/risk_aware_cbf/scripts/vans_shadow_feasibility_audit.py
+    unresolved: "not a frozen primary configuration"
+  - id: r1_shadow_m0
+    role: paused_shadow
+    status: unresolved
+    configuration_conflict: false
+    source: work/risk_aware_cbf/results/r1_supervisory_mode_shadow_audit/mode_preregistration.csv
+    unresolved: "R1 paused before formal active evaluation"
+  - id: r1_shadow_m1
+    role: paused_shadow
+    status: unresolved
+    configuration_conflict: false
+    source: work/risk_aware_cbf/results/r1_supervisory_mode_shadow_audit/mode_preregistration.csv
+    unresolved: "R1 paused before formal active evaluation"
+  - id: r1_shadow_m2
+    role: paused_shadow
+    status: unresolved
+    configuration_conflict: false
+    source: work/risk_aware_cbf/results/r1_supervisory_mode_shadow_audit/mode_preregistration.csv
+    unresolved: "R1 paused before formal active evaluation"
+  - id: r1_m3_interface_only
+    role: paused_interface_only
+    status: unresolved
+    configuration_conflict: false
+    source: work/risk_aware_cbf/REPORT_R1_SUPERVISORY_MODE_SHADOW_AUDIT.md
+    unresolved: "interface evidence only; no formal active run"

@@ -1,0 +1,226 @@
+{
+  "status": "PASS_FREEZE_BUT_G1_BLOCKED",
+  "freeze_parent": "41ccb54d2e9f10c0b3b559431a58a5763977d462",
+  "revision_parent_commit": "bc6400beba13d216c3efd56ccdaf22968bcb560b",
+  "historical_method_freeze_ready": true,
+  "cross_dataset_prefreeze_provenance_ready": true,
+  "replica_G0_status": "blocked_by_rgb_integrity",
+  "replica_G1_allowed": false,
+  "tum_G0_status": "pending",
+  "tum_G1_allowed": false,
+  "future_G1_global_status": "blocked",
+  "unresolved_critical_fields": [],
+  "unresolved_noncritical_fields": [
+    {
+      "field": "historical_official100_seed",
+      "scope": "exact historical rerun only",
+      "blocks_aggregate_evidence_freeze": false,
+      "blocks_new_G1": false
+    },
+    {
+      "field": "historical_official100_start_goal_source",
+      "scope": "exact historical rerun only",
+      "blocks_aggregate_evidence_freeze": false,
+      "blocks_new_G1": false
+    },
+    {
+      "field": "tum_metric_candidate_scene_identifier",
+      "scope": "target dataset naming",
+      "blocks_aggregate_evidence_freeze": false,
+      "blocks_new_G1": true
+    }
+  ],
+  "configuration_conflicts": false,
+  "checks": [
+    {
+      "check": "required:EXPERIMENT_PROTOCOL_FROZEN_V1.md",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "required:METRICS_AND_FAILURE_TAXONOMY.md",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "required:config_registry.yaml",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "required:dataset_registry.yaml",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "required:trial_set_registry.yaml",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "required:provenance/commit_reachability.json",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "required:provenance/source_file_inventory.csv",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "required:commit_lock.json",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "required:freeze_bundle_sha256.json",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "required:CROSS_DATASET_PREFREEZE_PROVENANCE_V1.md",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "required:cross_dataset_protocol_registry.yaml",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "required:provenance/cross_dataset_evidence_inventory.csv",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "required:provenance/cross_dataset_commit_reachability.json",
+      "passed": true,
+      "detail": "required freeze artifact"
+    },
+    {
+      "check": "all_required_commits_resolve",
+      "passed": true,
+      "detail": "all required commit objects resolve"
+    },
+    {
+      "check": "nonancestor_method_history_recorded",
+      "passed": true,
+      "detail": "v4c_helper_dependency_closure"
+    },
+    {
+      "check": "source_inventory_hashes",
+      "passed": true,
+      "detail": "all source hashes match"
+    },
+    {
+      "check": "source_inventory_readable",
+      "passed": true,
+      "detail": "all indexed source evidence readable"
+    },
+    {
+      "check": "cross_dataset_source_report_hashes",
+      "passed": true,
+      "detail": "all Git-historical report hashes match"
+    },
+    {
+      "check": "replica_integrity_counts_traceable",
+      "passed": true,
+      "detail": "formal report records RGB/depth invalid counts"
+    },
+    {
+      "check": "replica_manifest_hash_traceable",
+      "passed": true,
+      "detail": "formal report records manifest SHA-256"
+    },
+    {
+      "check": "cross_dataset_commit_provenance",
+      "passed": true,
+      "detail": "all historical Cross-Dataset commits resolve"
+    },
+    {
+      "check": "cross_dataset_external_lineage_not_configuration_conflict",
+      "passed": true,
+      "detail": "fe250df543aa158557c176ee4f87dc131bb61e60, c3d26ebe1fc010247e2de20a028d288f01d64c1f, 3e22a7cae6f4c3c2c192cc2d7af3c9fbd607a0a3, aa9d7a00b3db1b7723867351594a669d61f61bf2"
+    },
+    {
+      "check": "cross_dataset_registry_parse",
+      "passed": true,
+      "detail": "JSON-compatible YAML parsed"
+    },
+    {
+      "check": "replica_g0_contract",
+      "passed": true,
+      "detail": "Replica is correctly blocked at RGB/depth integrity"
+    },
+    {
+      "check": "replica_no_unstarted_stage_promoted",
+      "passed": true,
+      "detail": "Replica reconstruction/training/SAFER gates remain unstarted"
+    },
+    {
+      "check": "tum_g1_contract",
+      "passed": true,
+      "detail": "TUM remains G0 pending and G1 blocked"
+    },
+    {
+      "check": "dataset_registry_entries",
+      "passed": true,
+      "detail": "all required dataset entries are present"
+    },
+    {
+      "check": "heldout_count",
+      "passed": true,
+      "detail": "heldout=[20, 27, 31, 32, 34, 35, 36, 37, 38, 59, 61, 71, 85, 86, 93, 94]"
+    },
+    {
+      "check": "development_heldout_disjoint",
+      "passed": true,
+      "detail": "development [12,13,14] is disjoint"
+    },
+    {
+      "check": "trial20_order",
+      "passed": true,
+      "detail": "original 34-context order retained"
+    },
+    {
+      "check": "existing_trial_manifests_unchanged",
+      "passed": true,
+      "detail": "trial manifests unchanged from revision parent"
+    },
+    {
+      "check": "algorithm_config_id_count",
+      "passed": true,
+      "detail": "exactly 21 algorithm configuration IDs retained"
+    },
+    {
+      "check": "configuration_conflicts",
+      "passed": true,
+      "detail": "no recorded H/N/margin conflict"
+    },
+    {
+      "check": "h3_overclaim_wording_removed",
+      "passed": true,
+      "detail": "H3 described only as conservative same-model offline reference"
+    },
+    {
+      "check": "freeze_bundle_hashes",
+      "passed": true,
+      "detail": "bundle hashes match"
+    },
+    {
+      "check": "allowed_path_only",
+      "passed": true,
+      "detail": "all changes are inside freeze directory"
+    },
+    {
+      "check": "freeze_parent",
+      "passed": true,
+      "detail": "merge-base=41ccb54d2e9f10c0b3b559431a58a5763977d462"
+    }
+  ],
+  "failed_checks": [],
+  "warnings": [
+    "Cross-Dataset evidence is historical external lineage, not merged method lineage: fe250df543aa158557c176ee4f87dc131bb61e60, c3d26ebe1fc010247e2de20a028d288f01d64c1f, 3e22a7cae6f4c3c2c192cc2d7af3c9fbd607a0a3, aa9d7a00b3db1b7723867351594a669d61f61bf2"
+  ],
+  "note": "No GPU, renderer, training, SAFER loader, baseline, or trial execution occurred. Historical external lineage is provenance, not a configuration conflict."
+}

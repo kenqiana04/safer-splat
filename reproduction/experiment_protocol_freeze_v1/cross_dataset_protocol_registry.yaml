@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "scope": "pre_freeze_G0_provenance_only",
+  "datasets": {
+    "replica_apartment_0": {
+      "G0_A_dataset_asset_availability": {"status": "passed", "source": "replica_formal_report"},
+      "G0_B_coordinate_metric_convention": {"status": "passed", "source": "replica_formal_report"},
+      "G0_C_camera_pose_protocol": {"status": "passed", "source": "replica_formal_report"},
+      "G0_D_rgb_depth_integrity": {"status": "failed", "source": "replica_formal_report"},
+      "G0_E_gsplat_reconstruction_checkpoint": {"status": "not_started", "source": "replica_formal_report"},
+      "G0_F_safer_loader_attribute_compatibility": {"status": "not_started", "source": "replica_formal_report"},
+      "G0_G_ellipsoid_safety_query": {"status": "not_started", "source": "replica_formal_report"},
+      "G0_H_start_goal_navigation_volume": {"status": "not_started", "source": "replica_formal_report"},
+      "G0_I_collision_progress_evaluator": {"status": "not_started", "source": "replica_formal_report"},
+      "G0_J_dynamics_wrapper": {"status": "not_started", "source": "replica_formal_report"},
+      "G0_K_reproducibility_provenance": {"status": "passed", "source": "replica_formal_report"},
+      "G1_allowed": false,
+      "block_reason": "blocked_by_rgb_integrity"
+    },
+    "tum_metric_candidate": {
+      "G0_A_dataset_asset_availability": {"status": "passed", "source": "tum_metric_report"},
+      "G0_B_coordinate_metric_convention": {"status": "passed", "source": "tum_metric_report"},
+      "G0_C_camera_pose_protocol": {"status": "passed", "source": "tum_metric_report"},
+      "G0_D_rgb_depth_integrity": {"status": "pending", "source": "tum_metric_report"},
+      "G0_E_gsplat_reconstruction_checkpoint": {"status": "not_started", "source": "tum_metric_report"},
+      "G0_F_safer_loader_attribute_compatibility": {"status": "not_started", "source": "tum_metric_report"},
+      "G0_G_ellipsoid_safety_query": {"status": "not_started", "source": "tum_metric_report"},
+      "G0_H_start_goal_navigation_volume": {"status": "not_started", "source": "tum_metric_report"},
+      "G0_I_collision_progress_evaluator": {"status": "not_started", "source": "tum_metric_report"},
+      "G0_J_dynamics_wrapper": {"status": "not_started", "source": "tum_metric_report"},
+      "G0_K_reproducibility_provenance": {"status": "passed", "source": "tum_metric_report"},
+      "G1_allowed": false,
+      "block_reason": "pending_g0_reconstruction_adapter_query_navigation_evaluator_dynamics"
+    }
+  }
+}

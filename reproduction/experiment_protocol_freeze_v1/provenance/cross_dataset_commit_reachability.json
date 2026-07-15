@@ -1,0 +1,49 @@
+{
+  "freeze_head": "bc6400beba13d216c3efd56ccdaf22968bcb560b",
+  "commits": [
+    {
+      "commit": "fe250df543aa158557c176ee4f87dc131bb61e60",
+      "branch": "safer-replica-frozen-render-protocol-v1",
+      "object_exists": true,
+      "ancestor_of_freeze_head": false,
+      "available_via_git_show": true,
+      "evidence_paths": [
+        "work/risk_aware_cbf/REPORT_REPLICA_FORMAL_METRIC_PREPROCESSING_V1.md"
+      ],
+      "lineage_status": "historical_external_lineage_provenance"
+    },
+    {
+      "commit": "c3d26ebe1fc010247e2de20a028d288f01d64c1f",
+      "branch": "safer-replica-habitat-py39-closure",
+      "object_exists": true,
+      "ancestor_of_freeze_head": false,
+      "available_via_git_show": true,
+      "evidence_paths": [
+        "work/risk_aware_cbf/REPORT_REPLICA_HABITAT_PY39_CLOSURE.md"
+      ],
+      "lineage_status": "historical_external_lineage_provenance"
+    },
+    {
+      "commit": "3e22a7cae6f4c3c2c192cc2d7af3c9fbd607a0a3",
+      "branch": "safer-cross-dataset-metric-preprocessing",
+      "object_exists": true,
+      "ancestor_of_freeze_head": false,
+      "available_via_git_show": true,
+      "evidence_paths": [
+        "work/risk_aware_cbf/REPORT_CROSS_DATASET_METRIC_PREPROCESSING.md"
+      ],
+      "lineage_status": "historical_external_lineage_provenance"
+    },
+    {
+      "commit": "aa9d7a00b3db1b7723867351594a669d61f61bf2",
+      "branch": "safer-baseline-cross-dataset-g0-g1",
+      "object_exists": true,
+      "ancestor_of_freeze_head": false,
+      "available_via_git_show": true,
+      "evidence_paths": [
+        "work/risk_aware_cbf/REPORT_SAFER_BASELINE_CROSS_DATASET_G0_G1.md"
+      ],
+      "lineage_status": "historical_external_lineage_provenance"
+    }
+  ]
+}

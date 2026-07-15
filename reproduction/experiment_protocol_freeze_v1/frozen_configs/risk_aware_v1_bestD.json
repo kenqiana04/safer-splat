@@ -1,0 +1,15 @@
+{
+  "id": "risk_aware_v1_bestD",
+  "role": "efficiency-support and primary-wrapper component",
+  "method_label": "risk_aware_v1_bestD",
+  "scene_evidence": "flight",
+  "source": [
+    "work/risk_aware_cbf/REPORT_RISK_AWARE_V1_FLIGHT_100_TRIAL.md",
+    "work/risk_aware_cbf/scripts/run_v4b_corrective_dt_filter.py"
+  ],
+  "frozen_values": {
+    "candidate_selection": "Risk-Aware V1 bestD",
+    "risk_score_table_required": true
+  },
+  "unresolved": ["historical seed", "hardware", "warmup policy", "exact candidate-ranking hyperparameters in report"]
+}

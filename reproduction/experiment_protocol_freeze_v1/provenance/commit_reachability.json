@@ -1,0 +1,68 @@
+{
+  "freeze_parent": "41ccb54d2e9f10c0b3b559431a58a5763977d462",
+  "commits": [
+    {
+      "module": "safc_method_redesign_analysis",
+      "commit": "4ef0ac7601c2eae91adc1f319ede288071d13999",
+      "object_type": "commit",
+      "reachable_from_freeze_parent": true,
+      "show_stat": "4ef0ac7 Add SAFC method failure analysis and redesign program\n REPRODUCIBILITY_MANIFEST.md                        |  25 ++++-\n .../NEXT_STEP_AFTER_METHOD_REDESIGN_ANALYSIS.md    |  67 ++++++++++++\n .../FAILURE_LEVEL_CLASSIFICATION.md                |  96 +++++++++++++++++\n .../paper_materials/METHOD_HYPOTHESIS_LEDGER.md    |  26 +++++\n .../paper_materials/METHOD_ITERATION_GOVERNANCE.md | 110 +++++++++++++++++++\n .../METHOD_VERSION_FAILURE_LEDGER.md               |  22 ++++\n .../NEXT_METHOD_PROTOTYPE_DECISION.md              | 120 +++++++++++++++++++++\n .../paper_materials/REDESIGN_CANDIDATE_MATRIX.md   |  22 ++++\n .../paper_materials/REDESIGN_GO_NO_GO_RULES.md     |  75 +++++++++++++\n .../paper_materials/SAFC_DESIGN_SPACE_MAP.md       |  47 ++++++++\n .../VERIFICATION_AWARE_DESIGN_SPACE_MAP.md         | 107 ++++++++++++++++++\n 11 files changed, 716 insertions(+), 1 deletion(-)"
+    },
+    {
+      "module": "r1_supervisory_mode_shadow_audit",
+      "commit": "4f2eb3f4cbe2184da2fcf2264288c7cdefa3d88e",
+      "object_type": "commit",
+      "reachable_from_freeze_parent": true,
+      "show_stat": "4f2eb3f Document R1 supervisory mode interface audit\n REPRODUCIBILITY_MANIFEST.md                        |  19 +++-\n .../REPORT_R1_SUPERVISORY_MODE_SHADOW_AUDIT.md     |  96 +++++++++++++++++\n .../paper_materials/METHOD_HYPOTHESIS_LEDGER.md    |   2 +-\n .../paper_materials/METHOD_ITERATION_GOVERNANCE.md |   8 ++\n .../METHOD_VERSION_FAILURE_LEDGER.md               |   1 +\n .../NEXT_METHOD_PROTOTYPE_DECISION.md              |  12 +++\n .../R1_SUPERVISORY_MODE_SEMANTICS_AUDIT.md         | 119 +++++++++++++++++++++\n .../paper_materials/REDESIGN_CANDIDATE_MATRIX.md   |   5 +-\n .../r1_supervisory_mode_shadow_audit/README.md     |  22 ++++\n .../mode_preregistration.csv                       |   5 +\n 10 files changed, 285 insertions(+), 4 deletions(-)"
+    },
+    {
+      "module": "v4c_interface_restoration",
+      "commit": "b626b99cb1ed1437730c0e0734635fd8f0bdc517",
+      "object_type": "commit",
+      "reachable_from_freeze_parent": true,
+      "show_stat": "b626b99 Restore V4-C executable interface artifacts\n REPRODUCIBILITY_MANIFEST.md                        |  36 +-\n reproduction/scripts/run_official_runpy_smoke.py   | 287 +++++++\n .../REPORT_R1_SUPERVISORY_MODE_SHADOW_AUDIT.md     |  28 +-\n .../REPORT_V4C_INTERFACE_RESTORATION.md            | 109 +++\n .../R1_SUPERVISORY_MODE_SEMANTICS_AUDIT.md         |  82 +-\n .../mode_preregistration.csv                       |   6 +-\n .../results/v4c_interface_restoration/README.md    |  15 +\n .../v4c_interface_restoration/artifact_hashes.csv  |   5 +\n .../configuration_match.csv                        |  17 +\n .../v4c_interface_restoration/interface_status.csv |   5 +\n .../results/v4c_interface_restoration/metrics.json |  39 +\n .../v4c_interface_restoration/restoration_notes.md |  44 +\n .../v4c_interface_restoration/source_inventory.csv |  16 +\n work/risk_aware_cbf/scripts/analyze_v4c_results.py | 224 +++++\n .../scripts/run_v4c_hstep_predictive_recovery.py   | 944 +++++++++++++++++++++\n .../scripts/run_v4c_hstep_predictive_sweep.py      | 255 ++++++\n 16 files changed, 2048 insertions(+), 64 deletions(-)"
+    },
+    {
+      "module": "v4c_helper_dependency_closure",
+      "commit": "fc3e942c1ab957c910785fdeefae57f537ef3a9f",
+      "object_type": "commit",
+      "reachable_from_freeze_parent": false,
+      "show_stat": "fc3e942 Restore V4-C helper dependency closure\n REPRODUCIBILITY_MANIFEST.md                        |   41 +-\n .../REPORT_R1_SUPERVISORY_MODE_SHADOW_AUDIT.md     |  114 +-\n .../REPORT_V4C_HELPER_DEPENDENCY_CLOSURE.md        |  106 ++\n .../REPORT_V4C_INTERFACE_RESTORATION.md            |  127 +-\n .../R1_SUPERVISORY_MODE_SEMANTICS_AUDIT.md         |  137 +-\n .../mode_preregistration.csv                       |    6 +-\n .../v4c_helper_dependency_closure/README.md        |   16 +\n .../dependency_decision.csv                        |    6 +\n .../direct_import_graph.csv                        |   60 +\n .../equivalence_summary.csv                        |   23 +\n .../helper_hashes.csv                              |    3 +\n .../helper_source_inventory.csv                    |    3 +\n .../importability_summary.csv                      |    5 +\n .../v4c_helper_dependency_closure/metrics.json     |   46 +\n .../r1_stage0_reopening.csv                        |    5 +\n .../required_symbol_inventory.csv                  |   26 +\n .../restoration_notes.md                           |   21 +\n .../symbol_validation.csv                          |   26 +\n .../transitive_dependency_inventory.csv            |   24 +\n .../scripts/audit_v4c_helper_dependency_closure.py |  315 +++++\n .../scripts/check_v4c_helper_symbols.py            |  105 ++\n .../check_v4c_shadow_interface_equivalence.py      |  249 ++++\n .../run_risk_aware_v1_pre_cbf_comparison.py        | 1355 ++++++++++++++++++++\n .../scripts/run_v4b_corrective_dt_filter.py        |  991 ++++++++++++++\n .../scripts/v4c_recovery_shadow_interface.py       |  250 ++++\n 25 files changed, 3769 insertions(+), 291 deletions(-)"
+    },
+    {
+      "module": "v4c_module_failure_analysis",
+      "commit": "e8b2485c4494812b7d4c3b55fb185c5c68b2096a",
+      "object_type": "commit",
+      "reachable_from_freeze_parent": true,
+      "show_stat": "e8b2485 Add V4-C module failure analysis and redesign plan\n REPRODUCIBILITY_MANIFEST.md                        |   24 +-\n .../notes/NEXT_STEP_AFTER_V4C_MODULE_ANALYSIS.md   |   65 +\n .../paper_materials/NEXT_V4C_PROTOTYPE_DECISION.md |   35 +\n .../V4C_CANDIDATE_FAMILY_AUDIT_PLAN.md             |   35 +\n .../paper_materials/V4C_FAILURE_MODE_ANALYSIS.md   |   28 +\n .../paper_materials/V4C_MODULE_SEMANTICS_AUDIT.md  |  107 ++\n .../V4C_REDESIGN_CANDIDATE_MATRIX.md               |   15 +\n .../run_risk_aware_v1_pre_cbf_comparison.py        | 1355 ++++++++++++++++++++\n .../scripts/run_v4b_corrective_dt_filter.py        |  991 ++++++++++++++\n 9 files changed, 2652 insertions(+), 3 deletions(-)"
+    },
+    {
+      "module": "v4c_hierarchical_candidate_evaluation_v0",
+      "commit": "11e2a4f8c49266a11c4c178e947b46ee70612d99",
+      "object_type": "commit",
+      "reachable_from_freeze_parent": true,
+      "show_stat": "11e2a4f Evaluate hierarchical V4-C candidate selection\n REPRODUCIBILITY_MANIFEST.md                        |  15 +\n ...ORT_V4C_HIERARCHICAL_CANDIDATE_EVALUATION_V0.md |  69 ++++\n .../notes/NEXT_STEP_AFTER_V4C_MODULE_ANALYSIS.md   |  83 ++---\n .../README.md                                      |  12 +\n .../active_ab_trial_summary.csv                    |   7 +\n .../analysis_notes.md                              |   3 +\n .../candidate_family_summary.csv                   |  12 +\n .../configuration.csv                              |  21 ++\n .../contract_check.csv                             |  17 +\n .../metrics.json                                   |  51 +++\n .../paired_context_summary.csv                     |   4 +\n .../paired_gate_summary.csv                        |   2 +\n .../preregistration.csv                            |   7 +\n .../progress_summary.csv                           |   3 +\n .../runtime_summary.csv                            |   3 +\n .../safety_guardrail_summary.csv                   |   3 +\n .../stage_usage_summary.csv                        |   4 +\n .../scripts/check_v4c_hierarchical_contract.py     | 118 +++++++\n .../scripts/run_v4c_hierarchical_active_ab.py      | 363 +++++++++++++++++++++\n .../scripts/run_v4c_hierarchical_paired_audit.py   | 338 +++++++++++++++++++\n .../scripts/v4c_candidate_family_metrics.py        | 198 +++++++++++\n .../v4c_hierarchical_candidate_evaluator.py        | 294 +++++++++++++++++\n 22 files changed, 1589 insertions(+), 38 deletions(-)"
+    },
+    {
+      "module": "v4c_hierarchical_heldout_activated_cohort",
+      "commit": "a83259798e0e4b1a2c7fcdce2617ebd8783ebcc3",
+      "object_type": "commit",
+      "reachable_from_freeze_parent": true,
+      "show_stat": "a832597 Validate hierarchical V4-C on held-out activated cohort\n REPRODUCIBILITY_MANIFEST.md                        |  12 +\n ...RT_V4C_HIERARCHICAL_HELDOUT_ACTIVATED_COHORT.md |  80 ++++++\n .../notes/NEXT_STEP_AFTER_V4C_MODULE_ANALYSIS.md   |  80 +-----\n .../paper_materials/NEXT_V4C_PROTOTYPE_DECISION.md |   4 +\n .../paper_materials/V4C_FAILURE_MODE_ANALYSIS.md   |   4 +\n .../V4C_REDESIGN_CANDIDATE_MATRIX.md               |   4 +\n .../README.md                                      |   3 +\n .../active_ab_trial_summary.csv                    |  39 +++\n .../analysis_notes.md                              |   3 +\n .../candidate_family_summary.csv                   |  13 +\n .../contract_check.csv                             |  17 ++\n .../full100_activation_inventory.csv               | 101 ++++++++\n .../heldout_cohort_preregistration.csv             |  17 ++\n .../metrics.json                                   | 103 ++++++++\n .../nonactivated_control_preregistration.csv       |   4 +\n .../nonactivated_control_summary.csv               |   4 +\n .../paired_context_summary.csv                     |  17 ++\n .../paired_gate_summary.csv                        |   2 +\n .../progress_summary.csv                           |   3 +\n .../run_order_preregistration.csv                  |  39 +++\n .../runtime_summary.csv                            |   3 +\n .../safety_guardrail_summary.csv                   |   3 +\n .../stage_usage_summary.csv                        |   2 +\n .../run_v4c_hierarchical_heldout_active_ab.py      | 282 +++++++++++++++++++++\n .../run_v4c_hierarchical_heldout_paired_audit.py   | 193 ++++++++++++++\n .../scripts/select_v4c_heldout_activated_cohort.py | 125 +++++++++\n 26 files changed, 1091 insertions(+), 66 deletions(-)"
+    },
+    {
+      "module": "v4c_trial20_recovery_failure_diagnosis",
+      "commit": "4f8e00fcc10cbeb98b933d3507eb009659e1341f",
+      "object_type": "commit",
+      "reachable_from_freeze_parent": true,
+      "show_stat": "4f8e00f Diagnose V4-C trial20 recovery failures\n ...EPORT_V4C_TRIAL20_RECOVERY_FAILURE_DIAGNOSIS.md |  59 +++++++\n .../notes/NEXT_STEP_AFTER_V4C_MODULE_ANALYSIS.md   |  55 ++++--\n .../v4c_trial20_failure_diagnosis/README.md        |   3 +\n .../activation_context_summary.csv                 |  35 ++++\n .../activation_streak_summary.csv                  |   2 +\n .../diagnosis_notes.md                             |   3 +\n .../diagnostic_variant_summary.csv                 |  16 ++\n .../early_trigger_summary.csv                      |  35 ++++\n .../family_best_summary.csv                        |   7 +\n .../horizon_extension_summary.csv                  |   3 +\n .../hypothesis_decision_matrix.csv                 |   7 +\n .../v4c_trial20_failure_diagnosis/metrics.json     |  44 +++++\n .../preregistration.csv                            |   2 +\n .../reachability_summary.csv                       |   2 +\n .../representative_contexts.csv                    |   4 +\n .../reproduction_check.csv                         |   2 +\n .../search_coverage_summary.csv                    |   4 +\n .../scripts/analyze_v4c_bounded_reachability.py    |  26 +++\n .../scripts/run_v4c_trial20_failure_diagnosis.py   | 184 +++++++++++++++++++++\n 19 files changed, 479 insertions(+), 14 deletions(-)"
+    },
+    {
+      "module": "v4c_gtep_shadow_feasibility",
+      "commit": "41ccb54d2e9f10c0b3b559431a58a5763977d462",
+      "object_type": "commit",
+      "reachable_from_freeze_parent": true,
+      "show_stat": "41ccb54 Evaluate geometry-conditioned V4-C recovery primitives\n .../REPORT_V4C_GTEP_SHADOW_FEASIBILITY.md          | 63 +++++++++++++++++\n .../notes/NEXT_STEP_AFTER_V4C_MODULE_ANALYSIS.md   | 46 +++++--------\n .../GTEP_BARRIER_GEOMETRY_SEMANTICS_AUDIT.md       |  7 ++\n .../results/v4c_gtep_shadow_audit/README.md        |  3 +\n .../v4c_gtep_shadow_audit/analysis_notes.md        |  3 +\n .../v4c_gtep_shadow_audit/context_summary.csv      | 35 ++++++++++\n .../critical_gaussian_summary.csv                  |  4 ++\n .../v4c_gtep_shadow_audit/geometry_equivalence.csv |  4 ++\n .../h5_diagnostic_summary.csv                      |  4 ++\n .../results/v4c_gtep_shadow_audit/metrics.json     | 38 ++++++++++\n .../positive_control_preregistration.csv           |  2 +\n .../positive_control_summary.csv                   |  2 +\n .../primitive_family_summary.csv                   |  8 +++\n .../primitive_preregistration.csv                  |  2 +\n .../progress_tradeoff_summary.csv                  |  2 +\n .../state_isolation_summary.csv                    |  2 +\n .../trial20_context_preregistration.csv            | 35 ++++++++++\n .../unique_feasibility_summary.csv                 |  2 +\n .../scripts/check_gtep_geometry_equivalence.py     | 18 +++++\n .../scripts/gsplat_barrier_geometry_adapter.py     | 34 +++++++++\n .../scripts/run_v4c_gtep_shadow_audit.py           | 80 ++++++++++++++++++++++\n .../scripts/v4c_geometry_tangential_primitives.py  | 57 +++++++++++++++\n 22 files changed, 424 insertions(+), 27 deletions(-)"
+    }
+  ]
+}

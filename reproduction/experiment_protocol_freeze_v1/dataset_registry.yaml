@@ -1,0 +1,60 @@
+datasets:
+  - id: stonehenge_official
+    scene: stonehenge
+    checkpoint: outputs/stonehenge/splatfacto/2024-09-11_100724/config.yml
+    checkpoint_status: source_recorded
+    data_path: data/stonehenge
+    data_path_status: unresolved_in_this_freeze
+    source: run.py:52; reproduction/OFFICIAL_DATA_REQUIREMENTS.md
+    permitted_role: G0_portability_and_G1_baseline_only
+  - id: flight_dense_official
+    scene: flight
+    checkpoint: outputs/flight/splatfacto/2024-09-12_172434/config.yml
+    checkpoint_status: source_recorded
+    data_path: data/flight/transforms.json
+    data_path_status: source_recorded
+    source: run.py:66; work/risk_aware_cbf/REPORT_RISK_AWARE_V1_FLIGHT_100_TRIAL.md
+    permitted_role: prior_same_dataset_evidence_not_cross_dataset_proof
+  - id: replica_apartment_0
+    scene: apartment_0
+    evidence_phase: pre_freeze_G0
+    protocol_version: formal_metric_preprocessing_v1
+    renderer_environment_status: passed
+    asset_status: passed
+    camera_protocol_status: passed
+    pose_metric_status: passed
+    manifest_status: frozen
+    rgb_integrity_status: failed
+    depth_integrity_status: failed
+    final_decision: blocked_by_rgb_integrity
+    staging_publication_status: not_published
+    gaussian_reconstruction_status: not_started
+    safer_loader_status: not_started
+    safer_baseline_status: not_started
+    G1_allowed: false
+    claim_scope: preprocessing_only_no_generalization
+    source_report: work/risk_aware_cbf/REPORT_REPLICA_FORMAL_METRIC_PREPROCESSING_V1.md@fe250df543aa158557c176ee4f87dc131bb61e60
+    source_report_sha256: 89d05fb949b8d5989d4371d1b91d535589142895b4baf8ad1595b238775e5875
+    unresolved_fields: [historical_renderer_hardware]
+  - id: tum_metric_candidate
+    scene: unresolved
+    evidence_phase: pre_freeze_G0_candidate
+    transforms_status: source_recorded
+    transforms_sha256: b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a
+    metric_scale_status: source_recorded
+    colmap_used: false
+    auto_scale_used: false
+    gsplat_checkpoint_status: not_ready
+    safer_adapter_status: not_ready
+    ellipsoid_query_status: not_ready
+    start_goal_status: not_ready
+    evaluator_status: not_ready
+    dynamics_wrapper_status: not_ready
+    G0_status: pending
+    G1_allowed: false
+    claim_scope: preprocessing_provenance_only
+    source_report: work/risk_aware_cbf/REPORT_CROSS_DATASET_METRIC_PREPROCESSING.md@3e22a7cae6f4c3c2c192cc2d7af3c9fbd607a0a3
+    unresolved_fields: [exact_tum_scene_identifier, current_external_transforms_path]
+rules:
+  - "A target dataset is not admitted to G1 without source-recorded checkpoint and trial manifest."
+  - "Do not claim portability from the existence of a scene dispatch entry."
