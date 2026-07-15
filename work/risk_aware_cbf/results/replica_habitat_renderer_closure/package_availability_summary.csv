@@ -1,0 +1,2 @@
+package,requested_version,requested_python,official_builds_found,python_compatible,decision,notes
+habitat-sim,0.3.3,3.12,py3.9_headless_bullet;py3.9_headless;py3.9_bullet;py3.9,false,blocked_by_official_habitat_binary_availability,No official Python 3.12 build was returned by conda search.
