@@ -1,0 +1,2 @@
+formal_rendering_run,requested_frame_count,rendered_frame_count,decision,reason
+False,300,0,blocked_by_missing_frozen_replica_render_protocol,"No inherited deterministic camera trajectory, seed, frame-selection manifest, or train_eval split contract exists to reproduce without inventing one."
