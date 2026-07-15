@@ -24,7 +24,7 @@
   "replica_version": "v1",
   "replica_official_source_verified": true,
   "replica_license_recorded": true,
-  "replica_manual_acceptance_marker_present": false,
+  "replica_manual_acceptance_marker_present": true,
   "replica_storage_status": "known",
   "replica_download_estimated_bytes": 33899841712,
   "replica_extracted_estimated_bytes": 67799683424,
@@ -43,7 +43,7 @@
   "raw_trace_committed": false,
   "official_core_source_modified": false,
   "forbidden_paths_modified": false,
-  "acquisition_decision": "tum_ready_replica_waiting_manual_license_confirmation",
+  "acquisition_decision": "tum_ready_replica_core_ready_additional_configs_missing",
   "limitations": [
     "raw asset acquisition and integrity only",
     "no data preprocessing",
