@@ -59,30 +59,15 @@ def main():
     sim = make_sim(args.scene_root, args.gpu_device)
     try:
         pathfinder = sim.pathfinder
-        pathfinder.seed(args.seed)
         navmesh_loaded = bool(pathfinder.load_nav_mesh(str(args.scene_root / "habitat" / "mesh_semantic.navmesh")))
+        pathfinder.seed(args.seed)
         base = pathfinder.get_random_navigable_point()
         agent = sim.initialize_agent(0)
-        headings = [0.0, -90.0, 90.0, 180.0]
-        selected = None
-        for heading in headings:
-            radians = math.radians(heading)
-            forward_trial = np.array([math.sin(radians), 0.0, -math.cos(radians)])
-            right_trial = np.cross(forward_trial, np.array([0.0, 1.0, 0.0]))
-            rotation_trial = np.column_stack((right_trial, np.array([0.0, 1.0, 0.0]), -forward_trial))
-            state = agent.get_state()
-            state.position = base
-            state.rotation = quaternion.from_rotation_matrix(rotation_trial)
-            agent.set_state(state)
-            observations = sim.get_sensor_observations()
-            depth_trial = observations["depth"]
-            value = float(depth_trial[depth_trial.shape[0] // 2, depth_trial.shape[1] // 2])
-            if math.isfinite(value) and value > 0.0:
-                selected = (heading, depth_trial)
-                break
-        if selected is None:
-            raise RuntimeError("no_positive_center_depth_for_pose_audit")
-        heading, depth = selected
+        state = agent.get_state()
+        state.position = base
+        agent.set_state(state)
+        depth = sim.get_sensor_observations()["depth"]
+        heading = 0.0
         state = agent.get_state()
         sensor = state.sensor_states["depth"]
         rotation = quaternion.as_rotation_matrix(sensor.rotation)

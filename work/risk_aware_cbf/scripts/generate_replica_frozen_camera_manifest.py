@@ -136,10 +136,10 @@ def main():
     sim = habitat_sim.Simulator(habitat_sim.Configuration(sim_cfg, [habitat_sim.agent.AgentConfiguration()]))
     try:
         pathfinder = sim.pathfinder
-        pathfinder.seed(args.seed)
         navmesh = args.scene_root / "habitat" / "mesh_semantic.navmesh"
         if not pathfinder.load_nav_mesh(str(navmesh)):
             raise RuntimeError("official_navmesh_load_failed")
+        pathfinder.seed(args.seed)
         anchors = [np.asarray(pathfinder.get_random_navigable_point(), dtype=float)]
         polylines = []
         for attempt in range(1, args.max_anchor_attempts + 1):
