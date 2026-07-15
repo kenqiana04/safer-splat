@@ -1,0 +1,8 @@
+check,passed,detail
+formal_rgbd_dataset_exists,False,Formal rendering was not permitted without the inherited frozen render protocol.
+transforms_json_exists,False,No formal Replica output was generated.
+metric_scale_preserved,,Not executable without formal poses.
+forward_inverse_contract,,Not executable without formal poses.
+train_eval_split_disjoint,,Not executable without inherited split contract.
+colmap_pose_estimation_used,False,No COLMAP was run.
+pose_auto_scale_used,False,No formal preprocessing was run.
