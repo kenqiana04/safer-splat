@@ -63,21 +63,36 @@ def main():
         navmesh_loaded = bool(pathfinder.load_nav_mesh(str(args.scene_root / "habitat" / "mesh_semantic.navmesh")))
         base = pathfinder.get_random_navigable_point()
         agent = sim.initialize_agent(0)
-        state = agent.get_state()
-        state.position = base
-        agent.set_state(state)
+        headings = [0.0, -90.0, 90.0, 180.0]
+        selected = None
+        for heading in headings:
+            radians = math.radians(heading)
+            forward_trial = np.array([math.sin(radians), 0.0, -math.cos(radians)])
+            right_trial = np.cross(forward_trial, np.array([0.0, 1.0, 0.0]))
+            rotation_trial = np.column_stack((right_trial, np.array([0.0, 1.0, 0.0]), -forward_trial))
+            state = agent.get_state()
+            state.position = base
+            state.rotation = quaternion.from_rotation_matrix(rotation_trial)
+            agent.set_state(state)
+            observations = sim.get_sensor_observations()
+            depth_trial = observations["depth"]
+            value = float(depth_trial[depth_trial.shape[0] // 2, depth_trial.shape[1] // 2])
+            if math.isfinite(value) and value > 0.0:
+                selected = (heading, depth_trial)
+                break
+        if selected is None:
+            raise RuntimeError("no_positive_center_depth_for_pose_audit")
+        heading, depth = selected
         state = agent.get_state()
         sensor = state.sensor_states["depth"]
         rotation = quaternion.as_rotation_matrix(sensor.rotation)
         right, up, backward = rotation[:, 0], rotation[:, 1], rotation[:, 2]
         forward = -backward
-        observations = sim.get_sensor_observations()
-        depth = observations["depth"]
         center_depth = float(depth[depth.shape[0] // 2, depth.shape[1] // 2])
         ray_distance = None
         ray_ok = False
         try:
-            ray = sim.geo.Ray(sensor.position, forward)
+            ray = habitat_sim.geo.Ray(sensor.position, forward)
             hits = sim.cast_ray(ray)
             if hits.has_hits():
                 ray_distance = float(hits.hits[0].ray_distance)
@@ -96,6 +111,7 @@ def main():
             "identity": True,
             "center_depth": center_depth,
             "center_ray_distance": ray_distance,
+            "audit_heading_deg": heading,
         }
         conversion_path = args.out / "pose_conversion_matrix.json"
         conversion_path.write_text(json.dumps(conversion, indent=2) + "\n", encoding="utf-8")
