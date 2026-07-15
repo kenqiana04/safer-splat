@@ -1,0 +1,12 @@
+check,passed,detail
+formal_rows,True,300
+ordered_unique_frame_ids,True,frame_0000_to_frame_0299
+unique_spatial_positions,True,100
+three_yaw_slots_per_position,True,0_1_2
+train_eval_counts,True,train=270;eval=30
+all_values_finite,True,matrix_quaternion_source
+quaternion_norms,True,unit
+rotation_matrices,True,det_and_orthogonality
+forward_inverse_contract,True,c2w_times_w2c
+camera_height_offset,True,1.50_on_plus_Y
+spatial_path_min_spacing,True,5.795687102821105
