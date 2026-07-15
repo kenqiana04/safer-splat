@@ -53,10 +53,16 @@ Trial 20 is retained in its original activation order only for diagnosis. It is 
 
 Only source-declared random seeds may be recorded as fixed. If no source record exists, the field is `unresolved`; a later experiment must preregister one before it is formal. No historical seed is reconstructed from outcomes.
 
-## 8. Readiness decision
+## 8. Pre-Freeze Cross-Dataset Evidence
 
-This package is ready for a G0 portability audit and a separately authorized G1 baseline run only after the target dataset has a recorded checkpoint, trial manifest, and hardware/environment record. It contains no cross-dataset result.
+Before Freeze V1, Replica/TUM accumulated partial G0 provenance on separate historical branches. Replica is `blocked_by_rgb_integrity`; TUM remains G0 pending. Neither is a G1 baseline result. The evidence is registered here to prevent later omission or accidental repetition.
 
-## 9. Historical ancestry note
+Any Replica V2 diagnosis requires separate preregistration. TUM must finish its remaining G0 gates. Any G1 requires separate authorization and frozen trial, checkpoint, adapter, and hardware records.
+
+## 9. Readiness decision
+
+This package is valid as a protocol/provenance freeze and does not authorize any G1 baseline run. A future G1 requires separate authorization plus a target-specific frozen checkpoint, trial manifest, adapter, evaluator, dynamics wrapper, and hardware/environment record. It contains no cross-dataset result.
+
+## 10. Historical ancestry note
 
 The helper-dependency-closure commit `fc3e942c1ab957c910785fdeefae57f537ef3a9f` resolves and is inventoried, but is not an ancestor of this freeze parent. It is retained as historical provenance only; the current frozen source files and their hashes are the executable evidence. This is not a configuration conflict.

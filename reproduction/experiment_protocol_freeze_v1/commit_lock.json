@@ -11,5 +11,18 @@
   "gpu": "unresolved_not_queried_no_gpu_experiment",
   "git_status_before_commit": "?? reproduction/experiment_protocol_freeze_v1/",
   "experiment_execution": "none; protocol/provenance freeze only",
-  "status_after_commit": "filled_after_commit_in_git_metadata_not_mutated_in_lock"
+  "status_after_commit": "filled_after_commit_in_git_metadata_not_mutated_in_lock",
+  "revision_parent_commit": "bc6400beba13d216c3efd56ccdaf22968bcb560b",
+  "revision_type": "cross_dataset_prefreeze_provenance_patch",
+  "revision_commit": "pending_until_commit",
+  "pr_number": 21,
+  "validator_version": "freeze_v1_readiness_v2",
+  "revision_timestamp": "2026-07-15T09:00:00+00:00",
+  "cross_dataset_evidence_hashes": {
+    "replica_formal_report": "89d05fb949b8d5989d4371d1b91d535589142895b4baf8ad1595b238775e5875",
+    "replica_py39_closure": "49b267393eac20cfaa0b6f626ac4d8baab8c848d9accfcd3eacebc0a23db0e7e",
+    "tum_metric_report": "ff0f43a4465faf76cb18bd77e044a4662b0f51dbcfc65277813689db80af4bd1",
+    "tum_transforms_immutability_reference": "89d05fb949b8d5989d4371d1b91d535589142895b4baf8ad1595b238775e5875",
+    "cross_dataset_g0_g1_audit": "062c6909f7844a90ab1dd1dfe3b034b25a8871136a0203a22e36ec35c8607274"
+  }
 }

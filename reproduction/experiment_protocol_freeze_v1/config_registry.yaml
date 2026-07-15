@@ -1,5 +1,6 @@
 freeze_parent: 41ccb54d2e9f10c0b3b559431a58a5763977d462
 source_policy: "All values are source-backed; unresolved fields are never inferred."
+cross_dataset_protocol_reference: cross_dataset_protocol_registry.yaml
 configs:
   - id: baseline_safer_splat
     role: comparator
@@ -57,7 +58,7 @@ configs:
     source: work/risk_aware_cbf/REPORT_DISCRETE_TIME_VERIFICATION_CONSOLIDATION.md
     frozen_config: frozen_configs/dt_verification_h2.json
   - id: dt_verification_h3
-    role: robust_reference_verification
+    role: more_conservative_same_model_offline_reference_verification
     status: frozen
     configuration_conflict: false
     source: work/risk_aware_cbf/REPORT_DISCRETE_TIME_VERIFICATION_CONSOLIDATION.md

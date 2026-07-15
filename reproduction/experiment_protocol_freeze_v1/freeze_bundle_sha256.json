@@ -3,23 +3,33 @@
   "files": [
     {
       "path": "commit_lock.json",
-      "sha256": "076c887ccc4ee46bb9436df911bc9369e04d4928c835de113b616dc1060ec9eb",
-      "size_bytes": 830
+      "sha256": "bdde2cdc166ab2f8e8d8d04ed372871f9df86c279809bf3448d3311bf75ea6d2",
+      "size_bytes": 1670
     },
     {
       "path": "config_registry.yaml",
-      "sha256": "e27b000a6d1abc85cbc65c0c192d3331311e10018ca8d1ac9cc26608ceac545b",
-      "size_bytes": 5713
+      "sha256": "482ae358eb18ea30d07c868b47ac197cf5b2eb394f2acbdf1da4016d9570e1f5",
+      "size_bytes": 5814
+    },
+    {
+      "path": "CROSS_DATASET_PREFREEZE_PROVENANCE_V1.md",
+      "sha256": "ea7bbeccbe2ce63e895d8ce58bcfa7ac3ffc55646c991870b4155fe8e7882957",
+      "size_bytes": 2816
+    },
+    {
+      "path": "cross_dataset_protocol_registry.yaml",
+      "sha256": "de6e776cd96b7b9fe4e7d9f57c0d80d3a93dc29ea62c0d216efac0ce58441196",
+      "size_bytes": 2523
     },
     {
       "path": "dataset_registry.yaml",
-      "sha256": "36c1461d91da7273f64f8af545f77b3dddf4f28c65061b4488204db5d13ea8c9",
-      "size_bytes": 954
+      "sha256": "bc7557c3ff824d1d4aae2eb6039a4e702f4679de7bd75863968c45f42dc82557",
+      "size_bytes": 2718
     },
     {
       "path": "EXPERIMENT_PROTOCOL_FROZEN_V1.md",
-      "sha256": "1190b1d3bdf46c07877eb0715e03b4e77968dbf9573ef0930c13ea6bba665454",
-      "size_bytes": 4799
+      "sha256": "518f289009a40fa002c63ffe1fd09f72759801fa8b630d6b0b250b7ae86cde82",
+      "size_bytes": 5392
     },
     {
       "path": "frozen_configs/certified_start_safe.json",
@@ -38,8 +48,8 @@
     },
     {
       "path": "frozen_configs/dt_verification_h3.json",
-      "sha256": "5b7e5d52fd47b55d97a722e21a12ccd89c002ae431b6fe1e19eea2c88f52a0d5",
-      "size_bytes": 238
+      "sha256": "4a34c31934ac0743793c9e2ccc5de085c766eb6e1f4becc02bd607b56a7fa0e9",
+      "size_bytes": 268
     },
     {
       "path": "frozen_configs/gtep_v0.json",
@@ -73,8 +83,8 @@
     },
     {
       "path": "METRICS_AND_FAILURE_TAXONOMY.md",
-      "sha256": "2d6a19b6ffdaa332accb9fdc257dea3171074908a2d0015e1fabb736a881f717",
-      "size_bytes": 3204
+      "sha256": "3df6b57a70496ba312824b34efa068ab68fa6a47a807a74e098eb614e2dec252",
+      "size_bytes": 4015
     },
     {
       "path": "PROTOCOL_FREEZE_IMPLEMENTATION_PLAN.md",
@@ -87,19 +97,29 @@
       "size_bytes": 13504
     },
     {
+      "path": "provenance/cross_dataset_commit_reachability.json",
+      "sha256": "7eb715c261ddf926b1aaabf210c0dd2fc73ceecbf4b6051d5872c9100640552c",
+      "size_bytes": 1777
+    },
+    {
+      "path": "provenance/cross_dataset_evidence_inventory.csv",
+      "sha256": "b5630501098719ac9bf790efc24bf05a096bb52ba78ccfbc3d233fd088e8ee41",
+      "size_bytes": 2310
+    },
+    {
       "path": "provenance/source_file_inventory.csv",
       "sha256": "4642855a1f7a6e82afe72e517ff8849c2e1f9ce8df450841777be52766b8e9d1",
       "size_bytes": 3882
     },
     {
       "path": "README.md",
-      "sha256": "2f13f4ad52cb84ab88af347600bb64f1e8fc0a637516997b4ecc041a6713cd04",
-      "size_bytes": 837
+      "sha256": "151ca91aa9913494e3e1e0292e92c983831833c20e42d8c4e339c23df10fb46a",
+      "size_bytes": 1017
     },
     {
       "path": "REPORT_EXPERIMENT_PROTOCOL_FREEZE_V1.md",
-      "sha256": "17a13e02a910018030de97f0abd316b640f94f5fca14dd06f45cce7f1840b3d9",
-      "size_bytes": 4231
+      "sha256": "fc1449cb40b467e4c2aa8d92bfcbab7da4fe91b74c61e110f4ce7777933bd50f",
+      "size_bytes": 6183
     },
     {
       "path": "scripts/build_freeze_bundle.py",
@@ -112,14 +132,19 @@
       "size_bytes": 3149
     },
     {
+      "path": "scripts/collect_cross_dataset_prefreeze_provenance.py",
+      "sha256": "361bb2721ab89e0109e7e5926452aa1e9d8ffee9e640e5984caeaeffb875a217",
+      "size_bytes": 4502
+    },
+    {
       "path": "scripts/collect_freeze_provenance.py",
       "sha256": "ffcd8ac5b5a66ef72c2589582ddbadb75c98de56a0401b044ad090862e919eec",
       "size_bytes": 5104
     },
     {
       "path": "scripts/validate_freeze_bundle.py",
-      "sha256": "0b19ab90f3e7e560eb882dfb0fc45351054ac36259d6852909492114fa30ab65",
-      "size_bytes": 5446
+      "sha256": "2e9b2cc0464eb67f41d05c003efccf94cf2b60db70ca6d90bc011cebf6f4e10b",
+      "size_bytes": 13049
     },
     {
       "path": "scripts/write_commit_lock.py",
@@ -158,8 +183,8 @@
     },
     {
       "path": "validation_result.json",
-      "sha256": "38740cb69da646715aeec200d4e850fbdf34fb0adb7f184b7ab80b119908dda1",
-      "size_bytes": 3144
+      "sha256": "2c4d42844368b3788b27750ae41892d184fb3bccda7565a0d416d61ed63ce8ac",
+      "size_bytes": 7120
     }
   ]
 }

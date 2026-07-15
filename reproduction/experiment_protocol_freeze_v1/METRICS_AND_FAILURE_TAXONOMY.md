@@ -37,3 +37,22 @@
 - A successful HCE Stage-A selection does not show that Stage-B recovery succeeds.
 - A failed GTEP shadow primitive does not disprove all directional recovery designs.
 - Runtime ratios apply only to the logged scope and hardware context.
+
+## Cross-Dataset G0 readiness subcodes
+
+These are G0 readiness subcodes, not navigation/control failures.
+
+| Code | Meaning |
+| --- | --- |
+| G0-R1 | Environment/runtime unavailable |
+| G0-R2 | Asset/scene unavailable |
+| G0-R3 | Camera/pose protocol invalid |
+| G0-R4 | RGB/depth integrity invalid |
+| G0-R5 | Metric scale/pose convention invalid |
+| G0-R6 | Reconstruction/checkpoint unavailable |
+| G0-R7 | SAFER loader/query incompatible |
+| G0-R8 | Navigation benchmark/evaluator unavailable |
+| G0-R9 | Dynamics wrapper unavailable |
+| G0-R10 | Provenance/reproducibility incomplete |
+
+Replica maps to `G0-R4`; this is not collision, QP infeasibility, DT warning, recovery failure, or SAFER baseline failure. TUM's remaining gates are pending, not failed, unless later formal evidence records a failure.

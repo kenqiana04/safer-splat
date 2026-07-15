@@ -26,7 +26,7 @@ Initial-state certification and repair are retained with original and post-repai
 
 ## 7. DT verification role
 
-H1/H2/H3 are registered verification horizons. H3 is the robust reference; H2 may be a practical configuration only where separately evidenced.
+H1/H2/H3 are registered verification horizons. H3 is the more conservative offline reference horizon under the same-model rollout; H2 may be a practical configuration only where separately evidenced.
 
 ## 8. V4-B status
 
@@ -90,6 +90,16 @@ Nine historical commits are audited for object existence and ancestry. The sourc
 
 ## 23. Decision and limitations
 
-The package establishes protocol readiness for a separate G0 portability audit and, only after target provenance is complete, G1 baseline reproduction. It is not a cross-dataset proof, not a new experiment, not an R1 activation, and not a claim of a new CBF theorem.
+The package establishes protocol/provenance readiness for a separate G0 portability audit; it does not authorize G1 baseline reproduction. G1 requires separate authorization and completed target-specific gates. This is not a cross-dataset proof, a new experiment, an R1 activation, or a new CBF theorem.
 
 Validation status is written to `validation_result.json`; bundle integrity is written to `freeze_bundle_sha256.json`.
+
+## Pre-Freeze Cross-Dataset Evidence Revision
+
+This provenance-only revision registers work that occurred before Freeze V1. No new data processing, rendering, training, SAFER loader/baseline, or Cross-Dataset method evaluation was run.
+
+Replica historical source branch/commit: `safer-replica-frozen-render-protocol-v1` / `fe250df543aa158557c176ee4f87dc131bb61e60`; it is historical external lineage, not a current-HEAD ancestor. The isolated Python 3.9 renderer closure, fixed 300-frame protocol, and manifest are source-recorded. The manifest hash is `1056121e4470124e180a3367172440f540f0acdc5adab665c3187ac8ab87be25`. RGB/depth integrity blocked V1: 33 black/near-black RGB frames and 32 all-zero depth frames. No frames were deleted, replaced, or rerendered; no training or SAFER run occurred. Replica remains `blocked_by_rgb_integrity`, cannot enter training/G1, and requires separately authorized Replica V2 diagnosis.
+
+TUM historical source branch/commit: `safer-cross-dataset-metric-preprocessing` / `3e22a7cae6f4c3c2c192cc2d7af3c9fbd607a0a3`; it is also historical external lineage. Metric RGB/depth/pose preprocessing and transforms provenance are recorded, including transforms SHA-256 `b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a`. Its GSplat checkpoint, adapter, ellipsoid query, benchmark/evaluator, and dynamics gates remain unfinished; TUM is G0 pending and G1 blocked.
+
+The validator now separates historical method-freeze readiness from Cross-Dataset provenance and G0/G1 readiness. It reports critical/noncritical unresolved fields. The 21 algorithm configuration IDs are unchanged; no core source was modified. PR #21 is Draft. This revision does not claim renderer output equals generalization, preprocessing equals reconstruction, reconstruction equals SAFER portability, or integrity failure equals SAFER failure.
