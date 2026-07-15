@@ -319,6 +319,15 @@ The following wrapper-only artifacts perform a source-aware G0 asset inventory a
 
 No third-party dataset, checkpoint, raw trace, JSONL, trajectory, image, video, or binary artifact is included.
 
+## Cross-Dataset Raw Asset Acquisition
+
+The following scripts acquire and validate only external raw assets for the preregistered TUM RGB-D `freiburg1_room` sequence and Replica Dataset v1. They enforce official-host, storage, archive-integrity, and manual Replica-license gates; no dataset, approval marker, license text, archive, or raw index is stored in Git.
+
+- `work/risk_aware_cbf/scripts/acquire_cross_dataset_raw_assets.py`
+- `work/risk_aware_cbf/scripts/validate_cross_dataset_raw_assets.py`
+- `work/risk_aware_cbf/results/cross_dataset_raw_acquisition/`
+- `work/risk_aware_cbf/REPORT_CROSS_DATASET_RAW_ACQUISITION.md`
+
 ## SAFC Final Method-Validation Package
 
 These artifacts consolidate existing methodology and validation evidence. They
