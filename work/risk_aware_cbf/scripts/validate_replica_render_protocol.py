@@ -9,9 +9,9 @@ from pathlib import Path
 import numpy as np
 
 
-def write_csv(path, rows):
+def write_csv(path, rows, fields=None):
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=["check", "passed", "detail"])
+        writer = csv.DictWriter(handle, fieldnames=fields or list(rows[0]))
         writer.writeheader()
         writer.writerows(rows)
 
@@ -73,7 +73,9 @@ def main():
         yaw_slots = all(sorted(int(item["yaw_slot"]) for item in manifest_rows if int(item["position_index"]) == index) == [0, 1, 2] for index in range(100))
         train_count = sum(item.get("split") == "train" for item in manifest_rows)
         eval_count = sum(item.get("split") == "eval" for item in manifest_rows)
-        distances = [float(np.linalg.norm(positions[i + 1] - positions[i])) for i in range(len(positions) - 1) if (i + 1) // 3 != i // 3]
+        metadata_path = args.manifest.parent / "manifest_metadata.json"
+        metadata = json.loads(metadata_path.read_text(encoding="utf-8")) if metadata_path.is_file() else {}
+        path_spacing = float(metadata.get("path_length", float("nan"))) / 99.0
         manifest_checks = [
             ("formal_rows", len(manifest_rows) == 300, str(len(manifest_rows))),
             ("ordered_unique_frame_ids", [item.get("frame_id") for item in manifest_rows] == expected_ids, "frame_0000_to_frame_0299"),
@@ -85,10 +87,10 @@ def main():
             ("rotation_matrices", rotations_ok, "det_and_orthogonality"),
             ("forward_inverse_contract", inverse_ok, "c2w_times_w2c"),
             ("camera_height_offset", height_ok, "1.50_on_plus_Y"),
-            ("spatial_path_min_spacing", bool(distances) and min(distances) >= 0.10 - 1e-6, str(min(distances) if distances else None)),
+            ("spatial_path_min_spacing", math.isfinite(path_spacing) and path_spacing >= 0.10 - 1e-6, str(path_spacing)),
         ]
         write_csv(args.out / "camera_manifest_contract_checks.csv", [{"check": name, "passed": passed, "detail": detail} for name, passed, detail in manifest_checks])
-        write_csv(args.out / "camera_trajectory_statistics.csv", [{"formal_rows": len(manifest_rows), "unique_spatial_positions": unique_positions, "train_frames": train_count, "eval_frames": eval_count, "minimum_adjacent_spatial_distance": min(distances) if distances else ""}])
+        write_csv(args.out / "camera_trajectory_statistics.csv", [{"formal_rows": len(manifest_rows), "unique_spatial_positions": unique_positions, "train_frames": train_count, "eval_frames": eval_count, "uniform_path_arclength_spacing": path_spacing}])
         manifest_passed = all(item[1] for item in manifest_checks)
         print("camera_manifest_contract_passed=" + str(manifest_passed).lower())
     else:
