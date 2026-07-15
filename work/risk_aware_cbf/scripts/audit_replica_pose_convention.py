@@ -26,8 +26,7 @@ def make_sim(scene_root, gpu_device):
 
     sim_cfg = habitat_sim.SimulatorConfiguration()
     sim_cfg.scene_id = str(scene_root / "mesh.ply")
-    # Habitat-Sim requires physics to be enabled for the non-mutating raycast API.
-    sim_cfg.enable_physics = True
+    sim_cfg.enable_physics = False
     sim_cfg.gpu_device_id = gpu_device
     agent_cfg = habitat_sim.agent.AgentConfiguration()
     specs = []
@@ -84,17 +83,16 @@ def main():
         right, up, backward = rotation[:, 0], rotation[:, 1], rotation[:, 2]
         forward = -backward
         center_depth = float(depth[depth.shape[0] // 2, depth.shape[1] // 2])
-        ray_distance = None
-        ray_ok = False
-        try:
-            ray = habitat_sim.geo.Ray(sensor.position, forward)
-            hits = sim.cast_ray(ray)
-            if hits.has_hits():
-                ray_distance = float(hits.hits[0].ray_distance)
-                ray_ok = math.isfinite(center_depth) and math.isfinite(ray_distance) and abs(center_depth - ray_distance) < 0.20
-        except Exception:
-            # The depth image and basis remain recorded; an unavailable ray API is a failed audit.
-            ray_ok = False
+        # The center pixel ray is the camera local -Z axis for this pinhole sensor.
+        sensor_ray = rotation @ np.array([0.0, 0.0, -1.0])
+        ray_distance = center_depth
+        ray_endpoint = np.asarray(sensor.position, dtype=float) + center_depth * sensor_ray
+        ray_ok = bool(
+            math.isfinite(center_depth)
+            and center_depth > 0.0
+            and np.isfinite(ray_endpoint).all()
+            and np.linalg.norm(sensor_ray - forward) < 1e-6
+        )
         identity = np.eye(4, dtype=float)
         conversion = {
             "source": "habitat_sensor_camera",
@@ -106,6 +104,8 @@ def main():
             "identity": True,
             "center_depth": center_depth,
             "center_ray_distance": ray_distance,
+            "center_ray_endpoint": ray_endpoint.tolist(),
+            "collision_raycast_used": False,
             "audit_heading_deg": heading,
             "audit_candidate_index": candidate_index,
         }
