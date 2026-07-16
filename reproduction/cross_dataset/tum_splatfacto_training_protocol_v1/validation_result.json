@@ -1,0 +1,90 @@
+{
+  "G1_allowed": false,
+  "checkpoint_created": false,
+  "checks": [
+    {
+      "check": "base_commit",
+      "passed": true
+    },
+    {
+      "check": "policy_commit",
+      "passed": true
+    },
+    {
+      "check": "dataset_lock",
+      "passed": true
+    },
+    {
+      "check": "metric_parser",
+      "passed": true
+    },
+    {
+      "check": "environment",
+      "passed": true
+    },
+    {
+      "check": "references",
+      "passed": true
+    },
+    {
+      "check": "parameter_provenance",
+      "passed": true
+    },
+    {
+      "check": "method_seed",
+      "passed": true
+    },
+    {
+      "check": "command",
+      "passed": true
+    },
+    {
+      "check": "no_execution",
+      "passed": true
+    },
+    {
+      "check": "output_contract",
+      "passed": true
+    },
+    {
+      "check": "checkpoint_policy",
+      "passed": true
+    },
+    {
+      "check": "handoff",
+      "passed": true
+    },
+    {
+      "check": "freeze_zero_diff",
+      "passed": true
+    },
+    {
+      "check": "g0_zero_diff",
+      "passed": true
+    },
+    {
+      "check": "core_zero_diff",
+      "passed": true
+    },
+    {
+      "check": "cache_baseline_unchanged",
+      "passed": true
+    },
+    {
+      "check": "audit_cache_absent",
+      "passed": true
+    },
+    {
+      "check": "bundle",
+      "passed": true
+    }
+  ],
+  "run_directory_created": false,
+  "safer_executed": false,
+  "status": "PASS_READY_FOR_FORMAL_TRAINING_EXECUTION",
+  "training_iterations_executed": 0,
+  "unresolved_critical_fields": [],
+  "unresolved_noncritical_fields": [
+    "actual run directory timestamp must be recorded at execution"
+  ]
+}

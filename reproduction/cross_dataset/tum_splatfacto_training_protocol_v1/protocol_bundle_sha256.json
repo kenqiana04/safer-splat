@@ -1,0 +1,28 @@
+{
+  "excluded": [
+    "protocol_bundle_sha256.json",
+    "validation_result.json"
+  ],
+  "files": {
+    "CONFIG_SELECTION_POLICY_PREREGISTRATION.md": "2a1b4ca39abec7a3da1b03a74f2948eb66a140f89266203b479d8288356583d2",
+    "README.md": "fd53ab5e8bd6050dc0f36f0fc4c3bb35205964929fe9c55e696753de8b42f049",
+    "REPORT_TUM_SPLATFACTO_TRAINING_PROTOCOL_V1.md": "6e23ba5208b6e0f6ed31559e2089d50a89f7ac28de35ec61ade805c7db72aef8",
+    "checkpoint_selection_policy.json": "feb11eddab85dc7d993d9b3311368363b801768745f7c1416bad6e18a3393cf6",
+    "dataset_lock.json": "6e1e8dac33d8472e3489734a45df2814b41039e6274665646c1b0c2312096322",
+    "environment_lock.json": "9399a442ac6e636372891f955bf2a1b185f0869787eabee09f1e19de09c21074",
+    "exact_training_command.json": "3d6d75c7797dec97dd05a395f28042ef6ebad2390459988b35622c82d5b235cd",
+    "exact_training_command.sh": "25e490904204622b0c2014ea4093f52efc507fb0543b675f9fe25871fd0d5b81",
+    "failure_and_retry_policy.json": "554061cf6992f397a636d31fa1aefc77b07b8092e7e4a2822e33ff1f933cd20d",
+    "frozen_training_config.json": "52fa5cdb93bcef333fc6e9f1c94043745a535e99d620e1f0fff85850f73f8105",
+    "frozen_training_config.yaml": "0701296e447622bef843e345e0bcd0d5abd976e12be72ee9b1d2bd732c23b638",
+    "output_directory_contract.json": "d05dceb21f14830ee690b11e3b48dd89ed4a132f4358aeb43052c5cd5b3d0cea",
+    "parameter_provenance.csv": "9f9cb735b9e3d48cfae75b10082a58b441b1dfe14f55675b0162bbb7579d1b9d",
+    "post_training_acceptance_gates.json": "75657ed138f221ef9e1d1f6004e5272120119938fef9f66653cfc0b61467e292",
+    "reference_config_comparison.csv": "be1a4bc506081a3f8b5d887ef5fd5e4577b39cebe68c41b21cbdb45250353f99",
+    "reference_config_inventory.json": "fec082e2abcff9664388c23bb167fd324fa6692d424e9df7c787a3187f457ff8",
+    "scripts\\build_protocol_bundle.py": "13bcf181409b3aed2f1cc2828dba77e1f4d623c36ac142a66184eeac6e2b7a27",
+    "scripts\\validate_training_protocol.py": "5d87219685e44e54e6359018a951e4c0c40864017f50137fffd2ee1a04371342",
+    "training_execution_handoff.json": "e0888098fdaeebdc2828223105862ea9f23247f590ecf5720cd42a2cebb227a5"
+  },
+  "status": "complete_no_execution_protocol"
+}

@@ -1,0 +1,17 @@
+{
+  "T1_execution_identity": true,
+  "T2_completion": true,
+  "T3_checkpoint_integrity": true,
+  "T4_metric_invariants": true,
+  "T5_eval_rendering_60_frames": true,
+  "T6_geometry_without_alignment": true,
+  "T7_safer_boundary": {
+    "G1_allowed": false,
+    "collision_evaluator_validated": false,
+    "dynamics_wrapper_validated": false,
+    "ellipsoid_query_validated": false,
+    "navigation_volume_validated": false,
+    "safer_loader_validated": false
+  },
+  "status": "PREREGISTERED_NOT_EXECUTED"
+}

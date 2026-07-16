@@ -1,0 +1,38 @@
+{
+  "flight": {
+    "dataparser": "NerfstudioDataParserConfig",
+    "exists": true,
+    "max_num_iterations": 30000,
+    "method_name": "splatfacto",
+    "mixed_precision": false,
+    "path": "/disk1/zlab/projects/safer-splat/outputs/flight/splatfacto/2024-09-12_172434/config.yml",
+    "sha256": "7e83fb0711a1decc55518e66e43a34395188c2e2a2de0e5ec24d6bb510fb7b8d",
+    "source_type": "authoritative_server_checkout",
+    "steps_per_eval_batch": 0,
+    "steps_per_eval_image": 100,
+    "steps_per_save": 2000,
+    "timestamp": "2024-09-12_172434"
+  },
+  "schema": {
+    "dataparser_subcommand": "nerfstudio-data",
+    "depth_unit_scale_factor_default": 0.001,
+    "method": "splatfacto",
+    "nerfstudio_version": "1.1.5",
+    "required_tum_override": 0.0002,
+    "viewer_disabled_mapping": "--vis tensorboard"
+  },
+  "stonehenge": {
+    "dataparser": "InstantNGPDataParserConfig",
+    "exists": true,
+    "max_num_iterations": 30000,
+    "method_name": "splatfacto",
+    "mixed_precision": false,
+    "path": "/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724/config.yml",
+    "sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e",
+    "source_type": "authoritative_server_checkout",
+    "steps_per_eval_batch": 0,
+    "steps_per_eval_image": 100,
+    "steps_per_save": 2000,
+    "timestamp": "2024-09-11_100724"
+  }
+}

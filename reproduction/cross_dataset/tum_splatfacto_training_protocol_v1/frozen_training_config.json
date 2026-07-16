@@ -1,0 +1,143 @@
+{
+  "dataset": {
+    "auto_scale_poses": false,
+    "canonical_alias": "TUM_FR1_ROOM",
+    "center_method": "none",
+    "dataparser_scale": 1.0,
+    "dataset_family": "TUM_RGBD",
+    "depth_count": 300,
+    "depth_unit_scale_factor_meters": 0.0002,
+    "depth_units_per_meter": 5000,
+    "double_scaling_risk": false,
+    "eval_frame_count": 60,
+    "eval_mode": "fraction",
+    "frame_drop_count": 0,
+    "freiburg1_correction_preapplied": true,
+    "orientation_method": "none",
+    "pose_count": 300,
+    "processed_data_path": "/disk1/zlab/cross_dataset_assets/processed/tum_rgbd/freiburg1_room",
+    "rgb_count": 300,
+    "sequence_name": "rgbd_dataset_freiburg1_room",
+    "source_evidence_commit": "8199c9c4c5ce76e65f389e963376a8a02d784247",
+    "source_frame_count": 300,
+    "source_report_sha256": "5002caa15d66d379c98b89c560b30cf42588fc9d6720e0039602f02c5b75d332",
+    "train_frame_count": 240,
+    "train_split_fraction": 0.8,
+    "transforms_path": "/disk1/zlab/cross_dataset_assets/processed/tum_rgbd/freiburg1_room/transforms.json",
+    "transforms_sha256": "b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a"
+  },
+  "formal_run_count": 1,
+  "load_checkpoint": null,
+  "load_dir": null,
+  "logging": {
+    "local_writer": true,
+    "profiler": "basic",
+    "steps_per_log": 10
+  },
+  "machine": {
+    "device_type": "cuda",
+    "num_devices": 1,
+    "num_machines": 1
+  },
+  "max_num_iterations": 30000,
+  "method": "splatfacto",
+  "mixed_precision": false,
+  "model": {
+    "background_color": "random",
+    "camera_optimizer_mode": "off",
+    "collider_params": {
+      "far_plane": 6.0,
+      "near_plane": 2.0
+    },
+    "cull_alpha_thresh": 0.1,
+    "cull_scale_thresh": 0.5,
+    "cull_screen_size": 0.15,
+    "densify_grad_thresh": 0.0008,
+    "densify_size_thresh": 0.01,
+    "enable_collider": true,
+    "max_gauss_ratio": 10.0,
+    "n_split_samples": 2,
+    "num_downscales": 2,
+    "num_random": 50000,
+    "output_depth_during_training": false,
+    "random_init": false,
+    "random_scale": 10.0,
+    "rasterize_mode": "classic",
+    "refine_every": 100,
+    "reset_alpha_every": 30,
+    "resolution_schedule": 3000,
+    "sh_degree": 3,
+    "sh_degree_interval": 1000,
+    "split_screen_size": 0.05,
+    "ssim_lambda": 0.2,
+    "stop_screen_size_at": 4000,
+    "stop_split_at": 15000,
+    "use_scale_regularization": false,
+    "warmup_length": 500
+  },
+  "optimizers": {
+    "camera_opt": {
+      "eps": 1e-15,
+      "lr": 0.0001,
+      "scheduler": {
+        "lr_final": 5e-07,
+        "lr_pre_warmup": 0,
+        "max_steps": 30000,
+        "ramp": "cosine",
+        "warmup_steps": 1000
+      }
+    },
+    "features_dc": {
+      "eps": 1e-15,
+      "lr": 0.0025,
+      "scheduler": null
+    },
+    "features_rest": {
+      "eps": 1e-15,
+      "lr": 0.000125,
+      "scheduler": null
+    },
+    "means": {
+      "eps": 1e-15,
+      "lr": 0.00016,
+      "scheduler": {
+        "lr_final": 1.6e-06,
+        "lr_pre_warmup": 1e-08,
+        "max_steps": 30000,
+        "ramp": "cosine",
+        "warmup_steps": 0
+      }
+    },
+    "opacities": {
+      "eps": 1e-15,
+      "lr": 0.05,
+      "scheduler": null
+    },
+    "quats": {
+      "eps": 1e-15,
+      "lr": 0.001,
+      "scheduler": null
+    },
+    "scales": {
+      "eps": 1e-15,
+      "lr": 0.005,
+      "scheduler": null
+    }
+  },
+  "protocol_version": "V1",
+  "reference": {
+    "flight_sha256": "7e83fb0711a1decc55518e66e43a34395188c2e2a2de0e5ec24d6bb510fb7b8d",
+    "primary": "stonehenge",
+    "schema_version": "nerfstudio 1.1.5",
+    "stonehenge_sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e"
+  },
+  "resume_allowed": false,
+  "seed": 20260716,
+  "steps_per_eval_all_images": 1000,
+  "steps_per_eval_batch": 0,
+  "steps_per_eval_image": 100,
+  "steps_per_save": 2000,
+  "use_grad_scaler": false,
+  "viewer_disabled": true,
+  "vis": "tensorboard"
+}

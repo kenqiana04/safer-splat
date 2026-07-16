@@ -1,0 +1,18 @@
+{
+  "classes": [
+    "P1 protocol/config",
+    "P2 environment mismatch",
+    "P3 dataset/hash mismatch",
+    "P4 CLI/schema",
+    "P5 output path conflict",
+    "T1 infrastructure",
+    "T2 CUDA/OOM",
+    "T3 NaN/Inf",
+    "T4 checkpoint write",
+    "T5 incomplete",
+    "T6 integrity"
+  ],
+  "config_error_requires": "V2",
+  "outcome_based_tuning_forbidden": true,
+  "same_config_retry_allowed_only_for": "T1 infrastructure"
+}
