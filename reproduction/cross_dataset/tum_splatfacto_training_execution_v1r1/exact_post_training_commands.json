@@ -1,0 +1,7 @@
+{
+  "config_source": "formal run config.yml",
+  "evaluation_command": "ns-eval --load-config $RUN/config.yml --output-path $RUN/reports/eval_metrics.json",
+  "forbidden_operations": ["pose_optimization", "similarity_alignment", "scale_fitting", "SAFER"],
+  "render_command": "ns-render dataset --load-config $RUN/config.yml --output-path $RUN/renders --image-format png --rendered-output-names rgb --split val",
+  "split": "val"
+}
