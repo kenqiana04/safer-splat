@@ -1,0 +1,113 @@
+{
+  "api_invoked": true,
+  "auto_scale_poses": false,
+  "center_method": "none",
+  "checkpoint_created": false,
+  "dataparser_scale": 1.0,
+  "dataparser_scale_is_one": true,
+  "dataparser_transform_device": "cpu",
+  "dataparser_transform_dtype": "torch.float32",
+  "dataparser_transform_identity": true,
+  "dataparser_transform_max_abs_error": 0.0,
+  "dataparser_transform_shape": [
+    3,
+    4
+  ],
+  "dataparser_transform_values": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      -0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      -0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      -0.0
+    ]
+  ],
+  "depth_paths_present": true,
+  "duplicate_parsed_path_count": 0,
+  "expected_identity_shape": [
+    3,
+    4
+  ],
+  "frame_drop_count": 0,
+  "matched_pose_count": 300,
+  "model_created": false,
+  "optimizer_created": false,
+  "orientation_method": "none",
+  "parsed_eval_count": 60,
+  "parsed_total_count": 300,
+  "parsed_train_count": 240,
+  "parsed_translation_norm_median": 1.7683438062667847,
+  "parsed_unique_total": 300,
+  "ratio_max": 1.0000000374593834,
+  "ratio_median": 1.0,
+  "ratio_min": 0.9999999586992355,
+  "safer_executed": false,
+  "source_frame_count": 300,
+  "source_translation_norm_median": 1.7683438062667847,
+  "stages": [
+    {
+      "stage": "import_environment",
+      "status": "passed"
+    },
+    {
+      "stage": "create_config",
+      "status": "passed"
+    },
+    {
+      "stage": "instantiate_dataparser",
+      "status": "passed"
+    },
+    {
+      "stage": "generate_train_outputs",
+      "status": "passed"
+    },
+    {
+      "stage": "generate_eval_outputs",
+      "status": "passed"
+    },
+    {
+      "stage": "inspect_transform_shape",
+      "status": "passed"
+    },
+    {
+      "stage": "compare_dataparser_transform",
+      "status": "passed"
+    },
+    {
+      "stage": "map_parsed_files_to_source",
+      "status": "passed"
+    },
+    {
+      "stage": "compare_source_and_parsed_poses",
+      "status": "passed"
+    },
+    {
+      "stage": "compute_translation_scale_ratio",
+      "status": "passed"
+    },
+    {
+      "stage": "write_results",
+      "status": "passed"
+    }
+  ],
+  "status": "PASS_DATAPARSER_ONLY",
+  "trainer_created": false,
+  "training_iterations_executed": 0,
+  "translation_vector_error_max": 7.849527559913181e-08,
+  "translation_vector_error_median": 3.8648174438549177e-08,
+  "unmatched_parsed_count": 0,
+  "unmatched_pose_count": 0,
+  "unmatched_source_count": 0,
+  "viewer_created": false
+}

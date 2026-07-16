@@ -1,0 +1,19 @@
+{
+  "authoritative_execution_host": "zlab-Super-Server",
+  "checkpoint_created": false,
+  "command_status": "PASS_ENTRY_CONTRACT",
+  "data_path": "/disk1/zlab/cross_dataset_assets/processed/tum_rgbd/freiburg1_room",
+  "default_matches_tum": false,
+  "double_scaling_prevention_rule": "Use raw/copied uint16 TUM depth exactly once with depth_unit_scale_factor=1/5000; do not apply Freiburg1 1.035 again.",
+  "environment": "/disk1/zlab/conda_envs/safer_splat_official",
+  "exact_cli_option_if_available": "--pipeline.datamanager.dataparser.depth-unit-scale-factor 0.0002",
+  "explicit_override_required": true,
+  "formal_training_not_authorized": true,
+  "future_command_template": "NOT EXECUTED: CUDA_VISIBLE_DEVICES=1 ns-train splatfacto --data <immutable_processed_tum_root> nerfstudio-data --orientation-method none --center-method none --auto-scale-poses False --downscale-factor 1 --depth-unit-scale-factor 0.0002",
+  "installed_nerfstudio_default_depth_scale": 0.001,
+  "method": "splatfacto",
+  "nerfstudio_version": "1.1.5",
+  "official_tum_depth_units_per_meter": 5000,
+  "required_depth_unit_scale_factor": 0.0002,
+  "training_iterations_executed": 0
+}

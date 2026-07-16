@@ -1,0 +1,18 @@
+{
+  "expected_transforms_sha256": "b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a",
+  "historical_branch": "safer-cross-dataset-metric-preprocessing",
+  "historical_commit": "3e22a7cae6f4c3c2c192cc2d7af3c9fbd607a0a3",
+  "historical_preprocessor": "work/risk_aware_cbf/scripts/preprocess_tum_rgbd_metric.py",
+  "historical_raw_asset_path": "/disk1/zlab/cross_dataset_assets/raw/tum_rgbd/rgbd_dataset_freiburg1_room",
+  "historical_raw_validation": "work/risk_aware_cbf/scripts/validate_cross_dataset_raw_assets.py",
+  "historical_report": "work/risk_aware_cbf/REPORT_CROSS_DATASET_METRIC_PREPROCESSING.md",
+  "historical_report_hash_matches": true,
+  "historical_report_sha256_expected": "ff0f43a4465faf76cb18bd77e044a4662b0f51dbcfc65277813689db80af4bd1",
+  "historical_report_sha256_observed": "ff0f43a4465faf76cb18bd77e044a4662b0f51dbcfc65277813689db80af4bd1",
+  "historical_transforms_path": "external output path was supplied with --out and is not recorded by the historical commit",
+  "read_only_operations": [
+    "git show",
+    "Git-historical SHA-256"
+  ],
+  "source_url": "https://cvg.cit.tum.de/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_room.tgz"
+}

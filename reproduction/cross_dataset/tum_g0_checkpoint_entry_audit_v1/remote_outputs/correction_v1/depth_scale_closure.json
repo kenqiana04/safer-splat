@@ -1,0 +1,28 @@
+{
+  "double_scaling_risk": false,
+  "final_depth_contract_status": "pass",
+  "future_required_depth_unit_scale_factor": 0.0002,
+  "historical_preprocessor_applies_1_035": false,
+  "historical_preprocessor_converts_to_float": false,
+  "historical_preprocessor_operation": "shutil.copy2",
+  "historical_preprocessor_reencodes_png": false,
+  "historical_preprocessor_scales_depth": false,
+  "identity_summary": {
+    "byte_identical_count": 300,
+    "copied_identically_count": 300,
+    "direct_reference_count": 0,
+    "expected_count": 300,
+    "mapped_count": 300,
+    "mismatch_count": 0,
+    "processed_found_count": 300,
+    "raw_found_count": 300,
+    "unresolved_mapping_count": 0
+  },
+  "nerfstudio_config_scale_source": "NerfstudioDataParserConfig.depth_unit_scale_factor",
+  "official_freiburg1_correction_already_applied": true,
+  "official_scale_to_meters": 0.0002,
+  "official_units_per_meter": 5000,
+  "selected_depth_byte_identity_status": "pass",
+  "transforms_depth_scale_field_present": false,
+  "transforms_depth_scale_field_value": null
+}

@@ -1,0 +1,7 @@
+{
+  "double_scaling_checked": false,
+  "meters_scale_factor": null,
+  "raw_depth_unit": "not source-established by frozen historical script/report/transforms",
+  "reason": "The historical preprocessor copies depth PNG files and the frozen transforms omit depth_unit_scale_factor; this audit does not infer a scale from convention.",
+  "status": "BLOCKED_BY_CRITICAL_PROVENANCE"
+}
