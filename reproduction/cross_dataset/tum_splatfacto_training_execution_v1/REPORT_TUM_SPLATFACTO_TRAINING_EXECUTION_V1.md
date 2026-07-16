@@ -57,6 +57,12 @@ checkpoint candidate and does not authorize G0 or G1 execution.
 
 ## Server Evidence Paths
 
-- Worktree: `/disk1/zlab/formal_execution_worktrees/tum_splatfacto_training_execution_v1`
-- Compact evidence: `/disk1/zlab/formal_execution_worktrees/tum_splatfacto_training_execution_v1/reproduction/cross_dataset/tum_splatfacto_training_execution_v1`
-- Formal output path retained absent: `/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1/splatfacto/20260716_000000`
+- The detached worktree
+  `/disk1/zlab/formal_execution_worktrees/tum_splatfacto_training_execution_v1`
+  was removed only after its compact evidence was copied to the Windows Git
+  worktree and committed. It contains no retained source, checkpoint, log, or
+  render evidence.
+- No execution-record root was created because the wrapper never started.
+- Formal output path retained absent:
+  `/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1/splatfacto/20260716_000000`.
+- The retained compact evidence is the Git directory containing this report.
