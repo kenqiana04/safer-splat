@@ -1,0 +1,10 @@
+{
+  "api_invoked": true,
+  "checkpoint_created": false,
+  "error": "RuntimeError('The size of tensor a (3) must match the size of tensor b (4) at non-singleton dimension 0')",
+  "model_created": false,
+  "optimizer_created": false,
+  "reason": "dataparser-only execution failed; no trainer/model fallback was attempted",
+  "status": "BLOCKED_BY_DATAPARSER",
+  "trainer_created": false
+}

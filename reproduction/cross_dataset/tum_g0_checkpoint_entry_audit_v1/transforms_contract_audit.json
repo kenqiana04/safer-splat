@@ -1,0 +1,35 @@
+{
+  "authoritative_host": "zlab-4090",
+  "expected_sha256": "b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a",
+  "frame_count": 300,
+  "hash_matches": true,
+  "intrinsics": {
+    "camera_model": "OPENCV",
+    "cx": 318.6,
+    "cy": 255.3,
+    "fl_x": 517.3,
+    "fl_y": 516.5,
+    "h": 480,
+    "w": 640
+  },
+  "normalization_fields": {
+    "auto_scale_poses": null,
+    "center_method": null,
+    "depth_unit_scale_factor": null,
+    "orientation_method": null,
+    "scale_factor": null
+  },
+  "processed_transforms_path": "/disk1/zlab/cross_dataset_assets/processed/tum_rgbd/freiburg1_room/transforms.json",
+  "required_fields_present": {
+    "camera_model": true,
+    "cx": true,
+    "cy": true,
+    "fl_x": true,
+    "fl_y": true,
+    "frames": true,
+    "h": true,
+    "w": true
+  },
+  "sha256": "b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a",
+  "status": "pass_hash_and_structural_contract"
+}

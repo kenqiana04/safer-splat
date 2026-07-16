@@ -1,0 +1,24 @@
+{
+  "checkpoint_created": false,
+  "command_status": "PASS_ENTRY_CONTRACT",
+  "command_template": "NOT EXECUTED: CUDA_VISIBLE_DEVICES=1 ns-train splatfacto --data <immutable_processed_tum_root> nerfstudio-data <separately_preregistered_cli_options>",
+  "data_path": "/disk1/zlab/cross_dataset_assets/processed/tum_rgbd/freiburg1_room",
+  "dataparser": "nerfstudio-data with explicitly audited orientation_method=none, center_method=none, auto_scale_poses=false",
+  "entry_blockers": [],
+  "environment": "/disk1/zlab/conda_envs/safer_splat_official",
+  "exact_executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/ns-train",
+  "formal_training_not_authorized": true,
+  "gpu_device": "CUDA_VISIBLE_DEVICES=1",
+  "method": "splatfacto",
+  "metric_preservation_options": "only source-verified parser settings; formal CLI spelling must be frozen in a separate training protocol",
+  "nerfstudio_version": "1.1.5",
+  "seed_status": "formal_seed_pending_preregistration",
+  "split_status": "dataparser-only verified 240/60 fraction split",
+  "training_hyperparameters_status": "formal_training_hyperparameters_pending_preregistration",
+  "training_iterations_executed": 0,
+  "unresolved_fields": [
+    "depth meter scale",
+    "formal CLI option spellings/output directory/seed/hyperparameters"
+  ],
+  "viewer_disabled": "must be explicitly frozen in future training protocol"
+}

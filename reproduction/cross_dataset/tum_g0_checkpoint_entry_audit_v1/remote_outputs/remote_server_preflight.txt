@@ -1,0 +1,17 @@
+authoritative_execution_host=zlab-Super-Server
+authoritative_conda_env=/disk1/zlab/conda_envs/safer_splat_official
+authoritative_python=/disk1/zlab/conda_envs/safer_splat_official/bin/python
+python_version=3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]
+cuda_visible_devices=1
+torch_version=2.1.2+cu118
+cuda_version=11.8
+cuda_available=True
+visible_device_count=1
+visible_device_0=NVIDIA GeForce RTX 4090
+nerfstudio_version=1.1.5
+gsplat_version=1.4.0
+ns_train=/disk1/zlab/conda_envs/safer_splat_official/bin/ns-train
+training_iterations_executed=0
+checkpoint_created=False
+safer_executed=False
+ns_train_help_returncodes=[0, 0]

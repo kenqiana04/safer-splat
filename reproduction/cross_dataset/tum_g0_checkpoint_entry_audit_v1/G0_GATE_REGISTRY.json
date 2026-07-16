@@ -1,36 +1,4 @@
 {
-  "schema_version": 1,
-  "audit_id": "tum_g0_checkpoint_entry_audit_v1",
-  "preregistration_state": "committed_before_asset_inspection",
-  "base_commit": "0fb8698e8590aead60032487fc3321c07f2fd99c",
-  "target_dataset_id": "tum_metric_candidate",
-  "frozen": {
-    "g0_status": "pending",
-    "g1_allowed": false,
-    "expected_transforms_sha256": "b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a",
-    "historical_commit": "3e22a7cae6f4c3c2c192cc2d7af3c9fbd607a0a3",
-    "historical_report_sha256": "ff0f43a4465faf76cb18bd77e044a4662b0f51dbcfc65277813689db80af4bd1"
-  },
-  "tolerances": {
-    "rotation_orthogonality_max": 1e-5,
-    "rotation_determinant_error_max": 1e-5,
-    "bottom_row_error_max": 1e-8
-  },
-  "rgb_threshold_policy": "threshold_not_previously_frozen; near_black_descriptive_only; structural_rules_only",
-  "gates": [
-    {"id": "G0-A", "name": "dataset_identity_and_source_provenance", "status": "pending"},
-    {"id": "G0-B", "name": "asset_reachability_and_immutability", "status": "pending"},
-    {"id": "G0-C", "name": "rgb_integrity", "status": "pending"},
-    {"id": "G0-D", "name": "depth_integrity", "status": "pending"},
-    {"id": "G0-E", "name": "rgb_depth_pose_pairing", "status": "pending"},
-    {"id": "G0-F", "name": "camera_intrinsics_contract", "status": "pending"},
-    {"id": "G0-G", "name": "pose_convention_and_rigid_transform_validity", "status": "pending"},
-    {"id": "G0-H", "name": "metric_scale_preservation", "status": "pending"},
-    {"id": "G0-I", "name": "nerfstudio_transforms_dataparser_compatibility", "status": "pending"},
-    {"id": "G0-J", "name": "splatfacto_command_entry_feasibility", "status": "pending"},
-    {"id": "G0-K", "name": "standard_checkpoint_to_safer_loader_static_compatibility", "status": "pending"},
-    {"id": "G0-L", "name": "reproducibility_and_environment_provenance", "status": "pending"}
-  ],
   "allowed_final_decisions": [
     "READY_FOR_FORMAL_SPLATFACTO_TRAINING_PREREGISTRATION",
     "BLOCKED_BY_DATASET_IDENTITY",
@@ -48,5 +16,85 @@
     "BLOCKED_BY_CRITICAL_PROVENANCE",
     "FAIL"
   ],
-  "final_decision": "pending"
+  "audit_id": "tum_g0_checkpoint_entry_audit_v1",
+  "base_commit": "0fb8698e8590aead60032487fc3321c07f2fd99c",
+  "final_decision": "BLOCKED_BY_CRITICAL_PROVENANCE",
+  "frozen": {
+    "expected_transforms_sha256": "b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a",
+    "g0_status": "pending",
+    "g1_allowed": false,
+    "historical_commit": "3e22a7cae6f4c3c2c192cc2d7af3c9fbd607a0a3",
+    "historical_report_sha256": "ff0f43a4465faf76cb18bd77e044a4662b0f51dbcfc65277813689db80af4bd1"
+  },
+  "gates": [
+    {
+      "id": "G0-A",
+      "name": "dataset_identity_and_source_provenance",
+      "status": "passed"
+    },
+    {
+      "id": "G0-B",
+      "name": "asset_reachability_and_immutability",
+      "status": "passed"
+    },
+    {
+      "id": "G0-C",
+      "name": "rgb_integrity",
+      "status": "passed"
+    },
+    {
+      "id": "G0-D",
+      "name": "depth_integrity",
+      "status": "blocked_by_critical_provenance"
+    },
+    {
+      "id": "G0-E",
+      "name": "rgb_depth_pose_pairing",
+      "status": "passed"
+    },
+    {
+      "id": "G0-F",
+      "name": "camera_intrinsics_contract",
+      "status": "passed"
+    },
+    {
+      "id": "G0-G",
+      "name": "pose_convention_and_rigid_transform_validity",
+      "status": "passed"
+    },
+    {
+      "id": "G0-H",
+      "name": "metric_scale_preservation",
+      "status": "blocked_by_critical_provenance"
+    },
+    {
+      "id": "G0-I",
+      "name": "nerfstudio_transforms_dataparser_compatibility",
+      "status": "blocked_by_dataparser"
+    },
+    {
+      "id": "G0-J",
+      "name": "splatfacto_command_entry_feasibility",
+      "status": "passed_entry_contract_only"
+    },
+    {
+      "id": "G0-K",
+      "name": "standard_checkpoint_to_safer_loader_static_compatibility",
+      "status": "adapter_likely_required_static_only"
+    },
+    {
+      "id": "G0-L",
+      "name": "reproducibility_and_environment_provenance",
+      "status": "passed"
+    }
+  ],
+  "preregistration_state": "committed_before_asset_inspection",
+  "rgb_threshold_policy": "threshold_not_previously_frozen; near_black_descriptive_only; structural_rules_only",
+  "schema_version": 1,
+  "target_dataset_id": "tum_metric_candidate",
+  "tolerances": {
+    "bottom_row_error_max": 1e-08,
+    "rotation_determinant_error_max": 1e-05,
+    "rotation_orthogonality_max": 1e-05
+  }
 }

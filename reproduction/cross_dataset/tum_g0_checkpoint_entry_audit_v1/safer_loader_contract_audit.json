@@ -1,0 +1,34 @@
+{
+  "audit_mode": "static_source_only_no_loader_execution",
+  "coordinate_requirements": "loader consumes Gaussian means in the same metric world frame as query states",
+  "core_modification_required": false,
+  "known_adapter_gaps": [
+    "No TUM checkpoint exists",
+    "actual Nerfstudio serialized attribute names/shapes are unverified",
+    "scene transform and metric frame adaptation are unverified"
+  ],
+  "loader_contract_status": "adapter_likely_required",
+  "metric_scale_requirements": "no unaccounted scene transform or pose normalization",
+  "recommended_allowed_adapter_location": "reproduction/ or work/ only, in a separately authorized task",
+  "required_checkpoint_artifacts": [
+    "Nerfstudio config path",
+    "Nerfstudio model checkpoint under nerfstudio_models"
+  ],
+  "required_gaussian_attributes": {
+    "colors": "N x 3 or SH-derived",
+    "means": "N x 3",
+    "opacities": "N x 1",
+    "rotations": "N x 4 quaternion",
+    "scales": "N x 3"
+  },
+  "safer_loader_validated": false,
+  "source_path": "splat/gsplat_utils.py",
+  "source_readable": true,
+  "static_attribute_markers_found": {
+    "colors": true,
+    "means": true,
+    "opacities": true,
+    "rots": true,
+    "scales": true
+  }
+}

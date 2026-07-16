@@ -1,0 +1,86 @@
+{
+  "authoritative_conda_env": "safer_splat_official",
+  "authoritative_data_host": "zlab-Super-Server",
+  "authoritative_gpu": "NVIDIA GeForce RTX 4090",
+  "authoritative_python": "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
+  "authoritative_runtime_host": "zlab-Super-Server",
+  "checkpoint_created": false,
+  "checks": [
+    {
+      "check": "authoritative_host",
+      "passed": true
+    },
+    {
+      "check": "authoritative_env",
+      "passed": true
+    },
+    {
+      "check": "remote_asset_root",
+      "passed": true
+    },
+    {
+      "check": "sequence",
+      "passed": true
+    },
+    {
+      "check": "transforms_hash",
+      "passed": true
+    },
+    {
+      "check": "remote_rgb_depth_pose",
+      "passed": true
+    },
+    {
+      "check": "source_unchanged",
+      "passed": true
+    },
+    {
+      "check": "windows_probe_excluded",
+      "passed": true
+    },
+    {
+      "check": "no_training",
+      "passed": true
+    },
+    {
+      "check": "blocked_not_promoted",
+      "passed": true
+    },
+    {
+      "check": "remote_output_hashes",
+      "passed": true
+    },
+    {
+      "check": "zero_diff:reproduction/experiment_protocol_freeze_v1",
+      "passed": true
+    },
+    {
+      "check": "zero_diff:cbf",
+      "passed": true
+    },
+    {
+      "check": "zero_diff:splat",
+      "passed": true
+    },
+    {
+      "check": "zero_diff:ellipsoids",
+      "passed": true
+    },
+    {
+      "check": "zero_diff:dynamics",
+      "passed": true
+    },
+    {
+      "check": "zero_diff:run.py",
+      "passed": true
+    },
+    {
+      "check": "bundle_hashes",
+      "passed": true
+    }
+  ],
+  "remote_execution_complete": true,
+  "status": "BLOCKED_BY_CRITICAL_PROVENANCE",
+  "training_iterations_executed": 0,
+  "windows_probe_role": "superseded_non_authoritative_local_probe"
+}

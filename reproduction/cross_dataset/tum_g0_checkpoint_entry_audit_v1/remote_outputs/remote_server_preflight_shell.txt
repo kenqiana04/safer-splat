@@ -1,0 +1,21 @@
+started_utc=2026-07-15T11:13:37Z
+zlab-Super-Server
+zlab
+/home/zlab
+Linux zlab-Super-Server 5.15.0-69-generic #76~20.04.1-Ubuntu SMP Mon Mar 20 15:54:19 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+1, NVIDIA GeForce RTX 4090, GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d, 525.147.05, 24564 MiB
+CONDA_DEFAULT_ENV=/disk1/zlab/conda_envs/safer_splat_official
+/disk1/zlab/conda_envs/safer_splat_official/bin/python
+Python 3.10.20
+/disk1/zlab/conda_envs/safer_splat_official/bin/ns-train
+python_executable=/disk1/zlab/conda_envs/safer_splat_official/bin/python
+torch_installed=True
+nerfstudio_installed=True
+gsplat_installed=True
+torch_version=2.1.2+cu118
+cuda_available=True
+cuda_version=11.8
+cuda_device_count_visible=1
+visible_device_0=NVIDIA GeForce RTX 4090
+nerfstudio_version=installed_no_dunder_version
+gsplat_version=1.4.0

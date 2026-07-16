@@ -1,0 +1,16 @@
+{
+  "G1_allowed": false,
+  "additional_blockers": [
+    "BLOCKED_BY_DATAPARSER"
+  ],
+  "authoritative_execution_host": "zlab-Super-Server",
+  "checkpoint_created": false,
+  "data_and_checkpoint_entry_substage": "blocked",
+  "decision": "BLOCKED_BY_CRITICAL_PROVENANCE",
+  "formal_checkpoint_exists": false,
+  "global_G0_status": "blocked",
+  "reason": "Remote RGB/depth/pose structural audit passed, but frozen evidence does not establish depth meter scale and dataparser-only execution raises a shape error without any model/trainer fallback.",
+  "safer_loader_validated": false,
+  "safer_navigation_substage": "not_started",
+  "training_iterations_executed": 0
+}
