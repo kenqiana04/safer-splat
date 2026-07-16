@@ -3,6 +3,7 @@
 ## Executive Summary
 
 This no-execution protocol depends on PR #22 at `8199c9c4c5ce76e65f389e963376a8a02d784247` and freezes one standard `splatfacto` TUM_FR1_ROOM run: seed `20260716`, 240/60 split, 30,000 iterations, and final-checkpoint-only selection.
+The frozen `transforms.json` SHA-256 is `b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a`.
 
 ## Evidence and Frozen Contract
 
@@ -39,3 +40,5 @@ and found the output path and checkpoints absent. GPU busy is recorded only and
 does not block this correction, but GPU 1 must be checked again before any
 separate future execution. A future execution requires a new branch and Draft
 PR and cannot reuse PR #24. G1 remains forbidden.
+
+Validator status: `PASS_READY_FOR_FORMAL_TRAINING_EXECUTION_AFTER_HASH_CANONICALIZATION`.
