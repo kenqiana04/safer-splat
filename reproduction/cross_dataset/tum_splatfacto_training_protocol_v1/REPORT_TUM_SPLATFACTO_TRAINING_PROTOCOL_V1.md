@@ -32,8 +32,10 @@ canonical Git-blob/LF SHA-256 is
 The canonical policy is SHA-256 of exact Git blob bytes at a recorded commit;
 working-tree, JSON-reserialized, and PowerShell text-pipeline hashes are not
 authoritative. A protocol-directory `.gitattributes` file contracts text to LF.
-The command semantics and configuration JSON semantics are unchanged. Server
-checkout verification remains required. The output path remains absent; GPU busy
-is recorded only and does not block hash correction, but GPU 1 must be checked
-again before any separate future execution. A future execution requires a new
-branch and Draft PR and cannot reuse PR #24. G1 remains forbidden.
+The command semantics and configuration JSON semantics are unchanged. An
+isolated server worktree at `39d91df9b6527f8683064db524cfe7bdc6aa17e6`
+verified both checkout hashes equal their canonical blobs, with no CRLF bytes,
+and found the output path and checkpoints absent. GPU busy is recorded only and
+does not block this correction, but GPU 1 must be checked again before any
+separate future execution. A future execution requires a new branch and Draft
+PR and cannot reuse PR #24. G1 remains forbidden.

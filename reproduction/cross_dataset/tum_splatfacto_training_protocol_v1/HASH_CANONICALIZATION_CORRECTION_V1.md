@@ -25,3 +25,12 @@ is zero. This correction neither starts nor authorizes training, evaluation,
 rendering, SAFER, navigation, or G1. The expected output directory remains
 absent. Server checkout verification is recorded separately before this
 correction can be considered ready for a newly authorized execution branch.
+
+## Authoritative server verification
+
+An isolated detached worktree at correction commit
+`39d91df9b6527f8683064db524cfe7bdc6aa17e6` verified both working-tree hashes
+equal their raw Git-blob canonical hashes, with zero CRLF bytes, LF attributes,
+and final newlines. The worktree was clean; the formal output path and
+checkpoints remained absent, and no Nerfstudio process was present. GPU compute
+processes were observed only and not modified.
