@@ -1,0 +1,11 @@
+{
+  "G1_allowed": false,
+  "attempt_count": 0,
+  "checkpoint_candidate_ready": false,
+  "checks": {"canonical_identity_passed": true, "environment_passed": true, "gpu_busy_recorded_without_intervention": true, "no_retry": true, "no_safer": true, "no_second_seed": true, "output_absent": true, "previous_pr24_not_reused": true, "source_assets_unchanged": true, "training_not_started": true},
+  "failure_classification": "BLOCKED_BY_GPU_BUSY",
+  "safer_loader_executed": false,
+  "status": "BLOCKED_BY_GPU_BUSY",
+  "unresolved_critical_fields": ["GPU 1 was not idle at all three required pre-launch checks."],
+  "unresolved_noncritical_fields": []
+}
