@@ -7,5 +7,6 @@
   "requires_blob_sha": true,
   "requires_commit": true,
   "text_eol": "lf",
+  "launch_shell_correction_policy": "conda_activate_before_nounset",
   "working_tree_hash_is_authoritative": false
 }

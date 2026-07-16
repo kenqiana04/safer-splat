@@ -16,6 +16,35 @@ The NOT EXECUTED command is `exact_training_command.sh`; expected output is `/di
 No training, run directory, checkpoint, render metric, SAFER action, or G1 action occurred. Acceptance and retry gates are preregistered only. `training_iterations_executed=0`, `checkpoint_created=false`, `safer_executed=false`, and `G1_allowed=false`.
 Protocol readiness is not checkpoint or SAFER readiness. The next task requires new user authorization and may execute only this frozen command; G1 baseline remains forbidden.
 
+## Conda Activation Strict-Mode Correction
+
+PR #27 remains an immutable V1R3 attempt-0 blocked record: tmux briefly
+started but `ns-train` never appeared. Its exact frozen script enabled nounset
+before Conda activation, and `deactivate-gfortran_linux-64.sh` read an unset
+`GFORTRAN` variable. This correction does not use a variable patch or alter
+Conda; it keeps `set -e` and `pipefail`, activates `safer_splat_official`, and
+then immediately enables `set -u`.
+
+The old failure class was reproduced in an isolated server base-environment
+probe through `deactivate-gcc_linux-64.sh` and an unset
+`_CONDA_PYTHON_SYSCONFIGDATA_NAME_USED`. The corrected activation-only probe
+passed with Python 3.10.20 and the expected `ns-train` path; no training,
+output directory, checkpoint, evaluation, render, SAFER, or G1 work occurred.
+The old/new training token lists are identical (71 tokens, zero argument
+differences), and `frozen_training_config.json` is byte-identical.
+
+Previous/new command blob identities are
+`1650b873e734d8fcdf56b8bc26fff48fdb2730ac` /
+`22d00fadea7eb1fb43556d4690c78113d317c6d144e96b6ad0d294d27a9369a4`
+and `0d56e187039d5da75f2a147ff1c207bf9ff58efa` /
+`4a39766b324ffc6c7766a3389589d748bc00925f109ec44fc72e5a705358ec94`.
+The server `git fetch` for the new protocol commit timed out before the
+required detached checkout could be made, so the protocol remains blocked by
+server-checkout verification and does not authorize training. PR #24–#27
+remain Draft evidence. A future V1R4 needs new explicit authorization, a new
+branch and Draft PR, pre-created execution records before GPU sampling, and
+the same activate-before-nounset policy. G1 remains forbidden.
+
 ## Cross-Platform Hash Canonicalization Correction
 
 PR #24 correctly blocked before training because its preflight compared old

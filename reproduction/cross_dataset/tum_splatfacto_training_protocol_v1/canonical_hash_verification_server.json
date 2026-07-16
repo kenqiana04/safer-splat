@@ -1,42 +1,13 @@
 {
-  "artifacts": {
-    "exact_training_command.sh": {
-      "crlf_count": 0,
-      "file": "Bourne-Again shell script, ASCII text executable, with very long lines",
-      "final_newline": true,
-      "git_blob_sha": "1650b873e734d8fcdf56b8bc26fff48fdb2730ac",
-      "lf_count": 8,
-      "raw_byte_count": 1364,
-      "raw_git_blob_sha256": "22d00fadea7eb1fb43556d4690c78113d317c6d144e96b6ad0d294d27a9369a4",
-      "working_byte_count": 1364,
-      "working_tree_sha256": "22d00fadea7eb1fb43556d4690c78113d317c6d144e96b6ad0d294d27a9369a4"
-    },
-    "frozen_training_config.json": {
-      "crlf_count": 0,
-      "file": "JSON data",
-      "final_newline": true,
-      "git_blob_sha": "d3e0c104b37304278dd4074787d8781d2281a375",
-      "lf_count": 143,
-      "raw_byte_count": 3883,
-      "raw_git_blob_sha256": "0d15d8d6fa84049c6b4c34d6fdcaf77114f569c8d22ea9d010ae8144e6c924ea",
-      "working_byte_count": 3883,
-      "working_tree_sha256": "0d15d8d6fa84049c6b4c34d6fdcaf77114f569c8d22ea9d010ae8144e6c924ea"
-    }
-  },
-  "attributes": [
-    "exact_training_command.sh: text: set; eol: lf",
-    "frozen_training_config.json: text: set; eol: lf"
-  ],
-  "checkpoint_present": false,
-  "git_status_short": [],
-  "gpu_processes_observed_only": [
-    "939934 /home/zlab/anaconda3/envs/SLCT/bin/python 20140 MiB",
-    "2638791 python 1728 MiB"
-  ],
+  "status": "BLOCKED_BY_SERVER_CHECKOUT_MISMATCH",
   "hostname": "zlab-Super-Server",
-  "ns_processes": [],
+  "previous_verified_protocol_commit": "6843fa477adc7f07acdfdb270ad7e4e3349da904",
+  "required_protocol_commit": "02a4604f6144d1ac121c49d40125c081543723aa",
+  "required_command_blob_sha": "0d56e187039d5da75f2a147ff1c207bf9ff58efa",
+  "required_command_canonical_sha256": "4a39766b324ffc6c7766a3389589d748bc00925f109ec44fc72e5a705358ec94",
+  "config_blob_sha": "d3e0c104b37304278dd4074787d8781d2281a375",
+  "config_canonical_sha256": "0d15d8d6fa84049c6b4c34d6fdcaf77114f569c8d22ea9d010ae8144e6c924ea",
   "output_path_absent": true,
-  "protocol_commit": "39d91df9b6527f8683064db524cfe7bdc6aa17e6",
-  "status": "PASS",
-  "training_executed": false
+  "fetch_timeout_seconds": 60,
+  "detached_checkout_created": false
 }

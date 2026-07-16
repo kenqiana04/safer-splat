@@ -1,80 +1,17 @@
 {
-  "G1_allowed": false,
-  "checkpoint_created": false,
-  "checks": [
-    {
-      "check": "base_commit",
-      "passed": true
-    },
-    {
-      "check": "policy_commit",
-      "passed": true
-    },
-    {
-      "check": "dataset_lock",
-      "passed": true
-    },
-    {
-      "check": "metric_parser",
-      "passed": true
-    },
-    {
-      "check": "environment",
-      "passed": true
-    },
-    {
-      "check": "method_seed",
-      "passed": true
-    },
-    {
-      "check": "canonical_hash_policy",
-      "passed": true
-    },
-    {
-      "check": "directory_lf_contract",
-      "passed": true
-    },
-    {
-      "check": "server_output_absent",
-      "passed": true
-    },
-    {
-      "check": "no_execution",
-      "passed": true
-    },
-    {
-      "check": "handoff",
-      "passed": true
-    },
-    {
-      "check": "output_contract",
-      "passed": true
-    },
-    {
-      "check": "freeze_zero_diff",
-      "passed": true
-    },
-    {
-      "check": "g0_zero_diff",
-      "passed": true
-    },
-    {
-      "check": "execution_zero_diff",
-      "passed": true
-    },
-    {
-      "check": "core_zero_diff",
-      "passed": true
-    },
-    {
-      "check": "cache_baseline_unchanged",
-      "passed": true
-    }
-  ],
-  "run_directory_created": false,
-  "safer_executed": false,
-  "status": "PASS_READY_FOR_FORMAL_TRAINING_EXECUTION_AFTER_HASH_CANONICALIZATION",
+  "status": "BLOCKED_BY_SERVER_CHECKOUT_MISMATCH",
+  "checks": {
+    "old_failure_reproduced": true,
+    "activation_after_passed": true,
+    "tokens_unchanged": true,
+    "config_unchanged": true,
+    "server_checkout_verified": false
+  },
   "training_iterations_executed": 0,
-  "unresolved_critical_fields": [],
+  "checkpoint_created": false,
+  "G1_allowed": false,
+  "unresolved_critical_fields": [
+    "server_checkout_verification"
+  ],
   "unresolved_noncritical_fields": []
 }

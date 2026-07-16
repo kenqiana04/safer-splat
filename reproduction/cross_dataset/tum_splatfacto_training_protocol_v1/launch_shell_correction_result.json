@@ -1,0 +1,20 @@
+{
+  "status": "BLOCKED_BY_SERVER_CHECKOUT_MISMATCH",
+  "root_cause": "CONDA_ACTIVATION_INCOMPATIBLE_WITH_PRE_ACTIVATION_NOUNSET",
+  "preregistration_commit": "cdc30951303730789fc567a751be61a935009681",
+  "launch_shell_correction_commit": "02a4604f6144d1ac121c49d40125c081543723aa",
+  "old_command_blob_sha": "1650b873e734d8fcdf56b8bc26fff48fdb2730ac",
+  "old_command_canonical_sha256": "22d00fadea7eb1fb43556d4690c78113d317c6d144e96b6ad0d294d27a9369a4",
+  "new_command_blob_sha": "0d56e187039d5da75f2a147ff1c207bf9ff58efa",
+  "new_command_canonical_sha256": "4a39766b324ffc6c7766a3389589d748bc00925f109ec44fc72e5a705358ec94",
+  "config_blob_sha": "d3e0c104b37304278dd4074787d8781d2281a375",
+  "config_canonical_sha256": "0d15d8d6fa84049c6b4c34d6fdcaf77114f569c8d22ea9d010ae8144e6c924ea",
+  "config_zero_modified": true,
+  "ns_train_tokens_equal": true,
+  "training_argument_difference_count": 0,
+  "activation_probe_after_status": "PASS_CONDA_ACTIVATION_THEN_NOUNSET",
+  "training_authorized": false,
+  "training_iterations_executed": 0,
+  "checkpoint_created": false,
+  "G1_allowed": false
+}
