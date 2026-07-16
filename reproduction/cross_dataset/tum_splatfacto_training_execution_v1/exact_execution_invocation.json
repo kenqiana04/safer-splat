@@ -1,0 +1,16 @@
+{
+  "tmux_session": "tum_fr1_room_splatfacto_v1_seed20260716",
+  "worktree": "/disk1/zlab/formal_execution_worktrees/tum_splatfacto_training_execution_v1",
+  "invocation_script": "reproduction/cross_dataset/tum_splatfacto_training_execution_v1/exact_execution_invocation.sh",
+  "frozen_training_script": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/exact_training_command.sh",
+  "wrapper_actions": [
+    "create external record directory",
+    "record UTC start",
+    "execute frozen training script without added arguments",
+    "redirect stdout and stderr to external record log",
+    "record exit code",
+    "record UTC end"
+  ],
+  "attempt_count_on_execution": 1,
+  "monitoring_only_after_start": true
+}

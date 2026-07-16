@@ -1,0 +1,16 @@
+{
+  "source": "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/site-packages/nerfstudio/engine/trainer.py",
+  "nerfstudio_version": "1.1.5",
+  "max_num_iterations": 30000,
+  "loop_expression": "for step in range(self._start_step, self._start_step + num_iterations)",
+  "fresh_run_start_step": 0,
+  "executed_zero_based_steps": "0..29999 inclusive",
+  "completed_iterations": 30000,
+  "terminal_zero_based_step": 29999,
+  "checkpoint_filename_format": "step-{step:09d}.ckpt",
+  "expected_terminal_checkpoint_filename": "step-000029999.ckpt",
+  "periodic_save_condition": "step_check(step, self.config.steps_per_save)",
+  "final_save_behavior": "self.save_checkpoint(self.step) after the training loop",
+  "checkpoint_state_step_semantics": "The saved state stores the zero-based Trainer step passed to save_checkpoint.",
+  "acceptance_rule": "A terminal checkpoint at step 29999 is compatible with completion of 30000 iterations for this installed Trainer implementation."
+}
