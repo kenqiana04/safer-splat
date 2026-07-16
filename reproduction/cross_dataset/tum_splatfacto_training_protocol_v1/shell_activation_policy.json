@@ -1,0 +1,17 @@
+{
+  "policy": "conda_activate_before_nounset",
+  "required_order": [
+    "set -eo pipefail",
+    "source ~/anaconda3/etc/profile.d/conda.sh",
+    "conda activate <env>",
+    "set -u"
+  ],
+  "applies_to": [
+    "exact training command",
+    "future execution post-training commands",
+    "eval",
+    "render",
+    "checkpoint audit shell wrappers"
+  ],
+  "nounset_before_conda_activate_allowed": false
+}

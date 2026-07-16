@@ -1,0 +1,17 @@
+{
+  "status": "PASS_CONDA_ACTIVATION_THEN_NOUNSET",
+  "timestamp_utc": "2026-07-16T12:59:01.784376+00:00",
+  "hostname": "zlab-Super-Server",
+  "exit_code": 0,
+  "activation_probe_pass": true,
+  "conda_default_env": "/disk1/zlab/conda_envs/safer_splat_official",
+  "conda_prefix": "/disk1/zlab/conda_envs/safer_splat_official",
+  "python_path": "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
+  "python_version": "3.10.20",
+  "ns_train_path": "/disk1/zlab/conda_envs/safer_splat_official/bin/ns-train",
+  "nounset_enabled_after_activation": true,
+  "ns_train_invoked": false,
+  "cuda_context_created": false,
+  "run_directory_created": false,
+  "checkpoint_created": false
+}
