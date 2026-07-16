@@ -1,28 +1,88 @@
 {
-  "excluded": [
+  "bundle_policy": "git_blob_sha256_v1",
+  "canonical_blob_hashes": {
+    "CONFIG_SELECTION_POLICY_PREREGISTRATION.md": {
+      "canonical_git_blob_sha256": "2a1b4ca39abec7a3da1b03a74f2948eb66a140f89266203b479d8288356583d2",
+      "git_blob_sha": "2805377808d4af77acb4eeaa7fe5927fc3323312"
+    },
+    "README.md": {
+      "canonical_git_blob_sha256": "cc99f684142c4f75ee69fb76d7932bf9a754532c032cd0dd03119fe185746b7d",
+      "git_blob_sha": "bd86f7158eaf5368e6f66a5333f22f1265406018"
+    },
+    "REPORT_TUM_SPLATFACTO_TRAINING_PROTOCOL_V1.md": {
+      "canonical_git_blob_sha256": "da2706ad88581d9cf5a7f63e9382ec154c6e3b0895e276177f144ecabf076fe7",
+      "git_blob_sha": "2d979c37b84239841324711363ea2b7701197940"
+    },
+    "checkpoint_selection_policy.json": {
+      "canonical_git_blob_sha256": "6094e4afb353d3456309daae58d66e2e0b74c5f32cd190f075f323b1bd99042f",
+      "git_blob_sha": "1d34877b25507ad04dc39e29670f00c0d681416f"
+    },
+    "dataset_lock.json": {
+      "canonical_git_blob_sha256": "0feb91655f69cd422d54ceb84b8e19d4017291e38523ed5440e92e9c819ce676",
+      "git_blob_sha": "ac354c3790f7cf0856f8ef2ecc2b6b238774dfb0"
+    },
+    "environment_lock.json": {
+      "canonical_git_blob_sha256": "f18bc53e286edc1985ffdb0b3a17b4affb8176176ce05dc1bfa43bd9e065b4a0",
+      "git_blob_sha": "8dc6f137f416841c65c91b0644ac74be19201561"
+    },
+    "exact_training_command.json": {
+      "canonical_git_blob_sha256": "e35129c534b9f64ae9c935fb4dd1f9e5069f0ce78c87fe6c2112b78903fd1b6e",
+      "git_blob_sha": "cc139dc5aa0b4c9b93c5323b6492a9207ed9f850"
+    },
+    "exact_training_command.sh": {
+      "canonical_git_blob_sha256": "22d00fadea7eb1fb43556d4690c78113d317c6d144e96b6ad0d294d27a9369a4",
+      "git_blob_sha": "1650b873e734d8fcdf56b8bc26fff48fdb2730ac"
+    },
+    "failure_and_retry_policy.json": {
+      "canonical_git_blob_sha256": "de466a9c9bb7926b02545a3608083db249d2b3a90a5485bad941db98fc7eb7e6",
+      "git_blob_sha": "c0c38b28d1bc1f8c5f6a45c1e342b301f212b3f7"
+    },
+    "frozen_training_config.json": {
+      "canonical_git_blob_sha256": "0d15d8d6fa84049c6b4c34d6fdcaf77114f569c8d22ea9d010ae8144e6c924ea",
+      "git_blob_sha": "d3e0c104b37304278dd4074787d8781d2281a375"
+    },
+    "frozen_training_config.yaml": {
+      "canonical_git_blob_sha256": "01d84d17d1e6f5fc88d86c3801f4d573404a63a9d3eaee47af3ba311c0fb9157",
+      "git_blob_sha": "1d78f4aa4c30441f51cf85b80d3f834453d9cfda"
+    },
+    "output_directory_contract.json": {
+      "canonical_git_blob_sha256": "0fe2e8e617e3cffff34c59516bd3251549a73969ca955330e97e6c260741b47e",
+      "git_blob_sha": "149001e9bca7ca58c8f88366de462a11a022a4fc"
+    },
+    "parameter_provenance.csv": {
+      "canonical_git_blob_sha256": "48b247a06fefc83dd4caeb1c4421ef959405ee56ded2ce35ff3bfdbb41127c84",
+      "git_blob_sha": "75e6c440b77e9097e265d6c34a744bf5824a1c50"
+    },
+    "post_training_acceptance_gates.json": {
+      "canonical_git_blob_sha256": "46d0a42b6ee0dbda73b568834d40feb5e038f86c77537ccd6020df65a5bad841",
+      "git_blob_sha": "5a2fa40d1ddafdbc383b3173cf0d9ebddfb56577"
+    },
+    "reference_config_comparison.csv": {
+      "canonical_git_blob_sha256": "3b4daa4665b35cc67e795f00b3253f73cc867a950dcf3f802b5de0233c0b6d42",
+      "git_blob_sha": "65123a1d292d7796b942523764cd5a151f42b755"
+    },
+    "reference_config_inventory.json": {
+      "canonical_git_blob_sha256": "826eb42baef4f08b5c08329bfb305493cc9f33163b3db78b55f63acc39cd3834",
+      "git_blob_sha": "2b4fd4ca63637f5a82d893c7f6a5680bf1851bb7"
+    },
+    "scripts/build_protocol_bundle.py": {
+      "canonical_git_blob_sha256": "13bcf181409b3aed2f1cc2828dba77e1f4d623c36ac142a66184eeac6e2b7a27",
+      "git_blob_sha": "cbcf38cbcca21ddb4ef2ce09cdd74fdf97af1f4d"
+    },
+    "scripts/validate_training_protocol.py": {
+      "canonical_git_blob_sha256": "5d87219685e44e54e6359018a951e4c0c40864017f50137fffd2ee1a04371342",
+      "git_blob_sha": "e9ffb5b2bf94e625daf8bfa9cd9956c51df9f5ef"
+    },
+    "training_execution_handoff.json": {
+      "canonical_git_blob_sha256": "222baf9be5ad96db8bfb1e236ed15beeaa6819e16c47d491934ad17005849ce5",
+      "git_blob_sha": "504e8f6319ca03cf468c415e8074d72b525b442f"
+    }
+  },
+  "canonical_commit": "b56f5eb9af1c67791466f37e1f6c2514958cdcd3",
+  "excluded_self_referential_files": [
     "protocol_bundle_sha256.json",
+    "protocol_hash_correction_result.json",
     "validation_result.json"
   ],
-  "files": {
-    "CONFIG_SELECTION_POLICY_PREREGISTRATION.md": "2a1b4ca39abec7a3da1b03a74f2948eb66a140f89266203b479d8288356583d2",
-    "README.md": "fd53ab5e8bd6050dc0f36f0fc4c3bb35205964929fe9c55e696753de8b42f049",
-    "REPORT_TUM_SPLATFACTO_TRAINING_PROTOCOL_V1.md": "6e23ba5208b6e0f6ed31559e2089d50a89f7ac28de35ec61ade805c7db72aef8",
-    "checkpoint_selection_policy.json": "feb11eddab85dc7d993d9b3311368363b801768745f7c1416bad6e18a3393cf6",
-    "dataset_lock.json": "6e1e8dac33d8472e3489734a45df2814b41039e6274665646c1b0c2312096322",
-    "environment_lock.json": "9399a442ac6e636372891f955bf2a1b185f0869787eabee09f1e19de09c21074",
-    "exact_training_command.json": "3d6d75c7797dec97dd05a395f28042ef6ebad2390459988b35622c82d5b235cd",
-    "exact_training_command.sh": "25e490904204622b0c2014ea4093f52efc507fb0543b675f9fe25871fd0d5b81",
-    "failure_and_retry_policy.json": "554061cf6992f397a636d31fa1aefc77b07b8092e7e4a2822e33ff1f933cd20d",
-    "frozen_training_config.json": "52fa5cdb93bcef333fc6e9f1c94043745a535e99d620e1f0fff85850f73f8105",
-    "frozen_training_config.yaml": "0701296e447622bef843e345e0bcd0d5abd976e12be72ee9b1d2bd732c23b638",
-    "output_directory_contract.json": "d05dceb21f14830ee690b11e3b48dd89ed4a132f4358aeb43052c5cd5b3d0cea",
-    "parameter_provenance.csv": "9f9cb735b9e3d48cfae75b10082a58b441b1dfe14f55675b0162bbb7579d1b9d",
-    "post_training_acceptance_gates.json": "75657ed138f221ef9e1d1f6004e5272120119938fef9f66653cfc0b61467e292",
-    "reference_config_comparison.csv": "be1a4bc506081a3f8b5d887ef5fd5e4577b39cebe68c41b21cbdb45250353f99",
-    "reference_config_inventory.json": "fec082e2abcff9664388c23bb167fd324fa6692d424e9df7c787a3187f457ff8",
-    "scripts\\build_protocol_bundle.py": "13bcf181409b3aed2f1cc2828dba77e1f4d623c36ac142a66184eeac6e2b7a27",
-    "scripts\\validate_training_protocol.py": "5d87219685e44e54e6359018a951e4c0c40864017f50137fffd2ee1a04371342",
-    "training_execution_handoff.json": "e0888098fdaeebdc2828223105862ea9f23247f590ecf5720cd42a2cebb227a5"
-  },
-  "status": "complete_no_execution_protocol"
+  "server_verification_status": "PENDING_SERVER_VERIFICATION"
 }

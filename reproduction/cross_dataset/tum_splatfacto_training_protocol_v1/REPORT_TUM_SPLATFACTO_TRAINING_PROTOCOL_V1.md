@@ -14,3 +14,26 @@ The NOT EXECUTED command is `exact_training_command.sh`; expected output is `/di
 
 No training, run directory, checkpoint, render metric, SAFER action, or G1 action occurred. Acceptance and retry gates are preregistered only. `training_iterations_executed=0`, `checkpoint_created=false`, `safer_executed=false`, and `G1_allowed=false`.
 Protocol readiness is not checkpoint or SAFER readiness. The next task requires new user authorization and may execute only this frozen command; G1 baseline remains forbidden.
+
+## Cross-Platform Hash Canonicalization Correction
+
+PR #24 correctly blocked before training because its preflight compared old
+Windows CRLF hashes with Linux LF checkout hashes. Its formal attempt count is
+still zero and it remains immutable blocked evidence. The command's old Windows
+CRLF SHA-256 was `25e490904204622b0c2014ea4093f52efc507fb0543b675f9fe25871fd0d5b81`;
+its canonical Git-blob/LF SHA-256 is
+`22d00fadea7eb1fb43556d4690c78113d317c6d144e96b6ad0d294d27a9369a4`.
+The configuration has the same confirmed EOL-only classification: its old
+Windows CRLF SHA-256 was
+`52fa5cdb93bcef333fc6e9f1c94043745a535e99d620e1f0fff85850f73f8105` and its
+canonical Git-blob/LF SHA-256 is
+`0d15d8d6fa84049c6b4c34d6fdcaf77114f569c8d22ea9d010ae8144e6c924ea`.
+
+The canonical policy is SHA-256 of exact Git blob bytes at a recorded commit;
+working-tree, JSON-reserialized, and PowerShell text-pipeline hashes are not
+authoritative. A protocol-directory `.gitattributes` file contracts text to LF.
+The command semantics and configuration JSON semantics are unchanged. Server
+checkout verification remains required. The output path remains absent; GPU busy
+is recorded only and does not block hash correction, but GPU 1 must be checked
+again before any separate future execution. A future execution requires a new
+branch and Draft PR and cannot reuse PR #24. G1 remains forbidden.

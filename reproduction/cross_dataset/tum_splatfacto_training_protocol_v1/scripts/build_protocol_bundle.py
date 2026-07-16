@@ -1,60 +1,57 @@
 #!/usr/bin/env python3
-"""Build a frozen, no-execution TUM Splatfacto protocol."""
+"""Build a non-self-referential bundle from raw Git blobs at one commit."""
 from __future__ import annotations
-import csv
+
+import argparse
 import hashlib
 import json
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE = "8199c9c4c5ce76e65f389e963376a8a02d784247"
-DATA = "/disk1/zlab/cross_dataset_assets/processed/tum_rgbd/freiburg1_room"
-OUT = "/disk1/zlab/formal_splatfacto_runs"
-EXPERIMENT = "tum_fr1_room_splatfacto_v1"
-STAMP = "20260716_000000"
-RUN = f"{OUT}/{EXPERIMENT}/splatfacto/{STAMP}"
-STONE = "/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724/config.yml"
-FLIGHT = "/disk1/zlab/projects/safer-splat/outputs/flight/splatfacto/2024-09-12_172434/config.yml"
-STONE_SHA = "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e"
-FLIGHT_SHA = "7e83fb0711a1decc55518e66e43a34395188c2e2a2de0e5ec24d6bb510fb7b8d"
+REPO = ROOT.parents[2]
+EXCLUDED = {
+    "protocol_bundle_sha256.json",
+    "validation_result.json",
+    "protocol_hash_correction_result.json",
+}
 
-def dump(name, value):
-    (ROOT / name).write_text(json.dumps(value, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
-def sha(path):
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+def git_text(*args: str) -> str:
+    return subprocess.check_output(["git", *args], cwd=REPO, text=True).strip()
 
-def main():
-    dataset = {"dataset_family":"TUM_RGBD","sequence_name":"rgbd_dataset_freiburg1_room","canonical_alias":"TUM_FR1_ROOM","processed_data_path":DATA,"transforms_path":f"{DATA}/transforms.json","transforms_sha256":"b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a","source_frame_count":300,"train_frame_count":240,"eval_frame_count":60,"eval_mode":"fraction","train_split_fraction":0.8,"rgb_count":300,"depth_count":300,"pose_count":300,"frame_drop_count":0,"orientation_method":"none","center_method":"none","auto_scale_poses":False,"dataparser_scale":1.0,"depth_units_per_meter":5000,"depth_unit_scale_factor_meters":0.0002,"freiburg1_correction_preapplied":True,"double_scaling_risk":False,"source_evidence_commit":BASE,"source_report_sha256":"5002caa15d66d379c98b89c560b30cf42588fc9d6720e0039602f02c5b75d332"}
-    environment = {"hostname":"zlab-Super-Server","gpu_index_physical":1,"cuda_visible_devices":"1","visible_gpu_name":"NVIDIA GeForce RTX 4090","gpu_uuid":"GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d","driver_version":"525.147.05","gpu_memory_total_mib":24564,"python_executable":"/disk1/zlab/conda_envs/safer_splat_official/bin/python","python_version":"3.10.20","conda_env":"safer_splat_official","torch_version":"2.1.2+cu118","cuda_version":"11.8","nerfstudio_version":"1.1.5","gsplat_version":"1.4.0","ns_train_executable":"/disk1/zlab/conda_envs/safer_splat_official/bin/ns-train","environment_status":"pass_authoritative_4090_read_only"}
-    model = {"background_color":"random","enable_collider":True,"collider_params":{"near_plane":2.0,"far_plane":6.0},"warmup_length":500,"refine_every":100,"resolution_schedule":3000,"num_downscales":2,"cull_alpha_thresh":0.1,"cull_scale_thresh":0.5,"cull_screen_size":0.15,"densify_grad_thresh":0.0008,"densify_size_thresh":0.01,"n_split_samples":2,"sh_degree":3,"sh_degree_interval":1000,"split_screen_size":0.05,"reset_alpha_every":30,"stop_screen_size_at":4000,"stop_split_at":15000,"max_gauss_ratio":10.0,"num_random":50000,"random_init":False,"random_scale":10.0,"rasterize_mode":"classic","ssim_lambda":0.2,"use_scale_regularization":False,"output_depth_during_training":False,"camera_optimizer_mode":"off"}
-    optimizers = {"means":{"lr":0.00016,"eps":1e-15,"scheduler":{"lr_final":1.6e-6,"lr_pre_warmup":1e-8,"max_steps":30000,"ramp":"cosine","warmup_steps":0}},"features_dc":{"lr":0.0025,"eps":1e-15,"scheduler":None},"features_rest":{"lr":0.000125,"eps":1e-15,"scheduler":None},"opacities":{"lr":0.05,"eps":1e-15,"scheduler":None},"scales":{"lr":0.005,"eps":1e-15,"scheduler":None},"quats":{"lr":0.001,"eps":1e-15,"scheduler":None},"camera_opt":{"lr":0.0001,"eps":1e-15,"scheduler":{"lr_final":5e-7,"lr_pre_warmup":0,"max_steps":30000,"ramp":"cosine","warmup_steps":1000}}}
-    frozen = {"protocol_version":"V1","method":"splatfacto","seed":20260716,"formal_run_count":1,"max_num_iterations":30000,"mixed_precision":False,"use_grad_scaler":False,"steps_per_save":2000,"steps_per_eval_image":100,"steps_per_eval_batch":0,"steps_per_eval_all_images":1000,"vis":"tensorboard","viewer_disabled":True,"resume_allowed":False,"load_checkpoint":None,"load_dir":None,"dataset":dataset,"model":model,"optimizers":optimizers,"logging":{"steps_per_log":10,"profiler":"basic","local_writer":True},"machine":{"num_devices":1,"num_machines":1,"device_type":"cuda"},"reference":{"primary":"stonehenge","stonehenge_sha256":STONE_SHA,"flight_sha256":FLIGHT_SHA,"schema_version":"nerfstudio 1.1.5"}}
-    dump("dataset_lock.json", dataset); dump("environment_lock.json", environment); dump("frozen_training_config.json", frozen)
-    (ROOT / "frozen_training_config.yaml").write_text("protocol_version: V1\nmethod: splatfacto\nseed: 20260716\nmax_num_iterations: 30000\ntrain_split_fraction: 0.8\ndepth_unit_scale_factor: 0.0002\norientation_method: none\ncenter_method: none\nauto_scale_poses: false\nviewer_disabled: true\n", encoding="utf-8")
-    inventory = {"stonehenge":{"path":STONE,"exists":True,"sha256":STONE_SHA,"source_type":"authoritative_server_checkout","method_name":"splatfacto","max_num_iterations":30000,"mixed_precision":False,"steps_per_eval_image":100,"steps_per_eval_batch":0,"steps_per_save":2000,"timestamp":"2024-09-11_100724","dataparser":"InstantNGPDataParserConfig"},"flight":{"path":FLIGHT,"exists":True,"sha256":FLIGHT_SHA,"source_type":"authoritative_server_checkout","method_name":"splatfacto","max_num_iterations":30000,"mixed_precision":False,"steps_per_eval_image":100,"steps_per_eval_batch":0,"steps_per_save":2000,"timestamp":"2024-09-12_172434","dataparser":"NerfstudioDataParserConfig"},"schema":{"nerfstudio_version":"1.1.5","dataparser_subcommand":"nerfstudio-data","depth_unit_scale_factor_default":0.001,"required_tum_override":0.0002,"method":"splatfacto","viewer_disabled_mapping":"--vis tensorboard"}}
-    dump("reference_config_inventory.json", inventory)
-    rows = [["field","stonehenge","flight","frozen_value","resolution"],["method_name","splatfacto","splatfacto","splatfacto","shared"],["max_num_iterations","30000","30000","30000","shared"],["mixed_precision","false","false","false","shared"],["steps_per_save","2000","2000","2000","shared"],["model_and_optimizers","same","same","Stonehenge values","primary equals secondary"],["dataparser","instant-ngp","nerfstudio normalizing defaults","TUM metric parser","Tier 1 override"],["train_split_fraction","0.9","0.9","0.8","Tier 1 override"]]
-    with (ROOT / "reference_config_comparison.csv").open("w", newline="", encoding="utf-8") as f: csv.writer(f).writerows(rows)
-    provenance = [["parameter","value","tier","source","rationale"]]
-    for key,value in {"method":"splatfacto","max_num_iterations":30000,"mixed_precision":False,"steps_per_save":2000,"steps_per_eval_image":100,"steps_per_eval_all_images":1000,"model_and_optimizers":"frozen_training_config.json"}.items(): provenance.append([key,value,"Tier 2",STONE,"Stonehenge primary; Flight matches"])
-    for key,value in {"seed":20260716,"data":DATA,"split":0.8,"orientation":"none","center":"none","auto_scale":False,"downscale":1,"depth_scale":0.0002,"viewer_disabled":True,"output_root":OUT}.items(): provenance.append([key,value,"Tier 1","PR #22 contract / policy","immutable TUM override"])
-    with (ROOT / "parameter_provenance.csv").open("w", newline="", encoding="utf-8") as f: csv.writer(f).writerows(provenance)
-    output = {"output_root":OUT,"experiment_name":EXPERIMENT,"run_id":STAMP,"expected_run_path":RUN,"must_not_exist_before_training":True,"source_data_overlap":False,"overwrite_allowed":False,"resume_allowed":False,"expected_config_path":f"{RUN}/config.yml","expected_checkpoint_directory":f"{RUN}/nerfstudio_models","expected_log_directory":f"{RUN}/logs","expected_render_directory":f"{RUN}/renders","expected_report_directory":f"{RUN}/reports","preflight_path_absent_verified":True}
-    dump("output_directory_contract.json", output)
-    command = "\n".join(["#!/usr/bin/env bash","# NOT EXECUTED: formal V1 command.","set -euo pipefail","source ~/anaconda3/etc/profile.d/conda.sh","conda activate safer_splat_official","export CUDA_VISIBLE_DEVICES=1","export PYTHONDONTWRITEBYTECODE=1",f"ns-train splatfacto --output-dir {OUT} --experiment-name {EXPERIMENT} --timestamp {STAMP} --vis tensorboard --machine.seed 20260716 --machine.num-devices 1 --max-num-iterations 30000 --mixed-precision False --use-grad-scaler False --steps-per-save 2000 --steps-per-eval-image 100 --steps-per-eval-batch 0 --steps-per-eval-all-images 1000 --pipeline.model.camera-optimizer.mode off --pipeline.model.warmup-length 500 --pipeline.model.refine-every 100 --pipeline.model.resolution-schedule 3000 --pipeline.model.num-downscales 2 --pipeline.model.cull-alpha-thresh 0.1 --pipeline.model.cull-scale-thresh 0.5 --pipeline.model.densify-grad-thresh 0.0008 --pipeline.model.densify-size-thresh 0.01 --pipeline.model.sh-degree 3 --pipeline.model.sh-degree-interval 1000 --pipeline.model.reset-alpha-every 30 --pipeline.model.stop-split-at 15000 nerfstudio-data --data {DATA} --orientation-method none --center-method none --auto-scale-poses False --downscale-factor 1 --eval-mode fraction --train-split-fraction 0.8 --depth-unit-scale-factor 0.0002",""])
-    (ROOT / "exact_training_command.sh").write_text(command, encoding="utf-8")
-    dump("exact_training_command.json", {"status":"NOT_EXECUTED","command_path":"exact_training_command.sh","command_sha256":sha(ROOT / "exact_training_command.sh"),"cli_schema":"Nerfstudio 1.1.5: ns-train splatfacto nerfstudio-data","training_iterations_executed":0,"checkpoint_created":False,"run_directory_created":False,"viewer_disabled_by":"--vis tensorboard"})
-    dump("checkpoint_selection_policy.json", {"primary_checkpoint":"final checkpoint at exact max_num_iterations","selection_by_metric":False,"selection_by_visual_inspection":False,"multiple_seed_selection":False,"early_checkpoint_substitution":False,"resume_incomplete_run":False,"first_complete_attempt_only":True})
-    dump("failure_and_retry_policy.json", {"classes":["P1 protocol/config","P2 environment mismatch","P3 dataset/hash mismatch","P4 CLI/schema","P5 output path conflict","T1 infrastructure","T2 CUDA/OOM","T3 NaN/Inf","T4 checkpoint write","T5 incomplete","T6 integrity"],"same_config_retry_allowed_only_for":"T1 infrastructure","outcome_based_tuning_forbidden":True,"config_error_requires":"V2"})
-    dump("post_training_acceptance_gates.json", {"status":"PREREGISTERED_NOT_EXECUTED","T1_execution_identity":True,"T2_completion":True,"T3_checkpoint_integrity":True,"T4_metric_invariants":True,"T5_eval_rendering_60_frames":True,"T6_geometry_without_alignment":True,"T7_safer_boundary":{"safer_loader_validated":False,"ellipsoid_query_validated":False,"navigation_volume_validated":False,"collision_evaluator_validated":False,"dynamics_wrapper_validated":False,"G1_allowed":False}})
-    dump("training_execution_handoff.json", {"protocol_status":"READY_FOR_FORMAL_TUM_SPLATFACTO_TRAINING_EXECUTION","training_authorized_by_this_task":False,"next_task_name":"Formal TUM Splatfacto Training Execution V1","required_user_authorization":True,"branch":"tum-splatfacto-training-protocol-v1","protocol_commit":"resolved_by_final_protocol_commit","draft_pr":"#23","authoritative_host":"zlab-Super-Server","conda_env":"safer_splat_official","gpu":"RTX 4090 physical index 1","data_path":DATA,"transforms_hash":dataset["transforms_sha256"],"seed":20260716,"split":"240/60 fraction 0.8","depth_scale":0.0002,"exact_command_path":"exact_training_command.sh","frozen_config_path":"frozen_training_config.json","output_contract_path":"output_directory_contract.json","acceptance_gate_path":"post_training_acceptance_gates.json","training_iterations_executed":0,"checkpoint_created":False,"G1_allowed":False})
-    (ROOT / "README.md").write_text("# TUM Splatfacto Training Protocol V1\n\nNo-execution protocol. Validate it and run only `bash -n exact_training_command.sh`; formal training requires separate user authorization.\n", encoding="utf-8")
-    report = "\n".join(["# REPORT: TUM Splatfacto Training Protocol V1","","## Executive Summary","",f"This no-execution protocol depends on PR #22 at `{BASE}` and freezes one standard `splatfacto` TUM_FR1_ROOM run: seed `20260716`, 240/60 split, 30,000 iterations, and final-checkpoint-only selection.","","## Evidence and Frozen Contract","",f"Stonehenge primary reference: `{STONE}` (`{STONE_SHA}`). Flight secondary reference: `{FLIGHT}` (`{FLIGHT_SHA}`). Model, optimizer, and budget match; legacy parser differences are overridden solely by the metric TUM contract.",f"Nerfstudio 1.1.5 uses `nerfstudio-data`; depth scale is exactly `0.0002` and standard Splatfacto depth objective is frozen false. The viewer is disabled with `--vis tensorboard`.",f"The NOT EXECUTED command is `exact_training_command.sh`; expected output is `{RUN}`, verified absent, non-overlapping with source data, no overwrite, and no resume.","","## Boundary and Handoff","","No training, run directory, checkpoint, render metric, SAFER action, or G1 action occurred. Acceptance and retry gates are preregistered only. `training_iterations_executed=0`, `checkpoint_created=false`, `safer_executed=false`, and `G1_allowed=false`.","Protocol readiness is not checkpoint or SAFER readiness. The next task requires new user authorization and may execute only this frozen command; G1 baseline remains forbidden.",""])
-    (ROOT / "REPORT_TUM_SPLATFACTO_TRAINING_PROTOCOL_V1.md").write_text(report, encoding="utf-8")
-    excluded={"protocol_bundle_sha256.json","validation_result.json"}
-    files={str(p.relative_to(ROOT)).replace("\\\\","/"):sha(p) for p in ROOT.rglob("*") if p.is_file() and p.name not in excluded and "__pycache__" not in p.parts}
-    dump("protocol_bundle_sha256.json", {"status":"complete_no_execution_protocol","files":files,"excluded":sorted(excluded)})
-    print("READY_FOR_FORMAL_TUM_SPLATFACTO_TRAINING_EXECUTION")
 
-if __name__ == "__main__": main()
+def git_bytes(*args: str) -> bytes:
+    return subprocess.check_output(["git", *args], cwd=REPO)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--canonical-commit", required=True)
+    args = parser.parse_args()
+    prefix = ROOT.relative_to(REPO).as_posix()
+    paths = git_text("ls-tree", "-r", "--name-only", args.canonical_commit, "--", prefix).splitlines()
+    hashes: dict[str, dict[str, str]] = {}
+    for path in paths:
+        relative = path.removeprefix(prefix + "/")
+        if relative in EXCLUDED:
+            continue
+        blob = git_text("rev-parse", f"{args.canonical_commit}:{path}")
+        hashes[relative] = {
+            "git_blob_sha": blob,
+            "canonical_git_blob_sha256": hashlib.sha256(git_bytes("cat-file", "blob", blob)).hexdigest(),
+        }
+    server = json.loads((ROOT / "canonical_hash_verification_server.json").read_text(encoding="utf-8"))
+    bundle = {
+        "bundle_policy": "git_blob_sha256_v1",
+        "canonical_commit": args.canonical_commit,
+        "canonical_blob_hashes": hashes,
+        "excluded_self_referential_files": sorted(EXCLUDED),
+        "server_verification_status": server["status"],
+    }
+    (ROOT / "protocol_bundle_sha256.json").write_text(json.dumps(bundle, indent=2, sort_keys=True) + "\n", encoding="utf-8", newline="\n")
+    print("CANONICAL_PROTOCOL_BUNDLE_BUILT")
+
+
+if __name__ == "__main__":
+    main()

@@ -81,9 +81,11 @@
   ],
   "run_directory_created": false,
   "safer_executed": false,
-  "status": "PASS_READY_FOR_FORMAL_TRAINING_EXECUTION",
+  "status": "PENDING_SERVER_CANONICAL_HASH_VERIFICATION",
   "training_iterations_executed": 0,
-  "unresolved_critical_fields": [],
+  "unresolved_critical_fields": [
+    "server checkout verification of canonical Git blob hashes"
+  ],
   "unresolved_noncritical_fields": [
     "actual run directory timestamp must be recorded at execution"
   ]
