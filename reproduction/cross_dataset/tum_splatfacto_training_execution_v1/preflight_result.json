@@ -1,0 +1,47 @@
+{
+  "bash_syntax_checks": [
+    {
+      "argv": [
+        "bash",
+        "-n",
+        "/disk1/zlab/formal_execution_worktrees/tum_splatfacto_training_execution_v1/reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/exact_training_command.sh"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "argv": [
+        "bash",
+        "-n",
+        "/disk1/zlab/formal_execution_worktrees/tum_splatfacto_training_execution_v1/reproduction/cross_dataset/tum_splatfacto_training_execution_v1/exact_execution_invocation.sh"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "argv": [
+        "bash",
+        "-n",
+        "/disk1/zlab/formal_execution_worktrees/tum_splatfacto_training_execution_v1/reproduction/cross_dataset/tum_splatfacto_training_execution_v1/exact_post_training_commands.sh"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": ""
+    }
+  ],
+  "checked_at_utc": "2026-07-16T04:37:43.703514Z",
+  "checks": {
+    "bash_syntax": true,
+    "dataset_dataparser": true,
+    "disk_and_output": true,
+    "environment": true,
+    "gpu_idle": false,
+    "protocol_hashes": false
+  },
+  "model_created": false,
+  "status": "BLOCKED_BY_PROTOCOL_HASH_MISMATCH",
+  "trainer_created": false,
+  "training_command_executed": false
+}
