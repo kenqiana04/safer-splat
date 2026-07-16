@@ -1,41 +1,100 @@
 {
-  "authoritative_conda_env": "safer_splat_official",
+  "authoritative_conda_env": "/disk1/zlab/conda_envs/safer_splat_official",
   "authoritative_data_host": "zlab-Super-Server",
   "authoritative_gpu": "NVIDIA GeForce RTX 4090",
   "authoritative_python": "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
   "authoritative_runtime_host": "zlab-Super-Server",
+  "cache_policy": {
+    "audit_directory_tracked_cache_count": 0,
+    "audit_directory_untracked_cache_count": 0,
+    "base_tracked_cache_count": 21,
+    "core_cache_cleanup_attempted": false,
+    "current_tracked_cache_count": 21,
+    "policy": "no_task_introduced_or_modified_cache",
+    "preexisting_tracked_cache_allowed": true,
+    "tracked_cache_diff_count": 0,
+    "tracked_cache_set_difference_count": 0
+  },
   "checkpoint_created": false,
   "checks": [
+    {
+      "check": "correction_preregistration_is_ancestor",
+      "passed": true
+    },
     {
       "check": "authoritative_host",
       "passed": true
     },
     {
-      "check": "authoritative_env",
+      "check": "authoritative_conda",
       "passed": true
     },
     {
-      "check": "remote_asset_root",
+      "check": "official_tum_url",
       "passed": true
     },
     {
-      "check": "sequence",
+      "check": "official_source_hash",
       "passed": true
     },
     {
-      "check": "transforms_hash",
+      "check": "depth_units",
       "passed": true
     },
     {
-      "check": "remote_rgb_depth_pose",
+      "check": "depth_scale",
       "passed": true
     },
     {
-      "check": "source_unchanged",
+      "check": "zero_no_data",
       "passed": true
     },
     {
-      "check": "windows_probe_excluded",
+      "check": "freiburg1_pre_scaled",
+      "passed": true
+    },
+    {
+      "check": "depth_mapping_300",
+      "passed": true
+    },
+    {
+      "check": "depth_byte_identity",
+      "passed": true
+    },
+    {
+      "check": "no_double_scaling",
+      "passed": true
+    },
+    {
+      "check": "future_scale_override",
+      "passed": true
+    },
+    {
+      "check": "dataparser_completed",
+      "passed": true
+    },
+    {
+      "check": "native_transform_shape",
+      "passed": true
+    },
+    {
+      "check": "native_identity",
+      "passed": true
+    },
+    {
+      "check": "dataparser_frame_counts",
+      "passed": true
+    },
+    {
+      "check": "pose_mapping_complete",
+      "passed": true
+    },
+    {
+      "check": "actual_pose_ratio",
+      "passed": true
+    },
+    {
+      "check": "metric_parser_config",
       "passed": true
     },
     {
@@ -43,35 +102,43 @@
       "passed": true
     },
     {
-      "check": "blocked_not_promoted",
+      "check": "source_assets_unchanged",
       "passed": true
     },
     {
-      "check": "remote_output_hashes",
+      "check": "correction_decision",
       "passed": true
     },
     {
-      "check": "zero_diff:reproduction/experiment_protocol_freeze_v1",
+      "check": "freeze_zero_diff",
       "passed": true
     },
     {
-      "check": "zero_diff:cbf",
+      "check": "core_zero_diff",
       "passed": true
     },
     {
-      "check": "zero_diff:splat",
+      "check": "preexisting_tracked_cache_set_unchanged",
       "passed": true
     },
     {
-      "check": "zero_diff:ellipsoids",
+      "check": "preexisting_tracked_cache_content_unchanged",
       "passed": true
     },
     {
-      "check": "zero_diff:dynamics",
+      "check": "audit_directory_untracked_cache_absent",
       "passed": true
     },
     {
-      "check": "zero_diff:run.py",
+      "check": "audit_directory_tracked_cache_absent",
+      "passed": true
+    },
+    {
+      "check": "core_cache_cleanup_not_attempted",
+      "passed": true
+    },
+    {
+      "check": "remote_manifest_hashes",
       "passed": true
     },
     {
@@ -80,7 +147,7 @@
     }
   ],
   "remote_execution_complete": true,
-  "status": "BLOCKED_BY_CRITICAL_PROVENANCE",
+  "status": "PASS_READY_FOR_TRAINING_PREREGISTRATION",
   "training_iterations_executed": 0,
   "windows_probe_role": "superseded_non_authoritative_local_probe"
 }

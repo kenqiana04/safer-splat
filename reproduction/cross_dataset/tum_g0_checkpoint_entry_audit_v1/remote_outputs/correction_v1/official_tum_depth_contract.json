@@ -1,0 +1,24 @@
+{
+  "additional_correction_required": false,
+  "correction_already_applied": true,
+  "dataset_family": "TUM_RGBD",
+  "depth_format": "640x480 16-bit monochrome PNG",
+  "depth_unit_scale_factor_meters": 0.0002,
+  "depth_units_per_meter": 5000,
+  "evidence_status": "pass_official_tum_source",
+  "freiburg1_correction_value": 1.035,
+  "notes": "Official page states 5000 depth units equal 1 meter, zero is no data, and Freiburg 1 depth is already pre-scaled.",
+  "required_phrases_present": {
+    "16_bit_png": true,
+    "5000_units": true,
+    "already_pre_scaled": true,
+    "freiburg1_1035": true,
+    "zero_no_data": true
+  },
+  "retrieval_host": "zlab-Super-Server",
+  "retrieved_at_utc": "2026-07-16T03:37:57.576217Z",
+  "sequence": "rgbd_dataset_freiburg1_room",
+  "source_page_sha256": "042bd173d28ed47caff54e8ec92a66a622ec0573c13d73cd2e348dc092b5daad",
+  "source_url": "https://cvg.cit.tum.de/data/datasets/rgbd-dataset/file_formats",
+  "zero_semantics": "missing_value_or_no_data"
+}

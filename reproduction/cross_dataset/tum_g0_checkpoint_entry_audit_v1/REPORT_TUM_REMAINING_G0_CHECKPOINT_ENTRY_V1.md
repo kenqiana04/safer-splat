@@ -2,65 +2,31 @@
 
 ## Executive Summary
 
-The authoritative audit ran on `zlab-Super-Server` (4090) against the immutable
-TUM root `/disk1/zlab/cross_dataset_assets`. The exact sequence is
-`rgbd_dataset_freiburg1_room` (`TUM_FR1_ROOM`). The frozen transforms file is
-`/disk1/zlab/cross_dataset_assets/processed/tum_rgbd/freiburg1_room/transforms.json` and its SHA-256 matches the frozen
-value: `b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a`. All 300 selected RGB, depth, and pose records
-were read on the server; structural integrity, pairing, rigid-pose checks, and
-source pre/post hashes passed. The formal decision is
-**`BLOCKED_BY_CRITICAL_PROVENANCE`**, with additional
-**`BLOCKED_BY_DATAPARSER`** evidence. No training, checkpoint, SAFER loader,
-baseline, navigation, or G1 execution occurred.
+The authoritative correction ran on `zlab-Super-Server` in `/disk1/zlab/conda_envs/safer_splat_official` against immutable TUM assets `/disk1/zlab/cross_dataset_assets`.
+Sequence `rgbd_dataset_freiburg1_room` (`TUM_FR1_ROOM`) uses frozen transforms SHA-256 `b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a`.
+Final correction decision: **`PASS_DEPTH_AND_DATAPARSER_CORRECTION`**. Checkpoint-entry decision: **`READY_FOR_FORMAL_SPLATFACTO_TRAINING_PREREGISTRATION`**.
 
-## Execution Environment Correction
+## Depth-Scale and Dataparser Correction
 
-Stage 0 preregistration was committed in the Windows Git workspace. Windows is
-orchestration-only; its preliminary local probe was superseded and was not used
-for any gate. Data, CUDA, Nerfstudio, gsplat, PyTorch, and dataparser evidence
-comes only from the 4090 server: conda `safer_splat_official`, Python
-`3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]`, PyTorch `2.1.2+cu118`, CUDA
-`11.8`, Nerfstudio `1.1.5`, gsplat
-`1.4.0`, and visible GPU `NVIDIA GeForce RTX 4090`.
+The original 3-vs-4 error was an audit post-processing comparison bug, not a dataparser generation failure.
+Corrected native transform shape `[3, 4]` is identity `True` with max error `0.0` and parser scale `1.0`.
+Dataparser train/val counts are `240/60`; total `300`, frame drop `0`, unmatched poses `0`.
+Actual parsed/source translation-ratio median `1.0`; no orientation or centering change and auto scale is `False`.
+Official TUM depth evidence `https://cvg.cit.tum.de/data/datasets/rgbd-dataset/file_formats` SHA-256 `042bd173d28ed47caff54e8ec92a66a622ec0573c13d73cd2e348dc092b5daad` confirms 640x480 16-bit monochrome PNG, 5000 units/m, meter scale `0.0002`, and zero `missing_value_or_no_data`.
+Freiburg 1 `1.035` is pre-applied. `300/300` processed selected depths are byte-identical raw copies; mismatches `0`.
+Historical preprocessor `shutil.copy2` does not scale depth. Double scaling risk is `False`.
+Installed Nerfstudio default `0.001` differs from required `0.0002`; future separately preregistered training must use `--pipeline.datamanager.dataparser.depth-unit-scale-factor 0.0002` exactly once.
 
-## Data and Geometry Results
+## Cache Validation Scope Correction
 
-- Remote raw root: `/disk1/zlab/cross_dataset_assets/raw/tum_rgbd/rgbd_dataset_freiburg1_room`
-- Processed frames: 300 RGB, 300 depth, 300 poses.
-- RGB: `pass_structural`; all-zero `0`, duplicate `0`.
-- Depth: `pass_structural_unit_pending`; all-zero `0`, nonfinite `0`.
-- Pairing: `pass`, no reassociation; maximum historical RGB-depth offset `0.017915010452270508` s.
-- Pose/intrinsics/transforms: required fields present and preregistered rigid tolerances audited from the server file.
-- Source raw metadata hashes were unchanged before/after audit: `True`.
+The frozen base contains `21` already tracked core cache files. Removing them would violate the core-path restriction, so they are baseline evidence rather than a task failure.
+Relative to base, tracked cache set difference is `0`, tracked cache diff count is `0`, and this audit directory has `0` tracked and `0` untracked cache files.
+Validator policy is baseline-aware: no task-introduced, modified, or deleted cache is allowed.
 
-## Metric Scale and Dataparser
+## Gate and Scope Boundary
 
-Depth scale is not guessed: the frozen preprocessor copies depth PNGs and the
-frozen transforms omit `depth_unit_scale_factor`. Consequently the raw unit and
-meter conversion are not source-established (`BLOCKED_BY_CRITICAL_PROVENANCE`).
-
-The server-only dataparser API audit used `orientation_method=none`,
-`center_method=none`, and `auto_scale_poses=false`, without model, optimizer,
-trainer, viewer, or checkpoint. It raised `RuntimeError('The size of tensor a (3) must match the size of tensor b (4) at non-singleton dimension 0')`. No fallback
-to `ns-train` or training was attempted, so frame-drop and parsed/source
-translation-ratio are unresolved.
-
-## Splatfacto and SAFER Boundary
-
-`ns-train --help` and `ns-train splatfacto --help` returned zero on the server.
-The command artifact is a non-executed contract only; formal split/seed/output
-settings and all training hyperparameters remain pending separate preregistration.
-`training_iterations_executed=0` and `checkpoint_created=false`.
-
-The SAFER review is `static_source_contract_only`: expected attributes are means,
-scales, quaternion rotations, opacities, and colors/SH. Its result is not a
-loader pass and cannot validate a nonexistent TUM checkpoint.
-
-## Gate Decision and Next Step
-
-Data structural gates are supported by the 4090 evidence, but global G0 remains
-`blocked`; `formal_checkpoint_exists=false`, `safer_loader_validated=false`, and
-`G1_allowed=false`. Formal TUM Splatfacto Training Protocol Preregistration is
-not yet authorized. The next task must first establish a source-backed depth
-unit/scale contract and resolve the dataparser shape failure without training.
-G1 SAFER baseline remains forbidden.
+G0-D depth integrity: passed. G0-H metric scale: passed. G0-I dataparser: passed.
+Global G0: `partial_ready`. `formal_checkpoint_exists=false`, `training_iterations_executed=0`, `checkpoint_created=false`, `safer_loader_validated=false`, `navigation_gates_completed=false`, `G1_allowed=false`.
+No TUM source asset, transforms, or depth PNG was modified. No preprocessing, training, checkpoint, SAFER execution, or G1 work occurred.
+Correction preregistration commit `1f15ad20999ebc4b21cb628fc2866b1fc7742bb8` precedes correction execution: `True`.
+Training preregistration readiness is not checkpoint readiness. G1 SAFER baseline remains forbidden.

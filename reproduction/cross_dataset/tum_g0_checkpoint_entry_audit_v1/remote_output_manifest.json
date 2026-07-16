@@ -1,5 +1,15 @@
 {
   "files": {
+    "correction_v1/correction_remote_manifest.json": "219315e9c9b63c530c25f4b207406adaf873007907a14371e5617bff208106fb",
+    "correction_v1/dataparser_correction_result.json": "65fe4c7c81bd94e62ec7c71507b92a80adb558c55741189e9ff55d195ffc7128",
+    "correction_v1/dataparser_pose_mapping_audit.csv": "d1089c44ea9c1fa2e2c73ba1e72d70706221f6ac11867da26e59701541eca182",
+    "correction_v1/depth_copy_identity_audit.csv": "f33791a03a0ab1afc7c520e29ce5db59991cc6024d47caeac58a642d34b91c02",
+    "correction_v1/depth_scale_closure.json": "a585f3121c246899886bec4c3b36e500a2e1d9153740e44e0f28f3b5149b65f2",
+    "correction_v1/nerfstudio_dataparser_audit.json": "65fe4c7c81bd94e62ec7c71507b92a80adb558c55741189e9ff55d195ffc7128",
+    "correction_v1/nerfstudio_environment_audit.json": "1d5c544dc849bd984772a469f8a2aa6ae84b9302bb747efa05873669018ecdf4",
+    "correction_v1/official_tum_depth_contract.json": "931aa216b97f7707068b9882b2cb5113da94116431e1e1471f2009c17421a800",
+    "correction_v1/remote_server_preflight.json": "1d5c544dc849bd984772a469f8a2aa6ae84b9302bb747efa05873669018ecdf4",
+    "correction_v1/splatfacto_entry_command.json": "88005a8625afd4cc2a51aefb953f2784c9754bd54d97512a88aaa9be97401802",
     "depth_integrity.csv": "5c99f42a94801f6da56d26637c86cea5efe00702972b8cab612cc39099629480",
     "depth_integrity_summary.json": "f066c1ccc1d41ee2e11f76f9e44b01f81af8b56333891da716716b00f959cebf",
     "depth_scale_contract.json": "0624ebcbd4aa8ef50d3aaab72b98154addaa2af5b703c8711eea9ea6f809c425",
@@ -22,5 +32,5 @@
     "transforms_contract_audit.json": "7b3099a58ab69a7060cd78b0beab93dc8843bc2894366383f9e172c515535c1e"
   },
   "remote_host": "zlab-Super-Server",
-  "remote_tmp": "/tmp/tum_g0_checkpoint_entry_audit_v1_zlab/outputs"
+  "remote_tmp": "/tmp/tum_g0_checkpoint_entry_audit_v1_zlab/correction_outputs"
 }
