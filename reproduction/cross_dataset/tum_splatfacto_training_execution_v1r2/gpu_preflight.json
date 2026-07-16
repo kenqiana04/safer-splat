@@ -1,0 +1,11 @@
+{
+  "status": "PASS_GPU_IDLE_THREE_SAMPLES",
+  "physical_gpu": 1,
+  "gpu_uuid": "GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d",
+  "samples": [
+    {"label": "T60", "utc": "2026-07-16T06:34:31Z", "compute_count": 0, "gpu_utilization_percent": 0, "memory_used_mib": 6},
+    {"label": "T30", "utc": "2026-07-16T06:35:02Z", "compute_count": 0, "gpu_utilization_percent": 0, "memory_used_mib": 6},
+    {"label": "T0", "utc": "2026-07-16T06:35:32Z", "compute_count": 0, "gpu_utilization_percent": 0, "memory_used_mib": 6}
+  ],
+  "non_compute_graphics_process": "Xorg PID 1932208"
+}
