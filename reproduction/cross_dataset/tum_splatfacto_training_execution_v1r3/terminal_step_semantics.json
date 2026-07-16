@@ -1,0 +1,15 @@
+{
+  "preflight_failure_attempt_count": 0,
+  "attempt_count_transition": "0_to_1_only_after_tmux_frozen_command_and_ns_train_observation",
+  "execution_record_setup_consumes_attempt": false,
+  "retry_allowed": false,
+  "resume_allowed": false,
+  "gpu_change_allowed": false,
+  "post_training_commands_allowed_only_after": [
+    "successful_ns_train_exit",
+    "T1_execution_identity_pass",
+    "T2_completion_pass",
+    "T3_checkpoint_integrity_pass",
+    "T4_metric_invariants_pass"
+  ]
+}
