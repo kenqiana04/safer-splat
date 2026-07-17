@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env bash
+#!/usr/bin/env bash
 set -eo pipefail
 source ~/anaconda3/etc/profile.d/conda.sh
 conda activate safer_splat_official
