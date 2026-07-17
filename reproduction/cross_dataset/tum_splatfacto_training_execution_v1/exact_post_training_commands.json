@@ -1,0 +1,17 @@
+{
+  "schema_evidence": {
+    "ns_eval_help": "ns-eval --load-config PATH [--output-path PATH] [--render-output-path {None}|PATH]",
+    "ns_render_dataset_help": "ns-render dataset --load-config PATH --output-path PATH --image-format {jpeg,png} --rendered-output-names ... --split {train,val,test,train+test}"
+  },
+  "config_path": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1/splatfacto/20260716_000000/config.yml",
+  "eval_command": "ns-eval --load-config $CONFIG --output-path $REPORTS/eval_metrics.json",
+  "render_command": "ns-render dataset --load-config $CONFIG --output-path $RENDERS --image-format png --rendered-output-names rgb --split val",
+  "split": "val",
+  "expected_render_count": 60,
+  "writes_only_under_formal_run": true,
+  "pose_optimization": false,
+  "similarity_alignment": false,
+  "scale_fitting": false,
+  "safer": false,
+  "schema_status": "PASS"
+}

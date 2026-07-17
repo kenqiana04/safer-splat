@@ -1,0 +1,39 @@
+{
+  "excluded": [
+    "execution_bundle_sha256.json"
+  ],
+  "files": {
+    "EXECUTION_AUTHORIZATION_V1.md": "9a7b2c0cd65cfe7a6f3db0176cd73d152ce567c3658332a754876c882aeba54c",
+    "README.md": "171ce8e2ac70b2ec8bd8e06a7b05d6fd2cbb8776773313e9716cb8827b07e5ad",
+    "REPORT_TUM_SPLATFACTO_TRAINING_EXECUTION_V1.md": "1deeeba53e1dbb1a7336d84d0ff664ae40409161427c98a81f9f5a5db583d29a",
+    "checkpoint_integrity.json": "e1c9dfc52690fcc45178c83f0071dad937019615ffb364f79a36937402e6359d",
+    "checkpoint_inventory.csv": "a660b6e5d54b07d809a0596f0aecd432997b5bf638b4ce26dc3eb968e1174a53",
+    "dataset_preflight.json": "7299ce155c257a1460177ec6cfb05dd20ecbcf40c922ce42093d3f84328a62df",
+    "disk_preflight.json": "83937c80566a8d6cb02d84bcb7d9f339cbf85b4d7d4fd931038937ef3e54ce1c",
+    "environment_preflight.json": "cc6d4fe71b5b9559d3f241624c756450896fc2ec89fb6a7fc4a94feba0d0db1e",
+    "eval_metrics.json": "c0477866365d47d57a74ed1de55159227648326c4a8a216f6a42158e7a798c78",
+    "eval_render_integrity.json": "17c4cd7dd530c074a5a1ecb94f22c1e286093b2501ad3f485e63a8fb4b8f12e7",
+    "exact_execution_invocation.json": "f69b25e8e97feb7fb91ad49026bba6197e685c710ce1c23390494efc50646999",
+    "exact_execution_invocation.sh": "930e75bb2a3aef4fc7a242a59a61ac042867ac6d0d3d82b58ffad841bed111e4",
+    "exact_post_training_commands.json": "304c77486308fefd6be745e923bb4444112402766df133fa67b7cbc2e46f58f4",
+    "exact_post_training_commands.sh": "7993b87276189a992e623413747dd8e5ba9097bae7cec71f6961799bbaec8034",
+    "execution_contract.json": "d2ee2dd509b6869ce854c3ed8fcf5bb14d1accfc460ca88147f9ab150cd6173d",
+    "execution_validation_result.json": "124f75d41e767f096b2f0585a9f84c0d927cafd5b2cd20988029fce675d0e599",
+    "geometry_sanity_status.json": "7c11c5259a574f375835b8571b5af572fc14a386705266cfd9cf2db279f1f3c5",
+    "gpu_preflight.json": "38ac57934a864638520840014a05c24b3c8dcddecc3a8b29778614aac32b8c99",
+    "metric_invariant_audit.json": "ab3b48acdec95593e98841fd137a6f0db0130c27407e653bc82e75366520f8a3",
+    "preflight_result.json": "67be1798684d77d4b6c766d6fc8597f624d73c927e18281005dd8d68eedb7bfd",
+    "protocol_hash_verification.json": "5740cdc73f45718a9aac7c7d710549c42ed392448687dd6fb67e387023b76c93",
+    "run_status.json": "97c092fcf3c0ef0efdce10543ed3942d5fb1454a6b83e5ba24f9ef731c299e76",
+    "scripts/build_execution_bundle.py": "47ff8110649f670dce3ca024dff5a0f99d864f23968472c93adf683e8bdb1189",
+    "scripts/preflight_formal_training.py": "d062bc8c739700d79f3e12413719ce3df39ed51b61dba3bc78f31cb38cc3cf02",
+    "scripts/record_blocked_execution.py": "e989d8845982e1a8f36c5329721071c0f731df3c5bdecc9e79c76e45e2000231",
+    "scripts/validate_training_execution.py": "943e00f369604df4267b3a09efb097e9542ffd69882af9ea40aa3f6b497d8f81",
+    "source_asset_postcheck.json": "4e2777cd60e99fc448cd1813ec34e2cc0affe82d45c59d0369e6c401f33c0e0b",
+    "terminal_step_semantics.json": "7a1389ff95669ee3fa2badded16af6fba9dcb499b784f271128056e4e93b86d1",
+    "training_log_summary.json": "55e2c151caedc0a6751a29bbfd29eb5218445faeb123afc2a89cffcb35fda4f5",
+    "training_process_record.json": "bcda7d4853eadcc6d53501d14c829996eb97c1ecfa54e8c9ea11829ab1ef7e45"
+  },
+  "large_artifacts_in_git": false,
+  "status": "BLOCKED_BY_PROTOCOL_HASH_MISMATCH"
+}

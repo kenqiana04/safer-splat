@@ -1,0 +1,21 @@
+{
+  "checked_at_utc": "2026-07-16T04:39:11.550163Z",
+  "expected_sha256": {
+    "depth.txt": "86757dd3c8606f940477a353915ede7143811817b2288647414fe1459ed22c14",
+    "groundtruth.txt": "66b6770d887a5a3b69c94c3b186c3f76fe092ca25399772177f41aed984bd1b0",
+    "rgb.txt": "fe2f438ebe1b3d13a061e4db3b154df1136a82d95a723e4a6457b0e516c2451b",
+    "transforms.json": "b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a"
+  },
+  "observed_sha256": {
+    "depth.txt": "86757dd3c8606f940477a353915ede7143811817b2288647414fe1459ed22c14",
+    "groundtruth.txt": "66b6770d887a5a3b69c94c3b186c3f76fe092ca25399772177f41aed984bd1b0",
+    "rgb.txt": "fe2f438ebe1b3d13a061e4db3b154df1136a82d95a723e4a6457b0e516c2451b",
+    "transforms.json": "b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a"
+  },
+  "source_assets_modified_by_task": false,
+  "source_paths": {
+    "raw_root": "/disk1/zlab/cross_dataset_assets/raw/tum_rgbd/rgbd_dataset_freiburg1_room",
+    "transforms": "/disk1/zlab/cross_dataset_assets/processed/tum_rgbd/freiburg1_room/transforms.json"
+  },
+  "unchanged": true
+}

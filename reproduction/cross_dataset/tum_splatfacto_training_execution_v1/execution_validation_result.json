@@ -1,0 +1,24 @@
+{
+  "G1_allowed": false,
+  "checkpoint_candidate_ready": false,
+  "checks": {
+    "G1_forbidden": true,
+    "command_hash_mismatch_recorded": true,
+    "config_hash_mismatch_recorded": true,
+    "formal_output_absent": true,
+    "gpu_busy_recorded_without_intervention": true,
+    "no_formal_attempt_started": true,
+    "no_safer": true,
+    "preflight_blocked_by_hash_mismatch": true,
+    "source_assets_unchanged": true,
+    "transforms_hash_matches": true
+  },
+  "failure_classification": "BLOCKED_BY_PROTOCOL_HASH_MISMATCH",
+  "formal_training_started": false,
+  "resume_used": false,
+  "retry_used": false,
+  "safer_loader_executed": false,
+  "second_seed_run": false,
+  "status": "BLOCKED_BY_PROTOCOL_HASH_MISMATCH",
+  "validated_at_utc": "2026-07-16T04:40:43.930726Z"
+}
