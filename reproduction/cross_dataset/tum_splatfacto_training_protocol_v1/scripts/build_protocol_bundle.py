@@ -42,12 +42,15 @@ def main() -> None:
             "canonical_git_blob_sha256": hashlib.sha256(git_bytes("cat-file", "blob", blob)).hexdigest(),
         }
     server = json.loads((ROOT / "canonical_hash_verification_server.json").read_text(encoding="utf-8"))
+    offline = json.loads((ROOT / "offline_bundle_server_verification.json").read_text(encoding="utf-8"))
     bundle = {
         "bundle_policy": "git_blob_sha256_v1",
         "canonical_commit": args.canonical_commit,
         "canonical_blob_hashes": hashes,
         "excluded_self_referential_files": sorted(EXCLUDED),
         "server_verification_status": server["status"],
+        "offline_bundle_server_verification_status": offline["status"],
+        "offline_bundle_transport_method": offline["transfer_method"],
     }
     (ROOT / "protocol_bundle_sha256.json").write_text(json.dumps(bundle, indent=2, sort_keys=True) + "\n", encoding="utf-8", newline="\n")
     print("CANONICAL_PROTOCOL_BUNDLE_BUILT")

@@ -25,6 +25,10 @@
       "canonical_git_blob_sha256": "9d000409936d819444915913ff2f3c9239f59c05e1638e4a34ae6a058ca1f628",
       "git_blob_sha": "19bccff323af64debce2960ff6997e391957a0b4"
     },
+    "PROTOCOL_PAYLOAD_IDENTITY_V1.md": {
+      "canonical_git_blob_sha256": "b9233c8e8ee15e55dac0890208c9bd945635d3d381ddaf9a7ac98edf8d669a42",
+      "git_blob_sha": "998468eaa60587b6f04dfd50507536884bac4b0f"
+    },
     "README.md": {
       "canonical_git_blob_sha256": "cc99f684142c4f75ee69fb76d7932bf9a754532c032cd0dd03119fe185746b7d",
       "git_blob_sha": "bd86f7158eaf5368e6f66a5333f22f1265406018"
@@ -69,6 +73,10 @@
       "canonical_git_blob_sha256": "340ad41dd7e766e4936308c0f3afcd2e46a01be2c3c980ad88ad1b6931b10421",
       "git_blob_sha": "275c50372661f51c111fcf96e7a9c174052d113c"
     },
+    "critical_path_immutability.json": {
+      "canonical_git_blob_sha256": "c91b8d6b72978529ecd122c9892dd96865805750478c67c26420d8586fb7c221",
+      "git_blob_sha": "6dad95617139e05bdafc6c225b451b28e38eaf83"
+    },
     "dataset_lock.json": {
       "canonical_git_blob_sha256": "0feb91655f69cd422d54ceb84b8e19d4017291e38523ed5440e92e9c819ce676",
       "git_blob_sha": "ac354c3790f7cf0856f8ef2ecc2b6b238774dfb0"
@@ -112,6 +120,10 @@
     "post_training_acceptance_gates.json": {
       "canonical_git_blob_sha256": "46d0a42b6ee0dbda73b568834d40feb5e038f86c77537ccd6020df65a5bad841",
       "git_blob_sha": "5a2fa40d1ddafdbc383b3173cf0d9ebddfb56577"
+    },
+    "protocol_payload_identity.json": {
+      "canonical_git_blob_sha256": "4b0b926678be45256140c13474b865f0a4df182ff96ecaa29ff28ce4087d0902",
+      "git_blob_sha": "8b202f1fae3f2ef48b366f92dcefda84f5530e41"
     },
     "reference_config_comparison.csv": {
       "canonical_git_blob_sha256": "3b4daa4665b35cc67e795f00b3253f73cc867a950dcf3f802b5de0233c0b6d42",
@@ -166,11 +178,13 @@
       "git_blob_sha": "463c34d086b8a383d123cc94655e334c1fa1c4e2"
     }
   },
-  "canonical_commit": "92fe44d4b94195ebe8c4aca43e233d89c60e5490",
+  "canonical_commit": "e76d16004073f97c31c856fd9679bb30b6fe0904",
   "excluded_self_referential_files": [
     "protocol_bundle_sha256.json",
     "protocol_hash_correction_result.json",
     "validation_result.json"
   ],
+  "offline_bundle_server_verification_status": "BLOCKED_BY_GIT_OBJECT_CORRUPTION",
+  "offline_bundle_transport_method": "git_bundle_over_ssh",
   "server_verification_status": "BLOCKED_BY_GIT_TRANSPORT_TIMEOUT"
 }

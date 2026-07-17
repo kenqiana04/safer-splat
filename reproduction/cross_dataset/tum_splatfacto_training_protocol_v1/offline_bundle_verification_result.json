@@ -1,0 +1,27 @@
+{
+  "status": "BLOCKED_BY_GIT_OBJECT_CORRUPTION",
+  "protocol_payload_commit": "de97ad4d071d552dc0cb82127738a1cddd40e4a4",
+  "payload_identity_policy_commit": "e76d16004073f97c31c856fd9679bb30b6fe0904",
+  "evidence_head_used_in_bundle": "e76d16004073f97c31c856fd9679bb30b6fe0904",
+  "transfer_method": "git_bundle_over_ssh",
+  "bundle_sha256_match": true,
+  "bundle_verify": "PASS",
+  "server_clone_status": "BLOCKED_BY_GIT_OBJECT_CORRUPTION",
+  "server_clone_failure_stage": "git_clone_no_checkout",
+  "source_repository_is_shallow": true,
+  "missing_shallow_boundary_parent": "006d66976d214a258cf498cdeecc04a0daa02a8e",
+  "shallow_boundary_commit": "d77a0633d0c46c8be8ae1abf0e91c756271334a2",
+  "isolated_checkout_performed": false,
+  "activation_probe_performed": false,
+  "training_invoked": false,
+  "training_iterations_executed": 0,
+  "checkpoint_created": false,
+  "safer_executed": false,
+  "G1_allowed": false,
+  "unresolved_critical_fields": [
+    "git_bundle_object_traversal",
+    "server_isolated_checkout",
+    "server_activation_only_probe"
+  ],
+  "unresolved_noncritical_fields": []
+}

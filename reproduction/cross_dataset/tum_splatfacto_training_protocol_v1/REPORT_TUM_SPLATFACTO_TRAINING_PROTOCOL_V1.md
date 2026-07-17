@@ -82,3 +82,23 @@ separate future execution. A future execution requires a new branch and Draft
 PR and cannot reuse PR #24. G1 remains forbidden.
 
 Validator status: `PASS_READY_FOR_FORMAL_TRAINING_EXECUTION_AFTER_HASH_CANONICALIZATION`.
+
+## Offline Git Bundle Server Verification V1
+
+The offline bundle used immutable payload `de97ad4d071d552dc0cb82127738a1cddd40e4a4`
+and evidence head `e76d16004073f97c31c856fd9679bb30b6fe0904`. Its Windows and
+server SHA-256 values both equal
+`e004f79f64f107a6b7e5b58c42203d86d82d0909314c71500a405b1cc28e3823`, and
+`git bundle verify` passed on both systems. The transfer therefore completed
+without a transport or byte-integrity failure.
+
+The isolated server clone nevertheless failed before checkout because the
+Windows source repository is shallow: boundary commit `d77a0633d0c46c8be8ae1abf0e91c756271334a2`
+references unavailable parent `006d66976d214a258cf498cdeecc04a0daa02a8e`.
+The required status is `BLOCKED_BY_GIT_OBJECT_CORRUPTION`; this describes an
+object-traversal block, not a SHA mismatch. No isolated checkout, critical-path
+server comparison, canonical checkout hash, or activation-only probe was run.
+No training, CUDA training process, output, checkpoint, SAFER, navigation, or
+G1 action occurred. The validator remains blocked and V1R4 cannot be prepared
+until a complete auditable object history is available and a new verification
+task is explicitly authorized.

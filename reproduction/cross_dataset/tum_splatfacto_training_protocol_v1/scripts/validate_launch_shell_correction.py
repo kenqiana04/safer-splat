@@ -23,19 +23,22 @@ def main() -> int:
     before = load("activation_probe_before.json")
     after = load("activation_probe_after.json")
     semantic = load("command_semantic_comparison.json")
-    result = load("launch_shell_correction_result.json")
-    server = load("activation_probe_server_verification.json")
-    config_unchanged = git("diff", "--exit-code", "6843fa477adc7f07acdfdb270ad7e4e3349da904", "--", str(ROOT / "frozen_training_config.json")) == 0
-    server_ok = server["status"] == "PASS_SERVER_CHECKOUT_AND_ACTIVATION_ONLY_PROBE"
+    identity = load("protocol_payload_identity.json")
+    immutability = load("critical_path_immutability.json")
+    offline = load("offline_bundle_verification_result.json")
+    config_unchanged = git("diff", "--exit-code", identity["protocol_payload_commit"], "--", str(ROOT / "frozen_training_config.json")) == 0
+    server_ok = offline["status"] == "PASS_OFFLINE_GIT_BUNDLE_SERVER_VERIFICATION"
     passed = all((
         before["status"] == "REPRODUCED_PRE_ACTIVATION_NOUNSET_FAILURE",
         after["status"] == "PASS_CONDA_ACTIVATION_THEN_NOUNSET",
         semantic["ns_train_tokens_equal"],
         semantic["training_argument_difference_count"] == 0,
         config_unchanged,
+        identity["payload_is_ancestor_of_evidence_head"],
+        immutability["changed_critical_path_count"] == 0,
         server_ok,
     ))
-    status = PASS if passed else result["status"]
+    status = PASS if passed else offline["status"]
     payload = {
         "status": status,
         "checks": {
@@ -43,12 +46,14 @@ def main() -> int:
             "activation_after_passed": after["status"] == "PASS_CONDA_ACTIVATION_THEN_NOUNSET",
             "tokens_unchanged": semantic["ns_train_tokens_equal"],
             "config_unchanged": config_unchanged,
+            "payload_identity_immutable": identity["payload_is_ancestor_of_evidence_head"],
+            "critical_paths_unchanged": immutability["changed_critical_path_count"] == 0,
             "server_checkout_verified": server_ok,
         },
         "training_iterations_executed": 0,
         "checkpoint_created": False,
         "G1_allowed": False,
-        "unresolved_critical_fields": [] if passed else ["git_transport_fetch" if result["status"] == "BLOCKED_BY_GIT_TRANSPORT_TIMEOUT" else "server_checkout_verification"],
+        "unresolved_critical_fields": [] if passed else offline["unresolved_critical_fields"],
         "unresolved_noncritical_fields": [],
     }
     (ROOT / "validation_result.json").write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
