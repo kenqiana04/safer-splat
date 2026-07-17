@@ -103,6 +103,15 @@ G1 action occurred. The validator remains blocked and V1R4 cannot be prepared
 until a complete auditable object history is available and a new verification
 task is explicitly authorized.
 
+## Final Content-Addressed Payload Verification
+
+The original `.gitattributes` mismatch was a `git archive` export transformation.
+A deterministic tar built from raw Git blobs verified all 42 files: missing,
+extra, SHA, blob, and mode mismatches are zero. Activation-only verification
+passed; no training, output, checkpoint, SAFER, navigation, or G1 occurred.
+The final validator is `PASS_READY_FOR_FORMAL_TRAINING_EXECUTION_AFTER_LAUNCH_SHELL_CORRECTION`.
+Full-history routes are superseded; V1R4 still requires explicit authorization.
+
 ## Full-History Mirror Bundle Server Verification V2
 
 V2 reclassifies the prior result as
