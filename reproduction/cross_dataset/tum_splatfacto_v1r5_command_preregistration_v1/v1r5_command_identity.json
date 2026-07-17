@@ -1,0 +1,36 @@
+﻿{
+    "validator":  "PASS_READY_FOR_FORMAL_TRAINING_EXECUTION_V1R5_AUTHORIZATION",
+    "shell":  {
+                  "size":  1594,
+                  "crlf_count":  0,
+                  "git_blob_sha":  "e5b1c45d2e7b011eddf7e4c16c54f68ba53f69f8",
+                  "final_lf":  true,
+                  "first8":  "23 21 2F 75 73 72 2F 62",
+                  "mode":  "100755",
+                  "bom_count":  0,
+                  "sha256":  "694c5a900d5f8e2deada217214aabe7bedffce8ccacaba110d69ebf64044de3d"
+              },
+    "run_identity":  {
+                         "git_blob_sha":  "7a69ffda4b3e520f2cd5899d264fd3715a61781c",
+                         "final_lf":  true,
+                         "first8":  "7B 22 72 75 6E 5F 6C 61",
+                         "sha256":  "d94169f3073c615d476e96a107e21401fc1797fab05c8bc390073ab856edf839",
+                         "crlf_count":  0,
+                         "bom_count":  0,
+                         "size":  145
+                     },
+    "token_counts":  {
+                         "v1r5":  71,
+                         "original":  71
+                     },
+    "allowed_differences":  [
+                                "experiment-name",
+                                "timestamp"
+                            ],
+    "forbidden_argument_difference_count":  0,
+    "seed_difference_count":  0,
+    "config_byte_difference_count":  0,
+    "unresolved_critical_fields":  [
+
+                                   ]
+}
