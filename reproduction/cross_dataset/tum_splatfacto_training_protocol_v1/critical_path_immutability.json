@@ -1,0 +1,25 @@
+{
+  "compared_commits": {
+    "protocol_payload_commit": "de97ad4d071d552dc0cb82127738a1cddd40e4a4",
+    "protocol_evidence_head_before_task": "f35f38745cd203d7f800e9c76ab67f7e4bec8a97"
+  },
+  "critical_paths": [
+    "exact_training_command.sh",
+    "frozen_training_config.json",
+    "dataset_lock.json",
+    "environment_lock.json",
+    "output_directory_contract.json",
+    "checkpoint_selection_policy.json",
+    "failure_and_retry_policy.json",
+    "post_training_acceptance_gates.json",
+    "parameter_provenance.json",
+    "parameter_provenance.csv",
+    "shell_activation_policy.json"
+  ],
+  "absent_at_both_compared_commits": [
+    "parameter_provenance.json"
+  ],
+  "changed_critical_paths": [],
+  "changed_critical_path_count": 0,
+  "payload_valid_for_evidence_head": true
+}
