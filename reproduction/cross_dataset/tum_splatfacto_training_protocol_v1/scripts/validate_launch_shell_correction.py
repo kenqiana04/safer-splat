@@ -48,7 +48,7 @@ def main() -> int:
         "training_iterations_executed": 0,
         "checkpoint_created": False,
         "G1_allowed": False,
-        "unresolved_critical_fields": [] if passed else ["server_checkout_verification"],
+        "unresolved_critical_fields": [] if passed else ["git_transport_fetch" if result["status"] == "BLOCKED_BY_GIT_TRANSPORT_TIMEOUT" else "server_checkout_verification"],
         "unresolved_noncritical_fields": [],
     }
     (ROOT / "validation_result.json").write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")

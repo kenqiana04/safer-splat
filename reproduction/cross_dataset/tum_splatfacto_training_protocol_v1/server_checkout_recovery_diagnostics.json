@@ -1,0 +1,19 @@
+{
+  "status": "BLOCKED_BY_GIT_TRANSPORT_TIMEOUT",
+  "host": "zlab-Super-Server",
+  "server_repo": "/disk1/zlab/projects/safer-splat",
+  "remote_url_scheme": "https",
+  "maintenance_record_root": "/disk1/zlab/maintenance_records/tum_launch_shell_server_checkout_recovery_v1",
+  "expected_commit": "de97ad4d071d552dc0cb82127738a1cddd40e4a4",
+  "ls_remote_attempt_count": 1,
+  "ls_remote_head": "de97ad4d071d552dc0cb82127738a1cddd40e4a4",
+  "fetch_attempt_count": 3,
+  "fetch_exit_codes": [128, 128, 128],
+  "fetch_errors": [
+    "GnuTLS recv error (-110): TLS connection was non-properly terminated",
+    "Failed to connect to github.com port 443: connection timed out"
+  ],
+  "verification_worktree_created": false,
+  "training_invoked": false,
+  "output_created": false
+}

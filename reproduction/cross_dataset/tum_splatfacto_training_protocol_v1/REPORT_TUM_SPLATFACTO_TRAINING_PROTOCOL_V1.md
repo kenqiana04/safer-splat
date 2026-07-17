@@ -45,6 +45,17 @@ remain Draft evidence. A future V1R4 needs new explicit authorization, a new
 branch and Draft PR, pre-created execution records before GPU sampling, and
 the same activate-before-nounset policy. G1 remains forbidden.
 
+## Server Checkout Recovery V1
+
+On 2026-07-17, the authoritative server recovered exact remote-ref visibility:
+the first bounded `ls-remote` returned protocol head `de97ad4`. Three bounded
+fetch attempts then failed with exit 128 (one TLS receive termination and two
+GitHub:443 connection timeouts). The recovery worktree was therefore not
+created, no new server checkout hash or activation-only checkout probe exists,
+and the correct classification is `BLOCKED_BY_GIT_TRANSPORT_TIMEOUT` rather
+than a checkout-content mismatch. No training, output, checkpoint, eval,
+render, SAFER, navigation, or G1 action occurred.
+
 ## Cross-Platform Hash Canonicalization Correction
 
 PR #24 correctly blocked before training because its preflight compared old

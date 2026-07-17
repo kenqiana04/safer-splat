@@ -1,5 +1,5 @@
 {
-  "status": "BLOCKED_BY_SERVER_CHECKOUT_MISMATCH",
+  "status": "BLOCKED_BY_GIT_TRANSPORT_TIMEOUT",
   "checks": {
     "old_failure_reproduced": true,
     "activation_after_passed": true,
@@ -11,7 +11,7 @@
   "checkpoint_created": false,
   "G1_allowed": false,
   "unresolved_critical_fields": [
-    "server_checkout_verification"
+    "git_transport_fetch"
   ],
   "unresolved_noncritical_fields": []
 }
