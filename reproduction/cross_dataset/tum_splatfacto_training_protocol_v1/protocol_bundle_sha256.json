@@ -30,8 +30,8 @@
       "git_blob_sha": "bd86f7158eaf5368e6f66a5333f22f1265406018"
     },
     "REPORT_TUM_SPLATFACTO_TRAINING_PROTOCOL_V1.md": {
-      "canonical_git_blob_sha256": "de29c60628ff999020d649a141f609ee67f14f23f38a6df3245dbf100c2c1679",
-      "git_blob_sha": "b2b5469b815e58890badf6a0c526e062216a7c42"
+      "canonical_git_blob_sha256": "32a2b4ab4491869900f65fa533a66da4543aca398e4e48f5c6af2291cf9bdd0b",
+      "git_blob_sha": "4c8ff27a688b1fbe5a94c985cf18f71b611241c7"
     },
     "activation_probe_after.json": {
       "canonical_git_blob_sha256": "c1f032b99376fdf70aa53769a4c9ce7a2641764dc0d5e3d3470d50eb47b4a037",
@@ -42,8 +42,8 @@
       "git_blob_sha": "23f7763cc2e2a4295c09515f346bdc4e4868df3c"
     },
     "activation_probe_server_verification.json": {
-      "canonical_git_blob_sha256": "5e9cce132a10c760bd562a02328e5ad016202081d209463bd704f91632876742",
-      "git_blob_sha": "56a1a21a1811f8609366269db6195c8747917e24"
+      "canonical_git_blob_sha256": "82cde6ae5ab8c55639bd71c256e460678de7fff29eb9742177af28c4a4b31ec9",
+      "git_blob_sha": "7432a46c30e32ffc283a047acb78fca99c1d86ab"
     },
     "canonical_hash_inventory.csv": {
       "canonical_git_blob_sha256": "e32d8cae957e4ebe48877123c3e748ddaf00cf1e140764b997515ee12b6b8415",
@@ -54,8 +54,8 @@
       "git_blob_sha": "ebc151a48ab50c5faaeba5c1aea8f92e86bd34b8"
     },
     "canonical_hash_verification_server.json": {
-      "canonical_git_blob_sha256": "7c6867252189136b7d96960f5ff56353758bb7620dfc7e8ab1f99f38d6a25bed",
-      "git_blob_sha": "4e4c0135eab757367a5f7999712775173f257cb4"
+      "canonical_git_blob_sha256": "b4882fd8ed33d249dbca9619dc154f50b01737ed739e63998eddaea56c86fed0",
+      "git_blob_sha": "7006de911d94113dfc90be9f1ed6a06ec361da76"
     },
     "canonical_hash_verification_windows.json": {
       "canonical_git_blob_sha256": "afeb28b2dd924126409d358f32aa4c2ef70a21050e8139dabedb48cb79dcbc83",
@@ -98,8 +98,8 @@
       "git_blob_sha": "1d78f4aa4c30441f51cf85b80d3f834453d9cfda"
     },
     "launch_shell_correction_result.json": {
-      "canonical_git_blob_sha256": "f8cef3a166ae7ee4499bab2a2791bc425cfdd637c22e5bcf613203b99bdfcf25",
-      "git_blob_sha": "062227d00ad0552ae846971599381d6fd717c7df"
+      "canonical_git_blob_sha256": "0a3cd2385ea16a5f9eae810bd51c8ee8cbc23e181e475b3c63880042527ce81d",
+      "git_blob_sha": "4222594aa4664224038c2a7d310dace5c87c8786"
     },
     "output_directory_contract.json": {
       "canonical_git_blob_sha256": "0fe2e8e617e3cffff34c59516bd3251549a73969ca955330e97e6c260741b47e",
@@ -138,8 +138,8 @@
       "git_blob_sha": "5ebddc442021badb31a36b9cabffac80f501a28c"
     },
     "scripts/validate_launch_shell_correction.py": {
-      "canonical_git_blob_sha256": "509a0a8020c1e9c0810e58a589ce97f82f24466c0ef1ba3b74ff7d8a741bd7d5",
-      "git_blob_sha": "9712f3c9a9b34501ba1cd41c48b19f4b2df75264"
+      "canonical_git_blob_sha256": "1f6cdf9a4b908475ad12e2911c342cb34b0501f1b84ff29f1d0fd0a698b1fa22",
+      "git_blob_sha": "c2f680f0ac8e37d7d721fcd9713f0ac5842466e8"
     },
     "scripts/validate_protocol_hash_correction.py": {
       "canonical_git_blob_sha256": "83841f5838fb1079c3fc5271ef67e990de7ce53eaf957947bd3ca9deb61a0366",
@@ -149,20 +149,28 @@
       "canonical_git_blob_sha256": "0396448d269732a34c2e8901fed3fc124971b8cc034f35aaa5b2754c767c992a",
       "git_blob_sha": "5bfca994d2af7335fab1f756b42ead47f99bd1c3"
     },
+    "server_checkout_recovery_diagnostics.json": {
+      "canonical_git_blob_sha256": "2d867d50fbd34fe9a0429c6c10b74e27dbedd45122aca7d4996267a3ad713ed4",
+      "git_blob_sha": "3b27201bb184046be14b2f959a249e06ab84709a"
+    },
+    "server_remote_ref_verification.json": {
+      "canonical_git_blob_sha256": "841678eb601d4f283e68beea7531da9b9c90aac4feba9b3c943f12af1ebf9380",
+      "git_blob_sha": "4e2871e550b3bdd9661d2235fd163a2a137d53f7"
+    },
     "shell_activation_policy.json": {
       "canonical_git_blob_sha256": "71d508f5db62a90c2ee3a6562bc2c2058f1e39c95f2aacfc4bcb12b68f228886",
       "git_blob_sha": "db02c911ebb5b42b366a41b71e6ea670f11b26b1"
     },
     "training_execution_handoff.json": {
-      "canonical_git_blob_sha256": "a526d9194d11696aa39152c7ff9242ee925e50ad7aeae785f8597df9e25302a8",
-      "git_blob_sha": "a028322b51c917065acd9c114fc3d16c73621137"
+      "canonical_git_blob_sha256": "d9aa0dc8c1da3ca2e9f8f661c0a66ea1faf4a5e669081a01a2576949ff133c7c",
+      "git_blob_sha": "463c34d086b8a383d123cc94655e334c1fa1c4e2"
     }
   },
-  "canonical_commit": "473061faee5c4e44e01f07522f387686158285cd",
+  "canonical_commit": "92fe44d4b94195ebe8c4aca43e233d89c60e5490",
   "excluded_self_referential_files": [
     "protocol_bundle_sha256.json",
     "protocol_hash_correction_result.json",
     "validation_result.json"
   ],
-  "server_verification_status": "BLOCKED_BY_SERVER_CHECKOUT_MISMATCH"
+  "server_verification_status": "BLOCKED_BY_GIT_TRANSPORT_TIMEOUT"
 }
