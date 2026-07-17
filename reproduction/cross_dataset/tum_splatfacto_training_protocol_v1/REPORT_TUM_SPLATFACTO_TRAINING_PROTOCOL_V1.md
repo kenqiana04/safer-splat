@@ -102,3 +102,17 @@ No training, CUDA training process, output, checkpoint, SAFER, navigation, or
 G1 action occurred. The validator remains blocked and V1R4 cannot be prepared
 until a complete auditable object history is available and a new verification
 task is explicitly authorized.
+
+## Full-History Mirror Bundle Server Verification V2
+
+V2 reclassifies the prior result as
+`BLOCKED_BY_SHALLOW_SOURCE_INCOMPLETE_HISTORY`: bundle bytes and verification
+were valid, while its shallow source lacked a required parent. The fresh
+GitHub full-mirror attempt did not complete into a usable object store: it had
+no target branch or required boundary objects and strict fsck exited 8.
+Status: `BLOCKED_BY_WINDOWS_FULL_MIRROR_FETCH`.
+
+No new bundle was created or transferred. No server clone, checkout,
+activation-only probe, CUDA training process, output, checkpoint, SAFER,
+navigation, or G1 action occurred. Historical maintenance records remain
+preserved; V1R4 remains unavailable and unapproved.

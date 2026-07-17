@@ -26,8 +26,9 @@ def main() -> int:
     identity = load("protocol_payload_identity.json")
     immutability = load("critical_path_immutability.json")
     offline = load("offline_bundle_verification_result.json")
+    full_history = load("full_history_bundle_verification_result.json")
     config_unchanged = git("diff", "--exit-code", identity["protocol_payload_commit"], "--", str(ROOT / "frozen_training_config.json")) == 0
-    server_ok = offline["status"] == "PASS_OFFLINE_GIT_BUNDLE_SERVER_VERIFICATION"
+    server_ok = full_history["status"] == "PASS_FULL_HISTORY_GIT_BUNDLE_SERVER_VERIFICATION"
     passed = all((
         before["status"] == "REPRODUCED_PRE_ACTIVATION_NOUNSET_FAILURE",
         after["status"] == "PASS_CONDA_ACTIVATION_THEN_NOUNSET",
@@ -38,7 +39,7 @@ def main() -> int:
         immutability["changed_critical_path_count"] == 0,
         server_ok,
     ))
-    status = PASS if passed else offline["status"]
+    status = PASS if passed else full_history["status"]
     payload = {
         "status": status,
         "checks": {
@@ -53,7 +54,7 @@ def main() -> int:
         "training_iterations_executed": 0,
         "checkpoint_created": False,
         "G1_allowed": False,
-        "unresolved_critical_fields": [] if passed else offline["unresolved_critical_fields"],
+        "unresolved_critical_fields": [] if passed else full_history["unresolved_critical_fields"],
         "unresolved_noncritical_fields": [],
     }
     (ROOT / "validation_result.json").write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")

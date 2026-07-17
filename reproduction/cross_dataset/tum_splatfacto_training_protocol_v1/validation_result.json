@@ -1,5 +1,5 @@
 {
-  "status": "BLOCKED_BY_GIT_OBJECT_CORRUPTION",
+  "status": "BLOCKED_BY_WINDOWS_FULL_MIRROR_FETCH",
   "checks": {
     "old_failure_reproduced": true,
     "activation_after_passed": true,
@@ -13,7 +13,9 @@
   "checkpoint_created": false,
   "G1_allowed": false,
   "unresolved_critical_fields": [
-    "git_bundle_object_traversal",
+    "full_history_mirror_fetch",
+    "mirror_required_history_objects",
+    "self_contained_bundle",
     "server_isolated_checkout",
     "server_activation_only_probe"
   ],
