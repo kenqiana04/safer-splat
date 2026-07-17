@@ -1,0 +1,386 @@
+{
+  "verification_policy": "content_addressed_git_payload_v1",
+  "payload_commit": "de97ad4d071d552dc0cb82127738a1cddd40e4a4",
+  "files": [
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/.gitattributes",
+      "mode": "100644",
+      "git_blob_sha": "e28cbdb155bee186faf0b75d90a50d7b8ab119ea",
+      "size_bytes": 125,
+      "sha256": "e3a559e44bde79770df1182a14b625a0c482f0d1c1beb56b403ef5d3963a1768",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/CONDA_ACTIVATION_STRICT_MODE_CORRECTION_V1.md",
+      "mode": "100644",
+      "git_blob_sha": "3da4204f75082205679e5fda7a52f32914cb9e9e",
+      "size_bytes": 899,
+      "sha256": "9dca2d2232323c426e10106883ed7e3cf300cd641eab86d9fa3648a31d8bcff2",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/CONDA_ACTIVATION_STRICT_MODE_PREREGISTRATION_V1.md",
+      "mode": "100644",
+      "git_blob_sha": "2d2d068ca074303c9f9c90e52e0d4c3bc7cbd937",
+      "size_bytes": 2911,
+      "sha256": "7413eacfccbf4e8589ce35bad83b0aef859d4d5d8193d3507b6054e5e9fc0eab",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/CONFIG_SELECTION_POLICY_PREREGISTRATION.md",
+      "mode": "100644",
+      "git_blob_sha": "2805377808d4af77acb4eeaa7fe5927fc3323312",
+      "size_bytes": 3097,
+      "sha256": "2a1b4ca39abec7a3da1b03a74f2948eb66a140f89266203b479d8288356583d2",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/HASH_CANONICALIZATION_CORRECTION_V1.md",
+      "mode": "100644",
+      "git_blob_sha": "1d80d28dcd7633fa139924b53d097b77a6d4f351",
+      "size_bytes": 1909,
+      "sha256": "429ebb3d510fdf1598f7387fb6d7478962850177cea9551f9bbf75fbd28aeaae",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/HASH_CANONICALIZATION_PREREGISTRATION_V1.md",
+      "mode": "100644",
+      "git_blob_sha": "19bccff323af64debce2960ff6997e391957a0b4",
+      "size_bytes": 2120,
+      "sha256": "9d000409936d819444915913ff2f3c9239f59c05e1638e4a34ae6a058ca1f628",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/README.md",
+      "mode": "100644",
+      "git_blob_sha": "bd86f7158eaf5368e6f66a5333f22f1265406018",
+      "size_bytes": 178,
+      "sha256": "cc99f684142c4f75ee69fb76d7932bf9a754532c032cd0dd03119fe185746b7d",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/REPORT_TUM_SPLATFACTO_TRAINING_PROTOCOL_V1.md",
+      "mode": "100644",
+      "git_blob_sha": "b2b5469b815e58890badf6a0c526e062216a7c42",
+      "size_bytes": 5083,
+      "sha256": "de29c60628ff999020d649a141f609ee67f14f23f38a6df3245dbf100c2c1679",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/activation_probe_after.json",
+      "mode": "100644",
+      "git_blob_sha": "5a61188e822b17a1b6c4280b37fef641cc157c12",
+      "size_bytes": 685,
+      "sha256": "c1f032b99376fdf70aa53769a4c9ce7a2641764dc0d5e3d3470d50eb47b4a037",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/activation_probe_before.json",
+      "mode": "100644",
+      "git_blob_sha": "23f7763cc2e2a4295c09515f346bdc4e4868df3c",
+      "size_bytes": 631,
+      "sha256": "9b919cf01875cad6c91025d583e8c267e1b82e73ae707f9cab2d486366828e72",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/activation_probe_server_verification.json",
+      "mode": "100644",
+      "git_blob_sha": "56a1a21a1811f8609366269db6195c8747917e24",
+      "size_bytes": 468,
+      "sha256": "5e9cce132a10c760bd562a02328e5ad016202081d209463bd704f91632876742",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/canonical_hash_inventory.csv",
+      "mode": "100644",
+      "git_blob_sha": "7f194741c08737f937cb8e81786b8a9f9cb2ad43",
+      "size_bytes": 6235,
+      "sha256": "e32d8cae957e4ebe48877123c3e748ddaf00cf1e140764b997515ee12b6b8415",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/canonical_hash_policy.json",
+      "mode": "100644",
+      "git_blob_sha": "ebc151a48ab50c5faaeba5c1aea8f92e86bd34b8",
+      "size_bytes": 436,
+      "sha256": "677b5ac0b2aef9095d665e5272f45a53cb3ee85ed32e2e8c23fe607bceb5d919",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/canonical_hash_verification_server.json",
+      "mode": "100644",
+      "git_blob_sha": "4e4c0135eab757367a5f7999712775173f257cb4",
+      "size_bytes": 689,
+      "sha256": "7c6867252189136b7d96960f5ff56353758bb7620dfc7e8ab1f99f38d6a25bed",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/canonical_hash_verification_windows.json",
+      "mode": "100644",
+      "git_blob_sha": "b8ad1664a089baea51f8f6b768acaa26f6b1fd90",
+      "size_bytes": 844,
+      "sha256": "afeb28b2dd924126409d358f32aa4c2ef70a21050e8139dabedb48cb79dcbc83",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/checkpoint_selection_policy.json",
+      "mode": "100644",
+      "git_blob_sha": "1d34877b25507ad04dc39e29670f00c0d681416f",
+      "size_bytes": 301,
+      "sha256": "6094e4afb353d3456309daae58d66e2e0b74c5f32cd190f075f323b1bd99042f",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/command_semantic_comparison.json",
+      "mode": "100644",
+      "git_blob_sha": "275c50372661f51c111fcf96e7a9c174052d113c",
+      "size_bytes": 3224,
+      "sha256": "340ad41dd7e766e4936308c0f3afcd2e46a01be2c3c980ad88ad1b6931b10421",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/dataset_lock.json",
+      "mode": "100644",
+      "git_blob_sha": "ac354c3790f7cf0856f8ef2ecc2b6b238774dfb0",
+      "size_bytes": 1077,
+      "sha256": "0feb91655f69cd422d54ceb84b8e19d4017291e38523ed5440e92e9c819ce676",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/environment_lock.json",
+      "mode": "100644",
+      "git_blob_sha": "8dc6f137f416841c65c91b0644ac74be19201561",
+      "size_bytes": 689,
+      "sha256": "f18bc53e286edc1985ffdb0b3a17b4affb8176176ce05dc1bfa43bd9e065b4a0",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/exact_training_command.json",
+      "mode": "100644",
+      "git_blob_sha": "4ba561105f9e8b813342b51203c446c93ee6a793",
+      "size_bytes": 877,
+      "sha256": "20a90f2181826cab70eeab01b3a8912db1614fb0bf911d88881faab5275ec87b",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/exact_training_command.sh",
+      "mode": "100644",
+      "git_blob_sha": "0d56e187039d5da75f2a147ff1c207bf9ff58efa",
+      "size_bytes": 1370,
+      "sha256": "4a39766b324ffc6c7766a3389589d748bc00925f109ec44fc72e5a705358ec94",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/failure_and_retry_policy.json",
+      "mode": "100644",
+      "git_blob_sha": "c0c38b28d1bc1f8c5f6a45c1e342b301f212b3f7",
+      "size_bytes": 429,
+      "sha256": "de466a9c9bb7926b02545a3608083db249d2b3a90a5485bad941db98fc7eb7e6",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/frozen_training_config.json",
+      "mode": "100644",
+      "git_blob_sha": "d3e0c104b37304278dd4074787d8781d2281a375",
+      "size_bytes": 3883,
+      "sha256": "0d15d8d6fa84049c6b4c34d6fdcaf77114f569c8d22ea9d010ae8144e6c924ea",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/frozen_training_config.yaml",
+      "mode": "100644",
+      "git_blob_sha": "1d78f4aa4c30441f51cf85b80d3f834453d9cfda",
+      "size_bytes": 230,
+      "sha256": "01d84d17d1e6f5fc88d86c3801f4d573404a63a9d3eaee47af3ba311c0fb9157",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/launch_shell_correction_result.json",
+      "mode": "100644",
+      "git_blob_sha": "062227d00ad0552ae846971599381d6fd717c7df",
+      "size_bytes": 1093,
+      "sha256": "f8cef3a166ae7ee4499bab2a2791bc425cfdd637c22e5bcf613203b99bdfcf25",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/output_directory_contract.json",
+      "mode": "100644",
+      "git_blob_sha": "149001e9bca7ca58c8f88366de462a11a022a4fc",
+      "size_bytes": 1089,
+      "sha256": "0fe2e8e617e3cffff34c59516bd3251549a73969ca955330e97e6c260741b47e",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/parameter_provenance.csv",
+      "mode": "100644",
+      "git_blob_sha": "75e6c440b77e9097e265d6c34a744bf5824a1c50",
+      "size_bytes": 1957,
+      "sha256": "48b247a06fefc83dd4caeb1c4421ef959405ee56ded2ce35ff3bfdbb41127c84",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/post_training_acceptance_gates.json",
+      "mode": "100644",
+      "git_blob_sha": "5a2fa40d1ddafdbc383b3173cf0d9ebddfb56577",
+      "size_bytes": 508,
+      "sha256": "46d0a42b6ee0dbda73b568834d40feb5e038f86c77537ccd6020df65a5bad841",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/protocol_bundle_sha256.json",
+      "mode": "100644",
+      "git_blob_sha": "25b78af29727dc401cd1ebfe2e6fd6e01b3c1c22",
+      "size_bytes": 8868,
+      "sha256": "e876c209c811ca50da08107445f2d556723b1d987e05b560dfe8ed48472be3bf",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/protocol_hash_correction_result.json",
+      "mode": "100644",
+      "git_blob_sha": "601a39111d4ff47d60e735fda2ba4b7974d896bd",
+      "size_bytes": 1186,
+      "sha256": "2cd8957d1ec1c01d8654c2fd727568f849d62a2791d1d534565c5da6fbf4b8aa",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/reference_config_comparison.csv",
+      "mode": "100644",
+      "git_blob_sha": "65123a1d292d7796b942523764cd5a151f42b755",
+      "size_bytes": 434,
+      "sha256": "3b4daa4665b35cc67e795f00b3253f73cc867a950dcf3f802b5de0233c0b6d42",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/reference_config_inventory.json",
+      "mode": "100644",
+      "git_blob_sha": "2b4fd4ca63637f5a82d893c7f6a5680bf1851bb7",
+      "size_bytes": 1373,
+      "sha256": "826eb42baef4f08b5c08329bfb305493cc9f33163b3db78b55f63acc39cd3834",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/scripts/build_protocol_bundle.py",
+      "mode": "100644",
+      "git_blob_sha": "61f0ddb1f9651c9d156e6735cba8f202e1a5b2e4",
+      "size_bytes": 1956,
+      "sha256": "b3417bcc1bbbae01c73bcaf10edd7cd409eef285d062f996f9d2503215d7068b",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/scripts/compare_training_command_semantics.py",
+      "mode": "100644",
+      "git_blob_sha": "53df0819a7fbdd9c3b7858f78d9863e2d8c24537",
+      "size_bytes": 2486,
+      "sha256": "477bcb58310e1c1a5f2dfe857a0a3c408957b815d53093ed2c7093c92971ca3c",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/scripts/compute_canonical_protocol_hashes.py",
+      "mode": "100644",
+      "git_blob_sha": "ea69138abe8eddff400742693cd3ef2e9070d4f1",
+      "size_bytes": 2501,
+      "sha256": "61045b270a7cf00476e465609b2c909c6c37a5c5dfacdf6b663b4c580c735723",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/scripts/probe_conda_activation_strict_mode.py",
+      "mode": "100644",
+      "git_blob_sha": "5ebddc442021badb31a36b9cabffac80f501a28c",
+      "size_bytes": 2742,
+      "sha256": "10b97a9d72e7dc15b5afd29640354ab2c4afc27bbbecc6889e7fe5cefadd390a",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/scripts/validate_launch_shell_correction.py",
+      "mode": "100644",
+      "git_blob_sha": "9712f3c9a9b34501ba1cd41c48b19f4b2df75264",
+      "size_bytes": 2287,
+      "sha256": "509a0a8020c1e9c0810e58a589ce97f82f24466c0ef1ba3b74ff7d8a741bd7d5",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/scripts/validate_protocol_hash_correction.py",
+      "mode": "100644",
+      "git_blob_sha": "7f5db6f92c4a98c45bd5bbdc5e37a70b5a9ae2ca",
+      "size_bytes": 2964,
+      "sha256": "83841f5838fb1079c3fc5271ef67e990de7ce53eaf957947bd3ca9deb61a0366",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/scripts/validate_training_protocol.py",
+      "mode": "100644",
+      "git_blob_sha": "5bfca994d2af7335fab1f756b42ead47f99bd1c3",
+      "size_bytes": 284,
+      "sha256": "0396448d269732a34c2e8901fed3fc124971b8cc034f35aaa5b2754c767c992a",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/shell_activation_policy.json",
+      "mode": "100644",
+      "git_blob_sha": "db02c911ebb5b42b366a41b71e6ea670f11b26b1",
+      "size_bytes": 403,
+      "sha256": "71d508f5db62a90c2ee3a6562bc2c2058f1e39c95f2aacfc4bcb12b68f228886",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/training_execution_handoff.json",
+      "mode": "100644",
+      "git_blob_sha": "a028322b51c917065acd9c114fc3d16c73621137",
+      "size_bytes": 1011,
+      "sha256": "a526d9194d11696aa39152c7ff9242ee925e50ad7aeae785f8597df9e25302a8",
+      "crlf_count": 0,
+      "final_lf": true
+    },
+    {
+      "path": "reproduction/cross_dataset/tum_splatfacto_training_protocol_v1/validation_result.json",
+      "mode": "100644",
+      "git_blob_sha": "2195550b310af269a465c1d00a3c60a6a4fbb4c2",
+      "size_bytes": 448,
+      "sha256": "5d54c5155fa8e153a639bb2eba7841f6f9478220154bcdbfbbd1351a114984ae",
+      "crlf_count": 0,
+      "final_lf": true
+    }
+  ],
+  "archive_sha256": "7caef9db6f08c582c3f064ad9aca69414a408feb27a8a32cba476f45f38822a0",
+  "archive_size_bytes": 153600
+}

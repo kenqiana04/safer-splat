@@ -1,0 +1,18 @@
+parameter,value,tier,source,rationale
+method,splatfacto,Tier 2,/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724/config.yml,Stonehenge primary; Flight matches
+max_num_iterations,30000,Tier 2,/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724/config.yml,Stonehenge primary; Flight matches
+mixed_precision,False,Tier 2,/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724/config.yml,Stonehenge primary; Flight matches
+steps_per_save,2000,Tier 2,/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724/config.yml,Stonehenge primary; Flight matches
+steps_per_eval_image,100,Tier 2,/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724/config.yml,Stonehenge primary; Flight matches
+steps_per_eval_all_images,1000,Tier 2,/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724/config.yml,Stonehenge primary; Flight matches
+model_and_optimizers,frozen_training_config.json,Tier 2,/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724/config.yml,Stonehenge primary; Flight matches
+seed,20260716,Tier 1,PR #22 contract / policy,immutable TUM override
+data,/disk1/zlab/cross_dataset_assets/processed/tum_rgbd/freiburg1_room,Tier 1,PR #22 contract / policy,immutable TUM override
+split,0.8,Tier 1,PR #22 contract / policy,immutable TUM override
+orientation,none,Tier 1,PR #22 contract / policy,immutable TUM override
+center,none,Tier 1,PR #22 contract / policy,immutable TUM override
+auto_scale,False,Tier 1,PR #22 contract / policy,immutable TUM override
+downscale,1,Tier 1,PR #22 contract / policy,immutable TUM override
+depth_scale,0.0002,Tier 1,PR #22 contract / policy,immutable TUM override
+viewer_disabled,True,Tier 1,PR #22 contract / policy,immutable TUM override
+output_root,/disk1/zlab/formal_splatfacto_runs,Tier 1,PR #22 contract / policy,immutable TUM override

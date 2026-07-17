@@ -1,0 +1,52 @@
+{
+  "G1_allowed": false,
+  "checkpoint_created": false,
+  "checks": [
+    {
+      "check": "canonical_policy",
+      "passed": true
+    },
+    {
+      "check": "directory_eol_contract",
+      "passed": true
+    },
+    {
+      "check": "exact_training_command.sh: inventory",
+      "passed": true
+    },
+    {
+      "check": "exact_training_command.sh: old_hash",
+      "passed": true
+    },
+    {
+      "check": "exact_training_command.sh: server",
+      "passed": true
+    },
+    {
+      "check": "exact_training_command.sh: semantic",
+      "passed": true
+    },
+    {
+      "check": "frozen_training_config.json: inventory",
+      "passed": true
+    },
+    {
+      "check": "frozen_training_config.json: old_hash",
+      "passed": true
+    },
+    {
+      "check": "frozen_training_config.json: server",
+      "passed": true
+    },
+    {
+      "check": "frozen_training_config.json: semantic",
+      "passed": true
+    }
+  ],
+  "run_directory_created": false,
+  "safer_executed": false,
+  "status": "PASS_READY_FOR_FORMAL_TRAINING_EXECUTION_AFTER_HASH_CANONICALIZATION",
+  "training_iterations_executed": 0,
+  "unresolved_critical_fields": [],
+  "unresolved_noncritical_fields": []
+}

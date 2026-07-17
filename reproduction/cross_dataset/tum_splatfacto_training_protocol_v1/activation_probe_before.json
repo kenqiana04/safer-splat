@@ -1,0 +1,16 @@
+{
+  "status": "REPRODUCED_PRE_ACTIVATION_NOUNSET_FAILURE",
+  "timestamp_utc": "2026-07-16T12:57:49.348155+00:00",
+  "hostname": "zlab-Super-Server",
+  "probe_context": "base Conda environment active before activating safer_splat_official",
+  "exit_code": 1,
+  "unexpected_pass": false,
+  "failure_hook": "deactivate-gcc_linux-64.sh",
+  "unbound_variable": "_CONDA_PYTHON_SYSCONFIGDATA_NAME_USED",
+  "nounset_error_detected": true,
+  "v1r3_historical_hook": "deactivate-gfortran_linux-64.sh",
+  "v1r3_historical_unbound_variable": "GFORTRAN",
+  "ns_train_invoked": false,
+  "training_iterations": 0,
+  "checkpoint_created": false
+}

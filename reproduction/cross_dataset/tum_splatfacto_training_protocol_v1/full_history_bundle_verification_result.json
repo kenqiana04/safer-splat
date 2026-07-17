@@ -1,0 +1,16 @@
+{
+  "status": "BLOCKED_BY_WINDOWS_FULL_MIRROR_FETCH",
+  "historical_status": "BLOCKED_BY_SHALLOW_SOURCE_INCOMPLETE_HISTORY",
+  "historical_bundle_byte_integrity": "PASS",
+  "historical_bundle_verify": "PASS",
+  "frozen_evidence_head": "fffbcae42b2d184ed569cced7747fcf3ffc5407d",
+  "full_history_bundle_created": false,
+  "server_transfer_attempted": false,
+  "activation_probe_attempted": false,
+  "training_iterations_executed": 0,
+  "checkpoint_created": false,
+  "safer_executed": false,
+  "G1_allowed": false,
+  "unresolved_critical_fields": ["full_history_mirror_fetch", "mirror_required_history_objects", "self_contained_bundle", "server_isolated_checkout", "server_activation_only_probe"],
+  "unresolved_noncritical_fields": []
+}

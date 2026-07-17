@@ -1,0 +1,16 @@
+{
+  "expected_checkpoint_directory": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1/splatfacto/20260716_000000/nerfstudio_models",
+  "expected_config_path": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1/splatfacto/20260716_000000/config.yml",
+  "expected_log_directory": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1/splatfacto/20260716_000000/logs",
+  "expected_render_directory": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1/splatfacto/20260716_000000/renders",
+  "expected_report_directory": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1/splatfacto/20260716_000000/reports",
+  "expected_run_path": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1/splatfacto/20260716_000000",
+  "experiment_name": "tum_fr1_room_splatfacto_v1",
+  "must_not_exist_before_training": true,
+  "output_root": "/disk1/zlab/formal_splatfacto_runs",
+  "overwrite_allowed": false,
+  "preflight_path_absent_verified": true,
+  "resume_allowed": false,
+  "run_id": "20260716_000000",
+  "source_data_overlap": false
+}
