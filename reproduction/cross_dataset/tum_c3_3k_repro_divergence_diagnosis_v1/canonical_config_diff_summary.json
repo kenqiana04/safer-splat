@@ -1,0 +1,12 @@
+{
+  "c3_3k_config_identity": "reconstructed from immutable PR33 launcher plus V1R6 config; no per-run config.yml was persisted",
+  "c3_10k_config_sha256": "not separately used for replay; checkpoint evaluator binding passed",
+  "common_contract": {"seed": 20260716, "metric_seed": true, "depth_lambda": 0.1, "depth_beta_m": 0.1, "depth_scale": 0.0002, "fixed_split": "240/60", "scale_alignment": false},
+  "confirmed_semantic_differences": [
+    "PR34 replaces TumMetricDepthSplatfactoModel with TumMetricGeometryRefinementModel.",
+    "PR34 get_loss_dict executes scheduling and CPU scalar extraction every step, even for CONSTANT_010.",
+    "PR34 records CUDA memory, tensor quantiles, gradient norms, and writes JSONL every 100 steps when instrumentation_path is nonempty.",
+    "PR34 overrides step_post_backward and adds refinement-lock semantics, although R0 selects STOCK_REFINEMENT."
+  ],
+  "nonsemantic_identity_differences": ["output root", "experiment name", "timestamp", "checkpoint cadence"]
+}

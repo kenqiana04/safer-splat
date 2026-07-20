@@ -1,0 +1,8 @@
+{
+  "first_divergence_level": "LEVEL_12_HISTORICAL_LINEAGE_ONLY",
+  "first_divergence_step": null,
+  "first_divergence_field": "PR34 R0 wrapper and instrumentation execution path",
+  "confidence": "high",
+  "supporting_artifacts": ["c3_vs_r0_source_semantic_diff.json", "canonical_config_diff_summary.json", "exact_replay_comparison.json"],
+  "interpretation": "Exact PR33 A/B both reproduce the frozen C3 metric band. The divergent R0 values therefore do not invalidate historical C3."
+}

@@ -1,0 +1,9 @@
+{
+  "result": "PASS_C3_DIVERGENCE_DIAGNOSED_R0_EXECUTION_DRIFT",
+  "primary_divergence_cause": "R0_WRAPPER_SEMANTIC_DRIFT",
+  "secondary_causes": ["INSTRUMENTATION_EXECUTION_PERTURBATION_PLAUSIBLE", "DYNAMIC_TOPOLOGY_PATH_BIFURCATION_OBSERVED_BETWEEN_EXACT_REPEATS"],
+  "ruled_out_causes": ["EVALUATOR_CHECKPOINT_BINDING_MISMATCH", "HISTORICAL_METRIC_RECORD_MISMATCH", "C3_RETRY_STATE_REUSE", "FORMAL_TRAINING_FAILURE"],
+  "historical_c3_baseline_valid": true,
+  "third_differential_replay_executed": false,
+  "reason_not_run": "the source/config audit directly establishes a new PR34 subclass and instrumentation path; the protocol allows no third replay when this explains R0 drift"
+}

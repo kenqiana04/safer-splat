@@ -1,0 +1,241 @@
+{
+  "evaluators": {
+    "A": "historical C3 evaluator snapshot (PR33 execution lineage)",
+    "B": "historical PR34 refinement evaluator snapshot",
+    "C": "independent explicit PR33-compatible config"
+  },
+  "frozen_c3_consistency": {
+    "A_AbsRel": 0.3329618806779451,
+    "A_delta1": 0.4568739114750355,
+    "A_ratio": 1.0041860342025757,
+    "C_AbsRel": 0.3329618806779451,
+    "C_delta1": 0.4568739114750355,
+    "C_ratio": 1.0041860342025757,
+    "within_1e-6": true
+  },
+  "gate": "EVALUATOR_CHECKPOINT_SCHEMA_INCOMPATIBILITY_NO_EXACT_REPLAY",
+  "runs": {
+    "A_C3_10K": {
+      "exit_code": 0,
+      "log_sha256": "5e59b06a5903aaf447f153844992f78efbd37bc476c6bae51d39200ce5528c23",
+      "metrics": {
+        "AbsRel": 0.34434037854589233,
+        "RMSE": 0.7413108904323874,
+        "RMSE_log": 0.839184452551967,
+        "SqRel": 0.3030184658630019,
+        "candidate": "C3_METRIC_SEED_PLUS_DEPTH",
+        "checkpoint": "/disk1/zlab/maintenance_records/tum_map_geometry_root_cause_repair_v1/final_candidate/C3_METRIC_SEED_PLUS_DEPTH_10000/NONFORMAL_C3_METRIC_SEED_PLUS_DEPTH/splatfacto/seed20260716_10000/nerfstudio_models/step-000009999.ckpt",
+        "checkpoint_step": 9999,
+        "delta_1_25": 0.44829184327689114,
+        "delta_1_25_cu": 0.7990576865201852,
+        "delta_1_25_sq": 0.6814676640642194,
+        "depth_semantic": "expected_depth_from_splatfacto_RGB+ED; raw metric comparison; no scale alignment",
+        "formal_training": false,
+        "frame_count": 60,
+        "median_predicted_over_gt_depth_ratio": 0.9150810837745667,
+        "seed": 20260716,
+        "valid_overlap_pixel_count": 14048828,
+        "valid_overlap_ratio": 1.0
+      }
+    },
+    "A_C3_3K": {
+      "exit_code": 0,
+      "log_sha256": "2e9e9f3df25229937a5d5d0de217a1bb7b62c4e9ca0ba8de51023aea0120da9a",
+      "metrics": {
+        "AbsRel": 0.3329618806779451,
+        "RMSE": 0.6863836344524717,
+        "RMSE_log": 0.44540721206087436,
+        "SqRel": 0.28157155749212975,
+        "candidate": "C3_METRIC_SEED_PLUS_DEPTH",
+        "checkpoint": "/disk1/zlab/maintenance_records/tum_map_geometry_root_cause_repair_v1/candidates/C3_METRIC_SEED_PLUS_DEPTH/screen3000_depth_wrapper_retry2/NONFORMAL_C3_METRIC_SEED_PLUS_DEPTH/splatfacto/seed20260716_03000/nerfstudio_models/step-000002999.ckpt",
+        "checkpoint_step": 2999,
+        "delta_1_25": 0.4568739114750355,
+        "delta_1_25_cu": 0.8867859297586959,
+        "delta_1_25_sq": 0.7426459345932629,
+        "depth_semantic": "expected_depth_from_splatfacto_RGB+ED; raw metric comparison; no scale alignment",
+        "formal_training": false,
+        "frame_count": 60,
+        "median_predicted_over_gt_depth_ratio": 1.0041860342025757,
+        "seed": 20260716,
+        "valid_overlap_pixel_count": 14048828,
+        "valid_overlap_ratio": 1.0
+      }
+    },
+    "A_R0_RETRY1": {
+      "exit_code": 0,
+      "log_sha256": "ef70494836c1bd8d9c13f8d0dc52bbc7ee582f349bad9d96b787d0ad71118603",
+      "metrics": {
+        "AbsRel": 0.45292149097825196,
+        "RMSE": 0.7912650016535784,
+        "RMSE_log": 0.4430958496224364,
+        "SqRel": 0.4460174294048177,
+        "candidate": "C3_METRIC_SEED_PLUS_DEPTH",
+        "checkpoint": "/disk1/zlab/maintenance_records/tum_metric_geometry_repair_refinement_v1/runs/R0_C3_BASELINE/screen6000_retry1/NONFORMAL_R0_C3_BASELINE/splatfacto/seed20260716_06000/nerfstudio_models/step-000003000.ckpt",
+        "checkpoint_step": 3000,
+        "delta_1_25": 0.36410140404594604,
+        "delta_1_25_cu": 0.8712343122145135,
+        "delta_1_25_sq": 0.6847369759242551,
+        "depth_semantic": "expected_depth_from_splatfacto_RGB+ED; raw metric comparison; no scale alignment",
+        "formal_training": false,
+        "frame_count": 60,
+        "median_predicted_over_gt_depth_ratio": 1.2849347591400146,
+        "seed": 20260716,
+        "valid_overlap_pixel_count": 14048828,
+        "valid_overlap_ratio": 1.0
+      }
+    },
+    "A_R0_RETRY2": {
+      "exit_code": 0,
+      "log_sha256": "5db492f31a156e21ffea3f5cac7d98b759bd0fd311e3ad0ec392dc9b7ebd3c52"
+    },
+    "B_C3_10K": {
+      "exit_code": 0,
+      "log_sha256": "e4f942e1fcc3d36817fe13388c38e732ae481d7eeda272aa107ae9b8bb0e573a"
+    },
+    "B_C3_3K": {
+      "exit_code": 0,
+      "log_sha256": "dc3bd05afed2d2292aef5ec7ed7a12c29bf2258cd44ccf37cbe6d6028b8b899c",
+      "metrics": {
+        "AbsRel": 0.3329618806779451,
+        "RMSE": 0.6863836344524717,
+        "RMSE_log": 0.44540721206087436,
+        "SqRel": 0.28157155749212975,
+        "candidate": "R0_C3_BASELINE",
+        "checkpoint": "/disk1/zlab/maintenance_records/tum_map_geometry_root_cause_repair_v1/candidates/C3_METRIC_SEED_PLUS_DEPTH/screen3000_depth_wrapper_retry2/NONFORMAL_C3_METRIC_SEED_PLUS_DEPTH/splatfacto/seed20260716_03000/nerfstudio_models/step-000002999.ckpt",
+        "checkpoint_step": 2999,
+        "delta_1_25": 0.4568739114750355,
+        "delta_1_25_cu": 0.8867859297586959,
+        "delta_1_25_sq": 0.7426459345932629,
+        "depth_semantic": "expected_depth_from_splatfacto_RGB+ED; raw metric comparison; no scale alignment",
+        "formal_training": false,
+        "frame_count": 60,
+        "median_predicted_over_gt_depth_ratio": 1.0041860342025757,
+        "seed": 20260716,
+        "valid_overlap_pixel_count": 14048828,
+        "valid_overlap_ratio": 1.0
+      }
+    },
+    "B_R0_RETRY1": {
+      "exit_code": 0,
+      "log_sha256": "cf800aee0533d3310d452d0adc392b4af031b9c25d33d63e869ecba03fd0062f",
+      "metrics": {
+        "AbsRel": 0.45292149097825196,
+        "RMSE": 0.7912650016535784,
+        "RMSE_log": 0.4430958496224364,
+        "SqRel": 0.4460174294048177,
+        "candidate": "R0_C3_BASELINE",
+        "checkpoint": "/disk1/zlab/maintenance_records/tum_metric_geometry_repair_refinement_v1/runs/R0_C3_BASELINE/screen6000_retry1/NONFORMAL_R0_C3_BASELINE/splatfacto/seed20260716_06000/nerfstudio_models/step-000003000.ckpt",
+        "checkpoint_step": 3000,
+        "delta_1_25": 0.36410140404594604,
+        "delta_1_25_cu": 0.8712343122145135,
+        "delta_1_25_sq": 0.6847369759242551,
+        "depth_semantic": "expected_depth_from_splatfacto_RGB+ED; raw metric comparison; no scale alignment",
+        "formal_training": false,
+        "frame_count": 60,
+        "median_predicted_over_gt_depth_ratio": 1.2849347591400146,
+        "seed": 20260716,
+        "valid_overlap_pixel_count": 14048828,
+        "valid_overlap_ratio": 1.0
+      }
+    },
+    "B_R0_RETRY2": {
+      "exit_code": 0,
+      "log_sha256": "400902ff9f562526b07354fc3c8b8a075e28ae3bc9ab25f3e610768909a4b40c",
+      "metrics": {
+        "AbsRel": 0.4222357134916553,
+        "RMSE": 0.7809938710649186,
+        "RMSE_log": 0.4271247294349975,
+        "SqRel": 0.4179928351035127,
+        "candidate": "R0_C3_BASELINE",
+        "checkpoint": "/disk1/zlab/maintenance_records/tum_metric_geometry_repair_refinement_v1/runs/R0_C3_BASELINE/repro3000_retry2/NONFORMAL_R0_C3_BASELINE/splatfacto/seed20260716_06000/nerfstudio_models/step-000003000.ckpt",
+        "checkpoint_step": 3000,
+        "delta_1_25": 0.3943466316193778,
+        "delta_1_25_cu": 0.884451927235496,
+        "delta_1_25_sq": 0.7123973615450342,
+        "depth_semantic": "expected_depth_from_splatfacto_RGB+ED; raw metric comparison; no scale alignment",
+        "formal_training": false,
+        "frame_count": 60,
+        "median_predicted_over_gt_depth_ratio": 1.23445463180542,
+        "seed": 20260716,
+        "valid_overlap_pixel_count": 14048828,
+        "valid_overlap_ratio": 1.0
+      }
+    },
+    "C_C3_10K": {
+      "exit_code": 0,
+      "metrics": {
+        "AbsRel": 0.34434037854589233,
+        "checkpoint": "/disk1/zlab/maintenance_records/tum_map_geometry_root_cause_repair_v1/final_candidate/C3_METRIC_SEED_PLUS_DEPTH_10000/NONFORMAL_C3_METRIC_SEED_PLUS_DEPTH/splatfacto/seed20260716_10000/nerfstudio_models/step-000009999.ckpt",
+        "checkpoint_step": 9999,
+        "delta_1_25": 0.44829184327689114,
+        "depth_semantic": "expected_depth_from_splatfacto_RGB+ED; raw metric comparison; no scale alignment",
+        "evaluator": "EVAL_C_INDEPENDENT_EXPLICIT_CONFIG",
+        "frame_count": 60,
+        "median_predicted_over_gt_depth_ratio": 0.9150810837745667,
+        "valid_overlap_pixel_count": 14048828,
+        "valid_overlap_ratio": 1.0
+      }
+    },
+    "C_C3_3K": {
+      "exit_code": 0,
+      "metrics": {
+        "AbsRel": 0.3329618806779451,
+        "checkpoint": "/disk1/zlab/maintenance_records/tum_map_geometry_root_cause_repair_v1/candidates/C3_METRIC_SEED_PLUS_DEPTH/screen3000_depth_wrapper_retry2/NONFORMAL_C3_METRIC_SEED_PLUS_DEPTH/splatfacto/seed20260716_03000/nerfstudio_models/step-000002999.ckpt",
+        "checkpoint_step": 2999,
+        "delta_1_25": 0.4568739114750355,
+        "depth_semantic": "expected_depth_from_splatfacto_RGB+ED; raw metric comparison; no scale alignment",
+        "evaluator": "EVAL_C_INDEPENDENT_EXPLICIT_CONFIG",
+        "frame_count": 60,
+        "median_predicted_over_gt_depth_ratio": 1.0041860342025757,
+        "valid_overlap_pixel_count": 14048828,
+        "valid_overlap_ratio": 1.0
+      }
+    },
+    "C_R0_RETRY1": {
+      "exit_code": 0,
+      "metrics": {
+        "AbsRel": 0.45292149097825196,
+        "checkpoint": "/disk1/zlab/maintenance_records/tum_metric_geometry_repair_refinement_v1/runs/R0_C3_BASELINE/screen6000_retry1/NONFORMAL_R0_C3_BASELINE/splatfacto/seed20260716_06000/nerfstudio_models/step-000003000.ckpt",
+        "checkpoint_step": 3000,
+        "delta_1_25": 0.36410140404594604,
+        "depth_semantic": "expected_depth_from_splatfacto_RGB+ED; raw metric comparison; no scale alignment",
+        "evaluator": "EVAL_C_INDEPENDENT_EXPLICIT_CONFIG",
+        "frame_count": 60,
+        "median_predicted_over_gt_depth_ratio": 1.2849347591400146,
+        "valid_overlap_pixel_count": 14048828,
+        "valid_overlap_ratio": 1.0
+      }
+    },
+    "C_R0_RETRY2": {
+      "exit_code": 0,
+      "metrics": {
+        "AbsRel": 0.4222357134916553,
+        "checkpoint": "/disk1/zlab/maintenance_records/tum_metric_geometry_repair_refinement_v1/runs/R0_C3_BASELINE/repro3000_retry2/NONFORMAL_R0_C3_BASELINE/splatfacto/seed20260716_06000/nerfstudio_models/step-000003000.ckpt",
+        "checkpoint_step": 3000,
+        "delta_1_25": 0.3943466316193778,
+        "depth_semantic": "expected_depth_from_splatfacto_RGB+ED; raw metric comparison; no scale alignment",
+        "evaluator": "EVAL_C_INDEPENDENT_EXPLICIT_CONFIG",
+        "frame_count": 60,
+        "median_predicted_over_gt_depth_ratio": 1.23445463180542,
+        "valid_overlap_pixel_count": 14048828,
+        "valid_overlap_ratio": 1.0
+      }
+    },
+    "C_c3_10k": {
+      "exit_code": 0,
+      "log_sha256": "0f4745c72b91ae1700765c19725f31484a08e506ce7aaa9c14ece1560f5a606c"
+    },
+    "C_c3_3k": {
+      "exit_code": 0,
+      "log_sha256": "b1b79ef54aa2f23bde4b5c94bd559e2eeed9919bb5614fa39fac045363cfff2c"
+    },
+    "C_r0_retry1": {
+      "exit_code": 0,
+      "log_sha256": "343a65386d593be5e57c96dac350170fa150eed0f73e29b42be4e21fd157bf5f"
+    },
+    "C_r0_retry2": {
+      "exit_code": 0,
+      "log_sha256": "b49f9993674f5c7b83cd2be027f3452404efb41f4c3a979f8a7e6943f1529bbb"
+    }
+  }
+}

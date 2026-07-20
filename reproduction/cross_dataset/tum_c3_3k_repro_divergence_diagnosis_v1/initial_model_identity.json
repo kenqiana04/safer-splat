@@ -1,0 +1,7 @@
+{
+  "initial_model_status": "NOT_RETROSPECTIVELY_CAPTURED",
+  "reason": "Capturing pre-step tensors would require modifying or instrumenting the immutable exact PR33 launcher; this was not needed after exact A/B baseline reproduction.",
+  "final_checkpoint_evidence": "server initial_state/final_checkpoint_tensor_identity.json",
+  "final_gaussian_count": {"exact_a": 340851, "exact_b": 345238},
+  "classification": "INITIAL_MODEL_UNRESOLVED_NONCRITICAL"
+}

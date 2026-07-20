@@ -1,0 +1,57 @@
+{
+  "c3_10k_checkpoint": {
+    "exists": true,
+    "expected_match": null,
+    "expected_sha256": null,
+    "path": "/disk1/zlab/maintenance_records/tum_map_geometry_root_cause_repair_v1/final_candidate/C3_METRIC_SEED_PLUS_DEPTH_10000/NONFORMAL_C3_METRIC_SEED_PLUS_DEPTH/splatfacto/seed20260716_10000/nerfstudio_models/step-000009999.ckpt",
+    "readable": true,
+    "sha256": "2664eaac88ddc60a952dd7f6f07d7ac45455f3586dde9066293a8d91d3b9643c",
+    "size": 309753874
+  },
+  "c3_3k_checkpoint": {
+    "exists": true,
+    "expected_match": null,
+    "expected_sha256": null,
+    "path": "/disk1/zlab/maintenance_records/tum_map_geometry_root_cause_repair_v1/candidates/C3_METRIC_SEED_PLUS_DEPTH/screen3000_depth_wrapper_retry2/NONFORMAL_C3_METRIC_SEED_PLUS_DEPTH/splatfacto/seed20260716_03000/nerfstudio_models/step-000002999.ckpt",
+    "readable": true,
+    "sha256": "022e499fc5395d4db674d134fae1801d40d26757c813138b5c904c4c1c5503a1",
+    "size": 254543506
+  },
+  "first_four_all_match": true,
+  "metric_seed": {
+    "exists": true,
+    "expected_match": true,
+    "expected_sha256": "c5d69bbc965f16147842ad9813eca6d41d9556dd6af602e5b5049402a12e8b56",
+    "path": "/disk1/zlab/maintenance_records/tum_map_geometry_root_cause_repair_v1/metric_seed_points/tum_fr1_room_metric_seed_points.npz",
+    "readable": true,
+    "sha256": "c5d69bbc965f16147842ad9813eca6d41d9556dd6af602e5b5049402a12e8b56",
+    "size": 5153952
+  },
+  "transforms": {
+    "exists": true,
+    "expected_match": true,
+    "expected_sha256": "b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a",
+    "path": "/disk1/zlab/cross_dataset_assets/processed/tum_rgbd/freiburg1_room/transforms.json",
+    "readable": true,
+    "sha256": "b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a",
+    "size": 178374
+  },
+  "v1r6_checkpoint": {
+    "exists": true,
+    "expected_match": true,
+    "expected_sha256": "4941bf1faba1aed31949ee4114898c0eec33ff1a46b7bcadad6d06f5f647ae6b",
+    "path": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1r6/splatfacto/20260717_070309/nerfstudio_models/step-000029999.ckpt",
+    "readable": true,
+    "sha256": "4941bf1faba1aed31949ee4114898c0eec33ff1a46b7bcadad6d06f5f647ae6b",
+    "size": 491777938
+  },
+  "v1r6_config": {
+    "exists": true,
+    "expected_match": true,
+    "expected_sha256": "c9a103c38483f76aed4701489084347566c2437719ae54ea962017469c708cfe",
+    "path": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1r6/splatfacto/20260717_070309/config.yml",
+    "readable": true,
+    "sha256": "c9a103c38483f76aed4701489084347566c2437719ae54ea962017469c708cfe",
+    "size": 7779
+  }
+}

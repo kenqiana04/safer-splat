@@ -1,0 +1,514 @@
+{
+  "comparisons": [
+    {
+      "basename": "audit_splatfacto_depth_objective.py",
+      "category": "CONFIRMED_SEMANTIC",
+      "pr33": {
+        "ast_normalized_sha256": "3ba12ea08b0bf36fc4fb55764cda5ff9bd4de48b76dadebef5bca145ff981f10",
+        "git_blob_sha": "8f239ca9623d34db88858f4ee40b2992992cb754",
+        "imports": [],
+        "line_count": 6,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/audit_splatfacto_depth_objective.py",
+        "sha256": "455bf39968aabdc528734e435aae3601b3d88fca39b8b18f6216b3b2b5c06208",
+        "top_level_inventory": []
+      },
+      "pr34": null,
+      "status": "only_one_protocol"
+    },
+    {
+      "basename": "audit_tum_rgbd_data_chain.py",
+      "category": "CONFIRMED_SEMANTIC",
+      "pr33": {
+        "ast_normalized_sha256": "df6c172d44e1b71353cbaea0c12615983802091368af8bf856dd3c037ddf525e",
+        "git_blob_sha": "eb2627d1f1cfd316adc6377edf9937781cf00697",
+        "imports": [
+          "pathlib"
+        ],
+        "line_count": 11,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/audit_tum_rgbd_data_chain.py",
+        "sha256": "6774d9e9f1e75b4d7918c8b55ea2e0a5fc4d69fd595e93125c331d3eaa30d287",
+        "top_level_inventory": []
+      },
+      "pr34": null,
+      "status": "only_one_protocol"
+    },
+    {
+      "basename": "audit_v1r6_initialization.py",
+      "category": "CONFIRMED_SEMANTIC",
+      "pr33": {
+        "ast_normalized_sha256": "a071f28b39bb07d324b9cadb89fe2d993b6a42e8a7c62c58cf6aa157d5a60681",
+        "git_blob_sha": "c19915b59d5228a1d0cc19da8495c1ea3a0dad7b",
+        "imports": [
+          "pathlib"
+        ],
+        "line_count": 7,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/audit_v1r6_initialization.py",
+        "sha256": "f4f2f669d0b173c485bdde8880b8c3cbec7a4c496ecef5e8d5c315afa4ee83f2",
+        "top_level_inventory": []
+      },
+      "pr34": null,
+      "status": "only_one_protocol"
+    },
+    {
+      "basename": "build_tum_metric_seed_points.py",
+      "category": "CONFIRMED_SEMANTIC",
+      "pr33": {
+        "ast_normalized_sha256": "5e196c3c70bab153734dc7c8163d5bb8b4dfc3aba708e485323861b17111754e",
+        "git_blob_sha": "32fa86ddf8fb2d5c97585299ab233dafc96df8a8",
+        "imports": [],
+        "line_count": 6,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/build_tum_metric_seed_points.py",
+        "sha256": "5cd83a879dfc826449cadfa6c76467bc59261fe53b894d8bb98310052adb72bc",
+        "top_level_inventory": []
+      },
+      "pr34": null,
+      "status": "only_one_protocol"
+    },
+    {
+      "basename": "compare_depth_rendering_semantics.py",
+      "category": "CONFIRMED_SEMANTIC",
+      "pr33": {
+        "ast_normalized_sha256": "f54059c57fe436b7084a4f8a33c648dd592183432e14be2251267f8107165af9",
+        "git_blob_sha": "c4a5b97b1a687091199a0e099e8eee7c64c13e35",
+        "imports": [],
+        "line_count": 9,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/compare_depth_rendering_semantics.py",
+        "sha256": "998197cedc78210ce8dc2956db9b2f3f28eb6b8a464903d2b41dbf7bf64eca12",
+        "top_level_inventory": []
+      },
+      "pr34": null,
+      "status": "only_one_protocol"
+    },
+    {
+      "basename": "evaluate_metric_depth.py",
+      "category": "CONFIRMED_SEMANTIC",
+      "pr33": {
+        "ast_normalized_sha256": "d38c2763a03d2ca94a857f7c0b6be76bcd32d3b074190a9626969d99f917ede4",
+        "git_blob_sha": "300396e69eef31141c2a27971056a49c299494c6",
+        "imports": [],
+        "line_count": 3,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/evaluate_metric_depth.py",
+        "sha256": "ee29341c82efd979872298f76df232e04aa79e90975aabed6e2be37b0a6ad405",
+        "top_level_inventory": []
+      },
+      "pr34": null,
+      "status": "only_one_protocol"
+    },
+    {
+      "basename": "launch_nonformal_repair_candidate.py",
+      "category": "CONFIRMED_SEMANTIC",
+      "pr33": {
+        "ast_normalized_sha256": "fc0b457ebda943bf7b41755ef5e4cc52b56400b170af283f21c2b1a60ceac3f0",
+        "git_blob_sha": "ed340b003a331ba909364f691a441bc063ae04b6",
+        "imports": [
+          "__future__",
+          "argparse",
+          "copy",
+          "json",
+          "pathlib",
+          "yaml",
+          "nerfstudio.engine.trainer",
+          "tum_metric_depth_splatfacto",
+          "tum_metric_seed_dataparser"
+        ],
+        "line_count": 78,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/launch_nonformal_repair_candidate.py",
+        "sha256": "b01c0e05bb618caac3faa025526064fa21b089d0e1e793890f960b59aed28acb",
+        "top_level_inventory": [
+          "configure",
+          "main"
+        ]
+      },
+      "pr34": null,
+      "status": "only_one_protocol"
+    },
+    {
+      "basename": "launch_tum_metric_geometry_refinement.py",
+      "category": "CONFIRMED_SEMANTIC",
+      "pr33": null,
+      "pr34": {
+        "ast_normalized_sha256": "0f9b2914acffa0dd304384762fdc7118e8c0a3fe3cd013f8ee11d776de467d33",
+        "git_blob_sha": "0297bd14dd5e671c35041d762c3dbef0fa20e56a",
+        "imports": [
+          "__future__",
+          "argparse",
+          "copy",
+          "pathlib",
+          "yaml",
+          "nerfstudio.engine.trainer",
+          "tum_metric_seed_dataparser",
+          "tum_metric_geometry_refinement_model"
+        ],
+        "line_count": 50,
+        "path": "reproduction/cross_dataset/tum_metric_geometry_repair_refinement_v1/launch_tum_metric_geometry_refinement.py",
+        "sha256": "abbb784dc6664818325dadc15e4e742f1089f0ab368db2961f87931fd209615b",
+        "top_level_inventory": [
+          "configure",
+          "main"
+        ]
+      },
+      "status": "only_one_protocol"
+    },
+    {
+      "basename": "test_tum_metric_depth_splatfacto.py",
+      "category": "CONFIRMED_SEMANTIC",
+      "pr33": {
+        "ast_normalized_sha256": "f7a9ee9492635041b27a3ec397764f7d0f34e82b107b64aa2bec93ac920cfd24",
+        "git_blob_sha": "15bbef67d05e2d3c21d127e28b23253fe61f9849",
+        "imports": [
+          "__future__",
+          "torch",
+          "tum_metric_depth_splatfacto"
+        ],
+        "line_count": 20,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/test_tum_metric_depth_splatfacto.py",
+        "sha256": "2df448e49e8182386f51f1801020725d692d948cf7338f6a3bddc3b0702c866e",
+        "top_level_inventory": [
+          "test_metric_depth_loss_contract"
+        ]
+      },
+      "pr34": null,
+      "status": "only_one_protocol"
+    },
+    {
+      "basename": "test_tum_metric_geometry_refinement.py",
+      "category": "CONFIRMED_SEMANTIC",
+      "pr33": null,
+      "pr34": {
+        "ast_normalized_sha256": "44686a79b4e3520f828e3ca53f4ff5e651e591e14f249bf7922c91b57c8c2a82",
+        "git_blob_sha": "3cd9c92eae6f1d1dbaca45d5772b606183fc967b",
+        "imports": [
+          "torch",
+          "tum_metric_geometry_refinement_model"
+        ],
+        "line_count": 11,
+        "path": "reproduction/cross_dataset/tum_metric_geometry_repair_refinement_v1/test_tum_metric_geometry_refinement.py",
+        "sha256": "a8af7b6bfa7d8870ea02fa07853a537b8a356dccbc7e20382cc0cf0316244c73",
+        "top_level_inventory": [
+          "test_schedule_contract_and_gradients"
+        ]
+      },
+      "status": "only_one_protocol"
+    },
+    {
+      "basename": "test_tum_metric_seed_dataparser.py",
+      "category": "CONFIRMED_SEMANTIC",
+      "pr33": {
+        "ast_normalized_sha256": "e33ee1948d9dfc0dd6528c40b349d468c23873573d0fb197bc65a185173fb49e",
+        "git_blob_sha": "3cc2a598a2734e8199ec5ae496189842be650bfc",
+        "imports": [
+          "__future__",
+          "numpy"
+        ],
+        "line_count": 12,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/test_tum_metric_seed_dataparser.py",
+        "sha256": "f1cbf2ed4ec5200d39ef5e18536548d7ed74c79d1871cc4baa0f538c5ea86322",
+        "top_level_inventory": [
+          "test_seed_npz_is_train_only_contract"
+        ]
+      },
+      "pr34": null,
+      "status": "only_one_protocol"
+    },
+    {
+      "basename": "tum_metric_depth_splatfacto.py",
+      "category": "CONFIRMED_SEMANTIC",
+      "pr33": {
+        "ast_normalized_sha256": "647f8bd206e3a22748abdb77d7b7aaf190294b69b341e1fdbf16ee5262bf94b5",
+        "git_blob_sha": "8fced30c147a115e306aa2f0ff14290aa786bf2b",
+        "imports": [
+          "__future__",
+          "dataclasses",
+          "pathlib",
+          "typing",
+          "imageio.v3",
+          "torch",
+          "torch.nn.functional",
+          "nerfstudio.models.splatfacto"
+        ],
+        "line_count": 57,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/tum_metric_depth_splatfacto.py",
+        "sha256": "09504a710e89c0209ada03059af31acf66cc7fde0f09a998d98079e655855afe",
+        "top_level_inventory": [
+          "metric_depth_huber_loss",
+          "TumMetricDepthSplatfactoConfig",
+          "TumMetricDepthSplatfactoModel"
+        ]
+      },
+      "pr34": null,
+      "status": "only_one_protocol"
+    },
+    {
+      "basename": "tum_metric_geometry_refinement_model.py",
+      "category": "CONFIRMED_SEMANTIC",
+      "pr33": null,
+      "pr34": {
+        "ast_normalized_sha256": "3c9c81d8ec2815d4245593b6bd41c31efc275f2c54f513d5b3933b7e15fd30fc",
+        "git_blob_sha": "e3cdcf118aa1e8afd7067e607dd8037e38eb8bf6",
+        "imports": [
+          "__future__",
+          "json",
+          "time",
+          "dataclasses",
+          "pathlib",
+          "typing",
+          "torch",
+          "tum_metric_depth_splatfacto"
+        ],
+        "line_count": 86,
+        "path": "reproduction/cross_dataset/tum_metric_geometry_repair_refinement_v1/tum_metric_geometry_refinement_model.py",
+        "sha256": "75d037bd0b0e7d527f22cb9ea46707229e14dad507c41b1f8982b26322e5952c",
+        "top_level_inventory": [
+          "scheduled_depth_lambda",
+          "TumMetricGeometryRefinementConfig",
+          "TumMetricGeometryRefinementModel"
+        ]
+      },
+      "status": "only_one_protocol"
+    },
+    {
+      "basename": "tum_metric_seed_dataparser.py",
+      "category": "CONFIRMED_SEMANTIC",
+      "pr33": {
+        "ast_normalized_sha256": "a9c4a03dd9dbfb101d7544f82c6a8ce36810010091a4ae1980a395e6432b20fd",
+        "git_blob_sha": "42e6dcda2bbee6afd98c8c8265d40f80c8f359bf",
+        "imports": [
+          "__future__",
+          "dataclasses",
+          "pathlib",
+          "typing",
+          "numpy",
+          "torch",
+          "nerfstudio.configs.base_config",
+          "nerfstudio.data.dataparsers.base_dataparser"
+        ],
+        "line_count": 39,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/tum_metric_seed_dataparser.py",
+        "sha256": "ac8fcf5e537bbadaf7279dd82da88c1c7def36e728cdc21208ac63d5ff37203f",
+        "top_level_inventory": [
+          "TumMetricSeedDataParserConfig",
+          "TumMetricSeedDataParser"
+        ]
+      },
+      "pr34": null,
+      "status": "only_one_protocol"
+    }
+  ],
+  "pr33_commit": "fe78814ca0b9e7c840aa99214fa6cd41e4021c5e",
+  "pr34_commit": "e5a61d58ace537494a7f00839b60b1fae306da01",
+  "snapshots": {
+    "pr33_exact": [
+      {
+        "ast_normalized_sha256": "3ba12ea08b0bf36fc4fb55764cda5ff9bd4de48b76dadebef5bca145ff981f10",
+        "git_blob_sha": "8f239ca9623d34db88858f4ee40b2992992cb754",
+        "imports": [],
+        "line_count": 6,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/audit_splatfacto_depth_objective.py",
+        "sha256": "455bf39968aabdc528734e435aae3601b3d88fca39b8b18f6216b3b2b5c06208",
+        "top_level_inventory": []
+      },
+      {
+        "ast_normalized_sha256": "df6c172d44e1b71353cbaea0c12615983802091368af8bf856dd3c037ddf525e",
+        "git_blob_sha": "eb2627d1f1cfd316adc6377edf9937781cf00697",
+        "imports": [
+          "pathlib"
+        ],
+        "line_count": 11,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/audit_tum_rgbd_data_chain.py",
+        "sha256": "6774d9e9f1e75b4d7918c8b55ea2e0a5fc4d69fd595e93125c331d3eaa30d287",
+        "top_level_inventory": []
+      },
+      {
+        "ast_normalized_sha256": "a071f28b39bb07d324b9cadb89fe2d993b6a42e8a7c62c58cf6aa157d5a60681",
+        "git_blob_sha": "c19915b59d5228a1d0cc19da8495c1ea3a0dad7b",
+        "imports": [
+          "pathlib"
+        ],
+        "line_count": 7,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/audit_v1r6_initialization.py",
+        "sha256": "f4f2f669d0b173c485bdde8880b8c3cbec7a4c496ecef5e8d5c315afa4ee83f2",
+        "top_level_inventory": []
+      },
+      {
+        "ast_normalized_sha256": "5e196c3c70bab153734dc7c8163d5bb8b4dfc3aba708e485323861b17111754e",
+        "git_blob_sha": "32fa86ddf8fb2d5c97585299ab233dafc96df8a8",
+        "imports": [],
+        "line_count": 6,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/build_tum_metric_seed_points.py",
+        "sha256": "5cd83a879dfc826449cadfa6c76467bc59261fe53b894d8bb98310052adb72bc",
+        "top_level_inventory": []
+      },
+      {
+        "ast_normalized_sha256": "f54059c57fe436b7084a4f8a33c648dd592183432e14be2251267f8107165af9",
+        "git_blob_sha": "c4a5b97b1a687091199a0e099e8eee7c64c13e35",
+        "imports": [],
+        "line_count": 9,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/compare_depth_rendering_semantics.py",
+        "sha256": "998197cedc78210ce8dc2956db9b2f3f28eb6b8a464903d2b41dbf7bf64eca12",
+        "top_level_inventory": []
+      },
+      {
+        "ast_normalized_sha256": "d38c2763a03d2ca94a857f7c0b6be76bcd32d3b074190a9626969d99f917ede4",
+        "git_blob_sha": "300396e69eef31141c2a27971056a49c299494c6",
+        "imports": [],
+        "line_count": 3,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/evaluate_metric_depth.py",
+        "sha256": "ee29341c82efd979872298f76df232e04aa79e90975aabed6e2be37b0a6ad405",
+        "top_level_inventory": []
+      },
+      {
+        "ast_normalized_sha256": "fc0b457ebda943bf7b41755ef5e4cc52b56400b170af283f21c2b1a60ceac3f0",
+        "git_blob_sha": "ed340b003a331ba909364f691a441bc063ae04b6",
+        "imports": [
+          "__future__",
+          "argparse",
+          "copy",
+          "json",
+          "pathlib",
+          "yaml",
+          "nerfstudio.engine.trainer",
+          "tum_metric_depth_splatfacto",
+          "tum_metric_seed_dataparser"
+        ],
+        "line_count": 78,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/launch_nonformal_repair_candidate.py",
+        "sha256": "b01c0e05bb618caac3faa025526064fa21b089d0e1e793890f960b59aed28acb",
+        "top_level_inventory": [
+          "configure",
+          "main"
+        ]
+      },
+      {
+        "ast_normalized_sha256": "f7a9ee9492635041b27a3ec397764f7d0f34e82b107b64aa2bec93ac920cfd24",
+        "git_blob_sha": "15bbef67d05e2d3c21d127e28b23253fe61f9849",
+        "imports": [
+          "__future__",
+          "torch",
+          "tum_metric_depth_splatfacto"
+        ],
+        "line_count": 20,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/test_tum_metric_depth_splatfacto.py",
+        "sha256": "2df448e49e8182386f51f1801020725d692d948cf7338f6a3bddc3b0702c866e",
+        "top_level_inventory": [
+          "test_metric_depth_loss_contract"
+        ]
+      },
+      {
+        "ast_normalized_sha256": "e33ee1948d9dfc0dd6528c40b349d468c23873573d0fb197bc65a185173fb49e",
+        "git_blob_sha": "3cc2a598a2734e8199ec5ae496189842be650bfc",
+        "imports": [
+          "__future__",
+          "numpy"
+        ],
+        "line_count": 12,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/test_tum_metric_seed_dataparser.py",
+        "sha256": "f1cbf2ed4ec5200d39ef5e18536548d7ed74c79d1871cc4baa0f538c5ea86322",
+        "top_level_inventory": [
+          "test_seed_npz_is_train_only_contract"
+        ]
+      },
+      {
+        "ast_normalized_sha256": "647f8bd206e3a22748abdb77d7b7aaf190294b69b341e1fdbf16ee5262bf94b5",
+        "git_blob_sha": "8fced30c147a115e306aa2f0ff14290aa786bf2b",
+        "imports": [
+          "__future__",
+          "dataclasses",
+          "pathlib",
+          "typing",
+          "imageio.v3",
+          "torch",
+          "torch.nn.functional",
+          "nerfstudio.models.splatfacto"
+        ],
+        "line_count": 57,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/tum_metric_depth_splatfacto.py",
+        "sha256": "09504a710e89c0209ada03059af31acf66cc7fde0f09a998d98079e655855afe",
+        "top_level_inventory": [
+          "metric_depth_huber_loss",
+          "TumMetricDepthSplatfactoConfig",
+          "TumMetricDepthSplatfactoModel"
+        ]
+      },
+      {
+        "ast_normalized_sha256": "a9c4a03dd9dbfb101d7544f82c6a8ce36810010091a4ae1980a395e6432b20fd",
+        "git_blob_sha": "42e6dcda2bbee6afd98c8c8265d40f80c8f359bf",
+        "imports": [
+          "__future__",
+          "dataclasses",
+          "pathlib",
+          "typing",
+          "numpy",
+          "torch",
+          "nerfstudio.configs.base_config",
+          "nerfstudio.data.dataparsers.base_dataparser"
+        ],
+        "line_count": 39,
+        "path": "reproduction/cross_dataset/tum_map_geometry_root_cause_repair_v1/tum_metric_seed_dataparser.py",
+        "sha256": "ac8fcf5e537bbadaf7279dd82da88c1c7def36e728cdc21208ac63d5ff37203f",
+        "top_level_inventory": [
+          "TumMetricSeedDataParserConfig",
+          "TumMetricSeedDataParser"
+        ]
+      }
+    ],
+    "pr34_exact": [
+      {
+        "ast_normalized_sha256": "0f9b2914acffa0dd304384762fdc7118e8c0a3fe3cd013f8ee11d776de467d33",
+        "git_blob_sha": "0297bd14dd5e671c35041d762c3dbef0fa20e56a",
+        "imports": [
+          "__future__",
+          "argparse",
+          "copy",
+          "pathlib",
+          "yaml",
+          "nerfstudio.engine.trainer",
+          "tum_metric_seed_dataparser",
+          "tum_metric_geometry_refinement_model"
+        ],
+        "line_count": 50,
+        "path": "reproduction/cross_dataset/tum_metric_geometry_repair_refinement_v1/launch_tum_metric_geometry_refinement.py",
+        "sha256": "abbb784dc6664818325dadc15e4e742f1089f0ab368db2961f87931fd209615b",
+        "top_level_inventory": [
+          "configure",
+          "main"
+        ]
+      },
+      {
+        "ast_normalized_sha256": "44686a79b4e3520f828e3ca53f4ff5e651e591e14f249bf7922c91b57c8c2a82",
+        "git_blob_sha": "3cd9c92eae6f1d1dbaca45d5772b606183fc967b",
+        "imports": [
+          "torch",
+          "tum_metric_geometry_refinement_model"
+        ],
+        "line_count": 11,
+        "path": "reproduction/cross_dataset/tum_metric_geometry_repair_refinement_v1/test_tum_metric_geometry_refinement.py",
+        "sha256": "a8af7b6bfa7d8870ea02fa07853a537b8a356dccbc7e20382cc0cf0316244c73",
+        "top_level_inventory": [
+          "test_schedule_contract_and_gradients"
+        ]
+      },
+      {
+        "ast_normalized_sha256": "3c9c81d8ec2815d4245593b6bd41c31efc275f2c54f513d5b3933b7e15fd30fc",
+        "git_blob_sha": "e3cdcf118aa1e8afd7067e607dd8037e38eb8bf6",
+        "imports": [
+          "__future__",
+          "json",
+          "time",
+          "dataclasses",
+          "pathlib",
+          "typing",
+          "torch",
+          "tum_metric_depth_splatfacto"
+        ],
+        "line_count": 86,
+        "path": "reproduction/cross_dataset/tum_metric_geometry_repair_refinement_v1/tum_metric_geometry_refinement_model.py",
+        "sha256": "75d037bd0b0e7d527f22cb9ea46707229e14dad507c41b1f8982b26322e5952c",
+        "top_level_inventory": [
+          "scheduled_depth_lambda",
+          "TumMetricGeometryRefinementConfig",
+          "TumMetricGeometryRefinementModel"
+        ]
+      }
+    ]
+  }
+}
