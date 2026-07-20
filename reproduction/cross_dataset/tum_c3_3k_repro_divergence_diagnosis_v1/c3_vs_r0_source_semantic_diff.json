@@ -1,0 +1,11 @@
+{
+  "pr33_commit": "fe78814ca0b9e7c840aa99214fa6cd41e4021c5e",
+  "pr34_commit": "e5a61d58ace537494a7f00839b60b1fae306da01",
+  "confirmed_semantic_differences": [
+    "PR34 introduces TumMetricGeometryRefinementModel as a new subclass of PR33 TumMetricDepthSplatfactoModel.",
+    "The new get_loss_dict performs schedule handling and CPU scalar extraction on every step.",
+    "The new step_post_backward has a different control path and calls JSONL instrumentation with CUDA-memory, quantile, and gradient reads.",
+    "R0 chooses CONSTANT_010 and STOCK_REFINEMENT, but still executes the new wrapper methods and has a nonempty instrumentation_path."
+  ],
+  "result": "R0_WRAPPER_SEMANTIC_DRIFT_CONFIRMED_AT_SOURCE_LEVEL"
+}

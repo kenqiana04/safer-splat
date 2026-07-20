@@ -1,0 +1,9 @@
+{
+  "status": "FRESH_START_CONFIRMED",
+  "evidence": [
+    "C3_METRIC_SEED_PLUS_DEPTH_screen3000_depth_wrapper_retry2.log line 6: No Nerfstudio checkpoint to load, so training from scratch.",
+    "retry2 used a distinct output root and emitted step-000002999.ckpt.",
+    "No load_dir, load_checkpoint, or load_step is set by the immutable PR33 launcher."
+  ],
+  "resume_or_state_reuse": false
+}

@@ -1,0 +1,6 @@
+{
+  "status": "NOT_RETROSPECTIVELY_CAPTURED",
+  "first_divergence_position": null,
+  "reason": "The immutable PR33 launcher has no camera-sequence instrumentation. No extra instrumented replay was authorized after the exact baseline gate passed.",
+  "impact": "noncritical: both exact replays reproduce the frozen C3 baseline within preregistered tolerance"
+}

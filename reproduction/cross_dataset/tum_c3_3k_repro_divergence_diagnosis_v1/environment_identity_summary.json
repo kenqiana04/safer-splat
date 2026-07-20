@@ -1,0 +1,18 @@
+{
+  "hostname": "zlab-Super-Server",
+  "python": "3.10.20",
+  "torch": "2.1.2+cu118",
+  "torch_cuda": "11.8",
+  "gsplat": "1.4.0+pt21cu118",
+  "cuda_home": "/usr/local/cuda",
+  "CUDA_VISIBLE_DEVICES": "1",
+  "deterministic_algorithms": false,
+  "cudnn_deterministic": false,
+  "cudnn_benchmark": false,
+  "matmul_allow_tf32": false,
+  "cudnn_allow_tf32": true,
+  "CUBLAS_WORKSPACE_CONFIG": null,
+  "PYTHONHASHSEED": null,
+  "CUDA_LAUNCH_BLOCKING": null,
+  "physical_gpu": {"index": 1, "uuid": "GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d", "driver": "525.147.05", "name": "NVIDIA GeForce RTX 4090", "memory_total_mib": 24564}
+}

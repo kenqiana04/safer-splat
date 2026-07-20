@@ -1,0 +1,72 @@
+{
+  "exact_replay": {
+    "a": {
+      "checkpoint": "/disk1/zlab/maintenance_records/tum_c3_3k_repro_divergence_diagnosis_v1/exact_replay_a/NONFORMAL_C3_METRIC_SEED_PLUS_DEPTH/splatfacto/seed20260716_03000/nerfstudio_models/step-000002999.ckpt",
+      "metrics": {
+        "AbsRel": 0.3436534337170453,
+        "delta_1_25": 0.4353742532829073,
+        "median_predicted_over_gt_depth_ratio": 1.005024790763855
+      },
+      "sha256": "3b47e76a5b829a8eebbbe16c6d9fec5d1920f7c457e037eee41f496faaee70d3",
+      "state": {
+        "gaussian_count": 340851,
+        "step": 2999,
+        "tensor_entries": 27,
+        "tensor_sha256": {
+          "_model.gauss_params.features_dc": "f27dc4877aeb429ebe68fa1a6a3147c873b60f73770bacf0940dc468dfbd724c",
+          "_model.gauss_params.means": "eeb842c8fe956a2b1a4c6ad47fd587c4e51c6e741da62f93723638b9613c2f66",
+          "_model.gauss_params.opacities": "c33130bbebc08e6a085f8788baaa8bb159cd2fc5971a63d59366bda99669d988",
+          "_model.gauss_params.quats": "ce5b80d40e92cfb2bdac04984546b540813dd0caf88c28b44a2b53a42c7be523",
+          "_model.gauss_params.scales": "47bed0a09bb5f3d707875a2d454fe130242c1b09bc37a187cc3cd3b727000851"
+        }
+      }
+    },
+    "a_minus_b": {
+      "AbsRel": 0.008089801188492063,
+      "delta_1_25": -0.0037746209149973065,
+      "median_predicted_over_gt_depth_ratio": 0.010548830032348633
+    },
+    "a_minus_frozen": {
+      "AbsRel": 0.010691553039100243,
+      "delta_1_25": -0.02149965819212818,
+      "median_predicted_over_gt_depth_ratio": 0.0008387565612792969
+    },
+    "all_within_tolerance": true,
+    "b": {
+      "checkpoint": "/disk1/zlab/maintenance_records/tum_c3_3k_repro_divergence_diagnosis_v1/exact_replay_b/NONFORMAL_C3_METRIC_SEED_PLUS_DEPTH/splatfacto/seed20260716_03000/nerfstudio_models/step-000002999.ckpt",
+      "metrics": {
+        "AbsRel": 0.33556363252855326,
+        "delta_1_25": 0.4391488741979046,
+        "median_predicted_over_gt_depth_ratio": 0.9944759607315063
+      },
+      "sha256": "6ae50e730e9be9cd1c3f2867d4d26a465b15925e1ad72ee8f8ed36964d743d67",
+      "state": {
+        "gaussian_count": 345238,
+        "step": 2999,
+        "tensor_entries": 27,
+        "tensor_sha256": {
+          "_model.gauss_params.features_dc": "fbc1fad3390c514ceb69632179d7c2ab7abb9ea85b9a20cd098b832e88bbd14c",
+          "_model.gauss_params.means": "a9263e3e160052333f01b59fc8a81f805cb99bff082e80defdf6a7b71154de9e",
+          "_model.gauss_params.opacities": "6c7f0cc81d05bac217e3bea6051b584a1b22da2a700111b303bd52f305c847f0",
+          "_model.gauss_params.quats": "af5c55a53fd28f7744b82d096ee284fc5a566370ed0152f7f53e2832b79926b1",
+          "_model.gauss_params.scales": "2ecd25045dc4a2a81f4d13c3660edf34173dafd74cedabc3454905c893320bfd"
+        }
+      }
+    },
+    "b_minus_frozen": {
+      "AbsRel": 0.0026017518506081805,
+      "delta_1_25": -0.017725037277130873,
+      "median_predicted_over_gt_depth_ratio": -0.009710073471069336
+    },
+    "frozen_metrics": {
+      "AbsRel": 0.3329618806779451,
+      "delta_1_25": 0.4568739114750355,
+      "median_predicted_over_gt_depth_ratio": 1.0041860342025757
+    },
+    "tolerance": {
+      "AbsRel": 0.02,
+      "delta_1_25": 0.03,
+      "median_predicted_over_gt_depth_ratio": 0.05
+    }
+  }
+}
