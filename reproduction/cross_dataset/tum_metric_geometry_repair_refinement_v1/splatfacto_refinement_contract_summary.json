@@ -1,0 +1,11 @@
+{
+  "class": "nerfstudio.models.splatfacto.SplatfactoModel",
+  "gsplat_strategy": "gsplat.strategy.default.DefaultStrategy.step_post_backward",
+  "model_callback": "step_post_backward",
+  "model_source": "splatfacto.py:241-245, 760+",
+  "refine_every": 100,
+  "refine_start_iter": 500,
+  "refine_stop_iter": 15000,
+  "reset_every": 3000,
+  "semantics": "After backward, stock strategy updates state; after warmup it grows (duplicate/split), prunes, resets statistics, and resets opacity every reset_every."
+}
