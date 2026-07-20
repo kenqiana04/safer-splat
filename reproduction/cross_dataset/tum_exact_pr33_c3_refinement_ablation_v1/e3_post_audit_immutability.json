@@ -1,0 +1,23 @@
+{
+  "all_hashes_unchanged": true,
+  "checks": {
+    "checkpoint": true,
+    "e3_model_file": true,
+    "e3_reconstructed_config": true,
+    "e3_source_manifest": true,
+    "metric_seed": true,
+    "transforms": true,
+    "v1r6_base_config": true
+  },
+  "gpu_release_check_deferred_to_wrapper": true,
+  "no_new_checkpoint": true,
+  "no_optimizer_step": true,
+  "no_training_process": true,
+  "post_audit_gpu_release": {
+    "audit_process_present": false,
+    "checked_at_utc": "2026-07-20T09:57:06.198974+00:00",
+    "compute_process_lines": [],
+    "gpu_query": "1, GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d, 6 MiB, 0 %",
+    "released": true
+  }
+}

@@ -1,45 +1,110 @@
 {
-  "all_match": true,
-  "c3_10k": {
-    "expected_sha256": "2664eaac88ddc60a952dd7f6f07d7ac45455f3586dde9066293a8d91d3b9643c",
-    "match": true,
-    "path": "/disk1/zlab/maintenance_records/tum_map_geometry_root_cause_repair_v1/final_candidate/C3_METRIC_SEED_PLUS_DEPTH_10000/NONFORMAL_C3_METRIC_SEED_PLUS_DEPTH/splatfacto/seed20260716_10000/nerfstudio_models/step-000009999.ckpt",
-    "sha256": "2664eaac88ddc60a952dd7f6f07d7ac45455f3586dde9066293a8d91d3b9643c",
-    "size": 309753874
+  "checkpoint": {
+    "exists": true,
+    "mtime_ns": 1784538375116384586,
+    "path": "/disk1/zlab/maintenance_records/tum_exact_pr33_c3_refinement_ablation_v1/final_candidate/E3_LATE_DEPTH_HOLD_AND_LOCK_10000/NONFORMAL_C3_METRIC_SEED_PLUS_DEPTH/splatfacto/seed20260716_10000/nerfstudio_models/step-000009999.ckpt",
+    "sha256": "92e801681afe3f4d62f6679efc3251db6b9c09a6a118f986bf47b730e9bfdc87",
+    "size": 244115602
   },
-  "c3_3k": {
-    "expected_sha256": "022e499fc5395d4db674d134fae1801d40d26757c813138b5c904c4c1c5503a1",
-    "match": true,
-    "path": "/disk1/zlab/maintenance_records/tum_map_geometry_root_cause_repair_v1/candidates/C3_METRIC_SEED_PLUS_DEPTH/screen3000_depth_wrapper_retry2/NONFORMAL_C3_METRIC_SEED_PLUS_DEPTH/splatfacto/seed20260716_03000/nerfstudio_models/step-000002999.ckpt",
-    "sha256": "022e499fc5395d4db674d134fae1801d40d26757c813138b5c904c4c1c5503a1",
-    "size": 254543506
+  "checks": {
+    "checkpoint": true,
+    "e3_source": true,
+    "metric_seed": true,
+    "transforms": true,
+    "v1r6_base_config": true
+  },
+  "e3_config": {
+    "historical_e3_config_retained": false,
+    "launcher": {
+      "exists": true,
+      "mtime_ns": 1784537001803888196,
+      "path": "/disk1/zlab/maintenance_records/tum_exact_pr33_c3_refinement_ablation_v1/source_variants/variants/E3_LATE_DEPTH_HOLD_AND_LOCK/launch_nonformal_repair_candidate.py",
+      "sha256": "b01c0e05bb618caac3faa025526064fa21b089d0e1e793890f960b59aed28acb",
+      "size": 3477
+    },
+    "reconstructed_config": {
+      "exists": true,
+      "mtime_ns": 1784540874399595310,
+      "path": "/disk1/zlab/maintenance_records/tum_exact_pr33_c3_refinement_ablation_v1/g0_completion_audit/tmp/reconstructed_e3_output/E3_STATIC_SAFER_AUDIT_RECONSTRUCTED_CONFIG/splatfacto/static_audit_only/config.yml",
+      "sha256": "4d56ff2314fb5e1956ce9d3052c3c06b406e6e6db184723e1a5c1ea0db877b41",
+      "size": 9210
+    },
+    "reconstruction_method": "frozen V1R6 config + immutable E3 launcher/source + E3 checkpoint load target",
+    "semantic_contract": {
+      "depth_accumulation_threshold": 0.0001,
+      "depth_loss_beta_m": 0.1,
+      "depth_loss_lambda": 0.1,
+      "depth_unit_scale_factor": 0.0002,
+      "late_depth_hold_lambda": 0.3,
+      "late_depth_hold_start": 3000,
+      "load_checkpoint": "/disk1/zlab/maintenance_records/tum_exact_pr33_c3_refinement_ablation_v1/final_candidate/E3_LATE_DEPTH_HOLD_AND_LOCK_10000/NONFORMAL_C3_METRIC_SEED_PLUS_DEPTH/splatfacto/seed20260716_10000/nerfstudio_models/step-000009999.ckpt",
+      "load_dir": "/disk1/zlab/maintenance_records/tum_exact_pr33_c3_refinement_ablation_v1/final_candidate/E3_LATE_DEPTH_HOLD_AND_LOCK_10000/NONFORMAL_C3_METRIC_SEED_PLUS_DEPTH/splatfacto/seed20260716_10000/nerfstudio_models",
+      "load_step": 9999,
+      "max_num_iterations": 10000,
+      "model_class": "tum_metric_depth_splatfacto.TumMetricDepthSplatfactoConfig",
+      "refinement_lock_step": 3000
+    },
+    "task_owned_checkpoint_symlink": {
+      "is_symlink": true,
+      "path": "/disk1/zlab/maintenance_records/tum_exact_pr33_c3_refinement_ablation_v1/g0_completion_audit/tmp/reconstructed_e3_output/E3_STATIC_SAFER_AUDIT_RECONSTRUCTED_CONFIG/splatfacto/static_audit_only/nerfstudio_models/step-000009999.ckpt",
+      "target": "/disk1/zlab/maintenance_records/tum_exact_pr33_c3_refinement_ablation_v1/final_candidate/E3_LATE_DEPTH_HOLD_AND_LOCK_10000/NONFORMAL_C3_METRIC_SEED_PLUS_DEPTH/splatfacto/seed20260716_10000/nerfstudio_models/step-000009999.ckpt"
+    }
+  },
+  "e3_model_file": {
+    "exists": true,
+    "mtime_ns": 1784537001863888370,
+    "path": "/disk1/zlab/maintenance_records/tum_exact_pr33_c3_refinement_ablation_v1/source_variants/variants/E3_LATE_DEPTH_HOLD_AND_LOCK/tum_metric_depth_splatfacto.py",
+    "sha256": "f615e387d3c02dd52930bbfc06b10b6ec171eae5bcca18033e2bfce2442db772",
+    "size": 3486
+  },
+  "e3_source_diff_gate": {
+    "exists": true,
+    "mtime_ns": 1784540867003517275,
+    "path": "/disk1/zlab/maintenance_records/tum_exact_pr33_c3_refinement_ablation_v1/g0_completion_audit/tmp/attempt5_autograd_retry1/candidate_source_diff_gate.json",
+    "sha256": "ea7a9fd4666ee7fd68d48c451575f50ca9ef15c39e1e435c6e4ca54b78efe50d",
+    "size": 1253
+  },
+  "e3_source_manifest": {
+    "exists": true,
+    "mtime_ns": 1784537000903885583,
+    "path": "/disk1/zlab/maintenance_records/tum_exact_pr33_c3_refinement_ablation_v1/source_variants/build_manifest.json",
+    "sha256": "6341e01d9c0d9609ea466199184660eaf9e404e0fee88a6445421a229ddce8d8",
+    "size": 22736
+  },
+  "expected": {
+    "checkpoint": "92e801681afe3f4d62f6679efc3251db6b9c09a6a118f986bf47b730e9bfdc87",
+    "seed": "c5d69bbc965f16147842ad9813eca6d41d9556dd6af602e5b5049402a12e8b56",
+    "source": "96d1fe63019f04824c9dc4949f91d30627344bb8de05cd62ae3d33c2f3944947",
+    "transforms": "b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a",
+    "v1r6_config": "c9a103c38483f76aed4701489084347566c2437719ae54ea962017469c708cfe"
   },
   "metric_seed": {
-    "expected_sha256": "c5d69bbc965f16147842ad9813eca6d41d9556dd6af602e5b5049402a12e8b56",
-    "match": true,
+    "exists": true,
+    "mtime_ns": 1784528464680188588,
     "path": "/disk1/zlab/maintenance_records/tum_map_geometry_root_cause_repair_v1/metric_seed_points/tum_fr1_room_metric_seed_points.npz",
     "sha256": "c5d69bbc965f16147842ad9813eca6d41d9556dd6af602e5b5049402a12e8b56",
     "size": 5153952
   },
+  "pr36_head_before_audit": "6ed4a4501bed7cf61ec9f0605c53bb52f7b10a33",
   "transforms": {
-    "expected_sha256": "b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a",
-    "match": true,
+    "exists": true,
+    "mtime_ns": 1784090238034960189,
     "path": "/disk1/zlab/cross_dataset_assets/processed/tum_rgbd/freiburg1_room/transforms.json",
     "sha256": "b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a",
     "size": 178374
   },
-  "v1r6_checkpoint": {
-    "expected_sha256": "4941bf1faba1aed31949ee4114898c0eec33ff1a46b7bcadad6d06f5f647ae6b",
-    "match": true,
-    "path": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1r6/splatfacto/20260717_070309/nerfstudio_models/step-000029999.ckpt",
-    "sha256": "4941bf1faba1aed31949ee4114898c0eec33ff1a46b7bcadad6d06f5f647ae6b",
-    "size": 491777938
-  },
-  "v1r6_config": {
-    "expected_sha256": "c9a103c38483f76aed4701489084347566c2437719ae54ea962017469c708cfe",
-    "match": true,
+  "v1r6_base_config": {
+    "exists": true,
+    "mtime_ns": 1784272106679764299,
     "path": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1r6/splatfacto/20260717_070309/config.yml",
     "sha256": "c9a103c38483f76aed4701489084347566c2437719ae54ea962017469c708cfe",
     "size": 7779
+  },
+  "v1r6_reference_checkpoint": {
+    "exists": true,
+    "mtime_ns": 1784272808266490250,
+    "path": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1r6/splatfacto/20260717_070309/nerfstudio_models/step-000029999.ckpt",
+    "sha256": "4941bf1faba1aed31949ee4114898c0eec33ff1a46b7bcadad6d06f5f647ae6b",
+    "size": 491777938
   }
 }
