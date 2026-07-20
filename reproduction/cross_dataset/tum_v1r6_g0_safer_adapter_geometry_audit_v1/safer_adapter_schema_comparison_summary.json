@@ -1,0 +1,17 @@
+{
+  "mapping": {
+    "batch_convention": "per-Gaussian N leading dimension",
+    "covariances": "adapter.covariances_world -> GSplatLoader.covs [N,3,3]",
+    "dtype_device": "torch.float32 cuda:0",
+    "ellipsoid_axes": "adapter.scales_world",
+    "filtering": "none",
+    "means": "adapter.means_world -> GSplatLoader.means [N,3]",
+    "opacity": "adapter.opacities -> GSplatLoader.opacities [N,1], sigmoid(raw)",
+    "rotations": "adapter.quaternions_wxyz -> GSplatLoader.rots [N,4], wxyz normalized",
+    "scales": "adapter.scales_world -> GSplatLoader.scales [N,3], exp(raw log-scale)",
+    "units": "raw V1R6 world units; separately checked against metric depth",
+    "world_coordinates": "unchanged Nerfstudio world coordinates"
+  },
+  "status": "PASS_SAFER_SCHEMA_COMPATIBILITY",
+  "unresolved_adapter_fields": []
+}

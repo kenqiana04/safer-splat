@@ -1,0 +1,62 @@
+{
+  "aligned_diagnostic": {
+    "aligned_absrel_from_ratio": 1.9737125635147095,
+    "aligned_delta_1_25_from_ratio": 0.12080979281688124,
+    "aligned_ratio_median": 1.0,
+    "diagnostic_only": "GLOBAL_MEDIAN_SCALE_ALIGNED_DIAGNOSTIC; not used for G0 gate",
+    "global_scale_multiplier_applied_to_prediction": 5.879933081005664,
+    "raw_median_predicted_over_gt_ratio": 0.17006996273994446
+  },
+  "gate_label": "INTERNAL_G0_GEOMETRY_GATE_NOT_A_PUBLIC_BENCHMARK",
+  "geometry_quality_status": "GEOMETRY_INVALID_STOP",
+  "interpretation": "Low RGB metrics alone were not used as a gate. The fixed-frame raw metric depth results independently trigger invalid geometry/scale status.",
+  "passed_conditions": {
+    "expanded_bbox_inclusion_ge_0_95": true,
+    "invalid_covariance_zero": true,
+    "nonfinite_gaussian_zero": true,
+    "raw_depth_valid_overlap_ge_0_90": true,
+    "static_query_finite_deterministic_gradient": true
+  },
+  "raw_depth": {
+    "AbsRel": 0.791195087240712,
+    "RMSE": 1.4457623975669482,
+    "RMSE_log": 2.2437449004162575,
+    "SqRel": 1.1493990536757213,
+    "delta_1_25": 0.061905662166267535,
+    "delta_1_25_cu": 0.1802820135601347,
+    "delta_1_25_sq": 0.12020020460069694,
+    "depth_unit_scale_factor": 0.0002,
+    "frame_count": 60,
+    "median_predicted_over_gt_depth_ratio": 0.17006996273994446,
+    "ranges_gt_meters": {
+      "far": {
+        "AbsRel": 0.835436999797821,
+        "delta_1_25": 0.03701815261824256,
+        "median_predicted_over_gt_ratio": 0.07972507178783417,
+        "pixel_count": 2841849
+      },
+      "mid": {
+        "AbsRel": 0.7668092846870422,
+        "delta_1_25": 0.06183968119701054,
+        "median_predicted_over_gt_ratio": 0.165138840675354,
+        "pixel_count": 8470435
+      },
+      "near": {
+        "AbsRel": 0.8207321166992188,
+        "delta_1_25": 0.08795509957084556,
+        "median_predicted_over_gt_ratio": 0.32788002490997314,
+        "pixel_count": 2736544
+      }
+    },
+    "raw_metric_scale": "no Sim(3), no per-frame scale, fixed all 60 eval frames",
+    "valid_gt_pixel_count": 14048828,
+    "valid_overlap_pixel_count": 14048828,
+    "valid_overlap_ratio": 1.0,
+    "valid_prediction_pixel_count": 18432000
+  },
+  "triggered_conditions": [
+    "raw median predicted/GT depth ratio < 0.50",
+    "raw AbsRel > 0.50",
+    "raw delta_1_25 < 0.50"
+  ]
+}

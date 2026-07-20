@@ -1,0 +1,36 @@
+{
+  "filtering": "none in GSplatLoader; no threshold adjusted",
+  "loader_schema": {
+    "covariances": "N,3,3",
+    "means": "N,3",
+    "opacities": "N,1 activated via sigmoid",
+    "rots": "N,4 wxyz",
+    "scales": "N,3 activated via exp"
+  },
+  "source_contracts": [
+    {
+      "path": "splat/gsplat_utils.py",
+      "semantics": "exp(scales), sigmoid(opacities), compute_cov(wxyz quaternions, scales), h=phi*squared_ellipsoid_surface_distance-(radius+epsilon)^2",
+      "symbols": [
+        "GSplatLoader.load_gsplat_from_nerfstudio:24",
+        "GSplatLoader.query_distance:103"
+      ]
+    },
+    {
+      "path": "ellipsoids/covariance_utils.py",
+      "semantics": "normalizes wxyz quaternion; covariance=R@diag(scale)^2@R.T",
+      "symbols": [
+        "quaternion_to_rotation_matrix:141",
+        "compute_cov:152"
+      ]
+    },
+    {
+      "path": "dynamics/systems.py",
+      "semantics": "3D position+velocity state (6D), but no dynamics instantiated in this audit",
+      "symbols": [
+        "DoubleIntegrator:40"
+      ]
+    }
+  ],
+  "stonehenge_reference_status": "STONEHENGE_REFERENCE_CHECK_NOT_AVAILABLE"
+}

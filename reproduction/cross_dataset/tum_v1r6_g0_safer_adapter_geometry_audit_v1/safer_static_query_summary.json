@@ -1,0 +1,14 @@
+{
+  "active_set_convention": "argmin of official per-Gaussian h; count=1, no CBF/polytope pruning instantiated",
+  "deterministic_exact_repeat": true,
+  "finite": true,
+  "gradient_finite": true,
+  "map_gaussian_count": 680617,
+  "no_controller_no_dynamics_no_qp": true,
+  "out_of_map_behavior": {
+    "finite": true,
+    "point_count": 4
+  },
+  "point_count": 908,
+  "query_function": "splat.gsplat_utils.GSplatLoader.query_distance(distance_type=ball-to-ellipsoid)"
+}

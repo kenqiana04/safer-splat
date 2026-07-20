@@ -1,0 +1,83 @@
+{
+  "deterministic_prefix_1024_sha256": "31df90be1e303ae33d105d03ea3b3f188baee5b639a40e4f471ec8cb660d2fd7",
+  "metadata": {
+    "checkpoint_path": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1r6/splatfacto/20260717_070309/nerfstudio_models/step-000029999.ckpt",
+    "checkpoint_sha256": "4941bf1faba1aed31949ee4114898c0eec33ff1a46b7bcadad6d06f5f647ae6b",
+    "config_class": "nerfstudio.engine.trainer.TrainerConfig",
+    "config_path": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1r6/splatfacto/20260717_070309/config.yml",
+    "config_sha256": "c9a103c38483f76aed4701489084347566c2437719ae54ea962017469c708cfe",
+    "coordinate_frame": "Nerfstudio world coordinates; no axis conversion applied",
+    "covariance_semantics": "R @ diag(scales)^2 @ R.T via ellipsoids.covariance_utils.compute_cov",
+    "device": "cuda:0",
+    "dtype": "torch.float32",
+    "filtering": "none; all extracted Gaussians retained",
+    "gaussian_count": 680617,
+    "loaded_step": 29999,
+    "model_class": "nerfstudio.models.splatfacto.SplatfactoModel",
+    "opacity_semantics": "sigmoid(raw Splatfacto opacities), matching splat/gsplat_utils.py",
+    "pipeline_class": "nerfstudio.pipelines.base_pipeline.VanillaPipeline",
+    "quaternion_order": "wxyz, normalized before covariance construction",
+    "scale_semantics": "exp(raw Splatfacto log-scales), matching splat/gsplat_utils.py",
+    "units": "raw frozen V1R6 world units; metric interpretation is audited separately"
+  },
+  "schema": {
+    "covariances_world": {
+      "device": "cuda:0",
+      "dtype": "torch.float32",
+      "shape": [
+        680617,
+        3,
+        3
+      ]
+    },
+    "features_dc": {
+      "device": "cuda:0",
+      "dtype": "torch.float32",
+      "shape": [
+        680617,
+        3
+      ]
+    },
+    "features_rest": {
+      "device": "cuda:0",
+      "dtype": "torch.float32",
+      "shape": [
+        680617,
+        15,
+        3
+      ]
+    },
+    "means_world": {
+      "device": "cuda:0",
+      "dtype": "torch.float32",
+      "shape": [
+        680617,
+        3
+      ]
+    },
+    "opacities": {
+      "device": "cuda:0",
+      "dtype": "torch.float32",
+      "shape": [
+        680617,
+        1
+      ]
+    },
+    "quaternions_wxyz": {
+      "device": "cuda:0",
+      "dtype": "torch.float32",
+      "shape": [
+        680617,
+        4
+      ]
+    },
+    "scales_world": {
+      "device": "cuda:0",
+      "dtype": "torch.float32",
+      "shape": [
+        680617,
+        3
+      ]
+    }
+  }
+}
