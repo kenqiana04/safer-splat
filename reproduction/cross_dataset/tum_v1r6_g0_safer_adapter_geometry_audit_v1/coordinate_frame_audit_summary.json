@@ -1,0 +1,52 @@
+{
+  "camera_bbox_max": [
+    1.3858000040054321,
+    0.8600000143051147,
+    1.6934000253677368
+  ],
+  "camera_bbox_min": [
+    -1.1555999517440796,
+    -1.3490999937057495,
+    1.1904000043869019
+  ],
+  "camera_inside_expanded_5pct_bbox_ratio": 1.0,
+  "camera_inside_gaussian_bbox_ratio": 1.0,
+  "camera_trajectory_extent": [
+    2.5413999557495117,
+    2.2091000080108643,
+    0.503000020980835
+  ],
+  "centroid_offset": [
+    0.19677358865737915,
+    0.07502943277359009,
+    0.02727639675140381
+  ],
+  "coordinate_frame_status": "CONSISTENT_NO_AXIS_OR_SCALE_CONVERSION",
+  "eval_count": 60,
+  "extent_ratio_camera_over_gaussian": [
+    0.20591868460178375,
+    0.17149733006954193,
+    0.04378795996308327
+  ],
+  "gaussian_bbox_max": [
+    6.019745826721191,
+    6.639648914337158,
+    6.109530925750732
+  ],
+  "gaussian_bbox_min": [
+    -6.322019100189209,
+    -6.241601943969727,
+    -5.377645492553711
+  ],
+  "gaussian_extent": [
+    12.341764450073242,
+    12.881250381469727,
+    11.487176895141602
+  ],
+  "scene_diagonal": 21.217939376831055,
+  "train_count": 240,
+  "train_eval_indices_helper": "nerfstudio.data.utils.dataparsers_utils.get_train_eval_split_fraction",
+  "transform_vs_datamanager_eval_max_abs_error": 5.7983398527028385e-08,
+  "transform_vs_datamanager_train_max_abs_error": 5.950927728370914e-08,
+  "transforms_frame_count": 300
+}

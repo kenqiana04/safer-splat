@@ -1,0 +1,19 @@
+{
+  "G1_original_baseline_authorized": false,
+  "G1_risk_aware_authorized": false,
+  "checkpoint_id": "tum_fr1_room_splatfacto_v1r6_seed20260716_20260717_070309",
+  "checkpoint_path": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1r6/splatfacto/20260717_070309/nerfstudio_models/step-000029999.ckpt",
+  "checkpoint_sha256": "4941bf1faba1aed31949ee4114898c0eec33ff1a46b7bcadad6d06f5f647ae6b",
+  "coordinate_frame_status": "CONSISTENT_NO_AXIS_OR_SCALE_CONVERSION",
+  "depth_geometry_status": "INVALID_RAW_METRIC_DEPTH_GATE",
+  "geometry_quality_status": "GEOMETRY_INVALID_STOP",
+  "metric_scale_status": "METRIC_SCALE_MISMATCH_RAW_DEPTH",
+  "navigation_executed": false,
+  "navigation_state_space_status": "G1_START_GOAL_PROTOCOL_UNRESOLVED",
+  "recommended_next_task": "Repair TUM Map Geometry Before SAFER Evaluation",
+  "safer_static_query_status": "PASS_FINITE_DETERMINISTIC",
+  "separate_user_authorization_required": true,
+  "start_goal_protocol_status": "G1_START_GOAL_PROTOCOL_UNRESOLVED",
+  "technical_adapter_status": "PASS_TUM_V1R6_G0_SAFER_ADAPTER_TECHNICAL_AUDIT",
+  "training_allowed": false
+}

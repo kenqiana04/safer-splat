@@ -1,0 +1,13 @@
+{
+  "additional_extrinsic_required": "UNRESOLVED",
+  "camera_height_stability": "trajectory z extent is 0.503 m, but world z vertical semantics are not independently established",
+  "fixed_height_navigation_plane_required": true,
+  "g1_start_goal_definable_without_guessing": false,
+  "reason": "raw metric depth geometry is invalid and no separately frozen robot/ground-plane convention exists",
+  "reliable_ground_plane": "NOT_ESTABLISHED",
+  "safer_state_space": "3D position+velocity (6D DoubleIntegrator; position is first 3 coordinates)",
+  "start_goal_coordinate_transform_required": "UNRESOLVED",
+  "status": "G1_START_GOAL_PROTOCOL_UNRESOLVED",
+  "tum_handheld_camera_center_as_robot_center": "NOT_ESTABLISHED",
+  "world_z_vertical": "NOT_ESTABLISHED"
+}

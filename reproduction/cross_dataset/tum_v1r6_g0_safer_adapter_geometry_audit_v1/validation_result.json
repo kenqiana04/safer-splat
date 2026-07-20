@@ -1,0 +1,24 @@
+{
+  "G1_executed": false,
+  "checks": {
+    "adapter_tests": true,
+    "continuity_completed": true,
+    "core_files_unchanged": true,
+    "gaussian_numeric_valid": true,
+    "input_identity": true,
+    "no_training_navigation_g1": true,
+    "pipeline_and_schema": true,
+    "schema_mapping_complete": true,
+    "static_map_build": true,
+    "static_query": true
+  },
+  "geometry_quality_status": "GEOMETRY_INVALID_STOP",
+  "joint_status": "BLOCKED_BY_TUM_V1R6_GEOMETRY_INVALID_FOR_SAFER",
+  "navigation_executed": false,
+  "no_training": true,
+  "technical_adapter_status": "PASS_TUM_V1R6_G0_SAFER_ADAPTER_TECHNICAL_AUDIT",
+  "unresolved_critical_fields": [
+    "RAW_METRIC_DEPTH_GEOMETRY_INVALID",
+    "G1_START_GOAL_PROTOCOL_UNRESOLVED"
+  ]
+}
