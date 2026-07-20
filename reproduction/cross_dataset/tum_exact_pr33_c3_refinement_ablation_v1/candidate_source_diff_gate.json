@@ -1,0 +1,31 @@
+{
+  "status": "PASS_MINIMAL_DIFF_CANDIDATE_SOURCE_GATE",
+  "variants": {
+    "E0_EXACT_C3_BASELINE": {
+      "changed_files": [],
+      "model_ast_sha256": "647f8bd206e3a22748abdb77d7b7aaf190294b69b341e1fdbf16ee5262bf94b5",
+      "source_sha256": "42754bf8cd5326f78872ba19c649cd10afc5ab5b04ff1e9b66ec84abb0a062d2"
+    },
+    "E1_LATE_DEPTH_HOLD": {
+      "changed_files": [
+        "tum_metric_depth_splatfacto.py"
+      ],
+      "model_ast_sha256": "c692fd468a449b126c1643b3b511fc01fb32dcefbd617713c12bd0bf62c288c2",
+      "source_sha256": "7933eed0c8fe59ca6e40a7caa814b256150cafc9f2f8056853e27d68a3f2fac9"
+    },
+    "E2_REFINEMENT_LOCK_3000": {
+      "changed_files": [
+        "tum_metric_depth_splatfacto.py"
+      ],
+      "model_ast_sha256": "93c60ebd75eb897869eb808ce8b16a3ce72088d42465c51cccf696be574c3360",
+      "source_sha256": "12053e9ef5a64a869b7f0b9a1cdfd303796af4195d7e3f8b3931f78444b0b4dc"
+    },
+    "E3_LATE_DEPTH_HOLD_AND_LOCK": {
+      "changed_files": [
+        "tum_metric_depth_splatfacto.py"
+      ],
+      "model_ast_sha256": "5e5d89119b2566202013c2aa2976856969ebb61aea0067830a82e38f79375979",
+      "source_sha256": "96d1fe63019f04824c9dc4949f91d30627344bb8de05cd62ae3d33c2f3944947"
+    }
+  }
+}
