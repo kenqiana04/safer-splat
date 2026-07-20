@@ -1,0 +1,23 @@
+{
+  "checkpoint_path": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1r6/splatfacto/20260717_070309/nerfstudio_models/step-000029999.ckpt",
+  "floating_tensor_count": 45,
+  "nonfinite_examples": [],
+  "nonfinite_tensor_count": 0,
+  "python": "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
+  "readable": true,
+  "resolved_step": 29999,
+  "step_candidates": {
+    "step": 29999
+  },
+  "tensor_count": 45,
+  "top_level_keys": [
+    "optimizers",
+    "pipeline",
+    "scalers",
+    "schedulers",
+    "step"
+  ],
+  "top_level_type": "dict",
+  "torch": "2.1.2+cu118",
+  "total_numel": 122941215
+}

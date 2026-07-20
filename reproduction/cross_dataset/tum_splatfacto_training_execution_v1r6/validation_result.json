@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "checkpoint_nonfinite_zero": true,
+    "checkpoint_readable": true,
+    "checkpoint_step_29999": true,
+    "checkpoint_unique": true,
+    "evaluation_frames_60": true,
+    "frozen_contract": true,
+    "g0_candidate": true,
+    "immutability": true,
+    "metrics_finite": true,
+    "no_safer_navigation_g1": true,
+    "no_training_related_processes": true,
+    "no_training_resume_retry": true,
+    "ns_eval_exit_0": true,
+    "ns_render_exit_0": true,
+    "precompiled_backend": true,
+    "rgb_renders_60": true
+  },
+  "status": "PASS_FORMAL_TUM_V1R6_CHECKPOINT_AUDIT_AND_EVALUATION_COMPLETE",
+  "unresolved_critical_fields": []
+}
