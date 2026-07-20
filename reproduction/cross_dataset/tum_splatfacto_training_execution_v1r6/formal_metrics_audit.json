@@ -1,0 +1,44 @@
+{
+  "all_scalars_finite": true,
+  "evaluation_frame_count": 60,
+  "identity": {
+    "bom_count": 0,
+    "crlf_count": 0,
+    "final_lf": false,
+    "mtime_utc": "2026-07-20T04:57:30.750737+00:00",
+    "path": "/disk1/zlab/formal_execution_records/tum_fr1_room_splatfacto_v1r6_seed20260716_20260717_070309/checkpoint_audit_and_evaluation/formal_eval/metrics.json",
+    "sha256": "6acb8e3d9599f0245b6bd82cdc541264d8379203db727179ad3f1883d8d2ff43",
+    "size_bytes": 600
+  },
+  "lpips": {
+    "path": "results.lpips",
+    "value": 0.7240599393844604
+  },
+  "metrics_path": "/disk1/zlab/formal_execution_records/tum_fr1_room_splatfacto_v1r6_seed20260716_20260717_070309/checkpoint_audit_and_evaluation/formal_eval/metrics.json",
+  "psnr": {
+    "path": "results.psnr",
+    "value": 9.436382293701172
+  },
+  "raw_keys": [
+    "checkpoint",
+    "experiment_name",
+    "method_name",
+    "results"
+  ],
+  "scalars": {
+    "results.fps": 102.05747985839844,
+    "results.fps_std": 16.598058700561523,
+    "results.lpips": 0.7240599393844604,
+    "results.lpips_std": 0.08114152401685715,
+    "results.num_rays_per_sec": 31352056.0,
+    "results.num_rays_per_sec_std": 5098923.5,
+    "results.psnr": 9.436382293701172,
+    "results.psnr_std": 1.9206037521362305,
+    "results.ssim": 0.3585314154624939,
+    "results.ssim_std": 0.0989714190363884
+  },
+  "ssim": {
+    "path": "results.ssim",
+    "value": 0.3585314154624939
+  }
+}

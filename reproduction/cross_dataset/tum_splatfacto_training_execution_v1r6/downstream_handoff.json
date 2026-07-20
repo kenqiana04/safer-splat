@@ -1,0 +1,17 @@
+{
+  "G1_allowed": false,
+  "candidate_status": "TUM_G0_CHECKPOINT_CANDIDATE_READY_FOR_SEPARATE_DOWNSTREAM_AUTHORIZATION",
+  "checkpoint_path": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1r6/splatfacto/20260717_070309/nerfstudio_models/step-000029999.ckpt",
+  "checkpoint_sha256": "4941bf1faba1aed31949ee4114898c0eec33ff1a46b7bcadad6d06f5f647ae6b",
+  "checkpoint_step": 29999,
+  "config_path": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1r6/splatfacto/20260717_070309/config.yml",
+  "metrics_path": "/disk1/zlab/formal_execution_records/tum_fr1_room_splatfacto_v1r6_seed20260716_20260717_070309/checkpoint_audit_and_evaluation/formal_eval/metrics.json",
+  "navigation_authorized": false,
+  "new_training_allowed": false,
+  "next_task": "TUM V1R6 G0 Downstream SAFER or Navigation Evaluation",
+  "render_count": 60,
+  "safer_authorized": false,
+  "separate_user_authorization_required": true,
+  "status": "PASS_FORMAL_TUM_V1R6_CHECKPOINT_AUDIT_AND_EVALUATION_COMPLETE",
+  "training_required": false
+}

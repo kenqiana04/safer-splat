@@ -1,0 +1,17 @@
+{
+  "experiment_name": "tum_fr1_room_splatfacto_v1r6",
+  "method_name": "splatfacto",
+  "checkpoint": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1r6/splatfacto/20260717_070309/nerfstudio_models/step-000029999.ckpt",
+  "results": {
+    "psnr": 9.436382293701172,
+    "psnr_std": 1.9206037521362305,
+    "ssim": 0.3585314154624939,
+    "ssim_std": 0.0989714190363884,
+    "lpips": 0.7240599393844604,
+    "lpips_std": 0.08114152401685715,
+    "num_rays_per_sec": 31352056.0,
+    "num_rays_per_sec_std": 5098923.5,
+    "fps": 102.05747985839844,
+    "fps_std": 16.598058700561523
+  }
+}
