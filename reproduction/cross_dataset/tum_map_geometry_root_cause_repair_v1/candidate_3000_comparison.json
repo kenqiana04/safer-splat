@@ -1,0 +1,9 @@
+{
+  "baseline_v1r6": {"AbsRel": 0.791195087240712, "delta1": 0.061905662166267535, "median_ratio": 0.17006996273994446},
+  "candidates": {
+    "C1_METRIC_SEED_ONLY": {"AbsRel": 0.8947458432720243, "delta1": 0.08854418318738047, "median_ratio": 0.32223963737487793, "qualified": false},
+    "C2_DEPTH_SUPERVISION_ONLY": {"AbsRel": 0.39855952202972406, "delta1": 0.3881844805844302, "median_ratio": 1.0172933340072632, "qualified": true},
+    "C3_METRIC_SEED_PLUS_DEPTH": {"AbsRel": 0.3329618806779451, "delta1": 0.4568739114750355, "median_ratio": 1.0041860342025757, "qualified": true}
+  },
+  "selection": "C3_METRIC_SEED_PLUS_DEPTH"
+}

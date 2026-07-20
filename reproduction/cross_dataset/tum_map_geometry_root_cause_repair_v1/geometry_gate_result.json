@@ -1,0 +1,7 @@
+{
+  "classification": "INVALID",
+  "failed_conditions": ["raw delta1 0.44829184327689114 is below degraded diagnostic threshold 0.50", "raw AbsRel 0.34434037854589233 is above acceptable threshold 0.25"],
+  "internal_gate": "INTERNAL_G0_GEOMETRY_GATE_NOT_A_PUBLIC_BENCHMARK",
+  "passed_conditions": ["nonfinite Gaussian = 0", "invalid covariance = 0", "raw overlap = 1.0", "median ratio is within [0.80, 1.25]", "908-point static SAFER query finite and exactly deterministic"],
+  "status": "NO_FORMAL_REPAIR_PROTOCOL_FREEZE"
+}

@@ -1,0 +1,6 @@
+{
+  "depth_loss": false,
+  "gt_depth_participates_in_loss": false,
+  "status": "RGB_ONLY_NO_GT_DEPTH_SUPERVISION",
+  "training_objective": "RGB photometric L1 plus SSIM and optional scale regularization"
+}
