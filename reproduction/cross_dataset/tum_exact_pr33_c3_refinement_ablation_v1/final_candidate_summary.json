@@ -1,0 +1,27 @@
+{
+  "candidate": "E3_LATE_DEPTH_HOLD_AND_LOCK",
+  "step": 9999,
+  "checkpoint_sha256": "92e801681afe3f4d62f6679efc3251db6b9c09a6a118f986bf47b730e9bfdc87",
+  "raw_depth": {
+    "overlap": 1.0,
+    "AbsRel": 0.23898788744139324,
+    "RMSE": 0.5588985630282832,
+    "delta1": 0.5833243883404367,
+    "delta2": 0.8224508122670446,
+    "delta3": 0.9241887650699403,
+    "ratio": 0.9569382071495056
+  },
+  "static_safer_completion_audit": {
+    "status": "PASS",
+    "map_gaussian_count": 330811,
+    "query_count": 908,
+    "query_exact_deterministic": true,
+    "gradients_finite": true,
+    "gradient_exact_deterministic": true,
+    "continuity": "PASS",
+    "input_immutability": true
+  },
+  "strict_g0_result": "PASS_TUM_EXACT_C3_REFINEMENT_DEGRADED_DIAGNOSTIC_ONLY",
+  "formal_protocol_candidate": false,
+  "g1_authorized": false
+}

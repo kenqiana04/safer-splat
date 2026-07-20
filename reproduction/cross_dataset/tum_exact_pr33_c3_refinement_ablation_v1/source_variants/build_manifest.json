@@ -1,0 +1,489 @@
+{
+  "exact_pr33": {
+    "files": [
+      {
+        "ast_sha256": "3ba12ea08b0bf36fc4fb55764cda5ff9bd4de48b76dadebef5bca145ff981f10",
+        "git_blob_sha": "8f239ca9623d34db88858f4ee40b2992992cb754",
+        "inventory": [],
+        "path": "audit_splatfacto_depth_objective.py",
+        "sha256": "455bf39968aabdc528734e435aae3601b3d88fca39b8b18f6216b3b2b5c06208"
+      },
+      {
+        "ast_sha256": "df6c172d44e1b71353cbaea0c12615983802091368af8bf856dd3c037ddf525e",
+        "git_blob_sha": "eb2627d1f1cfd316adc6377edf9937781cf00697",
+        "inventory": [],
+        "path": "audit_tum_rgbd_data_chain.py",
+        "sha256": "6774d9e9f1e75b4d7918c8b55ea2e0a5fc4d69fd595e93125c331d3eaa30d287"
+      },
+      {
+        "ast_sha256": "a071f28b39bb07d324b9cadb89fe2d993b6a42e8a7c62c58cf6aa157d5a60681",
+        "git_blob_sha": "c19915b59d5228a1d0cc19da8495c1ea3a0dad7b",
+        "inventory": [],
+        "path": "audit_v1r6_initialization.py",
+        "sha256": "f4f2f669d0b173c485bdde8880b8c3cbec7a4c496ecef5e8d5c315afa4ee83f2"
+      },
+      {
+        "ast_sha256": "5e196c3c70bab153734dc7c8163d5bb8b4dfc3aba708e485323861b17111754e",
+        "git_blob_sha": "32fa86ddf8fb2d5c97585299ab233dafc96df8a8",
+        "inventory": [],
+        "path": "build_tum_metric_seed_points.py",
+        "sha256": "5cd83a879dfc826449cadfa6c76467bc59261fe53b894d8bb98310052adb72bc"
+      },
+      {
+        "ast_sha256": "f54059c57fe436b7084a4f8a33c648dd592183432e14be2251267f8107165af9",
+        "git_blob_sha": "c4a5b97b1a687091199a0e099e8eee7c64c13e35",
+        "inventory": [],
+        "path": "compare_depth_rendering_semantics.py",
+        "sha256": "998197cedc78210ce8dc2956db9b2f3f28eb6b8a464903d2b41dbf7bf64eca12"
+      },
+      {
+        "ast_sha256": "d38c2763a03d2ca94a857f7c0b6be76bcd32d3b074190a9626969d99f917ede4",
+        "git_blob_sha": "300396e69eef31141c2a27971056a49c299494c6",
+        "inventory": [],
+        "path": "evaluate_metric_depth.py",
+        "sha256": "ee29341c82efd979872298f76df232e04aa79e90975aabed6e2be37b0a6ad405"
+      },
+      {
+        "ast_sha256": "fc0b457ebda943bf7b41755ef5e4cc52b56400b170af283f21c2b1a60ceac3f0",
+        "git_blob_sha": "ed340b003a331ba909364f691a441bc063ae04b6",
+        "inventory": [
+          "configure",
+          "main"
+        ],
+        "path": "launch_nonformal_repair_candidate.py",
+        "sha256": "b01c0e05bb618caac3faa025526064fa21b089d0e1e793890f960b59aed28acb"
+      },
+      {
+        "ast_sha256": "f7a9ee9492635041b27a3ec397764f7d0f34e82b107b64aa2bec93ac920cfd24",
+        "git_blob_sha": "15bbef67d05e2d3c21d127e28b23253fe61f9849",
+        "inventory": [
+          "test_metric_depth_loss_contract"
+        ],
+        "path": "test_tum_metric_depth_splatfacto.py",
+        "sha256": "2df448e49e8182386f51f1801020725d692d948cf7338f6a3bddc3b0702c866e"
+      },
+      {
+        "ast_sha256": "e33ee1948d9dfc0dd6528c40b349d468c23873573d0fb197bc65a185173fb49e",
+        "git_blob_sha": "3cc2a598a2734e8199ec5ae496189842be650bfc",
+        "inventory": [
+          "test_seed_npz_is_train_only_contract"
+        ],
+        "path": "test_tum_metric_seed_dataparser.py",
+        "sha256": "f1cbf2ed4ec5200d39ef5e18536548d7ed74c79d1871cc4baa0f538c5ea86322"
+      },
+      {
+        "ast_sha256": "647f8bd206e3a22748abdb77d7b7aaf190294b69b341e1fdbf16ee5262bf94b5",
+        "git_blob_sha": "8fced30c147a115e306aa2f0ff14290aa786bf2b",
+        "inventory": [
+          "metric_depth_huber_loss",
+          "TumMetricDepthSplatfactoConfig",
+          "TumMetricDepthSplatfactoModel"
+        ],
+        "path": "tum_metric_depth_splatfacto.py",
+        "sha256": "09504a710e89c0209ada03059af31acf66cc7fde0f09a998d98079e655855afe"
+      },
+      {
+        "ast_sha256": "a9c4a03dd9dbfb101d7544f82c6a8ce36810010091a4ae1980a395e6432b20fd",
+        "git_blob_sha": "42e6dcda2bbee6afd98c8c8265d40f80c8f359bf",
+        "inventory": [
+          "TumMetricSeedDataParserConfig",
+          "TumMetricSeedDataParser"
+        ],
+        "path": "tum_metric_seed_dataparser.py",
+        "sha256": "ac8fcf5e537bbadaf7279dd82da88c1c7def36e728cdc21208ac63d5ff37203f"
+      }
+    ],
+    "manifest_sha256": "df521880daf6a58b6f1976ea0db8afb67cf73cdbb7032ad4db56977183b03de8",
+    "source_commit": "fe78814ca0b9e7c840aa99214fa6cd41e4021c5e"
+  },
+  "variants": {
+    "E0_EXACT_C3_BASELINE": {
+      "files": [
+        {
+          "ast_sha256": "3ba12ea08b0bf36fc4fb55764cda5ff9bd4de48b76dadebef5bca145ff981f10",
+          "git_blob_sha": "8f239ca9623d34db88858f4ee40b2992992cb754",
+          "inventory": [],
+          "path": "audit_splatfacto_depth_objective.py",
+          "sha256": "455bf39968aabdc528734e435aae3601b3d88fca39b8b18f6216b3b2b5c06208"
+        },
+        {
+          "ast_sha256": "df6c172d44e1b71353cbaea0c12615983802091368af8bf856dd3c037ddf525e",
+          "git_blob_sha": "eb2627d1f1cfd316adc6377edf9937781cf00697",
+          "inventory": [],
+          "path": "audit_tum_rgbd_data_chain.py",
+          "sha256": "6774d9e9f1e75b4d7918c8b55ea2e0a5fc4d69fd595e93125c331d3eaa30d287"
+        },
+        {
+          "ast_sha256": "a071f28b39bb07d324b9cadb89fe2d993b6a42e8a7c62c58cf6aa157d5a60681",
+          "git_blob_sha": "c19915b59d5228a1d0cc19da8495c1ea3a0dad7b",
+          "inventory": [],
+          "path": "audit_v1r6_initialization.py",
+          "sha256": "f4f2f669d0b173c485bdde8880b8c3cbec7a4c496ecef5e8d5c315afa4ee83f2"
+        },
+        {
+          "ast_sha256": "5e196c3c70bab153734dc7c8163d5bb8b4dfc3aba708e485323861b17111754e",
+          "git_blob_sha": "32fa86ddf8fb2d5c97585299ab233dafc96df8a8",
+          "inventory": [],
+          "path": "build_tum_metric_seed_points.py",
+          "sha256": "5cd83a879dfc826449cadfa6c76467bc59261fe53b894d8bb98310052adb72bc"
+        },
+        {
+          "ast_sha256": "f54059c57fe436b7084a4f8a33c648dd592183432e14be2251267f8107165af9",
+          "git_blob_sha": "c4a5b97b1a687091199a0e099e8eee7c64c13e35",
+          "inventory": [],
+          "path": "compare_depth_rendering_semantics.py",
+          "sha256": "998197cedc78210ce8dc2956db9b2f3f28eb6b8a464903d2b41dbf7bf64eca12"
+        },
+        {
+          "ast_sha256": "d38c2763a03d2ca94a857f7c0b6be76bcd32d3b074190a9626969d99f917ede4",
+          "git_blob_sha": "300396e69eef31141c2a27971056a49c299494c6",
+          "inventory": [],
+          "path": "evaluate_metric_depth.py",
+          "sha256": "ee29341c82efd979872298f76df232e04aa79e90975aabed6e2be37b0a6ad405"
+        },
+        {
+          "ast_sha256": "fc0b457ebda943bf7b41755ef5e4cc52b56400b170af283f21c2b1a60ceac3f0",
+          "git_blob_sha": "ed340b003a331ba909364f691a441bc063ae04b6",
+          "inventory": [
+            "configure",
+            "main"
+          ],
+          "path": "launch_nonformal_repair_candidate.py",
+          "sha256": "b01c0e05bb618caac3faa025526064fa21b089d0e1e793890f960b59aed28acb"
+        },
+        {
+          "ast_sha256": "f7a9ee9492635041b27a3ec397764f7d0f34e82b107b64aa2bec93ac920cfd24",
+          "git_blob_sha": "15bbef67d05e2d3c21d127e28b23253fe61f9849",
+          "inventory": [
+            "test_metric_depth_loss_contract"
+          ],
+          "path": "test_tum_metric_depth_splatfacto.py",
+          "sha256": "2df448e49e8182386f51f1801020725d692d948cf7338f6a3bddc3b0702c866e"
+        },
+        {
+          "ast_sha256": "e33ee1948d9dfc0dd6528c40b349d468c23873573d0fb197bc65a185173fb49e",
+          "git_blob_sha": "3cc2a598a2734e8199ec5ae496189842be650bfc",
+          "inventory": [
+            "test_seed_npz_is_train_only_contract"
+          ],
+          "path": "test_tum_metric_seed_dataparser.py",
+          "sha256": "f1cbf2ed4ec5200d39ef5e18536548d7ed74c79d1871cc4baa0f538c5ea86322"
+        },
+        {
+          "ast_sha256": "647f8bd206e3a22748abdb77d7b7aaf190294b69b341e1fdbf16ee5262bf94b5",
+          "git_blob_sha": "8fced30c147a115e306aa2f0ff14290aa786bf2b",
+          "inventory": [
+            "metric_depth_huber_loss",
+            "TumMetricDepthSplatfactoConfig",
+            "TumMetricDepthSplatfactoModel"
+          ],
+          "path": "tum_metric_depth_splatfacto.py",
+          "sha256": "09504a710e89c0209ada03059af31acf66cc7fde0f09a998d98079e655855afe"
+        },
+        {
+          "ast_sha256": "a9c4a03dd9dbfb101d7544f82c6a8ce36810010091a4ae1980a395e6432b20fd",
+          "git_blob_sha": "42e6dcda2bbee6afd98c8c8265d40f80c8f359bf",
+          "inventory": [
+            "TumMetricSeedDataParserConfig",
+            "TumMetricSeedDataParser"
+          ],
+          "path": "tum_metric_seed_dataparser.py",
+          "sha256": "ac8fcf5e537bbadaf7279dd82da88c1c7def36e728cdc21208ac63d5ff37203f"
+        }
+      ],
+      "manifest_sha256": "df521880daf6a58b6f1976ea0db8afb67cf73cdbb7032ad4db56977183b03de8",
+      "source_commit": "fe78814ca0b9e7c840aa99214fa6cd41e4021c5e"
+    },
+    "E1_LATE_DEPTH_HOLD": {
+      "files": [
+        {
+          "ast_sha256": "3ba12ea08b0bf36fc4fb55764cda5ff9bd4de48b76dadebef5bca145ff981f10",
+          "git_blob_sha": "8f239ca9623d34db88858f4ee40b2992992cb754",
+          "inventory": [],
+          "path": "audit_splatfacto_depth_objective.py",
+          "sha256": "455bf39968aabdc528734e435aae3601b3d88fca39b8b18f6216b3b2b5c06208"
+        },
+        {
+          "ast_sha256": "df6c172d44e1b71353cbaea0c12615983802091368af8bf856dd3c037ddf525e",
+          "git_blob_sha": "eb2627d1f1cfd316adc6377edf9937781cf00697",
+          "inventory": [],
+          "path": "audit_tum_rgbd_data_chain.py",
+          "sha256": "6774d9e9f1e75b4d7918c8b55ea2e0a5fc4d69fd595e93125c331d3eaa30d287"
+        },
+        {
+          "ast_sha256": "a071f28b39bb07d324b9cadb89fe2d993b6a42e8a7c62c58cf6aa157d5a60681",
+          "git_blob_sha": "c19915b59d5228a1d0cc19da8495c1ea3a0dad7b",
+          "inventory": [],
+          "path": "audit_v1r6_initialization.py",
+          "sha256": "f4f2f669d0b173c485bdde8880b8c3cbec7a4c496ecef5e8d5c315afa4ee83f2"
+        },
+        {
+          "ast_sha256": "5e196c3c70bab153734dc7c8163d5bb8b4dfc3aba708e485323861b17111754e",
+          "git_blob_sha": "32fa86ddf8fb2d5c97585299ab233dafc96df8a8",
+          "inventory": [],
+          "path": "build_tum_metric_seed_points.py",
+          "sha256": "5cd83a879dfc826449cadfa6c76467bc59261fe53b894d8bb98310052adb72bc"
+        },
+        {
+          "ast_sha256": "f54059c57fe436b7084a4f8a33c648dd592183432e14be2251267f8107165af9",
+          "git_blob_sha": "c4a5b97b1a687091199a0e099e8eee7c64c13e35",
+          "inventory": [],
+          "path": "compare_depth_rendering_semantics.py",
+          "sha256": "998197cedc78210ce8dc2956db9b2f3f28eb6b8a464903d2b41dbf7bf64eca12"
+        },
+        {
+          "ast_sha256": "d38c2763a03d2ca94a857f7c0b6be76bcd32d3b074190a9626969d99f917ede4",
+          "git_blob_sha": "300396e69eef31141c2a27971056a49c299494c6",
+          "inventory": [],
+          "path": "evaluate_metric_depth.py",
+          "sha256": "ee29341c82efd979872298f76df232e04aa79e90975aabed6e2be37b0a6ad405"
+        },
+        {
+          "ast_sha256": "fc0b457ebda943bf7b41755ef5e4cc52b56400b170af283f21c2b1a60ceac3f0",
+          "git_blob_sha": "ed340b003a331ba909364f691a441bc063ae04b6",
+          "inventory": [
+            "configure",
+            "main"
+          ],
+          "path": "launch_nonformal_repair_candidate.py",
+          "sha256": "b01c0e05bb618caac3faa025526064fa21b089d0e1e793890f960b59aed28acb"
+        },
+        {
+          "ast_sha256": "f7a9ee9492635041b27a3ec397764f7d0f34e82b107b64aa2bec93ac920cfd24",
+          "git_blob_sha": "15bbef67d05e2d3c21d127e28b23253fe61f9849",
+          "inventory": [
+            "test_metric_depth_loss_contract"
+          ],
+          "path": "test_tum_metric_depth_splatfacto.py",
+          "sha256": "2df448e49e8182386f51f1801020725d692d948cf7338f6a3bddc3b0702c866e"
+        },
+        {
+          "ast_sha256": "e33ee1948d9dfc0dd6528c40b349d468c23873573d0fb197bc65a185173fb49e",
+          "git_blob_sha": "3cc2a598a2734e8199ec5ae496189842be650bfc",
+          "inventory": [
+            "test_seed_npz_is_train_only_contract"
+          ],
+          "path": "test_tum_metric_seed_dataparser.py",
+          "sha256": "f1cbf2ed4ec5200d39ef5e18536548d7ed74c79d1871cc4baa0f538c5ea86322"
+        },
+        {
+          "ast_sha256": "c692fd468a449b126c1643b3b511fc01fb32dcefbd617713c12bd0bf62c288c2",
+          "git_blob_sha": "8fced30c147a115e306aa2f0ff14290aa786bf2b",
+          "inventory": [
+            "metric_depth_huber_loss",
+            "TumMetricDepthSplatfactoConfig",
+            "TumMetricDepthSplatfactoModel"
+          ],
+          "path": "tum_metric_depth_splatfacto.py",
+          "sha256": "ea70925bd9169d66dcd5cdb9f6a7e6ccfecc429d3aef12283be1a91dbc690e4a"
+        },
+        {
+          "ast_sha256": "a9c4a03dd9dbfb101d7544f82c6a8ce36810010091a4ae1980a395e6432b20fd",
+          "git_blob_sha": "42e6dcda2bbee6afd98c8c8265d40f80c8f359bf",
+          "inventory": [
+            "TumMetricSeedDataParserConfig",
+            "TumMetricSeedDataParser"
+          ],
+          "path": "tum_metric_seed_dataparser.py",
+          "sha256": "ac8fcf5e537bbadaf7279dd82da88c1c7def36e728cdc21208ac63d5ff37203f"
+        }
+      ],
+      "manifest_sha256": "5f155a17f1bfac4aabd9eb09f19abaedbd01c0e170bd4f6f6f2f091095bb8ed7",
+      "source_commit": "fe78814ca0b9e7c840aa99214fa6cd41e4021c5e"
+    },
+    "E2_REFINEMENT_LOCK_3000": {
+      "files": [
+        {
+          "ast_sha256": "3ba12ea08b0bf36fc4fb55764cda5ff9bd4de48b76dadebef5bca145ff981f10",
+          "git_blob_sha": "8f239ca9623d34db88858f4ee40b2992992cb754",
+          "inventory": [],
+          "path": "audit_splatfacto_depth_objective.py",
+          "sha256": "455bf39968aabdc528734e435aae3601b3d88fca39b8b18f6216b3b2b5c06208"
+        },
+        {
+          "ast_sha256": "df6c172d44e1b71353cbaea0c12615983802091368af8bf856dd3c037ddf525e",
+          "git_blob_sha": "eb2627d1f1cfd316adc6377edf9937781cf00697",
+          "inventory": [],
+          "path": "audit_tum_rgbd_data_chain.py",
+          "sha256": "6774d9e9f1e75b4d7918c8b55ea2e0a5fc4d69fd595e93125c331d3eaa30d287"
+        },
+        {
+          "ast_sha256": "a071f28b39bb07d324b9cadb89fe2d993b6a42e8a7c62c58cf6aa157d5a60681",
+          "git_blob_sha": "c19915b59d5228a1d0cc19da8495c1ea3a0dad7b",
+          "inventory": [],
+          "path": "audit_v1r6_initialization.py",
+          "sha256": "f4f2f669d0b173c485bdde8880b8c3cbec7a4c496ecef5e8d5c315afa4ee83f2"
+        },
+        {
+          "ast_sha256": "5e196c3c70bab153734dc7c8163d5bb8b4dfc3aba708e485323861b17111754e",
+          "git_blob_sha": "32fa86ddf8fb2d5c97585299ab233dafc96df8a8",
+          "inventory": [],
+          "path": "build_tum_metric_seed_points.py",
+          "sha256": "5cd83a879dfc826449cadfa6c76467bc59261fe53b894d8bb98310052adb72bc"
+        },
+        {
+          "ast_sha256": "f54059c57fe436b7084a4f8a33c648dd592183432e14be2251267f8107165af9",
+          "git_blob_sha": "c4a5b97b1a687091199a0e099e8eee7c64c13e35",
+          "inventory": [],
+          "path": "compare_depth_rendering_semantics.py",
+          "sha256": "998197cedc78210ce8dc2956db9b2f3f28eb6b8a464903d2b41dbf7bf64eca12"
+        },
+        {
+          "ast_sha256": "d38c2763a03d2ca94a857f7c0b6be76bcd32d3b074190a9626969d99f917ede4",
+          "git_blob_sha": "300396e69eef31141c2a27971056a49c299494c6",
+          "inventory": [],
+          "path": "evaluate_metric_depth.py",
+          "sha256": "ee29341c82efd979872298f76df232e04aa79e90975aabed6e2be37b0a6ad405"
+        },
+        {
+          "ast_sha256": "fc0b457ebda943bf7b41755ef5e4cc52b56400b170af283f21c2b1a60ceac3f0",
+          "git_blob_sha": "ed340b003a331ba909364f691a441bc063ae04b6",
+          "inventory": [
+            "configure",
+            "main"
+          ],
+          "path": "launch_nonformal_repair_candidate.py",
+          "sha256": "b01c0e05bb618caac3faa025526064fa21b089d0e1e793890f960b59aed28acb"
+        },
+        {
+          "ast_sha256": "f7a9ee9492635041b27a3ec397764f7d0f34e82b107b64aa2bec93ac920cfd24",
+          "git_blob_sha": "15bbef67d05e2d3c21d127e28b23253fe61f9849",
+          "inventory": [
+            "test_metric_depth_loss_contract"
+          ],
+          "path": "test_tum_metric_depth_splatfacto.py",
+          "sha256": "2df448e49e8182386f51f1801020725d692d948cf7338f6a3bddc3b0702c866e"
+        },
+        {
+          "ast_sha256": "e33ee1948d9dfc0dd6528c40b349d468c23873573d0fb197bc65a185173fb49e",
+          "git_blob_sha": "3cc2a598a2734e8199ec5ae496189842be650bfc",
+          "inventory": [
+            "test_seed_npz_is_train_only_contract"
+          ],
+          "path": "test_tum_metric_seed_dataparser.py",
+          "sha256": "f1cbf2ed4ec5200d39ef5e18536548d7ed74c79d1871cc4baa0f538c5ea86322"
+        },
+        {
+          "ast_sha256": "93c60ebd75eb897869eb808ce8b16a3ce72088d42465c51cccf696be574c3360",
+          "git_blob_sha": "8fced30c147a115e306aa2f0ff14290aa786bf2b",
+          "inventory": [
+            "metric_depth_huber_loss",
+            "TumMetricDepthSplatfactoConfig",
+            "TumMetricDepthSplatfactoModel"
+          ],
+          "path": "tum_metric_depth_splatfacto.py",
+          "sha256": "f5a7c431ce2334f1ec32b25bfdae566b3bbb488f4a85c3492518310ab60ac676"
+        },
+        {
+          "ast_sha256": "a9c4a03dd9dbfb101d7544f82c6a8ce36810010091a4ae1980a395e6432b20fd",
+          "git_blob_sha": "42e6dcda2bbee6afd98c8c8265d40f80c8f359bf",
+          "inventory": [
+            "TumMetricSeedDataParserConfig",
+            "TumMetricSeedDataParser"
+          ],
+          "path": "tum_metric_seed_dataparser.py",
+          "sha256": "ac8fcf5e537bbadaf7279dd82da88c1c7def36e728cdc21208ac63d5ff37203f"
+        }
+      ],
+      "manifest_sha256": "ecbef7d59cee29c8ff3388e17a4e4f89dd368bac4c391f123c7ac2f21bfc1271",
+      "source_commit": "fe78814ca0b9e7c840aa99214fa6cd41e4021c5e"
+    },
+    "E3_LATE_DEPTH_HOLD_AND_LOCK": {
+      "files": [
+        {
+          "ast_sha256": "3ba12ea08b0bf36fc4fb55764cda5ff9bd4de48b76dadebef5bca145ff981f10",
+          "git_blob_sha": "8f239ca9623d34db88858f4ee40b2992992cb754",
+          "inventory": [],
+          "path": "audit_splatfacto_depth_objective.py",
+          "sha256": "455bf39968aabdc528734e435aae3601b3d88fca39b8b18f6216b3b2b5c06208"
+        },
+        {
+          "ast_sha256": "df6c172d44e1b71353cbaea0c12615983802091368af8bf856dd3c037ddf525e",
+          "git_blob_sha": "eb2627d1f1cfd316adc6377edf9937781cf00697",
+          "inventory": [],
+          "path": "audit_tum_rgbd_data_chain.py",
+          "sha256": "6774d9e9f1e75b4d7918c8b55ea2e0a5fc4d69fd595e93125c331d3eaa30d287"
+        },
+        {
+          "ast_sha256": "a071f28b39bb07d324b9cadb89fe2d993b6a42e8a7c62c58cf6aa157d5a60681",
+          "git_blob_sha": "c19915b59d5228a1d0cc19da8495c1ea3a0dad7b",
+          "inventory": [],
+          "path": "audit_v1r6_initialization.py",
+          "sha256": "f4f2f669d0b173c485bdde8880b8c3cbec7a4c496ecef5e8d5c315afa4ee83f2"
+        },
+        {
+          "ast_sha256": "5e196c3c70bab153734dc7c8163d5bb8b4dfc3aba708e485323861b17111754e",
+          "git_blob_sha": "32fa86ddf8fb2d5c97585299ab233dafc96df8a8",
+          "inventory": [],
+          "path": "build_tum_metric_seed_points.py",
+          "sha256": "5cd83a879dfc826449cadfa6c76467bc59261fe53b894d8bb98310052adb72bc"
+        },
+        {
+          "ast_sha256": "f54059c57fe436b7084a4f8a33c648dd592183432e14be2251267f8107165af9",
+          "git_blob_sha": "c4a5b97b1a687091199a0e099e8eee7c64c13e35",
+          "inventory": [],
+          "path": "compare_depth_rendering_semantics.py",
+          "sha256": "998197cedc78210ce8dc2956db9b2f3f28eb6b8a464903d2b41dbf7bf64eca12"
+        },
+        {
+          "ast_sha256": "d38c2763a03d2ca94a857f7c0b6be76bcd32d3b074190a9626969d99f917ede4",
+          "git_blob_sha": "300396e69eef31141c2a27971056a49c299494c6",
+          "inventory": [],
+          "path": "evaluate_metric_depth.py",
+          "sha256": "ee29341c82efd979872298f76df232e04aa79e90975aabed6e2be37b0a6ad405"
+        },
+        {
+          "ast_sha256": "fc0b457ebda943bf7b41755ef5e4cc52b56400b170af283f21c2b1a60ceac3f0",
+          "git_blob_sha": "ed340b003a331ba909364f691a441bc063ae04b6",
+          "inventory": [
+            "configure",
+            "main"
+          ],
+          "path": "launch_nonformal_repair_candidate.py",
+          "sha256": "b01c0e05bb618caac3faa025526064fa21b089d0e1e793890f960b59aed28acb"
+        },
+        {
+          "ast_sha256": "f7a9ee9492635041b27a3ec397764f7d0f34e82b107b64aa2bec93ac920cfd24",
+          "git_blob_sha": "15bbef67d05e2d3c21d127e28b23253fe61f9849",
+          "inventory": [
+            "test_metric_depth_loss_contract"
+          ],
+          "path": "test_tum_metric_depth_splatfacto.py",
+          "sha256": "2df448e49e8182386f51f1801020725d692d948cf7338f6a3bddc3b0702c866e"
+        },
+        {
+          "ast_sha256": "e33ee1948d9dfc0dd6528c40b349d468c23873573d0fb197bc65a185173fb49e",
+          "git_blob_sha": "3cc2a598a2734e8199ec5ae496189842be650bfc",
+          "inventory": [
+            "test_seed_npz_is_train_only_contract"
+          ],
+          "path": "test_tum_metric_seed_dataparser.py",
+          "sha256": "f1cbf2ed4ec5200d39ef5e18536548d7ed74c79d1871cc4baa0f538c5ea86322"
+        },
+        {
+          "ast_sha256": "5e5d89119b2566202013c2aa2976856969ebb61aea0067830a82e38f79375979",
+          "git_blob_sha": "8fced30c147a115e306aa2f0ff14290aa786bf2b",
+          "inventory": [
+            "metric_depth_huber_loss",
+            "TumMetricDepthSplatfactoConfig",
+            "TumMetricDepthSplatfactoModel"
+          ],
+          "path": "tum_metric_depth_splatfacto.py",
+          "sha256": "f615e387d3c02dd52930bbfc06b10b6ec171eae5bcca18033e2bfce2442db772"
+        },
+        {
+          "ast_sha256": "a9c4a03dd9dbfb101d7544f82c6a8ce36810010091a4ae1980a395e6432b20fd",
+          "git_blob_sha": "42e6dcda2bbee6afd98c8c8265d40f80c8f359bf",
+          "inventory": [
+            "TumMetricSeedDataParserConfig",
+            "TumMetricSeedDataParser"
+          ],
+          "path": "tum_metric_seed_dataparser.py",
+          "sha256": "ac8fcf5e537bbadaf7279dd82da88c1c7def36e728cdc21208ac63d5ff37203f"
+        }
+      ],
+      "manifest_sha256": "76012cd6e15b65412c6ded3c8addb33139097598b021234d0d66b0ac764a8124",
+      "source_commit": "fe78814ca0b9e7c840aa99214fa6cd41e4021c5e"
+    }
+  }
+}

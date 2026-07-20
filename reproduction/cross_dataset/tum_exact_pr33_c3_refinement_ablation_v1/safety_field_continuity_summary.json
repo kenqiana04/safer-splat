@@ -1,0 +1,26 @@
+{
+  "abs_delta_h_statistics": {
+    "max": 0.051810428500175476,
+    "mean": 0.0067919978839205844,
+    "median": 0.0033676940947771072,
+    "min": 7.867813110351562e-06,
+    "p95": 0.025112080574035613
+  },
+  "contract": "299 ordered adjacent camera-centre pairs from the same frozen 300-camera prefix; no smoothing or result-driven epsilon",
+  "discontinuity_count": 0,
+  "gradient_norm_p95": 0.6861928105354309,
+  "local_finite_ratio": 1.0,
+  "note": "Numerical continuity diagnostic only; h is not collision proof or metre clearance.",
+  "outlier_indices": [],
+  "outlier_threshold_abs_delta_h": 0.1,
+  "pair_count": 299,
+  "pair_distance_statistics": {
+    "max": 0.12451611459255219,
+    "mean": 0.05325477299386368,
+    "median": 0.0513891838490963,
+    "min": 0.0012649230193346739,
+    "p95": 0.09504140168428421
+  },
+  "perturbation": "ordered adjacent frozen camera centres; no synthetic epsilon",
+  "status": "PASS"
+}

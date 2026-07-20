@@ -1,0 +1,29 @@
+{
+  "result": "PASS_TUM_EXACT_C3_REFINEMENT_DEGRADED_DIAGNOSTIC_ONLY",
+  "correction": "The preceding report used a degraded final label before the static SAFER map/query/gradient evidence existed. This commit completes that evidence and recomputes the status without changing E3 training evidence.",
+  "internal_gate": "INTERNAL_G0_GEOMETRY_GATE_NOT_A_PUBLIC_BENCHMARK",
+  "raw_depth": {
+    "overlap": 1.0,
+    "AbsRel": 0.23898788744139324,
+    "RMSE": 0.5588985630282832,
+    "delta1": 0.5833243883404367,
+    "delta2": 0.8224508122670446,
+    "delta3": 0.9241887650699403,
+    "median_ratio": 0.9569382071495056
+  },
+  "static_safer": {
+    "map_build": "PASS",
+    "query_908_finite": true,
+    "query_exact_deterministic": true,
+    "gradients_finite": true,
+    "gradient_exact_deterministic": true,
+    "continuity": "PASS",
+    "input_immutability": true
+  },
+  "depth_acceptable": false,
+  "g0_acceptable": false,
+  "acceptable_failure_reason": "delta1 0.5833243883404367 < 0.75",
+  "degraded_gate_pass": true,
+  "formal_protocol_candidate": false,
+  "g1_authorized": false
+}

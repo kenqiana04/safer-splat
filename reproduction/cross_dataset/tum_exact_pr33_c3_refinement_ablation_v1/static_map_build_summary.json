@@ -1,0 +1,35 @@
+{
+  "deterministic_construction_metadata": {
+    "checkpoint": "92e801681afe3f4d62f6679efc3251db6b9c09a6a118f986bf47b730e9bfdc87",
+    "no_filtering": true,
+    "reconstructed_config": "4d56ff2314fb5e1956ce9d3052c3c06b406e6e6db184723e1a5c1ea0db877b41",
+    "source": "96d1fe63019f04824c9dc4949f91d30627344bb8de05cd62ae3d33c2f3944947"
+  },
+  "device": "cuda:0",
+  "dtype": "torch.float32",
+  "filtering_or_reordering": "none; PR32 GSplatLoader semantics",
+  "gaussian_count_after": 330811,
+  "gaussian_count_before": 330811,
+  "gsplat_loader_class": "splat.gsplat_utils.GSplatLoader",
+  "map_bbox_max": [
+    7.722389221191406,
+    3.58097767829895,
+    5.766269683837891
+  ],
+  "map_bbox_min": [
+    -6.125305652618408,
+    -8.264093399047852,
+    -2.6391043663024902
+  ],
+  "map_class": "splat.gsplat_utils.GSplatLoader",
+  "parameter_identities": {
+    "covs": 140092205170688,
+    "means": 140094493294592,
+    "opacities": 140095174645248,
+    "rots": 140095157187072,
+    "scales": 140092139934720
+  },
+  "peak_memory_bytes": 236184064,
+  "runtime_seconds": 2.278127289013355,
+  "status": "PASS"
+}

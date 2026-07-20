@@ -1,0 +1,26 @@
+{
+  "acceptable_failure_reason": "raw delta1 0.5833243883404367 < 0.75",
+  "controller_dynamics_qp_executed": false,
+  "degraded_gate_pass": true,
+  "depth_acceptable": false,
+  "final_status": "PASS_TUM_EXACT_C3_REFINEMENT_DEGRADED_DIAGNOSTIC_ONLY",
+  "formal_protocol_candidate": false,
+  "formal_training_executed": false,
+  "g0_acceptable": false,
+  "g1_authorized": false,
+  "internal_gate": "INTERNAL_G0_GEOMETRY_GATE_NOT_A_PUBLIC_BENCHMARK",
+  "navigation_executed": false,
+  "raw_depth": {
+    "AbsRel": 0.23898788744139324,
+    "RMSE": 0.5588985630282832,
+    "delta1": 0.5833243883404367,
+    "delta2": 0.8224508122670446,
+    "delta3": 0.9241887650699403,
+    "median_ratio": 0.9569382071495056,
+    "overlap": 1.0
+  },
+  "safer_rollout_executed": false,
+  "technical_static_safer_pass": true,
+  "unresolved_critical_fields": [],
+  "v1r7_executed": false
+}

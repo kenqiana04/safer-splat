@@ -1,0 +1,19 @@
+{
+  "status": "PASS_TUM_EXACT_C3_REFINEMENT_DEGRADED_DIAGNOSTIC_ONLY",
+  "formal_protocol_candidate": false,
+  "g1_authorized": false,
+  "navigation_authorized": false,
+  "reason": "The complete static SAFER technical audit passes, but raw delta1 remains 0.5833243883404367, below the acceptable G0 threshold 0.75.",
+  "recommended_next_task": "TUM Geometry-Prior and Surface-Geometric-Loss Ablation V1",
+  "requires_separate_authorization": true,
+  "prohibited_auto_followups": [
+    "formal training",
+    "V1R7",
+    "navigation",
+    "SAFER rollout",
+    "controller",
+    "dynamics",
+    "CBF-QP",
+    "G1"
+  ]
+}

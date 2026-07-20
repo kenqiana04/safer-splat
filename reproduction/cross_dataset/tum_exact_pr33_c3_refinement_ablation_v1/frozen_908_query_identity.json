@@ -1,0 +1,54 @@
+{
+  "contains_camera_scene_fixed_probes": true,
+  "coordinate_frame": "Nerfstudio world coordinates; no axis conversion or E3-dependent rescaling",
+  "dtype": "float32",
+  "kind_counts": {
+    "camera": 300,
+    "grid": 64,
+    "offset": 540,
+    "out_of_map": 4
+  },
+  "max": [
+    7.253922462463379,
+    7.927773952484131,
+    7.258248805999756
+  ],
+  "min": [
+    -7.5561957359313965,
+    -7.529726982116699,
+    -6.526363372802734
+  ],
+  "order_contract": "300 camera centres; fixed np.linspace(0,299,30,dtype=int) axis offsets; C-order 4x4x4 grid; signed out-of-map probes",
+  "point_count": 908,
+  "reference_v1r6_checkpoint": {
+    "exists": true,
+    "mtime_ns": 1784272808266490250,
+    "path": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1r6/splatfacto/20260717_070309/nerfstudio_models/step-000029999.ckpt",
+    "sha256": "4941bf1faba1aed31949ee4114898c0eec33ff1a46b7bcadad6d06f5f647ae6b",
+    "size": 491777938
+  },
+  "reference_v1r6_config": {
+    "exists": true,
+    "mtime_ns": 1784272106679764299,
+    "path": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1r6/splatfacto/20260717_070309/config.yml",
+    "sha256": "c9a103c38483f76aed4701489084347566c2437719ae54ea962017469c708cfe",
+    "size": 7779
+  },
+  "reference_v1r6_map_bbox_max": [
+    6.019745826721191,
+    6.639648914337158,
+    6.109530925750732
+  ],
+  "reference_v1r6_map_bbox_min": [
+    -6.322019100189209,
+    -6.241601943969727,
+    -5.377645492553711
+  ],
+  "same_order_as_pr32_contract": true,
+  "sha256_float32_c_order": "5d0b971c40adc27915a23c1c5da7cc2b260edb07e0f8d6c223fdd8736519d5d2",
+  "shape": [
+    908,
+    3
+  ],
+  "source": "reconstructed from later-preserved immutable generator semantics and frozen PR32 V1R6 config/checkpoint"
+}

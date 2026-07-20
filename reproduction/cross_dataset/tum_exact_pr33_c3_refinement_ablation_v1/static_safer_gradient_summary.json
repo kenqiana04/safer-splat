@@ -1,0 +1,24 @@
+{
+  "autograd_path": "task-owned non-inplace algebraic form of the unchanged GSplatLoader ball-to-ellipsoid h",
+  "autograd_success": true,
+  "finite_count": 908,
+  "functional_active_indices_match_official_query": true,
+  "functional_h_max_abs_diff_vs_official_query": 0.0,
+  "gradient_determinism": "exact",
+  "gradient_max_abs_diff": 0.0,
+  "gradient_norm_statistics": {
+    "max": 17.554080963134766,
+    "mean": 0.3536981850422612,
+    "median": 0.22872738540172577,
+    "min": 0.0005897500668652356,
+    "p95": 0.7096592724323273
+  },
+  "gradient_run_a_b_torch_equal": true,
+  "gradient_shape": [
+    908,
+    3
+  ],
+  "h_value_repeat_equal": true,
+  "nonfinite_count": 0,
+  "zero_gradient_count": 0
+}

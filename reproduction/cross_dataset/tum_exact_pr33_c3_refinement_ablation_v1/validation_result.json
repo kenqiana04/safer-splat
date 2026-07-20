@@ -1,0 +1,17 @@
+{
+  "validator": "PASS_TUM_EXACT_C3_REFINEMENT_DEGRADED_DIAGNOSTIC_ONLY",
+  "inputs": "PASS",
+  "minimal_diff_gate": "PASS",
+  "smoke": "PASS",
+  "six_k_runs": "PASS",
+  "final_ten_k": "PASS",
+  "static_safer_map": "PASS",
+  "frozen_908_query": "PASS",
+  "autograd_gradient": "PASS",
+  "continuity": "PASS",
+  "immutability": "PASS",
+  "formal_training": false,
+  "v1r7": false,
+  "navigation_safer_cbf_g1": false,
+  "unresolved_critical_fields": []
+}

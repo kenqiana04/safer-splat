@@ -1,0 +1,121 @@
+{
+  "activated_inventory": {
+    "covariances": {
+      "device": "cuda:0",
+      "dtype": "torch.float32",
+      "shape": [
+        330811,
+        3,
+        3
+      ]
+    },
+    "means": {
+      "device": "cuda:0",
+      "dtype": "torch.float32",
+      "shape": [
+        330811,
+        3
+      ]
+    },
+    "opacities_sigmoid": {
+      "device": "cuda:0",
+      "dtype": "torch.float32",
+      "shape": [
+        330811,
+        1
+      ]
+    },
+    "quaternions_wxyz": {
+      "device": "cuda:0",
+      "dtype": "torch.float32",
+      "shape": [
+        330811,
+        4
+      ]
+    },
+    "scales_exp": {
+      "device": "cuda:0",
+      "dtype": "torch.float32",
+      "shape": [
+        330811,
+        3
+      ]
+    }
+  },
+  "axis_conversion": "none",
+  "checkpoint_keys": [
+    "optimizers",
+    "pipeline",
+    "scalers",
+    "schedulers",
+    "step"
+  ],
+  "checkpoint_step": 9999,
+  "coordinate_transform": "none",
+  "extra_global_scale": false,
+  "gaussian_count": 330811,
+  "gaussian_filtering": "none",
+  "model_class": "tum_metric_depth_splatfacto.TumMetricDepthSplatfactoModel",
+  "opacity_filtering": "none",
+  "oversized_filtering": "none",
+  "parameter_inventory": {
+    "features_dc": {
+      "device": "cuda:0",
+      "dtype": "torch.float32",
+      "floating": true,
+      "shape": [
+        330811,
+        3
+      ]
+    },
+    "features_rest": {
+      "device": "cuda:0",
+      "dtype": "torch.float32",
+      "floating": true,
+      "shape": [
+        330811,
+        15,
+        3
+      ]
+    },
+    "means": {
+      "device": "cuda:0",
+      "dtype": "torch.float32",
+      "floating": true,
+      "shape": [
+        330811,
+        3
+      ]
+    },
+    "quats": {
+      "device": "cuda:0",
+      "dtype": "torch.float32",
+      "floating": true,
+      "shape": [
+        330811,
+        4
+      ]
+    },
+    "raw_opacities": {
+      "device": "cuda:0",
+      "dtype": "torch.float32",
+      "floating": true,
+      "shape": [
+        330811,
+        1
+      ]
+    },
+    "raw_scales": {
+      "device": "cuda:0",
+      "dtype": "torch.float32",
+      "floating": true,
+      "shape": [
+        330811,
+        3
+      ]
+    }
+  },
+  "parser_scale": null,
+  "pipeline_class": "nerfstudio.pipelines.base_pipeline.VanillaPipeline",
+  "pose_scale": 1.0
+}
