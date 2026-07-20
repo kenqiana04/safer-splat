@@ -1,0 +1,5 @@
+{
+  "primary_root_cause": "RANDOM_INITIALIZATION_PLUS_RGB_ONLY_SUPERVISION",
+  "secondary_causes": ["GLOBAL_SCALE_PLUS_LOCAL_GEOMETRY_DISTORTION"],
+  "evidence": "The RGB-D chain, intrinsics, registration, poses, and adjacent reprojections are consistent. V1R6 was random-initialized and RGB-only. Corrected C2/C3 depth supervision strongly improved raw expected-depth metrics; C3 was best."
+}
