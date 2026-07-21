@@ -1,0 +1,19 @@
+{
+  "status": "PASS_TUM_E3_BOUNDED_SWEEP_DEGRADED_IMPROVEMENT",
+  "technical_static_safer_pass": true,
+  "static_map_query_count": 908,
+  "static_map_query_all_finite": true,
+  "static_map_query_exact_deterministic": true,
+  "static_gradient_finite_count": 908,
+  "static_gradient_exact_deterministic": true,
+  "static_continuity_discontinuity_count": 0,
+  "static_immutability_pass": true,
+  "g0_acceptable": false,
+  "reason": "final delta1 0.6856315701210094 is below acceptable threshold 0.75",
+  "formal_training_executed": false,
+  "v1r7_executed": false,
+  "navigation_executed": false,
+  "safer_rollout_executed": false,
+  "controller_dynamics_qp_executed": false,
+  "g1_authorized": false
+}
