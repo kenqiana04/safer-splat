@@ -1,0 +1,17 @@
+{
+  "search_type": "bounded_single_seed_coordinate_search",
+  "fresh_6000_step_candidates_completed": 8,
+  "independent_final_10000_step_runs_completed": 1,
+  "candidates": [
+    {"id": "A_L020_K3000_B010", "late_depth_hold_lambda": 0.2, "refinement_lock_step": 3000, "depth_loss_beta_m": 0.1, "AbsRel": 0.25780839698, "delta1": 0.55709558},
+    {"id": "A_L030_K3000_B010", "late_depth_hold_lambda": 0.3, "refinement_lock_step": 3000, "depth_loss_beta_m": 0.1, "AbsRel": 0.24083476, "delta1": 0.58477227},
+    {"id": "A_L040_K3000_B010", "late_depth_hold_lambda": 0.4, "refinement_lock_step": 3000, "depth_loss_beta_m": 0.1, "AbsRel": 0.24487628, "delta1": 0.56967514},
+    {"id": "A_L050_K3000_B010", "late_depth_hold_lambda": 0.5, "refinement_lock_step": 3000, "depth_loss_beta_m": 0.1, "AbsRel": 0.23422337, "delta1": 0.59835418},
+    {"id": "B_L050_K2000_B010", "late_depth_hold_lambda": 0.5, "refinement_lock_step": 2000, "depth_loss_beta_m": 0.1, "AbsRel": 0.20725927274401296, "delta1": 0.6450559434566356},
+    {"id": "B_L050_K4000_B010", "late_depth_hold_lambda": 0.5, "refinement_lock_step": 4000, "depth_loss_beta_m": 0.1, "AbsRel": 0.23526575987, "delta1": 0.60094664},
+    {"id": "C_L050_K2000_B005", "late_depth_hold_lambda": 0.5, "refinement_lock_step": 2000, "depth_loss_beta_m": 0.05, "AbsRel": 0.2082009780, "delta1": 0.6450314574},
+    {"id": "C_L050_K2000_B020", "late_depth_hold_lambda": 0.5, "refinement_lock_step": 2000, "depth_loss_beta_m": 0.2, "AbsRel": 0.21159860871811081, "RMSE": 0.49913771090794884, "delta1": 0.6476123132833571}
+  ],
+  "selected_final_candidate": "C_L050_K2000_B020",
+  "selection_reason": "highest 6000-step delta1 among the permitted beta comparison after the locked lambda and refinement-step selections"
+}
