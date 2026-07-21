@@ -1,0 +1,34 @@
+{
+  "source_mode": "official_codeload_archives",
+  "sources": {
+    "Gaussian-SLAM": {
+      "archive_path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/cache/Gaussian-SLAM-eaec10d.tar.gz",
+      "archive_verified": true,
+      "commit": "eaec10d73ce7511563882b8856896e06d1f804e3",
+      "dirty": false,
+      "git_worktree": "not_applicable_official_archive",
+      "license": "Apache-2.0",
+      "license_file_present": true,
+      "remote_url": "https://github.com/VladimirYugay/Gaussian-SLAM.git",
+      "source_manifest_sha256": "cc6665f3e36b47e80cde84bdb41514b81f96e667cfaae688f5b45c0bcadbebcd",
+      "source_path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive",
+      "submodules": {}
+    },
+    "SplaTAM": {
+      "archive_path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/cache/SplaTAM-da6bbcd.tar.gz",
+      "archive_verified": true,
+      "commit": "da6bbcd24c248dc884ac7f49d62e91b841b26ccc",
+      "dirty": false,
+      "git_worktree": "not_applicable_official_archive",
+      "license": "MIT",
+      "license_file_present": true,
+      "remote_url": "https://github.com/spla-tam/SplaTAM.git",
+      "source_manifest_sha256": "b54a69791e03b065553b5f4dd75dd6616cfa62e9f3d1bc7d6528b00116c9f13d",
+      "source_path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive",
+      "submodules": {
+        "diff-gaussian-rasterization-w-depth.git": "cb65e4b86bc3bd8ed42174b72a62e8d3a3a71110"
+      }
+    }
+  },
+  "status": "PASS"
+}

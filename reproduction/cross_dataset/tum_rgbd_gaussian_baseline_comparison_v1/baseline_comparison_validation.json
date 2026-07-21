@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "adapter_fail_closed": true,
+    "boundary": true,
+    "frame_registry": true,
+    "gaussian_slam_native_eval": true,
+    "protocol": true,
+    "splatam_native_eval": true,
+    "static_not_run": true
+  },
+  "no_G1": true,
+  "no_SAFER_rollout": true,
+  "no_formal_training": true,
+  "no_navigation": true,
+  "status": "PASS"
+}

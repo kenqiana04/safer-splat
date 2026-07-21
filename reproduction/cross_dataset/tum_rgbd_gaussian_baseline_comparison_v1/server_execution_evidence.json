@@ -1,0 +1,49 @@
+{
+  "artifacts": {
+    "frame_registry": {
+      "path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/frozen_frame_registry_summary.json",
+      "sha256": "553f707f26c20746adf14340bf8114d51f248fff144f58ac7db7322278daafbd",
+      "size": 763
+    },
+    "gaussian_slam_config": {
+      "path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/gaussian_slam_full240.yaml",
+      "sha256": "7e9713ad1ff179d0d8e92f33a85bc932ed13b48a2357d4adb4b9d2b7b01f27be",
+      "size": 1263
+    },
+    "gaussian_slam_result": {
+      "path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/gaussian_slam_result_summary.json",
+      "sha256": "b32f3127be434a56d1964f301aac5fd43f2e7aaf169ab93cad191195d09cf4d2",
+      "size": 1425
+    },
+    "splatam_config": {
+      "path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/splatam_full240_config.py",
+      "sha256": "83ecd1c881780f0b95839cfee07ed7a90679ae5b5d773ed13eb3e9dc195190e0",
+      "size": 1869
+    },
+    "splatam_params": {
+      "path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/splatam_full240/params.npz",
+      "sha256": "cb4a8f133a4ce4063f60112fa9689db683988be29f67b9d570231a319849a36f",
+      "size": 262302188
+    },
+    "splatam_result": {
+      "path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/splatam_result_summary.json",
+      "sha256": "94a3d6c437ff025952243007f98c40ff27fb544cc89d34aa3e8b17edf72a6d7b",
+      "size": 1397
+    }
+  },
+  "gaussian_slam_runtime": "2.1.2 12.1 1.8.0",
+  "gpu_1": "1, NVIDIA GeForce RTX 4090, GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d, 525.147.05",
+  "runs": {
+    "gaussian_slam_full240": {
+      "mapping_vis_count": 240,
+      "path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240",
+      "submap_checkpoint_count": 25
+    },
+    "splatam_full240": {
+      "mapping_vis_count": 0,
+      "path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/splatam_full240",
+      "submap_checkpoint_count": 0
+    }
+  },
+  "status": "PASS"
+}
