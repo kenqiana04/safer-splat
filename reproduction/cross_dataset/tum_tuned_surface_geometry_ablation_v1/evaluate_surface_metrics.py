@@ -1,0 +1,17 @@
+"""Evaluate metric point-to-plane and depth-derived normal quality on fixed eval assets."""
+from __future__ import annotations
+import argparse, importlib.util, json
+from pathlib import Path
+import numpy as np
+import torch
+def load(path):
+ s=importlib.util.spec_from_file_location("surface_launch",path); m=importlib.util.module_from_spec(s); assert s and s.loader; s.loader.exec_module(m); return m
+def normals(depth,fx,fy,cx,cy):
+ h,w=depth.shape; u,v=np.meshgrid(np.arange(w,dtype=np.float32),np.arange(h,dtype=np.float32)); p=np.stack(((u-cx)/fx*depth,(v-cy)/fy*depth,depth),-1); vx=p[1:-1,2:]-p[1:-1,:-2]; vy=p[2:,1:-1]-p[:-2,1:-1]; n=np.cross(vx,vy); n/=np.maximum(np.linalg.norm(n,axis=-1,keepdims=True),np.finfo(np.float32).tiny); n[n[...,2]>0]*=-1; full=np.zeros((h,w,3),np.float32); full[1:-1,1:-1]=n; return full
+def main():
+ p=argparse.ArgumentParser(); p.add_argument("--launcher",type=Path,required=True); p.add_argument("--source",type=Path,required=True); p.add_argument("--candidate",required=True); p.add_argument("--checkpoint",type=Path,required=True); p.add_argument("--steps",type=int,required=True); p.add_argument("--prior",type=Path,required=True); p.add_argument("--targets",type=Path,required=True); p.add_argument("--out",type=Path,required=True); a=p.parse_args(); launch=load(a.launcher); cfg=launch.configure(a.source,a.candidate,a.out/"ephemeral",a.steps,a.prior,a.targets); pipe=cfg.pipeline.setup(device="cuda:0",test_mode="test",world_size=1,local_rank=0); payload=torch.load(a.checkpoint,map_location="cpu"); pipe.load_state_dict(payload["pipeline"],strict=True); pipe.eval(); camera0=pipe.datamanager.eval_dataset._dataparser_outputs.cameras; fx,fy,cx,cy=map(float,(camera0.fx[0],camera0.fy[0],camera0.cx[0],camera0.cy[0])); plane=[]; angles=[]; count=0
+ with torch.no_grad():
+  for i in range(len(pipe.datamanager.fixed_indices_eval_dataloader)):
+   cam,batch=pipe.datamanager.fixed_indices_eval_dataloader[i]; pred=pipe.model.get_outputs_for_camera(cam.to(pipe.device))["depth"].squeeze(-1).float().cpu().numpy(); idx=int(batch["image_idx"]); target=np.load(a.targets/f"{idx:06d}.npz",allow_pickle=False); factor=target["plane_factor"]; valid=target["surface_valid"].astype(bool); gt_normal=target["surface_normal"]; mask=valid&np.isfinite(pred)&(pred>0); gt_depth=pipe.datamanager.eval_dataset._dataparser_outputs.metadata["depth_filenames"][idx]; import imageio.v3 as iio; depth=iio.imread(gt_depth).astype(np.float32)*.0002; residual=(pred-depth)*factor; plane.append(residual[mask]); pn=normals(pred,fx,fy,cx,cy); dot=np.abs(np.sum(pn*gt_normal,-1)); angle=np.degrees(np.arccos(np.clip(dot,-1,1))); angles.append(angle[mask]); count+=int(mask.sum())
+ plane=np.concatenate(plane); angles=np.concatenate(angles); out={"candidate":a.candidate,"surface_valid_pixel_count":count,"point_to_plane_mae":float(np.mean(abs(plane))),"point_to_plane_rmse":float(np.sqrt(np.mean(plane**2))),"normal_angular_mean_deg":float(np.mean(angles)),"normal_angular_median_deg":float(np.median(angles)),"normal_lt_11_25":float(np.mean(angles<11.25)),"normal_lt_22_5":float(np.mean(angles<22.5)),"normal_lt_30":float(np.mean(angles<30.0)),"normal_orientation":"abs(dot) for local sign ambiguity","formal_training":False}; a.out.parent.mkdir(parents=True,exist_ok=True); a.out.write_text(json.dumps(out,indent=2,sort_keys=True)+"\n",encoding="utf-8"); print(json.dumps(out,sort_keys=True))
+if __name__=="__main__": main()

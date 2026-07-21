@@ -1,0 +1,17 @@
+{
+  "final_10k_executed": true,
+  "formal_training": false,
+  "selected": {
+    "absrel_delta_vs_s0": -0.01684445242368332,
+    "acceptable_depth_screen_pass": false,
+    "candidate": "S2_POINT_TO_PLANE_LOSS",
+    "common_6k_stability_gate": true,
+    "delta1_gain_vs_s0": 0.025943302886190844,
+    "id": "S2",
+    "meaningful_surface_improvement_screen_pass": true,
+    "normal_median_improvement_deg_vs_s0": 0.19615936279296875,
+    "point_to_plane_mae_relative_improvement_vs_s0": 0.052138600442077965,
+    "qualified": true
+  },
+  "selection_class": "MEANINGFUL_SURFACE_IMPROVEMENT_SCREEN_PASS"
+}

@@ -1,0 +1,22 @@
+{
+  "active_index_equal": true,
+  "all_finite": true,
+  "exact_deterministic": true,
+  "h_statistics": {
+    "max": 75.09353637695312,
+    "mean": 0.3049856745527693,
+    "median": 0.021303470246493816,
+    "min": -6.694201147183776e-06,
+    "p95": 0.2509462848305702
+  },
+  "h_units": "repository GSplat ellipsoid safety value; not metre clearance",
+  "negative_h_count": 3,
+  "query_count": 908,
+  "query_function": "splat.gsplat_utils.GSplatLoader.query_distance(distance_type=ball-to-ellipsoid, radius=0.0)",
+  "run_a_b_torch_equal": true,
+  "run_a_c_torch_equal": true,
+  "run_a_finite_count": 908,
+  "run_b_finite_count": 908,
+  "run_c_finite_count": 908,
+  "zero_or_near_zero_h_count": 0
+}

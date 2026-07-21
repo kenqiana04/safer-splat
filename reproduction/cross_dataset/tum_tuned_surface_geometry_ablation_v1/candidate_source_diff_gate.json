@@ -1,0 +1,40 @@
+{
+  "status": "PASS_TUNED_SURFACE_MINIMAL_DIFF_SOURCE_GATE",
+  "variants": {
+    "S0_TUNED_BASELINE": {
+      "changed_files": [],
+      "forbidden_change": false,
+      "model_ast_sha256": "5e5d89119b2566202013c2aa2976856969ebb61aea0067830a82e38f79375979",
+      "pass": true,
+      "required_present": true,
+      "semantic_diff_count": 0
+    },
+    "S1_SURFACE_ORIENTED_PRIOR": {
+      "changed_files": [
+        "tum_metric_depth_splatfacto.py"
+      ],
+      "forbidden_change": false,
+      "model_ast_sha256": "64febb30b8d7725baf11e6d2a3ad51f881563b063436a14f7dafa02f1cd9de6c",
+      "pass": true,
+      "required_present": true
+    },
+    "S2_POINT_TO_PLANE_LOSS": {
+      "changed_files": [
+        "tum_metric_depth_splatfacto.py"
+      ],
+      "forbidden_change": false,
+      "model_ast_sha256": "7fe2047e5430ef1e33be21caefbd01a44fc445e8e47a8d08a4feec572c42b596",
+      "pass": true,
+      "required_present": true
+    },
+    "S3_SURFACE_PRIOR_PLUS_POINT_TO_PLANE": {
+      "changed_files": [
+        "tum_metric_depth_splatfacto.py"
+      ],
+      "forbidden_change": false,
+      "model_ast_sha256": "e4dbb14f725dbdc2d769792d66ebec0d7dd8acc6602a4f1dbf7d60c824f15f4b",
+      "pass": true,
+      "required_present": true
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "algorithm": "DETERMINISTIC_TUM_RGBD_SURFACE_ORIENTED_INITIALIZATION",
+  "anisotropy_quantiles": [
+    2.858450174331665,
+    3.0101775884628297,
+    3.468724012374878,
+    4.994865059852599,
+    25.0
+  ],
+  "asset": {
+    "arrays_sha256": {
+      "eigenvalues": "46a96077307e846c84ca746832f2921cc756506328cacf2b3cf1e3fbedf3a415",
+      "log_scales": "1f550abb6aef92e27dbe099ecb8058a98e00719b95aac3d4406ef118618e89c5",
+      "neighbor_distance_summary": "07a8d4562602746f102f8fc889028af3722c16bf74192dc735d5e6fbe2f789d8",
+      "normals": "d181d772febcfae147628a4d5c2a5ea69b4caa9acedeb04bd7669d4b0a665543",
+      "prior_valid": "1420b890aa278615a73cf1d3b8bb0422f29be151d27c7232a0f9884ab89d5ed7",
+      "quats_wxyz": "206780ebbecd84272c09ec1680cdb0142952cfb2298e9b392d9a2cf791c20ff7",
+      "rgb": "17cdcf67bc01a0df078f94c10a125240942a6c99810f945125a738d7fa68d0e5",
+      "xyz": "115fa517be5cfc62fd53c27c6fa955ad769ab43d14d222c53ad4fd134ed619bd"
+    },
+    "path": "/disk1/zlab/maintenance_records/tum_tuned_surface_geometry_ablation_v1/assets/surface_prior/tum_surface_oriented_prior_v1.npz",
+    "sha256": "b4be9de894858f7f07d24a9156721cb74a6a3dbd4bd97975c905650bbef88dbc"
+  },
+  "double_build_exact": true,
+  "fallback_count": 0,
+  "knn": {
+    "eps": 0.0,
+    "k_query": 17,
+    "nonself_neighbors": 16,
+    "p": 2,
+    "workers": 1
+  },
+  "normal_scale_quantiles": [
+    0.001999999862164259,
+    0.004365183622576296,
+    0.005788517650216818,
+    0.010678579797968267,
+    0.015000000596046448
+  ],
+  "prior_valid_count": 359140,
+  "prior_valid_fraction": 1.0,
+  "quaternion_norm_max_abs_error": 1.1920928955078125e-07,
+  "scipy": {
+    "ckdtree": "scipy.spatial._ckdtree.cKDTree",
+    "path": "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/site-packages/scipy/__init__.py",
+    "version": "1.15.3"
+  },
+  "seed": {
+    "count": 359140,
+    "order_identity": true,
+    "path": "/disk1/zlab/maintenance_records/tum_map_geometry_root_cause_repair_v1/metric_seed_points/tum_fr1_room_metric_seed_points.npz",
+    "rgb_sha256": "17cdcf67bc01a0df078f94c10a125240942a6c99810f945125a738d7fa68d0e5",
+    "xyz_sha256": "115fa517be5cfc62fd53c27c6fa955ad769ab43d14d222c53ad4fd134ed619bd"
+  },
+  "tangent_scale_quantiles": [
+    0.005999999586492777,
+    0.013678491627797485,
+    0.01884849462658167,
+    0.03661964368075132,
+    0.04999999701976776
+  ]
+}
