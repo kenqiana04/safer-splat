@@ -1,0 +1,29 @@
+{
+  "adapters": [
+    {
+      "depth_list_sha256": "be9005a1fff80b86ef46a9c683822be2930d84e74f65cd15cd3cf059558b23b2",
+      "frames": 240,
+      "groundtruth_sha256": "1053343d536418a6428f598bc4bbd5cef1f234ab00effcd14d3b8cfa162fc0b3",
+      "name": "train_240",
+      "path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/dataset_adapters_v2/train_240/rgbd_dataset_freiburg1_room",
+      "rgb_list_sha256": "6ff664c8f8473d2729414b559433896149e63c2ec959cfe248ddc0d86eed7933",
+      "symlink_only": true,
+      "timestamp_step_seconds": 0.04
+    },
+    {
+      "anchor_frame_index": 0,
+      "depth_list_sha256": "95ce8d850926875db5631438ab17cb023202510d7772ce26ad63752473309de9",
+      "frames": 61,
+      "groundtruth_sha256": "3aab2909191f2b03b8a67f85103d505aed67bd2216a273c64dd4da3f035905eb",
+      "metric_frame_count": 60,
+      "name": "eval_anchor_61",
+      "path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/dataset_adapters_v2/eval_anchor_61/rgbd_dataset_freiburg1_room",
+      "rgb_list_sha256": "2639cf44296330397e804651e87bcdb31d2a4cc59037aa63ff0df894d9ffce20",
+      "symlink_only": true,
+      "timestamp_step_seconds": 0.04
+    }
+  ],
+  "depth_scale": 0.0002,
+  "source_registry_sha256": "b06fc045fe7fd145f1590afaff8e1f0a92fcce7513c3316a14c1ed3927b770c8",
+  "status": "PASS"
+}

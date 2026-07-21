@@ -1,0 +1,147 @@
+{
+  "primary_table_excludes_system_level": true,
+  "rows": [
+    {
+      "AbsRel": 0.188127,
+      "G0": "FAIL_delta1_lt_0.75",
+      "RMSE": 0.477082,
+      "delta1": 0.685632,
+      "method": "INTERNAL_TUNED_C_L050_K2000_B020",
+      "ratio": 0.992987,
+      "static_audit": "PASS"
+    },
+    {
+      "AbsRel": 0.197457,
+      "G0": "FAIL_delta1_lt_0.75",
+      "RMSE": 0.49908,
+      "delta1": 0.671166,
+      "method": "INTERNAL_S2_POINT_TO_PLANE",
+      "ratio": 0.996289,
+      "static_audit": "PASS"
+    },
+    {
+      "AbsRel": 0.02713391510769725,
+      "RMSE": 0.13626602962613105,
+      "RMSE_log": 0.07426138737549384,
+      "SqRel": 0.01222005336312577,
+      "absrel": 0.02713391510769725,
+      "anchor_excluded": true,
+      "delta1": 0.979695251584053,
+      "delta2": 0.9914355834325155,
+      "delta3": 0.9964782536029816,
+      "frame_count": 60,
+      "lpips": 0.3297833725810051,
+      "method": "SPLATAM_GTPOSE_MAP_ONLY",
+      "native_depth_semantics": "alpha-composited expected camera-z from the official depth-plus-silhouette raster pass",
+      "per_frame_alignment": false,
+      "psnr": 19.19094182650248,
+      "range_bins_m": {
+        "far_ge_3m": [
+          3,
+          null
+        ],
+        "mid_1m_to_3m": [
+          1,
+          3
+        ],
+        "near_lt_1m": [
+          0,
+          1
+        ]
+      },
+      "range_metrics": {
+        "far_ge_3m": {
+          "absrel": 0.07307790602660841,
+          "delta1": 0.8762604108563176,
+          "rmse": 0.4666926606937691,
+          "valid": 15030.62962962963
+        },
+        "mid_1m_to_3m": {
+          "absrel": 0.029014924122020603,
+          "delta1": 0.978165864944458,
+          "rmse": 0.133221603743732,
+          "valid": 181774.13333333333
+        },
+        "near_lt_1m": {
+          "absrel": 0.044185579716399005,
+          "delta1": 0.9637313728429833,
+          "rmse": 0.08118351908134562,
+          "valid": 55847.836734693876
+        }
+      },
+      "ratio": 0.9978066603342692,
+      "raw_metric_depth": true,
+      "rmse": 0.13626602962613105,
+      "rmselog": 0.07426138737549384,
+      "scale_fitting": false,
+      "sim3": false,
+      "sqrel": 0.01222005336312577,
+      "ssim": 0.779714259505272,
+      "status": "PASS",
+      "valid": 234146.98333333334
+    },
+    {
+      "AbsRel": 0.06576149673201144,
+      "RMSE": 0.24176508734623592,
+      "RMSE_log": 0.16150100696831943,
+      "SqRel": 0.030562292966836442,
+      "absrel": 0.06576149673201144,
+      "anchor_excluded": true,
+      "delta1": 0.939383312066396,
+      "delta2": 0.9727575361728669,
+      "delta3": 0.9863549917936325,
+      "frame_count": 60,
+      "gaussian_count": 3045467,
+      "lpips": 0.45654525359471637,
+      "method": "GAUSSIAN_SLAM_GTPOSE_MAP_ONLY",
+      "native_depth_semantics": "official Gaussian-SLAM native rasterizer depth output",
+      "per_frame_alignment": false,
+      "psnr": 14.863024886449178,
+      "range_bins_m": {
+        "far_ge_3m": [
+          3,
+          null
+        ],
+        "mid_1m_to_3m": [
+          1,
+          3
+        ],
+        "near_lt_1m": [
+          0,
+          1
+        ]
+      },
+      "range_metrics": {
+        "far_ge_3m": {
+          "absrel": 0.1698695166896169,
+          "delta1": 0.7171811925677153,
+          "rmse": 0.8409299483666053,
+          "valid": 12848.5
+        },
+        "mid_1m_to_3m": {
+          "absrel": 0.0685251053267469,
+          "delta1": 0.9285764376322428,
+          "rmse": 0.23007489082713922,
+          "valid": 147981.31666666668
+        },
+        "near_lt_1m": {
+          "absrel": 0.05881198880044704,
+          "delta1": 0.9606144263389262,
+          "rmse": 0.07404218182126258,
+          "valid": 41871.085106382976
+        }
+      },
+      "ratio": 0.9445883949597677,
+      "raw_metric_depth": true,
+      "rmse": 0.24176508734623592,
+      "rmselog": 0.16150100696831943,
+      "scale_fitting": false,
+      "sim3": false,
+      "sqrel": 0.030562292966836442,
+      "ssim": 0.5667431289951007,
+      "status": "PASS",
+      "submap_checkpoint_count": 25,
+      "valid": 186348.01666666666
+    }
+  ]
+}

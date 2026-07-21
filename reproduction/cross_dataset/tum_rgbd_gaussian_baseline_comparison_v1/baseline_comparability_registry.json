@@ -1,0 +1,44 @@
+{
+  "GAUSSIAN_SLAM_GTPOSE_MAP_ONLY": {
+    "classification": "MAP_ONLY_COMPARABLE",
+    "condition": "task-owned config uses official tracking.odometry_type=gt",
+    "fixed_gt_poses": true,
+    "mapping_core_changes": 0,
+    "noncomment_source_patch_lines": 0,
+    "proof": [
+      {
+        "path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive/src/entities/tracker.py",
+        "required_snippets": [
+          "if self.odometry_type == \"gt\":",
+          "return gt_c2w"
+        ],
+        "sha256": "5800bddbf5f2f41a417ee1c6ebff346935a8b4914ec799e018defd2743e48c88"
+      },
+      {
+        "path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive/src/entities/gaussian_slam.py",
+        "required_snippets": [
+          "estimated_c2w = self.tracker.track",
+          "self.mapper.map"
+        ],
+        "sha256": "e62cf8ecfc20ce6b64dfed421dad921bc3cacc745724ca4f08615f4ab791a4ac"
+      }
+    ],
+    "tracking_pose_updates": false
+  },
+  "SPLATAM_GTPOSE_MAP_ONLY": {
+    "classification": "MAP_ONLY_COMPARABLE",
+    "fixed_gt_poses": true,
+    "mapping_core_changes": 0,
+    "proof": {
+      "path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive/scripts/gaussian_splatting.py",
+      "required_snippets": [
+        "# Use GT Poses for Tracking",
+        "params['cam_unnorm_rots']",
+        "get_loss_gs"
+      ],
+      "sha256": "ad7af3a7fda35786205df60b3e068502fd2d7f2fa1fcc5b00ee662061941f018"
+    },
+    "tracking_pose_updates": false
+  },
+  "status": "PASS"
+}

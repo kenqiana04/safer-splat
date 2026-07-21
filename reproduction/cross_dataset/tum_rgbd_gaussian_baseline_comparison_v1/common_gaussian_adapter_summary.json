@@ -1,0 +1,32 @@
+{
+  "Gaussian-SLAM": {
+    "expected_fields": [
+      "xyz",
+      "features",
+      "scaling",
+      "rotation",
+      "opacity"
+    ],
+    "output_exists": true
+  },
+  "SplaTAM": {
+    "expected_fields": [
+      "means3D",
+      "log_scales",
+      "unnorm_rotations",
+      "logit_opacities",
+      "rgb_colors"
+    ],
+    "output_exists": true
+  },
+  "prohibited_without_verification": [
+    "common_expected_depth",
+    "static_SAFER",
+    "frozen908",
+    "gradient",
+    "continuity",
+    "G0"
+  ],
+  "reason": "no jointly executable export-to-GSplatLoader proof completed",
+  "status": "COMMON_ADAPTER_UNRESOLVED"
+}
