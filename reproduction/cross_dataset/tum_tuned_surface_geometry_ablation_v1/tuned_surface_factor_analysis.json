@@ -1,0 +1,45 @@
+{
+  "basis": [
+    {
+      "absrel_delta_vs_s0": -0.004147962655511872,
+      "acceptable_depth_screen_pass": false,
+      "candidate": "S1_SURFACE_ORIENTED_PRIOR",
+      "common_6k_stability_gate": true,
+      "delta1_gain_vs_s0": 0.009698460255901709,
+      "id": "S1",
+      "meaningful_surface_improvement_screen_pass": false,
+      "normal_median_improvement_deg_vs_s0": 6.0035552978515625,
+      "point_to_plane_mae_relative_improvement_vs_s0": 0.021633805116034632,
+      "qualified": false
+    },
+    {
+      "absrel_delta_vs_s0": -0.01684445242368332,
+      "acceptable_depth_screen_pass": false,
+      "candidate": "S2_POINT_TO_PLANE_LOSS",
+      "common_6k_stability_gate": true,
+      "delta1_gain_vs_s0": 0.025943302886190844,
+      "id": "S2",
+      "meaningful_surface_improvement_screen_pass": true,
+      "normal_median_improvement_deg_vs_s0": 0.19615936279296875,
+      "point_to_plane_mae_relative_improvement_vs_s0": 0.052138600442077965,
+      "qualified": true
+    },
+    {
+      "absrel_delta_vs_s0": -0.005149086968884969,
+      "acceptable_depth_screen_pass": false,
+      "candidate": "S3_SURFACE_PRIOR_PLUS_POINT_TO_PLANE",
+      "common_6k_stability_gate": true,
+      "delta1_gain_vs_s0": -0.0006475273239875401,
+      "id": "S3",
+      "meaningful_surface_improvement_screen_pass": false,
+      "normal_median_improvement_deg_vs_s0": 7.747791290283203,
+      "point_to_plane_mae_relative_improvement_vs_s0": 0.019071497531083614,
+      "qualified": false
+    }
+  ],
+  "geometry_prior_effect": "BENEFICIAL_FOR_NORMALS_BUT_NOT_6K_SELECTION_QUALIFIED",
+  "interaction_effect": "NEGATIVE_FOR_DELTA1_AND_POINT_TO_PLANE_MAE_AT_6K",
+  "interpretation": "SINGLE_SEED_ENGINEERING_ABLATION_NOT_STATISTICAL_SIGNIFICANCE",
+  "rgb_not_used_for_selection": true,
+  "surface_loss_effect": "BENEFICIAL_AND_SELECTED_BY_FROZEN_B_SCREEN"
+}

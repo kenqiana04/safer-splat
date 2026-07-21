@@ -1,0 +1,21 @@
+{
+  "candidate": "S2_POINT_TO_PLANE_LOSS",
+  "depth_loss_beta_m": 0.2,
+  "depth_loss_lambda": 0.1,
+  "formal_training": false,
+  "late_depth_hold_lambda": 0.5,
+  "late_depth_hold_start": 3000,
+  "load_checkpoint": null,
+  "load_dir": null,
+  "load_step": null,
+  "output_root": "/disk1/zlab/maintenance_records/tum_tuned_surface_geometry_ablation_v1/final_candidate/S2_POINT_TO_PLANE_LOSS_10000",
+  "refinement_lock_step": 2000,
+  "resume": false,
+  "seed": 20260716,
+  "source_root": "/disk1/zlab/maintenance_records/tum_tuned_surface_geometry_ablation_v1/source_variants/S2_POINT_TO_PLANE_LOSS",
+  "steps": 10000,
+  "surface_loss_beta_m": 0.02,
+  "surface_loss_lambda": 0.1,
+  "surface_prior": null,
+  "surface_targets": "/disk1/zlab/maintenance_records/tum_tuned_surface_geometry_ablation_v1/assets/train_surface_targets"
+}

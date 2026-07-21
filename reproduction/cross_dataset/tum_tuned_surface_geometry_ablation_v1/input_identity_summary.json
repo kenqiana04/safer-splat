@@ -1,0 +1,56 @@
+{
+  "all_match": true,
+  "checks": {
+    "e3_source": true,
+    "metric_seed": true,
+    "transforms": true,
+    "v1r6_checkpoint": true,
+    "v1r6_config": true
+  },
+  "expected": {
+    "e3_source": "96d1fe63019f04824c9dc4949f91d30627344bb8de05cd62ae3d33c2f3944947",
+    "metric_seed": "c5d69bbc965f16147842ad9813eca6d41d9556dd6af602e5b5049402a12e8b56",
+    "transforms": "b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a",
+    "v1r6_checkpoint": "4941bf1faba1aed31949ee4114898c0eec33ff1a46b7bcadad6d06f5f647ae6b",
+    "v1r6_config": "c9a103c38483f76aed4701489084347566c2437719ae54ea962017469c708cfe"
+  },
+  "gpu": {
+    "available": true,
+    "expected_uuid": "GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d",
+    "query": "1, GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d, NVIDIA GeForce RTX 4090, 6 MiB, 24564 MiB, 0 %",
+    "uuid_match": true
+  },
+  "inputs": {
+    "metric_seed": {
+      "exists": true,
+      "path": "/disk1/zlab/maintenance_records/tum_map_geometry_root_cause_repair_v1/metric_seed_points/tum_fr1_room_metric_seed_points.npz",
+      "sha256": "c5d69bbc965f16147842ad9813eca6d41d9556dd6af602e5b5049402a12e8b56",
+      "size": 5153952
+    },
+    "transforms": {
+      "exists": true,
+      "path": "/disk1/zlab/cross_dataset_assets/processed/tum_rgbd/freiburg1_room/transforms.json",
+      "sha256": "b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a",
+      "size": 178374
+    },
+    "v1r6_checkpoint": {
+      "exists": true,
+      "path": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1r6/splatfacto/20260717_070309/nerfstudio_models/step-000029999.ckpt",
+      "sha256": "4941bf1faba1aed31949ee4114898c0eec33ff1a46b7bcadad6d06f5f647ae6b",
+      "size": 491777938
+    },
+    "v1r6_config": {
+      "exists": true,
+      "path": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1r6/splatfacto/20260717_070309/config.yml",
+      "sha256": "c9a103c38483f76aed4701489084347566c2437719ae54ea962017469c708cfe",
+      "size": 7779
+    }
+  },
+  "source": {
+    "exists": true,
+    "path": "/disk1/zlab/maintenance_records/tum_tuned_surface_geometry_ablation_v1/source_snapshot/exact_tuned_baseline",
+    "python_file_count": 11,
+    "sha256": "96d1fe63019f04824c9dc4949f91d30627344bb8de05cd62ae3d33c2f3944947"
+  },
+  "status": "PASS"
+}

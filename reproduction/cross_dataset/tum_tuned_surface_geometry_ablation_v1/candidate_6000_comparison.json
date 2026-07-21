@@ -1,0 +1,108 @@
+{
+  "baseline": {
+    "AbsRel": 0.21760287165504422,
+    "RMSE": 0.5169623236849514,
+    "RMSE_log": 0.31503046598737783,
+    "SqRel": 0.13300408743846553,
+    "candidate": "S0_TUNED_BASELINE",
+    "checkpoint": "/disk1/zlab/maintenance_records/tum_tuned_surface_geometry_ablation_v1/runs/S0_TUNED_BASELINE_6000_retry1/NONFORMAL_TUNED_SURFACE_S0_TUNED_BASELINE/splatfacto/seed20260716_06000/nerfstudio_models/step-000005999.ckpt",
+    "checkpoint_step": 5999,
+    "delta1": 0.6278826247997342,
+    "delta2": 0.8560385250641548,
+    "delta3": 0.9479859814640765,
+    "formal_training": false,
+    "frame_count": 60,
+    "gaussian": {
+      "bad_quaternion_count": 0,
+      "gaussian_count": 198187,
+      "invalid_covariance_count": 0,
+      "invalid_scale_count": 0,
+      "map_bbox_max": [
+        5.682332515716553,
+        4.541635990142822,
+        5.928658962249756
+      ],
+      "map_bbox_min": [
+        -6.487072944641113,
+        -7.1011786460876465,
+        -2.208207368850708
+      ],
+      "nonfinite_gaussian_count": 0,
+      "opacity_max": 1.0,
+      "opacity_min": 0.0011699615279212594
+    },
+    "id": "S0",
+    "normal_angular_mean_deg": 56.54380416870117,
+    "normal_angular_median_deg": 59.214271545410156,
+    "normal_lt_11_25": 0.02156736615162531,
+    "normal_lt_22_5": 0.08451499020608048,
+    "normal_lt_30": 0.14645080639057523,
+    "normal_orientation": "abs(dot) for local sign ambiguity",
+    "overlap": 1.0,
+    "point_to_plane_mae": 0.2278464138507843,
+    "point_to_plane_rmse": 0.36684930324554443,
+    "ratio": 0.9826123118400574,
+    "rgb_metrics": {
+      "fps": 113.49239349365234,
+      "lpips": 0.7871320843696594,
+      "num_rays_per_sec": 34864860.0,
+      "psnr": 10.93667221069336,
+      "ssim": 0.4595666527748108
+    },
+    "surface_valid_pixel_count": 13450182
+  },
+  "candidates": [
+    {
+      "absrel_delta_vs_s0": -0.004147962655511872,
+      "acceptable_depth_screen_pass": false,
+      "candidate": "S1_SURFACE_ORIENTED_PRIOR",
+      "common_6k_stability_gate": true,
+      "delta1_gain_vs_s0": 0.009698460255901709,
+      "id": "S1",
+      "meaningful_surface_improvement_screen_pass": false,
+      "normal_median_improvement_deg_vs_s0": 6.0035552978515625,
+      "point_to_plane_mae_relative_improvement_vs_s0": 0.021633805116034632,
+      "qualified": false
+    },
+    {
+      "absrel_delta_vs_s0": -0.01684445242368332,
+      "acceptable_depth_screen_pass": false,
+      "candidate": "S2_POINT_TO_PLANE_LOSS",
+      "common_6k_stability_gate": true,
+      "delta1_gain_vs_s0": 0.025943302886190844,
+      "id": "S2",
+      "meaningful_surface_improvement_screen_pass": true,
+      "normal_median_improvement_deg_vs_s0": 0.19615936279296875,
+      "point_to_plane_mae_relative_improvement_vs_s0": 0.052138600442077965,
+      "qualified": true
+    },
+    {
+      "absrel_delta_vs_s0": -0.005149086968884969,
+      "acceptable_depth_screen_pass": false,
+      "candidate": "S3_SURFACE_PRIOR_PLUS_POINT_TO_PLANE",
+      "common_6k_stability_gate": true,
+      "delta1_gain_vs_s0": -0.0006475273239875401,
+      "id": "S3",
+      "meaningful_surface_improvement_screen_pass": false,
+      "normal_median_improvement_deg_vs_s0": 7.747791290283203,
+      "point_to_plane_mae_relative_improvement_vs_s0": 0.019071497531083614,
+      "qualified": false
+    }
+  ],
+  "final_10k_authorized_by_gate": true,
+  "formal_training": false,
+  "selected_candidate": {
+    "absrel_delta_vs_s0": -0.01684445242368332,
+    "acceptable_depth_screen_pass": false,
+    "candidate": "S2_POINT_TO_PLANE_LOSS",
+    "common_6k_stability_gate": true,
+    "delta1_gain_vs_s0": 0.025943302886190844,
+    "id": "S2",
+    "meaningful_surface_improvement_screen_pass": true,
+    "normal_median_improvement_deg_vs_s0": 0.19615936279296875,
+    "point_to_plane_mae_relative_improvement_vs_s0": 0.052138600442077965,
+    "qualified": true
+  },
+  "selection_class": "MEANINGFUL_SURFACE_IMPROVEMENT_SCREEN_PASS",
+  "single_seed_interpretation": "SINGLE_SEED_ENGINEERING_ABLATION_NOT_STATISTICAL_SIGNIFICANCE"
+}

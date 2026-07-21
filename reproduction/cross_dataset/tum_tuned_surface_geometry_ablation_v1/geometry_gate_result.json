@@ -1,0 +1,60 @@
+{
+  "acceptable_failure_reason": "raw delta1 below 0.75 acceptable threshold",
+  "controller_dynamics_qp_executed": false,
+  "degraded_gate_pass": true,
+  "depth_acceptable": false,
+  "final_status": "PASS_TUM_TUNED_SURFACE_GEOMETRY_DEGRADED_IMPROVEMENT",
+  "formal_protocol_candidate": false,
+  "formal_training_executed": false,
+  "g0_acceptable": false,
+  "g1_authorized": false,
+  "internal_gate": "INTERNAL_G0_GEOMETRY_GATE_NOT_A_PUBLIC_BENCHMARK",
+  "navigation_executed": false,
+  "raw_depth": {
+    "AbsRel": 0.19745672436352782,
+    "RMSE": 0.49908002330609996,
+    "RMSE_log": 0.2853769499076076,
+    "SqRel": 0.11774888736700008,
+    "candidate": "S2_POINT_TO_PLANE_LOSS",
+    "checkpoint": "/disk1/zlab/maintenance_records/tum_tuned_surface_geometry_ablation_v1/final_candidate/S2_POINT_TO_PLANE_LOSS_10000/NONFORMAL_TUNED_SURFACE_S2_POINT_TO_PLANE_LOSS/splatfacto/seed20260716_10000/nerfstudio_models/step-000009999.ckpt",
+    "checkpoint_step": 9999,
+    "delta1": 0.6711657370992086,
+    "delta2": 0.8883051312180632,
+    "delta3": 0.957330177293081,
+    "formal_training": false,
+    "frame_count": 60,
+    "gaussian": {
+      "bad_quaternion_count": 0,
+      "gaussian_count": 188701,
+      "invalid_covariance_count": 0,
+      "invalid_scale_count": 0,
+      "map_bbox_max": [
+        5.2477707862854,
+        3.67865252494812,
+        5.369543552398682
+      ],
+      "map_bbox_min": [
+        -5.483798503875732,
+        -9.574405670166016,
+        -2.3528029918670654
+      ],
+      "nonfinite_gaussian_count": 0,
+      "opacity_max": 1.0,
+      "opacity_min": 0.0008531867642886937
+    },
+    "median_ratio": 0.9962885975837708,
+    "overlap": 1.0,
+    "ratio": 0.9962885975837708,
+    "rgb_metrics": {
+      "fps": 111.20829772949219,
+      "lpips": 0.7840513586997986,
+      "num_rays_per_sec": 34163192.0,
+      "psnr": 11.053074836730957,
+      "ssim": 0.4623427093029022
+    }
+  },
+  "safer_rollout_executed": false,
+  "technical_static_safer_pass": true,
+  "unresolved_critical_fields": [],
+  "v1r7_executed": false
+}

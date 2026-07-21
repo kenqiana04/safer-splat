@@ -1,0 +1,29 @@
+{
+  "baseline_source_sha256": "a21268d2a27c138340f7d2101bb3f34843e8590e2100df077c8b839264b93a43",
+  "variants": {
+    "S0_TUNED_BASELINE": {
+      "point_to_plane_loss": false,
+      "s0_byte_identical": true,
+      "source_sha256": "a21268d2a27c138340f7d2101bb3f34843e8590e2100df077c8b839264b93a43",
+      "surface_prior": false
+    },
+    "S1_SURFACE_ORIENTED_PRIOR": {
+      "point_to_plane_loss": false,
+      "s0_byte_identical": false,
+      "source_sha256": "d4359c20d56275a2bb9115c042111e0e7ff5d30c2cde27884391a22c3d849d19",
+      "surface_prior": true
+    },
+    "S2_POINT_TO_PLANE_LOSS": {
+      "point_to_plane_loss": true,
+      "s0_byte_identical": false,
+      "source_sha256": "65c6cce8cb2baee32b29bd633f7493fe51fd6a0fa8b259bdc75ad23f77746e20",
+      "surface_prior": false
+    },
+    "S3_SURFACE_PRIOR_PLUS_POINT_TO_PLANE": {
+      "point_to_plane_loss": true,
+      "s0_byte_identical": false,
+      "source_sha256": "2fce241b95b2e96152a3f615857460f87952162cfd758f93b99e7af1e09f477b",
+      "surface_prior": true
+    }
+  }
+}
