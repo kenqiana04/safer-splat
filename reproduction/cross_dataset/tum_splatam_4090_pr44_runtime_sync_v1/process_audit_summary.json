@@ -1,0 +1,11 @@
+{
+  "status": "PASS_NO_PREEXISTING_REPOSITORY_ACTIVITY_DETECTED",
+  "repository_processes_before_audit": 0,
+  "gpu_1_compute_processes": 0,
+  "git_locks": [],
+  "tmux_sessions_unrelated_to_checkout": [
+    "internvl2_full290_server",
+    "slct_full290_v222_resume"
+  ],
+  "note": "The only repository process observed during collection was this task's short-lived audit shell. It did not perform checkout mutation."
+}

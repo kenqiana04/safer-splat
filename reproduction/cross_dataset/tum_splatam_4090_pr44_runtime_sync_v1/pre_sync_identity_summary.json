@@ -1,0 +1,15 @@
+{
+  "status": "BLOCKED_BY_4090_AUTHORITATIVE_CHECKOUT_DIRTY",
+  "authoritative_checkout": "/disk1/zlab/projects/safer-splat",
+  "pre_sync_head": "57c55485e357343c3d166a9123ab9a9275c12067",
+  "pre_sync_branch": "master",
+  "origin": "https://github.com/kenqiana04/safer-splat.git",
+  "git_locks": [],
+  "untracked_files": [
+    "work/risk_aware_cbf/REPORT_V4C_HIERARCHICAL_CANDIDATE_EVALUATION_V0.md",
+    "work/risk_aware_cbf/REPORT_VANS_SHADOW_FEASIBILITY_AUDIT.md",
+    "work/risk_aware_cbf/paper_materials/VANS_ACTION_SEMANTICS_AUDIT.md"
+  ],
+  "switch_attempted": false,
+  "reason": "The mandatory porcelain-v2 audit is not empty. Protocol prohibits stash, deletion, overwrite, clean, force checkout, or synchronization."
+}
