@@ -1,0 +1,17 @@
+{
+  "active_min_hessian_used": false,
+  "conclusion": "A local-frame hess_h is incompatible with current CBF products unless R is identity.",
+  "df_frame": "world",
+  "extension": "3x3 hessian is padded with 3x3 zero cross/velocity blocks to 6x6",
+  "f_position_frame": "world",
+  "g_acceleration_frame": "world",
+  "gradient_frame_required": "world",
+  "hessian_frame_required": "world",
+  "hessian_per_gaussian_constraint": true,
+  "query_state_frame": "world metric coordinates x[..., :3]",
+  "relative_degree": 2,
+  "required_products": [
+    "f.T @ H @ f",
+    "g.T @ H @ f"
+  ]
+}

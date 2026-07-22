@@ -1,0 +1,88 @@
+{
+  "case_count": 4096,
+  "coordinate_frame": {
+    "general_official_local": {
+      "max": 2.5236702622422443e-07,
+      "median": 2.348365925119455e-08,
+      "p99": 7.483197346854453e-08
+    },
+    "general_official_world": {
+      "max": 1.1172214046847795,
+      "median": 0.0837034317295513,
+      "p99": 0.5293089258516778
+    },
+    "general_rotated_world": {
+      "max": 2.5236702621774145e-07,
+      "median": 2.3483659199023064e-08,
+      "p99": 7.483197343697191e-08
+    },
+    "identity_official": {
+      "max": 1.1169804217159035e-07,
+      "median": 2.3737757835272973e-08,
+      "p99": 6.84365143625703e-08
+    }
+  },
+  "official_returned": {
+    "error": {
+      "max": 1.1172214046847795,
+      "median": 0.07184165747539022,
+      "p99": 0.5246179643156414
+    },
+    "finite_ratio": 1.0,
+    "hvp": {
+      "max": 1.8929223519670877,
+      "median": 0.05373049420511907,
+      "p99": 0.47540094010984607
+    },
+    "passes": false,
+    "symmetry_max": 0.0
+  },
+  "reference_agreement": {
+    "error": {
+      "max": 2.372786868747165e-10,
+      "median": 5.031330972168947e-13,
+      "p99": 1.468714130847324e-12
+    },
+    "finite_difference_stable_count": 4096,
+    "finite_difference_unstable_count": 0,
+    "symmetry_max": 1.1749496091904413e-15
+  },
+  "rotated_official": {
+    "error": {
+      "max": 2.5236702621774145e-07,
+      "median": 2.3447445571219086e-08,
+      "p99": 7.424997930811386e-08
+    },
+    "finite_ratio": 1.0,
+    "hvp": {
+      "max": 2.9898576439466176e-07,
+      "median": 1.806880680131079e-08,
+      "p99": 7.20737224307609e-08
+    },
+    "passes": true,
+    "symmetry_max": 1.6941607274311262e-16
+  },
+  "rotation_counts": {
+    "ROT_AXIS_X": 128,
+    "ROT_AXIS_Y": 128,
+    "ROT_AXIS_Z": 128,
+    "ROT_GENERAL": 3200,
+    "ROT_IDENTITY": 512
+  },
+  "selection": "SELECT_ROTATED_OFFICIAL_LOCAL_HESSIAN_CONTRACT_CORE_PATCH_REQUIRED",
+  "stable_implicit_world_25": {
+    "error": {
+      "max": 0.0036938085084639856,
+      "median": 2.0855915983465192e-07,
+      "p99": 0.00023112908610335885
+    },
+    "finite_ratio": 1.0,
+    "hvp": {
+      "max": 0.00731554308122901,
+      "median": 1.3604419931364442e-07,
+      "p99": 0.00015742558549490158
+    },
+    "passes": true,
+    "symmetry_max": 1.4850796850730543e-16
+  }
+}
