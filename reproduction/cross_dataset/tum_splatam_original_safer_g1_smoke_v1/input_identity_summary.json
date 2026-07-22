@@ -1,0 +1,21 @@
+{
+  "status": "BLOCKED_BY_TUM_SPLATAM_G1_INPUT_IDENTITY_MISMATCH",
+  "github_pr_44_head": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+  "expected": {
+    "distances_py_blob": "d7f17b67df40e36e458c7a5ed77c4a04659c6f35",
+    "gsplat_utils_py_blob": "782c38eca50e78c605085b481155ed61e4607336",
+    "cbf_utils_py_blob": "7c6e1300b125cc0a2a950ac2835a1fbe3d0de113",
+    "numerical_contract_v2_blob": "7a0d85b0b334c2e94ccc23b033d8453322d72fe1"
+  },
+  "4090_server_checkout": {
+    "path": "/disk1/zlab/projects/safer-splat",
+    "head": "57c55485e357343c3d166a9123ab9a9275c12067",
+    "distances_py_blob": "81940ca59297a2ee3b4214901b038725c2748318",
+    "gsplat_utils_py_blob": "4e704349ddb5b5d6737e38d63965699ecfe81030",
+    "cbf_utils_py_blob": "7c6e1300b125cc0a2a950ac2835a1fbe3d0de113",
+    "numerical_contract_v2": "not present at expected path"
+  },
+  "transforms_sha256_verified": "b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a",
+  "execution_started": false,
+  "reason": "The required PR #44 runtime source and Numerical Contract V2 are absent from the authoritative 4090 checkout. The protocol prohibits substituting or overwriting that checkout."
+}
