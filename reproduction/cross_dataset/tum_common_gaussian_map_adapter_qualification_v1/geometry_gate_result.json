@@ -1,0 +1,14 @@
+{
+  "internal_gate": "INTERNAL_G0_GEOMETRY_GATE_NOT_A_PUBLIC_BENCHMARK",
+  "splatam_g0_acceptable": false,
+  "gaussian_slam_g0_acceptable": false,
+  "reason": "Static functional-autograd h parity did not meet the inherited strict zero-difference contract; no G0 claim is permitted.",
+  "controller_executed": false,
+  "dynamics_executed": false,
+  "qp_executed": false,
+  "navigation_executed": false,
+  "safer_rollout_executed": false,
+  "g1_executed": false,
+  "formal_training_executed": false,
+  "v1r7_executed": false
+}

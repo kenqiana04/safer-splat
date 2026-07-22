@@ -1,0 +1,15 @@
+{
+  "status": "TUM_COMMON_ADAPTER_VERIFIED_STATIC_SAFER_INVALID_STOP",
+  "source_identity": "PASS",
+  "data_identity": "PASS",
+  "map_identity": "PASS",
+  "canonical_exports_deterministic": true,
+  "native_render_parity": "PASS_BOTH_METHODS",
+  "static_query_finite_deterministic_continuous": "PASS_BOTH_METHODS",
+  "strict_functional_autograd_h_parity": "FAIL_BOTH_METHODS",
+  "g0_classification": "PROHIBITED",
+  "unresolved_critical_fields": [
+    "SplaTAM functional h maximum absolute difference 2.288818359375e-05",
+    "Gaussian-SLAM functional h maximum absolute difference 7.62939453125e-06"
+  ]
+}

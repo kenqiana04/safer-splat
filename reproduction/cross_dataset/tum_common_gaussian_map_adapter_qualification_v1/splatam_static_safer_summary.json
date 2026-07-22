@@ -1,0 +1,42 @@
+{
+  "active_indices_deterministic": true,
+  "continuity": {
+    "abs_delta_h_statistics": {
+      "max": 0.03875728324055672,
+      "mean": 0.004946208899184702,
+      "median": 0.0012047936907038093,
+      "min": 2.459337338223122e-07,
+      "p95": 0.020933899283409108
+    },
+    "outlier_indices": [],
+    "pair_count": 299,
+    "status": "PASS",
+    "threshold": 0.1
+  },
+  "exact_deterministic": true,
+  "gaussian_count": 5464102,
+  "gradient_finite": true,
+  "gradient_norm_statistics": {
+    "max": 21.325876235961914,
+    "mean": 0.25733991393028416,
+    "median": 0.1009291298687458,
+    "min": 2.1564055714407004e-05,
+    "p95": 0.7424100905656814
+  },
+  "gradient_repeat_exact": true,
+  "gradient_source": "official GSplatLoader analytic query gradient; functional autograd gate not yet claimed",
+  "h_statistics": {
+    "max": 113.69821166992188,
+    "mean": 0.3068005667425444,
+    "median": 0.002099019126035273,
+    "min": -0.024919357150793076,
+    "p95": 0.13779311627149582
+  },
+  "method": "SplaTAM",
+  "negative_count": 120,
+  "no_filtering": true,
+  "query_count": 908,
+  "query_sha256": "5d0b971c40adc27915a23c1c5da7cc2b260edb07e0f8d6c223fdd8736519d5d2",
+  "runs_finite": true,
+  "runtime_seconds": 236.60941076278687
+}
