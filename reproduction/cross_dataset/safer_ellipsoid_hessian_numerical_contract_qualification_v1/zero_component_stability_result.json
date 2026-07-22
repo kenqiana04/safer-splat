@@ -1,0 +1,8 @@
+{
+  "case_count": 6,
+  "official_y_over_x_finite_ratio": 0.8333333730697632,
+  "stable_equivalent_finite_ratio": 1.0,
+  "classification": "OFFICIAL_Y_OVER_X_NONFINITE",
+  "stable_algebraic_form_required": true,
+  "note": "The +1e-8 local perturbation can exactly cancel a negative component; lambda/(lambda+a^2) avoids y/x."
+}
