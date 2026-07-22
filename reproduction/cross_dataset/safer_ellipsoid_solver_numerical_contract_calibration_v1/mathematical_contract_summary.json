@@ -1,0 +1,7 @@
+{
+  "h_semantics": "signed squared Euclidean distance to ellipsoid boundary",
+  "regular_gradient": "2 * phi * (x - y_star)",
+  "derivation": "KKT plus envelope/Danskin value-function derivative",
+  "finite_unrolled_autograd": "derivative of finite bisection program, not assumed equal to value-function gradient",
+  "nonsmooth_exclusions": ["inside-outside sign boundary", "nonunique projection", "active Gaussian tie"]
+}

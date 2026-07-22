@@ -1,0 +1,83 @@
+{
+  "adapter_version": "CANONICAL_GAUSSIAN_MAP_V1",
+  "arrays": [
+    {
+      "dtype": "float32",
+      "name": "means_world_m",
+      "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/splatam/canonical_export/export_a/means_world_m.npy",
+      "sha256": "7b367fdd6a962726ad67e573df3ad45c4d999f9747e9c408964eda5f5be285bf",
+      "shape": [
+        5464102,
+        3
+      ],
+      "size": 65569352
+    },
+    {
+      "dtype": "float32",
+      "name": "scales_linear_m",
+      "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/splatam/canonical_export/export_a/scales_linear_m.npy",
+      "sha256": "8409a7de99e2d15f8f80c5ff0f4a58fb37d9d19b6f2636ac2dc6e9c3dd4ace2b",
+      "shape": [
+        5464102,
+        3
+      ],
+      "size": 65569352
+    },
+    {
+      "dtype": "float32",
+      "name": "quaternions_wxyz",
+      "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/splatam/canonical_export/export_a/quaternions_wxyz.npy",
+      "sha256": "b121cbb2ac14bcf365f67b6e59a37924cb0ec575bdbb8acf53495cd438224b2a",
+      "shape": [
+        5464102,
+        4
+      ],
+      "size": 87425760
+    },
+    {
+      "dtype": "float32",
+      "name": "opacities_activated",
+      "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/splatam/canonical_export/export_a/opacities_activated.npy",
+      "sha256": "1591b5f2789750d34bbadf0b889a13f819167500383c9ed0e90f5e5a59135e01",
+      "shape": [
+        5464102,
+        1
+      ],
+      "size": 21856536
+    },
+    {
+      "dtype": "float32",
+      "name": "colors_or_sh",
+      "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/splatam/canonical_export/export_a/colors_or_sh.npy",
+      "sha256": "0249d78b8bfe4104b58cd36c4e306906c4a79dbc7d1d4c4b66e505a91a69e663",
+      "shape": [
+        5464102,
+        3
+      ],
+      "size": 65569352
+    },
+    {
+      "dtype": "float32",
+      "name": "source_index",
+      "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/splatam/canonical_export/export_a/source_index.npy",
+      "sha256": "731774025e46adaa88d33d656326df930e7e28bc02138ab15169de268964c882",
+      "shape": [
+        5464102
+      ],
+      "size": 21856536
+    },
+    {
+      "dtype": "float32",
+      "name": "source_submap_index",
+      "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/splatam/canonical_export/export_a/source_submap_index.npy",
+      "sha256": "8aead4b24a5c6ac54503812b9133e754e55cda8c163fbec4913d224f9cc9e8d8",
+      "shape": [
+        5464102
+      ],
+      "size": 21856536
+    }
+  ],
+  "no_filtering": true,
+  "no_reordering": true,
+  "source_asset_sha256": "cb4a8f133a4ce4063f60112fa9689db683988be29f67b9d570231a319849a36f"
+}

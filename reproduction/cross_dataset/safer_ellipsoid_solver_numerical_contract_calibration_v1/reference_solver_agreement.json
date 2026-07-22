@@ -1,0 +1,11 @@
+{
+  "reference_a": "float64 independent KKT bisection, at least 200 iterations or width <= 1e-14",
+  "reference_b": "float64 safeguarded Newton with independent bracket and bisection fallback",
+  "case_count": 4096,
+  "h_max_abs_diff": 9.325873406851315e-15,
+  "y_max_abs_diff": 5.508093980921558e-14,
+  "envelope_gradient_max_abs_diff": 1.1016187961843116e-13,
+  "surface_constraint_max_residual": 2.4278357102502923e-12,
+  "kkt_normalized_max_residual": 3.8277744747673885e-16,
+  "status": "PASS"
+}

@@ -1,0 +1,75 @@
+{
+  "forward": {
+    "h_error": {
+      "max": 1.2950801507825023e-07,
+      "median": 1.612082498646273e-08,
+      "p99": 8.38556372356946e-08
+    },
+    "sign_agreement": true,
+    "y_error": {
+      "max": 4.456701258450586e-08,
+      "median": 7.2516870135456455e-09,
+      "p99": 2.7574175398382563e-08
+    }
+  },
+  "forward_valid": true,
+  "official_analytical": {
+    "cosine_min": 0.9999999999996463,
+    "directional_error": {
+      "max": 1.0910822386301172e-07,
+      "median": 1.0933937162592847e-08,
+      "p99": 5.742963667610574e-08
+    },
+    "error": {
+      "max": 6.272684948077481e-08,
+      "median": 1.614060593563889e-08,
+      "p99": 4.048130855489553e-08
+    },
+    "finite_ratio": 1.0,
+    "reversed_direction_count": 0
+  },
+  "official_valid": true,
+  "reference": {
+    "edge_case_count": 0,
+    "envelope_vs_fd_cosine_min": 0.9999999999999996,
+    "envelope_vs_fd_error": {
+      "max": 1.217982532058746e-09,
+      "median": 1.1361951372055999e-10,
+      "p99": 3.982332774570073e-10
+    },
+    "finite_difference_stable_case_count": 4096,
+    "gradient_max_abs_diff": 1.1016187961843116e-13,
+    "h_max_abs_diff": 9.325873406851315e-15,
+    "kkt_max_residual": 3.8277744747673885e-16,
+    "regular_case_count": 4096,
+    "surface_max_residual": 2.4278357102502923e-12,
+    "y_max_abs_diff": 5.508093980921558e-14
+  },
+  "runtime": {
+    "autocast": false,
+    "device": "cuda:0",
+    "dtype": "float32"
+  },
+  "seed": 20260722,
+  "selection": "SELECT_OFFICIAL_ANALYTICAL_ENVELOPE_GRADIENT_CONTRACT",
+  "sources": {
+    "exact_functional_sha256": "323f8366d86b40f3e11a2b3b53248c17c7b5af6a0150ed2f540a96cebb4581c5",
+    "raw_distances_sha256": "403d812349734b4111246abc5be802d257172a58be26aea9fed471d7c1e6d6a8"
+  },
+  "unrolled_autograd": {
+    "cosine_min": -0.13320107485663496,
+    "directional_error": {
+      "max": 0.9078936360930896,
+      "median": 0.008058936722080719,
+      "p99": 0.05488295616005359
+    },
+    "error": {
+      "max": 1.0930575874728226,
+      "median": 0.013359267484591899,
+      "p99": 0.06676024215034872
+    },
+    "finite_ratio": 1.0,
+    "reversed_direction_count": 1
+  },
+  "unrolled_valid": false
+}

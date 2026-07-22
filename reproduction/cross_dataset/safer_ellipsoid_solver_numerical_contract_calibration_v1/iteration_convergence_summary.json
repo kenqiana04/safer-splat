@@ -1,0 +1,71 @@
+{
+  "case_count": 1024,
+  "iterations": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    40,
+    60,
+    100
+  ],
+  "rows": [
+    {
+      "iterations": 5,
+      "forward_h_median_normalized_error": 0.0013282458720204724,
+      "official_envelope_median_normalized_error": 0.0013114907484583368,
+      "unrolled_median_normalized_error": 0.013640552631006931
+    },
+    {
+      "iterations": 10,
+      "forward_h_median_normalized_error": 4.011902335205227e-05,
+      "official_envelope_median_normalized_error": 4.249433445294882e-05,
+      "unrolled_median_normalized_error": 0.013324454775371771
+    },
+    {
+      "iterations": 15,
+      "forward_h_median_normalized_error": 1.2961381535205477e-06,
+      "official_envelope_median_normalized_error": 1.2631182056334664e-06,
+      "unrolled_median_normalized_error": 0.01334802315774592
+    },
+    {
+      "iterations": 20,
+      "forward_h_median_normalized_error": 4.6664844049970396e-08,
+      "official_envelope_median_normalized_error": 4.440998746353486e-08,
+      "unrolled_median_normalized_error": 0.01334964235761808
+    },
+    {
+      "iterations": 25,
+      "forward_h_median_normalized_error": 1.5459616121451598e-08,
+      "official_envelope_median_normalized_error": 1.6119923171876372e-08,
+      "unrolled_median_normalized_error": 0.013349568128338502
+    },
+    {
+      "iterations": 30,
+      "forward_h_median_normalized_error": 1.5801496085883e-08,
+      "official_envelope_median_normalized_error": 1.6276783911328513e-08,
+      "unrolled_median_normalized_error": 0.013349566841894396
+    },
+    {
+      "iterations": 40,
+      "forward_h_median_normalized_error": 1.5801496085883e-08,
+      "official_envelope_median_normalized_error": 1.6276783911328513e-08,
+      "unrolled_median_normalized_error": 0.013349564219887124
+    },
+    {
+      "iterations": 60,
+      "forward_h_median_normalized_error": 1.5801496085883e-08,
+      "official_envelope_median_normalized_error": 1.6276783911328513e-08,
+      "unrolled_median_normalized_error": 0.013349564219887124
+    },
+    {
+      "iterations": 100,
+      "forward_h_median_normalized_error": 1.5801496085883e-08,
+      "official_envelope_median_normalized_error": 1.6276783911328513e-08,
+      "unrolled_median_normalized_error": 0.013349564219887124
+    }
+  ],
+  "conclusion": "Finite-program autograd is a distinct derivative: forward/envelope errors shrink with bisection resolution while unrolled error remains materially larger at the frozen 25-step contract. Diagnostic only; runtime remains 25 steps."
+}
