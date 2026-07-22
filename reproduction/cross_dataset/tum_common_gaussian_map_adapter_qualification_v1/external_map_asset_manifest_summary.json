@@ -1,0 +1,86 @@
+{
+  "gaussian_slam": {
+    "count": 3045467,
+    "manifest": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/manifest_a.json",
+    "method": "Gaussian-SLAM",
+    "output": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a",
+    "roundtrip": {
+      "status": "PASS"
+    }
+  },
+  "input_immutability": {
+    "splatam_params_unchanged": true
+  },
+  "splatam": {
+    "count": 5464102,
+    "covariance": {
+      "eigenvalue_max": 0.01471466669721249,
+      "eigenvalue_min": 2.1327117555441513e-12,
+      "finite": true,
+      "formula": "R @ diag(scales_linear_m**2) @ R.T",
+      "positive_definite": true,
+      "sample_count": 4096
+    },
+    "manifest": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/splatam/canonical_export/manifest_a.json",
+    "method": "SplaTAM",
+    "numeric": {
+      "anisotropy_quantiles": {
+        "max": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "p95": 1.0
+      },
+      "bbox_max": [
+        7.53753137588501,
+        5.608800888061523,
+        4.4854512214660645
+      ],
+      "bbox_min": [
+        -2.940378189086914,
+        -4.118527412414551,
+        -7.487321853637695
+      ],
+      "gaussian_count": 5464102,
+      "means_finite": true,
+      "opacity_finite": true,
+      "opacity_quantiles": {
+        "max": 0.9999996423721313,
+        "mean": 0.22556847447019593,
+        "median": 0.04109891131520271,
+        "min": 0.0003330805920995772,
+        "p95": 0.9937909185886383
+      },
+      "opacity_range": [
+        0.0003330805920995772,
+        0.9999996423721313
+      ],
+      "positive_scale_count": 5464102,
+      "quaternion_finite": true,
+      "quaternion_norm": {
+        "max": 1.000000238418579,
+        "mean": 0.9999999780222011,
+        "median": 1.0,
+        "min": 0.9999997615814209,
+        "p95": 1.0
+      },
+      "scale_quantiles": {
+        "max": 0.42196735739707947,
+        "mean": 0.007680368313681794,
+        "median": 0.0057806409895420074,
+        "min": 1.7286168940700009e-07,
+        "p95": 0.02036207728087902
+      },
+      "scales_finite": true
+    },
+    "output": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/splatam/canonical_export/export_a",
+    "roundtrip": {
+      "colors_max_abs_diff": 0.0,
+      "means_max_abs_diff": 0.0,
+      "opacity_max_abs_diff": 8.940696716308594e-08,
+      "quaternion_rotation_matrix_max_abs_diff": 4.76837158203125e-07,
+      "scales_max_relative_diff": 4.212008661852451e-07,
+      "status": "PASS"
+    }
+  }
+}

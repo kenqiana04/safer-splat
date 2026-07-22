@@ -1,0 +1,21 @@
+{
+  "canonical_contract": "CANONICAL_GAUSSIAN_MAP_V1",
+  "splatam": {
+    "adapter_status": "SPLATAM_COMMON_ADAPTER_VERIFIED",
+    "canonical_export_deterministic": true,
+    "native_render_parity": "PASS",
+    "coordinate_projection_parity": "PASS_BY_IDENTICAL_CANONICAL_MEANS_AND_NATIVE_RENDER_PARITY",
+    "static_safer_status": "INVALID_STRICT_FUNCTIONAL_H_PARITY",
+    "g0_status": "NOT_CLASSIFIED"
+  },
+  "gaussian_slam": {
+    "adapter_status": "GAUSSIAN_SLAM_COMMON_ADAPTER_VERIFIED",
+    "canonical_export_deterministic": true,
+    "native_render_parity": "PASS",
+    "coordinate_projection_parity": "PASS_BY_FROZEN_NATIVE_CONCAT_AND_NATIVE_RENDER_PARITY",
+    "static_safer_status": "INVALID_STRICT_FUNCTIONAL_H_PARITY",
+    "g0_status": "NOT_CLASSIFIED"
+  },
+  "no_filtering": true,
+  "result": "TUM_COMMON_ADAPTER_VERIFIED_STATIC_SAFER_INVALID_STOP"
+}
