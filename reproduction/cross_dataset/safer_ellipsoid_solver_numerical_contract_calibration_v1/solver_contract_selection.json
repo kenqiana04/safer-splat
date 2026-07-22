@@ -1,0 +1,7 @@
+{
+  "case": "CASE_A",
+  "selection": "SELECT_OFFICIAL_ANALYTICAL_ENVELOPE_GRADIENT_CONTRACT",
+  "official_analytical_valid": true,
+  "finite_unrolled_valid": false,
+  "reason": "Official 25-step h/y and analytical envelope gradient pass independent float64 KKT references and five-point FD. Unrolled reverse-mode gradient fails the same pre-registered thresholds; it is a finite-program derivative."
+}

@@ -1,0 +1,10 @@
+{
+  "method": "float64 REFERENCE_A signed squared distance, five-point central difference",
+  "step_rule": "max(1e-6, 1e-5*(1+abs(x_j))) with step/2 and step*2 sensitivity",
+  "stable_case_count": 4096,
+  "median_normalized_l2_error": 1.1361951372055999e-10,
+  "p99_normalized_l2_error": 3.982332774570073e-10,
+  "max_normalized_l2_error": 1.217982532058746e-09,
+  "minimum_cosine": 0.9999999999999996,
+  "status": "FINITE_DIFFERENCE_STABLE"
+}

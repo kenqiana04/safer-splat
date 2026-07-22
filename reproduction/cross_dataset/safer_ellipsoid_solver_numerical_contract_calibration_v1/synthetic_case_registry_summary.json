@@ -1,0 +1,14 @@
+{
+  "pr41_synthetic_seed": 20260722,
+  "pr41_case_count": 4096,
+  "edge_seed": 20260716,
+  "edge_case_count": 40,
+  "edge_classes": {
+    "SURFACE_BOUNDARY": 8,
+    "PROJECTION_NONUNIQUE": 8,
+    "SIGN_BOUNDARY": 8,
+    "AXIS_TIE": 8,
+    "NUMERIC_EXTREME": 8
+  },
+  "classification_rule": "Input geometry only: surface/sign level, repeated axes, medial-axis projection uniqueness, and numeric scale range. No gradient result was used."
+}

@@ -1,0 +1,20 @@
+{
+  "autograd_to_map_parameters_required": false,
+  "g1_authorized": false,
+  "hessian_consumed_by_cbf_qp": true,
+  "hessian_evidence": [
+    "cbf/cbf_utils.py:45",
+    "cbf/cbf_utils.py:50-63"
+  ],
+  "hessian_status": "HESSIAN_CONTRACT_UNQUALIFIED",
+  "query_return_fields": [
+    "h",
+    "grad_h",
+    "hess_h",
+    "info"
+  ],
+  "query_state_gradient_required": true,
+  "read_only_audit": true,
+  "runtime_gradient_source": "official GSplatLoader.query_distance analytical grad_h",
+  "static_calibrated_audit_authorized": false
+}

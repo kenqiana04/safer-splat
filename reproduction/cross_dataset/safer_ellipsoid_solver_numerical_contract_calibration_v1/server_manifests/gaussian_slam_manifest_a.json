@@ -1,0 +1,2811 @@
+{
+  "adapter_version": "CANONICAL_GAUSSIAN_MAP_V1",
+  "native_concat_order": [
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000000.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000001.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000002.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000003.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000004.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000005.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000006.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000007.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000008.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000009.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000010.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000011.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000012.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000013.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000014.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000015.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000016.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000017.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000018.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000019.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000020.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000021.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000022.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000023.ckpt",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/final_submap.ckpt"
+  ],
+  "no_filtering": true,
+  "no_reordering_except_frozen_native_concat_order": true,
+  "shards": [
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_00/means_world_m.npy",
+          "sha256": "7f1d6e495abb33c15e161ff23d33b8a24a6adf5827baef332c02962d041b217b",
+          "shape": [
+            128868,
+            3
+          ],
+          "size": 1546544
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_00/scales_linear_m.npy",
+          "sha256": "d58845a9d20c1be14a434b0dc4019ab781bf75a84f8970ab59d7256c8f0c0a1c",
+          "shape": [
+            128868,
+            3
+          ],
+          "size": 1546544
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_00/quaternions_wxyz.npy",
+          "sha256": "dd25f963424ecded09f7432904327b56796075401c4677853cab9a6fb789e21b",
+          "shape": [
+            128868,
+            4
+          ],
+          "size": 2062016
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_00/opacities_activated.npy",
+          "sha256": "5b1be263d6d1f4c0e8a417c637f5b6f449bf4c715339ef0d86734ed144fb8d9f",
+          "shape": [
+            128868,
+            1
+          ],
+          "size": 515600
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_00/features_dc.npy",
+          "sha256": "ac97dc9767eabc3f93fb329ffc9dc76d768be7f3bab8dc3433ed8d4bd7080b14",
+          "shape": [
+            128868,
+            1,
+            3
+          ],
+          "size": 1546544
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_00/features_rest.npy",
+          "sha256": "5a4b339040871616f6b9b043fb9675c20cfb39ff60830e52c8fa17f47c6f7b1e",
+          "shape": [
+            128868,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_00/source_index.npy",
+          "sha256": "85200b4513ae958edca95cf22caaf84a3b5bed70d27352dce3dfbaf73c222416",
+          "shape": [
+            128868
+          ],
+          "size": 515600
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_00/source_submap_index.npy",
+          "sha256": "d6a94091b318ee36753101b529745ddd61590a5d4acf211559140f557b794654",
+          "shape": [
+            128868
+          ],
+          "size": 515600
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000000.ckpt",
+      "checkpoint_sha256": "c966719c57e1ddabfa6bf4db603213ed6a06ff5cc8022e2d25ee9234798f35b4",
+      "count": 128868,
+      "covariance": {
+        "eigenvalue_max": 0.0012514544502803871,
+        "eigenvalue_min": 4.0971867388030344e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 1.1920928955078125e-07,
+        "quaternion_rotation_matrix_max_abs_diff": 2.980232238769531e-07,
+        "scales_max_relative_diff": 4.197050031962135e-07,
+        "status": "PASS"
+      },
+      "submap_index": 0
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_01/means_world_m.npy",
+          "sha256": "2e7e04f43ba1cf099ffbd2525438b0371ee778c41e157d376d27751401c54ad8",
+          "shape": [
+            122882,
+            3
+          ],
+          "size": 1474712
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_01/scales_linear_m.npy",
+          "sha256": "dd907951ea861b2dd3b30ab2823e533665031eda43b9efa8b218e92e00639646",
+          "shape": [
+            122882,
+            3
+          ],
+          "size": 1474712
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_01/quaternions_wxyz.npy",
+          "sha256": "0a1b51bcd33ef7ffbd2b7c5b1b77642e20c3366a42a9fbe2bfff82a0fb3cc5a8",
+          "shape": [
+            122882,
+            4
+          ],
+          "size": 1966240
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_01/opacities_activated.npy",
+          "sha256": "7028255a9eb6fbeaecbadb68118935c34f0c680379faed28aaa08daa89a73b06",
+          "shape": [
+            122882,
+            1
+          ],
+          "size": 491656
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_01/features_dc.npy",
+          "sha256": "12ab22cd46a29b057585976e272a89a7f69c238c7c2ec52c22c56ced1a636913",
+          "shape": [
+            122882,
+            1,
+            3
+          ],
+          "size": 1474712
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_01/features_rest.npy",
+          "sha256": "8cde0a0d7fa59d42c5fbd37c5fabaa988ab5b02fe87f137dc32f731a22af6fe1",
+          "shape": [
+            122882,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_01/source_index.npy",
+          "sha256": "2910d1f4fdfd87d8489deb8a09f5a3bf7a2d3ebba0097e2a36e57b0fd7030acc",
+          "shape": [
+            122882
+          ],
+          "size": 491656
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_01/source_submap_index.npy",
+          "sha256": "8aefcb0d7a29bdbb5873616c01693aad2820987ebb1085f195bef7dffa3cf838",
+          "shape": [
+            122882
+          ],
+          "size": 491656
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000001.ckpt",
+      "checkpoint_sha256": "eba4b0f611219feaf6daef17e86ba2fdb34118b5bf5b398a5bc6e7431f2fd6d4",
+      "count": 122882,
+      "covariance": {
+        "eigenvalue_max": 0.0005533848243376967,
+        "eigenvalue_min": 5.901144736029843e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 5.960464477539063e-08,
+        "quaternion_rotation_matrix_max_abs_diff": 2.980232238769531e-07,
+        "scales_max_relative_diff": 4.188059961052204e-07,
+        "status": "PASS"
+      },
+      "submap_index": 1
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_02/means_world_m.npy",
+          "sha256": "c63a5daba7e2d03b070e7b593a5ede9541f7c2631849790ffb4cec7f16289e70",
+          "shape": [
+            126639,
+            3
+          ],
+          "size": 1519796
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_02/scales_linear_m.npy",
+          "sha256": "a8367b39f4b693ad486ac2cb236d4cf8d5350a4f7b023fe79680cb5dee03a3d0",
+          "shape": [
+            126639,
+            3
+          ],
+          "size": 1519796
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_02/quaternions_wxyz.npy",
+          "sha256": "c8e58dd0ec5aac6721a09dca162d1a8d4a695eefc21662c218a89eac859b9da4",
+          "shape": [
+            126639,
+            4
+          ],
+          "size": 2026352
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_02/opacities_activated.npy",
+          "sha256": "918d5db57ce526f12643602b9147d6912e7f0ed617e2e9dd9f5d570c0ad38316",
+          "shape": [
+            126639,
+            1
+          ],
+          "size": 506684
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_02/features_dc.npy",
+          "sha256": "54dd90568427b1a184384c840e25f4300136eeaff50c353ebf280a341f67235b",
+          "shape": [
+            126639,
+            1,
+            3
+          ],
+          "size": 1519796
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_02/features_rest.npy",
+          "sha256": "cdcb608dbf8866d8a7351a7484f7214fb15b07c7fe01fbf5873947642e1ba793",
+          "shape": [
+            126639,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_02/source_index.npy",
+          "sha256": "4f31255e3985526c35fe01146766f0a06e028e7a57134c89fe92e65fec59c5a2",
+          "shape": [
+            126639
+          ],
+          "size": 506684
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_02/source_submap_index.npy",
+          "sha256": "c30b8a54738381f05f9fa0b305e7ee847763058f9662ad703229f68bf950eced",
+          "shape": [
+            126639
+          ],
+          "size": 506684
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000002.ckpt",
+      "checkpoint_sha256": "95b4a51a64950640fc4823ee5ec6fc5ab0c4c884892ca166e6a47bb0183fa5a7",
+      "count": 126639,
+      "covariance": {
+        "eigenvalue_max": 0.0004823222227896084,
+        "eigenvalue_min": 4.962250025717686e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 5.960464477539063e-08,
+        "quaternion_rotation_matrix_max_abs_diff": 2.384185791015625e-07,
+        "scales_max_relative_diff": 4.20388232669211e-07,
+        "status": "PASS"
+      },
+      "submap_index": 2
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_03/means_world_m.npy",
+          "sha256": "f348bf8d356fd56e8a08d17851973b6b8548b9eceea05e4e631ce8b0f6e26050",
+          "shape": [
+            87411,
+            3
+          ],
+          "size": 1049060
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_03/scales_linear_m.npy",
+          "sha256": "51a5c4b83cd83be52c5c9916783149ca26553bf058be757631628a66de4f06f8",
+          "shape": [
+            87411,
+            3
+          ],
+          "size": 1049060
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_03/quaternions_wxyz.npy",
+          "sha256": "8143bba658787944926f235623b9ae3efdf14bc28f745242a6ab47514271d160",
+          "shape": [
+            87411,
+            4
+          ],
+          "size": 1398704
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_03/opacities_activated.npy",
+          "sha256": "1292a4d8ee57c3984f425138937fec4c601d4083a0dbf214482913a6b12d3873",
+          "shape": [
+            87411,
+            1
+          ],
+          "size": 349772
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_03/features_dc.npy",
+          "sha256": "a18d5b6dc9981df2524acbb79f56f4f5c89c018594c54b51aade73bd5060c157",
+          "shape": [
+            87411,
+            1,
+            3
+          ],
+          "size": 1049060
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_03/features_rest.npy",
+          "sha256": "8f16e358de9a83c2471e01d8f7dd89b4d147be987786173535b52bc96e4558c2",
+          "shape": [
+            87411,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_03/source_index.npy",
+          "sha256": "2376126471600ee39167976a3b05cae1973ae6b0fde8d4e98ba304ad264ff0f0",
+          "shape": [
+            87411
+          ],
+          "size": 349772
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_03/source_submap_index.npy",
+          "sha256": "fa740f42dd805432573163b6734d5607d011bb8af32e851565f202268784e474",
+          "shape": [
+            87411
+          ],
+          "size": 349772
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000003.ckpt",
+      "checkpoint_sha256": "81890a572626d984a2d284dc8ed169982833bd7c79df183cf1701bfc8ee9fd4f",
+      "count": 87411,
+      "covariance": {
+        "eigenvalue_max": 0.0017772749986993005,
+        "eigenvalue_min": 5.912481726959636e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 5.960464477539063e-08,
+        "quaternion_rotation_matrix_max_abs_diff": 2.384185791015625e-07,
+        "scales_max_relative_diff": 4.201625642963336e-07,
+        "status": "PASS"
+      },
+      "submap_index": 3
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_04/means_world_m.npy",
+          "sha256": "b4707421aa4a0c3daa2d9273a5b8f6f628170f8f7fb29febf0e4f0f2b02210fd",
+          "shape": [
+            92962,
+            3
+          ],
+          "size": 1115672
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_04/scales_linear_m.npy",
+          "sha256": "8358ae2e36ae9bac97f4a38ec36e36009372ee26b59256fbfc0c5c1787bbf313",
+          "shape": [
+            92962,
+            3
+          ],
+          "size": 1115672
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_04/quaternions_wxyz.npy",
+          "sha256": "b25df7f781de9b15d7562f123cfb55cb893cc76d7af91677ee544171eeee639d",
+          "shape": [
+            92962,
+            4
+          ],
+          "size": 1487520
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_04/opacities_activated.npy",
+          "sha256": "0eb8ef574df60c4aba5f133b35363f5958c30a26253af9a33dce0007fbb5da79",
+          "shape": [
+            92962,
+            1
+          ],
+          "size": 371976
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_04/features_dc.npy",
+          "sha256": "1a13ce2dad00d4a499bc590bbfcc15335cad2fd8b2d97c58cfa91a0c0a96f386",
+          "shape": [
+            92962,
+            1,
+            3
+          ],
+          "size": 1115672
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_04/features_rest.npy",
+          "sha256": "561aa16a400bb9f8ea0d9370a0e9f0d176212d0b97a25557b7b6264943abb7f4",
+          "shape": [
+            92962,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_04/source_index.npy",
+          "sha256": "11f3c625d9ff508271ba4134d531862ca2ccabe46b28a36dfcfe643df58871d2",
+          "shape": [
+            92962
+          ],
+          "size": 371976
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_04/source_submap_index.npy",
+          "sha256": "15ae35ed27b8229df5bed84001a179bbc4ec8421bc1154377907c97e69afc2ba",
+          "shape": [
+            92962
+          ],
+          "size": 371976
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000004.ckpt",
+      "checkpoint_sha256": "b0e8aa4839ceb4a70310fd1745961c256465e5f2f226278207c529ac94df3499",
+      "count": 92962,
+      "covariance": {
+        "eigenvalue_max": 0.008789517881884059,
+        "eigenvalue_min": 2.6962490524648554e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 5.960464477539063e-08,
+        "quaternion_rotation_matrix_max_abs_diff": 2.384185791015625e-07,
+        "scales_max_relative_diff": 3.351381110405782e-07,
+        "status": "PASS"
+      },
+      "submap_index": 4
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_05/means_world_m.npy",
+          "sha256": "871c6fe0f0810e94ca491f7080406e4e0e040086ddfe68b3a16cfcecf518c4c0",
+          "shape": [
+            86023,
+            3
+          ],
+          "size": 1032404
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_05/scales_linear_m.npy",
+          "sha256": "97301ee49a4a4062181ed74031e45f1dbae0e04133be2fa545161adee5003970",
+          "shape": [
+            86023,
+            3
+          ],
+          "size": 1032404
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_05/quaternions_wxyz.npy",
+          "sha256": "04aaeb16e2831f76187d17a419b797ff2ae14f9122522e4bc0585e54de5723af",
+          "shape": [
+            86023,
+            4
+          ],
+          "size": 1376496
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_05/opacities_activated.npy",
+          "sha256": "a9c13466ec0425b9fdc2fda29f8ef3f4c3a079d9d79397ab8614fe47e3070a20",
+          "shape": [
+            86023,
+            1
+          ],
+          "size": 344220
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_05/features_dc.npy",
+          "sha256": "c2c54db977213e3432dc731e82ef414072bc2276c3721a508f97b04cd2fd0604",
+          "shape": [
+            86023,
+            1,
+            3
+          ],
+          "size": 1032404
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_05/features_rest.npy",
+          "sha256": "64d560752215869bccd9d84c45385a655f11cd282004ecc894528eae9a93f2ac",
+          "shape": [
+            86023,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_05/source_index.npy",
+          "sha256": "75e9ecb32b2a73b23758484a6248768d12f788326b2d2fb5e9f3438e34c4a573",
+          "shape": [
+            86023
+          ],
+          "size": 344220
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_05/source_submap_index.npy",
+          "sha256": "788b7948def04a69e7988bea88b23d0e51d0b47c58321efb26eb2513324c1b9c",
+          "shape": [
+            86023
+          ],
+          "size": 344220
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000005.ckpt",
+      "checkpoint_sha256": "b500d40077e8a01a22ff0c0bf5ba8175e6238fe65bdf58b34ed68ca065a9c259",
+      "count": 86023,
+      "covariance": {
+        "eigenvalue_max": 0.024587517177356515,
+        "eigenvalue_min": 8.187332007844649e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 1.1920928955078125e-07,
+        "quaternion_rotation_matrix_max_abs_diff": 2.980232238769531e-07,
+        "scales_max_relative_diff": 4.197050031962135e-07,
+        "status": "PASS"
+      },
+      "submap_index": 5
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_06/means_world_m.npy",
+          "sha256": "174bae125bfc8dec2fff79479349976bcf6759fcfc2dd8e90ba6781a5e8efc46",
+          "shape": [
+            103567,
+            3
+          ],
+          "size": 1242932
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_06/scales_linear_m.npy",
+          "sha256": "dac416d62cc3d1e3e6d9d47ec8555ef6b12f117c9f43881e55ce4428bd220762",
+          "shape": [
+            103567,
+            3
+          ],
+          "size": 1242932
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_06/quaternions_wxyz.npy",
+          "sha256": "b6a7266645af22fdf741de4af5973e2511e8442fb67a711dd4c9c6d180734826",
+          "shape": [
+            103567,
+            4
+          ],
+          "size": 1657200
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_06/opacities_activated.npy",
+          "sha256": "b1e9c9254b499d604ce0e2a7c02b46d9b6fb9d7485c21d9dc43e8288479b7e63",
+          "shape": [
+            103567,
+            1
+          ],
+          "size": 414396
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_06/features_dc.npy",
+          "sha256": "a4c8fd7d6ec4118aa42398befb22bed1fbd14b252eb4bf3804bc3e9b5fcc7df0",
+          "shape": [
+            103567,
+            1,
+            3
+          ],
+          "size": 1242932
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_06/features_rest.npy",
+          "sha256": "79c3852d56ae460903d0b8a7c4b7fe4adf2167d37b20a0feb5c74b71302a5179",
+          "shape": [
+            103567,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_06/source_index.npy",
+          "sha256": "98750fa1aab2e9fcf2af2d76e674ad1b1549cf14dc2e67cc2ea74861b2fed736",
+          "shape": [
+            103567
+          ],
+          "size": 414396
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_06/source_submap_index.npy",
+          "sha256": "81857aaf557c377b4d562a8ba26295b86da558155d13e543df5e700c85f5a99a",
+          "shape": [
+            103567
+          ],
+          "size": 414396
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000006.ckpt",
+      "checkpoint_sha256": "42b0583be0e0c6d4725558b1c9600b4b308a81606516bcb2cb2db39e0617b3f4",
+      "count": 103567,
+      "covariance": {
+        "eigenvalue_max": 0.002420635942892416,
+        "eigenvalue_min": 4.6465472068555495e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 5.960464477539063e-08,
+        "quaternion_rotation_matrix_max_abs_diff": 1.7881393432617188e-07,
+        "scales_max_relative_diff": 4.212008661852451e-07,
+        "status": "PASS"
+      },
+      "submap_index": 6
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_07/means_world_m.npy",
+          "sha256": "a3628fcafa74d4f81009d85f2e0dd63d40332fedece0bc5735cff6370776ca55",
+          "shape": [
+            109475,
+            3
+          ],
+          "size": 1313828
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_07/scales_linear_m.npy",
+          "sha256": "7f83d36aa37278100fa330542dd8f28042eb6882e45b164d429b572f18c49ab1",
+          "shape": [
+            109475,
+            3
+          ],
+          "size": 1313828
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_07/quaternions_wxyz.npy",
+          "sha256": "376b0dd669f1d514f7fbf0df6e40847e2f0fccbe86ddb136b9ca77868987052c",
+          "shape": [
+            109475,
+            4
+          ],
+          "size": 1751728
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_07/opacities_activated.npy",
+          "sha256": "e18d387a96e6e16702d526e0c69666ae57840440434e71324bb0989401b701de",
+          "shape": [
+            109475,
+            1
+          ],
+          "size": 438028
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_07/features_dc.npy",
+          "sha256": "3020cfbaa8e10c57e98a982fca985d25d1998072af1e4438ff62bd33c94f310c",
+          "shape": [
+            109475,
+            1,
+            3
+          ],
+          "size": 1313828
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_07/features_rest.npy",
+          "sha256": "54567bd42d55cabc3658314d4dd36f868cf373f17246a8fd0e89a6554d0824e7",
+          "shape": [
+            109475,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_07/source_index.npy",
+          "sha256": "c91120592f211fa7b3d46515163841ebfc2aed6a7e7b9aa20cd87aef191fcba5",
+          "shape": [
+            109475
+          ],
+          "size": 438028
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_07/source_submap_index.npy",
+          "sha256": "42d8d2d76f01b0b48261300b90c19c2fc3ceacccf0921a255e5ffad11e0d013c",
+          "shape": [
+            109475
+          ],
+          "size": 438028
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000007.ckpt",
+      "checkpoint_sha256": "d2a888d37b3c0db8c11945d433c83b27a16a2d84ae220a0220a40b57979bb64a",
+      "count": 109475,
+      "covariance": {
+        "eigenvalue_max": 0.004240341109222555,
+        "eigenvalue_min": 5.463515627694008e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 5.960464477539063e-08,
+        "quaternion_rotation_matrix_max_abs_diff": 2.980232238769531e-07,
+        "scales_max_relative_diff": 4.20388232669211e-07,
+        "status": "PASS"
+      },
+      "submap_index": 7
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_08/means_world_m.npy",
+          "sha256": "7e44524024ecb6bba4a9352d27a688864bfe7f71425569354381e1b1ed0ff882",
+          "shape": [
+            124281,
+            3
+          ],
+          "size": 1491500
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_08/scales_linear_m.npy",
+          "sha256": "212c0a500a9965dca9aa194573f9e434699244b0b713775543a611c1cad3e131",
+          "shape": [
+            124281,
+            3
+          ],
+          "size": 1491500
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_08/quaternions_wxyz.npy",
+          "sha256": "9d96f56e04b2d9e8c5b79feeb74c689bb6aebe1f0844318736e656f23a100066",
+          "shape": [
+            124281,
+            4
+          ],
+          "size": 1988624
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_08/opacities_activated.npy",
+          "sha256": "f2d7ac57d9ad7faa5c28490c363cb53a49632075ea9593d68e2bf7c433adb88c",
+          "shape": [
+            124281,
+            1
+          ],
+          "size": 497252
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_08/features_dc.npy",
+          "sha256": "cd8e9e227d953accb7b98c04223983d94c0f42eaa2ebcd1ba1eb452afbffcb9c",
+          "shape": [
+            124281,
+            1,
+            3
+          ],
+          "size": 1491500
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_08/features_rest.npy",
+          "sha256": "76817740620c67e131c16669fa307a86bcec669b966e3fa2abd4659fd72caa6e",
+          "shape": [
+            124281,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_08/source_index.npy",
+          "sha256": "31e9a86ccdc2fed77c5de0dd5ab8c2bed3925e2279808b85cba3539bf3784124",
+          "shape": [
+            124281
+          ],
+          "size": 497252
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_08/source_submap_index.npy",
+          "sha256": "e6104aea18504485a441e8cd2f65339f24d072fe4bfc7ba97d79a85e7bb1e084",
+          "shape": [
+            124281
+          ],
+          "size": 497252
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000008.ckpt",
+      "checkpoint_sha256": "460ac8259dd77a4bf74ed2562cd3a5e1a319ea13fadb2667fd9e5eee260b547c",
+      "count": 124281,
+      "covariance": {
+        "eigenvalue_max": 0.002951652887918671,
+        "eigenvalue_min": 2.0710470013978116e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 5.960464477539063e-08,
+        "quaternion_rotation_matrix_max_abs_diff": 2.980232238769531e-07,
+        "scales_max_relative_diff": 4.188059961052204e-07,
+        "status": "PASS"
+      },
+      "submap_index": 8
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_09/means_world_m.npy",
+          "sha256": "b45451dcc3ffe098d3611abe0cbeef1f8b3a1777cf5bddfbb280c22e9720e369",
+          "shape": [
+            127999,
+            3
+          ],
+          "size": 1536116
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_09/scales_linear_m.npy",
+          "sha256": "c5ad1299098bccbf7b7033577ecbd77aaa63dc818f04dd61ae9166fc1427ef91",
+          "shape": [
+            127999,
+            3
+          ],
+          "size": 1536116
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_09/quaternions_wxyz.npy",
+          "sha256": "397c2f990e7fa395a809cdb35403b2880a7c92a6afb0c691f711bc9c720edd37",
+          "shape": [
+            127999,
+            4
+          ],
+          "size": 2048112
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_09/opacities_activated.npy",
+          "sha256": "d22443030ed70281e3f72d6b50d5521a0fac68e9e36100b1e109595463fb296d",
+          "shape": [
+            127999,
+            1
+          ],
+          "size": 512124
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_09/features_dc.npy",
+          "sha256": "cd93f1ba9335e2f2c17cfd529ac6b45c50cba3347b7678036e98bda9b783ddd8",
+          "shape": [
+            127999,
+            1,
+            3
+          ],
+          "size": 1536116
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_09/features_rest.npy",
+          "sha256": "6ae090fcd57e8d7266c469256af949c644e007c6f84deb219e485ce6d877d690",
+          "shape": [
+            127999,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_09/source_index.npy",
+          "sha256": "6d0a7747adfb6ca0b362c854b0b6921df696b45092f911b78cb24a2660cc814a",
+          "shape": [
+            127999
+          ],
+          "size": 512124
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_09/source_submap_index.npy",
+          "sha256": "fbdd81dec2b431df68c5603234be093ef2d3ce2decbc9ad28be4da99bf834942",
+          "shape": [
+            127999
+          ],
+          "size": 512124
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000009.ckpt",
+      "checkpoint_sha256": "c3d95218b79b38780d739a55d65c1c8f7bd09e8230bc2474e837c842b8b97285",
+      "count": 127999,
+      "covariance": {
+        "eigenvalue_max": 0.0020428964430771173,
+        "eigenvalue_min": 7.656096133047278e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 1.1920928955078125e-07,
+        "quaternion_rotation_matrix_max_abs_diff": 2.980232238769531e-07,
+        "scales_max_relative_diff": 4.188059961052204e-07,
+        "status": "PASS"
+      },
+      "submap_index": 9
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_10/means_world_m.npy",
+          "sha256": "921423bdd9a86ee1f42f19ad4df538016588f6654263c5a21f73b191b6070e18",
+          "shape": [
+            108016,
+            3
+          ],
+          "size": 1296320
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_10/scales_linear_m.npy",
+          "sha256": "d7c75fddaba52b8a8a946f2888492eb7fe769865a8c518f0c78bbc00583800bd",
+          "shape": [
+            108016,
+            3
+          ],
+          "size": 1296320
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_10/quaternions_wxyz.npy",
+          "sha256": "4916fb421d031261732878e1d667b0df4929754203e910dab273188ca78f4e86",
+          "shape": [
+            108016,
+            4
+          ],
+          "size": 1728384
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_10/opacities_activated.npy",
+          "sha256": "7d2b5eceed5db9999f341742b3aacf63f807e11fc670b18f64a88a62d23cb756",
+          "shape": [
+            108016,
+            1
+          ],
+          "size": 432192
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_10/features_dc.npy",
+          "sha256": "f8f0de57590d99128ef618baa1e36c93c89090bc4db3babf9dc5a142e9d866e2",
+          "shape": [
+            108016,
+            1,
+            3
+          ],
+          "size": 1296320
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_10/features_rest.npy",
+          "sha256": "5aba1f6897b6b2ee5e810d2ad4eebffc2c3e99f787c5683a73bc8eac12e9be94",
+          "shape": [
+            108016,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_10/source_index.npy",
+          "sha256": "a443d7250f0c9c4b3cad78f4722412d8edd795bf2612dca2b69efbd3fa036341",
+          "shape": [
+            108016
+          ],
+          "size": 432192
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_10/source_submap_index.npy",
+          "sha256": "7919a0279824cbb0ed06d956975d549d39c7c2c07de9239a72a72dbe9d5f7c38",
+          "shape": [
+            108016
+          ],
+          "size": 432192
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000010.ckpt",
+      "checkpoint_sha256": "668c8a290d2fe85ff52c269e18f30811b68e17675f89848a68eb8d43e3e4a15e",
+      "count": 108016,
+      "covariance": {
+        "eigenvalue_max": 0.0022614997098112113,
+        "eigenvalue_min": 4.5861289861672753e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 1.1920928955078125e-07,
+        "quaternion_rotation_matrix_max_abs_diff": 2.980232238769531e-07,
+        "scales_max_relative_diff": 4.201625642963336e-07,
+        "status": "PASS"
+      },
+      "submap_index": 10
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_11/means_world_m.npy",
+          "sha256": "8e3fb8628586531a973e136f2143857f2788ee2e1aae6c50826f58acaf1218b8",
+          "shape": [
+            132797,
+            3
+          ],
+          "size": 1593692
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_11/scales_linear_m.npy",
+          "sha256": "01e211a75b9659ab29afee661111312b38997d14a6c9e4bb5d84dad65ab9f7a0",
+          "shape": [
+            132797,
+            3
+          ],
+          "size": 1593692
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_11/quaternions_wxyz.npy",
+          "sha256": "1159c1952e99d4df52163d30b863b895ec2744a3ba20cc7fb33b8dae235b42b8",
+          "shape": [
+            132797,
+            4
+          ],
+          "size": 2124880
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_11/opacities_activated.npy",
+          "sha256": "8c03338fa515961ee588351608af883e3343aba19d58b62e967092b001a255e3",
+          "shape": [
+            132797,
+            1
+          ],
+          "size": 531316
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_11/features_dc.npy",
+          "sha256": "aacc7665d995e8f64dbb49122abad95600995e2b7b48bd2b346bc08f29cb4e36",
+          "shape": [
+            132797,
+            1,
+            3
+          ],
+          "size": 1593692
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_11/features_rest.npy",
+          "sha256": "b378a0b193c8b8e908b460af190e94e7fe8a3f4caa9297daab8a7fa603279b86",
+          "shape": [
+            132797,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_11/source_index.npy",
+          "sha256": "919c2dd24477d07dde47623a4a0d8ebaf679517ed2459a63f4e938924a2293e3",
+          "shape": [
+            132797
+          ],
+          "size": 531316
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_11/source_submap_index.npy",
+          "sha256": "1bee11f925888ebb89b72cf229a35b1890fb608701f4866baf0f079d571e5aba",
+          "shape": [
+            132797
+          ],
+          "size": 531316
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000011.ckpt",
+      "checkpoint_sha256": "c88b2752909e43a834f589c42533f09c4e704a7b58dd9ff3a9ce7c944ce2b86e",
+      "count": 132797,
+      "covariance": {
+        "eigenvalue_max": 0.032345412388400926,
+        "eigenvalue_min": 5.492422938969856e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 1.1920928955078125e-07,
+        "quaternion_rotation_matrix_max_abs_diff": 2.384185791015625e-07,
+        "scales_max_relative_diff": 4.20388232669211e-07,
+        "status": "PASS"
+      },
+      "submap_index": 11
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_12/means_world_m.npy",
+          "sha256": "dfee6116c85d7c015bee62b99956a116d0c13b2cce6b0e16366acba4b17d699d",
+          "shape": [
+            155847,
+            3
+          ],
+          "size": 1870292
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_12/scales_linear_m.npy",
+          "sha256": "ef71bc582f7983666ac58411f8b90b94f525663c928a688d34d8e35af6942805",
+          "shape": [
+            155847,
+            3
+          ],
+          "size": 1870292
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_12/quaternions_wxyz.npy",
+          "sha256": "5dd0accdeb168cb79806daebe92710f668df470305207b2fa260037b6756b09d",
+          "shape": [
+            155847,
+            4
+          ],
+          "size": 2493680
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_12/opacities_activated.npy",
+          "sha256": "2a432a1a131c9abbc89cc059c8bbf4801a95ca7a2571c234da1f0031e49c8344",
+          "shape": [
+            155847,
+            1
+          ],
+          "size": 623516
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_12/features_dc.npy",
+          "sha256": "f482f39bd729dc7b467b97607c20a49debcb43455b0d2f50301f7da4198792cc",
+          "shape": [
+            155847,
+            1,
+            3
+          ],
+          "size": 1870292
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_12/features_rest.npy",
+          "sha256": "a65cdd1838d213d2b96c70dc4bfadb2d58b04ec97c69798406f5bbed45a912e0",
+          "shape": [
+            155847,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_12/source_index.npy",
+          "sha256": "11f9f39bd8751dba841c9185bc97294b2f2f4f1cd0a784be71bb7900530ebb8a",
+          "shape": [
+            155847
+          ],
+          "size": 623516
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_12/source_submap_index.npy",
+          "sha256": "681644e1a005ca0866de5c50d973ef70990be684677b580c29c5ba8f119ebf09",
+          "shape": [
+            155847
+          ],
+          "size": 623516
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000012.ckpt",
+      "checkpoint_sha256": "1b0f05f68854dd91b7faacd9bb8112b651daf64875bd07c3dc409c9aa5bf066d",
+      "count": 155847,
+      "covariance": {
+        "eigenvalue_max": 0.0012890536580455613,
+        "eigenvalue_min": 5.839102383067605e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 5.960464477539063e-08,
+        "quaternion_rotation_matrix_max_abs_diff": 2.980232238769531e-07,
+        "scales_max_relative_diff": 4.153158386088762e-07,
+        "status": "PASS"
+      },
+      "submap_index": 12
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_13/means_world_m.npy",
+          "sha256": "9e1567e0738040c3d7b3dee2cb39fd82b1916c3cb751779dd1ac4089af692209",
+          "shape": [
+            146153,
+            3
+          ],
+          "size": 1753964
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_13/scales_linear_m.npy",
+          "sha256": "1db938232277c94501a56537e47b391c197037cbff11b5155021a0180a023a63",
+          "shape": [
+            146153,
+            3
+          ],
+          "size": 1753964
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_13/quaternions_wxyz.npy",
+          "sha256": "30a637d8a03b6ab109bcf1a76bd887f14376e36e9a897507f18c4493bb9d1da9",
+          "shape": [
+            146153,
+            4
+          ],
+          "size": 2338576
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_13/opacities_activated.npy",
+          "sha256": "9778d80449ea0beafadab3e766afc7ebdacb7c048de2d0424c16b90c78c68614",
+          "shape": [
+            146153,
+            1
+          ],
+          "size": 584740
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_13/features_dc.npy",
+          "sha256": "b443af3dafdd3f79e3c886043407ae368d932775f81afc40b160a2ff3c0d5984",
+          "shape": [
+            146153,
+            1,
+            3
+          ],
+          "size": 1753964
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_13/features_rest.npy",
+          "sha256": "a04ffb420e9d4fe0744db1ecccc45a0eaaea898364f4d77a591bcfa9c73f9b0d",
+          "shape": [
+            146153,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_13/source_index.npy",
+          "sha256": "9ba26460c16ed93f4884dabe41581782e48c86aaa5af81c4e84ec5e95ea8726e",
+          "shape": [
+            146153
+          ],
+          "size": 584740
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_13/source_submap_index.npy",
+          "sha256": "32ea4f4f14089592624781fdf54f60e34c4a72b96219c6b21a2092ff3a3af278",
+          "shape": [
+            146153
+          ],
+          "size": 584740
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000013.ckpt",
+      "checkpoint_sha256": "e293fe2359290d477d3cbf8032d8365f9a0295a7831ae1b10fe693e97252df03",
+      "count": 146153,
+      "covariance": {
+        "eigenvalue_max": 0.0008738057203651534,
+        "eigenvalue_min": 8.472736617935186e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 5.960464477539063e-08,
+        "quaternion_rotation_matrix_max_abs_diff": 1.7881393432617188e-07,
+        "scales_max_relative_diff": 4.212008661852451e-07,
+        "status": "PASS"
+      },
+      "submap_index": 13
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_14/means_world_m.npy",
+          "sha256": "c0a8c7311f63e80934df9767f0a84ae5efb637ea621571c2c350edbed9ed7f81",
+          "shape": [
+            157263,
+            3
+          ],
+          "size": 1887284
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_14/scales_linear_m.npy",
+          "sha256": "bbbdbc042a4a5abaef5207205e32d3c72779267a7357fbce6c2e429ca51e0894",
+          "shape": [
+            157263,
+            3
+          ],
+          "size": 1887284
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_14/quaternions_wxyz.npy",
+          "sha256": "a0bc2ed4a3384b39b3687cc523b72be1417e2147ead5730aac20a286ed56e560",
+          "shape": [
+            157263,
+            4
+          ],
+          "size": 2516336
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_14/opacities_activated.npy",
+          "sha256": "db8c7124456fef7540d3148eb317d5bccf71634c69e721a0a71413bfd5bdf249",
+          "shape": [
+            157263,
+            1
+          ],
+          "size": 629180
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_14/features_dc.npy",
+          "sha256": "e563e3c74168ca6d0bc25a41d1a8ac631483481d6ca044e90bd537c79b55952e",
+          "shape": [
+            157263,
+            1,
+            3
+          ],
+          "size": 1887284
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_14/features_rest.npy",
+          "sha256": "89f005f064a616ebb74840fc6238054264eb10f67ea6c22ffc36aae3881f9a13",
+          "shape": [
+            157263,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_14/source_index.npy",
+          "sha256": "28269f932fee7fa75c42237bf8b30283a17df64bf784a180b2d37c7a3f46a17a",
+          "shape": [
+            157263
+          ],
+          "size": 629180
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_14/source_submap_index.npy",
+          "sha256": "d1a8e889a9d3ea77838da8de6e91a0524752161fb6b3e8bce732a3d498a33422",
+          "shape": [
+            157263
+          ],
+          "size": 629180
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000014.ckpt",
+      "checkpoint_sha256": "6f779df6f09a83d05dcc94945e0958cc32e2cae5da82bcdcaa3ebf6fc9300f09",
+      "count": 157263,
+      "covariance": {
+        "eigenvalue_max": 0.01140096402357376,
+        "eigenvalue_min": 3.0741228161869694e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 1.1920928955078125e-07,
+        "quaternion_rotation_matrix_max_abs_diff": 2.980232238769531e-07,
+        "scales_max_relative_diff": 4.181160022653785e-07,
+        "status": "PASS"
+      },
+      "submap_index": 14
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_15/means_world_m.npy",
+          "sha256": "5ac775cbdadc093994cd676cae0592ac1432c85f45c242b8be83a52280bb2f97",
+          "shape": [
+            145316,
+            3
+          ],
+          "size": 1743920
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_15/scales_linear_m.npy",
+          "sha256": "335642ba42f9c12fe2101cda189a5e571f581e065dce541bc457a3ce009e503b",
+          "shape": [
+            145316,
+            3
+          ],
+          "size": 1743920
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_15/quaternions_wxyz.npy",
+          "sha256": "574e18a60da912ee6decc37cff9853f453cb1f67268e4c98abcdac4b5bcca0ee",
+          "shape": [
+            145316,
+            4
+          ],
+          "size": 2325184
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_15/opacities_activated.npy",
+          "sha256": "6091fb0168e0ed1393d489bd7cd1447508efdb6ab74f47b656a47c6dcf479db5",
+          "shape": [
+            145316,
+            1
+          ],
+          "size": 581392
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_15/features_dc.npy",
+          "sha256": "a7172147149b1b213d38d65f2b5430efff313ea66ca6dd5f0a9e9e74743eb4a2",
+          "shape": [
+            145316,
+            1,
+            3
+          ],
+          "size": 1743920
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_15/features_rest.npy",
+          "sha256": "9dfd39226f68eb209f48091c213e63c25f1863d575b683f3d239b32140fd0467",
+          "shape": [
+            145316,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_15/source_index.npy",
+          "sha256": "776f0b406ca045b696d136b7b6e10fb0f33af78a0d5f867951fadb4a575b0f0e",
+          "shape": [
+            145316
+          ],
+          "size": 581392
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_15/source_submap_index.npy",
+          "sha256": "c79b9913dd74cbcf878ed6d0f7f61bce57adc5b5b39687e73928714690fda2f5",
+          "shape": [
+            145316
+          ],
+          "size": 581392
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000015.ckpt",
+      "checkpoint_sha256": "dea96e0d106caba41a39c34514a1d91c682d5ad2c5d1b593b67a8a4078cd0147",
+      "count": 145316,
+      "covariance": {
+        "eigenvalue_max": 0.004199364530707022,
+        "eigenvalue_min": 6.27472096863363e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 1.1920928955078125e-07,
+        "quaternion_rotation_matrix_max_abs_diff": 2.980232238769531e-07,
+        "scales_max_relative_diff": 4.153158386088762e-07,
+        "status": "PASS"
+      },
+      "submap_index": 15
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_16/means_world_m.npy",
+          "sha256": "2be24c74c83af738046898e43af5555c912dc7457adc941d088d285f142c4806",
+          "shape": [
+            92421,
+            3
+          ],
+          "size": 1109180
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_16/scales_linear_m.npy",
+          "sha256": "f6eed55c97405e64055e29374233469e1be19a900ecf86526dd6b902d77ff095",
+          "shape": [
+            92421,
+            3
+          ],
+          "size": 1109180
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_16/quaternions_wxyz.npy",
+          "sha256": "c9c5a151c10cddbcd81db0e450d4ee76be28dfaf54e226787c9f3a23fd6680f3",
+          "shape": [
+            92421,
+            4
+          ],
+          "size": 1478864
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_16/opacities_activated.npy",
+          "sha256": "34b10c1a867ff67899e4edb934adb49e5383c6db04d9e81152d905ce1708e4da",
+          "shape": [
+            92421,
+            1
+          ],
+          "size": 369812
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_16/features_dc.npy",
+          "sha256": "7b77be187d4088b76f364bd7b2dec61078454ab3d600bf6bfa98c547a2b06e22",
+          "shape": [
+            92421,
+            1,
+            3
+          ],
+          "size": 1109180
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_16/features_rest.npy",
+          "sha256": "e8f1b12084a5c64086b001ede85517bf5cf6629f5fa89ff2b3b03d319df59296",
+          "shape": [
+            92421,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_16/source_index.npy",
+          "sha256": "41c5ad6f59819510b31cc236a1b99f73861ab4303a72dfb227ac26e1712073b0",
+          "shape": [
+            92421
+          ],
+          "size": 369812
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_16/source_submap_index.npy",
+          "sha256": "09c3339dd4667ce5aa21d57aa678e92158c1304f50cbc5d79884b604900d9804",
+          "shape": [
+            92421
+          ],
+          "size": 369812
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000016.ckpt",
+      "checkpoint_sha256": "32439969995da5910128b33a8fa56cf0ddeb49515c8dc26dc0e613b133aef64e",
+      "count": 92421,
+      "covariance": {
+        "eigenvalue_max": 0.13641995024630055,
+        "eigenvalue_min": 2.903727745894128e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 1.1920928955078125e-07,
+        "quaternion_rotation_matrix_max_abs_diff": 2.980232238769531e-07,
+        "scales_max_relative_diff": 3.2781235859147273e-07,
+        "status": "PASS"
+      },
+      "submap_index": 16
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_17/means_world_m.npy",
+          "sha256": "274c3a46bd741df0d9f1aec9a73e899890921d8ebca699b04965d729ec1e102e",
+          "shape": [
+            192237,
+            3
+          ],
+          "size": 2306972
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_17/scales_linear_m.npy",
+          "sha256": "99f4ddca0faac2f621d36878cf348a369bda49e2c7285d0df2c69fb227c267e1",
+          "shape": [
+            192237,
+            3
+          ],
+          "size": 2306972
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_17/quaternions_wxyz.npy",
+          "sha256": "0179b529f40f6de4c1f02b81729e12cbc5f36b09c8b97c6ac4a259455580da4f",
+          "shape": [
+            192237,
+            4
+          ],
+          "size": 3075920
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_17/opacities_activated.npy",
+          "sha256": "394924515fce2740d0cb683cdbaf805550588a8179146c166c53bbb19eb3ac48",
+          "shape": [
+            192237,
+            1
+          ],
+          "size": 769076
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_17/features_dc.npy",
+          "sha256": "2f071d1f66b4bc31287fd2771bd3d771be2be8b6a49b139de1f5c2e27e6bb930",
+          "shape": [
+            192237,
+            1,
+            3
+          ],
+          "size": 2306972
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_17/features_rest.npy",
+          "sha256": "b68e1e2117a16dc52920ec5e9129924accd88c531a6633ad7c476f8ae649fdd5",
+          "shape": [
+            192237,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_17/source_index.npy",
+          "sha256": "4c767311ecfa2782a9b74d67cf866a438b1fa575efbea80eed85e7fca244e76f",
+          "shape": [
+            192237
+          ],
+          "size": 769076
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_17/source_submap_index.npy",
+          "sha256": "a58e25e023d02bccfcd60f402e3955b774b74baa7a3a507c578683d729bfa189",
+          "shape": [
+            192237
+          ],
+          "size": 769076
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000017.ckpt",
+      "checkpoint_sha256": "01b94d2fb07271d897b31ded4826ed50716787bb013fd0525c65dea52651e58d",
+      "count": 192237,
+      "covariance": {
+        "eigenvalue_max": 0.0018752110120685364,
+        "eigenvalue_min": 5.678048295633657e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 1.1920928955078125e-07,
+        "quaternion_rotation_matrix_max_abs_diff": 2.384185791015625e-07,
+        "scales_max_relative_diff": 4.188059961052204e-07,
+        "status": "PASS"
+      },
+      "submap_index": 17
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_18/means_world_m.npy",
+          "sha256": "b23b9322c7984801583c23302a4154919e75788c5f73e3a8c8196420ab409f88",
+          "shape": [
+            142236,
+            3
+          ],
+          "size": 1706960
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_18/scales_linear_m.npy",
+          "sha256": "66d99b194def7f734b16b9ae7dcce4d0c0434eea943ef006b996ebe89c1369b6",
+          "shape": [
+            142236,
+            3
+          ],
+          "size": 1706960
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_18/quaternions_wxyz.npy",
+          "sha256": "a1cb2ca2d833528cefe88ff4075980404d0040c2dfc5c97c07513c611e6eb882",
+          "shape": [
+            142236,
+            4
+          ],
+          "size": 2275904
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_18/opacities_activated.npy",
+          "sha256": "7a382df9d73de0943321f85ce00bab5613ff464e0f5f6299847414945217b372",
+          "shape": [
+            142236,
+            1
+          ],
+          "size": 569072
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_18/features_dc.npy",
+          "sha256": "157139799b100e64d3f66464aeb7e0262dbbdf4402caced94990692629c401d8",
+          "shape": [
+            142236,
+            1,
+            3
+          ],
+          "size": 1706960
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_18/features_rest.npy",
+          "sha256": "0bf4200dd8683eeba3cc043df5d6dfd9ce927819ba18ab3c7b5c008d94edb709",
+          "shape": [
+            142236,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_18/source_index.npy",
+          "sha256": "c514ca6eed817ebd47a8ac7439be22f44cc6e04afe1b6ddd4467e511312c9e3c",
+          "shape": [
+            142236
+          ],
+          "size": 569072
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_18/source_submap_index.npy",
+          "sha256": "74d34a6fef92bff7c72a9a548d2e4219c2f9eb86bd9ba00320cdc057b504e016",
+          "shape": [
+            142236
+          ],
+          "size": 569072
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000018.ckpt",
+      "checkpoint_sha256": "136e20bcb57404f990c8ab67d3a35e307036077bde2adbd6b5a25dcd31e0360d",
+      "count": 142236,
+      "covariance": {
+        "eigenvalue_max": 0.0033540648809253495,
+        "eigenvalue_min": 8.406384004864572e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 1.1920928955078125e-07,
+        "quaternion_rotation_matrix_max_abs_diff": 2.980232238769531e-07,
+        "scales_max_relative_diff": 4.1879181367221463e-07,
+        "status": "PASS"
+      },
+      "submap_index": 18
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_19/means_world_m.npy",
+          "sha256": "2520208f42894b47635a45ab97fbd9d8b7253b71942ac81503d50b09fc1c4b24",
+          "shape": [
+            93335,
+            3
+          ],
+          "size": 1120148
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_19/scales_linear_m.npy",
+          "sha256": "b650113797adb2e4e1aef0058fb705bfe649bc8a5409c94fcabc4a75368cc510",
+          "shape": [
+            93335,
+            3
+          ],
+          "size": 1120148
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_19/quaternions_wxyz.npy",
+          "sha256": "b0991552dc4aae6cb78baa5c042091294b435c47a64ee0997f8fb210d1b5f1a6",
+          "shape": [
+            93335,
+            4
+          ],
+          "size": 1493488
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_19/opacities_activated.npy",
+          "sha256": "fc9cb470e230bb0ead3c0d67070de1b959418bf05a2a39638a3233e7e3fcc725",
+          "shape": [
+            93335,
+            1
+          ],
+          "size": 373468
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_19/features_dc.npy",
+          "sha256": "9046b8830676a0f4431a3ce8d5f20782a3487c1f577f0e995abecc9ec610b42c",
+          "shape": [
+            93335,
+            1,
+            3
+          ],
+          "size": 1120148
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_19/features_rest.npy",
+          "sha256": "e6edb5decb73c0ba58fbae43ab6f1de426af5b1b17b600d7a4338e5515c2dc49",
+          "shape": [
+            93335,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_19/source_index.npy",
+          "sha256": "704c56d72b300526c50ef37e01531f9c86d1c0ff8826e553111611cee444c4a7",
+          "shape": [
+            93335
+          ],
+          "size": 373468
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_19/source_submap_index.npy",
+          "sha256": "a6e50077749f9bbb9d38179867d3330b6925a34e3496a8b436a98a89d7f65a68",
+          "shape": [
+            93335
+          ],
+          "size": 373468
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000019.ckpt",
+      "checkpoint_sha256": "1783e76f8120307cd71c59267ea21e64f275b8971fdd4540dbcc86126c406f0d",
+      "count": 93335,
+      "covariance": {
+        "eigenvalue_max": 0.0016569493955301761,
+        "eigenvalue_min": 4.964930193671345e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 1.1920928955078125e-07,
+        "quaternion_rotation_matrix_max_abs_diff": 2.384185791015625e-07,
+        "scales_max_relative_diff": 4.1926895733013225e-07,
+        "status": "PASS"
+      },
+      "submap_index": 19
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_20/means_world_m.npy",
+          "sha256": "6994c079314d7903d386124d5afa29098e791d3c8cf01e2b9808a54b4574ab9e",
+          "shape": [
+            172481,
+            3
+          ],
+          "size": 2069900
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_20/scales_linear_m.npy",
+          "sha256": "9ab476220e4658067df21223bc981017513707592896d518e0e24aeb9734d5bf",
+          "shape": [
+            172481,
+            3
+          ],
+          "size": 2069900
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_20/quaternions_wxyz.npy",
+          "sha256": "dd5d57c862985f7247aeb3b7275436401528c3e70679c4f64413e3060f9af711",
+          "shape": [
+            172481,
+            4
+          ],
+          "size": 2759824
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_20/opacities_activated.npy",
+          "sha256": "c52aa1878fc63bbd025a66d37e7f66617a9e4902989db7b115266995454fde65",
+          "shape": [
+            172481,
+            1
+          ],
+          "size": 690052
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_20/features_dc.npy",
+          "sha256": "8ccb0e9ce6979976c139f95941637b45a53656352872ffcf8f39df5004459db4",
+          "shape": [
+            172481,
+            1,
+            3
+          ],
+          "size": 2069900
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_20/features_rest.npy",
+          "sha256": "5ffb4bda8e636c21e4b40cb0874ecc4291b1494eb56111eb6f5ca6c4706079ac",
+          "shape": [
+            172481,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_20/source_index.npy",
+          "sha256": "c22c0139e0357c774cb69b851afb77a64b534a7ab53639afeaf9b2f576ecd54f",
+          "shape": [
+            172481
+          ],
+          "size": 690052
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_20/source_submap_index.npy",
+          "sha256": "154cc9f45969916b99559a74aa6ec936b3142c2b05ca6b5df273716194376d47",
+          "shape": [
+            172481
+          ],
+          "size": 690052
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000020.ckpt",
+      "checkpoint_sha256": "9f933e105fe8f1ee29c1202e99c646de15d44a6bca518271aaeea4f476274e9b",
+      "count": 172481,
+      "covariance": {
+        "eigenvalue_max": 0.03513287056699612,
+        "eigenvalue_min": 8.525391707682275e-08,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 1.1920928955078125e-07,
+        "quaternion_rotation_matrix_max_abs_diff": 3.5762786865234375e-07,
+        "scales_max_relative_diff": 4.204728156764759e-07,
+        "status": "PASS"
+      },
+      "submap_index": 20
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_21/means_world_m.npy",
+          "sha256": "875d92c3e7c318106c3be7cd9c2d6b7d1aaa0d6b1475a330ef03248d50766cc0",
+          "shape": [
+            74545,
+            3
+          ],
+          "size": 894668
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_21/scales_linear_m.npy",
+          "sha256": "0b4226f48719a1b8ed0adccf81310386088b81f85469d9df96298fd917d5d7ed",
+          "shape": [
+            74545,
+            3
+          ],
+          "size": 894668
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_21/quaternions_wxyz.npy",
+          "sha256": "cb979ee382fb8f9d9c42cc602ceadfff891bd574a23917dc2f4753b803b05426",
+          "shape": [
+            74545,
+            4
+          ],
+          "size": 1192848
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_21/opacities_activated.npy",
+          "sha256": "f64973eac598238d83d4a2a5445d0fc2657fe52eb33f4a8b0b08230fa20c1d31",
+          "shape": [
+            74545,
+            1
+          ],
+          "size": 298308
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_21/features_dc.npy",
+          "sha256": "74bb9fed5770e7bc208dcbab48ed9b4383787573718405a7578b42a4639001ee",
+          "shape": [
+            74545,
+            1,
+            3
+          ],
+          "size": 894668
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_21/features_rest.npy",
+          "sha256": "51b39594e3cd88c5be41309dba6b1f3aff83a1f445ab1ffff5c61d00e2b76075",
+          "shape": [
+            74545,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_21/source_index.npy",
+          "sha256": "d120d86e619a735a22d0e2f606b54d97a5252ad54956dbebe198d3e63fad0578",
+          "shape": [
+            74545
+          ],
+          "size": 298308
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_21/source_submap_index.npy",
+          "sha256": "cf50338d36aa3f437d6b4169e1e962ec986d6222003ffd31bcbb752e573144dd",
+          "shape": [
+            74545
+          ],
+          "size": 298308
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000021.ckpt",
+      "checkpoint_sha256": "ea4dc5f233354b5feb83c230dca3f176f761001c9896e1cf2eb007fec3af6852",
+      "count": 74545,
+      "covariance": {
+        "eigenvalue_max": 0.0018573339262144034,
+        "eigenvalue_min": 4.314066062200861e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 5.960464477539063e-08,
+        "quaternion_rotation_matrix_max_abs_diff": 1.7881393432617188e-07,
+        "scales_max_relative_diff": 2.508171235149348e-07,
+        "status": "PASS"
+      },
+      "submap_index": 21
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_22/means_world_m.npy",
+          "sha256": "82b7fe93f78fbdf943284e757888c50711ee7a3149831fbc43479fc35ba41306",
+          "shape": [
+            98978,
+            3
+          ],
+          "size": 1187864
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_22/scales_linear_m.npy",
+          "sha256": "560e5cfebad93f2cf7a3c3827241d360a3447695228483c4dfb2d41aa8372d6d",
+          "shape": [
+            98978,
+            3
+          ],
+          "size": 1187864
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_22/quaternions_wxyz.npy",
+          "sha256": "a0e33cbfe629cbe185f2ac3032ea2326f35a19c608c9fe66125b51297edd4ee0",
+          "shape": [
+            98978,
+            4
+          ],
+          "size": 1583776
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_22/opacities_activated.npy",
+          "sha256": "8aae531ff4b472f1efadce88e1d17ec08a36deb6b0c75da90f631fe34be27cb1",
+          "shape": [
+            98978,
+            1
+          ],
+          "size": 396040
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_22/features_dc.npy",
+          "sha256": "b35fecdb1f2f350760e21c802a07d4e5c88628e58c8915170aae16b69df3dda6",
+          "shape": [
+            98978,
+            1,
+            3
+          ],
+          "size": 1187864
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_22/features_rest.npy",
+          "sha256": "e3c5c4267262ba94cb2d7d5de004ab30b0337fc7394e060ffc4c9414a7f44ea1",
+          "shape": [
+            98978,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_22/source_index.npy",
+          "sha256": "b685aaa7e1d2a9d09ba02d3993149f7534736f0c137b3f12d1b8fafc9f3f1a8a",
+          "shape": [
+            98978
+          ],
+          "size": 396040
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_22/source_submap_index.npy",
+          "sha256": "63c1c5f357fa7de4097db454d934cdf08d1e3680e5c1027c103856748f285254",
+          "shape": [
+            98978
+          ],
+          "size": 396040
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000022.ckpt",
+      "checkpoint_sha256": "9e74edd421a362e0bbf0fda9dc51a4cb78d4ef0e12acc21b42eb83a5f09feef9",
+      "count": 98978,
+      "covariance": {
+        "eigenvalue_max": 0.00291970378700058,
+        "eigenvalue_min": 3.8701999462810284e-07,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 5.960464477539063e-08,
+        "quaternion_rotation_matrix_max_abs_diff": 2.384185791015625e-07,
+        "scales_max_relative_diff": 4.188265450011386e-07,
+        "status": "PASS"
+      },
+      "submap_index": 22
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_23/means_world_m.npy",
+          "sha256": "a9e147bad9f70d1e3eff001c803794c658470b52cb11295fbbe4eacacd699765",
+          "shape": [
+            113985,
+            3
+          ],
+          "size": 1367948
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_23/scales_linear_m.npy",
+          "sha256": "119bf37bcb26bd0613d8e294ca4e7839fc8bc5410f5f76bb90a2f534b70c8ac5",
+          "shape": [
+            113985,
+            3
+          ],
+          "size": 1367948
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_23/quaternions_wxyz.npy",
+          "sha256": "965ffea8aa36768b86bfa15d009840690b03b314852b94f778dbd575c5fdbf9e",
+          "shape": [
+            113985,
+            4
+          ],
+          "size": 1823888
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_23/opacities_activated.npy",
+          "sha256": "471323bbfaffec2828a1063895dfb10ddc4539023fb9e5a5fbc1d9769ecc1a42",
+          "shape": [
+            113985,
+            1
+          ],
+          "size": 456068
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_23/features_dc.npy",
+          "sha256": "7c752af1e3ccad3c5af46675d9c15183f5e2ac5d8fcf4a45c2864f907bbdf8bd",
+          "shape": [
+            113985,
+            1,
+            3
+          ],
+          "size": 1367948
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_23/features_rest.npy",
+          "sha256": "a3be783000225d244fde2f22863ed5abbd196a35e4eca3c3b5f6dca48770d5e3",
+          "shape": [
+            113985,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_23/source_index.npy",
+          "sha256": "b2d4c3d5a3180cdbafa5687f974ef7a5fcf56aee868e73eed1805ebe5816d2d1",
+          "shape": [
+            113985
+          ],
+          "size": 456068
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_23/source_submap_index.npy",
+          "sha256": "8bea3d33989a7e5e552f48fffce5f4b7408b99880a58d8fcceb0a582b27a340a",
+          "shape": [
+            113985
+          ],
+          "size": 456068
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/000023.ckpt",
+      "checkpoint_sha256": "669f180956b084e71887f8f3c5bfaa36820ff264dd0d6fa6078d2c6336fe4e3d",
+      "count": 113985,
+      "covariance": {
+        "eigenvalue_max": 0.06235671371374311,
+        "eigenvalue_min": 1.011809180551826e-06,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 1.1920928955078125e-07,
+        "quaternion_rotation_matrix_max_abs_diff": 2.980232238769531e-07,
+        "scales_max_relative_diff": 4.181160022653785e-07,
+        "status": "PASS"
+      },
+      "submap_index": 23
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float32",
+          "name": "means_world_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_24/means_world_m.npy",
+          "sha256": "67c2d881256338a5513206aa7632359d54972e4d2ed3bba635d75a0b8ca5d169",
+          "shape": [
+            109750,
+            3
+          ],
+          "size": 1317128
+        },
+        {
+          "dtype": "float32",
+          "name": "scales_linear_m",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_24/scales_linear_m.npy",
+          "sha256": "2e653a537463b9bd4e8234d8324837b46b311a1812e8c5361e0a945b582f5af0",
+          "shape": [
+            109750,
+            3
+          ],
+          "size": 1317128
+        },
+        {
+          "dtype": "float32",
+          "name": "quaternions_wxyz",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_24/quaternions_wxyz.npy",
+          "sha256": "e70f7769dee472fe304415163cee2496be31b6f77af8649975f708fd72d82c12",
+          "shape": [
+            109750,
+            4
+          ],
+          "size": 1756128
+        },
+        {
+          "dtype": "float32",
+          "name": "opacities_activated",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_24/opacities_activated.npy",
+          "sha256": "7f7573ccbbcabe29ad16c28f2c319b753012511c1354ea3a50302929cec26536",
+          "shape": [
+            109750,
+            1
+          ],
+          "size": 439128
+        },
+        {
+          "dtype": "float32",
+          "name": "features_dc",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_24/features_dc.npy",
+          "sha256": "01da7f746efa872c59d337837bcdc2437c5eb8262a4bdb0f3866f41852b28ff8",
+          "shape": [
+            109750,
+            1,
+            3
+          ],
+          "size": 1317128
+        },
+        {
+          "dtype": "float32",
+          "name": "features_rest",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_24/features_rest.npy",
+          "sha256": "5be69957685d6d3b2626f3f3fa866ef74badbd30be56fe3093092f77e9708620",
+          "shape": [
+            109750,
+            0,
+            3
+          ],
+          "size": 128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_24/source_index.npy",
+          "sha256": "70226882965ca08f7c56ba684fa842be0202d4311fff755dda66136212d93e24",
+          "shape": [
+            109750
+          ],
+          "size": 439128
+        },
+        {
+          "dtype": "float32",
+          "name": "source_submap_index",
+          "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a/submap_24/source_submap_index.npy",
+          "sha256": "e8988ab0e641a1e8d624207e98c2410039c12679535abf81f93210d3e9406aa0",
+          "shape": [
+            109750
+          ],
+          "size": 439128
+        }
+      ],
+      "checkpoint": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/gaussian_slam_full240/submaps/final_submap.ckpt",
+      "checkpoint_sha256": "e435588411b73c9e1769c5de2a4882b9c3d4855cde7724357f784338ea251c33",
+      "count": 109750,
+      "covariance": {
+        "eigenvalue_max": 0.01290605191380615,
+        "eigenvalue_min": 4.9749668381697496e-08,
+        "finite": true,
+        "formula": "R @ diag(scales_linear_m**2) @ R.T",
+        "positive_definite": true,
+        "sample_count": 4096
+      },
+      "roundtrip": {
+        "global_means_max_abs_diff": 0.0,
+        "opacity_max_abs_diff": 1.1920928955078125e-07,
+        "quaternion_rotation_matrix_max_abs_diff": 2.980232238769531e-07,
+        "scales_max_relative_diff": 4.1879181367221463e-07,
+        "status": "PASS"
+      },
+      "submap_index": 24
+    }
+  ],
+  "submap_count": 25,
+  "total_gaussian_count": 3045467
+}
