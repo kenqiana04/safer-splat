@@ -120,7 +120,11 @@ def distance_point_ellipsoid(s, x):
     dy_dlam = - (  (s[..., :]**2 * x) / (lam + s[..., :]**2)**2  )
     dq_dx = -2 * dy_dlam
 
-    # Collect into Hessian
-    hess = 2 * ( torch.diag_embed( 1. - (y / x))  + (1. / dq_dlam[..., None]) * torch.einsum('bi, bj -> bij', dy_dlam, dq_dx)   )
+    # ``lam / (lam + s**2)`` is algebraically ``1 - y / x`` but avoids
+    # the undefined 0/0 form when a local coordinate component is zero.
+    diag_term = lam / (lam + s**2)
+
+    # Collect into the first-octant local Hessian.
+    hess = 2 * ( torch.diag_embed(diag_term)  + (1. / dq_dlam[..., None]) * torch.einsum('bi, bj -> bij', dy_dlam, dq_dx)   )
 
     return squared_distance, grad, hess, y

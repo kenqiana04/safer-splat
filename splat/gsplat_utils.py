@@ -158,15 +158,23 @@ class GSplatLoader():
             # NOTE:!!! IMPORTANT!!! When we sort, we need to change the rotation matrices accordingly
             rots = torch.gather(rots, 2, sorted_inds[..., None, :].expand_as(rots))
 
-            # Translate robot w.r.t ellipsoid mean, then rotate point into ellipsoid aligned frame
-            x_local_frame = torch.bmm( torch.transpose(rots, 1, 2) , (x[..., :3] - self.means).unsqueeze(-1) ).squeeze() + 1e-8
+            # Translate robot w.r.t ellipsoid mean, then rotate point into ellipsoid aligned frame.
+            x_local_signed = torch.bmm( torch.transpose(rots, 1, 2) , (x[..., :3] - self.means).unsqueeze(-1) ).squeeze() + 1e-8
 
-            # The solver requires the point to be in the first octant. Calculate the sign of the point and flip the point.
-            flip = torch.sign(x_local_frame)
-            x_local_frame = torch.abs(x_local_frame)
+            # The solver Hessian is in first-octant local coordinates. ``flip``
+            # remains the existing closest-point recovery sign, while
+            # ``hessian_flip`` restores the signed local Hessian and maps an
+            # exact zero component to +1 for its reflection factor.
+            flip = torch.sign(x_local_signed)
+            hessian_flip = torch.where(
+                x_local_signed < 0,
+                -torch.ones_like(x_local_signed),
+                torch.ones_like(x_local_signed),
+            )
+            x_local_frame = torch.abs(x_local_signed)
 
             # solve for the distance in the local frame
-            dist, _, hess, yhat = distance_point_ellipsoid(sorted_scales + 1e-8, x_local_frame)
+            dist, _, hess_first_octant, yhat = distance_point_ellipsoid(sorted_scales + 1e-8, x_local_frame)
 
             # flip, rotate, and translate the closest point back to the global frame
             y = torch.bmm(rots, (flip * yhat).unsqueeze(-1)).squeeze(-1) + self.means
@@ -179,8 +187,18 @@ class GSplatLoader():
             # Compute gradient in world frame. 
             grad_h = 2 * phi[..., None] * (x[..., :3] - y)
 
-            # Mutliple Hessian by phi
-            hess_h = phi[..., None, None] * hess
+            # Restore the signed local Hessian, then rotate it into the world
+            # frame required by downstream CBF products.
+            hess_signed_local = (
+                hessian_flip[..., :, None]
+                * hess_first_octant
+                * hessian_flip[..., None, :]
+            )
+            hess_world = torch.bmm(
+                rots,
+                torch.bmm(hess_signed_local, rots.transpose(1, 2)),
+            )
+            hess_h = phi[..., None, None] * hess_world
 
             info = {'y': y, 'phi': phi}
 

@@ -1,0 +1,51 @@
+{
+  "active_indices_deterministic": true,
+  "continuity": {
+    "abs_delta_h_statistics": {
+      "max": 0.053070828318595886,
+      "mean": 0.007583691751782902,
+      "median": 0.001978538930416107,
+      "min": 3.770099965549889e-08,
+      "p95": 0.031024847552180275
+    },
+    "outlier_indices": [],
+    "pair_count": 299,
+    "status": "PASS",
+    "threshold": 0.1
+  },
+  "exact_deterministic": true,
+  "gaussian_count": 3045467,
+  "gradient_finite": true,
+  "gradient_norm_statistics": {
+    "max": 21.505556106567383,
+    "mean": 0.33558307908849966,
+    "median": 0.16438878327608109,
+    "min": 6.746705912519246e-05,
+    "p95": 0.9747432976961136
+  },
+  "gradient_repeat_exact": true,
+  "h_statistics": {
+    "max": 115.62220001220703,
+    "mean": 0.3333332454871208,
+    "median": 0.006755903130397201,
+    "min": -0.0014830894069746137,
+    "p95": 0.23753109127283095
+  },
+  "hessian_finite": true,
+  "hessian_repeat_exact": true,
+  "hessian_symmetry_relative": {
+    "max": 1.0228990987570796e-07,
+    "mean": 2.0902254293388095e-08,
+    "median": 1.653809356128022e-08,
+    "min": 0.0,
+    "p95": 5.457008427356413e-08
+  },
+  "method": "gaussian_slam",
+  "negative_count": 99,
+  "no_filtering": true,
+  "query_count": 908,
+  "query_sha256": "5d0b971c40adc27915a23c1c5da7cc2b260edb07e0f8d6c223fdd8736519d5d2",
+  "runs_finite": true,
+  "runtime_seconds": 148.86880207061768,
+  "status": "PASS_PATCHED_EXTERNAL_STATIC_AUDIT"
+}
