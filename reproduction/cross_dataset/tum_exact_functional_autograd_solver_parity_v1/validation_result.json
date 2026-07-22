@@ -1,0 +1,12 @@
+{
+  "status": "FUNCTIONAL_GRADIENT_PARITY_FAILED",
+  "official_source_identity": "PASS",
+  "current_functional_lineage": "PASS",
+  "forward_synthetic_exactness": "PASS_SYNTHETIC_EXACT_FUNCTIONAL_PARITY",
+  "forward_h_max_abs_diff": 0.0,
+  "gradient_parity": "FAIL",
+  "full_908_executed": false,
+  "static_safer_rerun": false,
+  "g0_classification": "PROHIBITED",
+  "unresolved_critical_fields": ["functional autograd gradient versus official analytical gradient"]
+}

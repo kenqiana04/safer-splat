@@ -1,0 +1,9 @@
+{
+  "first_divergence_stage": "real_get_root midpoint",
+  "first_divergence_iteration": 0,
+  "first_divergence_operation": "current_functional: (lower + upper).mul(0.5); official: torch.mean(contiguous_two_column_bounds, dim=-1, keepdims=True)",
+  "root_cause_class": "operation_order",
+  "effect": "The prior functional forward differed from the official float32 path by nonzero ULP-scale values.",
+  "exact_functional_repair": "torch.stack((lower, upper), dim=-1) followed by torch.mean(..., keepdim=True) and functional torch.where updates.",
+  "repaired_forward_status": "bitwise exact on 4096 synthetic cases"
+}

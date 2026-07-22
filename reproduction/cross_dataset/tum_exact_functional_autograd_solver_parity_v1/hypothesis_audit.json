@@ -1,0 +1,13 @@
+{
+  "midpoint_operation_order": "CONFIRMED_ROOT_CAUSE_FOR_FORWARD",
+  "bounds_initialization": "SOURCE_EQUIVALENT",
+  "iteration_count": 25,
+  "epsilon_position": "SOURCE_EQUIVALENT",
+  "scale_sort_and_rotation_gather": "SOURCE_EQUIVALENT",
+  "phi_uses_unperturbed_sorted_scales": true,
+  "distance_is_signed_squared_distance": true,
+  "dtype": "float32 CUDA",
+  "threshold_relaxation": false,
+  "custom_backward": false,
+  "gradient_gate": "FAIL: real autograd derivative of the finite unrolled root iteration does not satisfy the official analytical-gradient parity contract"
+}

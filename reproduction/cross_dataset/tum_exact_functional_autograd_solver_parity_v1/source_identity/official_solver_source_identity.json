@@ -1,0 +1,21 @@
+{
+  "distances": {
+    "ast_normalized_sha256": "05450da092b6bb1ff22fd128f88a1ba8b582af611335feb05f4107ffe233c5e4",
+    "path": "reproduction\\cross_dataset\\tum_exact_functional_autograd_solver_parity_v1\\source_identity\\distances_pr40.py",
+    "sha256": "0fbfb505727f5c40244cfb38299518d05562e65be9a9aaca781080d47f8d46ab"
+  },
+  "distances_git_blob": "81940ca59297a2ee3b4214901b038725c2748318",
+  "frozen_symbols": [
+    "splat.distances.real_get_root",
+    "splat.distances.distance_point_ellipsoid",
+    "splat.gsplat_utils.GSplatLoader.query_distance",
+    "splat.gsplat_utils.DummyGSplatLoader.query_distance"
+  ],
+  "gsplat_utils": {
+    "ast_normalized_sha256": "dad1a9bca468effa0397240066787c2080ae812b16828416fd816490c77af7de",
+    "path": "reproduction\\cross_dataset\\tum_exact_functional_autograd_solver_parity_v1\\source_identity\\gsplat_utils_pr40.py",
+    "sha256": "5c14c1b22891f14237c940e3cf2be96803333fc8a3e7e87a1ced24780ec7ded5"
+  },
+  "gsplat_utils_git_blob": "4e704349ddb5b5d6737e38d63965699ecfe81030",
+  "pr40_head": "babc37d800ab461dc11bf880ecbdf0db43c8ad69"
+}
