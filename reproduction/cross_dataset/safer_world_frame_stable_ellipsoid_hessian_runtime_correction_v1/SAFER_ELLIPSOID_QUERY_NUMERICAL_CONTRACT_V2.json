@@ -1,0 +1,13 @@
+{
+  "version": "V2",
+  "gradient_contract": "SELECT_OFFICIAL_ANALYTICAL_ENVELOPE_GRADIENT_CONTRACT",
+  "gradient_formula": "2 * phi * (x - y)",
+  "hessian_frame": "WORLD",
+  "hessian_formula": "phi * R * F * H_first_octant * F * R.T",
+  "sign_reflection": "SIGN_REFLECTION_REQUIRED_AND_VERIFIED",
+  "zero_component_rule": "hessian_flip zero maps to +1",
+  "stable_diagonal": "lambda / (lambda + s**2)",
+  "static_audit_authorized": true,
+  "g1_authorized": false,
+  "separate_g1_authorization_required": true
+}
