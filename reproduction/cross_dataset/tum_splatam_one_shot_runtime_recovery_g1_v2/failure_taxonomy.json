@@ -1,0 +1,8 @@
+{
+  "terminal": true,
+  "category": "UNEXPECTED_USER_FILE_OUTSIDE_AUTHORIZED_ARCHIVE_SCOPE",
+  "protocol_stop_condition": 3,
+  "path": ".vscode/extensions.json",
+  "reason": "The file is an editor configuration and cannot be proven to be a task/report asset; automatic relocation outside work/risk_aware_cbf was not authorized.",
+  "downstream_execution_started": false
+}

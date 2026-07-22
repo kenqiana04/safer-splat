@@ -1,0 +1,6 @@
+{
+  "next_task": "Reconcile user-owned post-switch artifacts in the authoritative checkout.",
+  "required_authorization": "Explicitly disposition .vscode/extensions.json and decide whether to archive the 915 work/risk_aware_cbf untracked files.",
+  "resume_point": "Re-run the clean-checkout gate before V2 environment and asset preflight.",
+  "do_not_do": ["Do not remove .vscode/extensions.json without authorization.", "Do not run G1 before the checkout is clean."]
+}
