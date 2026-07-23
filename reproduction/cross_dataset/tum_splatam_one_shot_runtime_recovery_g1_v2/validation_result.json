@@ -1,8 +1,6 @@
 {
-  "status": "FAIL",
-  "blocking_condition": "UNEXPECTED_USER_FILE_OUTSIDE_AUTHORIZED_ARCHIVE_SCOPE",
-  "authoritative_checkout_head": "f63b4c496861c4f8881348d74244c1ff9a528d51",
-  "g1_execution": false,
-  "formal_training": false,
-  "checkpoint": false
+  "status": "TUM_SPLATAM_G1_COLLISION_STOP",
+  "reason": "Original SAFER rollout reached GSplat geometric overlap at step 773; no QP infeasibility or nonfinite value occurred.",
+  "diagnostic_trials_executed": 0,
+  "optional_modules_executed": false
 }

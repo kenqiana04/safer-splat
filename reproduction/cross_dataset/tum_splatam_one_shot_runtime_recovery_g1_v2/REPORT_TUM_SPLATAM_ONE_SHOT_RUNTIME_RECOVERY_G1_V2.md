@@ -94,3 +94,29 @@ or explicitly disposition `.vscode/extensions.json`; inventory and, if desired,
 archive the 915 `work/risk_aware_cbf/` files; then re-check the detached PR #44
 checkout is clean.  Only after that gate passes should this V2 protocol resume
 from the environment/asset preflight.
+
+## Resumed execution result
+
+The remaining user artifacts were later archived with a GNU PAX archive and
+the checkout became clean.  The correct transforms asset was recovered at
+`/disk1/zlab/cross_dataset_assets/processed/tum_rgbd/freiburg1_room/transforms.json`
+with SHA-256 `b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a`.
+The recovered 908-point audit passed with query SHA-256
+`5d0b971c40adc27915a23c1c5da7cc2b260edb07e0f8d6c223fdd8736519d5d2`,
+exact A/B/C determinism, finite derivatives, and 277.69 seconds runtime.
+
+Original baseline constants recovered from the preserved launcher were robot
+radius `0.015`, alpha `5.0`, beta `1.0`, dt `0.05`, maximum 800 steps, and
+goal tolerance `0.001`.  Full-map diagnosis selected frames `0 -> 50` as the
+first safe pair.  The original CBF/Clarabel one-step QP passed with desired and
+safe control `[0.1, -0.1, -0.1]`.
+
+The sole authorized rollout stopped at step 773 with
+`TUM_SPLATAM_G1_COLLISION_STOP`: the full-map radius query produced
+`min_safety_h=-7.421476766467094e-10`, so this is recorded as
+`TUM_GSPLAT_GEOMETRIC_OVERLAP_CHECK`, not an official mesh collision.  QP
+infeasibility and nonfinite values were false; progress was 0.6442183 and
+runtime was 1732.72 seconds.  Diagnostic trials were not run because the
+one-trial success gate failed.  Start-Safe, Risk-Aware, DT verification,
+predictive recovery, V4-C, 20/100 trials, formal training, and V1R7 were not
+executed.
