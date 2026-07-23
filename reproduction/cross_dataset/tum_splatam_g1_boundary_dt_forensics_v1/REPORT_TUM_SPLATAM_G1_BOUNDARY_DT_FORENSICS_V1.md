@@ -91,6 +91,12 @@ The meaningful immediate precursor is the H1 warning at step 772 predicting
 the terminal overlap.  These are margin warnings, not collisions; the audit
 does not claim that DT verification avoided the event.
 
+H2 is necessarily included by H3 because the H3 minimum contains the same
+first two held-control predictions plus one additional prediction.  The
+nonnegative margin-only warning counts are 383 for each horizon; each H1/H2/H3
+check flags the step-772 predecessor, so the certified robust event has zero
+missed-event checks in this shadow audit.
+
 State and safe-control input hashes stayed identical before and after shadow
 instrumentation.  No Start-Safe, Risk-Aware controller, predictive recovery,
 20/100-trial benchmark, formal training, or V1R7 was run.
