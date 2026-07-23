@@ -1,0 +1,100 @@
+{
+  "final_status": "PASS_TUM_G1_TRUE_SAMPLED_DATA_OVERLAP_CERTIFIED",
+  "case": "CASE_C",
+  "terminal_step": 773,
+  "terminal_reference": {
+    "index": 4610535,
+    "h_ref_a": -3.406563170113043e-10,
+    "h_ref_b": -3.406563170113043e-10,
+    "kkt_residual_a": 2.220446049250313e-16,
+    "kkt_residual_b": 2.220446049250313e-16,
+    "surface_residual_a": 2.220446049250313e-16,
+    "surface_residual_b": 2.220446049250313e-16,
+    "tau_ref": 1e-12,
+    "classification": "ROBUST_OVERLAP",
+    "closest_point_a": [
+      0.012754447398930262,
+      -0.28049501435827034,
+      1.5235560244405926
+    ],
+    "phi": 1.0
+  },
+  "previous_step_772_reference": {
+    "index": 4610535,
+    "h_ref_a": 9.879318122580326e-10,
+    "h_ref_b": 9.879318122580326e-10,
+    "kkt_residual_a": 1.1102230246251565e-16,
+    "kkt_residual_b": 1.1102230246251565e-16,
+    "surface_residual_a": 1.1102230246251565e-16,
+    "surface_residual_b": 1.1102230246251565e-16,
+    "tau_ref": 1e-12,
+    "classification": "ROBUST_SAFE",
+    "closest_point_a": [
+      0.012754381593126182,
+      -0.2804949035966714,
+      1.5235560346236896
+    ],
+    "phi": 1.0
+  },
+  "first_robust_overlap_step": 773,
+  "sampled_data_crossing": true,
+  "filter_miss": false,
+  "integration_log_mismatch": false,
+  "dt_status": "DT_PRECURSOR_DETECTED",
+  "dt": {
+    "h1": {
+      "horizon": 1,
+      "warning_threshold": 0.0005,
+      "warning_count": 384,
+      "first_warning_step": 0,
+      "minimum_predicted_h": -7.421476766467094e-10,
+      "control_hold_semantics": "u_safe[k] held constant for H explicit-Euler steps",
+      "warnings_before_true_overlap": 384,
+      "margin_only_warning_count": 383,
+      "warning_at_predecessor": true,
+      "lead_steps_from_first_warning": 773,
+      "lead_seconds_from_first_warning": 38.650000000000006
+    },
+    "h2": {
+      "horizon": 2,
+      "warning_threshold": 0.0005,
+      "warning_count": 385,
+      "first_warning_step": 0,
+      "minimum_predicted_h": -1.8480932340025902e-09,
+      "control_hold_semantics": "u_safe[k] held constant for H explicit-Euler steps",
+      "warnings_before_true_overlap": 385,
+      "margin_only_warning_count": 383,
+      "warning_at_predecessor": true,
+      "lead_steps_from_first_warning": 773,
+      "lead_seconds_from_first_warning": 38.650000000000006
+    },
+    "h3": {
+      "horizon": 3,
+      "warning_threshold": 0.0005,
+      "warning_count": 386,
+      "first_warning_step": 0,
+      "minimum_predicted_h": -2.7794158086180687e-09,
+      "control_hold_semantics": "u_safe[k] held constant for H explicit-Euler steps",
+      "warnings_before_true_overlap": 386,
+      "margin_only_warning_count": 383,
+      "warning_at_predecessor": true,
+      "lead_steps_from_first_warning": 773,
+      "lead_seconds_from_first_warning": 38.650000000000006
+    }
+  },
+  "earliest_dt_warning": {
+    "verifier": "H1",
+    "horizon": 1,
+    "warning_threshold": 0.0005,
+    "warning_count": 384,
+    "first_warning_step": 0,
+    "minimum_predicted_h": -7.421476766467094e-10,
+    "control_hold_semantics": "u_safe[k] held constant for H explicit-Euler steps",
+    "warnings_before_true_overlap": 384,
+    "margin_only_warning_count": 383,
+    "warning_at_predecessor": true,
+    "lead_steps_from_first_warning": 773,
+    "lead_seconds_from_first_warning": 38.650000000000006
+  },
+  "claim_boundary": "The prior PR47 collision stop is a GSplat geometric-overlap proxy. This audit certifies neither a mesh collision nor a safety theorem and did not alter the original trajectory."
+}

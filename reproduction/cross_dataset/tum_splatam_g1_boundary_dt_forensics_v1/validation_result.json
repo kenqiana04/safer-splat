@@ -1,0 +1,18 @@
+{
+  "status": "PASS_TUM_G1_TRUE_SAMPLED_DATA_OVERLAP_CERTIFIED",
+  "input_identity_matches": true,
+  "fullmap_window_complete": true,
+  "filter_miss_count": 0,
+  "float64_reference_complete": true,
+  "shadow_h1_h2_h3_complete": true,
+  "shadow_only": true,
+  "no_start_safe": true,
+  "no_risk_aware": true,
+  "no_recovery": true,
+  "no_20_or_100_trials": true,
+  "no_formal_training": true,
+  "no_v1r7": true,
+  "unresolved_critical_fields": [
+    "Direct per-step runtime state logging was absent in PR47; state transitions are deterministic control reconstructions, so a direct-log mismatch cannot be certified."
+  ]
+}

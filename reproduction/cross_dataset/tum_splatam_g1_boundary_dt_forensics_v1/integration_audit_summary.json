@@ -1,0 +1,14 @@
+{
+  "runtime_integrator": "A: p_next=p+dt*v; v_next=v+dt*u (implemented as x_next=x+dt*[v,u])",
+  "dt": 0.05,
+  "state_count": 774,
+  "control_count": 773,
+  "reconstructed_state_max_abs_difference": 0.0,
+  "runtime_log_direct_state_sequence_available": false,
+  "comparison_scope": "The PR47 steps log contains safe controls but not separately logged x_k values; the recovered sequence is the deterministic control replay, so a direct logged-state mismatch cannot be asserted.",
+  "alternate_B_formula": "p_next=p+dt*v+0.5*dt^2*u; v_next=v+dt*u",
+  "alternate_B_max_abs_difference": 0.001250760808232873,
+  "integration_log_mismatch": false,
+  "integration_log_mismatch_certifiable": false,
+  "states_sha256": "e73a41bb8024d6b02af0d72cc69bd19df10a190ec8de0aacddc3f2d3e5a50f38"
+}

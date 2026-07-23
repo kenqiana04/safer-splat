@@ -1,0 +1,19 @@
+{
+  "source_path": "/disk1/zlab/maintenance_records/tum_splatam_one_shot_runtime_recovery_g1_v2/user_file_archive_remaining/extracted_verification_attempt_04_gnu_pax/work/risk_aware_cbf/scripts/run_dt_verification_only_audit.py",
+  "source_sha256": "f2545ad2ea593e44e70d29979dad609bb7c1ecf7fa1d538baebce01c6a6417d6",
+  "source_contract": "frozen run_dt_verification_only_audit.py: horizons=[1,2,3], repeated safe control, dt_margin=0.0005",
+  "state_sha256": "e73a41bb8024d6b02af0d72cc69bd19df10a190ec8de0aacddc3f2d3e5a50f38",
+  "safe_control_sha256": "1ed4bb264c0589887da383bff7c5002482eeb07087fa630de4029e84a2f16194",
+  "state_control_modified": false,
+  "runtime_integrator": "x_next=x+dt*[v,u]",
+  "dt": 0.05000000074505806,
+  "radius": 0.015,
+  "map_candidate_count": 5464102,
+  "runtime_seconds": 312.9921090602875,
+  "horizon": 3,
+  "warning_threshold": 0.0005,
+  "warning_count": 386,
+  "first_warning_step": 0,
+  "minimum_predicted_h": -2.7794158086180687e-09,
+  "control_hold_semantics": "u_safe[k] held constant for H explicit-Euler steps"
+}

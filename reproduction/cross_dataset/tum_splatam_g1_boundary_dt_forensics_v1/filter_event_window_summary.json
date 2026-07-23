@@ -1,0 +1,11 @@
+{
+  "source_contract": "Frozen cbf/cbf_utils.py calls GSplatLoader.query_distance over the complete map before h_rep_minimal post-query polytope reduction.",
+  "prequery_spatial_candidate_filter_exists": false,
+  "postquery_reduction": "h_rep_minimal is a QP constraint-polytope reduction, not a map-candidate query filter.",
+  "audited_event_window_query_count": 67,
+  "candidate_count_each_query": 5464102,
+  "filter_equivalent_to_full_query": true,
+  "filter_miss_count": 0,
+  "filter_miss_certified": false,
+  "full_event_window_evidence": "/disk1/zlab/maintenance_records/tum_splatam_g1_boundary_dt_forensics_v1/fullmap_queries/event_window_fullmap.json"
+}
