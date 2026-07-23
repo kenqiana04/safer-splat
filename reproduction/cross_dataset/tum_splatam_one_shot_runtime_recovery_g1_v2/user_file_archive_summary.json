@@ -1,0 +1,11 @@
+{
+  "status": "PASS_KNOWN_USER_REPORTS_PRESERVED_AND_RELOCATED",
+  "archive_root": "/disk1/zlab/maintenance_records/tum_splatam_one_shot_runtime_recovery_g1_v2/user_file_archive",
+  "tar_path": "/disk1/zlab/maintenance_records/tum_splatam_one_shot_runtime_recovery_g1_v2/user_file_archive/risk_aware_cbf_untracked_reports.tar",
+  "tar_sha256": "1aedcc3a8c60f63caeceeaedb235c12ead23a251266c34b06c2fd7f6e91ffe27",
+  "files": [
+    {"path": "work/risk_aware_cbf/REPORT_V4C_HIERARCHICAL_CANDIDATE_EVALUATION_V0.md", "sha256": "c9ade99a1b23a877782071132a4d27da43adf1b9371a2dada4947799486485b6", "byte_compare": true},
+    {"path": "work/risk_aware_cbf/REPORT_VANS_SHADOW_FEASIBILITY_AUDIT.md", "sha256": "e22a150cb8f397d79c43b22ca5229ce3d043adf9d04a6b4be5ad258c5040343f", "byte_compare": true},
+    {"path": "work/risk_aware_cbf/paper_materials/VANS_ACTION_SEMANTICS_AUDIT.md", "sha256": "81fdfd77df1d6c4319ec1f627c6c27e61e265781bee997a0430bfb9eddda9419", "byte_compare": true}
+  ]
+}
