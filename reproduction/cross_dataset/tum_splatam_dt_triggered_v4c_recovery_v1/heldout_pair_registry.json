@@ -1,0 +1,41 @@
+{
+  "registry_source": "PR47 frozen transforms sequence reconstructed before intervention; no standalone PR47 registry file was retained",
+  "transforms_sha256": "b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a",
+  "map_count": 5464102,
+  "selection_rule": "ascending start frame; pair=(start,start+50); exclude 0->50; require INITIAL_SAFE, goal_h>0, separation>=0.50m, finite, bbox valid; take first three",
+  "pairs": [
+    {
+      "label": "HELDOUT_PAIR_1",
+      "start_frame": 1,
+      "goal_frame": 51,
+      "start_h_float32": 0.0005915206857025623,
+      "goal_h_float32": 0.0012628128752112389,
+      "separation_m": 1.929023027420044,
+      "initial_safe": true,
+      "finite": true,
+      "bbox_valid": true
+    },
+    {
+      "label": "HELDOUT_PAIR_2",
+      "start_frame": 8,
+      "goal_frame": 58,
+      "start_h_float32": 0.0015014460077509284,
+      "goal_h_float32": 0.0009294996270909905,
+      "separation_m": 2.412597179412842,
+      "initial_safe": true,
+      "finite": true,
+      "bbox_valid": true
+    },
+    {
+      "label": "HELDOUT_PAIR_3",
+      "start_frame": 9,
+      "goal_frame": 59,
+      "start_h_float32": 0.001484835403971374,
+      "goal_h_float32": 0.00297952676191926,
+      "separation_m": 2.451378583908081,
+      "initial_safe": true,
+      "finite": true,
+      "bbox_valid": true
+    }
+  ]
+}
