@@ -1,0 +1,27 @@
+{
+  "source_path": "/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/scripts/run_v4c_hstep_predictive_recovery.py",
+  "source_restoration_commit": "b626b99cb1ed1437730c0e0734635fd8f0bdc517",
+  "source_blob": "5b28585b9b98d991d9f4fa9e0158812d2a3be80a",
+  "source_sha256": "d710f36d73f953e16588286445e30596887b7559faceccdd81c49e0223d930fe",
+  "recovered_horizon": 3,
+  "frozen_defaults": {
+    "num_sequences": 128,
+    "sequence_noise_scale": 0.15,
+    "control_scale_list": "0,0.25,0.5,0.75,1.0",
+    "include_braking_sequences": true,
+    "include_repulsive_sequences": true,
+    "include_goal_directed_sequences": true,
+    "use_cem": false,
+    "w_base": 1.0,
+    "w_goal": 0.2,
+    "w_smooth": 0.1,
+    "w_safety": 10.0,
+    "dt_margin": 0.0005
+  },
+  "candidate_and_objective_semantics": "Existing generate_sequences/evaluate_sequences; choose lowest cost candidate with H-step min_h >= dt_margin, otherwise highest-min-h fallback.",
+  "bounds": "torch.clamp each candidate and executed first control to [-0.1,0.1].",
+  "entry_exit_retrigger_semantics": "Historical V4-C is stateless per step: evaluate only when activated, execute the selected first control, then exit; next step independently re-evaluates the trigger.",
+  "max_active_duration_steps": 1,
+  "randomness": "deterministic numpy generators seeded by trial and step; CEM disabled.",
+  "identity_resolved": true
+}
