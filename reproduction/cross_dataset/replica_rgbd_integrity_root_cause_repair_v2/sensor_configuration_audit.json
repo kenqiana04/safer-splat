@@ -1,0 +1,76 @@
+{
+  "bounds": {
+    "lower": [
+      -3.292750597000122,
+      -1.5747652053833008,
+      -4.950381755828857
+    ],
+    "upper": [
+      6.073460102081299,
+      5.370980739593506,
+      9.816713333129883
+    ]
+  },
+  "observation_keys": [
+    "rgba",
+    "depth"
+  ],
+  "performed_at_utc": "2026-07-27T11:30:28+00:00",
+  "probe_stats": {
+    "depth_bad": false,
+    "depth_dtype": "uint16",
+    "depth_max": 8220,
+    "depth_min": 0,
+    "depth_shape": [
+      480,
+      640
+    ],
+    "joint_bad": false,
+    "rgb_bad": false,
+    "rgb_dtype": "uint8",
+    "rgb_max": 153,
+    "rgb_nonzero_fraction": 0.48065755208333333,
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ]
+  },
+  "sensor_specs": {
+    "depth": {
+      "far": 20.0,
+      "hfov": 90.0,
+      "model": "pinhole",
+      "near": 0.05,
+      "position": [
+        0,
+        1.5,
+        0
+      ],
+      "resolution": [
+        480,
+        640
+      ],
+      "type": "depth",
+      "uuid": "depth"
+    },
+    "rgba": {
+      "far": 20.0,
+      "hfov": 90.0,
+      "model": "pinhole",
+      "near": 0.05,
+      "position": [
+        0,
+        1.5,
+        0
+      ],
+      "resolution": [
+        480,
+        640
+      ],
+      "type": "color",
+      "uuid": "rgba"
+    }
+  },
+  "status": "PASS"
+}

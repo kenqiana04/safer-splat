@@ -1,0 +1,1232 @@
+{
+  "all_anomalies": [
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0001.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0001",
+      "frame_index": 1,
+      "joint_bad": true,
+      "position_index": 0,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0001.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": -60.0,
+      "yaw_slot": 1
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0005.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0005",
+      "frame_index": 5,
+      "joint_bad": true,
+      "position_index": 1,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0005.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": 60.0,
+      "yaw_slot": 2
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0030.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0030",
+      "frame_index": 30,
+      "joint_bad": true,
+      "position_index": 10,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0030.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "eval",
+      "yaw_offset_deg": 0.0,
+      "yaw_slot": 0
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0031.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0031",
+      "frame_index": 31,
+      "joint_bad": true,
+      "position_index": 10,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0031.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": -60.0,
+      "yaw_slot": 1
+    },
+    {
+      "depth_bad": false,
+      "depth_dtype": "uint16",
+      "depth_max": 4004,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0034.png",
+      "depth_sha256": "01b9d4fab5c97e6002fdcecb1ca6aecfe20856456ee00e022b163fefbaca1f72",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 1880,
+      "frame_id": "frame_0034",
+      "frame_index": 34,
+      "joint_bad": true,
+      "position_index": 11,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 145,
+      "rgb_nonzero_fraction": 0.00337890625,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0034.png",
+      "rgb_sha256": "68a12643d0290e574f9dfdbd604d3fb00c6baa5ffeeae411917b6ef85713e392",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 3042,
+      "split": "train",
+      "yaw_offset_deg": -60.0,
+      "yaw_slot": 1
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0042.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0042",
+      "frame_index": 42,
+      "joint_bad": true,
+      "position_index": 14,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0042.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": 0.0,
+      "yaw_slot": 0
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0043.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0043",
+      "frame_index": 43,
+      "joint_bad": true,
+      "position_index": 14,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0043.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": -60.0,
+      "yaw_slot": 1
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0075.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0075",
+      "frame_index": 75,
+      "joint_bad": true,
+      "position_index": 25,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0075.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": 0.0,
+      "yaw_slot": 0
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0076.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0076",
+      "frame_index": 76,
+      "joint_bad": true,
+      "position_index": 25,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0076.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": -60.0,
+      "yaw_slot": 1
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0079.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0079",
+      "frame_index": 79,
+      "joint_bad": true,
+      "position_index": 26,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0079.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": -60.0,
+      "yaw_slot": 1
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0089.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0089",
+      "frame_index": 89,
+      "joint_bad": true,
+      "position_index": 29,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0089.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": 60.0,
+      "yaw_slot": 2
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0113.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0113",
+      "frame_index": 113,
+      "joint_bad": true,
+      "position_index": 37,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0113.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": 60.0,
+      "yaw_slot": 2
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0116.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0116",
+      "frame_index": 116,
+      "joint_bad": true,
+      "position_index": 38,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0116.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": 60.0,
+      "yaw_slot": 2
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0118.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0118",
+      "frame_index": 118,
+      "joint_bad": true,
+      "position_index": 39,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0118.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": -60.0,
+      "yaw_slot": 1
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0146.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0146",
+      "frame_index": 146,
+      "joint_bad": true,
+      "position_index": 48,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0146.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": 60.0,
+      "yaw_slot": 2
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0166.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0166",
+      "frame_index": 166,
+      "joint_bad": true,
+      "position_index": 55,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0166.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": -60.0,
+      "yaw_slot": 1
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0170.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0170",
+      "frame_index": 170,
+      "joint_bad": true,
+      "position_index": 56,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0170.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "eval",
+      "yaw_offset_deg": 60.0,
+      "yaw_slot": 2
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0180.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0180",
+      "frame_index": 180,
+      "joint_bad": true,
+      "position_index": 60,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0180.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "eval",
+      "yaw_offset_deg": 0.0,
+      "yaw_slot": 0
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0181.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0181",
+      "frame_index": 181,
+      "joint_bad": true,
+      "position_index": 60,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0181.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": -60.0,
+      "yaw_slot": 1
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0186.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0186",
+      "frame_index": 186,
+      "joint_bad": true,
+      "position_index": 62,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0186.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": 0.0,
+      "yaw_slot": 0
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0189.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0189",
+      "frame_index": 189,
+      "joint_bad": true,
+      "position_index": 63,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0189.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": 0.0,
+      "yaw_slot": 0
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0190.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0190",
+      "frame_index": 190,
+      "joint_bad": true,
+      "position_index": 63,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0190.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "eval",
+      "yaw_offset_deg": -60.0,
+      "yaw_slot": 1
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0191.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0191",
+      "frame_index": 191,
+      "joint_bad": true,
+      "position_index": 63,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0191.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": 60.0,
+      "yaw_slot": 2
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0194.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0194",
+      "frame_index": 194,
+      "joint_bad": true,
+      "position_index": 64,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0194.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": 60.0,
+      "yaw_slot": 2
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0205.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0205",
+      "frame_index": 205,
+      "joint_bad": true,
+      "position_index": 68,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0205.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": -60.0,
+      "yaw_slot": 1
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0240.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0240",
+      "frame_index": 240,
+      "joint_bad": true,
+      "position_index": 80,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0240.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "eval",
+      "yaw_offset_deg": 0.0,
+      "yaw_slot": 0
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0242.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0242",
+      "frame_index": 242,
+      "joint_bad": true,
+      "position_index": 80,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0242.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": 60.0,
+      "yaw_slot": 2
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0244.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0244",
+      "frame_index": 244,
+      "joint_bad": true,
+      "position_index": 81,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0244.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": -60.0,
+      "yaw_slot": 1
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0270.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0270",
+      "frame_index": 270,
+      "joint_bad": true,
+      "position_index": 90,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0270.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "eval",
+      "yaw_offset_deg": 0.0,
+      "yaw_slot": 0
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0271.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0271",
+      "frame_index": 271,
+      "joint_bad": true,
+      "position_index": 90,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0271.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": -60.0,
+      "yaw_slot": 1
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0273.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0273",
+      "frame_index": 273,
+      "joint_bad": true,
+      "position_index": 91,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0273.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": 0.0,
+      "yaw_slot": 0
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0274.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0274",
+      "frame_index": 274,
+      "joint_bad": true,
+      "position_index": 91,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0274.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": -60.0,
+      "yaw_slot": 1
+    },
+    {
+      "depth_bad": true,
+      "depth_dtype": "uint16",
+      "depth_max": 0,
+      "depth_min": 0,
+      "depth_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/depth/frame_0275.png",
+      "depth_sha256": "5f4aa6e02d3dfd6fffb0589ee483e33e54b05f8eac3cf634defc80459aec79fd",
+      "depth_shape": [
+        480,
+        640
+      ],
+      "depth_size": 676,
+      "frame_id": "frame_0275",
+      "frame_index": 275,
+      "joint_bad": true,
+      "position_index": 91,
+      "rgb_bad": true,
+      "rgb_dtype": "uint8",
+      "rgb_max": 0,
+      "rgb_nonzero_fraction": 0.0,
+      "rgb_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/images/frame_0275.png",
+      "rgb_sha256": "441da7236f6ffdd8fb4cdfa2d9ce7b8d8df8cf2f7a8e82c530714d92266ce613",
+      "rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "rgb_size": 972,
+      "split": "train",
+      "yaw_offset_deg": 60.0,
+      "yaw_slot": 2
+    }
+  ],
+  "contiguous_index_runs": [
+    [
+      1
+    ],
+    [
+      5
+    ],
+    [
+      30,
+      31
+    ],
+    [
+      34
+    ],
+    [
+      42,
+      43
+    ],
+    [
+      75,
+      76
+    ],
+    [
+      79
+    ],
+    [
+      89
+    ],
+    [
+      113
+    ],
+    [
+      116
+    ],
+    [
+      118
+    ],
+    [
+      146
+    ],
+    [
+      166
+    ],
+    [
+      170
+    ],
+    [
+      180,
+      181
+    ],
+    [
+      186
+    ],
+    [
+      189,
+      190,
+      191
+    ],
+    [
+      194
+    ],
+    [
+      205
+    ],
+    [
+      240
+    ],
+    [
+      242
+    ],
+    [
+      244
+    ],
+    [
+      270,
+      271
+    ],
+    [
+      273,
+      274,
+      275
+    ]
+  ],
+  "joint_bad_count": 33,
+  "location_to_anomaly_frames": {
+    "0": [
+      "frame_0001"
+    ],
+    "1": [
+      "frame_0005"
+    ],
+    "10": [
+      "frame_0030",
+      "frame_0031"
+    ],
+    "11": [
+      "frame_0034"
+    ],
+    "14": [
+      "frame_0042",
+      "frame_0043"
+    ],
+    "25": [
+      "frame_0075",
+      "frame_0076"
+    ],
+    "26": [
+      "frame_0079"
+    ],
+    "29": [
+      "frame_0089"
+    ],
+    "37": [
+      "frame_0113"
+    ],
+    "38": [
+      "frame_0116"
+    ],
+    "39": [
+      "frame_0118"
+    ],
+    "48": [
+      "frame_0146"
+    ],
+    "55": [
+      "frame_0166"
+    ],
+    "56": [
+      "frame_0170"
+    ],
+    "60": [
+      "frame_0180",
+      "frame_0181"
+    ],
+    "62": [
+      "frame_0186"
+    ],
+    "63": [
+      "frame_0189",
+      "frame_0190",
+      "frame_0191"
+    ],
+    "64": [
+      "frame_0194"
+    ],
+    "68": [
+      "frame_0205"
+    ],
+    "80": [
+      "frame_0240",
+      "frame_0242"
+    ],
+    "81": [
+      "frame_0244"
+    ],
+    "90": [
+      "frame_0270",
+      "frame_0271"
+    ],
+    "91": [
+      "frame_0273",
+      "frame_0274",
+      "frame_0275"
+    ]
+  },
+  "performed_at_utc": "2026-07-27T11:29:28+00:00",
+  "status": "PASS",
+  "yaw_distribution": {
+    "-60.0": 14,
+    "0.0": 9,
+    "60.0": 10
+  }
+}

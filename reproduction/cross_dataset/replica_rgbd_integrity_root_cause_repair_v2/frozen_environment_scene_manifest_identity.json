@@ -1,0 +1,219 @@
+{
+  "environment": {
+    "egl_renderer": "NVIDIA RTX 4090",
+    "gpu_inprocess": 0,
+    "gpu_physical": 1,
+    "habitat_sim_file": "/disk1/zlab/conda_envs/replica_habitat_renderer_py39/lib/python3.9/site-packages/habitat_sim-0.3.3-py3.9-linux-x86_64.egg/habitat_sim/__init__.py",
+    "habitat_sim_version": "0.3.3",
+    "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+    "python": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:57:12) \n[GCC 13.3.0]"
+  },
+  "manifest": {
+    "location_count": 100,
+    "path": "/disk1/zlab/cross_dataset_assets/manifests/replica_protocol_v1/formal_camera_manifest.csv",
+    "row_count": 300,
+    "sha256": "1056121e4470124e180a3367172440f540f0acdc5adab665c3187ac8ab87be25",
+    "split": {
+      "eval": 30,
+      "train": 270
+    },
+    "v1_transforms_identity": true,
+    "v1_transforms_path": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering/transforms.json",
+    "yaw_order": [
+      0,
+      -60,
+      60
+    ]
+  },
+  "performed_at_utc": "2026-07-27T11:47:11+00:00",
+  "scene": {
+    "bounds": {
+      "lower": [
+        -3.292750597000122,
+        -1.5747652053833008,
+        -4.950381755828857
+      ],
+      "upper": [
+        6.073460102081299,
+        5.370980739593506,
+        9.816713333129883
+      ]
+    },
+    "lock_match": true,
+    "mesh": {
+      "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/mesh.ply",
+      "sha256": "274677d9b7caa413230363b68f4aa472e5cc1afe87e422a489fa1b7d844c6182"
+    },
+    "name": "apartment_0",
+    "navmesh": {
+      "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.navmesh",
+      "sha256": "32296d6457d3855ffe172cf1970364559def5dd15892e149b44d0bc7c6b7e938"
+    },
+    "root": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0",
+    "semantic_mesh_path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+    "texture_count": 32,
+    "textures": [
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/0-color-ptex.hdr",
+        "sha256": "529208f1b32634291fd53d6f40a3aba80abb77040a0c84e4df9a3d79458357a3",
+        "size": 301438464
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/1-color-ptex.hdr",
+        "sha256": "72ace62f1d73f0da61376f318c4f95d7bb83f13c483cb022e7c90f30453bf8db",
+        "size": 361305600
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/10-color-ptex.hdr",
+        "sha256": "32d0e21165857cd413fccceb0633c5b024bd956f34c50403756f628c32b1af1b",
+        "size": 17915904
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/11-color-ptex.hdr",
+        "sha256": "bd7fbdd92a1237290ff8d70e74149c5964bbb681ea709edc0278ee3ef1731a91",
+        "size": 89212416
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/12-color-ptex.hdr",
+        "sha256": "cf038774d9e98ce8685e4af58bd2e1c945c93d82f7b991725f721f717cc3c296",
+        "size": 267093504
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/13-color-ptex.hdr",
+        "sha256": "b624079fde6ef747903ed7ca3a1c555e4333f4216d77142b528d14eb1f8da93b",
+        "size": 4816896
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/14-color-ptex.hdr",
+        "sha256": "c2cc415d87a54f2e90b13a7417c99438d91485e76c154a836d1b3ba213c59817",
+        "size": 302800896
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/15-color-ptex.hdr",
+        "sha256": "603b13477b4fd2ddd3a6a1340e38e930b20141e45b63a83a44fdbdf81d3bfd2a",
+        "size": 481689600
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/16-color-ptex.hdr",
+        "sha256": "00f760ea7400b24727731620e03edaeba3edab69f3b427d2fbcc3fe32134e083",
+        "size": 248223744
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/17-color-ptex.hdr",
+        "sha256": "8bf07190743d20979e0eaa66eb31a4f8475103f59c13840e1a87a58abd21b394",
+        "size": 379405824
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/18-color-ptex.hdr",
+        "sha256": "fd6597ec2ab2cef0427fe78686d6f15808103a6bacd36ec84797216a0d89adf9",
+        "size": 221798400
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/19-color-ptex.hdr",
+        "sha256": "758a2127d28bb8f8299bd03ab55a9cf7cd78673586957bd5c8b9bbdf5bc70f4f",
+        "size": 358331904
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/2-color-ptex.hdr",
+        "sha256": "809d1eb765188284baa754e732b39cc5d5d3e60064e7057dd7fe2e1b5b1b414c",
+        "size": 302800896
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/20-color-ptex.hdr",
+        "sha256": "27d14569a329477332050c7867739a63142d9d7b711f1a9329790d1700c478f9",
+        "size": 91447296
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/21-color-ptex.hdr",
+        "sha256": "22c4d2ba45b321d975b08976dddccae8bfb0ecf6176871b37b3a26b759607e8b",
+        "size": 212557824
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/22-color-ptex.hdr",
+        "sha256": "7ebb5a5aa359b8ad952166bd2214e7cfeb71ed12d9923cff3756d7c1576080e6",
+        "size": 306906624
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/23-color-ptex.hdr",
+        "sha256": "04d37b4c8a91a1650fb7c21be5b383f71ddbd7c32c15a5cd2ade8d7cd24b784b",
+        "size": 325017600
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/24-color-ptex.hdr",
+        "sha256": "682c70ce9bba7d17471835633533d9615020bcb508aae6c00ff51a928bf450b3",
+        "size": 352421376
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/25-color-ptex.hdr",
+        "sha256": "56e23fe2860bcaf42d4d0164230b8c0b19ac489ad2a1b1399e05138418e747aa",
+        "size": 43352064
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/26-color-ptex.hdr",
+        "sha256": "c4eb9793891857f5c6b729a789abb514a4b1b115ac5c16aac16f5e0750e1ea78",
+        "size": 17258496
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/27-color-ptex.hdr",
+        "sha256": "94f4a7ae97392063d02aa302daf07abe41e991f9c05f31c4a8c9e7004b1f574e",
+        "size": 189236736
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/28-color-ptex.hdr",
+        "sha256": "4d19555ab0c8ada24ceec034bed57af7d0601d7ff8bc569a4b7cc852e5793810",
+        "size": 26763264
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/29-color-ptex.hdr",
+        "sha256": "0fd00418ad3f065ec92b9d864df6420e2d6d6b26d20423bbda7a5a772c1ee809",
+        "size": 86275584
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/3-color-ptex.hdr",
+        "sha256": "056deb77d8a1a97442a041ab0065bc8999d6adcbadd7bb25ffbe575bc152b39a",
+        "size": 365789184
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/30-color-ptex.hdr",
+        "sha256": "d5693eae988159f4b24245f59700e87a2ee7c05ec0e97cbceb16c57a76e1c155",
+        "size": 205756416
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/4-color-ptex.hdr",
+        "sha256": "62bc89acb695455977515d02e63d05415e07610db432cb322658d07c4e2955cf",
+        "size": 233625600
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/5-color-ptex.hdr",
+        "sha256": "5e64e4c1ad4b7bc0848e6623fc387c5597f230cea7bcbc18d120a67cc7afea95",
+        "size": 218310144
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/6-color-ptex.hdr",
+        "sha256": "7049d88b34c856ceeff75d64c55e7625460af00f438ec7895b9196eface8ef6e",
+        "size": 290649600
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/7-color-ptex.hdr",
+        "sha256": "883758deb5b0f148dbfb545a6cecc785e5328853cc21716d8d662a810bba560d",
+        "size": 237233664
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/8-color-ptex.hdr",
+        "sha256": "cb596ec5a6406d427b8b1820409c2a4b614e40445da789ffbb2056d3615259fe",
+        "size": 59610624
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/9-color-ptex.hdr",
+        "sha256": "a94953ce97fd438209050b2c1dfb3fcac77f09b31739db885e654e46801679b9",
+        "size": 424974336
+      },
+      {
+        "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/textures/parameters.json",
+        "sha256": "7ba6d867f40840147b2c3c5ac5d1c1fe7407c0af334966b03b48ec69adece868",
+        "size": 39
+      }
+    ]
+  },
+  "status": "PASS"
+}

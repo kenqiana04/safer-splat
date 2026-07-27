@@ -1,0 +1,18 @@
+{
+  "historical_commit": "fe250df543aa158557c176ee4f87dc131bb61e60",
+  "historical_commit_subject": "Record Replica formal preprocessing integrity gate",
+  "historical_branch": "safer-replica-frozen-render-protocol-v1",
+  "is_ancestor_of_pr51_head": false,
+  "recovery_method": "git cat-file and git ls-tree only; no cherry-pick",
+  "historical_source_blobs": {
+    "render_replica_from_frozen_manifest.py": "8d59eb5b0d7434be76c8b385c97ee0d7e5dcfaa4",
+    "generate_replica_frozen_camera_manifest.py": "480232b8ffd444961a78646d907950b2448fc84c",
+    "validate_cross_dataset_metric_preprocessing.py": "cae67b3be07c1b801dc7af51ebc0ffcc6bbe6efb",
+    "validate_replica_render_protocol.py": "7a7d1bb35a5ae277e2b5a6717e37a28d8669653e",
+    "validate_replica_raw_closure.py": "1c74040b5bcde0a36ee7526a6df27eb431a8cfc5",
+    "finalize_replica_import.py": "a97146855a68ab33f2e28893e5eb2046beb5b527"
+  },
+  "frozen_v1_integrity_checker": "validate_cross_dataset_metric_preprocessing.py",
+  "exact_v1_rgb_threshold": "shape=(480,640,3), max>0, fraction(rgb>0)>0.01",
+  "exact_v1_depth_threshold": "shape=(480,640), dtype=uint16, max>0"
+}
