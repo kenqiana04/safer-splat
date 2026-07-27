@@ -1,0 +1,30 @@
+{
+  "PRIMARY_ROOT_CAUSE": "SCENE_ASSET_OR_TEXTURE_COVERAGE_DEFECT",
+  "atomic_publication_status": "NOT_AUTHORIZED_DUE_TO_ROOT_CAUSE_GATE",
+  "final_status": "BLOCKED_BY_REPLICA_SCENE_ASSET_RENDER_COVERAGE_DEFECT",
+  "formal_v2_rerender_count": 0,
+  "gaussian_training_count": 0,
+  "isolated": {
+    "bad_count": 33,
+    "deterministic": true,
+    "probe_count": 81,
+    "repeat_count": 2
+  },
+  "manifest_sha256": "1056121e4470124e180a3367172440f540f0acdc5adab665c3187ac8ab87be25",
+  "paired20_manifest_sha256": "380717f0ec39e0e422902573685f5a2838e78dd6efcce500ba71585efd3d82f6",
+  "performed_at_utc": "2026-07-27T11:47:14+00:00",
+  "recommended_next_task": "REPLICA_SCENE_ASSET_COVERAGE_AUDIT_V1",
+  "repair_authorized": false,
+  "safer_execution_count": 0,
+  "scene_identity_status": "PASS",
+  "serial": {
+    "count": 1,
+    "in_memory_bad": 33,
+    "post_save_bad": 33
+  },
+  "tum_rollout_count": 0,
+  "v1_reaudit_counts": {
+    "depth": 32,
+    "rgb": 33
+  }
+}
