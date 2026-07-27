@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "corrected_camera_center_count_300": true,
+    "paired20_manifest_unchanged": true,
+    "pre_correction_results_not_reused": true,
+    "prohibited_execution_counts": {
+      "controller_modification": 0,
+      "recovery": 0,
+      "replica": 0,
+      "risk_aware": 0,
+      "start_safe": 0,
+      "v4_c": 0
+    },
+    "registry_frozen_before_rollouts": true,
+    "scientific_rollout_count_4": true,
+    "search_budget_at_most_2048": true,
+    "sequence_3_terminal_or_steps": {
+      "execution": "not run by this task",
+      "steps": 0,
+      "terminal": false
+    },
+    "transforms_and_camera_universe_identity": true
+  },
+  "final_tum_decision": "CLOSE_TUM_NAVIGATION_BENCHMARK_KEEP_SAFETY_CASE_STUDY",
+  "status": "PASS",
+  "unresolved_critical_evidence": []
+}
