@@ -1,0 +1,76 @@
+{
+  "records": [
+    {
+      "primary_classification": "EARLY_SAFETY_PROXY_STOP",
+      "proxy_overlap_certification": "PROXY_ONLY_NOT_CERTIFIED",
+      "secondary_classifications": [],
+      "trajectory_id": "paused_paired20:111:287:ORIGINAL_SAFER_BASELINE"
+    },
+    {
+      "primary_classification": "CBF_BOUNDARY_STALL",
+      "proxy_overlap_certification": null,
+      "secondary_classifications": [
+        "BASELINE_LIMITATION_PRESERVED"
+      ],
+      "trajectory_id": "paused_paired20:111:287:STRICT_DT_TRIGGERED_V4C"
+    },
+    {
+      "primary_classification": "EARLY_SAFETY_PROXY_STOP",
+      "proxy_overlap_certification": "CERTIFIED_ROBUST_OVERLAP",
+      "secondary_classifications": [],
+      "trajectory_id": "pr47_g1_baseline:0:50:ORIGINAL_SAFER_BASELINE"
+    },
+    {
+      "primary_classification": "CBF_BOUNDARY_STALL",
+      "proxy_overlap_certification": null,
+      "secondary_classifications": [
+        "BASELINE_LIMITATION_PRESERVED"
+      ],
+      "trajectory_id": "pr49_v4c:0:50:STRICT_DT_TRIGGERED_V4C"
+    },
+    {
+      "primary_classification": "EARLY_SAFETY_PROXY_STOP",
+      "proxy_overlap_certification": "PROXY_ONLY_NOT_CERTIFIED",
+      "secondary_classifications": [],
+      "trajectory_id": "pr49_v4c:1:51:ORIGINAL_SAFER_BASELINE"
+    },
+    {
+      "primary_classification": "CBF_BOUNDARY_STALL",
+      "proxy_overlap_certification": null,
+      "secondary_classifications": [
+        "BASELINE_LIMITATION_PRESERVED"
+      ],
+      "trajectory_id": "pr49_v4c:1:51:STRICT_DT_TRIGGERED_V4C"
+    },
+    {
+      "primary_classification": "CBF_BOUNDARY_STALL",
+      "proxy_overlap_certification": null,
+      "secondary_classifications": [
+        "TRIGGER_NEUTRAL_BASELINE_EQUIVALENT"
+      ],
+      "trajectory_id": "pr49_v4c:8:58:ORIGINAL_SAFER_BASELINE"
+    },
+    {
+      "primary_classification": "CBF_BOUNDARY_STALL",
+      "proxy_overlap_certification": null,
+      "secondary_classifications": [
+        "TRIGGER_NEUTRAL_BASELINE_EQUIVALENT"
+      ],
+      "trajectory_id": "pr49_v4c:8:58:STRICT_DT_TRIGGERED_V4C"
+    },
+    {
+      "primary_classification": "EARLY_SAFETY_PROXY_STOP",
+      "proxy_overlap_certification": "PROXY_ONLY_NOT_CERTIFIED",
+      "secondary_classifications": [],
+      "trajectory_id": "pr49_v4c:9:59:ORIGINAL_SAFER_BASELINE"
+    },
+    {
+      "primary_classification": "CBF_BOUNDARY_STALL",
+      "proxy_overlap_certification": null,
+      "secondary_classifications": [
+        "BASELINE_LIMITATION_PRESERVED"
+      ],
+      "trajectory_id": "pr49_v4c:9:59:STRICT_DT_TRIGGERED_V4C"
+    }
+  ]
+}

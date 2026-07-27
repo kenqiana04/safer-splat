@@ -1,0 +1,156 @@
+{
+  "canonical_trajectory_count": 10,
+  "entries": [
+    {
+      "missing_fields": [
+        "active_constraint_count",
+        "candidate_count",
+        "fallback",
+        "h1_min",
+        "h2_min",
+        "h3_min",
+        "margin_warning",
+        "official_progress",
+        "qp_residual",
+        "qp_status",
+        "step_runtime",
+        "u_nominal",
+        "u_safe"
+      ],
+      "normalized_path": "/disk1/zlab/maintenance_records/tum_splatam_global_progress_limitation_audit_v1/normalized/pr47_g1_baseline__0__50__ORIGINAL_SAFER_BASELINE.jsonl",
+      "normalized_sha256": "3a1f0ef8b094a73ac366011480b00248d82356090b979fe9d542c3358e833f7a",
+      "row_count": 773,
+      "state_reconstructed": true,
+      "terminal_status": "TUM_SPLATAM_G1_COLLISION_STOP",
+      "trajectory_id": "pr47_g1_baseline:0:50:ORIGINAL_SAFER_BASELINE"
+    },
+    {
+      "missing_fields": [
+        "active_constraint_count",
+        "fallback",
+        "official_progress",
+        "qp_residual"
+      ],
+      "normalized_path": "/disk1/zlab/maintenance_records/tum_splatam_global_progress_limitation_audit_v1/normalized/pr49_v4c__0__50__STRICT_DT_TRIGGERED_V4C.jsonl",
+      "normalized_sha256": "a4ce193e14567a10ff846e4efe60b3d21f0bb2d66e43066155d2520b6f26e5d9",
+      "row_count": 800,
+      "state_reconstructed": false,
+      "terminal_status": "max_steps",
+      "trajectory_id": "pr49_v4c:0:50:STRICT_DT_TRIGGERED_V4C"
+    },
+    {
+      "missing_fields": [
+        "active_constraint_count",
+        "fallback",
+        "official_progress",
+        "qp_residual"
+      ],
+      "normalized_path": "/disk1/zlab/maintenance_records/tum_splatam_global_progress_limitation_audit_v1/normalized/pr49_v4c__1__51__ORIGINAL_SAFER_BASELINE.jsonl",
+      "normalized_sha256": "0be7105d5ad48b59cbf98c5153cbb055404a754d795ac5d9a186776b6c90d480",
+      "row_count": 716,
+      "state_reconstructed": false,
+      "terminal_status": "gsplat_overlap_stop",
+      "trajectory_id": "pr49_v4c:1:51:ORIGINAL_SAFER_BASELINE"
+    },
+    {
+      "missing_fields": [
+        "active_constraint_count",
+        "fallback",
+        "official_progress",
+        "qp_residual"
+      ],
+      "normalized_path": "/disk1/zlab/maintenance_records/tum_splatam_global_progress_limitation_audit_v1/normalized/pr49_v4c__1__51__STRICT_DT_TRIGGERED_V4C.jsonl",
+      "normalized_sha256": "e1a051e130afc883006c2981fd305ea373c7c3737d1a3035702630727aebcf7a",
+      "row_count": 800,
+      "state_reconstructed": false,
+      "terminal_status": "max_steps",
+      "trajectory_id": "pr49_v4c:1:51:STRICT_DT_TRIGGERED_V4C"
+    },
+    {
+      "missing_fields": [
+        "active_constraint_count",
+        "fallback",
+        "official_progress",
+        "qp_residual"
+      ],
+      "normalized_path": "/disk1/zlab/maintenance_records/tum_splatam_global_progress_limitation_audit_v1/normalized/pr49_v4c__8__58__ORIGINAL_SAFER_BASELINE.jsonl",
+      "normalized_sha256": "2d6a83c428120eb097ee49785b5cf51aee40725ce8d347b9f2459e5ed41659e6",
+      "row_count": 800,
+      "state_reconstructed": false,
+      "terminal_status": "max_steps",
+      "trajectory_id": "pr49_v4c:8:58:ORIGINAL_SAFER_BASELINE"
+    },
+    {
+      "missing_fields": [
+        "active_constraint_count",
+        "fallback",
+        "official_progress",
+        "qp_residual"
+      ],
+      "normalized_path": "/disk1/zlab/maintenance_records/tum_splatam_global_progress_limitation_audit_v1/normalized/pr49_v4c__8__58__STRICT_DT_TRIGGERED_V4C.jsonl",
+      "normalized_sha256": "8c22799a2bdd3de35e5ea4b8fc4bbcf7fedd2db4841f7619acb8ed89345b9cec",
+      "row_count": 800,
+      "state_reconstructed": false,
+      "terminal_status": "max_steps",
+      "trajectory_id": "pr49_v4c:8:58:STRICT_DT_TRIGGERED_V4C"
+    },
+    {
+      "missing_fields": [
+        "active_constraint_count",
+        "fallback",
+        "official_progress",
+        "qp_residual"
+      ],
+      "normalized_path": "/disk1/zlab/maintenance_records/tum_splatam_global_progress_limitation_audit_v1/normalized/pr49_v4c__9__59__ORIGINAL_SAFER_BASELINE.jsonl",
+      "normalized_sha256": "1f11f5d98ec2a05e2c46b6db56e9be07d86c15172cb8a3200b8f96e725810668",
+      "row_count": 616,
+      "state_reconstructed": false,
+      "terminal_status": "gsplat_overlap_stop",
+      "trajectory_id": "pr49_v4c:9:59:ORIGINAL_SAFER_BASELINE"
+    },
+    {
+      "missing_fields": [
+        "active_constraint_count",
+        "fallback",
+        "official_progress",
+        "qp_residual"
+      ],
+      "normalized_path": "/disk1/zlab/maintenance_records/tum_splatam_global_progress_limitation_audit_v1/normalized/pr49_v4c__9__59__STRICT_DT_TRIGGERED_V4C.jsonl",
+      "normalized_sha256": "be59429376170bf028bc0d89982b76e13fc00c6b6f846d5acf5c7254ce1a1c9b",
+      "row_count": 800,
+      "state_reconstructed": false,
+      "terminal_status": "max_steps",
+      "trajectory_id": "pr49_v4c:9:59:STRICT_DT_TRIGGERED_V4C"
+    },
+    {
+      "missing_fields": [
+        "active_constraint_count",
+        "fallback",
+        "qp_residual"
+      ],
+      "normalized_path": "/disk1/zlab/maintenance_records/tum_splatam_global_progress_limitation_audit_v1/normalized/paused_paired20__111__287__ORIGINAL_SAFER_BASELINE.jsonl",
+      "normalized_sha256": "1e9469aa71cdc04eb46f45f57bbac8463b48e65cb870bd7eb02b7d309df6b95f",
+      "row_count": 355,
+      "state_reconstructed": false,
+      "terminal_status": "float32_proxy_overlap_stop",
+      "trajectory_id": "paused_paired20:111:287:ORIGINAL_SAFER_BASELINE"
+    },
+    {
+      "missing_fields": [
+        "active_constraint_count",
+        "fallback",
+        "qp_residual"
+      ],
+      "normalized_path": "/disk1/zlab/maintenance_records/tum_splatam_global_progress_limitation_audit_v1/normalized/paused_paired20__111__287__STRICT_DT_TRIGGERED_V4C.jsonl",
+      "normalized_sha256": "ed7d2042525ddc51da040aaa48527c3911f17483053ea36fd5fde0c614a3e374",
+      "row_count": 800,
+      "state_reconstructed": false,
+      "terminal_status": "max_steps",
+      "trajectory_id": "paused_paired20:111:287:STRICT_DT_TRIGGERED_V4C"
+    }
+  ],
+  "new_state_generation": 0,
+  "online_fullmap_queries": 0,
+  "qp_execution": 0,
+  "v4c_execution": 0
+}

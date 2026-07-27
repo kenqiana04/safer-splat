@@ -1,0 +1,106 @@
+{
+  "entries": [
+    {
+      "final_difference": -3.7639152203894355e-06,
+      "geometric_final_progress": 0.6442220550023762,
+      "max_absolute_difference_over_available_steps": 3.7639152203894355e-06,
+      "official_final_progress": 0.6442182910871558,
+      "official_is_clipped": false,
+      "other_normalization_detected": false,
+      "semantic_equivalence": true,
+      "trajectory_id": "pr47_g1_baseline:0:50:ORIGINAL_SAFER_BASELINE"
+    },
+    {
+      "final_difference": 1.5868036262745022e-07,
+      "geometric_final_progress": 0.6445665061961436,
+      "max_absolute_difference_over_available_steps": 1.5868036262745022e-07,
+      "official_final_progress": 0.6445666648765063,
+      "official_is_clipped": false,
+      "other_normalization_detected": false,
+      "semantic_equivalence": true,
+      "trajectory_id": "pr49_v4c:0:50:STRICT_DT_TRIGGERED_V4C"
+    },
+    {
+      "final_difference": 7.802972223913685e-08,
+      "geometric_final_progress": 0.6301709880396156,
+      "max_absolute_difference_over_available_steps": 7.802972223913685e-08,
+      "official_final_progress": 0.6301710660693378,
+      "official_is_clipped": false,
+      "other_normalization_detected": false,
+      "semantic_equivalence": true,
+      "trajectory_id": "pr49_v4c:1:51:ORIGINAL_SAFER_BASELINE"
+    },
+    {
+      "final_difference": 1.955705503098315e-07,
+      "geometric_final_progress": 0.6301688929706754,
+      "max_absolute_difference_over_available_steps": 1.955705503098315e-07,
+      "official_final_progress": 0.6301690885412257,
+      "official_is_clipped": false,
+      "other_normalization_detected": false,
+      "semantic_equivalence": true,
+      "trajectory_id": "pr49_v4c:1:51:STRICT_DT_TRIGGERED_V4C"
+    },
+    {
+      "final_difference": 2.8427618432858015e-08,
+      "geometric_final_progress": 0.050863155356499705,
+      "max_absolute_difference_over_available_steps": 2.8427618432858015e-08,
+      "official_final_progress": 0.05086318378411814,
+      "official_is_clipped": false,
+      "other_normalization_detected": false,
+      "semantic_equivalence": true,
+      "trajectory_id": "pr49_v4c:8:58:ORIGINAL_SAFER_BASELINE"
+    },
+    {
+      "final_difference": 2.8427618432858015e-08,
+      "geometric_final_progress": 0.050863155356499705,
+      "max_absolute_difference_over_available_steps": 2.8427618432858015e-08,
+      "official_final_progress": 0.05086318378411814,
+      "official_is_clipped": false,
+      "other_normalization_detected": false,
+      "semantic_equivalence": true,
+      "trajectory_id": "pr49_v4c:8:58:STRICT_DT_TRIGGERED_V4C"
+    },
+    {
+      "final_difference": -3.789400003506582e-08,
+      "geometric_final_progress": 0.12213768153823211,
+      "max_absolute_difference_over_available_steps": 3.789400003506582e-08,
+      "official_final_progress": 0.12213764364423207,
+      "official_is_clipped": false,
+      "other_normalization_detected": false,
+      "semantic_equivalence": true,
+      "trajectory_id": "pr49_v4c:9:59:ORIGINAL_SAFER_BASELINE"
+    },
+    {
+      "final_difference": -3.101876829003647e-08,
+      "geometric_final_progress": 0.12213825821693332,
+      "max_absolute_difference_over_available_steps": 3.101876829003647e-08,
+      "official_final_progress": 0.12213822719816503,
+      "official_is_clipped": false,
+      "other_normalization_detected": false,
+      "semantic_equivalence": true,
+      "trajectory_id": "pr49_v4c:9:59:STRICT_DT_TRIGGERED_V4C"
+    },
+    {
+      "final_difference": 1.361013186595983e-07,
+      "geometric_final_progress": 0.5391114396213177,
+      "max_absolute_difference_over_available_steps": 0.004869841579404122,
+      "official_final_progress": 0.5391115757226363,
+      "official_is_clipped": false,
+      "other_normalization_detected": false,
+      "semantic_equivalence": true,
+      "trajectory_id": "paused_paired20:111:287:ORIGINAL_SAFER_BASELINE"
+    },
+    {
+      "final_difference": 1.1908204008426182e-06,
+      "geometric_final_progress": 0.53908992060009,
+      "max_absolute_difference_over_available_steps": 0.004869841579404122,
+      "official_final_progress": 0.5390911114204908,
+      "official_is_clipped": false,
+      "other_normalization_detected": false,
+      "semantic_equivalence": true,
+      "trajectory_id": "paused_paired20:111:287:STRICT_DT_TRIGGERED_V4C"
+    }
+  ],
+  "geometric_progress_definition": "(initial_distance-distance_k)/initial_distance",
+  "official_progress_definition": "Saved terminal-summary progress compared against independently reconstructed geometric progress; per-step official progress is retained only when present in raw logs."
+}

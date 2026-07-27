@@ -1,0 +1,84 @@
+{
+  "records": [
+    {
+      "baseline_limitation_preserved_candidate": false,
+      "cbf_boundary_stall_supported": false,
+      "evidence_missing_nominal_or_safe": true,
+      "nominal_controller_limitation_supported": false,
+      "recovery_steps": 0,
+      "trajectory_id": "pr47_g1_baseline:0:50:ORIGINAL_SAFER_BASELINE"
+    },
+    {
+      "baseline_limitation_preserved_candidate": true,
+      "cbf_boundary_stall_supported": true,
+      "evidence_missing_nominal_or_safe": false,
+      "nominal_controller_limitation_supported": false,
+      "recovery_steps": 1,
+      "trajectory_id": "pr49_v4c:0:50:STRICT_DT_TRIGGERED_V4C"
+    },
+    {
+      "baseline_limitation_preserved_candidate": false,
+      "cbf_boundary_stall_supported": true,
+      "evidence_missing_nominal_or_safe": false,
+      "nominal_controller_limitation_supported": false,
+      "recovery_steps": 0,
+      "trajectory_id": "pr49_v4c:1:51:ORIGINAL_SAFER_BASELINE"
+    },
+    {
+      "baseline_limitation_preserved_candidate": true,
+      "cbf_boundary_stall_supported": true,
+      "evidence_missing_nominal_or_safe": false,
+      "nominal_controller_limitation_supported": false,
+      "recovery_steps": 1,
+      "trajectory_id": "pr49_v4c:1:51:STRICT_DT_TRIGGERED_V4C"
+    },
+    {
+      "baseline_limitation_preserved_candidate": false,
+      "cbf_boundary_stall_supported": true,
+      "evidence_missing_nominal_or_safe": false,
+      "nominal_controller_limitation_supported": false,
+      "recovery_steps": 0,
+      "trajectory_id": "pr49_v4c:8:58:ORIGINAL_SAFER_BASELINE"
+    },
+    {
+      "baseline_limitation_preserved_candidate": false,
+      "cbf_boundary_stall_supported": true,
+      "evidence_missing_nominal_or_safe": false,
+      "nominal_controller_limitation_supported": false,
+      "recovery_steps": 0,
+      "trajectory_id": "pr49_v4c:8:58:STRICT_DT_TRIGGERED_V4C"
+    },
+    {
+      "baseline_limitation_preserved_candidate": false,
+      "cbf_boundary_stall_supported": true,
+      "evidence_missing_nominal_or_safe": false,
+      "nominal_controller_limitation_supported": false,
+      "recovery_steps": 0,
+      "trajectory_id": "pr49_v4c:9:59:ORIGINAL_SAFER_BASELINE"
+    },
+    {
+      "baseline_limitation_preserved_candidate": true,
+      "cbf_boundary_stall_supported": true,
+      "evidence_missing_nominal_or_safe": false,
+      "nominal_controller_limitation_supported": false,
+      "recovery_steps": 1,
+      "trajectory_id": "pr49_v4c:9:59:STRICT_DT_TRIGGERED_V4C"
+    },
+    {
+      "baseline_limitation_preserved_candidate": false,
+      "cbf_boundary_stall_supported": true,
+      "evidence_missing_nominal_or_safe": false,
+      "nominal_controller_limitation_supported": false,
+      "recovery_steps": 0,
+      "trajectory_id": "paused_paired20:111:287:ORIGINAL_SAFER_BASELINE"
+    },
+    {
+      "baseline_limitation_preserved_candidate": true,
+      "cbf_boundary_stall_supported": true,
+      "evidence_missing_nominal_or_safe": false,
+      "nominal_controller_limitation_supported": false,
+      "recovery_steps": 5,
+      "trajectory_id": "paused_paired20:111:287:STRICT_DT_TRIGGERED_V4C"
+    }
+  ]
+}
