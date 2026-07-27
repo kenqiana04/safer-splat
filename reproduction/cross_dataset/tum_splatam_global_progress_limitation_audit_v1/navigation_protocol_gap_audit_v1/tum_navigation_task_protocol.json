@@ -1,0 +1,94 @@
+{
+  "camera_path_as_reference": false,
+  "claim": "TUM reuses direct final-goal control but substitutes endpoint-filtered camera-center pairs for the original synthetic direct-goal task construction.",
+  "connectivity_checked": false,
+  "desired_controller_target": "final goal only",
+  "direct_line_checked": false,
+  "heldout_registry_source": "PR47 frozen transforms sequence reconstructed before intervention; no standalone PR47 registry file was retained",
+  "heldout_selection_rule": "ascending start frame; pair=(start,start+50); exclude 0->50; require INITIAL_SAFE, goal_h>0, separation>=0.50m, finite, bbox valid; take first three",
+  "intermediate_safety_checked": false,
+  "local_goal": false,
+  "original_full_navigation_protocol_reused": true,
+  "pair_source": "TUM transforms camera centers",
+  "pairs": [
+    {
+      "goal": [
+        0.6562,
+        -0.4497,
+        1.5004
+      ],
+      "goal_frame": 50,
+      "start": [
+        -0.8683,
+        0.6026,
+        1.5627
+      ],
+      "start_frame": 0
+    },
+    {
+      "goal": [
+        0.7411,
+        -0.4192,
+        1.4705
+      ],
+      "goal_frame": 51,
+      "start": [
+        -0.8643,
+        0.6464,
+        1.5617
+      ],
+      "start_frame": 1
+    },
+    {
+      "goal": [
+        1.2895,
+        -0.1067,
+        1.4604
+      ],
+      "goal_frame": 58,
+      "start": [
+        -0.9232,
+        0.8528,
+        1.5232
+      ],
+      "start_frame": 8
+    },
+    {
+      "goal": [
+        1.3565,
+        -0.0527,
+        1.4914
+      ],
+      "goal_frame": 59,
+      "start": [
+        -0.9185,
+        0.86,
+        1.5161
+      ],
+      "start_frame": 9
+    },
+    {
+      "goal": [
+        1.0081,
+        -0.1397,
+        1.4558
+      ],
+      "goal_frame": 287,
+      "start": [
+        0.9868,
+        -0.6867,
+        1.328
+      ],
+      "start_frame": 111
+    }
+  ],
+  "start_goal_endpoint_filters": [
+    "INITIAL_SAFE",
+    "goal_h > 0",
+    "separation >= 0.50m",
+    "finite",
+    "bbox valid"
+  ],
+  "uses_true_frame_order": true,
+  "waypoint_update": false
+}

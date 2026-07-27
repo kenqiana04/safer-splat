@@ -1,0 +1,29 @@
+{
+  "authoritative_checkout": "/disk1/zlab/projects/safer-splat",
+  "canonical_gaussian_count": 5464102,
+  "canonical_map": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/splatam/canonical_export/export_a",
+  "checkout_head": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+  "core_blobs": {
+    "cbf/cbf_utils.py": "7c6e1300b125cc0a2a950ac2835a1fbe3d0de113",
+    "splat/distances.py": "d7f17b67df40e36e458c7a5ed77c4a04659c6f35",
+    "splat/gsplat_utils.py": "782c38eca50e78c605085b481155ed61e4607336"
+  },
+  "expected_checkout_head": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+  "frozen_parameters": {
+    "alpha": 5.0,
+    "beta": 1.0,
+    "dt": 0.05,
+    "goal_tolerance": 0.001,
+    "max_steps": 800,
+    "robot_radius": 0.015
+  },
+  "identity_ok": true,
+  "paused_manifest": "/disk1/zlab/maintenance_records/tum_splatam_dt_triggered_v4c_paired20_v1/manifests/run_manifest.json",
+  "paused_manifest_sha256": "380717f0ec39e0e422902573685f5a2838e78dd6efcce500ba71585efd3d82f6",
+  "paused_state_counts": {
+    "NOT_STARTED": 38,
+    "TERMINAL_SCIENTIFIC_RESULT": 2
+  },
+  "transforms": "/disk1/zlab/cross_dataset_assets/processed/tum_rgbd/freiburg1_room/transforms.json",
+  "transforms_sha256": "b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a"
+}
