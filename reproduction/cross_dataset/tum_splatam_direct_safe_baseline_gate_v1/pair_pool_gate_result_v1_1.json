@@ -1,0 +1,8 @@
+{
+  "direct_safe_pair_qualified_count": 23,
+  "failure_reasons": [],
+  "pair_pool_gate": "PASS",
+  "rollout_authorized": true,
+  "selected_registry_count": 4,
+  "selection_rule": "bin then hash order; endpoint-disjoint; maximize bin diversity; no rollout inputs"
+}

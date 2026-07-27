@@ -1,0 +1,585 @@
+{
+  "certified_robust_overlap_count": 0,
+  "numerically_indeterminate_count": 0,
+  "reference_a": "safeguarded KKT bisection",
+  "reference_b": "safeguarded Newton with bisection fallback",
+  "rollouts": [
+    {
+      "certified_robust_overlap": false,
+      "checked_state_count": 8,
+      "entries": [
+        {
+          "float32_h": 0.008147435262799263,
+          "position": [
+            -0.9470999836921692,
+            0.12020000070333481,
+            1.3478000164031982
+          ],
+          "reference": {
+            "active_gaussian": 207392,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.008147436323132796,
+            "h_ref_b": 0.008147436323132796,
+            "kkt_residual_a": 2.220446049250313e-16,
+            "kkt_residual_b": 2.220446049250313e-16,
+            "surface_residual_a": 0.0,
+            "surface_residual_b": 0.0,
+            "tau_ref": 1e-12
+          },
+          "step": 1
+        },
+        {
+          "float32_h": 0.0015617819735780358,
+          "position": [
+            -0.9770207405090332,
+            0.639441967010498,
+            1.4438892602920532
+          ],
+          "reference": {
+            "active_gaussian": 5283294,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.0015617849051723707,
+            "h_ref_b": 0.0015617849051723707,
+            "kkt_residual_a": 0.0,
+            "kkt_residual_b": 0.0,
+            "surface_residual_a": 0.0,
+            "surface_residual_b": 0.0,
+            "tau_ref": 1e-12
+          },
+          "step": 232
+        },
+        {
+          "float32_h": 0.001546242623589933,
+          "position": [
+            -0.976976752281189,
+            0.6395663022994995,
+            1.4437568187713623
+          ],
+          "reference": {
+            "active_gaussian": 5283294,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.0015462459272916331,
+            "h_ref_b": 0.0015462459272916331,
+            "kkt_residual_a": 2.220446049250313e-16,
+            "kkt_residual_b": 2.220446049250313e-16,
+            "surface_residual_a": 4.440892098500626e-16,
+            "surface_residual_b": 4.440892098500626e-16,
+            "tau_ref": 1e-12
+          },
+          "step": 233
+        },
+        {
+          "float32_h": 0.001536401454359293,
+          "position": [
+            -0.9769343733787537,
+            0.6396064758300781,
+            1.4436277151107788
+          ],
+          "reference": {
+            "active_gaussian": 5283294,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.0015364045420127419,
+            "h_ref_b": 0.0015364045420127419,
+            "kkt_residual_a": 0.0,
+            "kkt_residual_b": 0.0,
+            "surface_residual_a": 0.0,
+            "surface_residual_b": 0.0,
+            "tau_ref": 1e-12
+          },
+          "step": 234
+        },
+        {
+          "float32_h": 0.0015318648656830192,
+          "position": [
+            -0.9768940210342407,
+            0.6395692825317383,
+            1.4435033798217773
+          ],
+          "reference": {
+            "active_gaussian": 5283294,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.0015318680737838766,
+            "h_ref_b": 0.0015318680737838766,
+            "kkt_residual_a": 0.0,
+            "kkt_residual_b": 0.0,
+            "surface_residual_a": 0.0,
+            "surface_residual_b": 0.0,
+            "tau_ref": 1e-12
+          },
+          "step": 235
+        },
+        {
+          "float32_h": 0.0015322220278903842,
+          "position": [
+            -0.9768560528755188,
+            0.6394619941711426,
+            1.4433848857879639
+          ],
+          "reference": {
+            "active_gaussian": 5283294,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.0015322252943039837,
+            "h_ref_b": 0.0015322252943039837,
+            "kkt_residual_a": 0.0,
+            "kkt_residual_b": 0.0,
+            "surface_residual_a": 0.0,
+            "surface_residual_b": 0.0,
+            "tau_ref": 1e-12
+          },
+          "step": 236
+        },
+        {
+          "float32_h": 0.0015370663022622466,
+          "position": [
+            -0.976820707321167,
+            0.6392920613288879,
+            1.4432731866836548
+          ],
+          "reference": {
+            "active_gaussian": 5283294,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.0015370691683059346,
+            "h_ref_b": 0.0015370691683059346,
+            "kkt_residual_a": 0.0,
+            "kkt_residual_b": 0.0,
+            "surface_residual_a": 0.0,
+            "surface_residual_b": 0.0,
+            "tau_ref": 1e-12
+          },
+          "step": 237
+        },
+        {
+          "float32_h": 0.0015459865098819137,
+          "position": [
+            -0.9767881631851196,
+            0.6390671133995056,
+            1.443169116973877
+          ],
+          "reference": {
+            "active_gaussian": 5283294,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.0015459893782747824,
+            "h_ref_b": 0.0015459893782747824,
+            "kkt_residual_a": 2.220446049250313e-16,
+            "kkt_residual_b": 2.220446049250313e-16,
+            "surface_residual_a": 2.220446049250313e-16,
+            "surface_residual_b": 2.220446049250313e-16,
+            "tau_ref": 1e-12
+          },
+          "step": 238
+        }
+      ],
+      "label": "DEVELOPMENT_PAIR",
+      "numerically_indeterminate_count": 0,
+      "terminal_status": "CBF_BOUNDARY_STALL"
+    },
+    {
+      "certified_robust_overlap": false,
+      "checked_state_count": 5,
+      "entries": [
+        {
+          "float32_h": 0.00024845582083798945,
+          "position": [
+            1.1473000049591064,
+            -0.4018999934196472,
+            1.4311000108718872
+          ],
+          "reference": {
+            "active_gaussian": 493851,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.00024845713550627964,
+            "h_ref_b": 0.00024845713550627964,
+            "kkt_residual_a": 2.220446049250313e-16,
+            "kkt_residual_b": 2.220446049250313e-16,
+            "surface_residual_a": 2.220446049250313e-16,
+            "surface_residual_b": 2.220446049250313e-16,
+            "tau_ref": 1e-12
+          },
+          "step": 1
+        },
+        {
+          "float32_h": 0.00025587796699255705,
+          "position": [
+            1.1470500230789185,
+            -0.4021500051021576,
+            1.4309124946594238
+          ],
+          "reference": {
+            "active_gaussian": 493851,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.0002558794160008666,
+            "h_ref_b": 0.0002558794160008666,
+            "kkt_residual_a": 2.220446049250313e-16,
+            "kkt_residual_b": 2.220446049250313e-16,
+            "surface_residual_a": 2.220446049250313e-16,
+            "surface_residual_b": 2.220446049250313e-16,
+            "tau_ref": 1e-12
+          },
+          "step": 2
+        },
+        {
+          "float32_h": 0.00027074399986304343,
+          "position": [
+            1.1465749740600586,
+            -0.4026249945163727,
+            1.430556297302246
+          ],
+          "reference": {
+            "active_gaussian": 493851,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.000270745540413625,
+            "h_ref_b": 0.000270745540413625,
+            "kkt_residual_a": 2.220446049250313e-16,
+            "kkt_residual_b": 2.220446049250313e-16,
+            "surface_residual_a": 2.220446049250313e-16,
+            "surface_residual_b": 2.220446049250313e-16,
+            "tau_ref": 1e-12
+          },
+          "step": 3
+        },
+        {
+          "float32_h": 0.0002935957454610616,
+          "position": [
+            1.1458975076675415,
+            -0.40330249071121216,
+            1.4300504922866821
+          ],
+          "reference": {
+            "active_gaussian": 493851,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.0002935972492737786,
+            "h_ref_b": 0.0002935972492737786,
+            "kkt_residual_a": 1.1102230246251565e-16,
+            "kkt_residual_b": 1.1102230246251565e-16,
+            "surface_residual_a": 2.220446049250313e-16,
+            "surface_residual_b": 2.220446049250313e-16,
+            "tau_ref": 1e-12
+          },
+          "step": 4
+        },
+        {
+          "float32_h": 0.02123844437301159,
+          "position": [
+            0.5771286487579346,
+            -0.9206488132476807,
+            1.416100025177002
+          ],
+          "reference": {
+            "active_gaussian": 5162033,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.021238466314347944,
+            "h_ref_b": 0.021238466314347944,
+            "kkt_residual_a": 0.0,
+            "kkt_residual_b": 0.0,
+            "surface_residual_a": 4.440892098500626e-16,
+            "surface_residual_b": 4.440892098500626e-16,
+            "tau_ref": 1e-12
+          },
+          "step": 258
+        }
+      ],
+      "label": "HELDOUT_PAIR_1",
+      "numerically_indeterminate_count": 0,
+      "terminal_status": "CBF_BOUNDARY_STALL"
+    },
+    {
+      "certified_robust_overlap": false,
+      "checked_state_count": 5,
+      "entries": [
+        {
+          "float32_h": 0.15101230144500732,
+          "position": [
+            0.8317999839782715,
+            -1.055299997329712,
+            1.3575999736785889
+          ],
+          "reference": {
+            "active_gaussian": 4870391,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.15101238088495203,
+            "h_ref_b": 0.15101238088495203,
+            "kkt_residual_a": 2.220446049250313e-16,
+            "kkt_residual_b": 2.220446049250313e-16,
+            "surface_residual_a": 2.220446049250313e-16,
+            "surface_residual_b": 2.220446049250313e-16,
+            "tau_ref": 1e-12
+          },
+          "step": 1
+        },
+        {
+          "float32_h": 0.0006717193173244596,
+          "position": [
+            0.44533225893974304,
+            -0.6779637932777405,
+            1.3452204465866089
+          ],
+          "reference": {
+            "active_gaussian": 4335984,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.0006717202819273101,
+            "h_ref_b": 0.0006717202819273101,
+            "kkt_residual_a": 0.0,
+            "kkt_residual_b": 0.0,
+            "surface_residual_a": 2.220446049250313e-16,
+            "surface_residual_b": 2.220446049250313e-16,
+            "tau_ref": 1e-12
+          },
+          "step": 206
+        },
+        {
+          "float32_h": 0.0006427117623388767,
+          "position": [
+            0.44459059834480286,
+            -0.6774083971977234,
+            1.34511399269104
+          ],
+          "reference": {
+            "active_gaussian": 4335984,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.0006427125497849516,
+            "h_ref_b": 0.0006427125497849516,
+            "kkt_residual_a": 3.3306690738754696e-16,
+            "kkt_residual_b": 3.3306690738754696e-16,
+            "surface_residual_a": 4.440892098500626e-16,
+            "surface_residual_b": 4.440892098500626e-16,
+            "tau_ref": 1e-12
+          },
+          "step": 207
+        },
+        {
+          "float32_h": 0.0006157107418403029,
+          "position": [
+            0.443869411945343,
+            -0.6768596768379211,
+            1.345011591911316
+          ],
+          "reference": {
+            "active_gaussian": 4335984,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.0006157115431358246,
+            "h_ref_b": 0.0006157115431358246,
+            "kkt_residual_a": 0.0,
+            "kkt_residual_b": 0.0,
+            "surface_residual_a": 0.0,
+            "surface_residual_b": 0.0,
+            "tau_ref": 1e-12
+          },
+          "step": 208
+        },
+        {
+          "float32_h": 0.0005907508311793208,
+          "position": [
+            0.44316625595092773,
+            -0.6763174533843994,
+            1.344916582107544
+          ],
+          "reference": {
+            "active_gaussian": 4335984,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.0005907515465840227,
+            "h_ref_b": 0.0005907515465840227,
+            "kkt_residual_a": 2.220446049250313e-16,
+            "kkt_residual_b": 2.220446049250313e-16,
+            "surface_residual_a": 2.220446049250313e-16,
+            "surface_residual_b": 2.220446049250313e-16,
+            "tau_ref": 1e-12
+          },
+          "step": 209
+        }
+      ],
+      "label": "HELDOUT_PAIR_2",
+      "numerically_indeterminate_count": 0,
+      "terminal_status": "CBF_BOUNDARY_STALL"
+    },
+    {
+      "certified_robust_overlap": false,
+      "checked_state_count": 9,
+      "entries": [
+        {
+          "float32_h": 0.003338032867759466,
+          "position": [
+            -0.9453999996185303,
+            0.5735999941825867,
+            1.4840999841690063
+          ],
+          "reference": {
+            "active_gaussian": 4967046,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.0033380410701275417,
+            "h_ref_b": 0.0033380410701275417,
+            "kkt_residual_a": 0.0,
+            "kkt_residual_b": 0.0,
+            "surface_residual_a": 1.1102230246251565e-16,
+            "surface_residual_b": 1.1102230246251565e-16,
+            "tau_ref": 1e-12
+          },
+          "step": 1
+        },
+        {
+          "float32_h": 0.0004344967601355165,
+          "position": [
+            0.41095995903015137,
+            -0.015785686671733856,
+            1.4324347972869873
+          ],
+          "reference": {
+            "active_gaussian": 4994636,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.00043449846122741847,
+            "h_ref_b": 0.00043449846122741847,
+            "kkt_residual_a": 3.3306690738754696e-16,
+            "kkt_residual_b": 3.3306690738754696e-16,
+            "surface_residual_a": 2.220446049250313e-16,
+            "surface_residual_b": 2.220446049250313e-16,
+            "tau_ref": 1e-12
+          },
+          "step": 574
+        },
+        {
+          "float32_h": 0.00042670025140978396,
+          "position": [
+            0.41287466883659363,
+            -0.015497715212404728,
+            1.4321550130844116
+          ],
+          "reference": {
+            "active_gaussian": 4994636,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.0004267014445784928,
+            "h_ref_b": 0.0004267014445784928,
+            "kkt_residual_a": 2.220446049250313e-16,
+            "kkt_residual_b": 2.220446049250313e-16,
+            "surface_residual_a": 2.220446049250313e-16,
+            "surface_residual_b": 2.220446049250313e-16,
+            "tau_ref": 1e-12
+          },
+          "step": 575
+        },
+        {
+          "float32_h": 0.00042201412725262344,
+          "position": [
+            0.41479310393333435,
+            -0.01521481666713953,
+            1.431883692741394
+          ],
+          "reference": {
+            "active_gaussian": 4994636,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.00042201559898251715,
+            "h_ref_b": 0.00042201559898251715,
+            "kkt_residual_a": 2.220446049250313e-16,
+            "kkt_residual_b": 2.220446049250313e-16,
+            "surface_residual_a": 4.440892098500626e-16,
+            "surface_residual_b": 4.440892098500626e-16,
+            "tau_ref": 1e-12
+          },
+          "step": 576
+        },
+        {
+          "float32_h": 0.0004205453733447939,
+          "position": [
+            0.41671687364578247,
+            -0.014939785934984684,
+            1.4316232204437256
+          ],
+          "reference": {
+            "active_gaussian": 4994636,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.00042054696897726366,
+            "h_ref_b": 0.00042054696897726366,
+            "kkt_residual_a": 2.220446049250313e-16,
+            "kkt_residual_b": 2.220446049250313e-16,
+            "surface_residual_a": 0.0,
+            "surface_residual_b": 0.0,
+            "tau_ref": 1e-12
+          },
+          "step": 577
+        },
+        {
+          "float32_h": 0.0004223967844154686,
+          "position": [
+            0.4186475872993469,
+            -0.014675226993858814,
+            1.431375503540039
+          ],
+          "reference": {
+            "active_gaussian": 4994636,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.00042239816746997267,
+            "h_ref_b": 0.00042239816746997267,
+            "kkt_residual_a": 0.0,
+            "kkt_residual_b": 0.0,
+            "surface_residual_a": 2.220446049250313e-16,
+            "surface_residual_b": 2.220446049250313e-16,
+            "tau_ref": 1e-12
+          },
+          "step": 578
+        },
+        {
+          "float32_h": 0.00042767528793774545,
+          "position": [
+            0.42058679461479187,
+            -0.014423561282455921,
+            1.4311420917510986
+          ],
+          "reference": {
+            "active_gaussian": 4994636,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.00042767674710188886,
+            "h_ref_b": 0.00042767674710188886,
+            "kkt_residual_a": 2.220446049250313e-16,
+            "kkt_residual_b": 2.220446049250313e-16,
+            "surface_residual_a": 1.1102230246251565e-16,
+            "surface_residual_b": 1.1102230246251565e-16,
+            "tau_ref": 1e-12
+          },
+          "step": 579
+        },
+        {
+          "float32_h": 0.0004364904889371246,
+          "position": [
+            0.42253604531288147,
+            -0.014187043532729149,
+            1.4309240579605103
+          ],
+          "reference": {
+            "active_gaussian": 4994636,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.0004364917416173504,
+            "h_ref_b": 0.0004364917416173504,
+            "kkt_residual_a": 0.0,
+            "kkt_residual_b": 0.0,
+            "surface_residual_a": 2.220446049250313e-16,
+            "surface_residual_b": 2.220446049250313e-16,
+            "tau_ref": 1e-12
+          },
+          "step": 580
+        },
+        {
+          "float32_h": 0.000636699958704412,
+          "position": [
+            0.9527823328971863,
+            -0.018621427938342094,
+            1.4308620691299438
+          ],
+          "reference": {
+            "active_gaussian": 5069215,
+            "classification": "ROBUST_SAFE",
+            "h_ref_a": 0.000636702362668759,
+            "h_ref_b": 0.000636702362668759,
+            "kkt_residual_a": 0.0,
+            "kkt_residual_b": 0.0,
+            "surface_residual_a": 0.0,
+            "surface_residual_b": 0.0,
+            "tau_ref": 1e-12
+          },
+          "step": 800
+        }
+      ],
+      "label": "HELDOUT_PAIR_3",
+      "numerically_indeterminate_count": 0,
+      "terminal_status": "MAX_STEPS"
+    }
+  ],
+  "status": "COMPLETE"
+}

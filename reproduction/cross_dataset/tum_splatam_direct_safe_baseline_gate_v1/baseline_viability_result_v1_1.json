@@ -1,0 +1,23 @@
+{
+  "baseline_viability_checks": {
+    "certified_robust_overlap_zero": true,
+    "fewer_than_two_cbf_boundary_stalls": false,
+    "four_rollouts_completed": true,
+    "heldout_strict_goal_reached_at_least_2": false,
+    "long_distance_success_at_least_1": false,
+    "nonfinite_zero": true,
+    "qp_infeasible_zero": true,
+    "strict_goal_reached_at_least_3": false,
+    "successful_trajectories_not_all_shortest_bin": false,
+    "watchdog_timeout_zero": true
+  },
+  "final_tum_decision": "CLOSE_TUM_NAVIGATION_BENCHMARK_KEEP_SAFETY_CASE_STUDY",
+  "heldout_strict_goal_reached_count": 0,
+  "no_pair_replacement_or_parameter_rescue": true,
+  "status": "FAIL",
+  "strict_goal_reached_count": 0,
+  "terminal_status_counts": {
+    "CBF_BOUNDARY_STALL": 3,
+    "MAX_STEPS": 1
+  }
+}
