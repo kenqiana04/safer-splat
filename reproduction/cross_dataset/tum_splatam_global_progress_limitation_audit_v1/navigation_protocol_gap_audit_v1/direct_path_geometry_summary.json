@@ -1,0 +1,170 @@
+{
+  "pair_count": 5,
+  "pairs": [
+    {
+      "classification": "DIRECT_PATH_BLOCKED",
+      "direct_path_safe": false,
+      "first_negative_t": 0.73046875,
+      "goal_side_obstacle": true,
+      "last_negative_t": 0.96484375,
+      "longest_unsafe_interval": 0.234375,
+      "min_h": -0.00025483567151241004,
+      "near_boundary_sample_count": 79,
+      "negative_sample_count": 48,
+      "pair_id": "0->50",
+      "radius": 0.015,
+      "refined_sign_changes": [
+        {
+          "h": -1.4551915228366852e-11,
+          "t": 0.7298915429361355
+        },
+        {
+          "h": -6.111804395914078e-10,
+          "t": 0.7582073018839406
+        },
+        {
+          "h": -2.1827872842550278e-10,
+          "t": 0.7888211388711515
+        },
+        {
+          "h": -1.6007106751203537e-10,
+          "t": 0.9228564047104246
+        },
+        {
+          "h": 4.0745362639427185e-10,
+          "t": 0.9481641867310149
+        },
+        {
+          "h": -1.7025740817189217e-09,
+          "t": 0.9676166483440252
+        }
+      ],
+      "sample_count": 257,
+      "start_to_first_obstacle_distance": 1.3538951726381512
+    },
+    {
+      "classification": "DIRECT_PATH_BLOCKED",
+      "direct_path_safe": false,
+      "first_negative_t": 0.8125,
+      "goal_side_obstacle": true,
+      "last_negative_t": 0.953125,
+      "longest_unsafe_interval": 0.140625,
+      "min_h": -0.0002663946943357587,
+      "near_boundary_sample_count": 55,
+      "negative_sample_count": 37,
+      "pair_id": "1->51",
+      "radius": 0.015,
+      "refined_sign_changes": [
+        {
+          "h": -3.637978807091713e-10,
+          "t": 0.8115374374704505
+        },
+        {
+          "h": -4.802132025361061e-10,
+          "t": 0.9552230343849093
+        }
+      ],
+      "sample_count": 257,
+      "start_to_first_obstacle_distance": 1.5673312349839297
+    },
+    {
+      "classification": "DIRECT_PATH_BLOCKED",
+      "direct_path_safe": false,
+      "first_negative_t": 0.0859375,
+      "goal_side_obstacle": false,
+      "last_negative_t": 0.2578125,
+      "longest_unsafe_interval": 0.171875,
+      "min_h": -0.0008469303138554096,
+      "near_boundary_sample_count": 64,
+      "negative_sample_count": 43,
+      "pair_id": "8->58",
+      "radius": 0.015,
+      "refined_sign_changes": [
+        {
+          "h": -4.656612873077393e-10,
+          "t": 0.08365411851518978
+        },
+        {
+          "h": 1.6007106751203537e-10,
+          "t": 0.2278887725379608
+        },
+        {
+          "h": -1.8917489796876907e-10,
+          "t": 0.2372571831557213
+        },
+        {
+          "h": 1.7462298274040222e-10,
+          "t": 0.26122016561291694
+        }
+      ],
+      "sample_count": 257,
+      "start_to_first_obstacle_distance": 0.20733257420015527
+    },
+    {
+      "classification": "DIRECT_PATH_BLOCKED",
+      "direct_path_safe": false,
+      "first_negative_t": 0.08984375,
+      "goal_side_obstacle": true,
+      "last_negative_t": 0.87890625,
+      "longest_unsafe_interval": 0.7890625,
+      "min_h": -0.0018182029016315937,
+      "near_boundary_sample_count": 78,
+      "negative_sample_count": 65,
+      "pair_id": "9->59",
+      "radius": 0.015,
+      "refined_sign_changes": [
+        {
+          "h": 1.5133991837501526e-09,
+          "t": 0.08705963084819679
+        },
+        {
+          "h": -3.637978807091713e-10,
+          "t": 0.2609987873559465
+        },
+        {
+          "h": 3.4924596548080444e-10,
+          "t": 0.2806651630506405
+        },
+        {
+          "h": 1.1641532182693481e-10,
+          "t": 0.29028448812254304
+        },
+        {
+          "h": -1.280568540096283e-09,
+          "t": 0.8110071904318676
+        },
+        {
+          "h": -1.877197064459324e-09,
+          "t": 0.8789156268193157
+        }
+      ],
+      "sample_count": 257,
+      "start_to_first_obstacle_distance": 0.22024103398929396
+    },
+    {
+      "classification": "DIRECT_PATH_BLOCKED",
+      "direct_path_safe": false,
+      "first_negative_t": 0.57421875,
+      "goal_side_obstacle": true,
+      "last_negative_t": 0.96484375,
+      "longest_unsafe_interval": 0.390625,
+      "min_h": -0.00025695201475173235,
+      "near_boundary_sample_count": 113,
+      "negative_sample_count": 101,
+      "pair_id": "111->287",
+      "radius": 0.015,
+      "refined_sign_changes": [
+        {
+          "h": -5.820766091346741e-10,
+          "t": 0.5713495276745757
+        },
+        {
+          "h": 2.0372681319713593e-10,
+          "t": 0.9656770085721842
+        }
+      ],
+      "sample_count": 257,
+      "start_to_first_obstacle_distance": 0.3227883404657471
+    }
+  ]
+}

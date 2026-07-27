@@ -1,0 +1,12 @@
+{
+  "decision": "DO_NOT_RESUME_BEFORE_CONTROLLER_STUDY",
+  "exact_resume_point": {
+    "arm": "intervention",
+    "frames": "114->165",
+    "pair_id": "PAIR_02",
+    "sequence": 3
+  },
+  "manifest_sha256": "380717f0ec39e0e422902573685f5a2838e78dd6efcce500ba71585efd3d82f6",
+  "next_authorized_task": "A separately authorized controller-navigation study",
+  "reason": "Offline-only evidence gate; no paired20 continuation was launched."
+}

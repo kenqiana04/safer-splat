@@ -1,0 +1,70 @@
+{
+  "pair_count": 5,
+  "pairs": [
+    {
+      "all_camera_centers_safe": false,
+      "camera_path_length": 2.9029864978797186,
+      "camera_pose_count": 51,
+      "classification": "CAMERA_PATH_ENDPOINT_SAFE_BUT_INTERMEDIATE_UNSAFE",
+      "direct_distance": 1.8534607710982176,
+      "min_h": -0.00035400775959715247,
+      "pair_id": "0->50",
+      "radius_safe": false,
+      "segments": 50,
+      "start_goal_endpoints_safe": true,
+      "tortuosity": 1.5662519235082775
+    },
+    {
+      "all_camera_centers_safe": false,
+      "camera_path_length": 2.954031117431698,
+      "camera_pose_count": 51,
+      "classification": "CAMERA_PATH_ENDPOINT_SAFE_BUT_INTERMEDIATE_UNSAFE",
+      "direct_distance": 1.9290230584417596,
+      "min_h": -0.00035400775959715247,
+      "pair_id": "1->51",
+      "radius_safe": false,
+      "segments": 50,
+      "start_goal_endpoints_safe": true,
+      "tortuosity": 1.5313612268678256
+    },
+    {
+      "all_camera_centers_safe": false,
+      "camera_path_length": 3.366548851304328,
+      "camera_pose_count": 51,
+      "classification": "CAMERA_PATH_ENDPOINT_SAFE_BUT_INTERMEDIATE_UNSAFE",
+      "direct_distance": 2.4125972270563523,
+      "min_h": -0.00035400775959715247,
+      "pair_id": "8->58",
+      "radius_safe": false,
+      "segments": 50,
+      "start_goal_endpoints_safe": true,
+      "tortuosity": 1.3954044270422654
+    },
+    {
+      "all_camera_centers_safe": false,
+      "camera_path_length": 3.4468639071968115,
+      "camera_pose_count": 51,
+      "classification": "CAMERA_PATH_ENDPOINT_SAFE_BUT_INTERMEDIATE_UNSAFE",
+      "direct_distance": 2.4513784652721413,
+      "min_h": -0.00035400775959715247,
+      "pair_id": "9->59",
+      "radius_safe": false,
+      "segments": 50,
+      "start_goal_endpoints_safe": true,
+      "tortuosity": 1.406092105330686
+    },
+    {
+      "all_camera_centers_safe": false,
+      "camera_path_length": 9.236800636395373,
+      "camera_pose_count": 177,
+      "classification": "CAMERA_PATH_ENDPOINT_SAFE_BUT_INTERMEDIATE_UNSAFE",
+      "direct_distance": 0.5621347970015732,
+      "min_h": -0.0012862510047852993,
+      "pair_id": "111->287",
+      "radius_safe": false,
+      "segments": 176,
+      "start_goal_endpoints_safe": true,
+      "tortuosity": 16.431647152363567
+    }
+  ]
+}

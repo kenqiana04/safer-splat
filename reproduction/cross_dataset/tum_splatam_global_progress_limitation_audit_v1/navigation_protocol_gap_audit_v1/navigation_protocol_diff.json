@@ -1,0 +1,83 @@
+{
+  "camera_endpoint_as_direct_robot_task_unvalidated": true,
+  "critical_differences": [],
+  "fields": {
+    "clearance": [
+      "MAJOR_TASK_DIFFERENCE",
+      "runtime CBF only",
+      "endpoint safety filters; no path audit before this task"
+    ],
+    "collision_semantics": [
+      "MINOR_IMPLEMENTATION_DIFFERENCE",
+      "GSplat ball-to-ellipsoid h",
+      "same h on different map"
+    ],
+    "connectivity": [
+      "IDENTICAL",
+      false,
+      false
+    ],
+    "direct_visibility": [
+      "IDENTICAL",
+      false,
+      false
+    ],
+    "global_target": [
+      "IDENTICAL",
+      true,
+      true
+    ],
+    "goal_sampling": [
+      "MAJOR_TASK_DIFFERENCE",
+      "antipodal deterministic circle positions",
+      "TUM transforms camera centers"
+    ],
+    "local_target": [
+      "IDENTICAL",
+      false,
+      false
+    ],
+    "maximum_horizon": [
+      "MINOR_IMPLEMENTATION_DIFFERENCE",
+      500,
+      800
+    ],
+    "planner": [
+      "IDENTICAL",
+      false,
+      false
+    ],
+    "robot_model": [
+      "IDENTICAL",
+      "3D double integrator sphere",
+      "3D double integrator sphere"
+    ],
+    "scene_assets": [
+      "MAJOR_TASK_DIFFERENCE",
+      "Stonehenge GSplat",
+      "TUM SplaTAM GSplat"
+    ],
+    "start_sampling": [
+      "MAJOR_TASK_DIFFERENCE",
+      "deterministic circle positions",
+      "TUM transforms camera centers"
+    ],
+    "success": [
+      "MINOR_IMPLEMENTATION_DIFFERENCE",
+      "goal when stopped within 0.001; timeout while moving recorded as loose success",
+      "strict goal tolerance 0.001 or frozen terminal stop"
+    ],
+    "waypoint": [
+      "IDENTICAL",
+      false,
+      false
+    ]
+  },
+  "major_differences": [
+    "start_sampling",
+    "goal_sampling",
+    "clearance",
+    "scene_assets"
+  ],
+  "tum_missing_original_navigation_layer": false
+}

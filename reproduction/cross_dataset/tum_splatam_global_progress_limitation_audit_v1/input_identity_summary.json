@@ -1,0 +1,39 @@
+{
+  "cbf_source_identity": "7c6e1300b125cc0a2a950ac2835a1fbe3d0de113",
+  "controller_source_identity": "28abe89f47a4f888221baa911b20c517c526c3c1",
+  "frozen_parameters": {
+    "alpha": 5.0,
+    "beta": 1.0,
+    "dt": 0.05,
+    "goal_tolerance": 0.001,
+    "integrator": "x_next = x + 0.05 * [v,u]",
+    "max_steps": 800,
+    "robot_radius": 0.015
+  },
+  "identity_ok": true,
+  "map_identity": {
+    "canonical_gaussian_count": 5464102
+  },
+  "margin_action": "log_only",
+  "margin_monitor": "min(h(x_k+1),h(x_k+2),h(x_k+3)) < 0.0005",
+  "paused_manifest_expected_sha256": "380717f0ec39e0e422902573685f5a2838e78dd6efcce500ba71585efd3d82f6",
+  "paused_manifest_path": "/disk1/zlab/maintenance_records/tum_splatam_dt_triggered_v4c_paired20_v1/manifests/run_manifest.json",
+  "paused_manifest_pause_status": "PAUSED_WITH_SCHEDULER_RACE_DEVIATION",
+  "paused_manifest_sha256": "380717f0ec39e0e422902573685f5a2838e78dd6efcce500ba71585efd3d82f6",
+  "paused_manifest_states": {
+    "NOT_STARTED": 38,
+    "TERMINAL_SCIENTIFIC_RESULT": 2
+  },
+  "paused_paired20_base": "519478a541ab114e7877b365b93e54a0b049e119",
+  "paused_paired20_branch": "tum-splatam-dt-triggered-v4c-paired20-v1",
+  "pr47_head": "5f3078a88ba6121ba2c1918a1b89120438006916",
+  "pr48_head": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+  "pr49_head": "519478a541ab114e7877b365b93e54a0b049e119",
+  "strict_trigger": "current_fullmap_h > 0 and min(h(x_k+1),h(x_k+2),h(x_k+3)) < 0",
+  "transforms_path": "/disk1/zlab/cross_dataset_assets/processed/tum_rgbd/freiburg1_room/transforms.json",
+  "transforms_sha256": "b6a685f4b1a5b2ff3bb9b389c63a138a58119b19dd5cb6d7f671282aeecad29a",
+  "v4c_identity": {
+    "blob": "5b28585b9b98d991d9f4fa9e0158812d2a3be80a",
+    "restoration_commit": "b626b99cb1ed1437730c0e0734635fd8f0bdc517"
+  }
+}

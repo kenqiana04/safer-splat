@@ -1,0 +1,206 @@
+{
+  "answers": {
+    "all_unreached_same_cause": false,
+    "cbf_systematic": true,
+    "nominal_controller_systematic": false,
+    "recovery_systemic_regression": false,
+    "triggered_preserved_baseline_limitation": true,
+    "untriggered_noninvasive": true
+  },
+  "cohorts": {
+    "baseline": {
+      "active_constraint_ratio_mean": 0.8910978440475255,
+      "best_progress_mean": 0.39730106391160824,
+      "executed_radial_mean": 0.0002053078403766062,
+      "final_distance_mean": 1.2147536610907,
+      "final_progress_mean": 0.39730106391160824,
+      "goal_reached_count": 0,
+      "minimum_distance_mean": 1.2147536756922004,
+      "path_efficiency_mean": 0.9443296268234105,
+      "primary_category_counts": {
+        "CBF_BOUNDARY_STALL": 1,
+        "EARLY_SAFETY_PROXY_STOP": 4
+      },
+      "qp_correction_mean": 0.11421160561256392,
+      "recovery_steps": 0,
+      "secondary_category_counts": {
+        "TRIGGER_NEUTRAL_BASELINE_EQUIVALENT": 1
+      },
+      "terminal_status_counts": {
+        "TUM_SPLATAM_G1_COLLISION_STOP": 1,
+        "float32_proxy_overlap_stop": 1,
+        "gsplat_overlap_stop": 2,
+        "max_steps": 1
+      },
+      "trajectory_count": 5,
+      "trigger_count": 9
+    },
+    "certified_robust_overlap": {
+      "active_constraint_ratio_mean": null,
+      "best_progress_mean": 0.6442220550023762,
+      "executed_radial_mean": 0.0001731299236331677,
+      "final_distance_mean": 0.6594204642750352,
+      "final_progress_mean": 0.6442220550023762,
+      "goal_reached_count": 0,
+      "minimum_distance_mean": 0.6594204642750352,
+      "path_efficiency_mean": 0.9803801263269802,
+      "primary_category_counts": {
+        "EARLY_SAFETY_PROXY_STOP": 1
+      },
+      "qp_correction_mean": null,
+      "recovery_steps": 0,
+      "secondary_category_counts": {},
+      "terminal_status_counts": {
+        "TUM_SPLATAM_G1_COLLISION_STOP": 1
+      },
+      "trajectory_count": 1,
+      "trigger_count": 0
+    },
+    "intervention": {
+      "active_constraint_ratio_mean": 0.8815,
+      "best_progress_mean": 0.39737002491360174,
+      "executed_radial_mean": 0.0001295817717198616,
+      "final_distance_mean": 1.2146288024501046,
+      "final_progress_mean": 0.3973653466680684,
+      "goal_reached_count": 0,
+      "minimum_distance_mean": 1.2146257650255723,
+      "path_efficiency_mean": 0.9420040432169351,
+      "primary_category_counts": {
+        "CBF_BOUNDARY_STALL": 5
+      },
+      "qp_correction_mean": 0.11447054114482999,
+      "recovery_steps": 8,
+      "secondary_category_counts": {
+        "BASELINE_LIMITATION_PRESERVED": 4,
+        "TRIGGER_NEUTRAL_BASELINE_EQUIVALENT": 1
+      },
+      "terminal_status_counts": {
+        "max_steps": 5
+      },
+      "trajectory_count": 5,
+      "trigger_count": 8
+    },
+    "max_steps": {
+      "active_constraint_ratio_mean": 0.90125,
+      "best_progress_mean": 0.3396188799874181,
+      "executed_radial_mean": 0.00010866018468911431,
+      "final_distance_mean": 1.393838157798229,
+      "final_progress_mean": 0.3396149814494736,
+      "goal_reached_count": 0,
+      "minimum_distance_mean": 1.3938356266111187,
+      "path_efficiency_mean": 0.9468512589481023,
+      "primary_category_counts": {
+        "CBF_BOUNDARY_STALL": 6
+      },
+      "qp_correction_mean": 0.12331282443453677,
+      "recovery_steps": 8,
+      "secondary_category_counts": {
+        "BASELINE_LIMITATION_PRESERVED": 4,
+        "TRIGGER_NEUTRAL_BASELINE_EQUIVALENT": 2
+      },
+      "terminal_status_counts": {
+        "max_steps": 6
+      },
+      "trajectory_count": 6,
+      "trigger_count": 8
+    },
+    "no_robust_overlap_intervention": {
+      "active_constraint_ratio_mean": 0.8815,
+      "best_progress_mean": 0.39737002491360174,
+      "executed_radial_mean": 0.0001295817717198616,
+      "final_distance_mean": 1.2146288024501046,
+      "final_progress_mean": 0.3973653466680684,
+      "goal_reached_count": 0,
+      "minimum_distance_mean": 1.2146257650255723,
+      "path_efficiency_mean": 0.9420040432169351,
+      "primary_category_counts": {
+        "CBF_BOUNDARY_STALL": 5
+      },
+      "qp_correction_mean": 0.11447054114482999,
+      "recovery_steps": 8,
+      "secondary_category_counts": {
+        "BASELINE_LIMITATION_PRESERVED": 4,
+        "TRIGGER_NEUTRAL_BASELINE_EQUIVALENT": 1
+      },
+      "terminal_status_counts": {
+        "max_steps": 5
+      },
+      "trajectory_count": 5,
+      "trigger_count": 8
+    },
+    "non_triggered_intervention": {
+      "active_constraint_ratio_mean": 1.0,
+      "best_progress_mean": 0.050863155356499705,
+      "executed_radial_mean": 4.052249535377937e-06,
+      "final_distance_mean": 2.289884934538851,
+      "final_progress_mean": 0.050863155356499705,
+      "goal_reached_count": 0,
+      "minimum_distance_mean": 2.289884934538851,
+      "path_efficiency_mean": 0.9710873376039382,
+      "primary_category_counts": {
+        "CBF_BOUNDARY_STALL": 1
+      },
+      "qp_correction_mean": 0.16752424088307058,
+      "recovery_steps": 0,
+      "secondary_category_counts": {
+        "TRIGGER_NEUTRAL_BASELINE_EQUIVALENT": 1
+      },
+      "terminal_status_counts": {
+        "max_steps": 1
+      },
+      "trajectory_count": 1,
+      "trigger_count": 0
+    },
+    "proxy_stop": {
+      "active_constraint_ratio_mean": 0.8547971253967006,
+      "best_progress_mean": 0.48391054105038533,
+      "executed_radial_mean": 0.00025562173808691324,
+      "final_distance_mean": 0.9459708427286623,
+      "final_progress_mean": 0.48391054105038533,
+      "goal_reached_count": 0,
+      "minimum_distance_mean": 0.9459708609805377,
+      "path_efficiency_mean": 0.9376401991282787,
+      "primary_category_counts": {
+        "EARLY_SAFETY_PROXY_STOP": 4
+      },
+      "qp_correction_mean": 0.09644072718906171,
+      "recovery_steps": 0,
+      "secondary_category_counts": {},
+      "terminal_status_counts": {
+        "TUM_SPLATAM_G1_COLLISION_STOP": 1,
+        "float32_proxy_overlap_stop": 1,
+        "gsplat_overlap_stop": 2
+      },
+      "trajectory_count": 4,
+      "trigger_count": 9
+    },
+    "strict_triggered_intervention": {
+      "active_constraint_ratio_mean": 0.8518749999999999,
+      "best_progress_mean": 0.4839967423028772,
+      "executed_radial_mean": 0.00016096415226598252,
+      "final_distance_mean": 0.9458147694279181,
+      "final_progress_mean": 0.48399089449596056,
+      "goal_reached_count": 0,
+      "minimum_distance_mean": 0.9458109726472527,
+      "path_efficiency_mean": 0.9347332196201845,
+      "primary_category_counts": {
+        "CBF_BOUNDARY_STALL": 4
+      },
+      "qp_correction_mean": 0.10120711621026983,
+      "recovery_steps": 8,
+      "secondary_category_counts": {
+        "BASELINE_LIMITATION_PRESERVED": 4
+      },
+      "terminal_status_counts": {
+        "max_steps": 4
+      },
+      "trajectory_count": 4,
+      "trigger_count": 8
+    }
+  },
+  "global_primary_cause": "CBF_BOUNDARY_STALL",
+  "global_secondary_causes": [
+    "EARLY_SAFETY_PROXY_STOP"
+  ],
+  "pair_specific_exceptions": []
+}

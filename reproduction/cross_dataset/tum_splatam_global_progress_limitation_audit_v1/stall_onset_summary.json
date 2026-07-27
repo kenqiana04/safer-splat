@@ -1,0 +1,74 @@
+{
+  "records": [
+    {
+      "low_progress_threshold": 0.005,
+      "stall_onset": null,
+      "three_consecutive_low_progress_windows": false,
+      "trajectory_id": "pr47_g1_baseline:0:50:ORIGINAL_SAFER_BASELINE",
+      "window_size": 100
+    },
+    {
+      "low_progress_threshold": 0.005,
+      "stall_onset": 484,
+      "three_consecutive_low_progress_windows": true,
+      "trajectory_id": "pr49_v4c:0:50:STRICT_DT_TRIGGERED_V4C",
+      "window_size": 100
+    },
+    {
+      "low_progress_threshold": 0.005,
+      "stall_onset": 519,
+      "three_consecutive_low_progress_windows": true,
+      "trajectory_id": "pr49_v4c:1:51:ORIGINAL_SAFER_BASELINE",
+      "window_size": 100
+    },
+    {
+      "low_progress_threshold": 0.005,
+      "stall_onset": 519,
+      "three_consecutive_low_progress_windows": true,
+      "trajectory_id": "pr49_v4c:1:51:STRICT_DT_TRIGGERED_V4C",
+      "window_size": 100
+    },
+    {
+      "low_progress_threshold": 0.005,
+      "stall_onset": 109,
+      "three_consecutive_low_progress_windows": true,
+      "trajectory_id": "pr49_v4c:8:58:ORIGINAL_SAFER_BASELINE",
+      "window_size": 100
+    },
+    {
+      "low_progress_threshold": 0.005,
+      "stall_onset": 109,
+      "three_consecutive_low_progress_windows": true,
+      "trajectory_id": "pr49_v4c:8:58:STRICT_DT_TRIGGERED_V4C",
+      "window_size": 100
+    },
+    {
+      "low_progress_threshold": 0.005,
+      "stall_onset": 435,
+      "three_consecutive_low_progress_windows": true,
+      "trajectory_id": "pr49_v4c:9:59:ORIGINAL_SAFER_BASELINE",
+      "window_size": 100
+    },
+    {
+      "low_progress_threshold": 0.005,
+      "stall_onset": 435,
+      "three_consecutive_low_progress_windows": true,
+      "trajectory_id": "pr49_v4c:9:59:STRICT_DT_TRIGGERED_V4C",
+      "window_size": 100
+    },
+    {
+      "low_progress_threshold": 0.005,
+      "stall_onset": 194,
+      "three_consecutive_low_progress_windows": true,
+      "trajectory_id": "paused_paired20:111:287:ORIGINAL_SAFER_BASELINE",
+      "window_size": 100
+    },
+    {
+      "low_progress_threshold": 0.005,
+      "stall_onset": 194,
+      "three_consecutive_low_progress_windows": true,
+      "trajectory_id": "paused_paired20:111:287:STRICT_DT_TRIGGERED_V4C",
+      "window_size": 100
+    }
+  ]
+}

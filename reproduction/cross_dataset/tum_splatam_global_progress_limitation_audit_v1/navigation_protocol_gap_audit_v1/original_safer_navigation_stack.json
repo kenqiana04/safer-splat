@@ -1,0 +1,17 @@
+{
+  "claim": "No planner/waypoint/reference layer was recovered from the authoritative original launcher.",
+  "classification": "DIRECT_GOAL_ONLY",
+  "connectivity_validation": false,
+  "desired_controller": "clamped PD acceleration directly to final goal",
+  "goal_selection": "antipodal deterministic circle positions",
+  "keyword_hits_in_launcher": [],
+  "line_of_sight_validation": false,
+  "planner": false,
+  "reference_trajectory": false,
+  "source": "run.py at authoritative f63 checkout",
+  "source_blob": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+  "start_goal_pair_validation": false,
+  "start_selection": "deterministic circle positions",
+  "success_semantics": "goal when stopped within 0.001; timeout while moving recorded as loose success",
+  "waypoint": false
+}
