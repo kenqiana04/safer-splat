@@ -1,0 +1,1211 @@
+{
+  "eval_frame_count": 30,
+  "eval_location_count": 10,
+  "location_leakage_count": 0,
+  "locations": [
+    {
+      "candidate_id": "candidate_0002",
+      "eval_hash": "6495c18f4a39185851564c3f9b2a1160a900edae3807293ea48d5cc7ac6a86ec",
+      "location_hash": "0033737348a250a878f9a838a496342eb558c1a62e98ddf55e3293cc4a1fafb6",
+      "location_id": "location_000",
+      "source_navmesh_position": [
+        4.606825828552246,
+        -1.374765157699585,
+        0.15606771409511566
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0184",
+      "eval_hash": "7c09e2f3d180b43a51190b15ee15d44ff99f97518a214729861014d4580e6ff1",
+      "location_hash": "173a97ce689804735920ade69e4793feebc517f6b0f027492fb5048a81af22c1",
+      "location_id": "location_001",
+      "source_navmesh_position": [
+        -1.2603076696395874,
+        -1.374765157699585,
+        5.718834400177002
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0705",
+      "eval_hash": "3512838d28e624469618c164c6dc29f5f68bf2d9b961958c866556b4feb43a2d",
+      "location_hash": "5bedd9b98a4a962a55984c6577bf33a136718fd50ec22f54f6b68ba5ac570e6c",
+      "location_id": "location_002",
+      "source_navmesh_position": [
+        4.831280708312988,
+        -1.374765157699585,
+        8.11469841003418
+      ],
+      "split": "eval"
+    },
+    {
+      "candidate_id": "candidate_0936",
+      "eval_hash": "29d4f83139ebe6e3028a94831b038f695d79019bb1d9579498aacc04b1dbc886",
+      "location_hash": "7bb6ee812b6eec55dca8be4d0bfed259152636e2a43f507044f225396f7eb2de",
+      "location_id": "location_003",
+      "source_navmesh_position": [
+        -0.7150417566299438,
+        1.4252347946166992,
+        0.22988463938236237
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0568",
+      "eval_hash": "ae034a709c3ba2e71179326003544c962906c512c6b30307f9db8e8da6c9339d",
+      "location_hash": "4a58fbadb75255597aa65e2431153d35253fadd1e80c279848d91f4f9dda482a",
+      "location_id": "location_004",
+      "source_navmesh_position": [
+        3.0712084770202637,
+        1.4252347946166992,
+        3.9374516010284424
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0373",
+      "eval_hash": "f73475f02e9e0e8cf3e8d55416414ee16dc1e7a1369ed652c3658d91c7b2b8c6",
+      "location_hash": "3023efbd04d8db216229e966e5caf9cf32b0f8bd20de940eed03689bbb580c71",
+      "location_id": "location_005",
+      "source_navmesh_position": [
+        1.108504295349121,
+        -1.374765157699585,
+        1.834372639656067
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0090",
+      "eval_hash": "269010b87e7985dae5a01165e8c3c93566f995c97625d7b6c316b09dcbb1a327",
+      "location_hash": "0bfb1bcbf33eaf40b739981d9b446b293456e038aec6aa59c9b9d406e9155ba5",
+      "location_id": "location_006",
+      "source_navmesh_position": [
+        1.5419844388961792,
+        -1.374765157699585,
+        -1.6618530750274658
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0833",
+      "eval_hash": "d0389bcad672c4275e5dd7840122391b4ac776f32191ba714926318ce8c1b96f",
+      "location_hash": "6d6f534d40f2eec213392f3d34de3ac8f604d183cb1b8d72d8fb4062392d0034",
+      "location_id": "location_007",
+      "source_navmesh_position": [
+        -2.144124984741211,
+        1.4252347946166992,
+        3.397672176361084
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0338",
+      "eval_hash": "06726a5a79bdf7c4ce9df1331c3b08ca29f3be9275654be606cd204aad2a0a64",
+      "location_hash": "2a8e1fe1b1aefff2c69269344eab7b934c5804f990e8a053300b1f43aeb1e0ff",
+      "location_id": "location_008",
+      "source_navmesh_position": [
+        2.3806357383728027,
+        1.4252347946166992,
+        -0.5213585495948792
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0674",
+      "eval_hash": "72fc7c973f32f6451df6b378cb3402aa98db659668b5d34201931efb0442f308",
+      "location_hash": "58736c1cf2b3086f49c78dc982d733e92e4e78051839194f96657186c1d5a28a",
+      "location_id": "location_009",
+      "source_navmesh_position": [
+        -2.1051313877105713,
+        -1.2506719827651978,
+        1.7702504396438599
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0877",
+      "eval_hash": "b89e3a8d82c73db7db0284a4dcad842845555751d50a4fd11003ea002f0a5d5d",
+      "location_hash": "744821ab84a20be28fbc2e6a4d2e88aec4198ec2516acd18a142683a0a605920",
+      "location_id": "location_010",
+      "source_navmesh_position": [
+        4.863564491271973,
+        -1.374765157699585,
+        3.0915558338165283
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0725",
+      "eval_hash": "350222a91c52f0d2f1e76e46860dea491311d3ea7f7444ce7e876ca8c4d02481",
+      "location_hash": "5d6bb12306c13fa8823bf1c9bfce49e0d08db2982cb7a7ddd6dc3e68f8baabbd",
+      "location_id": "location_011",
+      "source_navmesh_position": [
+        1.268094778060913,
+        -1.374765157699585,
+        6.652359485626221
+      ],
+      "split": "eval"
+    },
+    {
+      "candidate_id": "candidate_0605",
+      "eval_hash": "4285a7147d4a3ab37787f5deae02ba1c6f2e81681e21c7f81f06c16d643cdccb",
+      "location_hash": "4f8b360facdb93d8971af28dfd12a6df3ed1e7d18c5ae99671a3842676a4017e",
+      "location_id": "location_012",
+      "source_navmesh_position": [
+        0.9695367813110352,
+        1.4252347946166992,
+        2.7167017459869385
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0756",
+      "eval_hash": "89671ed5f773892bee562379e108df4a4d3df491f64fa1ebcf2f611d8889f596",
+      "location_hash": "6225e295d165304f4b8d1730f6b458777c2d7b6283d8b0cc561f0bfb920be1a6",
+      "location_id": "location_013",
+      "source_navmesh_position": [
+        2.5951297283172607,
+        -1.374765157699585,
+        3.9316186904907227
+      ],
+      "split": "eval"
+    },
+    {
+      "candidate_id": "candidate_0091",
+      "eval_hash": "68913c7ec8f976c44a9a9b2b73b09b094218074c883f2f98010ede74a8f4ce53",
+      "location_hash": "0c037aeb8d97a89c069918baf17c6276fcf56b9f073e8b748c36fadbf0776baa",
+      "location_id": "location_014",
+      "source_navmesh_position": [
+        -0.4094833433628082,
+        -1.374765157699585,
+        -0.4179464280605316
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0054",
+      "eval_hash": "da71e37cd4ba88ab180a99ce8a9a576d5ef8eac21e407e3a4ac9bb9ff060a9b8",
+      "location_hash": "063c0f0a5d1e9d74592bbbaf9ffb853c9d203052708b772cc4f72787f4b5ca77",
+      "location_id": "location_015",
+      "source_navmesh_position": [
+        3.4214928150177,
+        -1.374765157699585,
+        -2.9351966381073
+      ],
+      "split": "eval"
+    },
+    {
+      "candidate_id": "candidate_0964",
+      "eval_hash": "fb772cca7831e1c6ba05b81d8a51c66f90f21d2f8ca363727808c65626b6d3fe",
+      "location_hash": "7f27537560370bceef96ac433461ac5f16d2200346a2080111c936523e2bb22a",
+      "location_id": "location_016",
+      "source_navmesh_position": [
+        3.259033441543579,
+        1.4252347946166992,
+        1.7459735870361328
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0713",
+      "eval_hash": "7f5b7b1baf54b1a34b2f14bfb757c5ecd981303cd204c97b147fbeb70016c2ca",
+      "location_hash": "5c520fe6a03342af1079536cea964e9468c2092c7aeaa631b9b0a1dd05dcabc9",
+      "location_id": "location_017",
+      "source_navmesh_position": [
+        3.3181865215301514,
+        -1.374765157699585,
+        6.122878074645996
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0742",
+      "eval_hash": "d3b3e348dd399ea78605b87b5b5bcd1f202b4e60b775557af95d3845a09b9581",
+      "location_hash": "603ae7038ec0df1f21056801f10e9a7f9443c5a1fc7ae1c18f0d720679bcaf77",
+      "location_id": "location_018",
+      "source_navmesh_position": [
+        3.2313179969787598,
+        -1.374765157699585,
+        1.7650572061538696
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0983",
+      "eval_hash": "84495df12ed298b4518c8955e79135da40e422393f70efa6fece3046f429b534",
+      "location_hash": "820f52fd461f140ee4d4d6bb2cfe41c3357fade68f27cc5938877e8b82fe9a0e",
+      "location_id": "location_019",
+      "source_navmesh_position": [
+        -0.4677810072898865,
+        1.4252347946166992,
+        4.65118932723999
+      ],
+      "split": "eval"
+    },
+    {
+      "candidate_id": "candidate_0219",
+      "eval_hash": "fb0f3128098bf715568f47d9bae2c1a6c4a81bc96789317c3f9f273388fcf8af",
+      "location_hash": "1d12037c4eb19fe8a66866c2da7faaec2d2b6235ae8f2270b65a0411ac0f02c1",
+      "location_id": "location_020",
+      "source_navmesh_position": [
+        4.618295192718506,
+        -0.06560248136520386,
+        4.499088287353516
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0524",
+      "eval_hash": "3241985ac6a8f60ec319fe408d173fc2938eb5d68e01ac0bf2a7205b56d2610d",
+      "location_hash": "4302fe3fbea163bf87257cd878ba2e8fe6fd0ee5f4d863694271ff51ffec2dd3",
+      "location_id": "location_021",
+      "source_navmesh_position": [
+        -0.46981027722358704,
+        -1.374765157699585,
+        2.843294143676758
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0748",
+      "eval_hash": "7e35bef86e6bfc8d04d53b788779520b20c84ddc79fa2d69e9992b0da35ec918",
+      "location_hash": "60f84c9f7a455043532e006ca13c4c1f515daecf21cf080e31d784e0647004fa",
+      "location_id": "location_022",
+      "source_navmesh_position": [
+        0.9428500533103943,
+        1.4252347946166992,
+        0.9886980652809143
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0758",
+      "eval_hash": "da68ecf185e4e5b16e60451bcb8ccf9b2ec21c4dc26bf85d94dee12af460ce06",
+      "location_hash": "62479e7309b2ef9f91e6ed22c438e50b37b25235ef75abedc86655dc95467c93",
+      "location_id": "location_023",
+      "source_navmesh_position": [
+        2.4478073120117188,
+        -1.374765157699585,
+        7.872242450714111
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0282",
+      "eval_hash": "1e5640c7f77fa9b35c60b4d6accf79d50e8f8f446f035675e5f3d64ed0bcc1ca",
+      "location_hash": "24136f4f6bed1d2b7d78427ad0e231bb5b4d1dd47df47b5e34bacfdb4af5426b",
+      "location_id": "location_024",
+      "source_navmesh_position": [
+        3.109989881515503,
+        -1.374765157699585,
+        -1.1325796842575073
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0914",
+      "eval_hash": "fb378d3f23539eac36fba528c31c969a734b6e0a549bbcfac1dbfa9a6a57b675",
+      "location_hash": "797ca796f595282dd61ad12e8b65dd32d8e632ffd6a6e587505b65938d1421f1",
+      "location_id": "location_025",
+      "source_navmesh_position": [
+        0.9489429593086243,
+        -1.374765157699585,
+        3.8516626358032227
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0888",
+      "eval_hash": "e6373ec1ae406c97643a8b27a1c18e689813085702c9651cddfe6cc00ae674ad",
+      "location_hash": "75cfaea4d792787d270c73136e758a64cb2e85f8b56ceb84041f4e5c9e674426",
+      "location_id": "location_026",
+      "source_navmesh_position": [
+        -0.5785002112388611,
+        1.4252347946166992,
+        2.9530038833618164
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0450",
+      "eval_hash": "736a16a005665da72c310b0dfaf3bb29ff9a62ecfa93fd4fc0889e8cb65ef671",
+      "location_hash": "39bcd33565e8823e47c7b16b4d27b2f36d38839e6523617f9adb7cf111f9928f",
+      "location_id": "location_027",
+      "source_navmesh_position": [
+        0.8656949996948242,
+        -1.374765157699585,
+        0.29479125142097473
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0968",
+      "eval_hash": "da3c45d0ae8f40f09b8090b69fe00eb4f60eb6c4f6e60747f24762fd8c4ff7ae",
+      "location_hash": "7f8373dcc2489d3e1df83f0888efb3d1fc1621d3e49c1faf1da5122de51bd199",
+      "location_id": "location_028",
+      "source_navmesh_position": [
+        4.4943647384643555,
+        1.4252347946166992,
+        2.523766040802002
+      ],
+      "split": "eval"
+    },
+    {
+      "candidate_id": "candidate_0678",
+      "eval_hash": "4ed0b23efbde4e4ec35b94092d373f4306c9050cf644308962dfa0c036a974f6",
+      "location_hash": "58c48114592e2472a18a02950b97618bfb7a2f8076b889d0cc98035ee8f22c3b",
+      "location_id": "location_029",
+      "source_navmesh_position": [
+        1.512427806854248,
+        1.4252347946166992,
+        3.960615634918213
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0139",
+      "eval_hash": "1a20a2d5c18be5989e14a423d59eb8c83dcc07eb51e7fa1b344eb42836c8ec97",
+      "location_hash": "11fd31161a5e30b5edc194026dd7f866d0df3189a2ea01cd099d70b19718a73d",
+      "location_id": "location_030",
+      "source_navmesh_position": [
+        -0.729041576385498,
+        -1.374765157699585,
+        0.8871690034866333
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0993",
+      "eval_hash": "a4855d52d33e8eb81a32b8ba337104e8ff211a9256d63bcc7e1b018bcdd8d867",
+      "location_hash": "8348341c974233d7a17e677db1972fb37f9289f3654a9dbf62d86ad4a2579bb9",
+      "location_id": "location_031",
+      "source_navmesh_position": [
+        3.295524835586548,
+        -1.374765157699585,
+        0.183842733502388
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0593",
+      "eval_hash": "6439f8fea50568a51ad1eb2dbd888ecc31ff347b11ad37bd10e5d1a24d4fb676",
+      "location_hash": "4d91a822080bbf90f78605c5cdc72ce1cbf4859dd4d7ecadf28c0ed735d37cf1",
+      "location_id": "location_032",
+      "source_navmesh_position": [
+        -1.5717583894729614,
+        -1.374765157699585,
+        3.526357650756836
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0840",
+      "eval_hash": "342e7adc4040884da0830eda5ec9801153e607adefb47758233634600ae503ce",
+      "location_hash": "6ecc38d5004eb3b02d07d8a6061fdc825182fbf7c24b6ddd8c5f523de546bc7f",
+      "location_id": "location_033",
+      "source_navmesh_position": [
+        -0.7084802985191345,
+        -1.374765157699585,
+        4.62424898147583
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0785",
+      "eval_hash": "c6c61e98ed02f8608e909d075928466994ee020dc09d111b30a18d227002167e",
+      "location_hash": "6693fd20da2339a40f236d9e2f8717c6a087ff4ad5e33a7b009b27dbeeb3033e",
+      "location_id": "location_034",
+      "source_navmesh_position": [
+        -1.9342875480651855,
+        -1.285954236984253,
+        4.725563049316406
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0879",
+      "eval_hash": "adbb439e072bef21384d5ef8c3f8dee9a7ff10488e3a3a9273fe39e46406081c",
+      "location_hash": "74a7c2e0e9a31a6eccd7d175e788b0244ce47e96ff3592803d970b1e18007f07",
+      "location_id": "location_035",
+      "source_navmesh_position": [
+        2.118241310119629,
+        1.4252347946166992,
+        1.8147969245910645
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0706",
+      "eval_hash": "b5978e260c922e9338e8153f74bce99d38234f304ad0a397798afbaf93978f4d",
+      "location_hash": "5bf1def8307eb93f490ce0ad3fa4b32468614b6a31be520a1a7e09fd24687380",
+      "location_id": "location_036",
+      "source_navmesh_position": [
+        2.554938316345215,
+        -1.374765157699585,
+        2.676053524017334
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0570",
+      "eval_hash": "b7f7b5b25b1e1581218c71011d581855e25ee996fcd3934f1c0838c1d5d2a07d",
+      "location_hash": "4a7eea50739f4b643e52c55c1a218c7755c5e428f3e76a23ff4615cafd55abef",
+      "location_id": "location_037",
+      "source_navmesh_position": [
+        1.9965499639511108,
+        1.4252347946166992,
+        0.502536416053772
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0123",
+      "eval_hash": "dd2032a0b0e64222b88de638947562f174c285dfeed9abd7e106e18b51d5ef7d",
+      "location_hash": "0fa626bb509aa585de000b5f44a07d372a841809eb6f22007cb24b54ed836337",
+      "location_id": "location_038",
+      "source_navmesh_position": [
+        3.5384974479675293,
+        1.4252347946166992,
+        3.0153861045837402
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0421",
+      "eval_hash": "8e749e010db537aaf578b958cfea9495b5f1cea83a41cafb3f05c4947a39236b",
+      "location_hash": "364650f103dbae431124e6a33da7906066df351a91a618177d00abfbbb28f52a",
+      "location_id": "location_039",
+      "source_navmesh_position": [
+        0.49911826848983765,
+        -1.374765157699585,
+        -0.9042955040931702
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0207",
+      "eval_hash": "b554becfd41451e6b8784aaa7dab704e28df9884990cb3a6347176a3c7e73b2b",
+      "location_hash": "1b228c1e356ddae248a4832854a153dea4856f6db71caca853ecc1178117d11c",
+      "location_id": "location_040",
+      "source_navmesh_position": [
+        -2.1930789947509766,
+        -1.2529975175857544,
+        0.7537014484405518
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0650",
+      "eval_hash": "85e2911dedf6cf6d4bb77dfd5ab6b533c9105dc8e610a0a7eb9fe2a4d0486548",
+      "location_hash": "556bfec0910b17108b5d92351ca91ecc93ddbde42925c9d284ae3ce86689092d",
+      "location_id": "location_041",
+      "source_navmesh_position": [
+        1.0406432151794434,
+        -1.374765157699585,
+        2.865189552307129
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0717",
+      "eval_hash": "dfd673c3c58302c81dcd261edf4cfcc3589c509c3b46e0decea4f7d96fefe03e",
+      "location_hash": "5c76c3cb860b84eed110f74c1190856a83d9225be4963a6b482cb494ccfade44",
+      "location_id": "location_042",
+      "source_navmesh_position": [
+        0.3277817964553833,
+        1.4252347946166992,
+        0.23235902190208435
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0517",
+      "eval_hash": "19443a5c268bbb67a11d9a7c15cc74613c9fcf32e700d82b8ba4145d2a577196",
+      "location_hash": "423526644e635d566df80db59889d1dcd4841fd870ff58171a63e4a0a8b969a3",
+      "location_id": "location_043",
+      "source_navmesh_position": [
+        2.92018723487854,
+        -1.374765157699585,
+        -2.124436140060425
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0480",
+      "eval_hash": "f65c89dfde096c851237e6678f8c6eaa779e40dc54a7f3f0bfbbdbc12849c6bb",
+      "location_hash": "3d3024bc78bbf409afa671b1f0a1aeb391823575a584d10aad83476be748bde4",
+      "location_id": "location_044",
+      "source_navmesh_position": [
+        0.09646345674991608,
+        1.4252347946166992,
+        1.377356767654419
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0802",
+      "eval_hash": "4e537121fedc95d1fa12bff96a063811518b6ddeaa6c295163604c3d11fa0d9d",
+      "location_hash": "68a08ae964ef7e20ede0a2d537a01ec171a3abeea2665d03e55a75365f910327",
+      "location_id": "location_045",
+      "source_navmesh_position": [
+        3.8938889503479004,
+        -1.374765157699585,
+        0.8954728841781616
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0233",
+      "eval_hash": "341b0156d113a09c5e60641de6bfca0c2293b9dc936cb85d58bb907c75b69d1a",
+      "location_hash": "1ef84e8ccf53110d95cbd93ef08450e72ba3671c8cc43bbe67b0b279695bcb8c",
+      "location_id": "location_046",
+      "source_navmesh_position": [
+        0.8195701837539673,
+        -1.374765157699585,
+        5.880162239074707
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0771",
+      "eval_hash": "13eb2e8187c2a6642786f74714b50cb38ee20668de681521159779bc12a10a41",
+      "location_hash": "65147b607d910e120c43be990e79aab74ad9a535e9c2fb9fb73f8e6c146a7ed3",
+      "location_id": "location_047",
+      "source_navmesh_position": [
+        0.8757659196853638,
+        1.4252347946166992,
+        1.8613866567611694
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0487",
+      "eval_hash": "85f983e486f050f307ff3c098b72863e2cabbe1a6d8c5f59cd1338bccf86a188",
+      "location_hash": "3e77ed2469799ceaef0f4db77b9fc92de4d09cd41ff47cc407a7d9b0fb21fc3e",
+      "location_id": "location_048",
+      "source_navmesh_position": [
+        -1.037613034248352,
+        -1.3484241962432861,
+        1.6729445457458496
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0985",
+      "eval_hash": "827570bbff650fad8063ab9e5eba9c4e0c7174eb96aa165e5cd4e4f17133989b",
+      "location_hash": "82adf9c167ddf4dab293dc77df333e57262b83029d3487d92dd7a169c4775b6d",
+      "location_id": "location_049",
+      "source_navmesh_position": [
+        3.8521687984466553,
+        -1.374765157699585,
+        -0.7314116954803467
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0775",
+      "eval_hash": "3c2ea9e5feb9ccf2b3b64ac5e6eb23e12e1f1fc19c99713c8235196fe33f4173",
+      "location_hash": "6590b7d371a737664b28e73f7b0d130e727944458b5d5b1b4f49d37b3e8198d1",
+      "location_id": "location_050",
+      "source_navmesh_position": [
+        0.03597864508628845,
+        -1.374765157699585,
+        0.39652779698371887
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0203",
+      "eval_hash": "156eac863b994a573950ac3589b51d7cab8e108a7588235e10302c6ad4fdbcf8",
+      "location_hash": "1a70d3d8d480c925724a71b6e77736e9b0205b503250ca3a1e86d4da4c9a4735",
+      "location_id": "location_051",
+      "source_navmesh_position": [
+        -0.27632540464401245,
+        -1.374765157699585,
+        -1.2237504720687866
+      ],
+      "split": "eval"
+    },
+    {
+      "candidate_id": "candidate_0682",
+      "eval_hash": "e56f85eaf3d257fd627cb8c8e09a1926b8229d7514f3eebed4b0e43d8fde3215",
+      "location_hash": "594fa1b382f0abcacd95c1743f4988d4cd4f90d61317d15127be1a795b779a29",
+      "location_id": "location_052",
+      "source_navmesh_position": [
+        -0.09219787269830704,
+        1.4252347946166992,
+        3.9329936504364014
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0523",
+      "eval_hash": "1f4a52cd6e5e9575a52fde336b2bf32b3ea152cf597426b563c48ecff035b1b5",
+      "location_hash": "42a9128539cbd77e4915047cbae236a3ffab0855b0f6a09fd82d967e48e487e2",
+      "location_id": "location_053",
+      "source_navmesh_position": [
+        1.8525996208190918,
+        -1.374765157699585,
+        -0.9349051117897034
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0828",
+      "eval_hash": "9a36a43878a36e37177c893a84576b815a910cbe6517c52a9c2a6fe6929c3730",
+      "location_hash": "6d1848c94208c8a2de671878dbfdd4950a3d83525c93be06ad749d44ec4c8f52",
+      "location_id": "location_054",
+      "source_navmesh_position": [
+        2.2599234580993652,
+        1.4252347946166992,
+        -1.2876893281936646
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0557",
+      "eval_hash": "cd0255910bd40293631823363e383394e92c039b4426eca3eb4688d007b7a41b",
+      "location_hash": "48b3d7e42658bf13a6ea8a33c00ae0a1cb6d774ab63b6a80942da8f2985751f5",
+      "location_id": "location_055",
+      "source_navmesh_position": [
+        0.4716522991657257,
+        -1.374765157699585,
+        2.2526073455810547
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0345",
+      "eval_hash": "95e7ea0c1a736b81f252c4a5c07b739c6eff3693807b9e33552f3669b2a8d68f",
+      "location_hash": "2ba7825a156391cd74b0ad6ca059f6819bcf2bd255d3d25d258836e726980f23",
+      "location_id": "location_056",
+      "source_navmesh_position": [
+        -1.517081379890442,
+        -1.298595666885376,
+        2.2451815605163574
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0821",
+      "eval_hash": "09be931bd6df44e116f995c6984fd57fad5ce65218621bc0d50a111d271514d3",
+      "location_hash": "6bbd6a31962a1042d892bbcd4f91821c07545a5f7531a8fe516220d7f91bc18f",
+      "location_id": "location_057",
+      "source_navmesh_position": [
+        -0.5429940223693848,
+        1.4252347946166992,
+        0.9926732778549194
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0681",
+      "eval_hash": "90aeb18de8ac0049dc8ea15a91d08f8b335f2e56a1805a65b81263c98b71a80a",
+      "location_hash": "591f4b2c8bc513a78875a074202e418939b81192543970d8e1b52792ff0a7cba",
+      "location_id": "location_058",
+      "source_navmesh_position": [
+        -1.0671803951263428,
+        1.4252347946166992,
+        2.4020445346832275
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0226",
+      "eval_hash": "3a69c79a8538767d57e8dbee46588658c2c284dfcfa1c09819cff9dc1541de07",
+      "location_hash": "1db9111a6040718a395ec0e87f0ebadb1f67b17962434f32e2862df57a1983aa",
+      "location_id": "location_059",
+      "source_navmesh_position": [
+        1.1803287267684937,
+        -1.374765157699585,
+        -0.6611530184745789
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0735",
+      "eval_hash": "67158fcecb3e9e8ba3f00d8bf54c8de926770bbd1742cb4e286377e5a24425d8",
+      "location_hash": "5ec7e58394375620babac5b53dca47c65f886b8c1be31e38769cae14f12cce3c",
+      "location_id": "location_060",
+      "source_navmesh_position": [
+        2.9867265224456787,
+        -1.374765157699585,
+        1.0923500061035156
+      ],
+      "split": "eval"
+    },
+    {
+      "candidate_id": "candidate_0295",
+      "eval_hash": "0f90c8c4dafbdd04f1ee78b66a72ea6325e336ebfa5ebbc5e38f1c8b397f503e",
+      "location_hash": "25b25e9ba3bdd2b1567e33dd4c32955d2ad81b89a3611a299ca28d376295193a",
+      "location_id": "location_061",
+      "source_navmesh_position": [
+        1.5501676797866821,
+        1.4252347946166992,
+        3.2557833194732666
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0761",
+      "eval_hash": "34c7b768e46b265fbeb244220cd3d034daf85362e91b7488d66f80e5b75675a3",
+      "location_hash": "62daefa29a71c080912dc28a9f62057c673703d17da47d9372776bfae76615df",
+      "location_id": "location_062",
+      "source_navmesh_position": [
+        3.23270320892334,
+        -1.374765157699585,
+        2.4692916870117188
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0916",
+      "eval_hash": "29921cd28f2ec0b3591bf56ec8b8b4e89b329d6fe539a456df4a354071142725",
+      "location_hash": "798d213fb7bd0cdffd46aa8de49a129abc2da7f2b920fa4742cde1f73acb9206",
+      "location_id": "location_063",
+      "source_navmesh_position": [
+        0.366214394569397,
+        -1.374765157699585,
+        2.9767537117004395
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0672",
+      "eval_hash": "09a946bbbd71cade65f012bbb0a00de4664fb72eddd052a5ca3c99e3da291141",
+      "location_hash": "58682d159ced6eaba2834647631ef216cd1936e29d7afa92222f85d029d70845",
+      "location_id": "location_064",
+      "source_navmesh_position": [
+        4.555971145629883,
+        -1.374765157699585,
+        -0.5187727808952332
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0346",
+      "eval_hash": "6adaf27b922c1361fbebaf5fcaf05baa2e05f3c270359ebba0731a371a8475ab",
+      "location_hash": "2bd5dc61332aa073659cda551d723dcd776f52f3d52a0535a375ab7ca76e9ada",
+      "location_id": "location_065",
+      "source_navmesh_position": [
+        2.1686153411865234,
+        -1.374765157699585,
+        2.1229281425476074
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0330",
+      "eval_hash": "f8f0705b24b4568206ffd724e07c148db74174983ba5a6f4d48c214e0da4c755",
+      "location_hash": "29ac9f3f0d8313f8bac25a24bc26746d629780a1a24dcaa7d15f8834686b1c8d",
+      "location_id": "location_066",
+      "source_navmesh_position": [
+        -0.20004546642303467,
+        -1.374765157699585,
+        2.197641134262085
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0114",
+      "eval_hash": "3dd8e37b774fc8e80112ad397aad4590aae1a5bfe0b329a1fb693ec6f855d4b9",
+      "location_hash": "0e8fe2caa27ce25ec0a5b9c6a8db11817c5ac0e35a9de504523980a6578a6a5e",
+      "location_id": "location_067",
+      "source_navmesh_position": [
+        2.052314043045044,
+        -1.374765157699585,
+        -2.0860090255737305
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0773",
+      "eval_hash": "1cf0686e140657f121542360b7a66bb1b74be2a988ca25a5f3f31684271a29cd",
+      "location_hash": "655585250845869c7d43c274e6ff9e2b8fb8b120bd983e6b0d585b91abf4cb0a",
+      "location_id": "location_068",
+      "source_navmesh_position": [
+        2.153064489364624,
+        -1.374765157699585,
+        3.4500627517700195
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0100",
+      "eval_hash": "e38edee47a070ce4edbbef9767b7f6af125ed85ef1c7e2dbcf92d3f4f38e22a0",
+      "location_hash": "0cc28c0b82e53144bfb7260e7c2d1f8148c2d6e92865482351f72e3bc1d8d40d",
+      "location_id": "location_069",
+      "source_navmesh_position": [
+        1.5350645780563354,
+        -1.374765157699585,
+        3.290405750274658
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0286",
+      "eval_hash": "6042973900500211387bfd4393caa0185a1765c510c9ad7e2e1a9f2a51d1ea97",
+      "location_hash": "24e7d6b27553984b77fba84bbffbd95669b6ad3a44fbf51fa086d79819ba67c6",
+      "location_id": "location_070",
+      "source_navmesh_position": [
+        3.9706079959869385,
+        -1.374765157699585,
+        0.14927881956100464
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0447",
+      "eval_hash": "f4584ecb7b1bda769c93468c9ca41fbd5e7032092b337bac50577329a1cd558f",
+      "location_hash": "393ef9bc4f018fc63e5af04ffbe96f0275509b8b3c53efa27d2bdc1ee1ba8318",
+      "location_id": "location_071",
+      "source_navmesh_position": [
+        -1.627970814704895,
+        -1.3004111051559448,
+        1.0031087398529053
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0801",
+      "eval_hash": "047ce54c269d217364c5f9e8c24305f5c2f08229661a8d74be34564fbced9ea8",
+      "location_hash": "688a420932cbd9c4b2908c10c6c2edf516eab828767e2bdbbd55bb44addd3f8c",
+      "location_id": "location_072",
+      "source_navmesh_position": [
+        -0.9849244952201843,
+        -1.374765157699585,
+        2.512303113937378
+      ],
+      "split": "eval"
+    },
+    {
+      "candidate_id": "candidate_0582",
+      "eval_hash": "5ff3ec3065959515e350cbfd617ec8400ba57ca0efac260cb23b9c19f024dcea",
+      "location_hash": "4bf62d1f6160e07adf4f3e41479b09538aeb79230c2d49ae6ad0a6489b354896",
+      "location_id": "location_073",
+      "source_navmesh_position": [
+        3.4952571392059326,
+        -1.374765157699585,
+        -2.0950536727905273
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0128",
+      "eval_hash": "faa2db124cf837a83142b488337c50beaa65a35870ff77d34c8696e7c25c8604",
+      "location_hash": "1067fe4db695a9fdfa651f71fba8c8eef229c22098ae0f028474c589b7a94f6e",
+      "location_id": "location_074",
+      "source_navmesh_position": [
+        1.4403866529464722,
+        1.4252347946166992,
+        0.708458662033081
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0789",
+      "eval_hash": "9ee765106a0f0442d18abd20159383d21fc3b1c190640644cde03ccb29c8d88f",
+      "location_hash": "6790a09f51651c8cb8e4557145624dbf6e035ae65296a0046f38f752554b339e",
+      "location_id": "location_075",
+      "source_navmesh_position": [
+        2.619823694229126,
+        -1.374765157699585,
+        1.7793689966201782
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0732",
+      "eval_hash": "2962a0b7385ad866cb7c7bdfe7688ca4cd314b8dbbf876fe1b00346f7936c2cb",
+      "location_hash": "5e8ceb7b8ff7068b1fee63186f8804731f9e7d50949c24f857dbab842c2bdd8b",
+      "location_id": "location_076",
+      "source_navmesh_position": [
+        2.357872724533081,
+        1.4252347946166992,
+        0.06952685117721558
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0651",
+      "eval_hash": "0f8552cc041b964d5497d354fbe47aac597747958f954d6b31b1a46944b8114c",
+      "location_hash": "5584d9435816f36f17c4c2c2844f8d62801412729ef721a0e9e4b44e388e3c42",
+      "location_id": "location_077",
+      "source_navmesh_position": [
+        1.3182363510131836,
+        -1.374765157699585,
+        0.6123437285423279
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0144",
+      "eval_hash": "65c296309048bb96eca4193a646adfe5bee2db4fb1428968d52491cafd47616b",
+      "location_hash": "12ccf4ebf402a65d481afc7759b33d95f4efd9a77361251e5dceddc50788545b",
+      "location_id": "location_078",
+      "source_navmesh_position": [
+        1.6860692501068115,
+        1.4252347946166992,
+        0.07839435338973999
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0665",
+      "eval_hash": "6a81ac53746ac4ff09ded69e89454dacdd11d466506d1ccc19bc2100b635a3bc",
+      "location_hash": "577732c28899a0145a2a970c010ddc51be02b0e7ea24812df596eaaf6fc45a6c",
+      "location_id": "location_079",
+      "source_navmesh_position": [
+        -0.48360973596572876,
+        1.4252347946166992,
+        2.441527843475342
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0319",
+      "eval_hash": "76a662e8d95d9e756086d674532c70062938ee9899d039f362c0206740ac92e3",
+      "location_hash": "28488662bb60f467f01e7e3d21e061b6c8d90903b111d399b2d8eb4be681bea5",
+      "location_id": "location_080",
+      "source_navmesh_position": [
+        1.9597558975219727,
+        1.4252347946166992,
+        -0.8740676641464233
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0361",
+      "eval_hash": "b2b2efdde6ff7bb5b0444e13d35257fd9f816a77f4e0a103afe055f20b834369",
+      "location_hash": "2e52b64de70c7854f915fa82a54ae2ebf942e5b3a7cc3c8c52d57f4c3cf60afe",
+      "location_id": "location_081",
+      "source_navmesh_position": [
+        -0.10919113457202911,
+        1.4252347946166992,
+        -0.018969550728797913
+      ],
+      "split": "eval"
+    },
+    {
+      "candidate_id": "candidate_0070",
+      "eval_hash": "23a15d0e1c2373a983ba8be8fbcfdf0016763baf8f923bcfebd354208be35413",
+      "location_hash": "08c3b0914281f4e0dbe673b677184017b5bc7600ed094a8a1720493259928c5f",
+      "location_id": "location_082",
+      "source_navmesh_position": [
+        2.6351795196533203,
+        -1.374765157699585,
+        3.316235303878784
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0289",
+      "eval_hash": "9196967784ef1390500b1840a9cdfa518ba49847241ba77a32932f45f298af18",
+      "location_hash": "252857c29c3f417322d6425ad64f624716406520df99b705bb4234a2f679621a",
+      "location_id": "location_083",
+      "source_navmesh_position": [
+        0.6056040525436401,
+        1.4252347946166992,
+        0.6244257688522339
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0437",
+      "eval_hash": "7d0896d95bf2c8033800a09d671e8b8b4a92784524b1bb40d33faf658062a6b5",
+      "location_hash": "3882f361519564779a28e9fe77f3aae0d5e8b82199c148333c07a96d4e407cdc",
+      "location_id": "location_084",
+      "source_navmesh_position": [
+        3.6364846229553223,
+        -1.374765157699585,
+        -0.19216683506965637
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0516",
+      "eval_hash": "923c12aee8807193e0c5b06415a38ac5ca6cc93d6f1b5bcda68a83ba3817184f",
+      "location_hash": "42244f036e6096b66e0671d9df8ca04be100a3df5413ff173b37add3e753a240",
+      "location_id": "location_085",
+      "source_navmesh_position": [
+        -1.1937029361724854,
+        -1.3398997783660889,
+        0.867843508720398
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0194",
+      "eval_hash": "d3541bd3f133223ad912fc11ed43128776b2f36448b4b62c735452067a749730",
+      "location_hash": "18e7f93362679dcb32a5b36b22087582e6a01088331bc327877950209522a58a",
+      "location_id": "location_086",
+      "source_navmesh_position": [
+        2.910740852355957,
+        -1.374765157699585,
+        2.9560306072235107
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0501",
+      "eval_hash": "c2e2b7183e2e0b5dc35440cb521f579bcb331712b373b61e6c92f69937125241",
+      "location_hash": "401cee372b7daf70dabf83985e801af04e133f2639636d6192ea8b960542420c",
+      "location_id": "location_087",
+      "source_navmesh_position": [
+        3.413054943084717,
+        -1.374765157699585,
+        1.365535020828247
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0858",
+      "eval_hash": "caf94a2ea5265fdcf5b12e418b81e708b7d9129748c67d7a975508755c05667b",
+      "location_hash": "7152797f7c6d2ffb43b7d29f4e34eaf32c61b438df3d41f2d9d84dd99f17dc18",
+      "location_id": "location_088",
+      "source_navmesh_position": [
+        0.002716958522796631,
+        -1.374765157699585,
+        -0.9131530523300171
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0566",
+      "eval_hash": "90806f3106ca89cf2f0328796cf76fa4a0520ae6e54270d7ac3bfde13637de58",
+      "location_hash": "4a2902a3bf17ab5f042f8bcc02824a0563270c48987a8b781a1a49e88b8accef",
+      "location_id": "location_089",
+      "source_navmesh_position": [
+        0.6400046348571777,
+        -1.374765157699585,
+        0.6425215005874634
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0476",
+      "eval_hash": "ce248c568f8f09376f54c5dbacccedf96e59f2dd6300f961aa263fd36fcdd318",
+      "location_hash": "3c7eaba787b1aec86cee921b451bcbd0a01623016753e78138c8b1445d065fed",
+      "location_id": "location_090",
+      "source_navmesh_position": [
+        0.41627371311187744,
+        1.4252347946166992,
+        1.1168874502182007
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0310",
+      "eval_hash": "c4d13b4f30632a17da149055088957b1d1dbc23f49161b4d4aec46c9cf242a21",
+      "location_hash": "27713502b7bf5a79f531be980981ebb2df6b0aa467bcaba2b59217fb7fac9e8c",
+      "location_id": "location_091",
+      "source_navmesh_position": [
+        -0.17673417925834656,
+        1.4252347946166992,
+        2.9308266639709473
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0577",
+      "eval_hash": "32a32f0cefb1fd9876caf171f9b8de13130a83f7a4998ebe5734dc16cfc11539",
+      "location_hash": "4b3458eabd6506b4214bbca672441507f4d1308013b46bed0930b4549b77628f",
+      "location_id": "location_092",
+      "source_navmesh_position": [
+        4.227324962615967,
+        -1.374765157699585,
+        0.6873506903648376
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0542",
+      "eval_hash": "a1e98360e8f32a6393013fe9bab962559c7f8ff03aa8a90fbd36d19286093f76",
+      "location_hash": "45c1fd71f01ca89c88eb35af5e76cc5fafdb0e95339768c83c5f2faf4fcb1ef2",
+      "location_id": "location_093",
+      "source_navmesh_position": [
+        4.043975830078125,
+        -1.374765157699585,
+        -0.3924940228462219
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0257",
+      "eval_hash": "523499258daa7717775531a91b7c25620f50778ebb8fdd1d08dfe640d2acab9e",
+      "location_hash": "2195e1b6019c2aa6aeae7ca1c70127c80539d4fbe48d280d93175a31b0edd475",
+      "location_id": "location_094",
+      "source_navmesh_position": [
+        2.736198663711548,
+        -1.374765157699585,
+        -1.2334935665130615
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0868",
+      "eval_hash": "e5fa01ae14c526bc6b0bc17396ab381bc4b6b09632a5ee2e3f5237a9755e6896",
+      "location_hash": "72c107f9b4b6ab41ecc036b18ef94ddd60fbafae15301c773dedfe1701c5b03e",
+      "location_id": "location_095",
+      "source_navmesh_position": [
+        3.7096052169799805,
+        1.4252347946166992,
+        2.671212673187256
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0195",
+      "eval_hash": "6c7ed4dbce2ffaef629fe4e5ffc220a1d13d7c517d0e098dbccfd2aba87ac97e",
+      "location_hash": "192ddb4381637d96b55e539d53e64b34c372a4d64707427e3d79e4a06d0b132b",
+      "location_id": "location_096",
+      "source_navmesh_position": [
+        -0.6565583944320679,
+        1.4252347946166992,
+        0.6086075305938721
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0006",
+      "eval_hash": "d2a039ad0887e31a05b33444badac109951936dbc1b5a9262b4a6322b5018805",
+      "location_hash": "00623dc722b3bdda649a2932758648cd190e7491e12d776a53d3134094cefa6d",
+      "location_id": "location_097",
+      "source_navmesh_position": [
+        1.8084056377410889,
+        1.4252347946166992,
+        2.028928756713867
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0659",
+      "eval_hash": "ab906e8febb4ecd8a875ce84d6e8424e961a2fd27500c6809abe941c5229557d",
+      "location_hash": "5661651b6f44226361e8fc1d14b3265ee1712cf90fd2209efd9e19d03734f00e",
+      "location_id": "location_098",
+      "source_navmesh_position": [
+        0.9896584153175354,
+        1.4252347946166992,
+        1.5070288181304932
+      ],
+      "split": "train"
+    },
+    {
+      "candidate_id": "candidate_0679",
+      "eval_hash": "c7e5fb23ede7f20c7fe6ec334171ff4d8ccf960d9353d016613d3d1dc7bc53de",
+      "location_hash": "58c8e9b6e5edd7a21e9116d3ba71a30a4c339885954da11838c37845e1b58b45",
+      "location_id": "location_099",
+      "source_navmesh_position": [
+        0.821463942527771,
+        -1.374765157699585,
+        -0.6754326224327087
+      ],
+      "split": "train"
+    }
+  ],
+  "rule": "hash_tied_eval_farthest_point",
+  "status": "PASS_REPLICA_V3_LOCATION_LEVEL_SPLIT",
+  "train_frame_count": 270,
+  "train_location_count": 90
+}
