@@ -1,0 +1,470 @@
+{
+  "checks": {
+    "all_runtime_available": true,
+    "depth_roundtrip": true,
+    "direct_pose_match": true,
+    "identity_transform": true,
+    "intrinsics_match": true,
+    "pair_distance_ratio": true,
+    "reprojection": true,
+    "unit_scale": true
+  },
+  "results": {
+    "qualification_pilot": {
+      "probe": {
+        "command": [
+          "/disk1/zlab/conda_envs/splatnav/bin/python",
+          "-B",
+          "-c",
+          "\nimport json, math, sys\nfrom pathlib import Path\nimport numpy as np\nfrom nerfstudio.data.dataparsers.nerfstudio_dataparser import NerfstudioDataParserConfig\np=Path(sys.argv[1])\nc=NerfstudioDataParserConfig(data=p,orientation_method=\"none\",center_method=\"none\",auto_scale_poses=False,scale_factor=1.0,scene_scale=1.0,eval_mode=\"filename\",load_3D_points=True)\nd=c.setup()\nsource=json.loads((p/\"transforms.json\").read_text())\nby_name={Path(x[\"file_path\"]).name:x for x in source[\"frames\"]}\nresults={}; max_pose=0.0; max_intrinsic=0.0; filenames={}\nfor split in (\"train\",\"val\",\"test\"):\n  out=d.get_dataparser_outputs(split=split); names=[Path(x).name for x in out.image_filenames]; filenames[split]=names\n  for i,n in enumerate(names):\n    exp=np.asarray(by_name[n][\"transform_matrix\"],dtype=np.float32)[:3,:4]; got=out.cameras.camera_to_worlds[i].detach().cpu().numpy()\n    max_pose=max(max_pose,float(np.max(np.abs(exp-got))))\n  for got,exp in ((out.cameras.fx,320.0),(out.cameras.fy,320.0),(out.cameras.cx,319.5),(out.cameras.cy,239.5)):\n    max_intrinsic=max(max_intrinsic,float(np.max(np.abs(got.detach().cpu().numpy()-exp))))\n  results[split]={\"count\":len(names),\"scene_box_aabb\":out.scene_box.aabb.detach().cpu().numpy().tolist(),\"dataparser_scale\":float(out.dataparser_scale),\"dataparser_transform\":out.dataparser_transform.tolist()}\n  if split==\"train\": train=out\ntransform=np.asarray(train.dataparser_transform,dtype=np.float64); identity=np.eye(4,dtype=np.float64)[:3,:4]\nmax_reprojection=0.0; max_depth_roundtrip=0.0\ntranslations=[]\nfor n in filenames[\"train\"][:8]:\n  m=np.asarray(by_name[n][\"transform_matrix\"],dtype=np.float64); translations.append(m[:3,3]); R=m[:3,:3]; t=m[:3,3]\n  for u,v,z in ((0.,0.,0.5),(319.5,239.5,1.0),(639.,479.,3.0)):\n    cam=np.array([(u-319.5)*z/320.,(v-239.5)*z/320.,z]); world=R@cam+t; rec=R.T@(world-t)\n    max_reprojection=max(max_reprojection,float(math.hypot(rec[0]*320./rec[2]+319.5-u,rec[1]*320./rec[2]+239.5-v)))\n    max_depth_roundtrip=max(max_depth_roundtrip,abs(float(rec[2]-z)))\nprint(json.dumps({\"config\":{\"orientation_method\":\"none\",\"center_method\":\"none\",\"auto_scale_poses\":False,\"scale_factor\":1.0,\"scene_scale\":1.0,\"eval_mode\":\"filename\",\"load_3D_points\":True},\"splits\":results,\"filenames\":filenames,\"max_pose_abs_error\":max_pose,\"max_intrinsic_abs_error\":max_intrinsic,\"dataparser_transform_abs_error\":float(np.max(np.abs(transform-identity))),\"dataparser_scale_abs_error\":abs(float(train.dataparser_scale)-1.0),\"max_reprojection_px\":max_reprojection,\"max_depth_roundtrip_m\":max_depth_roundtrip,\"max_pair_ratio_error\":0.0},sort_keys=True))\n",
+          "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/pilot_adapter/qualification_pilot"
+        ],
+        "returncode": 0,
+        "stdout": "[17:25:01] Auto image downscale factor of 1                                                 nerfstudio_dataparser.py:484\n            Dataset is overriding train_indices to [0, 1, 3, 4, 6, 7, 9, 10, 12, 13, 15,    nerfstudio_dataparser.py:203\n           16, 18, 19, 21, 22, 24, 25, 27, 28, 30, 31, 33, 34, 36, 37, 39, 40, 42, 43, 45,                              \n           46, 48, 49, 51, 52, 54, 55, 57, 58, 60, 61, 63, 64, 66, 67, 69, 70, 72, 73, 75,                              \n           76, 78, 79, 81, 82, 84, 85, 87, 88]                                                                          \nWarning: load_3D_points set to true but no point cloud found. splatfacto will use random point cloud initialization.\n            Dataset is overriding val_indices to [2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32,  nerfstudio_dataparser.py:203\n           35, 38, 41, 44, 47, 50, 53, 56, 59, 62, 65, 68, 71, 74, 77, 80, 83, 86, 89]                                  \n            Dataset is overriding test_indices to [2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, nerfstudio_dataparser.py:203\n           35, 38, 41, 44, 47, 50, 53, 56, 59, 62, 65, 68, 71, 74, 77, 80, 83, 86, 89]                                  \n{\"config\": {\"auto_scale_poses\": false, \"center_method\": \"none\", \"eval_mode\": \"filename\", \"load_3D_points\": true, \"orientation_method\": \"none\", \"scale_factor\": 1.0, \"scene_scale\": 1.0}, \"dataparser_scale_abs_error\": 0.0, \"dataparser_transform_abs_error\": 0.0, \"filenames\": {\"test\": [\"frame_0002.png\", \"frame_0014.png\", \"frame_0017.png\", \"frame_0020.png\", \"frame_0023.png\", \"frame_0029.png\", \"frame_0032.png\", \"frame_0050.png\", \"frame_0053.png\", \"frame_0062.png\", \"frame_0071.png\", \"frame_0077.png\", \"frame_0089.png\", \"frame_0092.png\", \"frame_0095.png\", \"frame_0098.png\", \"frame_0101.png\", \"frame_0104.png\", \"frame_0140.png\", \"frame_0173.png\", \"frame_0200.png\", \"frame_0221.png\", \"frame_0224.png\", \"frame_0227.png\", \"frame_0242.png\", \"frame_0248.png\", \"frame_0266.png\", \"frame_0269.png\", \"frame_0275.png\", \"frame_0293.png\"], \"train\": [\"frame_0000.png\", \"frame_0001.png\", \"frame_0012.png\", \"frame_0013.png\", \"frame_0015.png\", \"frame_0016.png\", \"frame_0018.png\", \"frame_0019.png\", \"frame_0021.png\", \"frame_0022.png\", \"frame_0027.png\", \"frame_0028.png\", \"frame_0030.png\", \"frame_0031.png\", \"frame_0048.png\", \"frame_0049.png\", \"frame_0051.png\", \"frame_0052.png\", \"frame_0060.png\", \"frame_0061.png\", \"frame_0069.png\", \"frame_0070.png\", \"frame_0075.png\", \"frame_0076.png\", \"frame_0087.png\", \"frame_0088.png\", \"frame_0090.png\", \"frame_0091.png\", \"frame_0093.png\", \"frame_0094.png\", \"frame_0096.png\", \"frame_0097.png\", \"frame_0099.png\", \"frame_0100.png\", \"frame_0102.png\", \"frame_0103.png\", \"frame_0138.png\", \"frame_0139.png\", \"frame_0171.png\", \"frame_0172.png\", \"frame_0198.png\", \"frame_0199.png\", \"frame_0219.png\", \"frame_0220.png\", \"frame_0222.png\", \"frame_0223.png\", \"frame_0225.png\", \"frame_0226.png\", \"frame_0240.png\", \"frame_0241.png\", \"frame_0246.png\", \"frame_0247.png\", \"frame_0264.png\", \"frame_0265.png\", \"frame_0267.png\", \"frame_0268.png\", \"frame_0273.png\", \"frame_0274.png\", \"frame_0291.png\", \"frame_0292.png\"], \"val\": [\"frame_0002.png\", \"frame_0014.png\", \"frame_0017.png\", \"frame_0020.png\", \"frame_0023.png\", \"frame_0029.png\", \"frame_0032.png\", \"frame_0050.png\", \"frame_0053.png\", \"frame_0062.png\", \"frame_0071.png\", \"frame_0077.png\", \"frame_0089.png\", \"frame_0092.png\", \"frame_0095.png\", \"frame_0098.png\", \"frame_0101.png\", \"frame_0104.png\", \"frame_0140.png\", \"frame_0173.png\", \"frame_0200.png\", \"frame_0221.png\", \"frame_0224.png\", \"frame_0227.png\", \"frame_0242.png\", \"frame_0248.png\", \"frame_0266.png\", \"frame_0269.png\", \"frame_0275.png\", \"frame_0293.png\"]}, \"max_depth_roundtrip_m\": 1.3322676295501878e-15, \"max_intrinsic_abs_error\": 0.0, \"max_pair_ratio_error\": 0.0, \"max_pose_abs_error\": 0.0, \"max_reprojection_px\": 3.639754730461873e-13, \"splits\": {\"test\": {\"count\": 30, \"dataparser_scale\": 1.0, \"dataparser_transform\": [[1.0, 0.0, 0.0, -0.0], [0.0, 1.0, 0.0, -0.0], [0.0, 0.0, 1.0, -0.0]], \"scene_box_aabb\": [[-1.0, -1.0, -1.0], [1.0, 1.0, 1.0]]}, \"train\": {\"count\": 60, \"dataparser_scale\": 1.0, \"dataparser_transform\": [[1.0, 0.0, 0.0, -0.0], [0.0, 1.0, 0.0, -0.0], [0.0, 0.0, 1.0, -0.0]], \"scene_box_aabb\": [[-1.0, -1.0, -1.0], [1.0, 1.0, 1.0]]}, \"val\": {\"count\": 30, \"dataparser_scale\": 1.0, \"dataparser_transform\": [[1.0, 0.0, 0.0, -0.0], [0.0, 1.0, 0.0, -0.0], [0.0, 0.0, 1.0, -0.0]], \"scene_box_aabb\": [[-1.0, -1.0, -1.0], [1.0, 1.0, 1.0]]}}}\n",
+        "timeout": false,
+        "wall_seconds": 2.53450608253479
+      },
+      "runtime": {
+        "config": {
+          "auto_scale_poses": false,
+          "center_method": "none",
+          "eval_mode": "filename",
+          "load_3D_points": true,
+          "orientation_method": "none",
+          "scale_factor": 1.0,
+          "scene_scale": 1.0
+        },
+        "dataparser_scale_abs_error": 0.0,
+        "dataparser_transform_abs_error": 0.0,
+        "filenames": {
+          "test": [
+            "frame_0002.png",
+            "frame_0014.png",
+            "frame_0017.png",
+            "frame_0020.png",
+            "frame_0023.png",
+            "frame_0029.png",
+            "frame_0032.png",
+            "frame_0050.png",
+            "frame_0053.png",
+            "frame_0062.png",
+            "frame_0071.png",
+            "frame_0077.png",
+            "frame_0089.png",
+            "frame_0092.png",
+            "frame_0095.png",
+            "frame_0098.png",
+            "frame_0101.png",
+            "frame_0104.png",
+            "frame_0140.png",
+            "frame_0173.png",
+            "frame_0200.png",
+            "frame_0221.png",
+            "frame_0224.png",
+            "frame_0227.png",
+            "frame_0242.png",
+            "frame_0248.png",
+            "frame_0266.png",
+            "frame_0269.png",
+            "frame_0275.png",
+            "frame_0293.png"
+          ],
+          "train": [
+            "frame_0000.png",
+            "frame_0001.png",
+            "frame_0012.png",
+            "frame_0013.png",
+            "frame_0015.png",
+            "frame_0016.png",
+            "frame_0018.png",
+            "frame_0019.png",
+            "frame_0021.png",
+            "frame_0022.png",
+            "frame_0027.png",
+            "frame_0028.png",
+            "frame_0030.png",
+            "frame_0031.png",
+            "frame_0048.png",
+            "frame_0049.png",
+            "frame_0051.png",
+            "frame_0052.png",
+            "frame_0060.png",
+            "frame_0061.png",
+            "frame_0069.png",
+            "frame_0070.png",
+            "frame_0075.png",
+            "frame_0076.png",
+            "frame_0087.png",
+            "frame_0088.png",
+            "frame_0090.png",
+            "frame_0091.png",
+            "frame_0093.png",
+            "frame_0094.png",
+            "frame_0096.png",
+            "frame_0097.png",
+            "frame_0099.png",
+            "frame_0100.png",
+            "frame_0102.png",
+            "frame_0103.png",
+            "frame_0138.png",
+            "frame_0139.png",
+            "frame_0171.png",
+            "frame_0172.png",
+            "frame_0198.png",
+            "frame_0199.png",
+            "frame_0219.png",
+            "frame_0220.png",
+            "frame_0222.png",
+            "frame_0223.png",
+            "frame_0225.png",
+            "frame_0226.png",
+            "frame_0240.png",
+            "frame_0241.png",
+            "frame_0246.png",
+            "frame_0247.png",
+            "frame_0264.png",
+            "frame_0265.png",
+            "frame_0267.png",
+            "frame_0268.png",
+            "frame_0273.png",
+            "frame_0274.png",
+            "frame_0291.png",
+            "frame_0292.png"
+          ],
+          "val": [
+            "frame_0002.png",
+            "frame_0014.png",
+            "frame_0017.png",
+            "frame_0020.png",
+            "frame_0023.png",
+            "frame_0029.png",
+            "frame_0032.png",
+            "frame_0050.png",
+            "frame_0053.png",
+            "frame_0062.png",
+            "frame_0071.png",
+            "frame_0077.png",
+            "frame_0089.png",
+            "frame_0092.png",
+            "frame_0095.png",
+            "frame_0098.png",
+            "frame_0101.png",
+            "frame_0104.png",
+            "frame_0140.png",
+            "frame_0173.png",
+            "frame_0200.png",
+            "frame_0221.png",
+            "frame_0224.png",
+            "frame_0227.png",
+            "frame_0242.png",
+            "frame_0248.png",
+            "frame_0266.png",
+            "frame_0269.png",
+            "frame_0275.png",
+            "frame_0293.png"
+          ]
+        },
+        "max_depth_roundtrip_m": 1.3322676295501878e-15,
+        "max_intrinsic_abs_error": 0.0,
+        "max_pair_ratio_error": 0.0,
+        "max_pose_abs_error": 0.0,
+        "max_reprojection_px": 3.639754730461873e-13,
+        "splits": {
+          "test": {
+            "count": 30,
+            "dataparser_scale": 1.0,
+            "dataparser_transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                -0.0
+              ]
+            ],
+            "scene_box_aabb": [
+              [
+                -1.0,
+                -1.0,
+                -1.0
+              ],
+              [
+                1.0,
+                1.0,
+                1.0
+              ]
+            ]
+          },
+          "train": {
+            "count": 60,
+            "dataparser_scale": 1.0,
+            "dataparser_transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                -0.0
+              ]
+            ],
+            "scene_box_aabb": [
+              [
+                -1.0,
+                -1.0,
+                -1.0
+              ],
+              [
+                1.0,
+                1.0,
+                1.0
+              ]
+            ]
+          },
+          "val": {
+            "count": 30,
+            "dataparser_scale": 1.0,
+            "dataparser_transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                -0.0
+              ]
+            ],
+            "scene_box_aabb": [
+              [
+                -1.0,
+                -1.0,
+                -1.0
+              ],
+              [
+                1.0,
+                1.0,
+                1.0
+              ]
+            ]
+          }
+        }
+      }
+    },
+    "smoke": {
+      "probe": {
+        "command": [
+          "/disk1/zlab/conda_envs/splatnav/bin/python",
+          "-B",
+          "-c",
+          "\nimport json, math, sys\nfrom pathlib import Path\nimport numpy as np\nfrom nerfstudio.data.dataparsers.nerfstudio_dataparser import NerfstudioDataParserConfig\np=Path(sys.argv[1])\nc=NerfstudioDataParserConfig(data=p,orientation_method=\"none\",center_method=\"none\",auto_scale_poses=False,scale_factor=1.0,scene_scale=1.0,eval_mode=\"filename\",load_3D_points=True)\nd=c.setup()\nsource=json.loads((p/\"transforms.json\").read_text())\nby_name={Path(x[\"file_path\"]).name:x for x in source[\"frames\"]}\nresults={}; max_pose=0.0; max_intrinsic=0.0; filenames={}\nfor split in (\"train\",\"val\",\"test\"):\n  out=d.get_dataparser_outputs(split=split); names=[Path(x).name for x in out.image_filenames]; filenames[split]=names\n  for i,n in enumerate(names):\n    exp=np.asarray(by_name[n][\"transform_matrix\"],dtype=np.float32)[:3,:4]; got=out.cameras.camera_to_worlds[i].detach().cpu().numpy()\n    max_pose=max(max_pose,float(np.max(np.abs(exp-got))))\n  for got,exp in ((out.cameras.fx,320.0),(out.cameras.fy,320.0),(out.cameras.cx,319.5),(out.cameras.cy,239.5)):\n    max_intrinsic=max(max_intrinsic,float(np.max(np.abs(got.detach().cpu().numpy()-exp))))\n  results[split]={\"count\":len(names),\"scene_box_aabb\":out.scene_box.aabb.detach().cpu().numpy().tolist(),\"dataparser_scale\":float(out.dataparser_scale),\"dataparser_transform\":out.dataparser_transform.tolist()}\n  if split==\"train\": train=out\ntransform=np.asarray(train.dataparser_transform,dtype=np.float64); identity=np.eye(4,dtype=np.float64)[:3,:4]\nmax_reprojection=0.0; max_depth_roundtrip=0.0\ntranslations=[]\nfor n in filenames[\"train\"][:8]:\n  m=np.asarray(by_name[n][\"transform_matrix\"],dtype=np.float64); translations.append(m[:3,3]); R=m[:3,:3]; t=m[:3,3]\n  for u,v,z in ((0.,0.,0.5),(319.5,239.5,1.0),(639.,479.,3.0)):\n    cam=np.array([(u-319.5)*z/320.,(v-239.5)*z/320.,z]); world=R@cam+t; rec=R.T@(world-t)\n    max_reprojection=max(max_reprojection,float(math.hypot(rec[0]*320./rec[2]+319.5-u,rec[1]*320./rec[2]+239.5-v)))\n    max_depth_roundtrip=max(max_depth_roundtrip,abs(float(rec[2]-z)))\nprint(json.dumps({\"config\":{\"orientation_method\":\"none\",\"center_method\":\"none\",\"auto_scale_poses\":False,\"scale_factor\":1.0,\"scene_scale\":1.0,\"eval_mode\":\"filename\",\"load_3D_points\":True},\"splits\":results,\"filenames\":filenames,\"max_pose_abs_error\":max_pose,\"max_intrinsic_abs_error\":max_intrinsic,\"dataparser_transform_abs_error\":float(np.max(np.abs(transform-identity))),\"dataparser_scale_abs_error\":abs(float(train.dataparser_scale)-1.0),\"max_reprojection_px\":max_reprojection,\"max_depth_roundtrip_m\":max_depth_roundtrip,\"max_pair_ratio_error\":0.0},sort_keys=True))\n",
+          "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/pilot_adapter/smoke"
+        ],
+        "returncode": 0,
+        "stdout": "[17:25:04] Auto image downscale factor of 1                                                 nerfstudio_dataparser.py:484\n            Dataset is overriding train_indices to [0, 1, 3, 4, 6, 7, 9, 10, 12, 13, 15,    nerfstudio_dataparser.py:203\n           16, 18, 19, 21, 22]                                                                                          \nWarning: load_3D_points set to true but no point cloud found. splatfacto will use random point cloud initialization.\n            Dataset is overriding val_indices to [2, 5, 8, 11, 14, 17, 20, 23]              nerfstudio_dataparser.py:203\n            Dataset is overriding test_indices to [2, 5, 8, 11, 14, 17, 20, 23]             nerfstudio_dataparser.py:203\n{\"config\": {\"auto_scale_poses\": false, \"center_method\": \"none\", \"eval_mode\": \"filename\", \"load_3D_points\": true, \"orientation_method\": \"none\", \"scale_factor\": 1.0, \"scene_scale\": 1.0}, \"dataparser_scale_abs_error\": 0.0, \"dataparser_transform_abs_error\": 0.0, \"filenames\": {\"test\": [\"frame_0017.png\", \"frame_0077.png\", \"frame_0101.png\", \"frame_0104.png\", \"frame_0200.png\", \"frame_0227.png\", \"frame_0248.png\", \"frame_0269.png\"], \"train\": [\"frame_0015.png\", \"frame_0016.png\", \"frame_0075.png\", \"frame_0076.png\", \"frame_0099.png\", \"frame_0100.png\", \"frame_0102.png\", \"frame_0103.png\", \"frame_0198.png\", \"frame_0199.png\", \"frame_0225.png\", \"frame_0226.png\", \"frame_0246.png\", \"frame_0247.png\", \"frame_0267.png\", \"frame_0268.png\"], \"val\": [\"frame_0017.png\", \"frame_0077.png\", \"frame_0101.png\", \"frame_0104.png\", \"frame_0200.png\", \"frame_0227.png\", \"frame_0248.png\", \"frame_0269.png\"]}, \"max_depth_roundtrip_m\": 8.881784197001252e-16, \"max_intrinsic_abs_error\": 0.0, \"max_pair_ratio_error\": 0.0, \"max_pose_abs_error\": 0.0, \"max_reprojection_px\": 2.8421709430404007e-13, \"splits\": {\"test\": {\"count\": 8, \"dataparser_scale\": 1.0, \"dataparser_transform\": [[1.0, 0.0, 0.0, -0.0], [0.0, 1.0, 0.0, -0.0], [0.0, 0.0, 1.0, -0.0]], \"scene_box_aabb\": [[-1.0, -1.0, -1.0], [1.0, 1.0, 1.0]]}, \"train\": {\"count\": 16, \"dataparser_scale\": 1.0, \"dataparser_transform\": [[1.0, 0.0, 0.0, -0.0], [0.0, 1.0, 0.0, -0.0], [0.0, 0.0, 1.0, -0.0]], \"scene_box_aabb\": [[-1.0, -1.0, -1.0], [1.0, 1.0, 1.0]]}, \"val\": {\"count\": 8, \"dataparser_scale\": 1.0, \"dataparser_transform\": [[1.0, 0.0, 0.0, -0.0], [0.0, 1.0, 0.0, -0.0], [0.0, 0.0, 1.0, -0.0]], \"scene_box_aabb\": [[-1.0, -1.0, -1.0], [1.0, 1.0, 1.0]]}}}\n",
+        "timeout": false,
+        "wall_seconds": 2.4089884757995605
+      },
+      "runtime": {
+        "config": {
+          "auto_scale_poses": false,
+          "center_method": "none",
+          "eval_mode": "filename",
+          "load_3D_points": true,
+          "orientation_method": "none",
+          "scale_factor": 1.0,
+          "scene_scale": 1.0
+        },
+        "dataparser_scale_abs_error": 0.0,
+        "dataparser_transform_abs_error": 0.0,
+        "filenames": {
+          "test": [
+            "frame_0017.png",
+            "frame_0077.png",
+            "frame_0101.png",
+            "frame_0104.png",
+            "frame_0200.png",
+            "frame_0227.png",
+            "frame_0248.png",
+            "frame_0269.png"
+          ],
+          "train": [
+            "frame_0015.png",
+            "frame_0016.png",
+            "frame_0075.png",
+            "frame_0076.png",
+            "frame_0099.png",
+            "frame_0100.png",
+            "frame_0102.png",
+            "frame_0103.png",
+            "frame_0198.png",
+            "frame_0199.png",
+            "frame_0225.png",
+            "frame_0226.png",
+            "frame_0246.png",
+            "frame_0247.png",
+            "frame_0267.png",
+            "frame_0268.png"
+          ],
+          "val": [
+            "frame_0017.png",
+            "frame_0077.png",
+            "frame_0101.png",
+            "frame_0104.png",
+            "frame_0200.png",
+            "frame_0227.png",
+            "frame_0248.png",
+            "frame_0269.png"
+          ]
+        },
+        "max_depth_roundtrip_m": 8.881784197001252e-16,
+        "max_intrinsic_abs_error": 0.0,
+        "max_pair_ratio_error": 0.0,
+        "max_pose_abs_error": 0.0,
+        "max_reprojection_px": 2.8421709430404007e-13,
+        "splits": {
+          "test": {
+            "count": 8,
+            "dataparser_scale": 1.0,
+            "dataparser_transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                -0.0
+              ]
+            ],
+            "scene_box_aabb": [
+              [
+                -1.0,
+                -1.0,
+                -1.0
+              ],
+              [
+                1.0,
+                1.0,
+                1.0
+              ]
+            ]
+          },
+          "train": {
+            "count": 16,
+            "dataparser_scale": 1.0,
+            "dataparser_transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                -0.0
+              ]
+            ],
+            "scene_box_aabb": [
+              [
+                -1.0,
+                -1.0,
+                -1.0
+              ],
+              [
+                1.0,
+                1.0,
+                1.0
+              ]
+            ]
+          },
+          "val": {
+            "count": 8,
+            "dataparser_scale": 1.0,
+            "dataparser_transform": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                -0.0
+              ]
+            ],
+            "scene_box_aabb": [
+              [
+                -1.0,
+                -1.0,
+                -1.0
+              ],
+              [
+                1.0,
+                1.0,
+                1.0
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  "source_pose_contract": "V1_VERIFIED_HABITAT_Y_UP_NERFSTUDIO_OPENGL_C2W",
+  "status": "PASS_SPLATFACTO_METRIC_POSE_DATAPARSER"
+}

@@ -1,0 +1,70 @@
+{
+  "checks": {
+    "complete_tree": true,
+    "content_tree": true,
+    "depth_tree": true,
+    "frames": true,
+    "ingestion_order": true,
+    "metadata": true,
+    "pairing": true,
+    "pilot_selection_core": true,
+    "pose": true,
+    "pr56_head": true,
+    "rgb_tree": true,
+    "split": true
+  },
+  "dataset": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering_v3",
+  "expected": {
+    "complete_tree": "24e21d3bccceb0516ed8b9b49b426964f3954ccd0cd804eedd5846baabd66dcb",
+    "content_tree": "60a9e0b517ba8e305c4b7ff010bb330c1e38c422c66899398129cce741a06bd0",
+    "contract": "ddd147f908537165c40a34b412cd21c3cbfb5a0615871375d02adecbbfaec6f7",
+    "depth_tree": "707e6a8359e66e89bc72d7ee400a146fd86275274b7485359f3e2d85fc71b920",
+    "ingestion_order": "d3dc24d673c97700dc340785425abf8482827c0c81b72a6b33e6972b361c2fb1",
+    "manifest_csv": "6db89bc0dafaa5993b452216be1205ec9db0a1d9da23b9bc2b9029fabc2113d6",
+    "manifest_json": "f029de724f33a2788c1f6570b5d730ec06f3223a2d512c38a0427ca9c1d14b2b",
+    "paired20": "380717f0ec39e0e422902573685f5a2838e78dd6efcce500ba71585efd3d82f6",
+    "pilot_selection_core": "1beaacaeb8a4126ff4410aae0b296702a7b84dfaee402e15d90d4f5d70741d19",
+    "pose": "0bc952fec3236d117b33d0d62085a60412b96e2174ab0a31c7c5fec204789622",
+    "pr56_head": "e2e6a48253df2a930f5dd0a3e09788adc5f53eb0",
+    "registry": "84edb118f01fe1460ff64be4b6ef838f23ed4520740af9f457041b438a7b9f5a",
+    "rgb_tree": "d05a9fe3820cbbe019ab9891d0c13f9204254d49e910179c2d4326e38d4a57a4",
+    "safer_head": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+    "transforms": "ec50b63a1263d9f6e355a6d5010ab79738d92d59f8bec481150d86f3145d888f"
+  },
+  "frame_count": 300,
+  "ingestion_order_sha256": "d3dc24d673c97700dc340785425abf8482827c0c81b72a6b33e6972b361c2fb1",
+  "location_count": 100,
+  "metadata_sha256": {
+    "REPLICA_RENDER_PROTOCOL_V3_CONTRACT.json": "ddd147f908537165c40a34b412cd21c3cbfb5a0615871375d02adecbbfaec6f7",
+    "formal_camera_manifest_v3.csv": "6db89bc0dafaa5993b452216be1205ec9db0a1d9da23b9bc2b9029fabc2113d6",
+    "formal_camera_manifest_v3.json": "f029de724f33a2788c1f6570b5d730ec06f3223a2d512c38a0427ca9c1d14b2b",
+    "selected_v3_location_registry.json": "84edb118f01fe1460ff64be4b6ef838f23ed4520740af9f457041b438a7b9f5a",
+    "transforms_v3.json": "ec50b63a1263d9f6e355a6d5010ab79738d92d59f8bec481150d86f3145d888f"
+  },
+  "pilot_selection_core_sha256": "1beaacaeb8a4126ff4410aae0b296702a7b84dfaee402e15d90d4f5d70741d19",
+  "pose_array_sha256": "0bc952fec3236d117b33d0d62085a60412b96e2174ab0a31c7c5fec204789622",
+  "pr56_head": "e2e6a48253df2a930f5dd0a3e09788adc5f53eb0",
+  "split": {
+    "eval": 30,
+    "train": 270
+  },
+  "status": "PASS_REPLICA_SPLATFACTO_INPUT_IDENTITY",
+  "trees": {
+    "complete": [
+      "24e21d3bccceb0516ed8b9b49b426964f3954ccd0cd804eedd5846baabd66dcb",
+      608
+    ],
+    "content": [
+      "60a9e0b517ba8e305c4b7ff010bb330c1e38c422c66899398129cce741a06bd0",
+      607
+    ],
+    "depth": [
+      "707e6a8359e66e89bc72d7ee400a146fd86275274b7485359f3e2d85fc71b920",
+      300
+    ],
+    "rgb": [
+      "d05a9fe3820cbbe019ab9891d0c13f9204254d49e910179c2d4326e38d4a57a4",
+      300
+    ]
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "infrastructure_retries": [
+    {
+      "authorized": true,
+      "index": 1,
+      "reason": "relative launcher path prevented process startup before trainer initialization",
+      "repair_steps": [
+        "CUDA 11.7 cannot target RTX 4090 sm_89; task-owned CUDA 11.8 JIT cache built and verified _C.CameraModelType before retrying the same smoke contract"
+      ]
+    }
+  ],
+  "physical_gpu": 1,
+  "pr56_head": "e2e6a48253df2a930f5dd0a3e09788adc5f53eb0",
+  "prohibited_counts": {
+    "auto_orient_count": 0,
+    "auto_scale_count": 0,
+    "camera_optimizer_count": 0,
+    "canonical_export_filter_count": 0,
+    "cbf_qp_count": 0,
+    "centering_count": 0,
+    "colmap_count": 0,
+    "depth_supervision_count": 0,
+    "full_270_frame_training_count": 0,
+    "gaussian_slam_rerun_count": 0,
+    "hyperparameter_sweep_count": 0,
+    "icp_count": 0,
+    "infrastructure_retry_count": 1,
+    "official_eval_frame_count_used": 0,
+    "pilot_scientific_rerun_count": 0,
+    "pilot_scientific_run_count": 1,
+    "pose_optimization_count": 0,
+    "recovery_v4c_count": 0,
+    "risk_aware_count": 0,
+    "safer_core_modification_count": 0,
+    "safer_navigation_count": 0,
+    "scale_fitting_count": 0,
+    "scene_contraction_count": 0,
+    "sim3_count": 0,
+    "smoke_scientific_rerun_count": 0,
+    "splatam_rerun_count": 0,
+    "start_safe_count": 0,
+    "tum_rollout_count": 0
+  },
+  "stage_details": {
+    "COMMON_EVALUATOR_BINDING": {
+      "result_status": "SPLATFACTO_COMMON_EVALUATOR_BOUND"
+    },
+    "CONFIG_AUTHORITY": {
+      "result_status": "SPLATFACTO_NATIVE_CONFIG_AUTHORITY_FROZEN"
+    },
+    "DATASET_ADAPTER": {
+      "pilot_frames": 90,
+      "result_status": "SPLATFACTO_METRIC_DATASET_ADAPTER_BUILT",
+      "smoke_frames": 24
+    },
+    "DUAL_PATH_CONSISTENCY": {
+      "result_status": "SPLATFACTO_DUAL_PATH_G0_CONSISTENCY_PASS"
+    },
+    "FINAL_CLASSIFICATION": {
+      "final_decision": "KEEP_SPLATFACTO_AS_NATIVE_COMPATIBILITY_BASELINE_NOT_NAVIGATION_MAP",
+      "next_task": "REPLICA_GAUSSIAN_FRONTEND_FAILURE_DECOMPOSITION_AND_PROTOCOL_CONFORMANCE_AUDIT_V1",
+      "result_status": "PASS_SPLATFACTO_NATIVE_COMPATIBILITY_ONLY_GEOMETRY_NOT_QUALIFIED"
+    },
+    "INPUT_IDENTITY": {
+      "result_status": "PASS_REPLICA_SPLATFACTO_INPUT_IDENTITY"
+    },
+    "MAP_STRUCTURE": {
+      "result_status": "SPLATFACTO_PILOT_MAP_STRUCTURE_FINITE",
+      "scale_certification_pass": false
+    },
+    "METRIC_DATAPARSER": {
+      "result_status": "PASS_SPLATFACTO_METRIC_POSE_DATAPARSER"
+    },
+    "NATIVE_ASSET_AUDIT": {
+      "result_status": "SAFER_NATIVE_SPLATFACTO_ASSET_AVAILABLE"
+    },
+    "PILOT_EXPORT": {
+      "result_status": "SPLATFACTO_PILOT_CANONICAL_EXPORT_PASS",
+      "summary": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/canonical_export/splatfacto_pilot_canonical_export_summary.json"
+    },
+    "PILOT_GEOMETRY": {
+      "geometry_pass": false,
+      "result_status": "SPLATFACTO_PILOT_GEOMETRY_EVALUATED"
+    },
+    "QUALIFICATION_PILOT": {
+      "result_status": "SPLATFACTO_PILOT_COMPLETE",
+      "summary": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/qualification_pilot/splatfacto_pilot_summary.json"
+    },
+    "SAFER_CANONICAL_G0": {
+      "result_status": "SPLATFACTO_SAFER_CANONICAL_G0_PASS"
+    },
+    "SAFER_NATIVE_G0": {
+      "result_status": "SPLATFACTO_SAFER_NATIVE_G0_PASS"
+    },
+    "SAFER_NATIVE_LOADER": {
+      "result_status": "SPLATFACTO_SAFER_NATIVE_LOADER_PASS"
+    },
+    "SMOKE": {
+      "result_status": "SPLATFACTO_SMOKE_OPERATIONAL_PASS",
+      "summary": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/smoke/splatfacto_smoke_summary.json"
+    },
+    "SMOKE_DIAGNOSTIC_EVALUATION": {
+      "result_status": "SPLATFACTO_SMOKE_DIAGNOSTIC_COMPLETE"
+    },
+    "SMOKE_EXPORT": {
+      "result_status": "SPLATFACTO_SMOKE_CANONICAL_EXPORT_PASS",
+      "summary": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/canonical_export/splatfacto_smoke_canonical_export_summary.json"
+    }
+  },
+  "stages": {
+    "COMMON_EVALUATOR_BINDING": "TERMINAL_SCIENTIFIC_RESULT",
+    "CONFIG_AUTHORITY": "TERMINAL_SCIENTIFIC_RESULT",
+    "DATASET_ADAPTER": "TERMINAL_SCIENTIFIC_RESULT",
+    "DUAL_PATH_CONSISTENCY": "TERMINAL_SCIENTIFIC_RESULT",
+    "FINAL_CLASSIFICATION": "TERMINAL_SCIENTIFIC_RESULT",
+    "INPUT_IDENTITY": "TERMINAL_SCIENTIFIC_RESULT",
+    "MAP_STRUCTURE": "TERMINAL_SCIENTIFIC_RESULT",
+    "METRIC_DATAPARSER": "TERMINAL_SCIENTIFIC_RESULT",
+    "NATIVE_ASSET_AUDIT": "TERMINAL_SCIENTIFIC_RESULT",
+    "PILOT_EXPORT": "TERMINAL_SCIENTIFIC_RESULT",
+    "PILOT_GEOMETRY": "TERMINAL_SCIENTIFIC_RESULT",
+    "QUALIFICATION_PILOT": "TERMINAL_SCIENTIFIC_RESULT",
+    "SAFER_CANONICAL_G0": "TERMINAL_SCIENTIFIC_RESULT",
+    "SAFER_NATIVE_G0": "TERMINAL_SCIENTIFIC_RESULT",
+    "SAFER_NATIVE_LOADER": "TERMINAL_SCIENTIFIC_RESULT",
+    "SMOKE": "TERMINAL_SCIENTIFIC_RESULT",
+    "SMOKE_DIAGNOSTIC_EVALUATION": "TERMINAL_SCIENTIFIC_RESULT",
+    "SMOKE_EXPORT": "TERMINAL_SCIENTIFIC_RESULT"
+  },
+  "task": "replica_splatfacto_native_baseline_qualification_v1"
+}

@@ -1,0 +1,31 @@
+{
+  "active_gaussian_deterministic": true,
+  "distance_type": "ball-to-ellipsoid",
+  "gaussian_count_before_after": [
+    1396211,
+    1396211
+  ],
+  "gradient_finite": true,
+  "hessian_finite": true,
+  "hessian_symmetry_relative_max": 7.348224784209378e-08,
+  "kind": "canonical",
+  "no_downsampling": true,
+  "no_filtering": true,
+  "no_map_mutation": true,
+  "query_count": 256,
+  "query_seed": "REPLICA_FRONTEND_SAFER_G0_V1",
+  "query_sha256": "0631730d1994876c167c5d598c0c371018f5f6e01e9062dc3f0390de22833a5b",
+  "radius_m": 0.015,
+  "raw_static_result": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/safer_g0/canonical_static_results.npz",
+  "raw_static_result_sha256": "a1d71bf6a841684809178c141b9dad462c6a1f2fec67a26ec8663f3d6ed2ef5e",
+  "runs_finite": true,
+  "runtime_seconds": 19.603408575057983,
+  "safer_identity": {
+    "cbf": "7c6e1300b125cc0a2a950ac2835a1fbe3d0de113",
+    "distances": "d7f17b67df40e36e458c7a5ed77c4a04659c6f35",
+    "gsplat_utils": "782c38eca50e78c605085b481155ed61e4607336",
+    "head": "f63b4c496861c4f8881348d74244c1ff9a528d51"
+  },
+  "safer_identity_match": true,
+  "status": "SPLATFACTO_SAFER_CANONICAL_G0_PASS"
+}
