@@ -1,0 +1,42 @@
+{
+  "depth": {
+    "decode_scale_m": 0.001,
+    "invalid_depth": "reject_nonfinite_or_negative",
+    "memory_unit": "metres",
+    "metric_to_integer_scale": 1000.0,
+    "observation_key": "depth",
+    "saved_dtype": "uint16",
+    "saved_png_encoding": "millimetres"
+  },
+  "historical_checker_sha256": "f5159d33984ab80a96057782ebb6e33043c79f72f250a38d1e58524aecb9690e",
+  "historical_integrity_checker_blob": "cae67b3be07c1b801dc7af51ebc0ffcc6bbe6efb",
+  "historical_renderer_blob": "8d59eb5b0d7434be76c8b385c97ee0d7e5dcfaa4",
+  "historical_renderer_sha256": "28abbb936682f4e91a62e563284f8997d1efdbc0d4c6b23b59eb65017b54d98c",
+  "historical_source_commit": "fe250df543aa158557c176ee4f87dc131bb61e60",
+  "rgb": {
+    "alpha_handling": "drop_alpha",
+    "channel_order": "RGB",
+    "observation_key": "rgba",
+    "saved_dtype": "uint8",
+    "saved_shape": [
+      480,
+      640,
+      3
+    ]
+  },
+  "sensor": {
+    "camera_height_m": 1.5,
+    "far_m": 20.0,
+    "hfov_deg": 90.0,
+    "model": "pinhole",
+    "near_m": 0.05,
+    "resolution": [
+      640,
+      480
+    ]
+  },
+  "status": "PASS_REPLICA_V3_RENDERER_CONTRACT",
+  "task_owned_renderer_sha256": "c821e30aeba07501b068113b176214fb94293acf9d08a50a74950d48f2e7454e",
+  "unchanged_sensor_semantics": true,
+  "write_method": "same_directory_temp_flush_fsync_reread_atomic_rename"
+}

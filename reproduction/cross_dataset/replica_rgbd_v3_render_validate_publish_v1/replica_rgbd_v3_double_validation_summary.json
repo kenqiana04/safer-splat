@@ -1,0 +1,46 @@
+{
+  "a_b_disagreement_count": 0,
+  "status": "PASS",
+  "validation_pass_a": {
+    "bad_frames": [],
+    "commands": [
+      {
+        "command": "/disk1/zlab/maintenance_records/replica_rgbd_v3_render_validate_publish_v1/full_integrity/validation_pass_A.json",
+        "returncode": 0
+      },
+      {
+        "command": "/disk1/zlab/maintenance_records/replica_rgbd_v3_render_validate_publish_v1/code/validate_replica_v3_memory_disk_consistency.py",
+        "returncode": 0
+      },
+      {
+        "command": "/disk1/zlab/maintenance_records/replica_rgbd_v3_render_validate_publish_v1/code/validate_replica_v3_pose_identity.py",
+        "returncode": 0
+      }
+    ],
+    "depth_extra": [],
+    "rgb_extra": [],
+    "status": "PASS",
+    "tree_sha256": "60a9e0b517ba8e305c4b7ff010bb330c1e38c422c66899398129cce741a06bd0"
+  },
+  "validation_pass_b": {
+    "bad_frames": [],
+    "commands": [
+      {
+        "command": "/disk1/zlab/maintenance_records/replica_rgbd_v3_render_validate_publish_v1/full_integrity/validation_pass_B.json",
+        "returncode": 0
+      },
+      {
+        "command": "/disk1/zlab/maintenance_records/replica_rgbd_v3_render_validate_publish_v1/code/validate_replica_v3_memory_disk_consistency.py",
+        "returncode": 0
+      },
+      {
+        "command": "/disk1/zlab/maintenance_records/replica_rgbd_v3_render_validate_publish_v1/code/validate_replica_v3_pose_identity.py",
+        "returncode": 0
+      }
+    ],
+    "depth_extra": [],
+    "rgb_extra": [],
+    "status": "PASS",
+    "tree_sha256": "60a9e0b517ba8e305c4b7ff010bb330c1e38c422c66899398129cce741a06bd0"
+  }
+}

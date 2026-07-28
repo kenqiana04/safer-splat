@@ -1,0 +1,54 @@
+{
+  "environment": {
+    "cuda_visible_devices": "1",
+    "habitat_sim_version": "0.3.3",
+    "inprocess_gpu": 0,
+    "physical_gpu": 1,
+    "python_version": "3.9.23"
+  },
+  "expected": {
+    "contract_sha256": "ddd147f908537165c40a34b412cd21c3cbfb5a0615871375d02adecbbfaec6f7",
+    "historical_commit": "fe250df543aa158557c176ee4f87dc131bb61e60",
+    "historical_integrity_blob": "cae67b3be07c1b801dc7af51ebc0ffcc6bbe6efb",
+    "historical_renderer_blob": "8d59eb5b0d7434be76c8b385c97ee0d7e5dcfaa4",
+    "manifest_csv_sha256": "6db89bc0dafaa5993b452216be1205ec9db0a1d9da23b9bc2b9029fabc2113d6",
+    "manifest_json_sha256": "f029de724f33a2788c1f6570b5d730ec06f3223a2d512c38a0427ca9c1d14b2b",
+    "mesh_sha256": "274677d9b7caa413230363b68f4aa472e5cc1afe87e422a489fa1b7d844c6182",
+    "navmesh_sha256": "32296d6457d3855ffe172cf1970364559def5dd15892e149b44d0bc7c6b7e938",
+    "paired20_sha256": "380717f0ec39e0e422902573685f5a2838e78dd6efcce500ba71585efd3d82f6",
+    "pose_array_sha256": "0bc952fec3236d117b33d0d62085a60412b96e2174ab0a31c7c5fec204789622",
+    "pr54_head": "1b8fabb504235774885e40e28bd2ea83032a1bb8",
+    "registry_sha256": "84edb118f01fe1460ff64be4b6ef838f23ed4520740af9f457041b438a7b9f5a",
+    "transforms_sha256": "ec50b63a1263d9f6e355a6d5010ab79738d92d59f8bec481150d86f3145d888f"
+  },
+  "formal_render_count": 0,
+  "gaussian_training_count": 0,
+  "input_checks": {
+    "REPLICA_RENDER_PROTOCOL_V3_CONTRACT.json": true,
+    "formal_camera_manifest_v3.csv": true,
+    "formal_camera_manifest_v3.json": true,
+    "selected_v3_location_registry.json": true,
+    "transforms_v3.json": true
+  },
+  "input_sha256": {
+    "REPLICA_RENDER_PROTOCOL_V3_CONTRACT.json": "ddd147f908537165c40a34b412cd21c3cbfb5a0615871375d02adecbbfaec6f7",
+    "formal_camera_manifest_v3.csv": "6db89bc0dafaa5993b452216be1205ec9db0a1d9da23b9bc2b9029fabc2113d6",
+    "formal_camera_manifest_v3.json": "f029de724f33a2788c1f6570b5d730ec06f3223a2d512c38a0427ca9c1d14b2b",
+    "selected_v3_location_registry.json": "84edb118f01fe1460ff64be4b6ef838f23ed4520740af9f457041b438a7b9f5a",
+    "transforms_v3.json": "ec50b63a1263d9f6e355a6d5010ab79738d92d59f8bec481150d86f3145d888f"
+  },
+  "pose_array_check": true,
+  "pr54_head": "1b8fabb504235774885e40e28bd2ea83032a1bb8",
+  "publication_count": 0,
+  "publish_tmp_exists": false,
+  "published_target_exists": false,
+  "safer_cbf_count": 0,
+  "scene": {
+    "mesh_sha256": "274677d9b7caa413230363b68f4aa472e5cc1afe87e422a489fa1b7d844c6182",
+    "navmesh_sha256": "32296d6457d3855ffe172cf1970364559def5dd15892e149b44d0bc7c6b7e938"
+  },
+  "scene_check": true,
+  "status": "PASS_REPLICA_RGBD_V3_RENDER_INPUT_IDENTITY",
+  "task_owned_renderer_sha256": "c821e30aeba07501b068113b176214fb94293acf9d08a50a74950d48f2e7454e",
+  "tum_rollout_count": 0
+}
