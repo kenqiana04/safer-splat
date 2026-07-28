@@ -1,0 +1,383 @@
+{
+  "consecutive_camera_distance_m": [
+    1.280625265087408,
+    1.3580377307745497,
+    2.850721604142476,
+    1.5369430203365257,
+    1.7692021267268572,
+    1.8286447214011077,
+    1.2331890905373615,
+    1.2559491862341838,
+    3.355420746362191,
+    4.912251585849912,
+    1.93783682225304,
+    2.220700082580564,
+    1.5589527735467996,
+    1.9542305574837708,
+    1.370795113835596,
+    1.6655731701916086,
+    2.9245065044032765,
+    3.634332945407289,
+    1.9724565447149265,
+    2.8892282811300314,
+    6.715920928105287,
+    1.9539282711036547,
+    7.734992903125196,
+    1.3115951150625336,
+    5.385720941380735,
+    1.639772882988215,
+    3.414539217452574,
+    1.7116939271149447,
+    2.00073411518813
+  ],
+  "frame_order_sha256": "d3dc24d673c97700dc340785425abf8482827c0c81b72a6b33e6972b361c2fb1",
+  "holdout_frame_order": [
+    "frame_0269",
+    "frame_0017",
+    "frame_0200",
+    "frame_0227",
+    "frame_0248",
+    "frame_0077",
+    "frame_0101",
+    "frame_0104",
+    "frame_0098",
+    "frame_0140",
+    "frame_0032",
+    "frame_0062",
+    "frame_0014",
+    "frame_0089",
+    "frame_0293",
+    "frame_0224",
+    "frame_0242",
+    "frame_0050",
+    "frame_0275",
+    "frame_0173",
+    "frame_0023",
+    "frame_0053",
+    "frame_0071",
+    "frame_0095",
+    "frame_0002",
+    "frame_0092",
+    "frame_0029",
+    "frame_0266",
+    "frame_0020",
+    "frame_0221"
+  ],
+  "location_preorder": [
+    "location_089",
+    "location_005",
+    "location_066",
+    "location_075",
+    "location_082",
+    "location_025",
+    "location_033",
+    "location_034",
+    "location_032",
+    "location_046",
+    "location_010",
+    "location_020",
+    "location_004",
+    "location_029",
+    "location_097",
+    "location_074",
+    "location_080",
+    "location_016",
+    "location_091",
+    "location_057",
+    "location_007",
+    "location_017",
+    "location_023",
+    "location_031",
+    "location_000",
+    "location_030",
+    "location_009",
+    "location_088",
+    "location_006",
+    "location_073"
+  ],
+  "mapping_frame_order": [
+    "frame_0267",
+    "frame_0268",
+    "frame_0015",
+    "frame_0016",
+    "frame_0198",
+    "frame_0199",
+    "frame_0225",
+    "frame_0226",
+    "frame_0246",
+    "frame_0247",
+    "frame_0075",
+    "frame_0076",
+    "frame_0099",
+    "frame_0100",
+    "frame_0102",
+    "frame_0103",
+    "frame_0096",
+    "frame_0097",
+    "frame_0138",
+    "frame_0139",
+    "frame_0030",
+    "frame_0031",
+    "frame_0060",
+    "frame_0061",
+    "frame_0012",
+    "frame_0013",
+    "frame_0087",
+    "frame_0088",
+    "frame_0291",
+    "frame_0292",
+    "frame_0222",
+    "frame_0223",
+    "frame_0240",
+    "frame_0241",
+    "frame_0048",
+    "frame_0049",
+    "frame_0273",
+    "frame_0274",
+    "frame_0171",
+    "frame_0172",
+    "frame_0021",
+    "frame_0022",
+    "frame_0051",
+    "frame_0052",
+    "frame_0069",
+    "frame_0070",
+    "frame_0093",
+    "frame_0094",
+    "frame_0000",
+    "frame_0001",
+    "frame_0090",
+    "frame_0091",
+    "frame_0027",
+    "frame_0028",
+    "frame_0264",
+    "frame_0265",
+    "frame_0018",
+    "frame_0019",
+    "frame_0219",
+    "frame_0220"
+  ],
+  "maximum_edge_length_m": 2.4578207305093485,
+  "median_edge_length_m": 1.7116939271149447,
+  "mst_edges": [
+    {
+      "a": "location_089",
+      "b": "location_005",
+      "distance_m": 1.280625265087408
+    },
+    {
+      "a": "location_005",
+      "b": "location_066",
+      "distance_m": 1.3580377307745497
+    },
+    {
+      "a": "location_089",
+      "b": "location_030",
+      "distance_m": 1.3907335938966616
+    },
+    {
+      "a": "location_005",
+      "b": "location_075",
+      "distance_m": 1.5123199814120816
+    },
+    {
+      "a": "location_075",
+      "b": "location_082",
+      "distance_m": 1.5369430203365257
+    },
+    {
+      "a": "location_030",
+      "b": "location_009",
+      "distance_m": 1.639772882988215
+    },
+    {
+      "a": "location_089",
+      "b": "location_088",
+      "distance_m": 1.6811480889566741
+    },
+    {
+      "a": "location_088",
+      "b": "location_006",
+      "distance_m": 1.7116939271149447
+    },
+    {
+      "a": "location_075",
+      "b": "location_031",
+      "distance_m": 1.732707733211329
+    },
+    {
+      "a": "location_031",
+      "b": "location_000",
+      "distance_m": 1.3115951150625336
+    },
+    {
+      "a": "location_082",
+      "b": "location_025",
+      "distance_m": 1.7692021267268572
+    },
+    {
+      "a": "location_025",
+      "b": "location_033",
+      "distance_m": 1.8286447214011077
+    },
+    {
+      "a": "location_033",
+      "b": "location_034",
+      "distance_m": 1.2331890905373615
+    },
+    {
+      "a": "location_034",
+      "b": "location_032",
+      "distance_m": 1.2559491862341838
+    },
+    {
+      "a": "location_033",
+      "b": "location_046",
+      "distance_m": 1.977942463012431
+    },
+    {
+      "a": "location_006",
+      "b": "location_073",
+      "distance_m": 2.00073411518813
+    },
+    {
+      "a": "location_082",
+      "b": "location_010",
+      "distance_m": 2.2396831128539856
+    },
+    {
+      "a": "location_010",
+      "b": "location_020",
+      "distance_m": 1.93783682225304
+    },
+    {
+      "a": "location_020",
+      "b": "location_004",
+      "distance_m": 2.220700082580564
+    },
+    {
+      "a": "location_004",
+      "b": "location_029",
+      "distance_m": 1.5589527735467996
+    },
+    {
+      "a": "location_029",
+      "b": "location_097",
+      "distance_m": 1.9542305574837708
+    },
+    {
+      "a": "location_097",
+      "b": "location_074",
+      "distance_m": 1.370795113835596
+    },
+    {
+      "a": "location_097",
+      "b": "location_016",
+      "distance_m": 1.4779663910969665
+    },
+    {
+      "a": "location_074",
+      "b": "location_080",
+      "distance_m": 1.6655731701916086
+    },
+    {
+      "a": "location_029",
+      "b": "location_091",
+      "distance_m": 1.978315834241963
+    },
+    {
+      "a": "location_091",
+      "b": "location_057",
+      "distance_m": 1.9724565447149265
+    },
+    {
+      "a": "location_091",
+      "b": "location_007",
+      "distance_m": 2.022021590868239
+    },
+    {
+      "a": "location_020",
+      "b": "location_017",
+      "distance_m": 2.4578207305093485
+    },
+    {
+      "a": "location_017",
+      "b": "location_023",
+      "distance_m": 1.9539282711036547
+    }
+  ],
+  "registry_selection_core_sha256": "1beaacaeb8a4126ff4410aae0b296702a7b84dfaee402e15d90d4f5d70741d19",
+  "root_location_id": "location_089",
+  "smoke_holdout_frame_ids": [
+    "frame_0269",
+    "frame_0017",
+    "frame_0200",
+    "frame_0227",
+    "frame_0248",
+    "frame_0077",
+    "frame_0101",
+    "frame_0104"
+  ],
+  "smoke_location_ids": [
+    "location_089",
+    "location_005",
+    "location_066",
+    "location_075",
+    "location_082",
+    "location_025",
+    "location_033",
+    "location_034"
+  ],
+  "smoke_mapping_frame_ids": [
+    "frame_0267",
+    "frame_0268",
+    "frame_0015",
+    "frame_0016",
+    "frame_0198",
+    "frame_0199",
+    "frame_0225",
+    "frame_0226",
+    "frame_0246",
+    "frame_0247",
+    "frame_0075",
+    "frame_0076",
+    "frame_0099",
+    "frame_0100",
+    "frame_0102",
+    "frame_0103"
+  ],
+  "status": "PASS",
+  "total_mst_length_m": 50.031520037221455,
+  "yaw_transition": [
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60",
+    "0_to_-60"
+  ]
+}

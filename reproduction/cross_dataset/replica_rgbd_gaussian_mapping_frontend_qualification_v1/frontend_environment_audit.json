@@ -1,0 +1,135 @@
+{
+  "frontends": {
+    "gaussian_slam": {
+      "command": {
+        "command": [
+          "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/bin/python",
+          "-c",
+          "import importlib,json,sys,traceback; sys.path.insert(0,'/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive'); out={'modules':{}}\n\nfor n in ['torch', 'cv2', 'open3d', 'wandb', 'simple_knn', 'src.entities.datasets', 'src.entities.tracker', 'src.entities.gaussian_slam', 'src.utils.io_utils']:\n try:\n  m=importlib.import_module(n);out['modules'][n]={'ok':True,'file':getattr(m,'__file__',None)}\n except Exception as e: out['modules'][n]={'ok':False,'error':type(e).__name__+':'+str(e)}\n\nimport torch; out['runtime']={'python':sys.version.split()[0],'torch':torch.__version__,'cuda':torch.version.cuda,'cuda_available':torch.cuda.is_available(),'device_count':torch.cuda.device_count()};print(json.dumps(out,sort_keys=True))"
+        ],
+        "returncode": 0,
+        "stdout": "{\"modules\": {\"cv2\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/lib/python3.10/site-packages/cv2/__init__.py\", \"ok\": true}, \"open3d\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/lib/python3.10/site-packages/open3d/__init__.py\", \"ok\": true}, \"simple_knn\": {\"file\": null, \"ok\": true}, \"src.entities.datasets\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive/src/entities/datasets.py\", \"ok\": true}, \"src.entities.gaussian_slam\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive/src/entities/gaussian_slam.py\", \"ok\": true}, \"src.entities.tracker\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive/src/entities/tracker.py\", \"ok\": true}, \"src.utils.io_utils\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive/src/utils/io_utils.py\", \"ok\": true}, \"torch\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/lib/python3.10/site-packages/torch/__init__.py\", \"ok\": true}, \"wandb\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/lib/python3.10/site-packages/wandb/__init__.py\", \"ok\": true}}, \"runtime\": {\"cuda\": \"12.1\", \"cuda_available\": true, \"device_count\": 1, \"python\": \"3.10.20\", \"torch\": \"2.1.2\"}}\n",
+        "timeout": false,
+        "wall_seconds": 8.26343321800232
+      },
+      "environment": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda",
+      "environment_python": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/bin/python",
+      "expected_gpu_index": 0,
+      "frontend": "Gaussian-SLAM",
+      "import_smoke": {
+        "modules": {
+          "cv2": {
+            "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/lib/python3.10/site-packages/cv2/__init__.py",
+            "ok": true
+          },
+          "open3d": {
+            "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/lib/python3.10/site-packages/open3d/__init__.py",
+            "ok": true
+          },
+          "simple_knn": {
+            "file": null,
+            "ok": true
+          },
+          "src.entities.datasets": {
+            "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive/src/entities/datasets.py",
+            "ok": true
+          },
+          "src.entities.gaussian_slam": {
+            "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive/src/entities/gaussian_slam.py",
+            "ok": true
+          },
+          "src.entities.tracker": {
+            "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive/src/entities/tracker.py",
+            "ok": true
+          },
+          "src.utils.io_utils": {
+            "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive/src/utils/io_utils.py",
+            "ok": true
+          },
+          "torch": {
+            "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/lib/python3.10/site-packages/torch/__init__.py",
+            "ok": true
+          },
+          "wandb": {
+            "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/lib/python3.10/site-packages/wandb/__init__.py",
+            "ok": true
+          }
+        },
+        "runtime": {
+          "cuda": "12.1",
+          "cuda_available": true,
+          "device_count": 1,
+          "python": "3.10.20",
+          "torch": "2.1.2"
+        }
+      },
+      "physical_gpu": 1,
+      "repair_count": 0,
+      "status": "FRONTEND_ENVIRONMENT_READY"
+    },
+    "splatam": {
+      "command": {
+        "command": [
+          "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/bin/python",
+          "-c",
+          "import importlib,json,sys,traceback; sys.path.insert(0,'/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive'); out={'modules':{}}\n\nfor n in ['torch', 'cv2', 'open3d', 'wandb', 'natsort', 'diff_gaussian_rasterization', 'datasets.gradslam_datasets.replica', 'scripts.gaussian_splatting']:\n try:\n  m=importlib.import_module(n);out['modules'][n]={'ok':True,'file':getattr(m,'__file__',None)}\n except Exception as e: out['modules'][n]={'ok':False,'error':type(e).__name__+':'+str(e)}\n\nimport torch; out['runtime']={'python':sys.version.split()[0],'torch':torch.__version__,'cuda':torch.version.cuda,'cuda_available':torch.cuda.is_available(),'device_count':torch.cuda.device_count()};print(json.dumps(out,sort_keys=True))"
+        ],
+        "returncode": 0,
+        "stdout": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/wandb/sdk/launch/builder/build.py:11: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.\n  import pkg_resources\n/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and will be removed in 0.15, please use 'weights' instead.\n  warnings.warn(\n/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and will be removed in 0.15. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.\n  warnings.warn(msg)\nSystem Paths:\n/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive\n/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive\n\n/disk1/zlab/conda_envs/safer_splat_official/lib/python310.zip\n/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10\n/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/lib-dynload\n/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages\n/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/setuptools/_vendor\n{\"modules\": {\"cv2\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/cv2/__init__.py\", \"ok\": true}, \"datasets.gradslam_datasets.replica\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive/datasets/gradslam_datasets/replica.py\", \"ok\": true}, \"diff_gaussian_rasterization\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py\", \"ok\": true}, \"natsort\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/natsort/__init__.py\", \"ok\": true}, \"open3d\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/open3d/__init__.py\", \"ok\": true}, \"scripts.gaussian_splatting\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive/scripts/gaussian_splatting.py\", \"ok\": true}, \"torch\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/torch/__init__.py\", \"ok\": true}, \"wandb\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/wandb/__init__.py\", \"ok\": true}}, \"runtime\": {\"cuda\": \"11.6\", \"cuda_available\": true, \"device_count\": 1, \"python\": \"3.10.20\", \"torch\": \"1.12.1+cu116\"}}\n",
+        "timeout": false,
+        "wall_seconds": 6.850804567337036
+      },
+      "environment": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1",
+      "environment_python": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/bin/python",
+      "expected_gpu_index": 0,
+      "frontend": "SplaTAM",
+      "import_smoke": {
+        "modules": {
+          "cv2": {
+            "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/cv2/__init__.py",
+            "ok": true
+          },
+          "datasets.gradslam_datasets.replica": {
+            "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive/datasets/gradslam_datasets/replica.py",
+            "ok": true
+          },
+          "diff_gaussian_rasterization": {
+            "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py",
+            "ok": true
+          },
+          "natsort": {
+            "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/natsort/__init__.py",
+            "ok": true
+          },
+          "open3d": {
+            "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/open3d/__init__.py",
+            "ok": true
+          },
+          "scripts.gaussian_splatting": {
+            "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive/scripts/gaussian_splatting.py",
+            "ok": true
+          },
+          "torch": {
+            "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/torch/__init__.py",
+            "ok": true
+          },
+          "wandb": {
+            "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/wandb/__init__.py",
+            "ok": true
+          }
+        },
+        "runtime": {
+          "cuda": "11.6",
+          "cuda_available": true,
+          "device_count": 1,
+          "python": "3.10.20",
+          "torch": "1.12.1+cu116"
+        }
+      },
+      "physical_gpu": 1,
+      "repair_count": 0,
+      "status": "FRONTEND_ENVIRONMENT_READY"
+    }
+  },
+  "status": "PASS"
+}

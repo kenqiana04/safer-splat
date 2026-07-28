@@ -1,0 +1,50 @@
+{
+  "arrays": {
+    "appearance": {
+      "dtype": "float32",
+      "sha256": "b631c816998fd21eef7bd257c8d0cb47dbd0f98ad570dfd4cc2d0d051aa5c274",
+      "shape": [
+        1764423,
+        3
+      ]
+    },
+    "means_world_m": {
+      "dtype": "float32",
+      "sha256": "8af0c3d05ce9eb447fd301017067152aacb63a272c912ce15ac3bfa9c40c5985",
+      "shape": [
+        1764423,
+        3
+      ]
+    },
+    "opacities": {
+      "dtype": "float32",
+      "sha256": "9c57c7718473e9b637d0e9b09888c21e90ef51e14d801c1ce8bfe1ec2ef89d8c",
+      "shape": [
+        1764423
+      ]
+    },
+    "quaternions_wxyz": {
+      "dtype": "float32",
+      "sha256": "6d0d33e64f18101116eed26abbeb9fbeb0cab4eaccb9c3bd0994629c0b3f5bfe",
+      "shape": [
+        1764423,
+        4
+      ]
+    },
+    "scales_linear_m": {
+      "dtype": "float32",
+      "sha256": "76dc3cb3cbececf4ab7494afabc61f2747d8a7a002e72215faa899fef2708772",
+      "shape": [
+        1764423,
+        3
+      ]
+    }
+  },
+  "canonical_root": "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/canonical_exports/splatam/smoke",
+  "frontend": "SplaTAM",
+  "gaussian_count": 1764423,
+  "identity_path": "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/canonical_exports/splatam/smoke/canonical_map_identity.json",
+  "no_filtering": true,
+  "stage": "smoke",
+  "status": "CANONICAL_EXPORT_PASS"
+}

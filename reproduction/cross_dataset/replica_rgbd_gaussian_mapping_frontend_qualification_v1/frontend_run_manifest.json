@@ -1,0 +1,111 @@
+{
+  "frontends": {
+    "gaussian_slam": {
+      "ASSET_AUDIT": "TERMINAL_SCIENTIFIC_RESULT",
+      "CANONICAL_EXPORT": "NOT_AUTHORIZED",
+      "CAPABILITY_GATE": "TERMINAL_SCIENTIFIC_RESULT",
+      "COMMON_EVALUATION": "NOT_AUTHORIZED",
+      "ENVIRONMENT_AUDIT": "TERMINAL_SCIENTIFIC_RESULT",
+      "FINAL_CLASSIFICATION": "TERMINAL_SCIENTIFIC_RESULT",
+      "QUALIFICATION_PILOT": "NOT_AUTHORIZED",
+      "SAFER_G0": "NOT_AUTHORIZED",
+      "SMOKE": "TERMINAL_SCIENTIFIC_RESULT"
+    },
+    "splatam": {
+      "ASSET_AUDIT": "TERMINAL_SCIENTIFIC_RESULT",
+      "CANONICAL_EXPORT": "NOT_AUTHORIZED",
+      "CAPABILITY_GATE": "TERMINAL_SCIENTIFIC_RESULT",
+      "COMMON_EVALUATION": "NOT_AUTHORIZED",
+      "ENVIRONMENT_AUDIT": "TERMINAL_SCIENTIFIC_RESULT",
+      "FINAL_CLASSIFICATION": "TERMINAL_SCIENTIFIC_RESULT",
+      "QUALIFICATION_PILOT": "NOT_AUTHORIZED",
+      "SAFER_G0": "NOT_AUTHORIZED",
+      "SMOKE": "TERMINAL_SCIENTIFIC_RESULT"
+    }
+  },
+  "gpu_physical": 1,
+  "official_eval_usage_count": 0,
+  "prohibited_counts": {
+    "cbf_qp_rollout_count": 0,
+    "frontend_core_modification_count": 0,
+    "full_270_frame_training_count": 0,
+    "hyperparameter_sweep_count": 0,
+    "infrastructure_retry_count": 0,
+    "official_eval_frame_count_used": 0,
+    "pose_optimization_count": 0,
+    "recovery_v4c_count": 0,
+    "risk_aware_count": 0,
+    "safer_navigation_count": 0,
+    "scale_fitting_count": 0,
+    "scientific_rerun_count": 0,
+    "sim3_count": 0,
+    "start_safe_count": 0,
+    "tracking_count": 0,
+    "tum_rollout_count": 0
+  },
+  "stage_details": {
+    "gaussian_slam": {
+      "ASSET_AUDIT": {
+        "asset_status": "FRONTEND_ASSET_AVAILABLE"
+      },
+      "CANONICAL_EXPORT": {
+        "reason": "NOT_AUTHORIZED_DUE_TO_SMOKE"
+      },
+      "CAPABILITY_GATE": {
+        "capability_status": "FRONTEND_CAPABILITY_GATE_PASS"
+      },
+      "COMMON_EVALUATION": {
+        "reason": "NOT_AUTHORIZED_DUE_TO_SMOKE"
+      },
+      "ENVIRONMENT_AUDIT": {
+        "environment_status": "FRONTEND_ENVIRONMENT_READY"
+      },
+      "FINAL_CLASSIFICATION": {
+        "final_status": "NO_REPLICA_GAUSSIAN_FRONTEND_QUALIFIED",
+        "qualified": false
+      },
+      "QUALIFICATION_PILOT": {
+        "reason": "NOT_AUTHORIZED_DUE_TO_SMOKE"
+      },
+      "SAFER_G0": {
+        "reason": "NOT_AUTHORIZED_DUE_TO_SMOKE"
+      },
+      "SMOKE": {
+        "configuration_qualification": "FRONTEND_CONFIG_NOT_QUALIFIED",
+        "result_status": "SMOKE_ALGORITHM_FAILURE"
+      }
+    },
+    "splatam": {
+      "ASSET_AUDIT": {
+        "asset_status": "FRONTEND_ASSET_AVAILABLE"
+      },
+      "CANONICAL_EXPORT": {
+        "reason": "NOT_AUTHORIZED_DUE_TO_SMOKE"
+      },
+      "CAPABILITY_GATE": {
+        "capability_status": "FRONTEND_CAPABILITY_GATE_PASS"
+      },
+      "COMMON_EVALUATION": {
+        "reason": "NOT_AUTHORIZED_DUE_TO_SMOKE"
+      },
+      "ENVIRONMENT_AUDIT": {
+        "environment_status": "FRONTEND_ENVIRONMENT_READY"
+      },
+      "FINAL_CLASSIFICATION": {
+        "final_status": "NO_REPLICA_GAUSSIAN_FRONTEND_QUALIFIED",
+        "qualified": false
+      },
+      "QUALIFICATION_PILOT": {
+        "reason": "NOT_AUTHORIZED_DUE_TO_SMOKE"
+      },
+      "SAFER_G0": {
+        "reason": "NOT_AUTHORIZED_DUE_TO_SMOKE"
+      },
+      "SMOKE": {
+        "record_repair_only": true,
+        "result_status": "SMOKE_RENDER_FAILURE"
+      }
+    }
+  },
+  "task": "replica_rgbd_gaussian_mapping_frontend_qualification_v1"
+}

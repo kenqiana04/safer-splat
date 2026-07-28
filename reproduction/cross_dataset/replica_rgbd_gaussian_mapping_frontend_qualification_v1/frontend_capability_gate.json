@@ -1,0 +1,42 @@
+{
+  "core_modification_count": 0,
+  "frontends": {
+    "gaussian_slam": {
+      "capabilities": {
+        "checkpoint_save": true,
+        "depth_render": true,
+        "external_gt_pose": true,
+        "gaussian_export": true,
+        "metric_depth_scale_0_001": true,
+        "no_scale_normalization": true,
+        "no_sim3": true,
+        "pose_optimization_disabled": true,
+        "resolution_640x480": true,
+        "rgbd_loader": true,
+        "runtime_gpu_recording": true,
+        "task_owned_adapter": "Replica layout symlink adapter and direct-GT tracker wrapper",
+        "tracking_bypassed": true
+      },
+      "status": "FRONTEND_CAPABILITY_GATE_PASS"
+    },
+    "splatam": {
+      "capabilities": {
+        "checkpoint_save": true,
+        "depth_render": true,
+        "external_gt_pose": true,
+        "gaussian_export": true,
+        "metric_depth_scale_0_001": true,
+        "no_scale_normalization": true,
+        "no_sim3": true,
+        "pose_optimization_disabled": true,
+        "resolution_640x480": true,
+        "rgbd_loader": true,
+        "runtime_gpu_recording": true,
+        "task_owned_adapter": "ReplicaV2Dataset symlink adapter",
+        "tracking_bypassed": true
+      },
+      "status": "FRONTEND_CAPABILITY_GATE_PASS"
+    }
+  },
+  "status": "PASS"
+}

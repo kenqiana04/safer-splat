@@ -1,0 +1,51 @@
+{
+  "checkpoint": "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/gaussian_slam/smoke/run/submaps/final_submap.ckpt",
+  "checkpoint_exists": false,
+  "configuration_qualification": "FRONTEND_CONFIG_NOT_QUALIFIED",
+  "failure_classification": "frozen core frontend hyperparameter incompatible with frozen V3 adapter geometry",
+  "frame_ids": [
+    "frame_0267",
+    "frame_0268",
+    "frame_0015",
+    "frame_0016",
+    "frame_0198",
+    "frame_0199",
+    "frame_0225",
+    "frame_0226",
+    "frame_0246",
+    "frame_0247",
+    "frame_0075",
+    "frame_0076",
+    "frame_0099",
+    "frame_0100",
+    "frame_0102",
+    "frame_0103"
+  ],
+  "frontend": "Gaussian-SLAM",
+  "gt_pose": true,
+  "infrastructure_events": [],
+  "mapping_frame_count": 16,
+  "pose_update_count": 0,
+  "retry_authorized": false,
+  "root_cause": "ValueError: Cannot take a larger sample than population when replace=False",
+  "runtime": {
+    "command": [
+      "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/bin/python",
+      "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/gaussian_slam/launchers/smoke.py",
+      "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive",
+      "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/gaussian_slam/configs/smoke.yaml"
+    ],
+    "gpu_memory_before_mib": 6,
+    "gpu_memory_mean_mib": 614.4,
+    "gpu_memory_peak_mib": 1360,
+    "log": "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/logs/gaussian_slam_smoke.log",
+    "returncode": 1,
+    "timeout": false,
+    "wall_seconds": 25.14604091644287
+  },
+  "scale_fitting": false,
+  "sim3": false,
+  "stage": "smoke",
+  "status": "SMOKE_ALGORITHM_FAILURE",
+  "tracking_count": 0
+}

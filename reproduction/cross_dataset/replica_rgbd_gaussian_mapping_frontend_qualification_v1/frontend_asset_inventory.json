@@ -1,0 +1,109 @@
+{
+  "bounded_search_roots": [
+    "/disk1/zlab/projects",
+    "/disk1/zlab/maintenance_records",
+    "/disk1/zlab/conda_envs",
+    "/disk1/zlab/cross_dataset_assets"
+  ],
+  "frontends": {
+    "gaussian_slam": {
+      "asset_status": "FRONTEND_ASSET_AVAILABLE",
+      "branch": "official_archive",
+      "checkpoint_format": "submaps/*.ckpt",
+      "conda_environment": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda",
+      "dirty_status": false,
+      "environment_python": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/bin/python",
+      "existing_replica_artifacts": [],
+      "existing_tum_artifacts": [],
+      "file_count": 59,
+      "frontend": "Gaussian-SLAM",
+      "gaussian_export_candidates": [
+        "src/entities/gaussian_model.py",
+        "src/utils/gaussian_model_utils.py",
+        "src/utils/io_utils.py"
+      ],
+      "git_remote": "https://github.com/VladimirYugay/Gaussian-SLAM.git",
+      "git_worktree": "not_applicable_official_archive",
+      "gt_pose_support": "tracker odometry_type=gt returns gt_c2w",
+      "license": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive/LICENSE",
+      "license_sha256": "75486ea0af9309140ca6e2c401d7e67bea8f4892344e5707f6394dc5e83dfc44",
+      "map_only_support": true,
+      "official_commit": "eaec10d73ce7511563882b8856896e06d1f804e3",
+      "official_replica_configs": [
+        "configs/Replica/replica.yaml"
+      ],
+      "readme": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive/README.md",
+      "readme_sha256": "d14902ff1c27b0c636da0fe35d58c8e281e9ce93eaab10824cf9bb14108b1dc8",
+      "renderer_candidates": [
+        "src/utils/gaussian_model_utils.py",
+        "src/utils/io_utils.py",
+        "src/utils/mapper_utils.py",
+        "src/utils/tracker_utils.py",
+        "src/utils/utils.py",
+        "src/utils/vis_utils.py"
+      ],
+      "repository_absolute_path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive",
+      "rgbd_loader_candidates": [
+        "src/entities/datasets.py"
+      ],
+      "submodules": {},
+      "tracking_disable_support": "task-owned launcher bypasses Tracker.track while preserving Mapper.map",
+      "tum_configs": [
+        "configs/TUM_RGBD/tum_rgbd.yaml"
+      ]
+    },
+    "splatam": {
+      "asset_status": "FRONTEND_ASSET_AVAILABLE",
+      "branch": "official_archive",
+      "checkpoint_format": "params.npz",
+      "conda_environment": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1",
+      "dirty_status": false,
+      "environment_python": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/bin/python",
+      "existing_replica_artifacts": [],
+      "existing_tum_artifacts": [],
+      "file_count": 93,
+      "frontend": "SplaTAM",
+      "gaussian_export_candidates": [
+        "utils/slam_helpers.py"
+      ],
+      "git_remote": "https://github.com/spla-tam/SplaTAM.git",
+      "git_worktree": "not_applicable_official_archive",
+      "gt_pose_support": "scripts/gaussian_splatting.py injects GT w2c and freezes camera learning rates",
+      "license": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive/LICENSE",
+      "license_sha256": "3de56b2eb26a6e32ff21595051cb713487d950e317add7c80111c897180fec65",
+      "map_only_support": true,
+      "official_commit": "da6bbcd24c248dc884ac7f49d62e91b841b26ccc",
+      "official_replica_configs": [
+        "configs/data/replica.yaml",
+        "configs/data/replica_v2.yaml",
+        "configs/replica/replica_eval.py",
+        "datasets/gradslam_datasets/replica.py"
+      ],
+      "readme": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive/README.md",
+      "readme_sha256": "fbf7ea8079b5a43c9bdf4c97549d5404fc01baa8fb885e6002cf38101fd83050",
+      "renderer_candidates": [
+        "datasets/gradslam_datasets/datautils.py",
+        "datasets/gradslam_datasets/geometryutils.py",
+        "utils/common_utils.py",
+        "utils/graphics_utils.py",
+        "utils/slam_helpers.py"
+      ],
+      "repository_absolute_path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive",
+      "rgbd_loader_candidates": [
+        "configs/iphone/dataset.py",
+        "datasets/gradslam_datasets/basedataset.py",
+        "scripts/nerfcapture2dataset.py"
+      ],
+      "submodules": {
+        "diff-gaussian-rasterization-w-depth.git": "cb65e4b86bc3bd8ed42174b72a62e8d3a3a71110"
+      },
+      "tracking_disable_support": "offline map-only entry has no pose optimizer when GT pose learning rates are zero",
+      "tum_configs": [
+        "configs/tum/tum_eval.py",
+        "datasets/gradslam_datasets/tum.py"
+      ]
+    }
+  },
+  "registered_official_archive_root": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1",
+  "status": "PASS"
+}

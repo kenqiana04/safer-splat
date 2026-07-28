@@ -1,0 +1,12 @@
+# Server-only scientific outputs
+server_sync/
+checkpoints/
+canonical_exports/*.npy
+canonical_exports/**/*.npy
+raw_renders/
+logs/
+tmp/
+*.ckpt
+*.pt
+*.pth
+__pycache__/

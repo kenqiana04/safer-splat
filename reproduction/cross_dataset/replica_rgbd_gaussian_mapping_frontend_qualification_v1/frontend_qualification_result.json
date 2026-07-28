@@ -1,0 +1,42 @@
+{
+  "claim_boundary": "Frozen GT-pose map-only pilot only; no full 270-frame mapping, official Replica eval, navigation, CBF-QP, Start-Safe, Risk-Aware, Recovery/V4-C, or TUM execution.",
+  "final_decision": "DO_NOT_START_REPLICA_FULL_MAP_TRAINING",
+  "final_status": "NO_REPLICA_GAUSSIAN_FRONTEND_QUALIFIED",
+  "frontends": {
+    "gaussian_slam": {
+      "qualified": false,
+      "stages": {
+        "asset": "FRONTEND_ASSET_AVAILABLE",
+        "capability": "FRONTEND_CAPABILITY_GATE_PASS",
+        "config": "FRONTEND_CONFIG_NOT_QUALIFIED",
+        "environment": "FRONTEND_ENVIRONMENT_READY",
+        "export": "NOT_AUTHORIZED_DUE_TO_QUALIFICATION_PILOT",
+        "g0": "NOT_AUTHORIZED_DUE_TO_COMMON_EVALUATION",
+        "geometry": "NOT_AUTHORIZED_DUE_TO_CANONICAL_EXPORT",
+        "pilot": "NOT_AUTHORIZED_DUE_TO_SMOKE",
+        "smoke": "SMOKE_ALGORITHM_FAILURE",
+        "smoke_export": "NOT_EXECUTED",
+        "smoke_geometry": "NOT_EXECUTED",
+        "structure": "NOT_AUTHORIZED_DUE_TO_CANONICAL_EXPORT"
+      }
+    },
+    "splatam": {
+      "qualified": false,
+      "stages": {
+        "asset": "FRONTEND_ASSET_AVAILABLE",
+        "capability": "FRONTEND_CAPABILITY_GATE_PASS",
+        "config": "FRONTEND_CONFIG_QUALIFIED",
+        "environment": "FRONTEND_ENVIRONMENT_READY",
+        "export": "NOT_AUTHORIZED_DUE_TO_QUALIFICATION_PILOT",
+        "g0": "NOT_AUTHORIZED_DUE_TO_COMMON_EVALUATION",
+        "geometry": "NOT_AUTHORIZED_DUE_TO_CANONICAL_EXPORT",
+        "pilot": "NOT_AUTHORIZED_DUE_TO_SMOKE",
+        "smoke": "SMOKE_RENDER_FAILURE",
+        "smoke_export": "CANONICAL_EXPORT_PASS",
+        "smoke_geometry": "SMOKE_RENDER_FAILURE",
+        "structure": "NOT_AUTHORIZED_DUE_TO_CANONICAL_EXPORT"
+      }
+    }
+  },
+  "recommended_next_task": "DIAGNOSE_REPLICA_GAUSSIAN_MAPPING_GEOMETRY_FAILURE_V1"
+}

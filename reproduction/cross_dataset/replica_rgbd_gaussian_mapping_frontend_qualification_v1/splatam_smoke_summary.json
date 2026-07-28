@@ -1,0 +1,51 @@
+{
+  "canonical_export_for_smoke": "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/canonical_exports/splatam/smoke",
+  "checkpoint": "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/splatam/smoke/run/params.npz",
+  "checkpoint_exists": true,
+  "frame_ids": [
+    "frame_0267",
+    "frame_0268",
+    "frame_0015",
+    "frame_0016",
+    "frame_0198",
+    "frame_0199",
+    "frame_0225",
+    "frame_0226",
+    "frame_0246",
+    "frame_0247",
+    "frame_0075",
+    "frame_0076",
+    "frame_0099",
+    "frame_0100",
+    "frame_0102",
+    "frame_0103"
+  ],
+  "frontend": "SplaTAM",
+  "gt_pose": true,
+  "infrastructure_events": [],
+  "mapping_frame_count": 16,
+  "pose_update_count": 0,
+  "record_repair_only": true,
+  "record_repair_reason": "shared evaluation result existed before update_stage keyword collision; no render or map rerun",
+  "runtime": {
+    "command": [
+      "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/bin/python",
+      "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/splatam/launchers/smoke.py",
+      "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive",
+      "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/splatam/configs/smoke.py"
+    ],
+    "gpu_memory_before_mib": 6,
+    "gpu_memory_mean_mib": 3988.086956521739,
+    "gpu_memory_peak_mib": 4504,
+    "log": "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/logs/splatam_smoke.log",
+    "returncode": 0,
+    "timeout": false,
+    "wall_seconds": 925.2347681522369
+  },
+  "scale_fitting": false,
+  "shared_holdout_render": "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/geometry_evaluation/splatam_smoke_geometry_evaluation.json",
+  "sim3": false,
+  "stage": "smoke",
+  "status": "SMOKE_RENDER_FAILURE",
+  "tracking_count": 0
+}

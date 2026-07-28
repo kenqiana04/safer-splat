@@ -1,0 +1,24 @@
+{
+  "frontends": {
+    "gaussian_slam": {
+      "classification": "frozen core frontend hyperparameter incompatible with frozen V3 adapter geometry",
+      "exception": "ValueError: Cannot take a larger sample than population when replace=False",
+      "first_failure_log": "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/logs/gaussian_slam_smoke.log",
+      "frontend": "Gaussian-SLAM",
+      "maximum_available_pixels": 307200,
+      "no_scientific_rerun": true,
+      "official_config_parameter": "mapping.new_submap_points_num",
+      "official_config_value": 600000,
+      "reason": "protocol permits a retry only with the same config; changing the core sampling parameter is forbidden",
+      "replica_v3_adapter_resolution": [
+        640,
+        480
+      ],
+      "retry_authorized": false,
+      "status": "FRONTEND_CONFIG_NOT_QUALIFIED"
+    },
+    "splatam": {
+      "status": "FRONTEND_CONFIG_QUALIFIED"
+    }
+  }
+}
