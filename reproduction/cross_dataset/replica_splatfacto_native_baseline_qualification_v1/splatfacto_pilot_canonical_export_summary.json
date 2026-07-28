@@ -1,0 +1,50 @@
+{
+  "arrays": {
+    "means_world_m": {
+      "dtype": "float32",
+      "sha256": "6b1b5accb1ff0788f7f796c90dcd48398ad5dcab50104e4393acb29dc57a5a32",
+      "shape": [
+        1396211,
+        3
+      ]
+    },
+    "opacities": {
+      "dtype": "float32",
+      "sha256": "50ee89f0289edceeabad98048d57fb13c1421e2fd7fb923a9214c88512c0feb8",
+      "shape": [
+        1396211
+      ]
+    },
+    "quaternions_wxyz": {
+      "dtype": "float32",
+      "sha256": "bb2798611ed617a0ab80d115b543cd2f4d620e6b38a8a7257cee08e61c790e05",
+      "shape": [
+        1396211,
+        4
+      ]
+    },
+    "scales_linear_m": {
+      "dtype": "float32",
+      "sha256": "de7b889b4eef4eb82b03a27e629000a9f0fe18d0c3a79e2ce78407b0383eac57",
+      "shape": [
+        1396211,
+        3
+      ]
+    },
+    "sh_coefficients": {
+      "dtype": "float32",
+      "sha256": "c659d1019a39cfbf8eebce468c12106fb5a0fe110ddbd5af89803bc21b6c93ce",
+      "shape": [
+        1396211,
+        16,
+        3
+      ]
+    }
+  },
+  "canonical_root": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/canonical_export/qualification_pilot",
+  "gaussian_count": 1396211,
+  "identity": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/canonical_export/qualification_pilot/canonical_map_identity.json",
+  "no_filtering": true,
+  "status": "SPLATFACTO_PILOT_CANONICAL_EXPORT_PASS",
+  "valid": true
+}

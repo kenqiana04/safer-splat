@@ -1,0 +1,59 @@
+{
+  "allowed_task_owned_overrides": [
+    "dataset path",
+    "output path",
+    "run name",
+    "max iteration",
+    "eval/save interval",
+    "metric dataparser fields"
+  ],
+  "authority": {
+    "background_color": "random",
+    "camera_optimizer_mode": "off",
+    "dataparser_class": "nerfstudio.data.dataparsers.nerfstudio_dataparser.NerfstudioDataParserConfig",
+    "densification": {
+      "cull_alpha_thresh": 0.1,
+      "cull_scale_thresh": 0.5,
+      "densify_grad_thresh": 0.0008,
+      "refine_every": 100,
+      "stop_split_at": 15000,
+      "warmup_length": 500
+    },
+    "load_3D_points": true,
+    "max_num_iterations": 30000,
+    "method_class": "nerfstudio.models.splatfacto.SplatfactoModelConfig",
+    "method_name": "splatfacto",
+    "mixed_precision": false,
+    "optimizer_keys": [
+      "camera_opt",
+      "features_dc",
+      "features_rest",
+      "means",
+      "opacities",
+      "quats",
+      "scales"
+    ],
+    "random_init": false,
+    "seed": 42,
+    "sh_degree": 3,
+    "steps_per_eval_image": 100,
+    "steps_per_save": 2000
+  },
+  "authority_level": 1,
+  "core_parameters_unmodified": true,
+  "probe": {
+    "command": [
+      "/disk1/zlab/conda_envs/splatnav/bin/python",
+      "-B",
+      "-c",
+      "import yaml,json\nfrom pathlib import Path\np=Path(r'/disk1/zlab/projects/splatnav/outputs/flight/splatfacto/2024-09-12_172434/config.yml')\nc=yaml.load(p.read_text(),Loader=yaml.Loader)\nd=c.pipeline.datamanager.dataparser\nm=c.pipeline.model\nout={'method_name':c.method_name,'method_class':type(m).__module__+'.'+type(m).__name__,'dataparser_class':type(d).__module__+'.'+type(d).__name__,'max_num_iterations':c.max_num_iterations,'steps_per_save':c.steps_per_save,'steps_per_eval_image':c.steps_per_eval_image,'mixed_precision':c.mixed_precision,'seed':c.machine.seed,'camera_optimizer_mode':m.camera_optimizer.mode,'background_color':m.background_color,'sh_degree':m.sh_degree,'random_init':m.random_init,'load_3D_points':d.load_3D_points,'optimizer_keys':sorted(c.optimizers.keys()),'densification':{'warmup_length':m.warmup_length,'refine_every':m.refine_every,'densify_grad_thresh':m.densify_grad_thresh,'cull_alpha_thresh':m.cull_alpha_thresh,'cull_scale_thresh':m.cull_scale_thresh,'stop_split_at':m.stop_split_at}}\nprint(json.dumps(out,sort_keys=True))"
+    ],
+    "returncode": 0,
+    "stdout": "{\"background_color\": \"random\", \"camera_optimizer_mode\": \"off\", \"dataparser_class\": \"nerfstudio.data.dataparsers.nerfstudio_dataparser.NerfstudioDataParserConfig\", \"densification\": {\"cull_alpha_thresh\": 0.1, \"cull_scale_thresh\": 0.5, \"densify_grad_thresh\": 0.0008, \"refine_every\": 100, \"stop_split_at\": 15000, \"warmup_length\": 500}, \"load_3D_points\": true, \"max_num_iterations\": 30000, \"method_class\": \"nerfstudio.models.splatfacto.SplatfactoModelConfig\", \"method_name\": \"splatfacto\", \"mixed_precision\": false, \"optimizer_keys\": [\"camera_opt\", \"features_dc\", \"features_rest\", \"means\", \"opacities\", \"quats\", \"scales\"], \"random_init\": false, \"seed\": 42, \"sh_degree\": 3, \"steps_per_eval_image\": 100, \"steps_per_save\": 2000}\n",
+    "timeout": false,
+    "wall_seconds": 4.882128953933716
+  },
+  "source_path": "/disk1/zlab/projects/splatnav/outputs/flight/splatfacto/2024-09-12_172434/config.yml",
+  "source_sha256": "7e83fb0711a1decc55518e66e43a34395188c2e2a2de0e5ec24d6bb510fb7b8d",
+  "status": "SPLATFACTO_NATIVE_CONFIG_AUTHORITY_FROZEN"
+}

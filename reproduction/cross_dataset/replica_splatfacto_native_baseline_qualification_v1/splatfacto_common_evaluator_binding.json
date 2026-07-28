@@ -1,0 +1,11 @@
+{
+  "available": true,
+  "frozen_pr56_contract": "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/common_evaluator/common_gaussian_evaluator_contract.json",
+  "frozen_pr56_contract_sha256": "60ee76051d95ba18e7434b254df9ebaccb2de02095d57beb4451fab36155f736",
+  "frozen_pr56_evaluator_source": "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/evaluate_replica_frontend_geometry.py",
+  "frozen_pr56_evaluator_source_sha256": "71df89297de0cbfb688cbb4d359486ea20a38a1dbbc503588b7df3a094a3f476",
+  "rendering_and_metric_semantics_changed": false,
+  "required_regression": "PR56 SplaTAM smoke canonical map metric values must remain exactly unchanged; only canonical-map schema adaptation is permitted.",
+  "schema_adapter_only": true,
+  "status": "SPLATFACTO_COMMON_EVALUATOR_BOUND"
+}

@@ -1,0 +1,64 @@
+{
+  "adapter": {
+    "holdout_frame_ids": [
+      "frame_0269",
+      "frame_0017",
+      "frame_0200",
+      "frame_0227",
+      "frame_0248",
+      "frame_0077",
+      "frame_0101",
+      "frame_0104"
+    ],
+    "mapping_frame_ids": [
+      "frame_0267",
+      "frame_0268",
+      "frame_0015",
+      "frame_0016",
+      "frame_0198",
+      "frame_0199",
+      "frame_0225",
+      "frame_0226",
+      "frame_0246",
+      "frame_0247",
+      "frame_0075",
+      "frame_0076",
+      "frame_0099",
+      "frame_0100",
+      "frame_0102",
+      "frame_0103"
+    ],
+    "name": "smoke",
+    "root": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/pilot_adapter/smoke",
+    "sha256": "eb6435d5b2ea8b46496c58c216b9f48c13cf78b8a812bc0bf5a5b68859019870",
+    "symlink_count": 24,
+    "transforms": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/pilot_adapter/smoke/transforms.json"
+  },
+  "attempt": 1,
+  "authority_config": "/disk1/zlab/projects/splatnav/outputs/flight/splatfacto/2024-09-12_172434/config.yml",
+  "authority_config_sha256": "7e83fb0711a1decc55518e66e43a34395188c2e2a2de0e5ec24d6bb510fb7b8d",
+  "camera_optimization": "off",
+  "checkpoints": [
+    {
+      "path": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/smoke/outputs_infrastructure_retry_1_cuda118/replica_splatfacto_native_smoke/splatfacto/seed_20260728/nerfstudio_models/step-000001999.ckpt",
+      "sha256": "4a25a3784ee9d1ca3a1d3171687c051ccd345967418a46549560a4d2db14a0cb",
+      "size_bytes": 138318226
+    }
+  ],
+  "depth_supervision": false,
+  "log": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/smoke/logs/train_infrastructure_retry_1_cuda118.log",
+  "log_sha256": "a9d1eb8200f1c07f767856d4b827a4762ec40a296b1399a961b328df09c32965",
+  "max_num_iterations": 2000,
+  "official_eval_frames": 0,
+  "physical_gpu": 1,
+  "pose_update": false,
+  "returncode": 0,
+  "runtime_config": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/smoke/outputs_infrastructure_retry_1_cuda118/replica_splatfacto_native_smoke/splatfacto/seed_20260728/config.yml",
+  "runtime_config_sha256": "f79400a3fa68637d993e6207b81d363090fbf66a68caa5e4ba20ee0133a8190c",
+  "seed": 20260728,
+  "stage": "smoke",
+  "status": "SPLATFACTO_SMOKE_OPERATIONAL_PASS",
+  "timed_out": false,
+  "wall_clock_cap_minutes": 45,
+  "wall_seconds": 71.92468595504761
+}

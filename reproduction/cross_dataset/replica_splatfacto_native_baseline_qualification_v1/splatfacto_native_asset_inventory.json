@@ -1,0 +1,30 @@
+{
+  "authority_config": "/disk1/zlab/projects/splatnav/outputs/flight/splatfacto/2024-09-12_172434/config.yml",
+  "authority_config_sha256": "7e83fb0711a1decc55518e66e43a34395188c2e2a2de0e5ec24d6bb510fb7b8d",
+  "bounded_search_roots": [
+    "/disk1/zlab/projects",
+    "/disk1/zlab/maintenance_records",
+    "/disk1/zlab/conda_envs",
+    "/disk1/zlab/cross_dataset_assets"
+  ],
+  "checkpoint_format": "Nerfstudio TrainerConfig YAML plus step-000029999.ckpt",
+  "environment_mutated": false,
+  "environment_python": "/disk1/zlab/conda_envs/splatnav/bin/python",
+  "native_loader_entry": "nerfstudio.utils.eval_utils.eval_setup",
+  "native_loader_probe": {
+    "command": [
+      "/disk1/zlab/conda_envs/splatnav/bin/python",
+      "-B",
+      "-c",
+      "from pathlib import Path\nfrom nerfstudio.utils.eval_utils import eval_setup\nc,p,k,s=eval_setup(Path(r'/disk1/zlab/projects/splatnav/outputs/flight/splatfacto/2024-09-12_172434/config.yml'),test_mode='inference')\nprint(type(p.model).__module__)\nprint(type(p.model).__name__)\nprint(k)\nprint(s)"
+    ],
+    "returncode": 0,
+    "stdout": "Loading latest checkpoint from load_dir\n✅ Done loading checkpoint from outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt\nnerfstudio.models.splatfacto\nSplatfactoModel\noutputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt\n29999\n",
+    "timeout": false,
+    "wall_seconds": 13.995965242385864
+  },
+  "official_checkpoint": "/disk1/zlab/projects/splatnav/outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt",
+  "official_checkpoint_sha256": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+  "splatnav_repository": "/disk1/zlab/projects/splatnav",
+  "status": "SAFER_NATIVE_SPLATFACTO_ASSET_AVAILABLE"
+}

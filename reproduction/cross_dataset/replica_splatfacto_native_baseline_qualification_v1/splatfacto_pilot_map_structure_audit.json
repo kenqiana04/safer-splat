@@ -1,0 +1,58 @@
+{
+  "covariance_eigenvalues": {
+    "max": 6210.27392578125,
+    "median": 3.637381087173708e-05,
+    "min": 3.1001693314770255e-18,
+    "p1": 1.213763478613572e-11,
+    "p99": 0.01717041105031985
+  },
+  "duplicate_mean_indication": 3,
+  "extreme_scale_count": 10978,
+  "gaussian_count": 1396211,
+  "map_camera_frame_relation": "same metric V3 world; identity dataparser transform; no scale conversion beyond exp(log scales)",
+  "map_file_size_bytes": 329506436,
+  "means_bbox_m": [
+    [
+      -5.815893650054932,
+      -6.105630397796631,
+      -5.726438045501709
+    ],
+    [
+      9.2760009765625,
+      9.495981216430664,
+      11.417733192443848
+    ]
+  ],
+  "nonfinite_count": 0,
+  "opacity": {
+    "max": 1.0,
+    "median": 0.47307565808296204,
+    "min": 0.0008214688277803361
+  },
+  "quaternion_norm": {
+    "max": 1.0000001192092896,
+    "median": 1.0,
+    "min": 0.9999998211860657
+  },
+  "scale_certification": {
+    "camera_translation_ratio_one": true,
+    "dataparser_scale_one": true,
+    "median_depth_ratio_in_range": false,
+    "no_auto_orient": true,
+    "no_auto_scale": true,
+    "no_centering": true,
+    "no_icp": true,
+    "no_posthoc_scale_fitting": true,
+    "no_scene_contraction": true,
+    "no_sim3": true
+  },
+  "scale_certification_pass": false,
+  "scales_m": {
+    "max": 78.80529022216797,
+    "median": 0.0060310703702270985,
+    "min": 1.7607297841948366e-09,
+    "p1": 3.4839108684536766e-06,
+    "p99": 0.13103591322898933
+  },
+  "status": "SPLATFACTO_PILOT_MAP_STRUCTURE_FINITE"
+}

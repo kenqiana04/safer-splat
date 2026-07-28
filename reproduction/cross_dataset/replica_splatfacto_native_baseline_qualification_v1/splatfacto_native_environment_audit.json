@@ -1,0 +1,24 @@
+{
+  "environment_modified": false,
+  "environment_python": "/disk1/zlab/conda_envs/splatnav/bin/python",
+  "online_upgrade": false,
+  "probe": {
+    "command": [
+      "/disk1/zlab/conda_envs/splatnav/bin/python",
+      "-B",
+      "-c",
+      "import sys,torch,nerfstudio,gsplat,importlib.metadata as m\nprint(sys.version)\nprint(torch.__version__)\nprint(torch.version.cuda)\nprint(m.version('nerfstudio'))\nprint(getattr(gsplat,'__version__','unknown'))\nprint(nerfstudio.__file__)\nprint(gsplat.__file__)"
+    ],
+    "returncode": 0,
+    "stdout": "3.8.20 (default, Oct  3 2024, 15:24:27) \n[GCC 11.2.0]\n2.1.2+cu118\n11.8\n1.1.5\n1.4.0\n/disk1/zlab/conda_envs/splatnav/lib/python3.8/site-packages/nerfstudio/__init__.py\n/disk1/zlab/conda_envs/splatnav/lib/python3.8/site-packages/gsplat/__init__.py\n",
+    "timeout": false,
+    "wall_seconds": 1.7781333923339844
+  },
+  "repository": "/disk1/zlab/projects/splatnav",
+  "required_native_packages": [
+    "nerfstudio",
+    "gsplat",
+    "torch"
+  ],
+  "status": "SPLATFACTO_NATIVE_ENVIRONMENT_READY"
+}

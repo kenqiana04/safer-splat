@@ -1,0 +1,42 @@
+{
+  "array_shapes": {
+    "means": [
+      1396211,
+      3
+    ],
+    "opacities": [
+      1396211
+    ],
+    "quats": [
+      1396211,
+      4
+    ],
+    "scales": [
+      1396211,
+      3
+    ]
+  },
+  "finite": true,
+  "loaded_gaussian_count": 1396211,
+  "loader": "splat.gsplat_utils.GSplatLoader.load_gsplat_from_nerfstudio",
+  "opacity_representation": "native sigmoid(logit opacity); canonical export uses same sigmoid conversion",
+  "peak_gpu_memory_not_sampled": "loader-only task; no navigation",
+  "quaternion_order": "WXYZ",
+  "runtime_config": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/qualification_pilot/outputs/replica_splatfacto_native_qualification_pilot/splatfacto/seed_20260728/config.yml",
+  "runtime_config_sha256": "9e1e6e81d2ecdfc89e4765de9764313b1c6152a83cfe331ecb397d912d88771c",
+  "safer_core_modified": false,
+  "scale_representation": "native log scales exponentiated by SAFER loader; canonical export uses the same exp conversion",
+  "source_checkpoint": {
+    "path": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/qualification_pilot/outputs/replica_splatfacto_native_qualification_pilot/splatfacto/seed_20260728/nerfstudio_models/step-000029999.ckpt",
+    "sha256": "575fe8422d98ac3649d41de99384d75c0b8a84f6d918a8eedb7845163483c313",
+    "size_bytes": 998418514
+  },
+  "source_to_canonical_exact_array_match": {
+    "means": true,
+    "opacities": true,
+    "quats": true,
+    "scales": true
+  },
+  "status": "SPLATFACTO_SAFER_NATIVE_LOADER_PASS",
+  "world_frame": "Replica V3 metric world; no coordinate conversion"
+}

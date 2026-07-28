@@ -1,0 +1,50 @@
+{
+  "arrays": {
+    "means_world_m": {
+      "dtype": "float32",
+      "sha256": "c60239afd2f50e6260d480e5a8c69177a21e86d384b6463f14d872ff19507a1c",
+      "shape": [
+        181380,
+        3
+      ]
+    },
+    "opacities": {
+      "dtype": "float32",
+      "sha256": "5413ab6e309d600ba2058833231e2b60a477d76b05d41a97007dd31b9eb4c3cc",
+      "shape": [
+        181380
+      ]
+    },
+    "quaternions_wxyz": {
+      "dtype": "float32",
+      "sha256": "b5de7a539bad12f361a2e4cb87d132a20a790c81eebbd96fe290ce66f11643cd",
+      "shape": [
+        181380,
+        4
+      ]
+    },
+    "scales_linear_m": {
+      "dtype": "float32",
+      "sha256": "99c2a98cd6ffc0ff9e0df4d293599fb56a3a9c431426aea2db71fdc40a957410",
+      "shape": [
+        181380,
+        3
+      ]
+    },
+    "sh_coefficients": {
+      "dtype": "float32",
+      "sha256": "78f79e0be1450312462f98ba3451283db335e60a370db127d0d6ffb90740d551",
+      "shape": [
+        181380,
+        16,
+        3
+      ]
+    }
+  },
+  "canonical_root": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/canonical_export/smoke",
+  "gaussian_count": 181380,
+  "identity": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/canonical_export/smoke/canonical_map_identity.json",
+  "no_filtering": true,
+  "status": "SPLATFACTO_SMOKE_CANONICAL_EXPORT_PASS",
+  "valid": true
+}
