@@ -1,0 +1,60 @@
+{
+  "arrays": {
+    "appearance": {
+      "dtype": "float32",
+      "finite": true,
+      "sha256": "48ba67a483d51596834453cf05573a1e5c3806bedab3022d9f4cbe1fb57f8524",
+      "shape": [
+        2135123,
+        3
+      ]
+    },
+    "means_world_m": {
+      "dtype": "float32",
+      "finite": true,
+      "sha256": "5adedd491ea752c870933c4d73b02de1ae19369e8ca0f86fbe89fb523f5095bd",
+      "shape": [
+        2135123,
+        3
+      ]
+    },
+    "opacities": {
+      "dtype": "float32",
+      "finite": true,
+      "sha256": "afd57caf4a14d3a9e1197db1f7fd6f77170e35c46379ce85da5dd0c07867279e",
+      "shape": [
+        2135123
+      ]
+    },
+    "quaternions_wxyz": {
+      "dtype": "float32",
+      "finite": true,
+      "sha256": "a252159424c04f7d564ef8c4abecd64ed9fee9cabbd43a5938f54df44b5d8714",
+      "shape": [
+        2135123,
+        4
+      ]
+    },
+    "scales_linear_m": {
+      "dtype": "float32",
+      "finite": true,
+      "sha256": "1d3d87e68b707e846b7a7460aaf16eadcd6197e1a014a3fb833026a1e152b2ab",
+      "shape": [
+        2135123,
+        3
+      ]
+    }
+  },
+  "canonical_root": "/disk1/zlab/maintenance_records/replica_splatam_protocol_conformance_pilot_v1/canonical_export/unfiltered",
+  "coordinate_transform": "dataset_world_from_relative_frontend_world=first_mapping_c2w_opencv",
+  "gaussian_count": 2135123,
+  "no_downsampling": true,
+  "no_filtering": true,
+  "no_pruning": true,
+  "no_reoptimization": true,
+  "scales_positive": true,
+  "source_checkpoint": "/disk1/zlab/maintenance_records/replica_splatam_protocol_conformance_pilot_v1/pilot_run/run/params.npz",
+  "source_checkpoint_sha256": "4520bd9faf8f260438ff7ad55ab13b46437cdfe5c076f1600790cea5bc0547c5",
+  "status": "CANONICAL_EXPORT_PASS",
+  "world_unit": "metre"
+}

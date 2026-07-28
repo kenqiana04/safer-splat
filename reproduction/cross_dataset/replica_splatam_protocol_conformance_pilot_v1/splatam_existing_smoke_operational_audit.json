@@ -1,0 +1,175 @@
+{
+  "array_checks": {
+    "appearance": {
+      "finite": true,
+      "sha256": "b631c816998fd21eef7bd257c8d0cb47dbd0f98ad570dfd4cc2d0d051aa5c274",
+      "shape": [
+        1764423,
+        3
+      ]
+    },
+    "means_world_m": {
+      "finite": true,
+      "sha256": "8af0c3d05ce9eb447fd301017067152aacb63a272c912ce15ac3bfa9c40c5985",
+      "shape": [
+        1764423,
+        3
+      ]
+    },
+    "opacities": {
+      "finite": true,
+      "sha256": "9c57c7718473e9b637d0e9b09888c21e90ef51e14d801c1ce8bfe1ec2ef89d8c",
+      "shape": [
+        1764423
+      ]
+    },
+    "quaternions_wxyz": {
+      "finite": true,
+      "sha256": "6d0d33e64f18101116eed26abbeb9fbeb0cab4eaccb9c3bd0994629c0b3f5bfe",
+      "shape": [
+        1764423,
+        4
+      ]
+    },
+    "scales_linear_m": {
+      "finite": true,
+      "sha256": "76dc3cb3cbececf4ab7494afabc61f2747d8a7a002e72215faa899fef2708772",
+      "shape": [
+        1764423,
+        3
+      ]
+    }
+  },
+  "canonical_export_identity": {
+    "arrays": {
+      "appearance": {
+        "dtype": "float32",
+        "sha256": "b631c816998fd21eef7bd257c8d0cb47dbd0f98ad570dfd4cc2d0d051aa5c274",
+        "shape": [
+          1764423,
+          3
+        ]
+      },
+      "means_world_m": {
+        "dtype": "float32",
+        "sha256": "8af0c3d05ce9eb447fd301017067152aacb63a272c912ce15ac3bfa9c40c5985",
+        "shape": [
+          1764423,
+          3
+        ]
+      },
+      "opacities": {
+        "dtype": "float32",
+        "sha256": "9c57c7718473e9b637d0e9b09888c21e90ef51e14d801c1ce8bfe1ec2ef89d8c",
+        "shape": [
+          1764423
+        ]
+      },
+      "quaternions_wxyz": {
+        "dtype": "float32",
+        "sha256": "6d0d33e64f18101116eed26abbeb9fbeb0cab4eaccb9c3bd0994629c0b3f5bfe",
+        "shape": [
+          1764423,
+          4
+        ]
+      },
+      "scales_linear_m": {
+        "dtype": "float32",
+        "sha256": "76dc3cb3cbececf4ab7494afabc61f2747d8a7a002e72215faa899fef2708772",
+        "shape": [
+          1764423,
+          3
+        ]
+      }
+    },
+    "canonical_root": "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/canonical_exports/splatam/smoke",
+    "frontend": "SplaTAM",
+    "gaussian_count": 1764423,
+    "identity_path": "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/canonical_exports/splatam/smoke/canonical_map_identity.json",
+    "no_filtering": true,
+    "stage": "smoke",
+    "status": "CANONICAL_EXPORT_PASS"
+  },
+  "checkpoint": "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/splatam/smoke/run/params.npz",
+  "checkpoint_keys_and_shapes": {
+    "cam_trans": [
+      1,
+      3,
+      16
+    ],
+    "cam_unnorm_rots": [
+      1,
+      4,
+      16
+    ],
+    "gt_w2c_all_frames": [
+      16,
+      4,
+      4
+    ],
+    "intrinsics": [
+      4,
+      4
+    ],
+    "log_scales": [
+      1764423,
+      1
+    ],
+    "logit_opacities": [
+      1764423,
+      1
+    ],
+    "means3D": [
+      1764423,
+      3
+    ],
+    "org_height": [],
+    "org_width": [],
+    "rgb_colors": [
+      1764423,
+      3
+    ],
+    "unnorm_rotations": [
+      1764423,
+      4
+    ],
+    "w2c": [
+      4,
+      4
+    ]
+  },
+  "checkpoint_reload": true,
+  "checkpoint_sha256": "5d763978eb267ff48ccc96c586c7936626bf4b7aed5066e21f629832f02bb680",
+  "gaussian_count": 1764423,
+  "historical_checkpoint_modified": false,
+  "holdout_render_count": 8,
+  "holdout_rerender_metrics": {
+    "absrel": 0.21556426817551255,
+    "delta1": 0.6691799516839645,
+    "delta2": 0.7933246104831444,
+    "delta3": 0.8946188347362878,
+    "median_depth_ratio": 0.9672450348734856,
+    "nonfinite_prediction_count": 0,
+    "psnr": 15.725835798288253,
+    "rmse": 0.6422863872721791,
+    "rmse_log": 0.5790505595505238,
+    "sqrel": 0.22711597080342472,
+    "ssim": 0.3575121503230737,
+    "valid_predicted_depth_fraction": 0.9892537434895833,
+    "valid_rgb_coverage": 1.0
+  },
+  "metric_pose_contract_unchanged": true,
+  "nonfinite_prediction_count": 0,
+  "pose_update_count": 0,
+  "regression_abs_diff": {
+    "absrel": 0.0,
+    "delta1": 0.0,
+    "median_depth_ratio": 0.0,
+    "valid_predicted_depth_fraction": 0.0
+  },
+  "renderer_exception_count": 0,
+  "scales_positive": true,
+  "smoke_training_rerun_count": 0,
+  "status": "SPLATAM_EXISTING_SMOKE_OPERATIONAL_PASS",
+  "tracking_count": 0
+}

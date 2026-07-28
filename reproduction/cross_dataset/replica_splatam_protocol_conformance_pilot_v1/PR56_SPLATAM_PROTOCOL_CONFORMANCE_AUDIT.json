@@ -1,0 +1,31 @@
+{
+  "canonical_export_status": "CANONICAL_EXPORT_PASS",
+  "checkpoint_exists": true,
+  "classification": "SPLATAM_SMOKE_TECHNICALLY_OPERATIONAL_GEOMETRY_GATE_MISCLASSIFIED",
+  "classification_script_maps_geometry_fail_to_smoke_render_failure": true,
+  "geometry_gate_pass": false,
+  "geometry_metrics": {
+    "absrel": 0.21556426817551255,
+    "delta1": 0.6691799516839645,
+    "delta2": 0.7933246104831444,
+    "delta3": 0.8946188347362878,
+    "median_depth_ratio": 0.9672450348734856,
+    "nonfinite_prediction_count": 0,
+    "psnr": 15.725835798288253,
+    "rmse": 0.6422863872721791,
+    "rmse_log": 0.5790505595505238,
+    "sqrel": 0.22711597080342472,
+    "ssim": 0.3575121503230737,
+    "valid_predicted_depth_fraction": 0.9892537434895833,
+    "valid_rgb_coverage": 1.0
+  },
+  "historical_artifacts_modified": false,
+  "historical_terminal_label": "SMOKE_RENDER_FAILURE",
+  "holdout_render_count": 8,
+  "nonfinite_prediction_count": 0,
+  "pilot_not_authorized_directly_from_smoke_label": true,
+  "renderer_exception_detected": false,
+  "renderer_execution_success": true,
+  "runtime_returncode": 0,
+  "runtime_timeout": false
+}
