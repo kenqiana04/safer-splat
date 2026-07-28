@@ -1,0 +1,29 @@
+{
+  "decision": "CLOSE_SPLATFACTO_NAVIGATION_MAP_ROUTE",
+  "execution_counts": {
+    "splatfacto_g0": 0,
+    "splatfacto_render": 0,
+    "splatfacto_training": 0
+  },
+  "frozen_evidence": {
+    "absrel": 0.603871,
+    "canonical_g0": "PASS",
+    "dataparser_scale": 1,
+    "dataparser_transform": "identity",
+    "delta1": 0.191574,
+    "dual_path_g0": "PASS",
+    "gaussian_count": 1396211,
+    "holdout_frames": 30,
+    "iterations": 30000,
+    "mapping_frames": 60,
+    "median_depth_ratio": 0.666023,
+    "native_g0": "PASS",
+    "native_loader": "PASS",
+    "valid_depth_coverage": 1.0
+  },
+  "retained_role": "SAFER_NATIVE_COMPATIBILITY_AND_NEGATIVE_GEOMETRY_BASELINE",
+  "source_final_decision": "KEEP_SPLATFACTO_AS_NATIVE_COMPATIBILITY_BASELINE_NOT_NAVIGATION_MAP",
+  "source_final_status": "PASS_SPLATFACTO_NATIVE_COMPATIBILITY_ONLY_GEOMETRY_NOT_QUALIFIED",
+  "source_head": "9501da9c4956c4be48ae474d01cf4d6038304e6b",
+  "source_pr": 57
+}

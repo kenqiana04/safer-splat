@@ -1,0 +1,48 @@
+{
+  "covariance_eigenvalues_m2": {
+    "max": 0.6452473566386949,
+    "median": 2.4747056775222204e-05,
+    "min": 3.8326844104896323e-14,
+    "p1": 1.2277105902139834e-10,
+    "p99": 0.002087730657419906
+  },
+  "extreme_scale_count": 55764,
+  "gaussian_count": 2135123,
+  "icp_count": 0,
+  "map_camera_frame_consistent": true,
+  "map_file_size_bytes": 119567528,
+  "means_bbox_m": {
+    "max": [
+      6.331250190734863,
+      5.029723167419434,
+      4.853529930114746
+    ],
+    "min": [
+      -4.719330310821533,
+      -5.445737838745117,
+      -4.165383338928223
+    ]
+  },
+  "nonfinite_count": 0,
+  "opacity": {
+    "max": 0.9999996423721313,
+    "median": 0.8076195120811462,
+    "min": 0.00047566270222887397
+  },
+  "quaternion_norm": {
+    "max": 1.0,
+    "median": 1.0,
+    "min": 0.9999999403953552
+  },
+  "scale_fitting_count": 0,
+  "scales_linear_m": {
+    "max": 0.8032729029655457,
+    "median": 0.0049746413715183735,
+    "min": 1.9577242937884876e-07,
+    "p1": 1.1080210242653266e-05,
+    "p99": 0.04569169133901596
+  },
+  "sim3_count": 0,
+  "source_camera_translation_metric": true,
+  "status": "PASS_SPLATAM_60_FRAME_MAP_STRUCTURE_AUDIT"
+}

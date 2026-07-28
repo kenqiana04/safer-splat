@@ -1,0 +1,53 @@
+{
+  "complete_tree_file_count": 608,
+  "complete_tree_sha256": "24e21d3bccceb0516ed8b9b49b426964f3954ccd0cd804eedd5846baabd66dcb",
+  "content_tree_file_count": 607,
+  "content_tree_sha256": "60a9e0b517ba8e305c4b7ff010bb330c1e38c422c66899398129cce741a06bd0",
+  "contract": {
+    "cx": 319.5,
+    "cy": 239.5,
+    "depth": "uint16_mm_png",
+    "depth_decode_scale_m": 0.001,
+    "fx": 320.0,
+    "fy": 320.0,
+    "height": 480,
+    "poses": "metric_c2w",
+    "rgb": "uint8_rgb_png",
+    "width": 640
+  },
+  "dataset": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering_v3",
+  "depth_count": 300,
+  "expected": {
+    "cbf_utils": "7c6e1300b125cc0a2a950ac2835a1fbe3d0de113",
+    "complete_tree": "24e21d3bccceb0516ed8b9b49b426964f3954ccd0cd804eedd5846baabd66dcb",
+    "content_tree": "60a9e0b517ba8e305c4b7ff010bb330c1e38c422c66899398129cce741a06bd0",
+    "contract": "ddd147f908537165c40a34b412cd21c3cbfb5a0615871375d02adecbbfaec6f7",
+    "distances": "d7f17b67df40e36e458c7a5ed77c4a04659c6f35",
+    "gsplat_utils": "782c38eca50e78c605085b481155ed61e4607336",
+    "manifest_csv": "6db89bc0dafaa5993b452216be1205ec9db0a1d9da23b9bc2b9029fabc2113d6",
+    "manifest_json": "f029de724f33a2788c1f6570b5d730ec06f3223a2d512c38a0427ca9c1d14b2b",
+    "order": "d3dc24d673c97700dc340785425abf8482827c0c81b72a6b33e6972b361c2fb1",
+    "paired20": "380717f0ec39e0e422902573685f5a2838e78dd6efcce500ba71585efd3d82f6",
+    "poses": "0bc952fec3236d117b33d0d62085a60412b96e2174ab0a31c7c5fec204789622",
+    "repo": "da6bbcd24c248dc884ac7f49d62e91b841b26ccc",
+    "safer": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+    "selection": "1beaacaeb8a4126ff4410aae0b296702a7b84dfaee402e15d90d4f5d70741d19",
+    "transforms": "ec50b63a1263d9f6e355a6d5010ab79738d92d59f8bec481150d86f3145d888f"
+  },
+  "frame_count": 300,
+  "observed": {
+    "manifest_csv": "6db89bc0dafaa5993b452216be1205ec9db0a1d9da23b9bc2b9029fabc2113d6",
+    "manifest_json": "f029de724f33a2788c1f6570b5d730ec06f3223a2d512c38a0427ca9c1d14b2b",
+    "registry": "84edb118f01fe1460ff64be4b6ef838f23ed4520740af9f457041b438a7b9f5a",
+    "transforms": "ec50b63a1263d9f6e355a6d5010ab79738d92d59f8bec481150d86f3145d888f",
+    "v3_contract": "ddd147f908537165c40a34b412cd21c3cbfb5a0615871375d02adecbbfaec6f7"
+  },
+  "pairing_complete": true,
+  "pose_array_sha256": "0bc952fec3236d117b33d0d62085a60412b96e2174ab0a31c7c5fec204789622",
+  "rgb_count": 300,
+  "split_counts": {
+    "eval": 30,
+    "train": 270
+  },
+  "status": "PASS_REPLICA_INPUT_IDENTITY"
+}

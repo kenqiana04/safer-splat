@@ -1,0 +1,56 @@
+{
+  "counts": {
+    "cbf_qp_count": 0,
+    "existing_smoke_training_rerun_count": 0,
+    "full_270_frame_training_count": 0,
+    "gaussian_slam_execution_count": 0,
+    "icp_count": 0,
+    "infrastructure_retry_count": 0,
+    "official_eval_usage_count": 0,
+    "pose_optimization_count": 0,
+    "pose_update_count": 0,
+    "recovery_v4c_count": 0,
+    "risk_aware_count": 0,
+    "safer_navigation_count": 0,
+    "scale_fitting_count": 0,
+    "scientific_rerun_count": 0,
+    "sim3_count": 0,
+    "splatam_scientific_pilot_run_count": 1,
+    "splatfacto_execution_count": 0,
+    "start_safe_count": 0,
+    "tracking_count": 0,
+    "tum_rollout_count": 0
+  },
+  "gpu_processes_at_preflight": [],
+  "paired20_manifest_sha256": "380717f0ec39e0e422902573685f5a2838e78dd6efcce500ba71585efd3d82f6",
+  "physical_gpu": 1,
+  "pilot_authorized": true,
+  "pilot_terminal_status": "SPLATAM_60_FRAME_PILOT_COMPLETE",
+  "preflight": {
+    "contract": "PASS_SPLATAM_60_FRAME_PILOT_CONTRACT_FROZEN",
+    "environment": "SPLATAM_ENVIRONMENT_OPERATIONAL",
+    "evaluator": "PASS_SPLATAM_COMMON_EVALUATOR_BINDING",
+    "gates": {
+      "common_evaluator": true,
+      "core_modification_zero": true,
+      "existing_smoke_operational": true,
+      "input_identity": true,
+      "official_eval_zero": true,
+      "registry_identity": true,
+      "repository_environment": true,
+      "smoke_training_rerun_zero": true
+    },
+    "input": "PASS_REPLICA_INPUT_IDENTITY",
+    "pr56": "SPLATAM_SMOKE_TECHNICALLY_OPERATIONAL_GEOMETRY_GATE_MISCLASSIFIED",
+    "smoke": "SPLATAM_EXISTING_SMOKE_OPERATIONAL_PASS"
+  },
+  "stages": {
+    "common_evaluator": "PASS_SPLATAM_COMMON_EVALUATOR_BINDING",
+    "environment": "SPLATAM_ENVIRONMENT_OPERATIONAL",
+    "existing_smoke": "SPLATAM_EXISTING_SMOKE_OPERATIONAL_PASS",
+    "input_identity": "PASS_REPLICA_INPUT_IDENTITY",
+    "pilot_contract": "PASS_SPLATAM_60_FRAME_PILOT_CONTRACT_FROZEN",
+    "pr56_protocol_audit": "SPLATAM_SMOKE_TECHNICALLY_OPERATIONAL_GEOMETRY_GATE_MISCLASSIFIED"
+  },
+  "task": "replica_splatam_protocol_conformance_pilot_v1"
+}

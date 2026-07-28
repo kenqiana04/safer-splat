@@ -1,0 +1,66 @@
+{
+  "allowed_runtime_repairs": [],
+  "archive_identity_method": "PR56 provenance plus README/LICENSE SHA-256 and file-count sentinel",
+  "archive_identity_pass": true,
+  "archive_provenance_commit": "da6bbcd24c248dc884ac7f49d62e91b841b26ccc",
+  "environment_python": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/bin/python",
+  "import_smoke": {
+    "modules": {
+      "cv2": {
+        "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/cv2/__init__.py",
+        "ok": true
+      },
+      "datasets.gradslam_datasets.replica": {
+        "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive/datasets/gradslam_datasets/replica.py",
+        "ok": true
+      },
+      "diff_gaussian_rasterization": {
+        "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py",
+        "ok": true
+      },
+      "natsort": {
+        "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/natsort/__init__.py",
+        "ok": true
+      },
+      "open3d": {
+        "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/open3d/__init__.py",
+        "ok": true
+      },
+      "scripts.gaussian_splatting": {
+        "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive/scripts/gaussian_splatting.py",
+        "ok": true
+      },
+      "torch": {
+        "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/torch/__init__.py",
+        "ok": true
+      },
+      "wandb": {
+        "file": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/wandb/__init__.py",
+        "ok": true
+      }
+    },
+    "runtime": {
+      "cuda": "11.6",
+      "cuda_available": true,
+      "device_count": 1,
+      "python": "3.10.20",
+      "torch": "1.12.1+cu116"
+    }
+  },
+  "package_or_core_mutation_count": 0,
+  "probe": {
+    "command": [
+      "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/bin/python",
+      "-c",
+      "import importlib,json,sys,torch; sys.path.insert(0,'/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive'); names=['torch','cv2','open3d','wandb','natsort','diff_gaussian_rasterization','datasets.gradslam_datasets.replica','scripts.gaussian_splatting']; out={'modules':{}};\nfor n in names:\n try:\n  m=importlib.import_module(n); out['modules'][n]={'ok':True,'file':getattr(m,'__file__',None)}\n except Exception as e: out['modules'][n]={'ok':False,'error':type(e).__name__+': '+str(e)}\nout['runtime']={'python':sys.version.split()[0],'torch':torch.__version__,'cuda':torch.version.cuda,'cuda_available':torch.cuda.is_available(),'device_count':torch.cuda.device_count()}; print(json.dumps(out,sort_keys=True))"
+    ],
+    "returncode": 0,
+    "stdout": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/wandb/sdk/launch/builder/build.py:11: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.\n  import pkg_resources\n/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and will be removed in 0.15, please use 'weights' instead.\n  warnings.warn(\n/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and will be removed in 0.15. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.\n  warnings.warn(msg)\nSystem Paths:\n/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive\n/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive\n\n/disk1/zlab/conda_envs/safer_splat_official/lib/python310.zip\n/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10\n/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/lib-dynload\n/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages\n/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/setuptools/_vendor\n{\"modules\": {\"cv2\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/cv2/__init__.py\", \"ok\": true}, \"datasets.gradslam_datasets.replica\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive/datasets/gradslam_datasets/replica.py\", \"ok\": true}, \"diff_gaussian_rasterization\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py\", \"ok\": true}, \"natsort\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/natsort/__init__.py\", \"ok\": true}, \"open3d\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/open3d/__init__.py\", \"ok\": true}, \"scripts.gaussian_splatting\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive/scripts/gaussian_splatting.py\", \"ok\": true}, \"torch\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/torch/__init__.py\", \"ok\": true}, \"wandb\": {\"file\": \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1/lib/python3.10/site-packages/wandb/__init__.py\", \"ok\": true}}, \"runtime\": {\"cuda\": \"11.6\", \"cuda_available\": true, \"device_count\": 1, \"python\": \"3.10.20\", \"torch\": \"1.12.1+cu116\"}}\n",
+    "timeout": false,
+    "wall_seconds": 7.425033092498779
+  },
+  "repository": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/SplaTAM_official_archive",
+  "repository_commit_actual": null,
+  "repository_commit_expected": "da6bbcd24c248dc884ac7f49d62e91b841b26ccc",
+  "status": "SPLATAM_ENVIRONMENT_OPERATIONAL"
+}
