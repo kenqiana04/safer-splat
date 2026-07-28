@@ -1,0 +1,191 @@
+{
+  "T_frontend_camera_from_dataset_camera": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_model": "PINHOLE",
+  "contract_sha256": "136b2189bc93875fb2f0230769e78dc147ff72ca3642d9469ea707748dfc7b04",
+  "cx": 319.5,
+  "cy": 239.5,
+  "dataset_camera_forward": "-Z OpenGL",
+  "depth_decode_scale_m": 0.001,
+  "four_frame_roundtrip": [
+    {
+      "frame_id": "frame_0000",
+      "median_depth_roundtrip_error_m": 4.440892098500626e-16,
+      "median_pixel_reprojection_error": 7.105427357601002e-14,
+      "translation_ratio": 1.0
+    },
+    {
+      "frame_id": "frame_0075",
+      "median_depth_roundtrip_error_m": 4.440892098500626e-16,
+      "median_pixel_reprojection_error": 5.684341886080802e-14,
+      "translation_ratio": 1.0
+    },
+    {
+      "frame_id": "frame_0150",
+      "median_depth_roundtrip_error_m": 2.220446049250313e-16,
+      "median_pixel_reprojection_error": 0.0,
+      "translation_ratio": 1.0
+    },
+    {
+      "frame_id": "frame_0225",
+      "median_depth_roundtrip_error_m": 5.551115123125783e-16,
+      "median_pixel_reprojection_error": 1.1368683772161603e-13,
+      "translation_ratio": 1.0
+    }
+  ],
+  "frontend_camera_forward": "+Z OpenCV",
+  "frontend_contracts": {
+    "gaussian_slam": {
+      "pose": "c2w OpenCV, absolute dataset world",
+      "world_transform_to_dataset": "identity"
+    },
+    "splatam": {
+      "pose": "c2w OpenCV, relative to first mapping camera only",
+      "world_transform_to_dataset": "first_mapping_c2w_opencv"
+    }
+  },
+  "fx": 320.0,
+  "fy": 320.0,
+  "height": 480,
+  "nine_fixed_rays": [
+    {
+      "max_abs_difference": 0.0,
+      "pixel": [
+        0.0,
+        0.0
+      ],
+      "ray_gl": [
+        -0.6243849863515573,
+        -0.4680444576876306,
+        -0.6253621146557069
+      ]
+    },
+    {
+      "max_abs_difference": 0.0,
+      "pixel": [
+        639.0,
+        0.0
+      ],
+      "ray_gl": [
+        0.6243849863515573,
+        -0.4680444576876306,
+        -0.6253621146557069
+      ]
+    },
+    {
+      "max_abs_difference": 0.0,
+      "pixel": [
+        0.0,
+        479.0
+      ],
+      "ray_gl": [
+        -0.6243849863515573,
+        0.4680444576876306,
+        -0.6253621146557069
+      ]
+    },
+    {
+      "max_abs_difference": 0.0,
+      "pixel": [
+        639.0,
+        479.0
+      ],
+      "ray_gl": [
+        0.6243849863515573,
+        0.4680444576876306,
+        -0.6253621146557069
+      ]
+    },
+    {
+      "max_abs_difference": 0.0,
+      "pixel": [
+        319.5,
+        239.5
+      ],
+      "ray_gl": [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "max_abs_difference": 0.0,
+      "pixel": [
+        320.0,
+        240.0
+      ],
+      "ray_gl": [
+        0.0015624961853167043,
+        0.0015624961853167043,
+        -0.9999975586026907
+      ]
+    },
+    {
+      "max_abs_difference": 0.0,
+      "pixel": [
+        100.0,
+        100.0
+      ],
+      "ray_gl": [
+        -0.5323022941339222,
+        -0.3382969021944517,
+        -0.776021567757882
+      ]
+    },
+    {
+      "max_abs_difference": 0.0,
+      "pixel": [
+        539.0,
+        379.0
+      ],
+      "ray_gl": [
+        0.5323022941339222,
+        0.3382969021944517,
+        -0.776021567757882
+      ]
+    },
+    {
+      "max_abs_difference": 0.0,
+      "pixel": [
+        320.0,
+        100.0
+      ],
+      "ray_gl": [
+        0.0014323149549901103,
+        -0.39961587244224067,
+        -0.9166815711936704
+      ]
+    }
+  ],
+  "no_scale": true,
+  "no_sim3": true,
+  "pixel_center_convention": "integer pixel centers at (u,v)",
+  "pose_translation_ratio": 1.0,
+  "source_pose_convention": "V1_VERIFIED_HABITAT_Y_UP_NERFSTUDIO_OPENGL_C2W",
+  "status": "PASS_REPLICA_MAPPING_COORDINATE_CONTRACT",
+  "width": 640
+}

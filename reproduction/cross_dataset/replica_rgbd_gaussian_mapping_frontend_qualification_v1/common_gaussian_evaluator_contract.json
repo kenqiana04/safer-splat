@@ -1,0 +1,31 @@
+{
+  "background": [
+    0,
+    0,
+    0
+  ],
+  "depth_mode": "shared alpha-composited camera-z depth returned by GaussianRasterizer",
+  "deterministic_flags": {
+    "cudnn_benchmark": false,
+    "seed": 0,
+    "shared_evaluator": true
+  },
+  "far_m": 20.0,
+  "implementation": "task-owned wrapper around Gaussian-SLAM GaussianRasterizer for both canonical map schemas",
+  "intrinsics_source": "replica_mapping_input_contract.json",
+  "method_native_metric_selection_forbidden": true,
+  "near_m": 0.05,
+  "opacity_accumulation": "backend alpha compositing",
+  "pixel_center_convention": "frozen V3 integer pixel centers",
+  "pose_source": "frozen V3 holdout c2w transformed by fixed OpenGL-to-OpenCV camera transform",
+  "rasterization_backend": "shared diff-gaussian depth-plus-alpha rasterizer",
+  "renderer_environment": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda",
+  "renderer_source": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive/src/utils/utils.py",
+  "renderer_source_sha256": "f2acda6a108dd2d75795b58568e9a67341a3eedbcc2405a7d726e096bc006ee9",
+  "resolution": [
+    640,
+    480
+  ],
+  "status": "COMMON_EVALUATOR_READY",
+  "transmittance_threshold": "depth>0 and finite"
+}
