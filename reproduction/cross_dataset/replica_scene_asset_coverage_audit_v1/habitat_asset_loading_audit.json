@@ -1,0 +1,46 @@
+{
+  "active_stage": {
+    "collision_asset_fullpath": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/mesh.ply",
+    "force_flat_shading": true,
+    "front": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "frustum_culling": true,
+    "global_bbox": "Range({-3.29275, -9.81671, -1.57476}, {6.07346, 4.95038, 3.77098})",
+    "handle": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/mesh.ply",
+    "lighting": "no_lights",
+    "render_asset_fullpath": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/mesh.ply",
+    "render_collision_same": true,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "shader": "material",
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "component_omissions": [],
+  "drawable_count": "Python binding does not expose drawable enumeration in Habitat-Sim 0.3.3",
+  "empty_drawables": [],
+  "habitat_version": "0.3.3",
+  "loaded_component_evidence": "one active direct-Ply StageAttributes render asset; no submesh/material groups in source PLY",
+  "loaded_mesh_component_count": 1,
+  "material_texture_warnings": [
+    "source PLY has no UV/material assignment; external Ptex files are not referenced by the direct stage"
+  ],
+  "render_debug_capture": "diagnostic variant captures are stored server-only under diagnostic_variants/captures",
+  "scene_graph_node_count": "Python binding does not expose scene-node enumeration in Habitat-Sim 0.3.3",
+  "semantic_warnings": [
+    "default direct-Ply semantic descriptor lookup expects mesh.scn/info_semantic.json at scene root; official semantic files reside under habitat/, so semantic scene is unavailable for this V1 direct stage"
+  ],
+  "source_loaded_bbox_relation": "same source direct mesh.ply; Habitat reports the same axis-permuted bounds convention as its stage transform",
+  "source_mesh_sha256": "274677d9b7caa413230363b68f4aa472e5cc1afe87e422a489fa1b7d844c6182",
+  "status": "PASS_HABITAT_ACTUAL_STAGE_LOAD_AUDIT",
+  "unsupported_ply_fields": []
+}

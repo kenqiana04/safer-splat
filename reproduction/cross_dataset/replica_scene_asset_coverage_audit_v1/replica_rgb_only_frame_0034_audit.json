@@ -1,0 +1,37 @@
+{
+  "RGB_ONLY_FRAME_0034_MECHANISM": "RGB_ONLY_LEGITIMATELY_DARK_VIEW_UNDER_V1_THRESHOLD",
+  "actual_direct_ply_material_texture_contract": "no UV/material/texture assignment; vertex RGB only",
+  "flat_untextured_diagnostic": {
+    "depth_checker_bad": false,
+    "depth_max_m": 4.004034042358398,
+    "depth_shape": [
+      480,
+      640
+    ],
+    "depth_valid_fraction": 0.00337890625,
+    "rgb_checker_bad": true,
+    "rgb_max": 255,
+    "rgb_nonzero_fraction": 0.00337890625,
+    "rgb_shape": [
+      480,
+      640,
+      4
+    ]
+  },
+  "frame_id": "frame_0034",
+  "independent_raycast": {
+    "any_hit_fraction": 0.007058823529411765,
+    "dominant_component": 0,
+    "front_facing_hit_fraction": 0.007058823529411765,
+    "material_id": null,
+    "texture_id": null,
+    "uv": null
+  },
+  "normal_same_location_yaws": "retained in frozen 81-probe registry",
+  "reason": "sparse valid geometry/depth coverage is below the historic RGB nonzero threshold; no material/UV/texture binding exists in the actual direct-Ply stage",
+  "status": "PASS_RGB_ONLY_SEPARATE_AUDIT",
+  "v1_depth_status": {
+    "depth_valid": true,
+    "valid_fraction": 0.00337890625
+  }
+}

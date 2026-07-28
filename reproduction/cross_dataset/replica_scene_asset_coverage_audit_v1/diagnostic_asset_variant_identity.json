@@ -1,0 +1,34 @@
+{
+  "formal_asset_replacement": false,
+  "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+  "source_mesh": {
+    "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/mesh.ply",
+    "sha256": "274677d9b7caa413230363b68f4aa472e5cc1afe87e422a489fa1b7d844c6182"
+  },
+  "status": "PASS_DIAGNOSTIC_ONLY_VARIANTS",
+  "variants": {
+    "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+      "path": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "vertex_count": 4564613
+    },
+    "B_DOUBLE_SIDED_DIAGNOSTIC": {
+      "diagnostic_face_count": 9121554,
+      "label": "DIAGNOSTIC_FACE_DUPLICATION_ONLY",
+      "path": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "source_face_count": 4560777
+    },
+    "C_COMPONENT_FLAT_ID": {
+      "path": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "vertex_count": 4564613
+    },
+    "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+      "eligible": true,
+      "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "source": "existing official apartment_0 habitat semantic mesh"
+    }
+  }
+}

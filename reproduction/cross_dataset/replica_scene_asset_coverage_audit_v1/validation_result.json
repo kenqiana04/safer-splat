@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "all_required_compact_files_present": true,
+    "camera_protocol_fields_changed": [],
+    "diagnostic_terminal_budget_max": 166,
+    "diagnostic_terminal_result_count": 166,
+    "diagnostic_terminal_within_budget": true,
+    "fixed_grid": true,
+    "float64_reference_agreement": true,
+    "formal_300_frame_rerender_count": 0,
+    "gaussian_training_count": 0,
+    "nonterminal_writer_correction_recorded": true,
+    "paired20_manifest_sha256": "380717f0ec39e0e422902573685f5a2838e78dd6efcce500ba71585efd3d82f6",
+    "publication_count": 0,
+    "safer_cbf_count": 0,
+    "start_safe_risk_aware_recovery_count": 0,
+    "tum_rollout_count": 0,
+    "upstream_identity_pass": true
+  },
+  "missing": [],
+  "status": "PASS_REPLICA_ASSET_AUDIT_REQUIRES_NEW_CAMERA_PROTOCOL"
+}

@@ -1,0 +1,26 @@
+{
+  "intrinsics": {
+    "camera_forward": "negative_z_opengl_from_frozen_c2w",
+    "cx": 320.0,
+    "cy": 240.0,
+    "far_m": 20.0,
+    "fx": 320.0,
+    "fy": 320.0,
+    "height": 480,
+    "hfov_deg": 90.0,
+    "near_m": 0.05,
+    "width": 640
+  },
+  "main_grid": [
+    41,
+    31
+  ],
+  "main_grid_ray_count_per_probe": 1271,
+  "probe_count": 81,
+  "rows_csv_server_only": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/independent_raycast/rays.csv",
+  "rows_sha256": "15493b0dabdeffcd0173cd7843f3a82b418686e480fca0b0df0d4de757127e83",
+  "source_registry_sha256": "d7079c5c8ea7a7d775d3015f6e6046df593af9dee8001c88932361f9a64a639b",
+  "status": "PASS_FROZEN_PINHOLE_RAY_REGISTRY",
+  "total_ray_count": 103275,
+  "total_ray_count_per_probe": 1275
+}

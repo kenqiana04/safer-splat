@@ -1,0 +1,4669 @@
+{
+  "budget": {
+    "A": 45,
+    "B": 40,
+    "C": 40,
+    "D": 41,
+    "total": 166
+  },
+  "counts": {
+    "A_FLAT_UNTEXTURED_SAME_GEOMETRY": 45,
+    "B_DOUBLE_SIDED_DIAGNOSTIC": 40,
+    "C_COMPONENT_FLAT_ID": 40,
+    "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": 41
+  },
+  "formal_dataset_output_created": false,
+  "fresh_subprocess_and_simulator_per_frame": true,
+  "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+  "results": [
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0001_depth.npy",
+      "frame_id": "frame_0001",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0001.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0005_depth.npy",
+      "frame_id": "frame_0005",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0005.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0030_depth.npy",
+      "frame_id": "frame_0030",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0030.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0031_depth.npy",
+      "frame_id": "frame_0031",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0031.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0034_depth.npy",
+      "frame_id": "frame_0034",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0034.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 4.004034042358398,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.00337890625,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.00337890625,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0042_depth.npy",
+      "frame_id": "frame_0042",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0042.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0043_depth.npy",
+      "frame_id": "frame_0043",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0043.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0075_depth.npy",
+      "frame_id": "frame_0075",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0075.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0076_depth.npy",
+      "frame_id": "frame_0076",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0076.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0079_depth.npy",
+      "frame_id": "frame_0079",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0079.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0089_depth.npy",
+      "frame_id": "frame_0089",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0089.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0113_depth.npy",
+      "frame_id": "frame_0113",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0113.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0116_depth.npy",
+      "frame_id": "frame_0116",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0116.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0118_depth.npy",
+      "frame_id": "frame_0118",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0118.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0146_depth.npy",
+      "frame_id": "frame_0146",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0146.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0166_depth.npy",
+      "frame_id": "frame_0166",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0166.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0170_depth.npy",
+      "frame_id": "frame_0170",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0170.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0180_depth.npy",
+      "frame_id": "frame_0180",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0180.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0181_depth.npy",
+      "frame_id": "frame_0181",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0181.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0186_depth.npy",
+      "frame_id": "frame_0186",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0186.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0189_depth.npy",
+      "frame_id": "frame_0189",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0189.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0190_depth.npy",
+      "frame_id": "frame_0190",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0190.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0191_depth.npy",
+      "frame_id": "frame_0191",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0191.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0194_depth.npy",
+      "frame_id": "frame_0194",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0194.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0205_depth.npy",
+      "frame_id": "frame_0205",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0205.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0240_depth.npy",
+      "frame_id": "frame_0240",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0240.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0242_depth.npy",
+      "frame_id": "frame_0242",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0242.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0244_depth.npy",
+      "frame_id": "frame_0244",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0244.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0270_depth.npy",
+      "frame_id": "frame_0270",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0270.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0271_depth.npy",
+      "frame_id": "frame_0271",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0271.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0273_depth.npy",
+      "frame_id": "frame_0273",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0273.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0274_depth.npy",
+      "frame_id": "frame_0274",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0274.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0275_depth.npy",
+      "frame_id": "frame_0275",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0275.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0020_depth.npy",
+      "frame_id": "frame_0020",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0020.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 0.2831558287143707,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0120_depth.npy",
+      "frame_id": "frame_0120",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0120.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 5.149552822113037,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.7376399739583334,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.7376399739583334,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0128_depth.npy",
+      "frame_id": "frame_0128",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0128.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 3.0317325592041016,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.20134440104166668,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.20134440104166668,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0138_depth.npy",
+      "frame_id": "frame_0138",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0138.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 3.4435079097747803,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0173_depth.npy",
+      "frame_id": "frame_0173",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0173.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 5.575089454650879,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.7025553385416666,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.7025553385416666,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0184_depth.npy",
+      "frame_id": "frame_0184",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0184.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 8.464482307434082,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.29852213541666667,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.29852213541666667,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0233_depth.npy",
+      "frame_id": "frame_0233",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0233.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 4.559969425201416,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.22670572916666668,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.22670572916666668,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0237_depth.npy",
+      "frame_id": "frame_0237",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0237.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 8.914362907409668,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.5825130208333333,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.5825130208333333,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0258_depth.npy",
+      "frame_id": "frame_0258",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0258.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 8.166197776794434,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.6957454427083334,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.6957454427083334,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0277_depth.npy",
+      "frame_id": "frame_0277",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0277.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 6.21476411819458,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.028844401041666665,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.028844401041666665,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0286_depth.npy",
+      "frame_id": "frame_0286",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0286.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 7.361952304840088,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.60705078125,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.60705078125,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0296_depth.npy",
+      "frame_id": "frame_0296",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/A_FLAT_UNTEXTURED_SAME_GEOMETRY/frame_0296.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/flat_untextured_same_geometry.ply",
+      "scene_sha256": "c6dbaadff8d94c4af65db6c809a80951bf70b2edda91aebfdcae3b5baeb7c1cd",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 6.1965837478637695,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.08742513020833333,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.08742513020833333,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "A_FLAT_UNTEXTURED_SAME_GEOMETRY"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0001_depth.npy",
+      "frame_id": "frame_0001",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0001.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0005_depth.npy",
+      "frame_id": "frame_0005",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0005.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0030_depth.npy",
+      "frame_id": "frame_0030",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0030.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0031_depth.npy",
+      "frame_id": "frame_0031",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0031.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0042_depth.npy",
+      "frame_id": "frame_0042",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0042.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0043_depth.npy",
+      "frame_id": "frame_0043",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0043.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0075_depth.npy",
+      "frame_id": "frame_0075",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0075.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0076_depth.npy",
+      "frame_id": "frame_0076",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0076.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0079_depth.npy",
+      "frame_id": "frame_0079",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0079.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0089_depth.npy",
+      "frame_id": "frame_0089",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0089.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0113_depth.npy",
+      "frame_id": "frame_0113",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0113.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0116_depth.npy",
+      "frame_id": "frame_0116",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0116.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0118_depth.npy",
+      "frame_id": "frame_0118",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0118.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0146_depth.npy",
+      "frame_id": "frame_0146",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0146.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0166_depth.npy",
+      "frame_id": "frame_0166",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0166.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0170_depth.npy",
+      "frame_id": "frame_0170",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0170.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0180_depth.npy",
+      "frame_id": "frame_0180",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0180.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0181_depth.npy",
+      "frame_id": "frame_0181",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0181.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0186_depth.npy",
+      "frame_id": "frame_0186",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0186.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0189_depth.npy",
+      "frame_id": "frame_0189",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0189.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0190_depth.npy",
+      "frame_id": "frame_0190",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0190.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0191_depth.npy",
+      "frame_id": "frame_0191",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0191.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0194_depth.npy",
+      "frame_id": "frame_0194",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0194.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0205_depth.npy",
+      "frame_id": "frame_0205",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0205.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0240_depth.npy",
+      "frame_id": "frame_0240",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0240.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0242_depth.npy",
+      "frame_id": "frame_0242",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0242.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0244_depth.npy",
+      "frame_id": "frame_0244",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0244.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0270_depth.npy",
+      "frame_id": "frame_0270",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0270.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0271_depth.npy",
+      "frame_id": "frame_0271",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0271.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0273_depth.npy",
+      "frame_id": "frame_0273",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0273.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0274_depth.npy",
+      "frame_id": "frame_0274",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0274.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0275_depth.npy",
+      "frame_id": "frame_0275",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0275.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0020_depth.npy",
+      "frame_id": "frame_0020",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0020.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 0.2831558287143707,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0120_depth.npy",
+      "frame_id": "frame_0120",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0120.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 4.97390604019165,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.7376399739583334,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.7376399739583334,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0128_depth.npy",
+      "frame_id": "frame_0128",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0128.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 2.9327502250671387,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.20134440104166668,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.20134331597222221,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0138_depth.npy",
+      "frame_id": "frame_0138",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0138.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 3.4435079097747803,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0173_depth.npy",
+      "frame_id": "frame_0173",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0173.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 5.565864562988281,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.7025553385416666,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.7025553385416666,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0184_depth.npy",
+      "frame_id": "frame_0184",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0184.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 8.1315336227417,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.29852864583333333,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.29852864583333333,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0233_depth.npy",
+      "frame_id": "frame_0233",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0233.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 3.660722494125366,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.22670572916666668,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.22670572916666668,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0237_depth.npy",
+      "frame_id": "frame_0237",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/B_DOUBLE_SIDED_DIAGNOSTIC/frame_0237.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/double_sided_diagnostic.ply",
+      "scene_sha256": "6ee4ef2b4055f5852823f0c49e267a36598836e07fee10cbcbede80109dcb16c",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 7.029466152191162,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.5825423177083333,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.5825423177083333,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "B_DOUBLE_SIDED_DIAGNOSTIC"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0001_depth.npy",
+      "frame_id": "frame_0001",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0001.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0005_depth.npy",
+      "frame_id": "frame_0005",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0005.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0030_depth.npy",
+      "frame_id": "frame_0030",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0030.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0031_depth.npy",
+      "frame_id": "frame_0031",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0031.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0042_depth.npy",
+      "frame_id": "frame_0042",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0042.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0043_depth.npy",
+      "frame_id": "frame_0043",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0043.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0075_depth.npy",
+      "frame_id": "frame_0075",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0075.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0076_depth.npy",
+      "frame_id": "frame_0076",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0076.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0079_depth.npy",
+      "frame_id": "frame_0079",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0079.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0089_depth.npy",
+      "frame_id": "frame_0089",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0089.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0113_depth.npy",
+      "frame_id": "frame_0113",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0113.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0116_depth.npy",
+      "frame_id": "frame_0116",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0116.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0118_depth.npy",
+      "frame_id": "frame_0118",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0118.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0146_depth.npy",
+      "frame_id": "frame_0146",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0146.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0166_depth.npy",
+      "frame_id": "frame_0166",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0166.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0170_depth.npy",
+      "frame_id": "frame_0170",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0170.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0180_depth.npy",
+      "frame_id": "frame_0180",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0180.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0181_depth.npy",
+      "frame_id": "frame_0181",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0181.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0186_depth.npy",
+      "frame_id": "frame_0186",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0186.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0189_depth.npy",
+      "frame_id": "frame_0189",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0189.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0190_depth.npy",
+      "frame_id": "frame_0190",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0190.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0191_depth.npy",
+      "frame_id": "frame_0191",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0191.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0194_depth.npy",
+      "frame_id": "frame_0194",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0194.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0205_depth.npy",
+      "frame_id": "frame_0205",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0205.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0240_depth.npy",
+      "frame_id": "frame_0240",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0240.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0242_depth.npy",
+      "frame_id": "frame_0242",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0242.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0244_depth.npy",
+      "frame_id": "frame_0244",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0244.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0270_depth.npy",
+      "frame_id": "frame_0270",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0270.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0271_depth.npy",
+      "frame_id": "frame_0271",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0271.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0273_depth.npy",
+      "frame_id": "frame_0273",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0273.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0274_depth.npy",
+      "frame_id": "frame_0274",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0274.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0275_depth.npy",
+      "frame_id": "frame_0275",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0275.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": true,
+        "depth_max_m": 0.0,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.0,
+        "rgb_checker_bad": true,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0020_depth.npy",
+      "frame_id": "frame_0020",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0020.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 0.2831558287143707,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0120_depth.npy",
+      "frame_id": "frame_0120",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0120.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 5.149552822113037,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.7376399739583334,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.7376399739583334,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0128_depth.npy",
+      "frame_id": "frame_0128",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0128.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 3.0317325592041016,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.20134440104166668,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.20134440104166668,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0138_depth.npy",
+      "frame_id": "frame_0138",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0138.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 3.4435079097747803,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0173_depth.npy",
+      "frame_id": "frame_0173",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0173.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 5.575089454650879,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.7025553385416666,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.7025553385416666,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0184_depth.npy",
+      "frame_id": "frame_0184",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0184.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 8.464482307434082,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.29852213541666667,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.29852213541666667,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0233_depth.npy",
+      "frame_id": "frame_0233",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0233.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 4.559969425201416,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.22670572916666668,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.22670572916666668,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0237_depth.npy",
+      "frame_id": "frame_0237",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/C_COMPONENT_FLAT_ID/frame_0237.png",
+      "scene_id": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/component_flat_id.ply",
+      "scene_sha256": "a6705c96cb7684cf1a0465cf0d22b88e30de70141bce47675ac66d9ddc831942",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 8.914362907409668,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.5825130208333333,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.5825130208333333,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "C_COMPONENT_FLAT_ID"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0001_depth.npy",
+      "frame_id": "frame_0001",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0001.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 8.101999282836914,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0005_depth.npy",
+      "frame_id": "frame_0005",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0005.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 4.6175055503845215,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0030_depth.npy",
+      "frame_id": "frame_0030",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0030.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 4.4913649559021,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0031_depth.npy",
+      "frame_id": "frame_0031",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0031.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 6.192568778991699,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0042_depth.npy",
+      "frame_id": "frame_0042",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0042.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 7.612731456756592,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0043_depth.npy",
+      "frame_id": "frame_0043",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0043.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 4.8714494705200195,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0075_depth.npy",
+      "frame_id": "frame_0075",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0075.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 7.009837627410889,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0076_depth.npy",
+      "frame_id": "frame_0076",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0076.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 4.78078031539917,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0079_depth.npy",
+      "frame_id": "frame_0079",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0079.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 5.494480609893799,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0089_depth.npy",
+      "frame_id": "frame_0089",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0089.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 3.842874765396118,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0113_depth.npy",
+      "frame_id": "frame_0113",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0113.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 0.48778125643730164,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0116_depth.npy",
+      "frame_id": "frame_0116",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0116.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 5.1785359382629395,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0118_depth.npy",
+      "frame_id": "frame_0118",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0118.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 7.212192058563232,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0146_depth.npy",
+      "frame_id": "frame_0146",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0146.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 6.180144786834717,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0166_depth.npy",
+      "frame_id": "frame_0166",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0166.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 4.635960578918457,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0170_depth.npy",
+      "frame_id": "frame_0170",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0170.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 7.302879810333252,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0180_depth.npy",
+      "frame_id": "frame_0180",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0180.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 4.226434230804443,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0181_depth.npy",
+      "frame_id": "frame_0181",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0181.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 5.573057174682617,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0186_depth.npy",
+      "frame_id": "frame_0186",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0186.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 5.436441898345947,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0189_depth.npy",
+      "frame_id": "frame_0189",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0189.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 4.00525426864624,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0190_depth.npy",
+      "frame_id": "frame_0190",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0190.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 5.584381580352783,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0191_depth.npy",
+      "frame_id": "frame_0191",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0191.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 2.771139144897461,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0194_depth.npy",
+      "frame_id": "frame_0194",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0194.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 4.995504379272461,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0205_depth.npy",
+      "frame_id": "frame_0205",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0205.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 4.088140487670898,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0240_depth.npy",
+      "frame_id": "frame_0240",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0240.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 5.334097862243652,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0242_depth.npy",
+      "frame_id": "frame_0242",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0242.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 4.126778602600098,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0244_depth.npy",
+      "frame_id": "frame_0244",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0244.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 6.545072078704834,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0270_depth.npy",
+      "frame_id": "frame_0270",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0270.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 8.067256927490234,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0271_depth.npy",
+      "frame_id": "frame_0271",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0271.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 5.129889011383057,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0273_depth.npy",
+      "frame_id": "frame_0273",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0273.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 4.298699378967285,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0274_depth.npy",
+      "frame_id": "frame_0274",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0274.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 2.4592514038085938,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0275_depth.npy",
+      "frame_id": "frame_0275",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0275.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 7.370792865753174,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0034_depth.npy",
+      "frame_id": "frame_0034",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0034.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 3.9307262897491455,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0020_depth.npy",
+      "frame_id": "frame_0020",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0020.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 5.011311054229736,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0120_depth.npy",
+      "frame_id": "frame_0120",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0120.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 8.32776927947998,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0128_depth.npy",
+      "frame_id": "frame_0128",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0128.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 4.037850856781006,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0138_depth.npy",
+      "frame_id": "frame_0138",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0138.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 11.633671760559082,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.9999934895833333,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.9999934895833333,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0173_depth.npy",
+      "frame_id": "frame_0173",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0173.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 8.958233833312988,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.9999739583333334,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.9999739583333334,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0184_depth.npy",
+      "frame_id": "frame_0184",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0184.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 4.390283584594727,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0233_depth.npy",
+      "frame_id": "frame_0233",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0233.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 3.6824593544006348,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 1.0,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 1.0,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    },
+    {
+      "depth_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0237_depth.npy",
+      "frame_id": "frame_0237",
+      "fresh_simulator": true,
+      "fresh_subprocess": true,
+      "marker": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_REPLICA_ASSET",
+      "rgb_capture": "/disk1/zlab/maintenance_records/replica_scene_asset_coverage_audit_v1/diagnostic_variants/captures/D_OFFICIAL_ALTERNATE_ASSET_HANDLE/frame_0237.png",
+      "scene_id": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.ply",
+      "scene_sha256": "e5349ede28aea14446a84f808056784cffc3f2a5551cc8465719016528f1d3e1",
+      "stats": {
+        "depth_checker_bad": false,
+        "depth_max_m": 9.053421020507812,
+        "depth_shape": [
+          480,
+          640
+        ],
+        "depth_valid_fraction": 0.9999967447916667,
+        "rgb_checker_bad": false,
+        "rgb_max": 255,
+        "rgb_nonzero_fraction": 0.9999967447916667,
+        "rgb_shape": [
+          480,
+          640,
+          4
+        ]
+      },
+      "variant": "D_OFFICIAL_ALTERNATE_ASSET_HANDLE"
+    }
+  ],
+  "status": "PASS_FIXED_DIAGNOSTIC_RENDER_BUDGET"
+}
