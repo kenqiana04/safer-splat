@@ -1,0 +1,4333 @@
+{
+  "both_fail_count": 0,
+  "both_pass_count": 476,
+  "clear_explanation": "none_required_when_threshold_not_exceeded",
+  "coverage_fraction_pearson_correlation": 0.9989964808358326,
+  "independent_fail_habitat_pass_count": 0,
+  "independent_pass_habitat_fail_count": 4,
+  "independent_pass_habitat_fail_fraction": 0.008333333333333333,
+  "status": "PASS_REPLICA_V3_COVERAGE_CROSS_VALIDATION",
+  "view_count": 480,
+  "views": [
+    {
+      "candidate_id": "candidate_0529",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0529_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0529",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0529_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0529",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0529_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0742",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0742_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0742",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0742_yaw_1",
+      "habitat_depth_positive_fraction": 0.9427897135416666,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.9291896144767899
+    },
+    {
+      "candidate_id": "candidate_0742",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0742_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0295",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0295_yaw_0",
+      "habitat_depth_positive_fraction": 0.6332975260416667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6239181746656176
+    },
+    {
+      "candidate_id": "candidate_0295",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0295_yaw_1",
+      "habitat_depth_positive_fraction": 0.299873046875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.30527143981117233
+    },
+    {
+      "candidate_id": "candidate_0295",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0295_yaw_2",
+      "habitat_depth_positive_fraction": 0.5471321614583333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5491738788355626
+    },
+    {
+      "candidate_id": "candidate_0160",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0160_yaw_0",
+      "habitat_depth_positive_fraction": 0.6267317708333333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6144767899291896
+    },
+    {
+      "candidate_id": "candidate_0160",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0160_yaw_1",
+      "habitat_depth_positive_fraction": 0.10607421875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.11172305271439811
+    },
+    {
+      "candidate_id": "candidate_0160",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0160_yaw_2",
+      "habitat_depth_positive_fraction": 0.5830078125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5837922895357985
+    },
+    {
+      "candidate_id": "candidate_0310",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0310_yaw_0",
+      "habitat_depth_positive_fraction": 0.6225065104166667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6129032258064516
+    },
+    {
+      "candidate_id": "candidate_0310",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0310_yaw_1",
+      "habitat_depth_positive_fraction": 0.2823763020833333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.28560188827694727
+    },
+    {
+      "candidate_id": "candidate_0310",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0310_yaw_2",
+      "habitat_depth_positive_fraction": 0.5019173177083334,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5003933910306845
+    },
+    {
+      "candidate_id": "candidate_0678",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0678_yaw_0",
+      "habitat_depth_positive_fraction": 0.5561751302083333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5507474429583006
+    },
+    {
+      "candidate_id": "candidate_0678",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0678_yaw_1",
+      "habitat_depth_positive_fraction": 0.22885091145833333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.23052714398111723
+    },
+    {
+      "candidate_id": "candidate_0678",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0678_yaw_2",
+      "habitat_depth_positive_fraction": 0.40682291666666665,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.41227380015735643
+    },
+    {
+      "candidate_id": "candidate_0658",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0658_yaw_0",
+      "habitat_depth_positive_fraction": 0.9364225260416666,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.9331235247836349
+    },
+    {
+      "candidate_id": "candidate_0658",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0658_yaw_1",
+      "habitat_depth_positive_fraction": 0.6040592447916666,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6089693154996066
+    },
+    {
+      "candidate_id": "candidate_0658",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0658_yaw_2",
+      "habitat_depth_positive_fraction": 0.4644368489583333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.47364280094413846
+    },
+    {
+      "candidate_id": "candidate_0737",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0737_yaw_0",
+      "habitat_depth_positive_fraction": 0.7048893229166666,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7018095987411487
+    },
+    {
+      "candidate_id": "candidate_0737",
+      "category": "INDEPENDENT_PASS_HABITAT_FAIL",
+      "frame_id": "candidate_0737_yaw_1",
+      "habitat_depth_positive_fraction": 0.09735677083333333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_FAIL",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.10464201416207711
+    },
+    {
+      "candidate_id": "candidate_0737",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0737_yaw_2",
+      "habitat_depth_positive_fraction": 0.999033203125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.996066089693155
+    },
+    {
+      "candidate_id": "candidate_0651",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0651_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0651",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0651_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0651",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0651_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0789",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0789_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0789",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0789_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0789",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0789_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0323",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0323_yaw_0",
+      "habitat_depth_positive_fraction": 0.2947721354166667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.3029110936270653
+    },
+    {
+      "candidate_id": "candidate_0323",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0323_yaw_1",
+      "habitat_depth_positive_fraction": 0.654873046875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6553894571203777
+    },
+    {
+      "candidate_id": "candidate_0323",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0323_yaw_2",
+      "habitat_depth_positive_fraction": 0.29575520833333335,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.2989771833202203
+    },
+    {
+      "candidate_id": "candidate_0914",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0914_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0914",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0914_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0914",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0914_yaw_2",
+      "habitat_depth_positive_fraction": 0.5402994791666667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5397324940991345
+    },
+    {
+      "candidate_id": "candidate_0804",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0804_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0804",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0804_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0804",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0804_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0706",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0706_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0706",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0706_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0706",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0706_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0568",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0568_yaw_0",
+      "habitat_depth_positive_fraction": 0.6425065104166666,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6357199055861527
+    },
+    {
+      "candidate_id": "candidate_0568",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0568_yaw_1",
+      "habitat_depth_positive_fraction": 0.39387369791666665,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.3918174665617624
+    },
+    {
+      "candidate_id": "candidate_0568",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0568_yaw_2",
+      "habitat_depth_positive_fraction": 0.19815104166666667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.20298977183320221
+    },
+    {
+      "candidate_id": "candidate_0193",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0193_yaw_0",
+      "habitat_depth_positive_fraction": 0.2399609375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.24704956726986624
+    },
+    {
+      "candidate_id": "candidate_0193",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0193_yaw_1",
+      "habitat_depth_positive_fraction": 0.116357421875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.11880409126671912
+    },
+    {
+      "candidate_id": "candidate_0193",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0193_yaw_2",
+      "habitat_depth_positive_fraction": 0.7577669270833334,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7505900865460268
+    },
+    {
+      "candidate_id": "candidate_0849",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0849_yaw_0",
+      "habitat_depth_positive_fraction": 0.544130859375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5444531864673485
+    },
+    {
+      "candidate_id": "candidate_0849",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0849_yaw_1",
+      "habitat_depth_positive_fraction": 0.6753450520833333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6719118804091266
+    },
+    {
+      "candidate_id": "candidate_0849",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0849_yaw_2",
+      "habitat_depth_positive_fraction": 0.1023046875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.1093627065302911
+    },
+    {
+      "candidate_id": "candidate_0717",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0717_yaw_0",
+      "habitat_depth_positive_fraction": 0.203232421875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.2187254130605822
+    },
+    {
+      "candidate_id": "candidate_0717",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0717_yaw_1",
+      "habitat_depth_positive_fraction": 0.749384765625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7482297403619197
+    },
+    {
+      "candidate_id": "candidate_0717",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0717_yaw_2",
+      "habitat_depth_positive_fraction": 0.105693359375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.11408339889850512
+    },
+    {
+      "candidate_id": "candidate_0517",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0517_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0517",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0517_yaw_1",
+      "habitat_depth_positive_fraction": 0.45508138020833333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.45082612116443743
+    },
+    {
+      "candidate_id": "candidate_0517",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0517_yaw_2",
+      "habitat_depth_positive_fraction": 0.87884765625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.8678206136900078
+    },
+    {
+      "candidate_id": "candidate_0226",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0226_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0226",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0226_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0226",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0226_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0466",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0466_yaw_0",
+      "habitat_depth_positive_fraction": 0.5346223958333334,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5373721479150275
+    },
+    {
+      "candidate_id": "candidate_0466",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0466_yaw_1",
+      "habitat_depth_positive_fraction": 0.27654947916666667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.2824547600314713
+    },
+    {
+      "candidate_id": "candidate_0466",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0466_yaw_2",
+      "habitat_depth_positive_fraction": 0.870078125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.8678206136900078
+    },
+    {
+      "candidate_id": "candidate_0659",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0659_yaw_0",
+      "habitat_depth_positive_fraction": 0.39322591145833335,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.3949645948072384
+    },
+    {
+      "candidate_id": "candidate_0659",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0659_yaw_1",
+      "habitat_depth_positive_fraction": 0.33498046875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.33831628638867034
+    },
+    {
+      "candidate_id": "candidate_0659",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0659_yaw_2",
+      "habitat_depth_positive_fraction": 0.5972135416666666,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6034618410700237
+    },
+    {
+      "candidate_id": "candidate_0361",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0361_yaw_0",
+      "habitat_depth_positive_fraction": 0.75634765625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7568843430369787
+    },
+    {
+      "candidate_id": "candidate_0361",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0361_yaw_1",
+      "habitat_depth_positive_fraction": 0.3922298177083333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.39260424862313137
+    },
+    {
+      "candidate_id": "candidate_0361",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0361_yaw_2",
+      "habitat_depth_positive_fraction": 0.5780924479166667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5798583792289536
+    },
+    {
+      "candidate_id": "candidate_0289",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0289_yaw_0",
+      "habitat_depth_positive_fraction": 0.45928385416666667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.46498819826907944
+    },
+    {
+      "candidate_id": "candidate_0289",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0289_yaw_1",
+      "habitat_depth_positive_fraction": 0.34895182291666665,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.35247836349331235
+    },
+    {
+      "candidate_id": "candidate_0289",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0289_yaw_2",
+      "habitat_depth_positive_fraction": 0.8080208333333333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.8111723052714398
+    },
+    {
+      "candidate_id": "candidate_0447",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0447_yaw_0",
+      "habitat_depth_positive_fraction": 0.94126953125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.930763178599528
+    },
+    {
+      "candidate_id": "candidate_0447",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0447_yaw_1",
+      "habitat_depth_positive_fraction": 0.33241861979166665,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.3359559402045633
+    },
+    {
+      "candidate_id": "candidate_0447",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0447_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0345",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0345_yaw_0",
+      "habitat_depth_positive_fraction": 0.71697265625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7183320220298978
+    },
+    {
+      "candidate_id": "candidate_0345",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0345_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0345",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0345_yaw_2",
+      "habitat_depth_positive_fraction": 0.18907877604166667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.1935483870967742
+    },
+    {
+      "candidate_id": "candidate_0582",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0582_yaw_0",
+      "habitat_depth_positive_fraction": 0.9324251302083333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.9205350118017309
+    },
+    {
+      "candidate_id": "candidate_0582",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0582_yaw_1",
+      "habitat_depth_positive_fraction": 0.323173828125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.3233674272226593
+    },
+    {
+      "candidate_id": "candidate_0582",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0582_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0585",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0585_yaw_0",
+      "habitat_depth_positive_fraction": 0.5004850260416667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5066876475216365
+    },
+    {
+      "candidate_id": "candidate_0585",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0585_yaw_1",
+      "habitat_depth_positive_fraction": 0.914423828125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.9095200629425649
+    },
+    {
+      "candidate_id": "candidate_0585",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0585_yaw_2",
+      "habitat_depth_positive_fraction": 0.206435546875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.21400472069236823
+    },
+    {
+      "candidate_id": "candidate_0655",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0655_yaw_0",
+      "habitat_depth_positive_fraction": 0.13174153645833334,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.13690007867820614
+    },
+    {
+      "candidate_id": "candidate_0655",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0655_yaw_1",
+      "habitat_depth_positive_fraction": 0.6198828125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6223446105428796
+    },
+    {
+      "candidate_id": "candidate_0655",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0655_yaw_2",
+      "habitat_depth_positive_fraction": 0.3251236979166667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.33359559402045635
+    },
+    {
+      "candidate_id": "candidate_0593",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0593_yaw_0",
+      "habitat_depth_positive_fraction": 0.74775390625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7450826121164438
+    },
+    {
+      "candidate_id": "candidate_0593",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0593_yaw_1",
+      "habitat_depth_positive_fraction": 0.879755859375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.8717545239968528
+    },
+    {
+      "candidate_id": "candidate_0593",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0593_yaw_2",
+      "habitat_depth_positive_fraction": 0.14762044270833333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.15106215578284815
+    },
+    {
+      "candidate_id": "candidate_0373",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0373_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0373",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0373_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0373",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0373_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0184",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0184_yaw_0",
+      "habitat_depth_positive_fraction": 0.7370279947916667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7222659323367427
+    },
+    {
+      "candidate_id": "candidate_0184",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0184_yaw_1",
+      "habitat_depth_positive_fraction": 0.23505533854166666,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.23918174665617625
+    },
+    {
+      "candidate_id": "candidate_0184",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0184_yaw_2",
+      "habitat_depth_positive_fraction": 0.36263346354166665,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.36664044059795436
+    },
+    {
+      "candidate_id": "candidate_0233",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0233_yaw_0",
+      "habitat_depth_positive_fraction": 0.869873046875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.8552321007081038
+    },
+    {
+      "candidate_id": "candidate_0233",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0233_yaw_1",
+      "habitat_depth_positive_fraction": 0.41533854166666667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.4169944925255704
+    },
+    {
+      "candidate_id": "candidate_0233",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0233_yaw_2",
+      "habitat_depth_positive_fraction": 0.33550455729166667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.33988985051140835
+    },
+    {
+      "candidate_id": "candidate_0993",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0993_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0993",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0993_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0993",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0993_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0385",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0385_yaw_0",
+      "habitat_depth_positive_fraction": 0.91740234375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0385",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0385_yaw_1",
+      "habitat_depth_positive_fraction": 0.601962890625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6404405979543666
+    },
+    {
+      "candidate_id": "candidate_0385",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0385_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0828",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0828_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0828",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0828_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0828",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0828_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0785",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0785_yaw_0",
+      "habitat_depth_positive_fraction": 0.7634928385416667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7576711250983478
+    },
+    {
+      "candidate_id": "candidate_0785",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0785_yaw_1",
+      "habitat_depth_positive_fraction": 0.461025390625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.45790715971675844
+    },
+    {
+      "candidate_id": "candidate_0785",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0785_yaw_2",
+      "habitat_depth_positive_fraction": 0.153544921875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.15971675845790717
+    },
+    {
+      "candidate_id": "candidate_0319",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0319_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0319",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0319_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0319",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0319_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0464",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0464_yaw_0",
+      "habitat_depth_positive_fraction": 0.12616861979166666,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.13611329661683713
+    },
+    {
+      "candidate_id": "candidate_0464",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0464_yaw_1",
+      "habitat_depth_positive_fraction": 0.713271484375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7081038552321007
+    },
+    {
+      "candidate_id": "candidate_0464",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0464_yaw_2",
+      "habitat_depth_positive_fraction": 0.11957682291666667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.12903225806451613
+    },
+    {
+      "candidate_id": "candidate_0480",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0480_yaw_0",
+      "habitat_depth_positive_fraction": 0.22919921875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.22974036191974823
+    },
+    {
+      "candidate_id": "candidate_0480",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0480_yaw_1",
+      "habitat_depth_positive_fraction": 0.7073177083333333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7041699449252558
+    },
+    {
+      "candidate_id": "candidate_0480",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0480_yaw_2",
+      "habitat_depth_positive_fraction": 0.14876627604166667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.15735641227380015
+    },
+    {
+      "candidate_id": "candidate_0756",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0756_yaw_0",
+      "habitat_depth_positive_fraction": 0.7390983072916667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7395751376868608
+    },
+    {
+      "candidate_id": "candidate_0756",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0756_yaw_1",
+      "habitat_depth_positive_fraction": 0.2224609375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.22265932336742722
+    },
+    {
+      "candidate_id": "candidate_0756",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0756_yaw_2",
+      "habitat_depth_positive_fraction": 0.9353450520833333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.9299763965381589
+    },
+    {
+      "candidate_id": "candidate_0646",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0646_yaw_0",
+      "habitat_depth_positive_fraction": 0.88396484375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.8780487804878049
+    },
+    {
+      "candidate_id": "candidate_0646",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0646_yaw_1",
+      "habitat_depth_positive_fraction": 0.31223958333333335,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.31943351691581434
+    },
+    {
+      "candidate_id": "candidate_0646",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0646_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0002",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0002_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0002",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0002_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0002",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0002_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0278",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0278_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0278",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0278_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0278",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0278_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0424",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0424_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0424",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0424_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0424",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0424_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0100",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0100_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0100",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0100_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0100",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0100_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0672",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0672_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0672",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0672_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0672",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0672_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0322",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0322_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0322",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0322_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0322",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0322_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0286",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0286_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0286",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0286_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0286",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0286_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0964",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0964_yaw_0",
+      "habitat_depth_positive_fraction": 0.7098860677083333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7065302911093627
+    },
+    {
+      "candidate_id": "candidate_0964",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0964_yaw_1",
+      "habitat_depth_positive_fraction": 0.10871744791666667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.11487018095987411
+    },
+    {
+      "candidate_id": "candidate_0964",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0964_yaw_2",
+      "habitat_depth_positive_fraction": 0.8290950520833333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.8261211644374509
+    },
+    {
+      "candidate_id": "candidate_0338",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0338_yaw_0",
+      "habitat_depth_positive_fraction": 0.9999934895833333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0338",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0338_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0338",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0338_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0028",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0028_yaw_0",
+      "habitat_depth_positive_fraction": 0.653115234375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6420141620771046
+    },
+    {
+      "candidate_id": "candidate_0028",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0028_yaw_1",
+      "habitat_depth_positive_fraction": 0.3238118489583333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.32572777340676634
+    },
+    {
+      "candidate_id": "candidate_0028",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0028_yaw_2",
+      "habitat_depth_positive_fraction": 0.256884765625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.2549173878835563
+    },
+    {
+      "candidate_id": "candidate_0705",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0705_yaw_0",
+      "habitat_depth_positive_fraction": 0.46387044270833333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.4500393391030684
+    },
+    {
+      "candidate_id": "candidate_0705",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0705_yaw_1",
+      "habitat_depth_positive_fraction": 0.14370768229166667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.15184893784421716
+    },
+    {
+      "candidate_id": "candidate_0705",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0705_yaw_2",
+      "habitat_depth_positive_fraction": 0.190517578125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.1951219512195122
+    },
+    {
+      "candidate_id": "candidate_0110",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0110_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0110",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0110_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0110",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0110_yaw_2",
+      "habitat_depth_positive_fraction": 0.999912109375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0858",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0858_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0858",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0858_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0858",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0858_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0570",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0570_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0570",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0570_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0570",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0570_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0888",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0888_yaw_0",
+      "habitat_depth_positive_fraction": 0.5624837239583333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5570416994492525
+    },
+    {
+      "candidate_id": "candidate_0888",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0888_yaw_1",
+      "habitat_depth_positive_fraction": 0.49359049479166667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.4940991345397325
+    },
+    {
+      "candidate_id": "candidate_0888",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0888_yaw_2",
+      "habitat_depth_positive_fraction": 0.18849609375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.1880409126671912
+    },
+    {
+      "candidate_id": "candidate_0139",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0139_yaw_0",
+      "habitat_depth_positive_fraction": 0.999990234375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0139",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0139_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0139",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0139_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0524",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0524_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0524",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0524_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0524",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0524_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0282",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0282_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0282",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0282_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0282",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0282_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0985",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0985_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0985",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0985_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0985",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0985_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0732",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0732_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0732",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0732_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0732",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0732_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0217",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0217_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0217",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0217_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0217",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0217_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0936",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0936_yaw_0",
+      "habitat_depth_positive_fraction": 0.3775325520833333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.3760818253343824
+    },
+    {
+      "candidate_id": "candidate_0936",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0936_yaw_1",
+      "habitat_depth_positive_fraction": 0.121376953125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.12745869394177814
+    },
+    {
+      "candidate_id": "candidate_0936",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0936_yaw_2",
+      "habitat_depth_positive_fraction": 0.7491861979166666,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7419354838709677
+    },
+    {
+      "candidate_id": "candidate_0070",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0070_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0070",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0070_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0070",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0070_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0330",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0330_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0330",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0330_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0330",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0330_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0840",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0840_yaw_0",
+      "habitat_depth_positive_fraction": 0.8393684895833333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.8339889850511408
+    },
+    {
+      "candidate_id": "candidate_0840",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0840_yaw_1",
+      "habitat_depth_positive_fraction": 0.256357421875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.25806451612903225
+    },
+    {
+      "candidate_id": "candidate_0840",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0840_yaw_2",
+      "habitat_depth_positive_fraction": 0.575791015625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5782848151062155
+    },
+    {
+      "candidate_id": "candidate_0725",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0725_yaw_0",
+      "habitat_depth_positive_fraction": 0.700615234375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6955153422501967
+    },
+    {
+      "candidate_id": "candidate_0725",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0725_yaw_1",
+      "habitat_depth_positive_fraction": 0.1060546875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.11329661683713611
+    },
+    {
+      "candidate_id": "candidate_0725",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0725_yaw_2",
+      "habitat_depth_positive_fraction": 0.49130859375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.4909520062942565
+    },
+    {
+      "candidate_id": "candidate_0686",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0686_yaw_0",
+      "habitat_depth_positive_fraction": 0.69845703125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6947285601888277
+    },
+    {
+      "candidate_id": "candidate_0686",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0686_yaw_1",
+      "habitat_depth_positive_fraction": 0.5542740885416667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5538945712037766
+    },
+    {
+      "candidate_id": "candidate_0686",
+      "category": "INDEPENDENT_PASS_HABITAT_FAIL",
+      "frame_id": "candidate_0686_yaw_2",
+      "habitat_depth_positive_fraction": 0.09407877604166667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_FAIL",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.10306845003933911
+    },
+    {
+      "candidate_id": "candidate_0440",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0440_yaw_0",
+      "habitat_depth_positive_fraction": 0.999990234375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0440",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0440_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0440",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0440_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0761",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0761_yaw_0",
+      "habitat_depth_positive_fraction": 0.9916569010416667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.989771833202203
+    },
+    {
+      "candidate_id": "candidate_0761",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0761_yaw_1",
+      "habitat_depth_positive_fraction": 0.49538736979166664,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.4956726986624705
+    },
+    {
+      "candidate_id": "candidate_0761",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0761_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0566",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0566_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0566",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0566_yaw_1",
+      "habitat_depth_positive_fraction": 0.999990234375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0566",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0566_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0542",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0542_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0542",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0542_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0542",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0542_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0437",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0437_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0437",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0437_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0437",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0437_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0674",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0674_yaw_0",
+      "habitat_depth_positive_fraction": 0.6231803385416667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6231313926042487
+    },
+    {
+      "candidate_id": "candidate_0674",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0674_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0674",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0674_yaw_2",
+      "habitat_depth_positive_fraction": 0.15722981770833333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.15971675845790717
+    },
+    {
+      "candidate_id": "candidate_0257",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0257_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0257",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0257_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0257",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0257_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0203",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0203_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0203",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0203_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0203",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0203_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0145",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0145_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0145",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0145_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0145",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0145_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0158",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0158_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0158",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0158_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0158",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0158_yaw_2",
+      "habitat_depth_positive_fraction": 0.952236328125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.9425649095200629
+    },
+    {
+      "candidate_id": "candidate_0802",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0802_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0802",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0802_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0802",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0802_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0831",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0831_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0831",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0831_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0831",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0831_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0605",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0605_yaw_0",
+      "habitat_depth_positive_fraction": 0.3196940104166667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.3210070810385523
+    },
+    {
+      "candidate_id": "candidate_0605",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0605_yaw_1",
+      "habitat_depth_positive_fraction": 0.6753352864583333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6758457907159717
+    },
+    {
+      "candidate_id": "candidate_0605",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0605_yaw_2",
+      "habitat_depth_positive_fraction": 0.24605143229166668,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.25255704169944926
+    },
+    {
+      "candidate_id": "candidate_0615",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0615_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0615",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0615_yaw_1",
+      "habitat_depth_positive_fraction": 0.9877864583333333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.981117230527144
+    },
+    {
+      "candidate_id": "candidate_0615",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0615_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0612",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0612_yaw_0",
+      "habitat_depth_positive_fraction": 0.31642578125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.3202202989771833
+    },
+    {
+      "candidate_id": "candidate_0612",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0612_yaw_1",
+      "habitat_depth_positive_fraction": 0.2594270833333333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.26435877261998425
+    },
+    {
+      "candidate_id": "candidate_0612",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0612_yaw_2",
+      "habitat_depth_positive_fraction": 0.3858203125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.3870967741935484
+    },
+    {
+      "candidate_id": "candidate_0431",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0431_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0431",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0431_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0431",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0431_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0682",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0682_yaw_0",
+      "habitat_depth_positive_fraction": 0.5533984375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5491738788355626
+    },
+    {
+      "candidate_id": "candidate_0682",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0682_yaw_1",
+      "habitat_depth_positive_fraction": 0.421806640625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.4225019669551534
+    },
+    {
+      "candidate_id": "candidate_0682",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0682_yaw_2",
+      "habitat_depth_positive_fraction": 0.19992838541666666,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.2069236821400472
+    },
+    {
+      "candidate_id": "candidate_0735",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0735_yaw_0",
+      "habitat_depth_positive_fraction": 0.9721647135416667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.973249409913454
+    },
+    {
+      "candidate_id": "candidate_0735",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0735_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0735",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0735_yaw_2",
+      "habitat_depth_positive_fraction": 0.8448567708333333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.8394964594807238
+    },
+    {
+      "candidate_id": "candidate_0650",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0650_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0650",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0650_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0650",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0650_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0091",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0091_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0091",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0091_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0091",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0091_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0054",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0054_yaw_0",
+      "habitat_depth_positive_fraction": 0.9924055989583334,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.988198269079465
+    },
+    {
+      "candidate_id": "candidate_0054",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0054_yaw_1",
+      "habitat_depth_positive_fraction": 0.40394205729166666,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.4012588512981904
+    },
+    {
+      "candidate_id": "candidate_0054",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0054_yaw_2",
+      "habitat_depth_positive_fraction": 0.5280924479166667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5247836349331235
+    },
+    {
+      "candidate_id": "candidate_0516",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0516_yaw_0",
+      "habitat_depth_positive_fraction": 0.6769986979166667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6789929189614476
+    },
+    {
+      "candidate_id": "candidate_0516",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0516_yaw_1",
+      "habitat_depth_positive_fraction": 0.99998046875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0516",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0516_yaw_2",
+      "habitat_depth_positive_fraction": 0.26323893229166667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.26671911880409127
+    },
+    {
+      "candidate_id": "candidate_0833",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0833_yaw_0",
+      "habitat_depth_positive_fraction": 0.484287109375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.47993705743509046
+    },
+    {
+      "candidate_id": "candidate_0833",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0833_yaw_1",
+      "habitat_depth_positive_fraction": 0.16343424479166666,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.16286388670338317
+    },
+    {
+      "candidate_id": "candidate_0833",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0833_yaw_2",
+      "habitat_depth_positive_fraction": 0.2136328125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.2179386309992132
+    },
+    {
+      "candidate_id": "candidate_0748",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0748_yaw_0",
+      "habitat_depth_positive_fraction": 0.430966796875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.4358772619984264
+    },
+    {
+      "candidate_id": "candidate_0748",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0748_yaw_1",
+      "habitat_depth_positive_fraction": 0.8380338541666666,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.8363493312352478
+    },
+    {
+      "candidate_id": "candidate_0748",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0748_yaw_2",
+      "habitat_depth_positive_fraction": 0.26836588541666667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.2753737214791503
+    },
+    {
+      "candidate_id": "candidate_0665",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0665_yaw_0",
+      "habitat_depth_positive_fraction": 0.5653548177083333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5609756097560976
+    },
+    {
+      "candidate_id": "candidate_0665",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0665_yaw_1",
+      "habitat_depth_positive_fraction": 0.6499739583333334,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6467348544453186
+    },
+    {
+      "candidate_id": "candidate_0665",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0665_yaw_2",
+      "habitat_depth_positive_fraction": 0.14423828125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.14870180959874116
+    },
+    {
+      "candidate_id": "candidate_0430",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0430_yaw_0",
+      "habitat_depth_positive_fraction": 0.24372721354166665,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.24862313139260425
+    },
+    {
+      "candidate_id": "candidate_0430",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0430_yaw_1",
+      "habitat_depth_positive_fraction": 0.63447265625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6372934697088907
+    },
+    {
+      "candidate_id": "candidate_0430",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0430_yaw_2",
+      "habitat_depth_positive_fraction": 0.323984375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.3288749016522423
+    },
+    {
+      "candidate_id": "candidate_0416",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0416_yaw_0",
+      "habitat_depth_positive_fraction": 0.710185546875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7081038552321007
+    },
+    {
+      "candidate_id": "candidate_0416",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0416_yaw_1",
+      "habitat_depth_positive_fraction": 0.12077473958333333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.13217938630999213
+    },
+    {
+      "candidate_id": "candidate_0416",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0416_yaw_2",
+      "habitat_depth_positive_fraction": 0.9999186197916666,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0713",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0713_yaw_0",
+      "habitat_depth_positive_fraction": 0.6988639322916667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6939417781274587
+    },
+    {
+      "candidate_id": "candidate_0713",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0713_yaw_1",
+      "habitat_depth_positive_fraction": 0.5125032552083333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5121951219512195
+    },
+    {
+      "candidate_id": "candidate_0713",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0713_yaw_2",
+      "habitat_depth_positive_fraction": 0.116005859375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.12431156569630213
+    },
+    {
+      "candidate_id": "candidate_0775",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0775_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0775",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0775_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0775",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0775_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0904",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0904_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0904",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0904_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0904",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0904_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0238",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0238_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0238",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0238_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0238",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0238_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0990",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0990_yaw_0",
+      "habitat_depth_positive_fraction": 0.24212890625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.24704956726986624
+    },
+    {
+      "candidate_id": "candidate_0990",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0990_yaw_1",
+      "habitat_depth_positive_fraction": 0.34108072916666665,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.34618410700236035
+    },
+    {
+      "candidate_id": "candidate_0990",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0990_yaw_2",
+      "habitat_depth_positive_fraction": 0.15248697916666668,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.16207710464201416
+    },
+    {
+      "candidate_id": "candidate_0421",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0421_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0421",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0421_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0421",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0421_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0006",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0006_yaw_0",
+      "habitat_depth_positive_fraction": 0.2968359375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.3013375295043273
+    },
+    {
+      "candidate_id": "candidate_0006",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0006_yaw_1",
+      "habitat_depth_positive_fraction": 0.36184244791666664,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.36585365853658536
+    },
+    {
+      "candidate_id": "candidate_0006",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0006_yaw_2",
+      "habitat_depth_positive_fraction": 0.58580078125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5885129819040126
+    },
+    {
+      "candidate_id": "candidate_0996",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0996_yaw_0",
+      "habitat_depth_positive_fraction": 0.5721842447916666,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5719905586152636
+    },
+    {
+      "candidate_id": "candidate_0996",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0996_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0996",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0996_yaw_2",
+      "habitat_depth_positive_fraction": 0.45296549479166665,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.45318646734854445
+    },
+    {
+      "candidate_id": "candidate_0487",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0487_yaw_0",
+      "habitat_depth_positive_fraction": 0.6479069010416667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6514555468135327
+    },
+    {
+      "candidate_id": "candidate_0487",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0487_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0487",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0487_yaw_2",
+      "habitat_depth_positive_fraction": 0.122080078125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.12588512981904013
+    },
+    {
+      "candidate_id": "candidate_0679",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0679_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0679",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0679_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0679",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0679_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0771",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0771_yaw_0",
+      "habitat_depth_positive_fraction": 0.3556770833333333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.35955940204563336
+    },
+    {
+      "candidate_id": "candidate_0771",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0771_yaw_1",
+      "habitat_depth_positive_fraction": 0.29430013020833334,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.2974036191974823
+    },
+    {
+      "candidate_id": "candidate_0771",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0771_yaw_2",
+      "habitat_depth_positive_fraction": 0.39716145833333333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.3988985051140834
+    },
+    {
+      "candidate_id": "candidate_0758",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0758_yaw_0",
+      "habitat_depth_positive_fraction": 0.605615234375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5877261998426436
+    },
+    {
+      "candidate_id": "candidate_0758",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0758_yaw_1",
+      "habitat_depth_positive_fraction": 0.26417643229166665,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.2682926829268293
+    },
+    {
+      "candidate_id": "candidate_0758",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0758_yaw_2",
+      "habitat_depth_positive_fraction": 0.20176106770833332,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.2077104642014162
+    },
+    {
+      "candidate_id": "candidate_0916",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0916_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0916",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0916_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0916",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0916_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0346",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0346_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0346",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0346_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0346",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0346_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0123",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0123_yaw_0",
+      "habitat_depth_positive_fraction": 0.7085872395833334,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6978756884343037
+    },
+    {
+      "candidate_id": "candidate_0123",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0123_yaw_1",
+      "habitat_depth_positive_fraction": 0.30547526041666667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.3131392604248623
+    },
+    {
+      "candidate_id": "candidate_0123",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0123_yaw_2",
+      "habitat_depth_positive_fraction": 0.43420572916666667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.43509047993705746
+    },
+    {
+      "candidate_id": "candidate_0601",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0601_yaw_0",
+      "habitat_depth_positive_fraction": 0.276533203125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.2887490165224233
+    },
+    {
+      "candidate_id": "candidate_0601",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0601_yaw_1",
+      "habitat_depth_positive_fraction": 0.4922330729166667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.4988198269079465
+    },
+    {
+      "candidate_id": "candidate_0601",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0601_yaw_2",
+      "habitat_depth_positive_fraction": 0.7070475260416667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7025963808025177
+    },
+    {
+      "candidate_id": "candidate_0681",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0681_yaw_0",
+      "habitat_depth_positive_fraction": 0.5314095052083333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5279307631785995
+    },
+    {
+      "candidate_id": "candidate_0681",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0681_yaw_1",
+      "habitat_depth_positive_fraction": 0.5916731770833333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5861526357199056
+    },
+    {
+      "candidate_id": "candidate_0681",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0681_yaw_2",
+      "habitat_depth_positive_fraction": 0.10069986979166666,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.10700236034618411
+    },
+    {
+      "candidate_id": "candidate_0561",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0561_yaw_0",
+      "habitat_depth_positive_fraction": 0.8753125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.8678206136900078
+    },
+    {
+      "candidate_id": "candidate_0561",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0561_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0561",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0561_yaw_2",
+      "habitat_depth_positive_fraction": 0.2867740885416667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.2903225806451613
+    },
+    {
+      "candidate_id": "candidate_0144",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0144_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0144",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0144_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0144",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0144_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0090",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0090_yaw_0",
+      "habitat_depth_positive_fraction": 0.9708203125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.96066089693155
+    },
+    {
+      "candidate_id": "candidate_0090",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0090_yaw_1",
+      "habitat_depth_positive_fraction": 0.3497493489583333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.35169158143194335
+    },
+    {
+      "candidate_id": "candidate_0090",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0090_yaw_2",
+      "habitat_depth_positive_fraction": 0.999951171875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0207",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0207_yaw_0",
+      "habitat_depth_positive_fraction": 0.9999934895833333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0207",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0207_yaw_1",
+      "habitat_depth_positive_fraction": 0.673154296875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6703383162863886
+    },
+    {
+      "candidate_id": "candidate_0207",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0207_yaw_2",
+      "habitat_depth_positive_fraction": 0.5708333333333333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5759244689221086
+    },
+    {
+      "candidate_id": "candidate_0311",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0311_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0311",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0311_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0311",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0311_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0983",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0983_yaw_0",
+      "habitat_depth_positive_fraction": 0.46674153645833333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.46105428796223447
+    },
+    {
+      "candidate_id": "candidate_0983",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0983_yaw_1",
+      "habitat_depth_positive_fraction": 0.15111328125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.15656963021243114
+    },
+    {
+      "candidate_id": "candidate_0983",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0983_yaw_2",
+      "habitat_depth_positive_fraction": 0.23261393229166666,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.23839496459480725
+    },
+    {
+      "candidate_id": "candidate_0557",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0557_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0557",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0557_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0557",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0557_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0786",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0786_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0786",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0786_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0786",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0786_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0219",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0219_yaw_0",
+      "habitat_depth_positive_fraction": 0.7440885416666667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7340676632572777
+    },
+    {
+      "candidate_id": "candidate_0219",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0219_yaw_1",
+      "habitat_depth_positive_fraction": 0.22016276041666666,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.22659323367427223
+    },
+    {
+      "candidate_id": "candidate_0219",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0219_yaw_2",
+      "habitat_depth_positive_fraction": 0.36201171875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.35877261998426435
+    },
+    {
+      "candidate_id": "candidate_0821",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0821_yaw_0",
+      "habitat_depth_positive_fraction": 0.33663736979166664,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.34067663257277736
+    },
+    {
+      "candidate_id": "candidate_0821",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0821_yaw_1",
+      "habitat_depth_positive_fraction": 0.10448893229166667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.11014948859166011
+    },
+    {
+      "candidate_id": "candidate_0821",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0821_yaw_2",
+      "habitat_depth_positive_fraction": 0.58796875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5900865460267506
+    },
+    {
+      "candidate_id": "candidate_0119",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0119_yaw_0",
+      "habitat_depth_positive_fraction": 0.999931640625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0119",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0119_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0119",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0119_yaw_2",
+      "habitat_depth_positive_fraction": 0.518173828125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5216365066876475
+    },
+    {
+      "candidate_id": "candidate_0259",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0259_yaw_0",
+      "habitat_depth_positive_fraction": 0.7151985677083333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7159716758457907
+    },
+    {
+      "candidate_id": "candidate_0259",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0259_yaw_1",
+      "habitat_depth_positive_fraction": 0.9999576822916667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0259",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0259_yaw_2",
+      "habitat_depth_positive_fraction": 0.22869466145833334,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.23131392604248624
+    },
+    {
+      "candidate_id": "candidate_0577",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0577_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0577",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0577_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0577",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0577_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0164",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0164_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0164",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0164_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0164",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0164_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0801",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0801_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0801",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0801_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0801",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0801_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0986",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0986_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0986",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0986_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0986",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0986_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0909",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0909_yaw_0",
+      "habitat_depth_positive_fraction": 0.7401953125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7395751376868608
+    },
+    {
+      "candidate_id": "candidate_0909",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0909_yaw_1",
+      "habitat_depth_positive_fraction": 0.158583984375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.16679779701022818
+    },
+    {
+      "candidate_id": "candidate_0909",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0909_yaw_2",
+      "habitat_depth_positive_fraction": 0.9999869791666667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0553",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0553_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0553",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0553_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0553",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0553_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0523",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0523_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0523",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0523_yaw_1",
+      "habitat_depth_positive_fraction": 0.49007486979166665,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.4917387883556255
+    },
+    {
+      "candidate_id": "candidate_0523",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0523_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0279",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0279_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0279",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0279_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0279",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0279_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0476",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0476_yaw_0",
+      "habitat_depth_positive_fraction": 0.20528645833333334,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.2084972462627852
+    },
+    {
+      "candidate_id": "candidate_0476",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0476_yaw_1",
+      "habitat_depth_positive_fraction": 0.26795572916666666,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.2832415420928403
+    },
+    {
+      "candidate_id": "candidate_0476",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0476_yaw_2",
+      "habitat_depth_positive_fraction": 0.29991536458333334,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.30527143981117233
+    },
+    {
+      "candidate_id": "candidate_0394",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0394_yaw_0",
+      "habitat_depth_positive_fraction": 0.6665104166666667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7411487018095987
+    },
+    {
+      "candidate_id": "candidate_0394",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0394_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0394",
+      "category": "INDEPENDENT_PASS_HABITAT_FAIL",
+      "frame_id": "candidate_0394_yaw_2",
+      "habitat_depth_positive_fraction": 0.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_FAIL",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.1911880409126672
+    },
+    {
+      "candidate_id": "candidate_0082",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0082_yaw_0",
+      "habitat_depth_positive_fraction": 0.7011295572916667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7018095987411487
+    },
+    {
+      "candidate_id": "candidate_0082",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0082_yaw_1",
+      "habitat_depth_positive_fraction": 0.6862890625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6860739575137687
+    },
+    {
+      "candidate_id": "candidate_0082",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0082_yaw_2",
+      "habitat_depth_positive_fraction": 0.3014778645833333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.3060582218725413
+    },
+    {
+      "candidate_id": "candidate_0195",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0195_yaw_0",
+      "habitat_depth_positive_fraction": 0.60041015625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5908733280881195
+    },
+    {
+      "candidate_id": "candidate_0195",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0195_yaw_1",
+      "habitat_depth_positive_fraction": 0.6347493489583333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6286388670338316
+    },
+    {
+      "candidate_id": "candidate_0195",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0195_yaw_2",
+      "habitat_depth_positive_fraction": 0.10544270833333333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.11565696302124312
+    },
+    {
+      "candidate_id": "candidate_0868",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0868_yaw_0",
+      "habitat_depth_positive_fraction": 0.7212858072916667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.7199055861526357
+    },
+    {
+      "candidate_id": "candidate_0868",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0868_yaw_1",
+      "habitat_depth_positive_fraction": 0.5144401041666666,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5153422501966956
+    },
+    {
+      "candidate_id": "candidate_0868",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0868_yaw_2",
+      "habitat_depth_positive_fraction": 0.28892578125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.28481510621557826
+    },
+    {
+      "candidate_id": "candidate_0114",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0114_yaw_0",
+      "habitat_depth_positive_fraction": 0.999990234375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0114",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0114_yaw_1",
+      "habitat_depth_positive_fraction": 0.8738997395833333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.8630999213217939
+    },
+    {
+      "candidate_id": "candidate_0114",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0114_yaw_2",
+      "habitat_depth_positive_fraction": 0.494912109375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.4964594807238395
+    },
+    {
+      "candidate_id": "candidate_0450",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0450_yaw_0",
+      "habitat_depth_positive_fraction": 0.9999934895833333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0450",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0450_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0450",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0450_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0995",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0995_yaw_0",
+      "habitat_depth_positive_fraction": 0.3703255208333333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.3690007867820614
+    },
+    {
+      "candidate_id": "candidate_0995",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0995_yaw_1",
+      "habitat_depth_positive_fraction": 0.41473958333333333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.4217151848937844
+    },
+    {
+      "candidate_id": "candidate_0995",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0995_yaw_2",
+      "habitat_depth_positive_fraction": 0.22509114583333334,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.22738001573564123
+    },
+    {
+      "candidate_id": "candidate_0349",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0349_yaw_0",
+      "habitat_depth_positive_fraction": 0.8762858072916667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.8725413060582219
+    },
+    {
+      "candidate_id": "candidate_0349",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0349_yaw_1",
+      "habitat_depth_positive_fraction": 0.614140625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6121164437450826
+    },
+    {
+      "candidate_id": "candidate_0349",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0349_yaw_2",
+      "habitat_depth_positive_fraction": 0.537470703125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5452399685287176
+    },
+    {
+      "candidate_id": "candidate_0968",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0968_yaw_0",
+      "habitat_depth_positive_fraction": 0.66853515625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6711250983477577
+    },
+    {
+      "candidate_id": "candidate_0968",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0968_yaw_1",
+      "habitat_depth_positive_fraction": 0.5652083333333333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5672698662470496
+    },
+    {
+      "candidate_id": "candidate_0968",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0968_yaw_2",
+      "habitat_depth_positive_fraction": 0.183759765625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.1872541306058222
+    },
+    {
+      "candidate_id": "candidate_0189",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0189_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0189",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0189_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0189",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0189_yaw_2",
+      "habitat_depth_positive_fraction": 0.999912109375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0358",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0358_yaw_0",
+      "habitat_depth_positive_fraction": 0.8930305989583334,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0358",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0358_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0358",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0358_yaw_2",
+      "habitat_depth_positive_fraction": 0.46004557291666665,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6325727773406766
+    },
+    {
+      "candidate_id": "candidate_0563",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0563_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0563",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0563_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0563",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0563_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0194",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0194_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0194",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0194_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0194",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0194_yaw_2",
+      "habitat_depth_positive_fraction": 0.5609602864583333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5594020456333596
+    },
+    {
+      "candidate_id": "candidate_0879",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0879_yaw_0",
+      "habitat_depth_positive_fraction": 0.64791015625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6514555468135327
+    },
+    {
+      "candidate_id": "candidate_0879",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0879_yaw_1",
+      "habitat_depth_positive_fraction": 0.9819140625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.978756884343037
+    },
+    {
+      "candidate_id": "candidate_0879",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0879_yaw_2",
+      "habitat_depth_positive_fraction": 0.3662109375,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.3682140047206924
+    },
+    {
+      "candidate_id": "candidate_0501",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0501_yaw_0",
+      "habitat_depth_positive_fraction": 0.35018229166666665,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.35955940204563336
+    },
+    {
+      "candidate_id": "candidate_0501",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0501_yaw_1",
+      "habitat_depth_positive_fraction": 0.22403645833333333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.23446105428796224
+    },
+    {
+      "candidate_id": "candidate_0501",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0501_yaw_2",
+      "habitat_depth_positive_fraction": 0.9118522135416667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.90558615263572
+    },
+    {
+      "candidate_id": "candidate_0239",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0239_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0239",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0239_yaw_1",
+      "habitat_depth_positive_fraction": 0.422705078125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.43273013375295044
+    },
+    {
+      "candidate_id": "candidate_0239",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0239_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0635",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0635_yaw_0",
+      "habitat_depth_positive_fraction": 0.999921875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0635",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0635_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0635",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0635_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0773",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0773_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0773",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0773_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0773",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0773_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0408",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0408_yaw_0",
+      "habitat_depth_positive_fraction": 0.6216471354166667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.6176239181746657
+    },
+    {
+      "candidate_id": "candidate_0408",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0408_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0408",
+      "category": "INDEPENDENT_PASS_HABITAT_FAIL",
+      "frame_id": "candidate_0408_yaw_2",
+      "habitat_depth_positive_fraction": 0.09886067708333333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_FAIL",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.1022816679779701
+    },
+    {
+      "candidate_id": "candidate_0877",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0877_yaw_0",
+      "habitat_depth_positive_fraction": 0.9708138020833333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.964594807238395
+    },
+    {
+      "candidate_id": "candidate_0877",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0877_yaw_1",
+      "habitat_depth_positive_fraction": 0.36435546875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.3682140047206924
+    },
+    {
+      "candidate_id": "candidate_0877",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0877_yaw_2",
+      "habitat_depth_positive_fraction": 0.511337890625,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.5129819040125885
+    },
+    {
+      "candidate_id": "candidate_0178",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0178_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0178",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0178_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0178",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0178_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0128",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0128_yaw_0",
+      "habitat_depth_positive_fraction": 0.4269205729166667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.4366640440597954
+    },
+    {
+      "candidate_id": "candidate_0128",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0128_yaw_1",
+      "habitat_depth_positive_fraction": 0.8266927083333333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.8229740361919748
+    },
+    {
+      "candidate_id": "candidate_0128",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0128_yaw_2",
+      "habitat_depth_positive_fraction": 0.31701171875,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.3217938630999213
+    },
+    {
+      "candidate_id": "candidate_0855",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0855_yaw_0",
+      "habitat_depth_positive_fraction": 0.42028645833333333,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.42722265932336745
+    },
+    {
+      "candidate_id": "candidate_0855",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0855_yaw_1",
+      "habitat_depth_positive_fraction": 0.8190494791666667,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.8166797797010228
+    },
+    {
+      "candidate_id": "candidate_0855",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0855_yaw_2",
+      "habitat_depth_positive_fraction": 0.294814453125,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 0.2974036191974823
+    },
+    {
+      "candidate_id": "candidate_0016",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0016_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0016",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0016_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0016",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0016_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0459",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0459_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0459",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0459_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0459",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0459_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0694",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0694_yaw_0",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0694",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0694_yaw_1",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    },
+    {
+      "candidate_id": "candidate_0694",
+      "category": "BOTH_PASS",
+      "frame_id": "candidate_0694_yaw_2",
+      "habitat_depth_positive_fraction": 1.0,
+      "habitat_status": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+      "independent_status": "INDEPENDENT_VIEW_COVERAGE_PASS",
+      "independent_valid_hit_fraction": 1.0
+    }
+  ]
+}

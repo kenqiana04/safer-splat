@@ -1,0 +1,35 @@
+{
+  "bvh_origin_git_blob": "2b68d92c0227e2991273e3fd41517aed9c137b93",
+  "bvh_source_sha256": "fcca39a9216014201dd7820c99d06c887b54e26a1d34c2ec5d20d4d9964b1612",
+  "checks": {
+    "mesh_sha256": true,
+    "navmesh_sha256": true,
+    "v1_manifest_sha256": true,
+    "v1_staging_tree_sha256": true
+  },
+  "expected": {
+    "mesh_sha256": "274677d9b7caa413230363b68f4aa472e5cc1afe87e422a489fa1b7d844c6182",
+    "navmesh_sha256": "32296d6457d3855ffe172cf1970364559def5dd15892e149b44d0bc7c6b7e938",
+    "v1_manifest_sha256": "1056121e4470124e180a3367172440f540f0acdc5adab665c3187ac8ab87be25",
+    "v1_staging_tree_sha256": "39367c04f6e6ea510590f77ee1275e78333123608e6eb2223c1d419260288c51"
+  },
+  "formal_render_count": 0,
+  "gaussian_training_count": 0,
+  "observed": {
+    "mesh_sha256": "274677d9b7caa413230363b68f4aa472e5cc1afe87e422a489fa1b7d844c6182",
+    "navmesh_sha256": "32296d6457d3855ffe172cf1970364559def5dd15892e149b44d0bc7c6b7e938",
+    "v1_manifest_sha256": "1056121e4470124e180a3367172440f540f0acdc5adab665c3187ac8ab87be25",
+    "v1_staging_tree_sha256": "39367c04f6e6ea510590f77ee1275e78333123608e6eb2223c1d419260288c51"
+  },
+  "paths": {
+    "mesh": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/mesh.ply",
+    "navmesh": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.navmesh",
+    "v1_manifest": "/disk1/zlab/cross_dataset_assets/manifests/replica_protocol_v1/formal_camera_manifest.csv",
+    "v1_staging": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering"
+  },
+  "pr53_head": "9db612569bc37e0f945605f3d73598a04474e63c",
+  "publication_count": 0,
+  "safer_execution_count": 0,
+  "status": "PASS_FROZEN_REPLICA_V3_INPUT_IDENTITY",
+  "tum_rollout_count": 0
+}

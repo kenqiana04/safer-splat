@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "candidate_calls_and_repeatability": true,
+    "contract_before_candidates": true,
+    "cross_validation": true,
+    "frozen_manifest": true,
+    "habitat_budget_and_pool": true,
+    "independent_float64": true,
+    "input_identity": true,
+    "location_split": true,
+    "paired20_unchanged": true,
+    "pose_triplets": true,
+    "python_compile": true,
+    "repeatability": true,
+    "spatial_selection": true,
+    "v1_staging_unchanged": true
+  },
+  "final_status": "PASS_REPLICA_RENDER_PROTOCOL_V3_PRE_RENDER_COVERAGE_QUALIFICATION",
+  "formal_300_frame_render_count": 0,
+  "gaussian_training_count": 0,
+  "json_compact_artifacts_parseable": true,
+  "paired20_manifest_sha256": "380717f0ec39e0e422902573685f5a2838e78dd6efcce500ba71585efd3d82f6",
+  "protocol_identity_file_sha256": "41de0f97b266e3c53d57073ec8504eee516714372a2a0fea867434eccb966bb1",
+  "publication_count": 0,
+  "python_compile_errors": [],
+  "safer_cbf_count": 0,
+  "start_safe_risk_aware_recovery_count": 0,
+  "tum_rollout_count": 0
+}

@@ -1,0 +1,3859 @@
+{
+  "a_b_disagreement_count": 0,
+  "fresh_subprocess_and_simulator_per_repeat": true,
+  "repeat_a_pass_count": 30,
+  "repeat_b_pass_count": 30,
+  "repeatability_probe_count": 30,
+  "results": [
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0092",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0092",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 4.813480377197266,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "d2cb9ac7c53bdae5cb17e13d067c3bdc8bb888e5776efba3e0ba0326d2d9d7e4",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_raw_sha256": "99d6112943ee5f98833ff2564f748a2c64cb3777d79ed7cd8da813ffe4fb4c80",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.8518378951100273,
+              0.0,
+              -0.5238054986867914,
+              -0.729041576385498
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              0.5238054986867914,
+              0.0,
+              0.8518378951100273,
+              0.8871690034866333
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.2721783467599625,
+            -0.0,
+            0.9622468225746519
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0092",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 4.813480377197266,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "d2cb9ac7c53bdae5cb17e13d067c3bdc8bb888e5776efba3e0ba0326d2d9d7e4",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_raw_sha256": "99d6112943ee5f98833ff2564f748a2c64cb3777d79ed7cd8da813ffe4fb4c80",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.8518378951100273,
+              0.0,
+              -0.5238054986867914,
+              -0.729041576385498
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              0.5238054986867914,
+              0.0,
+              0.8518378951100273,
+              0.8871690034866333
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.2721783467599625,
+            -0.0,
+            0.9622468225746519
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": 60
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0249",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0249",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 3.6683554649353027,
+          "depth_positive_fraction": 0.45928385416666667,
+          "depth_raw_sha256": "57ff26388c776cf6cf6ed7bf89f567c4a4a7f6449247ee25556701b9b95d7c05",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.45922743055555554,
+          "rgb_raw_sha256": "c8c98b5dde973bd8343b20cd8f0345014b5bea8214beb0367add8705c35549bb",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.8128444055402797,
+              0.0,
+              -0.5824808772671163,
+              0.6056040525436401
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              0.5824808772671163,
+              -0.0,
+              -0.8128444055402797,
+              0.6244257688522339
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.9520620792627652,
+            -0.0,
+            -0.30590488265122573
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0249",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 3.6683554649353027,
+          "depth_positive_fraction": 0.45928385416666667,
+          "depth_raw_sha256": "57ff26388c776cf6cf6ed7bf89f567c4a4a7f6449247ee25556701b9b95d7c05",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.45922743055555554,
+          "rgb_raw_sha256": "c8c98b5dde973bd8343b20cd8f0345014b5bea8214beb0367add8705c35549bb",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.8128444055402797,
+              0.0,
+              -0.5824808772671163,
+              0.6056040525436401
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              0.5824808772671163,
+              -0.0,
+              -0.8128444055402797,
+              0.6244257688522339
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.9520620792627652,
+            -0.0,
+            -0.30590488265122573
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": 0
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0169",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0169",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 4.577393054962158,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "65c05954f609d6f6aa3ea91b718746b00d86f107ced9dacd21ece06733d29230",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.9999967447916667,
+          "rgb_raw_sha256": "2f781f92513790a1afef2becca883dce1341d10ef44530ceb336c43a80048a1e",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.3724829765228023,
+              0.0,
+              -0.9280390251496504,
+              -1.517081379890442
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              0.20140433311462402
+            ],
+            [
+              0.9280390251496504,
+              0.0,
+              0.3724829765228023,
+              2.2451815605163574
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.560141510458383,
+            -0.0,
+            0.8283969388290865
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0169",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 4.577393054962158,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "65c05954f609d6f6aa3ea91b718746b00d86f107ced9dacd21ece06733d29230",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.9999967447916667,
+          "rgb_raw_sha256": "2f781f92513790a1afef2becca883dce1341d10ef44530ceb336c43a80048a1e",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.3724829765228023,
+              0.0,
+              -0.9280390251496504,
+              -1.517081379890442
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              0.20140433311462402
+            ],
+            [
+              0.9280390251496504,
+              0.0,
+              0.3724829765228023,
+              2.2451815605163574
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.560141510458383,
+            -0.0,
+            0.8283969388290865
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": -60
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0029",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0029",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 2.910078525543213,
+          "depth_positive_fraction": 0.15722981770833333,
+          "depth_raw_sha256": "d239873138eea22b9aa58254b5f27549c0b4f0e0b43dc581a06b26846d48bf02",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.15722981770833333,
+          "rgb_raw_sha256": "2276c3d9d2190724ac48f799d0b403cfd72e32b93d7aa64617a1fe92f64c523f",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.6483104167960226,
+              0.0,
+              0.7613761248382874,
+              -2.1051313877105713
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              0.24932801723480225
+            ],
+            [
+              -0.7613761248382874,
+              0.0,
+              0.6483104167960226,
+              1.7702504396438599
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.41933851671649325,
+            0.0,
+            0.9078299446471301
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0029",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 2.910078525543213,
+          "depth_positive_fraction": 0.15722981770833333,
+          "depth_raw_sha256": "d239873138eea22b9aa58254b5f27549c0b4f0e0b43dc581a06b26846d48bf02",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.15722981770833333,
+          "rgb_raw_sha256": "2276c3d9d2190724ac48f799d0b403cfd72e32b93d7aa64617a1fe92f64c523f",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.6483104167960226,
+              0.0,
+              0.7613761248382874,
+              -2.1051313877105713
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              0.24932801723480225
+            ],
+            [
+              -0.7613761248382874,
+              0.0,
+              0.6483104167960226,
+              1.7702504396438599
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.41933851671649325,
+            0.0,
+            0.9078299446471301
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": 60
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0294",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0294",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 2.597513437271118,
+          "depth_positive_fraction": 0.39322591145833335,
+          "depth_raw_sha256": "74cc70c69f641aefb3fa62d99150269da77ee291a6e80c4d7f547d28336ada13",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.39322591145833335,
+          "rgb_raw_sha256": "a031aa747d959004ffa2ff2b5bacc1321f1714ce00d499e31dcd5d9c9ed097b2",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.9224850672541806,
+              0.0,
+              -0.3860327715273018,
+              0.9896584153175354
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              0.3860327715273018,
+              -0.0,
+              -0.9224850672541806,
+              1.5070288181304932
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.9804297698596725,
+            -0.0,
+            -0.1968691605430107
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0294",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 2.597513437271118,
+          "depth_positive_fraction": 0.39322591145833335,
+          "depth_raw_sha256": "74cc70c69f641aefb3fa62d99150269da77ee291a6e80c4d7f547d28336ada13",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.39322591145833335,
+          "rgb_raw_sha256": "a031aa747d959004ffa2ff2b5bacc1321f1714ce00d499e31dcd5d9c9ed097b2",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.9224850672541806,
+              0.0,
+              -0.3860327715273018,
+              0.9896584153175354
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              0.3860327715273018,
+              -0.0,
+              -0.9224850672541806,
+              1.5070288181304932
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.9804297698596725,
+            -0.0,
+            -0.1968691605430107
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": 0
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0104",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0104",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 5.628861427307129,
+          "depth_positive_fraction": 0.153544921875,
+          "depth_raw_sha256": "41971cbeb33a44408311f6c83e1f5dee5728641c2fd560a3ca88ce81c099d27d",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.153544921875,
+          "rgb_raw_sha256": "a8f320f54b6ae15f92c1edb7286ec681cd68f85e77499813137f79003221ba52",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.7925342640129687,
+              0.0,
+              0.6098273857128934,
+              -1.9342875480651855
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              0.21404576301574707
+            ],
+            [
+              -0.6098273857128934,
+              0.0,
+              0.7925342640129687,
+              4.725563049316406
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.3220758730385057,
+            0.0,
+            0.9467138596252219
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0104",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 5.628861427307129,
+          "depth_positive_fraction": 0.153544921875,
+          "depth_raw_sha256": "41971cbeb33a44408311f6c83e1f5dee5728641c2fd560a3ca88ce81c099d27d",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.153544921875,
+          "rgb_raw_sha256": "a8f320f54b6ae15f92c1edb7286ec681cd68f85e77499813137f79003221ba52",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.7925342640129687,
+              0.0,
+              0.6098273857128934,
+              -1.9342875480651855
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              0.21404576301574707
+            ],
+            [
+              -0.6098273857128934,
+              0.0,
+              0.7925342640129687,
+              4.725563049316406
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.3220758730385057,
+            0.0,
+            0.9467138596252219
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": 60
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0296",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0296",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 3.7159788608551025,
+          "depth_positive_fraction": 0.5972135416666666,
+          "depth_raw_sha256": "db56052bd0329cd3b578c71e320bbfe42cd3b2c368ad7fab5c7b4fb1d84e864c",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.5972102864583333,
+          "rgb_raw_sha256": "8aa3216a3f20611900cdb4bc54e1005dbabed59b14bc4501aa1173fe823b5366",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.1269283467911327,
+              0.0,
+              -0.9919118886175677,
+              0.9896584153175354
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              0.9919118886175677,
+              -0.0,
+              -0.1269283467911327,
+              1.5070288181304932
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.7506425070535018,
+            0.0,
+            0.6607085791818006
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0296",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 3.7159788608551025,
+          "depth_positive_fraction": 0.5972135416666666,
+          "depth_raw_sha256": "db56052bd0329cd3b578c71e320bbfe42cd3b2c368ad7fab5c7b4fb1d84e864c",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.5972102864583333,
+          "rgb_raw_sha256": "8aa3216a3f20611900cdb4bc54e1005dbabed59b14bc4501aa1173fe823b5366",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.1269283467911327,
+              0.0,
+              -0.9919118886175677,
+              0.9896584153175354
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              0.9919118886175677,
+              -0.0,
+              -0.1269283467911327,
+              1.5070288181304932
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.7506425070535018,
+            0.0,
+            0.6607085791818006
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": 60
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0208",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0208",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 2.11857271194458,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "216d485fca4a8e30ecee35c2e989ac2181e37337c5167b161c988027fb345138",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_raw_sha256": "a77e7f1fe531b2007c3a3340e7173f4d48aabdc8390c61caa9e297b5d63a4634",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.9939172845774822,
+              0.0,
+              -0.11012915789255957,
+              1.5350645780563354
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              0.11012915789255957,
+              0.0,
+              0.9939172845774822,
+              3.290405750274658
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.055148505974857674,
+            -0.0,
+            0.9984781631506726
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0208",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 2.11857271194458,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "216d485fca4a8e30ecee35c2e989ac2181e37337c5167b161c988027fb345138",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_raw_sha256": "a77e7f1fe531b2007c3a3340e7173f4d48aabdc8390c61caa9e297b5d63a4634",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.9939172845774822,
+              0.0,
+              -0.11012915789255957,
+              1.5350645780563354
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              0.11012915789255957,
+              0.0,
+              0.9939172845774822,
+              3.290405750274658
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.055148505974857674,
+            -0.0,
+            0.9984781631506726
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": -60
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0220",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0220",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 6.498741626739502,
+          "depth_positive_fraction": 0.323173828125,
+          "depth_raw_sha256": "f7f0d4668119f269120ab255b5061b033a5ce9fc7277e2c04009012e8ec8a8e1",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.323173828125,
+          "rgb_raw_sha256": "5166a290ad9700c18db1475ada64928d8b30b4b8fde60dbebab1a0ab4cdc6821",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.19147390506766981,
+              0.0,
+              0.9814977043672273,
+              3.4952571392059326
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              -0.9814977043672273,
+              0.0,
+              0.19147390506766981,
+              -2.0950536727905273
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.6358168348401646,
+            0.0,
+            0.7718399785796503
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0220",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 6.498741626739502,
+          "depth_positive_fraction": 0.323173828125,
+          "depth_raw_sha256": "f7f0d4668119f269120ab255b5061b033a5ce9fc7277e2c04009012e8ec8a8e1",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.323173828125,
+          "rgb_raw_sha256": "5166a290ad9700c18db1475ada64928d8b30b4b8fde60dbebab1a0ab4cdc6821",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.19147390506766981,
+              0.0,
+              0.9814977043672273,
+              3.4952571392059326
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              -0.9814977043672273,
+              0.0,
+              0.19147390506766981,
+              -2.0950536727905273
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.6358168348401646,
+            0.0,
+            0.7718399785796503
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": -60
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0276",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0276",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 2.1625261306762695,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "bf0089dd54546c68adcf6b3e8321059e9f7b56f3f19901a2d77fede066d3b6bb",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_raw_sha256": "f3bc5a1e3aa61398113984328fa7978a80d05a2417dc642bce3aba6bf5a0c824",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.7879071063613126,
+              0.0,
+              -0.6157941147375017,
+              4.227324962615967
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              0.6157941147375017,
+              0.0,
+              0.7879071063613126,
+              0.6873506903648376
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.32564773424567806,
+            -0.0,
+            0.9454911703345813
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0276",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 2.1625261306762695,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "bf0089dd54546c68adcf6b3e8321059e9f7b56f3f19901a2d77fede066d3b6bb",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_raw_sha256": "f3bc5a1e3aa61398113984328fa7978a80d05a2417dc642bce3aba6bf5a0c824",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.7879071063613126,
+              0.0,
+              -0.6157941147375017,
+              4.227324962615967
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              0.6157941147375017,
+              0.0,
+              0.7879071063613126,
+              0.6873506903648376
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.32564773424567806,
+            -0.0,
+            0.9454911703345813
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": 0
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0021",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0021",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 8.286249160766602,
+          "depth_positive_fraction": 0.484287109375,
+          "depth_raw_sha256": "4404c7a236063729f5ba22a6f433b039f977ccde45c82db856bccc5de47f8456",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.484287109375,
+          "rgb_raw_sha256": "71630987c7812a82eeedacadf5ab270979f2397e793b96abea6ff608ccd04f4e",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.51234401482673,
+              0.0,
+              -0.8587803039609301,
+              -2.144124984741211
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              0.8587803039609301,
+              0.0,
+              0.51234401482673,
+              3.397672176361084
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.49378942129883163,
+            -0.0,
+            0.8695815128056512
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0021",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 8.286249160766602,
+          "depth_positive_fraction": 0.484287109375,
+          "depth_raw_sha256": "4404c7a236063729f5ba22a6f433b039f977ccde45c82db856bccc5de47f8456",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.484287109375,
+          "rgb_raw_sha256": "71630987c7812a82eeedacadf5ab270979f2397e793b96abea6ff608ccd04f4e",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.51234401482673,
+              0.0,
+              -0.8587803039609301,
+              -2.144124984741211
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              0.8587803039609301,
+              0.0,
+              0.51234401482673,
+              3.397672176361084
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.49378942129883163,
+            -0.0,
+            0.8695815128056512
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": 0
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0213",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0213",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 5.362431049346924,
+          "depth_positive_fraction": 0.94126953125,
+          "depth_raw_sha256": "f25c092c6fa6c42f02621c4571cfbc930ac67105ed329601578208d79065fcfb",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.94126953125,
+          "rgb_raw_sha256": "b616158f3b49672ad42a97c1ff5da44c53d9a41e2d69a74efd312dccec65e7de",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.5813277472809202,
+              0.0,
+              -0.8136694969342839,
+              -1.627970814704895
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              0.19958889484405518
+            ],
+            [
+              0.8136694969342839,
+              -0.0,
+              -0.5813277472809202,
+              1.0031087398529053
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.8891928214062798,
+            -0.0,
+            -0.45753265059396575
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0213",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 5.362431049346924,
+          "depth_positive_fraction": 0.94126953125,
+          "depth_raw_sha256": "f25c092c6fa6c42f02621c4571cfbc930ac67105ed329601578208d79065fcfb",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.94126953125,
+          "rgb_raw_sha256": "b616158f3b49672ad42a97c1ff5da44c53d9a41e2d69a74efd312dccec65e7de",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.5813277472809202,
+              0.0,
+              -0.8136694969342839,
+              -1.627970814704895
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              0.19958889484405518
+            ],
+            [
+              0.8136694969342839,
+              -0.0,
+              -0.5813277472809202,
+              1.0031087398529053
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.8891928214062798,
+            -0.0,
+            -0.45753265059396575
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": 0
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0137",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0137",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 0.7815410494804382,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "3369b6c6d7e64148fbe470855bb8023da1d21062ff129d67f13129b8528edf0f",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_raw_sha256": "af5c3a3be47246e7d8e00512cfb0128da670292fb689b8161d5055deb1cfe878",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.7615196083972138,
+              0.0,
+              -0.6481418718355992,
+              3.8938889503479004
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              0.6481418718355992,
+              -0.0,
+              -0.7615196083972138,
+              0.8954728841781616
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.9384880415852974,
+            -0.0,
+            -0.34531173713239627
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0137",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 0.7815410494804382,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "3369b6c6d7e64148fbe470855bb8023da1d21062ff129d67f13129b8528edf0f",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_raw_sha256": "af5c3a3be47246e7d8e00512cfb0128da670292fb689b8161d5055deb1cfe878",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.7615196083972138,
+              0.0,
+              -0.6481418718355992,
+              3.8938889503479004
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              0.6481418718355992,
+              -0.0,
+              -0.7615196083972138,
+              0.8954728841781616
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.9384880415852974,
+            -0.0,
+            -0.34531173713239627
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": 60
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0011",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0011",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 5.33406400680542,
+          "depth_positive_fraction": 0.7491861979166666,
+          "depth_raw_sha256": "7d454a1ae68710f01d8fa98657f8d98324dafca11ba794f0f8a208d24136cd5d",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.7491731770833333,
+          "rgb_raw_sha256": "37cea8eeba3a38a8af36d487ca6e72f3cb987d98a45e605ea8453f6c6a0353e7",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.18657411788385433,
+              0.0,
+              -0.9824408880619036,
+              -0.7150417566299438
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              0.9824408880619036,
+              -0.0,
+              -0.18657411788385433,
+              0.22988463938236237
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.7702512959690021,
+            0.0,
+            0.6377404966426962
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0011",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 5.33406400680542,
+          "depth_positive_fraction": 0.7491861979166666,
+          "depth_raw_sha256": "7d454a1ae68710f01d8fa98657f8d98324dafca11ba794f0f8a208d24136cd5d",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.7491731770833333,
+          "rgb_raw_sha256": "37cea8eeba3a38a8af36d487ca6e72f3cb987d98a45e605ea8453f6c6a0353e7",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.18657411788385433,
+              0.0,
+              -0.9824408880619036,
+              -0.7150417566299438
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              0.9824408880619036,
+              -0.0,
+              -0.18657411788385433,
+              0.22988463938236237
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.7702512959690021,
+            0.0,
+            0.6377404966426962
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": 60
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0272",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0272",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 3.1219165325164795,
+          "depth_positive_fraction": 0.29991536458333334,
+          "depth_raw_sha256": "0e5daa3250891fdbe964006d5ef5e87d08f4822f967b44f105dfed3f23251ccd",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.29988823784722224,
+          "rgb_raw_sha256": "db67fb275b0121e487187a05a09188b646c2e611edb4c0c1d6670fae536b83f9",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.7994305000447027,
+              0.0,
+              0.6007585834578449,
+              0.41627371311187744
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              -0.6007585834578449,
+              0.0,
+              -0.7994305000447027,
+              1.1168874502182007
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.9485332097625002,
+            0.0,
+            0.3166776752119553
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0272",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 3.1219165325164795,
+          "depth_positive_fraction": 0.29991536458333334,
+          "depth_raw_sha256": "0e5daa3250891fdbe964006d5ef5e87d08f4822f967b44f105dfed3f23251ccd",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.29988823784722224,
+          "rgb_raw_sha256": "db67fb275b0121e487187a05a09188b646c2e611edb4c0c1d6670fae536b83f9",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.7994305000447027,
+              0.0,
+              0.6007585834578449,
+              0.41627371311187744
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              -0.6007585834578449,
+              0.0,
+              -0.7994305000447027,
+              1.1168874502182007
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.9485332097625002,
+            0.0,
+            0.3166776752119553
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": 60
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0269",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0269",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 0.5403213500976562,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "c117a3dbee7b093ee5041a0ce303dc0800f3faa32f7bce13aaad1e4bc2198cc4",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_raw_sha256": "aa407c85b3abbe06feb20091c7cff7d06f2f1b60416e90224f5b4fec2de6fc9d",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.9906292729974182,
+              0.0,
+              0.1365783419163034,
+              0.6400046348571777
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              -0.1365783419163034,
+              0.0,
+              -0.9906292729974182,
+              0.6425215005874634
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.9976545677230717,
+            0.0,
+            0.06844971512936265
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0269",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 0.5403213500976562,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "c117a3dbee7b093ee5041a0ce303dc0800f3faa32f7bce13aaad1e4bc2198cc4",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_raw_sha256": "aa407c85b3abbe06feb20091c7cff7d06f2f1b60416e90224f5b4fec2de6fc9d",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.9906292729974182,
+              0.0,
+              0.1365783419163034,
+              0.6400046348571777
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              -0.1365783419163034,
+              0.0,
+              -0.9906292729974182,
+              0.6425215005874634
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.9976545677230717,
+            0.0,
+            0.06844971512936265
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": 60
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0132",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0132",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 2.932954788208008,
+          "depth_positive_fraction": 0.22919921875,
+          "depth_raw_sha256": "0035ae16092a5d3555759596de653651ae48dfc0c18bab13ab3d4e90496e599c",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.22919921875,
+          "rgb_raw_sha256": "e4fad2f580a9f4ecdd3cb88924c808831e8ce82196c34eff8c7837de8bd9b078",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.9173390519794491,
+              0.0,
+              0.3981068496188502,
+              0.09646345674991608
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              -0.3981068496188502,
+              0.0,
+              0.9173390519794491,
+              1.377356767654419
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.2032989769041534,
+            0.0,
+            0.9791167070322744
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0132",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 2.932954788208008,
+          "depth_positive_fraction": 0.22919921875,
+          "depth_raw_sha256": "0035ae16092a5d3555759596de653651ae48dfc0c18bab13ab3d4e90496e599c",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.22919921875,
+          "rgb_raw_sha256": "e4fad2f580a9f4ecdd3cb88924c808831e8ce82196c34eff8c7837de8bd9b078",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.9173390519794491,
+              0.0,
+              0.3981068496188502,
+              0.09646345674991608
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              -0.3981068496188502,
+              0.0,
+              0.9173390519794491,
+              1.377356767654419
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.2032989769041534,
+            0.0,
+            0.9791167070322744
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": 0
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0201",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0201",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 5.436723232269287,
+          "depth_positive_fraction": 0.999990234375,
+          "depth_raw_sha256": "e7dec293cc2ff54c0b0d3cc46bd734d468e09154401f6dc970ba1ca8b73e89df",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.9999717881944444,
+          "rgb_raw_sha256": "20ce5376ec35fbf7242d1bf2cb7c48a52fbf423e1ea4aa520c4957e084c3a795",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.952609899541838,
+              0.0,
+              -0.30419464047693107,
+              2.052314043045044
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              0.30419464047693107,
+              -0.0,
+              -0.952609899541838,
+              -2.0860090255737305
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.988081448955965,
+            -0.0,
+            -0.15393196623535024
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0201",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 5.436723232269287,
+          "depth_positive_fraction": 0.999990234375,
+          "depth_raw_sha256": "e7dec293cc2ff54c0b0d3cc46bd734d468e09154401f6dc970ba1ca8b73e89df",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.9999717881944444,
+          "rgb_raw_sha256": "20ce5376ec35fbf7242d1bf2cb7c48a52fbf423e1ea4aa520c4957e084c3a795",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.952609899541838,
+              0.0,
+              -0.30419464047693107,
+              2.052314043045044
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              0.30419464047693107,
+              -0.0,
+              -0.952609899541838,
+              -2.0860090255737305
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.988081448955965,
+            -0.0,
+            -0.15393196623535024
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": 0
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0275",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0275",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 4.432070255279541,
+          "depth_positive_fraction": 0.5019173177083334,
+          "depth_raw_sha256": "001ab0ea0d55bc743ff9a883055706730b6b4bb9b277e7d23a1720516c84601a",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.5019010416666667,
+          "rgb_raw_sha256": "4ea8a8d79aabc2cf2cfe022e34a80e137cc43e8a5444c8decf8ee28969c7b145",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.9999539123170624,
+              0.0,
+              0.009600689652344984,
+              -0.17673417925834656
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              -0.009600689652344984,
+              0.0,
+              0.9999539123170624,
+              2.9308266639709473
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.004800400136320998,
+            0.0,
+            0.9999884780128875
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0275",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 4.432070255279541,
+          "depth_positive_fraction": 0.5019173177083334,
+          "depth_raw_sha256": "001ab0ea0d55bc743ff9a883055706730b6b4bb9b277e7d23a1720516c84601a",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.5019010416666667,
+          "rgb_raw_sha256": "4ea8a8d79aabc2cf2cfe022e34a80e137cc43e8a5444c8decf8ee28969c7b145",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.9999539123170624,
+              0.0,
+              0.009600689652344984,
+              -0.17673417925834656
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              -0.009600689652344984,
+              0.0,
+              0.9999539123170624,
+              2.9308266639709473
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.004800400136320998,
+            0.0,
+            0.9999884780128875
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": 60
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0156",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0156",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 6.171436786651611,
+          "depth_positive_fraction": 0.5533984375,
+          "depth_raw_sha256": "9f72212ac4f18ba91727cdb7040e75fdd1be9d1da2c3148601e520e7e14097ef",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.5533919270833333,
+          "rgb_raw_sha256": "294455dff29bdce760c929329ce0bde45277c3b299cfa6adfa9ac8539720d145",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.9859508520175057,
+              0.0,
+              -0.16703567704521938,
+              -0.09219787269830704
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              0.16703567704521938,
+              0.0,
+              0.9859508520175057,
+              3.9329936504364014
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.08381273167751552,
+            -0.0,
+            0.9964815231647564
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0156",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 6.171436786651611,
+          "depth_positive_fraction": 0.5533984375,
+          "depth_raw_sha256": "9f72212ac4f18ba91727cdb7040e75fdd1be9d1da2c3148601e520e7e14097ef",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.5533919270833333,
+          "rgb_raw_sha256": "294455dff29bdce760c929329ce0bde45277c3b299cfa6adfa9ac8539720d145",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.9859508520175057,
+              0.0,
+              -0.16703567704521938,
+              -0.09219787269830704
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              0.16703567704521938,
+              0.0,
+              0.9859508520175057,
+              3.9329936504364014
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.08381273167751552,
+            -0.0,
+            0.9964815231647564
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": 0
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0265",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0265",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 3.2425801753997803,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "bf85dc986825c9efdc6008263a10a6ed6d1c2d9188b412938a2f30f6a7168cb7",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_raw_sha256": "d55e675fd002c39fc8e0558275d2aa3ad56357432fc7268ac4dedeef620ce98e",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.6549520241530703,
+              0.0,
+              -0.755670461284412,
+              0.002716958522796631
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              0.755670461284412,
+              0.0,
+              0.6549520241530703,
+              -0.9131530523300171
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.41536007020832516,
+            -0.0,
+            0.9096570848822843
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0265",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 3.2425801753997803,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "bf85dc986825c9efdc6008263a10a6ed6d1c2d9188b412938a2f30f6a7168cb7",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_raw_sha256": "d55e675fd002c39fc8e0558275d2aa3ad56357432fc7268ac4dedeef620ce98e",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.6549520241530703,
+              0.0,
+              -0.755670461284412,
+              0.002716958522796631
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              0.755670461284412,
+              0.0,
+              0.6549520241530703,
+              -0.9131530523300171
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.41536007020832516,
+            -0.0,
+            0.9096570848822843
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": -60
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0048",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0048",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 3.5329391956329346,
+          "depth_positive_fraction": 0.7098860677083333,
+          "depth_raw_sha256": "40433d709218feb5b7e3beff691f5e0fbd342151d7f00440aa4bff93a43cacb7",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.7098860677083333,
+          "rgb_raw_sha256": "b63309738f8704101e1ef31e43233f1782bfc3a99d4d52824ae5888d6190006f",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.9352199402682948,
+              0.0,
+              -0.3540673146798037,
+              3.259033441543579
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              0.3540673146798037,
+              0.0,
+              0.9352199402682948,
+              1.7459735870361328
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.17997230305203243,
+            -0.0,
+            0.9836716780176948
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0048",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 3.5329391956329346,
+          "depth_positive_fraction": 0.7098860677083333,
+          "depth_raw_sha256": "40433d709218feb5b7e3beff691f5e0fbd342151d7f00440aa4bff93a43cacb7",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.7098860677083333,
+          "rgb_raw_sha256": "b63309738f8704101e1ef31e43233f1782bfc3a99d4d52824ae5888d6190006f",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.9352199402682948,
+              0.0,
+              -0.3540673146798037,
+              3.259033441543579
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              0.3540673146798037,
+              0.0,
+              0.9352199402682948,
+              1.7459735870361328
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.17997230305203243,
+            -0.0,
+            0.9836716780176948
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": 0
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0241",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0241",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 3.4756722450256348,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "f1873ad08ce8c94dbe65281f08949e08575732433ddeacbec225de5a5dc1a956",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_raw_sha256": "5552ac00e2d882d2432d67a43b75b8b9bfe090d9c107f43507aea70b6226d829",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.20725162918202963,
+              0.0,
+              0.9782876684295855,
+              1.9597558975219727
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              -0.9782876684295855,
+              0.0,
+              -0.20725162918202963,
+              -0.8740676641464233
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.7769335972855177,
+            0.0,
+            0.6295825485263907
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0241",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 3.4756722450256348,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "f1873ad08ce8c94dbe65281f08949e08575732433ddeacbec225de5a5dc1a956",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_raw_sha256": "5552ac00e2d882d2432d67a43b75b8b9bfe090d9c107f43507aea70b6226d829",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.20725162918202963,
+              0.0,
+              0.9782876684295855,
+              1.9597558975219727
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              -0.9782876684295855,
+              0.0,
+              -0.20725162918202963,
+              -0.8740676641464233
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.7769335972855177,
+            0.0,
+            0.6295825485263907
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": -60
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0211",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0211",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 1.5098109245300293,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "083fe6ef3da527b0a40b2dc0f1c8ae5920beb25a85aa5a240a8a336149c01bd1",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_raw_sha256": "a9b7471024cb3ba7c987625e3317d41623aee8a1131e0512dc3d01748c794a5a",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.8660191925506532,
+              0.0,
+              0.50001075801818,
+              3.9706079959869385
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              -0.50001075801818,
+              0.0,
+              -0.8660191925506532,
+              0.14927881956100464
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.9659242187021333,
+            0.0,
+            0.2588250446241118
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0211",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 1.5098109245300293,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "083fe6ef3da527b0a40b2dc0f1c8ae5920beb25a85aa5a240a8a336149c01bd1",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_raw_sha256": "a9b7471024cb3ba7c987625e3317d41623aee8a1131e0512dc3d01748c794a5a",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.8660191925506532,
+              0.0,
+              0.50001075801818,
+              3.9706079959869385
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              -0.50001075801818,
+              0.0,
+              -0.8660191925506532,
+              0.14927881956100464
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.9659242187021333,
+            0.0,
+            0.2588250446241118
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": -60
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0101",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0101",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 6.468698501586914,
+          "depth_positive_fraction": 0.575791015625,
+          "depth_raw_sha256": "e85b8b353b59370bbee3eb48654a4664bc6981c07693c260281a7f76e6f3556f",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.575791015625,
+          "rgb_raw_sha256": "971cf12f060cf7f62f69468c44c443e5ce7484b9a19b249f87048c4c1a8c7c0f",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.9519599604301558,
+              0.0,
+              0.3062225232372957,
+              -0.7084802985191345
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              -0.3062225232372957,
+              0.0,
+              0.9519599604301558,
+              4.62424898147583
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.1549839339574334,
+            0.0,
+            0.9879169905488405
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0101",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 6.468698501586914,
+          "depth_positive_fraction": 0.575791015625,
+          "depth_raw_sha256": "e85b8b353b59370bbee3eb48654a4664bc6981c07693c260281a7f76e6f3556f",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.575791015625,
+          "rgb_raw_sha256": "971cf12f060cf7f62f69468c44c443e5ce7484b9a19b249f87048c4c1a8c7c0f",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.9519599604301558,
+              0.0,
+              0.3062225232372957,
+              -0.7084802985191345
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              -0.3062225232372957,
+              0.0,
+              0.9519599604301558,
+              4.62424898147583
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.1549839339574334,
+            0.0,
+            0.9879169905488405
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": 60
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0049",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0049",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 1.7325444221496582,
+          "depth_positive_fraction": 0.10871744791666667,
+          "depth_raw_sha256": "9f6177e3909b388bd905571773cbff3ff0a2a5e479c62d88cea868b2c8f88f7e",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.10871744791666667,
+          "rgb_raw_sha256": "ab8f325d4a1656d56956be6b25c7ca4f75db9e025208dd7b5d6a8670ad141da6",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.16097868097169887,
+              0.0,
+              -0.9869578837380104,
+              3.259033441543579
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              0.9869578837380104,
+              0.0,
+              0.16097868097169887,
+              1.7459735870361328
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.647696425429499,
+            -0.0,
+            0.7618985106205743
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0049",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 1.7325444221496582,
+          "depth_positive_fraction": 0.10871744791666667,
+          "depth_raw_sha256": "9f6177e3909b388bd905571773cbff3ff0a2a5e479c62d88cea868b2c8f88f7e",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.10871744791666667,
+          "rgb_raw_sha256": "ab8f325d4a1656d56956be6b25c7ca4f75db9e025208dd7b5d6a8670ad141da6",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.16097868097169887,
+              0.0,
+              -0.9869578837380104,
+              3.259033441543579
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              0.9869578837380104,
+              0.0,
+              0.16097868097169887,
+              1.7459735870361328
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.647696425429499,
+            -0.0,
+            0.7618985106205743
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": -60
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0148",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0148",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 1.1693753004074097,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "c9f1bc3d3f2ba69290b0a6e79655ea2b9cacd3b8cb892153f5c06241e0661c40",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_raw_sha256": "8d105ed5680eece733c6a9116b6c13af6859c676109d5421e3b13f614e43d7ac",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.09840184819663146,
+              0.0,
+              -0.9951467611721837,
+              3.8521687984466553
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              0.9951467611721837,
+              0.0,
+              0.09840184819663146,
+              -0.7314116954803467
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.6714157250926466,
+            -0.0,
+            0.7410809160262567
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0148",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 1.1693753004074097,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "c9f1bc3d3f2ba69290b0a6e79655ea2b9cacd3b8cb892153f5c06241e0661c40",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_raw_sha256": "8d105ed5680eece733c6a9116b6c13af6859c676109d5421e3b13f614e43d7ac",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.09840184819663146,
+              0.0,
+              -0.9951467611721837,
+              3.8521687984466553
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              0.9951467611721837,
+              0.0,
+              0.09840184819663146,
+              -0.7314116954803467
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.6714157250926466,
+            -0.0,
+            0.7410809160262567
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": -60
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0180",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0180",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 6.347562789916992,
+          "depth_positive_fraction": 0.9721647135416667,
+          "depth_raw_sha256": "a38159b46ff1329029d85047a3ab9aa0d1e9b52eb2de61956da0a1d1af019b59",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.972158203125,
+          "rgb_raw_sha256": "d0211d6e51b3c0dfd076456052f0eaac1cc47cbc2732a8c40884b8b9309e9fd8",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.15854828182969538,
+              0.0,
+              0.987351225415177,
+              2.9867265224456787
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              -0.987351225415177,
+              0.0,
+              0.15854828182969538,
+              1.0923500061035156
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.6486338405334341,
+            0.0,
+            0.7611006115585821
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0180",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 6.347562789916992,
+          "depth_positive_fraction": 0.9721647135416667,
+          "depth_raw_sha256": "a38159b46ff1329029d85047a3ab9aa0d1e9b52eb2de61956da0a1d1af019b59",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.972158203125,
+          "rgb_raw_sha256": "d0211d6e51b3c0dfd076456052f0eaac1cc47cbc2732a8c40884b8b9309e9fd8",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.15854828182969538,
+              0.0,
+              0.987351225415177,
+              2.9867265224456787
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              -0.987351225415177,
+              0.0,
+              0.15854828182969538,
+              1.0923500061035156
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.6486338405334341,
+            0.0,
+            0.7611006115585821
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "eval",
+      "yaw_offset_deg": 0
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0205",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0205",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 1.890616536140442,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "63cfca5f27cbe33ba6851f109c2965831b875c7b14ca19e3f4e0562f21bf9c78",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_raw_sha256": "d7ff5d4fa0894562306748d0ba66f3f82c4a666164598c0f4e55be3f3bc1642a",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.6742520126528226,
+              0.0,
+              -0.7385013361082146,
+              2.153064489364624
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              0.7385013361082146,
+              0.0,
+              0.6742520126528226,
+              3.4500627517700195
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.40357650287595875,
+            -0.0,
+            0.9149459034972567
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0205",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 1.890616536140442,
+          "depth_positive_fraction": 1.0,
+          "depth_raw_sha256": "63cfca5f27cbe33ba6851f109c2965831b875c7b14ca19e3f4e0562f21bf9c78",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_raw_sha256": "d7ff5d4fa0894562306748d0ba66f3f82c4a666164598c0f4e55be3f3bc1642a",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              0.6742520126528226,
+              0.0,
+              -0.7385013361082146,
+              2.153064489364624
+            ],
+            [
+              -0.0,
+              1.0,
+              -0.0,
+              0.12523484230041504
+            ],
+            [
+              0.7385013361082146,
+              0.0,
+              0.6742520126528226,
+              3.4500627517700195
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            -0.40357650287595875,
+            -0.0,
+            0.9149459034972567
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": -60
+    },
+    {
+      "classification_agreement": true,
+      "frame_id": "frame_0295",
+      "repeat_a": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0295",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 3.1566858291625977,
+          "depth_positive_fraction": 0.33498046875,
+          "depth_raw_sha256": "dc31ab4fa754891eabb558526f06adc9f3da85cfb018121d7a071f6d485c44db",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.33496419270833333,
+          "rgb_raw_sha256": "0391e6ed6be3e49c318dfc3c4800d2bc4982e16fbf4e386ec6543fb8bc31d962",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.7955567204630477,
+              0.0,
+              0.605879117090266,
+              0.9896584153175354
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              -0.605879117090266,
+              0.0,
+              -0.7955567204630477,
+              1.5070288181304932
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.9475116675965125,
+            0.0,
+            0.3197211906778719
+          ]
+        },
+        "repeat": "A"
+      },
+      "repeat_b": {
+        "classification": "HABITAT_VIEW_PREQUALIFICATION_PASS",
+        "frame_id": "frame_0295",
+        "fresh_os_subprocess": true,
+        "fresh_simulator": true,
+        "metrics": {
+          "depth_dtype": "float32",
+          "depth_finite_fraction": 1.0,
+          "depth_max_m": 3.1566858291625977,
+          "depth_positive_fraction": 0.33498046875,
+          "depth_raw_sha256": "dc31ab4fa754891eabb558526f06adc9f3da85cfb018121d7a071f6d485c44db",
+          "depth_shape": [
+            480,
+            640
+          ],
+          "rgb_dtype": "uint8",
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.33496419270833333,
+          "rgb_raw_sha256": "0391e6ed6be3e49c318dfc3c4800d2bc4982e16fbf4e386ec6543fb8bc31d962",
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "pose_identity": {
+          "camera_to_world": [
+            [
+              -0.7955567204630477,
+              0.0,
+              0.605879117090266,
+              0.9896584153175354
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0,
+              2.925234794616699
+            ],
+            [
+              -0.605879117090266,
+              0.0,
+              -0.7955567204630477,
+              1.5070288181304932
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "quaternion_xyzw": [
+            0.0,
+            0.9475116675965125,
+            0.0,
+            0.3197211906778719
+          ]
+        },
+        "repeat": "B"
+      },
+      "split": "train",
+      "yaw_offset_deg": -60
+    }
+  ],
+  "selected_splits": [
+    "eval",
+    "train"
+  ],
+  "selected_yaw_offsets": [
+    -60,
+    0,
+    60
+  ],
+  "status": "PASS_REPLICA_V3_FROZEN_MANIFEST_REPEATABILITY"
+}
