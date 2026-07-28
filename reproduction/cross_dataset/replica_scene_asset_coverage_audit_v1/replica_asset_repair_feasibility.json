@@ -1,0 +1,17 @@
+{
+  "REPAIR_FEASIBILITY": "NOT_FIXABLE_WITHOUT_CHANGING_SCENE_GEOMETRY_OR_CAMERA_PROTOCOL",
+  "camera_protocol_fields_changed": [],
+  "forbidden_pseudo_repairs": [
+    "delete bad frames",
+    "replace yaw",
+    "copy RGB/depth",
+    "relax checker",
+    "patch official mesh",
+    "use double-sided diagnostic mesh formally",
+    "substitute semantic mesh without a new formal qualification"
+  ],
+  "formal_asset_repair_applied": false,
+  "official_alternate_asset_diagnostic_outcome": "official habitat/mesh_semantic.ply restores depth for the sampled failures but is a distinct semantic mesh and was not qualified as a formal RGB render asset; it is diagnostic-only, not an approved V1 replacement",
+  "recommended_next_task": "DESIGN_REPLICA_RENDER_PROTOCOL_V3_WITH_PRE_RENDER_ASSET_COVERAGE_QUALIFICATION",
+  "status": "PASS_REPLICA_ASSET_AUDIT_REQUIRES_NEW_CAMERA_PROTOCOL"
+}

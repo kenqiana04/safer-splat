@@ -1,0 +1,2475 @@
+{
+  "JOINT_32_PRIMARY_MECHANISM": "ASSET_GEOMETRY_COVERAGE_GAPS_AT_FROZEN_FRUSTA",
+  "double_sided_recovery_required_for_culling_claim": false,
+  "frames": [
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 8.101999282836914,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0001",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 4.6175055503845215,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0005",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 4.4913649559021,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0030",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 6.192568778991699,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0031",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 7.612731456756592,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0042",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 4.8714494705200195,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0043",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 7.009837627410889,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0075",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 4.78078031539917,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0076",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 5.494480609893799,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0079",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 3.842874765396118,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0089",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 0.48778125643730164,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0113",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 5.1785359382629395,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0116",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 7.212192058563232,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0118",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 6.180144786834717,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0146",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 4.635960578918457,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0166",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 7.302879810333252,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0170",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 4.226434230804443,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0180",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 5.573057174682617,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0181",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 5.436441898345947,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0186",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 4.00525426864624,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0189",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 5.584381580352783,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0190",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 2.771139144897461,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0191",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 4.995504379272461,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0194",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 4.088140487670898,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0205",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 5.334097862243652,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0240",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 4.126778602600098,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0242",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 6.545072078704834,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0244",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 8.067256927490234,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0270",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 5.129889011383057,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0271",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 4.298699378967285,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0273",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 2.4592514038085938,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0274",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    },
+    {
+      "classification": "TRUE_MESH_COVERAGE_GAP_INDICATION",
+      "diagnostic_outcomes": {
+        "A_FLAT_UNTEXTURED_SAME_GEOMETRY": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "B_DOUBLE_SIDED_DIAGNOSTIC": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "C_COMPONENT_FLAT_ID": {
+          "depth_checker_bad": true,
+          "depth_max_m": 0.0,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 0.0,
+          "rgb_checker_bad": true,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 0.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        },
+        "D_OFFICIAL_ALTERNATE_ASSET_HANDLE": {
+          "depth_checker_bad": false,
+          "depth_max_m": 7.370792865753174,
+          "depth_shape": [
+            480,
+            640
+          ],
+          "depth_valid_fraction": 1.0,
+          "rgb_checker_bad": false,
+          "rgb_max": 255,
+          "rgb_nonzero_fraction": 1.0,
+          "rgb_shape": [
+            480,
+            640,
+            4
+          ]
+        }
+      },
+      "frame_id": "frame_0275",
+      "habitat_depth_valid_fraction": 0.0,
+      "independent_any_hit_fraction": 0.0,
+      "independent_front_facing_hit_fraction": 0.0
+    }
+  ],
+  "mechanism_frame_counts": {
+    "TRUE_MESH_COVERAGE_GAP_INDICATION": 32
+  },
+  "status": "PASS_UNIQUE_JOINT_MECHANISM",
+  "texture_cannot_explain_zero_depth": true
+}
