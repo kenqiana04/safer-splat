@@ -1,0 +1,81 @@
+{
+  "blob_identity_match": true,
+  "blobs": {
+    "cbf/cbf_utils.py": "7c6e1300b125cc0a2a950ac2835a1fbe3d0de113",
+    "splat/distances.py": "d7f17b67df40e36e458c7a5ed77c4a04659c6f35",
+    "splat/gsplat_utils.py": "782c38eca50e78c605085b481155ed61e4607336"
+  },
+  "expected_blobs": {
+    "cbf/cbf_utils.py": "7c6e1300b125cc0a2a950ac2835a1fbe3d0de113",
+    "splat/distances.py": "d7f17b67df40e36e458c7a5ed77c4a04659c6f35",
+    "splat/gsplat_utils.py": "782c38eca50e78c605085b481155ed61e4607336"
+  },
+  "expected_head": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+  "generated_utc": "2026-07-29T03:55:28+00:00",
+  "head_match": true,
+  "official_readme_path": "/disk1/zlab/projects/safer-splat/README.md",
+  "official_readme_sha256": "7cc926b17e7ff0dc2be821cea7be2337134f441d4b2b008901ead1596bd014bc",
+  "safer_head": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+  "safer_repo": "/disk1/zlab/projects/safer-splat",
+  "scenes": [
+    {
+      "availability": "PRESENT",
+      "checkpoint_bytes": 209384530,
+      "checkpoint_path": "/disk1/zlab/projects/safer-splat/outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt",
+      "checkpoint_sha256": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "config_path": "/disk1/zlab/projects/safer-splat/outputs/flight/splatfacto/2024-09-12_172434/config.yml",
+      "config_sha256": "7e83fb0711a1decc55518e66e43a34395188c2e2a2de0e5ec24d6bb510fb7b8d",
+      "coordinate_scale_note": "Nerfstudio checkpoint semantics require per-scene evidence; no cross-scene claim is inferred.",
+      "scene_id": "flight",
+      "source": "official SAFER outputs symlinked from the project model pack"
+    },
+    {
+      "availability": "PRESENT",
+      "checkpoint_bytes": 382120978,
+      "checkpoint_path": "/disk1/zlab/projects/safer-splat/outputs/old_union2/splatfacto/2024-09-02_151414/nerfstudio_models/step-000029999.ckpt",
+      "checkpoint_sha256": "4c6f975f45b19d3bce8099615a110829dfd119af9af99018aca8df3b2cc68c5a",
+      "config_path": "/disk1/zlab/projects/safer-splat/outputs/old_union2/splatfacto/2024-09-02_151414/config.yml",
+      "config_sha256": "54db61067c3459ea5784544381425af0763f05603e303aba283deef5288f3196",
+      "coordinate_scale_note": "Nerfstudio checkpoint semantics require per-scene evidence; no cross-scene claim is inferred.",
+      "scene_id": "old_union2",
+      "source": "official SAFER outputs symlinked from the project model pack"
+    },
+    {
+      "availability": "PRESENT",
+      "checkpoint_bytes": 152623186,
+      "checkpoint_path": "/disk1/zlab/projects/safer-splat/outputs/statues/splatfacto/2024-09-11_095852/nerfstudio_models/step-000029999.ckpt",
+      "checkpoint_sha256": "f18f2ee199be7596bf7c4a7aa26e6e13672774320803c906bc12cd681897da75",
+      "config_path": "/disk1/zlab/projects/safer-splat/outputs/statues/splatfacto/2024-09-11_095852/config.yml",
+      "config_sha256": "dc768fbedd3853aeaa9f1ad3feaa7efa336d2c92fe1fa408bd8668732dc66d05",
+      "coordinate_scale_note": "Nerfstudio checkpoint semantics require per-scene evidence; no cross-scene claim is inferred.",
+      "scene_id": "statues",
+      "source": "official SAFER outputs symlinked from the project model pack"
+    },
+    {
+      "availability": "PRESENT",
+      "checkpoint_bytes": 92344786,
+      "checkpoint_path": "/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724/nerfstudio_models/step-000029999.ckpt",
+      "checkpoint_sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d",
+      "config_path": "/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724/config.yml",
+      "config_sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e",
+      "coordinate_scale_note": "Nerfstudio checkpoint semantics require per-scene evidence; no cross-scene claim is inferred.",
+      "scene_id": "stonehenge",
+      "source": "official SAFER outputs symlinked from the project model pack"
+    },
+    {
+      "availability": "OFFICIAL_SCENE_ASSET_MISSING",
+      "checkpoint_path": null,
+      "config_path": null,
+      "scene_id": "flightgate",
+      "source": "official README registry name; no loadable model-pack config discovered"
+    },
+    {
+      "availability": "OFFICIAL_SCENE_ASSET_MISSING",
+      "checkpoint_path": null,
+      "config_path": null,
+      "scene_id": "adirondacks",
+      "source": "official README registry name; no loadable model-pack config discovered"
+    }
+  ],
+  "task_id": "CROSS_DATASET_QUALIFIED_GAUSSIAN_MAP_ACQUISITION_AND_SELECTION_V1"
+}

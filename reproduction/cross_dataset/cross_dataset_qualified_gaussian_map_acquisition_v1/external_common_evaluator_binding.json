@@ -1,0 +1,15 @@
+{
+  "description": "External evaluator binding is not authorized before a selected external schema exists.",
+  "expected_pr58_fixture": {
+    "absrel": 0.17809340202560028,
+    "coverage": 0.9616435445162634,
+    "delta1": 0.7439667656972608,
+    "ratio": 0.9413975477218628
+  },
+  "fixture_regression": "NOT_AUTHORIZED_DUE_TO_EXTERNAL_DATASET_ACCESS_APPROVAL_REQUIRED",
+  "gate": "EXTERNAL_DATASET_ACCESS_APPROVAL_REQUIRED",
+  "generated_utc": "2026-07-29T03:55:52+00:00",
+  "no_scene_payload_downloaded": true,
+  "status": "NOT_AUTHORIZED_DUE_TO_EXTERNAL_DATASET_ACCESS_APPROVAL_REQUIRED",
+  "task_id": "CROSS_DATASET_QUALIFIED_GAUSSIAN_MAP_ACQUISITION_AND_SELECTION_V1"
+}

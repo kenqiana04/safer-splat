@@ -1,0 +1,128 @@
+{
+  "authority_identity_match": true,
+  "generated_utc": "2026-07-29T03:55:28+00:00",
+  "navigation_or_controller_calls": 0,
+  "non_stonehenge_ready_scene_count": 3,
+  "ready_scene_count": 4,
+  "scenes": [
+    {
+      "active_gaussian_deterministic": true,
+      "arrays_finite": true,
+      "config_path": "/disk1/zlab/projects/safer-splat/outputs/flight/splatfacto/2024-09-12_172434/config.yml",
+      "controller_navigation_called": false,
+      "gaussian_count": 281756,
+      "gaussian_count_before_after": [
+        281756,
+        281756
+      ],
+      "h_gradient_hessian_finite": true,
+      "hessian_symmetry_relative_max": 7.92952263850566e-08,
+      "means_sha256_before_after": [
+        "a82b672a6c34798a91d04895b9b2d496d06a89b05b29f5ce65b8be5d0ce19f88",
+        "a82b672a6c34798a91d04895b9b2d496d06a89b05b29f5ce65b8be5d0ce19f88"
+      ],
+      "no_map_mutation": true,
+      "query_count": 32,
+      "query_seed": "OFFICIAL_SAFER_STATIC_G0_V1",
+      "query_sha256": "5c6f1dfddca5b36e29f3782c1b8d255dd3550f66620ec7c8694724a38bbc9863",
+      "radius_m": 0.015,
+      "runs": 3,
+      "runtime_seconds": 22.893853902816772,
+      "scales_positive": true,
+      "scene_id": "flight",
+      "status": "OFFICIAL_SCENE_READY_FOR_MULTISCENE_BENCHMARK"
+    },
+    {
+      "active_gaussian_deterministic": true,
+      "arrays_finite": true,
+      "config_path": "/disk1/zlab/projects/safer-splat/outputs/old_union2/splatfacto/2024-09-02_151414/config.yml",
+      "controller_navigation_called": false,
+      "gaussian_count": 525734,
+      "gaussian_count_before_after": [
+        525734,
+        525734
+      ],
+      "h_gradient_hessian_finite": true,
+      "hessian_symmetry_relative_max": 5.829941684964979e-08,
+      "means_sha256_before_after": [
+        "d0b9ea3bb0c114e524f9393df6c93e9688ab293773cfcacfbeb3a76a5e721017",
+        "d0b9ea3bb0c114e524f9393df6c93e9688ab293773cfcacfbeb3a76a5e721017"
+      ],
+      "no_map_mutation": true,
+      "query_count": 32,
+      "query_seed": "OFFICIAL_SAFER_STATIC_G0_V1",
+      "query_sha256": "267afb3ac13579053dff520b17cd6abd525ceafa51b0c557a6cb729a8942dd51",
+      "radius_m": 0.015,
+      "runs": 3,
+      "runtime_seconds": 3.8017194271087646,
+      "scales_positive": true,
+      "scene_id": "old_union2",
+      "status": "OFFICIAL_SCENE_READY_FOR_MULTISCENE_BENCHMARK"
+    },
+    {
+      "active_gaussian_deterministic": true,
+      "arrays_finite": true,
+      "config_path": "/disk1/zlab/projects/safer-splat/outputs/statues/splatfacto/2024-09-11_095852/config.yml",
+      "controller_navigation_called": false,
+      "gaussian_count": 201584,
+      "gaussian_count_before_after": [
+        201584,
+        201584
+      ],
+      "h_gradient_hessian_finite": true,
+      "hessian_symmetry_relative_max": 5.710191075536386e-08,
+      "means_sha256_before_after": [
+        "3856a82775cd5f0ba85261ff7a963206ef461d6ebc76bbdee2cb9ec02f18c9fb",
+        "3856a82775cd5f0ba85261ff7a963206ef461d6ebc76bbdee2cb9ec02f18c9fb"
+      ],
+      "no_map_mutation": true,
+      "query_count": 32,
+      "query_seed": "OFFICIAL_SAFER_STATIC_G0_V1",
+      "query_sha256": "c14bfa521171cd70a1a651a89c3de8f22baefa7329183852a9fd7793685822dc",
+      "radius_m": 0.015,
+      "runs": 3,
+      "runtime_seconds": 3.0949926376342773,
+      "scales_positive": true,
+      "scene_id": "statues",
+      "status": "OFFICIAL_SCENE_READY_FOR_MULTISCENE_BENCHMARK"
+    },
+    {
+      "active_gaussian_deterministic": true,
+      "arrays_finite": true,
+      "config_path": "/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724/config.yml",
+      "controller_navigation_called": false,
+      "gaussian_count": 116446,
+      "gaussian_count_before_after": [
+        116446,
+        116446
+      ],
+      "h_gradient_hessian_finite": true,
+      "hessian_symmetry_relative_max": 1.0733193533951635e-07,
+      "means_sha256_before_after": [
+        "208e3653b07793bb6367bbc870a15c462f7b8ce2ef74df86865998b730b5c7c6",
+        "208e3653b07793bb6367bbc870a15c462f7b8ce2ef74df86865998b730b5c7c6"
+      ],
+      "no_map_mutation": true,
+      "query_count": 32,
+      "query_seed": "OFFICIAL_SAFER_STATIC_G0_V1",
+      "query_sha256": "4fb20a2930177e2b8376980355047eed4ef448fb858e051a895cb28c89c01938",
+      "radius_m": 0.015,
+      "runs": 3,
+      "runtime_seconds": 3.329710006713867,
+      "scales_positive": true,
+      "scene_id": "stonehenge",
+      "status": "OFFICIAL_SCENE_READY_FOR_MULTISCENE_BENCHMARK"
+    },
+    {
+      "query_count": 0,
+      "scene_id": "flightgate",
+      "status": "OFFICIAL_SCENE_ASSET_MISSING"
+    },
+    {
+      "query_count": 0,
+      "scene_id": "adirondacks",
+      "status": "OFFICIAL_SCENE_ASSET_MISSING"
+    }
+  ],
+  "task_id": "CROSS_DATASET_QUALIFIED_GAUSSIAN_MAP_ACQUISITION_AND_SELECTION_V1"
+}

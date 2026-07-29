@@ -1,0 +1,65 @@
+{
+  "access_gate": "EXTERNAL_DATASET_ACCESS_APPROVAL_REQUIRED",
+  "api_attempts": [
+    {
+      "detail": "<urlopen error [Errno 101] Network is unreachable>",
+      "error": "URLError",
+      "reachable": false,
+      "url": "https://huggingface.co/api/datasets/GaussianWorld/scene_splat_7k"
+    },
+    {
+      "detail": "<urlopen error [Errno 101] Network is unreachable>",
+      "error": "URLError",
+      "reachable": false,
+      "url": "https://huggingface.co/api/datasets/GaussianWorld/hypersim_mcmc_3dgs"
+    },
+    {
+      "detail": "<urlopen error [Errno 101] Network is unreachable>",
+      "error": "URLError",
+      "reachable": false,
+      "url": "https://huggingface.co/api/datasets/GaussianWorld/arkitscenes_mcmc_3dgs"
+    }
+  ],
+  "cache_root_exists": true,
+  "decision": "REQUEST_USER_TO_ACCEPT_SCENESPLAT_AND_COMPONENT_TERMS",
+  "external_asset_root": "/disk1/zlab/cross_dataset_assets/external_pretrained_gs_v1",
+  "external_asset_root_exists": false,
+  "generated_utc": "2026-07-29T03:55:52+00:00",
+  "huggingface_cli": {
+    "hf": false,
+    "huggingface-cli": false
+  },
+  "huggingface_hub_python_available": false,
+  "list_download_permission_verified": false,
+  "next_task": "RESUME_EXTERNAL_GS_MAP_ACQUISITION_AFTER_ACCESS_APPROVAL_V1",
+  "no_external_payload_download": true,
+  "no_gated_bypass": true,
+  "preexisting_pretrained_external_map_found": false,
+  "public_schema_audit": {
+    "fallback_family": "ARKITSCENES",
+    "fallback_release": "GaussianWorld/arkitscenes_mcmc_3dgs",
+    "license_evidence_to_capture_after_access": [
+      "SceneSplat-7K README/license",
+      "Hypersim component attribution/license",
+      "any repository terms"
+    ],
+    "metadata_registry": "GaussianWorld/scene_splat_7k",
+    "primary_family": "HYPERSIM",
+    "primary_release": "GaussianWorld/hypersim_mcmc_3dgs",
+    "published_schema_expected": [
+      "statistics",
+      "transforms_train",
+      "3DGS parameters"
+    ]
+  },
+  "server_network_to_huggingface_confirmed": false,
+  "status": "BLOCKED_BY_EXTERNAL_DATASET_ACCESS_APPROVAL_REQUIRED",
+  "task_id": "CROSS_DATASET_QUALIFIED_GAUSSIAN_MAP_ACQUISITION_AND_SELECTION_V1",
+  "terms_acceptance_verified": false,
+  "token_present_boolean_only": false,
+  "user_action_required": [
+    "Provide an approved server-side read-only Hugging Face access route.",
+    "Accept and confirm applicable SceneSplat-7K and component terms outside this task.",
+    "Do not disclose a token; rerun the frozen acquisition task only after access is available."
+  ]
+}
