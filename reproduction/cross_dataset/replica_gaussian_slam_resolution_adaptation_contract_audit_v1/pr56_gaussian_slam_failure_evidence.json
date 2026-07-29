@@ -1,0 +1,31 @@
+{
+  "candidate_construction_source": "src/utils/mapper_utils.py:create_point_cloud maps every HxW pixel to one row",
+  "candidate_device": "CPU",
+  "candidate_dtype": "numpy ndarray, float64 point coordinates with image color values",
+  "candidate_mask": "uniform sampling occurs before non_zero_depth_mask; edge mask is only unioned after uniform sampling",
+  "candidate_population_at_640x480": 307200,
+  "candidate_population_definition": "pts.shape[0] from create_point_cloud before depth filtering",
+  "checkpoint_before_failure": false,
+  "exact_failing_function": "Mapper.seed_new_gaussians",
+  "exception_message": "Cannot take a larger sample than population when 'replace=False'",
+  "exception_type": "ValueError",
+  "failure_phase": "initialization / per-frame / new-submap, Mapping frame 0",
+  "first_failing_line": 97,
+  "first_failing_source_file": "src/entities/mapper.py",
+  "full_stack_trace": "Traceback (most recent call last):\n  File \"/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/gaussian_slam/launchers/smoke.py\", line 15, in <module>\n    g.run()\n  File \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive/src/entities/gaussian_slam.py\", line 152, in run\n    opt_dict = self.mapper.map(frame_id, estimate_c2w, gaussian_model, new_submap)\n  File \"/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/gaussian_slam/launchers/smoke.py\", line 13, in map_capture\n    return orig(frame_id,estimate_c2w,gaussian_model,is_new_submap)\n  File \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive/src/entities/mapper.py\", line 225, in map\n    pts = self.seed_new_gaussians(\n  File \"/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive/src/entities/mapper.py\", line 97, in seed_new_gaussians\n    uniform_ids = np.random.choice(pts.shape[0], self.new_submap_points_num, replace=False)\n  File \"numpy/random/mtrand.pyx\", line 1001, in numpy.random.mtrand.RandomState.choice\nValueError: Cannot take a larger sample than population when 'replace=False'\n",
+  "historical_terminal": "SMOKE_ALGORITHM_FAILURE",
+  "map_state_before_failure": "new submap object only; seeding failed before grow_submap/optimizer",
+  "replacement_flag": false,
+  "requested_sample_count": 600000,
+  "sampling_api": "numpy.random.choice",
+  "source_evidence": {
+    "log_sha256": "4a71f41757389b5cee76959094745be18ffadc607bbe16520d35850deffa844b",
+    "mapper_sha256": "869fec2e801bc73c840c916e184972e3f439925c89bf6f21031b0a04f3644165",
+    "seed_snippet_sha256": "085e0c0b742550ad794c2121b116e4e3a6d2c8cd6bec152043818715610ec4f2"
+  },
+  "status": "PR56_GAUSSIAN_SLAM_SMOKE_ALGORITHM_FAILURE_RECOVERED",
+  "task_adapter_reason": "task-generated 640x480 config copied the official Replica count without a supported resolution contract",
+  "triggered_by_task_adapter": true,
+  "unadapted_official_reason": "official room0.yaml inherits the 1200x680=816000-pixel Replica mapping config, so the exact choice call has population >= 600000 before depth filtering",
+  "unadapted_official_same_failure": false
+}

@@ -1,0 +1,21 @@
+{
+  "archive_modification_count": 0,
+  "cuda_visible_devices": "not_set_by_audit",
+  "custom_cuda_extension_specs": [
+    "ModuleSpec(name='gaussian_rasterizer', loader=<_frozen_importlib_external.SourceFileLoader object at 0x7fea6bb751b0>, origin='/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/lib/python3.10/site-packages/gaussian_rasterizer/__init__.py', submodule_search_locations=['/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/lib/python3.10/site-packages/gaussian_rasterizer'])",
+    "ModuleSpec(name='simple_knn', loader=None, submodule_search_locations=_NamespacePath(['/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/lib/python3.10/site-packages/simple_knn']))",
+    "ModuleSpec(name='faiss', loader=<_frozen_importlib_external.SourceFileLoader object at 0x7fea6bb75150>, origin='/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/lib/python3.10/site-packages/faiss/__init__.py', submodule_search_locations=['/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/lib/python3.10/site-packages/faiss'])"
+  ],
+  "environment_package_modification_count": 0,
+  "python_probe": {
+    "argv": [
+      "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/bin/python",
+      "-c",
+      "import sys,torch,importlib.util; print(sys.version.split()[0]); print(torch.__version__); print(torch.version.cuda); print(importlib.util.find_spec('gaussian_rasterizer')); print(importlib.util.find_spec('simple_knn')); print(importlib.util.find_spec('faiss'))"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "3.10.20\n2.1.2\n12.1\nModuleSpec(name='gaussian_rasterizer', loader=<_frozen_importlib_external.SourceFileLoader object at 0x7fea6bb751b0>, origin='/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/lib/python3.10/site-packages/gaussian_rasterizer/__init__.py', submodule_search_locations=['/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/lib/python3.10/site-packages/gaussian_rasterizer'])\nModuleSpec(name='simple_knn', loader=None, submodule_search_locations=_NamespacePath(['/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/lib/python3.10/site-packages/simple_knn']))\nModuleSpec(name='faiss', loader=<_frozen_importlib_external.SourceFileLoader object at 0x7fea6bb75150>, origin='/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/lib/python3.10/site-packages/faiss/__init__.py', submodule_search_locations=['/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/lib/python3.10/site-packages/faiss'])"
+  },
+  "status": "PASS_GAUSSIAN_SLAM_ENVIRONMENT_READ_ONLY_AUDIT"
+}

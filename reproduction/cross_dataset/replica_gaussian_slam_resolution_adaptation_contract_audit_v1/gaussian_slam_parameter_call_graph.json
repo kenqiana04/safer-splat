@@ -1,0 +1,74 @@
+{
+  "call_chain": [
+    "run_slam.update_config_with_args",
+    "GaussianSLAM",
+    "Mapper.__init__",
+    "Mapper.map",
+    "Mapper.seed_new_gaussians",
+    "numpy.random.choice"
+  ],
+  "default": "no code default; config-required integer",
+  "described_as": {
+    "density": false,
+    "exact_count": true,
+    "initialization_budget": true,
+    "maximum_cap": false,
+    "per_frame": true,
+    "per_submap": "new-submap seeding frame",
+    "ratio": false,
+    "target": false
+  },
+  "fallback_when_insufficient": "none",
+  "other_resolution_dependent_parameters": [
+    "cam.H",
+    "cam.W",
+    "cam.fx",
+    "cam.fy",
+    "cam.cx",
+    "cam.cy",
+    "depth_scale"
+  ],
+  "parameter": "new_submap_points_num",
+  "replace_semantics": false,
+  "semantic_classification": "EXACT_INITIALIZATION_BUDGET_CORE_METHOD_HYPERPARAMETER",
+  "source_evidence": [
+    {
+      "blob_file_sha256": "f9b03af98f7fc24f8a8d8e3e26a36429c95c399b8b46822fe0b108a2a8366ea6",
+      "line_range": "40,81-82",
+      "relative_path": "run_slam.py",
+      "semantic_claim": "CLI integer optionally overrides mapping.new_submap_points_num",
+      "supporting_snippet_sha256": "3fbab88880eb7104248d51105f887f2fbc095f7ca38726bef79d4e6b53393e7b"
+    },
+    {
+      "blob_file_sha256": "869fec2e801bc73c840c916e184972e3f439925c89bf6f21031b0a04f3644165",
+      "line_range": "30-40",
+      "relative_path": "src/entities/mapper.py",
+      "semantic_claim": "Mapper stores configuration value unchanged",
+      "supporting_snippet_sha256": "6b7db50af1f46f54b8a231b08981b385a9c589ce054987ecaa6a06b2af87681f"
+    },
+    {
+      "blob_file_sha256": "869fec2e801bc73c840c916e184972e3f439925c89bf6f21031b0a04f3644165",
+      "line_range": "89-104",
+      "relative_path": "src/entities/mapper.py",
+      "semantic_claim": "New-submap uniform IDs use exact-size no-replacement choice over pts.shape[0]",
+      "supporting_snippet_sha256": "085e0c0b742550ad794c2121b116e4e3a6d2c8cd6bec152043818715610ec4f2"
+    },
+    {
+      "blob_file_sha256": "16d6395806c173790b05bb9c30815748822c1be0bcf4c87fa77fe5de17920f9a",
+      "line_range": "305-335",
+      "relative_path": "src/utils/mapper_utils.py",
+      "semantic_claim": "create_point_cloud emits one row per depth-image pixel",
+      "supporting_snippet_sha256": "486d67336fc22b1042accfd1b235e25a5bfa257a5342260a80fada4d34195f70"
+    },
+    {
+      "blob_file_sha256": "16d6395806c173790b05bb9c30815748822c1be0bcf4c87fa77fe5de17920f9a",
+      "line_range": "271-290",
+      "relative_path": "src/utils/mapper_utils.py",
+      "semantic_claim": "new-submap edge mask is separately unioned after uniform sample selection",
+      "supporting_snippet_sha256": "4e5b4c0848431276e73ab33a0fdb4d5b2a10cf9c82f8d5fbf4083f97e9f9a433"
+    }
+  ],
+  "status": "PASS_STATIC_PARAMETER_CALL_GRAPH",
+  "unique_requirement": true,
+  "unit": "exact uniform pixel-derived point IDs per new submap frame"
+}
