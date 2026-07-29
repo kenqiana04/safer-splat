@@ -1,0 +1,51 @@
+{
+  "component_manifest": {
+    "columns": [
+      "repo_id",
+      "scene_id",
+      "split",
+      "points3d_ply",
+      "lang_feat_npy",
+      "valid_feat_npy",
+      "transforms_train_json",
+      "extra_files",
+      "scene_dir"
+    ],
+    "dtypes": {
+      "extra_files": "str",
+      "lang_feat_npy": "object",
+      "points3d_ply": "str",
+      "repo_id": "str",
+      "scene_dir": "str",
+      "scene_id": "str",
+      "split": "object",
+      "transforms_train_json": "object",
+      "valid_feat_npy": "object"
+    },
+    "rows": 454,
+    "source_sha256": "a33405026b5b246ba83bd898952d09c4be81285d4e14351e9fb8e56a1aba0f98"
+  },
+  "generated_utc": "2026-07-29T04:48:38+00:00",
+  "statistics": {
+    "columns": [
+      "scene_id",
+      "psnr",
+      "ssim",
+      "lpips",
+      "depth_l1",
+      "num_GS"
+    ],
+    "dtypes": {
+      "depth_l1": "float64",
+      "lpips": "float64",
+      "num_GS": "int64",
+      "psnr": "float64",
+      "scene_id": "str",
+      "ssim": "float64"
+    },
+    "rows": 435,
+    "source_sha256": "fd08a2ae784c55292bd134e387ed92360cadc0577883ddf49ae9159d00de658a"
+  },
+  "status": "EXTERNAL_METADATA_SCHEMA_DISCOVERED",
+  "task_id": "LOCAL_EXTERNAL_GS_ACQUISITION_AND_VERIFIED_HANDOFF_V1"
+}

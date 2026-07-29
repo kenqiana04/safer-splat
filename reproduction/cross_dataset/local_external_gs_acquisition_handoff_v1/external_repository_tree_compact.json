@@ -1,0 +1,73 @@
+{
+  "generated_utc": "2026-07-29T04:48:06+00:00",
+  "repositories": [
+    {
+      "bytes": 5283713358,
+      "file_count": 12836,
+      "repo_id": "GaussianWorld/scene_splat_7k",
+      "revision": "685f9e9053b8dcc2a23100eb52f64ee4711b0875",
+      "role": "metadata",
+      "selected_files": [
+        {
+          "blob_id": "fc3106f6050f6145934bb709336d0af6d6a41b8e",
+          "lfs_oid": null,
+          "path": "README.md",
+          "size": 13127,
+          "xet_hash": null
+        },
+        {
+          "blob_id": "1ef325f1b111266a6b26e0196871bd78baa8c2f3",
+          "lfs_oid": null,
+          "path": ".gitattributes",
+          "size": 2461,
+          "xet_hash": null
+        },
+        {
+          "blob_id": "bae5dee3f3f85e4066066e7442448fb75f24d8f1",
+          "lfs_oid": null,
+          "path": "statistics/hypersim_mcmc_3dgs_runs.csv",
+          "size": 44805,
+          "xet_hash": null
+        }
+      ]
+    },
+    {
+      "bytes": 252971817663,
+      "file_count": 5716,
+      "repo_id": "GaussianWorld/hypersim_mcmc_3dgs",
+      "revision": "f85e166ac72fa8367bf616c4dbce87749b748e81",
+      "role": "component",
+      "selected_files": [
+        {
+          "blob_id": "c9817bb0400aafce76e7901ac0278b395c707b24",
+          "lfs_oid": null,
+          "path": "README.md",
+          "size": 846,
+          "xet_hash": null
+        },
+        {
+          "blob_id": "54e336dffc1a8acec3a066b897462fca45eefe0a",
+          "lfs_oid": null,
+          "path": ".gitattributes",
+          "size": 44691,
+          "xet_hash": null
+        },
+        {
+          "blob_id": "c6a30e69f7cd15fc4edebf03dc1d3d7b3b8dc802",
+          "lfs_oid": null,
+          "path": "hypersim_mcmc_3dgs_runs.csv",
+          "size": 44801,
+          "xet_hash": null
+        },
+        {
+          "blob_id": "faa3ec44bee869a6369a9061ccab6d1d5abd5343",
+          "lfs_oid": null,
+          "path": "manifest/manifest.parquet",
+          "size": 16520,
+          "xet_hash": "47e1768d5032729568113d72e681884728c739e02f20f194f30db9c582ae9bbe"
+        }
+      ]
+    }
+  ],
+  "task_id": "LOCAL_EXTERNAL_GS_ACQUISITION_AND_VERIFIED_HANDOFF_V1"
+}

@@ -1,0 +1,33 @@
+{
+  "candidate_count": 10,
+  "fallback": {
+    "attempted_only_after_hypersim_precheck_failure": true,
+    "exception_class": "RepositoryNotFoundError",
+    "http_status": 404,
+    "repo_id": "GaussianWorld/arkitscenes_mcmc_3dgs",
+    "status": "UNAVAILABLE"
+  },
+  "generated_utc": "2026-07-29T04:53:32+00:00",
+  "passing_count": 0,
+  "reason": "No frozen official path set provides both the exact held-out RGB payload and official GT depth/mesh manifest needed for the minimal 30-frame handoff.",
+  "status": "NO_HYPERSIM_CANDIDATE_QUALIFIED_FOR_MINIMAL_DOWNLOAD",
+  "task_id": "LOCAL_EXTERNAL_GS_ACQUISITION_AND_VERIFIED_HANDOFF_V1",
+  "top_transform_metadata": [
+    {
+      "bytes": 251890,
+      "remote_path": "3dgs_training_views/hypersim/ai_001_006/transforms_train.json",
+      "scene_id": "hypersim_ai_001_006",
+      "sha256": "05736a1e6c52d240b2953f40af6cbb1ba6b783a031c597a6c548f0e330df0e7a",
+      "test_frame_count": 0,
+      "train_frame_count": 300
+    },
+    {
+      "bytes": 168054,
+      "remote_path": "3dgs_training_views/hypersim/ai_008_003/transforms_train.json",
+      "scene_id": "hypersim_ai_008_003",
+      "sha256": "002e8172e8fd8c62bee05774cc72630bcae2ba013818008f9145b1da4d021d0e",
+      "test_frame_count": 0,
+      "train_frame_count": 200
+    }
+  ]
+}
