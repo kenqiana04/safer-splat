@@ -1,0 +1,4934 @@
+{
+  "formal_retained_ratio": 0.9875,
+  "free_space_sample_count": 100000,
+  "intrusion_m": {
+    "max": 0.01659290033566113,
+    "median": 0.0076351110288711,
+    "p95": 0.011939402069423287,
+    "p99": 0.014148805931894779
+  },
+  "no_nonfinite": true,
+  "retained_count": 99,
+  "retained_ratio": 0.99,
+  "route_count": 100,
+  "routes": [
+    {
+      "clearance_gap_m": 0.061838742242319555,
+      "clearance_stratum": "TIGHT",
+      "direction_sha256": "82efd7999a450fdabd23869065f685a119979ae8084fa7272e4b2f9050b05c9e",
+      "execution_order": 0,
+      "goal_id": "48b3d7e42658bf13a6ea8a33c00ae0a1cb6d774ab63b6a80942da8f2985751f5",
+      "goal_m": [
+        0.4716522991657257,
+        0.12523484230041504,
+        2.2526073455810547
+      ],
+      "goal_mesh_closest_point_m": [
+        0.4699287534593827,
+        0.29539771842495244,
+        2.0125583378513703
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.7619059878245718,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.1574778402177374,
+        0.2659239914016804
+      ],
+      "map_segment_clearance_m": 0.1473548753160726,
+      "map_status": "RETAINED",
+      "route_id": "8f0977d300d1500f616cbdf672c46986622e84ce42ea1cc643ca7c9344c40789",
+      "segment_mesh_distance_m": 0.16183874224231956,
+      "start_id": "3023efbd04d8db216229e966e5caf9cf32b0f8bd20de940eed03689bbb580c71",
+      "start_m": [
+        1.108504295349121,
+        0.12523484230041504,
+        1.834372639656067
+      ],
+      "start_mesh_closest_point_m": [
+        1.0389974438849843,
+        0.29255057275554247,
+        1.8201304136626535
+      ],
+      "subset": "diagnostic"
+    },
+    {
+      "clearance_gap_m": 0.06212108974887334,
+      "clearance_stratum": "TIGHT",
+      "direction_sha256": "e4ecd1590955440cde70317ea31e005f2e4f1f55aefa1e55be6dc5600e4653d4",
+      "execution_order": 1,
+      "goal_id": "42244f036e6096b66e0671d9df8ca04be100a3df5413ff173b37add3e753a240",
+      "goal_m": [
+        -1.1937029361724854,
+        0.16010022163391113,
+        0.867843508720398
+      ],
+      "goal_mesh_closest_point_m": [
+        -1.1473061422854511,
+        0.16911631246518477,
+        1.0229218610603958
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.0096201856706022,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.5600552205635188,
+        0.13427791199559494
+      ],
+      "map_segment_clearance_m": 0.13427791199559494,
+      "map_status": "RETAINED",
+      "route_id": "496c2538d1509209e2c2e8b2a96bd088f95596ee202c0bf3c547698ebe49ac52",
+      "segment_mesh_distance_m": 0.16212108974887335,
+      "start_id": "1b228c1e356ddae248a4832854a153dea4856f6db71caca853ecc1178117d11c",
+      "start_m": [
+        -2.1930789947509766,
+        0.2470024824142456,
+        0.7537014484405518
+      ],
+      "start_mesh_closest_point_m": [
+        -2.1111696219955722,
+        -0.33131800476372714,
+        0.7783624943450042
+      ],
+      "subset": "diagnostic"
+    },
+    {
+      "clearance_gap_m": 0.07385887838854852,
+      "clearance_stratum": "TIGHT",
+      "direction_sha256": "ca2ee7b06b67fe431fe18fd0dfa3ad269a03d479af0d44062053f48909d31778",
+      "execution_order": 2,
+      "goal_id": "798d213fb7bd0cdffd46aa8de49a129abc2da7f2b920fa4742cde1f73acb9206",
+      "goal_m": [
+        0.366214394569397,
+        0.12523484230041504,
+        2.9767537117004395
+      ],
+      "goal_mesh_closest_point_m": [
+        0.38990017648289793,
+        0.10433942397899845,
+        3.677011639565013
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.3623614830744528,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.1574778402177374,
+        0.6758525692172319
+      ],
+      "map_segment_clearance_m": 0.1491742439352267,
+      "map_status": "RETAINED",
+      "route_id": "038a7f5b22b1564f863904370f3269f6d5635af79587d8fb6be33cf0e0258b5e",
+      "segment_mesh_distance_m": 0.17385887838854852,
+      "start_id": "3023efbd04d8db216229e966e5caf9cf32b0f8bd20de940eed03689bbb580c71",
+      "start_m": [
+        1.108504295349121,
+        0.12523484230041504,
+        1.834372639656067
+      ],
+      "start_mesh_closest_point_m": [
+        1.0389974438849843,
+        0.29255057275554247,
+        1.8201304136626535
+      ],
+      "subset": "diagnostic"
+    },
+    {
+      "clearance_gap_m": 0.1894059921907361,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "df98257f6e619876c462fa9cc0816c1b455b86fdcba0834319d5f0bf8e7f53aa",
+      "execution_order": 3,
+      "goal_id": "29ac9f3f0d8313f8bac25a24bc26746d629780a1a24dcaa7d15f8834686b1c8d",
+      "goal_m": [
+        -0.20004546642303467,
+        0.12523484230041504,
+        2.197641134262085
+      ],
+      "goal_mesh_closest_point_m": [
+        0.1416274425663262,
+        0.3493052450653,
+        1.9126258708612214
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.6739430040320138,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.2659239914016804,
+        0.46807683592713517
+      ],
+      "map_segment_clearance_m": 0.26009952043428003,
+      "map_status": "RETAINED",
+      "route_id": "086efc751cec69b43a7eab59b843627e8e64871b249201cbfcd484b0057572ee",
+      "segment_mesh_distance_m": 0.2894059921907361,
+      "start_id": "48b3d7e42658bf13a6ea8a33c00ae0a1cb6d774ab63b6a80942da8f2985751f5",
+      "start_m": [
+        0.4716522991657257,
+        0.12523484230041504,
+        2.2526073455810547
+      ],
+      "start_mesh_closest_point_m": [
+        0.4699287534593827,
+        0.29539771842495244,
+        2.0125583378513703
+      ],
+      "subset": "diagnostic"
+    },
+    {
+      "clearance_gap_m": 0.08173771501655316,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "9a4de4247018fdd243605ae8c8519a4a9ff1ada045e0bce1ab4d0b2a08812f59",
+      "execution_order": 4,
+      "goal_id": "3023efbd04d8db216229e966e5caf9cf32b0f8bd20de940eed03689bbb580c71",
+      "goal_m": [
+        1.108504295349121,
+        0.12523484230041504,
+        1.834372639656067
+      ],
+      "goal_mesh_closest_point_m": [
+        1.0389974438849843,
+        0.29255057275554247,
+        1.8201304136626535
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.033048224241861,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.7697295271981677,
+        0.1574778402177374
+      ],
+      "map_segment_clearance_m": 0.15661330574520102,
+      "map_status": "RETAINED",
+      "route_id": "0be301a2124e929472389a837c43e459a24574183af2dfd1bdaa44fbaf494e10",
+      "segment_mesh_distance_m": 0.18173771501655317,
+      "start_id": "556bfec0910b17108b5d92351ca91ecc93ddbde42925c9d284ae3ce86689092d",
+      "start_m": [
+        1.0406432151794434,
+        0.12523484230041504,
+        2.865189552307129
+      ],
+      "start_mesh_closest_point_m": [
+        1.0579650378559577,
+        0.10929992907957292,
+        3.661113006163113
+      ],
+      "subset": "diagnostic"
+    },
+    {
+      "clearance_gap_m": 0.11902039021318622,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "4528ef192e6421aa5ea9f2d97ca3ef157d2fd8213e51fa965169f42e281949c9",
+      "execution_order": 5,
+      "goal_id": "74a7c2e0e9a31a6eccd7d175e788b0244ce47e96ff3592803d970b1e18007f07",
+      "goal_m": [
+        2.118241310119629,
+        2.925234794616699,
+        1.8147969245910645
+      ],
+      "goal_mesh_closest_point_m": [
+        2.148681070353805,
+        2.7054239165306164,
+        1.820348424212396
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.839503013230407,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.4597675676378661,
+        0.19802538396058758
+      ],
+      "map_segment_clearance_m": 0.19781458519172657,
+      "map_status": "RETAINED",
+      "route_id": "07c803730c3d9b012732b71cf71ccb37f613ef364833f0cae7db247ec34c70fb",
+      "segment_mesh_distance_m": 0.21902039021318623,
+      "start_id": "3c7eaba787b1aec86cee921b451bcbd0a01623016753e78138c8b1445d065fed",
+      "start_m": [
+        0.41627371311187744,
+        2.925234794616699,
+        1.1168874502182007
+      ],
+      "start_mesh_closest_point_m": [
+        0.4748321299081151,
+        2.44115001441624,
+        1.093090432822471
+      ],
+      "subset": "diagnostic"
+    },
+    {
+      "clearance_gap_m": 0.42750827890437704,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "295942fc53412228ba194e2c305ac09e42473a88a8984fdf3afa318446323627",
+      "execution_order": 6,
+      "goal_id": "7bb6ee812b6eec55dca8be4d0bfed259152636e2a43f507044f225396f7eb2de",
+      "goal_m": [
+        -0.7150417566299438,
+        2.925234794616699,
+        0.22988463938236237
+      ],
+      "goal_mesh_closest_point_m": [
+        -0.6639053821563721,
+        2.371730327606201,
+        0.3437495529651642
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.6549682314309937,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.5024104822886173,
+        0.5410932690575146
+      ],
+      "map_segment_clearance_m": 0.5000724208977286,
+      "map_status": "RETAINED",
+      "route_id": "0df9f0c5903f650995cfd28f8ed86270f8888f97ded6beeee496635bbfb29407",
+      "segment_mesh_distance_m": 0.527508278904377,
+      "start_id": "2e52b64de70c7854f915fa82a54ae2ebf942e5b3a7cc3c8c52d57f4c3cf60afe",
+      "start_m": [
+        -0.10919113457202911,
+        2.925234794616699,
+        -0.018969550728797913
+      ],
+      "start_mesh_closest_point_m": [
+        -0.010318356727806318,
+        2.407424341328546,
+        -0.06434282677822975
+      ],
+      "subset": "diagnostic"
+    },
+    {
+      "clearance_gap_m": 1.1077887786644942,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "14dea7d04af1b8e58525a6676d7be73843e907c9929df37945509e79b3deccf4",
+      "execution_order": 7,
+      "goal_id": "0fa626bb509aa585de000b5f44a07d372a841809eb6f22007cb24b54ed836337",
+      "goal_m": [
+        3.5384974479675293,
+        2.925234794616699,
+        3.0153861045837402
+      ],
+      "goal_mesh_closest_point_m": [
+        2.3535456538004644,
+        2.693172844892655,
+        3.043497149715502
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.07488258156624,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        1.6607103472523266,
+        1.184296331935389
+      ],
+      "map_segment_clearance_m": 1.184296331935389,
+      "map_status": "RETAINED",
+      "route_id": "04b13194c4fbed8933f35646b0da45a48c35db555722b1a3104717c9877adc74",
+      "segment_mesh_distance_m": 1.2077887786644943,
+      "start_id": "7f8373dcc2489d3e1df83f0888efb3d1fc1621d3e49c1faf1da5122de51bd199",
+      "start_m": [
+        4.4943647384643555,
+        2.925234794616699,
+        2.523766040802002
+      ],
+      "start_mesh_closest_point_m": [
+        3.735732316970825,
+        2.7837939262390137,
+        1.0306944847106934
+      ],
+      "subset": "diagnostic"
+    },
+    {
+      "clearance_gap_m": 0.21289233970894247,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "6aab8248efc6744b2fd833f0ba266aa72dae647895e3e023ff54516c9abba0da",
+      "execution_order": 8,
+      "goal_id": "75cfaea4d792787d270c73136e758a64cb2e85f8b56ceb84041f4e5c9e674426",
+      "goal_m": [
+        -0.5785002112388611,
+        2.925234794616699,
+        2.9530038833618164
+      ],
+      "goal_mesh_closest_point_m": [
+        -0.348019003868103,
+        2.4977006912231445,
+        2.976125717163086
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.5659684640601366,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.2886187306616084,
+        0.46650233100348415
+      ],
+      "map_segment_clearance_m": 0.2886187306616084,
+      "map_status": "RETAINED",
+      "route_id": "01164d7c3f46771bd5c8fbc8967d84db00693c922725e110efa82af34abb332d",
+      "segment_mesh_distance_m": 0.3128923397089425,
+      "start_id": "4f8b360facdb93d8971af28dfd12a6df3ed1e7d18c5ae99671a3842676a4017e",
+      "start_m": [
+        0.9695367813110352,
+        2.925234794616699,
+        2.7167017459869385
+      ],
+      "start_mesh_closest_point_m": [
+        0.9923539090676976,
+        2.6132706198501876,
+        2.708997942269176
+      ],
+      "subset": "diagnostic"
+    },
+    {
+      "clearance_gap_m": 0.06083573769138076,
+      "clearance_stratum": "TIGHT",
+      "direction_sha256": "7195b6a9d7c688906bf69af2f047fbcacbcf8738542b169781ee84c24b7a2981",
+      "execution_order": 9,
+      "goal_id": "393ef9bc4f018fc63e5af04ffbe96f0275509b8b3c53efa27d2bdc1ee1ba8318",
+      "goal_m": [
+        -1.627970814704895,
+        0.19958889484405518,
+        1.0031087398529053
+      ],
+      "goal_mesh_closest_point_m": [
+        -1.2985011243810871,
+        0.24595097315053938,
+        1.0956027370837207
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.45655736593583496,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.13427791199559494,
+        0.31604141160743565
+      ],
+      "map_segment_clearance_m": 0.13261594978559174,
+      "map_status": "RETAINED",
+      "route_id": "ea21c8a1f51a67e852872b7ad20fa98a56f06b5a2df7c75c8d77e94df28aab0b",
+      "segment_mesh_distance_m": 0.16083573769138076,
+      "start_id": "42244f036e6096b66e0671d9df8ca04be100a3df5413ff173b37add3e753a240",
+      "start_m": [
+        -1.1937029361724854,
+        0.16010022163391113,
+        0.867843508720398
+      ],
+      "start_mesh_closest_point_m": [
+        -1.1473061422854511,
+        0.16911631246518477,
+        1.0229218610603958
+      ],
+      "subset": "diagnostic"
+    },
+    {
+      "clearance_gap_m": 0.055321210420708505,
+      "clearance_stratum": "TIGHT",
+      "direction_sha256": "47cb789f026e849b255c06a80e51568861976f7967cee65ad52b83cbc50052d9",
+      "execution_order": 10,
+      "goal_id": "24136f4f6bed1d2b7d78427ad0e231bb5b4d1dd47df47b5e34bacfdb4af5426b",
+      "goal_m": [
+        3.109989881515503,
+        0.12523484230041504,
+        -1.1325796842575073
+      ],
+      "goal_mesh_closest_point_m": [
+        3.045854524701372,
+        0.26669570140909965,
+        -1.132179992987903
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.1916612515052256,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.6013519476094129,
+        0.13080696955675516
+      ],
+      "map_segment_clearance_m": 0.13080696955675516,
+      "map_status": "RETAINED",
+      "route_id": "59205b951602868c7f58dd716a8592addfb4a5caa797d81d2d868f885fa56dd1",
+      "segment_mesh_distance_m": 0.1553212104207085,
+      "start_id": "45c1fd71f01ca89c88eb35af5e76cc5fafdb0e95339768c83c5f2faf4fcb1ef2",
+      "start_m": [
+        4.043975830078125,
+        0.12523484230041504,
+        -0.3924940228462219
+      ],
+      "start_mesh_closest_point_m": [
+        4.122308495646539,
+        -0.49597441536738224,
+        -0.40303542746402893
+      ],
+      "subset": "diagnostic"
+    },
+    {
+      "clearance_gap_m": 0.07890097714916253,
+      "clearance_stratum": "TIGHT",
+      "direction_sha256": "bba0a578ae3ebef6d956cc82da3a7ccb0c4f63bd25388afa35217ec9c7f3eac5",
+      "execution_order": 11,
+      "goal_id": "0bfb1bcbf33eaf40b739981d9b446b293456e038aec6aa59c9b9d406e9155ba5",
+      "goal_m": [
+        1.5419844388961792,
+        0.12523484230041504,
+        -1.6618530750274658
+      ],
+      "goal_mesh_closest_point_m": [
+        1.5325790913646484,
+        0.12506189713948868,
+        -1.483199585969156
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.4537627175398617,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.5771157457427482,
+        0.15468536426356003
+      ],
+      "map_segment_clearance_m": 0.15468536426356003,
+      "map_status": "RETAINED",
+      "route_id": "2f2b84c03dfbff870b5817cb3005b7c244c210071644e04a0737b881a566c687",
+      "segment_mesh_distance_m": 0.17890097714916253,
+      "start_id": "423526644e635d566df80db59889d1dcd4841fd870ff58171a63e4a0a8b969a3",
+      "start_m": [
+        2.92018723487854,
+        0.12523484230041504,
+        -2.124436140060425
+      ],
+      "start_mesh_closest_point_m": [
+        2.9307653132498785,
+        0.1449712625730546,
+        -1.5222086095527065
+      ],
+      "subset": "diagnostic"
+    },
+    {
+      "clearance_gap_m": 0.10937428720532391,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "d301590b6e25dde851db9607e539383f6c6e454e0f93dd7ea6c19ceee03c409a",
+      "execution_order": 12,
+      "goal_id": "28488662bb60f467f01e7e3d21e061b6c8d90903b111d399b2d8eb4be681bea5",
+      "goal_m": [
+        1.9597558975219727,
+        2.925234794616699,
+        -0.8740676641464233
+      ],
+      "goal_mesh_closest_point_m": [
+        1.4770213208685297,
+        2.8699068125557434,
+        -0.8666057888714604
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.5110610975139778,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.1851894489071189,
+        0.4583393356727112
+      ],
+      "map_segment_clearance_m": 0.1851894489071189,
+      "map_status": "RETAINED",
+      "route_id": "0bdcd73c80eaa7073d7a6e5a906ff1626ee0cced289d2468907e286dcda5a8e4",
+      "segment_mesh_distance_m": 0.20937428720532392,
+      "start_id": "6d1848c94208c8a2de671878dbfdd4950a3d83525c93be06ad749d44ec4c8f52",
+      "start_m": [
+        2.2599234580993652,
+        2.925234794616699,
+        -1.2876893281936646
+      ],
+      "start_mesh_closest_point_m": [
+        2.2569161853779818,
+        2.923545820042292,
+        -1.4970352042419013
+      ],
+      "subset": "diagnostic"
+    },
+    {
+      "clearance_gap_m": 0.16359585986594274,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "28cd4c02fcfe3b8c5406f5d97cfc8059fdf4762f44e5530f42cea65a2e3272f1",
+      "execution_order": 13,
+      "goal_id": "0c037aeb8d97a89c069918baf17c6276fcf56b9f073e8b748c36fadbf0776baa",
+      "goal_m": [
+        -0.4094833433628082,
+        0.12523484230041504,
+        -0.4179464280605316
+      ],
+      "goal_mesh_closest_point_m": [
+        -0.6533263829372118,
+        0.08721447861978981,
+        -0.5105628485008324
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.9283343397798315,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.6760938707861793,
+        0.24015436597153572
+      ],
+      "map_segment_clearance_m": 0.24015436597153572,
+      "map_status": "RETAINED",
+      "route_id": "14f0ff4c46b70aed2de567ade89736a579b702b418588683b2b99e4430533474",
+      "segment_mesh_distance_m": 0.26359585986594275,
+      "start_id": "6590b7d371a737664b28e73f7b0d130e727944458b5d5b1b4f49d37b3e8198d1",
+      "start_m": [
+        0.03597864508628845,
+        0.12523484230041504,
+        0.39652779698371887
+      ],
+      "start_mesh_closest_point_m": [
+        0.04822702218209144,
+        0.13432503315313746,
+        1.097574913908781
+      ],
+      "subset": "diagnostic"
+    },
+    {
+      "clearance_gap_m": 0.15849928184802384,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "44df110e75c4a9c03968b5305310b7209decaf5a1523215b48de3967c60ba4ae",
+      "execution_order": 14,
+      "goal_id": "00623dc722b3bdda649a2932758648cd190e7491e12d776a53d3134094cefa6d",
+      "goal_m": [
+        1.8084056377410889,
+        2.925234794616699,
+        2.028928756713867
+      ],
+      "goal_mesh_closest_point_m": [
+        1.8409525148764645,
+        2.668817364288466,
+        2.0324897858550566
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.9542305574837708,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.39804516698179854,
+        0.23782143754057533
+      ],
+      "map_segment_clearance_m": 0.23781425069439305,
+      "map_status": "RETAINED",
+      "route_id": "0b81af4f799894ef119602263505785e54119311653cb5732e264a6fbbe24e25",
+      "segment_mesh_distance_m": 0.25849928184802384,
+      "start_id": "58c48114592e2472a18a02950b97618bfb7a2f8076b889d0cc98035ee8f22c3b",
+      "start_m": [
+        1.512427806854248,
+        2.925234794616699,
+        3.960615634918213
+      ],
+      "start_mesh_closest_point_m": [
+        1.5437046211975642,
+        2.607239844518687,
+        3.6880512065647872
+      ],
+      "subset": "diagnostic"
+    },
+    {
+      "clearance_gap_m": 0.38819408091080054,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "3489ec74112b364386504287e9a5ca8c1cb9dd2e921b37a3669975213e3bf9c9",
+      "execution_order": 15,
+      "goal_id": "3d3024bc78bbf409afa671b1f0a1aeb391823575a584d10aad83476be748bde4",
+      "goal_m": [
+        0.09646345674991608,
+        2.925234794616699,
+        1.377356767654419
+      ],
+      "goal_mesh_closest_point_m": [
+        0.08605331927537918,
+        2.430781364440918,
+        1.6909340620040894
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.41245953183311557,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.4597675676378661,
+        0.5682799602034803
+      ],
+      "map_segment_clearance_m": 0.4597675676378661,
+      "map_status": "RETAINED",
+      "route_id": "0e8735d32cf620a4596fc3574f763e69da78d5a0757458bf21c4f9ec4ece19ca",
+      "segment_mesh_distance_m": 0.4881940809108006,
+      "start_id": "3c7eaba787b1aec86cee921b451bcbd0a01623016753e78138c8b1445d065fed",
+      "start_m": [
+        0.41627371311187744,
+        2.925234794616699,
+        1.1168874502182007
+      ],
+      "start_mesh_closest_point_m": [
+        0.4748321299081151,
+        2.44115001441624,
+        1.093090432822471
+      ],
+      "subset": "diagnostic"
+    },
+    {
+      "clearance_gap_m": 0.4266710340954848,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "a7768823fe94e0694768062bbcfac00f8d00c4d0c6485e7d16cd2f6ce18d3b48",
+      "execution_order": 16,
+      "goal_id": "192ddb4381637d96b55e539d53e64b34c372a4d64707427e3d79e4a06d0b132b",
+      "goal_m": [
+        -0.6565583944320679,
+        2.925234794616699,
+        0.6086075305938721
+      ],
+      "goal_mesh_closest_point_m": [
+        -0.640318708313913,
+        2.3751325643078194,
+        0.6062953136500416
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.0761121214068332,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.5682799602034803,
+        0.5298858016113994
+      ],
+      "map_segment_clearance_m": 0.5001030738632547,
+      "map_status": "RETAINED",
+      "route_id": "08bace72c40c98e696d182b5fc6affd1439330451d09be4986c007a2c0b349ec",
+      "segment_mesh_distance_m": 0.5266710340954848,
+      "start_id": "3d3024bc78bbf409afa671b1f0a1aeb391823575a584d10aad83476be748bde4",
+      "start_m": [
+        0.09646345674991608,
+        2.925234794616699,
+        1.377356767654419
+      ],
+      "start_mesh_closest_point_m": [
+        0.08605331927537918,
+        2.430781364440918,
+        1.6909340620040894
+      ],
+      "subset": "diagnostic"
+    },
+    {
+      "clearance_gap_m": 0.3787556914744239,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "219d3bead79f7a3a4a3eeddee35dd143e8b56de2cf1d11a460c278759dba175a",
+      "execution_order": 17,
+      "goal_id": "75cfaea4d792787d270c73136e758a64cb2e85f8b56ceb84041f4e5c9e674426",
+      "goal_m": [
+        -0.5785002112388611,
+        2.925234794616699,
+        2.9530038833618164
+      ],
+      "goal_mesh_closest_point_m": [
+        -0.348019003868103,
+        2.4977006912231445,
+        2.976125717163086
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.701790981267325,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        1.062596468829937,
+        0.46650233100348415
+      ],
+      "map_segment_clearance_m": 0.4547355432986038,
+      "map_status": "RETAINED",
+      "route_id": "07710ac4ace3bc277818ac52a94d1563c020f4677868b3931e725b1edcfb3650",
+      "segment_mesh_distance_m": 0.47875569147442393,
+      "start_id": "820f52fd461f140ee4d4d6bb2cfe41c3357fade68f27cc5938877e8b82fe9a0e",
+      "start_m": [
+        -0.4677810072898865,
+        2.925234794616699,
+        4.65118932723999
+      ],
+      "start_mesh_closest_point_m": [
+        -0.4421256605819177,
+        2.349143028138762,
+        3.735602933938095
+      ],
+      "subset": "diagnostic"
+    },
+    {
+      "clearance_gap_m": 0.07890097714916253,
+      "clearance_stratum": "TIGHT",
+      "direction_sha256": "92f10a0c93fe3a342fdb9954c3e41916c0297b3078a15343c0dd11f8a6576068",
+      "execution_order": 18,
+      "goal_id": "0e8fe2caa27ce25ec0a5b9c6a8db11817c5ac0e35a9de504523980a6578a6a5e",
+      "goal_m": [
+        2.052314043045044,
+        0.12523484230041504,
+        -2.0860090255737305
+      ],
+      "goal_mesh_closest_point_m": [
+        2.4896480081191297,
+        0.18345669812850707,
+        -1.5141062655375834
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.6635846406107831,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.15468536426356003,
+        0.7049466671188974
+      ],
+      "map_segment_clearance_m": 0.15468536426356003,
+      "map_status": "RETAINED",
+      "route_id": "f545d18c22d7f7fc8f4400486f1b8602d459690ca38049cdf17960e092bfd65a",
+      "segment_mesh_distance_m": 0.17890097714916253,
+      "start_id": "0bfb1bcbf33eaf40b739981d9b446b293456e038aec6aa59c9b9d406e9155ba5",
+      "start_m": [
+        1.5419844388961792,
+        0.12523484230041504,
+        -1.6618530750274658
+      ],
+      "start_mesh_closest_point_m": [
+        1.5325790913646484,
+        0.12506189713948868,
+        -1.483199585969156
+      ],
+      "subset": "diagnostic"
+    },
+    {
+      "clearance_gap_m": 0.055321210420708505,
+      "clearance_stratum": "TIGHT",
+      "direction_sha256": "00b3122c06d47e0419adf591fdc3e0b2a5f87a5a8daf1064db611b13d4d0d25a",
+      "execution_order": 19,
+      "goal_id": "3882f361519564779a28e9fe77f3aae0d5e8b82199c148333c07a96d4e407cdc",
+      "goal_m": [
+        3.6364846229553223,
+        0.12523484230041504,
+        -0.19216683506965637
+      ],
+      "goal_mesh_closest_point_m": [
+        3.08469295501709,
+        0.0053563788533210754,
+        -0.6638264656066895
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.0777629793611367,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.13080696955675516,
+        0.7122058197316652
+      ],
+      "map_segment_clearance_m": 0.13080696955675516,
+      "map_status": "RETAINED",
+      "route_id": "95d228b3d86e156b16dc9c820e3c960f2e3a8682ad7a55787a22225e6886e387",
+      "segment_mesh_distance_m": 0.1553212104207085,
+      "start_id": "24136f4f6bed1d2b7d78427ad0e231bb5b4d1dd47df47b5e34bacfdb4af5426b",
+      "start_m": [
+        3.109989881515503,
+        0.12523484230041504,
+        -1.1325796842575073
+      ],
+      "start_mesh_closest_point_m": [
+        3.045854524701372,
+        0.26669570140909965,
+        -1.132179992987903
+      ],
+      "subset": "diagnostic"
+    },
+    {
+      "clearance_gap_m": 0.03214678293567022,
+      "clearance_stratum": "TIGHT",
+      "direction_sha256": "a09f333d3e07adda11d67a406422a1b00025f5083c6a216b4bfefc7b0b865736",
+      "execution_order": 20,
+      "goal_id": "29ac9f3f0d8313f8bac25a24bc26746d629780a1a24dcaa7d15f8834686b1c8d",
+      "goal_m": [
+        -0.20004546642303467,
+        0.12523484230041504,
+        2.197641134262085
+      ],
+      "goal_mesh_closest_point_m": [
+        0.1416274425663262,
+        0.3493052450653,
+        1.9126258708612214
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.3580377307745497,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.1574778402177374,
+        0.46807683592713517
+      ],
+      "map_segment_clearance_m": 0.10300404551036373,
+      "map_status": "MAP_GEOMETRY_BLOCKED",
+      "route_id": "3c19a4bf5ec3f1fa49e30064252748712678a1dd1789fa3a13932eb142dd4c6e",
+      "segment_mesh_distance_m": 0.13214678293567023,
+      "start_id": "3023efbd04d8db216229e966e5caf9cf32b0f8bd20de940eed03689bbb580c71",
+      "start_m": [
+        1.108504295349121,
+        0.12523484230041504,
+        1.834372639656067
+      ],
+      "start_mesh_closest_point_m": [
+        1.0389974438849843,
+        0.29255057275554247,
+        1.8201304136626535
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.10671561758683931,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "e416d4bab37f548e3a11b159c411dfb5504a7a45a5dc060e4f83d7ed81b93030",
+      "execution_order": 21,
+      "goal_id": "0cc28c0b82e53144bfb7260e7c2d1f8148c2d6e92865482351f72e3bc1d8d40d",
+      "goal_m": [
+        1.5350645780563354,
+        0.12523484230041504,
+        3.290405750274658
+      ],
+      "goal_mesh_closest_point_m": [
+        1.5381106427334565,
+        0.12023618677974153,
+        3.655808163530395
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.6382900974506359,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.18259708765305704,
+        0.342241068998772
+      ],
+      "map_segment_clearance_m": 0.18259708765305704,
+      "map_status": "RETAINED",
+      "route_id": "34ab9242d256f26919370e379a89971aae1c329beb2fb61b23193b9367a53beb",
+      "segment_mesh_distance_m": 0.20671561758683932,
+      "start_id": "655585250845869c7d43c274e6ff9e2b8fb8b120bd983e6b0d585b91abf4cb0a",
+      "start_m": [
+        2.153064489364624,
+        0.12523484230041504,
+        3.4500627517700195
+      ],
+      "start_mesh_closest_point_m": [
+        2.15145759385101,
+        0.12375460805248574,
+        3.6567668236885185
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.12160364989923222,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "6a856d9f086db034469f778429164038225cf1b330410c78bd31e3fb391a2b31",
+      "execution_order": 22,
+      "goal_id": "364650f103dbae431124e6a33da7906066df351a91a618177d00abfbbb28f52a",
+      "goal_m": [
+        0.49911826848983765,
+        0.12523484230041504,
+        -0.9042955040931702
+      ],
+      "goal_mesh_closest_point_m": [
+        0.49386527578224443,
+        0.11610316576435895,
+        -1.4582869825326528
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.8386682101806527,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.2089676272264368,
+        0.5283810111071447
+      ],
+      "map_segment_clearance_m": 0.2089676272264368,
+      "map_status": "RETAINED",
+      "route_id": "18eea0da48189a0caf47084b93903084866188164b58acc500ca6868b728e16a",
+      "segment_mesh_distance_m": 0.22160364989923223,
+      "start_id": "1a70d3d8d480c925724a71b6e77736e9b0205b503250ca3a1e86d4da4c9a4735",
+      "start_m": [
+        -0.27632540464401245,
+        0.12523484230041504,
+        -1.2237504720687866
+      ],
+      "start_mesh_closest_point_m": [
+        -0.2793489136928383,
+        0.1242766289201934,
+        -1.4453314231201149
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.08759552571297177,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "ac879a8b4853c88e623ba7df30a80f59e89778bf829c142445864e9675e9e534",
+      "execution_order": 23,
+      "goal_id": "797ca796f595282dd61ad12e8b65dd32d8e632ffd6a6e587505b65938d1421f1",
+      "goal_m": [
+        0.9489429593086243,
+        0.12523484230041504,
+        3.8516626358032227
+      ],
+      "goal_mesh_closest_point_m": [
+        0.9447428157328217,
+        0.12918048945568347,
+        3.664155644120259
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.6481273764913573,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.2442917786563939,
+        0.1643076118151888
+      ],
+      "map_segment_clearance_m": 0.1643076118151888,
+      "map_status": "RETAINED",
+      "route_id": "0fdd4e9ef19bd32957bd480678febef0d5cd94126d0838b91d6ed38bae2e7535",
+      "segment_mesh_distance_m": 0.18759552571297178,
+      "start_id": "6225e295d165304f4b8d1730f6b458777c2d7b6283d8b0cc561f0bfb920be1a6",
+      "start_m": [
+        2.5951297283172607,
+        0.12523484230041504,
+        3.9316186904907227
+      ],
+      "start_mesh_closest_point_m": [
+        2.6003921845903206,
+        0.1264320965232444,
+        3.66010550102494
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.5361044093448876,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "2f79842aa1523c72096124d5022ff9e18de0a8e19b6aade74209dfa649920232",
+      "execution_order": 24,
+      "goal_id": "3882f361519564779a28e9fe77f3aae0d5e8b82199c148333c07a96d4e407cdc",
+      "goal_m": [
+        3.6364846229553223,
+        0.12523484230041504,
+        -0.19216683506965637
+      ],
+      "goal_mesh_closest_point_m": [
+        3.08469295501709,
+        0.0053563788533210754,
+        -0.6638264656066895
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.47772749917938073,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.6134080036181955,
+        0.7122058197316652
+      ],
+      "map_segment_clearance_m": 0.6134080036181955,
+      "map_status": "RETAINED",
+      "route_id": "11d0b6f31db809811ef8d97e8f1ab7817cedab37d027115100976edae58fea13",
+      "segment_mesh_distance_m": 0.6361044093448875,
+      "start_id": "24e7d6b27553984b77fba84bbffbd95669b6ad3a44fbf51fa086d79819ba67c6",
+      "start_m": [
+        3.9706079959869385,
+        0.12523484230041504,
+        0.14927881956100464
+      ],
+      "start_mesh_closest_point_m": [
+        4.123076579624697,
+        -0.4918302231047973,
+        0.17403474103375888
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.4917401909834527,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "e47248e62a0d7e097957ec4b184b97b86f6dd752ee6a5f6bad7cc63ca7ca19ed",
+      "execution_order": 25,
+      "goal_id": "423526644e635d566df80db59889d1dcd4841fd870ff58171a63e4a0a8b969a3",
+      "goal_m": [
+        2.92018723487854,
+        0.12523484230041504,
+        -2.124436140060425
+      ],
+      "goal_mesh_closest_point_m": [
+        2.9307653132498785,
+        0.1449712625730546,
+        -1.5222086095527065
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.8687235004482345,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.7049466671188974,
+        0.5771157457427482
+      ],
+      "map_segment_clearance_m": 0.5697300495336475,
+      "map_status": "RETAINED",
+      "route_id": "0a89be12c8c473e7eac3bd2b75dd0d1424e83d4bd5f820f0c73650f898d773a0",
+      "segment_mesh_distance_m": 0.5917401909834527,
+      "start_id": "0e8fe2caa27ce25ec0a5b9c6a8db11817c5ac0e35a9de504523980a6578a6a5e",
+      "start_m": [
+        2.052314043045044,
+        0.12523484230041504,
+        -2.0860090255737305
+      ],
+      "start_mesh_closest_point_m": [
+        2.4896480081191297,
+        0.18345669812850707,
+        -1.5141062655375834
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.3364286814292248,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "58164c2e26ce0f3e99a4fa358d63b3a2532692ad0c55e6a61097e2620b22f927",
+      "execution_order": 26,
+      "goal_id": "2e52b64de70c7854f915fa82a54ae2ebf942e5b3a7cc3c8c52d57f4c3cf60afe",
+      "goal_m": [
+        -0.10919113457202911,
+        2.925234794616699,
+        -0.018969550728797913
+      ],
+      "goal_mesh_closest_point_m": [
+        -0.010318356727806318,
+        2.407424341328546,
+        -0.06434282677822975
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.8804630693139694,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.4199166603578258,
+        0.5024104822886173
+      ],
+      "map_segment_clearance_m": 0.4178148902599772,
+      "map_status": "RETAINED",
+      "route_id": "0781d7b0bd2c7f9c9ce552a41649885d9a6ac89ea44fefa24f4b7f6fc9556a55",
+      "segment_mesh_distance_m": 0.43642868142922475,
+      "start_id": "5661651b6f44226361e8fc1d14b3265ee1712cf90fd2209efd9e19d03734f00e",
+      "start_m": [
+        0.9896584153175354,
+        2.925234794616699,
+        1.5070288181304932
+      ],
+      "start_mesh_closest_point_m": [
+        1.2640043497085571,
+        2.588060140609741,
+        1.5459846258163452
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.055321210420708505,
+      "clearance_stratum": "TIGHT",
+      "direction_sha256": "f1d016b5b079e3ad425c1e84f71c27ef87303aabc8c2d792aa203f5cc3be23e7",
+      "execution_order": 27,
+      "goal_id": "24136f4f6bed1d2b7d78427ad0e231bb5b4d1dd47df47b5e34bacfdb4af5426b",
+      "goal_m": [
+        3.109989881515503,
+        0.12523484230041504,
+        -1.1325796842575073
+      ],
+      "goal_mesh_closest_point_m": [
+        3.045854524701372,
+        0.26669570140909965,
+        -1.132179992987903
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.8436618398129729,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.642185183910654,
+        0.13080696955675516
+      ],
+      "map_segment_clearance_m": 0.13080696955675516,
+      "map_status": "RETAINED",
+      "route_id": "9e6b523bc87f20f990a1adb7b75d778811eaea3ea037f87924690c3ecad8e715",
+      "segment_mesh_distance_m": 0.1553212104207085,
+      "start_id": "82adf9c167ddf4dab293dc77df333e57262b83029d3487d92dd7a169c4775b6d",
+      "start_m": [
+        3.8521687984466553,
+        0.12523484230041504,
+        -0.7314116954803467
+      ],
+      "start_mesh_closest_point_m": [
+        4.097627639770508,
+        -0.4977661669254303,
+        -0.7442349195480347
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.04350814675263598,
+      "clearance_stratum": "TIGHT",
+      "direction_sha256": "cff2d161a14a87fa7abe94cf541da936aff085283448239df7553ad19cc40a93",
+      "execution_order": 28,
+      "goal_id": "24136f4f6bed1d2b7d78427ad0e231bb5b4d1dd47df47b5e34bacfdb4af5426b",
+      "goal_m": [
+        3.109989881515503,
+        0.12523484230041504,
+        -1.1325796842575073
+      ],
+      "goal_mesh_closest_point_m": [
+        3.045854524701372,
+        0.26669570140909965,
+        -1.132179992987903
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.3294326613871623,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.692058695328862,
+        0.13080696955675516
+      ],
+      "map_segment_clearance_m": 0.12371114509986417,
+      "map_status": "RETAINED",
+      "route_id": "5c5ca0eefaa613da8c16f813fc8e9baf998404c971f1d90e82c8614b7adebbe7",
+      "segment_mesh_distance_m": 0.14350814675263598,
+      "start_id": "8348341c974233d7a17e677db1972fb37f9289f3654a9dbf62d86ad4a2579bb9",
+      "start_m": [
+        3.295524835586548,
+        0.12523484230041504,
+        0.183842733502388
+      ],
+      "start_mesh_closest_point_m": [
+        3.1050543498853154,
+        0.8191202667174572,
+        0.16784377879082665
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.13222442990526656,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "664d1e14b6a0d7e808d7a765a905c9f697eea2aec73e5f68b7b75448604195df",
+      "execution_order": 29,
+      "goal_id": "62daefa29a71c080912dc28a9f62057c673703d17da47d9372776bfae76615df",
+      "goal_m": [
+        3.23270320892334,
+        0.12523484230041504,
+        2.4692916870117188
+      ],
+      "goal_mesh_closest_point_m": [
+        2.682180111341989,
+        0.04945718329450928,
+        2.4801433335193477
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.583587641657501,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.20428592813444063,
+        0.5280866875736037
+      ],
+      "map_segment_clearance_m": 0.20428592813444063,
+      "map_status": "RETAINED",
+      "route_id": "3f0738fc8daf035bfd82019943bb79fe976f78b3ce66ed3e56cb93a0b34e0e5c",
+      "segment_mesh_distance_m": 0.23222442990526657,
+      "start_id": "18e7f93362679dcb32a5b36b22087582e6a01088331bc327877950209522a58a",
+      "start_m": [
+        2.910740852355957,
+        0.12523484230041504,
+        2.9560306072235107
+      ],
+      "start_mesh_closest_point_m": [
+        2.680905657170175,
+        0.09260172431922692,
+        2.962279487888503
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.19441944549977927,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "02532123278a13b9ee0bad96cdc2434864ba2b195d61f171d11e8d345d73941a",
+      "execution_order": 30,
+      "goal_id": "45c1fd71f01ca89c88eb35af5e76cc5fafdb0e95339768c83c5f2faf4fcb1ef2",
+      "goal_m": [
+        4.043975830078125,
+        0.12523484230041504,
+        -0.3924940228462219
+      ],
+      "goal_mesh_closest_point_m": [
+        4.122308495646539,
+        -0.49597441536738224,
+        -0.40303542746402893
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.0952997347996825,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.26772244505048237,
+        0.6013519476094129
+      ],
+      "map_segment_clearance_m": 0.26772244505048237,
+      "map_status": "RETAINED",
+      "route_id": "221abab8ec1ef70ae41355b0cfffe1eae74d295b4e83d42ec87a2eabd04e1b53",
+      "segment_mesh_distance_m": 0.2944194454997793,
+      "start_id": "4b3458eabd6506b4214bbca672441507f4d1308013b46bed0930b4549b77628f",
+      "start_m": [
+        4.227324962615967,
+        0.12523484230041504,
+        0.6873506903648376
+      ],
+      "start_mesh_closest_point_m": [
+        4.199633624048191,
+        0.11709744525564089,
+        0.9803520255598467
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.15849928184802384,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "523b4003866e809a205aa976fc655dec97b3bafbfbff796a49183a3ac32883a3",
+      "execution_order": 31,
+      "goal_id": "25b25e9ba3bdd2b1567e33dd4c32955d2ad81b89a3611a299ca28d376295193a",
+      "goal_m": [
+        1.5501676797866821,
+        2.925234794616699,
+        3.2557833194732666
+      ],
+      "goal_mesh_closest_point_m": [
+        1.4859410524368286,
+        2.6739890575408936,
+        3.2539684772491455
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.2537379953929844,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.23782143754057533,
+        0.2448739005980381
+      ],
+      "map_segment_clearance_m": 0.23781437068883515,
+      "map_status": "RETAINED",
+      "route_id": "13c5e0913ab2da551bb3762bfe9ccb6e7ddca7110d92b79b1ff3531699eb89ac",
+      "segment_mesh_distance_m": 0.25849928184802384,
+      "start_id": "00623dc722b3bdda649a2932758648cd190e7491e12d776a53d3134094cefa6d",
+      "start_m": [
+        1.8084056377410889,
+        2.925234794616699,
+        2.028928756713867
+      ],
+      "start_mesh_closest_point_m": [
+        1.8409525148764645,
+        2.668817364288466,
+        2.0324897858550566
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 1.2841195015864528,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "578c11e354e4da9717a1c5ff638418d834b2c7fdb409d220c6026af509f382ff",
+      "execution_order": 32,
+      "goal_id": "7f8373dcc2489d3e1df83f0888efb3d1fc1621d3e49c1faf1da5122de51bd199",
+      "goal_m": [
+        4.4943647384643555,
+        2.925234794616699,
+        2.523766040802002
+      ],
+      "goal_mesh_closest_point_m": [
+        3.735732316970825,
+        2.7837939262390137,
+        1.0306944847106934
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.7984910869647435,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        1.3591164788756394,
+        1.6607103472523266
+      ],
+      "map_segment_clearance_m": 1.3591164788756394,
+      "map_status": "RETAINED",
+      "route_id": "15c4e0d6905a2f072fe6e80c01dcffa06af0ca00bbc55a944b7ad2d2d80cd1c4",
+      "segment_mesh_distance_m": 1.384119501586453,
+      "start_id": "72c107f9b4b6ab41ecc036b18ef94ddd60fbafae15301c773dedfe1701c5b03e",
+      "start_m": [
+        3.7096052169799805,
+        2.925234794616699,
+        2.671212673187256
+      ],
+      "start_mesh_closest_point_m": [
+        2.3449206352233887,
+        2.6950511932373047,
+        2.692148208618164
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.39817830392735243,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "2ef54b59e85facc376d8d60694111ca10524b9dc803f8dd1ec53373817bc3d6d",
+      "execution_order": 33,
+      "goal_id": "798d213fb7bd0cdffd46aa8de49a129abc2da7f2b920fa4742cde1f73acb9206",
+      "goal_m": [
+        0.366214394569397,
+        0.12523484230041504,
+        2.9767537117004395
+      ],
+      "goal_mesh_closest_point_m": [
+        0.38990017648289793,
+        0.10433942397899845,
+        3.677011639565013
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.9631545247226968,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.46807683592713517,
+        0.6758525692172319
+      ],
+      "map_segment_clearance_m": 0.46807683592713517,
+      "map_status": "RETAINED",
+      "route_id": "113710adae02c83cad2bc1ac360af83e509133c3e8862d9e6d30a4f625518230",
+      "segment_mesh_distance_m": 0.4981783039273524,
+      "start_id": "29ac9f3f0d8313f8bac25a24bc26746d629780a1a24dcaa7d15f8834686b1c8d",
+      "start_m": [
+        -0.20004546642303467,
+        0.12523484230041504,
+        2.197641134262085
+      ],
+      "start_mesh_closest_point_m": [
+        0.1416274425663262,
+        0.3493052450653,
+        1.9126258708612214
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.22711726977342242,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "bf333fbc247367b32cad0a9045bd0f3e0ac7baf4af21fd63aa69af6249db7146",
+      "execution_order": 34,
+      "goal_id": "27713502b7bf5a79f531be980981ebb2df6b0aa467bcaba2b59217fb7fac9e8c",
+      "goal_m": [
+        -0.17673417925834656,
+        2.925234794616699,
+        2.9308266639709473
+      ],
+      "goal_mesh_closest_point_m": [
+        -0.14252018619325468,
+        2.5264002284962945,
+        2.940406226196297
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.978315834241963,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.39804516698179854,
+        0.3778725452226588
+      ],
+      "map_segment_clearance_m": 0.3178146544858863,
+      "map_status": "RETAINED",
+      "route_id": "0907f27a8fd8b115803bb6af820ff8331acd547d09dcc68969b11d2281e63062",
+      "segment_mesh_distance_m": 0.3271172697734224,
+      "start_id": "58c48114592e2472a18a02950b97618bfb7a2f8076b889d0cc98035ee8f22c3b",
+      "start_m": [
+        1.512427806854248,
+        2.925234794616699,
+        3.960615634918213
+      ],
+      "start_mesh_closest_point_m": [
+        1.5437046211975642,
+        2.607239844518687,
+        3.6880512065647872
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.055321210420708505,
+      "clearance_stratum": "TIGHT",
+      "direction_sha256": "ec5ffe7400179057ba1552856fe76011d6e754c324e1401f189cd988a971bf84",
+      "execution_order": 35,
+      "goal_id": "24136f4f6bed1d2b7d78427ad0e231bb5b4d1dd47df47b5e34bacfdb4af5426b",
+      "goal_m": [
+        3.109989881515503,
+        0.12523484230041504,
+        -1.1325796842575073
+      ],
+      "goal_mesh_closest_point_m": [
+        3.045854524701372,
+        0.26669570140909965,
+        -1.132179992987903
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.975127836273482,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.2926533995718045,
+        0.13080696955675516
+      ],
+      "map_segment_clearance_m": 0.13080696955675516,
+      "map_status": "RETAINED",
+      "route_id": "66c6644390b144fe6fa1e4c1a472952ded5cc05e1881cd52447f67af6c65995a",
+      "segment_mesh_distance_m": 0.1553212104207085,
+      "start_id": "0033737348a250a878f9a838a496342eb558c1a62e98ddf55e3293cc4a1fafb6",
+      "start_m": [
+        4.606825828552246,
+        0.12523484230041504,
+        0.15606771409511566
+      ],
+      "start_mesh_closest_point_m": [
+        4.923887435136898,
+        0.1615064497005995,
+        0.14975718050901238
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.09888959702316641,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "0fb155f393dece9883fc1ee6ab669a85f1538a8bd7062dd50a17370b0ccfccb6",
+      "execution_order": 36,
+      "goal_id": "12ccf4ebf402a65d481afc7759b33d95f4efd9a77361251e5dceddc50788545b",
+      "goal_m": [
+        1.6860692501068115,
+        2.925234794616699,
+        0.07839435338973999
+      ],
+      "goal_mesh_closest_point_m": [
+        1.488432841922406,
+        2.9032058559848415,
+        0.081807244650594
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.671861995387964,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.7431083039842318,
+        0.17888619105251757
+      ],
+      "map_segment_clearance_m": 0.17888619105251757,
+      "map_status": "RETAINED",
+      "route_id": "77b24f099569cb519b6e91fd456d850f77f7017d0ea945d6e46863a30e9af38d",
+      "segment_mesh_distance_m": 0.19888959702316641,
+      "start_id": "5e8ceb7b8ff7068b1fee63186f8804731f9e7d50949c24f857dbab842c2bdd8b",
+      "start_m": [
+        2.357872724533081,
+        2.925234794616699,
+        0.06952685117721558
+      ],
+      "start_mesh_closest_point_m": [
+        2.3688395219835416,
+        2.9364204949225416,
+        0.8395115104324885
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.1998581892592818,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "21c3a883cdd1137a20dcd90132b9422fa74830aaaf1f43e9a97c9dfe3f686339",
+      "execution_order": 37,
+      "goal_id": "4f8b360facdb93d8971af28dfd12a6df3ed1e7d18c5ae99671a3842676a4017e",
+      "goal_m": [
+        0.9695367813110352,
+        2.925234794616699,
+        2.7167017459869385
+      ],
+      "goal_mesh_closest_point_m": [
+        0.9923539090676976,
+        2.6132706198501876,
+        2.708997942269176
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.8604399318646864,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.41682484498141226,
+        0.2886187306616084
+      ],
+      "map_segment_clearance_m": 0.27783050953233157,
+      "map_status": "RETAINED",
+      "route_id": "229d16b4fd6f1cdbece19ce69f51f358dbf6bfcefd20d16ffe4295142feb32a6",
+      "segment_mesh_distance_m": 0.2998581892592818,
+      "start_id": "65147b607d910e120c43be990e79aab74ad9a535e9c2fb9fb73f8e6c146a7ed3",
+      "start_m": [
+        0.8757659196853638,
+        2.925234794616699,
+        1.8613866567611694
+      ],
+      "start_mesh_closest_point_m": [
+        0.7549309730529785,
+        2.5254299640655518,
+        2.001138687133789
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.08839127272622185,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "99017e7e369042fe3946ea5325c405a0c4baaf5dd2ac63712b126a07ff0d3310",
+      "execution_order": 38,
+      "goal_id": "00623dc722b3bdda649a2932758648cd190e7491e12d776a53d3134094cefa6d",
+      "goal_m": [
+        1.8084056377410889,
+        2.925234794616699,
+        2.028928756713867
+      ],
+      "goal_mesh_closest_point_m": [
+        1.8409525148764645,
+        2.668817364288466,
+        2.0324897858550566
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.4779663910969665,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.6915890920335477,
+        0.23782143754057533
+      ],
+      "map_segment_clearance_m": 0.17781719505138602,
+      "map_status": "RETAINED",
+      "route_id": "257d58a697a85e3f76d5e2d0ca9fa7df2c92cd2ef6bf7f54d33620b920cc7e7a",
+      "segment_mesh_distance_m": 0.18839127272622186,
+      "start_id": "7f27537560370bceef96ac433461ac5f16d2200346a2080111c936523e2bb22a",
+      "start_m": [
+        3.259033441543579,
+        2.925234794616699,
+        1.7459735870361328
+      ],
+      "start_mesh_closest_point_m": [
+        3.2791216373443604,
+        2.8094754219055176,
+        1.036875605583191
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.3364286814292248,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "e0e340adae682cd91c51e72b01d2230d84cb220d3dfa880cea9303fba32c46fa",
+      "execution_order": 39,
+      "goal_id": "5661651b6f44226361e8fc1d14b3265ee1712cf90fd2209efd9e19d03734f00e",
+      "goal_m": [
+        0.9896584153175354,
+        2.925234794616699,
+        1.5070288181304932
+      ],
+      "goal_mesh_closest_point_m": [
+        1.2640043497085571,
+        2.588060140609741,
+        1.5459846258163452
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.6935274354197862,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.4597675676378661,
+        0.4199166603578258
+      ],
+      "map_segment_clearance_m": 0.4199166603578258,
+      "map_status": "RETAINED",
+      "route_id": "239eb27dff157535166d2a52cc3b5398d0e5a0b1e8f977a22d5b92d7cea37288",
+      "segment_mesh_distance_m": 0.43642868142922475,
+      "start_id": "3c7eaba787b1aec86cee921b451bcbd0a01623016753e78138c8b1445d065fed",
+      "start_m": [
+        0.41627371311187744,
+        2.925234794616699,
+        1.1168874502182007
+      ],
+      "start_mesh_closest_point_m": [
+        0.4748321299081151,
+        2.44115001441624,
+        1.093090432822471
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.355151577585488,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "58bd20ba7d619a3f707d81fc97350647bd2fcd328721bfac856572d9c61a5455",
+      "execution_order": 40,
+      "goal_id": "7bb6ee812b6eec55dca8be4d0bfed259152636e2a43f507044f225396f7eb2de",
+      "goal_m": [
+        -0.7150417566299438,
+        2.925234794616699,
+        0.22988463938236237
+      ],
+      "goal_mesh_closest_point_m": [
+        -0.6639053821563721,
+        2.371730327606201,
+        0.3437495529651642
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.042826488653966,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.4494273316973564,
+        0.5410932690575146
+      ],
+      "map_segment_clearance_m": 0.4287038879968701,
+      "map_status": "RETAINED",
+      "route_id": "1329d4fb7f202c846677e868e89cf1fd93b454edd0f5c486de1bb5befd808e90",
+      "segment_mesh_distance_m": 0.455151577585488,
+      "start_id": "5c76c3cb860b84eed110f74c1190856a83d9225be4963a6b482cb494ccfade44",
+      "start_m": [
+        0.3277817964553833,
+        2.925234794616699,
+        0.23235902190208435
+      ],
+      "start_mesh_closest_point_m": [
+        0.18809844553470612,
+        2.485356330871582,
+        0.3489462435245514
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.32074496694236787,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "ccd25f284e1b42fe18cf46346f557f9f64e2221316b082e5c27918ad4c01f4a2",
+      "execution_order": 41,
+      "goal_id": "5661651b6f44226361e8fc1d14b3265ee1712cf90fd2209efd9e19d03734f00e",
+      "goal_m": [
+        0.9896584153175354,
+        2.925234794616699,
+        1.5070288181304932
+      ],
+      "goal_mesh_closest_point_m": [
+        1.2640043497085571,
+        2.588060140609741,
+        1.5459846258163452
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.7446511037901185,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.41315920805179396,
+        0.4199166603578258
+      ],
+      "map_segment_clearance_m": 0.3930673010376518,
+      "map_status": "RETAINED",
+      "route_id": "1035d7667fbb7d9c82274269a15b04730074bd2eea7711639e00fa418e06fcf1",
+      "segment_mesh_distance_m": 0.42074496694236785,
+      "start_id": "577732c28899a0145a2a970c010ddc51be02b0e7ea24812df596eaaf6fc45a6c",
+      "start_m": [
+        -0.48360973596572876,
+        2.925234794616699,
+        2.441527843475342
+      ],
+      "start_mesh_closest_point_m": [
+        -0.35895973443984985,
+        2.51147198677063,
+        2.452855348587036
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.06151948932357715,
+      "clearance_stratum": "TIGHT",
+      "direction_sha256": "c6c07be13f859932deccadd0ebdeaeaae8b4746fa467e7923e04ddc7bc2228c6",
+      "execution_order": 42,
+      "goal_id": "4302fe3fbea163bf87257cd878ba2e8fe6fd0ee5f4d863694271ff51ffec2dd3",
+      "goal_m": [
+        -0.46981027722358704,
+        0.12523484230041504,
+        2.843294143676758
+      ],
+      "goal_mesh_closest_point_m": [
+        -0.9975464206511062,
+        0.09267300880869814,
+        2.8610694292709855
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.8732323644627602,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.1574778402177374,
+        0.5030354702594183
+      ],
+      "map_segment_clearance_m": 0.14734467522649705,
+      "map_status": "RETAINED",
+      "route_id": "6f7c7b670e612401a1dfc9fdcd248c36485d92dd5ae40376130ecee2f35ce3be",
+      "segment_mesh_distance_m": 0.16151948932357715,
+      "start_id": "3023efbd04d8db216229e966e5caf9cf32b0f8bd20de940eed03689bbb580c71",
+      "start_m": [
+        1.108504295349121,
+        0.12523484230041504,
+        1.834372639656067
+      ],
+      "start_mesh_closest_point_m": [
+        1.0389974438849843,
+        0.29255057275554247,
+        1.8201304136626535
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.19441944549977927,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "accd59726b071702187a4328a0d8adc9ad2bc9435a6bec32945f2c7bc3033cf6",
+      "execution_order": 43,
+      "goal_id": "4b3458eabd6506b4214bbca672441507f4d1308013b46bed0930b4549b77628f",
+      "goal_m": [
+        4.227324962615967,
+        0.12523484230041504,
+        0.6873506903648376
+      ],
+      "goal_mesh_closest_point_m": [
+        4.199633624048191,
+        0.11709744525564089,
+        0.9803520255598467
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.6529031383906803,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.2926533995718045,
+        0.26772244505048237
+      ],
+      "map_segment_clearance_m": 0.26772244505048237,
+      "map_status": "RETAINED",
+      "route_id": "9b7e512a4b7f9512488323c4e33452e002a5f8752a8c38af5af9017727f30e7a",
+      "segment_mesh_distance_m": 0.2944194454997793,
+      "start_id": "0033737348a250a878f9a838a496342eb558c1a62e98ddf55e3293cc4a1fafb6",
+      "start_m": [
+        4.606825828552246,
+        0.12523484230041504,
+        0.15606771409511566
+      ],
+      "start_mesh_closest_point_m": [
+        4.923887435136898,
+        0.1615064497005995,
+        0.14975718050901238
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.19441944549977927,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "03cf7cdb1b54e034bdc2cc98ed3b4591a143ec896b6d2fa2072d0899ba9ef185",
+      "execution_order": 44,
+      "goal_id": "8348341c974233d7a17e677db1972fb37f9289f3654a9dbf62d86ad4a2579bb9",
+      "goal_m": [
+        3.295524835586548,
+        0.12523484230041504,
+        0.183842733502388
+      ],
+      "goal_mesh_closest_point_m": [
+        3.1050543498853154,
+        0.8191202667174572,
+        0.16784377879082665
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.059137261810687,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.26772244505048237,
+        0.692058695328862
+      ],
+      "map_segment_clearance_m": 0.26772244505048237,
+      "map_status": "RETAINED",
+      "route_id": "22e3e34e9f61d643c9447f2dece310e86bfaca9596128228d89c60e5bea78158",
+      "segment_mesh_distance_m": 0.2944194454997793,
+      "start_id": "4b3458eabd6506b4214bbca672441507f4d1308013b46bed0930b4549b77628f",
+      "start_m": [
+        4.227324962615967,
+        0.12523484230041504,
+        0.6873506903648376
+      ],
+      "start_mesh_closest_point_m": [
+        4.199633624048191,
+        0.11709744525564089,
+        0.9803520255598467
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.10937428720532391,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "2f0789b96753b7c2e5d6de61a6af97b13801789deafbfe32b26c601b5507d968",
+      "execution_order": 45,
+      "goal_id": "5e8ceb7b8ff7068b1fee63186f8804731f9e7d50949c24f857dbab842c2bdd8b",
+      "goal_m": [
+        2.357872724533081,
+        2.925234794616699,
+        0.06952685117721558
+      ],
+      "goal_mesh_closest_point_m": [
+        2.3688395219835416,
+        2.9364204949225416,
+        0.8395115104324885
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.3607460513780638,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.1851894489071189,
+        0.7431083039842318
+      ],
+      "map_segment_clearance_m": 0.1851894489071189,
+      "map_status": "RETAINED",
+      "route_id": "2b8a84790ac8b7db2092402b839385e02facefdd1c949b430886ca205ef8e751",
+      "segment_mesh_distance_m": 0.20937428720532392,
+      "start_id": "6d1848c94208c8a2de671878dbfdd4950a3d83525c93be06ad749d44ec4c8f52",
+      "start_m": [
+        2.2599234580993652,
+        2.925234794616699,
+        -1.2876893281936646
+      ],
+      "start_mesh_closest_point_m": [
+        2.2569161853779818,
+        2.923545820042292,
+        -1.4970352042419013
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.3430918719939051,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "7ba5c89667fffeca40bba2db18f44f0d45e2ed3aade7dc0e679797ce5eb8b069",
+      "execution_order": 46,
+      "goal_id": "39bcd33565e8823e47c7b16b4d27b2f36d38839e6523617f9adb7cf111f9928f",
+      "goal_m": [
+        0.8656949996948242,
+        0.12523484230041504,
+        0.29479125142097473
+      ],
+      "goal_mesh_closest_point_m": [
+        1.5400995016098022,
+        0.18879999220371246,
+        0.23261742293834686
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.4145509220420795,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.4301950087866837,
+        0.6531714145022866
+      ],
+      "map_segment_clearance_m": 0.4301950087866837,
+      "map_status": "RETAINED",
+      "route_id": "32788cc8199d556786c95ff94e52e81764e7015aed9f4462d03d1f23337ecc1f",
+      "segment_mesh_distance_m": 0.44309187199390515,
+      "start_id": "4a2902a3bf17ab5f042f8bcc02824a0563270c48987a8b781a1a49e88b8accef",
+      "start_m": [
+        0.6400046348571777,
+        0.12523484230041504,
+        0.6425215005874634
+      ],
+      "start_mesh_closest_point_m": [
+        0.6528655013863629,
+        0.12846238914030117,
+        1.0854149280399128
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.38819408091080054,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "8923150b8c4438427a8f7884de5502e4785ed8b0da41b9b96481c5e5bae760fd",
+      "execution_order": 47,
+      "goal_id": "3c7eaba787b1aec86cee921b451bcbd0a01623016753e78138c8b1445d065fed",
+      "goal_m": [
+        0.41627371311187744,
+        2.925234794616699,
+        1.1168874502182007
+      ],
+      "goal_mesh_closest_point_m": [
+        0.4748321299081151,
+        2.44115001441624,
+        1.093090432822471
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.1871466664530113,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.5298858016113994,
+        0.4597675676378661
+      ],
+      "map_segment_clearance_m": 0.4597675676378661,
+      "map_status": "RETAINED",
+      "route_id": "1525c9109c3b1f6524005faabdf08aebfabaadedbe7a9098f9cd9fb780a1a2de",
+      "segment_mesh_distance_m": 0.4881940809108006,
+      "start_id": "192ddb4381637d96b55e539d53e64b34c372a4d64707427e3d79e4a06d0b132b",
+      "start_m": [
+        -0.6565583944320679,
+        2.925234794616699,
+        0.6086075305938721
+      ],
+      "start_mesh_closest_point_m": [
+        -0.640318708313913,
+        2.3751325643078194,
+        0.6062953136500416
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.6187654104655104,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "6e663bc5008b3765830e35dacb445ceb52972c41cb1cf7196ed978fb92cbf372",
+      "execution_order": 48,
+      "goal_id": "0fa626bb509aa585de000b5f44a07d372a841809eb6f22007cb24b54ed836337",
+      "goal_m": [
+        3.5384974479675293,
+        2.925234794616699,
+        3.0153861045837402
+      ],
+      "goal_mesh_closest_point_m": [
+        2.3535456538004644,
+        2.693172844892655,
+        3.043497149715502
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.2998108595457574,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.6915890920335477,
+        1.184296331935389
+      ],
+      "map_segment_clearance_m": 0.6915890920335477,
+      "map_status": "RETAINED",
+      "route_id": "1813eabeb1cc79212a44d3612d3755c4c7a09d320e74ae3b34424c5228e0929c",
+      "segment_mesh_distance_m": 0.7187654104655103,
+      "start_id": "7f27537560370bceef96ac433461ac5f16d2200346a2080111c936523e2bb22a",
+      "start_m": [
+        3.259033441543579,
+        2.925234794616699,
+        1.7459735870361328
+      ],
+      "start_mesh_closest_point_m": [
+        3.2791216373443604,
+        2.8094754219055176,
+        1.036875605583191
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.055321210420708505,
+      "clearance_stratum": "TIGHT",
+      "direction_sha256": "53c59414e729add9272aab83f1e2799e3011b31ab4a5f18e280f7b4d46063dd7",
+      "execution_order": 49,
+      "goal_id": "24136f4f6bed1d2b7d78427ad0e231bb5b4d1dd47df47b5e34bacfdb4af5426b",
+      "goal_m": [
+        3.109989881515503,
+        0.12523484230041504,
+        -1.1325796842575073
+      ],
+      "goal_mesh_closest_point_m": [
+        3.045854524701372,
+        0.26669570140909965,
+        -1.132179992987903
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.5439639771601548,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.6134080036181955,
+        0.13080696955675516
+      ],
+      "map_segment_clearance_m": 0.13080696955675516,
+      "map_status": "RETAINED",
+      "route_id": "b661c3f4577477dbb655196dc24c7e099391d02339aeccf48b9648c1185005ed",
+      "segment_mesh_distance_m": 0.1553212104207085,
+      "start_id": "24e7d6b27553984b77fba84bbffbd95669b6ad3a44fbf51fa086d79819ba67c6",
+      "start_m": [
+        3.9706079959869385,
+        0.12523484230041504,
+        0.14927881956100464
+      ],
+      "start_mesh_closest_point_m": [
+        4.123076579624697,
+        -0.4918302231047973,
+        0.17403474103375888
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.16359585986594274,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "a1c819ab8b044807fcc98ab7830c35a5a6faa7e7a73e33dd38459a24ee40aa1c",
+      "execution_order": 50,
+      "goal_id": "7152797f7c6d2ffb43b7d29f4e34eaf32c61b438df3d41f2d9d84dd99f17dc18",
+      "goal_m": [
+        0.002716958522796631,
+        0.12523484230041504,
+        -0.9131530523300171
+      ],
+      "goal_mesh_closest_point_m": [
+        -0.0067383522731762876,
+        0.11725427276236694,
+        -1.4483255548539262
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.6443125713463638,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.24015436597153572,
+        0.5194970329945038
+      ],
+      "map_segment_clearance_m": 0.24015436597153572,
+      "map_status": "RETAINED",
+      "route_id": "af2a04cad7597800b8c6de29519e90a3e12a9403f1e39f8e02a6b5af8b45d53f",
+      "segment_mesh_distance_m": 0.26359585986594275,
+      "start_id": "0c037aeb8d97a89c069918baf17c6276fcf56b9f073e8b748c36fadbf0776baa",
+      "start_m": [
+        -0.4094833433628082,
+        0.12523484230041504,
+        -0.4179464280605316
+      ],
+      "start_mesh_closest_point_m": [
+        -0.6533263829372118,
+        0.08721447861978981,
+        -0.5105628485008324
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.08173771501655316,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "556dd5dc9f7dbf912191e3ee4615547e1542b367910897c77c06b3dbc3c644a2",
+      "execution_order": 51,
+      "goal_id": "2bd5dc61332aa073659cda551d723dcd776f52f3d52a0535a375ab7ca76e9ada",
+      "goal_m": [
+        2.1686153411865234,
+        0.12523484230041504,
+        2.1229281425476074
+      ],
+      "goal_mesh_closest_point_m": [
+        2.6426802862975145,
+        0.19513775459069221,
+        2.1219381591949196
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.0986808944163273,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.1574778402177374,
+        0.4646527309448142
+      ],
+      "map_segment_clearance_m": 0.1574778402177374,
+      "map_status": "RETAINED",
+      "route_id": "240000ef3c09446ad394265d3dd2cefe1bbdb7b132666088d0bd9d1bc1e625d5",
+      "segment_mesh_distance_m": 0.18173771501655317,
+      "start_id": "3023efbd04d8db216229e966e5caf9cf32b0f8bd20de940eed03689bbb580c71",
+      "start_m": [
+        1.108504295349121,
+        0.12523484230041504,
+        1.834372639656067
+      ],
+      "start_mesh_closest_point_m": [
+        1.0389974438849843,
+        0.29255057275554247,
+        1.8201304136626535
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.16359585986594274,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "b1bac13596c174f55b83d2b3909b7073b1867ede038a1be40ed4f39ac90b6b60",
+      "execution_order": 52,
+      "goal_id": "4a2902a3bf17ab5f042f8bcc02824a0563270c48987a8b781a1a49e88b8accef",
+      "goal_m": [
+        0.6400046348571777,
+        0.12523484230041504,
+        0.6425215005874634
+      ],
+      "goal_mesh_closest_point_m": [
+        0.6528655013863629,
+        0.12846238914030117,
+        1.0854149280399128
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.491984331056879,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.24015436597153572,
+        0.4301950087866837
+      ],
+      "map_segment_clearance_m": 0.24015436597153572,
+      "map_status": "RETAINED",
+      "route_id": "2f9bc7e76e813aad0423fa01f08059ae3d3c87d6b452ff22da0cd46ce3d910c3",
+      "segment_mesh_distance_m": 0.26359585986594275,
+      "start_id": "0c037aeb8d97a89c069918baf17c6276fcf56b9f073e8b748c36fadbf0776baa",
+      "start_m": [
+        -0.4094833433628082,
+        0.12523484230041504,
+        -0.4179464280605316
+      ],
+      "start_mesh_closest_point_m": [
+        -0.6533263829372118,
+        0.08721447861978981,
+        -0.5105628485008324
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.6197304736452005,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "6e1dcb4dfb7e6620a197bfa95a88085a79a0ecf05bc70c611ae2400d701eca00",
+      "execution_order": 53,
+      "goal_id": "3882f361519564779a28e9fe77f3aae0d5e8b82199c148333c07a96d4e407cdc",
+      "goal_m": [
+        3.6364846229553223,
+        0.12523484230041504,
+        -0.19216683506965637
+      ],
+      "goal_mesh_closest_point_m": [
+        3.08469295501709,
+        0.0053563788533210754,
+        -0.6638264656066895
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.5075793260765206,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.692058695328862,
+        0.7122058197316652
+      ],
+      "map_segment_clearance_m": 0.692058695328862,
+      "map_status": "RETAINED",
+      "route_id": "34cc2ec67a90ee83bf60718fcef06d32b4448f7e75bfb60760070d94f792cef1",
+      "segment_mesh_distance_m": 0.7197304736452005,
+      "start_id": "8348341c974233d7a17e677db1972fb37f9289f3654a9dbf62d86ad4a2579bb9",
+      "start_m": [
+        3.295524835586548,
+        0.12523484230041504,
+        0.183842733502388
+      ],
+      "start_mesh_closest_point_m": [
+        3.1050543498853154,
+        0.8191202667174572,
+        0.16784377879082665
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.3404266304992839,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "451de9f404c720f693f39d47d78f2a6b3166ad23a8bbe9985fc4ba8460b7a7c4",
+      "execution_order": 54,
+      "goal_id": "3c7eaba787b1aec86cee921b451bcbd0a01623016753e78138c8b1445d065fed",
+      "goal_m": [
+        0.41627371311187744,
+        2.925234794616699,
+        1.1168874502182007
+      ],
+      "goal_mesh_closest_point_m": [
+        0.4748321299081151,
+        2.44115001441624,
+        1.093090432822471
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.8748783666572637,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.41682484498141226,
+        0.4597675676378661
+      ],
+      "map_segment_clearance_m": 0.41682484498141226,
+      "map_status": "RETAINED",
+      "route_id": "1db63ced1a875e5e42f6ddf2c3cf32927d4bb8c645401c666a1b4266e17a97d4",
+      "segment_mesh_distance_m": 0.4404266304992839,
+      "start_id": "65147b607d910e120c43be990e79aab74ad9a535e9c2fb9fb73f8e6c146a7ed3",
+      "start_m": [
+        0.8757659196853638,
+        2.925234794616699,
+        1.8613866567611694
+      ],
+      "start_mesh_closest_point_m": [
+        0.7549309730529785,
+        2.5254299640655518,
+        2.001138687133789
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.31632835538000414,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "1fc1ba394f1d6b0af14afb0f901ce20e8760e2132b3beb608e77fe9ca0ded420",
+      "execution_order": 55,
+      "goal_id": "577732c28899a0145a2a970c010ddc51be02b0e7ea24812df596eaaf6fc45a6c",
+      "goal_m": [
+        -0.48360973596572876,
+        2.925234794616699,
+        2.441527843475342
+      ],
+      "goal_mesh_closest_point_m": [
+        -0.35895973443984985,
+        2.51147198677063,
+        2.452855348587036
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.5419706547274106,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.5368050463430519,
+        0.41315920805179396
+      ],
+      "map_segment_clearance_m": 0.3958085332074325,
+      "map_status": "RETAINED",
+      "route_id": "181dfc2704ef3a9fde89830a3695887a3c29ec5ca732682ec2654195940b2bdf",
+      "segment_mesh_distance_m": 0.4163283553800042,
+      "start_id": "594fa1b382f0abcacd95c1743f4988d4cd4f90d61317d15127be1a795b779a29",
+      "start_m": [
+        -0.09219787269830704,
+        2.925234794616699,
+        3.9329936504364014
+      ],
+      "start_mesh_closest_point_m": [
+        -0.018607956773100606,
+        2.4087601231422986,
+        3.7206019608812575
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.055321210420708505,
+      "clearance_stratum": "TIGHT",
+      "direction_sha256": "96972f9c28e5a27e3642819e0e59f3f3edb9e5fff0ea1261385be6a8c4ea1dda",
+      "execution_order": 56,
+      "goal_id": "58682d159ced6eaba2834647631ef216cd1936e29d7afa92222f85d029d70845",
+      "goal_m": [
+        4.555971145629883,
+        0.12523484230041504,
+        -0.5187727808952332
+      ],
+      "goal_mesh_closest_point_m": [
+        4.906262362677591,
+        0.16638090144147608,
+        -0.527476920085204
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.5708662358027192,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.13080696955675516,
+        0.327307325339871
+      ],
+      "map_segment_clearance_m": 0.13080696955675516,
+      "map_status": "RETAINED",
+      "route_id": "c9325498b58adca0b07d82ae65919dd6a8103edaa5031d4b38340863bf3d28ce",
+      "segment_mesh_distance_m": 0.1553212104207085,
+      "start_id": "24136f4f6bed1d2b7d78427ad0e231bb5b4d1dd47df47b5e34bacfdb4af5426b",
+      "start_m": [
+        3.109989881515503,
+        0.12523484230041504,
+        -1.1325796842575073
+      ],
+      "start_mesh_closest_point_m": [
+        3.045854524701372,
+        0.26669570140909965,
+        -1.132179992987903
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.1942480265571591,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "ad65a3a4d7b81f01d67dd70ee23d2600aa4fdf9cc8fb3ea12e63a7315aa09d38",
+      "execution_order": 57,
+      "goal_id": "798d213fb7bd0cdffd46aa8de49a129abc2da7f2b920fa4742cde1f73acb9206",
+      "goal_m": [
+        0.366214394569397,
+        0.12523484230041504,
+        2.9767537117004395
+      ],
+      "goal_mesh_closest_point_m": [
+        0.38990017648289793,
+        0.10433942397899845,
+        3.677011639565013
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.7317821474247472,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.2659239914016804,
+        0.6758525692172319
+      ],
+      "map_segment_clearance_m": 0.2659239914016804,
+      "map_status": "RETAINED",
+      "route_id": "cb494d07b1e7ecf1c68d05272d29c70ecb8b111836095069370ae5641e8b3699",
+      "segment_mesh_distance_m": 0.2942480265571591,
+      "start_id": "48b3d7e42658bf13a6ea8a33c00ae0a1cb6d774ab63b6a80942da8f2985751f5",
+      "start_m": [
+        0.4716522991657257,
+        0.12523484230041504,
+        2.2526073455810547
+      ],
+      "start_mesh_closest_point_m": [
+        0.4699287534593827,
+        0.29539771842495244,
+        2.0125583378513703
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.16359585986594274,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "fe4f92761ab81f9337bf8a77643ddf80ff0f99ab56d0ae987416670de1de74cc",
+      "execution_order": 58,
+      "goal_id": "364650f103dbae431124e6a33da7906066df351a91a618177d00abfbbb28f52a",
+      "goal_m": [
+        0.49911826848983765,
+        0.12523484230041504,
+        -0.9042955040931702
+      ],
+      "goal_mesh_closest_point_m": [
+        0.49386527578224443,
+        0.11610316576435895,
+        -1.4582869825326528
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.0305786301001139,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.24015436597153572,
+        0.5283810111071447
+      ],
+      "map_segment_clearance_m": 0.24015436597153572,
+      "map_status": "RETAINED",
+      "route_id": "4ce633f21ec1bb35a2fb32c7c2ce53c71ae0f7cfe3de4a0a95bab2dced357d25",
+      "segment_mesh_distance_m": 0.26359585986594275,
+      "start_id": "0c037aeb8d97a89c069918baf17c6276fcf56b9f073e8b748c36fadbf0776baa",
+      "start_m": [
+        -0.4094833433628082,
+        0.12523484230041504,
+        -0.4179464280605316
+      ],
+      "start_mesh_closest_point_m": [
+        -0.6533263829372118,
+        0.08721447861978981,
+        -0.5105628485008324
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.1273846336714059,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "7b6467b9eea2869a1b6ab4b34e5618ab8409b60fe6896696f6c57c383fbe5732",
+      "execution_order": 59,
+      "goal_id": "4a2902a3bf17ab5f042f8bcc02824a0563270c48987a8b781a1a49e88b8accef",
+      "goal_m": [
+        0.6400046348571777,
+        0.12523484230041504,
+        0.6425215005874634
+      ],
+      "goal_mesh_closest_point_m": [
+        0.6528655013863629,
+        0.12846238914030117,
+        1.0854149280399128
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.3907335938966616,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.20546350823205312,
+        0.4301950087866837
+      ],
+      "map_segment_clearance_m": 0.20546350823205312,
+      "map_status": "RETAINED",
+      "route_id": "3280ab607e3ac01d9dbd7a8c64776f1fd58055291c95e20641a94f4c36a7ceec",
+      "segment_mesh_distance_m": 0.2273846336714059,
+      "start_id": "11fd31161a5e30b5edc194026dd7f866d0df3189a2ea01cd099d70b19718a73d",
+      "start_m": [
+        -0.729041576385498,
+        0.12523484230041504,
+        0.8871690034866333
+      ],
+      "start_mesh_closest_point_m": [
+        -0.7214759886121531,
+        0.1280182423255059,
+        1.1144106946346786
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.3359140831910874,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "b2499acc21b7f7ba52dae4ef2fc11658dadb228ad31e5148ef2788bc8242f559",
+      "execution_order": 60,
+      "goal_id": "60f84c9f7a455043532e006ca13c4c1f515daecf21cf080e31d784e0647004fa",
+      "goal_m": [
+        0.9428500533103943,
+        2.925234794616699,
+        0.9886980652809143
+      ],
+      "goal_mesh_closest_point_m": [
+        1.0001142401838532,
+        2.502626710361865,
+        1.078943884843412
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.541954943207887,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.4597675676378661,
+        0.4065689693277916
+      ],
+      "map_segment_clearance_m": 0.4065689693277916,
+      "map_status": "RETAINED",
+      "route_id": "3c07f73381579a2eae6b95f5e2294fc648a1220ae9083b055be1194c0806da81",
+      "segment_mesh_distance_m": 0.43591408319108743,
+      "start_id": "3c7eaba787b1aec86cee921b451bcbd0a01623016753e78138c8b1445d065fed",
+      "start_m": [
+        0.41627371311187744,
+        2.925234794616699,
+        1.1168874502182007
+      ],
+      "start_mesh_closest_point_m": [
+        0.4748321299081151,
+        2.44115001441624,
+        1.093090432822471
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.339897108685289,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "8843f3c0474bb0fb4281cda95a5180d5de7b0706eb8f4116d51ebd88cd828075",
+      "execution_order": 61,
+      "goal_id": "5c76c3cb860b84eed110f74c1190856a83d9225be4963a6b482cb494ccfade44",
+      "goal_m": [
+        0.3277817964553833,
+        2.925234794616699,
+        0.23235902190208435
+      ],
+      "goal_mesh_closest_point_m": [
+        0.18809844553470612,
+        2.485356330871582,
+        0.3489462435245514
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.1559966671470374,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.5551332884373652,
+        0.4494273316973564
+      ],
+      "map_segment_clearance_m": 0.41781428738410925,
+      "map_status": "RETAINED",
+      "route_id": "1fced88e92987a88664578c2bda20412c373cb450b9e2575aad9c46f0b38dd94",
+      "segment_mesh_distance_m": 0.439897108685289,
+      "start_id": "6bbd6a31962a1042d892bbcd4f91821c07545a5f7531a8fe516220d7f91bc18f",
+      "start_m": [
+        -0.5429940223693848,
+        2.925234794616699,
+        0.9926732778549194
+      ],
+      "start_mesh_closest_point_m": [
+        -0.4897969098756242,
+        2.3925525646506416,
+        0.7691622692306218
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.42903843986807777,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "8167c69dca4687dd9afb2e96c1c0e2330ab2ee7e6e0d6d8f138dd6bcc2b83d8c",
+      "execution_order": 62,
+      "goal_id": "556bfec0910b17108b5d92351ca91ecc93ddbde42925c9d284ae3ce86689092d",
+      "goal_m": [
+        1.0406432151794434,
+        0.12523484230041504,
+        2.865189552307129
+      ],
+      "goal_mesh_closest_point_m": [
+        1.0579650378559577,
+        0.10929992907957292,
+        3.661113006163113
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.5106121810814324,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.5030354702594183,
+        0.7697295271981677
+      ],
+      "map_segment_clearance_m": 0.5030354702594183,
+      "map_status": "RETAINED",
+      "route_id": "1b572387058deb9cefb9a7a8c588e93f7dbe3df06f2a9646cc45e6c82a3f17a8",
+      "segment_mesh_distance_m": 0.5290384398680777,
+      "start_id": "4302fe3fbea163bf87257cd878ba2e8fe6fd0ee5f4d863694271ff51ffec2dd3",
+      "start_m": [
+        -0.46981027722358704,
+        0.12523484230041504,
+        2.843294143676758
+      ],
+      "start_mesh_closest_point_m": [
+        -0.9975464206511062,
+        0.09267300880869814,
+        2.8610694292709855
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.12160364989923222,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "6a2dd3032de84b17313ccf903ef34b0be416cb82fff311a8ae3079cb93ab18db",
+      "execution_order": 63,
+      "goal_id": "1a70d3d8d480c925724a71b6e77736e9b0205b503250ca3a1e86d4da4c9a4735",
+      "goal_m": [
+        -0.27632540464401245,
+        0.12523484230041504,
+        -1.2237504720687866
+      ],
+      "goal_mesh_closest_point_m": [
+        -0.2793489136928383,
+        0.1242766289201934,
+        -1.4453314231201149
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.4175349058343491,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.5194970329945038,
+        0.2089676272264368
+      ],
+      "map_segment_clearance_m": 0.2089676272264368,
+      "map_status": "RETAINED",
+      "route_id": "cfad7da2d1df846c43cab7ce7e3c41418edbc6016c98707576c6ae6c21e1e224",
+      "segment_mesh_distance_m": 0.22160364989923223,
+      "start_id": "7152797f7c6d2ffb43b7d29f4e34eaf32c61b438df3d41f2d9d84dd99f17dc18",
+      "start_m": [
+        0.002716958522796631,
+        0.12523484230041504,
+        -0.9131530523300171
+      ],
+      "start_mesh_closest_point_m": [
+        -0.0067383522731762876,
+        0.11725427276236694,
+        -1.4483255548539262
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.1273846336714059,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "bdc3c8489eed6b677293899269e276f3245f0644e61ebb3bd6ea3c34a5a5de91",
+      "execution_order": 64,
+      "goal_id": "11fd31161a5e30b5edc194026dd7f866d0df3189a2ea01cd099d70b19718a73d",
+      "goal_m": [
+        -0.729041576385498,
+        0.12523484230041504,
+        0.8871690034866333
+      ],
+      "goal_mesh_closest_point_m": [
+        -0.7214759886121531,
+        0.1280182423255059,
+        1.1144106946346786
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.9088370221218856,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.6760938707861793,
+        0.20546350823205312
+      ],
+      "map_segment_clearance_m": 0.20546350823205312,
+      "map_status": "RETAINED",
+      "route_id": "5557aa7a6dd77d4ab417c77ae9471c1a54c9c0e5773f2be91f068bd0cd8e232f",
+      "segment_mesh_distance_m": 0.2273846336714059,
+      "start_id": "6590b7d371a737664b28e73f7b0d130e727944458b5d5b1b4f49d37b3e8198d1",
+      "start_m": [
+        0.03597864508628845,
+        0.12523484230041504,
+        0.39652779698371887
+      ],
+      "start_mesh_closest_point_m": [
+        0.04822702218209144,
+        0.13432503315313746,
+        1.097574913908781
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.10671561758683931,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "242f8079511ab83e0e045998726f9fad6a14b76893e526c8af4aee0882b7c589",
+      "execution_order": 65,
+      "goal_id": "2bd5dc61332aa073659cda551d723dcd776f52f3d52a0535a375ab7ca76e9ada",
+      "goal_m": [
+        2.1686153411865234,
+        0.12523484230041504,
+        2.1229281425476074
+      ],
+      "goal_mesh_closest_point_m": [
+        2.6426802862975145,
+        0.19513775459069221,
+        2.1219381591949196
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.3272257155391132,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.18259708765305704,
+        0.4646527309448142
+      ],
+      "map_segment_clearance_m": 0.18259708765305704,
+      "map_status": "RETAINED",
+      "route_id": "3391aa6c28de8ec23b46fe2940e0e1ef0da7f9e195d7c81e6bf19db614f6b303",
+      "segment_mesh_distance_m": 0.20671561758683932,
+      "start_id": "655585250845869c7d43c274e6ff9e2b8fb8b120bd983e6b0d585b91abf4cb0a",
+      "start_m": [
+        2.153064489364624,
+        0.12523484230041504,
+        3.4500627517700195
+      ],
+      "start_mesh_closest_point_m": [
+        2.15145759385101,
+        0.12375460805248574,
+        3.6567668236885185
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.4703901323068652,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "3a78aa8ecb58201cb57e8e8e22d3439b8157c19e3aa27f94ca51d6d36b61382e",
+      "execution_order": 66,
+      "goal_id": "4bf62d1f6160e07adf4f3e41479b09538aeb79230c2d49ae6ad0a6489b354896",
+      "goal_m": [
+        3.4952571392059326,
+        0.12523484230041504,
+        -2.0950536727905273
+      ],
+      "goal_mesh_closest_point_m": [
+        3.4959074571123145,
+        0.13822672751209922,
+        -1.5248118898262217
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.5758200450192604,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.5771157457427482,
+        0.5476777397395193
+      ],
+      "map_segment_clearance_m": 0.5476777397395193,
+      "map_status": "RETAINED",
+      "route_id": "3de4ba70a0a77e5705e8f3ce4d73efe4a983c049e0ea6ae4c887199d33604abe",
+      "segment_mesh_distance_m": 0.5703901323068652,
+      "start_id": "423526644e635d566df80db59889d1dcd4841fd870ff58171a63e4a0a8b969a3",
+      "start_m": [
+        2.92018723487854,
+        0.12523484230041504,
+        -2.124436140060425
+      ],
+      "start_mesh_closest_point_m": [
+        2.9307653132498785,
+        0.1449712625730546,
+        -1.5222086095527065
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.3880720837373256,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "3a6a40b4c962bf789fa50913c81a9ea8cb50d01061b0cdf69afb5aa7ddaad97d",
+      "execution_order": 67,
+      "goal_id": "3d3024bc78bbf409afa671b1f0a1aeb391823575a584d10aad83476be748bde4",
+      "goal_m": [
+        0.09646345674991608,
+        2.925234794616699,
+        1.377356767654419
+      ],
+      "goal_mesh_closest_point_m": [
+        0.08605331927537918,
+        2.430781364440918,
+        1.6909340620040894
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.9089165172019069,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.5017144769407814,
+        0.5682799602034803
+      ],
+      "map_segment_clearance_m": 0.4657272347156327,
+      "map_status": "RETAINED",
+      "route_id": "2c18d925e497ea18183af63dbd7ef0942eb142efa422cd68e0ebab26bdf2912f",
+      "segment_mesh_distance_m": 0.4880720837373256,
+      "start_id": "252857c29c3f417322d6425ad64f624716406520df99b705bb4234a2f679621a",
+      "start_m": [
+        0.6056040525436401,
+        2.925234794616699,
+        0.6244257688522339
+      ],
+      "start_mesh_closest_point_m": [
+        0.43848334724856075,
+        2.435998660916849,
+        0.6223202686898655
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.3862526254057109,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "1ea98fcbea8cb823dc64fa79077ec494a82caaff402fa8a817d042da21c0d811",
+      "execution_order": 68,
+      "goal_id": "6d6f534d40f2eec213392f3d34de3ac8f604d183cb1b8d72d8fb4062392d0034",
+      "goal_m": [
+        -2.144124984741211,
+        2.925234794616699,
+        3.397672176361084
+      ],
+      "goal_mesh_closest_point_m": [
+        -1.272532343864441,
+        2.249664545059204,
+        3.341390609741211
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.6275474869272377,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.46650233100348415,
+        1.087158783362734
+      ],
+      "map_segment_clearance_m": 0.46650233100348415,
+      "map_status": "RETAINED",
+      "route_id": "215353a632104702b29ff94598f19633acf61ba3a71ffd367b4be97e0940d479",
+      "segment_mesh_distance_m": 0.4862526254057109,
+      "start_id": "75cfaea4d792787d270c73136e758a64cb2e85f8b56ceb84041f4e5c9e674426",
+      "start_m": [
+        -0.5785002112388611,
+        2.925234794616699,
+        2.9530038833618164
+      ],
+      "start_mesh_closest_point_m": [
+        -0.348019003868103,
+        2.4977006912231445,
+        2.976125717163086
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.09888959702316641,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "89cfb399a5f243f77af65e8690a2eeda9d3a8e5fc6b18c3a2c162fdeb750390e",
+      "execution_order": 69,
+      "goal_id": "12ccf4ebf402a65d481afc7759b33d95f4efd9a77361251e5dceddc50788545b",
+      "goal_m": [
+        1.6860692501068115,
+        2.925234794616699,
+        0.07839435338973999
+      ],
+      "goal_mesh_closest_point_m": [
+        1.488432841922406,
+        2.9032058559848415,
+        0.081807244650594
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.5256374824821431,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.3301374993615437,
+        0.17888619105251757
+      ],
+      "map_segment_clearance_m": 0.17888619105251757,
+      "map_status": "RETAINED",
+      "route_id": "d26f9b6ee47f8e0e8e7d2407f51e41d32d67b328a0240cae877e4dce0513b8b3",
+      "segment_mesh_distance_m": 0.19888959702316641,
+      "start_id": "4a7eea50739f4b643e52c55c1a218c7755c5e428f3e76a23ff4615cafd55abef",
+      "start_m": [
+        1.9965499639511108,
+        2.925234794616699,
+        0.502536416053772
+      ],
+      "start_mesh_closest_point_m": [
+        2.0001281815731544,
+        2.9325932805005226,
+        0.8438244166492987
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.1942480265571591,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "fe9bbe4e017603ef4f123ff85f761a6ca50fd24c3bcaab3eb881146aef419405",
+      "execution_order": 70,
+      "goal_id": "556bfec0910b17108b5d92351ca91ecc93ddbde42925c9d284ae3ce86689092d",
+      "goal_m": [
+        1.0406432151794434,
+        0.12523484230041504,
+        2.865189552307129
+      ],
+      "goal_mesh_closest_point_m": [
+        1.0579650378559577,
+        0.10929992907957292,
+        3.661113006163113
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.8360667572051387,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.2659239914016804,
+        0.7697295271981677
+      ],
+      "map_segment_clearance_m": 0.2659239914016804,
+      "map_status": "RETAINED",
+      "route_id": "56c1f559d1d4e0677eb2aee2737ae42281bd17d595144dd823c46a11ea6df79f",
+      "segment_mesh_distance_m": 0.2942480265571591,
+      "start_id": "48b3d7e42658bf13a6ea8a33c00ae0a1cb6d774ab63b6a80942da8f2985751f5",
+      "start_m": [
+        0.4716522991657257,
+        0.12523484230041504,
+        2.2526073455810547
+      ],
+      "start_mesh_closest_point_m": [
+        0.4699287534593827,
+        0.29539771842495244,
+        2.0125583378513703
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.15849928184802384,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "a46bfe363eaf55656b16faaea4b83eb423452774960e926ad15d5cf2fd21a36f",
+      "execution_order": 71,
+      "goal_id": "3c7eaba787b1aec86cee921b451bcbd0a01623016753e78138c8b1445d065fed",
+      "goal_m": [
+        0.41627371311187744,
+        2.925234794616699,
+        1.1168874502182007
+      ],
+      "goal_mesh_closest_point_m": [
+        0.4748321299081151,
+        2.44115001441624,
+        1.093090432822471
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.6642868263391843,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.23782143754057533,
+        0.4597675676378661
+      ],
+      "map_segment_clearance_m": 0.23782143754057533,
+      "map_status": "RETAINED",
+      "route_id": "342fc857265985066b76b16c95cbb9611f9bb69dbca0e398c7f0a69aaef5025b",
+      "segment_mesh_distance_m": 0.25849928184802384,
+      "start_id": "00623dc722b3bdda649a2932758648cd190e7491e12d776a53d3134094cefa6d",
+      "start_m": [
+        1.8084056377410889,
+        2.925234794616699,
+        2.028928756713867
+      ],
+      "start_mesh_closest_point_m": [
+        1.8409525148764645,
+        2.668817364288466,
+        2.0324897858550566
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.3297251280037843,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "f9bfeb927e2a78ba0df4d81e2f67c8a11495bef8bc8c36ea8d700d0d62396cb2",
+      "execution_order": 72,
+      "goal_id": "4a2902a3bf17ab5f042f8bcc02824a0563270c48987a8b781a1a49e88b8accef",
+      "goal_m": [
+        0.6400046348571777,
+        0.12523484230041504,
+        0.6425215005874634
+      ],
+      "goal_mesh_closest_point_m": [
+        0.6528655013863629,
+        0.12846238914030117,
+        1.0854149280399128
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.6789027608763489,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.41273068775956134,
+        0.4301950087866837
+      ],
+      "map_segment_clearance_m": 0.41273068775956134,
+      "map_status": "RETAINED",
+      "route_id": "43270b376b2582bec671406e5d0e3c77102c8ca525cab6504beb658db0074196",
+      "segment_mesh_distance_m": 0.4297251280037843,
+      "start_id": "5584d9435816f36f17c4c2c2844f8d62801412729ef721a0e9e4b44e388e3c42",
+      "start_m": [
+        1.3182363510131836,
+        0.12523484230041504,
+        0.6123437285423279
+      ],
+      "start_mesh_closest_point_m": [
+        1.5524560729587158,
+        0.14229795910120133,
+        0.2524636686130938
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.3461535059942381,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "ff4c729e75e7f2f459d886545f01ad1d38aa9f994787b3025b39dd5b9154c700",
+      "execution_order": 73,
+      "goal_id": "252857c29c3f417322d6425ad64f624716406520df99b705bb4234a2f679621a",
+      "goal_m": [
+        0.6056040525436401,
+        2.925234794616699,
+        0.6244257688522339
+      ],
+      "goal_mesh_closest_point_m": [
+        0.43848334724856075,
+        2.435998660916849,
+        0.6223202686898655
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.9617118574617362,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.5024104822886173,
+        0.5017144769407814
+      ],
+      "map_segment_clearance_m": 0.4218234106048498,
+      "map_status": "RETAINED",
+      "route_id": "3557f820d92fbf8d33a27490861e9f4cc96669caae82ccbf621706bdfcee76ba",
+      "segment_mesh_distance_m": 0.4461535059942381,
+      "start_id": "2e52b64de70c7854f915fa82a54ae2ebf942e5b3a7cc3c8c52d57f4c3cf60afe",
+      "start_m": [
+        -0.10919113457202911,
+        2.925234794616699,
+        -0.018969550728797913
+      ],
+      "start_mesh_closest_point_m": [
+        -0.010318356727806318,
+        2.407424341328546,
+        -0.06434282677822975
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.34373858758840914,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "97e54e367c79626aa99b00c0e619ff0766e9e541b6f2c51f5bb6d611ef241005",
+      "execution_order": 74,
+      "goal_id": "7bb6ee812b6eec55dca8be4d0bfed259152636e2a43f507044f225396f7eb2de",
+      "goal_m": [
+        -0.7150417566299438,
+        2.925234794616699,
+        0.22988463938236237
+      ],
+      "goal_mesh_closest_point_m": [
+        -0.6639053821563721,
+        2.371730327606201,
+        0.3437495529651642
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.3783207377570406,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.5017144769407814,
+        0.5410932690575146
+      ],
+      "map_segment_clearance_m": 0.41791422488637997,
+      "map_status": "RETAINED",
+      "route_id": "24f8aad01d58b86e18ffb4c258565a7fd6edae24e03fd8c46c8d761674b85860",
+      "segment_mesh_distance_m": 0.4437385875884092,
+      "start_id": "252857c29c3f417322d6425ad64f624716406520df99b705bb4234a2f679621a",
+      "start_m": [
+        0.6056040525436401,
+        2.925234794616699,
+        0.6244257688522339
+      ],
+      "start_mesh_closest_point_m": [
+        0.43848334724856075,
+        2.435998660916849,
+        0.6223202686898655
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.19441944549977927,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "9894fa866b174975d28fafcfa1f8892004f8bf7b3de553fceea21d91797393a6",
+      "execution_order": 75,
+      "goal_id": "4b3458eabd6506b4214bbca672441507f4d1308013b46bed0930b4549b77628f",
+      "goal_m": [
+        4.227324962615967,
+        0.12523484230041504,
+        0.6873506903648376
+      ],
+      "goal_mesh_closest_point_m": [
+        4.199633624048191,
+        0.11709744525564089,
+        0.9803520255598467
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.5961752587163832,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.6134080036181955,
+        0.26772244505048237
+      ],
+      "map_segment_clearance_m": 0.26772244505048237,
+      "map_status": "RETAINED",
+      "route_id": "d63dde26a62cb85c14e56cd23d4152c460bb09f32e63e9b71061cc0ee98df7bc",
+      "segment_mesh_distance_m": 0.2944194454997793,
+      "start_id": "24e7d6b27553984b77fba84bbffbd95669b6ad3a44fbf51fa086d79819ba67c6",
+      "start_m": [
+        3.9706079959869385,
+        0.12523484230041504,
+        0.14927881956100464
+      ],
+      "start_mesh_closest_point_m": [
+        4.123076579624697,
+        -0.4918302231047973,
+        0.17403474103375888
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.09888959702316641,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "12eede4d12c0f68433974a62c79912b82795a2ce35992f98bdc55c549ba6eb91",
+      "execution_order": 76,
+      "goal_id": "12ccf4ebf402a65d481afc7759b33d95f4efd9a77361251e5dceddc50788545b",
+      "goal_m": [
+        1.6860692501068115,
+        2.925234794616699,
+        0.07839435338973999
+      ],
+      "goal_mesh_closest_point_m": [
+        1.488432841922406,
+        2.9032058559848415,
+        0.081807244650594
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.9910036709429534,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.4583393356727112,
+        0.17888619105251757
+      ],
+      "map_segment_clearance_m": 0.17888619105251757,
+      "map_status": "RETAINED",
+      "route_id": "58b00002e3c686fa6aaf80cd1b16253109ee2d029286b17b4b0bc9dd70621a02",
+      "segment_mesh_distance_m": 0.19888959702316641,
+      "start_id": "28488662bb60f467f01e7e3d21e061b6c8d90903b111d399b2d8eb4be681bea5",
+      "start_m": [
+        1.9597558975219727,
+        2.925234794616699,
+        -0.8740676641464233
+      ],
+      "start_mesh_closest_point_m": [
+        1.4770213208685297,
+        2.8699068125557434,
+        -0.8666057888714604
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.15849928184802384,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "9cde9ca2aca92697335e203ccf9f382a83881fffaaba7dd8f032b5f51962a07c",
+      "execution_order": 77,
+      "goal_id": "00623dc722b3bdda649a2932758648cd190e7491e12d776a53d3134094cefa6d",
+      "goal_m": [
+        1.8084056377410889,
+        2.925234794616699,
+        2.028928756713867
+      ],
+      "goal_mesh_closest_point_m": [
+        1.8409525148764645,
+        2.668817364288466,
+        2.0324897858550566
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.8491512367207152,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.5017144769407814,
+        0.23782143754057533
+      ],
+      "map_segment_clearance_m": 0.23781965670803468,
+      "map_status": "RETAINED",
+      "route_id": "343f7f988cbff9b378ad40d229e86aa7cbbd03ff25fcdc290272a7836e2f32a4",
+      "segment_mesh_distance_m": 0.25849928184802384,
+      "start_id": "252857c29c3f417322d6425ad64f624716406520df99b705bb4234a2f679621a",
+      "start_m": [
+        0.6056040525436401,
+        2.925234794616699,
+        0.6244257688522339
+      ],
+      "start_mesh_closest_point_m": [
+        0.43848334724856075,
+        2.435998660916849,
+        0.6223202686898655
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.38378842097412513,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "b3023bf3bac9c044dd4802fe5c8727778081383654382a1252d98022e4b78806",
+      "execution_order": 78,
+      "goal_id": "3c7eaba787b1aec86cee921b451bcbd0a01623016753e78138c8b1445d065fed",
+      "goal_m": [
+        0.41627371311187744,
+        2.925234794616699,
+        1.1168874502182007
+      ],
+      "goal_mesh_closest_point_m": [
+        0.4748321299081151,
+        2.44115001441624,
+        1.093090432822471
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.5276025824833892,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.5017144769407814,
+        0.4597675676378661
+      ],
+      "map_segment_clearance_m": 0.45781433387276527,
+      "map_status": "RETAINED",
+      "route_id": "503073ac84a1a6af14abf1f700a8e10890d240fc185378af18dbfa8ca8d6b272",
+      "segment_mesh_distance_m": 0.48378842097412517,
+      "start_id": "252857c29c3f417322d6425ad64f624716406520df99b705bb4234a2f679621a",
+      "start_m": [
+        0.6056040525436401,
+        2.925234794616699,
+        0.6244257688522339
+      ],
+      "start_mesh_closest_point_m": [
+        0.43848334724856075,
+        2.435998660916849,
+        0.6223202686898655
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.6187654104655104,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "1ef4da70d72b1741172a79dc8438c5709a8d0272dabe0522b58a711e9a3f0a41",
+      "execution_order": 79,
+      "goal_id": "7f27537560370bceef96ac433461ac5f16d2200346a2080111c936523e2bb22a",
+      "goal_m": [
+        3.259033441543579,
+        2.925234794616699,
+        1.7459735870361328
+      ],
+      "goal_mesh_closest_point_m": [
+        3.2791216373443604,
+        2.8094754219055176,
+        1.036875605583191
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.0291172388808167,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        1.3591164788756394,
+        0.6915890920335477
+      ],
+      "map_segment_clearance_m": 0.6915890920335477,
+      "map_status": "RETAINED",
+      "route_id": "3e77de84796027122cc6e967117b61b960edd158882ae9afea628bb91a585a72",
+      "segment_mesh_distance_m": 0.7187654104655103,
+      "start_id": "72c107f9b4b6ab41ecc036b18ef94ddd60fbafae15301c773dedfe1701c5b03e",
+      "start_m": [
+        3.7096052169799805,
+        2.925234794616699,
+        2.671212673187256
+      ],
+      "start_mesh_closest_point_m": [
+        2.3449206352233887,
+        2.6950511932373047,
+        2.692148208618164
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.2413860722208002,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "ef8fd7b64ea542037443de1f423d5e7109eee5508632b42e58eb73c064899713",
+      "execution_order": 80,
+      "goal_id": "4a7eea50739f4b643e52c55c1a218c7755c5e428f3e76a23ff4615cafd55abef",
+      "goal_m": [
+        1.9965499639511108,
+        2.925234794616699,
+        0.502536416053772
+      ],
+      "goal_mesh_closest_point_m": [
+        2.0001281815731544,
+        2.9325932805005226,
+        0.8438244166492987
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.3770957108887594,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.4583393356727112,
+        0.3301374993615437
+      ],
+      "map_segment_clearance_m": 0.3301374993615437,
+      "map_status": "RETAINED",
+      "route_id": "273846041f4012c55c25f33c1a0c7c3085e2619696df9cbf02ee3164f53a6ba8",
+      "segment_mesh_distance_m": 0.3413860722208002,
+      "start_id": "28488662bb60f467f01e7e3d21e061b6c8d90903b111d399b2d8eb4be681bea5",
+      "start_m": [
+        1.9597558975219727,
+        2.925234794616699,
+        -0.8740676641464233
+      ],
+      "start_mesh_closest_point_m": [
+        1.4770213208685297,
+        2.8699068125557434,
+        -0.8666057888714604
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.15774689641576686,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "06ae03969e7b2695d2e011e24502d1f35e94f827a27ed93e24613ba61c1d0108",
+      "execution_order": 81,
+      "goal_id": "25b25e9ba3bdd2b1567e33dd4c32955d2ad81b89a3611a299ca28d376295193a",
+      "goal_m": [
+        1.5501676797866821,
+        2.925234794616699,
+        3.2557833194732666
+      ],
+      "goal_mesh_closest_point_m": [
+        1.4859410524368286,
+        2.6739890575408936,
+        3.2539684772491455
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.7058419730396036,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.39804516698179854,
+        0.2448739005980381
+      ],
+      "map_segment_clearance_m": 0.24323968095715504,
+      "map_status": "RETAINED",
+      "route_id": "f1906a4837d4208af321c02e8f95b30abbee4d4413fb9ab0b437684a259c8d98",
+      "segment_mesh_distance_m": 0.25774689641576687,
+      "start_id": "58c48114592e2472a18a02950b97618bfb7a2f8076b889d0cc98035ee8f22c3b",
+      "start_m": [
+        1.512427806854248,
+        2.925234794616699,
+        3.960615634918213
+      ],
+      "start_mesh_closest_point_m": [
+        1.5437046211975642,
+        2.607239844518687,
+        3.6880512065647872
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.15849928184802384,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "efe277b46b5b7cef584226cbfc01cd5486e6b7ccc397ce31698ef85df54c70f5",
+      "execution_order": 82,
+      "goal_id": "65147b607d910e120c43be990e79aab74ad9a535e9c2fb9fb73f8e6c146a7ed3",
+      "goal_m": [
+        0.8757659196853638,
+        2.925234794616699,
+        1.8613866567611694
+      ],
+      "goal_mesh_closest_point_m": [
+        0.7549309730529785,
+        2.5254299640655518,
+        2.001138687133789
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.9475690998294648,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.23782143754057533,
+        0.41682484498141226
+      ],
+      "map_segment_clearance_m": 0.23782143754057533,
+      "map_status": "RETAINED",
+      "route_id": "5ed090924439d40c94ef25b80a18a2484218c33811b79d7f3289bf5175b611b8",
+      "segment_mesh_distance_m": 0.25849928184802384,
+      "start_id": "00623dc722b3bdda649a2932758648cd190e7491e12d776a53d3134094cefa6d",
+      "start_m": [
+        1.8084056377410889,
+        2.925234794616699,
+        2.028928756713867
+      ],
+      "start_mesh_closest_point_m": [
+        1.8409525148764645,
+        2.668817364288466,
+        2.0324897858550566
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.08791225884690332,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "2306ede1c6c94aa0bc698cca3687971e7e2be346ff865565103f11ac8f10e880",
+      "execution_order": 83,
+      "goal_id": "72c107f9b4b6ab41ecc036b18ef94ddd60fbafae15301c773dedfe1701c5b03e",
+      "goal_m": [
+        3.7096052169799805,
+        2.925234794616699,
+        2.671212673187256
+      ],
+      "goal_mesh_closest_point_m": [
+        2.3449206352233887,
+        2.6950511932373047,
+        2.692148208618164
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.8071765321908695,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.19802538396058758,
+        1.3591164788756394
+      ],
+      "map_segment_clearance_m": 0.1778173310284542,
+      "map_status": "RETAINED",
+      "route_id": "3a2eabee0ea2d5ee604f23b220f5206939e5f41e8e3d5d6f6a04e26aa7a03726",
+      "segment_mesh_distance_m": 0.18791225884690332,
+      "start_id": "74a7c2e0e9a31a6eccd7d175e788b0244ce47e96ff3592803d970b1e18007f07",
+      "start_m": [
+        2.118241310119629,
+        2.925234794616699,
+        1.8147969245910645
+      ],
+      "start_mesh_closest_point_m": [
+        2.148681070353805,
+        2.7054239165306164,
+        1.820348424212396
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.472747178297508,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "23b4e468607f76815e7b4b232e07c422bd711cc6d722292aa2fa0ae6f09def66",
+      "execution_order": 84,
+      "goal_id": "6bbd6a31962a1042d892bbcd4f91821c07545a5f7531a8fe516220d7f91bc18f",
+      "goal_m": [
+        -0.5429940223693848,
+        2.925234794616699,
+        0.9926732778549194
+      ],
+      "goal_mesh_closest_point_m": [
+        -0.4897969098756242,
+        2.3925525646506416,
+        0.7691622692306218
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.7462487888941145,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.5682799602034803,
+        0.5551332884373652
+      ],
+      "map_segment_clearance_m": 0.5471142597459605,
+      "map_status": "RETAINED",
+      "route_id": "5a981744ff9ef00fb4b5effafd8be54a0603838768b0b0246aa340a09a7d1181",
+      "segment_mesh_distance_m": 0.572747178297508,
+      "start_id": "3d3024bc78bbf409afa671b1f0a1aeb391823575a584d10aad83476be748bde4",
+      "start_m": [
+        0.09646345674991608,
+        2.925234794616699,
+        1.377356767654419
+      ],
+      "start_mesh_closest_point_m": [
+        0.08605331927537918,
+        2.430781364440918,
+        1.6909340620040894
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.3359140831910874,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "63e2d1dc1e545f4bbe2c47999f45a36da109b09d635ba0619a75c109b560fe73",
+      "execution_order": 85,
+      "goal_id": "60f84c9f7a455043532e006ca13c4c1f515daecf21cf080e31d784e0647004fa",
+      "goal_m": [
+        0.9428500533103943,
+        2.925234794616699,
+        0.9886980652809143
+      ],
+      "goal_mesh_closest_point_m": [
+        1.0001142401838532,
+        2.502626710361865,
+        1.078943884843412
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.9748629181222688,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.4494273316973564,
+        0.4065689693277916
+      ],
+      "map_segment_clearance_m": 0.4065689693277916,
+      "map_status": "RETAINED",
+      "route_id": "4329b33bdc46c3d553b042e360c551e395fd619de2a438e5b49c7a4fa41e7c67",
+      "segment_mesh_distance_m": 0.43591408319108743,
+      "start_id": "5c76c3cb860b84eed110f74c1190856a83d9225be4963a6b482cb494ccfade44",
+      "start_m": [
+        0.3277817964553833,
+        2.925234794616699,
+        0.23235902190208435
+      ],
+      "start_mesh_closest_point_m": [
+        0.18809844553470612,
+        2.485356330871582,
+        0.3489462435245514
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.46495149491660537,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "56ac350ad25e07f353c2f0d12f09058f4c9fc6cdacc5e0fd3b46f6d15d4226dc",
+      "execution_order": 86,
+      "goal_id": "6693fd20da2339a40f236d9e2f8717c6a087ff4ad5e33a7b009b27dbeeb3033e",
+      "goal_m": [
+        -1.9342875480651855,
+        0.21404576301574707,
+        4.725563049316406
+      ],
+      "goal_mesh_closest_point_m": [
+        -1.0125387907028198,
+        0.326357364654541,
+        3.7214725017547607
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.2559491862341838,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.5387594100357618,
+        1.338987121395685
+      ],
+      "map_segment_clearance_m": 0.5387594100357618,
+      "map_status": "RETAINED",
+      "route_id": "2846b55072e14bb0b39c26642c0348f4481d967d43ecc1e465c4edf1fcbc0637",
+      "segment_mesh_distance_m": 0.5649514949166053,
+      "start_id": "4d91a822080bbf90f78605c5cdc72ce1cbf4859dd4d7ecadf28c0ed735d37cf1",
+      "start_m": [
+        -1.5717583894729614,
+        0.12523484230041504,
+        3.526357650756836
+      ],
+      "start_mesh_closest_point_m": [
+        -1.0088477158781528,
+        0.1724852562827756,
+        3.518041188766213
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.1490331837938593,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "e0bf5d4fee39ebb41083075dd19bc5c7da58a692a89e6c5ac58c06e7de937f51",
+      "execution_order": 87,
+      "goal_id": "4f8b360facdb93d8971af28dfd12a6df3ed1e7d18c5ae99671a3842676a4017e",
+      "goal_m": [
+        0.9695367813110352,
+        2.925234794616699,
+        2.7167017459869385
+      ],
+      "goal_mesh_closest_point_m": [
+        0.9923539090676976,
+        2.6132706198501876,
+        2.708997942269176
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.7923011947088887,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.2448739005980381,
+        0.2886187306616084
+      ],
+      "map_segment_clearance_m": 0.23781421420447757,
+      "map_status": "RETAINED",
+      "route_id": "f90a5c4d117ad210e51f528123f40eb94557b9d5641afeb3f52b14ee7352f0ea",
+      "segment_mesh_distance_m": 0.2490331837938593,
+      "start_id": "25b25e9ba3bdd2b1567e33dd4c32955d2ad81b89a3611a299ca28d376295193a",
+      "start_m": [
+        1.5501676797866821,
+        2.925234794616699,
+        3.2557833194732666
+      ],
+      "start_mesh_closest_point_m": [
+        1.4859410524368286,
+        2.6739890575408936,
+        3.2539684772491455
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.19441944549977927,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "4420f26ae95f1a559cd4f845aa18502accdffa8b63fd4bda2def0eaaa4e5d553",
+      "execution_order": 88,
+      "goal_id": "3882f361519564779a28e9fe77f3aae0d5e8b82199c148333c07a96d4e407cdc",
+      "goal_m": [
+        3.6364846229553223,
+        0.12523484230041504,
+        -0.19216683506965637
+      ],
+      "goal_mesh_closest_point_m": [
+        3.08469295501709,
+        0.0053563788533210754,
+        -0.6638264656066895
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.0595486701972314,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.26772244505048237,
+        0.7122058197316652
+      ],
+      "map_segment_clearance_m": 0.26772244505048237,
+      "map_status": "RETAINED",
+      "route_id": "60799ab4319669d70cf12a9775e41571b06dc81112ff9693a026acbe17046343",
+      "segment_mesh_distance_m": 0.2944194454997793,
+      "start_id": "4b3458eabd6506b4214bbca672441507f4d1308013b46bed0930b4549b77628f",
+      "start_m": [
+        4.227324962615967,
+        0.12523484230041504,
+        0.6873506903648376
+      ],
+      "start_mesh_closest_point_m": [
+        4.199633624048191,
+        0.11709744525564089,
+        0.9803520255598467
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.13222442990526656,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "c26f2c5c6b9fcdcfae9daba4a52bdda6c17acf7b66236e2b2d25b0b2a00ca1b5",
+      "execution_order": 89,
+      "goal_id": "18e7f93362679dcb32a5b36b22087582e6a01088331bc327877950209522a58a",
+      "goal_m": [
+        2.910740852355957,
+        0.12523484230041504,
+        2.9560306072235107
+      ],
+      "goal_mesh_closest_point_m": [
+        2.680905657170175,
+        0.09260172431922692,
+        2.962279487888503
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.6679315501804846,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.3326263366357896,
+        0.20428592813444063
+      ],
+      "map_segment_clearance_m": 0.20428592813444063,
+      "map_status": "RETAINED",
+      "route_id": "400d70743614d2c099de04b6269bf32c11616c79f5a3e0cd8a771bc9a659d988",
+      "segment_mesh_distance_m": 0.23222442990526657,
+      "start_id": "401cee372b7daf70dabf83985e801af04e133f2639636d6192ea8b960542420c",
+      "start_m": [
+        3.413054943084717,
+        0.12523484230041504,
+        1.365535020828247
+      ],
+      "start_mesh_closest_point_m": [
+        3.376268700788444,
+        0.07564665973868372,
+        1.0153412705865226
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.4415141978507878,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "967baafe4ac596852170b072d2fb3e0b04d737f662d11b6668449c1733206862",
+      "execution_order": 90,
+      "goal_id": "5e8ceb7b8ff7068b1fee63186f8804731f9e7d50949c24f857dbab842c2bdd8b",
+      "goal_m": [
+        2.357872724533081,
+        2.925234794616699,
+        0.06952685117721558
+      ],
+      "goal_mesh_closest_point_m": [
+        2.3688395219835416,
+        2.9364204949225416,
+        0.8395115104324885
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.5913236944725506,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.5140152242095687,
+        0.7431083039842318
+      ],
+      "map_segment_clearance_m": 0.5140152242095687,
+      "map_status": "RETAINED",
+      "route_id": "6c5bf3dff818bec26029cb0ca95f019d4a2ab349819fceca2ae6e2bbfbb26e0a",
+      "segment_mesh_distance_m": 0.5415141978507878,
+      "start_id": "2a8e1fe1b1aefff2c69269344eab7b934c5804f990e8a053300b1f43aeb1e0ff",
+      "start_m": [
+        2.3806357383728027,
+        2.925234794616699,
+        -0.5213585495948792
+      ],
+      "start_mesh_closest_point_m": [
+        2.6411948940397463,
+        3.3221040440346314,
+        -0.7818222740145356
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.5320782723091654,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "511df2a669e1d1236fd2363cf4d391d2719064b1cb0679ffb8e19c1815fcd840",
+      "execution_order": 91,
+      "goal_id": "82adf9c167ddf4dab293dc77df333e57262b83029d3487d92dd7a169c4775b6d",
+      "goal_m": [
+        3.8521687984466553,
+        0.12523484230041504,
+        -0.7314116954803467
+      ],
+      "goal_mesh_closest_point_m": [
+        4.097627639770508,
+        -0.4977661669254303,
+        -0.7442349195480347
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.0712344146642772,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.692058695328862,
+        0.642185183910654
+      ],
+      "map_segment_clearance_m": 0.6109437851267387,
+      "map_status": "RETAINED",
+      "route_id": "4c6bd2c754cd61e188cd6cab7b16a7bb28d4ed41490be4f71270c6e0dc6cc9d5",
+      "segment_mesh_distance_m": 0.6320782723091654,
+      "start_id": "8348341c974233d7a17e677db1972fb37f9289f3654a9dbf62d86ad4a2579bb9",
+      "start_m": [
+        3.295524835586548,
+        0.12523484230041504,
+        0.183842733502388
+      ],
+      "start_mesh_closest_point_m": [
+        3.1050543498853154,
+        0.8191202667174572,
+        0.16784377879082665
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.26544929700322006,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "0d0ece562ed4d85d1cb34503c7690597066aea0d21ebaa5ee8ca7f13fe2cf246",
+      "execution_order": 92,
+      "goal_id": "0cc28c0b82e53144bfb7260e7c2d1f8148c2d6e92865482351f72e3bc1d8d40d",
+      "goal_m": [
+        1.5350645780563354,
+        0.12523484230041504,
+        3.290405750274658
+      ],
+      "goal_mesh_closest_point_m": [
+        1.5381106427334565,
+        0.12023618677974153,
+        3.655808163530395
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.3283036302016649,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.4646527309448142,
+        0.342241068998772
+      ],
+      "map_segment_clearance_m": 0.342241068998772,
+      "map_status": "RETAINED",
+      "route_id": "2a547ab7b392b03c4e178533d6317ea2470d67e64680f156330fba6ace8bc2ee",
+      "segment_mesh_distance_m": 0.3654492970032201,
+      "start_id": "2bd5dc61332aa073659cda551d723dcd776f52f3d52a0535a375ab7ca76e9ada",
+      "start_m": [
+        2.1686153411865234,
+        0.12523484230041504,
+        2.1229281425476074
+      ],
+      "start_mesh_closest_point_m": [
+        2.6426802862975145,
+        0.19513775459069221,
+        2.1219381591949196
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.10937428720532391,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "7259b7081b6e72bcb1b44fa17188838e23e14f4a864675d1f5c236d36f2ccb3e",
+      "execution_order": 93,
+      "goal_id": "6d1848c94208c8a2de671878dbfdd4950a3d83525c93be06ad749d44ec4c8f52",
+      "goal_m": [
+        2.2599234580993652,
+        2.925234794616699,
+        -1.2876893281936646
+      ],
+      "goal_mesh_closest_point_m": [
+        2.2569161853779818,
+        2.923545820042292,
+        -1.4970352042419013
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.7757798120837082,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.5140152242095687,
+        0.1851894489071189
+      ],
+      "map_segment_clearance_m": 0.1851894489071189,
+      "map_status": "RETAINED",
+      "route_id": "ff4ee2525e50b92c1a4b0a93682a9b9a2ded60f8e8ab72162f6f2742d581bc61",
+      "segment_mesh_distance_m": 0.20937428720532392,
+      "start_id": "2a8e1fe1b1aefff2c69269344eab7b934c5804f990e8a053300b1f43aeb1e0ff",
+      "start_m": [
+        2.3806357383728027,
+        2.925234794616699,
+        -0.5213585495948792
+      ],
+      "start_mesh_closest_point_m": [
+        2.6411948940397463,
+        3.3221040440346314,
+        -0.7818222740145356
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.09535952999656411,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "33a89e2204c7d4a5d189e72715a3d5a33f33982948f1d4798df870fab74156cc",
+      "execution_order": 94,
+      "goal_id": "74a7c2e0e9a31a6eccd7d175e788b0244ce47e96ff3592803d970b1e18007f07",
+      "goal_m": [
+        2.118241310119629,
+        2.925234794616699,
+        1.8147969245910645
+      ],
+      "goal_mesh_closest_point_m": [
+        2.148681070353805,
+        2.7054239165306164,
+        1.820348424212396
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.1428662821655906,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.6915890920335477,
+        0.19802538396058758
+      ],
+      "map_segment_clearance_m": 0.17782392414850226,
+      "map_status": "RETAINED",
+      "route_id": "6151c6ccfa49394c65415d2c71ca379118d33e977718800a1670c8101b31c663",
+      "segment_mesh_distance_m": 0.1953595299965641,
+      "start_id": "7f27537560370bceef96ac433461ac5f16d2200346a2080111c936523e2bb22a",
+      "start_m": [
+        3.259033441543579,
+        2.925234794616699,
+        1.7459735870361328
+      ],
+      "start_mesh_closest_point_m": [
+        3.2791216373443604,
+        2.8094754219055176,
+        1.036875605583191
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.1273846336714059,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "e3aed671d929efb4ed2baebd869805c60595c1659bcf9cee70057b1dc127c85f",
+      "execution_order": 95,
+      "goal_id": "11fd31161a5e30b5edc194026dd7f866d0df3189a2ea01cd099d70b19718a73d",
+      "goal_m": [
+        -0.729041576385498,
+        0.12523484230041504,
+        0.8871690034866333
+      ],
+      "goal_mesh_closest_point_m": [
+        -0.7214759886121531,
+        0.1280182423255059,
+        1.1144106946346786
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.943355360728198,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        0.5194970329945038,
+        0.20546350823205312
+      ],
+      "map_segment_clearance_m": 0.20546350823205312,
+      "map_status": "RETAINED",
+      "route_id": "40d9794b5a74ab72721c18135df4bfee5d5ca04985898920239cd88b4c770fb4",
+      "segment_mesh_distance_m": 0.2273846336714059,
+      "start_id": "7152797f7c6d2ffb43b7d29f4e34eaf32c61b438df3d41f2d9d84dd99f17dc18",
+      "start_m": [
+        0.002716958522796631,
+        0.12523484230041504,
+        -0.9131530523300171
+      ],
+      "start_mesh_closest_point_m": [
+        -0.0067383522731762876,
+        0.11725427276236694,
+        -1.4483255548539262
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.2413860722208002,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "16c0b1a533b750a0ebd6c14fe5df2c0dffadcd48b1a8f80a83ce9bee6b325e60",
+      "execution_order": 96,
+      "goal_id": "5e8ceb7b8ff7068b1fee63186f8804731f9e7d50949c24f857dbab842c2bdd8b",
+      "goal_m": [
+        2.357872724533081,
+        2.925234794616699,
+        0.06952685117721558
+      ],
+      "goal_mesh_closest_point_m": [
+        2.3688395219835416,
+        2.9364204949225416,
+        0.8395115104324885
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.5639604778609584,
+      "length_stratum": "SHORT",
+      "map_endpoint_clearance_m": [
+        0.3301374993615437,
+        0.7431083039842318
+      ],
+      "map_segment_clearance_m": 0.3301374993615437,
+      "map_status": "RETAINED",
+      "route_id": "71784c1dc985edabd64cb397bcec6a5b9197adce3af964424bb2e882ac72d0f1",
+      "segment_mesh_distance_m": 0.3413860722208002,
+      "start_id": "4a7eea50739f4b643e52c55c1a218c7755c5e428f3e76a23ff4615cafd55abef",
+      "start_m": [
+        1.9965499639511108,
+        2.925234794616699,
+        0.502536416053772
+      ],
+      "start_mesh_closest_point_m": [
+        2.0001281815731544,
+        2.9325932805005226,
+        0.8438244166492987
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.38819408091080054,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "dc4f8ad3ed832b656a95a3902656c6ffb95c1a51ff1cfa05a217a9c0a2593c22",
+      "execution_order": 97,
+      "goal_id": "3c7eaba787b1aec86cee921b451bcbd0a01623016753e78138c8b1445d065fed",
+      "goal_m": [
+        0.41627371311187744,
+        2.925234794616699,
+        1.1168874502182007
+      ],
+      "goal_mesh_closest_point_m": [
+        0.4748321299081151,
+        2.44115001441624,
+        1.093090432822471
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.9672764594216298,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.5551332884373652,
+        0.4597675676378661
+      ],
+      "map_segment_clearance_m": 0.4597675676378661,
+      "map_status": "RETAINED",
+      "route_id": "50d4a6b16237e1b45b2962fa2ca537cdf2e4ad5795696a1b4c1257efc52c5d9a",
+      "segment_mesh_distance_m": 0.4881940809108006,
+      "start_id": "6bbd6a31962a1042d892bbcd4f91821c07545a5f7531a8fe516220d7f91bc18f",
+      "start_m": [
+        -0.5429940223693848,
+        2.925234794616699,
+        0.9926732778549194
+      ],
+      "start_mesh_closest_point_m": [
+        -0.4897969098756242,
+        2.3925525646506416,
+        0.7691622692306218
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.5221772487204027,
+      "clearance_stratum": "OPEN",
+      "direction_sha256": "80d26255c5f33af9d8aa6d7f66ae8c36c029663e1ba827a620da2a505b50e96a",
+      "execution_order": 98,
+      "goal_id": "591f4b2c8bc513a78875a074202e418939b81192543970d8e1b52792ff0a7cba",
+      "goal_m": [
+        -1.0671803951263428,
+        2.925234794616699,
+        2.4020445346832275
+      ],
+      "goal_mesh_closest_point_m": [
+        -0.9892250828932511,
+        2.307989819912727,
+        2.3960329356759873
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 1.4666574412499147,
+      "length_stratum": "LONG",
+      "map_endpoint_clearance_m": [
+        1.087158783362734,
+        0.598105593286
+      ],
+      "map_segment_clearance_m": 0.598105593286,
+      "map_status": "RETAINED",
+      "route_id": "2aeeb18658e735ca1101687e8667b1cd7060439f78be6c4f31d79985c27c5771",
+      "segment_mesh_distance_m": 0.6221772487204027,
+      "start_id": "6d6f534d40f2eec213392f3d34de3ac8f604d183cb1b8d72d8fb4062392d0034",
+      "start_m": [
+        -2.144124984741211,
+        2.925234794616699,
+        3.397672176361084
+      ],
+      "start_mesh_closest_point_m": [
+        -1.272532343864441,
+        2.249664545059204,
+        3.341390609741211
+      ],
+      "subset": "formal"
+    },
+    {
+      "clearance_gap_m": 0.15849928184802384,
+      "clearance_stratum": "MODERATE",
+      "direction_sha256": "3293ddef1dda66ae750d6603b9fd85250bcb7bfcf6dcca5b403dcf917a9d53ab",
+      "execution_order": 99,
+      "goal_id": "00623dc722b3bdda649a2932758648cd190e7491e12d776a53d3134094cefa6d",
+      "goal_m": [
+        1.8084056377410889,
+        2.925234794616699,
+        2.028928756713867
+      ],
+      "goal_mesh_closest_point_m": [
+        1.8409525148764645,
+        2.668817364288466,
+        2.0324897858550566
+      ],
+      "goal_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "initial_velocity_m_per_s": [
+        0,
+        0,
+        0
+      ],
+      "length_m": 0.9709410693340834,
+      "length_stratum": "MEDIUM",
+      "map_endpoint_clearance_m": [
+        0.4199166603578258,
+        0.23782143754057533
+      ],
+      "map_segment_clearance_m": 0.23782143754057533,
+      "map_status": "RETAINED",
+      "route_id": "732765b6e78848a8e859179f6db429fa52ac4be43c171b64fbd5c8168a51aa20",
+      "segment_mesh_distance_m": 0.25849928184802384,
+      "start_id": "5661651b6f44226361e8fc1d14b3265ee1712cf90fd2209efd9e19d03734f00e",
+      "start_m": [
+        0.9896584153175354,
+        2.925234794616699,
+        1.5070288181304932
+      ],
+      "start_mesh_closest_point_m": [
+        1.2640043497085571,
+        2.588060140609741,
+        1.5459846258163452
+      ],
+      "subset": "formal"
+    }
+  ],
+  "status": "PASS",
+  "strata": {
+    "MODERATE": {
+      "retained": 43,
+      "retained_ratio": 1.0,
+      "total": 43
+    },
+    "OPEN": {
+      "retained": 42,
+      "retained_ratio": 1.0,
+      "total": 42
+    },
+    "TIGHT": {
+      "retained": 14,
+      "retained_ratio": 0.9333333333333333,
+      "total": 15
+    }
+  }
+}

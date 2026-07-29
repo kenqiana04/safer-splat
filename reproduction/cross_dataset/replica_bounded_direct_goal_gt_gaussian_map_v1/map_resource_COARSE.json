@@ -1,0 +1,97 @@
+{
+  "canonical_arrays": {
+    "colors_rgb.npy": {
+      "bytes": 1676168,
+      "dtype": "float32",
+      "sha256": "91ab80cf067b357137ff3d8d5ca7d0d93aaba5e6ebaf1dc9efc57fc01cfb9712",
+      "shape": [
+        139674,
+        3
+      ]
+    },
+    "means_world_m.npy": {
+      "bytes": 1676168,
+      "dtype": "float32",
+      "sha256": "87926346667fc5254d948fd7028a0aaa39b0cc9f8af37b027c25f4e3a7494c7b",
+      "shape": [
+        139674,
+        3
+      ]
+    },
+    "opacities_probability.npy": {
+      "bytes": 558776,
+      "dtype": "float32",
+      "sha256": "8bd651549e2ae6901fc696073a4c5d5b41d30287df879937c01a2427bbced084",
+      "shape": [
+        139674
+      ]
+    },
+    "quaternions_wxyz.npy": {
+      "bytes": 2234864,
+      "dtype": "float32",
+      "sha256": "e82e5e22af72f5adee0ad2f7f5f44fd237015ada46e91b1cb5378a58ef93b0fe",
+      "shape": [
+        139674,
+        4
+      ]
+    },
+    "scales_linear_m.npy": {
+      "bytes": 1676168,
+      "dtype": "float32",
+      "sha256": "b5ef5b2953a15eceb918f3832fd4b5971181ac79f970155c205d72d0d5f17a03",
+      "shape": [
+        139674,
+        3
+      ]
+    },
+    "voxel_indices_int64.npy": {
+      "bytes": 3352256,
+      "dtype": "int64",
+      "sha256": "be5e44d4c53ee1fe94fdad0ff9a006a9ea543f28faa1c45c678e768f75aad118",
+      "shape": [
+        139674,
+        3
+      ]
+    }
+  },
+  "canonical_tree_sha256": "1e2f6d78f14c0f81e54ee74b374c7df080c55f97755f54f8a2abd4641b67013e",
+  "color_fallback": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "construction": "CONSERVATIVE_SURFACE_VOXEL_GAUSSIAN_MAP",
+  "controller_dependent": false,
+  "full_official_mesh": true,
+  "opacity_semantics": "probability",
+  "profile": "COARSE",
+  "raw": {
+    "gaussian_count": 139674,
+    "origin_m": [
+      -3.36,
+      -9.84,
+      -1.6
+    ],
+    "source_primitive_loss": 0,
+    "source_triangle_count": 9121554,
+    "source_vertex_count": 4564613,
+    "sphere_scale_m": 0.06938203424215317,
+    "voxel_size_m": 0.08
+  },
+  "resource": {
+    "duplicate_voxel_count": 0,
+    "finite_arrays": true,
+    "gaussian_count": 139674,
+    "gaussian_count_limit": 2500000,
+    "gaussian_count_positive": true,
+    "normalized_quaternion_max_abs_error": 0.0,
+    "payload_bytes": 11174400,
+    "payload_limit_bytes": 4294967296,
+    "positive_scales": true,
+    "status": "PASS"
+  },
+  "route_cropped": false,
+  "sphere_scale_semantics": "linear_m",
+  "status": "PASS",
+  "voxel_size_m": 0.08
+}

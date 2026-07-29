@@ -1,0 +1,54 @@
+{
+  "active_index_sha256": "26af896f3ffed2b342a983a0ca1da6454625b5c693f6493bd3a6be522b1d8384",
+  "canonical_means_sha256": "e2ca0533767590c0b5ca657ec7f73fd4626a5fbaf07beb2ce76c2c67d1dc4152",
+  "checks": {
+    "active_gaussian_indices_repeatable": true,
+    "all_no_map_mutation": true,
+    "all_peak_gpu_le_12_gib": true,
+    "all_runs_pass": true,
+    "canonical_map_sha_repeatable": true,
+    "fresh_repeat_count_is_three": true,
+    "median_runtime_le_two_x_official_slowest": true,
+    "official_ready_scene_count_is_four": true
+  },
+  "median_runtime_s": 0.08831360004842281,
+  "official_four_scene_slowest_runtime_s": 22.893853902816772,
+  "official_ready_scene_runtime_s": [
+    22.893853902816772,
+    3.8017194271087646,
+    3.0949926376342773,
+    3.329710006713867
+  ],
+  "official_reference_path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/safer_g0/official_four_scene_static_g0_reference.json",
+  "official_reference_sha256": "3d51e85e1351a76b96f2d452fe5f64e1735b8cf09d339113d3e3df114f8df1ec",
+  "p95_runtime_s": 0.3700147910276428,
+  "per_run": [
+    {
+      "active_index_sha256": "26af896f3ffed2b342a983a0ca1da6454625b5c693f6493bd3a6be522b1d8384",
+      "canonical_means_sha256": "e2ca0533767590c0b5ca657ec7f73fd4626a5fbaf07beb2ce76c2c67d1dc4152",
+      "path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/safer_g0/gt_gaussian_safer_g0_FINE_1.json",
+      "peak_gpu_bytes": 359009792,
+      "runtime_s": 0.3700147910276428,
+      "sha256": "6ba5103bd4dc1de7941f33d34c36b97c2ad89ca0805592362b8b880461a9ffe2"
+    },
+    {
+      "active_index_sha256": "26af896f3ffed2b342a983a0ca1da6454625b5c693f6493bd3a6be522b1d8384",
+      "canonical_means_sha256": "e2ca0533767590c0b5ca657ec7f73fd4626a5fbaf07beb2ce76c2c67d1dc4152",
+      "path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/safer_g0/gt_gaussian_safer_g0_FINE_2.json",
+      "peak_gpu_bytes": 359009792,
+      "runtime_s": 0.08813318400643766,
+      "sha256": "406cc5096372a52229716253441e142c214a8bdcfd750d5fc58b4220da75311c"
+    },
+    {
+      "active_index_sha256": "26af896f3ffed2b342a983a0ca1da6454625b5c693f6493bd3a6be522b1d8384",
+      "canonical_means_sha256": "e2ca0533767590c0b5ca657ec7f73fd4626a5fbaf07beb2ce76c2c67d1dc4152",
+      "path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/safer_g0/gt_gaussian_safer_g0_FINE_3.json",
+      "peak_gpu_bytes": 359009792,
+      "runtime_s": 0.08831360004842281,
+      "sha256": "fb48fbe279a7e66af6fe51ff6c32f21d093d8b8947170333e8988342ca79659f"
+    }
+  ],
+  "profile": "FINE",
+  "runtime_limit_s": 45.787707805633545,
+  "status": "PASS"
+}

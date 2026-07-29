@@ -1,0 +1,34 @@
+{
+  "checks": {
+    "all_edge_midpoints_01": {
+      "max_distance_m": 0.0,
+      "uncovered_count": 0
+    },
+    "all_edge_midpoints_12": {
+      "max_distance_m": 0.0,
+      "uncovered_count": 0
+    },
+    "all_edge_midpoints_20": {
+      "max_distance_m": 0.0,
+      "uncovered_count": 0
+    },
+    "all_triangle_centroids": {
+      "max_distance_m": 0.0,
+      "uncovered_count": 0
+    },
+    "all_triangle_vertices": {
+      "max_distance_m": 0.0,
+      "uncovered_count": 0
+    },
+    "area_weighted_mesh_points_1000000": {
+      "max_distance_m": 0.0,
+      "uncovered_count": 0
+    }
+  },
+  "coverage_argument": "Every closed mesh primitive intersects a closed voxel and each voxel is contained in its Gaussian sphere.",
+  "profile": "MEDIUM",
+  "seed": 20260729,
+  "source_primitive_loss": 0,
+  "status": "PASS",
+  "total_uncovered_count": 0
+}
