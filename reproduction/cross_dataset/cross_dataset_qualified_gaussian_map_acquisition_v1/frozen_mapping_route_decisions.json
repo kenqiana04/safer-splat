@@ -1,0 +1,56 @@
+{
+  "claim_boundary": {
+    "external_dataset_generalization": "not_established_without a qualified external map",
+    "mapping_frontend_generalization": "not_established",
+    "navigation_generalization": "not_established",
+    "official_scene_generalization": "not_established_by_this_access-blocked task"
+  },
+  "counts": {
+    "cbf_qp": 0,
+    "discrete_verification": 0,
+    "filtering_pruning_downsampling": 0,
+    "full_snapshot_download": 0,
+    "gated_access_bypass": 0,
+    "gaussian_slam_optimizer_mapping": 0,
+    "geometry_threshold_modification": 0,
+    "icp": 0,
+    "language_feature_download": 0,
+    "navigation": 0,
+    "new_map_training": 0,
+    "recovery": 0,
+    "replica_map_training": 0,
+    "risk_aware": 0,
+    "scale_fitting": 0,
+    "sim3": 0,
+    "splatam_training_render_g0": 0,
+    "splatfacto_training_render_g0": 0,
+    "start_safe": 0,
+    "tum_execution": 0
+  },
+  "frozen_routes": {
+    "gaussian_slam": {
+      "decision": "NO_LEGAL_GAUSSIAN_SLAM_RESOLUTION_ADAPTATION_CONTRACT",
+      "route": "CLOSE_GAUSSIAN_SLAM_REPLICA_ROUTE_UNDER_OFFICIAL_CONFIG"
+    },
+    "replica_v3": {
+      "asset_root": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering_v3",
+      "complete_tree_sha256": "24e21d3bccceb0516ed8b9b49b426964f3954ccd0cd804eedd5846baabd66dcb"
+    },
+    "splatam": {
+      "decision": "SPLATAM_REPLICA_60_FRAME_PILOT_GEOMETRY_NOT_QUALIFIED",
+      "route": "CLOSE_SPLATAM_REPLICA_MAPPING_ROUTE_UNDER_FROZEN_CONFIG"
+    },
+    "splatfacto": {
+      "decision": "PASS_SPLATFACTO_NATIVE_COMPATIBILITY_ONLY_GEOMETRY_NOT_QUALIFIED",
+      "route": "CLOSE_SPLATFACTO_NAVIGATION_MAP_ROUTE"
+    },
+    "tum": {
+      "decision": "CLOSE_TUM_NAVIGATION_BENCHMARK_KEEP_SAFETY_CASE_STUDY",
+      "paired20_sha256": "380717f0ec39e0e422902573685f5a2838e78dd6efcce500ba71585efd3d82f6"
+    }
+  },
+  "generated_utc": "2026-07-29T03:54:52+00:00",
+  "source_head": "65901fab5b0120d7f503378384372a28d2520ad3",
+  "source_pr": 59,
+  "task_id": "CROSS_DATASET_QUALIFIED_GAUSSIAN_MAP_ACQUISITION_AND_SELECTION_V1"
+}

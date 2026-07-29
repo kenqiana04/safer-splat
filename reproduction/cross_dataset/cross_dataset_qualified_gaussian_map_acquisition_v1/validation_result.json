@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "download_budget_within_limit": true,
+    "execution_counts_zero": true,
+    "external_access_block_truthful": true,
+    "external_evaluator_not_falsely_reported_pass": true,
+    "external_families_within_limit": true,
+    "full_scenes_within_limit": true,
+    "gpu1_task_process_cleanup_required_after_static_g0": true,
+    "no_gated_bypass": true,
+    "no_map_mutation_or_scale_fit": true,
+    "no_navigation_or_cbf": true,
+    "official_identity_match": true,
+    "prior_route_decisions_frozen": true,
+    "registry_before_download": true
+  },
+  "final_status": "BLOCKED_BY_EXTERNAL_DATASET_ACCESS_APPROVAL_REQUIRED",
+  "generated_utc": "2026-07-29T03:55:52+00:00",
+  "status": "VALIDATION_PASS_FOR_ACCESS_BLOCKED_STATE",
+  "task_id": "CROSS_DATASET_QUALIFIED_GAUSSIAN_MAP_ACQUISITION_AND_SELECTION_V1"
+}
