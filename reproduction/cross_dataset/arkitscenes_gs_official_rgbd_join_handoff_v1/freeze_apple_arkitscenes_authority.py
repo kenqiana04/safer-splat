@@ -1,12 +1,12 @@
 """Keep Apple authority explicitly unexecuted behind the component gate."""
 from __future__ import annotations
 
-from arkitscenes_handoff_common import ensure_gate_outputs
+from arkitscenes_handoff_common import compact_path, ensure_preflight_outputs, read_json
 
 
 def main() -> None:
-    ensure_gate_outputs()
-    print("NOT_AUTHORIZED_DUE_TO_COMPONENT_ACCESS_GATE")
+    ensure_preflight_outputs()
+    print(read_json(compact_path("apple_arkitscenes_authority_identity.json"))["status"])
 
 
 if __name__ == "__main__":

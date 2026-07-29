@@ -7,7 +7,7 @@ from arkitscenes_handoff_common import validate_access_gate_outputs
 def main() -> None:
     result = validate_access_gate_outputs()
     assert result["validation_pass"], result
-    print("ACCESS_GATE_VALIDATION_PASS")
+    print("FRAME_JOIN_GATE_VALIDATION_PASS")
 
 
 if __name__ == "__main__":
