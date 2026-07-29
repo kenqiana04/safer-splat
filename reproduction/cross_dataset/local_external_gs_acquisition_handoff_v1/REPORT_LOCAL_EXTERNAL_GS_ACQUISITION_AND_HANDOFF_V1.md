@@ -2,22 +2,22 @@
 
 ## Final outcome
 
-- `FINAL_STATUS`: `BLOCKED_BY_LOCAL_HF_ACCESS_APPROVAL_REQUIRED`
-- `FINAL_DECISION`: `USER_MUST_ACCEPT_TERMS_AND_LOGIN_LOCALLY`
-- Sole next task: `RESUME_LOCAL_EXTERNAL_GS_ACQUISITION_AFTER_LOGIN_V1`
+- `FINAL_STATUS`: `NO_EXTERNAL_GS_CANDIDATE_QUALIFIED_FOR_DOWNLOAD`
+- `FINAL_DECISION`: `DO_NOT_DOWNLOAD_AN_UNQUALIFIABLE_SCENE`
+- Sole next task: `SELECT_ONE_FINAL_PUBLIC_PRETRAINED_GS_SOURCE_V1`
 
-## Why local acquisition was attempted
+## Local access and immutable sources
 
-PR #60 was blocked because the authority server could not reach Hugging Face. This local task keeps acquisition separate from map qualification.
+The user-approved Hugging Face access gate passed. Metadata registry revision: `685f9e9053b8dcc2a23100eb52f64ee4711b0875`. Hypersim component revision: `f85e166ac72fa8367bf616c4dbce87749b748e81`. Seven official metadata/card/manifest files (167,251 bytes total) were materialized as ordinary local files; no map payload was downloaded.
 
-## Access and security boundary
+## Published ranking and precheck
 
-The user has not been represented in accepting any web terms. No token, cookie, auth header, or token command argument was recorded. No metadata or external payload was downloaded.
+The frozen ordering was depth_l1 ascending, PSNR descending, Gaussian count ascending, then scene ID. The top ten resource-range candidates were evaluated from published statistics. The leading two were `hypersim_ai_001_006` and `hypersim_ai_008_003`.
 
-## Frozen research boundary
+## Why no map was downloaded
 
-TUM, Splatfacto, SplaTAM, Gaussian-SLAM, Replica training, map modification, geometry evaluation, SAFER G0, navigation, and CBF-QP all remain at zero for this task.
+Both leading transforms files contain 300 and 200 training frames respectively but zero test frames. The official frozen component tree supplies no scene-specific minimal held-out RGB payload or GT depth/mesh manifest. The original Hypersim source documents scene archives rather than a frozen 30-frame component manifest. The allowed fallback `GaussianWorld/arkitscenes_mcmc_3dgs` returned HTTP 404. Therefore neither a primary nor backup can be frozen without violating the no-guessing and no-overdownload rules.
 
-## Required user action
+## Boundary
 
-See `auth_audit/MANUAL_ACTION_REQUIRED.md`, then resume the sole next task. This blocked result is not a Gaussian-map qualification result.
+Downloaded map bytes, map modification, training, canonical export, geometry evaluation, SAFER G0, navigation, CBF-QP, and package files are all zero. This is not map qualification or navigation readiness.

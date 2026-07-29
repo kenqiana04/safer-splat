@@ -1,18 +1,18 @@
 {
   "checks": {
+    "candidate_registry_before_map_download": true,
     "downloaded_bytes": 0,
+    "full_scene_download_count": 0,
     "geometry_evaluation": 0,
     "map_modification": 0,
     "map_training": 0,
+    "metadata_before_selection": true,
     "navigation": 0,
-    "no_payload_before_access": true,
     "safer_g0": 0,
-    "token_command_argument_count": 0,
-    "token_disclosure_count": 0,
-    "upstream_frozen": true
+    "token_disclosure": 0
   },
-  "final_status": "BLOCKED_BY_LOCAL_HF_ACCESS_APPROVAL_REQUIRED",
-  "generated_utc": "2026-07-29T04:18:00+00:00",
-  "status": "VALIDATION_PASS_FOR_BLOCKED_LOCAL_ACCESS_STATE",
+  "final_status": "NO_EXTERNAL_GS_CANDIDATE_QUALIFIED_FOR_DOWNLOAD",
+  "generated_utc": "2026-07-29T04:53:32+00:00",
+  "status": "VALIDATION_PASS_FOR_NO_QUALIFIED_CANDIDATE_STATE",
   "task_id": "LOCAL_EXTERNAL_GS_ACQUISITION_AND_VERIFIED_HANDOFF_V1"
 }

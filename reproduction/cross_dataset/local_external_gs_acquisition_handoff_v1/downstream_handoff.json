@@ -1,27 +1,8 @@
 {
-  "counts": {
-    "canonical_export": 0,
-    "cbf_qp": 0,
-    "filtering_pruning_downsampling": 0,
-    "geometry_evaluation": 0,
-    "icp": 0,
-    "language_feature_download": 0,
-    "map_modification": 0,
-    "map_training": 0,
-    "navigation": 0,
-    "non_official_mirror": 0,
-    "preview_selection": 0,
-    "safer_g0": 0,
-    "scale_fitting": 0,
-    "sim3": 0,
-    "token_command_argument": 0,
-    "token_disclosure": 0,
-    "whole_snapshot_download": 0
-  },
-  "final_decision": "USER_MUST_ACCEPT_TERMS_AND_LOGIN_LOCALLY",
-  "final_status": "BLOCKED_BY_LOCAL_HF_ACCESS_APPROVAL_REQUIRED",
-  "generated_utc": "2026-07-29T04:18:00+00:00",
+  "final_decision": "DO_NOT_DOWNLOAD_AN_UNQUALIFIABLE_SCENE",
+  "final_status": "NO_EXTERNAL_GS_CANDIDATE_QUALIFIED_FOR_DOWNLOAD",
+  "generated_utc": "2026-07-29T04:53:32+00:00",
   "no_map_qualification": true,
-  "sole_next_task": "RESUME_LOCAL_EXTERNAL_GS_ACQUISITION_AFTER_LOGIN_V1",
+  "sole_next_task": "SELECT_ONE_FINAL_PUBLIC_PRETRAINED_GS_SOURCE_V1",
   "task_id": "LOCAL_EXTERNAL_GS_ACQUISITION_AND_VERIFIED_HANDOFF_V1"
 }

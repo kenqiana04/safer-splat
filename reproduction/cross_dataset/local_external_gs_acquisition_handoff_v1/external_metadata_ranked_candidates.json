@@ -1,7 +1,296 @@
 {
-  "gate": "LOCAL_HF_ACCESS_APPROVAL_REQUIRED",
-  "generated_utc": "2026-07-29T04:18:00+00:00",
-  "no_external_payload_downloaded": true,
-  "status": "NOT_AUTHORIZED_DUE_TO_LOCAL_HF_ACCESS_APPROVAL_REQUIRED",
+  "candidates": [
+    {
+      "camera_remote_paths": [
+        "3dgs_training_views/hypersim/ai_001_006/transforms_train.json"
+      ],
+      "dataset_family": "HYPERSIM",
+      "depth_l1": 0.0048329657875001,
+      "estimated_required_bytes": 372001036,
+      "failure_reasons": [
+        "MISSING_HELDOUT_PAYLOAD_MANIFEST",
+        "MISSING_GT_GEOMETRY_MANIFEST",
+        "MISSING_HELDOUT"
+      ],
+      "gt_geometry_remote_paths": [],
+      "heldout_rgb_remote_paths": [],
+      "lpips": 0.1007340773940086,
+      "map_remote_paths": [
+        "max_1500000_depth_True_mcmc_ai_001_006/ckpts/point_cloud_30000.ply"
+      ],
+      "num_gaussians": 1500000,
+      "precheck_pass": false,
+      "psnr": 26.99006080627441,
+      "scene_id": "hypersim_ai_001_006",
+      "source_revision": {
+        "component": "f85e166ac72fa8367bf616c4dbce87749b748e81",
+        "metadata": "685f9e9053b8dcc2a23100eb52f64ee4711b0875"
+      },
+      "source_row_sha256": "235d16698d7bdfe2908d631d96c5e7362ded44a7fe71e3fb32360c95438a2662",
+      "ssim": 0.9360395073890686
+    },
+    {
+      "camera_remote_paths": [
+        "3dgs_training_views/hypersim/ai_008_003/transforms_train.json"
+      ],
+      "dataset_family": "HYPERSIM",
+      "depth_l1": 0.005308324471116,
+      "estimated_required_bytes": 384211812,
+      "failure_reasons": [
+        "MISSING_HELDOUT_PAYLOAD_MANIFEST",
+        "MISSING_GT_GEOMETRY_MANIFEST",
+        "MISSING_HELDOUT"
+      ],
+      "gt_geometry_remote_paths": [],
+      "heldout_rgb_remote_paths": [],
+      "lpips": 0.126884251832962,
+      "map_remote_paths": [
+        "max_1500000_depth_True_mcmc_ai_008_003/ckpts/point_cloud_30000.ply"
+      ],
+      "num_gaussians": 1549240,
+      "precheck_pass": false,
+      "psnr": 30.501331329345703,
+      "scene_id": "hypersim_ai_008_003",
+      "source_revision": {
+        "component": "f85e166ac72fa8367bf616c4dbce87749b748e81",
+        "metadata": "685f9e9053b8dcc2a23100eb52f64ee4711b0875"
+      },
+      "source_row_sha256": "4468e7763a6a8a3a92322ccbc0696b16e6e5215c95de15701d8ad78c80a61349",
+      "ssim": 0.8966211676597595
+    },
+    {
+      "camera_remote_paths": [
+        "3dgs_training_views/hypersim/ai_032_003/transforms_train.json"
+      ],
+      "dataset_family": "HYPERSIM",
+      "depth_l1": 0.0054982295259833,
+      "estimated_required_bytes": 372000788,
+      "failure_reasons": [
+        "MISSING_HELDOUT_PAYLOAD_MANIFEST",
+        "MISSING_GT_GEOMETRY_MANIFEST"
+      ],
+      "gt_geometry_remote_paths": [],
+      "heldout_rgb_remote_paths": [],
+      "lpips": 0.0860151872038841,
+      "map_remote_paths": [
+        "max_1500000_depth_True_mcmc_ai_032_003/ckpts/point_cloud_30000.ply"
+      ],
+      "num_gaussians": 1500000,
+      "precheck_pass": false,
+      "psnr": 28.20503044128418,
+      "scene_id": "hypersim_ai_032_003",
+      "source_revision": {
+        "component": "f85e166ac72fa8367bf616c4dbce87749b748e81",
+        "metadata": "685f9e9053b8dcc2a23100eb52f64ee4711b0875"
+      },
+      "source_row_sha256": "2814ede4c91dfca5f55d0024e9fc10972db30540948c37541b75f4ef368f7f9a",
+      "ssim": 0.9345682263374328
+    },
+    {
+      "camera_remote_paths": [
+        "3dgs_training_views/hypersim/ai_001_008/transforms_train.json"
+      ],
+      "dataset_family": "HYPERSIM",
+      "depth_l1": 0.0056526809930801,
+      "estimated_required_bytes": 372001532,
+      "failure_reasons": [
+        "MISSING_HELDOUT_PAYLOAD_MANIFEST",
+        "MISSING_GT_GEOMETRY_MANIFEST"
+      ],
+      "gt_geometry_remote_paths": [],
+      "heldout_rgb_remote_paths": [],
+      "lpips": 0.0645972713828086,
+      "map_remote_paths": [
+        "max_1500000_depth_True_mcmc_ai_001_008/ckpts/point_cloud_30000.ply"
+      ],
+      "num_gaussians": 1500000,
+      "precheck_pass": false,
+      "psnr": 29.14816093444824,
+      "scene_id": "hypersim_ai_001_008",
+      "source_revision": {
+        "component": "f85e166ac72fa8367bf616c4dbce87749b748e81",
+        "metadata": "685f9e9053b8dcc2a23100eb52f64ee4711b0875"
+      },
+      "source_row_sha256": "1fb74666c2a67159c008e19e4e9e12a0132bf53b35c633554ec188165771bcc5",
+      "ssim": 0.9616223573684692
+    },
+    {
+      "camera_remote_paths": [
+        "3dgs_training_views/hypersim/ai_022_003/transforms_train.json"
+      ],
+      "dataset_family": "HYPERSIM",
+      "depth_l1": 0.0057933651842176,
+      "estimated_required_bytes": 372000044,
+      "failure_reasons": [
+        "MISSING_HELDOUT_PAYLOAD_MANIFEST",
+        "MISSING_GT_GEOMETRY_MANIFEST"
+      ],
+      "gt_geometry_remote_paths": [],
+      "heldout_rgb_remote_paths": [],
+      "lpips": 0.1465163081884384,
+      "map_remote_paths": [
+        "max_1500000_depth_True_mcmc_ai_022_003/ckpts/point_cloud_30000.ply"
+      ],
+      "num_gaussians": 1500000,
+      "precheck_pass": false,
+      "psnr": 24.63143920898437,
+      "scene_id": "hypersim_ai_022_003",
+      "source_revision": {
+        "component": "f85e166ac72fa8367bf616c4dbce87749b748e81",
+        "metadata": "685f9e9053b8dcc2a23100eb52f64ee4711b0875"
+      },
+      "source_row_sha256": "233e699cca499d64e066c37f0a738d195284f41665c33f096e213c800fd25ce5",
+      "ssim": 0.9374171495437622
+    },
+    {
+      "camera_remote_paths": [
+        "3dgs_training_views/hypersim/ai_013_007/transforms_train.json"
+      ],
+      "dataset_family": "HYPERSIM",
+      "depth_l1": 0.0061316452920436,
+      "estimated_required_bytes": 372000292,
+      "failure_reasons": [
+        "MISSING_HELDOUT_PAYLOAD_MANIFEST",
+        "MISSING_GT_GEOMETRY_MANIFEST"
+      ],
+      "gt_geometry_remote_paths": [],
+      "heldout_rgb_remote_paths": [],
+      "lpips": 0.1603147387504577,
+      "map_remote_paths": [
+        "max_1500000_depth_True_mcmc_ai_013_007/ckpts/point_cloud_30000.ply"
+      ],
+      "num_gaussians": 1500000,
+      "precheck_pass": false,
+      "psnr": 23.142053604125977,
+      "scene_id": "hypersim_ai_013_007",
+      "source_revision": {
+        "component": "f85e166ac72fa8367bf616c4dbce87749b748e81",
+        "metadata": "685f9e9053b8dcc2a23100eb52f64ee4711b0875"
+      },
+      "source_row_sha256": "24ecd1d6009f42fe569988e7444790658ece5f473227236dab758f3c18ff5a97",
+      "ssim": 0.9412777423858644
+    },
+    {
+      "camera_remote_paths": [
+        "3dgs_training_views/hypersim/ai_001_002/transforms_train.json"
+      ],
+      "dataset_family": "HYPERSIM",
+      "depth_l1": 0.0071522858925163,
+      "estimated_required_bytes": 372001532,
+      "failure_reasons": [
+        "MISSING_HELDOUT_PAYLOAD_MANIFEST",
+        "MISSING_GT_GEOMETRY_MANIFEST"
+      ],
+      "gt_geometry_remote_paths": [],
+      "heldout_rgb_remote_paths": [],
+      "lpips": 0.1180900037288665,
+      "map_remote_paths": [
+        "max_1500000_depth_True_mcmc_ai_001_002/ckpts/point_cloud_30000.ply"
+      ],
+      "num_gaussians": 1500000,
+      "precheck_pass": false,
+      "psnr": 25.97141456604004,
+      "scene_id": "hypersim_ai_001_002",
+      "source_revision": {
+        "component": "f85e166ac72fa8367bf616c4dbce87749b748e81",
+        "metadata": "685f9e9053b8dcc2a23100eb52f64ee4711b0875"
+      },
+      "source_row_sha256": "6b1c171c70aa10fa2c14c8da6371b8287117db75c2b4171227dae042fcb97351",
+      "ssim": 0.9356089234352112
+    },
+    {
+      "camera_remote_paths": [
+        "3dgs_training_views/hypersim/ai_024_019/transforms_train.json"
+      ],
+      "dataset_family": "HYPERSIM",
+      "depth_l1": 0.0073480121791362,
+      "estimated_required_bytes": 521984988,
+      "failure_reasons": [
+        "MISSING_HELDOUT_PAYLOAD_MANIFEST",
+        "MISSING_GT_GEOMETRY_MANIFEST"
+      ],
+      "gt_geometry_remote_paths": [],
+      "heldout_rgb_remote_paths": [],
+      "lpips": 0.1321925222873687,
+      "map_remote_paths": [
+        "max_1500000_depth_True_mcmc_ai_024_019/ckpts/point_cloud_30000.ply"
+      ],
+      "num_gaussians": 2104775,
+      "precheck_pass": false,
+      "psnr": 27.00458717346192,
+      "scene_id": "hypersim_ai_024_019",
+      "source_revision": {
+        "component": "f85e166ac72fa8367bf616c4dbce87749b748e81",
+        "metadata": "685f9e9053b8dcc2a23100eb52f64ee4711b0875"
+      },
+      "source_row_sha256": "d02ed03a5a897a503d89aa92f4fc93666a2c6a784c1e191394d8258ca865a530",
+      "ssim": 0.9150249361991882
+    },
+    {
+      "camera_remote_paths": [
+        "3dgs_training_views/hypersim/ai_004_009/transforms_train.json"
+      ],
+      "dataset_family": "HYPERSIM",
+      "depth_l1": 0.0074105910025537,
+      "estimated_required_bytes": 372001284,
+      "failure_reasons": [
+        "MISSING_HELDOUT_PAYLOAD_MANIFEST",
+        "MISSING_GT_GEOMETRY_MANIFEST"
+      ],
+      "gt_geometry_remote_paths": [],
+      "heldout_rgb_remote_paths": [],
+      "lpips": 0.1187594458460807,
+      "map_remote_paths": [
+        "max_1500000_depth_True_mcmc_ai_004_009/ckpts/point_cloud_30000.ply"
+      ],
+      "num_gaussians": 1500000,
+      "precheck_pass": false,
+      "psnr": 45.11328887939453,
+      "scene_id": "hypersim_ai_004_009",
+      "source_revision": {
+        "component": "f85e166ac72fa8367bf616c4dbce87749b748e81",
+        "metadata": "685f9e9053b8dcc2a23100eb52f64ee4711b0875"
+      },
+      "source_row_sha256": "1c2be3a4ea21da758ea8872c85349c963684897f8240dee5c2ef3c7d70ec1385",
+      "ssim": 0.9488903284072876
+    },
+    {
+      "camera_remote_paths": [
+        "3dgs_training_views/hypersim/ai_030_005/transforms_train.json"
+      ],
+      "dataset_family": "HYPERSIM",
+      "depth_l1": 0.0074645401909947,
+      "estimated_required_bytes": 372000292,
+      "failure_reasons": [
+        "MISSING_HELDOUT_PAYLOAD_MANIFEST",
+        "MISSING_GT_GEOMETRY_MANIFEST"
+      ],
+      "gt_geometry_remote_paths": [],
+      "heldout_rgb_remote_paths": [],
+      "lpips": 0.1046240553259849,
+      "map_remote_paths": [
+        "max_1500000_depth_True_mcmc_ai_030_005/ckpts/point_cloud_30000.ply"
+      ],
+      "num_gaussians": 1500000,
+      "precheck_pass": false,
+      "psnr": 31.24043846130371,
+      "scene_id": "hypersim_ai_030_005",
+      "source_revision": {
+        "component": "f85e166ac72fa8367bf616c4dbce87749b748e81",
+        "metadata": "685f9e9053b8dcc2a23100eb52f64ee4711b0875"
+      },
+      "source_row_sha256": "6e7e8e17b386e990e510c7e7f3e63e1b2e1cfb0a24147bddb0ee017e6cd4f5a2",
+      "ssim": 0.935624897480011
+    }
+  ],
+  "generated_utc": "2026-07-29T04:53:32+00:00",
+  "ranked_candidate_count": 10,
+  "selection_rule": [
+    "depth_l1 ascending",
+    "PSNR descending",
+    "num_gaussians ascending",
+    "scene_id ascending"
+  ],
+  "status": "RANKED_METADATA_CANDIDATES_NOT_DOWNLOAD_QUALIFIED",
   "task_id": "LOCAL_EXTERNAL_GS_ACQUISITION_AND_VERIFIED_HANDOFF_V1"
 }

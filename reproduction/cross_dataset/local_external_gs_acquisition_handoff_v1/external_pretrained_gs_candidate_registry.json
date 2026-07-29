@@ -1,7 +1,20 @@
 {
-  "gate": "LOCAL_HF_ACCESS_APPROVAL_REQUIRED",
-  "generated_utc": "2026-07-29T04:18:00+00:00",
-  "no_external_payload_downloaded": true,
-  "status": "NOT_AUTHORIZED_DUE_TO_LOCAL_HF_ACCESS_APPROVAL_REQUIRED",
+  "backup": null,
+  "frozen": true,
+  "generated_utc": "2026-07-29T04:53:32+00:00",
+  "metadata_revisions": {
+    "component": "f85e166ac72fa8367bf616c4dbce87749b748e81",
+    "metadata": "685f9e9053b8dcc2a23100eb52f64ee4711b0875"
+  },
+  "primary": null,
+  "reason": "No frozen official path set provides both the exact held-out RGB payload and official GT depth/mesh manifest needed for the minimal 30-frame handoff.",
+  "registry_sha256": "cee8c7d082386839f3b8d3726d0d9b12f6ae8b1d2d0047c8fe646a1d1f1b27e8",
+  "selection_rule": [
+    "depth_l1 ascending",
+    "PSNR descending",
+    "num_gaussians ascending",
+    "scene_id ascending"
+  ],
+  "status": "NO_EXTERNAL_GS_CANDIDATE_QUALIFIED_FOR_DOWNLOAD",
   "task_id": "LOCAL_EXTERNAL_GS_ACQUISITION_AND_VERIFIED_HANDOFF_V1"
 }

@@ -1,16 +1,11 @@
 {
-  "exception_class": "LocalTokenNotFoundError",
-  "exception_message_redacted": "Token is required to call the /whoami-v2 endpoint, but no token found. You must provide a token or be logged in to Hugging Face with `hf auth login` or `huggingface_hub.login`. See https://huggingface.co/settings/tokens.",
-  "generated_utc": "2026-07-29T04:18:00+00:00",
-  "login_authenticated": false,
-  "repositories": [
-    "GaussianWorld/scene_splat_7k",
-    "GaussianWorld/hypersim_mcmc_3dgs"
-  ],
-  "status": "BLOCKED_BY_LOCAL_HF_ACCESS_APPROVAL_REQUIRED",
+  "generated_utc": "2026-07-29T04:48:38+00:00",
+  "login_authenticated": true,
+  "repository_readable": true,
+  "status": "PASS_LOCAL_HF_ACCESS_AND_TERMS_GATE",
   "task_id": "LOCAL_EXTERNAL_GS_ACQUISITION_AND_VERIFIED_HANDOFF_V1",
   "token_command_argument_count": 0,
   "token_content_logged": false,
-  "token_env_present_boolean_only": false,
+  "user_terms_acceptance_asserted_by_user": true,
   "user_terms_accepted_by_codex": false
 }

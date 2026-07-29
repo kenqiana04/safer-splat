@@ -234,10 +234,13 @@ def run() -> int:
         blocked_artifacts(access["status"], environment, upstream)
         print(json.dumps({"final_status": access["status"], "root": str(ROOT)}, sort_keys=True))
         return 0
-    # The authenticated full pipeline intentionally requires the separately frozen
-    # metadata schema implementation. It is never entered until the user gate has
-    # been demonstrated through the official API.
-    raise RuntimeError("AUTHENTICATED_PIPELINE_REQUIRES_METADATA_STAGE_IMPLEMENTATION")
+    # The only authenticated path is deterministic: freeze revisions and acquire
+    # metadata first, then precheck and freeze candidates.  The latter must stop
+    # before a map download if held-out/GT provenance is absent.
+    from authenticated_metadata_stage import main as metadata_main
+    from authenticated_candidate_precheck import main as precheck_main
+    metadata_main()
+    return precheck_main()
 
 
 if __name__ == "__main__":
