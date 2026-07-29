@@ -1,0 +1,28 @@
+{
+  "schema": "replica_dual_map_safety_generalization_protocol_v1/splatam-map-identity/v1",
+  "status": "PASS_READ_ONLY_IDENTITY_ONLY",
+  "repository_commit": "da6bbcd24c248dc884ac7f49d62e91b841b26ccc",
+  "environment_prefix": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_splatam_baseline_v1",
+  "checkpoint": {
+    "path": "/disk1/zlab/maintenance_records/replica_splatam_protocol_conformance_pilot_v1/pilot_run/run/params.npz",
+    "sha256": "4520bd9faf8f260438ff7ad55ab13b46437cdfe5c076f1600790cea5bc0547c5"
+  },
+  "canonical_export_root": "/disk1/zlab/maintenance_records/replica_splatam_protocol_conformance_pilot_v1/canonical_export/unfiltered",
+  "gaussian_count": 2135123,
+  "arrays": {
+    "means_world_m.npy": "5adedd491ea752c870933c4d73b02de1ae19369e8ca0f86fbe89fb523f5095bd",
+    "scales_linear_m.npy": "1d3d87e68b707e846b7a7460aaf16eadcd6197e1a014a3fb833026a1e152b2ab",
+    "quaternions_wxyz.npy": "a252159424c04f7d564ef8c4abecd64ed9fee9cabbd43a5938f54df44b5d8714",
+    "appearance.npy": "48ba67a483d51596834453cf05573a1e5c3806bedab3022d9f4cbe1fb57f8524",
+    "opacities.npy": "afd57caf4a14d3a9e1197db1f7fd6f77170e35c46379ce85da5dd0c07867279e"
+  },
+  "source_config_sha256": "9b3865d779cda8c3b1d8b0a4b98ba5747875c8dbd37c827b2ad7e9e1a93e8c99",
+  "pilot_registry_sha256": "1beaacaeb8a4126ff4410aae0b296702a7b84dfaee402e15d90d4f5d70741d19",
+  "ingestion_order_sha256": "d3dc24d673c97700dc340785425abf8482827c0c81b72a6b33e6972b361c2fb1",
+  "map_read_for_qualification": false,
+  "map_mutation_count": 0,
+  "retraining_count": 0,
+  "scale_fit_count": 0,
+  "sim3_count": 0,
+  "icp_count": 0
+}

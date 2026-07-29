@@ -1,0 +1,26 @@
+{
+  "schema": "replica_dual_map_safety_generalization_protocol_v1/claim-boundary/v1",
+  "status": "BLOCKED_PRE_ROUTE",
+  "permitted_claim": "Replica V3, the frozen SplaTAM map identity, and the SAFER source identity were independently recovered; the required external-benchmark robot contract was not uniquely recoverable.",
+  "forbidden_claims": [
+    "A Replica Gaussian safety map was qualified.",
+    "The historical SplaTAM global rendering geometry gate changed.",
+    "A GT-mesh fallback map was constructed or qualified.",
+    "SAFER, Risk-Aware, Start-Safe, Discrete-Time Verification, or Predictive Recovery was benchmarked on Replica.",
+    "A controller, navigation, CBF-QP, or TUM execution occurred."
+  ],
+  "counts": {
+    "external_search": 0,
+    "download": 0,
+    "training_or_retraining": 0,
+    "map_mutation": 0,
+    "scale_fit": 0,
+    "sim3": 0,
+    "icp": 0,
+    "route_generation": 0,
+    "gaussian_distance_queries": 0,
+    "fallback_profiles": 0,
+    "controller_navigation_cbf_benchmark": 0,
+    "tum": 0
+  }
+}

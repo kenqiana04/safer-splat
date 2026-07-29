@@ -1,0 +1,41 @@
+{
+  "schema": "replica_dual_map_safety_generalization_protocol_v1/robot-contract/v1",
+  "status": "BLOCKED_BY_REPLICA_ROBOT_CONTRACT_AMBIGUITY",
+  "authoritative_priority": [
+    "Stonehenge official SAFER benchmark",
+    "Risk-Aware V1/bestD 100-trial benchmark",
+    "FAS-CBF current frozen design"
+  ],
+  "recovered_from_highest_priority_source": {
+    "source": "run.py at SAFER authority f63b4c496861c4f8881348d74244c1ff9a528d51",
+    "source_git_blob": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+    "source_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+    "state_dimension": 6,
+    "position_dimension": 3,
+    "state_layout": "[x, y, z, vx, vy, vz]",
+    "control_dimension": 3,
+    "control_semantics": "acceleration [ux, uy, uz]",
+    "continuous_dynamics": "p_dot=v; v_dot=u",
+    "discrete_dynamics": "forward Euler: x_{k+1}=x_k+dt*[v_k,u_k]",
+    "dt_s": 0.05,
+    "robot_shape": "sphere",
+    "r_robot_m": 0.015,
+    "epsilon_base_m": 0.0,
+    "motion_space": "free_3D",
+    "ground_constraint": false,
+    "goal_tolerance": "full six-dimensional norm < 0.001 after stopped-motion check",
+    "collision_predicate_in_source": "GSplat ball-to-ellipsoid safety h; no independent mesh collision predicate is frozen in the source"
+  },
+  "missing_required_formal_fields": {
+    "vmax": "No finite global velocity bound is stated or enforced by the Stonehenge source.",
+    "umax": "The CBF QP has no actuator/control box constraint. The desired command is clipped to [-0.1, 0.1] componentwise, but the QP output is not constrained by that clip.",
+    "formal_mesh_collision_predicate": "The priority source records only Gaussian h, not a mesh-surface collision contract."
+  },
+  "secondary_sources_checked": {
+    "risk_aware_v1_bestD": "Freeze records only candidate selection and reports unresolved historical parameters; it provides no finite vmax or umax.",
+    "fas_cbf": "The current FAS-CBF freeze specifies method/claim boundaries and DT margins but no replacement formal actuator or velocity bound."
+  },
+  "forbidden_substitution": "Do not promote the desired-command clip into a physical or QP output bound.",
+  "blocking_effect": "Without finite formal vmax and umax, one_step_reach and rho_corridor cannot be frozen. Route/corridor generation must not begin.",
+  "required_reauthorization": "Supply one authoritative, versioned Replica external-benchmark robot contract with finite velocity/control bounds and an independent collision predicate, or explicitly authorize a new contract freeze."
+}

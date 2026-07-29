@@ -1,0 +1,27 @@
+{
+  "schema": "replica_dual_map_safety_generalization_protocol_v1/validation/v1",
+  "status": "BLOCKED_BY_REPLICA_ROBOT_CONTRACT_AMBIGUITY",
+  "checks": {
+    "replica_input_identity": "PASS",
+    "splatam_map_identity_read_only": "PASS",
+    "safer_authority_binding": "PASS",
+    "unique_robot_contract": "FAIL",
+    "remote_read_only_preflight": "EXPECTED_BLOCKED_BY_REPLICA_ROBOT_CONTRACT_AMBIGUITY",
+    "route_and_corridor_before_map_query": "NOT_STARTED_BY_DESIGN",
+    "no_search_download_training_mutation_or_controller_execution": "PASS",
+    "python_compile": "PASS",
+    "compact_json_parse": "PASS",
+    "gpu_1_task_process_cleanup": "PASS"
+  },
+  "unresolved_evidence": [
+    "Finite formal vmax",
+    "Finite formal umax for the actual QP output",
+    "Formal independent mesh collision predicate"
+  ],
+  "server_preflight": {
+    "maintenance_root": "/disk1/zlab/maintenance_records/replica_dual_map_safety_generalization_protocol_v1",
+    "exit_code": 1,
+    "stdout_or_stderr_status": "BLOCKED_BY_REPLICA_ROBOT_CONTRACT_AMBIGUITY",
+    "gpu_1_task_compute_process_count": 0
+  }
+}

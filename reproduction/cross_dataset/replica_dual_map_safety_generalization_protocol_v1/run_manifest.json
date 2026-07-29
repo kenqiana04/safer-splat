@@ -1,0 +1,18 @@
+{
+  "schema": "replica_dual_map_safety_generalization_protocol_v1/run-manifest/v1",
+  "final_status": "BLOCKED_BY_REPLICA_ROBOT_CONTRACT_AMBIGUITY",
+  "stop_phase": "formal robot contract recovery before route-registry freeze",
+  "input_identity": "PASS",
+  "splatam_identity": "PASS_READ_ONLY_IDENTITY_ONLY",
+  "safer_authority": "PASS",
+  "robot_contract": "BLOCKED_BY_REPLICA_ROBOT_CONTRACT_AMBIGUITY",
+  "route_registry_created": false,
+  "corridor_created": false,
+  "splatam_qualification_started": false,
+  "mesh_fallback_authorized_or_started": false,
+  "mesh_oracle_started": false,
+  "controller_or_navigation_started": false,
+  "gpu_task_compute_process_count": 0,
+  "server_maintenance_root": "/disk1/zlab/maintenance_records/replica_dual_map_safety_generalization_protocol_v1",
+  "server_report": "/disk1/zlab/maintenance_records/replica_dual_map_safety_generalization_protocol_v1/report/REPORT_REPLICA_DUAL_MAP_SAFETY_GENERALIZATION_PROTOCOL_V1.md"
+}
