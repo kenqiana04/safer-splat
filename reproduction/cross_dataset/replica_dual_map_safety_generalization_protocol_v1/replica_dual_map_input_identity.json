@@ -1,0 +1,35 @@
+{
+  "schema": "replica_dual_map_safety_generalization_protocol_v1/input-identity/v1",
+  "status": "PASS",
+  "scene": "apartment_0",
+  "v3_root": "/disk1/zlab/cross_dataset_assets/processed/replica/apartment_0.rendering_v3",
+  "v3_complete_tree_sha256": "24e21d3bccceb0516ed8b9b49b426964f3954ccd0cd804eedd5846baabd66dcb",
+  "v3_content_tree_sha256": "60a9e0b517ba8e305c4b7ff010bb330c1e38c422c66899398129cce741a06bd0",
+  "v3_contract_sha256": "ddd147f908537165c40a34b412cd21c3cbfb5a0615871375d02adecbbfaec6f7",
+  "selected_location_registry_sha256": "84edb118f01fe1460ff64be4b6ef838f23ed4520740af9f457041b438a7b9f5a",
+  "manifest_csv_sha256": "6db89bc0dafaa5993b452216be1205ec9db0a1d9da23b9bc2b9029fabc2113d6",
+  "transforms_sha256": "ec50b63a1263d9f6e355a6d5010ab79738d92d59f8bec481150d86f3145d888f",
+  "pose_array_sha256": "0bc952fec3236d117b33d0d62085a60412b96e2174ab0a31c7c5fec204789622",
+  "official_mesh": {
+    "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/mesh.ply",
+    "sha256": "274677d9b7caa413230363b68f4aa472e5cc1afe87e422a489fa1b7d844c6182"
+  },
+  "official_navmesh": {
+    "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/habitat/mesh_semantic.navmesh",
+    "sha256": "32296d6457d3855ffe172cf1970364559def5dd15892e149b44d0bc7c6b7e938"
+  },
+  "coordinate_contract": {
+    "source_navmesh": "Habitat Y-up metric coordinates",
+    "camera_convention": "V1_verified_habitat_y_up_nerfstudio_opengl_c2w",
+    "render_camera_convention": "nerfstudio_opengl_c2w",
+    "metric_scale": 1.0,
+    "depth_decode_scale_m": 0.001,
+    "normalization_used": false,
+    "auto_scale_used": false,
+    "colmap_used": false,
+    "habitat_to_project_transform": "frozen in transforms_v3.json; no ICP, Sim(3), or scale fitting is authorized"
+  },
+  "selected_location_count": 100,
+  "input_mismatch": false,
+  "read_only_preflight": true
+}

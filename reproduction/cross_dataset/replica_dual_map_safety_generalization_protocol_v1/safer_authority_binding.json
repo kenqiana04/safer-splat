@@ -1,0 +1,18 @@
+{
+  "schema": "replica_dual_map_safety_generalization_protocol_v1/safer-authority/v1",
+  "status": "PASS",
+  "repository": "/disk1/zlab/projects/safer-splat",
+  "head": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+  "required_blobs": {
+    "splat/distances.py": "d7f17b67df40e36e458c7a5ed77c4a04659c6f35",
+    "splat/gsplat_utils.py": "782c38eca50e78c605085b481155ed61e4607336",
+    "cbf/cbf_utils.py": "7c6e1300b125cc0a2a950ac2835a1fbe3d0de113"
+  },
+  "core_modification_count": 0,
+  "allowed_implementation_scope": [
+    "task-owned wrapper",
+    "task-owned batcher",
+    "task-owned BVH",
+    "task-owned audit adapter"
+  ]
+}

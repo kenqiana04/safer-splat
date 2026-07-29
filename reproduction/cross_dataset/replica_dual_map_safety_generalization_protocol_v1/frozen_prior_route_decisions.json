@@ -1,0 +1,28 @@
+{
+  "schema": "replica_dual_map_safety_generalization_protocol_v1/prior-route-decisions/v1",
+  "frozen": true,
+  "decisions": {
+    "tum": {
+      "status": "CLOSE_TUM_NAVIGATION_BENCHMARK_KEEP_SAFETY_CASE_STUDY",
+      "paired20_sha256": "380717f0ec39e0e422902573685f5a2838e78dd6efcce500ba71585efd3d82f6"
+    },
+    "splatfacto": "CLOSE_SPLATFACTO_NAVIGATION_MAP_ROUTE",
+    "splatam": {
+      "status": "CLOSE_SPLATAM_REPLICA_MAPPING_ROUTE_UNDER_FROZEN_CONFIG",
+      "gate": "SPLATAM_REPLICA_60_FRAME_PILOT_GEOMETRY_NOT_QUALIFIED",
+      "metrics": {
+        "coverage": 0.9616435445162634,
+        "absrel": 0.17809340202560028,
+        "delta1": 0.7439667656972608,
+        "median_ratio": 0.9413975477218628,
+        "nonfinite": 0,
+        "map_structure": "PASS",
+        "safer_g0": "PASS"
+      }
+    },
+    "gaussian_slam": "CLOSE_GAUSSIAN_SLAM_REPLICA_ROUTE_UNDER_OFFICIAL_CONFIG",
+    "hypersim": "NO_EXTERNAL_GS_CANDIDATE_QUALIFIED_FOR_DOWNLOAD",
+    "arkitscenes": "CLOSE_PUBLIC_PRETRAINED_EXTERNAL_MAP_SEARCH"
+  },
+  "invariant": "The new safety-relevant gate must never rewrite the frozen SplaTAM global rendering geometry gate."
+}
