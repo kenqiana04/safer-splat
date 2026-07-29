@@ -1,0 +1,29 @@
+{
+  "archive_commit_from_frozen_inventory": "eaec10d73ce7511563882b8856896e06d1f804e3",
+  "archive_dirty_status": "NOT_A_GIT_WORKTREE_ARCHIVE; no archive mutation performed",
+  "archive_is_git_worktree": false,
+  "archive_path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive",
+  "dataset_adapter_sha256": "b204b2d0868502c6dc100835fe5135c3876b4b96a7726f7a183bd4f045e35e4c",
+  "environment_prefix": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda",
+  "exact_failing_command": [
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/bin/python",
+    "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/gaussian_slam/launchers/smoke.py",
+    "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive",
+    "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/gaussian_slam/configs/smoke.yaml"
+  ],
+  "failure_output_directory": "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/gaussian_slam/smoke/run",
+  "failure_timestamp_utc": "2026-07-28T08:21:30.935027Z",
+  "inherited_mapping_config_path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive/configs/Replica/replica.yaml",
+  "inherited_mapping_config_sha256": "92fb1477ae7656d589e44597fc3570fa9af98296bf067d900f8df4b9c477c194",
+  "inventory_sha256": "bfaa15fa0df0ed0d518f21ba158b7d4bb7d380669bf307096f843b26a4f5f6ae",
+  "pr56_task_config_path": "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/gaussian_slam/configs/smoke.yaml",
+  "pr56_task_config_sha256": "809106165c0d42c6208923e5325a7de4c30d60da1da5f44e64b8931ee22aaa59",
+  "python": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/envs/tum_gaussian_slam_baseline_v1_conda/bin/python",
+  "recorded_contract_config_exists": true,
+  "recorded_contract_config_path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive/configs/Replica/room0.yaml",
+  "retry_count": 0,
+  "scientific_run_count": 1,
+  "source_config_path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive/configs/Replica/room0.yaml",
+  "source_config_sha256": "71f37b1aee0cd827160056c5a64874a233586ba93b1f50f7d3505ef53f344bdd",
+  "status": "PASS_GAUSSIAN_SLAM_FROZEN_ASSET_IDENTITY"
+}

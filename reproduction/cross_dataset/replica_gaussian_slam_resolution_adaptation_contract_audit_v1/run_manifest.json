@@ -1,0 +1,89 @@
+{
+  "created_utc": "2026-07-29T03:01:00.423734Z",
+  "final_decision": "CLOSE_GAUSSIAN_SLAM_REPLICA_ROUTE_UNDER_OFFICIAL_CONFIG",
+  "final_status": "NO_LEGAL_GAUSSIAN_SLAM_RESOLUTION_ADAPTATION_CONTRACT",
+  "next_task": "REPLICA_GAUSSIAN_MAPPING_FRONTEND_STRATEGY_DECISION_V1",
+  "scientific_execution": {
+    "checkpoint_count": 0,
+    "gaussian_slam_optimizer_invocation_count": 0,
+    "holdout_render_count": 0,
+    "map_output_count": 0,
+    "mapping_iteration_count": 0,
+    "official_eval_usage_count": 0
+  },
+  "stages": {
+    "ADAPTATION_LEGALITY": {
+      "artifact": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/adaptation_legality/gaussian_slam_adaptation_legality_contract.json",
+      "completed_utc": "2026-07-29T03:07:35.595474Z",
+      "sha256": "c12138f329b2aad8a4f4df594d07ffec955be4119fbaf0303dcd940a31aec7b0",
+      "status": "TERMINAL_EVIDENCE_RESULT"
+    },
+    "ADAPTED_CONFIG_FREEZE": {
+      "artifact": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/resolution_semantics/gaussian_slam_replica_resolution_adaptation_v1.json",
+      "completed_utc": "2026-07-29T03:07:35.750437Z",
+      "sha256": "942e527161871c85ffe6b4c35be432de81c631faeee8fb6b4ef4d4e4754078ad",
+      "status": "NOT_AUTHORIZED_DUE_TO_GATE"
+    },
+    "ASSET_IDENTITY": {
+      "artifact": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/asset_identity/gaussian_slam_frozen_asset_identity.json",
+      "completed_utc": "2026-07-29T03:07:33.842003Z",
+      "sha256": "4d846d318a3f04440c9420684e5f22fd6fe86be686b04cff6ed55361864553c1",
+      "status": "TERMINAL_EVIDENCE_RESULT"
+    },
+    "CANDIDATE_POPULATION_CENSUS": {
+      "artifact": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/candidate_population/gaussian_slam_candidate_population_summary.json",
+      "completed_utc": "2026-07-29T03:07:35.471761Z",
+      "sha256": "f994b1805fc495c54c6ffa6e9d49171ed82e98f00e64e4198583d8b8a0484c95",
+      "status": "TERMINAL_EVIDENCE_RESULT"
+    },
+    "CONFIG_PROVENANCE": {
+      "artifact": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/config_provenance/gaussian_slam_config_provenance_audit.json",
+      "completed_utc": "2026-07-29T03:07:33.904302Z",
+      "sha256": "0769dc37b272f1b48506739cbe5c9fb037c66b74947f53e68e36d54eaa7df1ff",
+      "status": "TERMINAL_EVIDENCE_RESULT"
+    },
+    "FAILURE_EVIDENCE_RECOVERY": {
+      "artifact": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/failure_reproduction/pr56_gaussian_slam_failure_evidence.json",
+      "completed_utc": "2026-07-29T03:07:33.965759Z",
+      "sha256": "842480b2e2b2aa8c39498c1f24217ff4772983e36f6ecbe4b6995dd06293fade",
+      "status": "TERMINAL_EVIDENCE_RESULT"
+    },
+    "FAILURE_HYPOTHESIS_CLASSIFICATION": {
+      "artifact": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/resolution_semantics/gaussian_slam_failure_hypothesis_matrix.json",
+      "completed_utc": "2026-07-29T03:07:35.533108Z",
+      "sha256": "f8955833291534c38a2512211313718f698f3d6f12e7340fa74c0ef8221785d3",
+      "status": "TERMINAL_EVIDENCE_RESULT"
+    },
+    "FINAL_CLASSIFICATION": {
+      "artifact": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/decision/gaussian_slam_resolution_audit_result.json",
+      "completed_utc": "2026-07-29T03:07:37.291555Z",
+      "sha256": "a57e9b63386c013e84cc4841731d3444a16098a1fe293050ca1d849a6b9c9dd0",
+      "status": "TERMINAL_EVIDENCE_RESULT"
+    },
+    "FROZEN_ROUTE_DECISIONS": {
+      "artifact": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/frozen_route_decisions/frozen_frontend_route_decisions.json",
+      "completed_utc": "2026-07-29T03:07:31.847581Z",
+      "sha256": "bef5cef9bce06143230ebdf82c0f56a5a0b9ab8aed82936c19bdfe5edfcfdbe6",
+      "status": "TERMINAL_EVIDENCE_RESULT"
+    },
+    "INPUT_IDENTITY": {
+      "artifact": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/input_identity/input_identity_summary.json",
+      "completed_utc": "2026-07-29T03:07:31.785359Z",
+      "sha256": "775e1b16b76bf95a9a9524a36493bc9a0b348ccedc53ee0b407d65e6fcb92f38",
+      "status": "TERMINAL_EVIDENCE_RESULT"
+    },
+    "NO_TRAINING_FUNCTIONAL_VALIDATION": {
+      "artifact": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/no_training_validation/gaussian_slam_no_training_functional_validation.json",
+      "completed_utc": "2026-07-29T03:07:35.719232Z",
+      "sha256": "ec95c78aad71137ced512b6676339de9dd6d9fb320755315104633db2d6df9e5",
+      "status": "NOT_AUTHORIZED_DUE_TO_GATE"
+    },
+    "STATIC_CALL_GRAPH": {
+      "artifact": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/call_graph/gaussian_slam_parameter_call_graph.json",
+      "completed_utc": "2026-07-29T03:07:34.027218Z",
+      "sha256": "49e1a34d638934c22cf60c452c916624d9ffbb0c2bce81766008cb46d7b0d86c",
+      "status": "TERMINAL_EVIDENCE_RESULT"
+    }
+  },
+  "task": "GAUSSIAN_SLAM_RESOLUTION_ADAPTATION_CONTRACT_AUDIT_V1"
+}

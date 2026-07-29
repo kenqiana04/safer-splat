@@ -1,0 +1,181 @@
+{
+  "checks": {
+    "all_python_compiled": true,
+    "archive_unchanged": true,
+    "candidate_16_covered": true,
+    "candidate_60_covered": true,
+    "checkpoint_count_zero": true,
+    "compact_json_parse": true,
+    "environment_unchanged": true,
+    "full_270_zero": true,
+    "input_identity": true,
+    "map_count_zero": true,
+    "mapping_count_zero": true,
+    "navigation_cbf_zero": true,
+    "official_eval_zero": true,
+    "optimizer_count_zero": true,
+    "paired20_unchanged": true,
+    "splatfacto_splatam_reruns_zero": true,
+    "tUM_zero": true,
+    "unique_final_status_decision_next": true
+  },
+  "compiled_sources": [
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/audit_gaussian_slam_config_provenance.py"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/classify_gaussian_slam_resolution_audit.py"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/recover_pr56_gaussian_slam_failure.py"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/validate_gaussian_slam_adaptation_without_training.py"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/trace_gaussian_slam_resolution_call_graph.py"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/freeze_frontend_route_decisions.py"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/audit_driver.py"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/freeze_gaussian_slam_resolution_adaptation.py"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/count_gaussian_slam_candidate_population.py"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/build_gaussian_slam_adaptation_legality_contract.py"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/classify_gaussian_slam_failure_hypotheses.py"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/audit_gaussian_slam_frozen_assets.py"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/freeze_gaussian_slam_audit_input_identity.py"
+    }
+  ],
+  "counts": {
+    "arbitrary_constant_adaptation": 0,
+    "archive_modification": 0,
+    "cbf_qp": 0,
+    "checkpoint": 0,
+    "core_parameter_tuning": 0,
+    "duplicated_pixel_padding": 0,
+    "environment_modification": 0,
+    "full_270": 0,
+    "gaussian_slam_optimizer": 0,
+    "geometry_metric": 0,
+    "holdout_render": 0,
+    "map": 0,
+    "mapping_iteration": 0,
+    "official_eval": 0,
+    "replace_semantic_modification": 0,
+    "safer_navigation": 0,
+    "splatam_execution": 0,
+    "splatfacto_execution": 0,
+    "start_safe_risk_aware_recovery": 0,
+    "tum_rollout": 0
+  },
+  "gpu_1_final_status": {
+    "argv": [
+      "nvidia-smi",
+      "-i",
+      "1",
+      "--query-compute-apps=pid,process_name,used_gpu_memory",
+      "--format=csv,noheader"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  "parsed_compact_json": [
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/run_manifest.json"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/no_training_validation/gaussian_slam_no_training_functional_validation.json"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/config_provenance/gaussian_slam_config_provenance_audit.json"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/input_identity/input_identity_summary.json"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/frozen_route_decisions/frozen_frontend_route_decisions.json"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/candidate_population/gaussian_slam_candidate_population_summary.json"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/asset_identity/gaussian_slam_environment_audit.json"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/asset_identity/gaussian_slam_frozen_asset_identity.json"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/call_graph/gaussian_slam_parameter_call_graph.json"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/adaptation_legality/gaussian_slam_adaptation_legality_contract.json"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/decision/downstream_handoff.json"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/decision/gaussian_slam_resolution_audit_result.json"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/decision/validation_result.json"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/failure_reproduction/pr56_gaussian_slam_failure_evidence.json"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/resolution_semantics/gaussian_slam_failure_hypothesis_matrix.json"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/resolution_semantics/gaussian_slam_replica_smoke_config_frozen.json"
+    },
+    {
+      "pass": true,
+      "path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/resolution_semantics/gaussian_slam_replica_resolution_adaptation_v1.json"
+    }
+  ],
+  "status": "PASS_GAUSSIAN_SLAM_RESOLUTION_AUDIT_VALIDATION"
+}

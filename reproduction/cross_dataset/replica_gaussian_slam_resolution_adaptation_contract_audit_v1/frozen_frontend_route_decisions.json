@@ -1,0 +1,25 @@
+{
+  "immutability": {
+    "no_delta1_relaxation": true,
+    "no_splatam_retraining": true,
+    "not_rewritten_by_gaussian_audit": true
+  },
+  "splatam": {
+    "decision": "CLOSE_SPLATAM_REPLICA_MAPPING_ROUTE_UNDER_FROZEN_CONFIG",
+    "execution_count_this_task": 0,
+    "final_status": "SPLATAM_REPLICA_60_FRAME_PILOT_GEOMETRY_NOT_QUALIFIED",
+    "metrics": {
+      "absrel": 0.17809340202560028,
+      "coverage": 0.9616435445162634,
+      "delta1": 0.7439667656972608,
+      "median_depth_ratio": 0.9413975477218628,
+      "safer_g0": "PASS"
+    }
+  },
+  "splatfacto": {
+    "decision": "CLOSE_SPLATFACTO_NAVIGATION_MAP_ROUTE",
+    "execution_count_this_task": 0,
+    "final_status": "PASS_SPLATFACTO_NATIVE_COMPATIBILITY_ONLY_GEOMETRY_NOT_QUALIFIED"
+  },
+  "status": "FROZEN_FRONTEND_ROUTE_DECISIONS_RECORDED"
+}

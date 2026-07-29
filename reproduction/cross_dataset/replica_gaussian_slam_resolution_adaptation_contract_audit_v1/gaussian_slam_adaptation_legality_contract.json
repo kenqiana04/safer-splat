@@ -1,0 +1,33 @@
+{
+  "all_conditions_pass": false,
+  "conditions": {
+    "10_only_domain_definition": false,
+    "11_auditable_effective_count": false,
+    "12_deterministic_same_input_seed_environment": false,
+    "13_no_official_eval": true,
+    "14_no_map_result_required": true,
+    "1_rule_frozen_before_mapping": true,
+    "2_official_evidence_derives_rule": false,
+    "3_result_independent": true,
+    "4_deterministic_for_population": false,
+    "5_not_manual_constant": false,
+    "6_replace_semantics_unchanged": true,
+    "7_no_duplicate_padding": true,
+    "8_no_core_method_change": false,
+    "9_preserves_original_when_sufficient": false
+  },
+  "mapping_authorization": false,
+  "prohibited_manual_values": [
+    300000,
+    307200,
+    "valid_depth_count",
+    "0.95*candidate_count"
+  ],
+  "rejected_rules": {
+    "RULE_A_OFFICIAL_CAP_CLAMP": "Parameter is exact count, not official maximum/cap.",
+    "RULE_B_OFFICIAL_RESOLUTION_DENSITY_SCALING": "No official scaling formula, reference-density contract, or unique rounding rule.",
+    "RULE_C_ADAPTER_RESTORES_OFFICIAL_CANDIDATE_POOL": "No adapter candidate-pool semantic divergence; increasing resolution/pool would not be an input-only restoration."
+  },
+  "selected_rule": "RULE_D_NO_LEGAL_ADAPTATION",
+  "status": "NO_LEGAL_GAUSSIAN_SLAM_RESOLUTION_ADAPTATION_CONTRACT"
+}

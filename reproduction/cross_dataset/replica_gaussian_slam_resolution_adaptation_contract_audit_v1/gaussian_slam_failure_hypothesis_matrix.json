@@ -1,0 +1,51 @@
+{
+  "hypotheses": [
+    {
+      "classification": "NOT_CONFIRMED",
+      "confidence": "medium",
+      "contradicting_evidence": "Generated config created the incompatible resolution/count pairing, but candidate-pool semantics match the official Replica loader.",
+      "hypothesis": "DATASET_ADAPTER_CONTRACT_BUG",
+      "scientific_mapping_may_be_authorized": false,
+      "supporting_evidence": "Adapter preserves a one-row-per-pixel pool and no erroneous aggregation or mask-before-choice was found.",
+      "unresolved_evidence": []
+    },
+    {
+      "classification": "SUPPORTED",
+      "confidence": "high",
+      "contradicting_evidence": "The numeric field itself originates from an official Replica config.",
+      "hypothesis": "OFFICIAL_CONFIG_SOURCE_MISMATCH",
+      "scientific_mapping_may_be_authorized": false,
+      "supporting_evidence": "Official Replica config is 1200x680 with 600000; task config is generated at 640x480 while retaining 600000.",
+      "unresolved_evidence": []
+    },
+    {
+      "classification": "CONTRADICTED",
+      "confidence": "high",
+      "contradicting_evidence": "No cap/max annotation or implementation exists.",
+      "hypothesis": "RESOLUTION_CAPACITY_PARAMETER",
+      "scientific_mapping_may_be_authorized": false,
+      "supporting_evidence": "Source calls np.random.choice(population, exact_count, replace=False) with no fallback.",
+      "unresolved_evidence": []
+    },
+    {
+      "classification": "SUPPORTED",
+      "confidence": "high",
+      "contradicting_evidence": "No source comment calls it a density or resolution-normalized quantity.",
+      "hypothesis": "CORE_METHOD_HYPERPARAMETER",
+      "scientific_mapping_may_be_authorized": false,
+      "supporting_evidence": "The parameter is the exact uniform initialization budget before subsequent map growth/optimization; official datasets use 100000, 400000, and 600000.",
+      "unresolved_evidence": []
+    },
+    {
+      "classification": "CONTRADICTED",
+      "confidence": "high",
+      "contradicting_evidence": "No unresolved semantic blocks the classification.",
+      "hypothesis": "SEMANTICS_UNRESOLVED",
+      "scientific_mapping_may_be_authorized": false,
+      "supporting_evidence": "Definition, call site, population, and replace flag are explicit in source.",
+      "unresolved_evidence": []
+    }
+  ],
+  "mapping_authorization": false,
+  "status": "PASS_FAILURE_HYPOTHESIS_CLASSIFICATION"
+}

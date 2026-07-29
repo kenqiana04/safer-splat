@@ -1,0 +1,58 @@
+{
+  "classification": "OFFICIAL_CONFIG_BUT_FOR_DIFFERENT_RESOLUTION",
+  "config_inventory": [
+    {
+      "H": 680,
+      "W": 1200,
+      "new_submap_points_num": 600000,
+      "path": "configs/Replica/replica.yaml",
+      "sha256": "92fb1477ae7656d589e44597fc3570fa9af98296bf067d900f8df4b9c477c194"
+    },
+    {
+      "H": 480,
+      "W": 640,
+      "new_submap_points_num": 100000,
+      "path": "configs/ScanNet/scannet.yaml",
+      "sha256": "66e3d07445a5bd45206e2773b19bffce9f6e8be85380ccfc2fdd2e86b9f402bf"
+    },
+    {
+      "H": null,
+      "W": null,
+      "new_submap_points_num": 100000,
+      "path": "configs/TUM_RGBD/tum_rgbd.yaml",
+      "sha256": "14ebd7a86833422f966a1097078a5fbca02aee1e56cc431a2f9e6b359a409faf"
+    },
+    {
+      "H": null,
+      "W": null,
+      "new_submap_points_num": 400000,
+      "path": "configs/scannetpp/scannetpp.yaml",
+      "sha256": "9c1a4ff25b11e2864cbfe8ecd47dc377de558701231acd7890256c70105fc932"
+    }
+  ],
+  "formula_or_helper_found": false,
+  "official_loader_resize_for_replica": false,
+  "official_parameter_source": "configs/Replica/replica.yaml (inherited by room0.yaml)",
+  "official_parameter_source_sha256": "92fb1477ae7656d589e44597fc3570fa9af98296bf067d900f8df4b9c477c194",
+  "official_source_config": "configs/Replica/room0.yaml",
+  "official_source_config_sha256": "71f37b1aee0cd827160056c5a64874a233586ba93b1f50f7d3505ef53f344bdd",
+  "reason": "The only official Replica config fixes 600000 at 1200x680; the task adapter copied that count into a 640x480 generated config. Source code contains neither cap behavior nor a resolution formula.",
+  "recorded_room0_exists": true,
+  "recorded_room0_path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/repos/Gaussian-SLAM_official_archive/configs/Replica/room0.yaml",
+  "reference_resolution": {
+    "height": 680,
+    "pixels": 816000,
+    "width": 1200
+  },
+  "resize_position": "none; Replica.__getitem__ reads native files",
+  "scaling_precedent": false,
+  "status": "OFFICIAL_CONFIG_BUT_FOR_DIFFERENT_RESOLUTION",
+  "task_config_is_generated_by_adapter": true,
+  "task_config_sha256": "809106165c0d42c6208923e5325a7de4c30d60da1da5f44e64b8931ee22aaa59",
+  "task_config_source": "/disk1/zlab/maintenance_records/replica_rgbd_gaussian_mapping_frontend_qualification_v1/gaussian_slam/configs/smoke.yaml",
+  "task_resolution": {
+    "height": 480,
+    "pixels": 307200,
+    "width": 640
+  }
+}

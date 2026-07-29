@@ -1,0 +1,53 @@
+{
+  "307200_is_actual_candidate_upper_bound": true,
+  "any_official_path_population_at_least_600000": true,
+  "candidate_pool_unit": "single native-resolution Replica frame in new-submap Mapper.seed_new_gaussians",
+  "cohorts": {
+    "pilot60": {
+      "feasible_600000_units": 0,
+      "infeasible_600000_units": 60,
+      "maximum": 307200,
+      "median": 307200.0,
+      "minimum": 307200,
+      "p1": 307200.0,
+      "p99": 307200.0,
+      "unit_count": 60,
+      "valid_depth_maximum": 307200,
+      "valid_depth_median": 244252.5,
+      "valid_depth_minimum": 32099
+    },
+    "smoke16": {
+      "feasible_600000_units": 0,
+      "infeasible_600000_units": 16,
+      "maximum": 307200,
+      "median": 307200.0,
+      "minimum": 307200,
+      "p1": 307200.0,
+      "p99": 307200.0,
+      "unit_count": 16,
+      "valid_depth_maximum": 307200,
+      "valid_depth_median": 307200.0,
+      "valid_depth_minimum": 78753
+    }
+  },
+  "combined_census_runs": {
+    "feasible_600000_units": 0,
+    "infeasible_600000_units": 76,
+    "maximum": 307200,
+    "median": 307200.0,
+    "minimum": 307200,
+    "p1": 307200.0,
+    "p99": 307200.0,
+    "unit_count": 76,
+    "valid_depth_maximum": 307200,
+    "valid_depth_median": 278351.0,
+    "valid_depth_minimum": 32099
+  },
+  "full_csv_path": "/disk1/zlab/maintenance_records/replica_gaussian_slam_resolution_adaptation_contract_audit_v1/candidate_population/candidate_population_per_frame_or_submap.csv",
+  "full_csv_sha256": "7e77de65b1150bfb08f6bdfb6d23b2123ffae0f553535b7917034bddc606dce7",
+  "no_optimizer_map_checkpoint_render": true,
+  "official_path_evidence": "official room0.yaml inherits Replica 1200x680=816000 native pixels",
+  "requested_count": 600000,
+  "status": "PASS_CANDIDATE_POPULATION_CENSUS_NO_MAPPING",
+  "valid_depth_further_reduces_population_after_uniform_choice": true
+}
