@@ -1,0 +1,21 @@
+{
+  "comparators": [
+    "Bounded SAFER baseline",
+    "Risk-Aware V1",
+    "Certified Start-Safe",
+    "Discrete-Time Verification",
+    "Predictive Recovery"
+  ],
+  "controller_geometry_input": "selected canonical Gaussian safety map only",
+  "infeasible_qp_must_not_execute_u_des": true,
+  "map_blocked_routes_must_be_counted": true,
+  "mesh_oracle_role": "independent evaluation only",
+  "next_task": "RUN_REPLICA_BOUNDED_DIRECT_GOAL_SAFER_FAS_CBF_BENCHMARK_V1",
+  "no_route_deletion": true,
+  "robot_contract_sha256": "681e3112fb4ba7214dc27f2175f81ba6f910064fc14d5c21e5aa2555534f7337",
+  "route_registry_sha256": "ffe0dadd2dcf4de7e0011a9e3ff6bb1170a385957486ffca33832fc90cc355a6",
+  "same_max_steps_and_success_contract": true,
+  "selected_map_identity_sha256": "d818786ce3f7d3714a90948c1b41c2b9e85261fc8f9b3d06e7e207eb423db35d",
+  "start_safe_registry_sha256": "e58cd9de67928ddc22f493f1eaf182044ac7e009656f092dacea42b6aaceb499",
+  "status": "READY"
+}

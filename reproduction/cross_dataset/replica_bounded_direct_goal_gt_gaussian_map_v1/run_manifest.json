@@ -1,0 +1,37 @@
+{
+  "final_decision": "RUN_BOUNDED_REPLICA_SAFER_FAS_CBF_BENCHMARK",
+  "formal_multistep_navigation_count": 0,
+  "gate_checks": {
+    "bounded_qp": true,
+    "explicit_user_authorized_contract": true,
+    "formal_multistep_navigation_count_zero": true,
+    "gpu_1_task_owned_compute_process_count_zero": true,
+    "input_identity": true,
+    "mesh_oracle": true,
+    "route_registry": true,
+    "selected_profile": true,
+    "start_safe_registry": true,
+    "static_g0": true,
+    "static_integration": true
+  },
+  "icp_count": 0,
+  "learned_training_count": 0,
+  "new_dataset_search_count": 0,
+  "new_remote_download_count": 0,
+  "next_task": "RUN_REPLICA_BOUNDED_DIRECT_GOAL_SAFER_FAS_CBF_BENCHMARK_V1",
+  "profile_count": 3,
+  "profiles_attempted": [
+    "COARSE",
+    "MEDIUM",
+    "FINE"
+  ],
+  "protocol": "REPLICA_BOUNDED_DIRECT_GOAL_GT_GAUSSIAN_BENCHMARK_V1",
+  "scale_fit_count": 0,
+  "selected_asset_canonical_tree_sha256": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+  "selected_profile": "FINE",
+  "sim3_count": 0,
+  "splatam_rescue_count": 0,
+  "status": "PASS_REPLICA_BOUNDED_DIRECT_GOAL_GT_GAUSSIAN_MAP_READY",
+  "task_id": "FREEZE_REPLICA_BOUNDED_DIRECT_GOAL_BENCHMARK_AND_BUILD_GT_GAUSSIAN_MAP_V1",
+  "tum_count": 0
+}

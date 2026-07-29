@@ -1,0 +1,19 @@
+{
+  "actual_u_box_max_violation": -1.964466089798833e-11,
+  "controller_geometry_source": "selected canonical Gaussian safety map",
+  "formal_multistep_navigation_count": 0,
+  "infeasible_fallback_to_u_des_count": 0,
+  "infeasible_no_plant_step_count": 1,
+  "mesh_oracle_controller_input_count": 0,
+  "near_bound_velocity_state_count": 1000,
+  "next_velocity_box_max_violation": -1.9854951016640143e-13,
+  "position_euler_max_error": 0.0,
+  "post_qp_clip_count": 0,
+  "safe_random_state_count": 1000,
+  "selected_map_g0_positions_sha256": "95975c75124f29c3da06d5b8e05a58361cc00b073edf049ff208f5f94f01ef87",
+  "selected_map_g0_state_count": 100,
+  "selected_map_geometry_input": "canonical Gaussian means only",
+  "selected_map_geometry_input_count": 100,
+  "status": "PASS",
+  "synthetic_cbf_fixture_count": 500
+}

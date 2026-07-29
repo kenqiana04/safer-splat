@@ -1,0 +1,25 @@
+{
+  "adapter": "BoundedCBFQPAdapter",
+  "actual_control_bounds": {
+    "lower_m_per_s2": -0.1,
+    "upper_m_per_s2": 0.1
+  },
+  "authoritative_dtype": "float64",
+  "base_rows": "A_cbf u <= b_cbf from the existing CBF interface",
+  "infeasible_contract": {
+    "fallback_to_u_des": false,
+    "plant_step": false
+  },
+  "next_velocity_rows": [
+    "dt I u <= vmax - v",
+    "-dt I u <= vmax + v"
+  ],
+  "post_qp_clipping": false,
+  "solver": "Clarabel",
+  "state": "[px, py, pz, vx, vy, vz]",
+  "time_step_s": 0.05,
+  "velocity_bounds": {
+    "lower_m_per_s": -0.1,
+    "upper_m_per_s": 0.1
+  }
+}

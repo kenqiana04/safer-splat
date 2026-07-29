@@ -1,0 +1,13 @@
+{
+  "authority_mesh": "official Replica apartment_0 visual mesh",
+  "collision_rule": "minimum segment-to-mesh distance <= r_robot",
+  "continuous_segment_queries": true,
+  "dtype": "float64",
+  "mesh_simplification": false,
+  "oracle": "ReplicaMeshCollisionOracle",
+  "point_clearance": "point-to-triangle minimum distance - r_robot",
+  "robot_radius_m": 0.1,
+  "semantic_mesh_substitution": false,
+  "tangent_contact_is_collision": true,
+  "triangle_bvh": true
+}

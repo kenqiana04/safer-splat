@@ -1,0 +1,42 @@
+{
+  "array_checks": {
+    "colors_rgb.npy": {
+      "build_a_sha256": "1e8c6d97d066a269261d620c87841dabe42f2301ed5626449e0c24a237b9554e",
+      "build_b_sha256": "1e8c6d97d066a269261d620c87841dabe42f2301ed5626449e0c24a237b9554e",
+      "identical": true
+    },
+    "means_world_m.npy": {
+      "build_a_sha256": "e2ca0533767590c0b5ca657ec7f73fd4626a5fbaf07beb2ce76c2c67d1dc4152",
+      "build_b_sha256": "e2ca0533767590c0b5ca657ec7f73fd4626a5fbaf07beb2ce76c2c67d1dc4152",
+      "identical": true
+    },
+    "opacities_probability.npy": {
+      "build_a_sha256": "953ed306a6860660568a0e649d1db0dc53fcf33ddbd2d003876682566572f492",
+      "build_b_sha256": "953ed306a6860660568a0e649d1db0dc53fcf33ddbd2d003876682566572f492",
+      "identical": true
+    },
+    "quaternions_wxyz.npy": {
+      "build_a_sha256": "a646a65b6665b4f09e7b295172045236eb40934202d5ef19481e963d591d56e1",
+      "build_b_sha256": "a646a65b6665b4f09e7b295172045236eb40934202d5ef19481e963d591d56e1",
+      "identical": true
+    },
+    "scales_linear_m.npy": {
+      "build_a_sha256": "d81393a0ede4126a18b49fc9e12cca7476ca665c55fce05242b02766589c59e3",
+      "build_b_sha256": "d81393a0ede4126a18b49fc9e12cca7476ca665c55fce05242b02766589c59e3",
+      "identical": true
+    },
+    "voxel_indices_int64.npy": {
+      "build_a_sha256": "8e452be734959793f15b2dc9da796ff2f6d702cb03a88d76eb97566ca9b077f0",
+      "build_b_sha256": "8e452be734959793f15b2dc9da796ff2f6d702cb03a88d76eb97566ca9b077f0",
+      "identical": true
+    }
+  },
+  "build_a_canonical_tree_sha256": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+  "build_b_canonical_tree_sha256": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+  "canonical_tree_identical": true,
+  "fresh_builds": 2,
+  "gaussian_count_a": 2285656,
+  "gaussian_count_b": 2285656,
+  "profile": "FINE",
+  "status": "PASS"
+}

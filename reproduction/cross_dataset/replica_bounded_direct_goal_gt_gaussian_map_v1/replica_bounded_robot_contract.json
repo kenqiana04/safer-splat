@@ -1,0 +1,46 @@
+{
+  "authority_type": "EXPLICIT_USER_AUTHORIZED_BENCHMARK_DESIGN",
+  "control": [
+    "ax",
+    "ay",
+    "az"
+  ],
+  "design_choice": "NEW_VERSIONED_REPLICA_BENCHMARK_DESIGN_CHOICE",
+  "dt_s": 0.05,
+  "environment": "metric_free_3D",
+  "goal_velocity_m_per_s": [
+    0,
+    0,
+    0
+  ],
+  "initial_velocity_m_per_s": [
+    0,
+    0,
+    0
+  ],
+  "integration": "forward_euler",
+  "max_simulation_time_s": 25.0,
+  "max_steps": 500,
+  "nominal_controller": "vel_des=clip_componentwise(5*(p_goal-p),-vmax,+vmax); u_des=clip_componentwise(vel_des-v,-umax,+umax)",
+  "not_physical_robot_platform": true,
+  "not_recovered_official_safer_contract": true,
+  "position_update": "p_next=p+dt*v",
+  "robot": {
+    "epsilon_base_m": 0.01,
+    "r_robot_m": 0.1,
+    "shape": "sphere_benchmark_primitive"
+  },
+  "state": [
+    "px",
+    "py",
+    "pz",
+    "vx",
+    "vy",
+    "vz"
+  ],
+  "success_position_tolerance_m": 0.03,
+  "success_velocity_tolerance_m_per_s": 0.03,
+  "umax_component_m_per_s2": 0.1,
+  "velocity_update": "v_next=v+dt*u",
+  "vmax_component_m_per_s": 0.1
+}

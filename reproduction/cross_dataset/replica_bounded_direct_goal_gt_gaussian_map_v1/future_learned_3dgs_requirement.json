@@ -1,0 +1,17 @@
+{
+  "backup_dataset": "ScanNet",
+  "learned_external_map_requirement_satisfied_by_this_task": false,
+  "maximum_dataset_families": 2,
+  "primary_dataset": "ScanNet++",
+  "required_future_task": "SCANNETPP_LEARNED_3DGS_EXTERNAL_QUALIFICATION_V1",
+  "required_route": [
+    "official ecosystem RGB, pose, mesh, depth, and split",
+    "self-trained learned 3DGS",
+    "one official baseline",
+    "at most one preregistered depth-supervised variant",
+    "independent held-out geometry qualification",
+    "same SAFER/FAS-CBF modules only after qualification"
+  ],
+  "status": "MANDATORY_FUTURE_PAPER_PHASE",
+  "statement": "Replica GT-derived geometry closes metric control and safety evaluation only; it does not replace learned external 3DGS generalization."
+}

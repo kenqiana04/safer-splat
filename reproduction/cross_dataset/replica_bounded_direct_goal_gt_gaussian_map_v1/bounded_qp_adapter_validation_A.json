@@ -1,0 +1,18 @@
+{
+  "core_modification_count": 0,
+  "deterministic_trace_sha256": "352b4c33d5cd0dbf025d500fccd12973da13b1273ecdf8c1f12d01dd70882a12",
+  "fixture_count": 10000,
+  "infeasible_fallback_to_u_des_count": 0,
+  "infeasible_fixture_status": "PrimalInfeasible",
+  "max_actual_u_box_violation": -1.8696849624078027e-12,
+  "max_cbf_or_bound_residual": 1.1543130340463392e-10,
+  "max_float32_float64_control_difference": 1.9176614583088503e-07,
+  "max_next_velocity_box_violation": -4.996003610813204e-16,
+  "post_qp_clip_count": 0,
+  "status": "PASS",
+  "statuses": {
+    "PrimalInfeasible": 1,
+    "Solved": 9999
+  },
+  "successful_fixture_count": 9999
+}

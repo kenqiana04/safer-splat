@@ -1,0 +1,90 @@
+{
+  "bounded_qp_adapter_contract_sha256": "2fe08f34912a13d535200054e3e20287e3726ff54ae1a5d8f05c4780afe176de",
+  "canonical_arrays": {
+    "colors_rgb.npy": {
+      "bytes": 27427952,
+      "sha256": "1e8c6d97d066a269261d620c87841dabe42f2301ed5626449e0c24a237b9554e"
+    },
+    "means_world_m.npy": {
+      "bytes": 27427952,
+      "sha256": "e2ca0533767590c0b5ca657ec7f73fd4626a5fbaf07beb2ce76c2c67d1dc4152"
+    },
+    "opacities_probability.npy": {
+      "bytes": 9142704,
+      "sha256": "953ed306a6860660568a0e649d1db0dc53fcf33ddbd2d003876682566572f492"
+    },
+    "quaternions_wxyz.npy": {
+      "bytes": 36570576,
+      "sha256": "a646a65b6665b4f09e7b295172045236eb40934202d5ef19481e963d591d56e1"
+    },
+    "scales_linear_m.npy": {
+      "bytes": 27427952,
+      "sha256": "d81393a0ede4126a18b49fc9e12cca7476ca665c55fce05242b02766589c59e3"
+    },
+    "voxel_indices_int64.npy": {
+      "bytes": 54855824,
+      "sha256": "8e452be734959793f15b2dc9da796ff2f6d702cb03a88d76eb97566ca9b077f0"
+    }
+  },
+  "canonical_tree_sha256": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+  "claims": {
+    "formal_multistep_navigation_executed": false,
+    "gaussian_primitives_are": "deterministic conservative safety geometry",
+    "learned_3dgs": false,
+    "mapping_frontend_generalization_evidence": false,
+    "reconstructed_3dgs": false
+  },
+  "dataset": "Replica",
+  "evidence": {
+    "determinism": {
+      "path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/map_coverage/map_determinism_FINE.json",
+      "sha256": "9b0e2b0a5f9ba34156051f89cdc2512c035073cfffe9d2c331584f71a00f5ffd"
+    },
+    "free_space": {
+      "path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/map_free_space/map_free_space_gate_FINE.json",
+      "sha256": "ac21b7e707fad31440a9718b3333c33a3fe1767ac1c139ceddf671830c817b15"
+    },
+    "mesh_coverage": {
+      "path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/map_coverage/mesh_coverage_certificate_FINE.json",
+      "sha256": "1d660eb336f5aeef912709154e551e51b31f33b1bc3b3e85f0e598f20a071028"
+    },
+    "safer_g0": {
+      "path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/safer_g0/gt_gaussian_safer_g0_FINE.json",
+      "sha256": "7263f1dae6f3b010d01a58fbaf2459f5ac0291ac3291213afa0de95e12f75f95"
+    },
+    "static_integration": {
+      "path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/selection/bounded_benchmark_static_integration_audit.json",
+      "sha256": "5f8b6a8a61de074917cfaad7b078d1def967834a75ef2177797be6a022fb3fd6"
+    },
+    "voxelization_resource": {
+      "path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/map_coverage/map_resource_FINE.json",
+      "sha256": "70fe0b2074ccc28a94528efb43e0d9d593c26b342790ef33ad4077b43048ed66"
+    }
+  },
+  "gate_checks": {
+    "determinism": true,
+    "free_space": true,
+    "mesh_coverage": true,
+    "profile_matches_requested": true,
+    "profile_summary": true,
+    "safer_g0": true,
+    "static_integration": true,
+    "voxelization_resource": true
+  },
+  "gaussian_count": 2285656,
+  "map_role": "CERTIFIED_GT_GEOMETRY_DERIVED_GAUSSIAN_SAFETY_MAP",
+  "mesh_oracle_validation_sha256": "d0d1452bdc6ca5d6df32f6b4c20a3d0a0a512804de9f0553cd6cded6317c1fd6",
+  "profile_order": [
+    "COARSE",
+    "MEDIUM",
+    "FINE"
+  ],
+  "robot_contract_sha256": "681e3112fb4ba7214dc27f2175f81ba6f910064fc14d5c21e5aa2555534f7337",
+  "route_registry_sha256": "ffe0dadd2dcf4de7e0011a9e3ff6bb1170a385957486ffca33832fc90cc355a6",
+  "scene": "apartment_0",
+  "selected_profile": "FINE",
+  "selection_rule": "coarsest profile passing voxelization, coverage, determinism, resource, free-space, static G0, and static integration gates",
+  "start_safe_registry_sha256": "e58cd9de67928ddc22f493f1eaf182044ac7e009656f092dacea42b6aaceb499",
+  "status": "PASS",
+  "voxel_size_m": 0.02
+}
