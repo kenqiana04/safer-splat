@@ -1,0 +1,42 @@
+{
+  "budget": {
+    "backup_metadata_only": true,
+    "max_families": 2,
+    "max_full_external_scenes": 1,
+    "max_ranked_candidates": 10,
+    "max_remote_download_bytes": 21474836480
+  },
+  "counts": {
+    "canonical_export": 0,
+    "cbf_qp": 0,
+    "filtering_pruning_downsampling": 0,
+    "geometry_evaluation": 0,
+    "icp": 0,
+    "language_feature_download": 0,
+    "map_modification": 0,
+    "map_training": 0,
+    "navigation": 0,
+    "non_official_mirror": 0,
+    "preview_selection": 0,
+    "safer_g0": 0,
+    "scale_fitting": 0,
+    "sim3": 0,
+    "token_command_argument": 0,
+    "token_disclosure": 0,
+    "whole_snapshot_download": 0
+  },
+  "frozen_routes": {
+    "gaussian_slam": "CLOSE_GAUSSIAN_SLAM_REPLICA_ROUTE_UNDER_OFFICIAL_CONFIG",
+    "replica_tree_sha256": "24e21d3bccceb0516ed8b9b49b426964f3954ccd0cd804eedd5846baabd66dcb",
+    "splatam": "CLOSE_SPLATAM_REPLICA_MAPPING_ROUTE_UNDER_FROZEN_CONFIG",
+    "splatfacto": "CLOSE_SPLATFACTO_NAVIGATION_MAP_ROUTE",
+    "tum": "CLOSE_TUM_NAVIGATION_BENCHMARK_KEEP_SAFETY_CASE_STUDY"
+  },
+  "generated_utc": "2026-07-29T04:17:57+00:00",
+  "task_id": "LOCAL_EXTERNAL_GS_ACQUISITION_AND_VERIFIED_HANDOFF_V1",
+  "upstream_branch": "cross-dataset-qualified-gaussian-map-acquisition-v1",
+  "upstream_empty_candidate_registry_sha256": "04d88c077eec6e240ab34ffe09ee4cca01b1a40663a80bbac96c3e149f93e9a8",
+  "upstream_head": "71d17db633ef5e70e394cf64b92672abe872bfd0",
+  "upstream_pr": 60,
+  "upstream_terminal_status": "BLOCKED_BY_EXTERNAL_DATASET_ACCESS_APPROVAL_REQUIRED"
+}
