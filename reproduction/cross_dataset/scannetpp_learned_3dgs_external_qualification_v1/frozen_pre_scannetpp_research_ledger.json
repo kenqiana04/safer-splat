@@ -1,0 +1,15 @@
+{
+  "status": "FROZEN_PRE_SCANNETPP_RESEARCH_LEDGER",
+  "immutable_for_this_task": true,
+  "routes": {
+    "tum_navigation": "CLOSE_TUM_NAVIGATION_BENCHMARK_KEEP_SAFETY_CASE_STUDY",
+    "tum_splatfacto": "DIAGNOSTIC_ONLY; GEOMETRY_NOT_QUALIFIED",
+    "replica_splatfacto": "CLOSE_SPLATFACTO_NAVIGATION_MAP_ROUTE",
+    "replica_splatam": "SPLATAM_REPLICA_60_FRAME_PILOT_GEOMETRY_NOT_QUALIFIED; CLOSE_SPLATAM_REPLICA_MAPPING_ROUTE_UNDER_FROZEN_CONFIG",
+    "replica_gaussian_slam": "NO_LEGAL_GAUSSIAN_SLAM_RESOLUTION_ADAPTATION_CONTRACT; CLOSE_GAUSSIAN_SLAM_REPLICA_ROUTE_UNDER_OFFICIAL_CONFIG",
+    "public_pretrained_search": "CLOSE_PUBLIC_PRETRAINED_EXTERNAL_MAP_SEARCH",
+    "replica_gt_map": "CERTIFIED_GT_GEOMETRY_DERIVED_GAUSSIAN_SAFETY_MAP; NOT_LEARNED_3DGS",
+    "replica_benchmark": "PASS_REPLICA_BOUNDED_DIRECT_GOAL_SAFER_FAS_CBF_BENCHMARK_COMPLETE"
+  },
+  "prohibited": ["reinterpret_pr65", "replace_replica_results", "pretrained_component_search", "controller_benchmark_before_qualification"]
+}

@@ -1,0 +1,35 @@
+{
+  "asset_root_present": false,
+  "checked_unix_s": 1785402041.6066325,
+  "dns": {
+    "github.com": [
+      "20.205.243.166"
+    ],
+    "huggingface.co": [
+      "173.252.248.244",
+      "2a03:2880:f127:83:face:b00c:0:25de"
+    ]
+  },
+  "git_ls_remote": {
+    "returncode": null,
+    "stderr_tail": "",
+    "stdout_tail": "",
+    "timed_out": true
+  },
+  "https_probe": {
+    "returncode": 28,
+    "stderr_tail": "curl: (28) Connection timed out after 8001 milliseconds\n",
+    "stdout_tail": "000",
+    "timed_out": false
+  },
+  "interpretation": "Only official authority is acceptable; timeout/no local official asset fails closed.",
+  "next_task": "RESUME_SCANNETPP_AFTER_OFFICIAL_ACCESS_V1",
+  "official_urls": {
+    "demo": "https://github.com/scannetpp/3DGS-demo.git",
+    "toolbox": "https://github.com/scannetpp/scannetpp.git",
+    "toolbox_web": "https://github.com/scannetpp/scannetpp"
+  },
+  "status": "BLOCKED_BY_SCANNETPP_OFFICIAL_ACCESS",
+  "token_environment_variable_names": [],
+  "token_values_recorded": false
+}

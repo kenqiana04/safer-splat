@@ -1,0 +1,20 @@
+{
+  "FINAL_STATUS": "BLOCKED_BY_SCANNETPP_OFFICIAL_ACCESS",
+  "NEXT_TASK": "RESUME_SCANNETPP_AFTER_OFFICIAL_ACCESS_V1",
+  "checks": {
+    "controller_benchmark_count": 0,
+    "download_bytes": 0,
+    "existing_official_v2_asset_root": false,
+    "hyperparameter_sweep_count": 0,
+    "icp_sim3_scale_repair_count": 0,
+    "official_github_https_access": false,
+    "official_repository_git_access": false,
+    "pr65_reexecuted": false,
+    "pretrained_component_search_count": 0,
+    "training_attempts": 0
+  },
+  "status": "BLOCKED",
+  "unresolved_critical_evidence": [
+    "Server cannot reach official GitHub HTTPS/clone endpoint and no verified official ScanNet++ v2 asset root or task token configuration is present."
+  ]
+}
