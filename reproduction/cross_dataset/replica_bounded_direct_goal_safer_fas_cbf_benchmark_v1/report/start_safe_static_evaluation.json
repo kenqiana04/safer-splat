@@ -1,0 +1,672 @@
+{
+  "mesh_oracle_controller_input_count": 0,
+  "rows": [
+    {
+      "index": 0,
+      "map_initial_cg_m": -0.026665351630959344,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.03646155455592917,
+      "projected_map_cg_m": 0.005000010721940201,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.031665362352900205,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        4.094109002008748,
+        -0.35853647428468777,
+        0.16993211604201197
+      ],
+      "registry_gt_label": "NEAR_SAFE",
+      "source_gt_clearance_m_evaluation_only": 0.0050000000000000044,
+      "source_position_m": [
+        4.097909011145723,
+        -0.3899729950842036,
+        0.16994834937155323
+      ]
+    },
+    {
+      "index": 1,
+      "map_initial_cg_m": -0.03162244336497644,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.036372538373501684,
+      "projected_map_cg_m": 0.005000001904717555,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.03662244526969406,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        4.094943329127621,
+        -0.35843844585572704,
+        0.17019758284683684
+      ],
+      "registry_gt_label": "CONTACT",
+      "source_gt_clearance_m_evaluation_only": -9.71445146547012e-17,
+      "source_position_m": [
+        4.099107466787579,
+        -0.39482333927566043,
+        0.17014293945070588
+      ]
+    },
+    {
+      "index": 2,
+      "map_initial_cg_m": -0.03657483203970571,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.03627302003915836,
+      "projected_map_cg_m": 0.005000000505840901,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.04157483254554666,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        4.095869439080552,
+        -0.3583365275764985,
+        0.17049199493054784
+      ],
+      "registry_gt_label": "UNSAFE",
+      "source_gt_clearance_m_evaluation_only": -0.0049999999999999906,
+      "source_position_m": [
+        4.100305922429435,
+        -0.3996736834671173,
+        0.17033752952985853
+      ]
+    },
+    {
+      "index": 3,
+      "map_initial_cg_m": -0.03148679867349592,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.04144686926797392,
+      "projected_map_cg_m": 0.005024719701818281,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.03657640993243232,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        0.4608435148215433,
+        2.5817990237227777,
+        1.0993235009970581
+      ],
+      "registry_gt_label": "NEAR_SAFE",
+      "source_gt_clearance_m_evaluation_only": 0.004999999999999907,
+      "source_position_m": [
+        0.4622374795343667,
+        2.545266192609591,
+        1.0982086571604024
+      ]
+    },
+    {
+      "index": 4,
+      "map_initial_cg_m": -0.036479199126850756,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.04143957912363411,
+      "projected_map_cg_m": 0.0050354790036330754,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.04159231119296556,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        0.461280047321427,
+        2.581856497083594,
+        1.0990790026053572
+      ],
+      "registry_gt_label": "CONTACT",
+      "source_gt_clearance_m_evaluation_only": 2.7755575615628914e-17,
+      "source_position_m": [
+        0.4628372247902595,
+        2.540308279362289,
+        1.0979649321919294
+      ]
+    },
+    {
+      "index": 5,
+      "map_initial_cg_m": -0.0414707160631899,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.041429950965138795,
+      "projected_map_cg_m": 0.005051672974055926,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.04661775262404184,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        0.46183386515264857,
+        2.5819285437658546,
+        1.0987786953515044
+      ],
+      "registry_gt_label": "UNSAFE",
+      "source_gt_clearance_m_evaluation_only": -0.004999999999999866,
+      "source_position_m": [
+        0.46343697004615225,
+        2.5353503661149865,
+        1.0977212072234566
+      ]
+    },
+    {
+      "index": 6,
+      "map_initial_cg_m": -0.017351065068818103,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.02723983464246249,
+      "projected_map_cg_m": 0.005000004439578792,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.022351073039265288,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        -0.2795100856482623,
+        0.1236606721849157,
+        -1.318073691088522
+      ],
+      "registry_gt_label": "NEAR_SAFE",
+      "source_gt_clearance_m_evaluation_only": 0.005000000000000088,
+      "source_position_m": [
+        -0.2779163179288648,
+        0.12473064854021781,
+        -1.3403421782635025
+      ]
+    },
+    {
+      "index": 7,
+      "map_initial_cg_m": -0.02232472395428374,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.02722601727470253,
+      "projected_map_cg_m": 0.005001297206813915,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.027330937398491163,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        -0.27948031404175705,
+        0.12333125840373643,
+        -1.318086491580365
+      ],
+      "registry_gt_label": "CONTACT",
+      "source_gt_clearance_m_evaluation_only": -5.551115123125783e-17,
+      "source_position_m": [
+        -0.27798453677476825,
+        0.12470902855831188,
+        -1.3453416661138176
+      ]
+    },
+    {
+      "index": 8,
+      "map_initial_cg_m": -0.027295758905746745,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.027219290480911873,
+      "projected_map_cg_m": 0.005006162601311759,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.03232101500482392,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        -0.2793768866419553,
+        0.12296834355334899,
+        -1.3180930609441253
+      ],
+      "registry_gt_label": "UNSAFE",
+      "source_gt_clearance_m_evaluation_only": -0.004999999999999977,
+      "source_position_m": [
+        -0.2780527556206718,
+        0.12468740857640596,
+        -1.3503411539641323
+      ]
+    },
+    {
+      "index": 9,
+      "map_initial_cg_m": -0.028052436899638336,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.0379282630014611,
+      "projected_map_cg_m": 0.005003704071429027,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.03306726448992615,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        0.04946425324421642,
+        0.2853838600169915,
+        1.992915112527569
+      ],
+      "registry_gt_label": "NEAR_SAFE",
+      "source_gt_clearance_m_evaluation_only": 0.0049999999999999906,
+      "source_position_m": [
+        0.0696137575843433,
+        0.30207839454845403,
+        1.9726979422885929
+      ]
+    },
+    {
+      "index": 10,
+      "map_initial_cg_m": -0.033024471293312194,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.037883998130600866,
+      "projected_map_cg_m": 0.005008975175598118,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.0380557152918148,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        0.05000038190227307,
+        0.28475349468777494,
+        1.992948891840687
+      ],
+      "registry_gt_label": "CONTACT",
+      "source_gt_clearance_m_evaluation_only": -6.938893903907228e-17,
+      "source_position_m": [
+        0.07304298067872343,
+        0.30432729219211335,
+        1.969837367458718
+      ]
+    },
+    {
+      "index": 11,
+      "map_initial_cg_m": -0.03799338718279839,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.037838811484741885,
+      "projected_map_cg_m": 0.005018264128118871,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.04304960742921334,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        0.05059597185610906,
+        0.2840202779003006,
+        1.9929560181435986
+      ],
+      "registry_gt_label": "UNSAFE",
+      "source_gt_clearance_m_evaluation_only": -0.005000000000000143,
+      "source_position_m": [
+        0.07647220377310357,
+        0.30657618983577267,
+        1.966976792628843
+      ]
+    },
+    {
+      "index": 12,
+      "map_initial_cg_m": -0.031391956553964886,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.04098253628752904,
+      "projected_map_cg_m": 0.005000018365848541,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.036391974919817056,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        2.5681888149215673,
+        3.2205748930285854,
+        -0.7166589023543579
+      ],
+      "registry_gt_label": "NEAR_SAFE",
+      "source_gt_clearance_m_evaluation_only": 0.005000000000000074,
+      "source_position_m": [
+        2.5906722827146638,
+        3.2451508055890437,
+        -0.7313181668782722
+      ]
+    },
+    {
+      "index": 13,
+      "map_initial_cg_m": -0.03631788106921982,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.040818479464440394,
+      "projected_map_cg_m": 0.005000014889263715,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.0413178959584886,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        2.567262241462443,
+        3.2210660527825024,
+        -0.7172704292989619
+      ],
+      "registry_gt_label": "CONTACT",
+      "source_gt_clearance_m_evaluation_only": 9.71445146547012e-17,
+      "source_position_m": [
+        2.593078121349192,
+        3.248815245515024,
+        -0.7337231243609514
+      ]
+    },
+    {
+      "index": 14,
+      "map_initial_cg_m": -0.04123527391344335,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.04063214561761494,
+      "projected_map_cg_m": 0.005000015556730963,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.046235289470217794,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        2.566238065928628,
+        3.22162207720281,
+        -0.7179570145350955
+      ],
+      "registry_gt_label": "UNSAFE",
+      "source_gt_clearance_m_evaluation_only": -0.005000000000000088,
+      "source_position_m": [
+        2.5954839599837194,
+        3.2524796854410045,
+        -0.7361280818436307
+      ]
+    },
+    {
+      "index": 15,
+      "map_initial_cg_m": -0.017858081407461354,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.027849141137694683,
+      "projected_map_cg_m": 0.005000010498086543,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.022858091905553216,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        0.64977984995776,
+        0.12721721055499957,
+        0.9576089409116727
+      ],
+      "registry_gt_label": "NEAR_SAFE",
+      "source_gt_clearance_m_evaluation_only": 0.0050000000000000044,
+      "source_position_m": [
+        0.6498178467781036,
+        0.12769755358449864,
+        0.9804619536753845
+      ]
+    },
+    {
+      "index": 16,
+      "map_initial_cg_m": -0.022855626096921183,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.027844027979562785,
+      "projected_map_cg_m": 0.005000018267365625,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.02785564436428888,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        0.6499531159139526,
+        0.12713032798893256,
+        0.9576106131731139
+      ],
+      "registry_gt_label": "CONTACT",
+      "source_gt_clearance_m_evaluation_only": 4.163336342344337e-17,
+      "source_position_m": [
+        0.6499629731880208,
+        0.12773397432525113,
+        0.9854597143594096
+      ]
+    },
+    {
+      "index": 17,
+      "map_initial_cg_m": -0.02785292424924199,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.027838077493227115,
+      "projected_map_cg_m": 0.005000030303130232,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.03285295455237914,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        0.6501437742020867,
+        0.1270347489269865,
+        0.9576127772232165
+      ],
+      "registry_gt_label": "UNSAFE",
+      "source_gt_clearance_m_evaluation_only": -0.005000000000000046,
+      "source_position_m": [
+        0.6501080995979379,
+        0.12777039506600363,
+        0.9904574750434348
+      ]
+    },
+    {
+      "index": 18,
+      "map_initial_cg_m": -0.023647515180924228,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.0335124606308094,
+      "projected_map_cg_m": 0.00500000065161621,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.028647515832540552,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        -0.39454757932749435,
+        2.640125276704839,
+        2.4501325872954896
+      ],
+      "registry_gt_label": "NEAR_SAFE",
+      "source_gt_clearance_m_evaluation_only": 0.004999999999999796,
+      "source_position_m": [
+        -0.38923701823305795,
+        2.6119743036809844,
+        2.450103915913651
+      ]
+    },
+    {
+      "index": 19,
+      "map_initial_cg_m": -0.028616014209333532,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.03344943104894402,
+      "projected_map_cg_m": 0.005000015726516149,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.03361602993599357,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        -0.39384971321873646,
+        2.6402546927509536,
+        2.4503147446271076
+      ],
+      "registry_gt_label": "CONTACT",
+      "source_gt_clearance_m_evaluation_only": -1.249000902703301e-16,
+      "source_position_m": [
+        -0.38779524281433375,
+        2.6071884790662057,
+        2.4502349365171456
+      ]
+    },
+    {
+      "index": 20,
+      "map_initial_cg_m": -0.0335811668480505,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.03337967641926906,
+      "projected_map_cg_m": 0.0050000338261194655,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.03858120067447216,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        -0.39307712990465515,
+        2.6403931641068916,
+        2.450516237080684
+      ],
+      "registry_gt_label": "UNSAFE",
+      "source_gt_clearance_m_evaluation_only": -0.005000000000000046,
+      "source_position_m": [
+        -0.3863534673956096,
+        2.602402654451427,
+        2.45036595712064
+      ]
+    },
+    {
+      "index": 21,
+      "map_initial_cg_m": -0.0270973237414137,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.036328866546282895,
+      "projected_map_cg_m": 0.00500003350911446,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.03209735725083728,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        -0.029919760490996077,
+        2.5422329776121493,
+        -0.057046680657872044
+      ],
+      "registry_gt_label": "NEAR_SAFE",
+      "source_gt_clearance_m_evaluation_only": 0.004999999999999977,
+      "source_position_m": [
+        -0.029939138888087045,
+        2.5101810993139466,
+        -0.05533873905383288
+      ]
+    },
+    {
+      "index": 22,
+      "map_initial_cg_m": -0.031953100405426815,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.035987572686906555,
+      "projected_map_cg_m": 0.005000004139030206,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.03695310454475034,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        -0.02861962910009544,
+        2.5421715271933745,
+        -0.05799979403540611
+      ],
+      "registry_gt_label": "CONTACT",
+      "source_gt_clearance_m_evaluation_only": 2.0816681711721685e-16,
+      "source_position_m": [
+        -0.029004815928073684,
+        2.505287920362261,
+        -0.05576750513594702
+      ]
+    },
+    {
+      "index": 23,
+      "map_initial_cg_m": -0.03679319133512561,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.035690118613013966,
+      "projected_map_cg_m": 0.005002358421882763,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.04180062764464799,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        -0.027179908775981712,
+        2.54213449833417,
+        -0.058267991093565806
+      ],
+      "registry_gt_label": "UNSAFE",
+      "source_gt_clearance_m_evaluation_only": -0.0049999999999999906,
+      "source_position_m": [
+        -0.028070492968060315,
+        2.500394741410575,
+        -0.05619627121806116
+      ]
+    },
+    {
+      "index": 24,
+      "map_initial_cg_m": -0.029506121831444465,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.0394890356976986,
+      "projected_map_cg_m": 0.0050313256695618536,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.03462613627349963,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        -0.85822031074268,
+        0.0996964588072132,
+        2.8591420037084365
+      ],
+      "registry_gt_label": "NEAR_SAFE",
+      "source_gt_clearance_m_evaluation_only": 0.005000000000000046,
+      "source_position_m": [
+        -0.8928048917109648,
+        0.09913566304887554,
+        2.857541509848232
+      ]
+    },
+    {
+      "index": 25,
+      "map_initial_cg_m": -0.034471170025389214,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.03952381525936863,
+      "projected_map_cg_m": 0.005050738399207388,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.03964105616369498,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        -0.8581795013953726,
+        0.09950452930596529,
+        2.8590358737530375
+      ],
+      "registry_gt_label": "CONTACT",
+      "source_gt_clearance_m_evaluation_only": 1.3877787807814457e-17,
+      "source_position_m": [
+        -0.8977925835652573,
+        0.0988279176088671,
+        2.85770950601122
+      ]
+    },
+    {
+      "index": 26,
+      "map_initial_cg_m": -0.039432259687670834,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.039570504295148995,
+      "projected_map_cg_m": 0.005081577389469211,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.044674763180624674,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        -0.8581241527119526,
+        0.09925695463696357,
+        2.8589368989665487
+      ],
+      "registry_gt_label": "UNSAFE",
+      "source_gt_clearance_m_evaluation_only": -0.005000000000000018,
+      "source_position_m": [
+        -0.9027802754195497,
+        0.09852017216885865,
+        2.857877502174208
+      ]
+    },
+    {
+      "index": 27,
+      "map_initial_cg_m": -0.019148616910790936,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.028951842575812348,
+      "projected_map_cg_m": 0.005000001367926138,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.024148618278717133,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        2.41181566374597,
+        0.17610674074267496,
+        -1.6167010078213695
+      ],
+      "registry_gt_label": "NEAR_SAFE",
+      "source_gt_clearance_m_evaluation_only": 0.005000000000000032,
+      "source_position_m": [
+        2.426073605640621,
+        0.17499309824590067,
+        -1.5972426764928787
+      ]
+    },
+    {
+      "index": 28,
+      "map_initial_cg_m": -0.024105429103008225,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.028845561508820977,
+      "projected_map_cg_m": 0.005000022499552947,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.029105451607740602,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        2.4119447337957567,
+        0.17691567769723274,
+        -1.6167461578178146
+      ],
+      "registry_gt_label": "CONTACT",
+      "source_gt_clearance_m_evaluation_only": 1.6653345369377348e-16,
+      "source_position_m": [
+        2.4291009581395975,
+        0.17539612681173905,
+        -1.5932837997807219
+      ]
+    },
+    {
+      "index": 29,
+      "map_initial_cg_m": -0.02905786948846978,
+      "map_label": "UNSAFE",
+      "projected_gt_clearance_m_evaluation_only": 0.028723363982254058,
+      "projected_map_cg_m": 0.005000007742400392,
+      "projection_accepted": true,
+      "projection_displacement_m": 0.034057877359721815,
+      "projection_iterations": 1,
+      "projection_position_m": [
+        2.4120902233080646,
+        0.17780366988927707,
+        -1.6167911930730106
+      ],
+      "registry_gt_label": "UNSAFE",
+      "source_gt_clearance_m_evaluation_only": -0.004999999999999866,
+      "source_position_m": [
+        2.432128310638574,
+        0.17579915537757745,
+        -1.5893249230685649
+      ]
+    }
+  ],
+  "state_count": 30,
+  "status": "PASS",
+  "three_way_counts": {
+    "CONTACT|UNSAFE|True": 10,
+    "NEAR_SAFE|UNSAFE|True": 10,
+    "UNSAFE|UNSAFE|True": 10
+  }
+}

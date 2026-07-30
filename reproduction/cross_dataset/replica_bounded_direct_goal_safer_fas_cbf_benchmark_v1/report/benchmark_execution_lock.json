@@ -1,0 +1,30 @@
+{
+  "bootstrap_seed": 20260730,
+  "code_hashes": {
+    "__init__.py": "9f8d945d7d3fdd1871f4e188ba150a884e4cf91d8d9d5b3822aaa000eaffcc78",
+    "benchmark_core.py": "6b8cee57598a6271451d86c36a4f0be1ba9da71f0617702949f237c8a27552d2",
+    "frozen_bounded_qp_adapter.py": "8f77f1f7ebba6c8870fb1cf6f1c7749695bce98bf55c63874ef1516d9c6094e1",
+    "run_benchmark.py": "c7c3acd500f2f821996f6977c4a4811dde7eb2b59cb4c9b26751dd92cb78175c",
+    "run_trial.py": "5312da2743379fe83194b6bd755278f812389b9c3a39539e2f122ca89c8a209b",
+    "verify_segment_verifier.py": "796e5676db77ca770f93a207e76acac64f52c18c4cd483f1c49ae3d1e26dff12"
+  },
+  "environment": {
+    "clarabel": "0.10.0",
+    "numpy": "1.26.4",
+    "python": "3.10.20",
+    "scipy": "1.15.3"
+  },
+  "identity_sha256": "902a699e52ca03de7f03d25b1d93c72f9b7b8afc263c1d123c1618e96811ba6b",
+  "lock_sha256": "29b022dfabfa1c4fc5335d29034121f3be5732b961e61f209391d46a548ba619",
+  "method_order_rule": "SHA256(REPLICA_BENCHMARK_METHOD_ORDER_V1:{route_id}) balanced cyclic",
+  "methods": [
+    "M0_BOUNDED_SAFER",
+    "M1_BOUNDED_RISK_AWARE_V1",
+    "M2_FAS_START_SAFE",
+    "M3_FAS_START_SAFE_DISCRETE",
+    "M4_FAS_START_SAFE_DISCRETE_RECOVERY"
+  ],
+  "post_lock_code_change_requires": "BLOCKED_BY_POST_LOCK_IMPLEMENTATION_CHANGE_REQUIRED",
+  "status": "LOCKED",
+  "trial_seed_rule": "SHA256(REPLICA_BOUNDED_TRIAL_V1:{method_id}:{route_id})"
+}

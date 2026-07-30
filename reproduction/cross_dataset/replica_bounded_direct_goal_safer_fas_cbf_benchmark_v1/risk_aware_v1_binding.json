@@ -1,0 +1,33 @@
+{
+  "binding_status": "HISTORICAL_BESTD_RESTORED_FOR_CANDIDATE_SELECTION_PORTABILITY",
+  "selected_config": "risk_aware_v1_bestD",
+  "source_commit": "bc6400beba13d216c3efd56ccdaf22968bcb560b",
+  "historical_source_code_sha256": "330f05942800e1bea2639ba21a9e1cd64e0d13c4a784f6adf031fc513dc8a1dc",
+  "historical_frozen_config_sha256": "f56577dc9b3643de5baef13e00dc4d0ce14ed5532ef77cfe7557c3cbd8f74ebb8",
+  "historical_stonehenge": {
+    "ablation_id": "D_budget2000_near005_hybrid",
+    "collision_count": 0,
+    "min_safety_h_min": 0.0003172536672,
+    "progress_mean": 0.3246745833,
+    "active_constraints_mean": 252.2219893,
+    "runtime_mean_s": 0.04044284326,
+    "runtime_p95_s": 0.04454808397,
+    "qp_infeasible_count": 0
+  },
+  "frozen_selector": {
+    "candidate_budget": 2000,
+    "near_distance_threshold_m": 0.05,
+    "heading_distance_threshold_m": 0.25,
+    "heading_cos_threshold": 0.5,
+    "risk_score": "risk_v2_hybrid",
+    "insertion_level": "partial_pre_cbf",
+    "fallback": "full_baseline_only_if_selected_subset_below_historical_minimum_or_selector_metadata_failure"
+  },
+  "replica_feature_binding": {
+    "scope": "candidate-selection and constraint-budget mechanism portability only",
+    "learned_gaussian_attribute_generalization": false,
+    "constant_features": ["active_frequency_norm", "opacity_norm", "max_scale_norm", "anisotropy_norm", "volume_proxy_norm"],
+    "dynamic_features": ["inverse_distance_normalized", "heading_alignment"],
+    "equal_score_tie_break": "descending_global_gaussian_id"
+  }
+}

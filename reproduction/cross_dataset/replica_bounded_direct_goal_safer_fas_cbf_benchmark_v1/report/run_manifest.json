@@ -1,0 +1,19 @@
+{
+  "completed_records": 500,
+  "execution_lock_sha256": "29b022dfabfa1c4fc5335d29034121f3be5732b961e61f209391d46a548ba619",
+  "expected_records": 500,
+  "identity_sha256": "902a699e52ca03de7f03d25b1d93c72f9b7b8afc263c1d123c1618e96811ba6b",
+  "last_trial": {
+    "method": "M4_FAS_START_SAFE_DISCRETE_RECOVERY",
+    "route_index": 99
+  },
+  "phase": "S5",
+  "smoke_records": 15,
+  "smoke_status": "PASS",
+  "status": "EXECUTION_COMPLETE",
+  "terminal_status_counts": {
+    "MAP_GEOMETRY_BLOCKED": 5,
+    "SUCCESS": 495
+  },
+  "updated_unix_s": 1785396990.314825
+}
