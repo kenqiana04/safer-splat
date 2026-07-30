@@ -1,0 +1,6 @@
+# Claim boundary
+
+- real_time: NO_REAL_TIME_CLAIM: formal80 has nonzero controller_total >0.05 s deadline misses.
+- collision: The official mesh oracle observed zero collisions; zero events preclude a statistical superiority claim.
+- risk_aware: Only candidate-selection and constraint-budget portability is supported, not learned Gaussian attribute generalization.
+- map_blocked: One FINE-map-blocked route is preserved as five zero-step records in raw denominators.

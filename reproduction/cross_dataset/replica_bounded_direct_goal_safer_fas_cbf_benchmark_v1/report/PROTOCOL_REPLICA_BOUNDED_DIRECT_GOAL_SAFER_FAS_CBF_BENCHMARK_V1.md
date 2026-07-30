@@ -1,0 +1,3 @@
+# Frozen Replica bounded direct-goal benchmark
+
+FINE GT-derived Gaussian map; 100 frozen routes (20 diagnostic/80 formal); 30-state Start-Safe registry; dt=0.05 s; sphere radius=0.10 m; epsilon=0.01 m; component speed/control limits=0.10. Five cumulative frozen methods M0–M4 use the bounded QP, frozen Risk-Aware V1, Start-Safe, exact discrete verification, and predictive recovery respectively. Official Replica mesh continuous-segment evaluation is post-execution only. Execution identity: `902a699e52ca03de7f03d25b1d93c72f9b7b8afc263c1d123c1618e96811ba6b`. Lock: `29b022dfabfa1c4fc5335d29034121f3be5732b961e61f209391d46a548ba619`.

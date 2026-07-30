@@ -1,0 +1,656 @@
+{
+  "arrays": {
+    "colors_rgb.npy": "1e8c6d97d066a269261d620c87841dabe42f2301ed5626449e0c24a237b9554e",
+    "means_world_m.npy": "e2ca0533767590c0b5ca657ec7f73fd4626a5fbaf07beb2ce76c2c67d1dc4152",
+    "opacities_probability.npy": "953ed306a6860660568a0e649d1db0dc53fcf33ddbd2d003876682566572f492",
+    "quaternions_wxyz.npy": "a646a65b6665b4f09e7b295172045236eb40934202d5ef19481e963d591d56e1",
+    "scales_linear_m.npy": "d81393a0ede4126a18b49fc9e12cca7476ca665c55fce05242b02766589c59e3",
+    "voxel_indices_int64.npy": "8e452be734959793f15b2dc9da796ff2f6d702cb03a88d76eb97566ca9b077f0"
+  },
+  "bounded_qp_checkedout_source_sha256": "8f77f1f7ebba6c8870fb1cf6f1c7749695bce98bf55c63874ef1516d9c6094e1",
+  "bounded_qp_server_handoff_source_sha256": "f36f6db1d714bce55e1ad8f1994bb7c93e9b4d2168c4ae7376d3c95e3a38d4d9",
+  "code_hashes": {
+    "__init__.py": "9f8d945d7d3fdd1871f4e188ba150a884e4cf91d8d9d5b3822aaa000eaffcc78",
+    "benchmark_core.py": "6b8cee57598a6271451d86c36a4f0be1ba9da71f0617702949f237c8a27552d2",
+    "frozen_bounded_qp_adapter.py": "8f77f1f7ebba6c8870fb1cf6f1c7749695bce98bf55c63874ef1516d9c6094e1",
+    "run_benchmark.py": "c7c3acd500f2f821996f6977c4a4811dde7eb2b59cb4c9b26751dd92cb78175c",
+    "run_trial.py": "5312da2743379fe83194b6bd755278f812389b9c3a39539e2f122ca89c8a209b",
+    "verify_segment_verifier.py": "796e5676db77ca770f93a207e76acac64f52c18c4cd483f1c49ae3d1e26dff12"
+  },
+  "environment": {
+    "clarabel": "0.10.0",
+    "numpy": "1.26.4",
+    "python": "3.10.20",
+    "scipy": "1.15.3"
+  },
+  "expected": {
+    "canonical_tree_sha256": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+    "colors_rgb.npy": "1e8c6d97d066a269261d620c87841dabe42f2301ed5626449e0c24a237b9554e",
+    "means_world_m.npy": "e2ca0533767590c0b5ca657ec7f73fd4626a5fbaf07beb2ce76c2c67d1dc4152",
+    "mesh_oracle_validation_sha256": "d0d1452bdc6ca5d6df32f6b4c20a3d0a0a512804de9f0553cd6cded6317c1fd6",
+    "opacities_probability.npy": "953ed306a6860660568a0e649d1db0dc53fcf33ddbd2d003876682566572f492",
+    "qp_contract_sha256": "2fe08f34912a13d535200054e3e20287e3726ff54ae1a5d8f05c4780afe176de",
+    "quaternions_wxyz.npy": "a646a65b6665b4f09e7b295172045236eb40934202d5ef19481e963d591d56e1",
+    "robot_contract_sha256": "681e3112fb4ba7214dc27f2175f81ba6f910064fc14d5c21e5aa2555534f7337",
+    "route_registry_sha256": "ffe0dadd2dcf4de7e0011a9e3ff6bb1170a385957486ffca33832fc90cc355a6",
+    "scales_linear_m.npy": "d81393a0ede4126a18b49fc9e12cca7476ca665c55fce05242b02766589c59e3",
+    "start_safe_registry_sha256": "e58cd9de67928ddc22f493f1eaf182044ac7e009656f092dacea42b6aaceb499",
+    "voxel_indices_int64.npy": "8e452be734959793f15b2dc9da796ff2f6d702cb03a88d76eb97566ca9b077f0"
+  },
+  "identity_sha256": "902a699e52ca03de7f03d25b1d93c72f9b7b8afc263c1d123c1618e96811ba6b",
+  "map_admissible_route_count": 99,
+  "map_applicability": [
+    {
+      "direct_segment_cg_m": 0.037354875316072594,
+      "map_applicable": true,
+      "route_id": "8f0977d300d1500f616cbdf672c46986622e84ce42ea1cc643ca7c9344c40789",
+      "route_index": 0
+    },
+    {
+      "direct_segment_cg_m": 0.024277911995594925,
+      "map_applicable": true,
+      "route_id": "496c2538d1509209e2c2e8b2a96bd088f95596ee202c0bf3c547698ebe49ac52",
+      "route_index": 1
+    },
+    {
+      "direct_segment_cg_m": 0.0391742439352267,
+      "map_applicable": true,
+      "route_id": "038a7f5b22b1564f863904370f3269f6d5635af79587d8fb6be33cf0e0258b5e",
+      "route_index": 2
+    },
+    {
+      "direct_segment_cg_m": 0.15009952043428001,
+      "map_applicable": true,
+      "route_id": "086efc751cec69b43a7eab59b843627e8e64871b249201cbfcd484b0057572ee",
+      "route_index": 3
+    },
+    {
+      "direct_segment_cg_m": 0.046613305745201006,
+      "map_applicable": true,
+      "route_id": "0be301a2124e929472389a837c43e459a24574183af2dfd1bdaa44fbaf494e10",
+      "route_index": 4
+    },
+    {
+      "direct_segment_cg_m": 0.08781458519172655,
+      "map_applicable": true,
+      "route_id": "07c803730c3d9b012732b71cf71ccb37f613ef364833f0cae7db247ec34c70fb",
+      "route_index": 5
+    },
+    {
+      "direct_segment_cg_m": 0.39007242089772864,
+      "map_applicable": true,
+      "route_id": "0df9f0c5903f650995cfd28f8ed86270f8888f97ded6beeee496635bbfb29407",
+      "route_index": 6
+    },
+    {
+      "direct_segment_cg_m": 1.0742963319353889,
+      "map_applicable": true,
+      "route_id": "04b13194c4fbed8933f35646b0da45a48c35db555722b1a3104717c9877adc74",
+      "route_index": 7
+    },
+    {
+      "direct_segment_cg_m": 0.1786187306616084,
+      "map_applicable": true,
+      "route_id": "01164d7c3f46771bd5c8fbc8967d84db00693c922725e110efa82af34abb332d",
+      "route_index": 8
+    },
+    {
+      "direct_segment_cg_m": 0.022615949785591727,
+      "map_applicable": true,
+      "route_id": "ea21c8a1f51a67e852872b7ad20fa98a56f06b5a2df7c75c8d77e94df28aab0b",
+      "route_index": 9
+    },
+    {
+      "direct_segment_cg_m": 0.02080696955675515,
+      "map_applicable": true,
+      "route_id": "59205b951602868c7f58dd716a8592addfb4a5caa797d81d2d868f885fa56dd1",
+      "route_index": 10
+    },
+    {
+      "direct_segment_cg_m": 0.04468536426356001,
+      "map_applicable": true,
+      "route_id": "2f2b84c03dfbff870b5817cb3005b7c244c210071644e04a0737b881a566c687",
+      "route_index": 11
+    },
+    {
+      "direct_segment_cg_m": 0.07518944890711887,
+      "map_applicable": true,
+      "route_id": "0bdcd73c80eaa7073d7a6e5a906ff1626ee0cced289d2468907e286dcda5a8e4",
+      "route_index": 12
+    },
+    {
+      "direct_segment_cg_m": 0.1301543659715357,
+      "map_applicable": true,
+      "route_id": "14f0ff4c46b70aed2de567ade89736a579b702b418588683b2b99e4430533474",
+      "route_index": 13
+    },
+    {
+      "direct_segment_cg_m": 0.12781425069439303,
+      "map_applicable": true,
+      "route_id": "0b81af4f799894ef119602263505785e54119311653cb5732e264a6fbbe24e25",
+      "route_index": 14
+    },
+    {
+      "direct_segment_cg_m": 0.3497675676378661,
+      "map_applicable": true,
+      "route_id": "0e8735d32cf620a4596fc3574f763e69da78d5a0757458bf21c4f9ec4ece19ca",
+      "route_index": 15
+    },
+    {
+      "direct_segment_cg_m": 0.3901030738632547,
+      "map_applicable": true,
+      "route_id": "08bace72c40c98e696d182b5fc6affd1439330451d09be4986c007a2c0b349ec",
+      "route_index": 16
+    },
+    {
+      "direct_segment_cg_m": 0.3447355432986038,
+      "map_applicable": true,
+      "route_id": "07710ac4ace3bc277818ac52a94d1563c020f4677868b3931e725b1edcfb3650",
+      "route_index": 17
+    },
+    {
+      "direct_segment_cg_m": 0.04468536426356001,
+      "map_applicable": true,
+      "route_id": "f545d18c22d7f7fc8f4400486f1b8602d459690ca38049cdf17960e092bfd65a",
+      "route_index": 18
+    },
+    {
+      "direct_segment_cg_m": 0.02080696955675515,
+      "map_applicable": true,
+      "route_id": "95d228b3d86e156b16dc9c820e3c960f2e3a8682ad7a55787a22225e6886e387",
+      "route_index": 19
+    },
+    {
+      "direct_segment_cg_m": -0.0069959544896362885,
+      "map_applicable": false,
+      "route_id": "3c19a4bf5ec3f1fa49e30064252748712678a1dd1789fa3a13932eb142dd4c6e",
+      "route_index": 20
+    },
+    {
+      "direct_segment_cg_m": 0.07259708765305703,
+      "map_applicable": true,
+      "route_id": "34ab9242d256f26919370e379a89971aae1c329beb2fb61b23193b9367a53beb",
+      "route_index": 21
+    },
+    {
+      "direct_segment_cg_m": 0.09896762722643679,
+      "map_applicable": true,
+      "route_id": "18eea0da48189a0caf47084b93903084866188164b58acc500ca6868b728e16a",
+      "route_index": 22
+    },
+    {
+      "direct_segment_cg_m": 0.05430761181518878,
+      "map_applicable": true,
+      "route_id": "0fdd4e9ef19bd32957bd480678febef0d5cd94126d0838b91d6ed38bae2e7535",
+      "route_index": 23
+    },
+    {
+      "direct_segment_cg_m": 0.5034080036181955,
+      "map_applicable": true,
+      "route_id": "11d0b6f31db809811ef8d97e8f1ab7817cedab37d027115100976edae58fea13",
+      "route_index": 24
+    },
+    {
+      "direct_segment_cg_m": 0.4597300495336475,
+      "map_applicable": true,
+      "route_id": "0a89be12c8c473e7eac3bd2b75dd0d1424e83d4bd5f820f0c73650f898d773a0",
+      "route_index": 25
+    },
+    {
+      "direct_segment_cg_m": 0.3078148902599772,
+      "map_applicable": true,
+      "route_id": "0781d7b0bd2c7f9c9ce552a41649885d9a6ac89ea44fefa24f4b7f6fc9556a55",
+      "route_index": 26
+    },
+    {
+      "direct_segment_cg_m": 0.02080696955675515,
+      "map_applicable": true,
+      "route_id": "9e6b523bc87f20f990a1adb7b75d778811eaea3ea037f87924690c3ecad8e715",
+      "route_index": 27
+    },
+    {
+      "direct_segment_cg_m": 0.013711145099864153,
+      "map_applicable": true,
+      "route_id": "5c5ca0eefaa613da8c16f813fc8e9baf998404c971f1d90e82c8614b7adebbe7",
+      "route_index": 28
+    },
+    {
+      "direct_segment_cg_m": 0.09428592813444062,
+      "map_applicable": true,
+      "route_id": "3f0738fc8daf035bfd82019943bb79fe976f78b3ce66ed3e56cb93a0b34e0e5c",
+      "route_index": 29
+    },
+    {
+      "direct_segment_cg_m": 0.15772244505048236,
+      "map_applicable": true,
+      "route_id": "221abab8ec1ef70ae41355b0cfffe1eae74d295b4e83d42ec87a2eabd04e1b53",
+      "route_index": 30
+    },
+    {
+      "direct_segment_cg_m": 0.12781437068883514,
+      "map_applicable": true,
+      "route_id": "13c5e0913ab2da551bb3762bfe9ccb6e7ddca7110d92b79b1ff3531699eb89ac",
+      "route_index": 31
+    },
+    {
+      "direct_segment_cg_m": 1.2491164788756393,
+      "map_applicable": true,
+      "route_id": "15c4e0d6905a2f072fe6e80c01dcffa06af0ca00bbc55a944b7ad2d2d80cd1c4",
+      "route_index": 32
+    },
+    {
+      "direct_segment_cg_m": 0.35807683592713513,
+      "map_applicable": true,
+      "route_id": "113710adae02c83cad2bc1ac360af83e509133c3e8862d9e6d30a4f625518230",
+      "route_index": 33
+    },
+    {
+      "direct_segment_cg_m": 0.2078146544858863,
+      "map_applicable": true,
+      "route_id": "0907f27a8fd8b115803bb6af820ff8331acd547d09dcc68969b11d2281e63062",
+      "route_index": 34
+    },
+    {
+      "direct_segment_cg_m": 0.02080696955675515,
+      "map_applicable": true,
+      "route_id": "66c6644390b144fe6fa1e4c1a472952ded5cc05e1881cd52447f67af6c65995a",
+      "route_index": 35
+    },
+    {
+      "direct_segment_cg_m": 0.06888619105251756,
+      "map_applicable": true,
+      "route_id": "77b24f099569cb519b6e91fd456d850f77f7017d0ea945d6e46863a30e9af38d",
+      "route_index": 36
+    },
+    {
+      "direct_segment_cg_m": 0.16783050953233156,
+      "map_applicable": true,
+      "route_id": "229d16b4fd6f1cdbece19ce69f51f358dbf6bfcefd20d16ffe4295142feb32a6",
+      "route_index": 37
+    },
+    {
+      "direct_segment_cg_m": 0.067817195051386,
+      "map_applicable": true,
+      "route_id": "257d58a697a85e3f76d5e2d0ca9fa7df2c92cd2ef6bf7f54d33620b920cc7e7a",
+      "route_index": 38
+    },
+    {
+      "direct_segment_cg_m": 0.30991666035782583,
+      "map_applicable": true,
+      "route_id": "239eb27dff157535166d2a52cc3b5398d0e5a0b1e8f977a22d5b92d7cea37288",
+      "route_index": 39
+    },
+    {
+      "direct_segment_cg_m": 0.3187038879968701,
+      "map_applicable": true,
+      "route_id": "1329d4fb7f202c846677e868e89cf1fd93b454edd0f5c486de1bb5befd808e90",
+      "route_index": 40
+    },
+    {
+      "direct_segment_cg_m": 0.28306730103765176,
+      "map_applicable": true,
+      "route_id": "1035d7667fbb7d9c82274269a15b04730074bd2eea7711639e00fa418e06fcf1",
+      "route_index": 41
+    },
+    {
+      "direct_segment_cg_m": 0.03734467522649704,
+      "map_applicable": true,
+      "route_id": "6f7c7b670e612401a1dfc9fdcd248c36485d92dd5ae40376130ecee2f35ce3be",
+      "route_index": 42
+    },
+    {
+      "direct_segment_cg_m": 0.15772244505048236,
+      "map_applicable": true,
+      "route_id": "9b7e512a4b7f9512488323c4e33452e002a5f8752a8c38af5af9017727f30e7a",
+      "route_index": 43
+    },
+    {
+      "direct_segment_cg_m": 0.15772244505048236,
+      "map_applicable": true,
+      "route_id": "22e3e34e9f61d643c9447f2dece310e86bfaca9596128228d89c60e5bea78158",
+      "route_index": 44
+    },
+    {
+      "direct_segment_cg_m": 0.07518944890711887,
+      "map_applicable": true,
+      "route_id": "2b8a84790ac8b7db2092402b839385e02facefdd1c949b430886ca205ef8e751",
+      "route_index": 45
+    },
+    {
+      "direct_segment_cg_m": 0.3201950087866837,
+      "map_applicable": true,
+      "route_id": "32788cc8199d556786c95ff94e52e81764e7015aed9f4462d03d1f23337ecc1f",
+      "route_index": 46
+    },
+    {
+      "direct_segment_cg_m": 0.3497675676378661,
+      "map_applicable": true,
+      "route_id": "1525c9109c3b1f6524005faabdf08aebfabaadedbe7a9098f9cd9fb780a1a2de",
+      "route_index": 47
+    },
+    {
+      "direct_segment_cg_m": 0.5815890920335477,
+      "map_applicable": true,
+      "route_id": "1813eabeb1cc79212a44d3612d3755c4c7a09d320e74ae3b34424c5228e0929c",
+      "route_index": 48
+    },
+    {
+      "direct_segment_cg_m": 0.02080696955675515,
+      "map_applicable": true,
+      "route_id": "b661c3f4577477dbb655196dc24c7e099391d02339aeccf48b9648c1185005ed",
+      "route_index": 49
+    },
+    {
+      "direct_segment_cg_m": 0.1301543659715357,
+      "map_applicable": true,
+      "route_id": "af2a04cad7597800b8c6de29519e90a3e12a9403f1e39f8e02a6b5af8b45d53f",
+      "route_index": 50
+    },
+    {
+      "direct_segment_cg_m": 0.04747784021773738,
+      "map_applicable": true,
+      "route_id": "240000ef3c09446ad394265d3dd2cefe1bbdb7b132666088d0bd9d1bc1e625d5",
+      "route_index": 51
+    },
+    {
+      "direct_segment_cg_m": 0.1301543659715357,
+      "map_applicable": true,
+      "route_id": "2f9bc7e76e813aad0423fa01f08059ae3d3c87d6b452ff22da0cd46ce3d910c3",
+      "route_index": 52
+    },
+    {
+      "direct_segment_cg_m": 0.582058695328862,
+      "map_applicable": true,
+      "route_id": "34cc2ec67a90ee83bf60718fcef06d32b4448f7e75bfb60760070d94f792cef1",
+      "route_index": 53
+    },
+    {
+      "direct_segment_cg_m": 0.30682484498141227,
+      "map_applicable": true,
+      "route_id": "1db63ced1a875e5e42f6ddf2c3cf32927d4bb8c645401c666a1b4266e17a97d4",
+      "route_index": 54
+    },
+    {
+      "direct_segment_cg_m": 0.2858085332074325,
+      "map_applicable": true,
+      "route_id": "181dfc2704ef3a9fde89830a3695887a3c29ec5ca732682ec2654195940b2bdf",
+      "route_index": 55
+    },
+    {
+      "direct_segment_cg_m": 0.02080696955675515,
+      "map_applicable": true,
+      "route_id": "c9325498b58adca0b07d82ae65919dd6a8103edaa5031d4b38340863bf3d28ce",
+      "route_index": 56
+    },
+    {
+      "direct_segment_cg_m": 0.15592399140168037,
+      "map_applicable": true,
+      "route_id": "cb494d07b1e7ecf1c68d05272d29c70ecb8b111836095069370ae5641e8b3699",
+      "route_index": 57
+    },
+    {
+      "direct_segment_cg_m": 0.1301543659715357,
+      "map_applicable": true,
+      "route_id": "4ce633f21ec1bb35a2fb32c7c2ce53c71ae0f7cfe3de4a0a95bab2dced357d25",
+      "route_index": 58
+    },
+    {
+      "direct_segment_cg_m": 0.0954635082320531,
+      "map_applicable": true,
+      "route_id": "3280ab607e3ac01d9dbd7a8c64776f1fd58055291c95e20641a94f4c36a7ceec",
+      "route_index": 59
+    },
+    {
+      "direct_segment_cg_m": 0.29656896932779153,
+      "map_applicable": true,
+      "route_id": "3c07f73381579a2eae6b95f5e2294fc648a1220ae9083b055be1194c0806da81",
+      "route_index": 60
+    },
+    {
+      "direct_segment_cg_m": 0.3078142873841092,
+      "map_applicable": true,
+      "route_id": "1fced88e92987a88664578c2bda20412c373cb450b9e2575aad9c46f0b38dd94",
+      "route_index": 61
+    },
+    {
+      "direct_segment_cg_m": 0.3930354702594183,
+      "map_applicable": true,
+      "route_id": "1b572387058deb9cefb9a7a8c588e93f7dbe3df06f2a9646cc45e6c82a3f17a8",
+      "route_index": 62
+    },
+    {
+      "direct_segment_cg_m": 0.09896762722643679,
+      "map_applicable": true,
+      "route_id": "cfad7da2d1df846c43cab7ce7e3c41418edbc6016c98707576c6ae6c21e1e224",
+      "route_index": 63
+    },
+    {
+      "direct_segment_cg_m": 0.0954635082320531,
+      "map_applicable": true,
+      "route_id": "5557aa7a6dd77d4ab417c77ae9471c1a54c9c0e5773f2be91f068bd0cd8e232f",
+      "route_index": 64
+    },
+    {
+      "direct_segment_cg_m": 0.07259708765305703,
+      "map_applicable": true,
+      "route_id": "3391aa6c28de8ec23b46fe2940e0e1ef0da7f9e195d7c81e6bf19db614f6b303",
+      "route_index": 65
+    },
+    {
+      "direct_segment_cg_m": 0.4376777397395193,
+      "map_applicable": true,
+      "route_id": "3de4ba70a0a77e5705e8f3ce4d73efe4a983c049e0ea6ae4c887199d33604abe",
+      "route_index": 66
+    },
+    {
+      "direct_segment_cg_m": 0.3557272347156327,
+      "map_applicable": true,
+      "route_id": "2c18d925e497ea18183af63dbd7ef0942eb142efa422cd68e0ebab26bdf2912f",
+      "route_index": 67
+    },
+    {
+      "direct_segment_cg_m": 0.35650233100348416,
+      "map_applicable": true,
+      "route_id": "215353a632104702b29ff94598f19633acf61ba3a71ffd367b4be97e0940d479",
+      "route_index": 68
+    },
+    {
+      "direct_segment_cg_m": 0.06888619105251756,
+      "map_applicable": true,
+      "route_id": "d26f9b6ee47f8e0e8e7d2407f51e41d32d67b328a0240cae877e4dce0513b8b3",
+      "route_index": 69
+    },
+    {
+      "direct_segment_cg_m": 0.15592399140168037,
+      "map_applicable": true,
+      "route_id": "56c1f559d1d4e0677eb2aee2737ae42281bd17d595144dd823c46a11ea6df79f",
+      "route_index": 70
+    },
+    {
+      "direct_segment_cg_m": 0.12782143754057532,
+      "map_applicable": true,
+      "route_id": "342fc857265985066b76b16c95cbb9611f9bb69dbca0e398c7f0a69aaef5025b",
+      "route_index": 71
+    },
+    {
+      "direct_segment_cg_m": 0.30273068775956136,
+      "map_applicable": true,
+      "route_id": "43270b376b2582bec671406e5d0e3c77102c8ca525cab6504beb658db0074196",
+      "route_index": 72
+    },
+    {
+      "direct_segment_cg_m": 0.31182341060484975,
+      "map_applicable": true,
+      "route_id": "3557f820d92fbf8d33a27490861e9f4cc96669caae82ccbf621706bdfcee76ba",
+      "route_index": 73
+    },
+    {
+      "direct_segment_cg_m": 0.30791422488638,
+      "map_applicable": true,
+      "route_id": "24f8aad01d58b86e18ffb4c258565a7fd6edae24e03fd8c46c8d761674b85860",
+      "route_index": 74
+    },
+    {
+      "direct_segment_cg_m": 0.15772244505048236,
+      "map_applicable": true,
+      "route_id": "d63dde26a62cb85c14e56cd23d4152c460bb09f32e63e9b71061cc0ee98df7bc",
+      "route_index": 75
+    },
+    {
+      "direct_segment_cg_m": 0.06888619105251756,
+      "map_applicable": true,
+      "route_id": "58b00002e3c686fa6aaf80cd1b16253109ee2d029286b17b4b0bc9dd70621a02",
+      "route_index": 76
+    },
+    {
+      "direct_segment_cg_m": 0.12781965670803466,
+      "map_applicable": true,
+      "route_id": "343f7f988cbff9b378ad40d229e86aa7cbbd03ff25fcdc290272a7836e2f32a4",
+      "route_index": 77
+    },
+    {
+      "direct_segment_cg_m": 0.3478143338727653,
+      "map_applicable": true,
+      "route_id": "503073ac84a1a6af14abf1f700a8e10890d240fc185378af18dbfa8ca8d6b272",
+      "route_index": 78
+    },
+    {
+      "direct_segment_cg_m": 0.5815890920335477,
+      "map_applicable": true,
+      "route_id": "3e77de84796027122cc6e967117b61b960edd158882ae9afea628bb91a585a72",
+      "route_index": 79
+    },
+    {
+      "direct_segment_cg_m": 0.22013749936154367,
+      "map_applicable": true,
+      "route_id": "273846041f4012c55c25f33c1a0c7c3085e2619696df9cbf02ee3164f53a6ba8",
+      "route_index": 80
+    },
+    {
+      "direct_segment_cg_m": 0.13323968095715502,
+      "map_applicable": true,
+      "route_id": "f1906a4837d4208af321c02e8f95b30abbee4d4413fb9ab0b437684a259c8d98",
+      "route_index": 81
+    },
+    {
+      "direct_segment_cg_m": 0.12782143754057532,
+      "map_applicable": true,
+      "route_id": "5ed090924439d40c94ef25b80a18a2484218c33811b79d7f3289bf5175b611b8",
+      "route_index": 82
+    },
+    {
+      "direct_segment_cg_m": 0.06781733102845419,
+      "map_applicable": true,
+      "route_id": "3a2eabee0ea2d5ee604f23b220f5206939e5f41e8e3d5d6f6a04e26aa7a03726",
+      "route_index": 83
+    },
+    {
+      "direct_segment_cg_m": 0.4371142597459605,
+      "map_applicable": true,
+      "route_id": "5a981744ff9ef00fb4b5effafd8be54a0603838768b0b0246aa340a09a7d1181",
+      "route_index": 84
+    },
+    {
+      "direct_segment_cg_m": 0.29656896932779153,
+      "map_applicable": true,
+      "route_id": "4329b33bdc46c3d553b042e360c551e395fd619de2a438e5b49c7a4fa41e7c67",
+      "route_index": 85
+    },
+    {
+      "direct_segment_cg_m": 0.4287594100357618,
+      "map_applicable": true,
+      "route_id": "2846b55072e14bb0b39c26642c0348f4481d967d43ecc1e465c4edf1fcbc0637",
+      "route_index": 86
+    },
+    {
+      "direct_segment_cg_m": 0.12781421420447756,
+      "map_applicable": true,
+      "route_id": "f90a5c4d117ad210e51f528123f40eb94557b9d5641afeb3f52b14ee7352f0ea",
+      "route_index": 87
+    },
+    {
+      "direct_segment_cg_m": 0.15772244505048236,
+      "map_applicable": true,
+      "route_id": "60799ab4319669d70cf12a9775e41571b06dc81112ff9693a026acbe17046343",
+      "route_index": 88
+    },
+    {
+      "direct_segment_cg_m": 0.09428592813444062,
+      "map_applicable": true,
+      "route_id": "400d70743614d2c099de04b6269bf32c11616c79f5a3e0cd8a771bc9a659d988",
+      "route_index": 89
+    },
+    {
+      "direct_segment_cg_m": 0.4040152242095687,
+      "map_applicable": true,
+      "route_id": "6c5bf3dff818bec26029cb0ca95f019d4a2ab349819fceca2ae6e2bbfbb26e0a",
+      "route_index": 90
+    },
+    {
+      "direct_segment_cg_m": 0.5009437851267388,
+      "map_applicable": true,
+      "route_id": "4c6bd2c754cd61e188cd6cab7b16a7bb28d4ed41490be4f71270c6e0dc6cc9d5",
+      "route_index": 91
+    },
+    {
+      "direct_segment_cg_m": 0.23224106899877198,
+      "map_applicable": true,
+      "route_id": "2a547ab7b392b03c4e178533d6317ea2470d67e64680f156330fba6ace8bc2ee",
+      "route_index": 92
+    },
+    {
+      "direct_segment_cg_m": 0.07518944890711887,
+      "map_applicable": true,
+      "route_id": "ff4ee2525e50b92c1a4b0a93682a9b9a2ded60f8e8ab72162f6f2742d581bc61",
+      "route_index": 93
+    },
+    {
+      "direct_segment_cg_m": 0.06782392414850225,
+      "map_applicable": true,
+      "route_id": "6151c6ccfa49394c65415d2c71ca379118d33e977718800a1670c8101b31c663",
+      "route_index": 94
+    },
+    {
+      "direct_segment_cg_m": 0.0954635082320531,
+      "map_applicable": true,
+      "route_id": "40d9794b5a74ab72721c18135df4bfee5d5ca04985898920239cd88b4c770fb4",
+      "route_index": 95
+    },
+    {
+      "direct_segment_cg_m": 0.22013749936154367,
+      "map_applicable": true,
+      "route_id": "71784c1dc985edabd64cb397bcec6a5b9197adce3af964424bb2e882ac72d0f1",
+      "route_index": 96
+    },
+    {
+      "direct_segment_cg_m": 0.3497675676378661,
+      "map_applicable": true,
+      "route_id": "50d4a6b16237e1b45b2962fa2ca537cdf2e4ad5795696a1b4c1257efc52c5d9a",
+      "route_index": 97
+    },
+    {
+      "direct_segment_cg_m": 0.488105593286,
+      "map_applicable": true,
+      "route_id": "2aeeb18658e735ca1101687e8667b1cd7060439f78be6c4f31d79985c27c5771",
+      "route_index": 98
+    },
+    {
+      "direct_segment_cg_m": 0.12782143754057532,
+      "map_applicable": true,
+      "route_id": "732765b6e78848a8e859179f6db429fa52ac4be43c171b64fbd5c8168a51aa20",
+      "route_index": 99
+    }
+  ],
+  "map_blocked_route_count": 1,
+  "map_dir": "/disk1/zlab/cross_dataset_assets/qualified_replica_gaussian_safety_maps_v1/bounded_direct_goal_v1",
+  "mesh_backend": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/tmp/replica_mesh_oracle_backend",
+  "mesh_oracle_validation_path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/mesh_oracle/replica_mesh_collision_oracle_validation.json",
+  "mesh_path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/mesh.ply",
+  "qp_contract_path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/selection/bounded_qp_adapter_contract.json",
+  "risk_aware_binding_sha256": "6e68525207a86bfebe0e463ea776f428453801861d9384be770c3ceed711a660",
+  "robot_contract_path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/contract/replica_bounded_robot_contract.json",
+  "route_registry_path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/route_registry/replica_bounded_direct_goal_route_registry.json",
+  "source_risk_code_sha256": "330f05942800e1bea2639ba21a9e1cd64e0d13c4a784f6adf031fc513dc8a1dc",
+  "start_state_registry_path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/start_state_registry/replica_start_safe_diagnostic_registry.json",
+  "status": "PASS"
+}
