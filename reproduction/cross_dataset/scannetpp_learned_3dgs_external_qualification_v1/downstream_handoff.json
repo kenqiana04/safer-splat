@@ -1,0 +1,10 @@
+{
+  "FINAL_STATUS": "BLOCKED_BY_SCANNETPP_OFFICIAL_ACCESS",
+  "only_next_task": "RESUME_SCANNETPP_AFTER_OFFICIAL_ACCESS_V1",
+  "resume_requirements": [
+    "Restore server HTTPS access to official ScanNet++ authority/download endpoints.",
+    "Provide valid official ScanNet++ v2 access authorization without placing a token in Git.",
+    "Rerun access preflight; do not substitute a mirror, ScanNet, another dataset, or pretrained map search."
+  ],
+  "status": "BLOCKED_WAITING_FOR_OFFICIAL_ACCESS"
+}
