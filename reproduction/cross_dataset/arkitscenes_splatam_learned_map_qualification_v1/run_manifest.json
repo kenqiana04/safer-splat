@@ -1,0 +1,26 @@
+{
+  "base_pr": 68,
+  "base_head": "9f068e1708e7422e3e53c01c96fa29242be35f0a",
+  "counters": {
+    "adapter_activation": 0,
+    "baseline_training": 0,
+    "canonical_export": 0,
+    "checkpoint": 0,
+    "clearance_audit": 0,
+    "controller_benchmark": 0,
+    "environment_creation": 0,
+    "formal_map_publish": 0,
+    "heldout_access": 0,
+    "heldout_depth_evaluation": 0,
+    "nvs": 0,
+    "safer_g0": 0,
+    "smoke": 0,
+    "variant_training": 0
+  },
+  "final_decision": "STOP_BEFORE_ENVIRONMENT_OR_MAPPING_PENDING_PR68_RAW_BYTE_IDENTITY_CORRECTION",
+  "final_status": "BLOCKED_BY_ARKITSCENES_MAPPING_INPUT_IDENTITY_MISMATCH",
+  "input_audit": "input_identity/pr68_v2_manifest_raw_byte_audit.json",
+  "only_next_task": "USER_AUTHORIZATION_REQUIRED_TO_CORRECT_PR68_V2_MANIFEST_RAW_BYTE_IDENTITIES",
+  "scene": {"video_id": "48018874", "visit_id": "483945"},
+  "task": "RESUME_ARKITSCENES_SPLATAM_SMOKE_AND_LEARNED_MAP_QUALIFICATION_V1"
+}
