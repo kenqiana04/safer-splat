@@ -1,0 +1,16 @@
+{
+  "densification_intersects_valid_depth": true,
+  "first_frame_and_later_frame_behavior_different": true,
+  "first_frame_depth_mask_line": 196,
+  "first_frame_explicit_zero_count_skip": false,
+  "first_frame_scene_radius_uses_max_depth": true,
+  "first_frame_uses_depth_gt_zero": true,
+  "loss_mask_uses_depth_gt_zero": true,
+  "mapping_depth_uses_mean": true,
+  "official_zero_depth_frame_skip_logic": false,
+  "rgb_mapping_loss_independent_of_depth_mask": true,
+  "source_file": "/disk1/zlab/external_authorities/SplaTAM-da6bbcd24c248dc884ac7f49d62e91b841b26ccc/scripts/splatam.py",
+  "source_head": "da6bbcd24c248dc884ac7f49d62e91b841b26ccc",
+  "source_sha256": "b8adb286bea49d6302769ec5af25af4938318044691a8996575c443e4b538816",
+  "tracking_depth_uses_sum": true
+}

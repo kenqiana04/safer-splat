@@ -1,0 +1,148 @@
+{
+  "candidate_count": 12,
+  "candidate_summary": {
+    "anti_transpose": {
+      "better_frame_count": 0,
+      "frame_count": 32,
+      "mean_tail_separation": 0.0076597929242027945,
+      "median_high_p99_m": 0.16026079230010493,
+      "retained_fraction": 1.0,
+      "tail_separation_improvement_vs_identity": -0.04863327919136671
+    },
+    "horizontal_flip": {
+      "better_frame_count": 0,
+      "frame_count": 32,
+      "mean_tail_separation": -0.00500415925854626,
+      "median_high_p99_m": 0.13937800563871877,
+      "retained_fraction": 1.0,
+      "tail_separation_improvement_vs_identity": -0.06129723137411576
+    },
+    "identity": {
+      "better_frame_count": 0,
+      "frame_count": 32,
+      "mean_tail_separation": 0.05629307211556949,
+      "median_high_p99_m": 0.09964469663798808,
+      "retained_fraction": 1.0,
+      "tail_separation_improvement_vs_identity": 0.0
+    },
+    "offset_+1": {
+      "better_frame_count": 0,
+      "frame_count": 32,
+      "mean_tail_separation": 0.008631053272855651,
+      "median_high_p99_m": 0.16214606620371333,
+      "retained_fraction": 1.0,
+      "tail_separation_improvement_vs_identity": -0.04766201884271385
+    },
+    "offset_+2": {
+      "better_frame_count": 0,
+      "frame_count": 32,
+      "mean_tail_separation": -0.013781702186814673,
+      "median_high_p99_m": 0.17331686787307152,
+      "retained_fraction": 1.0,
+      "tail_separation_improvement_vs_identity": -0.07007477430238418
+    },
+    "offset_-1": {
+      "better_frame_count": 1,
+      "frame_count": 32,
+      "mean_tail_separation": 0.04751908438125046,
+      "median_high_p99_m": 0.13265124067664158,
+      "retained_fraction": 1.0,
+      "tail_separation_improvement_vs_identity": -0.00877398773431904
+    },
+    "offset_-2": {
+      "better_frame_count": 1,
+      "frame_count": 32,
+      "mean_tail_separation": 0.018505627915013076,
+      "median_high_p99_m": 0.14529730584472425,
+      "retained_fraction": 1.0,
+      "tail_separation_improvement_vs_identity": -0.03778744420055643
+    },
+    "rotate180": {
+      "better_frame_count": 0,
+      "frame_count": 32,
+      "mean_tail_separation": -0.0052493788207978315,
+      "median_high_p99_m": 0.1415227301418781,
+      "retained_fraction": 1.0,
+      "tail_separation_improvement_vs_identity": -0.06154245093636733
+    },
+    "rotate270": {
+      "better_frame_count": 0,
+      "frame_count": 32,
+      "mean_tail_separation": -0.010445701870805667,
+      "median_high_p99_m": 0.16572514466941352,
+      "retained_fraction": 1.0,
+      "tail_separation_improvement_vs_identity": -0.06673877398637516
+    },
+    "rotate90": {
+      "better_frame_count": 0,
+      "frame_count": 32,
+      "mean_tail_separation": -0.003985179014841331,
+      "median_high_p99_m": 0.1587911265343428,
+      "retained_fraction": 1.0,
+      "tail_separation_improvement_vs_identity": -0.060278251130410826
+    },
+    "transpose": {
+      "better_frame_count": 0,
+      "frame_count": 32,
+      "mean_tail_separation": -0.00040475281916573186,
+      "median_high_p99_m": 0.15889419913291936,
+      "retained_fraction": 1.0,
+      "tail_separation_improvement_vs_identity": -0.05669782493473523
+    },
+    "vertical_flip": {
+      "better_frame_count": 0,
+      "frame_count": 32,
+      "mean_tail_separation": 0.016303482688762614,
+      "median_high_p99_m": 0.13482516579329992,
+      "retained_fraction": 1.0,
+      "tail_separation_improvement_vs_identity": -0.03998958942680689
+    }
+  },
+  "deterministic_sha256": "7565c528e69b74282a47305ddbf662b240a4ee58687ce973baf90b480799b30d",
+  "diagnostic_frame_count": 32,
+  "diagnostic_indices": [
+    2,
+    9,
+    15,
+    22,
+    29,
+    36,
+    42,
+    49,
+    56,
+    63,
+    69,
+    76,
+    83,
+    90,
+    96,
+    103,
+    110,
+    117,
+    123,
+    130,
+    137,
+    144,
+    150,
+    157,
+    164,
+    171,
+    177,
+    184,
+    191,
+    198,
+    204,
+    211
+  ],
+  "eligible_nonidentity_candidates": [],
+  "implementation_error": false,
+  "no_candidate_was_adopted": true,
+  "selected_alignment_for_audit": "identity",
+  "source_and_metadata_evidence": {
+    "nearest_neighbor_resize": true,
+    "official_metadata_requires_nonidentity": false,
+    "rotation_transpose_flip_present": false,
+    "same_manifest_row_join": true
+  },
+  "status": "PASS_CONFIDENCE_IDENTITY_ALIGNMENT_RETAINED"
+}

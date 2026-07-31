@@ -1,0 +1,26 @@
+{
+  "depth_bins": {
+    "0-1m": {
+      "count": 3115,
+      "fraction": 0.012736587739347674
+    },
+    "1-2m": {
+      "count": 136197,
+      "fraction": 0.5568812328526277
+    },
+    "2-3m": {
+      "count": 54733,
+      "fraction": 0.22379186412125723
+    },
+    "3-4m": {
+      "count": 32494,
+      "fraction": 0.13286121412595933
+    },
+    ">4m": {
+      "count": 18032,
+      "fraction": 0.07372910116080811
+    }
+  },
+  "status": "PASS_TAIL_DEPTH_RANGE_FACTORIZATION",
+  "tail": "M0 error>0.30m"
+}

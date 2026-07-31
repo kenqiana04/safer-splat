@@ -1,0 +1,77 @@
+{
+  "M0_RAW_POSITIVE": {
+    "classes": {
+      "NO_MESH_RAY_HIT": {
+        "count": 52578,
+        "fraction": 0.2149805169051114
+      },
+      "POINT_DISTANCE_ONLY_DISAGREEMENT": {
+        "count": 0,
+        "fraction": 0.0
+      },
+      "RAY_AGREEMENT": {
+        "count": 0,
+        "fraction": 0.0
+      },
+      "SENSOR_BEHIND_MESH": {
+        "count": 28738,
+        "fraction": 0.1175037105789321
+      },
+      "SENSOR_IN_FRONT_OF_MESH": {
+        "count": 163255,
+        "fraction": 0.6675157725159565
+      }
+    },
+    "tail_gt_030_pixel_count": 244571
+  },
+  "M1_CONFIDENCE_GE1": {
+    "classes": {
+      "NO_MESH_RAY_HIT": {
+        "count": 1089,
+        "fraction": 0.35787052251068024
+      },
+      "POINT_DISTANCE_ONLY_DISAGREEMENT": {
+        "count": 0,
+        "fraction": 0.0
+      },
+      "RAY_AGREEMENT": {
+        "count": 0,
+        "fraction": 0.0
+      },
+      "SENSOR_BEHIND_MESH": {
+        "count": 372,
+        "fraction": 0.12224778179428196
+      },
+      "SENSOR_IN_FRONT_OF_MESH": {
+        "count": 1582,
+        "fraction": 0.5198816956950378
+      }
+    },
+    "tail_gt_030_pixel_count": 3043
+  },
+  "M2_CONFIDENCE_EQ2": {
+    "classes": {
+      "NO_MESH_RAY_HIT": {
+        "count": 153,
+        "fraction": 0.75
+      },
+      "POINT_DISTANCE_ONLY_DISAGREEMENT": {
+        "count": 0,
+        "fraction": 0.0
+      },
+      "RAY_AGREEMENT": {
+        "count": 0,
+        "fraction": 0.0
+      },
+      "SENSOR_BEHIND_MESH": {
+        "count": 0,
+        "fraction": 0.0
+      },
+      "SENSOR_IN_FRONT_OF_MESH": {
+        "count": 51,
+        "fraction": 0.25
+      }
+    },
+    "tail_gt_030_pixel_count": 204
+  }
+}

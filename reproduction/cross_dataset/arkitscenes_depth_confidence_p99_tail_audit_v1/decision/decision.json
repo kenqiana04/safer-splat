@@ -1,0 +1,36 @@
+{
+  "FINAL_DECISION": "CLOSE_ARKITSCENES_SPLATAM_MAPPING_ROUTE_WITHOUT_TRAINING",
+  "FINAL_STATUS": "NO_ARKITSCENES_METRIC_DEPTH_INPUT_CONTRACT_QUALIFIED",
+  "Only_next_task": "ETH3D_DELIVERY_AREA_LEARNED_3DGS_QUALIFICATION_V1",
+  "frame_deleted": false,
+  "geometry_pass": {
+    "M0_RAW_POSITIVE": false,
+    "M1_CONFIDENCE_GE1": true,
+    "M2_CONFIDENCE_EQ2": true
+  },
+  "geometry_threshold_relaxed": false,
+  "implementation_error": false,
+  "mask_contract_modified": false,
+  "mesh_coverage_dominant": false,
+  "mesh_no_hit_gt_030_fraction": {
+    "M0_RAW_POSITIVE": 0.2149805169051114,
+    "M1_CONFIDENCE_GE1": 0.35787052251068024,
+    "M2_CONFIDENCE_EQ2": 0.75
+  },
+  "recommendation_reason": "No implementation error or dominant mesh-coverage explanation was established, and none of M0/M1/M2 satisfies all preregistered gates.",
+  "recommended_mask": null,
+  "selection_order_applied": [
+    "implementation_error",
+    "M0",
+    "M1",
+    "M2",
+    "zero_semantics_unresolved",
+    "mesh_coverage",
+    "no_qualified_contract"
+  ],
+  "structure_pass_with_zero_semantics": {
+    "M1_CONFIDENCE_GE1": false,
+    "M2_CONFIDENCE_EQ2": false
+  },
+  "zero_mask_source_decision": "FAIL_OFFICIAL_SPLATAM_ZERO_VALID_DEPTH_COMPATIBILITY"
+}

@@ -1,0 +1,24 @@
+{
+  "densification": {
+    "reason": "non-presence is tested before intersection with valid-depth; no explicit empty-frame skip contract exists",
+    "safe": false
+  },
+  "first_frame": {
+    "reason": "empty initialization point cloud is not explicitly skipped and scene_radius becomes zero",
+    "safe": false
+  },
+  "later_mapping": {
+    "depth_reduction_finite": false,
+    "reason": "official non-tracking depth loss calls mean() on the empty masked tensor"
+  },
+  "later_tracking": {
+    "depth_reduction_finite": true,
+    "reason": "empty masked sum evaluates to zero, while RGB behavior depends on tracking flags"
+  },
+  "mapper_instantiated": false,
+  "microtest_status": "FAIL_ZERO_MASK_MAPPING_DEPTH_MEAN_NONFINITE",
+  "optimizer_created": false,
+  "semantics_unresolved": false,
+  "status": "FAIL_OFFICIAL_SPLATAM_ZERO_VALID_DEPTH_COMPATIBILITY",
+  "zero_valid_depth_safe_without_algorithm_change": false
+}

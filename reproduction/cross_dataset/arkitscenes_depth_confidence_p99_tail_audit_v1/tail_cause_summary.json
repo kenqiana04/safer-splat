@@ -1,0 +1,19 @@
+{
+  "dynamic_claim_rule": "suspect label only when temporal inconsistency and RGB temporal mean absolute difference >0.15",
+  "label_frame_counts": {
+    "CONFIDENCE_ALIGNMENT_SUSPECT": 0,
+    "CONFIDENCE_READER_FAILURE": 0,
+    "CONFIDENCE_ZERO_OR_LOW": 20,
+    "DYNAMIC_OR_TRANSIENT_SUSPECT": 2,
+    "IMAGE_BORDER": 9,
+    "LONG_RANGE": 3,
+    "MESH_COVERAGE_GAP": 8,
+    "POSE_INTRINSICS_LOCAL_SUSPECT": 0,
+    "SENSOR_BEHIND_MESH": 9,
+    "SENSOR_IN_FRONT_OF_MESH": 11,
+    "TEMPORAL_INCONSISTENCY": 7,
+    "UNEXPLAINED": 0
+  },
+  "status": "PASS_EVIDENCE_BOUNDED_TAIL_CAUSE_REGISTRY",
+  "top_frame_count": 20
+}

@@ -1,0 +1,49 @@
+{
+  "adapter": {
+    "depth_confidence_shared_orientation": "identity_256x192_no_rotation_transpose_or_flip",
+    "nearest_neighbor_resize": true,
+    "no_silent_zero_fallback": true,
+    "same_manifest_row_join": true
+  },
+  "heldout_structure_only": {
+    "all_structural_checks_pass": true,
+    "dtypes": {
+      "uint8": 53
+    },
+    "global_value_counts": {
+      "0": 415931,
+      "1": 472654,
+      "2": 1716471
+    },
+    "raw_all_zero_is_not_reader_fallback": true,
+    "raw_asset_all_zero_frames": [],
+    "repeated_load_deterministic": true,
+    "rows": 53,
+    "shapes": {
+      "192x256": 53
+    }
+  },
+  "implementation_error": false,
+  "status": "PASS_CONFIDENCE_ASSET_AND_READER_STRUCTURE",
+  "train": {
+    "all_structural_checks_pass": true,
+    "dtypes": {
+      "uint8": 214
+    },
+    "global_value_counts": {
+      "0": 1240707,
+      "1": 1188387,
+      "2": 8089434
+    },
+    "raw_all_zero_is_not_reader_fallback": true,
+    "raw_asset_all_zero_frames": [
+      76,
+      79
+    ],
+    "repeated_load_deterministic": true,
+    "rows": 214,
+    "shapes": {
+      "192x256": 214
+    }
+  }
+}

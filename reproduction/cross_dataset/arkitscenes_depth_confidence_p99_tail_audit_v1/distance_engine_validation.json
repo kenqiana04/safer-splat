@@ -1,0 +1,13 @@
+{
+  "all_finite": true,
+  "deterministic_sha256": "5f8fad2fa2871432479d729dfd838f2b0a523e5e4991859b1c07730c6d405e5f",
+  "independent": "trimesh.proximity.closest_point R-tree triangle query",
+  "independent_primitive_count": 508,
+  "nearest_vertex_substitution": false,
+  "open3d_vs_trimesh_max_abs_difference_m": 8.743463077570939e-07,
+  "point_count": 512,
+  "primary": "Open3D RaycastingScene.compute_distance point-to-triangle surface distance",
+  "status": "PASS_EXACT_POINT_TO_TRIANGLE_SURFACE_DISTANCE",
+  "tolerance_m": 1e-06,
+  "trimesh_reported_vs_recomputed_max_abs_difference_m": 0.0
+}

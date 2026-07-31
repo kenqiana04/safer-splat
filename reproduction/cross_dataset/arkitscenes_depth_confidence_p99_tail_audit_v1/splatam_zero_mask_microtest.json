@@ -1,0 +1,40 @@
+{
+  "backward_called": false,
+  "case_count": 3,
+  "cases": [
+    {
+      "case": "all_zero_depth_mask",
+      "mapping_depth_mean": null,
+      "mapping_depth_mean_finite": false,
+      "rgb_loss_independently_finite": true,
+      "tracking_depth_sum": 0.0,
+      "tracking_depth_sum_finite": true,
+      "valid_depth_count": 0
+    },
+    {
+      "case": "one_valid_pixel",
+      "mapping_depth_mean": 0.25,
+      "mapping_depth_mean_finite": true,
+      "rgb_loss_independently_finite": true,
+      "tracking_depth_sum": 0.25,
+      "tracking_depth_sum_finite": true,
+      "valid_depth_count": 1
+    },
+    {
+      "case": "sparse_valid_mask",
+      "mapping_depth_mean": 0.5,
+      "mapping_depth_mean_finite": true,
+      "rgb_loss_independently_finite": true,
+      "tracking_depth_sum": 1.0,
+      "tracking_depth_sum_finite": true,
+      "valid_depth_count": 2
+    }
+  ],
+  "checkpoint_created": false,
+  "contract": "official get_loss uses sum for tracking and mean for non-tracking mapping over mask=(depth>0)&nan_mask",
+  "mapper_loop_executed": false,
+  "optimizer_created": false,
+  "parameters_updated": false,
+  "real_scene_data_used": false,
+  "status": "FAIL_ZERO_MASK_MAPPING_DEPTH_MEAN_NONFINITE"
+}
