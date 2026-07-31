@@ -95,7 +95,7 @@ def main() -> int:
         "producer_git_blob_sha256": producer_blob_sha256,
         "gitattributes_git_blob_sha256": attributes_blob_sha256,
         "semantic_change_count": 0,
-        "server_report": "/disk1/zlab/maintenance_records/arkitscenes_split_v2_canonical_git_blob_identity_v1/server_v2_validation_result_bf4483af.json",
+        "server_report": "/disk1/zlab/maintenance_records/arkitscenes_split_v2_canonical_git_blob_identity_v1/server_v2_validation_result_2f1e015.json",
         "gpu1_final_read_only": "1, 6 MiB, 0 %",
         "other_ssh_sessions_preserved": True,
         "counters": no_runtime,
@@ -162,7 +162,7 @@ The legacy CRLF hashes are retained in the V2 contract as `PRECOMMIT_PLATFORM_DE
 - Dependency graph: `{graph['status']}`. Six raw-identity derived V2 records were updated/reviewed; group/selection identities remain frozen.
 - Post-commit Git object validation: Windows `{canonical_windows['status']}`, Linux `{canonical_linux['status']}`. The canonical producer Git-blob SHA is `{producer_blob_sha256}` and `.gitattributes` Git-blob SHA is `{attributes_blob_sha256}`; both contract-level and per-manifest declarations match.
 - Cross-platform checkout validation: Windows and isolated Linux both equal their exact Git blobs; `{combined_platform['status']}`.
-- Server V2 validator: `{server_v2['status']}` from `/disk1/zlab/maintenance_records/arkitscenes_split_v2_canonical_git_blob_identity_v1/server_v2_validation_result_bf4483af.json`.
+- Server V2 validator: `{server_v2['status']}` from `/disk1/zlab/maintenance_records/arkitscenes_split_v2_canonical_git_blob_identity_v1/server_v2_validation_result_2f1e015.json`.
 
 ## Runtime boundary
 

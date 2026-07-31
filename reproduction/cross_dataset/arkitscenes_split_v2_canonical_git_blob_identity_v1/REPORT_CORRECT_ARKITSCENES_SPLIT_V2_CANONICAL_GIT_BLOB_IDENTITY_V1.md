@@ -34,7 +34,7 @@ The legacy CRLF hashes are retained in the V2 contract as `PRECOMMIT_PLATFORM_DE
 - Dependency graph: `PASS_IDENTITY_DEPENDENCY_GRAPH`. Six raw-identity derived V2 records were updated/reviewed; group/selection identities remain frozen.
 - Post-commit Git object validation: Windows `PASS_CANONICAL_GIT_BLOB_IDENTITY`, Linux `PASS_CANONICAL_GIT_BLOB_IDENTITY`. The canonical producer Git-blob SHA is `675b9e5775f8b4b28efee4570db8738d55c9d5e79e784e654c2435f355d79d8a` and `.gitattributes` Git-blob SHA is `1145554d43edfb5df4ab16c7bfe24d4bfd8afda1cefdca31bad6f8019a64fa0c`; both contract-level and per-manifest declarations match.
 - Cross-platform checkout validation: Windows and isolated Linux both equal their exact Git blobs; `PASS_CROSS_PLATFORM_CHECKOUT_IDENTITY`.
-- Server V2 validator: `V2_SPLIT_VALIDATION_PASS` from `/disk1/zlab/maintenance_records/arkitscenes_split_v2_canonical_git_blob_identity_v1/server_v2_validation_result_bf4483af.json`.
+- Server V2 validator: `V2_SPLIT_VALIDATION_PASS` from `/disk1/zlab/maintenance_records/arkitscenes_split_v2_canonical_git_blob_identity_v1/server_v2_validation_result_2f1e015.json`.
 
 ## Runtime boundary
 
