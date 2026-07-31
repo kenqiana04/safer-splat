@@ -1,0 +1,62 @@
+{
+  "manifests": {
+    "heldout": {
+      "declared_equals_deterministic_crlf": true,
+      "declared_legacy_crlf_sha256": "670255f2e00f04a0e462e1a83cd4c4d0344e92906604aba9312aa7baabb3b78e",
+      "deterministic_lf_to_crlf_sha256": "670255f2e00f04a0e462e1a83cd4c4d0344e92906604aba9312aa7baabb3b78e",
+      "fieldnames_equal": true,
+      "git_blob_eol": {
+        "bare_cr_count": 0,
+        "bom": false,
+        "crlf_count": 0,
+        "final_lf": true,
+        "lf_count": 54,
+        "lf_only": true,
+        "utf8_decode": "PASS"
+      },
+      "git_blob_oid": "cf28dd385711a31733360e5fc21dce229ce605bc",
+      "git_blob_sha256": "7b65f741e901690f2a723579d75200eebe7b9e77b0cd57c030d4a14d0474c0c7",
+      "legacy_archive": {
+        "available": false,
+        "checked": false
+      },
+      "no_extra_or_missing_blank_rows": true,
+      "no_non_eol_byte_difference": true,
+      "ordered_rows_equal": true,
+      "path": "reproduction/cross_dataset/arkitscenes_spatial_group_split_contract_v2/v2_split/arkitscenes_heldout_manifest_v2.csv",
+      "pr69_audit_matches_blob": true,
+      "universal_newline_parse_equal": true
+    },
+    "train": {
+      "declared_equals_deterministic_crlf": true,
+      "declared_legacy_crlf_sha256": "b2d66720fbb0bc7acc998a81e073a9e4774ece7e3ce2900651ff28bf921c2404",
+      "deterministic_lf_to_crlf_sha256": "b2d66720fbb0bc7acc998a81e073a9e4774ece7e3ce2900651ff28bf921c2404",
+      "fieldnames_equal": true,
+      "git_blob_eol": {
+        "bare_cr_count": 0,
+        "bom": false,
+        "crlf_count": 0,
+        "final_lf": true,
+        "lf_count": 215,
+        "lf_only": true,
+        "utf8_decode": "PASS"
+      },
+      "git_blob_oid": "a2ddc70775e6d0f9c25f77ef5f869556d83b292c",
+      "git_blob_sha256": "167066916ce1a3281ac754dfdeec37ada9f5b0e31227c731c94cebb698a2a6e3",
+      "legacy_archive": {
+        "available": false,
+        "checked": false
+      },
+      "no_extra_or_missing_blank_rows": true,
+      "no_non_eol_byte_difference": true,
+      "ordered_rows_equal": true,
+      "path": "reproduction/cross_dataset/arkitscenes_spatial_group_split_contract_v2/v2_split/arkitscenes_train_manifest_v2.csv",
+      "pr69_audit_matches_blob": true,
+      "universal_newline_parse_equal": true
+    }
+  },
+  "policy": "Git blob bytes are raw-byte authority; semantic identity is secondary.",
+  "pr68_commit": "9f068e1708e7422e3e53c01c96fa29242be35f0a",
+  "pr69_commit": "dabaa0bbf44cd81783c3c00d0744f44affaffcb2",
+  "status": "PASS_EOL_ONLY_MANIFEST_MISMATCH"
+}

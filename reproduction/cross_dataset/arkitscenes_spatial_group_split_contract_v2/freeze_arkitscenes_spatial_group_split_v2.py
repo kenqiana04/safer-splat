@@ -3,10 +3,31 @@
 from __future__ import annotations
 
 import argparse
+import csv
+import hashlib
 import json
+import subprocess
 from pathlib import Path
 
 from arkitscenes_split_v2_common import atomic_csv, atomic_json, read_csv, sha256_file
+
+
+LEGACY_CRLFS = {
+    "arkitscenes_train_manifest_v2.csv": "b2d66720fbb0bc7acc998a81e073a9e4774ece7e3ce2900651ff28bf921c2404",
+    "arkitscenes_heldout_manifest_v2.csv": "670255f2e00f04a0e462e1a83cd4c4d0344e92906604aba9312aa7baabb3b78e",
+}
+
+
+def manifest_identity(task_root: Path, path: Path) -> dict[str, object]:
+    with path.open("r", encoding="utf-8", newline="") as handle:
+        rows = list(csv.reader(handle))
+    if not rows or any(len(row) != len(rows[0]) for row in rows[1:]):
+        raise SystemExit("CSV_SEMANTIC_IDENTITY_FAILURE")
+    payload = {"fieldnames": rows[0], "ordered_rows": rows[1:]}
+    semantic_bytes = (json.dumps(payload, ensure_ascii=True, separators=(",", ":"), sort_keys=False) + "\n").encode("utf-8")
+    raw_sha = sha256_file(path)
+    oid = subprocess.check_output(["git", "-C", str(Path(__file__).resolve().parent), "hash-object", str(path.resolve())], text=True).strip()
+    return {"path": str(path.relative_to(task_root)).replace("\\", "/"), "git_blob_oid": oid, "git_blob_sha256": raw_sha, "semantic_csv_sha256": hashlib.sha256(semantic_bytes).hexdigest(), "encoding": "UTF-8", "bom": False, "line_ending": "LF", "row_count": len(rows) - 1, "fieldnames": rows[0], "precommit_generated_lf_sha256": raw_sha, "precommit_generated_sha_note": "PRECOMMIT_GENERATED_SHA_IS_NOT_YET_GIT_BLOB_AUTHORITY", "legacy_generation_identity": {"legacy_worktree_crlf_sha256": LEGACY_CRLFS[path.name], "classification": "PRECOMMIT_PLATFORM_DEPENDENT_NOT_AUTHORITATIVE", "source": "PR68_ORIGINAL_CONTRACT", "semantic_equivalence": "PASS"}}
 
 
 def main() -> int:
@@ -32,8 +53,10 @@ def main() -> int:
     output = args.task_root / "v2_split"; fields = list(rows[0]) + ["keyframe_index", "v1_group_id", "v1_group_hash", "split"]
     atomic_csv(output / "arkitscenes_train_manifest_v2.csv", train, fields); atomic_csv(output / "arkitscenes_heldout_manifest_v2.csv", heldout, fields)
     selected_tuple = tuple(sorted(selected_hashes)); tuple_sha = sha256_file(feasibility_path) if False else __import__("hashlib").sha256("\n".join(selected_tuple).encode("utf-8")).hexdigest()
-    identity = {"source_pr": 67, "source_pr_head": "f8974c21d81eba7f207945bd50bd1a5245bd3bb7", "video_id": "48018874", "algorithm": "complete_v1_group_subset_sum_dp_v2", "algorithm_version": 2, "target_formula": "floor(0.20*N+0.5)", "target_heldout": feasibility["target_heldout"], "hard_constraints": feasibility["hard_constraints"], "optimization_score": [abs(len(heldout)-int(feasibility["target_heldout"])), len(heldout), list(selected_tuple)], "selected_group_hashes": list(selected_tuple), "selected_group_hash_tuple_sha256": tuple_sha, "train_count": len(train), "heldout_count": len(heldout), "train_group_count": len(registry["groups"]) - len(selected_hashes), "heldout_group_count": len(selected_hashes), "v1_group_registry_sha256": sha256_file(registry_path), "train_manifest_sha256": sha256_file(output / "arkitscenes_train_manifest_v2.csv"), "heldout_manifest_sha256": sha256_file(output / "arkitscenes_heldout_manifest_v2.csv"), "no_training": True, "no_mapping": True, "no_geometry_result": True}
-    import hashlib
+    train_path = output / "arkitscenes_train_manifest_v2.csv"
+    heldout_path = output / "arkitscenes_heldout_manifest_v2.csv"
+    source_root = Path(__file__).resolve().parent
+    identity = {"source_pr": 67, "source_pr_head": "f8974c21d81eba7f207945bd50bd1a5245bd3bb7", "video_id": "48018874", "algorithm": "complete_v1_group_subset_sum_dp_v2", "algorithm_version": 2, "target_formula": "floor(0.20*N+0.5)", "target_heldout": feasibility["target_heldout"], "hard_constraints": feasibility["hard_constraints"], "optimization_score": [abs(len(heldout)-int(feasibility["target_heldout"])), len(heldout), list(selected_tuple)], "selected_group_hashes": list(selected_tuple), "selected_group_hash_tuple_sha256": tuple_sha, "train_count": len(train), "heldout_count": len(heldout), "train_group_count": len(registry["groups"]) - len(selected_hashes), "heldout_group_count": len(selected_hashes), "v1_group_registry_sha256": sha256_file(registry_path), "train_manifest_sha256": sha256_file(train_path), "heldout_manifest_sha256": sha256_file(heldout_path), "identity_policy": "CANONICAL_GIT_BLOB_BYTES_SHA256_V1", "manifest_identities": {"train": manifest_identity(args.task_root, train_path), "heldout": manifest_identity(args.task_root, heldout_path)}, "producer_sha256": sha256_file(source_root / "arkitscenes_split_v2_common.py"), "gitattributes_sha256": sha256_file(source_root / ".gitattributes"), "no_training": True, "no_mapping": True, "no_geometry_result": True}
     identity["split_identity_sha256"] = hashlib.sha256(json.dumps(identity, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()
     atomic_json(output / "arkitscenes_spatial_group_split_contract_v2.json", identity)
     atomic_json(output / "selected_arkitscenes_mapping_scene_v2.json", {"video_id": "48018874", "role": "ARKITSCENES_V2_SELECTED_MAPPING_SCENE", "primary_role": "VALID_DATA_AND_COORDINATE_AUDIT_BUT_INSUFFICIENT_KEYFRAMES_FOR_V2", "split_identity_sha256": identity["split_identity_sha256"], "no_training": True})

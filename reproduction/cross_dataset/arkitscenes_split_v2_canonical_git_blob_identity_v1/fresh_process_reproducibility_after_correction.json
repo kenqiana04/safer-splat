@@ -1,0 +1,92 @@
+{
+  "expected_pr68_semantic_identity": {
+    "heldout_semantic_sha256": "69c8328511cd8405b17b2fc17da9f557ed69ac75b3cfc442f380d586ecab7117",
+    "train_semantic_sha256": "32adca1e09694dce9ff5bebc895109f32f866e1c8ecc845e3927a07f60129d12"
+  },
+  "fresh_process_count": 3,
+  "precommit_note": "PRECOMMIT_GENERATED_SHA_IS_NOT_YET_GIT_BLOB_AUTHORITY",
+  "runs": [
+    {
+      "heldout_eol": {
+        "bare_cr_count": 0,
+        "bom": false,
+        "crlf_count": 0,
+        "final_lf": true,
+        "lf_count": 54,
+        "lf_only": true,
+        "utf8_decode": "PASS"
+      },
+      "heldout_semantic_sha256": "69c8328511cd8405b17b2fc17da9f557ed69ac75b3cfc442f380d586ecab7117",
+      "heldout_sha256": "7b65f741e901690f2a723579d75200eebe7b9e77b0cd57c030d4a14d0474c0c7",
+      "run": 1,
+      "stdout": "V2_SPLIT_FROZEN 214 53 8ad320980bb36edb2accb38629ec3046095c9ef7735fbb748f4e112ee75bd388",
+      "train_eol": {
+        "bare_cr_count": 0,
+        "bom": false,
+        "crlf_count": 0,
+        "final_lf": true,
+        "lf_count": 215,
+        "lf_only": true,
+        "utf8_decode": "PASS"
+      },
+      "train_semantic_sha256": "32adca1e09694dce9ff5bebc895109f32f866e1c8ecc845e3927a07f60129d12",
+      "train_sha256": "167066916ce1a3281ac754dfdeec37ada9f5b0e31227c731c94cebb698a2a6e3",
+      "tree_sha256": "c3756924524d90b2d810319d4f9120e588dc53733132bfa6182d554d161c5a93"
+    },
+    {
+      "heldout_eol": {
+        "bare_cr_count": 0,
+        "bom": false,
+        "crlf_count": 0,
+        "final_lf": true,
+        "lf_count": 54,
+        "lf_only": true,
+        "utf8_decode": "PASS"
+      },
+      "heldout_semantic_sha256": "69c8328511cd8405b17b2fc17da9f557ed69ac75b3cfc442f380d586ecab7117",
+      "heldout_sha256": "7b65f741e901690f2a723579d75200eebe7b9e77b0cd57c030d4a14d0474c0c7",
+      "run": 2,
+      "stdout": "V2_SPLIT_FROZEN 214 53 8ad320980bb36edb2accb38629ec3046095c9ef7735fbb748f4e112ee75bd388",
+      "train_eol": {
+        "bare_cr_count": 0,
+        "bom": false,
+        "crlf_count": 0,
+        "final_lf": true,
+        "lf_count": 215,
+        "lf_only": true,
+        "utf8_decode": "PASS"
+      },
+      "train_semantic_sha256": "32adca1e09694dce9ff5bebc895109f32f866e1c8ecc845e3927a07f60129d12",
+      "train_sha256": "167066916ce1a3281ac754dfdeec37ada9f5b0e31227c731c94cebb698a2a6e3",
+      "tree_sha256": "c3756924524d90b2d810319d4f9120e588dc53733132bfa6182d554d161c5a93"
+    },
+    {
+      "heldout_eol": {
+        "bare_cr_count": 0,
+        "bom": false,
+        "crlf_count": 0,
+        "final_lf": true,
+        "lf_count": 54,
+        "lf_only": true,
+        "utf8_decode": "PASS"
+      },
+      "heldout_semantic_sha256": "69c8328511cd8405b17b2fc17da9f557ed69ac75b3cfc442f380d586ecab7117",
+      "heldout_sha256": "7b65f741e901690f2a723579d75200eebe7b9e77b0cd57c030d4a14d0474c0c7",
+      "run": 3,
+      "stdout": "V2_SPLIT_FROZEN 214 53 8ad320980bb36edb2accb38629ec3046095c9ef7735fbb748f4e112ee75bd388",
+      "train_eol": {
+        "bare_cr_count": 0,
+        "bom": false,
+        "crlf_count": 0,
+        "final_lf": true,
+        "lf_count": 215,
+        "lf_only": true,
+        "utf8_decode": "PASS"
+      },
+      "train_semantic_sha256": "32adca1e09694dce9ff5bebc895109f32f866e1c8ecc845e3927a07f60129d12",
+      "train_sha256": "167066916ce1a3281ac754dfdeec37ada9f5b0e31227c731c94cebb698a2a6e3",
+      "tree_sha256": "c3756924524d90b2d810319d4f9120e588dc53733132bfa6182d554d161c5a93"
+    }
+  ],
+  "status": "PASS_FRESH_LF_REGENERATION"
+}

@@ -1,0 +1,115 @@
+{
+  "dependency_paths_updated_or_reviewed": [
+    "reproduction\\cross_dataset\\arkitscenes_spatial_group_split_contract_v2\\v2_split\\arkitscenes_spatial_group_split_contract_v2.json",
+    "reproduction\\cross_dataset\\arkitscenes_spatial_group_split_contract_v2\\v2_split\\selected_arkitscenes_mapping_scene_v2.json",
+    "reproduction\\cross_dataset\\arkitscenes_spatial_group_split_contract_v2\\validation\\fresh_process_reproducibility.json",
+    "reproduction\\cross_dataset\\arkitscenes_spatial_group_split_contract_v2\\run_manifest.json",
+    "reproduction\\cross_dataset\\arkitscenes_spatial_group_split_contract_v2\\downstream_handoff.json",
+    "reproduction\\cross_dataset\\arkitscenes_spatial_group_split_contract_v2\\REPORT_REVISE_ARKITSCENES_SPATIAL_GROUP_SPLIT_CONTRACT_V2.md"
+  ],
+  "findings": [
+    {
+      "classification": "A_RAW_BYTE_IDENTITY_DEPENDENT",
+      "old_hashes": [
+        "670255f2e00f04a0e462e1a83cd4c4d0344e92906604aba9312aa7baabb3b78e",
+        "b2d66720fbb0bc7acc998a81e073a9e4774ece7e3ce2900651ff28bf921c2404"
+      ],
+      "path": "reproduction/cross_dataset/arkitscenes_spatial_group_split_contract_v2/downstream_handoff.json"
+    },
+    {
+      "classification": "D_LEGACY_OR_AUDIT_EVIDENCE",
+      "old_hashes": [
+        "670255f2e00f04a0e462e1a83cd4c4d0344e92906604aba9312aa7baabb3b78e",
+        "b2d66720fbb0bc7acc998a81e073a9e4774ece7e3ce2900651ff28bf921c2404"
+      ],
+      "path": "reproduction/cross_dataset/arkitscenes_spatial_group_split_contract_v2/freeze_arkitscenes_spatial_group_split_v2.py"
+    },
+    {
+      "classification": "D_LEGACY_OR_AUDIT_EVIDENCE",
+      "old_hashes": [
+        "670255f2e00f04a0e462e1a83cd4c4d0344e92906604aba9312aa7baabb3b78e",
+        "b2d66720fbb0bc7acc998a81e073a9e4774ece7e3ce2900651ff28bf921c2404"
+      ],
+      "path": "reproduction/cross_dataset/arkitscenes_spatial_group_split_contract_v2/REPORT_REVISE_ARKITSCENES_SPATIAL_GROUP_SPLIT_CONTRACT_V2.md"
+    },
+    {
+      "classification": "A_RAW_BYTE_IDENTITY_DEPENDENT",
+      "old_hashes": [
+        "670255f2e00f04a0e462e1a83cd4c4d0344e92906604aba9312aa7baabb3b78e",
+        "b2d66720fbb0bc7acc998a81e073a9e4774ece7e3ce2900651ff28bf921c2404"
+      ],
+      "path": "reproduction/cross_dataset/arkitscenes_spatial_group_split_contract_v2/run_manifest.json"
+    },
+    {
+      "classification": "A_RAW_BYTE_IDENTITY_DEPENDENT",
+      "old_hashes": [
+        "670255f2e00f04a0e462e1a83cd4c4d0344e92906604aba9312aa7baabb3b78e",
+        "b2d66720fbb0bc7acc998a81e073a9e4774ece7e3ce2900651ff28bf921c2404"
+      ],
+      "path": "reproduction/cross_dataset/arkitscenes_spatial_group_split_contract_v2/v2_split/arkitscenes_spatial_group_split_contract_v2.json"
+    },
+    {
+      "classification": "A_RAW_BYTE_IDENTITY_DEPENDENT",
+      "old_hashes": [
+        "670255f2e00f04a0e462e1a83cd4c4d0344e92906604aba9312aa7baabb3b78e",
+        "b2d66720fbb0bc7acc998a81e073a9e4774ece7e3ce2900651ff28bf921c2404"
+      ],
+      "path": "reproduction/cross_dataset/arkitscenes_spatial_group_split_contract_v2/validation/fresh_process_reproducibility.json"
+    },
+    {
+      "classification": "D_HISTORICAL_PR69_IMMUTABLE",
+      "old_hashes": [
+        "670255f2e00f04a0e462e1a83cd4c4d0344e92906604aba9312aa7baabb3b78e",
+        "b2d66720fbb0bc7acc998a81e073a9e4774ece7e3ce2900651ff28bf921c2404"
+      ],
+      "path": "reproduction/cross_dataset/arkitscenes_splatam_learned_map_qualification_v1/input_identity/pr68_v2_manifest_raw_byte_audit.json"
+    },
+    {
+      "classification": "D_HISTORICAL_PR69_IMMUTABLE",
+      "old_hashes": [
+        "670255f2e00f04a0e462e1a83cd4c4d0344e92906604aba9312aa7baabb3b78e",
+        "b2d66720fbb0bc7acc998a81e073a9e4774ece7e3ce2900651ff28bf921c2404"
+      ],
+      "path": "reproduction/cross_dataset/arkitscenes_splatam_learned_map_qualification_v1/REPORT_ARKITSCENES_SPLATAM_LEARNED_MAP_QUALIFICATION_V1.md"
+    },
+    {
+      "classification": "D_CORRECTION_EVIDENCE",
+      "old_hashes": [
+        "670255f2e00f04a0e462e1a83cd4c4d0344e92906604aba9312aa7baabb3b78e",
+        "b2d66720fbb0bc7acc998a81e073a9e4774ece7e3ce2900651ff28bf921c2404"
+      ],
+      "path": "reproduction/cross_dataset/arkitscenes_split_v2_canonical_git_blob_identity_v1/arkitscenes_split_v2_identity_dependency_graph_precommit.json"
+    },
+    {
+      "classification": "D_CORRECTION_EVIDENCE",
+      "old_hashes": [
+        "670255f2e00f04a0e462e1a83cd4c4d0344e92906604aba9312aa7baabb3b78e",
+        "b2d66720fbb0bc7acc998a81e073a9e4774ece7e3ce2900651ff28bf921c2404"
+      ],
+      "path": "reproduction/cross_dataset/arkitscenes_split_v2_canonical_git_blob_identity_v1/audit_arkitscenes_split_v2_identity_dependency_graph.py"
+    },
+    {
+      "classification": "D_CORRECTION_EVIDENCE",
+      "old_hashes": [
+        "670255f2e00f04a0e462e1a83cd4c4d0344e92906604aba9312aa7baabb3b78e",
+        "b2d66720fbb0bc7acc998a81e073a9e4774ece7e3ce2900651ff28bf921c2404"
+      ],
+      "path": "reproduction/cross_dataset/arkitscenes_split_v2_canonical_git_blob_identity_v1/legacy_to_canonical_identity_crosswalk.json"
+    },
+    {
+      "classification": "D_CORRECTION_EVIDENCE",
+      "old_hashes": [
+        "670255f2e00f04a0e462e1a83cd4c4d0344e92906604aba9312aa7baabb3b78e",
+        "b2d66720fbb0bc7acc998a81e073a9e4774ece7e3ce2900651ff28bf921c2404"
+      ],
+      "path": "reproduction/cross_dataset/arkitscenes_split_v2_canonical_git_blob_identity_v1/pr68_manifest_eol_only_proof.json"
+    }
+  ],
+  "old_hashes": [
+    "670255f2e00f04a0e462e1a83cd4c4d0344e92906604aba9312aa7baabb3b78e",
+    "b2d66720fbb0bc7acc998a81e073a9e4774ece7e3ce2900651ff28bf921c2404"
+  ],
+  "pr69_paths_byte_identical_to_pr69_commit": true,
+  "status": "PASS_IDENTITY_DEPENDENCY_GRAPH",
+  "update_rule": "Only raw-byte identity dependents are updated; semantic and selection identities remain unchanged."
+}
