@@ -1,0 +1,47 @@
+{
+  "attempts_record": "environment_attempts.json",
+  "conda_spec": {
+    "replacement": "pip_freeze.txt plus exact prefix and repair identities",
+    "status": "UNAVAILABLE_NO_CONDA_OR_MAMBA_EXECUTABLE_ON_HOST"
+  },
+  "creation_method": "task-owned copy of pre-existing safer_splat_official prefix plus frozen task-only repairs",
+  "cuda_visible_devices": "1",
+  "environment_prefix": "/disk1/zlab/conda_envs/arkitscenes_splatam_canonical_v1",
+  "imports": {
+    "cv2": {
+      "file": "/disk1/zlab/conda_envs/arkitscenes_splatam_canonical_v1/lib/python3.10/site-packages/cv2/__init__.py"
+    },
+    "diff_gaussian_rasterization": {
+      "file": "/disk1/zlab/conda_envs/arkitscenes_splatam_canonical_v1/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py"
+    },
+    "natsort": {
+      "file": "/disk1/zlab/conda_envs/arkitscenes_splatam_canonical_v1/lib/python3.10/site-packages/natsort/__init__.py"
+    },
+    "open3d": {
+      "file": "/disk1/zlab/conda_envs/arkitscenes_splatam_canonical_v1/lib/python3.10/site-packages/open3d/__init__.py"
+    },
+    "wandb": {
+      "file": "/disk1/zlab/conda_envs/arkitscenes_splatam_canonical_v1/lib/python3.10/site-packages/wandb/__init__.py"
+    }
+  },
+  "official_rasterizer_submodule_head": "cb65e4b86bc3bd8ed42174b72a62e8d3a3a71110",
+  "official_source_checkout_unchanged": true,
+  "official_source_head": "da6bbcd24c248dc884ac7f49d62e91b841b26ccc",
+  "pip_freeze": "pip_freeze.txt",
+  "python": "3.10.20",
+  "rasterizer": {
+    "extension_file": "/disk1/zlab/conda_envs/arkitscenes_splatam_canonical_v1/lib/python3.10/site-packages/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so",
+    "extension_sha256": "fcd7fdbd7078d8b95cfed91ab83818cf90cf80b8b9b4ebd66d631e8290428b5f",
+    "has_gaussian_rasterizer": true,
+    "has_settings": true,
+    "module_file": "/disk1/zlab/conda_envs/arkitscenes_splatam_canonical_v1/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py"
+  },
+  "runtime_overlay": {
+    "path": "/disk1/zlab/maintenance_records/arkitscenes_splatam_canonical_learned_map_qualification_v1/environment/runtime_overlay_setuptools_81_0_0",
+    "pkg_resources_file": "/disk1/zlab/maintenance_records/arkitscenes_splatam_canonical_learned_map_qualification_v1/environment/runtime_overlay_setuptools_81_0_0/pkg_resources/__init__.py"
+  },
+  "source_prefix_unchanged": true,
+  "status": "PASS_ARKITSCENES_SPLATAM_ENVIRONMENT_LOCK_READY",
+  "torch": "2.1.2+cu118",
+  "torch_cuda": "11.8"
+}

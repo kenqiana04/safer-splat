@@ -1,0 +1,17 @@
+{
+  "git_blob_is_raw_authority": true,
+  "hard_failures": [],
+  "invariants": {
+    "cross_edge_zero": true,
+    "discard_zero": true,
+    "duplicate_zero": true,
+    "group_counts": true,
+    "overlap_zero": true,
+    "selected_group_tuple": true,
+    "split_identity": true,
+    "train_heldout_counts": true
+  },
+  "linux_server_validation_required": true,
+  "status": "PASS_CANONICAL_MAPPING_INPUT_ROOT_IDENTITY",
+  "working_tree_is_consistency_check_only": true
+}

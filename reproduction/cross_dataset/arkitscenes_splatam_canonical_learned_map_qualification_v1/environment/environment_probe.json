@@ -1,0 +1,44 @@
+{
+  "cuda_available": true,
+  "environment_variables": {
+    "CUDA_VISIBLE_DEVICES": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONPATH": "/disk1/zlab/maintenance_records/arkitscenes_splatam_canonical_learned_map_qualification_v1/environment/runtime_overlay_setuptools_81_0_0"
+  },
+  "imports": {
+    "cv2": {
+      "file": "/disk1/zlab/conda_envs/arkitscenes_splatam_canonical_v1/lib/python3.10/site-packages/cv2/__init__.py"
+    },
+    "diff_gaussian_rasterization": {
+      "file": "/disk1/zlab/conda_envs/arkitscenes_splatam_canonical_v1/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py"
+    },
+    "natsort": {
+      "file": "/disk1/zlab/conda_envs/arkitscenes_splatam_canonical_v1/lib/python3.10/site-packages/natsort/__init__.py"
+    },
+    "open3d": {
+      "file": "/disk1/zlab/conda_envs/arkitscenes_splatam_canonical_v1/lib/python3.10/site-packages/open3d/__init__.py"
+    },
+    "wandb": {
+      "file": "/disk1/zlab/conda_envs/arkitscenes_splatam_canonical_v1/lib/python3.10/site-packages/wandb/__init__.py"
+    }
+  },
+  "python_executable": "/disk1/zlab/conda_envs/arkitscenes_splatam_canonical_v1/bin/python",
+  "python_version": "3.10.20",
+  "rasterizer": {
+    "extension_file": "/disk1/zlab/conda_envs/arkitscenes_splatam_canonical_v1/lib/python3.10/site-packages/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so",
+    "extension_sha256": "fcd7fdbd7078d8b95cfed91ab83818cf90cf80b8b9b4ebd66d631e8290428b5f",
+    "has_gaussian_rasterizer": true,
+    "has_settings": true,
+    "module_file": "/disk1/zlab/conda_envs/arkitscenes_splatam_canonical_v1/lib/python3.10/site-packages/diff_gaussian_rasterization/__init__.py"
+  },
+  "runtime_overlay": {
+    "path": "/disk1/zlab/maintenance_records/arkitscenes_splatam_canonical_learned_map_qualification_v1/environment/runtime_overlay_setuptools_81_0_0",
+    "pkg_resources_file": "/disk1/zlab/maintenance_records/arkitscenes_splatam_canonical_learned_map_qualification_v1/environment/runtime_overlay_setuptools_81_0_0/pkg_resources/__init__.py"
+  },
+  "status": "PASS_TASK_OWNED_SPLATAM_ENVIRONMENT_PROBE",
+  "torch_cuda": "11.8",
+  "torch_version": "2.1.2+cu118",
+  "visible_cuda_device_count": 1,
+  "visible_cuda_device_name": "NVIDIA GeForce RTX 4090"
+}

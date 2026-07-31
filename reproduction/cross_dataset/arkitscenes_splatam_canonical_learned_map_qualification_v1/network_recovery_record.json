@@ -1,0 +1,20 @@
+{
+  "scope": "explicit user-authorized remote GitHub/proxy recovery only",
+  "incident": "remote loopback proxy 127.0.0.1:17898 intermittently refused connections after a local network/proxy reconnect",
+  "action": "restarted the existing Codex-Persistent-Reverse-Proxy-Watchdog scheduled task once; did not manually kill an SSH process",
+  "verification": {
+    "watchdog_running": true,
+    "local_proxy_127_0_0_1_7897_listening": true,
+    "remote_proxy_127_0_0_1_17898_loopback_listening": true,
+    "github_via_remote_proxy": "PASS",
+    "pypi_via_remote_proxy": "PASS"
+  },
+  "not_changed": [
+    "repository project content during network repair",
+    "global Git proxy",
+    "port 17897",
+    "sshd or network services",
+    "firewall, routing, or SSH configuration",
+    "other SSH sessions"
+  ]
+}

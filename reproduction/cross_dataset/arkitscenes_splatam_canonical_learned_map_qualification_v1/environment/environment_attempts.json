@@ -1,0 +1,81 @@
+{
+  "attempt_count": 3,
+  "attempts": [
+    {
+      "attempt": 1,
+      "failure_class": "missing_runtime_dependency",
+      "failure_detail": "ModuleNotFoundError: No module named natsort",
+      "method": "cp -a exact task-owned prefix clone",
+      "repair_authorized_scope": "task_owned_environment_only",
+      "scientific_rollouts_started": 0,
+      "source_prefix": "/disk1/zlab/conda_envs/safer_splat_official",
+      "source_unchanged": true,
+      "status": "FAILED_PRETRAINING_ENVIRONMENT_PROBE",
+      "target_prefix": "/disk1/zlab/conda_envs/arkitscenes_splatam_canonical_v1"
+    },
+    {
+      "attempt": 2,
+      "completed_at_utc": "2026-07-31T07:58:17Z",
+      "download_returncode": 1,
+      "environment_mutation": false,
+      "global_pip_config_unchanged": true,
+      "index_url_override": "https://pypi.org/simple",
+      "install_returncode": 92,
+      "official_requirement": "natsort (unpinned)",
+      "probe_returncode": 93,
+      "repair": "official-PyPI natsort download attempted but remote loopback proxy refused before any wheel or package was created",
+      "scientific_rollouts_started": 0,
+      "started_at_utc": "2026-07-31T07:58:09Z",
+      "status": "FAILED_PROXY_DOWNLOAD_BEFORE_ENVIRONMENT_MUTATION",
+      "wheel_path": null,
+      "wheel_sha256": null
+    },
+    {
+      "attempt": 3,
+      "build_log_path": "/disk1/zlab/maintenance_records/arkitscenes_splatam_canonical_learned_map_qualification_v1/environment/rasterizer_build_attempt_3.log",
+      "build_log_sha256": "af6f0d8e17e16f24e2643d66319c03e8ea8fa732b75b051ced1c7de80e5e7f7a",
+      "completed_at_utc": "2026-07-31T08:11:42Z",
+      "cuda_home": "/usr/local/cuda-11.8",
+      "dependency_repairs": [
+        {
+          "package": "natsort",
+          "source_requirement": "natsort (unpinned)",
+          "version": "8.4.0",
+          "wheel_path": "/disk1/zlab/maintenance_records/arkitscenes_splatam_canonical_learned_map_qualification_v1/environment/wheels/natsort-8.4.0-py3-none-any.whl",
+          "wheel_sha256": "4732914fb471f56b5cce04d7bae6f164a592c7712e1c85f9ef585e197299521c"
+        },
+        {
+          "package": "kornia_rs",
+          "source_requirement": "kornia 0.7.4 dependency: kornia-rs >=0.1.0",
+          "version": "0.1.14",
+          "wheel_path": "/disk1/zlab/maintenance_records/arkitscenes_splatam_canonical_learned_map_qualification_v1/environment/wheels/kornia_rs-0.1.14-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "wheel_sha256": "b7faddb0f7077a208917ba7c245bf7f87e663b62bd1236bde83beba72dc99dc5"
+        }
+      ],
+      "full_official_splatam_import": true,
+      "official_submodule_head": "cb65e4b86bc3bd8ed42174b72a62e8d3a3a71110",
+      "rasterizer_build_wheel_sha256": "b9c7f8a11dc413e351cec538403c3f666cd937f4f2bd8b00f2b68e01708de465",
+      "rasterizer_extension_sha256": "fcd7fdbd7078d8b95cfed91ab83818cf90cf80b8b9b4ebd66d631e8290428b5f",
+      "repair": "build official fixed rasterizer source in task-owned vendor directory for task prefix ABI",
+      "runtime_overlay_path": "/disk1/zlab/maintenance_records/arkitscenes_splatam_canonical_learned_map_qualification_v1/environment/runtime_overlay_setuptools_81_0_0",
+      "runtime_overlay_source": "/disk1/zlab/runtime_overlays/tum_splatfacto_pkgresources_v1/setuptools_81_0_0",
+      "runtime_overlay_tree_sha256": "e48ce83bd4ce763fe573de5aa5290ba270d08217b3a8184e175fd1460f5edce2",
+      "scientific_rollouts_started": 0,
+      "source_checkout_unchanged": true,
+      "status": "PASS",
+      "target_torch_version": "2.1.2+cu118",
+      "torch_cuda": "11.8",
+      "torch_version": "2.1.2+cu118",
+      "visible_cuda_device_count": 1
+    }
+  ],
+  "infrastructure_events": [
+    {
+      "classification": "network_infrastructure_not_environment_attempt",
+      "environment_mutation": false,
+      "event": "remote_loopback_proxy_transient_refusal_during_wheel_download",
+      "scientific_rollouts_started": 0
+    }
+  ],
+  "status": "PASS_ARKITSCENES_SPLATAM_ENVIRONMENT_LOCK_READY"
+}

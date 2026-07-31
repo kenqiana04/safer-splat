@@ -1,0 +1,22 @@
+{
+  "canonical_input": "PASS_CANONICAL_MAPPING_INPUT_ROOT_IDENTITY",
+  "environment": "PASS_ARKITSCENES_SPLATAM_ENVIRONMENT_LOCK_READY",
+  "final_decision": "STOP_BEFORE_SMOKE_OR_TRAINING_PENDING_LOADER_METRIC_CONTRACT",
+  "final_status": "BLOCKED_BY_ARKITSCENES_SPLATAM_LOADER_OR_METRIC_CONTRACT",
+  "loader_audit": {
+    "determinism": "PASS_FRESH_PROCESS_DETERMINISTIC_LOADER_FAILURE_REPRODUCTION",
+    "failed_gate": "p99_le_0_30",
+    "median_m": 0.013867545872926712,
+    "p95_m": 0.1304869309067726,
+    "p99_m": 0.49155656605958825,
+    "run_1_and_run_2_deterministic_sha256": "adb90f8ee4fd5638662ae2174e7fd75bd31413639038c987ad33508280fc33b7"
+  },
+  "not_run": {
+    "baseline": 0,
+    "confidence_variant": 0,
+    "controller_benchmark": 0,
+    "map_publish": 0,
+    "smoke": 0
+  },
+  "source_config": "PASS_AUTHORIZED_SPLATAM_CONFIG_DIFF_ONLY"
+}

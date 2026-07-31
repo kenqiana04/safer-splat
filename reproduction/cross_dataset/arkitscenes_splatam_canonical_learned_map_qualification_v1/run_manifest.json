@@ -1,0 +1,29 @@
+{
+  "base_head": "ff58dbbd4d7da143e5d457a2765b8760bdcc4959",
+  "base_pr": 70,
+  "branch": "arkitscenes-splatam-canonical-learned-map-qualification-v1",
+  "counters": {
+    "adapter_mapper_activation": 0,
+    "adapter_loader_audit_processes": 2,
+    "baseline_training": 0,
+    "canonical_export": 0,
+    "checkpoint": 0,
+    "clearance_audit": 0,
+    "confidence_variant_training": 0,
+    "controller_benchmark": 0,
+    "environment_creation_attempts": 3,
+    "formal_map_publish": 0,
+    "heldout_depth_evaluation": 0,
+    "heldout_nvs": 0,
+    "safer_g0": 0,
+    "smoke": 0
+  },
+  "final_decision": "STOP_BEFORE_SMOKE_OR_TRAINING_PENDING_LOADER_METRIC_CONTRACT",
+  "final_status": "BLOCKED_BY_ARKITSCENES_SPLATAM_LOADER_OR_METRIC_CONTRACT",
+  "only_next_task": "NO_AUTOMATIC_NEXT_TASK; explicit authorization is required for any new data-quality or protocol-level handling",
+  "scene": {
+    "video_id": "48018874",
+    "visit_id": "483945"
+  },
+  "task": "RESTART_ARKITSCENES_SPLATAM_LEARNED_MAP_QUALIFICATION_FROM_CANONICAL_INPUT_FREEZE_V1"
+}

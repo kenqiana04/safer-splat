@@ -1,0 +1,84 @@
+{
+  "files": [
+    {
+      "bytes": 4402,
+      "path": "canonical_input_freeze/canonical_mapping_input_freeze.json",
+      "sha256": "69b33b8379f9b216dfc7e4f053be56e68acc695ca90204b8424a4adc9f93557e"
+    },
+    {
+      "bytes": 469,
+      "path": "canonical_input_freeze/canonical_mapping_input_validation.json",
+      "sha256": "447ee10811398cbee7900e1289f0ee8d82ed747791850096632232b8991a1e8d"
+    },
+    {
+      "bytes": 6044,
+      "path": "canonical_input_freeze/noncritical_derived_metadata_warnings.json",
+      "sha256": "f72162970dcc44b899185b998d41c44925dff88ac913ee919e63953e729fd172"
+    },
+    {
+      "bytes": 552,
+      "path": "source_audit/official_parent_config_identity.json",
+      "sha256": "4ec8a79314eab1df240f4dd1a1263ba91f3153d8446806c815a561eeee48cb94"
+    },
+    {
+      "bytes": 2086,
+      "path": "source_audit/splatam_source_semantics_audit.json",
+      "sha256": "6325d47dde5fa7d5bb64d1db1de56c4b3ba6acad6667db63183c808d2178fe3e"
+    },
+    {
+      "bytes": 4018,
+      "path": "environment/environment_attempts.json",
+      "sha256": "770ec8072e8b66181c4644f0e7ab1535bf7e8ea8473d42c2a2b91d1dfb05da9e"
+    },
+    {
+      "bytes": 2489,
+      "path": "environment/environment_lock.json",
+      "sha256": "50f12808ca287611bec56bb3f7245bf6772ad54a46612ae15a5570bfdf35802f"
+    },
+    {
+      "bytes": 2286,
+      "path": "environment/environment_probe.json",
+      "sha256": "4bb2439a586138352f6e106818183bd157387e578fa49f5a7dbe55f125fb8638"
+    },
+    {
+      "bytes": 5388,
+      "path": "environment/pip_freeze.txt",
+      "sha256": "ba380fe6ec5163f0f6493b307543bb7b41bedc4a5e8cb1689afd24f1c4443d28"
+    },
+    {
+      "bytes": 4902,
+      "path": "config/resolved_config_diff.json",
+      "sha256": "c07c21eb7133e793f378455b8964ad30fe5325c5d000350bc9f7257090559b67"
+    },
+    {
+      "bytes": 511,
+      "path": "config/arkitscenes_train_dataset.yaml",
+      "sha256": "51752318aaee1e65619b9435aaa14a6c2692e8cc45be6e21cdf8ad6a34e36bd1"
+    },
+    {
+      "bytes": 3226,
+      "path": "config/splatam_arkitscenes_smoke_config.py",
+      "sha256": "a8042e99bb34f696185879e421ddc0cf7e4e672c51b8e65f34f1b799798010d5"
+    },
+    {
+      "bytes": 3230,
+      "path": "config/splatam_arkitscenes_baseline_config.py",
+      "sha256": "34517f64f9986aeeb9a339691a4704e8003548e8098cf17e46ad9b3baf4d0bad"
+    },
+    {
+      "bytes": 26939,
+      "path": "loader_audit/loader_metric_audit_run_1.json",
+      "sha256": "854570a946718362f456015718dfc8d5fc19f920546fbfc8d4c364224d66e1d6"
+    },
+    {
+      "bytes": 26939,
+      "path": "loader_audit/loader_metric_audit_run_2.json",
+      "sha256": "854570a946718362f456015718dfc8d5fc19f920546fbfc8d4c364224d66e1d6"
+    },
+    {
+      "bytes": 464,
+      "path": "loader_audit/loader_metric_determinism.json",
+      "sha256": "3a063788f709d6d5545d85a3b86372485d292d071ecd2e242ae0bbc42eaa060a"
+    }
+  ]
+}
