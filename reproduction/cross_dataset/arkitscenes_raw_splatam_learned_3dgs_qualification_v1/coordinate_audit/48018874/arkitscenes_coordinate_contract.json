@@ -1,0 +1,13 @@
+{
+  "camera_to_world": "official trajectory inverse as frozen in joined manifest",
+  "depth_scale_m_per_unit": 0.001,
+  "mesh_frame": "official ARKit reconstruction mesh",
+  "prohibited": [
+    "ICP",
+    "Sim3",
+    "pose_scale_fitting",
+    "automatic_scale_or_center"
+  ],
+  "status": "COORDINATE_AUDIT_PASS",
+  "validation_sha256": "72e586ccd6cd9ea5d2acecdc3b8ca3f752a8c6232b64b825aa01d730f274ac92"
+}

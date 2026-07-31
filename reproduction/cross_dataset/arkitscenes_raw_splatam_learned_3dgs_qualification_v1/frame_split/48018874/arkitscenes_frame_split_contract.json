@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "filename_overlap": [],
+    "pose_timestamp_overlap": [],
+    "rgb_depth_duplicate_hash_checked": true,
+    "rgb_depth_duplicate_hash_overlap": []
+  },
+  "group_contract": "connected iff camera-center<=0.15m AND orientation geodesic<=15deg AND timestamp delta<=2.0s",
+  "group_count": 13,
+  "group_sizes": [
+    16,
+    1,
+    16,
+    24,
+    9,
+    11,
+    24,
+    18,
+    9,
+    2,
+    94,
+    1,
+    42
+  ],
+  "heldout_count": 0,
+  "heldout_manifest_sha256": null,
+  "joined_manifest_sha256": "d758fe69d01cfc3e9e2f75dcda5a2a3e81eae700602093b3cb785455900fc6f3",
+  "keyframe_contract": "first then translation>=0.08m OR rotation>=8deg; deterministic farthest-pose downsample only above 600",
+  "keyframe_count": 267,
+  "seed": 20260730,
+  "status": "BLOCKED_BY_ARKITSCENES_DATA_OR_COORDINATE_CONTRACT",
+  "train_count": 240,
+  "train_manifest_sha256": "a853128da806e76eb9badfce2718076d68f2c612794c50a6e6e0afd5c70eb87f",
+  "video_id": "48018874"
+}

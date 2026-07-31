@@ -1,0 +1,22 @@
+{
+  "published": [
+    {
+      "already_published": false,
+      "destination": "/disk1/zlab/cross_dataset_assets/raw/arkitscenes/raw/Training/42899163",
+      "role": "PRIMARY",
+      "source": "/disk1/zlab/maintenance_records/arkitscenes_raw_splatam_learned_3dgs_qualification_v1/download/staging/42899163/payload/raw/Training/42899163",
+      "tree_sha256": "ddd7f8513445e9718bd46c2aa955f432636b3e98d94a095b536bc0ee68bec23c",
+      "video_id": "42899163"
+    },
+    {
+      "already_published": false,
+      "destination": "/disk1/zlab/cross_dataset_assets/raw/arkitscenes/raw/Training/48018874",
+      "role": "BACKUP",
+      "source": "/disk1/zlab/maintenance_records/arkitscenes_raw_splatam_learned_3dgs_qualification_v1/download/staging/48018874/payload/raw/Training/48018874",
+      "tree_sha256": "520790d7e80df9690db6b68c3c9e47f55be8e849ab28701d64079007ea79363a",
+      "video_id": "48018874"
+    }
+  ],
+  "selection_sha256": "ff11e21cc23d6585e79e9bf8867983509517d9298678d9dc0f988917fc6a0800",
+  "status": "PRIMARY_BACKUP_SELECTION_PASS"
+}
