@@ -1,0 +1,48 @@
+{
+  "authority": "SHA-256(git cat-file blob <commit>:<path>)",
+  "commit": "bf4483af98be9dc5ebc3be629ff6d3a182e16367",
+  "entries": [
+    {
+      "contract_git_blob_oid": "a2ddc70775e6d0f9c25f77ef5f869556d83b292c",
+      "contract_git_blob_sha256": "167066916ce1a3281ac754dfdeec37ada9f5b0e31227c731c94cebb698a2a6e3",
+      "contract_legacy_crlf_sha256": "b2d66720fbb0bc7acc998a81e073a9e4774ece7e3ce2900651ff28bf921c2404",
+      "contract_matches_exact_blob": true,
+      "contract_top_level_sha256": "167066916ce1a3281ac754dfdeec37ada9f5b0e31227c731c94cebb698a2a6e3",
+      "eol": {
+        "bare_cr_count": 0,
+        "bom": false,
+        "crlf_count": 0,
+        "final_lf": true,
+        "lf_count": 215,
+        "lf_only": true,
+        "utf8_decode": "PASS"
+      },
+      "git_blob_oid": "a2ddc70775e6d0f9c25f77ef5f869556d83b292c",
+      "git_blob_sha256": "167066916ce1a3281ac754dfdeec37ada9f5b0e31227c731c94cebb698a2a6e3",
+      "name": "train",
+      "path": "reproduction/cross_dataset/arkitscenes_spatial_group_split_contract_v2/v2_split/arkitscenes_train_manifest_v2.csv"
+    },
+    {
+      "contract_git_blob_oid": "cf28dd385711a31733360e5fc21dce229ce605bc",
+      "contract_git_blob_sha256": "7b65f741e901690f2a723579d75200eebe7b9e77b0cd57c030d4a14d0474c0c7",
+      "contract_legacy_crlf_sha256": "670255f2e00f04a0e462e1a83cd4c4d0344e92906604aba9312aa7baabb3b78e",
+      "contract_matches_exact_blob": true,
+      "contract_top_level_sha256": "7b65f741e901690f2a723579d75200eebe7b9e77b0cd57c030d4a14d0474c0c7",
+      "eol": {
+        "bare_cr_count": 0,
+        "bom": false,
+        "crlf_count": 0,
+        "final_lf": true,
+        "lf_count": 54,
+        "lf_only": true,
+        "utf8_decode": "PASS"
+      },
+      "git_blob_oid": "cf28dd385711a31733360e5fc21dce229ce605bc",
+      "git_blob_sha256": "7b65f741e901690f2a723579d75200eebe7b9e77b0cd57c030d4a14d0474c0c7",
+      "name": "heldout",
+      "path": "reproduction/cross_dataset/arkitscenes_spatial_group_split_contract_v2/v2_split/arkitscenes_heldout_manifest_v2.csv"
+    }
+  ],
+  "identity_policy": "CANONICAL_GIT_BLOB_BYTES_SHA256_V1",
+  "status": "PASS_CANONICAL_GIT_BLOB_IDENTITY"
+}

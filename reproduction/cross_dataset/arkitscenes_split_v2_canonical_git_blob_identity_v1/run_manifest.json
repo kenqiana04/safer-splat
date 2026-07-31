@@ -1,0 +1,28 @@
+{
+  "counters": {
+    "checkpoint": 0,
+    "clearance": 0,
+    "controller": 0,
+    "gaussian_export": 0,
+    "map": 0,
+    "new_arkitscenes_downloads": 0,
+    "nvs": 0,
+    "safer_g0": 0,
+    "smoke": 0,
+    "splatam_environment_creation": 0,
+    "training": 0,
+    "variant_training": 0
+  },
+  "final_decision": "FREEZE_CANONICAL_LF_GIT_BLOB_IDENTITIES_AND_RESTART_MAPPING_INPUT_FREEZE",
+  "final_status": "PASS_ARKITSCENES_SPLIT_V2_CANONICAL_GIT_BLOB_IDENTITY_CORRECTED",
+  "frozen_pr68_head": "9f068e1708e7422e3e53c01c96fa29242be35f0a",
+  "frozen_pr69_head": "dabaa0bbf44cd81783c3c00d0744f44affaffcb2",
+  "gpu1_final_read_only": "1, 6 MiB, 0 %",
+  "identity_policy": "CANONICAL_GIT_BLOB_BYTES_SHA256_V1",
+  "only_next_task": "RESTART_ARKITSCENES_SPLATAM_LEARNED_MAP_QUALIFICATION_FROM_CANONICAL_INPUT_FREEZE_V1",
+  "other_ssh_sessions_preserved": true,
+  "semantic_change_count": 0,
+  "server_report": "/disk1/zlab/maintenance_records/arkitscenes_split_v2_canonical_git_blob_identity_v1/server_v2_validation_result_bf4483af.json",
+  "task": "CORRECT_ARKITSCENES_SPLIT_V2_CANONICAL_GIT_BLOB_IDENTITY_V1",
+  "validation_commit": "bf4483af98be9dc5ebc3be629ff6d3a182e16367"
+}

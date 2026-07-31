@@ -1,0 +1,39 @@
+{
+  "commit": "bf4483af98be9dc5ebc3be629ff6d3a182e16367",
+  "entries": [
+    {
+      "eol": {
+        "bare_cr_count": 0,
+        "bom": false,
+        "crlf_count": 0,
+        "final_lf": true,
+        "lf_count": 215,
+        "lf_only": true,
+        "utf8_decode": "PASS"
+      },
+      "git_blob_oid": "a2ddc70775e6d0f9c25f77ef5f869556d83b292c",
+      "git_blob_sha256": "167066916ce1a3281ac754dfdeec37ada9f5b0e31227c731c94cebb698a2a6e3",
+      "path": "reproduction/cross_dataset/arkitscenes_spatial_group_split_contract_v2/v2_split/arkitscenes_train_manifest_v2.csv",
+      "working_tree_equals_git_blob": true,
+      "working_tree_sha256": "167066916ce1a3281ac754dfdeec37ada9f5b0e31227c731c94cebb698a2a6e3"
+    },
+    {
+      "eol": {
+        "bare_cr_count": 0,
+        "bom": false,
+        "crlf_count": 0,
+        "final_lf": true,
+        "lf_count": 54,
+        "lf_only": true,
+        "utf8_decode": "PASS"
+      },
+      "git_blob_oid": "cf28dd385711a31733360e5fc21dce229ce605bc",
+      "git_blob_sha256": "7b65f741e901690f2a723579d75200eebe7b9e77b0cd57c030d4a14d0474c0c7",
+      "path": "reproduction/cross_dataset/arkitscenes_spatial_group_split_contract_v2/v2_split/arkitscenes_heldout_manifest_v2.csv",
+      "working_tree_equals_git_blob": true,
+      "working_tree_sha256": "7b65f741e901690f2a723579d75200eebe7b9e77b0cd57c030d4a14d0474c0c7"
+    }
+  ],
+  "platform": "windows",
+  "status": "PASS_CROSS_PLATFORM_CHECKOUT_IDENTITY"
+}
