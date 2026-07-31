@@ -1,0 +1,27 @@
+{
+  "manifests": [
+    {
+      "fieldnames_equal": true,
+      "new_semantic_csv_sha256": "32adca1e09694dce9ff5bebc895109f32f866e1c8ecc845e3927a07f60129d12",
+      "old_semantic_csv_sha256": "32adca1e09694dce9ff5bebc895109f32f866e1c8ecc845e3927a07f60129d12",
+      "ordered_rows_equal": true,
+      "path": "reproduction/cross_dataset/arkitscenes_spatial_group_split_contract_v2/v2_split/arkitscenes_train_manifest_v2.csv",
+      "row_count_after": 214,
+      "row_count_before": 214,
+      "semantic_change_count": 0
+    },
+    {
+      "fieldnames_equal": true,
+      "new_semantic_csv_sha256": "69c8328511cd8405b17b2fc17da9f557ed69ac75b3cfc442f380d586ecab7117",
+      "old_semantic_csv_sha256": "69c8328511cd8405b17b2fc17da9f557ed69ac75b3cfc442f380d586ecab7117",
+      "ordered_rows_equal": true,
+      "path": "reproduction/cross_dataset/arkitscenes_spatial_group_split_contract_v2/v2_split/arkitscenes_heldout_manifest_v2.csv",
+      "row_count_after": 53,
+      "row_count_before": 53,
+      "semantic_change_count": 0
+    }
+  ],
+  "pr68_commit": "9f068e1708e7422e3e53c01c96fa29242be35f0a",
+  "semantic_change_count": 0,
+  "status": "PASS_SEMANTIC_NO_CHANGE"
+}
