@@ -1,0 +1,957 @@
+{
+  "adapter": {
+    "baseline_mask": "depth > 0",
+    "depth_conversion": "uint16_depth * 0.001",
+    "heldout_rejected": true,
+    "icp": false,
+    "pose_estimation": false,
+    "scale_fitting": false,
+    "sim3": false,
+    "train_only": true
+  },
+  "deterministic_sha256": "adb90f8ee4fd5638662ae2174e7fd75bd31413639038c987ad33508280fc33b7",
+  "frame_records": [
+    {
+      "camera_center_world_m": [
+        0.0604542769929,
+        0.116343135901,
+        0.00834165670038
+      ],
+      "depth_unit_max_error_m": 5.91278075390278e-08,
+      "index": 0,
+      "mesh_distance_median_m": 0.02351019997149706,
+      "mesh_distance_p95_m": 0.04933381453156471,
+      "reprojection_max_px": 7.652779469160725e-14,
+      "timestamp": "653418.418"
+    },
+    {
+      "camera_center_world_m": [
+        -0.0829399865868,
+        0.646091828371,
+        0.172395000631
+      ],
+      "depth_unit_max_error_m": 1.182556150780556e-07,
+      "index": 11,
+      "mesh_distance_median_m": 0.009049600455909967,
+      "mesh_distance_p95_m": 0.04589767530560493,
+      "reprojection_max_px": 7.652779469160725e-14,
+      "timestamp": "653419.601"
+    },
+    {
+      "camera_center_world_m": [
+        -0.078656070697,
+        0.65821728238,
+        0.208209128587
+      ],
+      "depth_unit_max_error_m": 1.1444091807533141e-07,
+      "index": 12,
+      "mesh_distance_median_m": 0.00802420498803258,
+      "mesh_distance_p95_m": 0.029514009039849038,
+      "reprojection_max_px": 7.553172887309252e-14,
+      "timestamp": "653419.701"
+    },
+    {
+      "camera_center_world_m": [
+        -0.0495011968232,
+        0.711491813937,
+        0.268832883322
+      ],
+      "depth_unit_max_error_m": 1.182556150780556e-07,
+      "index": 13,
+      "mesh_distance_median_m": 0.009801889304071665,
+      "mesh_distance_p95_m": 0.03530251272022724,
+      "reprojection_max_px": 9.099386826154683e-14,
+      "timestamp": "653419.901"
+    },
+    {
+      "camera_center_world_m": [
+        0.0692971354753,
+        0.824835617943,
+        0.42040662662
+      ],
+      "depth_unit_max_error_m": 2.2125244125703603e-07,
+      "index": 15,
+      "mesh_distance_median_m": 0.011669767554849386,
+      "mesh_distance_p95_m": 0.040948418527841556,
+      "reprojection_max_px": 9.532931148469529e-14,
+      "timestamp": "653420.301"
+    },
+    {
+      "camera_center_world_m": [
+        0.215966615192,
+        0.865022578594,
+        0.652164289128
+      ],
+      "depth_unit_max_error_m": 2.2506713825976021e-07,
+      "index": 18,
+      "mesh_distance_median_m": 0.012276893947273493,
+      "mesh_distance_p95_m": 0.06974484957754605,
+      "reprojection_max_px": 1.0345658394727079e-13,
+      "timestamp": "653421.101"
+    },
+    {
+      "camera_center_world_m": [
+        0.139660386837,
+        1.10713889056,
+        0.705894793318
+      ],
+      "depth_unit_max_error_m": 2.365112301561112e-07,
+      "index": 21,
+      "mesh_distance_median_m": 0.007588117849081755,
+      "mesh_distance_p95_m": 0.09566106908023356,
+      "reprojection_max_px": 8.526512829121202e-14,
+      "timestamp": "653422.100"
+    },
+    {
+      "camera_center_world_m": [
+        0.0599250528794,
+        1.10689128791,
+        0.6505061241
+      ],
+      "depth_unit_max_error_m": 2.2506713825976021e-07,
+      "index": 22,
+      "mesh_distance_median_m": 0.006566405296325684,
+      "mesh_distance_p95_m": 0.11246866919100279,
+      "reprojection_max_px": 1.0345658394727079e-13,
+      "timestamp": "653422.300"
+    },
+    {
+      "camera_center_world_m": [
+        -0.13910248261,
+        1.05907433277,
+        0.44566137535
+      ],
+      "depth_unit_max_error_m": 5.91278075390278e-08,
+      "index": 24,
+      "mesh_distance_median_m": 0.006105371983721852,
+      "mesh_distance_p95_m": 0.02484550531953573,
+      "reprojection_max_px": 8.987733679556355e-14,
+      "timestamp": "653422.700"
+    },
+    {
+      "camera_center_world_m": [
+        -0.324152223649,
+        1.02785965299,
+        0.149206695716
+      ],
+      "depth_unit_max_error_m": 5.817413328834675e-08,
+      "index": 27,
+      "mesh_distance_median_m": 0.012023952789604664,
+      "mesh_distance_p95_m": 0.045696679316461083,
+      "reprojection_max_px": 1.10990323433763e-13,
+      "timestamp": "653423.300"
+    },
+    {
+      "camera_center_world_m": [
+        -0.31162005535,
+        1.28299481227,
+        0.0274230319675
+      ],
+      "depth_unit_max_error_m": 5.91278075390278e-08,
+      "index": 30,
+      "mesh_distance_median_m": 0.017688822001218796,
+      "mesh_distance_p95_m": 0.044497234560549256,
+      "reprojection_max_px": 1.3406493525361332e-13,
+      "timestamp": "653424.000"
+    },
+    {
+      "camera_center_world_m": [
+        -0.360747360192,
+        1.40140897969,
+        0.145808835545
+      ],
+      "depth_unit_max_error_m": 5.91278075390278e-08,
+      "index": 32,
+      "mesh_distance_median_m": 0.010759356431663036,
+      "mesh_distance_p95_m": 0.05037847328931092,
+      "reprojection_max_px": 1.1368683772161603e-13,
+      "timestamp": "653424.399"
+    },
+    {
+      "camera_center_world_m": [
+        -0.383069242812,
+        1.4524568039,
+        0.211387051957
+      ],
+      "depth_unit_max_error_m": 1.0871887212715592e-07,
+      "index": 33,
+      "mesh_distance_median_m": 0.00966839725151658,
+      "mesh_distance_p95_m": 0.04416395984590053,
+      "reprojection_max_px": 8.038873388460929e-14,
+      "timestamp": "653424.599"
+    },
+    {
+      "camera_center_world_m": [
+        -0.408702690787,
+        1.49912321891,
+        0.270754036071
+      ],
+      "depth_unit_max_error_m": 1.1444091807533141e-07,
+      "index": 34,
+      "mesh_distance_median_m": 0.009398610331118107,
+      "mesh_distance_p95_m": 0.03370679970830679,
+      "reprojection_max_px": 1.214175959108492e-13,
+      "timestamp": "653424.799"
+    },
+    {
+      "camera_center_world_m": [
+        -0.678769909597,
+        2.24336656555,
+        0.227339529323
+      ],
+      "depth_unit_max_error_m": 1.182556150780556e-07,
+      "index": 46,
+      "mesh_distance_median_m": 0.025718833319842815,
+      "mesh_distance_p95_m": 0.09504354931414125,
+      "reprojection_max_px": 2.9270566307170014e-13,
+      "timestamp": "653427.198"
+    },
+    {
+      "camera_center_world_m": [
+        -0.737013706697,
+        2.31396431429,
+        0.162579065519
+      ],
+      "depth_unit_max_error_m": 1.1062622062851801e-07,
+      "index": 47,
+      "mesh_distance_median_m": 0.02553961332887411,
+      "mesh_distance_p95_m": 0.047559068351984014,
+      "reprojection_max_px": 3.3266757983254893e-13,
+      "timestamp": "653427.398"
+    },
+    {
+      "camera_center_world_m": [
+        -0.764926428086,
+        2.37776165278,
+        0.120473780818
+      ],
+      "depth_unit_max_error_m": 2.95639037695139e-08,
+      "index": 48,
+      "mesh_distance_median_m": 0.02263163309544325,
+      "mesh_distance_p95_m": 0.0388602128252387,
+      "reprojection_max_px": 3.639754730461873e-13,
+      "timestamp": "653427.598"
+    },
+    {
+      "camera_center_world_m": [
+        -0.782608833029,
+        2.64435624624,
+        0.083701752364
+      ],
+      "depth_unit_max_error_m": 5.91278075390278e-08,
+      "index": 51,
+      "mesh_distance_median_m": 0.008642169181257486,
+      "mesh_distance_p95_m": 0.028093515429645777,
+      "reprojection_max_px": 2.5736952517654053e-13,
+      "timestamp": "653428.198"
+    },
+    {
+      "camera_center_world_m": [
+        -0.91513809884,
+        2.83392740166,
+        0.212250669713
+      ],
+      "depth_unit_max_error_m": 1.1253356912988011e-07,
+      "index": 54,
+      "mesh_distance_median_m": 0.016004598699510098,
+      "mesh_distance_p95_m": 0.043022618629038306,
+      "reprojection_max_px": 1.9328852131274408e-13,
+      "timestamp": "653429.097"
+    },
+    {
+      "camera_center_world_m": [
+        -1.05909606438,
+        2.77712812949,
+        0.376344025095
+      ],
+      "depth_unit_max_error_m": 2.1743774425431184e-07,
+      "index": 57,
+      "mesh_distance_median_m": 0.014462174847722054,
+      "mesh_distance_p95_m": 0.1512232907116412,
+      "reprojection_max_px": 2.21980646867526e-13,
+      "timestamp": "653430.097"
+    },
+    {
+      "camera_center_world_m": [
+        -1.13814377294,
+        2.80200316765,
+        0.383117318213
+      ],
+      "depth_unit_max_error_m": 1.2207031208077979e-07,
+      "index": 58,
+      "mesh_distance_median_m": 0.017176040448248386,
+      "mesh_distance_p95_m": 0.21436980366706845,
+      "reprojection_max_px": 2.1691928285568092e-13,
+      "timestamp": "653430.497"
+    },
+    {
+      "camera_center_world_m": [
+        -1.12375120938,
+        2.73212771449,
+        0.455487122055
+      ],
+      "depth_unit_max_error_m": 2.365112301561112e-07,
+      "index": 60,
+      "mesh_distance_median_m": 0.018038618378341198,
+      "mesh_distance_p95_m": 0.06627548001706597,
+      "reprojection_max_px": 2.0346847496847933e-13,
+      "timestamp": "653431.297"
+    },
+    {
+      "camera_center_world_m": [
+        -1.30883602558,
+        2.83386513717,
+        0.393955191717
+      ],
+      "depth_unit_max_error_m": 1.9073486345888568e-07,
+      "index": 67,
+      "mesh_distance_median_m": 0.015456889290362597,
+      "mesh_distance_p95_m": 0.1094220921397209,
+      "reprojection_max_px": 3.1934924115609293e-13,
+      "timestamp": "653432.996"
+    },
+    {
+      "camera_center_world_m": [
+        -1.4990402139,
+        2.91250702434,
+        0.213226931045
+      ],
+      "depth_unit_max_error_m": 9.918212917625624e-08,
+      "index": 70,
+      "mesh_distance_median_m": 0.014776169322431087,
+      "mesh_distance_p95_m": 0.0686170358210802,
+      "reprojection_max_px": 4.414523734513144e-13,
+      "timestamp": "653433.596"
+    },
+    {
+      "camera_center_world_m": [
+        -1.64351417021,
+        3.02904382432,
+        0.244783821801
+      ],
+      "depth_unit_max_error_m": 1.182556150780556e-07,
+      "index": 73,
+      "mesh_distance_median_m": 0.015066986437886953,
+      "mesh_distance_p95_m": 0.06953277960419653,
+      "reprojection_max_px": 2.5421149729252077e-13,
+      "timestamp": "653434.495"
+    },
+    {
+      "camera_center_world_m": [
+        -1.64961634578,
+        3.00950330041,
+        0.301989779517
+      ],
+      "depth_unit_max_error_m": 1.182556150780556e-07,
+      "index": 74,
+      "mesh_distance_median_m": 0.01706020161509514,
+      "mesh_distance_p95_m": 0.1552982948720455,
+      "reprojection_max_px": 4.272719814472597e-13,
+      "timestamp": "653434.695"
+    },
+    {
+      "camera_center_world_m": [
+        -1.66991205538,
+        2.98931033353,
+        0.353484446263
+      ],
+      "depth_unit_max_error_m": 2.1743774425431184e-07,
+      "index": 75,
+      "mesh_distance_median_m": 0.016511850990355015,
+      "mesh_distance_p95_m": 0.15648328512907028,
+      "reprojection_max_px": 2.4116620165382783e-13,
+      "timestamp": "653434.895"
+    },
+    {
+      "camera_center_world_m": [
+        -1.83769269963,
+        2.84082088689,
+        0.509717642734
+      ],
+      "depth_unit_max_error_m": 1.182556150780556e-07,
+      "index": 78,
+      "mesh_distance_median_m": 0.44439613819122314,
+      "mesh_distance_p95_m": 0.660804608464241,
+      "reprojection_max_px": 2.2914314707516465e-13,
+      "timestamp": "653435.595"
+    },
+    {
+      "camera_center_world_m": [
+        -2.31397081368,
+        2.9724284604,
+        0.58562270232
+      ],
+      "depth_unit_max_error_m": 1.1825561552214481e-07,
+      "index": 83,
+      "mesh_distance_median_m": 0.015850525349378586,
+      "mesh_distance_p95_m": 0.11806031689047813,
+      "reprojection_max_px": 1.2058310082691391e-13,
+      "timestamp": "653436.694"
+    },
+    {
+      "camera_center_world_m": [
+        -2.42691520319,
+        2.88078555267,
+        0.545807547119
+      ],
+      "depth_unit_max_error_m": 1.1825561552214481e-07,
+      "index": 84,
+      "mesh_distance_median_m": 0.012573308311402798,
+      "mesh_distance_p95_m": 0.10980804115533827,
+      "reprojection_max_px": 1.214175959108492e-13,
+      "timestamp": "653436.911"
+    },
+    {
+      "camera_center_world_m": [
+        -3.38258565497,
+        1.76400144393,
+        0.475941912432
+      ],
+      "depth_unit_max_error_m": 1.0681152362579382e-07,
+      "index": 86,
+      "mesh_distance_median_m": 0.02010913472622633,
+      "mesh_distance_p95_m": 0.17727492079138746,
+      "reprojection_max_px": 4.687428401686771e-13,
+      "timestamp": "653440.310"
+    },
+    {
+      "camera_center_world_m": [
+        -2.98435020148,
+        2.32702797528,
+        0.383727270733
+      ],
+      "depth_unit_max_error_m": 1.163482665766935e-07,
+      "index": 97,
+      "mesh_distance_median_m": 0.013429312035441399,
+      "mesh_distance_p95_m": 0.1012730412185192,
+      "reprojection_max_px": 1.9945885082418896e-13,
+      "timestamp": "653447.007"
+    },
+    {
+      "camera_center_world_m": [
+        -3.02933121383,
+        2.26785939518,
+        0.636288968842
+      ],
+      "depth_unit_max_error_m": 5.91278075390278e-08,
+      "index": 106,
+      "mesh_distance_median_m": 0.012184932827949524,
+      "mesh_distance_p95_m": 0.06767554357647894,
+      "reprojection_max_px": 1.4836567898030567e-13,
+      "timestamp": "653448.906"
+    },
+    {
+      "camera_center_world_m": [
+        -3.04074653443,
+        2.21293554926,
+        0.719499132777
+      ],
+      "depth_unit_max_error_m": 5.9127807761072404e-08,
+      "index": 107,
+      "mesh_distance_median_m": 0.015283962246030569,
+      "mesh_distance_p95_m": 0.08659858852624892,
+      "reprojection_max_px": 1.8758866506294801e-13,
+      "timestamp": "653449.106"
+    },
+    {
+      "camera_center_world_m": [
+        -2.61717989799,
+        1.87025506599,
+        0.259220996801
+      ],
+      "depth_unit_max_error_m": 2.365112301561112e-07,
+      "index": 111,
+      "mesh_distance_median_m": 0.012884926982223988,
+      "mesh_distance_p95_m": 0.17812185510993003,
+      "reprojection_max_px": 3.457650183405701e-13,
+      "timestamp": "653452.205"
+    },
+    {
+      "camera_center_world_m": [
+        -2.60947554394,
+        1.85778727106,
+        0.30469165666
+      ],
+      "depth_unit_max_error_m": 2.2125244125703603e-07,
+      "index": 112,
+      "mesh_distance_median_m": 0.014638873748481274,
+      "mesh_distance_p95_m": 0.19559967815876006,
+      "reprojection_max_px": 3.06111178766429e-13,
+      "timestamp": "653452.305"
+    },
+    {
+      "camera_center_world_m": [
+        -2.50225178249,
+        1.72574350392,
+        0.552914095192
+      ],
+      "depth_unit_max_error_m": 2.2506713825976021e-07,
+      "index": 116,
+      "mesh_distance_median_m": 0.024674462154507637,
+      "mesh_distance_p95_m": 0.28269005864858615,
+      "reprojection_max_px": 1.757785650632539e-13,
+      "timestamp": "653453.204"
+    },
+    {
+      "camera_center_world_m": [
+        -2.16884165965,
+        1.76041089108,
+        0.339878784175
+      ],
+      "depth_unit_max_error_m": 1.182556150780556e-07,
+      "index": 122,
+      "mesh_distance_median_m": 0.006862908601760864,
+      "mesh_distance_p95_m": 0.08316568210721016,
+      "reprojection_max_px": 2.799213746640164e-13,
+      "timestamp": "653454.504"
+    },
+    {
+      "camera_center_world_m": [
+        -1.99738666415,
+        1.71409396934,
+        0.18649185984
+      ],
+      "depth_unit_max_error_m": 5.6266784564940053e-08,
+      "index": 125,
+      "mesh_distance_median_m": 0.005224754335358739,
+      "mesh_distance_p95_m": 0.038970800861716254,
+      "reprojection_max_px": 4.263256414560601e-13,
+      "timestamp": "653455.004"
+    },
+    {
+      "camera_center_world_m": [
+        -1.46643588672,
+        1.45874972971,
+        0.561006554423
+      ],
+      "depth_unit_max_error_m": 2.2125244125703603e-07,
+      "index": 137,
+      "mesh_distance_median_m": 0.019905357621610165,
+      "mesh_distance_p95_m": 0.2337090857326984,
+      "reprojection_max_px": 1.0247593068766006e-13,
+      "timestamp": "653457.603"
+    },
+    {
+      "camera_center_world_m": [
+        -1.21622781639,
+        1.42439994904,
+        0.429723136007
+      ],
+      "depth_unit_max_error_m": 1.182556150780556e-07,
+      "index": 143,
+      "mesh_distance_median_m": 0.01132887415587902,
+      "mesh_distance_p95_m": 0.052514919079840156,
+      "reprojection_max_px": 1.4210854715202004e-13,
+      "timestamp": "653459.302"
+    },
+    {
+      "camera_center_world_m": [
+        -1.02319702392,
+        1.31427240177,
+        0.289908504301
+      ],
+      "depth_unit_max_error_m": 1.182556150780556e-07,
+      "index": 146,
+      "mesh_distance_median_m": 0.008079156279563904,
+      "mesh_distance_p95_m": 0.03674385920166968,
+      "reprojection_max_px": 1.7053025658242404e-13,
+      "timestamp": "653460.202"
+    },
+    {
+      "camera_center_world_m": [
+        -0.882567585516,
+        1.19862968515,
+        0.184704876938
+      ],
+      "depth_unit_max_error_m": 8.964538578126735e-08,
+      "index": 148,
+      "mesh_distance_median_m": 0.009123213589191437,
+      "mesh_distance_p95_m": 0.033436973951756946,
+      "reprojection_max_px": 1.7346558842822478e-13,
+      "timestamp": "653460.701"
+    },
+    {
+      "camera_center_world_m": [
+        -0.571918963563,
+        1.36642485291,
+        0.346436937518
+      ],
+      "depth_unit_max_error_m": 1.182556150780556e-07,
+      "index": 155,
+      "mesh_distance_median_m": 0.011894436087459326,
+      "mesh_distance_p95_m": 0.0478218263015151,
+      "reprojection_max_px": 1.2058310082691391e-13,
+      "timestamp": "653462.001"
+    },
+    {
+      "camera_center_world_m": [
+        -0.460058273491,
+        1.48980099612,
+        0.483626308743
+      ],
+      "depth_unit_max_error_m": 1.0871887212715592e-07,
+      "index": 157,
+      "mesh_distance_median_m": 0.013477045577019453,
+      "mesh_distance_p95_m": 0.06791172958910464,
+      "reprojection_max_px": 1.537138960314901e-13,
+      "timestamp": "653462.401"
+    },
+    {
+      "camera_center_world_m": [
+        0.0127749277109,
+        1.34840530606,
+        0.516729172972
+      ],
+      "depth_unit_max_error_m": 2.2125244125703603e-07,
+      "index": 164,
+      "mesh_distance_median_m": 0.018892492167651653,
+      "mesh_distance_p95_m": 0.13250706791877745,
+      "reprojection_max_px": 9.947598300641403e-14,
+      "timestamp": "653463.900"
+    },
+    {
+      "camera_center_world_m": [
+        0.268156076268,
+        1.24837301197,
+        0.217895641627
+      ],
+      "depth_unit_max_error_m": 1.1444091807533141e-07,
+      "index": 168,
+      "mesh_distance_median_m": 0.013311606366187334,
+      "mesh_distance_p95_m": 0.0602168433368206,
+      "reprojection_max_px": 1.5888218580782548e-13,
+      "timestamp": "653464.700"
+    },
+    {
+      "camera_center_world_m": [
+        0.462449646998,
+        1.24895317405,
+        0.14619328482
+      ],
+      "depth_unit_max_error_m": 1.0490417468034252e-07,
+      "index": 171,
+      "mesh_distance_median_m": 0.012103478889912367,
+      "mesh_distance_p95_m": 0.06711945943534374,
+      "reprojection_max_px": 1.8691461090676719e-13,
+      "timestamp": "653465.499"
+    },
+    {
+      "camera_center_world_m": [
+        0.4356995646,
+        1.24571842675,
+        0.225682051355
+      ],
+      "depth_unit_max_error_m": 1.1444091807533141e-07,
+      "index": 172,
+      "mesh_distance_median_m": 0.01512027345597744,
+      "mesh_distance_p95_m": 0.11435098275542259,
+      "reprojection_max_px": 1.1457157353758233e-13,
+      "timestamp": "653465.699"
+    },
+    {
+      "camera_center_world_m": [
+        0.375232874432,
+        1.21073828593,
+        0.341455362187
+      ],
+      "depth_unit_max_error_m": 1.1825561552214481e-07,
+      "index": 174,
+      "mesh_distance_median_m": 0.030912033282220364,
+      "mesh_distance_p95_m": 0.4442004919052124,
+      "reprojection_max_px": 1.1368683772161603e-13,
+      "timestamp": "653465.899"
+    },
+    {
+      "camera_center_world_m": [
+        0.29172167034,
+        1.17965706471,
+        0.452845237267
+      ],
+      "depth_unit_max_error_m": 2.1743774425431184e-07,
+      "index": 175,
+      "mesh_distance_median_m": 0.031303875148296356,
+      "mesh_distance_p95_m": 0.3536928743124008,
+      "reprojection_max_px": 1.1718571004216928e-13,
+      "timestamp": "653466.099"
+    },
+    {
+      "camera_center_world_m": [
+        0.202422807479,
+        1.15253853689,
+        0.548542922526
+      ],
+      "depth_unit_max_error_m": 2.2506713825976021e-07,
+      "index": 176,
+      "mesh_distance_median_m": 0.03286470286548138,
+      "mesh_distance_p95_m": 0.2557534396648406,
+      "reprojection_max_px": 8.038873388460929e-14,
+      "timestamp": "653466.299"
+    },
+    {
+      "camera_center_world_m": [
+        0.121986407795,
+        1.13522591721,
+        0.649508162641
+      ],
+      "depth_unit_max_error_m": 2.2506713825976021e-07,
+      "index": 177,
+      "mesh_distance_median_m": 0.023498833179473877,
+      "mesh_distance_p95_m": 0.15883782207965846,
+      "reprojection_max_px": 1.4299396722704293e-13,
+      "timestamp": "653466.499"
+    },
+    {
+      "camera_center_world_m": [
+        0.125146775897,
+        1.20133605125,
+        0.573679394075
+      ],
+      "depth_unit_max_error_m": 2.365112301561112e-07,
+      "index": 180,
+      "mesh_distance_median_m": 0.02814303059130907,
+      "mesh_distance_p95_m": 0.6325840055942533,
+      "reprojection_max_px": 1.2710574864626038e-13,
+      "timestamp": "653467.499"
+    },
+    {
+      "camera_center_world_m": [
+        0.135382594732,
+        1.19713443978,
+        0.141734169965
+      ],
+      "depth_unit_max_error_m": 1.163482665766935e-07,
+      "index": 185,
+      "mesh_distance_median_m": 0.013464731629937887,
+      "mesh_distance_p95_m": 0.1298686072230339,
+      "reprojection_max_px": 1.1368683772161603e-13,
+      "timestamp": "653467.998"
+    },
+    {
+      "camera_center_world_m": [
+        0.0796742253185,
+        1.19708397313,
+        0.0212750933158
+      ],
+      "depth_unit_max_error_m": 5.9127807761072404e-08,
+      "index": 186,
+      "mesh_distance_median_m": 0.010349660646170378,
+      "mesh_distance_p95_m": 0.047394636832177636,
+      "reprojection_max_px": 1.1718571004216928e-13,
+      "timestamp": "653468.198"
+    },
+    {
+      "camera_center_world_m": [
+        0.0214804562375,
+        1.19327098388,
+        -0.0503797325553
+      ],
+      "depth_unit_max_error_m": 5.91278075390278e-08,
+      "index": 187,
+      "mesh_distance_median_m": 0.008120361715555191,
+      "mesh_distance_p95_m": 0.035286478139460085,
+      "reprojection_max_px": 8.526512829121202e-14,
+      "timestamp": "653468.398"
+    },
+    {
+      "camera_center_world_m": [
+        0.00257815161855,
+        1.11372915387,
+        -0.0380159825984
+      ],
+      "depth_unit_max_error_m": 5.91278075390278e-08,
+      "index": 188,
+      "mesh_distance_median_m": 0.012996154371649027,
+      "mesh_distance_p95_m": 0.0427663242444396,
+      "reprojection_max_px": 1.1718571004216928e-13,
+      "timestamp": "653468.898"
+    },
+    {
+      "camera_center_world_m": [
+        0.059729251729,
+        0.982514840159,
+        0.170653946139
+      ],
+      "depth_unit_max_error_m": 1.1825561552214481e-07,
+      "index": 190,
+      "mesh_distance_median_m": 0.0179491201415658,
+      "mesh_distance_p95_m": 0.1885039627552031,
+      "reprojection_max_px": 8.038873388460929e-14,
+      "timestamp": "653469.298"
+    },
+    {
+      "camera_center_world_m": [
+        0.0803437583382,
+        0.929765720945,
+        0.289400801321
+      ],
+      "depth_unit_max_error_m": 1.182556150780556e-07,
+      "index": 191,
+      "mesh_distance_median_m": 0.026773384772241116,
+      "mesh_distance_p95_m": 0.19369050338864327,
+      "reprojection_max_px": 7.652779469160725e-14,
+      "timestamp": "653469.498"
+    },
+    {
+      "camera_center_world_m": [
+        0.0672045917675,
+        0.842080126728,
+        0.587222777795
+      ],
+      "depth_unit_max_error_m": 1.1444091807533141e-07,
+      "index": 194,
+      "mesh_distance_median_m": 0.01410374091938138,
+      "mesh_distance_p95_m": 0.10454748906195162,
+      "reprojection_max_px": 8.038873388460929e-14,
+      "timestamp": "653470.297"
+    },
+    {
+      "camera_center_world_m": [
+        0.00276698706452,
+        0.849639506457,
+        0.782994316391
+      ],
+      "depth_unit_max_error_m": 1.1253356912988011e-07,
+      "index": 196,
+      "mesh_distance_median_m": 0.008764680474996567,
+      "mesh_distance_p95_m": 0.024239898752421142,
+      "reprojection_max_px": 9.947598300641403e-14,
+      "timestamp": "653470.897"
+    },
+    {
+      "camera_center_world_m": [
+        -0.0108692789652,
+        0.889179804632,
+        0.84710467746
+      ],
+      "depth_unit_max_error_m": 1.182556150780556e-07,
+      "index": 197,
+      "mesh_distance_median_m": 0.006051430711522698,
+      "mesh_distance_p95_m": 0.03557764273136854,
+      "reprojection_max_px": 1.0247593068766006e-13,
+      "timestamp": "653471.197"
+    },
+    {
+      "camera_center_world_m": [
+        0.0879923277245,
+        0.968799842182,
+        0.747975999019
+      ],
+      "depth_unit_max_error_m": 1.182556150780556e-07,
+      "index": 200,
+      "mesh_distance_median_m": 0.010226751677691936,
+      "mesh_distance_p95_m": 0.04978537857532501,
+      "reprojection_max_px": 9.099386826154683e-14,
+      "timestamp": "653472.097"
+    }
+  ],
+  "gates": {
+    "depth_scale_exact": true,
+    "median_le_0_05": true,
+    "p95_le_0_15": true,
+    "p99_le_0_30": false,
+    "per_frame_median_fraction_ge_0_80": true,
+    "reprojection_exact": true
+  },
+  "intrinsics": {
+    "cx_range": [
+      126.878,
+      127.255
+    ],
+    "cy_range": [
+      97.8045,
+      97.9199
+    ],
+    "fx_range": [
+      212.027,
+      215.221
+    ],
+    "fy_range": [
+      212.027,
+      215.221
+    ],
+    "per_frame_preserved_by_adapter": true,
+    "resize_rotation": "identity at frozen 256x192 input resolution"
+  },
+  "metric": {
+    "depth_unit_max_error_m": 2.365112301561112e-07,
+    "frames_median_le_0_10_fraction": 0.984375,
+    "median_m": 0.013867545872926712,
+    "nonfinite": 0,
+    "p95_m": 0.1304869309067726,
+    "p99_m": 0.49155656605958825,
+    "point_count": 32768,
+    "reprojection_max_px": 4.687428401686771e-13
+  },
+  "sample_count": 64,
+  "sample_indices": [
+    0,
+    11,
+    12,
+    13,
+    15,
+    18,
+    21,
+    22,
+    24,
+    27,
+    30,
+    32,
+    33,
+    34,
+    46,
+    47,
+    48,
+    51,
+    54,
+    57,
+    58,
+    60,
+    67,
+    70,
+    73,
+    74,
+    75,
+    78,
+    83,
+    84,
+    86,
+    97,
+    106,
+    107,
+    111,
+    112,
+    116,
+    122,
+    125,
+    137,
+    143,
+    146,
+    148,
+    155,
+    157,
+    164,
+    168,
+    171,
+    172,
+    174,
+    175,
+    176,
+    177,
+    180,
+    185,
+    186,
+    187,
+    188,
+    190,
+    191,
+    194,
+    196,
+    197,
+    200
+  ],
+  "sample_seed": 20260730,
+  "scene": "48018874",
+  "status": "FAIL_ARKITSCENES_SPLATAM_LOADER_METRIC_CONTRACT",
+  "train_manifest_sha256": "167066916ce1a3281ac754dfdeec37ada9f5b0e31227c731c94cebb698a2a6e3",
+  "train_rows": 214
+}

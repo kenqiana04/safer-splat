@@ -1,0 +1,26 @@
+{
+  "status": "BLOCKED_BY_ARKITSCENES_SPLATAM_LOADER_OR_METRIC_CONTRACT",
+  "block_boundary": "after canonical input, source/config, environment, adapter, and loader audit; before smoke",
+  "not_run": {
+    "smoke": 0,
+    "execution_lock": 0,
+    "formal_baseline_process_attempts": 0,
+    "formal_baseline_completed_outputs": 0,
+    "checkpoint": 0,
+    "canonical_export": 0,
+    "heldout_nvs": 0,
+    "heldout_depth_evaluation": 0,
+    "clearance": 0,
+    "safer_g0": 0,
+    "confidence_variant": 0,
+    "controller_benchmark": 0,
+    "map_publish": 0
+  },
+  "prohibited_automatic_actions": [
+    "replace baseline depth_gt_zero with a confidence mask",
+    "run the confidence variant before a completed baseline",
+    "fit scale, ICP, Sim3, or pose correction",
+    "discard low-confidence depth only for the failed frames",
+    "run smoke or formal training"
+  ]
+}

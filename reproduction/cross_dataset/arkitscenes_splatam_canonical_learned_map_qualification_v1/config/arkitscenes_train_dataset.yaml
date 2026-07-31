@@ -1,0 +1,7 @@
+dataset_name: arkitscenes
+scene_id: '48018874'
+expected_split: TRAIN
+manifest_path: '/disk1/zlab/maintenance_records/arkitscenes_splatam_canonical_learned_map_qualification_v1/canonical_input_freeze/arkitscenes_train_manifest_v2.raw.csv'
+manifest_sha256: '167066916ce1a3281ac754dfdeec37ada9f5b0e31227c731c94cebb698a2a6e3'
+asset_root: '/disk1/zlab/maintenance_records/arkitscenes_raw_splatam_learned_3dgs_qualification_v1/download/staging/48018874/payload/raw/Training/48018874'
+depth_mask_mode: 'depth_gt_zero'

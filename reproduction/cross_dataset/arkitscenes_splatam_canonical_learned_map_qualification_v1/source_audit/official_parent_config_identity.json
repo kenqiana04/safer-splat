@@ -1,0 +1,12 @@
+{
+  "parent_config_path": "configs/scannetpp/gaussian_splatting.py",
+  "parent_config_sha256": "d0c5270d8f4e08206b531092c120ad3a923634af6979b4410f0a5c7c8144c9e2",
+  "rejected_parent_classes": [
+    "iphone_or_nerf_only_configuration",
+    "checkpoint_or_resume_configuration",
+    "unrelated_dataset_configuration"
+  ],
+  "selection": "OFFICIAL_SCANNETPP_RGBD_GAUSSIAN_SPLATTING_PARENT",
+  "source_head": "da6bbcd24c248dc884ac7f49d62e91b841b26ccc",
+  "source_path": "/disk1/zlab/external_authorities/SplaTAM-da6bbcd24c248dc884ac7f49d62e91b841b26ccc"
+}

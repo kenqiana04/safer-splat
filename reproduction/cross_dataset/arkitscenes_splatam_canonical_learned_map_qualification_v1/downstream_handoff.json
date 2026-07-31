@@ -1,0 +1,11 @@
+{
+  "current_result": "No ARKitScenes learned Gaussian map was trained, exported, evaluated, or published.",
+  "final_status": "BLOCKED_BY_ARKITSCENES_SPLATAM_LOADER_OR_METRIC_CONTRACT",
+  "frozen_evidence": {
+    "loader_audit": "loader_audit/loader_metric_audit_run_1.json",
+    "loader_determinism": "loader_audit/loader_metric_determinism.json",
+    "run_manifest": "run_manifest.json"
+  },
+  "resume_policy": "Do not resume this task by changing masks, poses, scale, meshes, split, source commit, or map hyperparameters. A separate explicit protocol must decide how to treat the reproducibly inconsistent positive-depth frames.",
+  "selected_map": null
+}
