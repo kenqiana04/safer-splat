@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "execution_counts_zero": true,
+    "forbidden_output_directories_zero": true,
+    "gpu_compute_processes_zero": true,
+    "ssh_sessions_not_modified_by_task": true,
+    "task_processes_zero": true,
+    "watchdog_not_modified_by_task": true
+  },
+  "execution_counts": {
+    "checkpoint": 0,
+    "controller": 0,
+    "download": 0,
+    "environment_creation": 0,
+    "environment_modification": 0,
+    "g0": 0,
+    "learned_map_clearance": 0,
+    "map": 0,
+    "mapper": 0,
+    "nvs": 0,
+    "optimizer_step": 0,
+    "smoke": 0,
+    "training": 0,
+    "variant": 0
+  },
+  "forbidden_output_directories": [],
+  "gpu": {
+    "compute_processes": [],
+    "index": 1,
+    "memory_used_mib": 6,
+    "name": "NVIDIA GeForce RTX 4090",
+    "utilization_percent": 0
+  },
+  "login_session_count_observed": 1,
+  "persistent_proxy_watchdog_preserved": true,
+  "physical_gpu": 1,
+  "ssh_process_count_observed": 27,
+  "ssh_sessions_preserved": true,
+  "status": "PASS_NO_EXECUTION_AND_RESOURCE_BOUNDARY",
+  "task_owned_processes": []
+}

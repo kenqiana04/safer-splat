@@ -1,0 +1,151 @@
+{
+  "m0_valid_pixel_count": 10518528,
+  "masks": {
+    "M1_CONFIDENCE_GE1": {
+      "gates": {
+        "all_groups_pass": false,
+        "global_retention_ge_0_30": true,
+        "longest_unsupported_run_le_5": true,
+        "supported_frame_fraction_ge_0_90": true,
+        "zero_valid_compatibility": false
+      },
+      "groups": {
+        "0": {
+          "frame_count": 24,
+          "pass": true,
+          "retained_fraction": 0.9537870619032118,
+          "supported_frame_count": 24
+        },
+        "1": {
+          "frame_count": 18,
+          "pass": true,
+          "retained_fraction": 0.9432655617042824,
+          "supported_frame_count": 18
+        },
+        "11": {
+          "frame_count": 9,
+          "pass": false,
+          "retained_fraction": 0.7677567093460648,
+          "supported_frame_count": 9
+        },
+        "12": {
+          "frame_count": 94,
+          "pass": true,
+          "retained_fraction": 0.8982591561391844,
+          "supported_frame_count": 94
+        },
+        "2": {
+          "frame_count": 42,
+          "pass": true,
+          "retained_fraction": 0.7973700629340278,
+          "supported_frame_count": 38
+        },
+        "3": {
+          "frame_count": 1,
+          "pass": false,
+          "retained_fraction": 0.8840128580729166,
+          "supported_frame_count": 1
+        },
+        "6": {
+          "frame_count": 2,
+          "pass": false,
+          "retained_fraction": 0.8966166178385416,
+          "supported_frame_count": 2
+        },
+        "9": {
+          "frame_count": 24,
+          "pass": true,
+          "retained_fraction": 0.8906300862630209,
+          "supported_frame_count": 24
+        }
+      },
+      "longest_unsupported_run": 4,
+      "retained_fraction": 0.8820455675927278,
+      "structure_pass": false,
+      "structure_pass_before_zero_mask_semantics": false,
+      "supported_frame_count": 210,
+      "supported_frame_fraction": 0.9813084112149533,
+      "valid_pixel_count": 9277821,
+      "zero_valid_frame_count": 2,
+      "zero_valid_frame_indices": [
+        76,
+        79
+      ]
+    },
+    "M2_CONFIDENCE_EQ2": {
+      "gates": {
+        "all_groups_pass": false,
+        "global_retention_ge_0_30": true,
+        "longest_unsupported_run_le_5": true,
+        "supported_frame_fraction_ge_0_90": true,
+        "zero_valid_compatibility": false
+      },
+      "groups": {
+        "0": {
+          "frame_count": 24,
+          "pass": true,
+          "retained_fraction": 0.8989503648546007,
+          "supported_frame_count": 24
+        },
+        "1": {
+          "frame_count": 18,
+          "pass": true,
+          "retained_fraction": 0.8861264829282407,
+          "supported_frame_count": 18
+        },
+        "11": {
+          "frame_count": 9,
+          "pass": false,
+          "retained_fraction": 0.6011601200810185,
+          "supported_frame_count": 9
+        },
+        "12": {
+          "frame_count": 94,
+          "pass": true,
+          "retained_fraction": 0.77917177457336,
+          "supported_frame_count": 94
+        },
+        "2": {
+          "frame_count": 42,
+          "pass": true,
+          "retained_fraction": 0.6907498798673115,
+          "supported_frame_count": 38
+        },
+        "3": {
+          "frame_count": 1,
+          "pass": false,
+          "retained_fraction": 0.7321370442708334,
+          "supported_frame_count": 1
+        },
+        "6": {
+          "frame_count": 2,
+          "pass": false,
+          "retained_fraction": 0.60791015625,
+          "supported_frame_count": 2
+        },
+        "9": {
+          "frame_count": 24,
+          "pass": true,
+          "retained_fraction": 0.7267846001519097,
+          "supported_frame_count": 24
+        }
+      },
+      "longest_unsupported_run": 4,
+      "retained_fraction": 0.7690652152088201,
+      "structure_pass": false,
+      "structure_pass_before_zero_mask_semantics": false,
+      "supported_frame_count": 210,
+      "supported_frame_fraction": 0.9813084112149533,
+      "valid_pixel_count": 8089434,
+      "zero_valid_frame_count": 4,
+      "zero_valid_frame_indices": [
+        76,
+        77,
+        78,
+        79
+      ]
+    }
+  },
+  "status": "PASS_MASK_SUPERVISION_STRUCTURE_AUDIT",
+  "threshold_provenance": "preregistered audit design choices; not Apple or SplaTAM official thresholds"
+}

@@ -1,0 +1,452 @@
+{
+  "FINAL_DECISION": "CLOSE_ARKITSCENES_SPLATAM_MAPPING_ROUTE_WITHOUT_TRAINING",
+  "FINAL_STATUS": "NO_ARKITSCENES_METRIC_DEPTH_INPUT_CONTRACT_QUALIFIED",
+  "Only_next_task": "ETH3D_DELIVERY_AREA_LEARNED_3DGS_QUALIFICATION_V1",
+  "base_head": "1c55f67e7b93b098c672eb09ff483fd8d037fde9",
+  "base_pr": 71,
+  "branch": "arkitscenes-depth-confidence-p99-tail-audit-v1",
+  "compact_artifacts": [
+    {
+      "path": "AUDIT_ARKITSCENES_DEPTH_CONFIDENCE_ALIGNMENT_AND_P99_TAIL_V1.md",
+      "sha256": "d7edf93c6e2dccf7c4d553a1cd90a1a02d57766586588285166e6767ba8ef9fb",
+      "size": 2081
+    },
+    {
+      "path": "REPORT_AUDIT_ARKITSCENES_DEPTH_CONFIDENCE_ALIGNMENT_AND_P99_TAIL_V1.md",
+      "sha256": "e2da3d91085f47fc7716715e05f981d1bd3668794565158da527f65523807149",
+      "size": 8146
+    },
+    {
+      "path": "__pycache__/audit_common.cpython-310.pyc",
+      "sha256": "c21173e738b49ef12a80a2ca029fe2134934476394201eed82251cdafd56e068",
+      "size": 7944
+    },
+    {
+      "path": "alignment/alignment_fresh_process_reproducibility.json",
+      "sha256": "47c705edfc53ef5616780dfb6a66d542d8ea1c11cb4f59031afa3bcbf2cad4f1",
+      "size": 329
+    },
+    {
+      "path": "alignment/fresh_process_2/confidence_alignment_candidate_audit.json",
+      "sha256": "b66e5a52678e0cb2516365af02d3f2cc162741beb576e998e0a42a2d1b57daa9",
+      "size": 3456
+    },
+    {
+      "path": "alignment/fresh_process_2/confidence_alignment_decision.json",
+      "sha256": "3ce01434f7d4acb86fce8470a743ac3e960cc10a21e63a451f557ae8b873ba4d",
+      "size": 4321
+    },
+    {
+      "path": "alignment/fresh_process_2/confidence_alignment_framewise.csv",
+      "sha256": "151b9ba0d68528e17705993fb7e2bf64614918857f43a6ec356d697c963084b8",
+      "size": 99895
+    },
+    {
+      "path": "audit_common.py",
+      "sha256": "1648fdf1bff5b8dddf10d548b8f37b85fe5696997d80a2e6c2a026ab1687e5ee",
+      "size": 6816
+    },
+    {
+      "path": "audit_confidence_alignment.py",
+      "sha256": "4443086487ddba72212253933cdd300eeb17dde3e8d2e8f84e4575a56493a089",
+      "size": 8127
+    },
+    {
+      "path": "audit_confidence_assets.py",
+      "sha256": "a5f1de174856fe55f36ac1d0514ee8ea62ba75d4dd3fa0ed6cc383a49311c781",
+      "size": 7079
+    },
+    {
+      "path": "audit_full_train_depth_geometry.py",
+      "sha256": "3fd52859548d2b38c0243f078f9abb1b8f20ef0d6e79a95b296dea810d00010f",
+      "size": 15072
+    },
+    {
+      "path": "audit_mask_supervision_structure.py",
+      "sha256": "0d811aa5771af5d281e5fbb08e95c2da5492374e950533edd6801a8646d46017",
+      "size": 5243
+    },
+    {
+      "path": "audit_splatam_zero_mask_semantics.py",
+      "sha256": "06f477c50e68411e69eee7f0adb252a356eb5ba914f7937e2e830379fb11e44c",
+      "size": 4801
+    },
+    {
+      "path": "audit_tail_concentration.py",
+      "sha256": "cd92af24a9a722f06fa5bf2d2896fcad95f2bb83d67bc51d22ebda0ed4543614",
+      "size": 793
+    },
+    {
+      "path": "audit_tail_spatial_temporal_causes.py",
+      "sha256": "97e1d1e6dce7bcf113998e4be6f4697fd8d3417aba790aae548f49448cfbe1a0",
+      "size": 11917
+    },
+    {
+      "path": "build_p99_tail_registry.py",
+      "sha256": "a9779f4a09cbdb77c5417d229f95e3fa3fff6df666a4223ee24830c9e574ca5c",
+      "size": 11253
+    },
+    {
+      "path": "confidence_alignment_candidate_audit.json",
+      "sha256": "b66e5a52678e0cb2516365af02d3f2cc162741beb576e998e0a42a2d1b57daa9",
+      "size": 3456
+    },
+    {
+      "path": "confidence_alignment_decision.json",
+      "sha256": "3ce01434f7d4acb86fce8470a743ac3e960cc10a21e63a451f557ae8b873ba4d",
+      "size": 4321
+    },
+    {
+      "path": "confidence_alignment_framewise.csv",
+      "sha256": "151b9ba0d68528e17705993fb7e2bf64614918857f43a6ec356d697c963084b8",
+      "size": 99895
+    },
+    {
+      "path": "confidence_asset_inventory.csv",
+      "sha256": "75f4efd58060af4069012e2ac94aaf9a3307f783738f55cb227f80764ceff193",
+      "size": 43098
+    },
+    {
+      "path": "confidence_structural_validation.json",
+      "sha256": "a844d8f02faee9d8d0caed025eec21615b348e9b7652d4c382872c7c0bf4add6",
+      "size": 1116
+    },
+    {
+      "path": "confidence_value_distribution.json",
+      "sha256": "8ae5c6bdd4984522b5fdc7f0151f9209198ac65023099eb3303513cb13203ab8",
+      "size": 803
+    },
+    {
+      "path": "decision/decision.json",
+      "sha256": "dc9dc7c47c7c52ab549cd4ca5631c0e7422fed5160f7abb2ac3373da488c826d",
+      "size": 1240
+    },
+    {
+      "path": "depth_validity_candidate_decision.json",
+      "sha256": "dc9dc7c47c7c52ab549cd4ca5631c0e7422fed5160f7abb2ac3373da488c826d",
+      "size": 1240
+    },
+    {
+      "path": "distance_engine_validation.json",
+      "sha256": "8f444d91d309f4e2a73dde2b1e721ea33f1dcbf254ec509545aad7785744c327",
+      "size": 598
+    },
+    {
+      "path": "downstream_handoff.json",
+      "sha256": "ae9cfb5602628c2aec3b5e08db5c23a7e4268968548628c7be0fd6705825ec7f",
+      "size": 722
+    },
+    {
+      "path": "figures/claim_boundary.png",
+      "sha256": "c28a3ec9a40999793907c9be1a8813de47381211d74a5d588d8703056d7f5978",
+      "size": 58860
+    },
+    {
+      "path": "figures/decision_tree_result.png",
+      "sha256": "51f98e6415545306ac0930f36dc4815ce93734c33e59f7a900969845affbc655",
+      "size": 65760
+    },
+    {
+      "path": "figures/group_supervision_coverage.png",
+      "sha256": "9465fa7c58cdbdfe1c98d792d44643abc86a46be8fe96319d99d300155f764b9",
+      "size": 47230
+    },
+    {
+      "path": "figures/m0_m1_m2_global_quantiles.png",
+      "sha256": "0580c1b37b347c081063d4fd13f235c28436a1ebce6fce78e11d170cae196674",
+      "size": 42194
+    },
+    {
+      "path": "figures/mask_retention_vs_geometry.png",
+      "sha256": "8b7e7e5aaee280a18fc198a8f2c5eecac5158c957afcc1146b695088e3ef4993",
+      "size": 59086
+    },
+    {
+      "path": "figures/mesh_ray_coverage_tail.png",
+      "sha256": "103415415004de409db3c7dc8a49492dac2af16a90d7825b9e18366ed4bc5a22",
+      "size": 84144
+    },
+    {
+      "path": "figures/per_frame_median_p99.png",
+      "sha256": "d74353bb69c78ce8591feee99cf01e8a463f4a67ffd573c57b89686b038bf521",
+      "size": 149287
+    },
+    {
+      "path": "figures/root_cause_summary.png",
+      "sha256": "25180d15a6f8ec1b0259dbd7282ce8bc848e0e165284a21c96b45603fa8b9187",
+      "size": 89977
+    },
+    {
+      "path": "figures/tail_confidence_distribution.png",
+      "sha256": "2791791c3650a77067af06746a8a812e12b77a2c2d2d10ba5d0ae5d08e0b40f5",
+      "size": 32823
+    },
+    {
+      "path": "figures/tail_depth_range_distribution.png",
+      "sha256": "1df10e97238b99c4c915f1fa01fd8d63d3903552eeb4cd07afc2d9769cf0ed62",
+      "size": 37446
+    },
+    {
+      "path": "figures/tail_frame_concentration.png",
+      "sha256": "1aa5713fc36134e6d4c549bec265f24fda2dbc476c6f45d66c6b780d6b8c0bd2",
+      "size": 59614
+    },
+    {
+      "path": "figures/tail_image_border_distribution.png",
+      "sha256": "031d9382c2e13a59200c2100a11009284b9a9c5722660679544b59927d3f8ad2",
+      "size": 40710
+    },
+    {
+      "path": "figures/temporal_consistency_tail.png",
+      "sha256": "9e72aa419f1f30b152ac54ccd1e0e304225bbe4d6297b4ba12fed0d01e262c12",
+      "size": 70215
+    },
+    {
+      "path": "figures/top_anomaly_evidence_montage.png",
+      "sha256": "8d5d8e3711805d70e290cf2a0a7b183d5ed053baa74232dd5479c619041e0cd8",
+      "size": 1791357
+    },
+    {
+      "path": "figures/zero_valid_frame_timeline.png",
+      "sha256": "d7b3e08a65b5f2db07ee776b7f916e6b3e778585920e76d5061767ed04c5e29b",
+      "size": 36639
+    },
+    {
+      "path": "finalize_audit.py",
+      "sha256": "47e9d0efcd5c0af10ca8c86f1f8eae0af80984dc56e62c9cf60d811dfa4dfcc5",
+      "size": 18039
+    },
+    {
+      "path": "freeze_depth_confidence_audit_inputs.py",
+      "sha256": "95a24b89a2eea5b30b456f4fdf27942959d46e5373b3c6aa313d3ff24e856348",
+      "size": 6082
+    },
+    {
+      "path": "full_train_mask_metrics.json",
+      "sha256": "11562629f732e73965e8c636937c2db9bddab15e32c87028d57e9525beabfec6",
+      "size": 54801
+    },
+    {
+      "path": "full_train_per_frame_metrics.csv",
+      "sha256": "dd958a284138f543175254473ba7bdff3cee4df03be039a2f158be72509fc4c8",
+      "size": 149372
+    },
+    {
+      "path": "full_train_per_group_metrics.csv",
+      "sha256": "cc0bd5eba26774a004cdf8d01965931c56b84dc3a7142e705ba7322afa21297d",
+      "size": 2780
+    },
+    {
+      "path": "generate_audit_figures.py",
+      "sha256": "af7b6b9c992123f4b1a6fe36f78d618a6d5c1f13cc80c4e38a1baaf76969f4f9",
+      "size": 9545
+    },
+    {
+      "path": "heldout_confidence_structure_only.json",
+      "sha256": "d52cc2df1652eca3067347d775f3a7fc1ef18ec39137b21539d1210a8111e3c5",
+      "size": 331
+    },
+    {
+      "path": "index_78_evidence.json",
+      "sha256": "b64f712cb71ea33b24ae15dc8a1c3aa7eb14b07bd199106532f390e57d706049",
+      "size": 568
+    },
+    {
+      "path": "input_freeze/input_identity.json",
+      "sha256": "c32c71ed7a666716e97b700ac1cc13e0bff7deab89174e4d1613a90d007f094c",
+      "size": 3133
+    },
+    {
+      "path": "mask_supervision_structure.json",
+      "sha256": "d9e68d982a78d13932bf1b69f6b4517c481f3ee8cf2152c5eb4ee59c81d2cbf2",
+      "size": 4318
+    },
+    {
+      "path": "mesh_coverage_gap_registry.csv",
+      "sha256": "99424c223976cf79c44083b5cbae1041fd16d18c6508903bccaba7596259265b",
+      "size": 5772
+    },
+    {
+      "path": "mesh_depth_render_contract.json",
+      "sha256": "076089e98ee35544b8ff5418ab554cd9bccc5363490848be1c4343cb4e094b76",
+      "size": 3737
+    },
+    {
+      "path": "mesh_ray_coverage_metrics.json",
+      "sha256": "d20da6421c8099bed47d2e966d9025198f6848638298d88ef0569d67d973cf66",
+      "size": 1665
+    },
+    {
+      "path": "p99_tail_concentration.json",
+      "sha256": "69d3869bd1aa249a16423a27ab991d77cea234fbbe46ee3a4af65cdbdf86b7be",
+      "size": 9812
+    },
+    {
+      "path": "p99_tail_frame_contribution.csv",
+      "sha256": "0221f432be734dad90185816203993e496f41001152fec949cc3d6abeb518abb",
+      "size": 50722
+    },
+    {
+      "path": "p99_tail_group_contribution.csv",
+      "sha256": "9054dcda0c1ddd954af1b32d20420e3d8619ae4caaefe998abb2b96219e28d12",
+      "size": 1550
+    },
+    {
+      "path": "render_arkit_mesh_depth.py",
+      "sha256": "f54ba782a9ea85a1242c9827bfe90e9393d608b4237e530329e7976f794278af",
+      "size": 710
+    },
+    {
+      "path": "report/REPORT_AUDIT_ARKITSCENES_DEPTH_CONFIDENCE_ALIGNMENT_AND_P99_TAIL_V1.md",
+      "sha256": "e2da3d91085f47fc7716715e05f981d1bd3668794565158da527f65523807149",
+      "size": 8146
+    },
+    {
+      "path": "resource_boundary_validation.json",
+      "sha256": "9a14e2063e94680bd6d66a9f6660d5477c4c3d7da0745090f622d168c4c91683",
+      "size": 1042
+    },
+    {
+      "path": "run_manifest.json",
+      "sha256": "4fce7b9292b0d4926e9c539f4429f19caf0cf4902081f7f2f3f2698a43f7238e",
+      "size": 15267
+    },
+    {
+      "path": "run_zero_mask_microtests.py",
+      "sha256": "b6a662d83add4b507e30b3bd9dfbb0c307a6696afa9dac73bbc8ba214a3599a7",
+      "size": 2346
+    },
+    {
+      "path": "select_depth_validity_candidate.py",
+      "sha256": "55acbf0ecf731499676afd61fb5fab1ef0e5c4da53233792517dbf8ba90303b6",
+      "size": 6631
+    },
+    {
+      "path": "shared_pixel_registry.json",
+      "sha256": "29be3a5b7ff0b057306a04cf62c2618329e38642dbb40e97fdb9f9148a37b421",
+      "size": 25166
+    },
+    {
+      "path": "splatam_mask_compatibility_decision.json",
+      "sha256": "01f9eeddf1bd34a818a5fb1b7581aff7f975676302272403dbdc89893c9cae8b",
+      "size": 921
+    },
+    {
+      "path": "splatam_zero_mask_microtest.json",
+      "sha256": "2ed5e95ec8efca8fa0d63af327a902a4b8dc2c5cc5d86d4ff8af9320766f6f88",
+      "size": 1218
+    },
+    {
+      "path": "splatam_zero_mask_source_audit.md",
+      "sha256": "04ca41b9e9e8292b0a2303f8494613a342ef49f320788b652cb53dcbbe1ff7b4",
+      "size": 5302
+    },
+    {
+      "path": "splatam_zero_mask_source_facts.json",
+      "sha256": "b76b5adcbaee0e6a80713bed0591f6c6b4aaf20e594e2ec1a44ed05f697c446d",
+      "size": 771
+    },
+    {
+      "path": "tail_attribution_summary.json",
+      "sha256": "b24b49b56e994962c2bf7b3d8965aae42c1e7600ce53d0eb61039c49c8a13151",
+      "size": 16214
+    },
+    {
+      "path": "tail_cause_registry.csv",
+      "sha256": "71fb39aa4f8102b248bf6124266a7d8b7e4e6a705036455027bf262414883715",
+      "size": 4850
+    },
+    {
+      "path": "tail_cause_summary.json",
+      "sha256": "dce71bae8dcd8749868c751cb9b7ed96451a5e7b1811ce3e019bdcee9645074e",
+      "size": 616
+    },
+    {
+      "path": "tail_depth_range_factorization.json",
+      "sha256": "7bcd8dc9c6cf382669204e03707e8466dd34c9a5bce1d4417cb6eb283981fc07",
+      "size": 508
+    },
+    {
+      "path": "tail_ray_classification.csv",
+      "sha256": "aaeb30ee5bcb836e3c7c0204f1bf903cab3f0c55973851dbff5eabfde409f331",
+      "size": 1988
+    },
+    {
+      "path": "tail_spatial_factorization.json",
+      "sha256": "6018a312b184a5ed9ad37e07de03f3d8acccce978030d95d42abe3612dfc3805",
+      "size": 1733
+    },
+    {
+      "path": "tail_temporal_consistency.json",
+      "sha256": "e86a48c45e786f2d035a04fb3c567a3b2e0b3e2721ba44d3f8fe82191fbfb4ad",
+      "size": 44629
+    },
+    {
+      "path": "tail_temporal_frame_registry.csv",
+      "sha256": "1d5e8b13fefd6a727037e45b98187a0924af41597e4dc84286b9dfb82d8fa04a",
+      "size": 3547
+    },
+    {
+      "path": "temporal_support_audit.json",
+      "sha256": "47fe03b79c4d512eb4c09ac1f5946e20b3c46091a816be8178084d705d43a28f",
+      "size": 175
+    },
+    {
+      "path": "unsupported_frame_registry.csv",
+      "sha256": "88e3f9b62348d29f8b4a8eeb3b2495d8f7df2477f9d9a7e1468d8564029db8a4",
+      "size": 498
+    },
+    {
+      "path": "validate_no_execution_boundary.py",
+      "sha256": "4cc363079bdc317c6fceba903ac54ca9d8bed38825f6e65318c76c0373c6d2ba",
+      "size": 3673
+    },
+    {
+      "path": "validate_point_to_mesh_engine.py",
+      "sha256": "b7ec92022aa5284b1dba8bab61ad47fa06b590e04f040f4274e5c16bf2910c38",
+      "size": 867
+    },
+    {
+      "path": "validation_result.json",
+      "sha256": "cd1bff14f244cfef5048fd33e6c7c15802a2fc8713aee3705c389b088744e308",
+      "size": 736
+    }
+  ],
+  "deterministic_sha256": "bcfd8facfea1d5307b0b95110f7af4ea4ce3184ad4bee57910f8cc21a6c8879d",
+  "evaluation_mode": "FULL_ALL_POSITIVE_DEPTH_PIXELS",
+  "execution_counts": {
+    "checkpoint": 0,
+    "controller": 0,
+    "download": 0,
+    "environment_creation": 0,
+    "environment_modification": 0,
+    "g0": 0,
+    "learned_map_clearance": 0,
+    "map": 0,
+    "mapper": 0,
+    "nvs": 0,
+    "optimizer_step": 0,
+    "smoke": 0,
+    "training": 0,
+    "variant": 0
+  },
+  "frames_deleted": 0,
+  "heldout_structure_only": 53,
+  "implementation_repairs": [
+    "distinguished genuine raw all-zero confidence files from silent reader fallback",
+    "performed reprojection sanity in original float64 geometry rather than float32 distance-engine coordinates"
+  ],
+  "mask_contract_changed": false,
+  "scene": "48018874",
+  "scientific_inputs_changed": false,
+  "server_only_large_artifact": {
+    "path": "p99_tail_pixel_registry.csv.zst",
+    "sha256": "34e57badc101998dfb5c0912cb14f54bcc4d471dc63f005c38c5948c570760ee",
+    "size": 1518705
+  },
+  "status": "TERMINAL_AUDIT_COMPLETE",
+  "task": "AUDIT_ARKITSCENES_DEPTH_CONFIDENCE_ALIGNMENT_AND_P99_TAIL_V1",
+  "thresholds_relaxed": false,
+  "train": 214,
+  "visit": "483945"
+}

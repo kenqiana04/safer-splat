@@ -1,0 +1,126 @@
+{
+  "all_sanity_positive": true,
+  "intrinsics": "per-frame manifest fx/fy/cx/cy",
+  "pose": "manifest Apple C2W; ray origin=camera center; direction=C2W.R@[(u-cx)/fx,(v-cy)/fy,1]",
+  "resolution": [
+    256,
+    192
+  ],
+  "sanity_frame_count": 16,
+  "sanity_frames": [
+    {
+      "finite_positive_hits": true,
+      "frame_index": 0,
+      "hit_fraction": 1.0,
+      "median_abs_sensor_mesh_z_residual_m": 0.030110260009765688,
+      "ray_count": 49152
+    },
+    {
+      "finite_positive_hits": true,
+      "frame_index": 14,
+      "hit_fraction": 0.9639892578125,
+      "median_abs_sensor_mesh_z_residual_m": 0.020467773914337184,
+      "ray_count": 49152
+    },
+    {
+      "finite_positive_hits": true,
+      "frame_index": 28,
+      "hit_fraction": 0.99383544921875,
+      "median_abs_sensor_mesh_z_residual_m": 0.0321936960220337,
+      "ray_count": 49152
+    },
+    {
+      "finite_positive_hits": true,
+      "frame_index": 42,
+      "hit_fraction": 0.9695638020833334,
+      "median_abs_sensor_mesh_z_residual_m": 0.02383246421813967,
+      "ray_count": 49152
+    },
+    {
+      "finite_positive_hits": true,
+      "frame_index": 56,
+      "hit_fraction": 0.9910888671875,
+      "median_abs_sensor_mesh_z_residual_m": 0.017914800167083744,
+      "ray_count": 49152
+    },
+    {
+      "finite_positive_hits": true,
+      "frame_index": 71,
+      "hit_fraction": 0.9963582356770834,
+      "median_abs_sensor_mesh_z_residual_m": 0.017819655895233155,
+      "ray_count": 49152
+    },
+    {
+      "finite_positive_hits": true,
+      "frame_index": 85,
+      "hit_fraction": 0.9422403971354166,
+      "median_abs_sensor_mesh_z_residual_m": 0.020981581687927187,
+      "ray_count": 49152
+    },
+    {
+      "finite_positive_hits": true,
+      "frame_index": 99,
+      "hit_fraction": 0.9782511393229166,
+      "median_abs_sensor_mesh_z_residual_m": 0.015164242744445833,
+      "ray_count": 49152
+    },
+    {
+      "finite_positive_hits": true,
+      "frame_index": 113,
+      "hit_fraction": 0.87884521484375,
+      "median_abs_sensor_mesh_z_residual_m": 0.018083765029907273,
+      "ray_count": 49152
+    },
+    {
+      "finite_positive_hits": true,
+      "frame_index": 127,
+      "hit_fraction": 0.9946695963541666,
+      "median_abs_sensor_mesh_z_residual_m": 0.005780219674110382,
+      "ray_count": 49152
+    },
+    {
+      "finite_positive_hits": true,
+      "frame_index": 142,
+      "hit_fraction": 0.93695068359375,
+      "median_abs_sensor_mesh_z_residual_m": 0.01407372665405271,
+      "ray_count": 49152
+    },
+    {
+      "finite_positive_hits": true,
+      "frame_index": 156,
+      "hit_fraction": 0.9717610677083334,
+      "median_abs_sensor_mesh_z_residual_m": 0.019139615535736065,
+      "ray_count": 49152
+    },
+    {
+      "finite_positive_hits": true,
+      "frame_index": 170,
+      "hit_fraction": 0.99151611328125,
+      "median_abs_sensor_mesh_z_residual_m": 0.012357898235321074,
+      "ray_count": 49152
+    },
+    {
+      "finite_positive_hits": true,
+      "frame_index": 184,
+      "hit_fraction": 0.9276936848958334,
+      "median_abs_sensor_mesh_z_residual_m": 0.04654708147048947,
+      "ray_count": 49152
+    },
+    {
+      "finite_positive_hits": true,
+      "frame_index": 198,
+      "hit_fraction": 0.96649169921875,
+      "median_abs_sensor_mesh_z_residual_m": 0.007495188713073642,
+      "ray_count": 49152
+    },
+    {
+      "finite_positive_hits": true,
+      "frame_index": 213,
+      "hit_fraction": 0.99945068359375,
+      "median_abs_sensor_mesh_z_residual_m": 0.010222686767578093,
+      "ray_count": 49152
+    }
+  ],
+  "status": "PASS_OFFICIAL_MESH_CAMERA_Z_RENDER_CONTRACT",
+  "z_convention": "unnormalized ray direction camera-z=1, therefore Open3D t_hit equals camera-z depth"
+}

@@ -1,0 +1,87 @@
+{
+  "asset_root": "/disk1/zlab/maintenance_records/arkitscenes_raw_splatam_learned_3dgs_qualification_v1/download/staging/48018874/payload/raw/Training/48018874",
+  "audit_base_head": "1c55f67e7b93b098c672eb09ff483fd8d037fde9",
+  "authority": {
+    "arkitscenes": "7283761bf26c27570ec59a5dc0f8686fbff07726",
+    "rasterizer": "cb65e4b86bc3bd8ed42174b72a62e8d3a3a71110",
+    "splatam": "da6bbcd24c248dc884ac7f49d62e91b841b26ccc"
+  },
+  "checks": {
+    "asset_root": true,
+    "authorities": true,
+    "heldout_all": true,
+    "mesh": true,
+    "repo_head_pr70": true,
+    "train_all": true
+  },
+  "frozen_contract": {
+    "heldout": 53,
+    "pr71_loader_audit_sha": "adb90f8ee4fd5638662ae2174e7fd75bd31413639038c987ad33508280fc33b7",
+    "scene": "48018874",
+    "selected_group_tuple": "8ad320980bb36edb2accb38629ec3046095c9ef7735fbb748f4e112ee75bd388",
+    "split_identity": "97a707510227271d12859ee78defc0d6170cc24cb67e423568cd1a72e3345dee",
+    "train": 214,
+    "visit": "483945"
+  },
+  "manifest_records": {
+    "heldout": {
+      "checks": {
+        "disk_equals_blob": true,
+        "encoding": true,
+        "oid": true,
+        "rows": true,
+        "scene": true,
+        "sha256": true,
+        "split": true
+      },
+      "disk_sha256": "7b65f741e901690f2a723579d75200eebe7b9e77b0cd57c030d4a14d0474c0c7",
+      "final_lf": true,
+      "git_blob_oid": "cf28dd385711a31733360e5fc21dce229ce605bc",
+      "git_blob_sha256": "7b65f741e901690f2a723579d75200eebe7b9e77b0cd57c030d4a14d0474c0c7",
+      "lf_only": true,
+      "path": "reproduction/cross_dataset/arkitscenes_spatial_group_split_contract_v2/v2_split/arkitscenes_heldout_manifest_v2.csv",
+      "row_count": 53,
+      "scene_values": [
+        "48018874"
+      ],
+      "split_values": [
+        "HELDOUT"
+      ],
+      "utf8_no_bom": true,
+      "working_tree_equals_blob": true
+    },
+    "train": {
+      "checks": {
+        "disk_equals_blob": true,
+        "encoding": true,
+        "oid": true,
+        "rows": true,
+        "scene": true,
+        "sha256": true,
+        "split": true
+      },
+      "disk_sha256": "167066916ce1a3281ac754dfdeec37ada9f5b0e31227c731c94cebb698a2a6e3",
+      "final_lf": true,
+      "git_blob_oid": "a2ddc70775e6d0f9c25f77ef5f869556d83b292c",
+      "git_blob_sha256": "167066916ce1a3281ac754dfdeec37ada9f5b0e31227c731c94cebb698a2a6e3",
+      "lf_only": true,
+      "path": "reproduction/cross_dataset/arkitscenes_spatial_group_split_contract_v2/v2_split/arkitscenes_train_manifest_v2.csv",
+      "row_count": 214,
+      "scene_values": [
+        "48018874"
+      ],
+      "split_values": [
+        "TRAIN"
+      ],
+      "utf8_no_bom": true,
+      "working_tree_equals_blob": true
+    }
+  },
+  "mesh": {
+    "path": "/disk1/zlab/maintenance_records/arkitscenes_raw_splatam_learned_3dgs_qualification_v1/download/staging/48018874/payload/raw/Training/48018874/48018874_3dod_mesh.ply",
+    "sha256": "857077ec5019c9efe349f78d561591f42386b60bfd83b912f76e54e47189e6d3",
+    "size": 49480591
+  },
+  "server_canonical_repo_head": "ff58dbbd4d7da143e5d457a2765b8760bdcc4959",
+  "status": "PASS_DEPTH_CONFIDENCE_AUDIT_INPUT_IDENTITY"
+}

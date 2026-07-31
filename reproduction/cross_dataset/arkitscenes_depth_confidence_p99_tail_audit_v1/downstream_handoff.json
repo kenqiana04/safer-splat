@@ -1,0 +1,23 @@
+{
+  "Only_next_task": "ETH3D_DELIVERY_AREA_LEARNED_3DGS_QUALIFICATION_V1",
+  "do_not_train_arkitscenes_from_this_handoff": true,
+  "immutable_results": {
+    "M0": {
+      "geometry_pass": false,
+      "p99_m": 0.48276882112026276
+    },
+    "M1": {
+      "geometry_pass": true,
+      "p99_m": 0.11765064597129882,
+      "structure_pass": false
+    },
+    "M2": {
+      "geometry_pass": true,
+      "p99_m": 0.08135309346020221,
+      "structure_pass": false
+    }
+  },
+  "reason": "No implementation error or dominant mesh-coverage explanation was established, and none of M0/M1/M2 satisfies all preregistered gates.",
+  "recommended_mask": null,
+  "status": "HANDOFF_ARKITSCENES_MAPPING_ROUTE_CLOSED_WITHOUT_TRAINING"
+}
