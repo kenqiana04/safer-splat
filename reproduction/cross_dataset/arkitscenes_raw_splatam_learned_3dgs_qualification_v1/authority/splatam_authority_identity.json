@@ -1,0 +1,14 @@
+{
+  "authority": "https://github.com/spla-tam/SplaTAM",
+  "commit": "da6bbcd24c248dc884ac7f49d62e91b841b26ccc",
+  "forbidden": [
+    "camera_tracking",
+    "COLMAP",
+    "Nerfstudio_camera_optimizer",
+    "ICP",
+    "Sim3",
+    "pose_scale_fitting"
+  ],
+  "required_route": "scripts/gaussian_splatting.py GT-pose map-only",
+  "submodule_status": " cb65e4b86bc3bd8ed42174b72a62e8d3a3a71110 diff-gaussian-rasterization-w-depth.git (heads/main)\n"
+}

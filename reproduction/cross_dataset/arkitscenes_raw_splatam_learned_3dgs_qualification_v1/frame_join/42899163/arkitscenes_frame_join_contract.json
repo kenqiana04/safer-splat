@@ -1,0 +1,20 @@
+{
+  "depth_unit": "uint16 millimetres; later conversion factor=0.001 m/mm",
+  "joined_frame_count": 544,
+  "joined_manifest_sha256": "61ba0f5d18475f546e5e1a9220fe485453b19d3250fb81586734ccf13997344d",
+  "official_loader": "/disk1/zlab/maintenance_records/arkitscenes_raw_splatam_learned_3dgs_qualification_v1/sources/ARKitScenes/threedod/benchmark_scripts/utils/tenFpsDataLoader.py",
+  "official_loader_sha256": "81ccde91bcd93d4314e673d5cda8a22dc5157b3583350ef403b3b2089d995ee3",
+  "pose_contract": "official trajectory rounded-to-0.001 lookup; deterministic nearest tie-break; abs(delta)<0.005; no interpolation or extrapolation",
+  "pose_direction": "camera_to_world; official loader returns inv(world_to_pose) as Rt",
+  "raw_sync_contract": "exact RGB/depth/confidence timestamp; intrinsic exact then -0.001 then +0.001 seconds",
+  "skipped": {
+    "dimension_or_decode": 0,
+    "missing_confidence": 0,
+    "missing_intrinsics": 0,
+    "missing_pose": 2753,
+    "missing_rgb": 0
+  },
+  "status": "FRAME_JOIN_PASS",
+  "trajectory_sha256": "3d1bd979036a599dfa609cb443d97ade24fb9aabf68deadd8baaea6edf76cad6",
+  "video_id": "42899163"
+}

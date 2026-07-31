@@ -1,0 +1,39 @@
+{
+  "candidate_root": "/disk1/zlab/maintenance_records/arkitscenes_raw_splatam_learned_3dgs_qualification_v1/download/staging/48018874/payload/raw/Training/48018874",
+  "candidate_tree_sha256": "520790d7e80df9690db6b68c3c9e47f55be8e849ab28701d64079007ea79363a",
+  "confidence_count": 3456,
+  "depth_count": 3456,
+  "exists": {
+    "confidence": true,
+    "depth": true,
+    "intrinsics": true,
+    "mesh": true,
+    "rgb": true,
+    "trajectory": true
+  },
+  "first_confidence_dtype": "uint8",
+  "first_confidence_shape": [
+    192,
+    256
+  ],
+  "first_confidence_values": [
+    1,
+    2
+  ],
+  "first_depth_dtype": "uint16",
+  "first_depth_shape": [
+    192,
+    256
+  ],
+  "first_rgb_shape": [
+    192,
+    256,
+    3
+  ],
+  "intrinsics_count": 3461,
+  "mesh_sha256": "857077ec5019c9efe349f78d561591f42386b60bfd83b912f76e54e47189e6d3",
+  "rgb_count": 3461,
+  "status": "ASSET_VALIDATION_PASS",
+  "trajectory_sha256": "aa2bba23e4d9517fe68fc1cfae3b5a494fb4113e36ddbb1d15182cdd6a586428",
+  "video_id": "48018874"
+}

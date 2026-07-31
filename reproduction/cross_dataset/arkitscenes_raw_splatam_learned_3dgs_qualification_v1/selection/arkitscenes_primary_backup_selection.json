@@ -1,0 +1,49 @@
+{
+  "backup": {
+    "candidate_hash": "000d603a86bb18727932cd9b5e936583b323300d756b455b518de83054c60b87",
+    "evidence": {
+      "asset": "0975368131cce66f77bef1822410696f15f36629209f30c04f8593f8ed32b143",
+      "coordinate": "72e586ccd6cd9ea5d2acecdc3b8ca3f752a8c6232b64b825aa01d730f274ac92",
+      "geometry": "7011b206567745f0dd590fec807d318780a297979bf9cee72019cf58a6832886",
+      "join": "85481c4e2df77f2fc9c14e49bbe0e41119e88565b934bfee6e6af493e73f2d75"
+    },
+    "precheck_pass": true,
+    "video_id": "48018874",
+    "visit_id": "483945"
+  },
+  "downloaded_complete_candidate_count": 2,
+  "maximum_complete_candidate_downloads": 3,
+  "no_third_candidate_downloaded": true,
+  "primary": {
+    "candidate_hash": "00003085438b20460b41f02d8dd484408a0bc9da3d1d0d61912721cfecdeaac0",
+    "evidence": {
+      "asset": "71b0ce9609b062fdd7382a69450d48c6b13780a2ddc118cafa5e387eabebddbc",
+      "coordinate": "c16a80c77645db192630c319f5b996d0ec0365d0a40a7111e2c5ad97297c26a0",
+      "geometry": "f48e97c41ac6b25b6d7ac7da2e24875ec9f9cdd262a3fe69896a827cc43d1fe9",
+      "join": "aefa61f7cb208171d4d0e384c234fc7ddfdfeec638c8ce16c48f65f44d9204b1"
+    },
+    "precheck_pass": true,
+    "video_id": "42899163",
+    "visit_id": "434897"
+  },
+  "publication": [
+    {
+      "already_published": false,
+      "destination": "/disk1/zlab/cross_dataset_assets/raw/arkitscenes/raw/Training/42899163",
+      "role": "PRIMARY",
+      "source": "/disk1/zlab/maintenance_records/arkitscenes_raw_splatam_learned_3dgs_qualification_v1/download/staging/42899163/payload/raw/Training/42899163",
+      "tree_sha256": "ddd7f8513445e9718bd46c2aa955f432636b3e98d94a095b536bc0ee68bec23c",
+      "video_id": "42899163"
+    },
+    {
+      "already_published": false,
+      "destination": "/disk1/zlab/cross_dataset_assets/raw/arkitscenes/raw/Training/48018874",
+      "role": "BACKUP",
+      "source": "/disk1/zlab/maintenance_records/arkitscenes_raw_splatam_learned_3dgs_qualification_v1/download/staging/48018874/payload/raw/Training/48018874",
+      "tree_sha256": "520790d7e80df9690db6b68c3c9e47f55be8e849ab28701d64079007ea79363a",
+      "video_id": "48018874"
+    }
+  ],
+  "selection_rule": "SHA-256(ARKITSCENES_RAW_CANDIDATE_V1:{visit_id}:{video_id}) ascending Training fold",
+  "status": "PRIMARY_BACKUP_SELECTION_PASS"
+}

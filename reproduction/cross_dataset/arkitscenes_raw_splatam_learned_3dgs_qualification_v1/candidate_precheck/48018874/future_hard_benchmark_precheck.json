@@ -1,0 +1,802 @@
+{
+  "blocked_straight_astar_reachable_pairs": [
+    {
+      "goal_voxel": [
+        -5,
+        13,
+        -2
+      ],
+      "route_voxels": 94,
+      "start_voxel": [
+        -59,
+        48,
+        2
+      ],
+      "turn_count": 74
+    },
+    {
+      "goal_voxel": [
+        -58,
+        42,
+        4
+      ],
+      "route_voxels": 90,
+      "start_voxel": [
+        -3,
+        14,
+        -2
+      ],
+      "turn_count": 61
+    },
+    {
+      "goal_voxel": [
+        -3,
+        8,
+        0
+      ],
+      "route_voxels": 109,
+      "start_voxel": [
+        -61,
+        44,
+        14
+      ],
+      "turn_count": 80
+    },
+    {
+      "goal_voxel": [
+        -54,
+        38,
+        0
+      ],
+      "route_voxels": 82,
+      "start_voxel": [
+        -2,
+        13,
+        4
+      ],
+      "turn_count": 43
+    },
+    {
+      "goal_voxel": [
+        -60,
+        40,
+        14
+      ],
+      "route_voxels": 104,
+      "start_voxel": [
+        -3,
+        8,
+        0
+      ],
+      "turn_count": 72
+    },
+    {
+      "goal_voxel": [
+        1,
+        3,
+        0
+      ],
+      "route_voxels": 97,
+      "start_voxel": [
+        -49,
+        33,
+        12
+      ],
+      "turn_count": 55
+    },
+    {
+      "goal_voxel": [
+        -53,
+        38,
+        0
+      ],
+      "route_voxels": 81,
+      "start_voxel": [
+        -1,
+        12,
+        2
+      ],
+      "turn_count": 53
+    },
+    {
+      "goal_voxel": [
+        -2,
+        7,
+        0
+      ],
+      "route_voxels": 92,
+      "start_voxel": [
+        -55,
+        41,
+        4
+      ],
+      "turn_count": 67
+    },
+    {
+      "goal_voxel": [
+        -60,
+        40,
+        14
+      ],
+      "route_voxels": 117,
+      "start_voxel": [
+        1,
+        3,
+        0
+      ],
+      "turn_count": 82
+    },
+    {
+      "goal_voxel": [
+        -61,
+        54,
+        3
+      ],
+      "route_voxels": 121,
+      "start_voxel": [
+        1,
+        3,
+        0
+      ],
+      "turn_count": 79
+    },
+    {
+      "goal_voxel": [
+        -2,
+        7,
+        0
+      ],
+      "route_voxels": 107,
+      "start_voxel": [
+        -60,
+        47,
+        8
+      ],
+      "turn_count": 75
+    },
+    {
+      "goal_voxel": [
+        -1,
+        12,
+        3
+      ],
+      "route_voxels": 88,
+      "start_voxel": [
+        -57,
+        40,
+        0
+      ],
+      "turn_count": 46
+    },
+    {
+      "goal_voxel": [
+        -2,
+        7,
+        0
+      ],
+      "route_voxels": 74,
+      "start_voxel": [
+        -42,
+        35,
+        5
+      ],
+      "turn_count": 56
+    },
+    {
+      "goal_voxel": [
+        -3,
+        10,
+        0
+      ],
+      "route_voxels": 94,
+      "start_voxel": [
+        -68,
+        32,
+        6
+      ],
+      "turn_count": 45
+    },
+    {
+      "goal_voxel": [
+        -4,
+        12,
+        -1
+      ],
+      "route_voxels": 103,
+      "start_voxel": [
+        -61,
+        53,
+        3
+      ],
+      "turn_count": 78
+    },
+    {
+      "goal_voxel": [
+        -54,
+        35,
+        14
+      ],
+      "route_voxels": 95,
+      "start_voxel": [
+        -2,
+        7,
+        0
+      ],
+      "turn_count": 64
+    },
+    {
+      "goal_voxel": [
+        -3,
+        9,
+        0
+      ],
+      "route_voxels": 88,
+      "start_voxel": [
+        -63,
+        32,
+        4
+      ],
+      "turn_count": 42
+    },
+    {
+      "goal_voxel": [
+        -2,
+        8,
+        0
+      ],
+      "route_voxels": 90,
+      "start_voxel": [
+        -63,
+        32,
+        4
+      ],
+      "turn_count": 43
+    },
+    {
+      "goal_voxel": [
+        -56,
+        39,
+        0
+      ],
+      "route_voxels": 81,
+      "start_voxel": [
+        -4,
+        12,
+        -1
+      ],
+      "turn_count": 50
+    },
+    {
+      "goal_voxel": [
+        1,
+        2,
+        0
+      ],
+      "route_voxels": 107,
+      "start_voxel": [
+        -59,
+        33,
+        11
+      ],
+      "turn_count": 57
+    }
+  ],
+  "braking_insufficient_states": [
+    {
+      "braking_margin_m": -0.022360968082815715,
+      "mesh_clearance_m": 0.1376390319171843,
+      "voxel": [
+        -81,
+        25,
+        -16
+      ]
+    },
+    {
+      "braking_margin_m": -0.042667270515285176,
+      "mesh_clearance_m": 0.11733272948471483,
+      "voxel": [
+        46,
+        37,
+        5
+      ]
+    },
+    {
+      "braking_margin_m": -0.04446380364212522,
+      "mesh_clearance_m": 0.11553619635787479,
+      "voxel": [
+        9,
+        43,
+        -18
+      ]
+    },
+    {
+      "braking_margin_m": -0.0058364491061168935,
+      "mesh_clearance_m": 0.15416355089388312,
+      "voxel": [
+        19,
+        43,
+        26
+      ]
+    },
+    {
+      "braking_margin_m": -0.04335283107628533,
+      "mesh_clearance_m": 0.11664716892371468,
+      "voxel": [
+        8,
+        -9,
+        28
+      ]
+    },
+    {
+      "braking_margin_m": -0.014965251188228008,
+      "mesh_clearance_m": 0.145034748811772,
+      "voxel": [
+        -14,
+        30,
+        -4
+      ]
+    },
+    {
+      "braking_margin_m": -0.046102803279301795,
+      "mesh_clearance_m": 0.11389719672069822,
+      "voxel": [
+        32,
+        17,
+        21
+      ]
+    },
+    {
+      "braking_margin_m": -0.02860288575524545,
+      "mesh_clearance_m": 0.13139711424475456,
+      "voxel": [
+        -92,
+        11,
+        -11
+      ]
+    },
+    {
+      "braking_margin_m": -0.020049898370897497,
+      "mesh_clearance_m": 0.1399501016291025,
+      "voxel": [
+        -71,
+        -20,
+        20
+      ]
+    },
+    {
+      "braking_margin_m": -0.020983920073851282,
+      "mesh_clearance_m": 0.13901607992614873,
+      "voxel": [
+        -31,
+        48,
+        26
+      ]
+    },
+    {
+      "braking_margin_m": -0.026444771470768798,
+      "mesh_clearance_m": 0.1335552285292312,
+      "voxel": [
+        -50,
+        37,
+        -19
+      ]
+    },
+    {
+      "braking_margin_m": -0.014011177107573276,
+      "mesh_clearance_m": 0.14598882289242673,
+      "voxel": [
+        -82,
+        20,
+        11
+      ]
+    },
+    {
+      "braking_margin_m": -0.044959763384534286,
+      "mesh_clearance_m": 0.11504023661546572,
+      "voxel": [
+        -10,
+        4,
+        21
+      ]
+    },
+    {
+      "braking_margin_m": -0.001822812479225451,
+      "mesh_clearance_m": 0.15817718752077456,
+      "voxel": [
+        -60,
+        40,
+        25
+      ]
+    },
+    {
+      "braking_margin_m": -0.023350374706681838,
+      "mesh_clearance_m": 0.13664962529331817,
+      "voxel": [
+        -64,
+        63,
+        2
+      ]
+    },
+    {
+      "braking_margin_m": -0.00031770460334321765,
+      "mesh_clearance_m": 0.1596822953966568,
+      "voxel": [
+        7,
+        51,
+        -2
+      ]
+    },
+    {
+      "braking_margin_m": -0.021906720803835718,
+      "mesh_clearance_m": 0.1380932791961643,
+      "voxel": [
+        -24,
+        56,
+        -6
+      ]
+    },
+    {
+      "braking_margin_m": -0.013040089833878117,
+      "mesh_clearance_m": 0.1469599101661219,
+      "voxel": [
+        19,
+        -28,
+        -2
+      ]
+    },
+    {
+      "braking_margin_m": -0.018939112007453414,
+      "mesh_clearance_m": 0.1410608879925466,
+      "voxel": [
+        34,
+        26,
+        22
+      ]
+    },
+    {
+      "braking_margin_m": -0.034988827275696695,
+      "mesh_clearance_m": 0.12501117272430332,
+      "voxel": [
+        23,
+        32,
+        25
+      ]
+    }
+  ],
+  "candidate_pair_count": 2855,
+  "controller_benchmark_count": 0,
+  "counts": {
+    "blocked_straight_astar_reachable_pairs": 20,
+    "multiturn_narrow_pairs": 10,
+    "near_obstacle_sampled_data_stress_states": 20,
+    "positive_clearance_braking_insufficient_states": 20
+  },
+  "free_voxel_count": 267055,
+  "mesh_sha256": "857077ec5019c9efe349f78d561591f42386b60bfd83b912f76e54e47189e6d3",
+  "multiturn_narrow_pairs": [
+    {
+      "goal_voxel": [
+        -5,
+        13,
+        -2
+      ],
+      "route_min_mesh_clearance_m": 0.1765286238302714,
+      "route_voxels": 94,
+      "start_voxel": [
+        -59,
+        48,
+        2
+      ],
+      "turn_count": 74
+    },
+    {
+      "goal_voxel": [
+        -58,
+        42,
+        4
+      ],
+      "route_min_mesh_clearance_m": 0.001109179641387843,
+      "route_voxels": 90,
+      "start_voxel": [
+        -3,
+        14,
+        -2
+      ],
+      "turn_count": 61
+    },
+    {
+      "goal_voxel": [
+        -3,
+        8,
+        0
+      ],
+      "route_min_mesh_clearance_m": 0.13866384945326257,
+      "route_voxels": 109,
+      "start_voxel": [
+        -61,
+        44,
+        14
+      ],
+      "turn_count": 80
+    },
+    {
+      "goal_voxel": [
+        -54,
+        38,
+        0
+      ],
+      "route_min_mesh_clearance_m": 0.0009367101450506357,
+      "route_voxels": 82,
+      "start_voxel": [
+        -2,
+        13,
+        4
+      ],
+      "turn_count": 43
+    },
+    {
+      "goal_voxel": [
+        -60,
+        40,
+        14
+      ],
+      "route_min_mesh_clearance_m": 0.0017806667825277117,
+      "route_voxels": 104,
+      "start_voxel": [
+        -3,
+        8,
+        0
+      ],
+      "turn_count": 72
+    },
+    {
+      "goal_voxel": [
+        1,
+        3,
+        0
+      ],
+      "route_min_mesh_clearance_m": 0.09457044951413901,
+      "route_voxels": 97,
+      "start_voxel": [
+        -49,
+        33,
+        12
+      ],
+      "turn_count": 55
+    },
+    {
+      "goal_voxel": [
+        -53,
+        38,
+        0
+      ],
+      "route_min_mesh_clearance_m": 0.0012072547988101739,
+      "route_voxels": 81,
+      "start_voxel": [
+        -1,
+        12,
+        2
+      ],
+      "turn_count": 53
+    },
+    {
+      "goal_voxel": [
+        -2,
+        7,
+        0
+      ],
+      "route_min_mesh_clearance_m": 0.1387656341535638,
+      "route_voxels": 92,
+      "start_voxel": [
+        -55,
+        41,
+        4
+      ],
+      "turn_count": 67
+    },
+    {
+      "goal_voxel": [
+        -60,
+        40,
+        14
+      ],
+      "route_min_mesh_clearance_m": 0.0017806667825277117,
+      "route_voxels": 117,
+      "start_voxel": [
+        1,
+        3,
+        0
+      ],
+      "turn_count": 82
+    },
+    {
+      "goal_voxel": [
+        -61,
+        54,
+        3
+      ],
+      "route_min_mesh_clearance_m": 0.0017806667825277117,
+      "route_voxels": 121,
+      "start_voxel": [
+        1,
+        3,
+        0
+      ],
+      "turn_count": 79
+    }
+  ],
+  "observable_area_contract": "free voxels are only camera-trajectory cells and depth-visible ray cells ending before official mesh depth",
+  "robot_contract": {
+    "dt_s": 0.05,
+    "epsilon_base_m": 0.01,
+    "radius_m": 0.1,
+    "umax_componentwise_mps2": 0.1,
+    "vmax_componentwise_mps": 0.1
+  },
+  "sampled_data_stress_states": [
+    {
+      "mesh_clearance_m": 0.1758052969019181,
+      "voxel": [
+        25,
+        46,
+        15
+      ]
+    },
+    {
+      "mesh_clearance_m": 0.1376390319171843,
+      "voxel": [
+        -81,
+        25,
+        -16
+      ]
+    },
+    {
+      "mesh_clearance_m": 0.11733272948471483,
+      "voxel": [
+        46,
+        37,
+        5
+      ]
+    },
+    {
+      "mesh_clearance_m": 0.19269733810428638,
+      "voxel": [
+        30,
+        32,
+        24
+      ]
+    },
+    {
+      "mesh_clearance_m": 0.11553619635787479,
+      "voxel": [
+        9,
+        43,
+        -18
+      ]
+    },
+    {
+      "mesh_clearance_m": 0.19781861228274428,
+      "voxel": [
+        -28,
+        34,
+        -2
+      ]
+    },
+    {
+      "mesh_clearance_m": 0.15416355089388312,
+      "voxel": [
+        19,
+        43,
+        26
+      ]
+    },
+    {
+      "mesh_clearance_m": 0.11664716892371468,
+      "voxel": [
+        8,
+        -9,
+        28
+      ]
+    },
+    {
+      "mesh_clearance_m": 0.1691883843472631,
+      "voxel": [
+        -4,
+        4,
+        -18
+      ]
+    },
+    {
+      "mesh_clearance_m": 0.145034748811772,
+      "voxel": [
+        -14,
+        30,
+        -4
+      ]
+    },
+    {
+      "mesh_clearance_m": 0.11389719672069822,
+      "voxel": [
+        32,
+        17,
+        21
+      ]
+    },
+    {
+      "mesh_clearance_m": 0.13139711424475456,
+      "voxel": [
+        -92,
+        11,
+        -11
+      ]
+    },
+    {
+      "mesh_clearance_m": 0.1399501016291025,
+      "voxel": [
+        -71,
+        -20,
+        20
+      ]
+    },
+    {
+      "mesh_clearance_m": 0.19862531630319868,
+      "voxel": [
+        14,
+        29,
+        -5
+      ]
+    },
+    {
+      "mesh_clearance_m": 0.13901607992614873,
+      "voxel": [
+        -31,
+        48,
+        26
+      ]
+    },
+    {
+      "mesh_clearance_m": 0.18922771666296684,
+      "voxel": [
+        -69,
+        15,
+        1
+      ]
+    },
+    {
+      "mesh_clearance_m": 0.16940256769487883,
+      "voxel": [
+        81,
+        39,
+        10
+      ]
+    },
+    {
+      "mesh_clearance_m": 0.1903619929354321,
+      "voxel": [
+        -72,
+        60,
+        -16
+      ]
+    },
+    {
+      "mesh_clearance_m": 0.1335552285292312,
+      "voxel": [
+        -50,
+        37,
+        -19
+      ]
+    },
+    {
+      "mesh_clearance_m": 0.14598882289242673,
+      "voxel": [
+        -82,
+        20,
+        11
+      ]
+    }
+  ],
+  "seed": 20260730,
+  "status": "HARD_BENCHMARK_GEOMETRY_PRECHECK_PASS",
+  "video_id": "48018874",
+  "voxel_m": 0.05
+}

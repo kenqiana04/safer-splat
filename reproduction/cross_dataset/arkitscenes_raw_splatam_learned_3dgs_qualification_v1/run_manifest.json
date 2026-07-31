@@ -1,0 +1,107 @@
+{
+  "backup": {
+    "candidate_hash": "000d603a86bb18727932cd9b5e936583b323300d756b455b518de83054c60b87",
+    "evidence": {
+      "asset": "0975368131cce66f77bef1822410696f15f36629209f30c04f8593f8ed32b143",
+      "coordinate": "72e586ccd6cd9ea5d2acecdc3b8ca3f752a8c6232b64b825aa01d730f274ac92",
+      "geometry": "7011b206567745f0dd590fec807d318780a297979bf9cee72019cf58a6832886",
+      "join": "85481c4e2df77f2fc9c14e49bbe0e41119e88565b934bfee6e6af493e73f2d75"
+    },
+    "precheck_pass": true,
+    "video_id": "48018874",
+    "visit_id": "483945"
+  },
+  "candidate_registry_sha256": "582754d0f51870a5881c6e326fd234fccce0ba613ed47c19fab3b4792a12240b",
+  "checkpoint_exists": false,
+  "controller_benchmark_count": 0,
+  "download_manifest_sha256": {
+    "arkitscenes_download_manifest_42899163.json": "3c2d87e35f20f1f003df6a422dad876b6d851ce0b1c5e56bc5f2cc591962a6fd",
+    "arkitscenes_download_manifest_48018874.json": "d3081d4962a700343b29ffc28786a8e6379fe41ecc71ece9a24779ff0a0996ed"
+  },
+  "final_decision": "STOP_BEFORE_SPLATAM_TRAINING_WITHOUT_RELAXING_FROZEN_SPLIT_CONTRACT",
+  "final_status": "BLOCKED_BY_ARKITSCENES_DATA_OR_COORDINATE_CONTRACT",
+  "formal_map_exists": false,
+  "no_group_splitting": true,
+  "no_icp_sim3_scale_repair": true,
+  "no_splatam_environment_created": true,
+  "no_splatam_training_started": true,
+  "no_third_candidate_downloaded": true,
+  "no_threshold_relaxation": true,
+  "primary": {
+    "candidate_hash": "00003085438b20460b41f02d8dd484408a0bc9da3d1d0d61912721cfecdeaac0",
+    "evidence": {
+      "asset": "71b0ce9609b062fdd7382a69450d48c6b13780a2ddc118cafa5e387eabebddbc",
+      "coordinate": "c16a80c77645db192630c319f5b996d0ec0365d0a40a7111e2c5ad97297c26a0",
+      "geometry": "f48e97c41ac6b25b6d7ac7da2e24875ec9f9cdd262a3fe69896a827cc43d1fe9",
+      "join": "aefa61f7cb208171d4d0e384c234fc7ddfdfeec638c8ce16c48f65f44d9204b1"
+    },
+    "precheck_pass": true,
+    "video_id": "42899163",
+    "visit_id": "434897"
+  },
+  "smoke_count": 0,
+  "split_failures": {
+    "42899163": {
+      "checks": {
+        "filename_overlap": [],
+        "pose_timestamp_overlap": [],
+        "rgb_depth_duplicate_hash_checked": true,
+        "rgb_depth_duplicate_hash_overlap": []
+      },
+      "group_contract": "connected iff camera-center<=0.15m AND orientation geodesic<=15deg AND timestamp delta<=2.0s",
+      "group_count": 4,
+      "group_sizes": [
+        30,
+        4,
+        3,
+        136
+      ],
+      "heldout_count": 0,
+      "heldout_manifest_sha256": null,
+      "joined_manifest_sha256": "61ba0f5d18475f546e5e1a9220fe485453b19d3250fb81586734ccf13997344d",
+      "keyframe_contract": "first then translation>=0.08m OR rotation>=8deg; deterministic farthest-pose downsample only above 600",
+      "keyframe_count": 173,
+      "seed": 20260730,
+      "status": "BLOCKED_BY_ARKITSCENES_DATA_OR_COORDINATE_CONTRACT",
+      "train_count": 0,
+      "train_manifest_sha256": null,
+      "video_id": "42899163"
+    },
+    "48018874": {
+      "checks": {
+        "filename_overlap": [],
+        "pose_timestamp_overlap": [],
+        "rgb_depth_duplicate_hash_checked": true,
+        "rgb_depth_duplicate_hash_overlap": []
+      },
+      "group_contract": "connected iff camera-center<=0.15m AND orientation geodesic<=15deg AND timestamp delta<=2.0s",
+      "group_count": 13,
+      "group_sizes": [
+        16,
+        1,
+        16,
+        24,
+        9,
+        11,
+        24,
+        18,
+        9,
+        2,
+        94,
+        1,
+        42
+      ],
+      "heldout_count": 0,
+      "heldout_manifest_sha256": null,
+      "joined_manifest_sha256": "d758fe69d01cfc3e9e2f75dcda5a2a3e81eae700602093b3cb785455900fc6f3",
+      "keyframe_contract": "first then translation>=0.08m OR rotation>=8deg; deterministic farthest-pose downsample only above 600",
+      "keyframe_count": 267,
+      "seed": 20260730,
+      "status": "BLOCKED_BY_ARKITSCENES_DATA_OR_COORDINATE_CONTRACT",
+      "train_count": 240,
+      "train_manifest_sha256": "a853128da806e76eb9badfce2718076d68f2c612794c50a6e6e0afd5c70eb87f",
+      "video_id": "48018874"
+    }
+  },
+  "training_count": 0
+}

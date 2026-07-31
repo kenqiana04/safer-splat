@@ -1,0 +1,74 @@
+{
+  "checks": {
+    "apple": {
+      "command": [
+        "/home/zlab/.config/scannetpp_proxy/run_with_scannetpp_proxy.sh",
+        "git",
+        "ls-remote",
+        "https://github.com/apple/ARKitScenes.git",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "7283761bf26c27570ec59a5dc0f8686fbff07726\tHEAD\n"
+    },
+    "disk_free_bytes": 313192148992,
+    "download_script": {
+      "command": [
+        "/home/zlab/.config/scannetpp_proxy/run_with_scannetpp_proxy.sh",
+        "curl",
+        "-sS",
+        "-o",
+        "/dev/null",
+        "-w",
+        "%{http_code}",
+        "-I",
+        "--connect-timeout",
+        "10",
+        "--max-time",
+        "30",
+        "https://raw.githubusercontent.com/apple/ARKitScenes/7283761bf26c27570ec59a5dc0f8686fbff07726/download_data.py"
+      ],
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "200"
+    },
+    "github": {
+      "command": [
+        "/home/zlab/.config/scannetpp_proxy/run_with_scannetpp_proxy.sh",
+        "curl",
+        "-sS",
+        "-o",
+        "/dev/null",
+        "-w",
+        "%{http_code}",
+        "-I",
+        "--connect-timeout",
+        "10",
+        "--max-time",
+        "30",
+        "https://github.com"
+      ],
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "200"
+    },
+    "splatam": {
+      "command": [
+        "/home/zlab/.config/scannetpp_proxy/run_with_scannetpp_proxy.sh",
+        "git",
+        "ls-remote",
+        "https://github.com/spla-tam/SplaTAM.git",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "da6bbcd24c248dc884ac7f49d62e91b841b26ccc\tHEAD\n"
+    },
+    "wrapper": true
+  },
+  "controller_benchmark_count": 0,
+  "download_count": 0,
+  "status": "PASS",
+  "training_count": 0
+}

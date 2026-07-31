@@ -1,0 +1,24 @@
+{
+  "backup_keyframes_train_heldout": [
+    267,
+    240,
+    0
+  ],
+  "critical_evidence_unresolved": "Neither pre-frozen candidate can form the required >=220 TRAIN and >=50 HELDOUT disjoint spatial-group split.",
+  "failed_gate": "frozen spatial group split",
+  "passed_before_split": [
+    "official_access",
+    "authority_freeze",
+    "candidate_selection",
+    "raw_asset_validation",
+    "RGB-D-pose join",
+    "metric_coordinate_audit",
+    "future_hard_benchmark_geometry_precheck"
+  ],
+  "primary_keyframes_train_heldout": [
+    173,
+    0,
+    0
+  ],
+  "status": "BLOCKED_BY_ARKITSCENES_DATA_OR_COORDINATE_CONTRACT"
+}
