@@ -13,7 +13,7 @@ from canonical_identity_common import CORRECTION_ROOT, PR68, PR69, V2_ROOT, writ
 STATUS = "PASS_ARKITSCENES_SPLIT_V2_CANONICAL_GIT_BLOB_IDENTITY_CORRECTED"
 DECISION = "FREEZE_CANONICAL_LF_GIT_BLOB_IDENTITIES_AND_RESTART_MAPPING_INPUT_FREEZE"
 NEXT = "RESTART_ARKITSCENES_SPLATAM_LEARNED_MAP_QUALIFICATION_FROM_CANONICAL_INPUT_FREEZE_V1"
-COMMIT = "bf4483af98be9dc5ebc3be629ff6d3a182e16367"
+COMMIT = ""
 
 
 def read(root: Path, name: str) -> dict:
@@ -37,7 +37,10 @@ def figure(path: Path, title: str, lines: list[str]) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--repo", type=Path, required=True)
+    parser.add_argument("--validation-commit", required=True)
     args = parser.parse_args()
+    global COMMIT
+    COMMIT = args.validation_commit
     repo = args.repo.resolve()
     root = repo / CORRECTION_ROOT
     proof = read(root, "pr68_manifest_eol_only_proof.json")
