@@ -1,0 +1,13 @@
+{
+  "checkpoint_support": "offline mapper saves final params but exposes no in-loop checkpoint/resume path in the audited entry point",
+  "gaussian_parameters": {
+    "log_scales": "log of linear scale initialized projectively",
+    "logit_opacities": "logits converted with sigmoid only at export",
+    "means3D": "world-space means from RGB-D backprojection",
+    "rgb_colors": "RGB colour parameters",
+    "unnorm_rotations": "WXYZ quaternion parameters normalized for rendering"
+  },
+  "pose_path": "frozen offline mapper inverts per-frame C2W to W2C and assigns GT camera pose with zero camera learning rates",
+  "status": "SOURCE_AUDIT_COMPLETED_BEFORE_RUNTIME_BLOCK",
+  "training_not_started": true
+}

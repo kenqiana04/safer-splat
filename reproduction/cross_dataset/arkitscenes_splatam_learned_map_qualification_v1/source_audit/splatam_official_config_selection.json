@@ -1,0 +1,11 @@
+{
+  "alternative_rejected": {
+    "path": "configs/iphone/gaussian_splatting.py",
+    "reason": "targets a separate online iPhone script and does not implement the audited offline mapper train-config interface"
+  },
+  "candidate_parent": {
+    "path": "configs/scannetpp/gaussian_splatting.py",
+    "reason": "only compatible frozen real RGB-D Gaussian-splatting parent with explicit offline mapper data and train contracts"
+  },
+  "selection_status": "PRESELECTED_NOT_ACTIVATED_DUE_TO_INPUT_IDENTITY_BLOCK"
+}
