@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import subprocess
 from pathlib import Path
@@ -59,10 +60,15 @@ def main() -> int:
     contract = json.loads((repo / V2_ROOT / "v2_split/arkitscenes_spatial_group_split_contract_v2.json").read_text(encoding="utf-8"))
     old_contract = json.loads(subprocess.check_output(["git", "-C", str(repo), "show", f"{PR68}:{(V2_ROOT / 'v2_split/arkitscenes_spatial_group_split_contract_v2.json').as_posix()}"]).decode("utf-8"))
     crosswalk = read(root, "legacy_to_canonical_identity_crosswalk.json")
+    producer_path = V2_ROOT / "arkitscenes_split_v2_common.py"
+    attributes_path = V2_ROOT / ".gitattributes"
+    producer_blob_sha256 = hashlib.sha256(subprocess.check_output(["git", "-C", str(repo), "show", f"{COMMIT}:{producer_path.as_posix()}"])).hexdigest()
+    attributes_blob_sha256 = hashlib.sha256(subprocess.check_output(["git", "-C", str(repo), "show", f"{COMMIT}:{attributes_path.as_posix()}"])).hexdigest()
+    producer_ok = contract["producer_sha256"] == producer_blob_sha256 and contract["gitattributes_sha256"] == attributes_blob_sha256 and all(item["producer_sha256"] == producer_blob_sha256 and item["gitattributes_sha256"] == attributes_blob_sha256 for item in contract["manifest_identities"].values())
 
     platform_ok = windows["status"] == linux["status"] == "PASS_CROSS_PLATFORM_CHECKOUT_IDENTITY"
     blobs_ok = canonical_windows["status"] == canonical_linux["status"] == "PASS_CANONICAL_GIT_BLOB_IDENTITY"
-    valid = (proof["status"] == "PASS_EOL_ONLY_MANIFEST_MISMATCH" and semantic["status"] == "PASS_SEMANTIC_NO_CHANGE" and invariant["status"] == "PASS_SPLIT_INVARIANT_REGRESSION" and fresh["status"] == "PASS_FRESH_LF_REGENERATION" and graph["status"] == "PASS_IDENTITY_DEPENDENCY_GRAPH" and blobs_ok and platform_ok and server_v2["status"] == "V2_SPLIT_VALIDATION_PASS")
+    valid = (proof["status"] == "PASS_EOL_ONLY_MANIFEST_MISMATCH" and semantic["status"] == "PASS_SEMANTIC_NO_CHANGE" and invariant["status"] == "PASS_SPLIT_INVARIANT_REGRESSION" and fresh["status"] == "PASS_FRESH_LF_REGENERATION" and graph["status"] == "PASS_IDENTITY_DEPENDENCY_GRAPH" and blobs_ok and platform_ok and producer_ok and server_v2["status"] == "V2_SPLIT_VALIDATION_PASS")
     if not valid:
         raise SystemExit("BLOCKED_BY_CROSS_PLATFORM_MANIFEST_IDENTITY_CANONICALIZATION")
 
@@ -86,6 +92,8 @@ def main() -> int:
         "final_decision": DECISION,
         "only_next_task": NEXT,
         "identity_policy": contract["identity_policy"],
+        "producer_git_blob_sha256": producer_blob_sha256,
+        "gitattributes_git_blob_sha256": attributes_blob_sha256,
         "semantic_change_count": 0,
         "server_report": "/disk1/zlab/maintenance_records/arkitscenes_split_v2_canonical_git_blob_identity_v1/server_v2_validation_result_bf4483af.json",
         "gpu1_final_read_only": "1, 6 MiB, 0 %",
@@ -100,6 +108,7 @@ def main() -> int:
             "fresh_processes": fresh["status"], "identity_dependency_graph": graph["status"],
             "git_blob_windows": canonical_windows["status"], "git_blob_linux": canonical_linux["status"],
             "cross_platform": combined_platform["status"], "server_v2_validator": server_v2["status"],
+            "producer_and_gitattributes_git_blob_identity": "PASS" if producer_ok else "BLOCKED",
         },
         "pr69_root_byte_identical": graph["pr69_paths_byte_identical_to_pr69_commit"],
         "runtime_counters": no_runtime,
@@ -151,7 +160,7 @@ The legacy CRLF hashes are retained in the V2 contract as `PRECOMMIT_PLATFORM_DE
 - Semantic regression: `{semantic['status']}`; fieldnames and every ordered row are unchanged.
 - Split regression: `{invariant['status']}`; TRAIN/HELDOUT = 214/53, groups = 8/5, selected group tuple = `{contract['selected_group_hash_tuple_sha256']}`, overlap/cross-edge/discard/duplicate = 0, and the V2 DP score is unchanged.
 - Dependency graph: `{graph['status']}`. Six raw-identity derived V2 records were updated/reviewed; group/selection identities remain frozen.
-- Post-commit Git object validation: Windows `{canonical_windows['status']}`, Linux `{canonical_linux['status']}`.
+- Post-commit Git object validation: Windows `{canonical_windows['status']}`, Linux `{canonical_linux['status']}`. The canonical producer Git-blob SHA is `{producer_blob_sha256}` and `.gitattributes` Git-blob SHA is `{attributes_blob_sha256}`; both contract-level and per-manifest declarations match.
 - Cross-platform checkout validation: Windows and isolated Linux both equal their exact Git blobs; `{combined_platform['status']}`.
 - Server V2 validator: `{server_v2['status']}` from `/disk1/zlab/maintenance_records/arkitscenes_split_v2_canonical_git_blob_identity_v1/server_v2_validation_result_bf4483af.json`.
 

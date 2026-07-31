@@ -23,7 +23,7 @@ The independent audit proved an EOL-only mismatch. The original producer wrote p
 | TRAIN | `b2d66720fbb0bc7acc998a81e073a9e4774ece7e3ce2900651ff28bf921c2404` | `167066916ce1a3281ac754dfdeec37ada9f5b0e31227c731c94cebb698a2a6e3` | `a2ddc70775e6d0f9c25f77ef5f869556d83b292c` | `32adca1e09694dce9ff5bebc895109f32f866e1c8ecc845e3927a07f60129d12` |
 | HELDOUT | `670255f2e00f04a0e462e1a83cd4c4d0344e92906604aba9312aa7baabb3b78e` | `7b65f741e901690f2a723579d75200eebe7b9e77b0cd57c030d4a14d0474c0c7` | `cf28dd385711a31733360e5fc21dce229ce605bc` | `69c8328511cd8405b17b2fc17da9f557ed69ac75b3cfc442f380d586ecab7117` |
 
-The legacy CRLF hashes are retained in the V2 contract as `PRECOMMIT_PLATFORM_DEPENDENT_NOT_AUTHORITATIVE`. The old/new split identities are `54f8c9e68ab0e1129be776fc6e911e6ee2011d75123626227ce7cbaa2a660204` → `0e0d8132aee942d4fc9c231ca3369851694042abe5878482664a0ff184702625` with reason `EOL_CANONICALIZATION_ONLY`; semantic change count is 0.
+The legacy CRLF hashes are retained in the V2 contract as `PRECOMMIT_PLATFORM_DEPENDENT_NOT_AUTHORITATIVE`. The old/new split identities are `54f8c9e68ab0e1129be776fc6e911e6ee2011d75123626227ce7cbaa2a660204` → `97a707510227271d12859ee78defc0d6170cc24cb67e423568cd1a72e3345dee` with reason `EOL_CANONICALIZATION_ONLY`; semantic change count is 0.
 
 ## Verification
 
@@ -32,7 +32,7 @@ The legacy CRLF hashes are retained in the V2 contract as `PRECOMMIT_PLATFORM_DE
 - Semantic regression: `PASS_SEMANTIC_NO_CHANGE`; fieldnames and every ordered row are unchanged.
 - Split regression: `PASS_SPLIT_INVARIANT_REGRESSION`; TRAIN/HELDOUT = 214/53, groups = 8/5, selected group tuple = `8ad320980bb36edb2accb38629ec3046095c9ef7735fbb748f4e112ee75bd388`, overlap/cross-edge/discard/duplicate = 0, and the V2 DP score is unchanged.
 - Dependency graph: `PASS_IDENTITY_DEPENDENCY_GRAPH`. Six raw-identity derived V2 records were updated/reviewed; group/selection identities remain frozen.
-- Post-commit Git object validation: Windows `PASS_CANONICAL_GIT_BLOB_IDENTITY`, Linux `PASS_CANONICAL_GIT_BLOB_IDENTITY`.
+- Post-commit Git object validation: Windows `PASS_CANONICAL_GIT_BLOB_IDENTITY`, Linux `PASS_CANONICAL_GIT_BLOB_IDENTITY`. The canonical producer Git-blob SHA is `675b9e5775f8b4b28efee4570db8738d55c9d5e79e784e654c2435f355d79d8a` and `.gitattributes` Git-blob SHA is `1145554d43edfb5df4ab16c7bfe24d4bfd8afda1cefdca31bad6f8019a64fa0c`; both contract-level and per-manifest declarations match.
 - Cross-platform checkout validation: Windows and isolated Linux both equal their exact Git blobs; `PASS_CROSS_PLATFORM_CHECKOUT_IDENTITY`.
 - Server V2 validator: `V2_SPLIT_VALIDATION_PASS` from `/disk1/zlab/maintenance_records/arkitscenes_split_v2_canonical_git_blob_identity_v1/server_v2_validation_result_bf4483af.json`.
 

@@ -6,6 +6,7 @@
     "git_blob_linux": "PASS_CANONICAL_GIT_BLOB_IDENTITY",
     "git_blob_windows": "PASS_CANONICAL_GIT_BLOB_IDENTITY",
     "identity_dependency_graph": "PASS_IDENTITY_DEPENDENCY_GRAPH",
+    "producer_and_gitattributes_git_blob_identity": "PASS",
     "semantic": "PASS_SEMANTIC_NO_CHANGE",
     "server_v2_validator": "V2_SPLIT_VALIDATION_PASS",
     "split_invariants": "PASS_SPLIT_INVARIANT_REGRESSION"
