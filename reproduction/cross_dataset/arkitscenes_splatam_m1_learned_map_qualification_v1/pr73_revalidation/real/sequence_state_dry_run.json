@@ -1,0 +1,115 @@
+{
+  "gates": {
+    "all_frames_retained": true,
+    "later_nonempty_resumes": true,
+    "no_mapper": true,
+    "no_nonfinite_or_state_leak": true,
+    "no_optimizer": true,
+    "order_unchanged": true,
+    "zero_frames_add_zero": true,
+    "zero_frames_exact": true
+  },
+  "mode": "LIGHTWEIGHT_STATE_MACHINE_ONLY",
+  "pass": true,
+  "sequence": [
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81
+  ],
+  "states": [
+    {
+      "event": "OFFICIAL_NONEMPTY_DEPTH_PATH",
+      "frame_retained": true,
+      "index": 74,
+      "new_gaussian_count": "DELEGATED_NOT_EXECUTED_STATE_ONLY",
+      "route": "OFFICIAL_EQUIVALENT_NONEMPTY",
+      "state_after": "95f376c43ead272d5aeeeeee1fc4ed7dab0e0f7c39094364c8b3a7dd8b14653f",
+      "state_before": "INITIAL",
+      "timestamp": "653434.695",
+      "valid_depth_count": 44466
+    },
+    {
+      "event": "OFFICIAL_NONEMPTY_DEPTH_PATH",
+      "frame_retained": true,
+      "index": 75,
+      "new_gaussian_count": "DELEGATED_NOT_EXECUTED_STATE_ONLY",
+      "route": "OFFICIAL_EQUIVALENT_NONEMPTY",
+      "state_after": "2bc077e3ccbd3883a823d69876146cf6c355c32deb57ceb44744d269c97ab91c",
+      "state_before": "95f376c43ead272d5aeeeeee1fc4ed7dab0e0f7c39094364c8b3a7dd8b14653f",
+      "timestamp": "653434.895",
+      "valid_depth_count": 44796
+    },
+    {
+      "event": "EMPTY_DEPTH_SAFE_SKIP_DEPTH_INITIALIZATION",
+      "frame_retained": true,
+      "index": 76,
+      "new_gaussian_count": 0,
+      "route": "EMPTY_DEPTH_SAFE",
+      "state_after": "f620b74ecb89ee9f75b9a1aaf56b16a947e654440ca97c09fc592b2609bf438a",
+      "state_before": "2bc077e3ccbd3883a823d69876146cf6c355c32deb57ceb44744d269c97ab91c",
+      "timestamp": "653435.095",
+      "valid_depth_count": 0
+    },
+    {
+      "event": "OFFICIAL_NONEMPTY_DEPTH_PATH",
+      "frame_retained": true,
+      "index": 77,
+      "new_gaussian_count": "DELEGATED_NOT_EXECUTED_STATE_ONLY",
+      "route": "OFFICIAL_EQUIVALENT_NONEMPTY",
+      "state_after": "9a229aac05cca01750d94d0572cc823995edf3b642fe9a5ab29389afe4f32ebc",
+      "state_before": "f620b74ecb89ee9f75b9a1aaf56b16a947e654440ca97c09fc592b2609bf438a",
+      "timestamp": "653435.295",
+      "valid_depth_count": 168
+    },
+    {
+      "event": "OFFICIAL_NONEMPTY_DEPTH_PATH",
+      "frame_retained": true,
+      "index": 78,
+      "new_gaussian_count": "DELEGATED_NOT_EXECUTED_STATE_ONLY",
+      "route": "OFFICIAL_EQUIVALENT_NONEMPTY",
+      "state_after": "49c23af2a1d7fb0e9b3fe4cce270ea0784665321eb3f0a619ae9e4cdb5148e1c",
+      "state_before": "9a229aac05cca01750d94d0572cc823995edf3b642fe9a5ab29389afe4f32ebc",
+      "timestamp": "653435.595",
+      "valid_depth_count": 44
+    },
+    {
+      "event": "EMPTY_DEPTH_SAFE_SKIP_DEPTH_INITIALIZATION",
+      "frame_retained": true,
+      "index": 79,
+      "new_gaussian_count": 0,
+      "route": "EMPTY_DEPTH_SAFE",
+      "state_after": "7ceceb9d0181ea40a26a608cbee5bc1c0e0384bcb565977bcbbeb99a51f62684",
+      "state_before": "49c23af2a1d7fb0e9b3fe4cce270ea0784665321eb3f0a619ae9e4cdb5148e1c",
+      "timestamp": "653435.795",
+      "valid_depth_count": 0
+    },
+    {
+      "event": "OFFICIAL_NONEMPTY_DEPTH_PATH",
+      "frame_retained": true,
+      "index": 80,
+      "new_gaussian_count": "DELEGATED_NOT_EXECUTED_STATE_ONLY",
+      "route": "OFFICIAL_EQUIVALENT_NONEMPTY",
+      "state_after": "92f02cd8b70b0e21898e323a72d5ad54cf48494d866f51729e7b707bd74e4aa0",
+      "state_before": "7ceceb9d0181ea40a26a608cbee5bc1c0e0384bcb565977bcbbeb99a51f62684",
+      "timestamp": "653435.995",
+      "valid_depth_count": 39403
+    },
+    {
+      "event": "OFFICIAL_NONEMPTY_DEPTH_PATH",
+      "frame_retained": true,
+      "index": 81,
+      "new_gaussian_count": "DELEGATED_NOT_EXECUTED_STATE_ONLY",
+      "route": "OFFICIAL_EQUIVALENT_NONEMPTY",
+      "state_after": "13562794399d67b6e84cd56fccb4d723fb3e5bbe1b82f9d4f33d84ef9de23a30",
+      "state_before": "92f02cd8b70b0e21898e323a72d5ad54cf48494d866f51729e7b707bd74e4aa0",
+      "timestamp": "653436.195",
+      "valid_depth_count": 43439
+    }
+  ],
+  "status": "PASS_SEQUENCE_STATE_DRY_RUN"
+}

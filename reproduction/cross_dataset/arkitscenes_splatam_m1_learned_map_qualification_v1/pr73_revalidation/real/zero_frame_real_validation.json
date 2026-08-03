@@ -1,0 +1,87 @@
+{
+  "cases": [
+    {
+      "add_event": "EMPTY_DEPTH_SAFE_SKIP_DEPTH_INITIALIZATION",
+      "add_new_gaussian_count": 0,
+      "asset_sha256": {
+        "confidence": "4234f72ae5ad1339acfc875518e2c9611390b875cffb5192bb804e5039552dcc",
+        "depth": "4926771b471eeaa21240e3921c3f8a90392d9b85b4ad53f37b4ed3133f5931e2",
+        "rgb": "45ba433022e351d0aec678afa56a166c9cda338219c78236c7d805cddc061ad6"
+      },
+      "callback_called": false,
+      "canonical_manifest_identity": {
+        "confidence": "confidence/48018874_653435.095.png",
+        "depth": "lowres_depth/48018874_653435.095.png",
+        "intrinsics": "lowres_wide_intrinsics/48018874_653435.095.pincam",
+        "rgb": "lowres_wide/48018874_653435.095.png",
+        "split": "TRAIN",
+        "timestamp": "653435.095",
+        "video_id": "48018874"
+      },
+      "compat_depth": 0.0,
+      "compat_rgb_finite": true,
+      "compat_total_finite": true,
+      "confidence_unique": [
+        0
+      ],
+      "depth_event": "EMPTY_DEPTH_SAFE_SKIP_DEPTH_INITIALIZATION",
+      "finite": true,
+      "index": 76,
+      "initialization_point_count": 0,
+      "m1_valid_count": 0,
+      "no_parameter_or_scene_radius_mutation": true,
+      "not_first_frame": true,
+      "official_confidence_all_zero": true,
+      "official_depth_finite": false,
+      "pass": true,
+      "point_event": "EMPTY_DEPTH_SAFE_SKIP_DEPTH_INITIALIZATION",
+      "timestamp": "653435.095"
+    },
+    {
+      "add_event": "EMPTY_DEPTH_SAFE_SKIP_DEPTH_INITIALIZATION",
+      "add_new_gaussian_count": 0,
+      "asset_sha256": {
+        "confidence": "4234f72ae5ad1339acfc875518e2c9611390b875cffb5192bb804e5039552dcc",
+        "depth": "51a7448c6144c1a067303da6ad3ab1e312e41e9cb8a186d2bef8480a5d6990cc",
+        "rgb": "5896c34be99fb1428473c9abd189cec230a0fe209dd8025373e94c985a793876"
+      },
+      "callback_called": false,
+      "canonical_manifest_identity": {
+        "confidence": "confidence/48018874_653435.795.png",
+        "depth": "lowres_depth/48018874_653435.795.png",
+        "intrinsics": "lowres_wide_intrinsics/48018874_653435.795.pincam",
+        "rgb": "lowres_wide/48018874_653435.795.png",
+        "split": "TRAIN",
+        "timestamp": "653435.795",
+        "video_id": "48018874"
+      },
+      "compat_depth": 0.0,
+      "compat_rgb_finite": true,
+      "compat_total_finite": true,
+      "confidence_unique": [
+        0
+      ],
+      "depth_event": "EMPTY_DEPTH_SAFE_SKIP_DEPTH_INITIALIZATION",
+      "finite": true,
+      "index": 79,
+      "initialization_point_count": 0,
+      "m1_valid_count": 0,
+      "no_parameter_or_scene_radius_mutation": true,
+      "not_first_frame": true,
+      "official_confidence_all_zero": true,
+      "official_depth_finite": false,
+      "pass": true,
+      "point_event": "EMPTY_DEPTH_SAFE_SKIP_DEPTH_INITIALIZATION",
+      "timestamp": "653435.795"
+    }
+  ],
+  "optimizer_count": 0,
+  "parameter_update_count": 0,
+  "pass": true,
+  "real_frame_backward_count": 0,
+  "status": "PASS_ZERO_FRAME_REAL_FORWARD_VALIDATION",
+  "zero_indices": [
+    76,
+    79
+  ]
+}

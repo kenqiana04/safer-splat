@@ -1,0 +1,18 @@
+{
+  "asset_root": "/disk1/zlab/maintenance_records/arkitscenes_raw_splatam_learned_3dgs_qualification_v1/download/staging/48018874/payload/raw/Training/48018874",
+  "camera_params": {
+    "cx": 0.0,
+    "cy": 0.0,
+    "fx": 1.0,
+    "fy": 1.0,
+    "image_height": 192,
+    "image_width": 256,
+    "png_depth_scale": 1000.0
+  },
+  "dataset_name": "arkitscenes_m1",
+  "depth_mask_contract": "DEPTH_GT_ZERO_AND_CONFIDENCE_GE1",
+  "expected_split": "TRAIN",
+  "manifest_path": "/disk1/zlab/maintenance_records/arkitscenes_splatam_m1_learned_map_qualification_v1/staging/arkitscenes_train_manifest_v2.csv",
+  "manifest_sha256": "167066916ce1a3281ac754dfdeec37ada9f5b0e31227c731c94cebb698a2a6e3",
+  "scene_id": "48018874"
+}

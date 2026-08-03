@@ -1,0 +1,82 @@
+{
+  "arrays": {
+    "colors_rgb": {
+      "dtype": "float32",
+      "sha256": "4709c021dca365745073c379a1c551291c117729e14eff2fb5eb081c3af94a43",
+      "shape": [
+        6463948,
+        3
+      ]
+    },
+    "means_world_m": {
+      "dtype": "float32",
+      "sha256": "ed7e06cb7e90de97c5b92fd5a2e8f1402167376c77295f387befd1ddcc77168c",
+      "shape": [
+        6463948,
+        3
+      ]
+    },
+    "opacities_probability": {
+      "dtype": "float32",
+      "sha256": "829ef84c5e21123a6cffcb9e12980cbaf3503cc23024c5f5bd1231230b881ab1",
+      "shape": [
+        6463948,
+        1
+      ]
+    },
+    "quaternions_wxyz": {
+      "dtype": "float32",
+      "sha256": "121880b9c86939575d8f853ec63b1b295548ed244fb7a69d4351350c8ac4f243",
+      "shape": [
+        6463948,
+        4
+      ]
+    },
+    "scales_linear_m": {
+      "dtype": "float32",
+      "sha256": "5718ab838d6300651a367efb9b22820b1eb3ea04dded25dfe1aeb057c5e5ca67",
+      "shape": [
+        6463948,
+        3
+      ]
+    },
+    "source_frame_id": {
+      "dtype": "int32",
+      "sha256": "a7845b9b478f7a5c2b4c5a06ee192d5e3088032496be3d04cb77cab9ff0c8edf",
+      "shape": [
+        6463948
+      ]
+    },
+    "source_gaussian_id": {
+      "dtype": "int64",
+      "sha256": "4643a413005e005ec42b0555d66a0f3a343fe3909e03c71b2fe6e11b5e081afb",
+      "shape": [
+        6463948
+      ]
+    },
+    "source_pixel_id": {
+      "dtype": "int32",
+      "sha256": "a7845b9b478f7a5c2b4c5a06ee192d5e3088032496be3d04cb77cab9ff0c8edf",
+      "shape": [
+        6463948
+      ]
+    }
+  },
+  "coordinate_frame": "metric SplaTAM world anchored at first TRAIN camera; no recenter, scale, ICP, or Sim3",
+  "gates": {
+    "all_finite": true,
+    "counts_equal": true,
+    "gaussian_count_positive": true,
+    "no_filter_recenter_scale_repair": true,
+    "opacity_probability": true,
+    "quaternion_normalized": true,
+    "scale_positive": true,
+    "source_gaussian_id_unique": true
+  },
+  "gaussian_count": 6463948,
+  "opacity_conversion": "sigmoid(logit_opacities) exactly once; no opacity filtering",
+  "quaternion_order": "WXYZ normalized",
+  "scale_conversion": "exp(log_scales) exactly once; isotropic channel repeated to xyz",
+  "source_frame_pixel_availability": "unavailable after official densification; -1 sentinels retained; unique source_gaussian_id provided",
+  "status": "PASS_CANONICAL_SPLATAM_M1_EXPORT"
+}

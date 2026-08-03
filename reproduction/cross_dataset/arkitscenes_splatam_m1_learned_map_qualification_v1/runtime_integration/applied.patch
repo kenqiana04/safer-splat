@@ -1,0 +1,110 @@
+diff --git a/scripts/gaussian_splatting.py b/scripts/gaussian_splatting.py
+index b72b0d6..aefc735 100644
+--- a/scripts/gaussian_splatting.py
++++ b/scripts/gaussian_splatting.py
+@@ -37,6 +37,31 @@ from utils.gs_external import (
+ 
+ from diff_gaussian_rasterization import GaussianRasterizer as Renderer
+ 
++from arkitscenes_m1_dataset import ARKitScenesM1SplaTAMDataset
++from empty_depth_safe_splatam_compat import EMPTY_EVENT, NONEMPTY_EVENT, safe_masked_mean
++
++
++_M1_EVENT_LOG = os.environ.get("SPLATAM_M1_EVENT_LOG", "")
++_M1_INDEX_OFFSET = int(os.environ.get("SPLATAM_M1_INDEX_OFFSET", "0"))
++
++
++def _m1_event(kind, **fields):
++    if not _M1_EVENT_LOG:
++        return
++    import json
++    import time
++    record = {
++        "kind": kind,
++        "time_unix": time.time(),
++        **fields,
++    }
++    path = os.path.abspath(_M1_EVENT_LOG)
++    os.makedirs(os.path.dirname(path), exist_ok=True)
++    with open(path, "a", encoding="utf-8", newline="\n") as handle:
++        handle.write(json.dumps(record, sort_keys=True, separators=(",", ":")) + "\n")
++        handle.flush()
++        os.fsync(handle.fileno())
++
+ 
+ def get_dataset(config_dict, basedir, sequence, **kwargs):
+     if config_dict["dataset_name"].lower() in ["icl"]:
+@@ -61,6 +86,8 @@ def get_dataset(config_dict, basedir, sequence, **kwargs):
+         return ScannetPPDataset(basedir, sequence, **kwargs)
+     elif config_dict["dataset_name"].lower() in ["nerfcapture"]:
+         return NeRFCaptureDataset(basedir, sequence, **kwargs)
++    elif config_dict["dataset_name"].lower() in ["arkitscenes_m1"]:
++        return ARKitScenesM1SplaTAMDataset(config_dict, basedir, sequence, **kwargs)
+     else:
+         raise ValueError(f"Unknown dataset name {config_dict['dataset_name']}")
+ 
+@@ -221,8 +248,17 @@ def get_loss_gs(params, curr_data, variables, loss_weights):
+     # RGB Loss
+     losses['im'] = 0.8 * l1_loss_v1(im, curr_data['im']) + 0.2 * (1.0 - calc_ssim(im, curr_data['im']))
+     
+-    # Depth Loss
+-    losses['depth'] = l1_loss_v1(depth, curr_data['depth'])
++    # Preserve the official nonempty branch byte-for-byte in behavior.  Only an
++    # empty M1 target takes the PR #73 exact-zero compatibility branch.
++    if bool(valid_depth_mask.any().item()):
++        losses['depth'] = l1_loss_v1(depth, curr_data['depth'])
++        depth_event = NONEMPTY_EVENT
++    else:
++        losses['depth'] = safe_masked_mean(torch.abs(depth - curr_data['depth']), valid_depth_mask)
++        depth_event = EMPTY_EVENT
++    _m1_event("loss", frame_index=int(curr_data['id']) + _M1_INDEX_OFFSET,
++              valid_depth_count=int(valid_depth_mask.sum().item()), depth_event=depth_event,
++              rgb_loss=float(losses['im'].detach().item()), depth_loss=float(losses['depth'].detach().item()))
+ 
+     weighted_losses = {k: v * loss_weights[k] for k, v in losses.items()}
+     loss = sum(weighted_losses.values())
+@@ -262,7 +298,7 @@ def initialize_new_params(new_pt_cld, mean3_sq_dist, gaussian_distribution):
+     return params
+ 
+ 
+-def add_new_gaussians(params, variables, curr_data, sil_thres, 
++def _add_new_gaussians_official(params, variables, curr_data, sil_thres,
+                       time_idx, mean_sq_dist_method, gaussian_distribution):
+     # Silhouette Rendering
+     transformed_gaussians = transform_to_frame(params, time_idx, gaussians_grad=False, camera_grad=False)
+@@ -305,6 +341,15 @@ def add_new_gaussians(params, variables, curr_data, sil_thres,
+     return params, variables
+ 
+ 
++def add_new_gaussians(params, variables, curr_data, sil_thres,
++                      time_idx, mean_sq_dist_method, gaussian_distribution):
++    valid_count = int((curr_data['depth'] > 0).sum().item())
++    if valid_count == 0:
++        return params, variables
++    return _add_new_gaussians_official(params, variables, curr_data, sil_thres,
++                                       time_idx, mean_sq_dist_method, gaussian_distribution)
++
++
+ def convert_params_to_store(params):
+     params_to_store = {}
+     for k, v in params.items():
+@@ -477,11 +522,18 @@ def offline_splatting(config: dict):
+             params['cam_trans'][..., time_idx] = rel_w2c_tran
+         
+         # Add new Gaussians to the scene based on the Silhouette
++        pre_num_pts = int(params['means3D'].shape[0])
++        valid_depth_count = int((curr_data['depth'] > 0).sum().item())
+         if time_idx > 0:
+             params, variables = add_new_gaussians(params, variables, curr_data, 
+                                                   config['train']['sil_thres'], time_idx,
+                                                   config['mean_sq_dist_method'], config['gaussian_distribution'])
+-        post_num_pts = params['means3D'].shape[0]
++        post_num_pts = int(params['means3D'].shape[0])
++        _m1_event("frame", frame_index=time_idx + _M1_INDEX_OFFSET,
++                  valid_depth_count=valid_depth_count,
++                  depth_event=EMPTY_EVENT if valid_depth_count == 0 else NONEMPTY_EVENT,
++                  gaussian_count_before=pre_num_pts, gaussian_count_after=post_num_pts,
++                  added_count=post_num_pts - pre_num_pts)
+         if config['use_wandb']:
+             wandb_run.log({"Init/Number of Gaussians": post_num_pts,
+                            "Init/step": wandb_time_step})
