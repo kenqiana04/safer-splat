@@ -1,0 +1,42 @@
+{
+  "status": "PASS_RUNTIME_BOUNDARY_PRESERVED",
+  "checked_utc": "2026-08-03T11:52:32Z",
+  "server_host": "zlab-Super-Server",
+  "physical_gpu": 1,
+  "gpu_final": {
+    "index": 1,
+    "name": "NVIDIA GeForce RTX 4090",
+    "uuid": "GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d",
+    "driver_version": "525.147.05",
+    "memory_total_mib": 24564,
+    "memory_used_mib": 6,
+    "utilization_gpu_percent": 0,
+    "all_compute_process_count": 0,
+    "all_compute_processes": [],
+    "task_compute_process_count": 0,
+    "task_compute_processes": []
+  },
+  "task_root": "/disk1/zlab/maintenance_records/eth3d_delivery_area_protocol_v2_entry_qualification_v1",
+  "task_root_size_bytes": 2364571,
+  "task_root_initial_size_bytes": 86016,
+  "new_task_bytes_upper_bound": 2278555,
+  "new_disk_limit_bytes": 1073741824,
+  "disk1_free_bytes": 296654663680,
+  "server_report": "/disk1/zlab/maintenance_records/eth3d_delivery_area_protocol_v2_entry_qualification_v1/report/REPORT_ETH3D_DELIVERY_AREA_PROTOCOL_V2_ENTRY_QUALIFICATION_V1.md",
+  "server_report_sha256": "bdba615dba47e1b8a66adae82c3871682421273b0531bdc8579dffc54296198d",
+  "local_report_sha256": "bdba615dba47e1b8a66adae82c3871682421273b0531bdc8579dffc54296198d",
+  "server_validator_status": "PASS",
+  "watchdog_task": "Codex-Persistent-Reverse-Proxy-Watchdog",
+  "watchdog_status": "Running",
+  "managed_reverse_ssh_process_count": 1,
+  "managed_reverse_ssh_pids": [
+    17480
+  ],
+  "managed_reverse_ssh_preserved": true,
+  "port_17897_operation_count": 0,
+  "sshd_restart_count": 0,
+  "network_restart_count": 0,
+  "firewall_change_count": 0,
+  "global_git_proxy_change_count": 0,
+  "training_authorized": false
+}

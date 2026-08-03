@@ -1,0 +1,29 @@
+{
+  "status": "PASS_MODALITY_ENTRY_AUDIT",
+  "M1_LOW_RES_RIG_RGB_ONLY": {
+    "status": "QUALIFIED_AT_METADATA_LEVEL_PENDING_ASSET_VALIDATION",
+    "official_poses_each_image": true,
+    "four_camera_group_metadata": "official 4*237 synchronized rig contract; payload filenames/rigs.json must be verified after acquisition",
+    "intrinsics_extrinsics": "COLMAP text, PINHOLE when undistorted",
+    "metric_reference_alignment": "official scan-aligned pose pipeline; exact units/frame to be verified after acquisition",
+    "split_unit": "RIG_CAPTURE_GROUP",
+    "colmap_to_official_3dgs": "direct text loading is implemented by current official 3DGS; no SfM rerun required; official image-only points3D may initialize the map",
+    "crop_or_custom_undistortion": "NOT_REQUIRED_OR_AUTHORIZED",
+    "known_rig_pipeline_limitation": "official dataset-pipeline warns rig images can be less robust and were strongly sub-selected; asset-level validation remains mandatory"
+  },
+  "M2_HIGH_RES_DSLR_RGB_ONLY": {
+    "status": "QUALIFIED_AS_CROSS_VIEW_EVALUATION_AT_METADATA_LEVEL",
+    "images": 44,
+    "official_poses_intrinsics": true,
+    "metric_reference_alignment": true,
+    "sparse_view_risk": "material; do not select on expected reconstruction quality",
+    "role_when_M1_selected": "CROSS_VIEW_EVALUATION_ONLY",
+    "colmap_to_official_3dgs": "compatible PINHOLE/COLMAP text; no SfM rerun required"
+  },
+  "M3_SPLATAM_RGBD": {
+    "status": "NOT_ADMISSIBLE_WITHOUT_REFERENCE_GEOMETRY_LEAKAGE",
+    "independent_sensor_rgbd_proven": false,
+    "rendered_depth_provenance": "laser-scan/reference GroundTruthCreator output",
+    "training_allowed": false
+  }
+}

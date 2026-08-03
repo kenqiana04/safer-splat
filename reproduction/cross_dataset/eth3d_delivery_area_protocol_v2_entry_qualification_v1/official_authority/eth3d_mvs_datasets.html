@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head -->
+<meta name="description" content="ETH3D">
+<meta name="author" content="Computer Vision and Geometry Group, ETH Zurich">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+<title>Datasets - ETH3D</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+<!-- Custom styles for this page -->
+<link href="css/theme.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/" style="font-size:26px;line-height:20px">ETH3D</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Stereo <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/overview">Overview</a></li>
+            <li><a href="/documentation">Documentation</a></li>
+            <li class="active"><a href="/datasets">Datasets</a></li>
+            <li><a href="/high_res_multi_view">High-res multi-view benchmark</a></li>
+            <li><a href="/low_res_many_view">Low-res many-view benchmark</a></li>
+            <li><a href="/low_res_two_view">Low-res two-view benchmark</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SLAM <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/slam_overview">Overview</a></li>
+            <li><a href="/slam_documentation">Documentation</a></li>
+            <li><a href="/slam_datasets">Datasets</a></li>
+            <li><a href="/slam_benchmark">Benchmark</a></li>
+          </ul>
+        </li>
+        <li><a href="/about">About</a></li><li><a href="/login">Submit</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<noscript>
+  <div class="alert alert-danger" role="alert">
+    <b>Javascript disabled</b><br/>
+    This page does not display correctly without Javascript. Please enable it in your browser.
+  </div>
+</noscript>
+
+<div class="container theme-showcase" role="main">
+  <div class="page-header"><h1>Datasets</h1></div>
+  <p>
+    <!--<a href="#high-res-multi-view">-->High-res multi-view<!--</a>-->:
+      <a href="#high-res-multi-view-training-data">Training data</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#high-res-multi-view-test-data">Test data</a>
+    <!--<a href="#low-res-many-view">--><span style="padding-left: 30pt">Low-res many-view</span><!--</a>-->:
+      <a href="#low-res-many-view-training-data">Training data</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#low-res-many-view-test-data">Test data</a>
+    <!--<a href="#low-res-two-view" style="padding-left: 10pt">--><span style="padding-left: 30pt">Low-res two-view</span><!--</a>-->:
+      <a href="#low-res-two-view-training-data">Training data</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#low-res-two-view-test-data">Test data</a><br/>
+  </p>
+  
+  
+  <br/><h3><span id="high-res-multi-view"></span>High-res multi-view</h3>
+
+  <br/><h4><span id="high-res-multi-view-training-data"></span>Training data</h4>
+  <p>
+    <a href="data/multi_view_training_dslr_undistorted.7z">Download all undistorted jpg images</a> (5.5 GB)<br/>
+    <a href="data/multi_view_training_dslr_jpg.7z">Download all distorted jpg images</a> (4.7 GB)<br/>
+    <a href="data/multi_view_training_dslr_raw.7z">Download all distorted raw images</a> (12.1 GB)<br/>
+    <a href="data/multi_view_training_dslr_scan_eval.7z">Download all ground truth (for evaluation)</a> (1.8 GB)<br/>
+    <a href="data/multi_view_training_dslr_occlusion.7z">Download all occlusion files</a> (1.2 GB)<br/>
+    <br/>
+  </p>
+  <table class="table">
+    <tbody>
+      
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_courtyard.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>courtyard</b> - 38 images <span class="label label-default">outdoors</span><br/>
+        <a href="data/courtyard_dslr_undistorted.7z">courtyard_dslr_undistorted.7z</a> (0.5 GB)<br/>
+        <a href="data/courtyard_dslr_jpg.7z">courtyard_dslr_jpg.7z</a> (0.4 GB)<br/>
+        <a href="data/courtyard_dslr_raw.7z">courtyard_dslr_raw.7z</a> (1.0 GB)
+      </td>
+      <td style="text-align:left;vertical-align:middle;min-width:300px">
+        Ground truth:<br/>
+        <a href="data/courtyard_scan_raw.7z">courtyard_scan_raw.7z</a> (0.3 GB)<br/>
+        <a href="data/courtyard_scan_clean.7z">courtyard_scan_clean.7z</a> (0.3 GB)<br/>
+        <a href="data/courtyard_dslr_scan_eval.7z">courtyard_dslr_scan_eval.7z</a> (0.2 GB)<br/>
+        <a href="data/courtyard_dslr_occlusion.7z">courtyard_dslr_occlusion.7z</a> (0.1 GB)<br/>
+        <a href="data/courtyard_dslr_depth.7z">courtyard_dslr_depth.7z</a> (0.4 GB)</td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_delivery_area.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>delivery area</b> - 44 images <span class="label label-default">indoors</span><br/>
+        <a href="data/delivery_area_dslr_undistorted.7z">delivery_area_dslr_undistorted.7z</a> (0.5 GB)<br/>
+        <a href="data/delivery_area_dslr_jpg.7z">delivery_area_dslr_jpg.7z</a> (0.4 GB)<br/>
+        <a href="data/delivery_area_dslr_raw.7z">delivery_area_dslr_raw.7z</a> (1.1 GB)
+      </td>
+      <td style="text-align:left;vertical-align:middle;min-width:300px">
+        Ground truth:<br/>
+        <a href="data/delivery_area_scan_raw.7z">delivery_area_scan_raw.7z</a> (0.4 GB)<br/>
+        <a href="data/delivery_area_scan_clean.7z">delivery_area_scan_clean.7z</a> (0.4 GB)<br/>
+        <a href="data/delivery_area_dslr_scan_eval.7z">delivery_area_dslr_scan_eval.7z</a> (0.1 GB)<br/>
+        <a href="data/delivery_area_dslr_occlusion.7z">delivery_area_dslr_occlusion.7z</a> (0.1 GB)<br/>
+        <a href="data/delivery_area_dslr_depth.7z">delivery_area_dslr_depth.7z</a> (0.4 GB)</td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_electro.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>electro</b> - 45 images <span class="label label-default">outdoors</span><br/>
+        <a href="data/electro_dslr_undistorted.7z">electro_dslr_undistorted.7z</a> (0.5 GB)<br/>
+        <a href="data/electro_dslr_jpg.7z">electro_dslr_jpg.7z</a> (0.4 GB)<br/>
+        <a href="data/electro_dslr_raw.7z">electro_dslr_raw.7z</a> (1.2 GB)
+      </td>
+      <td style="text-align:left;vertical-align:middle;min-width:300px">
+        Ground truth:<br/>
+        <a href="data/electro_scan_raw.7z">electro_scan_raw.7z</a> (0.6 GB)<br/>
+        <a href="data/electro_scan_clean.7z">electro_scan_clean.7z</a> (0.5 GB)<br/>
+        <a href="data/electro_dslr_scan_eval.7z">electro_dslr_scan_eval.7z</a> (0.2 GB)<br/>
+        <a href="data/electro_dslr_occlusion.7z">electro_dslr_occlusion.7z</a> (0.1 GB)<br/>
+        <a href="data/electro_dslr_depth.7z">electro_dslr_depth.7z</a> (0.6 GB)</td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_facade.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>facade</b> - 76 images <span class="label label-default">outdoors</span><br/>
+        <a href="data/facade_dslr_undistorted.7z">facade_dslr_undistorted.7z</a> (1.2 GB)<br/>
+        <a href="data/facade_dslr_jpg.7z">facade_dslr_jpg.7z</a> (1.1 GB)<br/>
+        <a href="data/facade_dslr_raw.7z">facade_dslr_raw.7z</a> (2.2 GB)
+      </td>
+      <td style="text-align:left;vertical-align:middle;min-width:300px">
+        Ground truth:<br/>
+        <a href="data/facade_scan_raw.7z">facade_scan_raw.7z</a> (0.4 GB)<br/>
+        <a href="data/facade_scan_clean.7z">facade_scan_clean.7z</a> (0.4 GB)<br/>
+        <a href="data/facade_dslr_scan_eval.7z">facade_dslr_scan_eval.7z</a> (0.2 GB)<br/>
+        <a href="data/facade_dslr_occlusion.7z">facade_dslr_occlusion.7z</a> (0.1 GB)<br/>
+        <a href="data/facade_dslr_depth.7z">facade_dslr_depth.7z</a> (0.7 GB)</td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_kicker.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>kicker</b> - 31 images <span class="label label-default">indoors</span><br/>
+        <a href="data/kicker_dslr_undistorted.7z">kicker_dslr_undistorted.7z</a> (0.4 GB)<br/>
+        <a href="data/kicker_dslr_jpg.7z">kicker_dslr_jpg.7z</a> (0.4 GB)<br/>
+        <a href="data/kicker_dslr_raw.7z">kicker_dslr_raw.7z</a> (0.9 GB)
+      </td>
+      <td style="text-align:left;vertical-align:middle;min-width:300px">
+        Ground truth:<br/>
+        <a href="data/kicker_scan_raw.7z">kicker_scan_raw.7z</a> (0.3 GB)<br/>
+        <a href="data/kicker_scan_clean.7z">kicker_scan_clean.7z</a> (0.3 GB)<br/>
+        <a href="data/kicker_dslr_scan_eval.7z">kicker_dslr_scan_eval.7z</a> (0.2 GB)<br/>
+        <a href="data/kicker_dslr_occlusion.7z">kicker_dslr_occlusion.7z</a> (0.1 GB)<br/>
+        <a href="data/kicker_dslr_depth.7z">kicker_dslr_depth.7z</a> (0.4 GB)</td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_meadow.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>meadow</b> - 15 images <span class="label label-default">outdoors</span><br/>
+        <a href="data/meadow_dslr_undistorted.7z">meadow_dslr_undistorted.7z</a> (0.2 GB)<br/>
+        <a href="data/meadow_dslr_jpg.7z">meadow_dslr_jpg.7z</a> (0.2 GB)<br/>
+        <a href="data/meadow_dslr_raw.7z">meadow_dslr_raw.7z</a> (0.5 GB)
+      </td>
+      <td style="text-align:left;vertical-align:middle;min-width:300px">
+        Ground truth:<br/>
+        <a href="data/meadow_scan_raw.7z">meadow_scan_raw.7z</a> (0.4 GB)<br/>
+        <a href="data/meadow_scan_clean.7z">meadow_scan_clean.7z</a> (0.3 GB)<br/>
+        <a href="data/meadow_dslr_scan_eval.7z">meadow_dslr_scan_eval.7z</a> (0.1 GB)<br/>
+        <a href="data/meadow_dslr_occlusion.7z">meadow_dslr_occlusion.7z</a> (0.1 GB)<br/>
+        <a href="data/meadow_dslr_depth.7z">meadow_dslr_depth.7z</a> (0.1 GB)</td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_office.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>office</b> - 26 images <span class="label label-default">indoors</span><br/>
+        <a href="data/office_dslr_undistorted.7z">office_dslr_undistorted.7z</a> (0.3 GB)<br/>
+        <a href="data/office_dslr_jpg.7z">office_dslr_jpg.7z</a> (0.2 GB)<br/>
+        <a href="data/office_dslr_raw.7z">office_dslr_raw.7z</a> (0.7 GB)
+      </td>
+      <td style="text-align:left;vertical-align:middle;min-width:300px">
+        Ground truth:<br/>
+        <a href="data/office_scan_raw.7z">office_scan_raw.7z</a> (0.3 GB)<br/>
+        <a href="data/office_scan_clean.7z">office_scan_clean.7z</a> (0.3 GB)<br/>
+        <a href="data/office_dslr_scan_eval.7z">office_dslr_scan_eval.7z</a> (0.1 GB)<br/>
+        <a href="data/office_dslr_occlusion.7z">office_dslr_occlusion.7z</a> (0.3 GB)<br/>
+        <a href="data/office_dslr_depth.7z">office_dslr_depth.7z</a> (0.4 GB)</td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_pipes.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>pipes</b> - 14 images <span class="label label-default">indoors</span><br/>
+        <a href="data/pipes_dslr_undistorted.7z">pipes_dslr_undistorted.7z</a> (0.1 GB)<br/>
+        <a href="data/pipes_dslr_jpg.7z">pipes_dslr_jpg.7z</a> (0.1 GB)<br/>
+        <a href="data/pipes_dslr_raw.7z">pipes_dslr_raw.7z</a> (0.4 GB)
+      </td>
+      <td style="text-align:left;vertical-align:middle;min-width:300px">
+        Ground truth:<br/>
+        <a href="data/pipes_scan_raw.7z">pipes_scan_raw.7z</a> (0.2 GB)<br/>
+        <a href="data/pipes_scan_clean.7z">pipes_scan_clean.7z</a> (0.2 GB)<br/>
+        <a href="data/pipes_dslr_scan_eval.7z">pipes_dslr_scan_eval.7z</a> (0.1 GB)<br/>
+        <a href="data/pipes_dslr_occlusion.7z">pipes_dslr_occlusion.7z</a> (0.1 GB)<br/>
+        <a href="data/pipes_dslr_depth.7z">pipes_dslr_depth.7z</a> (0.1 GB)</td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_playground.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>playground</b> - 38 images <span class="label label-default">outdoors</span><br/>
+        <a href="data/playground_dslr_undistorted.7z">playground_dslr_undistorted.7z</a> (0.5 GB)<br/>
+        <a href="data/playground_dslr_jpg.7z">playground_dslr_jpg.7z</a> (0.5 GB)<br/>
+        <a href="data/playground_dslr_raw.7z">playground_dslr_raw.7z</a> (1.1 GB)
+      </td>
+      <td style="text-align:left;vertical-align:middle;min-width:300px">
+        Ground truth:<br/>
+        <a href="data/playground_scan_raw.7z">playground_scan_raw.7z</a> (0.3 GB)<br/>
+        <a href="data/playground_scan_clean.7z">playground_scan_clean.7z</a> (0.2 GB)<br/>
+        <a href="data/playground_dslr_scan_eval.7z">playground_dslr_scan_eval.7z</a> (0.1 GB)<br/>
+        <a href="data/playground_dslr_occlusion.7z">playground_dslr_occlusion.7z</a> (0.1 GB)<br/>
+        <a href="data/playground_dslr_depth.7z">playground_dslr_depth.7z</a> (0.3 GB)</td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_relief.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>relief</b> - 31 images <span class="label label-default">indoors</span><br/>
+        <a href="data/relief_dslr_undistorted.7z">relief_dslr_undistorted.7z</a> (0.3 GB)<br/>
+        <a href="data/relief_dslr_jpg.7z">relief_dslr_jpg.7z</a> (0.3 GB)<br/>
+        <a href="data/relief_dslr_raw.7z">relief_dslr_raw.7z</a> (0.8 GB)
+      </td>
+      <td style="text-align:left;vertical-align:middle;min-width:300px">
+        Ground truth:<br/>
+        <a href="data/relief_scan_raw.7z">relief_scan_raw.7z</a> (0.4 GB)<br/>
+        <a href="data/relief_scan_clean.7z">relief_scan_clean.7z</a> (0.4 GB)<br/>
+        <a href="data/relief_dslr_scan_eval.7z">relief_dslr_scan_eval.7z</a> (0.2 GB)<br/>
+        <a href="data/relief_dslr_occlusion.7z">relief_dslr_occlusion.7z</a> (0.1 GB)<br/>
+        <a href="data/relief_dslr_depth.7z">relief_dslr_depth.7z</a> (0.6 GB)</td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_relief_2.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>relief 2</b> - 31 images <span class="label label-default">indoors</span><br/>
+        <a href="data/relief_2_dslr_undistorted.7z">relief_2_dslr_undistorted.7z</a> (0.3 GB)<br/>
+        <a href="data/relief_2_dslr_jpg.7z">relief_2_dslr_jpg.7z</a> (0.3 GB)<br/>
+        <a href="data/relief_2_dslr_raw.7z">relief_2_dslr_raw.7z</a> (0.8 GB)
+      </td>
+      <td style="text-align:left;vertical-align:middle;min-width:300px">
+        Ground truth:<br/>
+        <a href="data/relief_2_scan_raw.7z">relief_2_scan_raw.7z</a> (0.4 GB)<br/>
+        <a href="data/relief_2_scan_clean.7z">relief_2_scan_clean.7z</a> (0.4 GB)<br/>
+        <a href="data/relief_2_dslr_scan_eval.7z">relief_2_dslr_scan_eval.7z</a> (0.2 GB)<br/>
+        <a href="data/relief_2_dslr_occlusion.7z">relief_2_dslr_occlusion.7z</a> (0.1 GB)<br/>
+        <a href="data/relief_2_dslr_depth.7z">relief_2_dslr_depth.7z</a> (0.6 GB)</td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_terrace.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>terrace</b> - 23 images <span class="label label-default">outdoors</span><br/>
+        <a href="data/terrace_dslr_undistorted.7z">terrace_dslr_undistorted.7z</a> (0.3 GB)<br/>
+        <a href="data/terrace_dslr_jpg.7z">terrace_dslr_jpg.7z</a> (0.2 GB)<br/>
+        <a href="data/terrace_dslr_raw.7z">terrace_dslr_raw.7z</a> (0.6 GB)
+      </td>
+      <td style="text-align:left;vertical-align:middle;min-width:300px">
+        Ground truth:<br/>
+        <a href="data/terrace_scan_raw.7z">terrace_scan_raw.7z</a> (0.3 GB)<br/>
+        <a href="data/terrace_scan_clean.7z">terrace_scan_clean.7z</a> (0.3 GB)<br/>
+        <a href="data/terrace_dslr_scan_eval.7z">terrace_dslr_scan_eval.7z</a> (0.1 GB)<br/>
+        <a href="data/terrace_dslr_occlusion.7z">terrace_dslr_occlusion.7z</a> (0.1 GB)<br/>
+        <a href="data/terrace_dslr_depth.7z">terrace_dslr_depth.7z</a> (0.4 GB)</td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_terrains.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>terrains</b> - 42 images <span class="label label-default">indoors</span><br/>
+        <a href="data/terrains_dslr_undistorted.7z">terrains_dslr_undistorted.7z</a> (0.4 GB)<br/>
+        <a href="data/terrains_dslr_jpg.7z">terrains_dslr_jpg.7z</a> (0.3 GB)<br/>
+        <a href="data/terrains_dslr_raw.7z">terrains_dslr_raw.7z</a> (1.1 GB)
+      </td>
+      <td style="text-align:left;vertical-align:middle;min-width:300px">
+        Ground truth:<br/>
+        <a href="data/terrains_scan_raw.7z">terrains_scan_raw.7z</a> (0.3 GB)<br/>
+        <a href="data/terrains_scan_clean.7z">terrains_scan_clean.7z</a> (0.3 GB)<br/>
+        <a href="data/terrains_dslr_scan_eval.7z">terrains_dslr_scan_eval.7z</a> (0.1 GB)<br/>
+        <a href="data/terrains_dslr_occlusion.7z">terrains_dslr_occlusion.7z</a> (0.1 GB)<br/>
+        <a href="data/terrains_dslr_depth.7z">terrains_dslr_depth.7z</a> (0.5 GB)</td>
+    </tr>      <tr><td></td><td></td><td></td></tr>
+    </tbody>
+  </table>
+
+  
+  <br/><h4><span id="high-res-multi-view-test-data"></span>Test data</h4>
+  <p>
+    <a href="data/multi_view_test_dslr_undistorted.7z">Download all undistorted jpg images</a> (4.5 GB)<br/>
+    <a href="data/multi_view_test_dslr_jpg.7z">Download all distorted jpg images</a> (3.6 GB)<br/>
+    <a href="data/multi_view_test_dslr_raw.7z">Download all distorted raw images</a> (11.3 GB)<br/>
+    <br/>
+  </p>
+  <table class="table">
+    <tbody>
+      
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_botanical_garden.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>botanical garden</b> - 30 images <span class="label label-default">indoors</span><br/>
+        <a href="data/botanical_garden_dslr_undistorted.7z">botanical_garden_dslr_undistorted.7z</a> (0.4 GB)<br/>
+        <a href="data/botanical_garden_dslr_jpg.7z">botanical_garden_dslr_jpg.7z</a> (0.4 GB)<br/>
+        <a href="data/botanical_garden_dslr_raw.7z">botanical_garden_dslr_raw.7z</a> (0.9 GB)
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_boulders.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>boulders</b> - 26 images <span class="label label-default">outdoors</span><br/>
+        <a href="data/boulders_dslr_undistorted.7z">boulders_dslr_undistorted.7z</a> (0.3 GB)<br/>
+        <a href="data/boulders_dslr_jpg.7z">boulders_dslr_jpg.7z</a> (0.3 GB)<br/>
+        <a href="data/boulders_dslr_raw.7z">boulders_dslr_raw.7z</a> (0.7 GB)
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_bridge.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>bridge</b> - 110 images <span class="label label-default">indoors</span><br/>
+        <a href="data/bridge_dslr_undistorted.7z">bridge_dslr_undistorted.7z</a> (1.2 GB)<br/>
+        <a href="data/bridge_dslr_jpg.7z">bridge_dslr_jpg.7z</a> (1.0 GB)<br/>
+        <a href="data/bridge_dslr_raw.7z">bridge_dslr_raw.7z</a> (2.7 GB)
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_door.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>door</b> - 7 images <span class="label label-default">indoors</span><br/>
+        <a href="data/door_dslr_undistorted.7z">door_dslr_undistorted.7z</a> (0.1 GB)<br/>
+        <a href="data/door_dslr_jpg.7z">door_dslr_jpg.7z</a> (0.1 GB)<br/>
+        <a href="data/door_dslr_raw.7z">door_dslr_raw.7z</a> (0.2 GB)
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_exhibition_hall.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>exhibition hall</b> - 68 images <span class="label label-default">indoors</span><br/>
+        <a href="data/exhibition_hall_dslr_undistorted.7z">exhibition_hall_dslr_undistorted.7z</a> (0.7 GB)<br/>
+        <a href="data/exhibition_hall_dslr_jpg.7z">exhibition_hall_dslr_jpg.7z</a> (0.5 GB)<br/>
+        <a href="data/exhibition_hall_dslr_raw.7z">exhibition_hall_dslr_raw.7z</a> (1.7 GB)
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_lecture_room.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>lecture room</b> - 23 images <span class="label label-default">indoors</span><br/>
+        <a href="data/lecture_room_dslr_undistorted.7z">lecture_room_dslr_undistorted.7z</a> (0.2 GB)<br/>
+        <a href="data/lecture_room_dslr_jpg.7z">lecture_room_dslr_jpg.7z</a> (0.2 GB)<br/>
+        <a href="data/lecture_room_dslr_raw.7z">lecture_room_dslr_raw.7z</a> (0.6 GB)
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_living_room.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>living room</b> - 65 images <span class="label label-default">indoors</span><br/>
+        <a href="data/living_room_dslr_undistorted.7z">living_room_dslr_undistorted.7z</a> (0.7 GB)<br/>
+        <a href="data/living_room_dslr_jpg.7z">living_room_dslr_jpg.7z</a> (0.5 GB)<br/>
+        <a href="data/living_room_dslr_raw.7z">living_room_dslr_raw.7z</a> (1.7 GB)
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_lounge.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>lounge</b> - 10 images <span class="label label-default">indoors</span><br/>
+        <a href="data/lounge_dslr_undistorted.7z">lounge_dslr_undistorted.7z</a> (0.1 GB)<br/>
+        <a href="data/lounge_dslr_jpg.7z">lounge_dslr_jpg.7z</a> (0.1 GB)<br/>
+        <a href="data/lounge_dslr_raw.7z">lounge_dslr_raw.7z</a> (0.2 GB)
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_observatory.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>observatory</b> - 27 images <span class="label label-default">outdoors</span><br/>
+        <a href="data/observatory_dslr_undistorted.7z">observatory_dslr_undistorted.7z</a> (0.3 GB)<br/>
+        <a href="data/observatory_dslr_jpg.7z">observatory_dslr_jpg.7z</a> (0.2 GB)<br/>
+        <a href="data/observatory_dslr_raw.7z">observatory_dslr_raw.7z</a> (0.7 GB)
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_old_computer.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>old computer</b> - 54 images <span class="label label-default">indoors</span><br/>
+        <a href="data/old_computer_dslr_undistorted.7z">old_computer_dslr_undistorted.7z</a> (0.5 GB)<br/>
+        <a href="data/old_computer_dslr_jpg.7z">old_computer_dslr_jpg.7z</a> (0.3 GB)<br/>
+        <a href="data/old_computer_dslr_raw.7z">old_computer_dslr_raw.7z</a> (1.3 GB)
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_statue.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>statue</b> - 11 images <span class="label label-default">indoors</span><br/>
+        <a href="data/statue_dslr_undistorted.7z">statue_dslr_undistorted.7z</a> (0.1 GB)<br/>
+        <a href="data/statue_dslr_jpg.7z">statue_dslr_jpg.7z</a> (0.1 GB)<br/>
+        <a href="data/statue_dslr_raw.7z">statue_dslr_raw.7z</a> (0.3 GB)
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/dslr_terrace_2.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>terrace 2</b> - 13 images <span class="label label-default">outdoors</span><br/>
+        <a href="data/terrace_2_dslr_undistorted.7z">terrace_2_dslr_undistorted.7z</a> (0.1 GB)<br/>
+        <a href="data/terrace_2_dslr_jpg.7z">terrace_2_dslr_jpg.7z</a> (0.1 GB)<br/>
+        <a href="data/terrace_2_dslr_raw.7z">terrace_2_dslr_raw.7z</a> (0.3 GB)
+      </td>
+    </tr>      <tr><td></td><td></td></tr>
+    </tbody>
+  </table>
+  
+  
+  <br/><h3><span id="low-res-many-view"></span>Low-res many-view</h3>
+
+  <br/><h4><span id="low-res-many-view-training-data"></span>Training data</h4>
+  <p>
+    <a href="data/multi_view_training_rig_undistorted.7z">Download all undistorted images</a> (1.4 GB)<br/>
+    <a href="data/multi_view_training_rig.7z">Download all distorted images</a> (1.7 GB)<br/>
+    <a href="data/multi_view_training_rig_scan_eval.7z">Download all ground truth (for evaluation)</a> (0.3 GB)<br/>
+    <a href="data/multi_view_training_rig_occlusion.7z">Download all occlusion files</a> (0.4 GB)<br/>
+    <br/>
+  </p>
+  <table class="table">
+    <tbody>
+      
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/rig_delivery_area.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>delivery area</b> - 4*237 images <span class="label label-default">indoors</span><br/>
+        <a href="data/delivery_area_rig_undistorted.7z">delivery_area_rig_undistorted.7z</a> (0.3 GB)<br/>
+        <a href="data/delivery_area_rig.7z">delivery_area_rig.7z</a> (0.3 GB)
+      </td>
+      <td style="text-align:left;vertical-align:middle;min-width:300px">
+        Ground truth:<br/>
+        <a href="data/delivery_area_scan_raw.7z">delivery_area_scan_raw.7z</a> (0.4 GB)<br/>
+        <a href="data/delivery_area_scan_clean.7z">delivery_area_scan_clean.7z</a> (0.4 GB)<br/>
+        <a href="data/delivery_area_rig_scan_eval.7z">delivery_area_rig_scan_eval.7z</a> (0.1 GB)<br/>
+        <a href="data/delivery_area_rig_occlusion.7z">delivery_area_rig_occlusion.7z</a> (0.1 GB)<br/>
+        <a href="data/delivery_area_rig_depth.7z">delivery_area_rig_depth.7z</a> (0.6 GB)<br/><a href="data/delivery_area_rig_stereo_pairs_gt.7z">delivery_area_rig_stereo_pairs_gt.7z</a> (0.9 GB)</td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/rig_electro.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>electro</b> - 4*300 images <span class="label label-default">outdoors</span><br/>
+        <a href="data/electro_rig_undistorted.7z">electro_rig_undistorted.7z</a> (0.3 GB)<br/>
+        <a href="data/electro_rig.7z">electro_rig.7z</a> (0.3 GB)
+      </td>
+      <td style="text-align:left;vertical-align:middle;min-width:300px">
+        Ground truth:<br/>
+        <a href="data/electro_scan_raw.7z">electro_scan_raw.7z</a> (0.6 GB)<br/>
+        <a href="data/electro_scan_clean.7z">electro_scan_clean.7z</a> (0.5 GB)<br/>
+        <a href="data/electro_rig_scan_eval.7z">electro_rig_scan_eval.7z</a> (0.1 GB)<br/>
+        <a href="data/electro_rig_occlusion.7z">electro_rig_occlusion.7z</a> (0.1 GB)<br/>
+        <a href="data/electro_rig_depth.7z">electro_rig_depth.7z</a> (0.6 GB)<br/><a href="data/electro_rig_stereo_pairs_gt.7z">electro_rig_stereo_pairs_gt.7z</a> (0.9 GB)</td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/rig_forest.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>forest</b> - 4*257 images <span class="label label-default">outdoors</span><br/>
+        <a href="data/forest_rig_undistorted.7z">forest_rig_undistorted.7z</a> (0.4 GB)<br/>
+        <a href="data/forest_rig.7z">forest_rig.7z</a> (0.5 GB)
+      </td>
+      <td style="text-align:left;vertical-align:middle;min-width:300px">
+        Ground truth:<br/>
+        <a href="data/forest_scan_raw.7z">forest_scan_raw.7z</a> (0.7 GB)<br/>
+        <a href="data/forest_scan_clean.7z">forest_scan_clean.7z</a> (0.4 GB)<br/>
+        <a href="data/forest_rig_scan_eval.7z">forest_rig_scan_eval.7z</a> (0.1 GB)<br/>
+        <a href="data/forest_rig_occlusion.7z">forest_rig_occlusion.7z</a> (0.2 GB)<br/>
+        <a href="data/forest_rig_depth.7z">forest_rig_depth.7z</a> (0.4 GB)<br/><a href="data/forest_rig_stereo_pairs_gt.7z">forest_rig_stereo_pairs_gt.7z</a> (0.8 GB)</td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/rig_playground.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>playground</b> - 4*240 images <span class="label label-default">outdoors</span><br/>
+        <a href="data/playground_rig_undistorted.7z">playground_rig_undistorted.7z</a> (0.3 GB)<br/>
+        <a href="data/playground_rig.7z">playground_rig.7z</a> (0.4 GB)
+      </td>
+      <td style="text-align:left;vertical-align:middle;min-width:300px">
+        Ground truth:<br/>
+        <a href="data/playground_scan_raw.7z">playground_scan_raw.7z</a> (0.3 GB)<br/>
+        <a href="data/playground_scan_clean.7z">playground_scan_clean.7z</a> (0.2 GB)<br/>
+        <a href="data/playground_rig_scan_eval.7z">playground_rig_scan_eval.7z</a> (0.1 GB)<br/>
+        <a href="data/playground_rig_occlusion.7z">playground_rig_occlusion.7z</a> (0.1 GB)<br/>
+        <a href="data/playground_rig_depth.7z">playground_rig_depth.7z</a> (0.4 GB)<br/><a href="data/playground_rig_stereo_pairs_gt.7z">playground_rig_stereo_pairs_gt.7z</a> (0.7 GB)</td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/rig_terrains.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>terrains</b> - 4*165 images <span class="label label-default">indoors</span><br/>
+        <a href="data/terrains_rig_undistorted.7z">terrains_rig_undistorted.7z</a> (0.2 GB)<br/>
+        <a href="data/terrains_rig.7z">terrains_rig.7z</a> (0.2 GB)
+      </td>
+      <td style="text-align:left;vertical-align:middle;min-width:300px">
+        Ground truth:<br/>
+        <a href="data/terrains_scan_raw.7z">terrains_scan_raw.7z</a> (0.3 GB)<br/>
+        <a href="data/terrains_scan_clean.7z">terrains_scan_clean.7z</a> (0.3 GB)<br/>
+        <a href="data/terrains_rig_scan_eval.7z">terrains_rig_scan_eval.7z</a> (0.1 GB)<br/>
+        <a href="data/terrains_rig_occlusion.7z">terrains_rig_occlusion.7z</a> (0.1 GB)<br/>
+        <a href="data/terrains_rig_depth.7z">terrains_rig_depth.7z</a> (0.4 GB)<br/><a href="data/terrains_rig_stereo_pairs_gt.7z">terrains_rig_stereo_pairs_gt.7z</a> (0.6 GB)</td>
+    </tr>      <tr><td></td><td></td><td></td></tr>
+    </tbody>
+  </table>
+
+  
+  <br/><h4><span id="low-res-many-view-test-data"></span>Test data</h4>
+  <p>
+    <a href="data/multi_view_test_rig_undistorted.7z">Download all undistorted images</a> (1.9 GB)<br/>
+    <a href="data/multi_view_test_rig.7z">Download all distorted images</a> (2.1 GB)<br/>
+    <br/>
+  </p>
+  <table class="table">
+    <tbody>
+      
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/rig_lakeside.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>lakeside</b> - 4*266 images <span class="label label-default">outdoors</span><br/>
+        <a href="data/lakeside_rig_undistorted.7z">lakeside_rig_undistorted.7z</a> (0.4 GB)<br/>
+        <a href="data/lakeside_rig.7z">lakeside_rig.7z</a> (0.4 GB)<br/><a href="data/lakeside_rig_imu.7z">lakeside_rig_imu.7z</a> (5 MB)
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/rig_sand_box.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>sand box</b> - 4*278 images <span class="label label-default">outdoors</span><br/>
+        <a href="data/sand_box_rig_undistorted.7z">sand_box_rig_undistorted.7z</a> (0.4 GB)<br/>
+        <a href="data/sand_box_rig.7z">sand_box_rig.7z</a> (0.5 GB)<br/><a href="data/sand_box_rig_imu.7z">sand_box_rig_imu.7z</a> (4 MB)
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/rig_storage_room.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>storage room</b> - 4*199 images <span class="label label-default">indoors</span><br/>
+        <a href="data/storage_room_rig_undistorted.7z">storage_room_rig_undistorted.7z</a> (0.2 GB)<br/>
+        <a href="data/storage_room_rig.7z">storage_room_rig.7z</a> (0.3 GB)<br/><a href="data/storage_room_rig_imu.7z">storage_room_rig_imu.7z</a> (6 MB)
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/rig_storage_room_2.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>storage room 2</b> - 4*208 images <span class="label label-default">indoors</span><br/>
+        <a href="data/storage_room_2_rig_undistorted.7z">storage_room_2_rig_undistorted.7z</a> (0.2 GB)<br/>
+        <a href="data/storage_room_2_rig.7z">storage_room_2_rig.7z</a> (0.2 GB)<br/><a href="data/storage_room_2_rig_imu.7z">storage_room_2_rig_imu.7z</a> (6 MB)
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px;vertical-align:middle"><img src="img/rig_tunnel.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:320px">
+        <b>tunnel</b> - 4*352 images <span class="label label-default">outdoors</span><br/>
+        <a href="data/tunnel_rig_undistorted.7z">tunnel_rig_undistorted.7z</a> (0.5 GB)<br/>
+        <a href="data/tunnel_rig.7z">tunnel_rig.7z</a> (0.6 GB)<br/><a href="data/tunnel_rig_imu.7z">tunnel_rig_imu.7z</a> (6 MB)
+      </td>
+    </tr>      <tr><td></td><td></td></tr>
+    </tbody>
+  </table>
+  
+  
+  <br/><h3><span id="low-res-two-view"></span>Low-res two-view</h3>
+
+  <br/><h4><span id="low-res-two-view-training-data"></span>Training data</h4>
+  <p>
+    <a href="data/two_view_training.7z">Download all images</a> (13.6 MB)<br/>
+    <a href="data/two_view_training_gt.7z">Download all ground truth</a> (14.2 MB)<br/>
+    <br/>
+  </p>
+  <table class="table">
+    <tbody>
+      
+    <tr>
+      <td style="width:500px"><img src="img/stereo_delivery_area_1.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>delivery_area - 1</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_delivery_area_2.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>delivery_area - 2</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_delivery_area_3.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>delivery_area - 3</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_electro_1.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>electro - 1</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_electro_2.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>electro - 2</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_electro_3.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>electro - 3</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_facade_1.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>facade - 1</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_forest_1.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>forest - 1</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_forest_2.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>forest - 2</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_playground_1.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>playground - 1</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_playground_2.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>playground - 2</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_playground_3.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>playground - 3</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_terrace_1.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>terrace - 1</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_terrace_2.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>terrace - 2</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_terrains_1.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>terrains - 1</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_terrains_2.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>terrains - 2</b>
+      
+      </td>
+    </tr>      <tr><td></td><td></td></tr>
+    </tbody>
+  </table>
+  
+  
+  <br/><h4><span id="low-res-two-view-test-data"></span>Test data</h4>
+  <p>
+    <a href="data/two_view_test.7z">Download all images</a> (11.8 MB)<br/>
+    <br/>
+  </p>
+  <table class="table">
+    <tbody>
+      
+    <tr>
+      <td style="width:500px"><img src="img/stereo_lakeside_1.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>lakeside - 1</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_sand_box_1.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>sand box - 1</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_storage_room_1.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>storage room - 1</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_storage_room_2.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>storage room - 2</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_storage_room_3.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>storage room - 3</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_storage_room_2_1.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>storage room 2 - 1</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_storage_room_2_2.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>storage room 2 - 2</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_tunnel_1.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>tunnel - 1</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_tunnel_2.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>tunnel - 2</b>
+      
+      </td>
+    </tr>
+    <tr>
+      <td style="width:500px"><img src="img/stereo_tunnel_3.jpg" alt=""/></td>
+      <td style="text-align:left;vertical-align:middle;min-width:360px">
+        <b>tunnel - 3</b>
+      
+      </td>
+    </tr>      <tr><td></td><td></td></tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+  <br/><br/>
+  <footer class='footer'>
+    <div class='container'>
+      <a class='navbar-brand' href='http://www.cvg.ethz.ch/' style='padding-left:0px;padding-right:0px'>
+        <img src='img/ETH_logo_inverted.png' alt='ETH Zurich' height='30'>
+      </a>
+      <p class='navbar-text pull-right' style='margin-top:20px'>
+        <a href='/imprint'>Imprint</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+  <script>window.jQuery || document.write('<script src='js/jquery.min.js'><\/script>')</script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa' crossorigin='anonymous'></script>
+
+  <script src='js/ie10-viewport-bug-workaround.js'></script>
+  </body>
+  </html>

@@ -1,0 +1,37 @@
+{
+  "status": "PASS_BENCHMARK_IDENTITY_UNAMBIGUOUS",
+  "DATASET_FAMILY": "ETH3D_MULTI_VIEW_STEREO",
+  "NOT_DATASET_FAMILY": "ETH3D_SLAM_RGBD",
+  "scene": "delivery_area",
+  "scene_type": "indoor",
+  "benchmark_partition": "training",
+  "variants": {
+    "HIGH_RES_DSLR": {
+      "scenario": "high-resolution multi-view stereo",
+      "image_count": 44,
+      "camera": "Nikon D3X DSLR",
+      "undistorted_format": "JPEG",
+      "calibration": "COLMAP text cameras.txt/images.txt/points3D.txt",
+      "undistorted_camera_model": "PINHOLE",
+      "pose_authority": "official scan-aligned image extrinsics"
+    },
+    "LOW_RES_RIG": {
+      "scenario": "low-resolution many-view stereo",
+      "image_count": 948,
+      "capture_count": 237,
+      "cameras_per_capture": 4,
+      "simultaneous_grouping": true,
+      "undistorted_format": "PNG",
+      "calibration": "COLMAP text plus official fixed-rig support",
+      "undistorted_camera_model": "PINHOLE",
+      "split_unit": "RIG_CAPTURE_GROUP"
+    }
+  },
+  "identity_evidence": [
+    "official MVS datasets page labels delivery area as 44-image indoor high-res training data",
+    "official MVS datasets page labels delivery area as 4*237-image indoor low-res many-view training data",
+    "official MVS overview states laser-scan ground truth and DSLR/synchronized rig acquisition",
+    "official SLAM overview describes a separate visual-inertial/stereo/RGB-D benchmark and does not define this MVS scene"
+  ],
+  "metadata_only": true
+}

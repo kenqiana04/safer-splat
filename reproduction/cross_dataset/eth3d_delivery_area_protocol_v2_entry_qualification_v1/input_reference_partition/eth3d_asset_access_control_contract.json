@@ -1,0 +1,121 @@
+{
+  "status": "PASS_PHYSICAL_ISOLATION_ENTRY_CONTRACT",
+  "role_enum": [
+    "MAPPING_INPUT_ONLY",
+    "HELDOUT_EVALUATION_ONLY",
+    "REFERENCE_ORACLE_ONLY",
+    "CROSS_VIEW_EVALUATION_ONLY",
+    "OPTIONAL_DIAGNOSTIC_ONLY",
+    "PROHIBITED_AS_MAPPING_INPUT",
+    "NOT_REQUIRED"
+  ],
+  "TRAIN_INPUT_ROOT": {
+    "allowed": [
+      "undistorted RGB",
+      "official intrinsics",
+      "official extrinsics/poses",
+      "non-reference masks only after semantic validation",
+      "rig grouping metadata"
+    ],
+    "selected_archive": "delivery_area_rig_undistorted.7z"
+  },
+  "EVAL_ORACLE_ROOT": {
+    "allowed": [
+      "held-out RGB",
+      "scan_eval",
+      "scan_clean",
+      "occlusion",
+      "rendered depth"
+    ],
+    "training_readable": false
+  },
+  "training_open_file_audit_required": true,
+  "training_eval_root_access_count_required": 0,
+  "reference_based_pruning_or_scale_correction": "PROHIBITED",
+  "asset_assignments": [
+    {
+      "filename": "delivery_area_dslr_undistorted.7z",
+      "role": "CROSS_VIEW_EVALUATION_ONLY",
+      "physical_root": "CROSS_VIEW_EVALUATION",
+      "mapping_input_prohibited": true
+    },
+    {
+      "filename": "delivery_area_dslr_jpg.7z",
+      "role": "NOT_REQUIRED",
+      "physical_root": "NONE",
+      "mapping_input_prohibited": true
+    },
+    {
+      "filename": "delivery_area_dslr_raw.7z",
+      "role": "NOT_REQUIRED",
+      "physical_root": "NONE",
+      "mapping_input_prohibited": true
+    },
+    {
+      "filename": "delivery_area_scan_raw.7z",
+      "role": "OPTIONAL_DIAGNOSTIC_ONLY",
+      "physical_root": "FUTURE_DIAGNOSTIC",
+      "mapping_input_prohibited": true
+    },
+    {
+      "filename": "delivery_area_scan_clean.7z",
+      "role": "REFERENCE_ORACLE_ONLY",
+      "physical_root": "REFERENCE_ORACLE",
+      "mapping_input_prohibited": true
+    },
+    {
+      "filename": "delivery_area_dslr_scan_eval.7z",
+      "role": "CROSS_VIEW_EVALUATION_ONLY",
+      "physical_root": "CROSS_VIEW_EVALUATION",
+      "mapping_input_prohibited": true
+    },
+    {
+      "filename": "delivery_area_dslr_occlusion.7z",
+      "role": "CROSS_VIEW_EVALUATION_ONLY",
+      "physical_root": "CROSS_VIEW_EVALUATION",
+      "mapping_input_prohibited": true
+    },
+    {
+      "filename": "delivery_area_dslr_depth.7z",
+      "role": "CROSS_VIEW_EVALUATION_ONLY",
+      "physical_root": "CROSS_VIEW_EVALUATION",
+      "mapping_input_prohibited": true
+    },
+    {
+      "filename": "delivery_area_rig_undistorted.7z",
+      "role": "MAPPING_INPUT_ONLY",
+      "physical_root": "TRAIN_INPUT_ROOT",
+      "mapping_input_prohibited": false
+    },
+    {
+      "filename": "delivery_area_rig.7z",
+      "role": "NOT_REQUIRED",
+      "physical_root": "NONE",
+      "mapping_input_prohibited": true
+    },
+    {
+      "filename": "delivery_area_rig_scan_eval.7z",
+      "role": "HELDOUT_EVALUATION_ONLY",
+      "physical_root": "EVAL_ORACLE_ROOT",
+      "mapping_input_prohibited": true
+    },
+    {
+      "filename": "delivery_area_rig_occlusion.7z",
+      "role": "HELDOUT_EVALUATION_ONLY",
+      "physical_root": "EVAL_ORACLE_ROOT",
+      "mapping_input_prohibited": true
+    },
+    {
+      "filename": "delivery_area_rig_depth.7z",
+      "role": "HELDOUT_EVALUATION_ONLY",
+      "physical_root": "EVAL_ORACLE_ROOT",
+      "mapping_input_prohibited": true
+    },
+    {
+      "filename": "delivery_area_rig_stereo_pairs_gt.7z",
+      "role": "PROHIBITED_AS_MAPPING_INPUT",
+      "physical_root": "NONE",
+      "mapping_input_prohibited": true
+    }
+  ]
+}

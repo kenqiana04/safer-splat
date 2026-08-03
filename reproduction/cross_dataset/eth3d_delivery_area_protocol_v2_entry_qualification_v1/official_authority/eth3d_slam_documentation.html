@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head -->
+<meta name="description" content="ETH3D">
+<meta name="author" content="Computer Vision and Geometry Group, ETH Zurich">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+<title>SLAM > Documentation - ETH3D</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+<!-- Custom styles for this page -->
+<link href="css/theme.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/" style="font-size:26px;line-height:20px">ETH3D</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Stereo <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/overview">Overview</a></li>
+            <li><a href="/documentation">Documentation</a></li>
+            <li><a href="/datasets">Datasets</a></li>
+            <li><a href="/high_res_multi_view">High-res multi-view benchmark</a></li>
+            <li><a href="/low_res_many_view">Low-res many-view benchmark</a></li>
+            <li><a href="/low_res_two_view">Low-res two-view benchmark</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SLAM <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/slam_overview">Overview</a></li>
+            <li class="active"><a href="/slam_documentation">Documentation</a></li>
+            <li><a href="/slam_datasets">Datasets</a></li>
+            <li><a href="/slam_benchmark">Benchmark</a></li>
+          </ul>
+        </li>
+        <li><a href="/about">About</a></li><li><a href="/login">Submit</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<noscript>
+  <div class="alert alert-danger" role="alert">
+    <b>Javascript disabled</b><br/>
+    This page does not display correctly without Javascript. Please enable it in your browser.
+  </div>
+</noscript>
+
+<div class="container theme-showcase" role="main"><div style="max-width: 800px">
+  <div class="page-header"><h1>SLAM > Documentation</h1></div>
+  <p>
+    <a href="#hardware">Hardware</a><br/>
+    <a href="#archive-format">Archive format</a><br/>
+    <a href="#dataset-format">Dataset format</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-of-mono-data">Monocular data</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-of-rgbd-data">RGB-D data</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-of-stereo-data">RGB stereo data</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-of-imu-data">IMU data</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-of-raw-data">Raw data</a><br/>
+    <a href="#evaluation">Evaluation</a><br/>
+    <a href="#result-submission">Result submission</a><br/>
+  </p>
+  
+  <br/><h3><span id="hardware"></span>Hardware</h3>
+  <p>
+    A custom camera rig was used to record the datasets. All cameras on this rig
+    use a global shutter and are synchronized. Depth was estimated with active
+    stereo, i.e., a stereo algorithm was used on two infrared cameras to estimate depth,
+    and an infrared pattern was projected with the IR emitter of an Asus Xtion Live Pro
+    to provide additional texture for stereo matching. The cameras on the Xtion were not used.
+    Next to each infrared camera, we placed an RGB camera (with a Bayer pattern).
+    Depth images are estimated for the viewpoint of the right infrared camera
+    and are then re-projected into the viewpoint of the RGB camera next to it to obtain RGB-D data.
+    Images of the other RGB camera can be used for stereo SLAM.
+    Each of the four cameras in addition has an IMU on it.
+  </p>
+  <p>
+    <img src="img/slam_camera_rig.jpg" alt="camera rig" />
+  </p>
+  
+  <br/><h3><span id="dataset-format"></span>Dataset format</h3>
+  <p>
+    The ETH3D SLAM benchmark can be used to evaluate visual-inertial mono, stereo, and RGB-D SLAM.
+    Correspondingly, it is possible to download either all dataset images or only the relevant parts
+    (for example, only monocular images). In the following, the format of the different data types
+    is described.
+  </p>
+  <p>
+    The frame rate of most datasets is about 27.1 Hz, with the exception of the datasets whose names begin with "sfm_", which are recorded with about 13.6 Hz.
+    This is because we used additional cameras for the latter datasets, which limits the frame rate of the camera system.
+  </p>
+  
+  <br/><h4><span id="format-of-mono-data"></span>Monocular data</h4>
+  <p>
+    Monocular data follows this file system structure:
+  </p>
+  </p>
+  <p><span class="code">
+    +── rgb<br/>
+    │&nbsp;&nbsp;&nbsp;+── <i>&lt;timestamp1&gt;</i>.png<br/>
+    │&nbsp;&nbsp;&nbsp;+── <i>&lt;timestamp2&gt;</i>.png<br/>
+    │&nbsp;&nbsp;&nbsp;+── ...<br/>
+    +── calibration.txt<br/>
+    +── groundtruth.txt <i>(for training datasets)</i><br/>
+    +── rgb.txt<br/>
+  </span></p>
+  <p>
+    <b>Color images</b> in the rgb folder are stored as PNG files.
+    Please note that the images have been recorded while trying to avoid overexposure (which leaves no information in the overexposed areas).
+    As a result, often many image areas are relatively dark (while however still containing information).
+    In addition, we did not apply white-balancing to the images in order not to disturb the photometric consistency.
+    While both of these decisions might be beneficial for SLAM systems, they are not well-suited for visualization to humans.
+    Therefore, for visualization of the images or of 3D reconstruction results, we recommend to brighten up the colors and apply white balancing as needed.
+  </p>
+  <p>
+    The file <b>calibration.txt</b> provides the intrinsic calibration of the images,
+    listing the following four parameters in a single line, separated by spaces:
+    $$f_x ~~ f_y ~~ c_x ~~ c_y$$
+    All images are undistorted and follow the pinhole camera model, which means that a 3D point \((x, y, z)^T\) in the
+    local coordinate system of a camera (with \(z > 0\)) can be projected into the image as follows:
+    $$u = f_x \frac{x}{z} + c_x$$
+    $$v = f_y \frac{y}{z} + c_y$$
+    The convention for the pixel coordinate origin of the result is that (0, 0) is the
+    <b>center</b> of the top-leftmost pixel (as opposed to the top-left corner of the image).
+  </p>
+  <p>
+    For training datasets, the ground-truth camera trajectory is given in the file <b>groundtruth.txt</b>.
+    Each line in this file gives one pose measurement in the following format:
+  </p>
+  <p><span class="code">
+    timestamp tx ty tz qx qy qz qw
+  </span></p>
+  <p>
+    Each line starts with the timestamp in seconds. Then the camera pose transformation follows.
+    It transforms points from the local image's frame to the global frame.
+    The transformation parameters are given as: tx ty tz qx qy qz qw,
+    where t is the translation vector and q is a quaternion describing the rotation
+    (as for example implemented in the Eigen linear algebra library).
+  </p>
+  <p>
+    The file <b>rgb.txt</b> is provided for compatibility with the TUM RGB-D benchmark.
+    It lists all image files in the dataset. Each file is listed on a separate line, which
+    is formatted like:
+  </p>
+  <p><span class="code">
+    timestamp file_path
+  </span></p>
+  
+  <br/><h4><span id="format-of-rgbd-data"></span>RGB-D data</h4>
+  <p>
+    The RGB-D video format follows that of the <a href="https://vision.in.tum.de/data/datasets/rgbd-dataset">TUM RGB-D benchmark</a> for compatibility reasons.
+    In addition to the <a href="#format-of-mono-data">monocular data</a>, downloading the RGB-D data adds the following files and folders:
+  </p>
+  <p><span class="code">
+    +── depth<br/>
+    │&nbsp;&nbsp;&nbsp;+── <i>&lt;timestamp1&gt;</i>.png<br/>
+    │&nbsp;&nbsp;&nbsp;+── <i>&lt;timestamp2&gt;</i>.png<br/>
+    │&nbsp;&nbsp;&nbsp;+── ...<br/>
+    +── associated.txt<br/>
+    +── depth.txt<br/>
+  </span></p>
+  <p>
+    The depth and color images in the corresponding folders have the same viewpoint and dimensions and are synchronized.
+    Files having the same name were recorded at the same time.
+  </p>
+  <p>
+    <b>Depth images</b> in the depth folder are stored as 16-bit PNG files.
+    A pixel's value must be divided by 5000 to obtain its depth value in meters.
+    Pixels without a depth estimate have the value zero.
+  </p>
+  <p>
+    The files <b>associated.txt</b> and <b>depth.txt</b> are provided for
+    compatibility with the TUM RGB-D benchmark. They list all image files in the dataset.
+    In depth.txt, each corresponding file is listed on a separate line that
+    is formatted like:
+  </p>
+  <p><span class="code">
+    timestamp file_path
+  </span></p>
+  <p>
+    In associated.txt, corresponding pairs of depth and image files are listed in the format:
+  </p>
+  <p><span class="code">
+    rgb_timestamp rgb_file_path depth_timestamp depth_file_path
+  </span></p>
+  <p>
+    For the ETH3D SLAM benchmark, it is not necessary to use these files. Corresponding
+    depth and color images can be easily determined since they always have exactly the same
+    filename.
+  </p>
+  
+  <br/><h4><span id="format-of-stereo-data"></span>RGB stereo data</h4>
+  <p>
+    In addition to the <a href="#format-of-mono-data">monocular data</a>, downloading the stereo data adds the following files and folders:
+  </p>
+  <p><span class="code">
+    +── rgb2<br/>
+    │&nbsp;&nbsp;&nbsp;+── <i>&lt;timestamp1&gt;</i>.png<br/>
+    │&nbsp;&nbsp;&nbsp;+── <i>&lt;timestamp2&gt;</i>.png<br/>
+    │&nbsp;&nbsp;&nbsp;+── ...<br/>
+    +── calibration2.txt<br/>
+    +── extrinsics_1_2.txt<br/>
+  </span></p>
+  <p>
+    The <b>color images</b> of a second color camera are stored as PNG files in the rgb2 folder.
+    As for the other images, these images are undistorted pinhole camera images.
+    Please note that they are not stereo-rectified with the other images however,
+    i.e., corresponding pixels in the images in general do not lie on the same image row.
+  </p>
+  <p>
+    <b>calibration2.txt</b> gives the calibration of the second color camera, analogous to calibration.txt.
+    See the <a href="#format-of-mono-data">monocular data description</a> for an explanation of the camera model.
+  </p>
+  <p>
+    The file <b>extrinsics_1_2.txt</b> specifies the 6-DOF rigid-body transformation between the camera "1"
+    (corresponding to the images in the rgb and possibly depth folders), and the camera "2"
+    (corresponding to the images in the rgb2 folder). This transformation T is given in this file as a 3x4
+    matrix:
+    $$T_{00} ~~ T_{01} ~~ T_{02} ~~ T_{03}$$
+    $$T_{10} ~~ T_{11} ~~ T_{12} ~~ T_{13}$$
+    $$T_{20} ~~ T_{21} ~~ T_{22} ~~ T_{23}$$
+    A 3D point can be transformed from camera 2 to camera 1 by homogeneously multiplying
+    it with this matrix from the right.
+  </p>
+  
+  <br/><h4><span id="format-of-imu-data"></span>IMU data</h4>
+  <p>
+    Downloading the IMU data adds those additional files:
+  </p>
+  <p><span class="code">
+    +── imu.txt&nbsp;&nbsp;<i>(corresponding to rostopic /uvc_camera/cam_2/imu)</i><br/>
+    +── imu2.txt <i>(corresponding to rostopic /uvc_camera/cam_3/imu)</i><br/>
+    +── imu3.txt <i>(corresponding to rostopic /uvc_camera/cam_0/imu)</i><br/>
+    +── imu4.txt <i>(corresponding to rostopic /uvc_camera/cam_1/imu)</i><br/>
+    +── sequence_calibration.txt <i>(except for SfM datasets)</i><br/>
+  </span></p>
+  <p>
+    Each camera contains an IMU, and each IMU file thus contains the data of the IMU of a specific camera. The file
+    imu.txt contains the data of the right RGB camera, which is the viewpoint that the
+    rgb and depth data is provided in. The file imu2.txt contains the data of the
+    left RGB camera, corresponding to the rgb2 folder. The files imu3.txt and imu4.txt
+    contain the IMU data of the right and left infrared cameras (for these cameras,
+    no images are provided, except in the raw data format).
+  </p>
+  <p>
+    In each file, a pair of gyroscope and accelerometer measurements is given on each line.
+    The format of each line is as follows:
+  </p>
+  <p><span class="code">
+    timestamp angular_velocity[rad/sec](x y z) linear_acceleration[m/s^2](x y z)
+  </span></p>
+  <p>
+    For datasets other than those with Structure-from-Motion ground truth (whose names start with sfm_),
+    there is also a file sequence_calibration.txt, which specifies some values used in the dataset's calibration.
+    In particular, the value for mocap_timescaling_camera specifies how the camera and IMU timestamps were
+    scaled to match the timestamps of the motion capturing system. This value should always be very close to 1,
+    however. For the Structure-from-Motion datasets, no scaling of timestamps was performed.
+  </p>
+  <p>
+    The IMU model on the cameras is the ICM20608 by Invensense.
+    It may be calibrated with Kalibr using the following IMU configuration YAML
+    file (adapted to the specific rostopic): <a href="data/slam/imu.yaml">imu.yaml</a>.
+    We provide a Kalibr camera calibration here which was computed from the
+    calibration dataset for mocap datasets (2018-08-13-15-44-25-camera-calibration.bag) and can be used as input:
+    <a href="data/slam/camera_calib_radtan.zip">camera_calib_radtan.zip</a>.
+    In the file camchain_color_only.yaml, the infrared cameras were removed from the camchain.
+    This makes it possible to use it for IMU calibration with the "sequence calibration" subsets of the
+    calibration sequences, in which the infrared projection is active.
+    An IMU calibration obtained in this way is provided here:
+    <a href="data/slam/camera_imu_calib_radtan.zip">camera_imu_calib_radtan.zip</a>.
+    Please note that there would be several ways to improve upon that calibration
+    (as we did in our own calibration program for the camera geometry):
+    A better Debayering method might be used for the RGB images,
+    a non-parametric camera model might be used to better fit the true camera distortion everywhere in the images,
+    and better feature detection and tracking might be used to detect the checkerboard corners.
+  </p>
+  
+  <br/><h4><span id="format-of-raw-data"></span>Raw data</h4>
+  <p>
+    Downloading the raw data for a dataset yields the following files:
+  </p>
+  <p><span class="code">
+    +── calibration_dataset.txt <i>(for training datasets)</i><br/>
+    +── raw_dataset.bag<br/>
+    +── sequence_calibration.txt<br/>
+  </span></p>
+  <p>
+    <b>raw_dataset.bag</b> is a compressed rosbag file containing the raw camera, IMU, and (for training datasets) ground truth data.
+    With a ROS installation, it can be inspected with 'rosbag info raw_dataset.bag'.
+    If desired, it can be uncompressed with 'rosbag decompress raw_dataset.bag'.
+  </p>
+  <p>
+    The text file <b>calibration_dataset.txt</b> contains the name of the calibration dataset
+    which is associated with this dataset (one calibration dataset may be associated with several datasets).
+    Since they contain additional views of the scene, calibration datasets are only
+    provided for training datasets. Thus, for test datasets only self-calibration is possible.
+    The format of calibration datasets is as follows for datasets with motion captured ground truth:
+  </p>
+  <p><span class="code">
+    +── calibration.bag<br/>
+    +── seq_camera_refinement_1.txt<br/>
+    +── seq_sequence_calib_1.txt<br/>
+    +── seq_sequence_calib_2.txt<br/>
+  </span></p>
+  <p>
+    <b>calibration.bag</b> contains additional video data which can be used for dataset calibration.
+    It consists of several parts: two sequence calibration subsequences (one recorded before the actual dataset(s) and one afterwards),
+    and a camera refinement subsequence.
+    For the camera refinement subsequence, the camera's infrared projection is off and the camera is moved very slowly. It is intended to refine the camera extrinsic parameters.
+    For the sequence calibration subsequences, the camera's infrared projection is on and the camera is moved quickly. They are intended to compute the camera-mocap calibration.
+    See the supplemental material of our 'BAD SLAM' paper for more details.
+  </p>
+  <p>
+    The text files in the archive specify the timestamp ranges of the different subsequences.
+    The first number is the first timestamp in the subsequence, the second number is the last timestamp in it.
+  </p>
+  <p>
+    If you perform a custom calibration, keep in mind that our processing includes an alignment step
+    between the motion-capturing timestamps and the image timestamps.
+    The image and IMU timestamps in the processed datasets are therefore transformed.
+    The results should be reported in the motion-capturing timestamp frame.
+    The image and IMU timestamps can be transformed with the values from the file sequence_calibration.txt from the dataset files as follows:
+  </p>
+  <p><span class="code">
+     mocap_timestamp = (mocap_timescaling_camera * ((1.e-9 * camera_timestamp_nanoseconds) - timescaling_anchor)) + timescaling_anchor + mocap_timeoffset_camera
+  </span></p>
+  <p>
+    For datasets with Structure-from-Motion ground truth, the format of the calibration datasets is as follows:
+  </p>
+  <p><span class="code">
+    +── calibration.bag<br/>
+    +── seq_camera_refinement_1.txt<br/>
+    +── seq_camera_refinement_2.txt<br/>
+    +── seq_sfm_1.txt<br/>
+  </span></p>
+  <p>
+    The 'sfm' subsequence is the part of the dataset on which Structure-from-Motion was run to determine the ground truth poses. This should be longer than the actual dataset subsequence.
+  </p>
+  
+  
+  <br/><h3><span id="evaluation"></span>Evaluation</h3>
+  <p>
+    The benchmark evaluates commonly used absolute and relative trajectory errors.
+    It is possible to evaluate both training and test set results on this website by uploading the results as described below.
+    For evaluating training results locally, the evaluation program is provided as <a href="https://github.com/ETH3D/slam-evaluation">source code (on GitHub)</a>.
+    This program depends on <a href="http://eigen.tuxfamily.org">Eigen</a>.
+    Using CMake, it should compile for Linux and Windows.
+    A script to automate the evaluation on all datasets and output comparison plots for multiple methods
+    is provided here: <a href="/data/slam/evaluate_eth3d_slam_results.py">evaluate_eth3d_slam_results.py</a>.
+    It works together with the run script that is also referenced below in the section on result submission:
+    <a href="/data/slam/run_on_eth3d_slam_datasets.py">run_on_eth3d_slam_datasets.py</a>.
+  </p>
+  
+  
+  <br/><h3><span id="result-submission"></span>Result submission</h3>
+  <p>
+    <b>Important:</b> Please note that we are interested in the methods'
+    runtimes and request these as mandatory information for each submission.
+    Therefore, please remember to record the runtime of your method when you submit, on each dataset individually.
+  </p>
+  <p>
+    To submit your results, you need to <a href="/register_confirm_terms">sign up for an
+    account</a> and <a href="/login">login</a>.
+  </p>
+  <p>
+    Both the training and test datasets can be evaluated online.
+    Partial submissions (on a subset of datasets) are possible, but we only compute category averages
+    (and therefore rank a method in a category) if results for all of the
+    datasets within a category are provided. If a method fails on a dataset and
+    you would still like to rank it in a category containing this dataset, you
+    can provide an empty result file for this dataset.
+  </p>
+  
+  <br/><h4>Submission format</h4>
+  <p>
+    Results for a method must be uploaded as a single .zip or .7z file
+    (7z is preferred due to smaller file sizes), which must
+    in its root contain a folder named <span class="tt">slam</span> with the results.
+    There must not be any extraneous files or folders in the archive, or
+    the submission will be rejected.
+    Upper- / lowercase spelling matters for all directories and filenames.
+  </p>
+  <p>
+    For a given dataset, the trajectory estimated by the SLAM algorithm must be
+    provided as a text file with the same name as the dataset, with file extension <span class="tt">.txt</span>.
+    For example, for the dataset "mannequin_1", the result file must be named "mannequin_1.txt".
+    Each line in the result file specifies the camera pose for one image.
+    Lines must be ordered by increasing timestamp.
+    The format of each line is the same as the format of the ground truth data:
+  </p>
+  <p><span class="code">
+    timestamp tx ty tz qx qy qz qw
+  </span></p>
+  <p>
+    Each camera pose is specified as the transformation from the local camera frame to the global frame.
+    You can choose an arbitrary global frame, for example, by setting the first frame's pose to the identity.
+    The transformation parameters are given as: tx ty tz qx qy qz qw,
+    where t is the translation vector and q is a quaternion describing the rotation
+    (as for example implemented in the Eigen library).
+  </p>
+  <p>
+    Poses should be given for all input images. If a pose for an image is missing, it will be filled in
+    automatically during evaluation based on the provided poses.
+  </p>
+  <p>
+    In addition to the trajectory, for each result file a metadata file having the same name,
+    but with extension <span class="tt">_runtime.txt</span>, must be provided. For example, for the
+    dataset "mannequin_1" with result file "mannequin_1.txt", the name of this additional file
+    should be "mannequin_1_runtime.txt". This file is required to contain the
+    method's runtime for this dataset in seconds. The format is a single floating-point number as plain text.
+  </p>
+  <p>
+    In sum, the file structure of a submission looks like this:
+  </p>
+  <p><span class="code">
+    +── slam<br/>
+    │&nbsp;&nbsp;&nbsp;+── mannequin_1.txt<br/>
+    │&nbsp;&nbsp;&nbsp;+── mannequin_1_runtime.txt<br/>
+    │&nbsp;&nbsp;&nbsp;+── dino.txt<br/>
+    │&nbsp;&nbsp;&nbsp;+── dino_runtime.txt<br/>
+    │&nbsp;&nbsp;&nbsp;+── ...<br/>
+  </span></p>
+  <p>
+    As an example, a Python script to run BAD SLAM on the dataset is provided here: <a href="/data/slam/run_on_eth3d_slam_datasets.py">run_on_eth3d_slam_datasets.py</a>.
+    A second script to zip the results in the correct format for uploading is provided here: <a href="/data/slam/zip_eth3d_results.py">zip_eth3d_results.py</a>.
+    These scripts can be easily adapted to run other SLAM methods.
+  </p>
+  
+</div></div>
+
+
+  <br/><br/>
+  <footer class='footer'>
+    <div class='container'>
+      <a class='navbar-brand' href='http://www.cvg.ethz.ch/' style='padding-left:0px;padding-right:0px'>
+        <img src='img/ETH_logo_inverted.png' alt='ETH Zurich' height='30'>
+      </a>
+      <p class='navbar-text pull-right' style='margin-top:20px'>
+        <a href='/imprint'>Imprint</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+  <script>window.jQuery || document.write('<script src='js/jquery.min.js'><\/script>')</script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa' crossorigin='anonymous'></script>
+
+  <script src='js/ie10-viewport-bug-workaround.js'></script>
+  </body>
+  </html>

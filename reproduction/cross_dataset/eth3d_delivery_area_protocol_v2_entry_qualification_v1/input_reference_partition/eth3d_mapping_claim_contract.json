@@ -1,0 +1,17 @@
+{
+  "status": "FROZEN",
+  "mapping_claim": "ETH3D_DELIVERY_AREA_GT_POSE_RGB_ONLY_MAP_ONLY_LEARNED_GAUSSIAN_MAP",
+  "properties": {
+    "official_gt_scan_aligned_poses": true,
+    "rgb_only": true,
+    "map_only": true,
+    "tracking": false,
+    "pose_estimation": false,
+    "sensor_rgbd": false,
+    "laser_depth_supervision": false,
+    "full_slam": false,
+    "single_scene_instance": true,
+    "algorithm_stability_claim": false
+  },
+  "training_authorized": false
+}

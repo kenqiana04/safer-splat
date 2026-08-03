@@ -1,0 +1,31 @@
+{
+  "status": "FROZEN",
+  "count": 5,
+  "assets": [
+    {
+      "filename": "delivery_area_scan_raw.7z",
+      "reason": "not needed for the minimum Protocol V2 path",
+      "next_task_download_authorized": false
+    },
+    {
+      "filename": "delivery_area_dslr_raw.7z",
+      "reason": "not needed for the minimum Protocol V2 path",
+      "next_task_download_authorized": false
+    },
+    {
+      "filename": "delivery_area_dslr_jpg.7z",
+      "reason": "not needed for the minimum Protocol V2 path",
+      "next_task_download_authorized": false
+    },
+    {
+      "filename": "delivery_area_rig.7z",
+      "reason": "not needed for the minimum Protocol V2 path",
+      "next_task_download_authorized": false
+    },
+    {
+      "filename": "delivery_area_rig_stereo_pairs_gt.7z",
+      "reason": "two-view ground-truth disparity is prohibited as mapping input",
+      "next_task_download_authorized": false
+    }
+  ]
+}

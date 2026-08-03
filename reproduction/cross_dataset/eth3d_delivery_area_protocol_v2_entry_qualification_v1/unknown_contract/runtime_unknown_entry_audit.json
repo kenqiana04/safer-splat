@@ -1,0 +1,45 @@
+{
+  "status": "UNKNOWN_CONTRACT_FEASIBLE_FOR_FUTURE_ASSET_VALIDATION",
+  "principle": "UNKNOWN != FREE",
+  "runtime_gt_reference_access": false,
+  "candidate_specific_parameter_selection": false,
+  "options": {
+    "U1_TRAINING_FRUSTUM_SUPPORT": {
+      "known_occupied": "only with learned Gaussian evidence",
+      "known_free": "not from frustum membership alone",
+      "occluded_free_risk": "high if naive",
+      "depends_on_map": false,
+      "prefreezable": true,
+      "distinct_views": "needed for conservative support",
+      "angular_baseline": "needed",
+      "safer_unknown": true,
+      "unknown_as_occupied": true,
+      "route_knownness": true
+    },
+    "U2_MULTI_VIEW_FREE_RAYS_TO_FIRST_SURFACE": {
+      "known_occupied": "learned first-surface neighborhood",
+      "known_free": "only before conservative first surface with multi-view support",
+      "occluded_free_risk": "bounded by truncation and no behind-surface extrapolation",
+      "depends_on_map": true,
+      "prefreezable": true,
+      "distinct_views": "required",
+      "angular_baseline": "required",
+      "safer_unknown": true,
+      "unknown_as_occupied": true,
+      "route_knownness": true
+    },
+    "U3_GAUSSIAN_VISIBILITY_SUPPORT_COUNT": {
+      "known_occupied": "supported Gaussian ellipsoids",
+      "known_free": "no, not by count alone",
+      "occluded_free_risk": "high if absence is called free",
+      "depends_on_map": true,
+      "prefreezable": true,
+      "distinct_views": "required",
+      "angular_baseline": "recommended",
+      "safer_unknown": true,
+      "unknown_as_occupied": true,
+      "route_knownness": true
+    }
+  },
+  "future_adapter": "task-owned; no SAFER core modification"
+}

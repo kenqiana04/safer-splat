@@ -1,0 +1,3 @@
+# Future runtime UNKNOWN contract specification
+
+The later asset task must freeze one deployable support algorithm before mapping. It may use only training poses/RGB, learned Gaussians, and deterministic render visibility/transmittance. Frustum membership or low alpha cannot establish free space. Free rays must stop before a conservatively supported first learned surface, require multiple distinct views and an angular-baseline rule, and never mark occluded space free. Any unsupported query returns `UNKNOWN`, and SAFER must treat UNKNOWN as occupied. Reference geometry may evaluate this contract offline but may not define runtime knownness.

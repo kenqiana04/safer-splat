@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "gates": {
+    "benchmark_identity_clear": true,
+    "official_asset_manifest_complete": true,
+    "license_compatible": true,
+    "input_reference_physically_isolatable": true,
+    "rgb_only_modality_available": true,
+    "selected_frontend_official_3dgs": true,
+    "splatam_gt_depth_route_rejected": true,
+    "future_split_contract_feasible": true,
+    "reference_authority_path_feasible": true,
+    "runtime_unknown_path_feasible": true,
+    "independent_route_path_feasible": true,
+    "physical_budget_path_feasible": true,
+    "future_evaluator_path_feasible": true,
+    "bounded_whitelist_complete": true,
+    "dataset_payload_absent": true
+  },
+  "FINAL_STATUS": "PASS_ETH3D_DELIVERY_AREA_PROTOCOL_V2_ENTRY_QUALIFICATION",
+  "FINAL_DECISION": "AUTHORIZE_BOUNDED_ETH3D_DELIVERY_AREA_ASSET_ACQUISITION_AND_CONTRACT_AUDIT",
+  "Only_next_task": "ACQUIRE_ETH3D_DELIVERY_AREA_FROZEN_ASSETS_AND_VALIDATE_SPLIT_REFERENCE_UNKNOWN_ROUTE_CONTRACT_V1",
+  "training_authorized": false,
+  "claim_boundary": "entry PASS authorizes bounded acquisition/asset-contract audit only; no map, R/N grade, navigation, route, UNKNOWN, physical-budget, training, or frontend runtime success is established",
+  "unresolved_critical_evidence": []
+}

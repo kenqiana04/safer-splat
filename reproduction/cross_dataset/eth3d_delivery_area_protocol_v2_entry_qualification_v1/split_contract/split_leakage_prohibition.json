@@ -1,0 +1,13 @@
+{
+  "status": "PASS_LEAKAGE_PROHIBITIONS_FROZEN",
+  "prohibitions": [
+    "per-image random split",
+    "same rig capture across TRAIN/HELDOUT",
+    "candidate-map-dependent split",
+    "render-quality selection",
+    "difficult-capture deletion",
+    "DSLR in TRAIN when called cross-view heldout",
+    "GT depth/scan based selection"
+  ],
+  "final_split_generation_count": 0
+}

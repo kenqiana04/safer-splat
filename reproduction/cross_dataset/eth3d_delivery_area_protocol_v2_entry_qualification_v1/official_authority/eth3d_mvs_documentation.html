@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head -->
+<meta name="description" content="ETH3D">
+<meta name="author" content="Computer Vision and Geometry Group, ETH Zurich">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+<title>Documentation - ETH3D</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+<!-- Custom styles for this page -->
+<link href="css/theme.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/" style="font-size:26px;line-height:20px">ETH3D</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Stereo <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/overview">Overview</a></li>
+            <li class="active"><a href="/documentation">Documentation</a></li>
+            <li><a href="/datasets">Datasets</a></li>
+            <li><a href="/high_res_multi_view">High-res multi-view benchmark</a></li>
+            <li><a href="/low_res_many_view">Low-res many-view benchmark</a></li>
+            <li><a href="/low_res_two_view">Low-res two-view benchmark</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SLAM <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/slam_overview">Overview</a></li>
+            <li><a href="/slam_documentation">Documentation</a></li>
+            <li><a href="/slam_datasets">Datasets</a></li>
+            <li><a href="/slam_benchmark">Benchmark</a></li>
+          </ul>
+        </li>
+        <li><a href="/about">About</a></li><li><a href="/login">Submit</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<noscript>
+  <div class="alert alert-danger" role="alert">
+    <b>Javascript disabled</b><br/>
+    This page does not display correctly without Javascript. Please enable it in your browser.
+  </div>
+</noscript>
+
+<div class="container theme-showcase" role="main"><div style="max-width: 800px">
+  <div class="page-header"><h1>Documentation</h1></div>
+  <p>
+    <a href="#archive-format">Archive format</a><br/>
+    <a href="#format-of-multi-view-data">Format of multi-view data</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-of-multi-view-data-image-formats">Image formats</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-of-multi-view-data-calibration">Calibration</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-of-multi-view-data-cameras-txt">cameras.txt</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-of-multi-view-data-images-txt">images.txt</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-of-multi-view-data-points3d-txt">points3D.txt</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-of-multi-view-data-training-data">Training data</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-of-multi-view-data-occlusion-data">Occlusion data</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-of-multi-view-data-custom-undistortion">Custom undistortion</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-of-multi-view-data-imu-data">IMU data</a><br/>
+    <a href="#format-of-two-view-data">Format of two-view data</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-of-two-view-data-training-data">Training data</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-of-two-view-data-additional-training-data">Additional training data</a><br/>
+    <a href="#camera-models">Camera models</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#camera-models-pinhole-camera-model">PINHOLE camera model</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#camera-models-thinprismfisheye-camera-model">THIN_PRISM_FISHEYE camera model</a><br/>
+    <a href="#evaluation">Evaluation</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#evaluation-multi-view-evaluation">Multi-view evaluation</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#evaluation-two-view-evaluation">Two-view evaluation</a><br/>
+    <a href="#result-submission">Result submission</a><br/>
+  </p>
+  
+  <br/><h3><span id="archive-format"></span>Archive format</h3>
+  <p>
+    All downloads are provided as compressed archives in the format of the
+    <a href="http://www.7-zip.org">7-Zip program</a> due to its good compression
+    results. For Windows, the program can be downloaded from
+    <a href="http://www.7-zip.org">its webpage</a>. For Ubuntu Linux, it can be
+    installed and used to extract an archive as follows (it may also work from
+    your file manager's right-click menu after installation):
+  </p>
+  <p><span class="code">
+    # Installation<br/>
+    sudo apt-get install p7zip-full<br/>
+    <br/>
+    # Extract archive.7z<br/>
+    7z x archive.7z
+  </span></p>
+  
+  <br/><h3><span id="format-of-multi-view-data"></span>Format of multi-view data</h3>
+  <h4><span id="format-of-multi-view-data-image-formats"></span>Image formats</h4>
+  <p>
+    Images of the Nikon D3X camera are provided in three versions:
+  </p>
+    <ul>
+      <li>In the camera's raw image format (with lossless compression, file extension NEF)</li>
+      <li>As JPEG files (with lossy compression) which were directly saved by the camera in addition to the raw image files</li>
+      <li>In a pre-undistorted version as JPEG files</li>
+    </ul>
+  <p>
+    A few images which we had to mask for data protection reasons are only available as JPEG files.
+  </p>
+  <p>
+    Images of the multi-camera rig are provided as PNG files (with lossless compression) as original images and in a pre-undistorted version.
+  </p>
+  <p>
+    Note that custom undistortion of the original images can be done, for example in order
+    to change how blank pixels are handled. See the <a href="#format-of-multi-view-data-custom-undistortion">custom undistortion section</a>.
+  </p>
+  
+  <br/><h4><span id="format-of-multi-view-data-calibration"></span>Calibration</h4>
+  <p>
+    The calibration is provided in the
+    <a href="http://colmap.github.io/format.html">format</a> of the
+    <a href="http://colmap.github.io/">COLMAP</a> Structure-from-Motion program.
+    Camera intrinsics are given in a text file
+    <a href="http://colmap.github.io/format.html#cameras-txt"><span class="tt">cameras.txt</span></a>,
+    while image extrinsics are given in a text file
+    <a href="http://colmap.github.io/format.html#images-txt"><span class="tt">images.txt</span></a>.
+  </p>
+  <p>
+    In addition to this, keypoint observations and triangulated
+    keypoint matches are provided for better direct usability in COLMAP and other reconstruction
+    programs. COLMAP was used to compute these based on the images only.
+    They are provided because they may be helpful, but since they are not based on
+    ground truth data, they may be safely ignored. This data is given in
+    <a href="http://colmap.github.io/format.html#images-txt"><span class="tt">images.txt</span></a> and
+    <a href="http://colmap.github.io/format.html#points3d-txt"><span class="tt">points3D.txt</span></a>.
+  </p>
+  <p>
+    Notice that COLMAP comes with
+    <a href="https://github.com/colmap/colmap/blob/master/scripts/matlab/read_model.m">Matlab</a>
+    and
+    <a href="https://github.com/colmap/colmap/blob/master/scripts/python/read_model.py">Python</a>
+    scripts to load this format.
+    The dataset files can be imported into COLMAP to view the image poses and triangulated points.
+  </p>
+  <p>
+    We additionally provide a standalone C++ implementation for loading the
+    intrinsic and extrinsic calibrations from <span class="tt">cameras.txt</span> and <span class="tt">images.txt</span>,
+    which only depends on the <a href="http://eigen.tuxfamily.org">Eigen</a> library:
+    <a href="https://github.com/ETH3D/format-loader">Format loader on GitHub</a>.
+    Using CMake, it should compile for Linux, Windows, and MacOS.
+  </p>
+  <p>
+    The relevant parts of the data format are described below.
+  </p>
+  
+  
+  <br/><h4><span id="format-of-multi-view-data-cameras-txt"></span>cameras.txt</h4>
+  <p>
+    This text file defines the intrinsic calibration of each camera used in the scene.
+    Due to potentially differing camera settings, in some cases multiple
+    different intrinsics blocks are given for images of the same physical camera.
+    Lines starting with a hash (#) are comments. Each other (non-empty) line
+    specifies an intrinsics block as a list of parameters, separated by spaces.
+    The format for these lines is:
+  </p>
+  <p><span class="code">CAMERA_ID MODEL WIDTH HEIGHT PARAMS[]</span></p>
+  <p>
+    An example line is:
+  </p>
+  <p><span class="code">0 THIN_PRISM_FISHEYE 6048 4032 3408.35 3408.8 3033.92 2019.32 0.21167 0.20864 0.00053 -0.00015 -0.16568 0.4075 0.00048 0.00028</span></p>
+  <ul>
+    <li>The first parameter, <span class="tt">0</span> in the example, specifies the ID of this intrinsics block, which is referenced by images which use this block.</li>
+    <li>The second parameter, <span class="tt">THIN_PRISM_FISHEYE</span>, specifies the camera model.
+        For multi-view datasets from this benchmark, it is always <span class="tt">THIN_PRISM_FISHEYE</span> if the original images are used.
+        For the undistorted images, the camera model is <span class="tt">PINHOLE</span>.
+        These models are defined in the <a href="#camera-models">camera models section</a>.</li>
+    <li>The next two parameters, <span class="tt">6048 4032</span>, are the width and height of the camera images.</li>
+    <li>The remaining parameters are camera model parameters. See the <a href="#camera-models">description of the camera models</a>.</li>
+  </ul>
+  
+  <br/><h4><span id="format-of-multi-view-data-images-txt"></span>images.txt</h4>
+  <p>
+    This text file provides the extrinsic calibration of each image in the scene, and the keypoint observations of each image.
+    As for <span class="tt">cameras.txt</span>, lines beginning with a hash (#) are comments.
+    Other non-empty lines specify an image's data.
+    The format for lines with image extrinsics data is:<br/>
+  </p>
+  <p><span class="code">IMAGE_ID QW QX QY QZ TX TY TZ CAMERA_ID NAME</span></p>
+  <p>
+    An example line is:
+  </p>
+  <p><span class="code">49 0.995 0.00592 -0.0882 0.0311 3.21 3.60 9.19 1 dslr_images/DSC_0323.JPG</span></p>
+  <ul>
+    <li>The first number, <span class="tt">49</span> in the example, is the image ID. For the purposes of the benchmark, this is irrelevant.</li>
+    <li>The following 7 numbers specify the image pose as the transformation
+        that brings 3D points from the global coordinate system to the image's local coordinate
+        system. This local system is defined such that the x-axis points to
+        the right, the y-axis points down, and the z-axis points forward (in
+        the direction of the optical axis) relative to the image. The origin
+        is at the projection center. The global system is a right-handed
+        system with arbitrary origin and orientation.<br/>
+        The first four numbers specify the rotation as a quaternion, the
+        following numbers specify the translation. The quaternion is given
+        in the Hamilton convention (as used by the
+        <a href="http://eigen.tuxfamily.org">Eigen</a> library, for example).</li>
+    <li>The next number, <span class="tt">1</span>, is the ID of the intrinsics block which
+        is used by this image.</li>
+    <li>After this, the path to the image file is given.</li>
+  </ul>
+  <p>
+    After the extrinsics line for an image, a second line provides the keypoint
+    observations of this image. The format for these lines is a list of tuples:
+  </p>
+  <p><span class="code">POINTS2D[] as (X Y POINT3D_ID)</span></p>
+  <p>
+    An example line is:
+  </p>
+  <p><span class="code">64.3 1948.0 60 237.1 897.6 -1</span></p>
+  <p>
+    X and Y are given in pixel coordinates. The example line defines two
+    observations. For the first one, the ID of the observed 3D point is 60,
+    while for the second one it is -1. The special value -1 is used to indicate
+    that this keypoint observation does not correspond to a triangulated 3D point.
+  </p>
+  <p>
+    The keypoint observations are provided since they may be useful, for example
+    for co-visibility estimation or depth range estimation, but they are not
+    ground truth data and may thus be safely ignored.
+  </p>
+  
+  <br/><h4><span id="format-of-multi-view-data-points3d-txt"></span>points3D.txt</h4>
+  <p>
+    This text file provides the IDs and locations of the triangulated 3D points.
+    As for the other files, lines beginning with a hash (#) are comments.
+    Other non-empty lines specify point data. The format of each such line is:
+  </p>
+  <p><span class="code">POINT3D_ID X Y Z R G B ERROR TRACK[] as (IMAGE_ID POINT2D_IDX)</span></p>
+  <p>
+    An example line is:
+  </p>
+  <p><span class="code">569 -0.567627 -3.79941 4.89522 241 255 255 3.63797 2 4568 13 379</span></p>
+  <ul>
+    <li>The first item is the ID, which is referenced by the keypoint observations in
+        <span class="tt">images.txt</span>.</li>
+    <li>The next three numbers define the point position in
+        global coordinates.</li>
+    <li>The following three numbers define the point color, with
+        values in [0, 255].</li>
+    <li>Then the reprojection error is given.</li>
+    <li>As the last component, the line contains the track, which is a list of all images in which this point
+        has been observed, together with the index of the observation.</li>
+  </ul>
+  <p>
+    As for the keypoint observations, the triangulated points are not ground
+    truth data and may be safely ignored.
+  </p>
+  
+  <br/><h4><span id="format-of-multi-view-data-training-data"></span>Training data</h4>
+  <p>
+    For the training datasets, the laser scan point clouds and depth maps rendered from these point clouds are publicly
+    available. The laser scans were recorded with a Faro Focus X 330 scanner and
+    include point colors (in the "raw" and "clean" versions of the point clouds).
+    The laser scanner measurement origin is at the
+    coordinate system origin of each scan point cloud. The point clouds are
+    provided as binary PLY files, which can for example be loaded using
+    <a href="http://pointclouds.org">PCL</a>.
+  </p>
+  <p>
+    We offer each laser scan in three different versions:
+  </p>
+  <ul>
+    <li><b>raw:</b> The raw scan (including outliers) as recorded by the scanner.</li>
+    <li><b>clean:</b> A version with outliers removed (using an automatic tool and manual work).</li>
+    <li><b>eval:</b> A version with outliers removed, and all points removed
+                     which are assumed to be observed by at most one image only.
+                     This is the version used for evaluation. If a scene is
+                     available with both high-res multi-view and low-res
+                     many-view images, then there are two different evaluation
+                     point clouds, corresponding to the two scenarios. These
+                     versions of the point cloud do not include point colors.</li>
+  </ul>
+  <p>
+    In addition, for scenes with more than one laser scan, a file
+    <span class="tt">scan_alignment.mlp</span> gives the relative poses of each scan. This is
+    a <a href="http://www.meshlab.net/">MeshLab</a> project file (and can thus be opened with MeshLab to view the laser scans), which follows
+    a simple XML-based format. The transformation bringing points from the scan
+    (mesh) coordinate system into the global coordinate system is given as a 4x4
+    transformation matrix within the <span class="tt">MLMatrix44</span> tag of each
+    <span class="tt">MLMesh</span> tag corresponding to one laser scan. As an example, the pose
+    information for a scan file <span class="tt">scan1.ply</span> might look as follows:
+  </p>
+  <p><span class="code">
+      &lt;MLMesh label="scan1.ply" filename="scan1.ply"&gt;<br/>
+          &lt;MLMatrix44&gt;<br/>
+-0.196132 0.980193 -0.0274673 -4.17914 <br/>
+-0.378691 -0.101553 -0.919935 0.96876 <br/>
+-0.904503 -0.170027 0.391108 2.36282 <br/>
+0 0 0 1 <br/>
+&lt;/MLMatrix44&gt;<br/>
+      &lt;/MLMesh&gt;<br/>
+  </span></p>
+  <p>
+    A point \(\mathbf{p}_{\text{local}}\) taken from a point cloud can thus be transformed to
+    global coordinates with a homogeneous multiplication with the point cloud's
+    pose matrix \(\mathbf{M}\):
+    $$\begin{pmatrix} \mathbf{p}_{\text{global}} \\ 1 \end{pmatrix} = \mathbf{M} \cdot \begin{pmatrix} \mathbf{p}_{\text{local}} \\ 1 \end{pmatrix}$$
+  </p>
+  <p>
+    If you prefer to work with a single point cloud which already has the
+    correct transformation (and do not require the positions of the laser
+    scanner measurement origins), you can use MeshLab to merge the point clouds
+    as follows (tested with MeshLab version 1.3.2):
+  </p>
+  <ul>
+   <li>Open the project file in MeshLab.</li>
+   <li>Choose View -> Show Layer Dialog.</li>
+   <li>Right-click a layer item in the dialog and choose Flatten Visible Layers.</li>
+   <li>Activate Keep unreferenced vertices, then click Apply.</li>
+   <li>Export the resulting merged point cloud.</li>
+  </ul>
+  <p>
+    The rendered depth maps are provided in the archives ending on _depth.7z.
+    They contain depth images that match the original (distorted) versions of
+    the images, not the pre-undistorted ones. The occlusion mesh and image masks
+    are considered in the renderings. The depth map filenames match the names of the
+    corresponding images, however, please notice that the depth map files are
+    not actually JPEGs despite having this file extension. Instead, the depth map files are 4-byte
+    float binary dumps with one float for each pixel in the image, in row-major
+    storage. Pixels without depth value are set to infinity. Notice that the
+    depth values are generally not dense in the DSLR images (when using them at
+    their original resolution).
+  </p>
+  
+  <br/><h4><span id="format-of-multi-view-data-occlusion-data"></span>Occlusion data</h4>
+  <p>
+    In addition to the laser scan point clouds, separate archives are provided with files
+    for occlusion handling. Correct occlusion handling for example enables rendering depth maps while discarding
+    laser scan points which are occluded (rendered depth maps are provided separately in the files ending on _depth.7z).
+    The occlusion files consist of a (potentially edited) Poisson surface reconstruction
+    of the point cloud (as .ply mesh), a splat cloud (as .ply mesh), and image masks (as .png images).
+    The files may be used for occlusion handling as follows:
+  </p>
+  <ul>
+    <li>Render the surface reconstruction and splat cloud as a depth map into an image of the
+        dataset. Distort the rendering to match the distorted version of the
+        image.</li>
+    <li>Discard pixels close to depth discontinuities as those can be uncertain.</li>
+    <li>Read the image mask for the image for which occlusion handling is performed,
+        and the camera mask for this image's camera (if those masks exist).
+        If a pixel is set to value 2 in at least one of those (grayscale) masks, discard it.
+        </li>
+  </ul>
+  <p>
+    Furthermore, the masks may contain pixels with the value 0 which means they are not masked,
+    and pixels with the value 1 which means that they were not used for image to laser scan registration.
+    The latter is for example applied to reflective surfaces, specular reflections, shadow boundaries that move over time, and lens artifacts.
+  </p>
+  
+  <br/><h4><span id="format-of-multi-view-data-custom-undistortion"></span>Custom undistortion</h4>
+  <p>
+    In order to undistort the original images, one must decide how to treat
+    pixels for which there is no corresponding pixel in the original image.
+    The provided undistorted images were created by running
+    <a href="https://colmap.github.io/index.html">COLMAP's</a> image undistorter
+    with default parameters. The following command can be used to create
+    custom undistorted images:
+  </p>
+  <p><span class="code">colmap_build_folder/src/exe/image_undistorter --input_path /path/to/cameras-images-points3D.txt --image_path /path/to/cameras-images-points3D.txt/images --output_path /path/to/output</span></p>
+  <p>
+    The following command line parameters control the undistortion:
+  </p>
+  <p>
+    <span class="tt">--blank_pixels arg (=0)</span>
+  </p>
+  <ul>
+    <li>blank_pixels=0 will change the image size such that no pixel is blank in the undistorted image (leading to missing pixels of the original image in case of distortion).</li>
+    <li>blank_pixels=1 will change the image size such that all pixels in the original image will be in the undistorted image (leading to blank pixels in case of distortion).</li>
+  </ul>
+  <p>
+    <span class="tt">--min_scale arg (=0.2)</span>
+  </p>
+  <p>
+    Minimum scaling factor of the image to achieve to above constraints.
+  </p>
+  <p>
+    <span class="tt">--max_scale arg (=2)</span>
+  </p>
+  <p>
+    Maximum scaling factor of the image to achieve the above constraints.
+  </p>
+  <p>
+    <span class="tt">--max_image_size arg (=-1)</span>
+  </p>
+  <p>
+    Maximum image size to achieve the above constraints.
+  </p>
+  
+  <br/><h4><span id="format-of-multi-view-data-imu-data"></span>IMU data</h4>
+  <p>
+    For the multi-camera videos added on 2017-10-04 we provide inertial
+    measurement unit (IMU) measurements since they can be useful if the datasets
+    are used for odometry / SLAM experiments. The data is not useful for the
+    tasks evaluated in the ETH3D benchmark, however, and can thus be safely ignored.
+    This section describes the data format.
+  </p>
+  <p>
+    Each camera on the multi-camera rig has an associated IMU. We recorded the
+    IMU readings of two of them. Those are provided in
+    <a href="http://wiki.ros.org/Bags">rosbag</a>
+    files in the topics <span class="tt">/uvc_camera/cam_0/imu</span> and
+    <span class="tt">/uvc_camera/cam_1/imu</span>. The "cam_0" in the rosbag corresponds
+    to images_rig_cam7 in the dataset, and "cam_1" in the rosbag corresponds to
+    images_rig_cam6 in the dataset. The message type is
+    <span class="tt">sensor_msgs/Imu</span>. The rosbags cover a longer time
+    span than the datasets. The image time stamps are given in the image filenames
+    (in nanoseconds).
+  </p>
+  <p>
+    In addition, we provide the noise statistics of the IMUs and a camera-IMU
+    calibration obtained from a calibration dataset with
+    <a href="https://github.com/ethz-asl/kalibr/wiki/camera-imu-calibration">Kalibr</a>.
+    This is included with each IMU data archive.
+  </p>
+  
+  
+  <br/><h3><span id="format-of-two-view-data"></span>Format of two-view data</h3>
+  <p>
+    The two-view datasets provide stereo-rectified image pairs, i.e., for a
+    given pixel in one image the corresponding epipolar line in the other image
+    is the image row having the same y-coordinate as the pixel. These
+    datasets, just like the multi-view datasets, come with the
+    <a href="http://colmap.github.io/format.html#cameras-txt"><span class="tt">cameras.txt</span></a>
+    and <a href="http://colmap.github.io/format.html#images-txt"><span class="tt">images.txt</span></a>
+    files specifying the intrinsic and extrinsic camera parameters of the images.
+    See above for a description of their format. In the two-view case all images are pre-undistorted, so their
+    camera model is <span class="tt">PINHOLE</span>. This model is defined in the <a href="#camera-models">camera models section</a>.
+    We do not provide keypoint matches and triangulated keypoints for this type of data.
+  </p>
+  <p>
+    Furthermore, the two-view datasets also come with a file <span class="tt">calib.txt</span>
+    which is formatted according to the <a href="http://vision.middlebury.edu/stereo/data/scenes2014/">Middlebury data format - version 3</a>.
+    Note that those files do not provide any information about the disparity range: the corresponding field is set to the image width.
+  </p>
+  
+  <br/><h4><span id="format-of-two-view-data-training-data"></span>Training data</h4>
+  <p>
+    The ground truth follows the same format as the Middlebury stereo benchmark, version 3.
+    The ground truth disparity for the left image is provided as a file <span class="tt">disp0GT.pfm</span> in the <a href="http://netpbm.sourceforge.net/doc/pfm.html">PFM</a> format using little endian data.
+    Therefore, the ASCII header may look as follows, for example:
+  </p>
+  <p><span class="code">
+    Pf<br/>
+    752 480<br/>
+    -1
+  </span></p>
+  <p>
+    The first line is always "Pf", indicating a grayscale PFM image.
+    The second line specifies the width and height of the image.
+    The third line is always "-1", indicating the use of little endian.
+    After this header (where each line is followed by a newline character),
+    the ground truth disparity image follows in row-major binary form as 4-byte floats.
+    The rows are ordered from bottom to top.
+    Positive infinity is used for invalid values.
+  </p>
+  <p>
+    The occlusion mask for the left image is given as a file "mask0nocc.png".
+    Pixels without ground truth have the color (0, 0, 0).
+    Pixels which are only observed by the left image have the color (128, 128, 128).
+    Pixels with are observed by both images have the color (255, 255, 255).
+    For the "non-occluded" evaluation, the evaluation is limited to the pixels observed by both images.
+  </p>
+  
+  <br/><h4><span id="format-of-two-view-data-additional-training-data"></span>Additional training data</h4>
+  <p>
+    Additional training data is available as part of the multi-view training
+    datasets from the multi-camera rig: The archives named
+    <span class="tt">[dataset]_rig_stereo_pairs_gt.7z</span> contain rectified
+    two-view stereo frames with ground truth disparity for each image pair in the video.
+    The ground truth disparity quality may be slightly worse for these videos since no additional image
+    masking was done, nevertheless the high amount of data may be helpful
+    for training two-view stereo algorithms.
+  </p>
+  <p>
+    The format is the same as for the individual stereo frames. The video datasets
+    additionally contain the files <span class="tt">disp1GT.pfm</span>
+    and <span class="tt">mask1nocc.png</span> for each frame, the disparity and occlusion mask
+    for the right image of the pair.
+  </p>
+  
+  <br/><h3><span id="camera-models"></span>Camera models</h3>
+  <p>
+    Given a 3D point in global coordinates, it can be transformed to the local
+    coordinate system of an image using the extrinsic parameters of the image, as described in the sections above.
+    Given a local 3D point, the camera model defines how the corresponding pixel
+    location in the image is calculated.
+  </p>
+  
+  <br/><h4><span id="camera-models-pinhole-camera-model"></span>PINHOLE camera model</h4>
+  <p>
+    This camera model is used for undistorted images.
+    It has the following parameters, which are
+    listed in this order in <span class="tt">cameras.txt</span>:<br/>
+    $$f_x ~~ f_y ~~ c_x ~~ c_y$$
+    Projecting a local 3D point to the image plane is done as follows:<br/>
+  </p>
+  <ol>
+    <li>If the z-coordinate of the point is smaller than or equal to zero, the
+        point is unobserved.</li>
+    <li>Project the point onto the virtual image plane by dividing its x and y
+        coordinates by its z coordinate, resulting in normalized image
+        coordinates \((u_n, v_n)\).</li>
+    <li>Convert to pixel coordinates \((u, v)\):
+        $$u = f_x \cdot u_n + c_x$$
+        $$v = f_y \cdot v_n + c_y$$</li>
+    <li>Check whether the pixel coordinates are within the image bounds.
+        The convention for the pixel coordinate origin is that (0, 0) is the
+        top-left corner of the image (as opposed to the center of the
+        top-leftmost pixel).</li>
+  </ol>
+  
+  <br/><h4><span id="camera-models-thinprismfisheye-camera-model"></span>THIN_PRISM_FISHEYE camera model</h4>
+  <p>
+    This camera model is used for the distorted (original) images.
+    The model corresponds to the <span class="tt">ThinPrismFisheyeCameraModel</span> class in COLMAP.
+    It has the following parameters, which are
+    listed in this order in <span class="tt">cameras.txt</span>:<br/>
+    $$f_x ~~ f_y ~~ c_x ~~ c_y ~~ k_1 ~~ k_2 ~~ p_1 ~~ p_2 ~~ k_3 ~~ k_4 ~~ s_{x1} ~~ s_{y1}$$
+    Projecting a local 3D point to the image plane is done as follows:<br/>
+  </p>
+  <ol>
+    <li>If the z-coordinate of the point is smaller than or equal to zero, the point is unobserved.</li>
+    <li>Project the point onto the virtual image plane by dividing its x and y coordinates by its z coordinate, resulting in the un-distorted x and y values \((x_d, y_d)\).</li>
+    <li>Apply the equidistant radial distortion model to get \((u_d, v_d)\):
+        $$r = \sqrt{x_d^2 + y_d^2}$$
+        $$\theta = \tan^{-1}(r)$$
+        $$\begin{pmatrix}u_d\\v_d\end{pmatrix} = \frac{\theta}{r} \begin{pmatrix}x_d\\y_d\end{pmatrix}$$
+    </li>
+    <li>Apply further distortion to get distorted normalized image coordinates \((u_n, v_n)\):
+        $$t_r = 1 + k_1 \theta^2 + k_2 \theta^4 + k_3 \theta^6 + k_4 \theta^8$$
+        $$u_n = u_d t_r + 2 p_1 u_d v_d + p_2 (\theta^2 + 2 u_d^2) + s_{x1} \theta^2$$
+        $$v_n = v_d t_r + 2 p_2 u_d v_d + p_1 (\theta^2 + 2 v_d^2) + s_{y1} \theta^2$$</li>
+    <li>Convert to pixel coordinates \((u, v)\):
+        $$u = f_x \cdot u_n + c_x$$
+        $$v = f_y \cdot v_n + c_y$$</li>
+    <li>Check whether the pixel coordinates are within the image bounds.
+        The convention for the pixel coordinate origin is that (0, 0) is the
+        top-left corner of the image (as opposed to the center of the
+        top-leftmost pixel).</li>
+  </ol>
+  <p>
+    With this camera model, certain parameter values for the radial distortion
+    may cause parts of the scene which are close to 90 degrees to the viewing
+    direction to be projected into the image again. For example, this could
+    be the case if the polynomial used for radial distortion goes to minus
+    infinity for its variable going towards infinity. Therefore, in addition to
+    the process described above, we employ a step to prevent this issue:
+    For a given camera, we unproject all pixels at the border of its image to
+    determine the maximum distance to the optical center \(r\) of coordinates
+    on the virtual image plane which should still project into the image. In the
+    projection process, we then discard all points as unobserved which have a
+    larger distance. Notice that in this process, since the unprojection consists
+    of an optimization procedure that may find any result depending on its initialization,
+    it may be necessary to take some care to obtain the innermost results. This
+    can be done by starting the optimization from several starting points and
+    keeping the innermost result only. At the same time, results which are
+    significantly farther out provide an upper boundary for the cutoff distance
+    (since they should not be projected into the image).
+  </p>
+  <p>
+    We provide a C++ implementation of this camera model, both as a
+    CUDA-compatible variant and as a variant without any dependencies.
+    In addition, we provide a short octave / Matlab script which can be used to compute
+    derivatives of the projection:
+    <a href="https://github.com/ETH3D/camera-model-implementations">Camera model implementations on GitHub</a>.
+  </p>
+  
+  <br/><h3><span id="evaluation"></span>Evaluation</h3>
+  <p>
+    For details on the evaluation procedure, please see <a href="data/schoeps2017cvpr.pdf">our paper</a>.
+  </p>
+  
+  <br/><h4><span id="evaluation-multi-view-evaluation"></span>Multi-view evaluation</h4>
+  <p>
+    Download the multi-view evaluation program <a href="https://github.com/ETH3D/multi-view-evaluation">source code (on GitHub)</a> or <a href="/data/binaries/multi_view_evaluation_windows.7z">Windows binaries</a>.
+    This program depends on <a href="http://www.boost.org/libs/filesystem/">Boost.Filesystem</a>, <a href="http://eigen.tuxfamily.org">Eigen</a>, and <a href="http://pointclouds.org/">PCL</a>.
+    Using CMake, it should compile for Linux, Windows, and MacOS.
+  </p>
+  
+  <br/><h4><span id="evaluation-two-view-evaluation"></span>Two-view evaluation</h4>
+  <p>
+    Download the two-view evaluation program <a href="https://github.com/ETH3D/two-view-evaluation">source code (on GitHub)</a> or <a href="/data/binaries/two_view_evaluation_windows.7z">Windows binaries</a>.
+    This program depends on <a href="http://www.boost.org/libs/filesystem/">Boost.Filesystem</a> and <a href="http://www.libpng.org/pub/png/libpng.html">libpng</a>.
+    Using CMake, it should compile for Linux, Windows, and MacOS.
+  </p>
+  
+  <br/><h3><span id="result-submission"></span>Result submission</h3>
+  <p>
+    <b>Important:</b> Please note that we are interested in the methods'
+    runtimes and request these as mandatory information for each submission.
+    Therefore, please record the runtime of your method when you submit, on each dataset individually.
+    File I/O should ideally be excluded from this. See below for how the
+    submission format, including the runtimes, should look like.
+  </p>
+  <p>
+    Partial submissions are possible, but we only compute category averages
+    (and therefore rank a method in a category) if results for all of the
+    datasets within a category are provided. If a method fails on a dataset and
+    you would still like to rank it in a category containing this dataset, you
+    can provide an empty result file for this dataset.
+  </p>
+  <p>
+    To submit your results, you need to <a href="/register_confirm_terms">sign up for an
+    account</a> and <a href="/login">login</a>.
+  </p>
+  
+  <br/><h4>Submission format</h4>
+  <p>
+    Results for a method must be uploaded as a single .zip or .7z file (7z is preferred due to smaller file sizes), which must
+    in its root contain at least one of the following folders (case
+    matters for all directories and filenames): <span class="tt">high_res_multi_view</span>,
+    <span class="tt">low_res_many_view</span>, <span class="tt">low_res_two_view</span>. In each folder, the
+    results for the corresponding scenario must be placed (both training and test data can be evaluated). There must not be any additional files or
+    folders in the archive.
+  </p>
+  <p>
+    For the <b>multi-view scenarios</b>, results should be provided as binary PLY files
+    having the same name as the dataset, with the extension <span class="tt">.ply</span>.
+    For example, the result file for the courtyard dataset should be named
+    <span class="tt">courtyard.ply</span>. Please make sure that the files can be loaded by
+    <a href="http://pointclouds.org">PCL</a>. You can run the
+    <a href="#evaluation">evaluation program</a> on one of your results on a training dataset to test.
+    See an <a href="/data/eval-mvs-colmap.py">example python script</a> for
+    Linux which runs the <a href="http://colmap.github.io/">COLMAP</a>
+    multi-view stereo pipeline and produces the correct output format.
+  </p>
+  <p>
+    For the <b>two-view scenario</b>, results should be generated as 4-byte
+    floating-point <a href="http://netpbm.sourceforge.net/doc/pfm.html">PFM</a>
+    files, i.e., the same format which is used for the ground truth training data.
+    The files should have the same name as the dataset, for example "delivery_area_1s",
+    with the file extension ".pfm". Sparse results can be submitted: missing
+    pixels can be set to NaN, infinity, or a disparity beyond the image width.
+    See an <a href="/data/eval-stereo-elas.py">example python script</a> for
+    Linux which runs the
+    <a href="http://www.cvlibs.net/software/libelas/">ELAS</a> program and
+    produces the correct output format.
+  </p>
+  <p>
+    In addition, <b>for both scenarios</b>, for each result file a metadata file having the same name,
+    but with extension <span class="tt">.txt</span>, must be provided. For example, for the
+    result file <span class="tt">courtyard.ply</span> the metadata file would be named
+    <span class="tt">courtyard.txt</span>. Currently, this file is only required to contain the
+    method's runtime, as described above. The format is plain text with the
+    following structure:
+  </p>
+  <p><span class="code">
+    runtime &lt;runtime_in_seconds&gt;
+  </span></p>
+  <p>
+    Replace "&lt;runtime_in_seconds&gt;" with your runtime, and do not include the &lt;&gt; characters. For example:
+  </p>
+  <p><span class="code">
+    runtime 1.42
+  </span></p>
+  <p>
+    The number of seconds does not need to be an integer.
+  </p>
+  <p>
+    In sum, the file structure for a multi-view submission archive should look as
+    follows if results for both the high-res multi-view and low-res many-view
+    scenarios are submitted:
+  </p>
+  <p><span class="code">
+    +── high_res_multi_view<br/>
+    │&nbsp;&nbsp;&nbsp;+── courtyard.ply<br/>
+    │&nbsp;&nbsp;&nbsp;+── courtyard.txt<br/>
+    │&nbsp;&nbsp;&nbsp;+── delivery_area.ply<br/>
+    │&nbsp;&nbsp;&nbsp;+── delivery_area.txt<br/>
+    │&nbsp;&nbsp;&nbsp;+── ...<br/>
+    +── low_res_many_view<br/>
+    │&nbsp;&nbsp;&nbsp;+── delivery_area.ply<br/>
+    │&nbsp;&nbsp;&nbsp;+── delivery_area.txt<br/>
+    │&nbsp;&nbsp;&nbsp;+── electro.ply<br/>
+    │&nbsp;&nbsp;&nbsp;+── electro.txt<br/>
+    │&nbsp;&nbsp;&nbsp;+── ...
+  </span></p>
+  <p>
+    The file structure for a two-view submission archive should look as
+    follows:
+  </p>
+  <p><span class="code">
+    +── low_res_two_view<br/>
+    │&nbsp;&nbsp;&nbsp;+── delivery_area_1l.pfm<br/>
+    │&nbsp;&nbsp;&nbsp;+── delivery_area_1l.txt<br/>
+    │&nbsp;&nbsp;&nbsp;+── delivery_area_1s.pfm<br/>
+    │&nbsp;&nbsp;&nbsp;+── delivery_area_1s.txt<br/>
+    │&nbsp;&nbsp;&nbsp;+── ...<br/>
+  </span></p>
+  <p>
+    We also provide some example result archives which demonstrate this file structure:
+  </p>
+  <ul>
+    <li>A submission with results for all multi-view datasets: <a href="/data/example_submissions/multi_view_all.7z">multi_view_all.7z</a></li>
+    <li>A submission with results for the high-res multi-view training datasets only: <a href="/data/example_submissions/high_res_multi_view_training.7z">high_res_multi_view_training.7z</a></li>
+    <li>A submission with results for all two-view datasets: <a href="/data/example_submissions/low_res_two_view_all.7z">low_res_two_view_all.7z</a></li>
+  </ul>
+</div></div>
+
+
+  <br/><br/>
+  <footer class='footer'>
+    <div class='container'>
+      <a class='navbar-brand' href='http://www.cvg.ethz.ch/' style='padding-left:0px;padding-right:0px'>
+        <img src='img/ETH_logo_inverted.png' alt='ETH Zurich' height='30'>
+      </a>
+      <p class='navbar-text pull-right' style='margin-top:20px'>
+        <a href='/imprint'>Imprint</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+  <script>window.jQuery || document.write('<script src='js/jquery.min.js'><\/script>')</script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa' crossorigin='anonymous'></script>
+
+  <script src='js/ie10-viewport-bug-workaround.js'></script>
+  </body>
+  </html>

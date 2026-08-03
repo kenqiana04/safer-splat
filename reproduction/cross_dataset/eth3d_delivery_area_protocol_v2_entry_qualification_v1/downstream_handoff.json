@@ -1,0 +1,21 @@
+{
+  "status": "FROZEN_CASE_A_HANDOFF",
+  "training_authorized": false,
+  "next_task": "ACQUIRE_ETH3D_DELIVERY_AREA_FROZEN_ASSETS_AND_VALIDATE_SPLIT_REFERENCE_UNKNOWN_ROUTE_CONTRACT_V1",
+  "required_protocol_sha256": "a0a02fd284c75c600095510899e2878f198d69ff088b66eccd3313275fdbde7e",
+  "required_checklist_sha256": "7c95f787fd7fb503e4bd2726546debac53acd41c1d5f9a8dd08c29cb27735593",
+  "selected_modality": "LOW_RES_MANY_VIEW_RIG_RGB_ONLY",
+  "selected_frontend": "OFFICIAL_3DGS_COLMAP_RGB_ONLY",
+  "mapping_claim": "ETH3D_DELIVERY_AREA_GT_POSE_RGB_ONLY_MAP_ONLY_LEARNED_GAUSSIAN_MAP",
+  "whitelist_path": "acquisition_plan/future_bounded_download_whitelist.json",
+  "denylist_path": "acquisition_plan/future_download_denylist.json",
+  "required_pretraining_sequence": [
+    "bounded acquisition",
+    "asset/split/reference audit",
+    "UNKNOWN/route/budget freeze",
+    "environment qualification",
+    "smoke",
+    "single formal mapping",
+    "Protocol V2 qualification"
+  ]
+}
