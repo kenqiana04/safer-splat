@@ -1,0 +1,46 @@
+{
+  "active_index_sha256": "111a789abfffcf98c88ce36c10aefc31ba71ea49c9efb0daeb1ac10783211950",
+  "adapter": "DummyGSplatLoader exact anisotropic ball-to-ellipsoid world-frame Hessian",
+  "controller_count": 0,
+  "epsilon_m": 0.01,
+  "gates": {
+    "active_indices_valid": true,
+    "gradient_finite": true,
+    "h_finite": true,
+    "hessian_finite": true,
+    "hessian_symmetric": true,
+    "map_unmodified": true,
+    "peak_gpu_under_20gib": true,
+    "query_count_256": true
+  },
+  "gaussian_count": 3045467,
+  "gradient_sha256": "a19ddf2559c0b128a03ce84a55b1ed27d3cfd4c64ff5e9e545d25008717b1871",
+  "h_sha256": "66c6c3d98a7104a99ea7bc59c8a7195d58df2a7f456527ecd2d1146ba7403f6a",
+  "hessian_sha256": "492acf11ae21e1482ad3c3972c34db914807000400ee8f450b0eb9c55f0fd8b9",
+  "hessian_symmetry_relative_max": 1.7881393432617188e-07,
+  "map_id": "TUM_GAUSSIAN_SLAM",
+  "map_identity_after": {
+    "bytes": 194935488,
+    "exists": true,
+    "file_count": 200,
+    "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a",
+    "sha256": "264d3886f6486b30bb40a9a78a201fbd0afa007f915f1f8c9dbda7d924e7679d"
+  },
+  "map_identity_before": {
+    "bytes": 194935488,
+    "exists": true,
+    "file_count": 200,
+    "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a",
+    "sha256": "264d3886f6486b30bb40a9a78a201fbd0afa007f915f1f8c9dbda7d924e7679d"
+  },
+  "map_mutation_count": 0,
+  "peak_gpu_bytes": 1643708928,
+  "planner_count": 0,
+  "query_count": 256,
+  "query_sha256": "ffc794af43fc8ad7db5dc5ad9d02767d94dee3b5943220dcd062d27f47c62d9d",
+  "radius_m": 0.1,
+  "run_id": "1",
+  "runtime_s": 13.363385756034404,
+  "source_commit": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+  "status": "PASS_FRESH_STATIC_G0_RUN"
+}

@@ -1,0 +1,46 @@
+{
+  "active_index_sha256": "9f55f27f0da45783d1ed89f345635ee25fd746d869db53166578ec69535c4753",
+  "adapter": "DummyGSplatLoader exact anisotropic ball-to-ellipsoid world-frame Hessian",
+  "controller_count": 0,
+  "epsilon_m": 0.01,
+  "gates": {
+    "active_indices_valid": true,
+    "gradient_finite": true,
+    "h_finite": true,
+    "hessian_finite": true,
+    "hessian_symmetric": true,
+    "map_unmodified": true,
+    "peak_gpu_under_20gib": true,
+    "query_count_256": true
+  },
+  "gaussian_count": 6463948,
+  "gradient_sha256": "1b4ed15cd7243e0e9d1d1d20a7bbcbe9b2b6196f23cb5600c99d66552beb0afc",
+  "h_sha256": "cbbf56ba881643680e9d69de37a462bc83b737801701391f1c49d86d510cf01d",
+  "hessian_sha256": "f8021ff8e5667353dcbe72bddb50d960a11b61682d0a0a519e7a66820cd23b68",
+  "hessian_symmetry_relative_max": 1.7881393432617188e-07,
+  "map_id": "ARKITSCENES_M1_SPLATAM",
+  "map_identity_after": {
+    "bytes": 310292404,
+    "exists": true,
+    "file_count": 1,
+    "path": "/disk1/zlab/maintenance_records/arkitscenes_splatam_m1_learned_map_qualification_v1/outputs/ARKITSCENES_SPLATAM_M1_EMPTY_DEPTH_SAFE_GT_POSE_MAP_ONLY_V1/params.npz",
+    "sha256": "86ba75c9db0fab1a5eb7d65da82454514419a30d7bea6df68b2bbc0518000193"
+  },
+  "map_identity_before": {
+    "bytes": 310292404,
+    "exists": true,
+    "file_count": 1,
+    "path": "/disk1/zlab/maintenance_records/arkitscenes_splatam_m1_learned_map_qualification_v1/outputs/ARKITSCENES_SPLATAM_M1_EMPTY_DEPTH_SAFE_GT_POSE_MAP_ONLY_V1/params.npz",
+    "sha256": "86ba75c9db0fab1a5eb7d65da82454514419a30d7bea6df68b2bbc0518000193"
+  },
+  "map_mutation_count": 0,
+  "peak_gpu_bytes": 3474152448,
+  "planner_count": 0,
+  "query_count": 256,
+  "query_sha256": "b4ff748014e1f8ff6024c29811d88ced2cb95683abdff16f3e2189418a20f081",
+  "radius_m": 0.1,
+  "run_id": "3",
+  "runtime_s": 30.318091777851805,
+  "source_commit": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+  "status": "PASS_FRESH_STATIC_G0_RUN"
+}

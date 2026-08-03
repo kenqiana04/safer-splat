@@ -1,0 +1,32 @@
+{
+  "ALLOWED_CLAIMS": [
+    "immutable map-instance evidence",
+    "static query compatibility when true",
+    "reference-bounded reconstruction diagnostics"
+  ],
+  "FORBIDDEN_CLAIMS": [
+    "algorithm stability",
+    "universal numeric qualification",
+    "full-space completeness from camera rays",
+    "navigation safety from G0 alone",
+    "legacy result overturned"
+  ],
+  "LEGACY_FORMAL_STATUS": "adapter/query compatible; no route qualification",
+  "LEGACY_GATE": "independent route/reference evidence unresolved",
+  "NATIVE_COMMON_PARITY_STATUS": "NUMERIC_PARITY_PASS",
+  "ONE_SIDED_RISK_STATUS": "NOT_EVALUABLE",
+  "PHYSICAL_BUDGET_STATUS": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+  "REFERENCE_AUTHORITY": "B_OBSERVABLE_RAY_REFERENCE",
+  "RISK_COVERAGE_STATUS": "SINGLE_HISTORICAL_GEOMETRY_EVIDENCE_ONLY",
+  "ROUTE_TUBE_STATUS": "NOT_EVALUABLE",
+  "SAFETY_QUERY_COMPATIBLE": true,
+  "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_UNRESOLVED",
+  "V2_NAVIGATION_AXIS": "N0_NOT_EVALUABLE",
+  "V2_RECONSTRUCTION_AXIS": "R1_DIAGNOSTIC_RECONSTRUCTION",
+  "artifact_status": "AVAILABLE_FOR_READ_ONLY_RETROSPECTIVE_SCOPE",
+  "historical_boundary": "legacy result remains valid under legacy contract; V2 classification does not retroactively change history",
+  "learned": true,
+  "map_id": "TUM_GAUSSIAN_SLAM",
+  "map_sha_after": "264d3886f6486b30bb40a9a78a201fbd0afa007f915f1f8c9dbda7d924e7679d",
+  "map_sha_before": "264d3886f6486b30bb40a9a78a201fbd0afa007f915f1f8c9dbda7d924e7679d"
+}

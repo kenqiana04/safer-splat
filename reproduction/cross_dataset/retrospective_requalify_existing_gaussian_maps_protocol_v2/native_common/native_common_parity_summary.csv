@@ -1,0 +1,12 @@
+map_id,native,common,status,basis
+REPLICA_GT_FINE,True,True,SEMANTIC_PARITY_ONLY,deterministic canonical construction plus static adapter double-validation; no camera render parity claim
+REPLICA_SPLATFACTO,True,True,SEMANTIC_PARITY_ONLY,native/canonical G0 consistency is retained separately from render parity
+TUM_SPLATFACTO_NEGATIVE,True,True,NOT_EVALUABLE,artifact unavailable
+REPLICA_SPLATAM_60,True,True,SEMANTIC_PARITY_ONLY,common-evaluator binding and canonical semantics; no retained same-frame native numeric comparison
+ARKITSCENES_M1_SPLATAM,True,False,NATIVE_ONLY,frozen SplaTAM renderer; no qualified common renderer
+TUM_SPLATAM_FORMAL,True,True,NUMERIC_PARITY_PASS,12 frozen frames; exact support masks; depth max abs <= 9.5367431640625e-07
+TUM_GAUSSIAN_SLAM,True,True,NUMERIC_PARITY_PASS,12 frozen frames; exact support masks; depth max abs <= 6.9141387939453125e-06
+SAFER_OFFICIAL_FLIGHT,True,False,NOT_EVALUABLE,interface artifact unavailable
+SAFER_OFFICIAL_OLD_UNION2,True,False,NOT_EVALUABLE,interface artifact unavailable
+SAFER_OFFICIAL_STATUES,True,False,NOT_EVALUABLE,interface artifact unavailable
+SAFER_OFFICIAL_STONEHENGE,True,False,NOT_EVALUABLE,interface artifact unavailable

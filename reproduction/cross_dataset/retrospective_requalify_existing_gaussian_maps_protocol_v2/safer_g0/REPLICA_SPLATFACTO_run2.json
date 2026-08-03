@@ -1,0 +1,46 @@
+{
+  "active_index_sha256": "a20f593e82dda43b639b0c0d630cfda1bb712516e107368c64ea17a118fdb8c6",
+  "adapter": "DummyGSplatLoader exact anisotropic ball-to-ellipsoid world-frame Hessian",
+  "controller_count": 0,
+  "epsilon_m": 0.01,
+  "gates": {
+    "active_indices_valid": true,
+    "gradient_finite": true,
+    "h_finite": true,
+    "hessian_finite": true,
+    "hessian_symmetric": true,
+    "map_unmodified": true,
+    "peak_gpu_under_20gib": true,
+    "query_count_256": true
+  },
+  "gaussian_count": 1396211,
+  "gradient_sha256": "fea4cd319e5f7b7a2e39d56d223986353a4138506ef8fdb66dd05345ebb9e40c",
+  "h_sha256": "1b38cde246cf895cbd10053d74d377bcbe4aa4d0a438eec61d621d4a4d5bd5c1",
+  "hessian_sha256": "58d78aa97668c7f051f54989231e62ce760922086182b6325b03cace7a032237",
+  "hessian_symmetry_relative_max": 1.955777406692505e-07,
+  "map_id": "REPLICA_SPLATFACTO",
+  "map_identity_after": {
+    "bytes": 329508830,
+    "exists": true,
+    "file_count": 6,
+    "path": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/canonical_export/qualification_pilot",
+    "sha256": "214ff483b6c2eb84d69e7604a1ecfdcba0506d7de11263e2caca44c048973c94"
+  },
+  "map_identity_before": {
+    "bytes": 329508830,
+    "exists": true,
+    "file_count": 6,
+    "path": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/canonical_export/qualification_pilot",
+    "sha256": "214ff483b6c2eb84d69e7604a1ecfdcba0506d7de11263e2caca44c048973c94"
+  },
+  "map_mutation_count": 0,
+  "peak_gpu_bytes": 759052800,
+  "planner_count": 0,
+  "query_count": 256,
+  "query_sha256": "1e99cb67ad3f97dbfbe25a7bb3baae6924f983fb21ae7ff45667e2aa323734b2",
+  "radius_m": 0.1,
+  "run_id": "2",
+  "runtime_s": 6.3549743089824915,
+  "source_commit": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+  "status": "PASS_FRESH_STATIC_G0_RUN"
+}

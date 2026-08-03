@@ -1,0 +1,711 @@
+{
+  "download_count": 0,
+  "host": "zlab-Super-Server",
+  "map_modification_count": 0,
+  "maps": [
+    {
+      "available": true,
+      "canonical_identity": {
+        "bytes": 182855690,
+        "exists": true,
+        "file_count": 8,
+        "path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/map_profiles/FINE_A",
+        "sha256": "63b3281a3375e7178740184043e1af72e6ebaf2ca9fe9cf8f2bd5f59251c493e"
+      },
+      "canonical_root": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/map_profiles/FINE_A",
+      "deterministic_reload": true,
+      "finite_canonical_arrays": true,
+      "gaussian_count": 2285656,
+      "map_id": "REPLICA_GT_FINE",
+      "opacity_range": [
+        0.9900000095367432,
+        0.9900000095367432
+      ],
+      "positive_scales": true,
+      "quaternion_norm_range": [
+        1.0,
+        1.0
+      ],
+      "quaternion_normalizable": true,
+      "shapes": [
+        {
+          "count": 2285656,
+          "means": [
+            2285656,
+            3
+          ],
+          "quaternions": [
+            2285656,
+            4
+          ],
+          "scales": [
+            2285656,
+            3
+          ],
+          "shard": "."
+        }
+      ],
+      "shard_count": 1,
+      "source_identity": {
+        "bytes": 182855690,
+        "exists": true,
+        "file_count": 8,
+        "path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/map_profiles/FINE_A",
+        "sha256": "63b3281a3375e7178740184043e1af72e6ebaf2ca9fe9cf8f2bd5f59251c493e"
+      },
+      "source_ids_available": false,
+      "status": "PASS_MAP_INTEGRITY"
+    },
+    {
+      "available": true,
+      "canonical_identity": {
+        "bytes": 329508830,
+        "exists": true,
+        "file_count": 6,
+        "path": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/canonical_export/qualification_pilot",
+        "sha256": "214ff483b6c2eb84d69e7604a1ecfdcba0506d7de11263e2caca44c048973c94"
+      },
+      "canonical_root": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/canonical_export/qualification_pilot",
+      "deterministic_reload": true,
+      "finite_canonical_arrays": true,
+      "gaussian_count": 1396211,
+      "map_id": "REPLICA_SPLATFACTO",
+      "opacity_range": [
+        0.0008214688277803361,
+        1.0
+      ],
+      "positive_scales": true,
+      "quaternion_norm_range": [
+        0.9999998387217208,
+        1.0000001681727635
+      ],
+      "quaternion_normalizable": true,
+      "shapes": [
+        {
+          "count": 1396211,
+          "means": [
+            1396211,
+            3
+          ],
+          "quaternions": [
+            1396211,
+            4
+          ],
+          "scales": [
+            1396211,
+            3
+          ],
+          "shard": "."
+        }
+      ],
+      "shard_count": 1,
+      "source_identity": {
+        "bytes": 329508830,
+        "exists": true,
+        "file_count": 6,
+        "path": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/canonical_export/qualification_pilot",
+        "sha256": "214ff483b6c2eb84d69e7604a1ecfdcba0506d7de11263e2caca44c048973c94"
+      },
+      "source_ids_available": false,
+      "status": "PASS_MAP_INTEGRITY"
+    },
+    {
+      "available": true,
+      "canonical_identity": {
+        "bytes": 119567528,
+        "exists": true,
+        "file_count": 5,
+        "path": "/disk1/zlab/maintenance_records/replica_splatam_protocol_conformance_pilot_v1/canonical_export/unfiltered",
+        "sha256": "eda01bd295c816b30f7c9faf79c7f838077d7db399b0471c58162d94339a2e2b"
+      },
+      "canonical_root": "/disk1/zlab/maintenance_records/replica_splatam_protocol_conformance_pilot_v1/canonical_export/unfiltered",
+      "deterministic_reload": true,
+      "finite_canonical_arrays": true,
+      "gaussian_count": 2135123,
+      "map_id": "REPLICA_SPLATAM_60",
+      "opacity_range": [
+        0.00047566270222887397,
+        0.9999996423721313
+      ],
+      "positive_scales": true,
+      "quaternion_norm_range": [
+        0.9999999521808575,
+        1.000000046264424
+      ],
+      "quaternion_normalizable": true,
+      "shapes": [
+        {
+          "count": 2135123,
+          "means": [
+            2135123,
+            3
+          ],
+          "quaternions": [
+            2135123,
+            4
+          ],
+          "scales": [
+            2135123,
+            3
+          ],
+          "shard": "."
+        }
+      ],
+      "shard_count": 1,
+      "source_identity": {
+        "bytes": 102494636,
+        "exists": true,
+        "file_count": 1,
+        "path": "/disk1/zlab/maintenance_records/replica_splatam_protocol_conformance_pilot_v1/pilot_run/run/params.npz",
+        "sha256": "4520bd9faf8f260438ff7ad55ab13b46437cdfe5c076f1600790cea5bc0547c5"
+      },
+      "source_ids_available": false,
+      "status": "PASS_MAP_INTEGRITY"
+    },
+    {
+      "available": true,
+      "canonical_identity": {
+        "bytes": 465407646,
+        "exists": true,
+        "file_count": 9,
+        "path": "/disk1/zlab/maintenance_records/arkitscenes_splatam_m1_learned_map_qualification_v1/canonical_export_a",
+        "sha256": "405bfd5ea31b202a8e378a5d26fb151e2d57f08ab3c7da62ac038bdb15216e0c"
+      },
+      "canonical_root": "/disk1/zlab/maintenance_records/arkitscenes_splatam_m1_learned_map_qualification_v1/canonical_export_a",
+      "deterministic_reload": true,
+      "finite_canonical_arrays": true,
+      "gaussian_count": 6463948,
+      "map_id": "ARKITSCENES_M1_SPLATAM",
+      "opacity_range": [
+        0.0006773065542802215,
+        1.0
+      ],
+      "positive_scales": true,
+      "quaternion_norm_range": [
+        0.999999808567961,
+        1.0000001942248573
+      ],
+      "quaternion_normalizable": true,
+      "shapes": [
+        {
+          "count": 6463948,
+          "means": [
+            6463948,
+            3
+          ],
+          "quaternions": [
+            6463948,
+            4
+          ],
+          "scales": [
+            6463948,
+            3
+          ],
+          "shard": "."
+        }
+      ],
+      "shard_count": 1,
+      "source_identity": {
+        "bytes": 310292404,
+        "exists": true,
+        "file_count": 1,
+        "path": "/disk1/zlab/maintenance_records/arkitscenes_splatam_m1_learned_map_qualification_v1/outputs/ARKITSCENES_SPLATAM_M1_EMPTY_DEPTH_SAFE_GT_POSE_MAP_ONLY_V1/params.npz",
+        "sha256": "86ba75c9db0fab1a5eb7d65da82454514419a30d7bea6df68b2bbc0518000193"
+      },
+      "source_ids_available": false,
+      "status": "PASS_MAP_INTEGRITY"
+    },
+    {
+      "available": true,
+      "canonical_identity": {
+        "bytes": 349703424,
+        "exists": true,
+        "file_count": 7,
+        "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/splatam/canonical_export/export_a",
+        "sha256": "4e88947775455795d6fccb443b1d97870a9bc0b56ba964b3fbebe2853a946f8f"
+      },
+      "canonical_root": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/splatam/canonical_export/export_a",
+      "deterministic_reload": true,
+      "finite_canonical_arrays": true,
+      "gaussian_count": 5464102,
+      "map_id": "TUM_SPLATAM_FORMAL",
+      "opacity_range": [
+        0.0003330805920995772,
+        0.9999996423721313
+      ],
+      "positive_scales": true,
+      "quaternion_norm_range": [
+        0.9999998086957215,
+        1.0000001842053352
+      ],
+      "quaternion_normalizable": true,
+      "shapes": [
+        {
+          "count": 5464102,
+          "means": [
+            5464102,
+            3
+          ],
+          "quaternions": [
+            5464102,
+            4
+          ],
+          "scales": [
+            5464102,
+            3
+          ],
+          "shard": "."
+        }
+      ],
+      "shard_count": 1,
+      "source_identity": {
+        "bytes": 262302188,
+        "exists": true,
+        "file_count": 1,
+        "path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/splatam_full240/params.npz",
+        "sha256": "cb4a8f133a4ce4063f60112fa9689db683988be29f67b9d570231a319849a36f"
+      },
+      "source_ids_available": true,
+      "status": "PASS_MAP_INTEGRITY"
+    },
+    {
+      "available": true,
+      "canonical_identity": {
+        "bytes": 194935488,
+        "exists": true,
+        "file_count": 200,
+        "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a",
+        "sha256": "264d3886f6486b30bb40a9a78a201fbd0afa007f915f1f8c9dbda7d924e7679d"
+      },
+      "canonical_root": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a",
+      "deterministic_reload": true,
+      "finite_canonical_arrays": true,
+      "gaussian_count": 3045467,
+      "map_id": "TUM_GAUSSIAN_SLAM",
+      "opacity_range": [
+        0.5000011920928955,
+        1.0
+      ],
+      "positive_scales": true,
+      "quaternion_norm_range": [
+        0.9999998162171488,
+        1.000000175156525
+      ],
+      "quaternion_normalizable": true,
+      "shapes": [
+        {
+          "count": 128868,
+          "means": [
+            128868,
+            3
+          ],
+          "quaternions": [
+            128868,
+            4
+          ],
+          "scales": [
+            128868,
+            3
+          ],
+          "shard": "submap_00"
+        },
+        {
+          "count": 122882,
+          "means": [
+            122882,
+            3
+          ],
+          "quaternions": [
+            122882,
+            4
+          ],
+          "scales": [
+            122882,
+            3
+          ],
+          "shard": "submap_01"
+        },
+        {
+          "count": 126639,
+          "means": [
+            126639,
+            3
+          ],
+          "quaternions": [
+            126639,
+            4
+          ],
+          "scales": [
+            126639,
+            3
+          ],
+          "shard": "submap_02"
+        },
+        {
+          "count": 87411,
+          "means": [
+            87411,
+            3
+          ],
+          "quaternions": [
+            87411,
+            4
+          ],
+          "scales": [
+            87411,
+            3
+          ],
+          "shard": "submap_03"
+        },
+        {
+          "count": 92962,
+          "means": [
+            92962,
+            3
+          ],
+          "quaternions": [
+            92962,
+            4
+          ],
+          "scales": [
+            92962,
+            3
+          ],
+          "shard": "submap_04"
+        },
+        {
+          "count": 86023,
+          "means": [
+            86023,
+            3
+          ],
+          "quaternions": [
+            86023,
+            4
+          ],
+          "scales": [
+            86023,
+            3
+          ],
+          "shard": "submap_05"
+        },
+        {
+          "count": 103567,
+          "means": [
+            103567,
+            3
+          ],
+          "quaternions": [
+            103567,
+            4
+          ],
+          "scales": [
+            103567,
+            3
+          ],
+          "shard": "submap_06"
+        },
+        {
+          "count": 109475,
+          "means": [
+            109475,
+            3
+          ],
+          "quaternions": [
+            109475,
+            4
+          ],
+          "scales": [
+            109475,
+            3
+          ],
+          "shard": "submap_07"
+        },
+        {
+          "count": 124281,
+          "means": [
+            124281,
+            3
+          ],
+          "quaternions": [
+            124281,
+            4
+          ],
+          "scales": [
+            124281,
+            3
+          ],
+          "shard": "submap_08"
+        },
+        {
+          "count": 127999,
+          "means": [
+            127999,
+            3
+          ],
+          "quaternions": [
+            127999,
+            4
+          ],
+          "scales": [
+            127999,
+            3
+          ],
+          "shard": "submap_09"
+        },
+        {
+          "count": 108016,
+          "means": [
+            108016,
+            3
+          ],
+          "quaternions": [
+            108016,
+            4
+          ],
+          "scales": [
+            108016,
+            3
+          ],
+          "shard": "submap_10"
+        },
+        {
+          "count": 132797,
+          "means": [
+            132797,
+            3
+          ],
+          "quaternions": [
+            132797,
+            4
+          ],
+          "scales": [
+            132797,
+            3
+          ],
+          "shard": "submap_11"
+        },
+        {
+          "count": 155847,
+          "means": [
+            155847,
+            3
+          ],
+          "quaternions": [
+            155847,
+            4
+          ],
+          "scales": [
+            155847,
+            3
+          ],
+          "shard": "submap_12"
+        },
+        {
+          "count": 146153,
+          "means": [
+            146153,
+            3
+          ],
+          "quaternions": [
+            146153,
+            4
+          ],
+          "scales": [
+            146153,
+            3
+          ],
+          "shard": "submap_13"
+        },
+        {
+          "count": 157263,
+          "means": [
+            157263,
+            3
+          ],
+          "quaternions": [
+            157263,
+            4
+          ],
+          "scales": [
+            157263,
+            3
+          ],
+          "shard": "submap_14"
+        },
+        {
+          "count": 145316,
+          "means": [
+            145316,
+            3
+          ],
+          "quaternions": [
+            145316,
+            4
+          ],
+          "scales": [
+            145316,
+            3
+          ],
+          "shard": "submap_15"
+        },
+        {
+          "count": 92421,
+          "means": [
+            92421,
+            3
+          ],
+          "quaternions": [
+            92421,
+            4
+          ],
+          "scales": [
+            92421,
+            3
+          ],
+          "shard": "submap_16"
+        },
+        {
+          "count": 192237,
+          "means": [
+            192237,
+            3
+          ],
+          "quaternions": [
+            192237,
+            4
+          ],
+          "scales": [
+            192237,
+            3
+          ],
+          "shard": "submap_17"
+        },
+        {
+          "count": 142236,
+          "means": [
+            142236,
+            3
+          ],
+          "quaternions": [
+            142236,
+            4
+          ],
+          "scales": [
+            142236,
+            3
+          ],
+          "shard": "submap_18"
+        },
+        {
+          "count": 93335,
+          "means": [
+            93335,
+            3
+          ],
+          "quaternions": [
+            93335,
+            4
+          ],
+          "scales": [
+            93335,
+            3
+          ],
+          "shard": "submap_19"
+        },
+        {
+          "count": 172481,
+          "means": [
+            172481,
+            3
+          ],
+          "quaternions": [
+            172481,
+            4
+          ],
+          "scales": [
+            172481,
+            3
+          ],
+          "shard": "submap_20"
+        },
+        {
+          "count": 74545,
+          "means": [
+            74545,
+            3
+          ],
+          "quaternions": [
+            74545,
+            4
+          ],
+          "scales": [
+            74545,
+            3
+          ],
+          "shard": "submap_21"
+        },
+        {
+          "count": 98978,
+          "means": [
+            98978,
+            3
+          ],
+          "quaternions": [
+            98978,
+            4
+          ],
+          "scales": [
+            98978,
+            3
+          ],
+          "shard": "submap_22"
+        },
+        {
+          "count": 113985,
+          "means": [
+            113985,
+            3
+          ],
+          "quaternions": [
+            113985,
+            4
+          ],
+          "scales": [
+            113985,
+            3
+          ],
+          "shard": "submap_23"
+        },
+        {
+          "count": 109750,
+          "means": [
+            109750,
+            3
+          ],
+          "quaternions": [
+            109750,
+            4
+          ],
+          "scales": [
+            109750,
+            3
+          ],
+          "shard": "submap_24"
+        }
+      ],
+      "shard_count": 25,
+      "source_identity": {
+        "bytes": 194935488,
+        "exists": true,
+        "file_count": 200,
+        "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a",
+        "sha256": "264d3886f6486b30bb40a9a78a201fbd0afa007f915f1f8c9dbda7d924e7679d"
+      },
+      "source_ids_available": true,
+      "status": "PASS_MAP_INTEGRITY"
+    }
+  ],
+  "status": "PASS_SERVER_READ_ONLY_MAP_INVENTORY",
+  "training_count": 0
+}

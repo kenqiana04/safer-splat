@@ -1,0 +1,46 @@
+{
+  "active_index_sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+  "adapter": "DummyGSplatLoader exact anisotropic ball-to-ellipsoid world-frame Hessian",
+  "controller_count": 0,
+  "epsilon_m": 0.01,
+  "gates": {
+    "active_indices_valid": true,
+    "gradient_finite": false,
+    "h_finite": false,
+    "hessian_finite": false,
+    "hessian_symmetric": false,
+    "map_unmodified": true,
+    "peak_gpu_under_20gib": true,
+    "query_count_256": true
+  },
+  "gaussian_count": 2285656,
+  "gradient_sha256": "b3f84b6b37939a5094bab0493fcdb74aff574ae934ab43d5efd35ee312a5b621",
+  "h_sha256": "75ec75362739d7b9129e8ec9d427fa14debdd92aa5216d8256ceca2e82b52fa2",
+  "hessian_sha256": "cc6a72419b88be74bffc8ca07c85cf81ac3776509c1e9496e954f59279edd209",
+  "hessian_symmetry_relative_max": NaN,
+  "map_id": "REPLICA_GT_FINE",
+  "map_identity_after": {
+    "bytes": 182855690,
+    "exists": true,
+    "file_count": 8,
+    "path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/map_profiles/FINE_A",
+    "sha256": "63b3281a3375e7178740184043e1af72e6ebaf2ca9fe9cf8f2bd5f59251c493e"
+  },
+  "map_identity_before": {
+    "bytes": 182855690,
+    "exists": true,
+    "file_count": 8,
+    "path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/map_profiles/FINE_A",
+    "sha256": "63b3281a3375e7178740184043e1af72e6ebaf2ca9fe9cf8f2bd5f59251c493e"
+  },
+  "map_mutation_count": 0,
+  "peak_gpu_bytes": 1233645568,
+  "planner_count": 0,
+  "query_count": 256,
+  "query_sha256": "ffc02b04709b1c8b45e419bd1c837524c226c04af608b5e0acb0a84f7e964b26",
+  "radius_m": 0.1,
+  "run_id": "2",
+  "runtime_s": 9.421599410939962,
+  "source_commit": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+  "status": "FAIL_FRESH_STATIC_G0_RUN"
+}

@@ -1,0 +1,9 @@
+{
+  "implementation": "GPU chunked full-map nearest sphere with analytic gradient/Hessian",
+  "independent_evidence": "PR #64 deterministic mesh construction and independent mesh collision oracle",
+  "nearest_center_substitute_for_anisotropic_map_count": 0,
+  "opacity_filter_count": 0,
+  "sample_count": 256,
+  "software_numerical_tolerance": 1e-05,
+  "status": "PASS_GT_UNIFORM_SPHERE_EXACT_SPECIALIZATION"
+}

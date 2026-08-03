@@ -1,0 +1,46 @@
+{
+  "active_index_sha256": "be09478150a2e00ffaf3e1ba8209b8f5e2068dff2b13644f3e3751ddd0e43eea",
+  "adapter": "DummyGSplatLoader exact anisotropic ball-to-ellipsoid world-frame Hessian",
+  "controller_count": 0,
+  "epsilon_m": 0.01,
+  "gates": {
+    "active_indices_valid": true,
+    "gradient_finite": true,
+    "h_finite": true,
+    "hessian_finite": true,
+    "hessian_symmetric": true,
+    "map_unmodified": true,
+    "peak_gpu_under_20gib": true,
+    "query_count_256": true
+  },
+  "gaussian_count": 5464102,
+  "gradient_sha256": "2358b6b1f9a8f7c4647e3b1692c449b0f647eceedef036d8602e17fa008263ab",
+  "h_sha256": "28e1f3c31e8745dc1b74c7f880cb164b8700a2afe81e22be3b7655f3125d7a47",
+  "hessian_sha256": "b55a4ea990838188176a3c842ccab2297c45790bd295db81d6e6862609d30fd0",
+  "hessian_symmetry_relative_max": 3.08201788957284e-07,
+  "map_id": "TUM_SPLATAM_FORMAL",
+  "map_identity_after": {
+    "bytes": 262302188,
+    "exists": true,
+    "file_count": 1,
+    "path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/splatam_full240/params.npz",
+    "sha256": "cb4a8f133a4ce4063f60112fa9689db683988be29f67b9d570231a319849a36f"
+  },
+  "map_identity_before": {
+    "bytes": 262302188,
+    "exists": true,
+    "file_count": 1,
+    "path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/splatam_full240/params.npz",
+    "sha256": "cb4a8f133a4ce4063f60112fa9689db683988be29f67b9d570231a319849a36f"
+  },
+  "map_mutation_count": 0,
+  "peak_gpu_bytes": 2942837248,
+  "planner_count": 0,
+  "query_count": 256,
+  "query_sha256": "1ee1e56cb70f0bbba2b54c52b39b1962370c97d8fecd3a3cc2829ec78d8b6446",
+  "radius_m": 0.1,
+  "run_id": "2",
+  "runtime_s": 25.65470054303296,
+  "source_commit": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+  "status": "PASS_FRESH_STATIC_G0_RUN"
+}

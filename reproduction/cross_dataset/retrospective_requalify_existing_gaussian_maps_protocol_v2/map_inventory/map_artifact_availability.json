@@ -1,0 +1,81 @@
+{
+  "maps": [
+    {
+      "artifact_status": "AVAILABLE_FOR_READ_ONLY_RETROSPECTIVE_SCOPE",
+      "available": true,
+      "map_id": "REPLICA_GT_FINE",
+      "retrain_to_recover": false,
+      "server_path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1"
+    },
+    {
+      "artifact_status": "AVAILABLE_FOR_READ_ONLY_RETROSPECTIVE_SCOPE",
+      "available": true,
+      "map_id": "REPLICA_SPLATFACTO",
+      "retrain_to_recover": false,
+      "server_path": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1"
+    },
+    {
+      "artifact_status": "ARTIFACT_UNAVAILABLE_FOR_RETROSPECTIVE_EVALUATION",
+      "available": false,
+      "map_id": "TUM_SPLATFACTO_NEGATIVE",
+      "retrain_to_recover": false,
+      "server_path": "/disk1/zlab/maintenance_records/tum_splatfacto_v1r6_checkpoint_audit_v1"
+    },
+    {
+      "artifact_status": "AVAILABLE_FOR_READ_ONLY_RETROSPECTIVE_SCOPE",
+      "available": true,
+      "map_id": "REPLICA_SPLATAM_60",
+      "retrain_to_recover": false,
+      "server_path": "/disk1/zlab/maintenance_records/replica_splatam_protocol_conformance_pilot_v1/pilot_run/run/params.npz"
+    },
+    {
+      "artifact_status": "AVAILABLE_FOR_READ_ONLY_RETROSPECTIVE_SCOPE",
+      "available": true,
+      "map_id": "ARKITSCENES_M1_SPLATAM",
+      "retrain_to_recover": false,
+      "server_path": "/disk1/zlab/maintenance_records/arkitscenes_splatam_m1_learned_map_qualification_v1/outputs/ARKITSCENES_SPLATAM_M1_EMPTY_DEPTH_SAFE_GT_POSE_MAP_ONLY_V1/params.npz"
+    },
+    {
+      "artifact_status": "AVAILABLE_FOR_READ_ONLY_RETROSPECTIVE_SCOPE",
+      "available": true,
+      "map_id": "TUM_SPLATAM_FORMAL",
+      "retrain_to_recover": false,
+      "server_path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/splatam_full240/params.npz"
+    },
+    {
+      "artifact_status": "AVAILABLE_FOR_READ_ONLY_RETROSPECTIVE_SCOPE",
+      "available": true,
+      "map_id": "TUM_GAUSSIAN_SLAM",
+      "retrain_to_recover": false,
+      "server_path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a"
+    },
+    {
+      "artifact_status": "ARTIFACT_UNAVAILABLE_FOR_RETROSPECTIVE_EVALUATION",
+      "available": false,
+      "map_id": "SAFER_OFFICIAL_FLIGHT",
+      "retrain_to_recover": false,
+      "server_path": "/disk1/zlab/safer-splat/data/flight"
+    },
+    {
+      "artifact_status": "ARTIFACT_UNAVAILABLE_FOR_RETROSPECTIVE_EVALUATION",
+      "available": false,
+      "map_id": "SAFER_OFFICIAL_OLD_UNION2",
+      "retrain_to_recover": false,
+      "server_path": "/disk1/zlab/safer-splat/data/old_union2"
+    },
+    {
+      "artifact_status": "ARTIFACT_UNAVAILABLE_FOR_RETROSPECTIVE_EVALUATION",
+      "available": false,
+      "map_id": "SAFER_OFFICIAL_STATUES",
+      "retrain_to_recover": false,
+      "server_path": "/disk1/zlab/safer-splat/data/statues"
+    },
+    {
+      "artifact_status": "ARTIFACT_UNAVAILABLE_FOR_RETROSPECTIVE_EVALUATION",
+      "available": false,
+      "map_id": "SAFER_OFFICIAL_STONEHENGE",
+      "retrain_to_recover": false,
+      "server_path": "/disk1/zlab/safer-splat/data/stonehenge"
+    }
+  ]
+}

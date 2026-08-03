@@ -1,0 +1,23 @@
+{
+  "N": "N3_LIMITED_DOMAIN_NAVIGATION_QUALIFIED",
+  "R": "R3_GLOBAL_DENSE_RECONSTRUCTION_QUALIFIED",
+  "REFERENCE_AUTHORITY": "A_DENSE_INDEPENDENT_GEOMETRY",
+  "SAFETY_QUERY_COMPATIBLE": true,
+  "UNKNOWN_MODEL_STATUS": "NOT_APPLICABLE_GT_DERIVED_FULL_REFERENCE",
+  "canonical_tree_sha256": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+  "checks": {
+    "deterministic_construction_certificate": true,
+    "deterministic_export": true,
+    "frozen_route_registry": true,
+    "identity_integrity": true,
+    "independent_oracle": true,
+    "n3": true,
+    "r3": true,
+    "reference_authority_a": true,
+    "reference_swept_body_collision_free": true,
+    "safety_query_compatible": true,
+    "unknown_not_free": true
+  },
+  "map_id": "REPLICA_GT_FINE",
+  "status": "PASS_PROTOCOL_V2_POSITIVE_CONTROL"
+}

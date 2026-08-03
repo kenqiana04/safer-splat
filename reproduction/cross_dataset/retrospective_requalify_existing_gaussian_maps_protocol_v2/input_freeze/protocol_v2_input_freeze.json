@@ -1,0 +1,50 @@
+{
+  "alpha_grid": [
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    0.95
+  ],
+  "execution_boundary": "READ_ONLY_EXISTING_MAP_REQUALIFICATION",
+  "expected": {
+    "checklist_sha256": "7c95f787fd7fb503e4bd2726546debac53acd41c1d5f9a8dd08c29cb27735593",
+    "protocol_v2_sha256": "a0a02fd284c75c600095510899e2878f198d69ff088b66eccd3313275fdbde7e",
+    "upstream_report_sha256": "9b0743571d6df1e4d4063c7d114a7ebb99d8a4092c4cdbda9384720e121d1678"
+  },
+  "gates": {
+    "checklist_sha_exact": true,
+    "map_order_exact": true,
+    "protocol_sha_exact": true,
+    "report_sha_exact": true,
+    "upstream_head_exact": true
+  },
+  "global_numeric_gate_decision": "NO_UNIVERSAL_NUMERIC_GATE_JUSTIFIED_BY_CURRENT_EVIDENCE",
+  "identity_method": "raw Git blob bytes from frozen upstream head; working-tree EOL conversion excluded",
+  "new_branch": "retrospective-requalify-existing-gaussian-maps-protocol-v2",
+  "observed": {
+    "checklist_sha256": "7c95f787fd7fb503e4bd2726546debac53acd41c1d5f9a8dd08c29cb27735593",
+    "protocol_v2_sha256": "a0a02fd284c75c600095510899e2878f198d69ff088b66eccd3313275fdbde7e",
+    "upstream_report_sha256": "9b0743571d6df1e4d4063c7d114a7ebb99d8a4092c4cdbda9384720e121d1678"
+  },
+  "pr_68_through_75_mutation_count": 0,
+  "reporting_tolerances_m": [
+    0.01,
+    0.02,
+    0.03,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "repository": "kenqiana04/safer-splat",
+  "status": "PASS_PROTOCOL_V2_AND_INPUT_FREEZE",
+  "upstream_branch": "gaussian-map-metric-provenance-navigation-usability-calibration-v1",
+  "upstream_head": "d1d3301076bec33868c52ff49e81857379038de1",
+  "upstream_pr": 75
+}

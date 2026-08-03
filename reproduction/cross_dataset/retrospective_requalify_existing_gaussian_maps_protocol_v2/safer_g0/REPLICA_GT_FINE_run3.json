@@ -1,0 +1,46 @@
+{
+  "active_index_sha256": "937ae68d6e0e6492e045a2dc306bc419a3d7e800c59dbf0148a39e4926f10fd4",
+  "adapter": "Certified uniform-sphere specialization of exact anisotropic ball-to-ellipsoid contract",
+  "controller_count": 0,
+  "epsilon_m": 0.01,
+  "gates": {
+    "active_indices_valid": true,
+    "gradient_finite": true,
+    "h_finite": true,
+    "hessian_finite": true,
+    "hessian_symmetric": true,
+    "map_unmodified": true,
+    "peak_gpu_under_20gib": true,
+    "query_count_256": true
+  },
+  "gaussian_count": 2285656,
+  "gradient_sha256": "a30aec3f38e831e17c8b5a44f5ad89c3a8b5aead1a30c8bd6768946db0ca785a",
+  "h_sha256": "4b0a94f2080e3babd49389b75e5f0ff648adc52b813ed7d9d50d031b1a42e05b",
+  "hessian_sha256": "d98597bb4c1677a235833e4c5e18d39c3c884347507c67aa5cf60c920fda44a0",
+  "hessian_symmetry_relative_max": 0.0,
+  "map_id": "REPLICA_GT_FINE",
+  "map_identity_after": {
+    "bytes": 182855690,
+    "exists": true,
+    "file_count": 8,
+    "path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/map_profiles/FINE_A",
+    "sha256": "63b3281a3375e7178740184043e1af72e6ebaf2ca9fe9cf8f2bd5f59251c493e"
+  },
+  "map_identity_before": {
+    "bytes": 182855690,
+    "exists": true,
+    "file_count": 8,
+    "path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/map_profiles/FINE_A",
+    "sha256": "63b3281a3375e7178740184043e1af72e6ebaf2ca9fe9cf8f2bd5f59251c493e"
+  },
+  "map_mutation_count": 0,
+  "peak_gpu_bytes": 359009792,
+  "planner_count": 0,
+  "query_count": 256,
+  "query_sha256": "ffc02b04709b1c8b45e419bd1c837524c226c04af608b5e0acb0a84f7e964b26",
+  "radius_m": 0.1,
+  "run_id": "3",
+  "runtime_s": 0.334639023989439,
+  "source_commit": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+  "status": "PASS_FRESH_STATIC_G0_RUN"
+}

@@ -1,0 +1,120 @@
+{
+  "candidate_specific_unknown_model_count": 0,
+  "diagnostics_completed_map_count": 1,
+  "maps": [
+    {
+      "UNKNOWN_MODEL_STATUS": "NOT_APPLICABLE_GT_DERIVED_FULL_REFERENCE",
+      "diagnostic": {
+        "status": "NOT_EVALUABLE"
+      },
+      "map_id": "REPLICA_GT_FINE",
+      "runtime_deployable_unknown_model": true,
+      "unknown_as_free_qualified": false
+    },
+    {
+      "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_UNRESOLVED",
+      "diagnostic": {
+        "map_id": "REPLICA_SPLATFACTO",
+        "status": "NOT_EVALUABLE_NO_PER_FRAME_SUPPORT_SUMMARY"
+      },
+      "map_id": "REPLICA_SPLATFACTO",
+      "runtime_deployable_unknown_model": false,
+      "unknown_as_free_qualified": false
+    },
+    {
+      "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_UNRESOLVED",
+      "diagnostic": {
+        "status": "NOT_EVALUABLE"
+      },
+      "map_id": "TUM_SPLATFACTO_NEGATIVE",
+      "runtime_deployable_unknown_model": false,
+      "unknown_as_free_qualified": false
+    },
+    {
+      "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_UNRESOLVED",
+      "diagnostic": {
+        "map_id": "REPLICA_SPLATAM_60",
+        "status": "NOT_EVALUABLE_NO_PER_FRAME_SUPPORT_SUMMARY"
+      },
+      "map_id": "REPLICA_SPLATAM_60",
+      "runtime_deployable_unknown_model": false,
+      "unknown_as_free_qualified": false
+    },
+    {
+      "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_DIAGNOSTIC_ONLY",
+      "diagnostic": {
+        "3d_clusters": "NOT_EVALUABLE_NO_RETAINED_BACKPROJECTED_UNKNOWN_POINTS",
+        "border_vs_interior": "NOT_EVALUABLE",
+        "contiguous_2d_components": "NOT_EVALUABLE_NO_RETAINED_BINARY_MASKS",
+        "frame_count": 53,
+        "frames_below_legacy_coverage_0_95": 46,
+        "global_missing_fraction": 0.1990014275109918,
+        "macro_frame_missing_fraction": 0.21303855735525234,
+        "map_id": "ARKITSCENES_M1_SPLATAM",
+        "range_bins": "NOT_EVALUABLE",
+        "robot_height_band": "NOT_EVALUABLE",
+        "status": "FRAME_LEVEL_OBSERVABLE_MISSINGNESS_ONLY",
+        "worst_5pct_frame_missing_fraction": 0.787136476051123,
+        "worst_frame_missing_fraction": 0.8203896371835303
+      },
+      "map_id": "ARKITSCENES_M1_SPLATAM",
+      "runtime_deployable_unknown_model": false,
+      "unknown_as_free_qualified": false
+    },
+    {
+      "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_UNRESOLVED",
+      "diagnostic": {
+        "status": "NOT_EVALUABLE"
+      },
+      "map_id": "TUM_SPLATAM_FORMAL",
+      "runtime_deployable_unknown_model": false,
+      "unknown_as_free_qualified": false
+    },
+    {
+      "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_UNRESOLVED",
+      "diagnostic": {
+        "status": "NOT_EVALUABLE"
+      },
+      "map_id": "TUM_GAUSSIAN_SLAM",
+      "runtime_deployable_unknown_model": false,
+      "unknown_as_free_qualified": false
+    },
+    {
+      "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_UNRESOLVED",
+      "diagnostic": {
+        "status": "NOT_EVALUABLE"
+      },
+      "map_id": "SAFER_OFFICIAL_FLIGHT",
+      "runtime_deployable_unknown_model": false,
+      "unknown_as_free_qualified": false
+    },
+    {
+      "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_UNRESOLVED",
+      "diagnostic": {
+        "status": "NOT_EVALUABLE"
+      },
+      "map_id": "SAFER_OFFICIAL_OLD_UNION2",
+      "runtime_deployable_unknown_model": false,
+      "unknown_as_free_qualified": false
+    },
+    {
+      "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_UNRESOLVED",
+      "diagnostic": {
+        "status": "NOT_EVALUABLE"
+      },
+      "map_id": "SAFER_OFFICIAL_STATUES",
+      "runtime_deployable_unknown_model": false,
+      "unknown_as_free_qualified": false
+    },
+    {
+      "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_UNRESOLVED",
+      "diagnostic": {
+        "status": "NOT_EVALUABLE"
+      },
+      "map_id": "SAFER_OFFICIAL_STONEHENGE",
+      "runtime_deployable_unknown_model": false,
+      "unknown_as_free_qualified": false
+    }
+  ],
+  "principle": "UNKNOWN != FREE"
+}

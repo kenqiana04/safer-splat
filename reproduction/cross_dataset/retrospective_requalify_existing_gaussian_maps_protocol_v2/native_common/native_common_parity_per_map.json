@@ -1,0 +1,90 @@
+{
+  "counts": {
+    "COMMON_ONLY": 0,
+    "NATIVE_ONLY": 1,
+    "NOT_EVALUABLE": 5,
+    "NUMERIC_PARITY_PASS": 2,
+    "PARITY_FAIL": 0,
+    "SEMANTIC_PARITY_ONLY": 3
+  },
+  "maps": [
+    {
+      "basis": "deterministic canonical construction plus static adapter double-validation; no camera render parity claim",
+      "common": true,
+      "map_id": "REPLICA_GT_FINE",
+      "native": true,
+      "status": "SEMANTIC_PARITY_ONLY"
+    },
+    {
+      "basis": "native/canonical G0 consistency is retained separately from render parity",
+      "common": true,
+      "map_id": "REPLICA_SPLATFACTO",
+      "native": true,
+      "status": "SEMANTIC_PARITY_ONLY"
+    },
+    {
+      "basis": "artifact unavailable",
+      "common": true,
+      "map_id": "TUM_SPLATFACTO_NEGATIVE",
+      "native": true,
+      "status": "NOT_EVALUABLE"
+    },
+    {
+      "basis": "common-evaluator binding and canonical semantics; no retained same-frame native numeric comparison",
+      "common": true,
+      "map_id": "REPLICA_SPLATAM_60",
+      "native": true,
+      "status": "SEMANTIC_PARITY_ONLY"
+    },
+    {
+      "basis": "frozen SplaTAM renderer; no qualified common renderer",
+      "common": false,
+      "map_id": "ARKITSCENES_M1_SPLATAM",
+      "native": true,
+      "status": "NATIVE_ONLY"
+    },
+    {
+      "basis": "12 frozen frames; exact support masks; depth max abs <= 9.5367431640625e-07",
+      "common": true,
+      "map_id": "TUM_SPLATAM_FORMAL",
+      "native": true,
+      "status": "NUMERIC_PARITY_PASS"
+    },
+    {
+      "basis": "12 frozen frames; exact support masks; depth max abs <= 6.9141387939453125e-06",
+      "common": true,
+      "map_id": "TUM_GAUSSIAN_SLAM",
+      "native": true,
+      "status": "NUMERIC_PARITY_PASS"
+    },
+    {
+      "basis": "interface artifact unavailable",
+      "common": false,
+      "map_id": "SAFER_OFFICIAL_FLIGHT",
+      "native": true,
+      "status": "NOT_EVALUABLE"
+    },
+    {
+      "basis": "interface artifact unavailable",
+      "common": false,
+      "map_id": "SAFER_OFFICIAL_OLD_UNION2",
+      "native": true,
+      "status": "NOT_EVALUABLE"
+    },
+    {
+      "basis": "interface artifact unavailable",
+      "common": false,
+      "map_id": "SAFER_OFFICIAL_STATUES",
+      "native": true,
+      "status": "NOT_EVALUABLE"
+    },
+    {
+      "basis": "interface artifact unavailable",
+      "common": false,
+      "map_id": "SAFER_OFFICIAL_STONEHENGE",
+      "native": true,
+      "status": "NOT_EVALUABLE"
+    }
+  ],
+  "selection_rule": "no favourable renderer switching; conservative status used"
+}

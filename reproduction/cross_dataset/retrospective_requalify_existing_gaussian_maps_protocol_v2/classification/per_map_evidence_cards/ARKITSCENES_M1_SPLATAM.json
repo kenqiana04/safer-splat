@@ -1,0 +1,32 @@
+{
+  "ALLOWED_CLAIMS": [
+    "immutable map-instance evidence",
+    "static query compatibility when true",
+    "reference-bounded reconstruction diagnostics"
+  ],
+  "FORBIDDEN_CLAIMS": [
+    "algorithm stability",
+    "universal numeric qualification",
+    "full-space completeness from camera rays",
+    "navigation safety from G0 alone",
+    "legacy result overturned"
+  ],
+  "LEGACY_FORMAL_STATUS": "NO_ARKITSCENES_M1_LEARNED_GAUSSIAN_MAP_QUALIFIED_UNDER_FROZEN_CONTRACT",
+  "LEGACY_GATE": "global coverage 0.95 only",
+  "NATIVE_COMMON_PARITY_STATUS": "NATIVE_ONLY",
+  "ONE_SIDED_RISK_STATUS": "NOT_EVALUABLE",
+  "PHYSICAL_BUDGET_STATUS": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+  "REFERENCE_AUTHORITY": "B_OBSERVABLE_RAY_REFERENCE",
+  "RISK_COVERAGE_STATUS": "COMPLETE_FIXED_ALPHA_CURVE",
+  "ROUTE_TUBE_STATUS": "NOT_EVALUABLE",
+  "SAFETY_QUERY_COMPATIBLE": true,
+  "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_DIAGNOSTIC_ONLY",
+  "V2_NAVIGATION_AXIS": "N0_NOT_EVALUABLE",
+  "V2_RECONSTRUCTION_AXIS": "R2_GLOBAL_RECONSTRUCTION_CANDIDATE",
+  "artifact_status": "AVAILABLE_FOR_READ_ONLY_RETROSPECTIVE_SCOPE",
+  "historical_boundary": "legacy result remains valid under legacy contract; V2 classification does not retroactively change history",
+  "learned": true,
+  "map_id": "ARKITSCENES_M1_SPLATAM",
+  "map_sha_after": "86ba75c9db0fab1a5eb7d65da82454514419a30d7bea6df68b2bbc0518000193",
+  "map_sha_before": "86ba75c9db0fab1a5eb7d65da82454514419a30d7bea6df68b2bbc0518000193"
+}

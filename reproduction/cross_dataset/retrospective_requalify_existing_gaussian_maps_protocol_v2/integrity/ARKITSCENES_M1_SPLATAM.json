@@ -1,0 +1,68 @@
+{
+  "checks": {
+    "artifact_exists": true,
+    "canonical_arrays_finite": true,
+    "deterministic_reload": true,
+    "historical_report_consistency": true,
+    "no_filtering_or_reordering_introduced": true,
+    "positive_scales": true,
+    "quaternion_normalizable": true,
+    "source_identity_stable": true
+  },
+  "continued_navigation_evaluation": true,
+  "map_id": "ARKITSCENES_M1_SPLATAM",
+  "server_record": {
+    "available": true,
+    "canonical_identity": {
+      "bytes": 465407646,
+      "exists": true,
+      "file_count": 9,
+      "path": "/disk1/zlab/maintenance_records/arkitscenes_splatam_m1_learned_map_qualification_v1/canonical_export_a",
+      "sha256": "405bfd5ea31b202a8e378a5d26fb151e2d57f08ab3c7da62ac038bdb15216e0c"
+    },
+    "canonical_root": "/disk1/zlab/maintenance_records/arkitscenes_splatam_m1_learned_map_qualification_v1/canonical_export_a",
+    "deterministic_reload": true,
+    "finite_canonical_arrays": true,
+    "gaussian_count": 6463948,
+    "map_id": "ARKITSCENES_M1_SPLATAM",
+    "opacity_range": [
+      0.0006773065542802215,
+      1.0
+    ],
+    "positive_scales": true,
+    "quaternion_norm_range": [
+      0.999999808567961,
+      1.0000001942248573
+    ],
+    "quaternion_normalizable": true,
+    "shapes": [
+      {
+        "count": 6463948,
+        "means": [
+          6463948,
+          3
+        ],
+        "quaternions": [
+          6463948,
+          4
+        ],
+        "scales": [
+          6463948,
+          3
+        ],
+        "shard": "."
+      }
+    ],
+    "shard_count": 1,
+    "source_identity": {
+      "bytes": 310292404,
+      "exists": true,
+      "file_count": 1,
+      "path": "/disk1/zlab/maintenance_records/arkitscenes_splatam_m1_learned_map_qualification_v1/outputs/ARKITSCENES_SPLATAM_M1_EMPTY_DEPTH_SAFE_GT_POSE_MAP_ONLY_V1/params.npz",
+      "sha256": "86ba75c9db0fab1a5eb7d65da82454514419a30d7bea6df68b2bbc0518000193"
+    },
+    "source_ids_available": false,
+    "status": "PASS_MAP_INTEGRITY"
+  },
+  "status": "PASS_MAP_INTEGRITY"
+}
