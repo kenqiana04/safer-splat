@@ -1,0 +1,25 @@
+{
+  "FINAL_DECISION": "FREEZE_M1_WITH_EMPTY_DEPTH_SAFE_COMPATIBILITY",
+  "FINAL_STATUS": "PASS_ARKITSCENES_CONFIDENCE_GE1_SUPERVISION_AND_EMPTY_DEPTH_SAFE_CONTRACT_V2",
+  "Only_next_task": "RESUME_ARKITSCENES_SPLATAM_M1_SMOKE_AND_LEARNED_MAP_QUALIFICATION_V1",
+  "checks": {
+    "all_12_figures": true,
+    "environment_unmodified": true,
+    "first_frame_nonempty": true,
+    "fresh_process": true,
+    "handoff": true,
+    "input_identity": true,
+    "official_source_unmodified": true,
+    "pr72_result_preserved": true,
+    "real_nonempty_forward": true,
+    "real_zero_forward": true,
+    "report": true,
+    "sequence": true,
+    "supervision_v2": true,
+    "synthetic_nonempty": true,
+    "synthetic_zero": true,
+    "zero_forbidden_execution_counts": true
+  },
+  "status": "PASS_ARKITSCENES_V2_ARTIFACT_VALIDATION",
+  "unresolved_critical_evidence": []
+}

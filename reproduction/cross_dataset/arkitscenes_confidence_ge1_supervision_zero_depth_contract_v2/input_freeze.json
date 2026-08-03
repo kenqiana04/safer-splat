@@ -1,0 +1,86 @@
+{
+  "authorities": {
+    "arkitscenes": "7283761bf26c27570ec59a5dc0f8686fbff07726",
+    "rasterizer": "cb65e4b86bc3bd8ed42174b72a62e8d3a3a71110",
+    "splatam": "da6bbcd24c248dc884ac7f49d62e91b841b26ccc"
+  },
+  "checks": {
+    "group_tuple": true,
+    "heldout_blob_oid": true,
+    "heldout_manifest_sha": true,
+    "m1_longest_run": true,
+    "m1_max": true,
+    "m1_median": true,
+    "m1_p95": true,
+    "m1_p99": true,
+    "m1_retention": true,
+    "m1_support": true,
+    "m1_valid_pixels": true,
+    "m1_zero_indices": true,
+    "pr72_formal_result_preserved": true,
+    "prior_report_sha": true,
+    "split_identity": true,
+    "train_blob_oid": true,
+    "train_manifest_sha": true
+  },
+  "classification": "POST_AUDIT_PRETRAINING_PROTOCOL_REVISION",
+  "created_utc": "2026-08-03T03:39:46+00:00",
+  "git_lineage": {
+    "base_branch": "arkitscenes-depth-confidence-p99-tail-audit-v1",
+    "new_branch": "arkitscenes-confidence-ge1-supervision-zero-depth-contract-v2",
+    "pr70_head": "ff58dbbd4d7da143e5d457a2765b8760bdcc4959",
+    "pr71_head": "1c55f67e7b93b098c672eb09ff483fd8d037fde9",
+    "pr72_head": "a35ec170aba60de821ecbad56642f092c70df792",
+    "pr72_live_status": {
+      "draft": true,
+      "merge_state_status": "CLEAN",
+      "mergeable": "MERGEABLE",
+      "merged": false,
+      "state": "OPEN"
+    }
+  },
+  "heldout_count": 53,
+  "m1_exact": {
+    "longest_unsupported_run": 4,
+    "max_m": 0.6737809777259827,
+    "median_m": 0.012361899949610233,
+    "p95_m": 0.06020478531718254,
+    "p99_m": 0.11765064597129882,
+    "retention": 0.8820455675927278,
+    "supported_frames": 210,
+    "valid_pixels": 9277821,
+    "zero_valid_indices": [
+      76,
+      79
+    ]
+  },
+  "manifests": {
+    "heldout": {
+      "git_blob_oid": "cf28dd385711a31733360e5fc21dce229ce605bc",
+      "path": "reproduction/cross_dataset/arkitscenes_spatial_group_split_contract_v2/v2_split/arkitscenes_heldout_manifest_v2.csv",
+      "row_count": 53,
+      "sha256": "7b65f741e901690f2a723579d75200eebe7b9e77b0cd57c030d4a14d0474c0c7"
+    },
+    "train": {
+      "git_blob_oid": "a2ddc70775e6d0f9c25f77ef5f869556d83b292c",
+      "path": "reproduction/cross_dataset/arkitscenes_spatial_group_split_contract_v2/v2_split/arkitscenes_train_manifest_v2.csv",
+      "row_count": 214,
+      "sha256": "167066916ce1a3281ac754dfdeec37ada9f5b0e31227c731c94cebb698a2a6e3"
+    }
+  },
+  "prior_formal_result": {
+    "FINAL_DECISION": "CLOSE_ARKITSCENES_SPLATAM_MAPPING_ROUTE_WITHOUT_TRAINING",
+    "FINAL_STATUS": "NO_ARKITSCENES_METRIC_DEPTH_INPUT_CONTRACT_QUALIFIED",
+    "preserved": true,
+    "report_git_blob_oid": "8e1f81350f83235bf2caa7eb5ee4276ff058dda2",
+    "report_path": "reproduction/cross_dataset/arkitscenes_depth_confidence_p99_tail_audit_v1/REPORT_AUDIT_ARKITSCENES_DEPTH_CONFIDENCE_ALIGNMENT_AND_P99_TAIL_V1.md",
+    "report_sha256": "e2da3d91085f47fc7716715e05f981d1bd3668794565158da527f65523807149"
+  },
+  "scene": "48018874",
+  "selected_group_tuple": "8ad320980bb36edb2accb38629ec3046095c9ef7735fbb748f4e112ee75bd388",
+  "split_identity": "97a707510227271d12859ee78defc0d6170cc24cb67e423568cd1a72e3345dee",
+  "status": "PASS_ARKITSCENES_V2_CONTRACT_INPUT_IDENTITY",
+  "task": "REDEFINE_ARKITSCENES_CONFIDENCE_AWARE_SUPERVISION_CONTRACT_V2_AND_ZERO_DEPTH_FRAME_POLICY_V1",
+  "train_count": 214,
+  "visit": "483945"
+}

@@ -1,0 +1,63 @@
+{
+  "FINAL_DECISION": "FREEZE_M1_WITH_EMPTY_DEPTH_SAFE_COMPATIBILITY",
+  "FINAL_STATUS": "PASS_ARKITSCENES_CONFIDENCE_GE1_SUPERVISION_AND_EMPTY_DEPTH_SAFE_CONTRACT_V2",
+  "Only_next_task": "RESUME_ARKITSCENES_SPLATAM_M1_SMOKE_AND_LEARNED_MAP_QUALIFICATION_V1",
+  "base_head": "a35ec170aba60de821ecbad56642f092c70df792",
+  "branch": "arkitscenes-confidence-ge1-supervision-zero-depth-contract-v2",
+  "created_utc": "2026-08-03T03:39:46+00:00",
+  "environment_unmodified": true,
+  "execution_counts": {
+    "checkpoint": 0,
+    "clearance": 0,
+    "controller_benchmark": 0,
+    "download": 0,
+    "environment_creation": 0,
+    "environment_modification": 0,
+    "fas_cbf": 0,
+    "g0": 0,
+    "learned_map": 0,
+    "nvs": 0,
+    "optimizer_step": 0,
+    "parameter_update": 0,
+    "real_backward": 0,
+    "real_forward_frames": 34,
+    "real_mapper": 0,
+    "real_optimizer": 0,
+    "safer": 0,
+    "smoke": 0,
+    "state_only_sequence_frames": 8,
+    "synthetic_backward": 244,
+    "training": 0
+  },
+  "official_checkout_unmodified": true,
+  "resource_boundary": {
+    "final_compute_process_count": 0,
+    "final_memory_used_mib": 6,
+    "final_utilization_percent": 0,
+    "firewall_change_count": 0,
+    "gpu_physical": 1,
+    "network_restart_count": 0,
+    "preexisting_long_lived_ssh_pids_preserved": [
+      11964,
+      17480
+    ],
+    "sshd_restart_count": 0,
+    "task_owned_process_count": 0,
+    "watchdog_scheduled_state": "Enabled",
+    "watchdog_status": "Running"
+  },
+  "scene": "48018874",
+  "scientific_results": {
+    "first_frame_nonempty": true,
+    "fresh_process": "PASS_FRESH_PROCESS_SUPERVISION_REPRODUCIBILITY",
+    "nonempty_real_forward": "PASS_NONEMPTY_REAL_FRAME_FORWARD_EQUIVALENCE",
+    "nonempty_synthetic": "PASS_NONEMPTY_SYNTHETIC_EQUIVALENCE",
+    "sequence": "PASS_SEQUENCE_STATE_DRY_RUN",
+    "supervision_v2": "PASS_ARKITSCENES_M1_SUPERVISION_V2",
+    "zero_real_forward": "PASS_ZERO_FRAME_REAL_FORWARD_VALIDATION",
+    "zero_synthetic": "PASS_ZERO_MASK_SYNTHETIC_VALIDATION"
+  },
+  "server_root": "/disk1/zlab/maintenance_records/arkitscenes_confidence_ge1_supervision_zero_depth_contract_v2",
+  "task": "REDEFINE_ARKITSCENES_CONFIDENCE_AWARE_SUPERVISION_CONTRACT_V2_AND_ZERO_DEPTH_FRAME_POLICY_V1",
+  "visit": "483945"
+}

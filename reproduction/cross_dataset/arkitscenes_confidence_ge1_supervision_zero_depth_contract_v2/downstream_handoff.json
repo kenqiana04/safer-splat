@@ -1,0 +1,57 @@
+{
+  "FINAL_DECISION": "FREEZE_M1_WITH_EMPTY_DEPTH_SAFE_COMPATIBILITY",
+  "FINAL_STATUS": "PASS_ARKITSCENES_CONFIDENCE_GE1_SUPERVISION_AND_EMPTY_DEPTH_SAFE_CONTRACT_V2",
+  "Only_next_task": "RESUME_ARKITSCENES_SPLATAM_M1_SMOKE_AND_LEARNED_MAP_QUALIFICATION_V1",
+  "compatibility_module": {
+    "environment": {
+      "modified": false,
+      "prefix": "/disk1/zlab/conda_envs/arkitscenes_splatam_canonical_v1",
+      "python": "3.10.20",
+      "torch": "2.1.2+cu118",
+      "torch_cuda": "11.8"
+    },
+    "git_blob_oid": "b134d45f68f8de060f94f8867dfb173c98be8f0b",
+    "official_source": {
+      "checkout_unmodified_after_tests": true,
+      "git_blob_oid": "1b082f7e2514da6dbecfacd9a7029c9a0389192b",
+      "head": "da6bbcd24c248dc884ac7f49d62e91b841b26ccc",
+      "path": "/disk1/zlab/external_authorities/SplaTAM-da6bbcd24c248dc884ac7f49d62e91b841b26ccc/scripts/splatam.py",
+      "sha256": "b8adb286bea49d6302769ec5af25af4938318044691a8996575c443e4b538816"
+    },
+    "path": "empty_depth_safe_splatam_compat.py",
+    "sha256": "8930c9d2e5172d0c56e698a418b3f454171e6c9fd84e3079d1f7c3568436a6f3",
+    "size": 4804,
+    "status": "PASS_EMPTY_DEPTH_SAFE_IMPLEMENTATION_IDENTITY"
+  },
+  "depth_validity_contract": "DEPTH_GT_ZERO_AND_CONFIDENCE_GE1",
+  "future_execution_lock": {
+    "compatibility_sha256": "8930c9d2e5172d0c56e698a418b3f454171e6c9fd84e3079d1f7c3568436a6f3",
+    "confidence_contract": "confidence>=1",
+    "empty_depth_policy_sha256": "3511a44ee72b1cb8615377e41217052842f44e82dd39e5c0a49a7e9cbc2a6211",
+    "forbidden": [
+      "M0 fallback",
+      "M2 substitution",
+      "delete frames 76/79",
+      "call variant official unmodified",
+      "automatic training"
+    ],
+    "input_scene": "48018874",
+    "official_source_sha256": "b8adb286bea49d6302769ec5af25af4938318044691a8996575c443e4b538816",
+    "requires_separate_authorization": true,
+    "train_manifest_sha256": "167066916ce1a3281ac754dfdeec37ada9f5b0e31227c731c94cebb698a2a6e3"
+  },
+  "mapper_role": "SPLATAM_DERIVED_GT_POSE_MAP_ONLY_WITH_EMPTY_DEPTH_SAFE_COMPATIBILITY",
+  "nonempty_equivalence": {
+    "real_forward": "PASS_NONEMPTY_REAL_FRAME_FORWARD_EQUIVALENCE",
+    "synthetic": "PASS_NONEMPTY_SYNTHETIC_EQUIVALENCE"
+  },
+  "zero_frame_tests": {
+    "real_forward": "PASS_ZERO_FRAME_REAL_FORWARD_VALIDATION",
+    "sequence": "PASS_SEQUENCE_STATE_DRY_RUN",
+    "synthetic": "PASS_ZERO_MASK_SYNTHETIC_VALIDATION"
+  },
+  "zero_valid_frames": [
+    76,
+    79
+  ]
+}
