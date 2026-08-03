@@ -1,0 +1,497 @@
+{
+  "complete_map_count": 0,
+  "fixed_tolerances_m": [
+    0.01,
+    0.02,
+    0.03,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "maps": [
+    {
+      "detail": "Retained certificate proves every frozen mesh primitive intersects closed voxel support; it does not retain bidirectional surface samples needed for accuracy/completeness/F-score.",
+      "map_id": "REPLICA_GT_FINE",
+      "reporting_points_are_not_gates": true,
+      "status": "PARTIAL_EXACT_SUPPORT_CERTIFICATE_NOT_BENCHMARK_SURFACE_CURVE",
+      "tolerances_m": [
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.01
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.02
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.03
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.05
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.1
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.2
+        }
+      ]
+    },
+    {
+      "detail": "No retained distance arrays at all frozen reporting tolerances; no rerendered geometry or map mutation was authorized.",
+      "map_id": "TUM_SPLATFACTO_NEGATIVE",
+      "reporting_points_are_not_gates": true,
+      "status": "NOT_EVALUABLE_NO_RETAINED_BIDIRECTIONAL_DISTANCE_SAMPLES",
+      "tolerances_m": [
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.01
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.02
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.03
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.05
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.1
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.2
+        }
+      ]
+    },
+    {
+      "detail": "No retained distance arrays at all frozen reporting tolerances; no rerendered geometry or map mutation was authorized.",
+      "map_id": "REPLICA_SPLATFACTO",
+      "reporting_points_are_not_gates": true,
+      "status": "NOT_EVALUABLE_NO_RETAINED_BIDIRECTIONAL_DISTANCE_SAMPLES",
+      "tolerances_m": [
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.01
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.02
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.03
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.05
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.1
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.2
+        }
+      ]
+    },
+    {
+      "detail": "No retained distance arrays at all frozen reporting tolerances; no rerendered geometry or map mutation was authorized.",
+      "map_id": "TUM_SPLATAM_FORMAL",
+      "reporting_points_are_not_gates": true,
+      "status": "NOT_EVALUABLE_NO_RETAINED_BIDIRECTIONAL_DISTANCE_SAMPLES",
+      "tolerances_m": [
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.01
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.02
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.03
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.05
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.1
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.2
+        }
+      ]
+    },
+    {
+      "detail": "No retained distance arrays at all frozen reporting tolerances; no rerendered geometry or map mutation was authorized.",
+      "map_id": "TUM_GAUSSIAN_SLAM",
+      "reporting_points_are_not_gates": true,
+      "status": "NOT_EVALUABLE_NO_RETAINED_BIDIRECTIONAL_DISTANCE_SAMPLES",
+      "tolerances_m": [
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.01
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.02
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.03
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.05
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.1
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.2
+        }
+      ]
+    },
+    {
+      "detail": "No retained distance arrays at all frozen reporting tolerances; no rerendered geometry or map mutation was authorized.",
+      "map_id": "REPLICA_SPLATAM_60",
+      "reporting_points_are_not_gates": true,
+      "status": "NOT_EVALUABLE_NO_RETAINED_BIDIRECTIONAL_DISTANCE_SAMPLES",
+      "tolerances_m": [
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.01
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.02
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.03
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.05
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.1
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.2
+        }
+      ]
+    },
+    {
+      "detail": "No retained distance arrays at all frozen reporting tolerances; no rerendered geometry or map mutation was authorized.",
+      "map_id": "ARKITSCENES_M1_SPLATAM",
+      "reporting_points_are_not_gates": true,
+      "status": "NOT_EVALUABLE_NO_RETAINED_BIDIRECTIONAL_DISTANCE_SAMPLES",
+      "tolerances_m": [
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.01
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.02
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.03
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.05
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.1
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.2
+        }
+      ]
+    },
+    {
+      "detail": "No retained distance arrays at all frozen reporting tolerances; no rerendered geometry or map mutation was authorized.",
+      "map_id": "SAFER_OFFICIAL_FLIGHT",
+      "reporting_points_are_not_gates": true,
+      "status": "NOT_EVALUABLE_NO_RETAINED_BIDIRECTIONAL_DISTANCE_SAMPLES",
+      "tolerances_m": [
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.01
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.02
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.03
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.05
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.1
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.2
+        }
+      ]
+    },
+    {
+      "detail": "No retained distance arrays at all frozen reporting tolerances; no rerendered geometry or map mutation was authorized.",
+      "map_id": "SAFER_OFFICIAL_OLD_UNION2",
+      "reporting_points_are_not_gates": true,
+      "status": "NOT_EVALUABLE_NO_RETAINED_BIDIRECTIONAL_DISTANCE_SAMPLES",
+      "tolerances_m": [
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.01
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.02
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.03
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.05
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.1
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.2
+        }
+      ]
+    },
+    {
+      "detail": "No retained distance arrays at all frozen reporting tolerances; no rerendered geometry or map mutation was authorized.",
+      "map_id": "SAFER_OFFICIAL_STATUES",
+      "reporting_points_are_not_gates": true,
+      "status": "NOT_EVALUABLE_NO_RETAINED_BIDIRECTIONAL_DISTANCE_SAMPLES",
+      "tolerances_m": [
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.01
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.02
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.03
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.05
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.1
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.2
+        }
+      ]
+    },
+    {
+      "detail": "No retained distance arrays at all frozen reporting tolerances; no rerendered geometry or map mutation was authorized.",
+      "map_id": "SAFER_OFFICIAL_STONEHENGE",
+      "reporting_points_are_not_gates": true,
+      "status": "NOT_EVALUABLE_NO_RETAINED_BIDIRECTIONAL_DISTANCE_SAMPLES",
+      "tolerances_m": [
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.01
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.02
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.03
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.05
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.1
+        },
+        {
+          "F_score": null,
+          "accuracy": null,
+          "completeness": null,
+          "t": 0.2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1971 @@
+{
+  "conflicts": [
+    {
+      "conflict_type": "MULTIPLE_NUMERIC_OR_COMPARATOR_VARIANTS",
+      "metric_name": "AbsRel",
+      "resolution": "retain provenance and applicability; no universal gate inferred",
+      "source_row_ids": [
+        "T00001",
+        "T00002",
+        "T00003",
+        "T00004",
+        "T00005",
+        "T00006",
+        "T00007",
+        "T00008",
+        "T00009",
+        "T00010",
+        "T00011",
+        "T00012",
+        "T00013",
+        "T00014",
+        "T00015",
+        "T00016",
+        "T00017",
+        "T00018"
+      ],
+      "variant_count": 11,
+      "variants": [
+        {
+          "comparator": "<",
+          "threshold": "0.75",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.005",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.2",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.22",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.25",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1.15",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "2",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.04",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.7",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.75",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.85",
+          "units": "ratio"
+        }
+      ]
+    },
+    {
+      "conflict_type": "MULTIPLE_NUMERIC_OR_COMPARATOR_VARIANTS",
+      "metric_name": "GPU_memory",
+      "resolution": "retain provenance and applicability; no universal gate inferred",
+      "source_row_ids": [
+        "T00238",
+        "T00239",
+        "T00240",
+        "T00241",
+        "T00242",
+        "T00243"
+      ],
+      "variant_count": 5,
+      "variants": [
+        {
+          "comparator": "<=",
+          "threshold": "12",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "180",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1800",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1e-05",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "20",
+          "units": "count_or_native_unit"
+        }
+      ]
+    },
+    {
+      "conflict_type": "MULTIPLE_NUMERIC_OR_COMPARATOR_VARIANTS",
+      "metric_name": "PSNR",
+      "resolution": "retain provenance and applicability; no universal gate inferred",
+      "source_row_ids": [
+        "T00372",
+        "T00373",
+        "T00374",
+        "T00375",
+        "T00376",
+        "T00377",
+        "T00378",
+        "T00379",
+        "T00380",
+        "T00381"
+      ],
+      "variant_count": 5,
+      "variants": [
+        {
+          "comparator": "<=",
+          "threshold": "1",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "3",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "1",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "10",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "8",
+          "units": "count_or_native_unit"
+        }
+      ]
+    },
+    {
+      "conflict_type": "MULTIPLE_NUMERIC_OR_COMPARATOR_VARIANTS",
+      "metric_name": "SSIM",
+      "resolution": "retain provenance and applicability; no universal gate inferred",
+      "source_row_ids": [
+        "T00465",
+        "T00466"
+      ],
+      "variant_count": 2,
+      "variants": [
+        {
+          "comparator": "<=",
+          "threshold": "1",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0",
+          "units": "ratio"
+        }
+      ]
+    },
+    {
+      "conflict_type": "MULTIPLE_NUMERIC_OR_COMPARATOR_VARIANTS",
+      "metric_name": "coverage",
+      "resolution": "retain provenance and applicability; no universal gate inferred",
+      "source_row_ids": [
+        "T00019",
+        "T00020",
+        "T00021",
+        "T00022",
+        "T00023",
+        "T00024",
+        "T00025",
+        "T00026",
+        "T00027",
+        "T00028",
+        "T00029",
+        "T00030",
+        "T00031",
+        "T00032",
+        "T00033",
+        "T00034",
+        "T00035",
+        "T00036",
+        "T00037",
+        "T00038",
+        "T00039",
+        "T00040",
+        "T00041",
+        "T00042",
+        "T00043",
+        "T00044",
+        "T00045",
+        "T00046",
+        "T00047",
+        "T00048",
+        "T00049",
+        "T00050",
+        "T00051",
+        "T00052",
+        "T00053",
+        "T00054",
+        "T00055",
+        "T00056",
+        "T00057",
+        "T00058",
+        "T00059",
+        "T00060",
+        "T00061",
+        "T00062",
+        "T00063",
+        "T00064",
+        "T00065",
+        "T00066",
+        "T00067",
+        "T00068",
+        "T00069",
+        "T00070",
+        "T00071",
+        "T00072",
+        "T00073",
+        "T00074",
+        "T00075",
+        "T00076",
+        "T00077",
+        "T00078",
+        "T00079",
+        "T00080",
+        "T00081",
+        "T00082",
+        "T00083",
+        "T00084",
+        "T00085",
+        "T00086",
+        "T00087",
+        "T00088",
+        "T00089",
+        "T00090",
+        "T00091",
+        "T00092",
+        "T00093",
+        "T00094",
+        "T00095",
+        "T00096",
+        "T00097",
+        "T00098",
+        "T00099",
+        "T00100",
+        "T00101",
+        "T00102",
+        "T00103",
+        "T00104",
+        "T00105",
+        "T00106",
+        "T00107",
+        "T00108",
+        "T00109",
+        "T00110",
+        "T00111",
+        "T00112",
+        "T00113",
+        "T00114",
+        "T00115",
+        "T00116",
+        "T00117",
+        "T00118",
+        "T00119",
+        "T00120",
+        "T00121",
+        "T00122",
+        "T00123",
+        "T00124",
+        "T00125",
+        "T00126",
+        "T00127",
+        "T00128",
+        "T00129",
+        "T00130",
+        "T00131",
+        "T00132",
+        "T00133",
+        "T00134",
+        "T00135",
+        "T00136",
+        "T00137",
+        "T00138",
+        "T00139",
+        "T00140",
+        "T00141",
+        "T00142",
+        "T00143",
+        "T00144",
+        "T00145",
+        "T00146",
+        "T00147",
+        "T00148",
+        "T00149",
+        "T00150",
+        "T00151",
+        "T00152",
+        "T00153",
+        "T00154",
+        "T00155",
+        "T00156",
+        "T00157",
+        "T00158",
+        "T00159",
+        "T00160",
+        "T00161",
+        "T00162",
+        "T00163",
+        "T00164",
+        "T00165",
+        "T00166",
+        "T00167",
+        "T00168",
+        "T00169",
+        "T00170",
+        "T00171",
+        "T00172",
+        "T00173",
+        "T00174",
+        "T00175",
+        "T00176",
+        "T00177",
+        "T00178",
+        "T00179",
+        "T00180",
+        "T00181",
+        "T00182",
+        "T00183",
+        "T00184",
+        "T00185",
+        "T00186"
+      ],
+      "variant_count": 62,
+      "variants": [
+        {
+          "comparator": "<",
+          "threshold": "0.1",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<",
+          "threshold": "0.75",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<",
+          "threshold": "1.25",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<",
+          "threshold": "1e-09",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<",
+          "threshold": "2e-06",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<",
+          "threshold": "600000",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.011939",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.022027",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.041003",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.1",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.15",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.2",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1.25",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "15",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1e-05",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1e-07",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "2",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "20",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "214",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "307200",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "5",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "60",
+          "units": "ratio"
+        },
+        {
+          "comparator": "==",
+          "threshold": "0",
+          "units": "ratio"
+        },
+        {
+          "comparator": "==",
+          "threshold": "0.1",
+          "units": "ratio"
+        },
+        {
+          "comparator": "==",
+          "threshold": "1",
+          "units": "ratio"
+        },
+        {
+          "comparator": "==",
+          "threshold": "2",
+          "units": "ratio"
+        },
+        {
+          "comparator": "==",
+          "threshold": "240",
+          "units": "ratio"
+        },
+        {
+          "comparator": "==",
+          "threshold": "270",
+          "units": "ratio"
+        },
+        {
+          "comparator": "==",
+          "threshold": "30",
+          "units": "ratio"
+        },
+        {
+          "comparator": "==",
+          "threshold": "300",
+          "units": "ratio"
+        },
+        {
+          "comparator": "==",
+          "threshold": "359140",
+          "units": "ratio"
+        },
+        {
+          "comparator": "==",
+          "threshold": "908",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">",
+          "threshold": "0",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">",
+          "threshold": "0.3",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">",
+          "threshold": "50",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "-1e-10",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.00084092374891",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.000910115020815",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.0947284459377",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.1",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.100699869792",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.2",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.25",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.3",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.5",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.75",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.9",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.95",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "1",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "1.25",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "10",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "200",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "3",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "300",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "32099",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "600000",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "7",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "78753",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "80",
+          "units": "ratio"
+        }
+      ]
+    },
+    {
+      "conflict_type": "MULTIPLE_NUMERIC_OR_COMPARATOR_VARIANTS",
+      "metric_name": "deadline",
+      "resolution": "retain provenance and applicability; no universal gate inferred",
+      "source_row_ids": [
+        "T00187",
+        "T00188",
+        "T00189",
+        "T00190",
+        "T00191",
+        "T00192",
+        "T00193",
+        "T00194",
+        "T00195",
+        "T00196",
+        "T00197",
+        "T00198",
+        "T00199",
+        "T00200",
+        "T00201",
+        "T00202"
+      ],
+      "variant_count": 10,
+      "variants": [
+        {
+          "comparator": "<=",
+          "threshold": "120",
+          "units": "s"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1200",
+          "units": "s"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "180",
+          "units": "s"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1800",
+          "units": "s"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "30",
+          "units": "s"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "300",
+          "units": "s"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "45",
+          "units": "s"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "8",
+          "units": "s"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "900",
+          "units": "s"
+        },
+        {
+          "comparator": ">",
+          "threshold": "0.05",
+          "units": "s"
+        }
+      ]
+    },
+    {
+      "conflict_type": "MULTIPLE_NUMERIC_OR_COMPARATOR_VARIANTS",
+      "metric_name": "delta1",
+      "resolution": "retain provenance and applicability; no universal gate inferred",
+      "source_row_ids": [
+        "T00203",
+        "T00204",
+        "T00205",
+        "T00206",
+        "T00207",
+        "T00208",
+        "T00209",
+        "T00210",
+        "T00211",
+        "T00212",
+        "T00213",
+        "T00214",
+        "T00215",
+        "T00216",
+        "T00217",
+        "T00218"
+      ],
+      "variant_count": 4,
+      "variants": [
+        {
+          "comparator": "<",
+          "threshold": "0.75",
+          "units": "ratio"
+        },
+        {
+          "comparator": "==",
+          "threshold": "0.75",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.025",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.75",
+          "units": "ratio"
+        }
+      ]
+    },
+    {
+      "conflict_type": "MULTIPLE_NUMERIC_OR_COMPARATOR_VARIANTS",
+      "metric_name": "dt",
+      "resolution": "retain provenance and applicability; no universal gate inferred",
+      "source_row_ids": [
+        "T00219",
+        "T00220",
+        "T00221",
+        "T00222",
+        "T00223"
+      ],
+      "variant_count": 4,
+      "variants": [
+        {
+          "comparator": "<=",
+          "threshold": "0.03",
+          "units": "s"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.1",
+          "units": "s"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "800",
+          "units": "s"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "773",
+          "units": "s"
+        }
+      ]
+    },
+    {
+      "conflict_type": "MULTIPLE_NUMERIC_OR_COMPARATOR_VARIANTS",
+      "metric_name": "false_free",
+      "resolution": "retain provenance and applicability; no universal gate inferred",
+      "source_row_ids": [
+        "T00224",
+        "T00225",
+        "T00226"
+      ],
+      "variant_count": 3,
+      "variants": [
+        {
+          "comparator": "<",
+          "threshold": "0.11",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.25",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.11",
+          "units": "count_or_native_unit"
+        }
+      ]
+    },
+    {
+      "conflict_type": "MULTIPLE_NUMERIC_OR_COMPARATOR_VARIANTS",
+      "metric_name": "gaussian_count",
+      "resolution": "retain provenance and applicability; no universal gate inferred",
+      "source_row_ids": [
+        "T00227",
+        "T00228",
+        "T00229",
+        "T00230",
+        "T00231",
+        "T00232",
+        "T00233",
+        "T00234",
+        "T00235",
+        "T00236",
+        "T00237"
+      ],
+      "variant_count": 8,
+      "variants": [
+        {
+          "comparator": "<",
+          "threshold": "0",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1e-06",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "==",
+          "threshold": "0",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "==",
+          "threshold": "2",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "==",
+          "threshold": "38",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "==",
+          "threshold": "5464102",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "==",
+          "threshold": "908",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "2",
+          "units": "count_or_native_unit"
+        }
+      ]
+    },
+    {
+      "conflict_type": "MULTIPLE_NUMERIC_OR_COMPARATOR_VARIANTS",
+      "metric_name": "median_depth_ratio",
+      "resolution": "retain provenance and applicability; no universal gate inferred",
+      "source_row_ids": [
+        "T00244",
+        "T00245",
+        "T00246",
+        "T00247",
+        "T00248",
+        "T00249",
+        "T00250",
+        "T00251",
+        "T00252",
+        "T00253",
+        "T00254",
+        "T00255",
+        "T00256"
+      ],
+      "variant_count": 6,
+      "variants": [
+        {
+          "comparator": "<=",
+          "threshold": "1.25",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1e-08",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "3",
+          "units": "ratio"
+        },
+        {
+          "comparator": "==",
+          "threshold": "0",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.8",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "8",
+          "units": "ratio"
+        }
+      ]
+    },
+    {
+      "conflict_type": "MULTIPLE_NUMERIC_OR_COMPARATOR_VARIANTS",
+      "metric_name": "nonfinite_count",
+      "resolution": "retain provenance and applicability; no universal gate inferred",
+      "source_row_ids": [
+        "T00257",
+        "T00258",
+        "T00259",
+        "T00260",
+        "T00261",
+        "T00262",
+        "T00263",
+        "T00264",
+        "T00265",
+        "T00266",
+        "T00267",
+        "T00268",
+        "T00269",
+        "T00270",
+        "T00271",
+        "T00272",
+        "T00273",
+        "T00274",
+        "T00275",
+        "T00276",
+        "T00277",
+        "T00278",
+        "T00279",
+        "T00280",
+        "T00281",
+        "T00282",
+        "T00283",
+        "T00284",
+        "T00285",
+        "T00286",
+        "T00287",
+        "T00288",
+        "T00289",
+        "T00290",
+        "T00291",
+        "T00292",
+        "T00293",
+        "T00294",
+        "T00295",
+        "T00296",
+        "T00297",
+        "T00298",
+        "T00299",
+        "T00300",
+        "T00301",
+        "T00302",
+        "T00303",
+        "T00304",
+        "T00305",
+        "T00306",
+        "T00307",
+        "T00308",
+        "T00309",
+        "T00310",
+        "T00311",
+        "T00312",
+        "T00313",
+        "T00314",
+        "T00315",
+        "T00316",
+        "T00317",
+        "T00318",
+        "T00319",
+        "T00320",
+        "T00321",
+        "T00322",
+        "T00323",
+        "T00324",
+        "T00325",
+        "T00326",
+        "T00327",
+        "T00328",
+        "T00329",
+        "T00330",
+        "T00331",
+        "T00332",
+        "T00333",
+        "T00334",
+        "T00335",
+        "T00336",
+        "T00337",
+        "T00338",
+        "T00339",
+        "T00340",
+        "T00341",
+        "T00342",
+        "T00343"
+      ],
+      "variant_count": 66,
+      "variants": [
+        {
+          "comparator": "<",
+          "threshold": "-1e-08",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<",
+          "threshold": "0",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<",
+          "threshold": "10",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "-1",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.001",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.0126951159909",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.0250648260117",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.05",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.1",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.15",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.3",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1e-05",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1e-06",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1e-07",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1e-08",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1e-09",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "200",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "==",
+          "threshold": "0",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "==",
+          "threshold": "2",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": "==",
+          "threshold": "8",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">",
+          "threshold": "0",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">",
+          "threshold": "1",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">",
+          "threshold": "1e-05",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">",
+          "threshold": "1e-06",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">",
+          "threshold": "1e-08",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">",
+          "threshold": "51",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">",
+          "threshold": "58",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">",
+          "threshold": "59",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "-1.55705492944e-09",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "1",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "1.62981450558e-09",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "10.2793961389",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "10.5291007796",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "100",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "11.5826891247",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "12.7408481739",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "14.3713285001",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "15.812389112",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "15.8151545986",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "16.2685157877",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "17.0357758533",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "17.3972047899",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "17.7841369374",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "18.3021648604",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "22.0364052324",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "22.0581883379",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "22.6790286634",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "24.4940116037",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "24.7862939506",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "26.9430515558",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "27.8921140418",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "28.4171839347",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "32.5265715157",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "33.6027682026",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "34.2308999708",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "34.7833267539",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "36.8559176715",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "37.4422486839",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "40.2084020561",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "6.50584904538",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "61.6473638131",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "62.2487092353",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "7.72460370729",
+          "units": "count_or_native_unit"
+        }
+      ]
+    },
+    {
+      "conflict_type": "MULTIPLE_NUMERIC_OR_COMPARATOR_VARIANTS",
+      "metric_name": "one_sided_clearance",
+      "resolution": "retain provenance and applicability; no universal gate inferred",
+      "source_row_ids": [
+        "T00344",
+        "T00345",
+        "T00346",
+        "T00347",
+        "T00348",
+        "T00349",
+        "T00350",
+        "T00351",
+        "T00352",
+        "T00353",
+        "T00354",
+        "T00355",
+        "T00356",
+        "T00357",
+        "T00358",
+        "T00359",
+        "T00360",
+        "T00361",
+        "T00362",
+        "T00363",
+        "T00364",
+        "T00365",
+        "T00366"
+      ],
+      "variant_count": 19,
+      "variants": [
+        {
+          "comparator": "<",
+          "threshold": "0",
+          "units": "m"
+        },
+        {
+          "comparator": "<",
+          "threshold": "20",
+          "units": "m"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0",
+          "units": "m"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.2",
+          "units": "m"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1e-08",
+          "units": "m"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.000936710145051",
+          "units": "m"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.00110917964139",
+          "units": "m"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.00120725479881",
+          "units": "m"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.00178066678253",
+          "units": "m"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.0623528346868",
+          "units": "m"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.0627029686756",
+          "units": "m"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.063074331372",
+          "units": "m"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.0945704495141",
+          "units": "m"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.138663849453",
+          "units": "m"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.138765634154",
+          "units": "m"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.17652862383",
+          "units": "m"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.195303742103",
+          "units": "m"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "1836.19697837",
+          "units": "m"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "20",
+          "units": "m"
+        }
+      ]
+    },
+    {
+      "conflict_type": "MULTIPLE_NUMERIC_OR_COMPARATOR_VARIANTS",
+      "metric_name": "point_to_mesh",
+      "resolution": "retain provenance and applicability; no universal gate inferred",
+      "source_row_ids": [
+        "T00367",
+        "T00368",
+        "T00369",
+        "T00370",
+        "T00371"
+      ],
+      "variant_count": 3,
+      "variants": [
+        {
+          "comparator": "<=",
+          "threshold": "1e-06",
+          "units": "m"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0",
+          "units": "m"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.12",
+          "units": "m"
+        }
+      ]
+    },
+    {
+      "conflict_type": "MULTIPLE_NUMERIC_OR_COMPARATOR_VARIANTS",
+      "metric_name": "renderer_acceptance_alpha",
+      "resolution": "retain provenance and applicability; no universal gate inferred",
+      "source_row_ids": [
+        "T00382",
+        "T00383",
+        "T00384",
+        "T00385",
+        "T00386",
+        "T00387",
+        "T00388",
+        "T00389",
+        "T00390",
+        "T00391",
+        "T00392",
+        "T00393",
+        "T00394",
+        "T00395",
+        "T00396",
+        "T00397",
+        "T00398",
+        "T00399",
+        "T00400",
+        "T00401",
+        "T00402",
+        "T00403",
+        "T00404",
+        "T00405",
+        "T00406",
+        "T00407",
+        "T00408",
+        "T00409",
+        "T00410",
+        "T00411",
+        "T00412",
+        "T00413",
+        "T00414",
+        "T00415",
+        "T00416",
+        "T00417",
+        "T00418",
+        "T00419",
+        "T00420",
+        "T00421",
+        "T00422",
+        "T00423",
+        "T00424",
+        "T00425",
+        "T00426",
+        "T00427",
+        "T00428",
+        "T00429",
+        "T00430",
+        "T00431",
+        "T00432",
+        "T00433",
+        "T00434",
+        "T00435",
+        "T00436",
+        "T00437",
+        "T00438",
+        "T00439",
+        "T00440",
+        "T00441",
+        "T00442",
+        "T00443"
+      ],
+      "variant_count": 35,
+      "variants": [
+        {
+          "comparator": "<",
+          "threshold": "0",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<",
+          "threshold": "0.0005",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<",
+          "threshold": "1e-06",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.015",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1.19209289551e-07",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1.78813934326e-07",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "12",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1e-05",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "2.38418579102e-07",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "2.98023223877e-07",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "3",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "3.33786010742e-06",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "3.57627868652e-07",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "32",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "4.76837158203e-07",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "5",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "5.96046447754e-08",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "6.55651092529e-07",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "8",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "8.94069671631e-08",
+          "units": "ratio"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "800",
+          "units": "ratio"
+        },
+        {
+          "comparator": "==",
+          "threshold": "0.005",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">",
+          "threshold": "0",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">",
+          "threshold": "1",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">",
+          "threshold": "10",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.00084092374891",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.000853186764289",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.00116996152792",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0.5",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "1",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "32",
+          "units": "ratio"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "35",
+          "units": "ratio"
+        }
+      ]
+    },
+    {
+      "conflict_type": "MULTIPLE_NUMERIC_OR_COMPARATOR_VARIANTS",
+      "metric_name": "robot_radius",
+      "resolution": "retain provenance and applicability; no universal gate inferred",
+      "source_row_ids": [
+        "T00444",
+        "T00445",
+        "T00446",
+        "T00447",
+        "T00448",
+        "T00449",
+        "T00450",
+        "T00451",
+        "T00452",
+        "T00453",
+        "T00454"
+      ],
+      "variant_count": 4,
+      "variants": [
+        {
+          "comparator": "<=",
+          "threshold": "0",
+          "units": "m"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.015",
+          "units": "m"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.05",
+          "units": "m"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.1",
+          "units": "m"
+        }
+      ]
+    },
+    {
+      "conflict_type": "MULTIPLE_NUMERIC_OR_COMPARATOR_VARIANTS",
+      "metric_name": "runtime",
+      "resolution": "retain provenance and applicability; no universal gate inferred",
+      "source_row_ids": [
+        "T00455",
+        "T00456",
+        "T00457",
+        "T00458",
+        "T00459",
+        "T00460",
+        "T00461",
+        "T00462",
+        "T00463",
+        "T00464"
+      ],
+      "variant_count": 9,
+      "variants": [
+        {
+          "comparator": "<",
+          "threshold": "0",
+          "units": "s"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "0.01",
+          "units": "s"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "1e-05",
+          "units": "s"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "2.52367026218e-07",
+          "units": "s"
+        },
+        {
+          "comparator": "<=",
+          "threshold": "900",
+          "units": "s"
+        },
+        {
+          "comparator": "==",
+          "threshold": "0",
+          "units": "s"
+        },
+        {
+          "comparator": "==",
+          "threshold": "1",
+          "units": "s"
+        },
+        {
+          "comparator": "==",
+          "threshold": "6",
+          "units": "s"
+        },
+        {
+          "comparator": ">",
+          "threshold": "0.001",
+          "units": "s"
+        }
+      ]
+    },
+    {
+      "conflict_type": "MULTIPLE_NUMERIC_OR_COMPARATOR_VARIANTS",
+      "metric_name": "train_size",
+      "resolution": "retain provenance and applicability; no universal gate inferred",
+      "source_row_ids": [
+        "T00467",
+        "T00468",
+        "T00469",
+        "T00470"
+      ],
+      "variant_count": 2,
+      "variants": [
+        {
+          "comparator": "<=",
+          "threshold": "60",
+          "units": "count_or_native_unit"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "200",
+          "units": "count_or_native_unit"
+        }
+      ]
+    },
+    {
+      "conflict_type": "MULTIPLE_NUMERIC_OR_COMPARATOR_VARIANTS",
+      "metric_name": "vmax",
+      "resolution": "retain provenance and applicability; no universal gate inferred",
+      "source_row_ids": [
+        "T00476",
+        "T00477",
+        "T00478",
+        "T00479",
+        "T00480",
+        "T00481",
+        "T00482"
+      ],
+      "variant_count": 2,
+      "variants": [
+        {
+          "comparator": "<=",
+          "threshold": "0.1",
+          "units": "m/s"
+        },
+        {
+          "comparator": ">=",
+          "threshold": "0",
+          "units": "m/s"
+        }
+      ]
+    }
+  ]
+}

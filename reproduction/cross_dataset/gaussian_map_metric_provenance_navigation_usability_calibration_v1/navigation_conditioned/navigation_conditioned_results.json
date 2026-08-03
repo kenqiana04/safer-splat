@@ -1,0 +1,149 @@
+{
+  "evaluated_map_count": 1,
+  "maps": [
+    {
+      "controller_executed": false,
+      "global_metric_used_as_navigation_gate": false,
+      "map_id": "REPLICA_GT_FINE",
+      "navigation_conditioned_evaluable": true,
+      "requirements": {
+        "independent_reference": true,
+        "legal_route_registry": true,
+        "robot_contract": true
+      },
+      "route_tube": "existing frozen route/swept-body contract",
+      "status": "HISTORICAL_POSITIVE_CONTROL_CONTRACT_AVAILABLE_NO_NEW_ROLLOUT"
+    },
+    {
+      "controller_executed": false,
+      "global_metric_used_as_navigation_gate": false,
+      "map_id": "TUM_SPLATFACTO_NEGATIVE",
+      "navigation_conditioned_evaluable": false,
+      "requirements": {
+        "independent_reference": false,
+        "legal_route_registry": false,
+        "robot_contract": false
+      },
+      "route_tube": "NOT_DEFINED",
+      "status": "N0_NOT_EVALUABLE"
+    },
+    {
+      "controller_executed": false,
+      "global_metric_used_as_navigation_gate": false,
+      "map_id": "REPLICA_SPLATFACTO",
+      "navigation_conditioned_evaluable": false,
+      "requirements": {
+        "independent_reference": false,
+        "legal_route_registry": false,
+        "robot_contract": false
+      },
+      "route_tube": "NOT_DEFINED",
+      "status": "N0_NOT_EVALUABLE"
+    },
+    {
+      "controller_executed": false,
+      "global_metric_used_as_navigation_gate": false,
+      "map_id": "TUM_SPLATAM_FORMAL",
+      "navigation_conditioned_evaluable": false,
+      "requirements": {
+        "independent_reference": false,
+        "legal_route_registry": false,
+        "robot_contract": false
+      },
+      "route_tube": "NOT_DEFINED",
+      "status": "N0_NOT_EVALUABLE"
+    },
+    {
+      "controller_executed": false,
+      "global_metric_used_as_navigation_gate": false,
+      "map_id": "TUM_GAUSSIAN_SLAM",
+      "navigation_conditioned_evaluable": false,
+      "requirements": {
+        "independent_reference": false,
+        "legal_route_registry": false,
+        "robot_contract": false
+      },
+      "route_tube": "NOT_DEFINED",
+      "status": "N0_NOT_EVALUABLE"
+    },
+    {
+      "controller_executed": false,
+      "global_metric_used_as_navigation_gate": false,
+      "map_id": "REPLICA_SPLATAM_60",
+      "navigation_conditioned_evaluable": false,
+      "requirements": {
+        "independent_reference": true,
+        "legal_route_registry": false,
+        "robot_contract": false
+      },
+      "route_tube": "NOT_DEFINED",
+      "status": "N0_NOT_EVALUABLE"
+    },
+    {
+      "controller_executed": false,
+      "global_metric_used_as_navigation_gate": false,
+      "map_id": "ARKITSCENES_M1_SPLATAM",
+      "navigation_conditioned_evaluable": false,
+      "requirements": {
+        "independent_reference": true,
+        "legal_route_registry": false,
+        "robot_contract": false
+      },
+      "route_tube": "NOT_DEFINED",
+      "status": "N0_NOT_EVALUABLE"
+    },
+    {
+      "controller_executed": false,
+      "global_metric_used_as_navigation_gate": false,
+      "map_id": "SAFER_OFFICIAL_FLIGHT",
+      "navigation_conditioned_evaluable": false,
+      "requirements": {
+        "independent_reference": false,
+        "legal_route_registry": false,
+        "robot_contract": false
+      },
+      "route_tube": "NOT_DEFINED",
+      "status": "N0_NOT_EVALUABLE"
+    },
+    {
+      "controller_executed": false,
+      "global_metric_used_as_navigation_gate": false,
+      "map_id": "SAFER_OFFICIAL_OLD_UNION2",
+      "navigation_conditioned_evaluable": false,
+      "requirements": {
+        "independent_reference": false,
+        "legal_route_registry": false,
+        "robot_contract": false
+      },
+      "route_tube": "NOT_DEFINED",
+      "status": "N0_NOT_EVALUABLE"
+    },
+    {
+      "controller_executed": false,
+      "global_metric_used_as_navigation_gate": false,
+      "map_id": "SAFER_OFFICIAL_STATUES",
+      "navigation_conditioned_evaluable": false,
+      "requirements": {
+        "independent_reference": false,
+        "legal_route_registry": false,
+        "robot_contract": false
+      },
+      "route_tube": "NOT_DEFINED",
+      "status": "N0_NOT_EVALUABLE"
+    },
+    {
+      "controller_executed": false,
+      "global_metric_used_as_navigation_gate": false,
+      "map_id": "SAFER_OFFICIAL_STONEHENGE",
+      "navigation_conditioned_evaluable": false,
+      "requirements": {
+        "independent_reference": false,
+        "legal_route_registry": false,
+        "robot_contract": false
+      },
+      "route_tube": "NOT_DEFINED",
+      "status": "N0_NOT_EVALUABLE"
+    }
+  ],
+  "new_navigation_conclusion_count": 0
+}

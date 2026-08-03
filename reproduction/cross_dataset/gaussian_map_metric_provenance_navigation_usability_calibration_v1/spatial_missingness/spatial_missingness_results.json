@@ -1,0 +1,28 @@
+{
+  "claim_boundary": "Held-out rays characterize only the observable camera domain; no full-space occupancy claim.",
+  "maps": [
+    {
+      "3d_clusters": "NOT_EVALUABLE_NO_RETAINED_BACKPROJECTED_UNKNOWN_POINTS",
+      "border_vs_interior": "NOT_EVALUABLE",
+      "contiguous_2d_components": "NOT_EVALUABLE_NO_RETAINED_BINARY_MASKS",
+      "frame_count": 53,
+      "frames_below_legacy_coverage_0_95": 46,
+      "global_missing_fraction": 0.1990014275109918,
+      "macro_frame_missing_fraction": 0.21303855735525234,
+      "map_id": "ARKITSCENES_M1_SPLATAM",
+      "range_bins": "NOT_EVALUABLE",
+      "robot_height_band": "NOT_EVALUABLE",
+      "status": "FRAME_LEVEL_OBSERVABLE_MISSINGNESS_ONLY",
+      "worst_5pct_frame_missing_fraction": 0.787136476051123,
+      "worst_frame_missing_fraction": 0.8203896371835303
+    },
+    {
+      "map_id": "REPLICA_SPLATAM_60",
+      "status": "NOT_EVALUABLE_NO_PER_FRAME_SUPPORT_SUMMARY"
+    },
+    {
+      "map_id": "REPLICA_SPLATFACTO",
+      "status": "NOT_EVALUABLE_NO_PER_FRAME_SUPPORT_SUMMARY"
+    }
+  ]
+}

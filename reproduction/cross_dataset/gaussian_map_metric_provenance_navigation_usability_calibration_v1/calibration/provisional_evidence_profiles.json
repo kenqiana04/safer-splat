@@ -1,0 +1,122 @@
+{
+  "calibration": {
+    "audit_candidates": [
+      "TUM_SPLATAM_FORMAL",
+      "TUM_GAUSSIAN_SLAM",
+      "REPLICA_SPLATAM_60",
+      "ARKITSCENES_M1_SPLATAM"
+    ],
+    "candidate_used_to_fit_gate": false,
+    "global_numeric_gate_decision": "NO_UNIVERSAL_NUMERIC_GATE_JUSTIFIED_BY_CURRENT_EVIDENCE",
+    "leave_one_dataset_out": "NOT_JUSTIFIED_TOO_FEW_INDEPENDENT_CONTROLS",
+    "leave_one_map_out": "NOT_JUSTIFIED_TOO_FEW_INDEPENDENT_CONTROLS",
+    "negative_controls": [
+      "TUM_SPLATFACTO_NEGATIVE",
+      "REPLICA_SPLATFACTO"
+    ],
+    "positive_controls": [
+      "REPLICA_GT_FINE"
+    ]
+  },
+  "profiles": [
+    {
+      "SAFETY_QUERY_COMPATIBLE": true,
+      "map_id": "REPLICA_GT_FINE",
+      "navigation_axis": "N3_LIMITED_DOMAIN_NAVIGATION_QUALIFIED",
+      "new_pass_granted": false,
+      "note": "positive control; historical certification preserved, not newly granted",
+      "provisional_only": true,
+      "reconstruction_axis": "R2_GLOBAL_RECONSTRUCTION_CANDIDATE"
+    },
+    {
+      "SAFETY_QUERY_COMPATIBLE": true,
+      "map_id": "TUM_SPLATFACTO_NEGATIVE",
+      "navigation_axis": "N0_NOT_EVALUABLE",
+      "new_pass_granted": false,
+      "note": "negative geometry control",
+      "provisional_only": true,
+      "reconstruction_axis": "R1_DIAGNOSTIC_RECONSTRUCTION"
+    },
+    {
+      "SAFETY_QUERY_COMPATIBLE": true,
+      "map_id": "REPLICA_SPLATFACTO",
+      "navigation_axis": "N0_NOT_EVALUABLE",
+      "new_pass_granted": false,
+      "note": "negative geometry control",
+      "provisional_only": true,
+      "reconstruction_axis": "R1_DIAGNOSTIC_RECONSTRUCTION"
+    },
+    {
+      "SAFETY_QUERY_COMPATIBLE": true,
+      "map_id": "TUM_SPLATAM_FORMAL",
+      "navigation_axis": "N1_NAVIGATION_DIAGNOSTIC_ONLY",
+      "new_pass_granted": false,
+      "note": "geometry and progress limitation must remain separate",
+      "provisional_only": true,
+      "reconstruction_axis": "R1_DIAGNOSTIC_RECONSTRUCTION"
+    },
+    {
+      "SAFETY_QUERY_COMPATIBLE": true,
+      "map_id": "TUM_GAUSSIAN_SLAM",
+      "navigation_axis": "N1_NAVIGATION_DIAGNOSTIC_ONLY",
+      "new_pass_granted": false,
+      "note": "adapter/query evidence; physical route budget absent",
+      "provisional_only": true,
+      "reconstruction_axis": "R1_DIAGNOSTIC_RECONSTRUCTION"
+    },
+    {
+      "SAFETY_QUERY_COMPATIBLE": true,
+      "map_id": "REPLICA_SPLATAM_60",
+      "navigation_axis": "N0_NOT_EVALUABLE",
+      "new_pass_granted": false,
+      "note": "LEGACY_SINGLE_THRESHOLD_BORDERLINE; no route registry",
+      "provisional_only": true,
+      "reconstruction_axis": "R1_DIAGNOSTIC_RECONSTRUCTION"
+    },
+    {
+      "SAFETY_QUERY_COMPATIBLE": false,
+      "map_id": "ARKITSCENES_M1_SPLATAM",
+      "navigation_axis": "N0_NOT_EVALUABLE",
+      "new_pass_granted": false,
+      "note": "legacy coverage-only failure; spatial unknown and route evidence unresolved",
+      "provisional_only": true,
+      "reconstruction_axis": "R1_DIAGNOSTIC_RECONSTRUCTION"
+    },
+    {
+      "SAFETY_QUERY_COMPATIBLE": true,
+      "map_id": "SAFER_OFFICIAL_FLIGHT",
+      "navigation_axis": "N0_NOT_EVALUABLE",
+      "new_pass_granted": false,
+      "note": "interface reference only",
+      "provisional_only": true,
+      "reconstruction_axis": "R1_DIAGNOSTIC_RECONSTRUCTION"
+    },
+    {
+      "SAFETY_QUERY_COMPATIBLE": true,
+      "map_id": "SAFER_OFFICIAL_OLD_UNION2",
+      "navigation_axis": "N0_NOT_EVALUABLE",
+      "new_pass_granted": false,
+      "note": "interface reference only",
+      "provisional_only": true,
+      "reconstruction_axis": "R1_DIAGNOSTIC_RECONSTRUCTION"
+    },
+    {
+      "SAFETY_QUERY_COMPATIBLE": true,
+      "map_id": "SAFER_OFFICIAL_STATUES",
+      "navigation_axis": "N0_NOT_EVALUABLE",
+      "new_pass_granted": false,
+      "note": "interface reference only",
+      "provisional_only": true,
+      "reconstruction_axis": "R1_DIAGNOSTIC_RECONSTRUCTION"
+    },
+    {
+      "SAFETY_QUERY_COMPATIBLE": true,
+      "map_id": "SAFER_OFFICIAL_STONEHENGE",
+      "navigation_axis": "N0_NOT_EVALUABLE",
+      "new_pass_granted": false,
+      "note": "interface reference only",
+      "provisional_only": true,
+      "reconstruction_axis": "R1_DIAGNOSTIC_RECONSTRUCTION"
+    }
+  ]
+}

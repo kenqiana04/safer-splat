@@ -1,0 +1,30 @@
+{
+  "checklist_sha256": "7c95f787fd7fb503e4bd2726546debac53acd41c1d5f9a8dd08c29cb27735593",
+  "checks": {
+    "decision_enums": true,
+    "fixed_alpha_complete": true,
+    "formula_enums": true,
+    "global_decision": true,
+    "gpu1_clean": true,
+    "heuristics_not_universal": true,
+    "ledger_nonempty": true,
+    "legacy_status_preserved": true,
+    "map_immutable": true,
+    "no_candidate_gate_fit": true,
+    "no_execution_boundary": true,
+    "no_new_pass": true,
+    "protocol_contracts": true,
+    "report_answers": true,
+    "required_data": true,
+    "required_scripts": true,
+    "threshold_enums": true,
+    "tracked_scope_only": true,
+    "twenty_png_figures": true
+  },
+  "map_specific_not_evaluable_is_not_task_blocker": true,
+  "pass": true,
+  "protocol_v2_sha256": "a0a02fd284c75c600095510899e2878f198d69ff088b66eccd3313275fdbde7e",
+  "report_sha256": "9b0743571d6df1e4d4063c7d114a7ebb99d8a4092c4cdbda9384720e121d1678",
+  "status": "PASS_GAUSSIAN_MAP_METRIC_PROVENANCE_AND_NAVIGATION_USABILITY_CALIBRATION_V1",
+  "unresolved_critical_evidence": []
+}

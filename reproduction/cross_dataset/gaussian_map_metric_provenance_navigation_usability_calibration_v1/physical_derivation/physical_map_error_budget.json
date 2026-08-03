@@ -1,0 +1,176 @@
+{
+  "maps": [
+    {
+      "B_map_available_formula": "m_ref-epsilon_loc-epsilon_shape-epsilon_sampled-epsilon_stop-epsilon_tracking",
+      "e_plus_formula": "max(0,d_map-d_ref)",
+      "empirical_p99_is_certificate": false,
+      "m_ref_formula": "d_ref-r_robot",
+      "map_id": "REPLICA_GT_FINE",
+      "missing_allowance_sources": [],
+      "status": "HISTORICAL_CONTRACT_PRESENT_REQUIRES_RETROSPECTIVE_V2_BOUND_RECHECK",
+      "upper_bound_kind": "historical deterministic frozen-sample evidence; not re-certified here"
+    },
+    {
+      "B_map_available_formula": "m_ref-epsilon_loc-epsilon_shape-epsilon_sampled-epsilon_stop-epsilon_tracking",
+      "e_plus_formula": "max(0,d_map-d_ref)",
+      "empirical_p99_is_certificate": false,
+      "m_ref_formula": "d_ref-r_robot",
+      "map_id": "TUM_SPLATFACTO_NEGATIVE",
+      "missing_allowance_sources": [
+        "epsilon_loc",
+        "epsilon_shape",
+        "epsilon_sampled",
+        "epsilon_stop",
+        "epsilon_tracking"
+      ],
+      "status": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+      "upper_bound_kind": "UNRESOLVED"
+    },
+    {
+      "B_map_available_formula": "m_ref-epsilon_loc-epsilon_shape-epsilon_sampled-epsilon_stop-epsilon_tracking",
+      "e_plus_formula": "max(0,d_map-d_ref)",
+      "empirical_p99_is_certificate": false,
+      "m_ref_formula": "d_ref-r_robot",
+      "map_id": "REPLICA_SPLATFACTO",
+      "missing_allowance_sources": [
+        "epsilon_loc",
+        "epsilon_shape",
+        "epsilon_sampled",
+        "epsilon_stop",
+        "epsilon_tracking"
+      ],
+      "status": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+      "upper_bound_kind": "UNRESOLVED"
+    },
+    {
+      "B_map_available_formula": "m_ref-epsilon_loc-epsilon_shape-epsilon_sampled-epsilon_stop-epsilon_tracking",
+      "e_plus_formula": "max(0,d_map-d_ref)",
+      "empirical_p99_is_certificate": false,
+      "m_ref_formula": "d_ref-r_robot",
+      "map_id": "TUM_SPLATAM_FORMAL",
+      "missing_allowance_sources": [
+        "epsilon_loc",
+        "epsilon_shape",
+        "epsilon_sampled",
+        "epsilon_stop",
+        "epsilon_tracking"
+      ],
+      "status": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+      "upper_bound_kind": "UNRESOLVED"
+    },
+    {
+      "B_map_available_formula": "m_ref-epsilon_loc-epsilon_shape-epsilon_sampled-epsilon_stop-epsilon_tracking",
+      "e_plus_formula": "max(0,d_map-d_ref)",
+      "empirical_p99_is_certificate": false,
+      "m_ref_formula": "d_ref-r_robot",
+      "map_id": "TUM_GAUSSIAN_SLAM",
+      "missing_allowance_sources": [
+        "epsilon_loc",
+        "epsilon_shape",
+        "epsilon_sampled",
+        "epsilon_stop",
+        "epsilon_tracking"
+      ],
+      "status": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+      "upper_bound_kind": "UNRESOLVED"
+    },
+    {
+      "B_map_available_formula": "m_ref-epsilon_loc-epsilon_shape-epsilon_sampled-epsilon_stop-epsilon_tracking",
+      "e_plus_formula": "max(0,d_map-d_ref)",
+      "empirical_p99_is_certificate": false,
+      "m_ref_formula": "d_ref-r_robot",
+      "map_id": "REPLICA_SPLATAM_60",
+      "missing_allowance_sources": [
+        "epsilon_loc",
+        "epsilon_shape",
+        "epsilon_sampled",
+        "epsilon_stop",
+        "epsilon_tracking"
+      ],
+      "status": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+      "upper_bound_kind": "UNRESOLVED"
+    },
+    {
+      "B_map_available_formula": "m_ref-epsilon_loc-epsilon_shape-epsilon_sampled-epsilon_stop-epsilon_tracking",
+      "e_plus_formula": "max(0,d_map-d_ref)",
+      "empirical_p99_is_certificate": false,
+      "m_ref_formula": "d_ref-r_robot",
+      "map_id": "ARKITSCENES_M1_SPLATAM",
+      "missing_allowance_sources": [
+        "epsilon_loc",
+        "epsilon_shape",
+        "epsilon_sampled",
+        "epsilon_stop",
+        "epsilon_tracking"
+      ],
+      "status": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+      "upper_bound_kind": "UNRESOLVED"
+    },
+    {
+      "B_map_available_formula": "m_ref-epsilon_loc-epsilon_shape-epsilon_sampled-epsilon_stop-epsilon_tracking",
+      "e_plus_formula": "max(0,d_map-d_ref)",
+      "empirical_p99_is_certificate": false,
+      "m_ref_formula": "d_ref-r_robot",
+      "map_id": "SAFER_OFFICIAL_FLIGHT",
+      "missing_allowance_sources": [
+        "epsilon_loc",
+        "epsilon_shape",
+        "epsilon_sampled",
+        "epsilon_stop",
+        "epsilon_tracking"
+      ],
+      "status": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+      "upper_bound_kind": "UNRESOLVED"
+    },
+    {
+      "B_map_available_formula": "m_ref-epsilon_loc-epsilon_shape-epsilon_sampled-epsilon_stop-epsilon_tracking",
+      "e_plus_formula": "max(0,d_map-d_ref)",
+      "empirical_p99_is_certificate": false,
+      "m_ref_formula": "d_ref-r_robot",
+      "map_id": "SAFER_OFFICIAL_OLD_UNION2",
+      "missing_allowance_sources": [
+        "epsilon_loc",
+        "epsilon_shape",
+        "epsilon_sampled",
+        "epsilon_stop",
+        "epsilon_tracking"
+      ],
+      "status": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+      "upper_bound_kind": "UNRESOLVED"
+    },
+    {
+      "B_map_available_formula": "m_ref-epsilon_loc-epsilon_shape-epsilon_sampled-epsilon_stop-epsilon_tracking",
+      "e_plus_formula": "max(0,d_map-d_ref)",
+      "empirical_p99_is_certificate": false,
+      "m_ref_formula": "d_ref-r_robot",
+      "map_id": "SAFER_OFFICIAL_STATUES",
+      "missing_allowance_sources": [
+        "epsilon_loc",
+        "epsilon_shape",
+        "epsilon_sampled",
+        "epsilon_stop",
+        "epsilon_tracking"
+      ],
+      "status": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+      "upper_bound_kind": "UNRESOLVED"
+    },
+    {
+      "B_map_available_formula": "m_ref-epsilon_loc-epsilon_shape-epsilon_sampled-epsilon_stop-epsilon_tracking",
+      "e_plus_formula": "max(0,d_map-d_ref)",
+      "empirical_p99_is_certificate": false,
+      "m_ref_formula": "d_ref-r_robot",
+      "map_id": "SAFER_OFFICIAL_STONEHENGE",
+      "missing_allowance_sources": [
+        "epsilon_loc",
+        "epsilon_shape",
+        "epsilon_sampled",
+        "epsilon_stop",
+        "epsilon_tracking"
+      ],
+      "status": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+      "upper_bound_kind": "UNRESOLVED"
+    }
+  ],
+  "resolved_count": 1,
+  "unresolved_count": 10
+}
