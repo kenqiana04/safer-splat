@@ -1,0 +1,21 @@
+{
+  "official_checkout_clean": true,
+  "official_head": "da6bbcd24c248dc884ac7f49d62e91b841b26ccc",
+  "patch_sha256": "18f03bd15fc8b8243c4dd1d092e15bc70e23df92913186124c80fba1a3f1c840",
+  "runtime_files": {
+    "arkitscenes_m1_dataset.py": {
+      "sha256": "84c9bea770a4ee9e5337f43865e3d86fd7104742ca5ee510df17c457b56881fd",
+      "size": 5553
+    },
+    "empty_depth_safe_splatam_compat.py": {
+      "sha256": "8930c9d2e5172d0c56e698a418b3f454171e6c9fd84e3079d1f7c3568436a6f3",
+      "size": 4804
+    },
+    "scripts/gaussian_splatting.py": {
+      "sha256": "541f2e23956452d5f8de39bd7ab83bdbc4b87e554198e315e56e527257fbf84e",
+      "size": 30433
+    }
+  },
+  "runtime_head": "da6bbcd24c248dc884ac7f49d62e91b841b26ccc",
+  "status": "PASS_TASK_OWNED_RUNTIME_INTEGRATION"
+}

@@ -1,0 +1,121 @@
+{
+  "files": {
+    "REPORT_RESUME_ARKITSCENES_SPLATAM_M1_SMOKE_AND_LEARNED_MAP_QUALIFICATION_V1.md": {
+      "sha256": "96ff7c2a3ae9f83730a73dbfed23cf382d59ea6a54da4e3aa197995a2048a673",
+      "size": 6676
+    },
+    "canonical_export/canonical_export_metadata.json": {
+      "sha256": "81101f24250cdee317e208bd595d599725024889320e9705eb6981d834204f51",
+      "size": 2366
+    },
+    "config/arkitscenes_m1_dataset.json": {
+      "sha256": "8ee98a8c7eeb5f1386e18f3374c3e27dfd113d5017b072c20b44680b5202114d",
+      "size": 718
+    },
+    "config/formal.py": {
+      "sha256": "49c2c085e04bb08d9edf10e12ed117e1fec4ddeac240c07f76761689f3ed05bc",
+      "size": 3167
+    },
+    "config/resolved_config_diff.json": {
+      "sha256": "aca45fa9c91945d22ab7b61f3a7adccf5067526a653b718108b587f12cbe3222",
+      "size": 7268
+    },
+    "config/smoke_a.py": {
+      "sha256": "203bc17c44253156d06b903cc99ba9a08c8d8800dfb7ba50be4a569b9c165d82",
+      "size": 3132
+    },
+    "config/smoke_b.py": {
+      "sha256": "72698e4d4f1bfcb6bcfa513027b932c1553b2e75bb2c6d8a8804e50e0dbc6d39",
+      "size": 3134
+    },
+    "downstream_handoff.json": {
+      "sha256": "38e97f47901272cbfa761d52a475f74584fc49575fd277146fafb575becccf75",
+      "size": 362
+    },
+    "evaluation/export_determinism.json": {
+      "sha256": "2a580bad25a83fb9c9b8ec84cb56edd058b252e21056e7411945cea770eec678",
+      "size": 5401
+    },
+    "evaluation/heldout_evaluation.json": {
+      "sha256": "24178a816ba979554dabcaba4f52698a794d53dde552a291ed838816f8ffbc75",
+      "size": 58494
+    },
+    "evaluation_freeze/registry_freeze.json": {
+      "sha256": "6ac5ac290463365a9daa7d6d3ccc30db406f00b34a13a04ef224b52cf6dd9a7f",
+      "size": 1653
+    },
+    "execution_lock.json": {
+      "sha256": "8dea43390816f92b03347a91b9c59ba28b822175b8bce25b7e578c7b9f865f54",
+      "size": 2761
+    },
+    "execution_lock.sha256": {
+      "sha256": "bc2ff11684535d5c71b276d7006bd473f0b9d70a3239b4abb8746d02e21a3331",
+      "size": 86
+    },
+    "formal/formal_validation.json": {
+      "sha256": "fcfdfafad9eb5a1a6bc26bf899ac15c972ad6bd20728e2ac0a32896a71dd0be0",
+      "size": 1042
+    },
+    "formal_attempt_record.json": {
+      "sha256": "0633f0d41a55f903e118be01526b3bef1a8955c87190dc25a1adb2505aabb299",
+      "size": 788
+    },
+    "input_identity_freeze.json": {
+      "sha256": "56892f67dc6dfe33a87021445c74519da41448d0f2de8c36f142a4777748592a",
+      "size": 898
+    },
+    "pr73_revalidation/real/first_frame_m1_validation.json": {
+      "sha256": "ae6335a223e4270ecec3e5011e598d9139b60ff9a3caa6c81ef0a9585b97bc7c",
+      "size": 167
+    },
+    "pr73_revalidation/real/nonempty_real_frame_equivalence.json": {
+      "sha256": "532e9a53c503fcf9c101f0d6fc2d657431c41c36af334ac7dddf3ee327e0af23",
+      "size": 29742
+    },
+    "pr73_revalidation/real/sequence_state_dry_run.json": {
+      "sha256": "71ad79dc6d49f6d42a38508eabe2a311e5d89a069342f1bf5656d9f55b8be2b9",
+      "size": 4071
+    },
+    "pr73_revalidation/real/zero_frame_real_validation.json": {
+      "sha256": "a9f2f3d3c954817c50438faa4a83da988f7325f117a522c3f550e7d69a722a7b",
+      "size": 3066
+    },
+    "pr73_revalidation/synthetic/nonempty_synthetic_equivalence.json": {
+      "sha256": "4a8abc2a5312a57fb9d0143315b2d11b6e5ededd1f633f88b1185eb437f0329d",
+      "size": 970
+    },
+    "pr73_revalidation/synthetic/zero_mask_synthetic_validation.json": {
+      "sha256": "98808fccc2e898250d53f948048ffc0ae50e824da0cc8e613fdb0f2ee72599c3",
+      "size": 2112
+    },
+    "run_manifest.json": {
+      "sha256": "50da60e62cd368e10e76736d88612f4a3bc8ac7e4dc812e770ade5ec04a590b5",
+      "size": 2083
+    },
+    "runtime_integration/applied.patch": {
+      "sha256": "18f03bd15fc8b8243c4dd1d092e15bc70e23df92913186124c80fba1a3f1c840",
+      "size": 5298
+    },
+    "runtime_integration/runtime_identity.json": {
+      "sha256": "d53f56ec2c8b40b89bfbafd41c36e78f685718615c6f5f0442937999c56d8c7d",
+      "size": 774
+    },
+    "selection.json": {
+      "sha256": "8e5763dbab573f8e1eb2f3dc9577f0784f555c4fd3fb5490c54f502ca27cc0d9",
+      "size": 232
+    },
+    "smoke/smoke_a_validation.json": {
+      "sha256": "c17b06b49d1b1e5c7aa4045d9cb36c85a20285c28dc9364230bc733b37378bf3",
+      "size": 987
+    },
+    "smoke/smoke_b_validation.json": {
+      "sha256": "ed678b5320cbda102f1a84e7551fa14be1f4583328da7ad5e5611a5667794433",
+      "size": 1009
+    },
+    "validation_result.json": {
+      "sha256": "6c2f7e53cfd35e326c0a5277132d3ebc5c252f32fbb5f340d089ce6d3c15b8cd",
+      "size": 572
+    }
+  },
+  "status": "NO_ARKITSCENES_M1_LEARNED_GAUSSIAN_MAP_QUALIFIED_UNDER_FROZEN_CONTRACT"
+}

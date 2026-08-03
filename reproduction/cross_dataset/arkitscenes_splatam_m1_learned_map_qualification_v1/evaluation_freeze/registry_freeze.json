@@ -1,0 +1,57 @@
+{
+  "clearance_counts": {
+    "free_space": 60000,
+    "hard": 53,
+    "heldout_rays": 29998,
+    "near_surface": 60000,
+    "total_deduplicated": 150051
+  },
+  "clearance_registry_sha256": "0c26376a7dcecda99c02b86a716f455513a41d816c7b14e1384054edba2c10c5",
+  "controller_count": 0,
+  "coordinate_frame": "SplaTAM metric world: inv(first TRAIN Apple C2W) @ Apple world",
+  "depth_gates": {
+    "absrel_max": 0.2,
+    "coverage_min": 0.95,
+    "delta1_min": 0.75,
+    "median_ratio_max": 1.25,
+    "median_ratio_min": 0.8,
+    "nonfinite_max": 0
+  },
+  "depth_primary": "GT_depth>0 and confidence>=1",
+  "depth_secondary": "GT_depth>0 and confidence==2 (report only)",
+  "g0_query_count": 256,
+  "g0_registry_sha256": "50fa0f07235554488cd29f6049cc1cbbf8689e14447d46e7d2a95c875fc3d96d",
+  "gaussian_depth": "camera-z alpha-composited expected depth; opacity>=0.5 valid; no fill",
+  "heldout_frame_count": 53,
+  "heldout_invisible_to_mapper": true,
+  "heldout_manifest_sha256": "7b65f741e901690f2a723579d75200eebe7b9e77b0cd57c030d4a14d0474c0c7",
+  "mesh_sha256": "857077ec5019c9efe349f78d561591f42386b60bfd83b912f76e54e47189e6d3",
+  "seed": 20260730,
+  "status": "PASS_PREMAPPING_EVALUATION_REGISTRY_FREEZE",
+  "world_from_apple": [
+    [
+      0.15325661313687453,
+      -0.9468423908420147,
+      -0.282846066674721,
+      0.10325300000024325
+    ],
+    [
+      -0.9875278203989497,
+      -0.1362984206909511,
+      -0.0788133520109221,
+      0.07621510000001322
+    ],
+    [
+      0.036072350461870586,
+      0.29139702713101917,
+      -0.9559218368211362,
+      -0.028108800000099844
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

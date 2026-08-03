@@ -1,0 +1,32 @@
+{
+  "checkpoint": false,
+  "frame_event_count": 13,
+  "gates": {
+    "all_parameter_arrays_finite": true,
+    "frame_events_complete": true,
+    "gaussian_count_positive": true,
+    "losses_finite": true,
+    "losses_present": true,
+    "nonempty_events_valid": true,
+    "official_render_eval_completed": true,
+    "official_render_plots_complete": true,
+    "params_exists": true,
+    "required_arrays": true,
+    "zero_added_count_exact": true,
+    "zero_depth_losses_exact": true,
+    "zero_events_exact": true,
+    "zero_frames_sampled_by_optimizer": true
+  },
+  "gaussian_count": 782185,
+  "loss_event_count": 7000,
+  "output_dir": "/disk1/zlab/maintenance_records/arkitscenes_splatam_m1_learned_map_qualification_v1/outputs/NONFORMAL_SMOKE_B_ROWS_70_82",
+  "params_sha256": "72808c031d8c0cf9e622bcd7b0ed4344f7fdf91d7801c3679a82a626d71e83a4",
+  "params_size": 37549288,
+  "pass": true,
+  "status": "PASS_SMOKE_MAPPER_RUN",
+  "zero_indices": [
+    76,
+    79
+  ],
+  "zero_loss_observation_count": 1088
+}

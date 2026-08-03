@@ -1,0 +1,47 @@
+{
+  "fixture_count": 120,
+  "gates": {
+    "dtype_coverage": true,
+    "fixture_count_ge_100": true,
+    "float32_max_abs_diff_le_1e_6": true,
+    "float64_max_abs_diff_le_1e_10": true,
+    "gradient_max_abs_diff_le_1e_6": true,
+    "invalid_position_gradients_zero": true,
+    "nonfinite_zero": true,
+    "valid_count_coverage": true
+  },
+  "loss_weights": {
+    "depth": 0.0,
+    "im": 1.0
+  },
+  "max_depth_value_diff": {
+    "float32": 0.0,
+    "float64": 0.0
+  },
+  "max_gradient_diff": {
+    "float32": 0.0,
+    "float64": 0.0
+  },
+  "max_invalid_gradient": {
+    "float32": 0.0,
+    "float64": 0.0
+  },
+  "max_total_diff": {
+    "float32": 0.0,
+    "float64": 0.0
+  },
+  "nonfinite_count": 0,
+  "optimizer_count": 0,
+  "parameter_update_count": 0,
+  "pass": true,
+  "seed": 20260730,
+  "status": "PASS_NONEMPTY_SYNTHETIC_EQUIVALENCE",
+  "synthetic_backward_count": 240,
+  "valid_count_classes": [
+    "all",
+    "medium",
+    "one",
+    "sparse",
+    "two"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "checkpoint": false,
+  "frame_event_count": 214,
+  "gates": {
+    "all_parameter_arrays_finite": true,
+    "frame_events_complete": true,
+    "gaussian_count_positive": true,
+    "losses_finite": true,
+    "losses_present": true,
+    "nonempty_events_valid": true,
+    "official_render_eval_completed": true,
+    "official_render_plots_complete": true,
+    "params_exists": true,
+    "required_arrays": true,
+    "zero_added_count_exact": true,
+    "zero_depth_losses_exact": true,
+    "zero_events_exact": true,
+    "zero_frames_sampled_by_optimizer": true
+  },
+  "gaussian_count": 6463948,
+  "loss_event_count": 7000,
+  "output_dir": "/disk1/zlab/maintenance_records/arkitscenes_splatam_m1_learned_map_qualification_v1/outputs/ARKITSCENES_SPLATAM_M1_EMPTY_DEPTH_SAFE_GT_POSE_MAP_ONLY_V1",
+  "params_sha256": "86ba75c9db0fab1a5eb7d65da82454514419a30d7bea6df68b2bbc0518000193",
+  "params_size": 310292404,
+  "pass": true,
+  "status": "PASS_FORMAL_MAPPER_RUN",
+  "zero_indices": [
+    76,
+    79
+  ],
+  "zero_loss_observation_count": 54
+}

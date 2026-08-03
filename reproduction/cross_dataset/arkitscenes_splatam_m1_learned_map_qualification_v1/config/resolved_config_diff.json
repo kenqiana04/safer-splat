@@ -1,0 +1,234 @@
+{
+  "frozen_semantics": {
+    "densification": {
+      "densify_every": 100,
+      "final_removal_opacity_threshold": 0.005,
+      "grad_thresh": 0.0002,
+      "num_to_split_into": 2,
+      "removal_opacity_threshold": 0.005,
+      "remove_big_after": 3000,
+      "reset_opacities": true,
+      "reset_opacities_every": 3000,
+      "start_after": 500,
+      "stop_after": 15000
+    },
+    "gaussian_distribution": "isotropic",
+    "learning_rates": {
+      "cam_trans": 0.0,
+      "cam_unnorm_rots": 0.0,
+      "log_scales": 0.005,
+      "logit_opacities": 0.05,
+      "means3D": 0.00032,
+      "rgb_colors": 0.0025,
+      "unnorm_rotations": 0.001
+    },
+    "loss_weights": {
+      "depth": 0.0,
+      "im": 1.0
+    },
+    "mapping_iterations": 7000
+  },
+  "parent_sha256": "d0c5270d8f4e08206b531092c120ad3a923634af6979b4410f0a5c7c8144c9e2",
+  "status": "PASS_AUTHORIZED_SPLATAM_M1_CONFIG_DIFF_ONLY",
+  "variants": {
+    "formal": {
+      "changes": {
+        "config.data.basedir": {
+          "after": "/disk1/zlab/maintenance_records/arkitscenes_raw_splatam_learned_3dgs_qualification_v1/download/staging/48018874/payload/raw/Training/48018874",
+          "before": "/storage2/datasets/nkeetha/4d/data/ScanNetPP/data"
+        },
+        "config.data.dataset_name": {
+          "after": "arkitscenes_m1",
+          "before": "scannetpp"
+        },
+        "config.data.desired_image_height": {
+          "after": 192,
+          "before": 584
+        },
+        "config.data.desired_image_height_init": {
+          "after": 192,
+          "before": 584
+        },
+        "config.data.desired_image_width": {
+          "after": 256,
+          "before": 876
+        },
+        "config.data.desired_image_width_init": {
+          "after": 256,
+          "before": 876
+        },
+        "config.data.end": {
+          "after": 214,
+          "before": -1
+        },
+        "config.data.eval_num_frames": {
+          "after": 214,
+          "before": -1
+        },
+        "config.data.gradslam_data_cfg": {
+          "after": "/disk1/zlab/maintenance_records/arkitscenes_splatam_m1_learned_map_qualification_v1/config/arkitscenes_m1_dataset.json",
+          "before": null
+        },
+        "config.data.num_frames": {
+          "after": 214,
+          "before": -1
+        },
+        "config.data.sequence": {
+          "after": "48018874",
+          "before": "8b5caf3398"
+        },
+        "config.run_name": {
+          "after": "ARKITSCENES_SPLATAM_M1_EMPTY_DEPTH_SAFE_GT_POSE_MAP_ONLY_V1",
+          "before": "8b5caf3398_0"
+        },
+        "config.seed": {
+          "after": 20260730,
+          "before": 0
+        },
+        "config.use_wandb": {
+          "after": false,
+          "before": true
+        },
+        "config.workdir": {
+          "after": "/disk1/zlab/maintenance_records/arkitscenes_splatam_m1_learned_map_qualification_v1/outputs",
+          "before": "./experiments/ScanNet++_3DGS"
+        }
+      },
+      "sha256": "49c2c085e04bb08d9edf10e12ed117e1fec4ddeac240c07f76761689f3ed05bc"
+    },
+    "smoke_a": {
+      "changes": {
+        "config.data.basedir": {
+          "after": "/disk1/zlab/maintenance_records/arkitscenes_raw_splatam_learned_3dgs_qualification_v1/download/staging/48018874/payload/raw/Training/48018874",
+          "before": "/storage2/datasets/nkeetha/4d/data/ScanNetPP/data"
+        },
+        "config.data.dataset_name": {
+          "after": "arkitscenes_m1",
+          "before": "scannetpp"
+        },
+        "config.data.desired_image_height": {
+          "after": 192,
+          "before": 584
+        },
+        "config.data.desired_image_height_init": {
+          "after": 192,
+          "before": 584
+        },
+        "config.data.desired_image_width": {
+          "after": 256,
+          "before": 876
+        },
+        "config.data.desired_image_width_init": {
+          "after": 256,
+          "before": 876
+        },
+        "config.data.end": {
+          "after": 12,
+          "before": -1
+        },
+        "config.data.eval_num_frames": {
+          "after": 12,
+          "before": -1
+        },
+        "config.data.gradslam_data_cfg": {
+          "after": "/disk1/zlab/maintenance_records/arkitscenes_splatam_m1_learned_map_qualification_v1/config/arkitscenes_m1_dataset.json",
+          "before": null
+        },
+        "config.data.num_frames": {
+          "after": 12,
+          "before": -1
+        },
+        "config.data.sequence": {
+          "after": "48018874",
+          "before": "8b5caf3398"
+        },
+        "config.run_name": {
+          "after": "NONFORMAL_SMOKE_A_ROWS_0_11",
+          "before": "8b5caf3398_0"
+        },
+        "config.seed": {
+          "after": 20260730,
+          "before": 0
+        },
+        "config.use_wandb": {
+          "after": false,
+          "before": true
+        },
+        "config.workdir": {
+          "after": "/disk1/zlab/maintenance_records/arkitscenes_splatam_m1_learned_map_qualification_v1/outputs",
+          "before": "./experiments/ScanNet++_3DGS"
+        }
+      },
+      "sha256": "203bc17c44253156d06b903cc99ba9a08c8d8800dfb7ba50be4a569b9c165d82"
+    },
+    "smoke_b": {
+      "changes": {
+        "config.data.basedir": {
+          "after": "/disk1/zlab/maintenance_records/arkitscenes_raw_splatam_learned_3dgs_qualification_v1/download/staging/48018874/payload/raw/Training/48018874",
+          "before": "/storage2/datasets/nkeetha/4d/data/ScanNetPP/data"
+        },
+        "config.data.dataset_name": {
+          "after": "arkitscenes_m1",
+          "before": "scannetpp"
+        },
+        "config.data.desired_image_height": {
+          "after": 192,
+          "before": 584
+        },
+        "config.data.desired_image_height_init": {
+          "after": 192,
+          "before": 584
+        },
+        "config.data.desired_image_width": {
+          "after": 256,
+          "before": 876
+        },
+        "config.data.desired_image_width_init": {
+          "after": 256,
+          "before": 876
+        },
+        "config.data.end": {
+          "after": 83,
+          "before": -1
+        },
+        "config.data.eval_num_frames": {
+          "after": 13,
+          "before": -1
+        },
+        "config.data.gradslam_data_cfg": {
+          "after": "/disk1/zlab/maintenance_records/arkitscenes_splatam_m1_learned_map_qualification_v1/config/arkitscenes_m1_dataset.json",
+          "before": null
+        },
+        "config.data.num_frames": {
+          "after": 13,
+          "before": -1
+        },
+        "config.data.sequence": {
+          "after": "48018874",
+          "before": "8b5caf3398"
+        },
+        "config.data.start": {
+          "after": 70,
+          "before": 0
+        },
+        "config.run_name": {
+          "after": "NONFORMAL_SMOKE_B_ROWS_70_82",
+          "before": "8b5caf3398_0"
+        },
+        "config.seed": {
+          "after": 20260730,
+          "before": 0
+        },
+        "config.use_wandb": {
+          "after": false,
+          "before": true
+        },
+        "config.workdir": {
+          "after": "/disk1/zlab/maintenance_records/arkitscenes_splatam_m1_learned_map_qualification_v1/outputs",
+          "before": "./experiments/ScanNet++_3DGS"
+        }
+      },
+      "sha256": "72698e4d4f1bfcb6bcfa513027b932c1553b2e75bb2c6d8a8804e50e0dbc6d39"
+    }
+  }
+}
