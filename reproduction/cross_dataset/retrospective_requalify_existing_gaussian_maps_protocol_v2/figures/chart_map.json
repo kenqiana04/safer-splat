@@ -1,0 +1,114 @@
+{
+  "evidence_classes": {
+    "derived": "#D49A2A",
+    "empirical": "#E07A35",
+    "ink": "#22252A",
+    "measured": "#2F6B9A",
+    "not_evaluable": "#D9DDE3",
+    "pink": "#C65A87",
+    "unresolved": "#8A8F98"
+  },
+  "figures": [
+    {
+      "claim": "controls discriminate",
+      "file": "protocol_v2_control_discrimination.png",
+      "surface": "tracked static PNG"
+    },
+    {
+      "claim": "6 accessible, 5 unavailable",
+      "file": "map_artifact_availability.png",
+      "surface": "tracked static PNG"
+    },
+    {
+      "claim": "authority bounds",
+      "file": "map_reference_authority.png",
+      "surface": "tracked static PNG"
+    },
+    {
+      "claim": "channel status",
+      "file": "native_common_parity.png",
+      "surface": "tracked static PNG"
+    },
+    {
+      "claim": "one full curve only",
+      "file": "risk_coverage_all_available_maps.png",
+      "surface": "tracked static PNG"
+    },
+    {
+      "claim": "AURC descriptive",
+      "file": "conditional_error_vs_coverage.png",
+      "surface": "tracked static PNG"
+    },
+    {
+      "claim": "no learned complete curve",
+      "file": "multi_tolerance_replica_maps.png",
+      "surface": "tracked static PNG"
+    },
+    {
+      "claim": "observable-only missingness",
+      "file": "spatial_missingness_summary.png",
+      "surface": "tracked static PNG"
+    },
+    {
+      "claim": "unknown unresolved",
+      "file": "unknown_model_status.png",
+      "surface": "tracked static PNG"
+    },
+    {
+      "claim": "GT route closure only",
+      "file": "replica_route_tube_knownness.png",
+      "surface": "tracked static PNG"
+    },
+    {
+      "claim": "GT one-sided closure only",
+      "file": "replica_one_sided_risk.png",
+      "surface": "tracked static PNG"
+    },
+    {
+      "claim": "1 resolved, 10 unresolved",
+      "file": "physical_budget_status.png",
+      "surface": "tracked static PNG"
+    },
+    {
+      "claim": "six query-compatible maps",
+      "file": "safer_g0_compatibility.png",
+      "surface": "tracked static PNG"
+    },
+    {
+      "claim": "R classes",
+      "file": "reconstruction_axis_classification.png",
+      "surface": "tracked static PNG"
+    },
+    {
+      "claim": "N classes",
+      "file": "navigation_axis_classification.png",
+      "surface": "tracked static PNG"
+    },
+    {
+      "claim": "R/N independence",
+      "file": "two_axis_map_matrix.png",
+      "surface": "tracked static PNG"
+    },
+    {
+      "claim": "legacy preserved",
+      "file": "legacy_vs_v2_interpretation.png",
+      "surface": "tracked static PNG"
+    },
+    {
+      "claim": "candidate gaps",
+      "file": "candidate_evidence_gaps.png",
+      "surface": "tracked static PNG"
+    },
+    {
+      "claim": "case C selected",
+      "file": "final_decision_tree.png",
+      "surface": "tracked static PNG"
+    },
+    {
+      "claim": "entry qualification next",
+      "file": "next_task_handoff.png",
+      "surface": "tracked static PNG"
+    }
+  ],
+  "palette_policy": "hard two-root cap plus neutral unresolved/not-evaluable states"
+}

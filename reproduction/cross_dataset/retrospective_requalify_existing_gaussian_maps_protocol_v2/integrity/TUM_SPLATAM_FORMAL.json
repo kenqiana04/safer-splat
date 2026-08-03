@@ -1,0 +1,68 @@
+{
+  "checks": {
+    "artifact_exists": true,
+    "canonical_arrays_finite": true,
+    "deterministic_reload": true,
+    "historical_report_consistency": true,
+    "no_filtering_or_reordering_introduced": true,
+    "positive_scales": true,
+    "quaternion_normalizable": true,
+    "source_identity_stable": true
+  },
+  "continued_navigation_evaluation": true,
+  "map_id": "TUM_SPLATAM_FORMAL",
+  "server_record": {
+    "available": true,
+    "canonical_identity": {
+      "bytes": 349703424,
+      "exists": true,
+      "file_count": 7,
+      "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/splatam/canonical_export/export_a",
+      "sha256": "4e88947775455795d6fccb443b1d97870a9bc0b56ba964b3fbebe2853a946f8f"
+    },
+    "canonical_root": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/splatam/canonical_export/export_a",
+    "deterministic_reload": true,
+    "finite_canonical_arrays": true,
+    "gaussian_count": 5464102,
+    "map_id": "TUM_SPLATAM_FORMAL",
+    "opacity_range": [
+      0.0003330805920995772,
+      0.9999996423721313
+    ],
+    "positive_scales": true,
+    "quaternion_norm_range": [
+      0.9999998086957215,
+      1.0000001842053352
+    ],
+    "quaternion_normalizable": true,
+    "shapes": [
+      {
+        "count": 5464102,
+        "means": [
+          5464102,
+          3
+        ],
+        "quaternions": [
+          5464102,
+          4
+        ],
+        "scales": [
+          5464102,
+          3
+        ],
+        "shard": "."
+      }
+    ],
+    "shard_count": 1,
+    "source_identity": {
+      "bytes": 262302188,
+      "exists": true,
+      "file_count": 1,
+      "path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/splatam_full240/params.npz",
+      "sha256": "cb4a8f133a4ce4063f60112fa9689db683988be29f67b9d570231a319849a36f"
+    },
+    "source_ids_available": true,
+    "status": "PASS_MAP_INTEGRITY"
+  },
+  "status": "PASS_MAP_INTEGRITY"
+}

@@ -1,0 +1,452 @@
+{
+  "checks": {
+    "artifact_exists": true,
+    "canonical_arrays_finite": true,
+    "deterministic_reload": true,
+    "historical_report_consistency": true,
+    "no_filtering_or_reordering_introduced": true,
+    "positive_scales": true,
+    "quaternion_normalizable": true,
+    "source_identity_stable": true
+  },
+  "continued_navigation_evaluation": true,
+  "map_id": "TUM_GAUSSIAN_SLAM",
+  "server_record": {
+    "available": true,
+    "canonical_identity": {
+      "bytes": 194935488,
+      "exists": true,
+      "file_count": 200,
+      "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a",
+      "sha256": "264d3886f6486b30bb40a9a78a201fbd0afa007f915f1f8c9dbda7d924e7679d"
+    },
+    "canonical_root": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a",
+    "deterministic_reload": true,
+    "finite_canonical_arrays": true,
+    "gaussian_count": 3045467,
+    "map_id": "TUM_GAUSSIAN_SLAM",
+    "opacity_range": [
+      0.5000011920928955,
+      1.0
+    ],
+    "positive_scales": true,
+    "quaternion_norm_range": [
+      0.9999998162171488,
+      1.000000175156525
+    ],
+    "quaternion_normalizable": true,
+    "shapes": [
+      {
+        "count": 128868,
+        "means": [
+          128868,
+          3
+        ],
+        "quaternions": [
+          128868,
+          4
+        ],
+        "scales": [
+          128868,
+          3
+        ],
+        "shard": "submap_00"
+      },
+      {
+        "count": 122882,
+        "means": [
+          122882,
+          3
+        ],
+        "quaternions": [
+          122882,
+          4
+        ],
+        "scales": [
+          122882,
+          3
+        ],
+        "shard": "submap_01"
+      },
+      {
+        "count": 126639,
+        "means": [
+          126639,
+          3
+        ],
+        "quaternions": [
+          126639,
+          4
+        ],
+        "scales": [
+          126639,
+          3
+        ],
+        "shard": "submap_02"
+      },
+      {
+        "count": 87411,
+        "means": [
+          87411,
+          3
+        ],
+        "quaternions": [
+          87411,
+          4
+        ],
+        "scales": [
+          87411,
+          3
+        ],
+        "shard": "submap_03"
+      },
+      {
+        "count": 92962,
+        "means": [
+          92962,
+          3
+        ],
+        "quaternions": [
+          92962,
+          4
+        ],
+        "scales": [
+          92962,
+          3
+        ],
+        "shard": "submap_04"
+      },
+      {
+        "count": 86023,
+        "means": [
+          86023,
+          3
+        ],
+        "quaternions": [
+          86023,
+          4
+        ],
+        "scales": [
+          86023,
+          3
+        ],
+        "shard": "submap_05"
+      },
+      {
+        "count": 103567,
+        "means": [
+          103567,
+          3
+        ],
+        "quaternions": [
+          103567,
+          4
+        ],
+        "scales": [
+          103567,
+          3
+        ],
+        "shard": "submap_06"
+      },
+      {
+        "count": 109475,
+        "means": [
+          109475,
+          3
+        ],
+        "quaternions": [
+          109475,
+          4
+        ],
+        "scales": [
+          109475,
+          3
+        ],
+        "shard": "submap_07"
+      },
+      {
+        "count": 124281,
+        "means": [
+          124281,
+          3
+        ],
+        "quaternions": [
+          124281,
+          4
+        ],
+        "scales": [
+          124281,
+          3
+        ],
+        "shard": "submap_08"
+      },
+      {
+        "count": 127999,
+        "means": [
+          127999,
+          3
+        ],
+        "quaternions": [
+          127999,
+          4
+        ],
+        "scales": [
+          127999,
+          3
+        ],
+        "shard": "submap_09"
+      },
+      {
+        "count": 108016,
+        "means": [
+          108016,
+          3
+        ],
+        "quaternions": [
+          108016,
+          4
+        ],
+        "scales": [
+          108016,
+          3
+        ],
+        "shard": "submap_10"
+      },
+      {
+        "count": 132797,
+        "means": [
+          132797,
+          3
+        ],
+        "quaternions": [
+          132797,
+          4
+        ],
+        "scales": [
+          132797,
+          3
+        ],
+        "shard": "submap_11"
+      },
+      {
+        "count": 155847,
+        "means": [
+          155847,
+          3
+        ],
+        "quaternions": [
+          155847,
+          4
+        ],
+        "scales": [
+          155847,
+          3
+        ],
+        "shard": "submap_12"
+      },
+      {
+        "count": 146153,
+        "means": [
+          146153,
+          3
+        ],
+        "quaternions": [
+          146153,
+          4
+        ],
+        "scales": [
+          146153,
+          3
+        ],
+        "shard": "submap_13"
+      },
+      {
+        "count": 157263,
+        "means": [
+          157263,
+          3
+        ],
+        "quaternions": [
+          157263,
+          4
+        ],
+        "scales": [
+          157263,
+          3
+        ],
+        "shard": "submap_14"
+      },
+      {
+        "count": 145316,
+        "means": [
+          145316,
+          3
+        ],
+        "quaternions": [
+          145316,
+          4
+        ],
+        "scales": [
+          145316,
+          3
+        ],
+        "shard": "submap_15"
+      },
+      {
+        "count": 92421,
+        "means": [
+          92421,
+          3
+        ],
+        "quaternions": [
+          92421,
+          4
+        ],
+        "scales": [
+          92421,
+          3
+        ],
+        "shard": "submap_16"
+      },
+      {
+        "count": 192237,
+        "means": [
+          192237,
+          3
+        ],
+        "quaternions": [
+          192237,
+          4
+        ],
+        "scales": [
+          192237,
+          3
+        ],
+        "shard": "submap_17"
+      },
+      {
+        "count": 142236,
+        "means": [
+          142236,
+          3
+        ],
+        "quaternions": [
+          142236,
+          4
+        ],
+        "scales": [
+          142236,
+          3
+        ],
+        "shard": "submap_18"
+      },
+      {
+        "count": 93335,
+        "means": [
+          93335,
+          3
+        ],
+        "quaternions": [
+          93335,
+          4
+        ],
+        "scales": [
+          93335,
+          3
+        ],
+        "shard": "submap_19"
+      },
+      {
+        "count": 172481,
+        "means": [
+          172481,
+          3
+        ],
+        "quaternions": [
+          172481,
+          4
+        ],
+        "scales": [
+          172481,
+          3
+        ],
+        "shard": "submap_20"
+      },
+      {
+        "count": 74545,
+        "means": [
+          74545,
+          3
+        ],
+        "quaternions": [
+          74545,
+          4
+        ],
+        "scales": [
+          74545,
+          3
+        ],
+        "shard": "submap_21"
+      },
+      {
+        "count": 98978,
+        "means": [
+          98978,
+          3
+        ],
+        "quaternions": [
+          98978,
+          4
+        ],
+        "scales": [
+          98978,
+          3
+        ],
+        "shard": "submap_22"
+      },
+      {
+        "count": 113985,
+        "means": [
+          113985,
+          3
+        ],
+        "quaternions": [
+          113985,
+          4
+        ],
+        "scales": [
+          113985,
+          3
+        ],
+        "shard": "submap_23"
+      },
+      {
+        "count": 109750,
+        "means": [
+          109750,
+          3
+        ],
+        "quaternions": [
+          109750,
+          4
+        ],
+        "scales": [
+          109750,
+          3
+        ],
+        "shard": "submap_24"
+      }
+    ],
+    "shard_count": 25,
+    "source_identity": {
+      "bytes": 194935488,
+      "exists": true,
+      "file_count": 200,
+      "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a",
+      "sha256": "264d3886f6486b30bb40a9a78a201fbd0afa007f915f1f8c9dbda7d924e7679d"
+    },
+    "source_ids_available": true,
+    "status": "PASS_MAP_INTEGRITY"
+  },
+  "status": "PASS_MAP_INTEGRITY"
+}

@@ -1,0 +1,68 @@
+{
+  "checks": {
+    "artifact_exists": true,
+    "canonical_arrays_finite": true,
+    "deterministic_reload": true,
+    "historical_report_consistency": true,
+    "no_filtering_or_reordering_introduced": true,
+    "positive_scales": true,
+    "quaternion_normalizable": true,
+    "source_identity_stable": true
+  },
+  "continued_navigation_evaluation": true,
+  "map_id": "REPLICA_SPLATAM_60",
+  "server_record": {
+    "available": true,
+    "canonical_identity": {
+      "bytes": 119567528,
+      "exists": true,
+      "file_count": 5,
+      "path": "/disk1/zlab/maintenance_records/replica_splatam_protocol_conformance_pilot_v1/canonical_export/unfiltered",
+      "sha256": "eda01bd295c816b30f7c9faf79c7f838077d7db399b0471c58162d94339a2e2b"
+    },
+    "canonical_root": "/disk1/zlab/maintenance_records/replica_splatam_protocol_conformance_pilot_v1/canonical_export/unfiltered",
+    "deterministic_reload": true,
+    "finite_canonical_arrays": true,
+    "gaussian_count": 2135123,
+    "map_id": "REPLICA_SPLATAM_60",
+    "opacity_range": [
+      0.00047566270222887397,
+      0.9999996423721313
+    ],
+    "positive_scales": true,
+    "quaternion_norm_range": [
+      0.9999999521808575,
+      1.000000046264424
+    ],
+    "quaternion_normalizable": true,
+    "shapes": [
+      {
+        "count": 2135123,
+        "means": [
+          2135123,
+          3
+        ],
+        "quaternions": [
+          2135123,
+          4
+        ],
+        "scales": [
+          2135123,
+          3
+        ],
+        "shard": "."
+      }
+    ],
+    "shard_count": 1,
+    "source_identity": {
+      "bytes": 102494636,
+      "exists": true,
+      "file_count": 1,
+      "path": "/disk1/zlab/maintenance_records/replica_splatam_protocol_conformance_pilot_v1/pilot_run/run/params.npz",
+      "sha256": "4520bd9faf8f260438ff7ad55ab13b46437cdfe5c076f1600790cea5bc0547c5"
+    },
+    "source_ids_available": false,
+    "status": "PASS_MAP_INTEGRITY"
+  },
+  "status": "PASS_MAP_INTEGRITY"
+}

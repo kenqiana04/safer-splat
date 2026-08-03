@@ -1,0 +1,46 @@
+{
+  "active_index_sha256": "c5e82a6499ee16878c6cf83511e57195ccec97a6da01d6da6436329aa6c04ec6",
+  "adapter": "DummyGSplatLoader exact anisotropic ball-to-ellipsoid world-frame Hessian",
+  "controller_count": 0,
+  "epsilon_m": 0.01,
+  "gates": {
+    "active_indices_valid": true,
+    "gradient_finite": true,
+    "h_finite": true,
+    "hessian_finite": true,
+    "hessian_symmetric": true,
+    "map_unmodified": true,
+    "peak_gpu_under_20gib": true,
+    "query_count_256": true
+  },
+  "gaussian_count": 2135123,
+  "gradient_sha256": "1ddee6b15aa4a68a39475231aa4569142122e4ce8467cea8516c1cf617cbd31e",
+  "h_sha256": "dca5bd81c830048741c7ee4d695ce5a159b831f8e5368ad8f7577e3e72eaff21",
+  "hessian_sha256": "49dd90f3b54de6201c418fb761f3bbfa6e8f449333a2268a7d1e6f285633d61b",
+  "hessian_symmetry_relative_max": 2.384185791015625e-07,
+  "map_id": "REPLICA_SPLATAM_60",
+  "map_identity_after": {
+    "bytes": 102494636,
+    "exists": true,
+    "file_count": 1,
+    "path": "/disk1/zlab/maintenance_records/replica_splatam_protocol_conformance_pilot_v1/pilot_run/run/params.npz",
+    "sha256": "4520bd9faf8f260438ff7ad55ab13b46437cdfe5c076f1600790cea5bc0547c5"
+  },
+  "map_identity_before": {
+    "bytes": 102494636,
+    "exists": true,
+    "file_count": 1,
+    "path": "/disk1/zlab/maintenance_records/replica_splatam_protocol_conformance_pilot_v1/pilot_run/run/params.npz",
+    "sha256": "4520bd9faf8f260438ff7ad55ab13b46437cdfe5c076f1600790cea5bc0547c5"
+  },
+  "map_mutation_count": 0,
+  "peak_gpu_bytes": 1160249856,
+  "planner_count": 0,
+  "query_count": 256,
+  "query_sha256": "521bb937b001fc6a20c14cfa24a7e3469118a564a78e2fec8082555cb2e3fe0d",
+  "radius_m": 0.1,
+  "run_id": "1",
+  "runtime_s": 9.085222062887624,
+  "source_commit": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+  "status": "PASS_FRESH_STATIC_G0_RUN"
+}

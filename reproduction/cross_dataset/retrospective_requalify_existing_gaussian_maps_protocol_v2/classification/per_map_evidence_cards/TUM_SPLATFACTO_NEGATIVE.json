@@ -1,0 +1,32 @@
+{
+  "ALLOWED_CLAIMS": [
+    "immutable map-instance evidence",
+    "static query compatibility when true",
+    "reference-bounded reconstruction diagnostics"
+  ],
+  "FORBIDDEN_CLAIMS": [
+    "algorithm stability",
+    "universal numeric qualification",
+    "full-space completeness from camera rays",
+    "navigation safety from G0 alone",
+    "legacy result overturned"
+  ],
+  "LEGACY_FORMAL_STATUS": "geometry failed; no navigation qualification",
+  "LEGACY_GATE": "depth geometry and map drift",
+  "NATIVE_COMMON_PARITY_STATUS": "NOT_EVALUABLE",
+  "ONE_SIDED_RISK_STATUS": "NOT_EVALUABLE",
+  "PHYSICAL_BUDGET_STATUS": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+  "REFERENCE_AUTHORITY": "B_OBSERVABLE_RAY_REFERENCE",
+  "RISK_COVERAGE_STATUS": "NOT_EVALUABLE",
+  "ROUTE_TUBE_STATUS": "NOT_EVALUABLE",
+  "SAFETY_QUERY_COMPATIBLE": "NOT_EVALUABLE",
+  "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_UNRESOLVED",
+  "V2_NAVIGATION_AXIS": "N0_NOT_EVALUABLE",
+  "V2_RECONSTRUCTION_AXIS": "R1_DIAGNOSTIC_RECONSTRUCTION",
+  "artifact_status": "ARTIFACT_UNAVAILABLE_FOR_RETROSPECTIVE_EVALUATION",
+  "historical_boundary": "legacy result remains valid under legacy contract; V2 classification does not retroactively change history",
+  "learned": true,
+  "map_id": "TUM_SPLATFACTO_NEGATIVE",
+  "map_sha_after": null,
+  "map_sha_before": null
+}

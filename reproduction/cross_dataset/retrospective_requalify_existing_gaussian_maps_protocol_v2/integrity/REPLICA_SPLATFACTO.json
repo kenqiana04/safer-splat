@@ -1,0 +1,68 @@
+{
+  "checks": {
+    "artifact_exists": true,
+    "canonical_arrays_finite": true,
+    "deterministic_reload": true,
+    "historical_report_consistency": true,
+    "no_filtering_or_reordering_introduced": true,
+    "positive_scales": true,
+    "quaternion_normalizable": true,
+    "source_identity_stable": true
+  },
+  "continued_navigation_evaluation": true,
+  "map_id": "REPLICA_SPLATFACTO",
+  "server_record": {
+    "available": true,
+    "canonical_identity": {
+      "bytes": 329508830,
+      "exists": true,
+      "file_count": 6,
+      "path": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/canonical_export/qualification_pilot",
+      "sha256": "214ff483b6c2eb84d69e7604a1ecfdcba0506d7de11263e2caca44c048973c94"
+    },
+    "canonical_root": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/canonical_export/qualification_pilot",
+    "deterministic_reload": true,
+    "finite_canonical_arrays": true,
+    "gaussian_count": 1396211,
+    "map_id": "REPLICA_SPLATFACTO",
+    "opacity_range": [
+      0.0008214688277803361,
+      1.0
+    ],
+    "positive_scales": true,
+    "quaternion_norm_range": [
+      0.9999998387217208,
+      1.0000001681727635
+    ],
+    "quaternion_normalizable": true,
+    "shapes": [
+      {
+        "count": 1396211,
+        "means": [
+          1396211,
+          3
+        ],
+        "quaternions": [
+          1396211,
+          4
+        ],
+        "scales": [
+          1396211,
+          3
+        ],
+        "shard": "."
+      }
+    ],
+    "shard_count": 1,
+    "source_identity": {
+      "bytes": 329508830,
+      "exists": true,
+      "file_count": 6,
+      "path": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/canonical_export/qualification_pilot",
+      "sha256": "214ff483b6c2eb84d69e7604a1ecfdcba0506d7de11263e2caca44c048973c94"
+    },
+    "source_ids_available": false,
+    "status": "PASS_MAP_INTEGRITY"
+  },
+  "status": "PASS_MAP_INTEGRITY"
+}

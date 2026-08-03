@@ -1,0 +1,299 @@
+{
+  "completed_map_count": 6,
+  "maps": [
+    {
+      "adapter": "Certified uniform-sphere specialization of exact anisotropic ball-to-ellipsoid contract",
+      "checks": {
+        "all_runs_pass": true,
+        "exact_output_repeatability": true,
+        "h_gradient_hessian_finite": true,
+        "hessian_symmetric": true,
+        "map_immutable": true,
+        "peak_gpu_under_20gib": true,
+        "three_fresh_processes": true
+      },
+      "map_id": "REPLICA_GT_FINE",
+      "map_identity_after": {
+        "bytes": 182855690,
+        "exists": true,
+        "file_count": 8,
+        "path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/map_profiles/FINE_A",
+        "sha256": "63b3281a3375e7178740184043e1af72e6ebaf2ca9fe9cf8f2bd5f59251c493e"
+      },
+      "map_identity_before": {
+        "bytes": 182855690,
+        "exists": true,
+        "file_count": 8,
+        "path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/map_profiles/FINE_A",
+        "sha256": "63b3281a3375e7178740184043e1af72e6ebaf2ca9fe9cf8f2bd5f59251c493e"
+      },
+      "peak_gpu_bytes": [
+        359009792,
+        359009792,
+        359009792
+      ],
+      "query_count_per_run": 256,
+      "run_count": 3,
+      "runtime_s": [
+        0.30929993209429085,
+        0.30470244213938713,
+        0.334639023989439
+      ],
+      "safety_query_compatible": true,
+      "source_commit": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+      "status": "PASS_SAFETY_QUERY_COMPATIBILITY"
+    },
+    {
+      "adapter": "DummyGSplatLoader exact anisotropic ball-to-ellipsoid world-frame Hessian",
+      "checks": {
+        "all_runs_pass": true,
+        "exact_output_repeatability": true,
+        "h_gradient_hessian_finite": true,
+        "hessian_symmetric": true,
+        "map_immutable": true,
+        "peak_gpu_under_20gib": true,
+        "three_fresh_processes": true
+      },
+      "map_id": "REPLICA_SPLATFACTO",
+      "map_identity_after": {
+        "bytes": 329508830,
+        "exists": true,
+        "file_count": 6,
+        "path": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/canonical_export/qualification_pilot",
+        "sha256": "214ff483b6c2eb84d69e7604a1ecfdcba0506d7de11263e2caca44c048973c94"
+      },
+      "map_identity_before": {
+        "bytes": 329508830,
+        "exists": true,
+        "file_count": 6,
+        "path": "/disk1/zlab/maintenance_records/replica_splatfacto_native_baseline_qualification_v1/canonical_export/qualification_pilot",
+        "sha256": "214ff483b6c2eb84d69e7604a1ecfdcba0506d7de11263e2caca44c048973c94"
+      },
+      "peak_gpu_bytes": [
+        759052800,
+        759052800,
+        759052800
+      ],
+      "query_count_per_run": 256,
+      "run_count": 3,
+      "runtime_s": [
+        6.358951282920316,
+        6.3549743089824915,
+        6.345946749905124
+      ],
+      "safety_query_compatible": true,
+      "source_commit": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+      "status": "PASS_SAFETY_QUERY_COMPATIBILITY"
+    },
+    {
+      "map_id": "TUM_SPLATFACTO_NEGATIVE",
+      "query_count_per_run": 0,
+      "run_count": 0,
+      "safety_query_compatible": "NOT_EVALUABLE",
+      "status": "NOT_EVALUABLE"
+    },
+    {
+      "adapter": "DummyGSplatLoader exact anisotropic ball-to-ellipsoid world-frame Hessian",
+      "checks": {
+        "all_runs_pass": true,
+        "exact_output_repeatability": true,
+        "h_gradient_hessian_finite": true,
+        "hessian_symmetric": true,
+        "map_immutable": true,
+        "peak_gpu_under_20gib": true,
+        "three_fresh_processes": true
+      },
+      "map_id": "REPLICA_SPLATAM_60",
+      "map_identity_after": {
+        "bytes": 102494636,
+        "exists": true,
+        "file_count": 1,
+        "path": "/disk1/zlab/maintenance_records/replica_splatam_protocol_conformance_pilot_v1/pilot_run/run/params.npz",
+        "sha256": "4520bd9faf8f260438ff7ad55ab13b46437cdfe5c076f1600790cea5bc0547c5"
+      },
+      "map_identity_before": {
+        "bytes": 102494636,
+        "exists": true,
+        "file_count": 1,
+        "path": "/disk1/zlab/maintenance_records/replica_splatam_protocol_conformance_pilot_v1/pilot_run/run/params.npz",
+        "sha256": "4520bd9faf8f260438ff7ad55ab13b46437cdfe5c076f1600790cea5bc0547c5"
+      },
+      "peak_gpu_bytes": [
+        1160249856,
+        1160249856,
+        1160249856
+      ],
+      "query_count_per_run": 256,
+      "run_count": 3,
+      "runtime_s": [
+        9.085222062887624,
+        9.169886007206514,
+        8.919159182813019
+      ],
+      "safety_query_compatible": true,
+      "source_commit": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+      "status": "PASS_SAFETY_QUERY_COMPATIBILITY"
+    },
+    {
+      "adapter": "DummyGSplatLoader exact anisotropic ball-to-ellipsoid world-frame Hessian",
+      "checks": {
+        "all_runs_pass": true,
+        "exact_output_repeatability": true,
+        "h_gradient_hessian_finite": true,
+        "hessian_symmetric": true,
+        "map_immutable": true,
+        "peak_gpu_under_20gib": true,
+        "three_fresh_processes": true
+      },
+      "map_id": "ARKITSCENES_M1_SPLATAM",
+      "map_identity_after": {
+        "bytes": 310292404,
+        "exists": true,
+        "file_count": 1,
+        "path": "/disk1/zlab/maintenance_records/arkitscenes_splatam_m1_learned_map_qualification_v1/outputs/ARKITSCENES_SPLATAM_M1_EMPTY_DEPTH_SAFE_GT_POSE_MAP_ONLY_V1/params.npz",
+        "sha256": "86ba75c9db0fab1a5eb7d65da82454514419a30d7bea6df68b2bbc0518000193"
+      },
+      "map_identity_before": {
+        "bytes": 310292404,
+        "exists": true,
+        "file_count": 1,
+        "path": "/disk1/zlab/maintenance_records/arkitscenes_splatam_m1_learned_map_qualification_v1/outputs/ARKITSCENES_SPLATAM_M1_EMPTY_DEPTH_SAFE_GT_POSE_MAP_ONLY_V1/params.npz",
+        "sha256": "86ba75c9db0fab1a5eb7d65da82454514419a30d7bea6df68b2bbc0518000193"
+      },
+      "peak_gpu_bytes": [
+        3474152448,
+        3474152448,
+        3474152448
+      ],
+      "query_count_per_run": 256,
+      "run_count": 3,
+      "runtime_s": [
+        30.321021978976205,
+        30.4131287811324,
+        30.318091777851805
+      ],
+      "safety_query_compatible": true,
+      "source_commit": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+      "status": "PASS_SAFETY_QUERY_COMPATIBILITY"
+    },
+    {
+      "adapter": "DummyGSplatLoader exact anisotropic ball-to-ellipsoid world-frame Hessian",
+      "checks": {
+        "all_runs_pass": true,
+        "exact_output_repeatability": true,
+        "h_gradient_hessian_finite": true,
+        "hessian_symmetric": true,
+        "map_immutable": true,
+        "peak_gpu_under_20gib": true,
+        "three_fresh_processes": true
+      },
+      "map_id": "TUM_SPLATAM_FORMAL",
+      "map_identity_after": {
+        "bytes": 262302188,
+        "exists": true,
+        "file_count": 1,
+        "path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/splatam_full240/params.npz",
+        "sha256": "cb4a8f133a4ce4063f60112fa9689db683988be29f67b9d570231a319849a36f"
+      },
+      "map_identity_before": {
+        "bytes": 262302188,
+        "exists": true,
+        "file_count": 1,
+        "path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/splatam_full240/params.npz",
+        "sha256": "cb4a8f133a4ce4063f60112fa9689db683988be29f67b9d570231a319849a36f"
+      },
+      "peak_gpu_bytes": [
+        2942837248,
+        2942837248,
+        2942837248
+      ],
+      "query_count_per_run": 256,
+      "run_count": 3,
+      "runtime_s": [
+        25.706704143900424,
+        25.65470054303296,
+        25.82485885778442
+      ],
+      "safety_query_compatible": true,
+      "source_commit": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+      "status": "PASS_SAFETY_QUERY_COMPATIBILITY"
+    },
+    {
+      "adapter": "DummyGSplatLoader exact anisotropic ball-to-ellipsoid world-frame Hessian",
+      "checks": {
+        "all_runs_pass": true,
+        "exact_output_repeatability": true,
+        "h_gradient_hessian_finite": true,
+        "hessian_symmetric": true,
+        "map_immutable": true,
+        "peak_gpu_under_20gib": true,
+        "three_fresh_processes": true
+      },
+      "map_id": "TUM_GAUSSIAN_SLAM",
+      "map_identity_after": {
+        "bytes": 194935488,
+        "exists": true,
+        "file_count": 200,
+        "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a",
+        "sha256": "264d3886f6486b30bb40a9a78a201fbd0afa007f915f1f8c9dbda7d924e7679d"
+      },
+      "map_identity_before": {
+        "bytes": 194935488,
+        "exists": true,
+        "file_count": 200,
+        "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/export_a",
+        "sha256": "264d3886f6486b30bb40a9a78a201fbd0afa007f915f1f8c9dbda7d924e7679d"
+      },
+      "peak_gpu_bytes": [
+        1643708928,
+        1643708928,
+        1643708928
+      ],
+      "query_count_per_run": 256,
+      "run_count": 3,
+      "runtime_s": [
+        13.363385756034404,
+        13.552236276911572,
+        13.572887700982392
+      ],
+      "safety_query_compatible": true,
+      "source_commit": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+      "status": "PASS_SAFETY_QUERY_COMPATIBILITY"
+    },
+    {
+      "map_id": "SAFER_OFFICIAL_FLIGHT",
+      "query_count_per_run": 0,
+      "run_count": 0,
+      "safety_query_compatible": "NOT_EVALUABLE",
+      "status": "NOT_EVALUABLE"
+    },
+    {
+      "map_id": "SAFER_OFFICIAL_OLD_UNION2",
+      "query_count_per_run": 0,
+      "run_count": 0,
+      "safety_query_compatible": "NOT_EVALUABLE",
+      "status": "NOT_EVALUABLE"
+    },
+    {
+      "map_id": "SAFER_OFFICIAL_STATUES",
+      "query_count_per_run": 0,
+      "run_count": 0,
+      "safety_query_compatible": "NOT_EVALUABLE",
+      "status": "NOT_EVALUABLE"
+    },
+    {
+      "map_id": "SAFER_OFFICIAL_STONEHENGE",
+      "query_count_per_run": 0,
+      "run_count": 0,
+      "safety_query_compatible": "NOT_EVALUABLE",
+      "status": "NOT_EVALUABLE"
+    }
+  ],
+  "process_count": 18,
+  "status": "PASS_READ_ONLY_SAFER_G0_REQUALIFICATION",
+  "wrapper_correction": {
+    "affected_map": "REPLICA_GT_FINE",
+    "original_failure_preserved": true,
+    "reason": "generic anisotropic probe did not recognize the certified uniform-sphere specialization; corrected without map or solver mutation"
+  }
+}

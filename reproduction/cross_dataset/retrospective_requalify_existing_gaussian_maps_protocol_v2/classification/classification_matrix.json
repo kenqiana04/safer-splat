@@ -1,0 +1,361 @@
+{
+  "gt_derived_n3_count": 1,
+  "learned_n2_count": 0,
+  "learned_n3_count": 0,
+  "maps": [
+    {
+      "ALLOWED_CLAIMS": [
+        "immutable map-instance evidence",
+        "static query compatibility when true",
+        "reference-bounded reconstruction diagnostics",
+        "limited-domain navigation qualification under the frozen PR #64 contract"
+      ],
+      "FORBIDDEN_CLAIMS": [
+        "algorithm stability",
+        "universal numeric qualification",
+        "full-space completeness from camera rays",
+        "navigation safety from G0 alone",
+        "legacy result overturned"
+      ],
+      "LEGACY_FORMAL_STATUS": "PASS frozen bounded static qualification",
+      "LEGACY_GATE": null,
+      "NATIVE_COMMON_PARITY_STATUS": "SEMANTIC_PARITY_ONLY",
+      "ONE_SIDED_RISK_STATUS": "DETERMINISTIC_ONE_SIDED_RISK_CERTIFICATE",
+      "PHYSICAL_BUDGET_STATUS": "PHYSICAL_ERROR_BUDGET_RESOLVED",
+      "REFERENCE_AUTHORITY": "A_DENSE_INDEPENDENT_GEOMETRY",
+      "RISK_COVERAGE_STATUS": "NOT_EVALUABLE",
+      "ROUTE_TUBE_STATUS": "PASS_CERTIFIED_ROUTE_TUBE",
+      "SAFETY_QUERY_COMPATIBLE": true,
+      "UNKNOWN_MODEL_STATUS": "NOT_APPLICABLE_GT_DERIVED_FULL_REFERENCE",
+      "V2_NAVIGATION_AXIS": "N3_LIMITED_DOMAIN_NAVIGATION_QUALIFIED",
+      "V2_RECONSTRUCTION_AXIS": "R3_GLOBAL_DENSE_RECONSTRUCTION_QUALIFIED",
+      "artifact_status": "AVAILABLE_FOR_READ_ONLY_RETROSPECTIVE_SCOPE",
+      "historical_boundary": "legacy result remains valid under legacy contract; V2 classification does not retroactively change history",
+      "learned": false,
+      "map_id": "REPLICA_GT_FINE",
+      "map_sha_after": "63b3281a3375e7178740184043e1af72e6ebaf2ca9fe9cf8f2bd5f59251c493e",
+      "map_sha_before": "63b3281a3375e7178740184043e1af72e6ebaf2ca9fe9cf8f2bd5f59251c493e"
+    },
+    {
+      "ALLOWED_CLAIMS": [
+        "immutable map-instance evidence",
+        "static query compatibility when true",
+        "reference-bounded reconstruction diagnostics"
+      ],
+      "FORBIDDEN_CLAIMS": [
+        "algorithm stability",
+        "universal numeric qualification",
+        "full-space completeness from camera rays",
+        "navigation safety from G0 alone",
+        "legacy result overturned"
+      ],
+      "LEGACY_FORMAL_STATUS": "negative geometry baseline",
+      "LEGACY_GATE": "AbsRel/delta1/ratio",
+      "NATIVE_COMMON_PARITY_STATUS": "SEMANTIC_PARITY_ONLY",
+      "ONE_SIDED_RISK_STATUS": "NOT_EVALUABLE",
+      "PHYSICAL_BUDGET_STATUS": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+      "REFERENCE_AUTHORITY": "A_DENSE_INDEPENDENT_GEOMETRY",
+      "RISK_COVERAGE_STATUS": "SINGLE_WORKING_POINT_ONLY",
+      "ROUTE_TUBE_STATUS": "ROUTE_COORDINATE_CONTRACT_UNRESOLVED",
+      "SAFETY_QUERY_COMPATIBLE": true,
+      "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_UNRESOLVED",
+      "V2_NAVIGATION_AXIS": "N1_NAVIGATION_DIAGNOSTIC_ONLY",
+      "V2_RECONSTRUCTION_AXIS": "R1_DIAGNOSTIC_RECONSTRUCTION",
+      "artifact_status": "AVAILABLE_FOR_READ_ONLY_RETROSPECTIVE_SCOPE",
+      "historical_boundary": "legacy result remains valid under legacy contract; V2 classification does not retroactively change history",
+      "learned": true,
+      "map_id": "REPLICA_SPLATFACTO",
+      "map_sha_after": "214ff483b6c2eb84d69e7604a1ecfdcba0506d7de11263e2caca44c048973c94",
+      "map_sha_before": "214ff483b6c2eb84d69e7604a1ecfdcba0506d7de11263e2caca44c048973c94"
+    },
+    {
+      "ALLOWED_CLAIMS": [
+        "immutable map-instance evidence",
+        "static query compatibility when true",
+        "reference-bounded reconstruction diagnostics"
+      ],
+      "FORBIDDEN_CLAIMS": [
+        "algorithm stability",
+        "universal numeric qualification",
+        "full-space completeness from camera rays",
+        "navigation safety from G0 alone",
+        "legacy result overturned"
+      ],
+      "LEGACY_FORMAL_STATUS": "geometry failed; no navigation qualification",
+      "LEGACY_GATE": "depth geometry and map drift",
+      "NATIVE_COMMON_PARITY_STATUS": "NOT_EVALUABLE",
+      "ONE_SIDED_RISK_STATUS": "NOT_EVALUABLE",
+      "PHYSICAL_BUDGET_STATUS": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+      "REFERENCE_AUTHORITY": "B_OBSERVABLE_RAY_REFERENCE",
+      "RISK_COVERAGE_STATUS": "NOT_EVALUABLE",
+      "ROUTE_TUBE_STATUS": "NOT_EVALUABLE",
+      "SAFETY_QUERY_COMPATIBLE": "NOT_EVALUABLE",
+      "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_UNRESOLVED",
+      "V2_NAVIGATION_AXIS": "N0_NOT_EVALUABLE",
+      "V2_RECONSTRUCTION_AXIS": "R1_DIAGNOSTIC_RECONSTRUCTION",
+      "artifact_status": "ARTIFACT_UNAVAILABLE_FOR_RETROSPECTIVE_EVALUATION",
+      "historical_boundary": "legacy result remains valid under legacy contract; V2 classification does not retroactively change history",
+      "learned": true,
+      "map_id": "TUM_SPLATFACTO_NEGATIVE",
+      "map_sha_after": null,
+      "map_sha_before": null
+    },
+    {
+      "ALLOWED_CLAIMS": [
+        "immutable map-instance evidence",
+        "static query compatibility when true",
+        "reference-bounded reconstruction diagnostics"
+      ],
+      "FORBIDDEN_CLAIMS": [
+        "algorithm stability",
+        "universal numeric qualification",
+        "full-space completeness from camera rays",
+        "navigation safety from G0 alone",
+        "legacy result overturned"
+      ],
+      "LEGACY_FORMAL_STATUS": "failed frozen delta1 0.75 by 0.00603",
+      "LEGACY_GATE": "delta1 only",
+      "NATIVE_COMMON_PARITY_STATUS": "SEMANTIC_PARITY_ONLY",
+      "ONE_SIDED_RISK_STATUS": "NOT_EVALUABLE",
+      "PHYSICAL_BUDGET_STATUS": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+      "REFERENCE_AUTHORITY": "A_DENSE_INDEPENDENT_GEOMETRY",
+      "RISK_COVERAGE_STATUS": "SINGLE_WORKING_POINT_ONLY",
+      "ROUTE_TUBE_STATUS": "ROUTE_COORDINATE_CONTRACT_UNRESOLVED",
+      "SAFETY_QUERY_COMPATIBLE": true,
+      "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_UNRESOLVED",
+      "V2_NAVIGATION_AXIS": "N1_NAVIGATION_DIAGNOSTIC_ONLY",
+      "V2_RECONSTRUCTION_AXIS": "R1_DIAGNOSTIC_RECONSTRUCTION",
+      "artifact_status": "AVAILABLE_FOR_READ_ONLY_RETROSPECTIVE_SCOPE",
+      "historical_boundary": "legacy result remains valid under legacy contract; V2 classification does not retroactively change history",
+      "learned": true,
+      "map_id": "REPLICA_SPLATAM_60",
+      "map_sha_after": "4520bd9faf8f260438ff7ad55ab13b46437cdfe5c076f1600790cea5bc0547c5",
+      "map_sha_before": "4520bd9faf8f260438ff7ad55ab13b46437cdfe5c076f1600790cea5bc0547c5"
+    },
+    {
+      "ALLOWED_CLAIMS": [
+        "immutable map-instance evidence",
+        "static query compatibility when true",
+        "reference-bounded reconstruction diagnostics"
+      ],
+      "FORBIDDEN_CLAIMS": [
+        "algorithm stability",
+        "universal numeric qualification",
+        "full-space completeness from camera rays",
+        "navigation safety from G0 alone",
+        "legacy result overturned"
+      ],
+      "LEGACY_FORMAL_STATUS": "NO_ARKITSCENES_M1_LEARNED_GAUSSIAN_MAP_QUALIFIED_UNDER_FROZEN_CONTRACT",
+      "LEGACY_GATE": "global coverage 0.95 only",
+      "NATIVE_COMMON_PARITY_STATUS": "NATIVE_ONLY",
+      "ONE_SIDED_RISK_STATUS": "NOT_EVALUABLE",
+      "PHYSICAL_BUDGET_STATUS": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+      "REFERENCE_AUTHORITY": "B_OBSERVABLE_RAY_REFERENCE",
+      "RISK_COVERAGE_STATUS": "COMPLETE_FIXED_ALPHA_CURVE",
+      "ROUTE_TUBE_STATUS": "NOT_EVALUABLE",
+      "SAFETY_QUERY_COMPATIBLE": true,
+      "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_DIAGNOSTIC_ONLY",
+      "V2_NAVIGATION_AXIS": "N0_NOT_EVALUABLE",
+      "V2_RECONSTRUCTION_AXIS": "R2_GLOBAL_RECONSTRUCTION_CANDIDATE",
+      "artifact_status": "AVAILABLE_FOR_READ_ONLY_RETROSPECTIVE_SCOPE",
+      "historical_boundary": "legacy result remains valid under legacy contract; V2 classification does not retroactively change history",
+      "learned": true,
+      "map_id": "ARKITSCENES_M1_SPLATAM",
+      "map_sha_after": "86ba75c9db0fab1a5eb7d65da82454514419a30d7bea6df68b2bbc0518000193",
+      "map_sha_before": "86ba75c9db0fab1a5eb7d65da82454514419a30d7bea6df68b2bbc0518000193"
+    },
+    {
+      "ALLOWED_CLAIMS": [
+        "immutable map-instance evidence",
+        "static query compatibility when true",
+        "reference-bounded reconstruction diagnostics"
+      ],
+      "FORBIDDEN_CLAIMS": [
+        "algorithm stability",
+        "universal numeric qualification",
+        "full-space completeness from camera rays",
+        "navigation safety from G0 alone",
+        "legacy result overturned"
+      ],
+      "LEGACY_FORMAL_STATUS": "static-qualified map; navigation progress limitation",
+      "LEGACY_GATE": "navigation protocol/progress, not solely geometry",
+      "NATIVE_COMMON_PARITY_STATUS": "NUMERIC_PARITY_PASS",
+      "ONE_SIDED_RISK_STATUS": "NOT_EVALUABLE",
+      "PHYSICAL_BUDGET_STATUS": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+      "REFERENCE_AUTHORITY": "B_OBSERVABLE_RAY_REFERENCE",
+      "RISK_COVERAGE_STATUS": "SINGLE_HISTORICAL_GEOMETRY_EVIDENCE_ONLY",
+      "ROUTE_TUBE_STATUS": "NOT_EVALUABLE",
+      "SAFETY_QUERY_COMPATIBLE": true,
+      "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_UNRESOLVED",
+      "V2_NAVIGATION_AXIS": "N0_NOT_EVALUABLE",
+      "V2_RECONSTRUCTION_AXIS": "R1_DIAGNOSTIC_RECONSTRUCTION",
+      "artifact_status": "AVAILABLE_FOR_READ_ONLY_RETROSPECTIVE_SCOPE",
+      "historical_boundary": "legacy result remains valid under legacy contract; V2 classification does not retroactively change history",
+      "learned": true,
+      "map_id": "TUM_SPLATAM_FORMAL",
+      "map_sha_after": "cb4a8f133a4ce4063f60112fa9689db683988be29f67b9d570231a319849a36f",
+      "map_sha_before": "cb4a8f133a4ce4063f60112fa9689db683988be29f67b9d570231a319849a36f"
+    },
+    {
+      "ALLOWED_CLAIMS": [
+        "immutable map-instance evidence",
+        "static query compatibility when true",
+        "reference-bounded reconstruction diagnostics"
+      ],
+      "FORBIDDEN_CLAIMS": [
+        "algorithm stability",
+        "universal numeric qualification",
+        "full-space completeness from camera rays",
+        "navigation safety from G0 alone",
+        "legacy result overturned"
+      ],
+      "LEGACY_FORMAL_STATUS": "adapter/query compatible; no route qualification",
+      "LEGACY_GATE": "independent route/reference evidence unresolved",
+      "NATIVE_COMMON_PARITY_STATUS": "NUMERIC_PARITY_PASS",
+      "ONE_SIDED_RISK_STATUS": "NOT_EVALUABLE",
+      "PHYSICAL_BUDGET_STATUS": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+      "REFERENCE_AUTHORITY": "B_OBSERVABLE_RAY_REFERENCE",
+      "RISK_COVERAGE_STATUS": "SINGLE_HISTORICAL_GEOMETRY_EVIDENCE_ONLY",
+      "ROUTE_TUBE_STATUS": "NOT_EVALUABLE",
+      "SAFETY_QUERY_COMPATIBLE": true,
+      "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_UNRESOLVED",
+      "V2_NAVIGATION_AXIS": "N0_NOT_EVALUABLE",
+      "V2_RECONSTRUCTION_AXIS": "R1_DIAGNOSTIC_RECONSTRUCTION",
+      "artifact_status": "AVAILABLE_FOR_READ_ONLY_RETROSPECTIVE_SCOPE",
+      "historical_boundary": "legacy result remains valid under legacy contract; V2 classification does not retroactively change history",
+      "learned": true,
+      "map_id": "TUM_GAUSSIAN_SLAM",
+      "map_sha_after": "264d3886f6486b30bb40a9a78a201fbd0afa007f915f1f8c9dbda7d924e7679d",
+      "map_sha_before": "264d3886f6486b30bb40a9a78a201fbd0afa007f915f1f8c9dbda7d924e7679d"
+    },
+    {
+      "ALLOWED_CLAIMS": [
+        "immutable map-instance evidence",
+        "static query compatibility when true",
+        "reference-bounded reconstruction diagnostics"
+      ],
+      "FORBIDDEN_CLAIMS": [
+        "algorithm stability",
+        "universal numeric qualification",
+        "full-space completeness from camera rays",
+        "navigation safety from G0 alone",
+        "legacy result overturned"
+      ],
+      "LEGACY_FORMAL_STATUS": "native interface example",
+      "LEGACY_GATE": null,
+      "NATIVE_COMMON_PARITY_STATUS": "NOT_EVALUABLE",
+      "ONE_SIDED_RISK_STATUS": "NOT_EVALUABLE",
+      "PHYSICAL_BUDGET_STATUS": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+      "REFERENCE_AUTHORITY": "C_INTERFACE_ONLY",
+      "RISK_COVERAGE_STATUS": "NOT_EVALUABLE",
+      "ROUTE_TUBE_STATUS": "NOT_EVALUABLE",
+      "SAFETY_QUERY_COMPATIBLE": "NOT_EVALUABLE",
+      "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_UNRESOLVED",
+      "V2_NAVIGATION_AXIS": "N0_NOT_EVALUABLE",
+      "V2_RECONSTRUCTION_AXIS": "R1_DIAGNOSTIC_RECONSTRUCTION",
+      "artifact_status": "ARTIFACT_UNAVAILABLE_FOR_RETROSPECTIVE_EVALUATION",
+      "historical_boundary": "legacy result remains valid under legacy contract; V2 classification does not retroactively change history",
+      "learned": true,
+      "map_id": "SAFER_OFFICIAL_FLIGHT",
+      "map_sha_after": null,
+      "map_sha_before": null
+    },
+    {
+      "ALLOWED_CLAIMS": [
+        "immutable map-instance evidence",
+        "static query compatibility when true",
+        "reference-bounded reconstruction diagnostics"
+      ],
+      "FORBIDDEN_CLAIMS": [
+        "algorithm stability",
+        "universal numeric qualification",
+        "full-space completeness from camera rays",
+        "navigation safety from G0 alone",
+        "legacy result overturned"
+      ],
+      "LEGACY_FORMAL_STATUS": "native interface example",
+      "LEGACY_GATE": null,
+      "NATIVE_COMMON_PARITY_STATUS": "NOT_EVALUABLE",
+      "ONE_SIDED_RISK_STATUS": "NOT_EVALUABLE",
+      "PHYSICAL_BUDGET_STATUS": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+      "REFERENCE_AUTHORITY": "C_INTERFACE_ONLY",
+      "RISK_COVERAGE_STATUS": "NOT_EVALUABLE",
+      "ROUTE_TUBE_STATUS": "NOT_EVALUABLE",
+      "SAFETY_QUERY_COMPATIBLE": "NOT_EVALUABLE",
+      "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_UNRESOLVED",
+      "V2_NAVIGATION_AXIS": "N0_NOT_EVALUABLE",
+      "V2_RECONSTRUCTION_AXIS": "R1_DIAGNOSTIC_RECONSTRUCTION",
+      "artifact_status": "ARTIFACT_UNAVAILABLE_FOR_RETROSPECTIVE_EVALUATION",
+      "historical_boundary": "legacy result remains valid under legacy contract; V2 classification does not retroactively change history",
+      "learned": true,
+      "map_id": "SAFER_OFFICIAL_OLD_UNION2",
+      "map_sha_after": null,
+      "map_sha_before": null
+    },
+    {
+      "ALLOWED_CLAIMS": [
+        "immutable map-instance evidence",
+        "static query compatibility when true",
+        "reference-bounded reconstruction diagnostics"
+      ],
+      "FORBIDDEN_CLAIMS": [
+        "algorithm stability",
+        "universal numeric qualification",
+        "full-space completeness from camera rays",
+        "navigation safety from G0 alone",
+        "legacy result overturned"
+      ],
+      "LEGACY_FORMAL_STATUS": "native interface example",
+      "LEGACY_GATE": null,
+      "NATIVE_COMMON_PARITY_STATUS": "NOT_EVALUABLE",
+      "ONE_SIDED_RISK_STATUS": "NOT_EVALUABLE",
+      "PHYSICAL_BUDGET_STATUS": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+      "REFERENCE_AUTHORITY": "C_INTERFACE_ONLY",
+      "RISK_COVERAGE_STATUS": "NOT_EVALUABLE",
+      "ROUTE_TUBE_STATUS": "NOT_EVALUABLE",
+      "SAFETY_QUERY_COMPATIBLE": "NOT_EVALUABLE",
+      "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_UNRESOLVED",
+      "V2_NAVIGATION_AXIS": "N0_NOT_EVALUABLE",
+      "V2_RECONSTRUCTION_AXIS": "R1_DIAGNOSTIC_RECONSTRUCTION",
+      "artifact_status": "ARTIFACT_UNAVAILABLE_FOR_RETROSPECTIVE_EVALUATION",
+      "historical_boundary": "legacy result remains valid under legacy contract; V2 classification does not retroactively change history",
+      "learned": true,
+      "map_id": "SAFER_OFFICIAL_STATUES",
+      "map_sha_after": null,
+      "map_sha_before": null
+    },
+    {
+      "ALLOWED_CLAIMS": [
+        "immutable map-instance evidence",
+        "static query compatibility when true",
+        "reference-bounded reconstruction diagnostics"
+      ],
+      "FORBIDDEN_CLAIMS": [
+        "algorithm stability",
+        "universal numeric qualification",
+        "full-space completeness from camera rays",
+        "navigation safety from G0 alone",
+        "legacy result overturned"
+      ],
+      "LEGACY_FORMAL_STATUS": "native interface example",
+      "LEGACY_GATE": null,
+      "NATIVE_COMMON_PARITY_STATUS": "NOT_EVALUABLE",
+      "ONE_SIDED_RISK_STATUS": "NOT_EVALUABLE",
+      "PHYSICAL_BUDGET_STATUS": "PHYSICAL_ERROR_BUDGET_UNRESOLVED",
+      "REFERENCE_AUTHORITY": "C_INTERFACE_ONLY",
+      "RISK_COVERAGE_STATUS": "NOT_EVALUABLE",
+      "ROUTE_TUBE_STATUS": "NOT_EVALUABLE",
+      "SAFETY_QUERY_COMPATIBLE": "NOT_EVALUABLE",
+      "UNKNOWN_MODEL_STATUS": "UNKNOWN_MODEL_UNRESOLVED",
+      "V2_NAVIGATION_AXIS": "N0_NOT_EVALUABLE",
+      "V2_RECONSTRUCTION_AXIS": "R1_DIAGNOSTIC_RECONSTRUCTION",
+      "artifact_status": "ARTIFACT_UNAVAILABLE_FOR_RETROSPECTIVE_EVALUATION",
+      "historical_boundary": "legacy result remains valid under legacy contract; V2 classification does not retroactively change history",
+      "learned": true,
+      "map_id": "SAFER_OFFICIAL_STONEHENGE",
+      "map_sha_after": null,
+      "map_sha_before": null
+    }
+  ],
+  "universal_numeric_gate": "NO_UNIVERSAL_NUMERIC_GATE_JUSTIFIED_BY_CURRENT_EVIDENCE"
+}

@@ -1,0 +1,84 @@
+{
+  "completed_map_count": 1,
+  "definition": "e_plus(x)=max(0,d_map(x)-d_ref(x))",
+  "maps": [
+    {
+      "definition": "e_plus=max(0,d_map-d_ref)",
+      "empirical_only": false,
+      "map_id": "REPLICA_GT_FINE",
+      "status": "DETERMINISTIC_ONE_SIDED_RISK_CERTIFICATE",
+      "upper_bound_identified": true,
+      "upper_bound_within_budget": true
+    },
+    {
+      "definition": "e_plus=max(0,d_map-d_ref)",
+      "empirical_only": false,
+      "map_id": "REPLICA_SPLATFACTO",
+      "status": "NOT_EVALUABLE",
+      "upper_bound_identified": false
+    },
+    {
+      "definition": "e_plus=max(0,d_map-d_ref)",
+      "empirical_only": false,
+      "map_id": "TUM_SPLATFACTO_NEGATIVE",
+      "status": "NOT_EVALUABLE",
+      "upper_bound_identified": false
+    },
+    {
+      "definition": "e_plus=max(0,d_map-d_ref)",
+      "empirical_only": false,
+      "map_id": "REPLICA_SPLATAM_60",
+      "status": "NOT_EVALUABLE",
+      "upper_bound_identified": false
+    },
+    {
+      "definition": "e_plus=max(0,d_map-d_ref)",
+      "empirical_only": false,
+      "map_id": "ARKITSCENES_M1_SPLATAM",
+      "status": "NOT_EVALUABLE",
+      "upper_bound_identified": false
+    },
+    {
+      "definition": "e_plus=max(0,d_map-d_ref)",
+      "empirical_only": false,
+      "map_id": "TUM_SPLATAM_FORMAL",
+      "status": "NOT_EVALUABLE",
+      "upper_bound_identified": false
+    },
+    {
+      "definition": "e_plus=max(0,d_map-d_ref)",
+      "empirical_only": false,
+      "map_id": "TUM_GAUSSIAN_SLAM",
+      "status": "NOT_EVALUABLE",
+      "upper_bound_identified": false
+    },
+    {
+      "definition": "e_plus=max(0,d_map-d_ref)",
+      "empirical_only": false,
+      "map_id": "SAFER_OFFICIAL_FLIGHT",
+      "status": "NOT_EVALUABLE",
+      "upper_bound_identified": false
+    },
+    {
+      "definition": "e_plus=max(0,d_map-d_ref)",
+      "empirical_only": false,
+      "map_id": "SAFER_OFFICIAL_OLD_UNION2",
+      "status": "NOT_EVALUABLE",
+      "upper_bound_identified": false
+    },
+    {
+      "definition": "e_plus=max(0,d_map-d_ref)",
+      "empirical_only": false,
+      "map_id": "SAFER_OFFICIAL_STATUES",
+      "status": "NOT_EVALUABLE",
+      "upper_bound_identified": false
+    },
+    {
+      "definition": "e_plus=max(0,d_map-d_ref)",
+      "empirical_only": false,
+      "map_id": "SAFER_OFFICIAL_STONEHENGE",
+      "status": "NOT_EVALUABLE",
+      "upper_bound_identified": false
+    }
+  ]
+}
