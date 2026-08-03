@@ -1,0 +1,37 @@
+{
+  "candidate": "M1_CONFIDENCE_GE1",
+  "definition": "(depth_raw > 0) AND (confidence >= 1)",
+  "forbidden_alternatives": [
+    "M0",
+    "M2",
+    "new confidence threshold",
+    "crop",
+    "morphology",
+    "frame deletion",
+    "frame substitution"
+  ],
+  "m0_error_gt_0_30_confidence0_fraction": 0.9875578052998925,
+  "m1_exact": {
+    "longest_unsupported_run": 4,
+    "max_m": 0.6737809777259827,
+    "median_m": 0.012361899949610233,
+    "p95_m": 0.06020478531718254,
+    "p99_m": 0.11765064597129882,
+    "retention": 0.8820455675927278,
+    "supported_frames": 210,
+    "valid_pixels": 9277821,
+    "zero_valid_indices": [
+      76,
+      79
+    ]
+  },
+  "m1_geometry_pass": true,
+  "only_candidate": true,
+  "selection_rationale": [
+    "M0 fails the unchanged p99 <= 0.30 m geometry gate.",
+    "M1 passes geometry and retains more pixels with fewer zero-valid frames than M2.",
+    "M2 is not reconsidered in this post-audit revision.",
+    "98.75578052998925% of the M0 error>0.30m tail has confidence 0."
+  ],
+  "status": "PASS_M1_ONLY_CANDIDATE_FREEZE"
+}

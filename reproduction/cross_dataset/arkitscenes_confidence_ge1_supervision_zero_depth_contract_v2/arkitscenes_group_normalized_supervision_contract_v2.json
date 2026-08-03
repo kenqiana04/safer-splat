@@ -1,0 +1,25 @@
+{
+  "candidate": "M1_CONFIDENCE_GE1",
+  "classification": "POST_AUDIT_PRETRAINING_PROTOCOL_REVISION",
+  "forbidden": [
+    "floor",
+    "group exemption",
+    "split group",
+    "merge group",
+    "delete frame",
+    "HELDOUT supplementation"
+  ],
+  "pass": true,
+  "result_path": "arkitscenes_m1_supervision_v2_validation.json",
+  "revised_gate_only": {
+    "group_supported_count": "S_g >= max(1, ceil(0.80*N_g))"
+  },
+  "status": "PASS_ARKITSCENES_M1_SUPERVISION_V2",
+  "unchanged_gates": {
+    "frame_supported_definition": "M1_valid_pixels_frame >= max(1024, 0.05*M0_positive_pixels_frame)",
+    "global_pixel_retention_min": 0.3,
+    "global_supported_frame_fraction_min": 0.9,
+    "longest_consecutive_unsupported_run_max": 5,
+    "per_group_pixel_retention_min": 0.2
+  }
+}

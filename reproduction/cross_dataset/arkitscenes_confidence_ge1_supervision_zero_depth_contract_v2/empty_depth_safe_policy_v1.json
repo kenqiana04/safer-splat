@@ -1,0 +1,35 @@
+{
+  "depth_validity_contract": "DEPTH_GT_ZERO_AND_CONFIDENCE_GE1",
+  "first_frame": {
+    "automatic_replacement": false,
+    "failure_if_empty": "INITIAL_FRAME_ZERO_DEPTH_UNSUPPORTED",
+    "must_be_nonempty": true,
+    "verified_m1_valid_count": 49152
+  },
+  "later_empty": {
+    "compensation_iterations": false,
+    "depth_initialization": false,
+    "depth_loss": "predicted_depth.sum()*0.0",
+    "event": "EMPTY_DEPTH_SAFE_SKIP_DEPTH_INITIALIZATION",
+    "frame_pose_rgb_intrinsics_retained": true,
+    "frame_skip": false,
+    "new_gaussians": 0,
+    "pose_scale_intrinsics_change": false,
+    "pseudo_or_neighbor_depth": false,
+    "rgb_supervision_retained": true
+  },
+  "mapper_role": "SPLATAM_DERIVED_GT_POSE_MAP_ONLY_WITH_EMPTY_DEPTH_SAFE_COMPATIBILITY",
+  "name": "SPLATAM_GT_POSE_MAP_ONLY_WITH_CONFIDENCE_GE1_AND_EMPTY_DEPTH_SAFE_COMPATIBILITY",
+  "nonempty": {
+    "iterations_densification_pruning_unchanged": true,
+    "official_loss_formula": true,
+    "point_initialization_delegated": true,
+    "rgb_silhouette_weights_unchanged": true
+  },
+  "not_official_unmodified_baseline": true,
+  "status": "PASS_EMPTY_DEPTH_SAFE_POLICY_FREEZE",
+  "zero_valid_frames": [
+    76,
+    79
+  ]
+}

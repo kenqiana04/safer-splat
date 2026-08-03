@@ -1,0 +1,82 @@
+{
+  "case_count": 4,
+  "cases": [
+    {
+      "compat_depth": 0.0,
+      "compat_depth_finite": true,
+      "compat_total_finite": true,
+      "device": "cpu",
+      "dtype": "float32",
+      "gradient_finite": true,
+      "gradient_max_abs": 0.0,
+      "metadata": {
+        "depth_event": "EMPTY_DEPTH_SAFE_SKIP_DEPTH_INITIALIZATION",
+        "empty_depth_safe": true,
+        "valid_depth_count": 0
+      },
+      "official_depth_finite": false,
+      "pass": true,
+      "rgb_finite": true
+    },
+    {
+      "compat_depth": 0.0,
+      "compat_depth_finite": true,
+      "compat_total_finite": true,
+      "device": "cpu",
+      "dtype": "float64",
+      "gradient_finite": true,
+      "gradient_max_abs": 0.0,
+      "metadata": {
+        "depth_event": "EMPTY_DEPTH_SAFE_SKIP_DEPTH_INITIALIZATION",
+        "empty_depth_safe": true,
+        "valid_depth_count": 0
+      },
+      "official_depth_finite": false,
+      "pass": true,
+      "rgb_finite": true
+    },
+    {
+      "compat_depth": 0.0,
+      "compat_depth_finite": true,
+      "compat_total_finite": true,
+      "device": "cuda:0",
+      "dtype": "float32",
+      "gradient_finite": true,
+      "gradient_max_abs": 0.0,
+      "metadata": {
+        "depth_event": "EMPTY_DEPTH_SAFE_SKIP_DEPTH_INITIALIZATION",
+        "empty_depth_safe": true,
+        "valid_depth_count": 0
+      },
+      "official_depth_finite": false,
+      "pass": true,
+      "rgb_finite": true
+    },
+    {
+      "compat_depth": 0.0,
+      "compat_depth_finite": true,
+      "compat_total_finite": true,
+      "device": "cuda:0",
+      "dtype": "float64",
+      "gradient_finite": true,
+      "gradient_max_abs": 0.0,
+      "metadata": {
+        "depth_event": "EMPTY_DEPTH_SAFE_SKIP_DEPTH_INITIALIZATION",
+        "empty_depth_safe": true,
+        "valid_depth_count": 0
+      },
+      "official_depth_finite": false,
+      "pass": true,
+      "rgb_finite": true
+    }
+  ],
+  "devices": [
+    "cpu",
+    "cuda:0"
+  ],
+  "optimizer_count": 0,
+  "parameter_update_count": 0,
+  "pass": true,
+  "status": "PASS_ZERO_MASK_SYNTHETIC_VALIDATION",
+  "synthetic_backward_count": 4
+}
