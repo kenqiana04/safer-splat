@@ -1,0 +1,51 @@
+{
+  "status": "PROTOCOL_V2_FUTURE_EVALUATOR_PATH_FEASIBLE",
+  "integrity": [
+    "identity",
+    "no leakage",
+    "pose/intrinsics",
+    "finite values",
+    "deterministic export",
+    "map immutability",
+    "zero reference access during training"
+  ],
+  "native_common_parity": [
+    "official 3DGS native renderer",
+    "project common renderer",
+    "same cameras/masks",
+    "no favorable-channel selection"
+  ],
+  "risk_coverage_alpha_grid": [
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    0.95
+  ],
+  "universal_hard_gate": false,
+  "official_geometry": [
+    "accuracy",
+    "completeness",
+    "F-score",
+    "official visibility support",
+    "multi-tolerance reporting"
+  ],
+  "navigation_conditioned": [
+    "deployable UNKNOWN",
+    "reference-only route tube",
+    "one-sided e_plus",
+    "physical budget",
+    "independent swept-body oracle",
+    "G0 separate"
+  ],
+  "nvs": [
+    "rig heldout descriptive",
+    "DSLR cross-view descriptive"
+  ]
+}

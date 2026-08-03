@@ -1,0 +1,20 @@
+{
+  "status": "ROBOT_ROUTE_ENTRY_PATH_FEASIBLE_PENDING_REFERENCE_ASSET_AUDIT",
+  "target_claim": "REAL_WORLD_SCENE_MAP_WITH_ORACLE_STATE_SIMULATED_NAVIGATION",
+  "real_robot_safety_claim": false,
+  "project_benchmark_design": {
+    "state": "6D free-3D double integrator",
+    "integration": "forward Euler",
+    "dt_s": 0.05,
+    "robot": "sphere",
+    "radius_m": 0.1,
+    "epsilon_base_m": 0.01,
+    "component_vmax_mps": 0.1,
+    "component_umax_mps2": 0.1,
+    "controller": "bounded QP",
+    "collision_oracle": "independent swept sphere"
+  },
+  "not_eth3d_official_robot": true,
+  "camera_path_is_robot_route": false,
+  "sphere_fit": "plausible from indoor metadata only; must be measured against reference geometry before training"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS_NONCOMMERCIAL_ACADEMIC_COMPATIBILITY",
+  "eth3d_data_license": "CC BY-NC-SA 4.0",
+  "eth3d_license_authority": "https://www.eth3d.net/",
+  "official_3dgs_license": "Gaussian-Splatting License; research/evaluation and non-commercial use only",
+  "official_3dgs_license_sha256": "c5ba70a2194af2aefe85dfe3da68608dcb3abd21a3aa53b55aa297c2f0b60eb3",
+  "current_noncommercial_academic_research_allowed": true,
+  "local_processing_allowed": true,
+  "small_derived_statistics_and_figures_allowed": true,
+  "raw_payload_in_git_allowed": false,
+  "attribution_required": true,
+  "share_alike_required_for_adapted_eth3d_material": true,
+  "commercial_use_allowed": false,
+  "trained_map_publication": "CONDITIONAL_ONLY: treat a distributed map as adapted ETH3D material; keep it non-commercial, apply CC BY-NC-SA 4.0, provide ETH3D attribution/citation and source-scene identity, and preserve applicable 3DGS license notices. Obtain separate legal review or permission for any broader use.",
+  "sha_and_scripts_only_publication_allowed": true,
+  "citation_requirements": [
+    "Schops et al., CVPR 2017 ETH3D MVS paper",
+    "Kerbl et al., 3D Gaussian Splatting paper",
+    "license notices"
+  ],
+  "legal_character": "research protocol interpretation, not legal advice"
+}

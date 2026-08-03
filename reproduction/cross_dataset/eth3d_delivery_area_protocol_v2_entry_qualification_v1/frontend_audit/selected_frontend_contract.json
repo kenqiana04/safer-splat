@@ -1,0 +1,23 @@
+{
+  "status": "SELECTED",
+  "selected_frontend": "OFFICIAL_3DGS_COLMAP_RGB_ONLY",
+  "commit": "54c035f7834b564019656c3e3fcc3646292f727d",
+  "mapping_inputs": [
+    "TRAIN RGB",
+    "official intrinsics",
+    "official poses",
+    "image-only COLMAP points3D"
+  ],
+  "forbidden_inputs": [
+    "ETH3D rendered depth",
+    "scan_raw",
+    "scan_clean",
+    "scan_eval",
+    "occlusion",
+    "stereo_pairs_gt",
+    "heldout RGB"
+  ],
+  "future_environment_qualification_required": true,
+  "future_smoke_required": true,
+  "training_authorized": false
+}

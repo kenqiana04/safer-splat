@@ -1,0 +1,12 @@
+{
+  "status": "PHYSICAL_BUDGET_DERIVATION_PATH_FEASIBLE",
+  "inequality": "UpperBound[e_plus | route tube] <= B_map_available",
+  "B_map_available": "reference clearance margin - epsilon_loc - epsilon_shape - epsilon_sampled - epsilon_stop - epsilon_tracking",
+  "epsilon_loc_m": 0.0,
+  "epsilon_loc_scope": "oracle-state simulation only",
+  "real_world_localization_claim": false,
+  "other_terms": "must be derived later from sphere geometry, Euler dt, v/u bounds, QP, and waypoint tracking contract",
+  "arbitrary_centimeter_gate": false,
+  "numeric_budget_closed": false,
+  "stop_if_reference_clearance_unavailable": true
+}

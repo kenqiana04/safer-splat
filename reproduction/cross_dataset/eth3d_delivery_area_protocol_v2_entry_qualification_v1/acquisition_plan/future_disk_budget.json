@@ -1,0 +1,17 @@
+{
+  "status": "PROJECT_ESTIMATE_PENDING_ARCHIVE_LISTING",
+  "whitelist_compressed_bytes_exact_from_head": 2435222146,
+  "expected_expanded_bytes_estimate": 7916846285,
+  "future_task_reservation_bytes": 30000000000,
+  "future_task_reservation_gb_decimal": 30.0,
+  "reservation_includes": [
+    "archives",
+    "extraction",
+    "COLMAP directory adaptation",
+    "evaluation working data",
+    "temporary verification",
+    "later model-output planning headroom"
+  ],
+  "current_task_new_disk_limit_bytes": 1073741824,
+  "current_task_dataset_payload_bytes": 0
+}

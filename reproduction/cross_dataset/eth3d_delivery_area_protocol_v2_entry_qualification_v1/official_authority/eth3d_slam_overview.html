@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head -->
+<meta name="description" content="ETH3D">
+<meta name="author" content="Computer Vision and Geometry Group, ETH Zurich">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+<title>Overview - ETH3D</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+<!-- Custom styles for this page -->
+<link href="css/theme.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/" style="font-size:26px;line-height:20px">ETH3D</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Stereo <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/overview">Overview</a></li>
+            <li><a href="/documentation">Documentation</a></li>
+            <li><a href="/datasets">Datasets</a></li>
+            <li><a href="/high_res_multi_view">High-res multi-view benchmark</a></li>
+            <li><a href="/low_res_many_view">Low-res many-view benchmark</a></li>
+            <li><a href="/low_res_two_view">Low-res two-view benchmark</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SLAM <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="active"><a href="/slam_overview">Overview</a></li>
+            <li><a href="/slam_documentation">Documentation</a></li>
+            <li><a href="/slam_datasets">Datasets</a></li>
+            <li><a href="/slam_benchmark">Benchmark</a></li>
+          </ul>
+        </li>
+        <li><a href="/about">About</a></li><li><a href="/login">Submit</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<noscript>
+  <div class="alert alert-danger" role="alert">
+    <b>Javascript disabled</b><br/>
+    This page does not display correctly without Javascript. Please enable it in your browser.
+  </div>
+</noscript>
+
+<div class="container theme-showcase" role="main">
+  <div class="page-header"><h1>SLAM Benchmark Overview</h1></div>
+  
+  <div class="row">
+    <div class="col-lg-4" style="margin-bottom: 20px;text-align: center;">
+      <img class="img-circle" src="img/teaser-challenges.png" alt="" width="140" height="140">
+      <h2>Synchronized global shutter cameras</h2>
+      <ul style="padding-left: 20px;">
+        <li>No rolling shutter modeling required.</li>
+        <li>Images of different cameras can be directly used to estimate a single pose.</li>
+      </ul>
+    </div>
+    <div class="col-lg-4" style="margin-bottom: 20px;text-align: center;">
+      <img class="img-circle" src="img/teaser-calibration.png" alt="" width="140" height="140">
+      <h2>Accurate calibration</h2>
+      <ul style="padding-left: 20px;">
+        <li>Generic camera model.</li>
+        <li>Undistorted images provided for convenience.</li>
+      </ul>
+    </div>
+    <div class="col-lg-4" style="margin-bottom: 20px;text-align: center;">
+      <img class="img-circle" src="img/teaser-visualization-slam.png" alt="" width="140" height="140">
+      <h2>Rich visualizations</h2>
+      <ul style="padding-left: 20px;">
+        <li>Interactive cumulative result graphs for comparing methods.</li>
+        <li>3D trajectory display of all individual results.</li>
+      </ul>
+    </div>
+  </div>
+  
+  <p>
+    The <b>SLAM</b> benchmark consists of videos recorded with a custom camera rig that can be used to evaluate visual-inertial mono, stereo, and RGB-D SLAM.<br/>
+    56 training and 35 test datasets were recorded in a motion capturing system which provides ground truth poses.<br/>
+    5 additional training sequences were recorded outside of this system, for which ground truth was determined using Structure-from-Motion.<br/>
+  </p>
+  <p>
+    For a detailed description of the data and the format in which it is provided, see <a href="/slam_documentation">Documentation</a>.<br/>
+    For downloading the datasets, go to <a href="/slam_datasets">Datasets</a>.<br/>
+    The benchmark results are displayed on the <a href="/slam_benchmark">Benchmark</a> page.<br/>
+    For open-source code associated with the BAD SLAM paper, see the <a href="https://github.com/ETH3D">ETH3D project on GitHub</a>.
+  </p>
+</div>
+
+
+  <br/><br/>
+  <footer class='footer'>
+    <div class='container'>
+      <a class='navbar-brand' href='http://www.cvg.ethz.ch/' style='padding-left:0px;padding-right:0px'>
+        <img src='img/ETH_logo_inverted.png' alt='ETH Zurich' height='30'>
+      </a>
+      <p class='navbar-text pull-right' style='margin-top:20px'>
+        <a href='/imprint'>Imprint</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+  <script>window.jQuery || document.write('<script src='js/jquery.min.js'><\/script>')</script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa' crossorigin='anonymous'></script>
+
+  <script src='js/ie10-viewport-bug-workaround.js'></script>
+  </body>
+  </html>

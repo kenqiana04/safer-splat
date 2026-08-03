@@ -1,0 +1,56 @@
+{
+  "status": "PASS_FRONTEND_ENTRY_CONTRACT",
+  "candidates": {
+    "F1_OFFICIAL_3DGS": {
+      "selected": true,
+      "repository": "graphdeco-inria/gaussian-splatting",
+      "commit": "54c035f7834b564019656c3e3fcc3646292f727d",
+      "submodules": [
+        {
+          "path": "SIBR_viewers",
+          "commit": "d8856f60c5384cc1975439193bb627d77d917d77"
+        },
+        {
+          "path": "submodules/diff-gaussian-rasterization",
+          "commit": "9c5c2028f6fbee2be239bc4c9421ff894fe4fbe0"
+        },
+        {
+          "path": "submodules/fused-ssim",
+          "commit": "1272e21a282342e89537159e4bad508b19b34157"
+        },
+        {
+          "path": "submodules/simple-knn",
+          "commit": "86710c2d4b46680c02301765dd79e465819c8f19"
+        }
+      ],
+      "license_sha256": "c5ba70a2194af2aefe85dfe3da68608dcb3abd21a3aa53b55aa297c2f0b60eb3",
+      "input_contract": "COLMAP images plus sparse/0 cameras/images/points3D; current loader accepts text or binary",
+      "camera_models": [
+        "PINHOLE",
+        "SIMPLE_PINHOLE"
+      ],
+      "eth3d_compatibility": "official ETH3D undistorted images are PINHOLE and include COLMAP text intrinsics, poses, and image-only triangulated points",
+      "sfm_rerun_required": false,
+      "conversion": "directory adaptation and optional text-to-binary model conversion only; no matching/SfM",
+      "default_iterations": 30000,
+      "depth_required": false,
+      "depth_argument_frozen_empty": true,
+      "reference_input": false,
+      "determinism": "safe_state fixes random/PyTorch seeds to 0; full GPU reproducibility must be qualified later at the frozen commit",
+      "resolution_vram": "official README targets 24 GB for paper-quality training, auto-resizes widths above 1.6K unless resolution is set; later environment/smoke must freeze resolution and prove GPU fit",
+      "export": "PLY with xyz, SH features, opacity, scale, rotation",
+      "ellipsoid_semantics": "positive scales via exp and normalized rotation quaternion; canonical adapter to SAFER ellipsoids is feasible but must be proven later"
+    },
+    "F2_SPLATFACTO": {
+      "selected": false,
+      "role": "HISTORICAL_COMPATIBILITY_ONLY",
+      "reason": "Prior TUM/Replica geometry failures; export convenience cannot override the preregistered F1 priority; any future use needs a separate protocol."
+    },
+    "F3_SPLATAM": {
+      "selected": false,
+      "status": "INADMISSIBLE",
+      "reason": "No legal independent sensor RGB-D route; official depth is reference-derived GT."
+    }
+  },
+  "no_fallback_after_f1_failure": true
+}

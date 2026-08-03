@@ -1,0 +1,232 @@
+[
+  {
+    "requested_url": "https://www.eth3d.net/",
+    "final_url": "https://www.eth3d.net/",
+    "http_status": 200,
+    "retrieval_utc": "2026-08-03T11:32:22Z",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length_header": null,
+    "etag": null,
+    "last_modified": null,
+    "authority_id": "eth3d_home",
+    "title": "ETH3D",
+    "sha256": "1114c1aff06eea5f63213bf28dea20e14bb1a86f2710c2d19e7fff99302a2363",
+    "bytes": 7587,
+    "snapshot_path": "official_authority/eth3d_home.html",
+    "cited_fields": [
+      "data license",
+      "MVS paper"
+    ],
+    "authority_level": "OFFICIAL_PRIMARY"
+  },
+  {
+    "requested_url": "https://www.eth3d.net/overview",
+    "final_url": "https://www.eth3d.net/overview",
+    "http_status": 200,
+    "retrieval_utc": "2026-08-03T11:32:23Z",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length_header": null,
+    "etag": null,
+    "last_modified": null,
+    "authority_id": "eth3d_mvs_overview",
+    "title": "Overview - ETH3D",
+    "sha256": "81b166f2490f4c60874cfead5d064d3ea23c10c54de53c0d2d0d22ea3fc6b00c",
+    "bytes": 7897,
+    "snapshot_path": "official_authority/eth3d_mvs_overview.html",
+    "cited_fields": [
+      "MVS benchmark family",
+      "DSLR and rig variants"
+    ],
+    "authority_level": "OFFICIAL_PRIMARY"
+  },
+  {
+    "requested_url": "https://www.eth3d.net/datasets",
+    "final_url": "https://www.eth3d.net/datasets",
+    "http_status": 200,
+    "retrieval_utc": "2026-08-03T11:32:25Z",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length_header": null,
+    "etag": null,
+    "last_modified": null,
+    "authority_id": "eth3d_mvs_datasets",
+    "title": "Datasets - ETH3D",
+    "sha256": "3dc6ba6cdc3e4aa226fd00884c21b537b7149a371d55a9822963330106de7812",
+    "bytes": 43577,
+    "snapshot_path": "official_authority/eth3d_mvs_datasets.html",
+    "cited_fields": [
+      "Delivery Area variants",
+      "archive filenames",
+      "declared sizes"
+    ],
+    "authority_level": "OFFICIAL_PRIMARY"
+  },
+  {
+    "requested_url": "https://www.eth3d.net/documentation",
+    "final_url": "https://www.eth3d.net/documentation",
+    "http_status": 200,
+    "retrieval_utc": "2026-08-03T11:32:27Z",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length_header": null,
+    "etag": null,
+    "last_modified": null,
+    "authority_id": "eth3d_mvs_documentation",
+    "title": "Documentation - ETH3D",
+    "sha256": "fae7ff680e3ea4575ec2c124158519309f0964ef53c1dd3fe90cd4e2f98374be",
+    "bytes": 41189,
+    "snapshot_path": "official_authority/eth3d_mvs_documentation.html",
+    "cited_fields": [
+      "COLMAP calibration",
+      "ground-truth provenance",
+      "evaluation source link"
+    ],
+    "authority_level": "OFFICIAL_PRIMARY"
+  },
+  {
+    "requested_url": "https://www.eth3d.net/slam_overview",
+    "final_url": "https://www.eth3d.net/slam_overview",
+    "http_status": 200,
+    "retrieval_utc": "2026-08-03T11:32:28Z",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length_header": null,
+    "etag": null,
+    "last_modified": null,
+    "authority_id": "eth3d_slam_overview",
+    "title": "Overview - ETH3D",
+    "sha256": "3b2ef9e9855ad14b6ee1687de04ca87d26b401dccba255944729a250efd06e73",
+    "bytes": 6784,
+    "snapshot_path": "official_authority/eth3d_slam_overview.html",
+    "cited_fields": [
+      "SLAM benchmark exclusion"
+    ],
+    "authority_level": "OFFICIAL_PRIMARY"
+  },
+  {
+    "requested_url": "https://www.eth3d.net/slam_datasets",
+    "final_url": "https://www.eth3d.net/slam_datasets",
+    "http_status": 200,
+    "retrieval_utc": "2026-08-03T11:32:30Z",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length_header": null,
+    "etag": null,
+    "last_modified": null,
+    "authority_id": "eth3d_slam_datasets",
+    "title": "SLAM > Datasets - ETH3D",
+    "sha256": "e66b2664b64c13bed891e9c43f7cf142686f84ab4aa902b6551eac3df7bdcea9",
+    "bytes": 100602,
+    "snapshot_path": "official_authority/eth3d_slam_datasets.html",
+    "cited_fields": [
+      "SLAM dataset namespace exclusion"
+    ],
+    "authority_level": "OFFICIAL_PRIMARY"
+  },
+  {
+    "requested_url": "https://www.eth3d.net/slam_documentation",
+    "final_url": "https://www.eth3d.net/slam_documentation",
+    "http_status": 200,
+    "retrieval_utc": "2026-08-03T11:32:32Z",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length_header": null,
+    "etag": null,
+    "last_modified": null,
+    "authority_id": "eth3d_slam_documentation",
+    "title": "SLAM > Documentation - ETH3D",
+    "sha256": "39c7be780b33c0cfed864242cd52588adcc33ecab28fb8071f802b08736ddfee",
+    "bytes": 25281,
+    "snapshot_path": "official_authority/eth3d_slam_documentation.html",
+    "cited_fields": [
+      "SLAM sensor modalities exclusion"
+    ],
+    "authority_level": "OFFICIAL_PRIMARY"
+  },
+  {
+    "requested_url": "https://www.eth3d.net/data/schoeps2017cvpr.pdf",
+    "final_url": "https://www.eth3d.net/data/schoeps2017cvpr.pdf",
+    "http_status": 200,
+    "retrieval_utc": "2026-08-03T11:32:34Z",
+    "content_type": "application/pdf",
+    "content_length_header": "5348254",
+    "etag": "\"59084fa6-519b9e\"",
+    "last_modified": "Tue, 02 May 2017 09:21:42 GMT",
+    "authority_id": "eth3d_cvpr2017_paper_head",
+    "title": "A Multi-View Stereo Benchmark with High-Resolution Images and Multi-Camera Videos",
+    "sha256": null,
+    "bytes": 0,
+    "cited_fields": [
+      "benchmark definition",
+      "evaluation protocol"
+    ],
+    "authority_level": "OFFICIAL_PRIMARY_HEAD_ONLY"
+  },
+  {
+    "authority_id": "ETH3D__dataset-pipeline",
+    "title": "ETH3D/dataset-pipeline",
+    "requested_url": "https://github.com/ETH3D/dataset-pipeline",
+    "final_url": "https://github.com/ETH3D/dataset-pipeline",
+    "http_status": 200,
+    "retrieval_utc": "2026-08-03T11:32:35Z",
+    "sha256": "b80ce010b18c485ed76dcce66b80bde5e8108d71f36a2f3208e854d0eb29466f",
+    "head_commit": "e09275b39b30c9c59abf535b849fcc539dc03efd",
+    "license_sha256": "1123317c18bb917830bf070fdf00cf02f149ca3035e50c5e7bed16a7ab84512a",
+    "cited_fields": [
+      "repository identity",
+      "README/source contract",
+      "license",
+      "submodules"
+    ],
+    "authority_level": "OFFICIAL_PRIMARY"
+  },
+  {
+    "authority_id": "ETH3D__multi-view-evaluation",
+    "title": "ETH3D/multi-view-evaluation",
+    "requested_url": "https://github.com/ETH3D/multi-view-evaluation",
+    "final_url": "https://github.com/ETH3D/multi-view-evaluation",
+    "http_status": 200,
+    "retrieval_utc": "2026-08-03T11:32:40Z",
+    "sha256": "65b92cd5b69c06244da3216b4e27204868baff3008cc20f7b89c3476aa79314f",
+    "head_commit": "0daa4f4de036d47d37a6ba054c51fd66642ef896",
+    "license_sha256": "0bb885021d51235d54e7fd7dfb9377a9381ff9874bff4647396921c347dc33a7",
+    "cited_fields": [
+      "repository identity",
+      "README/source contract",
+      "license",
+      "submodules"
+    ],
+    "authority_level": "OFFICIAL_PRIMARY"
+  },
+  {
+    "authority_id": "ETH3D__format-loader",
+    "title": "ETH3D/format-loader",
+    "requested_url": "https://github.com/ETH3D/format-loader",
+    "final_url": "https://github.com/ETH3D/format-loader",
+    "http_status": 200,
+    "retrieval_utc": "2026-08-03T11:32:44Z",
+    "sha256": "244227c28163d809542646ba9150c379621be1db729e0424391f978f23bf949d",
+    "head_commit": "04b0cb379945880a9b4aa20fed5f593a6ada9f4e",
+    "license_sha256": "db53517e98f6a93e04674031dc27c1fab3bd2e8fb0b2fe0f087fd07c0bb77c3a",
+    "cited_fields": [
+      "repository identity",
+      "README/source contract",
+      "license",
+      "submodules"
+    ],
+    "authority_level": "OFFICIAL_PRIMARY"
+  },
+  {
+    "authority_id": "graphdeco-inria__gaussian-splatting",
+    "title": "graphdeco-inria/gaussian-splatting",
+    "requested_url": "https://github.com/graphdeco-inria/gaussian-splatting",
+    "final_url": "https://github.com/graphdeco-inria/gaussian-splatting",
+    "http_status": 200,
+    "retrieval_utc": "2026-08-03T11:32:49Z",
+    "sha256": "15d88dc5b0ed75c9f18510409f05792af01a6190c0f3076f98cbeb32e3032730",
+    "head_commit": "54c035f7834b564019656c3e3fcc3646292f727d",
+    "license_sha256": "c5ba70a2194af2aefe85dfe3da68608dcb3abd21a3aa53b55aa297c2f0b60eb3",
+    "cited_fields": [
+      "repository identity",
+      "README/source contract",
+      "license",
+      "submodules"
+    ],
+    "authority_level": "OFFICIAL_PRIMARY"
+  }
+]

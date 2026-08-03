@@ -1,0 +1,6 @@
+{
+  "ROUTE_M3_STATUS": "NOT_ADMISSIBLE_WITHOUT_REFERENCE_GEOMETRY_LEAKAGE",
+  "reason": "Delivery Area is an MVS scene; official depth maps are rendered from laser-scan ground truth, not independent synchronized sensor RGB-D input.",
+  "official_rendered_depth_as_mapping_input": false,
+  "splatam_training_authorized": false
+}

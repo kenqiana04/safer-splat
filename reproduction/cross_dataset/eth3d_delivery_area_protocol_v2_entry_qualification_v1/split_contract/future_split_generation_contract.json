@@ -1,0 +1,21 @@
+{
+  "status": "FUTURE_SPLIT_CONTRACT_FEASIBLE_NOT_GENERATED",
+  "selected_modality": "LOW_RES_MANY_VIEW_RIG_RGB_ONLY",
+  "split_unit": "RIG_CAPTURE_GROUP",
+  "same_capture_four_cameras_same_partition": true,
+  "all_dslr_rgb_role": "CROSS_VIEW_EVALUATION_ONLY",
+  "generation": "later deterministic spatially separated group-level split after archive validation",
+  "required_future_checks": [
+    "237 unique captures",
+    "four cameras per capture",
+    "camera-center distribution",
+    "pose-neighbor distribution",
+    "view-overlap distribution",
+    "at least one spatially separated heldout candidate",
+    "split sensitivity",
+    "freeze one split before training"
+  ],
+  "project_design_not_official_eth3d": true,
+  "fixed_ratio_now": null,
+  "final_split_generated": false
+}

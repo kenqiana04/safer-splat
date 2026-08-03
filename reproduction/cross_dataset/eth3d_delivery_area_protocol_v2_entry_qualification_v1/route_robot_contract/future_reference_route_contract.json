@@ -1,0 +1,24 @@
+{
+  "status": "INDEPENDENT_REFERENCE_ROUTE_PATH_FEASIBLE_PENDING_ASSET_AUDIT",
+  "generation_time": "before map training",
+  "inputs": [
+    "scan_clean",
+    "verified alignment",
+    "verified occlusion support",
+    "project robot geometry"
+  ],
+  "candidate_map_access": false,
+  "candidate_map_route_deletion": false,
+  "clearance_strata": [
+    "open",
+    "moderate",
+    "tight"
+  ],
+  "required_frame_checks": [
+    "floor",
+    "gravity/upright",
+    "connected routeable region",
+    "known/reference support"
+  ],
+  "route_generated_now": false
+}

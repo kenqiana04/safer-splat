@@ -1,0 +1,28 @@
+{
+  "status": "REFERENCE_AUTHORITY_ENTRY_PATH_FEASIBLE_PENDING_ASSET_AUDIT",
+  "provisional_reference_authority": "A_DENSE_INDEPENDENT_GEOMETRY",
+  "formally_granted": false,
+  "R_axis": [
+    "variant-specific scan_eval",
+    "official ETH3D multi-view evaluator",
+    "official occlusion data"
+  ],
+  "observable_ray": [
+    "variant-specific rendered depth maps; heldout evaluation only"
+  ],
+  "route_collision_candidate": [
+    "scan_clean",
+    "scan alignment",
+    "occlusion mesh/splats after semantics verification"
+  ],
+  "scan_eval_limit": "not a full-space route oracle; official ground truth construction/evaluation only retains scan points observed by at least two images",
+  "future_requirements": [
+    "metric frame",
+    "completeness",
+    "floor/obstacle semantics",
+    "queryability",
+    "connected routeable region",
+    "thin-object coverage",
+    "occlusion/support limits"
+  ]
+}
