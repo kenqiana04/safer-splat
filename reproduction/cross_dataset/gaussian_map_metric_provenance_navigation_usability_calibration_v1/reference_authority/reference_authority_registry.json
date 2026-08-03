@@ -1,0 +1,81 @@
+{
+  "rows": [
+    {
+      "authority_level": "A_INDEPENDENT_METRIC_GEOMETRY",
+      "full_space_claim_allowed": true,
+      "map_id": "REPLICA_GT_FINE",
+      "navigation_claim_allowed": true,
+      "reference": "official dense mesh"
+    },
+    {
+      "authority_level": "B_INDEPENDENT_OBSERVABLE_RAYS",
+      "full_space_claim_allowed": false,
+      "map_id": "TUM_SPLATFACTO_NEGATIVE",
+      "navigation_claim_allowed": false,
+      "reference": "held-out RGB-D only"
+    },
+    {
+      "authority_level": "B_INDEPENDENT_OBSERVABLE_RAYS",
+      "full_space_claim_allowed": false,
+      "map_id": "REPLICA_SPLATFACTO",
+      "navigation_claim_allowed": false,
+      "reference": "Replica V3 held-out depth and mesh"
+    },
+    {
+      "authority_level": "B_INDEPENDENT_OBSERVABLE_RAYS",
+      "full_space_claim_allowed": false,
+      "map_id": "TUM_SPLATAM_FORMAL",
+      "navigation_claim_allowed": false,
+      "reference": "RGB-D/trajectory; route oracle incomplete"
+    },
+    {
+      "authority_level": "B_INDEPENDENT_OBSERVABLE_RAYS",
+      "full_space_claim_allowed": false,
+      "map_id": "TUM_GAUSSIAN_SLAM",
+      "navigation_claim_allowed": false,
+      "reference": "RGB-D/trajectory; route oracle incomplete"
+    },
+    {
+      "authority_level": "A_INDEPENDENT_METRIC_GEOMETRY",
+      "full_space_claim_allowed": true,
+      "map_id": "REPLICA_SPLATAM_60",
+      "navigation_claim_allowed": false,
+      "reference": "Replica V3 held-out depth and dense mesh"
+    },
+    {
+      "authority_level": "A_INDEPENDENT_METRIC_GEOMETRY",
+      "full_space_claim_allowed": true,
+      "map_id": "ARKITSCENES_M1_SPLATAM",
+      "navigation_claim_allowed": false,
+      "reference": "held-out LiDAR depth/confidence plus official mesh"
+    },
+    {
+      "authority_level": "C_INTERFACE_OR_UNRESOLVED",
+      "full_space_claim_allowed": false,
+      "map_id": "SAFER_OFFICIAL_FLIGHT",
+      "navigation_claim_allowed": false,
+      "reference": "no frozen independent geometry authority in this audit"
+    },
+    {
+      "authority_level": "C_INTERFACE_OR_UNRESOLVED",
+      "full_space_claim_allowed": false,
+      "map_id": "SAFER_OFFICIAL_OLD_UNION2",
+      "navigation_claim_allowed": false,
+      "reference": "no frozen independent geometry authority in this audit"
+    },
+    {
+      "authority_level": "C_INTERFACE_OR_UNRESOLVED",
+      "full_space_claim_allowed": false,
+      "map_id": "SAFER_OFFICIAL_STATUES",
+      "navigation_claim_allowed": false,
+      "reference": "no frozen independent geometry authority in this audit"
+    },
+    {
+      "authority_level": "C_INTERFACE_OR_UNRESOLVED",
+      "full_space_claim_allowed": false,
+      "map_id": "SAFER_OFFICIAL_STONEHENGE",
+      "navigation_claim_allowed": false,
+      "reference": "no frozen independent geometry authority in this audit"
+    }
+  ]
+}

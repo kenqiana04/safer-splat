@@ -1,0 +1,38 @@
+{
+  "maps": [
+    {
+      "cluster_or_route_intersection": "NOT_EVALUABLE_NO_RETAINED_MASK_ROUTE_JOIN",
+      "map_id": "ARKITSCENES_M1_SPLATAM",
+      "policies": {
+        "UNKNOWN_AS_FREE": "FORBIDDEN_DANGEROUS",
+        "UNKNOWN_AS_HIGH_COST": "DIAGNOSTIC_ONLY_REQUIRES_FROZEN_COST_AND_PLANNER_CONTRACT",
+        "UNKNOWN_AS_OCCUPIED": "CONSERVATIVE_BUT_MAY_BLOCK_PROGRESS"
+      },
+      "selected_policy": "NONE_THIS_TASK",
+      "unknown_fraction_at_retained_working_point": 0.1990014275109918
+    },
+    {
+      "cluster_or_route_intersection": "NOT_EVALUABLE_NO_RETAINED_MASK_ROUTE_JOIN",
+      "map_id": "REPLICA_SPLATAM_60",
+      "policies": {
+        "UNKNOWN_AS_FREE": "FORBIDDEN_DANGEROUS",
+        "UNKNOWN_AS_HIGH_COST": "DIAGNOSTIC_ONLY_REQUIRES_FROZEN_COST_AND_PLANNER_CONTRACT",
+        "UNKNOWN_AS_OCCUPIED": "CONSERVATIVE_BUT_MAY_BLOCK_PROGRESS"
+      },
+      "selected_policy": "NONE_THIS_TASK",
+      "unknown_fraction_at_retained_working_point": 0.03835645548373656
+    },
+    {
+      "cluster_or_route_intersection": "NOT_EVALUABLE_NO_RETAINED_MASK_ROUTE_JOIN",
+      "map_id": "REPLICA_SPLATFACTO",
+      "policies": {
+        "UNKNOWN_AS_FREE": "FORBIDDEN_DANGEROUS",
+        "UNKNOWN_AS_HIGH_COST": "DIAGNOSTIC_ONLY_REQUIRES_FROZEN_COST_AND_PLANNER_CONTRACT",
+        "UNKNOWN_AS_OCCUPIED": "CONSERVATIVE_BUT_MAY_BLOCK_PROGRESS"
+      },
+      "selected_policy": "NONE_THIS_TASK",
+      "unknown_fraction_at_retained_working_point": 0.0
+    }
+  ],
+  "rule": "UNKNOWN is never free and carries an explicit cost or exclusion semantics in future evaluation."
+}

@@ -1,0 +1,5 @@
+# Literature Threshold Claim Audit
+
+The audited primary sources define algorithms, units, metrics, benchmark reporting points, occupancy semantics, or sampled-data safety conditions. None supplies a universal navigation hard gate at `tau_alpha=0.5`, global coverage `0.95`, AbsRel `0.20`, delta1 `0.75`, median ratio `[0.80,1.25]`, or the historical project clearance percentiles. Experimental means and benchmark tolerances are not promoted into qualification cutoffs.
+
+Opacity in Gaussian compositing is neither a calibrated occupancy probability nor a calibrated probability of correct depth. TUM's official evaluation is trajectory-focused. ETH3D tolerances are reporting coordinates. Replica and ARKitScenes provide reference semantics, not project-independent navigation thresholds. Occupancy mapping keeps UNKNOWN distinct from FREE. Selective-prediction literature motivates full risk-coverage characterization. Sampled-data CBF work requires explicit inter-sample and uncertainty allowances.

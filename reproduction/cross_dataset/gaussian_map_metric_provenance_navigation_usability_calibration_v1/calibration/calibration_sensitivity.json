@@ -1,0 +1,19 @@
+{
+  "audit_candidates": [
+    "TUM_SPLATAM_FORMAL",
+    "TUM_GAUSSIAN_SLAM",
+    "REPLICA_SPLATAM_60",
+    "ARKITSCENES_M1_SPLATAM"
+  ],
+  "candidate_used_to_fit_gate": false,
+  "global_numeric_gate_decision": "NO_UNIVERSAL_NUMERIC_GATE_JUSTIFIED_BY_CURRENT_EVIDENCE",
+  "leave_one_dataset_out": "NOT_JUSTIFIED_TOO_FEW_INDEPENDENT_CONTROLS",
+  "leave_one_map_out": "NOT_JUSTIFIED_TOO_FEW_INDEPENDENT_CONTROLS",
+  "negative_controls": [
+    "TUM_SPLATFACTO_NEGATIVE",
+    "REPLICA_SPLATFACTO"
+  ],
+  "positive_controls": [
+    "REPLICA_GT_FINE"
+  ]
+}
