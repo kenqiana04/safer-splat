@@ -1,0 +1,25 @@
+{
+  "status": "FROZEN_FROM_PR77",
+  "official_host": "www.eth3d.net",
+  "expected_compressed_bytes": 2435222146,
+  "whitelist": [
+    {"name": "delivery_area_rig_undistorted.7z", "content_length": 278900786, "role": "MAPPING_INPUT_SOURCE_ARCHIVE"},
+    {"name": "delivery_area_rig_scan_eval.7z", "content_length": 36142207, "role": "HELDOUT_EVALUATION_ONLY"},
+    {"name": "delivery_area_rig_occlusion.7z", "content_length": 56643980, "role": "HELDOUT_EVALUATION_ONLY"},
+    {"name": "delivery_area_rig_depth.7z", "content_length": 636547888, "role": "HELDOUT_EVALUATION_ONLY"},
+    {"name": "delivery_area_scan_clean.7z", "content_length": 381363091, "role": "REFERENCE_ORACLE_ONLY"},
+    {"name": "delivery_area_dslr_undistorted.7z", "content_length": 478076254, "role": "CROSS_VIEW_EVALUATION_ONLY"},
+    {"name": "delivery_area_dslr_scan_eval.7z", "content_length": 122553428, "role": "CROSS_VIEW_EVALUATION_ONLY"},
+    {"name": "delivery_area_dslr_occlusion.7z", "content_length": 56850384, "role": "CROSS_VIEW_EVALUATION_ONLY"},
+    {"name": "delivery_area_dslr_depth.7z", "content_length": 388144128, "role": "CROSS_VIEW_EVALUATION_ONLY"}
+  ],
+  "denylist": [
+    "delivery_area_scan_raw.7z",
+    "delivery_area_dslr_raw.7z",
+    "delivery_area_dslr_jpg.7z",
+    "delivery_area_rig.7z",
+    "delivery_area_rig_stereo_pairs_gt.7z"
+  ],
+  "current_head_revalidation_performed": false,
+  "reason_not_revalidated": "Mandatory 7z/7zz runtime preflight failed before network acquisition stage."
+}

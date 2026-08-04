@@ -1,0 +1,31 @@
+{
+  "status": "PASS_FAIL_CLOSED_BOUNDARY_PRESERVED",
+  "checked_utc": "2026-08-04T03:16:53Z",
+  "server_host": "zlab-Super-Server",
+  "task_root": "/disk1/zlab/maintenance_records/eth3d_delivery_area_frozen_assets_contract_audit_v1",
+  "task_root_size_bytes_before_runtime_finalization": 44299,
+  "server_report": "/disk1/zlab/maintenance_records/eth3d_delivery_area_frozen_assets_contract_audit_v1/report/REPORT_ACQUIRE_ETH3D_DELIVERY_AREA_FROZEN_ASSETS_AND_VALIDATE_SPLIT_REFERENCE_UNKNOWN_ROUTE_CONTRACT_V1.md",
+  "server_report_sha256": "75f16f176ff887bb1b71f2d7e0d02e3663aa9ac72df85dc9b8c23df1d965eff5",
+  "server_run_manifest_sha256": "da0973a9f6c47db5e244d54b0fdc8359f15044e22115ed32d89a15f0e197a3f4",
+  "server_validation_result_sha256": "590b0b472bd27417e4ac3b8001942c19e5e7c96f235676c9b963c64068b6f52e",
+  "server_validator_status": "PASS_BLOCKED_PREFLIGHT_RECORD_CONSISTENT",
+  "gpu_final": {
+    "physical_gpu": 1,
+    "memory_used_mib": 6,
+    "utilization_gpu_percent": 0,
+    "compute_process_count": 0
+  },
+  "watchdog_task": "Codex-Persistent-Reverse-Proxy-Watchdog",
+  "watchdog_status": "Running",
+  "managed_reverse_ssh_pid": 4904,
+  "remote_proxy_listener": "127.0.0.1:17898",
+  "watchdog_modified": false,
+  "managed_ssh_modified": false,
+  "port_17897_operation_count": 0,
+  "sshd_restart_count": 0,
+  "network_restart_count": 0,
+  "firewall_change_count": 0,
+  "global_git_proxy_change_count": 0,
+  "training_authorized": false,
+  "final_status": "BLOCKED_BY_7Z_RUNTIME_UNAVAILABLE"
+}

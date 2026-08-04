@@ -1,0 +1,54 @@
+{
+  "status": "FAIL",
+  "checked_utc": "2026-08-04T03:16:53Z",
+  "server": {
+    "ssh_alias": "zlab-4090",
+    "hostname": "zlab-Super-Server",
+    "user": "zlab",
+    "disk_mount": "/disk1",
+    "disk_available_bytes": 296643579904,
+    "minimum_required_bytes": 40000000000,
+    "disk_gate_pass": true,
+    "task_root_existed_before_preflight": false,
+    "data_root_existed_before_preflight": false
+  },
+  "archive_runtime": {
+    "required_commands": ["7z", "7zz"],
+    "path_7z": null,
+    "path_7zz": null,
+    "path_7za": null,
+    "p7zip_full_package_state": "not-installed",
+    "searched_locations": [
+      "PATH",
+      "/usr/bin",
+      "/usr/local/bin",
+      "/bin",
+      "/disk1/zlab/conda_envs (max depth 6)",
+      "/home/zlab/.local (max depth 6)",
+      "/home/zlab/.conda (max depth 6)",
+      "/opt (max depth 6)"
+    ],
+    "installation_attempted": false,
+    "substitute_runtime_used": false,
+    "gate_pass": false
+  },
+  "network_preservation": {
+    "wrapper_present": true,
+    "remote_loopback_listener_127_0_0_1_17898": true,
+    "watchdog_task": "Codex-Persistent-Reverse-Proxy-Watchdog",
+    "watchdog_state": "Running",
+    "managed_reverse_ssh_pid": 4904,
+    "watchdog_modified": false,
+    "managed_ssh_modified": false,
+    "port_17897_touched": false,
+    "sshd_restart_count": 0,
+    "network_restart_count": 0,
+    "firewall_change_count": 0
+  },
+  "gpu_1": {
+    "memory_used_mib": 6,
+    "utilization_percent": 0,
+    "compute_process_count": 0
+  },
+  "final_status": "BLOCKED_BY_7Z_RUNTIME_UNAVAILABLE"
+}

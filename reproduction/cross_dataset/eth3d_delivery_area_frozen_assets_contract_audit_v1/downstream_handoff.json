@@ -1,0 +1,20 @@
+{
+  "status": "BLOCKED_HANDOFF",
+  "training_authorized": false,
+  "final_status": "BLOCKED_BY_7Z_RUNTIME_UNAVAILABLE",
+  "required_action": "Provide an existing 7z or 7zz runtime through a separately authorized bounded provisioning task, then resume this same task and branch from the pre-download gate.",
+  "next_task": "SEPARATELY_AUTHORIZE_EXISTING_7Z_RUNTIME_PROVISIONING_AND_RESUME_THIS_SAME_TASK",
+  "resume_point": "PRE_DOWNLOAD_7Z_RUNTIME_GATE",
+  "completed_downloads_to_reuse": [],
+  "downloads_to_start_after_authorization": 9,
+  "must_not_change": [
+    "PR #77 lineage",
+    "nine-archive whitelist",
+    "five-archive denylist",
+    "frozen content lengths",
+    "split algorithm",
+    "UNKNOWN contract",
+    "robot and physical-budget contract",
+    "reference-only route contract"
+  ]
+}

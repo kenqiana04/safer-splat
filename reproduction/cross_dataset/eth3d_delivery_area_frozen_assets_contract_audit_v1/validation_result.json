@@ -1,0 +1,22 @@
+{
+  "status": "BLOCKED",
+  "final_status": "BLOCKED_BY_7Z_RUNTIME_UNAVAILABLE",
+  "checks": {
+    "pr77_lineage": "PASS",
+    "disk_preflight": "PASS",
+    "proxy_wrapper_present": "PASS",
+    "loopback_listener_preserved": "PASS",
+    "archive_runtime_7z_or_7zz": "FAIL",
+    "downloads_started": "NO",
+    "denylist_downloaded": "NO",
+    "data_payload_in_git": "NO",
+    "environment_modified": "NO",
+    "training_or_map_execution": "NO",
+    "controller_execution": "NO",
+    "pr77_preserved": "PASS"
+  },
+  "unresolved_critical_evidence": [
+    "No existing 7z or 7zz executable is available on zlab-4090; archive CRC, security, extraction, and all downstream scientific contracts therefore remain unexecuted."
+  ],
+  "confidence": "READY_TO_SHARE_AS_FAIL_CLOSED_PREFLIGHT_BLOCKER"
+}
