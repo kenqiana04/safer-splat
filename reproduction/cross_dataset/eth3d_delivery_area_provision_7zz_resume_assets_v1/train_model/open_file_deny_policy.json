@@ -1,0 +1,10 @@
+{
+  "status": "FROZEN",
+  "training_mount": "/disk1/zlab/cross_dataset_assets/eth3d_delivery_area_protocol_v2_v1/TRAIN_INPUT_ROOT",
+  "denied_roots": [
+    "/disk1/zlab/cross_dataset_assets/eth3d_delivery_area_protocol_v2_v1/EVAL_ORACLE_ROOT",
+    "/disk1/zlab/cross_dataset_assets/eth3d_delivery_area_protocol_v2_v1/RAW_EXTRACT_QUARANTINE"
+  ],
+  "reference_access_allowed": false,
+  "heldout_access_allowed": false
+}

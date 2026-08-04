@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "provisioning_route": "T1_TASK_LOCAL_OFFICIAL_PORTABLE_7ZZ",
+  "recorded_utc": "2026-08-04T03:51:04Z",
+  "official_discovery_url": "https://www.7-zip.org/download.html",
+  "source_url": "https://github.com/ip7z/7zip/releases/download/26.02/7z2602-linux-x64.tar.xz",
+  "final_redirect_host": "release-assets.githubusercontent.com",
+  "package_path": "/disk1/zlab/maintenance_records/eth3d_delivery_area_provision_7zz_resume_assets_v1/tools/7zz/7z2602-linux-x64.tar.xz",
+  "package_bytes": 1571416,
+  "package_sha256": "41aaba7b1235304ab5aa0624530c67ae829496cd29e875925271efdccc28c03e",
+  "official_checksum_available": false,
+  "binary_path": "/disk1/zlab/maintenance_records/eth3d_delivery_area_provision_7zz_resume_assets_v1/tools/7zz/7zz",
+  "binary_bytes": 2882112,
+  "binary_sha256": "1676a968815b92e865bc0ffeecee3fa284ba4402bf23dc2bec2412c4b502e922",
+  "version": "7-Zip (z) 26.02 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-06-25",
+  "owner_uid": 1000,
+  "group_gid": 1000,
+  "mode": "0o755",
+  "supports": [
+    "a",
+    "t",
+    "l -slt",
+    "x"
+  ],
+  "system_path_modified": false,
+  "system_package_installed": false,
+  "existing_conda_environment_modified": false,
+  "project_training_environment_modified": false
+}

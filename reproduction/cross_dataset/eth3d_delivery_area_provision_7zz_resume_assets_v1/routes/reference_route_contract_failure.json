@@ -1,0 +1,19 @@
+{
+  "blocked_straight_line_candidate_count": 0,
+  "blocked_straight_line_candidate_ratio": 0.0,
+  "candidate_map_access_count": 0,
+  "candidate_voxel_dimensionality": "THREE_DIMENSIONAL_FREE_3D_ROBOT_CONTRACT",
+  "decision_relevant_clearance_certification_cap_m": 0.6352627944162883,
+  "edge_cost_contract": "edge_length_plus_inverse_reference_residual_budget",
+  "exact_swept_sphere_collision_predicate": true,
+  "failure_gate": "BLOCKED_STRAIGHT_LINE_RATIO_AT_LEAST_0_5",
+  "frozen_blocked_straight_line_ratio_minimum": 0.5,
+  "frozen_minimum_route_count": 30,
+  "frozen_robot_state": "6D_FREE_3D_DOUBLE_INTEGRATOR",
+  "reason": "The corrected deterministic free-3D reference-only PRM did not provide the preregistered minimum 50% direct-obstruction composition among otherwise valid path candidates.",
+  "route_registry_frozen": false,
+  "status": "NO_ETH3D_DELIVERY_AREA_REFERENCE_ROUTE_BENCHMARK_CONTRACT",
+  "threshold_or_contract_modified": false,
+  "uncapped_clearance_claimed": false,
+  "valid_reference_path_candidate_count": 89054
+}

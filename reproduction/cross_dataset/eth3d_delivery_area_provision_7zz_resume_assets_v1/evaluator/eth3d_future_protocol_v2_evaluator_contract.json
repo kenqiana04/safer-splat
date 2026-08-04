@@ -1,0 +1,35 @@
+{
+  "alpha_grid": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "candidate_map_evaluation_executed": false,
+  "gates": [
+    "integrity/no leakage",
+    "native/common renderer parity",
+    "fixed 11-point alpha risk-coverage",
+    "ETH3D official accuracy/completeness/F-score",
+    "rig HELDOUT NVS/depth",
+    "DSLR cross-view NVS/depth if available",
+    "runtime UNKNOWN knownness",
+    "route-tube known fraction",
+    "exact one-sided e_plus",
+    "route-specific B_map_available",
+    "false-free components",
+    "independent swept-body collision",
+    "G0 separate",
+    "R/N/query independent classification",
+    "diagnosis after failure"
+  ],
+  "status": "FROZEN_FUTURE_EVALUATOR_NOT_EXECUTED",
+  "universal_numeric_gate": false
+}

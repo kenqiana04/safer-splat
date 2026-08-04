@@ -1,0 +1,22 @@
+{
+  "camera_center_formula": "C=-R^T t",
+  "depth_semantics": "camera-z renderer depth",
+  "depth_storage": "little-endian raw float32 row-major; infinity means unavailable",
+  "metric_unit": "meter",
+  "pose_convention": "COLMAP world-to-camera quaternion and translation",
+  "projection_roundtrip": {
+    "depth_semantics_used": "CAMERA_Z",
+    "maximum_camera_space_roundtrip_error_m": 2.2887833992611187e-16,
+    "maximum_reprojection_error_px": 5.684341886080802e-14,
+    "pose_convention": "COLMAP_WORLD_TO_CAMERA",
+    "query_count": 256,
+    "status": "PASS"
+  },
+  "provided_depth_pixel_geometry": "original distorted images",
+  "rig_dslr_shared_metric_world": true,
+  "scan_transform_source": "official scan_alignment.mlp",
+  "status": "PASS_ETH3D_METRIC_COORDINATE_CONTRACT",
+  "task_transform_fit_count": 0,
+  "undistorted_projection_validation": "official mesh projected with undistorted COLMAP intrinsics",
+  "unexplained_scale_mismatch": false
+}

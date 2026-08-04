@@ -1,0 +1,13 @@
+{
+  "failure_action": "diagnose without changing frozen gates",
+  "order": [
+    "integrity",
+    "R",
+    "N",
+    "queryability",
+    "route budget",
+    "independent collision",
+    "G0"
+  ],
+  "status": "FROZEN"
+}

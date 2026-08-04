@@ -1,0 +1,24 @@
+{
+  "engine_a": "trimesh.proximity.closest_point float64",
+  "engine_b": "R-tree broad phase plus independent Ericson point-to-triangle float64",
+  "engine_b_candidate_count_range": [
+    1,
+    14
+  ],
+  "maximum_absolute_difference_m": 0.0,
+  "mean_absolute_difference_m": 0.0,
+  "open3d_float32_diagnostic": {
+    "maximum_absolute_difference_m": 3.7059314211326105e-06,
+    "mean_absolute_difference_m": 2.3728096766961632e-07,
+    "reason_not_used_as_exact_gate": "RaycastingScene requires float32 triangle vertices",
+    "role": "NON_GATING_PRECISION_DIAGNOSTIC"
+  },
+  "query_count": 256,
+  "query_sha256": "d6940b2920517a96207e6b5d9bdcfdefac800eff177f61529ff6192650bc096c",
+  "software_numeric_tolerance_m": 1e-06,
+  "status": "PASS",
+  "trimesh_distance_range_m": [
+    0.0020000000000001132,
+    0.020000000000001177
+  ]
+}

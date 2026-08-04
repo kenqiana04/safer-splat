@@ -1,0 +1,83 @@
+{
+  "dslr": {
+    "camera_count": 1,
+    "camera_models": [
+      "PINHOLE"
+    ],
+    "image_audit": {
+      "dimension_mismatch": [],
+      "duplicate_byte_groups": [],
+      "existing_files": 44,
+      "expected_records": 44,
+      "missing": [],
+      "status": "PASS",
+      "unique_byte_sha256_count": 44,
+      "unreadable": []
+    },
+    "image_count": 44,
+    "role": "CROSS_VIEW_EVALUATION_ONLY",
+    "sparse_point_count": 31978
+  },
+  "fallback_triggered": false,
+  "icp_count": 0,
+  "laser_scan_used_for_sparse_points": false,
+  "official_metric_world_transform_applied_by_task": false,
+  "pose_convention": "COLMAP_WORLD_TO_CAMERA_QVEC_TVEC",
+  "rig": {
+    "camera_count": 4,
+    "camera_models": [
+      "PINHOLE"
+    ],
+    "capture_group_count": 237,
+    "fixed_rig_extrinsics": {
+      "camera_labels": [
+        "cam4",
+        "cam5",
+        "cam6",
+        "cam7"
+      ],
+      "max_rotation_deviation_deg": 0.00030606564666640874,
+      "max_translation_deviation_m": 4.25110038528847e-05,
+      "per_camera": {
+        "cam4": {
+          "max_rotation_deviation_deg": 1.7075472925031877e-06,
+          "max_translation_deviation_m": 5.3705425095741715e-15
+        },
+        "cam5": {
+          "max_rotation_deviation_deg": 0.0002146251778574735,
+          "max_translation_deviation_m": 4.25110038528847e-05
+        },
+        "cam6": {
+          "max_rotation_deviation_deg": 0.00030606564666640874,
+          "max_translation_deviation_m": 3.725901895086869e-05
+        },
+        "cam7": {
+          "max_rotation_deviation_deg": 0.000261762043217291,
+          "max_translation_deviation_m": 3.276244429411874e-05
+        }
+      },
+      "reference_camera": "cam4",
+      "status": "PASS"
+    },
+    "group_size_histogram": {
+      "4": 237
+    },
+    "image_audit": {
+      "dimension_mismatch": [],
+      "duplicate_byte_groups": [],
+      "existing_files": 948,
+      "expected_records": 948,
+      "missing": [],
+      "status": "PASS",
+      "unique_byte_sha256_count": 948,
+      "unreadable": []
+    },
+    "image_count": 948,
+    "sparse_point_count": 47386
+  },
+  "scale_repair_count": 0,
+  "selected_modality": "LOW_RES_MANY_VIEW_RIG_RGB_ONLY",
+  "sim3_count": 0,
+  "sparse_point_provenance": "OFFICIAL_COLMAP_IMAGE_TRIANGULATION_WITH_IMAGE_TRACKS",
+  "status": "PASS_RIG_DSLR_ASSET_AUDIT"
+}
