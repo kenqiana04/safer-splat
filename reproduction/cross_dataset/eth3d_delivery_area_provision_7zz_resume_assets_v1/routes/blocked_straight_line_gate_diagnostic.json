@@ -1,0 +1,48 @@
+{
+  "blocked_candidate_count": 0,
+  "candidate_count": 89054,
+  "capture_center_axis_extent_m": [
+    3.2785990480183544,
+    8.64545561264909,
+    0.14737657856151376
+  ],
+  "capture_center_bounds_m": [
+    [
+      -1.4621296335488991,
+      -0.3947013508284628,
+      -3.3531301058924807
+    ],
+    [
+      1.8164694144694555,
+      8.250754261820628,
+      -3.205753527330967
+    ]
+  ],
+  "current_candidate_generator_dimensionality": "THREE_DIMENSIONAL_FREE_3D_ROBOT_CONTRACT",
+  "direct_clearance_capped_count": 89054,
+  "direct_clearance_m": {
+    "maximum": 0.1,
+    "median": 0.1,
+    "minimum": 0.1
+  },
+  "frozen_blocked_straight_line_ratio_minimum": 0.5,
+  "frozen_robot_state_dimensionality": "6D_FREE_3D_DOUBLE_INTEGRATOR",
+  "implementation_gap": null,
+  "path_length_m": {
+    "maximum": 6.057542202993585,
+    "median": 1.916010130684969,
+    "minimum": 0.2724744871391588
+  },
+  "path_node_count": {
+    "maximum": 32.0,
+    "median": 12.0,
+    "minimum": 4.0
+  },
+  "scientific_contract_result": "FAIL_BLOCKED_STRAIGHT_LINE_QUOTA",
+  "status": "DIAGNOSIS_ONLY",
+  "turning_segment_count": {
+    "maximum": 30.0,
+    "median": 9.0,
+    "minimum": 2.0
+  }
+}

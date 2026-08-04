@@ -1,0 +1,74 @@
+{
+  "pre_download_gate": "PASS",
+  "routes": [
+    {
+      "route": "T0_EXISTING_RUNTIME",
+      "status": "NOT_AVAILABLE_AT_PR78_GATE"
+    },
+    {
+      "identity": {
+        "binary_bytes": 2882112,
+        "binary_path": "/disk1/zlab/maintenance_records/eth3d_delivery_area_provision_7zz_resume_assets_v1/tools/7zz/7zz",
+        "binary_sha256": "1676a968815b92e865bc0ffeecee3fa284ba4402bf23dc2bec2412c4b502e922",
+        "existing_conda_environment_modified": false,
+        "final_redirect_host": "release-assets.githubusercontent.com",
+        "group_gid": 1000,
+        "mode": "0o755",
+        "official_checksum_available": false,
+        "official_discovery_url": "https://www.7-zip.org/download.html",
+        "owner_uid": 1000,
+        "package_bytes": 1571416,
+        "package_path": "/disk1/zlab/maintenance_records/eth3d_delivery_area_provision_7zz_resume_assets_v1/tools/7zz/7z2602-linux-x64.tar.xz",
+        "package_sha256": "41aaba7b1235304ab5aa0624530c67ae829496cd29e875925271efdccc28c03e",
+        "project_training_environment_modified": false,
+        "provisioning_route": "T1_TASK_LOCAL_OFFICIAL_PORTABLE_7ZZ",
+        "recorded_utc": "2026-08-04T03:51:04Z",
+        "source_url": "https://github.com/ip7z/7zip/releases/download/26.02/7z2602-linux-x64.tar.xz",
+        "status": "PASS",
+        "supports": [
+          "a",
+          "t",
+          "l -slt",
+          "x"
+        ],
+        "system_package_installed": false,
+        "system_path_modified": false,
+        "version": "7-Zip (z) 26.02 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-06-25"
+      },
+      "route": "T1_TASK_LOCAL_OFFICIAL_PORTABLE_7ZZ",
+      "status": "PASS"
+    },
+    {
+      "route": "T2_TASK_LOCAL_UTILITY_ENVIRONMENT",
+      "status": "NOT_REQUIRED"
+    },
+    {
+      "route": "T3_BOUNDED_SYSTEM_PACKAGE",
+      "status": "NOT_REQUIRED"
+    }
+  ],
+  "status": "PASS_TASK_LOCAL_ARCHIVE_RUNTIME_PROVISIONED",
+  "synthetic_validation": {
+    "create_returncode": 0,
+    "extract_returncode": 0,
+    "extracted_tree_sha256": "a3c5e39092a648ddbe1d4646363134d97b4e0a578fd0096e038670220a53a434",
+    "list_returncode": 0,
+    "safe_archive_audit": {
+      "entry_count": 5,
+      "issues": [],
+      "status": "PASS",
+      "total_ratio": 0.5762376237623762,
+      "total_uncompressed_bytes": 291
+    },
+    "source_tree_sha256": "a3c5e39092a648ddbe1d4646363134d97b4e0a578fd0096e038670220a53a434",
+    "status": "PASS",
+    "test_returncode": 0,
+    "traversal_archive_pre_extract_status": "FAIL",
+    "traversal_extracted": false,
+    "traversal_issue_codes": [
+      "PARENT_TRAVERSAL"
+    ],
+    "unicode_path_present": true
+  },
+  "system_environment_impact": "NONE"
+}

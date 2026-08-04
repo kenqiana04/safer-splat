@@ -1,0 +1,43 @@
+{
+  "query_count": 256,
+  "query_sha256": "d6940b2920517a96207e6b5d9bdcfdefac800eff177f61529ff6192650bc096c",
+  "status": "DIAGNOSTIC_ONLY_FROZEN_QUERY_AND_TOLERANCE_UNCHANGED",
+  "tolerance_m": 1e-06,
+  "variants": [
+    {
+      "label": "global_float32",
+      "maximum_absolute_difference_m": 3.7059314211326105e-06,
+      "mean_absolute_difference_m": 2.3728096766961632e-07,
+      "origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "bounds_centered_float32",
+      "maximum_absolute_difference_m": 3.6630905827002985e-06,
+      "mean_absolute_difference_m": 3.4204032759177844e-07,
+      "origin_m": [
+        -19.27510643005371,
+        13.657061100006104,
+        -1.837073802947998
+      ]
+    },
+    {
+      "label": "first_query_centered_float32",
+      "maximum_absolute_difference_m": 5.233371069615026e-06,
+      "mean_absolute_difference_m": 2.822735006118829e-07,
+      "origin_m": [
+        -8.699850428190567,
+        -4.212374822095594,
+        -0.5756998549081136
+      ]
+    },
+    {
+      "error": "RuntimeError('\\x1b[1;31m[Open3D Error] (uint32_t open3d::t::geometry::RaycastingScene::AddTriangles(const open3d::core::Tensor&, const open3d::core::Tensor&)) /root/Open3D/cpp/open3d/t/geometry/RaycastingScene.cpp:1235: Tensor has dtype Float64, but is expected to have Float32.\\n\\x1b[0;m')",
+      "label": "global_float64",
+      "unsupported": true
+    }
+  ]
+}

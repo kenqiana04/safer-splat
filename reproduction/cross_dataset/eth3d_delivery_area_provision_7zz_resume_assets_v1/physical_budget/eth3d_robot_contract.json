@@ -1,0 +1,17 @@
+{
+  "bounded_qp": true,
+  "claim": "REAL_WORLD_SCENE_MAP_WITH_ORACLE_STATE_SIMULATED_NAVIGATION",
+  "classification": "PROJECT_BENCHMARK_DESIGN_CHOICE",
+  "componentwise_umax_m_s2": 0.1,
+  "componentwise_vmax_m_s": 0.1,
+  "dt_s": 0.05,
+  "epsilon_base_m": 0.01,
+  "exact_swept_segment_oracle_required": true,
+  "geometry": "sphere",
+  "integrator": "forward Euler",
+  "oracle_state": true,
+  "post_qp_clip": false,
+  "r_robot_m": 0.1,
+  "state": "[p,v]",
+  "status": "FROZEN"
+}

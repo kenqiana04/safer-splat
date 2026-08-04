@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "create_returncode": 0,
+  "test_returncode": 0,
+  "list_returncode": 0,
+  "extract_returncode": 0,
+  "unicode_path_present": true,
+  "source_tree_sha256": "a3c5e39092a648ddbe1d4646363134d97b4e0a578fd0096e038670220a53a434",
+  "extracted_tree_sha256": "a3c5e39092a648ddbe1d4646363134d97b4e0a578fd0096e038670220a53a434",
+  "safe_archive_audit": {
+    "status": "PASS",
+    "entry_count": 5,
+    "total_uncompressed_bytes": 291,
+    "total_ratio": 0.5762376237623762,
+    "issues": []
+  },
+  "traversal_archive_pre_extract_status": "FAIL",
+  "traversal_issue_codes": [
+    "PARENT_TRAVERSAL"
+  ],
+  "traversal_extracted": false
+}

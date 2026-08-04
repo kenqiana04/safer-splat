@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "downloaded_payload_bytes": 2435222146,
+  "archives": [
+    {
+      "archive": "delivery_area_rig_undistorted.7z",
+      "url": "https://www.eth3d.net/data/delivery_area_rig_undistorted.7z",
+      "role": "MAPPING_INPUT_SOURCE_ARCHIVE",
+      "expected_bytes": 278900786,
+      "actual_bytes": 278900786,
+      "sha256": "fa71d95e43e0357c62b3ee1ca3629dc1c9c9ce1c2bd97927fc4cf54ab33249fa",
+      "head": {
+        "http_code": 200,
+        "content_length": 278900786,
+        "effective_url": "https://www.eth3d.net/data/delivery_area_rig_undistorted.7z",
+        "effective_host": "www.eth3d.net"
+      },
+      "status": "DOWNLOADED"
+    },
+    {
+      "archive": "delivery_area_rig_scan_eval.7z",
+      "url": "https://www.eth3d.net/data/delivery_area_rig_scan_eval.7z",
+      "role": "HELDOUT_EVALUATION_ONLY",
+      "expected_bytes": 36142207,
+      "actual_bytes": 36142207,
+      "sha256": "140f066e9b4e66fc6b23279c02ec28342f24cbcc95c246afa29a21129f10f516",
+      "head": {
+        "http_code": 200,
+        "content_length": 36142207,
+        "effective_url": "https://www.eth3d.net/data/delivery_area_rig_scan_eval.7z",
+        "effective_host": "www.eth3d.net"
+      },
+      "status": "DOWNLOADED"
+    },
+    {
+      "archive": "delivery_area_rig_occlusion.7z",
+      "url": "https://www.eth3d.net/data/delivery_area_rig_occlusion.7z",
+      "role": "HELDOUT_EVALUATION_ONLY",
+      "expected_bytes": 56643980,
+      "actual_bytes": 56643980,
+      "sha256": "2fd77822edf2f3f1ff69cddbc265a772f3dc0dfa1b1a0fd62805355ca920a43b",
+      "head": {
+        "http_code": 200,
+        "content_length": 56643980,
+        "effective_url": "https://www.eth3d.net/data/delivery_area_rig_occlusion.7z",
+        "effective_host": "www.eth3d.net"
+      },
+      "status": "DOWNLOADED"
+    },
+    {
+      "archive": "delivery_area_rig_depth.7z",
+      "url": "https://www.eth3d.net/data/delivery_area_rig_depth.7z",
+      "role": "HELDOUT_EVALUATION_ONLY",
+      "expected_bytes": 636547888,
+      "actual_bytes": 636547888,
+      "sha256": "6a367fa44bba34f44bd074f2a37b178df5ca037d6c162afe34d027f0ffce7841",
+      "head": {
+        "http_code": 200,
+        "content_length": 636547888,
+        "effective_url": "https://www.eth3d.net/data/delivery_area_rig_depth.7z",
+        "effective_host": "www.eth3d.net"
+      },
+      "status": "DOWNLOADED"
+    },
+    {
+      "archive": "delivery_area_scan_clean.7z",
+      "url": "https://www.eth3d.net/data/delivery_area_scan_clean.7z",
+      "role": "REFERENCE_ORACLE_ONLY",
+      "expected_bytes": 381363091,
+      "actual_bytes": 381363091,
+      "sha256": "cd3f41c563911fcc630241f04bd2e0ac5e9e0091bb298c2a74873f3dca837436",
+      "head": {
+        "http_code": 200,
+        "content_length": 381363091,
+        "effective_url": "https://www.eth3d.net/data/delivery_area_scan_clean.7z",
+        "effective_host": "www.eth3d.net"
+      },
+      "status": "DOWNLOADED"
+    },
+    {
+      "archive": "delivery_area_dslr_undistorted.7z",
+      "url": "https://www.eth3d.net/data/delivery_area_dslr_undistorted.7z",
+      "role": "CROSS_VIEW_EVALUATION_ONLY",
+      "expected_bytes": 478076254,
+      "actual_bytes": 478076254,
+      "sha256": "9acf5efec4b99a69b89ebb87b403259730756c1a510307c92e5f2ce2d22658f3",
+      "head": {
+        "http_code": 200,
+        "content_length": 478076254,
+        "effective_url": "https://www.eth3d.net/data/delivery_area_dslr_undistorted.7z",
+        "effective_host": "www.eth3d.net"
+      },
+      "status": "DOWNLOADED"
+    },
+    {
+      "archive": "delivery_area_dslr_scan_eval.7z",
+      "url": "https://www.eth3d.net/data/delivery_area_dslr_scan_eval.7z",
+      "role": "CROSS_VIEW_EVALUATION_ONLY",
+      "expected_bytes": 122553428,
+      "actual_bytes": 122553428,
+      "sha256": "8e07f7a7956a41c1ecc18ca8a61d3fff274c080050301a1b7dff12a3ca5ed5d2",
+      "head": {
+        "http_code": 200,
+        "content_length": 122553428,
+        "effective_url": "https://www.eth3d.net/data/delivery_area_dslr_scan_eval.7z",
+        "effective_host": "www.eth3d.net"
+      },
+      "status": "DOWNLOADED"
+    },
+    {
+      "archive": "delivery_area_dslr_occlusion.7z",
+      "url": "https://www.eth3d.net/data/delivery_area_dslr_occlusion.7z",
+      "role": "CROSS_VIEW_EVALUATION_ONLY",
+      "expected_bytes": 56850384,
+      "actual_bytes": 56850384,
+      "sha256": "f61a1bd74bc8fe07d03973520cc1433ea99566fcd637a654a5b2072d475a1b4c",
+      "head": {
+        "http_code": 200,
+        "content_length": 56850384,
+        "effective_url": "https://www.eth3d.net/data/delivery_area_dslr_occlusion.7z",
+        "effective_host": "www.eth3d.net"
+      },
+      "status": "DOWNLOADED"
+    },
+    {
+      "archive": "delivery_area_dslr_depth.7z",
+      "url": "https://www.eth3d.net/data/delivery_area_dslr_depth.7z",
+      "role": "CROSS_VIEW_EVALUATION_ONLY",
+      "expected_bytes": 388144128,
+      "actual_bytes": 388144128,
+      "sha256": "e6edc65b5b6de343876382040c839405eef79abed33319aa377883f4ddc5775a",
+      "head": {
+        "http_code": 200,
+        "content_length": 388144128,
+        "effective_url": "https://www.eth3d.net/data/delivery_area_dslr_depth.7z",
+        "effective_host": "www.eth3d.net"
+      },
+      "status": "DOWNLOADED"
+    }
+  ]
+}

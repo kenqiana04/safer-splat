@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "archives": [
+    {
+      "status": "PASS",
+      "entry_count": 958,
+      "total_uncompressed_bytes": 314088882,
+      "total_ratio": 1.1261670736202227,
+      "issues": [],
+      "archive": "delivery_area_rig_undistorted.7z",
+      "role": "MAPPING_INPUT_SOURCE_ARCHIVE",
+      "archive_bytes": 278900786
+    },
+    {
+      "status": "PASS",
+      "entry_count": 5,
+      "total_uncompressed_bytes": 78316556,
+      "total_ratio": 2.166900211710923,
+      "issues": [],
+      "archive": "delivery_area_rig_scan_eval.7z",
+      "role": "HELDOUT_EVALUATION_ONLY",
+      "archive_bytes": 36142207
+    },
+    {
+      "status": "PASS",
+      "entry_count": 905,
+      "total_uncompressed_bytes": 120361511,
+      "total_ratio": 2.1248773656088433,
+      "issues": [],
+      "archive": "delivery_area_rig_occlusion.7z",
+      "role": "HELDOUT_EVALUATION_ONLY",
+      "archive_bytes": 56643980
+    },
+    {
+      "status": "PASS",
+      "entry_count": 954,
+      "total_uncompressed_bytes": 1368760320,
+      "total_ratio": 2.1502864840233356,
+      "issues": [],
+      "archive": "delivery_area_rig_depth.7z",
+      "role": "HELDOUT_EVALUATION_ONLY",
+      "archive_bytes": 636547888
+    },
+    {
+      "status": "PASS",
+      "entry_count": 5,
+      "total_uncompressed_bytes": 787814821,
+      "total_ratio": 2.0657867517651307,
+      "issues": [],
+      "archive": "delivery_area_scan_clean.7z",
+      "role": "REFERENCE_ORACLE_ONLY",
+      "archive_bytes": 381363091
+    },
+    {
+      "status": "PASS",
+      "entry_count": 51,
+      "total_uncompressed_bytes": 491213809,
+      "total_ratio": 1.0274800408723082,
+      "issues": [],
+      "archive": "delivery_area_dslr_undistorted.7z",
+      "role": "CROSS_VIEW_EVALUATION_ONLY",
+      "archive_bytes": 478076254
+    },
+    {
+      "status": "PASS",
+      "entry_count": 5,
+      "total_uncompressed_bytes": 298784145,
+      "total_ratio": 2.437990922620296,
+      "issues": [],
+      "archive": "delivery_area_dslr_scan_eval.7z",
+      "role": "CROSS_VIEW_EVALUATION_ONLY",
+      "archive_bytes": 122553428
+    },
+    {
+      "status": "PASS",
+      "entry_count": 48,
+      "total_uncompressed_bytes": 120635789,
+      "total_ratio": 2.121987232311395,
+      "issues": [],
+      "archive": "delivery_area_dslr_occlusion.7z",
+      "role": "CROSS_VIEW_EVALUATION_ONLY",
+      "archive_bytes": 56850384
+    },
+    {
+      "status": "PASS",
+      "entry_count": 47,
+      "total_uncompressed_bytes": 4291854336,
+      "total_ratio": 11.057372832392817,
+      "issues": [],
+      "archive": "delivery_area_dslr_depth.7z",
+      "role": "CROSS_VIEW_EVALUATION_ONLY",
+      "archive_bytes": 388144128
+    }
+  ]
+}

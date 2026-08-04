@@ -1,0 +1,56 @@
+{
+  "candidate_map_access_count": 0,
+  "checked_utc": "2026-08-04T06:19:05Z",
+  "checkpoint_count": 0,
+  "controller_count": 0,
+  "denylist_download_count": 0,
+  "frame_deletion_count": 0,
+  "icp_count": 0,
+  "model_or_map_generation_count": 0,
+  "official_3dgs_run_count": 0,
+  "optimizer_step_count": 0,
+  "physical_gpu_1": {
+    "command": [
+      "nvidia-smi",
+      "-i",
+      "1",
+      "--query-gpu=index,name,uuid,memory.total,memory.used,utilization.gpu",
+      "--format=csv,noheader"
+    ],
+    "returncode": 0,
+    "stdout": "1, NVIDIA GeForce RTX 4090, GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d, 24564 MiB, 6 MiB, 0 %"
+  },
+  "physical_gpu_1_compute_processes": {
+    "command": [
+      "nvidia-smi",
+      "-i",
+      "1",
+      "--query-compute-apps=pid,process_name,used_gpu_memory",
+      "--format=csv,noheader"
+    ],
+    "returncode": 0,
+    "stdout": ""
+  },
+  "planner_benchmark_count": 0,
+  "proxy_final": {
+    "checked_utc": "2026-08-04T06:18:52Z",
+    "error": null,
+    "firewall_change_count": 0,
+    "listener": "127.0.0.1:17898",
+    "port_17897_touched": false,
+    "reachable": true,
+    "repair_attempted": false,
+    "repair_success": false,
+    "sshd_restart_count": 0
+  },
+  "scale_repair_count": 0,
+  "sim3_count": 0,
+  "smoke_count": 0,
+  "status": "PASS_NO_EXECUTION_BOUNDARY",
+  "task_owned_gpu_process_count": 0,
+  "task_owned_running_process_count": 0,
+  "task_owned_running_processes": [],
+  "training_count": 0,
+  "training_environment_create_count": 0,
+  "training_environment_modify_count": 0
+}

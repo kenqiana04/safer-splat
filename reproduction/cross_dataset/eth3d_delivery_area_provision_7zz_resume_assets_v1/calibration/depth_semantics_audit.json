@@ -1,0 +1,32 @@
+{
+  "dslr": {
+    "byte_size_matches_distorted_camera_dimensions": 0,
+    "camera_mask_dimension_contract_count": 0,
+    "file_count": 44,
+    "official_pixel_geometry": "ORIGINAL_DISTORTED_IMAGES_NOT_UNDISTORTED_MAPPING_IMAGES",
+    "raw_float32_little_endian": true,
+    "runtime_or_train_access": false,
+    "sampled_finite_count": 728,
+    "sampled_positive_count": 728,
+    "sampled_positive_depth_range_m": [
+      2.3059980869293213,
+      54.00419235229492
+    ]
+  },
+  "rig": {
+    "byte_size_matches_distorted_camera_dimensions": 948,
+    "camera_mask_dimension_contract_count": 4,
+    "file_count": 948,
+    "official_pixel_geometry": "ORIGINAL_DISTORTED_IMAGES_NOT_UNDISTORTED_MAPPING_IMAGES",
+    "raw_float32_little_endian": true,
+    "runtime_or_train_access": false,
+    "sampled_finite_count": 101178,
+    "sampled_positive_count": 101178,
+    "sampled_positive_depth_range_m": [
+      1.4641151428222656,
+      53.340843200683594
+    ]
+  },
+  "runtime_unknown_ideal_audit_uses": "official mesh-derived first surface in undistorted camera model",
+  "status": "PASS_WITH_PIXEL_GEOMETRY_BOUNDARY"
+}

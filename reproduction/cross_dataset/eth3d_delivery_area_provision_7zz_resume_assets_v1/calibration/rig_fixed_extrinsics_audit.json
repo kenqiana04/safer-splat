@@ -1,0 +1,30 @@
+{
+  "camera_labels": [
+    "cam4",
+    "cam5",
+    "cam6",
+    "cam7"
+  ],
+  "max_rotation_deviation_deg": 0.00030606564666640874,
+  "max_translation_deviation_m": 4.25110038528847e-05,
+  "per_camera": {
+    "cam4": {
+      "max_rotation_deviation_deg": 1.7075472925031877e-06,
+      "max_translation_deviation_m": 5.3705425095741715e-15
+    },
+    "cam5": {
+      "max_rotation_deviation_deg": 0.0002146251778574735,
+      "max_translation_deviation_m": 4.25110038528847e-05
+    },
+    "cam6": {
+      "max_rotation_deviation_deg": 0.00030606564666640874,
+      "max_translation_deviation_m": 3.725901895086869e-05
+    },
+    "cam7": {
+      "max_rotation_deviation_deg": 0.000261762043217291,
+      "max_translation_deviation_m": 3.276244429411874e-05
+    }
+  },
+  "reference_camera": "cam4",
+  "status": "PASS"
+}

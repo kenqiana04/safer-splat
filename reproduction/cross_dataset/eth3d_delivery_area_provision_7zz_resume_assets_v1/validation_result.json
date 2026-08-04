@@ -1,0 +1,25 @@
+{
+  "failed_gate": "reference_only_routes.blocked_straight_line_ratio",
+  "failed_gate_count": 1,
+  "gates": {
+    "archive_runtime": "PASS",
+    "continuous_reference": "PASS",
+    "coordinate": "PASS",
+    "crc_security_extraction": "PASS",
+    "distance_parity": "PASS",
+    "ideal_unknown": "PASS",
+    "nine_frozen_downloads": "PASS",
+    "no_execution": "PASS",
+    "physical_isolation": "PASS",
+    "prm_graph": "PASS",
+    "reference_only_routes": "FAIL",
+    "rig_dslr": "PASS",
+    "split": "PASS",
+    "train_only_colmap": "PASS"
+  },
+  "scientific_contract_change_count": 0,
+  "status": "NO_ETH3D_DELIVERY_AREA_REFERENCE_ROUTE_BENCHMARK_CONTRACT",
+  "training_authorized": false,
+  "unresolved_critical_evidence": [],
+  "validated_utc": "2026-08-04T06:25:32Z"
+}

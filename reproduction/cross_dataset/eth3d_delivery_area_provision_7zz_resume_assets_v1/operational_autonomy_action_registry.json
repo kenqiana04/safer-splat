@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "task": "PROVISION_TASK_LOCAL_7ZZ_AND_RESUME_ETH3D_ASSET_CONTRACT_AUDIT_V1",
+  "actions": [
+    {
+      "action_index": 1,
+      "class": "task_owned_directory_provisioning",
+      "scope": "/disk1/zlab/maintenance_records/eth3d_delivery_area_provision_7zz_resume_assets_v1 and /disk1/zlab/cross_dataset_assets/eth3d_delivery_area_protocol_v2_v1",
+      "scientific_semantics_changed": false
+    },
+    {
+      "action_index": 2,
+      "class": "task_local_7zz_provisioning",
+      "scope": "official 7-Zip 26.02 x64 Linux binary under task-owned tools/7zz",
+      "scientific_semantics_changed": false
+    },
+    {
+      "action_index": 3,
+      "class": "download_wrapper_compatibility_correction",
+      "scope": "removed unsupported curl --retry-all-errors flag after first non-scientific wrapper failure",
+      "scientific_semantics_changed": false
+    },
+    {
+      "action_index": 4,
+      "class": "python_3_8_compatibility_correction",
+      "scope": "replaced str.removesuffix('.7z') with suffix validation and byte-equivalent slicing",
+      "scientific_semantics_changed": false
+    },
+    {
+      "action_index": 5,
+      "class": "task_owned_diagnostic_duplicate_cleanup",
+      "scope": "removed only the verified 46 MiB task-owned tmp/rig_inspect duplicate after formal quarantine extraction passed",
+      "scientific_semantics_changed": false
+    },
+    {
+      "action_index": 6,
+      "class": "reference_distance_numeric_implementation_correction",
+      "scope": "kept the frozen 256 queries and 1e-6 m threshold, replacing the unsupported exact float64 Open3D gate with an exhaustive R-tree broad phase plus independent Ericson float64 point-triangle channel; retained Open3D float32 as a non-gating diagnostic",
+      "scientific_semantics_changed": false
+    },
+    {
+      "action_index": 7,
+      "class": "ideal_unknown_train_support_enumeration_correction",
+      "scope": "removed an unintended nearest-32 capture performance heuristic so the frozen ideal UNKNOWN preflight enumerates every TRAIN capture group",
+      "scientific_semantics_changed": false
+    },
+    {
+      "action_index": 8,
+      "class": "reference_prm_voxel_candidate_implementation_correction",
+      "scope": "implemented the frozen safe-camera-center plus 0.05 m verified-domain deterministic voxel candidate source; exact clearance and primary ideal UNKNOWN gates remain unchanged and camera trajectory is not treated as a route",
+      "scientific_semantics_changed": false
+    },
+    {
+      "action_index": 9,
+      "class": "task_owned_prm_memory_recovery",
+      "scope": "terminated only task-owned PID 2534456 at 37.7 GiB RSS before server pressure, then changed identical proximity queries to bounded fixed batches (final batch size 256)",
+      "scientific_semantics_changed": false
+    },
+    {
+      "action_index": 10,
+      "class": "task_owned_prm_edge_runtime_recovery",
+      "scope": "terminated only task-owned PID 2535173 after its 512-node gate passed but scalar edge evaluation remained unbounded; preserved identical sorted edge work and switched to eight read-only fork workers with deterministic collection order",
+      "scientific_semantics_changed": false
+    },
+    {
+      "action_index": 11,
+      "class": "task_owned_prm_threading_wrapper_correction",
+      "scope": "terminated only task-owned PID 2539424 after 75 seconds when a wrapper-only OMP_NUM_THREADS=1 setting unnecessarily serialized unchanged node proximity work; removed only that wrapper setting",
+      "scientific_semantics_changed": false
+    },
+    {
+      "action_index": 12,
+      "class": "conservative_exact_swept_sphere_certification_runtime_correction",
+      "scope": "terminated only task-owned parent PID 2539830 and its eight task-owned fork workers after the uncapped edge-distance expansion remained computationally unbounded; replaced it with exhaustive float64 segment-triangle testing inside the frozen decision-relevant cap NONMAP_RESERVE + MAX_EDGE = 0.6352627944162882 m, recording larger clearances only as conservative certified lower bounds and never as uncapped exact minima",
+      "scientific_semantics_changed": false
+    },
+    {
+      "action_index": 13,
+      "class": "free_3d_verified_domain_voxel_implementation_correction",
+      "scope": "after the first complete route enumeration exposed zero blocked straight lines, corrected the deterministic 0.05 m verified-domain voxel generator from one median-z slice to every lattice layer intersecting the frozen observed rig-center z bounds, matching the already-frozen 6D free-3D robot state without changing seed, spacing, thresholds, reference, UNKNOWN, budget, or route quota",
+      "scientific_semantics_changed": false
+    },
+    {
+      "action_index": 14,
+      "class": "frozen_prm_edge_cost_implementation_correction",
+      "scope": "terminated only the active task-owned route wrapper PID 2545649 and PRM child PID 2545652 before they could publish an edge graph missing the preregistered cost; implemented edge length plus inverse reference-residual-budget planning cost and retained physical path length separately, with seed, graph gates, route quota, and all frozen thresholds unchanged",
+      "scientific_semantics_changed": false
+    },
+    {
+      "action_index": 15,
+      "class": "deterministic_prm_candidate_streaming_runtime_correction",
+      "scope": "terminated only task-owned route wrapper PID 2546533 and PRM child PID 2546536 after confirming the implementation precomputed clearance for every 3D candidate before consuming only the first 512 qualified nodes; changed to identical deterministic-order 256-candidate batches that stop at the same qualified-node cap",
+      "scientific_semantics_changed": false
+    }
+  ],
+  "operational_autonomy_action_count": 15,
+  "task_owned_process_termination_count": 16,
+  "scientific_contract_change_count": 0
+}

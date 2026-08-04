@@ -1,0 +1,14 @@
+{
+  "B_map_available_formula": "min_reference_center_clearance(route)-nonmap_reserve",
+  "arbitrary_centimeter_gate": false,
+  "epsilon_loc_m": 0.0,
+  "epsilon_reaction_stop_m": 0.09526279441628825,
+  "epsilon_sampled_m": 0.0,
+  "epsilon_shape_m": 0.0,
+  "epsilon_tracking_target_m": 0.03,
+  "nonmap_reserve_m": 0.23526279441628825,
+  "reaction_stop_formula": "sqrt(3)*(dt*vmax + vmax^2/(2*umax))",
+  "real_robot_safety_standard_claim": false,
+  "required_B_map_available_positive": true,
+  "status": "FROZEN_FORMULA_PENDING_ROUTE_VALUES"
+}

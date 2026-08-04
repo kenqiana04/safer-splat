@@ -1,0 +1,41 @@
+{
+  "bounds_m": [
+    [
+      -54.24275588989258,
+      -10.359530448913574,
+      -5.375921249389648
+    ],
+    [
+      15.692543029785156,
+      37.67365264892578,
+      1.7017736434936523
+    ]
+  ],
+  "camera_centers_in_expanded_reference_bounds_fraction": 1.0,
+  "continuous_collision_query": true,
+  "dslr_surface_sha256": "82a9b20c9f3c7dc933f86c45e0855adf649fcf08b7549baba760cf385d489370",
+  "face_count": 4868354,
+  "horizontal_surface_face_fraction": 0.5411518965136882,
+  "icp_count": 0,
+  "limitations": "Authority is limited to the verified camera-observed/route-candidate domain; no whole-space completeness claim.",
+  "mesh_mutation_count": 0,
+  "official_continuous_surface": "/disk1/zlab/cross_dataset_assets/eth3d_delivery_area_protocol_v2_v1/RAW_EXTRACT_QUARANTINE/delivery_area_rig_occlusion/delivery_area/occlusion/surface_mesh.ply",
+  "official_splats": "/disk1/zlab/cross_dataset_assets/eth3d_delivery_area_protocol_v2_v1/RAW_EXTRACT_QUARANTINE/delivery_area_rig_occlusion/delivery_area/occlusion/splats.ply",
+  "reference_authority": "A_DENSE_INDEPENDENT_GEOMETRY_WITHIN_VERIFIED_DOMAIN",
+  "rig_dslr_surface_identity_equal": true,
+  "scale_fit_count": 0,
+  "scan_clean_sample_count": 23994,
+  "scan_clean_to_surface_distance_m": {
+    "maximum": 0.16190167716321383,
+    "median": 0.0003153506465484268,
+    "p95": 0.003848621251519671
+  },
+  "sim3_count": 0,
+  "splats_sha256": "79698e22c845c4d01d18ef0b224afe883334fd65cfae19aefaf1f727a6916449",
+  "status": "PASS_CONTINUOUS_REFERENCE_ORACLE",
+  "surface_sha256": "82a9b20c9f3c7dc933f86c45e0855adf649fcf08b7549baba760cf385d489370",
+  "thin_structure_support": "OFFICIAL_SPLATS_PLUS_SURFACE_MESH",
+  "vertex_count": 2434103,
+  "vertical_axis_from_camera_trajectory": 2,
+  "wall_like_face_fraction": 0.3291443062686074
+}

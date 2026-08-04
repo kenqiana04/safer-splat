@@ -1,0 +1,37 @@
+{
+  "algorithm": "ETH3D_MULTI_VIEW_FIRST_SURFACE_UNKNOWN_V1",
+  "classification": "PROJECT_RUNTIME_UNKNOWN_DESIGN_V1",
+  "front_surface_margin_m": 0.01,
+  "frustum_or_low_alpha_implies_free": false,
+  "minimum_angular_spread_deg": 15.0,
+  "one_best_view_per_capture_group": true,
+  "runtime_forbidden_inputs": [
+    "GT depth",
+    "scan",
+    "scan_eval",
+    "occlusion",
+    "reference geometry"
+  ],
+  "runtime_inputs": [
+    "TRAIN poses/intrinsics",
+    "TRAIN capture groups",
+    "future learned Gaussian map",
+    "future native/common renderer first or expected surface depth"
+  ],
+  "sensitivity_report_only": {
+    "angles_deg": [
+      5,
+      10,
+      15,
+      20
+    ],
+    "groups": [
+      2,
+      3,
+      4
+    ]
+  },
+  "status": "FROZEN_PENDING_IDEAL_SUPPORT_AUDIT",
+  "support_capture_groups": 3,
+  "unsupported_classification": "UNKNOWN_TREATED_AS_OCCUPIED_OR_HIGH_COST"
+}

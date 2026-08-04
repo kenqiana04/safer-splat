@@ -1,0 +1,28 @@
+{
+  "policy": "BOUNDED_OPERATIONAL_AUTONOMY_POLICY_V1",
+  "allowed_scope": [
+    "task-owned tools, directories, downloads, caches, and processes",
+    "managed reverse SSH tunnel and watchdog",
+    "loopback proxy 127.0.0.1:17898",
+    "task-owned permissions, resume, extraction, and validation"
+  ],
+  "immutable_scientific_contracts": [
+    "dataset and scene",
+    "nine/five whitelist and denylist",
+    "modality fallback rules",
+    "official 3DGS frontend",
+    "POSE_BLOCK_SPLIT_V1",
+    "ETH3D_MULTI_VIEW_FIRST_SURFACE_UNKNOWN_V1",
+    "robot/dynamics and physical-budget equation",
+    "reference-only route rules",
+    "Protocol V2 classification"
+  ],
+  "prohibited": [
+    "global firewall/sshd/network changes",
+    "non-loopback proxy listener",
+    "unrelated process termination",
+    "training environment modification",
+    "training, optimizer, smoke, map, or controller execution",
+    "candidate-map access, ICP/Sim3, scale repair, or frame deletion"
+  ]
+}

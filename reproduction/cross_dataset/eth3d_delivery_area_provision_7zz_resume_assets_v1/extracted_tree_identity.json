@@ -1,0 +1,396 @@
+{
+  "status": "PASS",
+  "archives": [
+    {
+      "archive": "delivery_area_rig_undistorted.7z",
+      "role": "MAPPING_INPUT_SOURCE_ARCHIVE",
+      "tree_sha256": "c2e83b473aafb0b9d7360604a6a769a4ced7ce4fd7e4add3a771209091354162",
+      "file_count": 951,
+      "total_bytes": 314088882,
+      "extensions": {
+        ".png": 948,
+        ".txt": 3
+      },
+      "largest_files": [
+        {
+          "path": "delivery_area/rig_calibration_undistorted/images.txt",
+          "size": 38268020
+        },
+        {
+          "path": "delivery_area/rig_calibration_undistorted/points3D.txt",
+          "size": 9676528
+        },
+        {
+          "path": "delivery_area/images/images_rig_cam5_undistorted/1477843921536167523.png",
+          "size": 341086
+        },
+        {
+          "path": "delivery_area/images/images_rig_cam5_undistorted/1477843920209063523.png",
+          "size": 339058
+        },
+        {
+          "path": "delivery_area/images/images_rig_cam5_undistorted/1477843920577703523.png",
+          "size": 338903
+        },
+        {
+          "path": "delivery_area/images/images_rig_cam5_undistorted/1477843920798887523.png",
+          "size": 338411
+        },
+        {
+          "path": "delivery_area/images/images_rig_cam5_undistorted/1477843921978535523.png",
+          "size": 337593
+        },
+        {
+          "path": "delivery_area/images/images_rig_cam5_undistorted/1477843921241255523.png",
+          "size": 337372
+        },
+        {
+          "path": "delivery_area/images/images_rig_cam5_undistorted/1477843921831079523.png",
+          "size": 336569
+        },
+        {
+          "path": "delivery_area/images/images_rig_cam5_undistorted/1477843921904807523.png",
+          "size": 336515
+        }
+      ]
+    },
+    {
+      "archive": "delivery_area_rig_scan_eval.7z",
+      "role": "HELDOUT_EVALUATION_ONLY",
+      "tree_sha256": "dc21a090df75053c10dc3a298f2dc731f39d2a4e864603569eb6792bfff8c8d9",
+      "file_count": 3,
+      "total_bytes": 78316556,
+      "extensions": {
+        ".mlp": 1,
+        ".ply": 2
+      },
+      "largest_files": [
+        {
+          "path": "delivery_area/rig_scan_eval/scan2.ply",
+          "size": 44433569
+        },
+        {
+          "path": "delivery_area/rig_scan_eval/scan1.ply",
+          "size": 33882449
+        },
+        {
+          "path": "delivery_area/rig_scan_eval/scan_alignment.mlp",
+          "size": 538
+        }
+      ]
+    },
+    {
+      "archive": "delivery_area_rig_occlusion.7z",
+      "role": "HELDOUT_EVALUATION_ONLY",
+      "tree_sha256": "b361f2e72852c4e6dbd49852d221b4a99ab0ed517939543811a03938d0558f5f",
+      "file_count": 897,
+      "total_bytes": 120361511,
+      "extensions": {
+        ".ply": 2,
+        ".png": 895
+      },
+      "largest_files": [
+        {
+          "path": "delivery_area/occlusion/surface_mesh.ply",
+          "size": 99800410
+        },
+        {
+          "path": "delivery_area/occlusion/splats.ply",
+          "size": 18780572
+        },
+        {
+          "path": "delivery_area/masks_for_images/images_rig_cam5/1477843922125991523.png",
+          "size": 3250
+        },
+        {
+          "path": "delivery_area/masks_for_images/images_rig_cam5/1477843921904807523.png",
+          "size": 3224
+        },
+        {
+          "path": "delivery_area/masks_for_images/images_rig_cam5/1477843922347175523.png",
+          "size": 3196
+        },
+        {
+          "path": "delivery_area/masks_for_images/images_rig_cam5/1477843922052263523.png",
+          "size": 3194
+        },
+        {
+          "path": "delivery_area/masks_for_images/images_rig_cam5/1477843922494631523.png",
+          "size": 3133
+        },
+        {
+          "path": "delivery_area/masks_for_images/images_rig_cam5/1477843921757351523.png",
+          "size": 3131
+        },
+        {
+          "path": "delivery_area/masks_for_images/images_rig_cam5/1477843921978535523.png",
+          "size": 3126
+        },
+        {
+          "path": "delivery_area/masks_for_images/images_rig_cam5/1477843922568359523.png",
+          "size": 3121
+        }
+      ]
+    },
+    {
+      "archive": "delivery_area_rig_depth.7z",
+      "role": "HELDOUT_EVALUATION_ONLY",
+      "tree_sha256": "e7ae1e0a7fcfebc60d39c979b3962d9335a4e3f4a0a69828102485b806c932c9",
+      "file_count": 948,
+      "total_bytes": 1368760320,
+      "extensions": {
+        ".png": 948
+      },
+      "largest_files": [
+        {
+          "path": "delivery_area/ground_truth_depth/images_rig_cam6/1477843926254759523.png",
+          "size": 1443840
+        },
+        {
+          "path": "delivery_area/ground_truth_depth/images_rig_cam6/1477843917923495523.png",
+          "size": 1443840
+        },
+        {
+          "path": "delivery_area/ground_truth_depth/images_rig_cam6/1477843920282791523.png",
+          "size": 1443840
+        },
+        {
+          "path": "delivery_area/ground_truth_depth/images_rig_cam6/1477843934512295523.png",
+          "size": 1443840
+        },
+        {
+          "path": "delivery_area/ground_truth_depth/images_rig_cam6/1477843922052263523.png",
+          "size": 1443840
+        },
+        {
+          "path": "delivery_area/ground_truth_depth/images_rig_cam6/1477843922642087523.png",
+          "size": 1443840
+        },
+        {
+          "path": "delivery_area/ground_truth_depth/images_rig_cam6/1477843934586023523.png",
+          "size": 1443840
+        },
+        {
+          "path": "delivery_area/ground_truth_depth/images_rig_cam6/1477843920946343523.png",
+          "size": 1443840
+        },
+        {
+          "path": "delivery_area/ground_truth_depth/images_rig_cam6/1477843924632743523.png",
+          "size": 1443840
+        },
+        {
+          "path": "delivery_area/ground_truth_depth/images_rig_cam6/1477843918587047523.png",
+          "size": 1443840
+        }
+      ]
+    },
+    {
+      "archive": "delivery_area_scan_clean.7z",
+      "role": "REFERENCE_ORACLE_ONLY",
+      "tree_sha256": "2982ba8b381e2abf633db9b82b297049e83c27ff37e354c61110afb980e07849",
+      "file_count": 3,
+      "total_bytes": 787814821,
+      "extensions": {
+        ".mlp": 1,
+        ".ply": 2
+      },
+      "largest_files": [
+        {
+          "path": "delivery_area/scan_clean/scan2.ply",
+          "size": 394095969
+        },
+        {
+          "path": "delivery_area/scan_clean/scan1.ply",
+          "size": 393718314
+        },
+        {
+          "path": "delivery_area/scan_clean/scan_alignment.mlp",
+          "size": 538
+        }
+      ]
+    },
+    {
+      "archive": "delivery_area_dslr_undistorted.7z",
+      "role": "CROSS_VIEW_EVALUATION_ONLY",
+      "tree_sha256": "b1756248a4df184532c39e87a9bed79a072ac9177cd13db937c23c3fb7b6d733",
+      "file_count": 47,
+      "total_bytes": 491213809,
+      "extensions": {
+        ".jpg": 44,
+        ".txt": 3
+      },
+      "largest_files": [
+        {
+          "path": "delivery_area/images/dslr_images_undistorted/DSC_0686.JPG",
+          "size": 12002791
+        },
+        {
+          "path": "delivery_area/images/dslr_images_undistorted/DSC_0689.JPG",
+          "size": 11922302
+        },
+        {
+          "path": "delivery_area/images/dslr_images_undistorted/DSC_0688.JPG",
+          "size": 11920665
+        },
+        {
+          "path": "delivery_area/images/dslr_images_undistorted/DSC_0687.JPG",
+          "size": 11885343
+        },
+        {
+          "path": "delivery_area/images/dslr_images_undistorted/DSC_0685.JPG",
+          "size": 11840237
+        },
+        {
+          "path": "delivery_area/images/dslr_images_undistorted/DSC_0717.JPG",
+          "size": 11816867
+        },
+        {
+          "path": "delivery_area/images/dslr_images_undistorted/DSC_0702.JPG",
+          "size": 11749920
+        },
+        {
+          "path": "delivery_area/images/dslr_images_undistorted/DSC_0683.JPG",
+          "size": 11671306
+        },
+        {
+          "path": "delivery_area/images/dslr_images_undistorted/DSC_0690.JPG",
+          "size": 11658307
+        },
+        {
+          "path": "delivery_area/images/dslr_images_undistorted/DSC_0710.JPG",
+          "size": 11610190
+        }
+      ]
+    },
+    {
+      "archive": "delivery_area_dslr_scan_eval.7z",
+      "role": "CROSS_VIEW_EVALUATION_ONLY",
+      "tree_sha256": "0c688bb21e0a0be894c8119feb927e6e967725c4ea3b885d4922a13c398490fa",
+      "file_count": 3,
+      "total_bytes": 298784145,
+      "extensions": {
+        ".mlp": 1,
+        ".ply": 2
+      },
+      "largest_files": [
+        {
+          "path": "delivery_area/dslr_scan_eval/scan2.ply",
+          "size": 187028322
+        },
+        {
+          "path": "delivery_area/dslr_scan_eval/scan1.ply",
+          "size": 111755285
+        },
+        {
+          "path": "delivery_area/dslr_scan_eval/scan_alignment.mlp",
+          "size": 538
+        }
+      ]
+    },
+    {
+      "archive": "delivery_area_dslr_occlusion.7z",
+      "role": "CROSS_VIEW_EVALUATION_ONLY",
+      "tree_sha256": "69d766db27a31f52e66100a97b6a6dfe076370e6b312b934895deca004903756",
+      "file_count": 44,
+      "total_bytes": 120635789,
+      "extensions": {
+        ".ply": 2,
+        ".png": 42
+      },
+      "largest_files": [
+        {
+          "path": "delivery_area/occlusion/surface_mesh.ply",
+          "size": 99800410
+        },
+        {
+          "path": "delivery_area/occlusion/splats.ply",
+          "size": 18780572
+        },
+        {
+          "path": "delivery_area/masks_for_images/dslr_images/DSC_0714.png",
+          "size": 73811
+        },
+        {
+          "path": "delivery_area/masks_for_images/dslr_images/DSC_0713.png",
+          "size": 72603
+        },
+        {
+          "path": "delivery_area/masks_for_images/dslr_images/DSC_0712.png",
+          "size": 69032
+        },
+        {
+          "path": "delivery_area/masks_for_images/dslr_images/DSC_0691.png",
+          "size": 68291
+        },
+        {
+          "path": "delivery_area/masks_for_images/dslr_images/DSC_0690.png",
+          "size": 65569
+        },
+        {
+          "path": "delivery_area/masks_for_images/dslr_images/DSC_0711.png",
+          "size": 63979
+        },
+        {
+          "path": "delivery_area/masks_for_images/dslr_images/DSC_0718.png",
+          "size": 63875
+        },
+        {
+          "path": "delivery_area/masks_for_images/dslr_images/DSC_0716.png",
+          "size": 62975
+        }
+      ]
+    },
+    {
+      "archive": "delivery_area_dslr_depth.7z",
+      "role": "CROSS_VIEW_EVALUATION_ONLY",
+      "tree_sha256": "7ee564b1abb56c6590ac4a7be2fd8b0a0e1a806a190457307638f05d2506383f",
+      "file_count": 44,
+      "total_bytes": 4291854336,
+      "extensions": {
+        ".jpg": 44
+      },
+      "largest_files": [
+        {
+          "path": "delivery_area/ground_truth_depth/dslr_images/DSC_0711.JPG",
+          "size": 97542144
+        },
+        {
+          "path": "delivery_area/ground_truth_depth/dslr_images/DSC_0688.JPG",
+          "size": 97542144
+        },
+        {
+          "path": "delivery_area/ground_truth_depth/dslr_images/DSC_0710.JPG",
+          "size": 97542144
+        },
+        {
+          "path": "delivery_area/ground_truth_depth/dslr_images/DSC_0675.JPG",
+          "size": 97542144
+        },
+        {
+          "path": "delivery_area/ground_truth_depth/dslr_images/DSC_0704.JPG",
+          "size": 97542144
+        },
+        {
+          "path": "delivery_area/ground_truth_depth/dslr_images/DSC_0684.JPG",
+          "size": 97542144
+        },
+        {
+          "path": "delivery_area/ground_truth_depth/dslr_images/DSC_0713.JPG",
+          "size": 97542144
+        },
+        {
+          "path": "delivery_area/ground_truth_depth/dslr_images/DSC_0676.JPG",
+          "size": 97542144
+        },
+        {
+          "path": "delivery_area/ground_truth_depth/dslr_images/DSC_0686.JPG",
+          "size": 97542144
+        },
+        {
+          "path": "delivery_area/ground_truth_depth/dslr_images/DSC_0690.JPG",
+          "size": 97542144
+        }
+      ]
+    }
+  ]
+}

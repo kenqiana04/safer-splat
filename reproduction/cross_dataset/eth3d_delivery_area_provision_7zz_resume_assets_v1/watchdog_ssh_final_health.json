@@ -1,0 +1,19 @@
+{
+  "checked_local_time": "2026-08-04T14:19:44.6508239+08:00",
+  "scheduled_task": "Codex-Persistent-Reverse-Proxy-Watchdog",
+  "scheduled_task_state": "Running",
+  "scheduled_task_state_code": 4,
+  "last_task_result": 267009,
+  "last_task_result_interpretation": "SCHED_S_TASK_RUNNING",
+  "established_ssh_session_count": 2,
+  "established_ssh_process_ids": [
+    27316,
+    25316
+  ],
+  "managed_ssh_or_watchdog_action_count": 0,
+  "other_ssh_sessions_preserved": true,
+  "sshd_restart_count": 0,
+  "network_restart_count": 0,
+  "firewall_change_count": 0,
+  "status": "PASS_RUNNING_AND_PRESERVED"
+}
