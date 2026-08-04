@@ -1,0 +1,22 @@
+{
+  "FINAL_DECISION": "REPAIR_METHOD_INDEPENDENT_STRESS_SCENARIO_GENERATOR",
+  "FINAL_STATUS": "PASS_ETH3D_MAP_WITH_INSUFFICIENT_FAS_CBF_STRESS_ACTIVATION",
+  "ONLY_NEXT_TASK": "REFINE_FAS_CBF_STRESS_SCENARIO_ACTIVATION_ON_FROZEN_ETH3D_MAP_V1",
+  "checks": {
+    "decision_unique": true,
+    "figure_count_25": true,
+    "five_methods": true,
+    "manifest_complete_500": true,
+    "map_sha_unchanged": true,
+    "no_controller_tuning_after_smoke": true,
+    "no_map_mutation": true,
+    "no_scenario_deletion": true,
+    "no_uncertified_collision_free_segment_claims": true,
+    "reference_not_controller_input": true,
+    "registry_100": true,
+    "report_exists": true,
+    "result_count_500": true
+  },
+  "status": "PASS_FINAL_BENCHMARK_VALIDATION",
+  "uncertified_segment_claims": []
+}

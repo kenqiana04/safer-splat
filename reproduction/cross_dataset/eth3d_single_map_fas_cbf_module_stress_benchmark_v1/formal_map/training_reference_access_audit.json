@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "adapter_heldout_access_zero": true,
+    "adapter_reference_access_zero": true,
+    "formal_heldout_access_zero": true,
+    "formal_reference_access_zero": true,
+    "formal_single_attempt": true,
+    "smoke_heldout_access_zero": true,
+    "smoke_reference_access_zero": true
+  },
+  "gt_depth_access_during_train": 0,
+  "heldout_access_during_train": 0,
+  "reference_access_during_train": 0,
+  "status": "PASS_TRAIN_REFERENCE_ACCESS_AUDIT"
+}

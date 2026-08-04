@@ -1,0 +1,36 @@
+{
+  "expected_run_count": 50,
+  "failure_infrastructure_count": 0,
+  "identity": {
+    "benchmark_config_sha256": "a3166060848f911fbbca79622a8a1c2b45c8acb14596f1f6c6fd13720878d374",
+    "canonical_tree_sha256": "06c1ff17d2ed5eb184b6a9699a3a32da431a1460840431a3effe76d5f03b9ee3",
+    "map_ply_sha256": "927734a2339a3f2710640065b0893eaae162cc0144ac67e2f377bcff2e71ae34",
+    "scenario_registry_sha256": "9f9fce4d1875b57e7a55c3a9cbf5b5a0c3f8476d84b3deb53c920d9b6322bb1d",
+    "source_commit": "54c035f7834b564019656c3e3fcc3646292f727d"
+  },
+  "last_trial_id": "G4_01_402__M4_FULL_FAS_CBF",
+  "map_sha_after": "927734a2339a3f2710640065b0893eaae162cc0144ac67e2f377bcff2e71ae34",
+  "methods": [
+    "M0_SAFER_BASELINE",
+    "M1_FAS_START_SAFE_ONLY",
+    "M2_FAS_START_SAFE_PLUS_FEASIBILITY_AWARE",
+    "M3_FAS_PLUS_DISCRETE_TIME_VERIFICATION",
+    "M4_FULL_FAS_CBF"
+  ],
+  "mode": "smoke",
+  "reference_oracle_controller_input_count": 0,
+  "scenario_ids": [
+    "G0_00_279",
+    "G0_01_171",
+    "G1_00_261",
+    "G1_01_438",
+    "G2_00_350",
+    "G2_01_104",
+    "G3_00_402",
+    "G3_01_328",
+    "G4_00_429",
+    "G4_01_402"
+  ],
+  "state": "COMPLETED",
+  "terminal_run_count": 50
+}

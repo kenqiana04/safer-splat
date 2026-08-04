@@ -1,0 +1,122 @@
+{
+  "canonical_tree_sha256": "06c1ff17d2ed5eb184b6a9699a3a32da431a1460840431a3effe76d5f03b9ee3",
+  "filtering_count": 0,
+  "formal_ply_sha256_after": "927734a2339a3f2710640065b0893eaae162cc0144ac67e2f377bcff2e71ae34",
+  "formal_ply_sha256_before": "927734a2339a3f2710640065b0893eaae162cc0144ac67e2f377bcff2e71ae34",
+  "gaussian_count": 664873,
+  "hard_gates": {
+    "canonical_export_deterministic": true,
+    "formal_process_normal_end": true,
+    "heldout_cross_view_evaluation_runnable": true,
+    "independent_reference_collision_oracle_runnable": true,
+    "map_sha_unchanged": true,
+    "metric_frame_consistent": true,
+    "native_render_runnable": true,
+    "required_parameters_finite": true,
+    "rotations_usable": true,
+    "safer_query_adapter_runnable": true,
+    "scales_positive": true,
+    "source_input_seed_iteration_correct": true,
+    "train_reference_access_zero": true
+  },
+  "heldout_capture_groups": [
+    "1477843917481127523",
+    "1477843926918311523",
+    "1477843934880935523"
+  ],
+  "heldout_centers_in_reference_bounds_fraction": 1.0,
+  "heldout_metrics": [
+    {
+      "capture_group": "1477843917481127523",
+      "image": "images_rig_cam4_undistorted/1477843917481127523.png",
+      "psnr": 9.10408673112244,
+      "ssim": 0.3168181777000427
+    },
+    {
+      "capture_group": "1477843926918311523",
+      "image": "images_rig_cam4_undistorted/1477843926918311523.png",
+      "psnr": 12.483360391566611,
+      "ssim": 0.6353875994682312
+    },
+    {
+      "capture_group": "1477843934880935523",
+      "image": "images_rig_cam4_undistorted/1477843934880935523.png",
+      "psnr": 10.601836563844165,
+      "ssim": 0.4305504262447357
+    },
+    {
+      "capture_group": "1477843917481127523",
+      "image": "images_rig_cam5_undistorted/1477843917481127523.png",
+      "psnr": 9.178254942967811,
+      "ssim": 0.30946919322013855
+    },
+    {
+      "capture_group": "1477843926918311523",
+      "image": "images_rig_cam5_undistorted/1477843926918311523.png",
+      "psnr": 11.57349193679128,
+      "ssim": 0.5830150246620178
+    },
+    {
+      "capture_group": "1477843934880935523",
+      "image": "images_rig_cam5_undistorted/1477843934880935523.png",
+      "psnr": 11.370393905788953,
+      "ssim": 0.49627718329429626
+    },
+    {
+      "capture_group": "1477843917481127523",
+      "image": "images_rig_cam6_undistorted/1477843917481127523.png",
+      "psnr": 9.899982624413111,
+      "ssim": 0.33416056632995605
+    },
+    {
+      "capture_group": "1477843926918311523",
+      "image": "images_rig_cam6_undistorted/1477843926918311523.png",
+      "psnr": 10.66182552576301,
+      "ssim": 0.5375036001205444
+    },
+    {
+      "capture_group": "1477843934880935523",
+      "image": "images_rig_cam6_undistorted/1477843934880935523.png",
+      "psnr": 12.16075631684262,
+      "ssim": 0.44921812415122986
+    },
+    {
+      "capture_group": "1477843917481127523",
+      "image": "images_rig_cam7_undistorted/1477843917481127523.png",
+      "psnr": 9.981980934349755,
+      "ssim": 0.3177955448627472
+    },
+    {
+      "capture_group": "1477843926918311523",
+      "image": "images_rig_cam7_undistorted/1477843926918311523.png",
+      "psnr": 9.602196783610728,
+      "ssim": 0.5112630128860474
+    },
+    {
+      "capture_group": "1477843934880935523",
+      "image": "images_rig_cam7_undistorted/1477843934880935523.png",
+      "psnr": 11.062070842552082,
+      "ssim": 0.40137389302253723
+    }
+  ],
+  "heldout_psnr_mean": 10.64001979163438,
+  "heldout_ssim_mean": 0.4435693621635437,
+  "heldout_view_count": 12,
+  "lpips": null,
+  "lpips_note": "descriptive LPIPS unavailable; not a hard gate",
+  "map_role": "CONTROL_EXPERIMENT_CARRIER",
+  "native_train_psnr": 19.78532868201244,
+  "native_train_ssim": 0.7984004020690918,
+  "post_training_repair_count": 0,
+  "reference_access_phase": "POST_TRAINING_VIABILITY_ONLY",
+  "reference_distance_median_m": 1.6785509220133137,
+  "reference_distance_min_m": 1.6164876769757646,
+  "reference_query_runtime_seconds": 31.10909652709961,
+  "reference_surface_sha256": "82a9b20c9f3c7dc933f86c45e0855adf649fcf08b7549baba760cf385d489370",
+  "safer_query_candidate_contract": "DETERMINISTIC_2000_NEAREST_CENTERS",
+  "safer_query_candidate_count": 2000,
+  "safer_query_finite": true,
+  "safer_query_runtime_seconds": 0.01707601547241211,
+  "schema_version": 1,
+  "status": "PASS_ETH3D_SINGLE_MAP_MINIMUM_CONTROLLER_VIABILITY"
+}

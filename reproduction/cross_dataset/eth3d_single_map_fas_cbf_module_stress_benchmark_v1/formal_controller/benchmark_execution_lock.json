@@ -1,0 +1,58 @@
+{
+  "alpha": 5.0,
+  "beta": 1.0,
+  "candidate_budget": 2000,
+  "canonical_tree_sha256": "06c1ff17d2ed5eb184b6a9699a3a32da431a1460840431a3effe76d5f03b9ee3",
+  "checks": {
+    "all_unit_tests_pass": true,
+    "formal_result_count_zero": true,
+    "registry_100": true,
+    "registry_five_by_twenty": true,
+    "smoke_complete_50": true,
+    "smoke_map_unmodified": true,
+    "smoke_no_numerical_failure": true,
+    "smoke_reference_not_controller_input": true
+  },
+  "control_bound_component": 0.1,
+  "dt": 0.05,
+  "dt_margin": 0.0005,
+  "epsilon_m": 0.01,
+  "execution_lock_sha256": "c37b1d21574ae6495d8a1eb5371b54540c95db915a212a3e70a4eabf32874852",
+  "map_ply_sha256": "927734a2339a3f2710640065b0893eaae162cc0144ac67e2f377bcff2e71ae34",
+  "max_steps": 200,
+  "methods": [
+    "M0_SAFER_BASELINE",
+    "M1_FAS_START_SAFE_ONLY",
+    "M2_FAS_START_SAFE_PLUS_FEASIBILITY_AWARE",
+    "M3_FAS_PLUS_DISCRETE_TIME_VERIFICATION",
+    "M4_FULL_FAS_CBF"
+  ],
+  "post_lock_parameter_change_count": 0,
+  "recovery_horizon": 3,
+  "reference_oracle_controller_input_count": 0,
+  "robot_radius_m": 0.1,
+  "runtime_dt_samples": 5,
+  "scenario_count": 100,
+  "scenario_registry_sha256": "9f9fce4d1875b57e7a55c3a9cbf5b5a0c3f8476d84b3deb53c920d9b6322bb1d",
+  "script_sha256": {
+    "eth3d_controller_core.py": "9df7fa1945631cdb0b65b70568661c7eaaa75ff847bfe6f951241e56205d0bb2",
+    "fas_cbf_modules.py": "41fc7363fecbf2e65cc1e25233d5ea9f5fa6581fe3b1eb6a81505806d0376193",
+    "generate_eth3d_fas_cbf_stress_scenarios.py": "a534eaf1087b334dc1ad86759904298933b109241dca96a290ce2e0ac332ab22",
+    "run_formal_paired_controller_benchmark.py": "951fb26edd56f5c985fc44bfa38656f8fdc8b684cf9a58461558b9453d65d314"
+  },
+  "smoke_status_counts": {
+    "QP_INFEASIBLE": 32,
+    "START_STATE_REJECTED": 8,
+    "SUCCESS": 10
+  },
+  "source_commit": "54c035f7834b564019656c3e3fcc3646292f727d",
+  "status": "PASS_FORMAL_CONTROLLER_EXECUTION_LOCK",
+  "task": "ETH3D_LOCAL_SAFETY_CONTROLLER_STRESS_BENCHMARK_V1",
+  "unit_test_statuses": {
+    "test_discrete_time_verifier": "PASS_DISCRETE_TIME_VERIFIER_UNIT_TESTS",
+    "test_feasibility_aware": "PASS_FEASIBILITY_AWARE_UNIT_TESTS",
+    "test_predictive_recovery": "PASS_PREDICTIVE_RECOVERY_UNIT_TESTS",
+    "test_start_safe": "PASS_START_SAFE_UNIT_TESTS"
+  },
+  "velocity_bound_component": 0.1
+}

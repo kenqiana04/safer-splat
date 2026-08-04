@@ -1,0 +1,71 @@
+{
+  "activation": {
+    "H1_START_SAFE": 14,
+    "H2_FEASIBILITY_AWARE": 0,
+    "H3_DISCRETE_TIME": 0,
+    "H4_PREDICTIVE_RECOVERY": 0
+  },
+  "collision_regression": false,
+  "evidence": {
+    "H1_START_SAFE": {
+      "activation_count": 14,
+      "bootstrap_95_ci": [
+        0.0,
+        0.0
+      ],
+      "category": "NOT_SUPPORTED",
+      "ci_metric": "qp_infeasible",
+      "collision_delta": 0.0,
+      "designated_group": "G1_START_SAFE_BOUNDARY",
+      "primary_effect_direction_value": -0.0
+    },
+    "H2_FEASIBILITY_AWARE": {
+      "activation_count": 0,
+      "bootstrap_95_ci": [
+        null,
+        null
+      ],
+      "category": "INACTIVE",
+      "ci_metric": "active_constraints_mean",
+      "collision_delta": 0.0,
+      "designated_group": "G2_FEASIBILITY_DENSE",
+      "primary_effect_direction_value": -0.0
+    },
+    "H3_DISCRETE_TIME": {
+      "activation_count": 0,
+      "bootstrap_95_ci": [
+        0.0,
+        0.0
+      ],
+      "category": "INACTIVE",
+      "ci_metric": "min_segment_clearance",
+      "collision_delta": 0.0,
+      "designated_group": "G3_SAMPLED_DATA_GAP",
+      "primary_effect_direction_value": 0.0
+    },
+    "H4_PREDICTIVE_RECOVERY": {
+      "activation_count": 0,
+      "bootstrap_95_ci": [
+        0.0,
+        0.0
+      ],
+      "category": "INACTIVE",
+      "ci_metric": "deadlock",
+      "collision_delta": 0.0,
+      "designated_group": "G4_PREDICTIVE_RECOVERY",
+      "primary_effect_direction_value": -0.0
+    },
+    "H5_FULL": {
+      "activation_count": 14,
+      "bootstrap_95_ci": [
+        0.0,
+        0.0
+      ],
+      "category": "NOT_SUPPORTED",
+      "ci_metric": "deadlock",
+      "collision_delta": 0.0,
+      "designated_group": "OVERALL",
+      "primary_effect_direction_value": -0.0
+    }
+  }
+}

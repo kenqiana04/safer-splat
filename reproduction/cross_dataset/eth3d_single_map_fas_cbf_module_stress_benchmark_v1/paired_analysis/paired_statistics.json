@@ -1,0 +1,1017 @@
+{
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20260804,
+  "comparisons": {
+    "H1_START_SAFE": {
+      "group": "G1_START_SAFE_BOUNDARY",
+      "metrics": {
+        "active_constraints_mean": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 2000.0,
+          "older_mean": 2000.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "completion": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "deadlock": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 1.0,
+          "older_mean": 1.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "fallback_count": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "forced_candidate_count_mean": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "min_segment_clearance": {
+          "bootstrap_95_ci": [
+            -0.0005887296352029589,
+            0.002584354917174015
+          ],
+          "mean_new_minus_old": 0.0009526318658825805,
+          "median_new_minus_old": 0.00023058589561897325,
+          "n": 20,
+          "newer_mean": 1.5190106616009094,
+          "older_mean": 1.5180580297350268,
+          "win_tie_loss_raw_direction": [
+            11,
+            6,
+            3
+          ]
+        },
+        "progress_m": {
+          "bootstrap_95_ci": [
+            -0.00523947029882855,
+            -0.0019086254548992799
+          ],
+          "mean_new_minus_old": -0.0035042200068968582,
+          "median_new_minus_old": -0.0020725417222910783,
+          "n": 20,
+          "newer_mean": -0.0035042200068968582,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            6,
+            14
+          ]
+        },
+        "qp_infeasible": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 1.0,
+          "older_mean": 1.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "recovery_success": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "reference_collision": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "newer_only": 0,
+          "older_mean": 0.0,
+          "older_only": 0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "runtime_mean_s": {
+          "bootstrap_95_ci": [
+            0.04019549520191504,
+            0.05352347351523349
+          ],
+          "mean_new_minus_old": 0.04701006956165656,
+          "median_new_minus_old": 0.05414405500050634,
+          "n": 20,
+          "newer_mean": 0.04701006956165656,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            20,
+            0,
+            0
+          ]
+        },
+        "segment_risk_events": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        }
+      },
+      "newer": "M1_FAS_START_SAFE_ONLY",
+      "older": "M0_SAFER_BASELINE",
+      "scenario_count": 20
+    },
+    "H2_FEASIBILITY_AWARE": {
+      "group": "G2_FEASIBILITY_DENSE",
+      "metrics": {
+        "active_constraints_mean": {
+          "bootstrap_95_ci": [
+            null,
+            null
+          ],
+          "mean_new_minus_old": null,
+          "median_new_minus_old": null,
+          "n": 0,
+          "newer_mean": null,
+          "older_mean": null,
+          "win_tie_loss_raw_direction": [
+            0,
+            0,
+            0
+          ]
+        },
+        "completion": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "deadlock": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 1.0,
+          "older_mean": 1.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "fallback_count": {
+          "bootstrap_95_ci": [
+            null,
+            null
+          ],
+          "mean_new_minus_old": null,
+          "median_new_minus_old": null,
+          "n": 0,
+          "newer_mean": null,
+          "older_mean": null,
+          "win_tie_loss_raw_direction": [
+            0,
+            0,
+            0
+          ]
+        },
+        "forced_candidate_count_mean": {
+          "bootstrap_95_ci": [
+            null,
+            null
+          ],
+          "mean_new_minus_old": null,
+          "median_new_minus_old": null,
+          "n": 0,
+          "newer_mean": null,
+          "older_mean": null,
+          "win_tie_loss_raw_direction": [
+            0,
+            0,
+            0
+          ]
+        },
+        "min_segment_clearance": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 1.5479885428520177,
+          "older_mean": 1.5479885428520177,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "progress_m": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "qp_infeasible": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "recovery_success": {
+          "bootstrap_95_ci": [
+            null,
+            null
+          ],
+          "mean_new_minus_old": null,
+          "median_new_minus_old": null,
+          "n": 0,
+          "newer_mean": null,
+          "older_mean": null,
+          "win_tie_loss_raw_direction": [
+            0,
+            0,
+            0
+          ]
+        },
+        "reference_collision": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "newer_only": 0,
+          "older_mean": 0.0,
+          "older_only": 0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "runtime_mean_s": {
+          "bootstrap_95_ci": [
+            null,
+            null
+          ],
+          "mean_new_minus_old": null,
+          "median_new_minus_old": null,
+          "n": 0,
+          "newer_mean": null,
+          "older_mean": null,
+          "win_tie_loss_raw_direction": [
+            0,
+            0,
+            0
+          ]
+        },
+        "segment_risk_events": {
+          "bootstrap_95_ci": [
+            null,
+            null
+          ],
+          "mean_new_minus_old": null,
+          "median_new_minus_old": null,
+          "n": 0,
+          "newer_mean": null,
+          "older_mean": null,
+          "win_tie_loss_raw_direction": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "newer": "M2_FAS_START_SAFE_PLUS_FEASIBILITY_AWARE",
+      "older": "M1_FAS_START_SAFE_ONLY",
+      "scenario_count": 20
+    },
+    "H3_DISCRETE_TIME": {
+      "group": "G3_SAMPLED_DATA_GAP",
+      "metrics": {
+        "active_constraints_mean": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 302.45,
+          "older_mean": 302.45,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "completion": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "deadlock": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 1.0,
+          "older_mean": 1.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "fallback_count": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "forced_candidate_count_mean": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.35,
+          "older_mean": 0.35,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "min_segment_clearance": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 1.5411541908936086,
+          "older_mean": 1.5411541908936086,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "progress_m": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "qp_infeasible": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 1.0,
+          "older_mean": 1.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "recovery_success": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "reference_collision": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "newer_only": 0,
+          "older_mean": 0.0,
+          "older_only": 0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "runtime_mean_s": {
+          "bootstrap_95_ci": [
+            -0.0009928903437685223,
+            0.0017225303663872184
+          ],
+          "mean_new_minus_old": 0.000385483680292964,
+          "median_new_minus_old": 0.0008262675255537033,
+          "n": 20,
+          "newer_mean": 0.024242220481391998,
+          "older_mean": 0.02385673680109903,
+          "win_tie_loss_raw_direction": [
+            11,
+            0,
+            9
+          ]
+        },
+        "segment_risk_events": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        }
+      },
+      "newer": "M3_FAS_PLUS_DISCRETE_TIME_VERIFICATION",
+      "older": "M2_FAS_START_SAFE_PLUS_FEASIBILITY_AWARE",
+      "scenario_count": 20
+    },
+    "H4_PREDICTIVE_RECOVERY": {
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "metrics": {
+        "active_constraints_mean": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 86.75,
+          "older_mean": 86.75,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "completion": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "deadlock": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 1.0,
+          "older_mean": 1.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "fallback_count": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "forced_candidate_count_mean": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.25,
+          "older_mean": 0.25,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "min_segment_clearance": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 1.5311457284993208,
+          "older_mean": 1.5311457284993208,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "progress_m": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "qp_infeasible": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 1.0,
+          "older_mean": 1.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "recovery_success": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "reference_collision": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "newer_only": 0,
+          "older_mean": 0.0,
+          "older_only": 0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        },
+        "runtime_mean_s": {
+          "bootstrap_95_ci": [
+            -0.0007151401098235509,
+            0.0020630823363899254
+          ],
+          "mean_new_minus_old": 0.0006705417530611157,
+          "median_new_minus_old": 0.00020886887796223164,
+          "n": 20,
+          "newer_mean": 0.022744202252943067,
+          "older_mean": 0.022073660499881954,
+          "win_tie_loss_raw_direction": [
+            11,
+            0,
+            9
+          ]
+        },
+        "segment_risk_events": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 20,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            20,
+            0
+          ]
+        }
+      },
+      "newer": "M4_FULL_FAS_CBF",
+      "older": "M3_FAS_PLUS_DISCRETE_TIME_VERIFICATION",
+      "scenario_count": 20
+    },
+    "H5_FULL": {
+      "group": "OVERALL",
+      "metrics": {
+        "active_constraints_mean": {
+          "bootstrap_95_ci": [
+            -1880.6454149576082,
+            -1706.0160931468013
+          ],
+          "mean_new_minus_old": -1799.9493338730433,
+          "median_new_minus_old": -1962.0,
+          "n": 80,
+          "newer_mean": 200.05066612695663,
+          "older_mean": 2000.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            0,
+            80
+          ]
+        },
+        "completion": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 100,
+          "newer_mean": 0.2,
+          "older_mean": 0.2,
+          "win_tie_loss_raw_direction": [
+            0,
+            100,
+            0
+          ]
+        },
+        "deadlock": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 100,
+          "newer_mean": 0.8,
+          "older_mean": 0.8,
+          "win_tie_loss_raw_direction": [
+            0,
+            100,
+            0
+          ]
+        },
+        "fallback_count": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 80,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            80,
+            0
+          ]
+        },
+        "forced_candidate_count_mean": {
+          "bootstrap_95_ci": [
+            0.7204235558765851,
+            1.720650263789801
+          ],
+          "mean_new_minus_old": 1.1880074345415357,
+          "median_new_minus_old": 0.0,
+          "n": 80,
+          "newer_mean": 1.1880074345415357,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            35,
+            45,
+            0
+          ]
+        },
+        "min_segment_clearance": {
+          "bootstrap_95_ci": [
+            -0.00010878160815102982,
+            0.0005349468268158677
+          ],
+          "mean_new_minus_old": 0.0001904002076246747,
+          "median_new_minus_old": 0.0,
+          "n": 100,
+          "newer_mean": 1.5352056934591747,
+          "older_mean": 1.53501529325155,
+          "win_tie_loss_raw_direction": [
+            16,
+            67,
+            17
+          ]
+        },
+        "progress_m": {
+          "bootstrap_95_ci": [
+            -0.001161989013347731,
+            -0.00031324067949265957
+          ],
+          "mean_new_minus_old": -0.0007007699345947705,
+          "median_new_minus_old": 0.0,
+          "n": 100,
+          "newer_mean": 0.022630179095769504,
+          "older_mean": 0.023330949030364274,
+          "win_tie_loss_raw_direction": [
+            12,
+            66,
+            22
+          ]
+        },
+        "qp_infeasible": {
+          "bootstrap_95_ci": [
+            -0.28,
+            -0.13
+          ],
+          "mean_new_minus_old": -0.2,
+          "median_new_minus_old": 0.0,
+          "n": 100,
+          "newer_mean": 0.6,
+          "older_mean": 0.8,
+          "win_tie_loss_raw_direction": [
+            0,
+            80,
+            20
+          ]
+        },
+        "recovery_success": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 80,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            80,
+            0
+          ]
+        },
+        "reference_collision": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 100,
+          "newer_mean": 0.0,
+          "newer_only": 0,
+          "older_mean": 0.0,
+          "older_only": 0,
+          "win_tie_loss_raw_direction": [
+            0,
+            100,
+            0
+          ]
+        },
+        "runtime_mean_s": {
+          "bootstrap_95_ci": [
+            0.03935154358214498,
+            0.051785522945558896
+          ],
+          "mean_new_minus_old": 0.04557637742255648,
+          "median_new_minus_old": 0.02626189449802041,
+          "n": 80,
+          "newer_mean": 0.05233539033025471,
+          "older_mean": 0.006759012907698233,
+          "win_tie_loss_raw_direction": [
+            80,
+            0,
+            0
+          ]
+        },
+        "segment_risk_events": {
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "mean_new_minus_old": 0.0,
+          "median_new_minus_old": 0.0,
+          "n": 80,
+          "newer_mean": 0.0,
+          "older_mean": 0.0,
+          "win_tie_loss_raw_direction": [
+            0,
+            80,
+            0
+          ]
+        }
+      },
+      "newer": "M4_FULL_FAS_CBF",
+      "older": "M0_SAFER_BASELINE",
+      "scenario_count": 100
+    }
+  },
+  "unit": "SCENARIO"
+}
