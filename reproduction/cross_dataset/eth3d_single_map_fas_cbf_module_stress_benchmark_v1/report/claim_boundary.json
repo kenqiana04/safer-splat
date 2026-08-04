@@ -1,0 +1,23 @@
+{
+  "allowed": [
+    "one fixed ETH3D learned Gaussian map",
+    "independent reference collision evaluation",
+    "module-specific stress benchmark",
+    "GT-pose RGB-only map-only",
+    "local controller robustness"
+  ],
+  "new_role": "ETH3D remains usable as a local-safety controller stress carrier.",
+  "pr79_history": "ETH3D failed the frozen planner-coupled blocked-straight-line route composition contract.",
+  "pr79_overturned": false,
+  "prohibited": [
+    "deployment-certified map",
+    "N3",
+    "full SLAM",
+    "real-robot guarantee",
+    "mapper superiority",
+    "multi-seed stability",
+    "global navigation superiority",
+    "adaptive confidence margin complete",
+    "smooth control complete"
+  ]
+}

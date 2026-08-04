@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "all_groups_at_least_10": true,
+    "count_at_least_70": true,
+    "frozen_dynamics": true,
+    "identity": true,
+    "method_independent": true,
+    "no_rollout_metric_reads": true,
+    "unique_ids": true
+  },
+  "group_counts": {
+    "G0_SAFE_CONTROL": 20,
+    "G1_START_SAFE_BOUNDARY": 20,
+    "G2_FEASIBILITY_DENSE": 20,
+    "G3_SAMPLED_DATA_GAP": 20,
+    "G4_PREDICTIVE_RECOVERY": 20
+  },
+  "registry_sha256": "9f9fce4d1875b57e7a55c3a9cbf5b5a0c3f8476d84b3deb53c920d9b6322bb1d",
+  "scenario_count": 100,
+  "status": "PASS_SCENARIO_REGISTRY_VALIDATION"
+}

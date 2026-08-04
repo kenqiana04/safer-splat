@@ -1,0 +1,123 @@
+{
+  "files": [
+    {
+      "dtype": "float32",
+      "path": "colors_dc.npy",
+      "sha256": "01c3dfb024b3ecb1de04904952b899155e7c2e43ee1cfbeae1578e2c2b0fe766",
+      "shape": [
+        664873,
+        3
+      ],
+      "size": 7978604
+    },
+    {
+      "dtype": "float32",
+      "path": "features_dc.npy",
+      "sha256": "40c5a0642cd46c0fa6864a6ff82935f3634bc0c7ba306323d38e9cd40ca3a495",
+      "shape": [
+        664873,
+        3
+      ],
+      "size": 7978604
+    },
+    {
+      "dtype": "float32",
+      "path": "features_rest.npy",
+      "sha256": "a9622f1cc6207d5678b4149886a43238c6c7cac1d31c6fee78bc3e4f114a1fd8",
+      "shape": [
+        664873,
+        45
+      ],
+      "size": 119677268
+    },
+    {
+      "dtype": "float32",
+      "path": "log_scales.npy",
+      "sha256": "267b95c22640b54c2a814bba6095d28b236237bc366a5f5a3e7f4f564a8fe7ea",
+      "shape": [
+        664873,
+        3
+      ],
+      "size": 7978604
+    },
+    {
+      "dtype": "float32",
+      "path": "means_world_m.npy",
+      "sha256": "003f99da4b93ea5e9e4ee82e2d9c3f312e0538f039c68b6b2b64ae6e1f589281",
+      "shape": [
+        664873,
+        3
+      ],
+      "size": 7978604
+    },
+    {
+      "dtype": null,
+      "path": "metadata.json",
+      "sha256": "5b4a8a05dfead378ee1b368727d2b691606f8d7aaf6196fcfb977139ada03ff9",
+      "shape": null,
+      "size": 852
+    },
+    {
+      "dtype": "float32",
+      "path": "opacity.npy",
+      "sha256": "c89eea4600b0ba1dbe1c12585bc19d9a439c3dc26eff14308909233bb7d2d37a",
+      "shape": [
+        664873,
+        1
+      ],
+      "size": 2659620
+    },
+    {
+      "dtype": "float32",
+      "path": "opacity_logits.npy",
+      "sha256": "0b82bcde471b8d64ed2712a6e9791a12b968ae304d397b55260828bc0bf3183e",
+      "shape": [
+        664873,
+        1
+      ],
+      "size": 2659620
+    },
+    {
+      "dtype": "float32",
+      "path": "rotations_raw_wxyz.npy",
+      "sha256": "0da78cbb380ded28bf9cf43224a305a4c582572f86d2e782310a5f2745c44466",
+      "shape": [
+        664873,
+        4
+      ],
+      "size": 10638096
+    },
+    {
+      "dtype": "float32",
+      "path": "rotations_unit_wxyz.npy",
+      "sha256": "1f01e94e3e13e21dab4a796aadd5be2ca99815c3a9a22aa8103a96f3b728e171",
+      "shape": [
+        664873,
+        4
+      ],
+      "size": 10638096
+    },
+    {
+      "dtype": "float32",
+      "path": "scales_linear_m.npy",
+      "sha256": "0130198a79314a7df01ea6f94f5163fcd7b9556722032e00104b5621e9a3acd8",
+      "shape": [
+        664873,
+        3
+      ],
+      "size": 7978604
+    },
+    {
+      "dtype": "int64",
+      "path": "source_index.npy",
+      "sha256": "f53e9a1f32507aa3c9aaefc37c9ffb9548ee13b77f3c68e767bc0cfbc3903ad6",
+      "shape": [
+        664873
+      ],
+      "size": 5319112
+    }
+  ],
+  "schema_version": 1,
+  "status": "PASS_CANONICAL_EXPORT",
+  "tree_sha256": "06c1ff17d2ed5eb184b6a9699a3a32da431a1460840431a3effe76d5f03b9ee3"
+}

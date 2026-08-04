@@ -1,0 +1,71 @@
+{
+  "M0_SAFER_BASELINE": {
+    "completions": 20,
+    "mean_active_constraints": 2000.0,
+    "mean_progress_m": 0.023330949030364274,
+    "mean_runtime_s": 0.005407210326158587,
+    "qp_infeasible": 80,
+    "reference_collisions": 0,
+    "runs": 100,
+    "status_counts": {
+      "QP_INFEASIBLE": 80,
+      "SUCCESS": 20
+    }
+  },
+  "M1_FAS_START_SAFE_ONLY": {
+    "completions": 20,
+    "mean_active_constraints": 1600.0,
+    "mean_progress_m": 0.022630105028984902,
+    "mean_runtime_s": 0.023744261163270764,
+    "qp_infeasible": 60,
+    "reference_collisions": 0,
+    "runs": 100,
+    "status_counts": {
+      "QP_INFEASIBLE": 60,
+      "START_STATE_REJECTED": 20,
+      "SUCCESS": 20
+    }
+  },
+  "M2_FAS_START_SAFE_PLUS_FEASIBILITY_AWARE": {
+    "completions": 20,
+    "mean_active_constraints": 160.0405329015653,
+    "mean_progress_m": 0.022630179095769504,
+    "mean_runtime_s": 0.02277085445838879,
+    "qp_infeasible": 60,
+    "reference_collisions": 0,
+    "runs": 100,
+    "status_counts": {
+      "QP_INFEASIBLE": 60,
+      "START_STATE_REJECTED": 20,
+      "SUCCESS": 20
+    }
+  },
+  "M3_FAS_PLUS_DISCRETE_TIME_VERIFICATION": {
+    "completions": 20,
+    "mean_active_constraints": 160.0405329015653,
+    "mean_progress_m": 0.022630179095769504,
+    "mean_runtime_s": 0.03523563357811073,
+    "qp_infeasible": 60,
+    "reference_collisions": 0,
+    "runs": 100,
+    "status_counts": {
+      "QP_INFEASIBLE": 60,
+      "START_STATE_REJECTED": 20,
+      "SUCCESS": 20
+    }
+  },
+  "M4_FULL_FAS_CBF": {
+    "completions": 20,
+    "mean_active_constraints": 160.0405329015653,
+    "mean_progress_m": 0.022630179095769504,
+    "mean_runtime_s": 0.04186831226420376,
+    "qp_infeasible": 60,
+    "reference_collisions": 0,
+    "runs": 100,
+    "status_counts": {
+      "QP_INFEASIBLE": 60,
+      "START_STATE_REJECTED": 20,
+      "SUCCESS": 20
+    }
+  }
+}

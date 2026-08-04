@@ -1,0 +1,5180 @@
+{
+  "controller_rollout_result_read_count": 0,
+  "group_counts": {
+    "G0_SAFE_CONTROL": 20,
+    "G1_START_SAFE_BOUNDARY": 20,
+    "G2_FEASIBILITY_DENSE": 20,
+    "G3_SAMPLED_DATA_GAP": 20,
+    "G4_PREDICTIVE_RECOVERY": 20
+  },
+  "id": "ETH3D_FAS_CBF_STRESS_SCENARIO_REGISTRY_V1",
+  "map_query_candidate_budget": 2000,
+  "method_independent": true,
+  "registry_sha256": "9f9fce4d1875b57e7a55c3a9cbf5b5a0c3f8476d84b3deb53c920d9b6322bb1d",
+  "scenarios": [
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 0,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 59336,
+        "min_map_h": 0.04695869756181503,
+        "near_active_count": 0,
+        "nearest_obstacle_direction": [
+          0.6550588672317578,
+          -0.033909407795664946,
+          0.7548165555444539
+        ],
+        "node_id": 279,
+        "point_m": [
+          -1.5,
+          1.35,
+          -3.25
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.701890654906658,
+        "unknown_primary": true,
+        "unknown_support_group_count": 21
+      },
+      "goal_m": [
+        -1.5,
+        1.4000000000000001,
+        -3.4000000000000004
+      ],
+      "group": "G0_SAFE_CONTROL",
+      "group_ordinal": 0,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G0_00_279",
+      "seed": 4332271004944993336,
+      "source_node_id": 279,
+      "start_m": [
+        -1.5,
+        1.35,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 0,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 61835,
+        "min_map_h": 0.045428922257831,
+        "near_active_count": 0,
+        "nearest_obstacle_direction": [
+          0.3056853074012713,
+          0.6545429433831874,
+          0.6914694701187202
+        ],
+        "node_id": 171,
+        "point_m": [
+          -1.5,
+          0.35000000000000003,
+          -3.2
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.7601132860839683,
+        "unknown_primary": true,
+        "unknown_support_group_count": 18
+      },
+      "goal_m": [
+        -1.5,
+        0.15000000000000002,
+        -3.25
+      ],
+      "group": "G0_SAFE_CONTROL",
+      "group_ordinal": 1,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G0_01_171",
+      "seed": 11092692567689378203,
+      "source_node_id": 171,
+      "start_m": [
+        -1.5,
+        0.35000000000000003,
+        -3.2
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 0,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 39060,
+        "min_map_h": 0.03649993669916969,
+        "near_active_count": 0,
+        "nearest_obstacle_direction": [
+          -0.3058949223084143,
+          -0.13169673220438627,
+          -0.9429126509028369
+        ],
+        "node_id": 10,
+        "point_m": [
+          -1.4500000000000002,
+          0.2,
+          -3.25
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.7111090790425425,
+        "unknown_primary": true,
+        "unknown_support_group_count": 14
+      },
+      "goal_m": [
+        -1.4000000000000001,
+        0.30000000000000004,
+        -3.2
+      ],
+      "group": "G0_SAFE_CONTROL",
+      "group_ordinal": 2,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G0_02_010",
+      "seed": 12678055908040662840,
+      "source_node_id": 10,
+      "start_m": [
+        -1.4500000000000002,
+        0.2,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 0,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 74453,
+        "min_map_h": 0.03185287950143222,
+        "near_active_count": 0,
+        "nearest_obstacle_direction": [
+          0.6204789134080382,
+          -0.7454547584349771,
+          -0.2435223216516921
+        ],
+        "node_id": 68,
+        "point_m": [
+          -1.5,
+          2.15,
+          -3.35
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6034947335960616,
+        "unknown_primary": true,
+        "unknown_support_group_count": 11
+      },
+      "goal_m": [
+        -1.4500000000000002,
+        2.25,
+        -3.2
+      ],
+      "group": "G0_SAFE_CONTROL",
+      "group_ordinal": 3,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G0_03_068",
+      "seed": 16206771849128416402,
+      "source_node_id": 68,
+      "start_m": [
+        -1.5,
+        2.15,
+        -3.35
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 0,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 39060,
+        "min_map_h": 0.03144215028099838,
+        "near_active_count": 0,
+        "nearest_obstacle_direction": [
+          -0.09766736776964466,
+          0.06971757642055118,
+          -0.9927741660674866
+        ],
+        "node_id": 252,
+        "point_m": [
+          -1.5,
+          0.15000000000000002,
+          -3.25
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.7111301795147622,
+        "unknown_primary": true,
+        "unknown_support_group_count": 14
+      },
+      "goal_m": [
+        -1.4000000000000001,
+        0.30000000000000004,
+        -3.2
+      ],
+      "group": "G0_SAFE_CONTROL",
+      "group_ordinal": 4,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G0_04_252",
+      "seed": 10739549186160905429,
+      "source_node_id": 252,
+      "start_m": [
+        -1.5,
+        0.15000000000000002,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 0,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 415854,
+        "min_map_h": 0.029011433503693056,
+        "near_active_count": 0,
+        "nearest_obstacle_direction": [
+          0.9255779494574627,
+          0.36177134266948885,
+          -0.11147625353066773
+        ],
+        "node_id": 283,
+        "point_m": [
+          -1.4000000000000001,
+          0.25,
+          -3.25
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.710879898445191,
+        "unknown_primary": true,
+        "unknown_support_group_count": 15
+      },
+      "goal_m": [
+        -1.4500000000000002,
+        0.2,
+        -3.25
+      ],
+      "group": "G0_SAFE_CONTROL",
+      "group_ordinal": 5,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G0_05_283",
+      "seed": 1899835770722748725,
+      "source_node_id": 283,
+      "start_m": [
+        -1.4000000000000001,
+        0.25,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 0,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 411629,
+        "min_map_h": 0.02836865029032317,
+        "near_active_count": 0,
+        "nearest_obstacle_direction": [
+          0.7758167489297467,
+          0.2209732468717607,
+          0.5909984739802888
+        ],
+        "node_id": 72,
+        "point_m": [
+          -1.5,
+          -0.15000000000000002,
+          -3.25
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.7113968597534575,
+        "unknown_primary": true,
+        "unknown_support_group_count": 9
+      },
+      "goal_m": [
+        -1.5,
+        -0.2,
+        -3.35
+      ],
+      "group": "G0_SAFE_CONTROL",
+      "group_ordinal": 6,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G0_06_072",
+      "seed": 210734362619673205,
+      "source_node_id": 72,
+      "start_m": [
+        -1.5,
+        -0.15000000000000002,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 0,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 13618,
+        "min_map_h": 0.0278161688740165,
+        "near_active_count": 0,
+        "nearest_obstacle_direction": [
+          0.7578101598460943,
+          -0.5049156214508026,
+          -0.41326018057512687
+        ],
+        "node_id": 297,
+        "point_m": [
+          -1.4500000000000002,
+          0.05,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6616134027846676,
+        "unknown_primary": true,
+        "unknown_support_group_count": 12
+      },
+      "goal_m": [
+        -1.5,
+        0.15000000000000002,
+        -3.25
+      ],
+      "group": "G0_SAFE_CONTROL",
+      "group_ordinal": 7,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G0_07_297",
+      "seed": 1075335599399469811,
+      "source_node_id": 297,
+      "start_m": [
+        -1.4500000000000002,
+        0.05,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 0,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 382549,
+        "min_map_h": 0.02639590667129873,
+        "near_active_count": 0,
+        "nearest_obstacle_direction": [
+          0.8669052156840774,
+          0.03799906211920063,
+          0.49702255310780846
+        ],
+        "node_id": 9,
+        "point_m": [
+          -1.4500000000000002,
+          0.35000000000000003,
+          -3.2
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.7602603508572334,
+        "unknown_primary": true,
+        "unknown_support_group_count": 17
+      },
+      "goal_m": [
+        -1.5,
+        0.35000000000000003,
+        -3.2
+      ],
+      "group": "G0_SAFE_CONTROL",
+      "group_ordinal": 8,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G0_08_009",
+      "seed": 8121544446254808659,
+      "source_node_id": 9,
+      "start_m": [
+        -1.4500000000000002,
+        0.35000000000000003,
+        -3.2
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 0,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 116249,
+        "min_map_h": 0.026000962150879825,
+        "near_active_count": 0,
+        "nearest_obstacle_direction": [
+          0.7842209793302686,
+          0.013568717614943842,
+          0.6203332535666296
+        ],
+        "node_id": 446,
+        "point_m": [
+          -1.5,
+          1.4000000000000001,
+          -3.4000000000000004
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.5521671981111607,
+        "unknown_primary": true,
+        "unknown_support_group_count": 22
+      },
+      "goal_m": [
+        -1.4500000000000002,
+        1.5,
+        -3.4000000000000004
+      ],
+      "group": "G0_SAFE_CONTROL",
+      "group_ordinal": 9,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G0_09_446",
+      "seed": 11869465237976476092,
+      "source_node_id": 446,
+      "start_m": [
+        -1.5,
+        1.4000000000000001,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 0,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 23223,
+        "min_map_h": 0.025270562844443616,
+        "near_active_count": 0,
+        "nearest_obstacle_direction": [
+          0.2392302101597255,
+          0.21088857913376757,
+          -0.9477842126443519
+        ],
+        "node_id": 215,
+        "point_m": [
+          -1.4000000000000001,
+          0.25,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6608804049568775,
+        "unknown_primary": true,
+        "unknown_support_group_count": 15
+      },
+      "goal_m": [
+        -1.4000000000000001,
+        0.25,
+        -3.25
+      ],
+      "group": "G0_SAFE_CONTROL",
+      "group_ordinal": 10,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G0_10_215",
+      "seed": 4883325096880679332,
+      "source_node_id": 215,
+      "start_m": [
+        -1.4000000000000001,
+        0.25,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 0,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 56025,
+        "min_map_h": 0.02434848429043305,
+        "near_active_count": 0,
+        "nearest_obstacle_direction": [
+          0.5407051185324758,
+          0.1916654222234476,
+          0.8190862840486884
+        ],
+        "node_id": 120,
+        "point_m": [
+          -1.4500000000000002,
+          1.4500000000000002,
+          -3.25
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.7025410658654465,
+        "unknown_primary": true,
+        "unknown_support_group_count": 20
+      },
+      "goal_m": [
+        -1.5,
+        1.4000000000000001,
+        -3.4000000000000004
+      ],
+      "group": "G0_SAFE_CONTROL",
+      "group_ordinal": 11,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G0_11_120",
+      "seed": 10902419461335644820,
+      "source_node_id": 120,
+      "start_m": [
+        -1.4500000000000002,
+        1.4500000000000002,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 0,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 640262,
+        "min_map_h": 0.024330801901957917,
+        "near_active_count": 0,
+        "nearest_obstacle_direction": [
+          0.8891620253197512,
+          0.43464546750626565,
+          0.14308812077016658
+        ],
+        "node_id": 208,
+        "point_m": [
+          -1.35,
+          0.15000000000000002,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.66126227482117,
+        "unknown_primary": true,
+        "unknown_support_group_count": 12
+      },
+      "goal_m": [
+        -1.5,
+        0.1,
+        -3.35
+      ],
+      "group": "G0_SAFE_CONTROL",
+      "group_ordinal": 12,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G0_12_208",
+      "seed": 5774355951945151954,
+      "source_node_id": 208,
+      "start_m": [
+        -1.35,
+        0.15000000000000002,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 0,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 640262,
+        "min_map_h": 0.0239367386971064,
+        "near_active_count": 0,
+        "nearest_obstacle_direction": [
+          0.8937768932787032,
+          0.4365195459847141,
+          -0.10302208993399681
+        ],
+        "node_id": 272,
+        "point_m": [
+          -1.35,
+          0.15000000000000002,
+          -3.25
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.7112614297687097,
+        "unknown_primary": true,
+        "unknown_support_group_count": 12
+      },
+      "goal_m": [
+        -1.5,
+        0.15000000000000002,
+        -3.25
+      ],
+      "group": "G0_SAFE_CONTROL",
+      "group_ordinal": 13,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G0_13_272",
+      "seed": 9109535406840399141,
+      "source_node_id": 272,
+      "start_m": [
+        -1.35,
+        0.15000000000000002,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 0,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 55777,
+        "min_map_h": 0.021708523429171456,
+        "near_active_count": 0,
+        "nearest_obstacle_direction": [
+          0.9320602804676745,
+          -0.09759414343683935,
+          0.3489111874694609
+        ],
+        "node_id": 6,
+        "point_m": [
+          -1.4500000000000002,
+          1.1500000000000001,
+          -3.2
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.7517819007195379,
+        "unknown_primary": true,
+        "unknown_support_group_count": 20
+      },
+      "goal_m": [
+        -1.5,
+        1.1500000000000001,
+        -3.3000000000000003
+      ],
+      "group": "G0_SAFE_CONTROL",
+      "group_ordinal": 14,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G0_14_006",
+      "seed": 4165789938654952837,
+      "source_node_id": 6,
+      "start_m": [
+        -1.4500000000000002,
+        1.1500000000000001,
+        -3.2
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 1,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 386410,
+        "min_map_h": 0.01862781966847622,
+        "near_active_count": 1,
+        "nearest_obstacle_direction": [
+          0.9562631749601193,
+          -0.10755491424552593,
+          -0.2720159565849585
+        ],
+        "node_id": 422,
+        "point_m": [
+          -1.4500000000000002,
+          1.5,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.652868458521917,
+        "unknown_primary": true,
+        "unknown_support_group_count": 20
+      },
+      "goal_m": [
+        -1.5,
+        1.6500000000000001,
+        -3.3000000000000003
+      ],
+      "group": "G0_SAFE_CONTROL",
+      "group_ordinal": 15,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G0_15_422",
+      "seed": 18009528014223293775,
+      "source_node_id": 422,
+      "start_m": [
+        -1.4500000000000002,
+        1.5,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 1,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 618621,
+        "min_map_h": 0.016028825948940235,
+        "near_active_count": 1,
+        "nearest_obstacle_direction": [
+          0.9538519135084244,
+          0.29385547616376145,
+          -0.06176962218506984
+        ],
+        "node_id": 291,
+        "point_m": [
+          -1.4000000000000001,
+          0.4,
+          -3.25
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.7100076888264164,
+        "unknown_primary": true,
+        "unknown_support_group_count": 17
+      },
+      "goal_m": [
+        -1.5,
+        0.35000000000000003,
+        -3.2
+      ],
+      "group": "G0_SAFE_CONTROL",
+      "group_ordinal": 16,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G0_16_291",
+      "seed": 18109272984104070169,
+      "source_node_id": 291,
+      "start_m": [
+        -1.4000000000000001,
+        0.4,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.003702877903707871,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 223576,
+        "min_map_h": 0.015320231653065893,
+        "near_active_count": 3,
+        "nearest_obstacle_direction": [
+          0.915404640702767,
+          -0.18532001492167016,
+          -0.3573385451490926
+        ],
+        "node_id": 114,
+        "point_m": [
+          -1.5,
+          -0.2,
+          -3.35
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.611214345961869,
+        "unknown_primary": true,
+        "unknown_support_group_count": 7
+      },
+      "goal_m": [
+        -1.5,
+        -0.15000000000000002,
+        -3.25
+      ],
+      "group": "G0_SAFE_CONTROL",
+      "group_ordinal": 17,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G0_17_114",
+      "seed": 429756142311308958,
+      "source_node_id": 114,
+      "start_m": [
+        -1.5,
+        -0.2,
+        -3.35
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 1,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 39060,
+        "min_map_h": 0.015246630370340242,
+        "near_active_count": 1,
+        "nearest_obstacle_direction": [
+          -0.4260535034161473,
+          0.593796903403394,
+          -0.6825567007475404
+        ],
+        "node_id": 326,
+        "point_m": [
+          -1.4500000000000002,
+          0.05,
+          -3.35
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6116139060457007,
+        "unknown_primary": true,
+        "unknown_support_group_count": 12
+      },
+      "goal_m": [
+        -1.35,
+        -0.1,
+        -3.3000000000000003
+      ],
+      "group": "G0_SAFE_CONTROL",
+      "group_ordinal": 18,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G0_18_326",
+      "seed": 17102317619470123809,
+      "source_node_id": 326,
+      "start_m": [
+        -1.4500000000000002,
+        0.05,
+        -3.35
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.026803690207118723,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 411629,
+        "min_map_h": 0.015157664859261653,
+        "near_active_count": 17,
+        "nearest_obstacle_direction": [
+          0.6562997503178368,
+          0.2540439454191961,
+          0.7104451502604502
+        ],
+        "node_id": 170,
+        "point_m": [
+          -1.4500000000000002,
+          -0.15000000000000002,
+          -3.25
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.711454214889691,
+        "unknown_primary": true,
+        "unknown_support_group_count": 8
+      },
+      "goal_m": [
+        -1.5,
+        -0.2,
+        -3.35
+      ],
+      "group": "G0_SAFE_CONTROL",
+      "group_ordinal": 19,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G0_19_170",
+      "seed": 1828916058722900258,
+      "source_node_id": 170,
+      "start_m": [
+        -1.4500000000000002,
+        -0.15000000000000002,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.44634955591473763,
+        "directional_rank": 3,
+        "forced_candidate_count": 1,
+        "min_candidate_id": 490312,
+        "min_map_h": -9.395467303297336e-06,
+        "near_active_count": 19,
+        "nearest_obstacle_direction": [
+          0.9825430635599015,
+          0.1660699533577807,
+          -0.08384449201985636
+        ],
+        "node_id": 261,
+        "point_m": [
+          -1.4000000000000001,
+          2.8000000000000003,
+          -3.4000000000000004
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.5524558225502698,
+        "unknown_primary": true,
+        "unknown_support_group_count": 12
+      },
+      "goal_m": [
+        -1.3,
+        2.8000000000000003,
+        -3.4000000000000004
+      ],
+      "group": "G1_START_SAFE_BOUNDARY",
+      "group_ordinal": 0,
+      "initial_velocity_mps": [
+        0.09825430635599015,
+        0.016606995335778068,
+        -0.008384449201985637
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G1_00_261",
+      "seed": 14695345615722389568,
+      "source_node_id": 261,
+      "start_m": [
+        -1.4000000000000001,
+        2.8000000000000003,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 1,
+        "forced_candidate_count": 1,
+        "min_candidate_id": 74453,
+        "min_map_h": -0.0003137651776084875,
+        "near_active_count": 1,
+        "nearest_obstacle_direction": [
+          0.9554523862777182,
+          0.2856251875580095,
+          -0.07435717711603962
+        ],
+        "node_id": 438,
+        "point_m": [
+          -1.5,
+          1.9000000000000001,
+          -3.4000000000000004
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.5543856860723289,
+        "unknown_primary": true,
+        "unknown_support_group_count": 15
+      },
+      "goal_m": [
+        -1.4000000000000001,
+        2.0500000000000003,
+        -3.4000000000000004
+      ],
+      "group": "G1_START_SAFE_BOUNDARY",
+      "group_ordinal": 1,
+      "initial_velocity_mps": [
+        0.09554523862777183,
+        0.028562518755800948,
+        -0.007435717711603962
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G1_01_438",
+      "seed": 8431149585130485141,
+      "source_node_id": 438,
+      "start_m": [
+        -1.5,
+        1.9000000000000001,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.26082204447729745,
+        "directional_rank": 3,
+        "forced_candidate_count": 12,
+        "min_candidate_id": 109928,
+        "min_map_h": -0.000543849617737081,
+        "near_active_count": 205,
+        "nearest_obstacle_direction": [
+          0.740703824468217,
+          0.47932422409950903,
+          0.4707506055328665
+        ],
+        "node_id": 383,
+        "point_m": [
+          -1.2000000000000002,
+          -0.05,
+          -3.25
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.7118193699247768,
+        "unknown_primary": true,
+        "unknown_support_group_count": 5
+      },
+      "goal_m": [
+        -1.1,
+        0.0,
+        -3.2
+      ],
+      "group": "G1_START_SAFE_BOUNDARY",
+      "group_ordinal": 2,
+      "initial_velocity_mps": [
+        0.07407038244682171,
+        0.04793242240995091,
+        0.047075060553286655
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G1_02_383",
+      "seed": 5400776477021252225,
+      "source_node_id": 383,
+      "start_m": [
+        -1.2000000000000002,
+        -0.05,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.446548507195706,
+        "directional_rank": 3,
+        "forced_candidate_count": 6,
+        "min_candidate_id": 60944,
+        "min_map_h": -0.0007352238073433919,
+        "near_active_count": 35,
+        "nearest_obstacle_direction": [
+          0.9666828635752477,
+          0.25587212394134445,
+          -0.007327855054815292
+        ],
+        "node_id": 115,
+        "point_m": [
+          -1.4000000000000001,
+          2.95,
+          -3.4000000000000004
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.5524845451587235,
+        "unknown_primary": true,
+        "unknown_support_group_count": 15
+      },
+      "goal_m": [
+        -1.25,
+        2.95,
+        -3.4000000000000004
+      ],
+      "group": "G1_START_SAFE_BOUNDARY",
+      "group_ordinal": 3,
+      "initial_velocity_mps": [
+        0.09666828635752478,
+        0.025587212394134445,
+        -0.0007327855054815293
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G1_03_115",
+      "seed": 6807808891779970824,
+      "source_node_id": 115,
+      "start_m": [
+        -1.4000000000000001,
+        2.95,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.10040975046145927,
+        "directional_rank": 3,
+        "forced_candidate_count": 2,
+        "min_candidate_id": 223576,
+        "min_map_h": -0.0010214535663065523,
+        "near_active_count": 22,
+        "nearest_obstacle_direction": [
+          0.9525881753951697,
+          -0.25829141101394126,
+          -0.160814536325945
+        ],
+        "node_id": 389,
+        "point_m": [
+          -1.4500000000000002,
+          -0.2,
+          -3.4000000000000004
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.561402576664894,
+        "unknown_primary": true,
+        "unknown_support_group_count": 6
+      },
+      "goal_m": [
+        -1.4000000000000001,
+        -0.2,
+        -3.35
+      ],
+      "group": "G1_START_SAFE_BOUNDARY",
+      "group_ordinal": 4,
+      "initial_velocity_mps": [
+        0.09525881753951698,
+        -0.02582914110139413,
+        -0.0160814536325945
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G1_04_389",
+      "seed": 7973389439869023157,
+      "source_node_id": 389,
+      "start_m": [
+        -1.4500000000000002,
+        -0.2,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.18389387427199924,
+        "directional_rank": 3,
+        "forced_candidate_count": 9,
+        "min_candidate_id": 223576,
+        "min_map_h": -0.0010800998429758187,
+        "near_active_count": 41,
+        "nearest_obstacle_direction": [
+          0.6004890251097191,
+          -0.6089084071959825,
+          -0.5183082889254528
+        ],
+        "node_id": 195,
+        "point_m": [
+          -1.4000000000000001,
+          -0.15000000000000002,
+          -3.35
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6115492256023471,
+        "unknown_primary": true,
+        "unknown_support_group_count": 7
+      },
+      "goal_m": [
+        -1.4000000000000001,
+        -0.2,
+        -3.35
+      ],
+      "group": "G1_START_SAFE_BOUNDARY",
+      "group_ordinal": 5,
+      "initial_velocity_mps": [
+        0.06004890251097192,
+        -0.06089084071959825,
+        -0.05183082889254528
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G1_05_195",
+      "seed": 7347788414499878109,
+      "source_node_id": 195,
+      "start_m": [
+        -1.4000000000000001,
+        -0.15000000000000002,
+        -3.35
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.4885038539109578,
+        "directional_rank": 3,
+        "forced_candidate_count": 14,
+        "min_candidate_id": 536016,
+        "min_map_h": -0.0012511590161803088,
+        "near_active_count": 78,
+        "nearest_obstacle_direction": [
+          0.9013584162416284,
+          -0.2590138289677342,
+          0.34708045446820657
+        ],
+        "node_id": 500,
+        "point_m": [
+          -1.35,
+          1.6,
+          -3.35
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6034103612203874,
+        "unknown_primary": true,
+        "unknown_support_group_count": 16
+      },
+      "goal_m": [
+        -1.3,
+        1.6,
+        -3.35
+      ],
+      "group": "G1_START_SAFE_BOUNDARY",
+      "group_ordinal": 6,
+      "initial_velocity_mps": [
+        0.09013584162416284,
+        -0.025901382896773423,
+        0.03470804544682066
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G1_06_500",
+      "seed": 10593205191451338633,
+      "source_node_id": 500,
+      "start_m": [
+        -1.35,
+        1.6,
+        -3.35
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.4848641926496321,
+        "directional_rank": 3,
+        "forced_candidate_count": 13,
+        "min_candidate_id": 138188,
+        "min_map_h": -0.0016868414942264893,
+        "near_active_count": 64,
+        "nearest_obstacle_direction": [
+          0.0744241504900789,
+          -0.3912819059010939,
+          0.9172565158875883
+        ],
+        "node_id": 264,
+        "point_m": [
+          -1.35,
+          0.75,
+          -3.25
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.7059584975103828,
+        "unknown_primary": true,
+        "unknown_support_group_count": 20
+      },
+      "goal_m": [
+        -1.35,
+        0.75,
+        -3.2
+      ],
+      "group": "G1_START_SAFE_BOUNDARY",
+      "group_ordinal": 7,
+      "initial_velocity_mps": [
+        0.007442415049007891,
+        -0.03912819059010939,
+        0.09172565158875884
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G1_07_264",
+      "seed": 13917393531465758172,
+      "source_node_id": 264,
+      "start_m": [
+        -1.35,
+        0.75,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 2,
+        "forced_candidate_count": 1,
+        "min_candidate_id": 24366,
+        "min_map_h": -0.002005212796333861,
+        "near_active_count": 2,
+        "nearest_obstacle_direction": [
+          0.1778364278363581,
+          0.8911680626365414,
+          -0.4173651747223735
+        ],
+        "node_id": 385,
+        "point_m": [
+          -1.5,
+          0.6000000000000001,
+          -3.25
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.707270599121773,
+        "unknown_primary": true,
+        "unknown_support_group_count": 22
+      },
+      "goal_m": [
+        -1.5,
+        0.75,
+        -3.35
+      ],
+      "group": "G1_START_SAFE_BOUNDARY",
+      "group_ordinal": 8,
+      "initial_velocity_mps": [
+        0.01778364278363581,
+        0.08911680626365415,
+        -0.041736517472237354
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G1_08_385",
+      "seed": 11920223253912130405,
+      "source_node_id": 385,
+      "start_m": [
+        -1.5,
+        0.6000000000000001,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.29832865238953166,
+        "directional_rank": 3,
+        "forced_candidate_count": 2,
+        "min_candidate_id": 74453,
+        "min_map_h": -0.0020526214479508163,
+        "near_active_count": 31,
+        "nearest_obstacle_direction": [
+          0.24099535680624334,
+          -0.20828399939314068,
+          -0.9479129778595868
+        ],
+        "node_id": 209,
+        "point_m": [
+          -1.4000000000000001,
+          2.0,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6544135413284162,
+        "unknown_primary": true,
+        "unknown_support_group_count": 11
+      },
+      "goal_m": [
+        -1.4000000000000001,
+        2.0500000000000003,
+        -3.4000000000000004
+      ],
+      "group": "G1_START_SAFE_BOUNDARY",
+      "group_ordinal": 9,
+      "initial_velocity_mps": [
+        0.024099535680624336,
+        -0.02082839993931407,
+        -0.09479129778595868
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G1_09_209",
+      "seed": 6572678004562783434,
+      "source_node_id": 209,
+      "start_m": [
+        -1.4000000000000001,
+        2.0,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.4358260230259396,
+        "directional_rank": 3,
+        "forced_candidate_count": 3,
+        "min_candidate_id": 396753,
+        "min_map_h": 7.700820379759159e-05,
+        "near_active_count": 86,
+        "nearest_obstacle_direction": [
+          0.6508128123046973,
+          0.3784709439503598,
+          -0.658181151299074
+        ],
+        "node_id": 318,
+        "point_m": [
+          -1.35,
+          2.25,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6530191217090597,
+        "unknown_primary": true,
+        "unknown_support_group_count": 7
+      },
+      "goal_m": [
+        -1.25,
+        2.35,
+        -3.4000000000000004
+      ],
+      "group": "G1_START_SAFE_BOUNDARY",
+      "group_ordinal": 10,
+      "initial_velocity_mps": [
+        0.06508128123046973,
+        0.03784709439503598,
+        -0.0658181151299074
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G1_10_318",
+      "seed": 13008911973394562702,
+      "source_node_id": 318,
+      "start_m": [
+        -1.35,
+        2.25,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.23139927412539366,
+        "directional_rank": 3,
+        "forced_candidate_count": 3,
+        "min_candidate_id": 225268,
+        "min_map_h": 0.00011551125327036345,
+        "near_active_count": 11,
+        "nearest_obstacle_direction": [
+          0.5080191946004086,
+          0.08539721491814481,
+          0.8571019855313464
+        ],
+        "node_id": 12,
+        "point_m": [
+          -1.4500000000000002,
+          1.75,
+          -3.4000000000000004
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.554252187626447,
+        "unknown_primary": true,
+        "unknown_support_group_count": 17
+      },
+      "goal_m": [
+        -1.35,
+        1.75,
+        -3.25
+      ],
+      "group": "G1_START_SAFE_BOUNDARY",
+      "group_ordinal": 11,
+      "initial_velocity_mps": [
+        0.05080191946004086,
+        0.008539721491814482,
+        0.08571019855313465
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G1_11_012",
+      "seed": 7336122007631983630,
+      "source_node_id": 12,
+      "start_m": [
+        -1.4500000000000002,
+        1.75,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.25644173940349624,
+        "directional_rank": 3,
+        "forced_candidate_count": 1,
+        "min_candidate_id": 31821,
+        "min_map_h": 0.00016337200054856657,
+        "near_active_count": 5,
+        "nearest_obstacle_direction": [
+          0.5925537995246604,
+          0.5560029148422744,
+          -0.582872844929135
+        ],
+        "node_id": 86,
+        "point_m": [
+          -1.4500000000000002,
+          1.5,
+          -3.4000000000000004
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.5528707689732426,
+        "unknown_primary": true,
+        "unknown_support_group_count": 20
+      },
+      "goal_m": [
+        -1.35,
+        1.6,
+        -3.35
+      ],
+      "group": "G1_START_SAFE_BOUNDARY",
+      "group_ordinal": 12,
+      "initial_velocity_mps": [
+        0.05925537995246604,
+        0.05560029148422744,
+        -0.05828728449291351
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G1_12_086",
+      "seed": 9367358990595772454,
+      "source_node_id": 86,
+      "start_m": [
+        -1.4500000000000002,
+        1.5,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.3374220853565402,
+        "directional_rank": 3,
+        "forced_candidate_count": 1,
+        "min_candidate_id": 31821,
+        "min_map_h": 0.0002863571511630275,
+        "near_active_count": 9,
+        "nearest_obstacle_direction": [
+          0.21653009227958478,
+          0.16777116992359828,
+          -0.9617523348970158
+        ],
+        "node_id": 15,
+        "point_m": [
+          -1.4000000000000001,
+          1.55,
+          -3.35
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6032107677634941,
+        "unknown_primary": true,
+        "unknown_support_group_count": 18
+      },
+      "goal_m": [
+        -1.4500000000000002,
+        1.5,
+        -3.4000000000000004
+      ],
+      "group": "G1_START_SAFE_BOUNDARY",
+      "group_ordinal": 13,
+      "initial_velocity_mps": [
+        0.02165300922795848,
+        0.016777116992359828,
+        -0.09617523348970158
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G1_13_015",
+      "seed": 936263958760282263,
+      "source_node_id": 15,
+      "start_m": [
+        -1.4000000000000001,
+        1.55,
+        -3.35
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.22766866221482582,
+        "directional_rank": 3,
+        "forced_candidate_count": 5,
+        "min_candidate_id": 372127,
+        "min_map_h": 0.00069158221543935,
+        "near_active_count": 18,
+        "nearest_obstacle_direction": [
+          -0.1770477946419192,
+          -0.013271439953420007,
+          0.9841127716344279
+        ],
+        "node_id": 258,
+        "point_m": [
+          -1.5,
+          0.9500000000000001,
+          -3.2
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.7529419601123981,
+        "unknown_primary": true,
+        "unknown_support_group_count": 23
+      },
+      "goal_m": [
+        -1.4500000000000002,
+        1.1500000000000001,
+        -3.2
+      ],
+      "group": "G1_START_SAFE_BOUNDARY",
+      "group_ordinal": 14,
+      "initial_velocity_mps": [
+        -0.01770477946419192,
+        -0.001327143995342001,
+        0.09841127716344279
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G1_14_258",
+      "seed": 810164502745319584,
+      "source_node_id": 258,
+      "start_m": [
+        -1.5,
+        0.9500000000000001,
+        -3.2
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.21239258521691973,
+        "directional_rank": 3,
+        "forced_candidate_count": 6,
+        "min_candidate_id": 66080,
+        "min_map_h": 0.0012785413190750192,
+        "near_active_count": 28,
+        "nearest_obstacle_direction": [
+          -0.4903002132737733,
+          -0.5991413836514198,
+          0.6329575840922949
+        ],
+        "node_id": 501,
+        "point_m": [
+          -1.4500000000000002,
+          2.75,
+          -3.4000000000000004
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.552443970619131,
+        "unknown_primary": true,
+        "unknown_support_group_count": 11
+      },
+      "goal_m": [
+        -1.4500000000000002,
+        2.6500000000000004,
+        -3.35
+      ],
+      "group": "G1_START_SAFE_BOUNDARY",
+      "group_ordinal": 15,
+      "initial_velocity_mps": [
+        -0.049030021327377334,
+        -0.05991413836514198,
+        0.06329575840922949
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G1_15_501",
+      "seed": 319243663270455766,
+      "source_node_id": 501,
+      "start_m": [
+        -1.4500000000000002,
+        2.75,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.19974445241700786,
+        "directional_rank": 3,
+        "forced_candidate_count": 7,
+        "min_candidate_id": 43218,
+        "min_map_h": 0.001346708057587069,
+        "near_active_count": 28,
+        "nearest_obstacle_direction": [
+          0.2695592418128933,
+          0.26528092713906604,
+          -0.9257234170363714
+        ],
+        "node_id": 31,
+        "point_m": [
+          -1.35,
+          0.30000000000000004,
+          -3.35
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6107092359417814,
+        "unknown_primary": true,
+        "unknown_support_group_count": 15
+      },
+      "goal_m": [
+        -1.25,
+        0.35000000000000003,
+        -3.4000000000000004
+      ],
+      "group": "G1_START_SAFE_BOUNDARY",
+      "group_ordinal": 16,
+      "initial_velocity_mps": [
+        0.026955924181289333,
+        0.026528092713906604,
+        -0.09257234170363715
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G1_16_031",
+      "seed": 3911973694635590904,
+      "source_node_id": 31,
+      "start_m": [
+        -1.35,
+        0.30000000000000004,
+        -3.35
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.2311132467872089,
+        "directional_rank": 3,
+        "forced_candidate_count": 2,
+        "min_candidate_id": 236720,
+        "min_map_h": 0.0013908667467328415,
+        "near_active_count": 36,
+        "nearest_obstacle_direction": [
+          0.7977089339441016,
+          0.5897477336970502,
+          0.12592881840531236
+        ],
+        "node_id": 447,
+        "point_m": [
+          -1.3,
+          2.15,
+          -3.4000000000000004
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.553564428849091,
+        "unknown_primary": true,
+        "unknown_support_group_count": 7
+      },
+      "goal_m": [
+        -1.2000000000000002,
+        2.2,
+        -3.3000000000000003
+      ],
+      "group": "G1_START_SAFE_BOUNDARY",
+      "group_ordinal": 17,
+      "initial_velocity_mps": [
+        0.07977089339441017,
+        0.058974773369705025,
+        0.012592881840531237
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G1_17_447",
+      "seed": 12179615257161411270,
+      "source_node_id": 447,
+      "start_m": [
+        -1.3,
+        2.15,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.33471209669658597,
+        "directional_rank": 3,
+        "forced_candidate_count": 1,
+        "min_candidate_id": 74453,
+        "min_map_h": 0.0018425983429311774,
+        "near_active_count": 21,
+        "nearest_obstacle_direction": [
+          0.2564616693282173,
+          -0.500016516460144,
+          -0.8271704149886207
+        ],
+        "node_id": 213,
+        "point_m": [
+          -1.4000000000000001,
+          2.0500000000000003,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6541380890631057,
+        "unknown_primary": true,
+        "unknown_support_group_count": 10
+      },
+      "goal_m": [
+        -1.4000000000000001,
+        2.0500000000000003,
+        -3.4000000000000004
+      ],
+      "group": "G1_START_SAFE_BOUNDARY",
+      "group_ordinal": 18,
+      "initial_velocity_mps": [
+        0.02564616693282173,
+        -0.0500016516460144,
+        -0.08271704149886207
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G1_18_213",
+      "seed": 12156675305540272806,
+      "source_node_id": 213,
+      "start_m": [
+        -1.4000000000000001,
+        2.0500000000000003,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.27741367465028677,
+        "directional_rank": 3,
+        "forced_candidate_count": 6,
+        "min_candidate_id": 30573,
+        "min_map_h": 0.0026347306984076425,
+        "near_active_count": 38,
+        "nearest_obstacle_direction": [
+          -0.051046301253264786,
+          -0.019730608976925135,
+          -0.9985013661471679
+        ],
+        "node_id": 74,
+        "point_m": [
+          -1.4000000000000001,
+          0.5,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6588598388884832,
+        "unknown_primary": true,
+        "unknown_support_group_count": 19
+      },
+      "goal_m": [
+        -1.3,
+        0.45,
+        -3.35
+      ],
+      "group": "G1_START_SAFE_BOUNDARY",
+      "group_ordinal": 19,
+      "initial_velocity_mps": [
+        -0.005104630125326479,
+        -0.0019730608976925136,
+        -0.0998501366147168
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G1_19_074",
+      "seed": 2577887116984343047,
+      "source_node_id": 74,
+      "start_m": [
+        -1.4000000000000001,
+        0.5,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.883825482610673,
+        "directional_rank": 3,
+        "forced_candidate_count": 2000,
+        "min_candidate_id": 558149,
+        "min_map_h": -0.013132539438974678,
+        "near_active_count": 2000,
+        "nearest_obstacle_direction": [
+          -0.3443560357218765,
+          0.6494432083125831,
+          -0.6779693502206222
+        ],
+        "node_id": 350,
+        "point_m": [
+          -1.0,
+          1.35,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.653314992448064,
+        "unknown_primary": true,
+        "unknown_support_group_count": 6
+      },
+      "goal_m": [
+        -1.1,
+        1.4000000000000001,
+        -3.4000000000000004
+      ],
+      "group": "G2_FEASIBILITY_DENSE",
+      "group_ordinal": 0,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G2_00_350",
+      "seed": 1472215000241583971,
+      "source_node_id": 350,
+      "start_m": [
+        -1.0,
+        1.35,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.8502283456521947,
+        "directional_rank": 3,
+        "forced_candidate_count": 2000,
+        "min_candidate_id": 249695,
+        "min_map_h": -0.012393359186045658,
+        "near_active_count": 2000,
+        "nearest_obstacle_direction": [
+          0.017122719443924208,
+          0.457188775616204,
+          0.8892048335054196
+        ],
+        "node_id": 104,
+        "point_m": [
+          -1.1,
+          3.1500000000000004,
+          -3.35
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6017497656198703,
+        "unknown_primary": true,
+        "unknown_support_group_count": 9
+      },
+      "goal_m": [
+        -1.05,
+        3.2,
+        -3.3000000000000003
+      ],
+      "group": "G2_FEASIBILITY_DENSE",
+      "group_ordinal": 1,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G2_01_104",
+      "seed": 12344264032573343660,
+      "source_node_id": 104,
+      "start_m": [
+        -1.1,
+        3.1500000000000004,
+        -3.35
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.8341118240676689,
+        "directional_rank": 3,
+        "forced_candidate_count": 2000,
+        "min_candidate_id": 361698,
+        "min_map_h": -0.015748843264448645,
+        "near_active_count": 2000,
+        "nearest_obstacle_direction": [
+          -0.7019666017680218,
+          -0.3133749670383209,
+          0.639561584240319
+        ],
+        "node_id": 124,
+        "point_m": [
+          -1.4500000000000002,
+          7.300000000000001,
+          -3.35
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6054461376395728,
+        "unknown_primary": true,
+        "unknown_support_group_count": 6
+      },
+      "goal_m": [
+        -1.5,
+        7.3500000000000005,
+        -3.3000000000000003
+      ],
+      "group": "G2_FEASIBILITY_DENSE",
+      "group_ordinal": 2,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G2_02_124",
+      "seed": 15372654917148418092,
+      "source_node_id": 124,
+      "start_m": [
+        -1.4500000000000002,
+        7.300000000000001,
+        -3.35
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.8232748896688676,
+        "directional_rank": 3,
+        "forced_candidate_count": 2000,
+        "min_candidate_id": 1333,
+        "min_map_h": -0.016718390356146556,
+        "near_active_count": 2000,
+        "nearest_obstacle_direction": [
+          0.47744380822444316,
+          -0.5388500240941793,
+          0.6940375072874977
+        ],
+        "node_id": 221,
+        "point_m": [
+          -1.05,
+          3.2,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6515651561854248,
+        "unknown_primary": true,
+        "unknown_support_group_count": 7
+      },
+      "goal_m": [
+        -1.0,
+        3.0500000000000003,
+        -3.3000000000000003
+      ],
+      "group": "G2_FEASIBILITY_DENSE",
+      "group_ordinal": 3,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G2_03_221",
+      "seed": 3401956321348436726,
+      "source_node_id": 221,
+      "start_m": [
+        -1.05,
+        3.2,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.8212667556619412,
+        "directional_rank": 3,
+        "forced_candidate_count": 2000,
+        "min_candidate_id": 255570,
+        "min_map_h": -0.012450618167421728,
+        "near_active_count": 2000,
+        "nearest_obstacle_direction": [
+          0.27009737790289223,
+          0.8465285185934294,
+          -0.4587339900835737
+        ],
+        "node_id": 321,
+        "point_m": [
+          -1.1,
+          3.5,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6498083670501167,
+        "unknown_primary": true,
+        "unknown_support_group_count": 8
+      },
+      "goal_m": [
+        -1.05,
+        3.6500000000000004,
+        -3.35
+      ],
+      "group": "G2_FEASIBILITY_DENSE",
+      "group_ordinal": 4,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G2_04_321",
+      "seed": 2194031517715391203,
+      "source_node_id": 321,
+      "start_m": [
+        -1.1,
+        3.5,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.8135710420133021,
+        "directional_rank": 3,
+        "forced_candidate_count": 2000,
+        "min_candidate_id": 90634,
+        "min_map_h": -0.01582431928387535,
+        "near_active_count": 2000,
+        "nearest_obstacle_direction": [
+          0.3295961124493022,
+          -0.05188851904245771,
+          -0.9426950642969801
+        ],
+        "node_id": 341,
+        "point_m": [
+          -1.5,
+          7.15,
+          -3.4000000000000004
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.5550620805276314,
+        "unknown_primary": true,
+        "unknown_support_group_count": 6
+      },
+      "goal_m": [
+        -1.5,
+        6.9,
+        -3.4000000000000004
+      ],
+      "group": "G2_FEASIBILITY_DENSE",
+      "group_ordinal": 5,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G2_05_341",
+      "seed": 10899840228157830140,
+      "source_node_id": 341,
+      "start_m": [
+        -1.5,
+        7.15,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.8087194508354663,
+        "directional_rank": 3,
+        "forced_candidate_count": 2000,
+        "min_candidate_id": 286161,
+        "min_map_h": -0.013117208887140977,
+        "near_active_count": 2000,
+        "nearest_obstacle_direction": [
+          0.14857267730748247,
+          0.9805307493299789,
+          -0.12839629736124486
+        ],
+        "node_id": 480,
+        "point_m": [
+          -1.25,
+          4.6000000000000005,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.650525792741713,
+        "unknown_primary": true,
+        "unknown_support_group_count": 9
+      },
+      "goal_m": [
+        -1.1500000000000001,
+        4.8500000000000005,
+        -3.25
+      ],
+      "group": "G2_FEASIBILITY_DENSE",
+      "group_ordinal": 6,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G2_06_480",
+      "seed": 5008437410324472967,
+      "source_node_id": 480,
+      "start_m": [
+        -1.25,
+        4.6000000000000005,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.8044373092319003,
+        "directional_rank": 3,
+        "forced_candidate_count": 2000,
+        "min_candidate_id": 101051,
+        "min_map_h": -0.012999017819219763,
+        "near_active_count": 2000,
+        "nearest_obstacle_direction": [
+          0.5289650950789172,
+          0.8072846073255672,
+          -0.26170114818883944
+        ],
+        "node_id": 497,
+        "point_m": [
+          -1.1500000000000001,
+          4.4,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6499796042683177,
+        "unknown_primary": true,
+        "unknown_support_group_count": 6
+      },
+      "goal_m": [
+        -1.25,
+        4.6000000000000005,
+        -3.3000000000000003
+      ],
+      "group": "G2_FEASIBILITY_DENSE",
+      "group_ordinal": 7,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G2_07_497",
+      "seed": 10415032066018855415,
+      "source_node_id": 497,
+      "start_m": [
+        -1.1500000000000001,
+        4.4,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.7738315591971677,
+        "directional_rank": 3,
+        "forced_candidate_count": 2000,
+        "min_candidate_id": 350597,
+        "min_map_h": -0.016111990158625113,
+        "near_active_count": 2000,
+        "nearest_obstacle_direction": [
+          -0.832973290324741,
+          0.20663287981416117,
+          -0.5132819406381655
+        ],
+        "node_id": 469,
+        "point_m": [
+          -1.0,
+          1.5,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.653712621374467,
+        "unknown_primary": true,
+        "unknown_support_group_count": 6
+      },
+      "goal_m": [
+        -1.1500000000000001,
+        1.6,
+        -3.4000000000000004
+      ],
+      "group": "G2_FEASIBILITY_DENSE",
+      "group_ordinal": 8,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G2_08_469",
+      "seed": 3268002363608242597,
+      "source_node_id": 469,
+      "start_m": [
+        -1.0,
+        1.5,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.7732536015703609,
+        "directional_rank": 3,
+        "forced_candidate_count": 2000,
+        "min_candidate_id": 651911,
+        "min_map_h": -0.013255840936628547,
+        "near_active_count": 2000,
+        "nearest_obstacle_direction": [
+          -0.5832089998457252,
+          -0.5918323304840767,
+          0.556418686865148
+        ],
+        "node_id": 58,
+        "point_m": [
+          -1.05,
+          1.25,
+          -3.25
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.7032104410972455,
+        "unknown_primary": true,
+        "unknown_support_group_count": 8
+      },
+      "goal_m": [
+        -1.2000000000000002,
+        1.2000000000000002,
+        -3.2
+      ],
+      "group": "G2_FEASIBILITY_DENSE",
+      "group_ordinal": 9,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G2_09_058",
+      "seed": 15430284161990364996,
+      "source_node_id": 58,
+      "start_m": [
+        -1.05,
+        1.25,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.7639555391109438,
+        "directional_rank": 3,
+        "forced_candidate_count": 2000,
+        "min_candidate_id": 350597,
+        "min_map_h": -0.016018863748435343,
+        "near_active_count": 2000,
+        "nearest_obstacle_direction": [
+          0.9844677424479114,
+          -0.17285754198004272,
+          0.030717002785606923
+        ],
+        "node_id": 339,
+        "point_m": [
+          -1.1,
+          1.4500000000000002,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.653271696139018,
+        "unknown_primary": true,
+        "unknown_support_group_count": 10
+      },
+      "goal_m": [
+        -1.0,
+        1.35,
+        -3.3000000000000003
+      ],
+      "group": "G2_FEASIBILITY_DENSE",
+      "group_ordinal": 10,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G2_10_339",
+      "seed": 16250470844382901024,
+      "source_node_id": 339,
+      "start_m": [
+        -1.1,
+        1.4500000000000002,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.7621388634915119,
+        "directional_rank": 3,
+        "forced_candidate_count": 2000,
+        "min_candidate_id": 352028,
+        "min_map_h": -0.013960807170039113,
+        "near_active_count": 2000,
+        "nearest_obstacle_direction": [
+          -0.9232538088637582,
+          -0.22571179318250098,
+          -0.31089643104561826
+        ],
+        "node_id": 210,
+        "point_m": [
+          -1.1,
+          3.8000000000000003,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6494210047655429,
+        "unknown_primary": true,
+        "unknown_support_group_count": 8
+      },
+      "goal_m": [
+        -1.2000000000000002,
+        3.75,
+        -3.35
+      ],
+      "group": "G2_FEASIBILITY_DENSE",
+      "group_ordinal": 11,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G2_11_210",
+      "seed": 15954604344557753391,
+      "source_node_id": 210,
+      "start_m": [
+        -1.1,
+        3.8000000000000003,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.7620056044784904,
+        "directional_rank": 3,
+        "forced_candidate_count": 2000,
+        "min_candidate_id": 13750,
+        "min_map_h": -0.012944433273169333,
+        "near_active_count": 2000,
+        "nearest_obstacle_direction": [
+          -0.3474437301945334,
+          -0.8955475720616375,
+          -0.27798813018367263
+        ],
+        "node_id": 356,
+        "point_m": [
+          -1.05,
+          2.75,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6519686504367377,
+        "unknown_primary": true,
+        "unknown_support_group_count": 5
+      },
+      "goal_m": [
+        -1.05,
+        2.6500000000000004,
+        -3.3000000000000003
+      ],
+      "group": "G2_FEASIBILITY_DENSE",
+      "group_ordinal": 12,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G2_12_356",
+      "seed": 4309727134076954990,
+      "source_node_id": 356,
+      "start_m": [
+        -1.05,
+        2.75,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.7609263006556178,
+        "directional_rank": 3,
+        "forced_candidate_count": 2000,
+        "min_candidate_id": 304248,
+        "min_map_h": -0.012452041381170747,
+        "near_active_count": 2000,
+        "nearest_obstacle_direction": [
+          0.3520852301897314,
+          0.2911621961687748,
+          -0.8895282829704853
+        ],
+        "node_id": 48,
+        "point_m": [
+          -1.1,
+          3.45,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6500691578034785,
+        "unknown_primary": true,
+        "unknown_support_group_count": 8
+      },
+      "goal_m": [
+        -1.1500000000000001,
+        3.6,
+        -3.4000000000000004
+      ],
+      "group": "G2_FEASIBILITY_DENSE",
+      "group_ordinal": 13,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G2_13_048",
+      "seed": 16582565396657645014,
+      "source_node_id": 48,
+      "start_m": [
+        -1.1,
+        3.45,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.7604669035775098,
+        "directional_rank": 3,
+        "forced_candidate_count": 2000,
+        "min_candidate_id": 205643,
+        "min_map_h": -0.013271529446069439,
+        "near_active_count": 2000,
+        "nearest_obstacle_direction": [
+          -0.7279950429357507,
+          0.2580816646001296,
+          -0.635151219677803
+        ],
+        "node_id": 1,
+        "point_m": [
+          -1.320091524787212,
+          7.65155973542965,
+          -3.2983854117434093
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6585301835046555,
+        "unknown_primary": true,
+        "unknown_support_group_count": 3
+      },
+      "goal_m": [
+        -1.4000000000000001,
+        7.75,
+        -3.4000000000000004
+      ],
+      "group": "G2_FEASIBILITY_DENSE",
+      "group_ordinal": 14,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G2_14_001",
+      "seed": 1439708513188883151,
+      "source_node_id": 1,
+      "start_m": [
+        -1.320091524787212,
+        7.65155973542965,
+        -3.2983854117434093
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.7592801015871384,
+        "directional_rank": 3,
+        "forced_candidate_count": 2000,
+        "min_candidate_id": 299217,
+        "min_map_h": -0.013049596765740268,
+        "near_active_count": 2000,
+        "nearest_obstacle_direction": [
+          -0.7388986098114442,
+          -0.6667172840283073,
+          0.09755463903184106
+        ],
+        "node_id": 322,
+        "point_m": [
+          -1.5,
+          6.2,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.652316744637861,
+        "unknown_primary": true,
+        "unknown_support_group_count": 6
+      },
+      "goal_m": [
+        -1.5,
+        5.95,
+        -3.25
+      ],
+      "group": "G2_FEASIBILITY_DENSE",
+      "group_ordinal": 15,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G2_15_322",
+      "seed": 1455525892184753133,
+      "source_node_id": 322,
+      "start_m": [
+        -1.5,
+        6.2,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.7524679084654575,
+        "directional_rank": 3,
+        "forced_candidate_count": 2000,
+        "min_candidate_id": 130565,
+        "min_map_h": -0.013066015449673802,
+        "near_active_count": 2000,
+        "nearest_obstacle_direction": [
+          0.40510321946605443,
+          0.8939075658119476,
+          0.1918870640830076
+        ],
+        "node_id": 0,
+        "point_m": [
+          -1.3107129362533267,
+          7.68757961206736,
+          -3.2981702798933386
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6588222203550622,
+        "unknown_primary": true,
+        "unknown_support_group_count": 3
+      },
+      "goal_m": [
+        -1.35,
+        7.9,
+        -3.25
+      ],
+      "group": "G2_FEASIBILITY_DENSE",
+      "group_ordinal": 16,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G2_16_000",
+      "seed": 1404146338375405209,
+      "source_node_id": 0,
+      "start_m": [
+        -1.3107129362533267,
+        7.68757961206736,
+        -3.2981702798933386
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.7482300735532837,
+        "directional_rank": 3,
+        "forced_candidate_count": 2000,
+        "min_candidate_id": 538284,
+        "min_map_h": -0.013300463417923243,
+        "near_active_count": 2000,
+        "nearest_obstacle_direction": [
+          -0.32255425379232777,
+          0.42652182404938527,
+          0.8450076253916647
+        ],
+        "node_id": 24,
+        "point_m": [
+          -1.0,
+          2.0500000000000003,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6539341463582482,
+        "unknown_primary": true,
+        "unknown_support_group_count": 4
+      },
+      "goal_m": [
+        -1.1,
+        2.2,
+        -3.2
+      ],
+      "group": "G2_FEASIBILITY_DENSE",
+      "group_ordinal": 17,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G2_17_024",
+      "seed": 9398754799675783792,
+      "source_node_id": 24,
+      "start_m": [
+        -1.0,
+        2.0500000000000003,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.7437587353352354,
+        "directional_rank": 3,
+        "forced_candidate_count": 2000,
+        "min_candidate_id": 350597,
+        "min_map_h": -0.014461144635205274,
+        "near_active_count": 2000,
+        "nearest_obstacle_direction": [
+          0.9268324565507182,
+          -0.37538138882805144,
+          0.008391090851861986
+        ],
+        "node_id": 49,
+        "point_m": [
+          -1.1,
+          1.5,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6533500145041888,
+        "unknown_primary": true,
+        "unknown_support_group_count": 10
+      },
+      "goal_m": [
+        -1.0,
+        1.5,
+        -3.3000000000000003
+      ],
+      "group": "G2_FEASIBILITY_DENSE",
+      "group_ordinal": 18,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G2_18_049",
+      "seed": 7858312856451674860,
+      "source_node_id": 49,
+      "start_m": [
+        -1.1,
+        1.5,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.742143549677954,
+        "directional_rank": 3,
+        "forced_candidate_count": 2000,
+        "min_candidate_id": 350597,
+        "min_map_h": -0.01290736852083093,
+        "near_active_count": 2000,
+        "nearest_obstacle_direction": [
+          -0.5618073972806971,
+          0.09251285502032514,
+          -0.8220789621542918
+        ],
+        "node_id": 20,
+        "point_m": [
+          -1.0,
+          1.5,
+          -3.25
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.7037120795831395,
+        "unknown_primary": true,
+        "unknown_support_group_count": 6
+      },
+      "goal_m": [
+        -1.05,
+        1.5,
+        -3.35
+      ],
+      "group": "G2_FEASIBILITY_DENSE",
+      "group_ordinal": 19,
+      "initial_velocity_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G2_19_020",
+      "seed": 11388296183313085361,
+      "source_node_id": 20,
+      "start_m": [
+        -1.0,
+        1.5,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.2710120029207886,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 640262,
+        "min_map_h": 0.009441948489930845,
+        "near_active_count": 4,
+        "nearest_obstacle_direction": [
+          0.8198750561343014,
+          0.5575906042482637,
+          -0.1299908088398263
+        ],
+        "node_id": 402,
+        "one_step_endpoint_h": 0.0079992318812218,
+        "point_m": [
+          -1.3,
+          0.15000000000000002,
+          -3.25
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.7112735011203355,
+        "sampled_gap_score": 0.0014427166087090451,
+        "unknown_primary": true,
+        "unknown_support_group_count": 11
+      },
+      "goal_m": [
+        -1.2000000000000002,
+        0.2,
+        -3.25
+      ],
+      "group": "G3_SAMPLED_DATA_GAP",
+      "group_ordinal": 0,
+      "initial_velocity_mps": [
+        0.08198750561343016,
+        0.05575906042482637,
+        -0.012999080883982632
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G3_00_402",
+      "seed": 17253869151703349986,
+      "source_node_id": 402,
+      "start_m": [
+        -1.3,
+        0.15000000000000002,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.1186455712981451,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 31821,
+        "min_map_h": 0.008614498661208163,
+        "near_active_count": 3,
+        "nearest_obstacle_direction": [
+          0.4748590463812259,
+          0.7495102633514042,
+          -0.46124099037360217
+        ],
+        "node_id": 328,
+        "one_step_endpoint_h": 0.007200245460505052,
+        "point_m": [
+          -1.4500000000000002,
+          1.4500000000000002,
+          -3.4000000000000004
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.552546289409948,
+        "sampled_gap_score": 0.0014142532007031111,
+        "unknown_primary": true,
+        "unknown_support_group_count": 20
+      },
+      "goal_m": [
+        -1.4500000000000002,
+        1.5,
+        -3.4000000000000004
+      ],
+      "group": "G3_SAMPLED_DATA_GAP",
+      "group_ordinal": 1,
+      "initial_velocity_mps": [
+        0.04748590463812259,
+        0.07495102633514043,
+        -0.04612409903736022
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G3_01_328",
+      "seed": 7456256932435426150,
+      "source_node_id": 328,
+      "start_m": [
+        -1.4500000000000002,
+        1.4500000000000002,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.17964502961683873,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 39060,
+        "min_map_h": 0.00808912371270663,
+        "near_active_count": 5,
+        "nearest_obstacle_direction": [
+          -0.808217023488327,
+          0.3899754986880409,
+          -0.4412531624438321
+        ],
+        "node_id": 391,
+        "one_step_endpoint_h": 0.006693239813697207,
+        "point_m": [
+          -1.4000000000000001,
+          0.1,
+          -3.4000000000000004
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.5615330488301762,
+        "sampled_gap_score": 0.001395883899009423,
+        "unknown_primary": true,
+        "unknown_support_group_count": 12
+      },
+      "goal_m": [
+        -1.5,
+        0.25,
+        -3.4000000000000004
+      ],
+      "group": "G3_SAMPLED_DATA_GAP",
+      "group_ordinal": 2,
+      "initial_velocity_mps": [
+        -0.08082170234883271,
+        0.03899754986880409,
+        -0.04412531624438321
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G3_02_391",
+      "seed": 14979744716183738132,
+      "source_node_id": 391,
+      "start_m": [
+        -1.4000000000000001,
+        0.1,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.04309285160955062,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 225268,
+        "min_map_h": 0.008033152127424812,
+        "near_active_count": 4,
+        "nearest_obstacle_direction": [
+          0.7244286073938392,
+          0.0864672805657669,
+          0.6839054044098377
+        ],
+        "node_id": 16,
+        "one_step_endpoint_h": 0.006639239018830699,
+        "point_m": [
+          -1.5,
+          1.75,
+          -3.4000000000000004
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.5540578493083825,
+        "sampled_gap_score": 0.001393913108594113,
+        "unknown_primary": true,
+        "unknown_support_group_count": 18
+      },
+      "goal_m": [
+        -1.35,
+        1.75,
+        -3.25
+      ],
+      "group": "G3_SAMPLED_DATA_GAP",
+      "group_ordinal": 3,
+      "initial_velocity_mps": [
+        0.07244286073938393,
+        0.00864672805657669,
+        0.06839054044098378
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G3_03_016",
+      "seed": 14653032213873434626,
+      "source_node_id": 16,
+      "start_m": [
+        -1.5,
+        1.75,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.5034190058915358,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 491253,
+        "min_map_h": 0.007175551474185658,
+        "near_active_count": 30,
+        "nearest_obstacle_direction": [
+          0.8123294591118291,
+          0.5429413423239454,
+          0.21292146123525313
+        ],
+        "node_id": 233,
+        "one_step_endpoint_h": 0.005812188707244904,
+        "point_m": [
+          -1.35,
+          1.2000000000000002,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6521259703599875,
+        "sampled_gap_score": 0.0013633627669407539,
+        "unknown_primary": true,
+        "unknown_support_group_count": 18
+      },
+      "goal_m": [
+        -1.25,
+        1.35,
+        -3.3000000000000003
+      ],
+      "group": "G3_SAMPLED_DATA_GAP",
+      "group_ordinal": 4,
+      "initial_velocity_mps": [
+        0.08123294591118291,
+        0.05429413423239454,
+        0.021292146123525313
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G3_04_233",
+      "seed": 14054057758725009611,
+      "source_node_id": 233,
+      "start_m": [
+        -1.35,
+        1.2000000000000002,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.4195630141605365,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 134728,
+        "min_map_h": 0.007065151082489833,
+        "near_active_count": 18,
+        "nearest_obstacle_direction": [
+          -0.04348169026130822,
+          -0.9824989201869516,
+          0.18112209816445313
+        ],
+        "node_id": 266,
+        "one_step_endpoint_h": 0.005705769022640625,
+        "point_m": [
+          -1.4500000000000002,
+          2.85,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6525045989374698,
+        "sampled_gap_score": 0.0013593820598492082,
+        "unknown_primary": true,
+        "unknown_support_group_count": 14
+      },
+      "goal_m": [
+        -1.4500000000000002,
+        2.75,
+        -3.25
+      ],
+      "group": "G3_SAMPLED_DATA_GAP",
+      "group_ordinal": 5,
+      "initial_velocity_mps": [
+        -0.004348169026130822,
+        -0.09824989201869516,
+        0.018112209816445315
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G3_05_266",
+      "seed": 9360254871323300301,
+      "source_node_id": 266,
+      "start_m": [
+        -1.4500000000000002,
+        2.85,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 1,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 24010,
+        "min_map_h": 0.006984699530801088,
+        "near_active_count": 1,
+        "nearest_obstacle_direction": [
+          0.5000042287525472,
+          -0.6872131033798557,
+          -0.5270046695927827
+        ],
+        "node_id": 224,
+        "one_step_endpoint_h": 0.005628226532899544,
+        "point_m": [
+          -1.5,
+          1.1500000000000001,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6516876895903034,
+        "sampled_gap_score": 0.0013564729979015436,
+        "unknown_primary": true,
+        "unknown_support_group_count": 22
+      },
+      "goal_m": [
+        -1.4500000000000002,
+        1.1,
+        -3.4000000000000004
+      ],
+      "group": "G3_SAMPLED_DATA_GAP",
+      "group_ordinal": 6,
+      "initial_velocity_mps": [
+        0.050000422875254726,
+        -0.06872131033798558,
+        -0.05270046695927827
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G3_06_224",
+      "seed": 306672893208942569,
+      "source_node_id": 224,
+      "start_m": [
+        -1.5,
+        1.1500000000000001,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.5381903413552942,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 534920,
+        "min_map_h": 0.006913701499759461,
+        "near_active_count": 22,
+        "nearest_obstacle_direction": [
+          0.9171140850753978,
+          -0.3720361705836118,
+          0.1431462285000821
+        ],
+        "node_id": 417,
+        "one_step_endpoint_h": 0.0055598003067937295,
+        "point_m": [
+          -1.4000000000000001,
+          2.1,
+          -3.25
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.7037920784372989,
+        "sampled_gap_score": 0.0013539011929657313,
+        "unknown_primary": true,
+        "unknown_support_group_count": 9
+      },
+      "goal_m": [
+        -1.25,
+        2.0,
+        -3.2
+      ],
+      "group": "G3_SAMPLED_DATA_GAP",
+      "group_ordinal": 7,
+      "initial_velocity_mps": [
+        0.09171140850753978,
+        -0.037203617058361185,
+        0.01431462285000821
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G3_07_417",
+      "seed": 604697307885052077,
+      "source_node_id": 417,
+      "start_m": [
+        -1.4000000000000001,
+        2.1,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.030904720201072006,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 121196,
+        "min_map_h": 0.006882888884607988,
+        "near_active_count": 16,
+        "nearest_obstacle_direction": [
+          0.8876989604167695,
+          -0.36921076951622744,
+          -0.27508900986448315
+        ],
+        "node_id": 40,
+        "one_step_endpoint_h": 0.005530105467530799,
+        "point_m": [
+          -1.4500000000000002,
+          -0.2,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6614011293115485,
+        "sampled_gap_score": 0.0013527834170771885,
+        "unknown_primary": true,
+        "unknown_support_group_count": 7
+      },
+      "goal_m": [
+        -1.4000000000000001,
+        -0.2,
+        -3.35
+      ],
+      "group": "G3_SAMPLED_DATA_GAP",
+      "group_ordinal": 8,
+      "initial_velocity_mps": [
+        0.08876989604167695,
+        -0.03692107695162274,
+        -0.027508900986448315
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G3_08_040",
+      "seed": 8989173779194962498,
+      "source_node_id": 40,
+      "start_m": [
+        -1.4500000000000002,
+        -0.2,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.2621174401128396,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 33888,
+        "min_map_h": 0.0067139302676991995,
+        "near_active_count": 5,
+        "nearest_obstacle_direction": [
+          0.17112706842586553,
+          0.12745611267616266,
+          0.976970043447316
+        ],
+        "node_id": 401,
+        "one_step_endpoint_h": 0.005367292002271359,
+        "point_m": [
+          -1.5,
+          2.95,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6524169833659708,
+        "sampled_gap_score": 0.0013466382654278401,
+        "unknown_primary": true,
+        "unknown_support_group_count": 17
+      },
+      "goal_m": [
+        -1.5,
+        2.95,
+        -3.25
+      ],
+      "group": "G3_SAMPLED_DATA_GAP",
+      "group_ordinal": 9,
+      "initial_velocity_mps": [
+        0.017112706842586554,
+        0.012745611267616266,
+        0.09769700434473161
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G3_09_401",
+      "seed": 12596242318979971043,
+      "source_node_id": 401,
+      "start_m": [
+        -1.5,
+        2.95,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.2969953615162126,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 114143,
+        "min_map_h": 0.0061034423939400236,
+        "near_active_count": 68,
+        "nearest_obstacle_direction": [
+          0.5886547882733746,
+          0.09237819810953553,
+          0.8030889170925372
+        ],
+        "node_id": 499,
+        "one_step_endpoint_h": 0.004779241674929369,
+        "point_m": [
+          -1.25,
+          0.1,
+          -3.25
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.7115625759764093,
+        "sampled_gap_score": 0.0013242007190106542,
+        "unknown_primary": true,
+        "unknown_support_group_count": 10
+      },
+      "goal_m": [
+        -1.2000000000000002,
+        0.2,
+        -3.2
+      ],
+      "group": "G3_SAMPLED_DATA_GAP",
+      "group_ordinal": 10,
+      "initial_velocity_mps": [
+        0.05886547882733746,
+        0.009237819810953554,
+        0.08030889170925372
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G3_10_499",
+      "seed": 2997497614576098370,
+      "source_node_id": 499,
+      "start_m": [
+        -1.25,
+        0.1,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.4527607677717745,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 33888,
+        "min_map_h": 0.005791148341843223,
+        "near_active_count": 21,
+        "nearest_obstacle_direction": [
+          0.07541754035854582,
+          0.7833292083638786,
+          0.6170150289338878
+        ],
+        "node_id": 345,
+        "one_step_endpoint_h": 0.004478570768493655,
+        "point_m": [
+          -1.4500000000000002,
+          2.85,
+          -3.25
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.7025045974455661,
+        "sampled_gap_score": 0.001312577573349568,
+        "unknown_primary": true,
+        "unknown_support_group_count": 14
+      },
+      "goal_m": [
+        -1.4000000000000001,
+        3.0,
+        -3.25
+      ],
+      "group": "G3_SAMPLED_DATA_GAP",
+      "group_ordinal": 11,
+      "initial_velocity_mps": [
+        0.007541754035854583,
+        0.07833292083638788,
+        0.061701502893388785
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G3_11_345",
+      "seed": 10565707689209032456,
+      "source_node_id": 345,
+      "start_m": [
+        -1.4500000000000002,
+        2.85,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.2284628683771963,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 13431,
+        "min_map_h": 0.005530442981118402,
+        "near_active_count": 12,
+        "nearest_obstacle_direction": [
+          -0.12939799510311864,
+          -0.9736775720402013,
+          0.18763833448736478
+        ],
+        "node_id": 347,
+        "one_step_endpoint_h": 0.004227646536554146,
+        "point_m": [
+          -1.5,
+          2.85,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6525192382338858,
+        "sampled_gap_score": 0.0013027964445642554,
+        "unknown_primary": true,
+        "unknown_support_group_count": 15
+      },
+      "goal_m": [
+        -1.4500000000000002,
+        2.75,
+        -3.25
+      ],
+      "group": "G3_SAMPLED_DATA_GAP",
+      "group_ordinal": 12,
+      "initial_velocity_mps": [
+        -0.012939799510311864,
+        -0.09736775720402013,
+        0.01876383344873648
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G3_12_347",
+      "seed": 8725365932261941688,
+      "source_node_id": 347,
+      "start_m": [
+        -1.5,
+        2.85,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.04840357082655483,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 231471,
+        "min_map_h": 0.005201377038133101,
+        "near_active_count": 10,
+        "nearest_obstacle_direction": [
+          0.6860305869872054,
+          0.6904819618412232,
+          0.22933969148380348
+        ],
+        "node_id": 204,
+        "one_step_endpoint_h": 0.003911030254488371,
+        "point_m": [
+          -1.5,
+          1.6500000000000001,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6536517436196814,
+        "sampled_gap_score": 0.0012903467836447302,
+        "unknown_primary": true,
+        "unknown_support_group_count": 20
+      },
+      "goal_m": [
+        -1.4000000000000001,
+        1.75,
+        -3.25
+      ],
+      "group": "G3_SAMPLED_DATA_GAP",
+      "group_ordinal": 13,
+      "initial_velocity_mps": [
+        0.06860305869872055,
+        0.06904819618412232,
+        0.022933969148380348
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G3_13_204",
+      "seed": 2845300568325188737,
+      "source_node_id": 204,
+      "start_m": [
+        -1.5,
+        1.6500000000000001,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.37962579838694427,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 19262,
+        "min_map_h": 0.005124581528680217,
+        "near_active_count": 43,
+        "nearest_obstacle_direction": [
+          0.5500814959099067,
+          0.3522557875552459,
+          0.7571830742900642
+        ],
+        "node_id": 368,
+        "one_step_endpoint_h": 0.003837157223326941,
+        "point_m": [
+          -1.4500000000000002,
+          1.6,
+          -3.2
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.7533971211499433,
+        "sampled_gap_score": 0.0012874243053532762,
+        "unknown_primary": true,
+        "unknown_support_group_count": 20
+      },
+      "goal_m": [
+        -1.35,
+        1.6,
+        -3.2
+      ],
+      "group": "G3_SAMPLED_DATA_GAP",
+      "group_ordinal": 14,
+      "initial_velocity_mps": [
+        0.05500814959099068,
+        0.03522557875552459,
+        0.07571830742900643
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G3_14_368",
+      "seed": 1398343078090432740,
+      "source_node_id": 368,
+      "start_m": [
+        -1.4500000000000002,
+        1.6,
+        -3.2
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.1199210949195716,
+        "directional_rank": 3,
+        "forced_candidate_count": 1,
+        "min_candidate_id": 39060,
+        "min_map_h": 0.004845839378409746,
+        "near_active_count": 8,
+        "nearest_obstacle_direction": [
+          -0.5057301034348881,
+          -0.2122230011941155,
+          -0.8361808777076285
+        ],
+        "node_id": 145,
+        "one_step_endpoint_h": 0.0035690780678060904,
+        "point_m": [
+          -1.4500000000000002,
+          0.2,
+          -3.35
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6111100410146573,
+        "sampled_gap_score": 0.0012767613106036552,
+        "unknown_primary": true,
+        "unknown_support_group_count": 14
+      },
+      "goal_m": [
+        -1.5,
+        0.25,
+        -3.4000000000000004
+      ],
+      "group": "G3_SAMPLED_DATA_GAP",
+      "group_ordinal": 15,
+      "initial_velocity_mps": [
+        -0.050573010343488815,
+        -0.02122230011941155,
+        -0.08361808777076285
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G3_15_145",
+      "seed": 17500736654160044445,
+      "source_node_id": 145,
+      "start_m": [
+        -1.4500000000000002,
+        0.2,
+        -3.35
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.14842614527535428,
+        "directional_rank": 3,
+        "forced_candidate_count": 1,
+        "min_candidate_id": 23223,
+        "min_map_h": 0.004771324749324152,
+        "near_active_count": 13,
+        "nearest_obstacle_direction": [
+          -0.37675366315544784,
+          0.6350978785167603,
+          -0.674319925556454
+        ],
+        "node_id": 473,
+        "one_step_endpoint_h": 0.003497428908675996,
+        "point_m": [
+          -1.3,
+          0.2,
+          -3.4000000000000004
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.5610900319493288,
+        "sampled_gap_score": 0.0012738958406481558,
+        "unknown_primary": true,
+        "unknown_support_group_count": 12
+      },
+      "goal_m": [
+        -1.5,
+        0.25,
+        -3.4000000000000004
+      ],
+      "group": "G3_SAMPLED_DATA_GAP",
+      "group_ordinal": 16,
+      "initial_velocity_mps": [
+        -0.03767536631554479,
+        0.06350978785167603,
+        -0.0674319925556454
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G3_16_473",
+      "seed": 3334071956303530481,
+      "source_node_id": 473,
+      "start_m": [
+        -1.3,
+        0.2,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.34078010610235726,
+        "directional_rank": 3,
+        "forced_candidate_count": 1,
+        "min_candidate_id": 490312,
+        "min_map_h": 0.004309271513328657,
+        "near_active_count": 26,
+        "nearest_obstacle_direction": [
+          0.8439870009363372,
+          0.5316656982134385,
+          -0.07083450849483149
+        ],
+        "node_id": 496,
+        "one_step_endpoint_h": 0.0030532858192872554,
+        "point_m": [
+          -1.4000000000000001,
+          2.75,
+          -3.4000000000000004
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.5523738729306873,
+        "sampled_gap_score": 0.0012559856940414019,
+        "unknown_primary": true,
+        "unknown_support_group_count": 11
+      },
+      "goal_m": [
+        -1.3,
+        2.8000000000000003,
+        -3.4000000000000004
+      ],
+      "group": "G3_SAMPLED_DATA_GAP",
+      "group_ordinal": 17,
+      "initial_velocity_mps": [
+        0.08439870009363372,
+        0.05316656982134385,
+        -0.007083450849483149
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G3_17_496",
+      "seed": 17203583446729682018,
+      "source_node_id": 496,
+      "start_m": [
+        -1.4000000000000001,
+        2.75,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.24475327992699505,
+        "directional_rank": 3,
+        "forced_candidate_count": 1,
+        "min_candidate_id": 640262,
+        "min_map_h": 0.004027032923406008,
+        "near_active_count": 5,
+        "nearest_obstacle_direction": [
+          0.9404708066465315,
+          0.2686261101756294,
+          0.20821785412767352
+        ],
+        "node_id": 18,
+        "one_step_endpoint_h": 0.0027821112048866635,
+        "point_m": [
+          -1.3,
+          0.2,
+          -3.3000000000000003
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6610892464624611,
+        "sampled_gap_score": 0.0012449217185193442,
+        "unknown_primary": true,
+        "unknown_support_group_count": 12
+      },
+      "goal_m": [
+        -1.2000000000000002,
+        0.2,
+        -3.25
+      ],
+      "group": "G3_SAMPLED_DATA_GAP",
+      "group_ordinal": 18,
+      "initial_velocity_mps": [
+        0.09404708066465316,
+        0.02686261101756294,
+        0.020821785412767354
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G3_18_018",
+      "seed": 11270371398139618593,
+      "source_node_id": 18,
+      "start_m": [
+        -1.3,
+        0.2,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.2761501943479503,
+        "directional_rank": 3,
+        "forced_candidate_count": 3,
+        "min_candidate_id": 13719,
+        "min_map_h": 0.0036155721059398793,
+        "near_active_count": 41,
+        "nearest_obstacle_direction": [
+          0.23929790682367272,
+          0.28915997559917117,
+          -0.9268888931804585
+        ],
+        "node_id": 84,
+        "one_step_endpoint_h": 0.002386954916492311,
+        "point_m": [
+          -1.4000000000000001,
+          0.35000000000000003,
+          -3.35
+        ],
+        "query_finite": true,
+        "reference_clearance_m": 1.6104462104181347,
+        "sampled_gap_score": 0.0012286171894475683,
+        "unknown_primary": true,
+        "unknown_support_group_count": 16
+      },
+      "goal_m": [
+        -1.25,
+        0.35000000000000003,
+        -3.4000000000000004
+      ],
+      "group": "G3_SAMPLED_DATA_GAP",
+      "group_ordinal": 19,
+      "initial_velocity_mps": [
+        0.023929790682367273,
+        0.02891599755991712,
+        -0.09268888931804586
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G3_19_084",
+      "seed": 17494575091272666256,
+      "source_node_id": 84,
+      "start_m": [
+        -1.4000000000000001,
+        0.35000000000000003,
+        -3.35
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 2,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 13618,
+        "min_map_h": 0.01125182111041351,
+        "near_active_count": 2,
+        "nearest_obstacle_direction": [
+          0.3941475578279561,
+          -0.9188098624010371,
+          0.020883951083195258
+        ],
+        "node_id": 429,
+        "nominal_horizon_h": [
+          0.010119786246748294,
+          0.008975007891737875,
+          0.007822843777954305
+        ],
+        "point_m": [
+          -1.35,
+          0.1,
+          -3.4000000000000004
+        ],
+        "predictive_drop_score": 0.0034289773324592057,
+        "query_finite": true,
+        "reference_clearance_m": 1.5614677767960834,
+        "unknown_primary": true,
+        "unknown_support_group_count": 11
+      },
+      "goal_m": [
+        -1.3,
+        0.05,
+        -3.4000000000000004
+      ],
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "group_ordinal": 0,
+      "initial_velocity_mps": [
+        0.029561066837096705,
+        -0.06891073968007778,
+        0.0015662963312396442
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G4_00_429",
+      "seed": 5792367178287386316,
+      "source_node_id": 429,
+      "start_m": [
+        -1.35,
+        0.1,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.2710120029207886,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 640262,
+        "min_map_h": 0.009441948489930845,
+        "near_active_count": 4,
+        "nearest_obstacle_direction": [
+          0.8198750561343014,
+          0.5575906042482637,
+          -0.1299908088398263
+        ],
+        "node_id": 402,
+        "nominal_horizon_h": [
+          0.00835522376638656,
+          0.0072529593222780825,
+          0.006141202889565878
+        ],
+        "point_m": [
+          -1.3,
+          0.15000000000000002,
+          -3.25
+        ],
+        "predictive_drop_score": 0.003300745600364967,
+        "query_finite": true,
+        "reference_clearance_m": 1.7112735011203355,
+        "unknown_primary": true,
+        "unknown_support_group_count": 11
+      },
+      "goal_m": [
+        -1.2000000000000002,
+        0.2,
+        -3.25
+      ],
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "group_ordinal": 1,
+      "initial_velocity_mps": [
+        0.0614906292100726,
+        0.041819295318619776,
+        -0.009749310662986973
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G4_01_402",
+      "seed": 16988705315853941270,
+      "source_node_id": 402,
+      "start_m": [
+        -1.3,
+        0.15000000000000002,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.04309285160955062,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 225268,
+        "min_map_h": 0.008033152127424812,
+        "near_active_count": 4,
+        "nearest_obstacle_direction": [
+          0.7244286073938392,
+          0.0864672805657669,
+          0.6839054044098377
+        ],
+        "node_id": 16,
+        "nominal_horizon_h": [
+          0.006983029851298707,
+          0.005916823327670424,
+          0.004840636600350629
+        ],
+        "point_m": [
+          -1.5,
+          1.75,
+          -3.4000000000000004
+        ],
+        "predictive_drop_score": 0.003192515527074183,
+        "query_finite": true,
+        "reference_clearance_m": 1.5540578493083825,
+        "unknown_primary": true,
+        "unknown_support_group_count": 18
+      },
+      "goal_m": [
+        -1.35,
+        1.75,
+        -3.25
+      ],
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "group_ordinal": 2,
+      "initial_velocity_mps": [
+        0.054332145554537935,
+        0.006485046042432517,
+        0.051292905330737826
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G4_02_016",
+      "seed": 1417993809616583408,
+      "source_node_id": 16,
+      "start_m": [
+        -1.5,
+        1.75,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 1,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 24010,
+        "min_map_h": 0.006984699530801088,
+        "near_active_count": 1,
+        "nearest_obstacle_direction": [
+          0.5000042287525472,
+          -0.6872131033798557,
+          -0.5270046695927827
+        ],
+        "node_id": 224,
+        "nominal_horizon_h": [
+          0.005962657322326603,
+          0.004905815155033192,
+          0.0038230068860085203
+        ],
+        "point_m": [
+          -1.5,
+          1.1500000000000001,
+          -3.3000000000000003
+        ],
+        "predictive_drop_score": 0.0031616926447925672,
+        "query_finite": true,
+        "reference_clearance_m": 1.6516876895903034,
+        "unknown_primary": true,
+        "unknown_support_group_count": 22
+      },
+      "goal_m": [
+        -1.4500000000000002,
+        1.1,
+        -3.4000000000000004
+      ],
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "group_ordinal": 3,
+      "initial_velocity_mps": [
+        0.03750031715644104,
+        -0.05154098275348918,
+        -0.0395253502194587
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G4_03_224",
+      "seed": 18446116627152181677,
+      "source_node_id": 224,
+      "start_m": [
+        -1.5,
+        1.1500000000000001,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.17964502961683873,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 39060,
+        "min_map_h": 0.00808912371270663,
+        "near_active_count": 5,
+        "nearest_obstacle_direction": [
+          -0.808217023488327,
+          0.3899754986880409,
+          -0.4412531624438321
+        ],
+        "node_id": 391,
+        "nominal_horizon_h": [
+          0.007037523239906765,
+          0.005983930291971543,
+          0.004934973112690335
+        ],
+        "point_m": [
+          -1.4000000000000001,
+          0.1,
+          -3.4000000000000004
+        ],
+        "predictive_drop_score": 0.003154150600016295,
+        "query_finite": true,
+        "reference_clearance_m": 1.5615330488301762,
+        "unknown_primary": true,
+        "unknown_support_group_count": 12
+      },
+      "goal_m": [
+        -1.5,
+        0.25,
+        -3.4000000000000004
+      ],
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "group_ordinal": 4,
+      "initial_velocity_mps": [
+        -0.060616276761624524,
+        0.029248162401603064,
+        -0.033093987183287404
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G4_04_391",
+      "seed": 16597870891116632579,
+      "source_node_id": 391,
+      "start_m": [
+        -1.4000000000000001,
+        0.1,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.5034190058915358,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 491253,
+        "min_map_h": 0.007175551474185658,
+        "near_active_count": 30,
+        "nearest_obstacle_direction": [
+          0.8123294591118291,
+          0.5429413423239454,
+          0.21292146123525313
+        ],
+        "node_id": 233,
+        "nominal_horizon_h": [
+          0.006148341938022821,
+          0.005109540445648989,
+          0.004065195830135638
+        ],
+        "point_m": [
+          -1.35,
+          1.2000000000000002,
+          -3.3000000000000003
+        ],
+        "predictive_drop_score": 0.0031103556440500203,
+        "query_finite": true,
+        "reference_clearance_m": 1.6521259703599875,
+        "unknown_primary": true,
+        "unknown_support_group_count": 18
+      },
+      "goal_m": [
+        -1.25,
+        1.35,
+        -3.3000000000000003
+      ],
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "group_ordinal": 5,
+      "initial_velocity_mps": [
+        0.06092470943338718,
+        0.040720600674295906,
+        0.015969109592643985
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G4_05_233",
+      "seed": 15368325989348575339,
+      "source_node_id": 233,
+      "start_m": [
+        -1.35,
+        1.2000000000000002,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.1186455712981451,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 31821,
+        "min_map_h": 0.008614498661208163,
+        "near_active_count": 3,
+        "nearest_obstacle_direction": [
+          0.4748590463812259,
+          0.7495102633514042,
+          -0.46124099037360217
+        ],
+        "node_id": 328,
+        "nominal_horizon_h": [
+          0.007549121236345893,
+          0.006511926393837922,
+          0.005508517459355225
+        ],
+        "point_m": [
+          -1.4500000000000002,
+          1.4500000000000002,
+          -3.4000000000000004
+        ],
+        "predictive_drop_score": 0.003105981201852938,
+        "query_finite": true,
+        "reference_clearance_m": 1.552546289409948,
+        "unknown_primary": true,
+        "unknown_support_group_count": 20
+      },
+      "goal_m": [
+        -1.4500000000000002,
+        1.5,
+        -3.4000000000000004
+      ],
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "group_ordinal": 6,
+      "initial_velocity_mps": [
+        0.03561442847859194,
+        0.056213269751355315,
+        -0.034593074278020164
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G4_06_328",
+      "seed": 15855967951080306811,
+      "source_node_id": 328,
+      "start_m": [
+        -1.4500000000000002,
+        1.4500000000000002,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.5381903413552942,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 534920,
+        "min_map_h": 0.006913701499759461,
+        "near_active_count": 22,
+        "nearest_obstacle_direction": [
+          0.9171140850753978,
+          -0.3720361705836118,
+          0.1431462285000821
+        ],
+        "node_id": 417,
+        "nominal_horizon_h": [
+          0.005893588065144586,
+          0.004857204518479104,
+          0.003811048514828056
+        ],
+        "point_m": [
+          -1.4000000000000001,
+          2.1,
+          -3.25
+        ],
+        "predictive_drop_score": 0.0031026529849314047,
+        "query_finite": true,
+        "reference_clearance_m": 1.7037920784372989,
+        "unknown_primary": true,
+        "unknown_support_group_count": 9
+      },
+      "goal_m": [
+        -1.25,
+        2.0,
+        -3.2
+      ],
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "group_ordinal": 7,
+      "initial_velocity_mps": [
+        0.06878355638065484,
+        -0.027902712793770885,
+        0.010735967137506157
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G4_07_417",
+      "seed": 16304108724892670521,
+      "source_node_id": 417,
+      "start_m": [
+        -1.4000000000000001,
+        2.1,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.4195630141605365,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 134728,
+        "min_map_h": 0.007065151082489833,
+        "near_active_count": 18,
+        "nearest_obstacle_direction": [
+          -0.04348169026130822,
+          -0.9824989201869516,
+          0.18112209816445313
+        ],
+        "node_id": 266,
+        "nominal_horizon_h": [
+          0.00604092722340303,
+          0.005017797967052016,
+          0.003999706880697614
+        ],
+        "point_m": [
+          -1.4500000000000002,
+          2.85,
+          -3.3000000000000003
+        ],
+        "predictive_drop_score": 0.003065444201792219,
+        "query_finite": true,
+        "reference_clearance_m": 1.6525045989374698,
+        "unknown_primary": true,
+        "unknown_support_group_count": 14
+      },
+      "goal_m": [
+        -1.4500000000000002,
+        2.75,
+        -3.25
+      ],
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "group_ordinal": 8,
+      "initial_velocity_mps": [
+        -0.0032611267695981166,
+        -0.07368741901402137,
+        0.013584157362333983
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G4_08_266",
+      "seed": 5095258083949440460,
+      "source_node_id": 266,
+      "start_m": [
+        -1.4500000000000002,
+        2.85,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.030904720201072006,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 121196,
+        "min_map_h": 0.006882888884607988,
+        "near_active_count": 16,
+        "nearest_obstacle_direction": [
+          0.8876989604167695,
+          -0.36921076951622744,
+          -0.27508900986448315
+        ],
+        "node_id": 40,
+        "nominal_horizon_h": [
+          0.005863613808449436,
+          0.004845615459881856,
+          0.0038343705983663566
+        ],
+        "point_m": [
+          -1.4500000000000002,
+          -0.2,
+          -3.3000000000000003
+        ],
+        "predictive_drop_score": 0.003048518286241631,
+        "query_finite": true,
+        "reference_clearance_m": 1.6614011293115485,
+        "unknown_primary": true,
+        "unknown_support_group_count": 7
+      },
+      "goal_m": [
+        -1.4000000000000001,
+        -0.2,
+        -3.35
+      ],
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "group_ordinal": 9,
+      "initial_velocity_mps": [
+        0.06657742203125772,
+        -0.02769080771371706,
+        -0.020631675739836236
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G4_09_040",
+      "seed": 8575044388559804227,
+      "source_node_id": 40,
+      "start_m": [
+        -1.4500000000000002,
+        -0.2,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.2969953615162126,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 114143,
+        "min_map_h": 0.0061034423939400236,
+        "near_active_count": 68,
+        "nearest_obstacle_direction": [
+          0.5886547882733746,
+          0.09237819810953553,
+          0.8030889170925372
+        ],
+        "node_id": 499,
+        "nominal_horizon_h": [
+          0.005105604373892944,
+          0.0040891951027830845,
+          0.0030610370435464763
+        ],
+        "point_m": [
+          -1.25,
+          0.1,
+          -3.25
+        ],
+        "predictive_drop_score": 0.0030424053503935473,
+        "query_finite": true,
+        "reference_clearance_m": 1.7115625759764093,
+        "unknown_primary": true,
+        "unknown_support_group_count": 10
+      },
+      "goal_m": [
+        -1.2000000000000002,
+        0.2,
+        -3.2
+      ],
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "group_ordinal": 10,
+      "initial_velocity_mps": [
+        0.04414910912050309,
+        0.006928364858215164,
+        0.060231668781940285
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G4_10_499",
+      "seed": 2373912494336244486,
+      "source_node_id": 499,
+      "start_m": [
+        -1.25,
+        0.1,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.2621174401128396,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 33888,
+        "min_map_h": 0.0067139302676991995,
+        "near_active_count": 5,
+        "nearest_obstacle_direction": [
+          0.17112706842586553,
+          0.12745611267616266,
+          0.976970043447316
+        ],
+        "node_id": 401,
+        "nominal_horizon_h": [
+          0.005699264085177673,
+          0.004698013212465223,
+          0.0037127382898898484
+        ],
+        "point_m": [
+          -1.5,
+          2.95,
+          -3.3000000000000003
+        ],
+        "predictive_drop_score": 0.003001191977809351,
+        "query_finite": true,
+        "reference_clearance_m": 1.6524169833659708,
+        "unknown_primary": true,
+        "unknown_support_group_count": 17
+      },
+      "goal_m": [
+        -1.5,
+        2.95,
+        -3.25
+      ],
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "group_ordinal": 11,
+      "initial_velocity_mps": [
+        0.012834530131939914,
+        0.0095592084507122,
+        0.07327275325854869
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G4_11_401",
+      "seed": 15030540026189077484,
+      "source_node_id": 401,
+      "start_m": [
+        -1.5,
+        2.95,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.04840357082655483,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 231471,
+        "min_map_h": 0.005201377038133101,
+        "near_active_count": 10,
+        "nearest_obstacle_direction": [
+          0.6860305869872054,
+          0.6904819618412232,
+          0.22933969148380348
+        ],
+        "node_id": 204,
+        "nominal_horizon_h": [
+          0.004228929374186202,
+          0.003231600701739515,
+          0.0022171869106421133
+        ],
+        "point_m": [
+          -1.5,
+          1.6500000000000001,
+          -3.3000000000000003
+        ],
+        "predictive_drop_score": 0.0029841901274909877,
+        "query_finite": true,
+        "reference_clearance_m": 1.6536517436196814,
+        "unknown_primary": true,
+        "unknown_support_group_count": 20
+      },
+      "goal_m": [
+        -1.4000000000000001,
+        1.75,
+        -3.25
+      ],
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "group_ordinal": 12,
+      "initial_velocity_mps": [
+        0.051452294024040404,
+        0.051786147138091744,
+        0.01720047686128526
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G4_12_204",
+      "seed": 5996556670260243185,
+      "source_node_id": 204,
+      "start_m": [
+        -1.5,
+        1.6500000000000001,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.2284628683771963,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 13431,
+        "min_map_h": 0.005530442981118402,
+        "near_active_count": 12,
+        "nearest_obstacle_direction": [
+          -0.12939799510311864,
+          -0.9736775720402013,
+          0.18763833448736478
+        ],
+        "node_id": 347,
+        "nominal_horizon_h": [
+          0.004548658325481392,
+          0.0035766569690273663,
+          0.002617993638772024
+        ],
+        "point_m": [
+          -1.5,
+          2.85,
+          -3.3000000000000003
+        ],
+        "predictive_drop_score": 0.002912449342346378,
+        "query_finite": true,
+        "reference_clearance_m": 1.6525192382338858,
+        "unknown_primary": true,
+        "unknown_support_group_count": 15
+      },
+      "goal_m": [
+        -1.4500000000000002,
+        2.75,
+        -3.25
+      ],
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "group_ordinal": 13,
+      "initial_velocity_mps": [
+        -0.009704849632733898,
+        -0.0730258179030151,
+        0.014072875086552358
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G4_13_347",
+      "seed": 3694598379324000050,
+      "source_node_id": 347,
+      "start_m": [
+        -1.5,
+        2.85,
+        -3.3000000000000003
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.4527607677717745,
+        "directional_rank": 3,
+        "forced_candidate_count": 0,
+        "min_candidate_id": 33888,
+        "min_map_h": 0.005791148341843223,
+        "near_active_count": 21,
+        "nearest_obstacle_direction": [
+          0.07541754035854582,
+          0.7833292083638786,
+          0.6170150289338878
+        ],
+        "node_id": 345,
+        "nominal_horizon_h": [
+          0.004802027826484093,
+          0.0038342441358484025,
+          0.002893575853275411
+        ],
+        "point_m": [
+          -1.4500000000000002,
+          2.85,
+          -3.25
+        ],
+        "predictive_drop_score": 0.0028975724885678122,
+        "query_finite": true,
+        "reference_clearance_m": 1.7025045974455661,
+        "unknown_primary": true,
+        "unknown_support_group_count": 14
+      },
+      "goal_m": [
+        -1.4000000000000001,
+        3.0,
+        -3.25
+      ],
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "group_ordinal": 14,
+      "initial_velocity_mps": [
+        0.0056563155268909366,
+        0.05874969062729089,
+        0.046276127170041585
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G4_14_345",
+      "seed": 3404340366868170093,
+      "source_node_id": 345,
+      "start_m": [
+        -1.4500000000000002,
+        2.85,
+        -3.25
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.1199210949195716,
+        "directional_rank": 3,
+        "forced_candidate_count": 1,
+        "min_candidate_id": 39060,
+        "min_map_h": 0.004845839378409746,
+        "near_active_count": 8,
+        "nearest_obstacle_direction": [
+          -0.5057301034348881,
+          -0.2122230011941155,
+          -0.8361808777076285
+        ],
+        "node_id": 145,
+        "nominal_horizon_h": [
+          0.0038835809456700954,
+          0.0029241703796132404,
+          0.001972287175107456
+        ],
+        "point_m": [
+          -1.4500000000000002,
+          0.2,
+          -3.35
+        ],
+        "predictive_drop_score": 0.0028735522033022896,
+        "query_finite": true,
+        "reference_clearance_m": 1.6111100410146573,
+        "unknown_primary": true,
+        "unknown_support_group_count": 14
+      },
+      "goal_m": [
+        -1.5,
+        0.25,
+        -3.4000000000000004
+      ],
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "group_ordinal": 15,
+      "initial_velocity_mps": [
+        -0.03792975775761661,
+        -0.015916725089558662,
+        -0.06271356582807214
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G4_15_145",
+      "seed": 14719582897910562218,
+      "source_node_id": 145,
+      "start_m": [
+        -1.4500000000000002,
+        0.2,
+        -3.35
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.34078010610235726,
+        "directional_rank": 3,
+        "forced_candidate_count": 1,
+        "min_candidate_id": 490312,
+        "min_map_h": 0.004309271513328657,
+        "near_active_count": 26,
+        "nearest_obstacle_direction": [
+          0.8439870009363372,
+          0.5316656982134385,
+          -0.07083450849483149
+        ],
+        "node_id": 496,
+        "nominal_horizon_h": [
+          0.003362594513156859,
+          0.0024063477652397584,
+          0.0014461104568479766
+        ],
+        "point_m": [
+          -1.4000000000000001,
+          2.75,
+          -3.4000000000000004
+        ],
+        "predictive_drop_score": 0.0028631610564806807,
+        "query_finite": true,
+        "reference_clearance_m": 1.5523738729306873,
+        "unknown_primary": true,
+        "unknown_support_group_count": 11
+      },
+      "goal_m": [
+        -1.3,
+        2.8000000000000003,
+        -3.4000000000000004
+      ],
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "group_ordinal": 16,
+      "initial_velocity_mps": [
+        0.06329902507022528,
+        0.03987492736600788,
+        -0.005312588137112361
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G4_16_496",
+      "seed": 5859267918044959148,
+      "source_node_id": 496,
+      "start_m": [
+        -1.4000000000000001,
+        2.75,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.14842614527535428,
+        "directional_rank": 3,
+        "forced_candidate_count": 1,
+        "min_candidate_id": 23223,
+        "min_map_h": 0.004771324749324152,
+        "near_active_count": 13,
+        "nearest_obstacle_direction": [
+          -0.37675366315544784,
+          0.6350978785167603,
+          -0.674319925556454
+        ],
+        "node_id": 473,
+        "nominal_horizon_h": [
+          0.003811215307322695,
+          0.002863267254062208,
+          0.0019351526640199491
+        ],
+        "point_m": [
+          -1.3,
+          0.2,
+          -3.4000000000000004
+        ],
+        "predictive_drop_score": 0.0028361720853042026,
+        "query_finite": true,
+        "reference_clearance_m": 1.5610900319493288,
+        "unknown_primary": true,
+        "unknown_support_group_count": 12
+      },
+      "goal_m": [
+        -1.5,
+        0.25,
+        -3.4000000000000004
+      ],
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "group_ordinal": 17,
+      "initial_velocity_mps": [
+        -0.028256524736658586,
+        0.047632340888757015,
+        -0.050573994416734054
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G4_17_473",
+      "seed": 1445707906486393351,
+      "source_node_id": 473,
+      "start_m": [
+        -1.3,
+        0.2,
+        -3.4000000000000004
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.0,
+        "directional_rank": 2,
+        "forced_candidate_count": 1,
+        "min_candidate_id": 116249,
+        "min_map_h": 0.003572386496374695,
+        "near_active_count": 2,
+        "nearest_obstacle_direction": [
+          0.8162975720378037,
+          0.02147340436430711,
+          0.5772323334587152
+        ],
+        "node_id": 300,
+        "nominal_horizon_h": [
+          0.0026475299830624657,
+          0.0017117279312080375,
+          0.0007709799565378001
+        ],
+        "point_m": [
+          -1.4500000000000002,
+          1.4000000000000001,
+          -3.35
+        ],
+        "predictive_drop_score": 0.002801406539836895,
+        "query_finite": true,
+        "reference_clearance_m": 1.6022063068862373,
+        "unknown_primary": true,
+        "unknown_support_group_count": 20
+      },
+      "goal_m": [
+        -1.3,
+        1.4500000000000002,
+        -3.3000000000000003
+      ],
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "group_ordinal": 18,
+      "initial_velocity_mps": [
+        0.06122231790283528,
+        0.0016105053273230332,
+        0.04329242500940363
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G4_18_300",
+      "seed": 12162326842289526458,
+      "source_node_id": 300,
+      "start_m": [
+        -1.4500000000000002,
+        1.4000000000000001,
+        -3.35
+      ]
+    },
+    {
+      "candidate_budget": 2000,
+      "controller_rollout_metric_read_count": 0,
+      "dt": 0.05,
+      "generation_diagnostics": {
+        "directional_balance": 0.24475327992699505,
+        "directional_rank": 3,
+        "forced_candidate_count": 1,
+        "min_candidate_id": 640262,
+        "min_map_h": 0.004027032923406008,
+        "near_active_count": 5,
+        "nearest_obstacle_direction": [
+          0.9404708066465315,
+          0.2686261101756294,
+          0.20821785412767352
+        ],
+        "node_id": 18,
+        "nominal_horizon_h": [
+          0.003088654086863289,
+          0.002154628407660517,
+          0.0012294108766581508
+        ],
+        "point_m": [
+          -1.3,
+          0.2,
+          -3.3000000000000003
+        ],
+        "predictive_drop_score": 0.002797622046747857,
+        "query_finite": true,
+        "reference_clearance_m": 1.6610892464624611,
+        "unknown_primary": true,
+        "unknown_support_group_count": 12
+      },
+      "goal_m": [
+        -1.2000000000000002,
+        0.2,
+        -3.25
+      ],
+      "group": "G4_PREDICTIVE_RECOVERY",
+      "group_ordinal": 19,
+      "initial_velocity_mps": [
+        0.07053531049848986,
+        0.020146958263172202,
+        0.015616339059575513
+      ],
+      "max_steps": 200,
+      "reference_used_for_generation_only": true,
+      "scenario_id": "G4_19_018",
+      "seed": 7011217063981759071,
+      "source_node_id": 18,
+      "start_m": [
+        -1.3,
+        0.2,
+        -3.3000000000000003
+      ]
+    }
+  ],
+  "schema_version": 1,
+  "seed": 20260804,
+  "source_prm_graph_sha256": "18e851740c9ce44fbce1e6c62c2dfc89849659ae9f4e4a803fc1bc7c2031d3dd",
+  "status": "PASS_FROZEN_100_SCENARIO_REGISTRY"
+}

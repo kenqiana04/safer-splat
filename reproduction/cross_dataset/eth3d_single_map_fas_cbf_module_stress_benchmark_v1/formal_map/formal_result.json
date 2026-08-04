@@ -1,0 +1,96 @@
+{
+  "attempt_record": "/disk1/zlab/maintenance_records/eth3d_single_map_fas_cbf_module_stress_benchmark_v1/formal_map/formal_attempt_identity.json",
+  "checkpoint_resume_count": 0,
+  "checkpoints": {
+    "15000": {
+      "path": "/disk1/zlab/cross_dataset_maps/eth3d_delivery_area_official_3dgs_v1/chkpnt15000.pth",
+      "sha256": "5e292c88ed816f72d72b20c33414cd959dd21c0c314a4222866834c1ccb8bd23",
+      "size": 478717057
+    },
+    "30000": {
+      "path": "/disk1/zlab/cross_dataset_maps/eth3d_delivery_area_official_3dgs_v1/chkpnt30000.pth",
+      "sha256": "de767580cb0a92ebfce90531bf77d4882f992091e927591d6e829b39009dfcf0",
+      "size": 478717057
+    },
+    "7000": {
+      "path": "/disk1/zlab/cross_dataset_maps/eth3d_delivery_area_official_3dgs_v1/chkpnt7000.pth",
+      "sha256": "f522ac7f8554a5bcf8e63dc9f9fd8029ef3b66ff5584a3ac6dbb61da2446a1f6",
+      "size": 260097762
+    }
+  },
+  "command": [
+    "/disk1/zlab/conda_envs/eth3d_official_3dgs_v1/bin/python",
+    "/disk1/zlab/maintenance_records/eth3d_single_map_fas_cbf_module_stress_benchmark_v1/official_train_entrypoint.py",
+    "--official-source",
+    "/disk1/zlab/source_snapshots/official_gaussian_splatting_54c035f",
+    "--frozen-seed",
+    "20260804",
+    "-s",
+    "/disk1/zlab/maintenance_records/eth3d_single_map_fas_cbf_module_stress_benchmark_v1/input_adapter/official_3dgs_train",
+    "-m",
+    "/disk1/zlab/cross_dataset_maps/eth3d_delivery_area_official_3dgs_v1",
+    "--iterations",
+    "30000",
+    "--save_iterations",
+    "7000",
+    "15000",
+    "30000",
+    "--checkpoint_iterations",
+    "7000",
+    "15000",
+    "30000",
+    "--test_iterations",
+    "999999",
+    "--data_device",
+    "cpu",
+    "--disable_viewer"
+  ],
+  "command_token_count": 25,
+  "final_logged_ema_loss": 0.0956003,
+  "formal_attempt_count": 1,
+  "formal_map_count": 1,
+  "formal_seed_count": 1,
+  "frame_deletion_count": 0,
+  "gaussian_counts": {
+    "15000": 664873,
+    "30000": 664873,
+    "7000": 352707
+  },
+  "gpu_sample_count": 346,
+  "heldout_access_count": 0,
+  "icp_sim3_count": 0,
+  "iterations": 30000,
+  "log_path": "/disk1/zlab/maintenance_records/eth3d_single_map_fas_cbf_module_stress_benchmark_v1/logs/formal_30000.log",
+  "log_sha256": "da564e39ceb8af5e4e7f38452ac2751416c45b2014aba529a752dbbb12ef97cd",
+  "loss_sample_count": 6001,
+  "map_filtering_count": 0,
+  "mapper_sweep_count": 0,
+  "mapping_baseline_count": 0,
+  "max_gpu_memory_used_mib": 4338,
+  "max_gpu_utilization_percent": 92,
+  "point_clouds": {
+    "15000": {
+      "path": "/disk1/zlab/cross_dataset_maps/eth3d_delivery_area_official_3dgs_v1/point_cloud/iteration_15000/point_cloud.ply",
+      "sha256": "51d58142bc51fef5dbfdad117b1a59caf8a6ebd6c8a490ffc69a384097cb932b",
+      "size": 164890035
+    },
+    "30000": {
+      "path": "/disk1/zlab/cross_dataset_maps/eth3d_delivery_area_official_3dgs_v1/point_cloud/iteration_30000/point_cloud.ply",
+      "sha256": "927734a2339a3f2710640065b0893eaae162cc0144ac67e2f377bcff2e71ae34",
+      "size": 164890035
+    },
+    "7000": {
+      "path": "/disk1/zlab/cross_dataset_maps/eth3d_delivery_area_official_3dgs_v1/point_cloud/iteration_7000/point_cloud.ply",
+      "sha256": "f3f9046b7970e18071f2bb82ec1a7f7851540eb36506679a05be15529b64cfb7",
+      "size": 87472867
+    }
+  },
+  "reference_access_count": 0,
+  "runtime_seconds": 701.9888937473297,
+  "scale_repair_count": 0,
+  "schema_version": 1,
+  "seed": 20260804,
+  "source_commit": "54c035f7834b564019656c3e3fcc3646292f727d",
+  "source_tree": "3e76b1a6180966faccc4c1cdf1bf95a68350c48f",
+  "status": "PASS_OFFICIAL_3DGS_FORMAL_30K_SINGLE_ATTEMPT"
+}

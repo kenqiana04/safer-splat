@@ -1,0 +1,71 @@
+{
+  "colmap_loader_pass": true,
+  "confirmed_optimizer_step_count": 1,
+  "cuda_available": true,
+  "cuda_home": "/usr/local/cuda-11.8",
+  "cuda_rasterizer_pass": true,
+  "cuda_visible_devices": "1",
+  "device_capability": [
+    8,
+    9
+  ],
+  "device_name": "NVIDIA GeForce RTX 4090",
+  "explicit_packages_path": "/disk1/zlab/maintenance_records/eth3d_single_map_fas_cbf_module_stress_benchmark_v1/environment/explicit_packages.txt",
+  "explicit_packages_sha256": "336dc33e9afe2421f42042bd01d224c212aad979d518025905a5957e631cf40f",
+  "extension_modules": {
+    "diff_gaussian_rasterization._C": {
+      "path": "/disk1/zlab/conda_envs/eth3d_official_3dgs_v1/lib/python3.10/site-packages/diff_gaussian_rasterization/_C.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "63a098532fe333aadc24f1aecd4807ab94a1d1b62ee333314dd073c31d911f8a"
+    },
+    "fused_ssim_cuda": {
+      "path": "/disk1/zlab/conda_envs/eth3d_official_3dgs_v1/lib/python3.10/site-packages/fused_ssim_cuda.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "9fd1e446dff940d79fc126b4dcb5171fc97de7068b0de3cdd0ae0251c8e584b5"
+    },
+    "simple_knn._C": {
+      "path": "/disk1/zlab/conda_envs/eth3d_official_3dgs_v1/lib/python3.10/site-packages/simple_knn/_C.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "41c779459d20990e3c7040387a32d3807a204223e994cc09177acfa4a10ed8a6"
+    }
+  },
+  "extension_wheels": [
+    {
+      "name": "diff_gaussian_rasterization-0.0.0-cp310-cp310-linux_x86_64.whl",
+      "sha256": "d8782eaf9f6f4f72c991becfda6f2f6a9501de1c41d167c4b05a1f3ac1b6c5c0",
+      "size": 356327
+    },
+    {
+      "name": "fused_ssim-0.0.0-cp310-cp310-linux_x86_64.whl",
+      "sha256": "19dd6c3d3ab691bf5f82ba3f2f5bfb39082b870c3e42ee25644f6f31caa15d02",
+      "size": 218962
+    },
+    {
+      "name": "simple_knn-0.0.0-cp310-cp310-linux_x86_64.whl",
+      "sha256": "6f99a79ab3f8acdb1807c3e2a89ca023845965aa7ca2e2ce6578ae71954dee37",
+      "size": 396096
+    }
+  ],
+  "gpu_cleanup_pass": true,
+  "gpu_cleanup_pending_process_exit": false,
+  "heldout_access_count": 0,
+  "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2022 NVIDIA Corporation\nBuilt on Wed_Sep_21_10:33:58_PDT_2022\nCuda compilation tools, release 11.8, V11.8.89\nBuild cuda_11.8.r11.8/compiler.31833905_0",
+  "one_optimization_step_pass": true,
+  "one_step_log": "/disk1/zlab/maintenance_records/eth3d_single_map_fas_cbf_module_stress_benchmark_v1/environment/qualification_v2/one_optimization_step.log",
+  "one_step_log_sha256": "8b0ff482901c3deb8e98a4c2871286dd9b2f898be03188412bec189f5e638ae0",
+  "one_step_reused_after_postcheck_only_failure": false,
+  "one_step_runtime_seconds": 16.358571767807007,
+  "python": "3.10.20",
+  "python_executable": "/disk1/zlab/conda_envs/eth3d_official_3dgs_v1/bin/python",
+  "qualification_iteration_count": 2,
+  "reference_access_count": 0,
+  "save_load_pass": true,
+  "saved_gaussian_count": 40092,
+  "schema_version": 1,
+  "simple_knn_cuda_pass": true,
+  "simple_render_pass": true,
+  "source_clean": true,
+  "source_commit": "54c035f7834b564019656c3e3fcc3646292f727d",
+  "source_tree": "3e76b1a6180966faccc4c1cdf1bf95a68350c48f",
+  "status": "PASS_OFFICIAL_3DGS_ENVIRONMENT_FUNCTIONAL",
+  "supersedes_qualification_v1_false_positive": true,
+  "torch": "2.1.2+cu118",
+  "torch_cuda": "11.8"
+}

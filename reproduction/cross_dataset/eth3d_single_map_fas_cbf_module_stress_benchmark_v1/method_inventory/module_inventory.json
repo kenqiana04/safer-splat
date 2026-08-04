@@ -1,0 +1,55 @@
+{
+  "baseline_core": [
+    {
+      "path": "cbf/cbf_utils.py",
+      "repo_sha256": "e38dea577dd207e9e3c5a1bfdcf2d75b675a899f29c982b89ea8b2694277696b",
+      "snapshot_sha256": "e38dea577dd207e9e3c5a1bfdcf2d75b675a899f29c982b89ea8b2694277696b",
+      "unchanged": true
+    },
+    {
+      "path": "splat/gsplat_utils.py",
+      "repo_sha256": "8ef4835179ed712218d465b6b2c5ea32cd8635190bc8d34f96c6f2ff8e2e11f1",
+      "snapshot_sha256": "8ef4835179ed712218d465b6b2c5ea32cd8635190bc8d34f96c6f2ff8e2e11f1",
+      "unchanged": true
+    },
+    {
+      "path": "splat/distances.py",
+      "repo_sha256": "0e124daa2124153e7d39ed100516bfead5be92a3ea95f6fc9780eb5209852694",
+      "snapshot_sha256": "0e124daa2124153e7d39ed100516bfead5be92a3ea95f6fc9780eb5209852694",
+      "unchanged": true
+    }
+  ],
+  "baseline_core_unchanged": true,
+  "implementation_gap_blocker": false,
+  "missing_core_module_count": 0,
+  "modules": [
+    {
+      "historical_lineage": "certified_start_safe + Replica bounded benchmark",
+      "id": "START_SAFE",
+      "implementation": "project_start_safe",
+      "present": true
+    },
+    {
+      "historical_lineage": "risk-aware candidate handling + exact box dominance",
+      "id": "FEASIBILITY_AWARE",
+      "implementation": "feasibility_aware_rows",
+      "present": true
+    },
+    {
+      "historical_lineage": "DT verification consolidation",
+      "id": "DISCRETE_TIME_VERIFIER",
+      "implementation": "verify_discrete_step",
+      "present": true
+    },
+    {
+      "historical_lineage": "V4-C original H=3 contract",
+      "id": "PREDICTIVE_RECOVERY_H3",
+      "implementation": "verify_horizon",
+      "present": true
+    }
+  ],
+  "reference_oracle_controller_input_count": 0,
+  "status": "PASS_FAS_CBF_MODULE_INVENTORY",
+  "task_owned_module_path": "/disk1/zlab/maintenance_records/eth3d_single_map_fas_cbf_module_stress_benchmark_v1/fas_cbf_modules.py",
+  "task_owned_module_sha256": "41fc7363fecbf2e65cc1e25233d5ea9f5fa6581fe3b1eb6a81505806d0376193"
+}

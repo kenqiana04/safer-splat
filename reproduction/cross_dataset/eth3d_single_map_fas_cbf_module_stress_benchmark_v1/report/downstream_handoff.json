@@ -1,0 +1,40 @@
+{
+  "FINAL_DECISION": "REPAIR_METHOD_INDEPENDENT_STRESS_SCENARIO_GENERATOR",
+  "FINAL_STATUS": "PASS_ETH3D_MAP_WITH_INSUFFICIENT_FAS_CBF_STRESS_ACTIVATION",
+  "ONLY_NEXT_TASK": "REFINE_FAS_CBF_STRESS_SCENARIO_ACTIVATION_ON_FROZEN_ETH3D_MAP_V1",
+  "claim_boundary": {
+    "allowed": [
+      "one fixed ETH3D learned Gaussian map",
+      "independent reference collision evaluation",
+      "module-specific stress benchmark",
+      "GT-pose RGB-only map-only",
+      "local controller robustness"
+    ],
+    "new_role": "ETH3D remains usable as a local-safety controller stress carrier.",
+    "pr79_history": "ETH3D failed the frozen planner-coupled blocked-straight-line route composition contract.",
+    "pr79_overturned": false,
+    "prohibited": [
+      "deployment-certified map",
+      "N3",
+      "full SLAM",
+      "real-robot guarantee",
+      "mapper superiority",
+      "multi-seed stability",
+      "global navigation superiority",
+      "adaptive confidence margin complete",
+      "smooth control complete"
+    ]
+  },
+  "formal_run_count": 500,
+  "map_role": "CONTROL_EXPERIMENT_CARRIER",
+  "module_evidence": {
+    "H1_START_SAFE": "NOT_SUPPORTED",
+    "H2_FEASIBILITY_AWARE": "INACTIVE",
+    "H3_DISCRETE_TIME": "INACTIVE",
+    "H4_PREDICTIVE_RECOVERY": "INACTIVE",
+    "H5_FULL": "NOT_SUPPORTED"
+  },
+  "pr79_preserved": true,
+  "registry_sha256": "9f9fce4d1875b57e7a55c3a9cbf5b5a0c3f8476d84b3deb53c920d9b6322bb1d",
+  "server_task_root": "/disk1/zlab/maintenance_records/eth3d_single_map_fas_cbf_module_stress_benchmark_v1"
+}

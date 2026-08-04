@@ -1,0 +1,43 @@
+{
+  "base_branch": "eth3d-delivery-area-provision-7zz-resume-assets-v1",
+  "base_head": "4694a7cbfa062a53ac270c1c1c5654a2d1b5f166",
+  "benchmark_role": "LOCAL_SAFETY_AND_CONTROLLER_STRESS_BENCHMARK",
+  "branch": "eth3d-single-map-fas-cbf-module-stress-benchmark-v1",
+  "data_root_identity": {
+    "component_paths": {
+      "CONTRACTS": "/disk1/zlab/cross_dataset_assets/eth3d_delivery_area_protocol_v2_v1/CONTRACTS",
+      "EVAL_ORACLE_ROOT": "/disk1/zlab/cross_dataset_assets/eth3d_delivery_area_protocol_v2_v1/EVAL_ORACLE_ROOT",
+      "LICENSES": "/disk1/zlab/cross_dataset_assets/eth3d_delivery_area_protocol_v2_v1/LICENSES",
+      "TRAIN_INPUT_ROOT": "/disk1/zlab/cross_dataset_assets/eth3d_delivery_area_protocol_v2_v1/TRAIN_INPUT_ROOT"
+    },
+    "eval_root_device": 2049,
+    "train_file_count": 753,
+    "train_root_device": 2049,
+    "train_total_bytes": 249516696,
+    "train_tree_sha256": "5b0002cbdd4dff8985574c8f5d61640e9535709634959327e3b705794830b478"
+  },
+  "identities": {
+    "pr79_artifact_manifest_identity_source": "CANONICAL_GIT_BLOB_AT_BASE_HEAD",
+    "pr79_artifact_manifest_sha256": "8eecf5caad7966b9f27664557abb77b6c31b4b265c46ed799f2d9521f683abd5",
+    "pr79_report_sha256": "6b827cc4eae4153dcd0458bf93dbc1405670e5a0a9920e82d407a596240a20ec",
+    "pr79_run_manifest_sha256": "574c456ed9a60b11096a6b76e16a219b699ae8c686c41a24cd6488bfd74cff31",
+    "protocol_v2_sha256": "a0a02fd284c75c600095510899e2878f198d69ff088b66eccd3313275fdbde7e",
+    "reference_mesh_sha256": "82a9b20c9f3c7dc933f86c45e0855adf649fcf08b7549baba760cf385d489370",
+    "split_sha256": "dc6729a60e0f2971cb671e30bcce3a04adcd8f99298395d42f21855d666cc435",
+    "train_only_colmap_tree_sha256": "5b0002cbdd4dff8985574c8f5d61640e9535709634959327e3b705794830b478"
+  },
+  "identity_sha256": "276d4b370698d91ba5bb16cb97c39cc22eb53e5916e76c9c49227baa0d5802bb",
+  "not_benchmark_role": "PLANNER_COUPLED_GLOBAL_OBSTACLE_BENCHMARK",
+  "pr79_planner_coupled_failure_remains_valid": true,
+  "pr79_preserved": true,
+  "recorded_utc": "2026-08-04T07:31:50.219393+00:00",
+  "status": "PR79_INPUT_FREEZE_PASS",
+  "task": "TRAIN_ONE_ETH3D_3DGS_MAP_AND_RUN_FAS_CBF_MODULE_STRESS_BENCHMARK_V1",
+  "training_authorized_by_current_task": true,
+  "upstream_execution_counts": {
+    "controller_count": 0,
+    "model_or_map_generation_count": 0,
+    "training_count": 0,
+    "training_environment_create_count": 0
+  }
+}

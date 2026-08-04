@@ -1,0 +1,73 @@
+{
+  "adapter_semantics": "READ_ONLY_ANISOTROPIC_ELLIPSOID_UNION",
+  "array_contract": {
+    "colors": {
+      "dtype": "float32",
+      "path": "/disk1/zlab/maintenance_records/eth3d_single_map_fas_cbf_module_stress_benchmark_v1/canonical_export/fresh_1/colors_dc.npy",
+      "sha256": "01c3dfb024b3ecb1de04904952b899155e7c2e43ee1cfbeae1578e2c2b0fe766",
+      "shape": [
+        664873,
+        3
+      ]
+    },
+    "means": {
+      "dtype": "float32",
+      "path": "/disk1/zlab/maintenance_records/eth3d_single_map_fas_cbf_module_stress_benchmark_v1/canonical_export/fresh_1/means_world_m.npy",
+      "sha256": "003f99da4b93ea5e9e4ee82e2d9c3f312e0538f039c68b6b2b64ae6e1f589281",
+      "shape": [
+        664873,
+        3
+      ]
+    },
+    "opacity": {
+      "dtype": "float32",
+      "path": "/disk1/zlab/maintenance_records/eth3d_single_map_fas_cbf_module_stress_benchmark_v1/canonical_export/fresh_1/opacity.npy",
+      "sha256": "c89eea4600b0ba1dbe1c12585bc19d9a439c3dc26eff14308909233bb7d2d37a",
+      "shape": [
+        664873,
+        1
+      ]
+    },
+    "rotations": {
+      "dtype": "float32",
+      "path": "/disk1/zlab/maintenance_records/eth3d_single_map_fas_cbf_module_stress_benchmark_v1/canonical_export/fresh_1/rotations_unit_wxyz.npy",
+      "sha256": "1f01e94e3e13e21dab4a796aadd5be2ca99815c3a9a22aa8103a96f3b728e171",
+      "shape": [
+        664873,
+        4
+      ]
+    },
+    "scales": {
+      "dtype": "float32",
+      "path": "/disk1/zlab/maintenance_records/eth3d_single_map_fas_cbf_module_stress_benchmark_v1/canonical_export/fresh_1/scales_linear_m.npy",
+      "sha256": "0130198a79314a7df01ea6f94f5163fcd7b9556722032e00104b5621e9a3acd8",
+      "shape": [
+        664873,
+        3
+      ]
+    },
+    "source_index": {
+      "dtype": "int64",
+      "path": "/disk1/zlab/maintenance_records/eth3d_single_map_fas_cbf_module_stress_benchmark_v1/canonical_export/fresh_1/source_index.npy",
+      "sha256": "f53e9a1f32507aa3c9aaefc37c9ffb9548ee13b77f3c68e767bc0cfbc3903ad6",
+      "shape": [
+        664873
+      ]
+    }
+  },
+  "canonical_root": "/disk1/zlab/maintenance_records/eth3d_single_map_fas_cbf_module_stress_benchmark_v1/canonical_export/fresh_1",
+  "canonical_tree_sha256": "06c1ff17d2ed5eb184b6a9699a3a32da431a1460840431a3effe76d5f03b9ee3",
+  "coordinate_frame": "ETH3D_DELIVERY_AREA_COLMAP_WORLD",
+  "core_code_modification_count": 0,
+  "covariance_semantics": "R @ diag(scales**2) @ R.T",
+  "distance_semantics": "existing SAFER ball-to-ellipsoid signed squared-distance field",
+  "filtering_count": 0,
+  "frame_transform_count": 0,
+  "gaussian_count": 664873,
+  "opacity_threshold": null,
+  "quaternion_order": "wxyz",
+  "scale_repair_count": 0,
+  "schema_version": 1,
+  "status": "PASS_SAFER_CANONICAL_MAP_ADAPTER",
+  "units": "meter"
+}
