@@ -1,0 +1,185 @@
+{
+  "aggregate_effect_score_forbidden": true,
+  "nodes": [
+    {
+      "activity": "formal",
+      "allowed_claim": "One learned 3DGS map passed minimum controller viability; its PR80 stress registry did not activate all modules.",
+      "core_role": "integration boundary",
+      "evidence_id": "E01_ETH3D_PR80",
+      "map_role": "LEARNED_3DGS",
+      "prohibited_claim": "Learned-map deployment safety or Full FAS-CBF superiority.",
+      "source_sha256": "44035feae65f89ccf8b146fe29c26f81dd9388098e7d0bd66716d632e8422767",
+      "status": "STRUCTURAL_LIMIT"
+    },
+    {
+      "activity": "shadow",
+      "allowed_claim": "The preregistered strict endpoint-unsafe/QP-feasible H3 stratum was unavailable under this frozen ETH3D contract.",
+      "core_role": "structural boundary",
+      "evidence_id": "E02_ETH3D_PR81",
+      "map_role": "LEARNED_3DGS",
+      "prohibited_claim": "DT verification does not exist or is ineffective.",
+      "source_sha256": "d1dd5e2a6ea7dee34daf8c346938f4848ec12f2c70ba0948b56ca8a451ee62d5",
+      "status": "STRUCTURAL_LIMIT"
+    },
+    {
+      "activity": "formal",
+      "allowed_claim": "All methods completed all 99 map-admissible routes with zero official-mesh collisions; module activations are observable on a clean GT-derived Gaussian map.",
+      "core_role": "integration boundary",
+      "evidence_id": "E03_REPLICA_PR65",
+      "map_role": "GT_DERIVED_GAUSSIAN",
+      "prohibited_claim": "Statistical safety superiority or learned-map evidence.",
+      "source_sha256": "1ddf9767c2cd199d001cd587d6c0588093a89ab027dfb484e91805a7537350c1",
+      "status": "STRUCTURAL_LIMIT"
+    },
+    {
+      "activity": "active",
+      "allowed_claim": "The original unsafe start and its negative h remain preserved.",
+      "core_role": "initial admission",
+      "evidence_id": "E04_STARTGUARD_TRIAL57",
+      "map_role": "OFFICIAL_SAFER_MAP",
+      "prohibited_claim": "Post-repair navigation is original benchmark superiority.",
+      "source_sha256": "a6143eecdb3f824426818fba325d3e996efbd267bd882074d44f19c80c16069d",
+      "status": "NEGATIVE_BOUNDARY"
+    },
+    {
+      "activity": "active",
+      "allowed_claim": "In this frozen flight100 setting, StartGuard identified 8 repair-needed starts and repaired all 8; post-repair navigation is reported separately.",
+      "core_role": "initial admission",
+      "evidence_id": "E05_STARTGUARD_FLIGHT100",
+      "map_role": "OFFICIAL_SAFER_MAP",
+      "prohibited_claim": "Original benchmark safety improvement or universal start repair.",
+      "source_sha256": "80e3746c0e493a2b47a7c66f14615867798df0a048237ceae165f24b69c0b7e3",
+      "status": "SUPPORTED_CONFIGURATION_SPECIFIC"
+    },
+    {
+      "activity": "active",
+      "allowed_claim": "All 8 active-set repairs were full-query verified; the post-repair 100-trial navigation had zero collisions and no QP infeasibility.",
+      "core_role": "initial admission",
+      "evidence_id": "E06_ACTIVE_PROJECTION",
+      "map_role": "OFFICIAL_SAFER_MAP",
+      "prohibited_claim": "A general CBF theorem or original-flight superiority.",
+      "source_sha256": "c294394acf61e7a29f2d1be8dcd6d5788c70f49558f8a61a8b81c72989d54162",
+      "status": "SUPPORTED_CONFIGURATION_SPECIFIC"
+    },
+    {
+      "activity": "static",
+      "allowed_claim": "Verified projection repaired and full-query verified all 120 constructed states under this synthetic protocol.",
+      "core_role": "initial admission",
+      "evidence_id": "E07_SYNTHETIC_START_STRESS",
+      "map_role": "OFFICIAL_SAFER_MAP",
+      "prohibited_claim": "Official benchmark-start performance.",
+      "source_sha256": "9efa6555c40753166deb81c7cd531a747aa0778e380da7685bfe5f76d3f426a5",
+      "status": "SUPPORTED_CONFIGURATION_SPECIFIC"
+    },
+    {
+      "activity": "formal",
+      "allowed_claim": "Risk-Aware V1 bestD reduced active constraints and mean runtime while preserving collision and progress in Stonehenge formal100.",
+      "core_role": "efficiency",
+      "evidence_id": "E08_RISK_AWARE_STONEHENGE",
+      "map_role": "OFFICIAL_SAFER_MAP",
+      "prohibited_claim": "A universal safety or progress improvement.",
+      "source_sha256": "d03ab0fd0dc8241e145e9979d0f70a7d659146120f55e1747583ea0fd2d1255c",
+      "status": "SUPPORTED_CONFIGURATION_SPECIFIC"
+    },
+    {
+      "activity": "formal",
+      "allowed_claim": "The report supports efficiency improvement on flight while preserving progress within its stated rule.",
+      "core_role": "efficiency",
+      "evidence_id": "E09_RISK_AWARE_FLIGHT",
+      "map_role": "OFFICIAL_SAFER_MAP",
+      "prohibited_claim": "Cross-scene robustness or safety improvement; both variants retain trial57 collision.",
+      "source_sha256": "5a654465a0c184df3c49cb68d670a3c3d2fcfac18b706ae880a6d53a48f9a800",
+      "status": "SUPPORTED_CONFIGURATION_SPECIFIC"
+    },
+    {
+      "activity": "diagnostic",
+      "allowed_claim": "Forced candidates dominated the final union, limiting observed candidate-count benefit in this implementation.",
+      "core_role": "actuator-feasible boundary",
+      "evidence_id": "E10_FORCED_DOMINANCE",
+      "map_role": "OFFICIAL_SAFER_MAP",
+      "prohibited_claim": "Adaptive V1 efficiency benefit or a safety conclusion.",
+      "source_sha256": "17e45a6c1178d6b70bdd523c5f8df998f49b9b1e364a1bf642b4d443f1885421",
+      "status": "NEGATIVE_BOUNDARY"
+    },
+    {
+      "activity": "active",
+      "allowed_claim": "DT verification detected 463/488/519 H1/H2/H3 sampled-data margin risks while collision count remained zero.",
+      "core_role": "segment-risk precursor",
+      "evidence_id": "E11_DT_DETECTION",
+      "map_role": "OFFICIAL_SAFER_MAP",
+      "prohibited_claim": "Margin risk is collision or DT universally prevents collision.",
+      "source_sha256": "4ff3da3725fed7161b4ef3fde9106650b452d2fdbcbd5c39ba07ae4e77b13aa4",
+      "status": "SUPPORTED_CONFIGURATION_SPECIFIC"
+    },
+    {
+      "activity": "active",
+      "allowed_claim": "Under the frozen Euler double-integrator, acceleration-only one-step correction did not change immediate position-margin violations.",
+      "core_role": "segment-risk precursor",
+      "evidence_id": "E12_V4B_NEGATIVE",
+      "map_role": "OFFICIAL_SAFER_MAP",
+      "prohibited_claim": "All corrective DT control is impossible.",
+      "source_sha256": "aa48a046e2fe6abd6d97ca20070fe1c66f0b43404ea0668c949c5e044f2e3440",
+      "status": "NEGATIVE_BOUNDARY"
+    },
+    {
+      "activity": "active",
+      "allowed_claim": "H3_N128 eliminated the 236 observed H-step margin violations in this dense-flight full100 configuration, with zero recovery failures.",
+      "core_role": "backup search",
+      "evidence_id": "E13_V4C_H3",
+      "map_role": "OFFICIAL_SAFER_MAP",
+      "prohibited_claim": "Collision superiority or a low-overhead default controller.",
+      "source_sha256": "628923279939b34a1f20c97c4426cbeb13b2b193d0b067c73c8c525c6e015303",
+      "status": "SUPPORTED_CONFIGURATION_SPECIFIC"
+    },
+    {
+      "activity": "active",
+      "allowed_claim": "The tuned H2_N64 configuration eliminated its 193 observed H-step violations with lower runtime than H3_N128 in dense flight.",
+      "core_role": "backup search",
+      "evidence_id": "E14_V4C_TUNED_H2",
+      "map_role": "OFFICIAL_SAFER_MAP",
+      "prohibited_claim": "Untuned or universal recovery superiority.",
+      "source_sha256": "23f09d83efe4536349146e8e65e30cf7257cdea74d34097bfc76a75a80e00e6c",
+      "status": "SUPPORTED_CONFIGURATION_SPECIFIC"
+    },
+    {
+      "activity": "active",
+      "allowed_claim": "HCE reduced activated median runtime on its held-out activated cohort without progress, safety, or feasibility regression; it preserved Stage-B failures.",
+      "core_role": "search acceleration",
+      "evidence_id": "E15_HCE_HELDOUT",
+      "map_role": "OFFICIAL_SAFER_MAP",
+      "prohibited_claim": "New recovery capability or universal runtime gain.",
+      "source_sha256": "7ff0791fe5c0b8bde890e9419af4234b7270e1a7b6512db1d00d8c4c80869b94",
+      "status": "SUPPORTED_CONFIGURATION_SPECIFIC"
+    },
+    {
+      "activity": "shadow",
+      "allowed_claim": "The current local recovery contract was exhausted for the 34 trial20 activations.",
+      "core_role": "structural boundary",
+      "evidence_id": "E16_TRIAL20_BOUNDARY",
+      "map_role": "OFFICIAL_SAFER_MAP",
+      "prohibited_claim": "Universal uncontrollability.",
+      "source_sha256": "3650dad990b8e8c0a927d084e28766ca5b4320585edf90d38bc7410d1c833119",
+      "status": "NEGATIVE_BOUNDARY"
+    },
+    {
+      "activity": "shadow",
+      "allowed_claim": "At step 772 the shadow H1/H2/H3 checks predicted the later GSplat overlap proxy event.",
+      "core_role": "segment-risk precursor",
+      "evidence_id": "E17_TUM_DT_FORENSICS",
+      "map_role": "LEARNED_SLAM_MAP",
+      "prohibited_claim": "Shadow audit avoided the event or proves mesh-collision safety.",
+      "source_sha256": "7e325a1ae7ca2e3b6a0d7b1d0609eaaa812b626fd00806041d5695d0853cf47b",
+      "status": "SUPPORTED_CONFIGURATION_SPECIFIC"
+    },
+    {
+      "activity": "active",
+      "allowed_claim": "A strict H3-triggered V4-C intervention avoided float32 GSplat overlap in the bounded development and held-out cases described by the report.",
+      "core_role": "backup search",
+      "evidence_id": "E18_TUM_V4C_INTERVENTION",
+      "map_role": "LEARNED_SLAM_MAP",
+      "prohibited_claim": "Goal-completion superiority, general safety, or official-mesh collision avoidance.",
+      "source_sha256": "2d6039b597ea6c36b9bc196e6700c19003ac5d654e79108fd9fea9599ad53304",
+      "status": "SUPPORTED_CONFIGURATION_SPECIFIC"
+    }
+  ]
+}

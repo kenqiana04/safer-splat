@@ -1,0 +1,176 @@
+{
+  "states": [
+    "INITIAL_DIAGNOSIS",
+    "START_SAFE_PROJECTION",
+    "ACTUATOR_BOUNDED_CBF_QP",
+    "SWEPT_SEGMENT_CERTIFICATION",
+    "TERMINAL_BACKUP_CERTIFICATION",
+    "CERTIFIED_EXECUTION",
+    "PREDICTIVE_RECOVERY",
+    "TERMINAL_BACKUP_EXECUTION",
+    "FAIL_CLOSED_UNRECOVERABLE",
+    "NOT_EVALUABLE",
+    "MISSION_COMPLETE"
+  ],
+  "terminal_states": [
+    "FAIL_CLOSED_UNRECOVERABLE",
+    "NOT_EVALUABLE",
+    "MISSION_COMPLETE"
+  ],
+  "transitions": [
+    {
+      "control_output": "state",
+      "failure_code": "NONE",
+      "from": "INITIAL_DIAGNOSIS",
+      "guard": "needs projection",
+      "map_query_required": true,
+      "plant_execution": false,
+      "reference_oracle_forbidden": true,
+      "required_evidence": "projection evidence",
+      "to": "START_SAFE_PROJECTION"
+    },
+    {
+      "control_output": "state",
+      "failure_code": "NONE",
+      "from": "INITIAL_DIAGNOSIS",
+      "guard": "admissible start",
+      "map_query_required": true,
+      "plant_execution": false,
+      "reference_oracle_forbidden": true,
+      "required_evidence": "map query",
+      "to": "ACTUATOR_BOUNDED_CBF_QP"
+    },
+    {
+      "control_output": "state",
+      "failure_code": "PROJECTION_FAILED",
+      "from": "START_SAFE_PROJECTION",
+      "guard": "projection passes",
+      "map_query_required": true,
+      "plant_execution": false,
+      "reference_oracle_forbidden": true,
+      "required_evidence": "projection certificate",
+      "to": "ACTUATOR_BOUNDED_CBF_QP"
+    },
+    {
+      "control_output": "candidate",
+      "failure_code": "CBF_QP_INFEASIBLE",
+      "from": "ACTUATOR_BOUNDED_CBF_QP",
+      "guard": "candidate exists",
+      "map_query_required": true,
+      "plant_execution": false,
+      "reference_oracle_forbidden": true,
+      "required_evidence": "U plus U_cbf",
+      "to": "SWEPT_SEGMENT_CERTIFICATION"
+    },
+    {
+      "control_output": "candidate",
+      "failure_code": "SEGMENT_CERTIFICATE_FAILED",
+      "from": "SWEPT_SEGMENT_CERTIFICATION",
+      "guard": "C_seg passes",
+      "map_query_required": true,
+      "plant_execution": false,
+      "reference_oracle_forbidden": true,
+      "required_evidence": "interval certificate",
+      "to": "TERMINAL_BACKUP_CERTIFICATION"
+    },
+    {
+      "control_output": "control",
+      "failure_code": "BACKUP_WITNESS_ABSENT",
+      "from": "TERMINAL_BACKUP_CERTIFICATION",
+      "guard": "witness exists",
+      "map_query_required": true,
+      "plant_execution": true,
+      "reference_oracle_forbidden": true,
+      "required_evidence": "backup certificate",
+      "to": "CERTIFIED_EXECUTION"
+    },
+    {
+      "control_output": "none",
+      "failure_code": "NONE",
+      "from": "CERTIFIED_EXECUTION",
+      "guard": "next period",
+      "map_query_required": true,
+      "plant_execution": false,
+      "reference_oracle_forbidden": true,
+      "required_evidence": "state observation",
+      "to": "INITIAL_DIAGNOSIS"
+    },
+    {
+      "control_output": "none",
+      "failure_code": "NONE",
+      "from": "CERTIFIED_EXECUTION",
+      "guard": "completion contract",
+      "map_query_required": true,
+      "plant_execution": false,
+      "reference_oracle_forbidden": true,
+      "required_evidence": "state observation",
+      "to": "MISSION_COMPLETE"
+    },
+    {
+      "control_output": "none",
+      "failure_code": "CBF_QP_INFEASIBLE",
+      "from": "ACTUATOR_BOUNDED_CBF_QP",
+      "guard": "nominal absent",
+      "map_query_required": true,
+      "plant_execution": false,
+      "reference_oracle_forbidden": true,
+      "required_evidence": "failure code",
+      "to": "PREDICTIVE_RECOVERY"
+    },
+    {
+      "control_output": "none",
+      "failure_code": "SEGMENT_CERTIFICATE_FAILED",
+      "from": "SWEPT_SEGMENT_CERTIFICATION",
+      "guard": "segment fails",
+      "map_query_required": true,
+      "plant_execution": false,
+      "reference_oracle_forbidden": true,
+      "required_evidence": "failure code",
+      "to": "PREDICTIVE_RECOVERY"
+    },
+    {
+      "control_output": "none",
+      "failure_code": "BACKUP_WITNESS_ABSENT",
+      "from": "TERMINAL_BACKUP_CERTIFICATION",
+      "guard": "witness absent",
+      "map_query_required": true,
+      "plant_execution": false,
+      "reference_oracle_forbidden": true,
+      "required_evidence": "failure code",
+      "to": "PREDICTIVE_RECOVERY"
+    },
+    {
+      "control_output": "terminal control",
+      "failure_code": "NONE",
+      "from": "PREDICTIVE_RECOVERY",
+      "guard": "terminal action exists",
+      "map_query_required": true,
+      "plant_execution": true,
+      "reference_oracle_forbidden": true,
+      "required_evidence": "terminal witness",
+      "to": "TERMINAL_BACKUP_EXECUTION"
+    },
+    {
+      "control_output": "none",
+      "failure_code": "NONE",
+      "from": "TERMINAL_BACKUP_EXECUTION",
+      "guard": "next period after certified terminal action",
+      "map_query_required": true,
+      "plant_execution": false,
+      "reference_oracle_forbidden": true,
+      "required_evidence": "new state",
+      "to": "INITIAL_DIAGNOSIS"
+    },
+    {
+      "control_output": "none",
+      "failure_code": "UNRECOVERABLE",
+      "from": "PREDICTIVE_RECOVERY",
+      "guard": "no certified action",
+      "map_query_required": true,
+      "plant_execution": false,
+      "reference_oracle_forbidden": true,
+      "required_evidence": "empty U_exec",
+      "to": "FAIL_CLOSED_UNRECOVERABLE"
+    }
+  ]
+}

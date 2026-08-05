@@ -1,0 +1,18 @@
+{
+  "required": [
+    "decision",
+    "selected_control",
+    "current_barrier",
+    "actuator_feasible",
+    "segment_certificate",
+    "backup_certificate",
+    "terminal_witness",
+    "horizon",
+    "failure_reason",
+    "module_timings",
+    "map_sha",
+    "method_sha",
+    "config_sha",
+    "no_reference_leak_count"
+  ]
+}

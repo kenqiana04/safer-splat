@@ -1,0 +1,9 @@
+state_class,meaning,online_policy
+MAP_UNSAFE,not X_map,never commit uncertified nominal
+MAP_SAFE_NOT_ACTUATOR_FEASIBLE,not X_feas,never commit uncertified nominal
+ACTUATOR_FEASIBLE_NOT_SEGMENT_CERTIFIED,not X_seg,never commit uncertified nominal
+SEGMENT_CERTIFIED_NOT_BACKUP_RECOVERABLE,not X_rec,never commit uncertified nominal
+BACKUP_RECOVERABLE,finite witness exists,never commit uncertified nominal
+TERMINAL_SAFE,in X_T under assumptions,never commit uncertified nominal
+UNRECOVERABLE_FAIL_CLOSED,no certified executable action,never commit uncertified nominal
+UNKNOWN_NOT_EVALUABLE,required evidence unavailable,never commit uncertified nominal

@@ -1,0 +1,15 @@
+from,to,guard,required_evidence,control_output,failure_code,plant_execution,map_query_required,reference_oracle_forbidden
+INITIAL_DIAGNOSIS,START_SAFE_PROJECTION,needs projection,projection evidence,state,NONE,False,True,True
+INITIAL_DIAGNOSIS,ACTUATOR_BOUNDED_CBF_QP,admissible start,map query,state,NONE,False,True,True
+START_SAFE_PROJECTION,ACTUATOR_BOUNDED_CBF_QP,projection passes,projection certificate,state,PROJECTION_FAILED,False,True,True
+ACTUATOR_BOUNDED_CBF_QP,SWEPT_SEGMENT_CERTIFICATION,candidate exists,U plus U_cbf,candidate,CBF_QP_INFEASIBLE,False,True,True
+SWEPT_SEGMENT_CERTIFICATION,TERMINAL_BACKUP_CERTIFICATION,C_seg passes,interval certificate,candidate,SEGMENT_CERTIFICATE_FAILED,False,True,True
+TERMINAL_BACKUP_CERTIFICATION,CERTIFIED_EXECUTION,witness exists,backup certificate,control,BACKUP_WITNESS_ABSENT,True,True,True
+CERTIFIED_EXECUTION,INITIAL_DIAGNOSIS,next period,state observation,none,NONE,False,True,True
+CERTIFIED_EXECUTION,MISSION_COMPLETE,completion contract,state observation,none,NONE,False,True,True
+ACTUATOR_BOUNDED_CBF_QP,PREDICTIVE_RECOVERY,nominal absent,failure code,none,CBF_QP_INFEASIBLE,False,True,True
+SWEPT_SEGMENT_CERTIFICATION,PREDICTIVE_RECOVERY,segment fails,failure code,none,SEGMENT_CERTIFICATE_FAILED,False,True,True
+TERMINAL_BACKUP_CERTIFICATION,PREDICTIVE_RECOVERY,witness absent,failure code,none,BACKUP_WITNESS_ABSENT,False,True,True
+PREDICTIVE_RECOVERY,TERMINAL_BACKUP_EXECUTION,terminal action exists,terminal witness,terminal control,NONE,True,True,True
+TERMINAL_BACKUP_EXECUTION,INITIAL_DIAGNOSIS,next period after certified terminal action,new state,none,NONE,False,True,True
+PREDICTIVE_RECOVERY,FAIL_CLOSED_UNRECOVERABLE,no certified action,empty U_exec,none,UNRECOVERABLE,False,True,True

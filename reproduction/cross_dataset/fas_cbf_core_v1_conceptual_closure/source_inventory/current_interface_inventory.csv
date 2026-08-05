@@ -1,0 +1,10 @@
+module,source_path,public_interface,input_output,core_v1_disposition,known_limitation,reference_access
+Gaussian barrier,splat/gsplat_utils.py,GSplatLoader.query_distance,barrier/gradient/Hessian,direct abstract reuse,proxy not metric distance,offline forbidden online
+Dynamics,dynamics/systems.py,double_integrator_dynamics,state derivative,abstract reuse,historical Euler flow,offline forbidden online
+Current CBF QP,cbf/cbf_utils.py,CBF.solve_QP,control and solver flag,interface rebuild,source fallback behavior split,offline forbidden online
+Start-Safe,historical reports and scripts,abstract contract,admission/projection,abstract only,source implementation not fully recovered,offline forbidden online
+Risk-Aware,run_v4b_corrective_dt_filter.py,make_cbf and generate_candidates,candidate/control,reclassify,prioritization not certificate,offline forbidden online
+DT verification,run_v4b_corrective_dt_filter.py,evaluate_candidates,predicted h,reclassify,one-step proxy,offline forbidden online
+Predictive Recovery,run_v4c_hstep_predictive_recovery.py,evaluate_sequences,sequence witness,interface rebuild,finite family/horizon,offline forbidden online
+HCE,v4c_hierarchical_candidate_evaluator.py,evaluate_hierarchical,staged search,reclassify,does not enlarge recoverable set,offline forbidden online
+Geometry adapter,gsplat_barrier_geometry_adapter.py,query_barrier_geometry,critical barrier,direct read-only reuse,critical barrier proxy,offline forbidden online

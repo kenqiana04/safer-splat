@@ -1,0 +1,7 @@
+id,statement,proof_status,assumptions,counterexample,prohibited_wording
+P1,single interval represented-map safety,UNPROVED,barrier lower bound/common Phi/margin/query regularity,V4-B,no continuous or real-world safety claim
+P2,actuator-bounded admissibility,DESIGN_CONTRACT,correct U and U_cbf construction,QP fallback,no claim beyond stated U
+P3,terminal-backup implication,UNPROVED,safe witness and verified X_T,Trial20,no global controllability claim
+P4,recursive executability,UNPROVED,invariant X_T/common model/re-certification,ETH3D limit,no recursive feasibility claim
+P5,fail-closed correctness,DESIGN_CONTRACT,typed failures/no implicit nominal,fallback ambiguity,no physical safety guarantee
+P6,constraint-reduction preservation,UNPROVED,reduced/full set relation,forced dominance,no equivalence claim

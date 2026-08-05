@@ -1,0 +1,8 @@
+decision,plant_execution,required_evidence
+CERTIFIED_NOMINAL_CONTROL,True,all certificate components
+CERTIFIED_ALTERNATIVE_CONTROL,True,all components for replacement
+CERTIFIED_BACKUP_CONTROL,True,backup witness and first action
+TERMINAL_SAFE_ACTION,True,terminal witness
+FAIL_CLOSED_UNRECOVERABLE,False,empty U_exec
+NOT_EVALUABLE_MAP_QUERY,False,unknown query
+INFRASTRUCTURE_FAILURE,False,engineering failure

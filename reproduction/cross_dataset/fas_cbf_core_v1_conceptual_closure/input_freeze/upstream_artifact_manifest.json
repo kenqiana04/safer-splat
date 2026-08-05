@@ -1,0 +1,51 @@
+{
+  "artifacts": [
+    {
+      "bytes": 2839,
+      "path": "report/REPORT_ASSEMBLE_FAS_CBF_MODULE_EVIDENCE_FROM_ETH3D_AND_EXISTING_FROZEN_CASES_V1.md",
+      "sha256": "f598e180bc52f1c838196a9c68690a0e220886fc66498441637ccd65493e9f9a"
+    },
+    {
+      "bytes": 24015,
+      "path": "evidence_ledger/evidence_provenance_ledger.json",
+      "sha256": "97364a1d54cdb9c2776de0fd387798464c28ca00fde7f117b58f4e698ef10fc2"
+    },
+    {
+      "bytes": 5420,
+      "path": "module_matrices/module_evidence_matrix.json",
+      "sha256": "1ac7f9fe718584341571e31613e91a9f538ae6071d995527e2b53bbec29751b1"
+    },
+    {
+      "bytes": 6555,
+      "path": "claim_audit/claim_evidence_matrix.json",
+      "sha256": "7934a04eb62034c8919d2efce1fcfa105686d0ed8fd73bb629e1a494bb6d489a"
+    },
+    {
+      "bytes": 17770,
+      "path": "config_compatibility/configuration_compatibility_matrix.csv",
+      "sha256": "87571d3d625482c55091900086e476e4fb51f5c7abae6bf8be330b56713057bd"
+    },
+    {
+      "bytes": 1273,
+      "path": "config_compatibility/cohort_overlap_audit.json",
+      "sha256": "fcd58e4480b648e1f52ff85c0f2baa9a51116adc29c1176cbf4155f16edbddbd"
+    },
+    {
+      "bytes": 4055,
+      "path": "module_matrices/positive_negative_structural_registry.csv",
+      "sha256": "e7b1f202e15b0aa403075c80b118fe5d72a1a4787c75b108862398eb7e0c09c1"
+    },
+    {
+      "bytes": 1769,
+      "path": "paper_architecture/paper_experiment_architecture.json",
+      "sha256": "76bd51411aedf05d6c297516779b5b73fba2be1617f6aa17d4c79471994c6bfa"
+    },
+    {
+      "bytes": 846,
+      "path": "minimal_remaining_experiment/minimal_remaining_experiment.json",
+      "sha256": "d34c70bfb1e541c720e7a9d8ce6ab9925611d2846223c4d2efbff2f6cbc2ae9a"
+    }
+  ],
+  "evidence_source_count": 18,
+  "unknown_policy": "retain UNKNOWN_NOT_RECOVERED"
+}

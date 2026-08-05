@@ -1,0 +1,15 @@
+{
+  "acceptance": "U_exec=U intersection U_cbf intersection U_seg intersection U_backup",
+  "conditions": [
+    "actuator admissible",
+    "current CBF feasible",
+    "C_seg passes",
+    "terminal backup witness"
+  ],
+  "limitations": [
+    "finite candidate witness is not global controllability",
+    "finite horizon is not recursive feasibility",
+    "discrete samples are not continuous proof without lower bound",
+    "X_T is currently a design contract"
+  ]
+}

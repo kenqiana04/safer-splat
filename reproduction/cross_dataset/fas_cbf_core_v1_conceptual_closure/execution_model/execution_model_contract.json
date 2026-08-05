@@ -1,0 +1,23 @@
+{
+  "abstract_transition": "x_(k+1)=F_Delta(x_k,u_k)",
+  "future_candidate_not_retroactive": "constant acceleration ZOH",
+  "historical_evidence_model": {
+    "equations": [
+      "p_(k+1)=p_k+Delta t v_k",
+      "v_(k+1)=v_k+Delta t u_k"
+    ],
+    "name": "forward_Euler_position_first",
+    "sources": [
+      "run.py",
+      "run_v4b_corrective_dt_filter.py",
+      "run_v4c_hstep_predictive_recovery.py"
+    ]
+  },
+  "interval_flow": "x(tau)=Phi(tau;x_k,u_k), tau in [0,Delta t]",
+  "unknowns": [
+    "actuation_delay",
+    "computation_delay",
+    "tracking_error",
+    "normative_model"
+  ]
+}

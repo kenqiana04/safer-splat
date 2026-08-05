@@ -1,0 +1,76 @@
+{
+  "matrix": [
+    {
+      "Core_V1": "retained and augmented",
+      "dimension": "represented Gaussian obstacle field",
+      "frozen_SAFER_baseline": "current filter",
+      "status": "IMPLEMENTED_CURRENTLY"
+    },
+    {
+      "Core_V1": "U_cbf component",
+      "dimension": "current-state CBF filtering",
+      "frozen_SAFER_baseline": "current QP",
+      "status": "IMPLEMENTED_CURRENTLY"
+    },
+    {
+      "Core_V1": "U component",
+      "dimension": "actuator bounded feasibility",
+      "frozen_SAFER_baseline": "not unified",
+      "status": "DESIGN_CONTRACT"
+    },
+    {
+      "Core_V1": "normative model required",
+      "dimension": "sampled execution",
+      "frozen_SAFER_baseline": "historical Euler",
+      "status": "DESIGN_CONTRACT"
+    },
+    {
+      "Core_V1": "required prior to commit",
+      "dimension": "swept segment",
+      "frozen_SAFER_baseline": "one/H-step proxies",
+      "status": "DESIGN_CONTRACT"
+    },
+    {
+      "Core_V1": "certificate contract",
+      "dimension": "terminal backup",
+      "frozen_SAFER_baseline": "recovery search",
+      "status": "DESIGN_CONTRACT"
+    },
+    {
+      "Core_V1": "explicit fail closed",
+      "dimension": "unrecoverable semantics",
+      "frozen_SAFER_baseline": "mixed fallback labels",
+      "status": "DESIGN_CONTRACT"
+    },
+    {
+      "Core_V1": "projection contract",
+      "dimension": "initial admission",
+      "frozen_SAFER_baseline": "Start-Safe",
+      "status": "EMPIRICALLY_SUPPORTED"
+    },
+    {
+      "Core_V1": "no deployment claim",
+      "dimension": "map uncertainty",
+      "frozen_SAFER_baseline": "fixed/proxy boundary",
+      "status": "UNPROVED"
+    },
+    {
+      "Core_V1": "forbidden online",
+      "dimension": "online reference",
+      "frozen_SAFER_baseline": "offline only",
+      "status": "DESIGN_CONTRACT"
+    },
+    {
+      "Core_V1": "P1-P6 unproved",
+      "dimension": "proof status",
+      "frozen_SAFER_baseline": "empirical observations",
+      "status": "UNPROVED"
+    }
+  ],
+  "prohibited": [
+    "SAFER ignores dynamics",
+    "SAFER is unsafe",
+    "Core V1 has global recursive feasibility",
+    "Core V1 is globally superior"
+  ]
+}
