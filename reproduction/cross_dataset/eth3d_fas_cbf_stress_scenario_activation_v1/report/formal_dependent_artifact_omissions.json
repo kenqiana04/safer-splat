@@ -1,0 +1,32 @@
+{
+  "actual_structural_figures": [
+    "candidate_pool_funnel.png",
+    "final_decision_v2.png",
+    "stage_reachability_funnel.png",
+    "v1_activation_stage_reachability.png",
+    "v1_h2_constraint_reduction_reconciliation.png",
+    "v1_terminal_semantics.png"
+  ],
+  "formal_dependent_figures_not_generated": [
+    "v2_scenario_spatial_distribution.png",
+    "v2_activation_by_group.png",
+    "start_safe_projectable_vs_unprojectable.png",
+    "feasibility_dominance_reduction.png",
+    "dt_trigger_types.png",
+    "recovery_trigger_recoverability.png",
+    "terminal_transition_g1.png",
+    "terminal_transition_g2.png",
+    "terminal_transition_g3.png",
+    "terminal_transition_g4.png",
+    "paired_progress.png",
+    "paired_qp_infeasible.png",
+    "paired_constraints.png",
+    "paired_runtime.png",
+    "paired_full_fas_vs_safer.png",
+    "module_evidence_matrix_v2.png",
+    "smoothness_diagnostics_v2.png",
+    "failure_case_summary_v2.png"
+  ],
+  "reason": "The pre-lock activation gate failed at the 200000-tuple ceiling, so no registry, smoke, formal run, paired statistic, or formal-dependent figure may be generated.",
+  "status": "FORMAL_DEPENDENT_ARTIFACTS_NOT_GENERATED_FAIL_CLOSED"
+}

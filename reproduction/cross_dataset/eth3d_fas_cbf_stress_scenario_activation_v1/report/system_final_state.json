@@ -1,0 +1,34 @@
+{
+  "boundaries": {
+    "formal_file_count": 0,
+    "map_mutation_count": 0,
+    "map_sha256": "927734a2339a3f2710640065b0893eaae162cc0144ac67e2f377bcff2e71ae34",
+    "registry_file_count": 0,
+    "smoke_file_count": 0,
+    "training_count": 0
+  },
+  "gpu_final": {
+    "compute_processes": [],
+    "identity_and_state": "1, NVIDIA GeForce RTX 4090, GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d, 6 MiB, 0 %",
+    "task_owned_compute_process_count": 0
+  },
+  "status": "PASS_FINAL_SYSTEM_BOUNDARY",
+  "watchdog_ssh_final": {
+    "codex_ssh_pid_preserved": 22460,
+    "firewall_change_count": 0,
+    "managed_reverse_ssh_pid": 908,
+    "managed_ssh_terminated": false,
+    "network_restart_count": 0,
+    "proxy_github_head_first_line": "HTTP/1.1 200 Connection established",
+    "proxy_github_head_returncode": 0,
+    "remote_17898_loopback_listener": [
+      "LISTEN    0         128              127.0.0.1:17898            0.0.0.0:*                                                                                       "
+    ],
+    "scheduled_task": "Codex-Persistent-Reverse-Proxy-Watchdog",
+    "scheduled_task_state": "RUNNING",
+    "sshd_restart_count": 0,
+    "watchdog_health_ssh_pid_preserved": 4948,
+    "watchdog_modified": false,
+    "watchdog_pid": 7200
+  }
+}

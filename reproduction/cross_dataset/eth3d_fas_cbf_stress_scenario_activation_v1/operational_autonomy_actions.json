@@ -1,0 +1,175 @@
+{
+  "actions": [
+    {
+      "action": "terminate_and_restart_task_owned_shadow_search_after_position_cache_fix",
+      "affected_pid": 2613683,
+      "candidate_result_discarded": false,
+      "controller_or_scientific_parameter_changed": false,
+      "formal_rollout_affected": false,
+      "reason": "The first engineering implementation repeated the identical Start-Safe projection for every velocity/goal tuple at one position and had produced no candidate artifact. A last-position cache preserves the exact seed, tuple order, predicates, thresholds, and search ceiling.",
+      "scope": "task-owned non-plant shadow process only",
+      "termination_signal": "SIGTERM"
+    },
+    {
+      "action": "restart_cached_task_owned_shadow_search_with_atomic_progress_telemetry",
+      "affected_pid": 2614341,
+      "candidate_result_discarded": false,
+      "controller_or_scientific_parameter_changed": false,
+      "formal_rollout_affected": false,
+      "reason": "The cached engineering process remained healthy but persisted no bounded progress state before final completion. Atomic telemetry every 250 tuples is required to distinguish a rare-stratum search from an implementation stall while preserving identical seed, candidate order, predicates, thresholds, and ceiling.",
+      "scope": "task-owned non-plant shadow process only",
+      "termination_signal": "SIGTERM"
+    },
+    {
+      "action": "expand_required_deterministic_velocity_layers_before_registry_lock",
+      "affected_pid": 2615636,
+      "candidate_result_discarded": false,
+      "controller_or_scientific_parameter_changed": false,
+      "formal_rollout_affected": false,
+      "reason": "The preregistered candidate contract explicitly requires frozen axial, diagonal, tangent, critical-Gaussian, and bounded magnitude layers. The initial implementation covered only four magnitudes and omitted several required frozen axes. The corrected generator evaluates 0.01-spaced magnitudes and all required deterministic directions while retaining the same seed, predicates, gates, methods, and 200000 ceiling.",
+      "scope": "pre-lock task-owned shadow candidate generator only",
+      "termination_signal": "SIGTERM"
+    },
+    {
+      "action": "deduplicate_goal_variants_after_all_non_g3_shadow_quotas_are_satisfied",
+      "affected_pid": 2616203,
+      "candidate_result_discarded": false,
+      "controller_or_scientific_parameter_changed": false,
+      "formal_rollout_affected": false,
+      "reason": "After telemetry proves every non-G3 quota has a large deterministic surplus, the endpoint and segment type is invariant to goal for a fixed position/velocity under the frozen forward-Euler verifier. The targeted continuation retains all three goal sources in a deterministic rotation but evaluates one per position/velocity tuple, preserving stage predicates and the 200000-state ceiling.",
+      "scope": "pre-lock task-owned shadow candidate generator only",
+      "termination_signal": "SIGTERM"
+    },
+    {
+      "action": "complete_preregistered_barrier_band_chord_geometry_before_registry_lock",
+      "affected_pid": 2616889,
+      "candidate_result_discarded": false,
+      "controller_or_scientific_parameter_changed": false,
+      "formal_rollout_affected": false,
+      "reason": "Telemetry from 9750 plant-free tuples showed only margin triggers. Radial points with tangent velocity move monotonically away from the local closest point and cannot cover the explicitly required endpoint-safe/segment-unsafe chord class. The deterministic source-D construction now adds fixed +/-2.5 and 5 mm tangent offsets around preregistered barrier levels plus finer radial levels; predicates and all gates remain frozen.",
+      "scope": "pre-lock task-owned shadow candidate geometry only",
+      "termination_signal": "SIGTERM"
+    },
+    {
+      "action": "bind_barrier_chord_velocities_to_source_node_tangent_frame",
+      "affected_pid": 2617636,
+      "candidate_result_discarded": false,
+      "controller_or_scientific_parameter_changed": false,
+      "formal_rollout_affected": false,
+      "reason": "The source-D positions were correct, but recomputing a local tangent at each offset made the tested velocity move away from that offset's own closest point. Adding the source-node tangent frame in both directions implements the frozen chord crossing required for endpoint-safe/segment-unsafe coverage without changing any predicate or controller.",
+      "scope": "pre-lock task-owned shadow candidate direction frame only",
+      "termination_signal": "SIGTERM"
+    },
+    {
+      "action": "prioritize_preregistered_stage_strata_in_deterministic_position_order",
+      "affected_pid": 2618393,
+      "candidate_result_discarded": false,
+      "controller_or_scientific_parameter_changed": false,
+      "formal_rollout_affected": false,
+      "reason": "The complete candidate set was spending early probes on repeated near-safe radial layers. A fixed source/target order now reaches one safe, near, shallow-unsafe, deep-unsafe, then the preregistered chord bands before remaining positions. This changes only deterministic enumeration order, not membership, predicates, gates, or result-based selection.",
+      "scope": "pre-lock task-owned shadow candidate ordering only",
+      "termination_signal": "SIGTERM"
+    },
+    {
+      "action": "add_g1_deep_unprojectable_boundary_layer_before_registry_lock",
+      "affected_pid": 2619133,
+      "candidate_result_discarded": false,
+      "controller_or_scientific_parameter_changed": false,
+      "formal_rollout_affected": false,
+      "reason": "The shallow h=-0.015 layer remained projectable on the first map region, so the required Start-Safe failure-boundary stratum had not been reached. A deterministic h=-0.05 generation layer remains reference-safe but exceeds the unchanged 5 cm projection contract and is prioritized before chord search.",
+      "scope": "pre-lock task-owned Start-Safe boundary candidate layer only",
+      "termination_signal": "SIGTERM"
+    },
+    {
+      "action": "widen_position_coverage_after_all_other_stage_quotas_are_satisfied",
+      "affected_pid": 2619709,
+      "candidate_result_discarded": false,
+      "controller_or_scientific_parameter_changed": false,
+      "formal_rollout_affected": false,
+      "reason": "The complete direction library had already produced large deterministic surpluses for every non-G3 quota and the endpoint-safe segment-unsafe stratum, but consumed about 200 tuples per position while endpoint-unsafe remained absent through 36500 tuples. After those coverage gates are met, the corrected enumeration retains the same 200000 ceiling and evaluates the frozen integrator's two most adverse critical-Gaussian velocity frames so the same bounded search covers the full deterministic position source set rather than only the earliest map region.",
+      "scope": "pre-lock task-owned shadow candidate enumeration only",
+      "termination_signal": "SIGTERM"
+    },
+    {
+      "action": "run_projected_entry_critical_direction_shadow_diagnostic",
+      "affected_pid": 2620893,
+      "candidate_result_discarded": false,
+      "controller_or_scientific_parameter_changed": false,
+      "formal_rollout_affected": false,
+      "reason": "A bounded 720-tuple, plant-free diagnostic tested whether using the projected Start-Safe entry frame rather than the original local frame exposed endpoint-unsafe/QP-feasible states. It exited naturally, found none, and was retained as negative implementation evidence.",
+      "scope": "task-owned shadow diagnostic only",
+      "termination_signal": "NONE_NATURAL_EXIT"
+    },
+    {
+      "action": "clean_up_two_timed_out_local_status_ssh_clients",
+      "affected_pids": [
+        6188,
+        18200
+      ],
+      "candidate_result_discarded": false,
+      "controller_or_scientific_parameter_changed": false,
+      "formal_rollout_affected": false,
+      "reason": "Two short-lived local read-only status SSH clients remained after their commands timed out. Only those exact local clients were stopped; the persistent watchdog, managed reverse tunnel, remote sshd, and all unrelated sessions were preserved.",
+      "scope": "local task-owned timed-out status clients only",
+      "termination_signal": "LOCAL_FORCE_STOP_AFTER_COMMAND_TIMEOUT"
+    },
+    {
+      "action": "prime_existing_position_cache_for_projected_entry_targeted_enumeration",
+      "affected_pid": 2622167,
+      "candidate_result_discarded": false,
+      "controller_or_scientific_parameter_changed": false,
+      "formal_rollout_affected": false,
+      "reason": "The wider-position implementation computed the exact Start-Safe projection and entry query to define the required post-projection critical-Gaussian velocity, then redundantly recomputed the identical frozen stage inside ShadowEvaluator. Priming the evaluator's existing last-position cache removes only duplicate read-only map queries. The unused list of every nonqualified record was also removed; qualified pool retention is unchanged.",
+      "scope": "pre-lock task-owned shadow cache and memory only",
+      "termination_signal": "SIGTERM"
+    },
+    {
+      "action": "correct_endpoint_unsafe_minimum_to_original_at_least_one_contract",
+      "affected_pid": 2623384,
+      "candidate_result_discarded": false,
+      "controller_or_scientific_parameter_changed": false,
+      "formal_rollout_affected": false,
+      "reason": "A source-text audit before any formal result showed that the task requires G3 to include endpoint-unsafe, endpoint-safe/segment-unsafe, and margin cases, while allowing at most four unavoidable immediate segments. The engineering generator had incorrectly required four endpoint-unsafe cases. Restoring the literal at-least-one composition requirement preserves the separate 16/20 G3 activation gate and <=4/20 unavoidable cap.",
+      "scope": "pre-lock task-owned candidate composition conformance only",
+      "termination_signal": "SIGTERM"
+    },
+    {
+      "action": "clean_up_two_remote_timed_out_status_command_trees_after_scientific_search",
+      "affected_pids": [
+        2621406,
+        2621402,
+        2626126,
+        2626125
+      ],
+      "candidate_result_discarded": false,
+      "controller_or_scientific_parameter_changed": false,
+      "formal_rollout_affected": false,
+      "reason": "Final process attribution found two old task-owned bash status commands and their blocked grep children left by local monitoring timeouts. After the 200000-tuple search exited naturally, only those four exact non-CUDA status PIDs were terminated. The first list-form cleanup wrapper was rejected by shell quoting before acting; the subsequent explicit-PID command succeeded and was verified by ps.",
+      "scope": "remote task-owned timed-out read-only status command trees only",
+      "termination_signal": "SIGTERM"
+    },
+    {
+      "action": "remove_local_task_owned_python_bytecode_cache_before_commit",
+      "affected_path": "reproduction/cross_dataset/eth3d_fas_cbf_stress_scenario_activation_v1/__pycache__",
+      "candidate_result_discarded": false,
+      "controller_or_scientific_parameter_changed": false,
+      "formal_rollout_affected": false,
+      "reason": "Local static and import checks produced Python bytecode under the new task directory. The resolved __pycache__ path was verified to be a direct child of the isolated task root and removed before staging; no source or evidence artifact was deleted.",
+      "scope": "local task-owned generated bytecode only",
+      "termination_signal": null
+    },
+    {
+      "action": "normalize_two_compact_v1_audit_csv_files_to_lf_before_commit",
+      "affected_paths": [
+        "v1_semantic_audit/v1_group_method_terminal_table.csv",
+        "v1_semantic_audit/v1_stage_reachability_confusion_matrix.csv"
+      ],
+      "candidate_result_discarded": false,
+      "controller_or_scientific_parameter_changed": false,
+      "formal_rollout_affected": false,
+      "reason": "The Python csv writer defaulted to CRLF for two compact V1 audit tables. Only their record terminators and the corresponding deterministic writer option were normalized to LF; columns, row order, values, frozen inputs, controller behavior, and the Case D conclusion are unchanged.",
+      "scope": "task-owned compact evidence byte formatting only",
+      "termination_signal": null
+    }
+  ]
+}

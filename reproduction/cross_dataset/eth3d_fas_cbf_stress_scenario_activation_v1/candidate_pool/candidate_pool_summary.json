@@ -1,0 +1,31 @@
+{
+  "candidate_position_count": 9197,
+  "candidate_state_count": 200000,
+  "candidate_state_limit": 200000,
+  "formal_rollout_result_read_count": 0,
+  "generation_sources": [
+    "A_PR80_100_AND_PR79_512",
+    "B_REFERENCE_SURFACE_OFFSETS",
+    "C_CRITICAL_GAUSSIAN_OFFSETS",
+    "D_BARRIER_EQUIVALUE_BANDS",
+    "E_REFERENCE_SAFE_MAP_UNSAFE",
+    "F_HIGH_CONSTRAINT_DENSITY"
+  ],
+  "map_mutation_count": 0,
+  "plant_execution_count": 0,
+  "qualified_pool_counts": {
+    "G0": 11238,
+    "G1_NEAR": 8988,
+    "G1_PROJECTABLE": 42049,
+    "G1_UNPROJECTABLE": 119759,
+    "G2": 28213,
+    "G3_ENDPOINT_ONLY": 2,
+    "G3_ENDPOINT_UNSAFE": 0,
+    "G3_MARGIN": 4394,
+    "G4_RECOVERABLE": 99,
+    "G4_UNRECOVERABLE": 24
+  },
+  "seed": 20260805,
+  "shadow_probe_count": 200000,
+  "status": "CANDIDATE_POOL_EXHAUSTED_WITH_STAGE_DEFICIT"
+}

@@ -1,0 +1,72 @@
+{
+  "denominators": {
+    "all": 500,
+    "per_group_method": 20,
+    "per_method": 100
+  },
+  "method_summary": {
+    "M0_SAFER_BASELINE": {
+      "active_constraints_mean_all_100_terminal_records": 2000.0,
+      "completion_count": 20,
+      "progress_mean_all_100_terminal_records_m": 0.023330949030364274,
+      "qp_infeasible_event_count": 80,
+      "runs": 100,
+      "terminal_counts": {
+        "QP_INFEASIBLE": 80,
+        "SUCCESS": 20
+      }
+    },
+    "M1_FAS_START_SAFE_ONLY": {
+      "active_constraints_mean_all_100_terminal_records": 1600.0,
+      "completion_count": 20,
+      "progress_mean_all_100_terminal_records_m": 0.022630105028984902,
+      "qp_infeasible_event_count": 60,
+      "runs": 100,
+      "terminal_counts": {
+        "QP_INFEASIBLE": 60,
+        "START_STATE_REJECTED": 20,
+        "SUCCESS": 20
+      }
+    },
+    "M2_FAS_START_SAFE_PLUS_FEASIBILITY_AWARE": {
+      "active_constraints_mean_all_100_terminal_records": 160.0405329015653,
+      "completion_count": 20,
+      "progress_mean_all_100_terminal_records_m": 0.022630179095769504,
+      "qp_infeasible_event_count": 60,
+      "runs": 100,
+      "terminal_counts": {
+        "QP_INFEASIBLE": 60,
+        "START_STATE_REJECTED": 20,
+        "SUCCESS": 20
+      }
+    },
+    "M3_FAS_PLUS_DISCRETE_TIME_VERIFICATION": {
+      "active_constraints_mean_all_100_terminal_records": 160.0405329015653,
+      "completion_count": 20,
+      "progress_mean_all_100_terminal_records_m": 0.022630179095769504,
+      "qp_infeasible_event_count": 60,
+      "runs": 100,
+      "terminal_counts": {
+        "QP_INFEASIBLE": 60,
+        "START_STATE_REJECTED": 20,
+        "SUCCESS": 20
+      }
+    },
+    "M4_FULL_FAS_CBF": {
+      "active_constraints_mean_all_100_terminal_records": 160.0405329015653,
+      "completion_count": 20,
+      "progress_mean_all_100_terminal_records_m": 0.022630179095769504,
+      "qp_infeasible_event_count": 60,
+      "runs": 100,
+      "terminal_counts": {
+        "QP_INFEASIBLE": 60,
+        "START_STATE_REJECTED": 20,
+        "SUCCESS": 20
+      }
+    }
+  },
+  "nested_timestep_values_are_summarized_within_run_before_scenario_level_aggregation": true,
+  "status": "PASS_V1_METRIC_AGGREGATION_RECONCILED",
+  "unit": "SCENARIO_METHOD_TERMINAL_RECORD",
+  "zero_or_early_terminal_values_included": true
+}
