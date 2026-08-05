@@ -1,0 +1,23 @@
+{
+  "defect": {
+    "code": "V1_BENCHMARK_SEMANTIC_DEFECT",
+    "finding": "H1 counted projection attempts rather than accepted actions. H2 compared designated G2 M2/M1 means after all G2 cases were rejected before QP, while the reported global 1600-to-160.041 reduction came from other groups. H3/H4 had zero checks because QP failed before those stages.",
+    "scope": "activation and aggregate reconciliation",
+    "v1_history_rewritten": false
+  },
+  "reconstructed": {
+    "H1_PROJECTION_ACCEPTED": 20,
+    "H1_START_SAFE": 14,
+    "H2_DESIGNATED_GROUP_REDUCTION": 0,
+    "H2_DESIGNATED_GROUP_STAGE_ENTRY": 0,
+    "H3_DESIGNATED_GROUP_CHECKS": 0,
+    "H4_DESIGNATED_GROUP_CHECKS": 0
+  },
+  "status": "PASS_V1_ACTIVATION_SEMANTICS_RECOVERED_WITH_DEFECT",
+  "v1_reported": {
+    "H1_START_SAFE": 14,
+    "H2_FEASIBILITY_AWARE": 0,
+    "H3_DISCRETE_TIME": 0,
+    "H4_PREDICTIVE_RECOVERY": 0
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "base_branch": "eth3d-single-map-fas-cbf-module-stress-benchmark-v1",
+  "base_head": "a05f8e1eca4c400a86583eb97fcce5be32062a0d",
+  "branch": "eth3d-fas-cbf-stress-scenario-activation-v1",
+  "dataset_count": 1,
+  "formal_map_count": 1,
+  "gpu": "1, NVIDIA GeForce RTX 4090, GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d, 525.147.05, 24564 MiB",
+  "host": "zlab-Super-Server",
+  "identities": {
+    "baseline_core_sha256": "9df7fa1945631cdb0b65b70568661c7eaaa75ff847bfe6f951241e56205d0bb2",
+    "canonical_tree_sha256": "06c1ff17d2ed5eb184b6a9699a3a32da431a1460840431a3effe76d5f03b9ee3",
+    "formal_runner_sha256": "951fb26edd56f5c985fc44bfa38656f8fdc8b684cf9a58461558b9453d65d314",
+    "map_ply_sha256": "927734a2339a3f2710640065b0893eaae162cc0144ac67e2f377bcff2e71ae34",
+    "method_code_sha256": "41fc7363fecbf2e65cc1e25233d5ea9f5fa6581fe3b1eb6a81505806d0376193",
+    "pr80_report_sha256": "44035feae65f89ccf8b146fe29c26f81dd9388098e7d0bd66716d632e8422767",
+    "prm_graph_sha256": "18e851740c9ce44fbce1e6c62c2dfc89849659ae9f4e4a803fc1bc7c2031d3dd",
+    "reference_mesh_sha256": "82a9b20c9f3c7dc933f86c45e0855adf649fcf08b7549baba760cf385d489370",
+    "v1_registry_logical_sha256": "9f9fce4d1875b57e7a55c3a9cbf5b5a0c3f8476d84b3deb53c920d9b6322bb1d",
+    "v1_registry_raw_sha256": "890b9e5c469f6313e2e6ad8dc6b2e4f3b89f7a8b32e6cc2997da6b369e22abd8"
+  },
+  "identity_checks": {
+    "canonical_tree_sha256": true,
+    "map_ply_sha256": true,
+    "pr80_report_sha256": true,
+    "reference_mesh_sha256": true,
+    "v1_registry_logical_sha256": true
+  },
+  "map_mutation_count": 0,
+  "map_training_count": 0,
+  "official_3dgs_commit": "54c035f7834b564019656c3e3fcc3646292f727d",
+  "pr80_preserved": true,
+  "protocol_sha256": "a0a02fd284c75c600095510899e2878f198d69ff088b66eccd3313275fdbde7e",
+  "recorded_utc": "2026-08-05T03:14:47.847608+00:00",
+  "scene_count": 1,
+  "status": "PASS_PR80_AND_FROZEN_MAP_INPUT_FREEZE",
+  "task": "REFINE_FAS_CBF_STRESS_SCENARIO_ACTIVATION_ON_FROZEN_ETH3D_MAP_V1",
+  "user": "zlab",
+  "v1_activation": {
+    "H1": 14,
+    "H2": 0,
+    "H3": 0,
+    "H4": 0
+  }
+}

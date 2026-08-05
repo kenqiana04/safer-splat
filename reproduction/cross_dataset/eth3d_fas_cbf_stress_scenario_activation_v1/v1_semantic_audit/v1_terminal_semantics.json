@@ -1,0 +1,78 @@
+{
+  "definitions": {
+    "aggregation_unit": "one scenario-method terminal record; method means include all 100 terminals",
+    "completion": "true iff status is SUCCESS in the V1 runner",
+    "progress_m": "initial Euclidean goal distance minus final Euclidean goal distance; early terminals retain zero or any pre-terminal displacement",
+    "success": "status == SUCCESS; identical to V1 completion",
+    "terminal_state": "one mutually exclusive final status per run"
+  },
+  "explanations": {
+    "m0_qp_infeasible_80": "One first-step QP_INFEASIBLE event in each G1-G4 scenario; 80 scenario-method terminal records.",
+    "m1_m4_60_qp_plus_20_rejected": "G2's 20 states terminate in Start-Safe before QP; G1, G3 and G4 contribute 60 first-step QP_INFEASIBLE terminals.",
+    "progress_population": "All 100 terminal records per method, including rejected and infeasible runs, are included.",
+    "twenty_completions": "Only the 20 G0 scenarios reached SUCCESS for every method."
+  },
+  "method_summary": {
+    "M0_SAFER_BASELINE": {
+      "active_constraints_mean_all_100_terminal_records": 2000.0,
+      "completion_count": 20,
+      "progress_mean_all_100_terminal_records_m": 0.023330949030364274,
+      "qp_infeasible_event_count": 80,
+      "runs": 100,
+      "terminal_counts": {
+        "QP_INFEASIBLE": 80,
+        "SUCCESS": 20
+      }
+    },
+    "M1_FAS_START_SAFE_ONLY": {
+      "active_constraints_mean_all_100_terminal_records": 1600.0,
+      "completion_count": 20,
+      "progress_mean_all_100_terminal_records_m": 0.022630105028984902,
+      "qp_infeasible_event_count": 60,
+      "runs": 100,
+      "terminal_counts": {
+        "QP_INFEASIBLE": 60,
+        "START_STATE_REJECTED": 20,
+        "SUCCESS": 20
+      }
+    },
+    "M2_FAS_START_SAFE_PLUS_FEASIBILITY_AWARE": {
+      "active_constraints_mean_all_100_terminal_records": 160.0405329015653,
+      "completion_count": 20,
+      "progress_mean_all_100_terminal_records_m": 0.022630179095769504,
+      "qp_infeasible_event_count": 60,
+      "runs": 100,
+      "terminal_counts": {
+        "QP_INFEASIBLE": 60,
+        "START_STATE_REJECTED": 20,
+        "SUCCESS": 20
+      }
+    },
+    "M3_FAS_PLUS_DISCRETE_TIME_VERIFICATION": {
+      "active_constraints_mean_all_100_terminal_records": 160.0405329015653,
+      "completion_count": 20,
+      "progress_mean_all_100_terminal_records_m": 0.022630179095769504,
+      "qp_infeasible_event_count": 60,
+      "runs": 100,
+      "terminal_counts": {
+        "QP_INFEASIBLE": 60,
+        "START_STATE_REJECTED": 20,
+        "SUCCESS": 20
+      }
+    },
+    "M4_FULL_FAS_CBF": {
+      "active_constraints_mean_all_100_terminal_records": 160.0405329015653,
+      "completion_count": 20,
+      "progress_mean_all_100_terminal_records_m": 0.022630179095769504,
+      "qp_infeasible_event_count": 60,
+      "runs": 100,
+      "terminal_counts": {
+        "QP_INFEASIBLE": 60,
+        "START_STATE_REJECTED": 20,
+        "SUCCESS": 20
+      }
+    }
+  },
+  "run_count": 500,
+  "status": "PASS_V1_TERMINAL_SEMANTICS_RECOVERED"
+}
