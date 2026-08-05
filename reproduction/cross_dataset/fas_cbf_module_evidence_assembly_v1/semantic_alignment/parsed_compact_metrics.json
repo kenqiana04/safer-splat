@@ -1,0 +1,205 @@
+{
+  "metric_count": 25,
+  "metrics": [
+    {
+      "activity": "formal",
+      "anchor_phrase": "all 13 hard gates true",
+      "evidence_id": "E01_ETH3D_PR80",
+      "metric": "minimum_controller_viability",
+      "sample_unit": "gate",
+      "value": 13
+    },
+    {
+      "activity": "formal",
+      "anchor_phrase": "500/500",
+      "evidence_id": "E01_ETH3D_PR80",
+      "metric": "terminal_records",
+      "sample_unit": "scenario-method terminal record",
+      "value": 500
+    },
+    {
+      "activity": "shadow",
+      "anchor_phrase": "Candidate tuples: 200000 / 200000",
+      "evidence_id": "E02_ETH3D_PR81",
+      "metric": "candidate_tuples",
+      "sample_unit": "plant-free candidate state tuple",
+      "value": 200000
+    },
+    {
+      "activity": "shadow",
+      "anchor_phrase": "\"G3_ENDPOINT_UNSAFE\": 0",
+      "evidence_id": "E02_ETH3D_PR81",
+      "metric": "g3_endpoint_unsafe_qp_feasible",
+      "sample_unit": "candidate state tuple",
+      "value": 0
+    },
+    {
+      "activity": "formal",
+      "anchor_phrase": "500 unique terminal records",
+      "evidence_id": "E03_REPLICA_PR65",
+      "metric": "terminal_records",
+      "sample_unit": "route-method terminal record",
+      "value": 500
+    },
+    {
+      "activity": "formal",
+      "anchor_phrase": "All 495 map-admissible trials succeeded",
+      "evidence_id": "E03_REPLICA_PR65",
+      "metric": "map_admissible_route_success",
+      "sample_unit": "route",
+      "value": 99
+    },
+    {
+      "activity": "active",
+      "anchor_phrase": "repair-needed count: 8",
+      "evidence_id": "E05_STARTGUARD_FLIGHT100",
+      "metric": "repair_needed",
+      "sample_unit": "trial",
+      "value": 8
+    },
+    {
+      "activity": "active",
+      "anchor_phrase": "repair_success_count: 8",
+      "evidence_id": "E05_STARTGUARD_FLIGHT100",
+      "metric": "repair_success",
+      "sample_unit": "trial",
+      "value": 8
+    },
+    {
+      "activity": "active",
+      "anchor_phrase": "|active_set_verified_projection|8|8|0",
+      "evidence_id": "E06_ACTIVE_PROJECTION",
+      "metric": "full_query_verified_projection",
+      "sample_unit": "repair-needed state",
+      "value": 8
+    },
+    {
+      "activity": "static",
+      "anchor_phrase": "| active_set_verified_projection | 120 | 120 | 1 | 120",
+      "evidence_id": "E07_SYNTHETIC_START_STRESS",
+      "metric": "verified_projection_success",
+      "sample_unit": "synthetic state",
+      "value": 120
+    },
+    {
+      "activity": "formal",
+      "anchor_phrase": "505.5866495",
+      "evidence_id": "E08_RISK_AWARE_STONEHENGE",
+      "metric": "baseline_active_constraints_mean",
+      "sample_unit": "trial",
+      "value": 505.5866495
+    },
+    {
+      "activity": "formal",
+      "anchor_phrase": "252.2219893",
+      "evidence_id": "E08_RISK_AWARE_STONEHENGE",
+      "metric": "bestd_active_constraints_mean",
+      "sample_unit": "trial",
+      "value": 252.2219893
+    },
+    {
+      "activity": "formal",
+      "anchor_phrase": "0.06307919365",
+      "evidence_id": "E08_RISK_AWARE_STONEHENGE",
+      "metric": "baseline_runtime_mean_s",
+      "sample_unit": "trial",
+      "value": 0.06307919365
+    },
+    {
+      "activity": "formal",
+      "anchor_phrase": "0.04044284326",
+      "evidence_id": "E08_RISK_AWARE_STONEHENGE",
+      "metric": "bestd_runtime_mean_s",
+      "sample_unit": "trial",
+      "value": 0.04044284326
+    },
+    {
+      "activity": "active",
+      "anchor_phrase": "| 1 | 100 | 14422 | 463",
+      "evidence_id": "E11_DT_DETECTION",
+      "metric": "h1_margin_violations",
+      "sample_unit": "controller step",
+      "value": 463
+    },
+    {
+      "activity": "active",
+      "anchor_phrase": "| 2 | 100 | 14422 | 488",
+      "evidence_id": "E11_DT_DETECTION",
+      "metric": "h2_margin_violations",
+      "sample_unit": "controller step",
+      "value": 488
+    },
+    {
+      "activity": "active",
+      "anchor_phrase": "| 3 | 100 | 14422 | 519",
+      "evidence_id": "E11_DT_DETECTION",
+      "metric": "h3_margin_violations",
+      "sample_unit": "controller step",
+      "value": 519
+    },
+    {
+      "activity": "active",
+      "anchor_phrase": "|v4b_repair_needed|1197|15|15|0|0",
+      "evidence_id": "E12_V4B_NEGATIVE",
+      "metric": "one_step_correction_success",
+      "sample_unit": "margin-violating step",
+      "value": 0
+    },
+    {
+      "activity": "active",
+      "anchor_phrase": "predictive_recovery_success_count | 236",
+      "evidence_id": "E13_V4C_H3",
+      "metric": "recovery_success",
+      "sample_unit": "recovery activation",
+      "value": 236
+    },
+    {
+      "activity": "active",
+      "anchor_phrase": "| 100 | 0 | 100 | 0 | 193 | 0 | 193 | 193 | 193 | 0",
+      "evidence_id": "E14_V4C_TUNED_H2",
+      "metric": "recovery_success",
+      "sample_unit": "recovery activation",
+      "value": 193
+    },
+    {
+      "activity": "active",
+      "anchor_phrase": "167 of 201",
+      "evidence_id": "E15_HCE_HELDOUT",
+      "metric": "heldout_activations",
+      "sample_unit": "activation context",
+      "value": 201
+    },
+    {
+      "activity": "active",
+      "anchor_phrase": "1.6425828915089369",
+      "evidence_id": "E15_HCE_HELDOUT",
+      "metric": "activated_runtime_median_s",
+      "sample_unit": "held-out activated trial",
+      "value": 1.6425828915089369
+    },
+    {
+      "activity": "shadow",
+      "anchor_phrase": "34 recovery failures",
+      "evidence_id": "E16_TRIAL20_BOUNDARY",
+      "metric": "recovery_failures",
+      "sample_unit": "recovery activation",
+      "value": 34
+    },
+    {
+      "activity": "shadow",
+      "anchor_phrase": "step 772",
+      "evidence_id": "E17_TUM_DT_FORENSICS",
+      "metric": "event_precursor_step",
+      "sample_unit": "time step",
+      "value": 772
+    },
+    {
+      "activity": "active",
+      "anchor_phrase": "these three held-out pairs",
+      "evidence_id": "E18_TUM_V4C_INTERVENTION",
+      "metric": "heldout_case_pairs",
+      "sample_unit": "paired case",
+      "value": 3
+    }
+  ]
+}

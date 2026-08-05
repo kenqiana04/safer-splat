@@ -1,0 +1,32 @@
+{
+  "roles": [
+    {
+      "datasets": "Stonehenge; dense-flight; synthetic perturbation",
+      "evidence_count": 13,
+      "map_role": "OFFICIAL_SAFER_MAP",
+      "paper_role": "In-domain module validation carrier; results remain configuration-specific.",
+      "superiority_eligible": "NO"
+    },
+    {
+      "datasets": "Replica",
+      "evidence_count": 1,
+      "map_role": "GT_DERIVED_GAUSSIAN",
+      "paper_role": "Clean Replica controller benchmark; deterministic GT-derived safety map, not learned.",
+      "superiority_eligible": "NO"
+    },
+    {
+      "datasets": "ETH3D",
+      "evidence_count": 2,
+      "map_role": "LEARNED_3DGS",
+      "paper_role": "External learned-map viability and structural activation-limit carrier; not deployment-certified.",
+      "superiority_eligible": "NO"
+    },
+    {
+      "datasets": "TUM",
+      "evidence_count": 2,
+      "map_role": "LEARNED_SLAM_MAP",
+      "paper_role": "External TUM case-study carrier using GSplat-overlap proxy; not official mesh collision evidence.",
+      "superiority_eligible": "NO"
+    }
+  ]
+}

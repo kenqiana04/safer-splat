@@ -1,0 +1,112 @@
+{
+  "claims": [
+    {
+      "claim": "Start-Safe can identify and repair local unsafe/near-unsafe initial states.",
+      "claim_id": "C1",
+      "limits": "Natural, synthetic, and GT-derived contexts have different denominators.",
+      "paper_safe_wording": "In the reported frozen contexts, verified Start-Safe repair identified and repaired local unsafe/near-unsafe starts.",
+      "prohibited_stronger_wording": "Start-Safe universally repairs all unsafe starts.",
+      "status": "CONFIGURATION_SPECIFIC",
+      "supporting_evidence_ids": "E05,E06,E07,E03"
+    },
+    {
+      "claim": "Start-Safe reduces failures caused by initial conditions relative to no repair.",
+      "claim_id": "C2",
+      "limits": "Original and post-repair navigation are deliberately separate outcomes.",
+      "paper_safe_wording": "Post-repair flight100 is collision-free in the reported repair-needed cases while original trial57 remains preserved.",
+      "prohibited_stronger_wording": "Start-Safe proves original-benchmark superiority.",
+      "status": "CONFIGURATION_SPECIFIC",
+      "supporting_evidence_ids": "E04,E05"
+    },
+    {
+      "claim": "Feasibility/Risk-Aware constraint handling lowers active constraints and some runtime.",
+      "claim_id": "C3",
+      "limits": "Risk-Aware V1 and Feasibility-Aware labels are not interchangeable; ETH3D designated H2 did not enter QP.",
+      "paper_safe_wording": "Risk-Aware V1 bestD provides configuration-specific formal efficiency evidence in Stonehenge and flight.",
+      "prohibited_stronger_wording": "All FAS feasibility modules are universally faster or safer.",
+      "status": "CONFIGURATION_SPECIFIC",
+      "supporting_evidence_ids": "E08,E09,E10,E01,E02"
+    },
+    {
+      "claim": "DT Verification detects sampled/horizon margin risk not explicit in pointwise CBF reporting.",
+      "claim_id": "C4",
+      "limits": "Margin-risk detection is distinct from collision and from closed-loop avoidance.",
+      "paper_safe_wording": "The frozen DT audits detect sampled/horizon margin-risk precursors under their stated dynamics and margins.",
+      "prohibited_stronger_wording": "DT detection proves universal collision reduction.",
+      "status": "CONFIGURATION_SPECIFIC",
+      "supporting_evidence_ids": "E11,E17,E02"
+    },
+    {
+      "claim": "DT Verification universally reduces real collision.",
+      "claim_id": "C5",
+      "limits": "No same-map, activated, paired collision-outcome evidence supports this generalization.",
+      "paper_safe_wording": "No global collision-reduction claim is made for DT Verification.",
+      "prohibited_stronger_wording": "DT Verification has proven universal collision avoidance.",
+      "status": "PROHIBITED",
+      "supporting_evidence_ids": ""
+    },
+    {
+      "claim": "Predictive Recovery eliminates observed H-step margin violations under frozen configurations.",
+      "claim_id": "C6",
+      "limits": "Dense-flight H3/H2 and bounded TUM intervention use different contracts; TUM uses an overlap proxy.",
+      "paper_safe_wording": "In the stated dense-flight and bounded TUM configurations, predictive recovery removed the reported executed risk events.",
+      "prohibited_stronger_wording": "Predictive Recovery universally resolves all future safety risks.",
+      "status": "CONFIGURATION_SPECIFIC",
+      "supporting_evidence_ids": "E13,E14,E18"
+    },
+    {
+      "claim": "Predictive Recovery universally improves completion or safety relative to SAFER.",
+      "claim_id": "C7",
+      "limits": "No common fully activated registry establishes a general paired superiority effect.",
+      "paper_safe_wording": "No general completion or safety-superiority claim is made.",
+      "prohibited_stronger_wording": "Predictive Recovery is universally superior to SAFER.",
+      "status": "PROHIBITED",
+      "supporting_evidence_ids": ""
+    },
+    {
+      "claim": "HCE reduces activated recovery runtime while preserving existing recovery outcomes.",
+      "claim_id": "C8",
+      "limits": "Held-out activated cohort only; Stage-B failures are retained.",
+      "paper_safe_wording": "HCE reduced activated median runtime from about 8.000 s to 1.643 s in its frozen held-out activated cohort without converting Stage-B failures.",
+      "prohibited_stronger_wording": "HCE adds recovery capability or reduces runtime universally.",
+      "status": "CONFIGURATION_SPECIFIC",
+      "supporting_evidence_ids": "E15,E16"
+    },
+    {
+      "claim": "Full FAS-CBF is superior to SAFER on all maps.",
+      "claim_id": "C9",
+      "limits": "Replica saturates and ETH3D lacks an activated H3 paired cohort.",
+      "paper_safe_wording": "Full-stack superiority is not established.",
+      "prohibited_stronger_wording": "Full FAS-CBF is globally superior to SAFER.",
+      "status": "PROHIBITED",
+      "supporting_evidence_ids": ""
+    },
+    {
+      "claim": "Full FAS-CBF is a planner-agnostic safety assurance layer.",
+      "claim_id": "C10",
+      "limits": "Architecture-level framing is broader than the configuration-specific empirical evidence.",
+      "paper_safe_wording": "FAS-CBF can be framed as a modular safety-assurance architecture with module-specific empirical support.",
+      "prohibited_stronger_wording": "It is empirically proven planner-agnostic across planners, maps, and dynamics.",
+      "status": "PARTIALLY_SUPPORTED",
+      "supporting_evidence_ids": "E01,E03,E05,E11,E13,E17"
+    },
+    {
+      "claim": "ETH3D establishes learned-map controller viability and external portability.",
+      "claim_id": "C11",
+      "limits": "One learned external 3DGS map; full-stack stress activation is structurally limited.",
+      "paper_safe_wording": "ETH3D provides a learned-3DGS external viability and portability carrier with an explicit activation limit.",
+      "prohibited_stronger_wording": "ETH3D proves learned-map deployment safety.",
+      "status": "PARTIALLY_SUPPORTED",
+      "supporting_evidence_ids": "E01,E02"
+    },
+    {
+      "claim": "ETH3D establishes learned-map deployment safety.",
+      "claim_id": "C12",
+      "limits": "Minimum controller viability is not deployment certification and no activated full-stack paired outcome exists.",
+      "paper_safe_wording": "No learned-map deployment-safety claim is made.",
+      "prohibited_stronger_wording": "The ETH3D map is deployment-certified.",
+      "status": "PROHIBITED",
+      "supporting_evidence_ids": ""
+    }
+  ]
+}

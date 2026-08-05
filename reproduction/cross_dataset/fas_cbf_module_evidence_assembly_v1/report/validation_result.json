@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "claims_consistent": true,
+    "compact_artifact_boundary": true,
+    "development_heldout_separated": true,
+    "gpu_watchdog": true,
+    "gt_learned_separated": true,
+    "ledger_sources": 18,
+    "margin_collision_separated": true,
+    "no_new_execution": true,
+    "original_postrepair_separated": true,
+    "pr81_identity": true,
+    "python_compile": true,
+    "shadow_active_separated": true,
+    "source_sha_frozen": true
+  },
+  "errors": [],
+  "status": "PASS_FAS_CBF_MODULE_EVIDENCE_ASSEMBLY_VALIDATION"
+}

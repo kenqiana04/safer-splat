@@ -1,0 +1,45 @@
+{
+  "base_pr81_head": "e9bf932143542232400b451e3fa6caa888ae3a85",
+  "evidence_source_count": 18,
+  "execution_counters": {
+    "dataset_switch_count": 0,
+    "map_mutation_count": 0,
+    "method_mutation_count": 0,
+    "new_candidate_search_count": 0,
+    "new_controller_rollout_count": 0,
+    "new_map_training_count": 0,
+    "new_parameter_tuning_count": 0,
+    "operational_autonomy_action_count": 0,
+    "small_deterministic_statistic_recomputation_count": 1
+  },
+  "figures": [
+    "research_scope_and_claim_boundary.png",
+    "dataset_and_map_role_matrix.png",
+    "evidence_provenance_flow.png",
+    "module_evidence_strength_matrix.png",
+    "start_safe_evidence_summary.png",
+    "constraint_efficiency_evidence_summary.png",
+    "dt_evidence_taxonomy.png",
+    "recovery_evidence_summary.png",
+    "negative_and_structural_results.png",
+    "replica_vs_eth3d_roles.png",
+    "active_vs_shadow_vs_static_evidence.png",
+    "claim_to_evidence_matrix.png",
+    "configuration_compatibility.png",
+    "cohort_overlap_and_independence.png",
+    "full_stack_superiority_gap.png",
+    "paper_experiment_architecture.png",
+    "minimal_remaining_experiment_decision.png",
+    "final_decision.png"
+  ],
+  "final": {
+    "FINAL_DECISION": "FRAME_PAPER_AS_MODULAR_SAFETY_ASSURANCE_NOT_GLOBAL_SUPERIORITY",
+    "FINAL_STATUS": "PASS_MODULE_WISE_EVIDENCE_WITHOUT_FULL_STACK_SUPERIORITY",
+    "ONLY_NEXT_TASK": "INTEGRATE_FAS_CBF_FULL_FRAMEWORK_WITH_MODULE_SPECIFIC_CLAIMS_V1",
+    "case": "B",
+    "minimal_remaining_experiment": "No new experiment is required for the module-wise paper framing. A future global-superiority claim would require separately authorized one-map, outcome-blind, fully activated paired evidence; this task neither authorizes nor schedules it.",
+    "new_experiment_authorized": false,
+    "reason": "Start-Safe has active support, constraint/efficiency has formal support, DT has detection/precursor evidence, and recovery has active configuration-specific support, but no same-map activated full-stack paired superiority evidence exists."
+  },
+  "task": "ASSEMBLE_FAS_CBF_MODULE_EVIDENCE_FROM_ETH3D_AND_EXISTING_FROZEN_CASES_V1"
+}

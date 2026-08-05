@@ -1,0 +1,40 @@
+{
+  "known_overlap_or_nesting": [
+    {
+      "relation": "trial57 is retained within flight100 original history",
+      "sources": [
+        "E04_STARTGUARD_TRIAL57",
+        "E05_STARTGUARD_FLIGHT100"
+      ],
+      "treatment": "report separately"
+    },
+    {
+      "relation": "dense-flight families with different horizons and selected subcohorts",
+      "sources": [
+        "E11_DT_DETECTION",
+        "E13_V4C_H3",
+        "E14_V4C_TUNED_H2",
+        "E15_HCE_HELDOUT",
+        "E16_TRIAL20_BOUNDARY"
+      ],
+      "treatment": "configuration-specific, no pooled effect size"
+    },
+    {
+      "relation": "shared TUM boundary context but distinct shadow and intervention protocols",
+      "sources": [
+        "E17_TUM_DT_FORENSICS",
+        "E18_TUM_V4C_INTERVENTION"
+      ],
+      "treatment": "mechanism sequence only"
+    }
+  ],
+  "pooling_permitted": false,
+  "rules": [
+    "Do not pool controller steps as trials.",
+    "Do not pool original and post-repair flights.",
+    "Do not pool dense-flight H1/H2/H3 nested counts.",
+    "Do not pool HCE activated cohort with full100 recovery outcomes.",
+    "Do not pool Replica GT-derived and ETH3D learned-map outcomes."
+  ],
+  "status": "PASS_COHORT_OVERLAP_AUDIT"
+}
