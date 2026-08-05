@@ -1,0 +1,9 @@
+{
+  "analytic_expected_status": "FAIL_CLOSED_BACKUP_WITNESS_NOT_FOUND_IN_FROZEN_LIBRARY",
+  "case_id": "SYN-10",
+  "description": "map snapshot changes during witness",
+  "deterministic": true,
+  "exact_reason_code": "MAP_SNAPSHOT_MISMATCH",
+  "reference_online_input": false,
+  "seed": 20260805
+}

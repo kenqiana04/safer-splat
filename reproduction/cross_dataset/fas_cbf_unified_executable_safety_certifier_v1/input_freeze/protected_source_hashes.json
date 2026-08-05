@@ -1,0 +1,60 @@
+{
+  "files": {
+    "cbf/cbf_utils.py": {
+      "git_blob": "7c6e1300b125cc0a2a950ac2835a1fbe3d0de113",
+      "path": "cbf/cbf_utils.py",
+      "sha256": "492403919f64fba4a46908a8a663900c1ed5808a1865dc5a74c9cfe32d2c7010",
+      "size": 7758
+    },
+    "dynamics/systems.py": {
+      "git_blob": "e58ed65e60b17840201e571d7f23ce3816b83863",
+      "path": "dynamics/systems.py",
+      "sha256": "57dc54083ee9076fdda2c3dae6e71ec45e97725e87833581a70625a63940f592",
+      "size": 2160
+    },
+    "run.py": {
+      "git_blob": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+      "path": "run.py",
+      "sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+      "size": 8127
+    },
+    "splat/distances.py": {
+      "git_blob": "d7f17b67df40e36e458c7a5ed77c4a04659c6f35",
+      "path": "splat/distances.py",
+      "sha256": "57a49cb6893a65789282e92f37a82f134d2a34ab7e296d33fc5f4cd6fab45f08",
+      "size": 4109
+    },
+    "splat/gsplat_utils.py": {
+      "git_blob": "782c38eca50e78c605085b481155ed61e4607336",
+      "path": "splat/gsplat_utils.py",
+      "sha256": "fccc3125431122c58bd7901048d0e66e6b6c7fdeafc066f014d9d7df3c1ff9bf",
+      "size": 9039
+    },
+    "work/risk_aware_cbf/scripts/gsplat_barrier_geometry_adapter.py": {
+      "git_blob": "0fa566bf544d5dfd3d435c4a3dad3aac30b07f32",
+      "path": "work/risk_aware_cbf/scripts/gsplat_barrier_geometry_adapter.py",
+      "sha256": "07506b256d9cd9bf5b830d2b0bfe1c3984051762cac49dd58468b129ef9d4d5b",
+      "size": 1299
+    },
+    "work/risk_aware_cbf/scripts/run_v4b_corrective_dt_filter.py": {
+      "git_blob": "1bcce74cf9eb1c0a486d2bb7c0794e88fc06663f",
+      "path": "work/risk_aware_cbf/scripts/run_v4b_corrective_dt_filter.py",
+      "sha256": "573c0587e238eb160928a8b5349239fc852af91791877d87f6abe55e0062f862",
+      "size": 39034
+    },
+    "work/risk_aware_cbf/scripts/run_v4c_hstep_predictive_recovery.py": {
+      "git_blob": "5b28585b9b98d991d9f4fa9e0158812d2a3be80a",
+      "path": "work/risk_aware_cbf/scripts/run_v4c_hstep_predictive_recovery.py",
+      "sha256": "d710f36d73f953e16588286445e30596887b7559faceccdd81c49e0223d930fe",
+      "size": 39656
+    },
+    "work/risk_aware_cbf/scripts/v4c_hierarchical_candidate_evaluator.py": {
+      "git_blob": "9d9e858f64b4fe538b4a861c86e2657b1a0c1ac1",
+      "path": "work/risk_aware_cbf/scripts/v4c_hierarchical_candidate_evaluator.py",
+      "sha256": "6dab92e1714bfc0ba208adfce69c43932111969e7b7922dedd6cf9080516235c",
+      "size": 9811
+    }
+  },
+  "protected_source_count": 9,
+  "upstream_head": "17805e67b75412dc21b1a5fff4143ea3bc985f7f"
+}

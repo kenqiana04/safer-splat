@@ -1,0 +1,15 @@
+{
+  "S1": {"status": "PROVED_UNDER_EXPLICIT_ASSUMPTIONS", "implementation": "TESTED_IMPLEMENTATION_CONSISTENCY", "scope": "one represented-map sample interval"},
+  "B1": {"status": "PROVED_UNDER_EXPLICIT_ASSUMPTIONS", "implementation": "TESTED_IMPLEMENTATION_CONSISTENCY", "scope": "finite certified braking witness"},
+  "R1": {"status": "PROVED_UNDER_EXPLICIT_ASSUMPTIONS", "implementation": "TESTED_IMPLEMENTATION_CONSISTENCY", "scope": "exact-model witness tail"},
+  "F1": {"status": "PROVED_UNDER_EXPLICIT_ASSUMPTIONS", "implementation": "TESTED_IMPLEMENTATION_CONSISTENCY", "scope": "no uncertified commit"},
+  "unresolved": {
+    "reference_geometry_truth": "UNPROVED",
+    "delay_disturbance_tracking_robustness": "UNPROVED",
+    "candidate_library_completeness": "UNPROVED",
+    "global_recursive_feasibility": "UNPROVED",
+    "maximal_terminal_set": "UNPROVED",
+    "deployment_safety": "UNPROVED",
+    "full_stack_superiority_to_safer": "NOT_APPLICABLE"
+  }
+}

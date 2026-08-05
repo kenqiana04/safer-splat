@@ -1,0 +1,12 @@
+{
+  "bounds_are_componentwise_hard": true,
+  "boundary_is_inclusive": true,
+  "hidden_clipping_allowed": false,
+  "clipped_candidate_requires_new_identity": true,
+  "deferred": ["delta_u", "slew", "jerk"],
+  "u_min": [-0.1, -0.1, -0.1],
+  "u_max": [0.1, 0.1, 0.1],
+  "v_min": [-0.1, -0.1, -0.1],
+  "v_max": [0.1, 0.1, 0.1],
+  "dt": 0.05
+}

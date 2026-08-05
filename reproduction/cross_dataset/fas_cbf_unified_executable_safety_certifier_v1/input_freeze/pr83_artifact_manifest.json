@@ -1,0 +1,66 @@
+{
+  "artifact_count": 10,
+  "artifacts": {
+    "component_interfaces": {
+      "git_blob": "747a9117f146dafb2d205e57b992b57ff33b3fd6",
+      "path": "reproduction/cross_dataset/fas_cbf_core_v1_conceptual_closure/implementation_contract/core_v1_interfaces.json",
+      "sha256": "9fbff2df20f7812c68a754d188ee28bdd623fc208908610db798ec7aea2cab9e",
+      "size": 4951
+    },
+    "evidence_traceability": {
+      "git_blob": "bd3215422e610ca9150f5bd9c0f33a6117d9e8ce",
+      "path": "reproduction/cross_dataset/fas_cbf_core_v1_conceptual_closure/evidence_traceability/core_v1_claim_evidence_matrix.csv",
+      "sha256": "2ee4e7ae147ebe0c75e61e6789f3a298b47b168c27ab672fc297d63ab14cb741",
+      "size": 6055
+    },
+    "execution_model": {
+      "git_blob": "63b42f594034e6f7dbc473fb7eaf923e4590bed2",
+      "path": "reproduction/cross_dataset/fas_cbf_core_v1_conceptual_closure/execution_model/execution_model_contract.json",
+      "sha256": "30715173182e5f460d04f559f9bb43604e08243d4eb4bac118c4625e24205693",
+      "size": 600
+    },
+    "module_inventory": {
+      "git_blob": "1f3119ea93615fc3bc7e4c66dc9af731c19edc0d",
+      "path": "reproduction/cross_dataset/fas_cbf_core_v1_conceptual_closure/source_inventory/current_code_module_inventory.json",
+      "sha256": "ed2feedde3a7d3e373c1ae743b38efc000555cf6c4a34f3d01d5debea7f6b87c",
+      "size": 3194
+    },
+    "proof_obligations": {
+      "git_blob": "3a95b35efdd481a5ed6997b50979a147db131320",
+      "path": "reproduction/cross_dataset/fas_cbf_core_v1_conceptual_closure/theory_obligations/proof_obligation_registry.csv",
+      "sha256": "35cfd3086e1a2dca91230810109073af4573b90dea4123a80d778c602c89c244",
+      "size": 813
+    },
+    "protected_hash_registry": {
+      "git_blob": "7e54718bc05cdad599bc468c75f70337c5316646",
+      "path": "reproduction/cross_dataset/fas_cbf_core_v1_conceptual_closure/source_inventory/protected_core_hashes.json",
+      "sha256": "a5b09b80e79fda0dbf9caf249bca63d6286400a368186a266e4a94a00012aab3",
+      "size": 1837
+    },
+    "report": {
+      "git_blob": "37bf08db4408e14efb90449c3ff8feaf4ec60ebc",
+      "path": "reproduction/cross_dataset/fas_cbf_core_v1_conceptual_closure/report/REPORT_INTEGRATE_FAS_CBF_FULL_FRAMEWORK_WITH_MODULE_SPECIFIC_CLAIMS_V1.md",
+      "sha256": "d4df5842f66edcbd3e77559d5082801622649336d88631870c9c30b2f8a260cd",
+      "size": 1277
+    },
+    "safety_sets": {
+      "git_blob": "de603189b5aea0eb77ef9cb7f85d406c2fa7775a",
+      "path": "reproduction/cross_dataset/fas_cbf_core_v1_conceptual_closure/safety_sets/safety_set_contract.json",
+      "sha256": "bfb445ce7659865be8801e51f3f7082d51168bdf265139f1dff59b70bfaf4758",
+      "size": 630
+    },
+    "state_machine": {
+      "git_blob": "637687da5f540270bb53510899c66b60af167f6a",
+      "path": "reproduction/cross_dataset/fas_cbf_core_v1_conceptual_closure/state_machine/state_machine.json",
+      "sha256": "910526f5a5a81703277b7417d4ac514b609469d49de67d056287c0bdc7d399b0",
+      "size": 5413
+    },
+    "unified_certificate": {
+      "git_blob": "236a7616346ec3bdc13e463df11e52e5f3f9f920",
+      "path": "reproduction/cross_dataset/fas_cbf_core_v1_conceptual_closure/unified_certificate/unified_certificate_schema.json",
+      "sha256": "80417a5f53146a756e50d92ac8b0e891c244c56fc19125aa158f1807524bbedf",
+      "size": 466
+    }
+  },
+  "upstream_head": "17805e67b75412dc21b1a5fff4143ea3bc985f7f"
+}

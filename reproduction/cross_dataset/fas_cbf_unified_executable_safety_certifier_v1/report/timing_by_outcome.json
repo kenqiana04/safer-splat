@@ -1,0 +1,44 @@
+{
+  "certificate_success": {
+    "count": 20,
+    "max": 0.9086144780740142,
+    "mean": 0.7545697205001488,
+    "p50": 0.752901325118728,
+    "p95": 0.9086144780740142
+  },
+  "certified_unsafe_or_current_infeasible": {
+    "count": 5,
+    "max": 0.1798984589986503,
+    "mean": 0.17758724656887354,
+    "p50": 0.17761145997792482,
+    "p95": 0.1798984589986503
+  },
+  "inconclusive_budget_exhaustion": {
+    "count": 0,
+    "max": null,
+    "mean": null,
+    "p50": null,
+    "p95": null
+  },
+  "infrastructure_failure": {
+    "count": 0,
+    "max": null,
+    "mean": null,
+    "p50": null,
+    "p95": null
+  },
+  "map_unknown": {
+    "count": 0,
+    "max": null,
+    "mean": null,
+    "p50": null,
+    "p95": null
+  },
+  "other_typed_non_execution": {
+    "count": 0,
+    "max": null,
+    "mean": null,
+    "p50": null,
+    "p95": null
+  }
+}

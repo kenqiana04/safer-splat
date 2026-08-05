@@ -1,0 +1,42 @@
+{
+  "task": "IMPLEMENT_ACTUATOR_BOUNDED_SWEPT_SEGMENT_TERMINAL_BACKUP_CERTIFIER_V1",
+  "action_count": 5,
+  "actions": [
+    {
+      "id": "OA-01",
+      "type": "TASK_LOCAL_TEST_RUNTIME",
+      "action": "Installed pytest 9.1.1 into a temporary task-specific target after the system Python lacked pytest.",
+      "scientific_contract_change": false,
+      "repository_environment_change": false
+    },
+    {
+      "id": "OA-02",
+      "type": "TASK_OWNED_PROCESS_CLEANUP",
+      "action": "Stopped only PID 8664 from the timed-out task-local pip attempt; companion PID 19528 had already exited before intervention.",
+      "task_owned_process_cleanup_count": 1,
+      "scientific_contract_change": false
+    },
+    {
+      "id": "OA-03",
+      "type": "SERVER_TASK_ROOT_PROVISION",
+      "action": "Created and populated only /disk1/zlab/maintenance_records/fas_cbf_unified_executable_safety_certifier_v1 for plant-free smoke and retained evidence.",
+      "map_mutation": false,
+      "dataset_mutation": false
+    },
+    {
+      "id": "OA-04",
+      "type": "PYTHON_SERIALIZATION_COMPATIBILITY",
+      "action": "Replaced Path.write_text(newline=...) with Path.open(newline=...) after the server Python rejected the newer keyword; preserved the original wrapper-failure log and reran the identical 25-state smoke.",
+      "scientific_contract_change": false,
+      "state_or_candidate_change": false
+    },
+    {
+      "id": "OA-05",
+      "type": "CROSS_PLATFORM_TASK_SYNC_COMPATIBILITY",
+      "action": "A Windows tar stream produced a remote extraction warning and did not replace the intended task-owned files. The already-running smoke was allowed to finish, its result was preserved, and explicit scp directory/file updates were used before rerunning the identical frozen smoke.",
+      "scientific_contract_change": false,
+      "state_or_candidate_change": false,
+      "running_process_interrupted": false
+    }
+  ]
+}
