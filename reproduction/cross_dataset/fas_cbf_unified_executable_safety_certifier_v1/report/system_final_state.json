@@ -1,0 +1,19 @@
+{
+  "firewall_change_count": 0,
+  "gpu1_compute_process_count": 0,
+  "gpu1_compute_processes": [],
+  "gpu1_query": [
+    "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+  ],
+  "network_restart_count": 0,
+  "remote_host": "zlab-Super-Server",
+  "remote_proxy_listener_127_0_0_1_17898": true,
+  "remote_utc": "2026-08-05T11:12:11Z",
+  "ssh_or_sshd_restart_count": 0,
+  "status": "PASS_FINAL_SYSTEM_READONLY_CHECK",
+  "task_owned_remote_process_count": 0,
+  "task_owned_remote_processes": [],
+  "watchdog_preserved": true,
+  "watchdog_state": "Running",
+  "watchdog_task": "Codex-Persistent-Reverse-Proxy-Watchdog"
+}

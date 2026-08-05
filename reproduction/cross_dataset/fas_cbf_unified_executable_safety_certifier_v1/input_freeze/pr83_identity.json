@@ -1,0 +1,31 @@
+{
+  "canonical_identity_policy": "GIT_BLOB_BYTES_SHA256_V1",
+  "checks": {
+    "baseRefName": true,
+    "headRefName": true,
+    "headRefOid": true,
+    "isDraft": true,
+    "mergeable": true,
+    "state": true
+  },
+  "expected": {
+    "baseRefName": "fas-cbf-module-evidence-assembly-v1",
+    "headRefName": "fas-cbf-core-v1-conceptual-closure",
+    "headRefOid": "17805e67b75412dc21b1a5fff4143ea3bc985f7f",
+    "isDraft": true,
+    "mergeable": "MERGEABLE",
+    "state": "OPEN"
+  },
+  "pr": {
+    "baseRefName": "fas-cbf-module-evidence-assembly-v1",
+    "headRefName": "fas-cbf-core-v1-conceptual-closure",
+    "headRefOid": "17805e67b75412dc21b1a5fff4143ea3bc985f7f",
+    "isDraft": true,
+    "mergeable": "MERGEABLE",
+    "number": 83,
+    "state": "OPEN",
+    "title": "[Draft] Freeze FAS-CBF Core V1 executable-safety framework and proof obligations",
+    "url": "https://github.com/kenqiana04/safer-splat/pull/83"
+  },
+  "preserved": true
+}

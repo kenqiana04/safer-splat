@@ -1,0 +1,18 @@
+{
+  "candidate_acceleration_affects_immediate_position_segment": false,
+  "dt_default": 0.05,
+  "identity": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1",
+  "interval_flow": {
+    "position": "p(tau)=p+tau*v",
+    "tau": "[0,dt]",
+    "velocity": "v(tau)=v+tau*u"
+  },
+  "relative_degree": 2,
+  "state": "x=(p,v)",
+  "transition": {
+    "position": "p_next=p+dt*v",
+    "velocity": "v_next=v+dt*u"
+  },
+  "unique_normative_model_count": 1,
+  "zoh_backend": "DIAGNOSTIC_NON_NORMATIVE"
+}

@@ -1,0 +1,9 @@
+{
+  "analytic_expected_status": "FAIL_CLOSED_BACKUP_WITNESS_NOT_FOUND_IN_FROZEN_LIBRARY",
+  "case_id": "SYN-07",
+  "description": "future braking segment unsafe",
+  "deterministic": true,
+  "exact_reason_code": "BACKUP_SEGMENT_NOT_CERTIFIED",
+  "reference_online_input": false,
+  "seed": 20260805
+}

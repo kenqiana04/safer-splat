@@ -1,0 +1,46 @@
+{
+  "base": "fas-cbf-core-v1-conceptual-closure",
+  "base_head": "17805e67b75412dc21b1a5fff4143ea3bc985f7f",
+  "braking_policy": "DETERMINISTIC_COMPONENTWISE_BRAKING_POLICY_V1",
+  "branch": "fas-cbf-unified-executable-safety-certifier-v1",
+  "claim_scope": "CANDIDATE_LEVEL_REPRESENTED_GAUSSIAN_EXECUTABLE_CERTIFICATION_ONLY",
+  "counters": {
+    "analytic_segment_test_count": 10000,
+    "conservative_interval_validation_count": 1000,
+    "controller_parameter_tuning_count": 0,
+    "dataset_switch_count": 0,
+    "eth3d_compatibility_state_count": 0,
+    "false_safe_count": 0,
+    "formal_navigation_rollout_count": 0,
+    "inconclusive_count": 0,
+    "map_mutation_count": 0,
+    "map_smoke_status_counts": {
+      "CERTIFIED_NOMINAL_CONTROL": 10,
+      "CERTIFIED_TERMINAL_ACTION": 10,
+      "FAIL_CLOSED_CURRENT_CBF_INFEASIBLE": 5
+    },
+    "map_training_count": 0,
+    "normative_model_count": 1,
+    "operational_autonomy_action_count": 5,
+    "protected_source_mutation_count": 0,
+    "randomized_backup_test_count": 2000,
+    "randomized_segment_test_count": 10000,
+    "reference_online_read_count": 0,
+    "replica_map_smoke_state_count": 25,
+    "safety_threshold_tuning_count": 0,
+    "synthetic_closed_loop_count": 15,
+    "task_owned_process_cleanup_count": 1
+  },
+  "final_decision": "FREEZE_CERTIFIER_AND_BUILD_MINIMAL_ACTIVATED_REPLICA_GT_BENCHMARK",
+  "final_status": "PASS_GAUSSIAN_MAP_UNIFIED_EXECUTABLE_SAFETY_CERTIFIER_V1",
+  "normative_execution_model": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1",
+  "only_next_task": "BUILD_REPLICA_GT_EXECUTABLE_SAFETY_ACTIVATED_BENCHMARK_V1",
+  "segment_backends": {
+    "general_gaussian": "CONSERVATIVE_SIGNED_DISTANCE_LIPSCHITZ_INTERVAL",
+    "replica": "EXACT_ANALYTIC_SPHERE_SEGMENT_MINIMUM",
+    "sampled": "DIAGNOSTIC_ONLY"
+  },
+  "task": "IMPLEMENT_ACTUATOR_BOUNDED_SWEPT_SEGMENT_TERMINAL_BACKUP_CERTIFIER_V1",
+  "terminal_set": "BRAKING_TO_REST_TERMINAL_SET_V1",
+  "terminal_velocity_tolerance": 1e-12
+}

@@ -1,0 +1,17 @@
+{
+  "formal_backends": {
+    "EXACT_ANALYTIC_SPHERE_SEGMENT_MINIMUM": {
+      "classification": "EXACT_ANALYTIC",
+      "assumptions": ["finite sphere primitives", "static map snapshot", "Euclidean represented-obstacle semantics"]
+    },
+    "CONSERVATIVE_SIGNED_DISTANCE_LIPSCHITZ_INTERVAL": {
+      "classification": "CONSERVATIVE_LOWER_BOUND",
+      "assumptions": ["exact finite signed-distance query", "closed Gaussian ellipsoid primitives", "static map snapshot", "valid source barrier transform"]
+    }
+  },
+  "diagnostic_backend": "DENSE_SAMPLED_DIAGNOSTIC_ONLY",
+  "endpoint_only_fallback": false,
+  "unknown_is_free": false,
+  "map_barrier_is_metric_clearance": false,
+  "reference_online_input": false
+}

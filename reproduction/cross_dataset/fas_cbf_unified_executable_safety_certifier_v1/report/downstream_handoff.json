@@ -1,0 +1,20 @@
+{
+  "decision": "FREEZE_CERTIFIER_AND_BUILD_MINIMAL_ACTIVATED_REPLICA_GT_BENCHMARK",
+  "implementation_entrypoint": "certifier/executable_safety_certifier.py",
+  "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+  "normative_execution_model": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1",
+  "only_next_task": "BUILD_REPLICA_GT_EXECUTABLE_SAFETY_ACTIVATED_BENCHMARK_V1",
+  "protected_source_mutation_count": 0,
+  "reference_online_read_count": 0,
+  "status": "PASS_GAUSSIAN_MAP_UNIFIED_EXECUTABLE_SAFETY_CERTIFIER_V1",
+  "unresolved": [
+    "delay/disturbance/tracking robustness",
+    "candidate library completeness",
+    "global recursive feasibility",
+    "maximal terminal set",
+    "learned-map deployment safety",
+    "full-stack superiority"
+  ],
+  "upstream_head": "17805e67b75412dc21b1a5fff4143ea3bc985f7f",
+  "upstream_pr": 83
+}

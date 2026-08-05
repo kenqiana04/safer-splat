@@ -1,0 +1,9 @@
+{
+  "analytic_expected_status": "FAIL_CLOSED_IMMEDIATE_SEGMENT_UNSAFE",
+  "case_id": "SYN-05",
+  "description": "immediate segment unsafe and acceleration cannot repair",
+  "deterministic": true,
+  "exact_reason_code": "IMMEDIATE_SEGMENT_NOT_CERTIFIED",
+  "reference_online_input": false,
+  "seed": 20260805
+}
