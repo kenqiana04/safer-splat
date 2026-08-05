@@ -1,0 +1,13 @@
+{
+  "outputs": [
+    "CERTIFIED_NOMINAL_CONTROL",
+    "CERTIFIED_ALTERNATIVE_CONTROL",
+    "CERTIFIED_BACKUP_CONTROL",
+    "TERMINAL_SAFE_ACTION",
+    "FAIL_CLOSED_UNRECOVERABLE",
+    "NOT_EVALUABLE_MAP_QUERY",
+    "INFRASTRUCTURE_FAILURE"
+  ],
+  "research_question": "With bounded actuators and sampled execution on a represented Gaussian obstacle field, how can control be committed only with interval safety, finite-control feasibility, and terminal-backup evidence, or otherwise fail closed?",
+  "status": "DESIGN_CONTRACT"
+}

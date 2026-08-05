@@ -1,0 +1,86 @@
+{
+  "count": 9,
+  "modules": [
+    {
+      "core_v1_disposition": "direct abstract reuse",
+      "input_output": "barrier/gradient/Hessian",
+      "known_limitation": "proxy not metric distance",
+      "module": "Gaussian barrier",
+      "public_interface": "GSplatLoader.query_distance",
+      "reference_access": "offline forbidden online",
+      "source_path": "splat/gsplat_utils.py"
+    },
+    {
+      "core_v1_disposition": "abstract reuse",
+      "input_output": "state derivative",
+      "known_limitation": "historical Euler flow",
+      "module": "Dynamics",
+      "public_interface": "double_integrator_dynamics",
+      "reference_access": "offline forbidden online",
+      "source_path": "dynamics/systems.py"
+    },
+    {
+      "core_v1_disposition": "interface rebuild",
+      "input_output": "control and solver flag",
+      "known_limitation": "source fallback behavior split",
+      "module": "Current CBF QP",
+      "public_interface": "CBF.solve_QP",
+      "reference_access": "offline forbidden online",
+      "source_path": "cbf/cbf_utils.py"
+    },
+    {
+      "core_v1_disposition": "abstract only",
+      "input_output": "admission/projection",
+      "known_limitation": "source implementation not fully recovered",
+      "module": "Start-Safe",
+      "public_interface": "abstract contract",
+      "reference_access": "offline forbidden online",
+      "source_path": "historical reports and scripts"
+    },
+    {
+      "core_v1_disposition": "reclassify",
+      "input_output": "candidate/control",
+      "known_limitation": "prioritization not certificate",
+      "module": "Risk-Aware",
+      "public_interface": "make_cbf and generate_candidates",
+      "reference_access": "offline forbidden online",
+      "source_path": "run_v4b_corrective_dt_filter.py"
+    },
+    {
+      "core_v1_disposition": "reclassify",
+      "input_output": "predicted h",
+      "known_limitation": "one-step proxy",
+      "module": "DT verification",
+      "public_interface": "evaluate_candidates",
+      "reference_access": "offline forbidden online",
+      "source_path": "run_v4b_corrective_dt_filter.py"
+    },
+    {
+      "core_v1_disposition": "interface rebuild",
+      "input_output": "sequence witness",
+      "known_limitation": "finite family/horizon",
+      "module": "Predictive Recovery",
+      "public_interface": "evaluate_sequences",
+      "reference_access": "offline forbidden online",
+      "source_path": "run_v4c_hstep_predictive_recovery.py"
+    },
+    {
+      "core_v1_disposition": "reclassify",
+      "input_output": "staged search",
+      "known_limitation": "does not enlarge recoverable set",
+      "module": "HCE",
+      "public_interface": "evaluate_hierarchical",
+      "reference_access": "offline forbidden online",
+      "source_path": "v4c_hierarchical_candidate_evaluator.py"
+    },
+    {
+      "core_v1_disposition": "direct read-only reuse",
+      "input_output": "critical barrier",
+      "known_limitation": "critical barrier proxy",
+      "module": "Geometry adapter",
+      "public_interface": "query_barrier_geometry",
+      "reference_access": "offline forbidden online",
+      "source_path": "gsplat_barrier_geometry_adapter.py"
+    }
+  ]
+}

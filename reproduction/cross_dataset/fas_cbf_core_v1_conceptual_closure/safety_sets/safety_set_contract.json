@@ -1,0 +1,12 @@
+{
+  "relations_status": "PROOF_OBLIGATIONS_NOT_PROVED",
+  "sets": {
+    "X_T": "frozen terminal policy is safe/invariant/stopping only under explicit assumptions",
+    "X_exec": "X_map intersection X_feas intersection X_seg intersection X_rec",
+    "X_feas": "exists actuator-bounded current feasible u in U",
+    "X_map": "represented-Gaussian static safety with fixed margin",
+    "X_rec": "exists finite H-step bounded sequence with all segments certified and terminal endpoint",
+    "X_seg": "exists u with min over sampled interval h_G(Phi)-rho_seg >= 0"
+  },
+  "unknown_policy": "UNKNOWN_NOT_EVALUABLE is never safe/free"
+}
