@@ -1,0 +1,23 @@
+{
+  "gpu": "1, NVIDIA GeForce RTX 4090, GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d, 6 MiB, 0 %",
+  "gpu_compute_processes": "",
+  "listener_17898": "LISTEN  0        128            127.0.0.1:17898          0.0.0.0:*",
+  "mutations": {
+    "controller_rollout": 0,
+    "dataset_switch": 0,
+    "map_mutation": 0,
+    "method_tuning": 0,
+    "training": 0,
+    "watchdog_modification": 0
+  },
+  "return_codes": {
+    "compute": 0,
+    "gpu": 0,
+    "listener": 0,
+    "task_python": 0,
+    "watchdog": 0
+  },
+  "status": "PASS_FINAL_SYSTEM_READONLY_CHECK",
+  "task_owned_python_processes": "",
+  "watchdog_state": "Running"
+}

@@ -1,0 +1,29 @@
+{
+  "allowed_operations": [
+    "git/report/compact-artifact read",
+    "sha256",
+    "deterministic compact-statistic recomputation",
+    "claim and configuration audit",
+    "compact tables/figures/report"
+  ],
+  "branch": "fas-cbf-module-evidence-assembly-v1",
+  "forbidden_execution": [
+    "map training",
+    "candidate search",
+    "controller rollout",
+    "parameter tuning",
+    "dataset switch",
+    "map/method mutation"
+  ],
+  "frozen_eth3d": {
+    "baseline_core_sha256": "9df7fa1945631cdb0b65b70568661c7eaaa75ff847bfe6f951241e56205d0bb2",
+    "canonical_tree_sha256": "06c1ff17d2ed5eb184b6a9699a3a32da431a1460840431a3effe76d5f03b9ee3",
+    "map_ply_sha256": "927734a2339a3f2710640065b0893eaae162cc0144ac67e2f377bcff2e71ae34",
+    "method_code_sha256": "41fc7363fecbf2e65cc1e25233d5ea9f5fa6581fe3b1eb6a81505806d0376193",
+    "reference_mesh_sha256": "82a9b20c9f3c7dc933f86c45e0855adf649fcf08b7549baba760cf385d489370"
+  },
+  "pr79_head": "4694a7cbfa062a53ac270c1c1c5654a2d1b5f166",
+  "pr80_head": "a05f8e1eca4c400a86583eb97fcce5be32062a0d",
+  "pr81_head": "e9bf932143542232400b451e3fa6caa888ae3a85",
+  "task": "ASSEMBLE_FAS_CBF_MODULE_EVIDENCE_FROM_ETH3D_AND_EXISTING_FROZEN_CASES_V1"
+}

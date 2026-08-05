@@ -1,0 +1,5 @@
+map_role,datasets,evidence_count,paper_role,superiority_eligible
+OFFICIAL_SAFER_MAP,Stonehenge; dense-flight; synthetic perturbation,13,In-domain module validation carrier; results remain configuration-specific.,NO
+GT_DERIVED_GAUSSIAN,Replica,1,"Clean Replica controller benchmark; deterministic GT-derived safety map, not learned.",NO
+LEARNED_3DGS,ETH3D,2,External learned-map viability and structural activation-limit carrier; not deployment-certified.,NO
+LEARNED_SLAM_MAP,TUM,2,External TUM case-study carrier using GSplat-overlap proxy; not official mesh collision evidence.,NO

@@ -1,0 +1,154 @@
+evidence_id_a,evidence_id_b,classification,rationale
+E01_ETH3D_PR80,E02_ETH3D_PR81,CONFIGURATION_SPECIFIC,same named setting but module/configuration/result-type differ
+E01_ETH3D_PR80,E03_REPLICA_PR65,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E01_ETH3D_PR80,E04_STARTGUARD_TRIAL57,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E01_ETH3D_PR80,E05_STARTGUARD_FLIGHT100,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E01_ETH3D_PR80,E06_ACTIVE_PROJECTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E01_ETH3D_PR80,E07_SYNTHETIC_START_STRESS,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E01_ETH3D_PR80,E08_RISK_AWARE_STONEHENGE,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E01_ETH3D_PR80,E09_RISK_AWARE_FLIGHT,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E01_ETH3D_PR80,E10_FORCED_DOMINANCE,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E01_ETH3D_PR80,E11_DT_DETECTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E01_ETH3D_PR80,E12_V4B_NEGATIVE,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E01_ETH3D_PR80,E13_V4C_H3,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E01_ETH3D_PR80,E14_V4C_TUNED_H2,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E01_ETH3D_PR80,E15_HCE_HELDOUT,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E01_ETH3D_PR80,E16_TRIAL20_BOUNDARY,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E01_ETH3D_PR80,E17_TUM_DT_FORENSICS,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E01_ETH3D_PR80,E18_TUM_V4C_INTERVENTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E02_ETH3D_PR81,E03_REPLICA_PR65,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E02_ETH3D_PR81,E04_STARTGUARD_TRIAL57,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E02_ETH3D_PR81,E05_STARTGUARD_FLIGHT100,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E02_ETH3D_PR81,E06_ACTIVE_PROJECTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E02_ETH3D_PR81,E07_SYNTHETIC_START_STRESS,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E02_ETH3D_PR81,E08_RISK_AWARE_STONEHENGE,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E02_ETH3D_PR81,E09_RISK_AWARE_FLIGHT,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E02_ETH3D_PR81,E10_FORCED_DOMINANCE,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E02_ETH3D_PR81,E11_DT_DETECTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E02_ETH3D_PR81,E12_V4B_NEGATIVE,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E02_ETH3D_PR81,E13_V4C_H3,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E02_ETH3D_PR81,E14_V4C_TUNED_H2,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E02_ETH3D_PR81,E15_HCE_HELDOUT,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E02_ETH3D_PR81,E16_TRIAL20_BOUNDARY,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E02_ETH3D_PR81,E17_TUM_DT_FORENSICS,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E02_ETH3D_PR81,E18_TUM_V4C_INTERVENTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E03_REPLICA_PR65,E04_STARTGUARD_TRIAL57,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E03_REPLICA_PR65,E05_STARTGUARD_FLIGHT100,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E03_REPLICA_PR65,E06_ACTIVE_PROJECTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E03_REPLICA_PR65,E07_SYNTHETIC_START_STRESS,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E03_REPLICA_PR65,E08_RISK_AWARE_STONEHENGE,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E03_REPLICA_PR65,E09_RISK_AWARE_FLIGHT,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E03_REPLICA_PR65,E10_FORCED_DOMINANCE,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E03_REPLICA_PR65,E11_DT_DETECTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E03_REPLICA_PR65,E12_V4B_NEGATIVE,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E03_REPLICA_PR65,E13_V4C_H3,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E03_REPLICA_PR65,E14_V4C_TUNED_H2,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E03_REPLICA_PR65,E15_HCE_HELDOUT,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E03_REPLICA_PR65,E16_TRIAL20_BOUNDARY,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E03_REPLICA_PR65,E17_TUM_DT_FORENSICS,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E03_REPLICA_PR65,E18_TUM_V4C_INTERVENTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E04_STARTGUARD_TRIAL57,E05_STARTGUARD_FLIGHT100,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E04_STARTGUARD_TRIAL57,E06_ACTIVE_PROJECTION,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E04_STARTGUARD_TRIAL57,E07_SYNTHETIC_START_STRESS,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E04_STARTGUARD_TRIAL57,E08_RISK_AWARE_STONEHENGE,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E04_STARTGUARD_TRIAL57,E09_RISK_AWARE_FLIGHT,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E04_STARTGUARD_TRIAL57,E10_FORCED_DOMINANCE,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E04_STARTGUARD_TRIAL57,E11_DT_DETECTION,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E04_STARTGUARD_TRIAL57,E12_V4B_NEGATIVE,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E04_STARTGUARD_TRIAL57,E13_V4C_H3,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E04_STARTGUARD_TRIAL57,E14_V4C_TUNED_H2,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E04_STARTGUARD_TRIAL57,E15_HCE_HELDOUT,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E04_STARTGUARD_TRIAL57,E16_TRIAL20_BOUNDARY,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E04_STARTGUARD_TRIAL57,E17_TUM_DT_FORENSICS,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E04_STARTGUARD_TRIAL57,E18_TUM_V4C_INTERVENTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E05_STARTGUARD_FLIGHT100,E06_ACTIVE_PROJECTION,CONFIGURATION_SPECIFIC,same named setting but module/configuration/result-type differ
+E05_STARTGUARD_FLIGHT100,E07_SYNTHETIC_START_STRESS,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E05_STARTGUARD_FLIGHT100,E08_RISK_AWARE_STONEHENGE,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E05_STARTGUARD_FLIGHT100,E09_RISK_AWARE_FLIGHT,CONFIGURATION_SPECIFIC,same named setting but module/configuration/result-type differ
+E05_STARTGUARD_FLIGHT100,E10_FORCED_DOMINANCE,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E05_STARTGUARD_FLIGHT100,E11_DT_DETECTION,CONFIGURATION_SPECIFIC,same named setting but module/configuration/result-type differ
+E05_STARTGUARD_FLIGHT100,E12_V4B_NEGATIVE,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E05_STARTGUARD_FLIGHT100,E13_V4C_H3,CONFIGURATION_SPECIFIC,same named setting but module/configuration/result-type differ
+E05_STARTGUARD_FLIGHT100,E14_V4C_TUNED_H2,CONFIGURATION_SPECIFIC,same named setting but module/configuration/result-type differ
+E05_STARTGUARD_FLIGHT100,E15_HCE_HELDOUT,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E05_STARTGUARD_FLIGHT100,E16_TRIAL20_BOUNDARY,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E05_STARTGUARD_FLIGHT100,E17_TUM_DT_FORENSICS,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E05_STARTGUARD_FLIGHT100,E18_TUM_V4C_INTERVENTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E06_ACTIVE_PROJECTION,E07_SYNTHETIC_START_STRESS,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E06_ACTIVE_PROJECTION,E08_RISK_AWARE_STONEHENGE,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E06_ACTIVE_PROJECTION,E09_RISK_AWARE_FLIGHT,CONFIGURATION_SPECIFIC,same named setting but module/configuration/result-type differ
+E06_ACTIVE_PROJECTION,E10_FORCED_DOMINANCE,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E06_ACTIVE_PROJECTION,E11_DT_DETECTION,CONFIGURATION_SPECIFIC,same named setting but module/configuration/result-type differ
+E06_ACTIVE_PROJECTION,E12_V4B_NEGATIVE,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E06_ACTIVE_PROJECTION,E13_V4C_H3,CONFIGURATION_SPECIFIC,same named setting but module/configuration/result-type differ
+E06_ACTIVE_PROJECTION,E14_V4C_TUNED_H2,CONFIGURATION_SPECIFIC,same named setting but module/configuration/result-type differ
+E06_ACTIVE_PROJECTION,E15_HCE_HELDOUT,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E06_ACTIVE_PROJECTION,E16_TRIAL20_BOUNDARY,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E06_ACTIVE_PROJECTION,E17_TUM_DT_FORENSICS,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E06_ACTIVE_PROJECTION,E18_TUM_V4C_INTERVENTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E07_SYNTHETIC_START_STRESS,E08_RISK_AWARE_STONEHENGE,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E07_SYNTHETIC_START_STRESS,E09_RISK_AWARE_FLIGHT,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E07_SYNTHETIC_START_STRESS,E10_FORCED_DOMINANCE,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E07_SYNTHETIC_START_STRESS,E11_DT_DETECTION,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E07_SYNTHETIC_START_STRESS,E12_V4B_NEGATIVE,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E07_SYNTHETIC_START_STRESS,E13_V4C_H3,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E07_SYNTHETIC_START_STRESS,E14_V4C_TUNED_H2,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E07_SYNTHETIC_START_STRESS,E15_HCE_HELDOUT,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E07_SYNTHETIC_START_STRESS,E16_TRIAL20_BOUNDARY,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E07_SYNTHETIC_START_STRESS,E17_TUM_DT_FORENSICS,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E07_SYNTHETIC_START_STRESS,E18_TUM_V4C_INTERVENTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E08_RISK_AWARE_STONEHENGE,E09_RISK_AWARE_FLIGHT,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E08_RISK_AWARE_STONEHENGE,E10_FORCED_DOMINANCE,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E08_RISK_AWARE_STONEHENGE,E11_DT_DETECTION,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E08_RISK_AWARE_STONEHENGE,E12_V4B_NEGATIVE,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E08_RISK_AWARE_STONEHENGE,E13_V4C_H3,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E08_RISK_AWARE_STONEHENGE,E14_V4C_TUNED_H2,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E08_RISK_AWARE_STONEHENGE,E15_HCE_HELDOUT,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E08_RISK_AWARE_STONEHENGE,E16_TRIAL20_BOUNDARY,NOT_COMPARABLE,"different dataset, map, cohort, and execution contract"
+E08_RISK_AWARE_STONEHENGE,E17_TUM_DT_FORENSICS,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E08_RISK_AWARE_STONEHENGE,E18_TUM_V4C_INTERVENTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E09_RISK_AWARE_FLIGHT,E10_FORCED_DOMINANCE,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E09_RISK_AWARE_FLIGHT,E11_DT_DETECTION,CONFIGURATION_SPECIFIC,same named setting but module/configuration/result-type differ
+E09_RISK_AWARE_FLIGHT,E12_V4B_NEGATIVE,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E09_RISK_AWARE_FLIGHT,E13_V4C_H3,CONFIGURATION_SPECIFIC,same named setting but module/configuration/result-type differ
+E09_RISK_AWARE_FLIGHT,E14_V4C_TUNED_H2,CONFIGURATION_SPECIFIC,same named setting but module/configuration/result-type differ
+E09_RISK_AWARE_FLIGHT,E15_HCE_HELDOUT,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E09_RISK_AWARE_FLIGHT,E16_TRIAL20_BOUNDARY,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E09_RISK_AWARE_FLIGHT,E17_TUM_DT_FORENSICS,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E09_RISK_AWARE_FLIGHT,E18_TUM_V4C_INTERVENTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E10_FORCED_DOMINANCE,E11_DT_DETECTION,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E10_FORCED_DOMINANCE,E12_V4B_NEGATIVE,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E10_FORCED_DOMINANCE,E13_V4C_H3,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E10_FORCED_DOMINANCE,E14_V4C_TUNED_H2,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E10_FORCED_DOMINANCE,E15_HCE_HELDOUT,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E10_FORCED_DOMINANCE,E16_TRIAL20_BOUNDARY,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E10_FORCED_DOMINANCE,E17_TUM_DT_FORENSICS,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E10_FORCED_DOMINANCE,E18_TUM_V4C_INTERVENTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E11_DT_DETECTION,E12_V4B_NEGATIVE,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E11_DT_DETECTION,E13_V4C_H3,CONFIGURATION_SPECIFIC,same named setting but module/configuration/result-type differ
+E11_DT_DETECTION,E14_V4C_TUNED_H2,CONFIGURATION_SPECIFIC,same named setting but module/configuration/result-type differ
+E11_DT_DETECTION,E15_HCE_HELDOUT,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E11_DT_DETECTION,E16_TRIAL20_BOUNDARY,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E11_DT_DETECTION,E17_TUM_DT_FORENSICS,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E11_DT_DETECTION,E18_TUM_V4C_INTERVENTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E12_V4B_NEGATIVE,E13_V4C_H3,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E12_V4B_NEGATIVE,E14_V4C_TUNED_H2,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E12_V4B_NEGATIVE,E15_HCE_HELDOUT,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E12_V4B_NEGATIVE,E16_TRIAL20_BOUNDARY,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E12_V4B_NEGATIVE,E17_TUM_DT_FORENSICS,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E12_V4B_NEGATIVE,E18_TUM_V4C_INTERVENTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E13_V4C_H3,E14_V4C_TUNED_H2,CONFIGURATION_SPECIFIC,same dense-flight family but different horizon/candidate configuration; compare runtime descriptively only
+E13_V4C_H3,E15_HCE_HELDOUT,COHORT_OVERLAP_RISK,HCE is a selected activated held-out cohort from the same broad dense-flight setting
+E13_V4C_H3,E16_TRIAL20_BOUNDARY,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E13_V4C_H3,E17_TUM_DT_FORENSICS,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E13_V4C_H3,E18_TUM_V4C_INTERVENTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E14_V4C_TUNED_H2,E15_HCE_HELDOUT,COHORT_OVERLAP_RISK,HCE is a selected activated held-out cohort from the same broad dense-flight setting
+E14_V4C_TUNED_H2,E16_TRIAL20_BOUNDARY,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E14_V4C_TUNED_H2,E17_TUM_DT_FORENSICS,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E14_V4C_TUNED_H2,E18_TUM_V4C_INTERVENTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E15_HCE_HELDOUT,E16_TRIAL20_BOUNDARY,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
+E15_HCE_HELDOUT,E17_TUM_DT_FORENSICS,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E15_HCE_HELDOUT,E18_TUM_V4C_INTERVENTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E16_TRIAL20_BOUNDARY,E17_TUM_DT_FORENSICS,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E16_TRIAL20_BOUNDARY,E18_TUM_V4C_INTERVENTION,MAP_SPECIFIC,different map role; effects cannot be numerically pooled
+E17_TUM_DT_FORENSICS,E18_TUM_V4C_INTERVENTION,COMPLEMENTARY_NOT_POOLABLE,same dataset but different scene/cohort or protocol
