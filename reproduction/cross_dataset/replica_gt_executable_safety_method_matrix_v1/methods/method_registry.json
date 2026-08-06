@@ -1,0 +1,74 @@
+{
+  "b3_only_difference": "Six fixed represented-map directional slot templates; unavailable or duplicate slots are retained in identity but not passed to the certifier.",
+  "methods": [
+    {
+      "candidates": [
+        "PRIMARY-CBF-FILTERED"
+      ],
+      "directional_slots": false,
+      "gates": [
+        "actuator",
+        "current_full_query"
+      ],
+      "id": "B0_CURRENT_CBF_ONLY"
+    },
+    {
+      "candidates": [
+        "PRIMARY-CBF-FILTERED"
+      ],
+      "directional_slots": false,
+      "gates": [
+        "actuator",
+        "current_full_query",
+        "swept_segment"
+      ],
+      "id": "B1_PLUS_SWEPT_SEGMENT"
+    },
+    {
+      "candidates": [
+        "PRIMARY-CBF-FILTERED",
+        "DETERMINISTIC_BRAKING"
+      ],
+      "directional_slots": false,
+      "external_alternative_controls": [],
+      "gates": [
+        "actuator",
+        "current_full_query",
+        "swept_segment",
+        "terminal_backup"
+      ],
+      "id": "B2_PLUS_TERMINAL_BACKUP_WITH_BUILTIN_BRAKING"
+    },
+    {
+      "candidates": [
+        "PRIMARY-CBF-FILTERED",
+        "ALT-01-OUTWARD",
+        "ALT-02-GOAL-TANGENT",
+        "ALT-03-AUX-TANGENT-POS",
+        "ALT-04-AUX-TANGENT-NEG",
+        "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+        "ALT-06-BRAKE-BIASED-OUTWARD",
+        "DETERMINISTIC_BRAKING"
+      ],
+      "directional_slots": true,
+      "external_alternative_controls": [
+        "ALT-01-OUTWARD",
+        "ALT-02-GOAL-TANGENT",
+        "ALT-03-AUX-TANGENT-POS",
+        "ALT-04-AUX-TANGENT-NEG",
+        "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+        "ALT-06-BRAKE-BIASED-OUTWARD"
+      ],
+      "gates": [
+        "actuator",
+        "current_full_query",
+        "swept_segment",
+        "terminal_backup"
+      ],
+      "id": "B3_FULL_UNIFIED_WITH_FROZEN_DIRECTIONAL_ALTERNATIVES",
+      "library_id": "REPLICA_GT_REPRESENTED_MAP_DIRECTIONAL_ALTERNATIVE_LIBRARY_V1",
+      "library_sha256": "3d491876234161d4e881ec1227c505cb07c0af00d5e881c5289fdf1f1577c6fe"
+    }
+  ],
+  "status": "FROZEN_METHOD_MATRIX"
+}

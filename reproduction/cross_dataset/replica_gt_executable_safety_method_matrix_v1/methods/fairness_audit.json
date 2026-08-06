@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "B3_only_adds_six_slot_directional_template": true,
+    "canonical_library_identity_frozen": true,
+    "no_candidate_search": true,
+    "no_future_outcome_input": true,
+    "no_group_count_input": true,
+    "no_parameter_tuning": true,
+    "no_reference_input": true,
+    "no_registry_input": true,
+    "per_state_candidate_identity_reproducible": true,
+    "same_actuator_bounds": true,
+    "same_backup_policy": true,
+    "same_builtin_braking_B2_B3": true,
+    "same_current_full_query": true,
+    "same_map_snapshot": true,
+    "same_normative_model": true,
+    "same_segment_backend": true,
+    "same_state_goal": true,
+    "same_terminal_set": true,
+    "same_u_filtered_primary": true,
+    "same_u_nom_logged": true
+  },
+  "global_library_sha256": "3d491876234161d4e881ec1227c505cb07c0af00d5e881c5289fdf1f1577c6fe",
+  "library_id": "REPLICA_GT_REPRESENTED_MAP_DIRECTIONAL_ALTERNATIVE_LIBRARY_V1",
+  "status": "PASS_METHOD_FAIRNESS_CONTRACT_FREEZE"
+}

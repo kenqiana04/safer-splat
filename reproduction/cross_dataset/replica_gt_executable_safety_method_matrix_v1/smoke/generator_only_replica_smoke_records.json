@@ -1,0 +1,4072 @@
+{
+  "availability_counts": {
+    "AVAILABLE": 100,
+    "DEGENERATE": 20,
+    "DUPLICATE": 0,
+    "GOAL_UNAVAILABLE": 30,
+    "MAP_UNAVAILABLE": 0
+  },
+  "benchmark_candidate_search_count": 0,
+  "benchmark_registry_count": 0,
+  "formal_method_run_count": 0,
+  "input": "PR84_25_PLANT_FREE_SMOKE_STATES",
+  "logical_rollout_count": 0,
+  "map_query_count": 20,
+  "records": [
+    {
+      "benchmark_registry_count": 0,
+      "candidate_identity": {
+        "active_primitive_id": 936984,
+        "auxiliary_tangent": [
+          -0.5364364225956835,
+          -0.2121539059088454,
+          -0.8168394485578951
+        ],
+        "braking_control": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "goal": [
+          0.4716522991657257,
+          0.12523484230041504,
+          2.2526073455810547
+        ],
+        "goal_tangent": [
+          -0.7748177076815448,
+          -0.2598254107009376,
+          0.5763230654912271
+        ],
+        "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "ordered_tuple_sha256": "1de1da17aa467fafb682300105339cf7b0042df496238eb5d95acd3d8124a9da",
+        "represented_normal": [
+          0.3345048346076056,
+          -0.9420623525869771,
+          0.025000789236112587
+        ],
+        "slots": [
+          {
+            "acceleration": [
+              0.035507717051746004,
+              -0.1,
+              0.0026538359342625738
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-01-OUTWARD",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.1,
+              -0.03353374711561543,
+              0.07438176228776895
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-02-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.06567219831788798,
+              -0.025972534294639735,
+              -0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-03-AUX-TANGENT-POS",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.06567219831788798,
+              0.025972534294639735,
+              0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": null,
+            "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+            "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": null,
+            "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+            "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+            "duplicate_of": null
+          }
+        ],
+        "state": {
+          "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+          "position": [
+            1.108504295349121,
+            0.12523484230041504,
+            1.834372639656067
+          ],
+          "timestamp": 0.0,
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "state_candidate_set_sha256": "a3575bfdda7ba568e15c0c28dd4e16a08a231824d4b91ddcee8529a339411346"
+      },
+      "formal_method_run_count": 0,
+      "label": "REPLICA_STATIONARY_SAFE_00",
+      "logical_rollout_count": 0,
+      "map_query": {
+        "active_gaussian_ids": [
+          936984
+        ],
+        "reason": "FULL_GAUSSIAN_SPHERE_QUERY_FINITE",
+        "scope": "FULL",
+        "status": "FINITE"
+      },
+      "reference_query_count": 0,
+      "route_id": "8f0977d300d1500f616cbdf672c46986622e84ce42ea1cc643ca7c9344c40789",
+      "slots": [
+        {
+          "acceleration": [
+            0.035507717051746004,
+            -0.1,
+            0.0026538359342625738
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-01-OUTWARD",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.1,
+            -0.03353374711561543,
+            0.07438176228776895
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-02-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.06567219831788798,
+            -0.025972534294639735,
+            -0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.06567219831788798,
+            0.025972534294639735,
+            0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": null,
+          "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": null,
+          "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+          "duplicate_of": null
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          1.108504295349121,
+          0.12523484230041504,
+          1.834372639656067
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "benchmark_registry_count": 0,
+      "candidate_identity": {
+        "active_primitive_id": 181395,
+        "auxiliary_tangent": [
+          0.11440853128570648,
+          0.01094855885652646,
+          -0.9933734529511108
+        ],
+        "braking_control": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "goal": [
+          -1.1937029361724854,
+          0.16010022163391113,
+          0.867843508720398
+        ],
+        "goal_tangent": [
+          0.9926295748006885,
+          0.03896701891795153,
+          0.1147523362187119
+        ],
+        "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "ordered_tuple_sha256": "db21d4c44cbf1e10ce6be3a4c130cd18c6f26d5f0f068ae790b8624e2f39e26f",
+        "represented_normal": [
+          -0.039965174840751246,
+          0.9991805144695394,
+          0.006409703919448999
+        ],
+        "slots": [
+          {
+            "acceleration": [
+              -0.0039997952584142,
+              0.1,
+              0.0006414960887074428
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-01-OUTWARD",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.1,
+              0.003925635494567627,
+              0.01156043897258987
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-02-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.011517172212104318,
+              0.001102159396750589,
+              -0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-03-AUX-TANGENT-POS",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.011517172212104318,
+              -0.001102159396750589,
+              0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": null,
+            "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+            "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": null,
+            "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+            "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+            "duplicate_of": null
+          }
+        ],
+        "state": {
+          "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+          "position": [
+            -2.1930789947509766,
+            0.2470024824142456,
+            0.7537014484405518
+          ],
+          "timestamp": 0.0,
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "state_candidate_set_sha256": "57d1cb8d298fd37201492ad19691f5fc5a1ce814d0c0ffb089a2dbf82002a5fa"
+      },
+      "formal_method_run_count": 0,
+      "label": "REPLICA_STATIONARY_SAFE_01",
+      "logical_rollout_count": 0,
+      "map_query": {
+        "active_gaussian_ids": [
+          181395
+        ],
+        "reason": "FULL_GAUSSIAN_SPHERE_QUERY_FINITE",
+        "scope": "FULL",
+        "status": "FINITE"
+      },
+      "reference_query_count": 0,
+      "route_id": "496c2538d1509209e2c2e8b2a96bd088f95596ee202c0bf3c547698ebe49ac52",
+      "slots": [
+        {
+          "acceleration": [
+            -0.0039997952584142,
+            0.1,
+            0.0006414960887074428
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-01-OUTWARD",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.1,
+            0.003925635494567627,
+            0.01156043897258987
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-02-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.011517172212104318,
+            0.001102159396750589,
+            -0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.011517172212104318,
+            -0.001102159396750589,
+            0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": null,
+          "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": null,
+          "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+          "duplicate_of": null
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          -2.1930789947509766,
+          0.2470024824142456,
+          0.7537014484405518
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "benchmark_registry_count": 0,
+      "candidate_identity": {
+        "active_primitive_id": 936984,
+        "auxiliary_tangent": [
+          -0.8004279402852285,
+          -0.29801622344171524,
+          -0.5200975321766913
+        ],
+        "braking_control": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "goal": [
+          0.366214394569397,
+          0.12523484230041504,
+          2.9767537117004395
+        ],
+        "goal_tangent": [
+          -0.4974149455282633,
+          -0.15396380874682125,
+          0.8537408960342049
+        ],
+        "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "ordered_tuple_sha256": "504a48f491c27c4c599ac8616128ee04e107a9f030195a48fc0201fa904104d7",
+        "represented_normal": [
+          0.3345048346076056,
+          -0.9420623525869771,
+          0.025000789236112587
+        ],
+        "slots": [
+          {
+            "acceleration": [
+              0.035507717051746004,
+              -0.1,
+              0.0026538359342625738
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-01-OUTWARD",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.058262986795976864,
+              -0.018034020563149025,
+              0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-02-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.1,
+              -0.03723211152967982,
+              -0.06497743344533391
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-03-AUX-TANGENT-POS",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.1,
+              0.03723211152967982,
+              0.06497743344533391
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": null,
+            "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+            "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": null,
+            "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+            "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+            "duplicate_of": null
+          }
+        ],
+        "state": {
+          "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+          "position": [
+            1.108504295349121,
+            0.12523484230041504,
+            1.834372639656067
+          ],
+          "timestamp": 0.0,
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "state_candidate_set_sha256": "f9559ce0abdb05e966c6922249b6b5f5f3c4bff13f98c6b0e576091ae9fb37eb"
+      },
+      "formal_method_run_count": 0,
+      "label": "REPLICA_STATIONARY_SAFE_02",
+      "logical_rollout_count": 0,
+      "map_query": {
+        "active_gaussian_ids": [
+          936984
+        ],
+        "reason": "FULL_GAUSSIAN_SPHERE_QUERY_FINITE",
+        "scope": "FULL",
+        "status": "FINITE"
+      },
+      "reference_query_count": 0,
+      "route_id": "038a7f5b22b1564f863904370f3269f6d5635af79587d8fb6be33cf0e0258b5e",
+      "slots": [
+        {
+          "acceleration": [
+            0.035507717051746004,
+            -0.1,
+            0.0026538359342625738
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-01-OUTWARD",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.058262986795976864,
+            -0.018034020563149025,
+            0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-02-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.1,
+            -0.03723211152967982,
+            -0.06497743344533391
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.1,
+            0.03723211152967982,
+            0.06497743344533391
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": null,
+          "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": null,
+          "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+          "duplicate_of": null
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          1.108504295349121,
+          0.12523484230041504,
+          1.834372639656067
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "benchmark_registry_count": 0,
+      "candidate_identity": {
+        "active_primitive_id": 783051,
+        "auxiliary_tangent": [
+          0.042121166735157596,
+          -0.8563177214306577,
+          -0.5147288288765994
+        ],
+        "braking_control": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "goal": [
+          -0.20004546642303467,
+          0.12523484230041504,
+          2.197641134262085
+        ],
+        "goal_tangent": [
+          -0.9961858577544905,
+          -0.0753992882578041,
+          0.04391678654189512
+        ],
+        "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "ordered_tuple_sha256": "6bb18ce97d915b9b661eb9fcb3caf9550b9c22d78250d6d136c5f60f06180a9a",
+        "represented_normal": [
+          0.07641690992718081,
+          -0.5109157536169961,
+          0.8562275098261899
+        ],
+        "slots": [
+          {
+            "acceleration": [
+              0.00892483703807801,
+              -0.05967056042391229,
+              0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-01-OUTWARD",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.1,
+              -0.007568797295292082,
+              0.0044084932746273125
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-02-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.004918871311548404,
+              -0.1,
+              -0.060109561672580754
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-03-AUX-TANGENT-POS",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.004918871311548404,
+              0.1,
+              0.060109561672580754
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": null,
+            "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+            "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": null,
+            "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+            "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+            "duplicate_of": null
+          }
+        ],
+        "state": {
+          "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+          "position": [
+            0.4716522991657257,
+            0.12523484230041504,
+            2.2526073455810547
+          ],
+          "timestamp": 0.0,
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "state_candidate_set_sha256": "7cfee04d1d03b2740c18230466f881c29584ebc3b5465c4f8596c3fc4af87c6c"
+      },
+      "formal_method_run_count": 0,
+      "label": "REPLICA_STATIONARY_SAFE_03",
+      "logical_rollout_count": 0,
+      "map_query": {
+        "active_gaussian_ids": [
+          783051
+        ],
+        "reason": "FULL_GAUSSIAN_SPHERE_QUERY_FINITE",
+        "scope": "FULL",
+        "status": "FINITE"
+      },
+      "reference_query_count": 0,
+      "route_id": "086efc751cec69b43a7eab59b843627e8e64871b249201cbfcd484b0057572ee",
+      "slots": [
+        {
+          "acceleration": [
+            0.00892483703807801,
+            -0.05967056042391229,
+            0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-01-OUTWARD",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.1,
+            -0.007568797295292082,
+            0.0044084932746273125
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-02-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.004918871311548404,
+            -0.1,
+            -0.060109561672580754
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.004918871311548404,
+            0.1,
+            0.060109561672580754
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": null,
+          "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": null,
+          "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+          "duplicate_of": null
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          0.4716522991657257,
+          0.12523484230041504,
+          2.2526073455810547
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "benchmark_registry_count": 0,
+      "candidate_identity": {
+        "active_primitive_id": 944581,
+        "auxiliary_tangent": [
+          -0.32924773252295825,
+          -0.9439947662393819,
+          -0.02167514570066854
+        ],
+        "braking_control": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "goal": [
+          1.108504295349121,
+          0.12523484230041504,
+          1.834372639656067
+        ],
+        "goal_tangent": [
+          0.9421593498950157,
+          -0.32691007310033166,
+          -0.07392944955115549
+        ],
+        "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "ordered_tuple_sha256": "6e3ce88cb560152d5bae4e1b34388c542aa9d600408ee2e597d726c87bf882b6",
+        "represented_normal": [
+          -0.06270318998178229,
+          0.04476254481360964,
+          -0.9970278955715923
+        ],
+        "slots": [
+          {
+            "acceleration": [
+              -0.006289010594416196,
+              0.004489598035564235,
+              -0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-01-OUTWARD",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.1,
+              -0.03469795986599922,
+              -0.00784680951894108
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-02-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.03487813113992057,
+              -0.1,
+              -0.002296108673040256
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-03-AUX-TANGENT-POS",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.03487813113992057,
+              0.1,
+              0.002296108673040256
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": null,
+            "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+            "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": null,
+            "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+            "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+            "duplicate_of": null
+          }
+        ],
+        "state": {
+          "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+          "position": [
+            1.0406432151794434,
+            0.12523484230041504,
+            2.865189552307129
+          ],
+          "timestamp": 0.0,
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "state_candidate_set_sha256": "88ec72be760b71d67c575f53ed2f45da66d792f81520cb0b83202ab0efb0cb10"
+      },
+      "formal_method_run_count": 0,
+      "label": "REPLICA_STATIONARY_SAFE_04",
+      "logical_rollout_count": 0,
+      "map_query": {
+        "active_gaussian_ids": [
+          944581
+        ],
+        "reason": "FULL_GAUSSIAN_SPHERE_QUERY_FINITE",
+        "scope": "FULL",
+        "status": "FINITE"
+      },
+      "reference_query_count": 0,
+      "route_id": "0be301a2124e929472389a837c43e459a24574183af2dfd1bdaa44fbaf494e10",
+      "slots": [
+        {
+          "acceleration": [
+            -0.006289010594416196,
+            0.004489598035564235,
+            -0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-01-OUTWARD",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.1,
+            -0.03469795986599922,
+            -0.00784680951894108
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-02-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.03487813113992057,
+            -0.1,
+            -0.002296108673040256
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.03487813113992057,
+            0.1,
+            0.002296108673040256
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": null,
+          "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": null,
+          "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+          "duplicate_of": null
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          1.0406432151794434,
+          0.12523484230041504,
+          2.865189552307129
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "benchmark_registry_count": 0,
+      "candidate_identity": {
+        "active_primitive_id": 783998,
+        "auxiliary_tangent": [
+          0.3782146002912136,
+          0.07902426729721403,
+          -0.9223388104729715
+        ],
+        "braking_control": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "goal": [
+          2.118241310119629,
+          2.925234794616699,
+          1.8147969245910645
+        ],
+        "goal_tangent": [
+          0.9230159597725047,
+          0.0438775396797427,
+          0.3822516180696882
+        ],
+        "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "ordered_tuple_sha256": "e3daf54d00fcaee042ef08c8939513def38d06c3ee19803ef2b1b3d4b43424cf",
+        "represented_normal": [
+          -0.0706771117958261,
+          0.9959065853230367,
+          0.05634553379292118
+        ],
+        "slots": [
+          {
+            "acceleration": [
+              -0.007096761165898,
+              0.1,
+              0.005657712743675121
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-01-OUTWARD",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.1,
+              0.004753714084267533,
+              0.04141332704191828
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-02-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.04100603769424673,
+              0.008567813302433919,
+              -0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-03-AUX-TANGENT-POS",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.04100603769424673,
+              -0.008567813302433919,
+              0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": null,
+            "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+            "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": null,
+            "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+            "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+            "duplicate_of": null
+          }
+        ],
+        "state": {
+          "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+          "position": [
+            0.41627371311187744,
+            2.925234794616699,
+            1.1168874502182007
+          ],
+          "timestamp": 0.0,
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "state_candidate_set_sha256": "bb5cd7353e84e6922abf5e664c2f9d3afda43a547252bdc3121708f1182a28de"
+      },
+      "formal_method_run_count": 0,
+      "label": "REPLICA_STATIONARY_SAFE_05",
+      "logical_rollout_count": 0,
+      "map_query": {
+        "active_gaussian_ids": [
+          783998
+        ],
+        "reason": "FULL_GAUSSIAN_SPHERE_QUERY_FINITE",
+        "scope": "FULL",
+        "status": "FINITE"
+      },
+      "reference_query_count": 0,
+      "route_id": "07c803730c3d9b012732b71cf71ccb37f613ef364833f0cae7db247ec34c70fb",
+      "slots": [
+        {
+          "acceleration": [
+            -0.007096761165898,
+            0.1,
+            0.005657712743675121
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-01-OUTWARD",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.1,
+            0.004753714084267533,
+            0.04141332704191828
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-02-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.04100603769424673,
+            0.008567813302433919,
+            -0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.04100603769424673,
+            -0.008567813302433919,
+            0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": null,
+          "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": null,
+          "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+          "duplicate_of": null
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          0.41627371311187744,
+          2.925234794616699,
+          1.1168874502182007
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "benchmark_registry_count": 0,
+      "candidate_identity": {
+        "active_primitive_id": 618610,
+        "auxiliary_tangent": [
+          0.3770962640970516,
+          0.12230042493528907,
+          0.9180637307206371
+        ],
+        "braking_control": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "goal": [
+          -0.7150417566299438,
+          2.925234794616699,
+          0.22988463938236237
+        ],
+        "goal_tangent": [
+          -0.9261727627291169,
+          0.05146047496958036,
+          0.3735717241636742
+        ],
+        "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "ordered_tuple_sha256": "c6d3e2502446dadde95210f9527cd431476dded87b46ee4caefcc5e781d6bbc1",
+        "represented_normal": [
+          0.001556015026202958,
+          0.9911581233973482,
+          -0.13267687530495023
+        ],
+        "slots": [
+          {
+            "acceleration": [
+              0.00015698958516018364,
+              0.1,
+              -0.013386045291156942
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-01-OUTWARD",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.1,
+              0.00555625009074374,
+              0.04033499355594145
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-02-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.0410751728315254,
+              0.013321561547724903,
+              0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-03-AUX-TANGENT-POS",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.0410751728315254,
+              -0.013321561547724903,
+              -0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": null,
+            "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+            "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": null,
+            "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+            "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+            "duplicate_of": null
+          }
+        ],
+        "state": {
+          "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+          "position": [
+            -0.10919113457202911,
+            2.925234794616699,
+            -0.018969550728797913
+          ],
+          "timestamp": 0.0,
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "state_candidate_set_sha256": "2acf44f680815eadf427ebc0d87bed1000e1214c433b690d3e0752b5f85aca0b"
+      },
+      "formal_method_run_count": 0,
+      "label": "REPLICA_STATIONARY_SAFE_06",
+      "logical_rollout_count": 0,
+      "map_query": {
+        "active_gaussian_ids": [
+          618610
+        ],
+        "reason": "FULL_GAUSSIAN_SPHERE_QUERY_FINITE",
+        "scope": "FULL",
+        "status": "FINITE"
+      },
+      "reference_query_count": 0,
+      "route_id": "0df9f0c5903f650995cfd28f8ed86270f8888f97ded6beeee496635bbfb29407",
+      "slots": [
+        {
+          "acceleration": [
+            0.00015698958516018364,
+            0.1,
+            -0.013386045291156942
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-01-OUTWARD",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.1,
+            0.00555625009074374,
+            0.04033499355594145
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-02-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.0410751728315254,
+            0.013321561547724903,
+            0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.0410751728315254,
+            -0.013321561547724903,
+            -0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": null,
+          "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": null,
+          "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+          "duplicate_of": null
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          -0.10919113457202911,
+          2.925234794616699,
+          -0.018969550728797913
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "benchmark_registry_count": 0,
+      "candidate_identity": {
+        "active_primitive_id": 1824413,
+        "auxiliary_tangent": [
+          0.04776369847795275,
+          -0.9945321359131686,
+          0.09286796941732954
+        ],
+        "braking_control": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "goal": [
+          3.5384974479675293,
+          2.925234794616699,
+          3.0153861045837402
+        ],
+        "goal_tangent": [
+          -0.8949671918866947,
+          -0.0013229900171672822,
+          0.4461299980318053
+        ],
+        "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "ordered_tuple_sha256": "04d879c24f0f5eb70f3b7ba64eb98ef73a804c582a1dde27ccf25951e9aae9cb",
+        "represented_normal": [
+          0.4435677564410553,
+          0.10442260451360766,
+          0.8901368238155544
+        ],
+        "slots": [
+          {
+            "acceleration": [
+              0.049831412943878745,
+              0.011731073439474415,
+              0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-01-OUTWARD",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.1,
+              -0.00014782553250675766,
+              0.04984875446565941
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-02-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.004802629975762085,
+              -0.1,
+              0.009337855064085908
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-03-AUX-TANGENT-POS",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.004802629975762085,
+              0.1,
+              -0.009337855064085908
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": null,
+            "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+            "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": null,
+            "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+            "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+            "duplicate_of": null
+          }
+        ],
+        "state": {
+          "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+          "position": [
+            4.4943647384643555,
+            2.925234794616699,
+            2.523766040802002
+          ],
+          "timestamp": 0.0,
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "state_candidate_set_sha256": "b9f1b3d7cb3e09d43375115c466b2430ffd15893e3e1ccb94f6f7cc81719f820"
+      },
+      "formal_method_run_count": 0,
+      "label": "REPLICA_STATIONARY_SAFE_07",
+      "logical_rollout_count": 0,
+      "map_query": {
+        "active_gaussian_ids": [
+          1824413
+        ],
+        "reason": "FULL_GAUSSIAN_SPHERE_QUERY_FINITE",
+        "scope": "FULL",
+        "status": "FINITE"
+      },
+      "reference_query_count": 0,
+      "route_id": "04b13194c4fbed8933f35646b0da45a48c35db555722b1a3104717c9877adc74",
+      "slots": [
+        {
+          "acceleration": [
+            0.049831412943878745,
+            0.011731073439474415,
+            0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-01-OUTWARD",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.1,
+            -0.00014782553250675766,
+            0.04984875446565941
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-02-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.004802629975762085,
+            -0.1,
+            0.009337855064085908
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.004802629975762085,
+            0.1,
+            -0.009337855064085908
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": null,
+          "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": null,
+          "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+          "duplicate_of": null
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          4.4943647384643555,
+          2.925234794616699,
+          2.523766040802002
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "benchmark_registry_count": 0,
+      "candidate_identity": {
+        "active_primitive_id": 933829,
+        "auxiliary_tangent": [
+          0.14769609180842166,
+          0.20492167422013233,
+          0.9675706547324264
+        ],
+        "braking_control": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "goal": [
+          -0.5785002112388611,
+          2.925234794616699,
+          2.9530038833618164
+        ],
+        "goal_tangent": [
+          -0.9690991836953713,
+          -0.16543782959869047,
+          0.18296747442821518
+        ],
+        "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "ordered_tuple_sha256": "5ccaa3689fe83f0c4cf10b8091f84dfa287f8cf6f54b4fddb2d239db8be7c05c",
+        "represented_normal": [
+          -0.19756679028997562,
+          0.964695512569895,
+          -0.17415490633922484
+        ],
+        "slots": [
+          {
+            "acceleration": [
+              -0.020479704499056776,
+              0.1,
+              -0.01805283678321317
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-01-OUTWARD",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.1,
+              -0.017071300067330833,
+              0.018880159792367502
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-02-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.015264631175618467,
+              0.02117898814085073,
+              0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-03-AUX-TANGENT-POS",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.015264631175618467,
+              -0.02117898814085073,
+              -0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": null,
+            "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+            "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": null,
+            "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+            "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+            "duplicate_of": null
+          }
+        ],
+        "state": {
+          "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+          "position": [
+            0.9695367813110352,
+            2.925234794616699,
+            2.7167017459869385
+          ],
+          "timestamp": 0.0,
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "state_candidate_set_sha256": "d7198131487ffe151fca568700076b8b508f37b9cdc0e679ce0d262eccbaf6c9"
+      },
+      "formal_method_run_count": 0,
+      "label": "REPLICA_STATIONARY_SAFE_08",
+      "logical_rollout_count": 0,
+      "map_query": {
+        "active_gaussian_ids": [
+          933829
+        ],
+        "reason": "FULL_GAUSSIAN_SPHERE_QUERY_FINITE",
+        "scope": "FULL",
+        "status": "FINITE"
+      },
+      "reference_query_count": 0,
+      "route_id": "01164d7c3f46771bd5c8fbc8967d84db00693c922725e110efa82af34abb332d",
+      "slots": [
+        {
+          "acceleration": [
+            -0.020479704499056776,
+            0.1,
+            -0.01805283678321317
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-01-OUTWARD",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.1,
+            -0.017071300067330833,
+            0.018880159792367502
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-02-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.015264631175618467,
+            0.02117898814085073,
+            0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.015264631175618467,
+            -0.02117898814085073,
+            -0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": null,
+          "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": null,
+          "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+          "duplicate_of": null
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          0.9695367813110352,
+          2.925234794616699,
+          2.7167017459869385
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "benchmark_registry_count": 0,
+      "candidate_identity": {
+        "active_primitive_id": 353664,
+        "auxiliary_tangent": [
+          0.02266138646559507,
+          0.9769111989882588,
+          -0.21244051133147732
+        ],
+        "braking_control": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "goal": [
+          -1.627970814704895,
+          0.19958889484405518,
+          1.0031087398529053
+        ],
+        "goal_tangent": [
+          -0.95733484077829,
+          0.08243818324907479,
+          0.27697283002958645
+        ],
+        "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "ordered_tuple_sha256": "21a34f6eff912dedb6a3dfaf63ae0cd05650c8e46acb56053f3718b8a56d770f",
+        "represented_normal": [
+          -0.288091069274046,
+          -0.19710011474860828,
+          -0.9370992906680818
+        ],
+        "slots": [
+          {
+            "acceleration": [
+              -0.03074285426773278,
+              -0.02103300223481021,
+              -0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-01-OUTWARD",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.1,
+              0.00861121728130719,
+              0.02893165674451107
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-02-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.0023196976848115173,
+              0.1,
+              -0.021746143513503787
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-03-AUX-TANGENT-POS",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.0023196976848115173,
+              -0.1,
+              0.021746143513503787
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": null,
+            "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+            "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": null,
+            "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+            "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+            "duplicate_of": null
+          }
+        ],
+        "state": {
+          "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+          "position": [
+            -1.1937029361724854,
+            0.16010022163391113,
+            0.867843508720398
+          ],
+          "timestamp": 0.0,
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "state_candidate_set_sha256": "dbe1d32c3297fe447ff9008509a2ac5022dc628ffe62c8d5cd7e275f8f82cbf1"
+      },
+      "formal_method_run_count": 0,
+      "label": "REPLICA_STATIONARY_SAFE_09",
+      "logical_rollout_count": 0,
+      "map_query": {
+        "active_gaussian_ids": [
+          353664
+        ],
+        "reason": "FULL_GAUSSIAN_SPHERE_QUERY_FINITE",
+        "scope": "FULL",
+        "status": "FINITE"
+      },
+      "reference_query_count": 0,
+      "route_id": "ea21c8a1f51a67e852872b7ad20fa98a56f06b5a2df7c75c8d77e94df28aab0b",
+      "slots": [
+        {
+          "acceleration": [
+            -0.03074285426773278,
+            -0.02103300223481021,
+            -0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-01-OUTWARD",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.1,
+            0.00861121728130719,
+            0.02893165674451107
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-02-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.0023196976848115173,
+            0.1,
+            -0.021746143513503787
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.0023196976848115173,
+            -0.1,
+            0.021746143513503787
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": null,
+          "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": null,
+          "availability": "BRAKING_DIRECTION_UNAVAILABLE",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+          "duplicate_of": null
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          -1.1937029361724854,
+          0.16010022163391113,
+          0.867843508720398
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "benchmark_registry_count": 0,
+      "candidate_identity": {
+        "active_primitive_id": 936984,
+        "auxiliary_tangent": [
+          -0.5364364225956835,
+          -0.2121539059088454,
+          -0.8168394485578951
+        ],
+        "braking_control": [
+          0.08358669000643555,
+          -0.0,
+          -0.0548932168283846
+        ],
+        "goal": [
+          0.4716522991657257,
+          0.12523484230041504,
+          2.2526073455810547
+        ],
+        "goal_tangent": [
+          -0.7748177076815448,
+          -0.2598254107009376,
+          0.5763230654912271
+        ],
+        "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "ordered_tuple_sha256": "1623240d4b5e6c02851d26f2bd0cb94221a184a37c0489a8541210da83191f0b",
+        "represented_normal": [
+          0.3345048346076056,
+          -0.9420623525869771,
+          0.025000789236112587
+        ],
+        "slots": [
+          {
+            "acceleration": [
+              0.035507717051746004,
+              -0.1,
+              0.0026538359342625738
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-01-OUTWARD",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.1,
+              -0.03353374711561543,
+              0.07438176228776895
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-02-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.06567219831788798,
+              -0.025972534294639735,
+              -0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-03-AUX-TANGENT-POS",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.06567219831788798,
+              0.025972534294639735,
+              0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.023496236268083576,
+              -0.1,
+              0.010542039415424366
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.1,
+              -0.08049257553635503,
+              -0.04476623653206936
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+            "duplicate_of": null
+          }
+        ],
+        "state": {
+          "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+          "position": [
+            1.108504295349121,
+            0.12523484230041504,
+            1.834372639656067
+          ],
+          "timestamp": 0.0,
+          "velocity": [
+            -0.004179334500321778,
+            0.0,
+            0.00274466084141923
+          ]
+        },
+        "state_candidate_set_sha256": "2b3f583df3cdc965e54ecc6ce540ba316c95b9917ba47c59cda7001dc479ea3a"
+      },
+      "formal_method_run_count": 0,
+      "label": "REPLICA_NONZERO_BRAKING_00",
+      "logical_rollout_count": 0,
+      "map_query": {
+        "active_gaussian_ids": [
+          936984
+        ],
+        "reason": "FULL_GAUSSIAN_SPHERE_QUERY_FINITE",
+        "scope": "FULL",
+        "status": "FINITE"
+      },
+      "reference_query_count": 0,
+      "route_id": "8f0977d300d1500f616cbdf672c46986622e84ce42ea1cc643ca7c9344c40789",
+      "slots": [
+        {
+          "acceleration": [
+            0.035507717051746004,
+            -0.1,
+            0.0026538359342625738
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-01-OUTWARD",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.1,
+            -0.03353374711561543,
+            0.07438176228776895
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-02-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.06567219831788798,
+            -0.025972534294639735,
+            -0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.06567219831788798,
+            0.025972534294639735,
+            0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.023496236268083576,
+            -0.1,
+            0.010542039415424366
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.1,
+            -0.08049257553635503,
+            -0.04476623653206936
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+          "duplicate_of": null
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          1.108504295349121,
+          0.12523484230041504,
+          1.834372639656067
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          -0.004179334500321778,
+          0.0,
+          0.00274466084141923
+        ]
+      }
+    },
+    {
+      "benchmark_registry_count": 0,
+      "candidate_identity": {
+        "active_primitive_id": 181395,
+        "auxiliary_tangent": [
+          0.11440853128570648,
+          0.01094855885652646,
+          -0.9933734529511108
+        ],
+        "braking_control": [
+          -0.09898534842730916,
+          0.008607421089012093,
+          -0.01130544554277425
+        ],
+        "goal": [
+          -1.1937029361724854,
+          0.16010022163391113,
+          0.867843508720398
+        ],
+        "goal_tangent": [
+          0.9926295748006885,
+          0.03896701891795153,
+          0.1147523362187119
+        ],
+        "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "ordered_tuple_sha256": "ea34136432e9a1ad55638a1f153cad7a3e1677db00a74158be0a663c0465d04e",
+        "represented_normal": [
+          -0.039965174840751246,
+          0.9991805144695394,
+          0.006409703919448999
+        ],
+        "slots": [
+          {
+            "acceleration": [
+              -0.0039997952584142,
+              0.1,
+              0.0006414960887074428
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-01-OUTWARD",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.1,
+              0.003925635494567627,
+              0.01156043897258987
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-02-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.011517172212104318,
+              0.001102159396750589,
+              -0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-03-AUX-TANGENT-POS",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.011517172212104318,
+              -0.001102159396750589,
+              0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.0022201401344643873,
+              0.1,
+              0.0013578567593868955
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.09489188437051536,
+              0.1,
+              -0.009826702341512566
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+            "duplicate_of": null
+          }
+        ],
+        "state": {
+          "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+          "position": [
+            -2.1930789947509766,
+            0.2470024824142456,
+            0.7537014484405518
+          ],
+          "timestamp": 0.0,
+          "velocity": [
+            0.004949267421365458,
+            -0.0004303710544506047,
+            0.0005652722771387125
+          ]
+        },
+        "state_candidate_set_sha256": "40698314a8b4849a9df5877137ead11a42f4b694debd8b2d4bded0d362e229ea"
+      },
+      "formal_method_run_count": 0,
+      "label": "REPLICA_NONZERO_BRAKING_01",
+      "logical_rollout_count": 0,
+      "map_query": {
+        "active_gaussian_ids": [
+          181395
+        ],
+        "reason": "FULL_GAUSSIAN_SPHERE_QUERY_FINITE",
+        "scope": "FULL",
+        "status": "FINITE"
+      },
+      "reference_query_count": 0,
+      "route_id": "496c2538d1509209e2c2e8b2a96bd088f95596ee202c0bf3c547698ebe49ac52",
+      "slots": [
+        {
+          "acceleration": [
+            -0.0039997952584142,
+            0.1,
+            0.0006414960887074428
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-01-OUTWARD",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.1,
+            0.003925635494567627,
+            0.01156043897258987
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-02-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.011517172212104318,
+            0.001102159396750589,
+            -0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.011517172212104318,
+            -0.001102159396750589,
+            0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.0022201401344643873,
+            0.1,
+            0.0013578567593868955
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.09489188437051536,
+            0.1,
+            -0.009826702341512566
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+          "duplicate_of": null
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          -2.1930789947509766,
+          0.2470024824142456,
+          0.7537014484405518
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          0.004949267421365458,
+          -0.0004303710544506047,
+          0.0005652722771387125
+        ]
+      }
+    },
+    {
+      "benchmark_registry_count": 0,
+      "candidate_identity": {
+        "active_primitive_id": 936984,
+        "auxiliary_tangent": [
+          -0.8004279402852285,
+          -0.29801622344171524,
+          -0.5200975321766913
+        ],
+        "braking_control": [
+          0.05448553192392022,
+          -0.0,
+          -0.0838530071671104
+        ],
+        "goal": [
+          0.366214394569397,
+          0.12523484230041504,
+          2.9767537117004395
+        ],
+        "goal_tangent": [
+          -0.4974149455282633,
+          -0.15396380874682125,
+          0.8537408960342049
+        ],
+        "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "ordered_tuple_sha256": "46bbbcd965e2c9c334f77441542e0e0d76190fe6110e85f05056dc9727d780e5",
+        "represented_normal": [
+          0.3345048346076056,
+          -0.9420623525869771,
+          0.025000789236112587
+        ],
+        "slots": [
+          {
+            "acceleration": [
+              0.035507717051746004,
+              -0.1,
+              0.0026538359342625738
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-01-OUTWARD",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.058262986795976864,
+              -0.018034020563149025,
+              0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-02-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.1,
+              -0.03723211152967982,
+              -0.06497743344533391
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-03-AUX-TANGENT-POS",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.1,
+              0.03723211152967982,
+              0.06497743344533391
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.030812678704870252,
+              -0.1,
+              0.009879480435635093
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.09334415619433427,
+              -0.1,
+              -0.0863562035146587
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+            "duplicate_of": null
+          }
+        ],
+        "state": {
+          "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+          "position": [
+            1.108504295349121,
+            0.12523484230041504,
+            1.834372639656067
+          ],
+          "timestamp": 0.0,
+          "velocity": [
+            -0.0027242765961960113,
+            0.0,
+            0.004192650358355521
+          ]
+        },
+        "state_candidate_set_sha256": "a1ef47194eedf87c44ae77bf2b5587b2c9d0fb46823113950c89b0139cdbfc69"
+      },
+      "formal_method_run_count": 0,
+      "label": "REPLICA_NONZERO_BRAKING_02",
+      "logical_rollout_count": 0,
+      "map_query": {
+        "active_gaussian_ids": [
+          936984
+        ],
+        "reason": "FULL_GAUSSIAN_SPHERE_QUERY_FINITE",
+        "scope": "FULL",
+        "status": "FINITE"
+      },
+      "reference_query_count": 0,
+      "route_id": "038a7f5b22b1564f863904370f3269f6d5635af79587d8fb6be33cf0e0258b5e",
+      "slots": [
+        {
+          "acceleration": [
+            0.035507717051746004,
+            -0.1,
+            0.0026538359342625738
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-01-OUTWARD",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.058262986795976864,
+            -0.018034020563149025,
+            0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-02-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.1,
+            -0.03723211152967982,
+            -0.06497743344533391
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.1,
+            0.03723211152967982,
+            0.06497743344533391
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.030812678704870252,
+            -0.1,
+            0.009879480435635093
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.09334415619433427,
+            -0.1,
+            -0.0863562035146587
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+          "duplicate_of": null
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          1.108504295349121,
+          0.12523484230041504,
+          1.834372639656067
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          -0.0027242765961960113,
+          0.0,
+          0.004192650358355521
+        ]
+      }
+    },
+    {
+      "benchmark_registry_count": 0,
+      "candidate_identity": {
+        "active_primitive_id": 783051,
+        "auxiliary_tangent": [
+          0.042121166735157596,
+          -0.8563177214306577,
+          -0.5147288288765994
+        ],
+        "braking_control": [
+          0.09966685039687023,
+          -0.0,
+          0.008155913925973288
+        ],
+        "goal": [
+          -0.20004546642303467,
+          0.12523484230041504,
+          2.197641134262085
+        ],
+        "goal_tangent": [
+          -0.9961858577544905,
+          -0.0753992882578041,
+          0.04391678654189512
+        ],
+        "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "ordered_tuple_sha256": "60b0749ad4f4cf05d6f43af30864156e72c114c9805bb6cd82fc7e654c9124ac",
+        "represented_normal": [
+          0.07641690992718081,
+          -0.5109157536169961,
+          0.8562275098261899
+        ],
+        "slots": [
+          {
+            "acceleration": [
+              0.00892483703807801,
+              -0.05967056042391229,
+              0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-01-OUTWARD",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.1,
+              -0.007568797295292082,
+              0.0044084932746273125
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-02-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.004918871311548404,
+              -0.1,
+              -0.060109561672580754
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-03-AUX-TANGENT-POS",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.004918871311548404,
+              0.1,
+              0.060109561672580754
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.0003846524431906206,
+              -0.06009064111390347,
+              0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.09999999999999999,
+              -0.04761184403411973,
+              0.0873916127217914
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+            "duplicate_of": null
+          }
+        ],
+        "state": {
+          "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+          "position": [
+            0.4716522991657257,
+            0.12523484230041504,
+            2.2526073455810547
+          ],
+          "timestamp": 0.0,
+          "velocity": [
+            -0.004983342519843512,
+            0.0,
+            -0.0004077956962986644
+          ]
+        },
+        "state_candidate_set_sha256": "d7de658e9d8bc4ba153c24c003d19ccd9fa24556328fd4c280dd1b2526fe378b"
+      },
+      "formal_method_run_count": 0,
+      "label": "REPLICA_NONZERO_BRAKING_03",
+      "logical_rollout_count": 0,
+      "map_query": {
+        "active_gaussian_ids": [
+          783051
+        ],
+        "reason": "FULL_GAUSSIAN_SPHERE_QUERY_FINITE",
+        "scope": "FULL",
+        "status": "FINITE"
+      },
+      "reference_query_count": 0,
+      "route_id": "086efc751cec69b43a7eab59b843627e8e64871b249201cbfcd484b0057572ee",
+      "slots": [
+        {
+          "acceleration": [
+            0.00892483703807801,
+            -0.05967056042391229,
+            0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-01-OUTWARD",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.1,
+            -0.007568797295292082,
+            0.0044084932746273125
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-02-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.004918871311548404,
+            -0.1,
+            -0.060109561672580754
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.004918871311548404,
+            0.1,
+            0.060109561672580754
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.0003846524431906206,
+            -0.06009064111390347,
+            0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.09999999999999999,
+            -0.04761184403411973,
+            0.0873916127217914
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+          "duplicate_of": null
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          0.4716522991657257,
+          0.12523484230041504,
+          2.2526073455810547
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          -0.004983342519843512,
+          0.0,
+          -0.0004077956962986644
+        ]
+      }
+    },
+    {
+      "benchmark_registry_count": 0,
+      "candidate_identity": {
+        "active_primitive_id": 944581,
+        "auxiliary_tangent": [
+          -0.32924773252295825,
+          -0.9439947662393819,
+          -0.02167514570066854
+        ],
+        "braking_control": [
+          -0.006569013776629836,
+          -0.0,
+          0.0997840070251864
+        ],
+        "goal": [
+          1.108504295349121,
+          0.12523484230041504,
+          1.834372639656067
+        ],
+        "goal_tangent": [
+          0.9421593498950157,
+          -0.32691007310033166,
+          -0.07392944955115549
+        ],
+        "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "ordered_tuple_sha256": "ce37f39f6ad2bbba72ff97825937c5a3d01c8247c68498b1bd74780b33230979",
+        "represented_normal": [
+          -0.06270318998178229,
+          0.04476254481360964,
+          -0.9970278955715923
+        ],
+        "slots": [
+          {
+            "acceleration": [
+              -0.006289010594416196,
+              0.004489598035564235,
+              -0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-01-OUTWARD",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.1,
+              -0.03469795986599922,
+              -0.00784680951894108
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-02-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.03487813113992057,
+              -0.1,
+              -0.002296108673040256
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-03-AUX-TANGENT-POS",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.03487813113992057,
+              0.1,
+              0.002296108673040256
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.09486515172474035,
+              -0.035383300697679816,
+              0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.1,
+              0.03486360669881367,
+              0.0006325676688318072
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+            "duplicate_of": null
+          }
+        ],
+        "state": {
+          "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+          "position": [
+            1.0406432151794434,
+            0.12523484230041504,
+            2.865189552307129
+          ],
+          "timestamp": 0.0,
+          "velocity": [
+            0.00032845068883149183,
+            0.0,
+            -0.00498920035125932
+          ]
+        },
+        "state_candidate_set_sha256": "972e63ee2a5eb37e65e2e30056509bc5ee42bd518ca13f19e46519f90e48f0eb"
+      },
+      "formal_method_run_count": 0,
+      "label": "REPLICA_NONZERO_BRAKING_04",
+      "logical_rollout_count": 0,
+      "map_query": {
+        "active_gaussian_ids": [
+          944581
+        ],
+        "reason": "FULL_GAUSSIAN_SPHERE_QUERY_FINITE",
+        "scope": "FULL",
+        "status": "FINITE"
+      },
+      "reference_query_count": 0,
+      "route_id": "0be301a2124e929472389a837c43e459a24574183af2dfd1bdaa44fbaf494e10",
+      "slots": [
+        {
+          "acceleration": [
+            -0.006289010594416196,
+            0.004489598035564235,
+            -0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-01-OUTWARD",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.1,
+            -0.03469795986599922,
+            -0.00784680951894108
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-02-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.03487813113992057,
+            -0.1,
+            -0.002296108673040256
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.03487813113992057,
+            0.1,
+            0.002296108673040256
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.09486515172474035,
+            -0.035383300697679816,
+            0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.1,
+            0.03486360669881367,
+            0.0006325676688318072
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+          "duplicate_of": null
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          1.0406432151794434,
+          0.12523484230041504,
+          2.865189552307129
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          0.00032845068883149183,
+          0.0,
+          -0.00498920035125932
+        ]
+      }
+    },
+    {
+      "benchmark_registry_count": 0,
+      "candidate_identity": {
+        "active_primitive_id": 783998,
+        "auxiliary_tangent": [
+          0.3782146002912136,
+          0.07902426729721403,
+          -0.9223388104729715
+        ],
+        "braking_control": [
+          -0.09252322963140322,
+          -0.0,
+          -0.037940110418587664
+        ],
+        "goal": [
+          2.118241310119629,
+          2.925234794616699,
+          1.8147969245910645
+        ],
+        "goal_tangent": [
+          0.9230159597725047,
+          0.0438775396797427,
+          0.3822516180696882
+        ],
+        "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "ordered_tuple_sha256": "24d99243ee88f68cce6296a28c5cf04698075ddbf55a09adb170d99b7c7b40cb",
+        "represented_normal": [
+          -0.0706771117958261,
+          0.9959065853230367,
+          0.05634553379292118
+        ],
+        "slots": [
+          {
+            "acceleration": [
+              -0.007096761165898,
+              0.1,
+              0.005657712743675121
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-01-OUTWARD",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.1,
+              0.004753714084267533,
+              0.04141332704191828
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-02-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.04100603769424673,
+              0.008567813302433919,
+              -0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-03-AUX-TANGENT-POS",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.04100603769424673,
+              -0.008567813302433919,
+              0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.005051186911810545,
+              0.1,
+              0.006496521693369894
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.09999999999999999,
+              0.09999971656188816,
+              -0.03243824867626106
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+            "duplicate_of": null
+          }
+        ],
+        "state": {
+          "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+          "position": [
+            0.41627371311187744,
+            2.925234794616699,
+            1.1168874502182007
+          ],
+          "timestamp": 0.0,
+          "velocity": [
+            0.0046261614815701615,
+            0.0,
+            0.0018970055209293834
+          ]
+        },
+        "state_candidate_set_sha256": "4733909fc9a5d6f508108d84cdc4d1e0083fdf68998b3276f82e58e6472db73d"
+      },
+      "formal_method_run_count": 0,
+      "label": "REPLICA_NONZERO_BRAKING_05",
+      "logical_rollout_count": 0,
+      "map_query": {
+        "active_gaussian_ids": [
+          783998
+        ],
+        "reason": "FULL_GAUSSIAN_SPHERE_QUERY_FINITE",
+        "scope": "FULL",
+        "status": "FINITE"
+      },
+      "reference_query_count": 0,
+      "route_id": "07c803730c3d9b012732b71cf71ccb37f613ef364833f0cae7db247ec34c70fb",
+      "slots": [
+        {
+          "acceleration": [
+            -0.007096761165898,
+            0.1,
+            0.005657712743675121
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-01-OUTWARD",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.1,
+            0.004753714084267533,
+            0.04141332704191828
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-02-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.04100603769424673,
+            0.008567813302433919,
+            -0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.04100603769424673,
+            -0.008567813302433919,
+            0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.005051186911810545,
+            0.1,
+            0.006496521693369894
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.09999999999999999,
+            0.09999971656188816,
+            -0.03243824867626106
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+          "duplicate_of": null
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          0.41627371311187744,
+          2.925234794616699,
+          1.1168874502182007
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          0.0046261614815701615,
+          0.0,
+          0.0018970055209293834
+        ]
+      }
+    },
+    {
+      "benchmark_registry_count": 0,
+      "candidate_identity": {
+        "active_primitive_id": 618610,
+        "auxiliary_tangent": [
+          0.3770962640970516,
+          0.12230042493528907,
+          0.9180637307206371
+        ],
+        "braking_control": [
+          0.09250076461483248,
+          -0.0,
+          -0.037994848936024936
+        ],
+        "goal": [
+          -0.7150417566299438,
+          2.925234794616699,
+          0.22988463938236237
+        ],
+        "goal_tangent": [
+          -0.9261727627291169,
+          0.05146047496958036,
+          0.3735717241636742
+        ],
+        "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "ordered_tuple_sha256": "26cf66920c76979d53d22f1fd40099c37f1f74cdc4e045e8cc8c5655a0a565aa",
+        "represented_normal": [
+          0.001556015026202958,
+          0.9911581233973482,
+          -0.13267687530495023
+        ],
+        "slots": [
+          {
+            "acceleration": [
+              0.00015698958516018364,
+              0.1,
+              -0.013386045291156942
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-01-OUTWARD",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.1,
+              0.00555625009074374,
+              0.04033499355594145
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-02-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.0410751728315254,
+              0.013321561547724903,
+              0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-03-AUX-TANGENT-POS",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.0410751728315254,
+              -0.013321561547724903,
+              -0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.002264099935884235,
+              0.1,
+              -0.012391578585982117
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.0934829306547564,
+              0.1,
+              -0.05171983688214113
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+            "duplicate_of": null
+          }
+        ],
+        "state": {
+          "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+          "position": [
+            -0.10919113457202911,
+            2.925234794616699,
+            -0.018969550728797913
+          ],
+          "timestamp": 0.0,
+          "velocity": [
+            -0.004625038230741624,
+            0.0,
+            0.0018997424468012469
+          ]
+        },
+        "state_candidate_set_sha256": "d24ebb1f88c82b6cd563112feeaaeabd7023bbb94e3a61415c7baef948359069"
+      },
+      "formal_method_run_count": 0,
+      "label": "REPLICA_NONZERO_BRAKING_06",
+      "logical_rollout_count": 0,
+      "map_query": {
+        "active_gaussian_ids": [
+          618610
+        ],
+        "reason": "FULL_GAUSSIAN_SPHERE_QUERY_FINITE",
+        "scope": "FULL",
+        "status": "FINITE"
+      },
+      "reference_query_count": 0,
+      "route_id": "0df9f0c5903f650995cfd28f8ed86270f8888f97ded6beeee496635bbfb29407",
+      "slots": [
+        {
+          "acceleration": [
+            0.00015698958516018364,
+            0.1,
+            -0.013386045291156942
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-01-OUTWARD",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.1,
+            0.00555625009074374,
+            0.04033499355594145
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-02-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.0410751728315254,
+            0.013321561547724903,
+            0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.0410751728315254,
+            -0.013321561547724903,
+            -0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.002264099935884235,
+            0.1,
+            -0.012391578585982117
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.0934829306547564,
+            0.1,
+            -0.05171983688214113
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+          "duplicate_of": null
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          -0.10919113457202911,
+          2.925234794616699,
+          -0.018969550728797913
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          -0.004625038230741624,
+          0.0,
+          0.0018997424468012469
+        ]
+      }
+    },
+    {
+      "benchmark_registry_count": 0,
+      "candidate_identity": {
+        "active_primitive_id": 1824413,
+        "auxiliary_tangent": [
+          0.04776369847795275,
+          -0.9945321359131686,
+          0.09286796941732954
+        ],
+        "braking_control": [
+          0.0889276007342129,
+          -0.0,
+          -0.04573709465692388
+        ],
+        "goal": [
+          3.5384974479675293,
+          2.925234794616699,
+          3.0153861045837402
+        ],
+        "goal_tangent": [
+          -0.8949671918866947,
+          -0.0013229900171672822,
+          0.4461299980318053
+        ],
+        "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "ordered_tuple_sha256": "b048f1d4ea8e9dee558fe1259d78e55f476e8a87afcc4d113a863d2c87b03d24",
+        "represented_normal": [
+          0.4435677564410553,
+          0.10442260451360766,
+          0.8901368238155544
+        ],
+        "slots": [
+          {
+            "acceleration": [
+              0.049831412943878745,
+              0.011731073439474415,
+              0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-01-OUTWARD",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.1,
+              -0.00014782553250675766,
+              0.04984875446565941
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-02-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.004802629975762085,
+              -0.1,
+              0.009337855064085908
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-03-AUX-TANGENT-POS",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.004802629975762085,
+              0.1,
+              -0.009337855064085908
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.05062904189636207,
+              -0.011769380606641715,
+              -0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.1,
+              0.007834572014443117,
+              0.03246936280197911
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+            "duplicate_of": null
+          }
+        ],
+        "state": {
+          "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+          "position": [
+            4.4943647384643555,
+            2.925234794616699,
+            2.523766040802002
+          ],
+          "timestamp": 0.0,
+          "velocity": [
+            -0.004446380036710645,
+            0.0,
+            0.0022868547328461944
+          ]
+        },
+        "state_candidate_set_sha256": "bd1de1563f4103b0a5f8ca4e5490c99aa0867f2d73d883ca930f57f6c0e25d06"
+      },
+      "formal_method_run_count": 0,
+      "label": "REPLICA_NONZERO_BRAKING_07",
+      "logical_rollout_count": 0,
+      "map_query": {
+        "active_gaussian_ids": [
+          1824413
+        ],
+        "reason": "FULL_GAUSSIAN_SPHERE_QUERY_FINITE",
+        "scope": "FULL",
+        "status": "FINITE"
+      },
+      "reference_query_count": 0,
+      "route_id": "04b13194c4fbed8933f35646b0da45a48c35db555722b1a3104717c9877adc74",
+      "slots": [
+        {
+          "acceleration": [
+            0.049831412943878745,
+            0.011731073439474415,
+            0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-01-OUTWARD",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.1,
+            -0.00014782553250675766,
+            0.04984875446565941
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-02-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.004802629975762085,
+            -0.1,
+            0.009337855064085908
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.004802629975762085,
+            0.1,
+            -0.009337855064085908
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.05062904189636207,
+            -0.011769380606641715,
+            -0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.1,
+            0.007834572014443117,
+            0.03246936280197911
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+          "duplicate_of": null
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          4.4943647384643555,
+          2.925234794616699,
+          2.523766040802002
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          -0.004446380036710645,
+          0.0,
+          0.0022868547328461944
+        ]
+      }
+    },
+    {
+      "benchmark_registry_count": 0,
+      "candidate_identity": {
+        "active_primitive_id": 933829,
+        "auxiliary_tangent": [
+          0.14769609180842166,
+          0.20492167422013233,
+          0.9675706547324264
+        ],
+        "braking_control": [
+          0.09885492767435758,
+          -0.0,
+          -0.01508984010841507
+        ],
+        "goal": [
+          -0.5785002112388611,
+          2.925234794616699,
+          2.9530038833618164
+        ],
+        "goal_tangent": [
+          -0.9690991836953713,
+          -0.16543782959869047,
+          0.18296747442821518
+        ],
+        "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "ordered_tuple_sha256": "a18e5b7cd1805760ea094c173782bd99e55c46748671b4113f73cddefb40ddf2",
+        "represented_normal": [
+          -0.19756679028997562,
+          0.964695512569895,
+          -0.17415490633922484
+        ],
+        "slots": [
+          {
+            "acceleration": [
+              -0.020479704499056776,
+              0.1,
+              -0.01805283678321317
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-01-OUTWARD",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.1,
+              -0.017071300067330833,
+              0.018880159792367502
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-02-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.015264631175618467,
+              0.02117898814085073,
+              0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-03-AUX-TANGENT-POS",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.015264631175618467,
+              -0.02117898814085073,
+              -0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.011756738525514603,
+              -0.1,
+              0.01938436536664908
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.08199296836640889,
+              0.1,
+              -0.033694912351924566
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+            "duplicate_of": null
+          }
+        ],
+        "state": {
+          "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+          "position": [
+            0.9695367813110352,
+            2.925234794616699,
+            2.7167017459869385
+          ],
+          "timestamp": 0.0,
+          "velocity": [
+            -0.004942746383717879,
+            0.0,
+            0.0007544920054207535
+          ]
+        },
+        "state_candidate_set_sha256": "94b95261743d81cd27009f30e2837d52e6e18ac60f0d557dca0b556a3b9d4d24"
+      },
+      "formal_method_run_count": 0,
+      "label": "REPLICA_NONZERO_BRAKING_08",
+      "logical_rollout_count": 0,
+      "map_query": {
+        "active_gaussian_ids": [
+          933829
+        ],
+        "reason": "FULL_GAUSSIAN_SPHERE_QUERY_FINITE",
+        "scope": "FULL",
+        "status": "FINITE"
+      },
+      "reference_query_count": 0,
+      "route_id": "01164d7c3f46771bd5c8fbc8967d84db00693c922725e110efa82af34abb332d",
+      "slots": [
+        {
+          "acceleration": [
+            -0.020479704499056776,
+            0.1,
+            -0.01805283678321317
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-01-OUTWARD",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.1,
+            -0.017071300067330833,
+            0.018880159792367502
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-02-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.015264631175618467,
+            0.02117898814085073,
+            0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.015264631175618467,
+            -0.02117898814085073,
+            -0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.011756738525514603,
+            -0.1,
+            0.01938436536664908
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.08199296836640889,
+            0.1,
+            -0.033694912351924566
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+          "duplicate_of": null
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          0.9695367813110352,
+          2.925234794616699,
+          2.7167017459869385
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          -0.004942746383717879,
+          0.0,
+          0.0007544920054207535
+        ]
+      }
+    },
+    {
+      "benchmark_registry_count": 0,
+      "candidate_identity": {
+        "active_primitive_id": 353664,
+        "auxiliary_tangent": [
+          0.02266138646559507,
+          0.9769111989882588,
+          -0.21244051133147732
+        ],
+        "braking_control": [
+          0.0951179218502505,
+          -0.00864922486338635,
+          -0.029627214721472186
+        ],
+        "goal": [
+          -1.627970814704895,
+          0.19958889484405518,
+          1.0031087398529053
+        ],
+        "goal_tangent": [
+          -0.95733484077829,
+          0.08243818324907479,
+          0.27697283002958645
+        ],
+        "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "ordered_tuple_sha256": "a5112d075174b6c3035eab06975f2fcb58207903b769f0a8449c5a533f75651e",
+        "represented_normal": [
+          -0.288091069274046,
+          -0.19710011474860828,
+          -0.9370992906680818
+        ],
+        "slots": [
+          {
+            "acceleration": [
+              -0.03074285426773278,
+              -0.02103300223481021,
+              -0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-01-OUTWARD",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.1,
+              0.00861121728130719,
+              0.02893165674451107
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-02-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.0023196976848115173,
+              0.1,
+              -0.021746143513503787
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-03-AUX-TANGENT-POS",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.0023196976848115173,
+              -0.1,
+              0.021746143513503787
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              -0.031895544369446305,
+              -0.021006263309207695,
+              -0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+            "duplicate_of": null
+          },
+          {
+            "acceleration": [
+              0.05376224297578281,
+              -0.02299326501911576,
+              -0.1
+            ],
+            "availability": "AVAILABLE",
+            "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+            "duplicate_of": null
+          }
+        ],
+        "state": {
+          "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+          "position": [
+            -1.1937029361724854,
+            0.16010022163391113,
+            0.867843508720398
+          ],
+          "timestamp": 0.0,
+          "velocity": [
+            -0.004755896092512525,
+            0.00043246124316931756,
+            0.0014813607360736093
+          ]
+        },
+        "state_candidate_set_sha256": "ac64064347efbb482b43de0a942c2e16e76fa61ca92eb6da0015a1d744b02ebc"
+      },
+      "formal_method_run_count": 0,
+      "label": "REPLICA_NONZERO_BRAKING_09",
+      "logical_rollout_count": 0,
+      "map_query": {
+        "active_gaussian_ids": [
+          353664
+        ],
+        "reason": "FULL_GAUSSIAN_SPHERE_QUERY_FINITE",
+        "scope": "FULL",
+        "status": "FINITE"
+      },
+      "reference_query_count": 0,
+      "route_id": "ea21c8a1f51a67e852872b7ad20fa98a56f06b5a2df7c75c8d77e94df28aab0b",
+      "slots": [
+        {
+          "acceleration": [
+            -0.03074285426773278,
+            -0.02103300223481021,
+            -0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-01-OUTWARD",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.1,
+            0.00861121728130719,
+            0.02893165674451107
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-02-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.0023196976848115173,
+            0.1,
+            -0.021746143513503787
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.0023196976848115173,
+            -0.1,
+            0.021746143513503787
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            -0.031895544369446305,
+            -0.021006263309207695,
+            -0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "duplicate_of": null
+        },
+        {
+          "acceleration": [
+            0.05376224297578281,
+            -0.02299326501911576,
+            -0.1
+          ],
+          "availability": "AVAILABLE",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+          "duplicate_of": null
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          -1.1937029361724854,
+          0.16010022163391113,
+          0.867843508720398
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          -0.004755896092512525,
+          0.00043246124316931756,
+          0.0014813607360736093
+        ]
+      }
+    },
+    {
+      "formal_method_run_count": 0,
+      "label": "REPLICA_FROZEN_UNSAFE_STATE_00",
+      "reference_query_count": 0,
+      "slots": [
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-01-OUTWARD"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-02-GOAL-TANGENT"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD"
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          2.432128310638574,
+          0.17579915537757745,
+          -1.5893249230685649
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "status": "FROZEN_SMOKE_GOAL_UNAVAILABLE"
+    },
+    {
+      "formal_method_run_count": 0,
+      "label": "REPLICA_FROZEN_UNSAFE_STATE_01",
+      "reference_query_count": 0,
+      "slots": [
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-01-OUTWARD"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-02-GOAL-TANGENT"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD"
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          -0.2780527556206718,
+          0.12468740857640596,
+          -1.3503411539641323
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "status": "FROZEN_SMOKE_GOAL_UNAVAILABLE"
+    },
+    {
+      "formal_method_run_count": 0,
+      "label": "REPLICA_FROZEN_UNSAFE_STATE_02",
+      "reference_query_count": 0,
+      "slots": [
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-01-OUTWARD"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-02-GOAL-TANGENT"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD"
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          4.100305922429435,
+          -0.3996736834671173,
+          0.17033752952985853
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "status": "FROZEN_SMOKE_GOAL_UNAVAILABLE"
+    },
+    {
+      "formal_method_run_count": 0,
+      "label": "REPLICA_FROZEN_UNSAFE_STATE_03",
+      "reference_query_count": 0,
+      "slots": [
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-01-OUTWARD"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-02-GOAL-TANGENT"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD"
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          0.07647220377310357,
+          0.30657618983577267,
+          1.966976792628843
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "status": "FROZEN_SMOKE_GOAL_UNAVAILABLE"
+    },
+    {
+      "formal_method_run_count": 0,
+      "label": "REPLICA_FROZEN_UNSAFE_STATE_04",
+      "reference_query_count": 0,
+      "slots": [
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-01-OUTWARD"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-02-GOAL-TANGENT"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-03-AUX-TANGENT-POS"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-04-AUX-TANGENT-NEG"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT"
+        },
+        {
+          "availability": "DIRECTION_ZERO",
+          "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD"
+        }
+      ],
+      "state": {
+        "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+        "position": [
+          2.5954839599837194,
+          3.2524796854410045,
+          -0.7361280818436307
+        ],
+        "timestamp": 0.0,
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "status": "FROZEN_SMOKE_GOAL_UNAVAILABLE"
+    }
+  ],
+  "reference_query_count": 0,
+  "runtime_seconds_engineering_only": 1.2034082349855453,
+  "state_candidate_identity_aggregate_sha256": "d1456f02c576c59b825dedcdff18c4b4f0e85a3074c098f2b1c1ac56e64abe46",
+  "state_count": 25,
+  "status": "GENERATOR_ONLY_REPLICA_SMOKE_PASS"
+}

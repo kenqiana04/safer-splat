@@ -1,0 +1,68 @@
+{
+  "files": [
+    {
+      "git_blob": "7ce14ebed6b35c00187e298eebfecacb7d078440",
+      "mode": "100644",
+      "path": "adapters/__init__.py",
+      "sha256": "7d7fe669fd72862c91d0d638d4c68d981c6894d7a7240067ff84e69cf6c16574",
+      "size": 68
+    },
+    {
+      "git_blob": "6807970d4b28aa9c478ca018d7319a4fcef19da2",
+      "mode": "100644",
+      "path": "adapters/gaussian_barrier_adapter.py",
+      "sha256": "1de0d3a31c8babe7c0bab5f388360d7f024f729cf5d8670dfbef9800f40cf3d1",
+      "size": 7676
+    },
+    {
+      "git_blob": "fafd09901ae473d5a7b7d9b22c9af6455cb04671",
+      "mode": "100644",
+      "path": "certifier/__init__.py",
+      "sha256": "ba04331baf91ff0bc3914e2d65247ddc456bd92b5fb20d58916ca2eff784ba18",
+      "size": 50
+    },
+    {
+      "git_blob": "75a969fee5af1674c44414c51e0cee46cf34b0c9",
+      "mode": "100644",
+      "path": "certifier/result_types.py",
+      "sha256": "1c94a83dc45dddfab1e804ff4917f7d8988cadd95d93f26a60ca15f3bf7f43e5",
+      "size": 6838
+    },
+    {
+      "git_blob": "1685602c7007ed4949f90610b296653dad660986",
+      "mode": "100644",
+      "path": "certifier/segment_backends/__init__.py",
+      "sha256": "1c6b6ab182ec8bdb4b20d73888efc60919adfbe8c583c2067b8f48b2ad299c42",
+      "size": 52
+    },
+    {
+      "git_blob": "4d981d9915e4d726a69318401c746fc5dc180d3d",
+      "mode": "100644",
+      "path": "certifier/segment_backends/base.py",
+      "sha256": "4ffa3cafc1f329c332da03a6dc9e14315d1cdc5cc3c5b7725df13130ecb1038e",
+      "size": 1018
+    },
+    {
+      "git_blob": "68d9c94cedf444379c262c550dd80e9c289ea843",
+      "mode": "100644",
+      "path": "certifier/segment_backends/analytic_primitive.py",
+      "sha256": "7887c9061223a3e51e9c41991a0f0c2dc748665fcbe5fee0a0d5829022531e1e",
+      "size": 5746
+    },
+    {
+      "git_blob": "2cad89ed8b8ce34cdc11e9f093270bf3cad5da59",
+      "mode": "100644",
+      "path": "map_smoke/replica_smoke_records.json",
+      "sha256": "70a70166f6d55fcba69d12f71039653ac403e6d5bf5f2ebcbfdf4b23db297fc6",
+      "size": 46538
+    }
+  ],
+  "forbidden": [
+    "ExecutableSafetyCertifier",
+    "segment_outcome",
+    "backup_witness",
+    "reference_oracle"
+  ],
+  "pr84_head": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+  "purpose": "EXACT_PR84_FULL_GAUSSIAN_QUERY_ONLY"
+}

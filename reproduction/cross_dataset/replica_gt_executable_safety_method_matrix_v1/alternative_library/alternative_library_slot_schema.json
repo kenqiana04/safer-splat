@@ -1,0 +1,54 @@
+{
+  "availability_states": [
+    "AVAILABLE",
+    "MAP_QUERY_UNAVAILABLE",
+    "ACTIVE_PRIMITIVE_UNAVAILABLE",
+    "NORMAL_DEGENERATE",
+    "GOAL_DEGENERATE_AXIS_FALLBACK_USED",
+    "DIRECTION_NONFINITE",
+    "DIRECTION_ZERO",
+    "BRAKING_DIRECTION_UNAVAILABLE",
+    "DEGENERATE_AFTER_DECELERATION_PROJECTION",
+    "DUPLICATE_OF_EARLIER_SLOT",
+    "ACTUATOR_CONTRACT_REJECTED"
+  ],
+  "library_id": "REPLICA_GT_REPRESENTED_MAP_DIRECTIONAL_ALTERNATIVE_LIBRARY_V1",
+  "slot_schema": [
+    {
+      "candidate_id": "ALT-01-OUTWARD",
+      "formula": "u_box(n)",
+      "slot_index": 1,
+      "source": "TASK_LOCAL_REPRESENTED_MAP_DIRECTIONAL_V1"
+    },
+    {
+      "candidate_id": "ALT-02-GOAL-TANGENT",
+      "formula": "u_box(t_g)",
+      "slot_index": 2,
+      "source": "TASK_LOCAL_REPRESENTED_MAP_DIRECTIONAL_V1"
+    },
+    {
+      "candidate_id": "ALT-03-AUX-TANGENT-POS",
+      "formula": "u_box(t_a)",
+      "slot_index": 3,
+      "source": "TASK_LOCAL_REPRESENTED_MAP_DIRECTIONAL_V1"
+    },
+    {
+      "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+      "formula": "u_box(-t_a)",
+      "slot_index": 4,
+      "source": "TASK_LOCAL_REPRESENTED_MAP_DIRECTIONAL_V1"
+    },
+    {
+      "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+      "formula": "u_box(project_Hv(b_hat+t_g))",
+      "slot_index": 5,
+      "source": "TASK_LOCAL_REPRESENTED_MAP_DIRECTIONAL_V1"
+    },
+    {
+      "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+      "formula": "u_box(project_Hv(b_hat+n))",
+      "slot_index": 6,
+      "source": "TASK_LOCAL_REPRESENTED_MAP_DIRECTIONAL_V1"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "library_id": "REPLICA_GT_REPRESENTED_MAP_DIRECTIONAL_ALTERNATIVE_LIBRARY_V1",
+  "source_manifest": [
+    {
+      "path": "task_config.py",
+      "sha256": "5127bf58c54f0d1e2a103ee3c3f970a1d80400c4f8f04716e98e8101b6fe9ca1",
+      "size": 3243
+    },
+    {
+      "path": "alternative_library/result_types.py",
+      "sha256": "61a7c0fbcec7f1f4a6d31039405f3896fb5a6e460410f4f502b5e99f6f6cddd3",
+      "size": 2325
+    },
+    {
+      "path": "alternative_library/canonical_serialization.py",
+      "sha256": "150cf7d18ad2f0033016f2c30decbd21525bbfa5c7c84f9f08b31716f2c43362",
+      "size": 1181
+    },
+    {
+      "path": "alternative_library/represented_sphere_frame.py",
+      "sha256": "366d3ea751b7d8b7bce45032a657add900c2a76afe093ec1cb7688e8e6152e8f",
+      "size": 1929
+    },
+    {
+      "path": "alternative_library/actuator_box_scaling.py",
+      "sha256": "46b99bb4564224ad659cd44c67c6f799510a77a46692bd93693a595872d98784",
+      "size": 1361
+    },
+    {
+      "path": "alternative_library/deceleration_projection.py",
+      "sha256": "49ba7b46a9b696cbb6d2d391fbf8d499d1da05d2889d7ae23b686db222ec7f6a",
+      "size": 1221
+    },
+    {
+      "path": "alternative_library/directional_library.py",
+      "sha256": "6ed9d209e31167ded426a0007d99ea4f09c2f5a63a58840d189b1536c9c11e17",
+      "size": 6510
+    },
+    {
+      "path": "alternative_library/contract.py",
+      "sha256": "2415b63414bc7b8f6465f3ec653803a993b8bba7a5f25017a7a3dd550bc1d134",
+      "size": 1265
+    },
+    {
+      "path": "methods/b2_primary_and_braking_wrapper.py",
+      "sha256": "e23af775b0ac1ea08049d33553a8b44cdedd76e018656b6ee647a8e0df329d1e",
+      "size": 880
+    },
+    {
+      "path": "methods/b3_directional_library_wrapper.py",
+      "sha256": "be18abd07ca4c66342bba4845f971217ff6ad23e9c24d1737ad58fc25115d305",
+      "size": 948
+    }
+  ]
+}

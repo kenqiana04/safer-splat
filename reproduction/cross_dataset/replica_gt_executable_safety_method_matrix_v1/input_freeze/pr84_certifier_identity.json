@@ -1,0 +1,153 @@
+{
+  "artifact_count": 19,
+  "artifact_manifest_sha256": "c7928d4032e9da8ad65e39134fd480c6f1828ba2a28ee4c76ac5c7e64c2bdd35",
+  "artifacts": [
+    {
+      "git_blob": "e60197b6a59170d77a51e75a7acf928c66f50972",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/report/REPORT_IMPLEMENT_ACTUATOR_BOUNDED_SWEPT_SEGMENT_TERMINAL_BACKUP_CERTIFIER_V1.md",
+      "sha256": "d22943d8302d344b1c588ac0fb07f5b1aa5a29caa55c08af9eca6a29ce6b1cd3",
+      "size": 7363
+    },
+    {
+      "git_blob": "28addf1fd5fbace2ff972aa6c11682a4af0f3f24",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/actuator_contract.json",
+      "sha256": "e396104eb219e640c56fb0434ac60d56d7da63d5f30ad221b5b2d0476e41df33",
+      "size": 339
+    },
+    {
+      "git_blob": "6807970d4b28aa9c478ca018d7319a4fcef19da2",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/adapters/gaussian_barrier_adapter.py",
+      "sha256": "1de0d3a31c8babe7c0bab5f388360d7f024f729cf5d8670dfbef9800f40cf3d1",
+      "size": 7676
+    },
+    {
+      "git_blob": "b39bd21ff7c24e1dcc5d1f792afd28f390fcd55c",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/adapters/normative_dynamics_adapter.py",
+      "sha256": "bc85b7c90d57f9935732751c813c742d9c24af729ba6f5716637f3c3334513df",
+      "size": 2213
+    },
+    {
+      "git_blob": "3ea2c87f12683776841223d7f08271c3586ba9f0",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/candidate_library.py",
+      "sha256": "8f576483ecba492f148a571aac6fd3498c299b097071e64c81978fd87c188d0e",
+      "size": 959
+    },
+    {
+      "git_blob": "011df74af180ed336f0771feeb26373d7a2ddf14",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/executable_safety_certifier.py",
+      "sha256": "2fcc0555028d46236db3c4434b713d1c7d9a406da1adb573758996e514e9c1e4",
+      "size": 7515
+    },
+    {
+      "git_blob": "75a969fee5af1674c44414c51e0cee46cf34b0c9",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/result_types.py",
+      "sha256": "1c94a83dc45dddfab1e804ff4917f7d8988cadd95d93f26a60ca15f3bf7f43e5",
+      "size": 6838
+    },
+    {
+      "git_blob": "ff72d551bd84205001373917b6bccf008b9ab926",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/braking_backup_policy.py",
+      "sha256": "77902e9fa756434fb5f2b57221ec066c7a29e2eedcf9922fdb2941f85251ea15",
+      "size": 2453
+    },
+    {
+      "git_blob": "f13edf06fc99c3d6ca775fe044aaa29a3913d321",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/segment_certificate.py",
+      "sha256": "5aa57b3391a0f9ca3851c4d8f37c09ccdb3f60c1d97014a2ef0630dd2eb138d6",
+      "size": 1027
+    },
+    {
+      "git_blob": "1ab8ee6b16f8b7d052c01d52836be08d5d2d5964",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/terminal_certificate.py",
+      "sha256": "72e3e2c9cf71e36f69dcaa6e00c05927e714f5a2c711365b62da35c7c6eede91",
+      "size": 2275
+    },
+    {
+      "git_blob": "48cafe4e5b87fe9db22e1c0fd8e1cc8819ce1687",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/terminal_set.py",
+      "sha256": "24dc7da70fb242fc02d4b085d1a649283cf86d92ffcdff8feec0c166dcedd2a8",
+      "size": 495
+    },
+    {
+      "git_blob": "75c50fc71c8c386751db895f01cdd1260205af06",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/backup_certifier.py",
+      "sha256": "ba93f39dd7363e81726a811ffcdacf44deabf900d4b38e97e399ee14335991b8",
+      "size": 4051
+    },
+    {
+      "git_blob": "68d9c94cedf444379c262c550dd80e9c289ea843",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/segment_backends/analytic_primitive.py",
+      "sha256": "7887c9061223a3e51e9c41991a0f0c2dc748665fcbe5fee0a0d5829022531e1e",
+      "size": 5746
+    },
+    {
+      "git_blob": "cd011939dc9cc00e1997dc855c4212810c3be9f1",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/segment_backends/conservative_interval.py",
+      "sha256": "a665a194de43ec7c8585d4fd2ebee5dcdedec73e270a1f7b31db685333dfecfd",
+      "size": 3470
+    },
+    {
+      "git_blob": "0b8079d364346d093c9b8c3648948c977a601d88",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/proof_artifacts/normative_execution_model.json",
+      "sha256": "bb460d85c880d42f1a80160ce29627b12b4be4c645179931455e5cce4b3200c5",
+      "size": 492
+    },
+    {
+      "git_blob": "30500e7f062134c8299bef767b44a4499478a3d5",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/proof_artifacts/terminal_set_contract.md",
+      "sha256": "db0c8369ee6a7a97b883fcfd3f10cd279394b673b0772f7d53442fd701d18434",
+      "size": 855
+    },
+    {
+      "git_blob": "615b4d3452af3c7fa33254569a7367ba9dc255b0",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/proof_artifacts/proof_status_registry.json",
+      "sha256": "820607a2c265cf6636ed7e788a231e0c38149b78518d12d086a8e4d326a874a2",
+      "size": 970
+    },
+    {
+      "git_blob": "715f7c9087018bfb53ac962b91bf62b3b046577e",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/input_freeze/protected_source_hashes.json",
+      "sha256": "1c3eec8185d062b41a2238ac1977ce462e84209e74eee670299656415df8470e",
+      "size": 2580
+    },
+    {
+      "git_blob": "2cad89ed8b8ce34cdc11e9f093270bf3cad5da59",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/map_smoke/replica_smoke_records.json",
+      "sha256": "70a70166f6d55fcba69d12f71039653ac403e6d5bf5f2ebcbfdf4b23db297fc6",
+      "size": 46538
+    }
+  ],
+  "head": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+  "pr84": {
+    "baseRefName": "fas-cbf-core-v1-conceptual-closure",
+    "baseRefOid": "17805e67b75412dc21b1a5fff4143ea3bc985f7f",
+    "headRefName": "fas-cbf-unified-executable-safety-certifier-v1",
+    "headRefOid": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+    "isDraft": true,
+    "mergeable": "MERGEABLE",
+    "mergedAt": null,
+    "number": 84,
+    "state": "OPEN",
+    "title": "[Draft] Implement actuator-bounded swept-segment and terminal-backup certification",
+    "url": "https://github.com/kenqiana04/safer-splat/pull/84"
+  }
+}
