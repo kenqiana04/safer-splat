@@ -1,0 +1,5 @@
+comparison,only_allowed_difference,contract_status,reason
+B1_vs_B0,add_swept_segment_gate,DEFINED,same primary control
+B2_vs_B1,add_terminal_backup_gate,DEFINED,same primary control
+B3_vs_B2,add_frozen_alternative_search,UNDEFINED,PR84 freezes order but not alternative values IDs size or identity
+B3_vs_B0,all_executable_safety_gates,UNDEFINED,B3 scientific input incomplete

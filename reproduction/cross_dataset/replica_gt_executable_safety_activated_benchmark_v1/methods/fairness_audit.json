@@ -1,0 +1,50 @@
+{
+  "blocking_reason": "PR #84 provides a deterministic ordering function over caller-supplied alternatives but does not freeze the alternative library content, IDs, size, or identity. Defining those values in this benchmark would change B3's scientific input and violate the no-library-change rule.",
+  "candidate_search_started": false,
+  "checks": {
+    "B3_alternative_identity_frozen_by_pr84": false,
+    "B3_alternative_ids_frozen_by_pr84": false,
+    "B3_alternative_size_frozen_by_pr84": false,
+    "B3_alternative_values_frozen_by_pr84": false,
+    "nested_B0_B1_B2_definable": true,
+    "no_new_scientific_input_needed": false,
+    "shared_current_full_query_definable": true,
+    "shared_map_snapshot_definable": true,
+    "shared_nominal_and_filtered_controls_definable": true,
+    "shared_state_goal_definable": true
+  },
+  "facts": {
+    "alternative_controls_is_caller_supplied": true,
+    "alternative_library_canonical_identity_frozen": false,
+    "alternative_library_size_frozen": false,
+    "candidate_library_control_constructor_count": 0,
+    "candidate_library_git_blob_sha256": "8f576483ecba492f148a571aac6fd3498c299b097071e64c81978fd87c188d0e",
+    "candidate_library_module_level_assignment_count": 0,
+    "certify_arguments": [
+      "self",
+      "state",
+      "nominal_control",
+      "alternative_controls",
+      "map_snapshot",
+      "time_budget"
+    ],
+    "concrete_alternative_acceleration_values_frozen": false,
+    "concrete_alternative_candidate_ids_frozen": false,
+    "executable_certifier_git_blob_sha256": "2fcc0555028d46236db3c4434b713d1c7d9a406da1adb573758996e514e9c1e4",
+    "frozen_candidate_order_arguments": [
+      "state",
+      "nominal",
+      "alternatives",
+      "braking_policy"
+    ],
+    "ordering_rule_frozen": true,
+    "upstream_proof_candidate_library_completeness": "UNPROVED",
+    "upstream_report_marks_completeness_unresolved": false
+  },
+  "fairness_pass": false,
+  "final_decision": "RECONCILE_REPLICA_GT_ACTIVATED_BENCHMARK_METHOD_CONTRACT",
+  "final_status": "BLOCKED_BY_METHOD_FAIRNESS_CONTRACT_MISMATCH",
+  "formal_benchmark_started": false,
+  "only_next_task": "FREEZE_REPLICA_GT_EXECUTABLE_SAFETY_METHOD_MATRIX_V1",
+  "status": "BLOCKED_BY_METHOD_FAIRNESS_CONTRACT_MISMATCH"
+}

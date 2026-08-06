@@ -1,0 +1,110 @@
+{
+  "artifacts": [
+    {
+      "git_blob": "e60197b6a59170d77a51e75a7acf928c66f50972",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/report/REPORT_IMPLEMENT_ACTUATOR_BOUNDED_SWEPT_SEGMENT_TERMINAL_BACKUP_CERTIFIER_V1.md",
+      "sha256": "d22943d8302d344b1c588ac0fb07f5b1aa5a29caa55c08af9eca6a29ce6b1cd3",
+      "size": 7363
+    },
+    {
+      "git_blob": "2fa14552e714949e1234aae96d68486147e4aa16",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/report/validation_result.json",
+      "sha256": "5ddb2a0d355ee92a920cd1e3c845f396cb341d15351e78992679ad42aba5e19a",
+      "size": 1143
+    },
+    {
+      "git_blob": "92809061c4b5bda9add05c385776e6ddc1e1d61d",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/report/downstream_handoff.json",
+      "sha256": "6e61bf8d6abf6e47521e1a73598407285d2b91eae408dc8d47528d58ef2a7c5b",
+      "size": 883
+    },
+    {
+      "git_blob": "0b8079d364346d093c9b8c3648948c977a601d88",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/proof_artifacts/normative_execution_model.json",
+      "sha256": "bb460d85c880d42f1a80160ce29627b12b4be4c645179931455e5cce4b3200c5",
+      "size": 492
+    },
+    {
+      "git_blob": "28addf1fd5fbace2ff972aa6c11682a4af0f3f24",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/actuator_contract.json",
+      "sha256": "e396104eb219e640c56fb0434ac60d56d7da63d5f30ad221b5b2d0476e41df33",
+      "size": 339
+    },
+    {
+      "git_blob": "c1f3f7b10838ac53afa982d5567e818a6d190610",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/proof_artifacts/swept_segment_derivation.md",
+      "sha256": "7d35a5c442ad245664136edcc14e531b747bc81a2d3aadeffc01a08b781037e1",
+      "size": 1701
+    },
+    {
+      "git_blob": "68d9c94cedf444379c262c550dd80e9c289ea843",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/segment_backends/analytic_primitive.py",
+      "sha256": "7887c9061223a3e51e9c41991a0f0c2dc748665fcbe5fee0a0d5829022531e1e",
+      "size": 5746
+    },
+    {
+      "git_blob": "cd011939dc9cc00e1997dc855c4212810c3be9f1",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/segment_backends/conservative_interval.py",
+      "sha256": "a665a194de43ec7c8585d4fd2ebee5dcdedec73e270a1f7b31db685333dfecfd",
+      "size": 3470
+    },
+    {
+      "git_blob": "30500e7f062134c8299bef767b44a4499478a3d5",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/proof_artifacts/terminal_set_contract.md",
+      "sha256": "db0c8369ee6a7a97b883fcfd3f10cd279394b673b0772f7d53442fd701d18434",
+      "size": 855
+    },
+    {
+      "git_blob": "ff72d551bd84205001373917b6bccf008b9ab926",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/braking_backup_policy.py",
+      "sha256": "77902e9fa756434fb5f2b57221ec066c7a29e2eedcf9922fdb2941f85251ea15",
+      "size": 2453
+    },
+    {
+      "git_blob": "75a969fee5af1674c44414c51e0cee46cf34b0c9",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/result_types.py",
+      "sha256": "1c94a83dc45dddfab1e804ff4917f7d8988cadd95d93f26a60ca15f3bf7f43e5",
+      "size": 6838
+    },
+    {
+      "git_blob": "3ea2c87f12683776841223d7f08271c3586ba9f0",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/candidate_library.py",
+      "sha256": "8f576483ecba492f148a571aac6fd3498c299b097071e64c81978fd87c188d0e",
+      "size": 959
+    },
+    {
+      "git_blob": "011df74af180ed336f0771feeb26373d7a2ddf14",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/executable_safety_certifier.py",
+      "sha256": "2fcc0555028d46236db3c4434b713d1c7d9a406da1adb573758996e514e9c1e4",
+      "size": 7515
+    },
+    {
+      "git_blob": "615b4d3452af3c7fa33254569a7367ba9dc255b0",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/proof_artifacts/proof_status_registry.json",
+      "sha256": "820607a2c265cf6636ed7e788a231e0c38149b78518d12d086a8e4d326a874a2",
+      "size": 970
+    },
+    {
+      "git_blob": "715f7c9087018bfb53ac962b91bf62b3b046577e",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/input_freeze/protected_source_hashes.json",
+      "sha256": "1c3eec8185d062b41a2238ac1977ce462e84209e74eee670299656415df8470e",
+      "size": 2580
+    }
+  ],
+  "head": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb"
+}

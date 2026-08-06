@@ -1,0 +1,17 @@
+{
+  "candidate_generation_count": 0,
+  "decision": "RECONCILE_REPLICA_GT_ACTIVATED_BENCHMARK_METHOD_CONTRACT",
+  "formal_attempt_count": 0,
+  "missing_frozen_inputs": [
+    "alternative acceleration values",
+    "alternative candidate IDs",
+    "alternative library size",
+    "alternative library canonical identity"
+  ],
+  "only_next_task": "FREEZE_REPLICA_GT_EXECUTABLE_SAFETY_METHOD_MATRIX_V1",
+  "required_resolution": "Freeze the concrete alternative-control values, IDs, provenance, size, ordering, and canonical identity before any candidate search.",
+  "resume_point": "PHASE_0_METHOD_FAIRNESS_GATE_BEFORE_CANDIDATE_GENERATION",
+  "status": "BLOCKED_BY_METHOD_FAIRNESS_CONTRACT_MISMATCH",
+  "upstream_head": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+  "upstream_pr": 84
+}

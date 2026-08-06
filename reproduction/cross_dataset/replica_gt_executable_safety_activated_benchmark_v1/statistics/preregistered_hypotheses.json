@@ -1,0 +1,12 @@
+{
+  "holm_correction": true,
+  "hypotheses": {
+    "H1": "G1 B1 vs B0 segment-risk rejection",
+    "H2": "G2/G3 B2 vs B1 backup noncommit",
+    "H3": "G3 B3 vs B2 certified availability/progress",
+    "H4": "G0 B3 over-rejection audit",
+    "H5": "B3 vs B0 configuration-specific reference outcome"
+  },
+  "statistical_unit": "state_or_episode_not_step",
+  "status": "PREREGISTERED_NOT_TESTED"
+}
