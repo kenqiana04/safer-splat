@@ -1,0 +1,295 @@
+{
+  "artifact_count": 36,
+  "artifacts": [
+    {
+      "asset": "Protocol V2 metric provenance gate",
+      "asset_id": "A01",
+      "asset_type": "protocol",
+      "bounded_use": "Map/reference claim scoping",
+      "source_workstream": "R3",
+      "status": "ready"
+    },
+    {
+      "asset": "Replica GT-derived Gaussian map identity",
+      "asset_id": "A02",
+      "asset_type": "map",
+      "bounded_use": "Single-map controlled evaluation",
+      "source_workstream": "R12",
+      "status": "ready"
+    },
+    {
+      "asset": "Replica independent mesh identity",
+      "asset_id": "A03",
+      "asset_type": "reference",
+      "bounded_use": "Offline geometry oracle",
+      "source_workstream": "R12",
+      "status": "ready"
+    },
+    {
+      "asset": "Activated registry G0-G5",
+      "asset_id": "A04",
+      "asset_type": "registry",
+      "bounded_use": "Mechanism stress cohort only",
+      "source_workstream": "R12",
+      "status": "ready"
+    },
+    {
+      "asset": "Representative holdout registry",
+      "asset_id": "A05",
+      "asset_type": "registry",
+      "bounded_use": "Prevalence estimate on one map",
+      "source_workstream": "R12",
+      "status": "ready"
+    },
+    {
+      "asset": "B0-B3 nested method registry",
+      "asset_id": "A06",
+      "asset_type": "method_contract",
+      "bounded_use": "Causal module ablation",
+      "source_workstream": "R11",
+      "status": "ready"
+    },
+    {
+      "asset": "Unified typed certificate schema",
+      "asset_id": "A07",
+      "asset_type": "schema",
+      "bounded_use": "Executable semantics",
+      "source_workstream": "R10",
+      "status": "ready"
+    },
+    {
+      "asset": "Fail-closed state machine",
+      "asset_id": "A08",
+      "asset_type": "schema",
+      "bounded_use": "Unknown/failure handling",
+      "source_workstream": "R10",
+      "status": "ready"
+    },
+    {
+      "asset": "Actuator-box check",
+      "asset_id": "A09",
+      "asset_type": "module",
+      "bounded_use": "Bounded input semantics",
+      "source_workstream": "R11",
+      "status": "ready"
+    },
+    {
+      "asset": "Swept-segment certificate",
+      "asset_id": "A10",
+      "asset_type": "module",
+      "bounded_use": "Short represented-space segment query",
+      "source_workstream": "R11",
+      "status": "ready"
+    },
+    {
+      "asset": "Terminal backup certificate",
+      "asset_id": "A11",
+      "asset_type": "module",
+      "bounded_use": "Bounded represented-space backup rollout",
+      "source_workstream": "R11",
+      "status": "ready"
+    },
+    {
+      "asset": "Directional alternative library",
+      "asset_id": "A12",
+      "asset_type": "module",
+      "bounded_use": "Frozen alternative set",
+      "source_workstream": "R11",
+      "status": "ready"
+    },
+    {
+      "asset": "Reference-oracle no-leak contract",
+      "asset_id": "A13",
+      "asset_type": "protocol",
+      "bounded_use": "Offline-only evaluation",
+      "source_workstream": "R12",
+      "status": "ready"
+    },
+    {
+      "asset": "Reference mesh oracle",
+      "asset_id": "A14",
+      "asset_type": "evaluation",
+      "bounded_use": "Swept collision and clearance",
+      "source_workstream": "R12",
+      "status": "ready"
+    },
+    {
+      "asset": "One-step paired benchmark",
+      "asset_id": "A15",
+      "asset_type": "evaluation",
+      "bounded_use": "Nested method comparison",
+      "source_workstream": "R12",
+      "status": "ready"
+    },
+    {
+      "asset": "Bounded logical rollout",
+      "asset_id": "A16",
+      "asset_type": "evaluation",
+      "bounded_use": "Short closed-loop diagnostic",
+      "source_workstream": "R12",
+      "status": "ready"
+    },
+    {
+      "asset": "Float64 boundary certifier",
+      "asset_id": "A17",
+      "asset_type": "evaluation",
+      "bounded_use": "Post-hoc numerical checks",
+      "source_workstream": "R7",
+      "status": "ready"
+    },
+    {
+      "asset": "Ellipsoid functional-autograd solver parity",
+      "asset_id": "A18",
+      "asset_type": "evaluation",
+      "bounded_use": "Numerical contract",
+      "source_workstream": "R7",
+      "status": "ready"
+    },
+    {
+      "asset": "World-frame stable Hessian correction",
+      "asset_id": "A19",
+      "asset_type": "module",
+      "bounded_use": "Stable second-order query",
+      "source_workstream": "R7",
+      "status": "ready"
+    },
+    {
+      "asset": "Risk-aware BestD filter",
+      "asset_id": "A20",
+      "asset_type": "module",
+      "bounded_use": "Efficiency-only ablation",
+      "source_workstream": "R2",
+      "status": "ready"
+    },
+    {
+      "asset": "Constraint/query profiler",
+      "asset_id": "A21",
+      "asset_type": "evaluation",
+      "bounded_use": "Runtime decomposition",
+      "source_workstream": "R2",
+      "status": "ready"
+    },
+    {
+      "asset": "TUM SplaTAM adapter",
+      "asset_id": "A22",
+      "asset_type": "adapter",
+      "bounded_use": "Static compatibility only",
+      "source_workstream": "R5",
+      "status": "ready"
+    },
+    {
+      "asset": "Gaussian-SLAM common adapter",
+      "asset_id": "A23",
+      "asset_type": "adapter",
+      "bounded_use": "Static compatibility only",
+      "source_workstream": "R5",
+      "status": "ready"
+    },
+    {
+      "asset": "Splatfacto checkpoint audit",
+      "asset_id": "A24",
+      "asset_type": "negative_evidence",
+      "bounded_use": "Geometry-drift analysis",
+      "source_workstream": "R4",
+      "status": "ready"
+    },
+    {
+      "asset": "TUM map geometry diagnostic suite",
+      "asset_id": "A25",
+      "asset_type": "evaluation",
+      "bounded_use": "Metric drift and scale",
+      "source_workstream": "R4",
+      "status": "ready"
+    },
+    {
+      "asset": "Start-safe pair validator",
+      "asset_id": "A26",
+      "asset_type": "evaluation",
+      "bounded_use": "Scenario admission",
+      "source_workstream": "R6",
+      "status": "ready"
+    },
+    {
+      "asset": "Direct-path geometry audit",
+      "asset_id": "A27",
+      "asset_type": "evaluation",
+      "bounded_use": "Protocol diagnosis",
+      "source_workstream": "R6",
+      "status": "ready"
+    },
+    {
+      "asset": "V4-C trigger/recovery log schema",
+      "asset_id": "A28",
+      "asset_type": "schema",
+      "bounded_use": "Mechanism traceability",
+      "source_workstream": "R8",
+      "status": "ready"
+    },
+    {
+      "asset": "Heldout pair serial scheduler",
+      "asset_id": "A29",
+      "asset_type": "protocol",
+      "bounded_use": "Resume without rerunning terminals",
+      "source_workstream": "R8",
+      "status": "paused"
+    },
+    {
+      "asset": "Core V1 proof-obligation registry",
+      "asset_id": "A30",
+      "asset_type": "theory",
+      "bounded_use": "Separates proved/empirical/open",
+      "source_workstream": "R10",
+      "status": "ready"
+    },
+    {
+      "asset": "Claim-evidence traceability matrix",
+      "asset_id": "A31",
+      "asset_type": "audit",
+      "bounded_use": "Paper claim audit",
+      "source_workstream": "R9",
+      "status": "ready"
+    },
+    {
+      "asset": "Method fairness audit",
+      "asset_id": "A32",
+      "asset_type": "audit",
+      "bounded_use": "Shared-input and nestedness checks",
+      "source_workstream": "R11",
+      "status": "ready"
+    },
+    {
+      "asset": "Selection leakage audit",
+      "asset_id": "A33",
+      "asset_type": "audit",
+      "bounded_use": "Activated vs representative separation",
+      "source_workstream": "R12",
+      "status": "ready"
+    },
+    {
+      "asset": "Deadline audit",
+      "asset_id": "A34",
+      "asset_type": "audit",
+      "bounded_use": "50 ms runtime boundary",
+      "source_workstream": "R12",
+      "status": "ready"
+    },
+    {
+      "asset": "Map-reference disagreement audit",
+      "asset_id": "A35",
+      "asset_type": "audit",
+      "bounded_use": "Represented vs mesh discrepancy",
+      "source_workstream": "R12",
+      "status": "ready"
+    },
+    {
+      "asset": "Cross-dataset evidence inventory",
+      "asset_id": "A36",
+      "asset_type": "registry",
+      "bounded_use": "Asset/readiness routing",
+      "source_workstream": "R3",
+      "status": "ready"
+    }
+  ],
+  "audit_id": "AUDIT_SAFER_SPLAT_RESEARCH_DIRECTION_NOVELTY_DATA_AND_WINNABILITY_V1",
+  "source_head": "fbe67f0c607add7f8049d4ce75e8f9e1ae8498d9"
+}

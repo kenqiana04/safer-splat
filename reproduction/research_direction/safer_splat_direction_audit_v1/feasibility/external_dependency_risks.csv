@@ -1,0 +1,6 @@
+risk_id,dependency,directions,status,severity,mitigation
+E1,Two reference-complete learned maps,"D1-D5,D7,D8",missing,fatal,Do not implement before acquisition/qualification
+E2,Strong competitor code/version compatibility,D1-D8,partial,high,Freeze versions and fairness contract
+E3,Hardware real-time evidence,"D1,D4,D5,D6,D8",not scheduled,high,Bound claims to offline/simulation
+E4,Nonzero false-free/segment events,"D1-D5,D7,D8",absent or unknown,fatal,Pre-frozen event-rate audit only
+E5,Eight-week engineering reserve,"D1-D5,D7,D8",insufficient,high,Choose D0; no schedule compression assumption

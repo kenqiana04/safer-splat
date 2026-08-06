@@ -1,0 +1,44 @@
+{
+  "formula": "positive_score - 0.6*risk_penalty",
+  "frozen_before_results": true,
+  "note": "Project-internal continuation thresholds; not field-general standards.",
+  "positive_weights": {
+    "S1": 8.0,
+    "S10": 8.0,
+    "S11": 3.0,
+    "S12": 12.0,
+    "S13": 3.0,
+    "S14": 2.0,
+    "S2": 12.0,
+    "S3": 10.0,
+    "S4": 4.0,
+    "S5": 10.0,
+    "S6": 8.0,
+    "S7": 4.0,
+    "S8": 12.0,
+    "S9": 4.0
+  },
+  "risk_weights": {
+    "R1": 10.0,
+    "R10": 11.0,
+    "R2": 15.0,
+    "R3": 7.0,
+    "R4": 12.0,
+    "R5": 7.0,
+    "R6": 10.0,
+    "R7": 6.0,
+    "R8": 10.0,
+    "R9": 12.0
+  },
+  "thresholds": {
+    "R2_max": 3,
+    "R4_max": 3,
+    "R9_max": 3,
+    "S12_min": 3,
+    "S2_min": 4,
+    "S3_min": 3,
+    "S5_min": 3,
+    "S8_min": 3,
+    "net_score_min": 62.0
+  }
+}

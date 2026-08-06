@@ -1,0 +1,23 @@
+{
+  "check_utc": "2026-08-06T07:16:45Z",
+  "gpu_1": {
+    "compute_process_count": 0,
+    "identity": "1, NVIDIA GeForce RTX 4090",
+    "memory_used_mib": 6,
+    "utilization_percent": 0
+  },
+  "local_watchdog": {
+    "state": "Running",
+    "task_name": "Codex-Persistent-Reverse-Proxy-Watchdog",
+    "unchanged_by_task": true
+  },
+  "remote_host": "zlab-Super-Server",
+  "remote_proxy_listener": {
+    "address": "127.0.0.1:17898",
+    "listening": true,
+    "unchanged_by_task": true
+  },
+  "task_owned_remote_compute_process_count": 0,
+  "task_process_probe_note": "pgrep returned only its own read-only probe shell; no task-owned worker existed",
+  "status": "PASS_READ_ONLY_SYSTEM_BOUNDARY"
+}

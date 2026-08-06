@@ -1,0 +1,13 @@
+claim_id,claim,status,evidence,boundary
+C01,Risk-Aware supports efficiency and constraint reduction,SUPPORTED_BOUNDED,R2,Do not convert to a new-safety claim
+C02,TUM Splatfacto is a formal navigation map,PROHIBITED,R4,Geometry drift and reference mismatch
+C03,Core V1 mechanisms execute on frozen activated states,SUPPORTED_BOUNDED,R11;R12,Replica GT-derived activated cohort only
+C04,Core V1 broadly replaces SAFER in representative operation,PROHIBITED,R12,Segment/backup/directional incremental impact 0/160
+C05,0/160 means Core V1 is methodologically wrong,PROHIBITED,R12,"It is a prevalence/result boundary, not a mechanism falsification"
+C06,Stress cases override representative prevalence,PROHIBITED,R8;R12,Selection-biased cohorts remain separate
+C07,Reference collision superiority,PROHIBITED,R12,Reference-collision positive event count was zero
+C08,B3 meets a 50 ms real-time contract,PROHIBITED,R12,116/260 B3 one-step deadline misses
+C09,Protocol V2 determines claim eligibility,SUPPORTED_BOUNDED,R3,"Qualification gate, not algorithmic superiority"
+C10,Unified certifier is an end-to-end proven safe system,PROHIBITED,R10;R11,Open assumptions and empirical-only obligations
+C11,Replica activated cohort estimates field prevalence,PROHIBITED,R12,Deliberately selected for stage activation
+C12,Replica representative cohort supports zero observed incremental segment/backup/directional outcome effect,SUPPORTED_BOUNDED,R12,One GT-derived map and frozen 160-state holdout

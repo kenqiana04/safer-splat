@@ -1,0 +1,52 @@
+{
+  "checked_on": "2026-08-06",
+  "repository": "kenqiana04/safer-splat",
+  "source": "authenticated gh pr view",
+  "pull_requests": [
+    {
+      "base_ref": "fas-cbf-core-v1-conceptual-closure",
+      "base_sha": "17805e67b75412dc21b1a5fff4143ea3bc985f7f",
+      "head_ref": "fas-cbf-unified-executable-safety-certifier-v1",
+      "head_sha": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "is_draft": true,
+      "mergeable": "MERGEABLE",
+      "number": 84,
+      "state": "OPEN",
+      "url": "https://github.com/kenqiana04/safer-splat/pull/84"
+    },
+    {
+      "base_ref": "fas-cbf-unified-executable-safety-certifier-v1",
+      "base_sha": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "head_ref": "replica-gt-executable-safety-activated-benchmark-v1",
+      "head_sha": "7afef38392bec36d9d9811e5a22c816da5faf1ff",
+      "is_draft": true,
+      "mergeable": "MERGEABLE",
+      "number": 85,
+      "state": "OPEN",
+      "url": "https://github.com/kenqiana04/safer-splat/pull/85"
+    },
+    {
+      "base_ref": "replica-gt-executable-safety-activated-benchmark-v1",
+      "base_sha": "7afef38392bec36d9d9811e5a22c816da5faf1ff",
+      "head_ref": "replica-gt-executable-safety-method-matrix-v1",
+      "head_sha": "d4f20f44a810afc2d6379853a286a3e18b175221",
+      "is_draft": true,
+      "mergeable": "MERGEABLE",
+      "number": 86,
+      "state": "OPEN",
+      "url": "https://github.com/kenqiana04/safer-splat/pull/86"
+    },
+    {
+      "base_ref": "replica-gt-executable-safety-method-matrix-v1",
+      "base_sha": "d4f20f44a810afc2d6379853a286a3e18b175221",
+      "head_ref": "resume-replica-gt-executable-safety-activated-benchmark-v1",
+      "head_sha": "fbe67f0c607add7f8049d4ce75e8f9e1ae8498d9",
+      "is_draft": true,
+      "mergeable": "MERGEABLE",
+      "number": 87,
+      "state": "OPEN",
+      "url": "https://github.com/kenqiana04/safer-splat/pull/87"
+    }
+  ],
+  "status": "PASS_ALL_FOUR_OPEN_DRAFT_MERGEABLE_AND_EXACT_HEADS"
+}

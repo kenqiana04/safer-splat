@@ -1,0 +1,5 @@
+dedup_key,title,year,venue_status,categories,fulltext,official_code_checked,primary_url,key_evidence,candidate_overlap,limitation_or_exclusion
+2603.15186,NavGSim: Navigation in Gaussian Splatting Simulations,2026,arXiv,C1;C6,FAIL,FAIL,https://arxiv.org/abs/2603.15186,Recent Gaussian-simulation navigation benchmark candidate,Possible D7 neighbor,Excluded from method matrix pending full benchmark/reference audit
+2602.12159,3DGSNav: Navigating with 3D Gaussian Splatting,2026,arXiv,C1,FAIL,FAIL,https://arxiv.org/abs/2602.12159,Recent Gaussian-navigation pipeline candidate,Landscape context,Excluded from high-relevance matrix after abstract screening
+2607.05522,Bayesian 3D Gaussian Splatting,2026,arXiv,C4,FAIL,FAIL,https://arxiv.org/abs/2607.05522,Bayesian uncertainty for 3DGS,D3/D8 context,Excluded because control/query evidence was not primary focus
+2605.30696,BP-SDF: Barrier-Preserving Signed Distance Fields for Safe Control,2026,arXiv,C9;C10,FAIL,FAIL,https://arxiv.org/abs/2605.30696,Implicit-field safety-control candidate,D2/D5 context,Excluded because it is not Gaussian-map specific and arrived after core set saturation

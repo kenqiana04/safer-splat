@@ -1,0 +1,247 @@
+{
+  "aggregate_sha256": "f9b9f79ca7b3973d56d99c6e30549e83d394fd36b1610853577c372f812c870b",
+  "commit": "fbe67f0c607add7f8049d4ce75e8f9e1ae8498d9",
+  "file_count": 29,
+  "files": [
+    {
+      "git_object": "135da778b2de5e986a3d581252274210eb28e0b3",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "cbf/__pycache__/cbf_utils.cpython-38.pyc",
+      "sha256": "7c56522964b6e40421eda06c5dc88aa32b174bffbe700d2278ece468a02c8bba",
+      "size": 3888
+    },
+    {
+      "git_object": "e0cb5a35280b2e42f9ec7e20a49bbd6548cd40f8",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "cbf/__pycache__/cbf_utils.cpython-39.pyc",
+      "sha256": "51dff1653fb493c36b03169646038d4eeddcdee9612bd4130605301fce02164f",
+      "size": 3888
+    },
+    {
+      "git_object": "16ac50ddec86d74f30cfc7219ab78da9ae28454e",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "cbf/__pycache__/utils.cpython-38.pyc",
+      "sha256": "a8343ddc7ebfedb5c4c7519abe55f6a3e7f01e14c6f88a6373389af04880ea36",
+      "size": 3666
+    },
+    {
+      "git_object": "7c6e1300b125cc0a2a950ac2835a1fbe3d0de113",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "cbf/cbf_utils.py",
+      "sha256": "492403919f64fba4a46908a8a663900c1ed5808a1865dc5a74c9cfe32d2c7010",
+      "size": 7758
+    },
+    {
+      "git_object": "17e78914e274200cc475ea7360f856b0582a9df6",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "dynamics/__pycache__/systems.cpython-38.pyc",
+      "sha256": "131d81a77ea75e6fb92849b5c5a6999645729ff4c34ab2e3bbead8612b81d910",
+      "size": 2289
+    },
+    {
+      "git_object": "fcdf405f0b200a9f2c11d285d47aa58b40d0dbb1",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "dynamics/__pycache__/systems.cpython-39.pyc",
+      "sha256": "564f323145c4fd4f6ad32dfd6debd8caf5aeabde06860592670d72250ba23c17",
+      "size": 2275
+    },
+    {
+      "git_object": "e58ed65e60b17840201e571d7f23ce3816b83863",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "dynamics/systems.py",
+      "sha256": "57dc54083ee9076fdda2c3dae6e71ec45e97725e87833581a70625a63940f592",
+      "size": 2160
+    },
+    {
+      "git_object": "ecd4b7498386a395838be72df25ba5ea8de6a708",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "ellipsoids/__pycache__/covariance_utils.cpython-38.pyc",
+      "sha256": "d35c64b02f774e05aa2519f295070deb86fd06f3005f4945948a671b068d1d76",
+      "size": 4591
+    },
+    {
+      "git_object": "1e6eb0816409551fc937fdf2f9cf77f59c2b7b74",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "ellipsoids/__pycache__/covariance_utils.cpython-39.pyc",
+      "sha256": "e59c9862e5401e546008a84fa1ee93d019158998ae8628ee34a3d36784ec6e7a",
+      "size": 4567
+    },
+    {
+      "git_object": "dcf179daeb75121546eafab2afaf186a26bbc6a0",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "ellipsoids/__pycache__/gs_utils.cpython-38.pyc",
+      "sha256": "b23426285b76e735790aeb2922646255f35dd697479171a1f999b2c10288fe7a",
+      "size": 4665
+    },
+    {
+      "git_object": "e11f5dada54e59558ea2ab543fb8635c82b93f10",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "ellipsoids/__pycache__/math_utils.cpython-38.pyc",
+      "sha256": "affb35d3df50c40d1f733041d29f3a3d389d6b1b576bb5241ed9291512c275d3",
+      "size": 2436
+    },
+    {
+      "git_object": "268a7e2b2a999c52ed502b12670a32701f139d90",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "ellipsoids/__pycache__/mesh_utils.cpython-38.pyc",
+      "sha256": "cb71dac0fc4aba03b86e31e76376a3ce4ff4d28e0a515b0bef5883a1d3118800",
+      "size": 913
+    },
+    {
+      "git_object": "9d0b402ed981b324470ec5f231963f3eefae0d33",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "ellipsoids/__pycache__/mesh_utils.cpython-39.pyc",
+      "sha256": "408a0aedc07737939785009431c62ef16cfb27d532651f31968214d2f8a05490",
+      "size": 992
+    },
+    {
+      "git_object": "b965ab39c5cb4004ffd6a93a50789b3624be56e4",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "ellipsoids/__pycache__/plots.cpython-38.pyc",
+      "sha256": "a9ae967226e9249b9aad101e77d7798729f12fac61d9dfedb35bc8f7edabc21c",
+      "size": 795
+    },
+    {
+      "git_object": "6d9b1d0ad03891b20886782abc11d6cbd7ce7ef4",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "ellipsoids/__pycache__/polytopes_utils.cpython-39.pyc",
+      "sha256": "1de11434a3ae73e3f9876dcb96d1a639040e865d015de61a365b54bed885744a",
+      "size": 1095
+    },
+    {
+      "git_object": "ccea47c0a04f693b9e22053eb995a41b407ffff8",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "ellipsoids/__pycache__/utils.cpython-38.pyc",
+      "sha256": "b5f5ff7f2db896551871956c05f876b5fa0d8ffb81b0734c053c3b6823b5be53",
+      "size": 2414
+    },
+    {
+      "git_object": "a830d3c5899afe4fd45e1fb64951382cf7f6c45f",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "ellipsoids/covariance_utils.py",
+      "sha256": "07bd1ff3aac5d2b772bbb5173d38eee4558f2a82f3e29250086b372b9d1b52dd",
+      "size": 5643
+    },
+    {
+      "git_object": "92f01bad436b7c67d40e6658f0fb10f4733337ed",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "ellipsoids/mesh_utils.py",
+      "sha256": "59baccce3fc16525b11b2dc1bc2eff7968d16376c8bf0a91bcb9ab54cc54743b",
+      "size": 1150
+    },
+    {
+      "git_object": "d6249296c781944f1c017167b144e0ac09260412",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "ellipsoids/plot_utils.py",
+      "sha256": "9f93e232bbb6f31b068537ac23f356f301bf18d5f7088ec938eefd6aa54f0edd",
+      "size": 813
+    },
+    {
+      "git_object": "f7496d50b503aa78ac1b946ecdb51a90b0bfd04a",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "ellipsoids/polytopes_utils.py",
+      "sha256": "dc8bc4f3ee4a8cd170c29f5f0d47b63287e50635dc492bed2dc65403bcd4d07f",
+      "size": 1056
+    },
+    {
+      "git_object": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "run.py",
+      "sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+      "size": 8127
+    },
+    {
+      "git_object": "be6d6cb1b4400f5398a4942558e520663c8c9e59",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "splat/__pycache__/distances.cpython-38.pyc",
+      "sha256": "983971a1ce7cb83d0b3cc841e993e5698615d6ed790c6d0a584e721de173cbbb",
+      "size": 2649
+    },
+    {
+      "git_object": "527627671b5220beb5afb7cb4b2ca747537f905b",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "splat/__pycache__/distances.cpython-39.pyc",
+      "sha256": "f36e362aba2af51eae129b04899296a26762530a0b3cc31293f8b62ab3b9f05d",
+      "size": 2649
+    },
+    {
+      "git_object": "83e4f1cef18f5f62ffd282a5949313165d32edc5",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "splat/__pycache__/gsplat_utils.cpython-38.pyc",
+      "sha256": "6f1a8b18b10fece6df41c73463693705c0055d8b0b8cd58b4d33117cc8825706",
+      "size": 5254
+    },
+    {
+      "git_object": "a789ab27c6e10a27846abbd657d7d31c397f2b9c",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "splat/__pycache__/gsplat_utils.cpython-39.pyc",
+      "sha256": "cad25d188bfa521ee6066b29df8f0c367a18948f1e1239dbce4f37be2045ca63",
+      "size": 5562
+    },
+    {
+      "git_object": "20813f9cc97cadce5b7dc0f5d41b1e684b83b942",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "splat/__pycache__/utils.cpython-38.pyc",
+      "sha256": "99bac2fdc59bdf9fadd378180bc7115e68f5ed1097b2b310d9b91cc169f19925",
+      "size": 4200
+    },
+    {
+      "git_object": "d7f17b67df40e36e458c7a5ed77c4a04659c6f35",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "splat/distances.py",
+      "sha256": "57a49cb6893a65789282e92f37a82f134d2a34ab7e296d33fc5f4cd6fab45f08",
+      "size": 4109
+    },
+    {
+      "git_object": "782c38eca50e78c605085b481155ed61e4607336",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "splat/gsplat_utils.py",
+      "sha256": "fccc3125431122c58bd7901048d0e66e6b6c7fdeafc066f014d9d7df3c1ff9bf",
+      "size": 9039
+    },
+    {
+      "git_object": "62264888b0d1595a0900c14f085e3fa65c29769b",
+      "kind": "blob",
+      "mode": "100644",
+      "path": "visualize.py",
+      "sha256": "b45062cc776d18e18bbf0741c078fb2cb72f4ffcc438d538abfed11833b97ea9",
+      "size": 5074
+    }
+  ],
+  "protected_paths": [
+    "cbf",
+    "dynamics",
+    "ellipsoids",
+    "splat",
+    "run.py",
+    "visualize.py"
+  ]
+}
