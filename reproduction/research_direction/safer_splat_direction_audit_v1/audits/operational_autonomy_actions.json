@@ -1,0 +1,29 @@
+{
+  "actions": [
+    {
+      "action_id": "OA-001",
+      "category": "git_isolation",
+      "description": "Created a clean isolated worktree and branch at the exact PR #87 head because the primary checkout contains unrelated user changes.",
+      "research_contract_changed": false,
+      "reversible": true,
+      "timestamp_utc": "2026-08-06T00:00:00Z"
+    },
+    {
+      "action_id": "OA-002",
+      "category": "github_metadata_fallback",
+      "description": "Used public GitHub PR pages as a read-only fallback when authenticated GitHub GraphQL/REST calls returned transient EOF responses; no repository state was changed.",
+      "research_contract_changed": false,
+      "reversible": true,
+      "timestamp_utc": "2026-08-06T00:00:00Z"
+    },
+    {
+      "action_id": "OA-003",
+      "category": "task_local_validation_tooling",
+      "description": "Installed pytest 8.4.2 and its dependencies only under the ignored task-owned .cache/pytest_runtime directory because neither available Python runtime provided pytest; no project or environment package was modified.",
+      "research_contract_changed": false,
+      "reversible": true,
+      "timestamp_utc": "2026-08-06T07:18:00Z"
+    }
+  ],
+  "operational_autonomy_action_count": 3
+}

@@ -1,0 +1,59 @@
+{
+  "case": "D",
+  "directions_passing_all_new_method_gates": [],
+  "final_decision": "FREEZE_MODULAR_SAFETY_ASSURANCE_OR_NEGATIVE_BENCHMARK_PAPER_STRATEGY",
+  "final_status": "EXISTING_EVIDENCE_CONSOLIDATION_IS_HIGHEST_EXPECTED_VALUE",
+  "new_method_direction_count": 0,
+  "no_threshold_relaxation": true,
+  "only_next_task": "WRITE_FROZEN_PAPER_CONTRIBUTION_AND_EXPERIMENT_PLAN_V1",
+  "rationale": "D0 has the highest net score by more than eight points, low execution/data risk, and a bounded claim set. Every D1-D8 new-method candidate fails at least one unchanged fatal data, novelty, event, or eight-week gate.",
+  "scores": {
+    "D0": {
+      "net": 68.8,
+      "positive": 83.2,
+      "risk": 24.0
+    },
+    "D1": {
+      "net": 5.88,
+      "positive": 53.4,
+      "risk": 79.2
+    },
+    "D2": {
+      "net": 11.16,
+      "positive": 57.0,
+      "risk": 76.4
+    },
+    "D3": {
+      "net": 12.16,
+      "positive": 59.2,
+      "risk": 78.4
+    },
+    "D4": {
+      "net": -0.72,
+      "positive": 52.8,
+      "risk": 89.2
+    },
+    "D5": {
+      "net": -3.88,
+      "positive": 48.8,
+      "risk": 87.8
+    },
+    "D6": {
+      "net": 13.32,
+      "positive": 55.8,
+      "risk": 70.8
+    },
+    "D7": {
+      "net": 20.08,
+      "positive": 61.0,
+      "risk": 68.2
+    },
+    "D8": {
+      "net": 6.0,
+      "positive": 54.0,
+      "risk": 80.0
+    }
+  },
+  "selected_direction": "D0",
+  "selected_direction_count": 1
+}

@@ -1,0 +1,91 @@
+direction,gate,result,reason,contract
+D0,G1,NOT_APPLICABLE,D0 is governed by the Case-D consolidation rule,one_sentence_difference_supported_by_full_text
+D0,G2,NOT_APPLICABLE,D0 is governed by the Case-D consolidation rule,three_strong_baselines_runnable_or_fairly_reimplementable
+D0,G3,NOT_APPLICABLE,D0 is governed by the Case-D consolidation rule,two_independent_learned_maps_with_credible_reference
+D0,G4,NOT_APPLICABLE,D0 is governed by the Case-D consolidation rule,cross_map_train_calibration_test_protocol
+D0,G5,NOT_APPLICABLE,D0 is governed by the Case-D consolidation rule,required_events_not_zero_or_extremely_rare
+D0,G6,NOT_APPLICABLE,D0 is governed by the Case-D consolidation rule,likely_case_deliverable_within_eight_weeks
+D0,G7,NOT_APPLICABLE,D0 is governed by the Case-D consolidation rule,no_post_freeze_contract_tuning_for_positive_result
+D0,G8,NOT_APPLICABLE,D0 is governed by the Case-D consolidation rule,contribution_not_only_existing_module_combination
+D0,G9,NOT_APPLICABLE,D0 is governed by the Case-D consolidation rule,fewer_than_three_open_subproblems_before_minimum_paper
+D0,G10,NOT_APPLICABLE,D0 is governed by the Case-D consolidation rule,bounded_publishable_fallback_if_main_hypothesis_fails
+D1,G1,PASS,Evidence satisfies this bounded gate,one_sentence_difference_supported_by_full_text
+D1,G2,PASS,Evidence satisfies this bounded gate,three_strong_baselines_runnable_or_fairly_reimplementable
+D1,G3,FAIL,Fewer than two independent learned maps have credible reference,two_independent_learned_maps_with_credible_reference
+D1,G4,FAIL,No cross-map train/calibration/test split,cross_map_train_calibration_test_protocol
+D1,G5,FAIL,Required representative events are zero or unmeasured,required_events_not_zero_or_extremely_rare
+D1,G6,PASS,Evidence satisfies this bounded gate,likely_case_deliverable_within_eight_weeks
+D1,G7,PASS,Evidence satisfies this bounded gate,no_post_freeze_contract_tuning_for_positive_result
+D1,G8,FAIL,Contribution is presently an existing-module combination or efficiency ablation,contribution_not_only_existing_module_combination
+D1,G9,FAIL,At least three open subproblems precede a minimum paper,fewer_than_three_open_subproblems_before_minimum_paper
+D1,G10,PASS,Evidence satisfies this bounded gate,bounded_publishable_fallback_if_main_hypothesis_fails
+D2,G1,PASS,Evidence satisfies this bounded gate,one_sentence_difference_supported_by_full_text
+D2,G2,PASS,Evidence satisfies this bounded gate,three_strong_baselines_runnable_or_fairly_reimplementable
+D2,G3,FAIL,Fewer than two independent learned maps have credible reference,two_independent_learned_maps_with_credible_reference
+D2,G4,FAIL,No cross-map train/calibration/test split,cross_map_train_calibration_test_protocol
+D2,G5,FAIL,Required representative events are zero or unmeasured,required_events_not_zero_or_extremely_rare
+D2,G6,FAIL,Likely effort exceeds 40 working days,likely_case_deliverable_within_eight_weeks
+D2,G7,PASS,Evidence satisfies this bounded gate,no_post_freeze_contract_tuning_for_positive_result
+D2,G8,PASS,Evidence satisfies this bounded gate,contribution_not_only_existing_module_combination
+D2,G9,FAIL,At least three open subproblems precede a minimum paper,fewer_than_three_open_subproblems_before_minimum_paper
+D2,G10,PASS,Evidence satisfies this bounded gate,bounded_publishable_fallback_if_main_hypothesis_fails
+D3,G1,PASS,Evidence satisfies this bounded gate,one_sentence_difference_supported_by_full_text
+D3,G2,PASS,Evidence satisfies this bounded gate,three_strong_baselines_runnable_or_fairly_reimplementable
+D3,G3,FAIL,Fewer than two independent learned maps have credible reference,two_independent_learned_maps_with_credible_reference
+D3,G4,FAIL,No cross-map train/calibration/test split,cross_map_train_calibration_test_protocol
+D3,G5,FAIL,Required representative events are zero or unmeasured,required_events_not_zero_or_extremely_rare
+D3,G6,FAIL,Likely effort exceeds 40 working days,likely_case_deliverable_within_eight_weeks
+D3,G7,PASS,Evidence satisfies this bounded gate,no_post_freeze_contract_tuning_for_positive_result
+D3,G8,PASS,Evidence satisfies this bounded gate,contribution_not_only_existing_module_combination
+D3,G9,FAIL,At least three open subproblems precede a minimum paper,fewer_than_three_open_subproblems_before_minimum_paper
+D3,G10,PASS,Evidence satisfies this bounded gate,bounded_publishable_fallback_if_main_hypothesis_fails
+D4,G1,FAIL,Fulltext comparison does not support a strong unique difference,one_sentence_difference_supported_by_full_text
+D4,G2,PASS,Evidence satisfies this bounded gate,three_strong_baselines_runnable_or_fairly_reimplementable
+D4,G3,FAIL,Fewer than two independent learned maps have credible reference,two_independent_learned_maps_with_credible_reference
+D4,G4,FAIL,No cross-map train/calibration/test split,cross_map_train_calibration_test_protocol
+D4,G5,FAIL,Required representative events are zero or unmeasured,required_events_not_zero_or_extremely_rare
+D4,G6,FAIL,Likely effort exceeds 40 working days,likely_case_deliverable_within_eight_weeks
+D4,G7,PASS,Evidence satisfies this bounded gate,no_post_freeze_contract_tuning_for_positive_result
+D4,G8,PASS,Evidence satisfies this bounded gate,contribution_not_only_existing_module_combination
+D4,G9,FAIL,At least three open subproblems precede a minimum paper,fewer_than_three_open_subproblems_before_minimum_paper
+D4,G10,PASS,Evidence satisfies this bounded gate,bounded_publishable_fallback_if_main_hypothesis_fails
+D5,G1,PASS,Evidence satisfies this bounded gate,one_sentence_difference_supported_by_full_text
+D5,G2,PASS,Evidence satisfies this bounded gate,three_strong_baselines_runnable_or_fairly_reimplementable
+D5,G3,FAIL,Fewer than two independent learned maps have credible reference,two_independent_learned_maps_with_credible_reference
+D5,G4,FAIL,No cross-map train/calibration/test split,cross_map_train_calibration_test_protocol
+D5,G5,FAIL,Required representative events are zero or unmeasured,required_events_not_zero_or_extremely_rare
+D5,G6,FAIL,Likely effort exceeds 40 working days,likely_case_deliverable_within_eight_weeks
+D5,G7,PASS,Evidence satisfies this bounded gate,no_post_freeze_contract_tuning_for_positive_result
+D5,G8,PASS,Evidence satisfies this bounded gate,contribution_not_only_existing_module_combination
+D5,G9,FAIL,At least three open subproblems precede a minimum paper,fewer_than_three_open_subproblems_before_minimum_paper
+D5,G10,PASS,Evidence satisfies this bounded gate,bounded_publishable_fallback_if_main_hypothesis_fails
+D6,G1,FAIL,Fulltext comparison does not support a strong unique difference,one_sentence_difference_supported_by_full_text
+D6,G2,PASS,Evidence satisfies this bounded gate,three_strong_baselines_runnable_or_fairly_reimplementable
+D6,G3,FAIL,Fewer than two independent learned maps have credible reference,two_independent_learned_maps_with_credible_reference
+D6,G4,FAIL,No cross-map train/calibration/test split,cross_map_train_calibration_test_protocol
+D6,G5,PASS,Evidence satisfies this bounded gate,required_events_not_zero_or_extremely_rare
+D6,G6,PASS,Evidence satisfies this bounded gate,likely_case_deliverable_within_eight_weeks
+D6,G7,PASS,Evidence satisfies this bounded gate,no_post_freeze_contract_tuning_for_positive_result
+D6,G8,FAIL,Contribution is presently an existing-module combination or efficiency ablation,contribution_not_only_existing_module_combination
+D6,G9,PASS,Evidence satisfies this bounded gate,fewer_than_three_open_subproblems_before_minimum_paper
+D6,G10,PASS,Evidence satisfies this bounded gate,bounded_publishable_fallback_if_main_hypothesis_fails
+D7,G1,PASS,Evidence satisfies this bounded gate,one_sentence_difference_supported_by_full_text
+D7,G2,PASS,Evidence satisfies this bounded gate,three_strong_baselines_runnable_or_fairly_reimplementable
+D7,G3,FAIL,Fewer than two independent learned maps have credible reference,two_independent_learned_maps_with_credible_reference
+D7,G4,FAIL,No cross-map train/calibration/test split,cross_map_train_calibration_test_protocol
+D7,G5,FAIL,Required representative events are zero or unmeasured,required_events_not_zero_or_extremely_rare
+D7,G6,PASS,Evidence satisfies this bounded gate,likely_case_deliverable_within_eight_weeks
+D7,G7,PASS,Evidence satisfies this bounded gate,no_post_freeze_contract_tuning_for_positive_result
+D7,G8,PASS,Evidence satisfies this bounded gate,contribution_not_only_existing_module_combination
+D7,G9,PASS,Evidence satisfies this bounded gate,fewer_than_three_open_subproblems_before_minimum_paper
+D7,G10,PASS,Evidence satisfies this bounded gate,bounded_publishable_fallback_if_main_hypothesis_fails
+D8,G1,PASS,Evidence satisfies this bounded gate,one_sentence_difference_supported_by_full_text
+D8,G2,PASS,Evidence satisfies this bounded gate,three_strong_baselines_runnable_or_fairly_reimplementable
+D8,G3,FAIL,Fewer than two independent learned maps have credible reference,two_independent_learned_maps_with_credible_reference
+D8,G4,FAIL,No cross-map train/calibration/test split,cross_map_train_calibration_test_protocol
+D8,G5,FAIL,Required representative events are zero or unmeasured,required_events_not_zero_or_extremely_rare
+D8,G6,FAIL,Likely effort exceeds 40 working days,likely_case_deliverable_within_eight_weeks
+D8,G7,PASS,Evidence satisfies this bounded gate,no_post_freeze_contract_tuning_for_positive_result
+D8,G8,FAIL,Contribution is presently an existing-module combination or efficiency ablation,contribution_not_only_existing_module_combination
+D8,G9,FAIL,At least three open subproblems precede a minimum paper,fewer_than_three_open_subproblems_before_minimum_paper
+D8,G10,PASS,Evidence satisfies this bounded gate,bounded_publishable_fallback_if_main_hypothesis_fails

@@ -1,0 +1,37 @@
+asset_id,asset,asset_type,source_workstream,status,bounded_use
+A01,Protocol V2 metric provenance gate,protocol,R3,ready,Map/reference claim scoping
+A02,Replica GT-derived Gaussian map identity,map,R12,ready,Single-map controlled evaluation
+A03,Replica independent mesh identity,reference,R12,ready,Offline geometry oracle
+A04,Activated registry G0-G5,registry,R12,ready,Mechanism stress cohort only
+A05,Representative holdout registry,registry,R12,ready,Prevalence estimate on one map
+A06,B0-B3 nested method registry,method_contract,R11,ready,Causal module ablation
+A07,Unified typed certificate schema,schema,R10,ready,Executable semantics
+A08,Fail-closed state machine,schema,R10,ready,Unknown/failure handling
+A09,Actuator-box check,module,R11,ready,Bounded input semantics
+A10,Swept-segment certificate,module,R11,ready,Short represented-space segment query
+A11,Terminal backup certificate,module,R11,ready,Bounded represented-space backup rollout
+A12,Directional alternative library,module,R11,ready,Frozen alternative set
+A13,Reference-oracle no-leak contract,protocol,R12,ready,Offline-only evaluation
+A14,Reference mesh oracle,evaluation,R12,ready,Swept collision and clearance
+A15,One-step paired benchmark,evaluation,R12,ready,Nested method comparison
+A16,Bounded logical rollout,evaluation,R12,ready,Short closed-loop diagnostic
+A17,Float64 boundary certifier,evaluation,R7,ready,Post-hoc numerical checks
+A18,Ellipsoid functional-autograd solver parity,evaluation,R7,ready,Numerical contract
+A19,World-frame stable Hessian correction,module,R7,ready,Stable second-order query
+A20,Risk-aware BestD filter,module,R2,ready,Efficiency-only ablation
+A21,Constraint/query profiler,evaluation,R2,ready,Runtime decomposition
+A22,TUM SplaTAM adapter,adapter,R5,ready,Static compatibility only
+A23,Gaussian-SLAM common adapter,adapter,R5,ready,Static compatibility only
+A24,Splatfacto checkpoint audit,negative_evidence,R4,ready,Geometry-drift analysis
+A25,TUM map geometry diagnostic suite,evaluation,R4,ready,Metric drift and scale
+A26,Start-safe pair validator,evaluation,R6,ready,Scenario admission
+A27,Direct-path geometry audit,evaluation,R6,ready,Protocol diagnosis
+A28,V4-C trigger/recovery log schema,schema,R8,ready,Mechanism traceability
+A29,Heldout pair serial scheduler,protocol,R8,paused,Resume without rerunning terminals
+A30,Core V1 proof-obligation registry,theory,R10,ready,Separates proved/empirical/open
+A31,Claim-evidence traceability matrix,audit,R9,ready,Paper claim audit
+A32,Method fairness audit,audit,R11,ready,Shared-input and nestedness checks
+A33,Selection leakage audit,audit,R12,ready,Activated vs representative separation
+A34,Deadline audit,audit,R12,ready,50 ms runtime boundary
+A35,Map-reference disagreement audit,audit,R12,ready,Represented vs mesh discrepancy
+A36,Cross-dataset evidence inventory,registry,R3,ready,Asset/readiness routing

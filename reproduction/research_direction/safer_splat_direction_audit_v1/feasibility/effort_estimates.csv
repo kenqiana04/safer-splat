@@ -1,0 +1,10 @@
+direction,research_design_days,literature_baseline_days,method_implementation_days,data_preparation_days,experiment_days,debug_reserve_days,analysis_days,writing_days,best_case_days,likely_case_days,worst_case_days,gpu_hours,storage_gb,eight_week_fit
+D0,3,4,0,2,0,2,6,8,15,25,35,0,2,PASS
+D1,4,5,10,12,10,8,5,6,38,60,85,120,120,FAIL
+D2,5,6,15,14,10,10,6,6,48,72,100,160,160,FAIL
+D3,6,7,14,20,10,10,7,7,55,81,115,180,250,FAIL
+D4,7,7,18,16,14,12,7,7,60,88,125,220,180,FAIL
+D5,6,6,18,16,14,14,7,7,60,90,130,250,180,FAIL
+D6,4,5,8,8,10,7,5,6,32,53,75,140,100,FAIL
+D7,6,7,8,22,12,10,8,8,52,81,120,200,400,FAIL
+D8,6,7,14,22,14,12,8,7,60,90,130,240,300,FAIL

@@ -1,0 +1,7 @@
+seed,direction,works_or_cluster,decision,reason
+FastBridge,backward,SAFER-Splat; backup CBF; full-dynamics safety filters,included,Direct D1/D4 overlap
+SAFER-Splat,forward,analytic collision-cone CBF; FastBridge; SplatCtrl,included,Recent realization-gap competitors
+Splat-Nav,forward,SPLANNING; FOCI; Gaussian navigation pipelines,included,Planning/collision lineage
+GAVIS,backward/forward,Bayesian/visibility uncertainty and active mapping,included,D3/D8 uncertainty lineage
+Conformal perception safety,forward,adaptive conformal safety; conformal risk planning,included,One-sided calibration lineage
+Predicted-Flow CBF,backward,backup CBF and predictive safety filters,included,D4/D5 feasibility lineage
