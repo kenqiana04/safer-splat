@@ -1,0 +1,38 @@
+{
+  "group_minimums": {
+    "G0": 12,
+    "G1": 12,
+    "G2": 8,
+    "G3": 12,
+    "G4": 5,
+    "G5": 5
+  },
+  "group_targets": {
+    "G0": 20,
+    "G1": 20,
+    "G2": 20,
+    "G3": 20,
+    "G4": 10,
+    "G5": 10
+  },
+  "holm_family": [
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6",
+    "H7"
+  ],
+  "hypotheses": {
+    "H1": "G1 B1 adds segment noncommit versus B0",
+    "H2": "G2/G3 B2 adds backup discrimination versus B1",
+    "H3": "G3 B3 restores certified control versus B2 with represented_false_safe=0",
+    "H4": "G0 quantifies B3 over-rejection and progress cost",
+    "H5": "Representative cohort estimates gate and rescue prevalence",
+    "H6": "Post-lock reference outcomes compare B0 and B3 when evaluable",
+    "H7": "50 ms deadline misses remain separate from semantic status"
+  },
+  "project_thresholds_are_domain_general": false,
+  "status": "FROZEN_BEFORE_FORMAL_RESULTS"
+}

@@ -1,0 +1,25 @@
+{
+  "checked_at_utc": "2026-08-06T05:25:36.4910286Z",
+  "gpu": {
+    "compute_process_count": 0,
+    "index": 1,
+    "memory_used_mib": 6,
+    "task_owned_compute_process_count": 0,
+    "utilization_percent": 0
+  },
+  "host": "zlab-Super-Server",
+  "managed_reverse_proxy": {
+    "listen_address": "127.0.0.1",
+    "listen_port": 17898,
+    "listener_present": true,
+    "modified_by_task": false
+  },
+  "scheduled_watchdog": {
+    "last_task_result_while_running": 267009,
+    "modified_by_task": false,
+    "state": "Running",
+    "task_name": "Codex-Persistent-Reverse-Proxy-Watchdog"
+  },
+  "ssh_process_kill_count": 0,
+  "status": "PASS_FINAL_GPU_PROXY_WATCHDOG_PRESERVATION"
+}

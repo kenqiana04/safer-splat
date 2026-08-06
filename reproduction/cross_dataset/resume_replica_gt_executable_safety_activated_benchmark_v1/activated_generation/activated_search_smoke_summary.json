@@ -1,0 +1,46 @@
+{
+  "activated_candidate_generation_count": 5000,
+  "activated_physical_valid_count": 5000,
+  "activated_stage_predicate_count": 5000,
+  "funnel": {
+    "B3_alternative_available": 5000,
+    "B3_alternative_certified": 25,
+    "current_feasible": 3566,
+    "current_infeasible": 1434,
+    "endpoint_diagnostic_pass": 3998,
+    "generated": 5000,
+    "map_valid": 5000,
+    "physical_valid": 5000,
+    "primary_backup_fail": 126,
+    "primary_backup_pass": 3225,
+    "segment_safe": 3352,
+    "segment_unsafe": 444,
+    "stage_predicate": 5000,
+    "terminal": 89
+  },
+  "mode": "smoke",
+  "prelock_formal_method_run_count": 0,
+  "prelock_future_reference_read_count": 0,
+  "prelock_physical_reference_access_count": 96,
+  "quota_case": "A2_ALL_MINIMUMS_MET_STRUCTURAL_SHORTFALL",
+  "raw_group_counts": {
+    "G0": 80,
+    "G1": 15,
+    "G2": 80,
+    "G3": 22,
+    "G4": 40,
+    "G5": 40
+  },
+  "runtime_s": 235.76123983389698,
+  "search_limit": 5000,
+  "selected_group_counts": {
+    "G0": 20,
+    "G1": 15,
+    "G2": 20,
+    "G3": 20,
+    "G4": 10,
+    "G5": 10
+  },
+  "status": "PASS_ACTIVATED_SEARCH_SMOKE",
+  "stopped_after_target_completion": false
+}

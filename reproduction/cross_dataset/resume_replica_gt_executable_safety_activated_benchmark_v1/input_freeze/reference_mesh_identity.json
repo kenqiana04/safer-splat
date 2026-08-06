@@ -1,0 +1,14 @@
+{
+  "prelock_future_reference_read_count": 0,
+  "reference_mesh": {
+    "path": "/disk1/zlab/cross_dataset_assets/raw/replica/replica_v1/apartment_0/mesh.ply",
+    "sha256": "274677d9b7caa413230363b68f4aa472e5cc1afe87e422a489fa1b7d844c6182"
+  },
+  "reference_online_read_count": 0,
+  "status": "PASS_REMOTE_READ_ONLY_REFERENCE_IDENTITY",
+  "validated_oracle": {
+    "path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/tmp/replica_mesh_oracle_backend",
+    "validation_path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/mesh_oracle/replica_mesh_collision_oracle_validation.json",
+    "validation_status": "PASS"
+  }
+}

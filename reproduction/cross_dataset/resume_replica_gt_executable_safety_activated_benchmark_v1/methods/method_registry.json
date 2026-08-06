@@ -1,0 +1,88 @@
+{
+  "b3_minus_b2": {
+    "only_difference": "REPLICA_GT_REPRESENTED_MAP_DIRECTIONAL_ALTERNATIVE_LIBRARY_V1",
+    "slot_count": 6,
+    "slot_ids": [
+      "ALT-01-OUTWARD",
+      "ALT-02-GOAL-TANGENT",
+      "ALT-03-AUX-TANGENT-POS",
+      "ALT-04-AUX-TANGENT-NEG",
+      "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+      "ALT-06-BRAKE-BIASED-OUTWARD"
+    ]
+  },
+  "methods": [
+    {
+      "backup": false,
+      "builtin_braking": false,
+      "current": true,
+      "directional_slots": [],
+      "method": "B0_CURRENT_CBF_ONLY",
+      "segment": false
+    },
+    {
+      "backup": false,
+      "builtin_braking": false,
+      "current": true,
+      "directional_slots": [],
+      "method": "B1_PLUS_SWEPT_SEGMENT",
+      "segment": true
+    },
+    {
+      "backup": true,
+      "builtin_braking": true,
+      "current": true,
+      "directional_slots": [],
+      "method": "B2_PLUS_TERMINAL_BACKUP",
+      "segment": true
+    },
+    {
+      "backup": true,
+      "builtin_braking": true,
+      "current": true,
+      "directional_slots": [
+        "ALT-01-OUTWARD",
+        "ALT-02-GOAL-TANGENT",
+        "ALT-03-AUX-TANGENT-POS",
+        "ALT-04-AUX-TANGENT-NEG",
+        "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+        "ALT-06-BRAKE-BIASED-OUTWARD"
+      ],
+      "method": "B3_FULL_UNIFIED_WITH_DIRECTIONAL_ALTERNATIVES",
+      "segment": true
+    }
+  ],
+  "shared_inputs": {
+    "builtin_braking": "DETERMINISTIC_COMPONENTWISE_BRAKING_POLICY_V1",
+    "certifier_time_budget_s": 30.0,
+    "deadline_diagnostic_s": 0.05,
+    "dt": 0.05,
+    "effective_footprint_m": 0.11,
+    "goal_position_tolerance_m": 0.03,
+    "goal_tolerance_provenance": "FROZEN_REPLICA_BOUNDED_DIRECT_GOAL_BASELINE",
+    "goal_velocity_tolerance_mps": 0.03,
+    "h_stop_max": 20,
+    "interval_position": "p(tau)=p+tau*v",
+    "map_snapshot": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+    "margin_m": 0.01,
+    "normative_model": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1",
+    "position_transition": "p_next=p+dt*v",
+    "primary": "PRIMARY-CBF-FILTERED",
+    "reference_role": "POST_LOCK_OFFLINE_EVALUATION_ONLY",
+    "robot_radius_m": 0.1,
+    "segment_backend": "EXACT_ANALYTIC_SPHERE_SEGMENT_MINIMUM",
+    "terminal_set": "BRAKING_TO_REST_TERMINAL_SET_V1",
+    "terminal_tolerance": 1e-12,
+    "u_bounds": [
+      -0.1,
+      0.1
+    ],
+    "u_nom_role": "LOG_AND_CONTROL_DEVIATION_ONLY",
+    "v_bounds": [
+      -0.1,
+      0.1
+    ],
+    "velocity_transition": "v_next=v+dt*u"
+  },
+  "status": "PASS_COMPLETE_PR86_METHOD_MATRIX_REPRODUCTION"
+}

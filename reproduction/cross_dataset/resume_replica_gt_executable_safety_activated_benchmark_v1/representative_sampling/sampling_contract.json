@@ -1,0 +1,27 @@
+{
+  "candidate_sources": [
+    "FROZEN_ROUTE_REGISTRY",
+    "ROUTE_NODES",
+    "ROUTE_EDGE_FIXED_FRACTIONS"
+  ],
+  "forbidden_selection_inputs": [
+    "stage_predicate",
+    "B0_B3",
+    "reference_future_outcome",
+    "progress",
+    "runtime",
+    "observed_gate_activation"
+  ],
+  "physical_min_clearance_m": 0.1,
+  "rollout_subset": 80,
+  "status": "FROZEN_BEFORE_SELECTION",
+  "strata": [
+    "route_id",
+    "node_or_edge",
+    "velocity_magnitude",
+    "spatial_quartile",
+    "zero_nonzero_velocity"
+  ],
+  "target": 160,
+  "within_stratum_order": "CANONICAL_TUPLE_SHA256_ASCENDING"
+}

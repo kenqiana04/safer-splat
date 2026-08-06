@@ -1,0 +1,36 @@
+{
+  "actions": [
+    {
+      "action": "Added canonical dataclass and enum serialization for immutable PR86 DirectionalSlot evidence.",
+      "id": "OA-001",
+      "scientific_contract_changed": false
+    },
+    {
+      "action": "Preserved the still-running activated smoke after the local SSH observer timed out; no duplicate smoke was started.",
+      "id": "OA-002",
+      "scientific_contract_changed": false
+    },
+    {
+      "action": "Created the task-owned smoke log directory after tee opened it before the smoke script could create it; did not rerun the completed one-step smoke.",
+      "id": "OA-003",
+      "scientific_contract_changed": false
+    },
+    {
+      "action": "Recorded and resumed the interrupted formal attempt under the identical manifest after the local SSH observation pipe closed; no completed formal output existed.",
+      "id": "OA-004",
+      "scientific_contract_changed": false
+    },
+    {
+      "action": "Installed pytest 8.3.5 into task-owned runtime_work after the configured mirror failed TLS; used official PyPI through the preserved loopback proxy and did not modify the frozen Conda environment.",
+      "id": "OA-005",
+      "scientific_contract_changed": false
+    },
+    {
+      "action": "Shortened task-owned atomic temporary filenames to preserve same-directory atomic replacement under the Windows MAX_PATH limit; no payload or scientific value changed.",
+      "id": "OA-006",
+      "scientific_contract_changed": false
+    }
+  ],
+  "operational_autonomy_action_count": 6,
+  "status": "RECORDED_TASK_LEVEL_AUTONOMY_ACTIONS"
+}

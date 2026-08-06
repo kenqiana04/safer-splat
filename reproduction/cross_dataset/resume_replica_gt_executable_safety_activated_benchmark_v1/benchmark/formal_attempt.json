@@ -1,0 +1,22 @@
+{
+  "activated_registry_sha256": "3f4046eb4d326b3666e7e829f58a01fe84f4a4d3c3c2e09e3336fc8d1b4ef321",
+  "completed_formal_output_count_before_resume": 0,
+  "formal_attempt_count": 1,
+  "infrastructure_failure_count": 1,
+  "infrastructure_interruption_reason": "LOCAL_SSH_OBSERVATION_TIMEOUT_CLOSED_STDOUT_PIPE",
+  "infrastructure_resume_count": 1,
+  "logical_control_step_count": 3603,
+  "logical_episode_count": 640,
+  "method_order": [
+    "B0_CURRENT_CBF_ONLY",
+    "B1_PLUS_SWEPT_SEGMENT",
+    "B2_PLUS_TERMINAL_BACKUP",
+    "B3_FULL_UNIFIED_WITH_DIRECTIONAL_ALTERNATIVES"
+  ],
+  "one_step_method_run_count": 1040,
+  "output_sha256": "9f96bbfe7b5d4c5982d405f38dbc2ea5a04de42021dc58fab7112a49b103410d",
+  "representative_registry_sha256": "eaa0f9f63cbcae433741b959441cf244648e30bf184b62309334602b76659a1a",
+  "rollout_output_sha256": "550e587ca747996c9fc48ccfdab150b242db511e979ac49538031e1049f68303",
+  "scientific_result_replacement_count": 0,
+  "status": "FORMAL_ATTEMPT_COMPLETED"
+}
