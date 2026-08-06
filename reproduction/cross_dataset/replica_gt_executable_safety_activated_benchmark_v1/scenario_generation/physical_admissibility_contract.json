@@ -1,0 +1,20 @@
+{
+  "allowed_prelock_checks": [
+    "start outside official mesh",
+    "minimum physical clearance",
+    "goal outside official mesh",
+    "finite state/goal",
+    "velocity bounds",
+    "map query availability"
+  ],
+  "forbidden_prelock_checks": [
+    "future reference collision",
+    "formal rollout",
+    "progress",
+    "runtime",
+    "method outcome"
+  ],
+  "map_snapshot_id": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+  "robot_radius_m": 0.1,
+  "status": "FROZEN_NOT_INVOKED_DUE_PRIOR_FAIRNESS_BLOCK"
+}

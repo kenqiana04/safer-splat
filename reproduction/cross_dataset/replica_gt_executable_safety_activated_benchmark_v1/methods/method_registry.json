@@ -1,0 +1,59 @@
+{
+  "frozen_order_rule": "nominal_then_existing_filtered_sorted_by_id_then_task_local_sorted_by_id_then_deterministic_braking",
+  "methods": [
+    {
+      "alternatives": false,
+      "executable_from_frozen_inputs": true,
+      "gates": [
+        "actuator",
+        "current_full_query"
+      ],
+      "id": "B0_CURRENT_CBF_ONLY",
+      "input": "frozen_u_filtered"
+    },
+    {
+      "alternatives": false,
+      "executable_from_frozen_inputs": true,
+      "gates": [
+        "actuator",
+        "current_full_query",
+        "swept_segment"
+      ],
+      "id": "B1_PLUS_SWEPT_SEGMENT",
+      "input": "same_frozen_u_filtered"
+    },
+    {
+      "alternatives": false,
+      "executable_from_frozen_inputs": true,
+      "gates": [
+        "actuator",
+        "current_full_query",
+        "swept_segment",
+        "terminal_backup"
+      ],
+      "id": "B2_PLUS_TERMINAL_BACKUP_NO_ALTERNATIVES",
+      "input": "same_frozen_u_filtered"
+    },
+    {
+      "alternatives": true,
+      "executable_from_frozen_inputs": false,
+      "gates": [
+        "actuator",
+        "current_full_query",
+        "swept_segment",
+        "terminal_backup",
+        "alternative_search"
+      ],
+      "id": "B3_FULL_UNIFIED_CERTIFIER_WITH_ALTERNATIVES",
+      "input": "nominal_existing_filtered_and_missing_concrete_task_local_alternatives"
+    }
+  ],
+  "missing_contract": [
+    "alternative acceleration values",
+    "alternative candidate IDs",
+    "alternative library size",
+    "alternative library canonical identity"
+  ],
+  "prohibited_repair": "Do not invent or tune a task-local alternative set after PR #84.",
+  "status": "BLOCKED_BY_METHOD_FAIRNESS_CONTRACT_MISMATCH"
+}

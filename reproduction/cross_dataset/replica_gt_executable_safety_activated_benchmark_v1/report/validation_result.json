@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "candidate_exhaustion_not_unrecoverable": true,
+    "deadline_audit_present": true,
+    "fail_closed_not_safe_stop": true,
+    "fairness_blocker_is_genuine": true,
+    "figure_count": true,
+    "gpu_clean": true,
+    "map_identity": true,
+    "missing_library_contract_explicit": true,
+    "no_forbidden_files": true,
+    "no_large_files": true,
+    "no_repository_pycache": true,
+    "pr84_identity": true,
+    "pr84_preserved": true,
+    "protected_scope_only": true,
+    "pytest": true,
+    "reference_identity": true,
+    "report_status_consistent": true,
+    "represented_reference_separated": true,
+    "required_files_present": true,
+    "selection_leakage_zero": true,
+    "syntax_compile": true,
+    "watchdog_ssh_preserved": true,
+    "zero_execution_boundary": true
+  },
+  "failed_checks": [],
+  "figure_count": 25,
+  "file_count": 85,
+  "final_status": "BLOCKED_BY_METHOD_FAIRNESS_CONTRACT_MISMATCH",
+  "pytest_passed": 6,
+  "status": "PASS_REPLICA_GT_EXECUTABLE_SAFETY_ACTIVATED_BENCHMARK_VALIDATION"
+}
