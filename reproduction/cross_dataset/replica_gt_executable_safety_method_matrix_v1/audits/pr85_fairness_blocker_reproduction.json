@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "braking_added_inside_order": true,
+    "caller_supplied_alternatives_ordered": true,
+    "certifier_passes_external_alternatives_to_order": true,
+    "certify_requires_external_alternatives": true,
+    "no_fixed_library_size": true,
+    "no_fixed_slot_ids": true,
+    "no_module_level_concrete_controls": true,
+    "order_function_exists": true
+  },
+  "gap": "Ordering is frozen, while concrete task-local alternative values, IDs, count, availability semantics, and canonical identity are absent from PR #84.",
+  "pr84_head": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+  "pr85_head": "7afef38392bec36d9d9811e5a22c816da5faf1ff",
+  "status": "PASS_PR85_BLOCKER_REPRODUCED"
+}

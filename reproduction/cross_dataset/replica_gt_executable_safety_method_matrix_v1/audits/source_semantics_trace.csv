@@ -1,0 +1,5 @@
+source,symbol,semantics,verified
+candidate_library.py,frozen_candidate_order,orders caller-supplied alternatives,True
+executable_safety_certifier.py,ExecutableSafetyCertifier.certify,requires alternative_controls argument,True
+candidate_library.py,module scope,contains no concrete Control constructor,True
+candidate_library.py,braking,appended by frozen policy,True

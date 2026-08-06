@@ -1,0 +1,46 @@
+{
+  "box_scaling": "u_box(d)=0.1*d/||d||_infinity",
+  "canonical_float": "float64.hex; signed zero normalized to 0x0.0p+0",
+  "deceleration_projection": "project d_raw into {d | v^T d <= 0}",
+  "dedup_rule": {
+    "abs_component_tolerance": 1e-12,
+    "earlier_slot_wins": true,
+    "order": [
+      "ALT-01-OUTWARD",
+      "ALT-02-GOAL-TANGENT",
+      "ALT-03-AUX-TANGENT-POS",
+      "ALT-04-AUX-TANGENT-NEG",
+      "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+      "ALT-06-BRAKE-BIASED-OUTWARD"
+    ]
+  },
+  "dt": 0.05,
+  "forbidden_inputs": [
+    "official_mesh",
+    "reference_collision",
+    "future_outcome",
+    "G0_G5",
+    "method_success",
+    "progress",
+    "runtime",
+    "benchmark_registry",
+    "oracle"
+  ],
+  "goal_tangent_fallback": "argmin(|axis^T n|) over e_x,e_y,e_z with x,y,z tie order",
+  "library_id": "REPLICA_GT_REPRESENTED_MAP_DIRECTIONAL_ALTERNATIVE_LIBRARY_V1",
+  "library_version": 1,
+  "max_available_control_count": 6,
+  "normal": "n=(p-c_j)/||p-c_j||_2; c_j comes from active_gaussian_ids[0] of the current represented-map FULL query",
+  "normal_epsilon": 1e-12,
+  "slot_ids": [
+    "ALT-01-OUTWARD",
+    "ALT-02-GOAL-TANGENT",
+    "ALT-03-AUX-TANGENT-POS",
+    "ALT-04-AUX-TANGENT-NEG",
+    "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+    "ALT-06-BRAKE-BIASED-OUTWARD"
+  ],
+  "source": "TASK_LOCAL_REPRESENTED_MAP_DIRECTIONAL_V1",
+  "template_slot_count": 6,
+  "u_bound": 0.1
+}

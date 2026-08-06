@@ -1,0 +1,75 @@
+{
+  "artifacts": [
+    {
+      "git_blob": "2dde8527f464d863eb12d95b20b031e3c3b46fd1",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_activated_benchmark_v1/report/REPORT_BUILD_REPLICA_GT_EXECUTABLE_SAFETY_ACTIVATED_BENCHMARK_V1.md",
+      "sha256": "823bd790c125f0db8c4dfd5dd2491e387727769e3f14542bf5c5d6378e066fd4",
+      "size": 6359
+    },
+    {
+      "git_blob": "0e2e715cd18abbbeb7364239da0f58e4140fa0b5",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_activated_benchmark_v1/report/validation_result.json",
+      "sha256": "7238a2efd86c69559530bc8d388e6b26d3fc4880162619e65026bca4cb0a2886",
+      "size": 1036
+    },
+    {
+      "git_blob": "a0f59ab10975468c272caaf2256819ebd2a2ba70",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_activated_benchmark_v1/report/downstream_handoff.json",
+      "sha256": "c186be0c0940c44da89d2f6cf607a460d9cbcc03900b1b47f2dd5dba0734cefa",
+      "size": 783
+    },
+    {
+      "git_blob": "5a547f1b401d8239da6824e2f6631fae4868eb55",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_activated_benchmark_v1/methods/fairness_audit.json",
+      "sha256": "4d230bd8fc820674ce67e8bfddc4d3038c0bdc4ef935f51abd67a3925f7913e8",
+      "size": 2253
+    },
+    {
+      "git_blob": "0b37fb18cbf3df49a8fcdf94c8d3684e3e93f08e",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_activated_benchmark_v1/methods/method_registry.json",
+      "sha256": "dbfc3c8a2c8b105a050fa87f08d4efe795aa687ea25cece7541de99b311a3bd6",
+      "size": 1673
+    },
+    {
+      "git_blob": "8578a559b5ac4ce746b0c0000d185d70d078171c",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_activated_benchmark_v1/input_freeze/pr84_identity.json",
+      "sha256": "103c9989c498c75682b771d26a70e338e21a194ae54f3c5153688dc943aa89b4",
+      "size": 949
+    },
+    {
+      "git_blob": "e30d81dbbb02ad7a4b4b0230af42ee7bda2a0517",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_activated_benchmark_v1/input_freeze/pr84_artifact_manifest.json",
+      "sha256": "b6da04e5d4064db3179537424ca5163c7574477987d567dbeda29922e16524f2",
+      "size": 5089
+    },
+    {
+      "git_blob": "93cc7e28ab48034bd3b94ee9ef960440ba113459",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_activated_benchmark_v1/input_freeze/replica_map_identity.json",
+      "sha256": "f02ee4c7c196e09a09e3d4ab6bc5e87ffd8238b8bfc8f7e814035d30a46235c4",
+      "size": 2709
+    },
+    {
+      "git_blob": "1830683b44a0a49633745e8ccef2327a376e5477",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_activated_benchmark_v1/input_freeze/reference_mesh_identity.json",
+      "sha256": "1fd675b8e021b1f02193fcbea333f5ef4ff5ac0ff07606eb70d6bd9f03bca0fc",
+      "size": 991
+    },
+    {
+      "git_blob": "c3d7443eeed50a13738382cd486905a4fb16b68d",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_activated_benchmark_v1/audits/execution_count_audit.json",
+      "sha256": "6b682378200378bdcd5f06f90e3a91739676f26f864937ce93286885b34e244a",
+      "size": 1055
+    }
+  ],
+  "head": "7afef38392bec36d9d9811e5a22c816da5faf1ff"
+}

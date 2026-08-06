@@ -1,0 +1,146 @@
+{
+  "global_library_sha256": "3d491876234161d4e881ec1227c505cb07c0af00d5e881c5289fdf1f1577c6fe",
+  "identity_material": {
+    "generator_source_manifest": [
+      {
+        "path": "task_config.py",
+        "sha256": "5127bf58c54f0d1e2a103ee3c3f970a1d80400c4f8f04716e98e8101b6fe9ca1",
+        "size": 3243
+      },
+      {
+        "path": "alternative_library/result_types.py",
+        "sha256": "61a7c0fbcec7f1f4a6d31039405f3896fb5a6e460410f4f502b5e99f6f6cddd3",
+        "size": 2325
+      },
+      {
+        "path": "alternative_library/canonical_serialization.py",
+        "sha256": "150cf7d18ad2f0033016f2c30decbd21525bbfa5c7c84f9f08b31716f2c43362",
+        "size": 1181
+      },
+      {
+        "path": "alternative_library/represented_sphere_frame.py",
+        "sha256": "366d3ea751b7d8b7bce45032a657add900c2a76afe093ec1cb7688e8e6152e8f",
+        "size": 1929
+      },
+      {
+        "path": "alternative_library/actuator_box_scaling.py",
+        "sha256": "46b99bb4564224ad659cd44c67c6f799510a77a46692bd93693a595872d98784",
+        "size": 1361
+      },
+      {
+        "path": "alternative_library/deceleration_projection.py",
+        "sha256": "49ba7b46a9b696cbb6d2d391fbf8d499d1da05d2889d7ae23b686db222ec7f6a",
+        "size": 1221
+      },
+      {
+        "path": "alternative_library/directional_library.py",
+        "sha256": "6ed9d209e31167ded426a0007d99ea4f09c2f5a63a58840d189b1536c9c11e17",
+        "size": 6510
+      },
+      {
+        "path": "alternative_library/contract.py",
+        "sha256": "2415b63414bc7b8f6465f3ec653803a993b8bba7a5f25017a7a3dd550bc1d134",
+        "size": 1265
+      },
+      {
+        "path": "methods/b2_primary_and_braking_wrapper.py",
+        "sha256": "e23af775b0ac1ea08049d33553a8b44cdedd76e018656b6ee647a8e0df329d1e",
+        "size": 880
+      },
+      {
+        "path": "methods/b3_directional_library_wrapper.py",
+        "sha256": "be18abd07ca4c66342bba4845f971217ff6ad23e9c24d1737ad58fc25115d305",
+        "size": 948
+      }
+    ],
+    "library": {
+      "box_scaling": "u_box(d)=0.1*d/||d||_infinity",
+      "canonical_float": "float64.hex; signed zero normalized to 0x0.0p+0",
+      "deceleration_projection": "project d_raw into {d | v^T d <= 0}",
+      "dedup_rule": {
+        "abs_component_tolerance": 1e-12,
+        "earlier_slot_wins": true,
+        "order": [
+          "ALT-01-OUTWARD",
+          "ALT-02-GOAL-TANGENT",
+          "ALT-03-AUX-TANGENT-POS",
+          "ALT-04-AUX-TANGENT-NEG",
+          "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+          "ALT-06-BRAKE-BIASED-OUTWARD"
+        ]
+      },
+      "dt": 0.05,
+      "forbidden_inputs": [
+        "official_mesh",
+        "reference_collision",
+        "future_outcome",
+        "G0_G5",
+        "method_success",
+        "progress",
+        "runtime",
+        "benchmark_registry",
+        "oracle"
+      ],
+      "goal_tangent_fallback": "argmin(|axis^T n|) over e_x,e_y,e_z with x,y,z tie order",
+      "library_id": "REPLICA_GT_REPRESENTED_MAP_DIRECTIONAL_ALTERNATIVE_LIBRARY_V1",
+      "library_version": 1,
+      "max_available_control_count": 6,
+      "normal": "n=(p-c_j)/||p-c_j||_2; c_j comes from active_gaussian_ids[0] of the current represented-map FULL query",
+      "normal_epsilon": 1e-12,
+      "slot_ids": [
+        "ALT-01-OUTWARD",
+        "ALT-02-GOAL-TANGENT",
+        "ALT-03-AUX-TANGENT-POS",
+        "ALT-04-AUX-TANGENT-NEG",
+        "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+        "ALT-06-BRAKE-BIASED-OUTWARD"
+      ],
+      "source": "TASK_LOCAL_REPRESENTED_MAP_DIRECTIONAL_V1",
+      "template_slot_count": 6,
+      "u_bound": 0.1
+    },
+    "map_snapshot_identity": "3b318a98a454ec5c36410b3c41dfb3dd4a25b7b5a1899f1f2c939fbf24ad0e55",
+    "pr84_certifier_manifest_sha256": "c7928d4032e9da8ad65e39134fd480c6f1828ba2a28ee4c76ac5c7e64c2bdd35",
+    "pr84_head": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+    "slots": [
+      {
+        "candidate_id": "ALT-01-OUTWARD",
+        "formula": "u_box(n)",
+        "slot_index": 1,
+        "source": "TASK_LOCAL_REPRESENTED_MAP_DIRECTIONAL_V1"
+      },
+      {
+        "candidate_id": "ALT-02-GOAL-TANGENT",
+        "formula": "u_box(t_g)",
+        "slot_index": 2,
+        "source": "TASK_LOCAL_REPRESENTED_MAP_DIRECTIONAL_V1"
+      },
+      {
+        "candidate_id": "ALT-03-AUX-TANGENT-POS",
+        "formula": "u_box(t_a)",
+        "slot_index": 3,
+        "source": "TASK_LOCAL_REPRESENTED_MAP_DIRECTIONAL_V1"
+      },
+      {
+        "candidate_id": "ALT-04-AUX-TANGENT-NEG",
+        "formula": "u_box(-t_a)",
+        "slot_index": 4,
+        "source": "TASK_LOCAL_REPRESENTED_MAP_DIRECTIONAL_V1"
+      },
+      {
+        "candidate_id": "ALT-05-BRAKE-BIASED-GOAL-TANGENT",
+        "formula": "u_box(project_Hv(b_hat+t_g))",
+        "slot_index": 5,
+        "source": "TASK_LOCAL_REPRESENTED_MAP_DIRECTIONAL_V1"
+      },
+      {
+        "candidate_id": "ALT-06-BRAKE-BIASED-OUTWARD",
+        "formula": "u_box(project_Hv(b_hat+n))",
+        "slot_index": 6,
+        "source": "TASK_LOCAL_REPRESENTED_MAP_DIRECTIONAL_V1"
+      }
+    ]
+  },
+  "library_id": "REPLICA_GT_REPRESENTED_MAP_DIRECTIONAL_ALTERNATIVE_LIBRARY_V1",
+  "library_version": 1
+}
