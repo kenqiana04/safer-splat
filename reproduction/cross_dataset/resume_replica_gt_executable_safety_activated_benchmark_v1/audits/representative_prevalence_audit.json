@@ -1,0 +1,56 @@
+{
+  "activated_records_used_for_prevalence": 0,
+  "prevalence": [
+    {
+      "count": 0,
+      "metric": "segment_activation",
+      "rate": 0.0,
+      "total": 160,
+      "wilson95_lower": 0.0,
+      "wilson95_upper": 0.02344619517150519
+    },
+    {
+      "count": 0,
+      "metric": "backup_activation",
+      "rate": 0.0,
+      "total": 160,
+      "wilson95_lower": 0.0,
+      "wilson95_upper": 0.02344619517150519
+    },
+    {
+      "count": 0,
+      "metric": "directional_rescue",
+      "rate": 0.0,
+      "total": 160,
+      "wilson95_lower": 0.0,
+      "wilson95_upper": 0.02344619517150519
+    },
+    {
+      "count": 0,
+      "metric": "fail_closed",
+      "rate": 0.0,
+      "total": 160,
+      "wilson95_lower": 0.0,
+      "wilson95_upper": 0.02344619517150519
+    },
+    {
+      "count": 35,
+      "metric": "terminal",
+      "rate": 0.21875,
+      "total": 160,
+      "wilson95_lower": 0.1617014725523996,
+      "wilson95_upper": 0.2889870122315721
+    },
+    {
+      "count": 0,
+      "metric": "current_infeasible",
+      "rate": 0.0,
+      "total": 160,
+      "wilson95_lower": 0.0,
+      "wilson95_upper": 0.02344619517150519
+    }
+  ],
+  "representative_registry_count": 160,
+  "representative_relevance_gate": false,
+  "status": "PASS_REPRESENTATIVE_ONLY_PREVALENCE_AUDIT"
+}

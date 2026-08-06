@@ -1,0 +1,21 @@
+{
+  "all_pass": true,
+  "checks": {
+    "B3_only_adds_six_slot_directional_template": true,
+    "library_identity_exact": true,
+    "no_future_outcome_input": true,
+    "no_reference_online_input": true,
+    "same_actuator_bounds": true,
+    "same_backup_policy": true,
+    "same_builtin_braking_B2_B3": true,
+    "same_current_full_query": true,
+    "same_map_snapshot": true,
+    "same_normative_model": true,
+    "same_segment_backend": true,
+    "same_state_goal": true,
+    "same_terminal_set": true,
+    "same_u_filtered_primary": true,
+    "same_u_nom_logged": true
+  },
+  "status": "PASS_METHOD_FAIRNESS_CONTRACT"
+}

@@ -1,0 +1,18 @@
+{
+  "activated_prevalence_claim_count": 0,
+  "collision_superiority_claim_count": 0,
+  "deployment_claim_count": 0,
+  "not_supported": [
+    "Activated cohort prevalence or natural frequency.",
+    "Broad representative relevance for segment, backup, or directional rescue.",
+    "Reference collision superiority because no B0/B3 collision events occurred.",
+    "Real-time or deployment readiness.",
+    "Generalization beyond the frozen Replica GT-FINE configuration."
+  ],
+  "status": "PASS_CLAIM_BOUNDARY_AUDIT",
+  "supported": [
+    "ACTIVATED cohort establishes configuration-specific segment and backup gate existence.",
+    "ACTIVATED G3 establishes configuration-specific B3 directional rescue over B2.",
+    "The represented-map backend produced zero represented false-safe records."
+  ]
+}

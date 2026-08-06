@@ -1,0 +1,46 @@
+{
+  "activated_candidate_generation_count": 5744,
+  "activated_physical_valid_count": 5744,
+  "activated_stage_predicate_count": 5744,
+  "funnel": {
+    "B3_alternative_available": 5744,
+    "B3_alternative_certified": 25,
+    "current_feasible": 4139,
+    "current_infeasible": 1605,
+    "endpoint_diagnostic_pass": 4629,
+    "generated": 6000,
+    "map_valid": 5744,
+    "physical_valid": 5744,
+    "primary_backup_fail": 126,
+    "primary_backup_pass": 3757,
+    "segment_safe": 3884,
+    "segment_unsafe": 525,
+    "stage_predicate": 5744,
+    "terminal": 102
+  },
+  "mode": "full",
+  "prelock_formal_method_run_count": 0,
+  "prelock_future_reference_read_count": 0,
+  "prelock_physical_reference_access_count": 115,
+  "quota_case": "A1_ALL_TARGETS_MET",
+  "raw_group_counts": {
+    "G0": 80,
+    "G1": 20,
+    "G2": 80,
+    "G3": 22,
+    "G4": 40,
+    "G5": 40
+  },
+  "runtime_s": 267.4334916018415,
+  "search_limit": 300000,
+  "selected_group_counts": {
+    "G0": 20,
+    "G1": 20,
+    "G2": 20,
+    "G3": 20,
+    "G4": 10,
+    "G5": 10
+  },
+  "status": "PASS_ACTIVATED_SEARCH_COMPLETE",
+  "stopped_after_target_completion": true
+}

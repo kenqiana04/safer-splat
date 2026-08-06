@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "colors_rgb.npy": true,
+    "gpu_compute_empty": true,
+    "means_world_m.npy": true,
+    "mesh_oracle_executable": true,
+    "mesh_oracle_validation": true,
+    "mesh_oracle_validation_pass": true,
+    "opacities_probability.npy": true,
+    "proxy_loopback_listener": true,
+    "quaternions_wxyz.npy": true,
+    "reference_mesh": true,
+    "route_registry": true,
+    "runtime_h_stop_max": true,
+    "runtime_map_snapshot": true,
+    "runtime_payload_identity": true,
+    "scales_linear_m.npy": true,
+    "start_registry": true,
+    "voxel_indices_int64.npy": true
+  },
+  "gpu": "1, 6 MiB, 0 %",
+  "gpu_compute_processes": "",
+  "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+  "proxy_listener": "State   Recv-Q   Send-Q     Local Address:Port      Peer Address:Port  Process  \nLISTEN  0        128            127.0.0.1:17898          0.0.0.0:*",
+  "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+  "route_count": 100,
+  "runtime_payload_file_count": 30,
+  "status": "PASS_SERVER_PREFLIGHT",
+  "versions": {
+    "clarabel": "0.10.0",
+    "matplotlib": "3.10.9",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3"
+  }
+}

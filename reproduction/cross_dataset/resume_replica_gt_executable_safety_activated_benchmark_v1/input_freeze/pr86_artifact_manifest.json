@@ -1,0 +1,768 @@
+{
+  "artifacts": [
+    {
+      "git_blob": "3bbe7b6f921890134bd22373cfdd89e91d5e788f",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/.gitignore",
+      "sha256": "ac2de72f51a815d5d4c3b2c16f8aa800a4c817c4b4f5e054218e300c661b47fa",
+      "size": 25
+    },
+    {
+      "git_blob": "c7f5bec0039613268a0b3db53e6186a2ce817f71",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/IMPLEMENTATION_PLAN.md",
+      "sha256": "1e8cc9e2dab61d3d1d52e6eae46750ca40e02df28bb02cf9e11901ceb0ff4a3b",
+      "size": 7986
+    },
+    {
+      "git_blob": "ce44a84a9388666574f7350c9d05246dc6e2e5de",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/alternative_library/__init__.py",
+      "sha256": "1090f302bb78ec5755e3b0eafe3014f1b7309ae83d5c348f6fe2c6ebb1617d57",
+      "size": 68
+    },
+    {
+      "git_blob": "d289c19ddeab0be9faec5448769bb6ebbdb279e1",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/alternative_library/actuator_box_scaling.py",
+      "sha256": "46b99bb4564224ad659cd44c67c6f799510a77a46692bd93693a595872d98784",
+      "size": 1361
+    },
+    {
+      "git_blob": "9504aa6c2a9268453363cb1cee922abed6538874",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/alternative_library/alternative_library_contract.json",
+      "sha256": "50675a991c87bd433e6c8c864e3bba1ecc3d143e7177c183b42528a028157e09",
+      "size": 1399
+    },
+    {
+      "git_blob": "c00a186e3cd43aa75a203ebc4d217fc5c715d980",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/alternative_library/alternative_library_identity.json",
+      "sha256": "52aaa5ef56f289131ba52b9c3328f4f2f2c839c2aa5c0ea45644f1833cebdd63",
+      "size": 5136
+    },
+    {
+      "git_blob": "84271e0fc8ecb4ad41610b336afc4eda72115c4c",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/alternative_library/alternative_library_slot_schema.json",
+      "sha256": "7c9193b6bb105eccc61645d04a699215db4745515863fb6d61cce261aef9bb25",
+      "size": 1575
+    },
+    {
+      "git_blob": "8198089ebe3339f4a44d29f180371e5d6820e3c2",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/alternative_library/alternative_library_source_manifest.json",
+      "sha256": "b9d65328374ebb63fab8008a5404a1cca55a228c580dce63a38ab0cc7127aa59",
+      "size": 1835
+    },
+    {
+      "git_blob": "4d97fee8a508ce916a0f8c2131ddaaa6d406a909",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/alternative_library/canonical_serialization.py",
+      "sha256": "150cf7d18ad2f0033016f2c30decbd21525bbfa5c7c84f9f08b31716f2c43362",
+      "size": 1181
+    },
+    {
+      "git_blob": "40d40840a1554606062e6d05941f58638c2addc6",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/alternative_library/contract.py",
+      "sha256": "2415b63414bc7b8f6465f3ec653803a993b8bba7a5f25017a7a3dd550bc1d134",
+      "size": 1265
+    },
+    {
+      "git_blob": "900f9ea8035deaa1a3875ab58368c8bb2c031a99",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/alternative_library/deceleration_projection.py",
+      "sha256": "49ba7b46a9b696cbb6d2d391fbf8d499d1da05d2889d7ae23b686db222ec7f6a",
+      "size": 1221
+    },
+    {
+      "git_blob": "9f065f9ea0d14a4ff0bdccc9affc508954923813",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/alternative_library/directional_library.py",
+      "sha256": "6ed9d209e31167ded426a0007d99ea4f09c2f5a63a58840d189b1536c9c11e17",
+      "size": 6510
+    },
+    {
+      "git_blob": "b1be58add53828624ae261fb757bc10233dbe4b0",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/alternative_library/represented_sphere_frame.py",
+      "sha256": "366d3ea751b7d8b7bce45032a657add900c2a76afe093ec1cb7688e8e6152e8f",
+      "size": 1929
+    },
+    {
+      "git_blob": "83e16e93b61ca109512a39edf84501157b40317c",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/alternative_library/result_types.py",
+      "sha256": "61a7c0fbcec7f1f4a6d31039405f3896fb5a6e460410f4f502b5e99f6f6cddd3",
+      "size": 2325
+    },
+    {
+      "git_blob": "3371b8ddb51e3c6e8ce7834b1182e899a0a37374",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/audit_upstream_contract.py",
+      "sha256": "688615a05913a3975c09fbc0da863d0074da53f8da8e8aa78d52e64d0a15a135",
+      "size": 3041
+    },
+    {
+      "git_blob": "524bc6ee5d069f1d8ac347dab889e66a5521c885",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/audits/claim_boundary_audit.json",
+      "sha256": "883d983d825fafb07a6b84b8bf78f8ac5bb8286c0143bb6a4e055515c9f18ebc",
+      "size": 421
+    },
+    {
+      "git_blob": "ade4620cc1b173c369279c5a4a44172b001ebce1",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/audits/execution_count_audit.json",
+      "sha256": "edbc463e68941a3bedac4599e37c9689f3b664ad0ec39a385eb53e216b7c01bf",
+      "size": 1274
+    },
+    {
+      "git_blob": "2afde2a49cab909d340cdd3257ba1abe93d9ad2f",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/audits/no_benchmark_boundary.json",
+      "sha256": "8380a95fc31fcbafe7e3f6ce21e2dee6ece47396475175efb0952a5f8f378476",
+      "size": 203
+    },
+    {
+      "git_blob": "0775b7b373baffa08fd0e30c8d3f78873831a917",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/audits/pr84_candidate_contract_gap.json",
+      "sha256": "baa389c561f5917667ae2f85d2655ae8575add41eca7935d49b130e423980888",
+      "size": 695
+    },
+    {
+      "git_blob": "0775b7b373baffa08fd0e30c8d3f78873831a917",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/audits/pr85_fairness_blocker_reproduction.json",
+      "sha256": "baa389c561f5917667ae2f85d2655ae8575add41eca7935d49b130e423980888",
+      "size": 695
+    },
+    {
+      "git_blob": "b709aed8d7abe7dbd5745419e1e12e617b22ad60",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/audits/source_semantics_trace.csv",
+      "sha256": "866e6c71e20f0f18570f53033cedfc48e6a4f3defdf5abd3bc7f25c27e168093",
+      "size": 367
+    },
+    {
+      "git_blob": "31a26b74114b369d1c6d6445268eb18e3a440d3a",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/audits/three_process_determinism.json",
+      "sha256": "aeb9e238ea769ea321ae597f2110cbaceb0a370ed7af9cbb4285a45360de03eb",
+      "size": 381
+    },
+    {
+      "git_blob": "92dc7c18929cc4125fbd93fd3f0a0c4c45b515a3",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/build_closeout_artifacts.py",
+      "sha256": "6e4ec7e2dae76dc5a7859ef4263b5169859129a730083d859a2c71a0d032cdb6",
+      "size": 8484
+    },
+    {
+      "git_blob": "77adcc06c30efa81e6620678b1a8b0c528b658ab",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/build_figures.py",
+      "sha256": "b616761ea5850befcbe45c65b44cae1e3eaec3ce79f79c6c8971213350f6adad",
+      "size": 2155
+    },
+    {
+      "git_blob": "3a6f263e8c93c5f8c88e2aed4dffd0ca1a8fdef5",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/build_method_freeze_artifacts.py",
+      "sha256": "82da7fa3a57d7e6836886d7c037d7ab550178ad3156ea32d5768c8159a737997",
+      "size": 7729
+    },
+    {
+      "git_blob": "6000fc4d540eaeea2d79e11634c6271dcf9e0380",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/common.py",
+      "sha256": "95a45ac18b46ef217d33280c96fe800919975e4f1deae76d29333b06f9eec795",
+      "size": 2020
+    },
+    {
+      "git_blob": "921876fbbbacb191e5effce5428f9161e0c8e500",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/figures/actuator_box_scaling.png",
+      "sha256": "814a82d0ad07cfa39159fea54d634974bf27a5fdf2c339648dd6a5c78065fa69",
+      "size": 17906
+    },
+    {
+      "git_blob": "dc4f663bcf1c8106afc1cf0296092e81e27d1d45",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/figures/axis_fallback_rule.png",
+      "sha256": "cb11a8b825ca6e0564591f2bc954016bd5b6f7d4bba23e235c4da87d4a985911",
+      "size": 17573
+    },
+    {
+      "git_blob": "47dd13fc6ba5b8766a66486faf56bd7a6d27358c",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/figures/b0_b3_nested_method_matrix.png",
+      "sha256": "c81eef89a5aeb8d8722a4a6992e1d46ac386ed48b010e6346cfd4c3949bf801d",
+      "size": 18104
+    },
+    {
+      "git_blob": "b36233559b2190a4e3a6c3e341b8fe22fb77c903",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/figures/b2_vs_b3_only_difference.png",
+      "sha256": "45fc7af4518da7050bb6611ba55d70ee3a2b5656b69290ff1f5a16185b64533a",
+      "size": 18022
+    },
+    {
+      "git_blob": "ebfed1ae553236e86cf3fc26f7bbabc672c54aa9",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/figures/canonical_identity_pipeline.png",
+      "sha256": "5363bb5c0ad04f5abb977f343208309719989a641b3f382f2851d39ed6d07196",
+      "size": 17542
+    },
+    {
+      "git_blob": "af6a35e6fd206ae11dfbde84dd44217502e3c3d9",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/figures/claim_boundary.png",
+      "sha256": "a6c8c375c323bc6a715a5b74c702971639dd5d6f7764b33b6d1add1817e96aac",
+      "size": 17620
+    },
+    {
+      "git_blob": "f54e68784bab8fb48b4280b7804721e8b79572ef",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/figures/deceleration_halfspace_projection.png",
+      "sha256": "b3a68df548f10cec94f7562f230b2d7ed633cdb9e9aa63e084657e10afc27286",
+      "size": 17851
+    },
+    {
+      "git_blob": "e03f86a08c6d6a5c5e5e1aa3b4bb0c08e0d9a059",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/figures/deterministic_deduplication.png",
+      "sha256": "96fc92da0278a81b3211227f054f9a46248b774f89beec25b947285af18563a3",
+      "size": 17885
+    },
+    {
+      "git_blob": "033c7d4e03bfe79577549df6b5d47947f6d4acdb",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/figures/final_decision.png",
+      "sha256": "1794084229582d043005c6ffebace0ad72ac447a097940ecb9d61dbb04769046",
+      "size": 17359
+    },
+    {
+      "git_blob": "f2926ef0a9fdd14c0e0c9f18ec421de0cfb675c8",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/figures/goal_tangent_frame.png",
+      "sha256": "da5b7d4721a50af578e9197ec3efcd4eb9bcc540d5c7f31efa91c1675dc36c1d",
+      "size": 17454
+    },
+    {
+      "git_blob": "391bccbe6cfc74ac52f817225f11ac7c6255d9bf",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/figures/no_benchmark_leakage.png",
+      "sha256": "ed3cb64147a86ba568c4de78889db37ce4235bc5d4541149ed076ef8f9ffe736",
+      "size": 17804
+    },
+    {
+      "git_blob": "50d16e095129193d956e0b154598a6980a33bf20",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/figures/no_reference_dependency.png",
+      "sha256": "dd869be4643637c603a436eb2304a3502a22525b5629c2f49f8c6a17bb44df86",
+      "size": 17440
+    },
+    {
+      "git_blob": "056c6585ad179a33ea4e4283d61f927ca357fd26",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/figures/pr85_blocker_to_method_freeze.png",
+      "sha256": "57160690827af2fa1941ece52fc90eac5a72715b5b9f4865bfdfe354f04f76a1",
+      "size": 18121
+    },
+    {
+      "git_blob": "c48259bf70e3031a4e8d07e901ba1db26d5819bc",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/figures/randomized_property_summary.png",
+      "sha256": "3e0a4f378dfbf9726935bfe888d1257a629901f3c95b5283f0b3c337ff2e7b52",
+      "size": 18041
+    },
+    {
+      "git_blob": "02acf6643953384280ed3322fb48d9ab8f070edb",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/figures/replica_generator_only_smoke.png",
+      "sha256": "bcc81bd6e5e5bc30cb168efb53d2c3813a4d9755aed10fa1c1425df92a4ff4e9",
+      "size": 18115
+    },
+    {
+      "git_blob": "b4b172114596025ffd2991b0d2ba176001f926a9",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/figures/represented_sphere_normal.png",
+      "sha256": "792470930a4abf27968b09acb6229af688423e3c8b9c7dd63a313aaa9e607160",
+      "size": 17695
+    },
+    {
+      "git_blob": "f9567e1d672f6517ae9cc1f63b46b41779013b72",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/figures/six_slot_directional_library.png",
+      "sha256": "3b0707652e1e26f2dd189436a901b757d2e1efd2426a86676fd11cc2f3800d3c",
+      "size": 17958
+    },
+    {
+      "git_blob": "ac1ca9cf822bab5fc0009b8207ab8ff8969da341",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/figures/slot_availability_states.png",
+      "sha256": "3cee70d6c9c154281f813941e07b73d4b5bb5d4fc0da0712927d8cd85671bc6c",
+      "size": 17527
+    },
+    {
+      "git_blob": "3959f127a337a86028c2e718038057f79caed352",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/figures/synthetic_geometry_validation.png",
+      "sha256": "3cc9387eb67144db2c4a6317b8df2109423e8a974a9135ac3bf5b9af64b45edd",
+      "size": 18188
+    },
+    {
+      "git_blob": "23ed92fdd4fcd452ba067302050cc1acc4e55574",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/figures/three_process_determinism.png",
+      "sha256": "c393cfe7f65cc7d3050e5e123a33ee80dcd7b4d0b04156854f544c376be7d62b",
+      "size": 17698
+    },
+    {
+      "git_blob": "beabec428f5111c153a31cb70fbc760f290653cc",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/freeze_pr85_inputs.py",
+      "sha256": "9823d13c5ec17be2203e4ad649637ade36d084b19dcbeca368f6c7199bb1787a",
+      "size": 7701
+    },
+    {
+      "git_blob": "e08cc8a843992d53faaf106cba93d0ace5cce209",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/input_freeze/pr84_certifier_identity.json",
+      "sha256": "48bdcffef2fc6e31db0fd32cc9e9f02502f5c4d10f66d0adfb79fe189f71f810",
+      "size": 7056
+    },
+    {
+      "git_blob": "deb3820e926d4837de05f6308592c11271fd8746",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/input_freeze/pr85_artifact_manifest.json",
+      "sha256": "d222b6c1a2f0ad74e1c00cb0a750bf3662428aca385f0972a3e7400002bbd544",
+      "size": 3436
+    },
+    {
+      "git_blob": "ab2063dbb712a8bc47d16b9a94639318dc50a84c",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/input_freeze/pr85_identity.json",
+      "sha256": "b02a3126c3af636dba9b750b3f7c4a1301fa4088b17485e7d4a19f698e37edc5",
+      "size": 1103
+    },
+    {
+      "git_blob": "71655ab977a1338d320bcf116c6e6695332c26c4",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/input_freeze/protected_source_hashes.json",
+      "sha256": "497c525a749608ea7397cb5c756c5dacd079197d61c8b5fdadf40c7a658a823d",
+      "size": 1611
+    },
+    {
+      "git_blob": "844a008dd7d4edd5cb2528447fa26904a87a1095",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/input_freeze/reference_mesh_identity.json",
+      "sha256": "3030fc4b69fe3b31b536dc57a8b9147e2ea8315f6a3c7b0c799f8f0cdf7092b1",
+      "size": 340
+    },
+    {
+      "git_blob": "93cc7e28ab48034bd3b94ee9ef960440ba113459",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/input_freeze/replica_map_identity.json",
+      "sha256": "f02ee4c7c196e09a09e3d4ab6bc5e87ffd8238b8bfc8f7e814035d30a46235c4",
+      "size": 2709
+    },
+    {
+      "git_blob": "498a190104ec25b898745aafae2883cfb2753bcd",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/materialize_pr84_smoke_payload.py",
+      "sha256": "fbbb51cc0129df507a3bbf059c8887506b18b9898bbbed670111690f52024ceb",
+      "size": 1877
+    },
+    {
+      "git_blob": "5f2e0647c340f1da5c1add78a74e19e49c8c2010",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/methods/__init__.py",
+      "sha256": "e93879a17eb0357fcd24ac87f3e52511d7cc1d594361071b590dd5dee106ed49",
+      "size": 72
+    },
+    {
+      "git_blob": "c923a092db43f83c6c104e967f70d8a85c5d57b4",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/methods/b2_primary_and_braking_wrapper.py",
+      "sha256": "e23af775b0ac1ea08049d33553a8b44cdedd76e018656b6ee647a8e0df329d1e",
+      "size": 880
+    },
+    {
+      "git_blob": "e8c7db78c8163fbe43e0cc62951c35220678e596",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/methods/b3_directional_library_wrapper.py",
+      "sha256": "be18abd07ca4c66342bba4845f971217ff6ad23e9c24d1737ad58fc25115d305",
+      "size": 948
+    },
+    {
+      "git_blob": "10c8b500a927784a0c189051be7c81dd0c9f6f45",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/methods/fairness_audit.json",
+      "sha256": "ba6feed4b25aa0f71728c3194df4d25192c94364c0e39eb4afcbf903b5ce00aa",
+      "size": 977
+    },
+    {
+      "git_blob": "6063e116677af5d2d8a511c77139225cadd9c0e9",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/methods/method_canonical_identity.json",
+      "sha256": "817b58cb044eb6ec1387dbd76ffcb778093031ddf7f7bb1df8fbad7a31e6d668",
+      "size": 2376
+    },
+    {
+      "git_blob": "568add10e5dbea30503a297f3273b8cd6726dc82",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/methods/method_difference_matrix.csv",
+      "sha256": "f528d67c40e3aed221522320145a0a4de05269e7c967f9e088ec86ed90274c2d",
+      "size": 215
+    },
+    {
+      "git_blob": "f3a6f5f0510978aab69545daa30ab3661a95b865",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/methods/method_registry.json",
+      "sha256": "9969cc78b977039e74cc09389e8b5092682bea22a591bd2f0fd5955ab5f40fd1",
+      "size": 2039
+    },
+    {
+      "git_blob": "135d5198813cf28e3eee2a34c9c51676fbe0b72a",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/methods/nested_causal_contract.md",
+      "sha256": "09064966c02de6b77e4bc39610a31ca6574ef9f103854285ae66708aae67d372",
+      "size": 474
+    },
+    {
+      "git_blob": "54309680a7e99cbc1462a8e32511a036aef7ee96",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/operational_autonomy_actions.json",
+      "sha256": "54a1f7ec2950fd58903576b441b5a2f3ab73a65ea1c7fb507223a5061e8556f3",
+      "size": 1054
+    },
+    {
+      "git_blob": "f2d05970c7029195691d7ec10ca3fbccf47be3f6",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/proof_artifacts/geometric_candidate_semantics.md",
+      "sha256": "d55db331767ce93c52dde678fad2381a7bdd1b38356209a2f3c6b7c38ddc9071",
+      "size": 293
+    },
+    {
+      "git_blob": "445b6211de79146774aab3d9ca28943818c6de85",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/proof_artifacts/library_independence_argument.md",
+      "sha256": "c98ed2485f583341f5b47e1e75aaa1d3b49228f0bbdec3914518cb101805040d",
+      "size": 320
+    },
+    {
+      "git_blob": "7acb272234fa35e9855c7ebfa9b2ae11f902a204",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/proof_artifacts/method_fairness_argument.md",
+      "sha256": "d494c242078e622182daa9488902d4e9d8ec246730d4077c75e3ee9e9596f31e",
+      "size": 208
+    },
+    {
+      "git_blob": "ec73a876b9242a9fc1d218a8c866606854a3c666",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/record_final_system_state.py",
+      "sha256": "26598ce3c825aaf04215e27e0fdf3c056aa1f3d17ffc746663b2d420d084c3d5",
+      "size": 2377
+    },
+    {
+      "git_blob": "516f3f9f176640f371f50166c81061d3af4d3488",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/report/DRAFT_PR_BODY.md",
+      "sha256": "8f20968b43709ed3749dea44c9622ece5a9a40cf8734cf3dbbbe74c54f2e41ef",
+      "size": 1536
+    },
+    {
+      "git_blob": "ab664552db5298e8aa958fc4f19c014a8fa32729",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/report/REPORT_FREEZE_REPLICA_GT_EXECUTABLE_SAFETY_METHOD_MATRIX_V1.md",
+      "sha256": "13b6812f4eb839c3f862c3deb686635ce162ee7279c548025068203b8c264d77",
+      "size": 3424
+    },
+    {
+      "git_blob": "5fd70e10657ed29eeadef773ec10051f049ba159",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/report/downstream_handoff.json",
+      "sha256": "51366c96830211a60f3913fe5678aca81bba768e949ae1dbc38c834539f59450",
+      "size": 1802
+    },
+    {
+      "git_blob": "8f850fcf55cee0a5acde23130fb3ae848043ae07",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/report/system_final_state.json",
+      "sha256": "b7a1d936f4b45978a674964543a272a5b9b52367972db45918be75557f067024",
+      "size": 535
+    },
+    {
+      "git_blob": "789c8b64914093c3140d0956e1f4c6c0a4e4ca2b",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/report/test_execution.json",
+      "sha256": "6bcbe30b7d6e9e646f93359d52c37f49a6b95107d1eb948c0517e5dde2ea9f99",
+      "size": 328
+    },
+    {
+      "git_blob": "027ff1c62e98a19b349fea248c9b174a618db248",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/report/validation_result.json",
+      "sha256": "af7d0fa9ccf204c2dcba09d9909426421b7271638f3478cf4c1ab24c92aedf86",
+      "size": 933
+    },
+    {
+      "git_blob": "a3755e0ce5ecb1173c3671c3cb53fb874ed2022a",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/run_determinism_audit.py",
+      "sha256": "4a2e92ab6308e8702f7a922fc0adff0b9c813ec51ef56d05bd8bf3cb755ee546",
+      "size": 1451
+    },
+    {
+      "git_blob": "6a55d43161acae06167ac8cfd989ed2dfb0b2bf6",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/run_validation_suite.py",
+      "sha256": "f6923e573f5a2ae6d68b498bbf5e2334f80759990ab68723d0fc2d59f83846f7",
+      "size": 1421
+    },
+    {
+      "git_blob": "f3cb60ccfb011bf819bcfc86daa27c108e63aec5",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/smoke/generator_determinism_process_1.json",
+      "sha256": "1465138bda841071fb565a69095686e0763244dc474c4f172673895a93163cc3",
+      "size": 116691
+    },
+    {
+      "git_blob": "fcd19da7373dc9a65ee0848c6c5a737aa772e7e5",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/smoke/generator_determinism_process_2.json",
+      "sha256": "d88f1897ede8b79404bbb77114dc85bc1700b1fb87da0cd37e8cefd52e8f7fd0",
+      "size": 116691
+    },
+    {
+      "git_blob": "1f585521db5c111718013b82f11d5721c137e719",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/smoke/generator_determinism_process_3.json",
+      "sha256": "dfa4f286fb3ae8edfaa7c5b3eeb9573ef622cc6d61b1ca0f831be6f0df5da1f6",
+      "size": 116691
+    },
+    {
+      "git_blob": "f3cb60ccfb011bf819bcfc86daa27c108e63aec5",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/smoke/generator_only_replica_smoke_records.json",
+      "sha256": "1465138bda841071fb565a69095686e0763244dc474c4f172673895a93163cc3",
+      "size": 116691
+    },
+    {
+      "git_blob": "7ce14ebed6b35c00187e298eebfecacb7d078440",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/smoke/pr84_frozen_payload/adapters/__init__.py",
+      "sha256": "7d7fe669fd72862c91d0d638d4c68d981c6894d7a7240067ff84e69cf6c16574",
+      "size": 68
+    },
+    {
+      "git_blob": "6807970d4b28aa9c478ca018d7319a4fcef19da2",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/smoke/pr84_frozen_payload/adapters/gaussian_barrier_adapter.py",
+      "sha256": "1de0d3a31c8babe7c0bab5f388360d7f024f729cf5d8670dfbef9800f40cf3d1",
+      "size": 7676
+    },
+    {
+      "git_blob": "fafd09901ae473d5a7b7d9b22c9af6455cb04671",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/smoke/pr84_frozen_payload/certifier/__init__.py",
+      "sha256": "ba04331baf91ff0bc3914e2d65247ddc456bd92b5fb20d58916ca2eff784ba18",
+      "size": 50
+    },
+    {
+      "git_blob": "75a969fee5af1674c44414c51e0cee46cf34b0c9",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/smoke/pr84_frozen_payload/certifier/result_types.py",
+      "sha256": "1c94a83dc45dddfab1e804ff4917f7d8988cadd95d93f26a60ca15f3bf7f43e5",
+      "size": 6838
+    },
+    {
+      "git_blob": "1685602c7007ed4949f90610b296653dad660986",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/smoke/pr84_frozen_payload/certifier/segment_backends/__init__.py",
+      "sha256": "1c6b6ab182ec8bdb4b20d73888efc60919adfbe8c583c2067b8f48b2ad299c42",
+      "size": 52
+    },
+    {
+      "git_blob": "68d9c94cedf444379c262c550dd80e9c289ea843",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/smoke/pr84_frozen_payload/certifier/segment_backends/analytic_primitive.py",
+      "sha256": "7887c9061223a3e51e9c41991a0f0c2dc748665fcbe5fee0a0d5829022531e1e",
+      "size": 5746
+    },
+    {
+      "git_blob": "4d981d9915e4d726a69318401c746fc5dc180d3d",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/smoke/pr84_frozen_payload/certifier/segment_backends/base.py",
+      "sha256": "4ffa3cafc1f329c332da03a6dc9e14315d1cdc5cc3c5b7725df13130ecb1038e",
+      "size": 1018
+    },
+    {
+      "git_blob": "2cad89ed8b8ce34cdc11e9f093270bf3cad5da59",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/smoke/pr84_frozen_payload/map_smoke/replica_smoke_records.json",
+      "sha256": "70a70166f6d55fcba69d12f71039653ac403e6d5bf5f2ebcbfdf4b23db297fc6",
+      "size": 46538
+    },
+    {
+      "git_blob": "56edb6004fadfe72778005219e0ca04e84afdfee",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/smoke/pr84_frozen_payload_manifest.json",
+      "sha256": "f27220cf73c9f81b2c94083ac9e3140d97a601119811aebc4f4ca402842d3a93",
+      "size": 2267
+    },
+    {
+      "git_blob": "0960c85e3ab08cb3d3dd1e601e2bfa02721519a3",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/smoke/run_generator_only_replica_smoke.py",
+      "sha256": "2da774cd62c1eddd6c15357f44ee3b280d71e8a2aa6104ed9b7e4b1c98fc4eb9",
+      "size": 5958
+    },
+    {
+      "git_blob": "05eb047b8c75bd148afa322c4ba528fc1b223e97",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/smoke/run_three_process_replica_smoke_determinism.py",
+      "sha256": "f5abb0ab43236572a37c3a611895acda9c751a2a50e6177f487c0eba3867182a",
+      "size": 1809
+    },
+    {
+      "git_blob": "f1470ce8f3443ee95257a85d6439ce7a948f7c86",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/smoke/three_process_determinism.json",
+      "sha256": "c991edb627927328b73d7aa5395cef3887938eb9ef6fe523e34fa5a3f6e07634",
+      "size": 359
+    },
+    {
+      "git_blob": "026c4260aa8fd4f96068a28b62f9598b728f55fb",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/task_config.py",
+      "sha256": "5127bf58c54f0d1e2a103ee3c3f970a1d80400c4f8f04716e98e8101b6fe9ca1",
+      "size": 3243
+    },
+    {
+      "git_blob": "e4ced345469148578c6200f3760ae648905bd2b0",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/tests/conftest.py",
+      "sha256": "e9812675c528c4980d7e2e351ee62703ffbefa8dbd573a8cc596970ed038978c",
+      "size": 159
+    },
+    {
+      "git_blob": "e190b53b96efab7062ede508fda44ad459f931c5",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/tests/test_axis_fallback.py",
+      "sha256": "dd5695f4773f8e7093a60dad35b05158c7d4c1839a255ec36d0babb0e3da2699",
+      "size": 439
+    },
+    {
+      "git_blob": "5327792224c9eddde3e43fab9177d55526dccf07",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/tests/test_b2_b3_only_difference.py",
+      "sha256": "ff72dff6025f84e3fa043df442a942e26e805ad5c54408c6a923218c3e7b6d24",
+      "size": 824
+    },
+    {
+      "git_blob": "988eeb0a632a0586826f483ce62ca127ac795348",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/tests/test_box_scaling.py",
+      "sha256": "0b9d4b6f9c36c2fe5819efa476723330bea6f123d488f4ed1835751cb4852dea",
+      "size": 424
+    },
+    {
+      "git_blob": "3f8da5aecb1e4af9bcfa6e6bdd52178a014e8edb",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/tests/test_candidate_actuator_bounds.py",
+      "sha256": "1570ed54353c3ce84aae9f71532c4df2d97672a0e0963671e291c13ab7620aa7",
+      "size": 1086
+    },
+    {
+      "git_blob": "d17789c54168e8748bb338dab96d9a932a76900e",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/tests/test_canonical_serialization.py",
+      "sha256": "635ba3a7bc886f05a90cb66001fb99e2689428e9d7c92f6eb545f2f80b0bffcd",
+      "size": 660
+    },
+    {
+      "git_blob": "be5afa004d8b833214c9ae2666c004799391c9ef",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/tests/test_deceleration_projection.py",
+      "sha256": "45a0c03b4c7037a0caacc5a9e5b19cc476eaa8aaa0a55b8e5c7aaa80415834f4",
+      "size": 1372
+    },
+    {
+      "git_blob": "861b1c5ba861704011f8b865ddda409ced2a202e",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/tests/test_deduplication.py",
+      "sha256": "21dd0500c0f691a30b8c4661e0037d58e12991175d435f5e7ef4446a06b92038",
+      "size": 507
+    },
+    {
+      "git_blob": "dea64d8b4cc3915c33392d291fad98651b855b8e",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/tests/test_no_benchmark_inputs.py",
+      "sha256": "5dc31d409b4a48a0b16f549118b3a964fbccea95dedfb8a383a2d09f27362f93",
+      "size": 441
+    },
+    {
+      "git_blob": "8493e66779453e03f97b1fd0dd52ff49d1be5638",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/tests/test_primary_fairness.py",
+      "sha256": "46481479029216628dcb15aea02bd2845882e5204b3a55e1b4a12f3f17322f2e",
+      "size": 481
+    },
+    {
+      "git_blob": "ac8a40a50fa07ba6106723f1460cb0e8259b3f19",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/tests/test_process_determinism.py",
+      "sha256": "e21e3c3c0ca8599976a8be995dfde8c5d50d863c7fa8181fe7f743ed46cf0d48",
+      "size": 906
+    },
+    {
+      "git_blob": "0090216abefd3964106bd1e1031185b8c4d0c3ec",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/tests/test_represented_sphere_normal.py",
+      "sha256": "d5f8778cc682f54bf9a59599d2ec72a9264ea5d55324414e1b0ba3d2609e5698",
+      "size": 466
+    },
+    {
+      "git_blob": "eaee6ab65d6d3fdd8355ce16c331dce6bb8aadc4",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/tests/test_six_slot_contract.py",
+      "sha256": "2e30ac2699e9228a8bc83dcf3bbdf4f3a33e48b0a711dca3accc420769394e49",
+      "size": 460
+    },
+    {
+      "git_blob": "3346ce9bd110e0b2891131fbdfddb8c7973ebcb4",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/tests/test_slot_order.py",
+      "sha256": "331b0dcc4fc71ac834db4e1a0ba27151b9ff6a72f52042516d71467014f9ce1b",
+      "size": 771
+    },
+    {
+      "git_blob": "12067de32c35a71d7339d62da42e51ee040a85c7",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/tests/test_tangent_frame.py",
+      "sha256": "b40a9fc8ff5273b2b585f4db3bbc210b499a1ce81065ba60676679de41646736",
+      "size": 470
+    },
+    {
+      "git_blob": "b1d86197df1d4833c3e9eac376545ed294134433",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/tests/test_unknown_no_reference_fallback.py",
+      "sha256": "916a35c42c27c8e2ddac0fff630121d70cd09d0c51d233283914e5e1307925e4",
+      "size": 511
+    },
+    {
+      "git_blob": "4f94e8944fe7a4f678733574a94d4e9b38ecace4",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/validate_method_matrix.py",
+      "sha256": "b0d8b06c86edea1fbec4c58998a7e95c72e04d23a0042d43f91f38eeb19e3156",
+      "size": 8169
+    }
+  ],
+  "head": "d4f20f44a810afc2d6379853a286a3e18b175221"
+}

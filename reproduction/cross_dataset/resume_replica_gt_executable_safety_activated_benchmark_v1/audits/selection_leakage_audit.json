@@ -1,0 +1,16 @@
+{
+  "all_pass": true,
+  "checks": {
+    "activated_group_assignment_stage_predicates_only": true,
+    "activated_no_post_lock_replacement": true,
+    "activated_no_progress_runtime_selection": true,
+    "activated_prelock_formal_runs_zero": true,
+    "activated_prelock_future_reference_reads_zero": true,
+    "representative_no_observed_gate_balancing": true,
+    "representative_no_post_lock_replacement": true,
+    "representative_selection_no_B0_B3": true,
+    "representative_selection_no_future_reference": true,
+    "representative_selection_no_stage_predicates": true
+  },
+  "status": "PASS_SELECTION_LEAKAGE_AUDIT"
+}

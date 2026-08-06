@@ -1,0 +1,17 @@
+{
+  "authority_validation": {
+    "fresh_process_repeats": 2,
+    "point_bruteforce_max_disagreement_m": 0.0,
+    "raw_result_sha256": "16ac75dc5ee7be9f65a17123b8830dff26d5507650a6d8c901a7a58f714c2ca2",
+    "segment_bruteforce_max_disagreement_m": 0.0,
+    "status": "PASS",
+    "validation_a_sha256": "a5874bb8a07ad4150c98fdf67522314fc8af5147f4460ebb37b270fecb926305",
+    "validation_b_sha256": "a5874bb8a07ad4150c98fdf67522314fc8af5147f4460ebb37b270fecb926305"
+  },
+  "authority_validation_path": "/disk1/zlab/maintenance_records/replica_bounded_direct_goal_gt_gaussian_benchmark_v1/mesh_oracle/replica_mesh_collision_oracle_validation.json",
+  "authority_validation_sha256": "d0d1452bdc6ca5d6df32f6b4c20a3d0a0a512804de9f0553cd6cded6317c1fd6",
+  "controller_exposure_count": 0,
+  "reference_online_read_count": 0,
+  "registry_locked_before_future_outcomes": true,
+  "status": "PASS_REFERENCE_ORACLE_REUSED_FROM_FROZEN_VALIDATED_AUTHORITY"
+}
