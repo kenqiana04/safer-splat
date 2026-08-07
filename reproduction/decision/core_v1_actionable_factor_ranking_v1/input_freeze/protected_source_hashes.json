@@ -1,0 +1,168 @@
+{
+  "record_count": 16,
+  "records": [
+    {
+      "commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "git_blob": "011df74af180ed336f0771feeb26373d7a2ddf14",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/executable_safety_certifier.py",
+      "pr": 84,
+      "role": "unified_certifier",
+      "sha256": "2fcc0555028d46236db3c4434b713d1c7d9a406da1adb573758996e514e9c1e4",
+      "size": 7515,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "git_blob": "92241373d221958b1ffe343fc97a5fb31a2cdfc1",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/adapters/current_cbf_adapter.py",
+      "pr": 84,
+      "role": "current_gate",
+      "sha256": "af30f07cfc839c189fb79758575952ba98753915af48e2d8b084cdd8dd9665f1",
+      "size": 1917,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "git_blob": "b39bd21ff7c24e1dcc5d1f792afd28f390fcd55c",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/adapters/normative_dynamics_adapter.py",
+      "pr": 84,
+      "role": "position_first_dynamics",
+      "sha256": "bc85b7c90d57f9935732751c813c742d9c24af729ba6f5716637f3c3334513df",
+      "size": 2213,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "git_blob": "75c50fc71c8c386751db895f01cdd1260205af06",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/backup_certifier.py",
+      "pr": 84,
+      "role": "backup_certifier",
+      "sha256": "ba93f39dd7363e81726a811ffcdacf44deabf900d4b38e97e399ee14335991b8",
+      "size": 4051,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "git_blob": "cd011939dc9cc00e1997dc855c4212810c3be9f1",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/segment_backends/conservative_interval.py",
+      "pr": 84,
+      "role": "segment_backend",
+      "sha256": "a665a194de43ec7c8585d4fd2ebee5dcdedec73e270a1f7b31db685333dfecfd",
+      "size": 3470,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "d4f20f44a810afc2d6379853a286a3e18b175221",
+      "git_blob": "9f065f9ea0d14a4ff0bdccc9affc508954923813",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/alternative_library/directional_library.py",
+      "pr": 86,
+      "role": "six_slot_library",
+      "sha256": "6ed9d209e31167ded426a0007d99ea4f09c2f5a63a58840d189b1536c9c11e17",
+      "size": 6510,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "d4f20f44a810afc2d6379853a286a3e18b175221",
+      "git_blob": "f3a6f5f0510978aab69545daa30ab3661a95b865",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/methods/method_registry.json",
+      "pr": 86,
+      "role": "method_matrix",
+      "sha256": "9969cc78b977039e74cc09389e8b5092682bea22a591bd2f0fd5955ab5f40fd1",
+      "size": 2039,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "fbe67f0c607add7f8049d4ce75e8f9e1ae8498d9",
+      "git_blob": "f86e2c51251a3d4bc217d7454ab668c357bbe9ba",
+      "path": "reproduction/cross_dataset/resume_replica_gt_executable_safety_activated_benchmark_v1/runtime_core.py",
+      "pr": 87,
+      "role": "replica_runtime",
+      "sha256": "79051dadd541a3c19ace6da6992cad839da689d3f214eaa0882f4688b382c499",
+      "size": 30246,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "fbe67f0c607add7f8049d4ce75e8f9e1ae8498d9",
+      "git_blob": "1f8af9207860782259579ebf907593ee45f632ca",
+      "path": "reproduction/cross_dataset/resume_replica_gt_executable_safety_activated_benchmark_v1/registry/representative_holdout_registry_v1.json",
+      "pr": 87,
+      "role": "replica_registry",
+      "sha256": "eaa0f9f63cbcae433741b959441cf244648e30bf184b62309334602b76659a1a",
+      "size": 198282,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "fbe67f0c607add7f8049d4ce75e8f9e1ae8498d9",
+      "git_blob": "54d4b4cce068382f3634a11488915edb366beafd",
+      "path": "reproduction/cross_dataset/resume_replica_gt_executable_safety_activated_benchmark_v1/benchmark/one_step_records.csv",
+      "pr": 87,
+      "role": "pr87_formal_records",
+      "sha256": "9f96bbfe7b5d4c5982d405f38dbc2ea5a04de42021dc58fab7112a49b103410d",
+      "size": 2005494,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "9287617cce74561aa434d1aca7eb684f79551188",
+      "git_blob": "68016527d553bfed1014592b06a6207feb7bc2af",
+      "path": "reproduction/research_direction/safer_splat_direction_audit_v1/report/downstream_handoff.json",
+      "pr": 88,
+      "role": "pr88_case_d",
+      "sha256": "13c00aa2cead6916413ac98fcd87a49ec268c2bcf396e2376e51dfd0028af875",
+      "size": 347,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "047513b5e612f91e63ab1e7054815615cb455fd7",
+      "git_blob": "4de97c7d4df51255471f2cd3160ce357bb3169f2",
+      "path": "reproduction/cross_dataset/core_v1_cross_environment_activation_portability_audit_v1/benchmark/one_step_records.csv",
+      "pr": 89,
+      "role": "pr89_formal_records",
+      "sha256": "666796b9009785ac1e59466bdf1c1450b2a62aac0d2ad709d1df7157a2a5a4b6",
+      "size": 1885725,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "047513b5e612f91e63ab1e7054815615cb455fd7",
+      "git_blob": "9cf66ab133d874284b49ae4f9a5200de16bd25e8",
+      "path": "reproduction/cross_dataset/core_v1_cross_environment_activation_portability_audit_v1/benchmark/formal_attempt.json",
+      "pr": 89,
+      "role": "pr89_attempt_marker",
+      "sha256": "54d7664ecf007dfa972bcc03e7ac9fe316887486e45ce64369b1b97f1a49666b",
+      "size": 1009,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "047513b5e612f91e63ab1e7054815615cb455fd7",
+      "git_blob": "d7f3caaa4bbd2daff6b34c57ff23dde4e09d51dd",
+      "path": "reproduction/cross_dataset/core_v1_cross_environment_activation_portability_audit_v1/registry/combined_registry_manifest.json",
+      "pr": 89,
+      "role": "pr89_registry_manifest",
+      "sha256": "ad13cfe3292f5f54954f6a052f33c790cb2763d309e02deec9ee6c5da8a80004",
+      "size": 1651,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "047513b5e612f91e63ab1e7054815615cb455fd7",
+      "git_blob": "80e32f3ef2a9d447ab340d9b9149a29a0736f1fa",
+      "path": "reproduction/cross_dataset/core_v1_cross_environment_activation_portability_audit_v1/decision/final_portability_decision.json",
+      "pr": 89,
+      "role": "pr89_case_c",
+      "sha256": "eea973ce1db7fb360281345d7f05da3359eaa1c415dda1c515c32518b0b3aaf1",
+      "size": 1233,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "047513b5e612f91e63ab1e7054815615cb455fd7",
+      "git_blob": "cb76148f047b76d3a4f414aca9dc238d7378d983",
+      "path": "reproduction/cross_dataset/core_v1_cross_environment_activation_portability_audit_v1/benchmark/source_runtime.py",
+      "pr": 89,
+      "role": "external_runtime_adapter",
+      "sha256": "9de81d65209fefcb4694dc6183b83d953389311149210e9330258e2cbd81f4fc",
+      "size": 12053,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    }
+  ],
+  "scope": "read-only source-byte verification; no upstream or method mutation",
+  "source_pr90_head": "48db34d4e61f019fcd2b578c04cc87eefb00747a",
+  "status": "PASS_PROTECTED_SOURCE_BYTES_PRESERVED"
+}

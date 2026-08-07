@@ -1,0 +1,3 @@
+# Selection rationale
+
+A1 is selected under CASE_A1. Its 60 positive points, 4 risk points, and net score of 57.00 reflect a bounded, falsifiable, data-independent specification that directly resolves the shared ambiguity exposed by F03/F04/F08. Crucially, the decision does not follow convenience: A1 is selected because PR #90's exact position-first derivative establishes a shared semantic prerequisite for A2, A3, and A4. Three independent reviewer roles agree. A positive result can specify a lawful pipeline; a negative result can show that the current B1 label is only admission/late-risk semantics. Either result reduces uncertainty without changing Core V1.

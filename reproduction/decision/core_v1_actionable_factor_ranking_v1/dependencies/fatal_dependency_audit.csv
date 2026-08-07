@@ -1,0 +1,7 @@
+rule,action_or_factor,status,evidence
+D1,A2,FAIL_FIRST_PRIORITY,A1→A2 REQUIRED; horizon/denominator remains undefined.
+D2,A3,FAIL_FIRST_PRIORITY,A1→A3 REQUIRED; legal B3 entry remains undefined.
+D3,A4,FAIL_FIRST_PRIORITY,A1→A4 REQUIRED; activation interpretation is role-dependent.
+D4,A5,FAIL_FIRST_PRIORITY,A1 passes gates and has high information gain; consolidation cannot pre-empt it.
+D5,F05/F11,EXCLUDED,Frozen evidence does not support either as a primary problem.
+D6,F09,EXCLUDED_AS_SOLO_ROUTE,"Map representation is an evaluation dependency, not a selected route."

@@ -1,0 +1,68 @@
+{
+  "conclusion": "A1 is a REQUIRED common prerequisite of A2, A3, and A4.",
+  "critical_path": [
+    "A1",
+    "A2/A3/A4",
+    "A5"
+  ],
+  "edges": [
+    {
+      "evidence": "Conditional evaluation denominators require the candidate-dependent horizon and B1 role.",
+      "from": "A1",
+      "status": "REQUIRED",
+      "to": "A2"
+    },
+    {
+      "evidence": "B3 eligibility requires a lawful B1/B2/B3 entry definition.",
+      "from": "A1",
+      "status": "REQUIRED",
+      "to": "A3"
+    },
+    {
+      "evidence": "Activation interpretation is not meaningful until B1 is distinguished from a candidate gate.",
+      "from": "A1",
+      "status": "REQUIRED",
+      "to": "A4"
+    },
+    {
+      "evidence": "A future on-policy contract would sharpen, but is not required for, a frozen-paper plan.",
+      "from": "A2",
+      "status": "HELPFUL",
+      "to": "A5"
+    },
+    {
+      "evidence": "A coverage contract would narrow a future claim boundary but is not required for a plan.",
+      "from": "A3",
+      "status": "HELPFUL",
+      "to": "A5"
+    },
+    {
+      "evidence": "A provenance-qualified regime could refine a future limitation statement.",
+      "from": "A4",
+      "status": "HELPFUL",
+      "to": "A5"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "A1",
+      "label": "CAUSAL_ARCHITECTURE_SPEC"
+    },
+    {
+      "id": "A2",
+      "label": "ON_POLICY_EVALUATION_DESIGN"
+    },
+    {
+      "id": "A3",
+      "label": "B3_COVERAGE_IDENTIFICATION"
+    },
+    {
+      "id": "A4",
+      "label": "CONFIGURATION_REGIME_IDENTIFICATION"
+    },
+    {
+      "id": "A5",
+      "label": "EVIDENCE_CONSOLIDATION"
+    }
+  ]
+}
