@@ -1,0 +1,32 @@
+{
+  "formula": "net_score=positive_score-0.75*risk_penalty",
+  "positive_keys": [
+    "S1_SCIENTIFIC_PREREQUISITE",
+    "S2_CAUSAL_INFORMATION_GAIN",
+    "S3_FALSIFIABILITY",
+    "S4_CLAIM_IMPACT",
+    "S5_STRUCTURAL_IMPORTANCE",
+    "S6_EXISTING_EVIDENCE_SUPPORT",
+    "S7_ASSET_REUSE",
+    "S8_DATA_INDEPENDENCE",
+    "S9_IMPLEMENTATION_INDEPENDENCE",
+    "S10_TIME_TO_DECISION",
+    "S11_DOWNSTREAM_OPTION_VALUE",
+    "S12_REVIEWER_DEFENSIBILITY"
+  ],
+  "positive_range": "0-5",
+  "pre_frozen": true,
+  "risk_keys": [
+    "R1_DIRECTION_DRIFT",
+    "R2_BENCHMARK_SHOPPING",
+    "R3_DATA_DEPENDENCY",
+    "R4_ENGINEERING_EXPANSION",
+    "R5_CLAIM_AMBIGUITY",
+    "R6_NON_IDENTIFIABILITY",
+    "R7_COMPETITOR_OVERLAP",
+    "R8_SUNK_COST_BIAS_RISK"
+  ],
+  "risk_range": "0-5, higher is worse",
+  "sunk_cost_in_positive_score": false,
+  "weight_change": "forbidden after scoring"
+}

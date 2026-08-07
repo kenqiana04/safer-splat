@@ -1,0 +1,6 @@
+action,five_day_path,day5_decision,stop_boundary
+A1,role/horizon/denominator specification from PR90 formulas,architecture role is explicit or ambiguity is proven,no implementation
+A2,logging/statistics contract only,data plan is bounded but dependent on A1,no collection
+A3,eligibility/search contract only,identification remains blocked if eligible=0,no oracle
+A4,provenance audit for physical ranges,valid source or trigger-engineering block,no configuration run
+A5,claim-plan composition,paper plan only,cannot bypass D4

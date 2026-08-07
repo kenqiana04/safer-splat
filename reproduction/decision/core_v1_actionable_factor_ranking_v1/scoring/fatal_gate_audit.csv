@@ -1,0 +1,61 @@
+action,gate,status,reason
+A1,G1,PASS,clear problem statement
+A1,G2,PASS,desk-based without method-result mutation
+A1,G3,PASS,explicit stop condition
+A1,G4,PASS,positive and negative outcomes reduce uncertainty
+A1,G5,PASS,decision artifact within five working days
+A1,G6,PASS,no new map training
+A1,G7,PASS,no new dataset
+A1,G8,PASS,not activation-rate optimization
+A1,G9,PASS,no undefined reference truth
+A1,G10,PASS,no method branch before prerequisite is solved
+A1,G11,PASS,controller-centered safety-assurance alignment
+A1,G12,PASS,at most one next task
+A2,G1,PASS,clear problem statement
+A2,G2,PASS,desk-based without method-result mutation
+A2,G3,PASS,explicit stop condition
+A2,G4,PASS,positive and negative outcomes reduce uncertainty
+A2,G5,PASS,decision artifact within five working days
+A2,G6,PASS,no new map training
+A2,G7,PASS,no new dataset
+A2,G8,PASS,not activation-rate optimization
+A2,G9,PASS,no undefined reference truth
+A2,G10,FAIL,Dependency blocked: A1 role/horizon prerequisite
+A2,G11,PASS,controller-centered safety-assurance alignment
+A2,G12,PASS,at most one next task
+A3,G1,PASS,clear problem statement
+A3,G2,PASS,desk-based without method-result mutation
+A3,G3,PASS,explicit stop condition
+A3,G4,PASS,positive and negative outcomes reduce uncertainty
+A3,G5,PASS,decision artifact within five working days
+A3,G6,PASS,no new map training
+A3,G7,PASS,no new dataset
+A3,G8,PASS,not activation-rate optimization
+A3,G9,PASS,no undefined reference truth
+A3,G10,FAIL,Dependency blocked: A1 lawful gate-entry prerequisite
+A3,G11,PASS,controller-centered safety-assurance alignment
+A3,G12,PASS,at most one next task
+A4,G1,PASS,clear problem statement
+A4,G2,PASS,desk-based without method-result mutation
+A4,G3,PASS,explicit stop condition
+A4,G4,PASS,positive and negative outcomes reduce uncertainty
+A4,G5,PASS,decision artifact within five working days
+A4,G6,PASS,no new map training
+A4,G7,PASS,no new dataset
+A4,G8,PASS,not activation-rate optimization
+A4,G9,PASS,no undefined reference truth
+A4,G10,FAIL,Dependency blocked: A1 B1-role prerequisite
+A4,G11,PASS,controller-centered safety-assurance alignment
+A4,G12,PASS,at most one next task
+A5,G1,PASS,clear problem statement
+A5,G2,PASS,desk-based without method-result mutation
+A5,G3,PASS,explicit stop condition
+A5,G4,PASS,positive and negative outcomes reduce uncertainty
+A5,G5,PASS,decision artifact within five working days
+A5,G6,PASS,no new map training
+A5,G7,PASS,no new dataset
+A5,G8,PASS,not activation-rate optimization
+A5,G9,PASS,no undefined reference truth
+A5,G10,PASS,no method branch before prerequisite is solved
+A5,G11,PASS,controller-centered safety-assurance alignment
+A5,G12,PASS,at most one next task

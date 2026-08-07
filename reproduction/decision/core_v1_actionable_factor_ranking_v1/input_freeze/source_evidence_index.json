@@ -1,0 +1,61 @@
+{
+  "records": [
+    {
+      "commit": "48db34d4e61f019fcd2b578c04cc87eefb00747a",
+      "git_blob": "d0d52b556543287a4af1c94a1fe8c46e54b9ba89",
+      "path": "reproduction/causal_audit/core_v1_representative_shortfall_causal_decomposition_v1/causes/factor_verdicts.json",
+      "role": "F01-F11 verdicts",
+      "sha256": "e9f93112e0b784a7c174576f6c31251b29e86c0609056120c354194a2ca59d2c",
+      "size": 3113
+    },
+    {
+      "commit": "48db34d4e61f019fcd2b578c04cc87eefb00747a",
+      "git_blob": "4503b07b40aa47269876e423efddcde4870163d6",
+      "path": "reproduction/causal_audit/core_v1_representative_shortfall_causal_decomposition_v1/causal_attribution/interaction_matrix.csv",
+      "role": "factor interactions",
+      "sha256": "d2f60ba3aea994a6c17c252e179961a8d0a26ca1e810788c4efac5887d8f182f",
+      "size": 1312
+    },
+    {
+      "commit": "48db34d4e61f019fcd2b578c04cc87eefb00747a",
+      "git_blob": "f0bc7bd360a4ade038c8aa7c2fc48287ee3fdec2",
+      "path": "reproduction/causal_audit/core_v1_representative_shortfall_causal_decomposition_v1/decision/supported_claims.md",
+      "role": "supported claims",
+      "sha256": "5a2858e36e1336176908515184d3d0e69b4ce14a9c62fc052e42eefdb65b9761",
+      "size": 284
+    },
+    {
+      "commit": "48db34d4e61f019fcd2b578c04cc87eefb00747a",
+      "git_blob": "bc0c3f20394ba95f67704a1dfb29c054a898c402",
+      "path": "reproduction/causal_audit/core_v1_representative_shortfall_causal_decomposition_v1/decision/prohibited_claims.md",
+      "role": "prohibited claims",
+      "sha256": "e1330db684b1f47d50186cce70b2149944c6a1fc4c5b8f8cadbd359d1a638a63",
+      "size": 170
+    },
+    {
+      "commit": "48db34d4e61f019fcd2b578c04cc87eefb00747a",
+      "git_blob": "a9c9feaa0da84298455f8a2dc2e21431ce7b95fa",
+      "path": "reproduction/causal_audit/core_v1_representative_shortfall_causal_decomposition_v1/decision/unresolved_factors.md",
+      "role": "unresolved factors",
+      "sha256": "51320b841131cf522ffc81e7100d62aff14a57f87468931b6c1a2f2dadfd2254",
+      "size": 208
+    },
+    {
+      "commit": "9287617cce74561aa434d1aca7eb684f79551188",
+      "git_blob": "9837fdc70d3651cb56244c1e94d287fc537cc574",
+      "path": "reproduction/research_direction/safer_splat_direction_audit_v1/literature/fulltext_evidence_matrix.csv",
+      "role": "frozen competitor matrix",
+      "sha256": "ae3d56a48d808b694813904c958b507f60f6c905b6c3c5888b693a93b7d9876d",
+      "size": 23535
+    },
+    {
+      "commit": "9287617cce74561aa434d1aca7eb684f79551188",
+      "git_blob": "2c9761f5c27e723b23e62ef670c741c53a387afc",
+      "path": "reproduction/research_direction/safer_splat_direction_audit_v1/feasibility/effort_estimates.csv",
+      "role": "frozen effort estimates",
+      "sha256": "c506ca664767fabc2bfca41b94bfa046e3f571bdc1262699bfdf3ed5a9d944bd",
+      "size": 649
+    }
+  ],
+  "status": "PASS_FROZEN_EVIDENCE_INDEX"
+}

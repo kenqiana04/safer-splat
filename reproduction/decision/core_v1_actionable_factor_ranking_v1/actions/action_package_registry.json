@@ -1,0 +1,175 @@
+{
+  "packages": [
+    {
+      "factors": "F03,F04,F08",
+      "failure": "A specification may reveal that B1 is a naming/evaluation-role issue rather than a method defect.",
+      "id": "A1",
+      "name": "CAUSAL_ARCHITECTURE_SPEC",
+      "next_task": "WRITE_CORE_CAUSAL_ARCHITECTURE_SPECIFICATION_V1",
+      "objective": "Write a causal control-structure specification only; implement nothing.",
+      "question": "Does the B0\u2192B1\u2192B2\u2192B3 pipeline conflate admission, immediate uncontrollable risk, future candidate safety, recoverability, and alternative search?",
+      "risks": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "scores": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "stop": "Stop at a signed role/horizon/denominator specification with no controller implementation."
+    },
+    {
+      "factors": "F07,F10,F01",
+      "failure": "Without a defined candidate-dependent horizon, denominators and conditional gates remain ambiguous.",
+      "id": "A2",
+      "name": "ON_POLICY_EVALUATION_DESIGN",
+      "next_task": "WRITE_CORE_V1_ON_POLICY_EVALUATION_PROTOCOL_V1",
+      "objective": "Design a data and statistics contract only; acquire no data.",
+      "question": "How can a deployment-relevant on-policy evaluation be defined without method-outcome selection?",
+      "risks": [
+        2,
+        2,
+        5,
+        1,
+        2,
+        4,
+        2,
+        0
+      ],
+      "scores": [
+        3,
+        4,
+        5,
+        4,
+        3,
+        2,
+        3,
+        1,
+        4,
+        4,
+        4,
+        4
+      ],
+      "stop": "Stop at a data/cluster/power/logging contract; no collection or rollout."
+    },
+    {
+      "factors": "F06,F03",
+      "failure": "All frozen states may remain ineligible, requiring forbidden active construction or new sampling.",
+      "id": "A3",
+      "name": "B3_COVERAGE_IDENTIFICATION",
+      "next_task": "WRITE_B3_CONTROL_COVERAGE_IDENTIFICATION_PROTOCOL_V1",
+      "objective": "Design an eligibility and bounded-oracle protocol only; run no oracle.",
+      "question": "Is the six-slot library missing a certifiable control, or was no legal alternative-search state reached?",
+      "risks": [
+        2,
+        3,
+        1,
+        2,
+        2,
+        5,
+        3,
+        1
+      ],
+      "scores": [
+        3,
+        2,
+        4,
+        3,
+        4,
+        3,
+        4,
+        4,
+        4,
+        3,
+        3,
+        3
+      ],
+      "stop": "Stop at a pre-registered eligible-state and bounded-search contract."
+    },
+    {
+      "factors": "F02,F01",
+      "failure": "No frozen real-system source may bound velocity, latency, or tracking error without trigger engineering.",
+      "id": "A4",
+      "name": "CONFIGURATION_REGIME_IDENTIFICATION",
+      "next_task": "WRITE_CORE_V1_CONFIGURATION_REGIME_PROTOCOL_V1",
+      "objective": "Write a regime diagnostic protocol only; do not optimize a configuration.",
+      "question": "Does the frozen low-speed/no-delay regime suppress mechanism exposure for physically sourced reasons?",
+      "risks": [
+        4,
+        3,
+        4,
+        2,
+        3,
+        3,
+        2,
+        1
+      ],
+      "scores": [
+        3,
+        3,
+        4,
+        3,
+        3,
+        2,
+        3,
+        2,
+        4,
+        3,
+        3,
+        3
+      ],
+      "stop": "Stop at a provenance-qualified regime boundary or an explicit no-source block."
+    },
+    {
+      "factors": "all frozen evidence",
+      "failure": "It can prematurely present an unresolved architectural ambiguity as an adequate frozen contribution.",
+      "id": "A5",
+      "name": "EVIDENCE_CONSOLIDATION",
+      "next_task": "WRITE_FROZEN_PAPER_CONTRIBUTION_AND_EXPERIMENT_PLAN_V1",
+      "objective": "Freeze evidence into a claim-bounded contribution plan; add no method.",
+      "question": "Is consolidation more valuable than resolving any remaining causal prerequisite?",
+      "risks": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        2,
+        3
+      ],
+      "scores": [
+        3,
+        2,
+        4,
+        3,
+        2,
+        5,
+        5,
+        5,
+        5,
+        5,
+        1,
+        4
+      ],
+      "stop": "Stop at a claim-bounded paper plan with no new results."
+    }
+  ],
+  "status": "PRE_FROZEN_BEFORE_SCORING"
+}
