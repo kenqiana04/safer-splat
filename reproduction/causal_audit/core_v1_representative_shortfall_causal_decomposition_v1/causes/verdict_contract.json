@@ -1,0 +1,94 @@
+{
+  "bounded_oracle": {
+    "c0_max_per_environment": 16,
+    "c0_selection": "frozen_registry_state_sha_sorted_stratified",
+    "c1_max_per_environment": 16,
+    "c1_selection": "frozen_B2_noncommit_or_B0_current_infeasible_typed_status_then_state_sha",
+    "claim_boundary": "finite searched set only; not a continuous control-space proof",
+    "grid7_axis": [
+      -0.1,
+      -0.0666667,
+      -0.0333333,
+      0.0,
+      0.0333333,
+      0.0666667,
+      0.1
+    ],
+    "grid7_candidate_count": 343,
+    "sobol_candidate_count": 512,
+    "sobol_scramble": true,
+    "sobol_seed": 20260807
+  },
+  "counterfactual_regime": {
+    "dt_s": [
+      0.025,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "latency_cycles": [
+      0,
+      1,
+      2
+    ],
+    "one_factor_at_a_time": true,
+    "tracking_error": "DATA_BLOCKED_UNLESS_FROZEN_ERROR_BUDGET_EXISTS",
+    "u_bound_inf": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "velocity_scale_nonzero_only": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ]
+  },
+  "dt_s": 0.05,
+  "effective_radius_m": 0.11,
+  "evidence_classes": [
+    "E0_FROZEN_FORMAL_EVIDENCE",
+    "E1_REANALYSIS_OF_FROZEN_RECORDS",
+    "E2_SHADOW_DIAGNOSTIC",
+    "E3_BOUNDED_APPROXIMATE_ORACLE",
+    "E4_COUNTERFACTUAL_REGIME_DIAGNOSTIC",
+    "E5_DATA_AVAILABILITY_AUDIT"
+  ],
+  "factor_count": 11,
+  "factors": [
+    "F01",
+    "F02",
+    "F03",
+    "F04",
+    "F05",
+    "F06",
+    "F07",
+    "F08",
+    "F09",
+    "F10",
+    "F11"
+  ],
+  "formal_environment_order": [
+    "E1_REPLICA_GT_FINE",
+    "E5_STONEHENGE_SAFER",
+    "E6_FLIGHT_SAFER"
+  ],
+  "formal_method_run_count_before_contract": 0,
+  "frozen_upstream_formal_csv_sha256": "f5cf3ee84b16cba608476fcb236d6bf41b60674bde8c4ada99fac4b6176e8407",
+  "h_stop_max": 20,
+  "model": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1",
+  "status": "FROZEN_BEFORE_NEW_DIAGNOSTIC_READ",
+  "terminal_tolerance": 1e-12,
+  "u_bound_inf": 0.1,
+  "v_bound_inf": 0.1,
+  "verdict_vocabulary": [
+    "SUPPORTED_PRIMARY",
+    "SUPPORTED_CONTRIBUTING",
+    "NOT_SUPPORTED",
+    "PARTIALLY_SUPPORTED",
+    "STRUCTURAL_FACT",
+    "DATA_BLOCKED",
+    "NOT_IDENTIFIABLE"
+  ]
+}

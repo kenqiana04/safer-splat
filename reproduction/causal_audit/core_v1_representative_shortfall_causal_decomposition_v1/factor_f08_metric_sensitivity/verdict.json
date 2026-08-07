@@ -1,0 +1,11 @@
+{
+  "detail": "No M2/M3 result is elevated to behavior gain.",
+  "evidence_classes": [
+    "E1_REANALYSIS_OF_FROZEN_RECORDS",
+    "E2_SHADOW_DIAGNOSTIC",
+    "E3_BOUNDED_APPROXIMATE_ORACLE"
+  ],
+  "factor_id": "F08",
+  "rationale": "Decision, certificate, availability, lead-time, backup-margin, and cost metrics separate quantities; all formal incremental action changes were zero.",
+  "verdict": "STRUCTURAL_FACT"
+}

@@ -1,0 +1,53 @@
+{
+  "assets": [
+    {
+      "environment": "E1_REPLICA_GT_FINE",
+      "evidence_class": "E5_DATA_AVAILABILITY_AUDIT",
+      "on_policy_available": false,
+      "physical_reference": "AVAILABLE_FROM_FROZEN_PR87_EVIDENCE",
+      "representation": "GT-derived canonical Gaussian safety map",
+      "status": "AVAILABLE_STATIC_ASSET"
+    },
+    {
+      "environment": "E2_ETH3D_LEARNED_GAUSSIAN",
+      "evidence_class": "E5_DATA_AVAILABILITY_AUDIT",
+      "on_policy_available": false,
+      "physical_reference": "",
+      "representation": "",
+      "status": "STATIC_ONLY_NOT_EXECUTED"
+    },
+    {
+      "environment": "E3_TUM_SPLATAM",
+      "evidence_class": "E5_DATA_AVAILABILITY_AUDIT",
+      "on_policy_available": false,
+      "physical_reference": "",
+      "representation": "",
+      "status": "STATIC_ONLY_NOT_EXECUTED"
+    },
+    {
+      "environment": "E4_TUM_GAUSSIAN_SLAM",
+      "evidence_class": "E5_DATA_AVAILABILITY_AUDIT",
+      "on_policy_available": false,
+      "physical_reference": "",
+      "representation": "",
+      "status": "STATIC_ONLY_NOT_EXECUTED"
+    },
+    {
+      "environment": "E5_STONEHENGE_SAFER",
+      "evidence_class": "E5_DATA_AVAILABILITY_AUDIT",
+      "on_policy_available": false,
+      "physical_reference": "NOT_EVALUABLE",
+      "representation": "source_anisotropic_gaussian_map",
+      "status": "AVAILABLE_STATIC_ASSET"
+    },
+    {
+      "environment": "E6_FLIGHT_SAFER",
+      "evidence_class": "E5_DATA_AVAILABILITY_AUDIT",
+      "on_policy_available": false,
+      "physical_reference": "NOT_EVALUABLE",
+      "representation": "source_anisotropic_gaussian_map",
+      "status": "AVAILABLE_STATIC_ASSET"
+    }
+  ],
+  "evidence_class": "E5_DATA_AVAILABILITY_AUDIT"
+}

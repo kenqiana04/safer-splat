@@ -1,0 +1,10 @@
+{
+  "detail": "No pooling; downstream E5/E6 denominators remain conditional.",
+  "evidence_classes": [
+    "E1_REANALYSIS_OF_FROZEN_RECORDS",
+    "E5_DATA_AVAILABILITY_AUDIT"
+  ],
+  "factor_id": "F10",
+  "rationale": "Zero events in 100/160 states leave nonzero 95% one-sided rates, and downstream E5/E6 denominators are 0/26 rather than 100.",
+  "verdict": "SUPPORTED_CONTRIBUTING"
+}

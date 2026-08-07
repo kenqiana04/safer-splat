@@ -1,0 +1,33 @@
+{
+  "environments": {
+    "E1_REPLICA_GT_FINE": {
+      "b0_current_fail": 0,
+      "b0_current_pass": 160,
+      "b1_reached": 160,
+      "b2_reached": 160,
+      "b3_reached": 160,
+      "conclusion": "Current-gate left truncation is structural where B0 fails; it does not establish a candidate rescue.",
+      "state_count": 160
+    },
+    "E5_STONEHENGE_SAFER": {
+      "b0_current_fail": 100,
+      "b0_current_pass": 0,
+      "b1_reached": 0,
+      "b2_reached": 0,
+      "b3_reached": 0,
+      "conclusion": "Current-gate left truncation is structural where B0 fails; it does not establish a candidate rescue.",
+      "state_count": 100
+    },
+    "E6_FLIGHT_SAFER": {
+      "b0_current_fail": 74,
+      "b0_current_pass": 26,
+      "b1_reached": 26,
+      "b2_reached": 26,
+      "b3_reached": 26,
+      "conclusion": "Current-gate left truncation is structural where B0 fails; it does not establish a candidate rescue.",
+      "state_count": 100
+    }
+  },
+  "evidence_class": "E1_REANALYSIS_OF_FROZEN_RECORDS",
+  "factor_id": "F03"
+}

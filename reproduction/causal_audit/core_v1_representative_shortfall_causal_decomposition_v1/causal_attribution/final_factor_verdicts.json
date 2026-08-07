@@ -1,0 +1,138 @@
+{
+  "case": "D",
+  "evidence_class": "MIXED",
+  "factors": [
+    {
+      "actionable": "not_before_ranking",
+      "confidence": "MEDIUM",
+      "effect_direction": "limits_interpretability_or_reachability",
+      "evaluation_change": true,
+      "evidence_classes": "E1_REANALYSIS_OF_FROZEN_RECORDS|E5_DATA_AVAILABILITY_AUDIT",
+      "factor_id": "F01",
+      "load_bearing_files": "protocol-named factor directory",
+      "method_change": false,
+      "new_data_needed": false,
+      "verdict": "PARTIALLY_SUPPORTED"
+    },
+    {
+      "actionable": "not_before_ranking",
+      "confidence": "LOW",
+      "effect_direction": "limits_interpretability_or_reachability",
+      "evaluation_change": false,
+      "evidence_classes": "E4_COUNTERFACTUAL_REGIME_DIAGNOSTIC|E5_DATA_AVAILABILITY_AUDIT",
+      "factor_id": "F02",
+      "load_bearing_files": "protocol-named factor directory",
+      "method_change": false,
+      "new_data_needed": true,
+      "verdict": "DATA_BLOCKED"
+    },
+    {
+      "actionable": "evaluation_change",
+      "confidence": "HIGH",
+      "effect_direction": "limits_interpretability_or_reachability",
+      "evaluation_change": true,
+      "evidence_classes": "E1_REANALYSIS_OF_FROZEN_RECORDS|E2_SHADOW_DIAGNOSTIC",
+      "factor_id": "F03",
+      "load_bearing_files": "protocol-named factor directory",
+      "method_change": false,
+      "new_data_needed": false,
+      "verdict": "STRUCTURAL_FACT"
+    },
+    {
+      "actionable": "conceptual_design_review",
+      "confidence": "HIGH",
+      "effect_direction": "limits_interpretability_or_reachability",
+      "evaluation_change": false,
+      "evidence_classes": "E2_SHADOW_DIAGNOSTIC",
+      "factor_id": "F04",
+      "load_bearing_files": "protocol-named factor directory",
+      "method_change": true,
+      "new_data_needed": false,
+      "verdict": "SUPPORTED_CONTRIBUTING"
+    },
+    {
+      "actionable": "not_before_ranking",
+      "confidence": "MEDIUM",
+      "effect_direction": "limits_interpretability_or_reachability",
+      "evaluation_change": false,
+      "evidence_classes": "E2_SHADOW_DIAGNOSTIC",
+      "factor_id": "F05",
+      "load_bearing_files": "protocol-named factor directory",
+      "method_change": false,
+      "new_data_needed": false,
+      "verdict": "NOT_SUPPORTED"
+    },
+    {
+      "actionable": "not_before_ranking",
+      "confidence": "LOW",
+      "effect_direction": "limits_interpretability_or_reachability",
+      "evaluation_change": false,
+      "evidence_classes": "E3_BOUNDED_APPROXIMATE_ORACLE",
+      "factor_id": "F06",
+      "load_bearing_files": "protocol-named factor directory",
+      "method_change": false,
+      "new_data_needed": false,
+      "verdict": "NOT_IDENTIFIABLE"
+    },
+    {
+      "actionable": "not_before_ranking",
+      "confidence": "LOW",
+      "effect_direction": "limits_interpretability_or_reachability",
+      "evaluation_change": true,
+      "evidence_classes": "E5_DATA_AVAILABILITY_AUDIT",
+      "factor_id": "F07",
+      "load_bearing_files": "protocol-named factor directory",
+      "method_change": false,
+      "new_data_needed": true,
+      "verdict": "DATA_BLOCKED"
+    },
+    {
+      "actionable": "not_before_ranking",
+      "confidence": "MEDIUM",
+      "effect_direction": "limits_interpretability_or_reachability",
+      "evaluation_change": false,
+      "evidence_classes": "E1_REANALYSIS_OF_FROZEN_RECORDS|E2_SHADOW_DIAGNOSTIC|E3_BOUNDED_APPROXIMATE_ORACLE",
+      "factor_id": "F08",
+      "load_bearing_files": "protocol-named factor directory",
+      "method_change": false,
+      "new_data_needed": false,
+      "verdict": "STRUCTURAL_FACT"
+    },
+    {
+      "actionable": "not_before_ranking",
+      "confidence": "MEDIUM",
+      "effect_direction": "limits_interpretability_or_reachability",
+      "evaluation_change": false,
+      "evidence_classes": "E1_REANALYSIS_OF_FROZEN_RECORDS|E5_DATA_AVAILABILITY_AUDIT",
+      "factor_id": "F09",
+      "load_bearing_files": "protocol-named factor directory",
+      "method_change": false,
+      "new_data_needed": true,
+      "verdict": "PARTIALLY_SUPPORTED"
+    },
+    {
+      "actionable": "evaluation_change",
+      "confidence": "MEDIUM",
+      "effect_direction": "limits_interpretability_or_reachability",
+      "evaluation_change": true,
+      "evidence_classes": "E1_REANALYSIS_OF_FROZEN_RECORDS|E5_DATA_AVAILABILITY_AUDIT",
+      "factor_id": "F10",
+      "load_bearing_files": "protocol-named factor directory",
+      "method_change": false,
+      "new_data_needed": true,
+      "verdict": "SUPPORTED_CONTRIBUTING"
+    },
+    {
+      "actionable": "not_before_ranking",
+      "confidence": "HIGH",
+      "effect_direction": "limits_interpretability_or_reachability",
+      "evaluation_change": false,
+      "evidence_classes": "E0_FROZEN_FORMAL_EVIDENCE|E2_SHADOW_DIAGNOSTIC",
+      "factor_id": "F11",
+      "load_bearing_files": "protocol-named factor directory",
+      "method_change": false,
+      "new_data_needed": false,
+      "verdict": "NOT_SUPPORTED"
+    }
+  ]
+}

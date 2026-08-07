@@ -1,0 +1,75 @@
+{
+  "case": "D",
+  "case_reason": "No single evaluable factor establishes a unique root cause; multiple pre-registered structural, asset, and inference limitations jointly explain why the representative increment question was not resolved.",
+  "priority_order": [
+    "F03",
+    "F04",
+    "F01",
+    "F07",
+    "F09",
+    "F10",
+    "F02",
+    "F06",
+    "F05",
+    "F08",
+    "F11"
+  ],
+  "status": "PASS_F01_F11_CAUSAL_DECOMPOSITION",
+  "verdicts": [
+    {
+      "factor_id": "F01",
+      "rationale": "Formal records cover represented-map states but not frozen on-policy/deployment evidence; two source-map environments lack physical reference.",
+      "verdict": "PARTIALLY_SUPPORTED"
+    },
+    {
+      "factor_id": "F02",
+      "rationale": "Zero-velocity E5/E6 states cannot receive artificial velocity; no frozen tracking-error budget exists. Endpoint-only OAT shadows are not activation evidence.",
+      "verdict": "DATA_BLOCKED"
+    },
+    {
+      "factor_id": "F03",
+      "rationale": "B0 left-truncated all E5 and 74/100 E6 states before B1/B2/B3; this establishes gating reachability, not a rescue.",
+      "verdict": "STRUCTURAL_FACT"
+    },
+    {
+      "factor_id": "F04",
+      "rationale": "The frozen position-first model exactly gives p(tau)=p+tau*v and dp(tau)/du=0 over the immediate interval; control first changes the next horizon.",
+      "verdict": "SUPPORTED_CONTRIBUTING"
+    },
+    {
+      "factor_id": "F05",
+      "rationale": "All 32 Replica atomic witnesses passed; E5 and most E6 selected states were not reachable after the current gate. No isolated B2 atomic failure explains the zero increments.",
+      "verdict": "NOT_SUPPORTED"
+    },
+    {
+      "factor_id": "F06",
+      "rationale": "All 80 finite-set states were either B2-primary committed (22) or candidate-independently precluded by negative current-map h (58); no B3 coverage opportunity was reached.",
+      "verdict": "NOT_IDENTIFIABLE"
+    },
+    {
+      "factor_id": "F07",
+      "rationale": "Static assets contain no frozen on-policy/intermediate logs; registry representativeness beyond its sampling contract cannot be established.",
+      "verdict": "DATA_BLOCKED"
+    },
+    {
+      "factor_id": "F08",
+      "rationale": "Decision, certificate, availability, lead-time, backup-margin, and cost metrics separate quantities; all formal incremental action changes were zero.",
+      "verdict": "STRUCTURAL_FACT"
+    },
+    {
+      "factor_id": "F09",
+      "rationale": "Replica has frozen physical-reference evidence; Stonehenge/Flight are source Gaussian behavior-only and cannot sustain physical-clearance claims.",
+      "verdict": "PARTIALLY_SUPPORTED"
+    },
+    {
+      "factor_id": "F10",
+      "rationale": "Zero events in 100/160 states leave nonzero 95% one-sided rates, and downstream E5/E6 denominators are 0/26 rather than 100.",
+      "verdict": "SUPPORTED_CONTRIBUTING"
+    },
+    {
+      "factor_id": "F11",
+      "rationale": "All 768 double-replay method records matched frozen formal semantics; formula and protected-record checks passed.",
+      "verdict": "NOT_SUPPORTED"
+    }
+  ]
+}

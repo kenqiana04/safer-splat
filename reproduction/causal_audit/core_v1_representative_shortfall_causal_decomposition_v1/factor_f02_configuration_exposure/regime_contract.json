@@ -1,0 +1,31 @@
+{
+  "boundary": "Endpoint exposure only; not a representative deployment or formal method claim.",
+  "contract": {
+    "dt_s": [
+      0.025,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "latency_cycles": [
+      0,
+      1,
+      2
+    ],
+    "one_factor_at_a_time": true,
+    "tracking_error": "DATA_BLOCKED_UNLESS_FROZEN_ERROR_BUDGET_EXISTS",
+    "u_bound_inf": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "velocity_scale_nonzero_only": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ]
+  },
+  "evidence_class": "E4_COUNTERFACTUAL_REGIME_DIAGNOSTIC",
+  "formal_configuration_modified": false
+}

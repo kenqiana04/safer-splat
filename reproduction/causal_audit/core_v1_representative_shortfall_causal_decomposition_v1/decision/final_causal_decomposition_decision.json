@@ -1,0 +1,21 @@
+{
+  "base_head": "047513b5e612f91e63ab1e7054815615cb455fd7",
+  "branch": "core-v1-representative-shortfall-causal-decomposition-v1",
+  "case": "D",
+  "counterfactual_data_blocked_rows": 148,
+  "coverage_outcomes": {
+    "B2_PRIMARY_COMMITTED_NO_B3_SEARCH_REQUIRED": 22,
+    "PRECLUDED_BY_CANDIDATE_INDEPENDENT_NEGATIVE_CURRENT_MAP_H": 58
+  },
+  "final_decision": "DO_NOT_REOPEN_METHOD_OR_FREEZE_PAPER_UNTIL_ACTIONABLE_FACTORS_ARE_PRIORITIZED",
+  "formal_record_count": 1440,
+  "formal_state_count": 360,
+  "formula_max_error": 0.0,
+  "next_authorized_task": "RANK_CORE_V1_ACTIONABLE_FACTORS_AND_SELECT_ONE_BOUNDED_NEXT_STEP_V1",
+  "no_controller_loop": true,
+  "no_rollout": true,
+  "no_training": true,
+  "replay_call_count": 768,
+  "replay_mismatch_count": 0,
+  "status": "PASS_MULTIFACTOR_CORE_V1_SHORTFALL_DECOMPOSITION"
+}

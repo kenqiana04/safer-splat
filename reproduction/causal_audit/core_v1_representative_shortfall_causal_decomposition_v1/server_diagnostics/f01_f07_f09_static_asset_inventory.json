@@ -1,0 +1,47 @@
+{
+  "environments": {
+    "E1_REPLICA_GT_FINE": {
+      "note": "Static asset inventory cannot establish deployment/on-policy representativeness.",
+      "onpolicy_or_intermediate_log_found": false,
+      "physical_reference": "AVAILABLE_FROM_FROZEN_PR87_EVIDENCE",
+      "representation": "GT-derived canonical Gaussian safety map"
+    },
+    "E2_ETH3D_LEARNED_GAUSSIAN": {
+      "reason": "Excluded by frozen PR89 environment readiness/claim boundaries.",
+      "status": "STATIC_ONLY_NOT_EXECUTED"
+    },
+    "E3_TUM_SPLATAM": {
+      "reason": "Excluded by frozen PR89 environment readiness/claim boundaries.",
+      "status": "STATIC_ONLY_NOT_EXECUTED"
+    },
+    "E4_TUM_GAUSSIAN_SLAM": {
+      "reason": "Excluded by frozen PR89 environment readiness/claim boundaries.",
+      "status": "STATIC_ONLY_NOT_EXECUTED"
+    },
+    "E5_STONEHENGE_SAFER": {
+      "files": [
+        "config.yml",
+        "dataparser_transforms.json",
+        "nerfstudio_models/step-000029999.ckpt"
+      ],
+      "official_nonzero_velocity_source_found": false,
+      "onpolicy_or_intermediate_log_found": false,
+      "physical_reference": "NOT_EVALUABLE",
+      "representation": "source_anisotropic_gaussian_map",
+      "root": "/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724"
+    },
+    "E6_FLIGHT_SAFER": {
+      "files": [
+        "config.yml",
+        "dataparser_transforms.json",
+        "nerfstudio_models/step-000029999.ckpt"
+      ],
+      "official_nonzero_velocity_source_found": false,
+      "onpolicy_or_intermediate_log_found": false,
+      "physical_reference": "NOT_EVALUABLE",
+      "representation": "source_anisotropic_gaussian_map",
+      "root": "/disk1/zlab/projects/safer-splat/outputs/flight/splatfacto/2024-09-12_172434"
+    }
+  },
+  "status": "PASS_STATIC_ASSET_INVENTORY"
+}

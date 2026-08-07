@@ -1,0 +1,10 @@
+{
+  "detail": "768 deterministic replay records match formal semantics; no Case G trigger.",
+  "evidence_classes": [
+    "E0_FROZEN_FORMAL_EVIDENCE",
+    "E2_SHADOW_DIAGNOSTIC"
+  ],
+  "factor_id": "F11",
+  "rationale": "All 768 double-replay method records matched frozen formal semantics; formula and protected-record checks passed.",
+  "verdict": "NOT_SUPPORTED"
+}

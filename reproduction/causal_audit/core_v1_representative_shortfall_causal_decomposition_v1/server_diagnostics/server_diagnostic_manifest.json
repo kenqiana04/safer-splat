@@ -1,0 +1,20 @@
+{
+  "coverage_state_count": 80,
+  "files": {
+    "f01_f07_f09_static_asset_inventory.json": "21ae2ad21677b25f515d4f05c331bf68d014b13fb843ad0c868f0d84f18d0bf1",
+    "f02_counterfactual_exposure.csv": "8059d1626a79641659cda7f406e70f445be5ba89c2c19936eb16baebfe5e07ed",
+    "f04_position_first_formula.csv": "c0a540bd3b49c20cdda8f38bd6cda2b0c4d6a22e320972506171da1b632b8532",
+    "f05_atomic_backup_decomposition.csv": "04ceaedccf479f12f4c75c9a50df34630552e7943b9f572da6861cc4bc6d936f",
+    "f06_bounded_coverage.csv": "3447173d26b1af7b781dbf049e249e9bcbc52b760585813c1c05b8db57e57bec",
+    "f11_deterministic_replay.csv": "8b2fe4ed5b997d332e7eb658d322339d574e71fd95f955deeda53a98bb4e3902",
+    "server_diagnostic_manifest.json": "305477b148904f1febe336afa0f48813bb6c16908f24f03edb8cde1b0b97af0c"
+  },
+  "formal_replay_call_count": 768,
+  "gpu_binding": "1",
+  "no_controller_loop": true,
+  "no_rollout": true,
+  "no_training": true,
+  "replay_mismatch_count": 0,
+  "replay_state_count_per_environment": 32,
+  "status": "PASS_SERVER_READONLY_DIAGNOSTICS"
+}

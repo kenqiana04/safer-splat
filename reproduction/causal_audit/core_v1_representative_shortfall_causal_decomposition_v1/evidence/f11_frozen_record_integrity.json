@@ -1,0 +1,29 @@
+{
+  "environment_method_rows": {
+    "E1_REPLICA_GT_FINE": {
+      "B0_CURRENT_CBF_ONLY": 160,
+      "B1_PLUS_SWEPT_SEGMENT": 160,
+      "B2_PLUS_TERMINAL_BACKUP": 160,
+      "B3_FULL_UNIFIED_WITH_DIRECTIONAL_ALTERNATIVES": 160
+    },
+    "E5_STONEHENGE_SAFER": {
+      "B0_CURRENT_CBF_ONLY": 100,
+      "B1_PLUS_SWEPT_SEGMENT": 100,
+      "B2_PLUS_TERMINAL_BACKUP": 100,
+      "B3_FULL_UNIFIED_WITH_DIRECTIONAL_ALTERNATIVES": 100
+    },
+    "E6_FLIGHT_SAFER": {
+      "B0_CURRENT_CBF_ONLY": 100,
+      "B1_PLUS_SWEPT_SEGMENT": 100,
+      "B2_PLUS_TERMINAL_BACKUP": 100,
+      "B3_FULL_UNIFIED_WITH_DIRECTIONAL_ALTERNATIVES": 100
+    }
+  },
+  "evidence_class": "E0_FROZEN_FORMAL_EVIDENCE",
+  "factor_id": "F11",
+  "formal_csv_sha256": "f5cf3ee84b16cba608476fcb236d6bf41b60674bde8c4ada99fac4b6176e8407",
+  "frozen_record_parse_errors": 0,
+  "replay_required": "Two deterministic replays per formal environment on >=32 states are evaluated separately; any mismatch routes Case G.",
+  "row_count": 1440,
+  "shared_input_hash_mismatches_within_state": 0
+}

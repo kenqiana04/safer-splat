@@ -1,0 +1,54 @@
+{
+  "environments": {
+    "E1_REPLICA_GT_FINE": {
+      "cluster_ess": "DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL",
+      "conditional_downstream_n": {
+        "B1": 160,
+        "B2": 160
+      },
+      "observed": {
+        "any_increment": 0,
+        "backup_increment": 0,
+        "directional_increment": 0,
+        "segment_increment": 0
+      },
+      "state_n": 160,
+      "zero_event_one_sided_upper_80": 0.01000856455117316,
+      "zero_event_one_sided_upper_95": 0.018549134077503804
+    },
+    "E5_STONEHENGE_SAFER": {
+      "cluster_ess": "DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL",
+      "conditional_downstream_n": {
+        "B1": 0,
+        "B2": 0
+      },
+      "observed": {
+        "any_increment": 0,
+        "backup_increment": 0,
+        "directional_increment": 0,
+        "segment_increment": 0
+      },
+      "state_n": 100,
+      "zero_event_one_sided_upper_80": 0.015965556636542422,
+      "zero_event_one_sided_upper_95": 0.029513049607039932
+    },
+    "E6_FLIGHT_SAFER": {
+      "cluster_ess": "DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL",
+      "conditional_downstream_n": {
+        "B1": 26,
+        "B2": 26
+      },
+      "observed": {
+        "any_increment": 0,
+        "backup_increment": 0,
+        "directional_increment": 0,
+        "segment_increment": 0
+      },
+      "state_n": 100,
+      "zero_event_one_sided_upper_80": 0.015965556636542422,
+      "zero_event_one_sided_upper_95": 0.029513049607039932
+    }
+  },
+  "evidence_class": "E1_REANALYSIS_OF_FROZEN_RECORDS",
+  "factor_id": "F10"
+}
