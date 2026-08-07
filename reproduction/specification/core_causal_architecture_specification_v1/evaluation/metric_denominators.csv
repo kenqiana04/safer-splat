@@ -1,0 +1,14 @@
+metric,definition,use,boundary
+N_all,all pre-registered assessed states,unconditional base,no truncation hidden
+N_state_admissible,L0 pass,L1 reachability,current query semantic
+N_immediate_evaluable,L1 can be assessed,L1 reachability,segment contract
+N_immediate_safe,L1 pass,L2 parent,unavoidable risk separate
+N_primary_candidate_evaluable,L1 pass and candidate exists,L2 parent,future predicate exists
+N_primary_future_safe,L2 pass,L3 parent,candidate witness
+N_recoverability_evaluable,L2 pass,L3 parent,backup contract
+N_primary_not_certified,candidate-specific L2/L3 failure,L4 parent,not candidate-independent preclusion
+N_alt_eligible,ALT_ELIGIBLE true,conditional rescue denominator,finite library only
+N_alt_attempted,search executed under budget,search reachability,runtime budget
+N_alt_certified,alternative witness passes,conditional rescue numerator,not coverage proof
+N_commit,certified primary/alternative/terminal commit,decision gain,execution tracking
+N_fail_closed,typed no-certified-route outcome,failure prevalence,not safe stop

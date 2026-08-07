@@ -1,0 +1,3 @@
+# Start-Safe integration
+
+Safe start is full-query admitted. Near-unsafe or unsafe start is repair-needed, not an alternative-control opportunity. Historical Flight100 records 92 safe starts, 7 near-unsafe starts, 1 unsafe start, and 8/8 required repairs successful; those values are preserved without new execution. Projection is an active-set repair proposal, never itself a complete certificate. A projected state must receive full-query verification before it re-enters L1. Initial-only admission, episodic repair, and per-step current admission are separate invocation modes; B0 ablation must not absorb the Start-Safe route.

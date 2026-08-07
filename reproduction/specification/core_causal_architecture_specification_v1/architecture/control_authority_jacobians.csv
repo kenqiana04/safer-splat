@@ -1,0 +1,6 @@
+quantity,expression,derivative_wrt_u_k,authority_class,role_implication
+p_k_plus_1,p_k+dt*v_k,0,uncontrollable position,L1 only
+v_k_plus_1,v_k+dt*u_k,dt*I,control affected,velocity changes
+p_k_plus_2,p_k+2dt*v_k+dt^2*u_k,dt^2*I,first control-affected position,L2 may start
+v_k_plus_2,v_k+dt*u_k+dt*u_(k+1),dt*I,control affected under independent later control,future witness required
+p_k_plus_n,p_k+n*dt*v_k+dt^2*sum_(j=0)^(n-2)(n-1-j)u_(k+j),(n-1)*dt^2*I,multi-step,must state later-control assumption

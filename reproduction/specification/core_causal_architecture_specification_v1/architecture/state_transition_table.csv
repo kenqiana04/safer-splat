@@ -1,0 +1,24 @@
+source,condition,destination,control_dependent,method_component,certification,diagnostic,historical_evidence_exists,evidence_source_pr,unresolved_assumption
+S0_UNASSESSED,full query admits current/start state,S1_START_ADMISSIBLE,NO,EXECUTION_ADMISSION,YES,YES,PR83/PR84,query semantics
+S0_UNASSESSED,near-unsafe or unsafe start requires repair,S2_START_REPAIR_REQUIRED,NO,EXECUTION_ADMISSION,NO,YES,Start-Safe Flight100,repair eligibility
+S2_START_REPAIR_REQUIRED,projection plus full-query verification passes,S1_START_ADMISSIBLE,NO,RECOVERY_POLICY,YES,YES,Start-Safe synthetic120/Flight100,projection is not full certificate
+S2_START_REPAIR_REQUIRED,repair or full-query verification fails,S3_START_REPAIR_FAILED,NO,RECOVERY_POLICY,YES,YES,Start-Safe historical boundary,repair policy limit
+S1_START_ADMISSIBLE,frozen immediate segment is safe,S4_IMMEDIATE_SEGMENT_SAFE,NO,EXECUTION_ADMISSION,YES,YES,PR87 G1/PR90 F04,segment contract
+S1_START_ADMISSIBLE,immediate segment unsafe independently of candidate,S5_IMMEDIATE_SEGMENT_UNSAFE_UNAVOIDABLE,NO,EXECUTION_ADMISSION,YES,YES,DT verification history,no same-cycle control authority
+S4_IMMEDIATE_SEGMENT_SAFE,primary candidate is evaluated,S6_PRIMARY_CANDIDATE_UNDER_TEST,YES,METHOD_COMPONENT,NO,YES,PR84 pipeline,candidate semantics
+S6_PRIMARY_CANDIDATE_UNDER_TEST,candidate-dependent future predicate passes,S7_PRIMARY_FUTURE_SAFE,YES,FUTURE_CERTIFICATION_CONCEPT,YES,NO,none; conceptual only,future-safety certificate absent in V1
+S7_PRIMARY_FUTURE_SAFE,backup/terminal witness is sufficient,S8_PRIMARY_RECOVERABLE,YES,CERTIFICATION_WITNESS,YES,YES,PR84 braking/PR87 G2-G3,witness scope
+S6_PRIMARY_CANDIDATE_UNDER_TEST,candidate future predicate fails,S9_PRIMARY_NOT_CERTIFIED,YES,FUTURE_CERTIFICATION_CONCEPT,YES,NO,conceptual failure only,candidate-dependent predicate must be specified
+S7_PRIMARY_FUTURE_SAFE,backup witness absent,S9_PRIMARY_NOT_CERTIFIED,YES,CERTIFICATION_WITNESS,YES,YES,PR84/PR90 F05,absence is not unrecoverability
+S8_PRIMARY_RECOVERABLE,candidate commits,S14_COMMIT,YES,METHOD_COMPONENT,YES,YES,PR84/PR87,runtime deadline
+S9_PRIMARY_NOT_CERTIFIED,ALT_ELIGIBLE is true,S10_ALTERNATIVE_SEARCH_ELIGIBLE,YES,CANDIDATE_GENERATOR,NO,YES,PR87 G3/PR90 F06,finite library only
+S9_PRIMARY_NOT_CERTIFIED,ALT_ELIGIBLE is false,S13_FAIL_CLOSED,NO,TERMINAL_CONDITION,YES,YES,typed failure history,fail-close safety unproven
+S10_ALTERNATIVE_SEARCH_ELIGIBLE,finite alternative certified,S11_ALTERNATIVE_CERTIFIED,YES,CANDIDATE_GENERATOR,YES,YES,PR87 G3,coverage unproven
+S11_ALTERNATIVE_CERTIFIED,alternative candidate commits,S14_COMMIT,YES,METHOD_COMPONENT,YES,YES,PR87 G3,runtime deadline
+S10_ALTERNATIVE_SEARCH_ELIGIBLE,finite library exhausted or deadline,S13_FAIL_CLOSED,YES,TERMINAL_CONDITION,YES,YES,PR90 F06,not continuous infeasibility
+S1_START_ADMISSIBLE,terminal-already-safe condition is certified,S12_TERMINAL_CERTIFIED,NO,TERMINAL_CONDITION,YES,YES,PR89/PR90 metric taxonomy,terminal sufficient not maximal
+S12_TERMINAL_CERTIFIED,certified terminal action commits,S14_COMMIT,NO,TERMINAL_CONDITION,YES,YES,PR84 terminal certificate,terminal policy scope
+S3_START_REPAIR_FAILED,typed fail-close record,S13_FAIL_CLOSED,NO,TERMINAL_CONDITION,YES,YES,Start-Safe boundary,not safe stop
+S5_IMMEDIATE_SEGMENT_UNSAFE_UNAVOIDABLE,typed fail-close record,S13_FAIL_CLOSED,NO,TERMINAL_CONDITION,YES,YES,DT history,not candidate failure
+S13_FAIL_CLOSED,"next observation/diagnosis, no safety claim",S0_UNASSESSED,NO,DIAGNOSTIC_ONLY,NO,YES,PR84 state-machine convention,external supervisory policy
+S14_COMMIT,next sampled cycle,S0_UNASSESSED,NO,METHOD_COMPONENT,NO,YES,PR84 state-machine convention,execution tracking

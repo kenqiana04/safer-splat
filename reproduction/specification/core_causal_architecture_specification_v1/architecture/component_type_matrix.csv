@@ -1,0 +1,16 @@
+component,classification,role_layer,claim_boundary
+Start-Safe diagnosis,EXECUTION_ADMISSION,L0,admission/diagnosis only
+Start-Safe projection,RECOVERY_POLICY,L0,requires full-query verification
+current full-query feasibility,EXECUTION_ADMISSION,L0,not future control efficacy
+immediate swept segment,EXECUTION_ADMISSION,L1,not candidate discriminator
+candidate-dependent future safety,METHOD_CORE (future specification only),L2,not implemented or validated
+terminal backup witness,CERTIFICATION_WITNESS,L3,sufficient witness only
+deterministic braking,RECOVERY_POLICY,L3/L5,not maximal recoverability
+terminal set,TERMINAL_CONDITION,L5,sufficient not maximal
+six-slot alternatives,CANDIDATE_GENERATOR,L4,finite library only
+fail-close,TERMINAL_CONDITION,L5,not safe stop
+offline reference collision check,REFERENCE_ONLY,none,not controller behavior
+activated cohort,EVALUATION_ONLY,none,mechanism activation only
+representative cohort,EVALUATION_ONLY,none,prevalence limited
+Wilson CI,EVALUATION_ONLY,none,statistical bound
+runtime deadline audit,DIAGNOSTIC_ONLY,none,not semantic safety

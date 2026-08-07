@@ -1,0 +1,55 @@
+{
+  "checks": 7,
+  "finite_difference": {
+    "dp_k_plus_1_du_k": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "dp_k_plus_2_du_k": [
+      [
+        0.002500000207,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.002500000207,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.002500000207
+      ]
+    ],
+    "dt": 0.05,
+    "epsilon": 1e-07,
+    "max_error_p1": 0.0,
+    "max_error_p2": 2.069999996065497e-10
+  },
+  "identity": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1",
+  "manual_derivation": {
+    "dp_k_plus_1_du_k": "0",
+    "dp_k_plus_2_du_k": "dt^2*I",
+    "dv_k_plus_1_du_k": "dt*I",
+    "dv_k_plus_2_du_k": "dt*I when u_(k+1) is held independent",
+    "multi_step": "dp_(k+n)/du_k=(n-1)*dt^2*I for n>=2 when later controls are independent",
+    "p_k_plus_1": "p_k + dt*v_k",
+    "p_k_plus_2": "p_k + 2*dt*v_k + dt^2*u_k",
+    "v_k_plus_1": "v_k + dt*u_k"
+  },
+  "status": "PASS_POSITION_FIRST_EULER_AUTHORITY_CHECK"
+}
