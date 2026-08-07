@@ -1,0 +1,83 @@
+{
+  "layers": [
+    {
+      "claim_type": "EXECUTION_ADMISSION",
+      "control_authority": "none for current u_k",
+      "denominator": "N_all",
+      "downstream": "L1 or L5",
+      "entry": "S0_UNASSESSED",
+      "fail": "current infeasible/unknown or repair failure",
+      "id": "L0_START_STATE_ADMISSION",
+      "inputs": "x_k, map snapshot, full query, Start-Safe status",
+      "pass": "full-query admissible or post-repair full-query verified",
+      "purpose": "admit, repair, or explicitly fail-close a current/start state",
+      "unresolved": "map query validity and repair policy are external contracts"
+    },
+    {
+      "claim_type": "SAMPLED_DATA_CONSISTENCY",
+      "control_authority": "none: \u2202p(tau)/\u2202u_k=0",
+      "denominator": "N_state_admissible",
+      "downstream": "L2 or L5",
+      "entry": "L0 passes",
+      "fail": "unavoidable segment fails",
+      "id": "L1_IMMEDIATE_UNAVOIDABLE_SEGMENT",
+      "inputs": "x_k, map snapshot, frozen immediate position path",
+      "pass": "immediate segment passes continuous/sampled contract",
+      "purpose": "primary execution-admission and late-risk detector for [t_k,t_(k+1)]",
+      "unresolved": "continuous segment/model consistency requires a frozen certificate contract"
+    },
+    {
+      "claim_type": "FUTURE_CERTIFICATION_CONCEPT",
+      "control_authority": "first affects position on [t_(k+1),t_(k+2)] and p_(k+2)",
+      "denominator": "N_primary_candidate_evaluable",
+      "downstream": "L3 or L4/L5",
+      "entry": "L1 passes and not terminal-already-safe",
+      "fail": "candidate-specific future predicate fails",
+      "id": "L2_CANDIDATE_DEPENDENT_FUTURE_SAFETY",
+      "inputs": "x_k, u_k, map snapshot, horizon/witness assumptions",
+      "pass": "candidate future predicate passes",
+      "purpose": "conceptual future-safety predicate for candidate u_k",
+      "unresolved": "not implemented in formal Core V1; H2 requires an explicit future-control witness"
+    },
+    {
+      "claim_type": "CERTIFICATION_WITNESS",
+      "control_authority": "after candidate semantics are established",
+      "denominator": "N_recoverability_evaluable",
+      "downstream": "commit or L4/L5",
+      "entry": "L2 passes",
+      "fail": "witness absent",
+      "id": "L3_CANDIDATE_RECOVERABILITY",
+      "inputs": "future-safe candidate, braking/terminal witness, terminal condition",
+      "pass": "a sufficient witness is found",
+      "purpose": "secondary candidate recoverability/backup witness",
+      "unresolved": "witness absence is not mathematical unrecoverability"
+    },
+    {
+      "claim_type": "CANDIDATE_GENERATOR",
+      "control_authority": "candidate dependent only",
+      "denominator": "N_alt_eligible",
+      "downstream": "commit or L5",
+      "entry": "ALT_ELIGIBLE predicate",
+      "fail": "finite library exhausted/budget stops",
+      "id": "L4_ALTERNATIVE_CONTROL_SEARCH",
+      "inputs": "admissible x_k, immediate-safe path, primary failure type, finite library",
+      "pass": "an alternative is certified",
+      "purpose": "finite alternative search after a candidate-dependent primary non-certification",
+      "unresolved": "finite library does not prove continuous-space infeasibility"
+    },
+    {
+      "claim_type": "TERMINAL_CONDITION",
+      "control_authority": "terminal control only if certified",
+      "denominator": "N_fail_closed",
+      "downstream": "S14_COMMIT or S13_FAIL_CLOSED",
+      "entry": "terminal certified or no lawful certified route remains",
+      "fail": "typed fail-close",
+      "id": "L5_TERMINAL_OR_FAIL_CLOSED_EXECUTION",
+      "inputs": "terminal witness or typed failure",
+      "pass": "terminal certificate/commit",
+      "purpose": "execute a terminal action only with certificate, otherwise explicitly fail-close",
+      "unresolved": "fail-close is not a guaranteed safe stop"
+    }
+  ],
+  "status": "FROZEN_ROLE_ARCHITECTURE"
+}

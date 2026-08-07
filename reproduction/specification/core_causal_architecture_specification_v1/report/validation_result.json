@@ -1,0 +1,32 @@
+{
+  "Only_next_task": "WRITE_CORE_V2_CAUSAL_INCREMENT_SPECIFICATION_V1",
+  "architecture_role_layer_count": 6,
+  "candidate_future_options_count": 2,
+  "cohort_addition_count": 0,
+  "contract_ambiguity_count": 4,
+  "controller_mutation_count": 0,
+  "dataset_addition_count": 0,
+  "denominator_metric_count": 13,
+  "failure_type_count": 11,
+  "formal_method_run_count": 0,
+  "formula_check_count": 7,
+  "historical_evidence_remapping_count": 13,
+  "historical_method_mapping_count": 4,
+  "map_mutation_count": 0,
+  "map_training_count": 0,
+  "method_mutation_count": 0,
+  "operational_autonomy_action_count": 5,
+  "protected_blob_count": 17,
+  "pytest_available": false,
+  "pytest_check": "unavailable; stdlib unittest fallback used",
+  "reviewer_case_votes": {
+    "CASE_B": 4
+  },
+  "reviewer_count": 4,
+  "selected_case": "CASE_B",
+  "state_count_in_state_machine": 15,
+  "status": "PASS_CORE_CAUSAL_ARCHITECTURE_SPECIFICATION_VALIDATION",
+  "transition_count": 23,
+  "unresolved_assumption_count": 7,
+  "upstream_pr_count": 7
+}

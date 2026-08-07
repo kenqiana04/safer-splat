@@ -1,0 +1,3 @@
+# Reviewer disagreement analysis
+
+All four independently written role reviews select CASE_B. Their reasoning differs: theory emphasizes the Jacobian; systems emphasizes lawful terminal paths; statistics emphasizes denominators; publication emphasizes claim clarity. Their common conclusion is limited: a future L2 specification is necessary for a future-control safety claim, but it is neither implemented nor validated here. ARCH_A remains a defensible narrower reporting posture if no future-control claim is retained; ARCH_C remains a rejected expansion without evidence of multiple irreparable defects.

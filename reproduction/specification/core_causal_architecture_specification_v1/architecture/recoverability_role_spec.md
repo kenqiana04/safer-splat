@@ -1,0 +1,3 @@
+# Recoverability role specification
+
+Backup/recoverability is a secondary candidate certificate after candidate-dependent future safety has passed. Deterministic braking is a witness generator and a terminal-controller candidate where separately certified; it is not a proof of a policy's universal recoverability. The terminal set is sufficient, not maximal. A backup failure means `NO_WITNESS_FOUND_UNDER_THE_FROZEN_WITNESS_CONTRACT`, not `NO_RECOVERY_EXISTS`. Terminal-already-safe is counted separately from a backup incremental certificate. HCE is a search-acceleration mechanism, not a standalone scientific safety contribution.

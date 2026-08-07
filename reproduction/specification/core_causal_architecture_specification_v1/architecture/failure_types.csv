@@ -1,0 +1,12 @@
+failure_type,current_control_can_repair,next_control_can_repair,enter_start_safe,enter_alternative_search,only_fail_close,evidence_limitation
+F_START_INVALID,NO,possibly after external repair,YES,NO,YES if repair fails,NO
+F_CURRENT_QUERY_UNKNOWN,NO,NO,NO,NO,YES,YES
+F_CURRENT_FEASIBILITY_FAIL,NO,only through Start-Safe repair,YES,NO,YES,NO
+F_IMMEDIATE_UNAVOIDABLE_SEGMENT_FAIL,NO,next cycle only after new state,NO,NO,YES,NO
+F_PRIMARY_FUTURE_SAFETY_FAIL,possibly via another candidate,YES,NO,YES if ALT_ELIGIBLE,YES after exhaustion,NO
+F_PRIMARY_BACKUP_FAIL,possibly via another candidate,YES,NO,YES if ALT_ELIGIBLE,YES after exhaustion,NO
+F_ALTERNATIVE_LIBRARY_EXHAUSTED,NO finite-library conclusion only,unknown,NO,NO,YES,NO
+F_TERMINAL_NOT_CERTIFIED,NO,unknown,NO,NO,YES,NO
+F_RUNTIME_DEADLINE,NO within missed deadline,possibly later,NO,NO,typed fail-close,YES
+F_MAP_REFERENCE_UNRESOLVED,not semantic controller question,not inferred,NO,NO,typed non-evaluable/fail-close,YES
+F_TRACKING_LATENCY_UNMODELED,not inferred,not inferred,NO,NO,typed limitation/fail-close,YES

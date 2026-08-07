@@ -1,0 +1,11 @@
+{
+  "FINAL_DECISION": "FREEZE_CORE_V1_AND_WRITE_CORE_V2_CAUSAL_INCREMENT_SPECIFICATION",
+  "FINAL_STATUS": "PASS_CORE_CAUSAL_ARCHITECTURE_LOCAL_STRUCTURAL_GAP",
+  "Only_next_task": "WRITE_CORE_V2_CAUSAL_INCREMENT_SPECIFICATION_V1",
+  "preferred_future_safety_target": "H1_FIRST_CONTROL_AFFECTED_SEGMENT",
+  "rationale": "B1 is logically coherent as L1, but a retained future-control safety claim requires an absent L2; no evidence requires full pipeline rethink.",
+  "reviewer_case_votes": {
+    "CASE_B": 4
+  },
+  "selected_case": "CASE_B"
+}
