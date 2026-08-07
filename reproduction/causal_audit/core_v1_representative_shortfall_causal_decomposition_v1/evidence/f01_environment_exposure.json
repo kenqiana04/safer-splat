@@ -1,0 +1,45 @@
+{
+  "environments": [
+    {
+      "current_gate_fail_states": 0,
+      "current_h_max": 2.752781445537262,
+      "current_h_min": 0.009682234138138339,
+      "deadline_miss_records": 133,
+      "environment": "E1_REPLICA_GT_FINE",
+      "interpretation_limit": "Reference-complete represented-map behavior only; no on-policy/deployment evidence.",
+      "physical_reference_available": true,
+      "reference_tiers": {
+        "TIER_R3_REFERENCE_COMPLETE": 640
+      },
+      "state_count": 160
+    },
+    {
+      "current_gate_fail_states": 100,
+      "current_h_max": -0.005506062880158424,
+      "current_h_min": -0.010956565849483013,
+      "deadline_miss_records": 400,
+      "environment": "E5_STONEHENGE_SAFER",
+      "interpretation_limit": "Behavior-only source-map evidence; physical reference is NOT_EVALUABLE.",
+      "physical_reference_available": false,
+      "reference_tiers": {
+        "TIER_R1_REPRESENTED_MAP_BEHAVIOR_ONLY": 400
+      },
+      "state_count": 100
+    },
+    {
+      "current_gate_fail_states": 74,
+      "current_h_max": 0.02053230255842209,
+      "current_h_min": -0.011509428732097149,
+      "deadline_miss_records": 400,
+      "environment": "E6_FLIGHT_SAFER",
+      "interpretation_limit": "Behavior-only source-map evidence; physical reference is NOT_EVALUABLE.",
+      "physical_reference_available": false,
+      "reference_tiers": {
+        "TIER_R1_REPRESENTED_MAP_BEHAVIOR_ONLY": 400
+      },
+      "state_count": 100
+    }
+  ],
+  "evidence_class": "E1_REANALYSIS_OF_FROZEN_RECORDS",
+  "factor_id": "F01"
+}

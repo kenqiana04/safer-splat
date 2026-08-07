@@ -1,0 +1,67 @@
+environment,event_rate_percent,required_events,nominal_required_n,observed_state_n,conditional_sample_definition,cluster_adjustment_status
+E1_REPLICA_GT_FINE,0.1,1,1000,160,all representative states,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,0.1,3,3000,160,all representative states,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,0.1,5,5000,160,all representative states,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,0.5,1,200,160,all representative states,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,0.5,3,600,160,all representative states,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,0.5,5,1000,160,all representative states,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,1,1,100,160,all representative states,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,1,3,300,160,all representative states,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,1,5,500,160,all representative states,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,2,1,50,160,all representative states,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,2,3,150,160,all representative states,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,2,5,250,160,all representative states,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,3,1,34,160,all representative states,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,3,3,100,160,all representative states,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,3,5,167,160,all representative states,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,5,1,20,160,all representative states,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,5,3,60,160,all representative states,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,5,5,100,160,all representative states,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,zero_event_upper_bound,segment_increment,160,160,one-sided exact upper at 80/95 percent is stored in power_summary,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,zero_event_upper_bound,backup_increment,160,160,one-sided exact upper at 80/95 percent is stored in power_summary,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,zero_event_upper_bound,directional_increment,160,160,one-sided exact upper at 80/95 percent is stored in power_summary,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E1_REPLICA_GT_FINE,zero_event_upper_bound,any_increment,160,160,one-sided exact upper at 80/95 percent is stored in power_summary,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,0.1,1,1000,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,0.1,3,3000,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,0.1,5,5000,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,0.5,1,200,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,0.5,3,600,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,0.5,5,1000,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,1,1,100,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,1,3,300,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,1,5,500,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,2,1,50,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,2,3,150,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,2,5,250,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,3,1,34,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,3,3,100,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,3,5,167,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,5,1,20,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,5,3,60,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,5,5,100,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,zero_event_upper_bound,segment_increment,100,100,one-sided exact upper at 80/95 percent is stored in power_summary,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,zero_event_upper_bound,backup_increment,100,100,one-sided exact upper at 80/95 percent is stored in power_summary,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,zero_event_upper_bound,directional_increment,100,100,one-sided exact upper at 80/95 percent is stored in power_summary,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E5_STONEHENGE_SAFER,zero_event_upper_bound,any_increment,100,100,one-sided exact upper at 80/95 percent is stored in power_summary,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,0.1,1,1000,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,0.1,3,3000,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,0.1,5,5000,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,0.5,1,200,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,0.5,3,600,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,0.5,5,1000,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,1,1,100,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,1,3,300,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,1,5,500,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,2,1,50,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,2,3,150,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,2,5,250,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,3,1,34,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,3,3,100,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,3,5,167,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,5,1,20,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,5,3,60,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,5,5,100,100,states reaching the specified downstream gate; not the nominal 100,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,zero_event_upper_bound,segment_increment,100,100,one-sided exact upper at 80/95 percent is stored in power_summary,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,zero_event_upper_bound,backup_increment,100,100,one-sided exact upper at 80/95 percent is stored in power_summary,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,zero_event_upper_bound,directional_increment,100,100,one-sided exact upper at 80/95 percent is stored in power_summary,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL
+E6_FLIGHT_SAFER,zero_event_upper_bound,any_increment,100,100,one-sided exact upper at 80/95 percent is stored in power_summary,DATA_BLOCKED_NO_FROZEN_CLUSTER_OR_ICC_MODEL

@@ -1,0 +1,33 @@
+{
+  "evidence_class": "E1_REANALYSIS_OF_FROZEN_RECORDS",
+  "factor_id": "F08",
+  "metrics": {
+    "E1_REPLICA_GT_FINE": {
+      "M1_decision_gain_b3_vs_b0": 0,
+      "M2_certificate_gain_b3_vs_b0": 35,
+      "M3_availability_gain_directional_slots": 160,
+      "M4_leadtime_incremental_segment_or_backup": 0,
+      "M5_backup_margin_observable": 160,
+      "M6_cost_runtime_difference_defined": true,
+      "claim_boundary": "M2 certificate gain is not behavioral gain; M3 availability is not a rescue."
+    },
+    "E5_STONEHENGE_SAFER": {
+      "M1_decision_gain_b3_vs_b0": 0,
+      "M2_certificate_gain_b3_vs_b0": 0,
+      "M3_availability_gain_directional_slots": 100,
+      "M4_leadtime_incremental_segment_or_backup": 0,
+      "M5_backup_margin_observable": 0,
+      "M6_cost_runtime_difference_defined": true,
+      "claim_boundary": "M2 certificate gain is not behavioral gain; M3 availability is not a rescue."
+    },
+    "E6_FLIGHT_SAFER": {
+      "M1_decision_gain_b3_vs_b0": 0,
+      "M2_certificate_gain_b3_vs_b0": 26,
+      "M3_availability_gain_directional_slots": 100,
+      "M4_leadtime_incremental_segment_or_backup": 0,
+      "M5_backup_margin_observable": 26,
+      "M6_cost_runtime_difference_defined": true,
+      "claim_boundary": "M2 certificate gain is not behavioral gain; M3 availability is not a rescue."
+    }
+  }
+}
