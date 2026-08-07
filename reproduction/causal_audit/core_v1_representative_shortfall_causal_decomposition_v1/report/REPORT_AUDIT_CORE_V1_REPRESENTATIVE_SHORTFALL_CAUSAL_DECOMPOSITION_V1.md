@@ -4,7 +4,7 @@
 
 `PASS_MULTIFACTOR_CORE_V1_SHORTFALL_DECOMPOSITION`
 
-**Decision:** `DO_NOT_REOPEN_METHOD_OR_FREEZE_PAPER_UNTIL_ACTIONABLE_FACTORS_ARE_PRIORITIZED`  
+**Decision:** `DO_NOT_REOPEN_METHOD_OR_FREEZE_PAPER_UNTIL_ACTIONABLE_FACTORS_ARE_PRIORITIZED`
 **Unique next task (not started):** `RANK_CORE_V1_ACTIONABLE_FACTORS_AND_SELECT_ONE_BOUNDED_NEXT_STEP_V1`
 
 This is Case D. It preserves the PR #87–#89 formal results and does not describe the 20-pair/Replica or source-map evidence as a new Core V1 result.

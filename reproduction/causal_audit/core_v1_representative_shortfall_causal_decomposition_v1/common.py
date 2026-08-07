@@ -56,4 +56,3 @@ def write_csv(path: Path, rows: Iterable[dict[str, Any]], fieldnames: list[str] 
         writer = csv.DictWriter(handle, fieldnames, lineterminator="\n", extrasaction="ignore")
         writer.writeheader()
         writer.writerows(materialized)
-
