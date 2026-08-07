@@ -1,0 +1,4407 @@
+{
+  "environment": "E6_FLIGHT_SAFER",
+  "state_count": 100,
+  "states": [
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.21159561324347484,
+        -0.2616429264469043,
+        0.022761650282731877
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.16840438675652514,
+        0.2816429264469043,
+        -0.06276165028273188
+      ],
+      "registry_record_sha256": "56168187b7297aa40d555915a38b6d78ad791381704f880e42888cfbd8a759d4",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "01aeadade59622e7afcd1c10e9715e32030cf02026456c4aed3d403c69efd0b8",
+      "trial_id": 26,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.15979659052697456,
+        0.2808209815656918,
+        0.03375962645748001
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.22020340947302547,
+        -0.2608209815656918,
+        -0.0737596264574801
+      ],
+      "registry_record_sha256": "294dd308d41a93376040bca618a68e7d5dc91b09cdfef8a1db438c156e024084",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "06acbdd51434ffeec1da7bb9007aeab82aa77a0b3e8ed604e04307c987ac45ad",
+      "trial_id": 76,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.12575569007368126,
+        0.27481865236816516,
+        0.02140474068892684
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.25424430992631897,
+        -0.2548186523681651,
+        -0.06140474068892668
+      ],
+      "registry_record_sha256": "18a48439542e7db76324e0c7c354431d2e493aef0fc5d306e8f7a228c1e53c90",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "0777bee697e0cc7a147ae5244e26b119fd90ec1854bb36270068ed0a8246e0cb",
+      "trial_id": 78,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.0775755700040876,
+        0.0615709640882117,
+        0.036700049122880204
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.4575755700040876,
+        -0.041570964088211655,
+        -0.07670004912288013
+      ],
+      "registry_record_sha256": "928a496dff695143441669aa1c58c1ce12e40af307c1bd04787c042e234de6ad",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "08337021ba1c3d87414d7f0f7acfcac0e371afc3fbe6a5cb191cdda80fedcd5d",
+      "trial_id": 96,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.4041994683174095,
+        -0.15844832374511503,
+        0.0022997473396196323
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.0241994683174096,
+        0.17844832374511493,
+        -0.04229974733961962
+      ],
+      "registry_record_sha256": "704bd30b5193691c507b5f887fa62611d049df5d361860a2635a7844e2841e33",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "09ef865ed528a671c50c220cb21c300d9a39d74179470423445cafdbdef72da2",
+      "trial_id": 39,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.07376602113050718,
+        0.07843782650684394,
+        0.014023591831766057
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.4537660211305071,
+        -0.05843782650684414,
+        -0.054023591831766235
+      ],
+      "registry_record_sha256": "9037278ac58e22e9bf5d050ac457c0c484f6909c664ea35a90daff6b534717b5",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "0e45383538fdd57d52ada874c7a69b2ebbbffb82a95fb21c48898300a56c1a95",
+      "trial_id": 95,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.05604748168310422,
+        0.1271191135442994,
+        -0.07783052951359652
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.43604748168310425,
+        -0.10711911354429936,
+        0.037830529513596584
+      ],
+      "registry_record_sha256": "0368934369908adece947df9db38e9426527e6866f033dd14672e4be964d59c5",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "109361dab8f9d2e7187eaa6d9b480caa32019d3f888db481c19fe6316dd7f7ed",
+      "trial_id": 92,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.43963955465023896,
+        0.11925357089830223,
+        0.029954191278086257
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.059639554650238985,
+        -0.09925357089830227,
+        -0.06995419127808639
+      ],
+      "registry_record_sha256": "247c7e7a2b3d50f458f6a1c88be44865ad58ac44301ab3d696c6e69fa88835fc",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "11d9fd665d3c71d1b6818c174bc38df1413d28acca5abcbd22d77a09a8fa9898",
+      "trial_id": 56,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.4322076597584667,
+        0.1348667271707193,
+        0.0399320403509805
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.05220765975846667,
+        -0.11486672717071932,
+        -0.07993204035098048
+      ],
+      "registry_record_sha256": "3ab95447dd3518a37951100e25a16e225716ac0a6dfd5e7ad1803753cce304c9",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "12f81f928f7d3103015be971d8f4da05ac17c0078f71afe8efcd4556f0b5c897",
+      "trial_id": 57,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.14268087158576148,
+        -0.2583601126958267,
+        -0.0790884651807325
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.23731912841423855,
+        0.2783601126958267,
+        0.03908846518073247
+      ],
+      "registry_record_sha256": "c4349193d7b5894e7398820db0fb657012af33287632c55091aae9680e35ac87",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "131f912dbb698c5a5c1a7d4b8a3957e861031d3bc1cc486897d29b823078532a",
+      "trial_id": 22,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.42380048010653126,
+        -0.12997708920375325,
+        -0.06656878785750538
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.04380048010653126,
+        0.14997708920375324,
+        0.02656878785750538
+      ],
+      "registry_record_sha256": "00cbc64f8f0e23a6189f23f3bc1255d357edb79b10d9c08533d4f0beae28d0ba",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "161062cebfee5425da5f7df3b7ccabbe6c31fb5f2c6fc7e0086b29c6fbcb2bef",
+      "trial_id": 41,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.3684495500000904,
+        0.21594175901153526,
+        -0.06534497446125548
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.011550449999909757,
+        -0.19594175901153535,
+        0.025344974461255606
+      ],
+      "registry_record_sha256": "e7bec36a29ac0c0abe72a96ea1f0c27862e8d8ff0288efb41fd9786c1afbc78f",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "17e4d81bd69626f3f986d4dcf7074107ecfe54e4f4812a0599cc0668e9fc7bcb",
+      "trial_id": 63,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.14268087158576162,
+        0.2783601126958267,
+        0.039088465180732446
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.2373191284142384,
+        -0.2583601126958267,
+        -0.07908846518073248
+      ],
+      "registry_record_sha256": "799c0126eb22a39f3974a1321f4d4c48d8e06eef2c160b5a37f3be5a477dd28d",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "1852257ab75df5333501077e7249e4eacf9e9f7ddd6a045155491720680ebe7b",
+      "trial_id": 77,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.4612660989011656,
+        0.03590277180038986,
+        -0.06887455712302015
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.0812660989011656,
+        -0.01590277180038977,
+        0.028874557123020037
+      ],
+      "registry_record_sha256": "c2c99706efa3043a50c421b75546e27313e91f58a88248e801c4c57840274a33",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "1c099e1b0ea88dfff3671a2ec0cf87b7521c147b2d4ff830884083bd8868ad06",
+      "trial_id": 51,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.09274850461621523,
+        0.2645552919222417,
+        -0.049171804166028094
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.287251495383785,
+        -0.24455529192224162,
+        0.00917180416602792
+      ],
+      "registry_record_sha256": "b96c46795ee888fd15b3f3288ae0b98f6b25ea0dc309caf213b756fbba898bf7",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "235fea86defd92cc44d77db4afa37c47fbf190442e8c91dba356302e61a9a3ef",
+      "trial_id": 80,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.2626141142305346,
+        -0.25264698820758424,
+        0.005787694725350349
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.11738588576946545,
+        0.27264698820758426,
+        -0.04578769472535034
+      ],
+      "registry_record_sha256": "d06802ec9917f330da5ffeefca8d2e7af3498f23fcef1b19e898bf570d4c286e",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "23f0dac8d0c4419fabe72fe8bd16a78578dff11bd3fc7ea902d150d8bc559180",
+      "trial_id": 29,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.22878079342947027,
+        0.27972634291255416,
+        -0.07938928651285593
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.15121920657052978,
+        -0.25972634291255414,
+        0.03938928651285595
+      ],
+      "registry_record_sha256": "57be5cc3773cf2a9892fa97994bb1816dfbcb0154e55619c2fd9a50bfe6508ce",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "25bdd19e0bcad2d8602beb00eaed98987a680ee9680a7684954bbb94d30373dd",
+      "trial_id": 72,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.1943234751449851,
+        0.282465699791131,
+        -0.029480083758400603
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.18567652485501493,
+        -0.262465699791131,
+        -0.010519916241599196
+      ],
+      "registry_record_sha256": "fe25e34a57707cff2049e7262ae30f32c08e1a426676286b80da8984f1b4ef2e",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "2859245f10dc9a36f488006d6b3a9f0b086e8c3d8387a1291b31397398426d48",
+      "trial_id": 74,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.4558046169262734,
+        -0.050034620184332405,
+        0.027745710431849983
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.07580461692627344,
+        0.07003462018433237,
+        -0.06774571043184986
+      ],
+      "registry_record_sha256": "671d258d86a657394a8469b81d4265f87a0da1a9c22ddf7c0b3b94946975680b",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "2a6e0b58bfe92ad72daf3c714eef9573f9da560f21916207dede755ccdd781e6",
+      "trial_id": 46,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.32624999999999993,
+        0.2459919225312596,
+        0.03196152422706665
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.0537500000000001,
+        -0.22599192253125958,
+        -0.07196152422706656
+      ],
+      "registry_record_sha256": "17677a4afa928fe9b09d0f04dfc3726c295c2163fb3ed5393b2f6f006f03208d",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "2b0b590ab4adecd3318c841a72cd7f65cefb5a9388dacb2ad78b599d5ad3e2ff",
+      "trial_id": 66,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.08030768649639175,
+        -0.02449644359884664,
+        -0.07729413448664442
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.46030768649639175,
+        0.04449644359884668,
+        0.037294134486644426
+      ],
+      "registry_record_sha256": "ea798ca78e31bcb74f37aa85af0294b44cf8ca80ad07acedb86719555b4ce309",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "3455bbc3de6510b87c536116f7264c760e699e5e7ce30b25bc08aed275d77d30",
+      "trial_id": 2,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.4041994683174096,
+        0.17844832374511493,
+        -0.04229974733961988
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.024199468317409573,
+        -0.15844832374511494,
+        0.002299747339619688
+      ],
+      "registry_record_sha256": "bfa8a52135e72e65336c032e4995544eea1a83247cb0d7dde6cc966b806d646c",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "350fa0cf87caea055258036d0f7ddb4c1fe3813b48d059607c7b1a600355b24b",
+      "trial_id": 60,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.09274850461621488,
+        -0.24455529192224157,
+        0.009171804166028145
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.2872514953837851,
+        0.2645552919222416,
+        -0.049171804166028135
+      ],
+      "registry_record_sha256": "34343979a2afeb570de51c58070a6ea0add44f6c0a8d0894f67b46491c25969b",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "3952d8b454065b493247d60f9b31d53cd21213152da7436fcdd0520f705986b8",
+      "trial_id": 19,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.10908919772304489,
+        0.2702108607935101,
+        -0.012404452785575372
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.2709108022769549,
+        -0.2502108607935101,
+        -0.027595547214424834
+      ],
+      "registry_record_sha256": "21b8495a1fe84d7888e937e10022fdad551d6dfaa567f6c836dbffcb19c79883",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "3fa1332cd6bade6068e94c00bff40ec3bd39930948ec4111e225cc4718f28f93",
+      "trial_id": 79,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.41445186843962945,
+        0.16452381290260507,
+        -0.004931120769135005
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.03445186843962944,
+        -0.144523812902605,
+        -0.03506887923086478
+      ],
+      "registry_record_sha256": "776a6efdd8e235f3b2d15073bfa4d6e620a67a5ab6542123e143798fd4fd64c6",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "41a1bd2b4546d99fc1a1a82eb134d29ef3b21ef28fe735d5a248c88397d5de4b",
+      "trial_id": 59,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.08250000000000002,
+        0.0100000000000001,
+        -0.02000000000000006
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.4625,
+        0.009999999999999934,
+        -0.020000000000000146
+      ],
+      "registry_record_sha256": "ff23fb5d4966d6abe3f51e0c1b4319f641dab9bf0762ca42acbf91ca3e53dd12",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "45ab4d11c93de51478bccccd88df14b4b634e960d5333e430fcf6852e61ad46e",
+      "trial_id": 99,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.3110081519350735,
+        0.25415830349438906,
+        0.03963030786767521
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.06899184806492659,
+        -0.23415830349438907,
+        -0.07963030786767523
+      ],
+      "registry_record_sha256": "64c3736bfca87eda078b9b0fde938479657dfd5a65ec31608c8e4da56917f6e8",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "463da07e21ef7084dc4580afc86de4cad9c8e877d74080463755376a9bef9179",
+      "trial_id": 67,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.04812395525151639,
+        0.1424886105873778,
+        -0.07604887161590652
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.42812395525151636,
+        -0.12248861058737777,
+        0.03604887161590645
+      ],
+      "registry_record_sha256": "e05bdb00e8eeb4840fe06eb687aa255d870a11cb0b930668adfe0dbd6e8bcf98",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "46f64b570c94c97a8d74ff2ad0851b8a191b7618fffeffdd5023153e4339e6b9",
+      "trial_id": 91,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.06130613212444383,
+        -0.23019604153946605,
+        0.038728146772886704
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.31869386787555604,
+        0.2501960415394661,
+        -0.07872814677288671
+      ],
+      "registry_record_sha256": "630f434438977e6df2c6267a77f326f42bb6f857e3482e35e174407b74ae732e",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "4cb58df0c263f046cf8998c98a64aeb9ad0ba4f16fef56e76224c59e891decf6",
+      "trial_id": 17,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.41445186843962933,
+        -0.1445238129026052,
+        -0.03506887923086463
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.03445186843962941,
+        0.16452381290260507,
+        -0.00493112076913536
+      ],
+      "registry_record_sha256": "7ec5c5de2e4774ecd8281aca491144705757956472afd463c08917e5655da8d7",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "541ec35e349f0ad2d640c7637f313b5af93ae02d082787adabb882bbca8762e9",
+      "trial_id": 40,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.3550286397450143,
+        -0.20684510154465166,
+        -0.006781368032807409
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.02497136025498578,
+        0.22684510154465173,
+        -0.0332186319671926
+      ],
+      "registry_record_sha256": "b5640c3834cf986e99b1a80d5d3c81b9a3b7808f8ff0c2c75f07d418d10b5f2a",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "54904dafb1f3a67cc66c5fa8f061c7cc3a64818c1e25cafb42245b19429adca3",
+      "trial_id": 35,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.39308456253664315,
+        -0.1716945526406895,
+        0.030983525796970886
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.013084562536643168,
+        0.1916945526406895,
+        -0.07098352579697088
+      ],
+      "registry_record_sha256": "5cade54d8acf8b3352c1b049e895af4dc9110352ba426f1df26e281908f3df64",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "5645d90fb9888c047509157d4d7a81c7b95fb1d55cb051e063927ca84a3a1f13",
+      "trial_id": 38,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.1770339279380301,
+        -0.2621913499273697,
+        -0.04749359130364461
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.20296607206196976,
+        0.2821913499273697,
+        0.00749359130364461
+      ],
+      "registry_record_sha256": "932416d9995fee28bc7345a153f142b5c80f90f7c100fba2a658aa378aadc808",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "58b7b3f3e38aa197e96b25c9b838a1ca39d6547ad9cf82bba83d46335b5ff975",
+      "trial_id": 24,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.03193449214184846,
+        -0.21197194693371646,
+        -0.014296637401749038
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.3480655078581515,
+        0.2319719469337165,
+        -0.02570336259825097
+      ],
+      "registry_record_sha256": "c91b78c65fee7f6853199a4171fe516fb847bb094038d65e654abba9bccb6e15",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "5ad11e1d505cd616fc0a26370e18e2a1ed7065d00f6d25976b3ea6aac8e98dd8",
+      "trial_id": 15,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.4612660989011656,
+        -0.01590277180038975,
+        0.028874557123020003
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.0812660989011656,
+        0.03590277180038971,
+        -0.06887455712302012
+      ],
+      "registry_record_sha256": "63f39469adab473167fb894f47f7a278749e4f8f758e69bea3457e7233739de7",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "5cfedae645f34c91766b920776ca0c1161ca03245bcb6e36470e2cb6357ac60c",
+      "trial_id": 48,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.06889437958440758,
+        0.09502911395283799,
+        -0.021903676009883934
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.44889437958440764,
+        -0.07502911395283773,
+        -0.018096323990115862
+      ],
+      "registry_record_sha256": "fedb49f4378dd92c9409c79bdfcf062af20b1ac434823681430d03285c35afc0",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "5fb7ba160b8c5d8bb64ea3afde8a74137b1e39b35221466d582b51e2bfe19a99",
+      "trial_id": 94,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.07679940895698596,
+        -0.2378747187341063,
+        0.0345779197212711
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.30320059104301406,
+        0.2578747187341063,
+        -0.0745779197212711
+      ],
+      "registry_record_sha256": "fc942e341054bafea8507d8335a04496c9aa2c03dbb42f0b74cb3b1359e3738f",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "5fd23181c460874e718610fb5299a5e0b267fa2e07bae8e2b1dabc9adadea0a2",
+      "trial_id": 18,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.08195136933858854,
+        0.02728301810641387,
+        0.015574475743278093
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.46195136933858855,
+        -0.007283018106413833,
+        -0.05557447574327826
+      ],
+      "registry_record_sha256": "05cb5a18e2dcd61158cdba00ecd352faf9130f83d260a9f1eaec231f47892823",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "62af2a6f4be5381ebfe775e0b3f3dade5cc3bff17dcb97ffa9a0552425514128",
+      "trial_id": 98,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.018747110749921525,
+        -0.16515962363958195,
+        -0.0585672565811923
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.39874711074992153,
+        0.18515962363958197,
+        0.018567256581192352
+      ],
+      "registry_record_sha256": "002b94ccc6baaf4761f082da27cdc2502301594f0c05ad7a827284bc40fb3ff1",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "6422b0dd0f9d75a0f58a5a6655baff1db664418c72ad423321e0d507c30c8c7b",
+      "trial_id": 11,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.08195136933858854,
+        -0.00728301810641385,
+        -0.05557447574327842
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.46195136933858855,
+        0.02728301810641383,
+        0.015574475743278426
+      ],
+      "registry_record_sha256": "748591a648f0dacdcfd3fe2593db959fbab9be075ba31b6450036c9174477b16",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "64238f78882950a8ddc88aab802c705e1cf72e4c9f81dbfd85eb0577f8149bf1",
+      "trial_id": 1,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.05604748168310428,
+        -0.10711911354429927,
+        0.03783052951359653
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.43604748168310425,
+        0.12711911354429928,
+        -0.07783052951359652
+      ],
+      "registry_record_sha256": "5429dd6d0af494ab41b731b525cadb33b8d90498cb5c99418831f385e58c73df",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "6509a7a427df36186a756703339051dc2ebb2cb382b8337382dcdd9f45e6a0f6",
+      "trial_id": 7,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.24580981704776456,
+        -0.2567236665935272,
+        0.03288720180685488
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.13419018295223553,
+        0.27672366659352726,
+        -0.07288720180685487
+      ],
+      "registry_record_sha256": "cd8e4734ae59f6d29b2a0796bba0f4991bf61475bb2f87fbed0cfd54e4bc5aef",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "65b0a830bdb9f25cfc55b4eac47a96f4943103b18f4fbe395f7c3401c6c60522",
+      "trial_id": 28,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.22878079342947014,
+        -0.2597263429125542,
+        0.03938928651285596
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.15121920657052978,
+        0.27972634291255416,
+        -0.07938928651285597
+      ],
+      "registry_record_sha256": "0b5d5b5f741cd24417a8f1bc02e4443156ccf00f15cc9bcc54f8d08a6c54abc0",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "67ee79245098e81cbe45f65923302b855285dc8cee864d18b762061bed98610c",
+      "trial_id": 27,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.2952790467513775,
+        -0.24134154514349848,
+        -0.06407550251945206
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.08472095324862243,
+        0.26134154514349844,
+        0.02407550251945206
+      ],
+      "registry_record_sha256": "3ddfbbdc362609244f83eaca4896e3fdb30638165aa549b44b1fdf10a1316924",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "688c99491da3a1461595120631679c95973e4f90389253553b0f78894b59c226",
+      "trial_id": 31,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.3409432174035152,
+        0.23687528538797517,
+        0.004055832124396981
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.039056782596484874,
+        -0.21687528538797518,
+        -0.044055832124396795
+      ],
+      "registry_record_sha256": "2b699458c8aeac50b0356e7db4a200d38e8bae394c910397a59e7287d9e1520e",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "698da0408366b11e7cc5a70f23aa65c8ec34f01a9d7637f2cf6326cb0658d62d",
+      "trial_id": 65,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.45146183530995054,
+        -0.06677212173928962,
+        -0.003096046589514196
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.07146183530995054,
+        0.08677212173928958,
+        -0.03690395341048581
+      ],
+      "registry_record_sha256": "1572afbdeee9356fdb7697d2b04224b65ecb24accad00edc5adfd32165724bc5",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "6aab37f77f5f9c33e9be0694d6ddb422aaf8471bb30ecfe7bac48a72a83de22f",
+      "trial_id": 45,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.04812395525151644,
+        -0.12248861058737769,
+        0.03604887161590642
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.4281239552515164,
+        0.14248861058737775,
+        -0.0760488716159064
+      ],
+      "registry_record_sha256": "cbdcc72e594aec17d91b64f36ac5544acde613b077e33c5e3130a624bc0d6d78",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "6e3b5dd3ae665ccd91637029d4631009a11342e65ea9dc588767b0adfd1227fc",
+      "trial_id": 8,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.07679940895698587,
+        0.2578747187341062,
+        -0.0745779197212713
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.30320059104301417,
+        -0.23787471873410623,
+        0.03457791972127121
+      ],
+      "registry_record_sha256": "72448acb1ea5b7cf6a2ee42d1468c9e44958ad126f906e260ef2d0ddd67499ba",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "6e7e0278297312e9b1d0529ecf17dce43d5d2571e830c97c5d25db5d81eaa7fd",
+      "trial_id": 81,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.0319344921418486,
+        0.23197194693371656,
+        -0.0257033625982507
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.3480655078581515,
+        -0.21197194693371652,
+        -0.014296637401749097
+      ],
+      "registry_record_sha256": "a10e2b3d4f6cd36f980a419c02e2338f0149aad2970e757e35fb47854f5541cb",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "751777678f00f37cb2c1b6b566278d1b3bb2c06b0cc2607db25f9d184af86ae9",
+      "trial_id": 84,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.43220765975846664,
+        -0.11486672717071941,
+        -0.07993204035098048
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.05220765975846664,
+        0.13486672717071937,
+        0.03993204035098047
+      ],
+      "registry_record_sha256": "310e6705b5751bd2ed860e71782f42eef26a753f585d48454a683de35503c190",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "7668223bf8a6fbf98a2137cc5d372e8662e43d69b07793a3367ce5ef02e3d237",
+      "trial_id": 42,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.06298026174687993,
+        0.11127801916743899,
+        -0.057089539173235934
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.4429802617468798,
+        -0.09127801916743919,
+        0.017089539173236096
+      ],
+      "registry_record_sha256": "2cbcb923453f014af4a41e77ae4cb62ef05d0cae72168605fabca94f756199b6",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "797ceb3e21e3e52071d0cc03b2aa2a08c7d7b961d6369a87975de8ce8f711d49",
+      "trial_id": 93,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.01874711074992161,
+        0.1851596236395819,
+        0.018567256581192595
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.3987471107499215,
+        -0.16515962363958203,
+        -0.058567256581192426
+      ],
+      "registry_record_sha256": "91ef6afe49db7fae146619b23779fc68547508025c33e98daf5830881c4555b1",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "7b72fab67566a6c991c62e0a13d9e989f3657c1b30bdad3379b42f5cfb6ef108",
+      "trial_id": 88,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.39308456253664326,
+        0.19169455264068944,
+        -0.0709835257969708
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.013084562536643196,
+        -0.17169455264068945,
+        0.030983525796970692
+      ],
+      "registry_record_sha256": "2deed04748534f5808b2f7726ac4f3ba7d13a3c8d39334f22d8c00d5a683ca1d",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "7c5398f4db1c487dab72eb609ffbdfcf76b74999c13739437a0769b2d35a4e8b",
+      "trial_id": 61,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.32625000000000004,
+        -0.22599192253125952,
+        -0.0719615242270662
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.05374999999999994,
+        0.24599192253125954,
+        0.031961524227066204
+      ],
+      "registry_record_sha256": "00414d28032ad601f1e18e1762a11baa992c18ffcfe3f19997c62eb407461a3a",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "803756b879fb83744b28ed5e6e452069a28c939e376d11ab6037b8175f84d119",
+      "trial_id": 33,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.4460662391641601,
+        0.10320048905624456,
+        0.0005212085995404195
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.06606623916416005,
+        -0.08320048905624472,
+        -0.040521208599540226
+      ],
+      "registry_record_sha256": "efae1c6d9de4e743836202b4c86c0f91e6424e852e2326ad8b4005df0792b45c",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "83cdb26b5370d0fcf994402dfd09b252d71c6e23c5beddcae1c03485ecee87a5",
+      "trial_id": 55,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.06130613212444394,
+        0.2501960415394661,
+        -0.0787281467728867
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.3186938678755561,
+        -0.2301960415394661,
+        0.038728146772886746
+      ],
+      "registry_record_sha256": "18fe8c3b245de9bf833c52d652714cb1de5b59be197a8a8bb2e97831bd2f40f0",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "83efa63cb6d1af6b26b41c453cda37749d047dec2f6ed06d795a9cf98ad2a1be",
+      "trial_id": 82,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.007217525383631684,
+        -0.1780465306288755,
+        -0.0783086940994125
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.38721752538363163,
+        0.19804653062887556,
+        0.038308694099412496
+      ],
+      "registry_record_sha256": "bc5b5ad624e5de67eb72bdc5e4aa5e20ff65d8f31f16d1cbc80a3649504dd67e",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "8ad08340c293040823b9137b2f05229ad3aee1cc7ad148d08323b9a6382c0891",
+      "trial_id": 12,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.3811519068999726,
+        -0.18420916170074011,
+        0.03981128655711655
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.0011519068999725768,
+        0.2042091617007401,
+        -0.07981128655711654
+      ],
+      "registry_record_sha256": "3add26e0966ba8dbd9e984b9bd373f389f6955ff5903e77378424b880500372e",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "8c196d5b3a3e63e9483c52542ec2161079726061780d437a380f0499c72ff62a",
+      "trial_id": 37,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.15979659052697445,
+        -0.2608209815656918,
+        -0.07375962645748017
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.22020340947302552,
+        0.2808209815656918,
+        0.03375962645748018
+      ],
+      "registry_record_sha256": "2adbccd2b7736f942628132fc0044561a57d0eaef4264ba80b58ee972ea34b2a",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "8c3af14989ff05726bc7577f8b54575d168e8284ad99ee8830821d7146298384",
+      "trial_id": 23,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.3110081519350733,
+        -0.2341583034943891,
+        -0.07963030786767523
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.06899184806492654,
+        0.25415830349438906,
+        0.03963030786767524
+      ],
+      "registry_record_sha256": "588f48bc57b91b0abe34c6ca925d140016524e516547c4ba5411cb6533b7c525",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "9033477337fa1843670bbf7ba0376194a9e375446cd989db75ae39a842940e70",
+      "trial_id": 32,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.007217525383631435,
+        0.19804653062887576,
+        0.038308694099412496
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.38721752538363163,
+        -0.17804653062887554,
+        -0.07830869409941253
+      ],
+      "registry_record_sha256": "d13e5acd4b4ebb44ca8464ed68e78a9b0c30c6e7624a35ad04b2393e4bd09ec7",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "9081b76c9e23ab74a973950eb3e79f20158e07fc1845dcfce795381264850155",
+      "trial_id": 87,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.07376602113050712,
+        -0.05843782650684403,
+        -0.05402359183176628
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.4537660211305071,
+        0.07843782650684408,
+        0.014023591831766252
+      ],
+      "registry_record_sha256": "8d20b4abfdb910f2661aac1fd1bbf96803d62b390b9546652ebe51a528ee6faf",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "99be7c6fba87b9d1807821cb550f57937324338ce6ba53f250d5386b2c709687",
+      "trial_id": 4,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.46236280779941796,
+        0.0013541381217765294,
+        -0.001277993258090665
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.08236280779941796,
+        0.018645861878223438,
+        -0.03872200674190913
+      ],
+      "registry_record_sha256": "7dbf3f46a7d8bd71e890d0c215bb15e2222c608edd07c06a7f46543d2e275960",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "9dcfe25ff9448359939c88bdc62d5e9e47ba284d5864390b0b69a09cfdecb408",
+      "trial_id": 49,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.17703392793803024,
+        0.2821913499273697,
+        0.007493591303644659
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.20296607206196982,
+        -0.2621913499273697,
+        -0.04749359130364447
+      ],
+      "registry_record_sha256": "4c05dee74e0455d19b8af4dac9f68516886440a0910fa9a32eec40c4dfe11688",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "9fdde340d5e6327f85186fd37d99046cc345bebac016348a8f70e560dcf28687",
+      "trial_id": 75,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.3684495500000903,
+        -0.19594175901153535,
+        0.02534497446125551
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.01155044999990984,
+        0.2159417590115354,
+        -0.0653449744612555
+      ],
+      "registry_record_sha256": "33afc79eb2932b939821983bfc8f93e7b3660683e7e41de1bcd1d3c2bf36d6ed",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "a00fd35101770a16fd6ecb2db460784048f4918104b4b6b3b353bd70fc7ae2d6",
+      "trial_id": 36,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.2952790467513776,
+        0.26134154514349844,
+        0.024075502519452018
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.08472095324862243,
+        -0.24134154514349843,
+        -0.06407550251945215
+      ],
+      "registry_record_sha256": "ea2a9a669565f815e9b81d13ebf934d8face4eb0ea0ba88c5ed7e2b543a43374",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "a2eaf635ad381e9c86d2edf28198c64c39cdde3d12d61b51fc09d905149dbd23",
+      "trial_id": 68,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.2626141142305345,
+        0.27264698820758426,
+        -0.045787694725350395
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.11738588576946556,
+        -0.25264698820758424,
+        0.005787694725350595
+      ],
+      "registry_record_sha256": "7b81b9629a8f3af7bb4bf4c27b609d083dc89e3cda8042e342151fd5f6a8da3c",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "a8fb2715c2731d8dac62059c5a320245c8f23b6414be17377073faecb69fd29b",
+      "trial_id": 70,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.46236280779941796,
+        0.018645861878223577,
+        -0.03872200674190959
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.08236280779941796,
+        0.0013541381217765085,
+        -0.001277993258090606
+      ],
+      "registry_record_sha256": "768a43d23bc2e684d42836277435fdd96ef1cc1c54dee3f9e5aaddc03c0fdc5b",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "ae3a4d6e2df62912cde3a53e61cec736ebd65d2b4dbcf300914587a20c3daeda",
+      "trial_id": 50,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.10908919772304498,
+        -0.2502108607935101,
+        -0.027595547214424893
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.2709108022769549,
+        0.27021086079351014,
+        -0.012404452785575101
+      ],
+      "registry_record_sha256": "b5b698c4b6df41ebbb55b5c68b641d7bdd8b6c73a0868a88cd7d1d69b9d468ba",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "b3127e019d7c55c8b6bd9f34a44a01bfd69f9237d668cd6b7ef9a0905b832630",
+      "trial_id": 20,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.2791260200039974,
+        -0.2475127230997472,
+        -0.03135507466162463
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.10087397999600259,
+        0.26751272309974716,
+        -0.008644925338375369
+      ],
+      "registry_record_sha256": "dc59e8f3d25836733894c3377ae81f9b238523629d01a9046f8600193ac50a52",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "b73965378c6b7997e6645a549cc6e721e998e8a28215e9b0dbfc8d140aaa132c",
+      "trial_id": 30,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.04633106007613813,
+        0.24155017966124273,
+        -0.060006140030977664
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.33366893992386193,
+        -0.22155017966124269,
+        0.020006140030977507
+      ],
+      "registry_record_sha256": "a1613ddaf73544bc78b82a60bc7fc37e32db00084799b5dd7fba93c6b88ace4f",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "bb08cc0e11d4c32c819d935ad761eeb87ee0742c28bc41331d9507a47942230c",
+      "trial_id": 83,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.4396395546502391,
+        -0.09925357089830214,
+        -0.06995419127808623
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.059639554650238985,
+        0.11925357089830221,
+        0.029954191278086222
+      ],
+      "registry_record_sha256": "3bd90f40dc53bfca4e38e9fb662a6e9deab292299adab9bb2e0d933ee4bf133e",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "bb299e9da5fce0aabf409da31ea1c36c2140feee439c85df535e84306ef8eaf1",
+      "trial_id": 43,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.12575569007368115,
+        -0.25481865236816514,
+        -0.06140474068892672
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.25424430992631897,
+        0.2748186523681651,
+        0.02140474068892673
+      ],
+      "registry_record_sha256": "97b31d39350994304e456c11266442bc759a8034d7de7ba510b8fe763f30e1fd",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "bc558ea37005c8e50769580ad9c083cb5ff7fae8144a37478f765aa643b1314a",
+      "trial_id": 21,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.4238004801065312,
+        0.14997708920375336,
+        0.026568787857505338
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.04380048010653123,
+        -0.12997708920375325,
+        -0.06656878785750547
+      ],
+      "registry_record_sha256": "5547d6cdffbd225424ae3bdd0fc579f4af86ee7cfd7487b38126988b7c7a0935",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "be41268cdcb6bcd2d3c77003c46b178d361eb2c2e805262238217aa75cfed77e",
+      "trial_id": 58,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.3550286397450142,
+        0.22684510154465176,
+        -0.03321863196719275
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.024971360254985836,
+        -0.20684510154465174,
+        -0.006781368032807466
+      ],
+      "registry_record_sha256": "a3eda9e55fb4ce97eb5ec84baceb8a9bc246e18c30a7a44d975b33f0e366fb66",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "be88e6d34f75a826818a36de44ca2f099ccb0739f77575c515e8bd372344299a",
+      "trial_id": 64,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.21159561324347498,
+        0.2816429264469043,
+        -0.06276165028273184
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.16840438675652505,
+        -0.2616429264469043,
+        0.02276165028273199
+      ],
+      "registry_record_sha256": "4cc308173aea35c885057bdede90b4502bacfa699332581ae2715897eb79ab6a",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "c16bfbe29d69a18fa2272caa0d3a97e7611fb980b404a121be98341597248b48",
+      "trial_id": 73,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.005106185350681275,
+        0.21017624060917767,
+        0.035341257646275034
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.3748938146493186,
+        -0.19017624060917776,
+        -0.07534125764627496
+      ],
+      "registry_record_sha256": "9d002e4b5119ba46c289a0f03c1ca22652e660348c3da1a09df33081bd94eca5",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "c2b6ddb3862e53b35356083dd700b0b63397d9bc2a1eb0210b441bee9befff73",
+      "trial_id": 86,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.45907709716431744,
+        0.05305538040273786,
+        -0.0799924476604325
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.07907709716431743,
+        -0.0330553804027379,
+        0.0399924476604325
+      ],
+      "registry_record_sha256": "0767c95c26064ffab533a8013e615d5fec490bdd38e29b5c0da1429d1fd0d9b7",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "c643cdbfb61ceaec9270c516f222d34e01dd0dadbc7ea6503b97399cd197d7e1",
+      "trial_id": 52,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.08250000000000002,
+        0.010000000000000033,
+        -0.019999999999999993
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.4625,
+        0.01,
+        -0.02
+      ],
+      "registry_record_sha256": "0db26f7ecda3d42da8987b1ffd1bf84a8fa87f93729113def8c0fb43f33aaa79",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "c6929bc5b321c552e1f24c8586998af12a05de77784462ce961c00d703e0e092",
+      "trial_id": 0,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.3811519068999727,
+        0.20420916170074005,
+        -0.07981128655711651
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.001151906899972549,
+        -0.18420916170074014,
+        0.03981128655711652
+      ],
+      "registry_record_sha256": "1bc827ec85abf32095afb177b3482258cfb46e351bca3f8d2ef40e5fd3f7ec7c",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "c6fae842861556dc1fb52d0305043d0b82ac3be2c863fe8eb196b4b8f7753923",
+      "trial_id": 62,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.02943614517721352,
+        -0.1515674106673895,
+        -0.023805435179393833
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.4094361451772135,
+        0.17156741066738954,
+        -0.016194564820606158
+      ],
+      "registry_record_sha256": "f36d296563a2ea8501a123332ba0be8e9d295e5cdaba7d7ed2a1524e23386743",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "c71a3527d2d4a6e6e3d1a7ba856df6c1f1bec7d410daf54614818ab58a8e2171",
+      "trial_id": 10,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.04633106007613799,
+        -0.22155017966124263,
+        0.020006140030977466
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.33366893992386193,
+        0.2415501796612427,
+        -0.06000614003097747
+      ],
+      "registry_record_sha256": "78df30fb5e056db031789ea229e8a6d750f1f2c1438c7598630f40c5bffed3e9",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "c7ef8c2e7a399723696be56aa43ba0f632878756eaf236429d217f7a8aa4fcf9",
+      "trial_id": 16,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.03924158769649688,
+        -0.13732462275665033,
+        0.012438449047335851
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.4192415876964969,
+        0.15732462275665035,
+        -0.05243844904733584
+      ],
+      "registry_record_sha256": "d03aaa2f16d22276036f29f47f3d76ecb27b853b9284e4a778ceda13be4b4e8e",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "c7f1c4138bbd74b51d2d3b66f2cad154c38f62eba3c255652aa73cd51ee919f3",
+      "trial_id": 9,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.08030768649639175,
+        0.04449644359884665,
+        0.037294134486644454
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.46030768649639175,
+        -0.024496443598846618,
+        -0.07729413448664439
+      ],
+      "registry_record_sha256": "585a35f5a0c09d17862b6549c465f56205787d52fbfc1e4fd1215beb4b4e454b",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "c90e98e33ec2f1a56e33a6b81f39474a67600b0a0f4dec10807eb726e271336d",
+      "trial_id": 97,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.24580981704776445,
+        0.27672366659352726,
+        -0.0728872018068548
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.13419018295223556,
+        -0.25672366659352724,
+        0.03288720180685491
+      ],
+      "registry_record_sha256": "3b7114af6e7d09c9ef249c60aafc5cc87a1f200e30c020a31866033a75c68026",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "cafe714d080d4a38adaea4daaf6482755aaf6b7597026ec673f489a013143ec1",
+      "trial_id": 71,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.2791260200039975,
+        0.26751272309974716,
+        -0.008644925338375008
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.10087397999600253,
+        -0.24751272309974715,
+        -0.03135507466162478
+      ],
+      "registry_record_sha256": "ed5d8bd2f2062713a7c801ab5c6cdaa90ccb44ea08ff2815a59e12ad8ff37f0f",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "d0459487580384d8de3f685351298d3ea1e177a5e57dd80b999e9420fe2995a4",
+      "trial_id": 69,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.06298026174687982,
+        -0.09127801916743922,
+        0.01708953917323631
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.4429802617468798,
+        0.11127801916743926,
+        -0.05708953917323631
+      ],
+      "registry_record_sha256": "22e01ce1ec186acc75d7a9bb48bbdd12b328d32a99251aa87012f2a2d67c492e",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "d154a9e708bcecc38d084abeb8f2d965f05a089854ce9184464610354682d52f",
+      "trial_id": 6,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.340943217403515,
+        -0.2168752853879752,
+        -0.04405583212439694
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.03905678259648496,
+        0.23687528538797523,
+        0.004055832124396929
+      ],
+      "registry_record_sha256": "09b0b83e74ecdd3a88d3391befc58736d945b8b4a0641281f8fc9b7cb6d23804",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "d400e0e39986a5dee174d75e6462e0f482212dcf149ab014781361a8e834ddd8",
+      "trial_id": 34,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.018174398219467647,
+        -0.20149991151950378,
+        -0.05082064349440435
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.36182560178053236,
+        0.22149991151950377,
+        0.010820643494404345
+      ],
+      "registry_record_sha256": "0f0afee97ded85e3ebd0c6536354fd171772ffedca277639fa7626088f227c29",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "d7f191f71923e65603e32f78c484b80994e640d722ac7f7301e44874c8fbd995",
+      "trial_id": 14,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.02943614517721352,
+        0.1715674106673895,
+        -0.016194564820606324
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.4094361451772135,
+        -0.15156741066738946,
+        -0.02380543517939388
+      ],
+      "registry_record_sha256": "7c7c9959f6325b3e6c5d8c7382408e735dd5e1472176c13f54fd8d0960f1f859",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "d98fe32fca09915bc391f108a9f36969b59b43fb12f749abde991d20b064c093",
+      "trial_id": 89,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.1943234751449852,
+        -0.262465699791131,
+        -0.010519916241598927
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.18567652485501482,
+        0.282465699791131,
+        -0.029480083758401082
+      ],
+      "registry_record_sha256": "35db5cb23ec8e21586c97217ab9f57c3729545f098d9b17a7e1e1b4bf8a502a4",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "e113f9cef791b38ba00a95660451012d8343d95c7f146f48282fbe86ed51c122",
+      "trial_id": 25,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.44606623916416005,
+        -0.0832004890562447,
+        -0.04052120859954017
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.06606623916416005,
+        0.10320048905624477,
+        0.0005212085995401627
+      ],
+      "registry_record_sha256": "4e98dc758b16fe6d975fc356ce6fe35ebe9dc993f7bb85deca79a3d9e1f18d62",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "e4b3645dcc182d855ae81955ed338e6426955bca789e5a79238ebd387f47f7dc",
+      "trial_id": 44,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.06889437958440764,
+        -0.07502911395283775,
+        -0.018096323990115962
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.44889437958440764,
+        0.09502911395283774,
+        -0.021903676009884045
+      ],
+      "registry_record_sha256": "718b2845fab3e9fdadcff560e18f022425b4b9a6580b7ee8bcd869a46091d8d8",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "e4ef225a8ce2b26d0e9ede5087fa8d052b050241a70eb637bfb4bce814a824e9",
+      "trial_id": 5,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.005106185350681469,
+        -0.19017624060917782,
+        -0.07534125764627485
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.37489381464931854,
+        0.21017624060917786,
+        0.035341257646274854
+      ],
+      "registry_record_sha256": "5e0e6ca94320f9891fbbaeb2defbec396d2714d2d3eb3c3857008fdf60b3d424",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "e56b063a6a9c54ae9a445d72c31399d1ddb7aee22441086688954bab3e426260",
+      "trial_id": 13,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.01817439821946773,
+        0.22149991151950388,
+        0.010820643494404297
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.36182560178053247,
+        -0.20149991151950367,
+        -0.05082064349440449
+      ],
+      "registry_record_sha256": "d7076d61e9c7b9f194e639c0637e4c3cea86ff924ff1e1828b9324198f2c5ec8",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "ea03a1eb6b6b2d9951fabb4fd3c0db2b5147ad0ab33b0a3d98950c37c04df6e3",
+      "trial_id": 85,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.45580461692627344,
+        0.07003462018433228,
+        -0.06774571043184982
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.07580461692627344,
+        -0.0500346201843323,
+        0.02774571043184994
+      ],
+      "registry_record_sha256": "ad666d1f60d91aca62d1884034376442a21c7db5929dc01e10e8f8468a60ac2f",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "ecaa99224b12c5fc08016d49f5b7e2719f31398f4338aa0149cda4731db377c0",
+      "trial_id": 53,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.45907709716431744,
+        -0.033055380402738,
+        0.0399924476604325
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.07907709716431743,
+        0.05305538040273785,
+        -0.07999244766043251
+      ],
+      "registry_record_sha256": "c49307af266b6f86bbce2d6b0a0a4d8c37edf6dbbdb574bfe967878818165dd5",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 1,
+      "state_id": "f46ad0189cdfbb7064e766e5461127a6f7539421b26162e3393957b4ddc581f4",
+      "trial_id": 47,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        0.4514618353099506,
+        0.08677212173928948,
+        -0.03690395341048596
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        -0.07146183530995054,
+        -0.06677212173928965,
+        -0.003096046589514255
+      ],
+      "registry_record_sha256": "6474fa7c6e02b1a95ebc78f12ff93d7b1c76285768184f31284f2932808e9dff",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 2,
+      "state_id": "f5a9462fa74e9748618733f5768c3c4c816580135645936a83956720b3aaf729",
+      "trial_id": 54,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.03924158769649688,
+        0.15732462275665035,
+        -0.05243844904733572
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.4192415876964969,
+        -0.1373246227566503,
+        0.012438449047335907
+      ],
+      "registry_record_sha256": "23bb5a9450b04e38461b313cc45c538d8f096e7c46ee82dbb576bdd526dc41c6",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 3,
+      "state_id": "f5df966cd7453e1b26b2d57ffe20c7ddff60998098d05325b487e99baf605286",
+      "trial_id": 90,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    },
+    {
+      "bounds_valid": true,
+      "clipping_applied": false,
+      "environment": "E6_FLIGHT_SAFER",
+      "goal_m": [
+        -0.0775755700040876,
+        -0.0415709640882118,
+        -0.07670004912288012
+      ],
+      "map_snapshot_id": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "position_m": [
+        0.4575755700040876,
+        0.06157096408821179,
+        0.03670004912288011
+      ],
+      "registry_record_sha256": "852a1956ec3c25070af49a5cbe35ea3383ed5ebb1754013b222577784bb7da9b",
+      "relative_step_fraction": 0.0,
+      "relative_time_quartile": 0,
+      "selection_activation_read_count": 0,
+      "selection_future_reference_outcome_count": 0,
+      "selection_inputs": [
+        "trial_id",
+        "source_type",
+        "fixed_relative_step_fraction",
+        "spatial_quartile",
+        "velocity_bin",
+        "zero_nonzero",
+        "canonical_tuple_sha256"
+      ],
+      "selection_method_run_count": 0,
+      "selection_progress_read_count": 0,
+      "selection_runtime_input_count": 0,
+      "source_type": "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE",
+      "spatial_quartile": 0,
+      "state_id": "ff0f2c3a968fa9f9ee7a6cbc60e6708a5974024e7efa8d911a24775c3c5ac9d3",
+      "trial_id": 3,
+      "velocity_m_per_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_magnitude_bin": "ZERO",
+      "zero_velocity": true
+    }
+  ],
+  "status": "LOCKED_METHOD_INDEPENDENT_REGISTRY"
+}

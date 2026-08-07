@@ -1,0 +1,133 @@
+{
+  "library_sha256": "3d491876234161d4e881ec1227c505cb07c0af00d5e881c5289fdf1f1577c6fe",
+  "record_count": 14,
+  "records": [
+    {
+      "commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "git_blob": "011df74af180ed336f0771feeb26373d7a2ddf14",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/executable_safety_certifier.py",
+      "pr": 84,
+      "role": "certifier",
+      "sha256": "2fcc0555028d46236db3c4434b713d1c7d9a406da1adb573758996e514e9c1e4",
+      "size": 7515
+    },
+    {
+      "commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "git_blob": "92241373d221958b1ffe343fc97a5fb31a2cdfc1",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/adapters/current_cbf_adapter.py",
+      "pr": 84,
+      "role": "current_full_query",
+      "sha256": "af30f07cfc839c189fb79758575952ba98753915af48e2d8b084cdd8dd9665f1",
+      "size": 1917
+    },
+    {
+      "commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "git_blob": "6807970d4b28aa9c478ca018d7319a4fcef19da2",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/adapters/gaussian_barrier_adapter.py",
+      "pr": 84,
+      "role": "map_adapter",
+      "sha256": "1de0d3a31c8babe7c0bab5f388360d7f024f729cf5d8670dfbef9800f40cf3d1",
+      "size": 7676
+    },
+    {
+      "commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "git_blob": "cd011939dc9cc00e1997dc855c4212810c3be9f1",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/segment_backends/conservative_interval.py",
+      "pr": 84,
+      "role": "segment_backend",
+      "sha256": "a665a194de43ec7c8585d4fd2ebee5dcdedec73e270a1f7b31db685333dfecfd",
+      "size": 3470
+    },
+    {
+      "commit": "d4f20f44a810afc2d6379853a286a3e18b175221",
+      "git_blob": "f3a6f5f0510978aab69545daa30ab3661a95b865",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/methods/method_registry.json",
+      "pr": 86,
+      "role": "method_matrix",
+      "sha256": "9969cc78b977039e74cc09389e8b5092682bea22a591bd2f0fd5955ab5f40fd1",
+      "size": 2039
+    },
+    {
+      "commit": "d4f20f44a810afc2d6379853a286a3e18b175221",
+      "git_blob": "9f065f9ea0d14a4ff0bdccc9affc508954923813",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/alternative_library/directional_library.py",
+      "pr": 86,
+      "role": "six_slot_library",
+      "sha256": "6ed9d209e31167ded426a0007d99ea4f09c2f5a63a58840d189b1536c9c11e17",
+      "size": 6510
+    },
+    {
+      "commit": "d4f20f44a810afc2d6379853a286a3e18b175221",
+      "git_blob": "c00a186e3cd43aa75a203ebc4d217fc5c715d980",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/alternative_library/alternative_library_identity.json",
+      "pr": 86,
+      "role": "library_identity",
+      "sha256": "52aaa5ef56f289131ba52b9c3328f4f2f2c839c2aa5c0ea45644f1833cebdd63",
+      "size": 5136
+    },
+    {
+      "commit": "fbe67f0c607add7f8049d4ce75e8f9e1ae8498d9",
+      "git_blob": "f86e2c51251a3d4bc217d7454ab668c357bbe9ba",
+      "path": "reproduction/cross_dataset/resume_replica_gt_executable_safety_activated_benchmark_v1/runtime_core.py",
+      "pr": 87,
+      "role": "formal_runtime",
+      "sha256": "79051dadd541a3c19ace6da6992cad839da689d3f214eaa0882f4688b382c499",
+      "size": 30246
+    },
+    {
+      "commit": "fbe67f0c607add7f8049d4ce75e8f9e1ae8498d9",
+      "git_blob": "1f8af9207860782259579ebf907593ee45f632ca",
+      "path": "reproduction/cross_dataset/resume_replica_gt_executable_safety_activated_benchmark_v1/registry/representative_holdout_registry_v1.json",
+      "pr": 87,
+      "role": "replica_registry",
+      "sha256": "eaa0f9f63cbcae433741b959441cf244648e30bf184b62309334602b76659a1a",
+      "size": 198282
+    },
+    {
+      "commit": "fbe67f0c607add7f8049d4ce75e8f9e1ae8498d9",
+      "git_blob": "54d4b4cce068382f3634a11488915edb366beafd",
+      "path": "reproduction/cross_dataset/resume_replica_gt_executable_safety_activated_benchmark_v1/benchmark/one_step_records.csv",
+      "pr": 87,
+      "role": "replica_formal_evidence",
+      "sha256": "9f96bbfe7b5d4c5982d405f38dbc2ea5a04de42021dc58fab7112a49b103410d",
+      "size": 2005494
+    },
+    {
+      "commit": "9287617cce74561aa434d1aca7eb684f79551188",
+      "git_blob": "68016527d553bfed1014592b06a6207feb7bc2af",
+      "path": "reproduction/research_direction/safer_splat_direction_audit_v1/report/downstream_handoff.json",
+      "pr": 88,
+      "role": "case_d_decision",
+      "sha256": "13c00aa2cead6916413ac98fcd87a49ec268c2bcf396e2376e51dfd0028af875",
+      "size": 347
+    },
+    {
+      "commit": "9287617cce74561aa434d1aca7eb684f79551188",
+      "git_blob": "86b786701497c523a48858ddba4c8c2b729c3886",
+      "path": "reproduction/cross_dataset/retrospective_requalify_existing_gaussian_maps_protocol_v2/classification/classification_matrix.json",
+      "pr": 88,
+      "role": "protocol_v2_map_tiers",
+      "sha256": "1a62e4188b709fd6dfe7abe9851c2a214d5efdd6ec7cfa5c2130a4d7dbfba155",
+      "size": 16866
+    },
+    {
+      "commit": "9287617cce74561aa434d1aca7eb684f79551188",
+      "git_blob": "eee200c416c255f8dad5869321a527f5d532ee72",
+      "path": "reproduction/cross_dataset/eth3d_delivery_area_provision_7zz_resume_assets_v1/routes/reference_route_contract_failure.json",
+      "pr": 88,
+      "role": "eth3d_route_boundary",
+      "sha256": "16ac556861fac86dd53ecfa5e5503901e129ce0d18688e5fc335fe837792806e",
+      "size": 1044
+    },
+    {
+      "commit": "9287617cce74561aa434d1aca7eb684f79551188",
+      "git_blob": "fb8e9f0ce57ec5d3a62a5a05534bc64cb88d16e7",
+      "path": "reproduction/cross_dataset/cross_dataset_qualified_gaussian_map_acquisition_v1/official_safer_scene_inventory.json",
+      "pr": 88,
+      "role": "official_scene_identities",
+      "sha256": "228dc2c062112313a4a59e0c2e268f1cb8888dc7ea9fcc8f2525d7728de081c6",
+      "size": 4569
+    }
+  ],
+  "status": "PASS_PROTECTED_INPUTS_FROZEN_FROM_RAW_GIT_OBJECTS"
+}

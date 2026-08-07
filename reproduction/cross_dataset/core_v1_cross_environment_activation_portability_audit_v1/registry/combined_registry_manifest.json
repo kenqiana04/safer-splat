@@ -1,0 +1,47 @@
+{
+  "environments": [
+    {
+      "environment": "E1_REPLICA_GT_FINE",
+      "registry_sha256": "eaa0f9f63cbcae433741b959441cf244648e30bf184b62309334602b76659a1a",
+      "state_count": 160,
+      "status": "REUSED_FROZEN_REGISTRY"
+    },
+    {
+      "environment": "E2_ETH3D_LEARNED_GAUSSIAN",
+      "registry_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "state_count": 0,
+      "status": "ENVIRONMENT_STRUCTURAL_SHORTFALL"
+    },
+    {
+      "environment": "E3_TUM_SPLATAM",
+      "registry_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "state_count": 0,
+      "status": "ENVIRONMENT_STRUCTURAL_SHORTFALL"
+    },
+    {
+      "environment": "E4_TUM_GAUSSIAN_SLAM",
+      "registry_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "state_count": 0,
+      "status": "ENVIRONMENT_STRUCTURAL_SHORTFALL"
+    },
+    {
+      "environment": "E5_STONEHENGE_SAFER",
+      "registry_sha256": "5827534b7fe7a8296a11227dc5516f538d4841f4166a7cac4a40577e58dc3242",
+      "state_count": 100,
+      "status": "LOCKED_METHOD_INDEPENDENT_REGISTRY"
+    },
+    {
+      "environment": "E6_FLIGHT_SAFER",
+      "registry_sha256": "bf07fdca87c588fdebfe6e005e3fba0a0ed68a11799b3ca38079588f0aed107d",
+      "state_count": 100,
+      "status": "LOCKED_METHOD_INDEPENDENT_REGISTRY"
+    },
+    {
+      "environment": "E7_TUM_SPLATFACTO_NEGATIVE_CONTROL",
+      "registry_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "state_count": 0,
+      "status": "DIAGNOSTIC_ONLY"
+    }
+  ],
+  "status": "PASS_COMBINED_REGISTRY_MANIFEST_LOCKED"
+}

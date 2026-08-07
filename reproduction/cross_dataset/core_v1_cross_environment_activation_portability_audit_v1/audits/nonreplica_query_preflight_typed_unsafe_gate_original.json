@@ -1,0 +1,42 @@
+{
+  "map_mutation_count": 0,
+  "records": {
+    "E5_STONEHENGE_SAFER": {
+      "active_gaussian_ids": [
+        28678
+      ],
+      "evaluated_gaussian_count": 116446,
+      "h": -0.00907058734446764,
+      "map_mutation": false,
+      "means_sha256_after": "208e3653b07793bb6367bbc870a15c462f7b8ce2ef74df86865998b730b5c7c6",
+      "means_sha256_before": "208e3653b07793bb6367bbc870a15c462f7b8ce2ef74df86865998b730b5c7c6",
+      "query_reason": "SOURCE_FULL_GAUSSIAN_QUERY_FINITE",
+      "query_status": "FINITE",
+      "runtime_s": 4.2906434391625226,
+      "segment_backend": "CONSERVATIVE_SIGNED_DISTANCE_LIPSCHITZ_INTERVAL",
+      "signed_distance": 0.0550401004317067,
+      "status": "QUERY_PREFLIGHT_FAILED",
+      "zero_segment_certified": false,
+      "zero_segment_reason": "FINITE_UNSAFE_WITNESS"
+    },
+    "E6_FLIGHT_SAFER": {
+      "active_gaussian_ids": [
+        120662
+      ],
+      "evaluated_gaussian_count": 281756,
+      "h": 0.002699390985071659,
+      "map_mutation": false,
+      "means_sha256_after": "a82b672a6c34798a91d04895b9b2d496d06a89b05b29f5ce65b8be5d0ce19f88",
+      "means_sha256_before": "a82b672a6c34798a91d04895b9b2d496d06a89b05b29f5ce65b8be5d0ce19f88",
+      "query_reason": "SOURCE_FULL_GAUSSIAN_QUERY_FINITE",
+      "query_status": "FINITE",
+      "runtime_s": 1.2187808081507683,
+      "segment_backend": "CONSERVATIVE_SIGNED_DISTANCE_LIPSCHITZ_INTERVAL",
+      "signed_distance": 0.12165274754427727,
+      "status": "PASS_PR84_COMPATIBLE_FINITE_QUERY",
+      "zero_segment_certified": true,
+      "zero_segment_reason": "SEGMENT_CONSERVATIVE_SAFE"
+    }
+  },
+  "status": "BLOCKED_NONREPLICA_QUERY_PREFLIGHT"
+}

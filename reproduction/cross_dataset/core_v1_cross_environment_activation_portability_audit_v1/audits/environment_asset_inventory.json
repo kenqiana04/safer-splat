@@ -1,0 +1,142 @@
+{
+  "assets": {
+    "E1_REPLICA_GT_FINE_map": {
+      "exists": true,
+      "path": "/disk1/zlab/cross_dataset_assets/qualified_replica_gaussian_safety_maps_v1/bounded_direct_goal_v1/means_world_m.npy",
+      "sha256": "e2ca0533767590c0b5ca657ec7f73fd4626a5fbaf07beb2ce76c2c67d1dc4152",
+      "size": 27427952
+    },
+    "E1_REPLICA_GT_FINE_registry": {
+      "exists": true,
+      "path": "/disk1/zlab/maintenance_records/resume_replica_gt_executable_safety_activated_benchmark_v1/registry/representative_holdout_registry_v1.json",
+      "sha256": "eaa0f9f63cbcae433741b959441cf244648e30bf184b62309334602b76659a1a",
+      "size": 198282
+    },
+    "E2_ETH3D_LEARNED_GAUSSIAN_map": {
+      "exists": true,
+      "path": "/disk1/zlab/cross_dataset_maps/eth3d_delivery_area_official_3dgs_v1/point_cloud/iteration_30000/point_cloud.ply",
+      "sha256": "927734a2339a3f2710640065b0893eaae162cc0144ac67e2f377bcff2e71ae34",
+      "size": 164890035
+    },
+    "E2_ETH3D_route_failure": {
+      "exists": true,
+      "path": "/disk1/zlab/maintenance_records/eth3d_delivery_area_provision_7zz_resume_assets_v1/routes/reference_route_contract_failure.json",
+      "sha256": "16ac556861fac86dd53ecfa5e5503901e129ce0d18688e5fc335fe837792806e",
+      "size": 1044
+    },
+    "E3_TUM_SPLATAM_map": {
+      "exists": true,
+      "path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/runs/splatam_full240/params.npz",
+      "sha256": "cb4a8f133a4ce4063f60112fa9689db683988be29f67b9d570231a319849a36f",
+      "size": 262302188
+    },
+    "E4_TUM_GAUSSIAN_SLAM_map": {
+      "exists": true,
+      "path": "/disk1/zlab/maintenance_records/tum_common_gaussian_map_adapter_qualification_v1/gaussian_slam/canonical_export/geometry_concat/means_world_m.npy",
+      "sha256": "409d05fbd8f6c85d7651aadbe358c06d4e339a9725a346e41cac6d61428c0688",
+      "size": 36545732
+    },
+    "E5_STONEHENGE_SAFER_checkpoint": {
+      "exists": true,
+      "path": "/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724/nerfstudio_models/step-000029999.ckpt",
+      "sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d",
+      "size": 92344786
+    },
+    "E5_STONEHENGE_SAFER_config": {
+      "exists": true,
+      "path": "/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724/config.yml",
+      "sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e",
+      "size": 6933
+    },
+    "E5_STONEHENGE_SAFER_trials": {
+      "exists": true,
+      "path": "/disk1/zlab/projects/safer-splat/reproduction/results/official_checkpoint_filter_comparison_stonehenge_100/trials.csv",
+      "sha256": "fb025f0f25f47069b4dbc7ffa74c54c73959688c3e193c11eaf269bfc017daf4",
+      "size": 171426
+    },
+    "E6_FLIGHT_SAFER_checkpoint": {
+      "exists": true,
+      "path": "/disk1/zlab/projects/safer-splat/outputs/flight/splatfacto/2024-09-12_172434/nerfstudio_models/step-000029999.ckpt",
+      "sha256": "8e7499a0d68405065b0effb7022b635ef3fbe50a53b69f5f25165260c8a493e6",
+      "size": 209384530
+    },
+    "E6_FLIGHT_SAFER_config": {
+      "exists": true,
+      "path": "/disk1/zlab/projects/safer-splat/outputs/flight/splatfacto/2024-09-12_172434/config.yml",
+      "sha256": "7e83fb0711a1decc55518e66e43a34395188c2e2a2de0e5ec24d6bb510fb7b8d",
+      "size": 7105
+    },
+    "E6_FLIGHT_SAFER_trials": {
+      "exists": true,
+      "path": "/disk1/zlab/projects/safer-splat/work/risk_aware_cbf/results/risk_aware_v1_pre_cbf_flight_100_bestD/per_step_trajectory.csv",
+      "sha256": "cfe8b073a0761ab5f3fa4a01086f186e48c112c2be3c75c7515bb125539312db",
+      "size": 22950431
+    },
+    "E7_TUM_SPLATFACTO_negative_evidence": {
+      "exists": true,
+      "path": "/disk1/zlab/maintenance_records/retrospective_requalify_existing_gaussian_maps_protocol_v2/classification/per_map_evidence_cards/TUM_SPLATFACTO_NEGATIVE.json",
+      "sha256": "d7e0c83de37a66dbfbf3c4b8bbe34117558b00cc037c6678884969910aad73e0",
+      "size": 1318
+    },
+    "official_cbf_source": {
+      "exists": true,
+      "path": "/disk1/zlab/projects/safer-splat/cbf/cbf_utils.py",
+      "sha256": "492403919f64fba4a46908a8a663900c1ed5808a1865dc5a74c9cfe32d2c7010",
+      "size": 7758
+    },
+    "official_query_source": {
+      "exists": true,
+      "path": "/disk1/zlab/projects/safer-splat/splat/gsplat_utils.py",
+      "sha256": "fccc3125431122c58bd7901048d0e66e6b6c7fdeafc066f014d9d7df3c1ff9bf",
+      "size": 9039
+    },
+    "official_trial_generator": {
+      "exists": true,
+      "path": "/disk1/zlab/projects/safer-splat/reproduction/scripts/run_official_checkpoint_filter_comparison.py",
+      "sha256": "bd944315c17f1922290b281aa2ed3d1bcd3dc17111a7a2c2b2cb16073f3673c7",
+      "size": 36910
+    }
+  },
+  "controller_mutation_count": 0,
+  "gpu_1": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %",
+  "gpu_1_compute_processes": "",
+  "host": "zlab-Super-Server",
+  "map_mutation_count": 0,
+  "map_training_count": 0,
+  "project_head": "f63b4c496861c4f8881348d74244c1ff9a528d51",
+  "project_status": "## HEAD（非分支）",
+  "tum_velocity_audit": {
+    "bounds_valid_candidate_count": 1,
+    "bounds_valid_candidates": [
+      {
+        "pose_index": 237,
+        "position_m": [
+          0.7198,
+          -0.3558,
+          1.4758
+        ],
+        "timestamp": 9.48,
+        "velocity_m_per_s": [
+          0.032500000000000556,
+          -0.03624999999999944,
+          0.03749999999999861
+        ]
+      }
+    ],
+    "central_difference_candidate_count": 238,
+    "clipping_applied": false,
+    "pose_count": 240,
+    "source_path": "/disk1/zlab/external_baselines/tum_rgbd_gaussian_v1/build/dataset_adapters_v2/train_240/rgbd_dataset_freiburg1_room/groundtruth.txt",
+    "source_sha256": "1053343d536418a6428f598bc4bbd5cef1f234ab00effcd14d3b8cfa162fc0b3",
+    "status": "ENVIRONMENT_STRUCTURAL_SHORTFALL",
+    "velocity_bound_inf_m_per_s": 0.1,
+    "velocity_component_max_quantiles": {
+      "max": 3.8737499999999967,
+      "median": 1.3499999999999985,
+      "min": 0.03749999999999861,
+      "q25": 0.9375000000000013,
+      "q75": 1.7999999999999972
+    }
+  },
+  "user": "zlab"
+}

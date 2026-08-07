@@ -1,0 +1,69 @@
+{
+  "environments": {
+    "E1_REPLICA_GT_FINE": {
+      "fresh_process_count": 3,
+      "match": true,
+      "sha256_values": [
+        "eaa0f9f63cbcae433741b959441cf244648e30bf184b62309334602b76659a1a",
+        "eaa0f9f63cbcae433741b959441cf244648e30bf184b62309334602b76659a1a",
+        "eaa0f9f63cbcae433741b959441cf244648e30bf184b62309334602b76659a1a"
+      ]
+    },
+    "E2_ETH3D_LEARNED_GAUSSIAN": {
+      "fresh_process_count": 3,
+      "match": true,
+      "sha256_values": [
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ]
+    },
+    "E3_TUM_SPLATAM": {
+      "fresh_process_count": 3,
+      "match": true,
+      "sha256_values": [
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ]
+    },
+    "E4_TUM_GAUSSIAN_SLAM": {
+      "fresh_process_count": 3,
+      "match": true,
+      "sha256_values": [
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ]
+    },
+    "E5_STONEHENGE_SAFER": {
+      "fresh_process_count": 3,
+      "match": true,
+      "sha256_values": [
+        "5827534b7fe7a8296a11227dc5516f538d4841f4166a7cac4a40577e58dc3242",
+        "5827534b7fe7a8296a11227dc5516f538d4841f4166a7cac4a40577e58dc3242",
+        "5827534b7fe7a8296a11227dc5516f538d4841f4166a7cac4a40577e58dc3242"
+      ]
+    },
+    "E6_FLIGHT_SAFER": {
+      "fresh_process_count": 3,
+      "match": true,
+      "sha256_values": [
+        "bf07fdca87c588fdebfe6e005e3fba0a0ed68a11799b3ca38079588f0aed107d",
+        "bf07fdca87c588fdebfe6e005e3fba0a0ed68a11799b3ca38079588f0aed107d",
+        "bf07fdca87c588fdebfe6e005e3fba0a0ed68a11799b3ca38079588f0aed107d"
+      ]
+    },
+    "E7_TUM_SPLATFACTO_NEGATIVE_CONTROL": {
+      "fresh_process_count": 3,
+      "match": true,
+      "sha256_values": [
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      ]
+    }
+  },
+  "registry_rebuild_count_each": 3,
+  "status": "PASS_THREE_FRESH_PROCESS_REBUILD"
+}
