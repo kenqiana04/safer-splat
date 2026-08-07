@@ -1,0 +1,5 @@
+environment,reason,status
+E2_ETH3D_LEARNED_GAUSSIAN,No frozen reference-route benchmark contract,ENVIRONMENT_STRUCTURAL_SHORTFALL
+E3_TUM_SPLATAM,1/238 central-difference states satisfies frozen velocity bound,ENVIRONMENT_STRUCTURAL_SHORTFALL
+E4_TUM_GAUSSIAN_SLAM,1/238 shared GT trajectory states satisfies frozen velocity bound,ENVIRONMENT_STRUCTURAL_SHORTFALL
+E7_TUM_SPLATFACTO_NEGATIVE_CONTROL,Diagnostic negative control excluded from every portability gate,DIAGNOSTIC_ONLY

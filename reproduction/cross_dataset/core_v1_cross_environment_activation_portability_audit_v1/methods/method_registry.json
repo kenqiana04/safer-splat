@@ -1,0 +1,19 @@
+{
+  "dt_s": 0.05,
+  "effective_radius_m": 0.11,
+  "h_stop_max": 20,
+  "margin_m": 0.009999999999999995,
+  "methods": [
+    "B0_CURRENT_CBF_ONLY",
+    "B1_PLUS_SWEPT_SEGMENT",
+    "B2_PLUS_TERMINAL_BACKUP",
+    "B3_FULL_UNIFIED_WITH_DIRECTIONAL_ALTERNATIVES"
+  ],
+  "normative_model": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1",
+  "robot_radius_m": 0.1,
+  "six_slot_library_sha256": "3d491876234161d4e881ec1227c505cb07c0af00d5e881c5289fdf1f1577c6fe",
+  "status": "PASS_FROZEN_B0_B3_METHOD_REGISTRY",
+  "terminal_tolerance_m_per_s": 1e-12,
+  "u_bound_inf": 0.1,
+  "v_bound_inf": 0.1
+}

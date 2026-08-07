@@ -1,0 +1,411 @@
+{
+  "check_count": 42,
+  "checks": [
+    {
+      "detail": {
+        "base": "fas-cbf-core-v1-conceptual-closure",
+        "base_sha": "17805e67b75412dc21b1a5fff4143ea3bc985f7f",
+        "draft": true,
+        "head": "fas-cbf-unified-executable-safety-certifier-v1",
+        "head_sha": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+        "mergeable": "MERGEABLE",
+        "number": 84,
+        "state": "OPEN",
+        "url": "https://github.com/kenqiana04/safer-splat/pull/84"
+      },
+      "name": "pr84_identity",
+      "pass": true
+    },
+    {
+      "detail": {
+        "base": "fas-cbf-unified-executable-safety-certifier-v1",
+        "base_sha": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+        "draft": true,
+        "head": "replica-gt-executable-safety-activated-benchmark-v1",
+        "head_sha": "7afef38392bec36d9d9811e5a22c816da5faf1ff",
+        "mergeable": "MERGEABLE",
+        "number": 85,
+        "state": "OPEN",
+        "url": "https://github.com/kenqiana04/safer-splat/pull/85"
+      },
+      "name": "pr85_identity",
+      "pass": true
+    },
+    {
+      "detail": {
+        "base": "replica-gt-executable-safety-activated-benchmark-v1",
+        "base_sha": "7afef38392bec36d9d9811e5a22c816da5faf1ff",
+        "draft": true,
+        "head": "replica-gt-executable-safety-method-matrix-v1",
+        "head_sha": "d4f20f44a810afc2d6379853a286a3e18b175221",
+        "mergeable": "MERGEABLE",
+        "number": 86,
+        "state": "OPEN",
+        "url": "https://github.com/kenqiana04/safer-splat/pull/86"
+      },
+      "name": "pr86_identity",
+      "pass": true
+    },
+    {
+      "detail": {
+        "base": "replica-gt-executable-safety-method-matrix-v1",
+        "base_sha": "d4f20f44a810afc2d6379853a286a3e18b175221",
+        "draft": true,
+        "head": "resume-replica-gt-executable-safety-activated-benchmark-v1",
+        "head_sha": "fbe67f0c607add7f8049d4ce75e8f9e1ae8498d9",
+        "mergeable": "MERGEABLE",
+        "number": 87,
+        "state": "OPEN",
+        "url": "https://github.com/kenqiana04/safer-splat/pull/87"
+      },
+      "name": "pr87_identity",
+      "pass": true
+    },
+    {
+      "detail": {
+        "base": "resume-replica-gt-executable-safety-activated-benchmark-v1",
+        "base_sha": "fbe67f0c607add7f8049d4ce75e8f9e1ae8498d9",
+        "draft": true,
+        "head": "research-direction-novelty-data-winnability-audit-v1",
+        "head_sha": "9287617cce74561aa434d1aca7eb684f79551188",
+        "mergeable": "MERGEABLE",
+        "number": 88,
+        "state": "OPEN",
+        "url": "https://github.com/kenqiana04/safer-splat/pull/88"
+      },
+      "name": "pr88_identity",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "pr88_lineage",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "protected_record_count",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "match": true,
+          "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/executable_safety_certifier.py"
+        },
+        {
+          "match": true,
+          "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/adapters/current_cbf_adapter.py"
+        },
+        {
+          "match": true,
+          "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/adapters/gaussian_barrier_adapter.py"
+        },
+        {
+          "match": true,
+          "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/segment_backends/conservative_interval.py"
+        },
+        {
+          "match": true,
+          "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/methods/method_registry.json"
+        },
+        {
+          "match": true,
+          "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/alternative_library/directional_library.py"
+        },
+        {
+          "match": true,
+          "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/alternative_library/alternative_library_identity.json"
+        },
+        {
+          "match": true,
+          "path": "reproduction/cross_dataset/resume_replica_gt_executable_safety_activated_benchmark_v1/runtime_core.py"
+        },
+        {
+          "match": true,
+          "path": "reproduction/cross_dataset/resume_replica_gt_executable_safety_activated_benchmark_v1/registry/representative_holdout_registry_v1.json"
+        },
+        {
+          "match": true,
+          "path": "reproduction/cross_dataset/resume_replica_gt_executable_safety_activated_benchmark_v1/benchmark/one_step_records.csv"
+        },
+        {
+          "match": true,
+          "path": "reproduction/research_direction/safer_splat_direction_audit_v1/report/downstream_handoff.json"
+        },
+        {
+          "match": true,
+          "path": "reproduction/cross_dataset/retrospective_requalify_existing_gaussian_maps_protocol_v2/classification/classification_matrix.json"
+        },
+        {
+          "match": true,
+          "path": "reproduction/cross_dataset/eth3d_delivery_area_provision_7zz_resume_assets_v1/routes/reference_route_contract_failure.json"
+        },
+        {
+          "match": true,
+          "path": "reproduction/cross_dataset/cross_dataset_qualified_gaussian_map_acquisition_v1/official_safer_scene_inventory.json"
+        }
+      ],
+      "name": "protected_raw_git_blobs",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "protected_source_mutation_zero",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "exact_frozen_method_contract",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "method_fairness",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "seven_environment_preregistration_no_e8",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "environment_readiness_and_unknown_policy",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "reference_tiers_and_no_pooling",
+      "pass": true
+    },
+    {
+      "detail": {
+        "E1_REPLICA_GT_FINE": 160,
+        "E2_ETH3D_LEARNED_GAUSSIAN": 0,
+        "E3_TUM_SPLATAM": 0,
+        "E4_TUM_GAUSSIAN_SLAM": 0,
+        "E5_STONEHENGE_SAFER": 100,
+        "E6_FLIGHT_SAFER": 100,
+        "E7_TUM_SPLATFACTO_NEGATIVE_CONTROL": 0
+      },
+      "name": "registry_counts",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "replica_registry_exact_reuse",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "three_process_registry_rebuild",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "selection_no_leakage",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "single_formal_attempt",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "formal_output_identity",
+      "pass": true
+    },
+    {
+      "detail": [],
+      "name": "one_step_required_fields",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "paired_shared_input_contract",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "no_unknown_nonfinite_infrastructure",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "zero_incremental_events",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "replica_reference_separation",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "behavior_only_reference_not_evaluable",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "fail_closed_not_safe_stop",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "natural_event_only_no_synthetic_replacement",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "frozen_portability_gates",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "strict_case_c_decision",
+      "pass": true
+    },
+    {
+      "detail": {
+        "activation_vs_exposure.png": 47707,
+        "activation_vs_map_disagreement.png": 65479,
+        "any_incremental_activation_with_ci.png": 73115,
+        "audit_question_and_competing_explanations.png": 81171,
+        "claim_boundary.png": 63255,
+        "competing_explanation_decision.png": 71811,
+        "deadline_miss_by_environment_method.png": 52878,
+        "downstream_research_decision.png": 60375,
+        "environment_evidence_tiers.png": 76851,
+        "environment_readiness.png": 65094,
+        "exposure_segment_distribution.png": 69337,
+        "exposure_stop_distribution.png": 50807,
+        "fail_closed_by_environment.png": 71580,
+        "final_portability_decision.png": 54165,
+        "frozen_method_matrix.png": 58429,
+        "map_reference_disagreement.png": 57797,
+        "natural_event_rollout_progress.png": 58631,
+        "offline_reference_outcomes.png": 58161,
+        "per_environment_backup_activation.png": 71340,
+        "per_environment_current_feasibility.png": 73460,
+        "per_environment_directional_rescue.png": 70053,
+        "per_environment_segment_activation.png": 71567,
+        "portability_gate_matrix.png": 63229,
+        "pr84_pr88_lineage.png": 64146,
+        "registry_sizes_and_shortfalls.png": 74021,
+        "representative_sampling_by_environment.png": 76302,
+        "represented_false_safe.png": 68732,
+        "runtime_by_environment_method.png": 68675,
+        "selected_directional_slots.png": 46864,
+        "terminal_vs_incremental_backup.png": 60511
+      },
+      "name": "thirty_nonempty_figures",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "required_figure_labels",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "report_61_fields_and_historical_deadline",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "gpu_and_task_process_clean",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "watchdog_ssh_preserved",
+      "pass": true
+    },
+    {
+      "detail": [],
+      "name": "git_scope_only_task_directory",
+      "pass": true
+    },
+    {
+      "detail": [],
+      "name": "utf8_lf_no_bom",
+      "pass": true
+    },
+    {
+      "detail": [],
+      "name": "no_large_assets",
+      "pass": true
+    },
+    {
+      "detail": [],
+      "name": "no_credentials",
+      "pass": true
+    },
+    {
+      "detail": {
+        "command": [
+          "C:\\python3.11\\python.exe",
+          "-m",
+          "compileall",
+          "-q",
+          "C:\\Users\\zlab\\Documents\\Codex\\github-clean-work\\safer-splat-core-portability-v1\\reproduction\\cross_dataset\\core_v1_cross_environment_activation_portability_audit_v1"
+        ],
+        "returncode": 0,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "name": "compileall",
+      "pass": true
+    },
+    {
+      "detail": {
+        "command": [
+          "C:\\python3.11\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "C:\\Users\\zlab\\Documents\\Codex\\github-clean-work\\safer-splat-core-portability-v1\\reproduction\\cross_dataset\\core_v1_cross_environment_activation_portability_audit_v1\\tests"
+        ],
+        "returncode": 0,
+        "stderr_tail": "",
+        "stdout_tail": "....                                                                     [100%]\n4 passed in 0.08s\n"
+      },
+      "name": "pytest",
+      "pass": true
+    },
+    {
+      "detail": {
+        "cached": {
+          "command": [
+            "git",
+            "diff",
+            "--cached",
+            "--check"
+          ],
+          "returncode": 0,
+          "stderr_tail": "",
+          "stdout_tail": ""
+        },
+        "unstaged": {
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "returncode": 0,
+          "stderr_tail": "",
+          "stdout_tail": ""
+        }
+      },
+      "name": "git_diff_check",
+      "pass": true
+    }
+  ],
+  "failure_count": 0,
+  "final_decision": "UPHOLD_PR88_CASE_D_AND_STOP_CORE_V1_METHOD_EXPANSION",
+  "final_status": "NO_CORE_V1_REPRESENTATIVE_PORTABILITY_SIGNAL",
+  "status": "PASS_CORE_V1_CROSS_ENVIRONMENT_ACTIVATION_PORTABILITY_AUDIT_VALIDATION"
+}

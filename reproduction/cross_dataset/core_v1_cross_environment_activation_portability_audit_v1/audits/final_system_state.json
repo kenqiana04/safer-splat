@@ -1,0 +1,26 @@
+{
+  "controller_rollout_process_count": 0,
+  "firewall_or_route_change_count": 0,
+  "formal_attempt_count": 1,
+  "formal_attempt_status": "FORMAL_ATTEMPT_COMPLETED",
+  "gpu_compute_process_count": 0,
+  "gpu_compute_processes": [],
+  "host": "zlab-Super-Server",
+  "managed_proxy_listener_17898_loopback": [
+    "LISTEN    0         128              127.0.0.1:17898            0.0.0.0:*                                                                                       "
+  ],
+  "managed_proxy_listener_17898_loopback_count": 1,
+  "map_training_process_count": 0,
+  "network_restart_count": 0,
+  "physical_gpu": 1,
+  "ssh_kill_count": 0,
+  "ssh_preserved_no_action": true,
+  "ssh_session_process_count": 7,
+  "sshd_restart_count": 0,
+  "status": "PASS_FINAL_SERVER_GPU_PROCESS_AUDIT",
+  "task_owned_process_count": 0,
+  "task_owned_processes": [],
+  "user": "zlab",
+  "watchdog_preserved_no_action": true,
+  "watchdog_process_count": 1
+}

@@ -1,0 +1,27 @@
+{
+  "environment_order": [
+    "E1_REPLICA_GT_FINE",
+    "E5_STONEHENGE_SAFER",
+    "E6_FLIGHT_SAFER"
+  ],
+  "formal_attempt_count": 1,
+  "infrastructure_failure_count": 0,
+  "logical_rollout_step_count": 0,
+  "method_order": [
+    "B0_CURRENT_CBF_ONLY",
+    "B1_PLUS_SWEPT_SEGMENT",
+    "B2_PLUS_TERMINAL_BACKUP",
+    "B3_FULL_UNIFIED_WITH_DIRECTIONAL_ALTERNATIVES"
+  ],
+  "natural_incremental_event_count": 0,
+  "natural_rollout_episode_count": 0,
+  "normalization_semantics_changed": false,
+  "normalization_source": "completed typed results plus frozen input/reference identities",
+  "normalized_output_sha256": "666796b9009785ac1e59466bdf1c1450b2a62aac0d2ad709d1df7157a2a5a4b6",
+  "one_step_method_record_count": 1440,
+  "one_step_state_count": 360,
+  "output_sha256": "666796b9009785ac1e59466bdf1c1450b2a62aac0d2ad709d1df7157a2a5a4b6",
+  "raw_output_sha256": "9d13a540edff5e79706d0ae6a905ea6c58ed56020d9a9a8a0e43617b70dc65af",
+  "same_manifest_resume_count": 0,
+  "status": "FORMAL_ATTEMPT_COMPLETED"
+}
