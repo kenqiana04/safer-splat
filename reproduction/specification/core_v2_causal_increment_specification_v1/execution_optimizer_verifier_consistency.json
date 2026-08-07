@@ -1,0 +1,66 @@
+{
+  "execution_control_semantics": "plant uses x_next=x+dt*[v,u]",
+  "l2_control_semantics": "the same u_k determines v_(k+1) and therefore S_H1",
+  "normative_execution_model": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1",
+  "optimizer_control_semantics": "u_k is the candidate acceleration applied over transition k->k+1",
+  "source_audit_status": "PASS_NORMATIVE_MODEL_CONSISTENCY",
+  "source_records": [
+    {
+      "expected_expression": "x = double_integrator_dynamics(x,u)*dt + x",
+      "found": true,
+      "line_window": "145-148",
+      "path": "run.py",
+      "role": "plant",
+      "semantic": "p_next=p+dt*v; v_next=v+dt*u",
+      "sha256": "a3a91c8f7b667816b483c952da7dc814cd151fabb1bc32b68e0401d77d7aa123"
+    },
+    {
+      "expected_expression": "pred = double_integrator_dynamics(x, cand.u) * float(args.dt) + x",
+      "found": true,
+      "line_window": "476-478",
+      "path": "work/risk_aware_cbf/scripts/run_v4b_corrective_dt_filter.py",
+      "role": "v4b_candidate_verifier",
+      "semantic": "p_next=p+dt*v; v_next=v+dt*u",
+      "sha256": "d6d8cf2784f15463d005fff262e2e039bdbf1904ef433d6334c670e3d5ce5313"
+    },
+    {
+      "expected_expression": "x = double_integrator_dynamics(x_pre, u_exec) * float(args.dt) + x_pre",
+      "found": true,
+      "line_window": "671-673",
+      "path": "work/risk_aware_cbf/scripts/run_v4b_corrective_dt_filter.py",
+      "role": "v4b_plant",
+      "semantic": "p_next=p+dt*v; v_next=v+dt*u",
+      "sha256": "d6d8cf2784f15463d005fff262e2e039bdbf1904ef433d6334c670e3d5ce5313"
+    },
+    {
+      "expected_expression": "cur = double_integrator_dynamics(cur, controls[idx]) * float(dt) + cur",
+      "found": true,
+      "line_window": "220-223",
+      "path": "work/risk_aware_cbf/scripts/run_v4c_hstep_predictive_recovery.py",
+      "role": "v4c_backup_rollout",
+      "semantic": "p_next=p+dt*v; v_next=v+dt*u",
+      "sha256": "0b1f8e87eb8ca63916cdec7dcb3299b7dbc23f82d7ceca36ed14025215d096a1"
+    },
+    {
+      "expected_expression": "cur = double_integrator_dynamics(cur, u) * float(dt) + cur",
+      "found": true,
+      "line_window": "232-235",
+      "path": "work/risk_aware_cbf/scripts/run_v4c_hstep_predictive_recovery.py",
+      "role": "v4c_aux_rollout",
+      "semantic": "p_next=p+dt*v; v_next=v+dt*u",
+      "sha256": "0b1f8e87eb8ca63916cdec7dcb3299b7dbc23f82d7ceca36ed14025215d096a1"
+    },
+    {
+      "expected_expression": "x = double_integrator_dynamics(x_pre, u_exec) * float(args.dt) + x_pre",
+      "found": true,
+      "line_window": "590-592",
+      "path": "work/risk_aware_cbf/scripts/run_v4c_hstep_predictive_recovery.py",
+      "role": "v4c_plant",
+      "semantic": "p_next=p+dt*v; v_next=v+dt*u",
+      "sha256": "0b1f8e87eb8ca63916cdec7dcb3299b7dbc23f82d7ceca36ed14025215d096a1"
+    }
+  ],
+  "status": "PASS_EXECUTION_OPTIMIZER_VERIFIER_H1_CONSISTENCY",
+  "timing_conflict_count": 0,
+  "u_k_plus_1_h1_position_authority": "NONE"
+}

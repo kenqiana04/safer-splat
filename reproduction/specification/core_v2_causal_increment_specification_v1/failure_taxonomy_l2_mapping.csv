@@ -1,0 +1,12 @@
+frozen_failure_type,l2_mapping,upstream_taxonomy_status,evidence_limitation
+F_START_INVALID,unchanged; not L2 reached,PRESERVED,NO
+F_CURRENT_QUERY_UNKNOWN,L2_UNKNOWN if encountered during H1 map query; no alternative entry,PRESERVED,YES
+F_CURRENT_FEASIBILITY_FAIL,unchanged; not L2 reached,PRESERVED,NO
+F_IMMEDIATE_UNAVOIDABLE_SEGMENT_FAIL,unchanged; not L2 reached,PRESERVED,NO
+F_PRIMARY_FUTURE_SAFETY_FAIL,exact mapping for finite L2_FAIL,PRESERVED,NO
+F_PRIMARY_BACKUP_FAIL,unchanged L3 failure after L2_PASS,PRESERVED,NO
+F_ALTERNATIVE_LIBRARY_EXHAUSTED,unchanged L4 result,PRESERVED,NO
+F_TERMINAL_NOT_CERTIFIED,unchanged L5 result; terminal-already-safe remains separate,PRESERVED,NO
+F_RUNTIME_DEADLINE,L2_UNKNOWN when H1 certificate budget/deadline is exhausted,PRESERVED,YES
+F_MAP_REFERENCE_UNRESOLVED,"L2_UNKNOWN/evidence limitation, never candidate unsafe",PRESERVED,YES
+F_TRACKING_LATENCY_UNMODELED,outside local H1 claim; no robustness inference,PRESERVED,YES

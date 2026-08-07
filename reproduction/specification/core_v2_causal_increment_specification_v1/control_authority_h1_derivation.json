@@ -1,0 +1,143 @@
+{
+  "assumptions": [
+    "frozen position-first Euler",
+    "constant u_k over transition k->k+1",
+    "no dynamics substitution"
+  ],
+  "candidate_dependence_verdict": "NONZERO_FOR_EVERY_ALPHA_GREATER_THAN_ZERO",
+  "checks": [
+    {
+      "name": "p_k_plus_1_independent_of_u_k",
+      "pass": true
+    },
+    {
+      "name": "p_k_plus_2_formula",
+      "pass": true
+    },
+    {
+      "name": "alpha_0_endpoint",
+      "pass": true
+    },
+    {
+      "name": "alpha_1_endpoint",
+      "pass": true
+    },
+    {
+      "name": "alpha_0_derivative_zero",
+      "pass": true
+    },
+    {
+      "name": "alpha_025_derivative",
+      "pass": true
+    },
+    {
+      "name": "alpha_05_derivative",
+      "pass": true
+    },
+    {
+      "name": "alpha_1_derivative_dt_squared",
+      "pass": true
+    },
+    {
+      "name": "alpha_positive_candidate_dependence",
+      "pass": true
+    },
+    {
+      "name": "u_k_plus_1_not_in_h1_position_segment",
+      "pass": true
+    }
+  ],
+  "derivative": "d p_H1(alpha) / d u_k = alpha*dt^2*I",
+  "dt": 0.05,
+  "endpoint_consistency": {
+    "alpha_0": "p_(k+1)",
+    "alpha_1": "p_(k+2)"
+  },
+  "finite_difference_jacobians": {
+    "0.0": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "0.25": [
+      [
+        0.0006250000017526958,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.000625000000364917,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0006250000017526958
+      ]
+    ],
+    "0.5": [
+      [
+        0.001250000000729834,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0012499999993420552,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0012499999979542764
+      ]
+    ],
+    "1.0": [
+      [
+        0.0024999999986841104,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.002500000000071889,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.002500000001459668
+      ]
+    ]
+  },
+  "formula_check_count": 10,
+  "h1_indexing_check_count": 6,
+  "h1_segment_owner_verdict": "U_K_DETERMINES_V_K_PLUS_1_AND_U_K_PLUS_1_CANNOT_CHANGE_H1_POSITION",
+  "indexing_convention": {
+    "h1_position_segment_velocity": "v_(k+1)",
+    "u_k_changes": "v_(k+1)",
+    "u_k_generated": "at t_k before transition k->k+1",
+    "u_k_plus_1_influence_on_h1_position": "NONE under frozen position-first Euler"
+  },
+  "normative_model": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1",
+  "status": "PASS_H1_CONTROL_AUTHORITY_DERIVATION",
+  "symbolic_equations": {
+    "p_H1_alpha": "p_k + (1+alpha)*dt*v_k + alpha*dt^2*u_k",
+    "p_k_plus_1": "p_k + dt*v_k",
+    "p_k_plus_2": "p_k + 2*dt*v_k + dt^2*u_k",
+    "v_k_plus_1": "v_k + dt*u_k"
+  }
+}

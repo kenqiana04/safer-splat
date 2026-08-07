@@ -1,0 +1,15 @@
+{
+  "case_vote": "CASE_A",
+  "cautions": [
+    "specification is not an algorithm result",
+    "sampled-data and backup boundaries must remain explicit"
+  ],
+  "critical_blocker_count": 0,
+  "independence_declaration": "review used frozen audits and did not read FINAL_CASE_DECISION.json",
+  "reviewer": "R4_NOVELTY_PUBLICATION",
+  "supports": [
+    "the contribution repairs a causal mismatch rather than shifting the B1 label",
+    "geometry reuse and causal-role novelty are separated",
+    "the claim is falsifiable and narrow"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "case_vote": "CASE_A",
+  "cautions": [
+    "future changes to execution ordering",
+    "any recursive-feasibility inference"
+  ],
+  "critical_blocker_count": 0,
+  "independence_declaration": "review used frozen audits and did not read FINAL_CASE_DECISION.json",
+  "reviewer": "R1_CONTROL_THEORY",
+  "supports": [
+    "indexing is consistent",
+    "candidate dependence holds for alpha>0",
+    "claim remains local and model-specific"
+  ]
+}

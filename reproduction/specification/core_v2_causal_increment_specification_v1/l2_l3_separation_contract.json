@@ -1,0 +1,15 @@
+{
+  "L2_input": "x_k,u_k,frozen map snapshot,frozen H1 segment backend,frozen robot/margin contract",
+  "L2_output": "PASS|FAIL|UNKNOWN for local H1 segment",
+  "L3_input": "candidate with L2_PASS plus frozen backup/terminal witness contract",
+  "L3_output": "sufficient witness found|witness absent|unknown",
+  "entry_condition": "L3 may be entered only after L2_PASS",
+  "failure_distinction": "L2_FAIL, L2_UNKNOWN, and backup-witness failure remain separate",
+  "prohibited_inference": [
+    "L2_PASS implies backup exists",
+    "L3 witness proves H1 without L2",
+    "L2_PASS implies recursive feasibility",
+    "L3 failure implies mathematical unrecoverability"
+  ],
+  "status": "PASS_L2_L3_SEPARATION"
+}
