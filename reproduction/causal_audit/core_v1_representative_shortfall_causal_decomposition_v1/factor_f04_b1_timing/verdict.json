@@ -1,0 +1,9 @@
+{
+  "detail": "Immediate control authority is exactly zero under frozen dynamics.",
+  "evidence_classes": [
+    "E2_SHADOW_DIAGNOSTIC"
+  ],
+  "factor_id": "F04",
+  "rationale": "The frozen position-first model exactly gives p(tau)=p+tau*v and dp(tau)/du=0 over the immediate interval; control first changes the next horizon.",
+  "verdict": "SUPPORTED_CONTRIBUTING"
+}

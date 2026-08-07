@@ -1,0 +1,59 @@
+{
+  "C1_outcome_conditioned": true,
+  "evidence_class": "E3_BOUNDED_APPROXIMATE_ORACLE",
+  "not_representative_prevalence": true,
+  "selection": {
+    "environments": {
+      "E1_REPLICA_GT_FINE": {
+        "c0_count": 16,
+        "c0_strata": {
+          "ROUTE_EDGE": 130,
+          "ROUTE_NODE": 30
+        },
+        "c1_count": 0,
+        "c1_eligible_count": 0,
+        "c1_strata": {},
+        "registry_sha256": "4255f611f0d85eb6293fed1f97d6783bf800f5af972c6031352fa440c6b6f8b3"
+      },
+      "E5_STONEHENGE_SAFER": {
+        "c0_count": 16,
+        "c0_strata": {
+          "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE": 100
+        },
+        "c1_count": 16,
+        "c1_eligible_count": 100,
+        "c1_strata": {
+          "B0:FAIL_CLOSED_CURRENT_CBF_INFEASIBLE|B2:FAIL_CLOSED_CURRENT_CBF_INFEASIBLE": 100
+        },
+        "registry_sha256": "310523f98fd8ee0db151a406f38ae82df0df4d467230690afdfcb7db23f6ee59"
+      },
+      "E6_FLIGHT_SAFER": {
+        "c0_count": 16,
+        "c0_strata": {
+          "OFFICIAL_NATIVE_TRIAL_INITIAL_STATE": 100
+        },
+        "c1_count": 16,
+        "c1_eligible_count": 74,
+        "c1_strata": {
+          "B0:FAIL_CLOSED_CURRENT_CBF_INFEASIBLE|B2:FAIL_CLOSED_CURRENT_CBF_INFEASIBLE": 74
+        },
+        "registry_sha256": "8fd164c36fe2ee7336b124d47745c11a337dd07fc598f75d4a0b2ee53dbac201"
+      }
+    },
+    "selection_rule": {
+      "E1_REPLICA_GT_FINE": {
+        "c0": "source_type stratified then canonical state_id spaced selection",
+        "c1": "B0 current failure or B2 noncommit; typed status stratified then canonical state_id spaced selection"
+      },
+      "E5_STONEHENGE_SAFER": {
+        "c0": "source_type stratified then canonical state_id spaced selection",
+        "c1": "B0 current failure or B2 noncommit; typed status stratified then canonical state_id spaced selection"
+      },
+      "E6_FLIGHT_SAFER": {
+        "c0": "source_type stratified then canonical state_id spaced selection",
+        "c1": "B0 current failure or B2 noncommit; typed status stratified then canonical state_id spaced selection"
+      }
+    },
+    "status": "PASS_C0_C1_SELECTION_FROZEN"
+  }
+}

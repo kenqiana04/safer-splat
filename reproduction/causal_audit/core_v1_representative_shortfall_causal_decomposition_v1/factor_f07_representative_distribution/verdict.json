@@ -1,0 +1,9 @@
+{
+  "detail": "Static assets do not establish deployment/on-policy distribution.",
+  "evidence_classes": [
+    "E5_DATA_AVAILABILITY_AUDIT"
+  ],
+  "factor_id": "F07",
+  "rationale": "Static assets contain no frozen on-policy/intermediate logs; registry representativeness beyond its sampling contract cannot be established.",
+  "verdict": "DATA_BLOCKED"
+}

@@ -1,0 +1,62 @@
+{
+  "edges": [
+    [
+      "F01",
+      "F07"
+    ],
+    [
+      "F01",
+      "F10"
+    ],
+    [
+      "F03",
+      "F04"
+    ],
+    [
+      "F03",
+      "F05"
+    ],
+    [
+      "F03",
+      "F06"
+    ],
+    [
+      "F04",
+      "F08"
+    ],
+    [
+      "F06",
+      "F08"
+    ],
+    [
+      "F09",
+      "F01"
+    ],
+    [
+      "F11",
+      "F03"
+    ]
+  ],
+  "evidence_class": [
+    "E0_FROZEN_FORMAL_EVIDENCE",
+    "E1_REANALYSIS_OF_FROZEN_RECORDS",
+    "E2_SHADOW_DIAGNOSTIC",
+    "E3_BOUNDED_APPROXIMATE_ORACLE",
+    "E4_COUNTERFACTUAL_REGIME_DIAGNOSTIC",
+    "E5_DATA_AVAILABILITY_AUDIT"
+  ],
+  "nodes": [
+    "F01",
+    "F02",
+    "F03",
+    "F04",
+    "F05",
+    "F06",
+    "F07",
+    "F08",
+    "F09",
+    "F10",
+    "F11"
+  ],
+  "not_a_single_cause_proof": true
+}

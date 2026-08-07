@@ -1,0 +1,9 @@
+{
+  "detail": "No Replica atomic failure; E5/E6 largely unreachable after B0.",
+  "evidence_classes": [
+    "E2_SHADOW_DIAGNOSTIC"
+  ],
+  "factor_id": "F05",
+  "rationale": "All 32 Replica atomic witnesses passed; E5 and most E6 selected states were not reachable after the current gate. No isolated B2 atomic failure explains the zero increments.",
+  "verdict": "NOT_SUPPORTED"
+}

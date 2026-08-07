@@ -54,13 +54,36 @@ def main() -> None:
     require(manifest["status"] == "PASS_SERVER_READONLY_DIAGNOSTICS", "SERVER_DIAGNOSTIC_STATUS", failures)
     require(manifest["replay_mismatch_count"] == 0, "SERVER_REPLAY_MISMATCH", failures)
     require(manifest["no_training"] and manifest["no_rollout"] and manifest["no_controller_loop"], "EXECUTION_BOUNDARY_VIOLATION", failures)
+    required_factor_files = {
+        "factor_f01_environment_exposure": ("exposure_contract.md", "state_exposure_features.csv", "environment_exposure_summary.csv", "gate_reachable_exposure.csv", "verdict.json"),
+        "factor_f02_configuration_exposure": ("regime_contract.json", "counterfactual_records.csv", "sensitivity_summary.csv", "verdict.json"),
+        "factor_f03_b0_masking": ("gate_funnel_records.csv", "gate_funnel_summary.csv", "conditional_evaluability.csv", "shadow_independent_gate_results.csv", "verdict.json"),
+        "factor_f04_b1_timing": ("symbolic_control_authority.md", "shadow_horizon_contract.json", "shadow_segment_records.csv", "candidate_sensitivity_summary.csv", "lead_time_summary.csv", "verdict.json"),
+        "factor_f05_b2_atomicity": ("atomic_contract.json", "atomic_component_records.csv", "first_failure_summary.csv", "leave_one_component_out.csv", "verdict.json"),
+        "factor_f06_b3_coverage": ("diagnostic_cohort_contract.json", "control_search_contract.json", "control_search_records.csv", "coverage_summary.csv", "missed_recoverable_cases.csv", "verdict.json"),
+        "factor_f07_representative_distribution": ("asset_inventory.csv", "distribution_contract.md", "distribution_comparison.csv", "coverage_gap_matrix.csv", "on_policy_availability.json", "verdict.json"),
+        "factor_f08_metric_sensitivity": ("metric_contract.json", "metric_records.csv", "metric_gain_summary.csv", "claim_metric_mapping.csv", "verdict.json"),
+        "factor_f09_map_representation": ("map_representation_matrix.csv", "reference_authority_matrix.csv", "learned_map_readiness_gap.csv", "static_query_diagnostics.csv", "verdict.json"),
+        "factor_f10_statistical_power": ("power_contract.json", "binomial_power.csv", "cluster_power.csv", "conditional_power.csv", "required_sample_sizes.csv", "verdict.json"),
+        "factor_f11_implementation_consistency": ("protected_hash_audit.json", "shared_input_audit.csv", "frame_unit_audit.csv", "deterministic_replay.csv", "independent_formula_crosscheck.csv", "logging_completeness.csv", "verdict.json"),
+    }
+    for directory, files in required_factor_files.items():
+        require(all((TASK_ROOT / directory / name).is_file() for name in files), "MISSING_PROTOCOL_FACTOR_OUTPUT_" + directory, failures)
+    required_attribution = ("evidence_table.csv", "causal_graph.json", "interaction_matrix.csv", "alternative_explanations.md", "final_factor_verdicts.json")
+    require(all((TASK_ROOT / "causal_attribution" / name).is_file() for name in required_attribution), "MISSING_CAUSAL_ATTRIBUTION_OUTPUT", failures)
+    required_decision = ("final_causal_decomposition_decision.json", "supported_claims.md", "prohibited_claims.md", "unresolved_factors.md", "downstream_plan.md")
+    require(all((TASK_ROOT / "decision" / name).is_file() for name in required_decision), "MISSING_DECISION_OUTPUT", failures)
+    required_audits = ("operational_autonomy_actions.json", "selection_bias_audit.json", "reference_access_audit.json", "diagnostic_formal_separation_audit.json")
+    require(all((TASK_ROOT / "audits" / name).is_file() for name in required_audits), "MISSING_AUDIT_OUTPUT", failures)
+    manifest_figures = json.loads((TASK_ROOT / "figures/figure_manifest.json").read_text(encoding="utf-8"))
     figures = sorted((TASK_ROOT / "figures").glob("*.png"))
-    require(len(figures) == 28, "FIGURE_COUNT_MISMATCH", failures)
+    require(manifest_figures["status"] == "PASS_28_PROTOCOL_NAMED_FIGURES", "FIGURE_MANIFEST_STATUS", failures)
+    require(len(figures) == 28 and {path.name for path in figures} == set(manifest_figures["files"]), "FIGURE_COUNT_OR_NAME_MISMATCH", failures)
     decision = json.loads((TASK_ROOT / "decision/final_causal_decision.json").read_text(encoding="utf-8"))
     require(decision["status"] == "PASS_MULTIFACTOR_CORE_V1_SHORTFALL_DECOMPOSITION", "FINAL_STATUS_MISMATCH", failures)
     require(decision["case"] == "D", "FINAL_CASE_MISMATCH", failures)
     require(decision["next_authorized_task"] == "RANK_CORE_V1_ACTIONABLE_FACTORS_AND_SELECT_ONE_BOUNDED_NEXT_STEP_V1", "NEXT_TASK_MISMATCH", failures)
-    require((TASK_ROOT / "report/REPORT_AUDIT_CORE_V1_REPRESENTATIVE_SHORTFALL_CAUSAL_DECOMPOSITION_V1.md").is_file(), "REPORT_MISSING", failures)
+    require((TASK_ROOT / "report/REPORT_AUDIT_CORE_V1_REPRESENTATIVE_SHORTFALL_CAUSAL_DECOMPOSITION_V1.md").is_file() and (TASK_ROOT / "AUDIT_CORE_V1_REPRESENTATIVE_SHORTFALL_CAUSAL_DECOMPOSITION_V1.md").is_file(), "REPORT_MISSING", failures)
     output = {
         "status": "PASS_CORE_V1_REPRESENTATIVE_SHORTFALL_CAUSAL_DECOMPOSITION_VALIDATION" if not failures else "FAIL_CORE_V1_REPRESENTATIVE_SHORTFALL_CAUSAL_DECOMPOSITION_VALIDATION",
         "failures": failures, "branch": branch, "base_head": BASE_HEAD,

@@ -1,0 +1,10 @@
+{
+  "detail": "No artificial E5/E6 velocity and no tracking-error model.",
+  "evidence_classes": [
+    "E4_COUNTERFACTUAL_REGIME_DIAGNOSTIC",
+    "E5_DATA_AVAILABILITY_AUDIT"
+  ],
+  "factor_id": "F02",
+  "rationale": "Zero-velocity E5/E6 states cannot receive artificial velocity; no frozen tracking-error budget exists. Endpoint-only OAT shadows are not activation evidence.",
+  "verdict": "DATA_BLOCKED"
+}

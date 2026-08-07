@@ -1,0 +1,9 @@
+{
+  "detail": "No finite search was reachable after B2 commit/current-map preclusion.",
+  "evidence_classes": [
+    "E3_BOUNDED_APPROXIMATE_ORACLE"
+  ],
+  "factor_id": "F06",
+  "rationale": "All 80 finite-set states were either B2-primary committed (22) or candidate-independently precluded by negative current-map h (58); no B3 coverage opportunity was reached.",
+  "verdict": "NOT_IDENTIFIABLE"
+}

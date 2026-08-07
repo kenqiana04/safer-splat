@@ -1,0 +1,4 @@
+evidence_class,environment,b0_current_fail,b0_current_pass,b1_reached,b2_reached,b3_reached,conclusion,state_count,verdict
+E1_REANALYSIS_OF_FROZEN_RECORDS,E1_REPLICA_GT_FINE,0,160,160,160,160,Current-gate left truncation is structural where B0 fails; it does not establish a candidate rescue.,160,STRUCTURAL_FACT
+E1_REANALYSIS_OF_FROZEN_RECORDS,E5_STONEHENGE_SAFER,100,0,0,0,0,Current-gate left truncation is structural where B0 fails; it does not establish a candidate rescue.,100,STRUCTURAL_FACT
+E1_REANALYSIS_OF_FROZEN_RECORDS,E6_FLIGHT_SAFER,74,26,26,26,26,Current-gate left truncation is structural where B0 fails; it does not establish a candidate rescue.,100,STRUCTURAL_FACT

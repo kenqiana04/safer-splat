@@ -1,0 +1,21 @@
+{
+  "components": [
+    "immediate_segment",
+    "each_braking_segment",
+    "first_failure",
+    "H_stop",
+    "terminal_membership",
+    "zero_hold",
+    "snapshot",
+    "final_witness"
+  ],
+  "evidence_class": "E2_SHADOW_DIAGNOSTIC",
+  "leave_one_out": [
+    "L1_no_terminal_membership",
+    "L2_no_zero_hold",
+    "L3_braking_segment_only",
+    "L4_terminal_membership_only",
+    "L5_first_failure_localization_only"
+  ],
+  "not_a_new_method": true
+}

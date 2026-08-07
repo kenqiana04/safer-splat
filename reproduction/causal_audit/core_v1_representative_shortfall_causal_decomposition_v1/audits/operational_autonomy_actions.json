@@ -1,0 +1,26 @@
+{
+  "actions": [
+    {
+      "action": "correct_task_owned_snapshot_attribute",
+      "effect": "no_input_or_method_change"
+    },
+    {
+      "action": "canonicalize_empty_vs_null_replay_comparison",
+      "effect": "comparison_only"
+    },
+    {
+      "action": "correct_validator_path",
+      "effect": "validator_only"
+    },
+    {
+      "action": "normalize_task_whitespace",
+      "effect": "artifact_style_only"
+    },
+    {
+      "action": "use_stdlib_unittest_when_local_pytest_is_unavailable",
+      "effect": "test_harness_only; no runtime, map, or formal-method execution"
+    }
+  ],
+  "evidence_class": "ENGINEERING_AUDIT",
+  "map_controller_method_registry_mutated": false
+}
