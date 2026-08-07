@@ -1,0 +1,69 @@
+{
+  "budget_exhaustion": "L2_UNKNOWN / NOT_CERTIFIED_WITHIN_BUDGET; never PASS",
+  "continuous_segment_contract_check_count": 4,
+  "diagnostic_backend": {
+    "class": "DIAGNOSTIC_ONLY",
+    "formal_pass_allowed": false,
+    "identity": "DENSE_SAMPLED_DIAGNOSTIC_ONLY"
+  },
+  "endpoint_only_fallback": false,
+  "formal_backends": [
+    {
+      "class": "EXACT_ANALYTIC",
+      "coverage": "entire closed segment",
+      "eligible_when": "frozen map primitives satisfy isotropic sphere contract",
+      "identity": "EXACT_ANALYTIC_SPHERE_SEGMENT_MINIMUM"
+    },
+    {
+      "class": "CONSERVATIVE_LOWER_BOUND",
+      "coverage": "entire closed segment by recursive interval lower bounds",
+      "eligible_when": "exact finite signed-distance provider and frozen ellipsoid assumptions hold",
+      "identity": "CONSERVATIVE_SIGNED_DISTANCE_LIPSCHITZ_INTERVAL"
+    }
+  ],
+  "parameter_domain": "alpha in [0,1]",
+  "reuse_verdict": "reuse frozen formal SegmentBackend on S_H1; do not reuse B1 causal role",
+  "source_identities": [
+    {
+      "commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "git_blob": "4d981d9915e4d726a69318401c746fc5dc180d3d",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/segment_backends/base.py",
+      "sha256": "4ffa3cafc1f329c332da03a6dc9e14315d1cdc5cc3c5b7725df13130ecb1038e",
+      "size": 1018,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "git_blob": "68d9c94cedf444379c262c550dd80e9c289ea843",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/segment_backends/analytic_primitive.py",
+      "sha256": "7887c9061223a3e51e9c41991a0f0c2dc748665fcbe5fee0a0d5829022531e1e",
+      "size": 5746,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "git_blob": "cd011939dc9cc00e1997dc855c4212810c3be9f1",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/segment_backends/conservative_interval.py",
+      "sha256": "a665a194de43ec7c8585d4fd2ebee5dcdedec73e270a1f7b31db685333dfecfd",
+      "size": 3470,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "git_blob": "2421d73e0667e5a396450056fbfb93403cebc055",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/segment_backends/sampled_diagnostic.py",
+      "sha256": "5c057dbd02e579f6e210d9dafc6d161160f9f8f24b2c82f4742913e993cff3cf",
+      "size": 1891,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "git_blob": "a21eff847cf1ac437188f9f10673360ecc6c9771",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/proof_artifacts/swept_segment_assumptions.json",
+      "sha256": "ccedd283821d8cb945f7a2ab1d715dee753143b9a450a5083d3553f2feee1a78",
+      "size": 715,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    }
+  ],
+  "status": "SUFFICIENT_FOR_H1_SPEC"
+}

@@ -1,0 +1,15 @@
+{
+  "case_vote": "CASE_A",
+  "cautions": [
+    "tracking, delay, and physical-world truth remain outside scope",
+    "no active-controller integration"
+  ],
+  "critical_blocker_count": 0,
+  "independence_declaration": "review used frozen audits and did not read FINAL_CASE_DECISION.json",
+  "reviewer": "R2_ROBOTICS_SYSTEMS",
+  "supports": [
+    "optimizer/verifier/plant use the same acceleration meaning",
+    "map snapshot and robot/margin semantics are explicit",
+    "UNKNOWN and fail-close remain typed"
+  ]
+}

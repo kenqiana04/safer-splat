@@ -1,0 +1,50 @@
+{
+  "all_pass": true,
+  "all_resolved": true,
+  "falsification_gate_count": 7,
+  "gates": [
+    {
+      "do_not_implement_condition": "any normative ZOH substitution or source timing mismatch",
+      "evidence": "H1 derived only from frozen position-first Euler",
+      "gate": "G1_DYNAMICS_CONSISTENCY",
+      "verdict": "PASS"
+    },
+    {
+      "do_not_implement_condition": "zero or ambiguous candidate derivative",
+      "evidence": "d p_H1/d u_k=alpha*dt^2*I for alpha>0",
+      "gate": "G2_CANDIDATE_DEPENDENCE",
+      "verdict": "PASS"
+    },
+    {
+      "do_not_implement_condition": "only sampled or endpoint backend available",
+      "evidence": "exact/conservative formal backends cover full alpha interval",
+      "gate": "G3_CONTINUOUS_SEGMENT_SEMANTICS",
+      "verdict": "PASS"
+    },
+    {
+      "do_not_implement_condition": "ambiguous footprint, margin, snapshot, or UNKNOWN handling",
+      "evidence": "frozen map/robot/margin/UNKNOWN contract is sufficient map-relative",
+      "gate": "G4_MAP_SAFETY_SEMANTICS",
+      "verdict": "PASS"
+    },
+    {
+      "do_not_implement_condition": "recursive, physical-world, real-time, or deployment claim",
+      "evidence": "claims limited to local H1",
+      "gate": "G5_NO_RECURSION_OVERCLAIM",
+      "verdict": "PASS"
+    },
+    {
+      "do_not_implement_condition": "merging H1 safety and recoverability",
+      "evidence": "L2 local segment precedes L3 witness",
+      "gate": "G6_L2_L3_ROLE_SEPARATION",
+      "verdict": "PASS"
+    },
+    {
+      "do_not_implement_condition": "validator design that cannot reject the specification",
+      "evidence": "each gate has explicit DO_NOT_IMPLEMENT evidence",
+      "gate": "G7_FALSIFIABILITY",
+      "verdict": "PASS"
+    }
+  ],
+  "status": "PASS_ALL_SEVEN_FALSIFICATION_GATES"
+}

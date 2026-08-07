@@ -1,0 +1,17 @@
+{
+  "L2_candidate_evaluated": "candidate-level calls returning exactly one of PASS, FAIL, UNKNOWN",
+  "L2_reached": "states that passed L0 and L1, have a frozen prepared candidate, and are not terminal-already-safe",
+  "certificate_gain": "certificate status changes without requiring an action change",
+  "conditional_counts": [
+    "N_L2_PASS",
+    "N_L2_FAIL",
+    "N_L2_UNKNOWN"
+  ],
+  "conditional_rate_denominator": "N_L2_candidate_evaluated",
+  "decision_gain": "committed action/decision differs after the certified path",
+  "new_prevalence_numbers_generated": false,
+  "opportunity_denominator": "N_L2_reached",
+  "status": "PASS_L2_DENOMINATOR_SCHEMA",
+  "unconditional_prevalence_denominator": "N_all",
+  "unit_of_analysis": "candidate-state-map-snapshot tuple"
+}

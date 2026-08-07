@@ -1,0 +1,59 @@
+{
+  "assumptions": [
+    "static immutable map snapshot",
+    "valid exact source ball-to-ellipsoid query",
+    "closed represented primitives",
+    "frozen footprint and margin",
+    "no reference-geometry or physical-world guarantee"
+  ],
+  "authority": "frozen static Gaussian represented-obstacle map snapshot",
+  "compatibility_verdict": "existing predicate can evaluate arbitrary H1 endpoints without changing geometry semantics",
+  "effective_radius": "0.11 m",
+  "fixed_safety_margin": "0.01 m",
+  "gaussian_primitive_semantics": {
+    "barrier": "signed-square Gaussian barrier proxy, not metric clearance",
+    "general": "closed Gaussian ellipsoid queried by frozen ball-to-ellipsoid source API",
+    "isotropic": "closed sphere using center and linear scale radius"
+  },
+  "map_reference_disagreement": "evidence limitation; L2 remains map-relative",
+  "map_semantics_audit_count": 1,
+  "missing_geometry": "UNKNOWN, not free space",
+  "physical_world_truth_claim": false,
+  "reference_online_input": false,
+  "robot_footprint": "ball radius 0.10 m",
+  "segment_margin_rho_seg": 0.0,
+  "source_identities": [
+    {
+      "commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "git_blob": "6807970d4b28aa9c478ca018d7319a4fcef19da2",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/adapters/gaussian_barrier_adapter.py",
+      "sha256": "1de0d3a31c8babe7c0bab5f388360d7f024f729cf5d8670dfbef9800f40cf3d1",
+      "size": 7676,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "git_blob": "782c38eca50e78c605085b481155ed61e4607336",
+      "path": "splat/gsplat_utils.py",
+      "sha256": "fccc3125431122c58bd7901048d0e66e6b6c7fdeafc066f014d9d7df3c1ff9bf",
+      "size": 9039,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    },
+    {
+      "commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "git_blob": "2bfd8f69b74e2f3ed8e8a816409549eb5e1ed896",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/task_config.py",
+      "sha256": "2a33e2a825b2527d10baa0f2ed53adfd39616458181a7a2f2e9e240cd0e56296",
+      "size": 1514,
+      "verification": "PASS_RAW_GIT_OBJECT_MATCH"
+    }
+  ],
+  "status": "CONSERVATIVE_BUT_SUFFICIENT_FOR_H1_SPEC",
+  "unknown_semantics": {
+    "empty_map_or_query": "UNKNOWN",
+    "l2_mapping": "L2_UNKNOWN and fail-closed; never PASS or L2_FAIL",
+    "nonfinite_input_or_query": "NONFINITE",
+    "snapshot_mismatch": "typed mismatch/error",
+    "source_exception": "ERROR"
+  }
+}
