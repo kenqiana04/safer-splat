@@ -1,0 +1,290 @@
+{
+  "FINAL_DECISION": "FREEZE_REPLAY_EVIDENCE_AND_PREPARE_NONINVASIVE_ON_POLICY_SHADOW_OBSERVATION",
+  "FINAL_STATUS": "PASS_L2_H1_FROZEN_REPLAY_VALIDATION_V1",
+  "artifact_hashes": {
+    "DRAFT_PR_BODY.md": {
+      "sha256": "39757e44f67837901ab427fba0c3c0598da80f739f71112b312784a079d01dfd",
+      "size": 1584
+    },
+    "FINAL_CASE_DECISION.json": {
+      "sha256": "ade3dbf95d0076be1d4f2f4a55bd2cc535732b20f0960022bf3934adbd40f97c",
+      "size": 1320
+    },
+    "FROZEN_REPLAY_PROTOCOL.md": {
+      "sha256": "29309f935d9fef5f08dd76da4969055ed77b6bcd88fb46cac9bf985746ed9501",
+      "size": 1022
+    },
+    "IMPLEMENTATION_PLAN.md": {
+      "sha256": "41dd9030b52ce9c7818e63897fee6bfebaee01ab1213aae6b1e7f8c76c3e2cba",
+      "size": 10287
+    },
+    "README.md": {
+      "sha256": "78eb28fe98d6e5178b3fd8c387d94ca172e5089cd3764b31954f7abbd203ab3c",
+      "size": 601
+    },
+    "architecture_reachability_audit.csv": {
+      "sha256": "a872ec41e12156401db0b952647cf9a5b9980e5d7ec0e8d68b1e14036ac9aea2",
+      "size": 2229703
+    },
+    "audit/analysis_validation_report.json": {
+      "sha256": "8a0a5e402041eb6b809a0a585f81aa705bb8180098837e368763c20bfc4627be",
+      "size": 1628
+    },
+    "audit/protected_source_audit.json": {
+      "sha256": "57475ad2bb85c03c1cdfe57044cd28b7a04b32da05630194fd6894884cc5bdbc",
+      "size": 12321
+    },
+    "audit/replay_execution_accounting.json": {
+      "sha256": "7849c04cc4df89698f4cfbcae5cf476f358dd570116dd26f58e356d44e803f15",
+      "size": 472
+    },
+    "audit/upstream_identity.json": {
+      "sha256": "4aa7ecb1d76601fc7ab5d031c52cd15d1ac01df84f444ead5faff50661c4d8ea",
+      "size": 3056
+    },
+    "build_analysis.py": {
+      "sha256": "38e8b5a6e82b0b9a2c5d3510dd8eb85a8e95093d042bc801728ba15818e17ccd",
+      "size": 30659
+    },
+    "build_replay_manifest.py": {
+      "sha256": "a7c1815a83da85d6ed7150472a35960a909f0a3a83bf4492654807543ecb0933",
+      "size": 177
+    },
+    "claim_boundary.md": {
+      "sha256": "eae83a141c2d8b4208b7a9dfa2f265ce52a6aa74d3f6a13d03bbc134f1a40cc3",
+      "size": 709
+    },
+    "coverage_by_run.csv": {
+      "sha256": "8886ff5388cc8f4f17d11f2efe4f9edfeb2ad68443646a03cb0cf85cbcab3822",
+      "size": 512
+    },
+    "coverage_by_source.csv": {
+      "sha256": "e7db81220e8d66116884901a3c29b641995eea2eababd4aec378337c84bc308b",
+      "size": 509
+    },
+    "coverage_by_trial.csv": {
+      "sha256": "5bc6767535e0ccc551a3fea8d0361d30e0cc1cb20cedc998447268b41c4b9114",
+      "size": 681099
+    },
+    "denominator_audit.json": {
+      "sha256": "d9b88ccdb78c8eb31c949c23c330781a27b9bc9ec973569175c5af8949c008fe",
+      "size": 1161
+    },
+    "downstream_handoff.json": {
+      "sha256": "ad4a26cee846f9c15ad31aa7f49fab7a04ea004f93d5c7b94a9693a00bb8a785",
+      "size": 368
+    },
+    "executed_candidate_replay_summary.json": {
+      "sha256": "e4e47e02588fd06e4af776ec3fb0ad18553f4f4e8565e5091f0f6f57a6f8db24",
+      "size": 270
+    },
+    "freeze_upstream.py": {
+      "sha256": "2793c1103359513d89b657eb714d2de69881901b5def029b99509c1997ab0a5c",
+      "size": 3405
+    },
+    "frozen_replay_manifest.jsonl": {
+      "sha256": "943924d880671561fc58fb180fb98ee06825a312cfb0ceaf91eb09cd4417b53c",
+      "size": 14490457
+    },
+    "historical_evidence_non_upgrade_audit.json": {
+      "sha256": "0469c2b41fe1911776ecbdaa953d1662db32984a5078ab422845a50bc3a6612f",
+      "size": 372
+    },
+    "inventory_sources.py": {
+      "sha256": "f27178108f941b56213b2c633c0e45811672511895f16182450b5d24cd2d7c79",
+      "size": 18481
+    },
+    "l2_information_increment_summary.json": {
+      "sha256": "380289b35add60f0e7eb4453d06135a5285af18298bca4bcca161b895e5291c4",
+      "size": 499
+    },
+    "l2_unknown_by_source.csv": {
+      "sha256": "39321419837f3e047bc5a9fe8474ffe308992b14dfde3f3d4bcf91bc40176261",
+      "size": 30
+    },
+    "l2_unknown_reason_breakdown.csv": {
+      "sha256": "33d5d58b75019d10a391ba14c5d82d0d1e074c42d65c57fd26c86c0ca49ba3ad",
+      "size": 50
+    },
+    "missingness_reason_by_source.csv": {
+      "sha256": "e4b20492790b1e1c5e86f6923ee26e52d0df2b6ca0bf4e94c7cd37caeb039c6d",
+      "size": 327
+    },
+    "multi_candidate_group_analysis.csv": {
+      "sha256": "83daa81c750c1a8633d8a14e0307807a4bc559d7d229df1a200770b042e1a07c",
+      "size": 8493
+    },
+    "multi_candidate_summary.json": {
+      "sha256": "8dd33dabb7d195a16ce8f1e15a2279b7e27681090ab66dfb8f04a7b0a4466c5c",
+      "size": 372
+    },
+    "nonexecuted_candidate_replay_summary.json": {
+      "sha256": "ec7020060f954cefac4bd69a6fd8ff0e594726f10930250084ff6cda2922c3ff",
+      "size": 269
+    },
+    "qa_analysis.py": {
+      "sha256": "51d5e0f688d01145397e0c008ad79d1391a15c12dcc1f097ac75f36a35500e5f",
+      "size": 5566
+    },
+    "recomputed_diagnostic_l1_vs_l2_crosstab.csv": {
+      "sha256": "8402dc2606db0b124ce283b52cfb1a63eed36aef22118e1eb721000aaa573503",
+      "size": 196
+    },
+    "replay_common.py": {
+      "sha256": "53247b7053fab0346bcb66a891ea1c005d7784b7ffabe4ff86b4c48e8df1041e",
+      "size": 5347
+    },
+    "replay_determinism_audit.json": {
+      "sha256": "beb7756c19afe90f84cab66bf523230f1708276459150cac68329f0996d73af2",
+      "size": 360
+    },
+    "replay_differential_integrity_audit.json": {
+      "sha256": "2445bf02eb02d685c799d304316919bc1f1a22e1204ae2febd7fe5038195c627",
+      "size": 12467
+    },
+    "replay_results.csv": {
+      "sha256": "efa8b1f07cb629b6f88692bacc359a6fe0d1d3e060f82f4260ebd727a32e80d6",
+      "size": 565280
+    },
+    "replay_results.jsonl": {
+      "sha256": "49af00d7275ec4672104a7bfbbad981770798aa6690a4b0b7b0f7e5594ea4ce3",
+      "size": 2048757
+    },
+    "replay_summary.json": {
+      "sha256": "5a97a099468fb93d86a3b030e8a3afef6072adb28e2cfd62c79028706964a23f",
+      "size": 721
+    },
+    "replayability_audit.csv": {
+      "sha256": "a872ec41e12156401db0b952647cf9a5b9980e5d7ec0e8d68b1e14036ac9aea2",
+      "size": 2229703
+    },
+    "replayability_reason_breakdown.csv": {
+      "sha256": "a0952f3909def79475a2667371e50e8d55d60e44223669e0d71aac67d49c215a",
+      "size": 139
+    },
+    "report/REPORT_VALIDATE_L2_H1_SHADOW_CERTIFIER_ON_FROZEN_REPLAY_V1.md": {
+      "sha256": "986fd7f2eb62b6cb8649bb7fac3dd4eee0cbfe4c35f3af64efc0311c5ffd1fbf",
+      "size": 4063
+    },
+    "reviewers/control_theory_review.json": {
+      "sha256": "daeeba612cd1920a22668d09c7d2141c7510a59e2c9830a9764f65d07fb0699a",
+      "size": 559
+    },
+    "reviewers/robotics_systems_review.json": {
+      "sha256": "8840536b5090217c506964ff9d56c18b5435be6f5825dd174a33d81aa49c58ff",
+      "size": 595
+    },
+    "reviewers/software_reproducibility_review.json": {
+      "sha256": "32c53008d0d7037abcecb9d7fb1a93a37f57ae9324ec861f0a70d8ab11925b9b",
+      "size": 675
+    },
+    "reviewers/statistics_evaluation_review.json": {
+      "sha256": "aaea77c56446f4678cec6053c2dd81bf557c3bfb0977861e2ad04cf76779364c",
+      "size": 646
+    },
+    "run_frozen_replay.py": {
+      "sha256": "fd82d272c4907f8791a2a41f91b2fc6f4959c05797ad341ce338c79a724f1d36",
+      "size": 13174
+    },
+    "selection_bias_audit.md": {
+      "sha256": "c987b7aba08df040d353cde013c7ae8e7643f97310ed76edba20bcb4b9f57186",
+      "size": 841
+    },
+    "source_inventory.csv": {
+      "sha256": "ab25ce883fc0690db3df7346ef76a082b91c2bacb685c0a00757d5fbf29ccd5e",
+      "size": 3184
+    },
+    "source_inventory.json": {
+      "sha256": "1d1a749857de102af78f8ec931d49af739dc2c2380e5d4ca902831f124c5f558",
+      "size": 5235
+    },
+    "source_universe_freeze.json": {
+      "sha256": "b8b8e0a2b90acc865c86bf08fbdfb5b439847f3d8a9a1a42fa2909d81552dfde",
+      "size": 1620
+    },
+    "stored_l1_vs_l2_crosstab.csv": {
+      "sha256": "97bd3b12bfb379580e6e0074c372ac4d56fd0732d1e9d7884f52fa79eb2fa4f8",
+      "size": 852
+    },
+    "tests/test_analysis_contract.py": {
+      "sha256": "27fb3f078a4364ac3d2b170b81f574168650dc45c0f5b200b1134e35b7577f41",
+      "size": 1861
+    },
+    "tests/test_frozen_manifest.py": {
+      "sha256": "d20f5df184bdebe2b5df524cfec7cdaffc7a1c48644fc071cee107b7c678d479",
+      "size": 1311
+    },
+    "tests/test_inventory_contract.py": {
+      "sha256": "fb84b3536d2de855587bf91be376e4daa532f5a3297c2faab533b5b93f6f54cd",
+      "size": 1273
+    },
+    "validate_l2_h1_frozen_replay_v1.py": {
+      "sha256": "c6f9a32803ed4d7137d465a688bb1a85ad97d8127293527d2732f25286bc8ae9",
+      "size": 11669
+    }
+  },
+  "base": "l2-h1-shadow-certifier-v1",
+  "branch": "l2-h1-shadow-frozen-replay-v1",
+  "counts": {
+    "H2_implementation_count": 0,
+    "N_L1_PASS_L2_FAIL": 18,
+    "N_L1_PASS_L2_PASS": 770,
+    "N_L1_PASS_L2_UNKNOWN": 0,
+    "N_L2_FAIL": 18,
+    "N_L2_PASS": 770,
+    "N_L2_UNKNOWN": 0,
+    "N_L2_candidate_evaluated": 788,
+    "N_L2_reachability_unknown": 5795,
+    "N_L2_reached": 788,
+    "N_all": 6853,
+    "N_diagnostic_reconstructable": 0,
+    "N_formal_replayable": 2594,
+    "N_groups_all_same_status": 20,
+    "N_groups_with_L2_status_disagreement": 0,
+    "N_groups_with_PASS_and_FAIL": 0,
+    "N_groups_with_PASS_and_UNKNOWN": 0,
+    "N_groups_with_distinct_H1_endpoints": 20,
+    "N_multi_candidate_state_groups": 20,
+    "N_not_replayable": 4259,
+    "backup_mutation_count": 0,
+    "candidate_library_mutation_count": 0,
+    "controller_intervention_count": 0,
+    "controller_mutation_count": 0,
+    "dynamics_mutation_count": 0,
+    "formal_navigation_rollout_count": 0,
+    "formal_performance_claim_count": 0,
+    "formal_runtime_claim_count": 0,
+    "group_key": [
+      "source_run_id",
+      "trial_id",
+      "step_id",
+      "map_snapshot_id"
+    ],
+    "historical_replay_manifest_count": 1,
+    "map_generation_count": 0,
+    "map_mutation_count": 0,
+    "map_training_count": 0,
+    "new_data_collection_count": 0,
+    "new_external_dataset_count": 0,
+    "on_policy_collection_count": 0,
+    "production_method_mutation_count": 0,
+    "replay_cohort_definition_count": 1,
+    "reviewer_count": 4,
+    "synthetic_candidate_count": 0,
+    "synthetic_candidate_generation_count": 0,
+    "synthetic_state_generation_count": 0,
+    "terminal_mutation_count": 0
+  },
+  "only_next_task": "DESIGN_L2_H1_ON_POLICY_SHADOW_OBSERVATION_V1",
+  "pr94_head": "9bffdd2db585974ee61684cebfc99229aa52c47c",
+  "reviewer_case_votes": {
+    "control_theory_review.json": "CASE_A",
+    "robotics_systems_review.json": "CASE_A",
+    "software_reproducibility_review.json": "CASE_A",
+    "statistics_evaluation_review.json": "CASE_A"
+  },
+  "selected_case": "CASE_A",
+  "server_report": "/disk1/zlab/maintenance_records/l2_h1_shadow_frozen_replay_v1/repo/reproduction/replay/l2_h1_shadow_frozen_replay_v1/report/REPORT_VALIDATE_L2_H1_SHADOW_CERTIFIER_ON_FROZEN_REPLAY_V1.md",
+  "server_task_root": "/disk1/zlab/maintenance_records/l2_h1_shadow_frozen_replay_v1",
+  "task": "VALIDATE_L2_H1_SHADOW_CERTIFIER_ON_FROZEN_REPLAY_V1"
+}

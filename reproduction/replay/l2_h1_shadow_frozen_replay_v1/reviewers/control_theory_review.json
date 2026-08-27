@@ -1,0 +1,20 @@
+{
+  "critical_blockers": [],
+  "major_issues": [],
+  "minor_issues": [],
+  "prohibited_claims": [
+    "collision prevention",
+    "closed-loop safety improvement",
+    "runtime performance",
+    "recursive feasibility",
+    "physical-world guarantee",
+    "deployment readiness"
+  ],
+  "recommended_case": "CASE_A",
+  "reviewer": "R1_CONTROL_THEORY",
+  "supported_claims": [
+    "L1 PASS/L2 FAIL is a temporal and candidate-dependent certificate disagreement",
+    "No H2 or recursive-feasibility claim"
+  ],
+  "verdict": "PASS_WITH_BOUNDED_INTERPRETATION"
+}
