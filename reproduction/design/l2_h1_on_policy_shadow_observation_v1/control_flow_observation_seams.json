@@ -1,0 +1,109 @@
+{
+  "candidate_seams": [
+    {
+      "id": "S1_AFTER_ACCEPT_BEFORE_PROPAGATE",
+      "lines": "run.py:143-147",
+      "reason": "same-decision x_k/u_k/dt visible after acceptance and before plant update",
+      "selected": true
+    },
+    {
+      "id": "S2_AFTER_QP_BEFORE_ACCEPT",
+      "lines": "run.py:132-139",
+      "reason": "could capture a solver-failed action",
+      "selected": false
+    },
+    {
+      "id": "S3_AFTER_PROPAGATE_EXISTING_LOG",
+      "lines": "run.py:147-152",
+      "reason": "off-by-one risk and missing reachability/commit IDs",
+      "selected": false
+    },
+    {
+      "id": "S4_OUTER_CYCLE_WRAPPER",
+      "lines": "wrapper around run.py:116-176",
+      "reason": "fallback; selected output visible but internal branch provenance requires explicit read-only exposure",
+      "selected": false
+    }
+  ],
+  "candidate_synthesis_count": 0,
+  "observation_seam_candidate_count": 4,
+  "primary_multi_candidate_observability": "NOMINAL_AND_SELECTED_NATIVE_ONLY_IN_RUN_PY",
+  "richer_native_set_observability": "AVAILABLE_WHEN_FROZEN_RUNTIME_ALREADY_GENERATES_ALTERNATIVES",
+  "scope": "DESIGN_ONLY",
+  "selected_seam": "S1_AFTER_ACCEPT_BEFORE_PROPAGATE",
+  "source_audit": {
+    "dt": {
+      "expression": "dt",
+      "line": 19,
+      "path": "run.py"
+    },
+    "l0": {
+      "lines": [
+        8,
+        22
+      ],
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/current_feasibility_certificate.py"
+    },
+    "l1": {
+      "lines": [
+        10,
+        18
+      ],
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/segment_certificate.py"
+    },
+    "map": {
+      "lines": [
+        52,
+        79
+      ],
+      "object": "GSplatLoader(path_to_gsplat, device)",
+      "path": "run.py"
+    },
+    "native_multi_candidate": {
+      "lines": [
+        149,
+        195
+      ],
+      "path": "reproduction/cross_dataset/core_v1_cross_environment_activation_portability_audit_v1/benchmark/source_runtime.py"
+    },
+    "nominal_candidate": {
+      "expression": "u_des",
+      "lines": [
+        118,
+        127
+      ],
+      "path": "run.py"
+    },
+    "plant_update": {
+      "line": 147,
+      "path": "run.py"
+    },
+    "selected_candidate": {
+      "acceptance": "cbf.solver_success",
+      "expression": "u",
+      "lines": [
+        132,
+        143
+      ],
+      "path": "run.py"
+    },
+    "state": {
+      "expression": "x",
+      "lines": [
+        100,
+        116
+      ],
+      "p": "x[:3]",
+      "path": "run.py",
+      "v": "x[3:]"
+    },
+    "trial_step": {
+      "lines": [
+        98,
+        116
+      ],
+      "path": "run.py"
+    }
+  },
+  "upstream_sha": "a7fd936804284a299467f1bfcc76deab12fdf0c3"
+}

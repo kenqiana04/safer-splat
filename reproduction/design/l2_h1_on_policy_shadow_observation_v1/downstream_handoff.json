@@ -1,0 +1,19 @@
+{
+  "authority_granted_for_next_task": false,
+  "final_status": "PASS_L2_H1_ON_POLICY_SHADOW_OBSERVATION_DESIGN_V1",
+  "formal_collection_allowed": false,
+  "handoff_status": "READY_FOR_ONLY_NEXT_TASK",
+  "only_next_task": "IMPLEMENT_L2_H1_ON_POLICY_SHADOW_INSTRUMENTATION_V1",
+  "phase0_first": true,
+  "prerequisites": [
+    "implement schemas and one-way interfaces",
+    "pass static zero-feedback review",
+    "pass Phase 0 fault tests",
+    "pass Phase 1 equivalence",
+    "pass Phase 2 logging completeness",
+    "obtain separate Phase 3 authorization"
+  ],
+  "required_future_patch_boundary": "instrumentation-only copy/enqueue and append-only schemas; no controller math, candidate, map, seed, trial-order, or certifier mutation",
+  "selected_architecture": "post-commit immutable tap plus bounded nonblocking queue plus out-of-process worker",
+  "selected_seam": "after frozen controller accepts u_k and before plant propagation"
+}

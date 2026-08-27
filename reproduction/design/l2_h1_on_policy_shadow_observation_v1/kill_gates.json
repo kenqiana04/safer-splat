@@ -1,0 +1,57 @@
+{
+  "executed_in_this_task": false,
+  "gate_count": 10,
+  "gates": [
+    {
+      "failure_action": "BLOCK_FORMAL_COLLECTION",
+      "id": "G1_CONTROL_TRACE_EQUIVALENCE",
+      "requirement": "observer ON preserves frozen selected actions, branch sequence, returns and termination under pre-frozen equality/tolerances"
+    },
+    {
+      "failure_action": "BLOCK_FORMAL_COLLECTION",
+      "id": "G2_U_K_COMPLETENESS",
+      "requirement": "zero missing numeric selected u_k in complete payloads and all intended steps reconciled"
+    },
+    {
+      "failure_action": "BLOCK_FORMAL_COLLECTION",
+      "id": "G3_REACHABILITY_COMPLETENESS",
+      "requirement": "explicit L0/L1/candidate/L2 reachability for every complete payload"
+    },
+    {
+      "failure_action": "BLOCK_FORMAL_COLLECTION",
+      "id": "G4_MAP_AUTHORITY_COMPLETENESS",
+      "requirement": "every map ref resolves to immutable content and robot/margin/rho contract"
+    },
+    {
+      "failure_action": "BLOCK_IMPLEMENTATION_AND_COLLECTION",
+      "id": "G5_ZERO_FEEDBACK",
+      "requirement": "no shadow-result consumer, callback, return queue or shared mutable control object"
+    },
+    {
+      "failure_action": "BLOCK_FORMAL_COLLECTION",
+      "id": "G6_QUEUE_NONBLOCKING",
+      "requirement": "full/unavailable queue never blocks or changes controller path"
+    },
+    {
+      "failure_action": "EXCLUDE_INVALID_SECONDARY_AND_BLOCK_IF_SELECTED_PROVENANCE_FAILS",
+      "id": "G7_CANDIDATE_PROVENANCE",
+      "requirement": "all secondary candidates existed before observation; synthesis count zero"
+    },
+    {
+      "failure_action": "INVALIDATE_FORMAL_COHORT",
+      "id": "G8_PROTOCOL_FREEZE",
+      "requirement": "manifest/config/schema/analysis/stopping rule frozen before Phase 3 results"
+    },
+    {
+      "failure_action": "BLOCK_FORMAL_COLLECTION",
+      "id": "G9_STATE_ACTION_ALIGNMENT",
+      "requirement": "all anti-off-by-one joins and H1 recomputations pass"
+    },
+    {
+      "failure_action": "BLOCK_FORMAL_COLLECTION",
+      "id": "G10_HEALTH_STATUS_SEPARATION",
+      "requirement": "zero observer/instrumentation failures classified as L2 UNKNOWN"
+    }
+  ],
+  "schema_version": "L2_H1_ON_POLICY_SHADOW_KILL_GATES_V1"
+}

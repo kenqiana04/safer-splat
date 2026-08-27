@@ -1,0 +1,180 @@
+{
+  "checked_at_utc": "2026-08-27T12:57:20.705225+00:00",
+  "manifest_authority": "reproduction/replay/l2_h1_shadow_frozen_replay_v1/audit/protected_source_audit.json",
+  "phase": "start",
+  "protected_blob_count": 17,
+  "protected_path_diff_count": 0,
+  "records": [
+    {
+      "commit": "17805e67b75412dc21b1a5fff4143ea3bc985f7f",
+      "git_blob": "934ffc879ec0fb9774904d5814c29f8bf3dabff2",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_core_v1_conceptual_closure/module_mapping/CURRENT_TO_CORE_V1_MODULE_MAPPING.md",
+      "role": "PR83 role mapping",
+      "sha256": "a8200b23455b979d982880c6d13040c467d91443bbb964f2a62bc00729c42a29",
+      "size": 828,
+      "verification": "PASS_RAW_GIT_OBJECT_SIZE_MODE_IDENTITY"
+    },
+    {
+      "commit": "17805e67b75412dc21b1a5fff4143ea3bc985f7f",
+      "git_blob": "e5b51f86135a5ec934be20ba00a796895d32c7ab",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_core_v1_conceptual_closure/state_machine/transition_table.csv",
+      "role": "PR83 state machine",
+      "sha256": "6e9a1260a30d57c3912ea08dbe2f5799055ffcbc2f32d427c62182b5e583a435",
+      "size": 1760,
+      "verification": "PASS_RAW_GIT_OBJECT_SIZE_MODE_IDENTITY"
+    },
+    {
+      "commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "git_blob": "b39bd21ff7c24e1dcc5d1f792afd28f390fcd55c",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/adapters/normative_dynamics_adapter.py",
+      "role": "PR84 frozen dynamics",
+      "sha256": "bc85b7c90d57f9935732751c813c742d9c24af729ba6f5716637f3c3334513df",
+      "size": 2213,
+      "verification": "PASS_RAW_GIT_OBJECT_SIZE_MODE_IDENTITY"
+    },
+    {
+      "commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "git_blob": "37ffb5230be2af352f4c86a4976ec84b245f8972",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/state_machine.py",
+      "role": "PR84 executable states",
+      "sha256": "cce6d28645c20979d73b07cfb35be44244b701e42b7132d7eeb1d084e17c16c5",
+      "size": 2075,
+      "verification": "PASS_RAW_GIT_OBJECT_SIZE_MODE_IDENTITY"
+    },
+    {
+      "commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "git_blob": "29e71772fda791e43400343c28ae3defa8c57259",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/proof_artifacts/braking_policy_derivation.md",
+      "role": "PR84 braking witness",
+      "sha256": "f402b5d4c185b3d58971fe3127f43c5b056ffcee3c4d4e7bcba74b6c9079c6d2",
+      "size": 759,
+      "verification": "PASS_RAW_GIT_OBJECT_SIZE_MODE_IDENTITY"
+    },
+    {
+      "commit": "d4f20f44a810afc2d6379853a286a3e18b175221",
+      "git_blob": "9f065f9ea0d14a4ff0bdccc9affc508954923813",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/alternative_library/directional_library.py",
+      "role": "PR86 finite directional library",
+      "sha256": "6ed9d209e31167ded426a0007d99ea4f09c2f5a63a58840d189b1536c9c11e17",
+      "size": 6510,
+      "verification": "PASS_RAW_GIT_OBJECT_SIZE_MODE_IDENTITY"
+    },
+    {
+      "commit": "fbe67f0c607add7f8049d4ce75e8f9e1ae8498d9",
+      "git_blob": "54d4b4cce068382f3634a11488915edb366beafd",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/resume_replica_gt_executable_safety_activated_benchmark_v1/benchmark/one_step_records.csv",
+      "role": "PR87 activated and representative records",
+      "sha256": "9f96bbfe7b5d4c5982d405f38dbc2ea5a04de42021dc58fab7112a49b103410d",
+      "size": 2005494,
+      "verification": "PASS_RAW_GIT_OBJECT_SIZE_MODE_IDENTITY"
+    },
+    {
+      "commit": "047513b5e612f91e63ab1e7054815615cb455fd7",
+      "git_blob": "6221deb166b03ea730ac0af339174116b8bb9067",
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/core_v1_cross_environment_activation_portability_audit_v1/report/REPORT_AUDIT_CORE_V1_CROSS_ENVIRONMENT_ACTIVATION_PORTABILITY_V1.md",
+      "role": "PR89 portability report",
+      "sha256": "b8d2c26f4be09da012c6772d9429da69e17d9936c20c1ae562c67043293f6d06",
+      "size": 9931,
+      "verification": "PASS_RAW_GIT_OBJECT_SIZE_MODE_IDENTITY"
+    },
+    {
+      "commit": "48db34d4e61f019fcd2b578c04cc87eefb00747a",
+      "git_blob": "0e6d5fa376bc622ae733cfbde9c6343f19c1f752",
+      "mode": "100644",
+      "path": "reproduction/causal_audit/core_v1_representative_shortfall_causal_decomposition_v1/report/REPORT_AUDIT_CORE_V1_REPRESENTATIVE_SHORTFALL_CAUSAL_DECOMPOSITION_V1.md",
+      "role": "PR90 causal report",
+      "sha256": "06d73848afc21bf5c3ee91a07cfedb8c4003790914b19b38b677e2ce0fae64e9",
+      "size": 5434,
+      "verification": "PASS_RAW_GIT_OBJECT_SIZE_MODE_IDENTITY"
+    },
+    {
+      "commit": "48db34d4e61f019fcd2b578c04cc87eefb00747a",
+      "git_blob": "1a9082d807644fd96400941db1d8e349ae11e261",
+      "mode": "100644",
+      "path": "reproduction/causal_audit/core_v1_representative_shortfall_causal_decomposition_v1/decision/final_causal_decomposition_decision.json",
+      "role": "PR90 final decision",
+      "sha256": "fcd69424f89dad0df7481debe7a03b119a67be13e805850eea714245a11736e7",
+      "size": 827,
+      "verification": "PASS_RAW_GIT_OBJECT_SIZE_MODE_IDENTITY"
+    },
+    {
+      "commit": "e8ec67d5585f9634ae6a5d4991eac5f9e4abfbae",
+      "git_blob": "06f2e959d5178dc9893d2361d7211720fc2c1feb",
+      "mode": "100644",
+      "path": "reproduction/decision/core_v1_actionable_factor_ranking_v1/report/REPORT_RANK_CORE_V1_ACTIONABLE_FACTORS_AND_SELECT_ONE_BOUNDED_NEXT_STEP_V1.md",
+      "role": "PR91 ranking report",
+      "sha256": "74d3b443d5320b6e8cd745d126f2aa4cb4c5048ba38646219d61ccf896ffba6c",
+      "size": 2587,
+      "verification": "PASS_RAW_GIT_OBJECT_SIZE_MODE_IDENTITY"
+    },
+    {
+      "commit": "e8ec67d5585f9634ae6a5d4991eac5f9e4abfbae",
+      "git_blob": "1467ac34ece52dbc7114359861cf37bd86eef025",
+      "mode": "100644",
+      "path": "reproduction/decision/core_v1_actionable_factor_ranking_v1/actions/action_cards/A1.md",
+      "role": "PR91 selected action card",
+      "sha256": "7b49f2321a08be75c178417d73cf692f174a57143447b485a5157eeff8153d47",
+      "size": 1156,
+      "verification": "PASS_RAW_GIT_OBJECT_SIZE_MODE_IDENTITY"
+    },
+    {
+      "commit": "bc6400beba13d216c3efd56ccdaf22968bcb560b",
+      "git_blob": "82dc0df7bc945668e8857a31a7821be1f2e48957",
+      "mode": "100644",
+      "path": "reproduction/experiment_protocol_freeze_v1/frozen_configs/certified_start_safe.json",
+      "role": "frozen Start-Safe evidence",
+      "sha256": "d03a68989656823e78e92aa20f822bb41d540d52c33096295bec687cdb2b1625",
+      "size": 557,
+      "verification": "PASS_RAW_GIT_OBJECT_SIZE_MODE_IDENTITY"
+    },
+    {
+      "commit": "bc6400beba13d216c3efd56ccdaf22968bcb560b",
+      "git_blob": "7d8c60915152a7812cbe582336e591ea24a32c1c",
+      "mode": "100644",
+      "path": "reproduction/experiment_protocol_freeze_v1/frozen_configs/dt_verification_h1.json",
+      "role": "frozen DT H1",
+      "sha256": "cecbddb135fbff919aef80a816432897629f75bb5876d393faecc038df4ff9c2",
+      "size": 230,
+      "verification": "PASS_RAW_GIT_OBJECT_SIZE_MODE_IDENTITY"
+    },
+    {
+      "commit": "bc6400beba13d216c3efd56ccdaf22968bcb560b",
+      "git_blob": "a91c1e5c06bce86c0fe2b5a9c701b405c82d27bc",
+      "mode": "100644",
+      "path": "reproduction/experiment_protocol_freeze_v1/frozen_configs/dt_verification_h2.json",
+      "role": "frozen DT H2",
+      "sha256": "d95233011d9752ade283fdcb4c27cba037587dfec534d829c45647929daf5e56",
+      "size": 230,
+      "verification": "PASS_RAW_GIT_OBJECT_SIZE_MODE_IDENTITY"
+    },
+    {
+      "commit": "0fb8698e8590aead60032487fc3321c07f2fd99c",
+      "git_blob": "861f17cf9c64ed63e8c5f943d1d3c882db50c0bf",
+      "mode": "100644",
+      "path": "reproduction/experiment_protocol_freeze_v1/frozen_configs/dt_verification_h3.json",
+      "role": "frozen DT H3",
+      "sha256": "4a34c31934ac0743793c9e2ccc5de085c766eb6e1f4becc02bd607b56a7fa0e9",
+      "size": 268,
+      "verification": "PASS_RAW_GIT_OBJECT_SIZE_MODE_IDENTITY"
+    },
+    {
+      "commit": "bc6400beba13d216c3efd56ccdaf22968bcb560b",
+      "git_blob": "7199ba1b746baacc352488f5316e5b6b7c024de4",
+      "mode": "100644",
+      "path": "reproduction/experiment_protocol_freeze_v1/frozen_configs/v4c_hce_v0.json",
+      "role": "frozen HCE recovery",
+      "sha256": "62d42b4102e091366c4ea9901aef14228ecf956a4bdc6f2c7a943f33fd877693",
+      "size": 494,
+      "verification": "PASS_RAW_GIT_OBJECT_SIZE_MODE_IDENTITY"
+    }
+  ],
+  "status": "PASS_PROTECTED_SOURCE_START_AUDIT"
+}

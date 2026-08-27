@@ -1,0 +1,133 @@
+{
+  "$id": "safer-splat://schemas/map-authority-manifest-v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "map_artifacts": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "artifact_id": {
+            "type": "string"
+          },
+          "immutable": {
+            "const": true
+          },
+          "reference": {
+            "type": "string"
+          },
+          "representation": {
+            "type": "string"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "size": {
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "artifact_id",
+          "reference",
+          "sha256",
+          "size",
+          "representation",
+          "immutable"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "map_contract_version": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "map_static_within_trial": {
+      "type": "boolean"
+    },
+    "robot_contract": {
+      "properties": {
+        "effective_radius": {
+          "minimum": 0,
+          "type": "number"
+        },
+        "rho_seg": {
+          "minimum": 0,
+          "type": "number"
+        },
+        "robot_radius": {
+          "minimum": 0,
+          "type": "number"
+        },
+        "safety_margin": {
+          "minimum": 0,
+          "type": "number"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "robot_radius",
+        "safety_margin",
+        "effective_radius",
+        "rho_seg",
+        "sha256"
+      ],
+      "type": "object"
+    },
+    "run_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "MAP_AUTHORITY_MANIFEST_V1"
+    },
+    "snapshot_index": {
+      "items": {
+        "properties": {
+          "content_identity": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "map_snapshot_ref": {
+            "type": "string"
+          },
+          "valid_from_step": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "valid_through_step": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "map_snapshot_ref",
+          "content_identity",
+          "valid_from_step",
+          "valid_through_step"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "run_id",
+    "map_static_within_trial",
+    "map_contract_version",
+    "map_artifacts",
+    "snapshot_index",
+    "robot_contract"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,20 @@
+{
+  "case_name": "FEASIBLE_NONINVASIVE_ON_POLICY_SHADOW_DESIGN",
+  "conditions": {
+    "controller_mathematics_change_required": false,
+    "explicit_shadow_pipeline_reachability_feasible": true,
+    "future_equivalence_gate_defined": true,
+    "map_authority_recoverable": true,
+    "native_multi_candidate_capture_when_present": true,
+    "observation_seam_found": true,
+    "selected_candidate_stable": true,
+    "shadow_result_isolated": true,
+    "x_k_u_k_dt_complete_capture_feasible": true
+  },
+  "final_decision": "FREEZE_ON_POLICY_SHADOW_PROTOCOL_AND_IMPLEMENT_NONINVASIVE_INSTRUMENTATION",
+  "final_status": "PASS_L2_H1_ON_POLICY_SHADOW_OBSERVATION_DESIGN_V1",
+  "only_next_task": "IMPLEMENT_L2_H1_ON_POLICY_SHADOW_INSTRUMENTATION_V1",
+  "secondary_multi_candidate_limitation": "Primary run.py exposes nominal and selected native candidates; richer alternatives are recorded only when the frozen controller already creates them. Otherwise secondary alternative analysis is NOT_ESTIMABLE.",
+  "selected_case": "CASE_A",
+  "unresolved_blockers": []
+}

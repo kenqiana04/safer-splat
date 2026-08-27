@@ -1,0 +1,131 @@
+{
+  "$id": "safer-splat://schemas/native-candidate-group-v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "candidate_group_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "candidate_synthesis_count": {
+      "const": 0
+    },
+    "candidates": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "H1_segment_hash": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "backend_identity": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "candidate_hash": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "candidate_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "candidate_index": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "candidate_origin": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "candidate_role": {
+            "enum": [
+              "SELECTED_EXECUTED",
+              "NOMINAL_NATIVE",
+              "ALTERNATIVE_NATIVE",
+              "REJECTED_NATIVE",
+              "OTHER_FROZEN_ROLE"
+            ]
+          },
+          "existed_before_shadow_observation": {
+            "const": true
+          },
+          "l2_reason": {
+            "type": "string"
+          },
+          "l2_status": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "UNKNOWN",
+              "NOT_EVALUATED"
+            ]
+          },
+          "p_k2": {
+            "items": {
+              "type": "number"
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "selected_for_execution": {
+            "type": "boolean"
+          },
+          "u": {
+            "items": {
+              "type": "number"
+            },
+            "maxItems": 3,
+            "minItems": 3,
+            "type": "array"
+          }
+        },
+        "required": [
+          "candidate_id",
+          "candidate_index",
+          "candidate_role",
+          "candidate_origin",
+          "u",
+          "candidate_hash",
+          "existed_before_shadow_observation",
+          "selected_for_execution",
+          "l2_status",
+          "l2_reason",
+          "p_k2",
+          "H1_segment_hash",
+          "backend_identity"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "decision_commit_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "native_candidate_count": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "native_candidate_set_hash": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "candidate_group_id",
+    "decision_commit_id",
+    "native_candidate_count",
+    "native_candidate_set_hash",
+    "candidate_synthesis_count",
+    "candidates"
+  ],
+  "type": "object"
+}

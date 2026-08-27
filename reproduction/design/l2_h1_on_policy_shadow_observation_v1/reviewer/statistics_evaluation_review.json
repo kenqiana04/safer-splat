@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "clustering": "PASS",
+    "denominator": "PASS",
+    "pilot_formal_separation": "PASS",
+    "primary_executed_cohort": "PASS",
+    "protocol_freeze": "PASS",
+    "secondary_native_cohort": "PASS",
+    "stopping_rule": "PASS"
+  },
+  "critical_blockers": [],
+  "major_issues": [],
+  "minor_issues": [
+    "Historical event rates remain planning priors with missingness and clustering bias."
+  ],
+  "prohibited_claims": [
+    "causal safety gain",
+    "iid-step significance",
+    "outcome-conditioned stopping"
+  ],
+  "recommended_case": "CASE_A",
+  "reviewer": "R3_STATISTICS_EVALUATION",
+  "supported_claims": [
+    "prevalence under a future frozen-controller cohort with explicit denominators"
+  ],
+  "verdict": "PASS_DESIGN_ONLY"
+}
