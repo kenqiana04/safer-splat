@@ -1,0 +1,37 @@
+{
+  "blockers": [],
+  "calculation_spot_checks": {
+    "N_all_recomputed": true,
+    "N_formal_recomputed": true,
+    "N_not_replayable_recomputed": true,
+    "all_results_architecture_reached": true,
+    "candidate_inputs_preserved": true,
+    "case_A_supported_by_increment": true,
+    "controller_authority_zero": true,
+    "determinism_pass": true,
+    "differential_pass": true,
+    "endpoint_fallback_zero": true,
+    "evaluated_recomputed": true,
+    "manifest_row_ids_unique": true,
+    "multi_candidate_disagreement_recomputed": true,
+    "multi_candidate_group_count_recomputed": true,
+    "not_replayable_never_called": true,
+    "replayability_partition": true,
+    "report_has_required_negative_claims": true,
+    "result_row_ids_unique": true,
+    "result_set_equals_predefined_primary_set": true,
+    "selection_bias_prominent": true,
+    "status_partition_recomputed": true,
+    "stored_l1_increment_recomputed": true,
+    "unknown_rate_denominator_recomputed": true
+  },
+  "failed_checks": [],
+  "overall_assessment": "READY_TO_SHARE_WITH_EXPLICIT_CAVEATS",
+  "question_validated": "Whether frozen historical evidence supports a replayable, deterministic, candidate-dependent L2/H1 information increment without control-performance claims",
+  "required_caveats": [
+    "The replayable and architecture-reached subsets are source- and missingness-selected.",
+    "The 18 L1 PASS/L2 FAIL rows are offline certificate signals, not prevented collisions or improved closed-loop performance.",
+    "No on-policy observation or controller authority occurred."
+  ],
+  "skill_workflow": "data-analytics:validate-data"
+}

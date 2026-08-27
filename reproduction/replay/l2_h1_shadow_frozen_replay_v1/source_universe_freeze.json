@@ -1,0 +1,28 @@
+{
+  "N_all": 6853,
+  "class_counts_before_replay": {
+    "FORMAL_REPLAYABLE": 2594,
+    "NOT_REPLAYABLE": 4259
+  },
+  "deduplication": "PR87 representative one-step rows are superseded by byte-identified PR89 normalized records; PR90 derived diagnostics add no rows",
+  "definition": "PR89 all normalized one-step candidate rows plus PR87 activated one-step rows not represented in PR89, expanded only with logged available B3 directional candidates, plus PR87 frozen rollout-step rows retained as genuine historical rows even when the numeric candidate is absent",
+  "determinism_repetition_contract": "two complete passes over every primary-analysis-eligible manifest row",
+  "differential_sample_selection_rule": "first 8 primary-analysis-eligible rows per backend identity after stable sort by row_id",
+  "historical_replay_manifest_count": 1,
+  "l2_result_field_count": 0,
+  "manifest_sha256": "943924d880671561fc58fb180fb98ee06825a312cfb0ceaf91eb09cd4417b53c",
+  "map_generation_count": 0,
+  "new_data_collection_count": 0,
+  "pr94_head": "9bffdd2db585974ee61684cebfc99229aa52c47c",
+  "precall_missingness_reason_counts": {
+    "MISSING_CANDIDATE_IDENTITY": 792,
+    "MISSING_U_K": 4259
+  },
+  "replay_cohort_definition_count": 1,
+  "replay_execution_started": false,
+  "source_inventory_sha256": "1d1a749857de102af78f8ec931d49af739dc2c2380e5d4ca902831f124c5f558",
+  "source_universe_semantic_sha256": "153f76ed2f2dc130b96765a600faea5e55ba580f7a96cf31bda728a526ff8051",
+  "status": "PASS_SOURCE_UNIVERSE_FROZEN_BEFORE_REPLAY",
+  "synthetic_candidate_generation_count": 0,
+  "synthetic_state_generation_count": 0
+}

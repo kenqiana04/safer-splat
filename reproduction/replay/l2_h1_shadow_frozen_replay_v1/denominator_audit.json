@@ -1,0 +1,47 @@
+{
+  "N_L2_FAIL": 18,
+  "N_L2_PASS": 770,
+  "N_L2_UNKNOWN": 0,
+  "N_L2_candidate_evaluated": 788,
+  "N_L2_not_reached": 270,
+  "N_L2_reachability_unknown": 5795,
+  "N_L2_reached": 788,
+  "N_all": 6853,
+  "N_diagnostic_reconstructable": 0,
+  "N_formal_replayable": 2594,
+  "N_not_replayable": 4259,
+  "identity_checks": {
+    "L2_status_partition_equals_evaluated": true,
+    "evaluated_equals_architecture_reached": true,
+    "not_replayable_counted_as_L2_unknown": 0,
+    "replayability_partition_equals_N_all": true
+  },
+  "rates": {
+    "architecture_opportunity_coverage": {
+      "denominator": 788,
+      "numerator": 788,
+      "value": 1.0
+    },
+    "conditional_L2_FAIL": {
+      "denominator": 788,
+      "numerator": 18,
+      "value": 0.02284263959390863
+    },
+    "conditional_L2_PASS": {
+      "denominator": 788,
+      "numerator": 770,
+      "value": 0.9771573604060914
+    },
+    "conditional_L2_UNKNOWN": {
+      "denominator": 788,
+      "numerator": 0,
+      "value": 0.0
+    },
+    "replay_coverage": {
+      "denominator": 6853,
+      "numerator": 2594,
+      "value": 0.3785203560484459
+    }
+  },
+  "status": "PASS_DENOMINATOR_AUDIT"
+}

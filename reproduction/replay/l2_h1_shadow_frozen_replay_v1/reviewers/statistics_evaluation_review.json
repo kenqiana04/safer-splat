@@ -1,0 +1,23 @@
+{
+  "critical_blockers": [],
+  "major_issues": [],
+  "minor_issues": [
+    "Coverage and primary rows are source- and missingness-selected; do not generalize prevalence"
+  ],
+  "prohibited_claims": [
+    "collision prevention",
+    "closed-loop safety improvement",
+    "runtime performance",
+    "recursive feasibility",
+    "physical-world guarantee",
+    "deployment readiness"
+  ],
+  "recommended_case": "CASE_A",
+  "reviewer": "R3_STATISTICS_EVALUATION",
+  "supported_claims": [
+    "Pre-result universe freeze",
+    "Explicit denominators",
+    "NOT_REPLAYABLE separated from UNKNOWN"
+  ],
+  "verdict": "PASS_WITH_BOUNDED_INTERPRETATION"
+}

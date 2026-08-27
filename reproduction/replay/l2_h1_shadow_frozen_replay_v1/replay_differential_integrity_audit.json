@@ -1,0 +1,391 @@
+{
+  "checks": [
+    {
+      "backend_identity": "CONSERVATIVE_SIGNED_DISTANCE_LIPSCHITZ_INTERVAL",
+      "candidate_hash_match": true,
+      "direct_reason": "SEGMENT_CONSERVATIVE_SAFE",
+      "direct_status": "PASS",
+      "endpoint_match": true,
+      "environment": "E6_FLIGHT_SAFER",
+      "independent_p_k1": [
+        0.02497136025498578,
+        0.22684510154465173,
+        -0.0332186319671926
+      ],
+      "independent_p_k2": [
+        0.0252213234410998,
+        0.22659513293715688,
+        -0.032968707188085034
+      ],
+      "reason_match": true,
+      "row_id": "03849e61284d30b392d9a149f7a204a265e91098ea112bdb4abc047cd5c936c7",
+      "shadow_formal_reason": "SEGMENT_CONSERVATIVE_SAFE",
+      "shadow_status": "PASS",
+      "status_match": true,
+      "value_match": true
+    },
+    {
+      "backend_identity": "CONSERVATIVE_SIGNED_DISTANCE_LIPSCHITZ_INTERVAL",
+      "candidate_hash_match": true,
+      "direct_reason": "SEGMENT_CONSERVATIVE_SAFE",
+      "direct_status": "PASS",
+      "endpoint_match": true,
+      "environment": "E6_FLIGHT_SAFER",
+      "independent_p_k1": [
+        0.08472095324862243,
+        0.26134154514349844,
+        0.02407550251945206
+      ],
+      "independent_p_k2": [
+        0.08497086279832972,
+        0.26109164121427797,
+        0.023825608437147153
+      ],
+      "reason_match": true,
+      "row_id": "072f72b699a9c1e211d542e8d756261e51e63432c6cf43aa7015a391c8b446ff",
+      "shadow_formal_reason": "SEGMENT_CONSERVATIVE_SAFE",
+      "shadow_status": "PASS",
+      "status_match": true,
+      "value_match": true
+    },
+    {
+      "backend_identity": "CONSERVATIVE_SIGNED_DISTANCE_LIPSCHITZ_INTERVAL",
+      "candidate_hash_match": true,
+      "direct_reason": "SEGMENT_CONSERVATIVE_SAFE",
+      "direct_status": "PASS",
+      "endpoint_match": true,
+      "environment": "E6_FLIGHT_SAFER",
+      "independent_p_k1": [
+        -0.07146183530995054,
+        -0.06677212173928965,
+        -0.003096046589514255
+      ],
+      "independent_p_k2": [
+        -0.07129024291713758,
+        -0.06652212173936671,
+        -0.0031370446454477736
+      ],
+      "reason_match": true,
+      "row_id": "09b0c11b553a67da02f82ecd880dfbcdec9cdcab73070183387593bcf5ba6e2b",
+      "shadow_formal_reason": "SEGMENT_CONSERVATIVE_SAFE",
+      "shadow_status": "PASS",
+      "status_match": true,
+      "value_match": true
+    },
+    {
+      "backend_identity": "CONSERVATIVE_SIGNED_DISTANCE_LIPSCHITZ_INTERVAL",
+      "candidate_hash_match": true,
+      "direct_reason": "SEGMENT_CONSERVATIVE_SAFE",
+      "direct_status": "PASS",
+      "endpoint_match": true,
+      "environment": "E6_FLIGHT_SAFER",
+      "independent_p_k1": [
+        0.44889437958440764,
+        0.09502911395283774,
+        -0.021903676009884045
+      ],
+      "independent_p_k2": [
+        0.44864447338677854,
+        0.09477922651720938,
+        -0.02185608410841603
+      ],
+      "reason_match": true,
+      "row_id": "130f8fd472238001e1687c8e1ecbc0dffbd5716ba7bc0c7d93e9eb71f98dbe8e",
+      "shadow_formal_reason": "SEGMENT_CONSERVATIVE_SAFE",
+      "shadow_status": "PASS",
+      "status_match": true,
+      "value_match": true
+    },
+    {
+      "backend_identity": "CONSERVATIVE_SIGNED_DISTANCE_LIPSCHITZ_INTERVAL",
+      "candidate_hash_match": true,
+      "direct_reason": "SEGMENT_CONSERVATIVE_SAFE",
+      "direct_status": "PASS",
+      "endpoint_match": true,
+      "environment": "E6_FLIGHT_SAFER",
+      "independent_p_k1": [
+        0.43604748168310425,
+        -0.10711911354429936,
+        0.037830529513596584
+      ],
+      "independent_p_k2": [
+        0.43579754908708945,
+        -0.10686918801876183,
+        0.03758059230341792
+      ],
+      "reason_match": true,
+      "row_id": "137f1b299d5839f53cca666bc8b635dd9a7b595e1c3bce517552572bfa7c01a1",
+      "shadow_formal_reason": "SEGMENT_CONSERVATIVE_SAFE",
+      "shadow_status": "PASS",
+      "status_match": true,
+      "value_match": true
+    },
+    {
+      "backend_identity": "CONSERVATIVE_SIGNED_DISTANCE_LIPSCHITZ_INTERVAL",
+      "candidate_hash_match": true,
+      "direct_reason": "SEGMENT_CONSERVATIVE_SAFE",
+      "direct_status": "PASS",
+      "endpoint_match": true,
+      "environment": "E6_FLIGHT_SAFER",
+      "independent_p_k1": [
+        0.46030768649639175,
+        0.04449644359884668,
+        0.037294134486644426
+      ],
+      "independent_p_k2": [
+        0.46005773242913844,
+        0.04424650332423967,
+        0.03704418962514294
+      ],
+      "reason_match": true,
+      "row_id": "15e49ae847bf6735f7a82afef18d9fedb4780ddf17e8594d1b3fe4d8d67b29a8",
+      "shadow_formal_reason": "SEGMENT_CONSERVATIVE_SAFE",
+      "shadow_status": "PASS",
+      "status_match": true,
+      "value_match": true
+    },
+    {
+      "backend_identity": "CONSERVATIVE_SIGNED_DISTANCE_LIPSCHITZ_INTERVAL",
+      "candidate_hash_match": true,
+      "direct_reason": "SEGMENT_CONSERVATIVE_SAFE",
+      "direct_status": "PASS",
+      "endpoint_match": true,
+      "environment": "E6_FLIGHT_SAFER",
+      "independent_p_k1": [
+        0.4625,
+        0.01,
+        -0.02
+      ],
+      "independent_p_k2": [
+        0.46225013476031235,
+        0.009999999996388988,
+        -0.019999999988540625
+      ],
+      "reason_match": true,
+      "row_id": "18097cac58c030c595214aa47624e9e50039e18aff3e98e496e69f0c3b7ea1cb",
+      "shadow_formal_reason": "SEGMENT_CONSERVATIVE_SAFE",
+      "shadow_status": "PASS",
+      "status_match": true,
+      "value_match": true
+    },
+    {
+      "backend_identity": "CONSERVATIVE_SIGNED_DISTANCE_LIPSCHITZ_INTERVAL",
+      "candidate_hash_match": true,
+      "direct_reason": "SEGMENT_CONSERVATIVE_SAFE",
+      "direct_status": "PASS",
+      "endpoint_match": true,
+      "environment": "E6_FLIGHT_SAFER",
+      "independent_p_k1": [
+        0.02497136025498578,
+        0.22684510154465173,
+        -0.0332186319671926
+      ],
+      "independent_p_k2": [
+        0.0252213234410998,
+        0.22659513293715688,
+        -0.032968707188085034
+      ],
+      "reason_match": true,
+      "row_id": "183d448b035d07222492afa1233fdabe9a8d4dc3483a2d803424fb6f87cd13d7",
+      "shadow_formal_reason": "SEGMENT_CONSERVATIVE_SAFE",
+      "shadow_status": "PASS",
+      "status_match": true,
+      "value_match": true
+    },
+    {
+      "backend_identity": "EXACT_ANALYTIC_SPHERE_SEGMENT_MINIMUM",
+      "candidate_hash_match": true,
+      "direct_reason": "SEGMENT_EXACT_SAFE",
+      "direct_status": "PASS",
+      "endpoint_match": true,
+      "environment": "E1_REPLICA_GT_FINE",
+      "independent_p_k1": [
+        2.1569961403584066,
+        0.12523484230041504,
+        3.1145293568800794
+      ],
+      "independent_p_k2": [
+        2.1571836707285725,
+        0.12523484230041504,
+        3.1107171014256605
+      ],
+      "reason_match": true,
+      "row_id": "0022e7ff2d6e2f9894d38569f4a702a48a78934bf00da7ff968b2b52c6e09799",
+      "shadow_formal_reason": "SEGMENT_EXACT_SAFE",
+      "shadow_status": "PASS",
+      "status_match": true,
+      "value_match": true
+    },
+    {
+      "backend_identity": "EXACT_ANALYTIC_SPHERE_SEGMENT_MINIMUM",
+      "candidate_hash_match": true,
+      "direct_reason": "SEGMENT_EXACT_SAFE",
+      "direct_status": "PASS",
+      "endpoint_match": true,
+      "environment": "E1_REPLICA_GT_FINE",
+      "independent_p_k1": [
+        0.25724658258763133,
+        2.925234794616699,
+        1.971600147688498
+      ],
+      "independent_p_k2": [
+        0.2615077133063055,
+        2.925234794616699,
+        1.9688058738564669
+      ],
+      "reason_match": true,
+      "row_id": "00e9ac52391efe1e0a1a77553d582eddb791eabf6f24e052e0546e5e12b930cb",
+      "shadow_formal_reason": "SEGMENT_EXACT_SAFE",
+      "shadow_status": "PASS",
+      "status_match": true,
+      "value_match": true
+    },
+    {
+      "backend_identity": "EXACT_ANALYTIC_SPHERE_SEGMENT_MINIMUM",
+      "candidate_hash_match": true,
+      "direct_reason": "SEGMENT_EXACT_SAFE",
+      "direct_status": "PASS",
+      "endpoint_match": true,
+      "environment": "E1_REPLICA_GT_FINE",
+      "independent_p_k1": [
+        1.093682191320988,
+        0.1701404605021442,
+        1.8324435141206423
+      ],
+      "independent_p_k2": [
+        1.0924395994543157,
+        0.1698905165076494,
+        1.8333453710064962
+      ],
+      "reason_match": true,
+      "row_id": "0165ad324f9b14b27e038a6e79b7ed29656846fc96bc3a38cc1f9057a9a5b32d",
+      "shadow_formal_reason": "SEGMENT_EXACT_SAFE",
+      "shadow_status": "PASS",
+      "status_match": true,
+      "value_match": true
+    },
+    {
+      "backend_identity": "EXACT_ANALYTIC_SPHERE_SEGMENT_MINIMUM",
+      "candidate_hash_match": true,
+      "direct_reason": "SEGMENT_EXACT_SAFE",
+      "direct_status": "PASS",
+      "endpoint_match": true,
+      "environment": "E1_REPLICA_GT_FINE",
+      "independent_p_k1": [
+        -1.6038169773820152,
+        2.925234794616699,
+        2.898161252276238
+      ],
+      "independent_p_k2": [
+        -1.6018230506262114,
+        2.925234794616699,
+        2.8962990043896673
+      ],
+      "reason_match": true,
+      "row_id": "0178a7bf56c18fa1433992dda9c756438287b317b9eedf9744915b7facdaa184",
+      "shadow_formal_reason": "SEGMENT_EXACT_SAFE",
+      "shadow_status": "PASS",
+      "status_match": true,
+      "value_match": true
+    },
+    {
+      "backend_identity": "EXACT_ANALYTIC_SPHERE_SEGMENT_MINIMUM",
+      "candidate_hash_match": true,
+      "direct_reason": "SEGMENT_EXACT_SAFE",
+      "direct_status": "PASS",
+      "endpoint_match": true,
+      "environment": "E1_REPLICA_GT_FINE",
+      "independent_p_k1": [
+        2.3198905952019975,
+        2.925234794616699,
+        -0.9069934887802777
+      ],
+      "independent_p_k2": [
+        2.3192710423593583,
+        2.925234794616699,
+        -0.9095895611703656
+      ],
+      "reason_match": true,
+      "row_id": "029ee620552bfa55a120891919108bd164c5209dd921709803fa4fe87a5d329b",
+      "shadow_formal_reason": "SEGMENT_EXACT_SAFE",
+      "shadow_status": "PASS",
+      "status_match": true,
+      "value_match": true
+    },
+    {
+      "backend_identity": "EXACT_ANALYTIC_SPHERE_SEGMENT_MINIMUM",
+      "candidate_hash_match": true,
+      "direct_reason": "SEGMENT_EXACT_SAFE",
+      "direct_status": "PASS",
+      "endpoint_match": true,
+      "environment": "E1_REPLICA_GT_FINE",
+      "independent_p_k1": [
+        1.0897701888249642,
+        0.168370302272346,
+        1.8346514646323615
+      ],
+      "independent_p_k2": [
+        1.0887701888249643,
+        0.16819087048019554,
+        1.8346583265501957
+      ],
+      "reason_match": true,
+      "row_id": "02e9c6f926213a861d603a56d31ac16b1704ea06655dd570e3e0ee650f955499",
+      "shadow_formal_reason": "SEGMENT_EXACT_SAFE",
+      "shadow_status": "PASS",
+      "status_match": true,
+      "value_match": true
+    },
+    {
+      "backend_identity": "EXACT_ANALYTIC_SPHERE_SEGMENT_MINIMUM",
+      "candidate_hash_match": true,
+      "direct_reason": "SEGMENT_EXACT_UNSAFE",
+      "direct_status": "FAIL",
+      "endpoint_match": true,
+      "environment": "E1_REPLICA_GT_FINE",
+      "independent_p_k1": [
+        1.0896029364076605,
+        0.1688413334486395,
+        1.8346389642377434
+      ],
+      "independent_p_k2": [
+        1.0881654364095568,
+        0.16859146224384444,
+        1.8348889381700593
+      ],
+      "reason_match": true,
+      "row_id": "0317dbc71233c456697a47ffb733093df113a97e481a099163eb608e1c450c2d",
+      "shadow_formal_reason": "SEGMENT_EXACT_UNSAFE",
+      "shadow_status": "FAIL",
+      "status_match": true,
+      "value_match": true
+    },
+    {
+      "backend_identity": "EXACT_ANALYTIC_SPHERE_SEGMENT_MINIMUM",
+      "candidate_hash_match": true,
+      "direct_reason": "SEGMENT_EXACT_SAFE",
+      "direct_status": "PASS",
+      "endpoint_match": true,
+      "environment": "E1_REPLICA_GT_FINE",
+      "independent_p_k1": [
+        1.0894322788267148,
+        0.16695720874346553,
+        1.8360612962369254
+      ],
+      "independent_p_k2": [
+        1.087592611576554,
+        0.1667266303537852,
+        1.8372702244937478
+      ],
+      "reason_match": true,
+      "row_id": "031ef28bee605ded2379d6c958a1455d1e61c74ba5ea7a7dce530f3f613ca286",
+      "shadow_formal_reason": "SEGMENT_EXACT_SAFE",
+      "shadow_status": "PASS",
+      "status_match": true,
+      "value_match": true
+    }
+  ],
+  "sample_count": 16,
+  "selection_rule": "first 8 primary-analysis-eligible rows per backend identity after stable sort by row_id",
+  "status": "PASS_REPLAY_DIFFERENTIAL_INTEGRITY"
+}

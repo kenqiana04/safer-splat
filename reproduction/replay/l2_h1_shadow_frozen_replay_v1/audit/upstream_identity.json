@@ -1,0 +1,89 @@
+{
+  "pr94_expected_head": "9bffdd2db585974ee61684cebfc99229aa52c47c",
+  "pr94_is_ancestor": true,
+  "pr_count": 10,
+  "prs": [
+    {
+      "baseRefName": "fas-cbf-module-evidence-assembly-v1",
+      "headRefName": "fas-cbf-core-v1-conceptual-closure",
+      "headRefOid": "17805e67b75412dc21b1a5fff4143ea3bc985f7f",
+      "isDraft": true,
+      "number": 83,
+      "state": "OPEN"
+    },
+    {
+      "baseRefName": "fas-cbf-core-v1-conceptual-closure",
+      "headRefName": "fas-cbf-unified-executable-safety-certifier-v1",
+      "headRefOid": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+      "isDraft": true,
+      "number": 84,
+      "state": "OPEN"
+    },
+    {
+      "baseRefName": "replica-gt-executable-safety-activated-benchmark-v1",
+      "headRefName": "replica-gt-executable-safety-method-matrix-v1",
+      "headRefOid": "d4f20f44a810afc2d6379853a286a3e18b175221",
+      "isDraft": true,
+      "number": 86,
+      "state": "OPEN"
+    },
+    {
+      "baseRefName": "replica-gt-executable-safety-method-matrix-v1",
+      "headRefName": "resume-replica-gt-executable-safety-activated-benchmark-v1",
+      "headRefOid": "fbe67f0c607add7f8049d4ce75e8f9e1ae8498d9",
+      "isDraft": true,
+      "number": 87,
+      "state": "OPEN"
+    },
+    {
+      "baseRefName": "research-direction-novelty-data-winnability-audit-v1",
+      "headRefName": "core-v1-cross-environment-activation-portability-audit-v1",
+      "headRefOid": "047513b5e612f91e63ab1e7054815615cb455fd7",
+      "isDraft": true,
+      "number": 89,
+      "state": "OPEN"
+    },
+    {
+      "baseRefName": "core-v1-cross-environment-activation-portability-audit-v1",
+      "headRefName": "core-v1-representative-shortfall-causal-decomposition-v1",
+      "headRefOid": "48db34d4e61f019fcd2b578c04cc87eefb00747a",
+      "isDraft": true,
+      "number": 90,
+      "state": "OPEN"
+    },
+    {
+      "baseRefName": "core-v1-representative-shortfall-causal-decomposition-v1",
+      "headRefName": "core-v1-actionable-factor-ranking-v1",
+      "headRefOid": "e8ec67d5585f9634ae6a5d4991eac5f9e4abfbae",
+      "isDraft": true,
+      "number": 91,
+      "state": "OPEN"
+    },
+    {
+      "baseRefName": "core-v1-actionable-factor-ranking-v1",
+      "headRefName": "core-causal-architecture-specification-v1",
+      "headRefOid": "dfd9bce2633e542fdb72a1805f79cc4feeeebc3a",
+      "isDraft": true,
+      "number": 92,
+      "state": "OPEN"
+    },
+    {
+      "baseRefName": "core-causal-architecture-specification-v1",
+      "headRefName": "core-v2-causal-increment-specification-v1",
+      "headRefOid": "1df09c56eedb53d46f9347695026086319738a89",
+      "isDraft": true,
+      "number": 93,
+      "state": "OPEN"
+    },
+    {
+      "baseRefName": "core-v2-causal-increment-specification-v1",
+      "headRefName": "l2-h1-shadow-certifier-v1",
+      "headRefOid": "9bffdd2db585974ee61684cebfc99229aa52c47c",
+      "isDraft": true,
+      "number": 94,
+      "state": "OPEN"
+    }
+  ],
+  "status": "PASS_FROZEN_REPLAY_UPSTREAM_IDENTITY",
+  "task_start_head": "9bffdd2db585974ee61684cebfc99229aa52c47c"
+}
