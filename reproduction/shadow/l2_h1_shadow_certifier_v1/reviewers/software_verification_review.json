@@ -1,0 +1,18 @@
+{
+  "case_vote": "CASE_A",
+  "critical_blockers": [],
+  "independence_declaration": "Reviewed scoped implementation evidence before FINAL_CASE_DECISION.json was written.",
+  "major_issues": [],
+  "minor_issues": [
+    "pytest unavailable; unittest is authoritative for this task"
+  ],
+  "permitted_claim": "Specification-faithful shadow implementation of the local candidate-dependent H1 map-relative certifier.",
+  "prohibited_claim": "No efficacy, collision improvement, recursive feasibility, physical-world, real-time, deployment, or safe-stop claim.",
+  "reviewer": "R3_SOFTWARE_VERIFICATION",
+  "supports": [
+    "direct differential, oracle, determinism, exception, and tri-state tests pass",
+    "endpoint fallback disabled",
+    "diagnostic cannot alter formal status"
+  ],
+  "verdict": "PASS_CASE_A"
+}

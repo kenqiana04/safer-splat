@@ -1,0 +1,119 @@
+{
+  "candidate_dependence_verdict": "NONZERO_FOR_EVERY_ALPHA_GREATER_THAN_ZERO",
+  "head": "1df09c56eedb53d46f9347695026086319738a89",
+  "normative_model": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1",
+  "pr": 93,
+  "records": [
+    {
+      "checkout_transform_detected": true,
+      "commit": "1df09c56eedb53d46f9347695026086319738a89",
+      "git_blob": "ce40eaea3e1665c6578c1fb761e8d364c14e2157",
+      "identity_authority": "RAW_GIT_BLOB",
+      "mode": "100644",
+      "path": "reproduction/specification/core_v2_causal_increment_specification_v1/CORE_V2_L2_H1_CAUSAL_INCREMENT_SPECIFICATION_V1.md",
+      "sha256": "946f1919117cef33ab53be4c4f43df72a46f78d1af84e1714859d6b46f46fab3",
+      "size": 1179,
+      "verification": "PASS_PR93_RAW_GIT_IDENTITY",
+      "worktree_sha256": "5da6b0f22595800db138ea61885371129bcef1570a39908443bc53370f3fb2b9",
+      "worktree_size": 1192
+    },
+    {
+      "checkout_transform_detected": true,
+      "commit": "1df09c56eedb53d46f9347695026086319738a89",
+      "git_blob": "a9b38320d23e3b0528d34467b3169977c6f1be47",
+      "identity_authority": "RAW_GIT_BLOB",
+      "mode": "100644",
+      "path": "reproduction/specification/core_v2_causal_increment_specification_v1/H1_SEGMENT_CONTRACT.md",
+      "sha256": "d414ae2a5b2fecd7f7683da7e0b0d8a22fc14942f2d76dbe60cee8a42249515b",
+      "size": 530,
+      "verification": "PASS_PR93_RAW_GIT_IDENTITY",
+      "worktree_sha256": "3f001037b1e3044a71aba86737551c4bd9c379070436951c93bb5dda883fbf90",
+      "worktree_size": 537
+    },
+    {
+      "checkout_transform_detected": true,
+      "commit": "1df09c56eedb53d46f9347695026086319738a89",
+      "git_blob": "99bc571ec6ecef4188e9977ae468085675af3c9a",
+      "identity_authority": "RAW_GIT_BLOB",
+      "mode": "100644",
+      "path": "reproduction/specification/core_v2_causal_increment_specification_v1/L2_PREDICATE_CONTRACT.md",
+      "sha256": "7ca831bf7b28469ddc45f95b6d596496fab104098f3596d89dc0d36cc1ca5de7",
+      "size": 832,
+      "verification": "PASS_PR93_RAW_GIT_IDENTITY",
+      "worktree_sha256": "b1844a57d1944d082279d3c38d1545a8ead270a9d8498eed0b5d6ed35d49ae83",
+      "worktree_size": 843
+    },
+    {
+      "checkout_transform_detected": true,
+      "commit": "1df09c56eedb53d46f9347695026086319738a89",
+      "git_blob": "0b8140d84c29cdb0ad3b0877d011e9e530e47ed7",
+      "identity_authority": "RAW_GIT_BLOB",
+      "mode": "100644",
+      "path": "reproduction/specification/core_v2_causal_increment_specification_v1/control_authority_h1_derivation.json",
+      "sha256": "35809e60a971eb9cd535ee3aec7e45c70bee321f01f9fcfd9c6774742ae4ec34",
+      "size": 2805,
+      "verification": "PASS_PR93_RAW_GIT_IDENTITY",
+      "worktree_sha256": "b0396c966be5b01a7fa3d77bbd3bcb6f0e79a70bfbdd1517d58f515ad28d4de5",
+      "worktree_size": 2948
+    },
+    {
+      "checkout_transform_detected": true,
+      "commit": "1df09c56eedb53d46f9347695026086319738a89",
+      "git_blob": "8d2160a91acc0f5235f410eaca41a6f61c061244",
+      "identity_authority": "RAW_GIT_BLOB",
+      "mode": "100644",
+      "path": "reproduction/specification/core_v2_causal_increment_specification_v1/continuous_segment_semantics_audit.json",
+      "sha256": "827da9a4932ec3c90bbdc208f467ab60cd39bebb26d4743e6519ff45121ddb74",
+      "size": 3202,
+      "verification": "PASS_PR93_RAW_GIT_IDENTITY",
+      "worktree_sha256": "c8bab89adfaa1b1ea1b167b453fdd88756c259de8ae46101cb501da738c4d364",
+      "worktree_size": 3271
+    },
+    {
+      "checkout_transform_detected": true,
+      "commit": "1df09c56eedb53d46f9347695026086319738a89",
+      "git_blob": "df275faa516979d3ed86dcfbd99cf69198425b1d",
+      "identity_authority": "RAW_GIT_BLOB",
+      "mode": "100644",
+      "path": "reproduction/specification/core_v2_causal_increment_specification_v1/map_safety_semantics_audit.json",
+      "sha256": "5fad9c0773673ead60cd3f5229525d01a8fdf563de070f06dceecff190b8b223",
+      "size": 2585,
+      "verification": "PASS_PR93_RAW_GIT_IDENTITY",
+      "worktree_sha256": "2f30298fd5d6393e57ff1f1ff9a49118f178ebfe7b830c0efbc0ae00724a857d",
+      "worktree_size": 2644
+    },
+    {
+      "checkout_transform_detected": true,
+      "commit": "1df09c56eedb53d46f9347695026086319738a89",
+      "git_blob": "692da2a819e8bac54d69346c84a52cb4f52ede9e",
+      "identity_authority": "RAW_GIT_BLOB",
+      "mode": "100644",
+      "path": "reproduction/specification/core_v2_causal_increment_specification_v1/SUPPORTED_AND_PROHIBITED_CLAIMS.md",
+      "sha256": "93b1f7a3dec55b76eb94ea9ebb21407d98625acaf9629e110293d67b974e92ff",
+      "size": 689,
+      "verification": "PASS_PR93_RAW_GIT_IDENTITY",
+      "worktree_sha256": "94d065555749a883500324dc279130dcd3682b07ac48adea229f9b6f89000d82",
+      "worktree_size": 700
+    },
+    {
+      "checkout_transform_detected": true,
+      "commit": "1df09c56eedb53d46f9347695026086319738a89",
+      "git_blob": "cf2768a0cac13b4414940f23fcf8b6ff2d4c2adb",
+      "identity_authority": "RAW_GIT_BLOB",
+      "mode": "100644",
+      "path": "reproduction/specification/core_v2_causal_increment_specification_v1/FINAL_CASE_DECISION.json",
+      "sha256": "5c91cb151d392acf338e3e29c3b26988f9ea9103234e46ade665e5f8a13a51f1",
+      "size": 491,
+      "verification": "PASS_PR93_RAW_GIT_IDENTITY",
+      "worktree_sha256": "b35f00169995df7ae426b22b38836273a0065c708dc4db980ede3fed796d4000",
+      "worktree_size": 502
+    }
+  ],
+  "status": "PASS_FROZEN_PR93_SPECIFICATION_IDENTITY",
+  "symbolic_equations": {
+    "p_H1_alpha": "p_k + (1+alpha)*dt*v_k + alpha*dt^2*u_k",
+    "p_k_plus_1": "p_k + dt*v_k",
+    "p_k_plus_2": "p_k + 2*dt*v_k + dt^2*u_k",
+    "v_k_plus_1": "v_k + dt*u_k"
+  }
+}

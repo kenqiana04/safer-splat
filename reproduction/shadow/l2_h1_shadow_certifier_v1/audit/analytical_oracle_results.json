@@ -1,0 +1,46 @@
+{
+  "analytical_oracle_test_count": 10,
+  "records": [
+    {
+      "oracle": "O1_ZERO_ACCELERATION",
+      "pass": true
+    },
+    {
+      "oracle": "O2_CANDIDATE_SEPARATION",
+      "pass": true
+    },
+    {
+      "oracle": "O3_STATIONARY_SAFE_SPHERE",
+      "pass": true
+    },
+    {
+      "oracle": "O4_SPHERE_INTERSECTION",
+      "pass": true
+    },
+    {
+      "oracle": "O5_TANGENCY_CLOSED_BOUNDARY",
+      "pass": true
+    },
+    {
+      "oracle": "O6_NONFINITE",
+      "pass": true
+    },
+    {
+      "oracle": "O7_SNAPSHOT_MISMATCH",
+      "pass": true
+    },
+    {
+      "oracle": "O8_UNSUPPORTED_GEOMETRY",
+      "pass": true
+    },
+    {
+      "oracle": "O9_DIAGNOSTIC_INDEPENDENCE",
+      "pass": true
+    },
+    {
+      "oracle": "O10_ENDPOINT_TRAP",
+      "pass": true
+    }
+  ],
+  "status": "PASS_ANALYTICAL_ORACLE_TESTS"
+}

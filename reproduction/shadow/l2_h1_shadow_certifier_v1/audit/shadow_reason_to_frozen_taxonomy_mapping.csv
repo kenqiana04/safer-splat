@@ -1,0 +1,16 @@
+implementation_reason,shadow_status,frozen_l2_mapping,interpretation
+FORMAL_SEGMENT_SAFE,PASS,L2_PASS,formal full-segment certificate
+FORMAL_SEGMENT_UNSAFE,FAIL,L2_FAIL,finite formal unsafe witness
+MAP_SNAPSHOT_MISMATCH,UNKNOWN,L2_UNKNOWN,"authority mismatch, not candidate unsafe"
+MAP_HASH_MISMATCH,UNKNOWN,L2_UNKNOWN,"authority mismatch, not candidate unsafe"
+MAP_SNAPSHOT_STALE,UNKNOWN,L2_UNKNOWN,stale authority
+MAP_QUERY_CONTEXT_UNRESOLVED,UNKNOWN,L2_UNKNOWN,unresolved query authority
+INPUT_NONFINITE,UNKNOWN,L2_UNKNOWN,nonfinite input
+INPUT_DIMENSION_MISMATCH,UNKNOWN,L2_UNKNOWN,invalid input contract
+INVALID_DT,UNKNOWN,L2_UNKNOWN,invalid input contract
+UNSUPPORTED_FORMAL_BACKEND,UNKNOWN,L2_UNKNOWN,unsupported formal authority
+CERTIFICATE_BUDGET_EXHAUSTED,UNKNOWN,L2_UNKNOWN,inconclusive certificate
+MAP_QUERY_UNKNOWN,UNKNOWN,L2_UNKNOWN,query uncertainty
+MAP_QUERY_NONFINITE,UNKNOWN,L2_UNKNOWN,query nonfinite
+BACKEND_EXCEPTION,UNKNOWN,L2_UNKNOWN,backend exception
+BACKEND_ERROR,UNKNOWN,L2_UNKNOWN,backend error
