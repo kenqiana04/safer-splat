@@ -1,0 +1,23 @@
+{
+  "all_authorities_false": true,
+  "alternative_trigger_count": 0,
+  "authority_fields": {
+    "alternative_search_authority": false,
+    "backup_authority": false,
+    "candidate_selection_authority": false,
+    "controller_authority": false,
+    "controller_intervention": false,
+    "execution_authority": false,
+    "fail_close_authority": false,
+    "runtime_intervention": false,
+    "terminal_authority": false
+  },
+  "backup_trigger_count": 0,
+  "candidate_replacement_count": 0,
+  "controller_intervention_count": 0,
+  "forbidden_output_fields_absent": true,
+  "production_hook_count": 0,
+  "runtime_fail_close_action_count": 0,
+  "status": "PASS_NO_CONTROL_AUTHORITY",
+  "terminal_trigger_count": 0
+}

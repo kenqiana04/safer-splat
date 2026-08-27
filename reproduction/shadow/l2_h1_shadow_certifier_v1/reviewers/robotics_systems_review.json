@@ -1,0 +1,18 @@
+{
+  "case_vote": "CASE_A",
+  "critical_blockers": [],
+  "independence_declaration": "Reviewed scoped implementation evidence before FINAL_CASE_DECISION.json was written.",
+  "major_issues": [],
+  "minor_issues": [
+    "map-relative represented-obstacle semantics only"
+  ],
+  "permitted_claim": "Specification-faithful shadow implementation of the local candidate-dependent H1 map-relative certifier.",
+  "prohibited_claim": "No efficacy, collision improvement, recursive feasibility, physical-world, real-time, deployment, or safe-stop claim.",
+  "reviewer": "R2_ROBOTICS_SYSTEMS",
+  "supports": [
+    "snapshot ID/hash/stale/context gates map to UNKNOWN",
+    "frozen backend calls and radius/margin identities pass",
+    "all controller and execution authorities false"
+  ],
+  "verdict": "PASS_CASE_A"
+}

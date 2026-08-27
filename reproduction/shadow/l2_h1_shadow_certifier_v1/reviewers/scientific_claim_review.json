@@ -1,0 +1,18 @@
+{
+  "case_vote": "CASE_A",
+  "critical_blockers": [],
+  "independence_declaration": "Reviewed scoped implementation evidence before FINAL_CASE_DECISION.json was written.",
+  "major_issues": [],
+  "minor_issues": [
+    "do not describe this as a new algorithm result"
+  ],
+  "permitted_claim": "Specification-faithful shadow implementation of the local candidate-dependent H1 map-relative certifier.",
+  "prohibited_claim": "No efficacy, collision improvement, recursive feasibility, physical-world, real-time, deployment, or safe-stop claim.",
+  "reviewer": "R4_SCIENTIFIC_CLAIM",
+  "supports": [
+    "implementation fidelity claim only",
+    "no empirical efficacy or runtime metrics",
+    "future frozen replay remains a separate task"
+  ],
+  "verdict": "PASS_CASE_A"
+}
