@@ -1,0 +1,124 @@
+{
+  "authority": {
+    "alternative_authority": false,
+    "backup_authority": false,
+    "candidate_selection_authority": false,
+    "controller_authority": false,
+    "execution_authority": false,
+    "fail_close_authority": false,
+    "intervention": false,
+    "terminal_authority": false
+  },
+  "candidate_preparation": {
+    "candidate_group_id": "GROUP-000",
+    "candidate_synthesis_count": 0,
+    "native_candidate_count": 1,
+    "native_candidate_set_hash": "2222222222222222222222222222222222222222222222222222222222222222",
+    "reached": true
+  },
+  "instrumentation": {
+    "observation_completeness": "COMPLETE",
+    "observation_dropped": false,
+    "observer_process_status": "HEALTHY",
+    "payload_sequence_id": 0,
+    "queue_status": "ENQUEUED",
+    "serialization_status": "PASS"
+  },
+  "l0": {
+    "reached": true,
+    "reason": "CURRENT_FEASIBILITY_PASS",
+    "repair_attempted": false,
+    "repair_result": "NOT_ATTEMPTED",
+    "source_class": "SHADOW_PIPELINE_RUNTIME_OBSERVATION",
+    "status": "PASS"
+  },
+  "l1": {
+    "immediate_segment_end": [
+      0.0005,
+      0.0,
+      0.0
+    ],
+    "immediate_segment_start": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reached": true,
+    "reason": "IMMEDIATE_SEGMENT_PASS",
+    "source_class": "SHADOW_PIPELINE_RUNTIME_OBSERVATION",
+    "stored_status": "PASS"
+  },
+  "l2": {
+    "H1_segment_hash": "5555555555555555555555555555555555555555555555555555555555555555",
+    "backend_class": "EXACT_FUNCTIONAL_AUTOGRAD",
+    "backend_identity": "FROZEN-L2-H1-V1",
+    "diagnostics": {},
+    "evaluated": true,
+    "formal_value": 0.1,
+    "p_k1": [
+      0.0005,
+      0.0,
+      0.0
+    ],
+    "p_k2": [
+      0.001,
+      0.0,
+      0.0
+    ],
+    "reachability_reason": "SELECTED_CANDIDATE_AVAILABLE",
+    "reached": true,
+    "reason": "CERTIFIED_SAFE_H1",
+    "shadow_only": true,
+    "shadow_result_id": "RESULT-000",
+    "status": "PASS"
+  },
+  "map_authority": {
+    "effective_radius": 0.015,
+    "map_content_hash": "4444444444444444444444444444444444444444444444444444444444444444",
+    "map_contract_version": "MAP_CONTRACT_V1",
+    "map_snapshot_ref": "MAP-STONEHENGE-STATIC",
+    "query_context_id": "QUERY-000",
+    "rho_seg": 0.0,
+    "robot_radius": 0.015,
+    "safety_margin": 0.0
+  },
+  "run": {
+    "control_timestamp": 0.0,
+    "decision_commit_id": "COMMIT-000",
+    "logical_index": 0,
+    "observation_capture_id": "CAPTURE-000",
+    "run_id": "RUN-FIXTURE",
+    "seed": "NO_RANDOM_SAMPLING_FROZEN_INDEXED_TRIALS",
+    "state_sequence_id": "STATE-000",
+    "step_id": 0,
+    "trial_id": "TRIAL-000"
+  },
+  "schema_version": "L2_H1_ON_POLICY_SHADOW_STEP_V1",
+  "selected_candidate": {
+    "candidate_id": "SELECTED-000",
+    "committed": true,
+    "role": "SELECTED_EXECUTED",
+    "u_k": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "u_k_hash": "3333333333333333333333333333333333333333333333333333333333333333"
+  },
+  "state": {
+    "dt": 0.05,
+    "finite": true,
+    "p_k": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "state_hash": "1111111111111111111111111111111111111111111111111111111111111111",
+    "status": "VALID",
+    "v_k": [
+      0.01,
+      0.0,
+      0.0
+    ]
+  }
+}

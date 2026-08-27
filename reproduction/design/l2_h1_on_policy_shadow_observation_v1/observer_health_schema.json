@@ -1,0 +1,57 @@
+{
+  "$id": "safer-splat://schemas/observer-health-v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "classified_as_l2_unknown": {
+      "const": false
+    },
+    "controller_intervention": {
+      "const": false
+    },
+    "health": {
+      "enum": [
+        "HEALTHY",
+        "QUEUE_BACKPRESSURE",
+        "SERIALIZATION_ERROR",
+        "WORKER_EXCEPTION",
+        "WORKER_UNAVAILABLE",
+        "RESULT_LATE",
+        "SHUTDOWN_INCOMPLETE"
+      ]
+    },
+    "payload_sequence_id": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "queue_capacity": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "queue_depth": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "sequence_gap_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "worker_heartbeat_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "payload_sequence_id",
+    "health",
+    "queue_depth",
+    "queue_capacity",
+    "sequence_gap_count",
+    "worker_heartbeat_id",
+    "controller_intervention",
+    "classified_as_l2_unknown"
+  ],
+  "type": "object"
+}

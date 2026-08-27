@@ -1,0 +1,60 @@
+{
+  "$id": "safer-splat://schemas/reachability-reason-v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "candidate_preparation_reached": {
+      "type": "boolean"
+    },
+    "l0_reached": {
+      "type": "boolean"
+    },
+    "l0_status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "UNKNOWN",
+        "NOT_REACHED"
+      ]
+    },
+    "l1_reached": {
+      "type": "boolean"
+    },
+    "l1_status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "UNKNOWN",
+        "NOT_REACHED"
+      ]
+    },
+    "l2_reachability_reason": {
+      "enum": [
+        "L0_BLOCKED",
+        "L1_FAIL",
+        "L1_UNKNOWN",
+        "NO_CANDIDATE",
+        "SELECTED_CANDIDATE_AVAILABLE",
+        "TERMINAL_ALREADY_SAFE",
+        "OTHER_FROZEN_ARCHITECTURE_REASON"
+      ]
+    },
+    "l2_reached": {
+      "type": "boolean"
+    },
+    "source_class": {
+      "const": "SHADOW_PIPELINE_RUNTIME_OBSERVATION"
+    }
+  },
+  "required": [
+    "l0_reached",
+    "l0_status",
+    "l1_reached",
+    "l1_status",
+    "candidate_preparation_reached",
+    "l2_reached",
+    "l2_reachability_reason",
+    "source_class"
+  ],
+  "type": "object"
+}

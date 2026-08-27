@@ -1,0 +1,96 @@
+{
+  "artifact_inventory": {
+    "decision": "select a prospective zero-authority observation design, not evaluate a controller",
+    "primary_endpoint_count": 1,
+    "secondary_endpoint_count": 7,
+    "source_as_of": "PR #95 exact head a7fd936804284a299467f1bfcc76deab12fdf0c3",
+    "source_population": "PR #95 frozen historical replay evidence",
+    "time_window": "not applicable to design-only historical replay",
+    "timezone": "not applicable to logical-index protocol"
+  },
+  "calculation_spot_checks": {
+    "replay_partition": {
+      "calculation": "2594 + 4259",
+      "expected": 6853,
+      "actual": 6853,
+      "status": "VERIFIED"
+    },
+    "replay_coverage_percent": {
+      "calculation": "2594 / 6853 * 100",
+      "actual": 37.852035604844595,
+      "reported": 37.852,
+      "status": "VERIFIED_ROUNDED_4_DECIMAL_PLACES"
+    },
+    "l2_partition": {
+      "calculation": "770 + 18 + 0",
+      "expected": 788,
+      "actual": 788,
+      "status": "VERIFIED"
+    },
+    "stored_l1_pass_l2_fail_percent": {
+      "calculation": "18 / 788 * 100",
+      "actual": 2.284263959390863,
+      "reported": 2.2843,
+      "status": "VERIFIED_ROUNDED_4_DECIMAL_PLACES"
+    },
+    "executed_partition": {
+      "calculation": "560 + 6",
+      "expected": 566,
+      "actual": 566,
+      "status": "VERIFIED"
+    },
+    "executed_fail_percent": {
+      "calculation": "6 / 566 * 100",
+      "actual": 1.0600706713780919,
+      "reported": 1.0601,
+      "status": "VERIFIED_ROUNDED_4_DECIMAL_PLACES"
+    },
+    "nonexecuted_partition": {
+      "calculation": "210 + 12",
+      "expected": 222,
+      "actual": 222,
+      "status": "VERIFIED"
+    },
+    "iid_scale_only_n95": {
+      "calculation": "ceil(log(0.05) / log(1 - 6/566))",
+      "actual": 282,
+      "status": "VERIFIED_NOT_AN_INFERENTIAL_POWER_GUARANTEE"
+    },
+    "iid_scale_only_n90": {
+      "calculation": "ceil(log(0.10) / log(1 - 6/566))",
+      "actual": 217,
+      "status": "VERIFIED_NOT_AN_INFERENTIAL_POWER_GUARANTEE"
+    }
+  },
+  "methodology_review": {
+    "grain": "candidate-step point estimate with trial-cluster identity",
+    "denominator_stability": "PASS_EXPLICIT_INTENDED_STEP_AND_EVALUATED_SELECTED_COUNTERS",
+    "missingness": "PASS_SEPARATED_FROM_L2_UNKNOWN",
+    "selection_bias": "PASS_HISTORICAL_RATES_LABELED_PLANNING_PRIORS_ONLY",
+    "outcome_conditioned_sampling": "PROHIBITED",
+    "causal_language": "PASS_NO_CONTROL_EFFICACY_OR_COLLISION_PREVENTION_CLAIM",
+    "pilot_formal_separation": "PASS"
+  },
+  "visualization_review": {
+    "artifact_type": "seven design-only Mermaid specifications",
+    "quantitative_axis_risk": "NONE_NO_NUMERIC_AXES",
+    "feedback_direction": "PASS_NO_SHADOW_TO_CONTROLLER_ARROW",
+    "mandatory_scope_labels": "PASS"
+  },
+  "issues_found": [
+    {
+      "severity": "LOW",
+      "issue": "Initial scale-only sample-size prose was off by one after ceiling.",
+      "resolution": "Corrected to 282 at 95 percent and 217 at 90 percent before final validation.",
+      "status": "RESOLVED"
+    }
+  ],
+  "required_caveats": [
+    "Historical PR #95 rates are planning priors affected by missingness, source selection, and within-trial clustering.",
+    "Worker-derived L0/L1 observations are not frozen-controller decision-stage outputs.",
+    "A successful design validator is not an implementation, equivalence, logging-completeness, or performance result."
+  ],
+  "incomplete_handoff_blockers": [],
+  "overall_assessment": "READY_TO_SHARE_AS_DESIGN_ONLY",
+  "status": "PASS_FINAL_DATA_QUALITY_VALIDATION"
+}

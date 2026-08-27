@@ -1,0 +1,487 @@
+{
+  "$defs": {
+    "sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "triState": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "UNKNOWN",
+        "NOT_REACHED"
+      ]
+    },
+    "vector3": {
+      "items": {
+        "type": "number"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    }
+  },
+  "$id": "safer-splat://schemas/l2-h1-on-policy-shadow-step-v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authority": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_authority": {
+          "const": false
+        },
+        "backup_authority": {
+          "const": false
+        },
+        "candidate_selection_authority": {
+          "const": false
+        },
+        "controller_authority": {
+          "const": false
+        },
+        "execution_authority": {
+          "const": false
+        },
+        "fail_close_authority": {
+          "const": false
+        },
+        "intervention": {
+          "const": false
+        },
+        "terminal_authority": {
+          "const": false
+        }
+      },
+      "required": [
+        "controller_authority",
+        "execution_authority",
+        "candidate_selection_authority",
+        "alternative_authority",
+        "backup_authority",
+        "terminal_authority",
+        "fail_close_authority",
+        "intervention"
+      ],
+      "type": "object"
+    },
+    "candidate_preparation": {
+      "additionalProperties": false,
+      "properties": {
+        "candidate_group_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "candidate_synthesis_count": {
+          "const": 0
+        },
+        "native_candidate_count": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "native_candidate_set_hash": {
+          "$ref": "#/$defs/sha256"
+        },
+        "reached": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "reached",
+        "candidate_group_id",
+        "native_candidate_count",
+        "native_candidate_set_hash",
+        "candidate_synthesis_count"
+      ],
+      "type": "object"
+    },
+    "instrumentation": {
+      "additionalProperties": false,
+      "properties": {
+        "observation_completeness": {
+          "enum": [
+            "COMPLETE",
+            "OBSERVATION_INCOMPLETE",
+            "SHADOW_EVALUATION_DROPPED"
+          ]
+        },
+        "observation_dropped": {
+          "type": "boolean"
+        },
+        "observer_process_status": {
+          "enum": [
+            "HEALTHY",
+            "QUEUE_BACKPRESSURE",
+            "SERIALIZATION_ERROR",
+            "WORKER_EXCEPTION",
+            "WORKER_UNAVAILABLE",
+            "RESULT_LATE",
+            "SHUTDOWN_INCOMPLETE"
+          ]
+        },
+        "payload_sequence_id": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "queue_status": {
+          "enum": [
+            "ENQUEUED",
+            "DROPPED_FULL",
+            "DROPPED_UNAVAILABLE",
+            "NOT_ENQUEUED_SERIALIZATION_ERROR"
+          ]
+        },
+        "serialization_status": {
+          "enum": [
+            "PASS",
+            "ERROR"
+          ]
+        }
+      },
+      "required": [
+        "payload_sequence_id",
+        "queue_status",
+        "observation_dropped",
+        "serialization_status",
+        "observer_process_status",
+        "observation_completeness"
+      ],
+      "type": "object"
+    },
+    "l0": {
+      "additionalProperties": false,
+      "properties": {
+        "reached": {
+          "type": "boolean"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "repair_attempted": {
+          "type": "boolean"
+        },
+        "repair_result": {
+          "enum": [
+            "NOT_ATTEMPTED",
+            "PASS",
+            "FAIL",
+            "UNKNOWN"
+          ]
+        },
+        "source_class": {
+          "const": "SHADOW_PIPELINE_RUNTIME_OBSERVATION"
+        },
+        "status": {
+          "$ref": "#/$defs/triState"
+        }
+      },
+      "required": [
+        "reached",
+        "status",
+        "repair_attempted",
+        "repair_result",
+        "reason",
+        "source_class"
+      ],
+      "type": "object"
+    },
+    "l1": {
+      "additionalProperties": false,
+      "properties": {
+        "immediate_segment_end": {
+          "$ref": "#/$defs/vector3"
+        },
+        "immediate_segment_start": {
+          "$ref": "#/$defs/vector3"
+        },
+        "reached": {
+          "type": "boolean"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "source_class": {
+          "const": "SHADOW_PIPELINE_RUNTIME_OBSERVATION"
+        },
+        "stored_status": {
+          "$ref": "#/$defs/triState"
+        }
+      },
+      "required": [
+        "reached",
+        "stored_status",
+        "reason",
+        "immediate_segment_start",
+        "immediate_segment_end",
+        "source_class"
+      ],
+      "type": "object"
+    },
+    "l2": {
+      "additionalProperties": false,
+      "properties": {
+        "H1_segment_hash": {
+          "$ref": "#/$defs/sha256"
+        },
+        "backend_class": {
+          "enum": [
+            "EXACT_FUNCTIONAL_AUTOGRAD",
+            "CONSERVATIVE_INTERVAL",
+            "OTHER_FROZEN_BACKEND"
+          ]
+        },
+        "backend_identity": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "diagnostics": {
+          "type": "object"
+        },
+        "evaluated": {
+          "type": "boolean"
+        },
+        "formal_value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "p_k1": {
+          "$ref": "#/$defs/vector3"
+        },
+        "p_k2": {
+          "$ref": "#/$defs/vector3"
+        },
+        "reachability_reason": {
+          "enum": [
+            "L0_BLOCKED",
+            "L1_FAIL",
+            "L1_UNKNOWN",
+            "NO_CANDIDATE",
+            "SELECTED_CANDIDATE_AVAILABLE",
+            "TERMINAL_ALREADY_SAFE",
+            "OTHER_FROZEN_ARCHITECTURE_REASON"
+          ]
+        },
+        "reached": {
+          "type": "boolean"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "shadow_only": {
+          "const": true
+        },
+        "shadow_result_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/triState"
+        }
+      },
+      "required": [
+        "reached",
+        "reachability_reason",
+        "evaluated",
+        "status",
+        "reason",
+        "p_k1",
+        "p_k2",
+        "H1_segment_hash",
+        "backend_identity",
+        "backend_class",
+        "formal_value",
+        "diagnostics",
+        "shadow_result_id",
+        "shadow_only"
+      ],
+      "type": "object"
+    },
+    "map_authority": {
+      "additionalProperties": false,
+      "properties": {
+        "effective_radius": {
+          "minimum": 0,
+          "type": "number"
+        },
+        "map_content_hash": {
+          "$ref": "#/$defs/sha256"
+        },
+        "map_contract_version": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "map_snapshot_ref": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "query_context_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "rho_seg": {
+          "minimum": 0,
+          "type": "number"
+        },
+        "robot_radius": {
+          "minimum": 0,
+          "type": "number"
+        },
+        "safety_margin": {
+          "minimum": 0,
+          "type": "number"
+        }
+      },
+      "required": [
+        "map_snapshot_ref",
+        "map_content_hash",
+        "map_contract_version",
+        "query_context_id",
+        "robot_radius",
+        "safety_margin",
+        "effective_radius",
+        "rho_seg"
+      ],
+      "type": "object"
+    },
+    "run": {
+      "additionalProperties": false,
+      "properties": {
+        "control_timestamp": {
+          "type": "number"
+        },
+        "decision_commit_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "logical_index": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "observation_capture_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "run_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "seed": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "state_sequence_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "step_id": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "trial_id": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "run_id",
+        "trial_id",
+        "seed",
+        "step_id",
+        "control_timestamp",
+        "logical_index",
+        "state_sequence_id",
+        "decision_commit_id",
+        "observation_capture_id"
+      ],
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "L2_H1_ON_POLICY_SHADOW_STEP_V1"
+    },
+    "selected_candidate": {
+      "additionalProperties": false,
+      "properties": {
+        "candidate_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "committed": {
+          "const": true
+        },
+        "role": {
+          "const": "SELECTED_EXECUTED"
+        },
+        "u_k": {
+          "$ref": "#/$defs/vector3"
+        },
+        "u_k_hash": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "required": [
+        "candidate_id",
+        "role",
+        "u_k",
+        "u_k_hash",
+        "committed"
+      ],
+      "type": "object"
+    },
+    "state": {
+      "additionalProperties": false,
+      "properties": {
+        "dt": {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        "finite": {
+          "type": "boolean"
+        },
+        "p_k": {
+          "$ref": "#/$defs/vector3"
+        },
+        "state_hash": {
+          "$ref": "#/$defs/sha256"
+        },
+        "status": {
+          "enum": [
+            "VALID",
+            "NONFINITE",
+            "INVALID_SHAPE"
+          ]
+        },
+        "v_k": {
+          "$ref": "#/$defs/vector3"
+        }
+      },
+      "required": [
+        "p_k",
+        "v_k",
+        "dt",
+        "state_hash",
+        "finite",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "run",
+    "state",
+    "l0",
+    "l1",
+    "candidate_preparation",
+    "selected_candidate",
+    "map_authority",
+    "l2",
+    "authority",
+    "instrumentation"
+  ],
+  "title": "Prospective L2/H1 shadow observation step",
+  "type": "object"
+}
