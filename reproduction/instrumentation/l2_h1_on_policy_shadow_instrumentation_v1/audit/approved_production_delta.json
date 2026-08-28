@@ -1,0 +1,12 @@
+{
+  "approved_production_hook_paths": [],
+  "controller_logic_mutation_count": 0,
+  "controller_math_mutation_count": 0,
+  "production_delta": "NONE_REQUIRED",
+  "production_source_diff_count": 0,
+  "status": "PASS_NO_PRODUCTION_DELTA_REQUIRED",
+  "task_local_wrapper_paths": [
+    "instrumented_cbf_wrapper.py",
+    "run_with_shadow_instrumentation.py"
+  ]
+}

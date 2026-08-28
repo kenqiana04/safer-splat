@@ -1,0 +1,39 @@
+{
+  "decision_commit_point": "successful solve_QP return with solver_success true; semantically after run.py:139-143",
+  "dt_source": {
+    "line": 19,
+    "value": 0.05
+  },
+  "p_k_source": "x[:3]",
+  "plant_update_point": {
+    "expression": "x = double_integrator_dynamics(x,u)*dt + x",
+    "line": 147
+  },
+  "selected_u_source": {
+    "expression": "u = cbf.solve_QP(x, u_des)",
+    "line": 132,
+    "role": "SELECTED_EXECUTED_CONTROL"
+  },
+  "solver_success_guard": {
+    "line": 139,
+    "semantic": "failed solution exits before plant"
+  },
+  "source_commit": "1783aff5f6d221efc26d34f8b47b966e2d9eee3e",
+  "source_git_blob": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+  "source_path": "run.py",
+  "source_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+  "source_size": 8127,
+  "status": "PASS_FROZEN_CONTROL_CYCLE_IDENTITY",
+  "u_des_source": {
+    "line": 125,
+    "role": "NOMINAL_REFERENCE"
+  },
+  "v_k_source": "x[3:]",
+  "x_k_source": {
+    "lines": [
+      101,
+      102
+    ],
+    "semantic": "six-dimensional x before solve_QP"
+  }
+}

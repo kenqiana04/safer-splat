@@ -1,0 +1,12 @@
+{
+  "directory_order": "stable POSIX relative-path lexical sort",
+  "freeze_failure_classification": "MAP_AUTHORITY_FAILURE instrumentation health, never L2_UNKNOWN",
+  "freeze_timing": "RUN_START_ONLY",
+  "map_authority_hash_full_call_count_per_run": 1,
+  "map_mutation_count": 0,
+  "per_file_size_and_sha256": true,
+  "per_step_field": "map_authority_id",
+  "per_step_full_map_hash_count": 0,
+  "static_map": true,
+  "status": "PASS_RUN_START_CONTENT_ADDRESSED_MAP_AUTHORITY"
+}

@@ -1,0 +1,15 @@
+{
+  "aliasing_test_count": 2,
+  "controller_owned_map_object_in_payload": false,
+  "cpu_copy_mode": "INDEPENDENT_CPU_COPY",
+  "cuda_copy_mode": "DETACH_DEVICE_TO_CPU_CONTIGUOUS_COPY",
+  "cuda_live_reference_retained": false,
+  "immutable_payload_test_count": 4,
+  "live_list_or_dict_reference_in_payload": false,
+  "live_numpy_reference_in_payload": false,
+  "live_torch_reference_in_payload": false,
+  "post_enqueue_source_mutation_test_count": 2,
+  "representation": "frozen slots dataclasses plus tuple/scalar fields",
+  "status": "PASS_IMMUTABLE_PAYLOAD_AND_ALIASING_QA",
+  "synchronization_required_recorded": true
+}

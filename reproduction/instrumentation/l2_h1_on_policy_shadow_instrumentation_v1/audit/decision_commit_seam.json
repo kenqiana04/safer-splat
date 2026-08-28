@@ -1,0 +1,14 @@
+{
+  "approved_instrumentation_hook_count": 1,
+  "capture_location": "decorated exact frozen plant-function entry: after run.py has passed its solver_success guard and immediately before delegation to the unchanged plant function",
+  "controller_fork_count": 0,
+  "direct_hook_used": false,
+  "fallback": "outer runpy decorator temporarily wrapping the imported CBF class without copying run.py or solve_QP",
+  "fallback_used": true,
+  "post_commit": true,
+  "pre_plant": true,
+  "same_decision_state_action": true,
+  "source_forbidden": true,
+  "source_path": "run.py",
+  "status": "PASS_WRAPPER_POST_COMMIT_PRE_PLANT_SEAM"
+}

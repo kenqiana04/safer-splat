@@ -1,0 +1,27 @@
+{
+  "checks": [
+    "zero on-policy collection",
+    "u_des not alternative",
+    "health separate from UNKNOWN",
+    "no efficacy claim"
+  ],
+  "critical_blockers": [],
+  "major_issues": [],
+  "minor_issues": [
+    "Task-local mock equality is not real navigation equivalence."
+  ],
+  "prohibited_claims": [
+    "real navigation equivalence",
+    "collision reduction",
+    "progress improvement",
+    "controller efficacy",
+    "real-time guarantee",
+    "deployment guarantee"
+  ],
+  "recommended_case": "CASE_A_FAITHFUL_NONINVASIVE_INSTRUMENTATION_IMPLEMENTED",
+  "reviewer_role": "SCIENTIFIC_CLAIM",
+  "supported_claims": [
+    "Task-local shadow instrumentation structure passed static, unit, and fault QA."
+  ],
+  "verdict": "PASS_IMPLEMENTATION_ONLY"
+}

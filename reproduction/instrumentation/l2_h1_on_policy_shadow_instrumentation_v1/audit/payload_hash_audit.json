@@ -1,0 +1,26 @@
+{
+  "algorithm": "SHA-256 over canonical JSON semantic fields",
+  "covered": [
+    "schema_version",
+    "decision_commit_id",
+    "x_k",
+    "p_k",
+    "v_k",
+    "dt",
+    "selected candidate and provenance",
+    "native sibling provenance",
+    "map_authority_id"
+  ],
+  "enqueue_receive_equality_tested": true,
+  "excluded": [
+    "wall_clock",
+    "pid",
+    "queue_position",
+    "absolute_path",
+    "payload_sequence_id",
+    "capture_device"
+  ],
+  "mismatch_behavior": "PAYLOAD_ALIGNMENT_FAILURE health event; no L2 result",
+  "payload_hash_test_count": 3,
+  "status": "PASS_CANONICAL_SEMANTIC_HASH_QA"
+}

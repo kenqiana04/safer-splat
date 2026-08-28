@@ -1,0 +1,14 @@
+{
+  "authorization_carried_forward": false,
+  "from_task": "IMPLEMENT_L2_H1_ON_POLICY_SHADOW_INSTRUMENTATION_V1",
+  "frozen_instrumentation_root": "reproduction/instrumentation/l2_h1_on_policy_shadow_instrumentation_v1",
+  "future_gate": "Compare selected u_k, candidate hash, solver success, branches, seed, termination, map authority and controller return under a separately frozen manifest.",
+  "must_not_run_in_current_task": [
+    "real Stonehenge observer OFF/ON",
+    "logging pilot",
+    "formal cohort",
+    "performance benchmark"
+  ],
+  "required_first_action": "Independently reverify this PR head and protected identities; do not collect research data before equivalence passes.",
+  "to_task": "VALIDATE_L2_H1_SHADOW_INSTRUMENTATION_OFF_VS_ON_EQUIVALENCE_V1"
+}

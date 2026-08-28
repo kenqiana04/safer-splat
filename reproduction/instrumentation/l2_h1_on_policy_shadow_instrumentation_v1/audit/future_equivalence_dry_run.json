@@ -1,0 +1,46 @@
+{
+  "dry_run_comparator": {
+    "all_equal": true,
+    "comparison_fields": [
+      "selected_u_k_trace",
+      "selected_candidate_hash",
+      "solver_success_trace",
+      "branch_trace",
+      "seed",
+      "termination",
+      "map_authority",
+      "controller_return_value"
+    ],
+    "field_equal": {
+      "branch_trace": true,
+      "controller_return_value": true,
+      "map_authority": true,
+      "seed": true,
+      "selected_candidate_hash": true,
+      "selected_u_k_trace": true,
+      "solver_success_trace": true,
+      "termination": true
+    },
+    "performance_claim": false,
+    "real_navigation_equivalence": false
+  },
+  "manifest": {
+    "comparison_fields": [
+      "selected_u_k_trace",
+      "selected_candidate_hash",
+      "solver_success_trace",
+      "branch_trace",
+      "seed",
+      "termination",
+      "map_authority",
+      "controller_return_value"
+    ],
+    "dry_run_only": true,
+    "observer_off_trace": "NOT_RUN",
+    "observer_on_trace": "NOT_RUN",
+    "real_navigation_equivalence_run_count": 0,
+    "schema_version": "L2_H1_SHADOW_FUTURE_EQUIVALENCE_MANIFEST_V1",
+    "tolerance_contract_frozen_before_run": true
+  },
+  "status": "PASS_FUTURE_EQUIVALENCE_DRY_RUN_ONLY"
+}
