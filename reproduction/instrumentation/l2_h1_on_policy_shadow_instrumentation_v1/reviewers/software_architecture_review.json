@@ -1,0 +1,29 @@
+{
+  "checks": [
+    "forbidden source preserved",
+    "no controller fork",
+    "single wrapper seam",
+    "no result return",
+    "append only",
+    "F1-F10"
+  ],
+  "critical_blockers": [],
+  "major_issues": [],
+  "minor_issues": [
+    "The wrapper must pass the future OFF-vs-ON equivalence gate before any pilot."
+  ],
+  "prohibited_claims": [
+    "real navigation equivalence",
+    "collision reduction",
+    "progress improvement",
+    "controller efficacy",
+    "real-time guarantee",
+    "deployment guarantee"
+  ],
+  "recommended_case": "CASE_A_FAITHFUL_NONINVASIVE_INSTRUMENTATION_IMPLEMENTED",
+  "reviewer_role": "SOFTWARE_ARCHITECTURE",
+  "supported_claims": [
+    "Task-local shadow instrumentation structure passed static, unit, and fault QA."
+  ],
+  "verdict": "PASS_IMPLEMENTATION_ONLY"
+}

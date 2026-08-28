@@ -1,0 +1,534 @@
+{
+  "all_fault_expectations_met": true,
+  "all_mock_control_traces_equal": true,
+  "cases": [
+    {
+      "actual_fail_close_from_shadow_count": 0,
+      "controller_intervention_count": 0,
+      "controller_return_value_equal": true,
+      "fault_expectation_met": true,
+      "fault_id": "F1_WORKER_NOT_STARTED",
+      "mock_control_trace_equal": true,
+      "mock_controller_disabled_trace": [
+        [
+          0.2,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.1,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.0,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          -0.10000000000000003,
+          -0.15000000000000002,
+          0.1
+        ]
+      ],
+      "mock_controller_fault_trace": [
+        [
+          0.2,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.1,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.0,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          -0.10000000000000003,
+          -0.15000000000000002,
+          0.1
+        ]
+      ]
+    },
+    {
+      "actual_fail_close_from_shadow_count": 0,
+      "controller_intervention_count": 0,
+      "controller_return_value_equal": true,
+      "fault_expectation_met": true,
+      "fault_id": "F2_WORKER_CRASH",
+      "mock_control_trace_equal": true,
+      "mock_controller_disabled_trace": [
+        [
+          0.2,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.1,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.0,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          -0.10000000000000003,
+          -0.15000000000000002,
+          0.1
+        ]
+      ],
+      "mock_controller_fault_trace": [
+        [
+          0.2,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.1,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.0,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          -0.10000000000000003,
+          -0.15000000000000002,
+          0.1
+        ]
+      ]
+    },
+    {
+      "actual_fail_close_from_shadow_count": 0,
+      "controller_intervention_count": 0,
+      "controller_return_value_equal": true,
+      "fault_expectation_met": true,
+      "fault_id": "F3_QUEUE_FULL",
+      "mock_control_trace_equal": true,
+      "mock_controller_disabled_trace": [
+        [
+          0.2,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.1,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.0,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          -0.10000000000000003,
+          -0.15000000000000002,
+          0.1
+        ]
+      ],
+      "mock_controller_fault_trace": [
+        [
+          0.2,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.1,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.0,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          -0.10000000000000003,
+          -0.15000000000000002,
+          0.1
+        ]
+      ]
+    },
+    {
+      "actual_fail_close_from_shadow_count": 0,
+      "controller_intervention_count": 0,
+      "controller_return_value_equal": true,
+      "fault_expectation_met": true,
+      "fault_id": "F4_SERIALIZATION_EXCEPTION",
+      "mock_control_trace_equal": true,
+      "mock_controller_disabled_trace": [
+        [
+          0.2,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.1,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.0,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          -0.10000000000000003,
+          -0.15000000000000002,
+          0.1
+        ]
+      ],
+      "mock_controller_fault_trace": [
+        [
+          0.2,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.1,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.0,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          -0.10000000000000003,
+          -0.15000000000000002,
+          0.1
+        ]
+      ]
+    },
+    {
+      "actual_fail_close_from_shadow_count": 0,
+      "controller_intervention_count": 0,
+      "controller_return_value_equal": true,
+      "fault_expectation_met": true,
+      "fault_id": "F5_MAP_AUTHORITY_FAILURE",
+      "mock_control_trace_equal": true,
+      "mock_controller_disabled_trace": [
+        [
+          0.2,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.1,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.0,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          -0.10000000000000003,
+          -0.15000000000000002,
+          0.1
+        ]
+      ],
+      "mock_controller_fault_trace": [
+        [
+          0.2,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.1,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.0,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          -0.10000000000000003,
+          -0.15000000000000002,
+          0.1
+        ]
+      ]
+    },
+    {
+      "actual_fail_close_from_shadow_count": 0,
+      "controller_intervention_count": 0,
+      "controller_return_value_equal": true,
+      "fault_expectation_met": true,
+      "fault_id": "F6_PAYLOAD_CORRUPTION_ATTEMPT",
+      "mock_control_trace_equal": true,
+      "mock_controller_disabled_trace": [
+        [
+          0.2,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.1,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.0,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          -0.10000000000000003,
+          -0.15000000000000002,
+          0.1
+        ]
+      ],
+      "mock_controller_fault_trace": [
+        [
+          0.2,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.1,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.0,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          -0.10000000000000003,
+          -0.15000000000000002,
+          0.1
+        ]
+      ]
+    },
+    {
+      "actual_fail_close_from_shadow_count": 0,
+      "controller_intervention_count": 0,
+      "controller_return_value_equal": true,
+      "fault_expectation_met": true,
+      "fault_id": "F7_POST_ENQUEUE_SOURCE_MUTATION",
+      "mock_control_trace_equal": true,
+      "mock_controller_disabled_trace": [
+        [
+          0.2,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.1,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.0,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          -0.10000000000000003,
+          -0.15000000000000002,
+          0.1
+        ]
+      ],
+      "mock_controller_fault_trace": [
+        [
+          0.2,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.1,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.0,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          -0.10000000000000003,
+          -0.15000000000000002,
+          0.1
+        ]
+      ]
+    },
+    {
+      "actual_fail_close_from_shadow_count": 0,
+      "controller_intervention_count": 0,
+      "controller_return_value_equal": true,
+      "fault_expectation_met": true,
+      "fault_id": "F8_SLOW_WORKER",
+      "mock_control_trace_equal": true,
+      "mock_controller_disabled_trace": [
+        [
+          0.2,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.1,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.0,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          -0.10000000000000003,
+          -0.15000000000000002,
+          0.1
+        ]
+      ],
+      "mock_controller_fault_trace": [
+        [
+          0.2,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.1,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.0,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          -0.10000000000000003,
+          -0.15000000000000002,
+          0.1
+        ]
+      ]
+    },
+    {
+      "actual_fail_close_from_shadow_count": 0,
+      "controller_intervention_count": 0,
+      "controller_return_value_equal": true,
+      "fault_expectation_met": true,
+      "fault_id": "F9_SHADOW_CERTIFIER_EXCEPTION",
+      "mock_control_trace_equal": true,
+      "mock_controller_disabled_trace": [
+        [
+          0.2,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.1,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.0,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          -0.10000000000000003,
+          -0.15000000000000002,
+          0.1
+        ]
+      ],
+      "mock_controller_fault_trace": [
+        [
+          0.2,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.1,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.0,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          -0.10000000000000003,
+          -0.15000000000000002,
+          0.1
+        ]
+      ]
+    },
+    {
+      "actual_fail_close_from_shadow_count": 0,
+      "controller_intervention_count": 0,
+      "controller_return_value_equal": true,
+      "fault_expectation_met": true,
+      "fault_id": "F10_SHUTDOWN_FLUSH_TIMEOUT",
+      "mock_control_trace_equal": true,
+      "mock_controller_disabled_trace": [
+        [
+          0.2,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.1,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.0,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          -0.10000000000000003,
+          -0.15000000000000002,
+          0.1
+        ]
+      ],
+      "mock_controller_fault_trace": [
+        [
+          0.2,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.1,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          0.0,
+          -0.15000000000000002,
+          0.1
+        ],
+        [
+          -0.10000000000000003,
+          -0.15000000000000002,
+          0.1
+        ]
+      ]
+    }
+  ],
+  "fault_injection_case_count": 10,
+  "formal_on_policy_cohort_count": 0,
+  "logging_pilot_run_count": 0,
+  "navigation_rollout_count": 0,
+  "on_policy_research_collection_count": 0,
+  "real_navigation_equivalence_run_count": 0,
+  "scope": "TASK_LOCAL_MOCK_INSTRUMENTATION_FAULT_QA_ONLY",
+  "status": "PASS_F1_F10_ZERO_AUTHORITY_FAULT_QA"
+}

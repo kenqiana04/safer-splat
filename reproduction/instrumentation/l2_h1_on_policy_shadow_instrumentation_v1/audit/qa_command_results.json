@@ -1,0 +1,25 @@
+{
+  "compileall": {
+    "execution_root": "short task-local temporary copy to avoid Windows MAX_PATH pycache paths",
+    "status": "PASS"
+  },
+  "future_equivalence_runner": {
+    "mode": "DRY_RUN_ONLY",
+    "real_navigation_equivalence_run_count": 0,
+    "status": "PASS_FUTURE_EQUIVALENCE_DRY_RUN_ONLY"
+  },
+  "git_diff_check": "PASS",
+  "instrumented_run_entrypoint": {
+    "mode": "DRY_RUN_ONLY",
+    "navigation_rollout_count": 0,
+    "status": "DRY_RUN_ONLY_NO_NAVIGATION_EXECUTED"
+  },
+  "pytest": {
+    "available": false,
+    "status": "NOT_AVAILABLE_UNITTEST_AND_JSONSCHEMA_COVERAGE_USED"
+  },
+  "unittest": {
+    "count": 18,
+    "status": "PASS"
+  }
+}

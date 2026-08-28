@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "safer-splat://l2-h1-shadow-instrumentation/health-event-v1",
+  "type": "object",
+  "required": ["event_type"],
+  "oneOf": [
+    {
+      "properties": {
+        "event_type": {"const": "INSTRUMENTATION_HEALTH"},
+        "health": {
+          "enum": ["HEALTHY", "QUEUE_BACKPRESSURE", "SERIALIZATION_ERROR", "WORKER_EXCEPTION", "WORKER_UNAVAILABLE", "RESULT_LATE", "SHUTDOWN_INCOMPLETE", "MAP_AUTHORITY_FAILURE", "PAYLOAD_ALIGNMENT_FAILURE", "SCHEMA_VALIDATION_FAILURE"]
+        },
+        "controller_intervention": {"const": false},
+        "classified_as_l2_unknown": {"const": false}
+      },
+      "required": ["health", "controller_intervention", "classified_as_l2_unknown"]
+    },
+    {
+      "properties": {
+        "event_type": {"const": "CAPTURE_RECEIPT"},
+        "status": {"enum": ["ENQUEUED", "DROPPED_QUEUE_FULL", "SERIALIZATION_ERROR", "OBSERVER_DISABLED", "WORKER_UNAVAILABLE"]},
+        "controller_intervention": {"const": false},
+        "contains_l2_status": {"const": false}
+      },
+      "required": ["status", "controller_intervention", "contains_l2_status"]
+    }
+  ]
+}

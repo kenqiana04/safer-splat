@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "safer-splat://l2-h1-shadow-instrumentation/step-payload-v1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema_version", "run_id", "trial_id", "step_id", "state_sequence_id",
+    "decision_commit_id", "payload_sequence_id", "x_k", "p_k", "v_k", "dt",
+    "selected_candidate", "nominal_reference", "native_sibling_candidates",
+    "candidate_group_id", "native_candidate_group_size", "reachability",
+    "map_authority_id", "payload_semantic_hash", "controller_authority",
+    "execution_authority", "candidate_selection_authority", "intervention", "shadow_only"
+  ],
+  "properties": {
+    "schema_version": {"const": "L2_H1_ON_POLICY_SHADOW_STEP_PAYLOAD_V1"},
+    "run_id": {"type": "string", "minLength": 1},
+    "trial_id": {"type": "string", "minLength": 1},
+    "step_id": {"type": "integer", "minimum": 0},
+    "state_sequence_id": {"type": "string", "minLength": 1},
+    "decision_commit_id": {"type": "string", "minLength": 1},
+    "payload_sequence_id": {"type": "integer", "minimum": 0},
+    "x_k": {"type": "array", "minItems": 6, "maxItems": 6, "items": {"type": "number"}},
+    "p_k": {"$ref": "#/$defs/vector3"},
+    "v_k": {"$ref": "#/$defs/vector3"},
+    "dt": {"type": "number", "exclusiveMinimum": 0},
+    "selected_candidate": {"$ref": "#/$defs/selected"},
+    "nominal_reference": {"$ref": "#/$defs/nominal"},
+    "native_sibling_candidates": {"type": "array", "items": {"$ref": "#/$defs/sibling"}},
+    "candidate_group_id": {"type": "string", "minLength": 1},
+    "native_candidate_group_size": {"type": "integer", "minimum": 1},
+    "reachability": {
+      "type": "object",
+      "required": ["solver_success", "decision_committed", "l0_observation_source", "l1_observation_source", "l2_reachability_reason"]
+    },
+    "map_authority_id": {"$ref": "#/$defs/sha256"},
+    "payload_semantic_hash": {"$ref": "#/$defs/sha256"},
+    "controller_authority": {"const": false},
+    "execution_authority": {"const": false},
+    "candidate_selection_authority": {"const": false},
+    "intervention": {"const": false},
+    "shadow_only": {"const": true}
+  },
+  "$defs": {
+    "vector3": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number"}},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "baseCandidate": {
+      "type": "object",
+      "required": ["candidate_id", "candidate_role", "candidate_origin", "u", "created_before_observation", "selected_for_execution"],
+      "properties": {
+        "candidate_id": {"type": "string"},
+        "candidate_origin": {"type": "string"},
+        "u": {"$ref": "#/$defs/vector3"},
+        "created_before_observation": {"const": true},
+        "selected_for_execution": {"type": "boolean"}
+      }
+    },
+    "selected": {
+      "allOf": [
+        {"$ref": "#/$defs/baseCandidate"},
+        {"properties": {"candidate_role": {"const": "SELECTED_EXECUTED_CONTROL"}, "selected_for_execution": {"const": true}}}
+      ]
+    },
+    "nominal": {
+      "allOf": [
+        {"$ref": "#/$defs/baseCandidate"},
+        {"properties": {"candidate_role": {"const": "NOMINAL_REFERENCE"}, "selected_for_execution": {"const": false}}}
+      ]
+    },
+    "sibling": {
+      "allOf": [
+        {"$ref": "#/$defs/baseCandidate"},
+        {"properties": {"candidate_role": {"const": "NATIVE_SIBLING_CONTROL"}, "selected_for_execution": {"const": false}}}
+      ]
+    }
+  }
+}

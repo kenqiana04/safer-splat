@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "safer-splat://l2-h1-shadow-instrumentation/future-equivalence-manifest-v1",
+  "type": "object",
+  "required": ["schema_version", "dry_run_only", "observer_off_trace", "observer_on_trace", "comparison_fields", "tolerance_contract_frozen_before_run"],
+  "properties": {
+    "schema_version": {"const": "L2_H1_SHADOW_FUTURE_EQUIVALENCE_MANIFEST_V1"},
+    "dry_run_only": {"const": true},
+    "observer_off_trace": {"type": "string"},
+    "observer_on_trace": {"type": "string"},
+    "comparison_fields": {
+      "type": "array",
+      "const": ["selected_u_k_trace", "selected_candidate_hash", "solver_success_trace", "branch_trace", "seed", "termination", "map_authority", "controller_return_value"]
+    },
+    "tolerance_contract_frozen_before_run": {"const": true}
+  }
+}

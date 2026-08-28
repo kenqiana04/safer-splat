@@ -1,0 +1,28 @@
+{
+  "controller_l2_query_api_count": 0,
+  "controller_receipt_contains_l2_status": false,
+  "file_polling_count": 0,
+  "forbidden_identifier_hits": [],
+  "forbidden_result_return_identifiers": [
+    "candidate_replace",
+    "controller_callback",
+    "controller_query",
+    "future_result",
+    "response_pipe",
+    "result_queue",
+    "shared_result"
+  ],
+  "future_result_count": 0,
+  "response_pipe_or_socket_count": 0,
+  "result_return_channel_count": 0,
+  "scanned_paths": [
+    "nonblocking_transport.py",
+    "shadow_worker.py",
+    "instrumented_cbf_wrapper.py",
+    "lifecycle.py"
+  ],
+  "shared_l2_result_dict_count": 0,
+  "status": "PASS_STRUCTURAL_ZERO_FEEDBACK_STATIC_AUDIT",
+  "worker_to_controller_callback_count": 0,
+  "worker_to_controller_result_queue_count": 0
+}

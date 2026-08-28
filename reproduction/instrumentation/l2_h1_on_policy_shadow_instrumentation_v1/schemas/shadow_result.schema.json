@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "safer-splat://l2-h1-shadow-instrumentation/shadow-result-v1",
+  "type": "object",
+  "required": [
+    "run_id", "trial_id", "step_id", "state_sequence_id", "decision_commit_id",
+    "payload_sequence_id", "selected_candidate_id", "candidate_group_id",
+    "map_authority_id", "l0_status", "l0_observation_source", "l1_status",
+    "l1_observation_source", "l2_reached", "l2_status", "backend_identity",
+    "payload_enqueue_semantic_hash", "payload_worker_receive_semantic_hash",
+    "controller_authority", "candidate_selection_authority", "intervention", "shadow_only"
+  ],
+  "properties": {
+    "l0_observation_source": {"const": "SHADOW_RECOMPUTED_FROZEN_CERTIFIER"},
+    "l1_observation_source": {"const": "SHADOW_RECOMPUTED_FROZEN_CERTIFIER"},
+    "l2_status": {"enum": ["PASS", "FAIL", "UNKNOWN", "NOT_REACHED"]},
+    "payload_enqueue_semantic_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "payload_worker_receive_semantic_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "controller_authority": {"const": false},
+    "candidate_selection_authority": {"const": false},
+    "intervention": {"const": false},
+    "shadow_only": {"const": true}
+  }
+}

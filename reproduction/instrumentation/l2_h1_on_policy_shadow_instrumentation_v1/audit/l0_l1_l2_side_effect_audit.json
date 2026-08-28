@@ -1,0 +1,29 @@
+{
+  "audit_method": "frozen-source static audit plus actual frozen H1 pure-function unit test",
+  "candidate_in_place_mutation": false,
+  "controller_buffer_write": false,
+  "controller_counter_mutation": false,
+  "current_feasibility_certificate": {
+    "finding": "constructs fresh certificate values; map adapter query is the only dependency boundary",
+    "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/current_feasibility_certificate.py",
+    "sha256": "594bda03f807f95b3ff5f7d69c20ea2af58dfc7f628e3e1a0a78350ac105a49d"
+  },
+  "dependency_isolation": "actual map/backend adapters must be instantiated in the worker; no production map object is queued",
+  "global_state_mutation": false,
+  "immediate_segment_certificate": {
+    "finding": "constructs new numpy endpoint arrays and calls a backend; no controller/candidate mutation",
+    "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/segment_certificate.py",
+    "sha256": "243f3e93027d488c8cd0ca92f0d9971ed4101ee9dde3f272a62a20e8325eff7b"
+  },
+  "l0_observation_source": "SHADOW_RECOMPUTED_FROZEN_CERTIFIER",
+  "l1_observation_source": "SHADOW_RECOMPUTED_FROZEN_CERTIFIER",
+  "l2_h1_shadow_certifier": {
+    "finding": "frozen H1 propagation and L2 result construction do not mutate state/candidate inputs",
+    "git_blob_at_pr94": "042f35c4d4663e709ca90bce89c703490449b82f",
+    "path": "reproduction/shadow/l2_h1_shadow_certifier_v1/l2_h1_shadow_certifier.py",
+    "sha256": "5a613e1ea3887f387b7bcd23b72eee834803c41edb9c70361ec4bc64500c47d1"
+  },
+  "random_state_mutation": false,
+  "read_only_certifier_test_count": 2,
+  "status": "PASS_READ_ONLY_CERTIFIER_AND_WORKER_OWNED_DEPENDENCY_BOUNDARY"
+}

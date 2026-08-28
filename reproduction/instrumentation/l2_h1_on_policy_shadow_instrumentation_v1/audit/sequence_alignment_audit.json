@@ -1,0 +1,19 @@
+{
+  "append_logs_join_by_explicit_keys": true,
+  "capture_before_plant": true,
+  "keys": [
+    "run_id",
+    "trial_id",
+    "step_id",
+    "state_sequence_id",
+    "decision_commit_id",
+    "payload_sequence_id",
+    "selected_candidate_id",
+    "candidate_group_id",
+    "map_authority_id"
+  ],
+  "line_number_join_prohibited": true,
+  "payload_hash_rechecked_in_worker": true,
+  "status": "PASS_SEQUENCE_ALIGNMENT_CONTRACT",
+  "x_k_u_k_same_decision": true
+}
