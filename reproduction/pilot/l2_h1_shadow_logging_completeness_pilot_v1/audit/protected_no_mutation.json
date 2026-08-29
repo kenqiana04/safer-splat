@@ -1,0 +1,174 @@
+{
+  "all_match": true,
+  "audited_record_count": 18,
+  "controller_mutation_count": 0,
+  "instrumentation_mutation_count": 0,
+  "protected_blob_count": 17,
+  "protected_path_diff_count": 0,
+  "records": [
+    {
+      "expected_git_blob": "934ffc879ec0fb9774904d5814c29f8bf3dabff2",
+      "expected_size": 828,
+      "git_blob": "934ffc879ec0fb9774904d5814c29f8bf3dabff2",
+      "match": true,
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_core_v1_conceptual_closure/module_mapping/CURRENT_TO_CORE_V1_MODULE_MAPPING.md",
+      "size": 828
+    },
+    {
+      "expected_git_blob": "e5b51f86135a5ec934be20ba00a796895d32c7ab",
+      "expected_size": 1760,
+      "git_blob": "e5b51f86135a5ec934be20ba00a796895d32c7ab",
+      "match": true,
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_core_v1_conceptual_closure/state_machine/transition_table.csv",
+      "size": 1760
+    },
+    {
+      "expected_git_blob": "b39bd21ff7c24e1dcc5d1f792afd28f390fcd55c",
+      "expected_size": 2213,
+      "git_blob": "b39bd21ff7c24e1dcc5d1f792afd28f390fcd55c",
+      "match": true,
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/adapters/normative_dynamics_adapter.py",
+      "size": 2213
+    },
+    {
+      "expected_git_blob": "37ffb5230be2af352f4c86a4976ec84b245f8972",
+      "expected_size": 2075,
+      "git_blob": "37ffb5230be2af352f4c86a4976ec84b245f8972",
+      "match": true,
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/state_machine.py",
+      "size": 2075
+    },
+    {
+      "expected_git_blob": "29e71772fda791e43400343c28ae3defa8c57259",
+      "expected_size": 759,
+      "git_blob": "29e71772fda791e43400343c28ae3defa8c57259",
+      "match": true,
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/proof_artifacts/braking_policy_derivation.md",
+      "size": 759
+    },
+    {
+      "expected_git_blob": "9f065f9ea0d14a4ff0bdccc9affc508954923813",
+      "expected_size": 6510,
+      "git_blob": "9f065f9ea0d14a4ff0bdccc9affc508954923813",
+      "match": true,
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/alternative_library/directional_library.py",
+      "size": 6510
+    },
+    {
+      "expected_git_blob": "54d4b4cce068382f3634a11488915edb366beafd",
+      "expected_size": 2005494,
+      "git_blob": "54d4b4cce068382f3634a11488915edb366beafd",
+      "match": true,
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/resume_replica_gt_executable_safety_activated_benchmark_v1/benchmark/one_step_records.csv",
+      "size": 2005494
+    },
+    {
+      "expected_git_blob": "6221deb166b03ea730ac0af339174116b8bb9067",
+      "expected_size": 9931,
+      "git_blob": "6221deb166b03ea730ac0af339174116b8bb9067",
+      "match": true,
+      "mode": "100644",
+      "path": "reproduction/cross_dataset/core_v1_cross_environment_activation_portability_audit_v1/report/REPORT_AUDIT_CORE_V1_CROSS_ENVIRONMENT_ACTIVATION_PORTABILITY_V1.md",
+      "size": 9931
+    },
+    {
+      "expected_git_blob": "0e6d5fa376bc622ae733cfbde9c6343f19c1f752",
+      "expected_size": 5434,
+      "git_blob": "0e6d5fa376bc622ae733cfbde9c6343f19c1f752",
+      "match": true,
+      "mode": "100644",
+      "path": "reproduction/causal_audit/core_v1_representative_shortfall_causal_decomposition_v1/report/REPORT_AUDIT_CORE_V1_REPRESENTATIVE_SHORTFALL_CAUSAL_DECOMPOSITION_V1.md",
+      "size": 5434
+    },
+    {
+      "expected_git_blob": "1a9082d807644fd96400941db1d8e349ae11e261",
+      "expected_size": 827,
+      "git_blob": "1a9082d807644fd96400941db1d8e349ae11e261",
+      "match": true,
+      "mode": "100644",
+      "path": "reproduction/causal_audit/core_v1_representative_shortfall_causal_decomposition_v1/decision/final_causal_decomposition_decision.json",
+      "size": 827
+    },
+    {
+      "expected_git_blob": "06f2e959d5178dc9893d2361d7211720fc2c1feb",
+      "expected_size": 2587,
+      "git_blob": "06f2e959d5178dc9893d2361d7211720fc2c1feb",
+      "match": true,
+      "mode": "100644",
+      "path": "reproduction/decision/core_v1_actionable_factor_ranking_v1/report/REPORT_RANK_CORE_V1_ACTIONABLE_FACTORS_AND_SELECT_ONE_BOUNDED_NEXT_STEP_V1.md",
+      "size": 2587
+    },
+    {
+      "expected_git_blob": "1467ac34ece52dbc7114359861cf37bd86eef025",
+      "expected_size": 1156,
+      "git_blob": "1467ac34ece52dbc7114359861cf37bd86eef025",
+      "match": true,
+      "mode": "100644",
+      "path": "reproduction/decision/core_v1_actionable_factor_ranking_v1/actions/action_cards/A1.md",
+      "size": 1156
+    },
+    {
+      "expected_git_blob": "82dc0df7bc945668e8857a31a7821be1f2e48957",
+      "expected_size": 557,
+      "git_blob": "82dc0df7bc945668e8857a31a7821be1f2e48957",
+      "match": true,
+      "mode": "100644",
+      "path": "reproduction/experiment_protocol_freeze_v1/frozen_configs/certified_start_safe.json",
+      "size": 557
+    },
+    {
+      "expected_git_blob": "7d8c60915152a7812cbe582336e591ea24a32c1c",
+      "expected_size": 230,
+      "git_blob": "7d8c60915152a7812cbe582336e591ea24a32c1c",
+      "match": true,
+      "mode": "100644",
+      "path": "reproduction/experiment_protocol_freeze_v1/frozen_configs/dt_verification_h1.json",
+      "size": 230
+    },
+    {
+      "expected_git_blob": "a91c1e5c06bce86c0fe2b5a9c701b405c82d27bc",
+      "expected_size": 230,
+      "git_blob": "a91c1e5c06bce86c0fe2b5a9c701b405c82d27bc",
+      "match": true,
+      "mode": "100644",
+      "path": "reproduction/experiment_protocol_freeze_v1/frozen_configs/dt_verification_h2.json",
+      "size": 230
+    },
+    {
+      "expected_git_blob": "861f17cf9c64ed63e8c5f943d1d3c882db50c0bf",
+      "expected_size": 268,
+      "git_blob": "861f17cf9c64ed63e8c5f943d1d3c882db50c0bf",
+      "match": true,
+      "mode": "100644",
+      "path": "reproduction/experiment_protocol_freeze_v1/frozen_configs/dt_verification_h3.json",
+      "size": 268
+    },
+    {
+      "expected_git_blob": "7199ba1b746baacc352488f5316e5b6b7c024de4",
+      "expected_size": 494,
+      "git_blob": "7199ba1b746baacc352488f5316e5b6b7c024de4",
+      "match": true,
+      "mode": "100644",
+      "path": "reproduction/experiment_protocol_freeze_v1/frozen_configs/v4c_hce_v0.json",
+      "size": 494
+    },
+    {
+      "expected_git_blob": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+      "expected_size": 8127,
+      "git_blob": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+      "match": true,
+      "mode": "100644",
+      "path": "run.py",
+      "size": 8127
+    }
+  ],
+  "source_artifact": "reproduction/equivalence/l2_h1_shadow_instrumentation_off_vs_on_v1/audit/protected_source_audit.json",
+  "supplemental_run_py_count": 1
+}

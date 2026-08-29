@@ -1,0 +1,652 @@
+{
+  "data_role": "PILOT_QA_ONLY",
+  "eligible_for_formal_prospective_cohort": false,
+  "replacement_count": 0,
+  "retry_count": 0,
+  "runs": [
+    {
+      "activation": {
+        "arm": "WRAPPER_ON",
+        "capture_log_count": 255,
+        "certificate_result_count": 255,
+        "certificate_result_present": true,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 510,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": true,
+        "observer_enabled": true,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "SHUTDOWN_COMPLETE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": 140467881236224,
+        "worker_processed_count": 255,
+        "worker_start_requested": true,
+        "wrapper_capture_attempt_count": 255,
+        "wrapper_factory_trial_count": 1,
+        "wrapper_loaded": true
+      },
+      "activation_valid": true,
+      "arm": "WRAPPER_ON",
+      "data_role": "PILOT_QA_ONLY",
+      "eligible_for_formal_prospective_cohort": false,
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 10
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 8 MiB, 13 %"
+        },
+        "task_process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3546300 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/task_code/run_logging_pilot.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/task_code --task-root /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 8 MiB, 0 %"
+        },
+        "task_process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3546300 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/task_code/run_logging_pilot.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/task_code --task-root /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "WRAPPER_ON",
+        "pid": 3546305,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "pilot_c_trial010",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/server_execution/raw_runs/pilot_c_trial010/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1062,
+          "selection_hit_count": 1,
+          "target_trial_id": 10
+        },
+        "trace_hash": "2c240bf68aedd3b91f1a87de488cc67f5e180b6c326f0f09af2d14e2f12e5331",
+        "trace_step_count": 255,
+        "trial_id": 10
+      },
+      "retry_count": 0,
+      "run_id": "pilot_c_trial010",
+      "run_relative_path": "raw_runs/pilot_c_trial010",
+      "trial_id": 10
+    },
+    {
+      "activation": {
+        "arm": "WRAPPER_ON",
+        "capture_log_count": 43,
+        "certificate_result_count": 43,
+        "certificate_result_present": true,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 86,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": true,
+        "observer_enabled": true,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "SHUTDOWN_COMPLETE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": 139761693996800,
+        "worker_processed_count": 43,
+        "worker_start_requested": true,
+        "wrapper_capture_attempt_count": 43,
+        "wrapper_factory_trial_count": 1,
+        "wrapper_loaded": true
+      },
+      "activation_valid": true,
+      "arm": "WRAPPER_ON",
+      "data_role": "PILOT_QA_ONLY",
+      "eligible_for_formal_prospective_cohort": false,
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 30
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 8 MiB, 0 %"
+        },
+        "task_process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3546300 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/task_code/run_logging_pilot.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/task_code --task-root /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 8 MiB, 13 %"
+        },
+        "task_process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3546300 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/task_code/run_logging_pilot.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/task_code --task-root /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "WRAPPER_ON",
+        "pid": 3549545,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "pilot_c_trial030",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/server_execution/raw_runs/pilot_c_trial030/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1062,
+          "selection_hit_count": 1,
+          "target_trial_id": 30
+        },
+        "trace_hash": "0efda1992831433dbb71d2093709a607e5a02363209765d00ff477a89607ee47",
+        "trace_step_count": 43,
+        "trial_id": 30
+      },
+      "retry_count": 0,
+      "run_id": "pilot_c_trial030",
+      "run_relative_path": "raw_runs/pilot_c_trial030",
+      "trial_id": 30
+    },
+    {
+      "activation": {
+        "arm": "WRAPPER_ON",
+        "capture_log_count": 40,
+        "certificate_result_count": 40,
+        "certificate_result_present": true,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 80,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": true,
+        "observer_enabled": true,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "SHUTDOWN_COMPLETE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": 140387282540288,
+        "worker_processed_count": 40,
+        "worker_start_requested": true,
+        "wrapper_capture_attempt_count": 40,
+        "wrapper_factory_trial_count": 1,
+        "wrapper_loaded": true
+      },
+      "activation_valid": true,
+      "arm": "WRAPPER_ON",
+      "data_role": "PILOT_QA_ONLY",
+      "eligible_for_formal_prospective_cohort": false,
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 50
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 8 MiB, 0 %"
+        },
+        "task_process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3546300 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/task_code/run_logging_pilot.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/task_code --task-root /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 8 MiB, 0 %"
+        },
+        "task_process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3546300 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/task_code/run_logging_pilot.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/task_code --task-root /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "WRAPPER_ON",
+        "pid": 3552529,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "pilot_c_trial050",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/server_execution/raw_runs/pilot_c_trial050/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1062,
+          "selection_hit_count": 1,
+          "target_trial_id": 50
+        },
+        "trace_hash": "9288acbd9f0d819a57154d859e8ee07257b4c690ca85ef399416718e8cd9b8a8",
+        "trace_step_count": 40,
+        "trial_id": 50
+      },
+      "retry_count": 0,
+      "run_id": "pilot_c_trial050",
+      "run_relative_path": "raw_runs/pilot_c_trial050",
+      "trial_id": 50
+    },
+    {
+      "activation": {
+        "arm": "WRAPPER_ON",
+        "capture_log_count": 152,
+        "certificate_result_count": 152,
+        "certificate_result_present": true,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 304,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": true,
+        "observer_enabled": true,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "SHUTDOWN_COMPLETE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": 139826721163008,
+        "worker_processed_count": 152,
+        "worker_start_requested": true,
+        "wrapper_capture_attempt_count": 152,
+        "wrapper_factory_trial_count": 1,
+        "wrapper_loaded": true
+      },
+      "activation_valid": true,
+      "arm": "WRAPPER_ON",
+      "data_role": "PILOT_QA_ONLY",
+      "eligible_for_formal_prospective_cohort": false,
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 70
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 8 MiB, 0 %"
+        },
+        "task_process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3546300 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/task_code/run_logging_pilot.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/task_code --task-root /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 8 MiB, 0 %"
+        },
+        "task_process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3546300 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/task_code/run_logging_pilot.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/task_code --task-root /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "WRAPPER_ON",
+        "pid": 3559492,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "pilot_c_trial070",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/server_execution/raw_runs/pilot_c_trial070/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1062,
+          "selection_hit_count": 1,
+          "target_trial_id": 70
+        },
+        "trace_hash": "91aeb85c8fb2f7c88a87fe957e58c9c40e1b07efd48492018658e709e5f1c8ce",
+        "trace_step_count": 152,
+        "trial_id": 70
+      },
+      "retry_count": 0,
+      "run_id": "pilot_c_trial070",
+      "run_relative_path": "raw_runs/pilot_c_trial070",
+      "trial_id": 70
+    },
+    {
+      "activation": {
+        "arm": "WRAPPER_ON",
+        "capture_log_count": 242,
+        "certificate_result_count": 242,
+        "certificate_result_present": true,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 484,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": true,
+        "observer_enabled": true,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "SHUTDOWN_COMPLETE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": 139711177586432,
+        "worker_processed_count": 242,
+        "worker_start_requested": true,
+        "wrapper_capture_attempt_count": 242,
+        "wrapper_factory_trial_count": 1,
+        "wrapper_loaded": true
+      },
+      "activation_valid": true,
+      "arm": "WRAPPER_ON",
+      "data_role": "PILOT_QA_ONLY",
+      "eligible_for_formal_prospective_cohort": false,
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 90
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 8 MiB, 0 %"
+        },
+        "task_process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3546300 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/task_code/run_logging_pilot.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/task_code --task-root /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 8 MiB, 19 %"
+        },
+        "task_process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3546300 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/task_code/run_logging_pilot.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/task_code --task-root /disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "WRAPPER_ON",
+        "pid": 3561837,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "pilot_c_trial090",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_logging_completeness_pilot_v1/server_execution/raw_runs/pilot_c_trial090/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1062,
+          "selection_hit_count": 1,
+          "target_trial_id": 90
+        },
+        "trace_hash": "1c9c71c5dd7cb82dc66e29de7f800513e7908b1c2c3e7d392514a48747b39f14",
+        "trace_step_count": 242,
+        "trial_id": 90
+      },
+      "retry_count": 0,
+      "run_id": "pilot_c_trial090",
+      "run_relative_path": "raw_runs/pilot_c_trial090",
+      "trial_id": 90
+    }
+  ],
+  "schema_version": "L2_H1_SHADOW_LOGGING_COMPLETENESS_PILOT_RUN_MANIFEST_V1",
+  "selected_trial_ids": [
+    10,
+    30,
+    50,
+    70,
+    90
+  ],
+  "upstream_head": "b47b0e924804e3e446b1f9c184ee5ea5d268d613"
+}
