@@ -1,0 +1,18 @@
+{
+  "all_five_runs_same_environment": true,
+  "all_five_runs_same_map": true,
+  "cuda_device_name": "NVIDIA GeForce RTX 4090",
+  "cuda_visible_devices": "1",
+  "environment_identity_count": 1,
+  "map_authority_identity_count": 1,
+  "map_authority_ids": [
+    "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3"
+  ],
+  "pairing_identity_hashes": [
+    "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8"
+  ],
+  "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+  "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+  "torch": "2.1.2+cu118",
+  "torch_cuda": "11.8"
+}

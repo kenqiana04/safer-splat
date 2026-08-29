@@ -1,0 +1,26 @@
+{
+  "FINAL_DECISION": "FREEZE_LOGGING_PIPELINE_AND_PREPARE_FORMAL_PROSPECTIVE_SHADOW_COHORT",
+  "FINAL_STATUS": "PASS_L2_H1_SHADOW_LOGGING_COMPLETENESS_PILOT_V1",
+  "N_captured_payloads": 732,
+  "N_intended_steps": 732,
+  "N_joinable_records": 732,
+  "N_terminal_shadow_records": 732,
+  "Only_next_task": "FREEZE_L2_H1_PROSPECTIVE_SHADOW_COHORT_PROTOCOL_V1",
+  "authorization_required": true,
+  "do_not_auto_execute": true,
+  "pilot_rows_eligible_for_formal_cohort": false,
+  "pilot_trial_ids": [
+    10,
+    30,
+    50,
+    70,
+    90
+  ],
+  "prerequisites_for_next_task": [
+    "Use this task's exact Draft PR head as upstream.",
+    "Keep all five pilot rows permanently excluded from the formal prospective cohort.",
+    "Freeze the formal cohort manifest, denominator, analysis plan, and claims before collection.",
+    "Preserve zero authority and the frozen PR #97 instrumentation implementation."
+  ],
+  "selected_case": "CASE_A"
+}

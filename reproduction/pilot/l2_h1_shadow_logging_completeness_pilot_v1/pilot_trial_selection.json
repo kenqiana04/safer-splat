@@ -1,0 +1,15 @@
+{
+  "data_role": "PILOT_QA_ONLY",
+  "eligible_for_formal_prospective_cohort": false,
+  "equivalence_trial_ids_excluded": [0, 24, 49, 74, 99],
+  "frozen_before_any_pilot_navigation_run": true,
+  "manifest_path": "reproduction/experiment_protocol_freeze_v1/trial_manifests/stonehenge_official100_manifest.csv",
+  "manifest_row_count": 100,
+  "outcome_conditioned_selection": false,
+  "position_formula": "floor((j+0.5)*N/K), j=0..4, N=100, K=5",
+  "selected_positions": [10, 30, 50, 70, 90],
+  "selected_trial_ids": [10, 30, 50, 70, 90],
+  "selection_count": 5,
+  "source_upstream_head": "b47b0e924804e3e446b1f9c184ee5ea5d268d613",
+  "trial_replacement_allowed": false
+}
