@@ -1,0 +1,191 @@
+{
+  "all_match": true,
+  "controller_mutation_count": 0,
+  "instrumentation_mutation_count": 0,
+  "protected_blob_count": 17,
+  "protected_path_diff_count": 0,
+  "records": [
+    {
+      "actual_git_blob": "934ffc879ec0fb9774904d5814c29f8bf3dabff2",
+      "actual_sha256": "a8200b23455b979d982880c6d13040c467d91443bbb964f2a62bc00729c42a29",
+      "actual_size": 828,
+      "expected_git_blob": "934ffc879ec0fb9774904d5814c29f8bf3dabff2",
+      "expected_sha256": "a8200b23455b979d982880c6d13040c467d91443bbb964f2a62bc00729c42a29",
+      "expected_size": 828,
+      "match": true,
+      "path": "reproduction/cross_dataset/fas_cbf_core_v1_conceptual_closure/module_mapping/CURRENT_TO_CORE_V1_MODULE_MAPPING.md"
+    },
+    {
+      "actual_git_blob": "e5b51f86135a5ec934be20ba00a796895d32c7ab",
+      "actual_sha256": "6e9a1260a30d57c3912ea08dbe2f5799055ffcbc2f32d427c62182b5e583a435",
+      "actual_size": 1760,
+      "expected_git_blob": "e5b51f86135a5ec934be20ba00a796895d32c7ab",
+      "expected_sha256": "6e9a1260a30d57c3912ea08dbe2f5799055ffcbc2f32d427c62182b5e583a435",
+      "expected_size": 1760,
+      "match": true,
+      "path": "reproduction/cross_dataset/fas_cbf_core_v1_conceptual_closure/state_machine/transition_table.csv"
+    },
+    {
+      "actual_git_blob": "b39bd21ff7c24e1dcc5d1f792afd28f390fcd55c",
+      "actual_sha256": "bc85b7c90d57f9935732751c813c742d9c24af729ba6f5716637f3c3334513df",
+      "actual_size": 2213,
+      "expected_git_blob": "b39bd21ff7c24e1dcc5d1f792afd28f390fcd55c",
+      "expected_sha256": "bc85b7c90d57f9935732751c813c742d9c24af729ba6f5716637f3c3334513df",
+      "expected_size": 2213,
+      "match": true,
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/adapters/normative_dynamics_adapter.py"
+    },
+    {
+      "actual_git_blob": "37ffb5230be2af352f4c86a4976ec84b245f8972",
+      "actual_sha256": "cce6d28645c20979d73b07cfb35be44244b701e42b7132d7eeb1d084e17c16c5",
+      "actual_size": 2075,
+      "expected_git_blob": "37ffb5230be2af352f4c86a4976ec84b245f8972",
+      "expected_sha256": "cce6d28645c20979d73b07cfb35be44244b701e42b7132d7eeb1d084e17c16c5",
+      "expected_size": 2075,
+      "match": true,
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/state_machine.py"
+    },
+    {
+      "actual_git_blob": "29e71772fda791e43400343c28ae3defa8c57259",
+      "actual_sha256": "f402b5d4c185b3d58971fe3127f43c5b056ffcee3c4d4e7bcba74b6c9079c6d2",
+      "actual_size": 759,
+      "expected_git_blob": "29e71772fda791e43400343c28ae3defa8c57259",
+      "expected_sha256": "f402b5d4c185b3d58971fe3127f43c5b056ffcee3c4d4e7bcba74b6c9079c6d2",
+      "expected_size": 759,
+      "match": true,
+      "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/proof_artifacts/braking_policy_derivation.md"
+    },
+    {
+      "actual_git_blob": "9f065f9ea0d14a4ff0bdccc9affc508954923813",
+      "actual_sha256": "6ed9d209e31167ded426a0007d99ea4f09c2f5a63a58840d189b1536c9c11e17",
+      "actual_size": 6510,
+      "expected_git_blob": "9f065f9ea0d14a4ff0bdccc9affc508954923813",
+      "expected_sha256": "6ed9d209e31167ded426a0007d99ea4f09c2f5a63a58840d189b1536c9c11e17",
+      "expected_size": 6510,
+      "match": true,
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/alternative_library/directional_library.py"
+    },
+    {
+      "actual_git_blob": "54d4b4cce068382f3634a11488915edb366beafd",
+      "actual_sha256": "9f96bbfe7b5d4c5982d405f38dbc2ea5a04de42021dc58fab7112a49b103410d",
+      "actual_size": 2005494,
+      "expected_git_blob": "54d4b4cce068382f3634a11488915edb366beafd",
+      "expected_sha256": "9f96bbfe7b5d4c5982d405f38dbc2ea5a04de42021dc58fab7112a49b103410d",
+      "expected_size": 2005494,
+      "match": true,
+      "path": "reproduction/cross_dataset/resume_replica_gt_executable_safety_activated_benchmark_v1/benchmark/one_step_records.csv"
+    },
+    {
+      "actual_git_blob": "6221deb166b03ea730ac0af339174116b8bb9067",
+      "actual_sha256": "b8d2c26f4be09da012c6772d9429da69e17d9936c20c1ae562c67043293f6d06",
+      "actual_size": 9931,
+      "expected_git_blob": "6221deb166b03ea730ac0af339174116b8bb9067",
+      "expected_sha256": "b8d2c26f4be09da012c6772d9429da69e17d9936c20c1ae562c67043293f6d06",
+      "expected_size": 9931,
+      "match": true,
+      "path": "reproduction/cross_dataset/core_v1_cross_environment_activation_portability_audit_v1/report/REPORT_AUDIT_CORE_V1_CROSS_ENVIRONMENT_ACTIVATION_PORTABILITY_V1.md"
+    },
+    {
+      "actual_git_blob": "0e6d5fa376bc622ae733cfbde9c6343f19c1f752",
+      "actual_sha256": "06d73848afc21bf5c3ee91a07cfedb8c4003790914b19b38b677e2ce0fae64e9",
+      "actual_size": 5434,
+      "expected_git_blob": "0e6d5fa376bc622ae733cfbde9c6343f19c1f752",
+      "expected_sha256": "06d73848afc21bf5c3ee91a07cfedb8c4003790914b19b38b677e2ce0fae64e9",
+      "expected_size": 5434,
+      "match": true,
+      "path": "reproduction/causal_audit/core_v1_representative_shortfall_causal_decomposition_v1/report/REPORT_AUDIT_CORE_V1_REPRESENTATIVE_SHORTFALL_CAUSAL_DECOMPOSITION_V1.md"
+    },
+    {
+      "actual_git_blob": "1a9082d807644fd96400941db1d8e349ae11e261",
+      "actual_sha256": "fcd69424f89dad0df7481debe7a03b119a67be13e805850eea714245a11736e7",
+      "actual_size": 827,
+      "expected_git_blob": "1a9082d807644fd96400941db1d8e349ae11e261",
+      "expected_sha256": "fcd69424f89dad0df7481debe7a03b119a67be13e805850eea714245a11736e7",
+      "expected_size": 827,
+      "match": true,
+      "path": "reproduction/causal_audit/core_v1_representative_shortfall_causal_decomposition_v1/decision/final_causal_decomposition_decision.json"
+    },
+    {
+      "actual_git_blob": "06f2e959d5178dc9893d2361d7211720fc2c1feb",
+      "actual_sha256": "74d3b443d5320b6e8cd745d126f2aa4cb4c5048ba38646219d61ccf896ffba6c",
+      "actual_size": 2587,
+      "expected_git_blob": "06f2e959d5178dc9893d2361d7211720fc2c1feb",
+      "expected_sha256": "74d3b443d5320b6e8cd745d126f2aa4cb4c5048ba38646219d61ccf896ffba6c",
+      "expected_size": 2587,
+      "match": true,
+      "path": "reproduction/decision/core_v1_actionable_factor_ranking_v1/report/REPORT_RANK_CORE_V1_ACTIONABLE_FACTORS_AND_SELECT_ONE_BOUNDED_NEXT_STEP_V1.md"
+    },
+    {
+      "actual_git_blob": "1467ac34ece52dbc7114359861cf37bd86eef025",
+      "actual_sha256": "7b49f2321a08be75c178417d73cf692f174a57143447b485a5157eeff8153d47",
+      "actual_size": 1156,
+      "expected_git_blob": "1467ac34ece52dbc7114359861cf37bd86eef025",
+      "expected_sha256": "7b49f2321a08be75c178417d73cf692f174a57143447b485a5157eeff8153d47",
+      "expected_size": 1156,
+      "match": true,
+      "path": "reproduction/decision/core_v1_actionable_factor_ranking_v1/actions/action_cards/A1.md"
+    },
+    {
+      "actual_git_blob": "82dc0df7bc945668e8857a31a7821be1f2e48957",
+      "actual_sha256": "d03a68989656823e78e92aa20f822bb41d540d52c33096295bec687cdb2b1625",
+      "actual_size": 557,
+      "expected_git_blob": "82dc0df7bc945668e8857a31a7821be1f2e48957",
+      "expected_sha256": "d03a68989656823e78e92aa20f822bb41d540d52c33096295bec687cdb2b1625",
+      "expected_size": 557,
+      "match": true,
+      "path": "reproduction/experiment_protocol_freeze_v1/frozen_configs/certified_start_safe.json"
+    },
+    {
+      "actual_git_blob": "7d8c60915152a7812cbe582336e591ea24a32c1c",
+      "actual_sha256": "cecbddb135fbff919aef80a816432897629f75bb5876d393faecc038df4ff9c2",
+      "actual_size": 230,
+      "expected_git_blob": "7d8c60915152a7812cbe582336e591ea24a32c1c",
+      "expected_sha256": "cecbddb135fbff919aef80a816432897629f75bb5876d393faecc038df4ff9c2",
+      "expected_size": 230,
+      "match": true,
+      "path": "reproduction/experiment_protocol_freeze_v1/frozen_configs/dt_verification_h1.json"
+    },
+    {
+      "actual_git_blob": "a91c1e5c06bce86c0fe2b5a9c701b405c82d27bc",
+      "actual_sha256": "d95233011d9752ade283fdcb4c27cba037587dfec534d829c45647929daf5e56",
+      "actual_size": 230,
+      "expected_git_blob": "a91c1e5c06bce86c0fe2b5a9c701b405c82d27bc",
+      "expected_sha256": "d95233011d9752ade283fdcb4c27cba037587dfec534d829c45647929daf5e56",
+      "expected_size": 230,
+      "match": true,
+      "path": "reproduction/experiment_protocol_freeze_v1/frozen_configs/dt_verification_h2.json"
+    },
+    {
+      "actual_git_blob": "861f17cf9c64ed63e8c5f943d1d3c882db50c0bf",
+      "actual_sha256": "4a34c31934ac0743793c9e2ccc5de085c766eb6e1f4becc02bd607b56a7fa0e9",
+      "actual_size": 268,
+      "expected_git_blob": "861f17cf9c64ed63e8c5f943d1d3c882db50c0bf",
+      "expected_sha256": "4a34c31934ac0743793c9e2ccc5de085c766eb6e1f4becc02bd607b56a7fa0e9",
+      "expected_size": 268,
+      "match": true,
+      "path": "reproduction/experiment_protocol_freeze_v1/frozen_configs/dt_verification_h3.json"
+    },
+    {
+      "actual_git_blob": "7199ba1b746baacc352488f5316e5b6b7c024de4",
+      "actual_sha256": "62d42b4102e091366c4ea9901aef14228ecf956a4bdc6f2c7a943f33fd877693",
+      "actual_size": 494,
+      "expected_git_blob": "7199ba1b746baacc352488f5316e5b6b7c024de4",
+      "expected_sha256": "62d42b4102e091366c4ea9901aef14228ecf956a4bdc6f2c7a943f33fd877693",
+      "expected_size": 494,
+      "match": true,
+      "path": "reproduction/experiment_protocol_freeze_v1/frozen_configs/v4c_hce_v0.json"
+    },
+    {
+      "actual_git_blob": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+      "actual_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+      "actual_size": 8127,
+      "expected_git_blob": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+      "expected_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+      "expected_size": 8127,
+      "match": true,
+      "path": "run.py"
+    }
+  ],
+  "status": "PASS_RAW_PROTECTED_SOURCE_IDENTITY",
+  "supplemental_run_py_count": 1
+}

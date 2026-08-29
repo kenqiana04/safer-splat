@@ -1,0 +1,47 @@
+{
+  "arm_a": {
+    "name": "NATIVE_OFF",
+    "observer_enabled": false,
+    "worker_started": false,
+    "wrapper_loaded": false
+  },
+  "arm_b": {
+    "name": "WRAPPER_OFF",
+    "observer_enabled": false,
+    "worker_started": false,
+    "wrapper_loaded": true
+  },
+  "arm_c": {
+    "name": "WRAPPER_ON",
+    "observer_enabled": true,
+    "worker_started": true,
+    "wrapper_loaded": true
+  },
+  "canonical_float_representation": "python float.hex over materialized IEEE-754 values",
+  "comparison_pairs": ["A_VS_B", "B_VS_C", "A_VS_C"],
+  "equality_policy": "CANONICAL_EXACT_SEMANTIC_EQUALITY",
+  "first_divergence_early_stop": true,
+  "frozen_before_any_cross_arm_run": true,
+  "numeric_tolerance": null,
+  "post_hoc_tolerance_change_allowed": false,
+  "primary_fields": [
+    "trial_id",
+    "step_id",
+    "seed",
+    "x_k",
+    "u_des",
+    "selected_u_k",
+    "solver_success",
+    "controller_branch",
+    "plant_input_x",
+    "plant_input_u",
+    "plant_output_x_next",
+    "termination_flag",
+    "termination_reason",
+    "goal",
+    "goal_terminal_status",
+    "map_authority_id"
+  ],
+  "qa_only": true,
+  "schema_version": "L2_H1_SHADOW_PAIRED_EQUIVALENCE_CONTRACT_V1"
+}

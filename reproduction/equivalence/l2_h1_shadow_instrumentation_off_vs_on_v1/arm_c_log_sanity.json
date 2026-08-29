@@ -1,0 +1,86 @@
+{
+  "all_pass": true,
+  "logging_completeness_pilot": false,
+  "prevalence_estimate": false,
+  "run_count": 7,
+  "runs": [
+    {
+      "capture_count": 318,
+      "health_count": 636,
+      "joined_result_count": 318,
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "pass": true,
+      "payload_hash_join": true,
+      "result_count": 318,
+      "run_id": "self_c1_trial000",
+      "selected_u_present": true
+    },
+    {
+      "capture_count": 318,
+      "health_count": 636,
+      "joined_result_count": 318,
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "pass": true,
+      "payload_hash_join": true,
+      "result_count": 318,
+      "run_id": "self_c2_trial000",
+      "selected_u_present": true
+    },
+    {
+      "capture_count": 318,
+      "health_count": 636,
+      "joined_result_count": 318,
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "pass": true,
+      "payload_hash_join": true,
+      "result_count": 318,
+      "run_id": "cross_c_trial000",
+      "selected_u_present": true
+    },
+    {
+      "capture_count": 148,
+      "health_count": 296,
+      "joined_result_count": 148,
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "pass": true,
+      "payload_hash_join": true,
+      "result_count": 148,
+      "run_id": "cross_c_trial024",
+      "selected_u_present": true
+    },
+    {
+      "capture_count": 43,
+      "health_count": 86,
+      "joined_result_count": 43,
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "pass": true,
+      "payload_hash_join": true,
+      "result_count": 43,
+      "run_id": "cross_c_trial049",
+      "selected_u_present": true
+    },
+    {
+      "capture_count": 27,
+      "health_count": 54,
+      "joined_result_count": 27,
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "pass": true,
+      "payload_hash_join": true,
+      "result_count": 27,
+      "run_id": "cross_c_trial074",
+      "selected_u_present": true
+    },
+    {
+      "capture_count": 318,
+      "health_count": 636,
+      "joined_result_count": 318,
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "pass": true,
+      "payload_hash_join": true,
+      "result_count": 318,
+      "run_id": "cross_c_trial099",
+      "selected_u_present": true
+    }
+  ],
+  "schema_version": "L2_H1_SHADOW_ARM_C_MINIMAL_LOG_SANITY_V1"
+}

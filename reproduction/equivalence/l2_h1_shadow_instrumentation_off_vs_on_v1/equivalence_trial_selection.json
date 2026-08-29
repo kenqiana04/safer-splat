@@ -1,0 +1,20 @@
+{
+  "anchor_trial_id": 0,
+  "frozen_before_any_navigation_run": true,
+  "manifest_path": "reproduction/experiment_protocol_freeze_v1/trial_manifests/stonehenge_official100_manifest.csv",
+  "manifest_row_count": 100,
+  "outcome_conditioned_selection": false,
+  "replacement_allowed": false,
+  "results_observed_at_freeze": false,
+  "schema_version": "L2_H1_SHADOW_EQUIVALENCE_TRIAL_SELECTION_V1",
+  "selected_trial_ids": [
+    0,
+    24,
+    49,
+    74,
+    99
+  ],
+  "selection_count": 5,
+  "selection_rule": "stable sort by integer trial; select zero-based positions floor(j*(N-1)/(K-1)) for j=0..K-1 with N=100 and K=5",
+  "source_upstream_head": "7d48bf6c3b8932aa65d851c3cd70404404453cb3"
+}

@@ -1,0 +1,2765 @@
+{
+  "arm": "NATIVE_OFF",
+  "line_trace_event_count": 1075,
+  "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+  "primary_trace_semantic_hash": "252b50ecba6fc0cd77a470ab4dca9b7e0ccdf8b0d9e5678a1a3b20fea70ec260",
+  "qa_only": true,
+  "run_id": "cross_a_trial049",
+  "schema_version": "L2_H1_SHADOW_EQUIVALENCE_PRIMARY_TRACE_V1",
+  "seed": 0,
+  "steps": [
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        0.10000000149011612,
+        -0.10000000149011612,
+        0.03120334818959236
+      ],
+      "plant_input_x": [
+        -0.47180265188217163,
+        -0.01756265014410019,
+        0.046879664063453674,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "plant_output_x_next": [
+        -0.47180265188217163,
+        -0.01756265014410019,
+        0.046879664063453674,
+        0.005000000353902578,
+        -0.005000000353902578,
+        0.001560167409479618
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "9fc20db324f1a81d9138df0d95c3ec0fafbf6667a974bbe94070191420400246",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        0.10000000149011612,
+        -0.10000000149011612,
+        0.03120334818959236
+      ],
+      "selected_u_k_semantic_hash": "9fc20db324f1a81d9138df0d95c3ec0fafbf6667a974bbe94070191420400246",
+      "solver_success": true,
+      "step_id": 0,
+      "step_semantic_hash": "8c17514c5da09634516fb9c6d37bcdb6f9c93d1e76d0f86ed0ed4e5170467f32",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.10000000149011612,
+        -0.10000000149011612,
+        0.03120334818959236
+      ],
+      "u_des_semantic_hash": "9fc20db324f1a81d9138df0d95c3ec0fafbf6667a974bbe94070191420400246",
+      "x_k": [
+        -0.47180265188217163,
+        -0.01756265014410019,
+        0.046879664063453674,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "x_k_semantic_hash": "e057121769ddddf85838f0a84598aa6570f93e59c4da5ef3cb0e4a14ee968bd1"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        0.08999998867511749,
+        -0.08999999612569809,
+        0.028083015233278275
+      ],
+      "plant_input_x": [
+        -0.47180265188217163,
+        -0.01756265014410019,
+        0.046879664063453674,
+        0.005000000353902578,
+        -0.005000000353902578,
+        0.001560167409479618
+      ],
+      "plant_output_x_next": [
+        -0.47155264019966125,
+        -0.01781265065073967,
+        0.04695767164230347,
+        0.009499999694526196,
+        -0.00950000062584877,
+        0.0029643182642757893
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "fa233a01e8d4fe6e0056fd74240055e38b31094e80f3840e9ecf24d71e770c48",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        0.08999998867511749,
+        -0.08999999612569809,
+        0.028083015233278275
+      ],
+      "selected_u_k_semantic_hash": "fa233a01e8d4fe6e0056fd74240055e38b31094e80f3840e9ecf24d71e770c48",
+      "solver_success": true,
+      "step_id": 1,
+      "step_semantic_hash": "9b46c059a35c9a2d027e81da427d46b25fee2390e13cc9849ba804724af88f5a",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.08999999612569809,
+        -0.08999999612569809,
+        0.028083015233278275
+      ],
+      "u_des_semantic_hash": "a53a71e854b65ea0e7af50cbb4e87a318ca04e34ed811291121d48d1ed4e4283",
+      "x_k": [
+        -0.47180265188217163,
+        -0.01756265014410019,
+        0.046879664063453674,
+        0.005000000353902578,
+        -0.005000000353902578,
+        0.001560167409479618
+      ],
+      "x_k_semantic_hash": "df7962fb418574fce38101a4f30af0ae30d91363902fc5bd476d9c16ce202d40"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        0.08099997788667679,
+        -0.08099999278783798,
+        0.024884674698114395
+      ],
+      "plant_input_x": [
+        -0.47155264019966125,
+        -0.01781265065073967,
+        0.04695767164230347,
+        0.009499999694526196,
+        -0.00950000062584877,
+        0.0029643182642757893
+      ],
+      "plant_output_x_next": [
+        -0.47107765078544617,
+        -0.018287651240825653,
+        0.04710588604211807,
+        0.01354999840259552,
+        -0.01355000026524067,
+        0.004208552185446024
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "11675e0b86fd5b28db51be3da89691b6861c0972e57d8f2da16ec1ae3fae5b83",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        0.08099997788667679,
+        -0.08099999278783798,
+        0.024884674698114395
+      ],
+      "selected_u_k_semantic_hash": "11675e0b86fd5b28db51be3da89691b6861c0972e57d8f2da16ec1ae3fae5b83",
+      "solver_success": true,
+      "step_id": 2,
+      "step_semantic_hash": "19a58dce1febd3c66c9060f1e06e849789aed5032984c5e7eaf601d3269fbc40",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.08100000768899918,
+        -0.08100000023841858,
+        0.024884674698114395
+      ],
+      "u_des_semantic_hash": "f9b0410eeabd64f378efc24997a890568c39e2b623fcaa85a31c486efcf95be1",
+      "x_k": [
+        -0.47155264019966125,
+        -0.01781265065073967,
+        0.04695767164230347,
+        0.009499999694526196,
+        -0.00950000062584877,
+        0.0029643182642757893
+      ],
+      "x_k_semantic_hash": "87d681610d8261d41c1b8df85f24836a374214dec0ffd3ac2f318a5ad00327b4"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        0.07290000468492508,
+        -0.07290000468492508,
+        0.021655134856700897
+      ],
+      "plant_input_x": [
+        -0.47107765078544617,
+        -0.018287651240825653,
+        0.04710588604211807,
+        0.01354999840259552,
+        -0.01355000026524067,
+        0.004208552185446024
+      ],
+      "plant_output_x_next": [
+        -0.4704001545906067,
+        -0.01896515116095543,
+        0.04731631278991699,
+        0.017194999381899834,
+        -0.017195001244544983,
+        0.005291309207677841
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "e3735f56c2b67b1759a5cdb47c5a799e703275c24de4335d97e4a9604bfd6e87",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        0.07290000468492508,
+        -0.07290000468492508,
+        0.021655134856700897
+      ],
+      "selected_u_k_semantic_hash": "e3735f56c2b67b1759a5cdb47c5a799e703275c24de4335d97e4a9604bfd6e87",
+      "solver_success": true,
+      "step_id": 3,
+      "step_semantic_hash": "6d70bb161a0d457874d88cee877fdf9587ef02153538a69c6711b117f79b5b49",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.07290000468492508,
+        -0.07290000468492508,
+        0.021655134856700897
+      ],
+      "u_des_semantic_hash": "e3735f56c2b67b1759a5cdb47c5a799e703275c24de4335d97e4a9604bfd6e87",
+      "x_k": [
+        -0.47107765078544617,
+        -0.018287651240825653,
+        0.04710588604211807,
+        0.01354999840259552,
+        -0.01355000026524067,
+        0.004208552185446024
+      ],
+      "x_k_semantic_hash": "68986ebeddbf1e997c3e3602aa87c83d5188657cd854cfeb29ac5fe1aa94f436"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        0.06255365163087845,
+        -0.06505420804023743,
+        0.018211618065834045
+      ],
+      "plant_input_x": [
+        -0.4704001545906067,
+        -0.01896515116095543,
+        0.04731631278991699,
+        0.017194999381899834,
+        -0.017195001244544983,
+        0.005291309207677841
+      ],
+      "plant_output_x_next": [
+        -0.46954041719436646,
+        -0.019824901595711708,
+        0.04758087918162346,
+        0.020322682335972786,
+        -0.020447712391614914,
+        0.006201890297234058
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "7689d30461395414e93ca680cb710924849da502741f051fd1b79f9b4c69184c",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        0.06255365163087845,
+        -0.06505420804023743,
+        0.018211618065834045
+      ],
+      "selected_u_k_semantic_hash": "7689d30461395414e93ca680cb710924849da502741f051fd1b79f9b4c69184c",
+      "solver_success": true,
+      "step_id": 4,
+      "step_semantic_hash": "ea65b711e9b68f5367d58cca3318392ef45abf31fab347f51a9c92d9181938ba",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.06560999900102615,
+        -0.06560999900102615,
+        0.01843748614192009
+      ],
+      "u_des_semantic_hash": "51b21922c0097a1615135d8b2e92309f52de0b6abe3f62bbe5d60f6229586047",
+      "x_k": [
+        -0.4704001545906067,
+        -0.01896515116095543,
+        0.04731631278991699,
+        0.017194999381899834,
+        -0.017195001244544983,
+        0.005291309207677841
+      ],
+      "x_k_semantic_hash": "2d6575563fe414970c473f6545142063b6fe1725cdbd540f52a965bc0c5edaa9"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        0.0445985347032547,
+        -0.05239668861031532,
+        0.013791680335998535
+      ],
+      "plant_input_x": [
+        -0.46954041719436646,
+        -0.019824901595711708,
+        0.04758087918162346,
+        0.020322682335972786,
+        -0.020447712391614914,
+        0.006201890297234058
+      ],
+      "plant_output_x_next": [
+        -0.4685242772102356,
+        -0.02084728702902794,
+        0.04789097234606743,
+        0.02255260944366455,
+        -0.023067547008395195,
+        0.00689147412776947
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "9976f79f7477279d2540a3c71ea6eb12ad355d5f0fa70fa64cdf69848ffa5965",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        0.0445985347032547,
+        -0.05239668861031532,
+        0.013791680335998535
+      ],
+      "selected_u_k_semantic_hash": "9976f79f7477279d2540a3c71ea6eb12ad355d5f0fa70fa64cdf69848ffa5965",
+      "solver_success": true,
+      "step_id": 5,
+      "step_semantic_hash": "fc5a11f019b6cb8290634d2df798b6fe19a2d729d98aa4624362ba8e20511cee",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.059354640543460846,
+        -0.05910458043217659,
+        0.015293492935597897
+      ],
+      "u_des_semantic_hash": "97b29eda8ac7e1d27251eb87af88f4733a64a422499b98560c4f4a09d555df54",
+      "x_k": [
+        -0.46954041719436646,
+        -0.019824901595711708,
+        0.04758087918162346,
+        0.020322682335972786,
+        -0.020447712391614914,
+        0.006201890297234058
+      ],
+      "x_k_semantic_hash": "c879fd2cb7e7f9ec5b27a04136fe5ee4e97846c6bd8a9fd5e0a4af42b4d43eb6"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        0.02902671881020069,
+        -0.03897358104586601,
+        0.009440263733267784
+      ],
+      "plant_input_x": [
+        -0.4685242772102356,
+        -0.02084728702902794,
+        0.04789097234606743,
+        0.02255260944366455,
+        -0.023067547008395195,
+        0.00689147412776947
+      ],
+      "plant_output_x_next": [
+        -0.46739664673805237,
+        -0.022000664845108986,
+        0.04823554679751396,
+        0.024003945291042328,
+        -0.02501622587442398,
+        0.007363487500697374
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "dbb0ad08dcf5b31847d58afaac2119ab20c352788114a41d2c0cab636025e28d",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        0.02902671881020069,
+        -0.03897358104586601,
+        0.009440263733267784
+      ],
+      "selected_u_k_semantic_hash": "dbb0ad08dcf5b31847d58afaac2119ab20c352788114a41d2c0cab636025e28d",
+      "solver_success": true,
+      "step_id": 6,
+      "step_semantic_hash": "53896243480482c73ac9d8f776d10bdbbbbf8eb7a93db838694deac2c928df66",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.05489478260278702,
+        -0.05386490374803543,
+        0.01236385852098465
+      ],
+      "u_des_semantic_hash": "a9756e666d657d62d6ddd693000a909e91b914e6784f0331ec77b1ad8cdbcb65",
+      "x_k": [
+        -0.4685242772102356,
+        -0.02084728702902794,
+        0.04789097234606743,
+        0.02255260944366455,
+        -0.023067547008395195,
+        0.00689147412776947
+      ],
+      "x_k_semantic_hash": "df70b5f4ade1af0e881907ff28b3c794e78d6c3fb442732460fb563431ad7c39"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        0.017011521384119987,
+        -0.03005618043243885,
+        0.005841667763888836
+      ],
+      "plant_input_x": [
+        -0.46739664673805237,
+        -0.022000664845108986,
+        0.04823554679751396,
+        0.024003945291042328,
+        -0.02501622587442398,
+        0.007363487500697374
+      ],
+      "plant_output_x_next": [
+        -0.4661964476108551,
+        -0.023251475766301155,
+        0.04860372096300125,
+        0.024854522198438644,
+        -0.026519034057855606,
+        0.00765557074919343
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "f09cee86aade02dfcdd92601d86adcd1fa70293835dfe1d6d79771c7e2806687",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        0.017011521384119987,
+        -0.03005618043243885,
+        0.005841667763888836
+      ],
+      "selected_u_k_semantic_hash": "f09cee86aade02dfcdd92601d86adcd1fa70293835dfe1d6d79771c7e2806687",
+      "solver_success": true,
+      "step_id": 7,
+      "step_semantic_hash": "c425fd76f041016783fd8f5c7cff9dc181645054a3f4f7242a0f54be5d1bf51e",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.051992110908031464,
+        -0.04996754974126816,
+        0.00969696044921875
+      ],
+      "u_des_semantic_hash": "3226a7ddb2083cdd0d3b28852f63a86dfb9625dd08d19d09541dc05bdbfdd65a",
+      "x_k": [
+        -0.46739664673805237,
+        -0.022000664845108986,
+        0.04823554679751396,
+        0.024003945291042328,
+        -0.02501622587442398,
+        0.007363487500697374
+      ],
+      "x_k_semantic_hash": "25ef319149c17dcafd482d65ceefce170bf49226d1f0b61cad6d23e78d5d1dc0"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        0.010293320752680302,
+        -0.0196542851626873,
+        0.0030078121926635504
+      ],
+      "plant_input_x": [
+        -0.4661964476108551,
+        -0.023251475766301155,
+        0.04860372096300125,
+        0.024854522198438644,
+        -0.026519034057855606,
+        0.00765557074919343
+      ],
+      "plant_output_x_next": [
+        -0.4649537205696106,
+        -0.02457742765545845,
+        0.04898649826645851,
+        0.0253691878169775,
+        -0.027501748874783516,
+        0.007805961184203625
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "260d8515f400b2acd061dd4530ffac6d9371a2eaeabb9f74b74708bf7d950300",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        0.010293320752680302,
+        -0.0196542851626873,
+        0.0030078121926635504
+      ],
+      "selected_u_k_semantic_hash": "260d8515f400b2acd061dd4530ffac6d9371a2eaeabb9f74b74708bf7d950300",
+      "solver_success": true,
+      "step_id": 8,
+      "step_semantic_hash": "d3d1fbdf9c30d878237cb475baa454ce430115c4c62e80d8ec9eacc31a4bc8b7",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.05029096081852913,
+        -0.04289129003882408,
+        0.007271922659128904
+      ],
+      "u_des_semantic_hash": "fc6e088db4d61bfc1101bb72850919bea5a1055b260a0dca26f5dccdd44ff67c",
+      "x_k": [
+        -0.4661964476108551,
+        -0.023251475766301155,
+        0.04860372096300125,
+        0.024854522198438644,
+        -0.026519034057855606,
+        0.00765557074919343
+      ],
+      "x_k_semantic_hash": "d1f6838f7b083496b887c4cb2b1aae29a075b97cd6d2f8444abcd75d20aafce7"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        0.006928806658834219,
+        -0.00886452291160822,
+        0.000715418835170567
+      ],
+      "plant_input_x": [
+        -0.4649537205696106,
+        -0.02457742765545845,
+        0.04898649826645851,
+        0.0253691878169775,
+        -0.027501748874783516,
+        0.007805961184203625
+      ],
+      "plant_output_x_next": [
+        -0.4636852741241455,
+        -0.02595251426100731,
+        0.049376796931028366,
+        0.025715628638863564,
+        -0.02794497460126877,
+        0.00784173235297203
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "4dc73e877731aa4a6666ef70f8fbbd22cd8642b863ee72ebcfd802a927f49ec6",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        0.006928806658834219,
+        -0.00886452291160822,
+        0.000715418835170567
+      ],
+      "selected_u_k_semantic_hash": "4dc73e877731aa4a6666ef70f8fbbd22cd8642b863ee72ebcfd802a927f49ec6",
+      "solver_success": true,
+      "step_id": 9,
+      "step_semantic_hash": "65e8f0e8c1eebab0df13a5b6f8929ff390729464b39eb91764a9262cd0e1a021",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.04926162213087082,
+        -0.03429611027240753,
+        0.005057254806160927
+      ],
+      "u_des_semantic_hash": "dcdbfd51c3c36077df2f00287e6004f2084d4f9e755cefa0723d415f659902f8",
+      "x_k": [
+        -0.4649537205696106,
+        -0.02457742765545845,
+        0.04898649826645851,
+        0.0253691878169775,
+        -0.027501748874783516,
+        0.007805961184203625
+      ],
+      "x_k_semantic_hash": "ea96da0eaf09b095c0460a3c2d575ed39568191d7c11665915240d1bd4db4e2e"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        0.004536384716629982,
+        -0.000447140249889344,
+        -0.0013275409583002329
+      ],
+      "plant_input_x": [
+        -0.4636852741241455,
+        -0.02595251426100731,
+        0.049376796931028366,
+        0.025715628638863564,
+        -0.02794497460126877,
+        0.00784173235297203
+      ],
+      "plant_output_x_next": [
+        -0.4623994827270508,
+        -0.027349762618541718,
+        0.04976888373494148,
+        0.025942448526620865,
+        -0.027967331930994987,
+        0.007775355130434036
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "4ed3fc5cfeb9fefa59f6284f075741a2306f9f636dc1b1dbbab9020b5a434779",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        0.004536384716629982,
+        -0.000447140249889344,
+        -0.0013275409583002329
+      ],
+      "selected_u_k_semantic_hash": "4ed3fc5cfeb9fefa59f6284f075741a2306f9f636dc1b1dbbab9020b5a434779",
+      "solver_success": true,
+      "step_id": 10,
+      "step_semantic_hash": "3a27db8a951e07688e723d93ba5dc8ad96a5847db7e9753968edefb1c0744edf",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.04856874793767929,
+        -0.026534222066402435,
+        0.0030342191457748413
+      ],
+      "u_des_semantic_hash": "b9c8fa6785f75240c8a4f88b37867c66f6201c33b7db6866acfca1116e5cf8a1",
+      "x_k": [
+        -0.4636852741241455,
+        -0.02595251426100731,
+        0.049376796931028366,
+        0.025715628638863564,
+        -0.02794497460126877,
+        0.00784173235297203
+      ],
+      "x_k_semantic_hash": "5ef7513351d2a122f91372f404afcf3c1e36ebeb69f9551f1059812a5d08217e"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        0.002750454470515251,
+        0.006026645191013813,
+        -0.003145035821944475
+      ],
+      "plant_input_x": [
+        -0.4623994827270508,
+        -0.027349762618541718,
+        0.04976888373494148,
+        0.025942448526620865,
+        -0.027967331930994987,
+        0.007775355130434036
+      ],
+      "plant_output_x_next": [
+        -0.46110236644744873,
+        -0.028748128563165665,
+        0.05015765130519867,
+        0.026079971343278885,
+        -0.02766599878668785,
+        0.007618103176355362
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "ce2789fd3462bae4b064def5c52d2e7c749512e4d9e7089ff24f82636109a7e5",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        0.002750454470515251,
+        0.006026645191013813,
+        -0.003145035821944475
+      ],
+      "selected_u_k_semantic_hash": "ce2789fd3462bae4b064def5c52d2e7c749512e4d9e7089ff24f82636109a7e5",
+      "solver_success": true,
+      "step_id": 11,
+      "step_semantic_hash": "e62b960a66170241cd3020889c4cf0b333de9636e28ea3523f4438d015fab85b",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.04811510071158409,
+        -0.019503267481923103,
+        0.0012065395712852478
+      ],
+      "u_des_semantic_hash": "40083a90e028a1c3fd4c439a6834cb7570dcea2002befdcc1c90bbff8ff715a5",
+      "x_k": [
+        -0.4623994827270508,
+        -0.027349762618541718,
+        0.04976888373494148,
+        0.025942448526620865,
+        -0.027967331930994987,
+        0.007775355130434036
+      ],
+      "x_k_semantic_hash": "637e29f6746a3e43198509eb4b989a781cb2a931d8e46b42951e876037a715aa"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        0.0014725945657119155,
+        0.011238638311624527,
+        -0.004728277213871479
+      ],
+      "plant_input_x": [
+        -0.46110236644744873,
+        -0.028748128563165665,
+        0.05015765130519867,
+        0.026079971343278885,
+        -0.02766599878668785,
+        0.007618103176355362
+      ],
+      "plant_output_x_next": [
+        -0.4597983658313751,
+        -0.030131429433822632,
+        0.0505385547876358,
+        0.026153601706027985,
+        -0.02710406668484211,
+        0.007381689269095659
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "8627cb0e3a3de6176824785b8486cb7fe074a8c827be228bb1961ae10202950f",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        0.0014725945657119155,
+        0.011238638311624527,
+        -0.004728277213871479
+      ],
+      "selected_u_k_semantic_hash": "8627cb0e3a3de6176824785b8486cb7fe074a8c827be228bb1961ae10202950f",
+      "solver_success": true,
+      "step_id": 12,
+      "step_semantic_hash": "77605d439b3f6a8367d9eddfb059b662d4faefb9b4938ec364ecfc8d8246eae9",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.04784005507826805,
+        -0.013114102184772491,
+        -0.000422794371843338
+      ],
+      "u_des_semantic_hash": "1a166ea66be530b79ede144a491ec353ec5f9ebe5fe23f5f5d394261ef6718c9",
+      "x_k": [
+        -0.46110236644744873,
+        -0.028748128563165665,
+        0.05015765130519867,
+        0.026079971343278885,
+        -0.02766599878668785,
+        0.007618103176355362
+      ],
+      "x_k_semantic_hash": "f98693ba2938f5623ffc6ee04ab5c1907ec0622887cf97ff261e08a7d2f283ba"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        0.0011726354714483023,
+        0.016651540994644165,
+        -0.00599987106397748
+      ],
+      "plant_input_x": [
+        -0.4597983658313751,
+        -0.030131429433822632,
+        0.0505385547876358,
+        0.026153601706027985,
+        -0.02710406668484211,
+        0.007381689269095659
+      ],
+      "plant_output_x_next": [
+        -0.4584906995296478,
+        -0.0314866341650486,
+        0.05090763792395592,
+        0.026212234050035477,
+        -0.02627149038016796,
+        0.007081695832312107
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "ace767856cd381d1db1ccac2c91d13a5757d28fce9c15b11e622be06bb106c9e",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        0.0011726354714483023,
+        0.016651540994644165,
+        -0.00599987106397748
+      ],
+      "selected_u_k_semantic_hash": "ace767856cd381d1db1ccac2c91d13a5757d28fce9c15b11e622be06bb106c9e",
+      "solver_success": true,
+      "step_id": 13,
+      "step_semantic_hash": "4523d8b55d647430ed4cad333f20a44b458dfaa87bc243de8105861311b6ae5a",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.04769279807806015,
+        -0.007321460172533989,
+        -0.0018544839695096016
+      ],
+      "u_des_semantic_hash": "c4c8e3d885db886e6022ad6296f3b523e25b2334520eb8b0be96196e398b8df0",
+      "x_k": [
+        -0.4597983658313751,
+        -0.030131429433822632,
+        0.0505385547876358,
+        0.026153601706027985,
+        -0.02710406668484211,
+        0.007381689269095659
+      ],
+      "x_k_semantic_hash": "de52b281f05fb74340b4cfa7efb28c9730cc51f07578d9eafd70bbddb156ee67"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        0.0010867802193388343,
+        0.021289290860295296,
+        -0.007069928105920553
+      ],
+      "plant_input_x": [
+        -0.4584906995296478,
+        -0.0314866341650486,
+        0.05090763792395592,
+        0.026212234050035477,
+        -0.02627149038016796,
+        0.007081695832312107
+      ],
+      "plant_output_x_next": [
+        -0.45718008279800415,
+        -0.032800208777189255,
+        0.051261723041534424,
+        0.02626657299697399,
+        -0.025207025930285454,
+        0.006728199310600758
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "8c1c95fd29ba065bbfb93e262839e5a49263d571487432b15617fea7c5d6091e",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        0.0010867802193388343,
+        0.021289290860295296,
+        -0.007069928105920553
+      ],
+      "selected_u_k_semantic_hash": "8c1c95fd29ba065bbfb93e262839e5a49263d571487432b15617fea7c5d6091e",
+      "solver_success": true,
+      "step_id": 14,
+      "step_semantic_hash": "592aeea3f9aaaaa7995f209b87fca66861c632d73f71b476a707fbb5e2295c20",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.04757552966475487,
+        -0.0022105909883975983,
+        -0.003099912777543068
+      ],
+      "u_des_semantic_hash": "269241006d19b91fc6e484aa66e9dd4c3135633324b01d57838dafef3fb5a473",
+      "x_k": [
+        -0.4584906995296478,
+        -0.0314866341650486,
+        0.05090763792395592,
+        0.026212234050035477,
+        -0.02627149038016796,
+        0.007081695832312107
+      ],
+      "x_k_semantic_hash": "02a59128ec4d303dda66b9ea11f832b8c2c76473196ae55ecb13cbfeb28ebb3e"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        0.0010972063755616546,
+        0.025224266573786736,
+        -0.007954942993819714
+      ],
+      "plant_input_x": [
+        -0.45718008279800415,
+        -0.032800208777189255,
+        0.051261723041534424,
+        0.02626657299697399,
+        -0.025207025930285454,
+        0.006728199310600758
+      ],
+      "plant_output_x_next": [
+        -0.4558667540550232,
+        -0.034060560166835785,
+        0.05159813165664673,
+        0.02632143348455429,
+        -0.02394581213593483,
+        0.006330451928079128
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "a5d2cbd32b395d12e87da68568b32369eced4344c3c56da90a83cb017e63e6fa",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        0.0010972063755616546,
+        0.025224266573786736,
+        -0.007954942993819714
+      ],
+      "selected_u_k_semantic_hash": "a5d2cbd32b395d12e87da68568b32369eced4344c3c56da90a83cb017e63e6fa",
+      "solver_success": true,
+      "step_id": 15,
+      "step_semantic_hash": "eae936bf36a0c16289b70e47e46343b305086abb663b6e4d366f9d8cd602b3b7",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.04746685177087784,
+        0.0022283531725406647,
+        -0.004163345322012901
+      ],
+      "u_des_semantic_hash": "537e382104eaed8c674da3271676c8b618afde6f63d9e96cb365036457754789",
+      "x_k": [
+        -0.45718008279800415,
+        -0.032800208777189255,
+        0.051261723041534424,
+        0.02626657299697399,
+        -0.025207025930285454,
+        0.006728199310600758
+      ],
+      "x_k_semantic_hash": "324cd260c6f14e20c4564d9b20708360ceb26e5e32d586bc23e416af8f6fc32f"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        0.001129209529608488,
+        0.0285112913697958,
+        -0.00866817869246006
+      ],
+      "plant_input_x": [
+        -0.4558667540550232,
+        -0.034060560166835785,
+        0.05159813165664673,
+        0.02632143348455429,
+        -0.02394581213593483,
+        0.006330451928079128
+      ],
+      "plant_output_x_next": [
+        -0.45455068349838257,
+        -0.03525784984230995,
+        0.051914654672145844,
+        0.02637789398431778,
+        -0.022520247846841812,
+        0.00589704280719161
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "27dd4b816f2a736ec2aa8c76b5aeb0caa649cf7d7976a1daf99c2df927bfa7d3",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        0.001129209529608488,
+        0.0285112913697958,
+        -0.00866817869246006
+      ],
+      "selected_u_k_semantic_hash": "27dd4b816f2a736ec2aa8c76b5aeb0caa649cf7d7976a1daf99c2df927bfa7d3",
+      "solver_success": true,
+      "step_id": 16,
+      "step_semantic_hash": "8409dab13f7822d803e2e89083c8749e80be84a202460392a465dc2aa1a75a54",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.04735713452100754,
+        0.006007682532072067,
+        -0.005049893632531166
+      ],
+      "u_des_semantic_hash": "0296848f0f1ef5a6032e21b1b266370b7a7247fd936a5afb0f72d0b7025c049e",
+      "x_k": [
+        -0.4558667540550232,
+        -0.034060560166835785,
+        0.05159813165664673,
+        0.02632143348455429,
+        -0.02394581213593483,
+        0.006330451928079128
+      ],
+      "x_k_semantic_hash": "3ef97250015a8d05a7ef28249a24ec7ae65bf0931dadd3263add178cf24d1056"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        0.0011404728284105659,
+        0.03119371458888054,
+        -0.009220940992236137
+      ],
+      "plant_input_x": [
+        -0.45455068349838257,
+        -0.03525784984230995,
+        0.051914654672145844,
+        0.02637789398431778,
+        -0.022520247846841812,
+        0.00589704280719161
+      ],
+      "plant_output_x_next": [
+        -0.4532317817211151,
+        -0.03638386353850365,
+        0.052209507673978806,
+        0.026434917002916336,
+        -0.02096056193113327,
+        0.0054359957575798035
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "419f306d1420790c16a0d7de582cd2424989ac2f3a5bfa219cba0491d94ec64a",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        0.0011404728284105659,
+        0.03119371458888054,
+        -0.009220940992236137
+      ],
+      "selected_u_k_semantic_hash": "419f306d1420790c16a0d7de582cd2424989ac2f3a5bfa219cba0491d94ec64a",
+      "solver_success": true,
+      "step_id": 17,
+      "step_semantic_hash": "1d3b4a39a0cb4bb551926f1fc2b2b6177f808f97abf117e1d49f89acb2c3e4ac",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.04724421352148056,
+        0.009143002331256866,
+        -0.005765690468251705
+      ],
+      "u_des_semantic_hash": "578315bba8beb04aa8f8c62bb9417171a63cb93b116eb8ed616d8f1df4673462",
+      "x_k": [
+        -0.45455068349838257,
+        -0.03525784984230995,
+        0.051914654672145844,
+        0.02637789398431778,
+        -0.022520247846841812,
+        0.00589704280719161
+      ],
+      "x_k_semantic_hash": "ae55cec811d6f37d6704ceaaba036830861aa4a8d4f0a66dc9add5a396f832d6"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        0.0011120674898847938,
+        0.03330771252512932,
+        -0.009623466059565544
+      ],
+      "plant_input_x": [
+        -0.4532317817211151,
+        -0.03638386353850365,
+        0.052209507673978806,
+        0.026434917002916336,
+        -0.02096056193113327,
+        0.0054359957575798035
+      ],
+      "plant_output_x_next": [
+        -0.4519100487232208,
+        -0.03743189200758934,
+        0.052481308579444885,
+        0.02649052068591118,
+        -0.01929517649114132,
+        0.004954822361469269
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "61be75a07eeacd7f8b2125aea42e932795c339d5bc34b20518245195c63f032f",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        0.0011120674898847938,
+        0.03330771252512932,
+        -0.009623466059565544
+      ],
+      "selected_u_k_semantic_hash": "61be75a07eeacd7f8b2125aea42e932795c339d5bc34b20518245195c63f032f",
+      "solver_success": true,
+      "step_id": 18,
+      "step_semantic_hash": "e2cd4ed8c5ca1b3ad05c0c56d79b2a11c6d0b455a9f77fa23f301417bb9f76f0",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.04713016375899315,
+        0.011653698980808258,
+        -0.006317861378192902
+      ],
+      "u_des_semantic_hash": "76e1724e0085b62b1786e121b34e104a78657424d6ea32a3290253481181cf3f",
+      "x_k": [
+        -0.4532317817211151,
+        -0.03638386353850365,
+        0.052209507673978806,
+        0.026434917002916336,
+        -0.02096056193113327,
+        0.0054359957575798035
+      ],
+      "x_k_semantic_hash": "7f933da56445dc4c89ec8901a642357288d90e659c26148a0fd3df9ee1686c19"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        0.00104180455673486,
+        0.034885406494140625,
+        -0.009885553270578384
+      ],
+      "plant_input_x": [
+        -0.4519100487232208,
+        -0.03743189200758934,
+        0.052481308579444885,
+        0.02649052068591118,
+        -0.01929517649114132,
+        0.004954822361469269
+      ],
+      "plant_output_x_next": [
+        -0.4505855143070221,
+        -0.038396649062633514,
+        0.0527290478348732,
+        0.02654261142015457,
+        -0.017550906166434288,
+        0.004460544791072607
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "f633c84a6b36cb0cdc99394296e13fd3ad307e0ef005e28b778853b950e6f4be",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        0.00104180455673486,
+        0.034885406494140625,
+        -0.009885553270578384
+      ],
+      "selected_u_k_semantic_hash": "f633c84a6b36cb0cdc99394296e13fd3ad307e0ef005e28b778853b950e6f4be",
+      "solver_success": true,
+      "step_id": 19,
+      "step_semantic_hash": "9213b0f757ebfafba4595c17b20a1ed616b9733647c6d4becd82a659173db383",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.04701896384358406,
+        0.013563070446252823,
+        -0.006714519113302231
+      ],
+      "u_des_semantic_hash": "99d1bbb34b8199be16b1c469a3cf493d5654152e3e8daedaaded325f3f5e92ad",
+      "x_k": [
+        -0.4519100487232208,
+        -0.03743189200758934,
+        0.052481308579444885,
+        0.02649052068591118,
+        -0.01929517649114132,
+        0.004954822361469269
+      ],
+      "x_k_semantic_hash": "f74cb13b5716d57ef00acc96423ae36576ec7879e75fb2bb526ec3ee47e3a448"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.000538873253390193,
+        0.0327766016125679,
+        -0.009708806872367859
+      ],
+      "plant_input_x": [
+        -0.4505855143070221,
+        -0.038396649062633514,
+        0.0527290478348732,
+        0.02654261142015457,
+        -0.017550906166434288,
+        0.004460544791072607
+      ],
+      "plant_output_x_next": [
+        -0.44925838708877563,
+        -0.0392741933465004,
+        0.05295207351446152,
+        0.026515668258070946,
+        -0.015912076458334923,
+        0.0039751045405864716
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "3de0775fb7767854b7a6c80b298a566a48fc3aabfe15e84c7da53546ba54a05f",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.000538873253390193,
+        0.0327766016125679,
+        -0.009708806872367859
+      ],
+      "selected_u_k_semantic_hash": "3de0775fb7767854b7a6c80b298a566a48fc3aabfe15e84c7da53546ba54a05f",
+      "solver_success": true,
+      "step_id": 20,
+      "step_semantic_hash": "589b33327a4ca164321cd4b692446536764616c92402701e4773db6da4e9d5a3",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.046914778649806976,
+        0.014898315072059631,
+        -0.006964660249650478
+      ],
+      "u_des_semantic_hash": "5ccbdd48593ee1a9a314cc8acf18290639131dc2559a06606323fc927e5ee603",
+      "x_k": [
+        -0.4505855143070221,
+        -0.038396649062633514,
+        0.0527290478348732,
+        0.02654261142015457,
+        -0.017550906166434288,
+        0.004460544791072607
+      ],
+      "x_k_semantic_hash": "6587596d858e2308868b38705927ad0a5dc4843be9f3ec703df8d0a186248644"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.0032943508122116327,
+        0.027556851506233215,
+        -0.009145356714725494
+      ],
+      "plant_input_x": [
+        -0.44925838708877563,
+        -0.0392741933465004,
+        0.05295207351446152,
+        0.026515668258070946,
+        -0.015912076458334923,
+        0.0039751045405864716
+      ],
+      "plant_output_x_next": [
+        -0.4479326009750366,
+        -0.04006979614496231,
+        0.053150828927755356,
+        0.026350950822234154,
+        -0.014534234069287777,
+        0.0035178367979824543
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "f9e1ac7e7d26ebc1f0eb0d66632353eebd4980ac910901038ba68033d1602bbb",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.0032943508122116327,
+        0.027556851506233215,
+        -0.009145356714725494
+      ],
+      "selected_u_k_semantic_hash": "f9e1ac7e7d26ebc1f0eb0d66632353eebd4980ac910901038ba68033d1602bbb",
+      "solver_success": true,
+      "step_id": 21,
+      "step_semantic_hash": "f121190860d40e7eaef08d356a157ea7ea13d1a62b4042ac4cbec4426a8dbc25",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.04696866124868393,
+        0.016008377075195312,
+        -0.007108908146619797
+      ],
+      "u_des_semantic_hash": "fb94b29aeb679658f8edb645369893c72be6a0528326c617abc921e432f68171",
+      "x_k": [
+        -0.44925838708877563,
+        -0.0392741933465004,
+        0.05295207351446152,
+        0.026515668258070946,
+        -0.015912076458334923,
+        0.0039751045405864716
+      ],
+      "x_k_semantic_hash": "29b82572853e325c86a2dc12e4c31c3532c5d18e59bcb43e68936192695e62ce"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.005277837626636028,
+        0.023489292711019516,
+        -0.008617367595434189
+      ],
+      "plant_input_x": [
+        -0.4479326009750366,
+        -0.04006979614496231,
+        0.053150828927755356,
+        0.026350950822234154,
+        -0.014534234069287777,
+        0.0035178367979824543
+      ],
+      "plant_output_x_next": [
+        -0.4466150403022766,
+        -0.04079650714993477,
+        0.053326722234487534,
+        0.02608705870807171,
+        -0.013359769247472286,
+        0.0030869683250784874
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "9500f43cba9ba501d310cb78825f9790f3f8a629cd8ae8e73571dd3ecc0ab363",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.005277837626636028,
+        0.023489292711019516,
+        -0.008617367595434189
+      ],
+      "selected_u_k_semantic_hash": "9500f43cba9ba501d310cb78825f9790f3f8a629cd8ae8e73571dd3ecc0ab363",
+      "solver_success": true,
+      "step_id": 22,
+      "step_semantic_hash": "70a264bfd85a6d7d715ce84ec7e412a2b7025b8ead0be4077f0e7b9a7f616e53",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.04729809612035751,
+        0.01723070628941059,
+        -0.007188149727880955
+      ],
+      "u_des_semantic_hash": "892cb4e885b2f6ef0c8e6b5916ae8e3bc2e2e0b5e9844c5f5f30214f94b9f5b6",
+      "x_k": [
+        -0.4479326009750366,
+        -0.04006979614496231,
+        0.053150828927755356,
+        0.026350950822234154,
+        -0.014534234069287777,
+        0.0035178367979824543
+      ],
+      "x_k_semantic_hash": "c7c3fdfccf82686385886270d58778dda9251bcda069330b2761ac30a7902c7c"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.0067029185593128204,
+        0.02029315009713173,
+        -0.008110620081424713
+      ],
+      "plant_input_x": [
+        -0.4466150403022766,
+        -0.04079650714993477,
+        0.053326722234487534,
+        0.02608705870807171,
+        -0.013359769247472286,
+        0.0030869683250784874
+      ],
+      "plant_output_x_next": [
+        -0.44531068205833435,
+        -0.04146449640393257,
+        0.053481072187423706,
+        0.025751912966370583,
+        -0.012345111928880215,
+        0.002681437414139509
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "7e5e9b478e1c4e9cee94cb67be237bdaf1821a11847b5c26c72c630bad31fe0b",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.0067029185593128204,
+        0.02029315009713173,
+        -0.008110620081424713
+      ],
+      "selected_u_k_semantic_hash": "7e5e9b478e1c4e9cee94cb67be237bdaf1821a11847b5c26c72c630bad31fe0b",
+      "solver_success": true,
+      "step_id": 23,
+      "step_semantic_hash": "c7472ec126b18b972419c58c4adfe06c148d53dc7bdc98bd6ebd4e4a90d5aa92",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.047825880348682404,
+        0.0185153316706419,
+        -0.00720587931573391
+      ],
+      "u_des_semantic_hash": "95b2d6ed27933ee0ec805a0a51c90efe144401faadeca78514c283438877dbbf",
+      "x_k": [
+        -0.4466150403022766,
+        -0.04079650714993477,
+        0.053326722234487534,
+        0.02608705870807171,
+        -0.013359769247472286,
+        0.0030869683250784874
+      ],
+      "x_k_semantic_hash": "c7ff4807dd2eb26181eb1182c833b231d58b38eb43a54493cc879bb3ce5ba7b7"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.0077201202511787415,
+        0.017757335677742958,
+        -0.0076159462332725525
+      ],
+      "plant_input_x": [
+        -0.44531068205833435,
+        -0.04146449640393257,
+        0.053481072187423706,
+        0.025751912966370583,
+        -0.012345111928880215,
+        0.002681437414139509
+      ],
+      "plant_output_x_next": [
+        -0.444023072719574,
+        -0.04208175092935562,
+        0.05361514538526535,
+        0.025365907698869705,
+        -0.011457244865596294,
+        0.0023006401024758816
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "0e431e14c142d699cba420f4ff1a269368a6449882b047e293966a26c64dd816",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.0077201202511787415,
+        0.017757335677742958,
+        -0.0076159462332725525
+      ],
+      "selected_u_k_semantic_hash": "0e431e14c142d699cba420f4ff1a269368a6449882b047e293966a26c64dd816",
+      "solver_success": true,
+      "step_id": 24,
+      "step_semantic_hash": "20ef3d0db5ab653f5a2d16d91c1900d495a66f760efe7b1782b1d1ed6b4374fe",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.04849617928266525,
+        0.01982596330344677,
+        -0.007166567258536816
+      ],
+      "u_des_semantic_hash": "c107b11647cc57c888cc2088567851bc492620e8a69820a38cbddb62a9f26138",
+      "x_k": [
+        -0.44531068205833435,
+        -0.04146449640393257,
+        0.053481072187423706,
+        0.025751912966370583,
+        -0.012345111928880215,
+        0.002681437414139509
+      ],
+      "x_k_semantic_hash": "92e804c7853cca8fc71a619ffacdceb567e138b07e6448268bbe12ab94e5640b"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.008436715230345726,
+        0.01572422683238983,
+        -0.0071281492710113525
+      ],
+      "plant_input_x": [
+        -0.444023072719574,
+        -0.04208175092935562,
+        0.05361514538526535,
+        0.025365907698869705,
+        -0.011457244865596294,
+        0.0023006401024758816
+      ],
+      "plant_output_x_next": [
+        -0.4427547752857208,
+        -0.0426546148955822,
+        0.053730178624391556,
+        0.02494407258927822,
+        -0.010671033523976803,
+        0.0019442326156422496
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "6a48b114c246071aacc771d9f834089437f7858574215a9f1d0380e979d115ad",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.008436715230345726,
+        0.01572422683238983,
+        -0.0071281492710113525
+      ],
+      "selected_u_k_semantic_hash": "6a48b114c246071aacc771d9f834089437f7858574215a9f1d0380e979d115ad",
+      "solver_success": true,
+      "step_id": 25,
+      "step_semantic_hash": "47f1cfcb075888dda2f0e5d9931b67b4688b32e6d6942a1d62cbaa89b375a678",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.04926818236708641,
+        0.02113650180399418,
+        -0.007075338624417782
+      ],
+      "u_des_semantic_hash": "50bf49770625659682ddf96d00fad997743dca3f64ebf882c54b9d014db89819",
+      "x_k": [
+        -0.444023072719574,
+        -0.04208175092935562,
+        0.05361514538526535,
+        0.025365907698869705,
+        -0.011457244865596294,
+        0.0023006401024758816
+      ],
+      "x_k_semantic_hash": "3bdb8df210a65d9e18570431705c5814e77825a0818eb045c33dbc00bf96d2bd"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.00892995297908783,
+        0.014075685292482376,
+        -0.00664489297196269
+      ],
+      "plant_input_x": [
+        -0.4427547752857208,
+        -0.0426546148955822,
+        0.053730178624391556,
+        0.02494407258927822,
+        -0.010671033523976803,
+        0.0019442326156422496
+      ],
+      "plant_output_x_next": [
+        -0.44150757789611816,
+        -0.04318816587328911,
+        0.05382739007472992,
+        0.02449757419526577,
+        -0.009967248886823654,
+        0.0016119879437610507
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "93efc28d845cfdeca2384ba4617a37172e15fac9c6ed24ee54054ffe93fb67de",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.00892995297908783,
+        0.014075685292482376,
+        -0.00664489297196269
+      ],
+      "selected_u_k_semantic_hash": "93efc28d845cfdeca2384ba4617a37172e15fac9c6ed24ee54054ffe93fb67de",
+      "solver_success": true,
+      "step_id": 26,
+      "step_semantic_hash": "699d66a61e0498ae3614ad71c139865b54ba0276a1f1b7596e9e4d61df5dd325",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.05011185258626938,
+        0.022428398951888084,
+        -0.006937690079212189
+      ],
+      "u_des_semantic_hash": "25591dbfbd4d6831ea45a36510b3502f73adeb6c236826286112cbc163a0ce56",
+      "x_k": [
+        -0.4427547752857208,
+        -0.0426546148955822,
+        0.053730178624391556,
+        0.02494407258927822,
+        -0.010671033523976803,
+        0.0019442326156422496
+      ],
+      "x_k_semantic_hash": "cdc939f9cc009c8a7f5ac25db38eff5c52d9779793666cfdf43422c5db750d00"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.009262601844966412,
+        0.012756393291056156,
+        -0.006169424392282963
+      ],
+      "plant_input_x": [
+        -0.44150757789611816,
+        -0.04318816587328911,
+        0.05382739007472992,
+        0.02449757419526577,
+        -0.009967248886823654,
+        0.0016119879437610507
+      ],
+      "plant_output_x_next": [
+        -0.4402827024459839,
+        -0.043686527758836746,
+        0.05390799045562744,
+        0.024034444242715836,
+        -0.009329428896307945,
+        0.0013035166775807738
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "54f72a9999fb4586fa0e784468f699368cee52de404af65952021f84bded2bad",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.009262601844966412,
+        0.012756393291056156,
+        -0.006169424392282963
+      ],
+      "selected_u_k_semantic_hash": "54f72a9999fb4586fa0e784468f699368cee52de404af65952021f84bded2bad",
+      "solver_success": true,
+      "step_id": 27,
+      "step_semantic_hash": "181076e1fcc76d6c5481fabe5e561b84168ca51e9270f1d2f796ac516e35d6ac",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.05100484937429428,
+        0.023688584566116333,
+        -0.006759257987141609
+      ],
+      "u_des_semantic_hash": "921b0a5a9402bec1cb2f4051bebcde3330cc60c2dd47b7359e2992546a8f2a48",
+      "x_k": [
+        -0.44150757789611816,
+        -0.04318816587328911,
+        0.05382739007472992,
+        0.02449757419526577,
+        -0.009967248886823654,
+        0.0016119879437610507
+      ],
+      "x_k_semantic_hash": "d8dd567631dff230909475e338551e9c4e18c97650d8fa4a2ca33af4bb76efce"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.009692033752799034,
+        0.012775328941643238,
+        -0.005819670390337706
+      ],
+      "plant_input_x": [
+        -0.4402827024459839,
+        -0.043686527758836746,
+        0.05390799045562744,
+        0.024034444242715836,
+        -0.009329428896307945,
+        0.0013035166775807738
+      ],
+      "plant_output_x_next": [
+        -0.43908098340034485,
+        -0.04415299743413925,
+        0.05397316813468933,
+        0.023549841716885567,
+        -0.008690662682056427,
+        0.0010125332046300173
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "9116cb28494b9f78452a041d1ca4456abbaf7d20bfd5a038cd45343888a9795e",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.009692033752799034,
+        0.012775328941643238,
+        -0.005819670390337706
+      ],
+      "selected_u_k_semantic_hash": "9116cb28494b9f78452a041d1ca4456abbaf7d20bfd5a038cd45343888a9795e",
+      "solver_success": true,
+      "step_id": 28,
+      "step_semantic_hash": "d7919b3f614a31a49d025afa4b7ca89804f8a9a4ca5f952c810ddfa7d836447c",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.05193110927939415,
+        0.024904754012823105,
+        -0.006545317359268665
+      ],
+      "u_des_semantic_hash": "7f6e923ffb7127061d89d7df7a69df261fe9b671344c136514603f142b8808b6",
+      "x_k": [
+        -0.4402827024459839,
+        -0.043686527758836746,
+        0.05390799045562744,
+        0.024034444242715836,
+        -0.009329428896307945,
+        0.0013035166775807738
+      ],
+      "x_k_semantic_hash": "11668b2d573e7969fde02dbad86e02f1e184a2b5afb614df152503c0b7b29395"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.010025784373283386,
+        0.012621940113604069,
+        -0.005439865402877331
+      ],
+      "plant_input_x": [
+        -0.43908098340034485,
+        -0.04415299743413925,
+        0.05397316813468933,
+        0.023549841716885567,
+        -0.008690662682056427,
+        0.0010125332046300173
+      ],
+      "plant_output_x_next": [
+        -0.437903493642807,
+        -0.04458753019571304,
+        0.05402379482984543,
+        0.023048551753163338,
+        -0.008059565909206867,
+        0.0007405399228446186
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "8a458e0f96f296618925b49fac52567cf44def548b76e8f342a04fdc306d7e41",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.010025784373283386,
+        0.012621940113604069,
+        -0.005439865402877331
+      ],
+      "selected_u_k_semantic_hash": "8a458e0f96f296618925b49fac52567cf44def548b76e8f342a04fdc306d7e41",
+      "solver_success": true,
+      "step_id": 29,
+      "step_semantic_hash": "e4c6b5fb08bcfae20cde8429f55ef75ae3009ae726c637de2adc21513b8b1de2",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.052900321781635284,
+        0.025959569960832596,
+        -0.0062892381101846695
+      ],
+      "u_des_semantic_hash": "016f62cf49fe77dee9089e2540cb147c48d0f778c1f5a682d30ac7d1d2d63ac1",
+      "x_k": [
+        -0.43908098340034485,
+        -0.04415299743413925,
+        0.05397316813468933,
+        0.023549841716885567,
+        -0.008690662682056427,
+        0.0010125332046300173
+      ],
+      "x_k_semantic_hash": "afaf6e58df42f82bb7bb323bac23231a5a7e3dd5c2ce67cd1f5ff010f493b635"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.010267790406942368,
+        0.012299635447561741,
+        -0.005036844871938229
+      ],
+      "plant_input_x": [
+        -0.437903493642807,
+        -0.04458753019571304,
+        0.05402379482984543,
+        0.023048551753163338,
+        -0.008059565909206867,
+        0.0007405399228446186
+      ],
+      "plant_output_x_next": [
+        -0.4367510676383972,
+        -0.04499050974845886,
+        0.05406082049012184,
+        0.022535162046551704,
+        -0.007444584276527166,
+        0.000488697667606175
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "c32675288171d95e1483dd38306aae099e7728d4ef2c6604a7e1661be4ea147f",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.010267790406942368,
+        0.012299635447561741,
+        -0.005036844871938229
+      ],
+      "selected_u_k_semantic_hash": "c32675288171d95e1483dd38306aae099e7728d4ef2c6604a7e1661be4ea147f",
+      "solver_success": true,
+      "step_id": 30,
+      "step_semantic_hash": "b71387d245b542fdd27ffda1771ca5261a829e136b0ff74ab1e0a52912e60753",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.05390290170907974,
+        0.026870038360357285,
+        -0.005998385138809681
+      ],
+      "u_des_semantic_hash": "122553dd5b1be7a0319df4f0ec98c947acf4993e0b67935aaaa060c7245375cc",
+      "x_k": [
+        -0.437903493642807,
+        -0.04458753019571304,
+        0.05402379482984543,
+        0.023048551753163338,
+        -0.008059565909206867,
+        0.0007405399228446186
+      ],
+      "x_k_semantic_hash": "6418dc3b3d97ff485db1246b46cfb372a4bd198dacdf16784563b5ca22e08bd4"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.010423681698739529,
+        0.011832312680780888,
+        -0.004618899431079626
+      ],
+      "plant_input_x": [
+        -0.4367510676383972,
+        -0.04499050974845886,
+        0.05406082049012184,
+        0.022535162046551704,
+        -0.007444584276527166,
+        0.000488697667606175
+      ],
+      "plant_output_x_next": [
+        -0.43562430143356323,
+        -0.04536274075508118,
+        0.05408525466918945,
+        0.02201397716999054,
+        -0.006852968595921993,
+        0.00025775269023142755
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "f97b8e930b76cff3e1f402be44c74a45c805bc0c47d1ec59a9aaa64012ef6f8a",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.010423681698739529,
+        0.011832312680780888,
+        -0.004618899431079626
+      ],
+      "selected_u_k_semantic_hash": "f97b8e930b76cff3e1f402be44c74a45c805bc0c47d1ec59a9aaa64012ef6f8a",
+      "solver_success": true,
+      "step_id": 31,
+      "step_semantic_hash": "6cc8621ded5051bcc510d408f028af31c4d90d60b08c12ddcc9eb490b7e25ed8",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.05492968112230301,
+        0.027654975652694702,
+        -0.00567982904613018
+      ],
+      "u_des_semantic_hash": "9ad5e129b257899767f04ac3ebd5d36d76f92cbaa2af77c4c83c33516ed701cb",
+      "x_k": [
+        -0.4367510676383972,
+        -0.04499050974845886,
+        0.05406082049012184,
+        0.022535162046551704,
+        -0.007444584276527166,
+        0.000488697667606175
+      ],
+      "x_k_semantic_hash": "0872d047d882f109d9ff0cad0964ca37ea69042bf60e5a0561a522c7c76f1036"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.010498198680579662,
+        0.011243419721722603,
+        -0.004193554166704416
+      ],
+      "plant_input_x": [
+        -0.43562430143356323,
+        -0.04536274075508118,
+        0.05408525466918945,
+        0.02201397716999054,
+        -0.006852968595921993,
+        0.00025775269023142755
+      ],
+      "plant_output_x_next": [
+        -0.4345236122608185,
+        -0.045705389231443405,
+        0.05409814044833183,
+        0.021489067003130913,
+        -0.006290797609835863,
+        4.80749731650576e-05
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "9220641eaf65864d0de904212e783577683271b6772095f2752a1a2340c382db",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.010498198680579662,
+        0.011243419721722603,
+        -0.004193554166704416
+      ],
+      "selected_u_k_semantic_hash": "9220641eaf65864d0de904212e783577683271b6772095f2752a1a2340c382db",
+      "solver_success": true,
+      "step_id": 32,
+      "step_semantic_hash": "0eadadf26ca5fc0df93019571d82ce4da9ad9290be6886fe7747f5812fa40f1b",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.05597204715013504,
+        0.028332900255918503,
+        -0.005340110510587692
+      ],
+      "u_des_semantic_hash": "845a8f68b34267761cc333d4a497f6d1601e88a405a71deecad99d0e60da19e8",
+      "x_k": [
+        -0.43562430143356323,
+        -0.04536274075508118,
+        0.05408525466918945,
+        0.02201397716999054,
+        -0.006852968595921993,
+        0.00025775269023142755
+      ],
+      "x_k_semantic_hash": "94ae6de8540a9f252c425a96927342b05f24de570eb847ed69540c85f5f4fd42"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.010496375150978565,
+        0.010555483400821686,
+        -0.0037675565108656883
+      ],
+      "plant_input_x": [
+        -0.4345236122608185,
+        -0.045705389231443405,
+        0.05409814044833183,
+        0.021489067003130913,
+        -0.006290797609835863,
+        4.80749731650576e-05
+      ],
+      "plant_output_x_next": [
+        -0.4334491491317749,
+        -0.04601993039250374,
+        0.05410054326057434,
+        0.0209642481058836,
+        -0.005763023626059294,
+        -0.0001403028581989929
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "5fb79d6633d656467ef9687820a4538bd0170edc2da75eff353d4743624533bc",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.010496375150978565,
+        0.010555483400821686,
+        -0.0037675565108656883
+      ],
+      "selected_u_k_semantic_hash": "5fb79d6633d656467ef9687820a4538bd0170edc2da75eff353d4743624533bc",
+      "solver_success": true,
+      "step_id": 33,
+      "step_semantic_hash": "75a233ef0c0119bcaa2f522019f2ff6ac19021ddf60d1c9cde76eccb63434aaa",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.057021863758563995,
+        0.02892179787158966,
+        -0.004985183477401733
+      ],
+      "u_des_semantic_hash": "c5334c8daf2d90ad9c36f01f3abe3d0f191459fa522ecebe335844925499e7e8",
+      "x_k": [
+        -0.4345236122608185,
+        -0.045705389231443405,
+        0.05409814044833183,
+        0.021489067003130913,
+        -0.006290797609835863,
+        4.80749731650576e-05
+      ],
+      "x_k_semantic_hash": "6532bafde945c2c8434d2b9eab27ecce30708babb5338d050d498acaa2925397"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.010423295199871063,
+        0.009789763018488884,
+        -0.0033468264155089855
+      ],
+      "plant_input_x": [
+        -0.4334491491317749,
+        -0.04601993039250374,
+        0.05410054326057434,
+        0.0209642481058836,
+        -0.005763023626059294,
+        -0.0001403028581989929
+      ],
+      "plant_output_x_next": [
+        -0.4324009418487549,
+        -0.04630808159708977,
+        0.05409352853894234,
+        0.020443083718419075,
+        -0.005273535382002592,
+        -0.0003076441935263574
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "07152ab1b8b3bf285083a6339ee80196046e153552cdb1ca4a7909e60bff8435",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.010423295199871063,
+        0.009789763018488884,
+        -0.0033468264155089855
+      ],
+      "selected_u_k_semantic_hash": "07152ab1b8b3bf285083a6339ee80196046e153552cdb1ca4a7909e60bff8435",
+      "solver_success": true,
+      "step_id": 34,
+      "step_semantic_hash": "a361051b56841897c9e6caadb1d08f6a0f305aca427121d23a49bb862e4e4582",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.058071501553058624,
+        0.029438957571983337,
+        -0.004620442166924477
+      ],
+      "u_des_semantic_hash": "f20579bc76dc71fdf7bacd2b724c481db52f7ba4a6ea8c7cdb01cdddda220334",
+      "x_k": [
+        -0.4334491491317749,
+        -0.04601993039250374,
+        0.05410054326057434,
+        0.0209642481058836,
+        -0.005763023626059294,
+        -0.0001403028581989929
+      ],
+      "x_k_semantic_hash": "51acb70a91e0291dc48df4531f3f726f7c328471cfc2f3b8fe803d96c682cb20"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.01028389297425747,
+        0.008966091088950634,
+        -0.002936462638899684
+      ],
+      "plant_input_x": [
+        -0.4324009418487549,
+        -0.04630808159708977,
+        0.05409352853894234,
+        0.020443083718419075,
+        -0.005273535382002592,
+        -0.0003076441935263574
+      ],
+      "plant_output_x_next": [
+        -0.4313787817955017,
+        -0.0465717576444149,
+        0.05407814681529999,
+        0.019928889349102974,
+        -0.004825230687856674,
+        -0.00045446731382980943
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "673e40b5c96a7a29469235aac768ce523bc23bc7c5b6b4594e86b5d68856f8c5",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.01028389297425747,
+        0.008966091088950634,
+        -0.002936462638899684
+      ],
+      "selected_u_k_semantic_hash": "673e40b5c96a7a29469235aac768ce523bc23bc7c5b6b4594e86b5d68856f8c5",
+      "solver_success": true,
+      "step_id": 35,
+      "step_semantic_hash": "d7dec9c60fce842126667e6cf11228fe9f5f1267514b1d31a5d58ec3516e69a5",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.05911383777856827,
+        0.02990073710680008,
+        -0.0042506856843829155
+      ],
+      "u_des_semantic_hash": "7fed14896ed485cf0a47876f8b17de31750d0f9013b9c8ac63ba30a50ee7d027",
+      "x_k": [
+        -0.4324009418487549,
+        -0.04630808159708977,
+        0.05409352853894234,
+        0.020443083718419075,
+        -0.005273535382002592,
+        -0.0003076441935263574
+      ],
+      "x_k_semantic_hash": "2631dcdeae43ed74505b798ac4a5f43e38ba1530ea086e84183f304ada760916"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.010083932429552078,
+        0.008102528750896454,
+        -0.002540712244808674
+      ],
+      "plant_input_x": [
+        -0.4313787817955017,
+        -0.0465717576444149,
+        0.05407814681529999,
+        0.019928889349102974,
+        -0.004825230687856674,
+        -0.00045446731382980943
+      ],
+      "plant_output_x_next": [
+        -0.4303823411464691,
+        -0.04681301862001419,
+        0.05405542254447937,
+        0.019424691796302795,
+        -0.004420104436576366,
+        -0.0005815029144287109
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "eb16b174c7b35055e9e5b0ac18e8cef1eff8ea24f3b40ec8d4137b343f397d10",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.010083932429552078,
+        0.008102528750896454,
+        -0.002540712244808674
+      ],
+      "selected_u_k_semantic_hash": "eb16b174c7b35055e9e5b0ac18e8cef1eff8ea24f3b40ec8d4137b343f397d10",
+      "solver_success": true,
+      "step_id": 36,
+      "step_semantic_hash": "b25fad3e91d86d70b45752a6c57bc83237c876c4b41cd6d77644d517cff60196",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.06014222651720047,
+        0.03032250702381134,
+        -0.003880131058394909
+      ],
+      "u_des_semantic_hash": "7320849fce7b3129db335de359231d07a7f455d32c246782626ae38a4469c907",
+      "x_k": [
+        -0.4313787817955017,
+        -0.0465717576444149,
+        0.05407814681529999,
+        0.019928889349102974,
+        -0.004825230687856674,
+        -0.00045446731382980943
+      ],
+      "x_k_semantic_hash": "c6a794bc6a8d3ed73d0a8767ad89a27a9315a35daf18cbc4048353416ed047b5"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.009828752838075161,
+        0.007215177174657583,
+        -0.00216315989382565
+      ],
+      "plant_input_x": [
+        -0.4303823411464691,
+        -0.04681301862001419,
+        0.05405542254447937,
+        0.019424691796302795,
+        -0.004420104436576366,
+        -0.0005815029144287109
+      ],
+      "plant_output_x_next": [
+        -0.4294111132621765,
+        -0.04703402519226074,
+        0.054026346653699875,
+        0.01893325336277485,
+        -0.0040593454614281654,
+        -0.0006896608974784613
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "98f9ed74cc6aee2b60ef98ca2fed9555a0eabbc45861e62aaabaa226fda22b8f",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.009828752838075161,
+        0.007215177174657583,
+        -0.00216315989382565
+      ],
+      "selected_u_k_semantic_hash": "98f9ed74cc6aee2b60ef98ca2fed9555a0eabbc45861e62aaabaa226fda22b8f",
+      "solver_success": true,
+      "step_id": 37,
+      "step_semantic_hash": "9057db29a2d22b5979e0d1004e40c5b580c0fca0d4ff9b2a4275d3303f2ad11c",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.06115061789751053,
+        0.03071856126189232,
+        -0.0035124383866786957
+      ],
+      "u_des_semantic_hash": "5b9cbaf03bda1302c15f21625329c4c0135dbfbc0a8a8496791ffb03473e8f84",
+      "x_k": [
+        -0.4303823411464691,
+        -0.04681301862001419,
+        0.05405542254447937,
+        0.019424691796302795,
+        -0.004420104436576366,
+        -0.0005815029144287109
+      ],
+      "x_k_semantic_hash": "89241e21536a7cdd045218fc80600cb0c4b8c1d1d1bf9355abc12d511e46bd1d"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.009523855522274971,
+        0.006318456493318081,
+        -0.001806524582207203
+      ],
+      "plant_input_x": [
+        -0.4294111132621765,
+        -0.04703402519226074,
+        0.054026346653699875,
+        0.01893325336277485,
+        -0.0040593454614281654,
+        -0.0006896608974784613
+      ],
+      "plant_output_x_next": [
+        -0.42846444249153137,
+        -0.04723699390888214,
+        0.05399186536669731,
+        0.018457060679793358,
+        -0.00374342268332839,
+        -0.0007799871382303536
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "5ed7b8433004c47ab5fef82f6df79730f6e2a3e3b8342c047651a8d6a02fff61",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.009523855522274971,
+        0.006318456493318081,
+        -0.001806524582207203
+      ],
+      "selected_u_k_semantic_hash": "5ed7b8433004c47ab5fef82f6df79730f6e2a3e3b8342c047651a8d6a02fff61",
+      "solver_success": true,
+      "step_id": 38,
+      "step_semantic_hash": "f5d806d03e8e3379a3055833ea5eed8ecc39897c1fa2136029abde4ef69d124b",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.06213349848985672,
+        0.031102072447538376,
+        -0.003150742966681719
+      ],
+      "u_des_semantic_hash": "ab7574dca1819b979f0ac483a30daceac8458699e8f3ce8c3cd6a2f4a089a643",
+      "x_k": [
+        -0.4294111132621765,
+        -0.04703402519226074,
+        0.054026346653699875,
+        0.01893325336277485,
+        -0.0040593454614281654,
+        -0.0006896608974784613
+      ],
+      "x_k_semantic_hash": "af9f541598af72a47115f996e6c18c0d008369b2c4dc2d67e66cc4a8cc6b0fcf"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.009174589067697525,
+        0.0054248315282166,
+        -0.0014729037648066878
+      ],
+      "plant_input_x": [
+        -0.42846444249153137,
+        -0.04723699390888214,
+        0.05399186536669731,
+        0.018457060679793358,
+        -0.00374342268332839,
+        -0.0007799871382303536
+      ],
+      "plant_output_x_next": [
+        -0.427541583776474,
+        -0.04742416366934776,
+        0.053952865302562714,
+        0.017998330295085907,
+        -0.003472181037068367,
+        -0.0008536323439329863
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "e743f4152e846c2d5c9b770f41febd98a30524a173038404a9cf68d68dec78f1",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.009174589067697525,
+        0.0054248315282166,
+        -0.0014729037648066878
+      ],
+      "selected_u_k_semantic_hash": "e743f4152e846c2d5c9b770f41febd98a30524a173038404a9cf68d68dec78f1",
+      "solver_success": true,
+      "step_id": 39,
+      "step_semantic_hash": "ae09368c79612e23d1d063b70a661839bffd2120fa0dcc9f24a8282d1b37b023",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.0630858764052391,
+        0.031485073268413544,
+        -0.0027976841665804386
+      ],
+      "u_des_semantic_hash": "f41db508666fa8fda5bf1f8ad78d73b7d1d5364fccfa1eb8e9f61a198381360c",
+      "x_k": [
+        -0.42846444249153137,
+        -0.04723699390888214,
+        0.05399186536669731,
+        0.018457060679793358,
+        -0.00374342268332839,
+        -0.0007799871382303536
+      ],
+      "x_k_semantic_hash": "eb85f3694dd302a807947b2ec6f5580b6e448da9f76d7a2b3bde2f6fb4c62939"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.00878607202321291,
+        0.004544980823993683,
+        -0.0011636401759460568
+      ],
+      "plant_input_x": [
+        -0.427541583776474,
+        -0.04742416366934776,
+        0.053952865302562714,
+        0.017998330295085907,
+        -0.003472181037068367,
+        -0.0008536323439329863
+      ],
+      "plant_output_x_next": [
+        -0.42664167284965515,
+        -0.047597773373126984,
+        0.053910184651613235,
+        0.017559027299284935,
+        -0.0032449320424348116,
+        -0.0009118143352679908
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "8f3e6af7b56495faa966e9dc9115d9817e39ca89e4e03df2524150d80fdb795e",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.00878607202321291,
+        0.004544980823993683,
+        -0.0011636401759460568
+      ],
+      "selected_u_k_semantic_hash": "8f3e6af7b56495faa966e9dc9115d9817e39ca89e4e03df2524150d80fdb795e",
+      "solver_success": true,
+      "step_id": 40,
+      "step_semantic_hash": "7f1b5e7a9a62f16304fcc13efd1f3cf434d088d2474a10da4af8179ec56e1e4c",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.0640033408999443,
+        0.03187843784689903,
+        -0.0024553933180868626
+      ],
+      "u_des_semantic_hash": "0014d45c1b273328120e0da9ced23180e20be686ce847282d96436281800929a",
+      "x_k": [
+        -0.427541583776474,
+        -0.04742416366934776,
+        0.053952865302562714,
+        0.017998330295085907,
+        -0.003472181037068367,
+        -0.0008536323439329863
+      ],
+      "x_k_semantic_hash": "9f8805e1bd8d24b4f7bfa5d992b954f83dcc2aae8b73209221c6d536c4999a2f"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_TERMINAL",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.008362873457372189,
+        0.0036877249367535114,
+        -0.0008798554772511125
+      ],
+      "plant_input_x": [
+        -0.42664167284965515,
+        -0.047597773373126984,
+        0.053910184651613235,
+        0.017559027299284935,
+        -0.0032449320424348116,
+        -0.0009118143352679908
+      ],
+      "plant_output_x_next": [
+        -0.42576372623443604,
+        -0.047760020941495895,
+        0.05386459454894066,
+        0.017140883952379227,
+        -0.0030605457723140717,
+        -0.0009558071033097804
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "041f11f36b971b0e1ed1e054a54bc2d808afd68b8dc2807b7a4dc1ce8759c68b",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.008362873457372189,
+        0.0036877249367535114,
+        -0.0008798554772511125
+      ],
+      "selected_u_k_semantic_hash": "041f11f36b971b0e1ed1e054a54bc2d808afd68b8dc2807b7a4dc1ce8759c68b",
+      "solver_success": true,
+      "step_id": 41,
+      "step_semantic_hash": "f42b465c755d58a1dc6b29d47aca5c07ebfabc9bbebff87b1c71166b96d19a14",
+      "termination_flag": false,
+      "termination_reason": "CONTINUE",
+      "trial_id": 49,
+      "u_des": [
+        0.06488194316625595,
+        0.03229198977351189,
+        -0.002125625964254141
+      ],
+      "u_des_semantic_hash": "949fa6cabe00544c92b0568fcc60d2ab4a36d63cb2006e720041bf8c2e4f1ffe",
+      "x_k": [
+        -0.42664167284965515,
+        -0.047597773373126984,
+        0.053910184651613235,
+        0.017559027299284935,
+        -0.0032449320424348116,
+        -0.0009118143352679908
+      ],
+      "x_k_semantic_hash": "b3370af581501e1cc6d0c436b651fce6eeb3402e83b9a36b94a35ef9a008b5c1"
+    },
+    {
+      "controller_branch": "SOLVER_SUCCESS_PLANT_STALLED",
+      "goal": [
+        0.3118026554584503,
+        -0.0424373485147953,
+        0.05312033370137215,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_terminal_status": "NOT_REACHED",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "plant_input_u": [
+        -0.007908966392278671,
+        0.002860442968085408,
+        -0.0006217260961420834
+      ],
+      "plant_input_x": [
+        -0.42576372623443604,
+        -0.047760020941495895,
+        0.05386459454894066,
+        0.017140883952379227,
+        -0.0030605457723140717,
+        -0.0009558071033097804
+      ],
+      "plant_output_x_next": [
+        -0.4249066710472107,
+        -0.047913048416376114,
+        0.05381680279970169,
+        0.01674543507397175,
+        -0.002917523728683591,
+        -0.0009868934284895658
+      ],
+      "seed": 0,
+      "selected_candidate_hash": "71fbb4f28474d1055891148572280b0f9f8ee2be473426a7f38d199e76c0908b",
+      "selected_candidate_identity": "FROZEN_SOLVE_QP_RETURN",
+      "selected_u_k": [
+        -0.007908966392278671,
+        0.002860442968085408,
+        -0.0006217260961420834
+      ],
+      "selected_u_k_semantic_hash": "71fbb4f28474d1055891148572280b0f9f8ee2be473426a7f38d199e76c0908b",
+      "solver_success": true,
+      "step_id": 42,
+      "step_semantic_hash": "8f1e017517308ac7a0e80fa0d0938d33f4cc964e1034a0cb68a8d22f017a652f",
+      "termination_flag": true,
+      "termination_reason": "STALLED_BEFORE_GOAL",
+      "trial_id": 49,
+      "u_des": [
+        0.06571823358535767,
+        0.032734453678131104,
+        -0.001809690147638321
+      ],
+      "u_des_semantic_hash": "61b7c8a5b17b99c77cc49565b93c11d6909da3075ea6ec34091ff96d06beca3e",
+      "x_k": [
+        -0.42576372623443604,
+        -0.047760020941495895,
+        0.05386459454894066,
+        0.017140883952379227,
+        -0.0030605457723140717,
+        -0.0009558071033097804
+      ],
+      "x_k_semantic_hash": "20310a24be63456a94407113544fd6141d2aeb9b07299cbb3cc0d8d8102bcbf1"
+    }
+  ],
+  "trial_id": 49
+}

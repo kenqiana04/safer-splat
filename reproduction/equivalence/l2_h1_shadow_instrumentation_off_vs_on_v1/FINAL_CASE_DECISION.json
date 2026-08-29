@@ -1,0 +1,141 @@
+{
+  "FINAL_DECISION": "FREEZE_RUNTIME_NONINTERFERENCE_EVIDENCE_AND_VALIDATE_LOGGING_COMPLETENESS_PILOT",
+  "FINAL_STATUS": "PASS_L2_H1_SHADOW_INSTRUMENTATION_OFF_VS_ON_EQUIVALENCE_V1",
+  "H2_implementation_count": 0,
+  "L3_implementation_count": 0,
+  "L4_implementation_count": 0,
+  "L5_implementation_count": 0,
+  "Only_next_task": "VALIDATE_L2_H1_SHADOW_LOGGING_COMPLETENESS_PILOT_V1",
+  "actual_fail_close_from_shadow_count": 0,
+  "arm_c_capture_count": 1490,
+  "arm_c_log_sanity": true,
+  "arm_c_result_count": 1490,
+  "arm_c_worker_processed_count": 1490,
+  "candidate_library_mutation_count": 0,
+  "candidate_replacement_count": 0,
+  "controller_intervention_count": 0,
+  "controller_mutation_count": 0,
+  "environment_identity_count": 1,
+  "exact_comparison_count": 21,
+  "first_divergence_count": 0,
+  "formal_on_policy_cohort_count": 0,
+  "formal_performance_metric_count": 0,
+  "formal_runtime_metric_count": 0,
+  "frozen_trial_ids": [
+    0,
+    24,
+    49,
+    74,
+    99
+  ],
+  "instrumentation_mutation_count": 0,
+  "logging_pilot_run_count": 0,
+  "map_authority_identity_count": 1,
+  "map_mutation_count": 0,
+  "native_off_run_count": 7,
+  "prohibited_claims": [
+    "collision reduction",
+    "progress improvement",
+    "controller efficacy",
+    "logging completeness",
+    "real-time performance",
+    "formal cohort result"
+  ],
+  "protected_blob_count": 17,
+  "real_qa_navigation_run_count": 21,
+  "reviewer_case_votes": {
+    "CASE_A": 4
+  },
+  "reviewer_count": 4,
+  "reviewer_disagreement": false,
+  "schema_version": "L2_H1_SHADOW_EQUIVALENCE_CLOSEOUT_V1",
+  "selected_case": "CASE_A",
+  "self_consistency": {
+    "A": {
+      "exact": true,
+      "run_ids": [
+        "self_a1_trial000",
+        "self_a2_trial000"
+      ],
+      "valid": true
+    },
+    "B": {
+      "exact": true,
+      "run_ids": [
+        "self_b1_trial000",
+        "self_b2_trial000"
+      ],
+      "valid": true
+    },
+    "C": {
+      "exact": true,
+      "run_ids": [
+        "self_c1_trial000",
+        "self_c2_trial000"
+      ],
+      "valid": true
+    }
+  },
+  "supported_claims": [
+    "Across the preregistered bounded Stonehenge QA manifest, NATIVE_OFF, WRAPPER_OFF, and WRAPPER_ON produced identical frozen control traces under the tested deterministic conditions.",
+    "The PR #97 wrapper and active shadow observation stack showed no observed control-trace perturbation in these QA runs."
+  ],
+  "trace_trial_rows": [
+    {
+      "A_B_C_exact": true,
+      "arm_c_capture_count": 318,
+      "arm_c_leftover_worker_count": 0,
+      "arm_c_result_count": 318,
+      "arm_c_worker_processed_count": 318,
+      "step_count": 318,
+      "trace_hash": "ef4b6437b3496c9a422ef1c0e02780747457cba269b99e63f962c291e1f9559a",
+      "trial_id": 0
+    },
+    {
+      "A_B_C_exact": true,
+      "arm_c_capture_count": 148,
+      "arm_c_leftover_worker_count": 0,
+      "arm_c_result_count": 148,
+      "arm_c_worker_processed_count": 148,
+      "step_count": 148,
+      "trace_hash": "0e02c147eae2b5a082e133dcefb8865da4c7358abdffc37ad24e5d400169af9e",
+      "trial_id": 24
+    },
+    {
+      "A_B_C_exact": true,
+      "arm_c_capture_count": 43,
+      "arm_c_leftover_worker_count": 0,
+      "arm_c_result_count": 43,
+      "arm_c_worker_processed_count": 43,
+      "step_count": 43,
+      "trace_hash": "252b50ecba6fc0cd77a470ab4dca9b7e0ccdf8b0d9e5678a1a3b20fea70ec260",
+      "trial_id": 49
+    },
+    {
+      "A_B_C_exact": true,
+      "arm_c_capture_count": 27,
+      "arm_c_leftover_worker_count": 0,
+      "arm_c_result_count": 27,
+      "arm_c_worker_processed_count": 27,
+      "step_count": 27,
+      "trace_hash": "b3ceb2b293e478f04dad59c82810618767fcf8f99703435a26b78e35e0af12f3",
+      "trial_id": 74
+    },
+    {
+      "A_B_C_exact": true,
+      "arm_c_capture_count": 318,
+      "arm_c_leftover_worker_count": 0,
+      "arm_c_result_count": 318,
+      "arm_c_worker_processed_count": 318,
+      "step_count": 318,
+      "trace_hash": "d5faa05402b8a1f73bcb8f58e9bcb9ed2b5c7e3477df83b337e7b40dac34792c",
+      "trial_id": 99
+    }
+  ],
+  "unresolved_blockers": [],
+  "upstream_head": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+  "upstream_pr": 97,
+  "upstream_pr_count": 13,
+  "wrapper_off_run_count": 7,
+  "wrapper_on_run_count": 7
+}

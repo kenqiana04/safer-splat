@@ -1,0 +1,28 @@
+{
+  "critical_blockers": [],
+  "evidence_checked": [
+    "same-decision x_k/u_des/selected-u trace",
+    "solver and branch trace",
+    "plant input/output trace",
+    "zero authority and zero intervention"
+  ],
+  "major_issues": [],
+  "minor_issues": [
+    "The bounded five-trial result does not establish control efficacy."
+  ],
+  "prohibited_claims": [
+    "collision reduction",
+    "progress improvement",
+    "controller efficacy",
+    "logging completeness pilot",
+    "runtime or real-time guarantee",
+    "formal prospective cohort result",
+    "deployment guarantee"
+  ],
+  "recommended_case": "CASE_A",
+  "reviewer": "CONTROL_THEORY",
+  "supported_claims": [
+    "No observed control-trace perturbation in the preregistered QA manifest."
+  ],
+  "verdict": "PASS"
+}

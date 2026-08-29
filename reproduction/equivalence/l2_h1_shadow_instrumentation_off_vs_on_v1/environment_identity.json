@@ -1,0 +1,28 @@
+{
+  "alpha": 5.0,
+  "beta": 1.0,
+  "candidate_library": "FROZEN_RUN_PY_SOLVE_QP_OUTPUT_ONLY",
+  "conda_environment": "/disk1/zlab/conda_envs/safer_splat_official",
+  "controller_blob": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+  "controller_radius": 0.015,
+  "cuda_visible_devices": "1",
+  "distance_type": "ball-to-ellipsoid",
+  "dt": 0.05,
+  "frozen_before_navigation": true,
+  "gpu": "physical GPU 1; NVIDIA GeForce RTX 4090",
+  "map_artifacts": [
+    {"relative_path": "config.yml", "sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e", "size": 6933},
+    {"relative_path": "dataparser_transforms.json", "sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e", "size": 312},
+    {"relative_path": "nerfstudio_models/step-000029999.ckpt", "sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d", "size": 92344786}
+  ],
+  "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+  "max_steps": 500,
+  "numpy": "1.26.4",
+  "physical_gpu": 1,
+  "python": "3.10.20",
+  "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+  "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ENVIRONMENT_IDENTITY_V1",
+  "seed": 0,
+  "torch": "2.1.2+cu118",
+  "torch_cuda": "11.8"
+}

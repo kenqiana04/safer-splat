@@ -1,0 +1,3483 @@
+{
+  "comparisons": [
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "self_a1_trial000",
+      "left_step_count": 318,
+      "left_trace_hash": "206ef353a1e47b047b671f6ee5e470182448815f14e324a9de9cc825acd530e8",
+      "numeric_tolerance": null,
+      "pair": "SELF_A",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "self_a2_trial000",
+      "right_step_count": 318,
+      "right_trace_hash": "206ef353a1e47b047b671f6ee5e470182448815f14e324a9de9cc825acd530e8",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 0
+    },
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "self_b1_trial000",
+      "left_step_count": 318,
+      "left_trace_hash": "206ef353a1e47b047b671f6ee5e470182448815f14e324a9de9cc825acd530e8",
+      "numeric_tolerance": null,
+      "pair": "SELF_B",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "self_b2_trial000",
+      "right_step_count": 318,
+      "right_trace_hash": "206ef353a1e47b047b671f6ee5e470182448815f14e324a9de9cc825acd530e8",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 0
+    },
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "self_a1_trial000",
+      "left_step_count": 318,
+      "left_trace_hash": "206ef353a1e47b047b671f6ee5e470182448815f14e324a9de9cc825acd530e8",
+      "numeric_tolerance": null,
+      "pair": "SELF_A_VS_B",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "self_b1_trial000",
+      "right_step_count": 318,
+      "right_trace_hash": "206ef353a1e47b047b671f6ee5e470182448815f14e324a9de9cc825acd530e8",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 0
+    },
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "self_c1_trial000",
+      "left_step_count": 318,
+      "left_trace_hash": "206ef353a1e47b047b671f6ee5e470182448815f14e324a9de9cc825acd530e8",
+      "numeric_tolerance": null,
+      "pair": "SELF_C",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "self_c2_trial000",
+      "right_step_count": 318,
+      "right_trace_hash": "206ef353a1e47b047b671f6ee5e470182448815f14e324a9de9cc825acd530e8",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 0
+    },
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "self_b1_trial000",
+      "left_step_count": 318,
+      "left_trace_hash": "206ef353a1e47b047b671f6ee5e470182448815f14e324a9de9cc825acd530e8",
+      "numeric_tolerance": null,
+      "pair": "SELF_B_VS_C",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "self_c1_trial000",
+      "right_step_count": 318,
+      "right_trace_hash": "206ef353a1e47b047b671f6ee5e470182448815f14e324a9de9cc825acd530e8",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 0
+    },
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "self_a1_trial000",
+      "left_step_count": 318,
+      "left_trace_hash": "206ef353a1e47b047b671f6ee5e470182448815f14e324a9de9cc825acd530e8",
+      "numeric_tolerance": null,
+      "pair": "SELF_A_VS_C",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "self_c1_trial000",
+      "right_step_count": 318,
+      "right_trace_hash": "206ef353a1e47b047b671f6ee5e470182448815f14e324a9de9cc825acd530e8",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 0
+    },
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "cross_a_trial000",
+      "left_step_count": 318,
+      "left_trace_hash": "206ef353a1e47b047b671f6ee5e470182448815f14e324a9de9cc825acd530e8",
+      "numeric_tolerance": null,
+      "pair": "A_VS_B_TRIAL_000",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "cross_b_trial000",
+      "right_step_count": 318,
+      "right_trace_hash": "206ef353a1e47b047b671f6ee5e470182448815f14e324a9de9cc825acd530e8",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 0
+    },
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "cross_b_trial000",
+      "left_step_count": 318,
+      "left_trace_hash": "206ef353a1e47b047b671f6ee5e470182448815f14e324a9de9cc825acd530e8",
+      "numeric_tolerance": null,
+      "pair": "B_VS_C_TRIAL_000",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "cross_c_trial000",
+      "right_step_count": 318,
+      "right_trace_hash": "206ef353a1e47b047b671f6ee5e470182448815f14e324a9de9cc825acd530e8",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 0
+    },
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "cross_a_trial000",
+      "left_step_count": 318,
+      "left_trace_hash": "206ef353a1e47b047b671f6ee5e470182448815f14e324a9de9cc825acd530e8",
+      "numeric_tolerance": null,
+      "pair": "A_VS_C_TRIAL_000",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "cross_c_trial000",
+      "right_step_count": 318,
+      "right_trace_hash": "206ef353a1e47b047b671f6ee5e470182448815f14e324a9de9cc825acd530e8",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 0
+    },
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "cross_a_trial024",
+      "left_step_count": 148,
+      "left_trace_hash": "2ba95526d6ca41fb95c176ba3b2d9c8651dbaec2cd7ad553c1989d26b93e93e7",
+      "numeric_tolerance": null,
+      "pair": "A_VS_B_TRIAL_024",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "cross_b_trial024",
+      "right_step_count": 148,
+      "right_trace_hash": "2ba95526d6ca41fb95c176ba3b2d9c8651dbaec2cd7ad553c1989d26b93e93e7",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 24
+    },
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "cross_b_trial024",
+      "left_step_count": 148,
+      "left_trace_hash": "2ba95526d6ca41fb95c176ba3b2d9c8651dbaec2cd7ad553c1989d26b93e93e7",
+      "numeric_tolerance": null,
+      "pair": "B_VS_C_TRIAL_024",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "cross_c_trial024",
+      "right_step_count": 148,
+      "right_trace_hash": "2ba95526d6ca41fb95c176ba3b2d9c8651dbaec2cd7ad553c1989d26b93e93e7",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 24
+    },
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "cross_a_trial024",
+      "left_step_count": 148,
+      "left_trace_hash": "2ba95526d6ca41fb95c176ba3b2d9c8651dbaec2cd7ad553c1989d26b93e93e7",
+      "numeric_tolerance": null,
+      "pair": "A_VS_C_TRIAL_024",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "cross_c_trial024",
+      "right_step_count": 148,
+      "right_trace_hash": "2ba95526d6ca41fb95c176ba3b2d9c8651dbaec2cd7ad553c1989d26b93e93e7",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 24
+    },
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "cross_a_trial049",
+      "left_step_count": 43,
+      "left_trace_hash": "5aa7afcfa8d02ebe59974c3060e9586c1bf6d92a89d46a6e097a517a6d758dc3",
+      "numeric_tolerance": null,
+      "pair": "A_VS_B_TRIAL_049",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "cross_b_trial049",
+      "right_step_count": 43,
+      "right_trace_hash": "5aa7afcfa8d02ebe59974c3060e9586c1bf6d92a89d46a6e097a517a6d758dc3",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 49
+    },
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "cross_b_trial049",
+      "left_step_count": 43,
+      "left_trace_hash": "5aa7afcfa8d02ebe59974c3060e9586c1bf6d92a89d46a6e097a517a6d758dc3",
+      "numeric_tolerance": null,
+      "pair": "B_VS_C_TRIAL_049",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "cross_c_trial049",
+      "right_step_count": 43,
+      "right_trace_hash": "5aa7afcfa8d02ebe59974c3060e9586c1bf6d92a89d46a6e097a517a6d758dc3",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 49
+    },
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "cross_a_trial049",
+      "left_step_count": 43,
+      "left_trace_hash": "5aa7afcfa8d02ebe59974c3060e9586c1bf6d92a89d46a6e097a517a6d758dc3",
+      "numeric_tolerance": null,
+      "pair": "A_VS_C_TRIAL_049",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "cross_c_trial049",
+      "right_step_count": 43,
+      "right_trace_hash": "5aa7afcfa8d02ebe59974c3060e9586c1bf6d92a89d46a6e097a517a6d758dc3",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 49
+    },
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "cross_a_trial074",
+      "left_step_count": 27,
+      "left_trace_hash": "b0f3292348c81842846995eddb7eab7ddf4713ba5ebd170dbabd119aeda4db57",
+      "numeric_tolerance": null,
+      "pair": "A_VS_B_TRIAL_074",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "cross_b_trial074",
+      "right_step_count": 27,
+      "right_trace_hash": "b0f3292348c81842846995eddb7eab7ddf4713ba5ebd170dbabd119aeda4db57",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 74
+    },
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "cross_b_trial074",
+      "left_step_count": 27,
+      "left_trace_hash": "b0f3292348c81842846995eddb7eab7ddf4713ba5ebd170dbabd119aeda4db57",
+      "numeric_tolerance": null,
+      "pair": "B_VS_C_TRIAL_074",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "cross_c_trial074",
+      "right_step_count": 27,
+      "right_trace_hash": "b0f3292348c81842846995eddb7eab7ddf4713ba5ebd170dbabd119aeda4db57",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 74
+    },
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "cross_a_trial074",
+      "left_step_count": 27,
+      "left_trace_hash": "b0f3292348c81842846995eddb7eab7ddf4713ba5ebd170dbabd119aeda4db57",
+      "numeric_tolerance": null,
+      "pair": "A_VS_C_TRIAL_074",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "cross_c_trial074",
+      "right_step_count": 27,
+      "right_trace_hash": "b0f3292348c81842846995eddb7eab7ddf4713ba5ebd170dbabd119aeda4db57",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 74
+    },
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "cross_a_trial099",
+      "left_step_count": 318,
+      "left_trace_hash": "c94547a039753c6cd3bb93635fa5e85f28942999263322dbeecdb7978b48c95d",
+      "numeric_tolerance": null,
+      "pair": "A_VS_B_TRIAL_099",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "cross_b_trial099",
+      "right_step_count": 318,
+      "right_trace_hash": "c94547a039753c6cd3bb93635fa5e85f28942999263322dbeecdb7978b48c95d",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 99
+    },
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "cross_b_trial099",
+      "left_step_count": 318,
+      "left_trace_hash": "c94547a039753c6cd3bb93635fa5e85f28942999263322dbeecdb7978b48c95d",
+      "numeric_tolerance": null,
+      "pair": "B_VS_C_TRIAL_099",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "cross_c_trial099",
+      "right_step_count": 318,
+      "right_trace_hash": "c94547a039753c6cd3bb93635fa5e85f28942999263322dbeecdb7978b48c95d",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 99
+    },
+    {
+      "exact_match": true,
+      "field_exact": {
+        "controller_branch": true,
+        "goal": true,
+        "goal_terminal_status": true,
+        "map_authority_id": true,
+        "plant_input_u": true,
+        "plant_input_x": true,
+        "plant_output_x_next": true,
+        "seed": true,
+        "selected_u_k": true,
+        "solver_success": true,
+        "step_id": true,
+        "termination_flag": true,
+        "termination_reason": true,
+        "trial_id": true,
+        "u_des": true,
+        "x_k": true
+      },
+      "first_divergence": null,
+      "left_run_id": "cross_a_trial099",
+      "left_step_count": 318,
+      "left_trace_hash": "c94547a039753c6cd3bb93635fa5e85f28942999263322dbeecdb7978b48c95d",
+      "numeric_tolerance": null,
+      "pair": "A_VS_C_TRIAL_099",
+      "pairing_identity_match": true,
+      "post_hoc_tolerance_change": false,
+      "right_run_id": "cross_c_trial099",
+      "right_step_count": 318,
+      "right_trace_hash": "c94547a039753c6cd3bb93635fa5e85f28942999263322dbeecdb7978b48c95d",
+      "schema_version": "L2_H1_SHADOW_EXACT_TRACE_COMPARISON_V1",
+      "trial_id": 99
+    }
+  ],
+  "runs": [
+    {
+      "activation": {
+        "arm": "NATIVE_OFF",
+        "capture_log_count": 0,
+        "certificate_result_count": 0,
+        "certificate_result_present": false,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 0,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": false,
+        "observer_enabled": false,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "NOT_APPLICABLE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": null,
+        "worker_processed_count": 0,
+        "worker_start_requested": false,
+        "wrapper_capture_attempt_count": 0,
+        "wrapper_factory_trial_count": 0,
+        "wrapper_loaded": false
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "NATIVE_OFF",
+      "arm_code": "A",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm A --trial-id 0 --seed 0 --run-id self_a1_trial000 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/self_a1_trial000 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 0
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "NATIVE_OFF",
+        "pid": 3172956,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "self_a1_trial000",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/self_a1_trial000/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1056,
+          "selection_hit_count": 1,
+          "target_trial_id": 0
+        },
+        "trace_hash": "ef4b6437b3496c9a422ef1c0e02780747457cba269b99e63f962c291e1f9559a",
+        "trace_step_count": 318,
+        "trial_id": 0
+      },
+      "phase_label": "SELF_A1",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/self_a1_trial000",
+      "run_id": "self_a1_trial000",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/self_a1_trial000.json",
+      "trial_id": 0
+    },
+    {
+      "activation": {
+        "arm": "NATIVE_OFF",
+        "capture_log_count": 0,
+        "certificate_result_count": 0,
+        "certificate_result_present": false,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 0,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": false,
+        "observer_enabled": false,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "NOT_APPLICABLE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": null,
+        "worker_processed_count": 0,
+        "worker_start_requested": false,
+        "wrapper_capture_attempt_count": 0,
+        "wrapper_factory_trial_count": 0,
+        "wrapper_loaded": false
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "NATIVE_OFF",
+      "arm_code": "A",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm A --trial-id 0 --seed 0 --run-id self_a2_trial000 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/self_a2_trial000 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 0
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "NATIVE_OFF",
+        "pid": 3178930,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "self_a2_trial000",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/self_a2_trial000/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1056,
+          "selection_hit_count": 1,
+          "target_trial_id": 0
+        },
+        "trace_hash": "ef4b6437b3496c9a422ef1c0e02780747457cba269b99e63f962c291e1f9559a",
+        "trace_step_count": 318,
+        "trial_id": 0
+      },
+      "phase_label": "SELF_A2",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/self_a2_trial000",
+      "run_id": "self_a2_trial000",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/self_a2_trial000.json",
+      "trial_id": 0
+    },
+    {
+      "activation": {
+        "arm": "WRAPPER_OFF",
+        "capture_log_count": 0,
+        "certificate_result_count": 0,
+        "certificate_result_present": false,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 318,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": true,
+        "observer_enabled": false,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "SHUTDOWN_COMPLETE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": null,
+        "worker_processed_count": 0,
+        "worker_start_requested": false,
+        "wrapper_capture_attempt_count": 318,
+        "wrapper_factory_trial_count": 1,
+        "wrapper_loaded": true
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "WRAPPER_OFF",
+      "arm_code": "B",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm B --trial-id 0 --seed 0 --run-id self_b1_trial000 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/self_b1_trial000 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 0
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 14 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 17 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "WRAPPER_OFF",
+        "pid": 3184757,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "self_b1_trial000",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/self_b1_trial000/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1056,
+          "selection_hit_count": 1,
+          "target_trial_id": 0
+        },
+        "trace_hash": "ef4b6437b3496c9a422ef1c0e02780747457cba269b99e63f962c291e1f9559a",
+        "trace_step_count": 318,
+        "trial_id": 0
+      },
+      "phase_label": "SELF_B1",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/self_b1_trial000",
+      "run_id": "self_b1_trial000",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/self_b1_trial000.json",
+      "trial_id": 0
+    },
+    {
+      "activation": {
+        "arm": "WRAPPER_OFF",
+        "capture_log_count": 0,
+        "certificate_result_count": 0,
+        "certificate_result_present": false,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 318,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": true,
+        "observer_enabled": false,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "SHUTDOWN_COMPLETE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": null,
+        "worker_processed_count": 0,
+        "worker_start_requested": false,
+        "wrapper_capture_attempt_count": 318,
+        "wrapper_factory_trial_count": 1,
+        "wrapper_loaded": true
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "WRAPPER_OFF",
+      "arm_code": "B",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm B --trial-id 0 --seed 0 --run-id self_b2_trial000 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/self_b2_trial000 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 0
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 14 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 14 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "WRAPPER_OFF",
+        "pid": 3190639,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "self_b2_trial000",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/self_b2_trial000/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1056,
+          "selection_hit_count": 1,
+          "target_trial_id": 0
+        },
+        "trace_hash": "ef4b6437b3496c9a422ef1c0e02780747457cba269b99e63f962c291e1f9559a",
+        "trace_step_count": 318,
+        "trial_id": 0
+      },
+      "phase_label": "SELF_B2",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/self_b2_trial000",
+      "run_id": "self_b2_trial000",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/self_b2_trial000.json",
+      "trial_id": 0
+    },
+    {
+      "activation": {
+        "arm": "WRAPPER_ON",
+        "capture_log_count": 318,
+        "certificate_result_count": 318,
+        "certificate_result_present": true,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 636,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": true,
+        "observer_enabled": true,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "SHUTDOWN_COMPLETE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": 140418584745728,
+        "worker_processed_count": 318,
+        "worker_start_requested": true,
+        "wrapper_capture_attempt_count": 318,
+        "wrapper_factory_trial_count": 1,
+        "wrapper_loaded": true
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "WRAPPER_ON",
+      "arm_code": "C",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm C --trial-id 0 --seed 0 --run-id self_c1_trial000 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/self_c1_trial000 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 0
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 4 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "WRAPPER_ON",
+        "pid": 3196713,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "self_c1_trial000",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/self_c1_trial000/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1062,
+          "selection_hit_count": 1,
+          "target_trial_id": 0
+        },
+        "trace_hash": "ef4b6437b3496c9a422ef1c0e02780747457cba269b99e63f962c291e1f9559a",
+        "trace_step_count": 318,
+        "trial_id": 0
+      },
+      "phase_label": "SELF_C1",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/self_c1_trial000",
+      "run_id": "self_c1_trial000",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/self_c1_trial000.json",
+      "trial_id": 0
+    },
+    {
+      "activation": {
+        "arm": "WRAPPER_ON",
+        "capture_log_count": 318,
+        "certificate_result_count": 318,
+        "certificate_result_present": true,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 636,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": true,
+        "observer_enabled": true,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "SHUTDOWN_COMPLETE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": 140187837671168,
+        "worker_processed_count": 318,
+        "worker_start_requested": true,
+        "wrapper_capture_attempt_count": 318,
+        "wrapper_factory_trial_count": 1,
+        "wrapper_loaded": true
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "WRAPPER_ON",
+      "arm_code": "C",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm C --trial-id 0 --seed 0 --run-id self_c2_trial000 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/self_c2_trial000 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 0
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 15 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 19 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "WRAPPER_ON",
+        "pid": 3205601,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "self_c2_trial000",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/self_c2_trial000/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1062,
+          "selection_hit_count": 1,
+          "target_trial_id": 0
+        },
+        "trace_hash": "ef4b6437b3496c9a422ef1c0e02780747457cba269b99e63f962c291e1f9559a",
+        "trace_step_count": 318,
+        "trial_id": 0
+      },
+      "phase_label": "SELF_C2",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/self_c2_trial000",
+      "run_id": "self_c2_trial000",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/self_c2_trial000.json",
+      "trial_id": 0
+    },
+    {
+      "activation": {
+        "arm": "NATIVE_OFF",
+        "capture_log_count": 0,
+        "certificate_result_count": 0,
+        "certificate_result_present": false,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 0,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": false,
+        "observer_enabled": false,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "NOT_APPLICABLE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": null,
+        "worker_processed_count": 0,
+        "worker_start_requested": false,
+        "wrapper_capture_attempt_count": 0,
+        "wrapper_factory_trial_count": 0,
+        "wrapper_loaded": false
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "NATIVE_OFF",
+      "arm_code": "A",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm A --trial-id 0 --seed 0 --run-id cross_a_trial000 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_a_trial000 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 0
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 4 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "NATIVE_OFF",
+        "pid": 3214567,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "cross_a_trial000",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_a_trial000/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1056,
+          "selection_hit_count": 1,
+          "target_trial_id": 0
+        },
+        "trace_hash": "ef4b6437b3496c9a422ef1c0e02780747457cba269b99e63f962c291e1f9559a",
+        "trace_step_count": 318,
+        "trial_id": 0
+      },
+      "phase_label": "CROSS_A",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_a_trial000",
+      "run_id": "cross_a_trial000",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/cross_a_trial000.json",
+      "trial_id": 0
+    },
+    {
+      "activation": {
+        "arm": "WRAPPER_OFF",
+        "capture_log_count": 0,
+        "certificate_result_count": 0,
+        "certificate_result_present": false,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 318,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": true,
+        "observer_enabled": false,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "SHUTDOWN_COMPLETE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": null,
+        "worker_processed_count": 0,
+        "worker_start_requested": false,
+        "wrapper_capture_attempt_count": 318,
+        "wrapper_factory_trial_count": 1,
+        "wrapper_loaded": true
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "WRAPPER_OFF",
+      "arm_code": "B",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm B --trial-id 0 --seed 0 --run-id cross_b_trial000 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_b_trial000 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 0
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "WRAPPER_OFF",
+        "pid": 3225439,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "cross_b_trial000",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_b_trial000/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1056,
+          "selection_hit_count": 1,
+          "target_trial_id": 0
+        },
+        "trace_hash": "ef4b6437b3496c9a422ef1c0e02780747457cba269b99e63f962c291e1f9559a",
+        "trace_step_count": 318,
+        "trial_id": 0
+      },
+      "phase_label": "CROSS_B",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_b_trial000",
+      "run_id": "cross_b_trial000",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/cross_b_trial000.json",
+      "trial_id": 0
+    },
+    {
+      "activation": {
+        "arm": "WRAPPER_ON",
+        "capture_log_count": 318,
+        "certificate_result_count": 318,
+        "certificate_result_present": true,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 636,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": true,
+        "observer_enabled": true,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "SHUTDOWN_COMPLETE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": 140484592973568,
+        "worker_processed_count": 318,
+        "worker_start_requested": true,
+        "wrapper_capture_attempt_count": 318,
+        "wrapper_factory_trial_count": 1,
+        "wrapper_loaded": true
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "WRAPPER_ON",
+      "arm_code": "C",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm C --trial-id 0 --seed 0 --run-id cross_c_trial000 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_c_trial000 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 0
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 17 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "WRAPPER_ON",
+        "pid": 3234568,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "cross_c_trial000",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_c_trial000/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1062,
+          "selection_hit_count": 1,
+          "target_trial_id": 0
+        },
+        "trace_hash": "ef4b6437b3496c9a422ef1c0e02780747457cba269b99e63f962c291e1f9559a",
+        "trace_step_count": 318,
+        "trial_id": 0
+      },
+      "phase_label": "CROSS_C",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_c_trial000",
+      "run_id": "cross_c_trial000",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/cross_c_trial000.json",
+      "trial_id": 0
+    },
+    {
+      "activation": {
+        "arm": "NATIVE_OFF",
+        "capture_log_count": 0,
+        "certificate_result_count": 0,
+        "certificate_result_present": false,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 0,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": false,
+        "observer_enabled": false,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "NOT_APPLICABLE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": null,
+        "worker_processed_count": 0,
+        "worker_start_requested": false,
+        "wrapper_capture_attempt_count": 0,
+        "wrapper_factory_trial_count": 0,
+        "wrapper_loaded": false
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "NATIVE_OFF",
+      "arm_code": "A",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm A --trial-id 24 --seed 0 --run-id cross_a_trial024 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_a_trial024 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 24
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 13 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "NATIVE_OFF",
+        "pid": 3240523,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "cross_a_trial024",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_a_trial024/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1056,
+          "selection_hit_count": 1,
+          "target_trial_id": 24
+        },
+        "trace_hash": "0e02c147eae2b5a082e133dcefb8865da4c7358abdffc37ad24e5d400169af9e",
+        "trace_step_count": 148,
+        "trial_id": 24
+      },
+      "phase_label": "CROSS_A",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_a_trial024",
+      "run_id": "cross_a_trial024",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/cross_a_trial024.json",
+      "trial_id": 24
+    },
+    {
+      "activation": {
+        "arm": "WRAPPER_OFF",
+        "capture_log_count": 0,
+        "certificate_result_count": 0,
+        "certificate_result_present": false,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 148,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": true,
+        "observer_enabled": false,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "SHUTDOWN_COMPLETE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": null,
+        "worker_processed_count": 0,
+        "worker_start_requested": false,
+        "wrapper_capture_attempt_count": 148,
+        "wrapper_factory_trial_count": 1,
+        "wrapper_loaded": true
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "WRAPPER_OFF",
+      "arm_code": "B",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm B --trial-id 24 --seed 0 --run-id cross_b_trial024 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_b_trial024 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 24
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 13 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "WRAPPER_OFF",
+        "pid": 3246053,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "cross_b_trial024",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_b_trial024/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1056,
+          "selection_hit_count": 1,
+          "target_trial_id": 24
+        },
+        "trace_hash": "0e02c147eae2b5a082e133dcefb8865da4c7358abdffc37ad24e5d400169af9e",
+        "trace_step_count": 148,
+        "trial_id": 24
+      },
+      "phase_label": "CROSS_B",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_b_trial024",
+      "run_id": "cross_b_trial024",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/cross_b_trial024.json",
+      "trial_id": 24
+    },
+    {
+      "activation": {
+        "arm": "WRAPPER_ON",
+        "capture_log_count": 148,
+        "certificate_result_count": 148,
+        "certificate_result_present": true,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 296,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": true,
+        "observer_enabled": true,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "SHUTDOWN_COMPLETE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": 140269046404864,
+        "worker_processed_count": 148,
+        "worker_start_requested": true,
+        "wrapper_capture_attempt_count": 148,
+        "wrapper_factory_trial_count": 1,
+        "wrapper_loaded": true
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "WRAPPER_ON",
+      "arm_code": "C",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm C --trial-id 24 --seed 0 --run-id cross_c_trial024 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_c_trial024 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 24
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 17 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "WRAPPER_ON",
+        "pid": 3251703,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "cross_c_trial024",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_c_trial024/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1062,
+          "selection_hit_count": 1,
+          "target_trial_id": 24
+        },
+        "trace_hash": "0e02c147eae2b5a082e133dcefb8865da4c7358abdffc37ad24e5d400169af9e",
+        "trace_step_count": 148,
+        "trial_id": 24
+      },
+      "phase_label": "CROSS_C",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_c_trial024",
+      "run_id": "cross_c_trial024",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/cross_c_trial024.json",
+      "trial_id": 24
+    },
+    {
+      "activation": {
+        "arm": "NATIVE_OFF",
+        "capture_log_count": 0,
+        "certificate_result_count": 0,
+        "certificate_result_present": false,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 0,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": false,
+        "observer_enabled": false,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "NOT_APPLICABLE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": null,
+        "worker_processed_count": 0,
+        "worker_start_requested": false,
+        "wrapper_capture_attempt_count": 0,
+        "wrapper_factory_trial_count": 0,
+        "wrapper_loaded": false
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "NATIVE_OFF",
+      "arm_code": "A",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm A --trial-id 49 --seed 0 --run-id cross_a_trial049 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_a_trial049 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 49
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 1 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 18 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "NATIVE_OFF",
+        "pid": 3257239,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "cross_a_trial049",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_a_trial049/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1056,
+          "selection_hit_count": 1,
+          "target_trial_id": 49
+        },
+        "trace_hash": "252b50ecba6fc0cd77a470ab4dca9b7e0ccdf8b0d9e5678a1a3b20fea70ec260",
+        "trace_step_count": 43,
+        "trial_id": 49
+      },
+      "phase_label": "CROSS_A",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_a_trial049",
+      "run_id": "cross_a_trial049",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/cross_a_trial049.json",
+      "trial_id": 49
+    },
+    {
+      "activation": {
+        "arm": "WRAPPER_OFF",
+        "capture_log_count": 0,
+        "certificate_result_count": 0,
+        "certificate_result_present": false,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 43,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": true,
+        "observer_enabled": false,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "SHUTDOWN_COMPLETE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": null,
+        "worker_processed_count": 0,
+        "worker_start_requested": false,
+        "wrapper_capture_attempt_count": 43,
+        "wrapper_factory_trial_count": 1,
+        "wrapper_loaded": true
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "WRAPPER_OFF",
+      "arm_code": "B",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm B --trial-id 49 --seed 0 --run-id cross_b_trial049 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_b_trial049 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 49
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 1 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "WRAPPER_OFF",
+        "pid": 3262412,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "cross_b_trial049",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_b_trial049/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1057,
+          "selection_hit_count": 1,
+          "target_trial_id": 49
+        },
+        "trace_hash": "252b50ecba6fc0cd77a470ab4dca9b7e0ccdf8b0d9e5678a1a3b20fea70ec260",
+        "trace_step_count": 43,
+        "trial_id": 49
+      },
+      "phase_label": "CROSS_B",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_b_trial049",
+      "run_id": "cross_b_trial049",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/cross_b_trial049.json",
+      "trial_id": 49
+    },
+    {
+      "activation": {
+        "arm": "WRAPPER_ON",
+        "capture_log_count": 43,
+        "certificate_result_count": 43,
+        "certificate_result_present": true,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 86,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": true,
+        "observer_enabled": true,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "SHUTDOWN_COMPLETE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": 139841976030976,
+        "worker_processed_count": 43,
+        "worker_start_requested": true,
+        "wrapper_capture_attempt_count": 43,
+        "wrapper_factory_trial_count": 1,
+        "wrapper_loaded": true
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "WRAPPER_ON",
+      "arm_code": "C",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm C --trial-id 49 --seed 0 --run-id cross_c_trial049 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_c_trial049 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 49
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 17 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "WRAPPER_ON",
+        "pid": 3267603,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "cross_c_trial049",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_c_trial049/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1062,
+          "selection_hit_count": 1,
+          "target_trial_id": 49
+        },
+        "trace_hash": "252b50ecba6fc0cd77a470ab4dca9b7e0ccdf8b0d9e5678a1a3b20fea70ec260",
+        "trace_step_count": 43,
+        "trial_id": 49
+      },
+      "phase_label": "CROSS_C",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_c_trial049",
+      "run_id": "cross_c_trial049",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/cross_c_trial049.json",
+      "trial_id": 49
+    },
+    {
+      "activation": {
+        "arm": "NATIVE_OFF",
+        "capture_log_count": 0,
+        "certificate_result_count": 0,
+        "certificate_result_present": false,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 0,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": false,
+        "observer_enabled": false,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "NOT_APPLICABLE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": null,
+        "worker_processed_count": 0,
+        "worker_start_requested": false,
+        "wrapper_capture_attempt_count": 0,
+        "wrapper_factory_trial_count": 0,
+        "wrapper_loaded": false
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "NATIVE_OFF",
+      "arm_code": "A",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm A --trial-id 74 --seed 0 --run-id cross_a_trial074 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_a_trial074 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 74
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "NATIVE_OFF",
+        "pid": 3272842,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "cross_a_trial074",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_a_trial074/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1056,
+          "selection_hit_count": 1,
+          "target_trial_id": 74
+        },
+        "trace_hash": "b3ceb2b293e478f04dad59c82810618767fcf8f99703435a26b78e35e0af12f3",
+        "trace_step_count": 27,
+        "trial_id": 74
+      },
+      "phase_label": "CROSS_A",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_a_trial074",
+      "run_id": "cross_a_trial074",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/cross_a_trial074.json",
+      "trial_id": 74
+    },
+    {
+      "activation": {
+        "arm": "WRAPPER_OFF",
+        "capture_log_count": 0,
+        "certificate_result_count": 0,
+        "certificate_result_present": false,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 27,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": true,
+        "observer_enabled": false,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "SHUTDOWN_COMPLETE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": null,
+        "worker_processed_count": 0,
+        "worker_start_requested": false,
+        "wrapper_capture_attempt_count": 27,
+        "wrapper_factory_trial_count": 1,
+        "wrapper_loaded": true
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "WRAPPER_OFF",
+      "arm_code": "B",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm B --trial-id 74 --seed 0 --run-id cross_b_trial074 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_b_trial074 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 74
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "WRAPPER_OFF",
+        "pid": 3278513,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "cross_b_trial074",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_b_trial074/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1056,
+          "selection_hit_count": 1,
+          "target_trial_id": 74
+        },
+        "trace_hash": "b3ceb2b293e478f04dad59c82810618767fcf8f99703435a26b78e35e0af12f3",
+        "trace_step_count": 27,
+        "trial_id": 74
+      },
+      "phase_label": "CROSS_B",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_b_trial074",
+      "run_id": "cross_b_trial074",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/cross_b_trial074.json",
+      "trial_id": 74
+    },
+    {
+      "activation": {
+        "arm": "WRAPPER_ON",
+        "capture_log_count": 27,
+        "certificate_result_count": 27,
+        "certificate_result_present": true,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 54,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": true,
+        "observer_enabled": true,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "SHUTDOWN_COMPLETE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": 140123510499072,
+        "worker_processed_count": 27,
+        "worker_start_requested": true,
+        "wrapper_capture_attempt_count": 27,
+        "wrapper_factory_trial_count": 1,
+        "wrapper_loaded": true
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "WRAPPER_ON",
+      "arm_code": "C",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm C --trial-id 74 --seed 0 --run-id cross_c_trial074 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_c_trial074 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 74
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 17 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "WRAPPER_ON",
+        "pid": 3283619,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "cross_c_trial074",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_c_trial074/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1062,
+          "selection_hit_count": 1,
+          "target_trial_id": 74
+        },
+        "trace_hash": "b3ceb2b293e478f04dad59c82810618767fcf8f99703435a26b78e35e0af12f3",
+        "trace_step_count": 27,
+        "trial_id": 74
+      },
+      "phase_label": "CROSS_C",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_c_trial074",
+      "run_id": "cross_c_trial074",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/cross_c_trial074.json",
+      "trial_id": 74
+    },
+    {
+      "activation": {
+        "arm": "NATIVE_OFF",
+        "capture_log_count": 0,
+        "certificate_result_count": 0,
+        "certificate_result_present": false,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 0,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": false,
+        "observer_enabled": false,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "NOT_APPLICABLE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": null,
+        "worker_processed_count": 0,
+        "worker_start_requested": false,
+        "wrapper_capture_attempt_count": 0,
+        "wrapper_factory_trial_count": 0,
+        "wrapper_loaded": false
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "NATIVE_OFF",
+      "arm_code": "A",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm A --trial-id 99 --seed 0 --run-id cross_a_trial099 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_a_trial099 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 99
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "NATIVE_OFF",
+        "pid": 3288802,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "cross_a_trial099",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_a_trial099/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1056,
+          "selection_hit_count": 1,
+          "target_trial_id": 99
+        },
+        "trace_hash": "d5faa05402b8a1f73bcb8f58e9bcb9ed2b5c7e3477df83b337e7b40dac34792c",
+        "trace_step_count": 318,
+        "trial_id": 99
+      },
+      "phase_label": "CROSS_A",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_a_trial099",
+      "run_id": "cross_a_trial099",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/cross_a_trial099.json",
+      "trial_id": 99
+    },
+    {
+      "activation": {
+        "arm": "WRAPPER_OFF",
+        "capture_log_count": 0,
+        "certificate_result_count": 0,
+        "certificate_result_present": false,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 318,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": true,
+        "observer_enabled": false,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "SHUTDOWN_COMPLETE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": null,
+        "worker_processed_count": 0,
+        "worker_start_requested": false,
+        "wrapper_capture_attempt_count": 318,
+        "wrapper_factory_trial_count": 1,
+        "wrapper_loaded": true
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "WRAPPER_OFF",
+      "arm_code": "B",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm B --trial-id 99 --seed 0 --run-id cross_b_trial099 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_b_trial099 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 99
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 17 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "WRAPPER_OFF",
+        "pid": 3294344,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "cross_b_trial099",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_b_trial099/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1056,
+          "selection_hit_count": 1,
+          "target_trial_id": 99
+        },
+        "trace_hash": "d5faa05402b8a1f73bcb8f58e9bcb9ed2b5c7e3477df83b337e7b40dac34792c",
+        "trace_step_count": 318,
+        "trial_id": 99
+      },
+      "phase_label": "CROSS_B",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_b_trial099",
+      "run_id": "cross_b_trial099",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/cross_b_trial099.json",
+      "trial_id": 99
+    },
+    {
+      "activation": {
+        "arm": "WRAPPER_ON",
+        "capture_log_count": 318,
+        "certificate_result_count": 318,
+        "certificate_result_present": true,
+        "controller_authority": false,
+        "controller_intervention_count": 0,
+        "health_log_count": 636,
+        "intended_state_valid": true,
+        "leftover_shadow_worker_count": 0,
+        "map_manifest_present": true,
+        "observer_enabled": true,
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+        "selected_candidate_replacement_count": 0,
+        "shutdown_status": "SHUTDOWN_COMPLETE",
+        "thread_names_after": [
+          "MainThread",
+          "Thread-1",
+          "tqdm_monitor"
+        ],
+        "thread_names_before": [
+          "MainThread"
+        ],
+        "worker_alive_after_shutdown": false,
+        "worker_exception_count": 0,
+        "worker_ident_after_start": 139762978428672,
+        "worker_processed_count": 318,
+        "worker_start_requested": true,
+        "wrapper_capture_attempt_count": 318,
+        "wrapper_factory_trial_count": 1,
+        "wrapper_loaded": true
+      },
+      "activation_validator_failures": [],
+      "activation_validator_pass": true,
+      "arm": "WRAPPER_ON",
+      "arm_code": "C",
+      "command": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10 -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py --arm C --trial-id 99 --seed 0 --run-id cross_c_trial099 --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --run-dir /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_c_trial099 --queue-capacity 8 --shutdown-timeout 120",
+      "environment": {
+        "alpha": 5.0,
+        "beta": 1.0,
+        "controller_radius": 0.015,
+        "cuda_device_name": "NVIDIA GeForce RTX 4090",
+        "cuda_visible_devices": "1",
+        "deterministic_flags": {
+          "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+          "PYTHONHASHSEED": "0"
+        },
+        "distance_type": "ball-to-ellipsoid",
+        "dt": 0.05,
+        "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+        "map_artifact_count": 3,
+        "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+        "max_steps": 500,
+        "numpy": "1.26.4",
+        "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+        "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+        "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+        "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+        "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+        "seed": 0,
+        "torch": "2.1.2+cu118",
+        "torch_cuda": "11.8",
+        "trial_id": 99
+      },
+      "exit_code": 0,
+      "fresh_process": true,
+      "gpu_process_after": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 0 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "gpu_process_before": {
+        "compute": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": ""
+        },
+        "gpu": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "1, NVIDIA GeForce RTX 4090, 6 MiB, 17 %"
+        },
+        "process": {
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "3172949 /disk1/zlab/conda_envs/safer_splat_official/bin/python -B /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/run_equivalence_pipeline.py --checkout /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout --task-code /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code --output-root /disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution --python /disk1/zlab/conda_envs/safer_splat_official/bin/python"
+        }
+      },
+      "metadata": {
+        "activation_valid": true,
+        "arm": "WRAPPER_ON",
+        "pid": 3299796,
+        "protected_run_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py",
+        "protected_run_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+        "qa_only": true,
+        "run_id": "cross_c_trial099",
+        "runtime_output_exists": true,
+        "runtime_output_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_c_trial099/trajs/stonehenge_ball-to-ellipsoid.json",
+        "seed": 0,
+        "selection": {
+          "delegated_zip_call_count": 1062,
+          "selection_hit_count": 1,
+          "target_trial_id": 99
+        },
+        "trace_hash": "d5faa05402b8a1f73bcb8f58e9bcb9ed2b5c7e3477df83b337e7b40dac34792c",
+        "trace_step_count": 318,
+        "trial_id": 99
+      },
+      "phase_label": "CROSS_C",
+      "retry_index": 0,
+      "run_dir": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/runs/cross_c_trial099",
+      "run_id": "cross_c_trial099",
+      "trace_path": "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/server_execution/traces/cross_c_trial099.json",
+      "trial_id": 99
+    }
+  ],
+  "summary": {
+    "FINAL_DECISION": "FREEZE_RUNTIME_NONINTERFERENCE_EVIDENCE_AND_VALIDATE_LOGGING_COMPLETENESS_PILOT",
+    "FINAL_STATUS": "PASS_L2_H1_SHADOW_INSTRUMENTATION_OFF_VS_ON_EQUIVALENCE_V1",
+    "H2_implementation_count": 0,
+    "L3_implementation_count": 0,
+    "L4_implementation_count": 0,
+    "L5_implementation_count": 0,
+    "Only_next_task": "VALIDATE_L2_H1_SHADOW_LOGGING_COMPLETENESS_PILOT_V1",
+    "arm_c_log_sanity": true,
+    "candidate_replacement_count": 0,
+    "controller_intervention_count": 0,
+    "controller_mutation_count": 0,
+    "cross_arm_complete_trial_count": 5,
+    "exact_comparison_count": 21,
+    "first_divergence_count": 0,
+    "formal_on_policy_cohort_count": 0,
+    "formal_performance_metric_count": 0,
+    "formal_runtime_metric_count": 0,
+    "frozen_trial_ids": [
+      0,
+      24,
+      49,
+      74,
+      99
+    ],
+    "instrumentation_mutation_count": 0,
+    "logging_pilot_run_count": 0,
+    "native_off_run_count": 7,
+    "real_qa_navigation_run_count": 21,
+    "selected_case": "CASE_A",
+    "wrapper_off_run_count": 7,
+    "wrapper_on_run_count": 7
+  }
+}

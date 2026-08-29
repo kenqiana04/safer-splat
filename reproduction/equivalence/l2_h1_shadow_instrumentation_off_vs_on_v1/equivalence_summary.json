@@ -1,0 +1,33 @@
+{
+  "FINAL_DECISION": "FREEZE_RUNTIME_NONINTERFERENCE_EVIDENCE_AND_VALIDATE_LOGGING_COMPLETENESS_PILOT",
+  "FINAL_STATUS": "PASS_L2_H1_SHADOW_INSTRUMENTATION_OFF_VS_ON_EQUIVALENCE_V1",
+  "H2_implementation_count": 0,
+  "L3_implementation_count": 0,
+  "L4_implementation_count": 0,
+  "L5_implementation_count": 0,
+  "Only_next_task": "VALIDATE_L2_H1_SHADOW_LOGGING_COMPLETENESS_PILOT_V1",
+  "arm_c_log_sanity": true,
+  "candidate_replacement_count": 0,
+  "controller_intervention_count": 0,
+  "controller_mutation_count": 0,
+  "cross_arm_complete_trial_count": 5,
+  "exact_comparison_count": 21,
+  "first_divergence_count": 0,
+  "formal_on_policy_cohort_count": 0,
+  "formal_performance_metric_count": 0,
+  "formal_runtime_metric_count": 0,
+  "frozen_trial_ids": [
+    0,
+    24,
+    49,
+    74,
+    99
+  ],
+  "instrumentation_mutation_count": 0,
+  "logging_pilot_run_count": 0,
+  "native_off_run_count": 7,
+  "real_qa_navigation_run_count": 21,
+  "selected_case": "CASE_A",
+  "wrapper_off_run_count": 7,
+  "wrapper_on_run_count": 7
+}
