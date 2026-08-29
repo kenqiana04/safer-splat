@@ -1,0 +1,32 @@
+{
+  "arm": "NATIVE_OFF",
+  "capture_log_count": 0,
+  "certificate_result_count": 0,
+  "certificate_result_present": false,
+  "controller_authority": false,
+  "controller_intervention_count": 0,
+  "health_log_count": 0,
+  "intended_state_valid": true,
+  "leftover_shadow_worker_count": 0,
+  "map_manifest_present": false,
+  "observer_enabled": false,
+  "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+  "selected_candidate_replacement_count": 0,
+  "shutdown_status": "NOT_APPLICABLE",
+  "thread_names_after": [
+    "MainThread",
+    "Thread-1",
+    "tqdm_monitor"
+  ],
+  "thread_names_before": [
+    "MainThread"
+  ],
+  "worker_alive_after_shutdown": false,
+  "worker_exception_count": 0,
+  "worker_ident_after_start": null,
+  "worker_processed_count": 0,
+  "worker_start_requested": false,
+  "wrapper_capture_attempt_count": 0,
+  "wrapper_factory_trial_count": 0,
+  "wrapper_loaded": false
+}

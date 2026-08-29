@@ -1,0 +1,32 @@
+{
+  "arm": "WRAPPER_ON",
+  "capture_log_count": 318,
+  "certificate_result_count": 318,
+  "certificate_result_present": true,
+  "controller_authority": false,
+  "controller_intervention_count": 0,
+  "health_log_count": 636,
+  "intended_state_valid": true,
+  "leftover_shadow_worker_count": 0,
+  "map_manifest_present": true,
+  "observer_enabled": true,
+  "schema_version": "L2_H1_SHADOW_EQUIVALENCE_ARM_ACTIVATION_V1",
+  "selected_candidate_replacement_count": 0,
+  "shutdown_status": "SHUTDOWN_COMPLETE",
+  "thread_names_after": [
+    "MainThread",
+    "Thread-1",
+    "tqdm_monitor"
+  ],
+  "thread_names_before": [
+    "MainThread"
+  ],
+  "worker_alive_after_shutdown": false,
+  "worker_exception_count": 0,
+  "worker_ident_after_start": 139762978428672,
+  "worker_processed_count": 318,
+  "worker_start_requested": true,
+  "wrapper_capture_attempt_count": 318,
+  "wrapper_factory_trial_count": 1,
+  "wrapper_loaded": true
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "arm": {"enum": ["NATIVE_OFF", "WRAPPER_OFF", "WRAPPER_ON"]},
+    "map_authority_id": {"type": "string"},
+    "qa_only": {"const": true},
+    "run_id": {"type": "string"},
+    "seed": {"type": "integer"},
+    "steps": {
+      "items": {
+        "additionalProperties": true,
+        "required": ["trial_id", "step_id", "x_k", "u_des", "selected_u_k", "solver_success", "controller_branch", "plant_input_x", "plant_input_u", "plant_output_x_next", "termination_flag", "termination_reason", "goal", "map_authority_id"],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "trial_id": {"type": "integer"}
+  },
+  "required": ["run_id", "arm", "trial_id", "seed", "map_authority_id", "qa_only", "steps"],
+  "title": "L2/H1 shadow equivalence primary trace V1",
+  "type": "object"
+}

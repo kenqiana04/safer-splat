@@ -1,0 +1,40 @@
+/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/ns_utils/nerfstudio_utils.py:117: SyntaxWarning: assertion is always true, perhaps remove parentheses?
+  assert(self.pipeline.model, SplatfactoModel)
+Traceback (most recent call last):
+  File "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py", line 383, in <module>
+    raise SystemExit(main())
+  File "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/task_code/server_run_one.py", line 246, in main
+    globals_after = runpy.run_path(str(run_path), run_name="__main__")
+  File "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/runpy.py", line 289, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/run.py", line 79, in <module>
+    gsplat = GSplatLoader(path_to_gsplat, device)
+  File "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/splat/gsplat_utils.py", line 20, in __init__
+    self.load_gsplat_from_nerfstudio(gsplat_location)
+  File "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/splat/gsplat_utils.py", line 26, in load_gsplat_from_nerfstudio
+    self.splat = GaussianSplat(gsplat_location,
+  File "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/ns_utils/nerfstudio_utils.py", line 43, in __init__
+    self.init_pipeline(test_mode)
+  File "/disk1/zlab/maintenance_records/l2_h1_shadow_instrumentation_off_vs_on_equivalence_v1/checkout/ns_utils/nerfstudio_utils.py", line 55, in init_pipeline
+    self.config, self.pipeline, _, _ = eval_setup(
+  File "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/site-packages/nerfstudio/utils/eval_utils.py", line 106, in eval_setup
+    pipeline = config.pipeline.setup(device=device, test_mode=test_mode)
+  File "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/site-packages/nerfstudio/configs/base_config.py", line 53, in setup
+    return self._target(self, **kwargs)
+  File "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/site-packages/nerfstudio/pipelines/base_pipeline.py", line 254, in __init__
+    self.datamanager: DataManager = config.datamanager.setup(
+  File "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/site-packages/nerfstudio/configs/base_config.py", line 53, in setup
+    return self._target(self, **kwargs)
+  File "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/site-packages/nerfstudio/data/datamanagers/full_images_datamanager.py", line 121, in __init__
+    self.train_dataparser_outputs: DataparserOutputs = self.dataparser.get_dataparser_outputs(split="train")
+  File "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/site-packages/nerfstudio/data/dataparsers/base_dataparser.py", line 165, in get_dataparser_outputs
+    dataparser_outputs = self._generate_dataparser_outputs(split, **kwargs)
+  File "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/site-packages/nerfstudio/data/dataparsers/instant_ngp_dataparser.py", line 76, in _generate_dataparser_outputs
+    meta = load_from_json(self.config.data / "transforms.json")
+  File "/disk1/zlab/conda_envs/safer_splat_official/lib/python3.10/site-packages/nerfstudio/utils/io.py", line 30, in load_from_json
+    with open(filename, encoding="UTF-8") as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'data/stonehenge/transforms.json'

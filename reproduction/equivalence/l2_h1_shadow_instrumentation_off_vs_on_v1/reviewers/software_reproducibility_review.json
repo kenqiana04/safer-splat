@@ -1,0 +1,29 @@
+{
+  "critical_blockers": [],
+  "evidence_checked": [
+    "pre-frozen trial selection",
+    "float.hex canonicalization",
+    "21 exact comparator rows",
+    "no tolerance field",
+    "protected raw Git blob audit"
+  ],
+  "major_issues": [],
+  "minor_issues": [
+    "A pre-navigation task-local path mapping omission was repaired without producing a control step; its failed evidence is retained."
+  ],
+  "prohibited_claims": [
+    "collision reduction",
+    "progress improvement",
+    "controller efficacy",
+    "logging completeness pilot",
+    "runtime or real-time guarantee",
+    "formal prospective cohort result",
+    "deployment guarantee"
+  ],
+  "recommended_case": "CASE_A",
+  "reviewer": "SOFTWARE_REPRODUCIBILITY",
+  "supported_claims": [
+    "The bounded equivalence matrix is reproducible from immutable trace and activation artifacts."
+  ],
+  "verdict": "PASS"
+}

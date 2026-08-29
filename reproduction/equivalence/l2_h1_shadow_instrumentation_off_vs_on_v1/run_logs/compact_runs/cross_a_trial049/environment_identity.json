@@ -1,0 +1,29 @@
+{
+  "alpha": 5.0,
+  "beta": 1.0,
+  "controller_radius": 0.015,
+  "cuda_device_name": "NVIDIA GeForce RTX 4090",
+  "cuda_visible_devices": "1",
+  "deterministic_flags": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "PYTHONHASHSEED": "0"
+  },
+  "distance_type": "ball-to-ellipsoid",
+  "dt": 0.05,
+  "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+  "map_artifact_count": 3,
+  "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+  "max_steps": 500,
+  "numpy": "1.26.4",
+  "pairing_identity_hash": "53c1d14cc069816d95c85277f790721c31408607a96448d3d6d951741f78cdd8",
+  "platform": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+  "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+  "repo_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3",
+  "run_py_git_blob_expected": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+  "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+  "schema_version": "L2_H1_SHADOW_EQUIVALENCE_RUN_ENVIRONMENT_V1",
+  "seed": 0,
+  "torch": "2.1.2+cu118",
+  "torch_cuda": "11.8",
+  "trial_id": 49
+}
