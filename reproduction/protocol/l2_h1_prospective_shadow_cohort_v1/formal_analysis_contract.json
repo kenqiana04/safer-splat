@@ -1,0 +1,83 @@
+{
+  "analysis_unit": "selected/executed candidate-state-map tuple at one committed control step",
+  "analysis_unit_key": [
+    "run_id",
+    "trial_id",
+    "step_id",
+    "x_k",
+    "selected_executed_u_k",
+    "dt",
+    "map_authority_id"
+  ],
+  "candidate_roles": {
+    "selected_u_k": "SELECTED_EXECUTED_CONTROL",
+    "u_des": "NOMINAL_REFERENCE"
+  },
+  "cluster_bootstrap": {
+    "ci": "95_PERCENT_PERCENTILE",
+    "cluster_count": 100,
+    "cluster_unit": "formal_trial",
+    "clusters_per_replicate": 100,
+    "insufficient_valid_replicates": "BOOTSTRAP_NOT_ESTIMABLE",
+    "maximum_total_draws": 100000,
+    "p_value_or_significance_test": false,
+    "resampling": "WITH_REPLACEMENT",
+    "rng_seed": 20260831,
+    "step_iid_assumption": false,
+    "valid_replicates": 10000,
+    "zero_denominator_replicate": "DISCARD_AND_REDRAW"
+  },
+  "cross_trial_descriptives": [
+    "median",
+    "IQR",
+    "min",
+    "max",
+    "trials_with_at_least_1_FAIL",
+    "trials_with_at_least_1_UNKNOWN"
+  ],
+  "known_status_sensitivity_secondary_only": "N_L2_FAIL/(N_L2_PASS+N_L2_FAIL)",
+  "multi_candidate_contract": {
+    "native_siblings_require_pre_observation_runtime_provenance": true,
+    "synthetic_candidate_generation_count": 0,
+    "u_des_is_native_alternative": false,
+    "zero_group_result": "MULTI_CANDIDATE_ANALYSIS_NOT_ESTIMABLE"
+  },
+  "no_post_hoc_change": true,
+  "per_trial_descriptives": [
+    "N_intended",
+    "N_primary",
+    "N_FAIL",
+    "N_UNKNOWN",
+    "primary_rate_if_denominator_positive"
+  ],
+  "primary_denominator": "count(primary eligible rows with L2 PASS, FAIL, or UNKNOWN)",
+  "primary_denominator_name": "N_L1_PASS_L2_SELECTED_EVALUATED",
+  "primary_eligibility_all": [
+    "data_role=FORMAL_PROSPECTIVE_SHADOW_COHORT_V1",
+    "logging_qc_complete=true",
+    "selected_candidate_role=SELECTED_EXECUTED_CONTROL",
+    "selected_candidate_committed=true",
+    "l1_observation_source=SHADOW_RECOMPUTED_FROZEN_CERTIFIER",
+    "l1_status=PASS",
+    "l2_reached=true",
+    "l2_status in {PASS,FAIL,UNKNOWN}",
+    "map_authority_valid=true",
+    "payload_join_identity_valid=true"
+  ],
+  "primary_endpoint": "prospective_future_safety_signal_rate=N_primary_FAIL/N_primary",
+  "primary_numerator": "count(primary eligible rows with L2=FAIL)",
+  "primary_numerator_name": "N_primary_FAIL",
+  "schema_version": "L2_H1_FORMAL_ANALYSIS_CONTRACT_V1",
+  "secondary_endpoints": [
+    "L2_UNKNOWN_RATE",
+    "L2_SELECTED_REACH_RATE",
+    "FORMAL_LOGGING_COMPLETENESS",
+    "PER_TRIAL_L1_PASS_L2_FAIL_DISTRIBUTION",
+    "BACKEND_USAGE_COUNTS",
+    "NATIVE_MULTI_CANDIDATE_OPPORTUNITY_AND_DISAGREEMENT",
+    "SELECTED_VS_NATIVE_NONSELECTED_STATUS"
+  ],
+  "secondary_unknown_rate": "N_L2_UNKNOWN/N_primary",
+  "tri_state_algebra": "N_primary=N_L2_PASS+N_L2_FAIL+N_L2_UNKNOWN",
+  "unknown_in_primary_denominator": true
+}

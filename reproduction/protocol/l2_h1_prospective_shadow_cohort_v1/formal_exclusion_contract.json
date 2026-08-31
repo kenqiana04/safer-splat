@@ -1,0 +1,30 @@
+{
+  "accepted_data_role": "FORMAL_PROSPECTIVE_SHADOW_COHORT_V1",
+  "formal_run_ids_must_match": "^formal-v1-trial-0[0-9]{2}-attempt-[01]$",
+  "hard_rejected_data_roles": [
+    "EQUIVALENCE_QA_ONLY",
+    "PILOT_QA_ONLY",
+    "FROZEN_HISTORICAL_REPLAY"
+  ],
+  "hard_rejected_prs": [
+    98,
+    99
+  ],
+  "hard_rejected_qa_run_ids": [
+    "pilot_c_trial010",
+    "pilot_c_trial030",
+    "pilot_c_trial050",
+    "pilot_c_trial070",
+    "pilot_c_trial090"
+  ],
+  "pilot_ids_remain_in_formal_manifest": [
+    10,
+    30,
+    50,
+    70,
+    90
+  ],
+  "pilot_rows_reused": false,
+  "qa_exclusion_is_permanent": true,
+  "schema_version": "L2_H1_FORMAL_EXCLUSION_CONTRACT_V1"
+}

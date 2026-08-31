@@ -1,0 +1,19 @@
+{
+  "collection_scope_only": [
+    "COLLECT",
+    "OUTCOME_BLIND_QC",
+    "FORMAL_COLLECTION_LOCK"
+  ],
+  "only_next_task": "COLLECT_L2_H1_PROSPECTIVE_SHADOW_COHORT_V1",
+  "pre_run_gates": [
+    "PR99_HEAD_EXACT",
+    "PROTOCOL_LOCK_SHA_EXACT",
+    "FORMAL_TRIAL_MANIFEST_EXACT",
+    "ZERO_PREEXISTING_FORMAL_ROWS"
+  ],
+  "protocol_mutation_allowed": false,
+  "required_protocol_sha256": "e8ea8f3fda15ab81664829ea6f71fcb37f772ad613c13f61007856c16117791a",
+  "required_upstream_head": "17bec44c51207bf7f831db724e108b86adb0ace8",
+  "schema_version": "L2_H1_PROSPECTIVE_SHADOW_COHORT_HANDOFF_V1",
+  "scientific_analysis_allowed": false
+}

@@ -1,0 +1,72 @@
+{
+  "$id": "safer-splat://l2-h1/formal-collection-lock-v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "actual_formal_collection_lock_generated": false,
+  "additionalProperties": false,
+  "analysis_unlock_after_schema_valid_lock": true,
+  "properties": {
+    "collection_deviations": {
+      "type": "array"
+    },
+    "collection_locked_before_scientific_analysis": {
+      "const": true
+    },
+    "environment_identity": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "formal_run_ids": {
+      "items": {
+        "pattern": "^formal-v1-trial-0[0-9]{2}-attempt-[01]$",
+        "type": "string"
+      },
+      "maxItems": 100,
+      "minItems": 100,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "formal_trial_count": {
+      "const": 100
+    },
+    "map_identity": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "per_trial_sha256": {
+      "maxProperties": 100,
+      "minProperties": 100,
+      "type": "object"
+    },
+    "protocol_lock_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "qc_completeness": {
+      "const": true
+    },
+    "raw_artifact_manifests": {
+      "maxItems": 100,
+      "minItems": 100,
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "FORMAL_COLLECTION_LOCK_V1"
+    }
+  },
+  "required": [
+    "schema_version",
+    "formal_trial_count",
+    "formal_run_ids",
+    "raw_artifact_manifests",
+    "per_trial_sha256",
+    "environment_identity",
+    "map_identity",
+    "protocol_lock_sha256",
+    "qc_completeness",
+    "collection_deviations",
+    "collection_locked_before_scientific_analysis"
+  ],
+  "template_only": true,
+  "title": "FORMAL_COLLECTION_LOCK V1 schema only",
+  "type": "object"
+}

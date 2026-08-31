@@ -1,0 +1,34 @@
+{
+  "allowed_checks": [
+    "intended_step_count",
+    "capture_count",
+    "result_record_exists",
+    "join_completeness",
+    "sequence_gaps",
+    "selected_u_presence",
+    "map_authority",
+    "schema",
+    "queue_worker_health",
+    "termination",
+    "raw_artifact_hash",
+    "l2_status_field_presence_and_type_only"
+  ],
+  "collection_task_may_analyze_scientific_outcomes": false,
+  "forbidden_collection_outputs": [
+    "N_L2_PASS",
+    "N_L2_FAIL",
+    "N_L2_UNKNOWN",
+    "PASS_FAIL_UNKNOWN_DISTRIBUTION",
+    "L1_PASS_L2_FAIL_COUNT",
+    "MULTI_CANDIDATE_OUTCOME_DISAGREEMENT",
+    "PRIMARY_ENDPOINT",
+    "BOOTSTRAP_CI",
+    "SCIENTIFIC_OUTCOME_SUMMARY"
+  ],
+  "schema_version": "L2_H1_OUTCOME_BLIND_COLLECTION_QC_V1",
+  "scientific_analysis_unlock_all": [
+    "formal_trial_count=100",
+    "FORMAL_COLLECTION_LOCK_VALID=true",
+    "outcome_blind_collection_qc_complete=true"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "combined_hash_algorithm": "SHA256_OF_CANONICAL_SORTED_PATH_HASH_RECORDS",
+  "combined_protocol_sha256": "e8ea8f3fda15ab81664829ea6f71fcb37f772ad613c13f61007856c16117791a",
+  "created_before_formal_collection": true,
+  "formal_run_count_at_lock": 0,
+  "lockable_file_count": 13,
+  "navigation_run_count_at_lock": 0,
+  "new_research_data_count_at_lock": 0,
+  "official100_manifest_sha256": "1b236bba8173c8a37fb7752fd2e2f09fc569191d6820089759b4be547bd6c344",
+  "per_file_sha256": {
+    "FORMAL_COHORT_PROTOCOL.md": "7ea00879edafb6b7f498486e1c165aac0ae416e3329ed82a1c3abe3763c1bc1f",
+    "formal_analysis_contract.json": "4f4a8ae24af91a992216c86591a7ba63c3f1f278ccbc9df516b0d7f626126fce",
+    "formal_artifact_retention_policy.json": "56646ee30c4571ed09558f35eb4b80b5e5c5d018b9b19b269536f1ad35478ac2",
+    "formal_claim_contract.json": "3b8513513fa242892790527fd2552c0d9e765ce2fc321897d47e37a7bab8d37a",
+    "formal_collection_environment_contract.json": "20d2ba69a1fb1595fa68b781bdad8a94dbf1cf6a81c47614cb250bef41b56312",
+    "formal_collection_lock_schema.json": "b6ae11ab1c3f8832b3b427fbf1671e3927fcde3c0b3517b70bf280a9341a4ddf",
+    "formal_exclusion_contract.json": "8df903701c953cd9c416d16029e583f882dd6085f290856f5accab3a621f30a2",
+    "formal_identity_join_contract.json": "ce62b5fee0af82bb85336d8a707cadc4cbb8ce8e9441fdbe1c88cb6a50a51515",
+    "formal_qc_contract.json": "a3a186c1f54bfda06f4e9d2f4268491c21d6e2942008767a414248bb96108037",
+    "formal_retry_stop_policy.json": "48a0263f20e2ddb4f06b2b5c9743c27be332e7e8ec216e68cd5b5603393be104",
+    "formal_run_id_schema.json": "64faca7b67f68b0864a1b05e678a845cd2259531d40c300c15b34594fb206dd9",
+    "formal_trial_manifest.json": "ef882c8b43564cd119be900ca01f7b4bfb31d8ccf36535dc1f66d2be49d5673f",
+    "outcome_blind_qc_contract.json": "f0ba74b93d14f92fff8e1d2a0350f011d8195711a54527f9199907ebff1c150b"
+  },
+  "protocol_change_after_first_formal_run": "STOP_V1_AND_CREATE_PROTOCOL_V2",
+  "protocol_version": "V1",
+  "schema_version": "L2_H1_PROSPECTIVE_SHADOW_PROTOCOL_LOCK_V1",
+  "upstream_pr99_head": "17bec44c51207bf7f831db724e108b86adb0ace8"
+}

@@ -1,0 +1,38 @@
+{
+  "artifact_identity_fields": [
+    "trial_id",
+    "run_id",
+    "attempt_id",
+    "protocol_sha",
+    "data_role"
+  ],
+  "attempt_overwrite_allowed": false,
+  "git_allowed_compact": [
+    "protocol",
+    "formal_manifest",
+    "artifact_manifest",
+    "sha256",
+    "compact_qc_summary",
+    "compact_analysis_summary",
+    "deviation_table",
+    "report",
+    "validator",
+    "downstream_handoff"
+  ],
+  "git_forbidden_suffixes": [
+    ".jsonl",
+    ".log"
+  ],
+  "raw_log_files_committed_to_git": 0,
+  "schema_version": "L2_H1_FORMAL_ARTIFACT_RETENTION_POLICY_V1",
+  "server_full_retention": [
+    "capture_jsonl",
+    "result_jsonl",
+    "health_logs",
+    "control_traces",
+    "stdout_stderr",
+    "map_manifests",
+    "attempt_artifacts"
+  ],
+  "server_raw_root": "/disk1/zlab/maintenance_records/l2_h1_prospective_shadow_cohort_v1/server_execution/"
+}

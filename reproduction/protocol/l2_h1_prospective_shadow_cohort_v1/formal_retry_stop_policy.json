@@ -1,0 +1,21 @@
+{
+  "automatic_retry_all": [
+    "failure_before_first_intended_control_step",
+    "formal_capture_count=0",
+    "formal_l2_result_count=0",
+    "scientific_row_count=0",
+    "failure_recorded=true",
+    "same_trial_id=true",
+    "fresh_process=true",
+    "attempt_id_increment=1",
+    "prior_retry_count=0"
+  ],
+  "automatic_retry_failure_class": "PRE_DATA_INFRA_FAILURE",
+  "continue_remaining_trials_after_post_data_failure": false,
+  "maximum_automatic_retries_per_trial": 1,
+  "mix_partial_and_rerun_in_v1": false,
+  "post_data_automatic_retry": false,
+  "post_data_failure_action": "STOP_COHORT_PRESERVE_PARTIAL_EVIDENCE_RECORD_PROTOCOL_DEVIATION",
+  "schema_version": "L2_H1_FORMAL_RETRY_STOP_POLICY_V1",
+  "trial_replacement_allowed": false
+}
