@@ -1,0 +1,65 @@
+{
+  "capture_result_join_key": [
+    "run_id",
+    "process_local_trial_token",
+    "step_id",
+    "state_sequence_id",
+    "decision_commit_id",
+    "payload_sequence_id",
+    "selected_candidate_id",
+    "map_authority_id",
+    "payload_enqueue_semantic_hash",
+    "payload_worker_receive_semantic_hash",
+    "result_semantic_hash"
+  ],
+  "change_after_first_formal_run": "STOP_V1_AND_CREATE_PROTOCOL_V2",
+  "denominator_control_trace_join": {
+    "capture_selected_u_equals_trace_selected_u_k": true,
+    "map_authority_id_equal": true,
+    "official_trial_id_equal": true,
+    "plant_input_output_state_required": true,
+    "selected_candidate_hash_required": true,
+    "selected_candidate_identity_required": true,
+    "selected_u_k_equals_plant_input_u": true,
+    "step_id_equals_integer_sequence": true
+  },
+  "derived_id_equations": {
+    "decision_commit_id": "{run_id}:{process_local_trial_token}:commit:{payload_sequence_id:06d}",
+    "selected_candidate_id": "{run_id}:{process_local_trial_token}:selected:{payload_sequence_id:06d}",
+    "state_sequence_id": "{run_id}:{process_local_trial_token}:state:{payload_sequence_id:06d}",
+    "step_id": "payload_sequence_id"
+  },
+  "freeze_before_first_formal_run": true,
+  "hot_fix_and_mix_v1_data": false,
+  "official_trial_identity": {
+    "manifest_field": "formal_trial_manifest.trials[].trial_id",
+    "must_equal": true,
+    "not_equal_to_process_local_token_by_assumption": true,
+    "trace_field": "primary_trace.trial_id"
+  },
+  "process_local_trial_token": {
+    "capture_field": "capture.trial_id",
+    "must_match_capture_result": true,
+    "must_not_be_used_as_official_trial_id": true,
+    "one_unique_token_per_fresh_process": true,
+    "prefix": "trial-",
+    "result_field": "result.trial_id"
+  },
+  "schema_version": "L2_H1_FORMAL_IDENTITY_JOIN_CONTRACT_V1",
+  "semantic_hash_contract": {
+    "capture_enqueue_receive_recomputed_equal": true,
+    "capture_recomputed_from_pr99_capture_semantic_keys": true,
+    "result_recomputed_from_pr99_result_semantic_keys": true
+  },
+  "source": {
+    "pr99_final_aggregator_path": "reproduction/pilot/l2_h1_shadow_logging_completeness_pilot_v1/aggregate_logging_pilot.py",
+    "pr99_final_aggregator_sha256": "c30dc406eddfbe1cd649b1d6ab0294b548275e7b4ddaa9a73f7017ed5eab61a6",
+    "pr99_join_integrity_pass": true,
+    "schema_sha256": {
+      "health_event.schema.json": "e1b298c50c7bfeab79630c6a20069d86938f2afab7ce5b7d46dfad1e2995a7a7",
+      "map_authority.schema.json": "b7d8c4e60058cf01b67eba93fd0ac31af3b1fdd76e28e6e035acea5a1e612efa",
+      "shadow_result.schema.json": "26ce14394753e6825af9eeb39cf557a4b70a6842d7832e38a16dc6589e0f20b0",
+      "step_payload.schema.json": "9f465f536007b567d4f71ad03179f1de7edf76f9f3f42292b569c027451e114f"
+    }
+  }
+}

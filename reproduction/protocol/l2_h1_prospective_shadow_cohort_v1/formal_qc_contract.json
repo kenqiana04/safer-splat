@@ -1,0 +1,29 @@
+{
+  "completeness_required": {
+    "capture_completeness": 1.0,
+    "join_completeness": 1.0,
+    "map_authority_completeness": 1.0,
+    "reachability_completeness": 1.0,
+    "selected_u_completeness": 1.0,
+    "shadow_result_completion": 1.0
+  },
+  "error_count_required": {
+    "alignment_failure": 0,
+    "capture_without_result": 0,
+    "duplicate_payload": 0,
+    "duplicate_result": 0,
+    "map_authority_failure": 0,
+    "orphan_result": 0,
+    "queue_drop": 0,
+    "schema_failure": 0,
+    "sequence_gap": 0,
+    "serialization_error": 0,
+    "shutdown_incomplete": 0,
+    "worker_failure": 0
+  },
+  "overall_average_cannot_override_per_trial_gate": true,
+  "post_data_gate_failure": "STOP_COHORT_PRESERVE_PARTIAL_RECORD_PROTOCOL_DEVIATION",
+  "schema_version": "L2_H1_FORMAL_QC_CONTRACT_V1",
+  "scope": "PER_SUCCESSFUL_FORMAL_TRIAL",
+  "trial_replacement_allowed": false
+}
