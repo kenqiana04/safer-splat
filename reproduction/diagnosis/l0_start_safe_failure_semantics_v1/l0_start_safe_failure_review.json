@@ -1,0 +1,8 @@
+{
+  "verdict": "PASS_BOUNDED_ROOT_CAUSE_DIAGNOSIS",
+  "root_class": "SS-F5",
+  "confidence": "HIGH_FOR_CONTRACT_MISMATCH_HIGH_FOR_15_SENTINELS_NOT_A_COHORT_PREVALENCE_CLAIM",
+  "critical_blockers": [],
+  "recommended_next_task": "DESIGN_L0_CONTROLLER_GEOMETRY_CONTRACT_V2",
+  "review": "源码已明确 h 为全部高斯椭球的最小有符号平方间隙减有效半径平方，符号、尺度、坐标变换及 L0 内部半径使用均自洽。L0 与冻结控制器使用同一状态点、地图、过滤集合和查询公式，但半径分别为 0.11 与 0.015。15 点在读 h 前按固定 trial/首中末 step 锁定；其原始间隙距离均大于 0.015 且小于 0.11，精确 L0 查询均为负。该证据直接支持 SS-F5，但 15 点不代表 14122 行分布，也不改变 V1 结论。下一步仅应设计统一几何合同。"
+}

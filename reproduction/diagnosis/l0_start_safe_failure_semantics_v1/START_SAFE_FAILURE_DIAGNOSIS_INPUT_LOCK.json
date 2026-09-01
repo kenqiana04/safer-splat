@@ -1,0 +1,27 @@
+{
+  "analysis_execution_lock_sha": "08cecef117031f599167ca944ba1ac9ac78da94a908a314ecf750729073e6d59",
+  "collection_lock_sha": "c30adc48099e8d7b90c980d84389cc1fa693cc1f87d3fc519089efb7cb81b756",
+  "compact_input_git_blob_sha256": {
+    "L0_DIAGNOSIS_INPUT_LOCK.json": "254b240e7f67c00372323e18949766c4d993732d5dbb8b4ae1a0c973d1d26d6b",
+    "authority_observability_gating_audit.json": "b214285013d13a57e0335fb0fad9fdfcc5340cc7e674490d967bee5bbfdeab9f",
+    "l0_outcome_summary.json": "aa2d690512d698431dca45bc2ec7e1d7fd512e13bc47db700a6ab7bf198c7150",
+    "l0_semantics_summary.json": "bc54f2f07ca66fc314c70459c2f9bbd94e02721481d4cce5f83948612218f958",
+    "l0_status_mapping_audit.json": "267999ccc2b8dd9526e8465f7669f6925d1d90c14424140938b290a63668facf",
+    "root_cause_diagnosis.json": "ce03e44cda29fa78aef6925dd1910dcf0e078ba8ffef61aa54f41adc0127ffc7"
+  },
+  "diagnosis_is_post_hoc": true,
+  "formal_row_count": 14122,
+  "frozen_L0_FAIL": 14122,
+  "frozen_L0_UNKNOWN": 0,
+  "post_reveal_evidence_lock_sha": "a25172a98838d1e132ffc0f0a178029ead0f67dcf44b3ec634eb331c2113d1e4",
+  "pr104_branch": "diagnose-l0-shadow-certifier-semantics-v1",
+  "pr104_head_sha": "14c844adeda8a0e8eb418abcdbaac62c701e2910",
+  "pr104_state": "OPEN_DRAFT",
+  "protocol_sha": "e8ea8f3fda15ab81664829ea6f71fcb37f772ad613c13f61007856c16117791a",
+  "raw_h_logged": false,
+  "runtime_mutation_authority": false,
+  "schema_version": "L0_START_SAFE_FAILURE_DIAGNOSIS_INPUT_LOCK_V1",
+  "scientific_result_mutation_authority": false,
+  "trial_count": 100,
+  "upstream_l0_diagnosis_lock_sha": "254b240e7f67c00372323e18949766c4d993732d5dbb8b4ae1a0c973d1d26d6b"
+}

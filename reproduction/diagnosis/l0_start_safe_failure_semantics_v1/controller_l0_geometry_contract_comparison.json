@@ -1,0 +1,35 @@
+{
+  "schema_version": "CONTROLLER_L0_GEOMETRY_CONTRACT_COMPARISON_V1",
+  "verdict": "PARTIALLY_EQUIVALENT",
+  "same_query_point_definition": true,
+  "same_map_identity": true,
+  "same_gaussian_set": true,
+  "same_map_filtering": true,
+  "same_gaussian_geometry_interpretation": true,
+  "same_signed_squared_clearance_formula": true,
+  "same_min_aggregation": true,
+  "same_sign_convention": true,
+  "controller_radius_m": 0.015,
+  "l0_robot_radius_m": 0.1,
+  "l0_safety_margin_m": 0.01,
+  "l0_effective_radius_m": 0.11,
+  "radius_ratio_l0_to_controller": 7.333333333333334,
+  "squared_inflation_ratio_l0_to_controller": 53.77777777777778,
+  "minimal_difference_items": [
+    "controller query subtracts 0.015^2",
+    "shadow L0 query subtracts 0.11^2 after combining 0.10 robot radius and 0.01 margin"
+  ],
+  "sentinel_contract_cross_check": {
+    "n": 15,
+    "all_raw_squared_clearance_gt_controller_radius_squared": true,
+    "all_raw_squared_clearance_lt_l0_effective_radius_squared": true,
+    "controller_radius_counterfactual_uses_existing_raw_component_not_second_query": true,
+    "scientific_prevalence_claim": false
+  },
+  "source_evidence": [
+    "cbf/cbf_utils.py:45",
+    "run.py:47-52,115",
+    "reproduction/equivalence/l2_h1_shadow_instrumentation_off_vs_on_v1/server_run_one.py:31,101-103,125-127,148-170,340",
+    "reproduction/diagnosis/l0_start_safe_failure_semantics_v1/sentinel_l0_h.csv"
+  ]
+}

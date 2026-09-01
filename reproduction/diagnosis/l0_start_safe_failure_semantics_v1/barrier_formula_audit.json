@@ -1,0 +1,26 @@
+{
+  "schema_version": "L0_BARRIER_FORMULA_AUDIT_V1",
+  "classification": "FORMULA_CONSISTENT",
+  "sign_convention_consistent_with_pass_test": true,
+  "per_gaussian_expression": "h_i = sign(sum((R_i^T(p-mu_i)/s_i)^2)-1) * squared_point_to_ellipsoid_distance - effective_radius^2",
+  "aggregation": "minimum over all loaded Gaussians via argmin",
+  "robot_radius_used_once": true,
+  "safety_margin_used_once": true,
+  "effective_radius_m": 0.11,
+  "effective_radius_squared": 0.0121,
+  "gaussian_scale_or_covariance_double_inflation": false,
+  "squared_distance_vs_distance_mixed": false,
+  "covariance_or_scale_unit_mismatch": false,
+  "min_max_direction_correct_for_union_obstacle_contract": true,
+  "nonfinite_can_enter_fail": false,
+  "double_inflation_verdict": "NOT_ESTABLISHED",
+  "formula_or_sign_defect": false,
+  "source_evidence": [
+    "splat/gsplat_utils.py:31-40",
+    "splat/gsplat_utils.py:162-185",
+    "splat/distances.py:96-130",
+    "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/adapters/gaussian_barrier_adapter.py:87-97",
+    "reproduction/equivalence/l2_h1_shadow_instrumentation_off_vs_on_v1/server_run_one.py:101-103,125-127,165-170"
+  ],
+  "boundary": "Audit only; no implementation or frozen status was changed."
+}
