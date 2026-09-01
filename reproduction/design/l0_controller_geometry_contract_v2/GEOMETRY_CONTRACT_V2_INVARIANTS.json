@@ -1,0 +1,23 @@
+{
+  "schema_version": "L0_CONTROLLER_GEOMETRY_CONTRACT_V2_INVARIANTS_V1",
+  "invariants": [
+    {"id": 1, "rule": "base_radius_source == controller_geometry_authority"},
+    {"id": 2, "rule": "no duplicate independent robot radius"},
+    {"id": 3, "rule": "r_L0_eff = r_controller + m_cert"},
+    {"id": 4, "rule": "certification margin is applied exactly once"},
+    {"id": 5, "rule": "all radius and margin quantities use meters"},
+    {"id": 6, "rule": "point-to-ellipsoid formula is unchanged from V1"},
+    {"id": 7, "rule": "PASS/FAIL/UNKNOWN sign semantics are unchanged from V1"},
+    {"id": 8, "rule": "state/map frame convention is unchanged from V1"},
+    {"id": 9, "rule": "Gaussian scale convention and one exponentiation are unchanged from V1"},
+    {"id": 10, "rule": "query state remains robot position state[0:3]"},
+    {"id": 11, "rule": "FULL Gaussian set and opacity/filter behavior are unchanged from V1"},
+    {"id": 12, "rule": "controller runtime and selected action remain unchanged"},
+    {"id": 13, "rule": "L1 and L2 formulas and reachability gate are unchanged"},
+    {"id": 14, "rule": "V1 evidence, counts, and Case C remain immutable"},
+    {"id": 15, "rule": "radius and margin choices are not sentinel- or outcome-driven"},
+    {"id": 16, "rule": "a support-only pilot is required before any new formal cohort protocol"}
+  ],
+  "violation_behavior": "BLOCK_IMPLEMENTATION_OR_FORMAL_COLLECTION",
+  "runtime_implementation_count": 0
+}

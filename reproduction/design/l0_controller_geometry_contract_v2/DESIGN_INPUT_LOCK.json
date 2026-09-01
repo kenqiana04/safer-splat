@@ -1,0 +1,52 @@
+{
+  "schema_version": "L0_CONTROLLER_GEOMETRY_CONTRACT_V2_DESIGN_INPUT_LOCK_V1",
+  "upstream": {
+    "pr": 105,
+    "state": "OPEN_DRAFT",
+    "branch": "diagnose-l0-start-safe-failure-semantics-v1",
+    "head_sha": "3c2ad6122d61436c845cb449c41fae0cd2c1608f",
+    "base_head_sha": "14c844adeda8a0e8eb418abcdbaac62c701e2910"
+  },
+  "frozen_v1_facts": {
+    "formal_rows": 14122,
+    "l0_pass": 0,
+    "l0_fail": 14122,
+    "l0_unknown": 0,
+    "root_class": "SS-F5",
+    "root_label": "L0_CONTROLLER_GEOMETRY_CONTRACT_MISMATCH",
+    "controller_radius_m": 0.015,
+    "shadow_l0_robot_radius_m": 0.1,
+    "shadow_l0_safety_margin_m": 0.01,
+    "shadow_l0_effective_radius_m": 0.11,
+    "radius_inflation_application_count": 1,
+    "formula_sign_frame_scale_state_reference_consistent": true,
+    "same_map_and_gaussian_query_set": true,
+    "sentinel_count": 15,
+    "sentinel_boundary": "DIAGNOSTIC_ONLY_NOT_POPULATION_ESTIMATE"
+  },
+  "input_identities": {
+    "cbf/cbf_utils.py": {"git_blob": "7c6e1300b125cc0a2a950ac2835a1fbe3d0de113", "sha256": "492403919f64fba4a46908a8a663900c1ed5808a1865dc5a74c9cfe32d2c7010"},
+    "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/task_config.py": {"git_blob": "2bfd8f69b74e2f3ed8e8a816409549eb5e1ed896", "sha256": "2a33e2a825b2527d10baa0f2ed53adfd39616458181a7a2f2e9e240cd0e56296"},
+    "reproduction/diagnosis/l0_shadow_certifier_semantics_v1/authority_observability_gating_audit.json": {"git_blob": "751e4cb254b6abc57562880c320f82dfaecdd936", "sha256": "b214285013d13a57e0335fb0fad9fdfcc5340cc7e674490d967bee5bbfdeab9f"},
+    "reproduction/diagnosis/l0_shadow_certifier_semantics_v1/l0_semantics_summary.json": {"git_blob": "16a6b4417af66c1bf27f87ecb745238d76bda897", "sha256": "bc54f2f07ca66fc314c70459c2f9bbd94e02721481d4cce5f83948612218f958"},
+    "reproduction/diagnosis/l0_start_safe_failure_semantics_v1/FINAL_CASE_DECISION.json": {"git_blob": "44a6232a1758d9ceb5338f64c8f95ea050525e81", "sha256": "00b2738a0063aa21c628134fbcc7445b230fc92fb9845e672fd3505b65cc9e58"},
+    "reproduction/diagnosis/l0_start_safe_failure_semantics_v1/barrier_formula_audit.json": {"git_blob": "0c885d0f81465c828e716ed8f1b5322bfb16591a", "sha256": "779db585d6f0c75c276b611bbc040a049bc3bd9944a18e7a713505f70db05507"},
+    "reproduction/diagnosis/l0_start_safe_failure_semantics_v1/controller_l0_geometry_contract_comparison.json": {"git_blob": "f52f94c93d9ea60fa86d5d2d7c8d43547a9acd27", "sha256": "f862e66c4fd85da4bd0ca0eb29ffda89f3f495d94a069909a8b4e2c9ae5cd2c6"},
+    "reproduction/diagnosis/l0_start_safe_failure_semantics_v1/report/REPORT_DIAGNOSE_L0_START_SAFE_FAILURE_SEMANTICS_V1.md": {"git_blob": "64f286012748e6ad3af2a50dfb4f4ba3fe8853dc", "sha256": "2e9f6f0fca97fdb304d6dd9a5f7de9d2fc0c7f186c1b0dfe95f5f5379c4ec3de"},
+    "reproduction/diagnosis/l0_start_safe_failure_semantics_v1/root_cause_diagnosis.json": {"git_blob": "cf24b0219608f3df84a9f48e5261f235db34876f", "sha256": "d990a975f2c45a4f770eaf50a44ae9a2d53ead5cf56102a6cc363ace8f53a9b2"},
+    "reproduction/diagnosis/l0_start_safe_failure_semantics_v1/sentinel_h_summary.json": {"git_blob": "6aa5f58cdb6c12d9f5b3269be9b80e6bbca0f60a", "sha256": "ddd98a920eb1baaa6a1156ea8fa38169a2eceb95adaca3f35cb60c4ca35ad6f7"},
+    "reproduction/equivalence/l2_h1_shadow_instrumentation_off_vs_on_v1/server_run_one.py": {"git_blob": "d6237659b0caef8481ede4daf6c1fde1f5b0a65b", "sha256": "d80b5f7df89d581495a5b18103247d648a357bdba3dc2fdc1b6559ed17b6a56f"},
+    "run.py": {"git_blob": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a", "sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c"}
+  },
+  "preexisting_margin_provenance": {
+    "source_commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+    "source_path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/task_config.py",
+    "field": "FIXED_SAFETY_MARGIN_M",
+    "value_m": 0.01,
+    "predates_pr105_diagnosis": true
+  },
+  "runtime_mutation_authority": false,
+  "scientific_result_mutation_authority": false,
+  "sentinel_recomputation_authority": false,
+  "gpu_authority": false
+}

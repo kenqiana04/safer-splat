@@ -1,0 +1,25 @@
+{
+  "schema_version": "L0_CERTIFICATION_MARGIN_SEMANTICS_AUDIT_V2",
+  "verdict": "PRESERVE_PREEXISTING_CERTIFICATION_MARGIN",
+  "margin_policy": "PRESERVE_PREEXISTING_CERTIFICATION_MARGIN",
+  "certification_margin_m": 0.01,
+  "source": {
+    "path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/task_config.py",
+    "field": "FIXED_SAFETY_MARGIN_M",
+    "line": 21,
+    "composition_line": 22,
+    "source_commit": "04ebca2b1b35124ad0e61ebed96e491c9edae4bb",
+    "git_blob_at_pr105": "2bfd8f69b74e2f3ed8e8a816409549eb5e1ed896"
+  },
+  "independent_semantic_name_preexists_pr105": true,
+  "separate_from_robot_radius_in_source": true,
+  "used_in_v1_shadow_contract": true,
+  "outcome_or_sentinel_driven": false,
+  "sentinel_consulted_for_value_selection": false,
+  "interpretation": "The 0.01 m value is preserved as the pre-existing independently named fixed safety/certification margin while the erroneous independent L0 base footprint authority is removed.",
+  "not_claimed": [
+    "The margin is statistically optimal.",
+    "The margin restores L2 support.",
+    "The margin improves safety performance."
+  ]
+}

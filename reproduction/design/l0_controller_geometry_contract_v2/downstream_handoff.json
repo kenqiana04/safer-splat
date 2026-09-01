@@ -1,0 +1,22 @@
+{
+  "schema_version": "L0_CONTROLLER_GEOMETRY_CONTRACT_V2_IMPLEMENTATION_HANDOFF_V1",
+  "source_upstream_pr": 105,
+  "source_upstream_head": "3c2ad6122d61436c845cb449c41fae0cd2c1608f",
+  "geometry_contract_path": "reproduction/design/l0_controller_geometry_contract_v2/L0_CONTROLLER_GEOMETRY_CONTRACT_V2.json",
+  "geometry_contract_sha256": "23ba083d871d17f6389dde2872068e7439cba6898197572fc34246b5b46da7f3",
+  "controller_radius_m": 0.015,
+  "certification_margin_m": 0.01,
+  "effective_l0_radius_m": 0.025,
+  "composition_rule": "r_L0_eff = r_controller + m_cert",
+  "required_implementation_behavior": [
+    "Consume controller geometry authority read-only.",
+    "Do not introduce an independent L0 base radius.",
+    "Apply the pre-existing certification margin exactly once.",
+    "Emit all required provenance fields.",
+    "Preserve controller output, map/query semantics, L1/L2, and shadow gating."
+  ],
+  "first_required_gate": "V2-A_STATIC_IMPLEMENTATION_VALIDATION",
+  "sentinel_use": "CONFORMANCE_ONLY_NO_PARAMETER_CHANGES",
+  "support_pilot_authorized_by_handoff": false,
+  "only_next_task": "IMPLEMENT_L0_CONTROLLER_GEOMETRY_CONTRACT_V2"
+}
