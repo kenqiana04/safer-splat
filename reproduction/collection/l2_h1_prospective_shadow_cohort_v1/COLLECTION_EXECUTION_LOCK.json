@@ -1,0 +1,107 @@
+{
+  "collection_execution_lock_sha256": "5e20a3f0504205e8d65b91033638c5af0909ed741212a04539dcfb37eda08fe2",
+  "collection_lock_builder_sha256": "f3db2393498c721cd4afe9cc22107f1964ebfaa2e17d98200a44b62f7c632d65",
+  "combined_collection_execution_sha256": "5e20a3f0504205e8d65b91033638c5af0909ed741212a04539dcfb37eda08fe2",
+  "controller_identity": {
+    "run_py_git_blob": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+    "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+    "runtime_baseline_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3"
+  },
+  "created_before_first_formal_observation": true,
+  "cuda": "11.8",
+  "environment_identity": {
+    "controller_identity": {
+      "run_py_git_blob": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+      "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+      "runtime_baseline_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3"
+    },
+    "created_before_first_formal_observation": true,
+    "cuda_device_name": "NVIDIA GeForce RTX 4090",
+    "cuda_visible_devices": "1",
+    "dt": 0.05,
+    "formal_capture_count": 0,
+    "formal_intended_step_count": 0,
+    "formal_navigation_run_count": 0,
+    "formal_result_count": 0,
+    "instrumentation_identity": {
+      "frozen_server_runner_sha256": "d80b5f7df89d581495a5b18103247d648a357bdba3dc2fdc1b6559ed17b6a56f",
+      "git_tree": "f109ce862921df3823319cc5056c38b3b884a439"
+    },
+    "map_artifacts": [
+      {
+        "relative_path": "config.yml",
+        "sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e",
+        "size": 6933
+      },
+      {
+        "relative_path": "dataparser_transforms.json",
+        "sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e",
+        "size": 312
+      },
+      {
+        "relative_path": "nerfstudio_models/step-000029999.ckpt",
+        "sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d",
+        "size": 92344786
+      }
+    ],
+    "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+    "numpy": "1.26.4",
+    "official100_order": "0..99",
+    "official100_sha256": "1b236bba8173c8a37fb7752fd2e2f09fc569191d6820089759b4be547bd6c344",
+    "official100_trial_count": 100,
+    "physical_gpu_index": 1,
+    "protocol_raw_git_blob_file_count": 13,
+    "protocol_sha256": "e8ea8f3fda15ab81664829ea6f71fcb37f772ad613c13f61007856c16117791a",
+    "python": "3.10.20",
+    "python_executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+    "rho_seg": 0.0,
+    "robot_radius": 0.1,
+    "safety_margin": 0.01,
+    "schema_version": "L2_H1_FORMAL_COLLECTION_ENVIRONMENT_IDENTITY_V1",
+    "torch": "2.1.2+cu118",
+    "torch_cuda": "11.8",
+    "upstream_head": "84cf0734bafd52ddc7b100686fb0d1f509f1e356"
+  },
+  "environment_identity_sha256": "807eb4b5ca1eb0adf89a405c605a552fc646af278b61ae7218d0e94bd0513273",
+  "formal_capture_count_at_lock": 0,
+  "formal_data_role": "FORMAL_PROSPECTIVE_SHADOW_COHORT_V1",
+  "formal_intended_step_count_at_lock": 0,
+  "instrumentation_identity": {
+    "frozen_server_runner_sha256": "d80b5f7df89d581495a5b18103247d648a357bdba3dc2fdc1b6559ed17b6a56f",
+    "git_tree": "f109ce862921df3823319cc5056c38b3b884a439"
+  },
+  "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+  "official100_manifest_sha256": "1b236bba8173c8a37fb7752fd2e2f09fc569191d6820089759b4be547bd6c344",
+  "official100_sha256": "1b236bba8173c8a37fb7752fd2e2f09fc569191d6820089759b4be547bd6c344",
+  "one_trial_launcher_sha256": "0c5154e382d39582aa62cd72223753d74b5ced2027e4bc4088d5fd826180c7f6",
+  "outcome_blind_collection_only": true,
+  "outcome_blind_qc_file_sha256": "9e1f778a8eb39bb2299f5ca35d0ef6dc056df9c25b91a3185076660d92dbbc20",
+  "physical_gpu": 1,
+  "pre_data_counts": {
+    "formal_capture_count": 0,
+    "formal_intended_step_count": 0,
+    "formal_navigation_run_count": 0,
+    "formal_result_count": 0
+  },
+  "protocol_combined_sha256": "e8ea8f3fda15ab81664829ea6f71fcb37f772ad613c13f61007856c16117791a",
+  "protocol_sha256": "e8ea8f3fda15ab81664829ea6f71fcb37f772ad613c13f61007856c16117791a",
+  "python": "3.10.20",
+  "raw_artifact_manifest_builder_sha256": "dfbe6f44e0ada8533dce7846a2d2b70bb34cd14fffb0c03771c1d5d381d583c7",
+  "runner_file_sha256": "aa532f3b929787ec697b07f8f4a60b93d2ab924a753ba5be5f110eace1fa990c",
+  "schema_version": "L2_H1_COLLECTION_EXECUTION_LOCK_V1",
+  "scientific_analysis_authorized": false,
+  "task_script_sha256": {
+    "build_collection_lock.py": "f3db2393498c721cd4afe9cc22107f1964ebfaa2e17d98200a44b62f7c632d65",
+    "collect_formal_cohort.py": "aa532f3b929787ec697b07f8f4a60b93d2ab924a753ba5be5f110eace1fa990c",
+    "collection_common.py": "c97f47d56b9ce8147a5f36d49099dcf71ee985257fa737108b008cebd4384db8",
+    "freeze_collection_execution_lock.py": "0f20d9a748c6ddbc48c6f24200a6509cc3bfa919388682eb7d1297519c9bbebb",
+    "materialize_official100.py": "30c7318800006377fe5d1598e3aa20dc5de68dc7a8d506b484f06e60c48acd74",
+    "outcome_blind_qc.py": "9e1f778a8eb39bb2299f5ca35d0ef6dc056df9c25b91a3185076660d92dbbc20",
+    "raw_artifact_manifest.py": "dfbe6f44e0ada8533dce7846a2d2b70bb34cd14fffb0c03771c1d5d381d583c7",
+    "run_one_formal_trial.py": "0c5154e382d39582aa62cd72223753d74b5ced2027e4bc4088d5fd826180c7f6",
+    "server_preflight.py": "f0d9f56e80a45c35d5eb79efe99d60f48086c7cfad4e53fa7cba2d6781cc617d"
+  },
+  "torch": "2.1.2+cu118",
+  "upstream_PR100_head": "84cf0734bafd52ddc7b100686fb0d1f509f1e356",
+  "upstream_head": "84cf0734bafd52ddc7b100686fb0d1f509f1e356"
+}

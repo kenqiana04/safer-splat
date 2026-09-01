@@ -1,0 +1,6 @@
+{
+  "critical_blockers": [],
+  "recommended_case": "CASE_A_FORMAL_COLLECTION_LOCKED",
+  "review": "100 个 official trials 以固定 0..99 顺序串行执行，每个 trial 使用 fresh process，均为 attempt-0。协议锁、执行锁、环境与地图身份一致；100/100 strict blind QC 通过，六项完整率均为 1.0，聚合错误为 0。原始工件逐文件哈希可解析，FORMAL_COLLECTION_LOCK 可确定性复验，Git 中无 .jsonl 或完整日志。未发现 pre-data retry、post-data deviation 或执行锁漂移。",
+  "verdict": "PASS"
+}
