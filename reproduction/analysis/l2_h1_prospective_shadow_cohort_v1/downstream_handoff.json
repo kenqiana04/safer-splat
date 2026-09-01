@@ -1,0 +1,32 @@
+{
+  "analysis_case": "CASE_C_PRIMARY_NOT_ESTIMABLE",
+  "erratum_status": "PASS_CASE_C_AWARE_VALIDATOR_ERRATUM_V1",
+  "erratum_validation_result_sha256": "1b22e3ceb61890b36840fbcc2d235fbdde92ad127970ef16f312f30dc7dec193",
+  "erratum_validator_sha256": "8300fc2f02f720efb6aabbc758733ed8f472dd5572af16c2e81bb565164fdc0e",
+  "final_decision": "FREEZE_CASE_C_EVIDENCE_AND_AUTHORIZE_PRIMARY_REACHABILITY_DIAGNOSIS",
+  "final_status": "PASS_L2_H1_CASE_C_ANALYSIS_ERRATUM_AND_EVIDENCE_FREEZE_V1",
+  "formal_collection_lock_sha256": "c30adc48099e8d7b90c980d84389cc1fa693cc1f87d3fc519089efb7cb81b756",
+  "formal_rows": 14122,
+  "next_task_must_not_change": [
+    "formal analysis denominator",
+    "frozen protocol",
+    "frozen controller",
+    "frozen L1/L2 certifier",
+    "formal raw artifacts"
+  ],
+  "only_next_task": "DIAGNOSE_L2_H1_PRIMARY_REACHABILITY_V1",
+  "original_failed_check": "bootstrap_contract_exact",
+  "original_validator_sha256": "3b25337e38034c9c0e4b6f33253d430242cb4c4c1d2d9d88f552b4eca6179db2",
+  "post_reveal_evidence_lock_sha256": "a25172a98838d1e132ffc0f0a178029ead0f67dcf44b3ec634eb331c2113d1e4",
+  "primary_eligible_rows": 0,
+  "primary_ineligibility_observations": {
+    "l1_status_pass": 14122,
+    "l2_reached": 14122,
+    "l2_typed": 14122
+  },
+  "purpose": "Diagnose why no selected control reached the frozen L1-PASS/L2-evaluated primary cohort without rewriting this V1 result.",
+  "scientific_artifact_hash_changes": 0,
+  "scientific_result_unchanged": true,
+  "schema_version": "L2_H1_FORMAL_ANALYSIS_DOWNSTREAM_HANDOFF_V1",
+  "upstream_pr101_head": "fbd4f3744e8b6d0448644c00cd8fdb1e8295902d"
+}

@@ -1,0 +1,17 @@
+{
+  "analysis_contract_sha256": "4f4a8ae24af91a992216c86591a7ba63c3f1f278ccbc9df516b0d7f626126fce",
+  "claim_contract_sha256": "3b8513513fa242892790527fd2552c0d9e765ce2fc321897d47e37a7bab8d37a",
+  "combined_analysis_execution_sha256": "08cecef117031f599167ca944ba1ac9ac78da94a908a314ecf750729073e6d59",
+  "core_script_sha256": {
+    "analysis_common.py": "6ef574a018aaebb1594e5a67189f6cfcddad0b2c51c2115b97da07b998750265",
+    "analyze_primary_endpoint.py": "e92f5b8f1f9dda44f40f7dfefccbff430006024220c2f10d64a233904f7f4684",
+    "analyze_secondary_endpoints.py": "88d46f7327896a2523baafc4feb54efdf2b35991c1cc19c9e7f82e1ae38072a1",
+    "bootstrap_primary_by_trial.py": "2e8c79b78798d949f975b2b9892cced4dc39df81416d4216c7daf2b21b122c69",
+    "build_formal_analysis_table.py": "10a2a2b54f78db00aeb761dc39be4a1da39945253925d40659bc84af1f8f936c",
+    "run_formal_analysis.py": "e5db1d89955364a55d71ed0268cdc9915b0f375c8c4355168f843e3a18b40eed",
+    "validate_formal_analysis_v1.py": "3b25337e38034c9c0e4b6f33253d430242cb4c4c1d2d9d88f552b4eca6179db2"
+  },
+  "created_before_outcome_reveal": true,
+  "real_outcome_rows_read": 0,
+  "schema_version": "L2_H1_FORMAL_ANALYSIS_EXECUTION_LOCK_V1"
+}

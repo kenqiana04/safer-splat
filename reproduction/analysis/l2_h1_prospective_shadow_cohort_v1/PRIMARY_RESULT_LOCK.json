@@ -1,0 +1,29 @@
+{
+  "analysis_execution_lock_sha256": "08cecef117031f599167ca944ba1ac9ac78da94a908a314ecf750729073e6d59",
+  "collection_lock_sha256": "c30adc48099e8d7b90c980d84389cc1fa693cc1f87d3fc519089efb7cb81b756",
+  "input_commitment_sha256": "1f5061412b266a9e58ba35f868734cb5b8478b02cf11b1af0c794be5850e3bff",
+  "primary_result": {
+    "L2_UNKNOWN_RATE": null,
+    "N_L2_FAIL": 0,
+    "N_L2_PASS": 0,
+    "N_L2_UNKNOWN": 0,
+    "N_intended_control_steps": 14122,
+    "N_primary": 0,
+    "N_primary_eligible": 0,
+    "N_primary_ineligible": 14122,
+    "known_status_sensitivity": null,
+    "known_status_sensitivity_label": "SECONDARY_SENSITIVITY_ONLY",
+    "primary_eligibility_reason_counts": {
+      "l1_status_pass": 14122,
+      "l2_reached": 14122,
+      "l2_typed": 14122
+    },
+    "prospective_future_safety_signal_rate": null,
+    "schema_version": "L2_H1_FORMAL_PRIMARY_RESULT_V1",
+    "tri_state_algebra_pass": true
+  },
+  "primary_result_file_sha256": "0606c013a67b65581d3f45ffd4b982ad111f96d7c3836d09c9d2de5f26caca62",
+  "primary_result_sha256": "547747e07f9b2858466209775ee998d6ff974586ccd682b977b0872903bff989",
+  "protocol_sha256": "e8ea8f3fda15ab81664829ea6f71fcb37f772ad613c13f61007856c16117791a",
+  "schema_version": "L2_H1_FORMAL_PRIMARY_RESULT_LOCK_V1"
+}

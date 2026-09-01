@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "analysis_lock_before_reveal": true,
+    "bootstrap_contract_exact": false,
+    "candidate_contract_exact": true,
+    "claims_bounded": true,
+    "collection_lock_exact": true,
+    "collision_progress_analysis_absent": true,
+    "figures_from_compact_summaries": true,
+    "final_status_valid": true,
+    "formal_data_role_only": true,
+    "known_status_secondary_only": true,
+    "locked_analyzer_hashes_unchanged": true,
+    "pr101_exact_identity": true,
+    "primary_eligibility_and_algebra": true,
+    "primary_result_lock_valid": true,
+    "protocol_sha_exact": true,
+    "qa_exclusion_and_join_integrity": true,
+    "raw_formal_logs_git_zero": true,
+    "raw_manifest_exact": true,
+    "result_commitments_exact": true,
+    "secondary_endpoint_list_exact": true,
+    "unknown_in_primary_denominator": true,
+    "unlock_before_outcome_read": true
+  },
+  "failed_checks": [
+    "bootstrap_contract_exact"
+  ],
+  "pass": false,
+  "passed_check_count": 21,
+  "schema_version": "L2_H1_FORMAL_ANALYSIS_VALIDATION_RESULT_V1",
+  "validator": "FAIL_L2_H1_PROSPECTIVE_SHADOW_COHORT_ANALYSIS_V1_VALIDATION"
+}

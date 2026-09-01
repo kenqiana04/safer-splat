@@ -1,0 +1,7 @@
+{
+  "critical_blockers": [],
+  "next_task": "DIAGNOSE_L2_H1_PRIMARY_REACHABILITY_V1",
+  "review": "独立 erratum 只修正 validator 对冻结 BOOTSTRAP_NOT_ESTIMABLE 分支的接受语义；未复制其余21项检查。原 validator、原失败结果与揭盲科学工件均由 post-reveal lock 保留，hash变化为0。四个 synthetic fixture 覆盖两个合法终态和一个非法提前终止。未读取 raw rows、未重跑 bootstrap、未重新分析，下一任务正确限定为 primary reachability diagnosis。",
+  "scientific_artifact_hash_changes": 0,
+  "verdict": "PASS_CASE_C_AWARE_VALIDATOR_ERRATUM_REVIEW_V1"
+}

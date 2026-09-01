@@ -1,0 +1,70 @@
+{
+  "L2_SELECTED_REACH_RATE": 0.0,
+  "L2_UNKNOWN_RATE": null,
+  "L2_UNKNOWN_reason_counts": {},
+  "N_L2_UNKNOWN": 0,
+  "N_intended_control_steps": 14122,
+  "N_l2_reached_selected": 0,
+  "backend_usage": [],
+  "collision_progress_use": "RUN_CONTEXT_AND_IDENTITY_ONLY",
+  "data_role": "FORMAL_PROSPECTIVE_SHADOW_COHORT_V1",
+  "formal_logging_completeness": {
+    "capture_completeness": 1.0,
+    "join_completeness": 1.0,
+    "map_authority_completeness": 1.0,
+    "reachability_completeness": 1.0,
+    "selected_u_completeness": 1.0,
+    "shadow_result_completion": 1.0
+  },
+  "known_status_sensitivity": null,
+  "known_status_sensitivity_label": "SECONDARY_SENSITIVITY_ONLY",
+  "multi_candidate": {
+    "N_groups_PASS_AND_FAIL": 0,
+    "N_groups_status_disagreement": 0,
+    "N_multi_candidate_groups": 0,
+    "multi_candidate_prevalence": 0.0,
+    "status": "MULTI_CANDIDATE_ANALYSIS_NOT_ESTIMABLE",
+    "synthetic_candidate_generation_count": 0,
+    "u_des_is_native_alternative": false
+  },
+  "p_value_or_significance_test": false,
+  "per_trial_distribution": {
+    "IQR": null,
+    "denominator_positive_trial_count": 0,
+    "max": null,
+    "median": null,
+    "min": null,
+    "q1": null,
+    "q3": null,
+    "trials_with_at_least_1_FAIL": 0,
+    "trials_with_at_least_1_UNKNOWN": 0
+  },
+  "schema_version": "L2_H1_FORMAL_SECONDARY_ENDPOINTS_V1",
+  "secondary_endpoint_ids": [
+    "L2_UNKNOWN_RATE",
+    "L2_SELECTED_REACH_RATE",
+    "FORMAL_LOGGING_COMPLETENESS",
+    "PER_TRIAL_L1_PASS_L2_FAIL_DISTRIBUTION",
+    "BACKEND_USAGE_COUNTS",
+    "NATIVE_MULTI_CANDIDATE_OPPORTUNITY_AND_DISAGREEMENT",
+    "SELECTED_VS_NATIVE_NONSELECTED_STATUS"
+  ],
+  "selected_vs_native_nonselected": {
+    "causal_claim": false,
+    "native_nonselected_counts": {
+      "FAIL": 0,
+      "PASS": 0,
+      "UNKNOWN": 0
+    },
+    "native_nonselected_evaluated_count": 0,
+    "selected_counts": {
+      "FAIL": 0,
+      "PASS": 0,
+      "UNKNOWN": 0
+    },
+    "selection_efficacy_claim": false,
+    "status": "NOT_ESTIMABLE_NO_EVALUATED_NATIVE_NONSELECTED"
+  },
+  "synthetic_candidate_generation_count": 0,
+  "u_des_is_native_alternative": false
+}
