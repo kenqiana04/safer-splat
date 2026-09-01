@@ -1,0 +1,34 @@
+{
+  "analysis_execution_lock_sha": "08cecef117031f599167ca944ba1ac9ac78da94a908a314ecf750729073e6d59",
+  "canonical_analysis_table": {
+    "path": "/disk1/zlab/maintenance_records/l2_h1_prospective_shadow_cohort_v1/server_execution/analysis_v1/canonical_formal_analysis_table.jsonl",
+    "row_count": 14122,
+    "server_identity_verified": true,
+    "sha256": "8a0fd056f5cc1a598444e8b3c1dd1af494d302f1bb71df7bdb6e0c57547fc55c"
+  },
+  "collection_lock_sha": "c30adc48099e8d7b90c980d84389cc1fa693cc1f87d3fc519089efb7cb81b756",
+  "diagnosis_is_post_hoc": true,
+  "formal_trial_count": 100,
+  "frozen_L2_selected_reach": 0,
+  "frozen_N_intended": 14122,
+  "frozen_N_primary": 0,
+  "input_artifact_git_blob_sha256": {
+    "reproduction/analysis/l2_h1_prospective_shadow_cohort_v1/ANALYSIS_EXECUTION_LOCK.json": "2800ebe0aff078b83535cc5795f04155ffeb36c8eee5adf014666098e8d6b8c4",
+    "reproduction/analysis/l2_h1_prospective_shadow_cohort_v1/FINAL_CASE_DECISION.json": "d91ca6601d067d2558c09b19a28facbb47d7cc83f40c269e58dc690a6649535f",
+    "reproduction/analysis/l2_h1_prospective_shadow_cohort_v1/POST_REVEAL_EVIDENCE_LOCK.json": "a25172a98838d1e132ffc0f0a178029ead0f67dcf44b3ec634eb331c2113d1e4",
+    "reproduction/analysis/l2_h1_prospective_shadow_cohort_v1/formal_analysis_table_manifest.json": "04f15ef1cd250c9c6d7d7433306778cbf7d974e64a84c3946135b7a8a1f91daf",
+    "reproduction/analysis/l2_h1_prospective_shadow_cohort_v1/primary_result.json": "0606c013a67b65581d3f45ffd4b982ad111f96d7c3836d09c9d2de5f26caca62",
+    "reproduction/analysis/l2_h1_prospective_shadow_cohort_v1/secondary_endpoints.json": "366f8ad399130204ebb0257cf83d26e9de38cecf10670a2031667d70d105355b",
+    "reproduction/collection/l2_h1_prospective_shadow_cohort_v1/FORMAL_COLLECTION_LOCK.json": "c30adc48099e8d7b90c980d84389cc1fa693cc1f87d3fc519089efb7cb81b756",
+    "reproduction/protocol/l2_h1_prospective_shadow_cohort_v1/formal_analysis_contract.json": "4f4a8ae24af91a992216c86591a7ba63c3f1f278ccbc9df516b0d7f626126fce"
+  },
+  "post_reveal_evidence_lock_sha": "a25172a98838d1e132ffc0f0a178029ead0f67dcf44b3ec634eb331c2113d1e4",
+  "post_reveal_evidence_lock_worktree_sha256": "7e7500c3b4d0848cde707c7ecdf366fe924dd0aa318ef8529da6f74d384860af",
+  "protocol_sha": "e8ea8f3fda15ab81664829ea6f71fcb37f772ad613c13f61007856c16117791a",
+  "schema_version": "L2_H1_PRIMARY_REACHABILITY_DIAGNOSIS_INPUT_LOCK_V1",
+  "scientific_result_mutation_authority": false,
+  "upstream_PR102_base": "collect-l2-h1-prospective-shadow-cohort-v1",
+  "upstream_PR102_branch": "analyze-l2-h1-prospective-shadow-cohort-v1",
+  "upstream_PR102_head": "80a7e691937f9e45b68e1c606befa03ff0a12553",
+  "upstream_PR102_state": "OPEN_DRAFT"
+}

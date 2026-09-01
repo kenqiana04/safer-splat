@@ -1,0 +1,23 @@
+{
+  "diagnostic_fields": {
+    "data_role": "PRESENT_14122",
+    "l1_observation_source": "PRESENT_14122",
+    "l1_status": "PRESENT_14122",
+    "l2_reached": "PRESENT_14122",
+    "l2_status": "PRESENT_BUT_TYPED_COUNT_ZERO",
+    "logging_qc_complete": "PRESENT_14122",
+    "map_authority_valid": "PRESENT_14122",
+    "payload_join_identity_valid": "PRESENT_14122",
+    "selected_candidate_committed": "PRESENT_14122",
+    "selected_candidate_role": "PRESENT_14122"
+  },
+  "l1_reason_fields": "PRESENT_IN_CANONICAL_SCHEMA_BUT_VALUE_DISTRIBUTION_NOT_RETAINED_IN_COMPACT_RECOVERY_OUTPUT",
+  "reachability_reason": {
+    "field_name": "l2_reachability_reason",
+    "value_distribution": {
+      "L0_BLOCKED": 14122
+    }
+  },
+  "schema_version": "L2_H1_REACHABILITY_DIAGNOSTIC_FIELD_INVENTORY_V1",
+  "source": "value distribution from single-scan compact output; exact field name confirmed by bounded canonical-writer trace"
+}

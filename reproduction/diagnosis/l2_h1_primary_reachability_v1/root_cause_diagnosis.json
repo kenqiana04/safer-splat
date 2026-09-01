@@ -1,0 +1,26 @@
+{
+  "case": "R1",
+  "collision_progress_efficacy_analysis": false,
+  "confidence": "HIGH_FOR_GATE_CAUSE_MEDIUM_FOR_L0_STATUS_BREAKDOWN",
+  "data_evidence": {
+    "N_L1_PASS": 0,
+    "N_L1_status_NOT_REACHED": 14122,
+    "N_l2_reached_true": 0,
+    "N_l2_typed": 0,
+    "earliest_universal_blocking_gate": "G6",
+    "l2_reachability_reason": {
+      "L0_BLOCKED": 14122
+    }
+  },
+  "exact_l0_nonpass_status_mix": "NOT_ESTIMABLE_FROM_PRESERVED_COMPACT_RECOVERY_OUTPUT",
+  "historical_bridge_required": false,
+  "new_experiment_count": 0,
+  "only_next_task": "DIAGNOSE_L1_SHADOW_CERTIFIER_SEMANTICS_V1",
+  "root_cause_class": "D1_L1_ZERO_PASS_SUPPORT",
+  "root_statement": "All 14,122 formal result records carry l1_status=NOT_REACHED and l2_reachability_reason=L0_BLOCKED; the frozen adapter blocks before calling L1 or L2, so G6 has zero support and N_primary is necessarily zero.",
+  "scientific_result_reinterpretation": false,
+  "subcause": "UPSTREAM_L0_BLOCKED_BEFORE_L1_CERTIFIER_EXECUTION",
+  "subcause_evidence": "ReadOnlyFrozenCertifierAdapter.evaluate writes L1/L2 NOT_REACHED with L0_BLOCKED whenever L0 is not PASS; the compact dependency count is 14,122/14,122.",
+  "subcause_limit": "The single-scan compact outputs do not distinguish how many L0 results were FAIL versus UNKNOWN.",
+  "upstream_scientific_artifact_mutation_count": 0
+}

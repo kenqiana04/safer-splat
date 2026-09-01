@@ -1,0 +1,11 @@
+gate_id,field,frozen_condition,overlapping_unmet_count,first_failing_count,cumulative_support_after_gate
+G1,data_role,data_role=FORMAL_PROSPECTIVE_SHADOW_COHORT_V1,0,0,14122
+G2,logging_qc_complete,logging_qc_complete=true,0,0,14122
+G3,selected_candidate_role,selected_candidate_role=SELECTED_EXECUTED_CONTROL,0,0,14122
+G4,selected_candidate_committed,selected_candidate_committed=true,0,0,14122
+G5,l1_observation_source,l1_observation_source=SHADOW_RECOMPUTED_FROZEN_CERTIFIER,0,0,14122
+G6,l1_status,l1_status=PASS,14122,14122,0
+G7,l2_reached,l2_reached=true,14122,0,0
+G8,l2_status,"l2_status in {PASS,FAIL,UNKNOWN}",14122,0,0
+G9,map_authority_valid,map_authority_valid=true,0,0,0
+G10,payload_join_identity_valid,payload_join_identity_valid=true,0,0,0

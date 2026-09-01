@@ -1,0 +1,7 @@
+{
+  "confidence": "HIGH_FOR_D1_AND_L0_BLOCKED_BRANCH",
+  "critical_blockers": [],
+  "recommended_next_task": "DIAGNOSE_L1_SHADOW_CERTIFIER_SEMANTICS_V1",
+  "root_cause_class": "D1_L1_ZERO_PASS_SUPPORT",
+  "verdict": "PASS_REACHABILITY_DIAGNOSIS_REVIEW_V1：漏斗严格按G1–G10，14,122条均首败于G6；result record与L2 evaluation已分开。数据直接给出l1_status=NOT_REACHED、l2_reached=false、reason=L0_BLOCKED，源码证明该分支不调用L1/L2。未重解释V1、未读raw row、未运行实验。L0 FAIL/UNKNOWN细分未由compact保留，应在下一只读语义任务中核验。"
+}

@@ -1,0 +1,66 @@
+{
+  "N_formal_result_records": 14122,
+  "N_l2_status_typed": 0,
+  "N_primary": 0,
+  "cumulative_support": {
+    "G1": 14122,
+    "G10": 0,
+    "G2": 14122,
+    "G3": 14122,
+    "G4": 14122,
+    "G5": 14122,
+    "G6": 0,
+    "G7": 0,
+    "G8": 0,
+    "G9": 0
+  },
+  "first_failure_algebra": 14122,
+  "first_failures": {
+    "G1": 0,
+    "G10": 0,
+    "G2": 0,
+    "G3": 0,
+    "G4": 0,
+    "G5": 0,
+    "G6": 14122,
+    "G7": 0,
+    "G8": 0,
+    "G9": 0
+  },
+  "formal_result_record_semantics": "one canonical joined row exists for each frozen formal result record",
+  "formal_trial_count": 100,
+  "l1_observation_source": {
+    "SHADOW_RECOMPUTED_FROZEN_CERTIFIER": 14122
+  },
+  "l1_pass_conditional": {
+    "L1_PASS": 0,
+    "l2_reached_false": 0,
+    "l2_reached_missing_or_invalid": 0,
+    "l2_reached_true": 0,
+    "l2_status_typed": 0,
+    "status": "L2_CONDITIONAL_REACHABILITY_AFTER_L1_PASS_NOT_OBSERVABLE"
+  },
+  "l1_status": {
+    "NOT_REACHED": 14122
+  },
+  "l2_reach": {
+    "false": 14122,
+    "missing_or_invalid": 0,
+    "true": 0
+  },
+  "overlapping_unmet": {
+    "G1": 0,
+    "G10": 0,
+    "G2": 0,
+    "G3": 0,
+    "G4": 0,
+    "G5": 0,
+    "G6": 14122,
+    "G7": 14122,
+    "G8": 14122,
+    "G9": 0
+  },
+  "result_record_is_not_equivalent_to_l2_evaluation": true,
+  "row_count": 14122,
+  "streaming_source": "single canonical scan; JSON recovered from already-written compact CSVs after a post-scan packaging error"
+}
