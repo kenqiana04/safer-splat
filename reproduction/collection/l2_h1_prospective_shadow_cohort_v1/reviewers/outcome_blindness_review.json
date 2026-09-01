@@ -1,0 +1,6 @@
+{
+  "critical_blockers": [],
+  "recommended_case": "CASE_A_FORMAL_COLLECTION_LOCKED",
+  "review": "采集与收口仅检查记录存在性、类型、关联键、完整率和工件哈希；未汇总 L2 PASS/FAIL/UNKNOWN，未计算 primary endpoint、置信区间或 secondary scientific outcomes。停止/重试不依赖 outcome，controller 与 candidate selection 未改变，intervention 和 replacement 均为 0。科学结果仅以有序 artifact commitment 锁定，分析仍被隔离到下一独立任务。",
+  "verdict": "PASS"
+}

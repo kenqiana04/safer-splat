@@ -1,0 +1,53 @@
+{
+  "controller_identity": {
+    "run_py_git_blob": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+    "run_py_sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+    "runtime_baseline_commit": "7d48bf6c3b8932aa65d851c3cd70404404453cb3"
+  },
+  "created_before_first_formal_observation": true,
+  "cuda_device_name": "NVIDIA GeForce RTX 4090",
+  "cuda_visible_devices": "1",
+  "dt": 0.05,
+  "formal_capture_count": 0,
+  "formal_intended_step_count": 0,
+  "formal_navigation_run_count": 0,
+  "formal_result_count": 0,
+  "instrumentation_identity": {
+    "frozen_server_runner_sha256": "d80b5f7df89d581495a5b18103247d648a357bdba3dc2fdc1b6559ed17b6a56f",
+    "git_tree": "f109ce862921df3823319cc5056c38b3b884a439"
+  },
+  "map_artifacts": [
+    {
+      "relative_path": "config.yml",
+      "sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e",
+      "size": 6933
+    },
+    {
+      "relative_path": "dataparser_transforms.json",
+      "sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e",
+      "size": 312
+    },
+    {
+      "relative_path": "nerfstudio_models/step-000029999.ckpt",
+      "sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d",
+      "size": 92344786
+    }
+  ],
+  "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+  "numpy": "1.26.4",
+  "official100_order": "0..99",
+  "official100_sha256": "1b236bba8173c8a37fb7752fd2e2f09fc569191d6820089759b4be547bd6c344",
+  "official100_trial_count": 100,
+  "physical_gpu_index": 1,
+  "protocol_raw_git_blob_file_count": 13,
+  "protocol_sha256": "e8ea8f3fda15ab81664829ea6f71fcb37f772ad613c13f61007856c16117791a",
+  "python": "3.10.20",
+  "python_executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python3.10",
+  "rho_seg": 0.0,
+  "robot_radius": 0.1,
+  "safety_margin": 0.01,
+  "schema_version": "L2_H1_FORMAL_COLLECTION_ENVIRONMENT_IDENTITY_V1",
+  "torch": "2.1.2+cu118",
+  "torch_cuda": "11.8",
+  "upstream_head": "84cf0734bafd52ddc7b100686fb0d1f509f1e356"
+}
