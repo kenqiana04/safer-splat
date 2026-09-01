@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "canonical_identity_and_counts": true,
+    "first_failure_algebra": true,
+    "frozen_gate_contract_exact": true,
+    "frozen_identity_fields_exact": true,
+    "gate_csv_exact": true,
+    "input_git_blob_identities_exact": true,
+    "l1_distribution_complete": true,
+    "l2_reach_distribution_complete": true,
+    "no_collision_progress_efficacy": true,
+    "no_new_experiment": true,
+    "no_scientific_runtime_mutation": true,
+    "raw_logs_not_committed": true,
+    "record_reached_typed_separated": true,
+    "root_cause_supported": true,
+    "scientific_result_not_reinterpreted": true,
+    "task_local_changes_only": true,
+    "upstream_identity_exact": true
+  },
+  "failed_checks": [],
+  "pass": true,
+  "schema_version": "L2_H1_PRIMARY_REACHABILITY_DIAGNOSIS_VALIDATION_RESULT_V1",
+  "validator": "PASS_L2_H1_PRIMARY_REACHABILITY_DIAGNOSIS_V1_VALIDATION"
+}

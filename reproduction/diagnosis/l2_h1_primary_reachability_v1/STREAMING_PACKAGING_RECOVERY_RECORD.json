@@ -1,0 +1,17 @@
+{
+  "canonical_streaming_scan_count": 1,
+  "compact_outputs_written_before_wrapper_error": [
+    "gate_failure_counts.csv",
+    "l1_status_distribution.csv",
+    "l2_reachability_distribution.csv",
+    "gate_dependency_table.csv"
+  ],
+  "error": "TypeError: Path.write_text() got an unexpected keyword argument 'newline' on the server Python version",
+  "raw_rows_copied_to_git": 0,
+  "raw_rows_printed": 0,
+  "recovery_input": "FOUR_COMPACT_CSV_OUTPUTS_ONLY",
+  "recovery_required_canonical_reread": false,
+  "schema_version": "L2_H1_REACHABILITY_STREAMING_PACKAGING_RECOVERY_V1",
+  "scientific_reanalysis_performed": false,
+  "script_portability_fix": "write JSON through Path.open(newline='\\n') without rerunning the canonical scan"
+}

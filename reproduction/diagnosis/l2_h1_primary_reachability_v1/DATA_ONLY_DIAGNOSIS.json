@@ -1,0 +1,17 @@
+{
+  "conditional_L2_after_L1_PASS": "L2_CONDITIONAL_REACHABILITY_AFTER_L1_PASS_NOT_OBSERVABLE",
+  "data_only_root_statement": "14122 -> G6 l1_status=PASS -> downstream L2 support = 0 -> N_primary=0",
+  "downstream_zero_support_consequence": "G6 cumulative support is zero; therefore G7-G10 and N_primary have zero support",
+  "earliest_universal_blocking_gate": "G6",
+  "earliest_universal_blocking_gate_count": 14122,
+  "first_failure_algebra": {
+    "N_primary": 0,
+    "first_failing_gate_total": 14122,
+    "row_count": 14122,
+    "valid": true
+  },
+  "source_trace_used": false,
+  "whether_L1_PASS_exists": false,
+  "whether_L2_reached_exists": false,
+  "whether_typed_L2_exists": false
+}
