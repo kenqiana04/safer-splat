@@ -1,0 +1,12 @@
+{
+  "diagnosis_is_post_hoc": true,
+  "frozen_case_preserved": "CASE_C_PRIMARY_NOT_ESTIMABLE",
+  "historical_bridge": "NOT_RUN_NOT_NECESSARY",
+  "only_next_task": "DIAGNOSE_L0_START_SAFE_FAILURE_SEMANTICS_V1",
+  "required_next_scope": "Read-only diagnosis of why the frozen current-state map query returned typed FAIL for all 14,122 committed steps; do not repair, rerun official100, or reinterpret V1.",
+  "root_class": "L0-S2_TRUE_L0_FAIL_SUPPORT",
+  "routing_correction_from_pr103": "DIAGNOSE_L1_SHADOW_CERTIFIER_SEMANTICS_V1 was not executable because L1 execution count is zero; L0 is the first reached diagnostic stage.",
+  "runtime_mutation_authority": false,
+  "scientific_result_mutation_authority": false,
+  "upstream_pr103_head": "0b8e38e584c112eb778208e5c5933deb6adb23d0"
+}

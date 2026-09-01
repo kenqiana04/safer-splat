@@ -1,0 +1,14 @@
+{
+  "controller_authority_gate": "NOT_REQUIRED",
+  "controller_and_shadow_gate_are_same_contract": false,
+  "evidence_files": [
+    "reproduction/design/l2_h1_on_policy_shadow_observation_v1/ON_POLICY_SHADOW_OBSERVATION_PROTOCOL_V1.md:11-27",
+    "reproduction/design/l2_h1_on_policy_shadow_observation_v1/CONTROL_FLOW_OBSERVATION_SEAM_AUDIT.md:24-34",
+    "reproduction/instrumentation/l2_h1_on_policy_shadow_instrumentation_v1/frozen_certifier_adapter.py:72-110",
+    "reproduction/instrumentation/l2_h1_on_policy_shadow_instrumentation_v1/shadow_worker.py:49-82"
+  ],
+  "implementation_behavior": "after the controller has committed u_k, the zero-authority worker evaluates L0; FAIL or UNKNOWN prevents shadow L1/L2 evaluation but cannot change the committed action or future controller path",
+  "shadow_observation_gate": "REQUIRED",
+  "spec_conformance": "CONFORMANT",
+  "spec_interpretation": "the frozen protocol defines a worker-side reachability state machine and a primary cohort conditioned on frozen prerequisites; it separately forbids every shadow result from feeding back to the controller"
+}

@@ -1,0 +1,27 @@
+{
+  "analysis_execution_lock_sha": "08cecef117031f599167ca944ba1ac9ac78da94a908a314ecf750729073e6d59",
+  "collection_lock_sha": "c30adc48099e8d7b90c980d84389cc1fa693cc1f87d3fc519089efb7cb81b756",
+  "compact_input_git_blob_sha256": {
+    "DATA_ONLY_DIAGNOSIS.json": "154357d523126f2402ff63f4d77b65b4a000cf2ee74f010a532eec5288e803f5",
+    "diagnostic_field_inventory.json": "0769f00f57b51d78840c769444d6a6efec99aa4ec0395bb8b7e0f9a47ee94a95",
+    "downstream_handoff.json": "1f99cd16744232475edfd0d1d368808d8848223375e24847877a8443fe089094",
+    "minimal_code_path.md": "a06e2e0c5296c47965bc21b1492187e62367f5896bbcd1589575c463dc3fafb7",
+    "reachability_funnel.json": "6895afbeca41f7dd0509d81cba15fa0479ca5a611b99cba4ce83750dc86300f3",
+    "root_cause_diagnosis.json": "0e26f53f39ad0779d2661a8f3b404c4903989a5a6d4699be76f71f4e8d3c0ad5"
+  },
+  "diagnosis_is_post_hoc": true,
+  "formal_row_count": 14122,
+  "frozen_L0_BLOCKED": 14122,
+  "frozen_L1_execution_count": 0,
+  "frozen_L2_execution_count": 0,
+  "post_reveal_evidence_lock_sha": "a25172a98838d1e132ffc0f0a178029ead0f67dcf44b3ec634eb331c2113d1e4",
+  "pr103_branch": "diagnose-l2-h1-primary-reachability-v1",
+  "pr103_head_sha": "0b8e38e584c112eb778208e5c5933deb6adb23d0",
+  "pr103_input_lock_sha": "af42fc6551ef426b1e889a56a45fc3d3e20bf8572ea53e5898958a7c8b4730a5",
+  "pr103_state": "OPEN_DRAFT",
+  "protocol_sha": "e8ea8f3fda15ab81664829ea6f71fcb37f772ad613c13f61007856c16117791a",
+  "runtime_mutation_authority": false,
+  "schema_version": "L0_SHADOW_CERTIFIER_SEMANTICS_DIAGNOSIS_INPUT_LOCK_V1",
+  "scientific_result_mutation_authority": false,
+  "trial_count": 100
+}

@@ -1,0 +1,22 @@
+{
+  "candidate_dependent": false,
+  "evaluated_for_every_committed_shadow_payload": true,
+  "fail_condition": "formal adapter obtains FINITE query status and float(query.h) < 0.0",
+  "formal_adapter_semantics": "direct current-state represented-map feasibility query",
+  "full_frozen_interface_reference": "certify_current_feasibility classifies map snapshot mismatch, UNKNOWN/NONFINITE/ERROR query states, h<0 infeasibility, and optional candidate residual; the formal adapter uses only the direct current-map-query subset",
+  "immediate_segment_checked": false,
+  "l0_role": "CURRENT_STATE_MAP_FEASIBILITY_ADMISSION_OBSERVATION",
+  "map_authority_dependency": "provider query is bound to the frozen map authority id and FULL query scope",
+  "pass_condition": "formal adapter obtains FINITE query status and float(query.h) >= 0.0",
+  "repair_attempted": false,
+  "robot_radius_margin_dependency": "NOT_ESTABLISHED_FROM_THE_DIRECT_L0_CLOSURE",
+  "source_evidence": [
+    "reproduction/equivalence/l2_h1_shadow_instrumentation_off_vs_on_v1/server_run_one.py:148-170",
+    "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/current_feasibility_certificate.py:8-23",
+    "reproduction/design/l2_h1_on_policy_shadow_observation_v1/CONTROL_FLOW_OBSERVATION_SEAM_AUDIT.md:24-34"
+  ],
+  "start_safe_admission_relation": "L0 is the frozen current-feasibility admission stage; the formal closure performs no repair",
+  "state_checked": "p_k current position from the immutable committed-step payload",
+  "unknown_condition": "formal adapter obtains a query status other than FINITE and preserves query.reason_code",
+  "uses_map_current_state_query": true
+}
