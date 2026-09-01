@@ -1,0 +1,26 @@
+{
+  "checks": {
+    "authority_gating_has_spec_basis": true,
+    "compact_csv_matches_summary": true,
+    "compact_inputs_exact": true,
+    "frozen_14122_l0_blocked_fact": true,
+    "frozen_lock_fields_exact": true,
+    "l0_observability_evidence": true,
+    "l0_semantics_source_bounded": true,
+    "l0_status_accounting_exact": true,
+    "no_new_experiment": true,
+    "no_raw_logs_committed": true,
+    "no_upstream_or_runtime_mutation": true,
+    "pr103_input_lock_exact": true,
+    "root_class_consistent": true,
+    "single_streaming_scan": true,
+    "status_mapping_has_source_basis": true,
+    "task_local_changes_only": true,
+    "upstream_identity_exact": true,
+    "v1_scientific_result_not_reinterpreted": true
+  },
+  "failed_checks": [],
+  "pass": true,
+  "schema_version": "L0_SHADOW_CERTIFIER_SEMANTICS_DIAGNOSIS_VALIDATION_RESULT_V1",
+  "validator": "PASS_L0_SHADOW_CERTIFIER_SEMANTICS_DIAGNOSIS_V1_VALIDATION"
+}

@@ -1,0 +1,33 @@
+{
+  "adapter_accepts": [
+    "PASS",
+    "FAIL",
+    "UNKNOWN"
+  ],
+  "adapter_pass_condition": "l0['status'] == 'PASS'",
+  "all_nonpass_collapsed_to_downstream_L0_BLOCKED": true,
+  "boolean_or_safe_admissible_token_compared_to_PASS": false,
+  "enum_string_status_mismatch": false,
+  "exception_default_to_nonpass": false,
+  "exception_semantics": "provider/query or conversion exceptions escape evaluation and become worker failures; they are not silently mapped to FAIL or UNKNOWN",
+  "formal_result_retains_pre_collapse_l0_status": true,
+  "mapping_result": "PASS_MAPPING_CORRECT_NO_STATUS_MAPPING_DEFECT",
+  "raw_l0_return_type": "dict with string status and string reason",
+  "raw_query_status_extraction": "getattr(query.status, 'value', str(query.status))",
+  "raw_query_status_finite_token": "FINITE",
+  "source_evidence": [
+    {
+      "condition": "status != 'FINITE' -> UNKNOWN; otherwise h >= 0.0 -> PASS, h < 0.0 -> FAIL",
+      "file": "reproduction/equivalence/l2_h1_shadow_instrumentation_off_vs_on_v1/server_run_one.py",
+      "function": "build_real_frozen_adapter.l0",
+      "lines": "165-170"
+    },
+    {
+      "condition": "accept exact tri-state; only PASS reaches L1; persist l0_status before downstream collapse",
+      "file": "reproduction/instrumentation/l2_h1_on_policy_shadow_instrumentation_v1/frozen_certifier_adapter.py",
+      "function": "ReadOnlyFrozenCertifierAdapter.evaluate",
+      "lines": "72-110"
+    }
+  ],
+  "status_mapping_mismatch_detected": false
+}

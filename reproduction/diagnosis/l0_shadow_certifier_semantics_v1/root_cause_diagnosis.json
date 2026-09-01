@@ -1,0 +1,23 @@
+{
+  "actual_l0_reason_distribution": {
+    "FROZEN_L0_CURRENT_MAP_QUERY": 14122
+  },
+  "actual_l0_status_distribution": {
+    "FAIL": 14122,
+    "OTHER": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "causal_chain": "14122 committed steps -> 14122 typed L0 FAIL outcomes from the frozen current-map query -> L0_BLOCKED -> L1/L2 NOT_REACHED -> N_primary=0",
+  "confidence": "HIGH_FOR_L0_S2_CLASS_MEDIUM_FOR_DEEPER_FAIL_SEMANTICS",
+  "deeper_failure_semantics": "NOT_ESTABLISHED_BECAUSE_RAW_QUERY_H_AND_TYPED_FAILURE_TAXONOMY_WERE_NOT_LOGGED",
+  "historical_bridge": "NOT_RUN_NOT_NECESSARY",
+  "mapping_defect": false,
+  "new_experiment_count": 0,
+  "only_next_task": "DIAGNOSE_L0_START_SAFE_FAILURE_SEMANTICS_V1",
+  "root_class": "L0-S2_TRUE_L0_FAIL_SUPPORT",
+  "runtime_mutation_count": 0,
+  "scientific_v1_reinterpretation": false,
+  "streaming_scan_count": 1,
+  "upstream_artifact_mutation_count": 0
+}
