@@ -1,0 +1,19 @@
+{
+  "affected_check": "bootstrap_contract_exact",
+  "analysis_execution_lock_sha256": "08cecef117031f599167ca944ba1ac9ac78da94a908a314ecf750729073e6d59",
+  "bootstrap_result": {
+    "bootstrap_total_draws": 100000,
+    "bootstrap_valid_replicates": 0,
+    "bootstrap_zero_denominator_draws": 100000,
+    "status": "BOOTSTRAP_NOT_ESTIMABLE"
+  },
+  "core_file_modified_after_reveal": false,
+  "failure_class": "LOCKED_VALIDATOR_CONTRACT_BUG_DISCOVERED_AFTER_OUTCOME_REVEAL",
+  "frozen_protocol_rule": "Stop after maximum_total_draws=100000 and return BOOTSTRAP_NOT_ESTIMABLE when 10000 valid replicates cannot be obtained.",
+  "locked_validator_rule": "Unconditionally requires bootstrap_valid_replicates == 10000.",
+  "locked_validator_sha256": "3b25337e38034c9c0e4b6f33253d430242cb4c4c1d2d9d88f552b4eca6179db2",
+  "passed_validator_checks": 21,
+  "remediation_applied": false,
+  "schema_version": "L2_H1_FORMAL_ANALYSIS_VALIDATION_BLOCKER_V1",
+  "task_closeout_status": "BLOCKED_AFTER_REVEAL_BY_LOCKED_VALIDATOR_CONTRACT_BUG"
+}

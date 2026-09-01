@@ -1,0 +1,20 @@
+{
+  "L2_UNKNOWN_RATE": null,
+  "N_L2_FAIL": 0,
+  "N_L2_PASS": 0,
+  "N_L2_UNKNOWN": 0,
+  "N_intended_control_steps": 14122,
+  "N_primary": 0,
+  "N_primary_eligible": 0,
+  "N_primary_ineligible": 14122,
+  "known_status_sensitivity": null,
+  "known_status_sensitivity_label": "SECONDARY_SENSITIVITY_ONLY",
+  "primary_eligibility_reason_counts": {
+    "l1_status_pass": 14122,
+    "l2_reached": 14122,
+    "l2_typed": 14122
+  },
+  "prospective_future_safety_signal_rate": null,
+  "schema_version": "L2_H1_FORMAL_PRIMARY_RESULT_V1",
+  "tri_state_algebra_pass": true
+}

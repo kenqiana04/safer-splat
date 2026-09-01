@@ -1,0 +1,18 @@
+{
+  "bootstrap_ci_high": null,
+  "bootstrap_ci_low": null,
+  "bootstrap_point_estimate_check": null,
+  "bootstrap_total_draws": 100000,
+  "bootstrap_valid_replicates": 0,
+  "bootstrap_zero_denominator_draws": 100000,
+  "ci_method": "95_PERCENT_PERCENTILE_LINEAR",
+  "cluster_count": 100,
+  "cluster_unit": "formal_trial",
+  "clusters_per_replicate": 100,
+  "p_value_or_significance_test": false,
+  "resampling": "WITH_REPLACEMENT",
+  "rng_seed": 20260831,
+  "schema_version": "L2_H1_FORMAL_PRIMARY_TRIAL_CLUSTER_BOOTSTRAP_V1",
+  "status": "BOOTSTRAP_NOT_ESTIMABLE",
+  "step_iid_assumption": false
+}

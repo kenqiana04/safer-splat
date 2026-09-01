@@ -1,0 +1,22 @@
+{
+  "analysis_case": "CASE_C_PRIMARY_NOT_ESTIMABLE",
+  "formal_collection_lock_sha256": "c30adc48099e8d7b90c980d84389cc1fa693cc1f87d3fc519089efb7cb81b756",
+  "formal_rows": 14122,
+  "next_task_must_not_change": [
+    "formal analysis denominator",
+    "frozen protocol",
+    "frozen controller",
+    "frozen L1/L2 certifier",
+    "formal raw artifacts"
+  ],
+  "only_next_task": "DIAGNOSE_L2_H1_PRIMARY_REACHABILITY_V1",
+  "primary_eligible_rows": 0,
+  "primary_ineligibility_observations": {
+    "l1_status_pass": 14122,
+    "l2_reached": 14122,
+    "l2_typed": 14122
+  },
+  "purpose": "Diagnose why no selected control reached the frozen L1-PASS/L2-evaluated primary cohort without rewriting this V1 result.",
+  "schema_version": "L2_H1_FORMAL_ANALYSIS_DOWNSTREAM_HANDOFF_V1",
+  "upstream_pr101_head": "fbd4f3744e8b6d0448644c00cd8fdb1e8295902d"
+}

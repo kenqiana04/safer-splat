@@ -1,0 +1,10 @@
+{
+  "critical_blockers": [],
+  "major_interpretation_risks": [
+    "不得把零 primary denominator 误读为零风险、零 FAIL 率或方法阴性结论。",
+    "100000 次 bootstrap 抽样均为零分母，因此不能报告区间，也不能把 control step 当作 iid Bernoulli。"
+  ],
+  "maximum_supported_claim": "正式 100-trial cohort 完整且 join 有效，但没有 row 同时满足冻结的 L1 PASS、L2 reached 与 typed L2 status 条件；primary prevalence 和 cluster uncertainty 均不可估计。",
+  "recommended_case": "CASE_C_PRIMARY_NOT_ESTIMABLE",
+  "verdict": "PASS_METHODS_WITH_NON_ESTIMABLE_PRIMARY"
+}

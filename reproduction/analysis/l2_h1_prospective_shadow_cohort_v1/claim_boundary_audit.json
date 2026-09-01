@@ -1,0 +1,26 @@
+{
+  "causal_claim": false,
+  "collision_or_progress_analysis": false,
+  "controller_authority": false,
+  "deployment_readiness_claim": false,
+  "formal_runtime_metric_count": 0,
+  "maximum_supported_claim": "The frozen prospective cohort was complete and join-valid, but no selected control reached the pre-registered primary L1-PASS/L2-evaluated cohort; therefore primary signal prevalence and uncertainty are not estimable.",
+  "p_value_computed": false,
+  "p_value_or_significance_test": false,
+  "prohibited_claim_hits": [],
+  "prohibited_claims": [
+    "collision_prevention",
+    "safety_improvement",
+    "controller_efficacy",
+    "intervention_success",
+    "recursive_feasibility",
+    "safe_stopping",
+    "physical_world_guarantee",
+    "real_time_guarantee",
+    "deployment_readiness",
+    "Core_V2_superiority",
+    "counterfactual_avoided_collision"
+  ],
+  "schema_version": "L2_H1_FORMAL_CLAIM_BOUNDARY_AUDIT_V1",
+  "shadow_only": true
+}
