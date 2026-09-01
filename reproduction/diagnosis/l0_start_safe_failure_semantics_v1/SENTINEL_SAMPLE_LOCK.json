@@ -1,0 +1,164 @@
+{
+  "effective_radius_m": 0.11,
+  "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+  "map_config_relative_path": "outputs/stonehenge/splatfacto/2024-09-11_100724/config.yml",
+  "map_config_sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e",
+  "query_implementation_hash": "b9cb380e3c5e875cc1fd503fd082eb9d9a69a90680ce680e645c13a32ef0e918",
+  "query_source_sha256": {
+    "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/adapters/gaussian_barrier_adapter.py": "1de0d3a31c8babe7c0bab5f388360d7f024f729cf5d8670dfbef9800f40cf3d1",
+    "splat/distances.py": "57a49cb6893a65789282e92f37a82f134d2a34ab7e296d33fc5f4cd6fab45f08",
+    "splat/gsplat_utils.py": "fccc3125431122c58bd7901048d0e66e6b6c7fdeafc066f014d9d7df3c1ff9bf"
+  },
+  "raw_h_read_count_at_lock_creation": 0,
+  "robot_radius_m": 0.1,
+  "rollout_count": 0,
+  "safety_margin_m": 0.01,
+  "sample_count": 15,
+  "samples": [
+    {
+      "committed_step_count_in_trial": 318,
+      "decision_commit_id": "formal-v1-trial-000-attempt-0:trial-000000:commit:000000",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "p_k_sha256": "00fdeef91f45a97bc9ff222f8a280b9c85a065ecd05a7d5b4a04bcb85075630a",
+      "selection_role": "first",
+      "step_id": 0,
+      "trial_id": 0
+    },
+    {
+      "committed_step_count_in_trial": 318,
+      "decision_commit_id": "formal-v1-trial-000-attempt-0:trial-000000:commit:000158",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "p_k_sha256": "81b71196330378c6cd53202f7cf997eab31a8dd1557990f23fe176774f196617",
+      "selection_role": "middle",
+      "step_id": 158,
+      "trial_id": 0
+    },
+    {
+      "committed_step_count_in_trial": 318,
+      "decision_commit_id": "formal-v1-trial-000-attempt-0:trial-000000:commit:000317",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "p_k_sha256": "06a0778367cd4fe52e84dfaa37cc0593afa07064b37d9ba28e8793429288c2a0",
+      "selection_role": "last",
+      "step_id": 317,
+      "trial_id": 0
+    },
+    {
+      "committed_step_count_in_trial": 148,
+      "decision_commit_id": "formal-v1-trial-024-attempt-0:trial-000000:commit:000000",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "p_k_sha256": "a4288d7a89938a46714cc8fb8dd57fdaa3cfbe91009efd6a032096bcb366f856",
+      "selection_role": "first",
+      "step_id": 0,
+      "trial_id": 24
+    },
+    {
+      "committed_step_count_in_trial": 148,
+      "decision_commit_id": "formal-v1-trial-024-attempt-0:trial-000000:commit:000073",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "p_k_sha256": "f5f45272df19fdf23a97652421c9cfd4f20830bf32816bf9ee9609a4031a8228",
+      "selection_role": "middle",
+      "step_id": 73,
+      "trial_id": 24
+    },
+    {
+      "committed_step_count_in_trial": 148,
+      "decision_commit_id": "formal-v1-trial-024-attempt-0:trial-000000:commit:000147",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "p_k_sha256": "18df0d6b5b24956f65373a6db5008a3049abd6c0dc608063c88600e76aaf0c27",
+      "selection_role": "last",
+      "step_id": 147,
+      "trial_id": 24
+    },
+    {
+      "committed_step_count_in_trial": 43,
+      "decision_commit_id": "formal-v1-trial-049-attempt-0:trial-000000:commit:000000",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "p_k_sha256": "a34a31cd6ca6a6b2eed204a3d531f708cfcf322ddc243e98e6b427f25fe7af35",
+      "selection_role": "first",
+      "step_id": 0,
+      "trial_id": 49
+    },
+    {
+      "committed_step_count_in_trial": 43,
+      "decision_commit_id": "formal-v1-trial-049-attempt-0:trial-000000:commit:000021",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "p_k_sha256": "65288378c767a153a282fc0e6b8cf21826bafd1ea5cabd34b34fee5e57afb925",
+      "selection_role": "middle",
+      "step_id": 21,
+      "trial_id": 49
+    },
+    {
+      "committed_step_count_in_trial": 43,
+      "decision_commit_id": "formal-v1-trial-049-attempt-0:trial-000000:commit:000042",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "p_k_sha256": "e2f0352dfc43cf9066dc55b90ff746ad4afbe61794b9bde2fd3b341e81b3095f",
+      "selection_role": "last",
+      "step_id": 42,
+      "trial_id": 49
+    },
+    {
+      "committed_step_count_in_trial": 27,
+      "decision_commit_id": "formal-v1-trial-074-attempt-0:trial-000000:commit:000000",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "p_k_sha256": "49782b94711240da291c25ae1ff622dc25e3496a839cc41b1f3301fc621a3b02",
+      "selection_role": "first",
+      "step_id": 0,
+      "trial_id": 74
+    },
+    {
+      "committed_step_count_in_trial": 27,
+      "decision_commit_id": "formal-v1-trial-074-attempt-0:trial-000000:commit:000013",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "p_k_sha256": "2404d5eaa44022a78ae7986a5027d49caf662dc8c087b0e48566f958fbf74845",
+      "selection_role": "middle",
+      "step_id": 13,
+      "trial_id": 74
+    },
+    {
+      "committed_step_count_in_trial": 27,
+      "decision_commit_id": "formal-v1-trial-074-attempt-0:trial-000000:commit:000026",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "p_k_sha256": "2f3936df1492d98411a4e0bc5f6bb7b56f64eb19060fb90c1250868ea7786d9e",
+      "selection_role": "last",
+      "step_id": 26,
+      "trial_id": 74
+    },
+    {
+      "committed_step_count_in_trial": 318,
+      "decision_commit_id": "formal-v1-trial-099-attempt-0:trial-000000:commit:000000",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "p_k_sha256": "00fdeef91f45a97bc9ff222f8a280b9c85a065ecd05a7d5b4a04bcb85075630a",
+      "selection_role": "first",
+      "step_id": 0,
+      "trial_id": 99
+    },
+    {
+      "committed_step_count_in_trial": 318,
+      "decision_commit_id": "formal-v1-trial-099-attempt-0:trial-000000:commit:000158",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "p_k_sha256": "81b71196330378c6cd53202f7cf997eab31a8dd1557990f23fe176774f196617",
+      "selection_role": "middle",
+      "step_id": 158,
+      "trial_id": 99
+    },
+    {
+      "committed_step_count_in_trial": 318,
+      "decision_commit_id": "formal-v1-trial-099-attempt-0:trial-000000:commit:000317",
+      "map_authority_id": "65c2e4a5ccfd71a0fa8d633c207397215dd8206d5f8fb77a731c05bcb0109af3",
+      "p_k_sha256": "06a0778367cd4fe52e84dfaa37cc0593afa07064b37d9ba28e8793429288c2a0",
+      "selection_role": "last",
+      "step_id": 317,
+      "trial_id": 99
+    }
+  ],
+  "schema_version": "L0_SENTINEL_SAMPLE_LOCK_V1",
+  "selection_rule": "trials=[0,24,49,74,99]; per trial first, floor((N-1)/2), last committed step",
+  "selection_rule_fixed_before_h_read": true,
+  "trial_ids": [
+    0,
+    24,
+    49,
+    74,
+    99
+  ]
+}

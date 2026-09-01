@@ -1,0 +1,26 @@
+{
+  "schema_version": "L0_MAP_OBSTACLE_SEMANTICS_AUDIT_V1",
+  "verdict": "FULL_REPRESENTED_MAP_ALL_GAUSSIANS",
+  "query_scope": "FULL",
+  "loaded_gaussian_count_observed_by_sentinel_query": 116446,
+  "gaussian_inputs_used": ["means", "exp(log_scales)", "quaternion-derived rotations"],
+  "opacity_loaded": true,
+  "opacity_used_by_full_query": false,
+  "obstacle_filtering": false,
+  "top_k_filtering": false,
+  "all_loaded_gaussians_enter_union_minimum": true,
+  "floor_support_background_specific_labels_available": false,
+  "floor_support_background_inclusion": "NOT_ESTABLISHED_SEMANTIC_LABELS_ABSENT; any such Gaussian present in the checkpoint is included because no filter exists",
+  "free_space_like_gaussian_exclusion": "NOT_ESTABLISHED",
+  "controller_uses_same_map_snapshot": true,
+  "controller_uses_same_gaussian_set_and_filter": true,
+  "l0_unsafe_equals_controller_operational_collision_notion": false,
+  "difference_reason": "The represented Gaussian set and formula are shared, but L0 and controller use materially different radii.",
+  "source_evidence": [
+    "splat/gsplat_utils.py:31-40,162-208",
+    "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/adapters/gaussian_barrier_adapter.py:87-97",
+    "cbf/cbf_utils.py:45",
+    "reproduction/equivalence/l2_h1_shadow_instrumentation_off_vs_on_v1/server_run_one.py:31,148-170,340"
+  ],
+  "boundary": "No Gaussian was removed, reweighted, relabelled, filtered, or dumped."
+}

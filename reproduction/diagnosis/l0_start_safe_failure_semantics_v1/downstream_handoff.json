@@ -1,0 +1,24 @@
+{
+  "schema_version": "L0_CONTROLLER_GEOMETRY_CONTRACT_V2_HANDOFF_V1",
+  "source_task": "DIAGNOSE_L0_START_SAFE_FAILURE_SEMANTICS_V1",
+  "source_upstream_head": "14c844adeda8a0e8eb418abcdbaac62c701e2910",
+  "source_input_lock_sha256": "e942b463e1885edb1614f63c305e15e05d3e8d6529a68075ebb10cc12788bf82",
+  "sentinel_lock_sha256": "00891331d2be06416cf88e66f15d27e11b58432daa17d22e22d57f72e45a4f03",
+  "root_class": "SS-F5",
+  "only_next_task": "DESIGN_L0_CONTROLLER_GEOMETRY_CONTRACT_V2",
+  "frozen_facts_to_preserve": {
+    "formal_rows": 14122,
+    "l0_fail": 14122,
+    "l0_unknown": 0,
+    "controller_radius_m": 0.015,
+    "shadow_l0_robot_radius_m": 0.1,
+    "shadow_l0_safety_margin_m": 0.01,
+    "shadow_l0_effective_radius_m": 0.11
+  },
+  "required_boundary": [
+    "Do not alter V1 scientific results.",
+    "Do not infer a cohort distribution from 15 sentinels.",
+    "Design the intended shared controller/L0 geometry authority before any correction implementation.",
+    "Require a separately authorized V2 before changing radius, margin, status, map, or controller."
+  ]
+}

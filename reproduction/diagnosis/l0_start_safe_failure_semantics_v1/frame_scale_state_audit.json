@@ -1,0 +1,26 @@
+{
+  "schema_version": "L0_FRAME_SCALE_STATE_AUDIT_V1",
+  "frame_verdict": "CONSISTENT",
+  "scale_verdict": "CONSISTENT",
+  "state_reference_verdict": "CONSISTENT",
+  "p_k_source": "decision-committed six-dimensional state[0:3]",
+  "v_k_source": "decision-committed six-dimensional state[3:6]",
+  "state_reference": "double-integrator robot position state",
+  "l0_query_point": "payload.p_k without an intervening transform",
+  "map_frame_input": "Nerfstudio Gaussian means from frozen Stonehenge checkpoint",
+  "state_to_map_transform": "identity/no transform in both L0 and controller query paths",
+  "axis_order": "x,y,z preserved",
+  "transform_direction": "point is transformed only into each Gaussian local frame as R^T(p-mu)",
+  "metric_scale": "shared frozen map/runtime coordinate unit; authority radius and margin are metres",
+  "sensor_origin_used_as_robot_center": false,
+  "meter_to_normalized_unit_mismatch": false,
+  "duplicated_transform": false,
+  "source_evidence": [
+    "reproduction/instrumentation/l2_h1_on_policy_shadow_instrumentation_v1/immutable_payload.py:170-173",
+    "reproduction/equivalence/l2_h1_shadow_instrumentation_off_vs_on_v1/server_run_one.py:165-170",
+    "splat/gsplat_utils.py:31-37,162-185",
+    "cbf/cbf_utils.py:45",
+    "reproduction/collection/l2_h1_prospective_shadow_cohort_v1/collection_environment_identity.json:47-48"
+  ],
+  "boundary": "No frame, scale, state, map, or transform was changed."
+}
