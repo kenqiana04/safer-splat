@@ -1,8 +1,6 @@
 ## Summary
 
-This draft analyzes the first formally unlocked L2/H1 prospective shadow cohort from PR #101 using the pre-registered contract and outcome-locked analyzer.
-
-> Not submitted: fail-closed closeout stopped because the locked pre-reveal validator rejects the protocol-authorized `BOOTSTRAP_NOT_ESTIMABLE` path. This body is retained only as task-local evidence; no PR was opened.
+This draft preserves the already-revealed Case C L2/H1 prospective shadow analysis from PR #101 and adds a separate, minimal validator erratum for the protocol-authorized `BOOTSTRAP_NOT_ESTIMABLE` branch.
 
 ## Frozen identity
 
@@ -39,3 +37,22 @@ The scientific outcome remained unread until all collection and result commitmen
 ## Validation blocker
 
 Twenty-one validator checks pass. `bootstrap_contract_exact` fails because the frozen validator unconditionally requires 10,000 valid replicates, while the frozen protocol explicitly requires `BOOTSTRAP_NOT_ESTIMABLE` after the maximum 100,000 draws if all replicates have zero denominator. The locked validator and numerical outputs remain unmodified after reveal.
+
+## Independent validator erratum
+
+The original `validate_formal_analysis_v1.py` and original failed `validation_result.json` are preserved byte-for-byte. `POST_REVEAL_EVIDENCE_LOCK.json` freezes every revealed compact artifact before the erratum. The independent `validator_erratum_v1/` implementation verifies only:
+
+- the original failure remains exactly one Case-C-unaware check with the other 21 checks passing;
+- the frozen protocol permits either 10,000 valid replicates with finite CI or `BOOTSTRAP_NOT_ESTIMABLE` at 100,000 total draws;
+- the existing Case C result follows the second path exactly;
+- all frozen scientific artifact hashes remain unchanged.
+
+The erratum does not rerun a trial or bootstrap, reread raw rows, rebuild the canonical table, add an endpoint, or change the denominator, eligibility, UNKNOWN handling, join, controller, certifier, map, candidate logic, or scientific conclusion.
+
+## Erratum closeout
+
+- Erratum status: `PASS_CASE_C_AWARE_VALIDATOR_ERRATUM_V1`
+- Scientific result unchanged: `true`
+- Scientific case: `CASE_C_PRIMARY_NOT_ESTIMABLE`
+- Final decision: `FREEZE_CASE_C_EVIDENCE_AND_AUTHORIZE_PRIMARY_REACHABILITY_DIAGNOSIS`
+- Only next task: `DIAGNOSE_L2_H1_PRIMARY_REACHABILITY_V1`

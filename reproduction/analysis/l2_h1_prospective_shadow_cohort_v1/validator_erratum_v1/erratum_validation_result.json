@@ -1,0 +1,28 @@
+{
+  "accepted_bootstrap_path": "PATH_B_NOT_ESTIMABLE",
+  "checks": {
+    "bootstrap_terminal_path_accepted": true,
+    "case_c_counts_exact": true,
+    "case_c_decision_exact": true,
+    "collection_lock_file_identity": true,
+    "frozen_case_c_bootstrap_contract_exact": true,
+    "original_failure_precisely_limited": true,
+    "original_validation_result_identity": true,
+    "original_validator_identity": true,
+    "protocol_file_identity": true,
+    "scientific_artifact_hash_changes_zero": true
+  },
+  "erratum_status": "PASS_CASE_C_AWARE_VALIDATOR_ERRATUM_V1",
+  "final_decision": "FREEZE_CASE_C_EVIDENCE_AND_AUTHORIZE_PRIMARY_REACHABILITY_DIAGNOSIS",
+  "final_status": "PASS_L2_H1_CASE_C_ANALYSIS_ERRATUM_AND_EVIDENCE_FREEZE_V1",
+  "only_next_task": "DIAGNOSE_L2_H1_PRIMARY_REACHABILITY_V1",
+  "original_failed_check": "bootstrap_contract_exact",
+  "original_passing_check_count": 21,
+  "pass": true,
+  "schema_version": "L2_H1_CASE_C_AWARE_VALIDATOR_ERRATUM_RESULT_V1",
+  "scientific_artifact_hash_changes": [],
+  "scientific_artifact_hash_changes_count": 0,
+  "scientific_case": "CASE_C_PRIMARY_NOT_ESTIMABLE",
+  "scientific_decision": "PRIMARY_OPERATIONAL_OPPORTUNITY_NOT_ESTIMABLE",
+  "scientific_result_unchanged": true
+}

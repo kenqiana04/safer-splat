@@ -1,0 +1,39 @@
+{
+  "allowed_terminal_paths": {
+    "PATH_A_ESTIMABLE": {
+      "bootstrap_valid_replicates": 10000,
+      "ci_present_and_finite": true,
+      "maximum_total_draws": 100000
+    },
+    "PATH_B_NOT_ESTIMABLE": {
+      "bootstrap_status": "BOOTSTRAP_NOT_ESTIMABLE",
+      "bootstrap_total_draws": 100000,
+      "bootstrap_valid_replicates_max_exclusive": 10000,
+      "ci_absent": true,
+      "point_estimate_absent": true
+    }
+  },
+  "case_c_expected": {
+    "N_FAIL": 0,
+    "N_PASS": 0,
+    "N_UNKNOWN": 0,
+    "N_intended": 14122,
+    "N_primary": 0,
+    "accepted_path": "PATH_B_NOT_ESTIMABLE",
+    "bootstrap_total_draws": 100000,
+    "bootstrap_valid_replicates": 0,
+    "bootstrap_zero_denominator_draws": 100000
+  },
+  "original_failed_check": "bootstrap_contract_exact",
+  "original_passing_check_count": 21,
+  "prohibited_actions": [
+    "modify original validator",
+    "overwrite original validation result",
+    "rerun bootstrap",
+    "read raw scientific rows",
+    "change denominator or eligibility",
+    "change scientific compact artifacts"
+  ],
+  "schema_version": "L2_H1_CASE_C_AWARE_VALIDATOR_ERRATUM_CONTRACT_V1",
+  "scope": "INDEPENDENT_ACCEPTANCE_OF_ALREADY_FROZEN_BOOTSTRAP_NOT_ESTIMABLE_BRANCH_ONLY"
+}
