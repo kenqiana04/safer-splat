@@ -1,0 +1,35 @@
+{
+  "schema_version": "L0_GEOMETRY_V1_V2_DELTA_V1",
+  "V1": {
+    "contract_status": "FROZEN_HISTORICAL_VALID_UNDER_ITS_OWN_CONTRACT",
+    "base_radius_authority": "INDEPENDENT_SHADOW_ROBOT_RADIUS",
+    "base_radius_m": 0.1,
+    "certification_margin_m": 0.01,
+    "effective_l0_radius_m": 0.11,
+    "formal_rows": 14122,
+    "l0_pass_fail_unknown": [0, 14122, 0],
+    "analysis_case": "CASE_C",
+    "reinterpretation_allowed": false
+  },
+  "V2": {
+    "contract_status": "NEW_GEOMETRY_CONTRACT_DESIGN_ONLY",
+    "base_radius_authority": "CONTROLLER_GEOMETRY_AUTHORITY",
+    "base_radius_m": 0.015,
+    "certification_margin_m": 0.01,
+    "effective_l0_radius_m": 0.025,
+    "formal_rows": 0,
+    "performance_or_support_claims": false
+  },
+  "single_normative_change": "Replace the independent shadow base footprint with read-only consumption of controller geometry authority.",
+  "unchanged": [
+    "margin policy",
+    "map and Gaussian query set",
+    "state/frame/scale semantics",
+    "point-to-ellipsoid formula and sign",
+    "L0 shadow gating",
+    "L1/L2 formulas",
+    "controller runtime"
+  ],
+  "allowed_statement": "V1 diagnostic identified a geometry-authority mismatch that motivates a separately frozen V2 contract.",
+  "prohibited_statement": "V1 results are corrected or V1 states should have passed."
+}

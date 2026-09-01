@@ -1,0 +1,38 @@
+{
+  "schema_version": "L0_CONTROLLER_GEOMETRY_CONTRACT_V2_VERIFICATION_PLAN_V1",
+  "design_only": true,
+  "executed_stage_count": 0,
+  "stages": [
+    {
+      "id": "V2-A",
+      "name": "STATIC_IMPLEMENTATION_VALIDATION",
+      "checks": ["single controller radius source", "no independent L0 base radius", "margin exactly once", "formula/sign/map/frame/scale unchanged", "provenance complete"]
+    },
+    {
+      "id": "V2-B",
+      "name": "FROZEN_SENTINEL_CONFORMANCE",
+      "checks": ["reuse the already locked 15 points", "verify implementation against frozen contract", "do not change parameters from results"],
+      "scientific_population_claim": false
+    },
+    {
+      "id": "V2-C",
+      "name": "SHADOW_OFF_VS_ON_NONINTERFERENCE",
+      "checks": ["same committed controller trace", "zero controller authority", "zero action feedback"]
+    },
+    {
+      "id": "V2-D",
+      "name": "SUPPORT_ONLY_PILOT",
+      "mode": "SUPPORT_ONLY",
+      "visible_counts": ["N_L0_PASS", "N_L0_NON_PASS", "N_L1_REACHED", "N_L2_REACHED"],
+      "l2_distribution_visible": false,
+      "parameter_optimization_allowed": false
+    },
+    {
+      "id": "V2-E",
+      "name": "FORMAL_COHORT_PROTOCOL_DESIGN_ELIGIBILITY",
+      "prerequisite": "V2-D endpoint support established without contract drift",
+      "formal_collection_authorized_by_this_plan": false
+    }
+  ],
+  "execution_authorized": false
+}
