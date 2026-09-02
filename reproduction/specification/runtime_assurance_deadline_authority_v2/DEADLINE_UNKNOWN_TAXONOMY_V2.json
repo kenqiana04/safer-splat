@@ -1,0 +1,6 @@
+{
+  "GLOBAL_DEADLINE_UNKNOWN": {"scope": "GLOBAL_DECISION_PROCESS", "owner": "SUPERVISOR", "meaning": "deadline configuration, clock authority, or remaining-time state cannot be established", "ordinary_success": false, "convert_to_pass": false},
+  "LOCAL_CERTIFICATE_TIMEOUT": {"scope": "ONE_CERTIFICATE_COMPUTATION", "owner": "CERTIFICATE_LAYER_REPORTS_ONLY", "meaning": "the local computation did not finish inside its admitted bound", "ordinary_success": false, "convert_to_pass": false},
+  "separation_required": true,
+  "timeout_is_not": ["UNSAFE", "COLLISION", "CONTROLLER_FAILURE", "CERTIFICATE_PASS"]
+}

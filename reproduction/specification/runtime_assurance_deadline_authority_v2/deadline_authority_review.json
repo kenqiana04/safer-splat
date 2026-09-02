@@ -1,0 +1,14 @@
+{
+  "verdict": "PASS",
+  "authority_owner_uniqueness": "PASS_SUPERVISOR_ONLY",
+  "expiry_transition_completeness": "PASS",
+  "no_search_after_expiry": "PASS",
+  "no_uncertified_fallback": "PASS",
+  "backup_compatibility": "PASS_IDENTITY_AND_TEMPORAL_VALIDITY_REQUIRED",
+  "terminal_compatibility": "PASS_CERTIFIED_TERMINAL_READY_REQUIRED",
+  "unknown_semantics": "PASS_GLOBAL_AND_LOCAL_SEPARATED",
+  "cross_layer_consistency": "PASS_NO_DUPLICATE_AUTHORITY_OR_IMPLICIT_ACTION",
+  "critical_blockers": [],
+  "remaining_implementation_blockers": ["ALTERNATIVE_SOURCE", "TERMINAL_EMERGENCY_POLICY", "BACKUP_TOKEN_RUNTIME_SCHEMA", "INDEPENDENT_EVALUATION_ORACLE"],
+  "claims_boundary": "SPECIFICATION_ONLY_NO_RUNTIME_OR_PERFORMANCE_CLAIM"
+}

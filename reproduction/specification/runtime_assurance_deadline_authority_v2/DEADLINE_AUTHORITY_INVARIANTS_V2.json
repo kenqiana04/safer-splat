@@ -1,0 +1,16 @@
+{
+  "invariants": [
+    {"id": "DA-I01", "rule": "Exactly one global deadline owner exists and it is SUPERVISOR."},
+    {"id": "DA-I02", "rule": "Every bounded stage records start timestamp, end timestamp, and budget."},
+    {"id": "DA-I03", "rule": "DEADLINE_WARNING forbids starting a new high-cost search."},
+    {"id": "DA-I04", "rule": "DEADLINE_EXPIRED forbids all new candidate, alternative, backup, and terminal search."},
+    {"id": "DA-I05", "rule": "Expiry never converts nominal, desired, or uncertified control into an executable action."},
+    {"id": "DA-I06", "rule": "A valid backup is complete and identity-compatible before expiry."},
+    {"id": "DA-I07", "rule": "Expiry never makes a terminal action safe; CERTIFIED_TERMINAL_READY is required."},
+    {"id": "DA-I08", "rule": "GLOBAL_DEADLINE_UNKNOWN and LOCAL_CERTIFICATE_TIMEOUT are distinct non-success results."},
+    {"id": "DA-I09", "rule": "Certificate layers report local status and never set global time policy."},
+    {"id": "DA-I10", "rule": "DEADLINE_EXPIRED is absorbing within the current control cycle."},
+    {"id": "DA-I11", "rule": "All post-expiry in-method actions must already carry valid geometry and actuator authority."},
+    {"id": "DA-I12", "rule": "Missing numeric deadline configuration produces GLOBAL_DEADLINE_UNKNOWN, never a default."}
+  ]
+}

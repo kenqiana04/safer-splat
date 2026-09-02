@@ -1,0 +1,8 @@
+{
+  "owner": "SUPERVISOR",
+  "reports_to_supervisor": ["CBF_SOLVER", "L1", "L2", "L3", "L4", "L5"],
+  "global_deadline_policy_edges": [["SUPERVISOR", "C0"], ["SUPERVISOR", "L1"], ["SUPERVISOR", "L2"], ["SUPERVISOR", "L3"], ["SUPERVISOR", "L4"], ["SUPERVISOR", "L5"], ["SUPERVISOR", "COMMIT"]],
+  "forbidden_owner_edges": [["CBF_SOLVER", "GLOBAL_DEADLINE"], ["L1", "GLOBAL_DEADLINE"], ["L2", "GLOBAL_DEADLINE"], ["L3", "GLOBAL_DEADLINE"], ["L4", "GLOBAL_DEADLINE"], ["L5", "GLOBAL_DEADLINE"]],
+  "certificate_result_feedback": "TYPED_REPORT_ONLY",
+  "implicit_action_edges": []
+}
