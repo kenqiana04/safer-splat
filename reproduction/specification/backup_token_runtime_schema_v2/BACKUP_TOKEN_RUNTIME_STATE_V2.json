@@ -1,0 +1,10 @@
+{
+  "external_supervisor_state": ["NONE", "VALID", "INVALID", "EXHAUSTED"],
+  "internal_lifecycle_phase": ["PREPARED_UNCOMMITTED", "ACTIVE", "RETIRED_SUPERSEDED", "ABORTED_PREPARED"],
+  "initial_state": {"active_token": null, "retained_backup_status": "NONE"},
+  "activation": {"precondition": "SOURCE_CANDIDATE_EXACT_COMMIT_SUCCESS", "active_cycle_rule": "source_commit_cycle_plus_1", "prepared_before_commit_executable": false},
+  "invalidation_is_absorbing_for_token_identity": true,
+  "self_revalidation_allowed": false,
+  "exhausted_terminal_authority": false,
+  "single_active_token_invariant": true
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "BACKUP_TOKEN_SCHEMA_INPUT_LOCK_V2",
+  "task_type": "SCHEMA_ONLY",
+  "runtime_mutation_authority": false,
+  "V1_reinterpretation_allowed": false,
+  "physical_tracking_model_available": false,
+  "normative_dynamics_identity": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1",
+  "upstream": {
+    "pr_107": {"head": "a60665f3e29085cc18f1ee03828198074f52e4f0", "state": "OPEN", "draft": true},
+    "pr_108": {"head": "f04a2077c4f483f20696bb5515c576cd75ddf449", "state": "OPEN", "draft": true},
+    "pr_109": {"head": "729b3c78a81f2f3ca8948916b64dcb6e2c50fc66", "state": "OPEN", "draft": true},
+    "pr_110": {"head": "52467acd2ab82c300a8f6c3ce712ab0d59d4f4cf", "state": "OPEN", "draft": true},
+    "pr_111": {"head": "a658c858995d76a4baa1ad119701e2706df075be", "base_head": "52467acd2ab82c300a8f6c3ce712ab0d59d4f4cf", "branch": "freeze-alternative-source-authority-v2", "title": "[Draft] Freeze alternative source authority V2", "state": "OPEN", "draft": true}
+  },
+  "contract_ids": {
+    "geometry": "CERTIFICATION_GEOMETRY_AUTHORITY_V2",
+    "actuator": "NORMATIVE_COMPONENTWISE_ACCELERATION_AUTHORITY_V2",
+    "deadline": "RUNTIME_DEADLINE_AUTHORITY",
+    "alternative_source": "ALTERNATIVE_SOURCE_AUTHORITY",
+    "temporal": "TEMPORAL_INDEX_CONTRACT_V2"
+  },
+  "frozen_blobs": [
+    {"path": "reproduction/specification/method_logic_closure_v2/BACKUP_RETENTION_AND_HANDOFF_V2.md", "git_blob": "cf5589e45513f0015dc738d21d69475b78a96994", "sha256": "6b3680dc210acf783a84c90ce5605def27899d3bc7b9c5e6256c15d060ff2595"},
+    {"path": "reproduction/specification/method_logic_closure_v2/TEMPORAL_INDEX_CONTRACT_V2.md", "git_blob": "699c8fd977a6ad87cd6d54598d925271ce16c69d", "sha256": "174afef1e6842ea46f9e1b20b9ee848fead7d369811264183512fffae49534ea"},
+    {"path": "reproduction/specification/method_logic_closure_v2/RUNTIME_ASSURANCE_SUPERVISOR_V2.md", "git_blob": "fd8f232db33a9fd8c61ca0d62c5ff26320e88bc1", "sha256": "02a8bf6726c5c5ffd39f7571905f321fd56b313903730aa2a3b52a99772f54cb"},
+    {"path": "reproduction/specification/method_logic_closure_v2/STATE_VARIABLES_V2.json", "git_blob": "63c7bd27e2dd81caf5786795760120a028cd9bb8", "sha256": "ff847fdb17d6740f24252077ecd9ae4dceeb69bac06c23264fb8e1e80c571909"},
+    {"path": "reproduction/specification/method_logic_closure_v2/STATE_TRANSITION_TABLE_V2.csv", "git_blob": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad", "sha256": "f7b288bd43acfd9893c1b9b325116dd6e89a88536f2f6c61c7f8aaacbcc32351"},
+    {"path": "reproduction/specification/cross_layer_geometry_authority_v2/CROSS_LAYER_GEOMETRY_AUTHORITY_V2.json", "git_blob": "ab26f3d7a2247211d6d95f0b8d74cd8529f55d33", "sha256": "36cdd8114e0100da243b8a1786452b1a2bfd5297138bd6dfcd661bbc7803082e"},
+    {"path": "reproduction/specification/control_authority_v2/SELECTED_CONTROL_ACTUATOR_CONTRACT_V2.json", "git_blob": "c56032a3009ac6c62866093a1c6266d3ca50cee4", "sha256": "66eb339744248984e593c196162120f1d8578d4666c0337d828c8c868e65be83"},
+    {"path": "reproduction/specification/runtime_assurance_deadline_authority_v2/RUNTIME_ASSURANCE_DEADLINE_AUTHORITY_V2.json", "git_blob": "e07f0f29b2879b05da5623304927c7c239b9b0ae", "sha256": "f35119abc66fc780853f358b856e7b06d9a4dd7c3018d32db8e6a062e3c7cb83"},
+    {"path": "reproduction/specification/alternative_source_authority_v2/ALTERNATIVE_SOURCE_AUTHORITY_V2.json", "git_blob": "bad6ea6fc635e09852b7253225f1b85197d6ad5f", "sha256": "1ed8e34e9756e4e7142a6d6860dc44abc5d2e03f25bbd047b2ab9dc8c3ad5f7a"},
+    {"path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/backup_certifier.py", "git_blob": "75c50fc71c8c386751db895f01cdd1260205af06", "sha256": "ba93f39dd7363e81726a811ffcdacf44deabf900d4b38e97e399ee14335991b8"},
+    {"path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/braking_backup_policy.py", "git_blob": "ff72d551bd84205001373917b6bccf008b9ab926", "sha256": "77902e9fa756434fb5f2b57221ec066c7a29e2eedcf9922fdb2941f85251ea15"},
+    {"path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/terminal_certificate.py", "git_blob": "1ab8ee6b16f8b7d052c01d52836be08d5d2d5964", "sha256": "72e3e2c9cf71e36f69dcaa6e00c05927e714f5a2c711365b62da35c7c6eede91"},
+    {"path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/result_types.py", "git_blob": "75a969fee5af1674c44414c51e0cee46cf34b0c9", "sha256": "1c94a83dc45dddfab1e804ff4917f7d8988cadd95d93f26a60ca15f3bf7f43e5"},
+    {"path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/adapters/normative_dynamics_adapter.py", "git_blob": "b39bd21ff7c24e1dcc5d1f792afd28f390fcd55c", "sha256": "bc85b7c90d57f9935732751c813c742d9c24af729ba6f5716637f3c3334513df"}
+  ]
+}

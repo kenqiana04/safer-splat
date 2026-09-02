@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BACKUP_TOKEN_EVENT_V2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["token_id", "prior_revision_sha256", "event_type", "cycle_index", "action_or_candidate_id", "resulting_lifecycle_phase", "resulting_supervisor_status", "resulting_cursor", "reason", "authority_ids", "next_revision_sha256"],
+  "properties": {
+    "token_id": {"type": "string"},
+    "prior_revision_sha256": {"type": ["string", "null"]},
+    "event_type": {"enum": ["PREPARE", "ACTIVATE", "CONSUME", "ADVANCE", "INVALIDATE", "EXHAUST", "SUPERSEDE", "ABORT_PREPARED"]},
+    "cycle_index": {"type": "integer", "minimum": 0},
+    "action_or_candidate_id": {"type": ["string", "null"]},
+    "resulting_lifecycle_phase": {"enum": ["PREPARED_UNCOMMITTED", "ACTIVE", "RETIRED_SUPERSEDED", "ABORTED_PREPARED"]},
+    "resulting_supervisor_status": {"enum": ["NONE", "VALID", "INVALID", "EXHAUSTED"]},
+    "resulting_cursor": {"type": "integer", "minimum": 0},
+    "reason": {"type": "string", "minLength": 1},
+    "authority_ids": {"type": "array", "minItems": 4, "items": {"type": "string"}},
+    "next_revision_sha256": {"pattern": "^[0-9a-f]{64}$"}
+  },
+  "revision_hash_material": "canonical event fields including prior revision and resulting state, excluding next_revision_sha256",
+  "append_only": true,
+  "logger_implementation_in_scope": false
+}
