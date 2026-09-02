@@ -1,0 +1,237 @@
+{
+  "gpu_execution_count": 0,
+  "properties": [
+    {
+      "id": "PTP-01",
+      "status": "PASS"
+    },
+    {
+      "id": "PTP-02",
+      "status": "PASS"
+    },
+    {
+      "id": "PTP-03",
+      "status": "PASS"
+    },
+    {
+      "id": "PTP-04",
+      "status": "PASS"
+    },
+    {
+      "id": "PTP-05",
+      "status": "PASS"
+    },
+    {
+      "id": "PTP-06",
+      "status": "PASS"
+    },
+    {
+      "id": "PTP-07",
+      "status": "PASS"
+    },
+    {
+      "id": "PTP-08",
+      "status": "PASS"
+    },
+    {
+      "id": "PTP-09",
+      "status": "PASS"
+    },
+    {
+      "id": "PTP-10",
+      "status": "PASS"
+    },
+    {
+      "id": "PTP-11",
+      "status": "PASS"
+    },
+    {
+      "id": "PTP-12",
+      "status": "PASS"
+    },
+    {
+      "id": "PTP-13",
+      "status": "PASS"
+    },
+    {
+      "id": "PTP-14",
+      "status": "PASS"
+    },
+    {
+      "id": "PTP-15",
+      "status": "PASS"
+    },
+    {
+      "id": "PTP-16",
+      "status": "PASS"
+    },
+    {
+      "id": "PTP-17",
+      "status": "PASS"
+    },
+    {
+      "id": "PTP-18",
+      "status": "PASS"
+    },
+    {
+      "id": "PTP-19",
+      "status": "PASS"
+    },
+    {
+      "id": "PTP-20",
+      "status": "PASS"
+    }
+  ],
+  "property_count": 20,
+  "property_pass_count": 20,
+  "runtime_execution_count": 0,
+  "scenario_count": 24,
+  "scenario_pass_count": 24,
+  "scenarios": [
+    {
+      "choice": "NAVIGATION",
+      "expected": "NAVIGATION",
+      "id": "TP-S01",
+      "status": "PASS"
+    },
+    {
+      "choice": "RETAINED_BACKUP",
+      "expected": "RETAINED_BACKUP",
+      "id": "TP-S02",
+      "status": "PASS"
+    },
+    {
+      "choice": "TERMINAL",
+      "expected": "TERMINAL",
+      "id": "TP-S03",
+      "status": "PASS"
+    },
+    {
+      "choice": "ASSURANCE_BOUNDARY",
+      "expected": "ASSURANCE_BOUNDARY",
+      "id": "TP-S04",
+      "status": "PASS"
+    },
+    {
+      "choice": "TERMINAL",
+      "expected": "TERMINAL",
+      "id": "TP-S05",
+      "status": "PASS"
+    },
+    {
+      "choice": "ASSURANCE_BOUNDARY",
+      "expected": "ASSURANCE_BOUNDARY",
+      "id": "TP-S06",
+      "status": "PASS"
+    },
+    {
+      "choice": "TERMINAL",
+      "expected": "TERMINAL",
+      "id": "TP-S07",
+      "status": "PASS"
+    },
+    {
+      "choice": "ASSURANCE_BOUNDARY",
+      "expected": "ASSURANCE_BOUNDARY",
+      "id": "TP-S08",
+      "status": "PASS"
+    },
+    {
+      "choice": "ASSURANCE_BOUNDARY",
+      "expected": "ASSURANCE_BOUNDARY",
+      "id": "TP-S09",
+      "status": "PASS"
+    },
+    {
+      "choice": "ASSURANCE_BOUNDARY",
+      "expected": "ASSURANCE_BOUNDARY",
+      "id": "TP-S10",
+      "status": "PASS"
+    },
+    {
+      "choice": "ASSURANCE_BOUNDARY",
+      "expected": "ASSURANCE_BOUNDARY",
+      "id": "TP-S11",
+      "status": "PASS"
+    },
+    {
+      "choice": "ASSURANCE_BOUNDARY",
+      "expected": "ASSURANCE_BOUNDARY",
+      "id": "TP-S12",
+      "status": "PASS"
+    },
+    {
+      "choice": "ASSURANCE_BOUNDARY",
+      "expected": "ASSURANCE_BOUNDARY",
+      "id": "TP-S13",
+      "status": "PASS"
+    },
+    {
+      "choice": "ASSURANCE_BOUNDARY",
+      "expected": "ASSURANCE_BOUNDARY",
+      "id": "TP-S14",
+      "status": "PASS"
+    },
+    {
+      "choice": "ASSURANCE_BOUNDARY",
+      "expected": "ASSURANCE_BOUNDARY",
+      "id": "TP-S15",
+      "status": "PASS"
+    },
+    {
+      "choice": "ASSURANCE_BOUNDARY",
+      "expected": "ASSURANCE_BOUNDARY",
+      "id": "TP-S16",
+      "status": "PASS"
+    },
+    {
+      "choice": "ASSURANCE_BOUNDARY",
+      "expected": "ASSURANCE_BOUNDARY",
+      "id": "TP-S17",
+      "status": "PASS"
+    },
+    {
+      "choice": "TERMINAL",
+      "expected": "TERMINAL",
+      "id": "TP-S18",
+      "status": "PASS"
+    },
+    {
+      "choice": "ASSURANCE_BOUNDARY",
+      "expected": "ASSURANCE_BOUNDARY",
+      "id": "TP-S19",
+      "status": "PASS"
+    },
+    {
+      "choice": "TERMINAL",
+      "expected": "TERMINAL",
+      "id": "TP-S20",
+      "status": "PASS"
+    },
+    {
+      "choice": "ASSURANCE_BOUNDARY",
+      "expected": "ASSURANCE_BOUNDARY",
+      "id": "TP-S21",
+      "status": "PASS"
+    },
+    {
+      "choice": "RETAINED_BACKUP",
+      "expected": "RETAINED_BACKUP",
+      "id": "TP-S22",
+      "status": "PASS"
+    },
+    {
+      "choice": "RETAINED_BACKUP",
+      "expected": "RETAINED_BACKUP",
+      "id": "TP-S23",
+      "status": "PASS"
+    },
+    {
+      "choice": "ASSURANCE_BOUNDARY",
+      "expected": "ASSURANCE_BOUNDARY",
+      "id": "TP-S24",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS_TERMINAL_EMERGENCY_POLICY_MODEL_CHECK_V2"
+}

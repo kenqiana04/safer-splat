@@ -1,0 +1,18 @@
+{
+  "verdict": "PASS_TERMINAL_EMERGENCY_POLICY_FROZEN",
+  "terminal_membership_role": "仅状态谓词，无选择或提交权。",
+  "certificate_vs_eligibility": "READY只证明exact state/action/authority；仍需Supervisor context。",
+  "canonical_terminal_action": "TERMINAL_ZERO_HOLD=(0,0,0)，仅在当前V2 authority与zero-hold证据下。",
+  "normal_navigation_priority": "timely certified navigation最高。",
+  "valid_backup_priority": "VALID retained backup高于terminal。",
+  "exhausted_backup": "不产生terminal authority。",
+  "stale_terminal_ref": "任一identity mismatch即不可执行。",
+  "deadline_expiry": "禁新认证；已在guard前READY且仍有效者可仲裁。",
+  "zero_velocity_start": "不能抢占certified navigation。",
+  "software_fail_close": "不等于physical safe stop。",
+  "external_emergency_authority": "UNRESOLVED_OUTSIDE_METHOD。",
+  "selected_executed_identity": "exact vector/id相等且禁止post-certificate transform。",
+  "model_check": "PTP 20/20、场景24/24、counterexample 0。",
+  "remaining_blocker": "INDEPENDENT_EVALUATION_ORACLE",
+  "next_dag_task": "FREEZE_INDEPENDENT_EVALUATION_ORACLE_V2"
+}

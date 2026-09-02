@@ -1,0 +1,16 @@
+{
+  "handoff_version": "TERMINAL_EMERGENCY_POLICY_V2_TO_INDEPENDENT_EVALUATION_ORACLE_V2",
+  "source_branch": "freeze-terminal-emergency-policy-v2",
+  "source_design_commit": "3b1958c0b67f9e549cff6593bcdf0eb465058c04",
+  "frozen_facts": {
+    "priority": ["CERTIFIED_NAVIGATION","VALID_RETAINED_BACKUP","ELIGIBLE_CERTIFIED_TERMINAL","ASSURANCE_BOUNDARY_NO_CERTIFIED_ACTION"],
+    "terminal_action": "TERMINAL_ZERO_HOLD",
+    "membership_has_authority": false,
+    "backup_exhaustion_has_terminal_authority": false,
+    "software_fail_close_is_physical_safe_stop": false,
+    "external_emergency_authority": "UNRESOLVED_OUTSIDE_METHOD"
+  },
+  "oracle_must_separate": ["SAFETY", "NAVIGATION_PROGRESS", "TASK_GOAL_COMPLETION", "TERMINAL_INTERVENTION_RATE", "BACKUP_ACTIVATION_RATE", "ASSURANCE_BOUNDARY_RATE"],
+  "prohibited_next_actions": ["RUNTIME_IMPLEMENTATION", "TERMINAL_CONTROLLER_IMPLEMENTATION", "EMERGENCY_CONTROLLER_IMPLEMENTATION", "ROLLOUT", "PILOT", "BENCHMARK"],
+  "only_next_task": "FREEZE_INDEPENDENT_EVALUATION_ORACLE_V2"
+}
