@@ -1,0 +1,16 @@
+{
+  "authority": "HISTORICAL_COMPARISON_FORMULA_CONTENT_ADDRESSED_AND_REUSED",
+  "clipping": "NONE",
+  "distance": "Euclidean L2 distance over position_xyz, consistent with the task position component of the goal contract",
+  "formula": "normalized_progress = (d_start - d_final) / d_start",
+  "goal_reached": "report formula value and goal_reached separately; do not overwrite progress",
+  "negative_progress": "RETAIN_NEGATIVE_VALUE",
+  "normalization": "d_start",
+  "outcome_adaptation": false,
+  "schema_version": "PROGRESS_ORACLE_V2",
+  "sources": [
+    "work/risk_aware_cbf/scripts/run_risk_aware_v1_pre_cbf_comparison.py:1185-1191",
+    "work/risk_aware_cbf/scripts/run_v4b_corrective_dt_filter.py:748-751"
+  ],
+  "zero_initial_distance": "EVAL_UNKNOWN_INVALID_TRIAL_IDENTITY"
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "EVALUATION_CLAIM_TIERS_V2",
+  "tiers": {
+    "TIER_A_EXTERNAL_GROUND_TRUTH_OUTCOME": {
+      "requires": [
+        "scene_matched_external_geometry_or_simulator_reference",
+        "independence_from_method_map_and_certifier"
+      ],
+      "supports": [
+        "scope_specific_external_GT_collision_outcome"
+      ]
+    },
+    "TIER_B_INDEPENDENT_REPRESENTED_MAP_OUTCOME": {
+      "does_not_support": [
+        "physical_collision_truth"
+      ],
+      "scope_label": "REPRESENTED_MAP_RELATIVE",
+      "sources": [
+        "posthoc_recomputation_against_frozen_represented_map"
+      ],
+      "supports": [
+        "represented_map_collision_proxy",
+        "represented_map_minimum_clearance",
+        "certification_margin_violation"
+      ]
+    },
+    "TIER_C_EXECUTION_TRACE_FACT": {
+      "sources": [
+        "immutable_committed_executed_trace"
+      ],
+      "supports": [
+        "action_source_rate",
+        "backup_activation",
+        "terminal_selection",
+        "assurance_boundary_incidence",
+        "runtime_event_facts"
+      ]
+    },
+    "TIER_D_METHOD_INTERNAL_DIAGNOSTIC": {
+      "does_not_support": [
+        "independent_collision_efficacy",
+        "physical_safe_stop",
+        "real_world_safety"
+      ],
+      "sources": [
+        "C0",
+        "L1",
+        "L2",
+        "L3",
+        "SUPERVISOR"
+      ],
+      "supports": [
+        "mechanism_analysis",
+        "reachability",
+        "routing_statistics"
+      ]
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "edges": [
+    {
+      "meaning": "candidate_and_status",
+      "source": "runtime_controller",
+      "target": "supervisor"
+    },
+    {
+      "meaning": "committed_action_and_state",
+      "source": "supervisor",
+      "target": "execution_trace"
+    },
+    {
+      "meaning": "diagnostic_covariates_only",
+      "source": "C0_L1_L2_L3",
+      "target": "execution_trace"
+    },
+    {
+      "meaning": "frozen_map_authority",
+      "source": "represented_map_reference",
+      "target": "posthoc_oracle"
+    },
+    {
+      "meaning": "optional_scene_matched_reference",
+      "source": "external_GT_reference",
+      "target": "posthoc_oracle"
+    },
+    {
+      "meaning": "immutable_executed_trace",
+      "source": "execution_trace",
+      "target": "posthoc_oracle"
+    },
+    {
+      "meaning": "pre_registered_thresholds",
+      "source": "oracle_threshold_registry",
+      "target": "posthoc_oracle"
+    },
+    {
+      "meaning": "typed_outcomes",
+      "source": "posthoc_oracle",
+      "target": "statistical_aggregator"
+    },
+    {
+      "meaning": "pre_registered_aggregation",
+      "source": "statistical_aggregator",
+      "target": "paper_outcome_table"
+    }
+  ],
+  "forbidden_edges": [
+    [
+      "posthoc_oracle",
+      "runtime_controller"
+    ],
+    [
+      "certificate_status",
+      "collision_ground_truth"
+    ],
+    [
+      "method_margin",
+      "physical_collision_radius"
+    ],
+    [
+      "paper_outcome_table",
+      "oracle_threshold_registry"
+    ]
+  ],
+  "nodes": [
+    "runtime_controller",
+    "supervisor",
+    "C0_L1_L2_L3",
+    "execution_trace",
+    "represented_map_reference",
+    "external_GT_reference",
+    "posthoc_oracle",
+    "statistical_aggregator",
+    "paper_outcome_table",
+    "oracle_threshold_registry",
+    "method_margin"
+  ],
+  "schema_version": "EVALUATION_ORACLE_DATAFLOW_GRAPH_V2"
+}

@@ -1,0 +1,25 @@
+{
+  "EXTERNAL_GT_COLLISION_ORACLE": "UNAVAILABLE_FOR_CURRENT_STONEHENGE_MAINLINE",
+  "cross_scene_substitution_forbidden": true,
+  "download_count": 0,
+  "findings": [
+    {
+      "authority": "official Replica apartment_0 visual mesh",
+      "mesh_sha256": "274677d9b7caa413230363b68f4aa472e5cc1afe87e422a489fa1b7d844c6182",
+      "not_automatically_transferable_to_v2": true,
+      "query": "continuous segment-to-mesh distance",
+      "robot_radius_m_in_historical_replica_contract": 0.1,
+      "scope": "REPLICA_APARTMENT_0",
+      "status": "AVAILABLE_FOR_SCENE_SCOPED_PROTOCOL_ONLY"
+    },
+    {
+      "reason": "No scene-matched external mesh/simulator/physical reference independent of the represented Gaussian control map was identified.",
+      "scope": "CURRENT_STONEHENGE_OFFICIAL100_MAINLINE",
+      "status": "UNAVAILABLE_IN_CURRENT_REPOSITORY"
+    }
+  ],
+  "physical_collision_claim_authorized": false,
+  "repository_static_audit_only": true,
+  "represented_map_collision_proxy_claim_authorized_if_tier_b_valid": true,
+  "schema_version": "EXTERNAL_GROUND_TRUTH_ORACLE_AUDIT_V2"
+}

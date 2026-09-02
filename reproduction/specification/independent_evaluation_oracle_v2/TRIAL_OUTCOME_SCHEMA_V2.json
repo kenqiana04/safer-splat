@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "raw_null_is_forbidden_for_required_outcome": true,
+  "required": [
+    "trial_id",
+    "variant_id",
+    "start_state_id",
+    "goal_state_id",
+    "trace_sha256",
+    "oracle_version",
+    "oracle_sha256",
+    "represented_map_collision_proxy",
+    "collision_first_step",
+    "min_operational_footprint_clearance_m",
+    "certification_margin_violation",
+    "min_certification_margin_clearance_m",
+    "goal_reached",
+    "normalized_progress",
+    "steps",
+    "timeout",
+    "final_action_role",
+    "action_role_commit_counts",
+    "assurance_boundary_count",
+    "software_fail_close_count",
+    "runtime_observations",
+    "evaluation_unknown_flags",
+    "external_gt_availability"
+  ],
+  "title": "V2 trial outcome",
+  "type": "object",
+  "unknown_values_are_not_pass": true
+}

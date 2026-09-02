@@ -1,0 +1,149 @@
+{
+  "direct_upstream": {
+    "base_branch": "freeze-backup-token-runtime-schema-v2",
+    "base_head": "8b47c5c9af05bbb022af4a964a6c8989231bc1bc",
+    "branch": "freeze-terminal-emergency-policy-v2",
+    "draft": true,
+    "head": "5595e56b756291881fb9f6f17ba3d7551263574f",
+    "pr": 113,
+    "state": "OPEN"
+  },
+  "frozen_inputs": [
+    {
+      "git_blob_sha1": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+      "mode": "100644",
+      "object_type": "blob",
+      "path": "run.py",
+      "sha256": "c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c",
+      "size": 8127
+    },
+    {
+      "git_blob_sha1": "ab26f3d7a2247211d6d95f0b8d74cd8529f55d33",
+      "mode": "100644",
+      "object_type": "blob",
+      "path": "reproduction/specification/cross_layer_geometry_authority_v2/CROSS_LAYER_GEOMETRY_AUTHORITY_V2.json",
+      "sha256": "36cdd8114e0100da243b8a1786452b1a2bfd5297138bd6dfcd661bbc7803082e",
+      "size": 1301
+    },
+    {
+      "git_blob_sha1": "c56032a3009ac6c62866093a1c6266d3ca50cee4",
+      "mode": "100644",
+      "object_type": "blob",
+      "path": "reproduction/specification/control_authority_v2/SELECTED_CONTROL_ACTUATOR_CONTRACT_V2.json",
+      "sha256": "66eb339744248984e593c196162120f1d8578d4666c0337d828c8c868e65be83",
+      "size": 2574
+    },
+    {
+      "git_blob_sha1": "50f757dd637892f623b2dfb7aea3da1ba7fff5e8",
+      "mode": "100644",
+      "object_type": "blob",
+      "path": "reproduction/specification/runtime_assurance_deadline_authority_v2/NONCLAIMS.md",
+      "sha256": "c034ab9c6ca981e6cc981bcc3d09d26fa743afa7e2fcd674bdf898cb8557f2d6",
+      "size": 351
+    },
+    {
+      "git_blob_sha1": "40cf32d219146917ea69687e4ad0b7f5f8d09a2d",
+      "mode": "100644",
+      "object_type": "blob",
+      "path": "reproduction/specification/backup_token_runtime_schema_v2/BACKUP_TOKEN_RUNTIME_STATE_V2.json",
+      "sha256": "9265179407853dd20bfc36c4debb242ff1567d45f1701395a2a3bdeb7f0b7483",
+      "size": 608
+    },
+    {
+      "git_blob_sha1": "febf02c78fd3576ac410cec3b8dacd2cbdf8a881",
+      "mode": "100644",
+      "object_type": "blob",
+      "path": "reproduction/specification/backup_token_runtime_schema_v2/TERMINAL_REFERENCE_BOUNDARY_V2.md",
+      "sha256": "3ee76720c58993d168cd2136dee41681a95e4d76cf7b722aeb303cdc9e9aacba",
+      "size": 637
+    },
+    {
+      "git_blob_sha1": "6ebdf59b6e43b2f4dbb3908d37587bde5713c38a",
+      "mode": "100644",
+      "object_type": "blob",
+      "path": "reproduction/specification/terminal_emergency_policy_v2/FAIL_CLOSE_TERMINOLOGY_V2.json",
+      "sha256": "7a017baf17cef24ac86b7e49832ba4fc39c221844d7a19a390e33fad711233f7",
+      "size": 755
+    },
+    {
+      "git_blob_sha1": "9431d86fd1054e32a211bb1708667c452438375f",
+      "mode": "100644",
+      "object_type": "blob",
+      "path": "reproduction/specification/terminal_emergency_policy_v2/TERMINAL_SAFETY_LIVENESS_BOUNDARY_V2.md",
+      "sha256": "484321810f56c001a543cec2388dcf1d1577b2b282db6da3f556fcb3e7e524c1",
+      "size": 547
+    },
+    {
+      "git_blob_sha1": "579d5593b68cffb6180abdc39d498e605b2b7dd7",
+      "mode": "100644",
+      "object_type": "blob",
+      "path": "reproduction/specification/terminal_emergency_policy_v2/TERMINAL_EMERGENCY_POLICY_CONTRACT_V2.json",
+      "sha256": "0480fe5cd91257d0c6d9c208c5794db0407304cb3e4613a4dc45b58e18391787",
+      "size": 1095
+    },
+    {
+      "git_blob_sha1": "99948387177096807f293bf7fe54db7d2ab50aa0",
+      "mode": "100644",
+      "object_type": "blob",
+      "path": "reproduction/specification/terminal_emergency_policy_v2/UPDATED_PREIMPLEMENTATION_BLOCKER_REGISTER_V5.json",
+      "sha256": "aabf163b79d6e061207c1fd4d932e497df81cf7cf8a32763f2a51019159a81e6",
+      "size": 1395
+    },
+    {
+      "git_blob_sha1": "cdf34111cdfa947e0988b8d2077ef0a42c96d387",
+      "mode": "100644",
+      "object_type": "blob",
+      "path": "reproduction/specification/terminal_emergency_policy_v2/UPDATED_PREIMPLEMENTATION_DEPENDENCY_DAG_V5.json",
+      "sha256": "01c985dfa93fd8a1c79be88ea568cc8f29cd1161ec1069be24c4784dc8c4d51d",
+      "size": 1508
+    },
+    {
+      "git_blob_sha1": "28abe89f47a4f888221baa911b20c517c526c3c1",
+      "mode": "100644",
+      "object_type": "blob",
+      "path": "work/risk_aware_cbf/scripts/run_risk_aware_v1_pre_cbf_comparison.py",
+      "sha256": "e846ff625ed52d197844bdb2f56df72ab8e09cb3d94f0b42724520112268176e",
+      "size": 54443
+    },
+    {
+      "git_blob_sha1": "1bcce74cf9eb1c0a486d2bb7c0794e88fc06663f",
+      "mode": "100644",
+      "object_type": "blob",
+      "path": "work/risk_aware_cbf/scripts/run_v4b_corrective_dt_filter.py",
+      "sha256": "573c0587e238eb160928a8b5349239fc852af91791877d87f6abe55e0062f862",
+      "size": 39034
+    },
+    {
+      "git_blob_sha1": "64e2dcaa71bd79d71530bd434d02fe317253cb5c",
+      "mode": "100644",
+      "object_type": "blob",
+      "path": "reproduction/cross_dataset/replica_bounded_direct_goal_gt_gaussian_map_v1/replica_mesh_collision_oracle_contract.json",
+      "sha256": "e3b082d4e603320794024e41adaf3a93d89fe40e4f9c26e4d3e0422f9785b83a",
+      "size": 465
+    },
+    {
+      "git_blob_sha1": "844a008dd7d4edd5cb2528447fa26904a87a1095",
+      "mode": "100644",
+      "object_type": "blob",
+      "path": "reproduction/cross_dataset/replica_gt_executable_safety_method_matrix_v1/input_freeze/reference_mesh_identity.json",
+      "sha256": "3030fc4b69fe3b31b536dc57a8b9147e2ea8315f6a3c7b0c799f8f0cdf7092b1",
+      "size": 340
+    }
+  ],
+  "gpu_execution_count": 0,
+  "outcome_data_read_count": 0,
+  "preserved_upstream_pr_heads": {
+    "107": "a60665f3e29085cc18f1ee03828198074f52e4f0",
+    "108": "f04a2077c4f483f20696bb5515c576cd75ddf449",
+    "109": "729b3c78a81f2f3ca8948916b64dcb6e2c50fc66",
+    "110": "52467acd2ab82c300a8f6c3ce712ab0d59d4f4cf",
+    "111": "a658c858995d76a4baa1ad119701e2706df075be",
+    "112": "8b47c5c9af05bbb022af4a964a6c8989231bc1bc",
+    "113": "5595e56b756291881fb9f6f17ba3d7551263574f"
+  },
+  "repository": "kenqiana04/safer-splat",
+  "runtime_implementation_count": 0,
+  "schema_version": "INDEPENDENT_EVALUATION_ORACLE_INPUT_LOCK_V2",
+  "scope": "SPECIFICATION_STATIC_VALIDATION_ONLY",
+  "trial_execution_count": 0
+}

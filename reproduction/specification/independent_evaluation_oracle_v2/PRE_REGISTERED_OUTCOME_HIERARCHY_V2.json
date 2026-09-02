@@ -1,0 +1,29 @@
+{
+  "external_gt_policy": "May add a Tier-A scene-scoped outcome when authority exists, but must not hide Tier-B results.",
+  "frozen_before_active_results": true,
+  "internal_L2_PASS_rate_is_primary_safety_efficacy": false,
+  "primary": {
+    "assurance_system": {
+      "metric": "ASSURANCE_BOUNDARY_incidence"
+    },
+    "safety": {
+      "metric": "trial_level_represented_map_collision_proxy_incidence",
+      "scope": "REPRESENTED_MAP_RELATIVE",
+      "tier": "TIER_B"
+    },
+    "task_liveness": {
+      "companion": "normalized_progress",
+      "metric": "goal_reached_rate"
+    }
+  },
+  "schema_version": "PRE_REGISTERED_OUTCOME_HIERARCHY_V2",
+  "secondary": [
+    "minimum_clearance",
+    "certification_margin_violation",
+    "backup_activation_rate",
+    "terminal_intervention_rate",
+    "alternative_commit_rate",
+    "runtime_observations",
+    "internal_certification_distributions"
+  ]
+}
