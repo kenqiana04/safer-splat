@@ -1,0 +1,17 @@
+{
+  "schema_version": "alternative_source_authority_execution_lock_v2",
+  "design_commit": "030b1b96910529ee5c628f70c366aa821a39fabc",
+  "upstream_pr_110_head": "52467acd2ab82c300a8f6c3ce712ab0d59d4f4cf",
+  "artifacts": [
+    {"path": "reproduction/specification/alternative_source_authority_v2/ALTERNATIVE_SOURCE_AUTHORITY_V2.json", "git_blob": "bad6ea6fc635e09852b7253225f1b85197d6ad5f", "sha256": "1ed8e34e9756e4e7142a6d6860dc44abc5d2e03f25bbd047b2ab9dc8c3ad5f7a"},
+    {"path": "reproduction/specification/alternative_source_authority_v2/ALTERNATIVE_SOURCE_TAXONOMY_V2.json", "git_blob": "cddd6e3b126123d14418652cf714b30a38801eca", "sha256": "7bf596b299129fdaa387f9bec64851f92d84722045c0253861650a5987091a4f"},
+    {"path": "reproduction/specification/alternative_source_authority_v2/CANDIDATE_IDENTITY_CONTRACT_V2.json", "git_blob": "820ab479436eb38b0df9ffca6f2eb593202eed7f", "sha256": "2198fb5bc774f60585a5de10431803d2307c8714febffb3daf99c86b224480a5"},
+    {"path": "reproduction/specification/alternative_source_authority_v2/ALTERNATIVE_RECERTIFICATION_CHAIN_V2.json", "git_blob": "9f946be0822d491363da16d710329d37d8055f44", "sha256": "1ce3915fa110f291bbd39b70bdce80b9396b0e310b99feccf0536ad7253af900"},
+    {"path": "reproduction/specification/alternative_source_authority_v2/ALTERNATIVE_FAILURE_TAXONOMY_V2.json", "git_blob": "c9becb77d879c6aaeb8d4acb3c0593d09a042daa", "sha256": "f5158fb7be247b5e7d29074d3636cea69f5610c8eddcfafb658ad291f4d86c85"},
+    {"path": "reproduction/specification/alternative_source_authority_v2/ALTERNATIVE_AUTHORITY_INVARIANTS_V2.json", "git_blob": "176d325b6c7bafa09288cd546db7975341833406", "sha256": "1232c6099df8db55c5f206e3416895aaec5f7970a53d55110d13878b9dcd9af8"},
+    {"path": "reproduction/specification/alternative_source_authority_v2/contract_rules.py", "git_blob": "36ed03bfe33685190c4a1d048eaf7171f640e519", "sha256": "37ed81668c9080ad183be94bf8e69ce122dd80a13c69a3182f2e09740faa343d"},
+    {"path": "reproduction/specification/alternative_source_authority_v2/tests/test_alternative_source_authority_contract.py", "git_blob": "732acc52765fc8919af677215d78de78e8a81766", "sha256": "72df55918a81e7eb79687cd3eebc5d11625311dee3338303a6e3042d671fe886"},
+    {"path": "reproduction/specification/alternative_source_authority_v2/validate_alternative_source_authority_v2.py", "git_blob": "0c19f218982608f795497c9f34fd849717c0bceb", "sha256": "22d1324de92f7770f128b531ff89fe068622e0b76789c8f80b0b0422a57e19bc"}
+  ],
+  "post_lock_design_mutation_allowed": false
+}

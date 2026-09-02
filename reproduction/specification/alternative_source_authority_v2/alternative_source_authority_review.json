@@ -1,0 +1,15 @@
+{
+  "verdict": "PASS",
+  "single_authority_owner": "PASS_SUPERVISOR_ONLY",
+  "candidate_provenance_completeness": "PASS_SEVEN_IMMUTABLE_FIELDS",
+  "synthetic_and_outcome_conditioned_generation": "PROHIBITED",
+  "candidate_identity_uniqueness": "PASS_ANY_FIELD_CHANGE_REQUIRES_NEW_ID",
+  "mandatory_recertification": "PASS_FRESH_C0_L1_L2_L3_NO_REUSE",
+  "deadline_compatibility": "PASS_OPEN_ONLY",
+  "actuator_geometry_map_compatibility": "PASS_SHARED_FROZEN_AUTHORITIES_REQUIRED",
+  "backup_compatibility": "PASS_ROLE_SEPARATION; RUNTIME_TOKEN_SCHEMA_REMAINS_BLOCKED",
+  "unknown_semantics": "PASS_UNKNOWN_SOURCE_IS_NON_SUCCESS_AND_NOT_UNSAFE",
+  "critical_blockers": [],
+  "remaining_implementation_blockers": ["BACKUP_TOKEN_RUNTIME_SCHEMA", "TERMINAL_EMERGENCY_POLICY", "INDEPENDENT_EVALUATION_ORACLE"],
+  "claims_boundary": "SPECIFICATION_ONLY_NO_RUNTIME_OR_PERFORMANCE_CLAIM"
+}
