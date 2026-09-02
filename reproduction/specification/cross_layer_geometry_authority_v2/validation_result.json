@@ -1,0 +1,112 @@
+{
+  "check_count": 26,
+  "checks": [
+    {
+      "check": "PR107 exact identity",
+      "status": "PASS"
+    },
+    {
+      "check": "all input raw Git blobs exact",
+      "status": "PASS"
+    },
+    {
+      "check": "task-local diff only",
+      "status": "PASS"
+    },
+    {
+      "check": "controller and runtime source unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "PR106 artifacts unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "PR107 artifacts unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "historical V1 artifacts unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "controller G0 exact and unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "G1 margin exact and single application",
+      "status": "PASS"
+    },
+    {
+      "check": "canonical certification radius exact",
+      "status": "PASS"
+    },
+    {
+      "check": "G2 segment reserve exact",
+      "status": "PASS"
+    },
+    {
+      "check": "G3 immutable map authority",
+      "status": "PASS"
+    },
+    {
+      "check": "no historical fallback",
+      "status": "PASS"
+    },
+    {
+      "check": "canonical raw-byte contract encoding",
+      "status": "PASS"
+    },
+    {
+      "check": "execution-lock contract SHA",
+      "status": "PASS"
+    },
+    {
+      "check": "execution lock binds design commit",
+      "status": "PASS"
+    },
+    {
+      "check": "consumer inventory complete",
+      "status": "PASS"
+    },
+    {
+      "check": "all certification consumers use 0.025",
+      "status": "PASS"
+    },
+    {
+      "check": "controller inventory remains 0.015",
+      "status": "PASS"
+    },
+    {
+      "check": "all segment consumers use rho 0",
+      "status": "PASS"
+    },
+    {
+      "check": "all geometry consumers use G3",
+      "status": "PASS"
+    },
+    {
+      "check": "legacy quarantine preserves V1 and blocks fallback",
+      "status": "PASS"
+    },
+    {
+      "check": "method logic compatibility",
+      "status": "PASS"
+    },
+    {
+      "check": "cross-layer invariants complete",
+      "status": "PASS"
+    },
+    {
+      "check": "execution lock freezes exactly ten tests",
+      "status": "PASS"
+    },
+    {
+      "check": "no runtime rollout or GPU execution",
+      "status": "PASS"
+    }
+  ],
+  "failed_count": 0,
+  "passed_count": 26,
+  "status": "PASS_CROSS_LAYER_GEOMETRY_AUTHORITY_V2_VALIDATION"
+}

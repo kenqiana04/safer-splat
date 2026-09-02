@@ -1,0 +1,20 @@
+{
+  "answers": {
+    "base_authority_unique": "YES: G0 CONTROLLER_GEOMETRY_AUTHORITY is the only base-radius authority.",
+    "canonical_cert_effective_radius": "0.025 m.",
+    "controller_remains_0015": "YES; controller mutation count is zero.",
+    "double_inflation": "NO; G1 is applied exactly once at composition.",
+    "l0_r0_l1_same_contract": "YES for V2 certification geometry; R0 is diagnostic and L1 contains p_k.",
+    "l2_detached_from_legacy_011": "YES; historical loader is quarantined and typed V2 injection is required.",
+    "l3_detached": "YES; backup segments, terminal point, and zero-hold share canonical injection.",
+    "l5_detached": "YES; terminal point and zero-hold share canonical injection.",
+    "margin_legitimate": "YES; G1 is the pre-existing PR106 certification margin 0.01 m.",
+    "next_dag_task": "FREEZE_SELECTED_CONTROL_ACTUATOR_AUTHORITY_V2",
+    "rho_seg_separate": "YES; G2 is independently 0.0 m and is not G1.",
+    "runtime_still_blocked": "YES; six preimplementation authority blockers remain.",
+    "unauthorized_layer_geometry": "NONE; every listed certification consumer resolves to 0.025/G3.",
+    "v1_preserved": "YES; historical 0.11 remains valid under frozen V1 and no V1 file changed."
+  },
+  "critical_blockers": [],
+  "verdict": "PASS_CROSS_LAYER_GEOMETRY_AUTHORITY_FROZEN"
+}
