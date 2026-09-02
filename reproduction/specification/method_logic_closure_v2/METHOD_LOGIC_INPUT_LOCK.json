@@ -1,0 +1,42 @@
+{
+  "schema_version": "METHOD_LOGIC_INPUT_LOCK_V2",
+  "upstream": {
+    "repository": "kenqiana04/safer-splat",
+    "pull_request": 106,
+    "state": "OPEN_DRAFT",
+    "title": "[Draft] Freeze L0/controller geometry contract V2",
+    "branch": "design-l0-controller-geometry-contract-v2",
+    "head_sha": "bb44f3058003585ce31f3b6a132eb1c28114f4e3",
+    "base_branch": "diagnose-l0-start-safe-failure-semantics-v1",
+    "base_sha": "3c2ad6122d61436c845cb449c41fae0cd2c1608f"
+  },
+  "geometry": {
+    "contract": "L0_CONTROLLER_GEOMETRY_CONTRACT_V2",
+    "canonical_contract_sha256": "23ba083d871d17f6389dde2872068e7439cba6898197572fc34246b5b46da7f3",
+    "controller_geometry_authority": "CONTROLLER_GEOMETRY_AUTHORITY",
+    "controller_radius_m": 0.015,
+    "certification_margin_m": 0.01,
+    "effective_l0_radius_m": 0.025
+  },
+  "dynamics_contract": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1",
+  "future_segment_contract": "FIRST_CONTROL_AFFECTED_SEGMENT",
+  "source_identities": {
+    "core_v1_state_transition_table": {"path": "reproduction/specification/core_causal_architecture_specification_v1/architecture/state_transition_table.csv", "sha256": "a3be763d0e81d14bba48cd09d508390fce8ab153cd58df6e4901c8b1719f51d0", "git_blob": "89b9005025c687675b387f68ef6b470ede966e40"},
+    "core_v1_failure_types": {"path": "reproduction/specification/core_causal_architecture_specification_v1/architecture/failure_types.csv", "sha256": "7245c89faa57616db14ba509b63aaedb19d645d7b2f3e9a6126be62654540886", "git_blob": "13334d2efa70490e9208b696ea76e0c5179b6459"},
+    "core_v1_failure_taxonomy": {"path": "reproduction/specification/core_causal_architecture_specification_v1/architecture/failure_taxonomy.md", "sha256": "ef2bff6183d4b2447e1e6c121da32f449c0d03379a47d85a9677c38cfa15847e", "git_blob": "920ecad2eab18e26d3342400e100644c2ce2f4f3"},
+    "core_v2_state_delta": {"path": "reproduction/specification/core_v2_causal_increment_specification_v1/STATE_MACHINE_DELTA_V1.md", "sha256": "d572e14b3146a7a41772ef94424798933a0a51499546a0b487cd426712bace44", "git_blob": "8df10764e3c9dae7964b6be632a39143ed0b3611"},
+    "core_v2_h1": {"path": "reproduction/specification/core_v2_causal_increment_specification_v1/H1_SEGMENT_CONTRACT.md", "sha256": "3f001037b1e3044a71aba86737551c4bd9c379070436951c93bb5dda883fbf90", "git_blob": "a9b38320d23e3b0528d34467b3169977c6f1be47"},
+    "core_v2_l2": {"path": "reproduction/specification/core_v2_causal_increment_specification_v1/L2_PREDICATE_CONTRACT.md", "sha256": "b1844a57d1944d082279d3c38d1545a8ead270a9d8498eed0b5d6ed35d49ae83", "git_blob": "99bc571ec6ecef4188e9977ae468085675af3c9a"},
+    "core_v2_l2_l3": {"path": "reproduction/specification/core_v2_causal_increment_specification_v1/l2_l3_separation_contract.json", "sha256": "0f28b4fb78061ba483db8b11fd9cf420539f297857ab2d52fb4aa6008982a286", "git_blob": "eec3ddcb436db3553c2f3e0b103c1fdb3ecbbc62"},
+    "shadow_architecture": {"path": "reproduction/design/l2_h1_on_policy_shadow_observation_v1/SELECTED_OBSERVATION_ARCHITECTURE.md", "sha256": "d70f640ef1b60fd74f0edc39a3b7f3807b324ff7cd8340afe6d7b3b0dbe6dfb2", "git_blob": "1abe6a4e666f5036e745dcf1f5a075fd2937236a"},
+    "shadow_kill_gates": {"path": "reproduction/design/l2_h1_on_policy_shadow_observation_v1/kill_gates.json", "sha256": "cc631751553a5b8ba4706fc14802bfe236260574bd8eab42deb4523857b4881f", "git_blob": "592c402bf7b08f968afa04820d791d7c443c5646"},
+    "controller": {"path": "run.py", "sha256": "a3a91c8f7b667816b483c952da7dc814cd151fabb1bc32b68e0401d77d7aa123", "git_blob": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a"},
+    "cbf": {"path": "cbf/cbf_utils.py", "sha256": "e38dea577dd207e9e3c5a1bfdcf2d75b675a899f29c982b89ea8b2694277696b", "git_blob": "7c6e1300b125cc0a2a950ac2835a1fbe3d0de113"}
+  },
+  "task_is_post_hoc_architecture_hardening": true,
+  "runtime_mutation_authority": false,
+  "scientific_result_mutation_authority": false,
+  "V1_reinterpretation_allowed": false,
+  "gpu_authority": false,
+  "rollout_authority": false
+}

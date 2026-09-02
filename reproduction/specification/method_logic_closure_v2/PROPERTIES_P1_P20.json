@@ -1,0 +1,25 @@
+{
+  "schema_version": "METHOD_LOGIC_PROPERTIES_P1_P20_V2",
+  "properties": [
+    {"id":"P1","name":"STATE_TOTALITY","requirement":"Every reachable nonterminal state and legal observation has a next transition."},
+    {"id":"P2","name":"TRANSITION_DETERMINISM","requirement":"A state and observation produce exactly one action decision."},
+    {"id":"P3","name":"COMMIT_SOUNDNESS","requirement":"Navigation commit requires C0 PASS, L2 PASS, L3 WITNESS_FOUND, and prerequisites."},
+    {"id":"P4","name":"NO_POSTCOMMIT_CERTIFICATION_IN_ACTIVE_MODE","requirement":"Required active checks occur before plant commit."},
+    {"id":"P5","name":"ALTERNATIVE_RECERTIFICATION","requirement":"Every alternative commit traverses C0, L2, and L3."},
+    {"id":"P6","name":"NO_ALTERNATIVE_FOR_L1_FAIL","requirement":"L1 FAIL never enters alternative search."},
+    {"id":"P7","name":"UNKNOWN_IS_NOT_FAIL_OR_FREE","requirement":"UNKNOWN is neither PASS nor candidate-unsafe FAIL."},
+    {"id":"P8","name":"UNKNOWN_SCOPE_ROUTING","requirement":"Global and candidate-local UNKNOWN routes remain distinct."},
+    {"id":"P9","name":"BACKUP_AVAILABILITY_FOR_NAV_COMMIT","requirement":"Navigation commit creates the next-cycle fallback token."},
+    {"id":"P10","name":"BACKUP_RETENTION","requirement":"A valid old backup is retained until a new witness is ready."},
+    {"id":"P11","name":"ATOMIC_BACKUP_HANDOFF","requirement":"Old-to-new replacement has no NONE gap."},
+    {"id":"P12","name":"DEADLINE_CLOSURE","requirement":"At guard the supervisor selects a certified action or explicit assurance boundary."},
+    {"id":"P13","name":"TERMINAL_PRIORITY_SOUNDNESS","requirement":"Terminal membership cannot preempt available certified navigation when the goal is not reached."},
+    {"id":"P14","name":"BOUNDED_ALTERNATIVE_SEARCH","requirement":"Alternative search terminates within the finite budget and guard."},
+    {"id":"P15","name":"FAILURE_EXCLUSIVITY","requirement":"Candidate, global, deadline, map, and authority routes do not masquerade as each other."},
+    {"id":"P16","name":"INITIAL_RUNTIME_REPAIR_SEPARATION","requirement":"Runtime failure never invokes initialization projection."},
+    {"id":"P17","name":"TEMPORAL_SEGMENT_CONTIGUITY","requirement":"L1, L2, and backup handoff have no index gap or unintended duplicate."},
+    {"id":"P18","name":"ASSURANCE_BOUNDARY_EXPLICIT","requirement":"No certified action produces OUTSIDE_METHOD rather than a fictional safe stop."},
+    {"id":"P19","name":"SAFETY_LIVENESS_SEPARATION","requirement":"Backup or terminal action does not itself assert task success."},
+    {"id":"P20","name":"RECURSIVE_HANDOFF","requirement":"Navigation commit carries a valid next-cycle fallback or equivalent certified continuation."}
+  ]
+}
