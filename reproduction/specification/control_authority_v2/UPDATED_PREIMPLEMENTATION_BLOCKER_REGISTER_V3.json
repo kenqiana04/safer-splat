@@ -1,0 +1,16 @@
+{
+  "automatically_selected_only_next_task": "FREEZE_RUNTIME_ASSURANCE_DEADLINE_AUTHORITY_V2",
+  "base_register_source": "reproduction/specification/cross_layer_geometry_authority_v2/UPDATED_PREIMPLEMENTATION_BLOCKER_REGISTER_V2.json",
+  "blockers": [
+    {"id":"CROSS_LAYER_GEOMETRY_AUTHORITY","status":"RESOLVED_BY_PR108"},
+    {"id":"SELECTED_CONTROL_ACTUATOR_AUTHORITY","status":"RESOLVED_BY_SELECTED_CONTROL_ACTUATOR_AUTHORITY_V2"},
+    {"id":"DEADLINE_AUTHORITY","next_task":"FREEZE_RUNTIME_ASSURANCE_DEADLINE_AUTHORITY_V2","priority":3,"status":"UNRESOLVED"},
+    {"id":"ALTERNATIVE_SOURCE","next_task":"FREEZE_L4_NATIVE_ALTERNATIVE_SOURCE_V2","priority":4,"status":"UNRESOLVED"},
+    {"id":"TERMINAL_EMERGENCY_POLICY","next_task":"FREEZE_TERMINAL_AND_EXTERNAL_EMERGENCY_POLICY_V2","priority":5,"status":"UNRESOLVED"},
+    {"id":"BACKUP_TOKEN_RUNTIME_SCHEMA","next_task":"FREEZE_BACKUP_TOKEN_RUNTIME_SCHEMA_V2","priority":6,"status":"UNRESOLVED"},
+    {"id":"INDEPENDENT_EVALUATION_ORACLE","next_task":"FREEZE_INDEPENDENT_SAFETY_EVALUATION_ORACLE_V2","priority":7,"status":"UNRESOLVED"}
+  ],
+  "earliest_unresolved_prerequisite": "DEADLINE_AUTHORITY",
+  "full_runtime_implementation_allowed": false,
+  "schema_version": "PREIMPLEMENTATION_BLOCKER_REGISTER_V3"
+}
