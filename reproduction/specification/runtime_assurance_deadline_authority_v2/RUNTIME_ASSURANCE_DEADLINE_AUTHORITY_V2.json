@@ -1,0 +1,31 @@
+{
+  "authority_id": "RUNTIME_DEADLINE_AUTHORITY",
+  "authority_owner": "SUPERVISOR",
+  "authority_owner_count": 1,
+  "clock_contract": {
+    "clock_identity": "REQUIRED_BEFORE_IMPLEMENTATION",
+    "monotonic_required": true,
+    "numeric_defaults_authorized": false
+  },
+  "configuration_contract": {
+    "required_before_runtime": ["cycle_deadline_duration", "stage_budgets", "warning_reserve", "latest_safe_commit", "clock_identity"],
+    "missing_configuration_result": "GLOBAL_DEADLINE_UNKNOWN"
+  },
+  "deadline_meaning": "SAFETY_DECISION_BOUNDARY_FOR_REMAINING_CERTIFICATION_AND_SEARCH_AUTHORITY",
+  "expiry_does_not_mean": ["UNSAFE", "COLLISION", "CONTROLLER_FAILURE", "TERMINAL_AUTOMATICALLY_SAFE"],
+  "states": {
+    "DEADLINE_OPEN": {"continue_validation": true, "start_high_cost_search": true},
+    "DEADLINE_WARNING": {"continue_already_started_bounded_certification": true, "start_high_cost_search": false},
+    "DEADLINE_EXPIRED": {"continue_search": false, "start_any_new_search": false, "absorbing_for_cycle": true}
+  },
+  "post_expiry_legal_choices": ["ALREADY_CERTIFIED_NAVIGATION_ACTION", "ALREADY_VALID_BACKUP_WITNESS", "ALREADY_CERTIFIED_TERMINAL_ACTION", "OUTSIDE_METHOD_BOUNDARY"],
+  "post_expiry_forbidden_choices": ["NOMINAL_CONTROL", "DESIRED_CONTROL", "UNCERTIFIED_CANDIDATE", "NEW_CANDIDATE_GENERATION", "NEW_ALTERNATIVE_SEARCH", "NEW_BACKUP_DISCOVERY", "NEW_TERMINAL_SEARCH"],
+  "certificate_layer_deadline_owners": {"CBF_SOLVER": false, "L1": false, "L2": false, "L3": false, "L4": false, "L5": false},
+  "unknown_semantics": {
+    "GLOBAL_DEADLINE_UNKNOWN": "GLOBAL_POLICY_OR_REMAINING_TIME_CANNOT_BE_ESTABLISHED",
+    "LOCAL_CERTIFICATE_TIMEOUT": "ONE_CERTIFICATE_COMPUTATION_EXHAUSTED_ITS_LOCAL_BOUND",
+    "ordinary_success_allowed": false
+  },
+  "runtime_counts": {"runtime_implementation": 0, "controller_mutation": 0, "dynamics_mutation": 0, "rollout": 0, "gpu_execution": 0, "formal_collection": 0, "benchmark": 0, "parameter_tuning": 0},
+  "nonclaims": ["REAL_TIME_GUARANTEE", "HARDWARE_LATENCY_GUARANTEE", "COMPUTATIONAL_SUPERIORITY", "COLLISION_REDUCTION", "DEPLOYMENT_READINESS"]
+}

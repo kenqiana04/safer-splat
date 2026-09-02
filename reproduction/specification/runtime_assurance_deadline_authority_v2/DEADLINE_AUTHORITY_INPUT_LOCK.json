@@ -1,0 +1,23 @@
+{
+  "schema_version": "runtime_deadline_authority_input_lock_v2",
+  "upstream": {
+    "pr_107": {"number": 107, "state": "OPEN", "draft": true, "head": "a60665f3e29085cc18f1ee03828198074f52e4f0"},
+    "pr_108": {"number": 108, "state": "OPEN", "draft": true, "head": "f04a2077c4f483f20696bb5515c576cd75ddf449"},
+    "pr_109": {"number": 109, "state": "OPEN", "draft": true, "branch": "freeze-selected-control-actuator-authority-v2", "head": "729b3c78a81f2f3ca8948916b64dcb6e2c50fc66"}
+  },
+  "frozen_blobs": [
+    {"path": "reproduction/specification/control_authority_v2/SELECTED_CONTROL_ACTUATOR_CONTRACT_V2.json", "git_blob": "c56032a3009ac6c62866093a1c6266d3ca50cee4", "sha256": "66eb339744248984e593c196162120f1d8578d4666c0337d828c8c868e65be83"},
+    {"path": "reproduction/specification/control_authority_v2/UPDATED_PREIMPLEMENTATION_BLOCKER_REGISTER_V3.json", "git_blob": "270fb70b354fe82d25176cf45c28c5db5d4d60c5", "sha256": "07793c7a20f31c8abbe45a8243489b1e3861fb0315b0b723c84593c647bda666"},
+    {"path": "reproduction/specification/control_authority_v2/UPDATED_PREIMPLEMENTATION_DEPENDENCY_DAG_V3.json", "git_blob": "affaf9b7593da2c3613bc2631ced2e9858824809", "sha256": "004ff8aa30c103e8f7e89a3178b85ed6b0cbfc0ae516e4e81e62ff226b54c171"},
+    {"path": "reproduction/specification/cross_layer_geometry_authority_v2/CROSS_LAYER_GEOMETRY_AUTHORITY_V2.json", "git_blob": "ab26f3d7a2247211d6d95f0b8d74cd8529f55d33", "sha256": "36cdd8114e0100da243b8a1786452b1a2bfd5297138bd6dfcd661bbc7803082e"},
+    {"path": "reproduction/specification/method_logic_closure_v2/STATE_TRANSITION_TABLE_V2.csv", "git_blob": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad", "sha256": "f7b288bd43acfd9893c1b9b325116dd6e89a88536f2f6c61c7f8aaacbcc32351"},
+    {"path": "reproduction/specification/method_logic_closure_v2/RUNTIME_ASSURANCE_SUPERVISOR_V2.md", "git_blob": "fd8f232db33a9fd8c61ca0d62c5ff26320e88bc1", "sha256": "02a8bf6726c5c5ffd39f7571905f321fd56b313903730aa2a3b52a99772f54cb"},
+    {"path": "reproduction/specification/method_logic_closure_v2/ALTERNATIVE_RECERTIFICATION_V2.md", "git_blob": "ad83d080e5edb9c670d40d0c2e261815f2b62cf8", "sha256": "85bc5a38a1a357f36070c472d918644ac7d5e74dbba39e9270a639205f6b907b"},
+    {"path": "reproduction/specification/method_logic_closure_v2/BACKUP_RETENTION_AND_HANDOFF_V2.md", "git_blob": "cf5589e45513f0015dc738d21d69475b78a96994", "sha256": "6b3680dc210acf783a84c90ce5605def27899d3bc7b9c5e6256c15d060ff2595"},
+    {"path": "reproduction/specification/method_logic_closure_v2/FAILURE_ROUTING_V2.csv", "git_blob": "8af5aad9bae8d77df255d9a0f68ef04055dfddad", "sha256": "7ac8c45bec1461f9882ac408d06fcc4006fcb677ed2346505946d3bbb90c713f"},
+    {"path": "reproduction/specification/method_logic_closure_v2/CROSS_LAYER_AUTHORITY_REQUIREMENTS_V2.json", "git_blob": "12b32a008bef57d25ac0d2d19d06358e5e1e4911", "sha256": "f227f16df7a5fa385a0fec5f8c6bc280b2d66e889726c9265053fde43a745c0d"},
+    {"path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/executable_safety_certifier.py", "git_blob": "011df74af180ed336f0771feeb26373d7a2ddf14", "sha256": "2fcc0555028d46236db3c4434b713d1c7d9a406da1adb573758996e514e9c1e4"},
+    {"path": "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/backup_certifier.py", "git_blob": "75c50fc71c8c386751db895f01cdd1260205af06", "sha256": "ba93f39dd7363e81726a811ffcdacf44deabf900d4b38e97e399ee14335991b8"}
+  ],
+  "scope": {"runtime_implementation": false, "controller_mutation": false, "rollout": false, "gpu_execution": false, "formal_collection": false}
+}

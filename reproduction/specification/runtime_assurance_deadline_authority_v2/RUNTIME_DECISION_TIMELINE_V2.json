@@ -1,0 +1,18 @@
+{
+  "timeline_id": "RUNTIME_DECISION_TIMELINE_V2",
+  "cycle_anchor": "t_k",
+  "clock": "SUPERVISOR_OWNED_MONOTONIC_CLOCK",
+  "stages": [
+    {"order": 0, "stage": "STATE_SNAPSHOT", "start": "START_TIMESTAMP", "end": "END_TIMESTAMP", "budget": "STAGE_BUDGET_REQUIRED"},
+    {"order": 1, "stage": "C0_CANDIDATE_ADMISSION", "start": "START_TIMESTAMP", "end": "END_TIMESTAMP", "budget": "STAGE_BUDGET_REQUIRED"},
+    {"order": 2, "stage": "L1_IMMEDIATE_CERTIFICATION", "start": "START_TIMESTAMP", "end": "END_TIMESTAMP", "budget": "STAGE_BUDGET_REQUIRED"},
+    {"order": 3, "stage": "L2_FUTURE_CERTIFICATION", "start": "START_TIMESTAMP", "end": "END_TIMESTAMP", "budget": "STAGE_BUDGET_REQUIRED"},
+    {"order": 4, "stage": "L3_BACKUP_WITNESS", "start": "START_TIMESTAMP", "end": "END_TIMESTAMP", "budget": "STAGE_BUDGET_REQUIRED"},
+    {"order": 5, "stage": "L4_ALTERNATIVE_SEARCH", "start": "START_TIMESTAMP", "end": "END_TIMESTAMP", "budget": "STAGE_BUDGET_REQUIRED"},
+    {"order": 6, "stage": "L5_TERMINAL_BOUNDARY", "start": "START_TIMESTAMP", "end": "END_TIMESTAMP", "budget": "STAGE_BUDGET_REQUIRED"},
+    {"order": 7, "stage": "SUPERVISOR_COMMIT", "start": "START_TIMESTAMP", "end": "END_TIMESTAMP", "budget": "ARBITRATION_RESERVE_REQUIRED"},
+    {"order": 8, "stage": "EXECUTION", "start": "START_TIMESTAMP", "end": "END_TIMESTAMP", "budget": "OUTSIDE_CERTIFICATE_SEARCH_BUDGET"}
+  ],
+  "infinite_wait_allowed": false,
+  "stage_start_gate": "SUPERVISOR_DEADLINE_STATE_AND_STAGE_BUDGET"
+}
