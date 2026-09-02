@@ -1,0 +1,130 @@
+{
+  "adversarial_scenario_count": 22,
+  "adversarial_scenario_pass_count": 22,
+  "alt_budget": 2,
+  "bounded_finite_exploration": true,
+  "checker": "model_check_method_logic_v2.py",
+  "correction_round_count": 0,
+  "counterexample_count": 0,
+  "hard_violation_counts": {
+    "alternative_bypass_path_count": 0,
+    "backup_gap_path_count": 0,
+    "deadline_without_decision_path_count": 0,
+    "false_safe_stop_claim_path_count": 0,
+    "infinite_or_unbounded_search_cycle_count": 0,
+    "nondeterministic_transition_count": 0,
+    "reachable_unhandled_state_count": 0,
+    "runtime_projection_repair_path_count": 0,
+    "temporal_index_gap_count": 0,
+    "terminal_priority_violation_count": 0,
+    "uncertified_navigation_commit_path_count": 0,
+    "unknown_misclassification_path_count": 0
+  },
+  "property_results": {
+    "P1": {
+      "name": "STATE_TOTALITY",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "P10": {
+      "name": "BACKUP_RETENTION",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "P11": {
+      "name": "ATOMIC_BACKUP_HANDOFF",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "P12": {
+      "name": "DEADLINE_CLOSURE",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "P13": {
+      "name": "TERMINAL_PRIORITY_SOUNDNESS",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "P14": {
+      "name": "BOUNDED_ALTERNATIVE_SEARCH",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "P15": {
+      "name": "FAILURE_EXCLUSIVITY",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "P16": {
+      "name": "INITIAL_RUNTIME_REPAIR_SEPARATION",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "P17": {
+      "name": "TEMPORAL_SEGMENT_CONTIGUITY",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "P18": {
+      "name": "ASSURANCE_BOUNDARY_EXPLICIT",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "P19": {
+      "name": "SAFETY_LIVENESS_SEPARATION",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "P2": {
+      "name": "TRANSITION_DETERMINISM",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "P20": {
+      "name": "RECURSIVE_HANDOFF",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "P3": {
+      "name": "COMMIT_SOUNDNESS",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "P4": {
+      "name": "NO_POSTCOMMIT_CERTIFICATION_IN_ACTIVE_MODE",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "P5": {
+      "name": "ALTERNATIVE_RECERTIFICATION",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "P6": {
+      "name": "NO_ALTERNATIVE_FOR_L1_FAIL",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "P7": {
+      "name": "UNKNOWN_IS_NOT_FAIL_OR_FREE",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "P8": {
+      "name": "UNKNOWN_SCOPE_ROUTING",
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "P9": {
+      "name": "BACKUP_AVAILABILITY_FOR_NAV_COMMIT",
+      "status": "PASS",
+      "violation_count": 0
+    }
+  },
+  "reachable_state_count": 10700,
+  "schema_version": "METHOD_LOGIC_MODEL_CHECK_RESULT_V2",
+  "status": "PASS_METHOD_LOGIC_MODEL_CHECK_V2",
+  "stdlib_only": true,
+  "transition_edge_count": 18032
+}

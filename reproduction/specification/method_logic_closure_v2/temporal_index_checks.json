@@ -1,0 +1,15 @@
+{
+  "schema_version":"TEMPORAL_INDEX_CHECKS_V2",
+  "model":"POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1",
+  "checks":[
+    {"id":"T1","claim":"L1 end equals L2 start","lhs":"p_(k+1)","rhs":"p_(k+1)","status":"PASS"},
+    {"id":"T2","claim":"first candidate-sensitive endpoint is p_(k+2)","expression":"p_k+2dt*v_k+dt^2*u_k","status":"PASS"},
+    {"id":"T3","claim":"backup witness starts after candidate at x_(k+1)","status":"PASS"},
+    {"id":"T4","claim":"retained tail first action is u_(k+1)","status":"PASS"},
+    {"id":"T5","claim":"new token becomes valid at cycle k+1 only after atomic commit","status":"PASS"},
+    {"id":"T6","claim":"terminal zero hold is an intentional certified transition","status":"PASS"}
+  ],
+  "gap_count":0,
+  "unintended_duplicate_count":0,
+  "off_by_one_count":0
+}
