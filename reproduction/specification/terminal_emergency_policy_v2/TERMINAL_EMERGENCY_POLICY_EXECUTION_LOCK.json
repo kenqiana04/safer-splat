@@ -1,0 +1,18 @@
+{
+  "schema_version": "TERMINAL_EMERGENCY_POLICY_EXECUTION_LOCK_V2",
+  "design_commit": "3b1958c0b67f9e549cff6593bcdf0eb465058c04",
+  "upstream_pr_112_head": "8b47c5c9af05bbb022af4a964a6c8989231bc1bc",
+  "artifacts": [
+    {"path":"reproduction/specification/terminal_emergency_policy_v2/TERMINAL_ACTION_IDENTITY_V2.json","git_blob":"7103f5464ec4ecca4f3d55d2dcc94d09bcfe77cd","sha256":"ac28666c42523fabc6c390a95bb4abd4527301bde0bf25a35d3fec62a537524e"},
+    {"path":"reproduction/specification/terminal_emergency_policy_v2/TERMINAL_CERTIFICATE_CONTRACT_V2.json","git_blob":"bc76316ad89b6b2ea5457af663299454d587f6ee","sha256":"04dd79e723bc4b2ed9d887ede05abbc5dd04c133ebc201ec1cc341e2f2d2c629"},
+    {"path":"reproduction/specification/terminal_emergency_policy_v2/TERMINAL_ELIGIBILITY_CONTEXTS_V2.json","git_blob":"270daa5b44ec635b1462684b5d12e80a021c3e0f","sha256":"76363d9675ffd949947237e091be0c02182b92e8d3663aceb70d0f3cfab80e84"},
+    {"path":"reproduction/specification/terminal_emergency_policy_v2/TERMINAL_EMERGENCY_POLICY_CONTRACT_V2.json","git_blob":"579d5593b68cffb6180abdc39d498e605b2b7dd7","sha256":"0480fe5cd91257d0c6d9c208c5794db0407304cb3e4613a4dc45b58e18391787"},
+    {"path":"reproduction/specification/terminal_emergency_policy_v2/TERMINAL_EMERGENCY_POLICY_INVARIANTS_V2.json","git_blob":"77e9daddd675144a7d35367725c78512e11d4ebd","sha256":"9b9d309d16223dedceeb40f19c6944e5b65354700a3d7dfc4647d6b819658a3c"},
+    {"path":"reproduction/specification/terminal_emergency_policy_v2/TERMINAL_EMERGENCY_POLICY_PROPERTIES_V2.json","git_blob":"ac33052e254b8ab2ae7bdb0436601ef99293b156","sha256":"74e3fefd7129fab6ef8b8b5ade24b28be6d3a6db9585e333c23a66528ee0ac06"},
+    {"path":"reproduction/specification/terminal_emergency_policy_v2/model_check_terminal_emergency_policy_v2.py","git_blob":"b9a26c737adcc253d46ccf30123c672774937c79","sha256":"86dd7d12c6dc9fe66f0552d02e946487d2ced6448331fff74a7486d998752915"},
+    {"path":"reproduction/specification/terminal_emergency_policy_v2/TERMINAL_EMERGENCY_ADVERSARIAL_SCENARIOS_V2.json","git_blob":"2d633f8216fcd7b5eb083c6e57b1b1a6e2246e37","sha256":"47669c00fb77056e02be6915851ecc51ab4efebad49e90d6c081d007a4e85861"},
+    {"path":"reproduction/specification/terminal_emergency_policy_v2/tests/test_terminal_emergency_policy_v2.py","git_blob":"a3b6d00b794d431e7d150344a22afc0f897e8aba","sha256":"1e4f6623a42a73ae46c22979eae9dcbfa80016182ae59f9d8b2907a3c7b287d8"},
+    {"path":"reproduction/specification/terminal_emergency_policy_v2/validate_terminal_emergency_policy_v2.py","git_blob":"684ae9626ebefe026cf5b522b86ae202f258c6d8","sha256":"399938938ad651e884ff59e9a1c40945ccbf025c053e3a756332b583d15085f2"}
+  ],
+  "post_lock_design_mutation_allowed": false
+}

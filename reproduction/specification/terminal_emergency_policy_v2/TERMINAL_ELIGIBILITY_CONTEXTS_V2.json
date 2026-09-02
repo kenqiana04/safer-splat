@@ -1,0 +1,13 @@
+{
+  "schema_version": "TERMINAL_ELIGIBILITY_CONTEXTS_V2",
+  "eligibility_requires_all": ["TERMINAL_CERTIFICATE_READY", "CURRENT_STATE_IDENTITY_VALID", "CURRENT_TIME_INDEX_VALID", "MAP_AUTHORITY_VALID", "GEOMETRY_AUTHORITY_VALID", "ACTUATOR_AUTHORITY_VALID", "DYNAMICS_TIMEBASE_VALID", "TERMINAL_ACTION_EXACT_IDENTITY_VALID", "SUPERVISOR_CONTEXT_ELIGIBLE"],
+  "contexts": [
+    {"id":"TCTX_GOAL_HOLD","meaning":"task/goal authority explicitly allows holding the current certified terminal state","runtime_authority_status":"DEFINED_BUT_RUNTIME_AUTHORITY_UNRESOLVED","distance_to_goal_is_sufficient":false},
+    {"id":"TCTX_FALLBACK_NO_NAV_NO_VALID_BACKUP","meaning":"no timely certified navigation and no still-valid retained backup; a current terminal certificate may enter arbitration","runtime_authority_status":"POLICY_FROZEN"},
+    {"id":"TCTX_BACKUP_EXHAUSTED","meaning":"EXHAUSTED is only a routing fact; a current certificate and independently eligible Supervisor context remain mandatory","exhaustion_grants_terminal_authority":false},
+    {"id":"TCTX_EXTERNAL_EMERGENCY_REQUEST","meaning":"outside system may request use of an already method-certified terminal action; request cannot certify an action","external_authority_status":"UNRESOLVED_OUTSIDE_METHOD"}
+  ],
+  "terminal_certificate_ready_equals_eligible": false,
+  "membership_alone_eligible": false,
+  "unknown_as_eligible": false
+}

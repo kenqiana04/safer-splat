@@ -1,0 +1,29 @@
+{
+  "schema_version": "TERMINAL_EMERGENCY_POLICY_INVARIANTS_V2",
+  "invariants": [
+    {"id":"TP-01","statement":"terminal-set membership has no commit authority"},
+    {"id":"TP-02","statement":"terminal certificate has no selection authority"},
+    {"id":"TP-03","statement":"terminal action requires explicit current certificate"},
+    {"id":"TP-04","statement":"terminal eligibility requires explicit Supervisor context"},
+    {"id":"TP-05","statement":"normal certified navigation dominates terminal"},
+    {"id":"TP-06","statement":"valid retained backup dominates terminal"},
+    {"id":"TP-07","statement":"backup EXHAUSTED does not imply terminal authorization"},
+    {"id":"TP-08","statement":"terminal reference must be revalidated"},
+    {"id":"TP-09","statement":"deadline expiry cannot create terminal safety"},
+    {"id":"TP-10","statement":"already-ready terminal may remain selectable after expiry if valid"},
+    {"id":"TP-11","statement":"no new terminal certification after expiry"},
+    {"id":"TP-12","statement":"selected terminal vector equals executed vector"},
+    {"id":"TP-13","statement":"no hidden post-certification transform"},
+    {"id":"TP-14","statement":"geometry authority must match"},
+    {"id":"TP-15","statement":"actuator authority must match"},
+    {"id":"TP-16","statement":"map authority must match"},
+    {"id":"TP-17","statement":"state/time index must match"},
+    {"id":"TP-18","statement":"UNKNOWN never becomes terminal PASS"},
+    {"id":"TP-19","statement":"solver failure/program break is not terminal action"},
+    {"id":"TP-20","statement":"assurance boundary makes no physical safety claim"},
+    {"id":"TP-21","statement":"external emergency remains outside theorem unless separately frozen"},
+    {"id":"TP-22","statement":"terminal success is not navigation success"},
+    {"id":"TP-23","statement":"zero-velocity navigation start does not preempt normal navigation"},
+    {"id":"TP-24","statement":"no fallback to legacy V1 terminal-policy authority"}
+  ]
+}

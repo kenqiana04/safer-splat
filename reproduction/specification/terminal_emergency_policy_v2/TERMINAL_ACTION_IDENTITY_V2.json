@@ -1,0 +1,27 @@
+{
+  "schema_version": "TERMINAL_ACTION_IDENTITY_V2",
+  "canonical_action": {
+    "action_name": "TERMINAL_ZERO_HOLD",
+    "action_id": "terminal-action:sha256:9665531746e10e83904dc074cda83130ebe69337dc24fc60f76b953f1b63c2ae",
+    "canonical_material_sha256": "9665531746e10e83904dc074cda83130ebe69337dc24fc60f76b953f1b63c2ae",
+    "dtype": "IEEE754_BINARY64",
+    "dimension": 3,
+    "order": ["ax", "ay", "az"],
+    "vector": [0.0, 0.0, 0.0],
+    "vector_hex": ["0000000000000000", "0000000000000000", "0000000000000000"],
+    "source_evidence": "TerminalCertifier.certify creates Control((0.0,0.0,0.0),'TERMINAL_ZERO_HOLD','terminal-zero-hold')",
+    "legacy_primitive_identity": "BRAKING_TO_REST_TERMINAL_SET_V1"
+  },
+  "required_authorities": {
+    "geometry": "CERTIFICATION_GEOMETRY_AUTHORITY_V2",
+    "actuator": "NORMATIVE_COMPONENTWISE_ACCELERATION_AUTHORITY_V2",
+    "map": "STATIC_IMMUTABLE_REPRESENTED_GAUSSIAN_MAP_AUTHORITY",
+    "dynamics_timebase": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1"
+  },
+  "actuator_admissible_under_frozen_bounds": true,
+  "required_evidence": ["CURRENT_STATE_IDENTITY_EXACT", "CURRENT_TIME_INDEX_EXACT", "CURRENT_MAP_QUERY_CERTIFIED", "ZERO_HOLD_SEGMENT_CERTIFIED", "ASSUMPTIONS_EXACT", "DEADLINE_PREPARATION_IDENTITY"],
+  "post_certification_transform_allowed": false,
+  "selected_executed_identity_required": true,
+  "emergency_action": false,
+  "new_controller_defined": false
+}

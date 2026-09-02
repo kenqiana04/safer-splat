@@ -1,0 +1,9 @@
+{
+  "schema_version": "LEGACY_TERMINAL_REUSE_POLICY_V2",
+  "legacy_components": ["BRAKING_TO_REST_TERMINAL_SET_V1", "TerminalCertifier", "TerminalCertificate"],
+  "classifications": ["REUSE_AS_PARAMETERIZED_CERTIFICATE_PRIMITIVE", "REUSE_ONLY_BEHIND_V2_AUTHORITIES", "HISTORICAL_V1_ONLY", "NOT_AUTHORIZED_AS_POLICY"],
+  "selected_classifications": ["REUSE_AS_PARAMETERIZED_CERTIFICATE_PRIMITIVE", "REUSE_ONLY_BEHIND_V2_AUTHORITIES", "NOT_AUTHORIZED_AS_POLICY"],
+  "supported_primitive_evidence": ["finite velocity membership predicate", "exact zero control", "current represented-map feasibility", "zero-hold segment certificate", "static-map/no-error assumptions"],
+  "withheld_authorities": ["SUPERVISOR_ARBITRATION", "TERMINAL_PRIORITY", "GOAL_COMPLETION", "EMERGENCY", "INITIAL_STATE_STOP", "PLANT_COMMIT"],
+  "promotion_to_v2_policy_authority": false
+}

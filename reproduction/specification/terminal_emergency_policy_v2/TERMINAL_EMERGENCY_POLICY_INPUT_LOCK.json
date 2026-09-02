@@ -1,0 +1,34 @@
+{
+  "schema_version": "TERMINAL_EMERGENCY_POLICY_INPUT_LOCK_V2",
+  "repository": "kenqiana04/safer-splat",
+  "upstream": {
+    "pr_107": {"head": "a60665f3e29085cc18f1ee03828198074f52e4f0", "contract": "METHOD_LOGIC_CLOSURE_V2"},
+    "pr_108": {"head": "f04a2077c4f483f20696bb5515c576cd75ddf449", "contract": "CERTIFICATION_GEOMETRY_AUTHORITY_V2", "canonical_sha256": "36cdd8114e0100da243b8a1786452b1a2bfd5297138bd6dfcd661bbc7803082e"},
+    "pr_109": {"head": "729b3c78a81f2f3ca8948916b64dcb6e2c50fc66", "contract": "NORMATIVE_COMPONENTWISE_ACCELERATION_AUTHORITY_V2", "canonical_sha256": "66eb339744248984e593c196162120f1d8578d4666c0337d828c8c868e65be83"},
+    "pr_110": {"head": "52467acd2ab82c300a8f6c3ce712ab0d59d4f4cf", "contract": "RUNTIME_DEADLINE_AUTHORITY", "canonical_sha256": "f35119abc66fc780853f358b856e7b06d9a4dd7c3018d32db8e6a062e3c7cb83"},
+    "pr_111": {"head": "a658c858995d76a4baa1ad119701e2706df075be", "contract": "ALTERNATIVE_SOURCE_AUTHORITY"},
+    "pr_112": {"state": "OPEN_DRAFT", "title": "[Draft] Freeze backup token runtime schema V2", "branch": "freeze-backup-token-runtime-schema-v2", "head": "8b47c5c9af05bbb022af4a964a6c8989231bc1bc", "base": "freeze-alternative-source-authority-v2", "base_sha": "a658c858995d76a4baa1ad119701e2706df075be", "backup_schema": "BACKUP_TOKEN_SCHEMA_EXECUTION_LOCK_V2", "backup_schema_sha256": "b5d3ad4651ff6749e21303b7f3245da2e78656c3b1a44e90dd0ca82f125c39c5"}
+  },
+  "normative_dynamics_identity": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1",
+  "task_type": "POLICY_ONLY",
+  "runtime_mutation_authority": false,
+  "V1_reinterpretation_allowed": false,
+  "physical_emergency_authority_available": false,
+  "frozen_blobs": [
+    {"path":"reproduction/specification/method_logic_closure_v2/TERMINAL_ACTION_ELIGIBILITY_V2.md","git_blob":"f699c22b4a4d6596c484a57f986558a61e6ff602","sha256":"8484069d00dc7dff6fc07b9a0e5e0e2ca0fb27283d3b81bc6962e40f28009a76","size":947,"mode":"100644"},
+    {"path":"reproduction/specification/method_logic_closure_v2/RUNTIME_ASSURANCE_SUPERVISOR_V2.md","git_blob":"fd8f232db33a9fd8c61ca0d62c5ff26320e88bc1","sha256":"02a8bf6726c5c5ffd39f7571905f321fd56b313903730aa2a3b52a99772f54cb","size":1530,"mode":"100644"},
+    {"path":"reproduction/specification/method_logic_closure_v2/STATE_TRANSITION_TABLE_V2.csv","git_blob":"3c95f749a1f517f1be9e4ab6ad82b096a47afdad","sha256":"f7b288bd43acfd9893c1b9b325116dd6e89a88536f2f6c61c7f8aaacbcc32351","size":9262,"mode":"100644"},
+    {"path":"reproduction/specification/method_logic_closure_v2/FAILURE_ROUTING_V2.csv","git_blob":"8af5aad9bae8d77df255d9a0f68ef04055dfddad","sha256":"7ac8c45bec1461f9882ac408d06fcc4006fcb677ed2346505946d3bbb90c713f","size":2523,"mode":"100644"},
+    {"path":"reproduction/specification/method_logic_closure_v2/METHOD_SCOPE_AND_CLAIM_BOUNDARY_V2.md","git_blob":"7cc605c817414a0b0d82da92d0aa24bff71a6c9c","sha256":"336a3283aa4671337338d23cdfef5fc7f43eb40b328266f625c8ace180780370","size":1231,"mode":"100644"},
+    {"path":"reproduction/specification/cross_layer_geometry_authority_v2/CROSS_LAYER_GEOMETRY_AUTHORITY_V2.json","git_blob":"ab26f3d7a2247211d6d95f0b8d74cd8529f55d33","sha256":"36cdd8114e0100da243b8a1786452b1a2bfd5297138bd6dfcd661bbc7803082e","size":1301,"mode":"100644"},
+    {"path":"reproduction/specification/control_authority_v2/SELECTED_CONTROL_ACTUATOR_CONTRACT_V2.json","git_blob":"c56032a3009ac6c62866093a1c6266d3ca50cee4","sha256":"66eb339744248984e593c196162120f1d8578d4666c0337d828c8c868e65be83","size":2574,"mode":"100644"},
+    {"path":"reproduction/specification/runtime_assurance_deadline_authority_v2/RUNTIME_ASSURANCE_DEADLINE_AUTHORITY_V2.json","git_blob":"e07f0f29b2879b05da5623304927c7c239b9b0ae","sha256":"f35119abc66fc780853f358b856e7b06d9a4dd7c3018d32db8e6a062e3c7cb83","size":2123,"mode":"100644"},
+    {"path":"reproduction/specification/runtime_assurance_deadline_authority_v2/TERMINAL_DEADLINE_INTERACTION_V2.md","git_blob":"e56d4eb9b56ce1974bcccb5e788acba1d896900d","sha256":"f66e28bd05723ff63bdb616f0d403ddfba9ccecefdad508555a1ceeee4db4a00","size":710,"mode":"100644"},
+    {"path":"reproduction/specification/alternative_source_authority_v2/BACKUP_ALTERNATIVE_COMPATIBILITY_V2.md","git_blob":"7dbfffc0d30caf71c2d52d4370cfd3756c87891b","sha256":"b4dc21336b9dc0e0a3845f474a5176dce640e5bf2e7d02bc2b30a724c66d1a2b","size":956,"mode":"100644"},
+    {"path":"reproduction/specification/backup_token_runtime_schema_v2/TERMINAL_REFERENCE_BOUNDARY_V2.md","git_blob":"febf02c78fd3576ac410cec3b8dacd2cbdf8a881","sha256":"3ee76720c58993d168cd2136dee41681a95e4d76cf7b722aeb303cdc9e9aacba","size":637,"mode":"100644"},
+    {"path":"reproduction/specification/backup_token_runtime_schema_v2/BACKUP_TOKEN_RUNTIME_STATE_V2.json","git_blob":"40cf32d219146917ea69687e4ad0b7f5f8d09a2d","sha256":"9265179407853dd20bfc36c4debb242ff1567d45f1701395a2a3bdeb7f0b7483","size":608,"mode":"100644"},
+    {"path":"reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/terminal_set.py","git_blob":"48cafe4e5b87fe9db22e1c0fd8e1cc8819ce1687","sha256":"24dc7da70fb242fc02d4b085d1a649283cf86d92ffcdff8feec0c166dcedd2a8","size":495,"mode":"100644"},
+    {"path":"reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/terminal_certificate.py","git_blob":"1ab8ee6b16f8b7d052c01d52836be08d5d2d5964","sha256":"72e3e2c9cf71e36f69dcaa6e00c05927e714f5a2c711365b62da35c7c6eede91","size":2275,"mode":"100644"},
+    {"path":"reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/result_types.py","git_blob":"75a969fee5af1674c44414c51e0cee46cf34b0c9","sha256":"1c94a83dc45dddfab1e804ff4917f7d8988cadd95d93f26a60ca15f3bf7f43e5","size":6838,"mode":"100644"}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS_TERMINAL_EMERGENCY_POLICY_V2_VALIDATION",
+  "design_commit": "3b1958c0b67f9e549cff6593bcdf0eb465058c04",
+  "model_check": {"properties":20,"properties_passed":20,"scenarios":24,"scenarios_passed":24,"counterexamples":0,"abstract_reachable_states":18,"state_totality":true},
+  "unit_tests": {"count":12,"passed":12,"failed":0},
+  "deadline_compatibility": "COMPATIBLE_WITHOUT_LOGIC_CHANGE",
+  "production_runtime_diff_count": 0,
+  "execution_counts": {"runtime_implementation":0,"supervisor_implementation":0,"terminal_controller_implementation":0,"external_emergency_controller_implementation":0,"backup_runtime_implementation":0,"candidate_generation":0,"gpu":0,"rollout":0,"smoke":0,"pilot":0,"formal_collection":0,"benchmark":0,"parameter_tuning":0,"V1_evidence_mutation":0}
+}
