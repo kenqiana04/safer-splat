@@ -1,0 +1,15 @@
+{
+  "schema_version": "PREIMPLEMENTATION_BLOCKER_REGISTER_V4_BACKUP_TOKEN_TASK_LOCAL",
+  "supersedes": "reproduction/specification/alternative_source_authority_v2/UPDATED_PREIMPLEMENTATION_BLOCKER_REGISTER_V5.json",
+  "blockers": [
+    {"id": "CROSS_LAYER_GEOMETRY_AUTHORITY", "status": "RESOLVED_BY_PR108"},
+    {"id": "SELECTED_CONTROL_ACTUATOR_AUTHORITY", "status": "RESOLVED_BY_PR109"},
+    {"id": "DEADLINE_AUTHORITY", "status": "RESOLVED_BY_PR110"},
+    {"id": "ALTERNATIVE_SOURCE", "status": "RESOLVED_BY_PR111"},
+    {"id": "BACKUP_TOKEN_RUNTIME_SCHEMA", "status": "RESOLVED_BY_THIS_TASK"},
+    {"id": "TERMINAL_EMERGENCY_POLICY", "status": "UNRESOLVED_SELECTED_NEXT", "next_task": "FREEZE_TERMINAL_EMERGENCY_POLICY_V2"},
+    {"id": "INDEPENDENT_EVALUATION_ORACLE", "status": "UNRESOLVED", "next_task": "FREEZE_INDEPENDENT_SAFETY_EVALUATION_ORACLE_V2"}
+  ],
+  "mechanically_selected_next": "TERMINAL_EMERGENCY_POLICY",
+  "runtime_implementation_allowed": false
+}

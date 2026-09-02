@@ -1,0 +1,19 @@
+{
+  "schema_version": "BACKUP_TOKEN_SCHEMA_EXECUTION_LOCK_V2",
+  "design_commit": "1c83a3199029d5038c530e1f903761456d5e8218",
+  "upstream_pr_111_head": "a658c858995d76a4baa1ad119701e2706df075be",
+  "artifacts": [
+    {"path": "reproduction/specification/backup_token_runtime_schema_v2/IMMUTABLE_BACKUP_CERTIFICATE_BUNDLE_SCHEMA_V2.json", "git_blob": "681c100d6e37b8a85dc91b43339fc363ce0cb78e", "sha256": "5e6de2324ffe3ff53e6de27baacc7ce58de424973f13171d1b1683c7a34be5a5"},
+    {"path": "reproduction/specification/backup_token_runtime_schema_v2/RETAINED_BACKUP_TOKEN_SCHEMA_V2.json", "git_blob": "1c759cf0c792272cf9701f4868b6ce528ca9f600", "sha256": "c3eafac4c59262cde459ea88004c62f054b46d3d4dbc16650508a8d99ed74d3b"},
+    {"path": "reproduction/specification/backup_token_runtime_schema_v2/BACKUP_TOKEN_EVENT_SCHEMA_V2.json", "git_blob": "0fded50674ecef515c5c35b739561f74c0b2f13b", "sha256": "cc1da78808d74b0e9965b8f212b1fa473d865348755177e71e17b81626139645"},
+    {"path": "reproduction/specification/backup_token_runtime_schema_v2/BACKUP_TOKEN_NUMERIC_IDENTITY_V2.json", "git_blob": "4f277c4f6afa5be063188a19b0553b22a04628e9", "sha256": "47967700be51c29e62fb20dfb05506086118315183cc966d297a3a34da2d3a21"},
+    {"path": "reproduction/specification/backup_token_runtime_schema_v2/BACKUP_TOKEN_VALIDITY_PREDICATE_V2.json", "git_blob": "cbdb377941aaa9c99351822f3384c2764c1a0e8c", "sha256": "b98faf56ac23a2f747fc9869927e33b19d5862cc5cfc579ba3a2b8964c3a2e10"},
+    {"path": "reproduction/specification/backup_token_runtime_schema_v2/BACKUP_TOKEN_INVARIANTS_V2.json", "git_blob": "2a5e0283c4f002eb2c78410f1efadf8e7d422893", "sha256": "859c948b57da2276db7a532b3b26a0d9881a1313a42338b6bc43bcb98ae6209a"},
+    {"path": "reproduction/specification/backup_token_runtime_schema_v2/BACKUP_TOKEN_PROPERTIES_V2.json", "git_blob": "138179d9cd1f052b1428bf539aefec0c39f12d79", "sha256": "0130ebeb77e71605fc54bb8a90ecaef626db09a262463bf2ffe24d53a30e71a4"},
+    {"path": "reproduction/specification/backup_token_runtime_schema_v2/model_check_backup_token_lifecycle_v2.py", "git_blob": "85be169737dec5ccb73ee4069817b44de64fbcfb", "sha256": "7e3879782dacec4a84d82d28875b69c721956b5f34b893e17e557b5c0757e7f1"},
+    {"path": "reproduction/specification/backup_token_runtime_schema_v2/BACKUP_TOKEN_ADVERSARIAL_SCENARIOS_V2.json", "git_blob": "af70fce05eb11f8899db2428165957d61c975402", "sha256": "16075e19fc350dc29599b93d95e6774be27dbc5be6f9ca5a221cd587dc5f023a"},
+    {"path": "reproduction/specification/backup_token_runtime_schema_v2/tests/test_backup_token_runtime_schema_v2.py", "git_blob": "8e8f0f0b55283952466b72d40e35e01ee148312a", "sha256": "0b85cfcc2ebe546e689a903d87f7b9b8c107b26e5c7abbc1eaba55e77aca9751"},
+    {"path": "reproduction/specification/backup_token_runtime_schema_v2/validate_backup_token_runtime_schema_v2.py", "git_blob": "c134092f3f6541d5a2dca28143945665318cd23a", "sha256": "476eec91becb856bcdf4c76d6028bebdf5c8dc21ff304a28e39319a42ffeafe6"}
+  ],
+  "post_lock_design_mutation_allowed": false
+}

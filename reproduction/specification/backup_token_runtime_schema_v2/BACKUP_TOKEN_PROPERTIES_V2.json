@@ -1,0 +1,25 @@
+{
+  "schema_version": "BACKUP_TOKEN_LIFECYCLE_PROPERTIES_V2",
+  "properties": [
+    {"id": "PBT-01", "rule": "no prepared-token execution"},
+    {"id": "PBT-02", "rule": "single active token"},
+    {"id": "PBT-03", "rule": "no active-token gap during successful navigation handoff"},
+    {"id": "PBT-04", "rule": "commit failure retains old valid token"},
+    {"id": "PBT-05", "rule": "authority mismatch invalidates before execution"},
+    {"id": "PBT-06", "rule": "state mismatch invalidates before execution"},
+    {"id": "PBT-07", "rule": "no double consumption"},
+    {"id": "PBT-08", "rule": "no cursor skip"},
+    {"id": "PBT-09", "rule": "no advance before commit"},
+    {"id": "PBT-10", "rule": "exact tail action identity reaches execution"},
+    {"id": "PBT-11", "rule": "expired deadline allows valid retained backup selection"},
+    {"id": "PBT-12", "rule": "expired deadline forbids new token discovery"},
+    {"id": "PBT-13", "rule": "non-selected prepared bundle never activates"},
+    {"id": "PBT-14", "rule": "exhausted token cannot pretend to have backup action"},
+    {"id": "PBT-15", "rule": "terminal reference does not imply terminal authorization"},
+    {"id": "PBT-16", "rule": "first-cycle navigation commit establishes next token"},
+    {"id": "PBT-17", "rule": "invalid token never returns VALID without new token identity"},
+    {"id": "PBT-18", "rule": "immutable bundle never mutates during consumption"},
+    {"id": "PBT-19", "rule": "backup-tail reuse does not bypass alternative rules because roles are distinct"},
+    {"id": "PBT-20", "rule": "outside-method boundary reached when no certified executable action exists"}
+  ]
+}

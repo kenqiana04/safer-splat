@@ -1,0 +1,16 @@
+{
+  "policy_id": "BACKUP_TOKEN_EXACT_NUMERIC_IDENTITY_V2",
+  "numeric_dtype": "IEEE_754_BINARY64",
+  "byte_order": "BIG_ENDIAN_NETWORK_ORDER_FOR_CANONICAL_BYTES",
+  "text_identity_encoding": "LOWERCASE_0X_HEX_OF_EXACT_BINARY64_BITS",
+  "vector_dimensions": {"position": 3, "velocity": 3, "acceleration": 3},
+  "component_order": ["x", "y", "z"],
+  "state_order": ["position", "velocity", "logical_time_index", "map_identity"],
+  "control_order": ["acceleration", "control_role", "control_id"],
+  "canonical_json": {"encoding": "UTF-8", "sort_keys": true, "separators": [",", ":"], "allow_nan": false, "trailing_newline_in_hash_material": false},
+  "identity_hash": "SHA-256",
+  "unspecified_decimal_rounding_allowed": false,
+  "tolerance_allowed": false,
+  "physical_equivalence_claim": false,
+  "purpose": "IDENTITY_SERIALIZATION_ONLY_NOT_PHYSICAL_TOLERANCE"
+}

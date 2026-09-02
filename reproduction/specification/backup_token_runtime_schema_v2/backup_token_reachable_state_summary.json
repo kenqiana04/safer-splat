@@ -1,0 +1,14 @@
+{
+  "abstract_state_count": 8,
+  "illegal_transitions_explored": 0,
+  "states": [
+    "NONE/NONE",
+    "PREPARED_UNCOMMITTED/NONE",
+    "ACTIVE/VALID",
+    "ACTIVE/INVALID",
+    "ACTIVE/EXHAUSTED",
+    "RETIRED_SUPERSEDED/NONE",
+    "ABORTED_PREPARED/NONE",
+    "ASSURANCE_BOUNDARY/OUTSIDE_METHOD"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RETAINED_BACKUP_TOKEN_V2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "token_id", "immutable_bundle_id", "immutable_bundle_sha256", "activation_cycle", "source_candidate_id", "expected_current_state_identity", "expected_current_time_index", "active_cursor", "remaining_tail_length", "lifecycle_phase", "supervisor_visible_status", "terminal_witness_ref", "revision", "event_chain_head_sha256", "invalidation_reason"],
+  "properties": {
+    "schema_version": {"const": "RETAINED_BACKUP_TOKEN_V2"},
+    "token_id": {"pattern": "^token:[0-9a-f]{64}$"},
+    "immutable_bundle_id": {"pattern": "^sha256:[0-9a-f]{64}$"},
+    "immutable_bundle_sha256": {"pattern": "^[0-9a-f]{64}$"},
+    "activation_cycle": {"type": ["integer", "null"], "minimum": 0},
+    "source_candidate_id": {"type": "string", "minLength": 1},
+    "expected_current_state_identity": {"type": "string", "minLength": 1},
+    "expected_current_time_index": {"type": "integer", "minimum": 0},
+    "active_cursor": {"type": "integer", "minimum": 0},
+    "remaining_tail_length": {"type": "integer", "minimum": 0},
+    "lifecycle_phase": {"enum": ["PREPARED_UNCOMMITTED", "ACTIVE", "RETIRED_SUPERSEDED", "ABORTED_PREPARED"]},
+    "supervisor_visible_status": {"enum": ["NONE", "VALID", "INVALID", "EXHAUSTED"]},
+    "terminal_witness_ref": {"type": ["object", "null"]},
+    "revision": {"type": "integer", "minimum": 0},
+    "event_chain_head_sha256": {"pattern": "^[0-9a-f]{64}$"},
+    "invalidation_reason": {"type": ["string", "null"]}
+  },
+  "phase_status_mapping": {"PREPARED_UNCOMMITTED": ["NONE"], "ACTIVE": ["VALID", "INVALID", "EXHAUSTED"], "RETIRED_SUPERSEDED": ["NONE"], "ABORTED_PREPARED": ["NONE"]},
+  "single_active_token_invariant": true,
+  "prepared_is_executable": false
+}

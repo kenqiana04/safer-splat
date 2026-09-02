@@ -1,0 +1,29 @@
+{
+  "schema_version": "BACKUP_TOKEN_INVARIANTS_V2",
+  "invariants": [
+    {"id": "BT-01", "rule": "L3 WITNESS_FOUND is the only source of a new certified backup bundle."},
+    {"id": "BT-02", "rule": "Partial, UNKNOWN, absent, or timed-out witnesses cannot create a bundle."},
+    {"id": "BT-03", "rule": "The certificate bundle is immutable after creation."},
+    {"id": "BT-04", "rule": "Runtime cursor, status, and revision are separate from the immutable bundle."},
+    {"id": "BT-05", "rule": "A PREPARED_UNCOMMITTED token is not executable."},
+    {"id": "BT-06", "rule": "At most one retained token is ACTIVE."},
+    {"id": "BT-07", "rule": "Activation requires exact source candidate commit identity."},
+    {"id": "BT-08", "rule": "Activation cycle equals source commit cycle plus one."},
+    {"id": "BT-09", "rule": "Exact state and time alignment are required."},
+    {"id": "BT-10", "rule": "Geometry authority must match."},
+    {"id": "BT-11", "rule": "Actuator authority must match."},
+    {"id": "BT-12", "rule": "Map authority must match."},
+    {"id": "BT-13", "rule": "Dynamics and timebase authority must match."},
+    {"id": "BT-14", "rule": "An invalid token cannot self-revalidate."},
+    {"id": "BT-15", "rule": "A consumed control cannot execute twice."},
+    {"id": "BT-16", "rule": "Cursor cannot advance without successful exact commit."},
+    {"id": "BT-17", "rule": "A retained backup action is not an alternative source."},
+    {"id": "BT-18", "rule": "Retained-tail certificate reuse is allowed only under token validity PASS."},
+    {"id": "BT-19", "rule": "No value-changing transform is allowed before execution."},
+    {"id": "BT-20", "rule": "The old valid backup remains until atomic new-token activation."},
+    {"id": "BT-21", "rule": "A successful handoff has no observable NONE gap."},
+    {"id": "BT-22", "rule": "Tail exhaustion does not automatically authorize terminal action."},
+    {"id": "BT-23", "rule": "Deadline expiry forbids discovery but not consumption of a valid retained backup."},
+    {"id": "BT-24", "rule": "Historical V1 backup evidence cannot become V2 runtime token authority."}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "handoff_version": "backup_token_runtime_schema_v2_to_terminal_emergency_policy_v2",
+  "completed_blocker": "BACKUP_TOKEN_RUNTIME_SCHEMA",
+  "design_commit": "1c83a3199029d5038c530e1f903761456d5e8218",
+  "bundle_schema": "IMMUTABLE_BACKUP_CERTIFICATE_BUNDLE_V2",
+  "token_schema": "RETAINED_BACKUP_TOKEN_V2",
+  "deadline_verdict": "COMPATIBLE_WITHOUT_LOGIC_CHANGE",
+  "next_task": "FREEZE_TERMINAL_EMERGENCY_POLICY_V2",
+  "next_task_boundaries": ["EXHAUSTED does not authorize terminal", "terminal ref is evidence only", "do not alter token lifecycle", "do not define physical emergency action without separate authority", "runtime implementation remains blocked"],
+  "remaining_after_next": ["INDEPENDENT_EVALUATION_ORACLE"],
+  "runtime_or_scientific_evidence_created": false
+}

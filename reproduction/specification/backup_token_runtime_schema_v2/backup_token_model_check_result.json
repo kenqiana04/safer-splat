@@ -1,0 +1,193 @@
+{
+  "gpu_execution_count": 0,
+  "properties": [
+    {
+      "id": "PBT-01",
+      "status": "PASS"
+    },
+    {
+      "id": "PBT-02",
+      "status": "PASS"
+    },
+    {
+      "id": "PBT-03",
+      "status": "PASS"
+    },
+    {
+      "id": "PBT-04",
+      "status": "PASS"
+    },
+    {
+      "id": "PBT-05",
+      "status": "PASS"
+    },
+    {
+      "id": "PBT-06",
+      "status": "PASS"
+    },
+    {
+      "id": "PBT-07",
+      "status": "PASS"
+    },
+    {
+      "id": "PBT-08",
+      "status": "PASS"
+    },
+    {
+      "id": "PBT-09",
+      "status": "PASS"
+    },
+    {
+      "id": "PBT-10",
+      "status": "PASS"
+    },
+    {
+      "id": "PBT-11",
+      "status": "PASS"
+    },
+    {
+      "id": "PBT-12",
+      "status": "PASS"
+    },
+    {
+      "id": "PBT-13",
+      "status": "PASS"
+    },
+    {
+      "id": "PBT-14",
+      "status": "PASS"
+    },
+    {
+      "id": "PBT-15",
+      "status": "PASS"
+    },
+    {
+      "id": "PBT-16",
+      "status": "PASS"
+    },
+    {
+      "id": "PBT-17",
+      "status": "PASS"
+    },
+    {
+      "id": "PBT-18",
+      "status": "PASS"
+    },
+    {
+      "id": "PBT-19",
+      "status": "PASS"
+    },
+    {
+      "id": "PBT-20",
+      "status": "PASS"
+    }
+  ],
+  "property_count": 20,
+  "property_pass_count": 20,
+  "runtime_execution_count": 0,
+  "scenario_count": 20,
+  "scenario_pass_count": 20,
+  "scenarios": [
+    {
+      "expected": "NEW_TOKEN_ACTIVE_AT_K_PLUS_1",
+      "id": "BT-S01",
+      "status": "PASS"
+    },
+    {
+      "expected": "OLD_RETAINED_NEW_ABORTED",
+      "id": "BT-S02",
+      "status": "PASS"
+    },
+    {
+      "expected": "PREPARED_NEVER_ACTIVE",
+      "id": "BT-S03",
+      "status": "PASS"
+    },
+    {
+      "expected": "SELECTED_BUNDLE_ACTIVE_AT_K_PLUS_1",
+      "id": "BT-S04",
+      "status": "PASS"
+    },
+    {
+      "expected": "BACKUP_ELIGIBLE",
+      "id": "BT-S05",
+      "status": "PASS"
+    },
+    {
+      "expected": "TOKEN_INVALID",
+      "id": "BT-S06",
+      "status": "PASS"
+    },
+    {
+      "expected": "TOKEN_INVALID",
+      "id": "BT-S07",
+      "status": "PASS"
+    },
+    {
+      "expected": "TOKEN_INVALID",
+      "id": "BT-S08",
+      "status": "PASS"
+    },
+    {
+      "expected": "TOKEN_INVALID",
+      "id": "BT-S09",
+      "status": "PASS"
+    },
+    {
+      "expected": "RETAINED_BACKUP_SELECTABLE",
+      "id": "BT-S10",
+      "status": "PASS"
+    },
+    {
+      "expected": "NO_NEW_DISCOVERY",
+      "id": "BT-S11",
+      "status": "PASS"
+    },
+    {
+      "expected": "SECOND_CONSUME_REJECTED",
+      "id": "BT-S12",
+      "status": "PASS"
+    },
+    {
+      "expected": "ADVANCE_REJECTED",
+      "id": "BT-S13",
+      "status": "PASS"
+    },
+    {
+      "expected": "EXHAUSTED_TERMINAL_REF_ONLY",
+      "id": "BT-S14",
+      "status": "PASS"
+    },
+    {
+      "expected": "NO_AUTOMATIC_TERMINAL_COMMIT",
+      "id": "BT-S15",
+      "status": "PASS"
+    },
+    {
+      "expected": "ASSURANCE_BOUNDARY",
+      "id": "BT-S16",
+      "status": "PASS"
+    },
+    {
+      "expected": "OLD_TOKEN_RETAINED",
+      "id": "BT-S17",
+      "status": "PASS"
+    },
+    {
+      "expected": "OLD_RETAINED_CORRUPT_REJECTED",
+      "id": "BT-S18",
+      "status": "PASS"
+    },
+    {
+      "expected": "PREPARED_ABORTED_IDENTITY_CHANGE",
+      "id": "BT-S19",
+      "status": "PASS"
+    },
+    {
+      "expected": "TOKEN_INVALID",
+      "id": "BT-S20",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS_BACKUP_TOKEN_LIFECYCLE_MODEL_CHECK_V2"
+}
