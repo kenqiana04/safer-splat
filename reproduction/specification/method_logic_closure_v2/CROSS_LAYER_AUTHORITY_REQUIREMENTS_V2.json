@@ -1,0 +1,32 @@
+{
+  "schema_version":"CROSS_LAYER_AUTHORITY_REQUIREMENTS_V2",
+  "requirements": {
+    "CROSS_LAYER_GEOMETRY_STATUS": {
+      "status":"UNRESOLVED_BLOCKING",
+      "evidence":"PR106 freezes L0 effective radius 0.025 m; legacy L1/L2/L3/L5 artifacts may retain 0.11 m.",
+      "required_resolution":"one immutable geometry authority and identity across R0/L1/C0/L2/L3/backup/terminal"
+    },
+    "ACTUATOR_AUTHORITY_STATUS": {
+      "status":"UNRESOLVED_BLOCKING",
+      "evidence":"legacy certifier freezes +/-0.1, while run.py clips u_des but cbf.solve_QP returns the selected QP output without a proven identical box-bound contract",
+      "required_resolution":"bind selected-control authority, certifier bounds, units, frame, saturation, and solver constraints"
+    },
+    "DEADLINE_AUTHORITY_STATUS": {
+      "status":"UNRESOLVED_BLOCKING",
+      "evidence":"no frozen sample period allocation for certification guard, arbitration reserve, and latest-safe commit",
+      "required_resolution":"freeze sample deadline, guard, reserve, clock, overrun, and precomputed fallback semantics"
+    },
+    "ALTERNATIVE_SOURCE_STATUS": {
+      "status":"UNRESOLVED_BLOCKING_FOR_L4",
+      "evidence":"current controller does not prove a native finite sibling library; historical task-local library is not target authority",
+      "required_resolution":"freeze lawful finite pre-observation candidate provenance and order"
+    },
+    "EVALUATION_ORACLE_STATUS": {
+      "status":"UNRESOLVED_BLOCKING_FOR_EFFICACY_CLAIMS",
+      "evidence":"certification backend cannot serve as an independent collision-efficacy oracle by assumption",
+      "required_resolution":"freeze independent evaluation geometry/oracle and error treatment"
+    }
+  },
+  "runtime_implementation_allowed":false,
+  "parameter_changes_authorized":false
+}

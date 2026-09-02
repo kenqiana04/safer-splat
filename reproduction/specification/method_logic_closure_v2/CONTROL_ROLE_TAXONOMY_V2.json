@@ -1,0 +1,14 @@
+{
+  "schema_version": "CONTROL_ROLE_TAXONOMY_V2",
+  "roles": {
+    "NOMINAL_REFERENCE": {"example":"u_des", "candidate":false, "execution_authority":false},
+    "PRIMARY_PROPOSED_CONTROL": {"source":"baseline controller/QP", "candidate":true, "execution_authority":false, "required_path":["C0","L2","L3","SUPERVISOR_ARBITRATION"]},
+    "ALTERNATIVE_PROPOSED_CONTROL": {"source":"future lawful frozen L4 source", "candidate":true, "execution_authority":false, "required_path":["C0","L2","L3","SUPERVISOR_ARBITRATION"]},
+    "SELECTED_EXECUTED_CONTROL": {"source":"runtime assurance supervisor", "candidate":false, "execution_authority":true}
+  },
+  "modes": {
+    "ACTIVE_ASSURANCE_MODE": {"capture_timing":"PRE_COMMIT", "supervisor_authority":true, "required_checks_precommit":true},
+    "SHADOW_OBSERVATION_MODE": {"capture_timing":"POST_COMMIT", "supervisor_authority":false, "feedback_channel":false, "intervention":false}
+  },
+  "prohibitions": ["u_des is not a native alternative", "L4 never commits directly", "shadow results never influence current or future controller state"]
+}

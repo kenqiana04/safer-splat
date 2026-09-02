@@ -1,0 +1,15 @@
+{
+  "schema_version": "UNKNOWN_REASON_SCOPE_V2",
+  "scopes": {
+    "GLOBAL_AUTHORITY_OR_EVIDENCE": {"alternative_eligible":false, "routing":"retained fallback if independently valid; otherwise terminal eligibility or assurance boundary"},
+    "CANDIDATE_LOCAL_COMPUTATION": {"alternative_eligible":"conditional", "routing":"bounded L4 only with valid retained fallback, lawful source, open deadline, and remaining budget"},
+    "INFRASTRUCTURE_HEALTH": {"alternative_eligible":false, "routing":"do not relabel candidate unsafe; retain only authority unaffected by the health failure"},
+    "UNRESOLVED_SCOPE": {"alternative_eligible":false, "routing":"conservative fallback or explicit assurance boundary"}
+  },
+  "layer_totality": {
+    "L1":["PASS","FAIL","UNKNOWN"],
+    "L2":["PASS","FAIL","UNKNOWN_GLOBAL","UNKNOWN_LOCAL"],
+    "L3":["WITNESS_FOUND","WITNESS_ABSENT","UNKNOWN_GLOBAL","UNKNOWN_LOCAL"]
+  },
+  "invariant": "UNKNOWN is neither PASS nor candidate-unsafe FAIL"
+}
