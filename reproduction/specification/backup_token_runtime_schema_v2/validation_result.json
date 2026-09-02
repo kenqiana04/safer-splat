@@ -1,0 +1,9 @@
+{
+  "status": "PASS_BACKUP_TOKEN_RUNTIME_SCHEMA_V2_VALIDATION",
+  "design_commit": "1c83a3199029d5038c530e1f903761456d5e8218",
+  "lifecycle_model_check": {"properties": 20, "properties_passed": 20, "scenarios": 20, "scenarios_passed": 20, "counterexamples": 0, "abstract_reachable_states": 8},
+  "unit_tests": {"count": 12, "passed": 12, "failed": 0},
+  "deadline_compatibility": "COMPATIBLE_WITHOUT_LOGIC_CHANGE",
+  "protected_production_diff_count": 0,
+  "execution_counts": {"runtime_token_implementation": 0, "supervisor_implementation": 0, "backup_controller_implementation": 0, "candidate_generation": 0, "gpu": 0, "rollout": 0, "pilot": 0, "benchmark": 0, "formal_collection": 0, "parameter_tuning": 0}
+}

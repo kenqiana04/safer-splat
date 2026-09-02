@@ -1,0 +1,18 @@
+{
+  "verdict": "PASS_BACKUP_TOKEN_RUNTIME_SCHEMA_FROZEN",
+  "bundle_immutable": "是；hash material覆盖candidate、authority、tail/state、evidence、terminal和temporal identity，消费不改bundle。",
+  "handle_bundle_separated": "是；token只引用bundle并持有phase/status/cursor/revision。",
+  "prepared_timing": "L3完整后可PREPARED_UNCOMMITTED；不可执行、不可替换旧token。",
+  "active_timing": "source candidate精确commit后原子激活。",
+  "first_valid_cycle": "commit cycle k之后的k+1。",
+  "consumption": "精确action commit后单次消费、cursor+1、state/time推进；末项后EXHAUSTED。",
+  "mismatch": "state/map/geometry/actuator/dynamics/time/bundle/action/provenance任一不符即INVALID，同identity不可自恢复。",
+  "handoff_gap": "无；成功时old RETIRED与new ACTIVE同一原子结果，失败时old保持。",
+  "deadline": "COMPATIBLE_WITHOUT_LOGIC_CHANGE；expiry禁新discovery但允许VALID retained token消费。",
+  "backup_as_alternative": "否；authority为L3_CERTIFIED_BACKUP_BUNDLE。",
+  "terminal": "未静默授权；EXHAUSTED只暴露ref。",
+  "physical_boundary": "未跨越；无tracking/delay/disturbance tolerance。",
+  "lifecycle_checker": "PBT 20/20、scenarios 20/20、counterexamples 0。",
+  "remaining_blockers": ["TERMINAL_EMERGENCY_POLICY", "INDEPENDENT_EVALUATION_ORACLE"],
+  "recommended_next_task": "FREEZE_TERMINAL_EMERGENCY_POLICY_V2"
+}
