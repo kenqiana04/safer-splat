@@ -1,0 +1,9 @@
+{
+  "NO_ALTERNATIVE_AVAILABLE": {"meaning": "no authorized existing alternative is available", "unsafe": false, "ordinary_success": false},
+  "SOURCE_INVALID": {"meaning": "source or identity violates the frozen source contract", "unsafe": false, "ordinary_success": false},
+  "PROVENANCE_MISSING": {"meaning": "one or more mandatory provenance fields are absent", "unsafe": false, "ordinary_success": false},
+  "ALTERNATIVE_CERTIFICATION_FAILED": {"meaning": "fresh C0/L1/L2/L3 chain did not establish a certified alternative", "unsafe": false, "ordinary_success": false},
+  "ALTERNATIVE_SEARCH_BLOCKED_BY_DEADLINE": {"meaning": "deadline state does not authorize starting alternative evaluation", "unsafe": false, "ordinary_success": false},
+  "UNKNOWN_SOURCE": {"meaning": "source type or source authority cannot be established", "unsafe": false, "ordinary_success": false, "convert_to_pass": false},
+  "failure_does_not_imply": ["UNSAFE_STATE", "COLLISION", "GLOBAL_INFEASIBILITY", "CONTROLLER_FAILURE"]
+}

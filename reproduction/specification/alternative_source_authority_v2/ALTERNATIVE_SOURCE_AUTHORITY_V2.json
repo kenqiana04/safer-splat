@@ -1,0 +1,17 @@
+{
+  "authority_id": "ALTERNATIVE_SOURCE_AUTHORITY",
+  "search_authority_owner": "SUPERVISOR",
+  "search_authority_owner_count": 1,
+  "l4_role": {"may_request_alternative_evaluation": true, "may_create_candidate": false, "may_select_candidate": false, "may_commit_candidate": false},
+  "default_authorized_sources": ["SOURCE_NATIVE_EXISTING"],
+  "non_default_sources_require_explicit_frozen_authorization": true,
+  "certificate_layers_are_not_generation_authorities": {"L1": true, "L2": true, "L3": true, "L5": true},
+  "candidate_identity_fields": ["candidate_id", "source_type", "creation_timestamp", "state_identity", "map_identity", "actuator_authority", "controller_identity"],
+  "candidate_identity_change_rule": "ANY_FIELD_CHANGE_REQUIRES_NEW_CANDIDATE_ID",
+  "mandatory_recertification_chain": ["C0", "L1", "L2", "L3"],
+  "previous_certificate_reuse_allowed": false,
+  "deadline_gate": {"DEADLINE_OPEN": "ALTERNATIVE_EVALUATION_MAY_BE_REQUESTED", "DEADLINE_WARNING": "NO_NEW_HIGH_COST_ALTERNATIVE_SEARCH", "DEADLINE_EXPIRED": "ALTERNATIVE_SEARCH_FORBIDDEN"},
+  "unavailable_is_not_unsafe": true,
+  "runtime_counts": {"runtime_implementation": 0, "controller_mutation": 0, "candidate_generation": 0, "rollout": 0, "gpu_execution": 0, "benchmark": 0, "formal_collection": 0, "parameter_tuning": 0},
+  "nonclaims": ["BETTER_CONTROL", "LOWER_COLLISION", "HIGHER_SUCCESS_RATE", "IMPROVED_PROGRESS", "OPTIMALITY", "CANDIDATE_SEARCH_COMPLETENESS"]
+}
