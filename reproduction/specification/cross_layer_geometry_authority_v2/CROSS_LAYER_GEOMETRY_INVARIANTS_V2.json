@@ -1,0 +1,16 @@
+{
+  "invariants": [
+    {"id":"GI01","statement":"Active controller radius remains exactly 0.015 m."},
+    {"id":"GI02","statement":"Every V2 certification consumer derives base radius from G0."},
+    {"id":"GI03","statement":"Certification margin is exactly 0.01 m and is applied exactly once."},
+    {"id":"GI04","statement":"Every V2 point or segment certificate uses effective radius 0.025 m."},
+    {"id":"GI05","statement":"Every V2 segment certificate uses rho_seg=0.0 m; point queries mark it not applicable."},
+    {"id":"GI06","statement":"All controller and certification consumers use the same immutable G3 map authority."},
+    {"id":"GI07","statement":"R0 and L1 share geometry, and L1 is a closed segment containing p_k."},
+    {"id":"GI08","statement":"L3 terminal point and zero-hold share the same composed authority."},
+    {"id":"GI09","statement":"L5 terminal point and zero-hold share the same composed authority."},
+    {"id":"GI10","statement":"Historical V1 0.10/0.11 values are valid historical evidence but never V2 authority."},
+    {"id":"GI11","statement":"Missing authority or identity mismatch is UNKNOWN/BLOCK with no literal fallback."},
+    {"id":"GI12","statement":"No outcome, candidate, threshold, controller, map, or frozen V1 result may define V2 geometry."}
+  ]
+}

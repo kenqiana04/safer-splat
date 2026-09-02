@@ -1,0 +1,24 @@
+{
+  "base_sha": "bb44f3058003585ce31f3b6a132eb1c28114f4e3",
+  "design_only": true,
+  "input_blobs": [
+    {"git_blob":"2c8f6f8f5b19fcdee1dec3db376f5e0cfa97dcbf","path":"reproduction/design/l0_controller_geometry_contract_v2/L0_CONTROLLER_GEOMETRY_CONTRACT_V2.json","sha256":"23ba083d871d17f6389dde2872068e7439cba6898197572fc34246b5b46da7f3"},
+    {"git_blob":"d5c0cbf7f171f2a6e19bf1ac46d44278c86ba069","path":"reproduction/specification/method_logic_closure_v2/PREIMPLEMENTATION_BLOCKER_REGISTER_V2.json","sha256":"4ddb43828b1e7dede8c845af1869f7b2e847e61e21f113303ea484df77e2ba98"},
+    {"git_blob":"a9dff1a3b93f980a2ecdbdef73fc3050370cf6ea","path":"reproduction/specification/method_logic_closure_v2/PREIMPLEMENTATION_DEPENDENCY_DAG.json","sha256":"a537a1785a6cecdc5d5f3c03c927596c4bd5ce2bf4ebc5cad2b4648293886594"},
+    {"git_blob":"a805f3c293ecf3028ed198f75aa6faae8a6bef9d","path":"reproduction/specification/method_logic_closure_v2/RUNTIME_CURRENT_ROLE_AUDIT_V2.md","sha256":"cc9f8e478baceb54236b63be5031eeae9eb31de0960f480ac77bbe4084667abd"},
+    {"git_blob":"affa74b73b50ce0532e31dc56f3b14f621bc4a35","path":"reproduction/specification/method_logic_closure_v2/FINAL_DECISION.json","sha256":"95a47475c154153ea27fa2e47eacb3c7e8f5e3fed8f173250fbf788e8fe4e198"},
+    {"git_blob":"361f09fc8f37e4713ea2fc8975d82d56cb9be46a","path":"run.py","sha256":"c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c"},
+    {"git_blob":"7c6e1300b125cc0a2a950ac2835a1fbe3d0de113","path":"cbf/cbf_utils.py","sha256":"492403919f64fba4a46908a8a663900c1ed5808a1865dc5a74c9cfe32d2c7010"},
+    {"git_blob":"2bfd8f69b74e2f3ed8e8a816409549eb5e1ed896","path":"reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/task_config.py","sha256":"2a33e2a825b2527d10baa0f2ed53adfd39616458181a7a2f2e9e240cd0e56296"},
+    {"git_blob":"f13edf06fc99c3d6ca775fe044aaa29a3913d321","path":"reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/segment_certificate.py","sha256":"5aa57b3391a0f9ca3851c4d8f37c09ccdb3f60c1d97014a2ef0630dd2eb138d6"},
+    {"git_blob":"92241373d221958b1ffe343fc97a5fb31a2cdfc1","path":"reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/adapters/current_cbf_adapter.py","sha256":"af30f07cfc839c189fb79758575952ba98753915af48e2d8b084cdd8dd9665f1"},
+    {"git_blob":"75c50fc71c8c386751db895f01cdd1260205af06","path":"reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/backup_certifier.py","sha256":"ba93f39dd7363e81726a811ffcdacf44deabf900d4b38e97e399ee14335991b8"},
+    {"git_blob":"1ab8ee6b16f8b7d052c01d52836be08d5d2d5964","path":"reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/terminal_certificate.py","sha256":"72e3e2c9cf71e36f69dcaa6e00c05927e714f5a2c711365b62da35c7c6eede91"},
+    {"git_blob":"c485d72e12bf071e53ee87634cfef4911bb5fbac","path":"reproduction/shadow/l2_h1_shadow_certifier_v1/shadow_contract.py","sha256":"8a9c2e06b39a7db423a537f4262d1061fad154e1de54ac0599fcd4cac29db395"},
+    {"git_blob":"d3b0615fd057c575cc9818881697e592d6ebbc06","path":"reproduction/shadow/l2_h1_shadow_certifier_v1/frozen_backend_adapter.py","sha256":"ed02580f464df73817d8c88d4c2fc9568f0f8e24c0aab9266108ce2f8efd78a1"},
+    {"git_blob":"99f41d25985f841e0f3bc292c8cec20bba1adeba","path":"reproduction/shadow/l2_h1_shadow_certifier_v1/freeze_inputs.py","sha256":"a4c14200203dae29b795b63859186aac4542423505f23558ef6592fed4be0b36"}
+  ],
+  "pr107": {"base":"design-l0-controller-geometry-contract-v2","head":"a60665f3e29085cc18f1ee03828198074f52e4f0","head_branch":"red-team-method-logic-closure-v2","number":107,"state":"OPEN_DRAFT","title":"[Draft] Red-team and freeze end-to-end method logic closure V2"},
+  "runtime_mutation_authority": false,
+  "scientific_result_mutation_authority": false
+}

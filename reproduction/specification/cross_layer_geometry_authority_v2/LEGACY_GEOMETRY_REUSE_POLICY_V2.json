@@ -1,0 +1,15 @@
+{
+  "default_unresolved_behavior": "UNKNOWN_BLOCK_NO_FALLBACK",
+  "historical_values_remain_valid_for_v1": true,
+  "policies": [
+    {"component":"load_frozen_robot_margin_contract","policy":"HISTORICAL_V1_ONLY_DO_NOT_USE_AS_V2_AUTHORITY","reusable":false},
+    {"component":"freeze_inputs historical builder","policy":"HISTORICAL_REPLAY_ONLY","reusable":false},
+    {"component":"SweptSegmentCertifier","policy":"REUSE_AS_PURE_PARAMETERIZED_COMPONENT_BEHIND_V2_AUTHORITY_ADAPTER","reusable":true},
+    {"component":"CurrentCBFAdapter","policy":"REUSE_ONLY_WITH_V2_INJECTED_BARRIER_ADAPTER","reusable":true},
+    {"component":"frozen_backend_adapter","policy":"REUSE_ONLY_WITH_V2_ROBOT_MARGIN_CONTRACT","reusable":true},
+    {"component":"BackupCertifier","policy":"REUSE_WITH_CANONICAL_SEGMENT_AND_TERMINAL_INJECTION","reusable":true},
+    {"component":"TerminalCertifier","policy":"REUSE_WITH_CANONICAL_POINT_AND_SEGMENT_INJECTION","reusable":true}
+  ],
+  "v1_011_invalidated": false,
+  "v2_forbidden_fallback_values_m": [0.1, 0.11]
+}

@@ -1,0 +1,20 @@
+{
+  "base_register_source": "reproduction/specification/method_logic_closure_v2/PREIMPLEMENTATION_BLOCKER_REGISTER_V2.json",
+  "blockers": [
+    {"id":"GEOMETRY_AUTHORITY","status":"RESOLVED_BY_CROSS_LAYER_GEOMETRY_AUTHORITY_V2"},
+    {"id":"ACTUATOR_AUTHORITY","priority":1,"status":"UNRESOLVED","next_task":"FREEZE_SELECTED_CONTROL_ACTUATOR_AUTHORITY_V2"},
+    {"id":"DEADLINE_AUTHORITY","status":"UNRESOLVED"},
+    {"id":"ALTERNATIVE_SOURCE_AUTHORITY","status":"UNRESOLVED"},
+    {"id":"TERMINAL_EMERGENCY_AUTHORITY","status":"UNRESOLVED"},
+    {"id":"BACKUP_TOKEN_AUTHORITY","status":"UNRESOLVED"},
+    {"id":"EVALUATION_ORACLE_AUTHORITY","status":"UNRESOLVED"}
+  ],
+  "geometry_resolution": {
+    "canonical_effective_radius_m": 0.025,
+    "controller_radius_m": 0.015,
+    "map_authority": "STATIC_IMMUTABLE_REPRESENTED_GAUSSIAN_MAP_AUTHORITY",
+    "margin_m": 0.01,
+    "rho_seg_m": 0.0
+  },
+  "implementation_authorized": false
+}

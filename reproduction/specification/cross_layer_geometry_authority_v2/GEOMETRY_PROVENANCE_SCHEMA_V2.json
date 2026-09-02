@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authority_id": {"const":"CERTIFICATION_GEOMETRY_AUTHORITY_V2"},
+    "authority_sha256": {"pattern":"^[0-9a-f]{64}$","type":"string"},
+    "certification_effective_radius_m": {"const":0.025},
+    "consumer_id": {"minLength":1,"type":"string"},
+    "controller_radius_authority": {"const":"CONTROLLER_GEOMETRY_AUTHORITY"},
+    "controller_radius_m": {"const":0.015},
+    "map_authority": {"const":"STATIC_IMMUTABLE_REPRESENTED_GAUSSIAN_MAP_AUTHORITY"},
+    "map_content_sha256": {"pattern":"^[0-9a-f]{64}$","type":"string"},
+    "map_snapshot_id": {"minLength":1,"type":"string"},
+    "margin_application_count": {"const":1},
+    "margin_authority": {"const":"CERTIFICATION_MARGIN_AUTHORITY"},
+    "margin_m": {"const":0.01},
+    "point_or_segment": {"enum":["point","segment"],"type":"string"},
+    "rho_seg_m": {"type":["number","null"]},
+    "segment_reserve_authority": {"type":["string","null"]},
+    "source_commit": {"pattern":"^[0-9a-f]{40}$","type":"string"},
+    "status": {"enum":["RESOLVED","UNKNOWN_BLOCK"],"type":"string"}
+  },
+  "required": ["authority_id","authority_sha256","source_commit","consumer_id","point_or_segment","controller_radius_authority","controller_radius_m","margin_authority","margin_m","margin_application_count","certification_effective_radius_m","map_authority","map_snapshot_id","map_content_sha256","segment_reserve_authority","rho_seg_m","status"],
+  "title": "Cross-Layer Geometry Provenance V2",
+  "type": "object"
+}

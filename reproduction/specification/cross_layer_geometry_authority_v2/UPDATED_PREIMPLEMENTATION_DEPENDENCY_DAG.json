@@ -1,0 +1,15 @@
+{
+  "base_dag_source": "reproduction/specification/method_logic_closure_v2/PREIMPLEMENTATION_DEPENDENCY_DAG.json",
+  "edges": [
+    {"from":"METHOD_LOGIC_CLOSURE_V2","to":"GEOMETRY_AUTHORITY","status":"SATISFIED"},
+    {"from":"GEOMETRY_AUTHORITY","to":"ACTUATOR_AUTHORITY","status":"READY"},
+    {"from":"ACTUATOR_AUTHORITY","to":"REMAINING_PREIMPLEMENTATION_AUTHORITIES","status":"BLOCKED_UNTIL_RESOLVED"},
+    {"from":"ALL_PREIMPLEMENTATION_AUTHORITIES","to":"RUNTIME_IMPLEMENTATION","status":"BLOCKED"}
+  ],
+  "geometry_node": {
+    "artifact":"CROSS_LAYER_GEOMETRY_AUTHORITY_V2.json",
+    "status":"RESOLVED",
+    "successor":"ACTUATOR_AUTHORITY"
+  },
+  "next_task": "FREEZE_SELECTED_CONTROL_ACTUATOR_AUTHORITY_V2"
+}
