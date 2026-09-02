@@ -1,0 +1,8 @@
+{
+  "actuator_contract": "SELECTED_CONTROL_ACTUATOR_CONTRACT_V2.json",
+  "forbidden_actions": ["runtime implementation","supervisor implementation","controller modification","dynamics modification","actuator simulation","rollout","GPU execution","formal cohort","performance evaluation"],
+  "next_task": "FREEZE_RUNTIME_ASSURANCE_DEADLINE_AUTHORITY_V2",
+  "required_invariants": ["selected identity unique","selected equals committed","no hidden transform","same backup authority","same terminal authority","unknown physical semantics remain outside method"],
+  "resolved_blocker": "SELECTED_CONTROL_ACTUATOR_AUTHORITY",
+  "unresolved_blockers": ["DEADLINE_AUTHORITY","ALTERNATIVE_SOURCE","TERMINAL_EMERGENCY_POLICY","BACKUP_TOKEN_RUNTIME_SCHEMA","INDEPENDENT_EVALUATION_ORACLE"]
+}

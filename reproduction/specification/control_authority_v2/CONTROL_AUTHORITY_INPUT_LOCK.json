@@ -1,0 +1,22 @@
+{
+  "design_only": true,
+  "input_blobs": [
+    {"git_blob":"361f09fc8f37e4713ea2fc8975d82d56cb9be46a","path":"run.py","sha256":"c6adfe77ca69658566c8028f2b24ef4ebda4af0662868d39c348ee81d3f0199c"},
+    {"git_blob":"7c6e1300b125cc0a2a950ac2835a1fbe3d0de113","path":"cbf/cbf_utils.py","sha256":"492403919f64fba4a46908a8a663900c1ed5808a1865dc5a74c9cfe32d2c7010"},
+    {"git_blob":"e58ed65e60b17840201e571d7f23ce3816b83863","path":"dynamics/systems.py","sha256":"57dc54083ee9076fdda2c3dae6e71ec45e97725e87833581a70625a63940f592"},
+    {"git_blob":"28addf1fd5fbace2ff972aa6c11682a4af0f3f24","path":"reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/actuator_contract.json","sha256":"e396104eb219e640c56fb0434ac60d56d7da63d5f30ad221b5b2d0476e41df33"},
+    {"git_blob":"3819feecd380af73f79b72f6f76e902d62fdc95c","path":"reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/actuator_certificate.py","sha256":"4445a083f4ac8900678c49a4c79674f3bbdbe8e9ce765922739f807fd7ffe45e"},
+    {"git_blob":"ff72d551bd84205001373917b6bccf008b9ab926","path":"reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/braking_backup_policy.py","sha256":"77902e9fa756434fb5f2b57221ec066c7a29e2eedcf9922fdb2941f85251ea15"},
+    {"git_blob":"75c50fc71c8c386751db895f01cdd1260205af06","path":"reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/backup_certifier.py","sha256":"ba93f39dd7363e81726a811ffcdacf44deabf900d4b38e97e399ee14335991b8"},
+    {"git_blob":"1ab8ee6b16f8b7d052c01d52836be08d5d2d5964","path":"reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/terminal_certificate.py","sha256":"72e3e2c9cf71e36f69dcaa6e00c05927e714f5a2c711365b62da35c7c6eede91"},
+    {"git_blob":"b39bd21ff7c24e1dcc5d1f792afd28f390fcd55c","path":"reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/adapters/normative_dynamics_adapter.py","sha256":"bc85b7c90d57f9935732751c813c742d9c24af729ba6f5716637f3c3334513df"},
+    {"git_blob":"011df74af180ed336f0771feeb26373d7a2ddf14","path":"reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/executable_safety_certifier.py","sha256":"2fcc0555028d46236db3c4434b713d1c7d9a406da1adb573758996e514e9c1e4"},
+    {"git_blob":"ab26f3d7a2247211d6d95f0b8d74cd8529f55d33","path":"reproduction/specification/cross_layer_geometry_authority_v2/CROSS_LAYER_GEOMETRY_AUTHORITY_V2.json","sha256":"36cdd8114e0100da243b8a1786452b1a2bfd5297138bd6dfcd661bbc7803082e"},
+    {"git_blob":"3d7f6a85858f04816208d3540824fc3da9098946","path":"reproduction/specification/cross_layer_geometry_authority_v2/UPDATED_PREIMPLEMENTATION_BLOCKER_REGISTER_V2.json","sha256":"86c93875f3e1b8cf4ebda6bd405036c01d4244f0cbf88565a5f90c7c58e978dc"},
+    {"git_blob":"d5c0cbf7f171f2a6e19bf1ac46d44278c86ba069","path":"reproduction/specification/method_logic_closure_v2/PREIMPLEMENTATION_BLOCKER_REGISTER_V2.json","sha256":"4ddb43828b1e7dede8c845af1869f7b2e847e61e21f113303ea484df77e2ba98"}
+  ],
+  "pr107": {"head":"a60665f3e29085cc18f1ee03828198074f52e4f0","number":107,"state":"OPEN_DRAFT"},
+  "pr108": {"branch":"freeze-cross-layer-geometry-authority-v2","head":"f04a2077c4f483f20696bb5515c576cd75ddf449","number":108,"state":"OPEN_DRAFT"},
+  "runtime_implementation_authority": false,
+  "scientific_result_mutation_authority": false
+}

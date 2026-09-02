@@ -1,0 +1,96 @@
+{
+  "check_count": 22,
+  "checks": [
+    {
+      "check": "upstream PR107 and PR108 identities exact",
+      "status": "PASS"
+    },
+    {
+      "check": "all input raw Git blobs exact",
+      "status": "PASS"
+    },
+    {
+      "check": "task-local diff only",
+      "status": "PASS"
+    },
+    {
+      "check": "controller QP and dynamics untouched",
+      "status": "PASS"
+    },
+    {
+      "check": "geometry authority untouched",
+      "status": "PASS"
+    },
+    {
+      "check": "method logic untouched",
+      "status": "PASS"
+    },
+    {
+      "check": "historical certifier untouched",
+      "status": "PASS"
+    },
+    {
+      "check": "authority graph complete",
+      "status": "PASS"
+    },
+    {
+      "check": "selected executed relation explicit",
+      "status": "PASS"
+    },
+    {
+      "check": "no hidden post-certification transformation",
+      "status": "PASS"
+    },
+    {
+      "check": "actuator contract complete",
+      "status": "PASS"
+    },
+    {
+      "check": "physical actuator boundary explicit",
+      "status": "PASS"
+    },
+    {
+      "check": "unknown handling fail closed",
+      "status": "PASS"
+    },
+    {
+      "check": "backup actuator consistency",
+      "status": "PASS"
+    },
+    {
+      "check": "terminal actuator consistency",
+      "status": "PASS"
+    },
+    {
+      "check": "required invariants present",
+      "status": "PASS"
+    },
+    {
+      "check": "runtime implementation authority false",
+      "status": "PASS"
+    },
+    {
+      "check": "canonical raw-byte contract encoding",
+      "status": "PASS"
+    },
+    {
+      "check": "execution lock binds contract SHA",
+      "status": "PASS"
+    },
+    {
+      "check": "execution lock binds design commit",
+      "status": "PASS"
+    },
+    {
+      "check": "exactly ten synthetic tests frozen",
+      "status": "PASS"
+    },
+    {
+      "check": "runtime controller dynamics rollout GPU counts zero",
+      "status": "PASS"
+    }
+  ],
+  "failed_count": 0,
+  "passed_count": 22,
+  "status": "PASS_SELECTED_CONTROL_ACTUATOR_AUTHORITY_V2_FREEZE"
+}

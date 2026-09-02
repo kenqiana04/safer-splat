@@ -1,0 +1,15 @@
+{
+  "answers": {
+    "actuator_authority": "Normative benchmark authority is componentwise inclusive u in [-0.1,0.1]^3 at dt=0.05; physical hardware remains unknown/outside method.",
+    "backup_compatibility": "PASS; every backup control must use the same bounds and actuator admission.",
+    "cbf_qp_direct_execution": "YES for successful frozen simulation solves; solver-failure u_des fallback is not executed.",
+    "certificate_control": "Exact candidate vector and identity that become selected and committed.",
+    "hidden_transformation": "NONE in run.py between successful solve_QP output and dynamics update.",
+    "nominal_clamp_meaning": "Desired-command shaping only; not executed-control actuator proof.",
+    "terminal_compatibility": "PASS; terminal zero action and zero-hold use the same authority.",
+    "unknown_semantics": "Rate, delay, quantization, tracking, and physical limits cannot silently pass."
+  },
+  "critical_blockers": [],
+  "runtime_still_blocked": true,
+  "verdict": "PASS_SELECTED_CONTROL_ACTUATOR_AUTHORITY_FROZEN"
+}

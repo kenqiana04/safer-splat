@@ -1,0 +1,17 @@
+{
+  "invariants": [
+    {"id":"CTRL-01","statement":"Every certified action has one unique selected-control identity."},
+    {"id":"CTRL-02","statement":"No hidden post-certification modification is permitted."},
+    {"id":"CTRL-03","statement":"If selected differs from executed, the transformation is explicit, creates a new identity, and requires re-certification."},
+    {"id":"CTRL-04","statement":"Every safety certificate references the exact committed executable-control identity and vector."},
+    {"id":"CTRL-05","statement":"Nominal, alternative, and every backup control share one actuator-admission authority."},
+    {"id":"CTRL-06","statement":"Terminal zero action and zero-hold share the same actuator semantics."},
+    {"id":"CTRL-07","statement":"No layer may define an independent actuator authority."},
+    {"id":"CTRL-08","statement":"Unknown actuator semantics cannot silently pass or support a physical-executability claim."},
+    {"id":"CTRL-09","statement":"No runtime fallback to an uncertified desired or legacy control is committed."},
+    {"id":"CTRL-10","statement":"The controller desired command is not automatically a certified command."},
+    {"id":"CTRL-11","statement":"The current successful simulation path has selected-control equals executed-control with no hidden transform."},
+    {"id":"CTRL-12","statement":"Normative benchmark bounds do not imply deployment or physical actuator readiness."}
+  ],
+  "runtime_implementation_authority": false
+}
