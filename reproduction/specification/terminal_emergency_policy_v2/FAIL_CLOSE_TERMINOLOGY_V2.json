@@ -1,0 +1,11 @@
+{
+  "schema_version": "FAIL_CLOSE_TERMINOLOGY_V2",
+  "terms": {
+    "METHOD_CERTIFIED_TERMINAL_ACTION": "exact action with current certificate, valid authorities and Supervisor eligibility",
+    "ASSURANCE_BOUNDARY_NO_CERTIFIED_ACTION": "method has no certified executable action; theorem ends",
+    "SOFTWARE_FAIL_CLOSE": "software refuses to continue or returns/breaks/errors without a physical execution certificate"
+  },
+  "inequalities": ["SOFTWARE_FAIL_CLOSE != PHYSICAL_SAFE_STOP", "ASSURANCE_BOUNDARY_NO_CERTIFIED_ACTION != PHYSICAL_SAFE_STOP", "TERMINAL_SET_MEMBER != METHOD_CERTIFIED_TERMINAL_ACTION"],
+  "prohibited_metric_aliases_without_oracle": ["safe_stop", "collision_avoided", "terminal_success"],
+  "independent_oracle_required": true
+}

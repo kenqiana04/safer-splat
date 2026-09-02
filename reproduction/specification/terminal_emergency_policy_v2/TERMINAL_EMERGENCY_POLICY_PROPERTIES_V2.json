@@ -1,0 +1,25 @@
+{
+  "schema_version": "TERMINAL_EMERGENCY_POLICY_PROPERTIES_V2",
+  "properties": [
+    {"id":"PTP-01","statement":"navigation priority soundness"},
+    {"id":"PTP-02","statement":"backup priority soundness"},
+    {"id":"PTP-03","statement":"terminal only if certified and eligible"},
+    {"id":"PTP-04","statement":"terminal membership alone never selects terminal"},
+    {"id":"PTP-05","statement":"zero-velocity normal start does not collapse to terminal"},
+    {"id":"PTP-06","statement":"EXHAUSTED backup alone does not select terminal"},
+    {"id":"PTP-07","statement":"expired deadline cannot trigger new terminal certification"},
+    {"id":"PTP-08","statement":"expired deadline may use already-ready valid terminal"},
+    {"id":"PTP-09","statement":"invalid terminal certificate never commits"},
+    {"id":"PTP-10","statement":"terminal UNKNOWN never commits"},
+    {"id":"PTP-11","statement":"no uncertified zero-hold"},
+    {"id":"PTP-12","statement":"no software-break-as-safe-stop"},
+    {"id":"PTP-13","statement":"no external-emergency-as-method-certificate"},
+    {"id":"PTP-14","statement":"no certified action routes to assurance boundary"},
+    {"id":"PTP-15","statement":"terminal selected/executed identity preserved"},
+    {"id":"PTP-16","statement":"authority drift invalidates terminal before commit"},
+    {"id":"PTP-17","statement":"terminal reference mismatch cannot commit"},
+    {"id":"PTP-18","statement":"safety/liveness classifications separated"},
+    {"id":"PTP-19","statement":"deterministic arbitration"},
+    {"id":"PTP-20","statement":"state totality for all reachable terminal-policy states"}
+  ]
+}

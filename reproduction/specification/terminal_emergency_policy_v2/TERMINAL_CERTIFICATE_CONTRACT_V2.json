@@ -1,0 +1,13 @@
+{
+  "schema_version": "TERMINAL_CERTIFICATE_CONTRACT_V2",
+  "semantic_state": "TERMINAL_CERTIFICATE_READY",
+  "meaning": "complete evidence for one exact current state, terminal action, authority set, and preparation time",
+  "required_fields": ["terminal_certificate_id", "terminal_certificate_sha256", "terminal_action_id", "terminal_action_vector", "state_identity", "cycle_time_index", "map_authority_id", "geometry_contract_id", "actuator_contract_id", "dynamics_timebase_id", "zero_hold_evidence_ref", "segment_evidence_ref", "deadline_preparation_identity", "assumption_set"],
+  "canonical_serialization": "UTF8_JSON_SORTED_KEYS_COMPACT_NO_NAN",
+  "content_addressing": "SHA256_OVER_ALL_REQUIRED_FIELDS",
+  "complete_evidence_required": true,
+  "partial_certificate_ready": false,
+  "unknown_certificate_ready": false,
+  "authority": {"selection": false, "commit": false, "goal": false, "emergency": false},
+  "not_equal_to": ["TERMINAL_ACTION_ELIGIBLE", "TERMINAL_ACTION_SELECTED", "TERMINAL_ACTION_COMMITTED"]
+}

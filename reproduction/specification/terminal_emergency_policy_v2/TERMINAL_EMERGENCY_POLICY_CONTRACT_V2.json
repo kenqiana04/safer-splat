@@ -1,0 +1,19 @@
+{
+  "schema_version": "TERMINAL_EMERGENCY_POLICY_CONTRACT_V2",
+  "authority_owner": "RUNTIME_ASSURANCE_SUPERVISOR",
+  "separated_concepts": ["TERMINAL_SET_MEMBER", "TERMINAL_CERTIFICATE_READY", "TERMINAL_ACTION_ELIGIBLE", "TERMINAL_ACTION_SELECTED_OR_COMMITTED", "EXTERNAL_EMERGENCY_BOUNDARY"],
+  "arbitration_priority": ["TIMELY_CERTIFIED_NAVIGATION_WITH_PREPARED_TOKEN", "STILL_VALID_RETAINED_BACKUP", "ELIGIBLE_CURRENT_CERTIFIED_TERMINAL_ACTION", "ASSURANCE_BOUNDARY_NO_CERTIFIED_ACTION"],
+  "canonical_terminal_action": "TERMINAL_ZERO_HOLD",
+  "external_emergency_authority": "UNRESOLVED_OUTSIDE_METHOD",
+  "goal_hold_authority": "DEFINED_BUT_RUNTIME_AUTHORITY_UNRESOLVED",
+  "backup_exhausted_grants_terminal_authority": false,
+  "deadline_expiry_grants_terminal_authority": false,
+  "software_fail_close_is_physical_safe_stop": false,
+  "runtime_implementation_count": 0,
+  "controller_mutation_count": 0,
+  "terminal_controller_implementation_count": 0,
+  "external_emergency_controller_implementation_count": 0,
+  "gpu_execution_count": 0,
+  "rollout_count": 0,
+  "benchmark_count": 0
+}

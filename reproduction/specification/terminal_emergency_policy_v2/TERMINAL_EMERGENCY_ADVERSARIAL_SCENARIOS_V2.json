@@ -1,0 +1,30 @@
+{
+  "schema_version": "TERMINAL_EMERGENCY_ADVERSARIAL_SCENARIOS_V2",
+  "defaults": {"navigation":"NOT_READY","backup":"NONE","terminal_membership":"TRUE","terminal_certificate":"NOT_READY","terminal_context":"FALLBACK_ELIGIBLE","deadline":"OPEN","authorities_valid":true,"state_time_valid":true,"action_identity_valid":true,"terminal_reference_valid":true,"certified_before_guard":false,"zero_velocity_start":false,"software_failure":false,"external_request":false},
+  "scenarios": [
+    {"id":"TP-S01","description":"zero-velocity safe start with certified navigation","state":{"navigation":"CERTIFIED_READY","terminal_certificate":"READY","zero_velocity_start":true},"expected_choice":"NAVIGATION"},
+    {"id":"TP-S02","description":"terminal member with valid retained backup","state":{"backup":"VALID","terminal_certificate":"READY"},"expected_choice":"RETAINED_BACKUP"},
+    {"id":"TP-S03","description":"no navigation/backup with certified eligible terminal","state":{"terminal_certificate":"READY"},"expected_choice":"TERMINAL"},
+    {"id":"TP-S04","description":"membership without certificate","state":{"terminal_certificate":"NOT_READY"},"expected_choice":"ASSURANCE_BOUNDARY"},
+    {"id":"TP-S05","description":"exhausted backup plus valid current terminal reference","state":{"backup":"EXHAUSTED","terminal_certificate":"READY"},"expected_choice":"TERMINAL"},
+    {"id":"TP-S06","description":"exhausted backup plus stale terminal reference","state":{"backup":"EXHAUSTED","terminal_certificate":"READY","terminal_reference_valid":false},"expected_choice":"ASSURANCE_BOUNDARY"},
+    {"id":"TP-S07","description":"expired deadline with terminal ready before guard","state":{"deadline":"EXPIRED","terminal_certificate":"READY","certified_before_guard":true},"expected_choice":"TERMINAL"},
+    {"id":"TP-S08","description":"expired deadline with terminal not evaluated","state":{"deadline":"EXPIRED","terminal_certificate":"NOT_READY"},"expected_choice":"ASSURANCE_BOUNDARY","expected_new_certification_allowed":false},
+    {"id":"TP-S09","description":"terminal certificate unknown","state":{"terminal_certificate":"UNKNOWN"},"expected_choice":"ASSURANCE_BOUNDARY"},
+    {"id":"TP-S10","description":"map authority drift","state":{"terminal_certificate":"READY","authorities_valid":false},"expected_choice":"ASSURANCE_BOUNDARY"},
+    {"id":"TP-S11","description":"geometry authority drift","state":{"terminal_certificate":"READY","authorities_valid":false},"expected_choice":"ASSURANCE_BOUNDARY"},
+    {"id":"TP-S12","description":"actuator authority drift","state":{"terminal_certificate":"READY","authorities_valid":false},"expected_choice":"ASSURANCE_BOUNDARY"},
+    {"id":"TP-S13","description":"state identity mismatch","state":{"terminal_certificate":"READY","state_time_valid":false},"expected_choice":"ASSURANCE_BOUNDARY"},
+    {"id":"TP-S14","description":"time-index mismatch","state":{"terminal_certificate":"READY","state_time_valid":false},"expected_choice":"ASSURANCE_BOUNDARY"},
+    {"id":"TP-S15","description":"solver failure is not terminal","state":{"software_failure":true,"terminal_certificate":"NOT_READY"},"expected_choice":"ASSURANCE_BOUNDARY"},
+    {"id":"TP-S16","description":"program break is not terminal","state":{"software_failure":true,"terminal_certificate":"NOT_READY"},"expected_choice":"ASSURANCE_BOUNDARY"},
+    {"id":"TP-S17","description":"zero action exists but is uncertified","state":{"terminal_certificate":"NOT_READY","action_identity_valid":true},"expected_choice":"ASSURANCE_BOUNDARY"},
+    {"id":"TP-S18","description":"external request may use existing certified eligible terminal","state":{"terminal_certificate":"READY","terminal_context":"EXTERNAL_REQUEST_ONLY","external_request":true},"expected_choice":"TERMINAL"},
+    {"id":"TP-S19","description":"external request cannot create a terminal certificate","state":{"terminal_certificate":"NOT_READY","terminal_context":"EXTERNAL_REQUEST_ONLY","external_request":true},"expected_choice":"ASSURANCE_BOUNDARY"},
+    {"id":"TP-S20","description":"terminal selected/executed exact identity","state":{"terminal_certificate":"READY"},"expected_choice":"TERMINAL","expected_identity_preserved":true},
+    {"id":"TP-S21","description":"ready certificate in ineligible context","state":{"terminal_certificate":"READY","terminal_context":"INELIGIBLE"},"expected_choice":"ASSURANCE_BOUNDARY"},
+    {"id":"TP-S22","description":"navigation global unknown with valid retained backup","state":{"navigation":"UNKNOWN","backup":"VALID"},"expected_choice":"RETAINED_BACKUP"},
+    {"id":"TP-S23","description":"deadline closed to discovery with valid retained backup","state":{"backup":"VALID","deadline":"EXPIRED"},"expected_choice":"RETAINED_BACKUP"},
+    {"id":"TP-S24","description":"first cycle with no method-certified action","state":{"terminal_membership":"FALSE","terminal_certificate":"NOT_READY"},"expected_choice":"ASSURANCE_BOUNDARY"}
+  ]
+}
