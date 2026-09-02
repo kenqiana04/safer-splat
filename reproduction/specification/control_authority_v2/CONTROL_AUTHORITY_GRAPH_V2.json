@@ -1,0 +1,21 @@
+{
+  "current_frozen_simulation_edges": [
+    {"authority_owner":"PD_NOMINAL_CONTROL_AUTHORITY","destination":"u_des","file":"run.py","function":"PD command and clamp","line":"118-127","semantic_meaning":"desired command shaped to componentwise [-0.1,0.1]","source":"state_and_goal"},
+    {"authority_owner":"CLARABEL_CBF_QP_AUTHORITY","destination":"u_cbf_candidate","file":"cbf/cbf_utils.py","function":"solve_QP / optimize_QP_clarabel","line":"125-143,178-202","semantic_meaning":"solver-valid CBF-feasible candidate; no actuator box rows","source":"u_des_and_state"},
+    {"authority_owner":"FROZEN_RUN_LOOP_COMMIT_AUTHORITY","destination":"selected_control_u","file":"run.py","function":"assignment after solve_QP","line":"132-143","semantic_meaning":"successful QP output selected; failed-solver fallback is not committed","source":"u_cbf_candidate"},
+    {"authority_owner":"IDENTITY_SIMULATION_EXECUTION_MAPPING","destination":"executed_control_u","file":"run.py","function":"no intervening transform","line":"132-147","semantic_meaning":"selected tensor/value is passed unchanged","source":"selected_control_u"},
+    {"authority_owner":"NORMATIVE_SIMULATED_PLANT_UPDATE","destination":"state_k_plus_1","file":"dynamics/systems.py","function":"double_integrator_dynamics","line":"3-26","semantic_meaning":"u is interpreted directly as acceleration","source":"executed_control_u"}
+  ],
+  "forbidden_edges": [
+    {"destination":"executed_control","reason":"hidden post-certification transformation","source":"clip_or_saturation_without_new_identity"},
+    {"destination":"selected_control","reason":"desired command is not automatically certified","source":"u_des"},
+    {"destination":"V2 actuator authority","reason":"legacy controller fallback quarantined","source":"solver-failure u_des fallback"},
+    {"destination":"physical executability claim","reason":"hardware authority unavailable","source":"normative benchmark bounds"}
+  ],
+  "target_v2_edges": [
+    {"authority_owner":"PD_NOMINAL_CONTROL_AUTHORITY","destination":"CBF_QP_CANDIDATE_AUTHORITY","file":"future instrumentation-only implementation boundary","function":"candidate construction","line":"NOT_IMPLEMENTED_IN_THIS_TASK","semantic_meaning":"nominal is input to solver, not certified output","source":"NOMINAL_CONTROL_AUTHORITY"},
+    {"authority_owner":"ACTUATOR_ADMISSION_AUTHORITY","destination":"SELECTED_CONTROL_AUTHORITY","file":"future precommit implementation boundary","function":"componentwise hard-bound admission","line":"NOT_IMPLEMENTED_IN_THIS_TASK","semantic_meaning":"unchanged candidate admitted; violation rejected","source":"CBF_QP_CANDIDATE_AUTHORITY"},
+    {"authority_owner":"PRECOMMIT_ARBITRATION_AUTHORITY","destination":"COMMITTED_EXECUTION_AUTHORITY","file":"future precommit implementation boundary","function":"identity-preserving commit","line":"NOT_IMPLEMENTED_IN_THIS_TASK","semantic_meaning":"exact certified identity is committed","source":"SELECTED_CONTROL_AUTHORITY"},
+    {"authority_owner":"NORMATIVE_PLANT_AUTHORITY","destination":"NORMATIVE_PLANT_UPDATE","file":"future runtime implementation boundary","function":"identity execution mapping","line":"NOT_IMPLEMENTED_IN_THIS_TASK","semantic_meaning":"no hidden post-certification transform","source":"COMMITTED_EXECUTION_AUTHORITY"}
+  ]
+}

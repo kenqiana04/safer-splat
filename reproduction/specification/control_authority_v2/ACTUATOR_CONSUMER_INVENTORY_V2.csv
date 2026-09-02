@@ -1,0 +1,10 @@
+consumer,control_role,authority,bounds_or_mapping,selected_execution_relation,status,justification
+CURRENT_PD_NOMINAL,u_des,PD_NOMINAL_CONTROL_AUTHORITY,"componentwise nominal clamp [-0.1,0.1]",NOT_CERTIFIED,RESOLVED_DESIRED_ONLY,nominal shaping is not actuator certification
+CURRENT_CBF_QP,u_cbf_candidate,CLARABEL_CBF_QP_AUTHORITY,no actuator box constraints,CANDIDATE_ONLY,RESOLVED_CANDIDATE,current QP produces CBF-feasible solver output
+CURRENT_RUN_COMMIT,selected_control,FROZEN_RUN_LOOP_COMMIT_AUTHORITY,solver success required,IDENTITY_TO_EXECUTED,RESOLVED_SIMULATION,current successful output is assigned directly to u
+CURRENT_DYNAMICS,executed_control,IDENTITY_SIMULATION_EXECUTION_MAPPING,no clip delay rate or quantization,SELECTED_EQUALS_EXECUTED,RESOLVED_SIMULATION_ONLY,dynamics consumes the same acceleration tensor
+V2_C0_ACTUATOR_ADMISSION,candidate admissibility,NORMATIVE_COMPONENTWISE_ACCELERATION_AUTHORITY_V2,"inclusive u in [-0.1,0.1]^3",ADMIT_UNCHANGED_OR_REJECT,TARGET_FROZEN_NOT_IMPLEMENTED,transformation requires new identity and recertification
+V2_L2_CANDIDATE,certified candidate,NORMATIVE_COMPONENTWISE_ACCELERATION_AUTHORITY_V2,"inclusive u in [-0.1,0.1]^3",EXACT_CERTIFICATE_IDENTITY,TARGET_FROZEN_NOT_IMPLEMENTED,L2 cannot use different actuator semantics
+V2_L3_BACKUP,backup controls,NORMATIVE_COMPONENTWISE_ACCELERATION_AUTHORITY_V2,"same u bounds and dt",EXACT_PER_STEP_IDENTITY,TARGET_FROZEN_NOT_IMPLEMENTED,every backup control requires admission
+V2_L5_TERMINAL,zero terminal action,NORMATIVE_COMPONENTWISE_ACCELERATION_AUTHORITY_V2,"zero is inside same inclusive bounds",EXACT_ZERO_IDENTITY,TARGET_FROZEN_NOT_IMPLEMENTED,terminal point and zero-hold share contract
+PHYSICAL_HARDWARE,real actuator,OUTSIDE_METHOD_BOUNDARY_UNKNOWN,"limits rate delay quantization tracking unknown",NOT_ESTABLISHED,BLOCKED_FOR_DEPLOYMENT_CLAIMS,normative benchmark authority is not hardware evidence
