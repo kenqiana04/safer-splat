@@ -1,0 +1,10 @@
+{
+  "handoff_version": "runtime_deadline_authority_v2_to_alternative_source_v2",
+  "completed_authority": "RUNTIME_DEADLINE_AUTHORITY",
+  "frozen_owner": "SUPERVISOR",
+  "required_upstream_design_commit": "d06163d0ee8e9e5fc69f971af2d5a257998dbd39",
+  "next_task": "FREEZE_ALTERNATIVE_SOURCE_AUTHORITY_V2",
+  "next_task_constraints": ["L4 starts only in DEADLINE_OPEN", "DEADLINE_WARNING forbids new high-cost search", "DEADLINE_EXPIRED returns ALT_SEARCH_NOT_ALLOWED", "no nominal desired or uncertified fallback", "no runtime implementation until remaining blocker DAG is resolved"],
+  "unresolved_numeric_configuration": ["cycle_deadline_duration", "stage_budgets", "warning_reserve", "latest_safe_commit", "clock_identity"],
+  "runtime_or_scientific_evidence_created": false
+}

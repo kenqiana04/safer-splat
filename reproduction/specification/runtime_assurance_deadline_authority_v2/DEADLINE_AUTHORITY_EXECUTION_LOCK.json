@@ -1,0 +1,15 @@
+{
+  "schema_version": "deadline_authority_execution_lock_v2",
+  "design_commit": "d06163d0ee8e9e5fc69f971af2d5a257998dbd39",
+  "upstream_pr_109_head": "729b3c78a81f2f3ca8948916b64dcb6e2c50fc66",
+  "artifacts": [
+    {"path": "reproduction/specification/runtime_assurance_deadline_authority_v2/RUNTIME_ASSURANCE_DEADLINE_AUTHORITY_V2.json", "git_blob": "e07f0f29b2879b05da5623304927c7c239b9b0ae", "sha256": "f35119abc66fc780853f358b856e7b06d9a4dd7c3018d32db8e6a062e3c7cb83"},
+    {"path": "reproduction/specification/runtime_assurance_deadline_authority_v2/RUNTIME_DECISION_TIMELINE_V2.json", "git_blob": "89ccd1e00117a81ff69eba46ff289f0fb3beeb5d", "sha256": "3594e1cd7fe86a8dc66b6cb5923ee71df38f12046285f328421d17b00abda5a5"},
+    {"path": "reproduction/specification/runtime_assurance_deadline_authority_v2/DEADLINE_AUTHORITY_GRAPH_V2.json", "git_blob": "3193e3e496d1ed9888ac4f695ee2759f4d0ce4e0", "sha256": "6511b2678704060e22c95498efa8296929fc2f02ab6fc5a9b74233f468bcef3d"},
+    {"path": "reproduction/specification/runtime_assurance_deadline_authority_v2/DEADLINE_AUTHORITY_INVARIANTS_V2.json", "git_blob": "53a9e4547c65dfb851f5b977060738ec74a188a9", "sha256": "1530664c7f7e6b582236361e3667645b1951630a859926e137fc0e03880e6e39"},
+    {"path": "reproduction/specification/runtime_assurance_deadline_authority_v2/contract_rules.py", "git_blob": "9661329beb6a76c01bcbdb24b92d6bd2d6a085e1", "sha256": "468e6087390cd766ade7e88d9cb576821f2888d6865f468c151a21dd98c287cb"},
+    {"path": "reproduction/specification/runtime_assurance_deadline_authority_v2/tests/test_deadline_authority_contract.py", "git_blob": "9ad6a25ac1b4b996f298b5534e71a9bc78e156f9", "sha256": "8226fb0d9a380f5851e37395ade4fadee6cf66aef7b31b585026c1138bb26d9d"},
+    {"path": "reproduction/specification/runtime_assurance_deadline_authority_v2/validate_runtime_assurance_deadline_authority_v2.py", "git_blob": "ba8be33fb049693ac2f68eb9c475b649686c782f", "sha256": "0ba5fb8c92b87693e1d41a67c21cfd7c72b1a9e5a8ccf8ab6997e255f7448a60"}
+  ],
+  "post_lock_design_mutation_allowed": false
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS_RUNTIME_ASSURANCE_DEADLINE_AUTHORITY_V2_VALIDATION",
+  "tests": {"count": 10, "passed": 10, "failed": 0},
+  "checks": {"deadline_owner_uniqueness": "PASS", "expiry_transition_completeness": "PASS", "no_search_after_expiry": "PASS", "no_uncertified_fallback": "PASS", "backup_compatibility": "PASS", "terminal_compatibility": "PASS", "unknown_semantics": "PASS", "authority_chain_consistency": "PASS"},
+  "protected_source_mutation_count": 0,
+  "runtime_action_counts": {"implementation": 0, "controller_modification": 0, "dynamics_modification": 0, "rollout": 0, "gpu": 0, "formal_collection": 0, "benchmark": 0, "parameter_tuning": 0},
+  "design_commit": "d06163d0ee8e9e5fc69f971af2d5a257998dbd39"
+}
