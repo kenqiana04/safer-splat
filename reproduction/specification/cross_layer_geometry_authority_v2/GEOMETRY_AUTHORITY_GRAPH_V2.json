@@ -1,0 +1,26 @@
+{
+  "edges": [
+    {"from":"G0","to":"ACTIVE_CONTROLLER","transform":"identity radius 0.015"},
+    {"from":"G0","to":"CERTIFICATION_COMPOSER","transform":"base radius"},
+    {"from":"G1","to":"CERTIFICATION_COMPOSER","transform":"add exactly once"},
+    {"from":"CERTIFICATION_COMPOSER","to":"POINT_VIEW","transform":"effective radius 0.025"},
+    {"from":"CERTIFICATION_COMPOSER","to":"SEGMENT_VIEW","transform":"effective radius 0.025"},
+    {"from":"G2","to":"SEGMENT_VIEW","transform":"rho_seg 0.0"},
+    {"from":"G3","to":"ACTIVE_CONTROLLER","transform":"same immutable map query"},
+    {"from":"G3","to":"POINT_VIEW","transform":"same immutable map query"},
+    {"from":"G3","to":"SEGMENT_VIEW","transform":"same immutable map query"},
+    {"from":"POINT_VIEW","to":"I0A,I0B,R0,L3_TERMINAL_POINT,L5_TERMINAL_POINT","transform":"typed injection"},
+    {"from":"SEGMENT_VIEW","to":"L1,L2,L3_BACKUP,L3_ZERO_HOLD,L5_ZERO_HOLD","transform":"typed injection"}
+  ],
+  "forbidden_edges": [
+    {"from":"HISTORICAL_V1_011","to":"ANY_V2_CONSUMER"},
+    {"from":"SHADOW_RESULT","to":"GEOMETRY_AUTHORITY"},
+    {"from":"LAYER_LOCAL_LITERAL","to":"ANY_V2_CONSUMER"}
+  ],
+  "nodes": {
+    "G0":"CONTROLLER_GEOMETRY_AUTHORITY",
+    "G1":"CERTIFICATION_MARGIN_AUTHORITY",
+    "G2":"SEGMENT_RESERVE_AUTHORITY",
+    "G3":"STATIC_IMMUTABLE_REPRESENTED_GAUSSIAN_MAP_AUTHORITY"
+  }
+}

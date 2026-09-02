@@ -1,0 +1,9 @@
+{
+  "authority_contract": "CROSS_LAYER_GEOMETRY_AUTHORITY_V2.json",
+  "forbidden_actions": ["runtime implementation","controller mutation","layer mutation","map mutation","rollout","V1 reinterpretation"],
+  "input_branch": "freeze-cross-layer-geometry-authority-v2",
+  "next_task": "FREEZE_SELECTED_CONTROL_ACTUATOR_AUTHORITY_V2",
+  "required_invariants": ["controller radius remains 0.015","certification effective radius is 0.025","margin applied once","rho_seg is 0.0","same G3 map authority","no V1 fallback"],
+  "resolved_blocker": "GEOMETRY_AUTHORITY",
+  "unresolved_blockers": ["SELECTED_CONTROL_ACTUATOR_AUTHORITY","DEADLINE_AUTHORITY","ALTERNATIVE_SOURCE","TERMINAL_EMERGENCY_POLICY","BACKUP_TOKEN_RUNTIME_SCHEMA","INDEPENDENT_EVALUATION_ORACLE"]
+}
