@@ -1,0 +1,14 @@
+{
+  "schema_version": "ALTERNATIVE_SOURCE_TAXONOMY_V2",
+  "sources": {
+    "SOURCE_NATIVE_EXISTING": {"meaning": "candidate already existed in the frozen runtime candidate set before the alternative request", "authorized_by_default": true, "existed_before_request_required": true},
+    "SOURCE_PREDEFINED_LIBRARY": {"meaning": "candidate belongs to a finite library frozen before outcomes", "authorized_by_default": false, "future_explicit_contract_required": true},
+    "SOURCE_POLICY_OUTPUT": {"meaning": "candidate is an output already produced by a separately authoritative policy", "authorized_by_default": false, "future_explicit_contract_required": true},
+    "SOURCE_SYNTHETIC": {"meaning": "candidate is generated online", "authorized_by_default": false, "forbidden_in_this_contract": true}
+  },
+  "authorized_source_set_v2": ["SOURCE_NATIVE_EXISTING"],
+  "prohibited_generation_methods": ["RANDOM_PERTURBATION", "NOISE_INJECTION", "INTERPOLATION", "HEURISTIC_STEERING", "OUTCOME_CONDITIONED_GENERATION", "COLLISION_DRIVEN_CANDIDATE_CREATION"],
+  "prohibited_conditioning_signals": ["L2_FAIL", "L3_FAIL", "COLLISION_RISK", "MARGIN"],
+  "unknown_source_result": "UNKNOWN_SOURCE",
+  "implicit_authorization": false
+}

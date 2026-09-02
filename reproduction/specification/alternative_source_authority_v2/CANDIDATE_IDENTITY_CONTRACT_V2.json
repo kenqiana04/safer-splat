@@ -1,0 +1,13 @@
+{
+  "schema_version": "CANDIDATE_IDENTITY_CONTRACT_V2",
+  "required_fields": ["candidate_id", "source_type", "creation_timestamp", "state_identity", "map_identity", "actuator_authority", "controller_identity"],
+  "immutable_fields": ["candidate_id", "source_type", "creation_timestamp", "state_identity", "map_identity", "actuator_authority", "controller_identity"],
+  "identity_rule": "EQUALITY_REQUIRES_ALL_FIELDS_EQUAL",
+  "change_rule": "IF_ANY_IMMUTABLE_FIELD_CHANGES_THEN_NEW_CANDIDATE_ID_REQUIRED",
+  "registry_rule": "CANDIDATE_ID_UNIQUE_WITHIN_CONTROL_CYCLE_AND_RUN",
+  "state_alignment": "EXACT_STATE_SNAPSHOT_IDENTITY",
+  "map_alignment": "EXACT_STATIC_MAP_AUTHORITY_IDENTITY",
+  "actuator_alignment": "NORMATIVE_COMPONENTWISE_ACCELERATION_AUTHORITY_V2",
+  "missing_field_result": "PROVENANCE_MISSING",
+  "mismatch_result": "SOURCE_INVALID"
+}

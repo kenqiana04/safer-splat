@@ -1,0 +1,11 @@
+layer,alternative_search_owner,may_create_alternative,may_request_evaluation,may_commit,required_identity_or_authority,consistency
+SUPERVISOR,YES,NO,YES,YES,all_frozen_authorities_and_fresh_certificates,CONSISTENT
+L4,NO,NO,YES,NO,candidate_source_and_identity,CONSISTENT_REQUEST_ONLY
+C0,NO,NO,NO,NO,source_provenance_state_actuator_controller,CONSISTENT_CERTIFICATE_ONLY
+L1,NO,NO,NO,NO,state_time_map_geometry,CONSISTENT_FRESH_CANDIDATE_INDEPENDENT_RECORD
+L2_H1,NO,NO,NO,NO,candidate_state_map_geometry_actuator,CONSISTENT_CERTIFICATE_ONLY
+L3_BACKUP,NO,NO,NO,NO,source_candidate_and_backup_witness_authorities,CONSISTENT_WITNESS_NOT_ALTERNATIVE_SOURCE
+L5_TERMINAL,NO,NO,NO,NO,terminal_authority,CONSISTENT_NOT_ALTERNATIVE_SOURCE
+GEOMETRY_AUTHORITY_V2,NO,NO,NO,NO,immutable_geometry_and_map_identity,CONSISTENT
+SELECTED_CONTROL_AUTHORITY_V2,NO,NO,NO,NO,normative_actuator_admission,CONSISTENT
+RUNTIME_DEADLINE_AUTHORITY_V2,NO,NO,NO,NO,OPEN_only_search_gate,CONSISTENT

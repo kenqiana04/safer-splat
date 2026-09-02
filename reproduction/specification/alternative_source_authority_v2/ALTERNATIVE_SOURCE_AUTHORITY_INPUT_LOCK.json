@@ -1,0 +1,23 @@
+{
+  "schema_version": "alternative_source_authority_input_lock_v2",
+  "upstream": {
+    "pr_107": {"number": 107, "state": "OPEN", "draft": true, "head": "a60665f3e29085cc18f1ee03828198074f52e4f0"},
+    "pr_108": {"number": 108, "state": "OPEN", "draft": true, "head": "f04a2077c4f483f20696bb5515c576cd75ddf449"},
+    "pr_109": {"number": 109, "state": "OPEN", "draft": true, "head": "729b3c78a81f2f3ca8948916b64dcb6e2c50fc66"},
+    "pr_110": {"number": 110, "state": "OPEN", "draft": true, "branch": "freeze-runtime-assurance-deadline-authority-v2", "head": "52467acd2ab82c300a8f6c3ce712ab0d59d4f4cf"}
+  },
+  "frozen_blobs": [
+    {"path": "reproduction/specification/method_logic_closure_v2/ALTERNATIVE_SOURCE_REQUIREMENTS_V2.md", "git_blob": "1d7690b38b97964b6518005ae6d764f574f8e71d", "sha256": "1da51164ef782eaeeab425097f730f9b15e51b7b3259d5f45b8e325c2d3f416a"},
+    {"path": "reproduction/specification/method_logic_closure_v2/ALTERNATIVE_RECERTIFICATION_V2.md", "git_blob": "ad83d080e5edb9c670d40d0c2e261815f2b62cf8", "sha256": "85bc5a38a1a357f36070c472d918644ac7d5e74dbba39e9270a639205f6b907b"},
+    {"path": "reproduction/specification/method_logic_closure_v2/CERTIFICATION_LAYER_V2.md", "git_blob": "94a05bfc04af1648a9cb5b3022619e8e99838545", "sha256": "13056cedd41f79ee56afa7399bca2954fc5541b7f0246dfffc64d9903567209c"},
+    {"path": "reproduction/specification/method_logic_closure_v2/CONTROL_ROLE_TAXONOMY_V2.json", "git_blob": "c098e3e064fefe035902797f4451732e862e0696", "sha256": "654fb3a3711aa8fbc2ebe7a82fab3b9062283aa6b57b24840f305b2fe03ef485"},
+    {"path": "reproduction/specification/method_logic_closure_v2/BACKUP_RETENTION_AND_HANDOFF_V2.md", "git_blob": "cf5589e45513f0015dc738d21d69475b78a96994", "sha256": "6b3680dc210acf783a84c90ce5605def27899d3bc7b9c5e6256c15d060ff2595"},
+    {"path": "reproduction/specification/runtime_assurance_deadline_authority_v2/RUNTIME_ASSURANCE_DEADLINE_AUTHORITY_V2.json", "git_blob": "e07f0f29b2879b05da5623304927c7c239b9b0ae", "sha256": "f35119abc66fc780853f358b856e7b06d9a4dd7c3018d32db8e6a062e3c7cb83"},
+    {"path": "reproduction/specification/runtime_assurance_deadline_authority_v2/NO_SEARCH_AFTER_EXPIRY_POLICY.md", "git_blob": "4c666f61975680b30c2dbbf5b5b50458dbdf2b7f", "sha256": "ab89e5070c86d47519c19ef0247c49cc3fc032f0f19a5e8a29eec0fbeb9c41f1"},
+    {"path": "reproduction/specification/runtime_assurance_deadline_authority_v2/UPDATED_PREIMPLEMENTATION_BLOCKER_REGISTER_V4.json", "git_blob": "641d491ee2c9744269b8b80938dda7ae03bc8322", "sha256": "e7074a2a73301fc4988d16d298ab4151ea89f0d0c7a27c440d6d16e6069f7349"},
+    {"path": "reproduction/specification/runtime_assurance_deadline_authority_v2/UPDATED_PREIMPLEMENTATION_DEPENDENCY_DAG_V4.json", "git_blob": "34c544dab894d67c6d589acac652830b07936e7e", "sha256": "3054af1741a97f5ec599cb4a3dc77620d774f0c87ee90deacc9388d8fd69a08c"},
+    {"path": "reproduction/specification/control_authority_v2/SELECTED_CONTROL_ACTUATOR_CONTRACT_V2.json", "git_blob": "c56032a3009ac6c62866093a1c6266d3ca50cee4", "sha256": "66eb339744248984e593c196162120f1d8578d4666c0337d828c8c868e65be83"},
+    {"path": "reproduction/specification/cross_layer_geometry_authority_v2/CROSS_LAYER_GEOMETRY_AUTHORITY_V2.json", "git_blob": "ab26f3d7a2247211d6d95f0b8d74cd8529f55d33", "sha256": "36cdd8114e0100da243b8a1786452b1a2bfd5297138bd6dfcd661bbc7803082e"}
+  ],
+  "scope": {"runtime_implementation": false, "controller_mutation": false, "candidate_generation": false, "rollout": false, "gpu_execution": false, "benchmark": false, "formal_collection": false, "parameter_tuning": false}
+}

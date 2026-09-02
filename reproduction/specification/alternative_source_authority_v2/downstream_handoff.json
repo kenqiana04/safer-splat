@@ -1,0 +1,11 @@
+{
+  "handoff_version": "alternative_source_authority_v2_to_backup_token_runtime_schema_v2",
+  "completed_authority": "ALTERNATIVE_SOURCE_AUTHORITY",
+  "frozen_search_owner": "SUPERVISOR",
+  "authorized_source_set": ["SOURCE_NATIVE_EXISTING"],
+  "required_upstream_design_commit": "030b1b96910529ee5c628f70c366aa821a39fabc",
+  "next_task": "FREEZE_BACKUP_TOKEN_RUNTIME_SCHEMA_V2",
+  "next_task_constraints": ["preserve source candidate identity", "bind geometry actuator state map and temporal authority", "do not reclassify backup witness as alternative generation", "no certificate reuse", "respect PR110 deadline state", "no runtime implementation"],
+  "remaining_after_next": ["TERMINAL_EMERGENCY_POLICY", "INDEPENDENT_EVALUATION_ORACLE"],
+  "runtime_or_scientific_evidence_created": false
+}

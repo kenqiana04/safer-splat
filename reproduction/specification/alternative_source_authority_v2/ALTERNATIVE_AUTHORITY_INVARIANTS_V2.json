@@ -1,0 +1,16 @@
+{
+  "invariants": [
+    {"id": "ALT-I01", "rule": "Exactly one search authority owner exists and it is SUPERVISOR."},
+    {"id": "ALT-I02", "rule": "L4 requests evaluation only and never creates, selects, or commits a candidate."},
+    {"id": "ALT-I03", "rule": "Only SOURCE_NATIVE_EXISTING is authorized by default in V2."},
+    {"id": "ALT-I04", "rule": "Synthetic and outcome-conditioned generation are forbidden."},
+    {"id": "ALT-I05", "rule": "All seven candidate provenance fields are mandatory and immutable."},
+    {"id": "ALT-I06", "rule": "Any identity-field change requires a new candidate ID."},
+    {"id": "ALT-I07", "rule": "Every alternative receives fresh C0, L1, L2, and L3 evidence without certificate reuse."},
+    {"id": "ALT-I08", "rule": "New alternative evaluation is permitted only in DEADLINE_OPEN."},
+    {"id": "ALT-I09", "rule": "Every alternative uses the frozen map, geometry, actuator, state, and controller identities."},
+    {"id": "ALT-I10", "rule": "Backup witness generation is L3 authority and is not alternative source generation."},
+    {"id": "ALT-I11", "rule": "Alternative failure or absence does not imply unsafe state."},
+    {"id": "ALT-I12", "rule": "UNKNOWN_SOURCE never converts to PASS or execution authority."}
+  ]
+}

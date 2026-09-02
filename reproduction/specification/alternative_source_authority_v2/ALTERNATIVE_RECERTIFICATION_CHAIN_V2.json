@@ -1,0 +1,15 @@
+{
+  "chain": [
+    {"order": 0, "stage": "C0", "fresh_result_required": true, "meaning": "candidate admissibility, provenance, actuator, identity, and alignment"},
+    {"order": 1, "stage": "L1", "fresh_result_required": true, "meaning": "candidate-independent immediate segment re-evaluated/rebound to exact attempt state and time identity"},
+    {"order": 2, "stage": "L2", "fresh_result_required": true, "meaning": "candidate-sensitive H1 future segment"},
+    {"order": 3, "stage": "L3", "fresh_result_required": true, "meaning": "backup viability/recoverability witness"}
+  ],
+  "previous_certificate_reuse_allowed": false,
+  "skip_allowed": false,
+  "l1_is_candidate_sensitive": false,
+  "l1_fail_triggers_alternative_search": false,
+  "successful_chain_result": "ALTERNATIVE_CERTIFIED_FOR_SUPERVISOR_ARBITRATION",
+  "successful_chain_execution_authority": false,
+  "commit_owner": "SUPERVISOR"
+}

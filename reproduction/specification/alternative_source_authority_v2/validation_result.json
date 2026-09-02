@@ -1,0 +1,8 @@
+{
+  "status": "PASS_ALTERNATIVE_SOURCE_AUTHORITY_V2_VALIDATION",
+  "tests": {"count": 10, "passed": 10, "failed": 0},
+  "checks": {"single_authority_owner": "PASS", "candidate_provenance_completeness": "PASS", "no_synthetic_candidate": "PASS", "no_outcome_conditioned_generation": "PASS", "candidate_identity_uniqueness": "PASS", "mandatory_recertification": "PASS", "deadline_compatibility": "PASS", "actuator_compatibility": "PASS", "backup_compatibility": "PASS", "unknown_semantics": "PASS"},
+  "protected_source_mutation_count": 0,
+  "runtime_action_counts": {"implementation": 0, "controller_modification": 0, "candidate_generation": 0, "rollout": 0, "gpu": 0, "benchmark": 0, "formal_collection": 0, "parameter_tuning": 0},
+  "design_commit": "030b1b96910529ee5c628f70c366aa821a39fabc"
+}
