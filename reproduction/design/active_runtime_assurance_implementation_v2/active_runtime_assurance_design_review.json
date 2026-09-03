@@ -1,0 +1,27 @@
+{
+  "answers": [
+    "1 additive driver足够：现有状态、目标、PD、QP、地图、动力学和plant seam均可读。",
+    "2 唯一提交点是PlantCommitAdapter.commit。",
+    "3 primary来自成功的Clarabel CBF-QP，u_des只是reference。",
+    "4 C0按[-0.1,0.1]^3逐分量拒绝越界，绝不clip。",
+    "5 L1每周期算一次；每候选绑定新的attempt ID和同一cycle evidence hash。",
+    "6 segment/L2纯后端可复用；L3/backup/terminal需V2 typed adapter。",
+    "7 当前无合法native alternatives；返回NO_ALTERNATIVE_AVAILABLE。",
+    "8 首周期只有C0/L2/L3全PASS并准备token才可nav commit。",
+    "9 token在成功PlantCommit receipt后原子handoff并于k+1 ACTIVE。",
+    "10 terminal角色由Supervisor identity和证书/eligibility给出，非零向量推断。",
+    "11 numeric deadline profile是ACTIVE startup硬门，本设计不拍值。",
+    "12 oracle仅在immutable trace lock后独立运行，无反馈edge。",
+    "13 复用start/goal、PD、QP primitive、dynamics、map；隔离legacy outcome语义。",
+    "14 frozen 43条transition均EXACTLY_ONCE映射。",
+    "15 production edit不需要，且未授权。",
+    "16 abstract model check必须0 counterexamples。",
+    "17 下一任务仅IMPLEMENT_ACTIVE_RUNTIME_ASSURANCE_V2。",
+    "18 现在不允许跑实验。"
+  ],
+  "critical_blockers": [],
+  "experiments_authorized": false,
+  "review_language": "zh-CN",
+  "runtime_authorized": false,
+  "verdict": "PASS_ACTIVE_RUNTIME_ASSURANCE_IMPLEMENTATION_DESIGN_FROZEN"
+}

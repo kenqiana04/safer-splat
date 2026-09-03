@@ -1,0 +1,21 @@
+{
+  "abstract_only": true,
+  "check_count": 10,
+  "checks": {
+    "every_commit_path_carries_certified_authority": true,
+    "every_no_action_path_ends_boundary": true,
+    "no_alternative_provider_to_commit_edge": true,
+    "no_direct_proposal_to_plant_edge": true,
+    "no_l2_to_commit_edge": true,
+    "no_l3_to_plant_edge": true,
+    "no_oracle_to_runtime_edge": true,
+    "no_terminal_membership_to_commit_edge": true,
+    "scenario_totality": true,
+    "transition_table_totality": true
+  },
+  "counterexample_count": 0,
+  "geometry_numeric_execution": false,
+  "scenario_count": 28,
+  "status": "PASS_ACTIVE_RUNTIME_DESIGN_MODEL_CHECK",
+  "transition_rule_count": 43
+}
