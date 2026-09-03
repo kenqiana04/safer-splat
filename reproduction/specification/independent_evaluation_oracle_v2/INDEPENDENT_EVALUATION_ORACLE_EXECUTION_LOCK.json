@@ -43,6 +43,13 @@
     }
   },
   "lock_created_before_checker_tests_validator": true,
+  "post_lock_task_local_correction": {
+    "affects_contract_semantics": false,
+    "correction_count": 1,
+    "reason": "Remove one redundant blank line at checker EOF so repository-wide diff-check is clean.",
+    "validated_checker_git_blob_sha1": "b2c24d4d42c9441487640b7f2b4f400069a26f6e",
+    "validated_checker_sha256": "426a0945a05d5a0092d15fe166299c5ecb39af14cf586684bbd2c7cdc304b422"
+  },
   "runtime_execution_authority": false,
   "schema_version": "INDEPENDENT_EVALUATION_ORACLE_EXECUTION_LOCK_V2"
 }

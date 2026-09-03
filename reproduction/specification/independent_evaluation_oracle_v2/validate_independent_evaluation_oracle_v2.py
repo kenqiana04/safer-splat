@@ -53,6 +53,15 @@ def main() -> int:
         raw = git("cat-file", "blob", blob, binary=True)
         input_blobs_ok &= blob == item["git_blob_sha1"] and hashlib.sha256(raw).hexdigest() == item["sha256"] and len(raw) == item["size"]
 
+    corrected_checker = (TASK / "check_evaluation_oracle_independence_v2.py").read_bytes()
+    correction = lock["post_lock_task_local_correction"]
+    corrected_checker_ok = (
+        correction["correction_count"] == 1
+        and correction["affects_contract_semantics"] is False
+        and hashlib.sha256(corrected_checker).hexdigest() == correction["validated_checker_sha256"]
+        and git("hash-object", str(TASK / "check_evaluation_oracle_independence_v2.py")).strip() == correction["validated_checker_git_blob_sha1"]
+    )
+
     diff_names = sorted(set(
         [x for x in git("diff", "--name-only", BASE, "HEAD").splitlines() if x]
         + [x for x in git("diff", "--name-only").splitlines() if x]
@@ -63,7 +72,7 @@ def main() -> int:
     required_step = set(trace["properties"]["steps"]["items"]["required"])
     checks = {
         "01_PR113_exact_upstream": inp["direct_upstream"]["head"] == BASE and git("merge-base", "--is-ancestor", BASE, "HEAD") == "" and input_blobs_ok,
-        "02_execution_lock_raw_blobs": frozen_blobs_ok,
+        "02_execution_lock_raw_blobs": frozen_blobs_ok and corrected_checker_ok,
         "03_PR108_radii_separated": "0.015 m" in (TASK / "COLLISION_VS_MARGIN_ORACLE_V2.md").read_text(encoding="utf-8") and "0.025 m" in (TASK / "COLLISION_VS_MARGIN_ORACLE_V2.md").read_text(encoding="utf-8"),
         "04_PR109_execution_identity_compatible": "selected_action_vector" in required_step and "executed_action_vector" in required_step,
         "05_PR110_timing_nonclaims": "not a real-time guarantee" in (TASK / "RUNTIME_TIMING_EVALUATION_ORACLE_V2.md").read_text(encoding="utf-8"),
