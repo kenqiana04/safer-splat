@@ -1,0 +1,128 @@
+{
+  "allowed_post_lock_change": "TASK_LOCAL_IMPLEMENTATION_BUG_CORRECTION_ONLY",
+  "core_module_count": 17,
+  "files": [
+    {
+      "path": "authority_registry.py",
+      "sha256": "5d35089e0367781dfee8e0e09953664c88ea6572b2e61eda3ddaa00ba772ef3f",
+      "size": 4499
+    },
+    {
+      "path": "runtime_types.py",
+      "sha256": "a47be863e58c7ad9cc5a8ac3258abca520e20da00e9d12cbb31cd409994ce038",
+      "size": 12241
+    },
+    {
+      "path": "start_admission.py",
+      "sha256": "6d75ede4fe4c06dd4ed865e3b5110e2562ec666f1580ded9a7a706f3ef299d15",
+      "size": 1438
+    },
+    {
+      "path": "diagnostic_r0.py",
+      "sha256": "ad0efe54161ed3de773792cb5f531d193fdc9a8df7aad03a53dcc884083a3e12",
+      "size": 311
+    },
+    {
+      "path": "l1_runtime.py",
+      "sha256": "8692637677612da4f6e383ab29872aed24d0c409d5f3b941e817b226f13cc009",
+      "size": 2519
+    },
+    {
+      "path": "primary_proposal_adapter.py",
+      "sha256": "b758dad733a40f48dc032adb2848412b5c884dad5848d8288207723e06907db5",
+      "size": 2024
+    },
+    {
+      "path": "c0_admission.py",
+      "sha256": "355ef32b5fa60945c895335b887610e451beba5f251a485210ad10fb9f95f7b4",
+      "size": 1582
+    },
+    {
+      "path": "l2_runtime.py",
+      "sha256": "e76e15eae5633efc7e0ee749c3612987cad52b56433fab5b67d52c2ad9f0f72f",
+      "size": 1717
+    },
+    {
+      "path": "l3_runtime.py",
+      "sha256": "cdb98bb10794d2663be24761864436d4407ca4238d9a5dd190dd5ce90ba50744",
+      "size": 1850
+    },
+    {
+      "path": "alternative_provider.py",
+      "sha256": "7204847ddd0a1af19e391ab76d9039d6ce319918ded07a879b8fc02fd5454ebc",
+      "size": 1154
+    },
+    {
+      "path": "backup_token_store.py",
+      "sha256": "a65b879c2c42e3a68f5bdb57a43258fde80621eb4e625eee7db76cdc3066aee2",
+      "size": 4928
+    },
+    {
+      "path": "terminal_runtime.py",
+      "sha256": "b972b15d1ad33bbd3e0ae3bd4786da7483dc5d61707fbd7ce1901d3c3f79ec7f",
+      "size": 2213
+    },
+    {
+      "path": "deadline_runtime.py",
+      "sha256": "429f70619d4f25dc2d06e4569476f9e53d3e4d50764bc51b0ad2a3cb2c6674d5",
+      "size": 2897
+    },
+    {
+      "path": "supervisor.py",
+      "sha256": "0962d59e71fc5496f4a7a1f2451c7ce9f21cf75a7dd0f661b79e7efa7050d570",
+      "size": 5389
+    },
+    {
+      "path": "plant_commit.py",
+      "sha256": "0772b37323d48d9315247b3a0df3e6616dee3cd8d934da04f8fc924fd7c63140",
+      "size": 3156
+    },
+    {
+      "path": "trace_writer.py",
+      "sha256": "8e554e32443f0710098e4fd8f7e1eb63b562c6e752ca0b7dddbabc032cf280c4",
+      "size": 2454
+    },
+    {
+      "path": "active_runner.py",
+      "sha256": "cc3fd7a484b52b88fb7d8782b837dba8be0ab3fa27df3f807c7b11d7d73f2d85",
+      "size": 3771
+    },
+    {
+      "path": "implementation_evidence/RUNTIME_TRANSITION_IMPLEMENTATION_MAP_V2.csv",
+      "sha256": "49110391926d6891fd4f34dd7e178172786b00ea79841be50c48131b8d8b40d1",
+      "size": 15962
+    },
+    {
+      "path": "implementation_evidence/ACTIVE_RUNTIME_IMPLEMENTATION_INVARIANTS_V2.json",
+      "sha256": "48cfa467e51718edab4c6f76950979f4859cfcaa86b4282c41ad5642a36ee0d6",
+      "size": 2865
+    },
+    {
+      "path": "implementation_evidence/test_manifest.json",
+      "sha256": "92b1be4a9229b2a37522ac6e26c273baab2a66810c0d60612054c411f503f5cd",
+      "size": 2704
+    },
+    {
+      "path": "validate_active_runtime_assurance_v2.py",
+      "sha256": "01b721ae5ba383bba241ec2fd317e96717a14bafcaf3404adae7b807267bc4bb",
+      "size": 11143
+    },
+    {
+      "path": "model_check_active_runtime_implementation_v2.py",
+      "sha256": "b8929a2aa2e1ea2e5f156a2bf9721f9313a54ff4c21d68d868c1c22616dc9615",
+      "size": 8008
+    }
+  ],
+  "frozen_method_semantics_change_authority": false,
+  "gpu_authority": false,
+  "lock_point": "AFTER_MAJOR_IMPLEMENTATION_BEFORE_FULL_TEST_SUITE",
+  "locked_file_count": 22,
+  "payload_sha256": "f67a4e41bc02982fd248414a2fd2a3598f28a9cfbbaa0835a153f08c0750da05",
+  "rollout_authority": false,
+  "schema": "ACTIVE_RUNTIME_IMPLEMENTATION_EXECUTION_LOCK_V2",
+  "upstream_design_identity": {
+    "branch": "design-active-runtime-assurance-implementation-v2",
+    "head": "44111d32031409338058e5da2f7e7a1f8d873323",
+    "pr": 115
+  }
+}

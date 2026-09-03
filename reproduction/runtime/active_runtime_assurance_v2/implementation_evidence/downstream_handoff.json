@@ -1,0 +1,34 @@
+{
+  "schema": "ACTIVE_RUNTIME_ASSURANCE_V2_DOWNSTREAM_HANDOFF",
+  "source_task": "IMPLEMENT_ACTIVE_RUNTIME_ASSURANCE_V2",
+  "source_branch": "implement-active-runtime-assurance-v2",
+  "source_base": "design-active-runtime-assurance-implementation-v2",
+  "upstream_pr": 115,
+  "upstream_head": "44111d32031409338058e5da2f7e7a1f8d873323",
+  "status": "PASS_ACTIVE_RUNTIME_ASSURANCE_V2_IMPLEMENTATION",
+  "decision": "FREEZE_ACTIVE_RUNTIME_IMPLEMENTATION_AND_ADVANCE_VALIDATION_LADDER",
+  "only_next_task": "VERIFY_ACTIVE_HARNESS_BYPASS_EQUIVALENCE_V2",
+  "next_task_scope": "Compare frozen reference execution against ACTIVE_HARNESS_BYPASS without enabling active intervention.",
+  "required_inputs": [
+    "ACTIVE_RUNTIME_IMPLEMENTATION_INPUT_LOCK.json",
+    "ACTIVE_RUNTIME_IMPLEMENTATION_EXECUTION_LOCK.json",
+    "RUNTIME_TRANSITION_IMPLEMENTATION_MAP_V2.csv",
+    "ACTIVE_RUNTIME_IMPLEMENTATION_INVARIANTS_V2.json",
+    "validation_result.json"
+  ],
+  "must_preserve": [
+    "production_source_diff_zero",
+    "observer_or_oracle_feedback_absent",
+    "active_intervention_disabled",
+    "frozen_authority_values",
+    "selected_equals_executed_identity"
+  ],
+  "not_authorized_here": [
+    "BYPASS real QA",
+    "smoke",
+    "Stonehenge rollout",
+    "100-trial benchmark",
+    "scientific outcome oracle",
+    "performance or safety claims"
+  ]
+}

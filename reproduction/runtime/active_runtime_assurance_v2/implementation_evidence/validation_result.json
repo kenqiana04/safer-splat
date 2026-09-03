@@ -1,0 +1,240 @@
+{
+  "check_count": 26,
+  "checks": [
+    {
+      "check": "01_exact_pr115_identity_in_input_lock",
+      "evidence": {
+        "base": "freeze-independent-evaluation-oracle-v2",
+        "base_sha": "c924a959b1aa18b446a1d3c85afbe4f897604a84",
+        "branch": "design-active-runtime-assurance-implementation-v2",
+        "draft": true,
+        "head": "44111d32031409338058e5da2f7e7a1f8d873323",
+        "pr": 115,
+        "state": "OPEN",
+        "title": "[Draft] Design active runtime assurance implementation V2"
+      },
+      "passed": true
+    },
+    {
+      "check": "02_exactly_17_core_modules_present",
+      "evidence": [
+        "authority_registry.py",
+        "runtime_types.py",
+        "start_admission.py",
+        "diagnostic_r0.py",
+        "l1_runtime.py",
+        "primary_proposal_adapter.py",
+        "c0_admission.py",
+        "l2_runtime.py",
+        "l3_runtime.py",
+        "alternative_provider.py",
+        "backup_token_store.py",
+        "terminal_runtime.py",
+        "deadline_runtime.py",
+        "supervisor.py",
+        "plant_commit.py",
+        "trace_writer.py",
+        "active_runner.py"
+      ],
+      "passed": true
+    },
+    {
+      "check": "03_package_importable",
+      "evidence": 17,
+      "passed": true
+    },
+    {
+      "check": "04_production_source_diff_zero",
+      "evidence": [],
+      "passed": true
+    },
+    {
+      "check": "05_frozen_spec_diff_zero",
+      "evidence": [],
+      "passed": true
+    },
+    {
+      "check": "06_single_plant_commit_owner",
+      "evidence": [
+        "plant_commit.py"
+      ],
+      "passed": true
+    },
+    {
+      "check": "07_single_supervisor_selection_owner",
+      "evidence": [
+        "supervisor.py"
+      ],
+      "passed": true
+    },
+    {
+      "check": "08_no_posthoc_oracle_import",
+      "evidence": [],
+      "passed": true
+    },
+    {
+      "check": "09_no_legacy_geometry_authority",
+      "evidence": [],
+      "passed": true
+    },
+    {
+      "check": "10_authority_registry_values_exact",
+      "evidence": [
+        0.015,
+        0.01,
+        0.025,
+        0.0,
+        [
+          -0.1,
+          -0.1,
+          -0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "check": "11_goal_hold_disabled",
+      "evidence": false,
+      "passed": true
+    },
+    {
+      "check": "12_active_deadline_profile_gate",
+      "evidence": "explicit startup gate",
+      "passed": true
+    },
+    {
+      "check": "13_c0_bounds_inclusive",
+      "evidence": {
+        "inclusive": "PASS",
+        "outside": "FAIL"
+      },
+      "passed": true
+    },
+    {
+      "check": "14_no_post_certification_clip",
+      "evidence": "no clip/clamp calls",
+      "passed": true
+    },
+    {
+      "check": "15_l1_cycle_and_attempt_binding",
+      "evidence": "cached cycle plus fresh binding",
+      "passed": true
+    },
+    {
+      "check": "16_c0_l2_l3_ordering",
+      "evidence": [
+        4995,
+        5144,
+        5298
+      ],
+      "passed": true
+    },
+    {
+      "check": "17_zero_alternative_inventory_supported",
+      "evidence": "typed empty inventory",
+      "passed": true
+    },
+    {
+      "check": "18_backup_token_lifecycle_complete",
+      "evidence": [
+        "abort_prepared",
+        "activate_after_navigation_commit",
+        "consume_after_backup_commit",
+        "current",
+        "invalidate",
+        "prepare",
+        "validate"
+      ],
+      "passed": true
+    },
+    {
+      "check": "19_terminal_policy_complete",
+      "evidence": "membership/certificate/eligibility separated",
+      "passed": true
+    },
+    {
+      "check": "20_boundary_no_plant_behavior",
+      "evidence": "boundary excluded",
+      "passed": true
+    },
+    {
+      "check": "21_transition_coverage_43_exactly_once",
+      "evidence": 43,
+      "passed": true
+    },
+    {
+      "check": "22_trace_finalize_lock_semantics",
+      "evidence": "immutable content-addressed lock",
+      "passed": true
+    },
+    {
+      "check": "23_all_iar_invariants_present",
+      "evidence": [
+        "IAR-01",
+        "IAR-02",
+        "IAR-03",
+        "IAR-04",
+        "IAR-05",
+        "IAR-06",
+        "IAR-07",
+        "IAR-08",
+        "IAR-09",
+        "IAR-10",
+        "IAR-11",
+        "IAR-12",
+        "IAR-13",
+        "IAR-14",
+        "IAR-15",
+        "IAR-16",
+        "IAR-17",
+        "IAR-18",
+        "IAR-19",
+        "IAR-20",
+        "IAR-21",
+        "IAR-22",
+        "IAR-23",
+        "IAR-24",
+        "IAR-25",
+        "IAR-26",
+        "IAR-27",
+        "IAR-28",
+        "IAR-29",
+        "IAR-30",
+        "IAR-31",
+        "IAR-32"
+      ],
+      "passed": true
+    },
+    {
+      "check": "24_all_unit_tests_pass",
+      "evidence": [
+        "Ran 76 tests in 0.063s",
+        "",
+        "OK"
+      ],
+      "passed": true
+    },
+    {
+      "check": "25_no_gpu_or_rollout_artifacts",
+      "evidence": [],
+      "passed": true
+    },
+    {
+      "check": "26_no_scientific_outcome_output",
+      "evidence": [],
+      "passed": true
+    }
+  ],
+  "failed_count": 0,
+  "gpu_execution_count": 0,
+  "passed_count": 26,
+  "rollout_count": 0,
+  "schema": "ACTIVE_RUNTIME_ASSURANCE_V2_IMPLEMENTATION_VALIDATION",
+  "scientific_oracle_execution_count": 0,
+  "verdict": "PASS_ACTIVE_RUNTIME_ASSURANCE_V2_IMPLEMENTATION_VALIDATION"
+}

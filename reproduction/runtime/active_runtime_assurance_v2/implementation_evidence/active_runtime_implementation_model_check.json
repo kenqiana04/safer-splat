@@ -1,0 +1,131 @@
+{
+  "check_count": 14,
+  "checks": [
+    {
+      "check": "actual_transition_table_is_43_exactly_once",
+      "evidence": 43,
+      "passed": true
+    },
+    {
+      "check": "commit_is_reachable_only_at_commit_phase",
+      "evidence": [
+        "ARB_NAV",
+        "ARB_TERMINAL",
+        "BACKUP_COMMIT",
+        "TERM_ELIGIBLE"
+      ],
+      "passed": true
+    },
+    {
+      "check": "proposal_has_no_direct_commit",
+      "evidence": [
+        "P0_PRIMARY",
+        "P0_NONE"
+      ],
+      "passed": true
+    },
+    {
+      "check": "l2_has_no_direct_commit",
+      "evidence": [
+        "L2_PASS",
+        "L2_FAIL_ALT",
+        "L2_FAIL_ARB",
+        "L2_UNKNOWN_LOCAL_ALT",
+        "L2_UNKNOWN_LOCAL_ARB",
+        "L2_UNKNOWN_GLOBAL"
+      ],
+      "passed": true
+    },
+    {
+      "check": "l3_has_no_direct_commit",
+      "evidence": [
+        "L3_FOUND",
+        "L3_ABSENT_ALT",
+        "L3_ABSENT_ARB",
+        "L3_UNKNOWN_LOCAL_ALT",
+        "L3_UNKNOWN_LOCAL_ARB",
+        "L3_UNKNOWN_GLOBAL"
+      ],
+      "passed": true
+    },
+    {
+      "check": "alternative_provider_has_no_direct_commit",
+      "evidence": [
+        "ALT_NEXT",
+        "ALT_DONE",
+        "ALT_GUARD"
+      ],
+      "passed": true
+    },
+    {
+      "check": "terminal_membership_has_no_unsupervised_commit",
+      "evidence": "CERTIFIED_TERMINAL",
+      "passed": true
+    },
+    {
+      "check": "sole_plant_owner",
+      "evidence": [
+        "plant_commit.py"
+      ],
+      "passed": true
+    },
+    {
+      "check": "sole_selection_owner",
+      "evidence": [
+        "supervisor.py"
+      ],
+      "passed": true
+    },
+    {
+      "check": "no_oracle_feedback_edge",
+      "evidence": [],
+      "passed": true
+    },
+    {
+      "check": "boundary_cannot_call_plant",
+      "evidence": 0,
+      "passed": true
+    },
+    {
+      "check": "invalid_token_cannot_execute",
+      "evidence": "ARB_BOUNDARY",
+      "passed": true
+    },
+    {
+      "check": "selected_executed_mismatch_impossible",
+      "evidence": 0,
+      "passed": true
+    },
+    {
+      "check": "every_executable_role_is_frozen_allowed_role",
+      "evidence": [
+        "ALTERNATIVE_NAVIGATION",
+        "CERTIFIED_TERMINAL",
+        "PRIMARY_NAVIGATION",
+        "RETAINED_BACKUP"
+      ],
+      "passed": true
+    }
+  ],
+  "counterexample_count": 0,
+  "reachable_runtime_phases": [
+    "ALT_SEARCH",
+    "ARBITRATION",
+    "ASSURANCE_BOUNDARY",
+    "BACKUP_EXECUTION",
+    "C0",
+    "COMMIT",
+    "L1",
+    "L2",
+    "L3",
+    "PRIMARY_PROPOSAL",
+    "REPAIR",
+    "RUNTIME_CURRENT_ROLE",
+    "START_ADMISSION",
+    "TERMINAL_EVALUATION"
+  ],
+  "schema": "ACTIVE_RUNTIME_IMPLEMENTATION_MODEL_CHECK_V2",
+  "transition_rule_count": 43,
+  "uses_actual_runtime_transition_objects": true,
+  "verdict": "PASS_ACTIVE_RUNTIME_IMPLEMENTATION_MODEL_CHECK"
+}
