@@ -1,0 +1,26 @@
+{
+  "anti_circularity_checker": "PASS_EVALUATION_ORACLE_ANTI_CIRCULARITY_CHECK",
+  "collision_radius_m": 0.015,
+  "external_gt": "Replica apartment_0局部有官方mesh；当前Stonehenge主线无scene-matched外部GT",
+  "goal_authority": "run.py既有6维L2阈值0.001；timeout不算到达",
+  "internal_certificate_role": "只作Tier-D诊断，不定义主安全结果",
+  "legacy_run_py_safety": "同represented-map family且仅点查询，不能作最终V2 oracle",
+  "legacy_timeout_success": "已隔离并在V2禁止",
+  "margin_radius_m": 0.025,
+  "next_dag_task": "DESIGN_ACTIVE_RUNTIME_ASSURANCE_IMPLEMENTATION_V2",
+  "oracle_architecture": "posthoc/read-only/no-feedback",
+  "primary_outcomes": [
+    "trial-level represented-map collision proxy incidence",
+    "goal-reached rate with normalized progress",
+    "assurance-boundary incidence"
+  ],
+  "progress_authority": "历史comparison公式(d_start-d_final)/d_start，不裁剪",
+  "remaining_blockers": [],
+  "represented_map_claim": "Tier-B, REPRESENTED_MAP_RELATIVE",
+  "review_text": "合同把oracle固定在immutable trace之后，只读且无反馈；证书状态仅为诊断。碰撞proxy用0.015 m实际足迹，margin violation用0.025 m，逐个已执行闭线段而非端点查询。当前Stonehenge没有独立GT，故禁止物理碰撞与现实安全claim。旧run.py safety与方法地图同源且点采样，不可作最终oracle；moving timeout的success语义已隔离。goal沿用既有6维L2<0.001，progress沿用历史位置距离归一化公式。terminal按精确role/证书/commit链计，software fail-close不等于safe stop。安全、任务、assurance、timing分开；trial为统计单元，variant同trial配对，UNKNOWN保留。24个反例场景与反循环checker通过。预实现合同阻断已清零，下一步仅是实现设计，不授权runtime。",
+  "safe_stop_boundary": "certified terminal commit可计；physical safe stop不可计",
+  "statistical_contract": "trial primary unit; paired identical trial identities",
+  "swept_or_endpoint": "closed executed swept segment",
+  "unknown_policy": "typed, retained, never SAFE",
+  "verdict": "PASS_INDEPENDENT_EVALUATION_ORACLE_FROZEN"
+}

@@ -1,0 +1,40 @@
+{
+  "check_count": 26,
+  "checks": {
+    "01_PR113_exact_upstream": true,
+    "02_execution_lock_raw_blobs": true,
+    "03_PR108_radii_separated": true,
+    "04_PR109_execution_identity_compatible": true,
+    "05_PR110_timing_nonclaims": true,
+    "06_PR112_backup_separate": true,
+    "07_PR113_failclose_boundary": true,
+    "08_owner_unique_readonly_posthoc": true,
+    "09_legacy_runpy_audited": true,
+    "10_collision_margin_separate": true,
+    "11_swept_segment_frozen": true,
+    "12_goal_authority_resolved": true,
+    "13_timeout_success_banned": true,
+    "14_progress_preregistered": true,
+    "15_action_roles_explicit": true,
+    "16_unknown_typed": true,
+    "17_external_GT_tier_explicit": true,
+    "18_no_composite_score": true,
+    "19_trial_primary_unit": true,
+    "20_paired_comparability": true,
+    "21_primary_hierarchy": true,
+    "22_EO_01_through_26": true,
+    "23_anti_circularity_PASS": true,
+    "24_synthetic_scenarios_PASS": true,
+    "25_production_runtime_diff_zero": true,
+    "26_no_experiment_execution": true
+  },
+  "pass_count": 26,
+  "production_runtime_diff_count": 0,
+  "scientific_execution_counts": {
+    "gpu": 0,
+    "outcome_data_read": 0,
+    "runtime_implementation": 0,
+    "trial": 0
+  },
+  "status": "PASS_INDEPENDENT_EVALUATION_ORACLE_V2_VALIDATION"
+}

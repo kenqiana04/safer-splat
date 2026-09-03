@@ -1,0 +1,21 @@
+{
+  "active_runtime_authorized": false,
+  "completed_task": "FREEZE_INDEPENDENT_EVALUATION_ORACLE_V2",
+  "contract_inputs": {
+    "execution_lock": "INDEPENDENT_EVALUATION_ORACLE_EXECUTION_LOCK.json",
+    "oracle_authority": "EVALUATION_ORACLE_AUTHORITY_V2.json",
+    "outcome_hierarchy": "PRE_REGISTERED_OUTCOME_HIERARCHY_V2.json",
+    "trace_schema": "EVALUATION_TRACE_SCHEMA_V2.json"
+  },
+  "implementation_constraints": [
+    "Design implementation before writing runtime code",
+    "Preserve posthoc read-only zero-feedback authority",
+    "Implement swept-segment Tier-B oracle with 0.015 m footprint and separate 0.025 m margin outcome",
+    "Do not claim physical collision without scene-matched Tier-A GT",
+    "Pass immutable-trace, role, UNKNOWN, paired-comparability, and anti-circularity gates before trials"
+  ],
+  "next_task": "DESIGN_ACTIVE_RUNTIME_ASSURANCE_IMPLEMENTATION_V2",
+  "no_automatic_next_task_execution": true,
+  "source_branch": "freeze-independent-evaluation-oracle-v2",
+  "source_commit1": "4e6cf90c8120b70b9446ef5a0c2fadedd7ced281"
+}

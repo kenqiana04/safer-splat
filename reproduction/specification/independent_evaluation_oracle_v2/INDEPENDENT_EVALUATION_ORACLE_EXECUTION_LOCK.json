@@ -1,0 +1,48 @@
+{
+  "commit1": "4e6cf90c8120b70b9446ef5a0c2fadedd7ced281",
+  "frozen_artifacts": {
+    "checker": {
+      "git_blob_sha1": "f2f9b3fd6755012f31ead211afac848b7122662e",
+      "path": "check_evaluation_oracle_independence_v2.py",
+      "sha256": "10668794db74613347834770050550c2350e4a7e0acb598166a46d0684e1236f"
+    },
+    "collision_oracle": {
+      "git_blob_sha1": "279435f5d2ac86d8a9ac37ba98b6a1b047168736",
+      "path": "COLLISION_VS_MARGIN_ORACLE_V2.md",
+      "sha256": "9a85b34bb2b9e179aa369ed8255edb471420d2f3777566549d3f771515a4d8c3"
+    },
+    "goal_oracle": {
+      "git_blob_sha1": "746984e68f37a4ac59998ec7597f68e348827f03",
+      "path": "GOAL_COMPLETION_ORACLE_V2.json",
+      "sha256": "9f416cf0ea391b460de617877e055589bf9547f5ee93fe5286d0fd04ca353fb9"
+    },
+    "invariants": {
+      "git_blob_sha1": "f6e23a0e1cada8ccdf039d74d186cc2136d6c7d2",
+      "path": "INDEPENDENT_EVALUATION_ORACLE_INVARIANTS_V2.json",
+      "sha256": "d1a03fce5c79ab622918b64776cf62ce47c7175ff89685f432e73905a5e59c4d"
+    },
+    "metric_registry": {
+      "git_blob_sha1": "d6dfb39cf6852a3258fe007a85a90d2028fe0ed7",
+      "path": "EVALUATION_METRIC_REGISTRY_V2.json",
+      "sha256": "ab6040dff3efd41c7415dd535c15f889ab38fe7767287f7da0583a70209bf277"
+    },
+    "oracle_authority": {
+      "git_blob_sha1": "0d7ab0b146b9dac6e6734f353601f488981551b2",
+      "path": "EVALUATION_ORACLE_AUTHORITY_V2.json",
+      "sha256": "4c7dcbb603155b5f503800f3dbdff482da3f29c26539031fd7d35a298cd2599f"
+    },
+    "outcome_hierarchy": {
+      "git_blob_sha1": "0b11e96570821470cb48d5d049392560c1d3b533",
+      "path": "PRE_REGISTERED_OUTCOME_HIERARCHY_V2.json",
+      "sha256": "da224c4992afd9a4161731756e05262c653e2947d94792dc910b35b1cd75a95e"
+    },
+    "scenario_manifest": {
+      "git_blob_sha1": "3f16caf7164b2d4b55ffd94d29a565554e0fec52",
+      "path": "ORACLE_SYNTHETIC_SCENARIOS_V2.json",
+      "sha256": "04e60abfbaa637fb4704bf25331d4904cfb0026aab7404470781e364353be0d5"
+    }
+  },
+  "lock_created_before_checker_tests_validator": true,
+  "runtime_execution_authority": false,
+  "schema_version": "INDEPENDENT_EVALUATION_ORACLE_EXECUTION_LOCK_V2"
+}

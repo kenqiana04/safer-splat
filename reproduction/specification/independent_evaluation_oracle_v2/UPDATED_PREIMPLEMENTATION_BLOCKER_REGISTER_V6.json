@@ -1,0 +1,19 @@
+{
+  "blockers": [
+    {"dependencies": [], "id": "METHOD_LOGIC_CLOSURE", "order": 1, "status": "RESOLVED"},
+    {"dependencies": ["METHOD_LOGIC_CLOSURE"], "id": "CROSS_LAYER_GEOMETRY_AUTHORITY", "order": 2, "status": "RESOLVED"},
+    {"dependencies": ["CROSS_LAYER_GEOMETRY_AUTHORITY"], "id": "SELECTED_CONTROL_ACTUATOR_AUTHORITY", "order": 3, "status": "RESOLVED"},
+    {"dependencies": ["SELECTED_CONTROL_ACTUATOR_AUTHORITY"], "id": "RUNTIME_ASSURANCE_DEADLINE_AUTHORITY", "order": 4, "status": "RESOLVED"},
+    {"dependencies": ["RUNTIME_ASSURANCE_DEADLINE_AUTHORITY"], "id": "ALTERNATIVE_SOURCE_AUTHORITY", "order": 5, "status": "RESOLVED"},
+    {"dependencies": ["ALTERNATIVE_SOURCE_AUTHORITY"], "id": "BACKUP_TOKEN_RUNTIME_SCHEMA", "order": 6, "status": "RESOLVED"},
+    {"dependencies": ["BACKUP_TOKEN_RUNTIME_SCHEMA"], "id": "TERMINAL_EMERGENCY_POLICY", "order": 7, "status": "RESOLVED"},
+    {"dependencies": ["TERMINAL_EMERGENCY_POLICY"], "id": "INDEPENDENT_EVALUATION_ORACLE", "order": 8, "status": "RESOLVED"},
+    {"dependencies": ["INDEPENDENT_EVALUATION_ORACLE"], "id": "RUNTIME_IMPLEMENTATION", "order": 9, "status": "UNRESOLVED"}
+  ],
+  "mechanically_selected_next_blocker": "RUNTIME_IMPLEMENTATION",
+  "mechanically_selected_next_task": "DESIGN_ACTIVE_RUNTIME_ASSURANCE_IMPLEMENTATION_V2",
+  "preimplementation_contract_blocker_count": 0,
+  "runtime_implementation_authorized": false,
+  "schema_version": "PREIMPLEMENTATION_BLOCKER_REGISTER_V6",
+  "selection_rule": "ascending_order_first_UNRESOLVED_whose_dependencies_are_all_RESOLVED"
+}
