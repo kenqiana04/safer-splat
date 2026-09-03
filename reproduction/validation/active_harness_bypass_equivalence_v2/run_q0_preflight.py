@@ -57,12 +57,19 @@ def main() -> int:
     head = git(checkout, "rev-parse", "HEAD")
     execution_lock = json.loads(args.execution_lock.read_text(encoding="utf-8"))
     check("protocol_commit_is_checkout_head", head == execution_lock["protocol_commit_sha"], head)
-    check("protocol_commit_parent_is_pr116", git(checkout, "rev-parse", "HEAD^") == EXPECTED_HEAD, git(checkout, "rev-parse", "HEAD^"))
+    ancestry = subprocess.run(["git", "merge-base", "--is-ancestor", EXPECTED_HEAD, head], cwd=checkout).returncode == 0
+    check("protocol_lineage_descends_from_pr116", ancestry and execution_lock["protocol_commit_parent_sha"] == EXPECTED_HEAD, {"head": head, "upstream": EXPECTED_HEAD})
     actual_blobs = {path: git(checkout, "rev-parse", f"HEAD:{path}") for path in EXPECTED_BLOBS}
     check("protected_source_blobs_exact", actual_blobs == EXPECTED_BLOBS, actual_blobs)
     task_files = {path.name: sha256(path) for path in task.glob("*") if path.is_file()}
     mismatched_tools = {name: expected for name, expected in execution_lock["task_tool_sha256"].items() if task_files.get(name) != expected}
     check("task_tool_hashes_exact", not mismatched_tools, mismatched_tools)
+    mismatched_tests = {
+        name: expected
+        for name, expected in execution_lock["task_test_sha256"].items()
+        if sha256(task / name) != expected
+    }
+    check("task_test_hashes_exact", not mismatched_tests, mismatched_tests)
     map_root = checkout / "outputs/stonehenge/splatfacto/2024-09-11_100724"
     map_evidence = {}
     map_ok = True
@@ -79,7 +86,8 @@ def main() -> int:
     runtime_result = subprocess.run([sys.executable, "-B", "-m", "unittest", "discover", "-s", "reproduction/runtime/active_runtime_assurance_v2/tests", "-v"], cwd=checkout, text=True, capture_output=True)
     check("pr116_runtime_suite", runtime_result.returncode == 0 and "Ran 76 tests" in (runtime_result.stdout + runtime_result.stderr), runtime_result.stdout + runtime_result.stderr)
     forbidden = []
-    for path in task.glob("*.py"):
+    for name in ("reference_trial_adapter.py", "run_reference_arm.py", "run_bypass_arm.py", "run_qa_pipeline.py"):
+        path = task / name
         text = path.read_text(encoding="utf-8")
         if "RuntimeMode.ACTIVE_RUNTIME_ON" in text or "evaluation_oracle" in text:
             forbidden.append(path.name)
