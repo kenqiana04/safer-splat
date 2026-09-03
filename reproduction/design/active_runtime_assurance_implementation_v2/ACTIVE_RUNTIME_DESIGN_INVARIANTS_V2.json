@@ -1,0 +1,155 @@
+{
+  "invariant_count": 30,
+  "invariants": [
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-01",
+      "statement": "single Supervisor selection authority"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-02",
+      "statement": "single plant commit authority"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-03",
+      "statement": "proposal has no commit authority"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-04",
+      "statement": "C0 precedes L2"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-05",
+      "statement": "L2 precedes L3"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-06",
+      "statement": "L1 candidate-independent"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-07",
+      "statement": "every alternative gets fresh attempt evidence"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-08",
+      "statement": "no synthetic alternatives"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-09",
+      "statement": "no V1 0.11 geometry authority"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-10",
+      "statement": "controller remains 0.015"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-11",
+      "statement": "certification geometry remains 0.025"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-12",
+      "statement": "actuator violation rejects rather than clips"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-13",
+      "statement": "selected equals executed"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-14",
+      "statement": "no post-certification transform"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-15",
+      "statement": "single ACTIVE backup token"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-16",
+      "statement": "prepared token cannot execute"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-17",
+      "statement": "token handoff atomic"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-18",
+      "statement": "no cursor advance before commit"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-19",
+      "statement": "terminal membership has no commit authority"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-20",
+      "statement": "valid backup outranks terminal"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-21",
+      "statement": "terminal outranks boundary only if certified and eligible"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-22",
+      "statement": "assurance boundary performs no plant step"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-23",
+      "statement": "deadline owner is Supervisor"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-24",
+      "statement": "no new search after expiry"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-25",
+      "statement": "active runtime cannot import post-hoc decision oracle"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-26",
+      "statement": "trace locks before evaluation"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-27",
+      "statement": "action role comes from Supervisor identity"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-28",
+      "statement": "UNKNOWN never silently PASS"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-29",
+      "statement": "original reference runtime remains untouched"
+    },
+    {
+      "design_status": "SATISFIED",
+      "id": "ARI-30",
+      "statement": "ACTIVE mode cannot start without required authority/config profile"
+    }
+  ]
+}

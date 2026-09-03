@@ -1,0 +1,20 @@
+{
+  "active_startup": {
+    "entry": "AuthorityRegistry.verify_all",
+    "failure_means_collision": false,
+    "plant_action_on_failure": false
+  },
+  "goal_hold_runtime_authority": {
+    "may_use_posthoc_goal_oracle": false,
+    "reason": "PR113_DEFINED_BUT_RUNTIME_AUTHORITY_UNRESOLVED",
+    "status": "DISABLED"
+  },
+  "numeric_deadline_profile": {
+    "may_use_oracle_to_fill": false,
+    "status": "REQUIRED_BEFORE_ACTIVE_LAUNCH",
+    "values_selected": false
+  },
+  "start_repair_primitive": {
+    "status": "DISABLED_UNLESS_SEPARATELY_FROZEN_AND_CONTENT_ADDRESSED"
+  }
+}

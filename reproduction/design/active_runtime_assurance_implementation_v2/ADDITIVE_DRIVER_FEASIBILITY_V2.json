@@ -1,0 +1,23 @@
+{
+  "accessible_facts": {
+    "cbf_qp_result": "run.py:132; cbf/cbf_utils.py:125-142",
+    "dynamics": "dynamics/systems.py:3-25",
+    "goal": "run.py:92-104",
+    "map_object": "run.py:79; splat/gsplat_utils.py:13-83",
+    "plant_entry": "run.py:147",
+    "trial_start_goal_ids": "run.py:89-104",
+    "u_des": "run.py:118-127",
+    "x_k": "run.py:100-104,118-132"
+  },
+  "future_package": "reproduction/runtime/active_runtime_assurance_v2/",
+  "production_edit_required": false,
+  "reference_source_untouched": [
+    "run.py",
+    "cbf/cbf_utils.py",
+    "dynamics/systems.py",
+    "splat/gsplat_utils.py"
+  ],
+  "runtime_implementation_count": 0,
+  "strategy": "ADDITIVE_ACTIVE_RUNTIME_DRIVER",
+  "verdict": "PASS_ADDITIVE_DRIVER_FEASIBLE"
+}

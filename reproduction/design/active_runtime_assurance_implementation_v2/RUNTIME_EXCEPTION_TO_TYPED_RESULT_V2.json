@@ -1,0 +1,58 @@
+{
+  "all_exceptions_traceable": true,
+  "rules": [
+    {
+      "examples": [
+        "proposal numeric error",
+        "C0/L2/L3 local compute error"
+      ],
+      "result": "CANDIDATE_LOCAL_COMPUTE_UNKNOWN",
+      "route": "frozen local UNKNOWN route",
+      "scope": "candidate-local"
+    },
+    {
+      "examples": [
+        "map identity mismatch",
+        "geometry/actuator authority missing"
+      ],
+      "result": "GLOBAL_AUTHORITY_OR_EVIDENCE_UNKNOWN",
+      "route": "arbitration without alternative repair",
+      "scope": "global-authority"
+    },
+    {
+      "examples": [
+        "identity/time/cursor mismatch"
+      ],
+      "result": "BACKUP_TOKEN_INVALID_OR_UNKNOWN",
+      "route": "terminal eligibility or boundary",
+      "scope": "backup-token"
+    },
+    {
+      "examples": [
+        "query/certificate exception"
+      ],
+      "result": "TERMINAL_UNKNOWN",
+      "route": "assurance boundary",
+      "scope": "terminal"
+    },
+    {
+      "examples": [
+        "profile/clock unavailable"
+      ],
+      "result": "GLOBAL_DEADLINE_UNKNOWN",
+      "route": "startup reject or frozen arbitration",
+      "scope": "deadline"
+    },
+    {
+      "examples": [
+        "selected/executed identity mismatch",
+        "plant exception"
+      ],
+      "result": "COMMIT_FAILED_NO_STATE_TRANSITION",
+      "route": "no token/cursor mutation; trace and boundary",
+      "scope": "commit"
+    }
+  ],
+  "silent_nominal_fallback_allowed": false,
+  "unknown_silently_passes": false
+}

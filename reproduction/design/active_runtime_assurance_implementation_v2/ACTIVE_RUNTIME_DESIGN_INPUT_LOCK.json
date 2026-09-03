@@ -1,0 +1,161 @@
+{
+  "direct_upstream": {
+    "base": "freeze-terminal-emergency-policy-v2",
+    "base_sha": "5595e56b756291881fb9f6f17ba3d7551263574f",
+    "branch": "freeze-independent-evaluation-oracle-v2",
+    "draft": true,
+    "head": "c924a959b1aa18b446a1d3c85afbe4f897604a84",
+    "pr": 114,
+    "state": "OPEN",
+    "title": "[Draft] Freeze independent evaluation oracle V2"
+  },
+  "gpu_authority": false,
+  "preimplementation_contract_blocker_count": 0,
+  "protected_inputs": [
+    {
+      "git_blob_sha1": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+      "mode": "100644",
+      "path": "run.py",
+      "sha256": "a3a91c8f7b667816b483c952da7dc814cd151fabb1bc32b68e0401d77d7aa123",
+      "size": 8345
+    },
+    {
+      "git_blob_sha1": "7c6e1300b125cc0a2a950ac2835a1fbe3d0de113",
+      "mode": "100644",
+      "path": "cbf/cbf_utils.py",
+      "sha256": "e38dea577dd207e9e3c5a1bfdcf2d75b675a899f29c982b89ea8b2694277696b",
+      "size": 7960
+    },
+    {
+      "git_blob_sha1": "e58ed65e60b17840201e571d7f23ce3816b83863",
+      "mode": "100644",
+      "path": "dynamics/systems.py",
+      "sha256": "f3aa29a115d799c46477b5eb50df378a768a261630a4ea3632b1f8f771f7969a",
+      "size": 2229
+    },
+    {
+      "git_blob_sha1": "782c38eca50e78c605085b481155ed61e4607336",
+      "mode": "100644",
+      "path": "splat/gsplat_utils.py",
+      "sha256": "8ef4835179ed712218d465b6b2c5ea32cd8635190bc8d34f96c6f2ff8e2e11f1",
+      "size": 9267
+    },
+    {
+      "git_blob_sha1": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+      "mode": "100644",
+      "path": "reproduction/specification/method_logic_closure_v2/STATE_TRANSITION_TABLE_V2.csv",
+      "sha256": "0dc77f53fe33b94f8c997f4a4c50c7f2fb5d72fb95113dd6e8d7856525d6ad72",
+      "size": 9306
+    },
+    {
+      "git_blob_sha1": "fd8f232db33a9fd8c61ca0d62c5ff26320e88bc1",
+      "mode": "100644",
+      "path": "reproduction/specification/method_logic_closure_v2/RUNTIME_ASSURANCE_SUPERVISOR_V2.md",
+      "sha256": "19bc69f928cebaa25cfb2bf3507985bf49d0761ae183be31d0000a3c48b17ce2",
+      "size": 1548
+    },
+    {
+      "git_blob_sha1": "ab26f3d7a2247211d6d95f0b8d74cd8529f55d33",
+      "mode": "100644",
+      "path": "reproduction/specification/cross_layer_geometry_authority_v2/CROSS_LAYER_GEOMETRY_AUTHORITY_V2.json",
+      "sha256": "56a1040c9359a001e647dc15f46a4e65f370a24509c3a1a1d887e6dc70fc0cd5",
+      "size": 1302
+    },
+    {
+      "git_blob_sha1": "c56032a3009ac6c62866093a1c6266d3ca50cee4",
+      "mode": "100644",
+      "path": "reproduction/specification/control_authority_v2/SELECTED_CONTROL_ACTUATOR_CONTRACT_V2.json",
+      "sha256": "573593142ce4c91f4fa3849c12f7dc225383bc77238f768b7754be4a168b5e16",
+      "size": 2575
+    },
+    {
+      "git_blob_sha1": "e07f0f29b2879b05da5623304927c7c239b9b0ae",
+      "mode": "100644",
+      "path": "reproduction/specification/runtime_assurance_deadline_authority_v2/RUNTIME_ASSURANCE_DEADLINE_AUTHORITY_V2.json",
+      "sha256": "3a539edc4bd31f9cbe4f929bdd28141c37f300ea413101475d540d27bb7498b7",
+      "size": 2154
+    },
+    {
+      "git_blob_sha1": "bad6ea6fc635e09852b7253225f1b85197d6ad5f",
+      "mode": "100644",
+      "path": "reproduction/specification/alternative_source_authority_v2/ALTERNATIVE_SOURCE_AUTHORITY_V2.json",
+      "sha256": "4cc7bbe9300435b2aa5850b96444ddcf67e9c2be3d1980207d1e6de5e0f0458d",
+      "size": 1467
+    },
+    {
+      "git_blob_sha1": "40cf32d219146917ea69687e4ad0b7f5f8d09a2d",
+      "mode": "100644",
+      "path": "reproduction/specification/backup_token_runtime_schema_v2/BACKUP_TOKEN_RUNTIME_STATE_V2.json",
+      "sha256": "1fd69f8a3e8995900b5015af7a28b4c91c4e8a61fee7c48e2b5b74d68c5e91c7",
+      "size": 618
+    },
+    {
+      "git_blob_sha1": "579d5593b68cffb6180abdc39d498e605b2b7dd7",
+      "mode": "100644",
+      "path": "reproduction/specification/terminal_emergency_policy_v2/TERMINAL_EMERGENCY_POLICY_CONTRACT_V2.json",
+      "sha256": "a7f6763e69c36d937e85eaa47ee247ac935f3e53d65989215557bd7858cee2ba",
+      "size": 1114
+    },
+    {
+      "git_blob_sha1": "0d7ab0b146b9dac6e6734f353601f488981551b2",
+      "mode": "100644",
+      "path": "reproduction/specification/independent_evaluation_oracle_v2/EVALUATION_ORACLE_AUTHORITY_V2.json",
+      "sha256": "4b5594006e1a8cea5cb83354044b8c8d0a116a25d89c73f1f85972a11509d63b",
+      "size": 996
+    }
+  ],
+  "rollout_authority": false,
+  "runtime_implementation_authority": false,
+  "schema_version": "ACTIVE_RUNTIME_DESIGN_INPUT_LOCK_V2",
+  "scientific_execution_count": 0,
+  "upstream_prs": [
+    {
+      "authority": "METHOD_LOGIC_CLOSURE_V2",
+      "branch": "red-team-method-logic-closure-v2",
+      "head": "a60665f3e29085cc18f1ee03828198074f52e4f0",
+      "pr": 107
+    },
+    {
+      "authority": "CERTIFICATION_GEOMETRY_AUTHORITY_V2",
+      "branch": "freeze-cross-layer-geometry-authority-v2",
+      "head": "f04a2077c4f483f20696bb5515c576cd75ddf449",
+      "pr": 108
+    },
+    {
+      "authority": "SELECTED_CONTROL_ACTUATOR_AUTHORITY_V2",
+      "branch": "freeze-selected-control-actuator-authority-v2",
+      "head": "729b3c78a81f2f3ca8948916b64dcb6e2c50fc66",
+      "pr": 109
+    },
+    {
+      "authority": "RUNTIME_DEADLINE_AUTHORITY",
+      "branch": "freeze-runtime-assurance-deadline-authority-v2",
+      "head": "52467acd2ab82c300a8f6c3ce712ab0d59d4f4cf",
+      "pr": 110
+    },
+    {
+      "authority": "ALTERNATIVE_SOURCE_AUTHORITY",
+      "branch": "freeze-alternative-source-authority-v2",
+      "head": "a658c858995d76a4baa1ad119701e2706df075be",
+      "pr": 111
+    },
+    {
+      "authority": "BACKUP_TOKEN_RUNTIME_SCHEMA_V2",
+      "branch": "freeze-backup-token-runtime-schema-v2",
+      "head": "8b47c5c9af05bbb022af4a964a6c8989231bc1bc",
+      "pr": 112
+    },
+    {
+      "authority": "TERMINAL_EMERGENCY_POLICY_V2",
+      "branch": "freeze-terminal-emergency-policy-v2",
+      "head": "5595e56b756291881fb9f6f17ba3d7551263574f",
+      "pr": 113
+    },
+    {
+      "authority": "POSTHOC_EVALUATION_ORACLE",
+      "branch": "freeze-independent-evaluation-oracle-v2",
+      "head": "c924a959b1aa18b446a1d3c85afbe4f897604a84",
+      "pr": 114
+    }
+  ]
+}

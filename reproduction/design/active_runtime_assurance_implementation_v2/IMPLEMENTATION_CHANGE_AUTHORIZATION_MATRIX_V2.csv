@@ -1,0 +1,11 @@
+path_or_surface,authorization,reason
+run.py,READ_ONLY,untouched reference baseline
+cbf/cbf_utils.py,READ_ONLY,proposal primitive only
+dynamics/systems.py,READ_ONLY,plant primitive behind sole commit adapter
+splat/*,READ_ONLY,map/query primitives only
+reproduction/specification/* PR107-PR114,READ_ONLY,normative frozen contracts
+legacy V1 result directories,READ_ONLY,historical evidence
+reproduction/runtime/active_runtime_assurance_v2/*,WRITE_ALLOWED_NEXT_TASK,new additive package only
+reproduction/runtime/active_runtime_assurance_v2/tests/*,WRITE_ALLOWED_NEXT_TASK,future unit/static tests
+future QA trace output,FUTURE_QA_TASK_ONLY,not research evidence until separately frozen
+evaluation oracle runtime feedback,FORBIDDEN,post-hoc zero-feedback boundary

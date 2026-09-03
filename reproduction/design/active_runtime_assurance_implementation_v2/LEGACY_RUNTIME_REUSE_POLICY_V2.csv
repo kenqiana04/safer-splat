@@ -1,0 +1,10 @@
+component,path,classification,reason
+SweptSegmentCertifier,reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/segment_certificate.py,REUSE_BEHIND_V2_AUTHORITY_ADAPTER,"parameterized backend; inject G3, 0.025 m and rho_seg=0"
+L2/H1 propagator and formal segment backends,reproduction/shadow/l2_h1_shadow_certifier_v1,REUSE_AS_PURE_PARAMETERIZED_BACKEND,reuse pure math only; V2 wrapper supplies authority and typing
+load_frozen_robot_margin_contract,reproduction/shadow/l2_h1_shadow_certifier_v1/shadow_contract.py,HISTORICAL_ONLY_DO_NOT_IMPORT,hard-loads V1 0.10/0.01/0.11 authority
+CurrentCBFAdapter/full query,reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/adapters/current_cbf_adapter.py,REUSE_BEHIND_V2_AUTHORITY_ADAPTER,map identity and V2 geometry provenance must be injected
+BackupCertifier,reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/backup_certifier.py,REIMPLEMENT_TYPED_V2_WRAPPER,reuse pure sub-primitives; separate L3 bundle preparation from token lifecycle/deadline authority
+TerminalCertifier,reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/certifier/terminal_certificate.py,REIMPLEMENT_TYPED_V2_WRAPPER,"separate membership, certificate, eligibility, selection and commit"
+legacy map safety margin config,reproduction/specification/core_v2_causal_increment_specification_v1/map_safety_semantics_audit.json,HISTORICAL_ONLY_DO_NOT_IMPORT,V1 0.11 m is not V2 authority
+shadow immutable payload/logger primitives,reproduction/instrumentation/l2_h1_on_policy_shadow_instrumentation_v1,REUSE_AS_PURE_PARAMETERIZED_BACKEND,copy/hash/append-only patterns only; no shadow authority or feedback
+InstrumentedCBFWrapper,reproduction/instrumentation/l2_h1_on_policy_shadow_instrumentation_v1/instrumented_cbf_wrapper.py,HISTORICAL_ONLY_DO_NOT_IMPORT,post-commit shadow observer is not an active supervisor
