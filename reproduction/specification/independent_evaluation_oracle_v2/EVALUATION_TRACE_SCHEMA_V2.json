@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "oracle_must_reject": [
+    "missing_committed_transition",
+    "nonfinite_state",
+    "identity_mismatch",
+    "mutable_trace"
+  ],
+  "properties": {
+    "steps": {
+      "items": {
+        "properties": {
+          "action_role": {
+            "enum": [
+              "PRIMARY_NAVIGATION",
+              "ALTERNATIVE_NAVIGATION",
+              "RETAINED_BACKUP",
+              "TERMINAL",
+              "NO_METHOD_ACTION",
+              "ASSURANCE_BOUNDARY"
+            ]
+          }
+        },
+        "required": [
+          "cycle_index_k",
+          "simulation_time",
+          "x_k",
+          "x_k_hash",
+          "selected_action_id",
+          "selected_action_vector",
+          "executed_action_id",
+          "executed_action_vector",
+          "action_role",
+          "action_committed",
+          "x_k1",
+          "x_k1_hash",
+          "solver_timing",
+          "certification_timing",
+          "deadline_state",
+          "retained_backup_state",
+          "terminal_lifecycle_state",
+          "software_fail_close_event"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "trace_lock": {
+      "required": [
+        "sha256",
+        "schema_sha256",
+        "locked_before_evaluation"
+      ],
+      "type": "object"
+    },
+    "trial": {
+      "required": [
+        "experiment_protocol_id",
+        "trial_id",
+        "scene_id",
+        "start_state_id",
+        "goal_state_id",
+        "method_variant_id",
+        "map_authority_id",
+        "geometry_contract_id",
+        "actuator_contract_id",
+        "dynamics_timebase_id",
+        "deadline_contract_id",
+        "terminal_policy_id",
+        "oracle_contract_id"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "trial",
+    "steps",
+    "trace_lock"
+  ],
+  "title": "Immutable V2 evaluation trace",
+  "type": "object"
+}

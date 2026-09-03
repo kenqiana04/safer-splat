@@ -1,0 +1,33 @@
+{
+  "ORACLE_FEEDBACK_AUTHORITY": false,
+  "adaptive_threshold_authority": false,
+  "allowed_inputs": [
+    "IMMUTABLE_EXECUTED_TRACE",
+    "FROZEN_SCENE_REFERENCE_AUTHORITY",
+    "PRE_REGISTERED_EVALUATION_CONTRACT",
+    "OPTIONAL_SCENE_MATCHED_EXTERNAL_GT_REFERENCE"
+  ],
+  "backup_authority": false,
+  "candidate_generation_authority": false,
+  "controller_state_mutation_authority": false,
+  "diagnostic_only_inputs": [
+    "C0_STATUS",
+    "L1_STATUS",
+    "L2_STATUS",
+    "L3_STATUS",
+    "CBF_FEASIBILITY",
+    "RUNTIME_INTERNAL_H",
+    "CANDIDATE_RANKING_SCORE"
+  ],
+  "execution_time": "AFTER_TRIAL_OR_AFTER_IMMUTABLE_TRACE_LOCK",
+  "primary_outcome_prohibited_inputs": [
+    "CERTIFICATE_STATUS",
+    "METHOD_INTERNAL_H",
+    "METHOD_MARGIN_AS_COLLISION_RADIUS"
+  ],
+  "read_only": true,
+  "schema_version": "EVALUATION_ORACLE_AUTHORITY_V2",
+  "selection_authority": false,
+  "terminal_authority": false,
+  "unique_owner": "POSTHOC_EVALUATION_ORACLE"
+}

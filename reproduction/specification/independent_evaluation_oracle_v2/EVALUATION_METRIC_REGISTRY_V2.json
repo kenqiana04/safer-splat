@@ -1,0 +1,43 @@
+{
+  "composite_score": null,
+  "frozen_before_active_outcomes": true,
+  "metric_families": {
+    "computation_observations": [
+      "per_step_method_compute_duration",
+      "certificate_stage_duration_if_instrumented",
+      "supervisor_arbitration_duration_if_instrumented",
+      "episode_wall_and_sim_compute_observation"
+    ],
+    "diagnostic_non_primary": [
+      "C0_reject_rate",
+      "L1_L2_L3_status_distributions",
+      "alternative_attempts",
+      "backup_invalidation_reasons",
+      "terminal_certificate_readiness"
+    ],
+    "liveness_task": [
+      "goal_reached",
+      "normalized_progress",
+      "steps_executed",
+      "timeout",
+      "stall_if_future_preexisting_definition_available"
+    ],
+    "runtime_assurance": [
+      "primary_navigation_commit_count_rate",
+      "alternative_navigation_commit_count_rate",
+      "retained_backup_activation_count_rate",
+      "terminal_commit_count_rate",
+      "assurance_boundary_count_rate",
+      "no_method_action_count"
+    ],
+    "safety": [
+      "represented_map_collision_proxy_trial",
+      "represented_map_collision_proxy_segment_count",
+      "min_represented_map_clearance_m",
+      "certification_margin_violation_trial",
+      "min_certification_margin_clearance_m"
+    ]
+  },
+  "safety_liveness_separated": true,
+  "schema_version": "EVALUATION_METRIC_REGISTRY_V2"
+}

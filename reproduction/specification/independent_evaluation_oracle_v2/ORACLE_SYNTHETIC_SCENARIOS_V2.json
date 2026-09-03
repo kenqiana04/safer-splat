@@ -1,0 +1,128 @@
+{
+  "count": 24,
+  "scenarios": [
+    {
+      "expected": "EVAL_VIOLATION",
+      "fixture": "L2_PASS_INDEPENDENT_PENETRATION",
+      "id": "S01"
+    },
+    {
+      "expected": "EVAL_PASS_WITH_L2_DIAGNOSTIC_FAIL",
+      "fixture": "L2_FAIL_BACKUP_TRACE_CLEAR",
+      "id": "S02"
+    },
+    {
+      "expected": "EVAL_VIOLATION",
+      "fixture": "ENDPOINT_SAFE_SEGMENT_CROSSES",
+      "id": "S03"
+    },
+    {
+      "expected": "COLLISION_PASS_MARGIN_VIOLATION",
+      "fixture": "R015_CLEAR_R025_MARGIN_VIOLATED",
+      "id": "S04"
+    },
+    {
+      "expected": "TIMEOUT_NOT_GOAL_REACHED",
+      "fixture": "MOVING_TIMEOUT_NOT_AT_GOAL",
+      "id": "S05"
+    },
+    {
+      "expected": "GOAL_REACHED",
+      "fixture": "EXPLICIT_GOAL_PREDICATE_MET",
+      "id": "S06"
+    },
+    {
+      "expected": "NOT_TERMINAL_COMMIT",
+      "fixture": "ZERO_WITHOUT_TERMINAL_CHAIN",
+      "id": "S07"
+    },
+    {
+      "expected": "TERMINAL_COMMIT_COUNT_1",
+      "fixture": "CERTIFIED_EXECUTED_TERMINAL",
+      "id": "S08"
+    },
+    {
+      "expected": "SOFTWARE_FAIL_CLOSE_ONLY",
+      "fixture": "SOFTWARE_BREAK",
+      "id": "S09"
+    },
+    {
+      "expected": "NOT_SAFE_STOP_SUCCESS",
+      "fixture": "ASSURANCE_BOUNDARY",
+      "id": "S10"
+    },
+    {
+      "expected": "EVAL_UNKNOWN",
+      "fixture": "MISSING_TRACE_STEP",
+      "id": "S11"
+    },
+    {
+      "expected": "EVAL_UNKNOWN",
+      "fixture": "NONFINITE_STATE",
+      "id": "S12"
+    },
+    {
+      "expected": "EVAL_VIOLATION",
+      "fixture": "INTERNAL_H_SAFE_ORACLE_VIOLATION",
+      "id": "S13"
+    },
+    {
+      "expected": "COMPARISON_INVALID",
+      "fixture": "ORACLE_VERSION_MISMATCH",
+      "id": "S14"
+    },
+    {
+      "expected": "COMPARISON_INVALID",
+      "fixture": "OPERATIONAL_RADIUS_CHANGED",
+      "id": "S15"
+    },
+    {
+      "expected": "COMPARISON_VALID_IF_OTHERWISE_ALIGNED",
+      "fixture": "CERT_MARGIN_DIFF_COLLISION_RADIUS_FIXED",
+      "id": "S16"
+    },
+    {
+      "expected": "TIER_A_BLOCKED_TIER_B_AVAILABLE",
+      "fixture": "EXTERNAL_GT_UNAVAILABLE",
+      "id": "S17"
+    },
+    {
+      "expected": "BACKUP_COUNT_ONLY",
+      "fixture": "BACKUP_ACTION_ROLE",
+      "id": "S18"
+    },
+    {
+      "expected": "ALTERNATIVE_COUNT_ONLY",
+      "fixture": "ALTERNATIVE_ACTION_ROLE",
+      "id": "S19"
+    },
+    {
+      "expected": "TERMINAL_COMMIT_COUNT_0",
+      "fixture": "TERMINAL_READY_NOT_COMMITTED",
+      "id": "S20"
+    },
+    {
+      "expected": "RETAIN_IN_ACCOUNTING",
+      "fixture": "UNKNOWN_TRIAL",
+      "id": "S21"
+    },
+    {
+      "expected": "TIMING_UNKNOWN_GEOMETRY_MAY_REMAIN_EVALUABLE",
+      "fixture": "MISSING_RUNTIME_ONE_STEP",
+      "id": "S22"
+    },
+    {
+      "expected": "CHECKER_REJECT",
+      "fixture": "OUTCOME_DEPENDENT_THRESHOLD_EDIT",
+      "id": "S23"
+    },
+    {
+      "expected": "VALIDATOR_REJECT",
+      "fixture": "IMPORT_V1_TIMEOUT_SUCCESS",
+      "id": "S24"
+    }
+  ],
+  "schema_version": "ORACLE_SYNTHETIC_SCENARIOS_V2",
+  "scientific_trial_count": 0,
+  "synthetic_only": true
+}

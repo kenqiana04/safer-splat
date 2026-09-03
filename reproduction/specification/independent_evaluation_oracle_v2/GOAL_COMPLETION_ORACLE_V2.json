@@ -1,0 +1,27 @@
+{
+  "authority": "PRE_EXISTING_RUN_PY_EXPLICIT_GOAL_PREDICATE",
+  "goal_components": "goal_position_xyz concatenated with zero_velocity_xyz",
+  "norm": "Euclidean L2 norm",
+  "posthoc_application": "evaluate exact immutable executed states; threshold fixed before V2 outcomes",
+  "predicate": "norm_2(x_k - goal_6d) < 0.001",
+  "schema_version": "GOAL_COMPLETION_ORACLE_V2",
+  "source": {
+    "head": "5595e56b756291881fb9f6f17ba3d7551263574f",
+    "lines": [
+      163,
+      168
+    ],
+    "path": "run.py"
+  },
+  "state_components": "six-dimensional double-integrator state: position_xyz and velocity_xyz",
+  "timeout_alone_is_success": false,
+  "tolerance": 0.001,
+  "typed_outcomes": [
+    "GOAL_REACHED",
+    "TIMEOUT_NOT_GOAL_REACHED",
+    "STALLED_NOT_GOAL_REACHED",
+    "ASSURANCE_BOUNDARY_NOT_GOAL_REACHED",
+    "EVAL_UNKNOWN"
+  ],
+  "units": "mixed state norm inherited from historical benchmark contract"
+}

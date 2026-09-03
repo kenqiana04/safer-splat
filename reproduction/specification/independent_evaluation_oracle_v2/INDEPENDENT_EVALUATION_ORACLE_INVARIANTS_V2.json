@@ -1,0 +1,135 @@
+{
+  "invariants": [
+    {
+      "id": "EO-01",
+      "mandatory": true,
+      "rule": "oracle has no runtime feedback authority"
+    },
+    {
+      "id": "EO-02",
+      "mandatory": true,
+      "rule": "evaluation runs only on immutable trace/reference"
+    },
+    {
+      "id": "EO-03",
+      "mandatory": true,
+      "rule": "internal certificate statuses cannot define collision outcome"
+    },
+    {
+      "id": "EO-04",
+      "mandatory": true,
+      "rule": "represented-map collision proxy uses operational footprint 0.015 m"
+    },
+    {
+      "id": "EO-05",
+      "mandatory": true,
+      "rule": "certification-margin violation uses 0.025 m and is not called collision"
+    },
+    {
+      "id": "EO-06",
+      "mandatory": true,
+      "rule": "swept executed segment is evaluated, not endpoint-only"
+    },
+    {
+      "id": "EO-07",
+      "mandatory": true,
+      "rule": "collision oracle version is identical across compared variants"
+    },
+    {
+      "id": "EO-08",
+      "mandatory": true,
+      "rule": "goal success cannot be granted by timeout alone"
+    },
+    {
+      "id": "EO-09",
+      "mandatory": true,
+      "rule": "goal threshold is pre-existing or frozen before V2 outcomes"
+    },
+    {
+      "id": "EO-10",
+      "mandatory": true,
+      "rule": "progress formula is pre-registered"
+    },
+    {
+      "id": "EO-11",
+      "mandatory": true,
+      "rule": "terminal commit requires terminal action role/evidence, not zero-vector heuristic"
+    },
+    {
+      "id": "EO-12",
+      "mandatory": true,
+      "rule": "software fail-close is not safe stop"
+    },
+    {
+      "id": "EO-13",
+      "mandatory": true,
+      "rule": "assurance boundary is not safe success"
+    },
+    {
+      "id": "EO-14",
+      "mandatory": true,
+      "rule": "backup activation and terminal intervention are separate metrics"
+    },
+    {
+      "id": "EO-15",
+      "mandatory": true,
+      "rule": "safety and liveness remain separate metric families"
+    },
+    {
+      "id": "EO-16",
+      "mandatory": true,
+      "rule": "no composite score hides tradeoffs"
+    },
+    {
+      "id": "EO-17",
+      "mandatory": true,
+      "rule": "evaluation UNKNOWN is never SAFE"
+    },
+    {
+      "id": "EO-18",
+      "mandatory": true,
+      "rule": "missing trials are not dropped silently"
+    },
+    {
+      "id": "EO-19",
+      "mandatory": true,
+      "rule": "trial is primary statistical unit"
+    },
+    {
+      "id": "EO-20",
+      "mandatory": true,
+      "rule": "variants use paired identical trial identities"
+    },
+    {
+      "id": "EO-21",
+      "mandatory": true,
+      "rule": "oracle definitions cannot adapt after outcome reveal"
+    },
+    {
+      "id": "EO-22",
+      "mandatory": true,
+      "rule": "physical collision claim requires Tier-A external GT"
+    },
+    {
+      "id": "EO-23",
+      "mandatory": true,
+      "rule": "represented-map oracle declares map-relative scope"
+    },
+    {
+      "id": "EO-24",
+      "mandatory": true,
+      "rule": "runtime timing observation is not hard real-time guarantee"
+    },
+    {
+      "id": "EO-25",
+      "mandatory": true,
+      "rule": "V1 historical metrics remain historical and are not silently reinterpreted"
+    },
+    {
+      "id": "EO-26",
+      "mandatory": true,
+      "rule": "oracle output cannot mutate supervisor/controller state"
+    }
+  ],
+  "schema_version": "INDEPENDENT_EVALUATION_ORACLE_INVARIANTS_V2"
+}

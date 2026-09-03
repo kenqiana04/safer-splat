@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "certificate_not_primary_outcome": true,
+    "feedback_false": true,
+    "forbidden_edges_absent": true,
+    "radii_separated": true,
+    "scenario_count_at_least_20": true,
+    "scenario_ids_unique": true,
+    "swept_crossing_detected": true,
+    "tier_b_map_relative": true,
+    "timeout_success_rejected": true,
+    "unique_posthoc_owner": true
+  },
+  "forbidden_edge_hits": [],
+  "status": "PASS_EVALUATION_ORACLE_ANTI_CIRCULARITY_CHECK",
+  "synthetic_scenarios_checked": 24
+}

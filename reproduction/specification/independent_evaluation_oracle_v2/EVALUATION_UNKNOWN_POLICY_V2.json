@@ -1,0 +1,20 @@
+{
+  "EVAL_UNKNOWN_IS_SAFE": false,
+  "schema_version": "EVALUATION_UNKNOWN_POLICY_V2",
+  "states": [
+    "EVAL_PASS",
+    "EVAL_VIOLATION",
+    "EVAL_UNKNOWN"
+  ],
+  "tier_scoped_missingness": true,
+  "timing_unknown_does_not_automatically_invalidate_geometry": true,
+  "unknown_reasons": [
+    "TRACE_INCOMPLETE",
+    "REFERENCE_MAP_UNRESOLVED",
+    "ORACLE_BACKEND_FAILURE",
+    "NONFINITE_STATE",
+    "IDENTITY_MISMATCH",
+    "EXTERNAL_GT_UNAVAILABLE"
+  ],
+  "unknown_trials_retained_in_accounting": true
+}

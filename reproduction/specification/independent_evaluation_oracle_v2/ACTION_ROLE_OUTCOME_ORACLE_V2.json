@@ -1,0 +1,22 @@
+{
+  "backup_and_alternative_counts_separate": true,
+  "roles": [
+    "PRIMARY_NAVIGATION",
+    "ALTERNATIVE_NAVIGATION",
+    "RETAINED_BACKUP",
+    "TERMINAL",
+    "ASSURANCE_BOUNDARY",
+    "NO_METHOD_ACTION"
+  ],
+  "schema_version": "ACTION_ROLE_OUTCOME_ORACLE_V2",
+  "software_break_is_terminal_commit": false,
+  "source": "exact selected/executed action role identity in immutable trace",
+  "terminal_commit_requires": [
+    "action_role_TERMINAL",
+    "terminal_exact_certificate_identity",
+    "supervisor_selection_identity",
+    "executed_action_identity"
+  ],
+  "terminal_ready_without_commit_is_terminal_commit": false,
+  "zero_vector_heuristic_forbidden": true
+}

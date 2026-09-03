@@ -1,0 +1,30 @@
+{
+  "counterexamples": [
+    {
+      "edge": "posthoc_oracle -> runtime_controller",
+      "id": "CE1",
+      "rejected_because": "feedback violates EO-01/EO-26"
+    },
+    {
+      "edge": "certificate_status -> collision_ground_truth",
+      "id": "CE2",
+      "rejected_because": "circular safety evidence"
+    },
+    {
+      "edge": "method_margin -> physical_collision_radius",
+      "id": "CE3",
+      "rejected_because": "variant-dependent outcome threshold"
+    },
+    {
+      "edge": "paper_outcome_table -> oracle_threshold_registry",
+      "id": "CE4",
+      "rejected_because": "post-outcome adaptation"
+    },
+    {
+      "id": "CE5",
+      "legacy": "timeout_while_moving -> success",
+      "rejected_because": "timeout is not goal completion"
+    }
+  ],
+  "schema_version": "EVALUATION_ORACLE_COUNTEREXAMPLES_V2"
+}
