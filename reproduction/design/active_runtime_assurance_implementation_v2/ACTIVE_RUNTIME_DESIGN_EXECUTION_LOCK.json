@@ -1,0 +1,54 @@
+{
+  "commit1": "52f3e2b6637d91f8c9c73ceee71fefd217deb5a7",
+  "frozen_artifacts": {
+    "architecture": {
+      "git_blob_sha1": "1317a2e664d6740a869d3b3c09150c86618138ae",
+      "path": "MODULE_ARCHITECTURE_V2.json",
+      "sha256": "b08d94772d7fb2c57318a45e149ba35c1c477537ed534624ad2033f854486af6",
+      "size": 5025
+    },
+    "change_authorization": {
+      "git_blob_sha1": "8452b1322763991655425e84c822127442377fa5",
+      "path": "IMPLEMENTATION_CHANGE_AUTHORIZATION_MATRIX_V2.csv",
+      "sha256": "749bdfad65fbe5f0d2234d520cef56382d130dd13c8f71727bf07428cf846839",
+      "size": 761
+    },
+    "implementation_file_manifest": {
+      "git_blob_sha1": "aba99201b8fe6e9a785537b9624731098c7fa349",
+      "path": "ACTIVE_RUNTIME_IMPLEMENTATION_FILE_MANIFEST_V2.csv",
+      "sha256": "445eecf66a7bf0303bf62a670c23fd1ed27c16e8e29aec12b5e6fae23183b5ff",
+      "size": 4490
+    },
+    "invariants": {
+      "git_blob_sha1": "7d764568d988032aaac9b08afe1f8a44407def77",
+      "path": "ACTIVE_RUNTIME_DESIGN_INVARIANTS_V2.json",
+      "sha256": "c264f8960f8023cd3de5beb8b1d40006d544c0c8efad740745797694ad257218",
+      "size": 3840
+    },
+    "model_checker": {
+      "git_blob_sha1": "ea3bd649e18b943924adf921cec930ad1a79f59a",
+      "path": "model_check_active_runtime_design_v2.py",
+      "sha256": "708acb22276fa71fb6efa58dc0de784d8ea49028230daa4f3d2ad72d8ed1b64c",
+      "size": 2803
+    },
+    "scenario_manifest": {
+      "git_blob_sha1": "b4cadd04ee8bf2206a42c746ad26fa64d3a1531b",
+      "path": "ACTIVE_RUNTIME_DESIGN_SCENARIOS_V2.json",
+      "sha256": "b642ba4597bc182e0bf15fec5dd77973121c85343911d98445f3c663f146c42a",
+      "size": 4351
+    },
+    "transition_manifest": {
+      "git_blob_sha1": "d695c4bf73f012fb7231a430319cd8edfb130580",
+      "path": "RUNTIME_TRANSITION_IMPLEMENTATION_MANIFEST_V2.csv",
+      "sha256": "b39b9c19fc43a302a3a40b5041e92643fdbb2a52c70364fcb054a25f2c849daf",
+      "size": 15918
+    }
+  },
+  "gpu_authority": false,
+  "lock_created_before_model_checker_tests_validator": true,
+  "post_lock_contract_correction_authority": false,
+  "rollout_authority": false,
+  "runtime_execution_authority": false,
+  "schema_version": "ACTIVE_RUNTIME_DESIGN_EXECUTION_LOCK_V2",
+  "task_local_design_correction_limit": 1
+}

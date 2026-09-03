@@ -1,0 +1,174 @@
+{
+  "all_resolved": true,
+  "scenario_count": 28,
+  "scenarios": [
+    {
+      "condition": "primary C0/L2/L3 pass",
+      "expected": "PRIMARY_NAVIGATION_COMMIT_AND_TOKEN_ACTIVE_K1",
+      "id": "S01",
+      "resolved": true
+    },
+    {
+      "condition": "QP solver fail and valid backup",
+      "expected": "RETAINED_BACKUP_COMMIT",
+      "id": "S02",
+      "resolved": true
+    },
+    {
+      "condition": "QP proposal out of actuator box",
+      "expected": "C0_REJECT_NO_CLIP",
+      "id": "S03",
+      "resolved": true
+    },
+    {
+      "condition": "primary L2 fail no native alternative valid backup",
+      "expected": "RETAINED_BACKUP_COMMIT",
+      "id": "S04",
+      "resolved": true
+    },
+    {
+      "condition": "primary L2 fail no backup",
+      "expected": "ELIGIBLE_TERMINAL_OR_BOUNDARY",
+      "id": "S05",
+      "resolved": true
+    },
+    {
+      "condition": "L3 witness absent and valid backup",
+      "expected": "RETAINED_BACKUP_COMMIT",
+      "id": "S06",
+      "resolved": true
+    },
+    {
+      "condition": "L3 global unknown and unaffected backup",
+      "expected": "ARBITRATION_TO_BACKUP",
+      "id": "S07",
+      "resolved": true
+    },
+    {
+      "condition": "L1 fail",
+      "expected": "NO_L4_ARBITRATION",
+      "id": "S08",
+      "resolved": true
+    },
+    {
+      "condition": "L1 global unknown and unaffected backup",
+      "expected": "ARBITRATION_TO_BACKUP",
+      "id": "S09",
+      "resolved": true
+    },
+    {
+      "condition": "first cycle no backup candidate L3 pass",
+      "expected": "NAV_COMMIT_TOKEN_ACTIVE_K1",
+      "id": "S10",
+      "resolved": true
+    },
+    {
+      "condition": "first cycle L3 fail",
+      "expected": "NO_UNCERTIFIED_COMMIT",
+      "id": "S11",
+      "resolved": true
+    },
+    {
+      "condition": "prepared token but candidate commit fails",
+      "expected": "OLD_TOKEN_UNCHANGED",
+      "id": "S12",
+      "resolved": true
+    },
+    {
+      "condition": "successful navigation token handoff",
+      "expected": "NO_NONE_GAP",
+      "id": "S13",
+      "resolved": true
+    },
+    {
+      "condition": "backup action commit",
+      "expected": "CURSOR_ADVANCE_EXACTLY_ONCE",
+      "id": "S14",
+      "resolved": true
+    },
+    {
+      "condition": "backup commit fails",
+      "expected": "NO_CURSOR_ADVANCE",
+      "id": "S15",
+      "resolved": true
+    },
+    {
+      "condition": "backup exhausted and eligible terminal",
+      "expected": "CERTIFIED_TERMINAL_COMMIT",
+      "id": "S16",
+      "resolved": true
+    },
+    {
+      "condition": "backup exhausted and stale terminal reference",
+      "expected": "ASSURANCE_BOUNDARY_NO_ACTION",
+      "id": "S17",
+      "resolved": true
+    },
+    {
+      "condition": "deadline expired and valid backup",
+      "expected": "RETAINED_BACKUP_ALLOWED",
+      "id": "S18",
+      "resolved": true
+    },
+    {
+      "condition": "deadline expired and no prepared evidence",
+      "expected": "NO_NEW_SEARCH",
+      "id": "S19",
+      "resolved": true
+    },
+    {
+      "condition": "zero-vector primary navigation",
+      "expected": "ROLE_REMAINS_PRIMARY_NAVIGATION",
+      "id": "S20",
+      "resolved": true
+    },
+    {
+      "condition": "canonical zero terminal selected",
+      "expected": "ROLE_FROM_SUPERVISOR_TERMINAL_IDENTITY",
+      "id": "S21",
+      "resolved": true
+    },
+    {
+      "condition": "assurance boundary",
+      "expected": "NO_DYNAMICS_CALL",
+      "id": "S22",
+      "resolved": true
+    },
+    {
+      "condition": "runtime exception",
+      "expected": "TYPED_UNKNOWN_NO_NOMINAL_FALLBACK",
+      "id": "S23",
+      "resolved": true
+    },
+    {
+      "condition": "trace finalized",
+      "expected": "ORACLE_ALLOWED_ONLY_AFTER_LOCK",
+      "id": "S24",
+      "resolved": true
+    },
+    {
+      "condition": "V1 0.11 loader import",
+      "expected": "DESIGN_VIOLATION",
+      "id": "S25",
+      "resolved": true
+    },
+    {
+      "condition": "oracle imported by active Supervisor",
+      "expected": "DESIGN_VIOLATION",
+      "id": "S26",
+      "resolved": true
+    },
+    {
+      "condition": "second active token",
+      "expected": "DESIGN_VIOLATION",
+      "id": "S27",
+      "resolved": true
+    },
+    {
+      "condition": "outcome metric accessed during active decision",
+      "expected": "DESIGN_VIOLATION",
+      "id": "S28",
+      "resolved": true
+    }
+  ]
+}

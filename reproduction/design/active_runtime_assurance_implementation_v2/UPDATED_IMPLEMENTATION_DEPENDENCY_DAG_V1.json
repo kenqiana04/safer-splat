@@ -1,0 +1,57 @@
+{
+  "auto_execution": false,
+  "completed_contract_nodes": [
+    "METHOD_LOGIC_CLOSURE_V2",
+    "CERTIFICATION_GEOMETRY_AUTHORITY_V2",
+    "SELECTED_CONTROL_ACTUATOR_AUTHORITY_V2",
+    "RUNTIME_DEADLINE_AUTHORITY",
+    "ALTERNATIVE_SOURCE_AUTHORITY",
+    "BACKUP_TOKEN_RUNTIME_SCHEMA_V2",
+    "TERMINAL_EMERGENCY_POLICY_V2",
+    "POSTHOC_EVALUATION_ORACLE"
+  ],
+  "current_node": {
+    "id": "ACTIVE_RUNTIME_IMPLEMENTATION_DESIGN",
+    "status": "DESIGN_FROZEN_PENDING_VALIDATION"
+  },
+  "future_nodes": [
+    {
+      "depends_on": [
+        "ACTIVE_RUNTIME_IMPLEMENTATION_DESIGN"
+      ],
+      "id": "IMPLEMENT_ACTIVE_RUNTIME_ASSURANCE_V2"
+    },
+    {
+      "depends_on": [
+        "IMPLEMENT_ACTIVE_RUNTIME_ASSURANCE_V2"
+      ],
+      "id": "VERIFY_ACTIVE_HARNESS_BYPASS_EQUIVALENCE_V2"
+    },
+    {
+      "depends_on": [
+        "VERIFY_ACTIVE_HARNESS_BYPASS_EQUIVALENCE_V2"
+      ],
+      "id": "VALIDATE_ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_V2"
+    },
+    {
+      "depends_on": [
+        "VALIDATE_ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_V2"
+      ],
+      "id": "ACTIVE_RUNTIME_SMOKE_V2"
+    },
+    {
+      "depends_on": [
+        "ACTIVE_RUNTIME_SMOKE_V2"
+      ],
+      "id": "FREEZE_FINAL_ACTIVE_EXPERIMENT_PROTOCOL"
+    },
+    {
+      "depends_on": [
+        "FREEZE_FINAL_ACTIVE_EXPERIMENT_PROTOCOL"
+      ],
+      "id": "FORMAL_FINAL100_ONCE"
+    }
+  ],
+  "mechanical_next_task_on_design_pass": "IMPLEMENT_ACTIVE_RUNTIME_ASSURANCE_V2",
+  "schema_version": "ACTIVE_RUNTIME_IMPLEMENTATION_DEPENDENCY_DAG_V1"
+}

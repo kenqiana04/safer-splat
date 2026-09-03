@@ -1,0 +1,27 @@
+{
+  "auto_execution": false,
+  "base_branch": "freeze-independent-evaluation-oracle-v2",
+  "completed_task": "DESIGN_ACTIVE_RUNTIME_ASSURANCE_IMPLEMENTATION_V2",
+  "execution_lock": "ACTIVE_RUNTIME_DESIGN_EXECUTION_LOCK.json",
+  "implementation_target": "reproduction/runtime/active_runtime_assurance_v2/",
+  "input_lock": "ACTIVE_RUNTIME_DESIGN_INPUT_LOCK.json",
+  "mechanically_selected_next_task": "IMPLEMENT_ACTIVE_RUNTIME_ASSURANCE_V2",
+  "must_not_do": [
+    "edit protected production source",
+    "import V1 0.11 authority",
+    "invent alternatives",
+    "select numeric deadline ad hoc",
+    "enable goal hold",
+    "run smoke or trials"
+  ],
+  "must_preserve": [
+    "PR107-PR114 authorities",
+    "additive-only production boundary",
+    "single Supervisor selection",
+    "single PlantCommitAdapter plant write",
+    "V2 geometry/actuator authority",
+    "post-hoc oracle isolation"
+  ],
+  "next_task_scope": "code plus unit/static tests only",
+  "source_branch": "design-active-runtime-assurance-implementation-v2"
+}

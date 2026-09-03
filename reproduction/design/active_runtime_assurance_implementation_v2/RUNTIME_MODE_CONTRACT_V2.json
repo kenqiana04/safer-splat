@@ -1,0 +1,30 @@
+{
+  "bypass_equivalence_required": [
+    "selected_action_vector",
+    "executed_action_vector",
+    "state_trajectory",
+    "branch_trace",
+    "termination_reason",
+    "trial_identity",
+    "map_identity"
+  ],
+  "mode_switch_during_trial": false,
+  "modes": {
+    "ACTIVE_HARNESS_BYPASS": {
+      "active_authority": false,
+      "driver": "future additive driver",
+      "purpose": "prove exact trace equivalence before active certification"
+    },
+    "ACTIVE_RUNTIME_ON": {
+      "active_authority": true,
+      "driver": "future additive driver",
+      "numeric_deadline_profile_required": true,
+      "startup_authority_check": "AuthorityRegistry.verify_all"
+    },
+    "REFERENCE_BASELINE": {
+      "active_authority": false,
+      "driver": "run.py",
+      "purpose": "untouched reference trace"
+    }
+  }
+}

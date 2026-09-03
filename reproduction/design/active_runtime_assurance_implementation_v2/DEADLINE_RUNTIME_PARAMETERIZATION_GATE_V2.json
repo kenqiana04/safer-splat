@@ -1,0 +1,24 @@
+{
+  "active_startup_missing_profile_result": "DEADLINE_PROFILE_REQUIRED",
+  "after_expiry_new_search_allowed": false,
+  "authority_owner": "SUPERVISOR",
+  "fake_clock_performance_evidence": false,
+  "fake_clock_scope": [
+    "UNIT_TEST",
+    "ACTIVE_HARNESS_BYPASS"
+  ],
+  "numeric_values_frozen_by_this_task": false,
+  "required_fields": [
+    "cycle_deadline_duration",
+    "stage_budgets",
+    "warning_reserve",
+    "latest_safe_commit",
+    "clock_identity"
+  ],
+  "required_profile_type": "RuntimeDeadlineProfile",
+  "states": [
+    "DEADLINE_OPEN",
+    "DEADLINE_WARNING",
+    "DEADLINE_EXPIRED"
+  ]
+}

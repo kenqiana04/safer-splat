@@ -1,0 +1,199 @@
+{
+  "acyclic_dependency_graph": true,
+  "cycle_boundary": "CommitReceipt closes k; runner supplies immutable x_k1 to the next supervisor cycle",
+  "edges": [
+    [
+      "active_runner.py",
+      "authority_registry.py"
+    ],
+    [
+      "active_runner.py",
+      "supervisor.py"
+    ],
+    [
+      "active_runner.py",
+      "trace_writer.py"
+    ],
+    [
+      "supervisor.py",
+      "start_admission.py"
+    ],
+    [
+      "supervisor.py",
+      "diagnostic_r0.py"
+    ],
+    [
+      "supervisor.py",
+      "l1_runtime.py"
+    ],
+    [
+      "supervisor.py",
+      "primary_proposal_adapter.py"
+    ],
+    [
+      "supervisor.py",
+      "c0_admission.py"
+    ],
+    [
+      "supervisor.py",
+      "l2_runtime.py"
+    ],
+    [
+      "supervisor.py",
+      "l3_runtime.py"
+    ],
+    [
+      "supervisor.py",
+      "alternative_provider.py"
+    ],
+    [
+      "supervisor.py",
+      "backup_token_store.py"
+    ],
+    [
+      "supervisor.py",
+      "terminal_runtime.py"
+    ],
+    [
+      "supervisor.py",
+      "deadline_runtime.py"
+    ],
+    [
+      "supervisor.py",
+      "plant_commit.py"
+    ],
+    [
+      "plant_commit.py",
+      "trace_writer.py"
+    ],
+    [
+      "plant_commit.py",
+      "dynamics/systems.py"
+    ]
+  ],
+  "modules": [
+    {
+      "file": "authority_registry.py",
+      "owns_runtime_authority": false,
+      "owns_selection": false,
+      "responsibility": "AuthorityRegistry",
+      "writes_plant": false
+    },
+    {
+      "file": "runtime_types.py",
+      "owns_runtime_authority": false,
+      "owns_selection": false,
+      "responsibility": "immutable typed identities/results/events",
+      "writes_plant": false
+    },
+    {
+      "file": "start_admission.py",
+      "owns_runtime_authority": false,
+      "owns_selection": false,
+      "responsibility": "I0a and optional lawful I0b coordination",
+      "writes_plant": false
+    },
+    {
+      "file": "diagnostic_r0.py",
+      "owns_runtime_authority": false,
+      "owns_selection": false,
+      "responsibility": "non-gating R0 diagnostics",
+      "writes_plant": false
+    },
+    {
+      "file": "l1_runtime.py",
+      "owns_runtime_authority": false,
+      "owns_selection": false,
+      "responsibility": "single cycle L1 result and attempt bindings",
+      "writes_plant": false
+    },
+    {
+      "file": "primary_proposal_adapter.py",
+      "owns_runtime_authority": false,
+      "owns_selection": false,
+      "responsibility": "PD/Clarabel proposal adapter",
+      "writes_plant": false
+    },
+    {
+      "file": "c0_admission.py",
+      "owns_runtime_authority": false,
+      "owns_selection": false,
+      "responsibility": "finite and inclusive actuator admission",
+      "writes_plant": false
+    },
+    {
+      "file": "l2_runtime.py",
+      "owns_runtime_authority": false,
+      "owns_selection": false,
+      "responsibility": "V2 authority-injected H1 certification",
+      "writes_plant": false
+    },
+    {
+      "file": "l3_runtime.py",
+      "owns_runtime_authority": false,
+      "owns_selection": false,
+      "responsibility": "candidate recoverability bundle preparation",
+      "writes_plant": false
+    },
+    {
+      "file": "alternative_provider.py",
+      "owns_runtime_authority": false,
+      "owns_selection": false,
+      "responsibility": "lawful native-existing alternative enumeration",
+      "writes_plant": false
+    },
+    {
+      "file": "backup_token_store.py",
+      "owns_runtime_authority": false,
+      "owns_selection": false,
+      "responsibility": "atomic retained token lifecycle",
+      "writes_plant": false
+    },
+    {
+      "file": "terminal_runtime.py",
+      "owns_runtime_authority": false,
+      "owns_selection": false,
+      "responsibility": "certified eligible terminal preparation",
+      "writes_plant": false
+    },
+    {
+      "file": "deadline_runtime.py",
+      "owns_runtime_authority": false,
+      "owns_selection": false,
+      "responsibility": "deadline observation under Supervisor ownership",
+      "writes_plant": false
+    },
+    {
+      "file": "supervisor.py",
+      "owns_runtime_authority": true,
+      "owns_selection": true,
+      "responsibility": "state machine and sole arbitration",
+      "writes_plant": false
+    },
+    {
+      "file": "plant_commit.py",
+      "owns_runtime_authority": true,
+      "owns_selection": false,
+      "responsibility": "identity guard and sole dynamics commit",
+      "writes_plant": true
+    },
+    {
+      "file": "trace_writer.py",
+      "owns_runtime_authority": false,
+      "owns_selection": false,
+      "responsibility": "append-only runtime trace and canonical final lock",
+      "writes_plant": false
+    },
+    {
+      "file": "active_runner.py",
+      "owns_runtime_authority": false,
+      "owns_selection": false,
+      "responsibility": "composition root and trial lifecycle",
+      "writes_plant": false
+    }
+  ],
+  "oracle_runtime_edges": [],
+  "plant_commit_owner": "PlantCommitAdapter.commit",
+  "selection_owner": "Supervisor.arbitrate",
+  "strategy": "ADDITIVE_ACTIVE_RUNTIME_DRIVER"
+}
