@@ -34,7 +34,10 @@ class PlantCommitAdapter:
             raise CommitAuthorityViolation("STATE_OR_CYCLE_IDENTITY_MISMATCH")
         if decision.selected_action.identity != selected_action.identity or decision.selected_action.vector != selected_action.vector or decision.selected_action.role != selected_action.role:
             raise CommitAuthorityViolation("SELECTED_ACTION_IDENTITY_MISMATCH")
-        if not all_finite(selected_action.vector) or any(value < low or value > high for value, low, high in zip(selected_action.vector, self._registry.actuator.u_min, self._registry.actuator.u_max)):
+        # BYPASS has no active authority: it delegates the exact reference action,
+        # including the reference path's native numerical behavior.  ACTIVE rules
+        # retain the frozen actuator-admission guard without clipping or tolerance.
+        if decision.rule_id != "BYPASS" and (not all_finite(selected_action.vector) or any(value < low or value > high for value, low, high in zip(selected_action.vector, self._registry.actuator.u_min, self._registry.actuator.u_max))):
             raise CommitAuthorityViolation("ACTUATOR_ADMISSION_REQUIRED")
         try:
             post_vector = self._transition(snapshot.state, selected_action.vector, snapshot.dt)
