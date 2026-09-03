@@ -1,0 +1,15 @@
+{
+  "schema": "BYPASS_QA_TRIAL_MANIFEST_V2",
+  "frozen_before_real_execution": true,
+  "selection_not_outcome_conditioned": true,
+  "sentinel": {"phase": "Q1", "trial_id": 50, "sequence": 1},
+  "remaining": [
+    {"phase": "Q2", "trial_id": 10, "sequence": 2},
+    {"phase": "Q2", "trial_id": 30, "sequence": 3},
+    {"phase": "Q2", "trial_id": 70, "sequence": 4},
+    {"phase": "Q2", "trial_id": 90, "sequence": 5}
+  ],
+  "arm_order": ["REFERENCE_CONTROL_PLANT", "ACTIVE_HARNESS_BYPASS"],
+  "fresh_process_per_arm": true,
+  "max_steps": 500
+}
