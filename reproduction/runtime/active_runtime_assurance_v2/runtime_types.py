@@ -417,5 +417,239 @@ class AlternativeInventoryResult:
     candidates: tuple[Candidate, ...]
 
 
+# Public-cycle composition types are additive to the PR #116 runtime types.
+# They carry orchestration facts only; none owns certificate, routing, action
+# selection, plant, or scientific-evaluation authority.
+
+
+class PublicCyclePhase(str, Enum):
+    START_ADMISSION = "START_ADMISSION"
+    R0_DIAGNOSTIC = "R0_DIAGNOSTIC"
+    TRIAL_READY = "TRIAL_READY"
+    TRIAL_BLOCKED_AT_ADMISSION = "TRIAL_BLOCKED_AT_ADMISSION"
+    CYCLE_BEGIN = "CYCLE_BEGIN"
+    L1_IMMEDIATE_CERTIFICATION = "L1_IMMEDIATE_CERTIFICATION"
+    PRIMARY_PROPOSAL = "PRIMARY_PROPOSAL"
+    PRIMARY_C0 = "PRIMARY_C0"
+    PRIMARY_L2 = "PRIMARY_L2"
+    PRIMARY_L3 = "PRIMARY_L3"
+    ALTERNATIVE_ELIGIBILITY = "ALTERNATIVE_ELIGIBILITY"
+    ALTERNATIVE_SOURCE_QUERY = "ALTERNATIVE_SOURCE_QUERY"
+    ALTERNATIVE_C0 = "ALTERNATIVE_C0"
+    ALTERNATIVE_L2 = "ALTERNATIVE_L2"
+    ALTERNATIVE_L3 = "ALTERNATIVE_L3"
+    BACKUP_VALIDATION = "BACKUP_VALIDATION"
+    TERMINAL_EVALUATION = "TERMINAL_EVALUATION"
+    ARBITRATION = "ARBITRATION"
+    COMMIT = "COMMIT"
+    TRACE_APPEND = "TRACE_APPEND"
+    CYCLE_COMPLETE = "CYCLE_COMPLETE"
+    ASSURANCE_BOUNDARY = "ASSURANCE_BOUNDARY"
+
+
+class PublicCycleEvent(str, Enum):
+    # PR #121 public names.
+    START_PASS = "START_PASS"
+    START_FAIL = "START_FAIL"
+    START_UNKNOWN = "START_UNKNOWN"
+    PRIMARY_UNAVAILABLE = "PRIMARY_UNAVAILABLE"
+    PRIMARY_UNKNOWN = "PRIMARY_UNKNOWN"
+    C0_FAIL = "C0_FAIL"
+    C0_UNKNOWN = "C0_UNKNOWN"
+    L2_UNKNOWN = "L2_UNKNOWN"
+    L3_PASS = "L3_PASS"
+    L3_FAIL = "L3_FAIL"
+    L3_UNKNOWN = "L3_UNKNOWN"
+    ALT_ELIGIBLE = "ALT_ELIGIBLE"
+    ALT_NOT_ELIGIBLE = "ALT_NOT_ELIGIBLE"
+    ALT_UNKNOWN = "ALT_UNKNOWN"
+    BACKUP_VALID = "BACKUP_VALID"
+    BACKUP_INVALID = "BACKUP_INVALID"
+    BACKUP_NONE = "BACKUP_NONE"
+    BACKUP_EXHAUSTED = "BACKUP_EXHAUSTED"
+    BACKUP_UNKNOWN = "BACKUP_UNKNOWN"
+    TERMINAL_READY = "TERMINAL_READY"
+    TERMINAL_NOT_READY = "TERMINAL_NOT_READY"
+    DEADLINE_OPEN = "DEADLINE_OPEN"
+    DEADLINE_WARNING = "DEADLINE_WARNING"
+    DEADLINE_EXPIRED = "DEADLINE_EXPIRED"
+    DEADLINE_UNKNOWN = "DEADLINE_UNKNOWN"
+    COMMIT_SUCCESS = "COMMIT_SUCCESS"
+    BOUNDARY = "BOUNDARY"
+    # Exact PR #107 observation/result values consumed by the executable table.
+    INITIAL_SAFE = "INITIAL_SAFE"
+    INITIAL_REPAIR_REQUIRED = "INITIAL_REPAIR_REQUIRED"
+    REPAIR_PASS = "REPAIR_PASS"
+    REPAIR_FAIL = "REPAIR_FAIL"
+    REPAIR_UNKNOWN = "REPAIR_UNKNOWN"
+    R0_DIAGNOSTIC_COMPLETE = "R0_DIAGNOSTIC_COMPLETE"
+    L1_PASS = "L1_PASS"
+    L1_FAIL = "L1_FAIL"
+    L1_UNKNOWN_GLOBAL = "L1_UNKNOWN_GLOBAL"
+    L1_UNKNOWN_HEALTH = "L1_UNKNOWN_HEALTH"
+    L1_UNKNOWN_UNRESOLVED = "L1_UNKNOWN_UNRESOLVED"
+    PRIMARY_AVAILABLE = "PRIMARY_AVAILABLE"
+    NO_CANDIDATE = "NO_CANDIDATE"
+    C0_PASS = "C0_PASS"
+    C0_FAIL_LOCAL = "C0_FAIL_LOCAL"
+    C0_UNKNOWN_LOCAL = "C0_UNKNOWN_LOCAL"
+    C0_UNKNOWN_GLOBAL = "C0_UNKNOWN_GLOBAL"
+    L2_PASS = "L2_PASS"
+    L2_FAIL = "L2_FAIL"
+    L2_UNKNOWN_LOCAL = "L2_UNKNOWN_LOCAL"
+    L2_UNKNOWN_GLOBAL = "L2_UNKNOWN_GLOBAL"
+    L3_WITNESS_FOUND = "L3_WITNESS_FOUND"
+    L3_WITNESS_ABSENT = "L3_WITNESS_ABSENT"
+    L3_UNKNOWN_LOCAL = "L3_UNKNOWN_LOCAL"
+    L3_UNKNOWN_GLOBAL = "L3_UNKNOWN_GLOBAL"
+    ALT_AVAILABLE = "ALT_AVAILABLE"
+    ALT_EXHAUSTED = "ALT_EXHAUSTED"
+    DEADLINE_GUARD = "DEADLINE_GUARD"
+    ARBITRATE = "ARBITRATE"
+    EXECUTE_RETAINED_BACKUP = "EXECUTE_RETAINED_BACKUP"
+    TERMINAL_MEMBER_ELIGIBLE = "TERMINAL_MEMBER_ELIGIBLE"
+    TERMINAL_MEMBER_NOT_ELIGIBLE = "TERMINAL_MEMBER_NOT_ELIGIBLE"
+    TERMINAL_UNKNOWN = "TERMINAL_UNKNOWN"
+    ROUTING_RULE_MISSING = "ROUTING_RULE_MISSING"
+    ROUTING_RULE_AMBIGUOUS = "ROUTING_RULE_AMBIGUOUS"
+    STAGE_EXCEPTION = "STAGE_EXCEPTION"
+    SERIALIZATION_FAILURE = "SERIALIZATION_FAILURE"
+    COMMIT_FAILURE = "COMMIT_FAILURE"
+
+
+class RouteResolutionStatus(str, Enum):
+    RESOLVED = "RESOLVED"
+    BLOCKED_MISSING = "BLOCKED_MISSING"
+    BLOCKED_AMBIGUOUS = "BLOCKED_AMBIGUOUS"
+
+
+class TrialSessionStatus(str, Enum):
+    NEW = "NEW"
+    READY = "READY"
+    BLOCKED = "BLOCKED"
+    FINALIZED = "FINALIZED"
+
+
+@dataclass(frozen=True)
+class RuntimeRoutingContext:
+    source_phase: RuntimePhase
+    deadline: DeadlineObservation
+    authority_identity: str
+    candidate_role: CandidateRole | None = None
+    candidate_identity: CandidateIdentity | None = None
+    candidate_available: bool = False
+    retained_backup_present: bool = False
+    retained_backup_valid: bool = False
+    alternative_search_allowed: bool = False
+    navigation_ready: bool = False
+    terminal_evaluated: bool = False
+    terminal_ready: bool = False
+    reason_scope: str = "NONE"
+
+
+@dataclass(frozen=True)
+class RoutingDecision:
+    status: RouteResolutionStatus
+    rule_id: str | None
+    source_phase: RuntimePhase
+    destination_phase: RuntimePhase | None
+    may_start_next_stage: bool
+    may_start_new_search: bool
+    requires_arbitration: bool
+    failure_mapping: str | None
+    deadline_interpretation: str
+    backup_routing_allowed: bool
+    terminal_routing_allowed: bool
+    commit_allowed: bool
+    reason: str
+
+
+@dataclass(frozen=True)
+class ActiveTrialContext:
+    trial_id: str
+    expected_map_identity: str
+    initial_cycle_index: int = 0
+
+
+@dataclass(frozen=True)
+class ActiveCycleRequest:
+    trial_id: str
+    cycle_index: int
+    desired_reference: Vector3
+    expected_terminal_ref: str | None = None
+
+
+@dataclass(frozen=True)
+class TrialStartResult:
+    trial_id: str
+    status: CertificateStatus
+    ready: bool
+    boundary: bool
+    reason: str
+    admission_result: StartAdmissionResult
+    diagnostic: R0Diagnostic | None
+    phase_history: tuple[PublicCyclePhase, ...]
+    routing_decisions: tuple[RoutingDecision, ...]
+
+
+@dataclass(frozen=True)
+class ActiveCycleContext:
+    trial_id: str
+    cycle_index: int
+    snapshot_id: str
+    state_id: str
+    authority_identity: str
+    deadline_identity: str
+    phase: PublicCyclePhase
+    phase_history: tuple[PublicCyclePhase, ...]
+    deadline_observations: tuple[DeadlineObservation, ...] = ()
+    l1_result: L1CycleResult | None = None
+    primary_candidate: Candidate | None = None
+    primary_binding: L1AttemptBinding | None = None
+    primary_c0: C0Result | None = None
+    primary_l2: L2Result | None = None
+    primary_l3: L3Result | None = None
+    alternative_attempts: tuple[CandidateIdentity, ...] = ()
+    backup_validation: EvidenceResult | None = None
+    backup_action: SelectedAction | None = None
+    terminal_result: TerminalResult | None = None
+    routing_decisions: tuple[RoutingDecision, ...] = ()
+    final_supervisor_decision: SupervisorDecision | None = None
+    commit_receipt: CommitReceipt | None = None
+    trace_ref: str | None = None
+
+
+@dataclass(frozen=True)
+class ActiveCycleResult:
+    trial_id: str
+    cycle_index: int
+    start_state_id: str
+    phase_history: tuple[PublicCyclePhase, ...]
+    routing_rule_ids: tuple[str, ...]
+    deadline_observations: tuple[DeadlineObservation, ...]
+    l1_result: L1CycleResult | None
+    candidate_refs: tuple[CandidateIdentity, ...]
+    certificate_refs: tuple[str, ...]
+    backup_status: str
+    terminal_status: str
+    final_supervisor_decision: SupervisorDecision | None
+    supervisor_reason: str
+    action_role: ActionRole | None
+    commit_receipt: CommitReceipt | None
+    committed: bool
+    next_state: RuntimeStateSnapshot | None
+    boundary: bool
+    trace_ref: str | None
+    typed_stop_or_failure_reason: str
+
+
+@dataclass(frozen=True)
+class CoordinatorSession:
+    trial_id: str
+    map_identity: str
+    next_cycle_index: int
+    status: TrialSessionStatus
+
+
 def all_finite(values: tuple[float, ...]) -> bool:
     return all(math.isfinite(value) for value in values)

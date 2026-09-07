@@ -1,0 +1,250 @@
+{
+  "actual_implementation": true,
+  "checks": [
+    {
+      "check": "route:SA_SAFE",
+      "passed": true
+    },
+    {
+      "check": "route:SA_REPAIR",
+      "passed": true
+    },
+    {
+      "check": "route:REPAIR_PASS",
+      "passed": true
+    },
+    {
+      "check": "route:REPAIR_FAIL",
+      "passed": true
+    },
+    {
+      "check": "route:REPAIR_UNKNOWN",
+      "passed": true
+    },
+    {
+      "check": "route:R0_DIAGNOSTIC",
+      "passed": true
+    },
+    {
+      "check": "route:L1_PASS",
+      "passed": true
+    },
+    {
+      "check": "route:L1_FAIL",
+      "passed": true
+    },
+    {
+      "check": "route:L1_UNKNOWN_GLOBAL",
+      "passed": true
+    },
+    {
+      "check": "route:L1_UNKNOWN_HEALTH",
+      "passed": true
+    },
+    {
+      "check": "route:L1_UNKNOWN_UNRESOLVED",
+      "passed": true
+    },
+    {
+      "check": "route:P0_PRIMARY",
+      "passed": true
+    },
+    {
+      "check": "route:P0_NONE",
+      "passed": true
+    },
+    {
+      "check": "route:C0_PASS",
+      "passed": true
+    },
+    {
+      "check": "route:C0_FAIL_LOCAL_ALT",
+      "passed": true
+    },
+    {
+      "check": "route:C0_FAIL_LOCAL_ARB",
+      "passed": true
+    },
+    {
+      "check": "route:C0_UNKNOWN_LOCAL_ALT",
+      "passed": true
+    },
+    {
+      "check": "route:C0_UNKNOWN_LOCAL_ARB",
+      "passed": true
+    },
+    {
+      "check": "route:C0_UNKNOWN_GLOBAL",
+      "passed": true
+    },
+    {
+      "check": "route:L2_PASS",
+      "passed": true
+    },
+    {
+      "check": "route:L2_FAIL_ALT",
+      "passed": true
+    },
+    {
+      "check": "route:L2_FAIL_ARB",
+      "passed": true
+    },
+    {
+      "check": "route:L2_UNKNOWN_LOCAL_ALT",
+      "passed": true
+    },
+    {
+      "check": "route:L2_UNKNOWN_LOCAL_ARB",
+      "passed": true
+    },
+    {
+      "check": "route:L2_UNKNOWN_GLOBAL",
+      "passed": true
+    },
+    {
+      "check": "route:L3_FOUND",
+      "passed": true
+    },
+    {
+      "check": "route:L3_ABSENT_ALT",
+      "passed": true
+    },
+    {
+      "check": "route:L3_ABSENT_ARB",
+      "passed": true
+    },
+    {
+      "check": "route:L3_UNKNOWN_LOCAL_ALT",
+      "passed": true
+    },
+    {
+      "check": "route:L3_UNKNOWN_LOCAL_ARB",
+      "passed": true
+    },
+    {
+      "check": "route:L3_UNKNOWN_GLOBAL",
+      "passed": true
+    },
+    {
+      "check": "route:ALT_NEXT",
+      "passed": true
+    },
+    {
+      "check": "route:ALT_DONE",
+      "passed": true
+    },
+    {
+      "check": "route:ALT_GUARD",
+      "passed": true
+    },
+    {
+      "check": "route:ARB_NAV",
+      "passed": true
+    },
+    {
+      "check": "route:ARB_BACKUP",
+      "passed": true
+    },
+    {
+      "check": "route:ARB_TERMINAL",
+      "passed": true
+    },
+    {
+      "check": "route:ARB_EVAL_TERMINAL",
+      "passed": true
+    },
+    {
+      "check": "route:ARB_BOUNDARY",
+      "passed": true
+    },
+    {
+      "check": "route:BACKUP_COMMIT",
+      "passed": true
+    },
+    {
+      "check": "route:TERM_ELIGIBLE",
+      "passed": true
+    },
+    {
+      "check": "route:TERM_NOT_ELIGIBLE",
+      "passed": true
+    },
+    {
+      "check": "route:TERM_UNKNOWN",
+      "passed": true
+    },
+    {
+      "check": "normal_navigation",
+      "passed": true
+    },
+    {
+      "check": "c0_fail_boundary",
+      "passed": true
+    },
+    {
+      "check": "l2_fail_boundary",
+      "passed": true
+    },
+    {
+      "check": "l3_fail_boundary",
+      "passed": true
+    },
+    {
+      "check": "no_primary_boundary",
+      "passed": true
+    },
+    {
+      "check": "terminal_commit",
+      "passed": true
+    },
+    {
+      "check": "valid_backup_commit",
+      "passed": true
+    },
+    {
+      "check": "route_between_stages",
+      "passed": true
+    },
+    {
+      "check": "final_arbitration",
+      "passed": true
+    },
+    {
+      "check": "runner_commit_reused",
+      "passed": true
+    },
+    {
+      "check": "no_direct_plant_commit",
+      "passed": true
+    },
+    {
+      "check": "no_candidate_action_construction",
+      "passed": true
+    },
+    {
+      "check": "no_oracle_edge",
+      "passed": true
+    },
+    {
+      "check": "no_direct_dynamics_edge",
+      "passed": true
+    },
+    {
+      "check": "no_synthetic_alternative",
+      "passed": true
+    },
+    {
+      "check": "no_duplicate_token_handoff",
+      "passed": true
+    },
+    {
+      "check": "no_duplicate_trace_append",
+      "passed": true
+    }
+  ],
+  "counterexample_count": 0,
+  "schema": "PUBLIC_CYCLE_IMPLEMENTATION_MODEL_CHECK_V2",
+  "status": "PASS_PUBLIC_CYCLE_IMPLEMENTATION_MODEL_CHECK",
+  "transition_rules_resolved": 43,
+  "transition_rules_total": 43
+}

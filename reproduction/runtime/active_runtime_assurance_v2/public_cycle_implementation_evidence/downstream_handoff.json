@@ -1,0 +1,17 @@
+{
+  "base_branch": "implement-active-runtime-public-cycle-composition-v2",
+  "must_preserve": [
+    "PR107-PR121",
+    "ActiveRunner/PlantCommit/BackupTokenStore/TerminalRuntime/TraceWriter blobs",
+    "Supervisor bypass_decision/arbitrate/certify_candidate bodies"
+  ],
+  "real_active_authorized": false,
+  "required_inputs": [
+    "PUBLIC_CYCLE_IMPLEMENTATION_EXECUTION_LOCK.json",
+    "EXECUTABLE_TRANSITION_IMPLEMENTATION_MAP_V2.csv",
+    "validation_result.json",
+    "BYPASS_REVALIDATION_GATE_V2.json"
+  ],
+  "smoke_authorized": false,
+  "task": "REVALIDATE_ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_V2"
+}

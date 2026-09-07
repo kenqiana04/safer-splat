@@ -1,0 +1,165 @@
+{
+  "branch": "implement-active-runtime-public-cycle-composition-v2",
+  "correction_policy": {
+    "allowed_after_lock": "at_most_one_implementation_conformance_correction",
+    "design_change_allowed": false,
+    "real_execution_allowed": false
+  },
+  "counts": {
+    "gpu": 0,
+    "official100": 0,
+    "real_active": 0,
+    "real_bypass_pair": 0,
+    "scientific_oracle": 0,
+    "smoke": 0
+  },
+  "locked_files": [
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py",
+      "sha256": "5f0ecbcd208f82730438ecd869344a69d9e0b3fa9dce570f47446fc1ed54aaaf",
+      "size": 34843
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/runtime_types.py",
+      "sha256": "b3633fb4d70a35feb09bcac6aede60c30523b47661015fa44d4a994b944e82c7",
+      "size": 20235
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/supervisor.py",
+      "sha256": "3d5cfd88b210ea186ce2e5bf643aa3b824a24bcbea3f96772b17abfd5e255d6b",
+      "size": 11904
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/model_check_public_cycle_implementation_v2.py",
+      "sha256": "5d2d748438ce4bfe745742f4a18a57f5ae735443337eb56a4922e8ec63165b70",
+      "size": 7029
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/validate_active_runtime_public_cycle_composition_v2.py",
+      "sha256": "98c6989a33431188716d70963fc8dfe7f5a09b2a06c5c159100ea92a619133c0",
+      "size": 10065
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/freeze_public_cycle_implementation_execution_lock_v2.py",
+      "sha256": "520ca99ebf16b6560e365783e87c7c6addd8afc00db66cc2ac1bff8a7f896b4d",
+      "size": 2500
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/public_cycle_implementation_evidence/EXECUTABLE_TRANSITION_IMPLEMENTATION_MAP_V2.csv",
+      "sha256": "45fb8491eb4ee77627d03e940174ec935a3f6b36f742eb00d6725d50ae974db0",
+      "size": 7755
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/public_cycle_implementation_evidence/generate_executable_transition_implementation_map_v2.py",
+      "sha256": "7cb7b184bcfa535c947cce5311fdf67b7a311c0fc642b12b8cb2d7dee745eeb9",
+      "size": 1945
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/public_cycle_implementation_evidence/build_public_cycle_implementation_evidence_v2.py",
+      "sha256": "4fb6b25d39032e2ef3fb6bdca8b14b0ed0a944469186b8c8c4aac840d1097fe6",
+      "size": 14124
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_public_cycle_backup_fallback.py",
+      "sha256": "8e9aca7a934ad407cad2a059c56eec63ffab9a6c70115c703d0148543bf7e3b3",
+      "size": 1151
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_public_cycle_boundary.py",
+      "sha256": "54b07e3cbc6745d19be8838cc8c615addd597d0d5541809b42fe168ab5fc0f08",
+      "size": 735
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_public_cycle_c0_fail.py",
+      "sha256": "127916e11a331760e45c924232fd24c1ae6cb64cf8553554879aa1325b8da045",
+      "size": 542
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_public_cycle_deadline.py",
+      "sha256": "6fad2c63e600ab9e7f61dc8e0b48e9e97f12a20ef24c3b7663512956152f2a80",
+      "size": 1359
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_public_cycle_l2_fail.py",
+      "sha256": "6b28b20a0ed56da60182bc01aa1aece0b436e51a45f3b6acfb8d82abd662b04f",
+      "size": 589
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_public_cycle_l3_fail.py",
+      "sha256": "a48840da60a606aabbd020d98c8c8f9a52a1d409ae2ba0ae9a64a1629e9ebe72",
+      "size": 654
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_public_cycle_no_alternative.py",
+      "sha256": "46ff1a9cc49ca592fd188091bac0f9ed2920f20c47643c1e7dfcaaeb9111c454",
+      "size": 1643
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_public_cycle_normal_primary.py",
+      "sha256": "f153444f341239b57ce052a58a42aa20cd8161a88e55ee499c90344a7378b19c",
+      "size": 1609
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_public_cycle_session_state.py",
+      "sha256": "776f5e1fc34e9e19e6c4a95ee73a170272de0bad0c58fa7de7a73362f88e9ecc",
+      "size": 1608
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_public_cycle_start_trial.py",
+      "sha256": "5bc3eabcdde915f703997b065f5ea186a806ea575c97b0525b92966072b463fe",
+      "size": 1131
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_public_cycle_terminal_fallback.py",
+      "sha256": "e884b9036b1cff2b638c356ceef43fab8fce6bf5a2c719977c605cddef2ef032",
+      "size": 1146
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_public_cycle_token_handoff.py",
+      "sha256": "0e030cf7e7b8ede0b2b761f5763f463b43987f2921137cba6b95cb1eb43d9b58",
+      "size": 794
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_public_cycle_trace.py",
+      "sha256": "5d0f7a76e9c25200a0458815d6b98ddd04fcde726e0ed38599869a42902840ec",
+      "size": 893
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_public_cycle_types.py",
+      "sha256": "27d1892f6ed8635d140961b19cba1b1023f4d76c01730a66b165111a0178b8d5",
+      "size": 788
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_public_cycle_unknown_routes.py",
+      "sha256": "4edfffe8db21ab2fe97ed96c3ba9f2e3d283f484db823a94978f1865bcbc6231",
+      "size": 1116
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_supervisor_route_transition.py",
+      "sha256": "9b85c581c06341e3e5655e0098ef874ac27ed45dde108dc3ae72dd545bc9aaba",
+      "size": 1284
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_transition_exact_one_lookup.py",
+      "sha256": "22719900f0ac39ad25644901b72e7532b3b63d27b863e2fb28e6e62bb7cebc0e",
+      "size": 1535
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_bypass_semantics_preserved.py",
+      "sha256": "a0c57ba85a04223e97aeed602778cd4b5b625b3a572b79b35e8c161752f9472e",
+      "size": 1473
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_existing_runtime_regression.py",
+      "sha256": "f6433d74776fee6b457e72e4ff8a9fb55d6eb7c14a1175e528ea04c253de1844",
+      "size": 1120
+    },
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/public_cycle_test_support.py",
+      "sha256": "e76c0a98c1c915bd4615b5add5af75a0505e9e7076faa3139331ede5aecd9626",
+      "size": 6572
+    }
+  ],
+  "pr121_head": "4148e671128444d357ea33f6e5c15d0dd2928411",
+  "schema": "PUBLIC_CYCLE_IMPLEMENTATION_EXECUTION_LOCK_V2"
+}

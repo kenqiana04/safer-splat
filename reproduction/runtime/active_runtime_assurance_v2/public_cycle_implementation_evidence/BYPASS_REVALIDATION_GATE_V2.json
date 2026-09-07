@@ -1,0 +1,18 @@
+{
+  "BYPASS_REVALIDATION_REQUIRED": false,
+  "active_runner_unchanged": true,
+  "backup_token_store_unchanged": true,
+  "bypass_cpu_regression": "PASS",
+  "gate": "PASS_PRESERVED",
+  "new_route_api_called_by_bypass": false,
+  "plant_commit_unchanged": true,
+  "preserved_upstream_evidence": "PR119 5/5 fresh pairs, 732 cycles, bit-exact PASS",
+  "real_bypass_pair_count": 0,
+  "runtime_types_change": "additive_only",
+  "schema": "BYPASS_REVALIDATION_GATE_V2",
+  "supervisor_arbitrate_ast_unchanged": true,
+  "supervisor_bypass_ast_unchanged": true,
+  "supervisor_certify_candidate_ast_unchanged": true,
+  "terminal_runtime_unchanged": true,
+  "trace_writer_unchanged": true
+}
