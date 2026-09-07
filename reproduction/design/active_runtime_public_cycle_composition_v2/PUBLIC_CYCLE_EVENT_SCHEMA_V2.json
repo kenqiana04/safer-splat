@@ -1,0 +1,197 @@
+{
+  "events": [
+    {
+      "name": "START_PASS",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "START_FAIL",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "START_UNKNOWN",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "L1_PASS",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "L1_FAIL",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "L1_UNKNOWN",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "PRIMARY_AVAILABLE",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "PRIMARY_UNAVAILABLE",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "PRIMARY_UNKNOWN",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "C0_PASS",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "C0_FAIL",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "C0_UNKNOWN",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "L2_PASS",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "L2_FAIL",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "L2_UNKNOWN",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "L3_PASS",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "L3_FAIL",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "L3_UNKNOWN",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "ALT_ELIGIBLE",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "ALT_NOT_ELIGIBLE",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "ALT_AVAILABLE",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "ALT_EXHAUSTED",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "ALT_UNKNOWN",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "BACKUP_VALID",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "BACKUP_INVALID",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "BACKUP_NONE",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "BACKUP_EXHAUSTED",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "BACKUP_UNKNOWN",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "TERMINAL_READY",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "TERMINAL_NOT_READY",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "TERMINAL_UNKNOWN",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "DEADLINE_OPEN",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "DEADLINE_WARNING",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "DEADLINE_EXPIRED",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "DEADLINE_UNKNOWN",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "COMMIT_SUCCESS",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "COMMIT_FAILURE",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    },
+    {
+      "name": "BOUNDARY",
+      "routes_via": "Supervisor.route_transition",
+      "typed": true
+    }
+  ],
+  "no_replacement_taxonomy": true,
+  "schema": "PUBLIC_CYCLE_EVENT_SCHEMA_V2",
+  "taxonomy_source": "PR107 frozen transition/routing metadata"
+}

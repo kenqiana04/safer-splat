@@ -1,0 +1,17 @@
+{
+  "events": [
+    "STAGE_EXCEPTION",
+    "SERIALIZATION_FAILURE",
+    "ROUTING_LOOKUP_UNKNOWN",
+    "ROUTING_LOOKUP_AMBIGUOUS",
+    "COMMIT_FAILURE"
+  ],
+  "forbidden": [
+    "except Exception: execute u_des",
+    "silent PASS",
+    "nominal/desired/hold-last fallback without certificate"
+  ],
+  "resolution": "fallback or assurance boundary only when returned by frozen routing authority",
+  "rule": "stage exception -> typed event -> Supervisor.route_transition",
+  "schema": "PUBLIC_CYCLE_EXCEPTION_ROUTING_V2"
+}

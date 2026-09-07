@@ -1,0 +1,37 @@
+{
+  "branch": "design-active-runtime-public-cycle-composition-v2",
+  "design_only": true,
+  "execution_counters": {
+    "active_rollout": 0,
+    "gpu": 0,
+    "official100": 0,
+    "oracle": 0,
+    "production": 0,
+    "runtime": 0
+  },
+  "forbidden": [
+    "runtime implementation",
+    "conformance revalidation",
+    "smoke",
+    "rollout",
+    "GPU",
+    "scientific oracle"
+  ],
+  "frozen_before_validation": true,
+  "future_owner": "ActiveCycleCoordinator",
+  "runtime_mutation_authority": false,
+  "schema": "PUBLIC_CYCLE_DESIGN_EXECUTION_LOCK_V2",
+  "task_path": "reproduction/design/active_runtime_public_cycle_composition_v2",
+  "transition_rules": 43,
+  "upstream": {
+    "base": "execute-refrozen-bypass-equivalence-v2r1",
+    "base_sha": "b4ff579cf6a2bcffd0661cd39eb925aa4f3a5d27",
+    "branch": "validate-active-runtime-contract-conformance-v2",
+    "head_sha": "6c5c59dd083dc83661e56c4ddd3e62fa12497652",
+    "pr": 120,
+    "repository": "kenqiana04/safer-splat",
+    "state": "OPEN_DRAFT",
+    "title": "[Draft] Validate active runtime contract conformance V2",
+    "url": "https://github.com/kenqiana04/safer-splat/pull/120"
+  }
+}
