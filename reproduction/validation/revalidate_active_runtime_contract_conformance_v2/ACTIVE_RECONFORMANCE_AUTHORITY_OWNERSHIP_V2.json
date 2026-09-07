@@ -1,0 +1,11 @@
+{
+  "authority_boundary_violation": "Coordinator preinterprets deadline/search/navigation eligibility before invoking owners.",
+  "owner_implementations_unique": true,
+  "plant_owner": "PlantCommitAdapter.commit",
+  "routing_owner": "Supervisor.route_transition",
+  "schema": "ACTIVE_RECONFORMANCE_AUTHORITY_OWNERSHIP_V2",
+  "selection_owner": "Supervisor.arbitrate",
+  "status": "FAIL_COORDINATOR_PREINTERPRETS_ROUTING_FACTS",
+  "token_mutation_owner": "ActiveRunner/BackupTokenStore",
+  "trace_owner": "ActiveRunner/TraceWriter"
+}

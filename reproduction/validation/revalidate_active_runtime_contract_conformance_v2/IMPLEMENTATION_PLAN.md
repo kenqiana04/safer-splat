@@ -8,6 +8,14 @@
 
 **Tech Stack:** Python 3.11, `unittest`, `ast`, immutable runtime dataclasses, CSV/JSON evidence, Git/GitHub CLI.
 
+## Execution outcome
+
+- Harness and execution locks were frozen before substantive checks.
+- PR #120's missing public composition root was structurally confirmed closed.
+- `RC-POLICY-01` was frozen as the first critical counterexample: the coordinator interprets deadline/search/navigation eligibility before Supervisor routing/arbitration.
+- All later dynamic scenarios, six genuine E2E cases, and full 43-rule dynamic coverage were intentionally not executed.
+- Static audits, model check, validator, report, and downstream handoff were completed without runtime correction.
+
 ---
 
 ### Task 1: Freeze inputs and upstream identity

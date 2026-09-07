@@ -1,0 +1,46 @@
+{
+  "checks": {
+    "actual_classes_imported": true,
+    "coordinator_ast_parsed": true,
+    "frozen_rule_count": 43,
+    "no_direct_coordinator_plant_or_action_construction": true,
+    "not_executed_after_first_counterexample": [
+      "full_legal_route_enumeration",
+      "token_terminal_state_product",
+      "trace_state_product"
+    ],
+    "routing_decision_fields": [
+      "backup_routing_allowed",
+      "commit_allowed",
+      "deadline_interpretation",
+      "destination_phase",
+      "failure_mapping",
+      "may_start_new_search",
+      "may_start_next_stage",
+      "reason",
+      "requires_arbitration",
+      "rule_id",
+      "source_phase",
+      "status",
+      "terminal_routing_allowed"
+    ],
+    "stopped_after_first_critical_counterexample": true,
+    "transition_rule_fields": [
+      "action_authority",
+      "candidate_requirement",
+      "commit_allowed",
+      "deadline_requirement",
+      "destination_phase",
+      "failure_code",
+      "guard",
+      "observation_result",
+      "reason_scope",
+      "retained_backup_requirement",
+      "rule_id",
+      "source_phase"
+    ]
+  },
+  "counterexample_count": 1,
+  "schema": "ACTIVE_PUBLIC_CYCLE_RECONFORMANCE_MODEL_CHECK_V2",
+  "status": "BLOCKED_BY_FIRST_CRITICAL_COUNTEREXAMPLE"
+}

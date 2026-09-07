@@ -1,0 +1,9 @@
+{
+  "dynamic_observation_sequence": "NOT_EXECUTED_AFTER_FIRST_CRITICAL_COUNTEREXAMPLE",
+  "schema": "DEADLINE_OBSERVATION_POINT_AUDIT_V2",
+  "static_findings": [
+    "deadline observations exist",
+    "coordinator interprets OPEN for alternative permission and navigation eligibility"
+  ],
+  "status": "BLOCKED_BY_COORDINATOR_DEADLINE_POLICY_INTERPRETATION"
+}

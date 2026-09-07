@@ -1,0 +1,20 @@
+{
+  "expected": [
+    "CYCLE_BEGIN",
+    "L1",
+    "PRIMARY_PROPOSAL",
+    "BIND",
+    "C0",
+    "L2",
+    "L3",
+    "ARBITRATION",
+    "COMMIT",
+    "TOKEN_UPDATE",
+    "TRACE",
+    "CYCLE_COMPLETE"
+  ],
+  "l1_calls": 0,
+  "observed": [],
+  "schema": "PUBLIC_CYCLE_CALL_ORDER_REVALIDATION_V2",
+  "status": "NOT_EXECUTED_AFTER_FIRST_CRITICAL_COUNTEREXAMPLE"
+}

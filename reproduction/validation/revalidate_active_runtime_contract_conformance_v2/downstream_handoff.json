@@ -1,0 +1,14 @@
+{
+  "authorized_next_task": "DIAGNOSE_ACTIVE_CYCLE_COORDINATOR_POLICY_LEAK_V2",
+  "do_not": [
+    "modify runtime in this task",
+    "smoke",
+    "real ACTIVE",
+    "GPU",
+    "scientific oracle",
+    "official100"
+  ],
+  "input_branch": "revalidate-active-runtime-contract-conformance-v2",
+  "repair_scope": "Diagnose the minimal authority split around alternative permission, deadline guard, and navigation eligibility in active_cycle.py; preserve frozen contracts and BYPASS semantics.",
+  "schema": "ACTIVE_RECONFORMANCE_DOWNSTREAM_HANDOFF_V2"
+}

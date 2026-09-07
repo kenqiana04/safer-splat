@@ -1,0 +1,24 @@
+{
+  "count": 1,
+  "counterexamples": [
+    {
+      "counterexample_id": "RC-TR-FIDELITY-001",
+      "critical": true,
+      "frozen_rule_count": 43,
+      "impact": "The executable route cannot carry or revalidate every frozen row-level authority field.",
+      "kind": "ROUTING_DECISION_METADATA_MISMATCH",
+      "routing_decision_missing_fields": [
+        "action_authority",
+        "new_backup_created",
+        "old_backup_retained",
+        "theorem_interpretation"
+      ],
+      "transition_rule_missing_fields": [
+        "new_backup_created",
+        "old_backup_retained",
+        "theorem_interpretation"
+      ]
+    }
+  ],
+  "schema": "ACTIVE_PUBLIC_CYCLE_RECONFORMANCE_COUNTEREXAMPLES_V2"
+}

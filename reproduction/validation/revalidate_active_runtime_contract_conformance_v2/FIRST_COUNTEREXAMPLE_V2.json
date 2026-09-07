@@ -1,0 +1,32 @@
+{
+  "authority": "Supervisor.route_transition and Supervisor.arbitrate",
+  "bypass_impact": "NONE; the observed code is on the ACTIVE-only public-cycle path.",
+  "critical": true,
+  "dynamic_suite_stopped": true,
+  "expected": "Coordinator forwards deadline and evidence facts unchanged; Supervisor alone determines alternative permission and navigation eligibility.",
+  "frozen_source": [
+    {
+      "lines": "4-14",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/PUBLIC_CYCLE_COMPOSITION_CONTRACT_V2.md",
+      "requirement": "Coordinator orchestrates only; it does not interpret deadline or call fallback on its own."
+    },
+    {
+      "lines": "21-22",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/SUPERVISOR_ROUTING_AUTHORITY_V2.md",
+      "requirement": "Supervisor owns deadline interpretation and alternative permission."
+    }
+  ],
+  "minimal_suspected_file": "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py",
+  "observed": [
+    "active_cycle.py:376 computes allow_alt from backup validity and DEADLINE_OPEN before routing",
+    "active_cycle.py:393 repeats that policy computation for L2",
+    "active_cycle.py:410 repeats that policy computation for L3",
+    "active_cycle.py:416 branches directly on deadline state before route lookup",
+    "active_cycle.py:442-443 removes the certified candidate when the coordinator judges it untimely"
+  ],
+  "runtime_call_path": "ActiveCycleCoordinator.run_cycle -> coordinator deadline/eligibility branch -> RuntimeRoutingContext -> Supervisor.route_transition/arbitrate",
+  "runtime_correction_applied": false,
+  "safety_criticality": "The coordinator can enable/suppress search and candidate eligibility before the frozen routing/selection owners act.",
+  "scenario": "RC-POLICY-01",
+  "schema": "FIRST_ACTIVE_RECONFORMANCE_COUNTEREXAMPLE_V2"
+}

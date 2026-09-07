@@ -1,0 +1,12 @@
+{
+  "FINAL_DECISION": "DO_NOT_ENTER_ACTIVE_RUNTIME_SMOKE; FREEZE_FIRST_COUNTEREXAMPLE_AND_DIAGNOSE_COORDINATOR_POLICY_BOUNDARY",
+  "FINAL_STATUS": "BLOCKED_ACTIVE_RECONFORMANCE_BY_COORDINATOR_POLICY_LEAK",
+  "Only next task": "DIAGNOSE_ACTIVE_CYCLE_COORDINATOR_POLICY_LEAK_V2",
+  "bypass_revalidation_required": false,
+  "first_counterexample": "RC-POLICY-01",
+  "pr120_integration_gap_closed": true,
+  "remaining_blockers": [
+    "Coordinator interprets deadline/search/navigation eligibility before Supervisor routing/arbitration."
+  ],
+  "schema": "REVALIDATED_ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_V2_FINAL_DECISION"
+}
