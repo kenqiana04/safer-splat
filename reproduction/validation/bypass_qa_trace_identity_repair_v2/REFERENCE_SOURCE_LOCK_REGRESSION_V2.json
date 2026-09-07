@@ -1,0 +1,36 @@
+{
+  "schema": "REFERENCE_SOURCE_LOCK_REGRESSION_V2",
+  "verdict": "PASS_REFERENCE_CONTROL_PLANT_PATH_SOURCE_LOCK",
+  "upstream_pr117_head": "06833d2bcf9649c0912133b8a28b1a0c4ec6f4f8",
+  "modified_task_local_qa_files": [
+    {
+      "path": "reproduction/validation/active_harness_bypass_equivalence_v2/reference_trial_adapter.py",
+      "upstream_blob": "b4ab3f4608df859b50f2ca8f4d208f3a14b57d24",
+      "repair_blob_before_commit": "be7af6a0fecae721484ca873f82275b33c7ddf86",
+      "change_class": "TRIAL_AND_ARM_METADATA_IDENTITY_PLUMBING_ONLY"
+    },
+    {
+      "path": "reproduction/validation/active_harness_bypass_equivalence_v2/run_qa_pipeline.py",
+      "upstream_blob": "969aba6ea6c050f9f70aa978853a4b55189e40c4",
+      "repair_blob_before_commit": "6acea95546acba3bf1720ba349a1409be03d1858",
+      "change_class": "MANIFEST_IDENTITY_PLUMBING_ONLY"
+    },
+    {
+      "path": "reproduction/validation/active_harness_bypass_equivalence_v2/compare_bypass_equivalence.py",
+      "upstream_blob": "8428ec02d1444917360d852d308002713c77f691",
+      "repair_blob_before_commit": "e60f69f985109371401d678fa44669f525ffc6ef",
+      "change_class": "CANONICAL_JOIN_KEY_VALIDATION_ONLY"
+    }
+  ],
+  "frozen_reference_semantics": {
+    "trial_geometry": "UNCHANGED",
+    "state_goal_initialization": "UNCHANGED",
+    "desired_command": "UNCHANGED",
+    "cbf_qp": "UNCHANGED",
+    "plant_transition": "UNCHANGED",
+    "native_termination": "UNCHANGED"
+  },
+  "reference_control_plant_termination_payload_changed": false,
+  "runtime_module_changed": false,
+  "source_lock_regression_tests": "PASS_2_OF_2"
+}

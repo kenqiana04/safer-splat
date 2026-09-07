@@ -10,6 +10,8 @@ from pathlib import Path
 import struct
 from typing import Any
 
+from reproduction.validation.bypass_qa_trace_identity_repair_v2.canonical_trial_identity import make_canonical_trial_identity
+
 
 def read_json(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
@@ -42,6 +44,7 @@ def max_abs(left: list[float] | None, right: list[float] | None) -> float | None
 
 
 def compare_trial(reference_dir: Path, bypass_dir: Path, trial_id: int) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    qa_identity = make_canonical_trial_identity(trial_id)
     reference = read_jsonl(reference_dir / f"trial_{trial_id}.jsonl")
     bypass = read_jsonl(bypass_dir / f"trial_{trial_id}.jsonl")
     reference_summary = read_json(reference_dir / f"trial_{trial_id}_summary.json")
@@ -64,6 +67,10 @@ def compare_trial(reference_dir: Path, bypass_dir: Path, trial_id: int) -> tuple
                 "bypass_branch": "ROW_MISSING" if byp is None else byp.get("native_termination_reason"),
             }
         else:
+            join_key_equal = ref.get("comparison_join_key") == byp.get("comparison_join_key") == {
+                "trial_id": qa_identity.canonical_trial_id,
+                "cycle_index": index,
+            }
             action_equal = ref.get("reference_action_bits") == byp.get("reference_action_bits")
             supplied_selected = byp.get("supplied_action_bits") == byp.get("selected_action_bits")
             selected_executed = byp.get("selected_action_bits") == byp.get("executed_action_bits") and byp.get("selected_action_id") == byp.get("executed_action_id")
@@ -71,7 +78,9 @@ def compare_trial(reference_dir: Path, bypass_dir: Path, trial_id: int) -> tuple
             branch_equal = ref.get("native_termination_reason") == byp.get("native_termination_reason") and ref.get("committed") == byp.get("committed") and ref.get("solver_success") == byp.get("solver_success")
             record = {
                 "trial_id": trial_id,
+                "canonical_trial_id": qa_identity.canonical_trial_id,
                 "step": index,
+                "comparison_join_key_equal": join_key_equal,
                 "action_bits_equal": action_equal,
                 "supplied_selected_equal": supplied_selected,
                 "selected_executed_equal": selected_executed,
@@ -93,7 +102,7 @@ def compare_trial(reference_dir: Path, bypass_dir: Path, trial_id: int) -> tuple
                 "bypass_commit_exact": byp.get("commit_status") in {"COMMITTED", None},
             }
         rows.append(record)
-        required = ("action_bits_equal", "selected_executed_equal", "state_bits_equal", "branch_equal")
+        required = ("comparison_join_key_equal", "action_bits_equal", "selected_executed_equal", "state_bits_equal", "branch_equal")
         if first_mismatch is None and not all(record.get(key) is True for key in required):
             failed = [key for key in required if record.get(key) is not True]
             if "action_bits_equal" in failed:
@@ -123,6 +132,7 @@ def compare_trial(reference_dir: Path, bypass_dir: Path, trial_id: int) -> tuple
     )
     summary = {
         "trial_id": trial_id,
+        "canonical_trial_id": qa_identity.canonical_trial_id,
         "committed_steps_reference": committed_reference,
         "committed_steps_bypass": committed_bypass,
         "total_compared_rows": len(rows),

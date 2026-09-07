@@ -18,6 +18,11 @@ from typing import Any
 import numpy as np
 import torch
 
+from reproduction.validation.bypass_qa_trace_identity_repair_v2.canonical_trial_identity import (
+    make_arm_identity,
+    make_canonical_trial_identity,
+)
+
 
 ARMS = {"REFERENCE_CONTROL_PLANT", "ACTIVE_HARNESS_BYPASS"}
 TRIAL_IDS = {10, 30, 50, 70, 90}
@@ -114,6 +119,8 @@ def run_trial(arm: str, trial_id: int, checkout: Path, output_dir: Path, seed: i
         raise RuntimeError("CUDA_VISIBLE_DEVICES_MUST_EQUAL_1")
     if output_dir.exists():
         raise FileExistsError(output_dir)
+    qa_identity = make_canonical_trial_identity(trial_id)
+    arm_identity = make_arm_identity(arm)
     output_dir.mkdir(parents=True)
     checkout = checkout.resolve(strict=True)
     sys.path.insert(0, str(checkout))
@@ -152,7 +159,7 @@ def run_trial(arm: str, trial_id: int, checkout: Path, output_dir: Path, seed: i
         registry = AuthorityRegistry.frozen(map_id, "RUN_PY_DT_0P05")
         supervisor = Supervisor(registry)
         token_store = BackupTokenStore()
-        writer = TraceWriter(f"stonehenge-trial-{trial_id}")
+        writer = TraceWriter(qa_identity.canonical_trial_id)
 
         def gpu_transition(state_tuple, control_tuple, dt_value):
             state_tensor = torch.tensor(state_tuple, device=device, dtype=torch.float32)
@@ -184,7 +191,13 @@ def run_trial(arm: str, trial_id: int, checkout: Path, output_dir: Path, seed: i
         solver_success = bool(cbf.solver_success)
         row: dict[str, Any] = {
             "trial_id": trial_id,
+            "canonical_trial_id": qa_identity.canonical_trial_id,
+            "arm_identity": arm_identity,
             "cycle_index": cycle,
+            "comparison_join_key": {
+                "trial_id": qa_identity.comparison_join_key(cycle)[0],
+                "cycle_index": qa_identity.comparison_join_key(cycle)[1],
+            },
             "committed": False,
             "pre_state": values(pre),
             "pre_state_bits": bits_f32(values(pre)),
@@ -228,7 +241,7 @@ def run_trial(arm: str, trial_id: int, checkout: Path, output_dir: Path, seed: i
         else:
             from reproduction.runtime.active_runtime_assurance_v2.runtime_types import ActionRole, RuntimeStateSnapshot, canonical_sha256, make_action
 
-            snapshot = RuntimeStateSnapshot.create(f"stonehenge-{trial_id}", cycle, values(pre), goal_values, map_id, DT)
+            snapshot = RuntimeStateSnapshot.create(qa_identity.canonical_trial_id, cycle, values(pre), goal_values, map_id, DT)
             action = make_action(values(u), ActionRole.PRIMARY_NAVIGATION, f"reference-cbf-qp:{trial_id}:{cycle}")
             token_before = token_store.current()
             receipt = runner.commit_bypass(snapshot, action)
@@ -289,7 +302,9 @@ def run_trial(arm: str, trial_id: int, checkout: Path, output_dir: Path, seed: i
     summary = {
         "schema": "BYPASS_QA_TRIAL_SUMMARY_V2",
         "arm": arm,
+        "arm_identity": arm_identity,
         "trial_id": trial_id,
+        "canonical_trial_id": qa_identity.canonical_trial_id,
         "initial_state": initial_state,
         "initial_state_bits": bits_f32(initial_state),
         "goal": goal_values,
@@ -310,7 +325,9 @@ def run_trial(arm: str, trial_id: int, checkout: Path, output_dir: Path, seed: i
     environment = {
         "schema": "BYPASS_QA_ARM_ENVIRONMENT_V2",
         "arm": arm,
+        "arm_identity": arm_identity,
         "trial_id": trial_id,
+        "canonical_trial_id": qa_identity.canonical_trial_id,
         "repo_head": git_head(checkout),
         "python": platform.python_version(),
         "executable": sys.executable,
@@ -331,7 +348,7 @@ def run_trial(arm: str, trial_id: int, checkout: Path, output_dir: Path, seed: i
         "map_identity": map_id,
         "map_artifacts": map_records,
     }
-    environment["pairing_identity"] = semantic_sha256({key: value for key, value in environment.items() if key not in {"arm", "trial_id"}})
+    environment["pairing_identity"] = semantic_sha256({key: value for key, value in environment.items() if key not in {"arm", "arm_identity"}})
     write_json(output_dir / "environment_identity.json", environment)
     print(json.dumps({"status": "TRIAL_COMPLETE", "arm": arm, "trial_id": trial_id, "committed_steps": summary["committed_step_count"], "termination": termination_reason}, sort_keys=True), flush=True)
     return summary
