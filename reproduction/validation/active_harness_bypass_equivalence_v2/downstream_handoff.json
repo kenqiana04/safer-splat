@@ -1,0 +1,11 @@
+{
+  "schema": "BYPASS_EQUIVALENCE_V2_DOWNSTREAM_HANDOFF",
+  "status": "BLOCKED",
+  "upstream_head": "a8d7a3c9522583ad61dc9bc87585e41bb71a0f77",
+  "correction_commit": "f722b8d108138f4592e4a1d6b21594a43d823adc",
+  "resume_from": "Do not reuse or overwrite prior Q1 evidence. Freeze a new execution protocol with corrected task-local trial identity construction and a renewed execution-count authorization before any rerun.",
+  "required_fix": "Use one identical trial_id string for TraceWriter and RuntimeStateSnapshot in the task-local adapter; add a pre-run unit test exercising ActiveRunner.commit_bypass through trace append.",
+  "must_preserve": ["frozen trial IDs", "trial order", "exact float32 criterion", "reference adapter semantics", "Stonehenge assets", "failing server evidence", "authorized runtime correction"],
+  "must_not_do": ["ACTIVE_RUNTIME_ON", "scientific oracle", "official100", "tolerance relaxation", "additional run under the exhausted V2 execution lock"],
+  "only_next_task": "REPAIR_AND_REFREEZE_BYPASS_QA_TRACE_IDENTITY_V2"
+}

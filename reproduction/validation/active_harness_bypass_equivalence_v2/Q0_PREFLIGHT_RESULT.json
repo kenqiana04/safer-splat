@@ -1,0 +1,89 @@
+{
+  "checks": [
+    {
+      "check": "protocol_commit_is_checkout_head",
+      "evidence": "49eae633dde2786bbd88a19217c876e74f186d59",
+      "passed": true
+    },
+    {
+      "check": "protocol_lineage_descends_from_pr116",
+      "evidence": {
+        "head": "49eae633dde2786bbd88a19217c876e74f186d59",
+        "upstream": "a8d7a3c9522583ad61dc9bc87585e41bb71a0f77"
+      },
+      "passed": true
+    },
+    {
+      "check": "protected_source_blobs_exact",
+      "evidence": {
+        "cbf/cbf_utils.py": "7c6e1300b125cc0a2a950ac2835a1fbe3d0de113",
+        "dynamics/systems.py": "e58ed65e60b17840201e571d7f23ce3816b83863",
+        "reproduction/runtime/active_runtime_assurance_v2/active_runner.py": "64b747656b031881123c92587d1beca6e742be5e",
+        "reproduction/runtime/active_runtime_assurance_v2/plant_commit.py": "fcb89f0f54000f6d181c574046b0105013f91156",
+        "reproduction/runtime/active_runtime_assurance_v2/runtime_types.py": "cfce1d4fa111fdeb50a0c225b4451daeb9ed3672",
+        "reproduction/runtime/active_runtime_assurance_v2/supervisor.py": "b4d5863199ccbe254c6d5b0061861f4f959f552d",
+        "reproduction/runtime/active_runtime_assurance_v2/trace_writer.py": "f7d1c768a28d36ab1ef88614bd01c8722e9ea292",
+        "run.py": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a"
+      },
+      "passed": true
+    },
+    {
+      "check": "task_tool_hashes_exact",
+      "evidence": {},
+      "passed": true
+    },
+    {
+      "check": "task_test_hashes_exact",
+      "evidence": {},
+      "passed": true
+    },
+    {
+      "check": "stonehenge_assets_exact",
+      "evidence": {
+        "config.yml": {
+          "sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e",
+          "size": 6933
+        },
+        "dataparser_transforms.json": {
+          "sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e",
+          "size": 312
+        },
+        "nerfstudio_models/step-000029999.ckpt": {
+          "sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d",
+          "size": 92344786
+        }
+      },
+      "passed": true
+    },
+    {
+      "check": "qa_scripts_compile",
+      "evidence": "",
+      "passed": true
+    },
+    {
+      "check": "qa_tooling_unit_tests",
+      "evidence": "test_exact_comparator_pass (test_bypass_equivalence_tooling.BypassEquivalenceToolingTests) ... ok\ntest_exact_comparator_rejects_one_bit_state_drift (test_bypass_equivalence_tooling.BypassEquivalenceToolingTests) ... ok\ntest_float32_bits (test_bypass_equivalence_tooling.BypassEquivalenceToolingTests) ... ok\ntest_frozen_trial_geometry_source_is_locked (test_bypass_equivalence_tooling.BypassEquivalenceToolingTests) ... ok\ntest_protocol_freeze (test_bypass_equivalence_tooling.BypassEquivalenceToolingTests) ... ok\ntest_reference_adapter_frozen_constants (test_bypass_equivalence_tooling.BypassEquivalenceToolingTests) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.004s\n\nOK\n",
+      "passed": true
+    },
+    {
+      "check": "pr116_runtime_suite",
+      "evidence": "test_active_missing_profile_rejected_before_trial (test_active_runner.ActiveRunnerTests) ... ok\ntest_active_profile_allows_startup_not_rollout (test_active_runner.ActiveRunnerTests) ... ok\ntest_bypass_preserves_reference_action (test_active_runner.ActiveRunnerTests) ... ok\ntest_empty_inventory_is_legal (test_alternative_provider.AlternativeProviderTests) ... ok\ntest_frozen_values (test_authority_registry.AuthorityRegistryTests) ... ok\ntest_missing_map_fails_closed (test_authority_registry.AuthorityRegistryTests) ... ok\ntest_backup_cursor_advances_only_after_success (test_backup_token_store.BackupTokenStoreTests) ... ok\ntest_exhausted_does_not_authorize_terminal (test_backup_token_store.BackupTokenStoreTests) ... ok\ntest_failed_navigation_keeps_old_token (test_backup_token_store.BackupTokenStoreTests) ... ok\ntest_navigation_commit_atomic_activation (test_backup_token_store.BackupTokenStoreTests) ... ok\ntest_prepared_is_not_active (test_backup_token_store.BackupTokenStoreTests) ... ok\ntest_inclusive_bounds_pass (test_c0_admission.C0AdmissionTests) ... ok\ntest_outside_rejected_without_clip (test_c0_admission.C0AdmissionTests) ... ok\ntest_open_warning_expired (test_deadline_runtime.DeadlineRuntimeTests) ... ok\ntest_profile_is_explicit_not_dt_derived (test_deadline_runtime.DeadlineRuntimeTests) ... ok\ntest_diagnostic_has_no_authority (test_diagnostic_r0.DiagnosticR0Tests) ... ok\ntest_once_per_cycle_fresh_bindings (test_l1_runtime.L1RuntimeTests) ... ok\ntest_h1_equations_and_v2_authority (test_l2_runtime.L2RuntimeTests) ... ok\ntest_l2_fail_does_not_call_builder (test_l3_runtime.L3RuntimeTests) ... ok\ntest_l2_pass_prepares_but_does_not_activate_bundle (test_l3_runtime.L3RuntimeTests) ... ok\ntest_runtime_modules_do_not_load_legacy_geometry_authority (test_no_legacy_geometry_authority.NoLegacyGeometryAuthorityTests) ... ok\ntest_runtime_modules_have_no_posthoc_oracle_import (test_no_oracle_feedback_import.NoOracleFeedbackImportTests) ... ok\ntest_boundary_never_steps_plant (test_plant_commit.PlantCommitTests) ... ok\ntest_identity_mismatch_rejected (test_plant_commit.PlantCommitTests) ... ok\ntest_selected_equals_executed (test_plant_commit.PlantCommitTests) ... ok\ntest_solver_failure_never_returns_u_des (test_primary_proposal_adapter.PrimaryProposalAdapterTests) ... ok\ntest_successful_finite_solver_result_is_primary (test_primary_proposal_adapter.PrimaryProposalAdapterTests) ... ok\ntest_canonical_identity_stable_and_sensitive (test_runtime_types.RuntimeTypesTests) ... ok\ntest_role_changes_action_identity_even_for_zero (test_runtime_types.RuntimeTypesTests) ... ok\ntest_state_change_changes_identity (test_runtime_types.RuntimeTypesTests) ... ok\ntest_only_plant_commit_references_reference_dynamics (test_single_plant_commit_owner.SingleAuthorityOwnerTests) ... ok\ntest_only_supervisor_defines_final_arbitration (test_single_plant_commit_owner.SingleAuthorityOwnerTests) ... ok\ntest_fail_has_no_repair (test_start_admission.StartAdmissionTests) ... ok\ntest_full_query_pass (test_start_admission.StartAdmissionTests) ... ok\ntest_boundary_has_no_executable_action (test_supervisor.SupervisorTests) ... ok\ntest_expired_still_allows_valid_backup_but_no_navigation (test_supervisor.SupervisorTests) ... ok\ntest_navigation_priority_and_zero_role (test_supervisor.SupervisorTests) ... ok\ntest_terminal_role_assigned_only_here (test_supervisor.SupervisorTests) ... ok\ntest_valid_backup_outranks_terminal (test_supervisor.SupervisorTests) ... ok\ntest_01_safe_primary_chain_commits_navigation (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_02_navigation_commit_activates_token_next_cycle (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_03_l3_fail_cannot_commit_candidate (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_04_solver_fail_without_backup_routes_boundary (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_05_solver_fail_with_backup_selects_backup (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_06_c0_out_of_bound_rejects_without_clip (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_07_c0_inclusive_bound_passes (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_08_l2_fail_no_alternative_uses_backup (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_09_l2_unknown_global_does_not_swap_candidate (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_10_l3_absent_uses_valid_backup (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_11_l1_fail_has_no_ordinary_alternative_search (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_12_l1_unknown_allows_unaffected_backup_arbitration (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_13_empty_native_inventory_is_typed (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_14_prepared_token_cannot_execute (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_15_old_token_survives_failed_navigation_commit (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_16_successful_navigation_handoff_has_no_none_gap (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_17_backup_commit_advances_cursor_once (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_18_failed_backup_commit_leaves_cursor (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_19_exhausted_backup_has_no_terminal_authority (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_20_stale_terminal_reference_is_invalid (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_21_eligible_terminal_can_commit (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_22_zero_primary_remains_primary_role (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_23_terminal_zero_role_is_assigned_by_supervisor (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_24_boundary_never_calls_plant (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_25_active_missing_deadline_profile_rejects (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_26_expired_still_allows_backup (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_27_exception_is_unknown_not_desired_fallback (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_28_trace_finalize_produces_oracle_boundary_lock (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_29_finalized_trace_is_immutable (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_30_selected_equals_executed_vector (test_synthetic_branches.SyntheticBranchTests) ... ok\ntest_certificate_and_eligibility_separate_from_selection (test_terminal_runtime.TerminalRuntimeTests) ... ok\ntest_goal_hold_disabled (test_terminal_runtime.TerminalRuntimeTests) ... ok\ntest_stale_reference_is_unknown (test_terminal_runtime.TerminalRuntimeTests) ... ok\ntest_finalize_is_content_addressed_and_immutable (test_trace_writer.TraceWriterTests) ... ok\ntest_outcome_fields_forbidden (test_trace_writer.TraceWriterTests) ... ok\ntest_43_rules_exactly_once_and_byte_identical (test_transition_conformance.TransitionConformanceTests) ... ok\ntest_runtime_objects_preserve_normative_mapping (test_transition_conformance.TransitionConformanceTests) ... ok\n\n----------------------------------------------------------------------\nRan 76 tests in 0.082s\n\nOK\n",
+      "passed": true
+    },
+    {
+      "check": "no_active_or_oracle_execution_path",
+      "evidence": [],
+      "passed": true
+    },
+    {
+      "check": "protected_diff_zero",
+      "evidence": "",
+      "passed": true
+    }
+  ],
+  "failed_count": 0,
+  "passed_count": 11,
+  "real_qa_trial_execution_count": 0,
+  "schema": "BYPASS_EQUIVALENCE_Q0_PREFLIGHT_V2",
+  "verdict": "PASS_BYPASS_EQUIVALENCE_Q0_PREFLIGHT"
+}

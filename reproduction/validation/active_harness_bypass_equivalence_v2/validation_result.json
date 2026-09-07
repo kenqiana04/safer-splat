@@ -1,0 +1,197 @@
+{
+  "checks": [
+    {
+      "check": "01_pr116_identity_exact",
+      "evidence": {
+        "base_branch": "design-active-runtime-assurance-implementation-v2",
+        "base_sha": "44111d32031409338058e5da2f7e7a1f8d873323",
+        "branch": "implement-active-runtime-assurance-v2",
+        "draft": true,
+        "head_sha": "a8d7a3c9522583ad61dc9bc87585e41bb71a0f77",
+        "pr": 116,
+        "state": "OPEN",
+        "title": "[Draft] Implement active runtime assurance V2"
+      },
+      "passed": true
+    },
+    {
+      "check": "02_protocol_commit_predates_artifacts",
+      "evidence": "49eae633dde2786bbd88a19217c876e74f186d59",
+      "passed": true
+    },
+    {
+      "check": "03_trial_ids_exact",
+      "evidence": [
+        10,
+        30,
+        50,
+        70,
+        90
+      ],
+      "passed": true
+    },
+    {
+      "check": "04_sentinel_order",
+      "evidence": [
+        "50",
+        "50",
+        "50",
+        "50"
+      ],
+      "passed": false
+    },
+    {
+      "check": "05_arms_exact",
+      "evidence": [
+        "REFERENCE_CONTROL_PLANT",
+        "ACTIVE_HARNESS_BYPASS",
+        "REFERENCE_CONTROL_PLANT",
+        "ACTIVE_HARNESS_BYPASS"
+      ],
+      "passed": true
+    },
+    {
+      "check": "06_execution_cap",
+      "evidence": 4,
+      "passed": false
+    },
+    {
+      "check": "07_locks_complete",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "check": "08_protected_diff_zero",
+      "evidence": "diff --git a/reproduction/runtime/active_runtime_assurance_v2/plant_commit.py b/reproduction/runtime/active_runtime_assurance_v2/plant_commit.py\nindex fcb89f0..f9116db 100644\n--- a/reproduction/runtime/active_runtime_assurance_v2/plant_commit.py\n+++ b/reproduction/runtime/active_runtime_assurance_v2/plant_commit.py\n@@ -34,7 +34,10 @@ class PlantCommitAdapter:\n             raise CommitAuthorityViolation(\"STATE_OR_CYCLE_IDENTITY_MISMATCH\")\n         if decision.selected_action.identity != selected_action.identity or decision.selected_action.vector != selected_action.vector or decision.selected_action.role != selected_action.role:\n             raise CommitAuthorityViolation(\"SELECTED_ACTION_IDENTITY_MISMATCH\")\n-        if not all_finite(selected_action.vector) or any(value < low or value > high for value, low, high in zip(selected_action.vector, self._registry.actuator.u_min, self._registry.actuator.u_max)):\n+        # BYPASS has no active authority: it delegates the exact reference action,\n+        # including the reference path's native numerical behavior.  ACTIVE rules\n+        # retain the frozen actuator-admission guard without clipping or tolerance.\n+        if decision.rule_id != \"BYPASS\" and (not all_finite(selected_action.vector) or any(value < low or value > high for value, low, high in zip(selected_action.vector, self._registry.actuator.u_min, self._registry.actuator.u_max))):\n             raise CommitAuthorityViolation(\"ACTUATOR_ADMISSION_REQUIRED\")\n         try:\n             post_vector = self._transition(snapshot.state, selected_action.vector, snapshot.dt)\ndiff --git a/reproduction/runtime/active_runtime_assurance_v2/tests/test_plant_commit.py b/reproduction/runtime/active_runtime_assurance_v2/tests/test_plant_commit.py\nindex 82774cb..99ac105 100644\n--- a/reproduction/runtime/active_runtime_assurance_v2/tests/test_plant_commit.py\n+++ b/reproduction/runtime/active_runtime_assurance_v2/tests/test_plant_commit.py\n@@ -36,5 +36,18 @@ class PlantCommitTests(unittest.TestCase):\n         decision=SupervisorDecision(0,self.state.identity,selected,True,\"NAV\",\"ARB_NAV\")\n         with self.assertRaises(CommitAuthorityViolation): self.plant.commit(decision,self.state,other)\n \n+    def test_bypass_delegates_exact_reference_action_without_active_admission(self):\n+        reference=make_action((0.09999999403953552,0.10000000149011612,-0.031203344464302063),ActionRole.PRIMARY_NAVIGATION,\"reference\")\n+        decision=SupervisorDecision(0,self.state.identity,reference,True,\"BYPASS_REFERENCE_ACTION_UNCHANGED\",\"BYPASS\")\n+        receipt=self.plant.commit(decision,self.state,reference)\n+        self.assertTrue(receipt.committed)\n+        self.assertEqual(receipt.exact_vector,reference.vector)\n+\n+    def test_active_rule_still_rejects_same_out_of_box_action(self):\n+        candidate=make_action((0.09999999403953552,0.10000000149011612,-0.031203344464302063),ActionRole.PRIMARY_NAVIGATION,\"candidate\")\n+        decision=SupervisorDecision(0,self.state.identity,candidate,True,\"NAV\",\"ARB_NAV\")\n+        with self.assertRaisesRegex(CommitAuthorityViolation,\"ACTUATOR_ADMISSION_REQUIRED\"):\n+            self.plant.commit(decision,self.state,candidate)\n+\n \n if __name__ == \"__main__\": unittest.main()\n",
+      "passed": false
+    },
+    {
+      "check": "09_reference_adapter_conformance",
+      "evidence": true,
+      "passed": true
+    },
+    {
+      "check": "10_no_active_runtime_on",
+      "evidence": 0,
+      "passed": true
+    },
+    {
+      "check": "11_no_active_certification_influence",
+      "evidence": 1,
+      "passed": false
+    },
+    {
+      "check": "12_no_oracle",
+      "evidence": 0,
+      "passed": true
+    },
+    {
+      "check": "13_action_exact",
+      "evidence": null,
+      "passed": false
+    },
+    {
+      "check": "14_selected_executed_exact",
+      "evidence": null,
+      "passed": false
+    },
+    {
+      "check": "15_state_exact",
+      "evidence": null,
+      "passed": false
+    },
+    {
+      "check": "16_branch_termination_exact",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "17_no_token_mutation",
+      "evidence": 0,
+      "passed": true
+    },
+    {
+      "check": "18_no_tolerance_change",
+      "evidence": false,
+      "passed": true
+    },
+    {
+      "check": "19_mismatch_register_empty",
+      "evidence": {
+        "allowed_taxonomy": [
+          "M_REF_ADAPTER_DRIFT",
+          "M_REFERENCE_NONDETERMINISM",
+          "M_REFERENCE_ACTION_DIVERGENCE",
+          "M_BYPASS_ACTION_MUTATION",
+          "M_BYPASS_HARNESS_INTERVENTION",
+          "M_PLANT_TRANSITION_DIVERGENCE",
+          "M_FLOAT32_DEVICE_SEMANTICS_DIVERGENCE",
+          "M_TERMINATION_BRANCH_DIVERGENCE",
+          "M_TRACE_SIDE_EFFECT_ON_EXECUTION",
+          "M_SHARED_MUTABLE_STATE_CONTAMINATION",
+          "M_UPSTREAM_SOURCE_DRIFT",
+          "M_UNCLASSIFIED"
+        ],
+        "first_mismatch": {
+          "correction_authorized": true,
+          "correction_commit": "f722b8d108138f4592e4a1d6b21594a43d823adc",
+          "cycle": 0,
+          "phase": "Q1",
+          "reason": "PlantCommitAdapter applied ACTIVE actuator admission to the BYPASS-delegated reference action and raised ACTUATOR_ADMISSION_REQUIRED.",
+          "taxonomy": "M_BYPASS_HARNESS_INTERVENTION",
+          "trial_id": 50
+        },
+        "mismatch_count": 2,
+        "mismatch_register_empty": false,
+        "post_correction_blocker": {
+          "cycle": 0,
+          "phase": "Q1",
+          "reason": "The task-local adapter constructed TraceWriter trial_id=stonehenge-trial-50 but RuntimeStateSnapshot trial_id=stonehenge-50; trace append raised TRIAL_IDENTITY_MISMATCH after the first corrected BYPASS plant commit.",
+          "rerun_allowed": false,
+          "runtime_bug": false,
+          "second_correction_allowed": false,
+          "task_adapter_bug": true,
+          "taxonomy": "M_TRACE_SIDE_EFFECT_ON_EXECUTION",
+          "trial_id": 50
+        },
+        "q2_started": false,
+        "schema": "BYPASS_EQUIVALENCE_MISMATCH_REGISTER_V2"
+      },
+      "passed": false
+    },
+    {
+      "check": "20_all_trials_pass",
+      "evidence": [],
+      "passed": false
+    },
+    {
+      "check": "21_no_official100",
+      "evidence": 0,
+      "passed": true
+    },
+    {
+      "check": "22_report_nonclaims",
+      "evidence": [
+        "collision reduction",
+        "progress improvement",
+        "real-time",
+        "deployment"
+      ],
+      "passed": true
+    },
+    {
+      "check": "23_q0_pass",
+      "evidence": "PASS_BYPASS_EQUIVALENCE_Q0_PREFLIGHT",
+      "passed": true
+    },
+    {
+      "check": "24_trace_locks_complete",
+      "evidence": 0,
+      "passed": false
+    }
+  ],
+  "failed_count": 10,
+  "passed_count": 14,
+  "schema": "ACTIVE_HARNESS_BYPASS_EQUIVALENCE_V2_VALIDATION",
+  "verdict": "BLOCKED_ACTIVE_HARNESS_BYPASS_EQUIVALENCE_V2_VALIDATION"
+}

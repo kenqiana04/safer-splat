@@ -1,0 +1,19 @@
+{
+  "schema": "ACTIVE_HARNESS_BYPASS_EQUIVALENCE_V2_FINAL_DECISION",
+  "FINAL_STATUS": "BLOCKED_BYPASS_EQUIVALENCE_BY_TRACE_SIDE_EFFECT_ON_EXECUTION",
+  "FINAL_DECISION": "FREEZE_PARTIAL_Q1_EVIDENCE_AND_DO_NOT_ADVANCE_VALIDATION_LADDER",
+  "sentinel_verdict": "BLOCKED_BEFORE_PAIR_COMPARISON",
+  "q2_started": false,
+  "correction_count": 1,
+  "correction_cap": 1,
+  "hard_execution_cap": 12,
+  "projected_execution_count_for_protocol_compliant_restart": 14,
+  "remaining_blockers": [
+    "Task-local TraceWriter and RuntimeStateSnapshot trial identities differ, causing TRIAL_IDENTITY_MISMATCH after the first corrected BYPASS plant commit.",
+    "The one permitted bug-only runtime correction has already been used.",
+    "A fresh sentinel pair plus Q2 would exceed the frozen 12-execution hard cap."
+  ],
+  "claims_supported": ["The pre-correction global actuator guard did intervene in BYPASS on the frozen reference action."],
+  "claims_not_supported": ["BYPASS exact equivalence", "Active V2 safety efficacy", "collision reduction", "progress improvement", "runtime improvement", "real-time", "deployment readiness"],
+  "only_next_task": "REPAIR_AND_REFREEZE_BYPASS_QA_TRACE_IDENTITY_V2"
+}

@@ -14,33 +14,33 @@
 
 **Files:** Create the protocol, environment lock, trial manifest, input lock, reference conformance audit, QA scripts, validator, and unit tests under `reproduction/validation/active_harness_bypass_equivalence_v2/`.
 
-- [ ] Verify PR #116 exact identity and hashes for `run.py`, runtime modules, dynamics, CBF, and Stonehenge assets.
-- [ ] Run `python -B -m unittest discover -s reproduction/validation/active_harness_bypass_equivalence_v2/tests -v`; expect all synthetic QA-tool tests to pass.
-- [ ] Commit with `validation(reproduction): freeze active harness bypass QA protocol V2` before any real trial.
-- [ ] Generate `BYPASS_EQUIVALENCE_EXECUTION_LOCK.json` containing that commit SHA and every protocol/tool hash.
+- [x] Verify PR #116 exact identity and hashes for `run.py`, runtime modules, dynamics, CBF, and Stonehenge assets.
+- [x] Run `python -B -m unittest discover -s reproduction/validation/active_harness_bypass_equivalence_v2/tests -v`; 6/6 synthetic QA-tool tests passed.
+- [x] Commit with `validation(reproduction): freeze active harness bypass QA protocol V2` before any real trial.
+- [x] Generate `BYPASS_EQUIVALENCE_EXECUTION_LOCK.json` containing that commit SHA and every protocol/tool hash.
 
 ### Task 2: Execute Q0 and sentinel Q1
 
 **Files:** Generate only task-owned server evidence under `/disk1/zlab/maintenance_records/active_harness_bypass_equivalence_v2`.
 
-- [ ] Build a task-owned checkout from the protocol commit and link only the immutable Stonehenge `outputs` asset root.
-- [ ] Run compile/import, source-lock, synthetic comparison, protected-diff, and GPU/environment preflight; expect `PASS_BYPASS_EQUIVALENCE_Q0_PREFLIGHT`.
-- [ ] Run trial 50 REFERENCE then BYPASS in fresh processes and compare exact bits immediately.
-- [ ] Continue only if sentinel verdict is `PASS`; otherwise preserve evidence and classify the first mismatch.
+- [x] Build a task-owned checkout and link the immutable Stonehenge `outputs` and data roots; preserve the zero-step missing-data-link invocation.
+- [x] Run compile/import, source-lock, synthetic comparison, protected-diff, and GPU/environment preflight: 11/11 PASS.
+- [x] Run trial 50 REFERENCE then BYPASS in fresh processes; the pair did not reach comparison finalization.
+- [x] Stop Q2, preserve evidence, classify the first mismatch, apply the one authorized correction, and preserve the post-correction trace-identity blocker.
 
 ### Task 3: Execute Q2 serially
 
 **Files:** Generate paired artifacts and comparisons for trial IDs 10, 30, 70, and 90.
 
-- [ ] For each ID in fixed order, run REFERENCE then BYPASS, compare immediately, and stop on the first failure.
-- [ ] Keep total real executions at 10 unless the frozen bug-only gate authorizes one sentinel rerun pair.
-- [ ] Aggregate `per_step_equivalence.csv`, `per_trial_equivalence.json`, `summary.json`, and the mismatch register without scientific outcomes.
+- [x] Do not run Q2 because Q1 remained blocked after the sole authorized correction.
+- [x] Stop at 4 real executions; a compliant restart would project 14 and exceed the hard cap of 12.
+- [x] Freeze empty comparison outputs and the two-entry mismatch register without scientific outcomes.
 
 ### Task 4: Validate and close out
 
 **Files:** Create `validation_result.json`, `review.json`, `FINAL_DECISION.json`, `downstream_handoff.json`, `DRAFT_PR_BODY.md`, and `report/REPORT_VERIFY_ACTIVE_HARNESS_BYPASS_EQUIVALENCE_V2.md`.
 
-- [ ] Run `python -B validate_active_harness_bypass_equivalence_v2.py`; expect `PASS_ACTIVE_HARNESS_BYPASS_EQUIVALENCE_V2_VALIDATION` only if every frozen exact gate passes.
-- [ ] Recheck PR #116 identity, protocol locks, protected diff, no ACTIVE/oracle/official100 execution, and clean task-owned GPU state.
-- [ ] Commit evidence with `validation(reproduction): verify active harness bypass equivalence V2`, push the branch, and create the specified Draft PR.
-- [ ] Copy only the generated `REPORT*.md` to `C:\Users\zlab\Desktop\REPORT` and stop before the next validation stage.
+- [x] Run the final validator; it returned BLOCKED with 14 passed and 10 failed gates because the sentinel pair and five-trial exact gates are incomplete.
+- [x] Recheck protocol evidence, protected diff, no ACTIVE/oracle/official100 execution, and clean task-owned GPU state.
+- [x] Freeze the blocked evidence for the final task-local commit, branch push, and specified Draft PR creation.
+- [x] Copy only the generated `REPORT*.md` to `C:\Users\zlab\Desktop\REPORT` and stop before the next validation stage.

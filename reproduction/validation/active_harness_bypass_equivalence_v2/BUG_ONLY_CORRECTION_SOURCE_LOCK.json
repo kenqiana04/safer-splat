@@ -1,0 +1,21 @@
+{
+  "schema": "BYPASS_BUG_ONLY_CORRECTION_SOURCE_LOCK_V2",
+  "correction_commit_sha": "f722b8d108138f4592e4a1d6b21594a43d823adc",
+  "authorization_artifact": "BUG_ONLY_CORRECTION_AUTHORIZATION.json",
+  "changed_files": {
+    "reproduction/runtime/active_runtime_assurance_v2/plant_commit.py": {
+      "git_blob_sha": "f9116db0690983252ea0f60d286399b71d644134",
+      "sha256": "b9d779fed66a9e034ddd3c7e5c977c7a4422b7bc11c57acc4412b47558d9830a"
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/tests/test_plant_commit.py": {
+      "git_blob_sha": "99ac105a9ff9d21bc7b11bac96164baa27c3f741",
+      "sha256": "b555f8a60db01b9b6934d6adca0d8268a429737681ab3a7bfee26f48ae6a0587"
+    }
+  },
+  "change_semantics": "BYPASS decisions delegate exact reference actions without ACTIVE-only actuator admission; all non-BYPASS decisions retain the unchanged frozen guard.",
+  "tolerance_changed": false,
+  "actuator_bounds_changed": false,
+  "active_method_semantics_changed": false,
+  "protected_nonruntime_source_changed": false,
+  "correction_count": 1
+}
