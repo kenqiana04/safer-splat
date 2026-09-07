@@ -1,0 +1,24 @@
+{
+  "bypass_revalidation_required": "conditional: only if shared BYPASS semantics change",
+  "future_files": [
+    "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py",
+    "reproduction/runtime/active_runtime_assurance_v2/runtime_types.py (additive only)",
+    "reproduction/runtime/active_runtime_assurance_v2/supervisor.py (additive route_transition only)"
+  ],
+  "must_not_do": [
+    "smoke before conformance revalidation",
+    "candidate synthesis",
+    "oracle feedback",
+    "goal-hold",
+    "u_des fallback"
+  ],
+  "must_reuse": [
+    "ActiveRunner.commit_active_decision",
+    "BackupTokenStore",
+    "PlantCommitAdapter",
+    "TraceWriter"
+  ],
+  "only_next_task": "IMPLEMENT_ACTIVE_RUNTIME_PUBLIC_CYCLE_COMPOSITION_V2",
+  "schema": "PUBLIC_CYCLE_COMPOSITION_DOWNSTREAM_HANDOFF_V2",
+  "status": "READY_FOR_IMPLEMENTATION_ONLY"
+}
