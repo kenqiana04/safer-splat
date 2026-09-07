@@ -1,0 +1,13 @@
+{
+  "schema": "BYPASS_QA_TRACE_IDENTITY_REPAIR_V2_FINAL_DECISION",
+  "FINAL_STATUS": "PASS_BYPASS_QA_TRACE_IDENTITY_REPAIR_V2_REFREEZE",
+  "FINAL_DECISION": "FREEZE_REPAIRED_TRACE_IDENTITY_AND_AUTHORIZE_FRESH_BYPASS_EQUIVALENCE_EXECUTION_TASK",
+  "equivalence_established": false,
+  "real_execution_count": 0,
+  "future_execution_lock_active": false,
+  "remaining_blockers": [
+    "V2R1 has not executed any fresh REFERENCE/BYPASS pair.",
+    "The next task must instantiate exact input and execution locks before REF50_new."
+  ],
+  "only_next_task": "EXECUTE_REFROZEN_BYPASS_EQUIVALENCE_V2R1"
+}

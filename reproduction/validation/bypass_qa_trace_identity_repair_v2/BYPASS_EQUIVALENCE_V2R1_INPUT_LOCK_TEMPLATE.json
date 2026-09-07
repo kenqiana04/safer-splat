@@ -1,0 +1,15 @@
+{
+  "schema": "BYPASS_EQUIVALENCE_V2R1_INPUT_LOCK_TEMPLATE",
+  "template_state": "UNINSTANTIATED_NO_EXECUTION_AUTHORITY",
+  "required_protocol_lock_sha256": null,
+  "required_repository_head": null,
+  "required_reference_source_lock": "PASS_REFERENCE_CONTROL_PLANT_PATH_SOURCE_LOCK",
+  "required_canonical_identity_scheme": "STONEHENGE_QA_TRIAL_IDENTITY_V2",
+  "required_trial_ids": [10, 30, 50, 70, 90],
+  "required_execution_order": [50, 10, 30, 70, 90],
+  "required_environment_identity": null,
+  "required_map_artifact_identities": [],
+  "required_source_blobs": [],
+  "historical_pr117_trace_reuse_allowed": false,
+  "instantiation_authority": "EXECUTE_REFROZEN_BYPASS_EQUIVALENCE_V2R1_ONLY"
+}

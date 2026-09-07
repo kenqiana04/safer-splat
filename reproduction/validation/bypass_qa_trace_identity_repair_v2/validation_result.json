@@ -1,0 +1,263 @@
+{
+  "checks": [
+    {
+      "check": "01_pr117_identity_exact",
+      "evidence": {
+        "baseRefName": "implement-active-runtime-assurance-v2",
+        "baseRefOid": "a8d7a3c9522583ad61dc9bc87585e41bb71a0f77",
+        "headRefName": "verify-active-harness-bypass-equivalence-v2",
+        "headRefOid": "06833d2bcf9649c0912133b8a28b1a0c4ec6f4f8",
+        "isDraft": true,
+        "state": "OPEN",
+        "title": "[Draft] Verify active harness BYPASS equivalence V2"
+      },
+      "passed": true
+    },
+    {
+      "check": "02_old_evidence_untouched",
+      "evidence": [
+        "reproduction/validation/active_harness_bypass_equivalence_v2/compare_bypass_equivalence.py",
+        "reproduction/validation/active_harness_bypass_equivalence_v2/reference_trial_adapter.py",
+        "reproduction/validation/active_harness_bypass_equivalence_v2/run_qa_pipeline.py"
+      ],
+      "passed": true
+    },
+    {
+      "check": "03_historical_locks_and_results_immutable",
+      "evidence": [
+        [
+          "reproduction/validation/active_harness_bypass_equivalence_v2/BYPASS_EQUIVALENCE_PROTOCOL_V2.json",
+          true,
+          true
+        ],
+        [
+          "reproduction/validation/active_harness_bypass_equivalence_v2/BYPASS_EQUIVALENCE_INPUT_LOCK.json",
+          true,
+          true
+        ],
+        [
+          "reproduction/validation/active_harness_bypass_equivalence_v2/BYPASS_EQUIVALENCE_EXECUTION_LOCK.json",
+          true,
+          true
+        ],
+        [
+          "reproduction/validation/active_harness_bypass_equivalence_v2/BYPASS_EQUIVALENCE_MISMATCH_REGISTER.json",
+          true,
+          true
+        ],
+        [
+          "reproduction/validation/active_harness_bypass_equivalence_v2/EXECUTION_COUNT_LEDGER.json",
+          true,
+          true
+        ],
+        [
+          "reproduction/validation/active_harness_bypass_equivalence_v2/FINAL_DECISION.json",
+          true,
+          true
+        ],
+        [
+          "reproduction/validation/active_harness_bypass_equivalence_v2/report/REPORT_VERIFY_ACTIVE_HARNESS_BYPASS_EQUIVALENCE_V2.md",
+          true,
+          true
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "check": "04_root_cause_unique",
+      "evidence": "dual formatter in one run_trial function",
+      "passed": true
+    },
+    {
+      "check": "05_single_formatter_authority",
+      "evidence": "one definition and one adapter call",
+      "passed": true
+    },
+    {
+      "check": "06_arm_trial_separation",
+      "evidence": {
+        "ACTIVE_HARNESS_BYPASS": "BYPASS",
+        "REFERENCE_CONTROL_PLANT": "REFERENCE"
+      },
+      "passed": true
+    },
+    {
+      "check": "07_snapshot_writer_same_binding",
+      "evidence": "STONEHENGE_TRIAL_050",
+      "passed": true
+    },
+    {
+      "check": "08_mismatch_guard_unchanged",
+      "evidence": "f7d1c768a28d36ab1ef88614bd01c8722e9ea292",
+      "passed": true
+    },
+    {
+      "check": "09_repair_tests_pass",
+      "evidence": "eCases.test_same_trial_different_arm_metadata_passes) ... ok\ntest_snapshot_050_writer_030_must_fail (test_trace_identity_negative_cases.TraceIdentityNegativeCases.test_snapshot_050_writer_030_must_fail) ... ok\ntest_real_bypass_commit_appends_and_finalizes_one_record (test_trace_identity_one_step_bypass.TraceIdentityOneStepBypassTests.test_real_bypass_commit_appends_and_finalizes_one_record) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.010s\n\nOK\n",
+      "passed": true
+    },
+    {
+      "check": "10_one_step_synthetic_pass",
+      "evidence": "startup->commit->append->finalize->lock",
+      "passed": true
+    },
+    {
+      "check": "11_dual_arm_pairing_pass",
+      "evidence": [
+        10,
+        30,
+        50,
+        70,
+        90
+      ],
+      "passed": true
+    },
+    {
+      "check": "12_negative_tests_pass",
+      "evidence": "strict mismatch/finalize guards",
+      "passed": true
+    },
+    {
+      "check": "13_reference_source_lock_pass",
+      "evidence": {
+        "cbf_qp": "UNCHANGED",
+        "desired_command": "UNCHANGED",
+        "native_termination": "UNCHANGED",
+        "plant_transition": "UNCHANGED",
+        "state_goal_initialization": "UNCHANGED",
+        "trial_geometry": "UNCHANGED"
+      },
+      "passed": true
+    },
+    {
+      "check": "14_pr116_runtime_tests_pass",
+      "evidence": "_forbidden (test_trace_writer.TraceWriterTests.test_outcome_fields_forbidden) ... ok\ntest_43_rules_exactly_once_and_byte_identical (test_transition_conformance.TransitionConformanceTests.test_43_rules_exactly_once_and_byte_identical) ... ok\ntest_runtime_objects_preserve_normative_mapping (test_transition_conformance.TransitionConformanceTests.test_runtime_objects_preserve_normative_mapping) ... ok\n\n----------------------------------------------------------------------\nRan 78 tests in 0.058s\n\nOK\n",
+      "passed": true
+    },
+    {
+      "check": "15_plantcommit_bypass_regression_pass",
+      "evidence": "f9116db0690983252ea0f60d286399b71d644134",
+      "passed": true
+    },
+    {
+      "check": "16_production_runtime_diff_zero",
+      "evidence": "",
+      "passed": true
+    },
+    {
+      "check": "17_pr107_pr116_frozen_diff_zero",
+      "evidence": "protected authority/runtime/specification/design paths",
+      "passed": true
+    },
+    {
+      "check": "18_no_execution_counts",
+      "evidence": {
+        "active_runtime_on_execution_count": 0,
+        "bypass_real_trial_count": 0,
+        "gpu_qa_count": 0,
+        "official100_execution_count": 0,
+        "pr116_runtime_test_count": 78,
+        "pr116_runtime_test_pass_count": 78,
+        "real_arm_execution_count": 0,
+        "reference_real_trial_count": 0,
+        "repair_test_count": 11,
+        "repair_test_pass_count": 11,
+        "scientific_oracle_execution_count": 0
+      },
+      "passed": true
+    },
+    {
+      "check": "19_v2r1_protocol_exists",
+      "evidence": "BYPASS_EQUIVALENCE_PROTOCOL_V2R1",
+      "passed": true
+    },
+    {
+      "check": "20_hard_cap_10",
+      "evidence": 10,
+      "passed": true
+    },
+    {
+      "check": "21_correction_quota_zero",
+      "evidence": 0,
+      "passed": true
+    },
+    {
+      "check": "22_exact_criteria_unchanged",
+      "evidence": {
+        "abs_and_ulp_use": "DIAGNOSTIC_ONLY_AFTER_FAILURE",
+        "action": "FLOAT32_BIT_EXACT",
+        "solver_branch": "TYPED_EXACT_EQUAL",
+        "state": "FLOAT32_BIT_EXACT",
+        "supplied_selected_executed": "EXACT_VECTOR_AND_ID_WHERE_APPLICABLE",
+        "termination": "EXACT_REASON_AND_STEP",
+        "tolerance_substitution_allowed": false
+      },
+      "passed": true
+    },
+    {
+      "check": "23_fresh_pair_rule",
+      "evidence": [
+        "REF50_new",
+        "BYPASS50_new"
+      ],
+      "passed": true
+    },
+    {
+      "check": "24_infra_accounting_rule",
+      "evidence": {
+        "allowed_reason_class": "PATH_LINK_ENV_PACKAGING_ONLY",
+        "label": "INFRA_ONLY_NOT_COUNTED_AS_REAL_ARM_EXECUTION",
+        "required_comparison_evidence": 0,
+        "required_finalized_traces": 0,
+        "required_plant_commits": 0,
+        "required_solver_steps": 0
+      },
+      "passed": true
+    },
+    {
+      "check": "25_rti_invariants_complete",
+      "evidence": [
+        "RTI-01",
+        "RTI-02",
+        "RTI-03",
+        "RTI-04",
+        "RTI-05",
+        "RTI-06",
+        "RTI-07",
+        "RTI-08",
+        "RTI-09",
+        "RTI-10",
+        "RTI-11",
+        "RTI-12",
+        "RTI-13",
+        "RTI-14",
+        "RTI-15",
+        "RTI-16",
+        "RTI-17",
+        "RTI-18",
+        "RTI-19",
+        "RTI-20"
+      ],
+      "passed": true
+    },
+    {
+      "check": "26_protocol_lock_content_addressed",
+      "evidence": "f0206a54551d9fc93ef6a5e5c6a6dbf71c043c7882d0c34030180ca215161c52",
+      "passed": true
+    },
+    {
+      "check": "27_repair_input_lock_content_addressed",
+      "evidence": "49b180244503d1b721e802e647fa8de3b2999141d5a44b9093cc030bc15846b0",
+      "passed": true
+    },
+    {
+      "check": "28_reviewer_compact",
+      "evidence": 992,
+      "passed": true
+    }
+  ],
+  "failed_count": 0,
+  "passed_count": 28,
+  "schema": "BYPASS_QA_TRACE_IDENTITY_REPAIR_V2_VALIDATION",
+  "verdict": "PASS_BYPASS_QA_TRACE_IDENTITY_REPAIR_V2_VALIDATION"
+}

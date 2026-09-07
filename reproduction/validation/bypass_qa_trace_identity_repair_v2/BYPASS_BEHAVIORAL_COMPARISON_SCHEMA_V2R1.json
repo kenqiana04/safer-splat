@@ -1,0 +1,30 @@
+{
+  "schema": "BYPASS_BEHAVIORAL_COMPARISON_SCHEMA_V2R1",
+  "join_key": ["canonical_trial_id", "cycle_index"],
+  "join_key_source": "make_canonical_trial_identity(native_trial_index).comparison_join_key(cycle_index)",
+  "normative_fields": [
+    "canonical_trial_id",
+    "cycle_index",
+    "reference_qp_action_bits",
+    "supplied_action_bits",
+    "bypass_selected_action_bits",
+    "executed_action_bits",
+    "post_state_bits",
+    "solver_branch",
+    "termination_reason",
+    "termination_step"
+  ],
+  "exact_requirements": {
+    "reference_qp_vs_supplied": "FLOAT32_BITS_EQUAL",
+    "supplied_vs_selected": "FLOAT32_BITS_AND_ACTION_ID_EQUAL",
+    "selected_vs_executed": "FLOAT32_BITS_AND_ACTION_ID_EQUAL",
+    "post_state": "FLOAT32_BITS_EQUAL",
+    "solver_branch": "TYPED_EXACT_EQUAL",
+    "termination": "REASON_AND_STEP_EXACT_EQUAL"
+  },
+  "diagnostic_only_after_failure": ["maximum_absolute_difference", "maximum_float32_ulp_difference"],
+  "tolerance_substitution_allowed": false,
+  "harness_only_metadata_may_differ": ["arm_identity", "process_id", "wall_clock_timestamp", "output_path"],
+  "trace_contract": "TRACE_WRITE_MUST_BE_EXECUTION_PASSIVE",
+  "trace_failure_semantics": "NO_FINALIZED_COMPARABLE_EVIDENCE"
+}

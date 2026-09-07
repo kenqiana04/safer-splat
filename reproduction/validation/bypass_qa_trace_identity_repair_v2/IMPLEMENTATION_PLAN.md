@@ -40,9 +40,9 @@
 
 **Files:** Create the required task-local protocol, identity/schema/invariant contracts, repair locks, future execution-lock templates, source-lock regression evidence, report, review, validator, decision, and handoff files.
 
-- [ ] Freeze IDs `[10,30,50,70,90]`, sentinel-first order, fresh pairs, bit-exact equality, hard cap 10, and correction quota 0.
-- [ ] Bind the repair execution lock to the committed repair source and test identities.
-- [ ] Mark every real/GPU/ACTIVE/oracle/official100 execution count as zero.
+- [x] Freeze IDs `[10,30,50,70,90]`, sentinel-first order, fresh pairs, bit-exact equality, hard cap 10, and correction quota 0.
+- [x] Bind the repair execution lock to the committed repair source and test identities.
+- [x] Mark every real/GPU/ACTIVE/oracle/official100 execution count as zero.
 
 ### Task 4: Validate and publish
 
@@ -51,6 +51,6 @@
 - Create: `reproduction/validation/bypass_qa_trace_identity_repair_v2/validation_result.json`
 - Create: `reproduction/validation/bypass_qa_trace_identity_repair_v2/trace_identity_repair_review.json`
 
-- [ ] Recheck PR #117 identity, protected diffs, old evidence immutability, tests, lock hashes, and no-execution counters.
-- [ ] Commit only the task-local refreeze artifacts, push, and create the specified Open Draft PR.
-- [ ] Copy only the final `REPORT*.md` to `C:\Users\zlab\Desktop\REPORT` and stop before V2R1 execution.
+- [x] Recheck PR #117 identity, protected diffs, old evidence immutability, tests, lock hashes, and no-execution counters; validator passed 28/28.
+- [x] Prepare only the task-local refreeze artifacts for the second commit, branch push, and specified Open Draft PR.
+- [x] Copy only the final `REPORT*.md` to `C:\Users\zlab\Desktop\REPORT` and stop before V2R1 execution.

@@ -1,0 +1,20 @@
+{
+  "schema": "BYPASS_EQUIVALENCE_V2R1_PROTOCOL_LOCK",
+  "lock_state": "FROZEN_NOT_EXECUTING",
+  "protocol_path": "reproduction/validation/bypass_qa_trace_identity_repair_v2/BYPASS_EQUIVALENCE_PROTOCOL_V2R1.json",
+  "protocol_git_blob": "3a4adec6d06b43ec53ca60e3bb9a71a0a10c2e40",
+  "protocol_raw_git_blob_sha256": "f0206a54551d9fc93ef6a5e5c6a6dbf71c043c7882d0c34030180ca215161c52",
+  "canonical_identity_contract_git_blob": "658049cf19a0a8263a580d98595f24f5614efa4b",
+  "canonical_identity_contract_raw_git_blob_sha256": "ece2ef6b9478991b64a3727b482076a747779924898c21931bfafd75eb9a25a3",
+  "comparison_schema_git_blob": "c502e9ef67db851a5fe0618649ebd13f83855874",
+  "comparison_schema_raw_git_blob_sha256": "98541b8782515b343df1f6ee32959d6f0e8452f6ad261a721d98b9785f9bc5d6",
+  "invariants_git_blob": "2cd41db9b2a40c895d8e44748ef02b49218767dd",
+  "invariants_raw_git_blob_sha256": "84bc155619e7357dafa70965009222f56e7fb359c139c76cbf0c03fc7249adb8",
+  "trial_ids": [10, 30, 50, 70, 90],
+  "execution_order": [50, 10, 30, 70, 90],
+  "hard_real_arm_execution_cap": 10,
+  "real_execution_correction_quota": 0,
+  "future_execution_lock_active": false,
+  "future_execution_lock_owner": "EXECUTE_REFROZEN_BYPASS_EQUIVALENCE_V2R1",
+  "change_requires_new_protocol_version": true
+}

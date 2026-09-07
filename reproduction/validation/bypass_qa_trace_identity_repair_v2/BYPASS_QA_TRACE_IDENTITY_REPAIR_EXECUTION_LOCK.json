@@ -1,0 +1,27 @@
+{
+  "schema": "BYPASS_QA_TRACE_IDENTITY_REPAIR_EXECUTION_LOCK",
+  "lock_state": "STATIC_CPU_REPAIR_VALIDATION_COMPLETE",
+  "direct_upstream_pr117_head": "06833d2bcf9649c0912133b8a28b1a0c4ec6f4f8",
+  "repair_source_commit": "51ba72e521592df7333f1dacebdaa3df32e57c05",
+  "repair_input_lock_raw_git_blob_sha256": "49b180244503d1b721e802e647fa8de3b2999141d5a44b9093cc030bc15846b0",
+  "source_bindings": [
+    {"path": "reproduction/validation/bypass_qa_trace_identity_repair_v2/canonical_trial_identity.py", "git_blob": "e5d39dd3137ddae1b31e48fe5147357be504254b", "raw_git_blob_sha256": "de8d2e291541ebc16b39a5f81367faa8b5796657168764a9018a0850620aa7a1"},
+    {"path": "reproduction/validation/active_harness_bypass_equivalence_v2/reference_trial_adapter.py", "git_blob": "be7af6a0fecae721484ca873f82275b33c7ddf86", "raw_git_blob_sha256": "fe563494472dae1a58d75215eb083c50a48ab39fbbfcc5de99e6708f8ea57ca0"},
+    {"path": "reproduction/validation/active_harness_bypass_equivalence_v2/run_qa_pipeline.py", "git_blob": "6acea95546acba3bf1720ba349a1409be03d1858", "raw_git_blob_sha256": "25c207a3890a53b7a05beeb34d71d26976ba42dc925a50c76de6140d51034952"},
+    {"path": "reproduction/validation/active_harness_bypass_equivalence_v2/compare_bypass_equivalence.py", "git_blob": "e60f69f985109371401d678fa44669f525ffc6ef", "raw_git_blob_sha256": "59f2971195b4cb54da4031c548da136314b936b275dd2ba4d022bcc9e950903e"}
+  ],
+  "strict_trace_writer_blob": "f7d1c768a28d36ab1ef88614bd01c8722e9ea292",
+  "preserved_bypass_plant_commit_blob": "f9116db0690983252ea0f60d286399b71d644134",
+  "repair_test_count": 11,
+  "repair_test_pass_count": 11,
+  "pr116_runtime_test_count": 78,
+  "pr116_runtime_test_pass_count": 78,
+  "real_arm_execution_count": 0,
+  "gpu_qa_count": 0,
+  "reference_real_trial_count": 0,
+  "bypass_real_trial_count": 0,
+  "active_runtime_on_execution_count": 0,
+  "scientific_oracle_execution_count": 0,
+  "official100_execution_count": 0,
+  "future_v2r1_execution_lock_active": false
+}

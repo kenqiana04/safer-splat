@@ -1,0 +1,17 @@
+{
+  "schema": "BYPASS_EQUIVALENCE_V2R1_EXECUTION_LOCK_TEMPLATE",
+  "template_state": "UNINSTANTIATED_NO_REAL_ARM_STARTED",
+  "required_protocol_lock_sha256": null,
+  "required_input_lock_sha256": null,
+  "required_execution_repository_head": null,
+  "required_execution_counter_start": 0,
+  "required_hard_real_arm_execution_cap": 10,
+  "required_real_execution_correction_quota": 0,
+  "required_first_pair": ["REFERENCE_CONTROL_PLANT:50", "ACTIVE_HARNESS_BYPASS:50"],
+  "required_fresh_process_per_arm": true,
+  "required_fresh_pair": true,
+  "required_equality": "FLOAT32_BIT_EXACT_AND_TYPED_BRANCH_TERMINATION_EXACT",
+  "required_trace_completeness": "FINALIZED_TRACE_LOCK_PER_BYPASS_ARM",
+  "activation_condition": "CREATED_BY_NEXT_TASK_BEFORE_FIRST_SENTINEL_ARM",
+  "active_now": false
+}
