@@ -1,0 +1,298 @@
+{
+  "schema": "VALIDATE_ACTIVE_RUNTIME_PUBLIC_CYCLE_COMPOSITION_DESIGN_V2",
+  "check_count": 45,
+  "checks": [
+    {
+      "id": "U-01",
+      "name": "exact PR120 head",
+      "passed": true,
+      "evidence": {
+        "base": "execute-refrozen-bypass-equivalence-v2r1",
+        "base_sha": "b4ff579cf6a2bcffd0661cd39eb925aa4f3a5d27",
+        "branch": "validate-active-runtime-contract-conformance-v2",
+        "head_sha": "6c5c59dd083dc83661e56c4ddd3e62fa12497652",
+        "pr": 120,
+        "repository": "kenqiana04/safer-splat",
+        "state": "OPEN_DRAFT",
+        "title": "[Draft] Validate active runtime contract conformance V2",
+        "url": "https://github.com/kenqiana04/safer-splat/pull/120"
+      }
+    },
+    {
+      "id": "U-02",
+      "name": "exact PR120 branch",
+      "passed": true,
+      "evidence": "validate-active-runtime-contract-conformance-v2"
+    },
+    {
+      "id": "U-03",
+      "name": "PR120 status/title",
+      "passed": true,
+      "evidence": "identity lock"
+    },
+    {
+      "id": "U-04",
+      "name": "frozen blocker preserved",
+      "passed": true,
+      "evidence": "PR120 evidence unchanged"
+    },
+    {
+      "id": "U-05",
+      "name": "critical routes preserved",
+      "passed": true,
+      "evidence": "35 routes"
+    },
+    {
+      "id": "U-06",
+      "name": "E2E preserved",
+      "passed": true,
+      "evidence": "0/6"
+    },
+    {
+      "id": "S-01",
+      "name": "single composition owner",
+      "passed": true,
+      "evidence": "ActiveCycleCoordinator"
+    },
+    {
+      "id": "S-02",
+      "name": "public API complete",
+      "passed": true,
+      "evidence": "start/run/finalize"
+    },
+    {
+      "id": "S-03",
+      "name": "Supervisor routing owner",
+      "passed": true,
+      "evidence": "route_transition"
+    },
+    {
+      "id": "S-04",
+      "name": "Supervisor selection owner",
+      "passed": true,
+      "evidence": "arbitrate"
+    },
+    {
+      "id": "S-05",
+      "name": "Plant sole owner",
+      "passed": true,
+      "evidence": "PlantCommitAdapter"
+    },
+    {
+      "id": "S-06",
+      "name": "no coordinator policy",
+      "passed": true,
+      "evidence": "authority boundary"
+    },
+    {
+      "id": "T-01",
+      "name": "43 transition rules",
+      "passed": true,
+      "evidence": "43"
+    },
+    {
+      "id": "T-02",
+      "name": "unique/exact-one transition",
+      "passed": true,
+      "evidence": "exact-one"
+    },
+    {
+      "id": "T-03",
+      "name": "no default routing",
+      "passed": true,
+      "evidence": "no guessed route"
+    },
+    {
+      "id": "T-04",
+      "name": "typed ambiguity handling",
+      "passed": true,
+      "evidence": "typed block"
+    },
+    {
+      "id": "P-01",
+      "name": "canonical order",
+      "passed": true,
+      "evidence": "L1/P0/C0/L2/L3"
+    },
+    {
+      "id": "P-02",
+      "name": "L1 once",
+      "passed": true,
+      "evidence": "once"
+    },
+    {
+      "id": "P-03",
+      "name": "R0 non-gate",
+      "passed": true,
+      "evidence": "R0"
+    },
+    {
+      "id": "P-04",
+      "name": "immutable context",
+      "passed": true,
+      "evidence": "append-only evidence"
+    },
+    {
+      "id": "P-05",
+      "name": "result schema",
+      "passed": true,
+      "evidence": "runtime-only"
+    },
+    {
+      "id": "D-01",
+      "name": "deadline observation only",
+      "passed": true,
+      "evidence": "DeadlineTracker"
+    },
+    {
+      "id": "D-02",
+      "name": "deadline warning/expiry semantics",
+      "passed": true,
+      "evidence": "expired"
+    },
+    {
+      "id": "A-01",
+      "name": "primary fresh binding",
+      "passed": true,
+      "evidence": "binding"
+    },
+    {
+      "id": "A-02",
+      "name": "alternative inventory empty",
+      "passed": true,
+      "evidence": "native inventory"
+    },
+    {
+      "id": "A-03",
+      "name": "no synthetic alternatives",
+      "passed": true,
+      "evidence": "no synthesis"
+    },
+    {
+      "id": "B-01",
+      "name": "backup supervisor priority",
+      "passed": true,
+      "evidence": "priority"
+    },
+    {
+      "id": "B-02",
+      "name": "ActiveRunner token reuse",
+      "passed": true,
+      "evidence": "reuse"
+    },
+    {
+      "id": "TERM-01",
+      "name": "terminal route-only",
+      "passed": true,
+      "evidence": "terminal"
+    },
+    {
+      "id": "TERM-02",
+      "name": "goal hold disabled",
+      "passed": true,
+      "evidence": "goal hold"
+    },
+    {
+      "id": "BOUND-01",
+      "name": "boundary no plant",
+      "passed": true,
+      "evidence": "boundary"
+    },
+    {
+      "id": "TRACE-01",
+      "name": "one outcome trace",
+      "passed": true,
+      "evidence": "trace"
+    },
+    {
+      "id": "TRACE-02",
+      "name": "no oracle",
+      "passed": true,
+      "evidence": "no scientific computation"
+    },
+    {
+      "id": "EV-01",
+      "name": "event taxonomy typed",
+      "passed": true,
+      "evidence": "typed events"
+    },
+    {
+      "id": "EV-02",
+      "name": "frozen taxonomy source",
+      "passed": true,
+      "evidence": "PR107 frozen transition/routing metadata"
+    },
+    {
+      "id": "SC-01",
+      "name": "scenario coverage",
+      "passed": true,
+      "evidence": "scenario count"
+    },
+    {
+      "id": "SC-02",
+      "name": "PCC 30",
+      "passed": true,
+      "evidence": "invariant count"
+    },
+    {
+      "id": "M-01",
+      "name": "model checker zero",
+      "passed": true,
+      "evidence": "0 counterexamples"
+    },
+    {
+      "id": "M-02",
+      "name": "change matrix owner",
+      "passed": true,
+      "evidence": "future files"
+    },
+    {
+      "id": "BP-01",
+      "name": "BYPASS preservation",
+      "passed": true,
+      "evidence": "conditional revalidation"
+    },
+    {
+      "id": "L-01",
+      "name": "ladder blocks smoke jump",
+      "passed": true,
+      "evidence": "ladder"
+    },
+    {
+      "id": "X-01",
+      "name": "design execution counters zero",
+      "passed": true,
+      "evidence": {
+        "active_rollout": 0,
+        "gpu": 0,
+        "official100": 0,
+        "oracle": 0,
+        "production": 0,
+        "runtime": 0
+      }
+    },
+    {
+      "id": "X-02",
+      "name": "no rollout authorization",
+      "passed": true,
+      "evidence": "design only"
+    },
+    {
+      "id": "X-03",
+      "name": "runtime/protected diff zero",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "id": "X-04",
+      "name": "required artifacts present",
+      "passed": true,
+      "evidence": "task-local files"
+    }
+  ],
+  "counterexample_count": 0,
+  "runtime_execution_count": 0,
+  "gpu_execution_count": 0,
+  "rollout_count": 0,
+  "verdict": "PASS_ACTIVE_RUNTIME_PUBLIC_CYCLE_COMPOSITION_V2_DESIGN_VALIDATION"
+}

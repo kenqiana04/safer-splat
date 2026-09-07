@@ -1,0 +1,11 @@
+file,new_or_modify,responsibility,frozen_authority,allowed_imports,forbidden_responsibilities,BYPASS_impact,unit_or_conformance_test_target
+reproduction/runtime/active_runtime_assurance_v2/active_cycle.py,NEW,ActiveCycleCoordinator orchestration and typed context/result,Supervisor/PlantCommit/PR107-115,certificate math; selection; deadline policy; plant; oracle,UNCHANGED,public cycle conformance
+reproduction/runtime/active_runtime_assurance_v2/runtime_types.py,ADDITIVE,RoutingDecision/ActiveCycleContext/ActiveCycleResult types only,existing runtime types,existing runtime types,policy; math; plant,UNCHANGED,schema/type tests
+reproduction/runtime/active_runtime_assurance_v2/supervisor.py,ADDITIVE,route_transition lookup API; existing arbitrate remains selector,PR107/PR109/PR110/PR111/PR113,TransitionTable and frozen evidence,coordinator policy; plant,UNCHANGED,routing/conformance tests
+reproduction/runtime/active_runtime_assurance_v2/active_runner.py,UNCHANGED,existing commit/token/trace boundary,PR115 implementation,none beyond existing,cycle orchestration; duplicate token/trace,UNCHANGED,regression tests
+reproduction/runtime/active_runtime_assurance_v2/plant_commit.py,UNCHANGED,sole plant commit,PR109,none beyond existing,routing; candidate selection,UNCHANGED,plant-owner tests
+reproduction/runtime/active_runtime_assurance_v2/backup_token_store.py,UNCHANGED,backup token mechanics,PR112,none beyond existing,backup priority,UNCHANGED,token tests
+reproduction/runtime/active_runtime_assurance_v2/terminal_runtime.py,UNCHANGED,route-admitted terminal evaluation,PR113,none beyond existing,automatic terminal safe,UNCHANGED,terminal tests
+reproduction/runtime/active_runtime_assurance_v2/trace_writer.py,UNCHANGED,trace append,PR114,none beyond existing,oracle/scientific labels,UNCHANGED,trace tests
+reproduction/design/active_runtime_public_cycle_composition_v2/model_check_public_cycle_composition_v2.py,TASK_LOCAL,design model checks,this design lock,stdlib/task artifacts,runtime calls/rollouts,N/A,model check
+reproduction/design/active_runtime_public_cycle_composition_v2/validate_active_runtime_public_cycle_composition_design_v2.py,TASK_LOCAL,design validator,this design lock,stdlib/task artifacts,runtime calls/rollouts,validation

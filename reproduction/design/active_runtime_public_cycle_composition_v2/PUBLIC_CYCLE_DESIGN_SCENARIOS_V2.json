@@ -1,0 +1,167 @@
+{
+  "count": 32,
+  "design_only": true,
+  "scenarios": [
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-01",
+      "name": "start_pass"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-02",
+      "name": "start_fail"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-03",
+      "name": "start_unknown"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-04",
+      "name": "r0_non_gate"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-05",
+      "name": "l1_pass"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-06",
+      "name": "l1_fail"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-07",
+      "name": "l1_unknown"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-08",
+      "name": "primary_unavailable"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-09",
+      "name": "primary_unknown"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-10",
+      "name": "c0_fail"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-11",
+      "name": "c0_unknown"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-12",
+      "name": "l2_fail"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-13",
+      "name": "l2_unknown"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-14",
+      "name": "l3_fail"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-15",
+      "name": "l3_unknown"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-16",
+      "name": "native_alt_empty"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-17",
+      "name": "future_lawful_alt_same_l1_fresh_binding"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-18",
+      "name": "nav_commit_token_handoff"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-19",
+      "name": "failed_nav_preserves_old_token"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-20",
+      "name": "valid_backup"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-21",
+      "name": "invalid_backup"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-22",
+      "name": "backup_exhausted_terminal"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-23",
+      "name": "stale_terminal_boundary"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-24",
+      "name": "deadline_warning_primary"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-25",
+      "name": "deadline_warning_no_new_search"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-26",
+      "name": "deadline_expired_existing_certified"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-27",
+      "name": "deadline_expired_boundary"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-28",
+      "name": "boundary_no_plant"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-29",
+      "name": "zero_primary_remains_primary"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-30",
+      "name": "trace_exactly_once"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-31",
+      "name": "no_oracle_feedback"
+    },
+    {
+      "expected_resolution": "typed routed outcome",
+      "id": "S-32",
+      "name": "stage_exception_typed"
+    }
+  ],
+  "schema": "PUBLIC_CYCLE_DESIGN_SCENARIOS_V2"
+}

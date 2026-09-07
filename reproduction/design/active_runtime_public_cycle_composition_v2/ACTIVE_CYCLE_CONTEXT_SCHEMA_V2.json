@@ -1,0 +1,92 @@
+{
+  "exact_identity_required": true,
+  "fields": [
+    {
+      "name": "trial_id",
+      "type": "string"
+    },
+    {
+      "name": "cycle_index",
+      "type": "integer"
+    },
+    {
+      "name": "snapshot_id",
+      "type": "string"
+    },
+    {
+      "name": "state_id",
+      "type": "string"
+    },
+    {
+      "name": "authority_identity",
+      "type": "object"
+    },
+    {
+      "name": "deadline_identity",
+      "type": "object"
+    },
+    {
+      "name": "phase",
+      "type": "enum"
+    },
+    {
+      "name": "l1_result",
+      "type": "typed_ref"
+    },
+    {
+      "name": "primary_candidate",
+      "type": "typed_ref|null"
+    },
+    {
+      "name": "primary_binding",
+      "type": "typed_ref|null"
+    },
+    {
+      "name": "primary_c0",
+      "type": "typed_ref|null"
+    },
+    {
+      "name": "primary_l2",
+      "type": "typed_ref|null"
+    },
+    {
+      "name": "primary_l3",
+      "type": "typed_ref|null"
+    },
+    {
+      "name": "alternative_attempts",
+      "type": "array"
+    },
+    {
+      "name": "backup_validation",
+      "type": "typed_ref|null"
+    },
+    {
+      "name": "backup_action",
+      "type": "typed_ref|null"
+    },
+    {
+      "name": "terminal_result",
+      "type": "typed_ref|null"
+    },
+    {
+      "name": "routing_decisions",
+      "type": "array"
+    },
+    {
+      "name": "final_supervisor_decision",
+      "type": "typed_ref|null"
+    },
+    {
+      "name": "commit_receipt",
+      "type": "typed_ref|null"
+    },
+    {
+      "name": "trace_ref",
+      "type": "typed_ref|null"
+    }
+  ],
+  "immutable_evolution": true,
+  "mutation_rule": "append typed evidence; never rewrite earlier evidence",
+  "schema": "ACTIVE_CYCLE_CONTEXT_SCHEMA_V2"
+}

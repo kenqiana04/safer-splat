@@ -1,0 +1,31 @@
+{
+  "cycle_phases": [
+    "CYCLE_BEGIN",
+    "L1_IMMEDIATE_CERTIFICATION",
+    "PRIMARY_PROPOSAL",
+    "PRIMARY_C0",
+    "PRIMARY_L2",
+    "PRIMARY_L3",
+    "ALTERNATIVE_ELIGIBILITY",
+    "ALTERNATIVE_SOURCE_QUERY",
+    "ALTERNATIVE_C0",
+    "ALTERNATIVE_L2",
+    "ALTERNATIVE_L3",
+    "BACKUP_VALIDATION",
+    "TERMINAL_EVALUATION",
+    "ARBITRATION",
+    "COMMIT",
+    "TRACE_APPEND",
+    "CYCLE_COMPLETE",
+    "ASSURANCE_BOUNDARY"
+  ],
+  "goal_hold_runtime_enabled": false,
+  "r0_is_hard_gate": false,
+  "schema": "PUBLIC_ACTIVE_CYCLE_PHASES_V2",
+  "trial_phases": [
+    "START_ADMISSION",
+    "R0_DIAGNOSTIC",
+    "TRIAL_READY",
+    "TRIAL_BLOCKED_AT_ADMISSION"
+  ]
+}

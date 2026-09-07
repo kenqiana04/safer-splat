@@ -1,0 +1,31 @@
+{
+  "boundary_contract": {
+    "boundary": true,
+    "committed": false,
+    "next_state": null,
+    "plant_commit": false
+  },
+  "required_fields": [
+    "trial_id",
+    "cycle_index",
+    "start_state_id",
+    "phase_history",
+    "routing_rule_ids",
+    "deadline_observations",
+    "l1_result",
+    "candidate_refs",
+    "certificate_refs",
+    "backup_status",
+    "terminal_status",
+    "supervisor_reason",
+    "action_role",
+    "commit_receipt",
+    "committed",
+    "next_state",
+    "boundary",
+    "trace_ref",
+    "typed_stop_or_failure_reason"
+  ],
+  "runtime_result_not_scientific_outcome": true,
+  "schema": "ACTIVE_CYCLE_RESULT_SCHEMA_V2"
+}

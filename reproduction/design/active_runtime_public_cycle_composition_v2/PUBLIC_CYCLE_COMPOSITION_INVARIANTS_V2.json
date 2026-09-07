@@ -1,0 +1,126 @@
+{
+  "count": 30,
+  "invariants": [
+    {
+      "id": "PCC-01",
+      "statement": "one composition owner"
+    },
+    {
+      "id": "PCC-02",
+      "statement": "Coordinator has no selection policy"
+    },
+    {
+      "id": "PCC-03",
+      "statement": "Supervisor owns routing"
+    },
+    {
+      "id": "PCC-04",
+      "statement": "Supervisor owns final arbitration"
+    },
+    {
+      "id": "PCC-05",
+      "statement": "PlantCommitAdapter is sole plant owner"
+    },
+    {
+      "id": "PCC-06",
+      "statement": "TransitionTable is executable and exact-one"
+    },
+    {
+      "id": "PCC-07",
+      "statement": "L1 precedes P0"
+    },
+    {
+      "id": "PCC-08",
+      "statement": "L1 runs once per cycle"
+    },
+    {
+      "id": "PCC-09",
+      "statement": "fresh candidate bindings"
+    },
+    {
+      "id": "PCC-10",
+      "statement": "C0 precedes L2"
+    },
+    {
+      "id": "PCC-11",
+      "statement": "L2 precedes L3"
+    },
+    {
+      "id": "PCC-12",
+      "statement": "no synthetic alternative"
+    },
+    {
+      "id": "PCC-13",
+      "statement": "no alternative L1 recomputation"
+    },
+    {
+      "id": "PCC-14",
+      "statement": "deadline interpreted by Supervisor"
+    },
+    {
+      "id": "PCC-15",
+      "statement": "no forbidden search after guard"
+    },
+    {
+      "id": "PCC-16",
+      "statement": "backup validated before selection"
+    },
+    {
+      "id": "PCC-17",
+      "statement": "terminal is route-only"
+    },
+    {
+      "id": "PCC-18",
+      "statement": "goal-hold disabled"
+    },
+    {
+      "id": "PCC-19",
+      "statement": "boundary never calls plant"
+    },
+    {
+      "id": "PCC-20",
+      "statement": "ActiveRunner token mechanics reused"
+    },
+    {
+      "id": "PCC-21",
+      "statement": "ActiveRunner trace mechanics reused"
+    },
+    {
+      "id": "PCC-22",
+      "statement": "no duplicate token logic"
+    },
+    {
+      "id": "PCC-23",
+      "statement": "no duplicate trace"
+    },
+    {
+      "id": "PCC-24",
+      "statement": "no oracle feedback"
+    },
+    {
+      "id": "PCC-25",
+      "statement": "no u_des fallback"
+    },
+    {
+      "id": "PCC-26",
+      "statement": "typed stage exceptions"
+    },
+    {
+      "id": "PCC-27",
+      "statement": "BYPASS preserved or explicitly revalidated"
+    },
+    {
+      "id": "PCC-28",
+      "statement": "no rollout authorization"
+    },
+    {
+      "id": "PCC-29",
+      "statement": "cycle result is runtime-only"
+    },
+    {
+      "id": "PCC-30",
+      "statement": "unknown/ambiguous routing fails closed"
+    }
+  ],
+  "schema": "PUBLIC_CYCLE_COMPOSITION_INVARIANTS_V2"
+}

@@ -1,0 +1,53 @@
+{
+  "authority": {
+    "active_runner": "existing_commit_token_trace_mechanics",
+    "coordinator": "orchestration_only",
+    "plant_commit": "sole_plant_authority",
+    "supervisor": "routing_and_selection"
+  },
+  "design_only": true,
+  "methods": [
+    {
+      "name": "start_trial",
+      "nonpass": "TRIAL_BLOCKED_AT_ADMISSION; no plant",
+      "signature": "start_trial(initial_snapshot, trial_context) -> TrialStartResult",
+      "steps": [
+        "ACTIVE startup authority verification",
+        "I0a admission",
+        "I0b only if an already-authorized primitive exists; default unavailable",
+        "R0 diagnostic",
+        "establish session state"
+      ]
+    },
+    {
+      "forbidden": [
+        "run_until_success",
+        "hidden scientific termination",
+        "goal label input"
+      ],
+      "name": "run_cycle",
+      "signature": "run_cycle(snapshot, cycle_context) -> ActiveCycleResult",
+      "steps": [
+        "CYCLE_BEGIN",
+        "one route-selected stage at a time",
+        "Supervisor.arbitrate",
+        "ActiveRunner commit boundary",
+        "typed result"
+      ]
+    },
+    {
+      "forbidden": [
+        "oracle",
+        "new action",
+        "scientific scoring"
+      ],
+      "name": "finalize_trial",
+      "signature": "finalize_trial() -> TrialTraceLock",
+      "steps": [
+        "flush/finalize trace only"
+      ]
+    }
+  ],
+  "owner": "ActiveCycleCoordinator",
+  "schema": "PUBLIC_CYCLE_API_V2"
+}
