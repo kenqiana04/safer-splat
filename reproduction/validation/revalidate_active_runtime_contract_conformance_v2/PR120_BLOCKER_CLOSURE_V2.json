@@ -1,0 +1,14 @@
+{
+  "api": [
+    "start_trial",
+    "run_cycle",
+    "finalize_trial"
+  ],
+  "caller_precomputes_internal_evidence": false,
+  "genuine_public_api": true,
+  "public_owner": "ActiveCycleCoordinator",
+  "schema": "PR120_BLOCKER_CLOSURE_V2",
+  "scope": "Structural closure only; downstream contract conformance remains blocked.",
+  "source_evidence": "active_cycle.py owns module calls, Supervisor route/arbitrate calls, and ActiveRunner commit requests.",
+  "status": "PASS_INTEGRATION_ORCHESTRATION_GAP_CLOSED"
+}

@@ -1,0 +1,58 @@
+{
+  "ast_parsed": true,
+  "candidate_synthesis": false,
+  "conclusion": "Deadline/search/navigation eligibility is partly interpreted by the coordinator, violating the frozen authority split.",
+  "direct_action_construction": false,
+  "direct_plant_call": false,
+  "entries": [
+    {
+      "classification": "MECHANICAL_EVENT_CONVERSION",
+      "expression": "backup_evidence.status -> backup_valid",
+      "line": 302
+    },
+    {
+      "classification": "MECHANICAL_TOKEN_EVIDENCE_PREPARATION",
+      "expression": "valid token -> read exact current action",
+      "line": 304
+    },
+    {
+      "classification": "POLICY_DECISION",
+      "expression": "backup_valid AND DEADLINE_OPEN -> alternative_search_allowed",
+      "line": 376
+    },
+    {
+      "classification": "POLICY_DECISION",
+      "expression": "backup_valid AND DEADLINE_OPEN -> alternative_search_allowed",
+      "line": 393
+    },
+    {
+      "classification": "POLICY_DECISION",
+      "expression": "backup_valid AND DEADLINE_OPEN -> alternative_search_allowed",
+      "line": 410
+    },
+    {
+      "classification": "POLICY_DECISION",
+      "expression": "deadline non-OPEN -> coordinator chooses DEADLINE_GUARD event path",
+      "line": 416
+    },
+    {
+      "classification": "POLICY_DECISION",
+      "expression": "L3 evidence AND DEADLINE_OPEN -> navigation_timely",
+      "line": 442
+    },
+    {
+      "classification": "POLICY_DECISION",
+      "expression": "navigation_timely -> candidate forwarded or suppressed",
+      "line": 443
+    },
+    {
+      "classification": "MECHANICAL_EVENT_CONVERSION",
+      "expression": "terminal result -> terminal_ready fact",
+      "line": 452
+    }
+  ],
+  "first_policy_decision_line": 376,
+  "policy_decision_count": 6,
+  "schema": "COORDINATOR_POLICY_LEAK_AUDIT_V2",
+  "status": "FAIL_COORDINATOR_POLICY_LEAK"
+}

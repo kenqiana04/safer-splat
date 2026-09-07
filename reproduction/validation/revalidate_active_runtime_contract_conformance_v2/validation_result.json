@@ -1,0 +1,181 @@
+{
+  "check_count": 42,
+  "checks": [
+    {
+      "name": "01_pr122_exact",
+      "passed": true
+    },
+    {
+      "name": "02_pr120_history_preserved",
+      "passed": true
+    },
+    {
+      "name": "03_pr122_runtime_frozen",
+      "passed": true
+    },
+    {
+      "name": "04_this_task_runtime_diff_zero",
+      "passed": true
+    },
+    {
+      "name": "05_input_lock",
+      "passed": true
+    },
+    {
+      "name": "06_execution_lock",
+      "passed": true
+    },
+    {
+      "name": "07_blocker_closure",
+      "passed": true
+    },
+    {
+      "name": "08_genuine_coordinator",
+      "passed": true
+    },
+    {
+      "name": "09_no_policy_leak",
+      "passed": false
+    },
+    {
+      "name": "10_sole_routing_owner",
+      "passed": true
+    },
+    {
+      "name": "11_sole_selector",
+      "passed": true
+    },
+    {
+      "name": "12_sole_plant",
+      "passed": true
+    },
+    {
+      "name": "13_raw_43_row_fidelity",
+      "passed": false
+    },
+    {
+      "name": "14_exact_one",
+      "passed": false
+    },
+    {
+      "name": "15_canonical_order",
+      "passed": false
+    },
+    {
+      "name": "16_l1_once",
+      "passed": false
+    },
+    {
+      "name": "17_start_semantics",
+      "passed": false
+    },
+    {
+      "name": "18_primary_c0",
+      "passed": false
+    },
+    {
+      "name": "19_l2_l3",
+      "passed": false
+    },
+    {
+      "name": "20_exception_routing",
+      "passed": false
+    },
+    {
+      "name": "21_deadline_observation_points",
+      "passed": false
+    },
+    {
+      "name": "22_deadline_semantics",
+      "passed": false
+    },
+    {
+      "name": "23_no_synthetic_alternatives",
+      "passed": false
+    },
+    {
+      "name": "24_backup_prevalidation",
+      "passed": false
+    },
+    {
+      "name": "25_backup_lifecycle",
+      "passed": false
+    },
+    {
+      "name": "26_terminal_routed_only",
+      "passed": false
+    },
+    {
+      "name": "27_routing_arbitration",
+      "passed": false
+    },
+    {
+      "name": "28_commit_allowed",
+      "passed": false
+    },
+    {
+      "name": "29_trace_exactly_once",
+      "passed": false
+    },
+    {
+      "name": "30_trace_failure",
+      "passed": false
+    },
+    {
+      "name": "31_e2e_6_of_6",
+      "passed": false
+    },
+    {
+      "name": "32_critical_dynamic_coverage",
+      "passed": false
+    },
+    {
+      "name": "33_model_counterexamples_zero",
+      "passed": false
+    },
+    {
+      "name": "34_bypass_preservation",
+      "passed": true
+    },
+    {
+      "name": "35_oracle_feedback_zero",
+      "passed": true
+    },
+    {
+      "name": "36_runtime_correction_zero",
+      "passed": true
+    },
+    {
+      "name": "37_real_active_zero",
+      "passed": true
+    },
+    {
+      "name": "38_gpu_zero",
+      "passed": true
+    },
+    {
+      "name": "39_smoke_zero",
+      "passed": true
+    },
+    {
+      "name": "40_scientific_oracle_zero",
+      "passed": true
+    },
+    {
+      "name": "41_official100_zero",
+      "passed": true
+    },
+    {
+      "name": "42_protocol_deviations_zero",
+      "passed": true
+    }
+  ],
+  "failed_count": 22,
+  "first_counterexample": "RC-POLICY-01",
+  "passed_count": 20,
+  "required_artifacts_present": true,
+  "runtime_diff_zero": true,
+  "schema": "REVALIDATED_ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_V2_VALIDATION",
+  "status": "BLOCKED_REVALIDATED_ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_V2",
+  "test_module_count": 20
+}

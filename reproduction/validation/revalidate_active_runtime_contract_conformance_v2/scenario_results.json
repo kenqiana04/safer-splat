@@ -1,0 +1,47 @@
+{
+  "critical_dynamic_coverage_percent": 0,
+  "dynamic_scenarios_stopped": true,
+  "e2e_genuine_pass": 0,
+  "e2e_genuine_required": 6,
+  "execution_counts": {
+    "gpu": 0,
+    "official100": 0,
+    "real_active": 0,
+    "real_bypass_pair": 0,
+    "runtime_correction": 0,
+    "scientific_oracle": 0,
+    "smoke": 0
+  },
+  "first_counterexample": "RC-POLICY-01",
+  "gate_status": {
+    "alternative": "NOT_EXECUTED_AFTER_FIRST_CRITICAL_COUNTEREXAMPLE",
+    "backup": "NOT_EXECUTED_AFTER_FIRST_CRITICAL_COUNTEREXAMPLE",
+    "blocker_closure": "PASS_STATIC",
+    "bypass": "PASS_STATIC",
+    "canonical_order": "NOT_EXECUTED_AFTER_FIRST_CRITICAL_COUNTEREXAMPLE",
+    "coordinator_policy": "FAIL",
+    "deadline": "NOT_EXECUTED_AFTER_FIRST_CRITICAL_COUNTEREXAMPLE",
+    "exact_one": "NOT_EXECUTED_AFTER_FIRST_CRITICAL_COUNTEREXAMPLE",
+    "exception": "NOT_EXECUTED_AFTER_FIRST_CRITICAL_COUNTEREXAMPLE",
+    "l1": "NOT_EXECUTED_AFTER_FIRST_CRITICAL_COUNTEREXAMPLE",
+    "l2_l3": "NOT_EXECUTED_AFTER_FIRST_CRITICAL_COUNTEREXAMPLE",
+    "primary_c0": "NOT_EXECUTED_AFTER_FIRST_CRITICAL_COUNTEREXAMPLE",
+    "routing_arbitration_commit": "NOT_EXECUTED_AFTER_FIRST_CRITICAL_COUNTEREXAMPLE",
+    "routing_metadata": "FAIL_STATIC_SECONDARY",
+    "start": "NOT_EXECUTED_AFTER_FIRST_CRITICAL_COUNTEREXAMPLE",
+    "terminal": "NOT_EXECUTED_AFTER_FIRST_CRITICAL_COUNTEREXAMPLE",
+    "trace": "NOT_EXECUTED_AFTER_FIRST_CRITICAL_COUNTEREXAMPLE",
+    "trace_failure": "NOT_EXECUTED_AFTER_FIRST_CRITICAL_COUNTEREXAMPLE"
+  },
+  "overall": "BLOCKED_ACTIVE_RECONFORMANCE_BY_COORDINATOR_POLICY_LEAK",
+  "precritical_test_run": {
+    "failed": 1,
+    "failure_scope": "HARNESS_SYMBOL_ALIAS_EXPECTATION; independent structural audit used exact attribute name",
+    "passed": 2,
+    "tests": 3
+  },
+  "protocol_deviation_count": 0,
+  "runtime_correction_count": 0,
+  "runtime_correction_quota": 0,
+  "schema": "ACTIVE_RECONFORMANCE_SCENARIO_RESULTS_V2"
+}

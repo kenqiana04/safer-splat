@@ -1,0 +1,170 @@
+{
+  "execution_authority": "CPU_DETERMINISTIC_TARGETED_CONFORMANCE_ONLY",
+  "files": [
+    {
+      "git_blob_sha1": "20923ea817b2ca1e47623c0f8068ac4ba2d0c56d",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/ACTIVE_RECONFORMANCE_INPUT_LOCK.json",
+      "sha256": "c67a2f36dc2e7219fad034ee8ebd175428c61688aa70ee5abdfa983f7cd5368e",
+      "size": 13572
+    },
+    {
+      "git_blob_sha1": "b99aabf9e75d9cf41b1a6764e8d0cf674517fb81",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/scenario_manifest.json",
+      "sha256": "800b429163f54ea19fdc3722168ba78351c58ea88c7a048e74c4626db61db2aa",
+      "size": 4081
+    },
+    {
+      "git_blob_sha1": "f766011ec1ca7f5b4a32474a951cc4b58d8c3cd3",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/TRANSITION_43_RULE_EXPECTED_MATRIX_V2.csv",
+      "sha256": "6288376ddc9d9a3c1608b317e8b1c9e788cb3f79c56564fc0c88e0d716565bd8",
+      "size": 12900
+    },
+    {
+      "git_blob_sha1": "3d2848b12dcb5d16fccf56a1ae20d0cc5f435016",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/model_check_active_public_cycle_reconformance_v2.py",
+      "sha256": "13a6f352332bf37370011effac8a18ea04d6eed04a0840b5a4fca7472276c709",
+      "size": 3933
+    },
+    {
+      "git_blob_sha1": "5f275e141b62c5b1449bd800ce2f8e4fd9fbd4a0",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/validate_revalidated_active_runtime_contract_conformance_v2.py",
+      "sha256": "f4cbad3b2c236f9f1ceeb1c20474a9a7f68999f564089925e65b1d034fed7100",
+      "size": 7200
+    },
+    {
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "git_blob_sha1": "fb984351e73f63161f152c10828aa2304e9fea54",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/_support.py",
+      "sha256": "305b7f3809933e5abb89246fbb6d1562b34b44aae51dc1e78424704462a29303",
+      "size": 1074
+    },
+    {
+      "git_blob_sha1": "70ced63f9e2c18495996f7f07794fc3f4eca6419",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/test_alternative_reconformance.py",
+      "sha256": "0209e3ac042f0b0caf6c4b741b3a74f93c9b3421efe64125e635cbb178082739",
+      "size": 268
+    },
+    {
+      "git_blob_sha1": "70ced63f9e2c18495996f7f07794fc3f4eca6419",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/test_backup_public_path_reconformance.py",
+      "sha256": "0209e3ac042f0b0caf6c4b741b3a74f93c9b3421efe64125e635cbb178082739",
+      "size": 268
+    },
+    {
+      "git_blob_sha1": "70ced63f9e2c18495996f7f07794fc3f4eca6419",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/test_bypass_preservation_reconformance.py",
+      "sha256": "0209e3ac042f0b0caf6c4b741b3a74f93c9b3421efe64125e635cbb178082739",
+      "size": 268
+    },
+    {
+      "git_blob_sha1": "70ced63f9e2c18495996f7f07794fc3f4eca6419",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/test_commit_authority_reconformance.py",
+      "sha256": "0209e3ac042f0b0caf6c4b741b3a74f93c9b3421efe64125e635cbb178082739",
+      "size": 268
+    },
+    {
+      "git_blob_sha1": "f928fd69af2a9a17fa270a7373cdb6668ea2d7d8",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/test_coordinator_authority_boundary.py",
+      "sha256": "b882870c2fc43995b48fc633b12a30841b5ee472b16e11ebd3fbda0d5daea4bc",
+      "size": 432
+    },
+    {
+      "git_blob_sha1": "70ced63f9e2c18495996f7f07794fc3f4eca6419",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/test_deadline_public_path_reconformance.py",
+      "sha256": "0209e3ac042f0b0caf6c4b741b3a74f93c9b3421efe64125e635cbb178082739",
+      "size": 268
+    },
+    {
+      "git_blob_sha1": "70ced63f9e2c18495996f7f07794fc3f4eca6419",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/test_exception_routing_reconformance.py",
+      "sha256": "0209e3ac042f0b0caf6c4b741b3a74f93c9b3421efe64125e635cbb178082739",
+      "size": 268
+    },
+    {
+      "git_blob_sha1": "70ced63f9e2c18495996f7f07794fc3f4eca6419",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/test_genuine_public_e2e_reconformance.py",
+      "sha256": "0209e3ac042f0b0caf6c4b741b3a74f93c9b3421efe64125e635cbb178082739",
+      "size": 268
+    },
+    {
+      "git_blob_sha1": "70ced63f9e2c18495996f7f07794fc3f4eca6419",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/test_l1_reconformance.py",
+      "sha256": "0209e3ac042f0b0caf6c4b741b3a74f93c9b3421efe64125e635cbb178082739",
+      "size": 268
+    },
+    {
+      "git_blob_sha1": "70ced63f9e2c18495996f7f07794fc3f4eca6419",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/test_l2_l3_reconformance.py",
+      "sha256": "0209e3ac042f0b0caf6c4b741b3a74f93c9b3421efe64125e635cbb178082739",
+      "size": 268
+    },
+    {
+      "git_blob_sha1": "2442a7fa2aea60725113137f911af27554810f98",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/test_pr120_blocker_closure.py",
+      "sha256": "b7f36d5354a9b6e8208188cf038a1023bd95871a6ac5f1a701d9192ef0aae01c",
+      "size": 638
+    },
+    {
+      "git_blob_sha1": "70ced63f9e2c18495996f7f07794fc3f4eca6419",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/test_primary_c0_reconformance.py",
+      "sha256": "0209e3ac042f0b0caf6c4b741b3a74f93c9b3421efe64125e635cbb178082739",
+      "size": 268
+    },
+    {
+      "git_blob_sha1": "70ced63f9e2c18495996f7f07794fc3f4eca6419",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/test_public_cycle_call_order.py",
+      "sha256": "0209e3ac042f0b0caf6c4b741b3a74f93c9b3421efe64125e635cbb178082739",
+      "size": 268
+    },
+    {
+      "git_blob_sha1": "70ced63f9e2c18495996f7f07794fc3f4eca6419",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/test_routing_arbitration_consistency.py",
+      "sha256": "0209e3ac042f0b0caf6c4b741b3a74f93c9b3421efe64125e635cbb178082739",
+      "size": 268
+    },
+    {
+      "git_blob_sha1": "70ced63f9e2c18495996f7f07794fc3f4eca6419",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/test_start_trial_reconformance.py",
+      "sha256": "0209e3ac042f0b0caf6c4b741b3a74f93c9b3421efe64125e635cbb178082739",
+      "size": 268
+    },
+    {
+      "git_blob_sha1": "70ced63f9e2c18495996f7f07794fc3f4eca6419",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/test_terminal_public_path_reconformance.py",
+      "sha256": "0209e3ac042f0b0caf6c4b741b3a74f93c9b3421efe64125e635cbb178082739",
+      "size": 268
+    },
+    {
+      "git_blob_sha1": "70ced63f9e2c18495996f7f07794fc3f4eca6419",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/test_trace_public_path_reconformance.py",
+      "sha256": "0209e3ac042f0b0caf6c4b741b3a74f93c9b3421efe64125e635cbb178082739",
+      "size": 268
+    },
+    {
+      "git_blob_sha1": "70ced63f9e2c18495996f7f07794fc3f4eca6419",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/test_transition_dynamic_coverage.py",
+      "sha256": "0209e3ac042f0b0caf6c4b741b3a74f93c9b3421efe64125e635cbb178082739",
+      "size": 268
+    },
+    {
+      "git_blob_sha1": "70ced63f9e2c18495996f7f07794fc3f4eca6419",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/test_transition_exact_one_revalidation.py",
+      "sha256": "0209e3ac042f0b0caf6c4b741b3a74f93c9b3421efe64125e635cbb178082739",
+      "size": 268
+    },
+    {
+      "git_blob_sha1": "2bbeec1a5e4a09385f21cb5c2248b393d596ef25",
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2/tests/test_transition_row_fidelity.py",
+      "sha256": "c0445ed505ba201194fe8e5189a7860366d8ccb6605558429fd9d29e782b1e17",
+      "size": 961
+    }
+  ],
+  "frozen_before_substantive_execution": true,
+  "runtime_correction_quota": 0,
+  "schema": "ACTIVE_RECONFORMANCE_EXECUTION_LOCK_V2"
+}

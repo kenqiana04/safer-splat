@@ -1,0 +1,157 @@
+{
+  "frozen_before_substantive_execution": true,
+  "runtime_correction_quota": 0,
+  "scenarios": [
+    {
+      "class": "STATIC_AND_CPU",
+      "purpose": "PR120 public-orchestration blocker closure",
+      "scenario_id": "RC-BLOCKER-01"
+    },
+    {
+      "class": "STATIC",
+      "purpose": "Coordinator authority/policy leak",
+      "scenario_id": "RC-POLICY-01"
+    },
+    {
+      "class": "CRITICAL_STATIC",
+      "purpose": "43-row TransitionRule and RoutingDecision fidelity",
+      "scenario_id": "RC-TR-FIDELITY-001"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "exact-one lookup for all legal contexts",
+      "scenario_id": "RC-EXACT-01"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "I0a PASS then R0 then ready",
+      "scenario_id": "RC-START-01"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "I0a FAIL no plant",
+      "scenario_id": "RC-START-02"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "I0a UNKNOWN no plant",
+      "scenario_id": "RC-START-03"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "R0 anomaly remains diagnostic",
+      "scenario_id": "RC-START-04"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "identity mismatch typed block",
+      "scenario_id": "RC-START-05"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "L1 PASS",
+      "scenario_id": "RC-L1-PASS"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "L1 FAIL no ordinary alternative",
+      "scenario_id": "RC-L1-FAIL"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "L1 global unknown",
+      "scenario_id": "RC-L1-UNKNOWN-GLOBAL"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "L1 health unknown",
+      "scenario_id": "RC-L1-UNKNOWN-HEALTH"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "L1 unresolved unknown",
+      "scenario_id": "RC-L1-UNKNOWN-UNRESOLVED"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "primary and C0 boundary",
+      "scenario_id": "RC-P0-C0"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "L2/L3 order and authority",
+      "scenario_id": "RC-L2-L3"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "stage exception Supervisor routing",
+      "scenario_id": "RC-EXCEPTION"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "deadline public path",
+      "scenario_id": "RC-DEADLINE"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "native alternative only",
+      "scenario_id": "RC-ALT"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "backup prevalidation/lifecycle",
+      "scenario_id": "RC-BACKUP"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "terminal route-only",
+      "scenario_id": "RC-TERMINAL"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "routing/arbitration/commit authority",
+      "scenario_id": "RC-COMMIT"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "trace exactly once and fault semantics",
+      "scenario_id": "RC-TRACE"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "certified navigation",
+      "scenario_id": "E2E-RC-01"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "primary rejected and valid backup",
+      "scenario_id": "E2E-RC-02"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "eligible terminal",
+      "scenario_id": "E2E-RC-03"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "assurance boundary",
+      "scenario_id": "E2E-RC-04"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "expired with valid backup",
+      "scenario_id": "E2E-RC-05"
+    },
+    {
+      "class": "CRITICAL_DYNAMIC",
+      "purpose": "global unknown legal fallback/boundary",
+      "scenario_id": "E2E-RC-06"
+    },
+    {
+      "class": "STATIC",
+      "purpose": "BYPASS upstream evidence preservation",
+      "scenario_id": "RC-BYPASS"
+    }
+  ],
+  "schema": "ACTIVE_RECONFORMANCE_SCENARIO_MANIFEST_V2"
+}
