@@ -1,0 +1,23 @@
+{
+  "cpu_only": true,
+  "deadline_profile": "TEST_FIXTURE_ONLY_NOT_RUNTIME_AUTHORITY",
+  "deterministic": true,
+  "fake_clock": true,
+  "gpu": false,
+  "injected_backends": [
+    "geometry/certifier",
+    "proposal_solver",
+    "external_witness"
+  ],
+  "real_rollout": false,
+  "schema": "CONFORMANCE_TEST_FIXTURE_BOUNDARY_V2",
+  "test_doubles_may_not_replace": [
+    "Supervisor routing",
+    "ActiveRunner commit",
+    "BackupTokenStore",
+    "TerminalRuntime",
+    "C0Admission",
+    "PlantCommitAdapter",
+    "TraceWriter"
+  ]
+}

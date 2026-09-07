@@ -1,0 +1,11 @@
+{
+  "count": 1,
+  "counterexamples": [
+    {
+      "class": "INTEGRATION_ORCHESTRATION_GAP",
+      "counterexample_id": "CE-001",
+      "evidence": "ActiveRunner has no full-cycle public method; commit_active_decision accepts precomputed decision."
+    }
+  ],
+  "schema": "ACTIVE_CONTRACT_COUNTEREXAMPLES_V2"
+}

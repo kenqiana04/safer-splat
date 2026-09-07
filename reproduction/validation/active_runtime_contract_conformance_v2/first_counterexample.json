@@ -1,0 +1,27 @@
+{
+  "class": "INTEGRATION_ORCHESTRATION_GAP",
+  "correction_quota": 0,
+  "counterexample_id": "CE-001",
+  "discovered_by": "public API inspection plus CPU startup probe",
+  "evidence": {
+    "active_runner_public_methods": [
+      "commit_active_decision",
+      "commit_bypass",
+      "finalize_trace",
+      "startup"
+    ],
+    "commit_active_decision_signature": "(self, snapshot: 'RuntimeStateSnapshot', decision) -> 'CommitReceipt | None'",
+    "evidence": [
+      "ActiveRunner exposes startup, commit_active_decision, commit_bypass, finalize_trace but no cycle composition entrypoint.",
+      "Supervisor.arbitrate consumes already-produced candidate/L3/backup/terminal/deadline values; it does not call start admission, L1, proposal, C0, L2, L3, alternative, or deadline trackers."
+    ],
+    "has_full_cycle_entrypoint": false,
+    "supervisor_arbitrate_requires_precomputed_inputs": true,
+    "supervisor_arbitrate_signature": "(self, snapshot: 'RuntimeStateSnapshot', certified_candidate: 'Candidate | None', l3_result: 'L3Result | None', retained_backup_action: 'SelectedAction | None', backup_valid: 'bool', terminal_result: 'TerminalResult | None', deadline: 'DeadlineObservation') -> 'SupervisorDecision'"
+  },
+  "observed": "ActiveRunner.commit_active_decision(snapshot, precomputed_decision) only; no public full-cycle entrypoint",
+  "required": "state snapshot → start admission → L1 → proposal → C0 → L2 → L3 → arbitration → commit/trace",
+  "runtime_source_changed": false,
+  "schema": "ACTIVE_CONFORMANCE_FIRST_COUNTEREXAMPLE_V2",
+  "stopped_unnecessary_scenarios": true
+}
