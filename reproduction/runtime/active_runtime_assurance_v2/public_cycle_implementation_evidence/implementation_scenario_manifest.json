@@ -1,0 +1,166 @@
+{
+  "scenario_count": 32,
+  "scenarios": [
+    {
+      "evidence": "test_public_cycle_start_trial",
+      "requirement": "start admission PASS -> trial ready",
+      "scenario_id": "PC-IMP-01"
+    },
+    {
+      "evidence": "test_public_cycle_start_trial",
+      "requirement": "start FAIL/UNKNOWN -> no plant",
+      "scenario_id": "PC-IMP-02"
+    },
+    {
+      "evidence": "test_public_cycle_start_trial",
+      "requirement": "R0 diagnostic non-gate",
+      "scenario_id": "PC-IMP-03"
+    },
+    {
+      "evidence": "test_public_cycle_normal_primary",
+      "requirement": "normal primary full cycle",
+      "scenario_id": "PC-IMP-04"
+    },
+    {
+      "evidence": "test_public_cycle_normal_primary",
+      "requirement": "L1 backend once per cycle",
+      "scenario_id": "PC-IMP-05"
+    },
+    {
+      "evidence": "test_public_cycle_unknown_routes",
+      "requirement": "primary unavailable frozen route",
+      "scenario_id": "PC-IMP-06"
+    },
+    {
+      "evidence": "test_public_cycle_c0_fail",
+      "requirement": "C0 FAIL -> no L2",
+      "scenario_id": "PC-IMP-07"
+    },
+    {
+      "evidence": "test_public_cycle_l2_fail",
+      "requirement": "L2 FAIL -> no L3",
+      "scenario_id": "PC-IMP-08"
+    },
+    {
+      "evidence": "test_public_cycle_l3_fail",
+      "requirement": "L3 FAIL -> no uncertified commit",
+      "scenario_id": "PC-IMP-09"
+    },
+    {
+      "evidence": "test_public_cycle_no_alternative",
+      "requirement": "native alternative empty -> Supervisor",
+      "scenario_id": "PC-IMP-10"
+    },
+    {
+      "evidence": "test_public_cycle_backup_fallback",
+      "requirement": "valid retained backup fallback",
+      "scenario_id": "PC-IMP-11"
+    },
+    {
+      "evidence": "test_public_cycle_backup_fallback",
+      "requirement": "invalid retained backup blocked",
+      "scenario_id": "PC-IMP-12"
+    },
+    {
+      "evidence": "test_public_cycle_token_handoff",
+      "requirement": "navigation commit activates token",
+      "scenario_id": "PC-IMP-13"
+    },
+    {
+      "evidence": "test_existing_runtime_regression",
+      "requirement": "failed commit does not duplicate token mechanics",
+      "scenario_id": "PC-IMP-14"
+    },
+    {
+      "evidence": "test_public_cycle_terminal_fallback",
+      "requirement": "terminal route-only",
+      "scenario_id": "PC-IMP-15"
+    },
+    {
+      "evidence": "test_supervisor",
+      "requirement": "valid backup outranks terminal",
+      "scenario_id": "PC-IMP-16"
+    },
+    {
+      "evidence": "test_public_cycle_boundary",
+      "requirement": "boundary no plant",
+      "scenario_id": "PC-IMP-17"
+    },
+    {
+      "evidence": "test_public_cycle_deadline",
+      "requirement": "deadline WARNING Supervisor lookup",
+      "scenario_id": "PC-IMP-18"
+    },
+    {
+      "evidence": "test_public_cycle_deadline",
+      "requirement": "deadline EXPIRED forbids new work",
+      "scenario_id": "PC-IMP-19"
+    },
+    {
+      "evidence": "test_public_cycle_deadline",
+      "requirement": "expired plus valid backup",
+      "scenario_id": "PC-IMP-20"
+    },
+    {
+      "evidence": "test_public_cycle_normal_primary",
+      "requirement": "zero primary remains primary",
+      "scenario_id": "PC-IMP-21"
+    },
+    {
+      "evidence": "test_public_cycle_trace",
+      "requirement": "exactly one cycle trace",
+      "scenario_id": "PC-IMP-22"
+    },
+    {
+      "evidence": "test_public_cycle_trace",
+      "requirement": "finalized trace immutable",
+      "scenario_id": "PC-IMP-23"
+    },
+    {
+      "evidence": "test_existing_runtime_regression",
+      "requirement": "no oracle feedback",
+      "scenario_id": "PC-IMP-24"
+    },
+    {
+      "evidence": "test_transition_exact_one_lookup",
+      "requirement": "zero route match blocks",
+      "scenario_id": "PC-IMP-25"
+    },
+    {
+      "evidence": "test_transition_exact_one_lookup",
+      "requirement": "multiple route matches block",
+      "scenario_id": "PC-IMP-26"
+    },
+    {
+      "evidence": "test_public_cycle_session_state",
+      "requirement": "cycle before start blocks",
+      "scenario_id": "PC-IMP-27"
+    },
+    {
+      "evidence": "test_public_cycle_session_state",
+      "requirement": "cycle identity mismatch blocks",
+      "scenario_id": "PC-IMP-28"
+    },
+    {
+      "evidence": "test_public_cycle_no_alternative",
+      "requirement": "future lawful alt same L1 fresh binding",
+      "scenario_id": "PC-IMP-29"
+    },
+    {
+      "evidence": "test_existing_runtime_regression",
+      "requirement": "no direct dynamics call",
+      "scenario_id": "PC-IMP-30"
+    },
+    {
+      "evidence": "test_supervisor_route_transition",
+      "requirement": "Coordinator no final selection",
+      "scenario_id": "PC-IMP-31"
+    },
+    {
+      "evidence": "test_public_cycle_types",
+      "requirement": "runtime-fact-only public result",
+      "scenario_id": "PC-IMP-32"
+    }
+  ],
+  "schema": "PUBLIC_CYCLE_IMPLEMENTATION_SCENARIOS_V2"
+}

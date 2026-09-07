@@ -1,0 +1,332 @@
+{
+  "authorizations": {
+    "gpu": false,
+    "official100": false,
+    "real_active_rollout": false,
+    "real_bypass_pair": false,
+    "runtime_files": [
+      "active_cycle.py",
+      "runtime_types.py",
+      "supervisor.py"
+    ],
+    "scientific_oracle": false,
+    "smoke": false
+  },
+  "baseline_regression": {
+    "status": "PASS",
+    "suite": "PR116_RUNTIME_CPU_UNIT_TESTS",
+    "tests": 78
+  },
+  "direct_upstream": {
+    "base": "validate-active-runtime-contract-conformance-v2",
+    "base_sha": "6c5c59dd083dc83661e56c4ddd3e62fa12497652",
+    "branch": "design-active-runtime-public-cycle-composition-v2",
+    "head": "4148e671128444d357ea33f6e5c15d0dd2928411",
+    "pr": 121,
+    "repository": "kenqiana04/safer-splat",
+    "state": "OPEN_DRAFT",
+    "title": "[Draft] Design active runtime public cycle composition V2"
+  },
+  "must_remain_unchanged": [
+    {
+      "git_blob_sha1": "64b747656b031881123c92587d1beca6e742be5e",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/active_runner.py",
+      "sha256": "2af5395152e31b69465483bccd34978fba65d6950c946d47d5615ef505a16791",
+      "size": 3831
+    },
+    {
+      "git_blob_sha1": "f9116db0690983252ea0f60d286399b71d644134",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/plant_commit.py",
+      "sha256": "267051d457b493f293569750c3dd58c6193d2acd86a2009e554d365cdc6853ff",
+      "size": 3488
+    },
+    {
+      "git_blob_sha1": "3af371733638bcd6aac9240db38328d9e2f6154f",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/backup_token_store.py",
+      "sha256": "6aa8ed0e69be7694d880f66ad3ee1b9222af0360e90fca5d491482ac4e308700",
+      "size": 5041
+    },
+    {
+      "git_blob_sha1": "9cbc9769970626ecee600e83909655f44e75466d",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/terminal_runtime.py",
+      "sha256": "55e915e717ec09bbce61b682e56e5b3b7193e083e28bdf3943a7d241e207f9ee",
+      "size": 2249
+    },
+    {
+      "git_blob_sha1": "f7d1c768a28d36ab1ef88614bd01c8722e9ea292",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/trace_writer.py",
+      "sha256": "62d916da9676a990a213ec6bd09701a5e76ac615f84f14f6c67a6a878985de95",
+      "size": 2501
+    }
+  ],
+  "pr107_transition_table": {
+    "git_blob_sha1": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+    "path": "reproduction/specification/method_logic_closure_v2/STATE_TRANSITION_TABLE_V2.csv",
+    "sha256": "0dc77f53fe33b94f8c997f4a4c50c7f2fb5d72fb95113dd6e8d7856525d6ad72",
+    "size": 9306
+  },
+  "pr120_blocker": {
+    "artifact": {
+      "git_blob_sha1": "e7c61ee4440771abffdb28d6ada984c27c87147a",
+      "path": "reproduction/validation/active_runtime_contract_conformance_v2/FINAL_DECISION.json",
+      "sha256": "244ea59af0356cbb50a33c0933c1e87977451ca9d2a35655ad8fe8e1867f4041",
+      "size": 671
+    },
+    "gap": "MISSING_PUBLIC_ACTIVE_CYCLE_ORCHESTRATION",
+    "status": "BLOCKED_ACTIVE_CONFORMANCE_BY_INTEGRATION_ORCHESTRATION_GAP"
+  },
+  "pr121_design_artifacts": [
+    {
+      "git_blob_sha1": "85af7cd020057b5995c0d964ea74eafe4a5d53b4",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/PUBLIC_CYCLE_IMPLEMENTATION_MANIFEST_V2.csv",
+      "sha256": "05eade6036ea4704ea92f4a3a9d8c5b32bcd252359094641d4c2e99fd97fee4f",
+      "size": 2272
+    },
+    {
+      "git_blob_sha1": "cdcb7a8e1a161cd7b1cca040c2351232b9b78bef",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/PUBLIC_CYCLE_RUNTIME_CHANGE_MATRIX_V2.csv",
+      "sha256": "58c18ef439f11452021fa1db304839d18817bf2825bc37a8adf0b53b49591ea2",
+      "size": 1802
+    },
+    {
+      "git_blob_sha1": "9bb218b1e71144becc8d471026410bcf58c15194",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/PUBLIC_CYCLE_COMPOSITION_CONTRACT_V2.md",
+      "sha256": "5032e454e83360a1c839dd2f2a51d94cbcfa38ef09f311957ea422097c8cf667",
+      "size": 1339
+    },
+    {
+      "git_blob_sha1": "823e75f5328a88feb72aacd5aabd748032b8a830",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/PUBLIC_CYCLE_API_V2.json",
+      "sha256": "37c568ac3df21c164f4fe2afb86cf43d36876786b0614da1569b06e843a98350",
+      "size": 1504
+    },
+    {
+      "git_blob_sha1": "5b9eda1f973e1db19f5adbea8641544975f37133",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/SUPERVISOR_ROUTING_AUTHORITY_V2.md",
+      "sha256": "49623aa5661772ff70900845d575ae4274962d9b4121d723363fbc95e56ef437",
+      "size": 991
+    },
+    {
+      "git_blob_sha1": "777431c3ed1d33b546aced7f3df175bc554ae1cf",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/EXECUTABLE_TRANSITION_ROUTING_DESIGN_V2.json",
+      "sha256": "88985455e19b4a235e6ef742a1629b14c3db6ff3a5a4993544fa92050cf393b8",
+      "size": 56800
+    },
+    {
+      "git_blob_sha1": "5710661cd32c2bb5f87a0aa25b9dc314801cd156",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/PUBLIC_ACTIVE_CYCLE_PHASES_V2.json",
+      "sha256": "9bab5849436da025f879f16fd3c6650ed8124a5860c1185f3b0c68b8a1965156",
+      "size": 703
+    },
+    {
+      "git_blob_sha1": "5831a5bc194f8d024c78ea378d58907bc78d5536",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/ACTIVE_CYCLE_CONTEXT_SCHEMA_V2.json",
+      "sha256": "4d35c8c35919864f28183105c9dc970661a1df9d0e208524b364c24b6e91f42b",
+      "size": 1802
+    },
+    {
+      "git_blob_sha1": "ea55064b6d9e8044ed17f94ebaa0996ac76a37f6",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/ACTIVE_CYCLE_RESULT_SCHEMA_V2.json",
+      "sha256": "ba1a6fa462438065a673ad51fd8451bc394afa15b0a681e4f43a3679f2b251b0",
+      "size": 689
+    },
+    {
+      "git_blob_sha1": "edbfedf311aa337d9aafaff7dba29f82930180f7",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/PUBLIC_CYCLE_EVENT_SCHEMA_V2.json",
+      "sha256": "39fbceea9231da01ab3a6723982d016b4d85480cf98bfd8806ad0b229fce7e65",
+      "size": 4695
+    },
+    {
+      "git_blob_sha1": "b3a8f3ccc0bba8e8de6fb5f7987082acbef743c1",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/DEADLINE_STAGE_ADMISSION_INTERFACE_V2.md",
+      "sha256": "cf84621617a8e013b723aa765c3fbec69e9b2fc8a50a69da8107bbbe9a4c283e",
+      "size": 795
+    },
+    {
+      "git_blob_sha1": "ca97b87275338db90df8e04ca42ba94a2fe398ec",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/PRIMARY_CYCLE_INTEGRATION_V2.md",
+      "sha256": "330e57cc1eb161dfcff0b2255e991afff4d3450313af98301a38ae409e985343",
+      "size": 706
+    },
+    {
+      "git_blob_sha1": "37bac32087b0d84e68dd87c60945edf1fc29e0d1",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/ALTERNATIVE_CYCLE_INTEGRATION_V2.md",
+      "sha256": "1cf41cabd4419c10bcfa1f610559d1f7d5d608a5b5ce8fe0e7209a08519ec2fd",
+      "size": 746
+    },
+    {
+      "git_blob_sha1": "8505c6a6e7d8505704207bc494f91e287eb1027c",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/BACKUP_CYCLE_INTEGRATION_V2.md",
+      "sha256": "e8869e025972756dfab6c91265f3d658932daf23dac0860fc4bfc2d90a9d9ea4",
+      "size": 792
+    },
+    {
+      "git_blob_sha1": "5a4b6eb96b5467f0344bf47bd24d6ad70c82c5ca",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/TERMINAL_CYCLE_INTEGRATION_V2.md",
+      "sha256": "a243a6efc29dfd039efc6ac84d257daae21da3ee218c43d12571b32cd8727d86",
+      "size": 444
+    },
+    {
+      "git_blob_sha1": "73e0b7bfbbe69d6675244ebffdd6215e642d11db",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/PUBLIC_CYCLE_TRACE_CONTRACT_V2.md",
+      "sha256": "6c1211dc880b4c45923c45ad31194b792c43e47442059e3414c19348728d887f",
+      "size": 612
+    },
+    {
+      "git_blob_sha1": "f8fc005175b576a9e0b7019d0d9da3da5d3f0b39",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/FIRST_AND_SUBSEQUENT_CYCLE_SEMANTICS_V2.md",
+      "sha256": "baceddbbbfc74d2f42c7047ecb7f48c3c969375ee999183fb2e8a73352ff3f9e",
+      "size": 749
+    },
+    {
+      "git_blob_sha1": "c221c42f5a88e0dcea1591fc890904af7bd1af61",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/PUBLIC_CYCLE_EXCEPTION_ROUTING_V2.json",
+      "sha256": "13816ccf91df1f1ae771bfa137a6d20f04efded6f86e44bfc71afe536add097b",
+      "size": 536
+    },
+    {
+      "git_blob_sha1": "41eed0b0e22903fc0f74c2816988760cb0c15a4f",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/BYPASS_EVIDENCE_PRESERVATION_V2.md",
+      "sha256": "57d0605c128174cd8b5cca885f6a4188b14cb081237fa8976a33f7ce61f7260e",
+      "size": 621
+    },
+    {
+      "git_blob_sha1": "2e168ec86cf02e0b78a5165928c0504c624e5bd5",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/PUBLIC_CYCLE_COMPOSITION_INVARIANTS_V2.json",
+      "sha256": "9d7a3663cf13847f12bc7635a8643c2eb626ca312da60ba01e4c61deb6f06668",
+      "size": 2731
+    },
+    {
+      "git_blob_sha1": "708efc9aef7ab417db07b92842a50871405f20ef",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/PUBLIC_CYCLE_DESIGN_SCENARIOS_V2.json",
+      "sha256": "2e389de2bdae2993ef388dbf9555575ff17e0d8e3c3f263961108c123d85cfd9",
+      "size": 4125
+    },
+    {
+      "git_blob_sha1": "ef517ddcf2cd59b19ff1ecc1aa55b6ce11a3741b",
+      "path": "reproduction/design/active_runtime_public_cycle_composition_v2/POST_COMPOSITION_VALIDATION_LADDER_V2.md",
+      "sha256": "8a992cc8e1ff9c369572dd2009e1e9249f7c1eb76a3c752cfb2f4253b8ffe958",
+      "size": 519
+    }
+  ],
+  "pre_edit_runtime_modules": [
+    {
+      "git_blob_sha1": "c444b077fde51dcffc3c057302d1336dcb7ce0c9",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/authority_registry.py",
+      "sha256": "ebe6c1dcfbbb5cb2c2a131c94e8773bb16d1794320d19341c796457d0517b969",
+      "size": 4594
+    },
+    {
+      "git_blob_sha1": "cfce1d4fa111fdeb50a0c225b4451daeb9ed3672",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/runtime_types.py",
+      "sha256": "c21e4452900e685b10249bcc104ab1f544bcf68cb0ce1fbca45c08ad87085972",
+      "size": 12662
+    },
+    {
+      "git_blob_sha1": "40e6774bc37cae76758db97ee3db43a48e373d55",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/start_admission.py",
+      "sha256": "f2bf429438b779a908aef8eedb812bd2aa6eb065104ce3f15d51256878dd080d",
+      "size": 1464
+    },
+    {
+      "git_blob_sha1": "8556cdb5aa9082e323d47419736ceec5bb7660ae",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/diagnostic_r0.py",
+      "sha256": "7a3cc2d59bec36f0827d06f7c45eab03713f41c3ce6defe834c4cb2f29a30407",
+      "size": 319
+    },
+    {
+      "git_blob_sha1": "6a477fb4fd84f6c04c0e68a586e43baf6d5aa77c",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/l1_runtime.py",
+      "sha256": "7a32dee5e74844df7113bd64d589cf6e22025fedc598c15b138bc3cfab4a3394",
+      "size": 2566
+    },
+    {
+      "git_blob_sha1": "2de4ad2cbf92a71affd8a2d2630094f9a6d29936",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/primary_proposal_adapter.py",
+      "sha256": "62ec2c5382b22b37bd498e92bd2120e8cb650c7a41cd332aa1ba15e2ab2c034a",
+      "size": 2055
+    },
+    {
+      "git_blob_sha1": "3cbf74596980b22eb94d3233134f270ce6cc7f9f",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/c0_admission.py",
+      "sha256": "9ab9946e2b6149ede8863ffe2927e6b4617fb3606de303cea7bfa895a75edbfa",
+      "size": 1605
+    },
+    {
+      "git_blob_sha1": "b7b26075ea01878deea39a12f66b5990c0d08de1",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/l2_runtime.py",
+      "sha256": "5934ce80734fef48a5dee5fbd702ff82015dedb091deea53d459b578d3d03b72",
+      "size": 1744
+    },
+    {
+      "git_blob_sha1": "93db2095cfc3102b37f35bfef91a611786de71d2",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/l3_runtime.py",
+      "sha256": "121c3b9a15cb7f56c133ce9c098ecd8d7983228286f416441974d926fc916445",
+      "size": 1884
+    },
+    {
+      "git_blob_sha1": "32da73b46fc7c5b0fb4b0ac7a5d583a0f3dba980",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/alternative_provider.py",
+      "sha256": "d77750b569d714dc015fe63f7bfd7927181204d5682f6a67ba757e788070f3cf",
+      "size": 1175
+    },
+    {
+      "git_blob_sha1": "3af371733638bcd6aac9240db38328d9e2f6154f",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/backup_token_store.py",
+      "sha256": "6aa8ed0e69be7694d880f66ad3ee1b9222af0360e90fca5d491482ac4e308700",
+      "size": 5041
+    },
+    {
+      "git_blob_sha1": "9cbc9769970626ecee600e83909655f44e75466d",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/terminal_runtime.py",
+      "sha256": "55e915e717ec09bbce61b682e56e5b3b7193e083e28bdf3943a7d241e207f9ee",
+      "size": 2249
+    },
+    {
+      "git_blob_sha1": "cf81341b655deb7b8b5a6261eafb6171580dbd45",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/deadline_runtime.py",
+      "sha256": "81f13f4c92de7d1c7367b845f910a8295e1de83c7375bf0469d84a41fc27f33e",
+      "size": 2971
+    },
+    {
+      "git_blob_sha1": "b4d5863199ccbe254c6d5b0061861f4f959f552d",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/supervisor.py",
+      "sha256": "0417d32d17f12606948cc90e27e5d2f470b06d9539c5e1f35cf75f2a5fa9a282",
+      "size": 5485
+    },
+    {
+      "git_blob_sha1": "f9116db0690983252ea0f60d286399b71d644134",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/plant_commit.py",
+      "sha256": "267051d457b493f293569750c3dd58c6193d2acd86a2009e554d365cdc6853ff",
+      "size": 3488
+    },
+    {
+      "git_blob_sha1": "f7d1c768a28d36ab1ef88614bd01c8722e9ea292",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/trace_writer.py",
+      "sha256": "62d916da9676a990a213ec6bd09701a5e76ac615f84f14f6c67a6a878985de95",
+      "size": 2501
+    },
+    {
+      "git_blob_sha1": "64b747656b031881123c92587d1beca6e742be5e",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/active_runner.py",
+      "sha256": "2af5395152e31b69465483bccd34978fba65d6950c946d47d5615ef505a16791",
+      "size": 3831
+    }
+  ],
+  "schema": "PUBLIC_CYCLE_IMPLEMENTATION_INPUT_LOCK_V2",
+  "supervisor_method_identities": {
+    "arbitrate": {
+      "ast_sha256": "d71adeb79e622256a3113506b07b76bf4a9617252d2406ed90d153c1794599a3",
+      "source_sha256": "eea2968a85c563367e4b6ccdf88a54405672b0788fe00df9e2f9c12c7260badf"
+    },
+    "bypass_decision": {
+      "ast_sha256": "44e08edc0ea4c18d259d2e35faa4a4e022b4c7434162b30708ef412c6143adf0",
+      "source_sha256": "e2744698d34c8c63ce762308f49cbfea64fdf8d1f98fe9b5a3c27659f91f561a"
+    },
+    "certify_candidate": {
+      "ast_sha256": "56df2c46a96b846c7a6ad42e836674470ae429656df650546e9997691341f33f",
+      "source_sha256": "597220f01c115ecec4a363864bd1dad56e28f6983477d839c54b26efac0fb7dc"
+    }
+  },
+  "task_type": "PUBLIC_CYCLE_IMPLEMENTATION_CPU_ONLY_NO_ROLLOUT"
+}

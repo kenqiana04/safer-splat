@@ -1,0 +1,9 @@
+{
+  "BYPASS_REVALIDATION_REQUIRED": false,
+  "FINAL_DECISION": "FREEZE_PUBLIC_CYCLE_IMPLEMENTATION_AND_ADVANCE_REVALIDATION_DAG",
+  "FINAL_STATUS": "PASS_ACTIVE_RUNTIME_PUBLIC_CYCLE_COMPOSITION_V2_IMPLEMENTATION",
+  "Only next task": "REVALIDATE_ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_V2",
+  "remaining_blockers": [
+    "PR120 active runtime contract conformance has not yet been revalidated against this implementation."
+  ]
+}

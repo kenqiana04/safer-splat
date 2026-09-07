@@ -1,0 +1,11 @@
+{
+  "correction": "additive exact-one guard correction: ARB_BOUNDARY requires not terminal_ready",
+  "counterexample_id": "CE-PUBLIC-CYCLE-IMPLEMENTATION-001",
+  "existing_arbitrate_changed": false,
+  "frozen_design_changed": false,
+  "observed": "ARB_TERMINAL and ARB_BOUNDARY both matched a terminal-ready arbitration context",
+  "post_correction_counterexamples": 0,
+  "post_correction_transition_coverage": "43/43",
+  "root_cause": "boundary branch guard omitted explicit terminal_ready exclusion",
+  "stage": "pre_execution_lock_model_check"
+}
