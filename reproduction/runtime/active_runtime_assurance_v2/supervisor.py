@@ -127,7 +127,7 @@ class TransitionTable:
         if rule.rule_id == "ARB_EVAL_TERMINAL":
             return not context.navigation_ready and not context.retained_backup_valid and not context.terminal_evaluated and context.deadline.status == DeadlineStatus.OPEN
         if rule.rule_id == "ARB_BOUNDARY":
-            return not context.navigation_ready and not context.retained_backup_valid and (context.terminal_evaluated or context.deadline.status != DeadlineStatus.OPEN)
+            return not context.navigation_ready and not context.retained_backup_valid and not context.terminal_ready and (context.terminal_evaluated or context.deadline.status != DeadlineStatus.OPEN)
         return True
 
     def resolve(self, event: PublicCycleEvent | str, context: RuntimeRoutingContext) -> RoutingDecision:
