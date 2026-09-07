@@ -1,0 +1,17 @@
+{
+  "integrated_public_route": "NOT_EXECUTABLE",
+  "module_level_typed_unknown": true,
+  "nominal_fallback": false,
+  "schema": "UNKNOWN_ROUTING_CONFORMANCE_V2",
+  "silent_pass": false,
+  "typed_sources": [
+    "start map mismatch",
+    "L1 backend exception",
+    "L2 backend exception",
+    "L3 backend exception",
+    "terminal exception",
+    "deadline profile missing"
+  ],
+  "uncertified_commit": false,
+  "verdict": "BLOCKED_ACTIVE_CONFORMANCE_BY_INTEGRATION_ORCHESTRATION_GAP"
+}

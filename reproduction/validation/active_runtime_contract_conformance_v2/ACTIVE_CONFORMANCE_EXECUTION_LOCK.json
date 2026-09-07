@@ -1,0 +1,92 @@
+{
+  "cpu_only": true,
+  "first_counterexample_stop": true,
+  "frozen_inputs": [
+    {
+      "path": "reproduction/validation/active_runtime_contract_conformance_v2/ACTIVE_CONFORMANCE_INPUT_LOCK.json",
+      "sha256": "2da531558e9ff622584a2e9c1366fe11bdcc64bc19703e68fa66dbe483361f30"
+    },
+    {
+      "path": "reproduction/validation/active_runtime_contract_conformance_v2/ACTIVE_TRANSITION_CONFORMANCE_MATRIX_V2.csv",
+      "sha256": "c4e7bc339ca66c74cbe6a072982a9e64884f15c444ec7023a1d6949ce9593451"
+    },
+    {
+      "path": "reproduction/validation/active_runtime_contract_conformance_v2/scenario_manifest.json",
+      "sha256": "ebe769556ce4c85b8351bc48d5196324e0a04c6a0353d136090c773451b5e8c5"
+    },
+    {
+      "path": "reproduction/validation/active_runtime_contract_conformance_v2/model_check_active_runtime_contract_conformance_v2.py",
+      "sha256": "4ea2bdcd79e43b7eb0bab3560574d633f31c27229feb9244f080b8c3575be167"
+    },
+    {
+      "path": "reproduction/validation/active_runtime_contract_conformance_v2/validate_active_runtime_contract_conformance_v2.py",
+      "sha256": "b29c9b525797881897c29bac070cb36654096360f087e64d4c1f74213a079ef4"
+    },
+    {
+      "path": "reproduction/validation/active_runtime_contract_conformance_v2/tests/test_active_trace_conformance.py",
+      "sha256": "0e42b95304637a64e00a3bcb70bd6d901b16540a9f9a85b8f76a1ed7bc879d0e"
+    },
+    {
+      "path": "reproduction/validation/active_runtime_contract_conformance_v2/tests/test_backup_token_conformance.py",
+      "sha256": "6406c160e61afceed3b5adbf3e7fa77caf8cf9784a3c39dff9c86f7af670143f"
+    },
+    {
+      "path": "reproduction/validation/active_runtime_contract_conformance_v2/tests/test_boundary_conformance.py",
+      "sha256": "3e2eed3a1e7e8035ff9d0593b99519a3b3ea864211cb506d53a9034214b14386"
+    },
+    {
+      "path": "reproduction/validation/active_runtime_contract_conformance_v2/tests/test_c0_conformance.py",
+      "sha256": "77bc64a023f37d9c89d794b64db068b7afc98bbf95d26a7a8c531db19843b643"
+    },
+    {
+      "path": "reproduction/validation/active_runtime_contract_conformance_v2/tests/test_deadline_conformance.py",
+      "sha256": "714694585a449f7112e91188ae6a368808bcfecb2f78af9396f275cf67ec7eea"
+    },
+    {
+      "path": "reproduction/validation/active_runtime_contract_conformance_v2/tests/test_integrated_active_cycle_conformance.py",
+      "sha256": "009cfea2b0e99eb8f734f6d9d2b7c06704ed85d099a42b79edfa7f32b020c0be"
+    },
+    {
+      "path": "reproduction/validation/active_runtime_contract_conformance_v2/tests/test_l1_conformance.py",
+      "sha256": "0810019ce4783e4ac0e39e67b2a4a778d1dfb6b4ebeab5e632ed41af39b1efe2"
+    },
+    {
+      "path": "reproduction/validation/active_runtime_contract_conformance_v2/tests/test_l2_conformance.py",
+      "sha256": "b722235ecbfe438df6010f2fe1e5251cf0e3a35656804128e7ca36a1902c93ed"
+    },
+    {
+      "path": "reproduction/validation/active_runtime_contract_conformance_v2/tests/test_l3_conformance.py",
+      "sha256": "4144536a7601a3ce32211ad63a9779053d24bd49c6a52327687dcd2ee167d5fd"
+    },
+    {
+      "path": "reproduction/validation/active_runtime_contract_conformance_v2/tests/test_primary_proposal_conformance.py",
+      "sha256": "9818d90964f4d95cb5fc3942af093d270354b7d5c1e87cd5e647fa3b3e4a50dc"
+    },
+    {
+      "path": "reproduction/validation/active_runtime_contract_conformance_v2/tests/test_start_admission_conformance.py",
+      "sha256": "e94a69f29dbc4ba9ee9b59f7e3e6defa406a761aa4d3da66918bb558d86c6910"
+    },
+    {
+      "path": "reproduction/validation/active_runtime_contract_conformance_v2/tests/test_terminal_conformance.py",
+      "sha256": "36800e01c6e08115c1adbfb7bffb80a757af3cea04f17f834ed1c41a2664844a"
+    },
+    {
+      "path": "reproduction/validation/active_runtime_contract_conformance_v2/tests/test_transition_dynamic_conformance.py",
+      "sha256": "a5f6ae5c0a5d1189f3f14ab011db72ffb7c953319e7da11d453773e0a367dd9a"
+    },
+    {
+      "path": "reproduction/validation/active_runtime_contract_conformance_v2/tests/test_unknown_routing_conformance.py",
+      "sha256": "2742819828fdc96d686b9d55e9c462ab8f3a765cc73ab417ca1afbbca400a4ce"
+    }
+  ],
+  "gpu_execution_count": 0,
+  "official100_count": 0,
+  "real_active_rollout_count": 0,
+  "repository": "kenqiana04/safer-splat",
+  "runtime_correction_quota": 0,
+  "runtime_under_test_head": "b4ff579cf6a2bcffd0661cd39eb925aa4f3a5d27",
+  "schema": "ACTIVE_CONFORMANCE_EXECUTION_LOCK_V2",
+  "scientific_oracle_count": 0,
+  "task_branch": "validate-active-runtime-contract-conformance-v2",
+  "upstream_pr": 119
+}

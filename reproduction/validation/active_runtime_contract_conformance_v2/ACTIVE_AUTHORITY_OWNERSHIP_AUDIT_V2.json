@@ -1,0 +1,29 @@
+{
+  "forbidden_direct_edges": {
+    "alternative_to_plant": true,
+    "l2_to_plant": true,
+    "l3_to_plant": true,
+    "oracle_to_runtime": true,
+    "post_cert_clip": true,
+    "proposal_to_plant": true,
+    "terminal_membership_to_plant": true,
+    "u_des_fallback": true
+  },
+  "integrated_public_path": "MISSING",
+  "plant_owner": {
+    "expected": "PlantCommitAdapter.commit",
+    "observed": [
+      "reproduction/runtime/active_runtime_assurance_v2/plant_commit.py:PlantCommitAdapter.commit"
+    ],
+    "status": "PASS_MODULE_SCOPE"
+  },
+  "schema": "ACTIVE_AUTHORITY_OWNERSHIP_AUDIT_V2",
+  "selection_owner": {
+    "expected": "Supervisor.arbitrate",
+    "observed": [
+      "reproduction/runtime/active_runtime_assurance_v2/supervisor.py:Supervisor.arbitrate"
+    ],
+    "status": "PASS_MODULE_SCOPE"
+  },
+  "verdict": "BLOCKED_ACTIVE_CONFORMANCE_BY_INTEGRATION_ORCHESTRATION_GAP"
+}

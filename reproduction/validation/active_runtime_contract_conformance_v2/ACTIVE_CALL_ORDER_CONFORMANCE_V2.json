@@ -1,0 +1,22 @@
+{
+  "alternative_fresh_binding_required": true,
+  "l1_cycle_cache": true,
+  "module_observed_order": [
+    "C0",
+    "L2",
+    "L3"
+  ],
+  "native_alternative_inventory": "SOURCE_NATIVE_EXISTING_EMPTY",
+  "observed_public_order": null,
+  "primary_fresh_binding_required": true,
+  "reason": "No public runtime cycle calls L1/P0/C0/L2/L3 in canonical order.",
+  "required_order": [
+    "L1",
+    "P0",
+    "C0",
+    "L2",
+    "L3"
+  ],
+  "schema": "ACTIVE_CALL_ORDER_CONFORMANCE_V2",
+  "verdict": "BLOCKED_ACTIVE_CONFORMANCE_BY_INTEGRATION_ORCHESTRATION_GAP"
+}

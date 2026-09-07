@@ -1,0 +1,197 @@
+{
+  "check_count": 30,
+  "checks": [
+    {
+      "evidence": {
+        "base": "repair-and-refreeze-bypass-qa-trace-identity-v2",
+        "base_sha": "a537ff653ac896aa1ab567b5197136efa1a937b4",
+        "branch": "execute-refrozen-bypass-equivalence-v2r1",
+        "head": "b4ff579cf6a2bcffd0661cd39eb925aa4f3a5d27",
+        "pr": 119,
+        "repository": "kenqiana04/safer-splat",
+        "state": "OPEN_DRAFT",
+        "title": "[Draft] Execute refrozen BYPASS equivalence V2R1"
+      },
+      "name": "01_pr119_exact",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "active_runtime_on_execution_count": 0,
+        "all_mismatch_counts_zero": true,
+        "compared_steps": 732,
+        "git_blob_sha1": "9b6395333305384a084de4311f11b73b6209eded",
+        "official100_execution_count": 0,
+        "pairs": 5,
+        "path": "reproduction/validation/execute_refrozen_bypass_equivalence_v2r1/BYPASS_EQUIVALENCE_V2R1_SUMMARY.json",
+        "real_execution_count": 10,
+        "scientific_oracle_execution_count": 0,
+        "sha256": "17d8ba47a45c84c0f00045012658d5d0b7cc4797cfda4a28c816393a23360572",
+        "trace_locks": 5,
+        "verdict": "PASS_REFROZEN_BYPASS_EQUIVALENCE_V2R1"
+      },
+      "name": "02_bypass_pass_frozen",
+      "passed": true
+    },
+    {
+      "evidence": [],
+      "name": "03_protected_source_diff_zero",
+      "passed": true
+    },
+    {
+      "evidence": 17,
+      "name": "04_input_lock_present",
+      "passed": true
+    },
+    {
+      "evidence": "public cycle absent",
+      "name": "05_integration_audit",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "expected": "Supervisor.arbitrate",
+        "observed": [
+          "reproduction/runtime/active_runtime_assurance_v2/supervisor.py:Supervisor.arbitrate"
+        ],
+        "status": "PASS_MODULE_SCOPE"
+      },
+      "name": "06_selection_owner",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "expected": "PlantCommitAdapter.commit",
+        "observed": [
+          "reproduction/runtime/active_runtime_assurance_v2/plant_commit.py:PlantCommitAdapter.commit"
+        ],
+        "status": "PASS_MODULE_SCOPE"
+      },
+      "name": "07_plant_owner",
+      "passed": true
+    },
+    {
+      "evidence": "required order present",
+      "name": "08_call_order_artifact",
+      "passed": true
+    },
+    {
+      "evidence": 43,
+      "name": "09_transition_43",
+      "passed": true
+    },
+    {
+      "evidence": 35,
+      "name": "10_critical_dynamic_declared",
+      "passed": true
+    },
+    {
+      "evidence": "source scan",
+      "name": "11_c0_no_clip",
+      "passed": true
+    },
+    {
+      "evidence": "PR108 locked",
+      "name": "12_l2_geometry",
+      "passed": true
+    },
+    {
+      "evidence": "L3 rows",
+      "name": "13_l3_semantics",
+      "passed": true
+    },
+    {
+      "evidence": "no direct alternative plant edge",
+      "name": "14_no_synthetic",
+      "passed": true
+    },
+    {
+      "evidence": "fixture boundary",
+      "name": "15_deadline_fixture",
+      "passed": true
+    },
+    {
+      "evidence": "PR112 locked",
+      "name": "16_token_artifact",
+      "passed": true
+    },
+    {
+      "evidence": "PR113 locked",
+      "name": "17_terminal_artifact",
+      "passed": true
+    },
+    {
+      "evidence": "boundary role",
+      "name": "18_boundary_no_plant",
+      "passed": true
+    },
+    {
+      "evidence": "typed UNKNOWN",
+      "name": "19_unknown_separation",
+      "passed": true
+    },
+    {
+      "evidence": "oracle isolated",
+      "name": "20_trace_oracle",
+      "passed": true
+    },
+    {
+      "evidence": 76,
+      "name": "21_scenario_manifest",
+      "passed": true
+    },
+    {
+      "evidence": 76,
+      "name": "22_mandatory_scenarios",
+      "passed": true
+    },
+    {
+      "evidence": "blocked, not fabricated",
+      "name": "23_e2e_6_not_faked",
+      "passed": true
+    },
+    {
+      "evidence": 1,
+      "name": "24_model_counterexample_preserved",
+      "passed": true
+    },
+    {
+      "evidence": 0,
+      "name": "25_real_active_zero",
+      "passed": true
+    },
+    {
+      "evidence": 0,
+      "name": "26_gpu_zero",
+      "passed": true
+    },
+    {
+      "evidence": 0,
+      "name": "27_oracle_zero",
+      "passed": true
+    },
+    {
+      "evidence": 0,
+      "name": "28_official100_zero",
+      "passed": true
+    },
+    {
+      "evidence": 0,
+      "name": "29_protocol_deviation_zero",
+      "passed": true
+    },
+    {
+      "evidence": "BLOCKED_ACTIVE_CONFORMANCE_BY_INTEGRATION_ORCHESTRATION_GAP",
+      "name": "30_blocker_preserved",
+      "passed": true
+    }
+  ],
+  "failed_count": 0,
+  "gpu_execution_count": 0,
+  "official100_count": 0,
+  "passed_count": 30,
+  "real_active_rollout_count": 0,
+  "schema": "ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_V2_VALIDATION",
+  "scientific_oracle_count": 0,
+  "verdict": "BLOCKED_ACTIVE_CONFORMANCE_BY_INTEGRATION_ORCHESTRATION_GAP"
+}

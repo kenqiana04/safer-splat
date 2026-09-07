@@ -1,0 +1,68 @@
+{
+  "check_count": 9,
+  "checks": [
+    {
+      "evidence": [
+        "commit_active_decision",
+        "commit_bypass",
+        "finalize_trace",
+        "startup"
+      ],
+      "id": "MC-01",
+      "name": "public_full_cycle_entrypoint",
+      "passed": false
+    },
+    {
+      "evidence": "(self, snapshot: 'RuntimeStateSnapshot', certified_candidate: 'Candidate | None', l3_result: 'L3Result | None', retained_backup_action: 'SelectedAction | None', backup_valid: 'bool', terminal_result: 'TerminalResult | None', deadline: 'DeadlineObservation') -> 'SupervisorDecision'",
+      "id": "MC-02",
+      "name": "supervisor_selection_owner",
+      "passed": true
+    },
+    {
+      "evidence": "PlantCommitAdapter.commit",
+      "id": "MC-03",
+      "name": "plant_owner",
+      "passed": true
+    },
+    {
+      "evidence": "17 core runtime module import scan",
+      "id": "MC-04",
+      "name": "no_oracle_edge",
+      "passed": true
+    },
+    {
+      "evidence": "Supervisor ARB_BOUNDARY has no selected action",
+      "id": "MC-05",
+      "name": "boundary_cannot_plant",
+      "passed": true
+    },
+    {
+      "evidence": "AuthorityRegistry",
+      "id": "MC-06",
+      "name": "no_synthetic_alternative",
+      "passed": true
+    },
+    {
+      "evidence": "BackupTokenStore",
+      "id": "MC-07",
+      "name": "backup_token_lifecycle",
+      "passed": true
+    },
+    {
+      "evidence": "TerminalRuntime.evaluate",
+      "id": "MC-08",
+      "name": "terminal_membership_certificate_separation",
+      "passed": true
+    },
+    {
+      "evidence": "ActiveRunner.startup",
+      "id": "MC-09",
+      "name": "deadline_profile_gate",
+      "passed": true
+    }
+  ],
+  "counterexample_count": 1,
+  "schema": "ACTIVE_CONTRACT_MODEL_CHECK_RESULT_V2",
+  "uses_actual_runtime_objects": true,
+  "verdict": "BLOCKED_ACTIVE_CONFORMANCE_BY_INTEGRATION_ORCHESTRATION_GAP"
+}

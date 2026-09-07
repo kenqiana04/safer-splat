@@ -1,0 +1,20 @@
+{
+  "blocker": "PR116 additive modules expose no public full-cycle composition root",
+  "must_not_do": [
+    "ACTIVE_RUNTIME_ON real rollout",
+    "GPU",
+    "smoke",
+    "oracle",
+    "official100",
+    "fake task-local orchestration"
+  ],
+  "must_preserve": [
+    "PR119 exact BYPASS evidence",
+    "all runtime/protected source blobs",
+    "CE-001",
+    "no runtime correction in this task"
+  ],
+  "required_next_task": "DESIGN_ACTIVE_RUNTIME_PUBLIC_CYCLE_COMPOSITION_V2",
+  "schema": "ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_V2_HANDOFF",
+  "status": "BLOCKED_ACTIVE_CONFORMANCE_BY_INTEGRATION_ORCHESTRATION_GAP"
+}
