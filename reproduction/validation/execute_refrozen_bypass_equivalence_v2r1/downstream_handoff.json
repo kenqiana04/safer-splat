@@ -1,0 +1,12 @@
+{
+  "schema": "REFROZEN_BYPASS_EQUIVALENCE_V2R1_DOWNSTREAM_HANDOFF",
+  "source_status": "PASS_REFROZEN_BYPASS_EQUIVALENCE_V2R1",
+  "source_decision": "FREEZE_BYPASS_EQUIVALENCE_AND_ADVANCE_VALIDATION_LADDER",
+  "evidence_summary": "BYPASS_EQUIVALENCE_V2R1_SUMMARY.json",
+  "execution_ledger": "REAL_ARM_EXECUTION_LEDGER_V2R1.jsonl",
+  "validation": "PASS_REFROZEN_BYPASS_EQUIVALENCE_V2R1_VALIDATION",
+  "scientific_oracle_used": false,
+  "active_runtime_on_used": false,
+  "authorization_granted_for_next_task": false,
+  "only_next_task": "VALIDATE_ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_V2"
+}

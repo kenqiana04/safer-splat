@@ -1,0 +1,34 @@
+{
+  "schema": "PRE_EXECUTION_SOURCE_FREEZE_V2R1",
+  "state": "FROZEN_BEFORE_FIRST_REAL_ARM",
+  "upstream_repository_head": "a537ff653ac896aa1ab567b5197136efa1a937b4",
+  "source_correction_quota_after_first_real_arm": 0,
+  "task_local_files_sha256": {
+    "BYPASS_EQUIVALENCE_V2R1_INPUT_LOCK.json": "d9309a93790567e972d7c27a01577838a02aab2e549558d97e022e48a4adad8d",
+    "compare_v2r1.py": "b6c25abad80d1f7d29eab9ca7a1881470e3566418fe60bd5c1428af342a55456",
+    "execute_v2r1.py": "6064a5f4b690e6d567a4744a6f3bb9a5cf63d2b67e317b9be9bbae401f4bb924",
+    "validate_refrozen_bypass_equivalence_v2r1.py": "51c15e61ed5d031076b8570b44632453980428b20b2781f436cbf4ff605bc596",
+    "REAL_ARM_EXECUTION_LEDGER_SCHEMA_V2R1.json": "877a2dd5485d4dc05e488c377b3730549975b767b9c853461037e91e76577fc4"
+  },
+  "upstream_raw_git_blob_sha256": {
+    "BYPASS_EQUIVALENCE_V2R1_PROTOCOL_LOCK.json": "ba2079184d5f97b0c7ce58b37c5e31d96da4aa8d507172690424360cd11376f6",
+    "BYPASS_EQUIVALENCE_PROTOCOL_V2R1.json": "f0206a54551d9fc93ef6a5e5c6a6dbf71c043c7882d0c34030180ca215161c52",
+    "BYPASS_BEHAVIORAL_COMPARISON_SCHEMA_V2R1.json": "98541b8782515b343df1f6ee32959d6f0e8452f6ad261a721d98b9785f9bc5d6",
+    "canonical_trial_identity.py": "de8d2e291541ebc16b39a5f81367faa8b5796657168764a9018a0850620aa7a1",
+    "reference_trial_adapter.py": "fe563494472dae1a58d75215eb083c50a48ab39fbbfcc5de99e6708f8ea57ca0",
+    "run_reference_arm.py": "d72e0c4828d3172ddf4865de02b763cae674f75738bd3e4f5250364dc1ab0bd1",
+    "run_bypass_arm.py": "1678f30e6f77104dc47ced78a1eecbf234225041763cfe61c428a1f802a2425f"
+  },
+  "upstream_git_blobs": {
+    "protocol_lock": "4178424fb14905c2a2af65108541ab08559f7000",
+    "protocol_json": "3a4adec6d06b43ec53ca60e3bb9a71a0a10c2e40",
+    "behavioral_comparison_schema": "c502e9ef67db851a5fe0618649ebd13f83855874",
+    "canonical_identity_helper": "e5d39dd3137ddae1b31e48fe5147357be504254b",
+    "reference_adapter": "be7af6a0fecae721484ca873f82275b33c7ddf86",
+    "reference_arm": "a91dbacc1d322c7639b706fa65fe45f0369888ce",
+    "bypass_arm": "c149f8d65e3180fe02737a9110acd3a3a8672efa",
+    "trace_writer": "f7d1c768a28d36ab1ef88614bd01c8722e9ea292",
+    "plant_commit": "f9116db0690983252ea0f60d286399b71d644134"
+  },
+  "source_edits_planned_after_first_real_arm": false
+}

@@ -1,0 +1,64 @@
+{
+  "active_intervention_call_count": 0,
+  "arm": "REFERENCE_CONTROL_PLANT",
+  "arm_identity": "REFERENCE",
+  "attempted_step_count": 43,
+  "canonical_trial_id": "STONEHENGE_TRIAL_030",
+  "committed_step_count": 43,
+  "final_state": [
+    -0.1679067611694336,
+    0.30682241916656494,
+    0.048455268144607544,
+    0.01567164622247219,
+    -0.007683430332690477,
+    0.0009553633281029761
+  ],
+  "final_state_bits": [
+    "be2befc0",
+    "3e9d17d4",
+    "3d467908",
+    "3c8061d3",
+    "bbfbc549",
+    "3a7a7159"
+  ],
+  "goal": [
+    0.048210643231868744,
+    -0.4004403352737427,
+    0.048107486218214035,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "goal_bits": [
+    "3d457886",
+    "becd0684",
+    "3d450c5b",
+    "00000000",
+    "00000000",
+    "00000000"
+  ],
+  "initial_state": [
+    -0.20821064710617065,
+    0.3404403328895569,
+    0.051892511546611786,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "initial_state_bits": [
+    "be55352c",
+    "3eae4e32",
+    "3d548d3e",
+    "00000000",
+    "00000000",
+    "00000000"
+  ],
+  "plant_commit_count": 43,
+  "schema": "BYPASS_QA_TRIAL_SUMMARY_V2",
+  "solver_failure_step": null,
+  "termination_reason": "NOT_MOVING",
+  "termination_step": 42,
+  "token_mutation_count": 0,
+  "trace_lock": null,
+  "trial_id": 30
+}

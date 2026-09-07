@@ -1,0 +1,21 @@
+{
+  "schema": "BYPASS_EQUIVALENCE_V2R1_REVIEW",
+  "sentinel_result": "PASS_V2R1_SENTINEL_50_EXACT_BYPASS_EQUIVALENCE",
+  "completed_pairs": 5,
+  "execution_count": 10,
+  "infra_only_invocation_count": 1,
+  "compared_steps": 732,
+  "action_equivalence": "BIT_EXACT",
+  "supplied_selected_executed_equivalence": "EXACT_VECTOR_AND_ID",
+  "state_equivalence": "BIT_EXACT",
+  "solver_branch_equivalence": "TYPED_EXACT",
+  "termination_equivalence": "EXACT_REASON_AND_STEP",
+  "trace_completeness": "5_OF_5_FINALIZED_LOCKS",
+  "intervention_count": 0,
+  "token_mutation_count": 0,
+  "protocol_deviation_count": 0,
+  "hard_cap_compliance": "10_OF_10",
+  "scientific_boundary": "NONINTERFERENCE_QA_ONLY; no safety, efficacy, performance, real-time, or deployment claim",
+  "next_task": "VALIDATE_ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_V2",
+  "verdict": "PASS_REFROZEN_BYPASS_EQUIVALENCE_V2R1"
+}

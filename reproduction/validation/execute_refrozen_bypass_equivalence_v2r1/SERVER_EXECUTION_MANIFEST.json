@@ -1,0 +1,19 @@
+{
+  "schema": "REFROZEN_BYPASS_EQUIVALENCE_V2R1_SERVER_EXECUTION_MANIFEST",
+  "server": "zlab-Super-Server",
+  "task_root": "/disk1/zlab/maintenance_records/execute_refrozen_bypass_equivalence_v2r1",
+  "execution_source_head": "a537ff653ac896aa1ab567b5197136efa1a937b4",
+  "physical_gpu_index": 1,
+  "pipeline_exit_code": 0,
+  "gpu_task_processes_after_completion": 0,
+  "artifacts": {
+    "REAL_ARM_EXECUTION_LEDGER_V2R1.jsonl": "0cdbb457484661ce2e514d839593ad92f9759440630c9d75d8eb2383cfb44614",
+    "BYPASS_EQUIVALENCE_V2R1_SUMMARY.json": "a192885ff497c54cb6a4da1bbd81445e60b3744ac9310a639ca7ae3b00a4178e",
+    "mismatch_register.json": "1dddeaf2e3312b9129814ef801620fb2c52b07618c71201521003a77accb3acf",
+    "pairs/pair_50_comparison.json": "e6678b96c0e4ba007b157133b54af9e048f35438a38a370fe3bd8d0e0f066c9c",
+    "pairs/pair_10_comparison.json": "972b1f100c52d4914c92b43ddaec34e7c37d235a99917b81e59e84cc85d99e76",
+    "pairs/pair_30_comparison.json": "fa40027752f5618b6448a3dc7d3fa844b99dfa42bea078ec98c57153b2c27f06",
+    "pairs/pair_70_comparison.json": "416a6c3c41df733fe59d4b06555993bd37750cfe7f042158a31654ac5c366ff0",
+    "pairs/pair_90_comparison.json": "22ee1029ccbacdcbcee1d1d6411bc7ddb050d5f0f7de0d7fade29d53e77e6324"
+  }
+}

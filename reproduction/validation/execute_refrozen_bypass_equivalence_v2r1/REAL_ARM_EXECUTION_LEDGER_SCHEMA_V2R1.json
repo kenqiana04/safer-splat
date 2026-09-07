@@ -1,0 +1,17 @@
+{
+  "schema": "REAL_ARM_EXECUTION_LEDGER_SCHEMA_V2R1",
+  "append_only": true,
+  "event_types": ["LEDGER_INITIALIZED", "REAL_ARM_PLANNED", "REAL_ARM_COMPLETED"],
+  "required_arm_fields": [
+    "execution_ordinal", "native_trial_id", "canonical_trial_id", "arm",
+    "process_id", "start_timestamp", "end_timestamp", "environment_identity",
+    "input_lock_sha256", "execution_lock_sha256", "exit_code", "solver_step_count",
+    "plant_commit_count", "finalized_trace_count", "trace_lock_sha256",
+    "termination_reason", "termination_step", "classification"
+  ],
+  "real_classification": "REAL_ARM_EXECUTION",
+  "infra_only_classification": "INFRA_ONLY_NOT_COUNTED_AS_REAL_ARM_EXECUTION",
+  "hard_real_arm_execution_cap": 10,
+  "source_correction_quota_after_first_real_arm": 0
+}
+

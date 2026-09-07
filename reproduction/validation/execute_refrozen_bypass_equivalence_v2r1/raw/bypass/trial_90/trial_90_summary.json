@@ -1,0 +1,73 @@
+{
+  "active_intervention_call_count": 0,
+  "arm": "ACTIVE_HARNESS_BYPASS",
+  "arm_identity": "BYPASS",
+  "attempted_step_count": 242,
+  "canonical_trial_id": "STONEHENGE_TRIAL_090",
+  "committed_step_count": 242,
+  "final_state": [
+    -0.14005635678768158,
+    0.0649837777018547,
+    0.044887736439704895,
+    -0.015973225235939026,
+    0.00738493911921978,
+    -0.0007169231539592147
+  ],
+  "final_state_bits": [
+    "be0f6aef",
+    "3d851637",
+    "3d37dc34",
+    "bc82da48",
+    "3bf1fd5c",
+    "ba3befe6"
+  ],
+  "goal": [
+    -0.4097713828086853,
+    0.18193119764328003,
+    0.04459359124302864,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "goal_bits": [
+    "bed1cd8e",
+    "3e3a4c2c",
+    "3d36a7c5",
+    "00000000",
+    "00000000",
+    "00000000"
+  ],
+  "initial_state": [
+    0.249771386384964,
+    -0.24193120002746582,
+    0.05540640652179718,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "initial_state_bits": [
+    "3e7fc412",
+    "be77bcd0",
+    "3d62f1d4",
+    "00000000",
+    "00000000",
+    "00000000"
+  ],
+  "plant_commit_count": 242,
+  "schema": "BYPASS_QA_TRIAL_SUMMARY_V2",
+  "solver_failure_step": null,
+  "termination_reason": "NOT_MOVING",
+  "termination_step": 241,
+  "token_mutation_count": 0,
+  "trace_lock": {
+    "identity": {
+      "value": "trace:sha256:8d7135243890351c071824e83b9b2460934e415760395d07671c86b84f067f4f"
+    },
+    "locked_before_evaluation": true,
+    "record_count": 242,
+    "schema_identity": "EVALUATION_TRACE_SCHEMA_V2",
+    "trace_sha256": "8d7135243890351c071824e83b9b2460934e415760395d07671c86b84f067f4f",
+    "trial_id": "STONEHENGE_TRIAL_090"
+  },
+  "trial_id": 90
+}
