@@ -1,0 +1,17 @@
+{
+  "schema": "ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_V2_FINAL_RECHECK",
+  "harness_freeze_commit": "76f9075",
+  "upstream_pr119_head": "b4ff579cf6a2bcffd0661cd39eb925aa4f3a5d27",
+  "input_lock_sha256": "2da531558e9ff622584a2e9c1366fe11bdcc64bc19703e68fa66dbe483361f30",
+  "execution_lock_sha256": "d482f6ec0eeec04fd538878550555e8122788180b5d02a169567624d028cf3ff",
+  "cpu_targeted_tests": "14/14 PASS",
+  "validator": "30/30 checks, BLOCKED_ACTIVE_CONFORMANCE_BY_INTEGRATION_ORCHESTRATION_GAP",
+  "model_counterexamples": 1,
+  "production_runtime_source_diff": 0,
+  "real_active_rollout_count": 0,
+  "gpu_execution_count": 0,
+  "scientific_oracle_count": 0,
+  "official100_count": 0,
+  "decision": "BLOCKED_ACTIVE_CONFORMANCE_BY_INTEGRATION_ORCHESTRATION_GAP",
+  "next_task": "DESIGN_ACTIVE_RUNTIME_PUBLIC_CYCLE_COMPOSITION_V2"
+}
