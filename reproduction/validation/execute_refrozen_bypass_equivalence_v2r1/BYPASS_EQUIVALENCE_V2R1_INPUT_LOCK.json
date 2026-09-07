@@ -1,0 +1,41 @@
+{
+  "schema": "BYPASS_EQUIVALENCE_V2R1_INPUT_LOCK",
+  "state": "FROZEN_COMPLETE",
+  "frozen_before_first_real_arm": true,
+  "protocol_lock_sha256": "ba2079184d5f97b0c7ce58b37c5e31d96da4aa8d507172690424360cd11376f6",
+  "protocol_json_sha256": "f0206a54551d9fc93ef6a5e5c6a6dbf71c043c7882d0c34030180ca215161c52",
+  "repository_exact_head": "a537ff653ac896aa1ab567b5197136efa1a937b4",
+  "reference_source_lock": "PASS_REFERENCE_CONTROL_PLANT_PATH_SOURCE_LOCK",
+  "canonical_identity_scheme": "STONEHENGE_QA_TRIAL_IDENTITY_V2",
+  "trial_ids": [10, 30, 50, 70, 90],
+  "execution_order": [50, 10, 30, 70, 90],
+  "environment_identity": {
+    "python": "3.10.20",
+    "torch": "2.1.2+cu118",
+    "torch_cuda": "11.8",
+    "numpy": "1.26.4",
+    "clarabel": "0.10.0",
+    "physical_gpu_index": 1,
+    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "gpu_uuid": "GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d"
+  },
+  "map_artifact_identities": [
+    {"relative_path": "config.yml", "size": 6933, "sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e"},
+    {"relative_path": "dataparser_transforms.json", "size": 312, "sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e"},
+    {"relative_path": "nerfstudio_models/step-000029999.ckpt", "size": 92344786, "sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d"}
+  ],
+  "required_source_blobs": {
+    "reference_adapter": "be7af6a0fecae721484ca873f82275b33c7ddf86",
+    "reference_arm": "a91dbacc1d322c7639b706fa65fe45f0369888ce",
+    "bypass_arm": "c149f8d65e3180fe02737a9110acd3a3a8672efa",
+    "canonical_identity_helper": "e5d39dd3137ddae1b31e48fe5147357be504254b",
+    "trace_writer": "f7d1c768a28d36ab1ef88614bd01c8722e9ea292",
+    "plant_commit": "f9116db0690983252ea0f60d286399b71d644134",
+    "cbf_qp": "7c6e1300b125cc0a2a950ac2835a1fbe3d0de113",
+    "dynamics": "e58ed65e60b17840201e571d7f23ce3816b83863"
+  },
+  "historical_pr117_trace_reuse_allowed": false,
+  "active_runtime_on_allowed": false,
+  "scientific_oracle_allowed": false,
+  "official100_allowed": false
+}

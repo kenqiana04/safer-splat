@@ -1,0 +1,20 @@
+{
+  "schema": "Q0R1_REFROZEN_BYPASS_EQUIVALENCE_PREFLIGHT",
+  "checks": [
+    {"id": "Q0R1-01", "name": "PR118 exact head", "passed": true, "evidence": "Open Draft repair-and-refreeze-bypass-qa-trace-identity-v2@a537ff653ac896aa1ab567b5197136efa1a937b4"},
+    {"id": "Q0R1-02", "name": "protocol SHA exact", "passed": true, "evidence": "f0206a54551d9fc93ef6a5e5c6a6dbf71c043c7882d0c34030180ca215161c52"},
+    {"id": "Q0R1-03", "name": "input lock complete", "passed": true, "evidence": "d9309a93790567e972d7c27a01577838a02aab2e549558d97e022e48a4adad8d"},
+    {"id": "Q0R1-04", "name": "execution lock complete", "passed": true, "evidence": "created before first real arm"},
+    {"id": "Q0R1-05", "name": "reference source lock PASS", "passed": true, "evidence": "PASS_REFERENCE_CONTROL_PLANT_PATH_SOURCE_LOCK"},
+    {"id": "Q0R1-06", "name": "canonical identity tests PASS", "passed": true, "evidence": "11 repair tests include canonical and negative identity cases"},
+    {"id": "Q0R1-07", "name": "PR116 runtime tests PASS", "passed": true, "evidence": "78/78"},
+    {"id": "Q0R1-08", "name": "repair tests PASS", "passed": true, "evidence": "11/11"},
+    {"id": "Q0R1-09", "name": "protected/runtime diff zero", "passed": true, "evidence": "only task-local execution directory added"},
+    {"id": "Q0R1-10", "name": "ACTIVE disabled", "passed": true, "evidence": 0},
+    {"id": "Q0R1-11", "name": "oracle disabled", "passed": true, "evidence": 0},
+    {"id": "Q0R1-12", "name": "execution counter zero", "passed": true, "evidence": 0}
+  ],
+  "passed_count": 12,
+  "failed_count": 0,
+  "verdict": "PASS_Q0R1_12_OF_12"
+}

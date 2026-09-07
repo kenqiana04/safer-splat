@@ -1,0 +1,27 @@
+{
+  "schema": "BYPASS_EQUIVALENCE_V2R1_EXECUTION_LOCK",
+  "state": "FROZEN_BEFORE_FIRST_REAL_ARM",
+  "created_before_first_real_arm": true,
+  "protocol_lock_sha256": "ba2079184d5f97b0c7ce58b37c5e31d96da4aa8d507172690424360cd11376f6",
+  "input_lock_sha256": "d9309a93790567e972d7c27a01577838a02aab2e549558d97e022e48a4adad8d",
+  "execution_repository_head": "a537ff653ac896aa1ab567b5197136efa1a937b4",
+  "execution_repository_head_semantics": "FROZEN_PR118_CONTROL_PLANT_RUNTIME_SOURCE_HEAD; task orchestration is separately content-addressed by PRE_EXECUTION_SOURCE_FREEZE",
+  "execution_counter_start": 0,
+  "hard_real_arm_execution_cap": 10,
+  "source_correction_quota_after_first_real_arm": 0,
+  "first_pair": ["REFERENCE_CONTROL_PLANT:50", "ACTIVE_HARNESS_BYPASS:50"],
+  "execution_order": [50, 10, 30, 70, 90],
+  "arm_order": ["REFERENCE_CONTROL_PLANT", "ACTIVE_HARNESS_BYPASS", "COMPARE"],
+  "fresh_process_per_arm": true,
+  "fresh_pair": true,
+  "equality": "FLOAT32_BIT_EXACT_AND_TYPED_BRANCH_TERMINATION_EXACT",
+  "tolerance_substitution_allowed": false,
+  "bypass_finalized_trace_lock_required": true,
+  "source_freeze_sha256": "0760bdde263188d80b75379dd7eb4f48feb3124b6d51b90a5c88e16d61962f9c",
+  "old_pr117_trace_reuse_allowed": false,
+  "active_runtime_on_allowed": false,
+  "scientific_oracle_allowed": false,
+  "official100_allowed": false,
+  "immutable_after_activation": true
+}
+
