@@ -13,6 +13,10 @@ import sys
 from typing import Any
 
 from compare_bypass_equivalence import compare_trial, write_csv, write_json
+from reproduction.validation.bypass_qa_trace_identity_repair_v2.canonical_trial_identity import (
+    make_arm_identity,
+    make_canonical_trial_identity,
+)
 
 
 ORDER = (("Q1", 50), ("Q2", 10), ("Q2", 30), ("Q2", 70), ("Q2", 90))
@@ -24,7 +28,7 @@ def now() -> str:
 
 
 def persist_manifest(path: Path, records: list[dict[str, Any]]) -> None:
-    fields = ["execution_index", "phase", "trial_id", "arm", "repo_sha", "environment_id", "device_id", "start_hash", "goal_hash", "output_path", "process_exit_code", "started_at", "completed_at", "comparison_status"]
+    fields = ["execution_index", "phase", "trial_id", "canonical_trial_id", "arm", "arm_identity", "repo_sha", "environment_id", "device_id", "start_hash", "goal_hash", "output_path", "process_exit_code", "started_at", "completed_at", "comparison_status"]
     with path.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields)
         writer.writeheader(); writer.writerows(records)
@@ -35,6 +39,7 @@ def load(path: Path) -> dict[str, Any]:
 
 
 def run_arm(python: Path, task_code: Path, checkout: Path, root: Path, phase: str, trial_id: int, arm: str, execution_index: int) -> tuple[dict[str, Any], int]:
+    qa_identity = make_canonical_trial_identity(trial_id)
     arm_dir_name = "reference" if arm == "REFERENCE_CONTROL_PLANT" else "bypass"
     output_dir = root / "artifacts" / arm_dir_name / f"trial_{trial_id}"
     script = task_code / ("run_reference_arm.py" if arm == "REFERENCE_CONTROL_PLANT" else "run_bypass_arm.py")
@@ -49,7 +54,9 @@ def run_arm(python: Path, task_code: Path, checkout: Path, root: Path, phase: st
     (logs / f"{label}.stdout.log").write_text(result.stdout, encoding="utf-8", newline="\n")
     (logs / f"{label}.stderr.log").write_text(result.stderr, encoding="utf-8", newline="\n")
     record = {
-        "execution_index": execution_index, "phase": phase, "trial_id": trial_id, "arm": arm,
+        "execution_index": execution_index, "phase": phase, "trial_id": trial_id,
+        "canonical_trial_id": qa_identity.canonical_trial_id,
+        "arm": arm, "arm_identity": make_arm_identity(arm),
         "repo_sha": subprocess.run(["git", "rev-parse", "HEAD"], cwd=checkout, check=True, text=True, capture_output=True).stdout.strip(),
         "environment_id": "UNAVAILABLE_ON_FAILED_ARM", "device_id": "physical:1/visible:0",
         "start_hash": "UNAVAILABLE_ON_FAILED_ARM", "goal_hash": "UNAVAILABLE_ON_FAILED_ARM",

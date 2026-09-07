@@ -1,0 +1,23 @@
+{
+  "schema": "CANONICAL_QA_TRIAL_IDENTITY_V2",
+  "scheme_name": "STONEHENGE_QA_TRIAL_IDENTITY_V2",
+  "native_index_type": "integer",
+  "frozen_native_indices": [10, 30, 50, 70, 90],
+  "canonical_format": "STONEHENGE_TRIAL_{native_trial_index:03d}",
+  "example_native_index": 50,
+  "example_canonical_trial_id": "STONEHENGE_TRIAL_050",
+  "arm_format": {
+    "REFERENCE_CONTROL_PLANT": "REFERENCE",
+    "ACTIVE_HARNESS_BYPASS": "BYPASS"
+  },
+  "arm_encoded_in_trial_id": false,
+  "formatter_authority": "make_canonical_trial_identity(native_trial_index)",
+  "snapshot_binding": "CanonicalQATrialIdentity.canonical_trial_id",
+  "trace_writer_binding": "CanonicalQATrialIdentity.canonical_trial_id",
+  "arm_manifest_binding": "canonical_trial_id plus separate arm_identity",
+  "trace_metadata_binding": "TraceWriter.finalize().trial_id",
+  "comparison_join_key": ["canonical_trial_id", "cycle_index"],
+  "serialization": "UTF-8 JSON string and base-10 integer cycle index",
+  "hash_policy": "trial ID is deterministic text; state/action/trace identities retain frozen runtime canonical SHA-256 policies",
+  "coercion_allowed": false
+}

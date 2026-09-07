@@ -1,0 +1,17 @@
+{
+  "schema": "BYPASS_EQUIVALENCE_V2R1_DOWNSTREAM_HANDOFF",
+  "source_task": "REPAIR_AND_REFREEZE_BYPASS_QA_TRACE_IDENTITY_V2",
+  "next_task": "EXECUTE_REFROZEN_BYPASS_EQUIVALENCE_V2R1",
+  "protocol_lock": "BYPASS_EQUIVALENCE_V2R1_PROTOCOL_LOCK.json",
+  "input_lock_template": "BYPASS_EQUIVALENCE_V2R1_INPUT_LOCK_TEMPLATE.json",
+  "execution_lock_template": "BYPASS_EQUIVALENCE_V2R1_EXECUTION_LOCK_TEMPLATE.json",
+  "required_first_pair": ["REF50_new", "BYPASS50_new"],
+  "required_execution_order": [50, 10, 30, 70, 90],
+  "hard_real_arm_execution_cap": 10,
+  "real_execution_correction_quota": 0,
+  "old_pr117_trace_reuse_allowed": false,
+  "sentinel_failure_policy": "STOP_NO_RETRY_NO_REMAINING_IDS",
+  "equality": "FLOAT32_BIT_EXACT_STATE_ACTION_AND_EXACT_TYPED_BRANCH_TERMINATION",
+  "trace_requirement": "BYPASS arm must finalize a complete immutable trace lock",
+  "execution_authority_granted_by_this_handoff": false
+}

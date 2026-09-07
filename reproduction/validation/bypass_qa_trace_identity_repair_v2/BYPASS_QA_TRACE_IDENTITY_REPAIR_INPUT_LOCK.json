@@ -1,0 +1,54 @@
+{
+  "schema": "BYPASS_QA_TRACE_IDENTITY_REPAIR_INPUT_LOCK",
+  "repository": "kenqiana04/safer-splat",
+  "direct_upstream": {
+    "pr": 117,
+    "state": "OPEN",
+    "draft": true,
+    "title": "[Draft] Verify active harness BYPASS equivalence V2",
+    "branch": "verify-active-harness-bypass-equivalence-v2",
+    "head": "06833d2bcf9649c0912133b8a28b1a0c4ec6f4f8",
+    "base": "implement-active-runtime-assurance-v2",
+    "base_sha": "a8d7a3c9522583ad61dc9bc87585e41bb71a0f77"
+  },
+  "frozen_pr117_facts": {
+    "FINAL_STATUS": "BLOCKED_BYPASS_EQUIVALENCE_BY_TRACE_SIDE_EFFECT_ON_EXECUTION",
+    "FINAL_DECISION": "FREEZE_PARTIAL_Q1_EVIDENCE_AND_DO_NOT_ADVANCE_VALIDATION_LADDER",
+    "trial_ids": [10, 30, 50, 70, 90],
+    "sentinel_order": [50, 10, 30, 70, 90],
+    "q0": "PASS_11_OF_11",
+    "reference_source_lock": "PASS_REFERENCE_CONTROL_PLANT_PATH_SOURCE_LOCK",
+    "completed_pairs": 0,
+    "planned_pairs": 5,
+    "compared_finalized_steps": 0,
+    "equivalence": "NOT_ESTABLISHED",
+    "first_mismatch": "M_BYPASS_HARNESS_INTERVENTION",
+    "consumed_runtime_correction_count": 1,
+    "current_blocker": "M_TRACE_SIDE_EFFECT_ON_EXECUTION",
+    "exact_failure": "TRIAL_IDENTITY_MISMATCH",
+    "scientific_oracle_execution_count": 0,
+    "active_runtime_on_execution_count": 0,
+    "official100_execution_count": 0,
+    "only_next_task": "REPAIR_AND_REFREEZE_BYPASS_QA_TRACE_IDENTITY_V2"
+  },
+  "upstream_old_task_tree": "bb0003ce7d26f9ca2328cca43277114063830551",
+  "immutable_historical_evidence": [
+    {"path": "BYPASS_EQUIVALENCE_PROTOCOL_V2.json", "git_blob": "e2cab3df7b9f2df175f787cb6076745bef36ec47", "raw_git_blob_sha256": "bdb7c2ae721b77c1f7a5e99d69dc52f1577e18e46ff1abea98130965dfb207f5"},
+    {"path": "BYPASS_EQUIVALENCE_INPUT_LOCK.json", "git_blob": "79b499ba55ea92c800a5b06adc1fed642b1ea9f2", "raw_git_blob_sha256": "ad8c82095f3076837093b7cd9e6affff6d21763a43de99e29d1d6412049da0bc"},
+    {"path": "BYPASS_EQUIVALENCE_EXECUTION_LOCK.json", "git_blob": "e23baabf8b770fe0071495cda35460336620f031", "raw_git_blob_sha256": "724e3193c6f98cbfedc9aeee625b6519b8c4ce5de773bec9b5f2faaa4e905837"},
+    {"path": "BYPASS_EQUIVALENCE_MISMATCH_REGISTER.json", "git_blob": "d2a0ab00f1eb64a0aa4b5209a588b1616fa2920c", "raw_git_blob_sha256": "fde949c81e2965678a515fd928c7c4d514a5bac72707636a9257c7ef99903ff0"},
+    {"path": "EXECUTION_COUNT_LEDGER.json", "git_blob": "5bfee9297c07786720cc5b259417f950a75dff71", "raw_git_blob_sha256": "cde8729a26c70187989513412c96e9608f36ca4e0cc40d0bfcda805573bd5536"},
+    {"path": "FINAL_DECISION.json", "git_blob": "4511fe5673d84edcb69009d0e4ceeb43a3362556", "raw_git_blob_sha256": "e3608ed2be3a6633802d1a888cef1c751ef89790315afa60c4ab8fc573e98caf"},
+    {"path": "report/REPORT_VERIFY_ACTIVE_HARNESS_BYPASS_EQUIVALENCE_V2.md", "git_blob": "139554f2d6e31c1ec0bd03389e52a3ef859b3aa6", "raw_git_blob_sha256": "50f54d8c213c00d0cd75a82d51484504e8617b0ce79eb65fc9bfbee203b7fa95"}
+  ],
+  "allowed_pr117_task_local_plumbing_files": [
+    "compare_bypass_equivalence.py",
+    "reference_trial_adapter.py",
+    "run_qa_pipeline.py"
+  ],
+  "runtime_tree_at_pr117": "176757dc1f730a2dafc883bf33bab817cdb5974e",
+  "runtime_mutation_authority": false,
+  "real_arm_execution_authority": false,
+  "gpu_authority": false,
+  "scientific_result_mutation_authority": false
+}

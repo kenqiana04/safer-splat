@@ -1,0 +1,18 @@
+{
+  "verdict": "PASS_BYPASS_QA_TRACE_IDENTITY_REPAIRED_AND_REFROZEN",
+  "root_cause": "PR117 adapter independently formatted writer as stonehenge-trial-50 and snapshot as stonehenge-50; strict append detected it after plant commit.",
+  "repaired_files": ["canonical identity helper", "QA adapter", "manifest runner", "comparator"],
+  "task_local_plumbing_only": true,
+  "canonical_scheme": "native 50 -> STONEHENGE_TRIAL_050 for both arms",
+  "arm_trial_separation": "REFERENCE/BYPASS is separate metadata",
+  "mismatch_guard": "unchanged and negative-tested",
+  "one_step_synthetic": "PASS commit=1 record=1 immutable lock",
+  "dual_arm_pairing": "PASS 5/5 native IDs",
+  "reference_source_lock": "PASS_REFERENCE_CONTROL_PLANT_PATH_SOURCE_LOCK",
+  "plantcommit_regression": "PASS exact BYPASS; non-BYPASS guard unchanged",
+  "production_runtime_diff": 0,
+  "real_execution_count": 0,
+  "new_hard_cap": 10,
+  "correction_quota": 0,
+  "next_task": "EXECUTE_REFROZEN_BYPASS_EQUIVALENCE_V2R1"
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "TRACE_IDENTITY_REPAIR_INVARIANTS_V2",
+  "invariant_count": 20,
+  "invariants": [
+    {"id": "RTI-01", "requirement": "PR117 old evidence is immutable historical evidence"},
+    {"id": "RTI-02", "requirement": "Exactly one canonical trial identity formatter authority exists"},
+    {"id": "RTI-03", "requirement": "Arm identity is separate from trial identity"},
+    {"id": "RTI-04", "requirement": "RuntimeStateSnapshot and TraceWriter receive the exact same trial ID"},
+    {"id": "RTI-05", "requirement": "Comparison join key is canonical trial ID plus cycle index"},
+    {"id": "RTI-06", "requirement": "TRIAL_IDENTITY_MISMATCH remains strict"},
+    {"id": "RTI-07", "requirement": "No identity coercion, prefix stripping, or ignored mismatch is allowed"},
+    {"id": "RTI-08", "requirement": "No production/runtime or method contract changes are allowed"},
+    {"id": "RTI-09", "requirement": "No actuator bound or tolerance change is allowed"},
+    {"id": "RTI-10", "requirement": "PR117 BYPASS-only PlantCommit correction is preserved without expansion"},
+    {"id": "RTI-11", "requirement": "CPU synthetic one-step BYPASS must append and finalize exactly one record"},
+    {"id": "RTI-12", "requirement": "Finalized trace remains immutable"},
+    {"id": "RTI-13", "requirement": "Reference control, plant, and termination source lock remains unchanged"},
+    {"id": "RTI-14", "requirement": "This repair task real arm execution count is zero"},
+    {"id": "RTI-15", "requirement": "V2R1 execution budget is independent of the PR117 historical cap"},
+    {"id": "RTI-16", "requirement": "V2R1 hard cap is exactly 10 real arm executions"},
+    {"id": "RTI-17", "requirement": "V2R1 real-execution correction quota is zero"},
+    {"id": "RTI-18", "requirement": "Every V2R1 pair is fresh and no PR117 trace is paired"},
+    {"id": "RTI-19", "requirement": "Float32 bitwise, typed branch, and exact termination criteria are preserved"},
+    {"id": "RTI-20", "requirement": "ACTIVE, scientific oracle, and official100 execution counts are zero"}
+  ]
+}
