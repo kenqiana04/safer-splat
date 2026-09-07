@@ -1,0 +1,36 @@
+{
+  "schema": "BYPASS_QA_ENVIRONMENT_LOCK_V2",
+  "frozen_before_real_execution": true,
+  "source_repository_sha": "a8d7a3c9522583ad61dc9bc87585e41bb71a0f77",
+  "qa_tooling_repository_sha_authority": "BYPASS_EQUIVALENCE_EXECUTION_LOCK.protocol_commit_sha",
+  "conda_environment": "/disk1/zlab/conda_envs/safer_splat_official",
+  "python": "3.10.20",
+  "torch": "2.1.2+cu118",
+  "cuda_runtime": "11.8",
+  "numpy": "1.26.4",
+  "clarabel": "0.10.0",
+  "physical_gpu": 1,
+  "cuda_visible_devices": "1",
+  "visible_device_index": 0,
+  "device_name": "NVIDIA GeForce RTX 4090",
+  "dtype": "torch.float32",
+  "dt": 0.05,
+  "alpha": 5.0,
+  "beta": 1.0,
+  "controller_radius": 0.015,
+  "distance_method": "ball-to-ellipsoid",
+  "n_steps": 500,
+  "trial_ids": [10, 30, 50, 70, 90],
+  "random_seed": 0,
+  "process_environment": {
+    "CUDA_VISIBLE_DEVICES": "1",
+    "PYTHONHASHSEED": "0",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "stonehenge_artifacts": [
+    {"relative_path": "config.yml", "size": 6933, "sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e"},
+    {"relative_path": "dataparser_transforms.json", "size": 312, "sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e"},
+    {"relative_path": "nerfstudio_models/step-000029999.ckpt", "size": 92344786, "sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d"}
+  ]
+}

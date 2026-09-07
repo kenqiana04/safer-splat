@@ -1,0 +1,33 @@
+{
+  "schema": "BYPASS_EQUIVALENCE_FIRST_MISMATCH_DIAGNOSIS_V2",
+  "phase": "Q1",
+  "trial_id": 50,
+  "reference_arm_exit_code": 0,
+  "reference_committed_steps": 40,
+  "reference_termination": "NOT_MOVING",
+  "bypass_arm_exit_code": 1,
+  "bypass_committed_steps": 0,
+  "failure_cycle": 0,
+  "exception_type": "CommitAuthorityViolation",
+  "exception_reason": "ACTUATOR_ADMISSION_REQUIRED",
+  "taxonomy": "M_BYPASS_HARNESS_INTERVENTION",
+  "first_reference_action": [0.09999999403953552, 0.10000000149011612, -0.031203344464302063],
+  "first_reference_action_float32_bits": ["3dcccccc", "3dcccccd", "bcff9e28"],
+  "triggering_component_index": 1,
+  "frozen_upper_bound": 0.1,
+  "ulp_relation": "NEXT_FLOAT32_ABOVE_BINARY32_REPRESENTATION_ON_ONE_COMPONENT",
+  "scientific_interpretation": "NONE_REFERENCE_ACTION_WAS_EXECUTED_BY_FROZEN_BASELINE",
+  "root_cause": "PR116 PlantCommitAdapter applies ACTIVE actuator admission to a BYPASS reference-delegation decision even though the frozen mode contract gives BYPASS no active authority and requires exact reference trace equivalence.",
+  "server_evidence": {
+    "root": "/disk1/zlab/maintenance_records/active_harness_bypass_equivalence_v2/server_execution",
+    "stderr_sha256": "fc111859b6e934cf2b44e8b126891c0df6fb30e353a71b1e9f993f7ed32b3fdb",
+    "reference_trace_sha256": "49321867ec03644e7230d5c168a192360de3c482001a8eaa34650b2c9eb36729",
+    "reference_summary_sha256": "3dbaffcf97572922ef502e8d9336a567c25ec0d85b26764e6e450f56dd44df13",
+    "execution_manifest_sha256": "49f2796492a7543e3eef9c5602bdd543e41c51d0edf2d5a347600c82f7de7b41",
+    "comparison_summary_sha256": "05c79ccdaf11b2095d0c7f0177ee8d1397936331d2de4557541af1187f8ec070"
+  },
+  "failing_artifacts_preserved": true,
+  "q2_started": false,
+  "active_runtime_on_execution_count": 0,
+  "scientific_oracle_execution_count": 0
+}

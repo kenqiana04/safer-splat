@@ -36,5 +36,18 @@ class PlantCommitTests(unittest.TestCase):
         decision=SupervisorDecision(0,self.state.identity,selected,True,"NAV","ARB_NAV")
         with self.assertRaises(CommitAuthorityViolation): self.plant.commit(decision,self.state,other)
 
+    def test_bypass_delegates_exact_reference_action_without_active_admission(self):
+        reference=make_action((0.09999999403953552,0.10000000149011612,-0.031203344464302063),ActionRole.PRIMARY_NAVIGATION,"reference")
+        decision=SupervisorDecision(0,self.state.identity,reference,True,"BYPASS_REFERENCE_ACTION_UNCHANGED","BYPASS")
+        receipt=self.plant.commit(decision,self.state,reference)
+        self.assertTrue(receipt.committed)
+        self.assertEqual(receipt.exact_vector,reference.vector)
+
+    def test_active_rule_still_rejects_same_out_of_box_action(self):
+        candidate=make_action((0.09999999403953552,0.10000000149011612,-0.031203344464302063),ActionRole.PRIMARY_NAVIGATION,"candidate")
+        decision=SupervisorDecision(0,self.state.identity,candidate,True,"NAV","ARB_NAV")
+        with self.assertRaisesRegex(CommitAuthorityViolation,"ACTUATOR_ADMISSION_REQUIRED"):
+            self.plant.commit(decision,self.state,candidate)
+
 
 if __name__ == "__main__": unittest.main()

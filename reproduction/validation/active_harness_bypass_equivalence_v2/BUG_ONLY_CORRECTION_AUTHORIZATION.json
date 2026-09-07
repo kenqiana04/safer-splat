@@ -1,0 +1,29 @@
+{
+  "schema": "BYPASS_EQUIVALENCE_BUG_ONLY_CORRECTION_AUTHORIZATION_V2",
+  "authorized": true,
+  "correction_cap": 1,
+  "mismatch_taxonomy": "M_BYPASS_HARNESS_INTERVENTION",
+  "root_cause_precisely_localized": true,
+  "pr116_implementation_bug": true,
+  "frozen_pr107_pr115_contract_change_required": false,
+  "active_method_semantics_change_allowed": false,
+  "purpose": "RESTORE_PR115_FROZEN_BYPASS_TRANSPARENCY_ONLY",
+  "allowed_runtime_file": "reproduction/runtime/active_runtime_assurance_v2/plant_commit.py",
+  "allowed_test_files": [
+    "reproduction/runtime/active_runtime_assurance_v2/tests/test_plant_commit.py",
+    "reproduction/runtime/active_runtime_assurance_v2/tests/test_active_runner.py"
+  ],
+  "authorized_change": "A SupervisorDecision with rule_id BYPASS delegates the exact frozen reference action directly to the normative plant transition without applying ACTIVE-only actuator admission. All non-BYPASS decisions retain the exact existing admission guard.",
+  "forbidden_changes": [
+    "tolerance relaxation",
+    "actuator bound change",
+    "reference action clipping",
+    "candidate generation",
+    "geometry change",
+    "deadline change",
+    "terminal change",
+    "oracle metric use"
+  ],
+  "rerun_scope": "FRESH_Q1_SENTINEL_PAIR_THEN_FROZEN_Q2_ONLY_IF_Q1_PASS",
+  "failing_artifacts_frozen_before_correction": true
+}

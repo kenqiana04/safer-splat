@@ -1,0 +1,37 @@
+{
+  "schema": "BYPASS_EQUIVALENCE_INPUT_LOCK_V2",
+  "frozen_before_real_execution": true,
+  "upstream": {
+    "pr": 116,
+    "state": "OPEN",
+    "draft": true,
+    "title": "[Draft] Implement active runtime assurance V2",
+    "branch": "implement-active-runtime-assurance-v2",
+    "head_sha": "a8d7a3c9522583ad61dc9bc87585e41bb71a0f77",
+    "base_branch": "design-active-runtime-assurance-implementation-v2",
+    "base_sha": "44111d32031409338058e5da2f7e7a1f8d873323"
+  },
+  "source_git_blobs": {
+    "run.py": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a",
+    "cbf/cbf_utils.py": "7c6e1300b125cc0a2a950ac2835a1fbe3d0de113",
+    "dynamics/systems.py": "e58ed65e60b17840201e571d7f23ce3816b83863",
+    "reproduction/runtime/active_runtime_assurance_v2/active_runner.py": "64b747656b031881123c92587d1beca6e742be5e",
+    "reproduction/runtime/active_runtime_assurance_v2/supervisor.py": "b4d5863199ccbe254c6d5b0061861f4f959f552d",
+    "reproduction/runtime/active_runtime_assurance_v2/plant_commit.py": "fcb89f0f54000f6d181c574046b0105013f91156",
+    "reproduction/runtime/active_runtime_assurance_v2/runtime_types.py": "cfce1d4fa111fdeb50a0c225b4451daeb9ed3672",
+    "reproduction/runtime/active_runtime_assurance_v2/trace_writer.py": "f7d1c768a28d36ab1ef88614bd01c8722e9ea292"
+  },
+  "pre_data_artifact_sha256": {
+    "BYPASS_EQUIVALENCE_PROTOCOL_V2.json": "bdb7c2ae721b77c1f7a5e99d69dc52f1577e18e46ff1abea98130965dfb207f5",
+    "QA_ENVIRONMENT_LOCK.json": "9bd1bd2dc53912e7c25220fa77d68ec933886873a535890de9778e4c6ff0f51c",
+    "QA_TRIAL_MANIFEST.json": "2a166d8357168c6a8d1f381a8e0b7018c9bcb1efc940793744722c218e0bea4c"
+  },
+  "stonehenge_artifacts": [
+    {"relative_path": "config.yml", "size": 6933, "sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e"},
+    {"relative_path": "dataparser_transforms.json", "size": 312, "sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e"},
+    {"relative_path": "nerfstudio_models/step-000029999.ckpt", "size": 92344786, "sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d"}
+  ],
+  "protected_source_mutation_authority": false,
+  "scientific_oracle_execution_authority": false,
+  "active_runtime_on_execution_authority": false
+}

@@ -1,0 +1,21 @@
+{
+  "verdict": "BLOCKED_ACTIVE_HARNESS_BYPASS_EQUIVALENCE",
+  "reference_arm_source": "Option B source-locked run.py adapter",
+  "reference_adapter_source_lock": "PASS_REFERENCE_CONTROL_PLANT_PATH_SOURCE_LOCK",
+  "qa_ids_and_execution_count": "[10,30,50,70,90]; Q1=4 arms; Q2=0; zero-step path failure separately preserved",
+  "sentinel_verdict": "BLOCKED_BEFORE_PAIR_COMPARISON",
+  "exact_action_equivalence": "NOT_ESTABLISHED",
+  "exact_state_equivalence": "NOT_ESTABLISHED",
+  "termination_equivalence": "NOT_ESTABLISHED",
+  "bypass_selected_executed_identity": "NOT_ESTABLISHED",
+  "active_intervention_count": 1,
+  "token_mutation_count": 0,
+  "plant_commit_transparency": "NOT_ESTABLISHED",
+  "cpu_gpu_float_semantics_divergence": "NOT_ESTABLISHED",
+  "bug_only_correction": "ONE_USED f722b8d; ACTIVE guard retained; 78/78 PASS",
+  "mismatch_register": ["M_BYPASS_HARNESS_INTERVENTION", "M_TRACE_SIDE_EFFECT_ON_EXECUTION"],
+  "protected_source_diff": "run.py/cbf/dynamics/splat/spec/design=0; authorized runtime diff=2 files",
+  "scientific_oracle_execution_count": 0,
+  "stage_3_allowed": false,
+  "only_next_task": "REPAIR_AND_REFREEZE_BYPASS_QA_TRACE_IDENTITY_V2"
+}

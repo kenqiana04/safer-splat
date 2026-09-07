@@ -1,0 +1,21 @@
+{
+  "schema": "BYPASS_EQUIVALENCE_EXECUTION_COUNT_LEDGER_V2",
+  "zero_step_infrastructure_invocation_count": 1,
+  "zero_step_infrastructure_reason": "TASK_CHECKOUT_DATA_SYMLINK_MISSING",
+  "zero_step_infrastructure_counted_as_real_qa_execution": false,
+  "real_qa_execution_count": 4,
+  "real_qa_executions": [
+    {"index": 1, "trial_id": 50, "arm": "REFERENCE_CONTROL_PLANT", "correction_state": "PRE_CORRECTION", "exit_code": 0, "committed_steps": 40},
+    {"index": 2, "trial_id": 50, "arm": "ACTIVE_HARNESS_BYPASS", "correction_state": "PRE_CORRECTION", "exit_code": 1, "committed_steps": 0},
+    {"index": 3, "trial_id": 50, "arm": "REFERENCE_CONTROL_PLANT", "correction_state": "POST_CORRECTION", "exit_code": 0, "committed_steps": 40},
+    {"index": 4, "trial_id": 50, "arm": "ACTIVE_HARNESS_BYPASS", "correction_state": "POST_CORRECTION", "exit_code": 1, "committed_steps_before_trace_exception": 1}
+  ],
+  "normal_cap": 10,
+  "hard_cap": 12,
+  "minimum_additional_executions_for_protocol_compliant_fresh_sentinel_and_q2": 10,
+  "projected_total_if_restarted": 14,
+  "hard_cap_would_be_exceeded": true,
+  "correction_count": 1,
+  "correction_cap": 1,
+  "further_execution_allowed": false
+}

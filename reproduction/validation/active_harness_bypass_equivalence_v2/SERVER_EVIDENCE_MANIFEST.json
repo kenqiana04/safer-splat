@@ -1,0 +1,27 @@
+{
+  "schema": "BYPASS_EQUIVALENCE_SERVER_EVIDENCE_MANIFEST_V2",
+  "server_root": "/disk1/zlab/maintenance_records/active_harness_bypass_equivalence_v2",
+  "server_checkout_head": "f722b8d108138f4592e4a1d6b21594a43d823adc",
+  "q0_preflight": {"path": "Q0_PREFLIGHT_RESULT.json", "sha256": "13c75306a2375ba6f9f89587bafd09b6055a4891c50c9f023539fac4c4bfc367", "verdict": "PASS_BYPASS_EQUIVALENCE_Q0_PREFLIGHT"},
+  "post_correction_runtime_tests": {"path": "post_correction_runtime_tests.log", "sha256": "320b9e0a7a4e8a4d9d3249dd2f9b8051ae4a9f955808d4ee6309171d1dcf33e5", "result": "78/78 PASS"},
+  "preqa_path_packaging_failure_original": {
+    "preserved": true,
+    "execution_manifest_sha256": "9163d642956ab7413546101cf79ef8ca578ba34fb0c25855bb38c74e434a3ec1",
+    "stderr_sha256": "9f95867aed918b35e9595f939e28195a266b2571be87a003ee2d9e61c8d21e73"
+  },
+  "sentinel_50_failure_pre_correction": {
+    "preserved": true,
+    "reference_trace_sha256": "49321867ec03644e7230d5c168a192360de3c482001a8eaa34650b2c9eb36729",
+    "reference_summary_sha256": "3dbaffcf97572922ef502e8d9336a567c25ec0d85b26764e6e450f56dd44df13",
+    "execution_manifest_sha256": "49f2796492a7543e3eef9c5602bdd543e41c51d0edf2d5a347600c82f7de7b41",
+    "bypass_stderr_sha256": "fc111859b6e934cf2b44e8b126891c0df6fb30e353a71b1e9f993f7ed32b3fdb"
+  },
+  "post_correction_server_execution": {
+    "preserved": true,
+    "reference_trace_sha256": "49321867ec03644e7230d5c168a192360de3c482001a8eaa34650b2c9eb36729",
+    "reference_summary_sha256": "3dbaffcf97572922ef502e8d9336a567c25ec0d85b26764e6e450f56dd44df13",
+    "execution_manifest_sha256": "3bc7554f594da44cc72a144c2c8859f952e1a79bd4162a534e8c2e0971882bc6",
+    "bypass_stderr_sha256": "e49b522d98e4dffb04cfb4cecd7b0b27fa6ee6a0249cf3ae0bee1988e78eda5f"
+  },
+  "gpu_1_final": {"uuid": "GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d", "memory_used_mib": 6, "utilization_percent": 0, "task_compute_process_count": 0}
+}

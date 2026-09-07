@@ -1,0 +1,40 @@
+{
+  "schema": "BYPASS_EQUIVALENCE_MISMATCH_REGISTER_V2",
+  "mismatch_count": 2,
+  "first_mismatch": {
+    "phase": "Q1",
+    "trial_id": 50,
+    "cycle": 0,
+    "taxonomy": "M_BYPASS_HARNESS_INTERVENTION",
+    "reason": "PlantCommitAdapter applied ACTIVE actuator admission to the BYPASS-delegated reference action and raised ACTUATOR_ADMISSION_REQUIRED.",
+    "correction_authorized": true,
+    "correction_commit": "f722b8d108138f4592e4a1d6b21594a43d823adc"
+  },
+  "post_correction_blocker": {
+    "phase": "Q1",
+    "trial_id": 50,
+    "cycle": 0,
+    "taxonomy": "M_TRACE_SIDE_EFFECT_ON_EXECUTION",
+    "reason": "The task-local adapter constructed TraceWriter trial_id=stonehenge-trial-50 but RuntimeStateSnapshot trial_id=stonehenge-50; trace append raised TRIAL_IDENTITY_MISMATCH after the first corrected BYPASS plant commit.",
+    "runtime_bug": false,
+    "task_adapter_bug": true,
+    "second_correction_allowed": false,
+    "rerun_allowed": false
+  },
+  "allowed_taxonomy": [
+    "M_REF_ADAPTER_DRIFT",
+    "M_REFERENCE_NONDETERMINISM",
+    "M_REFERENCE_ACTION_DIVERGENCE",
+    "M_BYPASS_ACTION_MUTATION",
+    "M_BYPASS_HARNESS_INTERVENTION",
+    "M_PLANT_TRANSITION_DIVERGENCE",
+    "M_FLOAT32_DEVICE_SEMANTICS_DIVERGENCE",
+    "M_TERMINATION_BRANCH_DIVERGENCE",
+    "M_TRACE_SIDE_EFFECT_ON_EXECUTION",
+    "M_SHARED_MUTABLE_STATE_CONTAMINATION",
+    "M_UPSTREAM_SOURCE_DRIFT",
+    "M_UNCLASSIFIED"
+  ],
+  "q2_started": false,
+  "mismatch_register_empty": false
+}
