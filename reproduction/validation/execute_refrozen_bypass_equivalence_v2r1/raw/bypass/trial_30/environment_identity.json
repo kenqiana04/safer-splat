@@ -1,0 +1,43 @@
+{
+  "alpha": 5.0,
+  "arm": "ACTIVE_HARNESS_BYPASS",
+  "arm_identity": "BYPASS",
+  "beta": 1.0,
+  "canonical_trial_id": "STONEHENGE_TRIAL_030",
+  "cuda_visible_devices": "1",
+  "device_name": "NVIDIA GeForce RTX 4090",
+  "distance_method": "ball-to-ellipsoid",
+  "dt": 0.05,
+  "dtype": "torch.float32",
+  "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
+  "map_artifacts": [
+    {
+      "relative_path": "config.yml",
+      "sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e",
+      "size": 6933
+    },
+    {
+      "relative_path": "dataparser_transforms.json",
+      "sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e",
+      "size": 312
+    },
+    {
+      "relative_path": "nerfstudio_models/step-000029999.ckpt",
+      "sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d",
+      "size": 92344786
+    }
+  ],
+  "map_identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+  "n_steps": 500,
+  "numpy": "1.26.4",
+  "pairing_identity": "c7e9026a7b25c566140b05cbf10d579b69feb2ae07b9dcc6e78289084143b7de",
+  "python": "3.10.20",
+  "radius": 0.015,
+  "repo_head": "a537ff653ac896aa1ab567b5197136efa1a937b4",
+  "schema": "BYPASS_QA_ARM_ENVIRONMENT_V2",
+  "seed": 0,
+  "torch": "2.1.2+cu118",
+  "torch_cuda": "11.8",
+  "trial_id": 30,
+  "visible_device_count": 1
+}

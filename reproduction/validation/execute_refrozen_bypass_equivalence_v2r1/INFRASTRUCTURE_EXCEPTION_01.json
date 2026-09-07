@@ -1,0 +1,15 @@
+{
+  "schema": "V2R1_INFRASTRUCTURE_ONLY_EXCEPTION",
+  "reason_class": "PATH_LINK_ENV_PACKAGING_ONLY",
+  "native_trial_id": 50,
+  "arm": "REFERENCE_CONTROL_PLANT",
+  "failure": "missing task-checkout path data/stonehenge/transforms.json",
+  "solver_step_count": 0,
+  "plant_commit_count": 0,
+  "finalized_trace_count": 0,
+  "comparison_evidence_count": 0,
+  "real_execution_counter_effect": 0,
+  "repair": "linked the task checkout to the pre-existing frozen Stonehenge data directory; no source, protocol, lock, parameter, or artifact content changed",
+  "preserved_evidence_path": "infrastructure_only_attempt_01/",
+  "preserved_ledger_sha256": "e4297fd0689dca4a48fd83b33f30c78dc8aa4f62c69beb3138f3bce1673a990f"
+}

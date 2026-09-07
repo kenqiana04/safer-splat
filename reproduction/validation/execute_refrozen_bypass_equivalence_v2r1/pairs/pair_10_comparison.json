@@ -1,0 +1,39 @@
+{
+  "active_intervention_count": 0,
+  "bypass_row_count": 255,
+  "bypass_trace_lock_present": true,
+  "canonical_trial_id": "STONEHENGE_TRIAL_010",
+  "diagnostic_mismatches": [],
+  "first_mismatch": null,
+  "join_key": [
+    "canonical_trial_id",
+    "cycle_index"
+  ],
+  "mismatch_count": 0,
+  "mismatch_counts": {
+    "M_POST_STATE_BITS": 0,
+    "M_REFERENCE_TO_SUPPLIED_ACTION_BITS": 0,
+    "M_SELECTED_TO_EXECUTED_ACTION": 0,
+    "M_SOLVER_BRANCH": 0,
+    "M_STEP_COUNT": 0,
+    "M_SUPPLIED_TO_SELECTED_ACTION": 0,
+    "M_TERMINATION_REASON": 0,
+    "M_TERMINATION_STEP": 0,
+    "M_TRACE_INCOMPLETE": 0,
+    "M_TRIAL_IDENTITY": 0,
+    "M_UNEXPECTED_HARNESS_INTERVENTION": 0
+  },
+  "native_trial_id": 10,
+  "reference_row_count": 255,
+  "schema": "BYPASS_PAIR_EXACT_COMPARISON_V2R1",
+  "termination": {
+    "bypass_reason": "NOT_MOVING",
+    "bypass_step": 254,
+    "reference_reason": "NOT_MOVING",
+    "reference_step": 254
+  },
+  "token_mutation_count": 0,
+  "tolerance_used": false,
+  "total_compared_steps": 255,
+  "verdict": "PASS"
+}
