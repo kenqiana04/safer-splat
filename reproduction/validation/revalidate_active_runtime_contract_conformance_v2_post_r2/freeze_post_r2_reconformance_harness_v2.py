@@ -145,7 +145,7 @@ def main() -> int:
         "sweep_mode": "COMPLETE_INDEPENDENT_MATRIX",
         "runtime_correction_quota": 0,
         "test_expectation_correction_quota": 0,
-        "pre_substantive_harness_correction_count": 1,
+        "pre_substantive_harness_correction_count": 2,
         "pre_substantive_harness_correction_scope": [
             "fixture field-name adaptation",
             "FakeClock advancement placement",

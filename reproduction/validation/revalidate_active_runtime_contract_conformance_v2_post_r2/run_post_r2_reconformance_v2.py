@@ -222,7 +222,7 @@ def start_case(status: CertificateStatus) -> dict[str, object]:
     start = system["coordinator"].start_trial(system["state"], system["trial"])
     passed = (start.ready and not start.boundary) if status == CertificateStatus.PASS else (start.boundary and not start.ready and system["plant"].commit_count == 0)
     if status == CertificateStatus.UNKNOWN:
-        passed = passed and start.admission_status == CertificateStatus.UNKNOWN
+        passed = passed and start.status == CertificateStatus.UNKNOWN
     return outcome(passed, status=status.value, ready=start.ready, boundary=start.boundary)
 
 

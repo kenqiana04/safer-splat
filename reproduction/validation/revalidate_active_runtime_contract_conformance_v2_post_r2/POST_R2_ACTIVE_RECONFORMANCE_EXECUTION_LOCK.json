@@ -7,15 +7,15 @@
     "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/POST_R2_CONFORMANCE_SCENARIO_MANIFEST_V2.json": "69ce438f37ee03498476f1c478428fb042169b9192645c917dbea8bf429a616f",
     "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/POST_R2_TRANSITION_43_EXPECTED_MATRIX_V2.csv": "be10ce3ada5d91f61a55371a407cd09c857aef0041ae3a674a9cb8eef19e3f07",
     "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/build_post_r2_reconformance_evidence_v2.py": "7fc25970f535050931ca59939adc69b7460d65ec12352b364ea5843cf8854b84",
-    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/freeze_post_r2_reconformance_harness_v2.py": "22ba6e976f7d516bc19d476c83b471d6a5aa7b94093459a6762b3fc124a81cc3",
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/freeze_post_r2_reconformance_harness_v2.py": "65b33e2560f1edd3305b2d6e43f15792ff24f5bbadfa05f7c39d89e76f1bc9c6",
     "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/model_check_post_r2_active_runtime_conformance_v2.py": "a569e4fe49fd7f59eb0e661ba06b9f13a31cf01941720c985168b72bcc3d6965",
-    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py": "1f0662af00fcc21017f7efe319327e537c6f27319c6a2a86ba9c9f47a94963bb",
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py": "8a271421ca1f1a6e8271ac2c39f9f19a60bc621c09e4ff30ef47667a59c32b9f",
     "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/tests/_support.py": "7c802ba0af20d1742d0fc8738e5d3e130e9c1b5abe5d673cb3263606dcefb553",
     "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/tests/test_post_r2_reconformance.py": "abbfc15809faccd5d312888823ba13fee4def36e0f23301be22e00f6eb1dd3cd",
     "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/validate_post_r2_active_runtime_contract_conformance_v2.py": "04d69c71acb8eb2aa20a8e0d723397508d780bc2b27219bd66c35532912ed508"
   },
   "pr126_head": "c38a51310767669e51ef6c87307c831405221277",
-  "pre_substantive_harness_correction_count": 1,
+  "pre_substantive_harness_correction_count": 2,
   "pre_substantive_harness_correction_scope": [
     "fixture field-name adaptation",
     "FakeClock advancement placement",
