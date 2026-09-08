@@ -73,6 +73,37 @@ class RuntimePhase(str, Enum):
     ASSURANCE_BOUNDARY = "ASSURANCE_BOUNDARY"
 
 
+class ReasonScope(str, Enum):
+    """Frozen PR #107 reason scopes used as routing evidence."""
+
+    NONE = "NONE"
+    CANDIDATE_LOCAL_COMPUTATION = "CANDIDATE_LOCAL_COMPUTATION"
+    GLOBAL_AUTHORITY_OR_EVIDENCE = "GLOBAL_AUTHORITY_OR_EVIDENCE"
+    INFRASTRUCTURE_HEALTH = "INFRASTRUCTURE_HEALTH"
+    UNRESOLVED_SCOPE = "UNRESOLVED_SCOPE"
+
+
+class StageFailureKind(str, Enum):
+    """Failure kinds remain evidence and never grant action authority."""
+
+    STAGE_EXCEPTION = "STAGE_EXCEPTION"
+    STAGE_UNKNOWN = "STAGE_UNKNOWN"
+    PROVIDER_STATUS_FAILURE = "PROVIDER_STATUS_FAILURE"
+    ROUTE_RESOLUTION_FAILURE = "ROUTE_RESOLUTION_FAILURE"
+    SERIALIZATION_FAILURE = "SERIALIZATION_FAILURE"
+    COMMIT_FAILURE = "COMMIT_FAILURE"
+
+
+class AlternativeInventoryStatus(str, Enum):
+    """Lossless normalization of the unchanged provider status contract."""
+
+    ALT_AVAILABLE = "ALT_AVAILABLE"
+    NO_ALTERNATIVE_AVAILABLE = "NO_ALTERNATIVE_AVAILABLE"
+    SOURCE_INVALID = "SOURCE_INVALID"
+    PROVENANCE_MISSING = "PROVENANCE_MISSING"
+    UNRESOLVED_STATUS = "UNRESOLVED_STATUS"
+
+
 def _canonical(value: Any) -> Any:
     if isinstance(value, Enum):
         return value.value
@@ -417,6 +448,33 @@ class AlternativeInventoryResult:
     candidates: tuple[Candidate, ...]
 
 
+@dataclass(frozen=True)
+class StageFailureEvidence:
+    source_phase: RuntimePhase
+    stage_name: str
+    failure_kind: StageFailureKind
+    typed_reason: str
+    reason_scope: ReasonScope
+    authority_identity: str
+    exception_type: str | None = None
+    original_reason: str | None = None
+    candidate_identity: CandidateIdentity | None = None
+    state_identity: StateIdentity | None = None
+    trial_id: str | None = None
+    cycle_index: int | None = None
+
+
+@dataclass(frozen=True)
+class AlternativeInventoryEvidence:
+    status: AlternativeInventoryStatus
+    candidate_identities: tuple[CandidateIdentity, ...]
+    source_authority: str
+    state_identity: StateIdentity
+    map_identity: str
+    reason_scope: ReasonScope
+    original_provider_status: str
+
+
 # Public-cycle composition types are additive to the PR #116 runtime types.
 # They carry orchestration facts only; none owns certificate, routing, action
 # selection, plant, or scientific-evaluation authority.
@@ -652,6 +710,8 @@ class ActiveCycleContext:
     final_supervisor_decision: SupervisorDecision | None = None
     commit_receipt: CommitReceipt | None = None
     trace_ref: str | None = None
+    stage_failures: tuple[StageFailureEvidence, ...] = ()
+    alternative_inventory_evidence: AlternativeInventoryEvidence | None = None
 
 
 @dataclass(frozen=True)
@@ -676,6 +736,8 @@ class ActiveCycleResult:
     boundary: bool
     trace_ref: str | None
     typed_stop_or_failure_reason: str
+    stage_failures: tuple[StageFailureEvidence, ...] = ()
+    alternative_inventory_evidence: AlternativeInventoryEvidence | None = None
 
 
 @dataclass(frozen=True)

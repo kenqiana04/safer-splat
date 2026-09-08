@@ -10,6 +10,8 @@ from pathlib import Path
 from .authority_registry import AuthorityRegistry
 from .runtime_types import (
     ActionRole,
+    AlternativeInventoryEvidence,
+    AlternativeInventoryStatus,
     Candidate,
     CandidateRole,
     CertificateStatus,
@@ -24,11 +26,34 @@ from .runtime_types import (
     RoutingDecision,
     RouteResolutionStatus,
     PublicCycleEvent,
+    ReasonScope,
     SelectedAction,
+    StageFailureEvidence,
     SupervisorDecision,
     TerminalResult,
     make_action,
 )
+
+
+_REASON_SCOPE_BY_CODE = {
+    "MAP_IDENTITY_MISMATCH": ReasonScope.GLOBAL_AUTHORITY_OR_EVIDENCE,
+    "CANDIDATE_STATE_OR_MAP_IDENTITY_MISMATCH": ReasonScope.GLOBAL_AUTHORITY_OR_EVIDENCE,
+    "L2_AUTHORITY_OR_ALIGNMENT_MISMATCH": ReasonScope.GLOBAL_AUTHORITY_OR_EVIDENCE,
+    "GOAL_HOLD_RUNTIME_AUTHORITY_INVALID": ReasonScope.GLOBAL_AUTHORITY_OR_EVIDENCE,
+    "TERMINAL_MAP_IDENTITY_MISMATCH": ReasonScope.GLOBAL_AUTHORITY_OR_EVIDENCE,
+    "STALE_TERMINAL_REFERENCE": ReasonScope.GLOBAL_AUTHORITY_OR_EVIDENCE,
+    "SOURCE_INVALID": ReasonScope.GLOBAL_AUTHORITY_OR_EVIDENCE,
+    "PROVENANCE_MISSING": ReasonScope.GLOBAL_AUTHORITY_OR_EVIDENCE,
+    "CANDIDATE_NONFINITE_OR_WRONG_DIMENSION": ReasonScope.CANDIDATE_LOCAL_COMPUTATION,
+    "F_ACTUATOR_ADMISSIBILITY_LOCAL": ReasonScope.CANDIDATE_LOCAL_COMPUTATION,
+    "L1_BACKEND_EXCEPTION": ReasonScope.INFRASTRUCTURE_HEALTH,
+    "L2_BACKEND_EXCEPTION": ReasonScope.INFRASTRUCTURE_HEALTH,
+    "L3_BACKEND_EXCEPTION": ReasonScope.INFRASTRUCTURE_HEALTH,
+    "QP_SOLVER_EXCEPTION": ReasonScope.INFRASTRUCTURE_HEALTH,
+    "TERMINAL_EXCEPTION": ReasonScope.INFRASTRUCTURE_HEALTH,
+    "CURRENT_QUERY_EXCEPTION": ReasonScope.INFRASTRUCTURE_HEALTH,
+    "STAGE_EXCEPTION": ReasonScope.INFRASTRUCTURE_HEALTH,
+}
 
 
 @dataclass(frozen=True)
@@ -284,6 +309,84 @@ class Supervisor:
         if self.transition_table is None:
             return TransitionTable._blocked_decision(runtime_context, RouteResolutionStatus.BLOCKED_MISSING, "ROUTING_RULE_MISSING")
         return self.transition_table.resolve(event, runtime_context)
+
+    @staticmethod
+    def classify_reason_scope(stage_name: str, reason: str) -> ReasonScope:
+        """Resolve only exact frozen reason codes; arbitrary text stays unresolved."""
+        del stage_name  # stage remains an audit input, never a substring-policy hint
+        reason_code = str(reason).split(":", 1)[0]
+        return _REASON_SCOPE_BY_CODE.get(reason_code, ReasonScope.UNRESOLVED_SCOPE)
+
+    @staticmethod
+    def _meta_route_to_arbitration(runtime_context: RuntimeRoutingContext, reason: str) -> RoutingDecision:
+        """Supervisor-owned non-rule route for typed evidence not represented by a PR #107 row."""
+        return RoutingDecision(
+            status=RouteResolutionStatus.RESOLVED,
+            rule_id=None,
+            source_phase=runtime_context.source_phase,
+            destination_phase=RuntimePhase.ARBITRATION,
+            may_start_next_stage=True,
+            may_start_new_search=False,
+            requires_arbitration=True,
+            failure_mapping=reason,
+            deadline_interpretation="SUPERVISOR_META_SAFETY_ROUTE",
+            backup_routing_allowed=True,
+            terminal_routing_allowed=True,
+            commit_allowed=False,
+            reason=reason,
+            action_authority="NONE",
+            old_backup_retained=runtime_context.retained_backup_present,
+            new_backup_created=False,
+            theorem_interpretation="typed failure preserves only already-certified fallback authority",
+            observation_result=reason,
+            guard="Supervisor-owned typed meta route; no frozen rule ID is fabricated",
+            reason_scope=runtime_context.reason_scope,
+            retained_backup_requirement="ANY",
+            deadline_requirement="ANY",
+            candidate_requirement="NONE",
+        )
+
+    def route_stage_failure(self, evidence: StageFailureEvidence, runtime_context: RuntimeRoutingContext) -> RoutingDecision:
+        """Map typed stage failure evidence to a frozen route or explicit meta block."""
+        phase = evidence.source_phase
+        scope = evidence.reason_scope
+        if phase == RuntimePhase.L1:
+            event = (
+                PublicCycleEvent.L1_UNKNOWN_HEALTH
+                if scope == ReasonScope.INFRASTRUCTURE_HEALTH
+                else PublicCycleEvent.L1_UNKNOWN_GLOBAL
+                if scope == ReasonScope.GLOBAL_AUTHORITY_OR_EVIDENCE
+                else PublicCycleEvent.L1_UNKNOWN_UNRESOLVED
+            )
+            return self.route_transition(event, runtime_context)
+        if phase == RuntimePhase.PRIMARY_PROPOSAL:
+            return self.route_transition(PublicCycleEvent.NO_CANDIDATE, runtime_context)
+        if phase == RuntimePhase.C0:
+            event = PublicCycleEvent.C0_UNKNOWN_LOCAL if scope == ReasonScope.CANDIDATE_LOCAL_COMPUTATION else PublicCycleEvent.C0_UNKNOWN_GLOBAL
+            return self.route_transition(event, runtime_context)
+        if phase == RuntimePhase.L2:
+            event = PublicCycleEvent.L2_UNKNOWN_LOCAL if scope == ReasonScope.CANDIDATE_LOCAL_COMPUTATION else PublicCycleEvent.L2_UNKNOWN_GLOBAL
+            return self.route_transition(event, runtime_context)
+        if phase == RuntimePhase.L3:
+            event = PublicCycleEvent.L3_UNKNOWN_LOCAL if scope == ReasonScope.CANDIDATE_LOCAL_COMPUTATION else PublicCycleEvent.L3_UNKNOWN_GLOBAL
+            return self.route_transition(event, runtime_context)
+        if phase == RuntimePhase.ALT_SEARCH:
+            return self._meta_route_to_arbitration(runtime_context, evidence.typed_reason)
+        if phase == RuntimePhase.TERMINAL_EVALUATION:
+            return self.route_transition(PublicCycleEvent.TERMINAL_UNKNOWN, runtime_context)
+        return TransitionTable._blocked_decision(
+            runtime_context,
+            RouteResolutionStatus.BLOCKED_MISSING,
+            evidence.typed_reason,
+        )
+
+    def route_alternative_inventory(self, evidence: AlternativeInventoryEvidence, runtime_context: RuntimeRoutingContext) -> RoutingDecision:
+        """Preserve provider status before applying frozen or meta routing authority."""
+        if evidence.status == AlternativeInventoryStatus.ALT_AVAILABLE:
+            return self.route_transition(PublicCycleEvent.ALT_AVAILABLE, runtime_context)
+        if evidence.status == AlternativeInventoryStatus.NO_ALTERNATIVE_AVAILABLE:
+            return self.route_transition(PublicCycleEvent.ALT_EXHAUSTED, runtime_context)
+        return self._meta_route_to_arbitration(runtime_context, f"ALTERNATIVE_PROVIDER_{evidence.status.value}")
 
     def routing_guard_block(self, runtime_context: RuntimeRoutingContext, reason: str = "ROUTING_STATE_REPEATED") -> RoutingDecision:
         """Supervisor-owned typed block for an impossible repeated route state."""
