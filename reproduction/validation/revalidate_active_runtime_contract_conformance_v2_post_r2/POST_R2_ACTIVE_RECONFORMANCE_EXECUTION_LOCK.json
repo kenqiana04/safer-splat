@@ -1,0 +1,24 @@
+{
+  "expected_transition_matrix_sha256": "be10ce3ada5d91f61a55371a407cd09c857aef0041ae3a674a9cb8eef19e3f07",
+  "input_lock_sha256": "3e2e22bbcfc6f0c6aada1b64342536d33488b13adea29edbaff21cbf5def17f4",
+  "locked_source_sha256": {
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/IMPLEMENTATION_PLAN.md": "b74d5645c7a172a94de6898e85d27eaf6903f71b2d6c89bd06c9d67313cad0ef",
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/POST_R2_ACTIVE_RECONFORMANCE_INPUT_LOCK.json": "3e2e22bbcfc6f0c6aada1b64342536d33488b13adea29edbaff21cbf5def17f4",
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/POST_R2_CONFORMANCE_SCENARIO_MANIFEST_V2.json": "69ce438f37ee03498476f1c478428fb042169b9192645c917dbea8bf429a616f",
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/POST_R2_TRANSITION_43_EXPECTED_MATRIX_V2.csv": "be10ce3ada5d91f61a55371a407cd09c857aef0041ae3a674a9cb8eef19e3f07",
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/build_post_r2_reconformance_evidence_v2.py": "7fc25970f535050931ca59939adc69b7460d65ec12352b364ea5843cf8854b84",
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/freeze_post_r2_reconformance_harness_v2.py": "89832da2cd748a7db3d85bae7a6e75efe1778ee3aab9f864967995c5c777f49d",
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/model_check_post_r2_active_runtime_conformance_v2.py": "a569e4fe49fd7f59eb0e661ba06b9f13a31cf01941720c985168b72bcc3d6965",
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py": "d6123982f1db368ab79cdbfcb4231db5d2ad7e4fa799d5e7d8ef64e0e6505feb",
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/tests/_support.py": "a2155d46af85e8235ab2e836194a6223a98fcd79f35f1d85b59b58f5cfd7fc8c",
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/tests/test_post_r2_reconformance.py": "abbfc15809faccd5d312888823ba13fee4def36e0f23301be22e00f6eb1dd3cd",
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/validate_post_r2_active_runtime_contract_conformance_v2.py": "04d69c71acb8eb2aa20a8e0d723397508d780bc2b27219bd66c35532912ed508"
+  },
+  "pr126_head": "c38a51310767669e51ef6c87307c831405221277",
+  "runtime_correction_quota": 0,
+  "scenario_manifest_sha256": "69ce438f37ee03498476f1c478428fb042169b9192645c917dbea8bf429a616f",
+  "schema": "POST_R2_ACTIVE_RECONFORMANCE_EXECUTION_LOCK_V2",
+  "substantive_execution_started": false,
+  "sweep_mode": "COMPLETE_INDEPENDENT_MATRIX",
+  "test_expectation_correction_quota": 0
+}
