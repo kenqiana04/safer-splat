@@ -1,0 +1,216 @@
+{
+  "no_uncertified_commit": true,
+  "no_unconditional_coordinator_block": true,
+  "passed": 8,
+  "results": [
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "failure": {
+          "authority_identity": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+          "candidate_identity": null,
+          "cycle_index": 1,
+          "exception_type": "RuntimeError",
+          "failure_kind": "STAGE_EXCEPTION",
+          "original_reason": "post-r2 injected exception",
+          "reason_scope": "INFRASTRUCTURE_HEALTH",
+          "source_phase": "L1",
+          "stage_name": "L1",
+          "state_identity": {
+            "value": "state:sha256:d27f74a4793210e7270af1c8e2e601929b8fcc15452c3e36efcbe9a182d92fb8"
+          },
+          "trial_id": "trial-1",
+          "typed_reason": "STAGE_EXCEPTION:L1:RuntimeError"
+        },
+        "stage": "L1"
+      },
+      "domain": "exception",
+      "passed": true,
+      "scenario_id": "EXC-L1"
+    },
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "failure": {
+          "authority_identity": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+          "candidate_identity": null,
+          "cycle_index": 1,
+          "exception_type": "RuntimeError",
+          "failure_kind": "STAGE_EXCEPTION",
+          "original_reason": "post-r2 injected exception",
+          "reason_scope": "INFRASTRUCTURE_HEALTH",
+          "source_phase": "PRIMARY_PROPOSAL",
+          "stage_name": "PRIMARY_PROPOSAL",
+          "state_identity": {
+            "value": "state:sha256:d27f74a4793210e7270af1c8e2e601929b8fcc15452c3e36efcbe9a182d92fb8"
+          },
+          "trial_id": "trial-1",
+          "typed_reason": "STAGE_EXCEPTION:PRIMARY_PROPOSAL:RuntimeError"
+        },
+        "stage": "PRIMARY_PROPOSAL"
+      },
+      "domain": "exception",
+      "passed": true,
+      "scenario_id": "EXC-PRIMARY_PROPOSAL"
+    },
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "failure": {
+          "authority_identity": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+          "candidate_identity": {
+            "value": "candidate:sha256:36dd078ee78aad6601b5ab0ddb829b262db56a67a11ca796c1caeabacc88ae50"
+          },
+          "cycle_index": 1,
+          "exception_type": "RuntimeError",
+          "failure_kind": "STAGE_EXCEPTION",
+          "original_reason": "post-r2 injected exception",
+          "reason_scope": "INFRASTRUCTURE_HEALTH",
+          "source_phase": "C0",
+          "stage_name": "C0",
+          "state_identity": {
+            "value": "state:sha256:d27f74a4793210e7270af1c8e2e601929b8fcc15452c3e36efcbe9a182d92fb8"
+          },
+          "trial_id": "trial-1",
+          "typed_reason": "STAGE_EXCEPTION:C0:RuntimeError"
+        },
+        "stage": "C0"
+      },
+      "domain": "exception",
+      "passed": true,
+      "scenario_id": "EXC-C0"
+    },
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "failure": {
+          "authority_identity": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+          "candidate_identity": {
+            "value": "candidate:sha256:36dd078ee78aad6601b5ab0ddb829b262db56a67a11ca796c1caeabacc88ae50"
+          },
+          "cycle_index": 1,
+          "exception_type": "RuntimeError",
+          "failure_kind": "STAGE_EXCEPTION",
+          "original_reason": "post-r2 injected exception",
+          "reason_scope": "INFRASTRUCTURE_HEALTH",
+          "source_phase": "L2",
+          "stage_name": "L2",
+          "state_identity": {
+            "value": "state:sha256:d27f74a4793210e7270af1c8e2e601929b8fcc15452c3e36efcbe9a182d92fb8"
+          },
+          "trial_id": "trial-1",
+          "typed_reason": "STAGE_EXCEPTION:L2:RuntimeError"
+        },
+        "stage": "L2"
+      },
+      "domain": "exception",
+      "passed": true,
+      "scenario_id": "EXC-L2"
+    },
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "failure": {
+          "authority_identity": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+          "candidate_identity": {
+            "value": "candidate:sha256:36dd078ee78aad6601b5ab0ddb829b262db56a67a11ca796c1caeabacc88ae50"
+          },
+          "cycle_index": 1,
+          "exception_type": "RuntimeError",
+          "failure_kind": "STAGE_EXCEPTION",
+          "original_reason": "post-r2 injected exception",
+          "reason_scope": "INFRASTRUCTURE_HEALTH",
+          "source_phase": "L3",
+          "stage_name": "L3",
+          "state_identity": {
+            "value": "state:sha256:d27f74a4793210e7270af1c8e2e601929b8fcc15452c3e36efcbe9a182d92fb8"
+          },
+          "trial_id": "trial-1",
+          "typed_reason": "STAGE_EXCEPTION:L3:RuntimeError"
+        },
+        "stage": "L3"
+      },
+      "domain": "exception",
+      "passed": true,
+      "scenario_id": "EXC-L3"
+    },
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "failure": {
+          "authority_identity": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+          "candidate_identity": null,
+          "cycle_index": 1,
+          "exception_type": "RuntimeError",
+          "failure_kind": "STAGE_EXCEPTION",
+          "original_reason": "post-r2 injected exception",
+          "reason_scope": "INFRASTRUCTURE_HEALTH",
+          "source_phase": "ALT_SEARCH",
+          "stage_name": "ALT_SEARCH",
+          "state_identity": {
+            "value": "state:sha256:d27f74a4793210e7270af1c8e2e601929b8fcc15452c3e36efcbe9a182d92fb8"
+          },
+          "trial_id": "trial-1",
+          "typed_reason": "STAGE_EXCEPTION:ALT_SEARCH:RuntimeError"
+        },
+        "stage": "ALT_SEARCH"
+      },
+      "domain": "exception",
+      "passed": true,
+      "scenario_id": "EXC-ALT_SEARCH"
+    },
+    {
+      "detail": {
+        "action_role": null,
+        "failure": {
+          "authority_identity": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+          "candidate_identity": null,
+          "cycle_index": 0,
+          "exception_type": "RuntimeError",
+          "failure_kind": "STAGE_EXCEPTION",
+          "original_reason": "post-r2 injected exception",
+          "reason_scope": "INFRASTRUCTURE_HEALTH",
+          "source_phase": "TERMINAL_EVALUATION",
+          "stage_name": "TERMINAL_EVALUATION",
+          "state_identity": {
+            "value": "state:sha256:760a1e69c298884077e502992ad397e38602ad070cdf669d9095bdc75649e0f5"
+          },
+          "trial_id": "trial-1",
+          "typed_reason": "STAGE_EXCEPTION:TERMINAL_EVALUATION:RuntimeError"
+        },
+        "stage": "TERMINAL_EVALUATION"
+      },
+      "domain": "exception",
+      "passed": true,
+      "scenario_id": "EXC-TERMINAL_EVALUATION"
+    },
+    {
+      "detail": {
+        "action_role": null,
+        "failure": {
+          "authority_identity": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+          "candidate_identity": null,
+          "cycle_index": 0,
+          "exception_type": "RuntimeError",
+          "failure_kind": "STAGE_EXCEPTION",
+          "original_reason": "post-r2 injected exception",
+          "reason_scope": "INFRASTRUCTURE_HEALTH",
+          "source_phase": "ARBITRATION",
+          "stage_name": "ARBITRATION",
+          "state_identity": {
+            "value": "state:sha256:760a1e69c298884077e502992ad397e38602ad070cdf669d9095bdc75649e0f5"
+          },
+          "trial_id": "trial-1",
+          "typed_reason": "STAGE_EXCEPTION:ARBITRATION:RuntimeError"
+        },
+        "stage": "ARBITRATION"
+      },
+      "domain": "exception",
+      "passed": true,
+      "scenario_id": "EXC-ARBITRATION"
+    }
+  ],
+  "schema": "POST_R2_STAGE_EXCEPTION_CONFORMANCE_V2",
+  "status": "PASS_STAGE_EXCEPTION_CONFORMANCE",
+  "total": 8
+}

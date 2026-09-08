@@ -1,0 +1,20 @@
+{
+  "alternative_reuses_same_l1": true,
+  "fresh_binding_per_candidate": true,
+  "l1_backend_calls_per_cycle": 1,
+  "observed": [
+    "CYCLE_BEGIN",
+    "L1_IMMEDIATE_CERTIFICATION",
+    "PRIMARY_PROPOSAL",
+    "PRIMARY_C0",
+    "PRIMARY_L2",
+    "PRIMARY_L3",
+    "BACKUP_VALIDATION",
+    "ARBITRATION",
+    "COMMIT",
+    "TRACE_APPEND",
+    "CYCLE_COMPLETE"
+  ],
+  "schema": "POST_R2_CANONICAL_CALL_ORDER_V2",
+  "status": "PASS_CANONICAL_ORDER"
+}

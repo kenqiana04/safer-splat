@@ -1,0 +1,20 @@
+{
+  "D-AUTH-001": "CLOSED",
+  "allowed_operations": [
+    "collect facts",
+    "encode typed evidence",
+    "observe deadline",
+    "execute routed destination",
+    "request arbitration",
+    "call ActiveRunner"
+  ],
+  "dynamic_evidence": "E2E-01..12",
+  "forbidden_pattern_findings": {
+    ".plant_commit.commit(": false,
+    "RoutingDecision(": false,
+    "alternative_search_allowed=": false,
+    "navigation_timely": false
+  },
+  "schema": "POST_R2_COORDINATOR_AUTHORITY_AUDIT_V2",
+  "status": "PASS_FACT_ONLY_COORDINATOR"
+}

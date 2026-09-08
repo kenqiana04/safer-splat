@@ -1,0 +1,279 @@
+{
+  "check_count": 54,
+  "checks": [
+    {
+      "detail": null,
+      "name": "01_pr126_exact",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "02_runtime_diff_zero",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "03_input_lock",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "04_execution_lock",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "05_four_defects_closed",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "06_coordinator_authority",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "07_sole_owner_chain",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "08_43_row_fidelity",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "09_exact_one",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "10_43_dynamic",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "11_critical_coverage",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "12_public_orchestration",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "13_canonical_order",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "14_start_r0",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "15_primary_c0",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "16_l2_l3",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "17_numeric",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "18_deadline",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "19_deadline_points",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "20_alternative",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "21_backup",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "22_backup_distinction",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "23_terminal",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "24_exceptions",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "25_reason_scope",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "26_commit_authority",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "27_boundary",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "28_trace",
+      "passed": false
+    },
+    {
+      "detail": null,
+      "name": "29_bypass",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "30_not_a_bug",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "31_e2e_core_6",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "32_e2e_extended_6",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "33_scenario_matrix_complete",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "34_model_counterexamples_zero",
+      "passed": false
+    },
+    {
+      "detail": null,
+      "name": "35_all_applicable_tests",
+      "passed": false
+    },
+    {
+      "detail": null,
+      "name": "36_runtime_correction_zero",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "37_real_active_zero",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "38_gpu_zero",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "39_smoke_zero",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "40_scientific_oracle_zero",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "41_official100_zero",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "42_real_bypass_zero",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "43_failure_register_complete",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "44_downstream_mechanical",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "45_sweep_mode",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "46_transition_domain",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "47_exact_one_domain",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "48_alternative_domain",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "49_backup_domain",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "50_terminal_domain",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "51_exception_domain",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "52_reason_scope_domain",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "53_trace_fault_domain",
+      "passed": false
+    },
+    {
+      "detail": null,
+      "name": "54_next_task",
+      "passed": true
+    }
+  ],
+  "failed_count": 4,
+  "passed_count": 50,
+  "schema": "POST_R2_ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_VALIDATION_V2",
+  "status": "BLOCKED_POST_R2_ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_V2_VALIDATION"
+}

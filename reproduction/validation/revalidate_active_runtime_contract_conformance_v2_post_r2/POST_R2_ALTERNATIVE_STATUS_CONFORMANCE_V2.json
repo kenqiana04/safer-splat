@@ -1,0 +1,40 @@
+{
+  "default_runtime_inventory": 0,
+  "only_lawful_absence_is_exhaustion": true,
+  "schema": "POST_R2_ALTERNATIVE_STATUS_CONFORMANCE_V2",
+  "source_authority": "SOURCE_NATIVE_EXISTING",
+  "status": "PASS_ALTERNATIVE_STATUS_FIDELITY",
+  "statuses": {
+    "ALT-UNRESOLVED": {
+      "action_role": "RETAINED_BACKUP",
+      "exhausted": false,
+      "normalized": "UNRESOLVED_STATUS",
+      "status": "FUTURE_UNEXPECTED_STATUS"
+    },
+    "E2E-09": {
+      "action_role": "RETAINED_BACKUP",
+      "exhausted": false,
+      "normalized": "SOURCE_INVALID",
+      "status": "SOURCE_INVALID"
+    },
+    "E2E-10": {
+      "action_role": "RETAINED_BACKUP",
+      "exhausted": false,
+      "normalized": "PROVENANCE_MISSING",
+      "status": "PROVENANCE_MISSING"
+    },
+    "E2E-11": {
+      "action_role": "RETAINED_BACKUP",
+      "exhausted": true,
+      "normalized": "NO_ALTERNATIVE_AVAILABLE",
+      "status": "NO_ALTERNATIVE_AVAILABLE"
+    },
+    "E2E-12": {
+      "action_role": "ALTERNATIVE_NAVIGATION",
+      "exhausted": false,
+      "normalized": "ALT_AVAILABLE",
+      "status": "ALT_AVAILABLE"
+    }
+  },
+  "synthetic_candidate_count": 0
+}

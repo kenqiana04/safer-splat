@@ -1,0 +1,37 @@
+{
+  "schema": "POST_R2_SELECTED_CPU_TEST_RESULTS_V2",
+  "total": 229,
+  "passed": 227,
+  "failed": 2,
+  "runtime_regression": {
+    "total": 133,
+    "passed": 133,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "post_r2_scenario_level": {
+    "total": 96,
+    "passed": 94,
+    "failed": 2,
+    "failed_ids": [
+      "TRACE-F02",
+      "TRACE-F03"
+    ],
+    "status": "FAIL_TRACE_CONTRACT"
+  },
+  "unittest_wrapper": {
+    "test_methods": 1,
+    "subtest_failures": 2,
+    "failfast": false
+  },
+  "runtime_correction_count": 0,
+  "test_expectation_correction_count": 0,
+  "real_execution_counts": {
+    "active": 0,
+    "bypass": 0,
+    "gpu": 0,
+    "official100": 0,
+    "oracle": 0,
+    "smoke": 0
+  }
+}

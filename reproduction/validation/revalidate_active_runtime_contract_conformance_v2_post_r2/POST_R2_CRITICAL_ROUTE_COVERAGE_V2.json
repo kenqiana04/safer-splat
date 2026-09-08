@@ -1,0 +1,12 @@
+{
+  "chain": "actual typed event -> actual Supervisor resolver -> actual RoutingDecision destination; E2E cases execute public destinations",
+  "classification": {
+    "META_STRUCTURAL": 0,
+    "PUBLIC_RUNTIME_CRITICAL": 38,
+    "START_REPAIR": 5
+  },
+  "critical_dynamic_coverage_percent": 100.0,
+  "critical_dynamic_passed": 38,
+  "critical_dynamic_total": 38,
+  "schema": "POST_R2_CRITICAL_ROUTE_COVERAGE_V2"
+}

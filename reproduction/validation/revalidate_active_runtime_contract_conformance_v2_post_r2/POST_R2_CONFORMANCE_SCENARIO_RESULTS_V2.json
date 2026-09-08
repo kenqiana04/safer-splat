@@ -1,0 +1,1607 @@
+{
+  "execution_counts": {
+    "gpu": 0,
+    "official100": 0,
+    "real_active": 0,
+    "real_bypass": 0,
+    "runtime_correction": 0,
+    "scientific_oracle": 0,
+    "smoke": 0
+  },
+  "failed_count": 2,
+  "passed_count": 94,
+  "results": [
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "SA_SAFE",
+        "observed_rule": "SA_SAFE"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-SA_SAFE"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "SA_REPAIR",
+        "observed_rule": "SA_REPAIR"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-SA_REPAIR"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "REPAIR_PASS",
+        "observed_rule": "REPAIR_PASS"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-REPAIR_PASS"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "REPAIR_FAIL",
+        "observed_rule": "REPAIR_FAIL"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-REPAIR_FAIL"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "REPAIR_UNKNOWN",
+        "observed_rule": "REPAIR_UNKNOWN"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-REPAIR_UNKNOWN"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "R0_DIAGNOSTIC",
+        "observed_rule": "R0_DIAGNOSTIC"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-R0_DIAGNOSTIC"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "L1_PASS",
+        "observed_rule": "L1_PASS"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-L1_PASS"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "L1_FAIL",
+        "observed_rule": "L1_FAIL"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-L1_FAIL"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "L1_UNKNOWN_GLOBAL",
+        "observed_rule": "L1_UNKNOWN_GLOBAL"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-L1_UNKNOWN_GLOBAL"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "L1_UNKNOWN_HEALTH",
+        "observed_rule": "L1_UNKNOWN_HEALTH"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-L1_UNKNOWN_HEALTH"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "L1_UNKNOWN_UNRESOLVED",
+        "observed_rule": "L1_UNKNOWN_UNRESOLVED"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-L1_UNKNOWN_UNRESOLVED"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "P0_PRIMARY",
+        "observed_rule": "P0_PRIMARY"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-P0_PRIMARY"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "P0_NONE",
+        "observed_rule": "P0_NONE"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-P0_NONE"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "C0_PASS",
+        "observed_rule": "C0_PASS"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-C0_PASS"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "C0_FAIL_LOCAL_ALT",
+        "observed_rule": "C0_FAIL_LOCAL_ALT"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-C0_FAIL_LOCAL_ALT"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "C0_FAIL_LOCAL_ARB",
+        "observed_rule": "C0_FAIL_LOCAL_ARB"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-C0_FAIL_LOCAL_ARB"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "C0_UNKNOWN_LOCAL_ALT",
+        "observed_rule": "C0_UNKNOWN_LOCAL_ALT"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-C0_UNKNOWN_LOCAL_ALT"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "C0_UNKNOWN_LOCAL_ARB",
+        "observed_rule": "C0_UNKNOWN_LOCAL_ARB"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-C0_UNKNOWN_LOCAL_ARB"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "C0_UNKNOWN_GLOBAL",
+        "observed_rule": "C0_UNKNOWN_GLOBAL"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-C0_UNKNOWN_GLOBAL"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "L2_PASS",
+        "observed_rule": "L2_PASS"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-L2_PASS"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "L2_FAIL_ALT",
+        "observed_rule": "L2_FAIL_ALT"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-L2_FAIL_ALT"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "L2_FAIL_ARB",
+        "observed_rule": "L2_FAIL_ARB"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-L2_FAIL_ARB"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "L2_UNKNOWN_LOCAL_ALT",
+        "observed_rule": "L2_UNKNOWN_LOCAL_ALT"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-L2_UNKNOWN_LOCAL_ALT"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "L2_UNKNOWN_LOCAL_ARB",
+        "observed_rule": "L2_UNKNOWN_LOCAL_ARB"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-L2_UNKNOWN_LOCAL_ARB"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "L2_UNKNOWN_GLOBAL",
+        "observed_rule": "L2_UNKNOWN_GLOBAL"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-L2_UNKNOWN_GLOBAL"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "L3_FOUND",
+        "observed_rule": "L3_FOUND"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-L3_FOUND"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "L3_ABSENT_ALT",
+        "observed_rule": "L3_ABSENT_ALT"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-L3_ABSENT_ALT"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "L3_ABSENT_ARB",
+        "observed_rule": "L3_ABSENT_ARB"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-L3_ABSENT_ARB"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "L3_UNKNOWN_LOCAL_ALT",
+        "observed_rule": "L3_UNKNOWN_LOCAL_ALT"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-L3_UNKNOWN_LOCAL_ALT"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "L3_UNKNOWN_LOCAL_ARB",
+        "observed_rule": "L3_UNKNOWN_LOCAL_ARB"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-L3_UNKNOWN_LOCAL_ARB"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "L3_UNKNOWN_GLOBAL",
+        "observed_rule": "L3_UNKNOWN_GLOBAL"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-L3_UNKNOWN_GLOBAL"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "ALT_NEXT",
+        "observed_rule": "ALT_NEXT"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-ALT_NEXT"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "ALT_DONE",
+        "observed_rule": "ALT_DONE"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-ALT_DONE"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "ALT_GUARD",
+        "observed_rule": "ALT_GUARD"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-ALT_GUARD"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "ARB_NAV",
+        "observed_rule": "ARB_NAV"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-ARB_NAV"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "ARB_BACKUP",
+        "observed_rule": "ARB_BACKUP"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-ARB_BACKUP"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "ARB_TERMINAL",
+        "observed_rule": "ARB_TERMINAL"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-ARB_TERMINAL"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "ARB_EVAL_TERMINAL",
+        "observed_rule": "ARB_EVAL_TERMINAL"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-ARB_EVAL_TERMINAL"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "ARB_BOUNDARY",
+        "observed_rule": "ARB_BOUNDARY"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-ARB_BOUNDARY"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "BACKUP_COMMIT",
+        "observed_rule": "BACKUP_COMMIT"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-BACKUP_COMMIT"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "TERM_ELIGIBLE",
+        "observed_rule": "TERM_ELIGIBLE"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-TERM_ELIGIBLE"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "TERM_NOT_ELIGIBLE",
+        "observed_rule": "TERM_NOT_ELIGIBLE"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-TERM_NOT_ELIGIBLE"
+    },
+    {
+      "detail": {
+        "checks": {
+          "action_authority": true,
+          "commit_allowed": true,
+          "destination_phase": true,
+          "guard": true,
+          "new_backup_created": true,
+          "old_backup_retained": true,
+          "reason_scope": true,
+          "rule_id": true,
+          "source_phase": true,
+          "theorem_interpretation": true
+        },
+        "expected_rule": "TERM_UNKNOWN",
+        "observed_rule": "TERM_UNKNOWN"
+      },
+      "domain": "transition_43",
+      "passed": true,
+      "scenario_id": "ROUTE-TERM_UNKNOWN"
+    },
+    {
+      "detail": {
+        "status": "BLOCKED_MISSING"
+      },
+      "domain": "exact_one",
+      "passed": true,
+      "scenario_id": "ROUTE-MISSING"
+    },
+    {
+      "detail": {
+        "status": "BLOCKED_AMBIGUOUS"
+      },
+      "domain": "exact_one",
+      "passed": true,
+      "scenario_id": "ROUTE-AMBIGUOUS"
+    },
+    {
+      "detail": {
+        "action_role": "PRIMARY_NAVIGATION",
+        "counters": {
+          "alternative": 0,
+          "bind": 1,
+          "l1": 1,
+          "l2": 1,
+          "l3": 1,
+          "proposal": 1,
+          "terminal": 0
+        },
+        "phases": [
+          "CYCLE_BEGIN",
+          "L1_IMMEDIATE_CERTIFICATION",
+          "PRIMARY_PROPOSAL",
+          "PRIMARY_C0",
+          "PRIMARY_L2",
+          "PRIMARY_L3",
+          "BACKUP_VALIDATION",
+          "ARBITRATION",
+          "COMMIT",
+          "TRACE_APPEND",
+          "CYCLE_COMPLETE"
+        ]
+      },
+      "domain": "e2e_core",
+      "passed": true,
+      "scenario_id": "E2E-01"
+    },
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "cursor": 1,
+        "source": "L2_FAIL"
+      },
+      "domain": "e2e_core",
+      "passed": true,
+      "scenario_id": "E2E-02"
+    },
+    {
+      "detail": {
+        "calls": 1
+      },
+      "domain": "e2e_core",
+      "passed": true,
+      "scenario_id": "E2E-03"
+    },
+    {
+      "detail": {
+        "trace_count": 1
+      },
+      "domain": "e2e_core",
+      "passed": true,
+      "scenario_id": "E2E-04"
+    },
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP"
+      },
+      "domain": "e2e_core",
+      "passed": true,
+      "scenario_id": "E2E-05"
+    },
+    {
+      "detail": {
+        "scope": "UNRESOLVED_SCOPE"
+      },
+      "domain": "e2e_core",
+      "passed": true,
+      "scenario_id": "E2E-06"
+    },
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "failure": {
+          "authority_identity": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+          "candidate_identity": {
+            "value": "candidate:sha256:36dd078ee78aad6601b5ab0ddb829b262db56a67a11ca796c1caeabacc88ae50"
+          },
+          "cycle_index": 1,
+          "exception_type": "RuntimeError",
+          "failure_kind": "STAGE_EXCEPTION",
+          "original_reason": "post-r2 injected exception",
+          "reason_scope": "INFRASTRUCTURE_HEALTH",
+          "source_phase": "L2",
+          "stage_name": "L2",
+          "state_identity": {
+            "value": "state:sha256:d27f74a4793210e7270af1c8e2e601929b8fcc15452c3e36efcbe9a182d92fb8"
+          },
+          "trial_id": "trial-1",
+          "typed_reason": "STAGE_EXCEPTION:L2:RuntimeError"
+        },
+        "stage": "L2"
+      },
+      "domain": "e2e_extended",
+      "passed": true,
+      "scenario_id": "E2E-07"
+    },
+    {
+      "detail": {
+        "action_role": "CERTIFIED_TERMINAL"
+      },
+      "domain": "e2e_extended",
+      "passed": true,
+      "scenario_id": "E2E-08"
+    },
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "exhausted": false,
+        "normalized": "SOURCE_INVALID",
+        "status": "SOURCE_INVALID"
+      },
+      "domain": "e2e_extended",
+      "passed": true,
+      "scenario_id": "E2E-09"
+    },
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "exhausted": false,
+        "normalized": "PROVENANCE_MISSING",
+        "status": "PROVENANCE_MISSING"
+      },
+      "domain": "e2e_extended",
+      "passed": true,
+      "scenario_id": "E2E-10"
+    },
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "exhausted": true,
+        "normalized": "NO_ALTERNATIVE_AVAILABLE",
+        "status": "NO_ALTERNATIVE_AVAILABLE"
+      },
+      "domain": "e2e_extended",
+      "passed": true,
+      "scenario_id": "E2E-11"
+    },
+    {
+      "detail": {
+        "action_role": "ALTERNATIVE_NAVIGATION",
+        "exhausted": false,
+        "normalized": "ALT_AVAILABLE",
+        "status": "ALT_AVAILABLE"
+      },
+      "domain": "e2e_extended",
+      "passed": true,
+      "scenario_id": "E2E-12"
+    },
+    {
+      "detail": {
+        "boundary": false,
+        "ready": true,
+        "status": "PASS"
+      },
+      "domain": "start_r0",
+      "passed": true,
+      "scenario_id": "START-PASS"
+    },
+    {
+      "detail": {
+        "boundary": true,
+        "ready": false,
+        "status": "FAIL"
+      },
+      "domain": "start_r0",
+      "passed": true,
+      "scenario_id": "START-FAIL"
+    },
+    {
+      "detail": {
+        "boundary": true,
+        "ready": false,
+        "status": "UNKNOWN"
+      },
+      "domain": "start_r0",
+      "passed": true,
+      "scenario_id": "START-UNKNOWN"
+    },
+    {
+      "detail": {
+        "reason": "TRIAL_START_IDENTITY_MISMATCH"
+      },
+      "domain": "start_r0",
+      "passed": true,
+      "scenario_id": "START-IDENTITY"
+    },
+    {
+      "detail": {
+        "reason": "DEADLINE_PROFILE_REQUIRED"
+      },
+      "domain": "start_r0",
+      "passed": true,
+      "scenario_id": "START-DEADLINE-PROFILE"
+    },
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "cursor": 1,
+        "source": "L1_FAIL"
+      },
+      "domain": "fallback",
+      "passed": true,
+      "scenario_id": "L1-FAIL-BACKUP"
+    },
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "cursor": 1,
+        "source": "L3_FAIL"
+      },
+      "domain": "fallback",
+      "passed": true,
+      "scenario_id": "L3-FAIL-BACKUP"
+    },
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "exhausted": false,
+        "normalized": "UNRESOLVED_STATUS",
+        "status": "FUTURE_UNEXPECTED_STATUS"
+      },
+      "domain": "alternative",
+      "passed": true,
+      "scenario_id": "ALT-UNRESOLVED"
+    },
+    {
+      "detail": {
+        "calls": 0
+      },
+      "domain": "terminal",
+      "passed": true,
+      "scenario_id": "TERM-NORMAL-NOCALL"
+    },
+    {
+      "detail": {
+        "calls": 0
+      },
+      "domain": "terminal",
+      "passed": true,
+      "scenario_id": "TERM-BACKUP-NOCALL"
+    },
+    {
+      "detail": {
+        "fallback_context": [
+          true
+        ],
+        "routes": [
+          "L1_PASS",
+          "P0_NONE",
+          "ARB_EVAL_TERMINAL",
+          "TERM_NOT_ELIGIBLE"
+        ]
+      },
+      "domain": "terminal",
+      "passed": true,
+      "scenario_id": "TERM-ROUTE-DERIVED"
+    },
+    {
+      "detail": {
+        "rule": "ARB_BOUNDARY",
+        "state": "NONE"
+      },
+      "domain": "backup",
+      "passed": true,
+      "scenario_id": "BACKUP-NONE"
+    },
+    {
+      "detail": {
+        "rule": "ARB_BOUNDARY",
+        "state": "INVALID"
+      },
+      "domain": "backup",
+      "passed": true,
+      "scenario_id": "BACKUP-INVALID"
+    },
+    {
+      "detail": {
+        "rule": "ARB_BOUNDARY",
+        "state": "EXHAUSTED"
+      },
+      "domain": "backup",
+      "passed": true,
+      "scenario_id": "BACKUP-EXHAUSTED"
+    },
+    {
+      "detail": {
+        "committed": true,
+        "count": 1,
+        "role": "nav"
+      },
+      "domain": "trace",
+      "passed": true,
+      "scenario_id": "TRACE-NAV"
+    },
+    {
+      "detail": {
+        "role": "backup"
+      },
+      "domain": "trace",
+      "passed": true,
+      "scenario_id": "TRACE-BACKUP"
+    },
+    {
+      "detail": {
+        "committed": true,
+        "count": 1,
+        "role": "terminal"
+      },
+      "domain": "trace",
+      "passed": true,
+      "scenario_id": "TRACE-TERMINAL"
+    },
+    {
+      "detail": {
+        "committed": false,
+        "count": 1,
+        "role": "boundary"
+      },
+      "domain": "trace",
+      "passed": true,
+      "scenario_id": "TRACE-BOUNDARY"
+    },
+    {
+      "detail": {
+        "execution_fact": "NO_ACTION_PATH",
+        "plant_count": 0
+      },
+      "domain": "trace_fault",
+      "passed": true,
+      "scenario_id": "TRACE-F01"
+    },
+    {
+      "detail": {
+        "escaped": "trace append failed after plant",
+        "plant_count": 1,
+        "token_active": true,
+        "trace_count": 0
+      },
+      "domain": "trace_fault",
+      "passed": false,
+      "scenario_id": "TRACE-F02"
+    },
+    {
+      "detail": {
+        "finalize_exception": "trace finalize failure",
+        "prior_commit": true,
+        "prior_trace_count": 1,
+        "session_status": "READY"
+      },
+      "domain": "trace_fault",
+      "passed": false,
+      "scenario_id": "TRACE-F03"
+    },
+    {
+      "detail": {
+        "body_sha256": "c7e13b88fd80aba1d22c9938ae9e04d267175543d031b0003c8f164f075e00d4",
+        "normalized_ast_sha256": "16540373de329db5e731a4e9a91550b9195e4157cce645370f2bbfe1683cfdec",
+        "supervisor_blob": "173837401de824fcdbdb8b5b7b9d4dfb8bb43037"
+      },
+      "domain": "bypass",
+      "passed": true,
+      "scenario_id": "BYPASS-PRESERVATION"
+    },
+    {
+      "detail": {
+        "controller_radius": 0.015,
+        "effective_radius": 0.025,
+        "margin": 0.01,
+        "rho_seg": 0.0,
+        "u_max": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "u_min": [
+          -0.1,
+          -0.1,
+          -0.1
+        ]
+      },
+      "domain": "numeric",
+      "passed": true,
+      "scenario_id": "NUMERIC-AUTHORITY"
+    },
+    {
+      "detail": {
+        "kind": "before_start",
+        "reason": "TRIAL_NOT_STARTED"
+      },
+      "domain": "session",
+      "passed": true,
+      "scenario_id": "SESSION-BEFORE-START"
+    },
+    {
+      "detail": {
+        "kind": "double_start",
+        "reason": "TRIAL_ALREADY_STARTED"
+      },
+      "domain": "session",
+      "passed": true,
+      "scenario_id": "SESSION-DOUBLE-START"
+    },
+    {
+      "detail": {
+        "kind": "cycle_mismatch",
+        "reason": "CYCLE_OR_SNAPSHOT_IDENTITY_MISMATCH"
+      },
+      "domain": "session",
+      "passed": true,
+      "scenario_id": "SESSION-CYCLE-MISMATCH"
+    },
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "failure": {
+          "authority_identity": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+          "candidate_identity": null,
+          "cycle_index": 1,
+          "exception_type": "RuntimeError",
+          "failure_kind": "STAGE_EXCEPTION",
+          "original_reason": "post-r2 injected exception",
+          "reason_scope": "INFRASTRUCTURE_HEALTH",
+          "source_phase": "L1",
+          "stage_name": "L1",
+          "state_identity": {
+            "value": "state:sha256:d27f74a4793210e7270af1c8e2e601929b8fcc15452c3e36efcbe9a182d92fb8"
+          },
+          "trial_id": "trial-1",
+          "typed_reason": "STAGE_EXCEPTION:L1:RuntimeError"
+        },
+        "stage": "L1"
+      },
+      "domain": "exception",
+      "passed": true,
+      "scenario_id": "EXC-L1"
+    },
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "failure": {
+          "authority_identity": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+          "candidate_identity": null,
+          "cycle_index": 1,
+          "exception_type": "RuntimeError",
+          "failure_kind": "STAGE_EXCEPTION",
+          "original_reason": "post-r2 injected exception",
+          "reason_scope": "INFRASTRUCTURE_HEALTH",
+          "source_phase": "PRIMARY_PROPOSAL",
+          "stage_name": "PRIMARY_PROPOSAL",
+          "state_identity": {
+            "value": "state:sha256:d27f74a4793210e7270af1c8e2e601929b8fcc15452c3e36efcbe9a182d92fb8"
+          },
+          "trial_id": "trial-1",
+          "typed_reason": "STAGE_EXCEPTION:PRIMARY_PROPOSAL:RuntimeError"
+        },
+        "stage": "PRIMARY_PROPOSAL"
+      },
+      "domain": "exception",
+      "passed": true,
+      "scenario_id": "EXC-PRIMARY_PROPOSAL"
+    },
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "failure": {
+          "authority_identity": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+          "candidate_identity": {
+            "value": "candidate:sha256:36dd078ee78aad6601b5ab0ddb829b262db56a67a11ca796c1caeabacc88ae50"
+          },
+          "cycle_index": 1,
+          "exception_type": "RuntimeError",
+          "failure_kind": "STAGE_EXCEPTION",
+          "original_reason": "post-r2 injected exception",
+          "reason_scope": "INFRASTRUCTURE_HEALTH",
+          "source_phase": "C0",
+          "stage_name": "C0",
+          "state_identity": {
+            "value": "state:sha256:d27f74a4793210e7270af1c8e2e601929b8fcc15452c3e36efcbe9a182d92fb8"
+          },
+          "trial_id": "trial-1",
+          "typed_reason": "STAGE_EXCEPTION:C0:RuntimeError"
+        },
+        "stage": "C0"
+      },
+      "domain": "exception",
+      "passed": true,
+      "scenario_id": "EXC-C0"
+    },
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "failure": {
+          "authority_identity": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+          "candidate_identity": {
+            "value": "candidate:sha256:36dd078ee78aad6601b5ab0ddb829b262db56a67a11ca796c1caeabacc88ae50"
+          },
+          "cycle_index": 1,
+          "exception_type": "RuntimeError",
+          "failure_kind": "STAGE_EXCEPTION",
+          "original_reason": "post-r2 injected exception",
+          "reason_scope": "INFRASTRUCTURE_HEALTH",
+          "source_phase": "L2",
+          "stage_name": "L2",
+          "state_identity": {
+            "value": "state:sha256:d27f74a4793210e7270af1c8e2e601929b8fcc15452c3e36efcbe9a182d92fb8"
+          },
+          "trial_id": "trial-1",
+          "typed_reason": "STAGE_EXCEPTION:L2:RuntimeError"
+        },
+        "stage": "L2"
+      },
+      "domain": "exception",
+      "passed": true,
+      "scenario_id": "EXC-L2"
+    },
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "failure": {
+          "authority_identity": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+          "candidate_identity": {
+            "value": "candidate:sha256:36dd078ee78aad6601b5ab0ddb829b262db56a67a11ca796c1caeabacc88ae50"
+          },
+          "cycle_index": 1,
+          "exception_type": "RuntimeError",
+          "failure_kind": "STAGE_EXCEPTION",
+          "original_reason": "post-r2 injected exception",
+          "reason_scope": "INFRASTRUCTURE_HEALTH",
+          "source_phase": "L3",
+          "stage_name": "L3",
+          "state_identity": {
+            "value": "state:sha256:d27f74a4793210e7270af1c8e2e601929b8fcc15452c3e36efcbe9a182d92fb8"
+          },
+          "trial_id": "trial-1",
+          "typed_reason": "STAGE_EXCEPTION:L3:RuntimeError"
+        },
+        "stage": "L3"
+      },
+      "domain": "exception",
+      "passed": true,
+      "scenario_id": "EXC-L3"
+    },
+    {
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "failure": {
+          "authority_identity": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+          "candidate_identity": null,
+          "cycle_index": 1,
+          "exception_type": "RuntimeError",
+          "failure_kind": "STAGE_EXCEPTION",
+          "original_reason": "post-r2 injected exception",
+          "reason_scope": "INFRASTRUCTURE_HEALTH",
+          "source_phase": "ALT_SEARCH",
+          "stage_name": "ALT_SEARCH",
+          "state_identity": {
+            "value": "state:sha256:d27f74a4793210e7270af1c8e2e601929b8fcc15452c3e36efcbe9a182d92fb8"
+          },
+          "trial_id": "trial-1",
+          "typed_reason": "STAGE_EXCEPTION:ALT_SEARCH:RuntimeError"
+        },
+        "stage": "ALT_SEARCH"
+      },
+      "domain": "exception",
+      "passed": true,
+      "scenario_id": "EXC-ALT_SEARCH"
+    },
+    {
+      "detail": {
+        "action_role": null,
+        "failure": {
+          "authority_identity": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+          "candidate_identity": null,
+          "cycle_index": 0,
+          "exception_type": "RuntimeError",
+          "failure_kind": "STAGE_EXCEPTION",
+          "original_reason": "post-r2 injected exception",
+          "reason_scope": "INFRASTRUCTURE_HEALTH",
+          "source_phase": "TERMINAL_EVALUATION",
+          "stage_name": "TERMINAL_EVALUATION",
+          "state_identity": {
+            "value": "state:sha256:760a1e69c298884077e502992ad397e38602ad070cdf669d9095bdc75649e0f5"
+          },
+          "trial_id": "trial-1",
+          "typed_reason": "STAGE_EXCEPTION:TERMINAL_EVALUATION:RuntimeError"
+        },
+        "stage": "TERMINAL_EVALUATION"
+      },
+      "domain": "exception",
+      "passed": true,
+      "scenario_id": "EXC-TERMINAL_EVALUATION"
+    },
+    {
+      "detail": {
+        "action_role": null,
+        "failure": {
+          "authority_identity": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+          "candidate_identity": null,
+          "cycle_index": 0,
+          "exception_type": "RuntimeError",
+          "failure_kind": "STAGE_EXCEPTION",
+          "original_reason": "post-r2 injected exception",
+          "reason_scope": "INFRASTRUCTURE_HEALTH",
+          "source_phase": "ARBITRATION",
+          "stage_name": "ARBITRATION",
+          "state_identity": {
+            "value": "state:sha256:760a1e69c298884077e502992ad397e38602ad070cdf669d9095bdc75649e0f5"
+          },
+          "trial_id": "trial-1",
+          "typed_reason": "STAGE_EXCEPTION:ARBITRATION:RuntimeError"
+        },
+        "stage": "ARBITRATION"
+      },
+      "domain": "exception",
+      "passed": true,
+      "scenario_id": "EXC-ARBITRATION"
+    },
+    {
+      "detail": {
+        "expected": "GLOBAL_AUTHORITY_OR_EVIDENCE",
+        "observed": "GLOBAL_AUTHORITY_OR_EVIDENCE",
+        "reason": "MAP_IDENTITY_MISMATCH"
+      },
+      "domain": "reason_scope",
+      "passed": true,
+      "scenario_id": "SCOPE-091"
+    },
+    {
+      "detail": {
+        "expected": "CANDIDATE_LOCAL_COMPUTATION",
+        "observed": "CANDIDATE_LOCAL_COMPUTATION",
+        "reason": "CANDIDATE_NONFINITE_OR_WRONG_DIMENSION"
+      },
+      "domain": "reason_scope",
+      "passed": true,
+      "scenario_id": "SCOPE-092"
+    },
+    {
+      "detail": {
+        "expected": "INFRASTRUCTURE_HEALTH",
+        "observed": "INFRASTRUCTURE_HEALTH",
+        "reason": "L2_BACKEND_EXCEPTION:RuntimeError"
+      },
+      "domain": "reason_scope",
+      "passed": true,
+      "scenario_id": "SCOPE-093"
+    },
+    {
+      "detail": {
+        "expected": "UNRESOLVED_SCOPE",
+        "observed": "UNRESOLVED_SCOPE",
+        "reason": "opaque missing timeout exception unknown"
+      },
+      "domain": "reason_scope",
+      "passed": true,
+      "scenario_id": "SCOPE-094"
+    },
+    {
+      "detail": {
+        "expected": "UNRESOLVED_SCOPE",
+        "observed": "UNRESOLVED_SCOPE",
+        "reason": "timeout"
+      },
+      "domain": "reason_scope",
+      "passed": true,
+      "scenario_id": "SCOPE-095"
+    }
+  ],
+  "scenario_count": 96,
+  "schema": "POST_R2_CONFORMANCE_SCENARIO_RESULTS_V2",
+  "sweep_mode": "COMPLETE_INDEPENDENT_MATRIX"
+}

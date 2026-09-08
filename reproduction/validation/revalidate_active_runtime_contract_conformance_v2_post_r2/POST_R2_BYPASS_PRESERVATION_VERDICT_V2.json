@@ -1,0 +1,18 @@
+{
+  "PR119_pairs_steps": "5 pairs / 732 compared steps",
+  "R_BYPASS_001": "RESOLVED_CANONICAL_SOURCE_IDENTITY",
+  "ast_hash_role": "diagnostic only",
+  "detail": {
+    "body_sha256": "c7e13b88fd80aba1d22c9938ae9e04d267175543d031b0003c8f164f075e00d4",
+    "normalized_ast_sha256": "16540373de329db5e731a4e9a91550b9195e4157cce645370f2bbfe1683cfdec",
+    "supervisor_blob": "173837401de824fcdbdb8b5b7b9d4dfb8bb43037"
+  },
+  "primary_evidence": [
+    "canonical source/body digest",
+    "behavior-relevant normalized source",
+    "relevant blob identity"
+  ],
+  "real_bypass_pairs_run": 0,
+  "schema": "POST_R2_BYPASS_PRESERVATION_VERDICT_V2",
+  "status": "PASS_BYPASS_PRIOR_EVIDENCE_REUSABLE"
+}

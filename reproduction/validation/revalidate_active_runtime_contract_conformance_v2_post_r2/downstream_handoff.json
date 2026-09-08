@@ -1,0 +1,16 @@
+{
+  "blocked_domain": "TRACE_CONTRACT",
+  "preserve": [
+    "PR119 BYPASS",
+    "PR120 historical BLOCK",
+    "PR123 historical BLOCK",
+    "PR124 audit",
+    "PR125 R1",
+    "PR126 R2"
+  ],
+  "required_next_task": "DESIGN_ACTIVE_RUNTIME_TRACE_COMMIT_ATOMICITY_V2",
+  "runtime_mutation_authorized": false,
+  "schema": "POST_R2_ACTIVE_RECONFORMANCE_DOWNSTREAM_HANDOFF_V2",
+  "smoke_authorized": false,
+  "source_branch": "revalidate-active-runtime-contract-conformance-v2-post-r2"
+}
