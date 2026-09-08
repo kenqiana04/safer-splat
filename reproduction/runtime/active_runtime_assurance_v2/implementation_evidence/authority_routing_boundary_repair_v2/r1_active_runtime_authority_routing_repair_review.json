@@ -1,0 +1,27 @@
+{
+  "BYPASS_REVALIDATION_REQUIRED": false,
+  "D-ALT-001": "OPEN_DEFERRED_TO_R2",
+  "D-AUTH-001": "closed by fact-only Coordinator and Supervisor-owned interpretation",
+  "D-EXC-001": "OPEN_DEFERRED_TO_R2",
+  "D-TRANS-001": "closed by 43-row metadata carrier",
+  "alternative_permission_owner": "Supervisor",
+  "arbitrate_preserved": true,
+  "coordinator_raw_facts": [
+    "deadline",
+    "backup evidence",
+    "candidate evidence",
+    "terminal evidence",
+    "reason scope"
+  ],
+  "deadline_owner": "Supervisor",
+  "exact_one": "preserved",
+  "forbidden_runtime_unchanged": true,
+  "full_reconformance_allowed": false,
+  "navigation_eligibility_owner": "Supervisor",
+  "next_task": "REPAIR_ACTIVE_RUNTIME_EXCEPTION_AND_UNKNOWN_ROUTING_V2",
+  "repeated_state_owner": "Supervisor.routing_guard_block",
+  "round_trip": "43/43 exact",
+  "smoke_allowed": false,
+  "unsafe_destination_derivation": false,
+  "verdict": "PASS_R1_AUTHORITY_ROUTING_BOUNDARY_REPAIRED"
+}

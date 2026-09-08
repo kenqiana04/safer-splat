@@ -1,0 +1,274 @@
+{
+  "allowed_file_pre_repair_shas": {
+    "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py": "f87239c53ca0f719e556bd5a6aa373ab814ff9ed",
+    "reproduction/runtime/active_runtime_assurance_v2/runtime_types.py": "2bc93029827162def527393ad29cd727f17d3a10",
+    "reproduction/runtime/active_runtime_assurance_v2/supervisor.py": "cfc0cbe1f9080158c73b2493e5c1483bbb694fe8"
+  },
+  "authority_facts": {
+    "confirmed_defects": 4,
+    "gpu": 0,
+    "official100": 0,
+    "oracle": 0,
+    "pr124_audit_completeness": "A-Q_COMPLETE",
+    "real_active": 0,
+    "runtime_diff": 0,
+    "severity": {
+      "CRITICAL": 3,
+      "HIGH": 1
+    },
+    "smoke": 0
+  },
+  "bypass_preservation_source_identities": {
+    "arbitrate": {
+      "ast_sha256": "d71adeb79e622256a3113506b07b76bf4a9617252d2406ed90d153c1794599a3",
+      "source_sha256": "eea2968a85c563367e4b6ccdf88a54405672b0788fe00df9e2f9c12c7260badf"
+    },
+    "bypass_decision": {
+      "ast_sha256": "44e08edc0ea4c18d259d2e35faa4a4e022b4c7434162b30708ef412c6143adf0",
+      "source_sha256": "e2744698d34c8c63ce762308f49cbfea64fdf8d1f98fe9b5a3c27659f91f561a"
+    },
+    "certify_candidate": {
+      "ast_sha256": "56df2c46a96b846c7a6ad42e836674470ae429656df650546e9997691341f33f",
+      "source_sha256": "597220f01c115ecec4a363864bd1dad56e28f6983477d839c54b26efac0fb7dc"
+    }
+  },
+  "defect_allocation": {
+    "R1": [
+      "D-AUTH-001",
+      "D-TRANS-001"
+    ],
+    "R2": [
+      "D-EXC-001",
+      "D-ALT-001"
+    ]
+  },
+  "direct_upstream": {
+    "base": "revalidate-active-runtime-contract-conformance-v2",
+    "base_sha": "3b01171d7d25c7f81efd53d0486ab95d7c73c7a9",
+    "branch": "audit-active-runtime-pre-repair-architecture-v2",
+    "head": "cef9dddc4ceb20e22f5962ee0740d92b91a3ff86",
+    "pr": 124,
+    "repository": "kenqiana04/safer-splat",
+    "state": "OPEN_DRAFT",
+    "title": "[Draft] Audit active runtime pre-repair architecture V2"
+  },
+  "forbidden_runtime_file_shas": {
+    "reproduction/runtime/active_runtime_assurance_v2/active_runner.py": "64b747656b031881123c92587d1beca6e742be5e",
+    "reproduction/runtime/active_runtime_assurance_v2/alternative_provider.py": "32da73b46fc7c5b0fb4b0ac7a5d583a0f3dba980",
+    "reproduction/runtime/active_runtime_assurance_v2/authority_registry.py": "c444b077fde51dcffc3c057302d1336dcb7ce0c9",
+    "reproduction/runtime/active_runtime_assurance_v2/backup_token_store.py": "3af371733638bcd6aac9240db38328d9e2f6154f",
+    "reproduction/runtime/active_runtime_assurance_v2/c0_admission.py": "3cbf74596980b22eb94d3233134f270ce6cc7f9f",
+    "reproduction/runtime/active_runtime_assurance_v2/deadline_runtime.py": "cf81341b655deb7b8b5a6261eafb6171580dbd45",
+    "reproduction/runtime/active_runtime_assurance_v2/diagnostic_r0.py": "8556cdb5aa9082e323d47419736ceec5bb7660ae",
+    "reproduction/runtime/active_runtime_assurance_v2/l1_runtime.py": "6a477fb4fd84f6c04c0e68a586e43baf6d5aa77c",
+    "reproduction/runtime/active_runtime_assurance_v2/l2_runtime.py": "b7b26075ea01878deea39a12f66b5990c0d08de1",
+    "reproduction/runtime/active_runtime_assurance_v2/l3_runtime.py": "93db2095cfc3102b37f35bfef91a611786de71d2",
+    "reproduction/runtime/active_runtime_assurance_v2/plant_commit.py": "f9116db0690983252ea0f60d286399b71d644134",
+    "reproduction/runtime/active_runtime_assurance_v2/primary_proposal_adapter.py": "2de4ad2cbf92a71affd8a2d2630094f9a6d29936",
+    "reproduction/runtime/active_runtime_assurance_v2/run.py": null,
+    "reproduction/runtime/active_runtime_assurance_v2/start_admission.py": "40e6774bc37cae76758db97ee3db43a48e373d55",
+    "reproduction/runtime/active_runtime_assurance_v2/terminal_runtime.py": "9cbc9769970626ecee600e83909655f44e75466d",
+    "reproduction/runtime/active_runtime_assurance_v2/trace_writer.py": "f7d1c768a28d36ab1ef88614bd01c8722e9ea292"
+  },
+  "pr107_transition_table": {
+    "git_blob": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+    "path": "reproduction/specification/method_logic_closure_v2/STATE_TRANSITION_TABLE_V2.csv",
+    "row_count": 43,
+    "sha256": "0dc77f53fe33b94f8c997f4a4c50c7f2fb5d72fb95113dd6e8d7856525d6ad72",
+    "unique_rule_ids": true
+  },
+  "pr110_deadline_contract": {
+    "git_blob": "e07f0f29b2879b05da5623304927c7c239b9b0ae",
+    "path": "reproduction/specification/runtime_assurance_deadline_authority_v2/RUNTIME_ASSURANCE_DEADLINE_AUTHORITY_V2.json"
+  },
+  "pr111_alternative_authority": {
+    "git_blob": "bad6ea6fc635e09852b7253225f1b85197d6ad5f",
+    "path": "reproduction/specification/alternative_source_authority_v2/ALTERNATIVE_SOURCE_AUTHORITY_V2.json",
+    "taxonomy_blob": "cddd6e3b126123d14418652cf714b30a38801eca"
+  },
+  "pr121_routing_design": {
+    "git_blob": "777431c3ed1d33b546aced7f3df175bc554ae1cf",
+    "path": "reproduction/design/active_runtime_public_cycle_composition_v2/EXECUTABLE_TRANSITION_ROUTING_DESIGN_V2.json",
+    "sha256": "88985455e19b4a235e6ef742a1629b14c3db6ff3a5a4993544fa92050cf393b8"
+  },
+  "pr122_pre_repair_runtime_blobs": {
+    "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py": {
+      "git_blob": "f87239c53ca0f719e556bd5a6aa373ab814ff9ed",
+      "pr124_blob": "f87239c53ca0f719e556bd5a6aa373ab814ff9ed"
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/active_runner.py": {
+      "git_blob": "64b747656b031881123c92587d1beca6e742be5e",
+      "pr124_blob": "64b747656b031881123c92587d1beca6e742be5e"
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/alternative_provider.py": {
+      "git_blob": "32da73b46fc7c5b0fb4b0ac7a5d583a0f3dba980",
+      "pr124_blob": "32da73b46fc7c5b0fb4b0ac7a5d583a0f3dba980"
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/authority_registry.py": {
+      "git_blob": "c444b077fde51dcffc3c057302d1336dcb7ce0c9",
+      "pr124_blob": "c444b077fde51dcffc3c057302d1336dcb7ce0c9"
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/backup_token_store.py": {
+      "git_blob": "3af371733638bcd6aac9240db38328d9e2f6154f",
+      "pr124_blob": "3af371733638bcd6aac9240db38328d9e2f6154f"
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/c0_admission.py": {
+      "git_blob": "3cbf74596980b22eb94d3233134f270ce6cc7f9f",
+      "pr124_blob": "3cbf74596980b22eb94d3233134f270ce6cc7f9f"
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/deadline_runtime.py": {
+      "git_blob": "cf81341b655deb7b8b5a6261eafb6171580dbd45",
+      "pr124_blob": "cf81341b655deb7b8b5a6261eafb6171580dbd45"
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/diagnostic_r0.py": {
+      "git_blob": "8556cdb5aa9082e323d47419736ceec5bb7660ae",
+      "pr124_blob": "8556cdb5aa9082e323d47419736ceec5bb7660ae"
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/l1_runtime.py": {
+      "git_blob": "6a477fb4fd84f6c04c0e68a586e43baf6d5aa77c",
+      "pr124_blob": "6a477fb4fd84f6c04c0e68a586e43baf6d5aa77c"
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/l2_runtime.py": {
+      "git_blob": "b7b26075ea01878deea39a12f66b5990c0d08de1",
+      "pr124_blob": "b7b26075ea01878deea39a12f66b5990c0d08de1"
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/l3_runtime.py": {
+      "git_blob": "93db2095cfc3102b37f35bfef91a611786de71d2",
+      "pr124_blob": "93db2095cfc3102b37f35bfef91a611786de71d2"
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/plant_commit.py": {
+      "git_blob": "f9116db0690983252ea0f60d286399b71d644134",
+      "pr124_blob": "f9116db0690983252ea0f60d286399b71d644134"
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/primary_proposal_adapter.py": {
+      "git_blob": "2de4ad2cbf92a71affd8a2d2630094f9a6d29936",
+      "pr124_blob": "2de4ad2cbf92a71affd8a2d2630094f9a6d29936"
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/run.py": {
+      "git_blob": null,
+      "pr124_blob": null
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/runtime_types.py": {
+      "git_blob": "2bc93029827162def527393ad29cd727f17d3a10",
+      "pr124_blob": "2bc93029827162def527393ad29cd727f17d3a10"
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/start_admission.py": {
+      "git_blob": "40e6774bc37cae76758db97ee3db43a48e373d55",
+      "pr124_blob": "40e6774bc37cae76758db97ee3db43a48e373d55"
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/supervisor.py": {
+      "git_blob": "cfc0cbe1f9080158c73b2493e5c1483bbb694fe8",
+      "pr124_blob": "cfc0cbe1f9080158c73b2493e5c1483bbb694fe8"
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/terminal_runtime.py": {
+      "git_blob": "9cbc9769970626ecee600e83909655f44e75466d",
+      "pr124_blob": "9cbc9769970626ecee600e83909655f44e75466d"
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/trace_writer.py": {
+      "git_blob": "f7d1c768a28d36ab1ef88614bd01c8722e9ea292",
+      "pr124_blob": "f7d1c768a28d36ab1ef88614bd01c8722e9ea292"
+    }
+  },
+  "pr124_audit": {
+    "ACTIVE_RUNTIME_AUTHORITY_MAP_V2.csv": {
+      "git_blob": "ec308454c7058746f5d1e9d4c11dc619ab76ad2a",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/ACTIVE_RUNTIME_AUTHORITY_MAP_V2.csv",
+      "sha256": "47ebb278e39d4b8f0753e446bb3f7702bb80445dccbd3ea590e73178217d1ff9"
+    },
+    "COORDINATOR_FULL_POLICY_AUDIT_V2.csv": {
+      "git_blob": "21d6b22341ba0ae89a6883045e46f7bac71f3585",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/COORDINATOR_FULL_POLICY_AUDIT_V2.csv",
+      "sha256": "2996e92c4584fc522fa577aa0abb1b01bb41bc74084b667f7fb2d05b7bc14db4"
+    },
+    "DEADLINE_END_TO_END_AUTHORITY_AUDIT_V2.csv": {
+      "git_blob": "1b0aefeb4b24178f44fa7488545a135d932ccff0",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/DEADLINE_END_TO_END_AUTHORITY_AUDIT_V2.csv",
+      "sha256": "0c06443e126687667fcb086d5c3e5910fd2791b7584b7dfd06a803ff2f40a176"
+    },
+    "DEADLINE_OBSERVATION_AND_USE_AUDIT_V2.json": {
+      "git_blob": "42c5dc16a93c39cbf7c2e3617e2afa16abda6cf8",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/DEADLINE_OBSERVATION_AND_USE_AUDIT_V2.json",
+      "sha256": "ff5492c1e9e6a17a0c19a124c2b33c9bcc518758bed6303388efd5d69f017068"
+    },
+    "DEFECT_ROOT_CAUSE_CLUSTERING_V2.json": {
+      "git_blob": "520022032ebfcfbe9b9b86a33e8b1f310a5f572f",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/DEFECT_ROOT_CAUSE_CLUSTERING_V2.json",
+      "sha256": "8053f4e72e93ffb5fae98512be0e0467903c14e8b7cb6611cf66d144574e2c3e"
+    },
+    "DESTINATION_DERIVATION_AUDIT_V2.json": {
+      "git_blob": "35f11217d61dacbaee77459d44cbc6eecb9562b4",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/DESTINATION_DERIVATION_AUDIT_V2.json",
+      "sha256": "c2f2be4cdfe5c4f9707d49ff3ce66a28403aaf6e930a452a692561a4decd280a"
+    },
+    "FROZEN_43_RULE_SCHEMA_V2.json": {
+      "git_blob": "ec33b4dfaad095f351b6a70811522e85f477055b",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/FROZEN_43_RULE_SCHEMA_V2.json",
+      "sha256": "15de7c5690a4c47e18ef90cdde56e4c2d38526a79d1b590f91860b0445f6a678"
+    },
+    "LATENT_HIGH_RISK_REGISTER_V2.csv": {
+      "git_blob": "6bd9fcef0e98b6c5f4cb38ef755f47caea088315",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/LATENT_HIGH_RISK_REGISTER_V2.csv",
+      "sha256": "299de98cc6ca8e0d55f9887f1ccf5f74a99f4fc6fa7ae5cf68e14d8cf09e2239"
+    },
+    "MASTER_DEFECT_REGISTER_V2.csv": {
+      "git_blob": "afc22feb17f7cb87f8d12ca9b4cd76ffe2f9b2ea",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/MASTER_DEFECT_REGISTER_V2.csv",
+      "sha256": "e34eccc4bef4215e7c0500ea813084772d3c42ba16a75278e7812be5c244912d"
+    },
+    "PRE_REPAIR_REPAIR_DAG_V2.json": {
+      "git_blob": "c210456dfe2a9f7443b7b5ba762e7087f83bd912",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/PRE_REPAIR_REPAIR_DAG_V2.json",
+      "sha256": "9c31fbd60c374249dd3e137dcb8d2737a65e7e09a44ab61f06d444a371889cc1"
+    },
+    "SUPERVISOR_AUTHORITY_AUDIT_V2.json": {
+      "git_blob": "e1e5e27de0f67cdebb5bfa011be619777068d504",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/SUPERVISOR_AUTHORITY_AUDIT_V2.json",
+      "sha256": "2ff8d89081ec557aa8909bdc2337efc0d4919b95af8df9380fe5a36136835f64"
+    },
+    "TRANSITION_43_RULE_THREE_LAYER_AUDIT_V2.csv": {
+      "git_blob": "11e6ea26b6e9c304e76e6febe22da63c7cd15d89",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/TRANSITION_43_RULE_THREE_LAYER_AUDIT_V2.csv",
+      "sha256": "977c42d8708ffe9e595de237f03b8b2598f1ff1198dc722258e9ac988a756d84"
+    },
+    "TRANSITION_EXACT_ONE_DOMAIN_AUDIT_V2.json": {
+      "git_blob": "ea0daf8580e3ce8386f9f5bb9cb2bc927165a1d9",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/TRANSITION_EXACT_ONE_DOMAIN_AUDIT_V2.json",
+      "sha256": "805a5b45629cc323b4f8d0f3eff0e43c5e3519bf741807884dd03f5a1fa168a5"
+    },
+    "VERIFIED_NOT_A_BUG_REGISTER_V2.csv": {
+      "git_blob": "bc4e5fa6dc25a8a6e033a3f127e6c298a740e59e",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/VERIFIED_NOT_A_BUG_REGISTER_V2.csv",
+      "sha256": "16ab85d91c92c8836009b05137fcd98cf227789591783c3f1b2039e92b6e6926"
+    }
+  },
+  "r1_evidence": {
+    "D-AUTH-001": {
+      "expressions": [
+        "backup_valid and deadline.status == OPEN",
+        "deadline.status != OPEN",
+        "routing_candidate = certified if timely else None"
+      ],
+      "lines": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "path": "COORDINATOR_FULL_POLICY_AUDIT_V2.csv"
+    },
+    "D-TRANS-001": {
+      "path": "DESTINATION_DERIVATION_AUDIT_V2.json",
+      "unsafe_fields": [
+        "may_start_next_stage",
+        "may_start_new_search",
+        "requires_arbitration",
+        "backup_routing_allowed",
+        "terminal_routing_allowed",
+        "deadline_interpretation"
+      ]
+    }
+  },
+  "schema": "R1_AUTHORITY_ROUTING_REPAIR_INPUT_LOCK_V2",
+  "task_type": "R1_AUTHORITY_AND_TRANSITION_METADATA_REPAIR_ONLY"
+}

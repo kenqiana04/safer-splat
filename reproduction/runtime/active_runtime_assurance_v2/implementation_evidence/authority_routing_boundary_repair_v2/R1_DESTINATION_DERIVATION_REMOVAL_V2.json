@@ -1,0 +1,27 @@
+{
+  "destination_only_derivation": false,
+  "same_destination_fixture": {
+    "destination": "COMMIT",
+    "different_metadata_survives": true,
+    "fixture_a": {
+      "may_start_new_search": true,
+      "may_start_next_stage": false,
+      "requires_arbitration": false
+    },
+    "fixture_b": {
+      "may_start_new_search": false,
+      "may_start_next_stage": true,
+      "requires_arbitration": true
+    }
+  },
+  "schema": "R1_DESTINATION_DERIVATION_REMOVAL_V2",
+  "status": "PASS",
+  "unsafe_fields": {
+    "backup_routing_allowed": "EXPLICIT_CARRIED_FROM_FROZEN_ROW_METADATA",
+    "deadline_interpretation": "EXPLICIT_CARRIED_FROM_FROZEN_ROW_METADATA",
+    "may_start_new_search": "EXPLICIT_CARRIED_FROM_FROZEN_ROW_METADATA",
+    "may_start_next_stage": "EXPLICIT_CARRIED_FROM_FROZEN_ROW_METADATA",
+    "requires_arbitration": "EXPLICIT_CARRIED_FROM_FROZEN_ROW_METADATA",
+    "terminal_routing_allowed": "EXPLICIT_CARRIED_FROM_FROZEN_ROW_METADATA"
+  }
+}

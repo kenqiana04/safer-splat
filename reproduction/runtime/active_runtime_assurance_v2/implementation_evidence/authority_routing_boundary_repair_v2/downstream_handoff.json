@@ -1,0 +1,18 @@
+{
+  "base_branch": "repair-active-runtime-authority-and-routing-boundary-v2",
+  "deferred_defects": {
+    "D-ALT-001": "OPEN_DEFERRED_TO_R2",
+    "D-EXC-001": "OPEN_DEFERRED_TO_R2"
+  },
+  "full_conformance_before_r2": false,
+  "must_preserve": [
+    "PR107-PR124",
+    "R1 evidence",
+    "ActiveRunner/PlantCommit/BackupTokenStore/TerminalRuntime/TraceWriter blobs",
+    "BYPASS_REVALIDATION_REQUIRED=false"
+  ],
+  "real_active_authorized": false,
+  "schema": "R1_AUTHORITY_ROUTING_REPAIR_DOWNSTREAM_HANDOFF_V2",
+  "smoke_authorized": false,
+  "task": "REPAIR_ACTIVE_RUNTIME_EXCEPTION_AND_UNKNOWN_ROUTING_V2"
+}
