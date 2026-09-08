@@ -1,0 +1,20 @@
+{
+  "commit_journal": "NOT_CREATED",
+  "modified_modules": [
+    "active_runner.py",
+    "active_cycle.py",
+    "runtime_types.py",
+    "trace_writer.py"
+  ],
+  "new_modules": [
+    "reproduction/runtime/active_runtime_assurance_v2/commit_transaction.py"
+  ],
+  "reason": "A focused active-only transaction helper keeps ordered evidence state out of Coordinator and avoids inflating ActiveRunner while no durable journal is justified.",
+  "schema": "TRACE_COMMIT_IMPLEMENTATION_MODULE_DECISION_V2R1",
+  "selected_shape": "SHAPE_2_NEW_COMMIT_TRANSACTION",
+  "unchanged_preferred": [
+    "backup_token_store.py",
+    "plant_commit.py",
+    "supervisor.py"
+  ]
+}

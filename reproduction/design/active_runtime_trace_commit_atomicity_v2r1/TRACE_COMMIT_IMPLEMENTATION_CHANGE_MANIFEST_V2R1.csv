@@ -1,0 +1,11 @@
+file,change_required,exact_symbol,reason,authority_impact,BYPASS_impact,architecture_dependent,required_tests
+active_runner.py,YES,ActiveRunner.commit_active_decision,delegate active commit/evidence sequencing and return CommitTransactionResult,sequencing only,NO if commit_bypass body unchanged,B,TRACE-F02; token failures; complete path
+active_cycle.py,YES,ActiveCycleCoordinator._commit_or_boundary; finalize_trial; session guards,consume typed transaction and enforce non-ready/finalization states,session lifecycle only,NO,B,session fail-close; TRACE-F03
+runtime_types.py,YES_ADDITIVE,CommitTransactionResult; PlantOutcome; EvidenceStatus; CommitTransactionState; TrialSessionStatus,typed execution/evidence/session facts,none,serialization compatibility audit,B,enum/dataclass immutability
+trace_writer.py,YES,TraceWriter.finalize,"freeze records, delay lock publication, typed retry-safe finalization",trace authority unchanged,YES_SHARED_FINALIZATION,A/B/C,TRACE-F03; retry; BYPASS revalidation
+commit_transaction.py,YES_NEW,ActiveCommitTransaction,ordered memory-level state machine and fact retention,no policy/plant/token/trace authority,ACTIVE_ONLY,B,state transitions; fault matrix
+backup_token_store.py,NO,existing mutation methods,sole token owner reused,unchanged,none,NO,existing regression
+plant_commit.py,NO,PlantCommitAdapter.commit,sole plant owner reused,unchanged,none,NO,existing regression
+supervisor.py,NO,route_transition; arbitrate,routing/selection unaffected,unchanged,none,NO,existing regression
+commit_journal.py,NO,not created,durable crash recovery outside current contract,none,none,C_ONLY,none in V2R1
+tests/test_trace_commit_atomicity_v2r1.py,YES_NEW,future test suite,mechanically test frozen fault matrix,none,gate only,B,TC-TEST-01..24

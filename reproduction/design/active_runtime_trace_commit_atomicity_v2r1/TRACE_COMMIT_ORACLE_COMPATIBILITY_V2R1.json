@@ -1,0 +1,17 @@
+{
+  "eligibility": {
+    "COMPLETE_LOCKED_TRACE": "ELIGIBLE_SUBJECT_TO_PR114",
+    "FINALIZATION_INCOMPLETE": "EVALUATION_INELIGIBLE",
+    "PLANT_OUTCOME_UNRESOLVED": "EVALUATION_INELIGIBLE",
+    "TRACE_INCOMPLETE": "EVALUATION_INELIGIBLE"
+  },
+  "forbidden_labels_for_incomplete": [
+    "SAFE",
+    "SUCCESS",
+    "COLLISION_FREE",
+    "NORMAL_FAIL"
+  ],
+  "oracle_authority": "POSTHOC_READ_ONLY",
+  "oracle_mutation": false,
+  "schema": "TRACE_COMMIT_ORACLE_COMPATIBILITY_V2R1"
+}

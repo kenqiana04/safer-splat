@@ -1,0 +1,150 @@
+{
+  "schema": "TRACE_COMMIT_IMPLEMENTATION_TEST_PLAN_V2R1",
+  "test_count": 24,
+  "tests": [
+    {
+      "id": "TC-TEST-01",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "precommit validation failure never calls plant"
+    },
+    {
+      "id": "TC-TEST-02",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "plant committed=false is typed"
+    },
+    {
+      "id": "TC-TEST-03",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "committed=true complete path"
+    },
+    {
+      "id": "TC-TEST-04",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "token failure after commit"
+    },
+    {
+      "id": "TC-TEST-05",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "TRACE-F02 append failure after commit"
+    },
+    {
+      "id": "TC-TEST-06",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "boundary trace failure has zero plant"
+    },
+    {
+      "id": "TC-TEST-07",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "TRACE-F03 finalize failure"
+    },
+    {
+      "id": "TC-TEST-08",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "idempotent finalize retry"
+    },
+    {
+      "id": "TC-TEST-09",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "run_cycle rejected after trace incomplete"
+    },
+    {
+      "id": "TC-TEST-10",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "run_cycle rejected after token incomplete"
+    },
+    {
+      "id": "TC-TEST-11",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "run_cycle rejected after unresolved plant"
+    },
+    {
+      "id": "TC-TEST-12",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "receipt preserved after trace failure"
+    },
+    {
+      "id": "TC-TEST-13",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "post-state preserved after trace failure"
+    },
+    {
+      "id": "TC-TEST-14",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "no token rollback solely due to trace failure"
+    },
+    {
+      "id": "TC-TEST-15",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "no fake zero action"
+    },
+    {
+      "id": "TC-TEST-16",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "selected/executed identity remains exact"
+    },
+    {
+      "id": "TC-TEST-17",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "incomplete trace is oracle-ineligible"
+    },
+    {
+      "id": "TC-TEST-18",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "BYPASS shared-finalization revalidation gate"
+    },
+    {
+      "id": "TC-TEST-19",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "memory-only semantics"
+    },
+    {
+      "id": "TC-TEST-20",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "durable mode remains unsupported unless separately implemented"
+    },
+    {
+      "id": "TC-TEST-21",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "crash-before-plant boundary"
+    },
+    {
+      "id": "TC-TEST-22",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "crash-after-plant ambiguity boundary"
+    },
+    {
+      "id": "TC-TEST-23",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "candidate lock not published before configured persistence"
+    },
+    {
+      "id": "TC-TEST-24",
+      "mode": "CPU_DETERMINISTIC",
+      "real_execution": false,
+      "test": "finalization retry rejects changed content hash"
+    }
+  ]
+}

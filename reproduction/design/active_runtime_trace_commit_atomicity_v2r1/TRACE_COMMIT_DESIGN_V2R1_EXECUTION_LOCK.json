@@ -1,0 +1,23 @@
+{
+  "architecture": "OPTION_B_SOFTWARE_TRANSACTION_STATE_MACHINE",
+  "design_only": true,
+  "locked_sha256": {
+    "TRACE_COMMIT_ARCHITECTURE_COMPARISON_V2R1.csv": "dcca08f58fefa43fbbc9e546e47d8fb2b12438fb77935da6900b84e3e7c97fcc",
+    "TRACE_COMMIT_ARCHITECTURE_DECISION_V2R1.json": "e2538e21d9db9ad70794c169828e5777157034f88776134c1ff5fa237cf3deb5",
+    "TRACE_COMMIT_CONSISTENCY_INVARIANTS_V2R1.json": "f8b7898409dbf1b4961958a14114088aec49293fed302d38099508ffa863d939",
+    "TRACE_COMMIT_DESIGN_SCENARIO_MATRIX_V2R1.csv": "eb9e133d505ab0392651d3fc6a3b21ee7042641fada05f13d020b794d52920be",
+    "TRACE_COMMIT_FAILURE_MODEL_V2R1.json": "1e1b06d910974dc5f41aa2bda866a2cfafd52b52c73158d83201ad7a01d4bbec",
+    "model_check_trace_commit_consistency_design_v2r1.py": "98ba10a0f9446cf11c771c4a677e73c0679a839785ff99880a94210510f024e0",
+    "validate_trace_commit_consistency_design_v2r1.py": "df0fdb8e2f02ac888b956a4aa455c24f2426216f86bf0fbe988d938aea1aa443"
+  },
+  "real_execution_counts": {
+    "gpu": 0,
+    "official100": 0,
+    "oracle": 0,
+    "real_active": 0,
+    "real_bypass": 0,
+    "smoke": 0
+  },
+  "schema": "TRACE_COMMIT_DESIGN_V2R1_EXECUTION_LOCK",
+  "upstream": "72215ffb1b0a0bc9e7cc94155117ac8624ed0aa6"
+}

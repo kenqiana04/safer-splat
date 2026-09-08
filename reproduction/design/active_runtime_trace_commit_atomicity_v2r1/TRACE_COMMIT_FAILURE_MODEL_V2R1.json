@@ -1,0 +1,162 @@
+{
+  "failure_classes": [
+    {
+      "fault": "pre-plant validation/evidence failure",
+      "id": "F1",
+      "plant_status": "NO",
+      "recovery_required": "NO",
+      "retry_allowed": "NO",
+      "session_status": "BLOCKED",
+      "theorem_status": "no execution theorem",
+      "token_status": "UNCHANGED",
+      "trace_status": "NONE",
+      "typed_result": "ABORTED_BEFORE_PLANT"
+    },
+    {
+      "fault": "PlantCommit committed=false",
+      "id": "F2",
+      "plant_status": "NO",
+      "recovery_required": "NO",
+      "retry_allowed": "NO",
+      "session_status": "BLOCKED",
+      "theorem_status": "no execution theorem",
+      "token_status": "UNCHANGED",
+      "trace_status": "FAILURE_RECORD_REQUIRED",
+      "typed_result": "PLANT_NOT_COMMITTED"
+    },
+    {
+      "fault": "PlantCommit raises or outcome acknowledgement is uncertain",
+      "id": "F3",
+      "plant_status": "UNKNOWN",
+      "recovery_required": "YES",
+      "retry_allowed": "NO",
+      "session_status": "RECOVERY_REQUIRED",
+      "theorem_status": "execution cannot be classified",
+      "token_status": "UNKNOWN",
+      "trace_status": "INCOMPLETE",
+      "typed_result": "PLANT_OUTCOME_UNRESOLVED"
+    },
+    {
+      "fault": "plant committed plus token mutation failure",
+      "id": "F4",
+      "plant_status": "YES",
+      "recovery_required": "YES",
+      "retry_allowed": "NO",
+      "session_status": "EVIDENCE_INCOMPLETE",
+      "theorem_status": "execution fact retained",
+      "token_status": "INCOMPLETE",
+      "trace_status": "INCOMPLETE",
+      "typed_result": "COMMITTED_TOKEN_INCOMPLETE"
+    },
+    {
+      "fault": "plant committed plus trace append failure (TRACE-F02)",
+      "id": "F5",
+      "plant_status": "YES",
+      "recovery_required": "YES",
+      "retry_allowed": "NO",
+      "session_status": "EVIDENCE_INCOMPLETE",
+      "theorem_status": "execution fact retained",
+      "token_status": "ACTUAL_STATE_RETAINED",
+      "trace_status": "INCOMPLETE",
+      "typed_result": "COMMITTED_TRACE_INCOMPLETE"
+    },
+    {
+      "fault": "no-action boundary plus trace append failure",
+      "id": "F6",
+      "plant_status": "NO",
+      "recovery_required": "YES",
+      "retry_allowed": "NO",
+      "session_status": "EVIDENCE_INCOMPLETE",
+      "theorem_status": "zero plant",
+      "token_status": "UNCHANGED",
+      "trace_status": "INCOMPLETE",
+      "typed_result": "NO_ACTION_TRACE_INCOMPLETE"
+    },
+    {
+      "fault": "trace finalize failure (TRACE-F03)",
+      "id": "F7",
+      "plant_status": "PRIOR_FACTS",
+      "recovery_required": "YES",
+      "retry_allowed": "CONDITIONAL",
+      "session_status": "FINALIZATION_FAILED",
+      "theorem_status": "no new cycle",
+      "token_status": "PRIOR_FACTS",
+      "trace_status": "FINALIZATION_INCOMPLETE",
+      "typed_result": "FINALIZATION_INCOMPLETE"
+    },
+    {
+      "fault": "partial finalize persistence failure",
+      "id": "F8",
+      "plant_status": "PRIOR_FACTS",
+      "recovery_required": "YES",
+      "retry_allowed": "CONDITIONAL",
+      "session_status": "FINALIZATION_FAILED",
+      "theorem_status": "durability not established",
+      "token_status": "PRIOR_FACTS",
+      "trace_status": "FINALIZATION_INCOMPLETE",
+      "typed_result": "FINALIZATION_INCOMPLETE"
+    },
+    {
+      "fault": "process crash before plant",
+      "id": "F9",
+      "plant_status": "NO_OR_UNKNOWN_IF_ATTEMPT_NOT_REACHED",
+      "recovery_required": "YES",
+      "retry_allowed": "NO",
+      "session_status": "RECOVERY_REQUIRED_AFTER_RESTART",
+      "theorem_status": "outside memory-only guarantee",
+      "token_status": "UNKNOWN",
+      "trace_status": "INCOMPLETE",
+      "typed_result": "RECOVERY_REQUIRED"
+    },
+    {
+      "fault": "process crash around plant/outcome acknowledgement",
+      "id": "F10",
+      "plant_status": "UNKNOWN",
+      "recovery_required": "YES",
+      "retry_allowed": "NO",
+      "session_status": "RECOVERY_REQUIRED_AFTER_RESTART",
+      "theorem_status": "outside memory-only guarantee",
+      "token_status": "UNKNOWN",
+      "trace_status": "INCOMPLETE",
+      "typed_result": "PLANT_OUTCOME_UNRESOLVED"
+    },
+    {
+      "fault": "process crash after plant before trace completion",
+      "id": "F11",
+      "plant_status": "YES_OR_UNKNOWN_AFTER_RESTART",
+      "recovery_required": "YES",
+      "retry_allowed": "NO",
+      "session_status": "RECOVERY_REQUIRED_AFTER_RESTART",
+      "theorem_status": "requires durable journal for restart reconciliation",
+      "token_status": "UNKNOWN",
+      "trace_status": "INCOMPLETE",
+      "typed_result": "RECOVERY_REQUIRED"
+    },
+    {
+      "fault": "process crash after append before finalize",
+      "id": "F12",
+      "plant_status": "PRIOR_FACTS",
+      "recovery_required": "YES",
+      "retry_allowed": "NO",
+      "session_status": "RECOVERY_REQUIRED_AFTER_RESTART",
+      "theorem_status": "requires durable trace contract",
+      "token_status": "UNKNOWN_AFTER_RESTART",
+      "trace_status": "UNFINALIZED",
+      "typed_result": "RECOVERY_REQUIRED"
+    },
+    {
+      "fault": "BYPASS trace failure",
+      "id": "F13",
+      "plant_status": "YES_IF_COMMIT_CONFIRMED",
+      "recovery_required": "YES",
+      "retry_allowed": "NO",
+      "session_status": "EVIDENCE_INCOMPLETE",
+      "theorem_status": "shared TraceWriter implications",
+      "token_status": "NOT_APPLICABLE",
+      "trace_status": "INCOMPLETE",
+      "typed_result": "COMMITTED_TRACE_INCOMPLETE"
+    }
+  ],
+  "process_crash_in_current_guarantee": false,
+  "schema": "TRACE_COMMIT_FAILURE_MODEL_V2R1"
+}

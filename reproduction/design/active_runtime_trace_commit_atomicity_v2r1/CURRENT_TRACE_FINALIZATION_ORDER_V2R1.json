@@ -1,0 +1,24 @@
+{
+  "actual_order": [
+    "ActiveCycleCoordinator.finalize_trial",
+    "ActiveRunner.finalize_trace",
+    "TraceWriter.finalize",
+    "canonicalize_records",
+    "construct_and_publish_self._lock",
+    "write_runtime_trace.jsonl",
+    "write_runtime_trace_lock.json",
+    "return_lock",
+    "session_FINALIZED"
+  ],
+  "failure_state": {
+    "coordinator_session": "remains prior READY/BLOCKED state",
+    "retry": "returns existing in-memory lock without proving disk persistence",
+    "trace_writer_lock": "may already be populated"
+  },
+  "in_memory_lock_created": "before either disk write",
+  "runtime_trace_jsonl_written": "after self._lock publication",
+  "runtime_trace_lock_written": "after runtime_trace.jsonl",
+  "schema": "CURRENT_TRACE_FINALIZATION_ORDER_V2R1",
+  "session_finalized": "only after finalize returns",
+  "trace_f03_window": "finalize exception escapes before coordinator session mutation; durable completion and retry result are ambiguous"
+}

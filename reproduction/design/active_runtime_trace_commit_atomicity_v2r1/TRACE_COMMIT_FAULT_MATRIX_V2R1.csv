@@ -1,0 +1,14 @@
+fault_id,fault,plant_state,token_state,trace_state,session_state,typed_result,retry,recovery,oracle_eligible,next_cycle,claim_boundary
+F1,pre-plant validation/evidence failure,NO,UNCHANGED,NONE,BLOCKED,ABORTED_BEFORE_PLANT,NO,NO,NO,NO,no execution theorem
+F2,PlantCommit committed=false,NO,UNCHANGED,FAILURE_RECORD_REQUIRED,BLOCKED,PLANT_NOT_COMMITTED,NO,NO,NO,NO,no execution theorem
+F3,PlantCommit raises or outcome acknowledgement is uncertain,UNKNOWN,UNKNOWN,INCOMPLETE,RECOVERY_REQUIRED,PLANT_OUTCOME_UNRESOLVED,NO,YES,NO,NO,execution cannot be classified
+F4,plant committed plus token mutation failure,YES,INCOMPLETE,INCOMPLETE,EVIDENCE_INCOMPLETE,COMMITTED_TOKEN_INCOMPLETE,NO,YES,NO,NO,execution fact retained
+F5,plant committed plus trace append failure (TRACE-F02),YES,ACTUAL_STATE_RETAINED,INCOMPLETE,EVIDENCE_INCOMPLETE,COMMITTED_TRACE_INCOMPLETE,NO,YES,NO,NO,execution fact retained
+F6,no-action boundary plus trace append failure,NO,UNCHANGED,INCOMPLETE,EVIDENCE_INCOMPLETE,NO_ACTION_TRACE_INCOMPLETE,NO,YES,NO,NO,zero plant
+F7,trace finalize failure (TRACE-F03),PRIOR_FACTS,PRIOR_FACTS,FINALIZATION_INCOMPLETE,FINALIZATION_FAILED,FINALIZATION_INCOMPLETE,CONDITIONAL,YES,NO,NO,no new cycle
+F8,partial finalize persistence failure,PRIOR_FACTS,PRIOR_FACTS,FINALIZATION_INCOMPLETE,FINALIZATION_FAILED,FINALIZATION_INCOMPLETE,CONDITIONAL,YES,NO,NO,durability not established
+F9,process crash before plant,NO_OR_UNKNOWN_IF_ATTEMPT_NOT_REACHED,UNKNOWN,INCOMPLETE,RECOVERY_REQUIRED_AFTER_RESTART,RECOVERY_REQUIRED,NO,YES,NO,NO,outside memory-only guarantee
+F10,process crash around plant/outcome acknowledgement,UNKNOWN,UNKNOWN,INCOMPLETE,RECOVERY_REQUIRED_AFTER_RESTART,PLANT_OUTCOME_UNRESOLVED,NO,YES,NO,NO,outside memory-only guarantee
+F11,process crash after plant before trace completion,YES_OR_UNKNOWN_AFTER_RESTART,UNKNOWN,INCOMPLETE,RECOVERY_REQUIRED_AFTER_RESTART,RECOVERY_REQUIRED,NO,YES,NO,NO,requires durable journal for restart reconciliation
+F12,process crash after append before finalize,PRIOR_FACTS,UNKNOWN_AFTER_RESTART,UNFINALIZED,RECOVERY_REQUIRED_AFTER_RESTART,RECOVERY_REQUIRED,NO,YES,NO,NO,requires durable trace contract
+F13,BYPASS trace failure,YES_IF_COMMIT_CONFIRMED,NOT_APPLICABLE,INCOMPLETE,EVIDENCE_INCOMPLETE,COMMITTED_TRACE_INCOMPLETE,NO,YES,NO,NO,shared TraceWriter implications
