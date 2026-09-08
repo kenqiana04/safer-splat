@@ -1,0 +1,28 @@
+{
+  "failure_kinds": [
+    "STAGE_EXCEPTION",
+    "STAGE_UNKNOWN",
+    "PROVIDER_STATUS_FAILURE",
+    "ROUTE_RESOLUTION_FAILURE",
+    "SERIALIZATION_FAILURE",
+    "COMMIT_FAILURE"
+  ],
+  "fields": [
+    "source_phase",
+    "stage_name",
+    "failure_kind",
+    "exception_type",
+    "typed_reason",
+    "reason_scope",
+    "original_reason",
+    "authority_identity",
+    "candidate_identity",
+    "state_identity",
+    "trial_id",
+    "cycle_index"
+  ],
+  "immutable": true,
+  "normal_unknown_evidence_preserved": true,
+  "routing_authority": false,
+  "schema": "R2_STAGE_FAILURE_TYPE_AUDIT_V2"
+}

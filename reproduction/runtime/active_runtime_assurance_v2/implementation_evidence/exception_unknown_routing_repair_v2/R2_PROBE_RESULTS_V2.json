@@ -1,0 +1,351 @@
+{
+  "failed_count": 0,
+  "passed_count": 34,
+  "probe_count": 34,
+  "results": [
+    {
+      "category": "stage_exception",
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "boundary": false,
+        "committed": true
+      },
+      "passed": true,
+      "probe_id": "EXC-L1"
+    },
+    {
+      "category": "stage_exception",
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "boundary": false,
+        "committed": true
+      },
+      "passed": true,
+      "probe_id": "EXC-PRIMARY_PROPOSAL"
+    },
+    {
+      "category": "stage_exception",
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "boundary": false,
+        "committed": true
+      },
+      "passed": true,
+      "probe_id": "EXC-C0"
+    },
+    {
+      "category": "stage_exception",
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "boundary": false,
+        "committed": true
+      },
+      "passed": true,
+      "probe_id": "EXC-L2"
+    },
+    {
+      "category": "stage_exception",
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "boundary": false,
+        "committed": true
+      },
+      "passed": true,
+      "probe_id": "EXC-L3"
+    },
+    {
+      "category": "stage_exception",
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "boundary": false,
+        "committed": true
+      },
+      "passed": true,
+      "probe_id": "EXC-ALT_SEARCH"
+    },
+    {
+      "category": "stage_exception",
+      "detail": {
+        "action_role": null,
+        "boundary": true,
+        "committed": false
+      },
+      "passed": true,
+      "probe_id": "EXC-TERMINAL_EVALUATION"
+    },
+    {
+      "category": "stage_exception",
+      "detail": {
+        "action_role": null,
+        "boundary": true,
+        "committed": false
+      },
+      "passed": true,
+      "probe_id": "EXC-ARBITRATION"
+    },
+    {
+      "category": "exception_fallback",
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "boundary": false,
+        "committed": true
+      },
+      "passed": true,
+      "probe_id": "EX-FB-L1_BACKUP"
+    },
+    {
+      "category": "exception_fallback",
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "boundary": false,
+        "committed": true
+      },
+      "passed": true,
+      "probe_id": "EX-FB-L2_BACKUP"
+    },
+    {
+      "category": "exception_fallback",
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "boundary": false,
+        "committed": true
+      },
+      "passed": true,
+      "probe_id": "EX-FB-L3_BACKUP"
+    },
+    {
+      "category": "exception_fallback",
+      "detail": {
+        "action_role": "CERTIFIED_TERMINAL",
+        "boundary": false,
+        "committed": true
+      },
+      "passed": true,
+      "probe_id": "EX-FB-TERMINAL"
+    },
+    {
+      "category": "exception_fallback",
+      "detail": {
+        "action_role": null,
+        "boundary": true,
+        "committed": false
+      },
+      "passed": true,
+      "probe_id": "EX-FB-NO_FALLBACK"
+    },
+    {
+      "category": "exception_fallback",
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "boundary": false,
+        "committed": true
+      },
+      "passed": true,
+      "probe_id": "EX-FB-EXPIRED_BACKUP"
+    },
+    {
+      "category": "alternative_status",
+      "detail": {
+        "action_role": "ALTERNATIVE_NAVIGATION",
+        "normalized_status": "ALT_AVAILABLE",
+        "routing_rule_ids": [
+          "L1_PASS",
+          "P0_PRIMARY",
+          "C0_FAIL_LOCAL_ALT",
+          "ALT_NEXT",
+          "C0_PASS",
+          "L2_PASS",
+          "L3_FOUND",
+          "ARB_NAV"
+        ]
+      },
+      "passed": true,
+      "probe_id": "ALT-ALT_AVAILABLE"
+    },
+    {
+      "category": "alternative_status",
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "normalized_status": "NO_ALTERNATIVE_AVAILABLE",
+        "routing_rule_ids": [
+          "L1_PASS",
+          "P0_PRIMARY",
+          "C0_FAIL_LOCAL_ALT",
+          "ALT_DONE",
+          "ARB_BACKUP",
+          "BACKUP_COMMIT"
+        ]
+      },
+      "passed": true,
+      "probe_id": "ALT-NO_ALTERNATIVE_AVAILABLE"
+    },
+    {
+      "category": "alternative_status",
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "normalized_status": "SOURCE_INVALID",
+        "routing_rule_ids": [
+          "L1_PASS",
+          "P0_PRIMARY",
+          "C0_FAIL_LOCAL_ALT",
+          "ARB_BACKUP",
+          "BACKUP_COMMIT"
+        ]
+      },
+      "passed": true,
+      "probe_id": "ALT-SOURCE_INVALID"
+    },
+    {
+      "category": "alternative_status",
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "normalized_status": "PROVENANCE_MISSING",
+        "routing_rule_ids": [
+          "L1_PASS",
+          "P0_PRIMARY",
+          "C0_FAIL_LOCAL_ALT",
+          "ARB_BACKUP",
+          "BACKUP_COMMIT"
+        ]
+      },
+      "passed": true,
+      "probe_id": "ALT-PROVENANCE_MISSING"
+    },
+    {
+      "category": "alternative_status",
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "normalized_status": "UNRESOLVED_STATUS",
+        "routing_rule_ids": [
+          "L1_PASS",
+          "P0_PRIMARY",
+          "C0_FAIL_LOCAL_ALT",
+          "ARB_BACKUP",
+          "BACKUP_COMMIT"
+        ]
+      },
+      "passed": true,
+      "probe_id": "ALT-FUTURE_STATUS"
+    },
+    {
+      "category": "reason_scope",
+      "detail": {
+        "expected": "GLOBAL_AUTHORITY_OR_EVIDENCE",
+        "scope": "GLOBAL_AUTHORITY_OR_EVIDENCE"
+      },
+      "passed": true,
+      "probe_id": "SCOPE-GLOBAL"
+    },
+    {
+      "category": "reason_scope",
+      "detail": {
+        "expected": "CANDIDATE_LOCAL_COMPUTATION",
+        "scope": "CANDIDATE_LOCAL_COMPUTATION"
+      },
+      "passed": true,
+      "probe_id": "SCOPE-LOCAL"
+    },
+    {
+      "category": "reason_scope",
+      "detail": {
+        "expected": "INFRASTRUCTURE_HEALTH",
+        "scope": "INFRASTRUCTURE_HEALTH"
+      },
+      "passed": true,
+      "probe_id": "SCOPE-HEALTH"
+    },
+    {
+      "category": "reason_scope",
+      "detail": {
+        "expected": "UNRESOLVED_SCOPE",
+        "scope": "UNRESOLVED_SCOPE"
+      },
+      "passed": true,
+      "probe_id": "SCOPE-MISSING_TEXT"
+    },
+    {
+      "category": "reason_scope",
+      "detail": {
+        "expected": "UNRESOLVED_SCOPE",
+        "scope": "UNRESOLVED_SCOPE"
+      },
+      "passed": true,
+      "probe_id": "SCOPE-TIMEOUT_TEXT"
+    },
+    {
+      "category": "cross_contract",
+      "detail": {},
+      "passed": true,
+      "probe_id": "DEADLINE_OPEN"
+    },
+    {
+      "category": "cross_contract",
+      "detail": {},
+      "passed": true,
+      "probe_id": "DEADLINE_WARNING"
+    },
+    {
+      "category": "cross_contract",
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "boundary": false,
+        "committed": true
+      },
+      "passed": true,
+      "probe_id": "DEADLINE_EXPIRED"
+    },
+    {
+      "category": "cross_contract",
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "boundary": false,
+        "committed": true
+      },
+      "passed": true,
+      "probe_id": "BACKUP_VALID"
+    },
+    {
+      "category": "cross_contract",
+      "detail": {},
+      "passed": true,
+      "probe_id": "BACKUP_INVALID"
+    },
+    {
+      "category": "cross_contract",
+      "detail": {},
+      "passed": true,
+      "probe_id": "TERMINAL_READY"
+    },
+    {
+      "category": "cross_contract",
+      "detail": {},
+      "passed": true,
+      "probe_id": "TERMINAL_NOT_READY"
+    },
+    {
+      "category": "cross_contract",
+      "detail": {
+        "status": "BLOCKED_MISSING"
+      },
+      "passed": true,
+      "probe_id": "ROUTE_MISSING"
+    },
+    {
+      "category": "cross_contract",
+      "detail": {
+        "status": "BLOCKED_AMBIGUOUS"
+      },
+      "passed": true,
+      "probe_id": "ROUTE_AMBIGUOUS"
+    },
+    {
+      "category": "cross_contract",
+      "detail": {
+        "ast_sha256": "44e08edc0ea4c18d259d2e35faa4a4e022b4c7434162b30708ef412c6143adf0"
+      },
+      "passed": true,
+      "probe_id": "BYPASS_STATIC"
+    }
+  ],
+  "schema": "R2_PROBE_RESULTS_V2"
+}

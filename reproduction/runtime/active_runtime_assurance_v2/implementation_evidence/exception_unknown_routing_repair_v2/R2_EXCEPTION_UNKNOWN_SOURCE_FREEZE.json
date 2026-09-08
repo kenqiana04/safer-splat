@@ -1,0 +1,47 @@
+{
+  "allowed_source_blob_sha": {
+    "active_cycle.py": "427e0cb2948f275d8117bcc8dd2171de42a016ca",
+    "runtime_types.py": "af259b5ae27ae581ca247a127777f22ef86e7bfe",
+    "supervisor.py": "173837401de824fcdbdb8b5b7b9d4dfb8bb43037"
+  },
+  "allowed_source_sha256": {
+    "active_cycle.py": "88d72327be537a50b68031a413212467d28c7dd23274d0dd78b7412db7dd35c2",
+    "runtime_types.py": "9547494fb34e7c4cacdf569e62297c662e62bd1d5c069a66d2df6e6db7b2e66f",
+    "supervisor.py": "33bc8c741380a21a1b89d8d0001ae6ecffa611bad10418a19de65f75d344c977"
+  },
+  "forbidden_runtime_blob_sha": {
+    "active_runner.py": "64b747656b031881123c92587d1beca6e742be5e",
+    "alternative_provider.py": "32da73b46fc7c5b0fb4b0ac7a5d583a0f3dba980",
+    "authority_registry.py": "c444b077fde51dcffc3c057302d1336dcb7ce0c9",
+    "backup_token_store.py": "3af371733638bcd6aac9240db38328d9e2f6154f",
+    "c0_admission.py": "3cbf74596980b22eb94d3233134f270ce6cc7f9f",
+    "deadline_runtime.py": "cf81341b655deb7b8b5a6261eafb6171580dbd45",
+    "diagnostic_r0.py": "8556cdb5aa9082e323d47419736ceec5bb7660ae",
+    "l1_runtime.py": "6a477fb4fd84f6c04c0e68a586e43baf6d5aa77c",
+    "l2_runtime.py": "b7b26075ea01878deea39a12f66b5990c0d08de1",
+    "l3_runtime.py": "93db2095cfc3102b37f35bfef91a611786de71d2",
+    "plant_commit.py": "f9116db0690983252ea0f60d286399b71d644134",
+    "primary_proposal_adapter.py": "2de4ad2cbf92a71affd8a2d2630094f9a6d29936",
+    "start_admission.py": "40e6774bc37cae76758db97ee3db43a48e373d55",
+    "terminal_runtime.py": "9cbc9769970626ecee600e83909655f44e75466d",
+    "trace_writer.py": "f7d1c768a28d36ab1ef88614bd01c8722e9ea292"
+  },
+  "model_checker_sha256": "98a93c68f612e129252810264b82af07af46daeac64fdc409e1ef610ad15c1df",
+  "new_test_sha256": {
+    "test_r2_alternative_status_fidelity.py": "b314843187ebbcc38648fdaa3193f3c063aa0f2822c71ed20376bf82435f0f79",
+    "test_r2_reason_scope_and_failure_types.py": "379e6d931f5e49ee541de57df31669d58d8477e2c68890574421f429a7d76287",
+    "test_r2_stage_exception_routing.py": "6b3a518cac379667662688387507dcd6d9941d0137a16af765cf94b62a03145a"
+  },
+  "parent": "303aa01c08e82d1d77a5f5cabf5127344109a996",
+  "pr124_defect_evidence_sha256": {
+    "ALTERNATIVE_RUNTIME_AUDIT_V2.json": "ed405905d63ff3f300b30ea20953b7ac4e95f427fd4b9ee6f42d51c7154d00c8",
+    "EXCEPTION_AND_UNKNOWN_FULL_AUDIT_V2.csv": "452860cb657267c78a1f9a9efb5a02ecce1a202a4cfaa114367ebf27448db76b",
+    "MASTER_DEFECT_REGISTER_V2.csv": "e34eccc4bef4215e7c0500ea813084772d3c42ba16a75278e7812be5c244912d"
+  },
+  "r1_locks_sha256": {
+    "R1_AUTHORITY_ROUTING_REPAIR_INPUT_LOCK.json": "3c69861008c736fa61a8d5b16fdc0c361fde08894b3f1701a62dd16db26222ff",
+    "R1_AUTHORITY_ROUTING_SOURCE_FREEZE.json": "a8b1ffe352a10bfd3944180b1c4f625cbfc28b1578b57aa1644cc5e21bbcd3ec"
+  },
+  "schema": "R2_EXCEPTION_UNKNOWN_SOURCE_FREEZE_V2",
+  "validator_sha256": "cb35cae7ae6fecd679c63a41062709f24fda839af8a770006a0525eaf1366f0c"
+}

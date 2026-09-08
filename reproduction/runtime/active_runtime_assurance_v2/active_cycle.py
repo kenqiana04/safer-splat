@@ -26,6 +26,8 @@ from .runtime_types import (
     ActiveCycleRequest,
     ActiveCycleResult,
     ActiveTrialContext,
+    AlternativeInventoryEvidence,
+    AlternativeInventoryStatus,
     Candidate,
     CandidateRole,
     CertificateStatus,
@@ -34,11 +36,15 @@ from .runtime_types import (
     EvidenceResult,
     PublicCycleEvent,
     PublicCyclePhase,
+    ReasonScope,
     RouteResolutionStatus,
     RoutingDecision,
     RuntimePhase,
     RuntimeRoutingContext,
     RuntimeStateSnapshot,
+    StateIdentity,
+    StageFailureEvidence,
+    StageFailureKind,
     TrialSessionStatus,
     TrialStartResult,
     canonical_sha256,
@@ -108,7 +114,7 @@ class ActiveCycleCoordinator:
         certified_candidate_available: bool = False,
         terminal_evaluated: bool = False,
         terminal_evidence_eligible: bool = False,
-        reason_scope: str = "NONE",
+        reason_scope: ReasonScope | str = ReasonScope.NONE,
         repeated_route_state: bool = False,
         backup_state: str | None = None,
     ) -> RuntimeRoutingContext:
@@ -124,7 +130,7 @@ class ActiveCycleCoordinator:
             certified_candidate_available=certified_candidate_available,
             terminal_evaluated=terminal_evaluated,
             terminal_evidence_eligible=terminal_evidence_eligible,
-            reason_scope=reason_scope,
+            reason_scope=reason_scope.value if isinstance(reason_scope, ReasonScope) else reason_scope,
             repeated_route_state=repeated_route_state,
             backup_state=backup_state,
             candidate_provenance_identity=None if candidate is None else candidate.provenance.controller_identity,
@@ -165,11 +171,99 @@ class ActiveCycleCoordinator:
         return replace(context, deadline_observations=context.deadline_observations + (observation,)), observation
 
     @staticmethod
-    def _safe_call(function: Callable[..., Any], *args: Any, **kwargs: Any) -> tuple[Any | None, str | None]:
+    def _safe_call(function: Callable[..., Any], *args: Any, **kwargs: Any) -> tuple[Any | None, Exception | None]:
         try:
             return function(*args, **kwargs), None
         except Exception as exc:
-            return None, f"STAGE_EXCEPTION:{type(exc).__name__}"
+            return None, exc
+
+    def _stage_failure_route(
+        self,
+        context: ActiveCycleContext,
+        source_phase: RuntimePhase,
+        stage_name: str,
+        error: Exception,
+        routing_context: RuntimeRoutingContext,
+        seen: set[tuple[str, str, str, str, str, bool, bool]],
+    ) -> tuple[ActiveCycleContext, RoutingDecision]:
+        evidence = StageFailureEvidence(
+            source_phase=source_phase,
+            stage_name=stage_name,
+            failure_kind=StageFailureKind.STAGE_EXCEPTION,
+            exception_type=type(error).__name__,
+            typed_reason=f"STAGE_EXCEPTION:{stage_name}:{type(error).__name__}",
+            reason_scope=ReasonScope.INFRASTRUCTURE_HEALTH,
+            original_reason=str(error),
+            authority_identity=self.registry.transition_table_identity,
+            candidate_identity=routing_context.candidate_identity,
+            state_identity=StateIdentity(context.state_id),
+            trial_id=context.trial_id,
+            cycle_index=context.cycle_index,
+        )
+        context = replace(context, stage_failures=context.stage_failures + (evidence,))
+        state = (
+            routing_context.source_phase.value,
+            PublicCycleEvent.STAGE_EXCEPTION.value,
+            routing_context.deadline.status.value,
+            "NONE" if routing_context.candidate_role is None else routing_context.candidate_role.value,
+            "NONE" if routing_context.candidate_identity is None else routing_context.candidate_identity.value,
+            routing_context.retained_backup_valid,
+            routing_context.terminal_evaluated,
+        )
+        if state in seen:
+            decision = self.supervisor.routing_guard_block(routing_context, "ROUTING_STATE_REPEATED")
+        else:
+            seen.add(state)
+            decision = self.supervisor.route_stage_failure(evidence, routing_context)
+        return replace(context, routing_decisions=context.routing_decisions + (decision,)), decision
+
+    def _record_stage_unknown(
+        self,
+        context: ActiveCycleContext,
+        source_phase: RuntimePhase,
+        stage_name: str,
+        reason: str,
+        scope: ReasonScope,
+        candidate: Candidate | None = None,
+        failure_kind: StageFailureKind = StageFailureKind.STAGE_UNKNOWN,
+    ) -> ActiveCycleContext:
+        evidence = StageFailureEvidence(
+            source_phase=source_phase,
+            stage_name=stage_name,
+            failure_kind=failure_kind,
+            typed_reason=str(reason),
+            reason_scope=scope,
+            original_reason=str(reason),
+            authority_identity=self.registry.transition_table_identity,
+            candidate_identity=None if candidate is None else candidate.identity,
+            state_identity=StateIdentity(context.state_id),
+            trial_id=context.trial_id,
+            cycle_index=context.cycle_index,
+        )
+        return replace(context, stage_failures=context.stage_failures + (evidence,))
+
+    @staticmethod
+    def _normalize_alternative_inventory(inventory, snapshot: RuntimeStateSnapshot) -> AlternativeInventoryEvidence:
+        try:
+            status = AlternativeInventoryStatus(str(inventory.status))
+        except ValueError:
+            status = AlternativeInventoryStatus.UNRESOLVED_STATUS
+        scope = (
+            ReasonScope.NONE
+            if status in {AlternativeInventoryStatus.ALT_AVAILABLE, AlternativeInventoryStatus.NO_ALTERNATIVE_AVAILABLE}
+            else ReasonScope.GLOBAL_AUTHORITY_OR_EVIDENCE
+            if status in {AlternativeInventoryStatus.SOURCE_INVALID, AlternativeInventoryStatus.PROVENANCE_MISSING}
+            else ReasonScope.UNRESOLVED_SCOPE
+        )
+        return AlternativeInventoryEvidence(
+            status=status,
+            candidate_identities=tuple(candidate.identity for candidate in inventory.candidates),
+            source_authority="SOURCE_NATIVE_EXISTING",
+            state_identity=snapshot.identity,
+            map_identity=snapshot.map_identity,
+            reason_scope=scope,
+            original_provider_status=str(inventory.status),
+        )
 
     def _trace_ref(self) -> str | None:
         records = self.active_runner.trace_writer.records
@@ -226,6 +320,8 @@ class ActiveCycleCoordinator:
             boundary=boundary,
             trace_ref=context.trace_ref,
             typed_stop_or_failure_reason=reason,
+            stage_failures=context.stage_failures,
+            alternative_inventory_evidence=context.alternative_inventory_evidence,
         )
 
     def _require_session(self) -> CoordinatorSession:
@@ -309,23 +405,6 @@ class ActiveCycleCoordinator:
             backup_action=backup_action,
         )
         seen: set[tuple[str, str, str, str, str, bool, bool]] = set()
-        l1_value, error = self._safe_call(self.l1_runtime.evaluate_cycle, snapshot)
-        if error:
-            route_context = self._routing_context(RuntimePhase.L1, first_deadline, backup_present=token is not None, backup_valid=backup_valid)
-            context, _ = self._route(context, PublicCycleEvent.STAGE_EXCEPTION, route_context, seen)
-            return self._blocked_result(context, error)
-        context = self._advance(context, PublicCyclePhase.L1_IMMEDIATE_CERTIFICATION, l1_result=l1_value)
-        context, deadline = self._observe(context, "PRIMARY_PROPOSAL_ADMISSION")
-        l1_event = self._l1_event(l1_value.status, l1_value.reason)
-        context, route = self._route(
-            context,
-            l1_event,
-            self._routing_context(RuntimePhase.L1, deadline, backup_present=token is not None, backup_valid=backup_valid, reason_scope=self._reason_scope(l1_value.reason)),
-            seen,
-        )
-        if route.status != RouteResolutionStatus.RESOLVED:
-            return self._blocked_result(context, route.reason)
-
         candidate: Candidate | None = None
         certified_candidate: Candidate | None = None
         l2_result = None
@@ -335,15 +414,49 @@ class ActiveCycleCoordinator:
         alternative_index = 0
         attempt_index = 0
 
+        l1_value, error = self._safe_call(self.l1_runtime.evaluate_cycle, snapshot)
+        if error:
+            route_context = self._routing_context(RuntimePhase.L1, first_deadline, backup_present=token is not None, backup_valid=backup_valid)
+            context = self._advance(context, PublicCyclePhase.L1_IMMEDIATE_CERTIFICATION)
+            context, route = self._stage_failure_route(context, RuntimePhase.L1, "L1", error, route_context, seen)
+            deadline = first_deadline
+        else:
+            context = self._advance(context, PublicCyclePhase.L1_IMMEDIATE_CERTIFICATION, l1_result=l1_value)
+            context, deadline = self._observe(context, "PRIMARY_PROPOSAL_ADMISSION")
+            scope = self.supervisor.classify_reason_scope("L1", l1_value.reason) if l1_value.status == CertificateStatus.UNKNOWN else ReasonScope.NONE
+            if l1_value.status == CertificateStatus.UNKNOWN:
+                context = self._record_stage_unknown(context, RuntimePhase.L1, "L1", l1_value.reason, scope)
+            l1_event = self._l1_event(l1_value.status, scope)
+            context, route = self._route(
+                context,
+                l1_event,
+                self._routing_context(RuntimePhase.L1, deadline, backup_present=token is not None, backup_valid=backup_valid, reason_scope=scope),
+                seen,
+            )
+        if route.status != RouteResolutionStatus.RESOLVED:
+            return self._blocked_result(context, route.reason)
+
         while True:
             destination = route.destination_phase
             if destination == RuntimePhase.PRIMARY_PROPOSAL:
                 context = self._advance(context, PublicCyclePhase.PRIMARY_PROPOSAL)
                 proposal, error = self._safe_call(self.primary_proposal.propose, snapshot, cycle_context.desired_reference)
                 if error:
-                    context, route = self._route(context, PublicCycleEvent.STAGE_EXCEPTION, self._routing_context(RuntimePhase.PRIMARY_PROPOSAL, deadline, backup_present=token is not None, backup_valid=backup_valid), seen)
-                    return self._blocked_result(context, error)
+                    context, route = self._stage_failure_route(
+                        context,
+                        RuntimePhase.PRIMARY_PROPOSAL,
+                        "PRIMARY_PROPOSAL",
+                        error,
+                        self._routing_context(RuntimePhase.PRIMARY_PROPOSAL, deadline, backup_present=token is not None, backup_valid=backup_valid),
+                        seen,
+                    )
+                    if route.status != RouteResolutionStatus.RESOLVED:
+                        return self._blocked_result(context, route.reason)
+                    continue
                 candidate = proposal.candidate if proposal.status == CertificateStatus.PASS else None
+                if proposal.status == CertificateStatus.UNKNOWN:
+                    proposal_scope = self.supervisor.classify_reason_scope("PRIMARY_PROPOSAL", proposal.reason)
+                    context = self._record_stage_unknown(context, RuntimePhase.PRIMARY_PROPOSAL, "PRIMARY_PROPOSAL", proposal.reason, proposal_scope)
                 binding = None
                 if candidate is not None:
                     binding = self.l1_runtime.bind_attempt(l1_value, candidate, attempt_index)
@@ -359,12 +472,24 @@ class ActiveCycleCoordinator:
                 context = self._advance(context, phase)
                 c0_result, error = self._safe_call(self.c0_admission.evaluate, candidate, snapshot)
                 if error:
-                    context, route = self._route(context, PublicCycleEvent.STAGE_EXCEPTION, self._routing_context(RuntimePhase.C0, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid), seen)
-                    return self._blocked_result(context, error)
+                    context, route = self._stage_failure_route(
+                        context,
+                        RuntimePhase.C0,
+                        "C0",
+                        error,
+                        self._routing_context(RuntimePhase.C0, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, reason_scope=ReasonScope.INFRASTRUCTURE_HEALTH),
+                        seen,
+                    )
+                    if route.status != RouteResolutionStatus.RESOLVED:
+                        return self._blocked_result(context, route.reason)
+                    continue
                 if candidate.role == CandidateRole.PRIMARY:
                     context = replace(context, primary_c0=c0_result)
-                event = self._c0_event(c0_result.status, c0_result.reason)
-                context, route = self._route(context, event, self._routing_context(RuntimePhase.C0, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, backup_state=backup_evidence.status.value, reason_scope=self._reason_scope(c0_result.reason)), seen)
+                scope = self.supervisor.classify_reason_scope("C0", c0_result.reason) if c0_result.status == CertificateStatus.UNKNOWN else ReasonScope.NONE
+                if c0_result.status == CertificateStatus.UNKNOWN:
+                    context = self._record_stage_unknown(context, RuntimePhase.C0, "C0", c0_result.reason, scope, candidate)
+                event = self._c0_event(c0_result.status, scope)
+                context, route = self._route(context, event, self._routing_context(RuntimePhase.C0, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, backup_state=backup_evidence.status.value, reason_scope=scope), seen)
 
             elif destination == RuntimePhase.L2:
                 if candidate is None:
@@ -373,14 +498,26 @@ class ActiveCycleCoordinator:
                 context = self._advance(context, phase)
                 l2_result, error = self._safe_call(self.l2_runtime.evaluate, snapshot, candidate)
                 if error:
-                    context, route = self._route(context, PublicCycleEvent.STAGE_EXCEPTION, self._routing_context(RuntimePhase.L2, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid), seen)
-                    return self._blocked_result(context, error)
+                    context, route = self._stage_failure_route(
+                        context,
+                        RuntimePhase.L2,
+                        "L2",
+                        error,
+                        self._routing_context(RuntimePhase.L2, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, reason_scope=ReasonScope.INFRASTRUCTURE_HEALTH),
+                        seen,
+                    )
+                    if route.status != RouteResolutionStatus.RESOLVED:
+                        return self._blocked_result(context, route.reason)
+                    continue
                 if candidate.role == CandidateRole.PRIMARY:
                     context = replace(context, primary_l2=l2_result)
-                event = self._l2_event(l2_result.status, l2_result.reason)
+                scope = self.supervisor.classify_reason_scope("L2", l2_result.reason) if l2_result.status == CertificateStatus.UNKNOWN else ReasonScope.NONE
+                if l2_result.status == CertificateStatus.UNKNOWN:
+                    context = self._record_stage_unknown(context, RuntimePhase.L2, "L2", l2_result.reason, scope, candidate)
+                event = self._l2_event(l2_result.status, scope)
                 if l2_result.status == CertificateStatus.PASS:
                     context, deadline = self._observe(context, "L3_DISCOVERY_ADMISSION")
-                context, route = self._route(context, event, self._routing_context(RuntimePhase.L2, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, backup_state=backup_evidence.status.value, reason_scope=self._reason_scope(l2_result.reason)), seen)
+                context, route = self._route(context, event, self._routing_context(RuntimePhase.L2, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, backup_state=backup_evidence.status.value, reason_scope=scope), seen)
 
             elif destination == RuntimePhase.L3:
                 if candidate is None or l2_result is None:
@@ -389,14 +526,26 @@ class ActiveCycleCoordinator:
                 context = self._advance(context, phase)
                 l3_result, error = self._safe_call(self.l3_runtime.evaluate, snapshot, candidate, l2_result)
                 if error:
-                    context, route = self._route(context, PublicCycleEvent.STAGE_EXCEPTION, self._routing_context(RuntimePhase.L3, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid), seen)
-                    return self._blocked_result(context, error)
+                    context, route = self._stage_failure_route(
+                        context,
+                        RuntimePhase.L3,
+                        "L3",
+                        error,
+                        self._routing_context(RuntimePhase.L3, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, reason_scope=ReasonScope.INFRASTRUCTURE_HEALTH),
+                        seen,
+                    )
+                    if route.status != RouteResolutionStatus.RESOLVED:
+                        return self._blocked_result(context, route.reason)
+                    continue
                 if candidate.role == CandidateRole.PRIMARY:
                     context = replace(context, primary_l3=l3_result)
                 if l3_result.status == CertificateStatus.PASS:
                     certified_candidate = candidate
-                event = self._l3_event(l3_result.status, l3_result.reason)
-                context, route = self._route(context, event, self._routing_context(RuntimePhase.L3, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, certified_candidate_available=l3_result.status == CertificateStatus.PASS, backup_state=backup_evidence.status.value, reason_scope=self._reason_scope(l3_result.reason)), seen)
+                scope = self.supervisor.classify_reason_scope("L3", l3_result.reason) if l3_result.status == CertificateStatus.UNKNOWN else ReasonScope.NONE
+                if l3_result.status == CertificateStatus.UNKNOWN:
+                    context = self._record_stage_unknown(context, RuntimePhase.L3, "L3", l3_result.reason, scope, candidate)
+                event = self._l3_event(l3_result.status, scope)
+                context, route = self._route(context, event, self._routing_context(RuntimePhase.L3, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, certified_candidate_available=l3_result.status == CertificateStatus.PASS, backup_state=backup_evidence.status.value, reason_scope=scope), seen)
 
             elif destination == RuntimePhase.ALT_SEARCH:
                 context = self._advance(context, PublicCyclePhase.ALTERNATIVE_ELIGIBILITY)
@@ -409,16 +558,56 @@ class ActiveCycleCoordinator:
                 if alternative_candidates is None:
                     inventory, error = self._safe_call(self.alternative_provider.enumerate, snapshot)
                     if error:
-                        context, route = self._route(context, PublicCycleEvent.STAGE_EXCEPTION, self._routing_context(RuntimePhase.ALT_SEARCH, deadline, backup_present=token is not None, backup_valid=backup_valid, backup_state=backup_evidence.status.value), seen)
-                        return self._blocked_result(context, error)
-                    alternative_candidates = inventory.candidates if inventory.status == "ALT_AVAILABLE" else ()
+                        context, route = self._stage_failure_route(
+                            context,
+                            RuntimePhase.ALT_SEARCH,
+                            "ALT_SEARCH",
+                            error,
+                            self._routing_context(RuntimePhase.ALT_SEARCH, deadline, backup_present=token is not None, backup_valid=backup_valid, backup_state=backup_evidence.status.value, reason_scope=ReasonScope.INFRASTRUCTURE_HEALTH),
+                            seen,
+                        )
+                        if route.status != RouteResolutionStatus.RESOLVED:
+                            return self._blocked_result(context, route.reason)
+                        continue
+                    inventory_evidence = self._normalize_alternative_inventory(inventory, snapshot)
+                    context = replace(context, alternative_inventory_evidence=inventory_evidence)
+                    if inventory_evidence.status in {
+                        AlternativeInventoryStatus.SOURCE_INVALID,
+                        AlternativeInventoryStatus.PROVENANCE_MISSING,
+                        AlternativeInventoryStatus.UNRESOLVED_STATUS,
+                    }:
+                        context = self._record_stage_unknown(
+                            context,
+                            RuntimePhase.ALT_SEARCH,
+                            "ALT_SEARCH",
+                            f"ALTERNATIVE_PROVIDER_{inventory_evidence.status.value}",
+                            inventory_evidence.reason_scope,
+                            failure_kind=StageFailureKind.PROVIDER_STATUS_FAILURE,
+                        )
+                    alternative_candidates = inventory.candidates if inventory_evidence.status == AlternativeInventoryStatus.ALT_AVAILABLE else ()
+                    if inventory_evidence.status != AlternativeInventoryStatus.ALT_AVAILABLE:
+                        route_context = self._routing_context(
+                            RuntimePhase.ALT_SEARCH,
+                            deadline,
+                            backup_present=token is not None,
+                            backup_valid=backup_valid,
+                            backup_state=backup_evidence.status.value,
+                            reason_scope=inventory_evidence.reason_scope,
+                        )
+                        route = self.supervisor.route_alternative_inventory(inventory_evidence, route_context)
+                        context = replace(context, routing_decisions=context.routing_decisions + (route,))
+                        if route.status != RouteResolutionStatus.RESOLVED:
+                            return self._blocked_result(context, route.reason)
+                        continue
                 if alternative_index < len(alternative_candidates):
                     candidate = alternative_candidates[alternative_index]
                     alternative_index += 1
                     binding = self.l1_runtime.bind_attempt(l1_value, candidate, attempt_index)
                     attempt_index += 1
                     context = replace(context, alternative_attempts=context.alternative_attempts + (candidate.identity,))
-                    context, route = self._route(context, PublicCycleEvent.ALT_AVAILABLE, self._routing_context(RuntimePhase.ALT_SEARCH, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, backup_state=backup_evidence.status.value), seen)
+                    route_context = self._routing_context(RuntimePhase.ALT_SEARCH, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, backup_state=backup_evidence.status.value)
+                    route = self.supervisor.route_alternative_inventory(context.alternative_inventory_evidence, route_context)
+                    context = replace(context, routing_decisions=context.routing_decisions + (route,))
                 else:
                     candidate = None
                     context, route = self._route(context, PublicCycleEvent.ALT_EXHAUSTED, self._routing_context(RuntimePhase.ALT_SEARCH, deadline, backup_present=token is not None, backup_valid=backup_valid, backup_state=backup_evidence.status.value), seen)
@@ -443,7 +632,10 @@ class ActiveCycleCoordinator:
                     return self._blocked_result(context, route.reason)
                 if route.destination_phase == RuntimePhase.TERMINAL_EVALUATION:
                     continue
-                decision = self.supervisor.arbitrate(snapshot, certified_candidate, l3_result if certified_candidate is not None else None, backup_action, backup_valid, terminal_result, deadline)
+                decision, error = self._safe_call(self.supervisor.arbitrate, snapshot, certified_candidate, l3_result if certified_candidate is not None else None, backup_action, backup_valid, terminal_result, deadline)
+                if error:
+                    context, failed_route = self._stage_failure_route(context, RuntimePhase.ARBITRATION, "ARBITRATION", error, arbitration_context, seen)
+                    return self._blocked_result(context, failed_route.reason)
                 if decision.rule_id != route.rule_id:
                     return self._blocked_result(context, "ROUTING_ARBITRATION_IDENTITY_MISMATCH")
                 context = replace(context, final_supervisor_decision=decision)
@@ -457,13 +649,35 @@ class ActiveCycleCoordinator:
                 context, deadline = self._observe(context, "TERMINAL_EVALUATION_ADMISSION")
                 terminal_result, error = self._safe_call(self.terminal_runtime.evaluate, snapshot, True, cycle_context.expected_terminal_ref)
                 if error:
-                    context, route = self._route(context, PublicCycleEvent.STAGE_EXCEPTION, self._routing_context(RuntimePhase.TERMINAL_EVALUATION, deadline, backup_present=token is not None, backup_valid=backup_valid, terminal_evaluated=True, backup_state=backup_evidence.status.value), seen)
-                    return self._blocked_result(context, error)
+                    context, route = self._stage_failure_route(
+                        context,
+                        RuntimePhase.TERMINAL_EVALUATION,
+                        "TERMINAL_EVALUATION",
+                        error,
+                        self._routing_context(RuntimePhase.TERMINAL_EVALUATION, deadline, backup_present=token is not None, backup_valid=backup_valid, terminal_evaluated=True, backup_state=backup_evidence.status.value, reason_scope=ReasonScope.INFRASTRUCTURE_HEALTH),
+                        seen,
+                    )
+                    if route.status != RouteResolutionStatus.RESOLVED:
+                        return self._blocked_result(context, route.reason)
+                    continue
                 context = replace(context, terminal_result=terminal_result)
+                if terminal_result.status == CertificateStatus.UNKNOWN:
+                    terminal_scope = self.supervisor.classify_reason_scope("TERMINAL_EVALUATION", terminal_result.reason)
+                    context = self._record_stage_unknown(context, RuntimePhase.TERMINAL_EVALUATION, "TERMINAL_EVALUATION", terminal_result.reason, terminal_scope)
                 terminal_event = self._terminal_event(terminal_result.status, terminal_result.eligible)
-                context, route = self._route(context, terminal_event, self._routing_context(RuntimePhase.TERMINAL_EVALUATION, deadline, backup_present=token is not None, backup_valid=backup_valid, terminal_evaluated=True, terminal_evidence_eligible=terminal_result.status == CertificateStatus.PASS and terminal_result.eligible, backup_state=backup_evidence.status.value), seen)
+                context, route = self._route(context, terminal_event, self._routing_context(RuntimePhase.TERMINAL_EVALUATION, deadline, backup_present=token is not None, backup_valid=backup_valid, terminal_evaluated=True, terminal_evidence_eligible=terminal_result.status == CertificateStatus.PASS and terminal_result.eligible, backup_state=backup_evidence.status.value, reason_scope=terminal_scope if terminal_result.status == CertificateStatus.UNKNOWN else ReasonScope.NONE), seen)
                 if route.status == RouteResolutionStatus.RESOLVED and route.destination_phase in {RuntimePhase.COMMIT, RuntimePhase.ASSURANCE_BOUNDARY}:
-                    decision = self.supervisor.arbitrate(snapshot, None, None, backup_action, backup_valid, terminal_result, deadline)
+                    decision, error = self._safe_call(self.supervisor.arbitrate, snapshot, None, None, backup_action, backup_valid, terminal_result, deadline)
+                    if error:
+                        context, failed_route = self._stage_failure_route(
+                            context,
+                            RuntimePhase.ARBITRATION,
+                            "ARBITRATION",
+                            error,
+                            self._routing_context(RuntimePhase.ARBITRATION, deadline, backup_present=token is not None, backup_valid=backup_valid, terminal_evaluated=True, backup_state=backup_evidence.status.value),
+                            seen,
+                        )
+                        return self._blocked_result(context, failed_route.reason)
                     expected_rule = "ARB_TERMINAL" if route.destination_phase == RuntimePhase.COMMIT else "ARB_BOUNDARY"
                     if decision.rule_id != expected_rule:
                         return self._blocked_result(context, "TERMINAL_ARBITRATION_IDENTITY_MISMATCH")
@@ -480,7 +694,17 @@ class ActiveCycleCoordinator:
             elif destination == RuntimePhase.ASSURANCE_BOUNDARY:
                 decision = context.final_supervisor_decision
                 if decision is None:
-                    decision = self.supervisor.arbitrate(snapshot, None, None, backup_action, backup_valid, terminal_result, deadline)
+                    decision, error = self._safe_call(self.supervisor.arbitrate, snapshot, None, None, backup_action, backup_valid, terminal_result, deadline)
+                    if error:
+                        context, failed_route = self._stage_failure_route(
+                            context,
+                            RuntimePhase.ARBITRATION,
+                            "ARBITRATION",
+                            error,
+                            self._routing_context(RuntimePhase.ARBITRATION, deadline, backup_present=token is not None, backup_valid=backup_valid, terminal_evaluated=terminal_result is not None, backup_state=backup_evidence.status.value),
+                            seen,
+                        )
+                        return self._blocked_result(context, failed_route.reason)
                     context = replace(context, final_supervisor_decision=decision)
                 return self._commit_or_boundary(context, snapshot, decision, boundary=True)
 
@@ -519,50 +743,40 @@ class ActiveCycleCoordinator:
         return lock
 
     @staticmethod
-    def _reason_scope(reason: str) -> str:
-        value = reason.upper()
-        if any(token in value for token in ("MAP", "AUTHORITY", "IDENTITY", "ALIGNMENT")):
-            return "GLOBAL_AUTHORITY_OR_EVIDENCE"
-        if any(token in value for token in ("EXCEPTION", "HEALTH", "NONFINITE")):
-            return "INFRASTRUCTURE_HEALTH"
-        return "CANDIDATE_LOCAL_COMPUTATION"
-
-    @classmethod
-    def _l1_event(cls, status: CertificateStatus, reason: str) -> PublicCycleEvent:
+    def _l1_event(status: CertificateStatus, scope: ReasonScope) -> PublicCycleEvent:
         if status == CertificateStatus.PASS:
             return PublicCycleEvent.L1_PASS
         if status == CertificateStatus.FAIL:
             return PublicCycleEvent.L1_FAIL
-        scope = cls._reason_scope(reason)
-        if scope == "GLOBAL_AUTHORITY_OR_EVIDENCE":
+        if scope == ReasonScope.GLOBAL_AUTHORITY_OR_EVIDENCE:
             return PublicCycleEvent.L1_UNKNOWN_GLOBAL
-        if scope == "INFRASTRUCTURE_HEALTH":
+        if scope == ReasonScope.INFRASTRUCTURE_HEALTH:
             return PublicCycleEvent.L1_UNKNOWN_HEALTH
         return PublicCycleEvent.L1_UNKNOWN_UNRESOLVED
 
-    @classmethod
-    def _c0_event(cls, status: CertificateStatus, reason: str) -> PublicCycleEvent:
+    @staticmethod
+    def _c0_event(status: CertificateStatus, scope: ReasonScope) -> PublicCycleEvent:
         if status == CertificateStatus.PASS:
             return PublicCycleEvent.C0_PASS
         if status == CertificateStatus.FAIL:
             return PublicCycleEvent.C0_FAIL_LOCAL
-        return PublicCycleEvent.C0_UNKNOWN_GLOBAL if cls._reason_scope(reason) == "GLOBAL_AUTHORITY_OR_EVIDENCE" else PublicCycleEvent.C0_UNKNOWN_LOCAL
+        return PublicCycleEvent.C0_UNKNOWN_LOCAL if scope == ReasonScope.CANDIDATE_LOCAL_COMPUTATION else PublicCycleEvent.C0_UNKNOWN_GLOBAL
 
-    @classmethod
-    def _l2_event(cls, status: CertificateStatus, reason: str) -> PublicCycleEvent:
+    @staticmethod
+    def _l2_event(status: CertificateStatus, scope: ReasonScope) -> PublicCycleEvent:
         if status == CertificateStatus.PASS:
             return PublicCycleEvent.L2_PASS
         if status == CertificateStatus.FAIL:
             return PublicCycleEvent.L2_FAIL
-        return PublicCycleEvent.L2_UNKNOWN_GLOBAL if cls._reason_scope(reason) == "GLOBAL_AUTHORITY_OR_EVIDENCE" else PublicCycleEvent.L2_UNKNOWN_LOCAL
+        return PublicCycleEvent.L2_UNKNOWN_LOCAL if scope == ReasonScope.CANDIDATE_LOCAL_COMPUTATION else PublicCycleEvent.L2_UNKNOWN_GLOBAL
 
-    @classmethod
-    def _l3_event(cls, status: CertificateStatus, reason: str) -> PublicCycleEvent:
+    @staticmethod
+    def _l3_event(status: CertificateStatus, scope: ReasonScope) -> PublicCycleEvent:
         if status == CertificateStatus.PASS:
             return PublicCycleEvent.L3_WITNESS_FOUND
         if status == CertificateStatus.FAIL:
             return PublicCycleEvent.L3_WITNESS_ABSENT
-        return PublicCycleEvent.L3_UNKNOWN_GLOBAL if cls._reason_scope(reason) == "GLOBAL_AUTHORITY_OR_EVIDENCE" else PublicCycleEvent.L3_UNKNOWN_LOCAL
+        return PublicCycleEvent.L3_UNKNOWN_LOCAL if scope == ReasonScope.CANDIDATE_LOCAL_COMPUTATION else PublicCycleEvent.L3_UNKNOWN_GLOBAL
 
     @staticmethod
     def _terminal_event(status: CertificateStatus, eligible: bool) -> PublicCycleEvent:

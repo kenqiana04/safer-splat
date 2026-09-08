@@ -1,0 +1,61 @@
+{
+  "schema": "R2_EXCEPTION_UNKNOWN_REPAIR_INPUT_LOCK_V2",
+  "task_type": "R2_TYPED_EXCEPTION_UNKNOWN_AND_ALTERNATIVE_STATUS_REPAIR_ONLY",
+  "pr125": {
+    "number": 125,
+    "state": "OPEN_DRAFT",
+    "title": "[Draft] Repair active runtime authority and routing boundary V2",
+    "branch": "repair-active-runtime-authority-and-routing-boundary-v2",
+    "head": "303aa01c08e82d1d77a5f5cabf5127344109a996",
+    "base": "audit-active-runtime-pre-repair-architecture-v2",
+    "base_sha": "cef9dddc4ceb20e22f5962ee0740d92b91a3ff86"
+  },
+  "normative_sha256": {
+    "MASTER_DEFECT_REGISTER_V2.csv": "e34eccc4bef4215e7c0500ea813084772d3c42ba16a75278e7812be5c244912d",
+    "PRE_REPAIR_REPAIR_DAG_V2.json": "9c31fbd60c374249dd3e137dcb8d2737a65e7e09a44ab61f06d444a371889cc1",
+    "EXCEPTION_AND_UNKNOWN_FULL_AUDIT_V2.csv": "452860cb657267c78a1f9a9efb5a02ecce1a202a4cfaa114367ebf27448db76b",
+    "UNKNOWN_REASON_SCOPE_INFORMATION_LOSS_V2.json": "a3a1649f7491480406080ff9017f8062f845a936f45b95036c8f97a45983ba72",
+    "ALTERNATIVE_RUNTIME_AUDIT_V2.json": "ed405905d63ff3f300b30ea20953b7ac4e95f427fd4b9ee6f42d51c7154d00c8",
+    "LATENT_HIGH_RISK_REGISTER_V2.csv": "299de98cc6ca8e0d55f9887f1ccf5f74a99f4fc6fa7ae5cf68e14d8cf09e2239",
+    "DEFECT_ROOT_CAUSE_CLUSTERING_V2.json": "8053f4e72e93ffb5fae98512be0e0467903c14e8b7cb6611cf66d144574e2c3e",
+    "PR107_STATE_TRANSITION_TABLE_V2.csv": "0dc77f53fe33b94f8c997f4a4c50c7f2fb5d72fb95113dd6e8d7856525d6ad72",
+    "PR110_RUNTIME_ASSURANCE_DEADLINE_AUTHORITY_V2.json": "3a539edc4bd31f9cbe4f929bdd28141c37f300ea413101475d540d27bb7498b7",
+    "PR111_ALTERNATIVE_SOURCE_AUTHORITY_V2.json": "4cc7bbe9300435b2aa5850b96444ddcf67e9c2be3d1980207d1e6de5e0f0458d",
+    "PR112_RETAINED_BACKUP_TOKEN_SCHEMA_V2.json": "e6d9495fcd8ee9cadb27acc01be3143f0ee15b17ebfeeddd22cd32e1c9b97883",
+    "PR112_BACKUP_TOKEN_VALIDITY_CONTRACT_V2.md": "c59ed14f3b7e56e3a176931bc1b33a8d13ac7c3635163a05454ebb049b43f82e",
+    "PR113_TERMINAL_EMERGENCY_POLICY_CONTRACT_V2.json": "a7f6763e69c36d937e85eaa47ee247ac935f3e53d65989215557bd7858cee2ba",
+    "PR121_PUBLIC_CYCLE_EXCEPTION_ROUTING_V2.json": "13816ccf91df1f1ae771bfa137a6d20f04efded6f86e44bfc71afe536add097b",
+    "PR125_R1_INPUT_LOCK": "3c69861008c736fa61a8d5b16fdc0c361fde08894b3f1701a62dd16db26222ff",
+    "PR125_R1_SOURCE_FREEZE": "a8b1ffe352a10bfd3944180b1c4f625cbfc28b1578b57aa1644cc5e21bbcd3ec",
+    "PR125_R1_43_RULE_ROUND_TRIP": "05714c92dbb26648590af7a03f25dea56c99bafa9aa5451ae897d2c0faea9153",
+    "PR125_R1_DEFERRED_DEFECT_STATUS": "67b7d67a6b299fbb4ba39f8e57d16a248879305a403487c688991923a5ccee40",
+    "PR125_R1_BYPASS_PRESERVATION": "20f6563a98f80ef3a1146ab25f89ab8c17edddbb3f2a74b71179ffd58e6f5ace"
+  },
+  "defect_row_sha256": {
+    "D-EXC-001": "3574095a790051820e994c7bad983c2655430f1189e7729ab5636d5e1ab15cfc",
+    "D-ALT-001": "83237090aec467d2b0249ca691213d3a822c1e54e24fd4f979a4959f15d77937"
+  },
+  "pr125_runtime_blob_sha": {
+    "active_cycle.py": "8b27adb6cb7a9ee2445118676bd4f25df1ea4650",
+    "runtime_types.py": "716b1b88ab8c4da0bc90c0c0a3dd9b1b85fe633d",
+    "supervisor.py": "fb9ff547a1ab90aaaecaa746d6e9a688b2e11cad",
+    "alternative_provider.py": "32da73b46fc7c5b0fb4b0ac7a5d583a0f3dba980",
+    "active_runner.py": "64b747656b031881123c92587d1beca6e742be5e",
+    "plant_commit.py": "f9116db0690983252ea0f60d286399b71d644134",
+    "backup_token_store.py": "3af371733638bcd6aac9240db38328d9e2f6154f",
+    "terminal_runtime.py": "9cbc9769970626ecee600e83909655f44e75466d",
+    "trace_writer.py": "f7d1c768a28d36ab1ef88614bd01c8722e9ea292",
+    "authority_registry.py": "c444b077fde51dcffc3c057302d1336dcb7ce0c9",
+    "start_admission.py": "40e6774bc37cae76758db97ee3db43a48e373d55",
+    "diagnostic_r0.py": "8556cdb5aa9082e323d47419736ceec5bb7660ae",
+    "l1_runtime.py": "6a477fb4fd84f6c04c0e68a586e43baf6d5aa77c",
+    "primary_proposal_adapter.py": "2de4ad2cbf92a71affd8a2d2630094f9a6d29936",
+    "c0_admission.py": "3cbf74596980b22eb94d3233134f270ce6cc7f9f",
+    "l2_runtime.py": "b7b26075ea01878deea39a12f66b5990c0d08de1",
+    "l3_runtime.py": "93db2095cfc3102b37f35bfef91a611786de71d2",
+    "deadline_runtime.py": "cf81341b655deb7b8b5a6261eafb6171580dbd45"
+  },
+  "bypass_preserved_source_identities_locked": true,
+  "pr111_authority_identity": "ALTERNATIVE_SOURCE_AUTHORITY",
+  "runtime_mutation_authority": ["active_cycle.py", "runtime_types.py", "supervisor.py"]
+}

@@ -1,0 +1,146 @@
+{
+  "invariants": [
+    {
+      "id": "R2-INV-01",
+      "satisfied": true,
+      "statement": "only R2 root repaired"
+    },
+    {
+      "id": "R2-INV-02",
+      "satisfied": true,
+      "statement": "R1 remains closed"
+    },
+    {
+      "id": "R2-INV-03",
+      "satisfied": true,
+      "statement": "exception is typed evidence"
+    },
+    {
+      "id": "R2-INV-04",
+      "satisfied": true,
+      "statement": "resolved exception route is executed"
+    },
+    {
+      "id": "R2-INV-05",
+      "satisfied": true,
+      "statement": "unresolved route blocks typed"
+    },
+    {
+      "id": "R2-INV-06",
+      "satisfied": true,
+      "statement": "exception never becomes PASS"
+    },
+    {
+      "id": "R2-INV-07",
+      "satisfied": true,
+      "statement": "exception never becomes finite FAIL without authority"
+    },
+    {
+      "id": "R2-INV-08",
+      "satisfied": true,
+      "statement": "no u_des fallback"
+    },
+    {
+      "id": "R2-INV-09",
+      "satisfied": true,
+      "statement": "no uncertified commit"
+    },
+    {
+      "id": "R2-INV-10",
+      "satisfied": true,
+      "statement": "reason scope typed"
+    },
+    {
+      "id": "R2-INV-11",
+      "satisfied": true,
+      "statement": "no substring scope policy"
+    },
+    {
+      "id": "R2-INV-12",
+      "satisfied": true,
+      "statement": "unknown unmapped becomes UNRESOLVED_SCOPE"
+    },
+    {
+      "id": "R2-INV-13",
+      "satisfied": true,
+      "statement": "ALT_AVAILABLE preserved"
+    },
+    {
+      "id": "R2-INV-14",
+      "satisfied": true,
+      "statement": "NO_ALTERNATIVE_AVAILABLE preserved"
+    },
+    {
+      "id": "R2-INV-15",
+      "satisfied": true,
+      "statement": "SOURCE_INVALID preserved"
+    },
+    {
+      "id": "R2-INV-16",
+      "satisfied": true,
+      "statement": "PROVENANCE_MISSING preserved"
+    },
+    {
+      "id": "R2-INV-17",
+      "satisfied": true,
+      "statement": "only lawful finite absence may map exhausted"
+    },
+    {
+      "id": "R2-INV-18",
+      "satisfied": true,
+      "statement": "provider source unchanged"
+    },
+    {
+      "id": "R2-INV-19",
+      "satisfied": true,
+      "statement": "no synthetic alternative"
+    },
+    {
+      "id": "R2-INV-20",
+      "satisfied": true,
+      "statement": "Supervisor owns failure routing"
+    },
+    {
+      "id": "R2-INV-21",
+      "satisfied": true,
+      "statement": "43 frozen rows unchanged"
+    },
+    {
+      "id": "R2-INV-22",
+      "satisfied": true,
+      "statement": "Supervisor arbitrate priority unchanged"
+    },
+    {
+      "id": "R2-INV-23",
+      "satisfied": true,
+      "statement": "backup module unchanged"
+    },
+    {
+      "id": "R2-INV-24",
+      "satisfied": true,
+      "statement": "terminal module unchanged"
+    },
+    {
+      "id": "R2-INV-25",
+      "satisfied": true,
+      "statement": "plant runner trace unchanged"
+    },
+    {
+      "id": "R2-INV-26",
+      "satisfied": true,
+      "statement": "BYPASS unchanged"
+    },
+    {
+      "id": "R2-INV-27",
+      "satisfied": true,
+      "statement": "no real execution"
+    },
+    {
+      "id": "R2-INV-28",
+      "satisfied": true,
+      "statement": "full reconformance required next"
+    }
+  ],
+  "satisfied_count": 28,
+  "schema": "R2_EXCEPTION_UNKNOWN_REPAIR_INVARIANTS_V2"
+}

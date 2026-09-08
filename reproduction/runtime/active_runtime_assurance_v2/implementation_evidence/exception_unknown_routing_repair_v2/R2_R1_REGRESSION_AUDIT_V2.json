@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "coordinator_no_deadline_policy": true,
+    "coordinator_no_policy_RoutingDecision": true,
+    "destination_derived_field_count": 0,
+    "exact_one_preserved": true,
+    "frozen_row_count_43": true,
+    "supervisor_sole_routing_owner": true
+  },
+  "failed_count": 0,
+  "schema": "R2_R1_REGRESSION_AUDIT_V2",
+  "status": "PASS_R1_REGRESSION_PRESERVED"
+}
