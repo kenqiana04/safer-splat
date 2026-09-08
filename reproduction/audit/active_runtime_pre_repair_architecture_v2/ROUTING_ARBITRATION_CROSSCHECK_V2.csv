@@ -1,0 +1,6 @@
+stage,routing_owner,selection_owner,coordinator_direct_selection,verdict
+L1,Supervisor.route_transition,Supervisor.arbitrate,False,ROUTING_OWNER_PRESENT
+C0/L2/L3,Supervisor.route_transition,Supervisor.arbitrate,False,PREINTERPRETATION_BEFORE_OWNER
+ARBITRATION,Supervisor.route_transition,Supervisor.arbitrate,False,SELECTOR_PRESERVED
+BOUNDARY,Supervisor.route_transition,Supervisor.arbitrate,False,NO_ACTION_PATH
+COMMIT,Supervisor.route_transition,Supervisor.arbitrate,False,ACTIVE_RUNNER_COMMIT

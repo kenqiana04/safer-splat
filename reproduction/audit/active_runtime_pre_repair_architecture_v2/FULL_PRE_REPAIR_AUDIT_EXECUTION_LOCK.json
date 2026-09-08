@@ -2,10 +2,10 @@
   "audit_until_complete": true,
   "files": [
     {
-      "git_blob_sha1": "b4e21cb975d9d3d34d65846eb5578be7efa87ac6",
+      "git_blob_sha1": "eb46cedd23668d02f861b14f1b9ba30861894671",
       "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/FULL_PRE_REPAIR_AUDIT_INPUT_LOCK.json",
-      "sha256": "b36f1473303248f3af536be92a4ccdd43d9d2cf859de65457f92fe1324f201bf",
-      "size": 13223
+      "sha256": "df87b4bcee762fbbd1161642b2ae124193b98311ea5f15220f94d7fdd8b8fb7a",
+      "size": 13278
     },
     {
       "git_blob_sha1": "627ef6ec940d268c41fd74daaf401d55701a87e9",
@@ -36,6 +36,12 @@
       "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/validate_full_active_runtime_pre_repair_audit_v2.py",
       "sha256": "f46c88d2a378e1c2649fcd5e1d6d83579a1f753a4690ed5cba6c812b28f8e3e8",
       "size": 7678
+    },
+    {
+      "git_blob_sha1": "66d41568437f57d4bc1f7adfda281f81cf397c44",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/run_full_pre_repair_audit_v2.py",
+      "sha256": "ad8713067c3a43b42c0c12059ee4ba392c04decd4e7b873ee704c2c5efdab676",
+      "size": 61441
     }
   ],
   "no_runtime_mutation": true,

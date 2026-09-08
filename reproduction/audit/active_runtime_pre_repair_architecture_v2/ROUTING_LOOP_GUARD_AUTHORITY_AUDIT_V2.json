@@ -1,0 +1,8 @@
+{
+  "arbitrary_iteration_limit": false,
+  "finite_alternative_bound": "provider inventory length",
+  "guard_constructs_routing_decision_in_coordinator": true,
+  "schema": "ROUTING_LOOP_GUARD_AUTHORITY_AUDIT_V2",
+  "seen_state_guard": true,
+  "status": "COORDINATOR_ROUTING_AUTHORITY_LEAK"
+}

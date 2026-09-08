@@ -1,0 +1,23 @@
+{
+  "FINAL_DECISION": "FREEZE_FULL_PRE_REPAIR_FINDINGS_AND_ADVANCE_BOUNDED_REPAIR_DAG",
+  "FINAL_STATUS": "PASS_FULL_ACTIVE_RUNTIME_PRE_REPAIR_AUDIT_V2",
+  "Only next task": "REPAIR_ACTIVE_RUNTIME_AUTHORITY_AND_ROUTING_BOUNDARY_V2",
+  "audit_completeness": "A-Q_COMPLETE",
+  "confirmed_defect_count": 4,
+  "confirmed_severity": {
+    "CRITICAL": 3,
+    "HIGH": 1
+  },
+  "dynamic_conformance_history": "PR123 historical E2E 0/6 and 0% critical dynamic coverage remain unchanged; no new real execution",
+  "latent_high_risk_count": 5,
+  "only_next_task": "REPAIR_ACTIVE_RUNTIME_AUTHORITY_AND_ROUTING_BOUNDARY_V2",
+  "remaining_blockers": [
+    "Coordinator authority leak",
+    "Incomplete transition metadata carrier",
+    "Stage-exception route bypass",
+    "Alternative status collapse",
+    "latent terminal/token/unknown/BYPASS identity risks require bounded repair/testing"
+  ],
+  "schema": "FULL_ACTIVE_RUNTIME_PRE_REPAIR_AUDIT_V2_FINAL_DECISION",
+  "verified_not_a_bug_count": 6
+}

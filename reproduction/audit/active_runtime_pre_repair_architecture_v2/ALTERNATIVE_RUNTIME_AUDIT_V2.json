@@ -1,0 +1,17 @@
+{
+  "coordinator_call_gate": "deadline.status == OPEN",
+  "finding": "SOURCE_INVALID/PROVENANCE_MISSING/UNKNOWN can be collapsed into ALT_EXHAUSTED",
+  "provider_inventory": 0,
+  "provider_statuses": [
+    "ALT_AVAILABLE",
+    "NO_ALTERNATIVE_AVAILABLE",
+    "SOURCE_INVALID",
+    "PROVENANCE_MISSING"
+  ],
+  "recertification_required": true,
+  "schema": "ALTERNATIVE_RUNTIME_AUDIT_V2",
+  "source_authority": "SOURCE_NATIVE_EXISTING",
+  "status": "COMPLETE_WITH_STATUS_COLLAPSE_FINDING",
+  "status_collapse": "inventory.candidates if status == ALT_AVAILABLE else empty tuple",
+  "synthetic_generation": false
+}

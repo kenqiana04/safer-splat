@@ -1,0 +1,63 @@
+{
+  "critical_blockers": [
+    "D-AUTH-001",
+    "D-TRANS-001",
+    "D-EXC-001"
+  ],
+  "major_issues": [
+    "D-ALT-001",
+    "R-TERM-001",
+    "R-UNK-001"
+  ],
+  "minor_issues": [
+    "R-BK-001",
+    "R-BYPASS-001",
+    "R-TRACE-001"
+  ],
+  "prohibited_claims": [
+    "runtime conformance pass",
+    "collision reduction",
+    "deployment readiness",
+    "real-time guarantee"
+  ],
+  "recommended_case": "PASS_AUDIT_ADVANCE_BOUNDED_REPAIR_DAG",
+  "review_notes": "All domains were completed after findings; defects remain findings and are not repaired.",
+  "review_questions": {
+    "a_to_q_complete": true,
+    "backup": "validation and mutation owners preserved; bool projection loses lifecycle detail",
+    "bypass_impact": "no semantic body change; AST identity mismatch remains latent risk",
+    "commit_trace": "ActiveRunner/PlantCommit/TraceWriter chain preserved; no direct plant call",
+    "confirmed_defect_count": 4,
+    "coordinator": "deadline/search/navigation policy leak plus exception/status handling findings",
+    "deadline": "observation source present; coordinator interprets OPEN/non-OPEN and timing",
+    "exception_unknown": "exception route bypass and heuristic reason scope audited",
+    "latent_risks": 5,
+    "legacy_oracle": "no legacy 0.11 leak and no oracle feedback edge",
+    "not_a_bug": 6,
+    "only_next_task": "REPAIR_ACTIVE_RUNTIME_AUTHORITY_AND_ROUTING_BOUNDARY_V2",
+    "repair_strategy": "STAGED_REPAIR_DAG with R1 authority/transition, R2 exception/UNKNOWN/alternative, then R3 conformance",
+    "severity_distribution": {
+      "CRITICAL": 3,
+      "HIGH": 1
+    },
+    "start_session": "admission/R0 and session guards are complete; no R0 defect",
+    "terminal": "route-only selection owner preserved; fallback_context is hard-coded latent risk",
+    "top_clusters": [
+      "AUTHORITY_BOUNDARY_CLUSTER",
+      "TRANSITION_METADATA_FIDELITY_CLUSTER",
+      "UNKNOWN_EXCEPTION_CLUSTER",
+      "DEADLINE_ROUTING_CLUSTER"
+    ],
+    "transition": "43 frozen rows present but metadata carrier incomplete and destination-derived",
+    "why_incremental_blockers_existed": "PR123 intentionally stopped at the first conformance counterexample; this audit removes that stopping rule and completes all domains.",
+    "why_no_smoke": "confirmed authority and routing defects block conformance; audit has no repair authority"
+  },
+  "schema": "FULL_ACTIVE_RUNTIME_PRE_REPAIR_AUDIT_REVIEW_V2",
+  "supported_claims": [
+    "complete A-Q static/symbolic evidence",
+    "confirmed pre-repair defects",
+    "historical PR123 evidence preserved",
+    "no new runtime execution"
+  ],
+  "verdict": "PASS_FULL_PRE_REPAIR_AUDIT_COMPLETE"
+}

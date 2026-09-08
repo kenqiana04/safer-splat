@@ -1,0 +1,17 @@
+{
+  "evidence": "supervisor.py TransitionTable.resolve derives multiple RoutingDecision fields from destination enum instead of carrying every frozen row field",
+  "rule_count": 43,
+  "runtime_commit_source": "TransitionRule.commit_allowed loaded from frozen commit field",
+  "runtime_destination_source": "TransitionRule.destination_phase loaded from runtime_destination or frozen destination_phase",
+  "schema": "DESTINATION_DERIVATION_AUDIT_V2",
+  "status": "UNSAFE_SEMANTIC_INFERENCE_PRESENT",
+  "unique_rule_ids": true,
+  "unsafe_semantic_inference": [
+    "may_start_next_stage",
+    "may_start_new_search",
+    "requires_arbitration",
+    "backup_routing_allowed",
+    "terminal_routing_allowed",
+    "deadline_interpretation"
+  ]
+}

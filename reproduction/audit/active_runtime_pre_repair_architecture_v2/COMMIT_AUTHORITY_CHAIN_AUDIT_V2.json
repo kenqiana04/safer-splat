@@ -1,0 +1,13 @@
+{
+  "active_runner_unchanged": true,
+  "chain": [
+    "Supervisor.arbitrate",
+    "ActiveRunner.commit_active_decision",
+    "PlantCommitAdapter.commit",
+    "BackupTokenStore lifecycle",
+    "TraceWriter"
+  ],
+  "coordinator_direct_plant_call": false,
+  "schema": "COMMIT_AUTHORITY_CHAIN_AUDIT_V2",
+  "status": "COMPLETE"
+}

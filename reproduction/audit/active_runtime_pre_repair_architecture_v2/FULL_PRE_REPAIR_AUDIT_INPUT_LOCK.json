@@ -6,6 +6,7 @@
     "size": 4204
   },
   "audit_scripts_manifest": {
+    "audit_runner": "run_full_pre_repair_audit_v2.py",
     "builder": "build_pre_repair_audit_harness_v2.py",
     "model_checker": "model_check_active_runtime_pre_repair_v2.py",
     "validator": "validate_full_active_runtime_pre_repair_audit_v2.py"

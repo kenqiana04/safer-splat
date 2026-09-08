@@ -1,0 +1,469 @@
+{
+  "all_probes_completed": true,
+  "probe_count": 48,
+  "results": [
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "source": "static source and frozen contract"
+      },
+      "name": "public_api",
+      "outcome": "PASS",
+      "probe_id": "AAP-001"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "classification": "PASS",
+        "source": "static runtime audit"
+      },
+      "name": "coordinator_calls_frozen_modules",
+      "outcome": "PASS",
+      "probe_id": "AAP-002"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "source": "static source and frozen contract"
+      },
+      "name": "single_composition_owner",
+      "outcome": "PASS",
+      "probe_id": "AAP-003"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "classification": "PASS",
+        "source": "static runtime audit"
+      },
+      "name": "supervisor_route_owner",
+      "outcome": "PASS",
+      "probe_id": "AAP-004"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "classification": "PASS",
+        "source": "static runtime audit"
+      },
+      "name": "supervisor_selector_owner",
+      "outcome": "PASS",
+      "probe_id": "AAP-005"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "classification": "PASS",
+        "source": "static runtime audit"
+      },
+      "name": "plant_owner",
+      "outcome": "PASS",
+      "probe_id": "AAP-006"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "classification": "PASS",
+        "source": "static runtime audit"
+      },
+      "name": "token_owner",
+      "outcome": "PASS",
+      "probe_id": "AAP-007"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "classification": "PASS",
+        "source": "static runtime audit"
+      },
+      "name": "trace_owner",
+      "outcome": "PASS",
+      "probe_id": "AAP-008"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "no_runtime_data": true,
+        "source": "bounded static probe"
+      },
+      "name": "initial_safe_rule",
+      "outcome": "COMPLETE_WITHOUT_SEPARATE_DEFECT",
+      "probe_id": "AAP-009"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "no_runtime_data": true,
+        "source": "bounded static probe"
+      },
+      "name": "initial_repair_rule",
+      "outcome": "COMPLETE_WITHOUT_SEPARATE_DEFECT",
+      "probe_id": "AAP-010"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "no_runtime_data": true,
+        "source": "bounded static probe"
+      },
+      "name": "r0_diagnostic_rule",
+      "outcome": "COMPLETE_WITHOUT_SEPARATE_DEFECT",
+      "probe_id": "AAP-011"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "no_runtime_data": true,
+        "source": "bounded static probe"
+      },
+      "name": "l1_pass_rule",
+      "outcome": "COMPLETE_WITHOUT_SEPARATE_DEFECT",
+      "probe_id": "AAP-012"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "no_runtime_data": true,
+        "source": "bounded static probe"
+      },
+      "name": "l1_fail_rule",
+      "outcome": "COMPLETE_WITHOUT_SEPARATE_DEFECT",
+      "probe_id": "AAP-013"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "no_runtime_data": true,
+        "source": "bounded static probe"
+      },
+      "name": "l1_unknown_rules",
+      "outcome": "COMPLETE_WITHOUT_SEPARATE_DEFECT",
+      "probe_id": "AAP-014"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "no_runtime_data": true,
+        "source": "bounded static probe"
+      },
+      "name": "primary_rule",
+      "outcome": "COMPLETE_WITHOUT_SEPARATE_DEFECT",
+      "probe_id": "AAP-015"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "no_runtime_data": true,
+        "source": "bounded static probe"
+      },
+      "name": "c0_rules",
+      "outcome": "COMPLETE_WITHOUT_SEPARATE_DEFECT",
+      "probe_id": "AAP-016"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "no_runtime_data": true,
+        "source": "bounded static probe"
+      },
+      "name": "l2_rules",
+      "outcome": "COMPLETE_WITHOUT_SEPARATE_DEFECT",
+      "probe_id": "AAP-017"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "no_runtime_data": true,
+        "source": "bounded static probe"
+      },
+      "name": "l3_rules",
+      "outcome": "COMPLETE_WITHOUT_SEPARATE_DEFECT",
+      "probe_id": "AAP-018"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "classification": "FINDING",
+        "source": "static runtime audit"
+      },
+      "name": "alt_rules",
+      "outcome": "FINDING",
+      "probe_id": "AAP-019"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "classification": "FINDING",
+        "source": "static runtime audit"
+      },
+      "name": "deadline_guard_rule",
+      "outcome": "FINDING",
+      "probe_id": "AAP-020"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "no_runtime_data": true,
+        "source": "bounded static probe"
+      },
+      "name": "arbitration_rules",
+      "outcome": "COMPLETE_WITHOUT_SEPARATE_DEFECT",
+      "probe_id": "AAP-021"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "no_runtime_data": true,
+        "source": "bounded static probe"
+      },
+      "name": "backup_commit_rule",
+      "outcome": "COMPLETE_WITHOUT_SEPARATE_DEFECT",
+      "probe_id": "AAP-022"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "no_runtime_data": true,
+        "source": "bounded static probe"
+      },
+      "name": "terminal_rules",
+      "outcome": "COMPLETE_WITHOUT_SEPARATE_DEFECT",
+      "probe_id": "AAP-023"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "no_runtime_data": true,
+        "source": "bounded static probe"
+      },
+      "name": "boundary_rule",
+      "outcome": "COMPLETE_WITHOUT_SEPARATE_DEFECT",
+      "probe_id": "AAP-024"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "source": "static source and frozen contract"
+      },
+      "name": "phase_enum",
+      "outcome": "PASS",
+      "probe_id": "AAP-025"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "source": "static source and frozen contract"
+      },
+      "name": "event_enum",
+      "outcome": "PASS",
+      "probe_id": "AAP-026"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "no_runtime_data": true,
+        "source": "bounded static probe"
+      },
+      "name": "unknown_scope_mapping",
+      "outcome": "COMPLETE_WITHOUT_SEPARATE_DEFECT",
+      "probe_id": "AAP-027"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "classification": "FINDING",
+        "source": "static runtime audit"
+      },
+      "name": "stage_exception_event",
+      "outcome": "FINDING",
+      "probe_id": "AAP-028"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "source": "static source and frozen contract"
+      },
+      "name": "goal_hold_disabled",
+      "outcome": "PASS",
+      "probe_id": "AAP-029"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "no_runtime_data": true,
+        "source": "bounded static probe"
+      },
+      "name": "no_synthetic_provider",
+      "outcome": "COMPLETE_WITHOUT_SEPARATE_DEFECT",
+      "probe_id": "AAP-030"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "source": "static source and frozen contract"
+      },
+      "name": "native_source_gate",
+      "outcome": "PASS",
+      "probe_id": "AAP-031"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "classification": "LATENT_RISK",
+        "source": "static runtime audit"
+      },
+      "name": "backup_lifecycle_enum",
+      "outcome": "LATENT_RISK",
+      "probe_id": "AAP-032"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "classification": "LATENT_RISK",
+        "source": "static runtime audit"
+      },
+      "name": "terminal_membership_separate",
+      "outcome": "LATENT_RISK",
+      "probe_id": "AAP-033"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "source": "static source and frozen contract"
+      },
+      "name": "active_runner_commit",
+      "outcome": "PASS",
+      "probe_id": "AAP-034"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "source": "static source and frozen contract"
+      },
+      "name": "no_direct_dynamics",
+      "outcome": "PASS",
+      "probe_id": "AAP-035"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "source": "static source and frozen contract"
+      },
+      "name": "no_oracle_import",
+      "outcome": "PASS",
+      "probe_id": "AAP-036"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "source": "static source and frozen contract"
+      },
+      "name": "no_legacy_011",
+      "outcome": "PASS",
+      "probe_id": "AAP-037"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "source": "static source and frozen contract"
+      },
+      "name": "identity_types",
+      "outcome": "PASS",
+      "probe_id": "AAP-038"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "source": "static source and frozen contract"
+      },
+      "name": "session_guards",
+      "outcome": "PASS",
+      "probe_id": "AAP-039"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "source": "static source and frozen contract"
+      },
+      "name": "loop_guard",
+      "outcome": "PASS",
+      "probe_id": "AAP-040"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "no_runtime_data": true,
+        "source": "bounded static probe"
+      },
+      "name": "bypass_source_hash",
+      "outcome": "COMPLETE_WITHOUT_SEPARATE_DEFECT",
+      "probe_id": "AAP-041"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "classification": "LATENT_RISK",
+        "source": "static runtime audit"
+      },
+      "name": "bypass_ast_hash",
+      "outcome": "LATENT_RISK",
+      "probe_id": "AAP-042"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "source": "static source and frozen contract"
+      },
+      "name": "production_diff_zero",
+      "outcome": "PASS",
+      "probe_id": "AAP-043"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "source": "static source and frozen contract"
+      },
+      "name": "runtime_diff_zero",
+      "outcome": "PASS",
+      "probe_id": "AAP-044"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "source": "static source and frozen contract"
+      },
+      "name": "gpu_zero",
+      "outcome": "PASS",
+      "probe_id": "AAP-045"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "source": "static source and frozen contract"
+      },
+      "name": "rollout_zero",
+      "outcome": "PASS",
+      "probe_id": "AAP-046"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "source": "static source and frozen contract"
+      },
+      "name": "smoke_zero",
+      "outcome": "PASS",
+      "probe_id": "AAP-047"
+    },
+    {
+      "continued_after_prior_finding": true,
+      "evidence": {
+        "source": "static source and frozen contract"
+      },
+      "name": "oracle_zero",
+      "outcome": "PASS",
+      "probe_id": "AAP-048"
+    }
+  ],
+  "schema": "ADVERSARIAL_AUDIT_PROBE_RESULTS_V2",
+  "scientific_data_generated": false
+}

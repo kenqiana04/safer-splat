@@ -1,0 +1,20 @@
+{
+  "decision": "FREEZE_FULL_PRE_REPAIR_FINDINGS_AND_ADVANCE_BOUNDED_REPAIR_DAG",
+  "do_not": [
+    "do not repair in audit",
+    "do not smoke",
+    "do not revalidate before bounded repair",
+    "do not run real ACTIVE/GPU/oracle/official100"
+  ],
+  "evidence_paths": [
+    "MASTER_DEFECT_REGISTER_V2.csv",
+    "LATENT_HIGH_RISK_REGISTER_V2.csv",
+    "DEFECT_ROOT_CAUSE_CLUSTERING_V2.json",
+    "PRE_REPAIR_REPAIR_DAG_V2.json"
+  ],
+  "from": "AUDIT_ACTIVE_RUNTIME_PRE_REPAIR_ARCHITECTURE_V2",
+  "only_next_task": "REPAIR_ACTIVE_RUNTIME_AUTHORITY_AND_ROUTING_BOUNDARY_V2",
+  "repair_dag": "PRE_REPAIR_REPAIR_DAG_V2.json",
+  "schema": "FULL_ACTIVE_RUNTIME_PRE_REPAIR_AUDIT_V2_DOWNSTREAM_HANDOFF",
+  "status": "PASS_FULL_ACTIVE_RUNTIME_PRE_REPAIR_AUDIT_V2"
+}

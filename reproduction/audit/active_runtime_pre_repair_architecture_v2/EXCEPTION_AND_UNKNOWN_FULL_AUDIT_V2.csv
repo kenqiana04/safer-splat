@@ -1,0 +1,17 @@
+phase,event,route_attempted,post_route_behavior,frozen_unknown_scope,verdict
+L1,STAGE_EXCEPTION,True,unconditional _blocked_result,typed runtime block required,CONFIRMED_EXCEPTION_ROUTING_GAP
+PRIMARY_PROPOSAL,STAGE_EXCEPTION,True,unconditional _blocked_result,typed runtime block required,CONFIRMED_EXCEPTION_ROUTING_GAP
+C0,STAGE_EXCEPTION,True,unconditional _blocked_result,typed runtime block required,CONFIRMED_EXCEPTION_ROUTING_GAP
+L2,STAGE_EXCEPTION,True,unconditional _blocked_result,typed runtime block required,CONFIRMED_EXCEPTION_ROUTING_GAP
+L3,STAGE_EXCEPTION,True,unconditional _blocked_result,typed runtime block required,CONFIRMED_EXCEPTION_ROUTING_GAP
+ALT_SEARCH,STAGE_EXCEPTION,True,unconditional _blocked_result,typed runtime block required,CONFIRMED_EXCEPTION_ROUTING_GAP
+TERMINAL_EVALUATION,STAGE_EXCEPTION,True,unconditional _blocked_result,typed runtime block required,CONFIRMED_EXCEPTION_ROUTING_GAP
+ARBITRATION,STAGE_EXCEPTION,True,unconditional _blocked_result,typed runtime block required,CONFIRMED_EXCEPTION_ROUTING_GAP
+typed-event,L1_UNKNOWN,True,string/reason conversion,must preserve local/global/instrumentation scope,HEURISTIC_OR_TYPED_PATH_AUDITED
+typed-event,C0_UNKNOWN,True,string/reason conversion,must preserve local/global/instrumentation scope,HEURISTIC_OR_TYPED_PATH_AUDITED
+typed-event,L2_UNKNOWN,True,string/reason conversion,must preserve local/global/instrumentation scope,HEURISTIC_OR_TYPED_PATH_AUDITED
+typed-event,L3_UNKNOWN,True,string/reason conversion,must preserve local/global/instrumentation scope,HEURISTIC_OR_TYPED_PATH_AUDITED
+typed-event,ALT_UNKNOWN,True,string/reason conversion,must preserve local/global/instrumentation scope,HEURISTIC_OR_TYPED_PATH_AUDITED
+typed-event,TERMINAL_UNKNOWN,True,string/reason conversion,must preserve local/global/instrumentation scope,HEURISTIC_OR_TYPED_PATH_AUDITED
+typed-event,DEADLINE_UNKNOWN,True,string/reason conversion,must preserve local/global/instrumentation scope,HEURISTIC_OR_TYPED_PATH_AUDITED
+typed-event,ROUTING_RULE_MISSING,True,string/reason conversion,must preserve local/global/instrumentation scope,HEURISTIC_OR_TYPED_PATH_AUDITED

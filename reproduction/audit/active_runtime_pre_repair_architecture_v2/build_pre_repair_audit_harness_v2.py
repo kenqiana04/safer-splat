@@ -168,6 +168,7 @@ def write_input_lock() -> None:
             "model_checker": "model_check_active_runtime_pre_repair_v2.py",
             "validator": "validate_full_active_runtime_pre_repair_audit_v2.py",
             "builder": "build_pre_repair_audit_harness_v2.py",
+            "audit_runner": "run_full_pre_repair_audit_v2.py",
         },
         "execution_counts": {"runtime_mutation": 0, "production_mutation": 0, "real_active": 0, "gpu": 0, "smoke": 0, "scientific_oracle": 0, "official100": 0, "real_bypass": 0},
         "protected_source_mutation_authority": False,
@@ -175,7 +176,7 @@ def write_input_lock() -> None:
 
 
 def write_execution_lock() -> None:
-    files = [TASK / name for name in ("FULL_PRE_REPAIR_AUDIT_INPUT_LOCK.json", "AUDIT_DOMAIN_MANIFEST_V2.json", "FROZEN_43_RULE_SCHEMA_V2.json", "ADVERSARIAL_AUDIT_PROBE_MANIFEST_V2.json", "model_check_active_runtime_pre_repair_v2.py", "validate_full_active_runtime_pre_repair_audit_v2.py")]
+    files = [TASK / name for name in ("FULL_PRE_REPAIR_AUDIT_INPUT_LOCK.json", "AUDIT_DOMAIN_MANIFEST_V2.json", "FROZEN_43_RULE_SCHEMA_V2.json", "ADVERSARIAL_AUDIT_PROBE_MANIFEST_V2.json", "model_check_active_runtime_pre_repair_v2.py", "validate_full_active_runtime_pre_repair_audit_v2.py", "run_full_pre_repair_audit_v2.py")]
     write_json(TASK / "FULL_PRE_REPAIR_AUDIT_EXECUTION_LOCK.json", {
         "schema": "FULL_PRE_REPAIR_AUDIT_EXECUTION_LOCK_V2",
         "substantive_audit_locked": True,
