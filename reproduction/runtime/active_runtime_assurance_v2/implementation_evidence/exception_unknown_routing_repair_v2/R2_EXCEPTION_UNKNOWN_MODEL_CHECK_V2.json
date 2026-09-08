@@ -1,0 +1,75 @@
+{
+  "actual_runtime_classes": [
+    "ActiveCycleCoordinator",
+    "Supervisor",
+    "PublicCycleEvent",
+    "ReasonScope",
+    "AlternativeInventoryStatus"
+  ],
+  "check_count": 12,
+  "checks": [
+    {
+      "detail": null,
+      "name": "01_resolved_exception_route_not_preblocked",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "02_no_exception_to_pass",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "03_no_exception_to_uncertified_commit",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "04_source_invalid_not_exhaustion",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "05_provenance_missing_not_exhaustion",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "06_future_status_not_exhaustion",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "07_unknown_scope_not_substring_derived",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "08_valid_fallback_reachable",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "09_no_synthetic_alternative",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "10_r1_authority_preserved",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "11_boundary_no_plant",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "12_no_infinite_exception_routing_loop",
+      "passed": true
+    }
+  ],
+  "counterexample_count": 0,
+  "schema": "R2_EXCEPTION_UNKNOWN_MODEL_CHECK_V2",
+  "status": "PASS_R2_EXCEPTION_UNKNOWN_MODEL_CHECK_V2"
+}

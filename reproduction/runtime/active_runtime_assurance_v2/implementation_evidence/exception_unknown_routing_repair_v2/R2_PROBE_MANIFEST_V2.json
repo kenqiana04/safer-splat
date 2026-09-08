@@ -1,0 +1,143 @@
+{
+  "cpu_only": true,
+  "probe_count": 34,
+  "probes": [
+    {
+      "category": "stage_exception",
+      "probe_id": "EXC-L1"
+    },
+    {
+      "category": "stage_exception",
+      "probe_id": "EXC-PRIMARY_PROPOSAL"
+    },
+    {
+      "category": "stage_exception",
+      "probe_id": "EXC-C0"
+    },
+    {
+      "category": "stage_exception",
+      "probe_id": "EXC-L2"
+    },
+    {
+      "category": "stage_exception",
+      "probe_id": "EXC-L3"
+    },
+    {
+      "category": "stage_exception",
+      "probe_id": "EXC-ALT_SEARCH"
+    },
+    {
+      "category": "stage_exception",
+      "probe_id": "EXC-TERMINAL_EVALUATION"
+    },
+    {
+      "category": "stage_exception",
+      "probe_id": "EXC-ARBITRATION"
+    },
+    {
+      "category": "exception_fallback",
+      "probe_id": "EX-FB-L1_BACKUP"
+    },
+    {
+      "category": "exception_fallback",
+      "probe_id": "EX-FB-L2_BACKUP"
+    },
+    {
+      "category": "exception_fallback",
+      "probe_id": "EX-FB-L3_BACKUP"
+    },
+    {
+      "category": "exception_fallback",
+      "probe_id": "EX-FB-TERMINAL"
+    },
+    {
+      "category": "exception_fallback",
+      "probe_id": "EX-FB-NO_FALLBACK"
+    },
+    {
+      "category": "exception_fallback",
+      "probe_id": "EX-FB-EXPIRED_BACKUP"
+    },
+    {
+      "category": "alternative_status",
+      "probe_id": "ALT-ALT_AVAILABLE"
+    },
+    {
+      "category": "alternative_status",
+      "probe_id": "ALT-NO_ALTERNATIVE_AVAILABLE"
+    },
+    {
+      "category": "alternative_status",
+      "probe_id": "ALT-SOURCE_INVALID"
+    },
+    {
+      "category": "alternative_status",
+      "probe_id": "ALT-PROVENANCE_MISSING"
+    },
+    {
+      "category": "alternative_status",
+      "probe_id": "ALT-FUTURE_STATUS"
+    },
+    {
+      "category": "reason_scope",
+      "probe_id": "SCOPE-GLOBAL"
+    },
+    {
+      "category": "reason_scope",
+      "probe_id": "SCOPE-LOCAL"
+    },
+    {
+      "category": "reason_scope",
+      "probe_id": "SCOPE-HEALTH"
+    },
+    {
+      "category": "reason_scope",
+      "probe_id": "SCOPE-MISSING_TEXT"
+    },
+    {
+      "category": "reason_scope",
+      "probe_id": "SCOPE-TIMEOUT_TEXT"
+    },
+    {
+      "category": "cross_contract",
+      "probe_id": "DEADLINE_OPEN"
+    },
+    {
+      "category": "cross_contract",
+      "probe_id": "DEADLINE_WARNING"
+    },
+    {
+      "category": "cross_contract",
+      "probe_id": "DEADLINE_EXPIRED"
+    },
+    {
+      "category": "cross_contract",
+      "probe_id": "BACKUP_VALID"
+    },
+    {
+      "category": "cross_contract",
+      "probe_id": "BACKUP_INVALID"
+    },
+    {
+      "category": "cross_contract",
+      "probe_id": "TERMINAL_READY"
+    },
+    {
+      "category": "cross_contract",
+      "probe_id": "TERMINAL_NOT_READY"
+    },
+    {
+      "category": "cross_contract",
+      "probe_id": "ROUTE_MISSING"
+    },
+    {
+      "category": "cross_contract",
+      "probe_id": "ROUTE_AMBIGUOUS"
+    },
+    {
+      "category": "cross_contract",
+      "probe_id": "BYPASS_STATIC"
+    }
+  ],
+  "schema": "R2_PROBE_MANIFEST_V2"
+}

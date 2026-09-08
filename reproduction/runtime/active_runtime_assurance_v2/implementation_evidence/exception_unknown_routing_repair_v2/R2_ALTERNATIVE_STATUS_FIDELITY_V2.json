@@ -1,0 +1,32 @@
+{
+  "only_lawful_absence_maps_exhausted": true,
+  "provider_source_unchanged": true,
+  "schema": "R2_ALTERNATIVE_STATUS_FIDELITY_V2",
+  "statuses": {
+    "ALT_AVAILABLE": {
+      "maps_to_ALT_EXHAUSTED": false,
+      "normalized": "ALT_AVAILABLE",
+      "preserved": true
+    },
+    "NO_ALTERNATIVE_AVAILABLE": {
+      "maps_to_ALT_EXHAUSTED": true,
+      "normalized": "NO_ALTERNATIVE_AVAILABLE",
+      "preserved": true
+    },
+    "PROVENANCE_MISSING": {
+      "maps_to_ALT_EXHAUSTED": false,
+      "normalized": "PROVENANCE_MISSING",
+      "preserved": true
+    },
+    "SOURCE_INVALID": {
+      "maps_to_ALT_EXHAUSTED": false,
+      "normalized": "SOURCE_INVALID",
+      "preserved": true
+    },
+    "UNRESOLVED_STATUS": {
+      "maps_to_ALT_EXHAUSTED": false,
+      "normalized": "UNRESOLVED_STATUS",
+      "preserved": true
+    }
+  }
+}

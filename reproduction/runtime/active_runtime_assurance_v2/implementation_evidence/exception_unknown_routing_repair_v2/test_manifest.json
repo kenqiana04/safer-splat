@@ -1,0 +1,12 @@
+{
+  "command": "C:\\python3.11\\python.exe -m unittest discover -s reproduction/runtime/active_runtime_assurance_v2/tests -p test_*.py -v",
+  "cpu_only": true,
+  "schema": "R2_TEST_MANIFEST_V2",
+  "suites": [
+    "PR125_R1",
+    "PR122_PUBLIC_CYCLE",
+    "CURRENT_PACKAGE",
+    "R2",
+    "BYPASS_SYNTHETIC_STATIC"
+  ]
+}

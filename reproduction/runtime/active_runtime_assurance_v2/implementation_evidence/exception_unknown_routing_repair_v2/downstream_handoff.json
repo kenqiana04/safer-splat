@@ -1,0 +1,21 @@
+{
+  "closed_defects": [
+    "D-EXC-001",
+    "D-ALT-001"
+  ],
+  "frozen_parent": "303aa01c08e82d1d77a5f5cabf5127344109a996",
+  "preserve": [
+    "PR107_43_ROWS",
+    "PR125_R1",
+    "BYPASS",
+    "PLANT",
+    "TOKEN",
+    "TERMINAL",
+    "TRACE"
+  ],
+  "real_active_authorized": false,
+  "required_next_task": "REVALIDATE_ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_V2",
+  "schema": "R2_EXCEPTION_UNKNOWN_DOWNSTREAM_HANDOFF_V2",
+  "smoke_authorized": false,
+  "source_branch": "repair-active-runtime-exception-and-unknown-routing-v2"
+}

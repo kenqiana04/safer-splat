@@ -1,0 +1,67 @@
+{
+  "authority": "Supervisor frozen routing and final arbitration",
+  "cases": {
+    "EXPIRED_BACKUP": {
+      "category": "exception_fallback",
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "boundary": false,
+        "committed": true
+      },
+      "passed": true,
+      "probe_id": "EX-FB-EXPIRED_BACKUP"
+    },
+    "L1_BACKUP": {
+      "category": "exception_fallback",
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "boundary": false,
+        "committed": true
+      },
+      "passed": true,
+      "probe_id": "EX-FB-L1_BACKUP"
+    },
+    "L2_BACKUP": {
+      "category": "exception_fallback",
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "boundary": false,
+        "committed": true
+      },
+      "passed": true,
+      "probe_id": "EX-FB-L2_BACKUP"
+    },
+    "L3_BACKUP": {
+      "category": "exception_fallback",
+      "detail": {
+        "action_role": "RETAINED_BACKUP",
+        "boundary": false,
+        "committed": true
+      },
+      "passed": true,
+      "probe_id": "EX-FB-L3_BACKUP"
+    },
+    "NO_FALLBACK": {
+      "category": "exception_fallback",
+      "detail": {
+        "action_role": null,
+        "boundary": true,
+        "committed": false
+      },
+      "passed": true,
+      "probe_id": "EX-FB-NO_FALLBACK"
+    },
+    "TERMINAL": {
+      "category": "exception_fallback",
+      "detail": {
+        "action_role": "CERTIFIED_TERMINAL",
+        "boundary": false,
+        "committed": true
+      },
+      "passed": true,
+      "probe_id": "EX-FB-TERMINAL"
+    }
+  },
+  "passed_count": 6,
+  "schema": "R2_EXCEPTION_FALLBACK_MATRIX_V2"
+}
