@@ -1,0 +1,295 @@
+{
+  "continue_after_failure": true,
+  "probe_count": 48,
+  "probes": [
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "public_api",
+      "probe_id": "AAP-001",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "coordinator_calls_frozen_modules",
+      "probe_id": "AAP-002",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "single_composition_owner",
+      "probe_id": "AAP-003",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "supervisor_route_owner",
+      "probe_id": "AAP-004",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "supervisor_selector_owner",
+      "probe_id": "AAP-005",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "plant_owner",
+      "probe_id": "AAP-006",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "token_owner",
+      "probe_id": "AAP-007",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "trace_owner",
+      "probe_id": "AAP-008",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "initial_safe_rule",
+      "probe_id": "AAP-009",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "initial_repair_rule",
+      "probe_id": "AAP-010",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "r0_diagnostic_rule",
+      "probe_id": "AAP-011",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "l1_pass_rule",
+      "probe_id": "AAP-012",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "l1_fail_rule",
+      "probe_id": "AAP-013",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "l1_unknown_rules",
+      "probe_id": "AAP-014",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "primary_rule",
+      "probe_id": "AAP-015",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "c0_rules",
+      "probe_id": "AAP-016",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "l2_rules",
+      "probe_id": "AAP-017",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "l3_rules",
+      "probe_id": "AAP-018",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "alt_rules",
+      "probe_id": "AAP-019",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "deadline_guard_rule",
+      "probe_id": "AAP-020",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "arbitration_rules",
+      "probe_id": "AAP-021",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "backup_commit_rule",
+      "probe_id": "AAP-022",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "terminal_rules",
+      "probe_id": "AAP-023",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "boundary_rule",
+      "probe_id": "AAP-024",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "phase_enum",
+      "probe_id": "AAP-025",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "event_enum",
+      "probe_id": "AAP-026",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "unknown_scope_mapping",
+      "probe_id": "AAP-027",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "stage_exception_event",
+      "probe_id": "AAP-028",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "goal_hold_disabled",
+      "probe_id": "AAP-029",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "no_synthetic_provider",
+      "probe_id": "AAP-030",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "native_source_gate",
+      "probe_id": "AAP-031",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "backup_lifecycle_enum",
+      "probe_id": "AAP-032",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "terminal_membership_separate",
+      "probe_id": "AAP-033",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "active_runner_commit",
+      "probe_id": "AAP-034",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "no_direct_dynamics",
+      "probe_id": "AAP-035",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "no_oracle_import",
+      "probe_id": "AAP-036",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "no_legacy_011",
+      "probe_id": "AAP-037",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "identity_types",
+      "probe_id": "AAP-038",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "session_guards",
+      "probe_id": "AAP-039",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "loop_guard",
+      "probe_id": "AAP-040",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "bypass_source_hash",
+      "probe_id": "AAP-041",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "bypass_ast_hash",
+      "probe_id": "AAP-042",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "production_diff_zero",
+      "probe_id": "AAP-043",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "runtime_diff_zero",
+      "probe_id": "AAP-044",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "gpu_zero",
+      "probe_id": "AAP-045",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "rollout_zero",
+      "probe_id": "AAP-046",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "smoke_zero",
+      "probe_id": "AAP-047",
+      "scientific_data": false
+    },
+    {
+      "mode": "STATIC_OR_CPU_DETERMINISTIC",
+      "name": "oracle_zero",
+      "probe_id": "AAP-048",
+      "scientific_data": false
+    }
+  ],
+  "schema": "ADVERSARIAL_AUDIT_PROBE_MANIFEST_V2"
+}

@@ -1,0 +1,165 @@
+{
+  "allowed_domain_statuses": [
+    "COMPLETE",
+    "BLOCKED_BY_MISSING_ARTIFACT"
+  ],
+  "completion_rule": "AUDIT-UNTIL-COMPLETE",
+  "defect_does_not_stop_later_domains": true,
+  "domains": [
+    {
+      "domain": "A",
+      "name": "Authority ownership",
+      "outputs": [
+        "ACTIVE_RUNTIME_AUTHORITY_MAP_V2.csv",
+        "COORDINATOR_FULL_POLICY_AUDIT_V2.csv",
+        "SUPERVISOR_AUTHORITY_AUDIT_V2.json"
+      ],
+      "status": "COMPLETE"
+    },
+    {
+      "domain": "B",
+      "name": "PR107 43-rule fidelity",
+      "outputs": [
+        "FROZEN_43_RULE_SCHEMA_V2.json",
+        "TRANSITION_43_RULE_THREE_LAYER_AUDIT_V2.csv",
+        "DESTINATION_DERIVATION_AUDIT_V2.json",
+        "TRANSITION_EXACT_ONE_DOMAIN_AUDIT_V2.json"
+      ],
+      "status": "COMPLETE"
+    },
+    {
+      "domain": "C",
+      "name": "Public-cycle phase/event semantics",
+      "outputs": [
+        "OBSERVED_PUBLIC_CYCLE_GRAPH_V2.json",
+        "EVENT_AND_REASON_SCOPE_FIDELITY_V2.csv"
+      ],
+      "status": "COMPLETE"
+    },
+    {
+      "domain": "D",
+      "name": "Deadline semantics",
+      "outputs": [
+        "DEADLINE_END_TO_END_AUTHORITY_AUDIT_V2.csv",
+        "DEADLINE_OBSERVATION_AND_USE_AUDIT_V2.json"
+      ],
+      "status": "COMPLETE"
+    },
+    {
+      "domain": "E",
+      "name": "Alternative semantics",
+      "outputs": [
+        "ALTERNATIVE_RUNTIME_AUDIT_V2.json"
+      ],
+      "status": "COMPLETE"
+    },
+    {
+      "domain": "F",
+      "name": "Backup token semantics",
+      "outputs": [
+        "BACKUP_TOKEN_END_TO_END_AUDIT_V2.csv",
+        "BACKUP_STATE_INFORMATION_LOSS_AUDIT_V2.json",
+        "BACKUP_PREVALIDATION_AUDIT_V2.json"
+      ],
+      "status": "COMPLETE"
+    },
+    {
+      "domain": "G",
+      "name": "Terminal semantics",
+      "outputs": [
+        "TERMINAL_END_TO_END_AUDIT_V2.csv",
+        "TERMINAL_FALLBACK_CONTEXT_AUTHORITY_AUDIT_V2.json"
+      ],
+      "status": "COMPLETE"
+    },
+    {
+      "domain": "H",
+      "name": "Exception / UNKNOWN semantics",
+      "outputs": [
+        "EXCEPTION_AND_UNKNOWN_FULL_AUDIT_V2.csv",
+        "UNKNOWN_REASON_SCOPE_INFORMATION_LOSS_V2.json"
+      ],
+      "status": "COMPLETE"
+    },
+    {
+      "domain": "I",
+      "name": "Start admission / R0",
+      "outputs": [
+        "START_ADMISSION_AND_R0_AUDIT_V2.json"
+      ],
+      "status": "COMPLETE"
+    },
+    {
+      "domain": "J",
+      "name": "Arbitration / commit authority",
+      "outputs": [
+        "ROUTING_ARBITRATION_CROSSCHECK_V2.csv",
+        "COMMIT_AUTHORITY_CHAIN_AUDIT_V2.json",
+        "ASSURANCE_BOUNDARY_RUNTIME_AUDIT_V2.json"
+      ],
+      "status": "COMPLETE"
+    },
+    {
+      "domain": "K",
+      "name": "Trace / side effects",
+      "outputs": [
+        "TRACE_SIDE_EFFECT_ORDERING_AUDIT_V2.json",
+        "TRACE_FAILURE_SEMANTICS_AUDIT_V2.json"
+      ],
+      "status": "COMPLETE"
+    },
+    {
+      "domain": "L",
+      "name": "Identity / provenance / numeric authority",
+      "outputs": [
+        "RUNTIME_IDENTITY_CHAIN_AUDIT_V2.csv",
+        "NUMERIC_AUTHORITY_LEAK_AUDIT_V2.json"
+      ],
+      "status": "COMPLETE"
+    },
+    {
+      "domain": "M",
+      "name": "Session / cycle lifecycle",
+      "outputs": [
+        "TRIAL_SESSION_LIFECYCLE_AUDIT_V2.json",
+        "ROUTING_LOOP_GUARD_AUTHORITY_AUDIT_V2.json"
+      ],
+      "status": "COMPLETE"
+    },
+    {
+      "domain": "N",
+      "name": "BYPASS preservation",
+      "outputs": [
+        "BYPASS_PRESERVATION_FULL_AUDIT_V2.json"
+      ],
+      "status": "COMPLETE"
+    },
+    {
+      "domain": "O",
+      "name": "Legacy authority leakage",
+      "outputs": [
+        "LEGACY_AUTHORITY_LEAK_AUDIT_V2.json"
+      ],
+      "status": "COMPLETE"
+    },
+    {
+      "domain": "P",
+      "name": "Oracle isolation",
+      "outputs": [
+        "ORACLE_FEEDBACK_EDGE_AUDIT_V2.json"
+      ],
+      "status": "COMPLETE"
+    },
+    {
+      "domain": "Q",
+      "name": "Reachability / state-machine totality",
+      "outputs": [
+        "ACTUAL_RUNTIME_SYMBOLIC_MODEL_V2.json",
+        "ACTUAL_RUNTIME_SYMBOLIC_COUNTEREXAMPLES_V2.json",
+        "ADVERSARIAL_AUDIT_PROBE_RESULTS_V2.json"
+      ],
+      "status": "COMPLETE"
+    }
+  ],
+  "schema": "AUDIT_DOMAIN_MANIFEST_V2"
+}

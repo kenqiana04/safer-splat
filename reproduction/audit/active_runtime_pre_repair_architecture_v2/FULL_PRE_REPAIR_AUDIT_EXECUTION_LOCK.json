@@ -1,0 +1,46 @@
+{
+  "audit_until_complete": true,
+  "files": [
+    {
+      "git_blob_sha1": "b4e21cb975d9d3d34d65846eb5578be7efa87ac6",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/FULL_PRE_REPAIR_AUDIT_INPUT_LOCK.json",
+      "sha256": "b36f1473303248f3af536be92a4ccdd43d9d2cf859de65457f92fe1324f201bf",
+      "size": 13223
+    },
+    {
+      "git_blob_sha1": "627ef6ec940d268c41fd74daaf401d55701a87e9",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/AUDIT_DOMAIN_MANIFEST_V2.json",
+      "sha256": "64d1fbb26e1a6767a75ce6b6623cc46e1b8eec3f9e4d0b2a75a75452834995db",
+      "size": 4204
+    },
+    {
+      "git_blob_sha1": "ec33b4dfaad095f351b6a70811522e85f477055b",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/FROZEN_43_RULE_SCHEMA_V2.json",
+      "sha256": "97d0c6199b8cbeb148b9fc8963a56db093c9e0d6b1f5a5afed4796bf083ef5fd",
+      "size": 1694
+    },
+    {
+      "git_blob_sha1": "faff103c876a5161144ef143e7eccbb6884f9b2d",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/ADVERSARIAL_AUDIT_PROBE_MANIFEST_V2.json",
+      "sha256": "22cb406ea5a2413b02ba1e661dee8d5b99a64b930ac06e5b2994be467344bb4a",
+      "size": 7405
+    },
+    {
+      "git_blob_sha1": "a0df9cd7bbce61134227f36e48dda5a3a1cde4c9",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/model_check_active_runtime_pre_repair_v2.py",
+      "sha256": "4b01856d75e638a5292017f4338eccfa821eedbfec29dfc31aacfa6141063740",
+      "size": 6421
+    },
+    {
+      "git_blob_sha1": "e7ece5a44c4c3bf62c85059a559302324f2264c4",
+      "path": "reproduction/audit/active_runtime_pre_repair_architecture_v2/validate_full_active_runtime_pre_repair_audit_v2.py",
+      "sha256": "f46c88d2a378e1c2649fcd5e1d6d83579a1f753a4690ed5cba6c812b28f8e3e8",
+      "size": 7678
+    }
+  ],
+  "no_runtime_mutation": true,
+  "probes_continue_after_failure": true,
+  "runtime_correction_quota": 0,
+  "schema": "FULL_PRE_REPAIR_AUDIT_EXECUTION_LOCK_V2",
+  "substantive_audit_locked": true
+}
