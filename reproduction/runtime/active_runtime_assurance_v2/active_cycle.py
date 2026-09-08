@@ -31,9 +31,12 @@ from .runtime_types import (
     Candidate,
     CandidateRole,
     CertificateStatus,
+    CommitTransactionResult,
     CoordinatorSession,
     DeadlineObservation,
     EvidenceResult,
+    EvidenceStatus,
+    FinalizationStatus,
     PublicCycleEvent,
     PublicCyclePhase,
     ReasonScope,
@@ -47,6 +50,7 @@ from .runtime_types import (
     StageFailureKind,
     TrialSessionStatus,
     TrialStartResult,
+    TraceStatus,
     canonical_sha256,
 )
 from .start_admission import StartAdmission
@@ -322,6 +326,7 @@ class ActiveCycleCoordinator:
             typed_stop_or_failure_reason=reason,
             stage_failures=context.stage_failures,
             alternative_inventory_evidence=context.alternative_inventory_evidence,
+            commit_transaction_result=context.commit_transaction_result,
         )
 
     def _require_session(self) -> CoordinatorSession:
@@ -718,29 +723,42 @@ class ActiveCycleCoordinator:
         phase = PublicCyclePhase.ASSURANCE_BOUNDARY if boundary else PublicCyclePhase.COMMIT
         context = self._advance(context, phase)
         before = len(self.active_runner.trace_writer.records)
-        receipt = self.active_runner.commit_active_decision(snapshot, decision)
+        transaction: CommitTransactionResult = self.active_runner.commit_active_decision(snapshot, decision)
         after = len(self.active_runner.trace_writer.records)
-        if after != before + 1:
+        if transaction.trace_status == TraceStatus.RECORDED and after != before + 1:
             self._session = replace(self._require_session(), status=TrialSessionStatus.BLOCKED)
             raise PublicCycleStateError("TRACE_OUTCOME_CARDINALITY_VIOLATION")
-        context = replace(context, commit_receipt=receipt, trace_ref=self._trace_ref())
+        receipt = transaction.commit_receipt
+        context = replace(context, commit_receipt=receipt, commit_transaction_result=transaction, trace_ref=transaction.trace_ref)
         context = self._advance(context, PublicCyclePhase.TRACE_APPEND)
-        committed = receipt is not None and receipt.committed
-        if committed:
+        committed = transaction.committed is True
+        if transaction.evidence_status == EvidenceStatus.COMPLETE and committed:
             context = self._advance(context, PublicCyclePhase.CYCLE_COMPLETE)
             self._session = replace(self._require_session(), next_cycle_index=snapshot.cycle_index + 1)
+        elif transaction.evidence_status == EvidenceStatus.PLANT_OUTCOME_UNRESOLVED:
+            self._session = replace(self._require_session(), status=TrialSessionStatus.RECOVERY_REQUIRED)
+        elif transaction.recovery_required:
+            self._session = replace(self._require_session(), status=TrialSessionStatus.EVIDENCE_INCOMPLETE)
         else:
             self._session = replace(self._require_session(), status=TrialSessionStatus.BLOCKED)
-        reason = decision.reason if receipt is None or receipt.committed else receipt.reason
+        reason = transaction.typed_failure_reason
         return self._result(context, decision, committed, boundary or not decision.allows_commit, reason)
 
     def finalize_trial(self):
         session = self._require_session()
         if session.status == TrialSessionStatus.FINALIZED:
             raise PublicCycleStateError("TRIAL_ALREADY_FINALIZED")
-        lock = self.active_runner.finalize_trace()
-        self._session = replace(session, status=TrialSessionStatus.FINALIZED)
-        return lock
+        if session.status == TrialSessionStatus.FINALIZING:
+            raise PublicCycleStateError("TRIAL_FINALIZATION_IN_PROGRESS")
+        self._session = replace(session, status=TrialSessionStatus.FINALIZING)
+        result = self.active_runner.finalize_trace_result()
+        if result.status == FinalizationStatus.FINALIZED:
+            self._session = replace(self._require_session(), status=TrialSessionStatus.FINALIZED)
+        elif result.status == FinalizationStatus.RECOVERY_REQUIRED:
+            self._session = replace(self._require_session(), status=TrialSessionStatus.RECOVERY_REQUIRED)
+        else:
+            self._session = replace(self._require_session(), status=TrialSessionStatus.FINALIZATION_FAILED)
+        return result
 
     @staticmethod
     def _l1_event(status: CertificateStatus, scope: ReasonScope) -> PublicCycleEvent:

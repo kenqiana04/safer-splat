@@ -56,6 +56,60 @@ class TokenLifecycle(str, Enum):
     ABORTED_PREPARED = "ABORTED_PREPARED"
 
 
+class CommitTransactionState(str, Enum):
+    PREPARED = "PREPARED"
+    PLANT_ATTEMPTED = "PLANT_ATTEMPTED"
+    PLANT_NOT_COMMITTED = "PLANT_NOT_COMMITTED"
+    PLANT_OUTCOME_UNRESOLVED = "PLANT_OUTCOME_UNRESOLVED"
+    COMMITTED = "COMMITTED"
+    TOKEN_APPLIED = "TOKEN_APPLIED"
+    TRACE_RECORDED = "TRACE_RECORDED"
+    COMPLETE = "COMPLETE"
+    EVIDENCE_INCOMPLETE = "EVIDENCE_INCOMPLETE"
+    RECOVERY_REQUIRED = "RECOVERY_REQUIRED"
+
+
+class PlantOutcome(str, Enum):
+    NOT_ATTEMPTED = "NOT_ATTEMPTED"
+    NOT_COMMITTED = "NOT_COMMITTED"
+    COMMITTED = "COMMITTED"
+    UNRESOLVED = "UNRESOLVED"
+
+
+class TokenMutationStatus(str, Enum):
+    NOT_APPLICABLE = "NOT_APPLICABLE"
+    UNCHANGED = "UNCHANGED"
+    APPLIED = "APPLIED"
+    INCOMPLETE = "INCOMPLETE"
+
+
+class TraceStatus(str, Enum):
+    NOT_ATTEMPTED = "NOT_ATTEMPTED"
+    RECORDED = "RECORDED"
+    INCOMPLETE = "INCOMPLETE"
+    FINALIZATION_INCOMPLETE = "FINALIZATION_INCOMPLETE"
+    FINALIZED = "FINALIZED"
+
+
+class EvidenceStatus(str, Enum):
+    COMPLETE = "COMPLETE"
+    NO_ACTION_COMPLETE = "NO_ACTION_COMPLETE"
+    ABORTED_BEFORE_PLANT = "ABORTED_BEFORE_PLANT"
+    PLANT_NOT_COMMITTED = "PLANT_NOT_COMMITTED"
+    PLANT_OUTCOME_UNRESOLVED = "PLANT_OUTCOME_UNRESOLVED"
+    COMMITTED_TOKEN_INCOMPLETE = "COMMITTED_TOKEN_INCOMPLETE"
+    COMMITTED_TRACE_INCOMPLETE = "COMMITTED_TRACE_INCOMPLETE"
+    NO_ACTION_TRACE_INCOMPLETE = "NO_ACTION_TRACE_INCOMPLETE"
+    FINALIZATION_INCOMPLETE = "FINALIZATION_INCOMPLETE"
+    RECOVERY_REQUIRED = "RECOVERY_REQUIRED"
+
+
+class FinalizationStatus(str, Enum):
+    FINALIZED = "FINALIZED"
+    FINALIZATION_INCOMPLETE = "FINALIZATION_INCOMPLETE"
+    RECOVERY_REQUIRED = "RECOVERY_REQUIRED"
+
+
 class RuntimePhase(str, Enum):
     START_ADMISSION = "START_ADMISSION"
     REPAIR = "REPAIR"
@@ -421,6 +475,26 @@ class CommitReceipt:
 
 
 @dataclass(frozen=True)
+class CommitTransactionResult:
+    attempt_identity: str
+    transaction_state: CommitTransactionState
+    plant_outcome: PlantOutcome
+    evidence_status: EvidenceStatus
+    token_status: TokenMutationStatus
+    trace_status: TraceStatus
+    committed: bool | None
+    commit_receipt: CommitReceipt | None
+    selected_action: SelectedAction | None
+    executed_action_identity: ActionIdentity | None
+    post_state: RuntimeStateSnapshot | None
+    trace_ref: str | None
+    recovery_required: bool
+    retry_allowed: bool
+    typed_failure_reason: str
+    state_history: tuple[CommitTransactionState, ...]
+
+
+@dataclass(frozen=True)
 class TraceStepRecord:
     trial_id: str
     cycle_index: int
@@ -440,6 +514,24 @@ class TrialTraceLock:
     trace_sha256: str
     schema_identity: str
     locked_before_evaluation: bool = True
+
+
+@dataclass(frozen=True)
+class TrialFinalizationResult:
+    status: FinalizationStatus
+    trace_lock: TrialTraceLock | None
+    content_hash: str
+    failure_reason: str | None
+    retry_allowed: bool
+    recovery_required: bool
+
+    @property
+    def record_count(self) -> int:
+        return 0 if self.trace_lock is None else self.trace_lock.record_count
+
+    @property
+    def locked_before_evaluation(self) -> bool:
+        return self.trace_lock is not None and self.trace_lock.locked_before_evaluation
 
 
 @dataclass(frozen=True)
@@ -585,6 +677,10 @@ class TrialSessionStatus(str, Enum):
     NEW = "NEW"
     READY = "READY"
     BLOCKED = "BLOCKED"
+    EVIDENCE_INCOMPLETE = "EVIDENCE_INCOMPLETE"
+    RECOVERY_REQUIRED = "RECOVERY_REQUIRED"
+    FINALIZING = "FINALIZING"
+    FINALIZATION_FAILED = "FINALIZATION_FAILED"
     FINALIZED = "FINALIZED"
 
 
@@ -709,6 +805,7 @@ class ActiveCycleContext:
     routing_decisions: tuple[RoutingDecision, ...] = ()
     final_supervisor_decision: SupervisorDecision | None = None
     commit_receipt: CommitReceipt | None = None
+    commit_transaction_result: CommitTransactionResult | None = None
     trace_ref: str | None = None
     stage_failures: tuple[StageFailureEvidence, ...] = ()
     alternative_inventory_evidence: AlternativeInventoryEvidence | None = None
@@ -738,6 +835,7 @@ class ActiveCycleResult:
     typed_stop_or_failure_reason: str
     stage_failures: tuple[StageFailureEvidence, ...] = ()
     alternative_inventory_evidence: AlternativeInventoryEvidence | None = None
+    commit_transaction_result: CommitTransactionResult | None = None
 
 
 @dataclass(frozen=True)

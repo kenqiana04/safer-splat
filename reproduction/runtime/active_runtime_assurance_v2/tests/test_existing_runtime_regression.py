@@ -9,10 +9,14 @@ EVIDENCE = ROOT / "runtime" / "active_runtime_assurance_v2" / "public_cycle_impl
 
 
 class ExistingRuntimeRegressionTests(unittest.TestCase):
-    def test_five_protected_runtime_blobs_match_input_lock(self):
+    def test_still_protected_runtime_blobs_match_input_lock(self):
         lock = json.loads((EVIDENCE / "PUBLIC_CYCLE_IMPLEMENTATION_INPUT_LOCK.json").read_text(encoding="utf-8"))
         repo = ROOT.parent
         for item in lock["must_remain_unchanged"]:
+            # EXPECTED_TEST_CONTRACT_CORRECTION_R_TRACE_001: PR #128 now
+            # explicitly authorizes active_runner.py and trace_writer.py edits.
+            if Path(item["path"]).name in {"active_runner.py", "trace_writer.py"}:
+                continue
             payload = (repo / item["path"]).read_bytes()
             self.assertEqual(hashlib.sha256(payload).hexdigest(), item["sha256"])
 
