@@ -1,0 +1,71 @@
+{
+  "allowed_runtime_blob_sha1": {
+    "active_cycle.py": "427e0cb2948f275d8117bcc8dd2171de42a016ca",
+    "active_runner.py": "64b747656b031881123c92587d1beca6e742be5e",
+    "runtime_types.py": "af259b5ae27ae581ca247a127777f22ef86e7bfe",
+    "trace_writer.py": "f7d1c768a28d36ab1ef88614bd01c8722e9ea292"
+  },
+  "bypass_revalidation_required": true,
+  "capability": "MEMORY_ONLY_CONSISTENCY",
+  "design_artifact_sha256": {
+    "NO_SILENT_UNTRACED_COMMIT_PROPERTY_V2R1.md": "aa0a543f560904efcbffbac0e846c516c2c7221a8e5b4f076182d9098073c9dd",
+    "TRACE_COMMIT_ARCHITECTURE_DECISION_V2R1.json": "b58c5b2ebd94b3a6508404858edcb06e491c83de5c9ccb1fe1ca38c4db9cfffc",
+    "TRACE_COMMIT_AUTHORITY_OWNERSHIP_V2R1.json": "387a790ae01131e240289f433e47fbb11edbd7c701309b5cde4cdfa6ffd52f26",
+    "TRACE_COMMIT_BYPASS_IMPACT_V2R1.json": "25ce0e5690269dbccc6fd168d21a0eecd00c3d9bf080c1a651f3c62fb2508a8a",
+    "TRACE_COMMIT_CONSISTENCY_INVARIANTS_V2R1.json": "34d3e3897b1505805d9c939690e0d3c407e505debfb24850c778960f84e4b277",
+    "TRACE_COMMIT_CONSISTENCY_PROPERTY_V2R1.md": "0e66b249ea343f99081ec6d5a92bf78c667ed2bbbcd8eeb6e6487d0a22d6727f",
+    "TRACE_COMMIT_FAULT_MATRIX_V2R1.csv": "2f290134ee5680bc61326c2074648b07a710ba7abc93565b35542c940717e894",
+    "TRACE_COMMIT_IMPLEMENTATION_CHANGE_MANIFEST_V2R1.csv": "58a58a4c721de029bcb154d5ec8f7091044e26396a24b99a620ce6c4e378bb83",
+    "TRACE_COMMIT_IMPLEMENTATION_TEST_PLAN_V2R1.json": "2d3b2f42d9dba7cb7d3eb77b5b3bcec023f45115b52e896d1512b9faffc1b7a2",
+    "TRACE_COMMIT_ORACLE_COMPATIBILITY_V2R1.json": "08b8f98e3c9220ac29d59ce063d3e7eda1ca62f75491b212adcbbd6c245ae7e3",
+    "TRACE_FINALIZATION_RETRY_CONTRACT_V2R1.json": "32b1aa30b01b6aa8e3e71fa618a64a655a0aaa552fb49e06794dd199373671fc",
+    "report/REPORT_DESIGN_ACTIVE_RUNTIME_TRACE_COMMIT_ATOMICITY_V2R1.md": "ca0a0a87194340f92164d22a15ec1bc055e2be7f1b0f96945b63a5c6a5f9d1af"
+  },
+  "execution_counts": {
+    "gpu": 0,
+    "official100": 0,
+    "oracle": 0,
+    "real_active": 0,
+    "real_bypass": 0,
+    "smoke": 0
+  },
+  "external_protected_blob_sha1": {
+    "run.py": "361f09fc8f37e4713ea2fc8975d82d56cb9be46a"
+  },
+  "journal": "JOURNAL_NOT_REQUIRED_FOR_CURRENT_CONTRACT",
+  "pr128": {
+    "base_branch": "revalidate-active-runtime-contract-conformance-v2-post-r2",
+    "base_sha": "72215ffb1b0a0bc9e7cc94155117ac8624ed0aa6",
+    "branch": "design-active-runtime-trace-commit-atomicity-v2r1",
+    "draft": true,
+    "head": "d7d2703f305d43661cf24bb818d846a092a67066",
+    "number": 128,
+    "state": "OPEN",
+    "title": "[Draft] Design active runtime trace/commit consistency V2R1"
+  },
+  "protected_runtime_blob_sha1": {
+    "alternative_provider.py": "32da73b46fc7c5b0fb4b0ac7a5d583a0f3dba980",
+    "authority_registry.py": "c444b077fde51dcffc3c057302d1336dcb7ce0c9",
+    "backup_token_store.py": "3af371733638bcd6aac9240db38328d9e2f6154f",
+    "c0_admission.py": "3cbf74596980b22eb94d3233134f270ce6cc7f9f",
+    "deadline_runtime.py": "cf81341b655deb7b8b5a6261eafb6171580dbd45",
+    "diagnostic_r0.py": "8556cdb5aa9082e323d47419736ceec5bb7660ae",
+    "l1_runtime.py": "6a477fb4fd84f6c04c0e68a586e43baf6d5aa77c",
+    "l2_runtime.py": "b7b26075ea01878deea39a12f66b5990c0d08de1",
+    "l3_runtime.py": "93db2095cfc3102b37f35bfef91a611786de71d2",
+    "plant_commit.py": "f9116db0690983252ea0f60d286399b71d644134",
+    "primary_proposal_adapter.py": "2de4ad2cbf92a71affd8a2d2630094f9a6d29936",
+    "start_admission.py": "40e6774bc37cae76758db97ee3db43a48e373d55",
+    "supervisor.py": "173837401de824fcdbdb8b5b7b9d4dfb8bb43037"
+  },
+  "schema": "TRACE_COMMIT_IMPLEMENTATION_V2R1_INPUT_LOCK",
+  "selected_architecture": "OPTION_B_SOFTWARE_TRANSACTION_STATE_MACHINE",
+  "task_type": "OPTION_B_MEMORY_ONLY_TRACE_COMMIT_IMPLEMENTATION",
+  "upstream_evidence_sha256": {
+    "pr119_execution_lock": "34459884d1b0d611ec31de2e7e538340f8b41193a90dde9c7c9b4e031d2b515b",
+    "pr119_summary": "17d8ba47a45c84c0f00045012658d5d0b7cc4797cfda4a28c816393a23360572",
+    "pr127_failure_register": "e0f809f9b2995826ae5cfd21266f29d3cbc55cad2dde3952a671605483530e40",
+    "pr127_report": "936c2c51c5e8f91f45797db45c2a2c25789254960e0d4ef0baae1529aa72cdd4",
+    "pr127_trace_faults": "bf9235cbd929bff3b9eae50fb27a1fd4ad499585db05f678b730cfdf9028a894"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "BYPASS_REVALIDATION_REQUIRED": true,
+  "FINAL_DECISION": "FREEZE_TRACE_COMMIT_IMPLEMENTATION_AND_ADVANCE_TARGETED_VALIDATION",
+  "FINAL_STATUS": "PASS_IMPLEMENT_ACTIVE_RUNTIME_TRACE_COMMIT_ATOMICITY_V2R1",
+  "architecture": "OPTION_B_SOFTWARE_TRANSACTION_STATE_MACHINE",
+  "capability": "MEMORY_ONLY_CONSISTENCY",
+  "only_next_task": "VALIDATE_ACTIVE_RUNTIME_TRACE_COMMIT_ATOMICITY_V2R1",
+  "remaining_blockers": [
+    "targeted trace/commit validation not yet executed",
+    "fresh BYPASS revalidation required afterward",
+    "full post-trace reconformance required afterward",
+    "smoke requires separate authorization after all gates"
+  ],
+  "schema": "TRACE_COMMIT_IMPLEMENTATION_V2R1_FINAL_DECISION"
+}

@@ -1,0 +1,9 @@
+{
+  "capability": "MEMORY_ONLY_CONSISTENCY",
+  "commit_journal_exists": false,
+  "fsync_contract": false,
+  "restart_recovery": false,
+  "schema": "TRACE_COMMIT_NO_JOURNAL_AUDIT_V2R1",
+  "verdict": "PASS",
+  "wal_exists": false
+}

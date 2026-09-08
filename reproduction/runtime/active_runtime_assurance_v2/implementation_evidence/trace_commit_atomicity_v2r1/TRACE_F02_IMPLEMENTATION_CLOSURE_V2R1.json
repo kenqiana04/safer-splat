@@ -1,0 +1,13 @@
+{
+  "committed": true,
+  "evidence_status": "COMMITTED_TRACE_INCOMPLETE",
+  "injected_fault": "TraceWriter.append exception after confirmed plant/token side effects",
+  "plant_retry": false,
+  "post_state_preserved": true,
+  "receipt_preserved": true,
+  "schema": "TRACE_F02_IMPLEMENTATION_CLOSURE_V2R1",
+  "session": "EVIDENCE_INCOMPLETE",
+  "token_actual_state_preserved": true,
+  "trace_status": "INCOMPLETE",
+  "verdict": "CLOSED_AT_MEMORY_LEVEL"
+}

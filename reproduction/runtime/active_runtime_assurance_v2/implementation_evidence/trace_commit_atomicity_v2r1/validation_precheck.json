@@ -1,0 +1,210 @@
+{
+  "check_count": 40,
+  "checks": [
+    {
+      "detail": "PR #128 is an open draft",
+      "id": "PC-01",
+      "passed": true
+    },
+    {
+      "detail": "PR #128 title exact",
+      "id": "PC-02",
+      "passed": true
+    },
+    {
+      "detail": "PR #128 branch/head exact",
+      "id": "PC-03",
+      "passed": true
+    },
+    {
+      "detail": "PR #128 base exact",
+      "id": "PC-04",
+      "passed": true
+    },
+    {
+      "detail": "Option B exact",
+      "id": "PC-05",
+      "passed": true
+    },
+    {
+      "detail": "journal decision exact",
+      "id": "PC-06",
+      "passed": true
+    },
+    {
+      "detail": "runtime diff is within the frozen manifest",
+      "id": "PC-07",
+      "passed": true
+    },
+    {
+      "detail": "protected diff is zero",
+      "id": "PC-08",
+      "passed": true
+    },
+    {
+      "detail": "commit_journal.py absent",
+      "id": "PC-09",
+      "passed": true
+    },
+    {
+      "detail": "typed transaction enums implemented",
+      "id": "PC-10",
+      "passed": true
+    },
+    {
+      "detail": "immutable CommitTransactionResult implemented",
+      "id": "PC-11",
+      "passed": true
+    },
+    {
+      "detail": "unresolved plant outcome implemented",
+      "id": "PC-12",
+      "passed": true
+    },
+    {
+      "detail": "token incomplete implemented",
+      "id": "PC-13",
+      "passed": true
+    },
+    {
+      "detail": "trace incomplete implemented",
+      "id": "PC-14",
+      "passed": true
+    },
+    {
+      "detail": "no-action trace incomplete implemented",
+      "id": "PC-15",
+      "passed": true
+    },
+    {
+      "detail": "transaction component exists",
+      "id": "PC-16",
+      "passed": true
+    },
+    {
+      "detail": "ActiveRunner delegates ACTIVE sequencing",
+      "id": "PC-17",
+      "passed": true
+    },
+    {
+      "detail": "Supervisor exact",
+      "id": "PC-18",
+      "passed": true
+    },
+    {
+      "detail": "PlantCommit exact",
+      "id": "PC-19",
+      "passed": true
+    },
+    {
+      "detail": "BackupTokenStore exact",
+      "id": "PC-20",
+      "passed": true
+    },
+    {
+      "detail": "TRACE-F02 receipt preserved",
+      "id": "PC-21",
+      "passed": true
+    },
+    {
+      "detail": "TRACE-F02 post-state preserved",
+      "id": "PC-22",
+      "passed": true
+    },
+    {
+      "detail": "TRACE-F02 session non-ready",
+      "id": "PC-23",
+      "passed": true
+    },
+    {
+      "detail": "lock publication follows persistence",
+      "id": "PC-24",
+      "passed": true
+    },
+    {
+      "detail": "append frozen after finalize attempt",
+      "id": "PC-25",
+      "passed": true
+    },
+    {
+      "detail": "TRACE-F03 finalization failure state",
+      "id": "PC-26",
+      "passed": true
+    },
+    {
+      "detail": "idempotent retry contract implemented",
+      "id": "PC-27",
+      "passed": true
+    },
+    {
+      "detail": "no automatic plant retry path",
+      "id": "PC-28",
+      "passed": true
+    },
+    {
+      "detail": "no fake rollback",
+      "id": "PC-29",
+      "passed": true
+    },
+    {
+      "detail": "fresh BYPASS revalidation required",
+      "id": "PC-30",
+      "passed": true
+    },
+    {
+      "detail": "commit_bypass execution body preserved",
+      "id": "PC-31",
+      "passed": true
+    },
+    {
+      "detail": ">=24 implementation tests",
+      "id": "PC-32",
+      "passed": true
+    },
+    {
+      "detail": "model counterexamples zero",
+      "id": "PC-33",
+      "passed": true
+    },
+    {
+      "detail": "applicable CPU regressions pass",
+      "id": "PC-34",
+      "passed": true
+    },
+    {
+      "detail": "all real execution counts zero",
+      "id": "PC-35",
+      "passed": true
+    },
+    {
+      "detail": "next task exact",
+      "id": "PC-36",
+      "passed": true
+    },
+    {
+      "detail": "implemented source still matches source freeze",
+      "id": "PC-37",
+      "passed": true
+    },
+    {
+      "detail": "protected source still matches source freeze",
+      "id": "PC-38",
+      "passed": true
+    },
+    {
+      "detail": "run_cycle has READY-only guard",
+      "id": "PC-39",
+      "passed": true
+    },
+    {
+      "detail": "no durability overclaim",
+      "id": "PC-40",
+      "passed": true
+    }
+  ],
+  "failed_count": 0,
+  "is_targeted_final_validation": false,
+  "passed_count": 40,
+  "schema": "TRACE_COMMIT_ATOMICITY_IMPLEMENTATION_PRECHECK_V2R1",
+  "verdict": "PASS_TRACE_COMMIT_ATOMICITY_V2R1_IMPLEMENTATION_PRECHECK"
+}

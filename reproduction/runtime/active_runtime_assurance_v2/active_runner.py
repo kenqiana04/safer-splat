@@ -2,11 +2,12 @@
 
 from __future__ import annotations
 
+from .commit_transaction import ActiveCommitTransaction
 from .authority_registry import AuthorityRegistry
 from .backup_token_store import BackupTokenStore
 from .deadline_runtime import RuntimeDeadlineProfile
 from .plant_commit import PlantCommitAdapter
-from .runtime_types import ActionRole, CommitReceipt, RuntimeMode, RuntimeStateSnapshot, SelectedAction, TraceStepRecord
+from .runtime_types import ActionRole, CommitReceipt, FinalizationStatus, RuntimeMode, RuntimeStateSnapshot, SelectedAction, TraceStepRecord, TrialFinalizationResult
 from .supervisor import Supervisor
 from .trace_writer import TraceWriter
 
@@ -21,6 +22,7 @@ class ActiveRunner:
         self.trace_writer = trace_writer
         self.deadline_profile = deadline_profile
         self.started = False
+        self._active_commit_transaction = ActiveCommitTransaction(plant_commit, token_store, trace_writer)
 
     def startup(self) -> None:
         self.registry.verify_all(active=self.mode == RuntimeMode.ACTIVE_RUNTIME_ON)
@@ -37,20 +39,10 @@ class ActiveRunner:
         self._append(snapshot, decision.selected_action, receipt, "BYPASS_REFERENCE_ACTION_UNCHANGED")
         return receipt
 
-    def commit_active_decision(self, snapshot: RuntimeStateSnapshot, decision) -> CommitReceipt | None:
+    def commit_active_decision(self, snapshot: RuntimeStateSnapshot, decision):
         if not self.started or self.mode != RuntimeMode.ACTIVE_RUNTIME_ON:
-            raise RuntimeError("ACTIVE_MODE_NOT_STARTED")
-        if not decision.allows_commit or decision.selected_action is None:
-            self._append(snapshot, None, None, decision.reason)
-            return None
-        receipt = self.plant_commit.commit(decision, snapshot, decision.selected_action)
-        if receipt.committed and decision.prepared_bundle is not None and receipt.action_role in {ActionRole.PRIMARY_NAVIGATION, ActionRole.ALTERNATIVE_NAVIGATION}:
-            self.token_store.prepare(decision.prepared_bundle)
-            self.token_store.activate_after_navigation_commit(receipt, decision.prepared_bundle.identity)
-        elif receipt.action_role == ActionRole.RETAINED_BACKUP:
-            self.token_store.consume_after_backup_commit(receipt)
-        self._append(snapshot, decision.selected_action, receipt, decision.reason)
-        return receipt
+            return self._active_commit_transaction.aborted(snapshot, decision, "ACTIVE_MODE_NOT_STARTED")
+        return self._active_commit_transaction.execute(snapshot, decision)
 
     def _append(self, snapshot: RuntimeStateSnapshot, action: SelectedAction | None, receipt: CommitReceipt | None, reason: str) -> None:
         role = ActionRole.ASSURANCE_BOUNDARY_NO_ACTION if action is None else action.role
@@ -58,3 +50,19 @@ class ActiveRunner:
 
     def finalize_trace(self):
         return self.trace_writer.finalize()
+
+    def finalize_trace_result(self) -> TrialFinalizationResult:
+        try:
+            lock = self.trace_writer.finalize()
+        except Exception as exc:
+            reason = self.trace_writer.finalization_failure_reason or f"TRACE_FINALIZATION_INCOMPLETE:{type(exc).__name__}"
+            identity_mismatch = reason == "TRACE_FINALIZATION_RETRY_IDENTITY_MISMATCH"
+            return TrialFinalizationResult(
+                FinalizationStatus.RECOVERY_REQUIRED if identity_mismatch else FinalizationStatus.FINALIZATION_INCOMPLETE,
+                None,
+                self.trace_writer.frozen_trace_sha256 or "",
+                reason,
+                not identity_mismatch,
+                True,
+            )
+        return TrialFinalizationResult(FinalizationStatus.FINALIZED, lock, lock.trace_sha256, None, False, False)

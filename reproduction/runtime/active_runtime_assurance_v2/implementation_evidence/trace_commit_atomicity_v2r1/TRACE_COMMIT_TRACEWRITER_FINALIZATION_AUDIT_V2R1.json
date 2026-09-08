@@ -1,0 +1,14 @@
+{
+  "append_after_first_finalize_attempt": "REJECTED",
+  "durability_claim": false,
+  "order": [
+    "freeze_record_set",
+    "freeze_content_hash",
+    "build_candidate_lock_locally",
+    "configured_persistence",
+    "publish_lock"
+  ],
+  "retry": "same frozen content only",
+  "schema": "TRACE_COMMIT_TRACEWRITER_FINALIZATION_AUDIT_V2R1",
+  "verdict": "PASS"
+}
