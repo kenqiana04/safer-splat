@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+import json
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -44,6 +45,17 @@ class TransitionRule:
     deadline_requirement: str = "ANY"
     candidate_requirement: str = "NONE"
     guard: str = ""
+    # The following values are copied from the frozen routing-design row.  In
+    # particular, they are not reconstructed from the destination enum.
+    may_start_next_stage: bool = False
+    may_start_new_search: bool = False
+    requires_arbitration: bool = False
+    deadline_interpretation: str = ""
+    backup_routing_allowed: bool = False
+    terminal_routing_allowed: bool = False
+    old_backup_retained: bool = False
+    new_backup_created: bool = False
+    theorem_interpretation: str = ""
 
 
 class TransitionTable:
@@ -57,11 +69,41 @@ class TransitionTable:
     def from_csv(cls, path: Path) -> "TransitionTable":
         with path.open(encoding="utf-8", newline="") as handle:
             rows = list(csv.DictReader(handle))
+
+        # PR #107 remains the row authority.  PR #121 supplies the additive
+        # route-carrier fields, so the runtime copies those values by rule ID
+        # instead of deriving policy from a destination enum.
+        design_candidates = (
+            path.with_name("EXECUTABLE_TRANSITION_ROUTING_DESIGN_V2.json"),
+            Path(__file__).resolve().parents[3] / "reproduction" / "design" / "active_runtime_public_cycle_composition_v2" / "EXECUTABLE_TRANSITION_ROUTING_DESIGN_V2.json",
+        )
+        design_rows: dict[str, dict[str, object]] = {}
+        for design_path in design_candidates:
+            if not design_path.is_file():
+                continue
+            try:
+                payload = json.loads(design_path.read_text(encoding="utf-8"))
+                design_rows = {str(item["rule_id"]): item for item in payload.get("rules", [])}
+            except (OSError, ValueError, TypeError, KeyError):
+                design_rows = {}
+            if design_rows:
+                break
+
+        def bool_value(row: dict[str, str], key: str, default: bool = False) -> bool:
+            value = row.get(key)
+            if value is None or value == "":
+                return default
+            return value.strip().lower() == "true"
+
+        def design_value(rule_id: str, key: str, default: object = None) -> object:
+            value = design_rows.get(rule_id, {}).get(key, default)
+            return default if value is None else value
+
         return cls(tuple(TransitionRule(
             rule_id=row["rule_id"],
             source_phase=row["source_phase"],
             destination_phase=row.get("runtime_destination") or row["destination_phase"],
-            commit_allowed=row["commit_allowed"].lower() == "true",
+            commit_allowed=bool_value(row, "commit_allowed"),
             action_authority=row.get("commit_authority") or row["action_authority"],
             failure_code=row.get("failure_mapping") or row["failure_code_if_any"],
             observation_result=row["observation/result"],
@@ -70,6 +112,15 @@ class TransitionTable:
             deadline_requirement=row["deadline_requirement"],
             candidate_requirement=row["candidate_requirement"],
             guard=row["guard"],
+            may_start_next_stage=bool(design_value(row["rule_id"], "may_start_next_stage", False)),
+            may_start_new_search=bool(design_value(row["rule_id"], "may_start_new_search", False)),
+            requires_arbitration=bool(design_value(row["rule_id"], "requires_arbitration", False)),
+            deadline_interpretation=str(design_value(row["rule_id"], "deadline_interpretation", "")),
+            backup_routing_allowed=bool(design_value(row["rule_id"], "backup_routing_allowed", False)),
+            terminal_routing_allowed=bool(design_value(row["rule_id"], "terminal_routing_allowed", False)),
+            old_backup_retained=bool_value(row, "old_backup_retained", bool(design_value(row["rule_id"], "old_backup_retained", False))),
+            new_backup_created=bool_value(row, "new_backup_created", bool(design_value(row["rule_id"], "new_backup_created", False))),
+            theorem_interpretation=str(row.get("theorem_interpretation") or design_value(row["rule_id"], "theorem_interpretation", "")),
         ) for row in rows))
 
     @staticmethod
@@ -107,28 +158,72 @@ class TransitionTable:
         return False
 
     @staticmethod
+    def _alternative_branch_available(context: RuntimeRoutingContext) -> bool:
+        """Return only raw prerequisites used by the frozen local-alt rows."""
+        return context.deadline.status == DeadlineStatus.OPEN and context.retained_backup_valid
+
+    @staticmethod
+    def _certified_candidate_fact(context: RuntimeRoutingContext) -> bool:
+        # ``legacy_navigation_hint`` is accepted only for old positional
+        # fixtures; all production coordinator calls use the explicit factual
+        # field and never provide a policy hint.
+        return context.certified_candidate_available or context.legacy_navigation_hint
+
+    @staticmethod
+    def _terminal_eligibility_fact(context: RuntimeRoutingContext) -> bool:
+        return context.terminal_evidence_eligible or context.legacy_terminal_hint
+
+    @staticmethod
     def _branch_guard(rule: TransitionRule, context: RuntimeRoutingContext) -> bool:
         if rule.rule_id in {
             "C0_FAIL_LOCAL_ALT", "C0_UNKNOWN_LOCAL_ALT", "L2_FAIL_ALT",
             "L2_UNKNOWN_LOCAL_ALT", "L3_ABSENT_ALT", "L3_UNKNOWN_LOCAL_ALT",
         }:
-            return context.alternative_search_allowed
+            return TransitionTable._alternative_branch_available(context)
         if rule.rule_id in {
             "C0_FAIL_LOCAL_ARB", "C0_UNKNOWN_LOCAL_ARB", "L2_FAIL_ARB",
             "L2_UNKNOWN_LOCAL_ARB", "L3_ABSENT_ARB", "L3_UNKNOWN_LOCAL_ARB",
         }:
-            return not context.alternative_search_allowed
+            return not TransitionTable._alternative_branch_available(context)
         if rule.rule_id == "ARB_NAV":
-            return context.navigation_ready and context.deadline.status == DeadlineStatus.OPEN
+            return TransitionTable._certified_candidate_fact(context) and context.deadline.status == DeadlineStatus.OPEN
         if rule.rule_id == "ARB_BACKUP":
-            return not context.navigation_ready and context.retained_backup_valid
+            return not TransitionTable._certified_candidate_fact(context) and context.retained_backup_valid
         if rule.rule_id == "ARB_TERMINAL":
-            return not context.navigation_ready and not context.retained_backup_valid and context.terminal_evaluated and context.terminal_ready
+            return not TransitionTable._certified_candidate_fact(context) and not context.retained_backup_valid and context.terminal_evaluated and TransitionTable._terminal_eligibility_fact(context)
         if rule.rule_id == "ARB_EVAL_TERMINAL":
-            return not context.navigation_ready and not context.retained_backup_valid and not context.terminal_evaluated and context.deadline.status == DeadlineStatus.OPEN
+            return not TransitionTable._certified_candidate_fact(context) and not context.retained_backup_valid and not context.terminal_evaluated and context.deadline.status == DeadlineStatus.OPEN
         if rule.rule_id == "ARB_BOUNDARY":
-            return not context.navigation_ready and not context.retained_backup_valid and not context.terminal_ready and (context.terminal_evaluated or context.deadline.status != DeadlineStatus.OPEN)
+            return not TransitionTable._certified_candidate_fact(context) and not context.retained_backup_valid and not TransitionTable._terminal_eligibility_fact(context) and (context.terminal_evaluated or context.deadline.status != DeadlineStatus.OPEN)
         return True
+
+    @staticmethod
+    def _blocked_decision(context: RuntimeRoutingContext, status: RouteResolutionStatus, reason: str) -> RoutingDecision:
+        return RoutingDecision(
+            status=status,
+            rule_id=None,
+            source_phase=context.source_phase,
+            destination_phase=None,
+            may_start_next_stage=False,
+            may_start_new_search=False,
+            requires_arbitration=False,
+            failure_mapping=reason,
+            deadline_interpretation="SUPERVISOR_BLOCKS_UNRESOLVED_LOOKUP",
+            backup_routing_allowed=False,
+            terminal_routing_allowed=False,
+            commit_allowed=False,
+            reason=reason,
+            action_authority=None,
+            old_backup_retained=None,
+            new_backup_created=None,
+            theorem_interpretation=None,
+            observation_result=None,
+            guard=None,
+            reason_scope=context.reason_scope,
+            retained_backup_requirement=None,
+            deadline_requirement=None,
+            candidate_requirement=None,
+        )
 
     def resolve(self, event: PublicCycleEvent | str, context: RuntimeRoutingContext) -> RoutingDecision:
         event_value = event.value if isinstance(event, PublicCycleEvent) else str(event)
@@ -147,23 +242,33 @@ class TransitionTable:
         if len(matches) != 1:
             status = RouteResolutionStatus.BLOCKED_MISSING if not matches else RouteResolutionStatus.BLOCKED_AMBIGUOUS
             reason = "ROUTING_RULE_MISSING" if not matches else "ROUTING_RULE_AMBIGUOUS"
-            return RoutingDecision(status, None, context.source_phase, None, False, False, False, reason, "SUPERVISOR_BLOCKS_UNRESOLVED_LOOKUP", False, False, False, reason)
+            return self._blocked_decision(context, status, reason)
         rule = matches[0]
         destination = RuntimePhase(rule.destination_phase)
         return RoutingDecision(
-            RouteResolutionStatus.RESOLVED,
-            rule.rule_id,
-            context.source_phase,
-            destination,
-            destination not in {RuntimePhase.ARBITRATION, RuntimePhase.ASSURANCE_BOUNDARY},
-            destination == RuntimePhase.ALT_SEARCH,
-            destination in {RuntimePhase.ARBITRATION, RuntimePhase.BACKUP_EXECUTION, RuntimePhase.COMMIT},
-            rule.failure_code or None,
-            f"SUPERVISOR_INTERPRETED_{context.deadline.status.value}",
-            destination in {RuntimePhase.ARBITRATION, RuntimePhase.BACKUP_EXECUTION},
-            destination in {RuntimePhase.ARBITRATION, RuntimePhase.TERMINAL_EVALUATION},
-            rule.commit_allowed,
-            rule.guard,
+            status=RouteResolutionStatus.RESOLVED,
+            rule_id=rule.rule_id,
+            source_phase=context.source_phase,
+            destination_phase=destination,
+            may_start_next_stage=rule.may_start_next_stage,
+            may_start_new_search=rule.may_start_new_search,
+            requires_arbitration=rule.requires_arbitration,
+            failure_mapping=rule.failure_code or None,
+            deadline_interpretation=rule.deadline_interpretation,
+            backup_routing_allowed=rule.backup_routing_allowed,
+            terminal_routing_allowed=rule.terminal_routing_allowed,
+            commit_allowed=rule.commit_allowed,
+            reason=rule.guard,
+            action_authority=rule.action_authority,
+            old_backup_retained=rule.old_backup_retained,
+            new_backup_created=rule.new_backup_created,
+            theorem_interpretation=rule.theorem_interpretation,
+            observation_result=rule.observation_result,
+            guard=rule.guard,
+            reason_scope=rule.reason_scope,
+            retained_backup_requirement=rule.retained_backup_requirement,
+            deadline_requirement=rule.deadline_requirement,
+            candidate_requirement=rule.candidate_requirement,
         )
 
 
@@ -177,8 +282,12 @@ class Supervisor:
 
     def route_transition(self, event: PublicCycleEvent | str, runtime_context: RuntimeRoutingContext) -> RoutingDecision:
         if self.transition_table is None:
-            return RoutingDecision(RouteResolutionStatus.BLOCKED_MISSING, None, runtime_context.source_phase, None, False, False, False, "ROUTING_RULE_MISSING", "SUPERVISOR_TRANSITION_TABLE_REQUIRED", False, False, False, "ROUTING_RULE_MISSING")
+            return TransitionTable._blocked_decision(runtime_context, RouteResolutionStatus.BLOCKED_MISSING, "ROUTING_RULE_MISSING")
         return self.transition_table.resolve(event, runtime_context)
+
+    def routing_guard_block(self, runtime_context: RuntimeRoutingContext, reason: str = "ROUTING_STATE_REPEATED") -> RoutingDecision:
+        """Supervisor-owned typed block for an impossible repeated route state."""
+        return TransitionTable._blocked_decision(runtime_context, RouteResolutionStatus.BLOCKED_AMBIGUOUS, reason)
 
     def bypass_decision(self, snapshot: RuntimeStateSnapshot, reference_action: SelectedAction) -> SupervisorDecision:
         if reference_action.role == ActionRole.ASSURANCE_BOUNDARY_NO_ACTION:

@@ -532,6 +532,15 @@ class TrialSessionStatus(str, Enum):
 
 @dataclass(frozen=True)
 class RuntimeRoutingContext:
+    """Immutable facts supplied to Supervisor routing.
+
+    The coordinator may only populate observations/evidence that already exist
+    in the frozen runtime.  Permission and priority are intentionally absent:
+    Supervisor derives those interpretations while resolving the frozen table.
+    ``certified_candidate_available`` and ``terminal_evidence_eligible`` are
+    evidence facts, not action-selection decisions.
+    """
+
     source_phase: RuntimePhase
     deadline: DeadlineObservation
     authority_identity: str
@@ -540,11 +549,22 @@ class RuntimeRoutingContext:
     candidate_available: bool = False
     retained_backup_present: bool = False
     retained_backup_valid: bool = False
-    alternative_search_allowed: bool = False
-    navigation_ready: bool = False
+    # Positional compatibility slots retained for PR #116/PR #121 synthetic
+    # callers.  They are deliberately named as legacy hints and are ignored
+    # by the coordinator; Supervisor may accept them only as a compatibility
+    # bridge while callers migrate to the fact fields below.
+    legacy_alternative_hint: bool = False
+    legacy_navigation_hint: bool = False
     terminal_evaluated: bool = False
-    terminal_ready: bool = False
+    legacy_terminal_hint: bool = False
     reason_scope: str = "NONE"
+    certified_candidate_available: bool = False
+    terminal_evidence_eligible: bool = False
+    repeated_route_state: bool = False
+    # Raw state/token provenance is carried for routing audits.  These fields
+    # never grant permission and are not read by the coordinator as policy.
+    backup_state: str | None = None
+    candidate_provenance_identity: str | None = None
 
 
 @dataclass(frozen=True)
@@ -562,6 +582,21 @@ class RoutingDecision:
     terminal_routing_allowed: bool
     commit_allowed: bool
     reason: str
+    # Frozen-row metadata carried end-to-end.  The first thirteen fields above
+    # remain source-compatible with PR #116 callers; these additive fields are
+    # normative evidence, never recomputed from ``destination_phase``.
+    action_authority: str | None = None
+    old_backup_retained: bool | None = None
+    new_backup_created: bool | None = None
+    theorem_interpretation: str | None = None
+    observation_result: str | None = None
+    guard: str | None = None
+    reason_scope: str | None = None
+    retained_backup_requirement: str | None = None
+    deadline_requirement: str | None = None
+    candidate_requirement: str | None = None
+    backup_routing_metadata_present: bool = False
+    terminal_routing_metadata_present: bool = False
 
 
 @dataclass(frozen=True)
