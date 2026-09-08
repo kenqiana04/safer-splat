@@ -1,0 +1,31 @@
+{
+  "normal": [
+    "PREPARED",
+    "PLANT_ATTEMPTED",
+    "COMMITTED",
+    "TOKEN_APPLIED_OR_NOT_APPLICABLE",
+    "TRACE_RECORDED",
+    "COMPLETE"
+  ],
+  "plant_exception": [
+    "PREPARED",
+    "PLANT_ATTEMPTED",
+    "PLANT_OUTCOME_UNRESOLVED",
+    "RECOVERY_REQUIRED"
+  ],
+  "retry_plant": false,
+  "schema": "TRACE_COMMIT_TRANSACTION_STATE_AUDIT_V2R1",
+  "token_failure": [
+    "PREPARED",
+    "PLANT_ATTEMPTED",
+    "COMMITTED",
+    "EVIDENCE_INCOMPLETE"
+  ],
+  "trace_failure": [
+    "PREPARED",
+    "PLANT_ATTEMPTED",
+    "COMMITTED",
+    "EVIDENCE_INCOMPLETE"
+  ],
+  "verdict": "PASS"
+}

@@ -1,0 +1,11 @@
+{
+  "injected_fault": "configured persistence exception during finalize",
+  "lock_published_before_success": false,
+  "record_set_frozen": true,
+  "retry_identity_mismatch": "RECOVERY_REQUIRED",
+  "retry_same_content": true,
+  "run_cycle_allowed": false,
+  "schema": "TRACE_F03_IMPLEMENTATION_CLOSURE_V2R1",
+  "session": "FINALIZATION_FAILED",
+  "verdict": "CLOSED_AT_MEMORY_LEVEL"
+}

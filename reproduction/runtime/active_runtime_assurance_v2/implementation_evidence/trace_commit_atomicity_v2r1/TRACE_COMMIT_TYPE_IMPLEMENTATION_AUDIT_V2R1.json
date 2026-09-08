@@ -1,0 +1,23 @@
+{
+  "active_cycle_result_addition": "commit_transaction_result",
+  "enums": [
+    "CommitTransactionState",
+    "PlantOutcome",
+    "TokenMutationStatus",
+    "TraceStatus",
+    "EvidenceStatus",
+    "FinalizationStatus"
+  ],
+  "immutable_dataclasses": [
+    "CommitTransactionResult",
+    "TrialFinalizationResult"
+  ],
+  "schema": "TRACE_COMMIT_TYPE_IMPLEMENTATION_AUDIT_V2R1",
+  "session_states_added": [
+    "EVIDENCE_INCOMPLETE",
+    "RECOVERY_REQUIRED",
+    "FINALIZING",
+    "FINALIZATION_FAILED"
+  ],
+  "verdict": "PASS"
+}

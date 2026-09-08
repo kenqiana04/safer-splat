@@ -1,0 +1,24 @@
+{
+  "allowed_runtime_files": [
+    "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py",
+    "reproduction/runtime/active_runtime_assurance_v2/active_runner.py",
+    "reproduction/runtime/active_runtime_assurance_v2/commit_transaction.py",
+    "reproduction/runtime/active_runtime_assurance_v2/runtime_types.py",
+    "reproduction/runtime/active_runtime_assurance_v2/trace_writer.py"
+  ],
+  "base": "d7d2703f305d43661cf24bb818d846a092a67066",
+  "changed_runtime_files": [
+    "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py",
+    "reproduction/runtime/active_runtime_assurance_v2/active_runner.py",
+    "reproduction/runtime/active_runtime_assurance_v2/commit_transaction.py",
+    "reproduction/runtime/active_runtime_assurance_v2/runtime_types.py",
+    "reproduction/runtime/active_runtime_assurance_v2/trace_writer.py"
+  ],
+  "changed_runtime_subset_allowed": true,
+  "commit_journal_absent": true,
+  "expected_test_contract_corrections": [
+    "EXPECTED_TEST_CONTRACT_CORRECTION_R_TRACE_001"
+  ],
+  "protected_blob_diff_count": 0,
+  "schema": "TRACE_COMMIT_IMPLEMENTATION_V2R1_DIFF_AUDIT"
+}

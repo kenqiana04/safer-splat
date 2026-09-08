@@ -1,0 +1,10 @@
+{
+  "committed_complete": "READY with next_cycle_index+1",
+  "committed_incomplete": "EVIDENCE_INCOMPLETE",
+  "finalize_failure": "FINALIZATION_FAILED",
+  "finalize_identity_mismatch": "RECOVERY_REQUIRED",
+  "plant_unresolved": "RECOVERY_REQUIRED",
+  "ready_gate": "session.status == READY only",
+  "schema": "TRACE_COMMIT_COORDINATOR_SESSION_AUDIT_V2R1",
+  "verdict": "PASS"
+}

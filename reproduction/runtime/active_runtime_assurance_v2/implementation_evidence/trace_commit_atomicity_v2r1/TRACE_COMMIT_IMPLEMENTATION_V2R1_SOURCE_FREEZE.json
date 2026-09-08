@@ -1,0 +1,220 @@
+{
+  "architecture": "OPTION_B_SOFTWARE_TRANSACTION_STATE_MACHINE",
+  "capability": "MEMORY_ONLY_CONSISTENCY",
+  "commit_journal_absent": true,
+  "design_artifacts": [
+    {
+      "git_blob_sha1": "5a8642a78893c916a5333c7bf3ca0df54d3c058f",
+      "path": "reproduction/design/active_runtime_trace_commit_atomicity_v2r1/TRACE_COMMIT_ARCHITECTURE_DECISION_V2R1.json",
+      "sha256": "b58c5b2ebd94b3a6508404858edcb06e491c83de5c9ccb1fe1ca38c4db9cfffc",
+      "size": 1628
+    },
+    {
+      "git_blob_sha1": "6ed167fc8b0bef2695dad87d8d70959f33134c22",
+      "path": "reproduction/design/active_runtime_trace_commit_atomicity_v2r1/TRACE_COMMIT_IMPLEMENTATION_CHANGE_MANIFEST_V2R1.csv",
+      "sha256": "58a58a4c721de029bcb154d5ec8f7091044e26396a24b99a620ce6c4e378bb83",
+      "size": 1787
+    },
+    {
+      "git_blob_sha1": "096ba61ffe8ee49da22d5fa5a6ffe4537950d10e",
+      "path": "reproduction/design/active_runtime_trace_commit_atomicity_v2r1/TRACE_COMMIT_FAULT_MATRIX_V2R1.csv",
+      "sha256": "2f290134ee5680bc61326c2074648b07a710ba7abc93565b35542c940717e894",
+      "size": 2332
+    },
+    {
+      "git_blob_sha1": "e0075025811dfccc538f9010f2e04ff82df07fde",
+      "path": "reproduction/design/active_runtime_trace_commit_atomicity_v2r1/TRACE_COMMIT_CONSISTENCY_INVARIANTS_V2R1.json",
+      "sha256": "34d3e3897b1505805d9c939690e0d3c407e505debfb24850c778960f84e4b277",
+      "size": 3336
+    },
+    {
+      "git_blob_sha1": "65557846c10f68c9146eac73a65e6d12b9bac0c9",
+      "path": "reproduction/design/active_runtime_trace_commit_atomicity_v2r1/TRACE_COMMIT_IMPLEMENTATION_TEST_PLAN_V2R1.json",
+      "sha256": "2d3b2f42d9dba7cb7d3eb77b5b3bcec023f45115b52e896d1512b9faffc1b7a2",
+      "size": 4067
+    },
+    {
+      "git_blob_sha1": "63e8ffd4477b9369da6a53ba4109572121a05dfa",
+      "path": "reproduction/design/active_runtime_trace_commit_atomicity_v2r1/TRACE_FINALIZATION_RETRY_CONTRACT_V2R1.json",
+      "sha256": "32b1aa30b01b6aa8e3e71fa618a64a655a0aaa552fb49e06794dd199373671fc",
+      "size": 963
+    },
+    {
+      "git_blob_sha1": "619ee26054423a565dafdd2c4f3f76fda0e20302",
+      "path": "reproduction/design/active_runtime_trace_commit_atomicity_v2r1/TRACE_COMMIT_BYPASS_IMPACT_V2R1.json",
+      "sha256": "25ce0e5690269dbccc6fd168d21a0eecd00c3d9bf080c1a651f3c62fb2508a8a",
+      "size": 765
+    },
+    {
+      "git_blob_sha1": "7d1ed05cab690fa8e31f5d0a2ed6147f03ce3903",
+      "path": "reproduction/design/active_runtime_trace_commit_atomicity_v2r1/TRACE_COMMIT_ORACLE_COMPATIBILITY_V2R1.json",
+      "sha256": "08b8f98e3c9220ac29d59ce063d3e7eda1ca62f75491b212adcbbd6c245ae7e3",
+      "size": 499
+    },
+    {
+      "git_blob_sha1": "15d7a8baa08c781151774f267ce92f6f4aca3e9d",
+      "path": "reproduction/design/active_runtime_trace_commit_atomicity_v2r1/NO_SILENT_UNTRACED_COMMIT_PROPERTY_V2R1.md",
+      "sha256": "aa0a543f560904efcbffbac0e846c516c2c7221a8e5b4f076182d9098073c9dd",
+      "size": 995
+    },
+    {
+      "git_blob_sha1": "2e65265cc95b73b208f7c45211cd6e1f35139a16",
+      "path": "reproduction/design/active_runtime_trace_commit_atomicity_v2r1/TRACE_COMMIT_CONSISTENCY_PROPERTY_V2R1.md",
+      "sha256": "0e66b249ea343f99081ec6d5a92bf78c667ed2bbbcd8eeb6e6487d0a22d6727f",
+      "size": 1396
+    },
+    {
+      "git_blob_sha1": "b9ac6cc6f3efb8f7a0178da6dda178fd34e998ca",
+      "path": "reproduction/design/active_runtime_trace_commit_atomicity_v2r1/TRACE_COMMIT_AUTHORITY_OWNERSHIP_V2R1.json",
+      "sha256": "387a790ae01131e240289f433e47fbb11edbd7c701309b5cde4cdfa6ffd52f26",
+      "size": 691
+    },
+    {
+      "git_blob_sha1": "ec4ac9a2ed06e8f48fa3cad6426af737d5099229",
+      "path": "reproduction/design/active_runtime_trace_commit_atomicity_v2r1/report/REPORT_DESIGN_ACTIVE_RUNTIME_TRACE_COMMIT_ATOMICITY_V2R1.md",
+      "sha256": "ca0a0a87194340f92164d22a15ec1bc055e2be7f1b0f96945b63a5c6a5f9d1af",
+      "size": 3050
+    }
+  ],
+  "implementation_commit": "18d0a26800c689004f84fe2a01e199c24f854f80",
+  "implemented_files": [
+    {
+      "git_blob_sha1": "da0fdc6d21f1be25e7674966afdaa101fb53835b",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/runtime_types.py",
+      "sha256": "4cb09539ee43c56509bab4918173a6993096588f1a5a9030fd597788075761e8",
+      "size": 27667
+    },
+    {
+      "git_blob_sha1": "313bece54458f97e8ee6a427ab73f2f6c8ee745e",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/active_runner.py",
+      "sha256": "e183d1101690d29147a8137e3b961ddcfdf0820da4c44e06a0630fa5fb217c6d",
+      "size": 4128
+    },
+    {
+      "git_blob_sha1": "cca572c76c9bdf3e67bf4272c7fad30c195c87bf",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py",
+      "sha256": "87991c918bb5dd298248c9727a4baa53ae54475d9158f3cad031a1a13e967bf7",
+      "size": 48637
+    },
+    {
+      "git_blob_sha1": "eca56fbee2c65903434e3cbbe38a29b3e764e884",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/trace_writer.py",
+      "sha256": "84d04f6a5f95d3088e69c78c1a17a9dd7cff9924e4e2aeec279779cbcbc0504f",
+      "size": 4016
+    },
+    {
+      "git_blob_sha1": "759e37e25666ef0ccf0a745bb1a59459563ca403",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/commit_transaction.py",
+      "sha256": "79b6371e3f1fcfdc25eff86b3607e0f992c5f02315c8ca1c8651ae26192e1cb9",
+      "size": 8848
+    },
+    {
+      "git_blob_sha1": "48e5ee3dbffd520b38ce07f941d5a89515f0d9e6",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_trace_commit_atomicity_v2r1.py",
+      "sha256": "67e52b6af5d19612b2d5894a3152f6e3f880b739d16f1b01dda0d5860bb3f79f",
+      "size": 17872
+    },
+    {
+      "git_blob_sha1": "554ef84f896431a8003ff9355ba6a7e296276cfc",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/tests/test_existing_runtime_regression.py",
+      "sha256": "f3b486f7ffc5e91842e23b9c6ed70c5a2d6483d07efa29bee6df18f0cb713b78",
+      "size": 1404
+    }
+  ],
+  "protected_runtime_files": [
+    {
+      "git_blob_sha1": "f9116db0690983252ea0f60d286399b71d644134",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/plant_commit.py",
+      "sha256": "267051d457b493f293569750c3dd58c6193d2acd86a2009e554d365cdc6853ff",
+      "size": 3488
+    },
+    {
+      "git_blob_sha1": "3af371733638bcd6aac9240db38328d9e2f6154f",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/backup_token_store.py",
+      "sha256": "6aa8ed0e69be7694d880f66ad3ee1b9222af0360e90fca5d491482ac4e308700",
+      "size": 5041
+    },
+    {
+      "git_blob_sha1": "173837401de824fcdbdb8b5b7b9d4dfb8bb43037",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/supervisor.py",
+      "sha256": "a5c19e4905a4b7a82604a0867e8b5f45497fa79909eecac7e3fcd9e8fe8b728a",
+      "size": 23918
+    },
+    {
+      "git_blob_sha1": "32da73b46fc7c5b0fb4b0ac7a5d583a0f3dba980",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/alternative_provider.py",
+      "sha256": "d77750b569d714dc015fe63f7bfd7927181204d5682f6a67ba757e788070f3cf",
+      "size": 1175
+    },
+    {
+      "git_blob_sha1": "c444b077fde51dcffc3c057302d1336dcb7ce0c9",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/authority_registry.py",
+      "sha256": "ebe6c1dcfbbb5cb2c2a131c94e8773bb16d1794320d19341c796457d0517b969",
+      "size": 4594
+    },
+    {
+      "git_blob_sha1": "cf81341b655deb7b8b5a6261eafb6171580dbd45",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/deadline_runtime.py",
+      "sha256": "81f13f4c92de7d1c7367b845f910a8295e1de83c7375bf0469d84a41fc27f33e",
+      "size": 2971
+    },
+    {
+      "git_blob_sha1": "40e6774bc37cae76758db97ee3db43a48e373d55",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/start_admission.py",
+      "sha256": "f2bf429438b779a908aef8eedb812bd2aa6eb065104ce3f15d51256878dd080d",
+      "size": 1464
+    },
+    {
+      "git_blob_sha1": "8556cdb5aa9082e323d47419736ceec5bb7660ae",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/diagnostic_r0.py",
+      "sha256": "7a3cc2d59bec36f0827d06f7c45eab03713f41c3ce6defe834c4cb2f29a30407",
+      "size": 319
+    },
+    {
+      "git_blob_sha1": "6a477fb4fd84f6c04c0e68a586e43baf6d5aa77c",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/l1_runtime.py",
+      "sha256": "7a32dee5e74844df7113bd64d589cf6e22025fedc598c15b138bc3cfab4a3394",
+      "size": 2566
+    },
+    {
+      "git_blob_sha1": "2de4ad2cbf92a71affd8a2d2630094f9a6d29936",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/primary_proposal_adapter.py",
+      "sha256": "62ec2c5382b22b37bd498e92bd2120e8cb650c7a41cd332aa1ba15e2ab2c034a",
+      "size": 2055
+    },
+    {
+      "git_blob_sha1": "3cbf74596980b22eb94d3233134f270ce6cc7f9f",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/c0_admission.py",
+      "sha256": "9ab9946e2b6149ede8863ffe2927e6b4617fb3606de303cea7bfa895a75edbfa",
+      "size": 1605
+    },
+    {
+      "git_blob_sha1": "b7b26075ea01878deea39a12f66b5990c0d08de1",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/l2_runtime.py",
+      "sha256": "5934ce80734fef48a5dee5fbd702ff82015dedb091deea53d459b578d3d03b72",
+      "size": 1744
+    },
+    {
+      "git_blob_sha1": "93db2095cfc3102b37f35bfef91a611786de71d2",
+      "path": "reproduction/runtime/active_runtime_assurance_v2/l3_runtime.py",
+      "sha256": "121c3b9a15cb7f56c133ce9c098ecd8d7983228286f416441974d926fc916445",
+      "size": 1884
+    }
+  ],
+  "real_execution_counts": {
+    "active": 0,
+    "gpu": 0,
+    "official100": 0,
+    "oracle": 0,
+    "real_bypass": 0,
+    "smoke": 0
+  },
+  "runtime_correction_quota_after_freeze": 0,
+  "schema": "TRACE_COMMIT_IMPLEMENTATION_V2R1_SOURCE_FREEZE",
+  "tests_passed_before_freeze": {
+    "new": 28,
+    "runtime_total": 161
+  },
+  "upstream_head": "d7d2703f305d43661cf24bb818d846a092a67066",
+  "upstream_pr": 128
+}

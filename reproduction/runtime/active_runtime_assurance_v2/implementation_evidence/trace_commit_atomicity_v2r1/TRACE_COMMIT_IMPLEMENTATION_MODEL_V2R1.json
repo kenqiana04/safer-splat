@@ -1,0 +1,91 @@
+{
+  "check_count": 16,
+  "checks": [
+    {
+      "detail": "confirmed normal commit is complete",
+      "id": "MC-01",
+      "passed": true
+    },
+    {
+      "detail": "only complete evidence advances a normal session",
+      "id": "MC-02",
+      "passed": true
+    },
+    {
+      "detail": "TRACE-F02 retains receipt and post-state",
+      "id": "MC-03",
+      "passed": true
+    },
+    {
+      "detail": "committed trace-incomplete cannot remain READY",
+      "id": "MC-04",
+      "passed": true
+    },
+    {
+      "detail": "token failure is typed",
+      "id": "MC-05",
+      "passed": true
+    },
+    {
+      "detail": "token-incomplete cannot remain READY",
+      "id": "MC-06",
+      "passed": true
+    },
+    {
+      "detail": "plant exception is unresolved rather than false",
+      "id": "MC-07",
+      "passed": true
+    },
+    {
+      "detail": "unresolved plant is not retried and requires recovery",
+      "id": "MC-08",
+      "passed": true
+    },
+    {
+      "detail": "boundary has no plant or fake state",
+      "id": "MC-09",
+      "passed": true
+    },
+    {
+      "detail": "lock is not published before persistence",
+      "id": "MC-10",
+      "passed": true
+    },
+    {
+      "detail": "finalize failure is non-ready",
+      "id": "MC-11",
+      "passed": true
+    },
+    {
+      "detail": "frozen retry identity is retained",
+      "id": "MC-12",
+      "passed": true
+    },
+    {
+      "detail": "no false rollback path exists",
+      "id": "MC-13",
+      "passed": true
+    },
+    {
+      "detail": "no journal or WAL creep",
+      "id": "MC-14",
+      "passed": true
+    },
+    {
+      "detail": "ACTIVE delegates while BYPASS remains separate",
+      "id": "MC-15",
+      "passed": true
+    },
+    {
+      "detail": "all protected owners match the source freeze",
+      "id": "MC-16",
+      "passed": true
+    }
+  ],
+  "counterexample_count": 0,
+  "crash_restart_recovery_claim": false,
+  "model_scope": "ACTUAL_IMPLEMENTED_MEMORY_LEVEL_CLASSES",
+  "physical_atomicity_claim": false,
+  "schema": "TRACE_COMMIT_IMPLEMENTATION_MODEL_V2R1",
+  "verdict": "PASS"
+}

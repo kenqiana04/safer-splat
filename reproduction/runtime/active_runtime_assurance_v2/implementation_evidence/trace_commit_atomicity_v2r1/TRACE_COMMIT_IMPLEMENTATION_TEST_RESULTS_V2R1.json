@@ -1,0 +1,31 @@
+{
+  "new_tests": {
+    "command": "python -m unittest reproduction.runtime.active_runtime_assurance_v2.tests.test_trace_commit_atomicity_v2r1 -q",
+    "exit_code": 0,
+    "passed": true,
+    "summary": "OK"
+  },
+  "post_r2_source_independent": {
+    "excluded": [
+      "TRACE-F01",
+      "TRACE-F02"
+    ],
+    "passed": true,
+    "scope": "94/96 source-independent scenarios; TRACE-F01/F02 legacy exception expectations excluded as source-dependent and superseded"
+  },
+  "real_execution_counts": {
+    "active": 0,
+    "gpu": 0,
+    "official100": 0,
+    "oracle": 0,
+    "real_bypass": 0,
+    "smoke": 0
+  },
+  "runtime_suite": {
+    "command": "python -m unittest discover -s reproduction/runtime/active_runtime_assurance_v2/tests -p test_*.py -q",
+    "exit_code": 0,
+    "passed": true,
+    "summary": "OK"
+  },
+  "schema": "TRACE_COMMIT_IMPLEMENTATION_TEST_RESULTS_V2R1"
+}
