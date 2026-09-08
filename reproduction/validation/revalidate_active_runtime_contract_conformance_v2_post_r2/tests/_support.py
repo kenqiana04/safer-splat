@@ -97,7 +97,7 @@ def context_for_row(row: dict[str, str], authority: str) -> RuntimeRoutingContex
 
 def ambiguous_table(table: TransitionTable, rule_index: int = 13) -> TransitionTable:
     rules = list(table.rules)
-    rules.append(replace(rules[rule_index], rule_id="SYNTHETIC_DUPLICATE_FOR_AMBIGUITY_TEST"))
+    rules[-1] = replace(rules[rule_index], rule_id="SYNTHETIC_DUPLICATE_FOR_AMBIGUITY_TEST")
     return TransitionTable(tuple(rules))
 
 
@@ -126,4 +126,3 @@ def stage_exception_system(stage: str):
     setattr(owner, method, boom())
     result = system["coordinator"].run_cycle(state, request)
     return system, None, result
-

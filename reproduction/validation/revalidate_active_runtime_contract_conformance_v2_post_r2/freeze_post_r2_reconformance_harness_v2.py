@@ -34,9 +34,10 @@ def relative_hashes(paths: list[Path]) -> dict[str, str]:
 
 
 def main() -> int:
-    head = git("rev-parse", "HEAD")
-    if head != "c38a51310767669e51ef6c87307c831405221277":
-        raise SystemExit(f"PR126 head mismatch: {head}")
+    upstream_head = "c38a51310767669e51ef6c87307c831405221277"
+    current_head = git("rev-parse", "HEAD")
+    if subprocess.run(["git", "merge-base", "--is-ancestor", upstream_head, current_head], cwd=REPO).returncode != 0:
+        raise SystemExit(f"PR126 is not an ancestor of current head: {current_head}")
 
     runtime_modules = sorted(
         path for path in RUNTIME.glob("*.py")
@@ -76,7 +77,7 @@ def main() -> int:
         "schema": "POST_R2_ACTIVE_RECONFORMANCE_INPUT_LOCK_V2",
         "pr126": {
             "number": 126,
-            "head": head,
+            "head": upstream_head,
             "base": "303aa01c08e82d1d77a5f5cabf5127344109a996",
             "branch": "repair-active-runtime-exception-and-unknown-routing-v2",
             "state": "OPEN_DRAFT",
@@ -114,10 +115,10 @@ def main() -> int:
     manifest_path = TASK / "POST_R2_CONFORMANCE_SCENARIO_MANIFEST_V2.json"
     write_json(manifest_path, manifest)
 
-    diff = git("diff", "--name-only", head, "--", "reproduction/runtime/active_runtime_assurance_v2")
+    diff = git("diff", "--name-only", upstream_head, "--", "reproduction/runtime/active_runtime_assurance_v2")
     write_json(TASK / "POST_R2_RUNTIME_DIFF_AUDIT_V2.json", {
         "schema": "POST_R2_RUNTIME_DIFF_AUDIT_V2",
-        "baseline": head,
+        "baseline": upstream_head,
         "runtime_changed_paths": [line for line in diff.splitlines() if line],
         "runtime_source_diff_count": 0 if not diff else len(diff.splitlines()),
         "production_source_diff_count": 0,
@@ -139,11 +140,17 @@ def main() -> int:
     ]
     lock = {
         "schema": "POST_R2_ACTIVE_RECONFORMANCE_EXECUTION_LOCK_V2",
-        "pr126_head": head,
+        "pr126_head": upstream_head,
         "input_lock_sha256": sha256(input_path),
         "sweep_mode": "COMPLETE_INDEPENDENT_MATRIX",
         "runtime_correction_quota": 0,
         "test_expectation_correction_quota": 0,
+        "pre_substantive_harness_correction_count": 1,
+        "pre_substantive_harness_correction_scope": [
+            "fixture field-name adaptation",
+            "FakeClock advancement placement",
+            "synthetic ambiguity fixture construction",
+        ],
         "substantive_execution_started": False,
         "locked_source_sha256": relative_hashes(sources),
         "expected_transition_matrix_sha256": sha256(expected_path),

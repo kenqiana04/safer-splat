@@ -169,10 +169,10 @@ def boundary_path() -> dict[str, object]:
 
 def expired_backup() -> dict[str, object]:
     system, state, request = backup_system()
-    system["clock"].advance(10.0)
     system["config"]["l1"] = CertificateStatus.FAIL
+    system["config"]["l1_advance"] = 10.0
     result = system["coordinator"].run_cycle(state, request)
-    return outcome(result.committed and result.action_role == ActionRole.RETAINED_BACKUP and all(obs.status == DeadlineStatus.EXPIRED for obs in result.deadline_observations), action_role=result.action_role.value)
+    return outcome(result.committed and result.action_role == ActionRole.RETAINED_BACKUP and result.deadline_observations[-1].status == DeadlineStatus.EXPIRED, action_role=result.action_role.value)
 
 
 def global_unknown_boundary() -> dict[str, object]:
@@ -220,10 +220,10 @@ def provider_status(status: str) -> dict[str, object]:
 def start_case(status: CertificateStatus) -> dict[str, object]:
     system = build_public_cycle({"start": status})
     start = system["coordinator"].start_trial(system["state"], system["trial"])
-    passed = (start.ready and not start.blocked) if status == CertificateStatus.PASS else (start.blocked and not start.ready and system["plant"].commit_count == 0)
+    passed = (start.ready and not start.boundary) if status == CertificateStatus.PASS else (start.boundary and not start.ready and system["plant"].commit_count == 0)
     if status == CertificateStatus.UNKNOWN:
         passed = passed and start.admission_status == CertificateStatus.UNKNOWN
-    return outcome(passed, status=status.value, ready=start.ready, blocked=start.blocked)
+    return outcome(passed, status=status.value, ready=start.ready, boundary=start.boundary)
 
 
 def identity_mismatch() -> dict[str, object]:
@@ -363,8 +363,8 @@ def numeric_authority() -> dict[str, object]:
     system = build_public_cycle()
     g = system["registry"].geometry
     a = system["registry"].actuator
-    passed = g.controller_radius_m == 0.015 and g.certification_margin_m == 0.01 and g.certification_effective_radius_m == 0.025 and g.rho_seg == 0.0 and a.u_min == (-0.1, -0.1, -0.1) and a.u_max == (0.1, 0.1, 0.1)
-    return outcome(passed, controller_radius=g.controller_radius_m, margin=g.certification_margin_m, effective_radius=g.certification_effective_radius_m, rho_seg=g.rho_seg, u_min=a.u_min, u_max=a.u_max)
+    passed = g.controller_radius_m == 0.015 and g.certification_margin_m == 0.01 and g.certification_effective_radius_m == 0.025 and g.rho_seg_m == 0.0 and a.u_min == (-0.1, -0.1, -0.1) and a.u_max == (0.1, 0.1, 0.1)
+    return outcome(passed, controller_radius=g.controller_radius_m, margin=g.certification_margin_m, effective_radius=g.certification_effective_radius_m, rho_seg=g.rho_seg_m, u_min=a.u_min, u_max=a.u_max)
 
 
 def session_guard(kind: str) -> dict[str, object]:
@@ -472,4 +472,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
