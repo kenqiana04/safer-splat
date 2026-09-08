@@ -1,0 +1,26 @@
+{
+  "schema": "TRACE_COMMIT_CORE_REGRESSION_TEST_RESULTS_V2R1",
+  "tests": [
+    {
+      "name": "PR129 implementation tests",
+      "command": "python -m unittest reproduction.runtime.active_runtime_assurance_v2.tests.test_trace_commit_atomicity_v2r1 -q",
+      "tests_run": 28,
+      "passed": 28,
+      "failed": 0,
+      "exit_code": 0,
+      "result": "PASS"
+    },
+    {
+      "name": "current runtime package regression suite",
+      "command": "python -m unittest discover -s reproduction/runtime/active_runtime_assurance_v2/tests -p test_*.py -q",
+      "tests_run": 161,
+      "passed": 161,
+      "failed": 0,
+      "exit_code": 0,
+      "result": "PASS"
+    }
+  ],
+  "full_PR127_96_scenario_reconformance_run": false,
+  "runtime_source_diff_count": 0,
+  "overall": "PASS"
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "TRACE_COMMIT_BYPASS_REVALIDATION_RESULTS_V2R1",
+  "phase": "B",
+  "status": "NOT_RUN_BY_CORE_GATE",
+  "executed": false,
+  "reason": "Phase A was 11/12 because C12 exposed CORE_VALIDATION_EVALUATION_ELIGIBILITY_GAP.",
+  "entry_gate": {
+    "C01_C12_12_of_12": false,
+    "six_lightweight_properties": true,
+    "runtime_regressions": true,
+    "runtime_diff_zero": true,
+    "passed": false
+  },
+  "frozen_protocol": {
+    "path": "reproduction/validation/bypass_qa_trace_identity_repair_v2/BYPASS_EQUIVALENCE_PROTOCOL_V2R1.json",
+    "git_blob_sha1": "3a4adec6d06b43ec53ca60e3bb9a71a0a10c2e40",
+    "raw_git_blob_sha256": "f0206a54551d9fc93ef6a5e5c6a6dbf71c043c7882d0c34030180ca215161c52",
+    "protocol_lock_raw_git_blob_sha256": "ba2079184d5f97b0c7ce58b37c5e31d96da4aa8d507172690424360cd11376f6",
+    "trial_ids": [10, 30, 50, 70, 90],
+    "execution_order": [50, 10, 30, 70, 90]
+  },
+  "pair_count": 0,
+  "real_arm_execution_count": 0,
+  "joined_step_count": 0,
+  "trace_finalization_result": "NOT_RUN_BY_CORE_GATE",
+  "BYPASS_REVALIDATION_REQUIRED": true,
+  "pass_claimed": false
+}

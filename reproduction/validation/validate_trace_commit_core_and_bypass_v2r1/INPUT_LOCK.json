@@ -1,0 +1,92 @@
+{
+  "schema": "TRACE_COMMIT_CORE_AND_BYPASS_V2R1_INPUT_LOCK",
+  "created_at": "2026-09-08T19:18:50.7114322+08:00",
+  "task": "VALIDATE_TRACE_COMMIT_CORE_AND_BYPASS_V2R1",
+  "task_type": "TARGETED_CPU_CORE_VALIDATION_THEN_CONDITIONAL_FROZEN_BYPASS_REVALIDATION",
+  "repository": "kenqiana04/safer-splat",
+  "branch": "validate-trace-commit-core-and-bypass-v2r1",
+  "upstream": {
+    "pull_request": 129,
+    "state": "OPEN",
+    "draft": true,
+    "title": "[Draft] Implement active runtime trace/commit consistency V2R1",
+    "head_branch": "implement-active-runtime-trace-commit-atomicity-v2r1",
+    "head_sha": "ee7a909eecaeb2eb848f372c753d22f3f2679c42",
+    "base_branch": "design-active-runtime-trace-commit-atomicity-v2r1",
+    "base_sha": "d7d2703f305d43661cf24bb818d846a092a67066",
+    "identity_gate": "PASS"
+  },
+  "frozen_design_inputs": [
+    {
+      "path": "reproduction/design/active_runtime_trace_commit_atomicity_v2r1/TRACE_COMMIT_ARCHITECTURE_DECISION_V2R1.json",
+      "git_blob_sha1": "5a8642a78893c916a5333c7bf3ca0df54d3c058f",
+      "sha256_worktree_bytes": "b58c5b2ebd94b3a6508404858edcb06e491c83de5c9ccb1fe1ca38c4db9cfffc"
+    },
+    {
+      "path": "reproduction/design/active_runtime_trace_commit_atomicity_v2r1/TRACE_COMMIT_FAILURE_MODEL_V2R1.json",
+      "git_blob_sha1": "f2810b39e2aa31a3831045b07061de3ba286d4e9",
+      "sha256_worktree_bytes": "133fba5de76974e1306ebc80232df563ba4c07a00c0f4539cc25641c9a5b7d53"
+    },
+    {
+      "path": "reproduction/design/active_runtime_trace_commit_atomicity_v2r1/TRACE_FINALIZATION_RETRY_CONTRACT_V2R1.json",
+      "git_blob_sha1": "63e8ffd4477b9369da6a53ba4109572121a05dfa",
+      "sha256_worktree_bytes": "32b1aa30b01b6aa8e3e71fa618a64a655a0aaa552fb49e06794dd199373671fc"
+    },
+    {
+      "path": "reproduction/design/active_runtime_trace_commit_atomicity_v2r1/TRACE_COMMIT_BYPASS_IMPACT_V2R1.json",
+      "git_blob_sha1": "619ee26054423a565dafdd2c4f3f76fda0e20302",
+      "sha256_worktree_bytes": "25ce0e5690269dbccc6fd168d21a0eecd00c3d9bf080c1a651f3c62fb2508a8a"
+    },
+    {
+      "path": "reproduction/design/active_runtime_trace_commit_atomicity_v2r1/TRACE_COMMIT_ORACLE_COMPATIBILITY_V2R1.json",
+      "git_blob_sha1": "7d1ed05cab690fa8e31f5d0a2ed6147f03ce3903",
+      "sha256_worktree_bytes": "08b8f98e3c9220ac29d59ce063d3e7eda1ca62f75491b212adcbbd6c245ae7e3"
+    }
+  ],
+  "implementation_inputs": {
+    "source_freeze_sha256": "354422cd31842074dea91bb82c61e2c3b421778c4e3f1da0570a31bb9c065523",
+    "diff_audit_sha256": "fc9ec0fd954179c25303424f2fa4ce9a23ba82189b9d4b97b27c63859725bcfd",
+    "test_results_sha256": "1bc5e19db9f703837b1f0ef1d49abb99b9f395be19c950060c3f3ed84839f1cc",
+    "model_results_sha256": "91043554222b0b9347859730516c0846620fef9c5b84216124b031951af67310",
+    "final_decision_sha256": "08b5eda11e9a66b0f74d2eaa0ec544278e26a0f0585a73efe6c660addcbab570",
+    "architecture": "OPTION_B_SOFTWARE_TRANSACTION_STATE_MACHINE",
+    "journal": "JOURNAL_NOT_REQUIRED_FOR_CURRENT_CONTRACT",
+    "implementation_tests": "28/28 PASS",
+    "runtime_regressions": "161/161 PASS",
+    "model_counterexamples": 0,
+    "BYPASS_REVALIDATION_REQUIRED": true
+  },
+  "runtime_source_lock": [
+    {"path": "reproduction/runtime/active_runtime_assurance_v2/commit_transaction.py", "git_blob_sha1": "759e37e25666ef0ccf0a745bb1a59459563ca403", "sha256_worktree_bytes": "24eaee01df314d22d8d232fd7c34fd4735c89d2033718230019ed0ddd55016b0"},
+    {"path": "reproduction/runtime/active_runtime_assurance_v2/active_runner.py", "git_blob_sha1": "313bece54458f97e8ee6a427ab73f2f6c8ee745e", "sha256_worktree_bytes": "7d30ac9d156bca398205196101c30da80c23e86fb6f9da98675dd659dffa6018"},
+    {"path": "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py", "git_blob_sha1": "cca572c76c9bdf3e67bf4272c7fad30c195c87bf", "sha256_worktree_bytes": "1b582abf5ddcc69fa284f504a8ab86879a7714309de7e71f3bc9213f10fbe59e"},
+    {"path": "reproduction/runtime/active_runtime_assurance_v2/trace_writer.py", "git_blob_sha1": "eca56fbee2c65903434e3cbbe38a29b3e764e884", "sha256_worktree_bytes": "e58bc02e68a70a5c548c8c50047d63ce3c5ad4d58cfd44c0ed3bc73b9e413d0c"},
+    {"path": "reproduction/runtime/active_runtime_assurance_v2/runtime_types.py", "git_blob_sha1": "da0fdc6d21f1be25e7674966afdaa101fb53835b", "sha256_worktree_bytes": "d170fd30449c4dcf6a308648593dfaa998211aeabd8ad94e8a1b5870ad5bad42"},
+    {"path": "reproduction/runtime/active_runtime_assurance_v2/supervisor.py", "git_blob_sha1": "173837401de824fcdbdb8b5b7b9d4dfb8bb43037", "sha256_worktree_bytes": "a5c19e4905a4b7a82604a0867e8b5f45497fa79909eecac7e3fcd9e8fe8b728a"},
+    {"path": "reproduction/runtime/active_runtime_assurance_v2/plant_commit.py", "git_blob_sha1": "f9116db0690983252ea0f60d286399b71d644134", "sha256_worktree_bytes": "267051d457b493f293569750c3dd58c6193d2acd86a2009e554d365cdc6853ff"},
+    {"path": "reproduction/runtime/active_runtime_assurance_v2/backup_token_store.py", "git_blob_sha1": "3af371733638bcd6aac9240db38328d9e2f6154f", "sha256_worktree_bytes": "6aa8ed0e69be7694d880f66ad3ee1b9222af0360e90fca5d491482ac4e308700"}
+  ],
+  "frozen_bypass_protocol": {
+    "protocol_path": "reproduction/validation/bypass_qa_trace_identity_repair_v2/BYPASS_EQUIVALENCE_PROTOCOL_V2R1.json",
+    "protocol_git_blob_sha1": "3a4adec6d06b43ec53ca60e3bb9a71a0a10c2e40",
+    "protocol_raw_git_blob_sha256": "f0206a54551d9fc93ef6a5e5c6a6dbf71c043c7882d0c34030180ca215161c52",
+    "protocol_lock_git_blob_sha1": "4178424fb14905c2a2af65108541ab08559f7000",
+    "protocol_lock_raw_git_blob_sha256": "ba2079184d5f97b0c7ce58b37c5e31d96da4aa8d507172690424360cd11376f6",
+    "trial_ids": [10, 30, 50, 70, 90],
+    "execution_order": [50, 10, 30, 70, 90],
+    "arms": ["REFERENCE_CONTROL_PLANT", "ACTIVE_HARNESS_BYPASS"],
+    "fresh_process_per_arm": true,
+    "max_steps_per_trial": 500,
+    "historical_result": "5/5 pairs; 732/732 joined steps; zero mismatch"
+  },
+  "phase_b_entry_gate": "C01-C12 12/12 PASS AND six_properties PASS AND runtime_regressions PASS AND runtime_diff_zero",
+  "phase_b_executed_at_lock_time": false,
+  "prohibited_counts": {
+    "real_active": 0,
+    "gpu": 0,
+    "smoke": 0,
+    "scientific_oracle": 0,
+    "official100": 0,
+    "real_bypass_pairs": 0
+  }
+}

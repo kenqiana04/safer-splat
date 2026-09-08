@@ -1,0 +1,32 @@
+{
+  "schema": "TRACE_COMMIT_CORE_AND_BYPASS_V2R1_DOWNSTREAM_HANDOFF",
+  "status": "BLOCKED",
+  "block_code": "CORE_VALIDATION_EVALUATION_ELIGIBILITY_GAP",
+  "only_next_task": "REPAIR_TRACE_COMMIT_EVALUATION_ELIGIBILITY_GATE_V2R1",
+  "base_branch": "validate-trace-commit-core-and-bypass-v2r1",
+  "problem": "An EVIDENCE_INCOMPLETE trial can be finalized to FINALIZED with a lock/result that does not preserve trial-level evaluation ineligibility.",
+  "minimal_repair_scope": [
+    "preserve incomplete-execution eligibility state across finalization",
+    "make evaluation ineligibility mechanically recoverable from immutable trial-level evidence",
+    "prevent ordinary complete-evaluation admission for incomplete trials"
+  ],
+  "must_preserve": [
+    "PR128 Option B memory-only contract",
+    "confirmed plant execution facts",
+    "TRACE-F02 primary and backup behavior",
+    "TRACE-F03 persistence-before-lock and same-content retry",
+    "BYPASS protocol identity from PR119",
+    "no crash/restart durability claim"
+  ],
+  "must_not_do": [
+    "run Phase B before repaired core validation is 12/12",
+    "run full PR127 milestone reconformance",
+    "run smoke, real ACTIVE, GPU, oracle, or official100",
+    "reinterpret this validation as BYPASS failure"
+  ],
+  "revalidation_after_repair": [
+    "rerun the same fixed C01-C12 targeted core set",
+    "only if 12/12 then run the exact frozen PR119 five-pair BYPASS protocol",
+    "then proceed to REVALIDATE_ACTIVE_RUNTIME_MILESTONE_POST_TRACE_V2R1 only after both phases pass"
+  ]
+}

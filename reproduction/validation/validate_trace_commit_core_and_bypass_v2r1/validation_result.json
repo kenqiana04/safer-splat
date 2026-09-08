@@ -1,0 +1,36 @@
+{
+  "schema": "VALIDATE_TRACE_COMMIT_CORE_AND_BYPASS_V2R1_RESULT",
+  "validator": "TARGETED_MINIMAL_SUFFICIENT_VALIDATION",
+  "checks": [
+    {"id": 1, "name": "PR129 exact identity", "passed": true},
+    {"id": 2, "name": "runtime source diff zero", "passed": true},
+    {"id": 3, "name": "C01-C12 complete", "passed": true},
+    {"id": 4, "name": "C01-C12 12/12 PASS", "passed": false, "observed": "11/12; C12 failed"},
+    {"id": 5, "name": "six core properties PASS", "passed": true, "observed": "6/6"},
+    {"id": 6, "name": "runtime regressions PASS", "passed": true, "observed": "28/28 PR129 and 161/161 runtime"},
+    {"id": 7, "name": "Phase B gate correctly enforced", "passed": true, "observed": "NOT_RUN_BY_CORE_GATE"},
+    {"id": 8, "name": "frozen PR119 protocol reused exactly", "passed": null, "observed": "identity locked; execution prohibited by core gate"},
+    {"id": 9, "name": "BYPASS 5/5 PASS", "passed": null, "observed": "NOT_RUN_BY_CORE_GATE"},
+    {"id": 10, "name": "all joined BYPASS steps exact", "passed": null, "observed": "NOT_RUN_BY_CORE_GATE"},
+    {"id": 11, "name": "BYPASS trace/finalize semantics PASS", "passed": null, "observed": "NOT_RUN_BY_CORE_GATE"},
+    {"id": 12, "name": "failure register empty", "passed": false, "observed": "one failure: CORE_VALIDATION_EVALUATION_ELIGIBILITY_GAP"},
+    {"id": 13, "name": "real ACTIVE/GPU/smoke/oracle/official100 zero", "passed": true},
+    {"id": 14, "name": "downstream task exact", "passed": true, "observed": "REPAIR_TRACE_COMMIT_EVALUATION_ELIGIBILITY_GATE_V2R1"}
+  ],
+  "core_gate": "BLOCK",
+  "phase_b": "NOT_RUN_BY_CORE_GATE",
+  "runtime_source_diff_count": 0,
+  "real_execution_counts": {
+    "active": 0,
+    "gpu": 0,
+    "smoke": 0,
+    "scientific_oracle": 0,
+    "official100": 0,
+    "real_bypass_pairs": 0,
+    "real_bypass_arms": 0
+  },
+  "FINAL_STATUS": "BLOCKED_CORE_VALIDATION_BY_EVALUATION_ELIGIBILITY_GAP",
+  "FINAL_DECISION": "DO_NOT_RUN_BYPASS_AND_REPAIR_TRIAL_LEVEL_EVALUATION_ELIGIBILITY",
+  "block_code": "CORE_VALIDATION_EVALUATION_ELIGIBILITY_GAP",
+  "only_next_task": "REPAIR_TRACE_COMMIT_EVALUATION_ELIGIBILITY_GATE_V2R1"
+}

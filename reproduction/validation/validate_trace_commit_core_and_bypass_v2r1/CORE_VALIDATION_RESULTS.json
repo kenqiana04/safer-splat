@@ -1,0 +1,128 @@
+{
+  "schema": "TRACE_COMMIT_CORE_VALIDATION_RESULTS_V2R1",
+  "phase": "A",
+  "status": "BLOCK",
+  "block_code": "CORE_VALIDATION_EVALUATION_ELIGIBILITY_GAP",
+  "scenario_summary": {
+    "passed": 11,
+    "total": 12,
+    "failed": ["C12"]
+  },
+  "hard_gates": [
+    {"id": "G1", "name": "No uncertified or unintended plant commit", "passed": true},
+    {"id": "G2", "name": "Confirmed commit fact cannot disappear after token or trace failure", "passed": true},
+    {"id": "G3", "name": "Incomplete or unresolved execution evidence makes the session non-ready", "passed": true},
+    {"id": "G4", "name": "Finalize failure publishes no early lock and leaves no runnable session", "passed": true},
+    {"id": "G5", "name": "Incomplete trial remains mechanically evaluation-ineligible", "passed": false, "failure": "C12"}
+  ],
+  "scenarios": [
+    {
+      "id": "C01",
+      "name": "Normal primary commit",
+      "passed": true,
+      "observed": {"plant_calls": 1, "token_present": true, "trace_records": 1, "evidence_status": "COMPLETE", "session": "READY", "next_cycle_index": 1},
+      "source_symbols": ["ActiveCycleCoordinator.run_cycle", "ActiveCommitTransaction.execute"]
+    },
+    {
+      "id": "C02",
+      "name": "Normal retained-backup commit",
+      "passed": true,
+      "observed": {"action_role": "RETAINED_BACKUP", "plant_delta": 1, "cursor_before": 0, "cursor_after": 1, "trace_delta": 1, "evidence_status": "COMPLETE"},
+      "source_symbols": ["ActiveCycleCoordinator.run_cycle", "BackupTokenStore.consume_after_backup_commit"]
+    },
+    {
+      "id": "C03",
+      "name": "Assurance boundary",
+      "passed": true,
+      "observed": {"plant_calls": 0, "token_present": false, "trace_records": 1, "boundary": true, "commit_receipt": false, "next_state": false, "evidence_status": "NO_ACTION_COMPLETE"},
+      "source_symbols": ["ActiveCommitTransaction.execute", "ActiveCycleCoordinator._commit_or_boundary"]
+    },
+    {
+      "id": "C04",
+      "name": "Plant outcome unresolved",
+      "passed": true,
+      "observed": {"plant_calls": 1, "committed": null, "plant_outcome": "UNRESOLVED", "evidence_status": "PLANT_OUTCOME_UNRESOLVED", "session": "RECOVERY_REQUIRED", "retry_allowed": false, "trace_status": "NOT_ATTEMPTED"},
+      "source_symbols": ["ActiveCommitTransaction.execute", "ActiveCycleCoordinator._commit_or_boundary"]
+    },
+    {
+      "id": "C05",
+      "name": "Navigation token failure after confirmed commit",
+      "passed": true,
+      "observed": {"committed": true, "receipt_preserved": true, "post_state_preserved": true, "executed_identity_preserved": true, "evidence_status": "COMMITTED_TOKEN_INCOMPLETE", "token_status": "INCOMPLETE", "trace_status": "INCOMPLETE", "session": "EVIDENCE_INCOMPLETE"},
+      "source_symbols": ["ActiveCommitTransaction.execute", "BackupTokenStore.prepare"]
+    },
+    {
+      "id": "C06",
+      "name": "Backup-token consume failure after confirmed commit",
+      "passed": true,
+      "observed": {"action_role": "RETAINED_BACKUP", "plant_delta": 1, "committed": true, "receipt_preserved": true, "post_state_preserved": true, "executed_identity_preserved": true, "evidence_status": "COMMITTED_TOKEN_INCOMPLETE", "session": "EVIDENCE_INCOMPLETE"},
+      "source_symbols": ["ActiveCommitTransaction.execute", "BackupTokenStore.consume_after_backup_commit"]
+    },
+    {
+      "id": "C07",
+      "name": "TRACE-F02 primary",
+      "passed": true,
+      "observed": {"committed": true, "receipt_preserved": true, "post_state_preserved": true, "executed_identity_preserved": true, "token_present": true, "evidence_status": "COMMITTED_TRACE_INCOMPLETE", "trace_status": "INCOMPLETE", "trace_ref": null, "session": "EVIDENCE_INCOMPLETE", "next_cycle_rejected": true, "plant_calls_after_rejected_retry": 1},
+      "source_symbols": ["ActiveCommitTransaction.execute", "TraceWriter.append", "ActiveCycleCoordinator.run_cycle"]
+    },
+    {
+      "id": "C08",
+      "name": "TRACE-F02 retained backup",
+      "passed": true,
+      "observed": {"action_role": "RETAINED_BACKUP", "plant_delta": 1, "committed": true, "receipt_preserved": true, "post_state_preserved": true, "executed_identity_preserved": true, "cursor_before": 0, "cursor_after": 1, "evidence_status": "COMMITTED_TRACE_INCOMPLETE", "trace_status": "INCOMPLETE", "trace_ref": null, "session": "EVIDENCE_INCOMPLETE"},
+      "source_symbols": ["ActiveCommitTransaction.execute", "BackupTokenStore.consume_after_backup_commit", "TraceWriter.append"]
+    },
+    {
+      "id": "C09",
+      "name": "No-action trace failure",
+      "passed": true,
+      "observed": {"plant_calls": 0, "committed": false, "receipt": false, "post_state": false, "evidence_status": "NO_ACTION_TRACE_INCOMPLETE", "trace_status": "INCOMPLETE", "session": "EVIDENCE_INCOMPLETE"},
+      "source_symbols": ["ActiveCommitTransaction.execute", "ActiveCycleCoordinator._commit_or_boundary"]
+    },
+    {
+      "id": "C10",
+      "name": "TRACE-F03 finalize failure",
+      "passed": true,
+      "observed": {"status": "FINALIZATION_INCOMPLETE", "records_frozen": true, "lock_published": false, "session": "FINALIZATION_FAILED", "append_rejected": true, "run_cycle_rejected": true},
+      "source_symbols": ["TraceWriter.finalize", "ActiveRunner.finalize_trace_result", "ActiveCycleCoordinator.finalize_trial"]
+    },
+    {
+      "id": "C11",
+      "name": "Same-content finalize retry",
+      "passed": true,
+      "observed": {"first_status": "FINALIZATION_INCOMPLETE", "second_status": "FINALIZED", "same_content_hash": true, "same_frozen_records": true, "plant_calls_unchanged": true, "session": "FINALIZED"},
+      "source_symbols": ["TraceWriter.finalize", "ActiveCycleCoordinator.finalize_trial"]
+    },
+    {
+      "id": "C12",
+      "name": "Evidence-incomplete evaluation gate",
+      "passed": false,
+      "expected": "An EVIDENCE_INCOMPLETE trial remains mechanically EVALUATION_INELIGIBLE after any finalize attempt.",
+      "observed": {
+        "origin_evidence_status": "COMMITTED_TRACE_INCOMPLETE",
+        "session_before_finalize": "EVIDENCE_INCOMPLETE",
+        "finalization_status": "FINALIZED",
+        "trace_lock_published": true,
+        "trace_lock_record_count": 0,
+        "session_after_finalize": "FINALIZED",
+        "durable_ineligibility_marker": false,
+        "evaluation_ineligible_proven": false,
+        "trial_trace_lock_fields": ["identity", "trial_id", "record_count", "trace_sha256", "schema_identity", "locked_before_evaluation"],
+        "trial_finalization_result_fields": ["status", "trace_lock", "content_hash", "failure_reason", "retry_allowed", "recovery_required"]
+      },
+      "source_symbols": ["ActiveCycleCoordinator.finalize_trial", "TraceWriter.finalize", "TrialTraceLock", "TrialFinalizationResult"],
+      "diagnosis": "finalize_trial accepts an EVIDENCE_INCOMPLETE session; a successful empty-record finalization replaces the session state with FINALIZED, while neither the lock nor the finalization result preserves the prior incomplete-execution fact"
+    }
+  ],
+  "lightweight_properties": [
+    {"id": "P01", "name": "no committed+trace_incomplete+READY", "passed": true},
+    {"id": "P02", "name": "no token_incomplete+READY", "passed": true},
+    {"id": "P03", "name": "no plant_unresolved+READY", "passed": true},
+    {"id": "P04", "name": "no finalization_failed+READY", "passed": true},
+    {"id": "P05", "name": "no boundary plant", "passed": true},
+    {"id": "P06", "name": "no confirmed commit fact loss", "passed": true}
+  ],
+  "property_summary": {"passed": 6, "total": 6},
+  "runtime_mutation_count": 0,
+  "phase_b_authorized": false
+}
