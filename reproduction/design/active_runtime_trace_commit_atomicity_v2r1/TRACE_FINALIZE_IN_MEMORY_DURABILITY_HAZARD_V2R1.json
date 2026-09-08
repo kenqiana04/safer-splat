@@ -1,0 +1,24 @@
+{
+  "confirmed": true,
+  "design_resolution_for_selected_architecture": [
+    "do not publish candidate lock before configured persistence completes",
+    "freeze records before persistence attempt",
+    "return typed FINALIZATION_INCOMPLETE",
+    "move session to FINALIZATION_FAILED",
+    "permit only same-trial same-content evidence-only idempotent retry"
+  ],
+  "does_not_claim": [
+    "fsync durability",
+    "atomic rename",
+    "crash recovery",
+    "physical transactionality"
+  ],
+  "hazard": "a disk failure after self._lock assignment causes a later finalize call to return the cached lock without proving either durable artifact exists",
+  "schema": "TRACE_FINALIZE_IN_MEMORY_DURABILITY_HAZARD_V2R1",
+  "sequence": [
+    "compute lines/hash",
+    "assign self._lock",
+    "write runtime_trace.jsonl",
+    "write runtime_trace_lock.json"
+  ]
+}

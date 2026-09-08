@@ -1,0 +1,15 @@
+{
+  "BYPASS_REVALIDATION_REQUIRED": true,
+  "active_commit_transaction": "ACTIVE_ONLY",
+  "bypass_execution_policy_change_authorized": false,
+  "decision": "SHARED_TRACE_FINALIZATION_CHANGE",
+  "required_downstream_order": [
+    "IMPLEMENT_ACTIVE_RUNTIME_TRACE_COMMIT_ATOMICITY_V2R1",
+    "VALIDATE_ACTIVE_RUNTIME_TRACE_COMMIT_ATOMICITY_V2R1",
+    "REVALIDATE_ACTIVE_HARNESS_BYPASS_EQUIVALENCE_AFTER_TRACE_COMMIT_V2R1",
+    "REVALIDATE_ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_V2_POST_TRACE_REPAIR",
+    "ACTIVE_RUNTIME_SMOKE_V2 only after full PASS and separate authorization"
+  ],
+  "schema": "TRACE_COMMIT_BYPASS_IMPACT_V2R1",
+  "shared_change": "TraceWriter finalization lock-publication and typed failure semantics are shared by ACTIVE and BYPASS"
+}

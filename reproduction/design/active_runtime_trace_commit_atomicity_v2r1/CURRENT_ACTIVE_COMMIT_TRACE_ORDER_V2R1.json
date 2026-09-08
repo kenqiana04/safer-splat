@@ -1,0 +1,70 @@
+{
+  "actual_order": [
+    "SupervisorDecision",
+    "PlantCommitAdapter.commit",
+    "BackupTokenStore.prepare_and_activate_OR_consume",
+    "TraceWriter.append",
+    "return_CommitReceipt"
+  ],
+  "physical_atomicity_claim": false,
+  "schema": "CURRENT_ACTIVE_COMMIT_TRACE_ORDER_V2R1",
+  "source": "active_runner.py:commit_active_decision",
+  "steps": [
+    {
+      "durable": false,
+      "evidence": "selection/routing fact",
+      "index": 1,
+      "irreversible": false,
+      "may_raise": false,
+      "owner": "Supervisor",
+      "rollback_authority": "none required",
+      "state_mutation": false,
+      "step": "SupervisorDecision"
+    },
+    {
+      "durable": false,
+      "evidence": "CommitReceipt",
+      "index": 2,
+      "irreversible": "operationally yes once committed",
+      "may_raise": "authority validation may raise; transition exception returns committed=false",
+      "owner": "PlantCommitAdapter",
+      "rollback_authority": "none",
+      "state_mutation": "plant/dynamics side effect",
+      "step": "PlantCommitAdapter.commit"
+    },
+    {
+      "durable": false,
+      "evidence": "token object only",
+      "index": 3,
+      "irreversible": "software state mutation",
+      "may_raise": true,
+      "owner": "BackupTokenStore",
+      "rollback_authority": "no physical rollback; no automatic token rollback",
+      "state_mutation": true,
+      "step": "token mutation"
+    },
+    {
+      "durable": false,
+      "evidence": "TraceStepRecord",
+      "index": 4,
+      "irreversible": "append-only memory fact",
+      "may_raise": true,
+      "owner": "TraceWriter",
+      "rollback_authority": "none",
+      "state_mutation": true,
+      "step": "TraceWriter.append"
+    },
+    {
+      "durable": false,
+      "evidence": "receipt returned only if earlier steps did not raise",
+      "index": 5,
+      "irreversible": false,
+      "may_raise": false,
+      "owner": "ActiveRunner",
+      "rollback_authority": "none",
+      "state_mutation": false,
+      "step": "return"
+    }
+  ],
+  "trace_f02_window": "confirmed plant and token side effects occur before a raising trace append, so the receipt is not returned to the coordinator"
+}

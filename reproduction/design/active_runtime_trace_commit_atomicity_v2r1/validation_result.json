@@ -1,0 +1,209 @@
+{
+  "check_count": 40,
+  "checks": [
+    {
+      "detail": null,
+      "name": "01 PR127 exact",
+      "passed": true
+    },
+    {
+      "detail": [],
+      "name": "02 runtime diff zero",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "03 TRACE-F02 preserved",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "04 TRACE-F03 preserved",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "05 current ordering reconstructed",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "06 finalize ordering reconstructed",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "07 failure model complete",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "08 A/B/C compared",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "09 architecture mechanically selected",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "10 no physical atomicity overclaim",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "11 no-silent-untraced property",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "12 no fake rollback",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "13 plant outcome unresolved",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "14 typed transaction result",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "15 evidence status complete",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "16 session non-ready semantics",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "17 token semantics",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "18 trace failure semantics",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "19 boundary failure semantics",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "20 finalize failure semantics",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "21 retry policy",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "22 memory/durable split",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "23 smoke durability decision",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "24 journal decision justified",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "25 lock hazard resolved in design",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "26 ownership",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "27 module shape",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "28 BYPASS impact",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "29 oracle impact",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "30 fault matrix",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "31 formal property",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "32 invariants",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "33 future tests",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "34 scenarios",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "35 model counterexamples zero",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "36 implementation manifest",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "37 real counts zero",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "38 only next implementation task",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "39 execution lock valid",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "40 selected option sufficient not maximal",
+      "passed": true
+    }
+  ],
+  "failed_count": 0,
+  "passed_count": 40,
+  "schema": "TRACE_COMMIT_CONSISTENCY_DESIGN_V2R1_VALIDATION",
+  "status": "PASS_TRACE_COMMIT_CONSISTENCY_DESIGN_V2R1_VALIDATION"
+}

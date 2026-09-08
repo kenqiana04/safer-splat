@@ -1,0 +1,18 @@
+{
+  "BYPASS_REVALIDATION_REQUIRED": true,
+  "FINAL_DECISION": "FREEZE_TRACE_COMMIT_CONSISTENCY_V2R1_AND_ADVANCE_IMPLEMENTATION",
+  "FINAL_STATUS": "PASS_ACTIVE_RUNTIME_TRACE_COMMIT_ATOMICITY_V2R1_DESIGN",
+  "Only next task": "IMPLEMENT_ACTIVE_RUNTIME_TRACE_COMMIT_ATOMICITY_V2R1",
+  "execution_counts": {
+    "gpu": 0,
+    "official100": 0,
+    "oracle": 0,
+    "real_active": 0,
+    "real_bypass": 0,
+    "smoke": 0
+  },
+  "journal": "JOURNAL_NOT_REQUIRED_FOR_CURRENT_CONTRACT",
+  "schema": "TRACE_COMMIT_DESIGN_V2R1_FINAL_DECISION",
+  "selected_architecture": "OPTION_B_SOFTWARE_TRANSACTION_STATE_MACHINE",
+  "smoke_durability_decision": "SMOKE_ALLOWED_WITH_MEMORY_ONLY_FAIL_CLOSE"
+}

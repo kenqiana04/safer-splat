@@ -1,0 +1,28 @@
+{
+  "allowed_only_if": [
+    "record set frozen",
+    "same trial identity",
+    "same canonical record content hash",
+    "no new cycle or append",
+    "failure is evidence-only persistence failure",
+    "no plant operation occurs"
+  ],
+  "automatic_retry": false,
+  "on_failure": [
+    "return/raise typed FINALIZATION_INCOMPLETE",
+    "session -> FINALIZATION_FAILED",
+    "append disabled",
+    "run_cycle disabled",
+    "retain frozen content hash"
+  ],
+  "on_first_attempt": [
+    "session READY/BLOCKED -> FINALIZING",
+    "freeze records and candidate hash",
+    "persist according to configured memory-only/output mode",
+    "publish lock only after configured persistence succeeds"
+  ],
+  "on_retry_identity_mismatch": "RECOVERY_REQUIRED; no retry",
+  "on_retry_success": "session -> FINALIZED with same content-addressed lock",
+  "schema": "TRACE_FINALIZATION_RETRY_CONTRACT_V2R1",
+  "selected_policy": "IDEMPOTENT_RETRY"
+}

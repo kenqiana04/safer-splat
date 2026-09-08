@@ -1,0 +1,18 @@
+{
+  "decision": "SMOKE_ALLOWED_WITH_MEMORY_ONLY_FAIL_CLOSE",
+  "excluded_claims": [
+    "crash durability",
+    "restart recovery",
+    "hardware acknowledgement persistence",
+    "real-time guarantee",
+    "scientific efficacy"
+  ],
+  "preconditions": [
+    "implementation validation PASS",
+    "BYPASS revalidation if shared semantics changed",
+    "full post-trace contract reconformance PASS",
+    "separate smoke authorization"
+  ],
+  "reason": "The separately authorized engineering smoke evaluates in-process orchestration and typed fail-close behavior; process restart/crash recovery is not in its frozen evidence scope. Any incomplete trace remains evaluation-ineligible and stops the session.",
+  "schema": "TRACE_COMMIT_SMOKE_DURABILITY_DECISION_V2R1"
+}

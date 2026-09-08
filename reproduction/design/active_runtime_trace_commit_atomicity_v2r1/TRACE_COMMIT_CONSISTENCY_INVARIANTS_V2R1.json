@@ -1,0 +1,145 @@
+{
+  "invariants": [
+    {
+      "id": "TCC-01",
+      "required": true,
+      "statement": "design-only; runtime diff is zero"
+    },
+    {
+      "id": "TCC-02",
+      "required": true,
+      "statement": "A/B/C compared without preselection"
+    },
+    {
+      "id": "TCC-03",
+      "required": true,
+      "statement": "no physical ACID claim"
+    },
+    {
+      "id": "TCC-04",
+      "required": true,
+      "statement": "selected is not executed until plant confirmation"
+    },
+    {
+      "id": "TCC-05",
+      "required": true,
+      "statement": "commit receipt preserved"
+    },
+    {
+      "id": "TCC-06",
+      "required": true,
+      "statement": "trace failure cannot erase execution fact"
+    },
+    {
+      "id": "TCC-07",
+      "required": true,
+      "statement": "token failure is typed"
+    },
+    {
+      "id": "TCC-08",
+      "required": true,
+      "statement": "trace failure is typed"
+    },
+    {
+      "id": "TCC-09",
+      "required": true,
+      "statement": "unresolved plant outcome is typed"
+    },
+    {
+      "id": "TCC-10",
+      "required": true,
+      "statement": "no automatic plant retry"
+    },
+    {
+      "id": "TCC-11",
+      "required": true,
+      "statement": "no fake rollback"
+    },
+    {
+      "id": "TCC-12",
+      "required": true,
+      "statement": "no fake safe stop"
+    },
+    {
+      "id": "TCC-13",
+      "required": true,
+      "statement": "incomplete evidence gives non-ready session"
+    },
+    {
+      "id": "TCC-14",
+      "required": true,
+      "statement": "finalize failure gives non-ready session"
+    },
+    {
+      "id": "TCC-15",
+      "required": true,
+      "statement": "boundary trace failure has zero plant"
+    },
+    {
+      "id": "TCC-16",
+      "required": true,
+      "statement": "token authority unchanged"
+    },
+    {
+      "id": "TCC-17",
+      "required": true,
+      "statement": "plant authority unchanged"
+    },
+    {
+      "id": "TCC-18",
+      "required": true,
+      "statement": "Supervisor authority unchanged"
+    },
+    {
+      "id": "TCC-19",
+      "required": true,
+      "statement": "oracle posthoc only"
+    },
+    {
+      "id": "TCC-20",
+      "required": true,
+      "statement": "BYPASS impact explicit"
+    },
+    {
+      "id": "TCC-21",
+      "required": true,
+      "statement": "memory-only capability explicit"
+    },
+    {
+      "id": "TCC-22",
+      "required": true,
+      "statement": "durable capability explicit"
+    },
+    {
+      "id": "TCC-23",
+      "required": true,
+      "statement": "smoke durability requirement explicit"
+    },
+    {
+      "id": "TCC-24",
+      "required": true,
+      "statement": "finalize retry explicit"
+    },
+    {
+      "id": "TCC-25",
+      "required": true,
+      "statement": "process-crash boundary explicit"
+    },
+    {
+      "id": "TCC-26",
+      "required": true,
+      "statement": "minimum sufficient architecture chosen"
+    },
+    {
+      "id": "TCC-27",
+      "required": true,
+      "statement": "future implementation tests frozen"
+    },
+    {
+      "id": "TCC-28",
+      "required": true,
+      "statement": "post-implementation reconformance required"
+    }
+  ],
+  "schema": "TRACE_COMMIT_CONSISTENCY_INVARIANTS_V2R1"
+}

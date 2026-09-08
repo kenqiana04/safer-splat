@@ -1,0 +1,13 @@
+{
+  "authority_changes": "NONE",
+  "owners": {
+    "ActiveCycleCoordinator": "consumes typed transaction result and owns session lifecycle; no plant/token/trace transaction implementation",
+    "ActiveRunner": "commit/evidence sequencing owner delegated to active-only CommitTransaction helper",
+    "BackupTokenStore": "sole token mutation authority",
+    "Oracle": "posthoc read-only evaluator of complete locked traces only",
+    "PlantCommitAdapter": "sole plant execution authority",
+    "Supervisor": "selection and routing only",
+    "TraceWriter": "trace validation, append, freeze, and finalization authority"
+  },
+  "schema": "TRACE_COMMIT_AUTHORITY_OWNERSHIP_V2R1"
+}

@@ -1,0 +1,41 @@
+{
+  "journal_decision": "JOURNAL_NOT_REQUIRED_FOR_CURRENT_CONTRACT",
+  "journal_upgrade_triggers": [
+    "formal experiment requires process-crash recovery",
+    "restart reconciliation enters runtime theorem scope",
+    "hardware execution acknowledgement must survive process restart"
+  ],
+  "physical_atomicity_claim": false,
+  "schema": "TRACE_COMMIT_ARCHITECTURE_DECISION_V2R1",
+  "selected": "OPTION_B_SOFTWARE_TRANSACTION_STATE_MACHINE",
+  "selection_method": {
+    "excluded_requirement": "process crash/restart recovery is not in the current smoke theorem or frozen runtime contract",
+    "mandatory": [
+      "close TRACE-F02",
+      "close TRACE-F03",
+      "preserve execution fact",
+      "typed plant outcome unresolved",
+      "session fail-close",
+      "explicit token/trace/finalization stages"
+    ],
+    "minimize": [
+      "new modules",
+      "durability assumptions",
+      "BYPASS coupling"
+    ]
+  },
+  "transaction_states": [
+    "PREPARED",
+    "PLANT_ATTEMPTED",
+    "PLANT_NOT_COMMITTED",
+    "PLANT_OUTCOME_UNRESOLVED",
+    "COMMITTED",
+    "TOKEN_APPLIED",
+    "TRACE_RECORDED",
+    "COMPLETE",
+    "EVIDENCE_INCOMPLETE",
+    "RECOVERY_REQUIRED"
+  ],
+  "why_not_A": "A can catch same-process exceptions but does not provide the explicit ordered transaction-state evidence needed to distinguish committed/token-applied/trace-recorded and recovery-required states mechanically.",
+  "why_not_C": "C adds filesystem durability and restart reconciliation assumptions not required for the currently authorized engineering smoke or frozen evaluation boundary."
+}

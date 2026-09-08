@@ -1,0 +1,66 @@
+{
+  "evidence_sha256": {
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/POST_R2_ACTIVE_RECONFORMANCE_EXECUTION_LOCK.json": "0e137f6cd464d6fe5d655fa98a7fce07d0c2777fb4f30efabd4344b9e660dbef",
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/POST_R2_ACTIVE_RECONFORMANCE_INPUT_LOCK.json": "df0c552d57441da68941be58c4f96c1228d3275995fa2471707269c90f57738e",
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/POST_R2_ACTIVE_RUNTIME_COUNTEREXAMPLES_V2.json": "d859e9b7989ffad1a54a2e51a117e57ed283f384712b3c859fe84fc01d6d58b1",
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/POST_R2_CONFORMANCE_FAILURE_REGISTER_V2.csv": "e0f809f9b2995826ae5cfd21266f29d3cbc55cad2dde3952a671605483530e40",
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/POST_R2_CONFORMANCE_SCENARIO_RESULTS_V2.json": "d3d779c2d55a1ae611372e163f87b1c54f81727aab03d20911993c590d8a3fa2",
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/POST_R2_TRACE_FAULT_SEMANTICS_V2.json": "bf9235cbd929bff3b9eae50fb27a1fd4ad499585db05f678b730cfdf9028a894",
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/post_r2_active_runtime_contract_conformance_review.json": "1a1263381d56955c245f92cea4821fd4e2ec73b1830bdcf90a9a5807bdb5af22",
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/report/REPORT_REVALIDATE_ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_V2_POST_R2.md": "936c2c51c5e8f91f45797db45c2a2c25789254960e0d4ef0baae1529aa72cdd4",
+    "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/validation_result.json": "7bfc65a172a12b9068918f5b3af6c792522d0dbfd4dbaed034177d86c7a6b786"
+  },
+  "execution_counts": {
+    "gpu": 0,
+    "official100": 0,
+    "oracle": 0,
+    "real_active": 0,
+    "real_bypass": 0,
+    "smoke": 0
+  },
+  "frozen_authority_pr_heads": {
+    "PR107": "a60665f3e29085cc18f1ee03828198074f52e4f0",
+    "PR112": "8b47c5c9af05bbb022af4a964a6c8989231bc1bc",
+    "PR114": "c924a959b1aa18b446a1d3c85afbe4f897604a84",
+    "PR115": "44111d32031409338058e5da2f7e7a1f8d873323",
+    "PR119": "b4ff579cf6a2bcffd0661cd39eb925aa4f3a5d27",
+    "PR121": "4148e671128444d357ea33f6e5c15d0dd2928411"
+  },
+  "frozen_findings": {
+    "closed_defects": [
+      "D-AUTH-001",
+      "D-TRANS-001",
+      "D-EXC-001",
+      "D-ALT-001"
+    ],
+    "remaining_blocker": "R-TRACE-001",
+    "runtime_correction": 0,
+    "scenario_sweep": "94/96",
+    "trace_faults": [
+      "TRACE-F02",
+      "TRACE-F03"
+    ]
+  },
+  "pr127": {
+    "base_branch": "repair-active-runtime-exception-and-unknown-routing-v2",
+    "base_sha": "c38a51310767669e51ef6c87307c831405221277",
+    "branch": "revalidate-active-runtime-contract-conformance-v2-post-r2",
+    "draft": true,
+    "head": "72215ffb1b0a0bc9e7cc94155117ac8624ed0aa6",
+    "number": 127,
+    "state": "OPEN",
+    "title": "[Draft] Revalidate active runtime contract conformance V2 after R1/R2"
+  },
+  "runtime_blob_sha1": {
+    "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py": "427e0cb2948f275d8117bcc8dd2171de42a016ca",
+    "reproduction/runtime/active_runtime_assurance_v2/active_runner.py": "64b747656b031881123c92587d1beca6e742be5e",
+    "reproduction/runtime/active_runtime_assurance_v2/backup_token_store.py": "3af371733638bcd6aac9240db38328d9e2f6154f",
+    "reproduction/runtime/active_runtime_assurance_v2/plant_commit.py": "f9116db0690983252ea0f60d286399b71d644134",
+    "reproduction/runtime/active_runtime_assurance_v2/runtime_types.py": "af259b5ae27ae581ca247a127777f22ef86e7bfe",
+    "reproduction/runtime/active_runtime_assurance_v2/trace_writer.py": "f7d1c768a28d36ab1ef88614bd01c8722e9ea292"
+  },
+  "runtime_mutation_authority": false,
+  "schema": "TRACE_COMMIT_DESIGN_V2R1_INPUT_LOCK",
+  "scientific_result_mutation_authority": false,
+  "task": "DESIGN_ACTIVE_RUNTIME_TRACE_COMMIT_ATOMICITY_V2R1"
+}

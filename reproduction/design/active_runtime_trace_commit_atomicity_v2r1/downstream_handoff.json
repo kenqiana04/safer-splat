@@ -1,0 +1,28 @@
+{
+  "future_files": [
+    "commit_transaction.py",
+    "runtime_types.py (additive)",
+    "active_runner.py",
+    "active_cycle.py",
+    "trace_writer.py",
+    "tests/test_trace_commit_atomicity_v2r1.py"
+  ],
+  "must_preserve": [
+    "Supervisor authority",
+    "PlantCommitAdapter authority",
+    "BackupTokenStore authority",
+    "oracle isolation",
+    "execution facts",
+    "no automatic replay"
+  ],
+  "only_next_task": "IMPLEMENT_ACTIVE_RUNTIME_TRACE_COMMIT_ATOMICITY_V2R1",
+  "post_implementation_ladder": [
+    "VALIDATE_ACTIVE_RUNTIME_TRACE_COMMIT_ATOMICITY_V2R1",
+    "REVALIDATE_ACTIVE_HARNESS_BYPASS_EQUIVALENCE_AFTER_TRACE_COMMIT_V2R1",
+    "REVALIDATE_ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_V2_POST_TRACE_REPAIR",
+    "ACTIVE_RUNTIME_SMOKE_V2 after full PASS and separate authorization"
+  ],
+  "schema": "TRACE_COMMIT_DESIGN_V2R1_DOWNSTREAM_HANDOFF",
+  "selected_architecture": "OPTION_B_SOFTWARE_TRANSACTION_STATE_MACHINE",
+  "status": "READY_FOR_IMPLEMENTATION_ONLY"
+}
