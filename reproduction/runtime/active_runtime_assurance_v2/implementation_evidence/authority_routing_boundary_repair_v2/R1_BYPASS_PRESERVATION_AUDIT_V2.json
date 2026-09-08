@@ -1,0 +1,48 @@
+{
+  "BYPASS_REVALIDATION_REQUIRED": false,
+  "active_runner_unchanged": true,
+  "backup_token_store_unchanged": true,
+  "methods": {
+    "arbitrate": {
+      "post": {
+        "ast_sha256": "d71adeb79e622256a3113506b07b76bf4a9617252d2406ed90d153c1794599a3",
+        "source_sha256": "eea2968a85c563367e4b6ccdf88a54405672b0788fe00df9e2f9c12c7260badf"
+      },
+      "pre": {
+        "ast_sha256": "d71adeb79e622256a3113506b07b76bf4a9617252d2406ed90d153c1794599a3",
+        "source_sha256": "eea2968a85c563367e4b6ccdf88a54405672b0788fe00df9e2f9c12c7260badf"
+      },
+      "unchanged": true
+    },
+    "bypass_decision": {
+      "post": {
+        "ast_sha256": "44e08edc0ea4c18d259d2e35faa4a4e022b4c7434162b30708ef412c6143adf0",
+        "source_sha256": "e2744698d34c8c63ce762308f49cbfea64fdf8d1f98fe9b5a3c27659f91f561a"
+      },
+      "pre": {
+        "ast_sha256": "44e08edc0ea4c18d259d2e35faa4a4e022b4c7434162b30708ef412c6143adf0",
+        "source_sha256": "e2744698d34c8c63ce762308f49cbfea64fdf8d1f98fe9b5a3c27659f91f561a"
+      },
+      "unchanged": true
+    },
+    "certify_candidate": {
+      "post": {
+        "ast_sha256": "56df2c46a96b846c7a6ad42e836674470ae429656df650546e9997691341f33f",
+        "source_sha256": "597220f01c115ecec4a363864bd1dad56e28f6983477d839c54b26efac0fb7dc"
+      },
+      "pre": {
+        "ast_sha256": "56df2c46a96b846c7a6ad42e836674470ae429656df650546e9997691341f33f",
+        "source_sha256": "597220f01c115ecec4a363864bd1dad56e28f6983477d839c54b26efac0fb7dc"
+      },
+      "unchanged": true
+    }
+  },
+  "new_route_api_called_by_bypass": false,
+  "plant_commit_unchanged": true,
+  "preserved_evidence": "PR119 upstream synthetic/fresh-pair evidence remains read-only",
+  "real_bypass_pair_count": 0,
+  "schema": "R1_BYPASS_PRESERVATION_AUDIT_V2",
+  "status": "PASS_PRESERVED",
+  "terminal_runtime_unchanged": true,
+  "trace_writer_unchanged": true
+}

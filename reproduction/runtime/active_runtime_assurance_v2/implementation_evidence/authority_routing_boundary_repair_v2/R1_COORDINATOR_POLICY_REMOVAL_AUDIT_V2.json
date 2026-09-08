@@ -1,0 +1,30 @@
+{
+  "r2_untouched": [
+    "D-EXC-001",
+    "D-ALT-001"
+  ],
+  "remaining_coordinator_operations": [
+    "raw fact collection",
+    "typed event encoding",
+    "deadline observation pass-through",
+    "Supervisor.route_transition dispatch",
+    "Supervisor.arbitrate invocation",
+    "ActiveRunner commit/boundary invocation"
+  ],
+  "removed_policy_derivations": [
+    "alternative search permission",
+    "deadline post-expiry branch",
+    "navigation_timely candidate suppression",
+    "coordinator repeated-state RoutingDecision construction"
+  ],
+  "schema": "R1_COORDINATOR_POLICY_REMOVAL_AUDIT_V2",
+  "source_assertions": {
+    "alternative_search_allowed": false,
+    "deadline_path_branch": false,
+    "direct_policy_routing_decision": false,
+    "navigation_ready": false,
+    "navigation_timely": false,
+    "terminal_ready": false
+  },
+  "status": "PASS"
+}

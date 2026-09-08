@@ -1,0 +1,151 @@
+{
+  "probe_count": 24,
+  "probes": [
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "L2 FAIL + OPEN + backup valid",
+      "probe_id": "R1-P-01",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "L2 FAIL + WARNING + backup valid",
+      "probe_id": "R1-P-02",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "L2 FAIL + EXPIRED + backup valid",
+      "probe_id": "R1-P-03",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "L3 FAIL + OPEN",
+      "probe_id": "R1-P-04",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "L3 FAIL + WARNING",
+      "probe_id": "R1-P-05",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "L3 FAIL + EXPIRED",
+      "probe_id": "R1-P-06",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "certified candidate + OPEN",
+      "probe_id": "R1-P-07",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "certified candidate + WARNING",
+      "probe_id": "R1-P-08",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "certified candidate + EXPIRED",
+      "probe_id": "R1-P-09",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "backup valid + primary evidence preserved",
+      "probe_id": "R1-P-10",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "backup invalid",
+      "probe_id": "R1-P-11",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "backup none",
+      "probe_id": "R1-P-12",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "Supervisor routes ALT_SEARCH",
+      "probe_id": "R1-P-13",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "Supervisor routes ARB_BACKUP",
+      "probe_id": "R1-P-14",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "Supervisor routes ARB_TERMINAL",
+      "probe_id": "R1-P-15",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "Supervisor routes ARB_BOUNDARY",
+      "probe_id": "R1-P-16",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "same destination/different metadata fixture A",
+      "probe_id": "R1-P-17",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "same destination/different metadata fixture B",
+      "probe_id": "R1-P-18",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "missing route",
+      "probe_id": "R1-P-19",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "ambiguous route",
+      "probe_id": "R1-P-20",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "repeated-state guard",
+      "probe_id": "R1-P-21",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "commit_allowed false metadata",
+      "probe_id": "R1-P-22",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "theorem interpretation round-trip",
+      "probe_id": "R1-P-23",
+      "real_rollout": false
+    },
+    {
+      "execution": "CPU_DETERMINISTIC_SYNTHETIC",
+      "name": "BYPASS static preservation",
+      "probe_id": "R1-P-24",
+      "real_rollout": false
+    }
+  ],
+  "schema": "R1_PROBE_MANIFEST_V2",
+  "scientific_data": false
+}

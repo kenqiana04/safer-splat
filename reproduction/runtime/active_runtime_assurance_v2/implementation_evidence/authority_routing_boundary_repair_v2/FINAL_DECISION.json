@@ -1,0 +1,22 @@
+{
+  "BYPASS_REVALIDATION_REQUIRED": false,
+  "FINAL_DECISION": "FREEZE_R1_AUTHORITY_ROUTING_REPAIR_AND_ADVANCE_R2",
+  "FINAL_STATUS": "PASS_REPAIR_ACTIVE_RUNTIME_AUTHORITY_ROUTING_BOUNDARY_V2",
+  "Only next task": "REPAIR_ACTIVE_RUNTIME_EXCEPTION_AND_UNKNOWN_ROUTING_V2",
+  "R1_closed": [
+    "D-AUTH-001",
+    "D-TRANS-001"
+  ],
+  "R2_deferred": [
+    "D-EXC-001",
+    "D-ALT-001"
+  ],
+  "real_execution_counts": {
+    "active": 0,
+    "gpu": 0,
+    "official100": 0,
+    "oracle": 0,
+    "real_bypass_pairs": 0,
+    "smoke": 0
+  }
+}

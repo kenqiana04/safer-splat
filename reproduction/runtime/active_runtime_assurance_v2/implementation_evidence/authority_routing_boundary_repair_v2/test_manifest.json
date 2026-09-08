@@ -1,0 +1,20 @@
+{
+  "commands": [
+    "python -B -m unittest discover -s reproduction/runtime/active_runtime_assurance_v2/tests -q"
+  ],
+  "new_r1_tests": [
+    "reproduction/runtime/active_runtime_assurance_v2/tests/test_r1_authority_routing_boundary.py",
+    "reproduction/runtime/active_runtime_assurance_v2/tests/test_r1_transition_metadata_round_trip.py",
+    "reproduction/runtime/active_runtime_assurance_v2/tests/test_r1_destination_derivation.py",
+    "reproduction/runtime/active_runtime_assurance_v2/tests/test_r1_exact_one_and_repeated_guard.py"
+  ],
+  "real_execution": {
+    "active": 0,
+    "bypass_pairs": 0,
+    "gpu": 0,
+    "official100": 0,
+    "oracle": 0,
+    "smoke": 0
+  },
+  "schema": "R1_TEST_MANIFEST_V2"
+}

@@ -31,7 +31,6 @@ from .runtime_types import (
     CertificateStatus,
     CoordinatorSession,
     DeadlineObservation,
-    DeadlineStatus,
     EvidenceResult,
     PublicCycleEvent,
     PublicCyclePhase,
@@ -106,11 +105,12 @@ class ActiveCycleCoordinator:
         candidate_available: bool | None = None,
         backup_present: bool = False,
         backup_valid: bool = False,
-        alternative_search_allowed: bool = False,
-        navigation_ready: bool = False,
+        certified_candidate_available: bool = False,
         terminal_evaluated: bool = False,
-        terminal_ready: bool = False,
+        terminal_evidence_eligible: bool = False,
         reason_scope: str = "NONE",
+        repeated_route_state: bool = False,
+        backup_state: str | None = None,
     ) -> RuntimeRoutingContext:
         return RuntimeRoutingContext(
             source_phase=source_phase,
@@ -121,11 +121,13 @@ class ActiveCycleCoordinator:
             candidate_available=(candidate is not None) if candidate_available is None else candidate_available,
             retained_backup_present=backup_present,
             retained_backup_valid=backup_valid,
-            alternative_search_allowed=alternative_search_allowed,
-            navigation_ready=navigation_ready,
+            certified_candidate_available=certified_candidate_available,
             terminal_evaluated=terminal_evaluated,
-            terminal_ready=terminal_ready,
+            terminal_evidence_eligible=terminal_evidence_eligible,
             reason_scope=reason_scope,
+            repeated_route_state=repeated_route_state,
+            backup_state=backup_state,
+            candidate_provenance_identity=None if candidate is None else candidate.provenance.controller_identity,
         )
 
     def _route(
@@ -145,21 +147,10 @@ class ActiveCycleCoordinator:
             routing_context.terminal_evaluated,
         )
         if state in seen:
-            decision = RoutingDecision(
-                RouteResolutionStatus.BLOCKED_AMBIGUOUS,
-                None,
-                routing_context.source_phase,
-                None,
-                False,
-                False,
-                False,
-                "ROUTING_STATE_REPEATED",
-                "FROZEN_FINITE_GRAPH_GUARD",
-                False,
-                False,
-                False,
-                "ROUTING_STATE_REPEATED",
-            )
+            # Repetition is an observed finite-graph fact.  The Supervisor
+            # owns the typed meta-safety block; the coordinator does not
+            # construct policy decisions.
+            decision = self.supervisor.routing_guard_block(routing_context, "ROUTING_STATE_REPEATED")
         else:
             seen.add(state)
             decision = self.supervisor.route_transition(event, routing_context)
@@ -373,8 +364,7 @@ class ActiveCycleCoordinator:
                 if candidate.role == CandidateRole.PRIMARY:
                     context = replace(context, primary_c0=c0_result)
                 event = self._c0_event(c0_result.status, c0_result.reason)
-                allow_alt = backup_valid and deadline.status == DeadlineStatus.OPEN
-                context, route = self._route(context, event, self._routing_context(RuntimePhase.C0, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, alternative_search_allowed=allow_alt, reason_scope=self._reason_scope(c0_result.reason)), seen)
+                context, route = self._route(context, event, self._routing_context(RuntimePhase.C0, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, backup_state=backup_evidence.status.value, reason_scope=self._reason_scope(c0_result.reason)), seen)
 
             elif destination == RuntimePhase.L2:
                 if candidate is None:
@@ -390,8 +380,7 @@ class ActiveCycleCoordinator:
                 event = self._l2_event(l2_result.status, l2_result.reason)
                 if l2_result.status == CertificateStatus.PASS:
                     context, deadline = self._observe(context, "L3_DISCOVERY_ADMISSION")
-                allow_alt = backup_valid and deadline.status == DeadlineStatus.OPEN
-                context, route = self._route(context, event, self._routing_context(RuntimePhase.L2, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, alternative_search_allowed=allow_alt, reason_scope=self._reason_scope(l2_result.reason)), seen)
+                context, route = self._route(context, event, self._routing_context(RuntimePhase.L2, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, backup_state=backup_evidence.status.value, reason_scope=self._reason_scope(l2_result.reason)), seen)
 
             elif destination == RuntimePhase.L3:
                 if candidate is None or l2_result is None:
@@ -407,56 +396,54 @@ class ActiveCycleCoordinator:
                 if l3_result.status == CertificateStatus.PASS:
                     certified_candidate = candidate
                 event = self._l3_event(l3_result.status, l3_result.reason)
-                allow_alt = backup_valid and deadline.status == DeadlineStatus.OPEN
-                context, route = self._route(context, event, self._routing_context(RuntimePhase.L3, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, alternative_search_allowed=allow_alt, navigation_ready=l3_result.status == CertificateStatus.PASS, reason_scope=self._reason_scope(l3_result.reason)), seen)
+                context, route = self._route(context, event, self._routing_context(RuntimePhase.L3, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, certified_candidate_available=l3_result.status == CertificateStatus.PASS, backup_state=backup_evidence.status.value, reason_scope=self._reason_scope(l3_result.reason)), seen)
 
             elif destination == RuntimePhase.ALT_SEARCH:
                 context = self._advance(context, PublicCyclePhase.ALTERNATIVE_ELIGIBILITY)
                 context, deadline = self._observe(context, "ALTERNATIVE_SOURCE_QUERY_ADMISSION")
-                if deadline.status != DeadlineStatus.OPEN:
-                    candidate = None
-                    context, route = self._route(context, PublicCycleEvent.DEADLINE_GUARD, self._routing_context(RuntimePhase.ALT_SEARCH, deadline, backup_present=token is not None, backup_valid=backup_valid), seen)
+                # Deadline interpretation and the decision to enter this stage
+                # already came from Supervisor.route_transition.  The
+                # coordinator therefore performs only the named stage and
+                # reports provider facts; it never pre-guards the search.
+                context = self._advance(context, PublicCyclePhase.ALTERNATIVE_SOURCE_QUERY)
+                if alternative_candidates is None:
+                    inventory, error = self._safe_call(self.alternative_provider.enumerate, snapshot)
+                    if error:
+                        context, route = self._route(context, PublicCycleEvent.STAGE_EXCEPTION, self._routing_context(RuntimePhase.ALT_SEARCH, deadline, backup_present=token is not None, backup_valid=backup_valid, backup_state=backup_evidence.status.value), seen)
+                        return self._blocked_result(context, error)
+                    alternative_candidates = inventory.candidates if inventory.status == "ALT_AVAILABLE" else ()
+                if alternative_index < len(alternative_candidates):
+                    candidate = alternative_candidates[alternative_index]
+                    alternative_index += 1
+                    binding = self.l1_runtime.bind_attempt(l1_value, candidate, attempt_index)
+                    attempt_index += 1
+                    context = replace(context, alternative_attempts=context.alternative_attempts + (candidate.identity,))
+                    context, route = self._route(context, PublicCycleEvent.ALT_AVAILABLE, self._routing_context(RuntimePhase.ALT_SEARCH, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, backup_state=backup_evidence.status.value), seen)
                 else:
-                    context = self._advance(context, PublicCyclePhase.ALTERNATIVE_SOURCE_QUERY)
-                    if alternative_candidates is None:
-                        inventory, error = self._safe_call(self.alternative_provider.enumerate, snapshot)
-                        if error:
-                            context, route = self._route(context, PublicCycleEvent.STAGE_EXCEPTION, self._routing_context(RuntimePhase.ALT_SEARCH, deadline, backup_present=token is not None, backup_valid=backup_valid), seen)
-                            return self._blocked_result(context, error)
-                        alternative_candidates = inventory.candidates if inventory.status == "ALT_AVAILABLE" else ()
-                    if alternative_index < len(alternative_candidates):
-                        candidate = alternative_candidates[alternative_index]
-                        alternative_index += 1
-                        binding = self.l1_runtime.bind_attempt(l1_value, candidate, attempt_index)
-                        attempt_index += 1
-                        context = replace(context, alternative_attempts=context.alternative_attempts + (candidate.identity,))
-                        context, route = self._route(context, PublicCycleEvent.ALT_AVAILABLE, self._routing_context(RuntimePhase.ALT_SEARCH, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid), seen)
-                    else:
-                        candidate = None
-                        context, route = self._route(context, PublicCycleEvent.ALT_EXHAUSTED, self._routing_context(RuntimePhase.ALT_SEARCH, deadline, backup_present=token is not None, backup_valid=backup_valid), seen)
+                    candidate = None
+                    context, route = self._route(context, PublicCycleEvent.ALT_EXHAUSTED, self._routing_context(RuntimePhase.ALT_SEARCH, deadline, backup_present=token is not None, backup_valid=backup_valid, backup_state=backup_evidence.status.value), seen)
 
             elif destination == RuntimePhase.ARBITRATION:
                 context = self._advance(context, PublicCyclePhase.BACKUP_VALIDATION)
                 context = self._advance(context, PublicCyclePhase.ARBITRATION)
                 context, deadline = self._observe(context, "FINAL_COMMIT_GUARD")
-                navigation_timely = certified_candidate is not None and l3_result is not None and deadline.status == DeadlineStatus.OPEN
-                routing_candidate = certified_candidate if navigation_timely else None
                 arbitration_context = self._routing_context(
                     RuntimePhase.ARBITRATION,
                     deadline,
-                    candidate=routing_candidate,
+                    candidate=certified_candidate,
                     backup_present=token is not None,
                     backup_valid=backup_valid,
-                    navigation_ready=navigation_timely,
+                    certified_candidate_available=certified_candidate is not None and l3_result is not None,
                     terminal_evaluated=terminal_result is not None,
-                    terminal_ready=terminal_result is not None and terminal_result.status == CertificateStatus.PASS and terminal_result.eligible,
+                    terminal_evidence_eligible=terminal_result is not None and terminal_result.status == CertificateStatus.PASS and terminal_result.eligible,
+                    backup_state=backup_evidence.status.value,
                 )
                 context, route = self._route(context, PublicCycleEvent.ARBITRATE, arbitration_context, seen)
                 if route.status != RouteResolutionStatus.RESOLVED:
                     return self._blocked_result(context, route.reason)
                 if route.destination_phase == RuntimePhase.TERMINAL_EVALUATION:
                     continue
-                decision = self.supervisor.arbitrate(snapshot, routing_candidate, l3_result if routing_candidate is not None else None, backup_action, backup_valid, terminal_result, deadline)
+                decision = self.supervisor.arbitrate(snapshot, certified_candidate, l3_result if certified_candidate is not None else None, backup_action, backup_valid, terminal_result, deadline)
                 if decision.rule_id != route.rule_id:
                     return self._blocked_result(context, "ROUTING_ARBITRATION_IDENTITY_MISMATCH")
                 context = replace(context, final_supervisor_decision=decision)
@@ -470,11 +457,11 @@ class ActiveCycleCoordinator:
                 context, deadline = self._observe(context, "TERMINAL_EVALUATION_ADMISSION")
                 terminal_result, error = self._safe_call(self.terminal_runtime.evaluate, snapshot, True, cycle_context.expected_terminal_ref)
                 if error:
-                    context, route = self._route(context, PublicCycleEvent.STAGE_EXCEPTION, self._routing_context(RuntimePhase.TERMINAL_EVALUATION, deadline, backup_present=token is not None, backup_valid=backup_valid, terminal_evaluated=True), seen)
+                    context, route = self._route(context, PublicCycleEvent.STAGE_EXCEPTION, self._routing_context(RuntimePhase.TERMINAL_EVALUATION, deadline, backup_present=token is not None, backup_valid=backup_valid, terminal_evaluated=True, backup_state=backup_evidence.status.value), seen)
                     return self._blocked_result(context, error)
                 context = replace(context, terminal_result=terminal_result)
                 terminal_event = self._terminal_event(terminal_result.status, terminal_result.eligible)
-                context, route = self._route(context, terminal_event, self._routing_context(RuntimePhase.TERMINAL_EVALUATION, deadline, backup_present=token is not None, backup_valid=backup_valid, terminal_evaluated=True, terminal_ready=terminal_result.status == CertificateStatus.PASS and terminal_result.eligible), seen)
+                context, route = self._route(context, terminal_event, self._routing_context(RuntimePhase.TERMINAL_EVALUATION, deadline, backup_present=token is not None, backup_valid=backup_valid, terminal_evaluated=True, terminal_evidence_eligible=terminal_result.status == CertificateStatus.PASS and terminal_result.eligible, backup_state=backup_evidence.status.value), seen)
                 if route.status == RouteResolutionStatus.RESOLVED and route.destination_phase in {RuntimePhase.COMMIT, RuntimePhase.ASSURANCE_BOUNDARY}:
                     decision = self.supervisor.arbitrate(snapshot, None, None, backup_action, backup_valid, terminal_result, deadline)
                     expected_rule = "ARB_TERMINAL" if route.destination_phase == RuntimePhase.COMMIT else "ARB_BOUNDARY"

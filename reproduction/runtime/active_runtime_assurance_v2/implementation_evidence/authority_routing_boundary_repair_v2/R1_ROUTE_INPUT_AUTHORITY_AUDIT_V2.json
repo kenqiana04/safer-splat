@@ -1,0 +1,32 @@
+{
+  "coordinator_inputs": [
+    "source_phase",
+    "typed_event",
+    "deadline_observation",
+    "authority_identity",
+    "candidate_identity",
+    "candidate_role",
+    "candidate_available",
+    "certified_candidate_available",
+    "retained_backup_present",
+    "retained_backup_valid",
+    "backup_state",
+    "terminal_evaluated",
+    "terminal_evidence_eligible",
+    "reason_scope",
+    "candidate_provenance_identity",
+    "repeated_route_state"
+  ],
+  "coordinator_policy_inputs": [],
+  "destination_derived_policy": false,
+  "route_input_contract": "raw facts + typed event + frozen authority identity",
+  "schema": "R1_ROUTE_INPUT_AUTHORITY_AUDIT_V2",
+  "status": "PASS",
+  "supervisor_owned_interpretations": [
+    "alternative_search_permission",
+    "navigation_eligibility",
+    "deadline_route_interpretation",
+    "repeated_state_typed_block"
+  ],
+  "transition_authority": "PR107_STATE_TRANSITION_TABLE_V2"
+}

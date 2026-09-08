@@ -1,0 +1,13 @@
+{
+  "alternative_permission_owner": "Supervisor",
+  "arbitrate_semantics_preserved": true,
+  "coordinator_route_policy": false,
+  "deadline_interpretation_owner": "Supervisor",
+  "navigation_eligibility_owner": "Supervisor",
+  "repeated_state_meta_guard_owner": "Supervisor.routing_guard_block",
+  "route_owner": "Supervisor.route_transition",
+  "schema": "R1_SUPERVISOR_ROUTING_OWNER_AUDIT_V2",
+  "selection_owner": "Supervisor.arbitrate",
+  "status": "PASS",
+  "table_owner": "Supervisor.TransitionTable"
+}

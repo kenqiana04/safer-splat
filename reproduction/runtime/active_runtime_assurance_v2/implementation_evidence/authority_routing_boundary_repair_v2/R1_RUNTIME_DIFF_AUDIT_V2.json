@@ -1,0 +1,30 @@
+{
+  "changed_runtime_files": [
+    "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py",
+    "reproduction/runtime/active_runtime_assurance_v2/runtime_types.py",
+    "reproduction/runtime/active_runtime_assurance_v2/supervisor.py"
+  ],
+  "changed_runtime_scope_subset": true,
+  "forbidden_runtime_blob_exact": true,
+  "forbidden_runtime_files": {
+    "reproduction/runtime/active_runtime_assurance_v2/active_runner.py": true,
+    "reproduction/runtime/active_runtime_assurance_v2/alternative_provider.py": true,
+    "reproduction/runtime/active_runtime_assurance_v2/authority_registry.py": true,
+    "reproduction/runtime/active_runtime_assurance_v2/backup_token_store.py": true,
+    "reproduction/runtime/active_runtime_assurance_v2/c0_admission.py": true,
+    "reproduction/runtime/active_runtime_assurance_v2/deadline_runtime.py": true,
+    "reproduction/runtime/active_runtime_assurance_v2/diagnostic_r0.py": true,
+    "reproduction/runtime/active_runtime_assurance_v2/l1_runtime.py": true,
+    "reproduction/runtime/active_runtime_assurance_v2/l2_runtime.py": true,
+    "reproduction/runtime/active_runtime_assurance_v2/l3_runtime.py": true,
+    "reproduction/runtime/active_runtime_assurance_v2/plant_commit.py": true,
+    "reproduction/runtime/active_runtime_assurance_v2/primary_proposal_adapter.py": true,
+    "reproduction/runtime/active_runtime_assurance_v2/start_admission.py": true,
+    "reproduction/runtime/active_runtime_assurance_v2/terminal_runtime.py": true,
+    "reproduction/runtime/active_runtime_assurance_v2/trace_writer.py": true
+  },
+  "production_diff": 0,
+  "protected_source_diff": 0,
+  "schema": "R1_RUNTIME_DIFF_AUDIT_V2",
+  "upstream": "cef9dddc4ceb20e22f5962ee0740d92b91a3ff86"
+}

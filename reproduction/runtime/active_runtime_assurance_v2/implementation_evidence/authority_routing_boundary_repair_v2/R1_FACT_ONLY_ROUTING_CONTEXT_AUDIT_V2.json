@@ -1,0 +1,23 @@
+{
+  "coordinator_policy_fields_written": [],
+  "fact_fields": [
+    "source_phase",
+    "deadline",
+    "authority_identity",
+    "candidate_role",
+    "candidate_identity",
+    "candidate_available",
+    "certified_candidate_available",
+    "retained_backup_present",
+    "retained_backup_valid",
+    "terminal_evaluated",
+    "terminal_evidence_eligible",
+    "reason_scope",
+    "backup_state",
+    "candidate_provenance_identity"
+  ],
+  "legacy_slots": "compatibility-only; production coordinator never populates them",
+  "policy_interpreter": "Supervisor.TransitionTable._branch_guard and Supervisor.route_transition",
+  "schema": "R1_FACT_ONLY_ROUTING_CONTEXT_AUDIT_V2",
+  "status": "PASS"
+}
