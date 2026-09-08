@@ -1,0 +1,59 @@
+{
+  "adversarial_text_scope": "UNRESOLVED_SCOPE",
+  "exact_typed_mapping": true,
+  "results": [
+    {
+      "detail": {
+        "expected": "GLOBAL_AUTHORITY_OR_EVIDENCE",
+        "observed": "GLOBAL_AUTHORITY_OR_EVIDENCE",
+        "reason": "MAP_IDENTITY_MISMATCH"
+      },
+      "domain": "reason_scope",
+      "passed": true,
+      "scenario_id": "SCOPE-091"
+    },
+    {
+      "detail": {
+        "expected": "CANDIDATE_LOCAL_COMPUTATION",
+        "observed": "CANDIDATE_LOCAL_COMPUTATION",
+        "reason": "CANDIDATE_NONFINITE_OR_WRONG_DIMENSION"
+      },
+      "domain": "reason_scope",
+      "passed": true,
+      "scenario_id": "SCOPE-092"
+    },
+    {
+      "detail": {
+        "expected": "INFRASTRUCTURE_HEALTH",
+        "observed": "INFRASTRUCTURE_HEALTH",
+        "reason": "L2_BACKEND_EXCEPTION:RuntimeError"
+      },
+      "domain": "reason_scope",
+      "passed": true,
+      "scenario_id": "SCOPE-093"
+    },
+    {
+      "detail": {
+        "expected": "UNRESOLVED_SCOPE",
+        "observed": "UNRESOLVED_SCOPE",
+        "reason": "opaque missing timeout exception unknown"
+      },
+      "domain": "reason_scope",
+      "passed": true,
+      "scenario_id": "SCOPE-094"
+    },
+    {
+      "detail": {
+        "expected": "UNRESOLVED_SCOPE",
+        "observed": "UNRESOLVED_SCOPE",
+        "reason": "timeout"
+      },
+      "domain": "reason_scope",
+      "passed": true,
+      "scenario_id": "SCOPE-095"
+    }
+  ],
+  "schema": "POST_R2_REASON_SCOPE_VERDICT_V2",
+  "substring_routing": false,
+  "verdict": "RESOLVED_TYPED_SCOPE"
+}

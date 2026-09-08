@@ -1,0 +1,25 @@
+{
+  "BYPASS_R_BYPASS_001": "PR119 reusable; canonical semantic/source evidence used",
+  "Coordinator_authority": "PASS_FACT_ONLY",
+  "E2E": "core 6/6; extended 6/6",
+  "PR120_integration_gap": "CLOSED",
+  "alternative": "PASS_STATUS_FIDELITY",
+  "backup_R_BK_001": "RESOLVED_NOT_A_BUG",
+  "canonical_order": "PASS",
+  "commit": "PASS",
+  "confirmed_defects": {
+    "D-ALT-001": "CLOSED",
+    "D-AUTH-001": "CLOSED",
+    "D-EXC-001": "CLOSED",
+    "D-TRANS-001": "CLOSED"
+  },
+  "deadline": "PASS",
+  "exception_unknown_R_UNK_001": "8/8; RESOLVED_TYPED_SCOPE",
+  "model_tests": "model contains trace counterexamples; runtime regression otherwise passes",
+  "only_next_task": "DESIGN_ACTIVE_RUNTIME_TRACE_COMMIT_ATOMICITY_V2",
+  "smoke_allowed": false,
+  "terminal_R_TERM_001": "RESOLVED_ROUTE_DERIVED_NOT_A_BUG",
+  "trace_R_TRACE_001": "CONFIRMED: plant/token side effects can precede a failing trace append; finalize failure has no typed session result",
+  "transition_fidelity_exact_one_coverage": "43/43; exact-one PASS; critical 100%",
+  "verdict": "BLOCKED_POST_R2_ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_V2"
+}

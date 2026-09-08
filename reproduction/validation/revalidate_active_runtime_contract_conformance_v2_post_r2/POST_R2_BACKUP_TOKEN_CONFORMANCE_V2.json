@@ -1,0 +1,16 @@
+{
+  "atomic_handoff": "existing ActiveRunner/BackupTokenStore path",
+  "failed_or_no_commit_no_cursor_advance": true,
+  "first_active_next_cycle": true,
+  "lifecycles": [
+    "NONE",
+    "PREPARED_UNCOMMITTED",
+    "ACTIVE",
+    "INVALID",
+    "EXHAUSTED",
+    "RETIRED_SUPERSEDED"
+  ],
+  "one_active": true,
+  "schema": "POST_R2_BACKUP_TOKEN_CONFORMANCE_V2",
+  "status": "PASS_BACKUP_TOKEN_CONFORMANCE"
+}

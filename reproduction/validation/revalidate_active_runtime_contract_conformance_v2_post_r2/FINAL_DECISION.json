@@ -1,0 +1,29 @@
+{
+  "FINAL_DECISION": "FREEZE_COMPLETE_POST_R2_RECONFORMANCE_FAILURE_MATRIX_AND_DO_NOT_SMOKE",
+  "FINAL_STATUS": "BLOCKED_POST_R2_CONFORMANCE_BY_TRACE_CONTRACT",
+  "Only next task": "DESIGN_ACTIVE_RUNTIME_TRACE_COMMIT_ATOMICITY_V2",
+  "execution_counts": {
+    "gpu": 0,
+    "official100": 0,
+    "real_active": 0,
+    "real_bypass": 0,
+    "runtime_correction": 0,
+    "scientific_oracle": 0,
+    "smoke": 0
+  },
+  "four_defects_closed": [
+    "D-AUTH-001",
+    "D-TRANS-001",
+    "D-EXC-001",
+    "D-ALT-001"
+  ],
+  "latent_risks": {
+    "R-BK-001": "RESOLVED_NOT_A_BUG",
+    "R-BYPASS-001": "RESOLVED_CANONICAL_SOURCE_IDENTITY",
+    "R-TERM-001": "RESOLVED_ROUTE_DERIVED_NOT_A_BUG",
+    "R-TRACE-001": "CONFIRMED_CONFORMANCE_DEFECT",
+    "R-UNK-001": "RESOLVED_TYPED_SCOPE"
+  },
+  "schema": "POST_R2_ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_FINAL_DECISION_V2",
+  "smoke_authorized": false
+}

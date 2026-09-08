@@ -1,0 +1,33 @@
+{
+  "counterexamples": [
+    {
+      "counterexample_id": "TRACE-F02",
+      "domain": "trace_fault",
+      "observed": {
+        "escaped": "trace append failed after plant",
+        "plant_count": 1,
+        "token_active": true,
+        "trace_count": 0
+      },
+      "runtime_mutation_applied": false
+    },
+    {
+      "counterexample_id": "TRACE-F03",
+      "domain": "trace_fault",
+      "observed": {
+        "finalize_exception": "trace finalize failure",
+        "prior_commit": true,
+        "prior_trace_count": 1,
+        "session_status": "READY"
+      },
+      "runtime_mutation_applied": false
+    },
+    {
+      "counterexample_id": "no_trace_counterexample",
+      "domain": "model_invariant",
+      "observed": "invariant false",
+      "runtime_mutation_applied": false
+    }
+  ],
+  "schema": "POST_R2_ACTIVE_RUNTIME_COUNTEREXAMPLES_V2"
+}

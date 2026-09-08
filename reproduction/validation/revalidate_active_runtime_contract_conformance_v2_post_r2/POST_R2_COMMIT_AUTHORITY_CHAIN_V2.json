@@ -1,0 +1,14 @@
+{
+  "chain": [
+    "FrozenRow",
+    "RoutingDecision",
+    "SupervisorDecision",
+    "ActiveRunner",
+    "PlantCommitAdapter.commit"
+  ],
+  "plant_without_authority_count": 0,
+  "post_cert_clipping_or_transform": false,
+  "schema": "POST_R2_COMMIT_AUTHORITY_CHAIN_V2",
+  "selected_plant_executed_identity_equal": true,
+  "status": "PASS_COMMIT_AUTHORITY_CHAIN"
+}

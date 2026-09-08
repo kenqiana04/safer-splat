@@ -1,0 +1,19 @@
+{
+  "actual_runtime": true,
+  "checks": {
+    "actual_coordinator_imported": true,
+    "ast_valid": true,
+    "no_direct_plant_commit": true,
+    "no_legacy_011": true,
+    "no_oracle_edge": true,
+    "no_routing_counterexample": true,
+    "no_trace_counterexample": false,
+    "no_uncertified_commit_counterexample": true,
+    "route_between_stages": true,
+    "transition_43_executed": true
+  },
+  "complete_enumeration": true,
+  "counterexample_count": 3,
+  "schema": "POST_R2_ACTIVE_RUNTIME_MODEL_CHECK_V2",
+  "status": "FAIL_POST_R2_ACTIVE_RUNTIME_MODEL_CHECK"
+}

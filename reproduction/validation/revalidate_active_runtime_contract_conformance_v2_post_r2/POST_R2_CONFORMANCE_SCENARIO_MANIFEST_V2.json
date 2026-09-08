@@ -1,0 +1,490 @@
+{
+  "minimum_required": 60,
+  "runtime_correction_quota": 0,
+  "scenario_count": 96,
+  "scenarios": [
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-SA_SAFE"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-SA_REPAIR"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-REPAIR_PASS"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-REPAIR_FAIL"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-REPAIR_UNKNOWN"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-R0_DIAGNOSTIC"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-L1_PASS"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-L1_FAIL"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-L1_UNKNOWN_GLOBAL"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-L1_UNKNOWN_HEALTH"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-L1_UNKNOWN_UNRESOLVED"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-P0_PRIMARY"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-P0_NONE"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-C0_PASS"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-C0_FAIL_LOCAL_ALT"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-C0_FAIL_LOCAL_ARB"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-C0_UNKNOWN_LOCAL_ALT"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-C0_UNKNOWN_LOCAL_ARB"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-C0_UNKNOWN_GLOBAL"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-L2_PASS"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-L2_FAIL_ALT"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-L2_FAIL_ARB"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-L2_UNKNOWN_LOCAL_ALT"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-L2_UNKNOWN_LOCAL_ARB"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-L2_UNKNOWN_GLOBAL"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-L3_FOUND"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-L3_ABSENT_ALT"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-L3_ABSENT_ARB"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-L3_UNKNOWN_LOCAL_ALT"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-L3_UNKNOWN_LOCAL_ARB"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-L3_UNKNOWN_GLOBAL"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-ALT_NEXT"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-ALT_DONE"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-ALT_GUARD"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-ARB_NAV"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-ARB_BACKUP"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-ARB_TERMINAL"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-ARB_EVAL_TERMINAL"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-ARB_BOUNDARY"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-BACKUP_COMMIT"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-TERM_ELIGIBLE"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-TERM_NOT_ELIGIBLE"
+    },
+    {
+      "domain": "transition_43",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-TERM_UNKNOWN"
+    },
+    {
+      "domain": "exact_one",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-MISSING"
+    },
+    {
+      "domain": "exact_one",
+      "fresh_isolated": true,
+      "scenario_id": "ROUTE-AMBIGUOUS"
+    },
+    {
+      "domain": "e2e_core",
+      "fresh_isolated": true,
+      "scenario_id": "E2E-01"
+    },
+    {
+      "domain": "e2e_core",
+      "fresh_isolated": true,
+      "scenario_id": "E2E-02"
+    },
+    {
+      "domain": "e2e_core",
+      "fresh_isolated": true,
+      "scenario_id": "E2E-03"
+    },
+    {
+      "domain": "e2e_core",
+      "fresh_isolated": true,
+      "scenario_id": "E2E-04"
+    },
+    {
+      "domain": "e2e_core",
+      "fresh_isolated": true,
+      "scenario_id": "E2E-05"
+    },
+    {
+      "domain": "e2e_core",
+      "fresh_isolated": true,
+      "scenario_id": "E2E-06"
+    },
+    {
+      "domain": "e2e_extended",
+      "fresh_isolated": true,
+      "scenario_id": "E2E-07"
+    },
+    {
+      "domain": "e2e_extended",
+      "fresh_isolated": true,
+      "scenario_id": "E2E-08"
+    },
+    {
+      "domain": "e2e_extended",
+      "fresh_isolated": true,
+      "scenario_id": "E2E-09"
+    },
+    {
+      "domain": "e2e_extended",
+      "fresh_isolated": true,
+      "scenario_id": "E2E-10"
+    },
+    {
+      "domain": "e2e_extended",
+      "fresh_isolated": true,
+      "scenario_id": "E2E-11"
+    },
+    {
+      "domain": "e2e_extended",
+      "fresh_isolated": true,
+      "scenario_id": "E2E-12"
+    },
+    {
+      "domain": "start_r0",
+      "fresh_isolated": true,
+      "scenario_id": "START-PASS"
+    },
+    {
+      "domain": "start_r0",
+      "fresh_isolated": true,
+      "scenario_id": "START-FAIL"
+    },
+    {
+      "domain": "start_r0",
+      "fresh_isolated": true,
+      "scenario_id": "START-UNKNOWN"
+    },
+    {
+      "domain": "start_r0",
+      "fresh_isolated": true,
+      "scenario_id": "START-IDENTITY"
+    },
+    {
+      "domain": "start_r0",
+      "fresh_isolated": true,
+      "scenario_id": "START-DEADLINE-PROFILE"
+    },
+    {
+      "domain": "fallback",
+      "fresh_isolated": true,
+      "scenario_id": "L1-FAIL-BACKUP"
+    },
+    {
+      "domain": "fallback",
+      "fresh_isolated": true,
+      "scenario_id": "L3-FAIL-BACKUP"
+    },
+    {
+      "domain": "alternative",
+      "fresh_isolated": true,
+      "scenario_id": "ALT-UNRESOLVED"
+    },
+    {
+      "domain": "terminal",
+      "fresh_isolated": true,
+      "scenario_id": "TERM-NORMAL-NOCALL"
+    },
+    {
+      "domain": "terminal",
+      "fresh_isolated": true,
+      "scenario_id": "TERM-BACKUP-NOCALL"
+    },
+    {
+      "domain": "terminal",
+      "fresh_isolated": true,
+      "scenario_id": "TERM-ROUTE-DERIVED"
+    },
+    {
+      "domain": "backup",
+      "fresh_isolated": true,
+      "scenario_id": "BACKUP-NONE"
+    },
+    {
+      "domain": "backup",
+      "fresh_isolated": true,
+      "scenario_id": "BACKUP-INVALID"
+    },
+    {
+      "domain": "backup",
+      "fresh_isolated": true,
+      "scenario_id": "BACKUP-EXHAUSTED"
+    },
+    {
+      "domain": "trace",
+      "fresh_isolated": true,
+      "scenario_id": "TRACE-NAV"
+    },
+    {
+      "domain": "trace",
+      "fresh_isolated": true,
+      "scenario_id": "TRACE-BACKUP"
+    },
+    {
+      "domain": "trace",
+      "fresh_isolated": true,
+      "scenario_id": "TRACE-TERMINAL"
+    },
+    {
+      "domain": "trace",
+      "fresh_isolated": true,
+      "scenario_id": "TRACE-BOUNDARY"
+    },
+    {
+      "domain": "trace_fault",
+      "fresh_isolated": true,
+      "scenario_id": "TRACE-F01"
+    },
+    {
+      "domain": "trace_fault",
+      "fresh_isolated": true,
+      "scenario_id": "TRACE-F02"
+    },
+    {
+      "domain": "trace_fault",
+      "fresh_isolated": true,
+      "scenario_id": "TRACE-F03"
+    },
+    {
+      "domain": "bypass",
+      "fresh_isolated": true,
+      "scenario_id": "BYPASS-PRESERVATION"
+    },
+    {
+      "domain": "numeric",
+      "fresh_isolated": true,
+      "scenario_id": "NUMERIC-AUTHORITY"
+    },
+    {
+      "domain": "session",
+      "fresh_isolated": true,
+      "scenario_id": "SESSION-BEFORE-START"
+    },
+    {
+      "domain": "session",
+      "fresh_isolated": true,
+      "scenario_id": "SESSION-DOUBLE-START"
+    },
+    {
+      "domain": "session",
+      "fresh_isolated": true,
+      "scenario_id": "SESSION-CYCLE-MISMATCH"
+    },
+    {
+      "domain": "exception",
+      "fresh_isolated": true,
+      "scenario_id": "EXC-L1"
+    },
+    {
+      "domain": "exception",
+      "fresh_isolated": true,
+      "scenario_id": "EXC-PRIMARY_PROPOSAL"
+    },
+    {
+      "domain": "exception",
+      "fresh_isolated": true,
+      "scenario_id": "EXC-C0"
+    },
+    {
+      "domain": "exception",
+      "fresh_isolated": true,
+      "scenario_id": "EXC-L2"
+    },
+    {
+      "domain": "exception",
+      "fresh_isolated": true,
+      "scenario_id": "EXC-L3"
+    },
+    {
+      "domain": "exception",
+      "fresh_isolated": true,
+      "scenario_id": "EXC-ALT_SEARCH"
+    },
+    {
+      "domain": "exception",
+      "fresh_isolated": true,
+      "scenario_id": "EXC-TERMINAL_EVALUATION"
+    },
+    {
+      "domain": "exception",
+      "fresh_isolated": true,
+      "scenario_id": "EXC-ARBITRATION"
+    },
+    {
+      "domain": "reason_scope",
+      "fresh_isolated": true,
+      "scenario_id": "SCOPE-091"
+    },
+    {
+      "domain": "reason_scope",
+      "fresh_isolated": true,
+      "scenario_id": "SCOPE-092"
+    },
+    {
+      "domain": "reason_scope",
+      "fresh_isolated": true,
+      "scenario_id": "SCOPE-093"
+    },
+    {
+      "domain": "reason_scope",
+      "fresh_isolated": true,
+      "scenario_id": "SCOPE-094"
+    },
+    {
+      "domain": "reason_scope",
+      "fresh_isolated": true,
+      "scenario_id": "SCOPE-095"
+    }
+  ],
+  "schema": "POST_R2_CONFORMANCE_SCENARIO_MANIFEST_V2",
+  "sweep_mode": "COMPLETE_INDEPENDENT_MATRIX",
+  "test_expectation_correction_quota": 0
+}

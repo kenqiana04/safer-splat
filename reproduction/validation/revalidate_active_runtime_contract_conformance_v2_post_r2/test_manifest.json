@@ -1,0 +1,32 @@
+{
+  "schema": "POST_R2_SELECTED_CPU_TEST_MANIFEST_V2",
+  "sweep_mode": "COMPLETE_INDEPENDENT_MATRIX",
+  "commands": [
+    {
+      "command": "python -m unittest discover -s reproduction/runtime/active_runtime_assurance_v2/tests -t . -v",
+      "scope": "PR126 applicable runtime regression",
+      "expected_tests": 133,
+      "failfast": false
+    },
+    {
+      "command": "python -m reproduction.validation.revalidate_active_runtime_contract_conformance_v2_post_r2.run_post_r2_reconformance_v2",
+      "scope": "96 isolated post-R2 scenarios",
+      "expected_scenarios": 96,
+      "failfast": false
+    },
+    {
+      "command": "python -m unittest discover -s reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/tests -t . -v",
+      "scope": "unittest wrapper for every scenario as an isolated subtest",
+      "expected_subtests": 96,
+      "failfast": false
+    },
+    {
+      "command": "python -m reproduction.validation.revalidate_active_runtime_contract_conformance_v2_post_r2.model_check_post_r2_active_runtime_conformance_v2",
+      "scope": "actual-runtime model check",
+      "failfast": false
+    }
+  ],
+  "runtime_correction_quota": 0,
+  "test_expectation_correction_quota": 0,
+  "real_execution_authorized": false
+}

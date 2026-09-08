@@ -1,0 +1,11 @@
+{
+  "final_selector": "Supervisor.arbitrate",
+  "oracle": "posthoc only",
+  "owner_count_per_authority": 1,
+  "plant": "PlantCommitAdapter.commit",
+  "routing_policy": "Supervisor.route_transition and Supervisor meta-routing helpers",
+  "schema": "POST_R2_AUTHORITY_OWNER_CHAIN_V2",
+  "status": "PASS_SOLE_OWNER_CHAIN",
+  "token_mutation": "ActiveRunner/BackupTokenStore",
+  "trace": "ActiveRunner/TraceWriter"
+}

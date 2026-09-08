@@ -1,0 +1,20 @@
+{
+  "controller_radius": 0.015,
+  "dt_authority": "frozen RuntimeStateSnapshot/profile",
+  "effective_radius": 0.025,
+  "legacy_0_11_authority": false,
+  "margin": 0.01,
+  "rho_seg": 0.0,
+  "schema": "POST_R2_NUMERIC_AUTHORITY_AUDIT_V2",
+  "status": "PASS_NUMERIC_AUTHORITY",
+  "u_max": [
+    0.1,
+    0.1,
+    0.1
+  ],
+  "u_min": [
+    -0.1,
+    -0.1,
+    -0.1
+  ]
+}

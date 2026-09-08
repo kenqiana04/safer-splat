@@ -1,0 +1,44 @@
+{
+  "R_TRACE_001": "CONFIRMED_CONFORMANCE_DEFECT",
+  "failed_faults": [
+    "TRACE-F02",
+    "TRACE-F03"
+  ],
+  "faults": {
+    "TRACE-F01": {
+      "detail": {
+        "execution_fact": "NO_ACTION_PATH",
+        "plant_count": 0
+      },
+      "domain": "trace_fault",
+      "passed": true,
+      "scenario_id": "TRACE-F01"
+    },
+    "TRACE-F02": {
+      "detail": {
+        "escaped": "trace append failed after plant",
+        "plant_count": 1,
+        "token_active": true,
+        "trace_count": 0
+      },
+      "domain": "trace_fault",
+      "passed": false,
+      "scenario_id": "TRACE-F02"
+    },
+    "TRACE-F03": {
+      "detail": {
+        "finalize_exception": "trace finalize failure",
+        "prior_commit": true,
+        "prior_trace_count": 1,
+        "session_status": "READY"
+      },
+      "domain": "trace_fault",
+      "passed": false,
+      "scenario_id": "TRACE-F03"
+    }
+  },
+  "finding": "TRACE-F02 permits committed plant/token facts without an appended trace; TRACE-F03 has no typed finalized-session outcome.",
+  "no_runtime_repair": true,
+  "schema": "POST_R2_TRACE_FAULT_SEMANTICS_V2",
+  "status": "CONFIRMED_TRACE_CONFORMANCE_DEFECT"
+}

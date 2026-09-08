@@ -1,0 +1,14 @@
+{
+  "Supervisor_interprets": true,
+  "coordinator_deadline_policy_branch": false,
+  "observation_points": [
+    "CYCLE_BEGIN",
+    "PRIMARY_PROPOSAL_ADMISSION",
+    "L3_DISCOVERY_ADMISSION",
+    "ALTERNATIVE_SOURCE_QUERY_ADMISSION",
+    "FINAL_COMMIT_GUARD",
+    "TERMINAL_EVALUATION_ADMISSION"
+  ],
+  "schema": "POST_R2_DEADLINE_OBSERVATION_POINT_AUDIT_V2",
+  "status": "PASS_DEADLINE_OBSERVATION_POINTS"
+}

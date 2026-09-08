@@ -1,0 +1,5 @@
+defect_id,frozen_authority_source,static_source_evidence,dynamic_fixture,verdict
+D-AUTH-001,PR110/PR111/PR121,AST shows coordinator emits facts and Supervisor owns routes,E2E-01..12 plus authority probes,CLOSED
+D-TRANS-001,PR107 43-row CSV,TransitionRule/RoutingDecision carry full frozen metadata,ROUTE-* 43/43,CLOSED
+D-EXC-001,PR107/PR121 exception routing,typed StageFailureEvidence reaches Supervisor,EXC-* 8/8,CLOSED
+D-ALT-001,PR111 alternative taxonomy,AlternativeInventoryEvidence preserves five statuses,E2E-09..12 and ALT-UNRESOLVED,CLOSED
