@@ -1,0 +1,74 @@
+{
+  "clusters": [
+    {
+      "cluster_id": "C-AUTH",
+      "members": [
+        "D-AUTH-001"
+      ],
+      "name": "authority-boundary",
+      "status": "CONFIRMED"
+    },
+    {
+      "cluster_id": "C-TRANS",
+      "members": [
+        "D-TRANS-001"
+      ],
+      "name": "transition-metadata-fidelity",
+      "status": "CONFIRMED"
+    },
+    {
+      "cluster_id": "C-DEADLINE",
+      "members": [
+        "D-AUTH-001",
+        "R-TERM-001"
+      ],
+      "name": "deadline-routing",
+      "status": "CONFIRMED_PLUS_LATENT"
+    },
+    {
+      "cluster_id": "C-UNKNOWN",
+      "members": [
+        "D-EXC-001",
+        "D-ALT-001",
+        "R-UNK-001"
+      ],
+      "name": "exception-unknown",
+      "status": "CONFIRMED_PLUS_LATENT"
+    },
+    {
+      "cluster_id": "C-TOKEN",
+      "members": [
+        "R-BK-001"
+      ],
+      "name": "token-state-information",
+      "status": "LATENT"
+    },
+    {
+      "cluster_id": "C-COMMIT-TRACE",
+      "members": [
+        "R-TRACE-001"
+      ],
+      "name": "commit-trace",
+      "status": "LATENT"
+    },
+    {
+      "cluster_id": "C-START",
+      "members": [
+        "V-R0-001"
+      ],
+      "name": "start-semantics",
+      "status": "VERIFIED"
+    },
+    {
+      "cluster_id": "C-BYPASS",
+      "members": [
+        "R-BYPASS-001"
+      ],
+      "name": "bypass-identity",
+      "status": "LATENT"
+    }
+  ],
+  "independent_confirmed_roots": 4,
+  "schema": "DEFECT_ROOT_CAUSE_CLUSTERING_V2",
+  "status": "COMPLETE"
+}

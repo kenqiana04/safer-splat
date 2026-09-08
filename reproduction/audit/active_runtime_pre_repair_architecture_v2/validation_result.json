@@ -1,0 +1,166 @@
+{
+  "audit_pass_is_not_runtime_contract_pass": true,
+  "check_count": 38,
+  "checks": [
+    {
+      "name": "01_pr123_exact",
+      "passed": true
+    },
+    {
+      "name": "02_runtime_diff_zero",
+      "passed": true
+    },
+    {
+      "name": "03_input_lock",
+      "passed": true
+    },
+    {
+      "name": "04_a_to_q_complete",
+      "passed": true
+    },
+    {
+      "name": "05_authority_map",
+      "passed": true
+    },
+    {
+      "name": "06_coordinator_audit",
+      "passed": true
+    },
+    {
+      "name": "07_supervisor_audit",
+      "passed": true
+    },
+    {
+      "name": "08_frozen_schema",
+      "passed": true
+    },
+    {
+      "name": "09_three_layer_43",
+      "passed": true
+    },
+    {
+      "name": "10_destination_derivation",
+      "passed": true
+    },
+    {
+      "name": "11_exact_one_domain",
+      "passed": true
+    },
+    {
+      "name": "12_phase_graph",
+      "passed": true
+    },
+    {
+      "name": "13_event_reason",
+      "passed": true
+    },
+    {
+      "name": "14_deadline_e2e",
+      "passed": true
+    },
+    {
+      "name": "15_deadline_observations",
+      "passed": true
+    },
+    {
+      "name": "16_alternative",
+      "passed": true
+    },
+    {
+      "name": "17_backup",
+      "passed": true
+    },
+    {
+      "name": "18_backup_info_loss",
+      "passed": true
+    },
+    {
+      "name": "19_terminal",
+      "passed": true
+    },
+    {
+      "name": "20_exception_unknown",
+      "passed": true
+    },
+    {
+      "name": "21_start_r0",
+      "passed": true
+    },
+    {
+      "name": "22_arbitration_commit",
+      "passed": true
+    },
+    {
+      "name": "23_trace",
+      "passed": true
+    },
+    {
+      "name": "24_identity_numeric",
+      "passed": true
+    },
+    {
+      "name": "25_session_loop",
+      "passed": true
+    },
+    {
+      "name": "26_bypass",
+      "passed": true
+    },
+    {
+      "name": "27_legacy",
+      "passed": true
+    },
+    {
+      "name": "28_oracle",
+      "passed": true
+    },
+    {
+      "name": "29_symbolic_complete",
+      "passed": true
+    },
+    {
+      "name": "30_probes_at_least_40",
+      "passed": true
+    },
+    {
+      "name": "31_master_defects",
+      "passed": true
+    },
+    {
+      "name": "32_latent_risks",
+      "passed": true
+    },
+    {
+      "name": "33_not_a_bug",
+      "passed": true
+    },
+    {
+      "name": "34_clustering",
+      "passed": true
+    },
+    {
+      "name": "35_repair_dag",
+      "passed": true
+    },
+    {
+      "name": "36_no_repair_source_changes",
+      "passed": true
+    },
+    {
+      "name": "37_real_execution_zero",
+      "passed": true
+    },
+    {
+      "name": "38_explicit_next_strategy",
+      "passed": true
+    }
+  ],
+  "confirmed_defect_count": 4,
+  "failed_count": 0,
+  "latent_high_risk_count": 5,
+  "passed_count": 38,
+  "runtime_diff": "",
+  "schema": "FULL_ACTIVE_RUNTIME_PRE_REPAIR_AUDIT_V2_VALIDATION",
+  "status": "PASS_FULL_ACTIVE_RUNTIME_PRE_REPAIR_AUDIT_V2_VALIDATION",
+  "verified_not_a_bug_count": 6
+}

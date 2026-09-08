@@ -1,0 +1,82 @@
+{
+  "actual_runtime": true,
+  "all_domains_enumerated": true,
+  "counterexample_count": 9,
+  "event_occurrence_count": 39,
+  "frozen_rule_count": 43,
+  "legal_state_enumeration": {
+    "backup_values": [
+      "NONE",
+      "VALID",
+      "INVALID",
+      "EXHAUSTED"
+    ],
+    "candidate_values": [
+      "NONE",
+      "PRIMARY",
+      "ALTERNATIVE"
+    ],
+    "deadline_values": [
+      "OPEN",
+      "WARNING",
+      "EXPIRED",
+      "UNKNOWN"
+    ],
+    "phase_values": [
+      "ALTERNATIVE_C0",
+      "ALTERNATIVE_ELIGIBILITY",
+      "ALTERNATIVE_L2",
+      "ALTERNATIVE_L3",
+      "ALTERNATIVE_SOURCE_QUERY",
+      "ARBITRATION",
+      "ASSURANCE_BOUNDARY",
+      "BACKUP_VALIDATION",
+      "COMMIT",
+      "CYCLE_BEGIN",
+      "CYCLE_COMPLETE",
+      "L1_IMMEDIATE_CERTIFICATION",
+      "PRIMARY_C0",
+      "PRIMARY_L2",
+      "PRIMARY_L3",
+      "PRIMARY_PROPOSAL",
+      "R0_DIAGNOSTIC",
+      "START_ADMISSION",
+      "TERMINAL_EVALUATION",
+      "TRACE_APPEND",
+      "TRIAL_BLOCKED_AT_ADMISSION",
+      "TRIAL_READY"
+    ]
+  },
+  "phase_occurrence_count": 28,
+  "routing_decision_fields": [
+    "backup_routing_allowed",
+    "commit_allowed",
+    "deadline_interpretation",
+    "destination_phase",
+    "failure_mapping",
+    "may_start_new_search",
+    "may_start_next_stage",
+    "reason",
+    "requires_arbitration",
+    "rule_id",
+    "source_phase",
+    "status",
+    "terminal_routing_allowed"
+  ],
+  "schema": "ACTUAL_RUNTIME_SYMBOLIC_MODEL_V2",
+  "status": "FAIL_COUNTEREXAMPLES_FOUND",
+  "transition_rule_fields": [
+    "action_authority",
+    "candidate_requirement",
+    "commit_allowed",
+    "deadline_requirement",
+    "destination_phase",
+    "failure_code",
+    "guard",
+    "observation_result",
+    "reason_scope",
+    "retained_backup_requirement",
+    "rule_id",
+    "source_phase"
+  ]
+}

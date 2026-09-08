@@ -1,0 +1,7 @@
+item,why_suspicious,frozen_evidence,implementation_evidence,verdict,reopen_only_if
+R0_DIAGNOSTIC_ONLY,R0 appears on the start path,PR121 R0 non-gate contract,start_trial routes R0_DIAGNOSTIC_COMPLETE to L1,VERIFIED_NOT_A_BUG,R0 is later used as an independent hard gate
+BYPASS_BODY_PRESERVED,Supervisor is additively extended,PR119/PR123 BYPASS evidence,source/body hash equal; route API not called by bypass,VERIFIED_NOT_A_BUG,shared BYPASS execution path changes
+ORACLE_ISOLATION,runtime produces result objects,PR114 oracle boundary,no oracle imports/calls/edges,VERIFIED_NOT_A_BUG,oracle edge appears
+LEGACY_011_ABSENT,historical authority values exist upstream,V2 authority contracts,no 0.11 legacy literals/imports,VERIFIED_NOT_A_BUG,legacy path is imported
+NO_NUMERIC_REPLACEMENT,Coordinator computes booleans,PR108/PR109 numeric authorities,no unauthorized numeric literal replacement,VERIFIED_NOT_A_BUG,new numeric authority appears
+NO_DIRECT_PLANT_CALL,Coordinator returns commit result,PlantCommit sole owner,no dynamics/plant call in active_cycle.py,VERIFIED_NOT_A_BUG,Coordinator calls plant directly

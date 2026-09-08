@@ -1,0 +1,27 @@
+finding_id,line,expression,decision,classification,owner_expected
+FACT-001,300,token = backup_token_store.current(),read retained token,RAW_FACT,BackupTokenStore
+FACT-002,301,"backup_token_store.validate(snapshot, registry)",validate retained token,RAW_FACT,BackupTokenStore
+FACT-003,452,terminal_result.status == PASS and eligible,terminal evidence fact,RAW_FACT,TerminalRuntime
+MECH-001,302,backup_evidence.status -> backup_valid,encode backup event fact,MECHANICAL_EVENT_CONVERSION,Supervisor.route_transition
+MECH-002,328,"_l1_event(l1_value.status, reason)",encode L1 event,MECHANICAL_EVENT_CONVERSION,Supervisor.route_transition
+MECH-003,375,"_c0_event(c0_result.status, reason)",encode C0 event,MECHANICAL_EVENT_CONVERSION,Supervisor.route_transition
+MECH-004,390,"_l2_event(l2_result.status, reason)",encode L2 event,MECHANICAL_EVENT_CONVERSION,Supervisor.route_transition
+MECH-005,409,"_l3_event(l3_result.status, reason)",encode L3 event,MECHANICAL_EVENT_CONVERSION,Supervisor.route_transition
+MECH-006,476,"_terminal_event(status, eligible)",encode terminal event,MECHANICAL_EVENT_CONVERSION,Supervisor.route_transition
+CTX-001,323,"RuntimeRoutingContext(backup_present, backup_valid)",route context construction,MECHANICAL_EVENT_CONVERSION,Supervisor.route_transition
+CTX-002,332,RuntimeRoutingContext(reason_scope=reason_scope),route context construction,MECHANICAL_EVENT_CONVERSION,Supervisor.route_transition
+D-AUTH-001,376,backup_valid and deadline.status == OPEN,alternative search permission,CONFIRMED_POLICY_LEAK,Supervisor.route_transition
+D-AUTH-001,393,backup_valid and deadline.status == OPEN,alternative search permission,CONFIRMED_POLICY_LEAK,Supervisor.route_transition
+D-AUTH-001,410,backup_valid and deadline.status == OPEN,alternative search permission,CONFIRMED_POLICY_LEAK,Supervisor.route_transition
+D-AUTH-001,416,deadline.status != OPEN,post-expiry guard branch,CONFIRMED_POLICY_LEAK,Supervisor.route_transition
+D-AUTH-001,442,deadline.status == OPEN,navigation timely,CONFIRMED_POLICY_LEAK,Supervisor.arbitrate
+D-AUTH-001,443,routing_candidate = certified if timely else None,candidate suppression,CONFIRMED_POLICY_LEAK,Supervisor.arbitrate
+BLOCK-001,335,route.status != RESOLVED -> _blocked_result,unresolved route handling,MECHANICAL_BLOCK_PATH,Supervisor.route_transition
+BLOCK-002,366,C0_WITHOUT_CANDIDATE -> _blocked_result,candidate precondition block,MECHANICAL_BLOCK_PATH,frozen transition table
+BLOCK-003,398,L3_WITHOUT_MATCHING_L2 -> _blocked_result,certificate ordering block,MECHANICAL_BLOCK_PATH,frozen transition table
+LOOP-001,320,seen state tuple,finite repetition guard,AUTHORITY_GUARD_REVIEW,Supervisor.route_transition
+LOOP-002,321,repeat -> coordinator constructs RoutingDecision,repeated-state route,CONFIRMED_POLICY_LEAK,Supervisor.route_transition
+COMMIT-001,459,Supervisor.arbitrate(...),final selection call,MECHANICAL_AUTHORITY_HANDOFF,Supervisor.arbitrate
+COMMIT-002,466,"_commit_or_boundary(..., boundary=True)",boundary/commit handoff,MECHANICAL_AUTHORITY_HANDOFF,ActiveRunner
+R-BK-001,302,backup status -> bool,mechanical projection,LATENT_INFORMATION_LOSS,BackupTokenStore lifecycle
+R-TERM-001,471,fallback_context=True,terminal context,LATENT_AUTHORITY_RISK,Supervisor route

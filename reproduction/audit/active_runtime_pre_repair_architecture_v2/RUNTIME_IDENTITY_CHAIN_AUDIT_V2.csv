@@ -1,0 +1,11 @@
+identity,source,propagated,verdict
+trial_id,snapshot/trial context,True,PRESERVED
+cycle_index,session next_cycle_index,True,PRESERVED
+snapshot_id,RuntimeStateSnapshot.identity,True,PRESERVED
+map_identity,session/map registry,True,PRESERVED
+authority_identity,registry.transition_table_identity,True,PRESERVED
+candidate_identity,Candidate.identity,True,PRESERVED
+l1_binding_identity,L1AttemptBinding,True,PRESERVED
+deadline_profile_identity,DeadlineObservation.profile_identity,True,PRESERVED
+terminal_reference,ActiveTrialContext.expected_terminal_ref,True,PRESERVED
+trace_ref,ActiveRunner.trace_writer,True,PRESERVED

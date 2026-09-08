@@ -1,0 +1,19 @@
+producer,consumer,current_owner,frozen_owner,authority_class,evidence,verdict
+StartAdmission,ActiveCycleCoordinator,ActiveCycleCoordinator (calls module),StartAdmission,FACT_COLLECTION,start_admission.py;active_cycle.py:245-271,START FACT PRESERVED
+DiagnosticR0,Supervisor.route_transition,DiagnosticR0 + Coordinator event encoding,DiagnosticR0 (diagnostic only),EVENT_ENCODING,active_cycle.py:272-289,R0 NOT A HARD GATE
+DeadlineTracker,Supervisor,DeadlineTracker observes; Coordinator also branches,Supervisor,FACT_COLLECTION,"deadline_runtime.py;active_cycle.py:376,393,410,416",COORDINATOR POLICY LEAK
+L1Runtime,Coordinator/Supervisor,L1Runtime,L1Runtime,FACT_COLLECTION,active_cycle.py:321-334,FACT SOURCE PRESERVED
+PrimaryProposalAdapter,Coordinator,PrimaryProposalAdapter,PrimaryProposalAdapter,FACT_COLLECTION,active_cycle.py:349-362,NO DIRECT COMMIT
+C0Admission,Coordinator/Supervisor,C0Admission,C0Admission,FACT_COLLECTION,active_cycle.py:364-377,FACT SOURCE PRESERVED
+L2Runtime,Coordinator/Supervisor,L2Runtime,L2Runtime,FACT_COLLECTION,active_cycle.py:379-394,FACT SOURCE PRESERVED
+L3Runtime,Coordinator/Supervisor,L3Runtime,L3Runtime,FACT_COLLECTION,active_cycle.py:396-411,FACT SOURCE PRESERVED
+Supervisor.route_transition,Coordinator,"Supervisor, with coordinator repeat guard",Supervisor,ROUTING_POLICY,supervisor.py:132-135;active_cycle.py:_route,ROUTING DUPLICATION RISK
+AlternativeProvider,Supervisor/Coordinator,Provider facts; Coordinator gates permission,Supervisor,ROUTING_POLICY,"alternative_provider.py;active_cycle.py:376,413-436",PERMISSION LEAK + STATUS COLLAPSE
+BackupTokenStore,Supervisor,BackupTokenStore validates; Supervisor selects,Supervisor for priority; store for lifecycle,FACT_COLLECTION,backup_token_store.py;active_cycle.py:300-306,BOOL PROJECTION RISK
+TerminalRuntime,Supervisor,TerminalRuntime evidence; Coordinator supplies context,Supervisor route + TerminalRuntime,FACT_COLLECTION,terminal_runtime.py;active_cycle.py:468-477,CONTEXT AUTHORITY RISK
+Supervisor.arbitrate,ActiveRunner,Supervisor.arbitrate,Supervisor.arbitrate,FINAL_SELECTION,supervisor.py:137-163,SOLE SELECTOR STATICALLY
+RoutingDecision.commit_allowed,ActiveRunner.commit_active_decision,Supervisor metadata + runner guard,Supervisor then ActiveRunner,ROUTING_POLICY,supervisor.py;active_runner.py,CHAIN AUDITED
+PlantCommitAdapter,physical plant,PlantCommitAdapter.commit,PlantCommitAdapter.commit,PLANT_COMMIT,plant_commit.py;active_runner.py,SOLE PLANT OWNER
+ActiveRunner/BackupTokenStore,token lifecycle,ActiveRunner/BackupTokenStore,ActiveRunner/BackupTokenStore,TOKEN_MUTATION,active_runner.py;backup_token_store.py,SOLE TOKEN OWNER
+ActiveRunner/TraceWriter,trace log,ActiveRunner/TraceWriter,ActiveRunner/TraceWriter,TRACE_WRITE,active_runner.py;trace_writer.py,SOLE TRACE PATH
+IndependentEvaluationOracle,post-run analysis,external oracle,IndependentEvaluationOracle,SCIENTIFIC_EVALUATION,PR114;runtime import scan,NO RUNTIME FEEDBACK EDGE

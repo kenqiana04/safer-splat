@@ -1,0 +1,17 @@
+{
+  "coordinator_projection": "backup_valid boolean",
+  "lost_distinctions": [
+    "INVALID",
+    "EXHAUSTED",
+    "NONE_OR_INVALID_OR_EXHAUSTED"
+  ],
+  "priority_owner": "Supervisor.arbitrate",
+  "schema": "BACKUP_STATE_INFORMATION_LOSS_AUDIT_V2",
+  "status": "LATENT_INFORMATION_LOSS_RISK",
+  "store_enum": [
+    "NONE",
+    "VALID",
+    "INVALID",
+    "EXHAUSTED"
+  ]
+}

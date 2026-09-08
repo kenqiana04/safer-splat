@@ -1,0 +1,14 @@
+{
+  "arbitrate_body_unchanged_semantically": true,
+  "arbitrate_present": true,
+  "bypass_body_semantically_unchanged": true,
+  "certify_candidate_present": true,
+  "observed_gap": "Coordinator preinterprets deadline/search/navigation facts before owner call",
+  "route_transition_has_own_policy_guards": true,
+  "route_transition_present": true,
+  "schema": "SUPERVISOR_AUTHORITY_AUDIT_V2",
+  "static_routing_owner": "Supervisor.route_transition",
+  "static_selection_owner": "Supervisor.arbitrate",
+  "status": "COMPLETE_WITH_COORDINATOR_BOUNDARY_FINDINGS",
+  "transition_table_owner": "Supervisor.TransitionTable"
+}

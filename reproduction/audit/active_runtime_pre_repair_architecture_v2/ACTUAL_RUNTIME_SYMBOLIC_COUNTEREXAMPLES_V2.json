@@ -1,0 +1,107 @@
+{
+  "count": 9,
+  "counterexamples": [
+    {
+      "counterexample_id": "CE-AUTH-001",
+      "domain": "A/D/E/J",
+      "evidence": {
+        "lines": [
+          376,
+          393,
+          410
+        ]
+      },
+      "impact": "Coordinator owns deadline/search permission before Supervisor route.",
+      "severity": "CRITICAL"
+    },
+    {
+      "counterexample_id": "CE-AUTH-002",
+      "domain": "A/D/J",
+      "evidence": {
+        "lines": [
+          442,
+          443
+        ]
+      },
+      "impact": "Coordinator suppresses a candidate using its own deadline interpretation before arbitration.",
+      "severity": "CRITICAL"
+    },
+    {
+      "counterexample_id": "CE-DEADLINE-001",
+      "domain": "D",
+      "evidence": {
+        "line": 416
+      },
+      "impact": "Coordinator directly chooses a post-expiry guard event; deadline policy is not solely Supervisor-owned.",
+      "severity": "HIGH"
+    },
+    {
+      "counterexample_id": "CE-EXCEPTION-001",
+      "domain": "H/Q",
+      "evidence": {
+        "pattern": "STAGE_EXCEPTION -> route then unconditional _blocked_result"
+      },
+      "impact": "Stage exceptions cannot follow a frozen route that permits valid backup/terminal handling.",
+      "severity": "CRITICAL"
+    },
+    {
+      "counterexample_id": "CE-AUTH-003",
+      "domain": "A/Q",
+      "evidence": {
+        "pattern": "Coordinator constructs RoutingDecision for repeated state"
+      },
+      "impact": "Coordinator creates a routing result outside Supervisor's transition-table authority.",
+      "severity": "HIGH"
+    },
+    {
+      "counterexample_id": "CE-TRANSITION-001",
+      "domain": "B",
+      "evidence": {
+        "routing_decision_missing": [
+          "action_authority",
+          "new_backup_created",
+          "old_backup_retained",
+          "theorem_interpretation"
+        ],
+        "transition_rule_missing": [
+          "may_start_new_search",
+          "may_start_next_stage",
+          "new_backup_created",
+          "old_backup_retained",
+          "requires_arbitration",
+          "theorem_interpretation"
+        ]
+      },
+      "impact": "Frozen row-authoritative metadata cannot be carried end-to-end.",
+      "severity": "CRITICAL"
+    },
+    {
+      "counterexample_id": "CE-ALTERNATIVE-001",
+      "domain": "E/H",
+      "evidence": {
+        "pattern": "non-ALT_AVAILABLE statuses become empty inventory"
+      },
+      "impact": "SOURCE_INVALID/PROVENANCE_MISSING/UNKNOWN can collapse to ALT_EXHAUSTED semantics.",
+      "severity": "HIGH"
+    },
+    {
+      "counterexample_id": "CE-UNKNOWN-001",
+      "domain": "H",
+      "evidence": {
+        "pattern": "string-token heuristic reason scope"
+      },
+      "impact": "UNKNOWN scope classification is heuristic and can lose frozen global/local/health distinctions.",
+      "severity": "HIGH"
+    },
+    {
+      "counterexample_id": "CE-BACKUP-001",
+      "domain": "F",
+      "evidence": {
+        "line": 302
+      },
+      "impact": "Coordinator projects token lifecycle into a boolean; lifecycle detail is not available in routing context.",
+      "severity": "MEDIUM"
+    }
+  ],
+  "schema": "ACTUAL_RUNTIME_SYMBOLIC_COUNTEREXAMPLES_V2"
+}

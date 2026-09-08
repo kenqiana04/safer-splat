@@ -1,0 +1,13 @@
+{
+  "finalize_trace_only": true,
+  "guards": [
+    "TRIAL_NOT_STARTED",
+    "TRIAL_ALREADY_STARTED",
+    "TRIAL_NOT_READY",
+    "CYCLE_OR_SNAPSHOT_IDENTITY_MISMATCH",
+    "TRIAL_FINALIZED"
+  ],
+  "no_silent_reset": true,
+  "schema": "TRIAL_SESSION_LIFECYCLE_AUDIT_V2",
+  "status": "COMPLETE"
+}

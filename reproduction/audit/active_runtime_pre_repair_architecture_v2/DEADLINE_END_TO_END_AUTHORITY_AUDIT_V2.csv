@@ -1,0 +1,9 @@
+stage,tracker_observes,coordinator_interprets,supervisor_interprets,post_expiry_new_search_blocked,verdict
+CYCLE_BEGIN,True,False,True,False,OBSERVATION_ONLY
+PRIMARY_PROPOSAL_ADMISSION,True,False,True,False,OBSERVATION_ONLY
+C0,True,True,True,False,COORDINATOR_POLICY_LEAK
+L2,True,True,True,False,COORDINATOR_POLICY_LEAK
+L3,True,True,True,False,COORDINATOR_POLICY_LEAK
+ALTERNATIVE_SOURCE_QUERY_ADMISSION,True,False,True,False,OBSERVATION_ONLY
+FINAL_COMMIT_GUARD,True,False,True,False,OBSERVATION_ONLY
+TERMINAL_EVALUATION_ADMISSION,True,False,True,False,OBSERVATION_ONLY

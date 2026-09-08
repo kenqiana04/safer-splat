@@ -1,0 +1,7 @@
+state,store_state,coordinator_visible,identity_validation,mutation_owner,verdict
+NONE,NONE,NOT_PRESENT,snapshot+registry+authority+time,BackupTokenStore/ActiveRunner,PRESERVED
+VALID,VALID,VALID,snapshot+registry+authority+time,BackupTokenStore/ActiveRunner,PRESERVED
+INVALID,INVALID,NOT_VALID,snapshot+registry+authority+time,BackupTokenStore/ActiveRunner,STATE_LOSS_RISK
+EXHAUSTED,EXHAUSTED,NOT_VALID,snapshot+registry+authority+time,BackupTokenStore/ActiveRunner,STATE_LOSS_RISK
+PREPARED,PREPARED,NOT_VALID,snapshot+registry+authority+time,BackupTokenStore/ActiveRunner,PRESERVED
+ACTIVE,ACTIVE,NOT_VALID,snapshot+registry+authority+time,BackupTokenStore/ActiveRunner,PRESERVED

@@ -1,0 +1,21 @@
+{
+  "coordinator_direct_status_branches": [
+    "active_cycle.py:376",
+    "393",
+    "410",
+    "416",
+    "442-443"
+  ],
+  "deadline_owner_expected": "Supervisor",
+  "observation_points": [
+    "cycle start",
+    "proposal admission",
+    "L3 discovery admission",
+    "alternative query admission",
+    "terminal admission",
+    "final commit guard"
+  ],
+  "schema": "DEADLINE_OBSERVATION_AND_USE_AUDIT_V2",
+  "status": "CONFIRMED_AUTHORITY_LEAK",
+  "tracker_is_observation_only": true
+}

@@ -1,0 +1,105 @@
+{
+  "no_repair_executed": true,
+  "nodes": [
+    {
+      "allowed_files": [
+        "active_cycle.py",
+        "runtime_types.py",
+        "supervisor.py"
+      ],
+      "bypass_impact": "must remain unchanged; otherwise fresh BYPASS gate",
+      "can_combine": false,
+      "defects": [
+        "D-AUTH-001",
+        "D-TRANS-001"
+      ],
+      "depends_on": [],
+      "forbidden_files": [
+        "active_runner.py",
+        "plant_commit.py",
+        "backup_token_store.py",
+        "terminal_runtime.py",
+        "trace_writer.py",
+        "run.py",
+        "cbf",
+        "dynamics",
+        "splat"
+      ],
+      "gate": "static authority/43-rule tests",
+      "must_rerun_conformance": true,
+      "node": "R1",
+      "reason": "single authority/metadata root",
+      "task": "REPAIR_ACTIVE_RUNTIME_AUTHORITY_AND_ROUTING_BOUNDARY_V2",
+      "tests": [
+        "coordinator_no_policy",
+        "all_43_frozen_fields_round_trip",
+        "route_owner_static",
+        "deadline_owner_static"
+      ]
+    },
+    {
+      "allowed_files": [
+        "active_cycle.py",
+        "runtime_types.py",
+        "supervisor.py"
+      ],
+      "bypass_impact": "no shared BYPASS changes permitted",
+      "can_combine": false,
+      "defects": [
+        "D-EXC-001",
+        "D-ALT-001"
+      ],
+      "depends_on": [
+        "R1"
+      ],
+      "forbidden_files": [
+        "active_runner.py",
+        "plant_commit.py",
+        "backup_token_store.py",
+        "terminal_runtime.py",
+        "trace_writer.py",
+        "run.py",
+        "cbf",
+        "dynamics",
+        "splat"
+      ],
+      "gate": "typed exception/status preservation",
+      "must_rerun_conformance": true,
+      "node": "R2",
+      "reason": "typed failure/provenance root after authority repair",
+      "task": "REPAIR_ACTIVE_RUNTIME_EXCEPTION_AND_UNKNOWN_ROUTING_V2",
+      "tests": [
+        "stage_exception_route_matrix",
+        "alternative_status_fidelity",
+        "unknown_reason_scope_matrix"
+      ]
+    },
+    {
+      "allowed_files": [
+        "frozen conformance validator and bounded dynamic suite"
+      ],
+      "bypass_impact": "follow BYPASS gate",
+      "can_combine": false,
+      "defects": [],
+      "depends_on": [
+        "R1",
+        "R2"
+      ],
+      "forbidden_files": [
+        "outcome-driven correction"
+      ],
+      "gate": "full contract conformance",
+      "must_rerun_conformance": true,
+      "node": "R3",
+      "reason": "audit findings require fresh contract evidence",
+      "task": "REVALIDATE_ACTIVE_RUNTIME_CONTRACT_CONFORMANCE_V2",
+      "tests": [
+        "PR123 full conformance ladder"
+      ]
+    }
+  ],
+  "only_next_task": "REPAIR_ACTIVE_RUNTIME_AUTHORITY_AND_ROUTING_BOUNDARY_V2",
+  "schema": "PRE_REPAIR_REPAIR_DAG_V2",
+  "smoke_before_revalidation_forbidden": true,
+  "strategy": "STAGED_REPAIR_DAG"
+}

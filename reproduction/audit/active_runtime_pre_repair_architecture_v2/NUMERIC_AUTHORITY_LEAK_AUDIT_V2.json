@@ -1,0 +1,16 @@
+{
+  "coordinator_literals_found": [],
+  "frozen_values": {
+    "actuator_bounds": [
+      -0.1,
+      0.1
+    ],
+    "certification_radius": 0.025,
+    "controller_radius": 0.015,
+    "margin": 0.01,
+    "rho_seg": 0.0
+  },
+  "schema": "NUMERIC_AUTHORITY_LEAK_AUDIT_V2",
+  "source": "AuthorityRegistry/module contracts",
+  "status": "NO_UNAUTHORIZED_NUMERIC_LITERAL_FOUND"
+}

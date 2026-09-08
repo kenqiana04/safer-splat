@@ -1,0 +1,171 @@
+{
+  "count": 33,
+  "invariants": [
+    {
+      "id": "FAA-01",
+      "statement": "one composition owner",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-02",
+      "statement": "Supervisor routing owner",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-03",
+      "statement": "Supervisor selector owner",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-04",
+      "statement": "PlantCommit sole plant owner",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-05",
+      "statement": "43 frozen rules accounted",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-06",
+      "statement": "transition missing/ambiguous typed block",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-07",
+      "statement": "L1 before proposal",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-08",
+      "statement": "L1 once per cycle",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-09",
+      "statement": "fresh candidate bindings",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-10",
+      "statement": "C0 before L2",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-11",
+      "statement": "L2 before L3",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-12",
+      "statement": "no synthetic alternatives",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-13",
+      "statement": "no alternative L1 recompute",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-14",
+      "statement": "deadline observation source identified",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-15",
+      "statement": "deadline policy leak recorded",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-16",
+      "statement": "backup identity validation source identified",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-17",
+      "statement": "terminal route-only requirement recorded",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-18",
+      "statement": "goal-hold disabled",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-19",
+      "statement": "boundary no plant",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-20",
+      "statement": "ActiveRunner commit path preserved",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-21",
+      "statement": "no duplicate token mutation",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-22",
+      "statement": "no duplicate trace mutation",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-23",
+      "statement": "no oracle feedback",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-24",
+      "statement": "no u_des fallback",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-25",
+      "statement": "typed exception path audited",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-26",
+      "statement": "BYPASS evidence preserved",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-27",
+      "statement": "session guards identified",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-28",
+      "statement": "loop guard audited",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-29",
+      "statement": "no real execution",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-30",
+      "statement": "audit continues after findings",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-31",
+      "statement": "claims bounded",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-32",
+      "statement": "repair DAG staged",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    },
+    {
+      "id": "FAA-33",
+      "statement": "only next task explicit",
+      "status": "AUDITED_TRUE_OR_FINDING_RECORDED"
+    }
+  ],
+  "schema": "FULL_ARCHITECTURE_AUDIT_INVARIANTS_V2"
+}
