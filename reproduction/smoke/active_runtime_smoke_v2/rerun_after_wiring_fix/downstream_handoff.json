@@ -1,0 +1,28 @@
+{
+  "schema": "REPAIR_ACTIVE_SMOKE_WIRING_V2_DOWNSTREAM_HANDOFF",
+  "source_pr": 133,
+  "source_branch": "active-runtime-smoke-v2",
+  "completed_repair": "finalization.trace_lock API wiring",
+  "preserve": [
+    "first_attempt artifacts",
+    "rerun trial 10 summary",
+    "rerun trial 10 raw trace",
+    "rerun trial 10 raw trace lock"
+  ],
+  "blocker": {
+    "id": "SMOKE-WIRING-002",
+    "scope": "task-local runner only",
+    "description": "The no-active-commit gate reads the initialized summary count before the actual stack plant count is copied, producing INCONCLUSIVE_NO_ACTIVE_COMMIT despite one committed certified-terminal action.",
+    "runtime_defect": false
+  },
+  "authorized_next_scope": "Move or source the plant commit count before the no-active-commit gate, validate task-local ordering, and rerun the same frozen smoke only under fresh authorization.",
+  "forbidden": [
+    "runtime modification",
+    "controller or map change",
+    "extra trials",
+    "pilot",
+    "scientific oracle",
+    "official100"
+  ],
+  "only_next_task": "REPAIR_ACTIVE_SMOKE_PLANT_COMMIT_COUNT_ORDERING_V2"
+}

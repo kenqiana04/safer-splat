@@ -1,0 +1,24 @@
+{
+  "schema": "ACTIVE_RUNTIME_SMOKE_V2_RERUN_TRACE_AUDIT",
+  "first_attempt_preserved": true,
+  "first_attempt_trace_sha256": "a2deaa00579cae7429d46e5072c232654e0f4309d9f6847333bd5cde8922260b",
+  "first_attempt_trace_lock_file_sha256": "60d463f727545818a0fcfc185fb90fdf4ae687830399ec8d5090378dc5ea611d",
+  "rerun_trial_10": {
+    "completed_cycles": 1,
+    "plant_commit_count": 1,
+    "action_role": "CERTIFIED_TERMINAL",
+    "commit_status": "COMMITTED",
+    "selected_executed_identity_match": true,
+    "trace_record_count": 1,
+    "trace_lock_record_count": 1,
+    "trace_lock_identity": "trace:sha256:89b84f00e43f9e73a7d71fda1eb2ea90150abddb2bcfa2ea5bc2a140ed163fcc",
+    "trace_sha256": "a2deaa00579cae7429d46e5072c232654e0f4309d9f6847333bd5cde8922260b",
+    "trace_lock_file_sha256": "60d463f727545818a0fcfc185fb90fdf4ae687830399ec8d5090378dc5ea611d",
+    "runtime_trace_cardinality_exact": true,
+    "finalization_status": "FINALIZED"
+  },
+  "trial_50": "NOT_RUN_AFTER_PRIOR_HARD_BLOCK",
+  "trial_90": "NOT_RUN_AFTER_PRIOR_HARD_BLOCK",
+  "three_trial_trace_gate": "NOT_ESTABLISHED",
+  "note": "The repaired trace_lock field is captured correctly. The rerun then stopped on a distinct task-local stale-count gate after a real one-record terminal commit."
+}

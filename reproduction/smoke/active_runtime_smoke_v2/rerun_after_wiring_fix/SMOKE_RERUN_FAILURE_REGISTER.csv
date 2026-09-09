@@ -1,0 +1,2 @@
+failure_id,scope,classification,direct_evidence,runtime_defect,repair_in_this_task
+SMOKE-WIRING-002,task-local smoke runner,STALE_PLANT_COMMIT_COUNT_CHECK,"trial 10 summary has plant_commit_count=1 and terminal_commit_count=1 but hard_blocker=INCONCLUSIVE_NO_ACTIVE_COMMIT; runner tests summary plant_commit_count before copying stack plant commit count",false,false

@@ -1,0 +1,9 @@
+/disk1/zlab/maintenance_records/active_runtime_smoke_v2/source_checkout/ns_utils/nerfstudio_utils.py:117: SyntaxWarning: assertion is always true, perhaps remove parentheses?
+  assert(self.pipeline.model, SplatfactoModel)
+Skipping 0 files in dataset split train.
+Skipping 0 files in dataset split test.
+Loading latest checkpoint from load_dir
+✅ Done loading checkpoint from outputs/stonehenge/splatfacto/2024-09-11_100724/nerfstudio_models/step-000029999.ckpt
+There are 116446 Gaussians in the GSplat model
+ball-to-ellipsoid
+{"blocker": "INCONCLUSIVE_NO_ACTIVE_COMMIT", "exit_code": 2, "trial_id": 10}
