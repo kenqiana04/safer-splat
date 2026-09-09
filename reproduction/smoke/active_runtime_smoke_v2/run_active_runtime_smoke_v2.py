@@ -536,9 +536,9 @@ def run_one(checkout: Path, output_dir: Path, trial_id: int) -> int:
                 summary["termination_reason"] = "MAX_COMPLETED_CYCLES"
         finalization = stack["coordinator"].finalize_trial()
         summary["finalization_status"] = finalization.status.value
-        if finalization.lock is not None:
-            summary["trace_lock_identity"] = finalization.lock.identity.value
-            summary["trace_lock_record_count"] = finalization.lock.record_count
+        if finalization.trace_lock is not None:
+            summary["trace_lock_identity"] = finalization.trace_lock.identity.value
+            summary["trace_lock_record_count"] = finalization.trace_lock.record_count
         summary["trace_record_count"] = len(stack["trace"].records)
         if finalization.status != FinalizationStatus.FINALIZED:
             summary["recovery_required_count"] += int(finalization.recovery_required)
