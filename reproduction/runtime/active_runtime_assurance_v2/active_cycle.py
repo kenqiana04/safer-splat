@@ -48,6 +48,7 @@ from .runtime_types import (
     StateIdentity,
     StageFailureEvidence,
     StageFailureKind,
+    TrialFinalizationResult,
     TrialSessionStatus,
     TrialStartResult,
     TraceStatus,
@@ -750,6 +751,15 @@ class ActiveCycleCoordinator:
             raise PublicCycleStateError("TRIAL_ALREADY_FINALIZED")
         if session.status == TrialSessionStatus.FINALIZING:
             raise PublicCycleStateError("TRIAL_FINALIZATION_IN_PROGRESS")
+        if session.status in {TrialSessionStatus.EVIDENCE_INCOMPLETE, TrialSessionStatus.RECOVERY_REQUIRED}:
+            return TrialFinalizationResult(
+                FinalizationStatus.RECOVERY_REQUIRED,
+                None,
+                self.active_runner.trace_writer.frozen_trace_sha256 or "",
+                f"TRIAL_EVALUATION_INELIGIBLE:{session.status.value}",
+                False,
+                True,
+            )
         self._session = replace(session, status=TrialSessionStatus.FINALIZING)
         result = self.active_runner.finalize_trace_result()
         if result.status == FinalizationStatus.FINALIZED:
