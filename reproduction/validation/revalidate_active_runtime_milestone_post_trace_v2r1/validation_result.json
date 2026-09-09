@@ -1,0 +1,35 @@
+{
+  "BYPASS_evidence_reuse": "PASS_REUSE_PR131_BYPASS_EVIDENCE",
+  "CPU_regressions": "PASS",
+  "E2E": "6/6 core + 6/6 extended PASS",
+  "FINAL_DECISION": "AUTHORIZE_ACTIVE_RUNTIME_SMOKE_V2",
+  "FINAL_STATUS": "PASS_REVALIDATE_ACTIVE_RUNTIME_MILESTONE_POST_TRACE_V2R1",
+  "PR127_manifest": "PASS_EXACT_96",
+  "PR131_identity": "PASS_EXACT",
+  "TRACE-F02": "PASS",
+  "TRACE-F03": "PASS",
+  "critical_route_coverage": "100% (38/38)",
+  "defect_closures": {
+    "D-ALT-001": "CLOSED",
+    "D-AUTH-001": "CLOSED",
+    "D-EXC-001": "CLOSED",
+    "D-TRANS-001": "CLOSED"
+  },
+  "eligibility_sentinel": "PASS",
+  "exact_one": "PASS",
+  "execution_counts": {
+    "BYPASS_rerun_arms": 0,
+    "GPU_ACTIVE": 0,
+    "official100": 0,
+    "real_ACTIVE": 0,
+    "scientific_oracle": 0,
+    "smoke": 0
+  },
+  "failure_register_count": 0,
+  "only_next_task": "ACTIVE_RUNTIME_SMOKE_V2",
+  "runtime_source_diff_count": 0,
+  "scenario_result": "96/96 PASS",
+  "schema": "REVALIDATE_ACTIVE_RUNTIME_MILESTONE_POST_TRACE_V2R1_VALIDATION_RESULT",
+  "transition_dynamic_resolver": "43/43 PASS",
+  "transition_row_fidelity": "43/43 PASS"
+}

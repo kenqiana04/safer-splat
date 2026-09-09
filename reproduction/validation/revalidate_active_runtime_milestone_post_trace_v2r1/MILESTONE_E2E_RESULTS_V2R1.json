@@ -1,0 +1,177 @@
+{
+  "canonical_order": "L1->P0->C0->L2->L3",
+  "core": {
+    "passed": 6,
+    "results": [
+      {
+        "detail": {
+          "action_role": "PRIMARY_NAVIGATION",
+          "counters": {
+            "alternative": 0,
+            "bind": 1,
+            "l1": 1,
+            "l2": 1,
+            "l3": 1,
+            "proposal": 1,
+            "terminal": 0
+          },
+          "phases": [
+            "CYCLE_BEGIN",
+            "L1_IMMEDIATE_CERTIFICATION",
+            "PRIMARY_PROPOSAL",
+            "PRIMARY_C0",
+            "PRIMARY_L2",
+            "PRIMARY_L3",
+            "BACKUP_VALIDATION",
+            "ARBITRATION",
+            "COMMIT",
+            "TRACE_APPEND",
+            "CYCLE_COMPLETE"
+          ]
+        },
+        "domain": "e2e_core",
+        "passed": true,
+        "scenario_id": "E2E-01"
+      },
+      {
+        "detail": {
+          "action_role": "RETAINED_BACKUP",
+          "cursor": 1,
+          "source": "L2_FAIL"
+        },
+        "domain": "e2e_core",
+        "passed": true,
+        "scenario_id": "E2E-02"
+      },
+      {
+        "detail": {
+          "calls": 1
+        },
+        "domain": "e2e_core",
+        "passed": true,
+        "scenario_id": "E2E-03"
+      },
+      {
+        "detail": {
+          "trace_count": 1
+        },
+        "domain": "e2e_core",
+        "passed": true,
+        "scenario_id": "E2E-04"
+      },
+      {
+        "detail": {
+          "action_role": "RETAINED_BACKUP"
+        },
+        "domain": "e2e_core",
+        "passed": true,
+        "scenario_id": "E2E-05"
+      },
+      {
+        "detail": {
+          "scope": "UNRESOLVED_SCOPE"
+        },
+        "domain": "e2e_core",
+        "passed": true,
+        "scenario_id": "E2E-06"
+      }
+    ],
+    "total": 6
+  },
+  "covered_action_roles": [
+    "PRIMARY_NAVIGATION",
+    "RETAINED_BACKUP",
+    "CERTIFIED_TERMINAL",
+    "ASSURANCE_BOUNDARY"
+  ],
+  "exception_unknown_routes": "PASS",
+  "extended": {
+    "passed": 6,
+    "results": [
+      {
+        "detail": {
+          "action_role": "RETAINED_BACKUP",
+          "failure": {
+            "authority_identity": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+            "candidate_identity": {
+              "value": "candidate:sha256:36dd078ee78aad6601b5ab0ddb829b262db56a67a11ca796c1caeabacc88ae50"
+            },
+            "cycle_index": 1,
+            "exception_type": "RuntimeError",
+            "failure_kind": "STAGE_EXCEPTION",
+            "original_reason": "post-r2 injected exception",
+            "reason_scope": "INFRASTRUCTURE_HEALTH",
+            "source_phase": "L2",
+            "stage_name": "L2",
+            "state_identity": {
+              "value": "state:sha256:d27f74a4793210e7270af1c8e2e601929b8fcc15452c3e36efcbe9a182d92fb8"
+            },
+            "trial_id": "trial-1",
+            "typed_reason": "STAGE_EXCEPTION:L2:RuntimeError"
+          },
+          "stage": "L2"
+        },
+        "domain": "e2e_extended",
+        "passed": true,
+        "scenario_id": "E2E-07"
+      },
+      {
+        "detail": {
+          "action_role": "CERTIFIED_TERMINAL"
+        },
+        "domain": "e2e_extended",
+        "passed": true,
+        "scenario_id": "E2E-08"
+      },
+      {
+        "detail": {
+          "action_role": "RETAINED_BACKUP",
+          "exhausted": false,
+          "normalized": "SOURCE_INVALID",
+          "status": "SOURCE_INVALID"
+        },
+        "domain": "e2e_extended",
+        "passed": true,
+        "scenario_id": "E2E-09"
+      },
+      {
+        "detail": {
+          "action_role": "RETAINED_BACKUP",
+          "exhausted": false,
+          "normalized": "PROVENANCE_MISSING",
+          "status": "PROVENANCE_MISSING"
+        },
+        "domain": "e2e_extended",
+        "passed": true,
+        "scenario_id": "E2E-10"
+      },
+      {
+        "detail": {
+          "action_role": "RETAINED_BACKUP",
+          "exhausted": true,
+          "normalized": "NO_ALTERNATIVE_AVAILABLE",
+          "status": "NO_ALTERNATIVE_AVAILABLE"
+        },
+        "domain": "e2e_extended",
+        "passed": true,
+        "scenario_id": "E2E-11"
+      },
+      {
+        "detail": {
+          "action_role": "ALTERNATIVE_NAVIGATION",
+          "exhausted": false,
+          "normalized": "ALT_AVAILABLE",
+          "status": "ALT_AVAILABLE"
+        },
+        "domain": "e2e_extended",
+        "passed": true,
+        "scenario_id": "E2E-12"
+      }
+    ],
+    "total": 6
+  },
+  "genuine_public_API": true,
+  "plant_authority": "PASS_SOLE_PLANT_COMMIT_ADAPTER",
+  "result": "PASS",
+  "schema": "MILESTONE_E2E_RESULTS_V2R1"
+}

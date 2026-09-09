@@ -1,0 +1,31 @@
+{
+  "adapted_scenario_ids": [
+    "TRACE-F01",
+    "TRACE-F02",
+    "TRACE-F03"
+  ],
+  "adapter_repository_artifact": "This audit is the sole task-local compatibility artifact; execution helper remained outside the repository to preserve the exact 15-artifact boundary.",
+  "adapter_required": true,
+  "adapter_rules": {
+    "TRACE-F01": "Observe typed NO_ACTION_TRACE_INCOMPLETE, zero plant, no selected action, and non-ready session instead of requiring an exception.",
+    "TRACE-F02": "Require preserved committed facts/receipt/post-state/token, typed COMMITTED_TRACE_INCOMPLETE, non-ready session, and no duplicate plant.",
+    "TRACE-F03": "Require typed FINALIZATION_INCOMPLETE, no early lock, frozen records, run rejection, and exact same-content retry to FINALIZED."
+  },
+  "adapter_sha256": "869627057e7959f1f12cf5fb7338eb92f359b22d4abb6647a0cc03aa93146c19",
+  "expected_semantics_relaxed": false,
+  "reason": "PR127 encoded trace faults through escaped exceptions and a pre-PR128 no-untraced-commit predicate; PR128-PR131 expose typed transaction/finalization results while preserving actual commit facts.",
+  "runtime_modified": false,
+  "scenario_denominator_changed": false,
+  "scenario_ids_changed": false,
+  "schema": "HARNESS_COMPATIBILITY_ADAPTER_AUDIT_V2R1",
+  "unadapted_diagnostic": {
+    "failed": [
+      "TRACE-F01",
+      "TRACE-F02"
+    ],
+    "passed": 94,
+    "scenario_count": 96
+  },
+  "unchanged_scenario_function_count": 93,
+  "verdict": "PASS_MINIMAL_TYPED_RESULT_MAPPING"
+}

@@ -1,0 +1,15 @@
+{
+  "failure_reason": "TRIAL_EVALUATION_INELIGIBLE:EVIDENCE_INCOMPLETE",
+  "finalization_status": "RECOVERY_REQUIRED",
+  "next_cycle_rejected": true,
+  "ordinary_trace_lock": null,
+  "recovery_required": true,
+  "result": "PASS",
+  "retry_allowed": false,
+  "runner_trace_writer_finalize_call_count": 0,
+  "schema": "MILESTONE_ELIGIBILITY_SENTINEL_V2R1",
+  "sentinel_id": "S-ELIGIBILITY-01",
+  "session_after_finalize": "EVIDENCE_INCOMPLETE",
+  "session_before_finalize": "EVIDENCE_INCOMPLETE",
+  "source_evidence_status": "COMMITTED_TRACE_INCOMPLETE"
+}

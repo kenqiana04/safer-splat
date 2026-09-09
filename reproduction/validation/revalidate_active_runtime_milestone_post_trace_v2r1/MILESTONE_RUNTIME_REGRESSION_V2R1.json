@@ -1,0 +1,36 @@
+{
+  "historical_unittest_wrapper_applicability": "SUPERSEDED_ONLY_FOR_TRACE-F01/F02/F03_EXCEPTION_SHAPE; all 93 other functions unchanged",
+  "overall": "PASS",
+  "runtime_source_diff_count": 0,
+  "schema": "MILESTONE_RUNTIME_REGRESSION_V2R1",
+  "tests": [
+    {
+      "command": "python -m unittest discover -s reproduction/runtime/active_runtime_assurance_v2/tests -p test_*.py -q",
+      "name": "current runtime package",
+      "passed": 164,
+      "result": "PASS",
+      "total": 164
+    },
+    {
+      "command": "python -m unittest reproduction.runtime.active_runtime_assurance_v2.tests.test_trace_commit_atomicity_v2r1 -q",
+      "name": "PR129 trace/commit implementation",
+      "passed": 28,
+      "result": "PASS",
+      "total": 28
+    },
+    {
+      "command": "python -m unittest reproduction.runtime.active_runtime_assurance_v2.tests.test_evaluation_eligibility_gate_v2r1 -q",
+      "name": "PR131 eligibility gate",
+      "passed": 3,
+      "result": "PASS",
+      "total": 3
+    },
+    {
+      "command": "execute exact PR127 scenario_definitions with TRACE-F01/F02/F03 adapter",
+      "name": "PR127 exact 96 scenario harness with typed-result compatibility mapping",
+      "passed": 96,
+      "result": "PASS",
+      "total": 96
+    }
+  ]
+}
