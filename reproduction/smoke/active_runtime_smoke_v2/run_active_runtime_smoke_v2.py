@@ -540,21 +540,39 @@ def run_one(checkout: Path, output_dir: Path, trial_id: int) -> int:
             summary["trace_lock_identity"] = finalization.trace_lock.identity.value
             summary["trace_lock_record_count"] = finalization.trace_lock.record_count
         summary["trace_record_count"] = len(stack["trace"].records)
-        if finalization.status != FinalizationStatus.FINALIZED:
-            summary["recovery_required_count"] += int(finalization.recovery_required)
-            hard_blocker = hard_blocker or "BLOCKED_ACTIVE_RUNTIME_SMOKE_BY_FINALIZATION"
-        if summary["trace_record_count"] != summary["completed_cycles"] or summary["trace_lock_record_count"] != summary["trace_record_count"]:
-            hard_blocker = hard_blocker or "BLOCKED_ACTIVE_RUNTIME_SMOKE_BY_TRACE_CARDINALITY"
-        if summary["plant_commit_count"] == 0:
-            hard_blocker = hard_blocker or "INCONCLUSIVE_NO_ACTIVE_COMMIT"
-        if stack["tokens"].invalid_existing_count and summary["retained_backup_commit_count"]:
-            hard_blocker = hard_blocker or "BLOCKED_ACTIVE_RUNTIME_SMOKE_BY_STALE_BACKUP_REUSE"
         summary["token_activation_count"] = stack["tokens"].activation_count
         summary["token_consume_count"] = stack["tokens"].consume_count
         summary["plant_commit_count"] = stack["plant"].commit_count
         for stage in ("L1", "C0", "L2", "L3"):
             summary[stage + "_status_counts"] = {name: int(stack["counters"][stage][name]) for name in ("PASS", "FAIL", "UNKNOWN")}
         summary["deadline_status_counts"] = {name: int(stack["counters"]["DEADLINE"][name]) for name in ("OPEN", "WARNING", "EXPIRED")}
+
+        committed_role_count = sum(
+            summary[key]
+            for key in (
+                "primary_navigation_commit_count",
+                "alternative_navigation_commit_count",
+                "retained_backup_commit_count",
+                "terminal_commit_count",
+            )
+        )
+        if summary["plant_commit_count"] != stack["plant"].commit_count:
+            hard_blocker = hard_blocker or "BLOCKED_ACTIVE_RUNTIME_SMOKE_BY_PLANT_COUNT_CONSISTENCY"
+        if summary["trace_record_count"] != len(stack["trace"].records):
+            hard_blocker = hard_blocker or "BLOCKED_ACTIVE_RUNTIME_SMOKE_BY_TRACE_COUNT_CONSISTENCY"
+        if summary["trace_lock_record_count"] != summary["trace_record_count"]:
+            hard_blocker = hard_blocker or "BLOCKED_ACTIVE_RUNTIME_SMOKE_BY_TRACE_CARDINALITY"
+        if committed_role_count != summary["plant_commit_count"]:
+            hard_blocker = hard_blocker or "BLOCKED_ACTIVE_RUNTIME_SMOKE_BY_COMMIT_ROLE_CARDINALITY"
+        if finalization.status != FinalizationStatus.FINALIZED:
+            summary["recovery_required_count"] += int(finalization.recovery_required)
+            hard_blocker = hard_blocker or "BLOCKED_ACTIVE_RUNTIME_SMOKE_BY_FINALIZATION"
+        if summary["trace_record_count"] != summary["completed_cycles"]:
+            hard_blocker = hard_blocker or "BLOCKED_ACTIVE_RUNTIME_SMOKE_BY_TRACE_CARDINALITY"
+        if summary["plant_commit_count"] == 0:
+            hard_blocker = hard_blocker or "INCONCLUSIVE_NO_ACTIVE_COMMIT"
+        if stack["tokens"].invalid_existing_count and summary["retained_backup_commit_count"]:
+            hard_blocker = hard_blocker or "BLOCKED_ACTIVE_RUNTIME_SMOKE_BY_STALE_BACKUP_REUSE"
     except Exception as exc:
         summary["exception_count"] += 1
         hard_blocker = hard_blocker or f"BLOCKED_ACTIVE_RUNTIME_SMOKE_BY_RUNTIME_EXCEPTION:{type(exc).__name__}:{exc}"
