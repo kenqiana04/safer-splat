@@ -1,0 +1,3 @@
+failure_id,phase,classification,status,real_execution_counter_effect,evidence,disposition
+INFRA-01,BYPASS_PREFLIGHT,PATH_LINK_ENV_PACKAGING_ONLY,RESOLVED,0,"0 solver steps; 0 plant commits; 0 trace locks; missing checkout PYTHONPATH before any real arm","Preserved attempt; linked frozen data path and supplied checkout PYTHONPATH; no source/protocol/lock/data mutation"
+CORE-C12,CORE_VALIDATION,CORE_VALIDATION_EVALUATION_ELIGIBILITY_GAP,CLOSED,0,"C12 now returns RECOVERY_REQUIRED with no trace lock and zero finalize calls","Closed by the sole active_cycle.py eligibility guard"

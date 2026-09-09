@@ -1,0 +1,53 @@
+{
+  "schema": "TRACE_COMMIT_EVALUATION_ELIGIBILITY_GATE_V2R1_REPAIR_DIFF_AUDIT",
+  "upstream_head": "cdef785a87f9dedc47712201025ca13fa028fead",
+  "repair_commit": "d8e8f15559c4dcf6d5aa8197bf991bea745281fc",
+  "changed_runtime_source_files": [
+    "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py"
+  ],
+  "added_test_files": [
+    "reproduction/runtime/active_runtime_assurance_v2/tests/test_evaluation_eligibility_gate_v2r1.py"
+  ],
+  "active_cycle_after_repair": {
+    "git_blob_sha1": "aa49230b5f03993bfc6d1d4a15f519ed77bcd35b",
+    "sha256_worktree_bytes": "78254355e3cb999b53ccdedc18126b721e0e615ea438d60438fee197590c14e8"
+  },
+  "repair": {
+    "owner": "ActiveCycleCoordinator.finalize_trial",
+    "guarded_session_states": ["EVIDENCE_INCOMPLETE", "RECOVERY_REQUIRED"],
+    "result_status": "RECOVERY_REQUIRED",
+    "trace_lock": null,
+    "retry_allowed": false,
+    "recovery_required": true,
+    "failure_reason_prefix": "TRIAL_EVALUATION_INELIGIBLE",
+    "session_status_preserved": true,
+    "active_runner_finalize_called": false,
+    "trace_writer_finalize_called": false
+  },
+  "unchanged_semantics": [
+    "READY normal finalize",
+    "BLOCKED evidence-complete finalize",
+    "FINALIZATION_FAILED exact same-content retry",
+    "FINALIZED reject",
+    "FINALIZING reject"
+  ],
+  "protected_runtime_diff_count": 0,
+  "protected_runtime_files": [
+    "runtime_types.py",
+    "commit_transaction.py",
+    "active_runner.py",
+    "trace_writer.py",
+    "plant_commit.py",
+    "backup_token_store.py",
+    "supervisor.py",
+    "alternative_provider.py",
+    "deadline_runtime.py",
+    "L0/L1/L2/L3 modules"
+  ],
+  "trace_schema_changed": false,
+  "oracle_changed": false,
+  "journal_or_WAL_added": false,
+  "BYPASS_shared_path_changed": false,
+  "RUNTIME_CORRECTION_QUOTA": 0,
+  "verdict": "PASS_MINIMAL_SCOPE"
+}

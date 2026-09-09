@@ -1,0 +1,62 @@
+{
+  "schema": "TRACE_COMMIT_EVALUATION_ELIGIBILITY_GATE_V2R1_POST_REPAIR_CORE_RESULTS",
+  "fixed_core_scenarios_reused_from": "PR130 CORE_VALIDATION_RESULTS.json",
+  "scenario_results": [
+    {"id": "C01", "result": "PASS"},
+    {"id": "C02", "result": "PASS"},
+    {"id": "C03", "result": "PASS"},
+    {"id": "C04", "result": "PASS"},
+    {"id": "C05", "result": "PASS"},
+    {"id": "C06", "result": "PASS"},
+    {"id": "C07", "result": "PASS"},
+    {"id": "C08", "result": "PASS"},
+    {"id": "C09", "result": "PASS"},
+    {"id": "C10", "result": "PASS"},
+    {"id": "C11", "result": "PASS"},
+    {
+      "id": "C12",
+      "result": "PASS",
+      "observed": {
+        "origin_evidence_status": "COMMITTED_TRACE_INCOMPLETE",
+        "session_before_finalize": "EVIDENCE_INCOMPLETE",
+        "finalization_status": "RECOVERY_REQUIRED",
+        "trace_lock": null,
+        "retry_allowed": false,
+        "recovery_required": true,
+        "failure_reason": "TRIAL_EVALUATION_INELIGIBLE:EVIDENCE_INCOMPLETE",
+        "active_runner_finalize_call_count": 0,
+        "trace_writer_finalize_call_count": 0,
+        "session_after_finalize": "EVIDENCE_INCOMPLETE",
+        "run_cycle_rejected": true
+      }
+    }
+  ],
+  "core_summary": {"passed": 12, "total": 12, "failed": []},
+  "adjacent_checks": [
+    {
+      "id": "E01",
+      "source": "PLANT_OUTCOME_UNRESOLVED",
+      "session_before_finalize": "RECOVERY_REQUIRED",
+      "result_status": "RECOVERY_REQUIRED",
+      "trace_lock": null,
+      "finalize_call_count": 0,
+      "session_preserved": true,
+      "evaluation_ineligible": true,
+      "result": "PASS"
+    },
+    {
+      "id": "E02",
+      "source": "NO_ACTION_TRACE_INCOMPLETE",
+      "session_before_finalize": "EVIDENCE_INCOMPLETE",
+      "result_status": "RECOVERY_REQUIRED",
+      "trace_lock": null,
+      "finalize_call_count": 0,
+      "session_preserved": true,
+      "evaluation_ineligible": true,
+      "result": "PASS"
+    }
+  ],
+  "adjacent_summary": {"passed": 2, "total": 2},
+  "lightweight_properties": {"passed": 6, "total": 6},
+  "core_entry_gate_for_bypass": "PASS"
+}
