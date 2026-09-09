@@ -1,0 +1,101 @@
+{
+  "branch": "revalidate-active-runtime-milestone-post-trace-v2r1",
+  "compatibility_adapter_sha256": "869627057e7959f1f12cf5fb7338eb92f359b22d4abb6647a0cc03aa93146c19",
+  "created_at": "2026-09-09T04:28:56.658999Z",
+  "harness_authority_PR127": {
+    "E2E": "6/6 core + 6/6 extended",
+    "head_sha": "72215ffb1b0a0bc9e7cc94155117ac8624ed0aa6",
+    "historical_only_failures": [
+      "TRACE-F02",
+      "TRACE-F03"
+    ],
+    "historical_result": "94/96 PASS",
+    "source_identity_gate": "PASS",
+    "transition": "43/43 PASS"
+  },
+  "harness_sources": [
+    {
+      "PR127_blob": "b4e29d2491156135ab84a47667a013d98a7e0811",
+      "PR131_blob": "b4e29d2491156135ab84a47667a013d98a7e0811",
+      "identity_match": true,
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py",
+      "sha256_worktree_bytes": "df7eedf970e22210c260a0e5606f6cbd885061b52d9037d2deb1517255d93c0c"
+    },
+    {
+      "PR127_blob": "6c65c8fc7848f380e3e47c0abcf7498049f4d98d",
+      "PR131_blob": "6c65c8fc7848f380e3e47c0abcf7498049f4d98d",
+      "identity_match": true,
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/tests/_support.py",
+      "sha256_worktree_bytes": "c329a97243327de5d78bb87ae46d683c71a763c6b7f439232b5799683608cc95"
+    },
+    {
+      "PR127_blob": "fb8d3234561119401c043580b4b3e11adfd7613d",
+      "PR131_blob": "fb8d3234561119401c043580b4b3e11adfd7613d",
+      "identity_match": true,
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/tests/test_post_r2_reconformance.py",
+      "sha256_worktree_bytes": "f80711e350765a2b5a2bf5e605bcab55705c519188e7ec68291b24ab17c1be48"
+    },
+    {
+      "PR127_blob": "55422cf5f8a2a9c8cc2f82653b01c807076c6f23",
+      "PR131_blob": "55422cf5f8a2a9c8cc2f82653b01c807076c6f23",
+      "identity_match": true,
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/POST_R2_TRANSITION_43_EXPECTED_MATRIX_V2.csv",
+      "sha256_worktree_bytes": "be10ce3ada5d91f61a55371a407cd09c857aef0041ae3a674a9cb8eef19e3f07"
+    },
+    {
+      "PR127_blob": "61c14fb55ef2dc998412db931274b0e3fd6ab2f7",
+      "PR131_blob": "61c14fb55ef2dc998412db931274b0e3fd6ab2f7",
+      "identity_match": true,
+      "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/POST_R2_CONFORMANCE_SCENARIO_MANIFEST_V2.json",
+      "sha256_worktree_bytes": "91144e8aa03bed8ba974cb0305ee48293bdff29b0f409764c57944c0ae3108c5"
+    }
+  ],
+  "identity_verified_before_execution": true,
+  "real_execution_authority": false,
+  "repository": "kenqiana04/safer-splat",
+  "runtime_mutation_authority": false,
+  "runtime_source_diff_authority": "ZERO_FROM_PR131",
+  "schema": "ACTIVE_RUNTIME_MILESTONE_POST_TRACE_V2R1_INPUT_LOCK",
+  "task": "REVALIDATE_ACTIVE_RUNTIME_MILESTONE_POST_TRACE_V2R1",
+  "upstream_PR131": {
+    "BYPASS_result_sha256": "87405505a45e21d575c6a4f4cb8907bef57fc6e458ccf9bbe3a5042a826fe598",
+    "base_sha": "cdef785a87f9dedc47712201025ca13fa028fead",
+    "draft": true,
+    "head_branch": "repair-trace-commit-evaluation-eligibility-gate-v2r1",
+    "head_sha": "aa5ffc6216ba92ab0bed5842edcee0b2142faba1",
+    "identity_gate": "PASS",
+    "number": 131,
+    "state": "OPEN",
+    "title": "[Draft] Repair trace/commit evaluation eligibility gate V2R1",
+    "validation_result_sha256": "66905f0f0c745af6abfcafafff4547f5182845c8a2eb66dbbffb331c4fdf4d20"
+  },
+  "upstream_PR131_facts": {
+    "BYPASS_REVALIDATION_REQUIRED": false,
+    "C12": "PASS",
+    "FINAL_DECISION": "ADVANCE_MILESTONE_RECONFORMANCE_POST_TRACE_V2R1",
+    "FINAL_STATUS": "PASS_REPAIR_TRACE_COMMIT_EVALUATION_ELIGIBILITY_GATE_V2R1",
+    "PR129_tests": "28/28 PASS",
+    "adjacent_checks": "2/2 PASS",
+    "bypass_joined_steps": "732/732 EXACT",
+    "bypass_mismatch_count": 0,
+    "bypass_pairs": "5/5 PASS",
+    "bypass_trace_finalization": "5/5 PASS",
+    "core_scenarios": "12/12 PASS",
+    "execution_counts": {
+      "active_gpu_rollouts": 0,
+      "frozen_bypass_qa_pairs": 5,
+      "frozen_bypass_qa_real_arms": 10,
+      "official100": 0,
+      "real_active_rollouts": 0,
+      "scientific_oracle": 0,
+      "smoke": 0
+    },
+    "lightweight_properties": "6/6 PASS",
+    "only_next_task": "REVALIDATE_ACTIVE_RUNTIME_MILESTONE_POST_TRACE_V2R1",
+    "protected_runtime_diff_count": 0,
+    "runtime_change_scope": "PASS_ACTIVE_CYCLE_ONLY",
+    "runtime_regressions": "164/164 PASS",
+    "schema": "TRACE_COMMIT_EVALUATION_ELIGIBILITY_GATE_V2R1_VALIDATION_RESULT",
+    "upstream_identity": "PASS_PR130_EXACT"
+  }
+}

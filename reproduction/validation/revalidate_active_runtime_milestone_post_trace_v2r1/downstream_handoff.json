@@ -1,0 +1,21 @@
+{
+  "BYPASS_evidence": "PASS_REUSE_PR131_BYPASS_EVIDENCE",
+  "E2E": "6/6 core + 6/6 extended PASS",
+  "authorized_next_task": "ACTIVE_RUNTIME_SMOKE_V2",
+  "eligibility_sentinel": "PASS",
+  "milestone_result": "96/96 PASS",
+  "official100_authorized": false,
+  "schema": "ACTIVE_RUNTIME_MILESTONE_POST_TRACE_V2R1_DOWNSTREAM_HANDOFF",
+  "scientific_efficacy_claim_authorized": false,
+  "smoke_requirements": [
+    "freeze exact environment",
+    "engineering-only deadline profile",
+    "minimal trial IDs",
+    "execution budget",
+    "stop/abort rules",
+    "logging requirements"
+  ],
+  "source_branch": "revalidate-active-runtime-milestone-post-trace-v2r1",
+  "source_head_before_commit": "aa5ffc6216ba92ab0bed5842edcee0b2142faba1",
+  "transition": "43/43 + exact-one + critical 100% PASS"
+}

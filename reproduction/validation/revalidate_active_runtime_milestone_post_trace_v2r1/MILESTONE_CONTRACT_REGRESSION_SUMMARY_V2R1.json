@@ -1,0 +1,71 @@
+{
+  "TRACE-F01": {
+    "detail": {
+      "committed": false,
+      "compatibility_mapping": "legacy exception observation -> typed incomplete evidence",
+      "evidence_status": "NO_ACTION_TRACE_INCOMPLETE",
+      "execution_fact": "NO_ACTION_PATH",
+      "ordinary_trace_count": 0,
+      "plant_count": 0,
+      "session_status": "EVIDENCE_INCOMPLETE",
+      "trace_status": "INCOMPLETE"
+    },
+    "status": "PASS"
+  },
+  "TRACE-F02": {
+    "detail": {
+      "committed": true,
+      "compatibility_mapping": "legacy no-untraced-commit assertion -> frozen typed committed-trace-incomplete semantics",
+      "duplicate_plant_count": 0,
+      "evidence_status": "COMMITTED_TRACE_INCOMPLETE",
+      "next_cycle_rejected": true,
+      "plant_count": 1,
+      "post_state_preserved": true,
+      "receipt_preserved": true,
+      "session_status": "EVIDENCE_INCOMPLETE",
+      "token_active": true,
+      "token_not_rolled_back": true,
+      "trace_status": "INCOMPLETE"
+    },
+    "historical_PR127": "FAIL",
+    "status": "PASS"
+  },
+  "TRACE-F03": {
+    "detail": {
+      "compatibility_mapping": "legacy exception observation -> typed finalization result and exact same-content retry",
+      "final_lock_published": true,
+      "final_session_status": "FINALIZED",
+      "first_status": "FINALIZATION_INCOMPLETE",
+      "no_early_lock": true,
+      "plant_calls_unchanged": true,
+      "prior_commit": true,
+      "records_frozen": true,
+      "run_cycle_rejected": true,
+      "same_content_hash": true,
+      "second_status": "FINALIZED"
+    },
+    "historical_PR127": "FAIL",
+    "status": "PASS"
+  },
+  "defect_closures": {
+    "D-ALT-001": {
+      "evidence": "5/5 alternative status routes PASS",
+      "status": "CLOSED"
+    },
+    "D-AUTH-001": {
+      "evidence": "43/43 routes, E2E authority chain, and BYPASS source identity remain PASS",
+      "status": "CLOSED"
+    },
+    "D-EXC-001": {
+      "evidence": "8/8 typed exception routes PASS",
+      "status": "CLOSED"
+    },
+    "D-TRANS-001": {
+      "evidence": "43/43 row fidelity and dynamic exact-one resolution PASS",
+      "status": "CLOSED"
+    }
+  },
+  "evaluation_eligibility": "PASS",
+  "result": "PASS_FOUR_DEFECT_CLOSURES_RETAINED",
+  "schema": "MILESTONE_CONTRACT_REGRESSION_SUMMARY_V2R1"
+}

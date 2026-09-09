@@ -1,0 +1,60 @@
+{
+  "BYPASS_REVALIDATION_REQUIRED": false,
+  "bypass_relevant_source_identities": [
+    {
+      "PR131_blob": "313bece54458f97e8ee6a427ab73f2f6c8ee745e",
+      "current_blob": "313bece54458f97e8ee6a427ab73f2f6c8ee745e",
+      "match": true,
+      "path": "reproduction/runtime/active_runtime_assurance_v2/active_runner.py"
+    },
+    {
+      "PR131_blob": "eca56fbee2c65903434e3cbbe38a29b3e764e884",
+      "current_blob": "eca56fbee2c65903434e3cbbe38a29b3e764e884",
+      "match": true,
+      "path": "reproduction/runtime/active_runtime_assurance_v2/trace_writer.py"
+    },
+    {
+      "PR131_blob": "f9116db0690983252ea0f60d286399b71d644134",
+      "current_blob": "f9116db0690983252ea0f60d286399b71d644134",
+      "match": true,
+      "path": "reproduction/runtime/active_runtime_assurance_v2/plant_commit.py"
+    },
+    {
+      "PR131_blob": "3af371733638bcd6aac9240db38328d9e2f6154f",
+      "current_blob": "3af371733638bcd6aac9240db38328d9e2f6154f",
+      "match": true,
+      "path": "reproduction/runtime/active_runtime_assurance_v2/backup_token_store.py"
+    },
+    {
+      "PR131_blob": "173837401de824fcdbdb8b5b7b9d4dfb8bb43037",
+      "current_blob": "173837401de824fcdbdb8b5b7b9d4dfb8bb43037",
+      "match": true,
+      "path": "reproduction/runtime/active_runtime_assurance_v2/supervisor.py"
+    },
+    {
+      "PR131_blob": "da0fdc6d21f1be25e7674966afdaa101fb53835b",
+      "current_blob": "da0fdc6d21f1be25e7674966afdaa101fb53835b",
+      "match": true,
+      "path": "reproduction/runtime/active_runtime_assurance_v2/runtime_types.py"
+    },
+    {
+      "PR131_blob": "aa49230b5f03993bfc6d1d4a15f519ed77bcd35b",
+      "current_blob": "aa49230b5f03993bfc6d1d4a15f519ed77bcd35b",
+      "match": true,
+      "path": "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py"
+    }
+  ],
+  "real_bypass_arms_rerun": 0,
+  "reused_evidence": {
+    "joined_steps": "732/732 EXACT",
+    "mismatches": 0,
+    "pairs": "5/5 PASS",
+    "result_sha256": "87405505a45e21d575c6a4f4cb8907bef57fc6e458ccf9bbe3a5042a826fe598",
+    "source_PR": 131,
+    "trace_finalization": "5/5 PASS"
+  },
+  "runtime_source_diff_from_PR131": 0,
+  "schema": "MILESTONE_BYPASS_EVIDENCE_REUSE_V2R1",
+  "source_identity_check": "PASS",
+  "verdict": "PASS_REUSE_PR131_BYPASS_EVIDENCE"
+}

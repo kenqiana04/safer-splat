@@ -1,0 +1,627 @@
+{
+  "E2E_source": {
+    "PR127_blob": "b4e29d2491156135ab84a47667a013d98a7e0811",
+    "PR131_blob": "b4e29d2491156135ab84a47667a013d98a7e0811",
+    "identity_match": true,
+    "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py",
+    "sha256_worktree_bytes": "df7eedf970e22210c260a0e5606f6cbd885061b52d9037d2deb1517255d93c0c"
+  },
+  "PR127_head": "72215ffb1b0a0bc9e7cc94155117ac8624ed0aa6",
+  "PR131_head": "aa5ffc6216ba92ab0bed5842edcee0b2142faba1",
+  "compatibility_adapter_scenario_ids": [
+    "TRACE-F01",
+    "TRACE-F02",
+    "TRACE-F03"
+  ],
+  "historical_TRACE_fault_failures": [
+    "TRACE-F02",
+    "TRACE-F03"
+  ],
+  "historical_failed": 2,
+  "historical_passed": 94,
+  "scenario_added_count": 0,
+  "scenario_count": 96,
+  "scenario_ids_unique": true,
+  "scenario_removed_count": 0,
+  "scenario_source": {
+    "PR127_blob": "b4e29d2491156135ab84a47667a013d98a7e0811",
+    "PR131_blob": "b4e29d2491156135ab84a47667a013d98a7e0811",
+    "identity_match": true,
+    "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py",
+    "sha256_worktree_bytes": "df7eedf970e22210c260a0e5606f6cbd885061b52d9037d2deb1517255d93c0c"
+  },
+  "scenarios": [
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-SA_SAFE",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-SA_REPAIR",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-REPAIR_PASS",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-REPAIR_FAIL",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-REPAIR_UNKNOWN",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-R0_DIAGNOSTIC",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-L1_PASS",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-L1_FAIL",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-L1_UNKNOWN_GLOBAL",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-L1_UNKNOWN_HEALTH",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-L1_UNKNOWN_UNRESOLVED",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-P0_PRIMARY",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-P0_NONE",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-C0_PASS",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-C0_FAIL_LOCAL_ALT",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-C0_FAIL_LOCAL_ARB",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-C0_UNKNOWN_LOCAL_ALT",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-C0_UNKNOWN_LOCAL_ARB",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-C0_UNKNOWN_GLOBAL",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-L2_PASS",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-L2_FAIL_ALT",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-L2_FAIL_ARB",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-L2_UNKNOWN_LOCAL_ALT",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-L2_UNKNOWN_LOCAL_ARB",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-L2_UNKNOWN_GLOBAL",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-L3_FOUND",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-L3_ABSENT_ALT",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-L3_ABSENT_ARB",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-L3_UNKNOWN_LOCAL_ALT",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-L3_UNKNOWN_LOCAL_ARB",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-L3_UNKNOWN_GLOBAL",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-ALT_NEXT",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-ALT_DONE",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-ALT_GUARD",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-ARB_NAV",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-ARB_BACKUP",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-ARB_TERMINAL",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-ARB_EVAL_TERMINAL",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-ARB_BOUNDARY",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-BACKUP_COMMIT",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-TERM_ELIGIBLE",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-TERM_NOT_ELIGIBLE",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "transition_43",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-TERM_UNKNOWN",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "exact_one",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-MISSING",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "exact_one",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ROUTE-AMBIGUOUS",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "e2e_core",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "E2E-01",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "e2e_core",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "E2E-02",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "e2e_core",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "E2E-03",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "e2e_core",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "E2E-04",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "e2e_core",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "E2E-05",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "e2e_core",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "E2E-06",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "e2e_extended",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "E2E-07",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "e2e_extended",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "E2E-08",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "e2e_extended",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "E2E-09",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "e2e_extended",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "E2E-10",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "e2e_extended",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "E2E-11",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "e2e_extended",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "E2E-12",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "start_r0",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "START-PASS",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "start_r0",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "START-FAIL",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "start_r0",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "START-UNKNOWN",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "start_r0",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "START-IDENTITY",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "start_r0",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "START-DEADLINE-PROFILE",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "fallback",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "L1-FAIL-BACKUP",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "fallback",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "L3-FAIL-BACKUP",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "alternative",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "ALT-UNRESOLVED",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "terminal",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "TERM-NORMAL-NOCALL",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "terminal",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "TERM-BACKUP-NOCALL",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "terminal",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "TERM-ROUTE-DERIVED",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "backup",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "BACKUP-NONE",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "backup",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "BACKUP-INVALID",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "backup",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "BACKUP-EXHAUSTED",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "trace",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "TRACE-NAV",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "trace",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "TRACE-BACKUP",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "trace",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "TRACE-TERMINAL",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "trace",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "TRACE-BOUNDARY",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "trace_fault",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "TRACE-F01",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "trace_fault",
+      "historical_PR127_result": "FAIL",
+      "scenario_id": "TRACE-F02",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "trace_fault",
+      "historical_PR127_result": "FAIL",
+      "scenario_id": "TRACE-F03",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "bypass",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "BYPASS-PRESERVATION",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "numeric",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "NUMERIC-AUTHORITY",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "session",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "SESSION-BEFORE-START",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "session",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "SESSION-DOUBLE-START",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "session",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "SESSION-CYCLE-MISMATCH",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "exception",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "EXC-L1",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "exception",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "EXC-PRIMARY_PROPOSAL",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "exception",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "EXC-C0",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "exception",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "EXC-L2",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "exception",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "EXC-L3",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "exception",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "EXC-ALT_SEARCH",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "exception",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "EXC-TERMINAL_EVALUATION",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "exception",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "EXC-ARBITRATION",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "reason_scope",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "SCOPE-091",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "reason_scope",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "SCOPE-092",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "reason_scope",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "SCOPE-093",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "reason_scope",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "SCOPE-094",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    },
+    {
+      "domain": "reason_scope",
+      "historical_PR127_result": "PASS",
+      "scenario_id": "SCOPE-095",
+      "source_file": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/run_post_r2_reconformance_v2.py"
+    }
+  ],
+  "schema": "MILESTONE_REUSE_MANIFEST_V2R1",
+  "support_source": {
+    "PR127_blob": "6c65c8fc7848f380e3e47c0abcf7498049f4d98d",
+    "PR131_blob": "6c65c8fc7848f380e3e47c0abcf7498049f4d98d",
+    "identity_match": true,
+    "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/tests/_support.py",
+    "sha256_worktree_bytes": "c329a97243327de5d78bb87ae46d683c71a763c6b7f439232b5799683608cc95"
+  },
+  "transition_fixture": {
+    "PR127_blob": "55422cf5f8a2a9c8cc2f82653b01c807076c6f23",
+    "PR131_blob": "55422cf5f8a2a9c8cc2f82653b01c807076c6f23",
+    "identity_match": true,
+    "path": "reproduction/validation/revalidate_active_runtime_contract_conformance_v2_post_r2/POST_R2_TRANSITION_43_EXPECTED_MATRIX_V2.csv",
+    "sha256_worktree_bytes": "be10ce3ada5d91f61a55371a407cd09c857aef0041ae3a674a9cb8eef19e3f07"
+  },
+  "verdict": "PASS_EXACT_96_REUSED"
+}
