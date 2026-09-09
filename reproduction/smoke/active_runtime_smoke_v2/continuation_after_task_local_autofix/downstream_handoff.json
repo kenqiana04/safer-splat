@@ -1,0 +1,11 @@
+{
+  "schema": "ACTIVE_RUNTIME_SMOKE_V2_FINAL_DOWNSTREAM_HANDOFF",
+  "source_pr": 133,
+  "source_branch": "active-runtime-smoke-v2",
+  "smoke_trials": [10, 50, 90],
+  "smoke_status": "PASS_ACTIVE_RUNTIME_SMOKE_V2",
+  "primary_navigation_commit_count": 200,
+  "evidence_boundary": "Engineering smoke only; no oracle, collision/progress analysis, formal statistics, baseline comparison, or official100.",
+  "preserve": ["all first-attempt evidence", "rerun-after-wiring-fix evidence", "task-local autofix continuation evidence"],
+  "only_next_task": "ACTIVE_RUNTIME_PILOT_V2"
+}

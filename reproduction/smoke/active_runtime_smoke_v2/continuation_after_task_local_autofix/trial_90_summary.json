@@ -1,0 +1,80 @@
+{
+  "C0_status_counts": {
+    "FAIL": 0,
+    "PASS": 200,
+    "UNKNOWN": 0
+  },
+  "L1_status_counts": {
+    "FAIL": 0,
+    "PASS": 200,
+    "UNKNOWN": 0
+  },
+  "L2_status_counts": {
+    "FAIL": 0,
+    "PASS": 200,
+    "UNKNOWN": 0
+  },
+  "L3_status_counts": {
+    "FAIL": 0,
+    "PASS": 200,
+    "UNKNOWN": 0
+  },
+  "action_bound_violation_count": 0,
+  "alternative_navigation_commit_count": 0,
+  "assurance_boundary_count": 0,
+  "completed_cycles": 200,
+  "cycle_time_max": 0.5294898180291057,
+  "cycle_time_median": 0.3070269995369017,
+  "cycle_time_p95": 0.33709306363016367,
+  "deadline_profile_identity": "deadline-profile:sha256:49e8978a1263fa6a8b0ce0506dae56c800ed8a39f94f9b2d74484a740c113045",
+  "deadline_status_counts": {
+    "EXPIRED": 0,
+    "OPEN": 801,
+    "WARNING": 0
+  },
+  "environment": {
+    "cuda_visible_devices": "1",
+    "device_name": "NVIDIA GeForce RTX 4090",
+    "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
+    "numpy": "1.26.4",
+    "python": "3.10.20",
+    "torch": "2.1.2+cu118",
+    "torch_cuda": "11.8",
+    "visible_device_count": 1
+  },
+  "evidence_incomplete_count": 0,
+  "exception_count": 0,
+  "finalization_status": "FINALIZED",
+  "goal_identity": "goal:sha256:8138311360ae30f2d489f703bbdbf9b9924fb03783eeea3e7facdc1338524562",
+  "goal_value": [
+    -0.4097713828086853,
+    0.18193119764328003,
+    0.04459359124302864,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "gpu_released_after_process": null,
+  "hard_blocker": null,
+  "initial_state_identity": "state:sha256:dd9b66afa6b4d881c6e87683cffbd862d15ce5c2dffe3e52eb23ba0c336a4d1b",
+  "map_identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+  "nonfinite_count": 0,
+  "plant_commit_count": 200,
+  "primary_navigation_commit_count": 200,
+  "primary_navigation_count": 200,
+  "process_exit_code": 0,
+  "recovery_required_count": 0,
+  "retained_backup_commit_count": 0,
+  "schema": "ACTIVE_RUNTIME_SMOKE_V2_TRIAL_SUMMARY",
+  "selected_executed_identity_mismatch_count": 0,
+  "startup_status": "PASS",
+  "terminal_commit_count": 0,
+  "termination_reason": "MAX_COMPLETED_CYCLES",
+  "token_activation_count": 200,
+  "token_consume_count": 0,
+  "trace_lock_identity": "trace:sha256:948517b17b22e53c4d71c7bddeed515fbb252222cca02fe8afbe8c790bb6e013",
+  "trace_lock_record_count": 200,
+  "trace_record_count": 200,
+  "trial_id": 90,
+  "wall_time_total": 74.0294568631798
+}

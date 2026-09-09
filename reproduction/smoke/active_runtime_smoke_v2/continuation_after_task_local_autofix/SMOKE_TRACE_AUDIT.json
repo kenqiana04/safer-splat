@@ -1,0 +1,11 @@
+{
+  "schema": "ACTIVE_RUNTIME_SMOKE_V2_FINAL_TRACE_AUDIT",
+  "trial_10": {"cycles": 1, "trace_records": 1, "lock_records": 1, "finalized": true, "selected_executed_match": true},
+  "trial_50": {"cycles": 1, "trace_records": 1, "lock_records": 1, "finalized": true, "selected_executed_match": true},
+  "trial_90": {"cycles": 200, "trace_records": 200, "lock_records": 200, "finalized": true, "selected_executed_match": true},
+  "aggregate": {"cycles": 202, "trace_records": 202, "lock_records": 202, "exact_cardinality": true},
+  "duplicate_plant_commit_count": 0,
+  "unauthorized_plant_commit_count": 0,
+  "trace_cardinality_mismatch_count": 0,
+  "verdict": "PASS_EXACT_TRACE_CARDINALITY_3_OF_3"
+}

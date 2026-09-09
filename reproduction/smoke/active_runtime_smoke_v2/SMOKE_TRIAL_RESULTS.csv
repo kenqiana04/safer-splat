@@ -1,0 +1,4 @@
+trial_id,execution_status,process_exit_code,startup_status,completed_cycles,plant_commit_count,primary_navigation_commit_count,alternative_navigation_commit_count,retained_backup_commit_count,terminal_commit_count,assurance_boundary_count,finalization_status,trace_record_count,trace_lock_record_count,termination_reason,hard_blocker
+10,BLOCKED,2,PASS,1,1,0,0,0,1,0,FINALIZED,1,0,NATIVE_NOT_MOVING,"BLOCKED_ACTIVE_RUNTIME_SMOKE_BY_RUNTIME_EXCEPTION:AttributeError:'TrialFinalizationResult' object has no attribute 'lock'"
+50,NOT_RUN_AFTER_PRIOR_HARD_BLOCK,2,NOT_RUN,0,0,0,0,0,0,0,NOT_RUN,0,0,NOT_RUN_AFTER_PRIOR_HARD_BLOCK,PRIOR_TRIAL_HARD_BLOCK
+90,NOT_RUN_AFTER_PRIOR_HARD_BLOCK,2,NOT_RUN,0,0,0,0,0,0,0,NOT_RUN,0,0,NOT_RUN_AFTER_PRIOR_HARD_BLOCK,PRIOR_TRIAL_HARD_BLOCK

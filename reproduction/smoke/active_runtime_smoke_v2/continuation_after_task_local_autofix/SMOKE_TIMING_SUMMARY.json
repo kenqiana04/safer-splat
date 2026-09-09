@@ -1,0 +1,10 @@
+{
+  "schema": "ACTIVE_RUNTIME_SMOKE_V2_FINAL_TIMING_SUMMARY",
+  "engineering_telemetry_only": true,
+  "trial_10": {"n": 1, "median_s": 0.1297941617667675, "p95_s": 0.1297941617667675, "max_s": 0.1297941617667675},
+  "trial_50": {"n": 1, "median_s": 0.12305060215294361, "p95_s": 0.12305060215294361, "max_s": 0.12305060215294361},
+  "trial_90": {"n": 200, "median_s": 0.3070269995369017, "p95_s": 0.33709306363016367, "max_s": 0.5294898180291057},
+  "aggregate_cycle_count": 202,
+  "aggregate_quantiles": "NOT_RECONSTRUCTED_WITHOUT_RAW_PER_CYCLE_TIMING_VECTOR",
+  "real_time_claim_authorized": false
+}

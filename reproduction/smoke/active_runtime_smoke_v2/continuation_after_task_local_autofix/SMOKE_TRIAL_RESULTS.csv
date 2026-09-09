@@ -1,0 +1,4 @@
+trial_id,evidence_mode,startup,runtime_path_valid,completed_cycles,plant_commits,primary_commits,backup_commits,terminal_commits,boundary_count,termination_reason,trace_records,lock_records,finalization,gpu_clean
+10,REUSED_PRESERVED_RAW,PASS,true,1,1,0,0,1,0,NATIVE_NOT_MOVING,1,1,FINALIZED,true
+50,FRESH_CONTINUATION,PASS,true,1,1,0,0,1,0,NATIVE_NOT_MOVING,1,1,FINALIZED,true
+90,FRESH_CONTINUATION,PASS,true,200,200,200,0,0,0,MAX_COMPLETED_CYCLES,200,200,FINALIZED,true

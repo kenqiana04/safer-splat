@@ -1,0 +1,4 @@
+trial_id,execution_status,startup_status,completed_cycles,plant_commits,primary_commits,backup_commits,terminal_commits,boundary_count,termination_reason,final_supervisor_reason,final_supervisor_rule,trace_records,trace_lock_records,finalization_status,process_exit_code,gpu_released
+10,EXECUTED,PASS,1,1,0,0,1,0,NATIVE_NOT_MOVING,ELIGIBLE_CURRENT_CERTIFIED_TERMINAL_ACTION,NOT_CAPTURED_BY_CURRENT_RUNNER,1,1,FINALIZED,2,true
+50,NOT_RUN_AFTER_PRIOR_HARD_BLOCK,NOT_RUN,0,0,0,0,0,0,NOT_RUN_AFTER_PRIOR_HARD_BLOCK,NOT_AVAILABLE,NOT_AVAILABLE,0,0,NOT_RUN,2,
+90,NOT_RUN_AFTER_PRIOR_HARD_BLOCK,NOT_RUN,0,0,0,0,0,0,NOT_RUN_AFTER_PRIOR_HARD_BLOCK,NOT_AVAILABLE,NOT_AVAILABLE,0,0,NOT_RUN,2,

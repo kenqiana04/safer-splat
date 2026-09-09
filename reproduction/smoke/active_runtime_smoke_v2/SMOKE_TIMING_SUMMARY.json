@@ -1,0 +1,20 @@
+{
+  "schema": "ACTIVE_RUNTIME_SMOKE_V2_TIMING_SUMMARY",
+  "interpretation": "ENGINEERING_SMOKE_ONLY_NO_REAL_TIME_CLAIM",
+  "executed_trial_count": 1,
+  "resolved_cycle_count": 1,
+  "trial_10": {
+    "cycle_time_median_s": 0.1298470553010702,
+    "cycle_time_p95_s": 0.1298470553010702,
+    "cycle_time_max_s": 0.1298470553010702,
+    "wall_time_total_s": 21.6891757119447,
+    "deadline_observation_counts": "UNAVAILABLE_DUE_POST_FINALIZATION_SUMMARY_WIRING_EXCEPTION"
+  },
+  "trial_50": null,
+  "trial_90": null,
+  "aggregate_cycle_time_median_s": 0.1298470553010702,
+  "aggregate_cycle_time_p95_s": 0.1298470553010702,
+  "aggregate_cycle_time_max_s": 0.1298470553010702,
+  "real_time_guarantee": false,
+  "deadline_theorem_validated": false
+}
