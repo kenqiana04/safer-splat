@@ -1,0 +1,80 @@
+{
+  "C0_status_counts": {
+    "FAIL": 1,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "L1_status_counts": {
+    "FAIL": 0,
+    "PASS": 1,
+    "UNKNOWN": 0
+  },
+  "L2_status_counts": {
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "L3_status_counts": {
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "action_bound_violation_count": 0,
+  "alternative_navigation_commit_count": 0,
+  "assurance_boundary_count": 0,
+  "certified_terminal_count": 1,
+  "completed_cycles": 1,
+  "cycle_time_max": 0.12305060215294361,
+  "cycle_time_median": 0.12305060215294361,
+  "cycle_time_p95": 0.12305060215294361,
+  "deadline_profile_identity": "deadline-profile:sha256:49e8978a1263fa6a8b0ce0506dae56c800ed8a39f94f9b2d74484a740c113045",
+  "deadline_status_counts": {
+    "EXPIRED": 0,
+    "OPEN": 5,
+    "WARNING": 0
+  },
+  "environment": {
+    "cuda_visible_devices": "1",
+    "device_name": "NVIDIA GeForce RTX 4090",
+    "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
+    "numpy": "1.26.4",
+    "python": "3.10.20",
+    "torch": "2.1.2+cu118",
+    "torch_cuda": "11.8",
+    "visible_device_count": 1
+  },
+  "evidence_incomplete_count": 0,
+  "exception_count": 0,
+  "finalization_status": "FINALIZED",
+  "goal_identity": "goal:sha256:8ec68d784d85c856836bb01d8ccf62ae1ede676eb64af2b616e0f6bbceb725b6",
+  "goal_value": [
+    0.3118026554584503,
+    -0.01756265014410019,
+    0.046879664063453674,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "gpu_released_after_process": null,
+  "hard_blocker": null,
+  "initial_state_identity": "state:sha256:d5b9fac18c0b06a0afe050f0b8fa2a4385fa28b92caa5574d7312530d3fef3bd",
+  "map_identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+  "nonfinite_count": 0,
+  "plant_commit_count": 1,
+  "primary_navigation_commit_count": 0,
+  "process_exit_code": 0,
+  "recovery_required_count": 0,
+  "retained_backup_commit_count": 0,
+  "schema": "ACTIVE_RUNTIME_SMOKE_V2_TRIAL_SUMMARY",
+  "selected_executed_identity_mismatch_count": 0,
+  "startup_status": "PASS",
+  "terminal_commit_count": 1,
+  "termination_reason": "NATIVE_NOT_MOVING",
+  "token_activation_count": 0,
+  "token_consume_count": 0,
+  "trace_lock_identity": "trace:sha256:5a2200ae615b49cebbc71a8845fbdd36f2ea215787aba21f9c192fbde72e531d",
+  "trace_lock_record_count": 1,
+  "trace_record_count": 1,
+  "trial_id": 50,
+  "wall_time_total": 14.143712208606303
+}

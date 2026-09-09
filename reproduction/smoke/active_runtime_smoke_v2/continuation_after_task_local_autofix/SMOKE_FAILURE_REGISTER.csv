@@ -1,0 +1,7 @@
+failure_id,scope,disposition,runtime_impact,trial_rerun_required,notes
+AF-001,task-local API wiring,FIXED,false,true,"Historical first attempt; frozen trace_lock field used"
+AF-002,task-local summary ordering,FIXED,false,false,"Trial 10 reconstructed from complete preserved evidence"
+AF-003,task-local direct-child environment wrapper,FIXED,false,true,"Zero-runtime trial-50 attempt preserved; exact frozen environment injected"
+AF-004,task-local GPU-release summary plumbing,FIXED_BY_SIDECAR_MERGE,false,false,"GPU UUID query merged into corrected summaries"
+AF-005,task-local trial-10 reporting,FIXED_BY_RAW_RECONSTRUCTION,false,false,"No trial-10 rerun in current task"
+CORE-001,core runtime hard gates,NONE_OBSERVED,false,false,"All core safety/execution anomaly counts zero"
