@@ -1,0 +1,46 @@
+{
+  "schema": "ACTIVE_RUNTIME_SMOKE_V2_INPUT_LOCK",
+  "repository": "kenqiana04/safer-splat",
+  "upstream_pr": 132,
+  "upstream_state": "OPEN_DRAFT",
+  "upstream_title": "[Draft] Revalidate active runtime milestone after trace repair V2R1",
+  "upstream_branch": "revalidate-active-runtime-milestone-post-trace-v2r1",
+  "upstream_head": "8ba397bee31d4c42deebc52104c6409336a96fd9",
+  "upstream_base": "aa5ffc6216ba92ab0bed5842edcee0b2142faba1",
+  "upstream_validation_sha256": "0619ed6d70058245e89af7df17bba0a9f30d275b8c238c0bc1cb36e29ce5f861",
+  "upstream_final_status": "PASS_REVALIDATE_ACTIVE_RUNTIME_MILESTONE_POST_TRACE_V2R1",
+  "upstream_final_decision": "AUTHORIZE_ACTIVE_RUNTIME_SMOKE_V2",
+  "runtime_tree_sha1": "c60be4c1977932c53b37e500e96c5ddf7cd2d820",
+  "runtime_diff_from_upstream": 0,
+  "quick_runtime_gate": {
+    "command": "python -m unittest discover -s reproduction/runtime/active_runtime_assurance_v2/tests -p test_*.py -q",
+    "result": "PASS_164_OF_164",
+    "execution_host": "WINDOWS_FROZEN_BYTE_SEMANTICS",
+    "note": "The Linux checkout raw-byte guard is line-ending-sensitive; canonical Git tree identity is exact and the frozen Windows byte-semantic gate passes."
+  },
+  "source_authorities": {
+    "qa_environment_lock_sha256": "f07e314599e37ea74c0d3989ddd5321f79aab5885f8615506f5280de286042e8",
+    "trial_geometry_and_primary_source_sha256": "aa162853e95bd6f0bc1498ca1ece4daa14904d75eab685579e7f68636d0855ff",
+    "transition_table_sha256": "0dc77f53fe33b94f8c997f4a4c50c7f2fb5d72fb95113dd6e8d7856525d6ad72",
+    "active_cycle_sha256": "c98d87e2ee90ccc2b4aa24b30648ba819c146fcdb42f60674affa1122c28ddf0",
+    "active_runner_sha256": "7d30ac9d156bca398205196101c30da80c23e86fb6f9da98675dd659dffa6018",
+    "supervisor_sha256": "a5c19e4905a4b7a82604a0867e8b5f45497fa79909eecac7e3fcd9e8fe8b728a",
+    "plant_commit_sha256": "267051d457b493f293569750c3dd58c6193d2acd86a2009e554d365cdc6853ff",
+    "gaussian_adapter_sha256": "43cafe974686c85891c4e715e813f5352b23630f0a2210b29e2ebd0d8958248a",
+    "segment_backend_sha256": "3dcd86b707accb754c32bcf4ee3f00a72023c440fd4938585a2ed6a2a49c5077",
+    "backup_certifier_sha256": "449199705d41b52c10468fef40242b52cfe5d7003d2538b9e6142364cac4fe39"
+  },
+  "input_resolution": {
+    "checkpoint": "QA_ENVIRONMENT_LOCK.json exact Stonehenge step-000029999.ckpt",
+    "map_identity": "BYPASS QA semantic map identity",
+    "dt": "run.py and QA_ENVIRONMENT_LOCK.json: 0.05",
+    "initial_state_and_goal": "reference_trial_adapter.py trial_geometry over frozen 100-point Stonehenge circle",
+    "primary_proposal": "reference_trial_adapter.py current CBF.solve_QP path",
+    "query_backend": "GSplatLoader.query_distance plus frozen conservative signed-distance interval backend"
+  },
+  "trial_selection_fixed_before_execution": true,
+  "outcome_conditioned_selection": false,
+  "runtime_mutation_authority": false,
+  "scientific_oracle_authority": false,
+  "official100_authority": false
+}

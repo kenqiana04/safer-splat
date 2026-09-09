@@ -1,0 +1,26 @@
+{
+  "schema": "ACTIVE_RUNTIME_SMOKE_V2_TRACE_AUDIT",
+  "trial_10": {
+    "completed_cycles": 1,
+    "in_memory_trace_record_count": 1,
+    "persisted_trace_line_count": 1,
+    "persisted_trace_sha256": "a2deaa00579cae7429d46e5072c232654e0f4309d9f6847333bd5cde8922260b",
+    "runtime_trace_lock_exists": true,
+    "runtime_trace_lock_file_sha256": "60d463f727545818a0fcfc185fb90fdf4ae687830399ec8d5090378dc5ea611d",
+    "runtime_trace_lock_identity": "trace:sha256:89b84f00e43f9e73a7d71fda1eb2ea90150abddb2bcfa2ea5bc2a140ed163fcc",
+    "runtime_trace_lock_record_count": 1,
+    "runtime_finalization_status": "FINALIZED",
+    "runtime_cardinality_exact": true,
+    "summary_trace_lock_identity": null,
+    "summary_trace_lock_record_count": 0,
+    "summary_extraction_complete": false,
+    "selected_executed_identity_match": true,
+    "action_role": "CERTIFIED_TERMINAL",
+    "commit_status": "COMMITTED"
+  },
+  "trial_50": {"execution_status": "NOT_RUN_AFTER_PRIOR_HARD_BLOCK"},
+  "trial_90": {"execution_status": "NOT_RUN_AFTER_PRIOR_HARD_BLOCK"},
+  "executed_trial_runtime_trace_cardinality": "1/1 EXACT",
+  "three_trial_trace_gate": "FAIL_NOT_ALL_TRIALS_EXECUTED",
+  "failure": "Task-local runner accessed TrialFinalizationResult.lock instead of the frozen trace_lock field after successful runtime finalization."
+}

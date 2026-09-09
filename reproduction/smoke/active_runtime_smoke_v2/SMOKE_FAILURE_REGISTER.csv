@@ -1,0 +1,2 @@
+failure_id,trial_id,phase,category,first_failure,exact_error,runtime_source_mutated,trial_rerun,next_task
+SMOKE-WIRING-001,10,POST_FINALIZE_SUMMARY_EXTRACTION,WIRING,true,"AttributeError: 'TrialFinalizationResult' object has no attribute 'lock'",false,false,REPAIR_ACTIVE_SMOKE_WIRING_V2

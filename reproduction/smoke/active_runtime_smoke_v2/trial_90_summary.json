@@ -1,0 +1,62 @@
+{
+  "C0_status_counts": {
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "L1_status_counts": {
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "L2_status_counts": {
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "L3_status_counts": {
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "action_bound_violation_count": 0,
+  "alternative_navigation_commit_count": 0,
+  "assurance_boundary_count": 0,
+  "completed_cycles": 0,
+  "cycle_time_max": null,
+  "cycle_time_median": null,
+  "cycle_time_p95": null,
+  "deadline_profile_identity": null,
+  "deadline_status_counts": {
+    "EXPIRED": 0,
+    "OPEN": 0,
+    "WARNING": 0
+  },
+  "evidence_incomplete_count": 0,
+  "exception_count": 0,
+  "finalization_status": "NOT_RUN",
+  "goal_identity": null,
+  "goal_value": null,
+  "gpu_released_after_process": null,
+  "hard_blocker": "PRIOR_TRIAL_HARD_BLOCK",
+  "initial_state_identity": null,
+  "map_identity": null,
+  "nonfinite_count": 0,
+  "plant_commit_count": 0,
+  "primary_navigation_commit_count": 0,
+  "process_exit_code": 2,
+  "recovery_required_count": 0,
+  "retained_backup_commit_count": 0,
+  "schema": "ACTIVE_RUNTIME_SMOKE_V2_TRIAL_SUMMARY",
+  "selected_executed_identity_mismatch_count": 0,
+  "startup_status": "NOT_RUN",
+  "terminal_commit_count": 0,
+  "termination_reason": "NOT_RUN_AFTER_PRIOR_HARD_BLOCK",
+  "token_activation_count": 0,
+  "token_consume_count": 0,
+  "trace_lock_identity": null,
+  "trace_lock_record_count": 0,
+  "trace_record_count": 0,
+  "trial_id": 90,
+  "wall_time_total": 0.0
+}

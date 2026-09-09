@@ -1,0 +1,80 @@
+{
+  "C0_status_counts": {
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "L1_status_counts": {
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "L2_status_counts": {
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "L3_status_counts": {
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "action_bound_violation_count": 0,
+  "alternative_navigation_commit_count": 0,
+  "assurance_boundary_count": 0,
+  "certified_terminal_count": 1,
+  "completed_cycles": 1,
+  "cycle_time_max": 0.1298470553010702,
+  "cycle_time_median": 0.1298470553010702,
+  "cycle_time_p95": 0.1298470553010702,
+  "deadline_profile_identity": "deadline-profile:sha256:49e8978a1263fa6a8b0ce0506dae56c800ed8a39f94f9b2d74484a740c113045",
+  "deadline_status_counts": {
+    "EXPIRED": 0,
+    "OPEN": 0,
+    "WARNING": 0
+  },
+  "environment": {
+    "cuda_visible_devices": "1",
+    "device_name": "NVIDIA GeForce RTX 4090",
+    "executable": "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
+    "numpy": "1.26.4",
+    "python": "3.10.20",
+    "torch": "2.1.2+cu118",
+    "torch_cuda": "11.8",
+    "visible_device_count": 1
+  },
+  "evidence_incomplete_count": 0,
+  "exception_count": 1,
+  "finalization_status": "FINALIZED",
+  "goal_identity": "goal:sha256:f97fb78aec3ed8e39775bd9ad772c702a4b7293fe35b282525ddc69c70c7d4dd",
+  "goal_value": [
+    -0.3956659436225891,
+    -0.2624199092388153,
+    0.04936576262116432,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "gpu_released_after_process": true,
+  "hard_blocker": "BLOCKED_ACTIVE_RUNTIME_SMOKE_BY_RUNTIME_EXCEPTION:AttributeError:'TrialFinalizationResult' object has no attribute 'lock'",
+  "initial_state_identity": "state:sha256:479058264cfa8dd412144f5c8dc4d5b0c7f95e18b8d9f6cf88086bc3ee5eaac9",
+  "map_identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+  "nonfinite_count": 0,
+  "plant_commit_count": 1,
+  "primary_navigation_commit_count": 0,
+  "process_exit_code": 2,
+  "recovery_required_count": 0,
+  "retained_backup_commit_count": 0,
+  "schema": "ACTIVE_RUNTIME_SMOKE_V2_TRIAL_SUMMARY",
+  "selected_executed_identity_mismatch_count": 0,
+  "startup_status": "PASS",
+  "terminal_commit_count": 1,
+  "termination_reason": "NATIVE_NOT_MOVING",
+  "token_activation_count": 0,
+  "token_consume_count": 0,
+  "trace_lock_identity": null,
+  "trace_lock_record_count": 0,
+  "trace_record_count": 1,
+  "trial_id": 10,
+  "wall_time_total": 21.6891757119447
+}

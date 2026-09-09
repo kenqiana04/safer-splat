@@ -1,0 +1,22 @@
+{
+  "schema": "ACTIVE_RUNTIME_SMOKE_V2_DOWNSTREAM_HANDOFF",
+  "source_branch": "active-runtime-smoke-v2",
+  "source_upstream": "8ba397bee31d4c42deebc52104c6409336a96fd9",
+  "blocker_id": "SMOKE-WIRING-001",
+  "blocker_class": "WIRING",
+  "exact_failure": "Task-local run_active_runtime_smoke_v2.py reads finalization.lock, while frozen TrialFinalizationResult exposes trace_lock.",
+  "failure_timing": "After trial 10 runtime trace finalized and persisted one valid lock; before the child summary could copy the lock identity/count.",
+  "preserved_evidence": [
+    "trial_10_summary.json",
+    "raw/trial_10/runtime_trace.jsonl",
+    "raw/trial_10/runtime_trace_lock.json"
+  ],
+  "runtime_source_mutation_authorized": false,
+  "runtime_source_mutation_count": 0,
+  "rerun_authorized": false,
+  "trials_50_90_not_started": true,
+  "required_repair_scope": "Task-local smoke runner summary extraction only; no runtime/controller/map/deadline change.",
+  "required_post_repair_rule": "A future explicitly authorized repair task must decide whether and how to resume the frozen trial schedule; this task does not authorize rerun.",
+  "scientific_claim_authorized": false,
+  "authorized_next_task": "REPAIR_ACTIVE_SMOKE_WIRING_V2"
+}
