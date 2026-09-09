@@ -1,0 +1,49 @@
+{
+  "schema": "TRACE_COMMIT_EVALUATION_ELIGIBILITY_GATE_V2R1_REGRESSION_TEST_RESULTS",
+  "tdd_pre_repair": {
+    "command": "python -m unittest reproduction.runtime.active_runtime_assurance_v2.tests.test_evaluation_eligibility_gate_v2r1 -q",
+    "tests_run": 3,
+    "failed": 3,
+    "expected_failure_confirmed": true
+  },
+  "post_repair": [
+    {
+      "name": "focused C12 E01 E02 tests",
+      "command": "python -m unittest reproduction.runtime.active_runtime_assurance_v2.tests.test_evaluation_eligibility_gate_v2r1 -q",
+      "tests_run": 3,
+      "passed": 3,
+      "failed": 0,
+      "exit_code": 0,
+      "result": "PASS"
+    },
+    {
+      "name": "PR129 implementation tests",
+      "command": "python -m unittest reproduction.runtime.active_runtime_assurance_v2.tests.test_trace_commit_atomicity_v2r1 -q",
+      "tests_run": 28,
+      "passed": 28,
+      "failed": 0,
+      "exit_code": 0,
+      "result": "PASS"
+    },
+    {
+      "name": "current runtime package regression suite",
+      "command": "python -m unittest discover -s reproduction/runtime/active_runtime_assurance_v2/tests -p test_*.py -q",
+      "tests_run": 164,
+      "passed": 164,
+      "failed": 0,
+      "exit_code": 0,
+      "result": "PASS"
+    },
+    {
+      "name": "PR130 fixed C01-C12 harness",
+      "command": "task-local mechanical replay of the exact PR130 fixed scenario set",
+      "tests_run": 12,
+      "passed": 12,
+      "failed": 0,
+      "exit_code": 0,
+      "result": "PASS"
+    }
+  ],
+  "PR127_96_case_milestone_reconformance_run": false,
+  "overall": "PASS"
+}

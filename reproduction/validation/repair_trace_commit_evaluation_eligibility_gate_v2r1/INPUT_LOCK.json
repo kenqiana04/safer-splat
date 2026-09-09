@@ -1,0 +1,76 @@
+{
+  "schema": "TRACE_COMMIT_EVALUATION_ELIGIBILITY_GATE_V2R1_INPUT_LOCK",
+  "created_at": "2026-09-09T10:51:23.8645463+08:00",
+  "task": "REPAIR_TRACE_COMMIT_EVALUATION_ELIGIBILITY_GATE_V2R1",
+  "repository": "kenqiana04/safer-splat",
+  "branch": "repair-trace-commit-evaluation-eligibility-gate-v2r1",
+  "upstream": {
+    "pull_request": 130,
+    "state": "OPEN",
+    "draft": true,
+    "title": "[Draft] Validate trace/commit core and BYPASS V2R1",
+    "head_branch": "validate-trace-commit-core-and-bypass-v2r1",
+    "head_sha": "cdef785a87f9dedc47712201025ca13fa028fead",
+    "base_branch": "implement-active-runtime-trace-commit-atomicity-v2r1",
+    "base_sha": "ee7a909eecaeb2eb848f372c753d22f3f2679c42",
+    "identity_gate": "PASS"
+  },
+  "upstream_evidence": {
+    "runtime_diff_count": 0,
+    "core_scenarios": "11/12 PASS",
+    "only_failed_scenario": "C12",
+    "lightweight_properties": "6/6 PASS",
+    "runtime_regressions": "161/161 PASS",
+    "PR129_implementation_tests": "28/28 PASS",
+    "phase_b": "NOT_RUN_BY_CORE_GATE",
+    "BYPASS_REVALIDATION_REQUIRED": true,
+    "only_next_task": "REPAIR_TRACE_COMMIT_EVALUATION_ELIGIBILITY_GATE_V2R1"
+  },
+  "identity_locks": [
+    {
+      "path": "reproduction/runtime/active_runtime_assurance_v2/implementation_evidence/trace_commit_atomicity_v2r1/TRACE_COMMIT_IMPLEMENTATION_V2R1_SOURCE_FREEZE.json",
+      "git_blob_sha1": "e0b4cd80caf802ba03e2733f7f7645d36bb00fca",
+      "sha256_worktree_bytes": "354422cd31842074dea91bb82c61e2c3b421778c4e3f1da0570a31bb9c065523"
+    },
+    {
+      "path": "reproduction/design/active_runtime_trace_commit_atomicity_v2r1/TRACE_COMMIT_ORACLE_COMPATIBILITY_V2R1.json",
+      "git_blob_sha1": "7d1ed05cab690fa8e31f5d0a2ed6147f03ce3903",
+      "sha256_worktree_bytes": "08b8f98e3c9220ac29d59ce063d3e7eda1ca62f75491b212adcbbd6c245ae7e3"
+    },
+    {
+      "path": "reproduction/validation/validate_trace_commit_core_and_bypass_v2r1/CORE_VALIDATION_RESULTS.json",
+      "git_blob_sha1": "b30719ef1b3bfc88de54a6c2bb9f19f8e1eb6be3",
+      "sha256_worktree_bytes": "13f0a89ffafd287cbed8d90e002cc5b07aecada978ab3fbfa0123162ae415742",
+      "locked_fact": "C12 only failure: CORE_VALIDATION_EVALUATION_ELIGIBILITY_GAP"
+    },
+    {
+      "path": "reproduction/validation/validate_trace_commit_core_and_bypass_v2r1/validation_result.json",
+      "git_blob_sha1": "cd3f28905c2c88146f36f8d99b05577e8d6a0f70",
+      "sha256_worktree_bytes": "cda06e8142b67f722e367a955a4956a006a5a4e153282ca789cb31a284f9889f"
+    }
+  ],
+  "runtime_source_before_repair": {
+    "active_cycle.py": {"git_blob_sha1": "cca572c76c9bdf3e67bf4272c7fad30c195c87bf", "sha256_worktree_bytes": "1b582abf5ddcc69fa284f504a8ab86879a7714309de7e71f3bc9213f10fbe59e"},
+    "runtime_types.py": {"git_blob_sha1": "da0fdc6d21f1be25e7674966afdaa101fb53835b", "sha256_worktree_bytes": "d170fd30449c4dcf6a308648593dfaa998211aeabd8ad94e8a1b5870ad5bad42"},
+    "commit_transaction.py": {"git_blob_sha1": "759e37e25666ef0ccf0a745bb1a59459563ca403", "sha256_worktree_bytes": "24eaee01df314d22d8d232fd7c34fd4735c89d2033718230019ed0ddd55016b0"},
+    "active_runner.py": {"git_blob_sha1": "313bece54458f97e8ee6a427ab73f2f6c8ee745e", "sha256_worktree_bytes": "7d30ac9d156bca398205196101c30da80c23e86fb6f9da98675dd659dffa6018"},
+    "trace_writer.py": {"git_blob_sha1": "eca56fbee2c65903434e3cbbe38a29b3e764e884", "sha256_worktree_bytes": "e58bc02e68a70a5c548c8c50047d63ce3c5ad4d58cfd44c0ed3bc73b9e413d0c"},
+    "plant_commit.py": {"git_blob_sha1": "f9116db0690983252ea0f60d286399b71d644134", "sha256_worktree_bytes": "267051d457b493f293569750c3dd58c6193d2acd86a2009e554d365cdc6853ff"},
+    "backup_token_store.py": {"git_blob_sha1": "3af371733638bcd6aac9240db38328d9e2f6154f", "sha256_worktree_bytes": "6aa8ed0e69be7694d880f66ad3ee1b9222af0360e90fca5d491482ac4e308700"},
+    "supervisor.py": {"git_blob_sha1": "173837401de824fcdbdb8b5b7b9d4dfb8bb43037", "sha256_worktree_bytes": "a5c19e4905a4b7a82604a0867e8b5f45497fa79909eecac7e3fcd9e8fe8b728a"}
+  },
+  "frozen_bypass_protocol": {
+    "path": "reproduction/validation/bypass_qa_trace_identity_repair_v2/BYPASS_EQUIVALENCE_PROTOCOL_V2R1.json",
+    "git_blob_sha1": "3a4adec6d06b43ec53ca60e3bb9a71a0a10c2e40",
+    "raw_git_blob_sha256": "f0206a54551d9fc93ef6a5e5c6a6dbf71c043c7882d0c34030180ca215161c52",
+    "protocol_lock_git_blob_sha1": "4178424fb14905c2a2af65108541ab08559f7000",
+    "protocol_lock_raw_git_blob_sha256": "ba2079184d5f97b0c7ce58b37c5e31d96da4aa8d507172690424360cd11376f6",
+    "trial_ids": [10, 30, 50, 70, 90],
+    "execution_order": [50, 10, 30, 70, 90],
+    "fresh_process_per_arm": true,
+    "hard_real_arm_execution_cap": 10
+  },
+  "allowed_runtime_source_change": ["reproduction/runtime/active_runtime_assurance_v2/active_cycle.py"],
+  "runtime_correction_quota_after_repair_commit": 0,
+  "real_execution_counts_at_lock": {"active": 0, "gpu": 0, "smoke": 0, "scientific_oracle": 0, "official100": 0, "real_bypass_pairs": 0}
+}

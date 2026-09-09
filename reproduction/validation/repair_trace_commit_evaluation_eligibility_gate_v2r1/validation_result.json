@@ -1,0 +1,29 @@
+{
+  "schema": "TRACE_COMMIT_EVALUATION_ELIGIBILITY_GATE_V2R1_VALIDATION_RESULT",
+  "upstream_identity": "PASS_PR130_EXACT",
+  "runtime_change_scope": "PASS_ACTIVE_CYCLE_ONLY",
+  "protected_runtime_diff_count": 0,
+  "C12": "PASS",
+  "adjacent_checks": "2/2 PASS",
+  "core_scenarios": "12/12 PASS",
+  "lightweight_properties": "6/6 PASS",
+  "PR129_tests": "28/28 PASS",
+  "runtime_regressions": "164/164 PASS",
+  "bypass_pairs": "5/5 PASS",
+  "bypass_joined_steps": "732/732 EXACT",
+  "bypass_trace_finalization": "5/5 PASS",
+  "bypass_mismatch_count": 0,
+  "BYPASS_REVALIDATION_REQUIRED": false,
+  "execution_counts": {
+    "real_active_rollouts": 0,
+    "active_gpu_rollouts": 0,
+    "smoke": 0,
+    "scientific_oracle": 0,
+    "official100": 0,
+    "frozen_bypass_qa_pairs": 5,
+    "frozen_bypass_qa_real_arms": 10
+  },
+  "FINAL_STATUS": "PASS_REPAIR_TRACE_COMMIT_EVALUATION_ELIGIBILITY_GATE_V2R1",
+  "FINAL_DECISION": "ADVANCE_MILESTONE_RECONFORMANCE_POST_TRACE_V2R1",
+  "only_next_task": "REVALIDATE_ACTIVE_RUNTIME_MILESTONE_POST_TRACE_V2R1"
+}
