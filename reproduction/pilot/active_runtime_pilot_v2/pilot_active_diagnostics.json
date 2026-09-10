@@ -1,0 +1,58 @@
+{
+  "active_constraint_count": "NOT_INSTRUMENTED",
+  "active_trials_with_primary_commit": 5,
+  "certificate_status_counts": {
+    "C0": {
+      "FAIL": 5,
+      "PASS": 598,
+      "UNKNOWN": 0
+    },
+    "L1": {
+      "FAIL": 0,
+      "PASS": 603,
+      "UNKNOWN": 0
+    },
+    "L2": {
+      "FAIL": 0,
+      "PASS": 598,
+      "UNKNOWN": 0
+    },
+    "L3": {
+      "FAIL": 0,
+      "PASS": 598,
+      "UNKNOWN": 0
+    }
+  },
+  "completed_cycle_count": 603,
+  "deadline_status_counts": {
+    "EXPIRED": 0,
+    "OPEN": 2422,
+    "WARNING": 0
+  },
+  "early_terminal_trial_ids": [
+    5,
+    25,
+    45,
+    75,
+    85
+  ],
+  "early_terminal_trials_first_three_cycles": 5,
+  "primary_proposal_qp_failure_count": 0,
+  "role_counts": {
+    "alternative_navigation_commit_count": 0,
+    "assurance_boundary_count": 0,
+    "primary_navigation_commit_count": 598,
+    "retained_backup_commit_count": 0,
+    "terminal_commit_count": 5
+  },
+  "role_rates_per_completed_cycle": {
+    "alternative_navigation_commit_count": 0.0,
+    "assurance_boundary_count": 0.0,
+    "primary_navigation_commit_count": 0.9917081260364843,
+    "retained_backup_commit_count": 0.0,
+    "terminal_commit_count": 0.008291873963515755
+  },
+  "schema": "ACTIVE_RUNTIME_PILOT_V2_ACTIVE_DIAGNOSTICS",
+  "token_activation_count": 598,
+  "token_consume_count": 0
+}

@@ -1,0 +1,102 @@
+{
+  "C0_status_counts": {
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "L1_status_counts": {
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "L2_status_counts": {
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "L3_status_counts": {
+    "FAIL": 0,
+    "PASS": 0,
+    "UNKNOWN": 0
+  },
+  "active_constraint_count": "NOT_INSTRUMENTED",
+  "alternative_navigation_commit_count": 0,
+  "arm": "REFERENCE_CBF_QP",
+  "assurance_boundary_count": 0,
+  "baseline_solver_failure_count": 0,
+  "compute_time_max_s": 0.2892260430380702,
+  "compute_time_median_s": 0.06027090921998024,
+  "compute_time_p95_s": 0.0705455569550395,
+  "deadline_status_counts": {
+    "EXPIRED": 0,
+    "OPEN": 0,
+    "WARNING": 0
+  },
+  "environment": {
+    "cuda": "11.8",
+    "numpy": "1.26.4",
+    "python": "3.10.20",
+    "torch": "2.1.2+cu118"
+  },
+  "episode_wall_time_s": 52.99490793701261,
+  "evaluation_eligible": true,
+  "evidence_incomplete_count": 0,
+  "execution_complete": true,
+  "gpu_released_after_process": true,
+  "hard_blocker": null,
+  "integrity_failure_count": 0,
+  "oracle": {
+    "certification_margin_violation": {
+      "clearance_semantics": "MINIMUM_RESOLVED_1_LIPSCHITZ_LEAF_SIGNED_DISTANCE_LOWER_BOUND_MINUS_EFFECTIVE_RADIUS",
+      "first_violation_cycle": null,
+      "min_clearance_m": 0.009428710361659175,
+      "radius_m": 0.025,
+      "segment_count": 383,
+      "status_counts": {
+        "SAFE": 383
+      },
+      "unknown_segment_count": 0,
+      "violation_segment_count": 0,
+      "violation_trial": false
+    },
+    "evaluated_after_execution_evidence_lock": true,
+    "evaluation_eligible": true,
+    "feedback": false,
+    "final_goal_distance_m": 0.006890140803224889,
+    "goal_l2_tolerance": 0.001,
+    "goal_reached": false,
+    "initial_goal_distance_m": 0.7840409987064608,
+    "normalized_progress": 0.991212014659192,
+    "progress_clipping": "NONE",
+    "represented_map_collision_proxy": {
+      "clearance_semantics": "MINIMUM_RESOLVED_1_LIPSCHITZ_LEAF_SIGNED_DISTANCE_LOWER_BOUND_MINUS_EFFECTIVE_RADIUS",
+      "first_violation_cycle": null,
+      "min_clearance_m": 0.019428710627439116,
+      "radius_m": 0.015,
+      "segment_count": 383,
+      "status_counts": {
+        "SAFE": 383
+      },
+      "unknown_segment_count": 0,
+      "violation_segment_count": 0,
+      "violation_trial": false
+    },
+    "schema": "ACTIVE_RUNTIME_PILOT_V2_POSTHOC_ORACLE"
+  },
+  "oracle_summary_recomputed_from_locked_raw": true,
+  "plant_commit_count": 0,
+  "primary_navigation_commit_count": 0,
+  "primary_proposal_qp_failure_count": 0,
+  "process_exit_code": 0,
+  "raw_evidence_lock": "pilot-raw:sha256:c78b4fe67b47db6af406b9b1ad774e89dbf0bcf7bc77b68cdcaeac6fb7dcad74",
+  "recovery_required_count": 0,
+  "retained_backup_commit_count": 0,
+  "runtime_exception_count": 0,
+  "schema": "ACTIVE_RUNTIME_PILOT_V2_ARM_SUMMARY",
+  "steps_executed": 383,
+  "terminal_commit_count": 0,
+  "token_activation_count": 0,
+  "token_consume_count": 0,
+  "trial_id": 65,
+  "typed_termination": "NATIVE_NOT_MOVING"
+}
