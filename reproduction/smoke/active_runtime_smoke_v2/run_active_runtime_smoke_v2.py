@@ -332,7 +332,12 @@ def build_stack(checkout: Path, output_dir: Path, trial_id: int, config: dict[st
         start,
         DiagnosticR0(),
         l1,
-        PrimaryProposalAdapter(proposal_solver, "CURRENT_PRIMARY_CBF_QP"),
+        PrimaryProposalAdapter(
+            proposal_solver,
+            "CURRENT_PRIMARY_CBF_QP",
+            actuator_bounds=(registry.actuator.u_min, registry.actuator.u_max),
+            source_scalar_contract="IEEE754_BINARY32",
+        ),
         c0,
         l2,
         l3,
