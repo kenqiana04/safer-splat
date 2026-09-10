@@ -1,0 +1,36 @@
+{
+  "schema": "PRIMARY_BOUNDARY_CANONICALIZATION_V2_DOWNSTREAM_HANDOFF",
+  "final_status": "PASS_REPAIR_BUT_PILOT_REVEALS_NEXT_METHOD_LEVEL_SIGNAL",
+  "final_decision": "DIAGNOSE_ACTIVE_RUNTIME_ROUTING_RULE_MISSING_AFTER_PRIMARY_PROGRESSION_V2",
+  "only_next_task": "DIAGNOSE_ACTIVE_RUNTIME_ROUTING_RULE_MISSING_AFTER_PRIMARY_PROGRESSION_V2",
+  "frozen_repair": {
+    "owner": "PrimaryProposalAdapter",
+    "source_contract": "IEEE754_BINARY32",
+    "mapping_scope": "EXACT_PROMOTED_SOURCE_BOUND_REPRESENTATIONS_ONLY",
+    "c0_unchanged": true,
+    "actuator_bounds_unchanged": true,
+    "qp_unchanged": true
+  },
+  "closed_failure": "FLOAT32_ACTUATOR_BOUNDARY_CANONICALIZATION_GAP",
+  "new_signal": {
+    "trial_id": 25,
+    "primary_commits_before_signal": 147,
+    "routing_reason": "ROUTING_RULE_MISSING",
+    "integrity_gate": "TRACE_CARDINALITY_VIOLATION",
+    "plant_commit_after_signal": false,
+    "scientific_metrics": "NOT_ESTIMABLE"
+  },
+  "diagnosis_scope": [
+    "identify the exact source phase/event/deadline/context lookup at step 147",
+    "compare it to the frozen executable transition table",
+    "explain why the boundary result lacked the required trace transaction"
+  ],
+  "forbidden_next_actions": [
+    "parameter tuning",
+    "C0 epsilon or clipping",
+    "QP redesign",
+    "Reference rerun",
+    "official100",
+    "imputing trial 25 scientific metrics"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "PRIMARY_CANDIDATE_ACTUATOR_BOUNDARY_CANONICALIZATION_V2_INPUT_LOCK",
+  "repository": "kenqiana04/safer-splat",
+  "upstream_pr": 135,
+  "upstream_state": "OPEN_DRAFT",
+  "upstream_branch": "diagnose-active-runtime-c0-float-boundary-v2",
+  "upstream_head": "8a0e94ac9da32b0da3ede85543285e761b546f66",
+  "upstream_base_head": "866975b5b3551eaa0111bbf910bbfb7dc80ac69e",
+  "upstream_tree": "834c5a3267323a060f8bb3aa9c395b62e6328c2a",
+  "upstream_diagnosis": "FLOAT32_ACTUATOR_BOUNDARY_CANONICALIZATION_GAP",
+  "upstream_diagnosis_input_lock_sha256": "75cda2a96f629fc8d8333bd82fe0c25678898c5d57654ad4f57dc4c2f8e76d08",
+  "upstream_root_cause_decision_sha256": "fd9fa4d9e1aa77aac2baecf51c6fd2bc8d1a517cd4e65d55870c9d60e604887d",
+  "upstream_float_boundary_analysis_sha256": "35d53906b3dae5e62a8d8a658086984a8a5c18e91794986f82d0931dff246df4",
+  "repair_commit": "3449ad8f633bcd185197b8a05bfaa32dceb3aa72",
+  "pr134_pilot_input_lock_sha256": "82ed017412a1618d3c69e06525d14dae9eb0cf47167abed2d1fdccea8fbdc886",
+  "pr134_pilot_summary_sha256": "02fdd945bfa7b85e141caadb2e4798b0063797dfbcf169ef2fa27ab1edcc38ef",
+  "map_identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+  "trial_ids": [5, 15, 25, 35, 45, 55, 65, 75, 85, 95],
+  "reference_rerun_count": 0,
+  "official100_count": 0,
+  "parameter_tuning_count": 0
+}

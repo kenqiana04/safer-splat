@@ -1,0 +1,33 @@
+{
+  "schema": "PRIMARY_CANDIDATE_ACTUATOR_BOUNDARY_CANONICALIZATION_V2_VALIDATION",
+  "verdict": "PASS_BOUNDARY_CANONICALIZATION_REPAIR_VALIDATION_WITH_NEW_PILOT_SIGNAL",
+  "checks": {
+    "upstream_pr135_identity_exact": true,
+    "canonicalization_exact_binary32_boundary_only": true,
+    "no_epsilon": true,
+    "no_clipping": true,
+    "c0_blob_unchanged": true,
+    "c0_upstream_blob": "3cbf74596980b22eb94d3233134f270ce6cc7f9f",
+    "authority_registry_blob_unchanged": true,
+    "authority_registry_upstream_blob": "c444b077fde51dcffc3c057302d1336dcb7ce0c9",
+    "actuator_bounds_unchanged": true,
+    "qp_unchanged": true,
+    "affected_cycle0_c0_pass": "5/5",
+    "passing_controls_c0_pass_unchanged": "5/5",
+    "true_out_of_bounds_still_fail": true,
+    "targeted_tests": "9/9 PASS",
+    "active_runtime_cpu_tests": "169/169 PASS",
+    "small_smoke_old_root_closed": true,
+    "reference_rerun_count": 0,
+    "repaired_active_terminal_count": 10,
+    "repaired_active_evaluation_eligible_count": 9,
+    "new_signal_preserved_fail_closed": true,
+    "raw_logs_committed": false,
+    "official100_count": 0,
+    "parameter_tuning_count": 0,
+    "gpu_clean_after_execution": true,
+    "minimal_artifact_count": 15
+  },
+  "new_signal": "ROUTING_RULE_MISSING_AFTER_PRIMARY_PROGRESSION",
+  "final_status": "PASS_REPAIR_BUT_PILOT_REVEALS_NEXT_METHOD_LEVEL_SIGNAL"
+}

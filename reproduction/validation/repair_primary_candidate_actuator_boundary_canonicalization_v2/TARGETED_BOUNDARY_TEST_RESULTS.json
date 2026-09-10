@@ -1,0 +1,18 @@
+{
+  "schema": "PRIMARY_BOUNDARY_TARGETED_TEST_RESULTS_V2",
+  "command": "python -m unittest reproduction.runtime.active_runtime_assurance_v2.tests.test_primary_proposal_adapter reproduction.runtime.active_runtime_assurance_v2.tests.test_c0_admission",
+  "tests_run": 9,
+  "tests_passed": 9,
+  "tests_failed": 0,
+  "covered_cases": {
+    "conceptual_lower_and_upper_bounds": "PASS_UNCHANGED",
+    "promoted_binary32_lower_and_upper_bounds": "PASS_CANONICALIZED_TO_CONCEPTUAL_BOUND",
+    "true_out_of_bounds_negative_and_positive": "UNCHANGED_AND_C0_FAIL",
+    "nearest_interior_binary32_values": "PASS_UNCHANGED",
+    "ordinary_interior_values": "PASS_UNCHANGED",
+    "zero": "PASS_UNCHANGED",
+    "near_bound_nonmatching_outside_values": "UNCHANGED",
+    "unknown_source_scalar_contract": "REJECTED"
+  },
+  "c0_failure_reason_for_true_oob": "F_ACTUATOR_ADMISSIBILITY_LOCAL"
+}

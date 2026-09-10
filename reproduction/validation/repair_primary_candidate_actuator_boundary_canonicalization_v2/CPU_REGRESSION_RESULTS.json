@@ -1,0 +1,24 @@
+{
+  "schema": "PRIMARY_BOUNDARY_CPU_REGRESSION_RESULTS_V2",
+  "active_runtime_suite": {
+    "command": "python -m unittest discover -s reproduction/runtime/active_runtime_assurance_v2/tests -p test_*.py",
+    "tests_run": 169,
+    "tests_passed": 169,
+    "tests_failed": 0,
+    "duration_s": 0.536
+  },
+  "targeted_adapter_and_c0": {
+    "tests_run": 9,
+    "tests_passed": 9,
+    "tests_failed": 0,
+    "duration_s": 0.004
+  },
+  "pr135_ten_probe_recheck": {
+    "rows": 10,
+    "affected_pass": 5,
+    "passing_controls_pass": 5,
+    "plant_calls": 0,
+    "oracle_calls": 0
+  },
+  "full_96_scenario_rerun_count": 0
+}
