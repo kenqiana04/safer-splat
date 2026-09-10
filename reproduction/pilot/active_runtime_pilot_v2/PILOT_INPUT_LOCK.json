@@ -1,0 +1,30 @@
+{
+  "schema": "ACTIVE_RUNTIME_PILOT_V2_INPUT_LOCK",
+  "direct_upstream": {
+    "pr": 133,
+    "state": "OPEN_DRAFT",
+    "title": "[Draft] Run Active Runtime Smoke V2",
+    "branch": "active-runtime-smoke-v2",
+    "head": "2a8fd73cdc660fccbf9522f4d24e9d85f2e03a2c",
+    "base_head": "8ba397bee31d4c42deebc52104c6409336a96fd9"
+  },
+  "runtime_source_checkout_head": "8ba397bee31d4c42deebc52104c6409336a96fd9",
+  "runtime_tree": "c60be4c1977932c53b37e500e96c5ddf7cd2d820",
+  "transition_table_blob": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+  "smoke_config_blob": "c4bdbbc0af90d18a20a1600afa52afe036fb0d7a",
+  "smoke_validation_blob": "2f0f63aa899052199ab9926ed7037c77bd53736f",
+  "smoke_handoff_blob": "135611338c80bb902b48e02f107476a8fe916d10",
+  "oracle_input_lock_blob": "cca49cc23a710d933285ccb13b2a3deab97135a3",
+  "collision_margin_contract_blob": "279435f5d2ac86d8a9ac37ba98b6a1b047168736",
+  "goal_oracle_blob": "746984e68f37a4ac59998ec7597f68e348827f03",
+  "progress_oracle_blob": "0c13fcb2865e357c8961779e061bd2550d3fbab9",
+  "trial_ids": [5, 15, 25, 35, 45, 55, 65, 75, 85, 95],
+  "arm_order": ["REFERENCE_CBF_QP", "ACTIVE_RUNTIME_V2"],
+  "pair_count": 10,
+  "arm_count": 20,
+  "max_steps": 500,
+  "runtime_mutation_authority": false,
+  "production_mutation_authority": false,
+  "oracle_feedback": false,
+  "outcome_conditioned_trial_selection": false
+}

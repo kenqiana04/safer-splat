@@ -1,0 +1,63 @@
+{
+  "schema": "ACTIVE_RUNTIME_PILOT_V2_CONFIG",
+  "trial_ids": [5, 15, 25, 35, 45, 55, 65, 75, 85, 95],
+  "arm_order": ["REFERENCE_CBF_QP", "ACTIVE_RUNTIME_V2"],
+  "serial_execution": true,
+  "separate_process_per_arm": true,
+  "max_steps": 500,
+  "seed": 0,
+  "environment": {
+    "conda_environment": "/disk1/zlab/conda_envs/safer_splat_official",
+    "python": "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
+    "CUDA_VISIBLE_DEVICES": "1",
+    "PYTHONHASHSEED": "0",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "map_relative_path": "outputs/stonehenge/splatfacto/2024-09-11_100724",
+  "map_identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+  "map_artifacts": [
+    {"relative_path": "config.yml", "size": 6933, "sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e"},
+    {"relative_path": "dataparser_transforms.json", "size": 312, "sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e"},
+    {"relative_path": "nerfstudio_models/step-000029999.ckpt", "size": 92344786, "sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d"}
+  ],
+  "controller": {
+    "proposal_source": "CURRENT_PRIMARY_CBF_QP",
+    "alpha": 5.0,
+    "beta": 1.0,
+    "controller_radius": 0.015,
+    "distance_method": "ball-to-ellipsoid",
+    "actuator_bounds": [-0.1, 0.1]
+  },
+  "certification": {
+    "query_backend": "CURRENT_GSPLAT_FULL_QUERY_WITH_CONSERVATIVE_SIGNED_DISTANCE_INTERVAL",
+    "certification_effective_radius": 0.025,
+    "rho_seg": 0.0,
+    "terminal_velocity_tolerance": 1e-12
+  },
+  "dynamics": {
+    "identity": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1",
+    "dt": 0.05,
+    "velocity_bounds": [-0.1, 0.1]
+  },
+  "deadline_profile": {
+    "cycle_deadline_duration": 1.0,
+    "latest_safe_commit": 0.8,
+    "warning_reserve": 0.2,
+    "stage_budgets": [],
+    "clock_identity": "MONOTONIC_CLOCK_ACTIVE_SMOKE_V2"
+  },
+  "oracle": {
+    "feedback": false,
+    "posthoc_only": true,
+    "collision_radius_m": 0.015,
+    "certification_margin_radius_m": 0.025,
+    "rho_seg": 0.0,
+    "goal_l2_tolerance": 0.001,
+    "progress_clipping": "NONE",
+    "segment_backend": "CONSERVATIVE_SIGNED_DISTANCE_LIPSCHITZ_INTERVAL"
+  },
+  "official100_enabled": false,
+  "statistical_inference_enabled": false
+}
