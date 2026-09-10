@@ -1,0 +1,49 @@
+{
+  "schema": "ACTIVE_RUNTIME_C0_FLOAT_BOUNDARY_ROOT_CAUSE_DECISION_V2",
+  "static_c0_branch_proof": {
+    "nonfinite_or_wrong_dimension": "UNKNOWN:CANDIDATE_NONFINITE_OR_WRONG_DIMENSION",
+    "state_or_map_identity_mismatch": "UNKNOWN:CANDIDATE_STATE_OR_MAP_IDENTITY_MISMATCH",
+    "unlawful_source": "FAIL:SOURCE_INVALID",
+    "actuator_out_of_bounds": "FAIL:F_ACTUATOR_ADMISSIBILITY_LOCAL",
+    "otherwise": "PASS:C0_PASS",
+    "source": "reproduction/runtime/active_runtime_assurance_v2/c0_admission.py:15-23"
+  },
+  "primary_provenance_proof": {
+    "adapter_source_type": "PRIMARY_NATIVE_CBF_QP",
+    "lawful": true,
+    "conversion": "tuple(float(value) for value in raw)",
+    "sources": [
+      "reproduction/runtime/active_runtime_assurance_v2/primary_proposal_adapter.py:27-30",
+      "reproduction/runtime/active_runtime_assurance_v2/runtime_types.py:283-287"
+    ]
+  },
+  "observations": {
+    "failing_trial_count": 5,
+    "all_failing_reasons_actuator_local": true,
+    "offending_component_count": 7,
+    "class_A_count": 7,
+    "class_B_count": 0,
+    "class_C_count": 0,
+    "all_provenance_lawful": true,
+    "all_reference_first_actions_exactly_equal_probe_candidates": true,
+    "terminal_is_downstream_fallback": true
+  },
+  "root_cause": "FLOAT32_ACTUATOR_BOUNDARY_CANONICALIZATION_GAP",
+  "root_causal_statement": "Float32 CBF-QP representations of conceptual +/-0.1 are promoted unchanged to Python float and rejected by C0's strict comparison against conceptual Python bounds.",
+  "amplifiers": [
+    "NO_RETAINED_BACKUP_AT_CYCLE0",
+    "SOURCE_NATIVE_EXISTING_ALTERNATIVE_INVENTORY_ZERO",
+    "INITIAL_VELOCITY_ZERO",
+    "CURRENT_CERTIFIED_TERMINAL_ELIGIBLE"
+  ],
+  "repair_options": [
+    {"option": "A", "name": "SOURCE_BOUNDARY_CANONICALIZATION", "scope": "Only map a component exactly equal to the source float32 representation of a frozen bound to the conceptual bound.", "changes_c0_comparator_semantics": false, "clips_true_violation": false, "recommendation": "PREFERRED"},
+    {"option": "B", "name": "ULP_AWARE_C0_COMPARISON", "scope": "Admit values within a tolerance around the bound.", "changes_c0_comparator_semantics": true, "clips_true_violation": false, "recommendation": "NOT_PREFERRED_FOR_THIS_CAUSE"},
+    {"option": "C", "name": "QP_ACTUATOR_BOX_CONSTRAINTS", "scope": "Alter the source QP feasible set.", "changes_c0_comparator_semantics": false, "clips_true_violation": false, "recommendation": "NOT_JUSTIFIED_WITHOUT_TRUE_OUT_OF_BOUND_VALUES"}
+  ],
+  "runtime_changed": false,
+  "v1_or_pilot_result_changed": false,
+  "final_status": "PASS_DIAGNOSE_ACTIVE_RUNTIME_C0_FLOAT_BOUNDARY_V2",
+  "final_decision": "REPAIR_PRIMARY_CANDIDATE_ACTUATOR_BOUNDARY_CANONICALIZATION_V2",
+  "only_next_task": "REPAIR_PRIMARY_CANDIDATE_ACTUATOR_BOUNDARY_CANONICALIZATION_V2"
+}

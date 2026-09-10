@@ -1,0 +1,33 @@
+{
+  "schema": "ACTIVE_RUNTIME_C0_FLOAT_BOUNDARY_DIAGNOSIS_V2_DOWNSTREAM_HANDOFF",
+  "authorized_next_task": "REPAIR_PRIMARY_CANDIDATE_ACTUATOR_BOUNDARY_CANONICALIZATION_V2",
+  "preferred_repair": "SOURCE_BOUNDARY_CANONICALIZATION",
+  "repair_constraints": {
+    "modify_only_minimal_canonicalization_owner": true,
+    "frozen_actuator_bounds_remain": [-0.1, 0.1],
+    "arbitrary_clipping_forbidden": true,
+    "true_out_of_bound_values_must_still_fail": true,
+    "targeted_c0_boundary_regressions_required": true,
+    "affected_trial_ids": [5, 25, 45, 75, 85],
+    "passing_control_trial_ids": [15, 35, 55, 65, 95],
+    "small_smoke_required_before_pilot_continuation": true,
+    "rerun_active_pilot_arm_count": 10,
+    "reuse_pr134_reference_arm_count": 10,
+    "rerun_reference_arm_count": 0,
+    "official100_count": 0
+  },
+  "frozen_evidence_to_preserve": {
+    "pr134_head": "866975b5b3551eaa0111bbf910bbfb7dc80ac69e",
+    "c0_failure_count": 5,
+    "affected_trials": [5, 25, 45, 75, 85],
+    "root_cause": "FLOAT32_ACTUATOR_BOUNDARY_CANONICALIZATION_GAP"
+  },
+  "not_authorized_in_this_task": [
+    "RUNTIME_REPAIR",
+    "FULL_PILOT_RERUN",
+    "REFERENCE_RERUN",
+    "OFFICIAL100",
+    "ACTUATOR_BOUND_CHANGE",
+    "MAP_OR_CONTROLLER_CHANGE"
+  ]
+}

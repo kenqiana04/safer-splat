@@ -1,0 +1,24 @@
+{
+  "schema": "ACTIVE_RUNTIME_C0_REFERENCE_COMPARABILITY_V2",
+  "same_source_cbf_qp": true,
+  "first_step_probe_matches_reference_exactly_for_all_10_trials": true,
+  "failing_trials": [
+    {"trial_id": 5, "reference_first_action": [-0.10000000149011612, -0.10000000149011612, 0.0031727957539260387], "probe_exact_match": true, "reference_steps": 168, "reference_progress": 0.29229643555702833, "collision_proxy_trial": false, "min_collision_clearance_m": 0.014440759354136933, "margin_violation_trial": false, "min_margin_clearance_m": 0.0044407599948753235},
+    {"trial_id": 25, "reference_first_action": [0.0621945783495903, -0.10000000149011612, 0.015800148248672485], "probe_exact_match": true, "reference_steps": 333, "reference_progress": 0.8531383172495484, "collision_proxy_trial": false, "min_collision_clearance_m": 0.009139280799842463, "margin_violation_trial": false, "min_margin_clearance_m": 5.400667782244455e-06},
+    {"trial_id": 45, "reference_first_action": [0.09999999403953552, -0.10000000149011612, 0.028173254802823067], "probe_exact_match": true, "reference_steps": 51, "reference_progress": 0.06684994582707256, "collision_proxy_trial": false, "min_collision_clearance_m": 0.017333378375291905, "margin_violation_trial": false, "min_margin_clearance_m": 0.007333378085387621},
+    {"trial_id": 75, "reference_first_action": [-0.10000000149011612, 0.09999999403953552, 0.04582265391945839], "probe_exact_match": true, "reference_steps": 238, "reference_progress": 0.6139029556217381, "collision_proxy_trial": false, "min_collision_clearance_m": 0.012095852416915867, "margin_violation_trial": false, "min_margin_clearance_m": 0.002095852080670751},
+    {"trial_id": 85, "reference_first_action": [-0.10000000149011612, 0.10000000149011612, 0.051367729902267456], "probe_exact_match": true, "reference_steps": 87, "reference_progress": 0.21577868953147084, "collision_proxy_trial": false, "min_collision_clearance_m": 0.02157847997662287, "margin_violation_trial": false, "min_margin_clearance_m": 0.011578479719984191}
+  ],
+  "active_cycle0_facts": {
+    "all_five_l1_pass": true,
+    "all_five_c0_fail": true,
+    "all_five_l2_not_run": true,
+    "all_five_l3_not_run": true,
+    "all_five_terminal_selected": true,
+    "all_five_progress_zero": true,
+    "all_five_collision_proxy_trial": false,
+    "all_five_margin_violation_trial": false
+  },
+  "conclusion": "ACTIVE_C0_NUMERIC_ADMISSION_MISMATCH",
+  "map_task_confound_verdict": "MAP_TASK_DIFFICULTY_NOT_PRIMARY_EXPLANATION_FOR_THE_FIVE_CYCLE0_C0_REJECTIONS"
+}
