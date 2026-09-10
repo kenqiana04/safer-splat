@@ -113,7 +113,12 @@ def build_public_cycle(config: dict | None = None):
         start_admission,
         DiagnosticR0(),
         l1_runtime,
-        PrimaryProposalAdapter(proposal_backend, "controller:fixture"),
+        PrimaryProposalAdapter(
+            proposal_backend,
+            "controller:fixture",
+            actuator_bounds=(registry.actuator.u_min, registry.actuator.u_max),
+            source_scalar_contract="IEEE754_BINARY32",
+        ),
         C0Admission(registry),
         L2Runtime(l2_backend, registry),
         L3Runtime(l3_backend, registry),

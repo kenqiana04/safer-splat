@@ -1,0 +1,6 @@
+id,scope,status,classification,evidence,next_action
+FR-001,PR135 cycle0 C0 boundary failures,CLOSED,FLOAT32_ACTUATOR_BOUNDARY_CANONICALIZATION_GAP,5/5 affected P0-C0 rechecks PASS after exact representation mapping,NONE
+FR-002,true actuator out-of-bound preservation,PASS,REGRESSION_GUARD,"-0.100001 and +0.100001 unchanged; C0 F_ACTUATOR_ADMISSIBILITY_LOCAL",NONE
+FR-003,passing controls,PASS,NONINTERFERENCE,5/5 controls unchanged and C0 PASS,NONE
+FR-004,trial25 repaired Active Pilot,OPEN,METHOD_RUNTIME_SIGNAL,"147 certified primary commits followed by ROUTING_RULE_MISSING and trace-cardinality fail-closed",DIAGNOSE_ACTIVE_RUNTIME_ROUTING_RULE_MISSING_AFTER_PRIMARY_PROGRESSION_V2
+FR-005,scientific metrics for trial25,NOT_ESTIMABLE,EVALUATION_INELIGIBLE,execution_complete=false and no valid posthoc oracle,Do not impute or include in paired metrics

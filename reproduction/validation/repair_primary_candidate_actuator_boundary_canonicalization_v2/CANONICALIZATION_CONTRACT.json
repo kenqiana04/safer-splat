@@ -1,0 +1,30 @@
+{
+  "schema": "PRIMARY_CANDIDATE_ACTUATOR_BOUNDARY_CANONICALIZATION_CONTRACT_V2",
+  "owner": "PrimaryProposalAdapter",
+  "source_type": "PRIMARY_NATIVE_CBF_QP",
+  "source_scalar_contract": "IEEE754_BINARY32",
+  "conceptual_lower_bound": [-0.1, -0.1, -0.1],
+  "conceptual_upper_bound": [0.1, 0.1, 0.1],
+  "mapping": [
+    {
+      "condition": "value == float(binary32(low_i)) and float(binary32(low_i)) != low_i",
+      "result": "low_i"
+    },
+    {
+      "condition": "value == float(binary32(high_i)) and float(binary32(high_i)) != high_i",
+      "result": "high_i"
+    },
+    {
+      "condition": "otherwise",
+      "result": "value unchanged"
+    }
+  ],
+  "binary32_lower_representation": -0.10000000149011612,
+  "binary32_upper_representation": 0.10000000149011612,
+  "no_generic_epsilon": true,
+  "no_clipping": true,
+  "unknown_scalar_contract_rejected": true,
+  "c0_comparator_unchanged": true,
+  "actuator_bounds_unchanged": true,
+  "qp_unchanged": true
+}

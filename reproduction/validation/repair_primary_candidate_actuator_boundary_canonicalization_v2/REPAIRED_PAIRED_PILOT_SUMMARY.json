@@ -1,0 +1,83 @@
+{
+  "schema": "REPAIRED_PAIRED_ACTIVE_RUNTIME_PILOT_SUMMARY_V2",
+  "descriptive_only": true,
+  "scheduled_pair_count": 10,
+  "reference_terminal_eligible_count": 10,
+  "reference_rerun_count": 0,
+  "repaired_active_terminal_count": 10,
+  "repaired_active_execution_complete_count": 9,
+  "repaired_active_evaluation_eligible_count": 9,
+  "eligible_paired_comparison_count": 9,
+  "excluded_pair": {
+    "trial_id": 25,
+    "reason": "ROUTING_RULE_MISSING followed by TRACE_CARDINALITY_VIOLATION",
+    "partial_primary_commits_preserved": 147,
+    "scientific_metrics": "NOT_ESTIMABLE"
+  },
+  "old_cycle0_float_boundary_c0_fail_count": 0,
+  "primary_commit_trial_count": {
+    "before_repair": 5,
+    "after_repair_any_commit": 10,
+    "denominator": 10
+  },
+  "early_terminal_trial_count": {
+    "before_repair": 5,
+    "after_repair": 0,
+    "denominator": 10
+  },
+  "repaired_active_eligible_outcomes": {
+    "collision_proxy_trial_count": 0,
+    "collision_proxy_denominator": 9,
+    "certification_margin_violation_trial_count": 0,
+    "certification_margin_denominator": 9,
+    "goal_reached_count": 0,
+    "goal_denominator": 9,
+    "normalized_progress_mean": 0.28301738912546315,
+    "normalized_progress_median": 0.21577868953147084,
+    "normalized_progress_min": 0.002329376392926384,
+    "normalized_progress_max": 0.991212014659192,
+    "compute_median_across_trial_medians_s": 0.265477673150599,
+    "compute_median_across_trial_p95_s": 0.31399576272815466
+  },
+  "old_active_all_ten_for_context_only": {
+    "normalized_progress_mean": 0.13583284755918582,
+    "normalized_progress_median": 0.001164688196463192,
+    "denominator": 10,
+    "comparability_warning": "The repaired metrics have denominator 9 because trial 25 is not evaluation-eligible."
+  },
+  "paired_eligible_nine": {
+    "progress_delta_active_minus_reference_mean": 0.0,
+    "progress_delta_active_minus_reference_median": 0.0,
+    "min_collision_clearance_delta_m_mean": 0.0,
+    "min_collision_clearance_delta_m_median": 0.0,
+    "goal_discordance_count": 0
+  },
+  "formerly_zero_progress_trials": {
+    "5": 0.29229643555702833,
+    "25": "NOT_ESTIMABLE_DUE_TO_ROUTING_TRACE_BLOCKER",
+    "45": 0.06684994582707256,
+    "75": 0.6139029556217381,
+    "85": 0.21577868953147084
+  },
+  "eligible_role_counts": {
+    "primary_navigation_commit": 1142,
+    "alternative_navigation_commit": 0,
+    "retained_backup_commit": 0,
+    "terminal_commit": 0,
+    "assurance_boundary_trace": 0
+  },
+  "excluded_partial_execution": {
+    "primary_navigation_commit": 147,
+    "untraced_boundary_attempt": 1
+  },
+  "eligible_certificate_status_counts": {
+    "L1": {"PASS": 1142, "FAIL": 0, "UNKNOWN": 0},
+    "C0": {"PASS": 1142, "FAIL": 0, "UNKNOWN": 0},
+    "L2": {"PASS": 1142, "FAIL": 0, "UNKNOWN": 0},
+    "L3": {"PASS": 1142, "FAIL": 0, "UNKNOWN": 0}
+  },
+  "primary_proposal_qp_failure_count": 0,
+  "eligible_deadline_status_counts": {"OPEN": 4577, "WARNING": 0, "EXPIRED": 0},
+  "new_method_level_signal": "ROUTING_RULE_MISSING_AFTER_147_CERTIFIED_PRIMARY_COMMITS_IN_TRIAL_25",
+  "decision_case": "CASE_B"
+}

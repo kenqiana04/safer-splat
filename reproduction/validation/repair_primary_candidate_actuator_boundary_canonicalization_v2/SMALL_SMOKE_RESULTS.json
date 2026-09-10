@@ -1,0 +1,40 @@
+{
+  "schema": "PRIMARY_BOUNDARY_SMALL_ACTIVE_SMOKE_RESULTS_V2",
+  "trial_ids": [5, 25, 90],
+  "max_cycles": 200,
+  "results": [
+    {
+      "trial_id": 5,
+      "process_exit_code": 0,
+      "cycles": 168,
+      "cycle0_c0": "PASS",
+      "primary_commits": 168,
+      "termination": "NATIVE_NOT_MOVING",
+      "integrity_failure_count": 0
+    },
+    {
+      "trial_id": 25,
+      "process_exit_code": 2,
+      "cycles_entered": 148,
+      "cycle0_c0": "PASS",
+      "primary_commits_before_block": 147,
+      "old_float_boundary_failure_closed": true,
+      "new_signal": "ROUTING_RULE_MISSING",
+      "hard_blocker": "TRACE_CARDINALITY_VIOLATION_AT_STEP_147",
+      "integrity_failure_count": 1
+    },
+    {
+      "trial_id": 90,
+      "process_exit_code": 0,
+      "cycles": 200,
+      "cycle0_c0": "PASS",
+      "primary_commits": 200,
+      "termination": "MAX_STEPS_TIMEOUT",
+      "integrity_failure_count": 0
+    }
+  ],
+  "old_cycle0_float_boundary_failure_count": 0,
+  "healthy_control_regression": false,
+  "new_independent_method_level_signal": true,
+  "overall": "REPAIR_CONFIRMED_WITH_NEW_ROUTE_TRACE_BLOCKER"
+}
