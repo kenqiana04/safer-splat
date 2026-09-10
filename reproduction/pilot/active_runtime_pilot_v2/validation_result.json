@@ -1,0 +1,1116 @@
+{
+  "checks": [
+    {
+      "check": "frozen trial IDs",
+      "status": "PASS"
+    },
+    {
+      "check": "frozen arm order",
+      "status": "PASS"
+    },
+    {
+      "check": "frozen horizon",
+      "status": "PASS"
+    },
+    {
+      "check": "posthoc zero-feedback oracle",
+      "status": "PASS"
+    },
+    {
+      "check": "collision and margin radii separate",
+      "status": "PASS"
+    },
+    {
+      "check": "PR133 exact head",
+      "status": "PASS"
+    },
+    {
+      "check": "summary 5 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "arm identity 5 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "execution complete 5 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "no hard blocker 5 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "integrity clean 5 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle eligible 5 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "raw lock 5 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 5 REFERENCE_CBF_QP trajectory_states.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 5 REFERENCE_CBF_QP executed_actions.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 5 REFERENCE_CBF_QP step_timing.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 5 REFERENCE_CBF_QP termination.json",
+      "status": "PASS"
+    },
+    {
+      "check": "state action alignment 5 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "summary 5 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "arm identity 5 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "execution complete 5 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "no hard blocker 5 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "integrity clean 5 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle eligible 5 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "raw lock 5 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 5 ACTIVE_RUNTIME_V2 trajectory_states.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 5 ACTIVE_RUNTIME_V2 executed_actions.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 5 ACTIVE_RUNTIME_V2 step_timing.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 5 ACTIVE_RUNTIME_V2 termination.json",
+      "status": "PASS"
+    },
+    {
+      "check": "state action alignment 5 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "active trace and lock 5",
+      "status": "PASS"
+    },
+    {
+      "check": "active trace cardinality 5",
+      "status": "PASS"
+    },
+    {
+      "check": "summary 15 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "arm identity 15 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "execution complete 15 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "no hard blocker 15 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "integrity clean 15 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle eligible 15 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "raw lock 15 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 15 REFERENCE_CBF_QP trajectory_states.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 15 REFERENCE_CBF_QP executed_actions.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 15 REFERENCE_CBF_QP step_timing.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 15 REFERENCE_CBF_QP termination.json",
+      "status": "PASS"
+    },
+    {
+      "check": "state action alignment 15 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "summary 15 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "arm identity 15 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "execution complete 15 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "no hard blocker 15 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "integrity clean 15 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle eligible 15 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "raw lock 15 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 15 ACTIVE_RUNTIME_V2 trajectory_states.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 15 ACTIVE_RUNTIME_V2 executed_actions.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 15 ACTIVE_RUNTIME_V2 step_timing.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 15 ACTIVE_RUNTIME_V2 termination.json",
+      "status": "PASS"
+    },
+    {
+      "check": "state action alignment 15 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "active trace and lock 15",
+      "status": "PASS"
+    },
+    {
+      "check": "active trace cardinality 15",
+      "status": "PASS"
+    },
+    {
+      "check": "summary 25 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "arm identity 25 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "execution complete 25 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "no hard blocker 25 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "integrity clean 25 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle eligible 25 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "raw lock 25 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 25 REFERENCE_CBF_QP trajectory_states.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 25 REFERENCE_CBF_QP executed_actions.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 25 REFERENCE_CBF_QP step_timing.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 25 REFERENCE_CBF_QP termination.json",
+      "status": "PASS"
+    },
+    {
+      "check": "state action alignment 25 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "summary 25 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "arm identity 25 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "execution complete 25 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "no hard blocker 25 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "integrity clean 25 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle eligible 25 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "raw lock 25 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 25 ACTIVE_RUNTIME_V2 trajectory_states.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 25 ACTIVE_RUNTIME_V2 executed_actions.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 25 ACTIVE_RUNTIME_V2 step_timing.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 25 ACTIVE_RUNTIME_V2 termination.json",
+      "status": "PASS"
+    },
+    {
+      "check": "state action alignment 25 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "active trace and lock 25",
+      "status": "PASS"
+    },
+    {
+      "check": "active trace cardinality 25",
+      "status": "PASS"
+    },
+    {
+      "check": "summary 35 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "arm identity 35 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "execution complete 35 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "no hard blocker 35 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "integrity clean 35 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle eligible 35 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "raw lock 35 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 35 REFERENCE_CBF_QP trajectory_states.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 35 REFERENCE_CBF_QP executed_actions.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 35 REFERENCE_CBF_QP step_timing.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 35 REFERENCE_CBF_QP termination.json",
+      "status": "PASS"
+    },
+    {
+      "check": "state action alignment 35 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "summary 35 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "arm identity 35 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "execution complete 35 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "no hard blocker 35 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "integrity clean 35 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle eligible 35 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "raw lock 35 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 35 ACTIVE_RUNTIME_V2 trajectory_states.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 35 ACTIVE_RUNTIME_V2 executed_actions.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 35 ACTIVE_RUNTIME_V2 step_timing.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 35 ACTIVE_RUNTIME_V2 termination.json",
+      "status": "PASS"
+    },
+    {
+      "check": "state action alignment 35 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "active trace and lock 35",
+      "status": "PASS"
+    },
+    {
+      "check": "active trace cardinality 35",
+      "status": "PASS"
+    },
+    {
+      "check": "summary 45 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "arm identity 45 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "execution complete 45 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "no hard blocker 45 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "integrity clean 45 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle eligible 45 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "raw lock 45 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 45 REFERENCE_CBF_QP trajectory_states.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 45 REFERENCE_CBF_QP executed_actions.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 45 REFERENCE_CBF_QP step_timing.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 45 REFERENCE_CBF_QP termination.json",
+      "status": "PASS"
+    },
+    {
+      "check": "state action alignment 45 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "summary 45 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "arm identity 45 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "execution complete 45 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "no hard blocker 45 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "integrity clean 45 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle eligible 45 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "raw lock 45 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 45 ACTIVE_RUNTIME_V2 trajectory_states.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 45 ACTIVE_RUNTIME_V2 executed_actions.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 45 ACTIVE_RUNTIME_V2 step_timing.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 45 ACTIVE_RUNTIME_V2 termination.json",
+      "status": "PASS"
+    },
+    {
+      "check": "state action alignment 45 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "active trace and lock 45",
+      "status": "PASS"
+    },
+    {
+      "check": "active trace cardinality 45",
+      "status": "PASS"
+    },
+    {
+      "check": "summary 55 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "arm identity 55 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "execution complete 55 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "no hard blocker 55 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "integrity clean 55 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle eligible 55 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "raw lock 55 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 55 REFERENCE_CBF_QP trajectory_states.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 55 REFERENCE_CBF_QP executed_actions.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 55 REFERENCE_CBF_QP step_timing.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 55 REFERENCE_CBF_QP termination.json",
+      "status": "PASS"
+    },
+    {
+      "check": "state action alignment 55 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "summary 55 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "arm identity 55 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "execution complete 55 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "no hard blocker 55 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "integrity clean 55 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle eligible 55 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "raw lock 55 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 55 ACTIVE_RUNTIME_V2 trajectory_states.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 55 ACTIVE_RUNTIME_V2 executed_actions.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 55 ACTIVE_RUNTIME_V2 step_timing.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 55 ACTIVE_RUNTIME_V2 termination.json",
+      "status": "PASS"
+    },
+    {
+      "check": "state action alignment 55 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "active trace and lock 55",
+      "status": "PASS"
+    },
+    {
+      "check": "active trace cardinality 55",
+      "status": "PASS"
+    },
+    {
+      "check": "summary 65 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "arm identity 65 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "execution complete 65 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "no hard blocker 65 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "integrity clean 65 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle eligible 65 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "raw lock 65 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 65 REFERENCE_CBF_QP trajectory_states.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 65 REFERENCE_CBF_QP executed_actions.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 65 REFERENCE_CBF_QP step_timing.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 65 REFERENCE_CBF_QP termination.json",
+      "status": "PASS"
+    },
+    {
+      "check": "state action alignment 65 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "summary 65 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "arm identity 65 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "execution complete 65 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "no hard blocker 65 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "integrity clean 65 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle eligible 65 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "raw lock 65 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 65 ACTIVE_RUNTIME_V2 trajectory_states.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 65 ACTIVE_RUNTIME_V2 executed_actions.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 65 ACTIVE_RUNTIME_V2 step_timing.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 65 ACTIVE_RUNTIME_V2 termination.json",
+      "status": "PASS"
+    },
+    {
+      "check": "state action alignment 65 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "active trace and lock 65",
+      "status": "PASS"
+    },
+    {
+      "check": "active trace cardinality 65",
+      "status": "PASS"
+    },
+    {
+      "check": "summary 75 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "arm identity 75 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "execution complete 75 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "no hard blocker 75 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "integrity clean 75 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle eligible 75 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "raw lock 75 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 75 REFERENCE_CBF_QP trajectory_states.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 75 REFERENCE_CBF_QP executed_actions.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 75 REFERENCE_CBF_QP step_timing.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 75 REFERENCE_CBF_QP termination.json",
+      "status": "PASS"
+    },
+    {
+      "check": "state action alignment 75 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "summary 75 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "arm identity 75 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "execution complete 75 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "no hard blocker 75 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "integrity clean 75 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle eligible 75 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "raw lock 75 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 75 ACTIVE_RUNTIME_V2 trajectory_states.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 75 ACTIVE_RUNTIME_V2 executed_actions.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 75 ACTIVE_RUNTIME_V2 step_timing.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 75 ACTIVE_RUNTIME_V2 termination.json",
+      "status": "PASS"
+    },
+    {
+      "check": "state action alignment 75 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "active trace and lock 75",
+      "status": "PASS"
+    },
+    {
+      "check": "active trace cardinality 75",
+      "status": "PASS"
+    },
+    {
+      "check": "summary 85 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "arm identity 85 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "execution complete 85 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "no hard blocker 85 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "integrity clean 85 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle eligible 85 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "raw lock 85 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 85 REFERENCE_CBF_QP trajectory_states.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 85 REFERENCE_CBF_QP executed_actions.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 85 REFERENCE_CBF_QP step_timing.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 85 REFERENCE_CBF_QP termination.json",
+      "status": "PASS"
+    },
+    {
+      "check": "state action alignment 85 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "summary 85 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "arm identity 85 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "execution complete 85 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "no hard blocker 85 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "integrity clean 85 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle eligible 85 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "raw lock 85 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 85 ACTIVE_RUNTIME_V2 trajectory_states.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 85 ACTIVE_RUNTIME_V2 executed_actions.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 85 ACTIVE_RUNTIME_V2 step_timing.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 85 ACTIVE_RUNTIME_V2 termination.json",
+      "status": "PASS"
+    },
+    {
+      "check": "state action alignment 85 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "active trace and lock 85",
+      "status": "PASS"
+    },
+    {
+      "check": "active trace cardinality 85",
+      "status": "PASS"
+    },
+    {
+      "check": "summary 95 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "arm identity 95 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "execution complete 95 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "no hard blocker 95 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "integrity clean 95 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle eligible 95 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "raw lock 95 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 95 REFERENCE_CBF_QP trajectory_states.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 95 REFERENCE_CBF_QP executed_actions.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 95 REFERENCE_CBF_QP step_timing.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 95 REFERENCE_CBF_QP termination.json",
+      "status": "PASS"
+    },
+    {
+      "check": "state action alignment 95 REFERENCE_CBF_QP",
+      "status": "PASS"
+    },
+    {
+      "check": "summary 95 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "arm identity 95 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "execution complete 95 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "no hard blocker 95 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "integrity clean 95 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle eligible 95 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "raw lock 95 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 95 ACTIVE_RUNTIME_V2 trajectory_states.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 95 ACTIVE_RUNTIME_V2 executed_actions.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 95 ACTIVE_RUNTIME_V2 step_timing.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw hash 95 ACTIVE_RUNTIME_V2 termination.json",
+      "status": "PASS"
+    },
+    {
+      "check": "state action alignment 95 ACTIVE_RUNTIME_V2",
+      "status": "PASS"
+    },
+    {
+      "check": "active trace and lock 95",
+      "status": "PASS"
+    },
+    {
+      "check": "active trace cardinality 95",
+      "status": "PASS"
+    },
+    {
+      "check": "20 arm summaries",
+      "status": "PASS"
+    },
+    {
+      "check": "required artifact pilot_trials.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "required artifact pilot_pairs.csv",
+      "status": "PASS"
+    },
+    {
+      "check": "required artifact pilot_summary.json",
+      "status": "PASS"
+    },
+    {
+      "check": "required artifact pilot_active_diagnostics.json",
+      "status": "PASS"
+    },
+    {
+      "check": "required artifact pilot_oracle_audit.json",
+      "status": "PASS"
+    },
+    {
+      "check": "required artifact REPORT_ACTIVE_RUNTIME_PILOT_V2.md",
+      "status": "PASS"
+    },
+    {
+      "check": "required artifact downstream_handoff.json",
+      "status": "PASS"
+    },
+    {
+      "check": "10 pairs 20 arms aggregate",
+      "status": "PASS"
+    },
+    {
+      "check": "descriptive analysis only",
+      "status": "PASS"
+    },
+    {
+      "check": "runtime and production diff zero",
+      "status": "PASS"
+    }
+  ],
+  "failed": 0,
+  "passed": 277,
+  "schema": "ACTIVE_RUNTIME_PILOT_V2_VALIDATION",
+  "status": "PASS_ACTIVE_RUNTIME_PILOT_V2_VALIDATION"
+}

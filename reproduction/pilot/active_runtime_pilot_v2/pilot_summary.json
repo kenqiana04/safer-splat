@@ -1,0 +1,102 @@
+{
+  "arm_count_complete": 20,
+  "by_arm": {
+    "ACTIVE_RUNTIME_V2": {
+      "collision_proxy_trial_count": 0,
+      "compute_median_across_trial_medians_s": 0.16485138959251344,
+      "compute_median_across_trial_p95_s": 0.16570174973458052,
+      "goal_reached_count": 0,
+      "margin_violation_trial_count": 0,
+      "normalized_progress_max": 0.991212014659192,
+      "normalized_progress_mean": 0.13583284755918582,
+      "normalized_progress_median": 0.001164688196463192,
+      "normalized_progress_min": 0.0,
+      "steps_max": 383,
+      "steps_median": 3.5,
+      "steps_min": 1,
+      "steps_total": 603,
+      "termination_counts": {
+        "NATIVE_NOT_MOVING": 10
+      },
+      "trial_count": 10
+    },
+    "REFERENCE_CBF_QP": {
+      "collision_proxy_trial_count": 0,
+      "compute_median_across_trial_medians_s": 0.05983643839135766,
+      "compute_median_across_trial_p95_s": 0.07058622175827622,
+      "goal_reached_count": 0,
+      "margin_violation_trial_count": 0,
+      "normalized_progress_max": 0.991212014659192,
+      "normalized_progress_mean": 0.34002948193787164,
+      "normalized_progress_median": 0.23296861752785678,
+      "normalized_progress_min": 0.002329376392926384,
+      "steps_max": 383,
+      "steps_median": 107.0,
+      "steps_min": 6,
+      "steps_total": 1475,
+      "termination_counts": {
+        "NATIVE_NOT_MOVING": 10
+      },
+      "trial_count": 10
+    }
+  },
+  "confidence_interval_count": 0,
+  "descriptive_only": true,
+  "evaluation_eligible_count": 20,
+  "integrity_failure_count": 0,
+  "p_value_count": 0,
+  "pair_count_complete": 10,
+  "paired_descriptive": {
+    "collision_proxy_difference": {
+      "count": 10,
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "compute_median_ratio": {
+      "count": 10,
+      "max": 5.452492541342094,
+      "mean": 3.2027770208619235,
+      "median": 2.754426642080296,
+      "min": 1.948499711273927
+    },
+    "compute_p95_ratio": {
+      "count": 10,
+      "max": 5.082404980797111,
+      "mean": 2.9293288710587673,
+      "median": 2.4948166292912752,
+      "min": 1.624202370422357
+    },
+    "goal_discordance_count": 0,
+    "margin_violation_difference": {
+      "count": 10,
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "min_collision_clearance_difference_m": {
+      "count": 10,
+      "max": 0.04403644169684382,
+      "mean": 0.014258034599625557,
+      "median": 0.00951561777184345,
+      "min": 0.0
+    },
+    "progress_delta_active_minus_reference": {
+      "count": 10,
+      "max": 0.0,
+      "mean": -0.20419663437868582,
+      "median": -0.03342497291353628,
+      "min": -0.8531383172495484
+    },
+    "step_count_difference": {
+      "count": 10,
+      "max": 0.0,
+      "mean": -87.2,
+      "median": -25.0,
+      "min": -332.0
+    }
+  },
+  "schema": "ACTIVE_RUNTIME_PILOT_V2_SUMMARY"
+}

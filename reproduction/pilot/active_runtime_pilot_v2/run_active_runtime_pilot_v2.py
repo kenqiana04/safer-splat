@@ -178,16 +178,38 @@ def make_source_stack(checkout: Path, config: dict[str, Any]):
     return loader, solve, transition
 
 
-def inverse_barrier_clearance(lower_bound: float, radius: float) -> float:
-    raw = float(lower_bound) + float(radius) ** 2
-    signed_distance = math.copysign(math.sqrt(abs(raw)), raw)
-    return signed_distance - float(radius)
+def certify_segment_clearance(provider: Any, start: np.ndarray, end: np.ndarray, radius: float, node_budget: int = 4096, parameter_tolerance: float = 1e-10) -> tuple[str, float | None]:
+    """Return a swept signed-clearance certificate and its resolved bound.
+
+    This is the same 1-Lipschitz subdivision used by the frozen conservative
+    backend, but it takes the minimum over resolved leaf bounds.  The backend's
+    diagnostic ``global_lower`` also retains superseded parent bounds and is
+    therefore not a final per-segment clearance statistic.
+    """
+    from collections import deque
+    start = np.asarray(start, dtype=np.float64); end = np.asarray(end, dtype=np.float64)
+    length = float(np.linalg.norm(end - start))
+    queue = deque([(0.0, 1.0)]); leaf_bounds: list[float] = []; nodes = 0
+    while queue:
+        a, b = queue.popleft(); mid = 0.5 * (a + b)
+        status, signed, _ = provider.minimum_signed_distance(start + mid * (end - start)); nodes += 1
+        if status != "FINITE" or signed is None or not math.isfinite(float(signed)):
+            return "UNKNOWN", None
+        exact_clearance = float(signed) - float(radius)
+        if exact_clearance < 0.0:
+            return "UNSAFE", exact_clearance
+        lower = exact_clearance - 0.5 * (b - a) * length
+        if lower >= 0.0:
+            leaf_bounds.append(lower)
+            continue
+        if nodes >= node_budget or (b - a) <= parameter_tolerance:
+            return "UNKNOWN", None
+        queue.append((a, mid)); queue.append((mid, b))
+    return "SAFE", min(leaf_bounds) if leaf_bounds else None
 
 
 def evaluate_oracle(checkout: Path, loader: Any, states: list[tuple[float, ...]], goal: tuple[float, ...], config: dict[str, Any], map_identity: str) -> dict[str, Any]:
     from adapters.gaussian_barrier_adapter import SourceGaussianBarrierAdapter
-    from certifier.result_types import SegmentStatus
-    from certifier.segment_backends.conservative_interval import ConservativeSignedDistanceIntervalBackend
     import torch
 
     oracle = config["oracle"]
@@ -202,22 +224,21 @@ def evaluate_oracle(checkout: Path, loader: Any, states: list[tuple[float, ...]]
             return loader.query_distance(point, **kwargs)
 
         provider = SourceGaussianBarrierAdapter(query, map_identity, radius, int(loader.means.shape[0]))
-        backend = ConservativeSignedDistanceIntervalBackend(provider)
         violations = 0
         unknown = 0
         clearances: list[float] = []
         statuses: Counter[str] = Counter()
         first_violation = None
         for index, (start, end) in enumerate(zip(positions[:-1], positions[1:])):
-            cert = backend.certify(start, end, map_identity, map_identity, radius, float(oracle["rho_seg"]))
-            statuses[cert.status.value] += 1
-            if cert.lower_bound is not None and math.isfinite(float(cert.lower_bound)):
-                clearances.append(inverse_barrier_clearance(float(cert.lower_bound), radius))
-            if cert.status == SegmentStatus.CERTIFIED_UNSAFE:
+            status, clearance = certify_segment_clearance(provider, start, end, radius)
+            statuses[status] += 1
+            if clearance is not None:
+                clearances.append(float(clearance))
+            if status == "UNSAFE":
                 violations += 1
                 if first_violation is None:
                     first_violation = index
-            elif cert.status != SegmentStatus.CERTIFIED_SAFE:
+            elif status != "SAFE":
                 unknown += 1
         return {
             "radius_m": radius,
@@ -228,7 +249,7 @@ def evaluate_oracle(checkout: Path, loader: Any, states: list[tuple[float, ...]]
             "first_violation_cycle": first_violation,
             "min_clearance_m": min(clearances) if clearances else None,
             "status_counts": dict(statuses),
-            "clearance_semantics": "CONSERVATIVE_SIGNED_DISTANCE_LOWER_BOUND_MINUS_EFFECTIVE_RADIUS"
+            "clearance_semantics": "MINIMUM_RESOLVED_1_LIPSCHITZ_LEAF_SIGNED_DISTANCE_LOWER_BOUND_MINUS_EFFECTIVE_RADIUS"
         }
 
     collision = metrics_for_radius(float(oracle["collision_radius_m"]))
@@ -382,6 +403,8 @@ def run_reference(checkout: Path, output_dir: Path, trial_id: int, config: dict[
 
 def run_active(checkout: Path, output_dir: Path, trial_id: int, config: dict[str, Any], map_identity: str) -> int:
     import torch
+    unified = checkout / "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1"
+    sys.path[:0] = [str(unified), str(checkout)]
     from reproduction.runtime.active_runtime_assurance_v2.runtime_types import ActiveCycleRequest, ActiveTrialContext, EvidenceStatus, FinalizationStatus, PublicCyclePhase, RuntimeStateSnapshot
     arm = "ACTIVE_RUNTIME_V2"
     arm_dir = output_dir / "raw" / f"trial_{trial_id:03d}" / arm.lower()
@@ -520,6 +543,32 @@ def arm_summary_path(output_dir: Path, trial_id: int, arm: str) -> Path:
     return output_dir / "raw" / f"trial_{trial_id:03d}" / arm.lower() / "summary.json"
 
 
+def recompute_oracle_only(checkout: Path, output_dir: Path, trial_id: int, arm: str) -> int:
+    if trial_id not in FIXED_TRIALS or arm not in FIXED_ARMS:
+        raise ValueError("ARM_NOT_IN_FROZEN_MANIFEST")
+    import torch
+    config = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
+    map_identity, _ = verify_inputs(checkout, config)
+    os.chdir(checkout)
+    unified = checkout / "reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1"
+    sys.path[:0] = [str(unified), str(checkout)]
+    from splat.gsplat_utils import GSplatLoader
+    loader = GSplatLoader((checkout / config["map_relative_path"] / "config.yml").resolve(strict=True), torch.device("cuda:0"))
+    arm_dir = output_dir / "raw" / f"trial_{trial_id:03d}" / arm.lower()
+    summary = json.loads((arm_dir / "summary.json").read_text(encoding="utf-8"))
+    state_rows = [json.loads(line) for line in (arm_dir / "trajectory_states.jsonl").read_text(encoding="utf-8").splitlines() if line]
+    states = [tuple(float(v) for v in row["state"]) for row in state_rows]
+    _, goal_position = trial_geometry(trial_id)
+    goal = tuple(float(v) for v in np.concatenate((goal_position.astype(np.float32), np.zeros(3, dtype=np.float32))))
+    summary["oracle"] = evaluate_oracle(checkout, loader, states, goal, config, map_identity)
+    summary["evaluation_eligible"] = bool(summary["oracle"]["evaluation_eligible"])
+    summary["oracle_summary_recomputed_from_locked_raw"] = True
+    write_json(arm_dir / "summary.json", summary)
+    del loader
+    torch.cuda.empty_cache()
+    return 0
+
+
 def run_one(checkout: Path, output_dir: Path, trial_id: int, arm: str) -> int:
     if trial_id not in FIXED_TRIALS or arm not in FIXED_ARMS:
         raise ValueError("ARM_NOT_IN_FROZEN_MANIFEST")
@@ -530,6 +579,10 @@ def run_one(checkout: Path, output_dir: Path, trial_id: int, arm: str) -> int:
         raise RuntimeError("SINGLE_VISIBLE_GPU_REQUIRED")
     config = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
     map_identity, _ = verify_inputs(checkout, config)
+    # The frozen Nerfstudio config contains source-checkout-relative dataset
+    # paths.  Match the already-validated Smoke execution context without
+    # changing any scientific input.
+    os.chdir(checkout)
     random.seed(config["seed"])
     np.random.seed(config["seed"])
     torch.manual_seed(config["seed"])
@@ -600,25 +653,39 @@ def aggregate(output_dir: Path) -> None:
             "margin_violation_trial_count": sum(bool((r.get("oracle") or {}).get("certification_margin_violation", {}).get("violation_trial")) for r in subset),
             "goal_reached_count": sum(bool((r.get("oracle") or {}).get("goal_reached")) for r in subset),
             "normalized_progress_mean": statistics.mean(progress) if progress else None, "normalized_progress_median": statistics.median(progress) if progress else None,
-            "steps_total": sum(int(r["steps_executed"]) for r in subset), "termination_counts": dict(Counter(r["typed_termination"] for r in subset)),
-            "compute_median_across_trial_medians_s": statistics.median([r["compute_time_median_s"] for r in subset if r["compute_time_median_s"] is not None]) if subset else None,
-            "compute_median_across_trial_p95_s": statistics.median([r["compute_time_p95_s"] for r in subset if r["compute_time_p95_s"] is not None]) if subset else None
+            "normalized_progress_min": min(progress) if progress else None, "normalized_progress_max": max(progress) if progress else None,
+            "steps_total": sum(int(r["steps_executed"]) for r in subset), "steps_median": statistics.median([int(r["steps_executed"]) for r in subset]) if subset else None,
+            "steps_min": min([int(r["steps_executed"]) for r in subset]) if subset else None, "steps_max": max([int(r["steps_executed"]) for r in subset]) if subset else None,
+            "termination_counts": dict(Counter(r["typed_termination"] for r in subset)),
+            "compute_median_across_trial_medians_s": statistics.median([r["compute_time_median_s"] for r in subset if r["compute_time_median_s"] is not None]) if any(r["compute_time_median_s"] is not None for r in subset) else None,
+            "compute_median_across_trial_p95_s": statistics.median([r["compute_time_p95_s"] for r in subset if r["compute_time_p95_s"] is not None]) if any(r["compute_time_p95_s"] is not None for r in subset) else None
         }
+    numeric_pair_fields = ("progress_delta_active_minus_reference", "collision_proxy_difference", "margin_violation_difference", "min_collision_clearance_difference_m", "step_count_difference", "compute_median_ratio", "compute_p95_ratio")
+    summary["paired_descriptive"] = {}
+    for field in numeric_pair_fields:
+        values = [float(row[field]) for row in pair_rows if row[field] is not None]
+        summary["paired_descriptive"][field] = {"count": len(values), "mean": statistics.mean(values) if values else None, "median": statistics.median(values) if values else None, "min": min(values) if values else None, "max": max(values) if values else None}
+    summary["paired_descriptive"]["goal_discordance_count"] = sum(bool(row["goal_discordance"]) for row in pair_rows)
     write_json(output_dir / "pilot_summary.json", summary)
     active = arms["ACTIVE_RUNTIME_V2"]
+    active_cycles = sum(int(r.get("completed_cycles", 0)) for r in active)
+    role_counts = {key: sum(int(r[key]) for r in active) for key in ("primary_navigation_commit_count", "alternative_navigation_commit_count", "retained_backup_commit_count", "terminal_commit_count", "assurance_boundary_count")}
     diagnostics = {
         "schema": "ACTIVE_RUNTIME_PILOT_V2_ACTIVE_DIAGNOSTICS",
-        "role_counts": {key: sum(int(r[key]) for r in active) for key in ("primary_navigation_commit_count", "alternative_navigation_commit_count", "retained_backup_commit_count", "terminal_commit_count", "assurance_boundary_count")},
+        "completed_cycle_count": active_cycles,
+        "role_counts": role_counts,
+        "role_rates_per_completed_cycle": {key: value / active_cycles if active_cycles else None for key, value in role_counts.items()},
         "certificate_status_counts": {stage: {status: sum(int(r[stage + "_status_counts"][status]) for r in active) for status in ("PASS", "FAIL", "UNKNOWN")} for stage in ("L1", "C0", "L2", "L3")},
         "deadline_status_counts": {status: sum(int(r["deadline_status_counts"][status]) for r in active) for status in ("OPEN", "WARNING", "EXPIRED")},
         "primary_proposal_qp_failure_count": sum(int(r["primary_proposal_qp_failure_count"]) for r in active),
         "token_activation_count": sum(int(r["token_activation_count"]) for r in active), "token_consume_count": sum(int(r["token_consume_count"]) for r in active),
         "active_trials_with_primary_commit": sum(int(r["primary_navigation_commit_count"] > 0) for r in active),
         "early_terminal_trials_first_three_cycles": sum(int(r["terminal_commit_count"] > 0 and r["steps_executed"] <= 3) for r in active),
+        "early_terminal_trial_ids": [int(r["trial_id"]) for r in active if r["terminal_commit_count"] > 0 and r["steps_executed"] <= 3],
         "active_constraint_count": "NOT_INSTRUMENTED"
     }
     write_json(output_dir / "pilot_active_diagnostics.json", diagnostics)
-    oracle_audit = {"schema": "ACTIVE_RUNTIME_PILOT_V2_ORACLE_AUDIT", "feedback": False, "posthoc_only": True, "arm_count_evaluated": sum(r.get("oracle") is not None for r in summaries), "evaluation_ineligible_count": sum(not bool(r["evaluation_eligible"]) for r in summaries), "collision_radius_m": 0.015, "margin_radius_m": 0.025, "goal_tolerance": 0.001, "progress_clipping": "NONE"}
+    oracle_audit = {"schema": "ACTIVE_RUNTIME_PILOT_V2_ORACLE_AUDIT", "feedback": False, "posthoc_only": True, "arm_count_evaluated": sum(r.get("oracle") is not None for r in summaries), "evaluation_ineligible_count": sum(not bool(r["evaluation_eligible"]) for r in summaries), "summary_recomputed_from_locked_raw_count": sum(bool(r.get("oracle_summary_recomputed_from_locked_raw")) for r in summaries), "collision_radius_m": 0.015, "margin_radius_m": 0.025, "goal_tolerance": 0.001, "progress_clipping": "NONE"}
     write_json(output_dir / "pilot_oracle_audit.json", oracle_audit)
 
 
@@ -654,13 +721,18 @@ def main() -> int:
     parser.add_argument("--arm", choices=FIXED_ARMS)
     parser.add_argument("--all", action="store_true")
     parser.add_argument("--aggregate-only", action="store_true")
+    parser.add_argument("--oracle-only-trial", type=int)
     args = parser.parse_args()
     checkout = args.checkout.resolve(strict=True); output_dir = args.output_dir.resolve(); output_dir.mkdir(parents=True, exist_ok=True)
-    modes = sum((args.one_trial is not None, args.all, args.aggregate_only))
+    modes = sum((args.one_trial is not None, args.all, args.aggregate_only, args.oracle_only_trial is not None))
     if modes != 1:
         raise SystemExit("choose exactly one mode")
     if args.aggregate_only:
         aggregate(output_dir); return 0
+    if args.oracle_only_trial is not None:
+        if args.arm is None:
+            raise SystemExit("--arm is required with --oracle-only-trial")
+        return recompute_oracle_only(checkout, output_dir, int(args.oracle_only_trial), args.arm)
     if args.all:
         return run_batch(checkout, output_dir)
     if args.arm is None:

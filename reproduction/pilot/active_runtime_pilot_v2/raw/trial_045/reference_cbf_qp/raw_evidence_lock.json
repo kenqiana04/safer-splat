@@ -1,0 +1,29 @@
+{
+  "action_count": 51,
+  "files": [
+    {
+      "name": "trajectory_states.jsonl",
+      "sha256": "bd80c611dff65f1eebd3c3ec68e308c98593c61b82e5ed2e449f4047950b812c",
+      "size": 12456
+    },
+    {
+      "name": "executed_actions.jsonl",
+      "sha256": "4ec1b2a19569c395b5c451a0335c69bf050aa58f9f94865274fc62bb791d6e3d",
+      "size": 11174
+    },
+    {
+      "name": "step_timing.jsonl",
+      "sha256": "3b24135d7207082eb89322611de83070b2c44192f1f2a5ba697a480dd4968af6",
+      "size": 2636
+    },
+    {
+      "name": "termination.json",
+      "sha256": "302d960e5458cfaeb77fbcc6fda5dad2ed14b3740b4d69873aba6606de3dd5de",
+      "size": 71
+    }
+  ],
+  "identity": "pilot-raw:sha256:bc3b65979d76218441a57223f8b970ef9f9cc6d27bccce344b377a7251479768",
+  "schema": "ACTIVE_RUNTIME_PILOT_V2_RAW_EVIDENCE_LOCK",
+  "state_count": 52,
+  "timing_count": 51
+}
