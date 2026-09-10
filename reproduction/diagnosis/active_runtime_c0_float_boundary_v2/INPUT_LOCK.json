@@ -1,0 +1,51 @@
+{
+  "schema": "ACTIVE_RUNTIME_C0_FLOAT_BOUNDARY_DIAGNOSIS_V2_INPUT_LOCK",
+  "task_prompt_sha256": "5d2b8c2ccfe4ea822fa68d59100fa212cea22e2f39029c6cfa5f6d85d5568663",
+  "direct_upstream": {
+    "pr": 134,
+    "state": "OPEN_DRAFT",
+    "title": "[Draft] Run Active Runtime Pilot V2",
+    "branch": "active-runtime-pilot-v2",
+    "head": "866975b5b3551eaa0111bbf910bbfb7dc80ac69e",
+    "base": "active-runtime-smoke-v2",
+    "base_head": "2a8fd73cdc660fccbf9522f4d24e9d85f2e03a2c"
+  },
+  "frozen_pilot_facts": {
+    "pair_count_complete": 10,
+    "arm_count_complete": 20,
+    "evaluation_eligible_count": 20,
+    "c0_pass": 598,
+    "c0_fail": 5,
+    "c0_unknown": 0,
+    "failing_trial_ids": [5, 25, 45, 75, 85],
+    "passing_control_trial_ids": [15, 35, 55, 65, 95]
+  },
+  "git_blob_locks": {
+    "pilot_input_lock": "923659f818a9ca82c310aa47fd4559c4426d9236",
+    "pilot_config": "119f593d03806154d12e7b093622331d4a562062",
+    "pilot_trials": "b8327016ccc099d474723a0feba9ea2e3d5e09d3",
+    "pilot_pairs": "df583bcbc2d2464753ddf0a4ad7d8c70c82d4b7c",
+    "pilot_active_diagnostics": "1a54615726c08d9823117da1962d85e606388f79",
+    "pilot_report": "e33e7a2be1b85a7abf0775c57e69a37442759610",
+    "pilot_raw_tree": "02088b7c15b1822175d302ef6ef591e1a81b2179",
+    "c0_admission": "3cbf74596980b22eb94d3233134f270ce6cc7f9f",
+    "primary_proposal_adapter": "2de4ad2cbf92a71affd8a2d2630094f9a6d29936",
+    "authority_registry": "c444b077fde51dcffc3c057302d1336dcb7ce0c9"
+  },
+  "bounded_probe": {
+    "reason": "ACTIVE_P0_CANDIDATE_NOT_STORED_IN_PR134_RAW_EVIDENCE",
+    "trial_ids": [5, 15, 25, 35, 45, 55, 65, 75, 85, 95],
+    "source_checkout_head": "8ba397bee31d4c42deebc52104c6409336a96fd9",
+    "runtime_tree": "c60be4c1977932c53b37e500e96c5ddf7cd2d820",
+    "map_identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+    "result_sha256": "99099265155a808548e32a94ce24ef811ef09f57596d8c4d883b48e6c5a90c65",
+    "single_step_p0_c0_probe_count": 10,
+    "plant_call_count": 0,
+    "oracle_call_count": 0,
+    "episode_rollout_count": 0,
+    "full_pilot_rerun_count": 0,
+    "gpu_one_clean_after_probe": true
+  },
+  "runtime_mutation_authority": false,
+  "scientific_result_mutation_authority": false
+}

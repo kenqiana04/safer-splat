@@ -1,0 +1,49 @@
+{
+  "schema": "ACTIVE_RUNTIME_C0_FLOAT_BOUNDARY_ANALYSIS_V2",
+  "conceptual_bounds_python_float64": {
+    "lower": -0.1,
+    "upper": 0.1
+  },
+  "source_dtype_bound_representations_promoted_to_python_float": {
+    "float_np_float32_negative_0p1": -0.10000000149011612,
+    "float_np_float32_positive_0p1": 0.10000000149011612
+  },
+  "representation_gap_from_conceptual_bound": {
+    "negative_lower_excess": 1.4901161138336505e-09,
+    "positive_upper_excess": 1.4901161138336505e-09
+  },
+  "float32_ulp_magnitude_near_0p1": 7.450580596923828e-09,
+  "nearest_inbound_float32_representations": {
+    "negative": -0.09999999403953552,
+    "positive": 0.09999999403953552
+  },
+  "classification_contract": {
+    "A": "EXACT_FLOAT32_BOUNDARY_REPRESENTATION",
+    "B": "WITHIN_ONE_FLOAT32_ULP_OF_BOUND",
+    "C": "TRUE_OUT_OF_BOUND_BEYOND_ONE_FLOAT32_ULP"
+  },
+  "offending_component_classification": [
+    {"trial_id": 5, "component": "x", "value": -0.10000000149011612, "excess": 1.4901161138336505e-09, "class": "A"},
+    {"trial_id": 5, "component": "y", "value": -0.10000000149011612, "excess": 1.4901161138336505e-09, "class": "A"},
+    {"trial_id": 25, "component": "y", "value": -0.10000000149011612, "excess": 1.4901161138336505e-09, "class": "A"},
+    {"trial_id": 45, "component": "y", "value": -0.10000000149011612, "excess": 1.4901161138336505e-09, "class": "A"},
+    {"trial_id": 75, "component": "x", "value": -0.10000000149011612, "excess": 1.4901161138336505e-09, "class": "A"},
+    {"trial_id": 85, "component": "x", "value": -0.10000000149011612, "excess": 1.4901161138336505e-09, "class": "A"},
+    {"trial_id": 85, "component": "y", "value": 0.10000000149011612, "excess": 1.4901161138336505e-09, "class": "A"}
+  ],
+  "classification_counts": {
+    "A_EXACT_FLOAT32_BOUNDARY_REPRESENTATION": 7,
+    "B_WITHIN_ONE_FLOAT32_ULP_OF_BOUND": 0,
+    "C_TRUE_OUT_OF_BOUND": 0
+  },
+  "failing_trial_count": 5,
+  "maximum_bound_excess": 1.4901161138336505e-09,
+  "passing_control_examples": [
+    {"trial_id": 15, "values": [-0.09999999403953552, -0.09999999403953552], "interpretation": "nearest in-bound float32 values"},
+    {"trial_id": 35, "values": [0.09999999403953552, -0.09999999403953552], "interpretation": "nearest in-bound float32 values"},
+    {"trial_id": 55, "values": [0.09999997913837433, 0.09999999403953552], "interpretation": "in-bound float32 values"},
+    {"trial_id": 65, "values": [0.09999998658895493, 0.09999997168779373], "interpretation": "in-bound float32 values"}
+  ],
+  "mechanism": "The source CBF-QP produces float32 actions. PrimaryProposalAdapter promotes those values to Python float without source-boundary canonicalization. C0 then compares them strictly against Python float bounds -0.1 and 0.1. The float32 representation of conceptual +/-0.1 lies 1.4901161138336505e-09 outside those Python bounds, while nearby in-bound float32 values pass.",
+  "true_violation_found": false
+}
