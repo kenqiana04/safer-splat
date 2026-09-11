@@ -1,0 +1,5 @@
+failure_id,scope,status,classification,evidence,resolution
+FR-001,trial25 first launch,CLOSED,PRE_DATA_INFRASTRUCTURE,"missing frozen data symlink; zero control cycles",restored identical data link and retried same authorized trial
+FR-002,trial25 cycle147,CLOSED,R1_MISSING_LEGITIMATE_TRANSITION_ROW,"WARNING + certified PRIMARY + valid retained backup yielded zero match",ARB_BACKUP_GUARD resolved to BACKUP_EXECUTION and existing BACKUP_COMMIT
+FR-003,trial25 trace integrity,CLOSED,DERIVED_FROM_FR-002,"old TRACE_CARDINALITY_VIOLATION after routing miss",334 cycles and 334 trace records after repair
+FR-004,paired pilot,CLOSED,EVALUATION_ELIGIBILITY,"old trial25 was NOT_ESTIMABLE",10/10 Active and 10/10 Reference now evaluation eligible

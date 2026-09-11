@@ -1,0 +1,17 @@
+{
+  "schema": "ACTIVE_RUNTIME_MILESTONE_96_RESULT_V2",
+  "authority": "PR127_FROZEN_96_SCENARIO_MANIFEST_WITH_PR132_TYPED_TRACE_COMPATIBILITY",
+  "expected_scenarios": 96,
+  "executed_scenarios": 96,
+  "passed": 96,
+  "failed": 0,
+  "removed_scenarios": 0,
+  "relaxed_predicates": 0,
+  "compatibility": {
+    "typed_trace_result_adapters": ["TRACE-F01", "TRACE-F02", "TRACE-F03"],
+    "bypass_dependency_proof": true,
+    "scope_number_rebind_due_to_added_route_row": "SCOPE-091..095 -> identical current SCOPE-092..096 functions"
+  },
+  "new_row_targeted_tests_are_separate": true,
+  "result": "PASS"
+}

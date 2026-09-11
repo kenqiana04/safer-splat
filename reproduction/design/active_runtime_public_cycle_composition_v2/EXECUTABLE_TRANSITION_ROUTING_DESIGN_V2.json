@@ -18,7 +18,7 @@
     "context_flags"
   ],
   "resolution": "TransitionTable lookup -> Supervisor.route_transition -> RoutingDecision -> coordinator executes exactly one named stage",
-  "rule_count": 43,
+  "rule_count": 44,
   "rules": [
     {
       "action_authority": "NONE",
@@ -1314,6 +1314,43 @@
       "rule_id": "ARB_NAV",
       "source_phase": "ARBITRATION",
       "theorem_interpretation": "atomic handoff creates next-cycle fallback"
+    },
+    {
+      "action_authority": "RETAINED_BACKUP",
+      "candidate_requirement": "PRIMARY_OR_ALTERNATIVE",
+      "commit_allowed": false,
+      "deadline_interpretation": "Supervisor-owned PR110 observation",
+      "deadline_requirement": "GUARD_OR_EXPIRED",
+      "destination_phase": "BACKUP_EXECUTION",
+      "failure_code_if_any": "",
+      "guard": "certified navigation remains factual but final guard is warning or expired and retained backup is valid",
+      "guard_inputs": [
+        "source_phase",
+        "guard",
+        "observation/result",
+        "deadline_requirement",
+        "candidate_requirement",
+        "retained_backup_requirement",
+        "authority_identity"
+      ],
+      "lookup_key": [
+        "source_phase",
+        "observation/result",
+        "deadline_requirement",
+        "candidate_requirement",
+        "retained_backup_requirement"
+      ],
+      "may_start_new_search": false,
+      "may_start_next_stage": true,
+      "new_backup_created": false,
+      "observation/result": "ARBITRATE",
+      "old_backup_retained": true,
+      "reason_scope": "NONE",
+      "requires_arbitration": true,
+      "retained_backup_requirement": "VALID",
+      "rule_id": "ARB_BACKUP_GUARD",
+      "source_phase": "ARBITRATION",
+      "theorem_interpretation": "deadline-inadmissible navigation yields to already-certified retained backup"
     },
     {
       "action_authority": "RETAINED_BACKUP",

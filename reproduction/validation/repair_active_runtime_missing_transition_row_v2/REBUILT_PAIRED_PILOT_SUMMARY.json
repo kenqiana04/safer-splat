@@ -1,0 +1,51 @@
+{
+  "schema": "REBUILT_PAIRED_ACTIVE_RUNTIME_PILOT_SUMMARY_V2",
+  "descriptive_only": true,
+  "scheduled_pair_count": 10,
+  "reference_evaluation_eligible_count": 10,
+  "active_evaluation_eligible_count": 10,
+  "eligible_paired_comparison_count": 10,
+  "reference": {
+    "collision_proxy_trial_count": 0,
+    "margin_violation_trial_count": 0,
+    "goal_reached_count": 0,
+    "normalized_progress_mean": 0.34002948193787164,
+    "normalized_progress_median": 0.23296861752785678,
+    "termination_counts": {"NATIVE_NOT_MOVING": 10},
+    "compute_median_across_trial_medians_s": 0.05983643839135766,
+    "compute_median_across_trial_p95_s": 0.07058622175827622
+  },
+  "active": {
+    "collision_proxy_trial_count": 0,
+    "margin_violation_trial_count": 0,
+    "goal_reached_count": 0,
+    "normalized_progress_mean": 0.34000183361562414,
+    "normalized_progress_median": 0.23296861752785678,
+    "termination_counts": {"NATIVE_NOT_MOVING": 10},
+    "compute_median_across_trial_medians_s": 0.2787075634114444,
+    "compute_median_across_trial_p95_s": 0.32750915503129363,
+    "role_counts": {
+      "primary_navigation_commit": 1475,
+      "alternative_navigation_commit": 0,
+      "retained_backup_commit": 1,
+      "terminal_commit": 0,
+      "assurance_boundary": 0
+    },
+    "deadline_status_counts": {"OPEN": 5913, "WARNING": 1, "EXPIRED": 0}
+  },
+  "paired_descriptive": {
+    "normalized_progress_delta_active_minus_reference_mean": -0.000027648322247497692,
+    "normalized_progress_delta_active_minus_reference_median": 0.0,
+    "min_collision_clearance_delta_active_minus_reference_mean_m": 0.00005292494853572898,
+    "min_collision_clearance_delta_active_minus_reference_median_m": 0.0,
+    "goal_discordance_count": 0
+  },
+  "trial25": {
+    "reference_normalized_progress": 0.8531383172495484,
+    "active_normalized_progress": 0.8528618340270734,
+    "active_minus_reference": -0.0002764832224749769,
+    "active_retained_backup_commits": 1
+  },
+  "new_structural_liveness_blocker": false,
+  "decision_case": "PASS"
+}

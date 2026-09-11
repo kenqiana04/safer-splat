@@ -1,0 +1,18 @@
+{
+  "schema": "TRANSITION_ROW_REGRESSION_44_V2",
+  "row_fidelity": "44/44 PASS",
+  "dynamic_resolver": "44/44 PASS",
+  "exact_one": "PASS",
+  "old_rule_count": 43,
+  "old_rows_missing": [],
+  "old_rows_semantically_unchanged": 43,
+  "new_rule_ids": ["ARB_BACKUP_GUARD"],
+  "table_and_executable_design_ids_match": true,
+  "runtime_count_invariant": 44,
+  "tests": {
+    "count": 5,
+    "passed": 5,
+    "failed": 0
+  },
+  "result": "PASS"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "ACTIVE_RUNTIME_CPU_REGRESSION_RESULTS_V2",
+  "command": "python -m unittest discover -s reproduction/runtime/active_runtime_assurance_v2/tests -p test_*.py",
+  "test_count": 179,
+  "passed": 179,
+  "failed": 0,
+  "duration_seconds": 0.433,
+  "gpu_count": 0,
+  "real_active_trial_count": 0,
+  "official100_count": 0,
+  "result": "PASS"
+}

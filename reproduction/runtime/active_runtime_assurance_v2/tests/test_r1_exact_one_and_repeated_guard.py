@@ -7,11 +7,11 @@ from reproduction.runtime.active_runtime_assurance_v2.tests.public_cycle_test_su
 
 
 class R1ExactOneAndRepeatedGuardTests(unittest.TestCase):
-    def test_frozen_table_exactly_43_and_missing_ambiguous_are_typed(self):
+    def test_frozen_table_exactly_44_and_missing_ambiguous_are_typed(self):
         system = build_public_cycle()
         table = system["supervisor"].transition_table
-        self.assertEqual(len(table.rules), 43)
-        self.assertEqual(len(table.by_id), 43)
+        self.assertEqual(len(table.rules), 44)
+        self.assertEqual(len(table.by_id), 44)
         context = RuntimeRoutingContext(RuntimePhase.C0, DeadlineObservation(DeadlineStatus.OPEN, "C0", 0.0, 1.0, "deadline:test"), system["registry"].transition_table_identity, CandidateRole.PRIMARY, None, True)
         missing = table.resolve(PublicCycleEvent.COMMIT_FAILURE, context)
         self.assertEqual(missing.status, RouteResolutionStatus.BLOCKED_MISSING)

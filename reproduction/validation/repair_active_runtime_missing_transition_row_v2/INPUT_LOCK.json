@@ -1,0 +1,34 @@
+{
+  "schema": "REPAIR_ACTIVE_RUNTIME_MISSING_TRANSITION_ROW_V2_INPUT_LOCK",
+  "repository": "kenqiana04/safer-splat",
+  "upstream_pr": {
+    "number": 137,
+    "state": "OPEN",
+    "is_draft": true,
+    "title": "[Draft] Diagnose routing-rule-missing after primary progression V2",
+    "branch": "diagnose-active-runtime-routing-rule-missing-after-primary-progression-v2",
+    "head_sha": "eeedfb22dff58e61bc7f768f6d0e9fca6213e024",
+    "base_sha": "bf6b81870e72594b78f7939f55140597710d60b1",
+    "identity_gate": "PASS"
+  },
+  "upstream_diagnosis": {
+    "trial_id": 25,
+    "cycle_index": 147,
+    "routing_lookup_index": 6,
+    "root_cause": "R1_MISSING_LEGITIMATE_TRANSITION_ROW",
+    "input_lock_sha256": "15d5f3da17a36f0280c555daa6562522df07f1a6cbeea05f54f494feeee03d3a",
+    "failing_snapshot_sha256": "38332dd6cc7521c64f2dd32185faebbac3529a0cbcd82b7425726094d1489d41",
+    "root_cause_decision_sha256": "1cfd6f482a545e2bddfd16db5259013caca58ece804f321390eb8dd109c69374"
+  },
+  "frozen_execution": {
+    "map_identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+    "pilot_config_sha256": "fde38d36cadf9b406b5a76ac2ae2e9f4ff6038d07a46c2a7ee24e526704a5172",
+    "trial_id": 25,
+    "gpu_index": 1,
+    "max_steps": 500,
+    "reference_rerun_count": 0,
+    "other_active_rerun_count": 0,
+    "official100_count": 0
+  },
+  "task_type": "MINIMAL_TRANSITION_AUTHORITY_REPAIR_AND_FOCUSED_TRIAL25_REPLAY"
+}

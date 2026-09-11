@@ -50,6 +50,7 @@ def build_public_cycle(config: dict | None = None):
         "terminal": CertificateStatus.FAIL,
         "alternatives": (),
         "l1_advance": 0.0,
+        "l3_advance": 0.0,
     }
     if config:
         cfg.update(config)
@@ -82,6 +83,7 @@ def build_public_cycle(config: dict | None = None):
 
     def l3_backend(_snapshot, _candidate):
         counters["l3"] += 1
+        clock.advance(float(cfg["l3_advance"]))
         status = cfg["l3"]
         return status, ((((0.0, 0.0, 0.0), "backup:0"), ((0.0, 0.0, 0.0), "backup:1")) if status == CertificateStatus.PASS else ()), "terminal:fixture", "L3_" + status.value
 
