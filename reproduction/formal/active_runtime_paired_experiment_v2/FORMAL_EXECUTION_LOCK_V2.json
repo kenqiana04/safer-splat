@@ -1,0 +1,19 @@
+{
+  "schema": "FORMAL_EXECUTION_LOCK_V2",
+  "status": "PENDING_ENVIRONMENT_CAPTURE_AND_REPOSITORY_COMMIT",
+  "protocol_date": "2026-09-11",
+  "method_head": "606edd1c254f4ffaec48e0b84d8f5e5f29c039ec",
+  "transition_table_git_blob": "612a70ba41e4c291c76bd94e34d235b0c1297375",
+  "map_identity_sha256": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+  "trial_manifest_filename": "FORMAL_TRIAL_MANIFEST_V2.csv",
+  "protocol_json_filename": "FORMAL_PAIRED_EXPERIMENT_PROTOCOL_V2.json",
+  "formal_collection_allowed_only_if": [
+    "repository head exactly matches frozen method head or protocol-only child commit with zero runtime/production diff",
+    "map artifacts match frozen hashes",
+    "environment manifest captured",
+    "worktree clean",
+    "analysis plan and trial manifest hashes recorded",
+    "GPU 1 clean"
+  ],
+  "formal_collection_mutation_authority": false
+}

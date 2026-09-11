@@ -1,0 +1,68 @@
+{
+  "schema": "MECHANICALLY_IMPORT_FORMAL_PAIRED_EXPERIMENT_V2_IMPORT_VALIDATION",
+  "repository": "kenqiana04/safer-splat",
+  "upstream": {
+    "pr": 138,
+    "state": "OPEN",
+    "is_draft": true,
+    "title": "[Draft] Repair Active Runtime missing deadline-aware arbitration row V2",
+    "branch": "repair-active-runtime-missing-transition-row-v2",
+    "head": "606edd1c254f4ffaec48e0b84d8f5e5f29c039ec",
+    "identity_check": "PASS"
+  },
+  "bundle_source": "/home/zlab/control",
+  "imported_file_count": 12,
+  "imported_files": [
+    "FREEZE_FORMAL_PAIRED_EXPERIMENT_PROTOCOL_V2.md",
+    "FORMAL_PAIRED_EXPERIMENT_PROTOCOL_V2.json",
+    "FORMAL_ANALYSIS_PLAN_V2.md",
+    "FORMAL_TRIAL_MANIFEST_V2.csv",
+    "FORMAL_EXECUTION_LOCK_V2.json",
+    "FORMAL_PROTOCOL_FILE_HASHES_V2.json",
+    "FORMAL_RUN_CONFIG_V2.json",
+    "run_formal_paired_experiment_v2.py",
+    "analyze_formal_paired_experiment_v2.py",
+    "start_formal_v2_tmux.sh",
+    "FORMAL_EXECUTION_AND_RESUME_GUIDE_V2.md",
+    "BUNDLE_SHA256.json"
+  ],
+  "mechanical_checks": {
+    "python_py_compile": {
+      "run_formal_paired_experiment_v2.py": "PASS",
+      "analyze_formal_paired_experiment_v2.py": "PASS"
+    },
+    "json_parse": "PASS",
+    "csv_manifest": {
+      "rows": 100,
+      "unique_trial_ids": 100,
+      "trial_id_range": "0..99",
+      "primary_formal": 85,
+      "development_exposed_secondary": 15,
+      "cohort_disjoint_union": "PASS",
+      "execution_order_unique": "PASS"
+    },
+    "bash_n": "PASS",
+    "formal_protocol_file_hashes": "PASS",
+    "bundle_sha256": "PASS",
+    "source_content_rewritten": false
+  },
+  "source_diff": {
+    "comparison_base": "606edd1c254f4ffaec48e0b84d8f5e5f29c039ec",
+    "runtime_diff": 0,
+    "production_diff": 0,
+    "frozen_method_source_diff": 0
+  },
+  "execution_counts": {
+    "formal_scientific_arms_run": 0,
+    "reference_arms_run": 0,
+    "active_arms_run": 0,
+    "pilot_runs": 0,
+    "smoke_runs": 0,
+    "scenario96_runs": 0,
+    "bypass_runs": 0,
+    "gpu_runs": 0,
+    "oracle_runs": 0,
+    "parameter_tuning_runs": 0
+  },
+  "result": "PASS_MECHANICAL_IMPORT_CHECKS"
+}
