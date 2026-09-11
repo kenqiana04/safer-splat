@@ -34,6 +34,7 @@ ALT_NEXT,ALT_SEARCH,deadline open and finite lawful candidate remains,ALT_AVAILA
 ALT_DONE,ALT_SEARCH,finite library exhausted,ALT_EXHAUSTED,NONE,ANY,ANY,NONE,ARBITRATION,NONE,false,true,false,finite exhaustion only,F_ALTERNATIVE_LIBRARY_EXHAUSTED
 ALT_GUARD,ALT_SEARCH,guard or expiry preempts search,DEADLINE_GUARD,NONE,ANY,GUARD_OR_EXPIRED,NONE,ARBITRATION,NONE,false,true,false,no post-deadline search,F_RUNTIME_DEADLINE
 ARB_NAV,ARBITRATION,new witness ready and deadline open,ARBITRATE,NONE,ANY,OPEN,PRIMARY_OR_ALTERNATIVE,COMMIT,CERTIFIED_NAVIGATION,true,true,true,atomic handoff creates next-cycle fallback,
+ARB_BACKUP_GUARD,ARBITRATION,certified navigation remains factual but final guard is warning or expired and retained backup is valid,ARBITRATE,NONE,VALID,GUARD_OR_EXPIRED,PRIMARY_OR_ALTERNATIVE,BACKUP_EXECUTION,RETAINED_BACKUP,false,true,false,deadline-inadmissible navigation yields to already-certified retained backup,
 ARB_BACKUP,ARBITRATION,no new timely navigation and retained backup valid,ARBITRATE,NONE,VALID,ANY,NONE,BACKUP_EXECUTION,RETAINED_BACKUP,false,true,false,execute certified retained tail,
 ARB_TERMINAL,ARBITRATION,no navigation/backup and terminal action already eligible,ARBITRATE,NONE,NONE_OR_INVALID_OR_EXHAUSTED,ANY,NONE,COMMIT,CERTIFIED_TERMINAL,true,false,false,terminal membership alone is insufficient,
 ARB_EVAL_TERMINAL,ARBITRATION,deadline open and terminal not yet evaluated,ARBITRATE,NONE,NONE_OR_INVALID_OR_EXHAUSTED,OPEN,NONE,TERMINAL_EVALUATION,NONE,false,false,false,terminal evaluation before guard reserve,

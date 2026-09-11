@@ -85,8 +85,8 @@ class TransitionRule:
 
 class TransitionTable:
     def __init__(self, rules: tuple[TransitionRule, ...]) -> None:
-        if len(rules) != 43 or len({rule.rule_id for rule in rules}) != 43:
-            raise ValueError("TRANSITION_TABLE_NOT_43_EXACTLY_ONCE")
+        if len(rules) != 44 or len({rule.rule_id for rule in rules}) != 44:
+            raise ValueError("TRANSITION_TABLE_NOT_44_EXACTLY_ONCE")
         self.rules = rules
         self.by_id = {rule.rule_id: rule for rule in rules}
 
@@ -212,6 +212,12 @@ class TransitionTable:
             return not TransitionTable._alternative_branch_available(context)
         if rule.rule_id == "ARB_NAV":
             return TransitionTable._certified_candidate_fact(context) and context.deadline.status == DeadlineStatus.OPEN
+        if rule.rule_id == "ARB_BACKUP_GUARD":
+            return (
+                TransitionTable._certified_candidate_fact(context)
+                and context.retained_backup_valid
+                and context.deadline.status in {DeadlineStatus.WARNING, DeadlineStatus.EXPIRED}
+            )
         if rule.rule_id == "ARB_BACKUP":
             return not TransitionTable._certified_candidate_fact(context) and context.retained_backup_valid
         if rule.rule_id == "ARB_TERMINAL":
@@ -412,7 +418,15 @@ class Supervisor:
             action = make_action(certified_candidate.vector, role, certified_candidate.identity.value, (self.registry.geometry.identity.value, self.registry.actuator.identity.value, l3_result.evidence_identity or ""))
             return SupervisorDecision(snapshot.cycle_index, snapshot.identity, action, True, "TIMELY_CERTIFIED_NAVIGATION_WITH_PREPARED_TOKEN", "ARB_NAV", l3_result.prepared_bundle)
         if backup_valid and retained_backup_action is not None and retained_backup_action.role == ActionRole.RETAINED_BACKUP:
-            return SupervisorDecision(snapshot.cycle_index, snapshot.identity, retained_backup_action, True, "STILL_VALID_RETAINED_BACKUP", "ARB_BACKUP")
+            guard_handoff = certified_candidate is not None and deadline.status in {DeadlineStatus.WARNING, DeadlineStatus.EXPIRED}
+            return SupervisorDecision(
+                snapshot.cycle_index,
+                snapshot.identity,
+                retained_backup_action,
+                True,
+                "CERTIFIED_NAVIGATION_NOT_TIMELY_USE_VALID_RETAINED_BACKUP" if guard_handoff else "STILL_VALID_RETAINED_BACKUP",
+                "ARB_BACKUP_GUARD" if guard_handoff else "ARB_BACKUP",
+            )
         if terminal_result is not None and terminal_result.status == CertificateStatus.PASS and terminal_result.eligible:
             action = make_action(self.registry.terminal.zero_hold, ActionRole.CERTIFIED_TERMINAL, terminal_result.evidence_identity or "terminal", (self.registry.terminal.identity.value, self.registry.actuator.identity.value, self.registry.geometry.identity.value))
             return SupervisorDecision(snapshot.cycle_index, snapshot.identity, action, True, "ELIGIBLE_CURRENT_CERTIFIED_TERMINAL_ACTION", "ARB_TERMINAL")

@@ -35,7 +35,7 @@ class R1TransitionMetadataRoundTripTests(unittest.TestCase):
         backup_valid = backup_requirement == "VALID"
         terminal_evaluated = row["rule_id"] in {"ARB_TERMINAL", "ARB_BOUNDARY"}
         terminal_eligible = row["rule_id"] == "ARB_TERMINAL"
-        certified = row["rule_id"] == "ARB_NAV"
+        certified = row["rule_id"] in {"ARB_NAV", "ARB_BACKUP_GUARD"}
         return RuntimeRoutingContext(
             source_phase=RuntimePhase(row["source_phase"]),
             deadline=DeadlineObservation(status, row["source_phase"], 0.0, 1.0, "deadline:r1"),
@@ -54,7 +54,7 @@ class R1TransitionMetadataRoundTripTests(unittest.TestCase):
         table = TransitionTable.from_csv(TABLE)
         design = json.loads((ROOT / "design" / "active_runtime_public_cycle_composition_v2" / "EXECUTABLE_TRANSITION_ROUTING_DESIGN_V2.json").read_text(encoding="utf-8"))
         design_by_id = {item["rule_id"]: item for item in design["rules"]}
-        self.assertEqual(len(table.rules), 43)
+        self.assertEqual(len(table.rules), 44)
         with TABLE.open(encoding="utf-8", newline="") as handle:
             rows = list(csv.DictReader(handle))
         for row in rows:

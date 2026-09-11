@@ -74,7 +74,7 @@ class AuthorityRegistry:
         alternative = AlternativeAuthority(aid("ALTERNATIVE_SOURCE_AUTHORITY", {"source": "SOURCE_NATIVE_EXISTING", "synthetic": False}))
         terminal = TerminalAuthority(aid("TERMINAL_EMERGENCY_POLICY_V2", {"zero": (0.0, 0.0, 0.0), "goal_hold": False}))
         oracle = OracleBoundaryAuthority(aid("POSTHOC_EVALUATION_ORACLE", {"feedback": False}))
-        return cls(geometry, actuator, dynamics, alternative, terminal, oracle, str(map_identity), "3c95f749a1f517f1be9e4ab6ad82b096a47afdad", deadline_profile_id)
+        return cls(geometry, actuator, dynamics, alternative, terminal, oracle, str(map_identity), "612a70ba41e4c291c76bd94e34d235b0c1297375", deadline_profile_id)
 
     def verify_all(self, active: bool = False) -> None:
         if not self.map_identity:
