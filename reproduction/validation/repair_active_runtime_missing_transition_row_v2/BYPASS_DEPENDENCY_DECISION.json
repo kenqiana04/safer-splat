@@ -1,0 +1,19 @@
+{
+  "schema": "BYPASS_DEPENDENCY_DECISION_V2",
+  "changed_active_methods": ["Supervisor.route_transition", "Supervisor.arbitrate"],
+  "bypass_entry": "ActiveRunner.commit_bypass",
+  "bypass_calls": ["Supervisor.bypass_decision"],
+  "bypass_calls_route_transition": false,
+  "bypass_calls_arbitrate": false,
+  "supervisor_bypass_decision_ast_unchanged": true,
+  "supervisor_certify_candidate_ast_unchanged": true,
+  "active_runner_unchanged": true,
+  "plant_commit_unchanged": true,
+  "trace_writer_unchanged": true,
+  "backup_token_store_unchanged": true,
+  "terminal_runtime_unchanged": true,
+  "cpu_bypass_regression": "PASS",
+  "gpu_bypass_rerun_count": 0,
+  "evidence": "REUSE_PR131_FROZEN_BYPASS_EVIDENCE",
+  "verdict": "BYPASS_REVALIDATION_NOT_REQUIRED"
+}

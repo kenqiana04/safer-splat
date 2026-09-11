@@ -1,0 +1,16 @@
+{
+  "schema": "ACTIVE_EVIDENCE_REUSE_V2",
+  "dependency_precondition": "certified candidate + valid retained backup + deadline WARNING or EXPIRED",
+  "unaffected_active_trial_ids": [5, 15, 35, 45, 55, 65, 75, 85, 95],
+  "unaffected_active_deadline_counts": {"OPEN": 4577, "WARNING": 0, "EXPIRED": 0},
+  "unaffected_active_precondition_entry_count": 0,
+  "reused_active_count": 9,
+  "rerun_active_trial_ids": [25],
+  "rerun_active_count": 1,
+  "reference_trial_ids": [5, 15, 25, 35, 45, 55, 65, 75, 85, 95],
+  "reused_reference_count": 10,
+  "reference_rerun_count": 0,
+  "source_active_evidence": "PR136 repaired Active summaries",
+  "source_reference_evidence": "PR134 frozen Reference summaries",
+  "dependency_audit": "PASS_REUSE_9_ACTIVE_AND_10_REFERENCE"
+}

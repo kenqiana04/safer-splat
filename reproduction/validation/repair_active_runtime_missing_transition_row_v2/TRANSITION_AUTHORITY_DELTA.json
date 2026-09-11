@@ -1,0 +1,33 @@
+{
+  "schema": "TRANSITION_AUTHORITY_DELTA_V2",
+  "old_rule_count": 43,
+  "new_rule_count": 44,
+  "added_rule": {
+    "rule_id": "ARB_BACKUP_GUARD",
+    "source_phase": "ARBITRATION",
+    "observation_result": "ARBITRATE",
+    "reason_scope": "NONE",
+    "retained_backup_requirement": "VALID",
+    "deadline_requirement": "GUARD_OR_EXPIRED",
+    "candidate_requirement": "PRIMARY_OR_ALTERNATIVE",
+    "destination_phase": "BACKUP_EXECUTION",
+    "action_authority": "RETAINED_BACKUP",
+    "commit_allowed": false,
+    "old_backup_retained": true,
+    "new_backup_created": false
+  },
+  "guard": "certified_candidate_available && retained_backup_valid && deadline in {WARNING, EXPIRED}",
+  "existing_rule_semantics_modified": [],
+  "arb_nav_unchanged": true,
+  "arb_backup_unchanged": true,
+  "state_transition_table": {
+    "old_blob": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+    "new_blob": "612a70ba41e4c291c76bd94e34d235b0c1297375"
+  },
+  "executable_routing_design": {
+    "old_blob": "777431c3ed1d33b546aced7f3df175bc554ae1cf",
+    "new_blob": "7ec41dc432850547c1a799bd64a14a039adfd586"
+  },
+  "authority_registry_transition_identity": "612a70ba41e4c291c76bd94e34d235b0c1297375",
+  "verdict": "PASS_MINIMAL_ONE_ROW_AUTHORITY_DELTA"
+}

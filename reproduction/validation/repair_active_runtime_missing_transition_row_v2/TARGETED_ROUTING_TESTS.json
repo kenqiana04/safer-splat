@@ -1,0 +1,19 @@
+{
+  "schema": "TARGETED_ROUTING_TESTS_V2",
+  "command": "python -m unittest reproduction.runtime.active_runtime_assurance_v2.tests.test_deadline_aware_backup_arbitration_row -v",
+  "test_count": 9,
+  "passed": 9,
+  "failed": 0,
+  "coverage": {
+    "warning_primary_valid_backup": "ARB_BACKUP_GUARD",
+    "warning_alternative_valid_backup": "ARB_BACKUP_GUARD",
+    "expired_primary_valid_backup": "ARB_BACKUP_GUARD",
+    "open_primary_valid_backup": "ARB_NAV_UNCHANGED",
+    "warning_no_candidate_valid_backup": "ARB_BACKUP_UNCHANGED",
+    "invalid_or_no_backup": "NEW_ROW_NO_MATCH",
+    "uncertified_candidate": "NEW_ROW_NO_MATCH",
+    "supervisor_selection_identity": "PASS",
+    "existing_backup_commit_path": "PASS"
+  },
+  "result": "PASS"
+}

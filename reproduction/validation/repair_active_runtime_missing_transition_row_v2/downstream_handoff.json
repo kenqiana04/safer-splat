@@ -1,0 +1,17 @@
+{
+  "schema": "REPAIR_ACTIVE_RUNTIME_MISSING_TRANSITION_ROW_V2_DOWNSTREAM_HANDOFF",
+  "final_status": "PASS_REPAIR_ACTIVE_RUNTIME_MISSING_TRANSITION_ROW_V2",
+  "final_decision": "FREEZE_FORMAL_PAIRED_EXPERIMENT_PROTOCOL_V2",
+  "closed_blocker": "R1_MISSING_LEGITIMATE_TRANSITION_ROW",
+  "frozen_transition_rule": "ARB_BACKUP_GUARD",
+  "pilot_evidence": {
+    "eligible_pairs": 10,
+    "total_pairs": 10,
+    "reference_reused": 10,
+    "active_reused": 9,
+    "active_rerun": [25]
+  },
+  "remaining_blockers": [],
+  "only_next_task": "FREEZE_FORMAL_PAIRED_EXPERIMENT_PROTOCOL_V2",
+  "automatic_execution_authorized": false
+}
