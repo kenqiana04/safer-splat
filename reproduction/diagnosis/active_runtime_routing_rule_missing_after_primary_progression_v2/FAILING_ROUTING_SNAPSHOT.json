@@ -1,0 +1,80 @@
+{
+  "schema": "FAILING_ROUTING_SNAPSHOT_V2",
+  "trial_id": 25,
+  "cycle_index": 147,
+  "lookup_index_in_cycle": 6,
+  "source_phase": "ARBITRATION",
+  "event": "ARBITRATE",
+  "public_cycle_event": "ARBITRATE",
+  "deadline": {
+    "status": "WARNING",
+    "stage": "FINAL_COMMIT_GUARD",
+    "elapsed_seconds": 0.7651723455637693,
+    "remaining_to_commit_guard_seconds": 0.034827654436230704,
+    "profile_id": "deadline-profile:sha256:49e8978a1263fa6a8b0ce0506dae56c800ed8a39f94f9b2d74484a740c113045"
+  },
+  "candidate": {
+    "available": true,
+    "certified": true,
+    "role": "PRIMARY",
+    "identity": "candidate:sha256:e9b0cd55227bd7a464f9497b32988d3f1f112909227cd1ce398d9abdce3e09c5",
+    "provenance": "CURRENT_PRIMARY_CBF_QP"
+  },
+  "retained_backup": {
+    "present": true,
+    "valid": true,
+    "state": "PASS",
+    "token_identity": "token:sha256:c0083ac1dc401b7f705a55b5b1479ef1d1974530553be04c5861c4634a97279e",
+    "lifecycle": "ACTIVE",
+    "activation_cycle": 147,
+    "cursor": 0,
+    "tail_length": 8,
+    "current_action_present": true,
+    "expected_time_index": 147,
+    "expected_state_identity": "state:sha256:7aa10f64d603a7d8669182e8ab9c9ff3a8e280902a8285ee4bdda91f9d476179",
+    "invalidation_reason": null
+  },
+  "terminal": {
+    "evaluated": false,
+    "evidence_eligible": false
+  },
+  "alternative_inventory": {
+    "source_authority": "SOURCE_NATIVE_EXISTING",
+    "inventory_count": 0,
+    "queried_on_path": false,
+    "status": "NOT_RELEVANT_TO_CERTIFIED_PRIMARY_PROGRESSION"
+  },
+  "reason_scope": "NONE",
+  "repeated_route_state": false,
+  "state_identity": "state:sha256:7aa10f64d603a7d8669182e8ab9c9ff3a8e280902a8285ee4bdda91f9d476179",
+  "map_identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+  "authority_identity": "3c95f749a1f517f1be9e4ab6ad82b096a47afdad",
+  "immediately_preceding_stage": {
+    "lookup_index_in_cycle": 5,
+    "source_phase": "L3",
+    "event": "L3_WITNESS_FOUND",
+    "rule_id": "L3_FOUND",
+    "destination": "ARBITRATION",
+    "upstream_typed_status": "PASS",
+    "upstream_typed_reason": "L3_WITNESS_FOUND",
+    "l3_status": "PASS",
+    "deadline_status": "OPEN",
+    "deadline_stage": "L3_DISCOVERY_ADMISSION",
+    "elapsed_seconds": 0.242080457508564,
+    "remaining_seconds": 0.557919542491436
+  },
+  "previous_cycle_commit": {
+    "cycle_index": 146,
+    "routing_rule_id": "ARB_NAV",
+    "action_role": "PRIMARY_NAVIGATION"
+  },
+  "previous_committed_action_role": "PRIMARY_NAVIGATION",
+  "previous_routing_rule_id": "ARB_NAV",
+  "resolution": {
+    "matched_rule_ids": [],
+    "matched_rule_count": 0,
+    "status": "BLOCKED_MISSING",
+    "reason": "ROUTING_RULE_MISSING",
+    "destination": null
+  }
+}

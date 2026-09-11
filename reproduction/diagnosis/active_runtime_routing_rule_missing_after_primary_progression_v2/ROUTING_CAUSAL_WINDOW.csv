@@ -1,0 +1,7 @@
+trial_id,cycle_index,lookup_index,source_phase,event,candidate_role,candidate_status,backup_present,backup_valid,terminal_evaluated,terminal_eligible,deadline,reason_scope,matched_rule_id,resolution,selected_action,committed_action,causal_note
+25,0,6,ARBITRATION,ARBITRATE,PRIMARY,CERTIFIED,false,false,false,false,OPEN,NONE,ARB_NAV,RESOLVED,PRIMARY_NAVIGATION,PRIMARY_NAVIGATION,"Certified primary commits under OPEN deadline; no retained backup yet"
+25,1,6,ARBITRATION,ARBITRATE,PRIMARY,CERTIFIED,true,true,false,false,OPEN,NONE,ARB_NAV,RESOLVED,PRIMARY_NAVIGATION,PRIMARY_NAVIGATION,"Certified primary plus valid retained backup still selects ARB_NAV under OPEN"
+25,146,5,L3,L3_WITNESS_FOUND,PRIMARY,PASS,true,true,false,false,OPEN,NONE,L3_FOUND,RESOLVED,NONE,NONE,"Primary progression reaches arbitration"
+25,146,6,ARBITRATION,ARBITRATE,PRIMARY,CERTIFIED,true,true,false,false,OPEN,NONE,ARB_NAV,RESOLVED,PRIMARY_NAVIGATION,PRIMARY_NAVIGATION,"Last successful arbitration; categorical context matches cycle 147 except deadline"
+25,147,5,L3,L3_WITNESS_FOUND,PRIMARY,PASS,true,true,false,false,OPEN,NONE,L3_FOUND,RESOLVED,NONE,NONE,"Same lawful primary progression reaches arbitration"
+25,147,6,ARBITRATION,ARBITRATE,PRIMARY,CERTIFIED,true,true,false,false,WARNING,NONE,,BLOCKED_MISSING,NONE,NONE,"43-rule lookup has zero matches; no plant action follows"

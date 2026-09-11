@@ -1,0 +1,31 @@
+{
+  "schema": "ACTIVE_RUNTIME_ROUTING_RULE_MISSING_ROOT_CAUSE_DECISION_V2",
+  "selected_root_class": "R1 MISSING_LEGITIMATE_TRANSITION_ROW",
+  "confidence": "HIGH",
+  "root_cause": "The frozen 43-rule table has no ARBITRATION/ARBITRATE transition for a factually certified PRIMARY_OR_ALTERNATIVE candidate that reaches FINAL_COMMIT_GUARD with a non-OPEN deadline while a valid retained backup exists.",
+  "proof": {
+    "failing_tuple": "ARBITRATION + ARBITRATE + WARNING + certified PRIMARY + valid retained backup",
+    "table_rule_count": 43,
+    "matching_rule_count": 0,
+    "nearest_rules": [
+      {"rule_id": "ARB_NAV", "excluded_by": "deadline OPEN requirement and guard"},
+      {"rule_id": "ARB_BACKUP", "excluded_by": "candidate NONE requirement and no-certified-candidate guard"}
+    ],
+    "last_successful_comparator": "cycle 146 has the same categorical routing context except deadline OPEN and resolves ARB_NAV",
+    "upstream_progression": "cycle 147 L3_WITNESS_FOUND resolves L3_FOUND to ARBITRATION before the final-guard deadline becomes WARNING",
+    "backup_token_valid": true,
+    "observer_changed_routing": false
+  },
+  "excluded_root_classes": {
+    "R2 ROUTING_CONTEXT_CONSTRUCTION_DEFECT": "The context accurately preserves both certified-candidate and valid-backup facts; removing either would be lossy policy encoding.",
+    "R3 EVENT_MAPPING_DEFECT": "ARBITRATE is the correct event after the L3_FOUND route reaches ARBITRATION.",
+    "R4 UPSTREAM_TYPED_OUTCOME_CONTRACT_GAP": "The upstream L3 PASS/witness result is typed and reaches the intended arbitration stage.",
+    "R5 TOKEN_BACKUP_STATE_DEFECT": "Token identity, state/time binding, lifecycle, cursor action, and validation all pass.",
+    "R6 REPEATED_ROUTE_GUARD_DEFECT": "The failing lookup records repeated_route_state=false.",
+    "R7 TASK_LOCAL_HARNESS_ARTIFACT": "The passive wrapper forwarded unchanged inputs and original return behavior; the same fail-closed result reproduced once."
+  },
+  "minimal_repair_owner": "REPAIR_ACTIVE_RUNTIME_MISSING_TRANSITION_ROW_V2",
+  "repair_boundary": "Freeze the missing deadline-aware arbitration transition under Supervisor authority; do not suppress certified-candidate facts, alter token mechanics, or make the coordinator interpret deadline policy.",
+  "v2_result_mutated": false,
+  "repair_executed": false
+}

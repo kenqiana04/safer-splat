@@ -1,0 +1,45 @@
+{
+  "schema": "SUCCESS_VS_MISSING_ROUTING_CONTEXT_DIFF_V2",
+  "comparison": {
+    "successful": {"trial_id": 25, "cycle_index": 146, "lookup_index": 6, "rule_id": "ARB_NAV", "destination": "COMMIT"},
+    "missing": {"trial_id": 25, "cycle_index": 147, "lookup_index": 6, "rule_id": null, "destination": null}
+  },
+  "same_control_relevant_fields": {
+    "source_phase": "ARBITRATION",
+    "event": "ARBITRATE",
+    "candidate_available": true,
+    "candidate_certified": true,
+    "candidate_role": "PRIMARY",
+    "backup_present": true,
+    "backup_valid": true,
+    "terminal_evaluated": false,
+    "terminal_evidence_eligible": false,
+    "reason_scope": "NONE"
+  },
+  "sole_categorical_routing_discriminant": {
+    "field": "deadline.status",
+    "successful_value": "OPEN",
+    "missing_value": "WARNING",
+    "interpretation": "ARB_NAV requires OPEN; no frozen arbitration row covers a certified candidate plus valid backup at WARNING."
+  },
+  "expected_per_cycle_identity_differences": [
+    "state_identity",
+    "candidate_identity",
+    "backup_token_identity",
+    "elapsed_time",
+    "remaining_time"
+  ],
+  "nearest_rule_elimination": [
+    {
+      "rule_id": "ARB_NAV",
+      "matching_dimensions": ["source_phase", "event", "backup_requirement", "candidate_requirement"],
+      "eliminated_by": ["deadline_requirement=OPEN", "guard requires deadline OPEN"]
+    },
+    {
+      "rule_id": "ARB_BACKUP",
+      "matching_dimensions": ["source_phase", "event", "deadline_requirement=ANY", "backup_requirement=VALID"],
+      "eliminated_by": ["candidate_requirement=NONE", "guard requires no certified candidate"]
+    }
+  ],
+  "prior_corruption_accumulation_supported": false
+}
