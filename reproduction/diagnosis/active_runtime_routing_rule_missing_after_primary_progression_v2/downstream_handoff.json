@@ -1,0 +1,29 @@
+{
+  "schema": "ACTIVE_RUNTIME_ROUTING_RULE_MISSING_DOWNSTREAM_HANDOFF_V2",
+  "source_task": "DIAGNOSE_ACTIVE_RUNTIME_ROUTING_RULE_MISSING_AFTER_PRIMARY_PROGRESSION_V2",
+  "source_upstream_pr": 136,
+  "source_upstream_head": "bf6b81870e72594b78f7939f55140597710d60b1",
+  "root_class": "R1 MISSING_LEGITIMATE_TRANSITION_ROW",
+  "only_next_task": "REPAIR_ACTIVE_RUNTIME_MISSING_TRANSITION_ROW_V2",
+  "required_inputs": [
+    "FAILING_ROUTING_SNAPSHOT.json",
+    "ROUTING_MATCH_ELIMINATION.csv",
+    "SUCCESS_VS_MISSING_CONTEXT_DIFF.json",
+    "BACKUP_TOKEN_DIAGNOSIS.json",
+    "ROOT_CAUSE_DECISION.json"
+  ],
+  "required_repair_scope": [
+    "Freeze a Supervisor-owned deadline-aware arbitration row for the factual certified-candidate plus valid-backup context.",
+    "Preserve exact-one routing and explicitly cover the intended WARNING/EXPIRED deadline domain.",
+    "Route to an already valid retained backup when navigation commit is no longer deadline-admissible, subject to the frozen deadline contract."
+  ],
+  "forbidden_repairs": [
+    "Do not suppress certified_candidate_available in context construction.",
+    "Do not alter backup-token lifecycle or validation.",
+    "Do not move deadline interpretation into ActiveCycleCoordinator.",
+    "Do not default missing routes to boundary or first-match wins.",
+    "Do not rerun scientific pilots until the repair is separately frozen and revalidated."
+  ],
+  "runtime_repair_performed": false,
+  "scientific_result_changed": false
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "ACTIVE_RUNTIME_ROUTING_RULE_MISSING_DIAGNOSIS_INPUT_LOCK_V2",
+  "task": "DIAGNOSE_ACTIVE_RUNTIME_ROUTING_RULE_MISSING_AFTER_PRIMARY_PROGRESSION_V2",
+  "upstream": {
+    "repository": "kenqiana04/safer-splat",
+    "pull_request": 136,
+    "state": "OPEN",
+    "is_draft": true,
+    "title": "[Draft] Repair primary candidate actuator-boundary canonicalization V2",
+    "branch": "repair-primary-candidate-actuator-boundary-canonicalization-v2",
+    "head_sha": "bf6b81870e72594b78f7939f55140597710d60b1",
+    "base_sha": "8a0e94ac9da32b0da3ede85543285e761b546f66"
+  },
+  "locked_inputs": [
+    {"path": "reproduction/validation/repair_primary_candidate_actuator_boundary_canonicalization_v2/INPUT_LOCK.json", "sha256": "a73bfe15f83d113d7dade115e360cdae5d54d1f7a1cc2055e5a2b5f9d527a09d"},
+    {"path": "reproduction/validation/repair_primary_candidate_actuator_boundary_canonicalization_v2/REPAIRED_ACTIVE_PILOT_TRIALS.csv", "sha256": "dadcc8c5aa186af0db4a51125ab2f0bf1a9a2968f6b753ee98a8dec7e1169ad9"},
+    {"path": "reproduction/validation/repair_primary_candidate_actuator_boundary_canonicalization_v2/REPAIRED_PAIRED_PILOT_SUMMARY.json", "sha256": "1593b15c8364e6be186a237640d05d80526d3bb44b07e69d3ad57e1ce2715400"},
+    {"path": "reproduction/validation/repair_primary_candidate_actuator_boundary_canonicalization_v2/FAILURE_REGISTER.csv", "sha256": "57ac2aca92428ad8a1972b8a21c87d8c3a8385b4e93867b8e958c54b91b18a7c"},
+    {"path": "reproduction/specification/method_logic_closure_v2/STATE_TRANSITION_TABLE_V2.csv", "sha256": "0dc77f53fe33b94f8c997f4a4c50c7f2fb5d72fb95113dd6e8d7856525d6ad72", "rule_count": 43},
+    {"path": "reproduction/runtime/active_runtime_assurance_v2/supervisor.py", "sha256": "a5c19e4905a4b7a82604a0867e8b5f45497fa79909eecac7e3fcd9e8fe8b728a"},
+    {"path": "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py", "sha256": "c98d87e2ee90ccc2b4aa24b30648ba819c146fcdb42f60674affa1122c28ddf0"},
+    {"path": "reproduction/runtime/active_runtime_assurance_v2/runtime_types.py", "sha256": "d170fd30449c4dcf6a308648593dfaa998211aeabd8ad94e8a1b5870ad5bad42"}
+  ],
+  "frozen_upstream_fact": {
+    "trial_id": 25,
+    "partial_primary_commits": 147,
+    "terminal_reason": "ROUTING_RULE_MISSING followed by TRACE_CARDINALITY_VIOLATION",
+    "scientific_metrics": "NOT_ESTIMABLE"
+  },
+  "authorized_passive_replay": {
+    "performed": true,
+    "count": 1,
+    "trial_id": 25,
+    "max_steps": 500,
+    "gpu": 1,
+    "oracle_enabled": false,
+    "runtime_mutation": false,
+    "observer_mutation": false,
+    "server_source_checkout": "/disk1/zlab/maintenance_records/diagnose_active_runtime_routing_rule_missing_after_primary_progression_v2/source_checkout_v2",
+    "server_source_head": "bf6b81870e72594b78f7939f55140597710d60b1",
+    "full_observer_log_path": "/disk1/zlab/maintenance_records/diagnose_active_runtime_routing_rule_missing_after_primary_progression_v2/server_execution/raw/trial_025/active_runtime_v2_repaired/passive_route_observer.jsonl",
+    "full_observer_log_sha256": "95fcc2500cc86afd48f63c37d586fcb8cc71ec7482a0fe7864e81e4274d2d744",
+    "full_observer_log_size_bytes": 1568177,
+    "exit_code": 2,
+    "routing_lookup_count": 890,
+    "routing_missing_count": 1,
+    "gpu_clean_after_replay": true
+  },
+  "infrastructure_notes": [
+    "The first launch stopped before map loading because the fresh checkout lacked the frozen outputs link; no scientific cycle executed.",
+    "The frozen outputs link was restored and the same single authorized replay was launched once.",
+    "A verified incremental Git bundle was used after a full-bundle transport EOF; source identity remained the exact PR #136 head."
+  ],
+  "prohibited_execution_counts": {
+    "reference_trial_rerun_count": 0,
+    "other_active_trial_rerun_count": 0,
+    "official100_count": 0,
+    "scenario96_count": 0,
+    "full_smoke_count": 0,
+    "scientific_oracle_count": 0
+  },
+  "mutation_counts": {
+    "runtime_source": 0,
+    "production_source": 0,
+    "controller": 0,
+    "map": 0,
+    "transition_table": 0,
+    "frozen_upstream_artifact": 0
+  }
+}

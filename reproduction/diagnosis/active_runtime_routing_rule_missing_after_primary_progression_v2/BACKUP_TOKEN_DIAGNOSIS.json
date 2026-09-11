@@ -1,0 +1,28 @@
+{
+  "schema": "BACKUP_TOKEN_ROUTING_DIAGNOSIS_V2",
+  "trial_id": 25,
+  "cycle_index": 147,
+  "token": {
+    "identity": "token:sha256:c0083ac1dc401b7f705a55b5b1479ef1d1974530553be04c5861c4634a97279e",
+    "lifecycle": "ACTIVE",
+    "activation_cycle": 147,
+    "cursor": 0,
+    "tail_length": 8,
+    "current_action_present": true,
+    "expected_time_index": 147,
+    "expected_state_identity": "state:sha256:7aa10f64d603a7d8669182e8ab9c9ff3a8e280902a8285ee4bdda91f9d476179",
+    "observed_state_identity": "state:sha256:7aa10f64d603a7d8669182e8ab9c9ff3a8e280902a8285ee4bdda91f9d476179",
+    "authority_identity_match": true,
+    "state_identity_match": true,
+    "time_identity_match": true,
+    "invalidation_reason": null,
+    "validation_status": "PASS"
+  },
+  "causal_verdict": "TOKEN_NOT_ROOT_CAUSE",
+  "evidence": [
+    "The token was ACTIVE, validated PASS, aligned to the exact cycle-147 state/time identity, and exposed a current cursor action.",
+    "The failing routing context correctly reported retained_backup_present=true and retained_backup_valid=true.",
+    "ARB_BACKUP was excluded only because the frozen row requires candidate NONE and the factual certified primary remained present."
+  ],
+  "counterfactual_note": "Suppressing the certified candidate to force ARB_BACKUP would falsify factual certificate evidence and move deadline policy into context construction; it is not a valid diagnosis or repair."
+}
