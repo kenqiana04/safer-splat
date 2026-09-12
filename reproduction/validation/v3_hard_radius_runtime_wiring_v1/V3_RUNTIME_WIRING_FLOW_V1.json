@@ -1,0 +1,47 @@
+{
+  "authority": "V3_HARD_RADIUS_GEOMETRY_AUTHORITY_V1",
+  "flow": [
+    "V3 config projection",
+    "one hard-radius map adapter",
+    "CurrentCBFAdapter",
+    "one shared hard-radius SweptSegmentCertifier",
+    "TerminalCertifier",
+    "BackupCertifier"
+  ],
+  "hard_runtime_radius_q": 0.015,
+  "object_identity_checks": {
+    "backup_shares_swept": true,
+    "backup_shares_terminal": true,
+    "config_controller_radius_q": true,
+    "config_effective_radius_q": true,
+    "config_rho_seg_q": true,
+    "config_runtime_margin_q": true,
+    "current_adapter_uses_map_adapter": true,
+    "historical_diagnostic_runtime_authority": true,
+    "l1_l2_share_segment_backend": true,
+    "map_adapter_effective_radius_q": true,
+    "registry_controller_radius_q": true,
+    "registry_effective_radius_q": true,
+    "registry_rho_seg_q": true,
+    "registry_runtime_margin_q": true,
+    "segment_backend_uses_map_adapter": true,
+    "swept_effective_radius_q": true,
+    "swept_rho_seg_q": true,
+    "swept_uses_l1_l2_backend": true,
+    "terminal_shares_swept": true
+  },
+  "schema": "V3_RUNTIME_WIRING_FLOW_V1",
+  "static_checks": {
+    "active_runner_commit_boundary": true,
+    "backup_receives_same_swept": true,
+    "configured_effective_radius_read": true,
+    "coordinator_composition_owner": true,
+    "factory_loads_frozen_v2_build_stack": true,
+    "map_adapter_receives_effective_radius": true,
+    "plant_commit_owner": true,
+    "supervisor_routing_and_arbitration": true,
+    "swept_receives_same_effective_radius": true,
+    "terminal_receives_same_swept": true
+  },
+  "status": "PASS"
+}
