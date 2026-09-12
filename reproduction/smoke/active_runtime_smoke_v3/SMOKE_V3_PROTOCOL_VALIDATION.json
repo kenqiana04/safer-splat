@@ -31,17 +31,13 @@
     "upstream_commit_in_ancestry": true,
     "v3_geometry_exact": true,
     "v3_upstream_validation_pass": true,
-    "worktree_changes_task_local": false
+    "worktree_changes_task_local": true
   },
-  "failed_checks": [
-    "worktree_changes_task_local"
-  ],
-  "outside_task_changes": [
-    "eproduction/smoke/active_runtime_smoke_v3/DRAFT_PR_BODY.md"
-  ],
+  "failed_checks": [],
+  "outside_task_changes": [],
   "phase": "sealed",
   "protected_diff_paths": [],
   "protocol_sha256": "c1dc8b3f17850267f1cb3247795bc193a8944aa59349de5019efdf4ae72b1691",
   "schema": "ACTIVE_RUNTIME_SMOKE_V3_VALIDATION_RESULT_V1",
-  "status": "BLOCKED_ACTIVE_RUNTIME_SMOKE_V3_PROTOCOL_VALIDATION"
+  "status": "PASS_ACTIVE_RUNTIME_SMOKE_V3_PROTOCOL_VALIDATION"
 }

@@ -31,7 +31,7 @@ PROTECTED = (
 
 
 def git(repo: Path, *args: str) -> str:
-    return subprocess.run(["git", "-C", str(repo), *args], check=True, text=True, capture_output=True).stdout.strip()
+    return subprocess.run(["git", "-C", str(repo), *args], check=True, text=True, capture_output=True).stdout.rstrip()
 
 
 def sha256(path: Path) -> str:
