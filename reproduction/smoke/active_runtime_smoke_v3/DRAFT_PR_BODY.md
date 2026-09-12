@@ -10,7 +10,7 @@ Freezes the Stonehenge V3 ACTIVE Runtime Smoke protocol on exact PR #140 head `4
 - Historical shell: `0.025 q`, diagnostic-only, runtime authority `false`
 - Scientific oracle, Pilot, Official100, Formal comparison, reference arm, and parameter selection: disabled
 
-Protocol commit: pending pre-execution freeze.
+Protocol commit: `d4d13a75b57c6391c43a3a17d4bdf511c12f2825`.
 
 Execution-lock seal commit: pending pre-execution freeze.
 

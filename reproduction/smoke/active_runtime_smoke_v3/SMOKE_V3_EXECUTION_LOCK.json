@@ -1,0 +1,70 @@
+{
+  "schema": "ACTIVE_RUNTIME_SMOKE_V3_EXECUTION_LOCK_V1",
+  "repository": "kenqiana04/safer-splat",
+  "upstream_branch": "v3-hard-radius-runtime-wiring-v1",
+  "upstream_commit": "47bd12f1f8efca059775ab294211ed21f7b39d77",
+  "protocol_git_commit": "d4d13a75b57c6391c43a3a17d4bdf511c12f2825",
+  "protocol_sha256": "c1dc8b3f17850267f1cb3247795bc193a8944aa59349de5019efdf4ae72b1691",
+  "input_lock_sha256": "ed802deaa8f8ba79fde657722bd6818dd29223bc201ef7e000e5e594c8523d55",
+  "runner_sha256": "b5ae0fbbc9f224e415b0976417c84fc340c03107baec6eb26ed65d9cb77addb8",
+  "validator_sha256": "369a541616642b7c3b70aa2170df022ce48e556b1e8f0faf23b85aa2a5a50bf1",
+  "trial_ids": [10, 50, 90],
+  "trial_order": [10, 50, 90],
+  "serial_execution": true,
+  "separate_process_per_trial": true,
+  "maximum_completed_cycles_per_trial": 200,
+  "seed": 0,
+  "environment": {
+    "conda_environment": "/disk1/zlab/conda_envs/safer_splat_official",
+    "python": "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
+    "CUDA_VISIBLE_DEVICES": "1",
+    "PYTHONHASHSEED": "0",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "gpu_id": 1,
+  "map_identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+  "map_artifact_hashes": {
+    "config.yml": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e",
+    "dataparser_transforms.json": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e",
+    "nerfstudio_models/step-000029999.ckpt": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d"
+  },
+  "controller": {
+    "proposal_source": "CURRENT_PRIMARY_CBF_QP",
+    "alpha": 5.0,
+    "beta": 1.0,
+    "controller_radius_q": 0.015,
+    "distance_method": "ball-to-ellipsoid",
+    "actuator_bounds": [-0.1, 0.1]
+  },
+  "dynamics": {
+    "identity": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1",
+    "dt": 0.05,
+    "velocity_bounds": [-0.1, 0.1]
+  },
+  "deadline": {
+    "cycle_deadline_duration": 1.0,
+    "latest_safe_commit": 0.8,
+    "warning_reserve": 0.2,
+    "stage_budgets": [],
+    "clock_identity": "MONOTONIC_CLOCK_ACTIVE_SMOKE_V3"
+  },
+  "v3_hard_geometry": {
+    "hard_runtime_radius_q": 0.015,
+    "runtime_margin_q": 0.0,
+    "runtime_effective_radius_q": 0.015,
+    "rho_seg_q": 0.0
+  },
+  "diagnostic_geometry": {
+    "historical_diagnostic_radius_q": 0.025,
+    "runtime_authority": false
+  },
+  "scientific_oracle_enabled": false,
+  "pilot_enabled": false,
+  "official100_enabled": false,
+  "formal_comparison_enabled": false,
+  "reference_arm_enabled": false,
+  "parameter_selection_enabled": false,
+  "locked_before_any_gpu_trial": true
+}
