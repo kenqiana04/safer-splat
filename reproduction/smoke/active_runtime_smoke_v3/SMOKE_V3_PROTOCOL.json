@@ -1,0 +1,105 @@
+{
+  "schema": "ACTIVE_RUNTIME_SMOKE_V3_PROTOCOL_V1",
+  "task_name": "FREEZE_ACTIVE_RUNTIME_SMOKE_V3_PROTOCOL",
+  "evidence_scope": "ENGINEERING_SMOKE_ONLY_NO_EFFICACY_CLAIM",
+  "upstream": {
+    "repository": "kenqiana04/safer-splat",
+    "pull_request": 140,
+    "branch": "v3-hard-radius-runtime-wiring-v1",
+    "commit": "47bd12f1f8efca059775ab294211ed21f7b39d77"
+  },
+  "trial_ids": [10, 50, 90],
+  "trial_order": [10, 50, 90],
+  "serial_execution": true,
+  "separate_process_per_trial": true,
+  "maximum_completed_cycles_per_trial": 200,
+  "seed": 0,
+  "environment": {
+    "conda_environment": "/disk1/zlab/conda_envs/safer_splat_official",
+    "python": "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
+    "CUDA_VISIBLE_DEVICES": "1",
+    "PYTHONHASHSEED": "0",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "map_relative_path": "outputs/stonehenge/splatfacto/2024-09-11_100724",
+  "map_identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+  "map_artifacts": [
+    {
+      "relative_path": "config.yml",
+      "size": 6933,
+      "sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e"
+    },
+    {
+      "relative_path": "dataparser_transforms.json",
+      "size": 312,
+      "sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e"
+    },
+    {
+      "relative_path": "nerfstudio_models/step-000029999.ckpt",
+      "size": 92344786,
+      "sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d"
+    }
+  ],
+  "controller": {
+    "proposal_source": "CURRENT_PRIMARY_CBF_QP",
+    "alpha": 5.0,
+    "beta": 1.0,
+    "controller_radius": 0.015,
+    "coordinate_unit": "q",
+    "distance_method": "ball-to-ellipsoid",
+    "actuator_bounds": [-0.1, 0.1]
+  },
+  "v3_geometry": {
+    "coordinate_unit": "q",
+    "coordinate_semantics": "STONEHENGE_NERFSTUDIO_SCALED_REPRESENTED_MAP_QUERY_COORDINATE",
+    "hard_runtime_radius_q": 0.015,
+    "runtime_margin_q": 0.0,
+    "runtime_effective_radius_q": 0.015,
+    "rho_seg_q": 0.0,
+    "historical_diagnostic_radius_q": 0.025,
+    "historical_diagnostic_runtime_authority": false,
+    "legacy_m_suffix_contract": "LEGACY_API_IDENTIFIER_ONLY_STONEHENGE_V3_NUMERIC_SEMANTICS_ARE_IN_Q"
+  },
+  "certification": {
+    "query_backend": "CURRENT_GSPLAT_FULL_QUERY_WITH_CONSERVATIVE_SIGNED_DISTANCE_INTERVAL",
+    "certification_margin": 0.0,
+    "certification_effective_radius": 0.015,
+    "rho_seg": 0.0,
+    "terminal_velocity_tolerance": 1e-12,
+    "coordinate_unit": "q"
+  },
+  "dynamics": {
+    "identity": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1",
+    "dt": 0.05,
+    "velocity_bounds": [-0.1, 0.1]
+  },
+  "deadline_profile": {
+    "cycle_deadline_duration": 1.0,
+    "latest_safe_commit": 0.8,
+    "warning_reserve": 0.2,
+    "stage_budgets": [],
+    "clock_identity": "MONOTONIC_CLOCK_ACTIVE_SMOKE_V3",
+    "telemetry_only": true
+  },
+  "execution_switches": {
+    "scientific_oracle_enabled": false,
+    "pilot_enabled": false,
+    "official100_enabled": false,
+    "formal_comparison_enabled": false,
+    "reference_arm_enabled": false,
+    "parameter_selection_enabled": false
+  },
+  "acceptance": {
+    "deadline_warning_or_expired_is_not_automatic_failure": true,
+    "legal_fallback_or_assurance_boundary_is_not_automatic_failure": true,
+    "trace_record_per_completed_cycle": 1,
+    "finalized_trace_required": true,
+    "selected_executed_identity_mismatch_allowed": 0,
+    "nonfinite_allowed": 0,
+    "actuator_violation_allowed": 0,
+    "evidence_incomplete_allowed": 0,
+    "recovery_required_allowed": 0
+  }
+}
