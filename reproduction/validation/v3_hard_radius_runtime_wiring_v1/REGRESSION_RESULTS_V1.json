@@ -1,0 +1,22 @@
+{
+  "active_runtime_cpu_suite": {
+    "command": "python -m unittest discover -s reproduction/runtime/active_runtime_assurance_v2/tests -p test_*.py -q",
+    "passed": 179,
+    "status": "PASS"
+  },
+  "notes": [
+    "The Active Runtime protected-blob test was run with the base-equivalent checkout newline form; the temporary working-tree newline adjustment was reverted after the suite.",
+    "The existing read-only pytest runtime cache was added to PYTHONPATH; no dependency was installed."
+  ],
+  "schema": "V3_HARD_RADIUS_RUNTIME_REGRESSION_RESULTS_V1",
+  "targeted_cpu_suite": {
+    "command": "python -m unittest discover -s reproduction/validation/v3_hard_radius_runtime_wiring_v1/tests -p test_*.py -v",
+    "passed": 8,
+    "status": "PASS"
+  },
+  "unified_certifier_cpu_suite": {
+    "command": "python -m pytest reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1/tests -q",
+    "passed": 33,
+    "status": "PASS"
+  }
+}

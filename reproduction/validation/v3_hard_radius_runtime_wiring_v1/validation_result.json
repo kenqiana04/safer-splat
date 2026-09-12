@@ -1,0 +1,35 @@
+{
+  "FINAL_DECISION": "ADVANCE_TO_ACTIVE_RUNTIME_SMOKE_V3_PROTOCOL_FREEZE",
+  "FINAL_STATUS": "PASS_IMPLEMENT_AND_VALIDATE_V3_HARD_RADIUS_RUNTIME_WIRING_V1",
+  "checks": {
+    "active_runtime_cpu_suite_pass": true,
+    "base_ancestry_contains_exact_commit": true,
+    "core_certifier_mathematics_unchanged": true,
+    "formal_v2_and_historical_evidence_unchanged": true,
+    "gpu_rollout_smoke_pilot_formal_counts_zero": true,
+    "hard_runtime_radius_is_0_015_q": true,
+    "historical_diagnostic_has_no_runtime_authority": true,
+    "historical_diagnostic_shell_is_0_025_q": true,
+    "new_claim_surface_uses_q": true,
+    "object_graph_wiring_pass": true,
+    "projected_runtime_excludes_0_025": true,
+    "rho_seg_is_zero_q": true,
+    "runtime_effective_radius_is_0_015_q": true,
+    "runtime_margin_is_zero_q": true,
+    "shared_runtime_source_unchanged": true,
+    "static_wiring_pass": true,
+    "targeted_cpu_tests_pass": true,
+    "unified_certifier_cpu_suite_pass": true,
+    "v2_default_restored_after_scope": true
+  },
+  "execution_counts": {
+    "formal": 0,
+    "gpu": 0,
+    "official100": 0,
+    "pilot": 0,
+    "smoke": 0
+  },
+  "failed_checks": [],
+  "schema": "V3_HARD_RADIUS_RUNTIME_WIRING_VALIDATION_RESULT_V1",
+  "unit_claim_violations": []
+}

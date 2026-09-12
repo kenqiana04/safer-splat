@@ -1,0 +1,33 @@
+{
+  "all_worktree_change_paths": [
+    "reproduction/runtime/v3_hard_radius_runtime_wiring_v1/DRAFT_PR_BODY.md",
+    "reproduction/runtime/v3_hard_radius_runtime_wiring_v1/IMPLEMENTATION_PLAN.md",
+    "reproduction/runtime/v3_hard_radius_runtime_wiring_v1/V3_RUNTIME_GEOMETRY_POLICY_V1.json",
+    "reproduction/runtime/v3_hard_radius_runtime_wiring_v1/__init__.py",
+    "reproduction/runtime/v3_hard_radius_runtime_wiring_v1/downstream_handoff.json",
+    "reproduction/runtime/v3_hard_radius_runtime_wiring_v1/geometry_policy.py",
+    "reproduction/runtime/v3_hard_radius_runtime_wiring_v1/report/REPORT_IMPLEMENT_V3_HARD_RADIUS_RUNTIME_WIRING_V1.md",
+    "reproduction/runtime/v3_hard_radius_runtime_wiring_v1/stack_config.py",
+    "reproduction/runtime/v3_hard_radius_runtime_wiring_v1/stack_factory.py",
+    "reproduction/validation/v3_hard_radius_runtime_wiring_v1/REGRESSION_RESULTS_V1.json",
+    "reproduction/validation/v3_hard_radius_runtime_wiring_v1/V3_DIAGNOSTIC_AUTHORITY_SEPARATION_V1.json",
+    "reproduction/validation/v3_hard_radius_runtime_wiring_v1/V3_PROTECTED_SOURCE_DIFF_V1.json",
+    "reproduction/validation/v3_hard_radius_runtime_wiring_v1/V3_RUNTIME_HARD_RADIUS_VALIDATION_V1.json",
+    "reproduction/validation/v3_hard_radius_runtime_wiring_v1/V3_RUNTIME_WIRING_FLOW_V1.json",
+    "reproduction/validation/v3_hard_radius_runtime_wiring_v1/report/REPORT_VALIDATE_V3_HARD_RADIUS_RUNTIME_WIRING_V1.md",
+    "reproduction/validation/v3_hard_radius_runtime_wiring_v1/tests/__init__.py",
+    "reproduction/validation/v3_hard_radius_runtime_wiring_v1/tests/test_v3_geometry_policy.py",
+    "reproduction/validation/v3_hard_radius_runtime_wiring_v1/tests/test_v3_stack_projection.py",
+    "reproduction/validation/v3_hard_radius_runtime_wiring_v1/tests/test_v3_static_wiring.py",
+    "reproduction/validation/v3_hard_radius_runtime_wiring_v1/validate_v3_hard_radius_runtime_wiring_v1.py",
+    "reproduction/validation/v3_hard_radius_runtime_wiring_v1/validation_result.json"
+  ],
+  "base": "606edd1c254f4ffaec48e0b84d8f5e5f29c039ec",
+  "core_certifier_math_paths_changed": [],
+  "outside_task_paths": [],
+  "protected_paths_changed": [],
+  "schema": "V3_PROTECTED_SOURCE_DIFF_V1",
+  "shared_runtime_source_changed": false,
+  "status": "PASS",
+  "tracked_diff_paths": []
+}

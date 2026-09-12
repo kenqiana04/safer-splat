@@ -1,0 +1,58 @@
+{
+  "object_graph_audit": {
+    "checks": {
+      "backup_shares_swept": true,
+      "backup_shares_terminal": true,
+      "config_controller_radius_q": true,
+      "config_effective_radius_q": true,
+      "config_rho_seg_q": true,
+      "config_runtime_margin_q": true,
+      "current_adapter_uses_map_adapter": true,
+      "historical_diagnostic_runtime_authority": true,
+      "l1_l2_share_segment_backend": true,
+      "map_adapter_effective_radius_q": true,
+      "registry_controller_radius_q": true,
+      "registry_effective_radius_q": true,
+      "registry_rho_seg_q": true,
+      "registry_runtime_margin_q": true,
+      "segment_backend_uses_map_adapter": true,
+      "swept_effective_radius_q": true,
+      "swept_rho_seg_q": true,
+      "swept_uses_l1_l2_backend": true,
+      "terminal_shares_swept": true
+    },
+    "hard_runtime_radius_q": 0.015,
+    "historical_diagnostic_radius_q": 0.025,
+    "historical_diagnostic_runtime_authority": false,
+    "rho_seg_q": 0.0,
+    "runtime_effective_radius_q": 0.015,
+    "runtime_margin_q": 0.0,
+    "schema": "V3_RUNTIME_STACK_GEOMETRY_AUDIT_V1",
+    "status": "PASS"
+  },
+  "policy": {
+    "coordinate_semantics": "STONEHENGE_NERFSTUDIO_SCALED_REPRESENTED_MAP_QUERY_COORDINATE",
+    "coordinate_unit": "q",
+    "hard_runtime_radius_q": 0.015,
+    "historical_design_reserve_diagnostic_only": true,
+    "historical_design_reserve_q": 0.01,
+    "historical_design_reserve_runtime_authority": false,
+    "historical_design_reserve_v2_only": true,
+    "historical_diagnostic_radius_q": 0.025,
+    "historical_diagnostic_runtime_authority": false,
+    "rho_seg_q": 0.0,
+    "runtime_effective_radius_q": 0.015,
+    "runtime_margin_q": 0.0,
+    "schema": "V3_HARD_RADIUS_GEOMETRY_POLICY_V1"
+  },
+  "projected_runtime": {
+    "coordinate_unit": "q",
+    "hard_runtime_radius_q": 0.015,
+    "rho_seg_q": 0.0,
+    "runtime_effective_radius_q": 0.015,
+    "runtime_margin_q": 0.0,
+    "schema": "V3_HARD_RADIUS_GEOMETRY_POLICY_V1"
+  },
+  "schema": "V3_RUNTIME_HARD_RADIUS_VALIDATION_V1",
+  "status": "PASS"
+}
