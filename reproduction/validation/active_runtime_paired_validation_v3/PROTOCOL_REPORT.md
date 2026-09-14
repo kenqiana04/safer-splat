@@ -6,6 +6,8 @@
 
 `ONLY_NEXT_TASK=EXECUTE_FROZEN_ACTIVE_RUNTIME_V3_PAIRED_VALIDATION`
 
+Protocol freeze commit: `b614ff3e985376b5b52f62709ce1a9332170af99`.
+
 ## Scientific role
 
 This protocol freezes `REPEATED_BENCHMARK_PAIRED_VALIDATION_V3` on the Stonehenge benchmark. Formal V2 outcomes were exposed before V3 was formed, so the 85 trials are explicitly labeled `OUTCOME_EXPOSED_REPEATED_BENCHMARK_VALIDATION`, not a pristine untouched confirmatory holdout. The future result may support bounded statements about the frozen benchmark only; it cannot establish map-independent, population-level, physical-world, hard real-time, or deployment validity.
@@ -29,3 +31,5 @@ The progress gate uses un-clipped normalized progress `(d_start-d_final)/d_start
 ## Execution boundary
 
 This protocol-freeze task executed zero Active V3 arms, zero Reference reruns, zero scientific oracle jobs, zero Official100 jobs, and zero new Formal outcomes. No shared runtime, controller, CBF, dynamics, map, checkpoint, certificate, Pilot, Smoke, or Formal artifact was modified. The next task may execute only the frozen protocol; any scientific/runtime semantic change requires a new protocol version.
+
+The mechanically generated Reference lock and trial manifest were normalized from CRLF to LF after the initial freeze commit so `git diff --check` is clean. Only their byte hashes changed; parsed records, ordering, evidence identities, gates, and scientific semantics remained identical.

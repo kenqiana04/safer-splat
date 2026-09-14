@@ -17,7 +17,8 @@ Freezes the Active Runtime V3 paired scientific validation protocol from exact P
 - Parameter/radius/reserve/controller/endpoint selection: unauthorized
 - Protected shared-source and prior-evidence diff: zero
 - Protocol SHA256: `2de32310c84db49f0b8982e2bb63f15d234732250a5c3ddf859fdb75386439c5`
-- Protocol freeze commit: recorded in the follow-up identity commit after the immutable protocol commit is created
+- Protocol freeze commit: `b614ff3e985376b5b52f62709ce1a9332170af99`
+- Task-local fix: normalized the mechanically generated Reference lock and CSV manifest from CRLF to LF; hashes were updated, with no data or scientific-semantic change
 
 `FINAL_STATUS=PASS_ACTIVE_RUNTIME_V3_PAIRED_VALIDATION_PROTOCOL_FREEZE`
 

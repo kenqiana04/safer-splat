@@ -276,7 +276,11 @@ def main() -> int:
         record["controller_radius_q"] = protocol["controller_lock"]["controller_radius_m"]
         record["actuator_bounds"] = protocol["controller_lock"]["actuator_bounds"]
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(lock, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    args.output.write_text(
+        json.dumps(lock, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+        newline="\n",
+    )
     print(f"PASS_REFERENCE_REUSE_IDENTITY_RESOLVED count={lock['reference_arm_count']}")
     return 0
 

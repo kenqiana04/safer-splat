@@ -2,6 +2,7 @@
   "schema": "ACTIVE_RUNTIME_V3_PAIRED_VALIDATION_INPUT_LOCK_V1",
   "task_type": "PROTOCOL_FREEZE_CPU_ONLY_NO_VALIDATION_OUTCOME",
   "repository": "kenqiana04/safer-splat",
+  "protocol_freeze_commit": "b614ff3e985376b5b52f62709ce1a9332170af99",
   "upstream": {
     "pull_request": 143,
     "state": "OPEN_DRAFT",
@@ -52,8 +53,8 @@
   },
   "task_artifact_sha256": {
     "V3_PAIRED_VALIDATION_PROTOCOL.json": "2de32310c84db49f0b8982e2bb63f15d234732250a5c3ddf859fdb75386439c5",
-    "V3_TRIAL_MANIFEST.csv": "0c9ec6b3e8c9c7c1e0ea7bce5f41a5752444e75c097a3b1d88ca5af6da47e84b",
-    "V3_REFERENCE_REUSE_LOCK.json": "16523871d99f63f05d63152ea01e70d532efd5a1cedbcb655aedda5dfd25892f",
+    "V3_TRIAL_MANIFEST.csv": "d917b4ff6458d701a8a67691cfefe78279f6506513e0428fc912adda65488b8e",
+    "V3_REFERENCE_REUSE_LOCK.json": "ece93d9f4d446264e60b0064a24ac7beb10c223da175bec88a94e9a3c1258aa1",
     "V3_DECISION_RULES.json": "96bb3338de5cc7f13eadea4efdd1d8721874c2f4101a2266ffe1200987287160",
     "V3_REQUIRED_EVIDENCE_SCHEMA.json": "e953652b66ecfceb0380ff3b6712b54952dbd42121b7ebc4c4d460479c1c3b75",
     "V3_ANALYSIS_PLAN.md": "ffe5d13ad6590ae4bed1fb42e6a547c1adf0146141b747a61909d0f0b8795c60"
