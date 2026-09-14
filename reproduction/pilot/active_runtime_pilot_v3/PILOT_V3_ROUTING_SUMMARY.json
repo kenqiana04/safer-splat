@@ -1,0 +1,39 @@
+{
+  "action_roles": {
+    "alternative_count": 0,
+    "backup_count": 9,
+    "boundary_count": 1,
+    "primary_count": 4849,
+    "terminal_count": 0
+  },
+  "certificate_statuses": {
+    "C0": {
+      "FAIL": 0,
+      "PASS": 4857,
+      "UNKNOWN": 0
+    },
+    "L1": {
+      "FAIL": 2,
+      "PASS": 4857,
+      "UNKNOWN": 0
+    },
+    "L2": {
+      "FAIL": 0,
+      "PASS": 4857,
+      "UNKNOWN": 0
+    },
+    "L3": {
+      "FAIL": 0,
+      "PASS": 4857,
+      "UNKNOWN": 0
+    }
+  },
+  "deadline_statuses": {
+    "EXPIRED": 0,
+    "OPEN": 19437,
+    "WARNING": 8
+  },
+  "interpretation": "DESCRIPTIVE_RUNTIME_ROUTING_NOT_EFFICACY",
+  "qp_failures": 2,
+  "schema": "ACTIVE_RUNTIME_PILOT_V3_ROUTING_SUMMARY_V1"
+}

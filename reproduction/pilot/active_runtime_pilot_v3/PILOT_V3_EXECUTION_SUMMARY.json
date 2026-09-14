@@ -1,0 +1,77 @@
+{
+  "FINAL_DECISION": "ADVANCE_TO_NEXT_V3_VALIDATION_PROTOCOL_FREEZE",
+  "FINAL_STATUS": "PASS_ACTIVE_RUNTIME_PILOT_V3",
+  "certificate_statuses": {
+    "C0": {
+      "FAIL": 0,
+      "PASS": 4857,
+      "UNKNOWN": 0
+    },
+    "L1": {
+      "FAIL": 2,
+      "PASS": 4857,
+      "UNKNOWN": 0
+    },
+    "L2": {
+      "FAIL": 0,
+      "PASS": 4857,
+      "UNKNOWN": 0
+    },
+    "L3": {
+      "FAIL": 0,
+      "PASS": 4857,
+      "UNKNOWN": 0
+    }
+  },
+  "completed_cycles": 4859,
+  "completed_trials": 10,
+  "deadline_statuses": {
+    "EXPIRED": 0,
+    "OPEN": 19437,
+    "WARNING": 8
+  },
+  "finalization_pass_count": 10,
+  "forbidden_diagnostic_authority_event_count": 0,
+  "formal_count": 0,
+  "gpu_trial_rerun_count": 0,
+  "hard_runtime_radius_observed_values_q": [
+    0.015
+  ],
+  "historical_diagnostic_intrusion_count": 0,
+  "historical_diagnostic_runtime_authority_observed": false,
+  "integrity_totals": {
+    "FORBIDDEN_DIAGNOSTIC_AUTHORITY_EVENT_COUNT": 0,
+    "action_bound_violation_count": 0,
+    "evidence_incomplete_count": 0,
+    "nonfinite_count": 0,
+    "plant_outcome_unknown_count": 0,
+    "recovery_required_count": 0,
+    "selected_executed_identity_mismatch_count": 0
+  },
+  "official100_count": 0,
+  "plant_commits": 4858,
+  "qp_failures": 2,
+  "reference_arm_count": 0,
+  "roles": {
+    "alternative_count": 0,
+    "backup_count": 9,
+    "boundary_count": 1,
+    "primary_count": 4849,
+    "terminal_count": 0
+  },
+  "schema": "ACTIVE_RUNTIME_PILOT_V3_EXECUTION_SUMMARY_V1",
+  "scientific_oracle_count": 0,
+  "trace_cardinality": "PASS",
+  "trial_ids": [
+    5,
+    15,
+    25,
+    35,
+    45,
+    55,
+    65,
+    75,
+    85,
+    95
+  ]
+}

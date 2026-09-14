@@ -1,0 +1,61 @@
+{
+  "gpu": {
+    "device_name": "NVIDIA GeForce RTX 4090",
+    "visible_device_count": 1
+  },
+  "historical_authority_flags_all_false": true,
+  "map_artifacts": [
+    {
+      "relative_path": "config.yml",
+      "sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e",
+      "size": 6933
+    },
+    {
+      "relative_path": "dataparser_transforms.json",
+      "sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e",
+      "size": 312
+    },
+    {
+      "relative_path": "nerfstudio_models/step-000029999.ckpt",
+      "sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d",
+      "size": 92344786
+    }
+  ],
+  "map_identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+  "pilot_cycles_executed": 0,
+  "protocol_sha256": "8ae74d6c4833fd1088fadc083c104b069b9bb0cdae06ef9c9f4a58cbb09e5e54",
+  "runtime_cycles_executed": 0,
+  "schema": "ACTIVE_RUNTIME_PILOT_V3_GPU_PREFLIGHT_V1",
+  "status": "PASS",
+  "v3_wiring_audit": {
+    "checks": {
+      "backup_shares_swept": true,
+      "backup_shares_terminal": true,
+      "config_controller_radius_q": true,
+      "config_effective_radius_q": true,
+      "config_rho_seg_q": true,
+      "config_runtime_margin_q": true,
+      "current_adapter_uses_map_adapter": true,
+      "historical_diagnostic_runtime_authority": true,
+      "l1_l2_share_segment_backend": true,
+      "map_adapter_effective_radius_q": true,
+      "registry_controller_radius_q": true,
+      "registry_effective_radius_q": true,
+      "registry_rho_seg_q": true,
+      "registry_runtime_margin_q": true,
+      "segment_backend_uses_map_adapter": true,
+      "swept_effective_radius_q": true,
+      "swept_rho_seg_q": true,
+      "swept_uses_l1_l2_backend": true,
+      "terminal_shares_swept": true
+    },
+    "hard_runtime_radius_q": 0.015,
+    "historical_diagnostic_radius_q": 0.025,
+    "historical_diagnostic_runtime_authority": false,
+    "rho_seg_q": 0.0,
+    "runtime_effective_radius_q": 0.015,
+    "runtime_margin_q": 0.0,
+    "schema": "V3_RUNTIME_STACK_GEOMETRY_AUDIT_V1",
+    "status": "PASS"
+  }
+}
