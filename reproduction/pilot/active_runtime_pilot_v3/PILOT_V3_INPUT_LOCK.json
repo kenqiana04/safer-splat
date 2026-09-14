@@ -1,0 +1,52 @@
+{
+  "schema": "ACTIVE_RUNTIME_PILOT_V3_INPUT_LOCK_V1",
+  "task_type": "PROTOCOL_FREEZE_CPU_ONLY_NO_PILOT_EXECUTION",
+  "repository": "kenqiana04/safer-splat",
+  "upstream": {
+    "pull_request": 141,
+    "pull_request_state": "OPEN_DRAFT",
+    "branch": "freeze-active-runtime-smoke-v3-protocol-v1",
+    "commit": "aeab949629d314e930fda6c65bcc68c724fbf6c6",
+    "tree": "16a4ae5f7e39734d139b61ad9f9b8f8f6f82483e",
+    "parent": "49a74aeba41fdd4d63d7389d5692bccc1057bf4f"
+  },
+  "smoke_v3_identity": {
+    "protocol_commit": "d4d13a75b57c6391c43a3a17d4bdf511c12f2825",
+    "evidence_commit": "49a74aeba41fdd4d63d7389d5692bccc1057bf4f",
+    "protocol_sha256": "c1dc8b3f17850267f1cb3247795bc193a8944aa59349de5019efdf4ae72b1691",
+    "final_status": "PASS_ACTIVE_RUNTIME_SMOKE_V3",
+    "cycles": 600,
+    "plant_commits": 600,
+    "hard_runtime_radius_q": 0.015,
+    "historical_0p025_runtime_authority": false
+  },
+  "upstream_artifact_sha256": {
+    "reproduction/smoke/active_runtime_smoke_v3/SMOKE_V3_PROTOCOL.json": "c1dc8b3f17850267f1cb3247795bc193a8944aa59349de5019efdf4ae72b1691",
+    "reproduction/smoke/active_runtime_smoke_v3/SMOKE_V3_INPUT_LOCK.json": "ed802deaa8f8ba79fde657722bd6818dd29223bc201ef7e000e5e594c8523d55",
+    "reproduction/smoke/active_runtime_smoke_v3/SMOKE_V3_EXECUTION_LOCK.json": "89a5ecd375fb14fc434cec7a98c2b562abd20682ff3ab6bf6319c93d0f02961d",
+    "reproduction/smoke/active_runtime_smoke_v3/SMOKE_V3_EXECUTION_SUMMARY.json": "f5cd3155ccd54ac0b884e33b396b9da179aecef260dd542e5e2fe3d88dd7a531",
+    "reproduction/smoke/active_runtime_smoke_v3/SMOKE_V3_PROTOCOL_VALIDATION.json": "a29041907fe6e4c9aa293d03658f6aaeddff06edc84e318d9183ec6afabe3edd",
+    "reproduction/runtime/v3_hard_radius_runtime_wiring_v1/V3_RUNTIME_GEOMETRY_POLICY_V1.json": "8f7b42f08425a203471a92b029e8b1d9beff783490ca2fe23ec34485b39183e4",
+    "reproduction/validation/v3_hard_radius_runtime_wiring_v1/validation_result.json": "b3599caba87c091ffbd83806aac5be2810d95e2dec3541df91f39dab82d03091"
+  },
+  "protocol_sha256": "8ae74d6c4833fd1088fadc083c104b069b9bb0cdae06ef9c9f4a58cbb09e5e54",
+  "decision_rules_sha256": "ddb53739827a9807e85e3593c5a6f0f325fb181d476dca742725da991b35b761",
+  "development_exposure_sha256": "e29cb10403f2f832acbf7932fe891556effa46e928123fd0f4b9194a2cd7d4ff",
+  "required_evidence_schema_sha256": "9dcf4a9f682f38b5e2b42d42aaef85ddaa4da9170e0c4e0b48e79119ef341a6d",
+  "map_identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+  "checkpoint_sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d",
+  "trial_ids": [5, 15, 25, 35, 45, 55, 65, 75, 85, 95],
+  "maximum_completed_cycles_per_trial": 500,
+  "seed": 0,
+  "serial_execution": true,
+  "separate_process_per_trial": true,
+  "gpu_reserved_for_future_execution": 1,
+  "protocol_and_decision_rules_locked_before_any_pilot_outcome": true,
+  "execution_counts": {
+    "gpu_pilot": 0,
+    "official100": 0,
+    "scientific_oracle": 0,
+    "formal": 0,
+    "reference_arm": 0
+  }
+}

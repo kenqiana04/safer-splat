@@ -1,0 +1,136 @@
+{
+  "schema": "ACTIVE_RUNTIME_PILOT_V3_PROTOCOL_V1",
+  "task_name": "FREEZE_ACTIVE_RUNTIME_PILOT_V3_PROTOCOL",
+  "protocol_role": "PROSPECTIVE_RUNTIME_REGRESSION_AND_DESCRIPTIVE_DIAGNOSIS_ONLY",
+  "protocol_is_frozen_before_any_pilot_outcome": true,
+  "upstream": {
+    "repository": "kenqiana04/safer-splat",
+    "pull_request": 141,
+    "pull_request_state": "OPEN_DRAFT",
+    "branch": "freeze-active-runtime-smoke-v3-protocol-v1",
+    "commit": "aeab949629d314e930fda6c65bcc68c724fbf6c6",
+    "smoke_protocol_commit": "d4d13a75b57c6391c43a3a17d4bdf511c12f2825",
+    "smoke_evidence_commit": "49a74aeba41fdd4d63d7389d5692bccc1057bf4f",
+    "smoke_protocol_sha256": "c1dc8b3f17850267f1cb3247795bc193a8944aa59349de5019efdf4ae72b1691",
+    "smoke_final_status": "PASS_ACTIVE_RUNTIME_SMOKE_V3"
+  },
+  "scene": "Stonehenge",
+  "trial_ids": [5, 15, 25, 35, 45, 55, 65, 75, 85, 95],
+  "trial_order": [5, 15, 25, 35, 45, 55, 65, 75, 85, 95],
+  "development_exposed_trial_ids": [5, 15, 25, 35, 45, 55, 65, 75, 85, 95],
+  "historical_routing_liveness_stress_trial_ids": [5, 25, 45, 75, 85],
+  "cohort_rationale": [
+    "REUSE_ALREADY_DEVELOPMENT_EXPOSED_V2_PILOT_COHORT",
+    "NO_NEW_FORMAL_PRIMARY_TRIAL_EXPOSURE",
+    "INCLUDES_HISTORICAL_ROUTING_AND_LIVENESS_STRESS_TRIALS",
+    "RUNTIME_REGRESSION_AND_PILOT_DIAGNOSIS_NOT_PARAMETER_SELECTION",
+    "COHORT_IMMUTABLE_TO_V3_OUTCOMES"
+  ],
+  "execution": {
+    "seed": 0,
+    "maximum_completed_cycles_per_trial": 500,
+    "serial_execution": true,
+    "separate_process_per_trial": true,
+    "gpu_id": 1,
+    "conda_environment": "/disk1/zlab/conda_envs/safer_splat_official",
+    "python": "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
+    "dt": 0.05
+  },
+  "map": {
+    "relative_path": "outputs/stonehenge/splatfacto/2024-09-11_100724",
+    "identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+    "artifacts": [
+      {"relative_path": "config.yml", "size": 6933, "sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e"},
+      {"relative_path": "dataparser_transforms.json", "size": 312, "sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e"},
+      {"relative_path": "nerfstudio_models/step-000029999.ckpt", "size": 92344786, "sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d"}
+    ]
+  },
+  "v3_runtime_geometry": {
+    "coordinate_unit": "q",
+    "coordinate_semantics": "STONEHENGE_NERFSTUDIO_SCALED_REPRESENTED_MAP_QUERY_COORDINATE",
+    "r_body_q": 0.015,
+    "m_hard_q": 0.0,
+    "r_hard_q": 0.015,
+    "rho_seg_q": 0.0
+  },
+  "historical_diagnostic_shell": {
+    "radius_q": 0.025,
+    "runtime_authority": false,
+    "primary_safety_authority": false,
+    "candidate_rejection_authority": false,
+    "fallback_authority": false,
+    "arbitration_authority": false,
+    "candidate_ranking_authority": false,
+    "backup_veto_authority": false,
+    "terminal_veto_authority": false
+  },
+  "runtime_inheritance": {
+    "source": "PR_140_AND_PR_141_FROZEN_V3_RUNTIME",
+    "protocol_reimplements_plant_or_control_authority": false,
+    "protocol_reimplements_radius_policy": false
+  },
+  "scientific_role": {
+    "v3_runtime_integrity": true,
+    "execution_evidence_completeness": true,
+    "historical_stress_regression_coverage": true,
+    "descriptive_liveness_routing_diagnostics": true,
+    "verify_historical_shell_has_no_runtime_authority": true,
+    "parameter_selection_authorized": false,
+    "radius_selection_authorized": false,
+    "policy_selection_authorized": false,
+    "formal_claim_authorized": false,
+    "superiority_test": false,
+    "statistical_significance_test": false,
+    "physical_collision_guarantee": false,
+    "real_time_guarantee": false,
+    "deployment_validation": false
+  },
+  "execution_switches": {
+    "gpu_pilot_execution_enabled_in_this_task": false,
+    "scientific_oracle_enabled": false,
+    "official100_enabled": false,
+    "formal_comparison_enabled": false,
+    "reference_arm_enabled": false,
+    "parameter_selection_enabled": false
+  },
+  "outcome_isolation": {
+    "pilot_trials_are_development_exposed": true,
+    "eligible_for_new_v3_primary_confirmatory_cohort": false,
+    "outcome_conditioned_cohort_change_allowed": false,
+    "same_pilot_parameter_adjustment_or_rerun_allowed": false,
+    "formal_v2_evidence_mutation_allowed": false
+  },
+  "integrity_requirements": {
+    "fresh_process_per_trial": true,
+    "frozen_initial_state_and_goal": true,
+    "trace_records_per_completed_cycle": 1,
+    "locked_records_per_completed_cycle": 1,
+    "selected_executed_identity_mismatch_allowed": 0,
+    "nonfinite_allowed": 0,
+    "actuator_violation_allowed": 0,
+    "evidence_incomplete_allowed": 0,
+    "recovery_required_allowed": 0,
+    "typed_finalization_required": true,
+    "silent_retry_after_unknown_plant_state_allowed": false,
+    "committed_plant_action_rollback_allowed": false,
+    "incomplete_trial_evaluation_eligible": false,
+    "rerun_complete_immutable_evidence_for_reporter_defect_allowed": false
+  },
+  "pre_execution_v3_wiring_gate": {
+    "actual_runtime_hard_radius_q": 0.015,
+    "actual_hard_reserve_q": 0.0,
+    "actual_rho_seg_q": 0.0,
+    "historical_0p025_runtime_authority": false,
+    "mismatch_action": "FAIL_CLOSED_BEFORE_GPU_PILOT"
+  },
+  "decision_rules_file": "PILOT_V3_DECISION_RULES.json",
+  "development_exposure_file": "PILOT_V3_DEVELOPMENT_EXPOSURE.json",
+  "required_evidence_schema_file": "PILOT_V3_REQUIRED_EVIDENCE_SCHEMA.json",
+  "execution_counts_at_freeze": {
+    "gpu_pilot": 0,
+    "official100": 0,
+    "scientific_oracle": 0,
+    "formal": 0,
+    "reference_arm": 0
+  }
+}
