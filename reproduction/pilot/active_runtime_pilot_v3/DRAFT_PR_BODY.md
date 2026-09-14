@@ -2,7 +2,7 @@
 
 Freezes the prospective Stonehenge Active Runtime Pilot V3 protocol from exact PR #141 head `aeab949629d314e930fda6c65bcc68c724fbf6c6` without executing any Pilot outcome.
 
-- Protocol commit: `PENDING_PROTOCOL_COMMIT`
+- Protocol commit: `ff536b868db3522067fdeb2034580e156ae4d29e`
 - Pilot trials: `[5,15,25,35,45,55,65,75,85,95]`
 - Maximum completed cycles: 500 per trial
 - Execution: serial, independent process per trial
@@ -14,6 +14,7 @@ Freezes the prospective Stonehenge Active Runtime Pilot V3 protocol from exact P
 - Parameter, radius, and policy selection: unauthorized
 - Protected runtime/production diff: zero
 - Protocol SHA256: `8ae74d6c4833fd1088fadc083c104b069b9bb0cdae06ef9c9f4a58cbb09e5e54`
+- Task-local fix: validation-result output was normalized to LF before the protocol commit; no protocol or scientific semantics changed
 
 `FINAL_STATUS=PASS_ACTIVE_RUNTIME_PILOT_V3_PROTOCOL_FREEZE`
 
