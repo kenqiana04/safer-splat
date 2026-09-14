@@ -1,0 +1,65 @@
+{
+  "schema": "ACTIVE_RUNTIME_PILOT_V3_EXECUTION_LOCK_V1",
+  "repository": "kenqiana04/safer-splat",
+  "base_sha": "18664bcb8d6e71333e1216c5af0c6757840540f8",
+  "protocol_commit": "ff536b868db3522067fdeb2034580e156ae4d29e",
+  "protocol_sha256": "8ae74d6c4833fd1088fadc083c104b069b9bb0cdae06ef9c9f4a58cbb09e5e54",
+  "runner_sha256": "187266785989e003a609adad1e63a51335d0f9319a7984676c36252bbf6fe4c2",
+  "execution_validator_sha256": "c6f4836a2375511357cbb45b400b1b3930a93f4345acc07d1199bb6839a54a20",
+  "decision_rules_sha256": "ddb53739827a9807e85e3593c5a6f0f325fb181d476dca742725da991b35b761",
+  "required_evidence_schema_sha256": "9dcf4a9f682f38b5e2b42d42aaef85ddaa4da9170e0c4e0b48e79119ef341a6d",
+  "trial_ids": [5, 15, 25, 35, 45, 55, 65, 75, 85, 95],
+  "trial_order": [5, 15, 25, 35, 45, 55, 65, 75, 85, 95],
+  "historical_stress_trial_ids": [5, 25, 45, 75, 85],
+  "max_cycles": 500,
+  "seed": 0,
+  "serial_execution": true,
+  "separate_process_per_trial": true,
+  "environment": {
+    "conda_environment": "/disk1/zlab/conda_envs/safer_splat_official",
+    "python": "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
+    "CUDA_VISIBLE_DEVICES": "1",
+    "PYTHONHASHSEED": "0",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "gpu_id": 1,
+  "map": {
+    "identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+    "checkpoint_sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d",
+    "config_sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e",
+    "dataparser_transforms_sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e"
+  },
+  "v3_geometry": {
+    "r_body_q": 0.015,
+    "m_hard_q": 0.0,
+    "r_hard_q": 0.015,
+    "rho_seg_q": 0.0
+  },
+  "historical_diagnostic_shell": {
+    "radius_q": 0.025,
+    "runtime_authority": false,
+    "primary_safety_authority": false,
+    "candidate_rejection_authority": false,
+    "fallback_authority": false,
+    "arbitration_authority": false,
+    "candidate_ranking_authority": false,
+    "backup_veto_authority": false,
+    "terminal_veto_authority": false
+  },
+  "method_level_signal_interpretation": {
+    "repeated_means_at_least_two_frozen_stress_trials": true,
+    "cycle1_terminal_takeover_requires_first_action_terminal_and_no_primary_commit": true,
+    "outcome_threshold_added": false,
+    "parameter_or_cohort_adaptation_allowed": false
+  },
+  "execution_counts_at_lock": {
+    "gpu_pilot": 0,
+    "official100": 0,
+    "scientific_oracle": 0,
+    "formal": 0,
+    "reference_arm": 0
+  },
+  "locked_before_first_gpu_pilot_outcome": true
+}

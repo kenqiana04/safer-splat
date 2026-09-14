@@ -1,23 +1,25 @@
 ## Summary
 
-Freezes the prospective Stonehenge Active Runtime Pilot V3 protocol from exact PR #141 head `aeab949629d314e930fda6c65bcc68c724fbf6c6` without executing any Pilot outcome.
+Executed the exact frozen Pilot V3 protocol from PR #142 head `18664bcb8d6e71333e1216c5af0c6757840540f8`.
 
 - Protocol commit: `ff536b868db3522067fdeb2034580e156ae4d29e`
-- Pilot trials: `[5,15,25,35,45,55,65,75,85,95]`
-- Maximum completed cycles: 500 per trial
-- Execution: serial, independent process per trial
-- Reserved future device/environment: GPU 1, `/disk1/zlab/conda_envs/safer_splat_official`
-- V3 hard radius / reserve / effective radius / rho: `0.015/0/0.015/0 q`
-- Historical shell: `0.025 q`, diagnostic-only, every runtime authority flag false
-- Cohort: development-exposed; no new Formal-primary trial exposure
-- GPU Pilot / Official100 / oracle / Formal / reference arm counts: `0/0/0/0/0`
-- Parameter, radius, and policy selection: unauthorized
-- Protected runtime/production diff: zero
-- Protocol SHA256: `8ae74d6c4833fd1088fadc083c104b069b9bb0cdae06ef9c9f4a58cbb09e5e54`
-- Task-local fix: validation-result output was normalized to LF before the protocol commit; no protocol or scientific semantics changed
+- Execution-lock commit: `f751c245d649a36b67ddfc55e9e54d337d4d0418`
+- Pilot trials/order: `[5,15,25,35,45,55,65,75,85,95]`
+- Maximum completed cycles: 500 per trial; serial, independent process per trial
+- Environment/device: GPU 1, `/disk1/zlab/conda_envs/safer_splat_official`
+- Completed: 10 trials, 4,859 cycles, 4,858 plant commits, 10 finalization PASS, trace cardinality PASS
+- Roles: primary/alternative/backup/terminal/boundary = `4849/0/9/0/1`
+- L1 PASS/FAIL/UNKNOWN = `4857/2/0`; C0 = `4857/0/0`; L2 = `4857/0/0`; L3 = `4857/0/0`
+- Deadline OPEN/WARNING/EXPIRED = `19437/8/0`; QP-failure diagnostic count = `2`
+- Integrity: selected/executed mismatch, nonfinite, action-bound violation, evidence-incomplete, recovery-required, plant-unknown = all `0`
+- V3 hard radius observed only `0.015 q`; historical `0.025 q` intrusion/authority events = `0/0`
+- Stress regression: five development-exposed trials had primary commit; no repeated cycle-1 terminal takeover without primary
+- GPU reruns = `0`; Official100/oracle/Formal/reference arm = `0/0/0/0`
+- No efficacy, collision, progress, noninferiority, real-time, or deployment claim is made.
+- Task-local fix: remote validator-path mismatch was resolved by outcome-blind evidence copy-back and local validator rerun; no GPU rerun and no scientific/protocol change.
 
-`FINAL_STATUS=PASS_ACTIVE_RUNTIME_PILOT_V3_PROTOCOL_FREEZE`
+`FINAL_STATUS=PASS_ACTIVE_RUNTIME_PILOT_V3`
 
-`FINAL_DECISION=READY_TO_EXECUTE_FROZEN_ACTIVE_RUNTIME_PILOT_V3`
+`FINAL_DECISION=ADVANCE_TO_NEXT_V3_VALIDATION_PROTOCOL_FREEZE`
 
-Only next task: `EXECUTE_FROZEN_ACTIVE_RUNTIME_PILOT_V3`.
+Only next task: `FREEZE_NEXT_V3_VALIDATION_PROTOCOL`.

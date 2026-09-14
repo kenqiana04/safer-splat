@@ -1,0 +1,69 @@
+{
+  "interpretation": "DEVELOPMENT_EXPOSED_DESCRIPTIVE_REGRESSION_ONLY",
+  "repeated_cycle1_terminal_takeover_without_primary": false,
+  "schema": "ACTIVE_RUNTIME_PILOT_V3_STRESS_REGRESSION_V1",
+  "trial_ids": [
+    5,
+    25,
+    45,
+    75,
+    85
+  ],
+  "trials": [
+    {
+      "at_least_one_primary_commit": true,
+      "backup_count": 0,
+      "boundary_count": 0,
+      "c0_fail": 0,
+      "completed_cycles": 500,
+      "first_cycle_terminal": false,
+      "terminal_count": 0,
+      "termination_type": "MAX_COMPLETED_CYCLES",
+      "trial_id": 5
+    },
+    {
+      "at_least_one_primary_commit": true,
+      "backup_count": 0,
+      "boundary_count": 0,
+      "c0_fail": 0,
+      "completed_cycles": 500,
+      "first_cycle_terminal": false,
+      "terminal_count": 0,
+      "termination_type": "MAX_COMPLETED_CYCLES",
+      "trial_id": 25
+    },
+    {
+      "at_least_one_primary_commit": true,
+      "backup_count": 0,
+      "boundary_count": 0,
+      "c0_fail": 0,
+      "completed_cycles": 500,
+      "first_cycle_terminal": false,
+      "terminal_count": 0,
+      "termination_type": "MAX_COMPLETED_CYCLES",
+      "trial_id": 45
+    },
+    {
+      "at_least_one_primary_commit": true,
+      "backup_count": 8,
+      "boundary_count": 0,
+      "c0_fail": 0,
+      "completed_cycles": 500,
+      "first_cycle_terminal": false,
+      "terminal_count": 0,
+      "termination_type": "MAX_COMPLETED_CYCLES",
+      "trial_id": 75
+    },
+    {
+      "at_least_one_primary_commit": true,
+      "backup_count": 0,
+      "boundary_count": 0,
+      "c0_fail": 0,
+      "completed_cycles": 500,
+      "first_cycle_terminal": false,
+      "terminal_count": 0,
+      "termination_type": "MAX_COMPLETED_CYCLES",
+      "trial_id": 85
+    }
+  ]
+}

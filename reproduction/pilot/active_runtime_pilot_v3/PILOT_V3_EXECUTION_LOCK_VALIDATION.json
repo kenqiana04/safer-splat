@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "base_in_ancestry": true,
+    "cohort_exact": true,
+    "execution_counts_zero": true,
+    "execution_exact": true,
+    "geometry_exact": true,
+    "historical_authority_false": true,
+    "no_trial_evidence": true,
+    "protected_diff_zero": true,
+    "protocol_immutable": true,
+    "runner_hash": true
+  },
+  "failed_checks": [],
+  "phase": "lock",
+  "schema": "ACTIVE_RUNTIME_PILOT_V3_EXECUTION_VALIDATION_V1",
+  "status": "PASS_ACTIVE_RUNTIME_PILOT_V3_EXECUTION_LOCK_VALIDATION"
+}
