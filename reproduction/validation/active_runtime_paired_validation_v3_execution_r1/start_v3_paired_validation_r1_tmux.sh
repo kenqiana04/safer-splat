@@ -16,8 +16,11 @@ tmux has-session -t "$SESSION" 2>/dev/null && { echo "TMUX_SESSION_ALREADY_EXIST
 [[ ! -e "$RESULT_ROOT" ]] || { echo "FIRST_LAUNCH_RESULT_ROOT_ALREADY_EXISTS" >&2; exit 2; }
 
 export CUDA_VISIBLE_DEVICES=1 PYTHONHASHSEED=0 PYTHONNOUSERSITE=1 PYTHONDONTWRITEBYTECODE=1 CUBLAS_WORKSPACE_CONFIG=:4096:8
+"$PYTHON" "$RUNNER" --static-preflight --checkout "$CHECKOUT" --output-dir "$RESULT_ROOT" --map-source-root "$MAP_ROOT"
+"$PYTHON" "$VALIDATOR" --repo-root "$CHECKOUT"
+
 mkdir -p "$RESULT_ROOT"
 LOG="$RESULT_ROOT/launcher.log"
-COMMAND="cd '$CHECKOUT' && '$PYTHON' '$RUNNER' --static-preflight --checkout '$CHECKOUT' --output-dir '$RESULT_ROOT' --map-source-root '$MAP_ROOT' && '$PYTHON' '$VALIDATOR' --repo-root '$CHECKOUT' && '$PYTHON' '$RUNNER' --gpu-preflight --resume --checkout '$CHECKOUT' --output-dir '$RESULT_ROOT' --map-source-root '$MAP_ROOT' && '$PYTHON' '$RUNNER' --batch --resume --checkout '$CHECKOUT' --output-dir '$RESULT_ROOT' --map-source-root '$MAP_ROOT'; rc=\$?; echo COLLECTION_COMPLETE_OR_STOPPED_REVIEW_BEFORE_ANALYSIS; exit \$rc"
+COMMAND="cd '$CHECKOUT' && '$PYTHON' '$RUNNER' --gpu-preflight --resume --checkout '$CHECKOUT' --output-dir '$RESULT_ROOT' --map-source-root '$MAP_ROOT' && '$PYTHON' '$RUNNER' --batch --resume --checkout '$CHECKOUT' --output-dir '$RESULT_ROOT' --map-source-root '$MAP_ROOT'; rc=\$?; echo COLLECTION_COMPLETE_OR_STOPPED_REVIEW_BEFORE_ANALYSIS; exit \$rc"
 tmux new-session -d -s "$SESSION" "exec >'$LOG' 2>&1; $COMMAND"
 echo "STARTED_TMUX_SESSION=$SESSION"

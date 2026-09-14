@@ -63,14 +63,21 @@ def main() -> int:
     need(not git(repo, "diff", "--name-only", REPAIRED_HEAD, "HEAD", "--", OLD_TASK_REL), "OLD_HARNESS_UNCHANGED", failures)
     need(not git(repo, "diff", "--name-only", REPAIRED_HEAD, "HEAD", "--", REPAIR_EVIDENCE_REL), "REPAIR_EVIDENCE_UNCHANGED", failures)
     counts = lock.get("execution_counts_at_harness_freeze", {}); need(all(counts.get(k) == 0 for k in ("active_v3","reference_rerun","scientific_oracle","official100","formal_new_outcome")), "ZERO_EXECUTION_COUNTS", failures)
-    required = ["run_active_runtime_v3_paired_validation_r1.py","analyze_active_runtime_v3_paired_validation_r1.py","validate_v3_paired_execution_harness_r1.py","start_v3_paired_validation_r1_tmux.sh","monitor_v3_paired_validation_r1.sh","execution_evidence_schema.json","EXECUTION_HARNESS_R1_REPORT.md","DRAFT_PR_BODY.md","downstream_handoff.json"]
+    required = ["run_active_runtime_v3_paired_validation_r1.py","analyze_active_runtime_v3_paired_validation_r1.py","validate_v3_paired_execution_harness_r1.py","start_v3_paired_validation_r1_tmux.sh","monitor_v3_paired_validation_r1.sh","execution_evidence_schema.json","EXECUTION_HARNESS_R1_REPORT.md","DRAFT_PR_BODY.md","downstream_handoff.json","test_first_launch_preflight_order_r1.py"]
     for name in required: need((task / name).is_file(), "MISSING:" + name, failures)
     for name, expected in lock.get("harness_file_sha256", {}).items(): need(sha(task / name) == expected, "HARNESS_HASH:" + name, failures)
     runner = (task / "run_active_runtime_v3_paired_validation_r1.py").read_text(); analyzer = (task / "analyze_active_runtime_v3_paired_validation_r1.py").read_text(); launcher = (task / "start_v3_paired_validation_r1_tmux.sh").read_text(); monitor = (task / "monitor_v3_paired_validation_r1.sh").read_text()
     need(all(flag in runner for flag in ("--static-preflight","--gpu-preflight","--one","--batch","--summarize-integrity","--resume")), "RUNNER_MODES", failures)
     need("ACTIVE_V3_R1_COLLECTION_INTEGRITY_SUMMARY" in runner and "complete_evidence" in runner, "INTEGRITY_SUMMARY", failures)
     need("10000" in analyzer and "20260911" in analyzer and "NI_MARGIN=-0.02" in analyzer and "--post-collection-authorized" in analyzer, "ANALYZER_PROTOCOL", failures)
+    static_i = launcher.find("--static-preflight")
+    validator_i = launcher.find('"$VALIDATOR" --repo-root')
+    mkdir_i = launcher.find('mkdir -p "$RESULT_ROOT"')
+    gpu_i = launcher.find("--gpu-preflight")
+    batch_i = launcher.find("--batch")
+    need(static_i >= 0 and validator_i >= 0 and mkdir_i >= 0 and gpu_i >= 0 and batch_i >= 0 and static_i < validator_i < mkdir_i < gpu_i < batch_i, "FIRST_LAUNCH_ORDER", failures)
     need("--gpu-preflight" in launcher and "--batch" in launcher and "analyze_active_runtime" not in launcher and "FIRST_LAUNCH_RESULT_ROOT_ALREADY_EXISTS" in launcher, "LAUNCHER_BOUNDARY", failures)
+    need('"$PYTHON" "$RUNNER" --static-preflight' in launcher and '"$PYTHON" "$VALIDATOR" --repo-root' in launcher, "CPU_PRECHECK_OUTSIDE_TMUX", failures)
     need("ACTIVE_V3_R1_COLLECTION_INTEGRITY_SUMMARY" in monitor and "raw/*/ACTIVE_V3_RAW_EVIDENCE_LOCK" not in monitor, "MONITOR_AUTHORITY", failures)
     need(lock.get("execution_counts_at_harness_freeze") == {"active_v3":0,"reference_rerun":0,"scientific_oracle":0,"official100":0,"formal_new_outcome":0}, "LOCK_ZERO_COUNTS", failures)
     if failures:

@@ -2,6 +2,10 @@
 
 This is a pre-outcome harness re-freeze against repaired runtime commit `604981dca96cf924679aaf718b78776d858b55b1` (PR #146). It does not contain collection outcomes.
 
+## First-launch sequencing correction
+
+The launcher now runs CPU static preflight and the CPU validator while the fresh R1 result root is still absent. Only after both pass does it create the root and start tmux; the tmux command begins with explicitly authorized `--gpu-preflight --resume` and then `--batch --resume`. First-launch collision refusal remains active, resume remains explicit, and the analyzer is never auto-run.
+
 ## Frozen boundary
 
 - Protocol source is PR #144, byte-identical SHA-256 `2de32310c84db49f0b8982e2bb63f15d234732250a5c3ddf859fdb75386439c5`.

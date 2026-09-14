@@ -83,14 +83,15 @@
   "harness_file_sha256": {
     "run_active_runtime_v3_paired_validation_r1.py": "780a595bbec2929961f01b52029feaf2fea60b4e0204636bca5a58dfe9b91570",
     "analyze_active_runtime_v3_paired_validation_r1.py": "dd49f54dd1a2c46fb536b680c783feea2a413007199c160e5c98f407d162a692",
-    "validate_v3_paired_execution_harness_r1.py": "a233f18cf4c8f278b8712240fd6e493db75035d160f9fff3fcccc2b452253de5",
-    "start_v3_paired_validation_r1_tmux.sh": "3ffe8e1d391f40beb7015f3e4c16f708ea4e9bd7a9e37093ed5112c68cf20f98",
+    "validate_v3_paired_execution_harness_r1.py": "f8a498be12a099829fd90336fdecadbc4ae493c4e69c827390578219e0219209",
+    "start_v3_paired_validation_r1_tmux.sh": "55cf71f53a09aefa61d46cb81198b9d045e27b290ff72059307bfb830f4a006c",
     "monitor_v3_paired_validation_r1.sh": "d5826461986d6006e6855b3fce31743629528ce15bb015634aeda24654487c9b",
     "execution_evidence_schema.json": "e5b220501b60fc611cf1a5eefd8824a212081211267d3e01f40d1798428f4f86",
     "REPAIR_SOURCE_LOCK.json": "6f4522ccd77132051ea0a5dbe8ac5b3ac090926bd1705cf526329f796e6cdb86",
-    "EXECUTION_HARNESS_R1_REPORT.md": "381de331107cad8ce06cf0244fbe4794fb067ed09c7ee7863d400732d1ac310d",
-    "DRAFT_PR_BODY.md": "01e42caa0de2ea75742a11a16c460126f19f373bc1c1aec9de9f00163d7d04c4",
-    "downstream_handoff.json": "c38175ed11267e515b9b8a7a3d2d2e77fd6805c723b042f774f78657834f07c0",
+    "EXECUTION_HARNESS_R1_REPORT.md": "0ac552b7e2e9905373d2d97609dae8bdb98964217858fab23d959275bfc52fb0",
+    "DRAFT_PR_BODY.md": "e5c78e217bfc3a78b7884f510d911c2c9b5faa954e4f84dd1239e7c3185c4d48",
+    "downstream_handoff.json": "4edf0e24956dac785ba3f656ee3b44fc4dfebd2a22e317fe69ddb416f0294d78",
+    "test_first_launch_preflight_order_r1.py": "9a94f17b6e7b68da463961d7312d64b3987d985883a9087c75a495e374d82154",
     "IMPLEMENTATION_PLAN.md": "57ae7eed7d5495876e796ee7d3ed330e09ed0b2bc0e01f8af7da82e819057c5d"
   },
   "protected_diff_required": 0,
@@ -99,5 +100,8 @@
   "new_result_root": "/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_r1_20260914",
   "gpu_actions_require_committed_clean_lock": true,
   "launcher_runs_analyzer": false,
+  "first_launch_preflight_before_root_creation": true,
+  "first_launch_root_collision_refusal": true,
+  "resume_requires_explicit_flag": true,
   "execution_counts_at_harness_freeze": {"active_v3": 0, "reference_rerun": 0, "scientific_oracle": 0, "official100": 0, "formal_new_outcome": 0}
 }
