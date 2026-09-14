@@ -1,0 +1,41 @@
+{
+  "schema": "ACTIVE_RUNTIME_V3_PAIRED_VALIDATION_REQUIRED_EVIDENCE_V1",
+  "active_v3_per_trial_required": [
+    "trial_id", "source_git_identity", "protocol_identity", "map_identity", "checkpoint_identity",
+    "start_state_identity", "goal_identity", "seed", "dt", "max_completed_cycles",
+    "execution_complete", "evaluation_eligible", "process_exit_code", "typed_termination",
+    "runtime_trace_sha256", "runtime_trace_lock_sha256", "trace_record_count", "locked_record_count",
+    "completed_cycles", "plant_commits", "selected_executed_identity_mismatch_count",
+    "nonfinite_count", "actuator_violation_count", "evidence_incomplete_count",
+    "recovery_required_count", "unresolved_plant_execution_state_count", "finalization_status",
+    "observed_runtime_hard_radius_set_q", "historical_shell_runtime_authority_observed",
+    "historical_shell_intrusion_count", "primary_count", "alternative_count", "backup_count",
+    "terminal_count", "boundary_count", "L1_status_counts", "C0_status_counts",
+    "L2_status_counts", "L3_status_counts", "QP_failure_count", "deadline_status_counts",
+    "token_activation_count", "token_consumption_count", "step_timing_evidence"
+  ],
+  "reused_reference_per_trial_required": [
+    "trial_id", "arm", "method_identity", "source_git_identity", "map_identity", "checkpoint_identity",
+    "start_state", "start_state_hash", "goal_state", "goal_state_task_hash", "seed", "dt", "max_steps",
+    "summary_sha256", "raw_evidence_lock_identity", "raw_evidence_lock_sha256",
+    "trajectory_action_evidence_sha256", "locked_files", "typed_termination",
+    "execution_complete", "evaluation_eligible", "finalization_proven", "oracle_input_availability"
+  ],
+  "posthoc_oracle_per_pair_required": [
+    "trial_id", "active_hard_safety_status_at_0p015_q", "reference_hard_safety_status_at_0p015_q",
+    "active_min_hard_clearance_q", "reference_min_hard_clearance_q", "hard_collision_discordance",
+    "active_normalized_progress", "reference_normalized_progress", "paired_progress_difference",
+    "active_goal_reached", "reference_goal_reached", "oracle_unknown_count",
+    "historical_0p025_diagnostic_only", "oracle_feedback"
+  ],
+  "aggregate_required": [
+    "paired_eligible_count", "hard_safety_gate_result", "progress_noninferiority_gate_result",
+    "mean_paired_progress_difference", "median_paired_progress_difference", "progress_difference_IQR",
+    "progress_difference_min", "progress_difference_max", "pair_bootstrap_seed",
+    "pair_bootstrap_resamples", "pair_bootstrap_percentile_CI_95", "final_decision",
+    "claim_boundary"
+  ],
+  "primary_analysis_requires_exactly_85_complete_pairs": true,
+  "imputation_allowed": false,
+  "historical_0p025_primary_gate_authority": false
+}

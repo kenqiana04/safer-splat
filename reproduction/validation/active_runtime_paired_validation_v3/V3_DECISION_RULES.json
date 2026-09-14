@@ -1,0 +1,36 @@
+{
+  "schema": "ACTIVE_RUNTIME_V3_PAIRED_VALIDATION_DECISION_RULES_V1",
+  "frozen_pre_outcome": true,
+  "required_pair_count": 85,
+  "no_imputation": true,
+  "gates": [
+    {
+      "gate": "INTEGRITY",
+      "pass_if": "ACTIVE_V3_ELIGIBLE=85 AND REUSED_REFERENCE_ELIGIBLE=85 AND PAIRED_ELIGIBLE=85 AND ALL_INTEGRITY_VIOLATION_COUNTS=0 AND RUNTIME_RADIUS_SET={0.015} AND HISTORICAL_SHELL_AUTHORITY=false",
+      "failure_decision": "BLOCK_AND_DIAGNOSE_V3_RUNTIME_OR_EVIDENCE"
+    },
+    {
+      "gate": "HARD_SAFETY_AT_0P015_Q",
+      "pass_if": "ACTIVE_SWEPT_SEGMENT_VIOLATION_TRIALS=0 AND ACTIVE_COLLISION_PROXY_TRIALS=0 AND ACTIVE_ONLY_DISCORDANT_PAIRS=0 AND UNRESOLVED_ORACLE_UNKNOWN=0",
+      "historical_0p025_authority": false,
+      "failure_decision": "FAIL_V3_HARD_SAFETY_GATE"
+    },
+    {
+      "gate": "PROGRESS_NONINFERIORITY",
+      "estimand": "MEAN_PAIRED_DIFFERENCE_ACTIVE_V3_MINUS_REUSED_REFERENCE_NORMALIZED_PROGRESS",
+      "margin": -0.02,
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260911,
+      "confidence_interval": "95_PERCENT_PERCENTILE",
+      "pass_if": "LOWER_BOUND_STRICTLY_GREATER_THAN_MINUS_0P02",
+      "failure_decision": "FAIL_V3_PROGRESS_NONINFERIORITY"
+    }
+  ],
+  "success_requires": ["INTEGRITY_PASS", "HARD_SAFETY_PASS", "PROGRESS_NONINFERIORITY_PASS"],
+  "success_decision": "PASS_V3_PAIRED_VALIDATION_ON_FROZEN_STONEHENGE_BENCHMARK",
+  "incomplete_primary_decision": "BLOCK_INCOMPLETE_PRIMARY_EVIDENCE",
+  "reference_identity_failure": "BLOCK_REFERENCE_REUSE_IDENTITY_UNRESOLVED",
+  "secondary_endpoints_can_replace_primary_gate": false,
+  "outcome_conditioned_exclusion_allowed": false,
+  "protocol_freeze_task_produces_scientific_decision": false
+}
