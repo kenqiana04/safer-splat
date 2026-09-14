@@ -1,0 +1,33 @@
+{
+  "schema": "ACTIVE_RUNTIME_V3_PAIRED_EXECUTION_R1_EVIDENCE_SCHEMA_V1",
+  "per_trial_required": [
+    "trial_summary.json",
+    "runtime_trace.jsonl",
+    "runtime_trace_lock.json",
+    "cycle_observations.jsonl",
+    "process_exit_code.txt",
+    "gpu_released.txt",
+    "stdout.log",
+    "stderr.log",
+    "ACTIVE_V3_RAW_EVIDENCE_LOCK.json"
+  ],
+  "required_integrity_fields": [
+    "selected_executed_identity_mismatch_count",
+    "nonfinite_count",
+    "action_bound_violation_count",
+    "evidence_incomplete_count",
+    "recovery_required_count",
+    "plant_outcome_unknown_count",
+    "duplicate_trace_append_count",
+    "duplicate_plant_commit_count",
+    "exception_count",
+    "cuda_oom_count",
+    "FORBIDDEN_DIAGNOSTIC_AUTHORITY_EVENT_COUNT"
+  ],
+  "trace_contract": "completed_cycles == trace_record_count == trace_lock_record_count == persisted_trace_lines",
+  "legitimate_boundary_cycle": "one trace, zero plant commits, not evidence failure",
+  "cycle_observation_role": "TASK_LOCAL_READ_ONLY_RUNTIME_FACT_CAPTURE_FOR_POSTHOC_ORACLE",
+  "observer_feedback": false,
+  "immutable_complete_evidence_required_for_resume_skip": true,
+  "aggregate_scientific_analysis_during_collection": false
+}

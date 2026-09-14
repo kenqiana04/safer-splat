@@ -1,0 +1,13 @@
+{
+  "schema": "ACTIVE_RUNTIME_V3_REPAIR_SOURCE_LOCK_V1",
+  "repair_pr": 146,
+  "repair_head": "604981dca96cf924679aaf718b78776d858b55b1",
+  "repair_parent": "bf0a0792932c02e243236f1b316a41037c95fc69",
+  "repair_branch": "repair-v3-trace-cardinality-post-l2-v1",
+  "root_cause": "POST_L2_TYPED_ROUTING_BLOCK_BYPASSED_EXISTING_NO_ACTION_TRACE_TRANSACTION",
+  "runtime_source_sha256": {
+    "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py": "332d0b465842fe73f44926bbb696fff03a221d131e9bfcb5a8ef717296294b27",
+    "reproduction/runtime/active_runtime_assurance_v2/supervisor.py": "6fdcb9716fdf0e40b90bc579999441c3a8477da4232ed28ebc245162cb4733b0"
+  },
+  "future_harness_runtime_diff_required": 0
+}
