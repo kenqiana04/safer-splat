@@ -1,0 +1,37 @@
+{
+  "cycle_count": 600,
+  "deadline_status_counts": {
+    "EXPIRED": 0,
+    "OPEN": 2403,
+    "WARNING": 0
+  },
+  "interpretation": "ENGINEERING_TELEMETRY_ONLY_NO_REAL_TIME_OR_DEPLOYMENT_GUARANTEE",
+  "max": 0.5626252982765436,
+  "mean": 0.27860160327206057,
+  "median": 0.28797652665525675,
+  "p95": 0.347249798476696,
+  "per_trial": [
+    {
+      "cycle_runtime_max": 0.5626252982765436,
+      "cycle_runtime_mean": 0.31594036920927465,
+      "cycle_runtime_median": 0.31811816804111004,
+      "cycle_runtime_p95": 0.3553468408063054,
+      "trial_id": 10
+    },
+    {
+      "cycle_runtime_max": 0.4201148543506861,
+      "cycle_runtime_mean": 0.22076624997425826,
+      "cycle_runtime_median": 0.2043651551939547,
+      "cycle_runtime_p95": 0.28804084099829197,
+      "trial_id": 50
+    },
+    {
+      "cycle_runtime_max": 0.5300374561920762,
+      "cycle_runtime_mean": 0.29909819063264875,
+      "cycle_runtime_median": 0.3071135696955025,
+      "cycle_runtime_p95": 0.3353555388748646,
+      "trial_id": 90
+    }
+  ],
+  "schema": "ACTIVE_RUNTIME_SMOKE_V3_TIMING_SUMMARY_V1"
+}

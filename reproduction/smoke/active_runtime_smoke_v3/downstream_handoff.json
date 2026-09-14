@@ -1,0 +1,20 @@
+{
+  "effective_radius_q": 0.015,
+  "hard_radius_q": 0.015,
+  "historical_diag_radius_q": 0.025,
+  "historical_diag_runtime_authority": false,
+  "official100_authorized": false,
+  "parameter_selection_authorized": false,
+  "pilot_execution_authorized": false,
+  "pilot_protocol_freeze_authorized": true,
+  "rho_seg_q": 0.0,
+  "runtime_margin_q": 0.0,
+  "schema": "ACTIVE_RUNTIME_SMOKE_V3_DOWNSTREAM_HANDOFF_V1",
+  "smoke_trials": [
+    10,
+    50,
+    90
+  ],
+  "status": "READY_FOR_ACTIVE_RUNTIME_PILOT_V3_PROTOCOL_FREEZE",
+  "upstream_v3_commit": "47bd12f1f8efca059775ab294211ed21f7b39d77"
+}

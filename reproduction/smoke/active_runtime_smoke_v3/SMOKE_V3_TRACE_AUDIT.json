@@ -1,0 +1,33 @@
+{
+  "schema": "ACTIVE_RUNTIME_SMOKE_V3_TRACE_AUDIT_V1",
+  "status": "PASS",
+  "trials": [
+    {
+      "cardinality_pass": true,
+      "completed_cycles": 200,
+      "finalized": true,
+      "in_memory_trace_records": 200,
+      "persisted_trace_lines": 200,
+      "trace_lock_records": 200,
+      "trial_id": 10
+    },
+    {
+      "cardinality_pass": true,
+      "completed_cycles": 200,
+      "finalized": true,
+      "in_memory_trace_records": 200,
+      "persisted_trace_lines": 200,
+      "trace_lock_records": 200,
+      "trial_id": 50
+    },
+    {
+      "cardinality_pass": true,
+      "completed_cycles": 200,
+      "finalized": true,
+      "in_memory_trace_records": 200,
+      "persisted_trace_lines": 200,
+      "trace_lock_records": 200,
+      "trial_id": 90
+    }
+  ]
+}

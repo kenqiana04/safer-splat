@@ -1,0 +1,41 @@
+{
+  "FINAL_DECISION": "ADVANCE_TO_ACTIVE_RUNTIME_PILOT_V3_PROTOCOL_FREEZE",
+  "FINAL_STATUS": "PASS_ACTIVE_RUNTIME_SMOKE_V3",
+  "deadline_status_counts": {
+    "EXPIRED": 0,
+    "OPEN": 2403,
+    "WARNING": 0
+  },
+  "finalization_pass_count": 3,
+  "formal_scientific_arm_count": 0,
+  "gpu_trial_rerun_count": 0,
+  "hard_runtime_radius_observed_q": 0.015,
+  "historical_0_025_runtime_authority_observed": false,
+  "official100_count": 0,
+  "pilot_count": 0,
+  "schema": "ACTIVE_RUNTIME_SMOKE_V3_EXECUTION_SUMMARY_V1",
+  "scientific_oracle_count": 0,
+  "totals": {
+    "action_bound_violation_count": 0,
+    "alternative_navigation_commit_count": 0,
+    "assurance_boundary_count": 0,
+    "completed_cycles": 600,
+    "evidence_incomplete_count": 0,
+    "exception_count": 0,
+    "nonfinite_count": 0,
+    "plant_commit_count": 600,
+    "plant_outcome_unknown_count": 0,
+    "primary_navigation_commit_count": 600,
+    "recovery_required_count": 0,
+    "retained_backup_commit_count": 0,
+    "selected_executed_identity_mismatch_count": 0,
+    "terminal_commit_count": 0
+  },
+  "trace_cardinality": "PASS",
+  "trial_pass_count": 3,
+  "trials": [
+    10,
+    50,
+    90
+  ]
+}
