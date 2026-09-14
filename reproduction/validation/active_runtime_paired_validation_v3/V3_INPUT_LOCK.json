@@ -1,0 +1,74 @@
+{
+  "schema": "ACTIVE_RUNTIME_V3_PAIRED_VALIDATION_INPUT_LOCK_V1",
+  "task_type": "PROTOCOL_FREEZE_CPU_ONLY_NO_VALIDATION_OUTCOME",
+  "repository": "kenqiana04/safer-splat",
+  "upstream": {
+    "pull_request": 143,
+    "state": "OPEN_DRAFT",
+    "title": "[V3] Execute frozen Active Runtime Pilot",
+    "branch": "execute-active-runtime-pilot-v3-v1",
+    "head": "974b1957f3da55964814650ec5db6e98c84fc12e"
+  },
+  "pilot_v3_evidence": {
+    "status": "PASS_ACTIVE_RUNTIME_PILOT_V3",
+    "decision": "ADVANCE_TO_NEXT_V3_VALIDATION_PROTOCOL_FREEZE",
+    "completed_trials": 10,
+    "completed_cycles": 4859,
+    "plant_commits": 4858,
+    "finalization_pass": 10,
+    "trace_cardinality": "PASS",
+    "observed_hard_radius_q": [0.015],
+    "historical_0p025_intrusion_count": 0,
+    "historical_0p025_authority_count": 0,
+    "artifact_sha256": {
+      "PILOT_V3_PROTOCOL.json": "8ae74d6c4833fd1088fadc083c104b069b9bb0cdae06ef9c9f4a58cbb09e5e54",
+      "PILOT_V3_INPUT_LOCK.json": "2aa3731b99637103727c1bba5805ae35d91e07bf8d0b95a26df087a3583417ab",
+      "PILOT_V3_EXECUTION_LOCK.json": "f1711c17db247a369b4f893c51566ab9d57a1b3d26d8b1bf6b49bd7773b29da7",
+      "PILOT_V3_EXECUTION_SUMMARY.json": "4d91a7c4ea06ec1dff31c5238771a265cee3b8880e5b0b38819b7c7bd15f5a03",
+      "PILOT_V3_EXECUTION_VALIDATION.json": "0ce1dfc8fae8d410668af365ed616c1a65b4f85cbe5af1be408cdfabff6da816"
+    }
+  },
+  "formal_v2_protocol": {
+    "branch": "freeze-formal-paired-experiment-protocol-v2",
+    "head": "ea2dfad6ad1e4b4cb4040e48a70084f7dcbfeab8",
+    "method_source_head": "606edd1c254f4ffaec48e0b84d8f5e5f29c039ec",
+    "artifacts": {
+      "FORMAL_PAIRED_EXPERIMENT_PROTOCOL_V2.json": {"git_blob": "a3e6350e1d3583e643eda119883b5a0d9bde522c", "sha256": "0f9ebd57c2a3bdcbaa0de69c1e470ab294c47461f34bb8ed995ac41cfde93177"},
+      "FORMAL_TRIAL_MANIFEST_V2.csv": {"git_blob": "01c300fdc8cf32e21b733937ea2cdea478b66c98", "sha256": "78fcb1e4e4cc37dd240e27cadf2568cbde2ad9e0517a28a48ef159fbfb2952f8"},
+      "FORMAL_ANALYSIS_PLAN_V2.md": {"git_blob": "83e2b02b116f0b97539824cf99ad6e7bc82f2d69", "sha256": "1de02c7828f2306ce54a934393da908081597af124e556e530a0ab4efc3d9bf7"},
+      "FORMAL_RUN_CONFIG_V2.json": {"git_blob": "60c57645176fb7200dc2dccdaf21aadc78be2876", "sha256": "0dab8fce28a67854ee85e33963fc4c86a886a8b0f60d480bba41169fadb25a68"}
+    }
+  },
+  "formal_v2_reference_results": {
+    "result_root": "/disk1/zlab/formal_execution_records/formal_paired_v2_20260911",
+    "accepted_index_sha256": "223c6fbdabe439f44c52407e8b1914021680c4e64f1a2a6725186bb3392bc4c6",
+    "raw_evidence_manifest_sha256": "179948a0ae5244f298ec427b7adff774ca5c378f5f5a750965e6811dfe455a7a",
+    "environment_manifest_sha256": "157741f3e5258ab3619318075875520940d4e2b092723faccb59f96f70b520a0",
+    "integrity_register_sha256": "40b914a743c6af1f9ef5094f96dc0fda287a61679815cd9e1513dcfda4c3045d",
+    "pair_summary_sha256": "a3f149169be818cdb341ea9c6842916ac7c79e0e5c317568aca600508b5017be",
+    "resolved_reference_count": 85,
+    "all_immutable_complete_identity_compatible": true,
+    "reference_rerun_authorized": false
+  },
+  "task_artifact_sha256": {
+    "V3_PAIRED_VALIDATION_PROTOCOL.json": "2de32310c84db49f0b8982e2bb63f15d234732250a5c3ddf859fdb75386439c5",
+    "V3_TRIAL_MANIFEST.csv": "0c9ec6b3e8c9c7c1e0ea7bce5f41a5752444e75c097a3b1d88ca5af6da47e84b",
+    "V3_REFERENCE_REUSE_LOCK.json": "16523871d99f63f05d63152ea01e70d532efd5a1cedbcb655aedda5dfd25892f",
+    "V3_DECISION_RULES.json": "96bb3338de5cc7f13eadea4efdd1d8721874c2f4101a2266ffe1200987287160",
+    "V3_REQUIRED_EVIDENCE_SCHEMA.json": "e953652b66ecfceb0380ff3b6712b54952dbd42121b7ebc4c4d460479c1c3b75",
+    "V3_ANALYSIS_PLAN.md": "ffe5d13ad6590ae4bed1fb42e6a547c1adf0146141b747a61909d0f0b8795c60"
+  },
+  "map_identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+  "checkpoint_sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d",
+  "cohort_count": 85,
+  "development_exposed_count_excluded": 15,
+  "protocol_sha256": "2de32310c84db49f0b8982e2bb63f15d234732250a5c3ddf859fdb75386439c5",
+  "execution_counts": {
+    "active_v3": 0,
+    "reference_rerun": 0,
+    "scientific_oracle": 0,
+    "official100": 0,
+    "formal_new_outcome": 0
+  },
+  "protocol_and_decision_rules_frozen_before_active_v3_outcome": true
+}
