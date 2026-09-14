@@ -1,0 +1,36 @@
+{
+  "allowed_runtime_changes": [
+    "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py",
+    "reproduction/runtime/active_runtime_assurance_v2/supervisor.py"
+  ],
+  "disallowed_change_count": 0,
+  "git_head_before_regression": "bf0a0792932c02e243236f1b316a41037c95fc69",
+  "map_artifacts": [
+    {
+      "relative_path": "config.yml",
+      "sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e",
+      "size": 6933
+    },
+    {
+      "relative_path": "dataparser_transforms.json",
+      "sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e",
+      "size": 312
+    },
+    {
+      "relative_path": "nerfstudio_models/step-000029999.ckpt",
+      "sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d",
+      "size": 92344786
+    }
+  ],
+  "old_cohort_resume_authorized": false,
+  "parent_execution_head": "bf0a0792932c02e243236f1b316a41037c95fc69",
+  "protocol_sha256": "2de32310c84db49f0b8982e2bb63f15d234732250a5c3ddf859fdb75386439c5",
+  "repair_branch": "repair-v3-trace-cardinality-post-l2-v1",
+  "runtime_source_sha256": {
+    "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py": "332d0b465842fe73f44926bbb696fff03a221d131e9bfcb5a8ef717296294b27",
+    "reproduction/runtime/active_runtime_assurance_v2/supervisor.py": "6fdcb9716fdf0e40b90bc579999441c3a8477da4232ed28ebc245162cb4733b0"
+  },
+  "schema": "ACTIVE_RUNTIME_V3_TRACE_CARDINALITY_REPAIR_SOURCE_LOCK_V1",
+  "scientific_analyzer_authorized": false,
+  "trial_id": 73
+}

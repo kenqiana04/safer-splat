@@ -1,0 +1,20 @@
+{
+  "schema": "ACTIVE_RUNTIME_V3_TRACE_CARDINALITY_REPAIR_INPUT_LOCK_V1",
+  "parent_head": "bf0a0792932c02e243236f1b316a41037c95fc69",
+  "parent_pr144_head": "0ef0523050fc8e6c77fe333709477c5a4161d489",
+  "protocol_sha256": "2de32310c84db49f0b8982e2bb63f15d234732250a5c3ddf859fdb75386439c5",
+  "old_result_root": "/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_20260914",
+  "old_result_root_read_only": true,
+  "old_trial_73_completed_cycles": 355,
+  "old_trial_73_trace_records": 354,
+  "old_trial_73_trace_lock_records": 354,
+  "old_trial_73_persisted_trace_lines": 354,
+  "old_trial_73_plant_commits": 354,
+  "old_trial_73_hard_blocker": "BLOCKED_ACTIVE_RUNTIME_SMOKE_V3_BY_TRACE_CARDINALITY",
+  "old_trial_73_finalization": "FINALIZED",
+  "old_four_complete_trials_reusable_in_repaired_primary": false,
+  "scientific_analyzer_run": false,
+  "diagnosis_is_post_hoc_runtime_evidence_repair": true,
+  "runtime_policy_mutation_authority": false,
+  "scientific_result_mutation_authority": false
+}

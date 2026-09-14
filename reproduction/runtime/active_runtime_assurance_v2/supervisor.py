@@ -398,6 +398,18 @@ class Supervisor:
         """Supervisor-owned typed block for an impossible repeated route state."""
         return TransitionTable._blocked_decision(runtime_context, RouteResolutionStatus.BLOCKED_AMBIGUOUS, reason)
 
+    @staticmethod
+    def blocked_cycle_decision(snapshot: RuntimeStateSnapshot, reason: str) -> SupervisorDecision:
+        """Represent a typed orchestration block without granting commit authority."""
+        return SupervisorDecision(
+            snapshot.cycle_index,
+            snapshot.identity,
+            None,
+            False,
+            str(reason),
+            "ROUTING_BLOCK",
+        )
+
     def bypass_decision(self, snapshot: RuntimeStateSnapshot, reference_action: SelectedAction) -> SupervisorDecision:
         if reference_action.role == ActionRole.ASSURANCE_BOUNDARY_NO_ACTION:
             return SupervisorDecision(snapshot.cycle_index, snapshot.identity, None, False, "BYPASS_REFERENCE_NO_ACTION", "BYPASS")

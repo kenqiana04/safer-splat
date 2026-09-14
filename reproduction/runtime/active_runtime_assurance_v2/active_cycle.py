@@ -276,9 +276,16 @@ class ActiveCycleCoordinator:
             return None
         return "trace-step:sha256:" + canonical_sha256(records[-1])
 
-    def _blocked_result(self, context: ActiveCycleContext, reason: str) -> ActiveCycleResult:
-        self._session = replace(self._require_session(), status=TrialSessionStatus.BLOCKED)
-        return self._result(context, None, False, True, reason)
+    def _blocked_result(
+        self,
+        context: ActiveCycleContext,
+        snapshot: RuntimeStateSnapshot,
+        reason: str,
+    ) -> ActiveCycleResult:
+        """Close a blocked public cycle through the existing no-action trace authority."""
+        decision = self.supervisor.blocked_cycle_decision(snapshot, reason)
+        context = replace(context, final_supervisor_decision=decision)
+        return self._commit_or_boundary(context, snapshot, decision, boundary=True)
 
     def _result(
         self,
@@ -440,7 +447,7 @@ class ActiveCycleCoordinator:
                 seen,
             )
         if route.status != RouteResolutionStatus.RESOLVED:
-            return self._blocked_result(context, route.reason)
+            return self._blocked_result(context, snapshot, route.reason)
 
         while True:
             destination = route.destination_phase
@@ -457,7 +464,7 @@ class ActiveCycleCoordinator:
                         seen,
                     )
                     if route.status != RouteResolutionStatus.RESOLVED:
-                        return self._blocked_result(context, route.reason)
+                        return self._blocked_result(context, snapshot, route.reason)
                     continue
                 candidate = proposal.candidate if proposal.status == CertificateStatus.PASS else None
                 if proposal.status == CertificateStatus.UNKNOWN:
@@ -473,7 +480,7 @@ class ActiveCycleCoordinator:
 
             elif destination == RuntimePhase.C0:
                 if candidate is None:
-                    return self._blocked_result(context, "C0_WITHOUT_CANDIDATE")
+                    return self._blocked_result(context, snapshot, "C0_WITHOUT_CANDIDATE")
                 phase = PublicCyclePhase.PRIMARY_C0 if candidate.role == CandidateRole.PRIMARY else PublicCyclePhase.ALTERNATIVE_C0
                 context = self._advance(context, phase)
                 c0_result, error = self._safe_call(self.c0_admission.evaluate, candidate, snapshot)
@@ -487,7 +494,7 @@ class ActiveCycleCoordinator:
                         seen,
                     )
                     if route.status != RouteResolutionStatus.RESOLVED:
-                        return self._blocked_result(context, route.reason)
+                        return self._blocked_result(context, snapshot, route.reason)
                     continue
                 if candidate.role == CandidateRole.PRIMARY:
                     context = replace(context, primary_c0=c0_result)
@@ -499,7 +506,7 @@ class ActiveCycleCoordinator:
 
             elif destination == RuntimePhase.L2:
                 if candidate is None:
-                    return self._blocked_result(context, "L2_WITHOUT_CANDIDATE")
+                    return self._blocked_result(context, snapshot, "L2_WITHOUT_CANDIDATE")
                 phase = PublicCyclePhase.PRIMARY_L2 if candidate.role == CandidateRole.PRIMARY else PublicCyclePhase.ALTERNATIVE_L2
                 context = self._advance(context, phase)
                 l2_result, error = self._safe_call(self.l2_runtime.evaluate, snapshot, candidate)
@@ -513,7 +520,7 @@ class ActiveCycleCoordinator:
                         seen,
                     )
                     if route.status != RouteResolutionStatus.RESOLVED:
-                        return self._blocked_result(context, route.reason)
+                        return self._blocked_result(context, snapshot, route.reason)
                     continue
                 if candidate.role == CandidateRole.PRIMARY:
                     context = replace(context, primary_l2=l2_result)
@@ -527,7 +534,7 @@ class ActiveCycleCoordinator:
 
             elif destination == RuntimePhase.L3:
                 if candidate is None or l2_result is None:
-                    return self._blocked_result(context, "L3_WITHOUT_MATCHING_L2")
+                    return self._blocked_result(context, snapshot, "L3_WITHOUT_MATCHING_L2")
                 phase = PublicCyclePhase.PRIMARY_L3 if candidate.role == CandidateRole.PRIMARY else PublicCyclePhase.ALTERNATIVE_L3
                 context = self._advance(context, phase)
                 l3_result, error = self._safe_call(self.l3_runtime.evaluate, snapshot, candidate, l2_result)
@@ -541,7 +548,7 @@ class ActiveCycleCoordinator:
                         seen,
                     )
                     if route.status != RouteResolutionStatus.RESOLVED:
-                        return self._blocked_result(context, route.reason)
+                        return self._blocked_result(context, snapshot, route.reason)
                     continue
                 if candidate.role == CandidateRole.PRIMARY:
                     context = replace(context, primary_l3=l3_result)
@@ -573,7 +580,7 @@ class ActiveCycleCoordinator:
                             seen,
                         )
                         if route.status != RouteResolutionStatus.RESOLVED:
-                            return self._blocked_result(context, route.reason)
+                            return self._blocked_result(context, snapshot, route.reason)
                         continue
                     inventory_evidence = self._normalize_alternative_inventory(inventory, snapshot)
                     context = replace(context, alternative_inventory_evidence=inventory_evidence)
@@ -603,7 +610,7 @@ class ActiveCycleCoordinator:
                         route = self.supervisor.route_alternative_inventory(inventory_evidence, route_context)
                         context = replace(context, routing_decisions=context.routing_decisions + (route,))
                         if route.status != RouteResolutionStatus.RESOLVED:
-                            return self._blocked_result(context, route.reason)
+                            return self._blocked_result(context, snapshot, route.reason)
                         continue
                 if alternative_index < len(alternative_candidates):
                     candidate = alternative_candidates[alternative_index]
@@ -635,15 +642,15 @@ class ActiveCycleCoordinator:
                 )
                 context, route = self._route(context, PublicCycleEvent.ARBITRATE, arbitration_context, seen)
                 if route.status != RouteResolutionStatus.RESOLVED:
-                    return self._blocked_result(context, route.reason)
+                    return self._blocked_result(context, snapshot, route.reason)
                 if route.destination_phase == RuntimePhase.TERMINAL_EVALUATION:
                     continue
                 decision, error = self._safe_call(self.supervisor.arbitrate, snapshot, certified_candidate, l3_result if certified_candidate is not None else None, backup_action, backup_valid, terminal_result, deadline)
                 if error:
                     context, failed_route = self._stage_failure_route(context, RuntimePhase.ARBITRATION, "ARBITRATION", error, arbitration_context, seen)
-                    return self._blocked_result(context, failed_route.reason)
+                    return self._blocked_result(context, snapshot, failed_route.reason)
                 if decision.rule_id != route.rule_id:
-                    return self._blocked_result(context, "ROUTING_ARBITRATION_IDENTITY_MISMATCH")
+                    return self._blocked_result(context, snapshot, "ROUTING_ARBITRATION_IDENTITY_MISMATCH")
                 context = replace(context, final_supervisor_decision=decision)
                 if route.destination_phase == RuntimePhase.BACKUP_EXECUTION:
                     context, route = self._route(context, PublicCycleEvent.EXECUTE_RETAINED_BACKUP, self._routing_context(RuntimePhase.BACKUP_EXECUTION, deadline, backup_present=token is not None, backup_valid=backup_valid), seen)
@@ -664,7 +671,7 @@ class ActiveCycleCoordinator:
                         seen,
                     )
                     if route.status != RouteResolutionStatus.RESOLVED:
-                        return self._blocked_result(context, route.reason)
+                        return self._blocked_result(context, snapshot, route.reason)
                     continue
                 context = replace(context, terminal_result=terminal_result)
                 if terminal_result.status == CertificateStatus.UNKNOWN:
@@ -683,10 +690,10 @@ class ActiveCycleCoordinator:
                             self._routing_context(RuntimePhase.ARBITRATION, deadline, backup_present=token is not None, backup_valid=backup_valid, terminal_evaluated=True, backup_state=backup_evidence.status.value),
                             seen,
                         )
-                        return self._blocked_result(context, failed_route.reason)
+                        return self._blocked_result(context, snapshot, failed_route.reason)
                     expected_rule = "ARB_TERMINAL" if route.destination_phase == RuntimePhase.COMMIT else "ARB_BOUNDARY"
                     if decision.rule_id != expected_rule:
-                        return self._blocked_result(context, "TERMINAL_ARBITRATION_IDENTITY_MISMATCH")
+                        return self._blocked_result(context, snapshot, "TERMINAL_ARBITRATION_IDENTITY_MISMATCH")
                     context = replace(context, final_supervisor_decision=decision)
                     if route.destination_phase == RuntimePhase.ASSURANCE_BOUNDARY:
                         return self._commit_or_boundary(context, snapshot, decision, boundary=True)
@@ -694,7 +701,7 @@ class ActiveCycleCoordinator:
             elif destination == RuntimePhase.COMMIT:
                 decision = context.final_supervisor_decision
                 if decision is None:
-                    return self._blocked_result(context, "COMMIT_WITHOUT_SUPERVISOR_DECISION")
+                    return self._blocked_result(context, snapshot, "COMMIT_WITHOUT_SUPERVISOR_DECISION")
                 return self._commit_or_boundary(context, snapshot, decision, boundary=False)
 
             elif destination == RuntimePhase.ASSURANCE_BOUNDARY:
@@ -710,15 +717,15 @@ class ActiveCycleCoordinator:
                             self._routing_context(RuntimePhase.ARBITRATION, deadline, backup_present=token is not None, backup_valid=backup_valid, terminal_evaluated=terminal_result is not None, backup_state=backup_evidence.status.value),
                             seen,
                         )
-                        return self._blocked_result(context, failed_route.reason)
+                        return self._blocked_result(context, snapshot, failed_route.reason)
                     context = replace(context, final_supervisor_decision=decision)
                 return self._commit_or_boundary(context, snapshot, decision, boundary=True)
 
             else:
-                return self._blocked_result(context, "UNSUPPORTED_ROUTED_DESTINATION")
+                return self._blocked_result(context, snapshot, "UNSUPPORTED_ROUTED_DESTINATION")
 
             if route.status != RouteResolutionStatus.RESOLVED:
-                return self._blocked_result(context, route.reason)
+                return self._blocked_result(context, snapshot, route.reason)
 
     def _commit_or_boundary(self, context: ActiveCycleContext, snapshot: RuntimeStateSnapshot, decision, boundary: bool) -> ActiveCycleResult:
         phase = PublicCyclePhase.ASSURANCE_BOUNDARY if boundary else PublicCyclePhase.COMMIT

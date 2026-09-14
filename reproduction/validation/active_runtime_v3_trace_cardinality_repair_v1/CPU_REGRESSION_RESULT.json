@@ -1,0 +1,12 @@
+{
+  "errors": 0,
+  "excluded_reason": "The upstream test freezes active_cycle.py and supervisor.py blobs that this narrowly authorized repair must change; exact change scope is validated separately.",
+  "excluded_superseded_identity_assertions": [
+    "reproduction.runtime.active_runtime_assurance_v2.tests.test_existing_runtime_regression.ExistingRuntimeRegressionTests.test_still_protected_runtime_blobs_match_input_lock"
+  ],
+  "failures": 0,
+  "schema": "ACTIVE_RUNTIME_V3_TRACE_CARDINALITY_CPU_REGRESSION_V1",
+  "skipped": 0,
+  "status": "PASS",
+  "tests_run": 189
+}
