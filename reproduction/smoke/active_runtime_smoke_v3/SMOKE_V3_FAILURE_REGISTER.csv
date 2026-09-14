@@ -1,0 +1,4 @@
+trial_id,cycle_index,failure_class,runtime_or_task_local,scientific_integrity_affected,raw_evidence_complete,rerun_required,resolution
+GLOBAL,-1,VALIDATOR_PORCELAIN_LEADING_SPACE,task_local,false,true,false,Fixed pre-GPU validator parsing from strip to rstrip and resealed the execution lock
+GLOBAL,-1,REMOTE_GITHUB_UNREACHABLE,task_local_infrastructure,false,true,false,Transferred the exact committed source through an offline Git bundle without changing project or protocol content
+GLOBAL,-1,ISOLATED_CHECKOUT_RELATIVE_DATA_PATH,task_local,false,true,false,Linked the isolated checkout to the same frozen Stonehenge dataset before the zero-cycle real-stack preflight
