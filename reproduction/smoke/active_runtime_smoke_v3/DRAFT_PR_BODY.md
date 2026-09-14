@@ -16,7 +16,7 @@ Execution-lock seal commit: `d52ad4b7955d1ddb2c672bedcde8edcc1105110d`.
 
 Pre-execution task-local validator correction: `3a61c5571acd8681967283a97fc3648e7dcfa72c`.
 
-Outcome/evidence commit: `PENDING_EVIDENCE_COMMIT`.
+Outcome/evidence commit: `49a74aeba41fdd4d63d7389d5692bccc1057bf4f`.
 
 ## Result
 
