@@ -1,0 +1,12 @@
+{
+  "schema": "ACTIVE_RUNTIME_V3_PAIRED_EXECUTION_HARNESS_DOWNSTREAM_HANDOFF_V1",
+  "status": "READY_FOR_MANUAL_ACTIVE_RUNTIME_V3_PAIRED_COLLECTION",
+  "parent_pr144_head": "0ef0523050fc8e6c77fe333709477c5a4161d489",
+  "protocol_sha256": "2de32310c84db49f0b8982e2bb63f15d234732250a5c3ddf859fdb75386439c5",
+  "result_root": "/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_20260914",
+  "active_v3_collection_authorized_next": true,
+  "reference_rerun_authorized": false,
+  "analysis_during_collection_authorized": false,
+  "official100_authorized": false,
+  "only_next_task": "MANUALLY_START_FROZEN_ACTIVE_RUNTIME_V3_PAIRED_COLLECTION"
+}
