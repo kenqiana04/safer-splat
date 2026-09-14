@@ -1,0 +1,23 @@
+{
+  "schema": "ACTIVE_RUNTIME_V3_TRACE_CARDINALITY_REPAIR_DOWNSTREAM_HANDOFF_V1",
+  "status": "READY_TO_REFREEZE_ACTIVE_RUNTIME_V3_PAIRED_EXECUTION_HARNESS",
+  "repair_branch": "repair-v3-trace-cardinality-post-l2-v1",
+  "parent_sha": "bf0a0792932c02e243236f1b316a41037c95fc69",
+  "old_result_root": "/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_20260914",
+  "old_result_root_read_only": true,
+  "repair_gpu_root": "/disk1/zlab/v3_repair_records/trace_cardinality_repair_v1_trial73_retry3",
+  "repair_trial_ids": [73],
+  "old_primary_trials_reused": false,
+  "scientific_analyzer_run": false,
+  "hard_radius_q": 0.015,
+  "runtime_margin_q": 0.0,
+  "rho_seg_q": 0.0,
+  "historical_diagnostic_radius_q": 0.025,
+  "historical_diagnostic_runtime_authority": false,
+  "trace_cardinality_repaired": true,
+  "cpu_regression_status": "PASS",
+  "gpu_trial_73_status": "PASS",
+  "next_task": "REFREEZE_ACTIVE_RUNTIME_V3_PAIRED_EXECUTION_HARNESS_AFTER_TRACE_CARDINALITY_REPAIR",
+  "full_85_collection_authorized": false,
+  "scientific_analysis_authorized": false
+}

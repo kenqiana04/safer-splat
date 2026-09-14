@@ -1,0 +1,43 @@
+{
+  "allowed_runtime_changes": [
+    "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py",
+    "reproduction/runtime/active_runtime_assurance_v2/supervisor.py"
+  ],
+  "changed_paths": [
+    "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py",
+    "reproduction/runtime/active_runtime_assurance_v2/supervisor.py",
+    "reproduction/validation/active_runtime_v3_trace_cardinality_repair_v1/"
+  ],
+  "controller_policy_changed": false,
+  "deadline_thresholds_changed": false,
+  "disallowed_paths": [],
+  "dynamics_changed": false,
+  "historical_diagnostic_radius_q": 0.025,
+  "historical_diagnostic_runtime_authority": false,
+  "parent_head": "bf0a0792932c02e243236f1b316a41037c95fc69",
+  "protocol_sha256": "2de32310c84db49f0b8982e2bb63f15d234732250a5c3ddf859fdb75386439c5",
+  "protocol_sha256_expected": "2de32310c84db49f0b8982e2bb63f15d234732250a5c3ddf859fdb75386439c5",
+  "protocol_unchanged": true,
+  "schema": "ACTIVE_RUNTIME_V3_TRACE_CARDINALITY_REPAIR_SCOPE_AUDIT_V1",
+  "scientific_analyzer_run": false,
+  "status": "PASS",
+  "supervisor_existing_method_hashes_unchanged": {
+    "arbitrate": true,
+    "bypass_decision": true,
+    "certify_candidate": true
+  },
+  "transition_policy_changed": false,
+  "unchanged_protected_files": {
+    "reproduction/runtime/active_runtime_assurance_v2/active_runner.py": true,
+    "reproduction/runtime/active_runtime_assurance_v2/backup_token_store.py": true,
+    "reproduction/runtime/active_runtime_assurance_v2/commit_transaction.py": true,
+    "reproduction/runtime/active_runtime_assurance_v2/plant_commit.py": true,
+    "reproduction/runtime/active_runtime_assurance_v2/terminal_runtime.py": true,
+    "reproduction/runtime/active_runtime_assurance_v2/trace_writer.py": true,
+    "reproduction/validation/active_runtime_paired_validation_v3/": true,
+    "reproduction/validation/active_runtime_paired_validation_v3_execution/": true
+  },
+  "v3_hard_radius_q": 0.015,
+  "v3_margin_q": 0.0,
+  "v3_rho_seg_q": 0.0
+}
