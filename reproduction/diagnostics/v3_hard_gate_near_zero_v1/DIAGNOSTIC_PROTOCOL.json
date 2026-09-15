@@ -1,6 +1,12 @@
 {
   "schema": "V3_HARD_GATE_NEAR_ZERO_DIAGNOSTIC_PROTOCOL_V1",
   "task_type": "POST_FAILURE_READ_ONLY_DIAGNOSTIC",
+  "protocol_revision": {
+    "revision": 1,
+    "reason": "pre-depth-audit schema normalization: cycle observations encode action identity as a string while runtime trace encodes the same identity as an object with value",
+    "scientific_or_numerical_rule_changed": false,
+    "prior_failed_result_roots_preserved": true
+  },
   "base_start_sha": "50cadfe614da70ce0345c4b1789c787dc529287e",
   "paired_result_root": "/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_r1_retry1_20260915",
   "map_root": "/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724",

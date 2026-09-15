@@ -355,6 +355,11 @@ def runtime_classification(role: str) -> str:
     return {"PRIMARY_NAVIGATION": "VIOLATION_ON_PRIMARY_COMMIT", "RETAINED_BACKUP": "VIOLATION_ON_BACKUP_COMMIT", "ALTERNATIVE_NAVIGATION": "VIOLATION_ON_ALTERNATIVE_COMMIT", "CERTIFIED_TERMINAL": "VIOLATION_ON_TERMINAL_COMMIT"}.get(role, "SEGMENT_MAPPING_UNRESOLVED")
 
 
+def identity_value(value: Any) -> Any:
+    """Normalize the two frozen JSON identity encodings without changing identity."""
+    return value.get("value") if isinstance(value, dict) and set(value) == {"value"} else value
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--checkout", type=Path, required=True)
@@ -413,7 +418,7 @@ def main() -> int:
         if witness["clearance_q"] != returned: raise RuntimeError("WITNESS_TRAVERSAL_MISMATCH")
         trace = next((row for row in traces if int(row["cycle_index"]) == segment["cycle_index"]), None)
         if trace is None: raise RuntimeError("RUNTIME_TRACE_ALIGNMENT_MISSING")
-        if trace["selected_action_identity"] != segment["selected_action_identity"] or trace["executed_action_identity"] != segment["executed_action_identity"]:
+        if identity_value(trace["selected_action_identity"]) != identity_value(segment["selected_action_identity"]) or identity_value(trace["executed_action_identity"]) != identity_value(segment["executed_action_identity"]):
             raise RuntimeError("RUNTIME_ACTION_IDENTITY_ALIGNMENT_MISMATCH")
         facts = dict(trace.get("facts", []))
         relation = "SAME_EXECUTED_SEGMENT_CERTIFIED_PASS" if segment["action_role"] in {"PRIMARY_NAVIGATION", "ALTERNATIVE_NAVIGATION"} and facts.get("runtime_reason") == "TIMELY_CERTIFIED_NAVIGATION_WITH_PREPARED_TOKEN" else "CERTIFICATE_NOT_AVAILABLE"

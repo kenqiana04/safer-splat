@@ -45,7 +45,8 @@ def main()->int:
       "frozen_protocol":root/"reproduction/validation/active_runtime_paired_validation_v3/V3_PAIRED_VALIDATION_PROTOCOL.json",
     }
     check(all(sha(path)==p["input_sha256"][name] for name,path in source.items()),"frozen_source_hashes",checks)
-    changed=[line[3:].replace("\\","/") for line in git(root,"status","--porcelain","--untracked-files=all").splitlines() if line]
+    status_output=subprocess.run(["git","-C",str(root),"status","--porcelain","--untracked-files=all"],text=True,capture_output=True,check=True).stdout
+    changed=[line[3:].replace("\\","/") for line in status_output.splitlines() if line]
     check(all(path.startswith(TASK_REL+"/") for path in changed),"only_task_local_worktree_changes",checks)
     protected=subprocess.run(["git","-C",str(root),"diff","--name-only",EXPECTED,"--","cbf","dynamics","splat","run.py","reproduction/runtime","reproduction/smoke","reproduction/pilot","reproduction/formal","reproduction/validation/active_runtime_paired_validation_v3","reproduction/validation/active_runtime_paired_validation_v3_execution","reproduction/validation/active_runtime_paired_validation_v3_execution_r1","reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1"],text=True,capture_output=True,check=True).stdout.splitlines()
     check(not protected,"protected_diff_zero",checks)
