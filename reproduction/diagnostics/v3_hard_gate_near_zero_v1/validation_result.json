@@ -1,0 +1,20 @@
+{
+  "schema": "V3_HARD_GATE_NEAR_ZERO_DIAGNOSTIC_VALIDATION_RESULT_V1",
+  "status": "PASS_V3_HARD_GATE_NEAR_ZERO_DIAGNOSTIC_VALIDATION",
+  "py_compile": "PASS",
+  "git_diff_check": "PASS",
+  "frozen_violation_reproduction": "PASS_4_OF_4",
+  "committed_segment_mapping_continuity": "PASS_4_OF_4",
+  "runtime_trace_alignment": "PASS_4_OF_4",
+  "dense_refinement": "PASS_4_OF_4",
+  "repeat_and_ulp_audit": "PASS_4_OF_4",
+  "float64_equivalence": "IMPLEMENTED_AND_SANITY_VALIDATED",
+  "paired_result_root_mutation_count": 0,
+  "protected_source_diff_count": 0,
+  "active_scientific_trial_rerun_count": 0,
+  "controller_or_plant_execution_count": 0,
+  "frozen_analyzer_rerun_count": 0,
+  "reference_rerun_count": 0,
+  "official100_count": 0,
+  "formal_new_outcome_count": 0
+}
