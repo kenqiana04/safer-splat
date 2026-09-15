@@ -1,0 +1,93 @@
+{
+  "schema": "V3_HARD_GATE_NEAR_ZERO_DIAGNOSTIC_PROTOCOL_V1",
+  "task_type": "POST_FAILURE_READ_ONLY_DIAGNOSTIC",
+  "base_start_sha": "50cadfe614da70ce0345c4b1789c787dc529287e",
+  "paired_result_root": "/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_r1_retry1_20260915",
+  "map_root": "/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724",
+  "official_python": "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
+  "cuda_visible_devices": "1",
+  "violating_trial_ids": [22, 28, 57, 59],
+  "frozen_witness_clearance_q": {
+    "22": -3.3954472705710614e-09,
+    "28": -4.850638484626968e-10,
+    "57": -4.850638484626968e-10,
+    "59": -3.880511228321337e-09
+  },
+  "hard_radius_q": 0.015,
+  "historical_diagnostic_radius_q": 0.025,
+  "historical_diagnostic_runtime_or_scientific_authority": false,
+  "frozen_decision": "FAIL_V3_HARD_SAFETY_GATE",
+  "input_sha256": {
+    "ACTIVE_V3_R1_COLLECTION_INTEGRITY_SUMMARY.json": "9589d4ab14a27916b6b233ca88848821fa62374220fd0342ccef702fb7e3e8c7",
+    "V3_PAIRED_ANALYSIS_SUMMARY.json": "f98070c1152aa2058f23050d100e9b80bbfc84ca751de9dc553243e41b12e298",
+    "V3_PAIRED_PER_PAIR_ANALYSIS.json": "ea3b4848e5f3bf2ec5c26ce59006425cb5ec1ab05245ac9bbe915de17eb250a4",
+    "frozen_analyzer": "dd49f54dd1a2c46fb536b680c783feea2a413007199c160e5c98f407d162a692",
+    "frozen_runner": "71f31b0fa6fd3350f37171359e0d41a2611cba10a16d74cc9007b0b77de5e08a",
+    "gaussian_adapter": "1de0d3a31c8babe7c0bab5f388360d7f024f729cf5d8670dfbef9800f40cf3d1",
+    "gsplat_query": "fccc3125431122c58bd7901048d0e66e6b6c7fdeafc066f014d9d7df3c1ff9bf",
+    "ellipsoid_distance": "57a49cb6893a65789282e92f37a82f134d2a34ab7e296d33fc5f4cd6fab45f08",
+    "map_config": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e",
+    "map_dataparser": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e",
+    "map_checkpoint": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d",
+    "frozen_protocol": "2de32310c84db49f0b8982e2bb63f15d234732250a5c3ddf859fdb75386439c5"
+  },
+  "dense_scan": {
+    "point_count": 1025,
+    "parameter_denominator": 1024,
+    "endpoints_included": true
+  },
+  "local_refinement": {
+    "layers": 4,
+    "points_per_layer": 65,
+    "initial_interval": "one coarse cell on each available side of the dense-grid minimum",
+    "next_interval": "the previous layer minimum and its immediately adjacent samples, clipped to [0,1]"
+  },
+  "repeated_query": {
+    "count": 20,
+    "locations": ["frozen_first_negative_witness", "refined_diagnostic_minimum"]
+  },
+  "representable_neighbor_audit": {
+    "points": 7,
+    "construction": "original plus one-axis nextafter toward negative and positive infinity for each coordinate"
+  },
+  "float64_audit": {
+    "attempt_if_equivalent": true,
+    "parameter_source": "the exact float32-loaded frozen Gaussian tensors, promoted without value change",
+    "math": "independent torch.float64 reproduction of quaternion rotation, scale sorting, ellipsoid root bisection, signed squared distance, and 0.015q clearance",
+    "sanity_points": "map-mean bounding-box minimum minus (1,1,1), maximum plus (1,1,1), and trial-22 first pre-state",
+    "parity_tolerance": "32 coordinate ULPs plus 32 float32 eps times max(1,abs(clearance)); engineering parity only, never a safety gate"
+  },
+  "classification": {
+    "numerical_allowed": [
+      "FLOAT32_SIGN_UNSTABLE_NEAR_ZERO",
+      "FLOAT32_STABLE_NEGATIVE_SHALLOW",
+      "FLOAT32_STABLE_NEGATIVE_WITH_DEEPER_SEGMENT_INTRUSION",
+      "BACKEND_PRECISION_UNRESOLVED"
+    ],
+    "deeper_intrusion_rule": "repeated and ULP audits are all negative, at least two dense grid points are negative, and the refined minimum is strictly below the frozen first-negative witness; no clearance epsilon is used",
+    "runtime_allowed": [
+      "VIOLATION_ON_PRIMARY_COMMIT",
+      "VIOLATION_ON_BACKUP_COMMIT",
+      "VIOLATION_ON_ALTERNATIVE_COMMIT",
+      "VIOLATION_ON_TERMINAL_COMMIT",
+      "SEGMENT_MAPPING_UNRESOLVED"
+    ]
+  },
+  "forbidden": {
+    "radius_sweep": true,
+    "epsilon_sweep": true,
+    "threshold_tuning": true,
+    "runtime_controller_or_analyzer_mutation": true,
+    "active_reference_official_or_formal_rerun": true,
+    "scientific_decision_override": true
+  },
+  "execution_counts": {
+    "gpu_diagnostic_runs": 1,
+    "active_scientific_trial_reruns": 0,
+    "controller_or_plant_executions": 0,
+    "frozen_analyzer_reruns": 0,
+    "reference_reruns": 0,
+    "official100_runs": 0,
+    "formal_new_outcomes": 0
+  }
+}
