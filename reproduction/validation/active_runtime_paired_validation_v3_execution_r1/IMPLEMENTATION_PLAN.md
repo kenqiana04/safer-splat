@@ -1,5 +1,16 @@
 # Refreeze Active Runtime V3 Paired Execution Harness R1 Implementation Plan
 
+## 2026-09-15 narrow child-root and early-failure repair
+
+- [x] Verify PR #147 head `b8c64950770c52a89f073ef47b01c84d79dd9dbf`, old launcher logs, missing `raw/trial_66`, and the two deterministic source paths before editing.
+- [x] Preserve the old failed root as read-only diagnostics and freeze the fresh retry1 result root.
+- [x] Add a batch-child-only authorization record bound to a one-time token, live parent PID, exact root, source, execution lock, branch, and protocol.
+- [x] Preserve parent-level stdout/stderr/exit/GPU diagnostics if the child fails before raw-directory creation; hard-stop without retry or fabricated trial lock.
+- [x] Add CPU-only regressions for authorized/unauthorized/wrong-root paths, early failure, normal raw handling, first launch, explicit resume, analyzer exclusion, and old-root non-reuse.
+- [x] Recompute task-local hashes and run CPU validator/compile/shell/diff checks; commit, push, and update the existing Draft PR #147.
+
+No GPU preflight, scientific trial, analyzer, Reference rerun, Official100, or Formal outcome is authorized by this plan.
+
 > **For agentic workers:** Use this plan only for the CPU-only harness freeze; no collection or analyzer execution is authorized.
 
 **Goal:** Create a fresh, immutable, repaired-runtime execution harness for the exact frozen 85-trial V3 paired protocol without running outcomes.

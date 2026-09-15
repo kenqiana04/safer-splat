@@ -14,6 +14,7 @@ import json
 import math
 import os
 from pathlib import Path
+import secrets
 import subprocess
 import sys
 from typing import Any
@@ -23,6 +24,7 @@ REPAIRED_PARENT = "bf0a0792932c02e243236f1b316a41037c95fc69"
 REPAIR_PR = 146
 REPAIR_BRANCH = "repair-v3-trace-cardinality-post-l2-v1"
 BRANCH = "refreeze-active-runtime-v3-paired-execution-harness-after-trace-repair-v1"
+HARNESS_REPAIR_PARENT = "b8c64950770c52a89f073ef47b01c84d79dd9dbf"
 PARENT = REPAIRED_HEAD
 PROTOCOL_COMMIT = "b614ff3e985376b5b52f62709ce1a9332170af99"
 PROTOCOL_SHA = "2de32310c84db49f0b8982e2bb63f15d234732250a5c3ddf859fdb75386439c5"
@@ -35,7 +37,9 @@ TASK_DIR = Path(__file__).resolve().parent
 LOCK_PATH = TASK_DIR / "V3_PAIRED_EXECUTION_R1_LOCK.json"
 LOCK_SHA_PATH = TASK_DIR / "V3_PAIRED_EXECUTION_R1_LOCK.sha256"
 DEFAULT_MAP_ROOT = Path("/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724")
-DEFAULT_RESULT_ROOT = Path("/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_r1_20260914")
+OLD_FAILED_RESULT_ROOT = Path("/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_r1_20260914")
+DEFAULT_RESULT_ROOT = Path("/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_r1_retry1_20260915")
+BATCH_AUTHORIZATION_NAME = "R1_BATCH_CHILD_AUTHORIZATION.json"
 OLD_TASK_REL = "reproduction/validation/active_runtime_paired_validation_v3_execution"
 REPAIR_EVIDENCE_REL = "reproduction/validation/active_runtime_v3_trace_cardinality_repair_v1"
 PROTECTED = ("cbf", "dynamics", "splat", "run.py", "reproduction/runtime", "reproduction/smoke", "reproduction/pilot", "reproduction/formal", PROTOCOL_REL, OLD_TASK_REL, REPAIR_EVIDENCE_REL)
@@ -72,6 +76,11 @@ def git(checkout: Path, *args: str, check: bool = True) -> str:
     p = subprocess.run(["git", "-C", str(checkout), *args], text=True, capture_output=True, check=check)
     return p.stdout.strip()
 
+def git_status_lines(checkout: Path) -> list[str]:
+    p = subprocess.run(["git", "-C", str(checkout), "status", "--porcelain", "--untracked-files=all"],
+                       text=True, capture_output=True, check=True)
+    return p.stdout.splitlines()
+
 def ensure_path_plumbing(checkout: Path) -> dict[str, Any]:
     """Create/verify ignored read-only Nerfstudio relative-path symlinks only."""
     sources = {checkout / "data/stonehenge": DATA_SOURCE, checkout / "outputs/stonehenge": OUTPUT_SOURCE}
@@ -89,9 +98,9 @@ def ensure_path_plumbing(checkout: Path) -> dict[str, Any]:
     checkpoint = checkout / "outputs/stonehenge/splatfacto/2024-09-11_100724/nerfstudio_models/step-000029999.ckpt"
     if not transforms.is_file() or not checkpoint.is_file() or sha256_file(checkpoint) != CHECKPOINT_SHA:
         raise RuntimeError("RELATIVE_PATH_DATA_OR_CHECKPOINT_IDENTITY_MISMATCH")
-    status = git(checkout, "status", "--porcelain", "--untracked-files=all")
+    status = git_status_lines(checkout)
     if status:
-        outside = [line for line in status.splitlines() if not line[3:].replace("\\", "/").startswith(TASK_REL + "/")]
+        outside = [line for line in status if not line[3:].replace("\\", "/").startswith(TASK_REL + "/")]
         if outside:
             raise RuntimeError("PATH_PLUMBING_WORKTREE_NOT_CLEAN:" + outside[0])
     return {"data_target": str(checkout / "data/stonehenge"), "output_target": str(checkout / "outputs/stonehenge"),
@@ -113,8 +122,79 @@ def verify_repaired_source(checkout: Path) -> dict[str, Any]:
             "repair_branch": REPAIR_BRANCH, "runtime_file_sha256": hashes}
 
 def verify_fresh_result_root(output_dir: Path, allow_existing: bool) -> None:
-    if output_dir == DEFAULT_RESULT_ROOT and output_dir.exists() and not allow_existing:
+    if output_dir.exists() and not allow_existing:
         raise RuntimeError("FIRST_LAUNCH_RESULT_ROOT_ALREADY_EXISTS")
+
+def _process_is_alive(pid: int) -> bool:
+    if os.name == "nt":
+        return pid == os.getpid()
+    try:
+        os.kill(pid, 0)
+    except (OSError, ValueError):
+        return False
+    return True
+
+def _batch_authorization_payload(checkout: Path, output_dir: Path, token: str) -> dict[str, Any]:
+    return {
+        "schema": "ACTIVE_RUNTIME_V3_R1_BATCH_CHILD_AUTHORIZATION_V1",
+        "purpose": "INTERNAL_BATCH_CHILD_ONE_EXISTING_ROOT_AUTHORIZATION",
+        "result_root": str(output_dir),
+        "branch": git(checkout, "branch", "--show-current"),
+        "source_git_head": git(checkout, "rev-parse", "HEAD"),
+        "repaired_runtime_head": REPAIRED_HEAD,
+        "protocol_sha256": PROTOCOL_SHA,
+        "execution_lock_sha256": sha256_file(LOCK_PATH),
+        "parent_pid": os.getpid(),
+        "token_sha256": hashlib.sha256(token.encode()).hexdigest(),
+    }
+
+def write_batch_child_authorization(checkout: Path, output_dir: Path, token: str) -> Path:
+    verify_execution_lock(checkout, True)
+    if output_dir != DEFAULT_RESULT_ROOT or not output_dir.is_dir():
+        raise RuntimeError("BATCH_CHILD_RESULT_ROOT_MISMATCH")
+    if not token:
+        raise RuntimeError("BATCH_CHILD_TOKEN_MISSING")
+    path = output_dir / BATCH_AUTHORIZATION_NAME
+    if path.exists():
+        raise RuntimeError("BATCH_CHILD_AUTHORIZATION_ALREADY_EXISTS")
+    write_json(path, _batch_authorization_payload(checkout, output_dir, token))
+    return path
+
+def verify_batch_child_authorization(checkout: Path, output_dir: Path, token: str | None) -> dict[str, Any]:
+    verify_execution_lock(checkout, True)
+    if output_dir != DEFAULT_RESULT_ROOT or not output_dir.is_dir():
+        raise RuntimeError("BATCH_CHILD_RESULT_ROOT_MISMATCH")
+    if not token:
+        raise RuntimeError("BATCH_CHILD_TOKEN_MISSING")
+    path = output_dir / BATCH_AUTHORIZATION_NAME
+    if not path.is_file():
+        raise RuntimeError("BATCH_CHILD_AUTHORIZATION_MISSING")
+    actual = load_json(path)
+    expected = _batch_authorization_payload(checkout, output_dir, token)
+    expected["parent_pid"] = actual.get("parent_pid")
+    if actual != expected:
+        raise RuntimeError("BATCH_CHILD_AUTHORIZATION_IDENTITY_MISMATCH")
+    if not isinstance(actual.get("parent_pid"), int) or not _process_is_alive(actual["parent_pid"]):
+        raise RuntimeError("BATCH_CHILD_PARENT_NOT_ALIVE")
+    return actual
+
+def verify_explicit_resume_authority(checkout: Path, output_dir: Path) -> None:
+    if output_dir != DEFAULT_RESULT_ROOT or not output_dir.is_dir():
+        raise RuntimeError("RESUME_RESULT_ROOT_MISMATCH")
+    verify_execution_lock(checkout, True)
+
+def authorize_result_root(checkout: Path, output_dir: Path, *, resume: bool,
+                          batch_child: bool, one_selected: bool,
+                          child_token: str | None) -> None:
+    if batch_child:
+        if not one_selected or resume:
+            raise RuntimeError("BATCH_CHILD_AUTHORITY_REQUIRES_ONE_WITHOUT_RESUME")
+        verify_batch_child_authorization(checkout, output_dir, child_token)
+        return
+    if resume:
+        verify_explicit_resume_authority(checkout, output_dir)
+        return
+    verify_fresh_result_root(output_dir, False)
 
 def frozen(checkout: Path) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
     root = checkout / PROTOCOL_REL
@@ -164,7 +244,7 @@ def verify_protected_diff(checkout: Path) -> None:
             raise RuntimeError("PROTECTED_COMMITTED_DIFF:" + path)
         if git(checkout, "diff", "--name-only", "--", path) or git(checkout, "diff", "--cached", "--name-only", "--", path):
             raise RuntimeError("PROTECTED_WORKTREE_DIFF:" + path)
-    changed = git(checkout, "status", "--porcelain").splitlines()
+    changed = git_status_lines(checkout)
     for line in changed:
         path = line[3:].replace("\\", "/").split(" -> ")[-1]
         if not path.startswith(TASK_REL + "/"):
@@ -177,6 +257,7 @@ def verify_execution_lock(checkout: Path, require_committed: bool) -> dict[str, 
         raise RuntimeError("EXECUTION_LOCK_SHA_MISMATCH")
     expected = {"repaired_runtime_head": REPAIRED_HEAD, "repaired_runtime_parent": REPAIRED_PARENT,
                 "repair_pr": REPAIR_PR, "repair_branch": REPAIR_BRANCH,
+                "r1_harness_repair_parent_head": HARNESS_REPAIR_PARENT,
                 "parent_pr144_head": "0ef0523050fc8e6c77fe333709477c5a4161d489",
                 "protocol_freeze_commit": PROTOCOL_COMMIT, "protocol_sha256": PROTOCOL_SHA,
                 "branch": BRANCH, "trial_ids": list(PRIMARY), "execution_order": list(ORDER)}
@@ -195,6 +276,8 @@ def verify_execution_lock(checkout: Path, require_committed: bool) -> dict[str, 
             raise RuntimeError("EXECUTION_HARNESS_NOT_COMMITTED_CLEAN")
         if subprocess.run(["git", "-C", str(checkout), "ls-files", "--error-unmatch", str(LOCK_PATH.relative_to(checkout))], capture_output=True).returncode:
             raise RuntimeError("EXECUTION_LOCK_NOT_TRACKED")
+        if subprocess.run(["git", "-C", str(checkout), "merge-base", "--is-ancestor", HARNESS_REPAIR_PARENT, "HEAD"]).returncode:
+            raise RuntimeError("R1_HARNESS_REPAIR_PARENT_NOT_ANCESTOR")
     return lock
 
 def static_preflight(checkout: Path, map_root: Path) -> dict[str, Any]:
@@ -402,42 +485,81 @@ def summarize_integrity(output_dir: Path) -> dict[str, Any]:
     print(json.dumps(result, sort_keys=True))
     return result
 
+def preserve_child_process_evidence(output_dir: Path, trial: int, code: int, released: bool,
+                                    stdout_path: Path, stderr_path: Path) -> tuple[Path | None, Path | None]:
+    """Persist launcher diagnostics without inventing trial evidence if run_one never began."""
+    raw = output_dir / "raw" / f"trial_{trial}"
+    if raw.is_dir():
+        stdout_path.replace(raw / "stdout.log")
+        stderr_path.replace(raw / "stderr.log")
+        (raw / "process_exit_code.txt").write_text(f"{code}\n", encoding="utf-8", newline="\n")
+        (raw / "gpu_released.txt").write_text(("true" if released else "false") + "\n", encoding="utf-8", newline="\n")
+        return raw, None
+    failure = output_dir / "parent_failures" / f"trial_{trial}"
+    if failure.exists():
+        raise RuntimeError(f"PARENT_FAILURE_EVIDENCE_ALREADY_EXISTS:{trial}")
+    failure.mkdir(parents=True, exist_ok=False)
+    stdout_path.replace(failure / "stdout.log")
+    stderr_path.replace(failure / "stderr.log")
+    (failure / "process_exit_code.txt").write_text(f"{code}\n", encoding="utf-8", newline="\n")
+    (failure / "gpu_released.txt").write_text(("true" if released else "false") + "\n", encoding="utf-8", newline="\n")
+    write_json(failure / "EARLY_CHILD_FAILURE.json", {
+        "schema": "ACTIVE_RUNTIME_V3_R1_EARLY_CHILD_FAILURE_V1",
+        "failure_class": "CHILD_EXITED_BEFORE_RAW_EVIDENCE_DIRECTORY",
+        "trial_id": trial,
+        "process_exit_code": code,
+        "gpu_released": released,
+        "raw_trial_directory_created": False,
+        "immutable_trial_evidence_lock_created": False,
+        "completed_scientific_trial_count": 0,
+        "automatic_retry": False,
+    })
+    return None, failure
+
 def run_batch(checkout: Path, output_dir: Path, map_root: Path) -> int:
     verify_execution_lock(checkout, True)
     ensure_path_plumbing(checkout)
     smoke, protocol = configure_smoke(checkout, map_root)
     smoke.verify_source_and_map(checkout, protocol)
-    for trial in ORDER:
-        if complete_evidence(output_dir, trial):
-            print(f"TRIAL_{trial}_IMMUTABLE_COMPLETE_SKIP", flush=True); continue
-        raw = output_dir / "raw" / f"trial_{trial}"
-        if raw.exists():
-            raise RuntimeError(f"INCOMPLETE_EXISTING_TRIAL_EVIDENCE_REVIEW_REQUIRED:{trial}")
-        env = os.environ.copy(); env.update(protocol["environment"])
-        command = [protocol["environment"]["python"], str(Path(__file__).resolve()), "--one", str(trial), "--checkout", str(checkout), "--output-dir", str(output_dir), "--map-source-root", str(map_root)]
-        stdout_path = output_dir / f"trial_{trial}_launcher_stdout.tmp"
-        stderr_path = output_dir / f"trial_{trial}_launcher_stderr.tmp"
-        with stdout_path.open("w", encoding="utf-8", newline="\n") as stdout, stderr_path.open("w", encoding="utf-8", newline="\n") as stderr:
-            process = subprocess.Popen(command, env=env, stdout=stdout, stderr=stderr, text=True); code = process.wait()
-        raw = output_dir / "raw" / f"trial_{trial}"
-        if raw.is_dir():
-            stdout_path.replace(raw / "stdout.log"); stderr_path.replace(raw / "stderr.log")
-        released = smoke.gpu_pid_released(process.pid)
-        (raw / "process_exit_code.txt").write_text(f"{code}\n", encoding="utf-8", newline="\n")
-        (raw / "gpu_released.txt").write_text(("true" if released else "false") + "\n", encoding="utf-8", newline="\n")
-        try:
-            freeze_trial_evidence(raw)
-        except RuntimeError as exc:
-            print(f"TRIAL_{trial}_PARTIAL_EVIDENCE_PRESERVED:{exc}", flush=True)
+    child_token = secrets.token_hex(32)
+    authorization_path = write_batch_child_authorization(checkout, output_dir, child_token)
+    try:
+        for trial in ORDER:
+            if complete_evidence(output_dir, trial):
+                print(f"TRIAL_{trial}_IMMUTABLE_COMPLETE_SKIP", flush=True); continue
+            raw = output_dir / "raw" / f"trial_{trial}"
+            if raw.exists():
+                raise RuntimeError(f"INCOMPLETE_EXISTING_TRIAL_EVIDENCE_REVIEW_REQUIRED:{trial}")
+            env = os.environ.copy(); env.update(protocol["environment"])
+            env["SAFER_SPLAT_R1_BATCH_CHILD_TOKEN"] = child_token
+            command = [protocol["environment"]["python"], str(Path(__file__).resolve()), "--one", str(trial), "--batch-child", "--checkout", str(checkout), "--output-dir", str(output_dir), "--map-source-root", str(map_root)]
+            stdout_path = output_dir / f"trial_{trial}_launcher_stdout.tmp"
+            stderr_path = output_dir / f"trial_{trial}_launcher_stderr.tmp"
+            with stdout_path.open("w", encoding="utf-8", newline="\n") as stdout, stderr_path.open("w", encoding="utf-8", newline="\n") as stderr:
+                process = subprocess.Popen(command, env=env, stdout=stdout, stderr=stderr, text=True); code = process.wait()
+            released = smoke.gpu_pid_released(process.pid)
+            raw, early_failure = preserve_child_process_evidence(output_dir, trial, code, released, stdout_path, stderr_path)
+            if early_failure is not None:
+                summarize_integrity(output_dir)
+                print(f"TRIAL_{trial}_EARLY_CHILD_FAILURE_PRESERVED:{early_failure}", flush=True)
+                print(f"TRIAL_{trial}_HARD_STOP_NO_RETRY", flush=True)
+                return code or 2
+            assert raw is not None
+            try:
+                freeze_trial_evidence(raw)
+            except RuntimeError as exc:
+                print(f"TRIAL_{trial}_PARTIAL_EVIDENCE_PRESERVED:{exc}", flush=True)
+                summarize_integrity(output_dir)
+                return code or 2
+            if code or not released or not complete_evidence(output_dir, trial):
+                summarize_integrity(output_dir)
+                print(f"TRIAL_{trial}_HARD_STOP", flush=True); return code or 2
             summarize_integrity(output_dir)
-            return code or 2
-        if code or not released or not complete_evidence(output_dir, trial):
-            summarize_integrity(output_dir)
-            print(f"TRIAL_{trial}_HARD_STOP", flush=True); return code or 2
-        summarize_integrity(output_dir)
-        print(f"TRIAL_{trial}_PASS", flush=True)
-    print("COLLECTION_COMPLETE_OR_STOPPED_REVIEW_BEFORE_ANALYSIS", flush=True)
-    return 0
+            print(f"TRIAL_{trial}_PASS", flush=True)
+        print("COLLECTION_COMPLETE_OR_STOPPED_REVIEW_BEFORE_ANALYSIS", flush=True)
+        return 0
+    finally:
+        authorization_path.unlink(missing_ok=True)
 
 def main() -> int:
     ap = argparse.ArgumentParser()
@@ -448,13 +570,18 @@ def main() -> int:
     mode.add_argument("--batch", action="store_true")
     mode.add_argument("--summarize-integrity", action="store_true")
     ap.add_argument("--resume", action="store_true", help="allow an existing result root only after collection has begun")
+    ap.add_argument("--batch-child", action="store_true", help=argparse.SUPPRESS)
     ap.add_argument("--checkout", type=Path, required=True)
     ap.add_argument("--output-dir", type=Path, required=True)
     ap.add_argument("--map-source-root", type=Path, default=DEFAULT_MAP_ROOT)
     a = ap.parse_args(); checkout = a.checkout.resolve(strict=True); output = a.output_dir.resolve(); map_root = a.map_source_root.resolve(strict=True)
     if a.static_preflight:
+        if a.resume or a.batch_child:
+            raise RuntimeError("STATIC_PREFLIGHT_DOES_NOT_ACCEPT_EXISTING_ROOT_AUTHORITY")
         print(json.dumps(static_preflight(checkout, map_root), sort_keys=True)); print("PASS_ACTIVE_RUNTIME_V3_PAIRED_STATIC_PREFLIGHT"); return 0
-    verify_fresh_result_root(output, a.resume)
+    authorize_result_root(checkout, output, resume=a.resume, batch_child=a.batch_child,
+                          one_selected=a.one is not None,
+                          child_token=os.environ.get("SAFER_SPLAT_R1_BATCH_CHILD_TOKEN"))
     if a.gpu_preflight: return gpu_preflight(checkout, output, map_root)
     if a.one is not None: return run_one(checkout, output, map_root, a.one)
     if a.batch: return run_batch(checkout, output, map_root)

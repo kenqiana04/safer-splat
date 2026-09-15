@@ -29,5 +29,33 @@
   "cycle_observation_role": "TASK_LOCAL_READ_ONLY_RUNTIME_FACT_CAPTURE_FOR_POSTHOC_ORACLE",
   "observer_feedback": false,
   "immutable_complete_evidence_required_for_resume_skip": true,
+  "batch_child_authorization": {
+    "scope": "ONE_CHILD_OF_AUTHORIZED_BATCH_ONLY",
+    "bindings": [
+      "exact_result_root",
+      "execution_lock_sha256",
+      "source_git_head",
+      "branch",
+      "protocol_sha256",
+      "live_parent_pid",
+      "one_time_token_sha256"
+    ],
+    "manual_one_without_authority_rejected": true,
+    "wrong_result_root_rejected": true
+  },
+  "early_child_failure_before_raw_directory": {
+    "location": "parent_failures/trial_<trial_id>/",
+    "preserves": [
+      "stdout.log",
+      "stderr.log",
+      "process_exit_code.txt",
+      "gpu_released.txt",
+      "EARLY_CHILD_FAILURE.json"
+    ],
+    "typed_hard_stop": true,
+    "automatic_retry": false,
+    "trial_evidence_lock_created": false,
+    "completed_scientific_trial_count_increment": 0
+  },
   "aggregate_scientific_analysis_during_collection": false
 }

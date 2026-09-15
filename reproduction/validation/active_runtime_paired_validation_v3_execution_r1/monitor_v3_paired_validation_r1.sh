@@ -2,7 +2,7 @@
 set -euo pipefail
 
 CHECKOUT="/disk1/zlab/v3_execution_worktrees/safer-splat-v3-paired-validation-r1"
-RESULT_ROOT="/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_r1_20260914"
+RESULT_ROOT="/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_r1_retry1_20260915"
 SUMMARY="$RESULT_ROOT/ACTIVE_V3_R1_COLLECTION_INTEGRITY_SUMMARY.json"
 GPU="${CUDA_VISIBLE_DEVICES:-1}"
 

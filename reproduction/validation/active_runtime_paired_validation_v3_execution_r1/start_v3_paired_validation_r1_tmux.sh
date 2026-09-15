@@ -3,7 +3,7 @@ set -euo pipefail
 
 SESSION="active-runtime-v3-paired-validation-r1"
 CHECKOUT="/disk1/zlab/v3_execution_worktrees/safer-splat-v3-paired-validation-r1"
-RESULT_ROOT="/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_r1_20260914"
+RESULT_ROOT="/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_r1_retry1_20260915"
 MAP_ROOT="/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724"
 PYTHON="/disk1/zlab/conda_envs/safer_splat_official/bin/python"
 RUNNER="$CHECKOUT/reproduction/validation/active_runtime_paired_validation_v3_execution_r1/run_active_runtime_v3_paired_validation_r1.py"

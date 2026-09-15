@@ -1,10 +1,16 @@
 # Active Runtime V3 Paired Execution Harness R1
 
-This is a pre-outcome harness re-freeze against repaired runtime commit `604981dca96cf924679aaf718b78776d858b55b1` (PR #146). It does not contain collection outcomes.
+This task-local repair fixes two deterministic launcher bugs exposed by the first real launch while preserving the repaired runtime baseline `604981dca96cf924679aaf718b78776d858b55b1`, the PR #144 scientific protocol, and all scientific decisions.
 
-## First-launch sequencing correction
+## Verified failure mechanism
 
-The launcher now runs CPU static preflight and the CPU validator while the fresh R1 result root is still absent. Only after both pass does it create the root and start tmux; the tmux command begins with explicitly authorized `--gpu-preflight --resume` and then `--batch --resume`. First-launch collision refusal remains active, resume remains explicit, and the analyzer is never auto-run.
+The old parent batch launched `--one TRIAL` after the result root already existed but did not provide existing-root authority. The child's global fresh-root gate rejected it before `run_one()` created `raw/trial_66`. The parent then assumed that directory existed and raised `FileNotFoundError` while writing `process_exit_code.txt`. The exact classifications are `BATCH_CHILD_ONE_MISSING_EXISTING_ROOT_AUTHORIZATION` and `PARENT_ASSUMES_CHILD_RAW_DIR_EXISTS_AFTER_EARLY_CHILD_FAILURE`.
+
+## Narrow child authorization and parent recovery
+
+The parent now launches `--one TRIAL --batch-child` with a one-time random token. A root-level authorization record binds the token hash, exact retry1 result root, current source HEAD, execution-lock SHA-256, branch, protocol SHA-256, repaired runtime head, and live parent PID. The flag is valid only with `--one` and without `--resume`; ordinary manual `--one`, wrong-root use, stale parent, missing token, or identity mismatch is rejected.
+
+If a child exits before creating its raw trial directory, the parent writes stdout, stderr, exit code, GPU-release result, and typed metadata under `parent_failures/trial_<id>/`, returns a nonzero hard stop, does not retry, does not fabricate an immutable trial evidence lock, and does not increment completed trials. The normal child-created raw path is unchanged.
 
 ## Frozen boundary
 
@@ -18,14 +24,20 @@ The launcher now runs CPU static preflight and the CPU validator while the fresh
 
 The repaired runtime source is the protected baseline. The prior missing trace occurred when a typed post-L2 routing block bypassed the existing ActiveRunner/ActiveCommitTransaction no-action trace transaction. The repaired path emits a Supervisor-owned non-commit decision and uses the existing no-action trace authority. This harness does not alter that source or any method contract.
 
-## Fresh execution root and evidence
+## Result-root disposition
 
-Future results use `/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_r1_20260914`. First launch refuses a pre-existing root. Resume is explicit and skips only complete immutable trial evidence; partial evidence hard-stops. Every completed public cycle must have exactly one trace, including a legitimate assurance-boundary cycle, while plant commits may be lower.
+The failed root `/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_r1_20260914` is superseded, read-only diagnostic evidence. It is never resumed, imported, analyzed, or reused. The only authorized next root is `/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_r1_retry1_20260915`, which must remain absent until a later manual collection task. First-launch collision protection remains universal. Explicit user resume is accepted only for this exact frozen root with a committed clean execution lock.
 
 ## Analyzer boundary
 
 The analyzer is copied and frozen with the original hard-safety and paired-NI constants, but the launcher never calls it and the analyzer requires an explicit post-collection authorization flag. No GPU preflight, trial, Reference rerun, oracle, Official100, Formal outcome, or analyzer execution occurred in this task.
 
-## Validation
+## Counts and validation boundary
 
-CPU-only validator, Python compilation, shell syntax, hash checks, protected-diff checks, map/checkpoint/reference checks, and fresh-root checks must pass before any later manual collection authorization.
+The failed historical attempt performed one zero-cycle GPU preflight and zero scientific trials. This repair performs zero GPU preflights, zero Active scientific trials, zero analyzer runs, zero Reference reruns, zero Official100 runs, and zero new Formal outcomes. CPU-only regressions cover authorized and unauthorized child entry, wrong roots, early failure preservation, normal raw handling, first launch, explicit resume, analyzer exclusion, and old-root non-reuse.
+
+`FINAL_STATUS=PASS_R1_BATCH_CHILD_ROOT_AND_EARLY_FAILURE_REPAIR`
+
+`FINAL_DECISION=READY_FOR_MANUAL_ACTIVE_RUNTIME_V3_PAIRED_COLLECTION_R1_RETRY1`
+
+`ONLY_NEXT_TASK=MANUALLY_START_FROZEN_ACTIVE_RUNTIME_V3_PAIRED_COLLECTION_R1_RETRY1`
