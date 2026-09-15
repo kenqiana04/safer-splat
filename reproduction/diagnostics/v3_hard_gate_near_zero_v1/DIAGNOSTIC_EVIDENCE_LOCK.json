@@ -1,0 +1,23 @@
+{
+  "schema": "V3_NEAR_ZERO_DIAGNOSTIC_EVIDENCE_LOCK_V1",
+  "files": {
+    "DIAGNOSTIC_PROTOCOL.json": {"sha256": "e155c10c61a760cc0f8b62ef648a09302bd16fdae45e86e90e33771041fd569a"},
+    "DIAGNOSTIC_PROTOCOL.md": {"sha256": "06193e89da055934e55069dddb53e10f0da31aa24e38d18a3f3e72e4d7a9af5a"},
+    "diagnose_v3_near_zero_hard_gate.py": {"sha256": "04a0d9a4b947b59b09efe0d0cf14b0ee1b19155d5c5aa5e1ec478813b0d22079"},
+    "validate_v3_near_zero_diagnostic.py": {"sha256": "2e118435466e90d1eb59a5e2b72b685090407d311099eeb685bea5140b2dc9c8"},
+    "IMPLEMENTATION_PLAN.md": {"sha256": "f5c5b53776d03c2848ad6fd3e763b7351d907d6ec0f584293eaa323a7df03cf9"},
+    "README.md": {"sha256": "c3f15864d8961ca19f5a33be0f12a37577359fa2d01da57f6fd3833cc9071c6b"},
+    "DIAGNOSTIC_SUMMARY.json": {"sha256": "dcd0a7e9556c490168c9cc31a824c8d0ac794bc9be4cb7bb6425d8a18f5b80b7"},
+    "DIAGNOSTIC_REPORT.md": {"sha256": "cd0b11288b9b4ad8b7a0b76346918644fa7f75ca676dee5f5296a66823ef1e0f"},
+    "downstream_handoff.json": {"sha256": "e8eb570f8ee95fb1e0fc9fb5ddcdad2ccc5b33b952d8da3bf7fbe40e3c53c1d5"},
+    "DRAFT_PR_BODY.md": {"sha256": "4d595ee137897f656a3c8c8366a0297a490cc8a4e88145f3e4f954c3e09882df"},
+    "validation_result.json": {"sha256": "bbd5ebc18982f62fe455218dbd9116f745bc283cc39b65bccd96b70b8ba3e90f"}
+  },
+  "external_result_root": "/disk1/zlab/v3_diagnostic_records/v3_hard_gate_near_zero_v1_20260915",
+  "external_result_lock_sha256": "4811693c02005af44b81a9405090ec49e31dfc490ca54ad596bcd7973c1736f7",
+  "paired_result_root_mutation_count": 0,
+  "protected_source_diff_count": 0,
+  "frozen_analyzer_diff_count": 0,
+  "frozen_protocol_diff_count": 0,
+  "frozen_decision": "FAIL_V3_HARD_SAFETY_GATE"
+}
