@@ -2,8 +2,8 @@
   "schema": "V3_HARD_GATE_NEAR_ZERO_DIAGNOSTIC_PROTOCOL_V1",
   "task_type": "POST_FAILURE_READ_ONLY_DIAGNOSTIC",
   "protocol_revision": {
-    "revision": 1,
-    "reason": "pre-depth-audit schema normalization: cycle observations encode action identity as a string while runtime trace encodes the same identity as an object with value",
+    "revision": 2,
+    "reason": "pre-depth-audit schema normalization: revision 1 normalized string versus object action identities; revision 2 uses the frozen BarrierQueryResult active_gaussian_ids field name instead of the non-existent active_gaussian_indices spelling",
     "scientific_or_numerical_rule_changed": false,
     "prior_failed_result_roots_preserved": true
   },

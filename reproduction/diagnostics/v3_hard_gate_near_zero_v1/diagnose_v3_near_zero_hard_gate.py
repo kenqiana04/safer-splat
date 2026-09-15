@@ -201,7 +201,7 @@ def query_point(adapter: Any, map_id: str, point: Any) -> dict[str, Any]:
     result = adapter.query(cast, map_id, "FULL")
     if result.status.value != "FINITE" or result.h is None or result.signed_distance is None:
         return {"status": result.status.value, "constructed_xyz": constructed.tolist(), "backend_xyz": cast64.tolist(), "backend_dtype": str(cast.dtype)}
-    index = int(result.active_gaussian_indices[0])
+    index = int(result.active_gaussian_ids[0])
     return {
         "status": "FINITE", "constructed_xyz": constructed.tolist(), "backend_xyz": cast64.tolist(), "backend_dtype": str(cast.dtype),
         "quantization_delta": (cast64 - constructed).tolist(), "h_min": float(result.h), "argmin_gaussian_index": index,
