@@ -1,0 +1,56 @@
+{
+  "schema": "CERTIFICATION_EXECUTION_STATE_IDENTITY_REPAIR_SMOKE_EXECUTION_LOCK_V1",
+  "protocol_freeze_commit": "PENDING_PROTOCOL_FREEZE_COMMIT",
+  "implementation_head": "546598a70e12fa99f9153f1927d0542ca27862b4",
+  "runtime_scientific_authority": "50cadfe614da70ce0345c4b1789c787dc529287e",
+  "repair_spec_authority": "77f8e52c2a2252fe651e4a13e3e30ada25168eb7",
+  "protocol_sha256": "80b4c15413bdfa9b03b106a725af5cd97b17a51b9e81d03cfe79a7300a8077e7",
+  "runtime_repair_tree_git_oid": "bb17d1acfb91d6af9d72a791a0c132bb8f3cc47e",
+  "runtime_repair_tree_sha256": "b8c819ecbd663b10113331e60321f14cf8db3e765e0305a6b5aa96fb58e93030",
+  "canonical_transition_sha256": "437aac43c3ece27609af6339bfea6ab7b7f0248ca2738ec1691c88c84d747891",
+  "repaired_stack_factory_sha256": "6d2083821869c5126e9e63bc36a6c593b8c10fde12c58bf3577b4a381a876e24",
+  "implementation_evidence_lock_sha256": "ae4dd993dde0eb51c15f30a612c34f7de5ae2ec952c1dfaa17b3396c5e26c105",
+  "implementation_validation_lock_sha256": "ba86ceddc2e91fbeaf2e9d7e30e9aaadf9b73395a7d8f6ad1acd1a8e30efc61c",
+  "repair_spec_sha256": "5a0365c0d55376406fdd5b9181ef1b551ec29f30a5a96c41f96038e2d7dd0bc4",
+  "root_cause_evidence_lock_sha256": "bc4b790ea7a893725249c5ca1e4a097379c88d431a97ec5a2469a19fcb857186",
+  "canonical_transition_identity": "canonical-transition:sha256:188eae47698febcd0d5492c1c0df2ea456a2fce23a83a616e28089f0e2f46d5d",
+  "trial_ids": [15, 45, 75],
+  "trial_order": [15, 45, 75],
+  "maximum_completed_cycles_per_trial": 500,
+  "seed": 0,
+  "serial_execution": true,
+  "separate_process_per_trial": true,
+  "environment_python": "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
+  "physical_gpu": 1,
+  "process_visible_gpu": "cuda:0",
+  "result_root": "/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_20260916",
+  "map_identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+  "map_artifact_sha256": {
+    "config.yml": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e",
+    "dataparser_transforms.json": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e",
+    "nerfstudio_models/step-000029999.ckpt": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d"
+  },
+  "geometry": {
+    "hard_radius_q": 0.015,
+    "runtime_margin_q": 0.0,
+    "rho_seg_q": 0.0,
+    "historical_diagnostic_radius_q": 0.025,
+    "historical_diagnostic_runtime_authority": false
+  },
+  "no_scientific_efficacy_claim": true,
+  "harness_sha256": {
+    "run_cert_exec_identity_repair_smoke_v1.py": "7fbdf197bdb4829dc59a5335a4d36850cddcfb526f73c34cf74bd60ee2ccb306",
+    "validate_cert_exec_identity_repair_smoke_v1.py": "6ccec7c187c1207199b17ef708e5f502e56db5e5be9a43df77cbafb92c4b8c70",
+    "launch_cert_exec_identity_repair_smoke_v1.sh": "5025dd5780c927b5a13822765c0a435d33983636d0d8afd155a7788853e4f489",
+    "monitor_cert_exec_identity_repair_smoke_v1.py": "db0fbf2018503ce29242f87713b3a325c63cb291460f5582c948552f9e3d1d60"
+  },
+  "execution_counts_at_freeze": {
+    "gpu_preflight_count": 0,
+    "smoke_trial_execution_count": 0,
+    "controller_qp_count": 0,
+    "plant_commit_count": 0,
+    "analyzer_count": 0,
+    "reference_rerun_count": 0,
+    "official100_formal_count": 0
+  }
+}
