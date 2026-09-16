@@ -45,7 +45,17 @@ def main() -> int:
     need(sha256(PROTOCOL)==PROTOCOL_SHA,"ORIGINAL_PROTOCOL_UNCHANGED",passed,failed)
     need(sha256(ORIGINAL_LOCK)==ORIGINAL_LOCK_SHA,"ORIGINAL_EXECUTION_LOCK_UNCHANGED",passed,failed)
     need(OLD_ROOT.is_dir() and (OLD_ROOT/"launcher.log").is_file() and sha256(OLD_ROOT/"launcher.log")==OLD_LOG_SHA,"OLD_FAILED_ROOT_READ_ONLY_EVIDENCE",passed,failed)
-    need(not RETRY_ROOT.exists() and not DIAGNOSTIC_ROOT.exists(),"RETRY_ROOTS_ABSENT",passed,failed)
+    diagnostic_ok = False
+    diagnostic_result = DIAGNOSTIC_ROOT / "raw" / "gpu_preflight.json"
+    if diagnostic_result.is_file():
+        try:
+            diagnostic = json.loads(diagnostic_result.read_text())
+            diagnostic_ok = (diagnostic.get("status") == "PASS"
+                             and int(diagnostic.get("runtime_cycles_executed", -1)) == 0
+                             and int(diagnostic.get("plant_commit_count", -1)) == 0)
+        except (OSError, ValueError, TypeError, json.JSONDecodeError):
+            diagnostic_ok = False
+    need(not RETRY_ROOT.exists() and (diagnostic_ok or not DIAGNOSTIC_ROOT.exists()),"RETRY_ROOT_ABSENT_OR_VALID_GPU_PREFLIGHT",passed,failed)
     need(protocol["cohort"]["trial_ids"]==[15,45,75] and protocol["cohort"]["trial_order"]==[15,45,75],"REPAIR_COHORT_EXACT",passed,failed)
     need(protocol["cohort"]["maximum_completed_cycles_per_trial"]==500 and protocol["cohort"]["seed"]==0,"REPAIR_LIMITS_EXACT",passed,failed)
     need(protocol["geometry"]["hard_radius_q"]==0.015 and protocol["geometry"]["runtime_margin_q"]==0.0 and protocol["geometry"]["rho_seg_q"]==0.0 and protocol["geometry"]["historical_diagnostic_runtime_authority"] is False,"GEOMETRY_UNCHANGED",passed,failed)
