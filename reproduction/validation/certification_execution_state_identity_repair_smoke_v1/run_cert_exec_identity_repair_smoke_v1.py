@@ -146,11 +146,11 @@ def verify_static_identity(checkout: Path, *, require_committed_lock: bool) -> d
     if lock["protocol_sha256"] != sha256_file(PROTOCOL_PATH):
         raise RuntimeError("PROTOCOL_SHA_MISMATCH")
     if require_committed_lock:
-        commit = lock.get("protocol_freeze_commit")
+        commit = lock.get("harness_repair_commit")
         if not isinstance(commit, str) or len(commit) != 40 or subprocess.run(
             ["git", "-C", str(checkout), "merge-base", "--is-ancestor", commit, "HEAD"]
         ).returncode:
-            raise RuntimeError("PROTOCOL_FREEZE_COMMIT_NOT_ANCESTOR")
+            raise RuntimeError("HARNESS_REPAIR_COMMIT_NOT_ANCESTOR")
         if git(checkout, "status", "--porcelain", "--", ALLOWED_TASK_REL):
             raise RuntimeError("COMMITTED_HARNESS_REQUIRED")
         for name, digest in lock["harness_sha256"].items():
