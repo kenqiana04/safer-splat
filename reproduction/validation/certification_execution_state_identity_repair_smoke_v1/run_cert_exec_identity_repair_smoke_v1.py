@@ -25,9 +25,9 @@ from typing import Any, Iterator
 
 TASK_DIR = Path(__file__).resolve().parent
 PROTOCOL_PATH = TASK_DIR / "SMOKE_REPAIR_V1_PROTOCOL.json"
-LOCK_PATH = TASK_DIR / "SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY4_R5.json"
+LOCK_PATH = TASK_DIR / "SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY5_R6.json"
 ORIGINAL_LOCK_PATH = TASK_DIR / "SMOKE_REPAIR_V1_EXECUTION_LOCK.json"
-CHECKOUT_DEFAULT = Path("/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-smoke-delegate-protocol-projection-r5")
+CHECKOUT_DEFAULT = Path("/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-smoke-executed-action-continuity-audit-r6")
 OLD_RESULT_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_20260916")
 ATTEMPT1_RESULT_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry1_20260916")
 ATTEMPT1_LAUNCHER_LOG_SHA256 = "a1a647cd52426ebce38459c3e87522864266374842b824fb2d7075d10804910f"
@@ -43,10 +43,20 @@ ATTEMPT3_REQUIRED_SHA256 = {
     "raw/trial_15/process_exit_code.txt": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
     "SMOKE_REPAIR_V1_COLLECTION_SUMMARY.json": "a0b56baa3b8ac5494844d5f11c44599255af4e4836af9466a521195c700c7f85",
 }
-RESULT_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry4_20260916")
+ATTEMPT4_RESULT_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry4_20260916")
+ATTEMPT4_REQUIRED_SHA256 = {
+    "launcher.log": "a7f4b7f24822c6108cbab013ae46877bee2eda2050d249ce4141fd21a8a7b5ce",
+    "raw/gpu_preflight.json": "bb9473c716fab705766e2358d070f559ec23efa96c800e5469f5c2a5bebf747a",
+    "raw/trial_15/trial_summary.json": "1099803ee93f23fc3686252c0e821099a2aeeadc0f017508c7582987fa976b14",
+    "raw/trial_15/runtime_trace.jsonl": "e034aa0eaa59bf5ab99e9f4e3d0c55b9b0256c1f09f6c7ec4c451d044185e719",
+    "raw/trial_15/cycle_observations.jsonl": "fa53c5d859d90c90ed74da9ae89f557eb2a3f5804975ed8af0a64f8cdefb9a54",
+    "raw/trial_15/SMOKE_REPAIR_V1_RAW_EVIDENCE_LOCK.json": "0bc8f3b20723de10f4f900c8b7691f660768328291b3e5b4c5d0018c02cd108b",
+    "SMOKE_REPAIR_V1_COLLECTION_SUMMARY.json": "a0b56baa3b8ac5494844d5f11c44599255af4e4836af9466a521195c700c7f85",
+}
+RESULT_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry5_20260916")
 GPU_PREFLIGHT_DIAGNOSTIC_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_preflight_repair_v1_20260916")
 IMPLEMENTATION_HEAD = "546598a70e12fa99f9153f1927d0542ca27862b4"
-BRANCH = "repair-cert-exec-identity-smoke-delegate-protocol-projection-r5"
+BRANCH = "repair-cert-exec-identity-smoke-executed-action-continuity-audit-r6"
 TRIALS = (15, 45, 75)
 AUTHORIZATION_NAME = "SMOKE_REPAIR_V1_INTERNAL_CHILD_AUTHORIZATION.json"
 CHILD_TOKEN_ENV = "SAFER_SPLAT_CERT_EXEC_SMOKE_CHILD_TOKEN"
@@ -373,17 +383,162 @@ def observe_cycles(checkout: Path, output_dir: Path, trial: int) -> Iterator[Non
         ActiveCycleCoordinator.run_cycle = original
 
 
-def audit_trial_evidence(raw: Path) -> dict[str, int]:
+def executed_action_l2_next_l1_audit(
+    trace_rows: list[dict[str, Any]], observations: list[dict[str, Any]]
+) -> dict[str, Any]:
+    """Check primary L2(k->k+2) only when that primary action was executed."""
+    if len(trace_rows) != len(observations):
+        raise RuntimeError("TRACE_OBSERVATION_CARDINALITY_MISMATCH")
+    applicable = not_applicable = unknown = mismatch = 0
+    roles = {"PRIMARY_NAVIGATION": 0, "RETAINED_BACKUP": 0, "CERTIFIED_TERMINAL": 0}
+    def trace_identity(value: Any) -> Any:
+        return value.get("value") if isinstance(value, dict) else value
+
+    def matching_trial(trace_trial: Any, observed_trial: Any) -> bool:
+        return isinstance(observed_trial, int) and trace_trial == f"STONEHENGE_TRIAL_{observed_trial:03d}"
+
+    for index in range(max(0, len(trace_rows) - 1)):
+        trace, next_trace = trace_rows[index:index + 2]
+        observation, next_observation = observations[index:index + 2]
+        role = observation.get("action_role")
+        roles[role] = roles.get(role, 0) + 1
+        selected = observation.get("selected_action_identity")
+        executed = observation.get("executed_action_identity")
+        aligned = (
+            isinstance(selected, str) and bool(selected)
+            and isinstance(executed, str) and bool(executed)
+            and selected == executed
+            and observation.get("committed") is True
+            and trace_identity(trace.get("selected_action_identity")) == selected
+            and trace_identity(trace.get("executed_action_identity")) == executed
+            and trace.get("action_role") == role
+            and matching_trial(trace.get("trial_id"), observation.get("trial_id"))
+            and matching_trial(next_trace.get("trial_id"), next_observation.get("trial_id"))
+            and trace.get("cycle_index") == observation.get("cycle_index")
+            and next_trace.get("cycle_index") == next_observation.get("cycle_index")
+            and isinstance(trace.get("cycle_index"), int)
+            and next_trace.get("cycle_index") == trace["cycle_index"] + 1
+        )
+        if not aligned:
+            unknown += 1
+            continue
+        if role == "PRIMARY_NAVIGATION":
+            facts = dict(trace.get("facts", []))
+            next_facts = dict(next_trace.get("facts", []))
+            predicted = facts.get("canonical_l2_p_k2_identity")
+            actual_next_l1 = next_facts.get("canonical_l1_endpoint_identity")
+            if not isinstance(predicted, str) or not predicted or not isinstance(actual_next_l1, str) or not actual_next_l1:
+                unknown += 1
+                continue
+            applicable += 1
+            mismatch += int(predicted != actual_next_l1)
+        elif role in ("RETAINED_BACKUP", "CERTIFIED_TERMINAL"):
+            not_applicable += 1
+        else:
+            unknown += 1
+    total = max(0, len(trace_rows) - 1)
+    if applicable + not_applicable + unknown != total:
+        raise RuntimeError("EXECUTED_ACTION_CONTINUITY_DENOMINATOR_MISMATCH")
+    return {
+        "l2_next_l1_continuity_applicable_count": applicable,
+        "l2_next_l1_continuity_mismatch_count": mismatch,
+        "l2_next_l1_continuity_not_applicable_count": not_applicable,
+        "l2_next_l1_continuity_unknown_count": unknown,
+        "l2_next_l1_continuity_cross_cycle_rows": total,
+        "l2_next_l1_continuity_role_counts": roles,
+    }
+
+
+def replay_retry4_continuity() -> dict[str, Any]:
+    """Read-only CPU proof against the immutable consumed retry4 attempt."""
+    if not ATTEMPT4_RESULT_ROOT.is_dir() or any(
+        sha256_file(ATTEMPT4_RESULT_ROOT / name) != digest
+        for name, digest in ATTEMPT4_REQUIRED_SHA256.items()
+    ):
+        raise RuntimeError("ATTEMPT4_FAILED_ROOT_EVIDENCE_MUTATION")
+    raw = ATTEMPT4_RESULT_ROOT / "raw/trial_15"
+    trace_rows = [json.loads(line) for line in (raw / "runtime_trace.jsonl").read_text(encoding="utf-8").splitlines()]
+    observations = [json.loads(line) for line in (raw / "cycle_observations.jsonl").read_text(encoding="utf-8").splitlines()]
+    replay = executed_action_l2_next_l1_audit(trace_rows, observations)
+    expected = {
+        "l2_next_l1_continuity_applicable_count": 190,
+        "l2_next_l1_continuity_mismatch_count": 0,
+        "l2_next_l1_continuity_not_applicable_count": 309,
+        "l2_next_l1_continuity_unknown_count": 0,
+        "l2_next_l1_continuity_cross_cycle_rows": 499,
+        "l2_next_l1_continuity_role_counts": {
+            "PRIMARY_NAVIGATION": 190, "RETAINED_BACKUP": 12, "CERTIFIED_TERMINAL": 297,
+        },
+    }
+    if replay != expected:
+        raise RuntimeError("RETRY4_EXECUTED_ACTION_CONTINUITY_REPLAY_MISMATCH")
+    fact_keys = {key for row in trace_rows for key, _ in row.get("facts", [])}
+    nonprimary_k2 = sorted(
+        key for key in fact_keys if ("backup" in key or "terminal" in key)
+        and ("p_k2" in key or "future_position_identity" in key or "next_l1_endpoint_identity" in key)
+    )
+    if nonprimary_k2:
+        raise RuntimeError("EXECUTED_NONPRIMARY_K2_IDENTITY_REQUIRES_SEPARATE_CONTRACT")
+    replay["executed_nonprimary_k2_identity_status"] = "NO_EXECUTED_NONPRIMARY_K2_IDENTITY_AVAILABLE"
+    return replay
+
+
+def synthetic_executed_action_continuity_regression() -> dict[str, str]:
+    def fixture(role: str, predicted: str, next_l1: str, *, identity_match: bool = True) -> dict[str, Any]:
+        selected = "action-id"
+        executed = selected if identity_match else "other-action-id"
+        trace = [
+            {"trial_id": "STONEHENGE_TRIAL_015", "cycle_index": 0, "action_role": role,
+             "selected_action_identity": selected, "executed_action_identity": executed,
+             "facts": [("canonical_l2_p_k2_identity", predicted)]},
+            {"trial_id": "STONEHENGE_TRIAL_015", "cycle_index": 1, "facts": [("canonical_l1_endpoint_identity", next_l1)]},
+        ]
+        observations = [
+            {"trial_id": 15, "cycle_index": 0, "committed": True,
+             "action_role": role, "selected_action_identity": selected,
+             "executed_action_identity": executed},
+            {"trial_id": 15, "cycle_index": 1},
+        ]
+        return executed_action_l2_next_l1_audit(trace, observations)
+
+    mismatch = fixture("PRIMARY_NAVIGATION", "predicted", "different")
+    match = fixture("PRIMARY_NAVIGATION", "same", "same")
+    backup = fixture("RETAINED_BACKUP", "unused-primary", "different")
+    terminal = fixture("CERTIFIED_TERMINAL", "unused-primary", "different")
+    invalid = fixture("RETAINED_BACKUP", "unused-primary", "different", identity_match=False)
+    if (mismatch["l2_next_l1_continuity_applicable_count"] != 1
+            or mismatch["l2_next_l1_continuity_mismatch_count"] != 1
+            or match["l2_next_l1_continuity_applicable_count"] != 1
+            or match["l2_next_l1_continuity_mismatch_count"] != 0
+            or any(row["l2_next_l1_continuity_not_applicable_count"] != 1
+                   or row["l2_next_l1_continuity_mismatch_count"] != 0
+                   for row in (backup, terminal))
+            or invalid["l2_next_l1_continuity_unknown_count"] != 1
+            or invalid["l2_next_l1_continuity_not_applicable_count"] != 0):
+        raise RuntimeError("EXECUTED_ACTION_CONTINUITY_SYNTHETIC_REGRESSION_FAILED")
+    for row in (mismatch, match, backup, terminal, invalid):
+        if (row["l2_next_l1_continuity_applicable_count"]
+                + row["l2_next_l1_continuity_not_applicable_count"]
+                + row["l2_next_l1_continuity_unknown_count"]
+                != row["l2_next_l1_continuity_cross_cycle_rows"]):
+            raise RuntimeError("EXECUTED_ACTION_CONTINUITY_DENOMINATOR_MISMATCH")
+    return {
+        "primary_mismatch": "PASS", "primary_match": "PASS",
+        "nonprimary_not_applicable": "PASS", "identity_mismatch_fail_closed": "PASS",
+        "denominator_contract": "PASS",
+    }
+
+
+def audit_trial_evidence(raw: Path) -> dict[str, Any]:
     trace_rows = [json.loads(line) for line in (raw / "runtime_trace.jsonl").read_text(encoding="utf-8").splitlines()]
     observations = [json.loads(line) for line in (raw / "cycle_observations.jsonl").read_text(encoding="utf-8").splitlines()]
     if len(trace_rows) != len(observations):
         raise RuntimeError("TRACE_OBSERVATION_CARDINALITY_MISMATCH")
     from reproduction.runtime.certification_execution_state_identity_repair_v1.canonical_transition import CanonicalExecutionTransition
-    mismatch = drift = l1_actual = l2_next_l1 = backup = incomplete = forbidden = 0
+    mismatch = drift = l1_actual = backup = incomplete = forbidden = 0
     expected_transition = protocol()["canonical_transition"]["identity"]
-    facts_by_cycle: dict[int, dict[str, Any]] = {}
     for trace, observation in zip(trace_rows, observations):
-        facts = dict(trace.get("facts", [])); cycle = int(trace["cycle_index"]); facts_by_cycle[cycle] = facts
+        facts = dict(trace.get("facts", []))
         drift += int(facts.get("canonical_transition_arithmetic_identity") != expected_transition)
         mismatch += int(facts.get("cert_exec_state_identity_status") == "CERT_EXEC_STATE_IDENTITY_MISMATCH")
         backup += int(facts.get("canonical_backup_state_identity_status") == "CERT_EXEC_STATE_IDENTITY_MISMATCH")
@@ -397,14 +552,12 @@ def audit_trial_evidence(raw: Path) -> dict[str, int]:
             l1_actual += int(actual_position is None or facts.get("canonical_l1_endpoint_identity") != actual_position)
         elif observation["boundary"] and observation.get("post_state") is not None:
             incomplete += 1
-    for cycle, facts in facts_by_cycle.items():
-        if "canonical_l2_p_k2_identity" in facts and cycle + 1 in facts_by_cycle:
-            l2_next_l1 += int(facts["canonical_l2_p_k2_identity"] != facts_by_cycle[cycle + 1].get("canonical_l1_endpoint_identity"))
+    continuity = executed_action_l2_next_l1_audit(trace_rows, observations)
     result = {
         "canonical_transition_drift_count": drift,
         "cert_exec_identity_mismatch_count": mismatch,
         "l1_actual_continuity_mismatch_count": l1_actual,
-        "l2_next_l1_continuity_mismatch_count": l2_next_l1,
+        **continuity,
         "backup_token_continuity_mismatch_count": backup,
         "forbidden_diagnostic_authority_event_count": forbidden,
         "normative_identity_payload_incomplete_count": incomplete,
@@ -490,29 +643,51 @@ def complete_trial(root: Path, trial: int) -> bool:
             path = raw / name
             if path.stat().st_size != expected["size"] or sha256_file(path) != expected["sha256"]:
                 return False
-        zero_fields = protocol()["summary_continuity_fields"] + ["normative_identity_payload_incomplete_count"]
+        zero_fields = protocol()["summary_continuity_fields"] + [
+            "normative_identity_payload_incomplete_count", "l2_next_l1_continuity_unknown_count",
+        ]
+        trace_rows = [json.loads(line) for line in (raw / "runtime_trace.jsonl").read_text(encoding="utf-8").splitlines()]
+        observations = [json.loads(line) for line in (raw / "cycle_observations.jsonl").read_text(encoding="utf-8").splitlines()]
+        replay = executed_action_l2_next_l1_audit(trace_rows, observations)
+        count_fields = (
+            "l2_next_l1_continuity_applicable_count",
+            "l2_next_l1_continuity_mismatch_count",
+            "l2_next_l1_continuity_not_applicable_count",
+            "l2_next_l1_continuity_unknown_count",
+            "l2_next_l1_continuity_cross_cycle_rows",
+        )
         return (summary.get("process_exit_code") == 0 and summary.get("finalization_status") == "FINALIZED"
-                and all(int(summary.get(name, -1)) == 0 for name in zero_fields))
+                and all(int(summary.get(name, -1)) == 0 for name in zero_fields)
+                and all(summary.get(name) == replay[name] for name in count_fields)
+                and summary.get("l2_next_l1_continuity_role_counts") == replay["l2_next_l1_continuity_role_counts"])
     except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError):
         return False
 
 
 def write_collection_summary(root: Path) -> dict[str, Any]:
     complete = [trial for trial in TRIALS if complete_trial(root, trial)]
-    totals = {name: 0 for name in protocol()["summary_continuity_fields"]}
+    hard_zero_fields = protocol()["summary_continuity_fields"] + [
+        "normative_identity_payload_incomplete_count", "l2_next_l1_continuity_unknown_count",
+    ]
+    telemetry_fields = [
+        "l2_next_l1_continuity_applicable_count",
+        "l2_next_l1_continuity_not_applicable_count",
+        "l2_next_l1_continuity_cross_cycle_rows",
+    ]
+    totals = {name: 0 for name in hard_zero_fields + telemetry_fields}
     cycles = traces = locks = commits = boundaries = 0
     for trial in complete:
         raw = root / "raw" / f"trial_{trial}"; summary = load_json(raw / "trial_summary.json"); trace_lock = load_json(raw / "runtime_trace_lock.json")
         cycles += int(summary["completed_cycles"]); traces += len((raw / "runtime_trace.jsonl").read_text().splitlines()); locks += int(trace_lock["record_count"])
         commits += int(summary["plant_commit_count"]); boundaries += int(summary["assurance_boundary_count"])
-        for name in totals: totals[name] += int(summary.get(name, 0))
+        for name in totals: totals[name] += int(summary[name])
     result = {
         "schema": "CERT_EXEC_IDENTITY_REPAIR_SMOKE_COLLECTION_SUMMARY_V1",
         "trials_planned": list(TRIALS), "trials_completed": complete, "completion_order": complete,
         "completed_cycles": cycles, "trace_records": traces, "trace_lock_records": locks,
         "plant_commits": commits, "boundary_cycles": boundaries, "continuity_totals": totals,
         "trace_cardinality_pass": cycles == traces == locks, "scientific_analysis_performed": False,
-        "status": "PASS_CERTIFICATION_EXECUTION_STATE_IDENTITY_REPAIR_SMOKE_V1" if complete == list(TRIALS) and cycles == traces == locks and not any(totals.values()) else "BLOCK_CERT_EXEC_IDENTITY_REPAIR_SMOKE_INTEGRITY",
+        "status": "PASS_CERTIFICATION_EXECUTION_STATE_IDENTITY_REPAIR_SMOKE_V1" if complete == list(TRIALS) and cycles == traces == locks and all(totals[name] == 0 for name in hard_zero_fields) else "BLOCK_CERT_EXEC_IDENTITY_REPAIR_SMOKE_INTEGRITY",
     }
     write_json(root / "SMOKE_REPAIR_V1_COLLECTION_SUMMARY.json", result)
     return result
@@ -581,6 +756,8 @@ def cpu_static_preflight(checkout: Path) -> dict[str, Any]:
             sha256_file(ATTEMPT3_RESULT_ROOT / name) != digest
             for name, digest in ATTEMPT3_REQUIRED_SHA256.items())):
         raise RuntimeError("ATTEMPT3_FAILED_ROOT_EVIDENCE_MUTATION")
+    replay = replay_retry4_continuity()
+    continuity_fixtures = synthetic_executed_action_continuity_regression()
     base = load_runtime_base_config(checkout)
     projected_delegate = delegate_runtime_protocol(checkout)
     if (projected_delegate["seed"] != 0
@@ -625,6 +802,8 @@ def cpu_static_preflight(checkout: Path) -> dict[str, Any]:
         "historical_v3_base_config_sha256": HISTORICAL_V3_PROTOCOL_SHA256,
         "historical_v3_base_config_mappings": ["controller", "certification", "dynamics", "deadline_profile"],
         "delegate_protocol_contract": "PASS", "child_config_consumption_regression": "PASS",
+        "retry4_executed_action_continuity_replay": replay,
+        "executed_action_continuity_fixtures": continuity_fixtures,
         "projected_v3_geometry": {"controller_radius": 0.015, "certification_margin": 0.0, "certification_effective_radius": 0.015, "rho_seg": 0.0},
         "child_authorization_regression": "PASS", "first_launch_ordering_regression": "PASS",
         "early_child_failure_persistence_regression": "PASS", "trace_cardinality_semantics_regression": "PASS",
@@ -636,6 +815,8 @@ def cpu_static_preflight(checkout: Path) -> dict[str, Any]:
     print(json.dumps(result, sort_keys=True))
     print("DELEGATE_PROTOCOL_CONTRACT_PASS")
     print("CHILD_CONFIG_CONSUMPTION_REGRESSION_PASS")
+    print("RETRY4_EXECUTED_ACTION_CONTINUITY_REPLAY_PASS")
+    print("EXECUTED_ACTION_CONTINUITY_CONTRACT_PASS")
     print("PASS_CERT_EXEC_IDENTITY_REPAIR_SMOKE_CPU_STATIC_PREFLIGHT")
     return result
 

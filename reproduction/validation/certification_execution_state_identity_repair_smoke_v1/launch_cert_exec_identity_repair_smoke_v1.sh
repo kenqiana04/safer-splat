@@ -2,9 +2,9 @@
 set -euo pipefail
 
 SESSION="cert-exec-identity-repair-smoke-v1"
-CHECKOUT="/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-smoke-delegate-protocol-projection-r5"
-ACTIVE_BRANCH="repair-cert-exec-identity-smoke-delegate-protocol-projection-r5"
-RESULT_ROOT="/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry4_20260916"
+CHECKOUT="/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-smoke-executed-action-continuity-audit-r6"
+ACTIVE_BRANCH="repair-cert-exec-identity-smoke-executed-action-continuity-audit-r6"
+RESULT_ROOT="/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry5_20260916"
 OLD_FAILED_ROOT="/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_20260916"
 OLD_LAUNCHER_LOG_SHA256="e6b627d62ce3a96cb5d975d5e0151fd0c54a93ee547ab34d90668771800f269f"
 ATTEMPT1_FAILED_ROOT="/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry1_20260916"
@@ -16,6 +16,10 @@ ATTEMPT3_FAILED_ROOT="/disk1/zlab/v3_repair_records/cert_exec_identity_repair_sm
 ATTEMPT3_LAUNCHER_LOG_SHA256="b8bfd94a3be10812bb9528baa55eb398456a22ec1a239f44c2f10d587760d0dd"
 ATTEMPT3_PREFLIGHT_SHA256="bb9473c716fab705766e2358d070f559ec23efa96c800e5469f5c2a5bebf747a"
 ATTEMPT3_TRIAL15_SUMMARY_SHA256="6ac573fc4c80debffe52c99186b89501b6479d4ea1abfc2d17f1c10cb350a806"
+ATTEMPT4_FAILED_ROOT="/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry4_20260916"
+ATTEMPT4_LAUNCHER_LOG_SHA256="a7f4b7f24822c6108cbab013ae46877bee2eda2050d249ce4141fd21a8a7b5ce"
+ATTEMPT4_TRACE_SHA256="e034aa0eaa59bf5ab99e9f4e3d0c55b9b0256c1f09f6c7ec4c451d044185e719"
+ATTEMPT4_OBSERVATIONS_SHA256="fa53c5d859d90c90ed74da9ae89f557eb2a3f5804975ed8af0a64f8cdefb9a54"
 PYTHON="/disk1/zlab/conda_envs/safer_splat_official/bin/python"
 TASK="$CHECKOUT/reproduction/validation/certification_execution_state_identity_repair_smoke_v1"
 RUNNER="$TASK/run_cert_exec_identity_repair_smoke_v1.py"
@@ -40,6 +44,11 @@ guard_static_environment() {
   [[ "$(sha256sum "$ATTEMPT3_FAILED_ROOT/launcher.log" | awk '{print $1}')" == "$ATTEMPT3_LAUNCHER_LOG_SHA256" ]] || { echo ATTEMPT3_ROOT_IDENTITY_MISMATCH >&2; exit 2; }
   [[ "$(sha256sum "$ATTEMPT3_FAILED_ROOT/raw/gpu_preflight.json" | awk '{print $1}')" == "$ATTEMPT3_PREFLIGHT_SHA256" ]] || { echo ATTEMPT3_ROOT_IDENTITY_MISMATCH >&2; exit 2; }
   [[ "$(sha256sum "$ATTEMPT3_FAILED_ROOT/raw/trial_15/trial_summary.json" | awk '{print $1}')" == "$ATTEMPT3_TRIAL15_SUMMARY_SHA256" ]] || { echo ATTEMPT3_ROOT_IDENTITY_MISMATCH >&2; exit 2; }
+  [[ -d "$ATTEMPT4_FAILED_ROOT" ]] || { echo ATTEMPT4_FAILED_ROOT_MISSING >&2; exit 2; }
+  [[ -f "$ATTEMPT4_FAILED_ROOT/launcher.log" && -f "$ATTEMPT4_FAILED_ROOT/raw/trial_15/runtime_trace.jsonl" && -f "$ATTEMPT4_FAILED_ROOT/raw/trial_15/cycle_observations.jsonl" ]] || { echo ATTEMPT4_EVIDENCE_FILE_MISSING >&2; exit 2; }
+  [[ "$(sha256sum "$ATTEMPT4_FAILED_ROOT/launcher.log" | awk '{print $1}')" == "$ATTEMPT4_LAUNCHER_LOG_SHA256" ]] || { echo ATTEMPT4_ROOT_IDENTITY_MISMATCH >&2; exit 2; }
+  [[ "$(sha256sum "$ATTEMPT4_FAILED_ROOT/raw/trial_15/runtime_trace.jsonl" | awk '{print $1}')" == "$ATTEMPT4_TRACE_SHA256" ]] || { echo ATTEMPT4_ROOT_IDENTITY_MISMATCH >&2; exit 2; }
+  [[ "$(sha256sum "$ATTEMPT4_FAILED_ROOT/raw/trial_15/cycle_observations.jsonl" | awk '{print $1}')" == "$ATTEMPT4_OBSERVATIONS_SHA256" ]] || { echo ATTEMPT4_ROOT_IDENTITY_MISMATCH >&2; exit 2; }
   [[ ! -e "$RESULT_ROOT" ]] || { echo RESULT_ROOT_ABSENT_CHECK_FAILED >&2; exit 2; }
   if tmux has-session -t "$SESSION" 2>/dev/null; then
     echo TMUX_SESSION_ALREADY_EXISTS >&2
