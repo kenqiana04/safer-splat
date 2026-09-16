@@ -8,8 +8,8 @@ Freeze the post-repair engineering smoke protocol for certification–execution 
 - Repair specification: `77f8e52c2a2252fe651e4a13e3e30ada25168eb7`
 - Runtime/scientific authority: `50cadfe614da70ce0345c4b1789c787dc529287e`
 - Canonical transition: `canonical-transition:sha256:188eae47698febcd0d5492c1c0df2ea456a2fce23a83a616e28089f0e2f46d5d`
-- Protocol freeze commit: `PENDING_PROTOCOL_FREEZE_COMMIT`
-- Execution lock commit: `PENDING_EXECUTION_LOCK_COMMIT`
+- Protocol freeze commit: `fc9757eb5f3fcfcc522ce67a443ff00bd13f00e0`
+- Execution lock commit: the follow-up commit that adds the final `SMOKE_REPAIR_V1_EXECUTION_LOCK.json` identity; the protocol anchor is not amended.
 
 ## Frozen future smoke
 

@@ -112,7 +112,7 @@ def verify_static_identity(checkout: Path, *, require_committed_lock: bool) -> d
     if changed:
         raise RuntimeError("PROTECTED_UPSTREAM_DIFF_NONZERO:" + changed.replace("\n", ","))
     status = git(checkout, "status", "--porcelain", "--untracked-files=all")
-    outside = [line for line in status.splitlines() if not line[3:].replace("\\", "/").startswith(ALLOWED_TASK_REL + "/")]
+    outside = [line for line in status.splitlines() if (ALLOWED_TASK_REL + "/") not in line.replace("\\", "/")]
     if outside:
         raise RuntimeError("OUT_OF_SCOPE_WORKTREE_CHANGE:" + outside[0])
     lock = load_json(LOCK_PATH)
