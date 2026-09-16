@@ -24,15 +24,23 @@ from typing import Any, Iterator
 
 TASK_DIR = Path(__file__).resolve().parent
 PROTOCOL_PATH = TASK_DIR / "SMOKE_REPAIR_V1_PROTOCOL.json"
-LOCK_PATH = TASK_DIR / "SMOKE_REPAIR_V1_EXECUTION_LOCK.json"
+LOCK_PATH = TASK_DIR / "SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY1.json"
+ORIGINAL_LOCK_PATH = TASK_DIR / "SMOKE_REPAIR_V1_EXECUTION_LOCK.json"
 CHECKOUT_DEFAULT = Path("/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-repair-smoke-protocol-v1")
-RESULT_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_20260916")
+OLD_RESULT_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_20260916")
+RESULT_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry1_20260916")
+GPU_PREFLIGHT_DIAGNOSTIC_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_preflight_repair_v1_20260916")
 IMPLEMENTATION_HEAD = "546598a70e12fa99f9153f1927d0542ca27862b4"
-BRANCH = "freeze-cert-exec-identity-repair-smoke-protocol-v1"
+BRANCH = "repair-cert-exec-identity-smoke-preflight-config-v1"
 TRIALS = (15, 45, 75)
 AUTHORIZATION_NAME = "SMOKE_REPAIR_V1_INTERNAL_CHILD_AUTHORIZATION.json"
 CHILD_TOKEN_ENV = "SAFER_SPLAT_CERT_EXEC_SMOKE_CHILD_TOKEN"
 DELEGATE_REL = "reproduction/smoke/active_runtime_smoke_v3/run_active_runtime_smoke_v3.py"
+HISTORICAL_V3_PROTOCOL_REL = "reproduction/smoke/active_runtime_smoke_v3/SMOKE_V3_PROTOCOL.json"
+HISTORICAL_V3_PROTOCOL_SHA256 = "c1dc8b3f17850267f1cb3247795bc193a8944aa59349de5019efdf4ae72b1691"
+ORIGINAL_PROTOCOL_SHA256 = "80b4c15413bdfa9b03b106a725af5cd97b17a51b9e81d03cfe79a7300a8077e7"
+ORIGINAL_LOCK_SHA256 = "91de3e381cd9c3ddc9c5a7398ae9a170dd7867e08359611fc1c9595d8fd9342a"
+OLD_LAUNCHER_LOG_SHA256 = "e6b627d62ce3a96cb5d975d5e0151fd0c54a93ee547ab34d90668771800f269f"
 ALLOWED_TASK_REL = "reproduction/validation/certification_execution_state_identity_repair_smoke_v1"
 PROTECTED_PATHS = (
     "cbf", "dynamics", "splat", "run.py", "reproduction/runtime",
@@ -74,6 +82,25 @@ def git(checkout: Path, *args: str, check: bool = True) -> str:
 
 def protocol() -> dict[str, Any]:
     return load_json(PROTOCOL_PATH)
+
+
+def load_runtime_base_config(checkout: Path) -> dict[str, Any]:
+    """Load the protected V3 runtime base separately from the repair protocol."""
+    path = checkout / HISTORICAL_V3_PROTOCOL_REL
+    if sha256_file(path) != HISTORICAL_V3_PROTOCOL_SHA256:
+        raise RuntimeError("HISTORICAL_V3_BASE_CONFIG_SHA_MISMATCH")
+    base = load_json(path)
+    for key in ("controller", "certification", "dynamics", "deadline_profile"):
+        if not isinstance(base.get(key), dict):
+            raise RuntimeError("HISTORICAL_V3_BASE_CONFIG_%s_MAPPING_REQUIRED" % key.upper())
+    frozen = protocol()
+    if base["map_identity"] != frozen["map"]["identity"]:
+        raise RuntimeError("HISTORICAL_V3_BASE_CONFIG_MAP_IDENTITY_MISMATCH")
+    if base["controller"]["controller_radius"] != frozen["geometry"]["hard_radius_q"]:
+        raise RuntimeError("HISTORICAL_V3_BASE_CONFIG_CONTROLLER_GEOMETRY_MISMATCH")
+    if base["certification"]["certification_margin"] != frozen["geometry"]["runtime_margin_q"] or base["certification"]["rho_seg"] != frozen["geometry"]["rho_seg_q"]:
+        raise RuntimeError("HISTORICAL_V3_BASE_CONFIG_CERTIFICATION_GEOMETRY_MISMATCH")
+    return base
 
 
 def _tree_sha256(root: Path) -> str:
@@ -256,6 +283,7 @@ def _load_delegate(checkout: Path) -> Any:
     module.UPSTREAM = IMPLEMENTATION_HEAD
     module.FIXED_TRIALS = TRIALS
     module.read_protocol = protocol
+    runtime_base_config = load_runtime_base_config(checkout)
 
     def verify_source_and_map(checkout_arg: Path, frozen: dict[str, Any], require_execution_lock: bool = True):
         verify_static_identity(checkout_arg, require_committed_lock=require_execution_lock)
@@ -266,7 +294,7 @@ def _load_delegate(checkout: Path) -> Any:
         if str(checkout_arg) not in sys.path:
             sys.path.insert(0, str(checkout_arg))
         from reproduction.runtime.certification_execution_state_identity_repair_v1 import build_repaired_v3_stack
-        stack = build_repaired_v3_stack(checkout_arg, output_dir, trial_id, frozen, map_identity)
+        stack = build_repaired_v3_stack(checkout_arg, output_dir, trial_id, runtime_base_config, map_identity)
         repair = stack["repaired_stack_wiring_audit"]
         stack["v3_wiring_audit"] = {
             "status": repair["status"], "hard_runtime_radius_q": repair["hard_radius_q"],
@@ -371,7 +399,25 @@ def run_one(checkout: Path, root: Path, trial: int) -> int:
 def gpu_preflight(checkout: Path, root: Path) -> int:
     verify_static_identity(checkout, require_committed_lock=True)
     delegate = _load_delegate(checkout)
-    code = int(delegate.run_preflight(checkout, root))
+    try:
+        code = int(delegate.run_preflight(checkout, root))
+    except Exception as exc:
+        import traceback
+        failure = {
+            "schema": "CERT_EXEC_IDENTITY_REPAIR_SMOKE_GPU_PREFLIGHT_FAILURE_V1",
+            "stage": "GPU_PREFLIGHT", "status": "FAIL",
+            "exception_type": type(exc).__name__, "exception_message": str(exc),
+            "traceback_tail": traceback.format_exc().splitlines()[-12:],
+            "traceback_sha256": hashlib.sha256(traceback.format_exc().encode()).hexdigest(),
+            "branch": git(checkout, "branch", "--show-current"), "source_head": git(checkout, "rev-parse", "HEAD"),
+            "protocol_sha256": sha256_file(PROTOCOL_PATH), "execution_lock_sha256": sha256_file(LOCK_PATH),
+            "result_root": str(root), "runtime_cycles_executed": 0,
+            "smoke_trial_execution_count": 0, "PlantCommit_count": 0,
+            "controller_qp_trial_count": 0, "scientific_analysis_performed": False,
+            "gpu_release_status": "NO_RUNTIME_PROCESS_STARTED",
+        }
+        write_json(root / "gpu_preflight_failure.json", failure)
+        return 2
     path = root / "raw/gpu_preflight.json"; data = load_json(path)
     data.update({"schema": "CERT_EXEC_IDENTITY_REPAIR_SMOKE_GPU_PREFLIGHT_V1", "runtime_cycles_executed": 0, "plant_commit_count": 0, "implementation_head": IMPLEMENTATION_HEAD})
     write_json(path, data)
@@ -467,11 +513,20 @@ def run_batch(checkout: Path, root: Path) -> int:
 
 
 def cpu_static_preflight(checkout: Path) -> dict[str, Any]:
-    if RESULT_ROOT.exists():
+    if RESULT_ROOT.exists() or GPU_PREFLIGHT_DIAGNOSTIC_ROOT.exists():
         raise RuntimeError("FIRST_LAUNCH_RESULT_ROOT_ALREADY_EXISTS")
     if str(checkout) not in sys.path:
         sys.path.insert(0, str(checkout))
     identity = verify_static_identity(checkout, require_committed_lock=False)
+    if sha256_file(PROTOCOL_PATH) != ORIGINAL_PROTOCOL_SHA256 or sha256_file(ORIGINAL_LOCK_PATH) != ORIGINAL_LOCK_SHA256:
+        raise RuntimeError("ORIGINAL_PROTOCOL_OR_LOCK_MUTATION")
+    if not OLD_RESULT_ROOT.is_dir() or sha256_file(OLD_RESULT_ROOT / "launcher.log") != OLD_LAUNCHER_LOG_SHA256:
+        raise RuntimeError("OLD_FAILED_ROOT_EVIDENCE_MUTATION")
+    base = load_runtime_base_config(checkout)
+    from reproduction.runtime.v3_hard_radius_runtime_wiring_v1.stack_config import project_v3_runtime_config
+    projected = project_v3_runtime_config(base)
+    if projected["controller"]["controller_radius"] != 0.015 or projected["certification"]["certification_margin"] != 0.0 or projected["certification"]["certification_effective_radius"] != 0.015 or projected["certification"]["rho_seg"] != 0.0:
+        raise RuntimeError("PROJECTED_V3_GEOMETRY_MISMATCH")
     frozen = protocol()
     if frozen["cohort"]["trial_ids"] != list(TRIALS) or frozen["cohort"]["trial_order"] != list(TRIALS):
         raise RuntimeError("FROZEN_SMOKE_COHORT_MISMATCH")
@@ -503,6 +558,9 @@ def cpu_static_preflight(checkout: Path) -> dict[str, Any]:
     result = {
         "schema": "CERT_EXEC_IDENTITY_REPAIR_SMOKE_CPU_STATIC_PREFLIGHT_V1", "status": "PASS",
         "identity": identity, "map_artifacts": maps, "synthetic_mismatch_guard": mismatch,
+        "historical_v3_base_config_sha256": HISTORICAL_V3_PROTOCOL_SHA256,
+        "historical_v3_base_config_mappings": ["controller", "certification", "dynamics", "deadline_profile"],
+        "projected_v3_geometry": {"controller_radius": 0.015, "certification_margin": 0.0, "certification_effective_radius": 0.015, "rho_seg": 0.0},
         "child_authorization_regression": "PASS", "first_launch_ordering_regression": "PASS",
         "early_child_failure_persistence_regression": "PASS", "trace_cardinality_semantics_regression": "PASS",
         "summary_schema_continuity_fields_complete": True, "gpu_preflight_count": 0,
@@ -526,7 +584,7 @@ def main() -> int:
     args = parser.parse_args(); checkout = args.checkout.resolve(strict=True); output = args.output_dir.resolve()
     if args.cpu_static_preflight:
         cpu_static_preflight(checkout); return 0
-    if output != RESULT_ROOT or not output.is_dir():
+    if output not in (RESULT_ROOT, GPU_PREFLIGHT_DIAGNOSTIC_ROOT) or not output.is_dir():
         raise RuntimeError("PARENT_OWNED_FROZEN_RESULT_ROOT_REQUIRED")
     if args.gpu_preflight:
         return gpu_preflight(checkout, output)
