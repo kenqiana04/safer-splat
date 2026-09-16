@@ -24,16 +24,19 @@ from typing import Any, Iterator
 
 TASK_DIR = Path(__file__).resolve().parent
 PROTOCOL_PATH = TASK_DIR / "SMOKE_REPAIR_V1_PROTOCOL.json"
-LOCK_PATH = TASK_DIR / "SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY2_R3.json"
+LOCK_PATH = TASK_DIR / "SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY3_R4.json"
 ORIGINAL_LOCK_PATH = TASK_DIR / "SMOKE_REPAIR_V1_EXECUTION_LOCK.json"
-CHECKOUT_DEFAULT = Path("/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-smoke-lock-pointer-r3")
+CHECKOUT_DEFAULT = Path("/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-smoke-retry3-rollover-r4")
 OLD_RESULT_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_20260916")
 ATTEMPT1_RESULT_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry1_20260916")
 ATTEMPT1_LAUNCHER_LOG_SHA256 = "a1a647cd52426ebce38459c3e87522864266374842b824fb2d7075d10804910f"
-RESULT_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry2_20260916")
+ATTEMPT2_RESULT_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry2_20260916")
+ATTEMPT2_LAUNCHER_LOG_SHA256 = "b82fc2409280b8c545914dc8664ddf8ea9291f213831f277ac7ffa1385439762"
+ATTEMPT2_FAILURE_JSON_SHA256 = "16f2ebd7d40aa93d118b03311903749889509c27516825fa2dda267706e1aa79"
+RESULT_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry3_20260916")
 GPU_PREFLIGHT_DIAGNOSTIC_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_preflight_repair_v1_20260916")
 IMPLEMENTATION_HEAD = "546598a70e12fa99f9153f1927d0542ca27862b4"
-BRANCH = "repair-cert-exec-identity-smoke-lock-pointer-r3"
+BRANCH = "repair-cert-exec-identity-smoke-retry3-rollover-r4"
 TRIALS = (15, 45, 75)
 AUTHORIZATION_NAME = "SMOKE_REPAIR_V1_INTERNAL_CHILD_AUTHORIZATION.json"
 CHILD_TOKEN_ENV = "SAFER_SPLAT_CERT_EXEC_SMOKE_CHILD_TOKEN"
@@ -546,6 +549,10 @@ def cpu_static_preflight(checkout: Path) -> dict[str, Any]:
         raise RuntimeError("OLD_FAILED_ROOT_EVIDENCE_MUTATION")
     if not ATTEMPT1_RESULT_ROOT.is_dir() or sha256_file(ATTEMPT1_RESULT_ROOT / "launcher.log") != ATTEMPT1_LAUNCHER_LOG_SHA256:
         raise RuntimeError("ATTEMPT1_FAILED_ROOT_EVIDENCE_MUTATION")
+    if (not ATTEMPT2_RESULT_ROOT.is_dir()
+            or sha256_file(ATTEMPT2_RESULT_ROOT / "launcher.log") != ATTEMPT2_LAUNCHER_LOG_SHA256
+            or sha256_file(ATTEMPT2_RESULT_ROOT / "gpu_preflight_failure.json") != ATTEMPT2_FAILURE_JSON_SHA256):
+        raise RuntimeError("ATTEMPT2_FAILED_ROOT_EVIDENCE_MUTATION")
     base = load_runtime_base_config(checkout)
     from reproduction.runtime.v3_hard_radius_runtime_wiring_v1.stack_config import project_v3_runtime_config
     projected = project_v3_runtime_config(base)

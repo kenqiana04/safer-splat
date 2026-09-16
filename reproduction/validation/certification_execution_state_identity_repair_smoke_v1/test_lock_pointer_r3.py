@@ -28,16 +28,17 @@ def expect_error(fn, token: str) -> None:
 
 
 def main() -> int:
-    validator = load("r3_validator", HERE / "validate_cert_exec_identity_repair_smoke_v1.py")
-    runner = load("r3_runner", HERE / "run_cert_exec_identity_repair_smoke_v1.py")
+    validator = load("r4_validator", HERE / "validate_cert_exec_identity_repair_smoke_v1.py")
+    runner = load("r4_runner", HERE / "run_cert_exec_identity_repair_smoke_v1.py")
     source = validator.RUNNER.read_text(encoding="utf-8")
-    assert validator.active_lock_basename(source) == "SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY2_R3.json"
+    assert validator.active_lock_basename(source) == "SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY3_R4.json"
     assert validator.preflight_identity_is_caught(source)
-    for obsolete in ("SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY1.json", "SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY1_R2.json"):
-        simulated = source.replace("SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY2_R3.json", obsolete, 1)
-        assert validator.active_lock_basename(simulated) != validator.R3_LOCK.name
+    for obsolete in ("SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY1.json", "SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY1_R2.json", "SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY2_R3.json"):
+        simulated = source.replace("SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY3_R4.json", obsolete, 1)
+        assert validator.active_lock_basename(simulated) != validator.R4_LOCK.name
     validator.validate_old_root()
     validator.validate_old_root(validator.ATTEMPT1_ROOT, validator.ATTEMPT1_ROOT_MANIFEST)
+    validator.validate_old_root(validator.ATTEMPT2_ROOT, validator.ATTEMPT2_ROOT_MANIFEST)
     validator.validate_retry_root_absent()
     with tempfile.TemporaryDirectory() as temporary:
         root = Path(temporary)
@@ -47,9 +48,9 @@ def main() -> int:
         validator.validate_old_root(old)
         (old / "launcher.log").write_bytes(b"changed")
         expect_error(lambda: validator.validate_old_root(old), "OLD_FAILED_ROOT_IDENTITY_MISMATCH")
-        retry = root / "retry2"
+        retry = root / "retry3"
         retry.mkdir()
-        expect_error(lambda: validator.validate_retry_root_absent(retry), "RETRY2_ROOT_MUST_BE_ABSENT")
+        expect_error(lambda: validator.validate_retry_root_absent(retry), "RETRY3_ROOT_MUST_BE_ABSENT")
         original_verify = runner.verify_static_identity
         original_delegate = runner._load_delegate
         original_lock = runner.LOCK_PATH
@@ -74,7 +75,7 @@ def main() -> int:
         assert failure["execution_lock_sha_unavailable_reason"] == "FileNotFoundError"
         assert failure["smoke_trial_execution_count"] == failure["runtime_cycles_executed"] == failure["PlantCommit_count"] == failure["controller_qp_trial_count"] == 0
         assert failure["scientific_analysis_performed"] is False
-    print("PASS_CERT_EXEC_IDENTITY_SMOKE_LOCK_POINTER_R3_CPU_FIXTURES")
+    print("PASS_CERT_EXEC_IDENTITY_SMOKE_RETRY3_ROLLOVER_R4_CPU_FIXTURES")
     return 0
 
 
