@@ -20,7 +20,10 @@ guard_static_environment() {
   [[ -f "$OLD_FAILED_ROOT/launcher.log" ]] || { echo OLD_FAILED_ROOT_LAUNCHER_LOG_MISSING >&2; exit 2; }
   [[ "$(sha256sum "$OLD_FAILED_ROOT/launcher.log" | awk '{print $1}')" == "$OLD_LAUNCHER_LOG_SHA256" ]] || { echo OLD_FAILED_ROOT_IDENTITY_MISMATCH >&2; exit 2; }
   [[ ! -e "$RESULT_ROOT" ]] || { echo RESULT_ROOT_ABSENT_CHECK_FAILED >&2; exit 2; }
-  tmux has-session -t "$SESSION" 2>/dev/null && { echo TMUX_SESSION_ALREADY_EXISTS >&2; exit 2; }
+  if tmux has-session -t "$SESSION" 2>/dev/null; then
+    echo TMUX_SESSION_ALREADY_EXISTS >&2
+    exit 2
+  fi
 }
 
 if [[ "${1:-}" == "--prelaunch-check-only" ]]; then
