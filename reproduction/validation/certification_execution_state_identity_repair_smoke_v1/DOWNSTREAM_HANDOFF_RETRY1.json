@@ -1,0 +1,15 @@
+{
+  "schema": "CERT_EXEC_IDENTITY_SMOKE_PREFLIGHT_CONFIG_REPAIR_DOWNSTREAM_HANDOFF_RETRY1_V1",
+  "status": "READY_FOR_MANUAL_FROZEN_RETRY1_SMOKE",
+  "branch": "repair-cert-exec-identity-smoke-preflight-config-v1",
+  "repair_head": "b67149467ffb567579f198bc9d02c4c0669f17fc",
+  "historical_v3_base_config_sha256": "c1dc8b3f17850267f1cb3247795bc193a8944aa59349de5019efdf4ae72b1691",
+  "retry_execution_lock": "reproduction/validation/certification_execution_state_identity_repair_smoke_v1/SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY1.json",
+  "gpu_preflight_diagnostic_root": "/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_preflight_repair_v1_20260916",
+  "gpu_preflight_status": "PASS",
+  "runtime_cycles_executed": 0,
+  "plant_commit_count": 0,
+  "smoke_trial_execution_count": 0,
+  "retry_result_root_absent": true,
+  "only_next_task": "MANUALLY_START_FROZEN_CERT_EXEC_IDENTITY_REPAIR_SMOKE_RETRY1"
+}
