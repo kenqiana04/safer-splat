@@ -73,7 +73,12 @@ def run(checkout: Path, asset_checkout: Path, result_root: Path) -> dict[str, An
     protocol_path = checkout / "reproduction/smoke/active_runtime_smoke_v3/SMOKE_V3_PROTOCOL.json"
     protocol = json.loads(protocol_path.read_text(encoding="utf-8"))
     map_identity = str(protocol["map_identity"])
-    stack = build_repaired_v3_stack(asset_checkout, result_root / "stack_scratch", 22, protocol, map_identity)
+    previous_cwd = Path.cwd()
+    try:
+        os.chdir(asset_checkout)
+        stack = build_repaired_v3_stack(asset_checkout, result_root / "stack_scratch", 22, protocol, map_identity)
+    finally:
+        os.chdir(previous_cwd)
     canonical = stack["canonical_transition"]
     l1 = unwrap(stack["coordinator"].l1_runtime)
     l2 = unwrap(stack["coordinator"].l2_runtime)
