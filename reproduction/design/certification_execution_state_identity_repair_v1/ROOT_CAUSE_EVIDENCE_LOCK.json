@@ -1,0 +1,67 @@
+{
+  "schema": "CERTIFICATION_EXECUTION_STATE_IDENTITY_ROOT_CAUSE_EVIDENCE_LOCK_V1",
+  "runtime_authority_branch": "refreeze-active-runtime-v3-paired-execution-harness-after-trace-repair-v1",
+  "runtime_authority_head": "50cadfe614da70ce0345c4b1789c787dc529287e",
+  "diagnosis_is_post_hoc": true,
+  "scientific_result_mutation_authority": false,
+  "runtime_implementation_authority": false,
+  "frozen_scientific_result": "FAIL_V3_HARD_SAFETY_GATE",
+  "frozen_paired_trials": 85,
+  "active_hard_violation_trial_ids": [22, 28, 57, 59],
+  "reference_hard_violation_count": 0,
+  "progress_noninferiority": {
+    "status": "PASS",
+    "mean_difference": 0.1828291222975633,
+    "confidence_interval_lower": 0.12993732817874704,
+    "noninferiority_margin": -0.02
+  },
+  "geometry": {
+    "hard_radius_q": 0.015,
+    "runtime_margin_q": 0.0,
+    "rho_seg_q": 0.0,
+    "historical_diagnostic_radius_q": 0.025,
+    "historical_diagnostic_runtime_authority": false
+  },
+  "diagnostic_evidence": {
+    "near_zero_commit": "6a134d5",
+    "near_zero_result_lock_sha256": "4811693c02005af44b81a9405090ec49e31dfc490ca54ad596bcd7973c1736f7",
+    "semantic_gap_commit": "445769f",
+    "semantic_gap_effective_r3": "73aa1de",
+    "semantic_gap_result_lock_sha256": "cb3d45a536d5f8407e5647b8514535e55584ff879f24da23da24873d748f61ea",
+    "continuity_protocol_commit": "026ed9e",
+    "continuity_revision_commit": "bada56a",
+    "continuity_evidence_head": "1f1aff2",
+    "continuity_result_lock_sha256": "af521fed9153f93490495a3b52add88c039926c6b1d7a50e56f70f101b6e8b78"
+  },
+  "paired_evidence_sha256": {
+    "integrity": "9589d4ab14a27916b6b233ca88848821fa62374220fd0342ccef702fb7e3e8c7",
+    "analysis_summary": "f98070c1152aa2058f23050d100e9b80bbfc84ca751de9dc553243e41b12e298",
+    "per_pair": "ea3b4848e5f3bf2ec5c26ce59006425cb5ec1ab05245ac9bbe915de17eb250a4"
+  },
+  "relevant_runtime_source_sha256": {
+    "reproduction/runtime/active_runtime_assurance_v2/plant_commit.py": "b9d779fed66a9e034ddd3c7e5c977c7a4422b7bc11c57acc4412b47558d9830a",
+    "reproduction/runtime/active_runtime_assurance_v2/runtime_types.py": "6186d7bc8b05dfc60eb2853e1dc6216d1cc314f3512d3abf792f38118630a646",
+    "reproduction/runtime/active_runtime_assurance_v2/l1_runtime.py": "8692637677612da4f6e383ab29872aed24d0c409d5f3b941e817b226f13cc009",
+    "reproduction/runtime/active_runtime_assurance_v2/l2_runtime.py": "e76e15eae5633efc7e0ee749c3612987cad52b56433fab5b67d52c2ad9f0f72f",
+    "reproduction/runtime/active_runtime_assurance_v2/l3_runtime.py": "cdb98bb10794d2663be24761864436d4407ca4238d9a5dd190dd5ce90ba50744",
+    "reproduction/runtime/active_runtime_assurance_v2/start_admission.py": "6d75ede4fe4c06dd4ed865e3b5110e2562ec666f1580ded9a7a706f3ef299d15",
+    "reproduction/runtime/active_runtime_assurance_v2/backup_token_store.py": "a65b879c2c42e3a68f5bdb57a43258fde80621eb4e625eee7db76cdc3066aee2",
+    "reproduction/runtime/active_runtime_assurance_v2/terminal_runtime.py": "b972b15d1ad33bbd3e0ae3bd4786da7483dc5d61707fbd7ce1901d3c3f79ec7f",
+    "reproduction/runtime/active_runtime_assurance_v2/trace_writer.py": "e4e2c4607cf77ce2b959b69bf8fa3a014778a78d0cf410b1de0fb5a806a988b7",
+    "reproduction/runtime/v3_hard_radius_runtime_wiring_v1/stack_factory.py": "91bd08f6040c33eee9ea38e52afcb10f47fdf08dbb9de9cb14f29fcfb3722295",
+    "reproduction/runtime/v3_hard_radius_runtime_wiring_v1/stack_config.py": "5be24ec08bcd0d1e063299e152ad0d843cfc386b91067e251284c008779af5fb",
+    "reproduction/smoke/active_runtime_smoke_v2/run_active_runtime_smoke_v2.py": "56ba2b40588845ed14349ab49a09f8cba081bf1c897b44f75f2fac737df6923d",
+    "dynamics/systems.py": "57dc54083ee9076fdda2c3dae6e71ec45e97725e87833581a70625a63940f592"
+  },
+  "closed_root_cause": "COMMON_FLOAT32_REALIZATION_IDENTITY_GAP",
+  "closed_findings": {
+    "all_four_predecessors_primary_navigation": true,
+    "predecessor_l2_route_implied_or_reconstructed_pass": true,
+    "next_realized_immediate_l1_fail": true,
+    "state_chain_bitwise_pass": true,
+    "plant_reconstruction_steps_bitwise": 8,
+    "observed_endpoint_delta": "one IEEE-754 binary32 ULP",
+    "certificate_authority_gap": false,
+    "backup_gap": false
+  }
+}

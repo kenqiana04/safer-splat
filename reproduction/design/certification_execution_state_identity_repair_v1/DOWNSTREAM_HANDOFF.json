@@ -1,0 +1,16 @@
+{
+  "schema": "CERTIFICATION_EXECUTION_STATE_IDENTITY_REPAIR_DOWNSTREAM_HANDOFF_V1",
+  "status": "READY_FOR_IMPLEMENTATION_IF_SPEC_VALIDATES",
+  "implementation_base_branch": "refreeze-active-runtime-v3-paired-execution-harness-after-trace-repair-v1",
+  "implementation_base_head": "50cadfe614da70ce0345c4b1789c787dc529287e",
+  "diagnostic_branch_as_implementation_base_allowed": false,
+  "root_cause": "COMMON_FLOAT32_REALIZATION_IDENTITY_GAP",
+  "frozen_result": "FAIL_V3_HARD_SAFETY_GATE",
+  "canonical_transition_required": true,
+  "bitwise_continuity_required": true,
+  "geometry_change_authorized": false,
+  "policy_change_authorized": false,
+  "reference_reuse_authorized": false,
+  "gpu_authorized": false,
+  "only_next_task": "IMPLEMENT_CERTIFICATION_EXECUTION_STATE_IDENTITY_REPAIR_V1"
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "CERTIFICATION_EXECUTION_STATE_IDENTITY_REPAIR_SPECIFICATION_V1",
+  "status": "FROZEN_SPECIFICATION_ONLY",
+  "authority_base": {
+    "branch": "refreeze-active-runtime-v3-paired-execution-harness-after-trace-repair-v1",
+    "head": "50cadfe614da70ce0345c4b1789c787dc529287e"
+  },
+  "root_cause": "COMMON_FLOAT32_REALIZATION_IDENTITY_GAP",
+  "canonical_transition": {
+    "name": "T_exec",
+    "pure": true,
+    "deterministic_under_locked_backend": true,
+    "side_effects": false,
+    "must_match_actual_plant_bitwise": true,
+    "identity_fields": ["operation_graph", "dtype", "device_backend", "dynamics", "dt_timebase", "serialization"]
+  },
+  "l1": {
+    "primitive": "T_pos_exec",
+    "candidate_independent": true,
+    "action_independence_requires_bitwise_proof": true
+  },
+  "l2": {
+    "construction": "SEQUENTIAL_CANONICAL_TRANSITIONS",
+    "host_binary64_closed_form_forbidden": true,
+    "p_k1": "position(T_exec(x_k,u_k,dt))",
+    "p_k2": "position(T_exec(T_exec(x_k,u_k,dt),u_position_irrelevant,dt))"
+  },
+  "continuity_invariant": "CERTIFICATION_EXECUTION_CONTINUITY_INVARIANT_V1",
+  "typed_identity_statuses": ["CERT_EXEC_STATE_IDENTITY_MATCH", "CERT_EXEC_STATE_IDENTITY_MISMATCH"],
+  "mismatch_semantics": {
+    "pass_allowed": false,
+    "commit_authority_allowed": false,
+    "silent_repair_allowed": false,
+    "result": "TYPED_FAIL_CLOSED_UNKNOWN",
+    "routing_owner": "EXISTING_SUPERVISOR"
+  },
+  "frozen_geometry": {
+    "hard_radius_q": 0.015,
+    "runtime_margin_q": 0.0,
+    "rho_seg_q": 0.0,
+    "historical_diagnostic_radius_q": 0.025,
+    "historical_diagnostic_runtime_authority": false
+  },
+  "frozen_scientific_result": "FAIL_V3_HARD_SAFETY_GATE",
+  "archived_offline_trials": [22, 28, 57, 59],
+  "forbidden": [
+    "RUNTIME_IMPLEMENTATION",
+    "GPU_EXECUTION",
+    "NEW_TRIALS",
+    "EXPERIMENT_OR_ANALYZER_RERUN",
+    "RADIUS_MARGIN_RHO_OR_EPSILON_CHANGE",
+    "CONTROLLER_OR_POLICY_CHANGE",
+    "RETROACTIVE_RESULT_REINTERPRETATION"
+  ],
+  "execution_counts": {
+    "runtime_implementation": 0,
+    "gpu": 0,
+    "trials": 0,
+    "experiments": 0,
+    "analyzer_runs": 0
+  },
+  "proof_obligations": ["PO1", "PO2", "PO3", "PO4", "PO5", "PO6", "PO7", "PO8", "PO9", "PO10"],
+  "only_next_task": "IMPLEMENT_CERTIFICATION_EXECUTION_STATE_IDENTITY_REPAIR_V1"
+}
