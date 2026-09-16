@@ -31,7 +31,7 @@ OLD_RESULT_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_
 RESULT_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry1_20260916")
 GPU_PREFLIGHT_DIAGNOSTIC_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_preflight_repair_v1_20260916")
 IMPLEMENTATION_HEAD = "546598a70e12fa99f9153f1927d0542ca27862b4"
-BRANCH = "repair-cert-exec-identity-smoke-preflight-config-v1"
+BRANCH = "repair-cert-exec-identity-smoke-launcher-guards-r2"
 TRIALS = (15, 45, 75)
 AUTHORIZATION_NAME = "SMOKE_REPAIR_V1_INTERNAL_CHILD_AUTHORIZATION.json"
 CHILD_TOKEN_ENV = "SAFER_SPLAT_CERT_EXEC_SMOKE_CHILD_TOKEN"
@@ -513,8 +513,19 @@ def run_batch(checkout: Path, root: Path) -> int:
 
 
 def cpu_static_preflight(checkout: Path) -> dict[str, Any]:
-    if RESULT_ROOT.exists() or GPU_PREFLIGHT_DIAGNOSTIC_ROOT.exists():
+    if RESULT_ROOT.exists():
         raise RuntimeError("FIRST_LAUNCH_RESULT_ROOT_ALREADY_EXISTS")
+    if GPU_PREFLIGHT_DIAGNOSTIC_ROOT.exists():
+        result = GPU_PREFLIGHT_DIAGNOSTIC_ROOT / "raw" / "gpu_preflight.json"
+        try:
+            diagnostic = load_json(result)
+            valid = (diagnostic.get("status") == "PASS"
+                     and int(diagnostic.get("runtime_cycles_executed", -1)) == 0
+                     and int(diagnostic.get("plant_commit_count", -1)) == 0)
+        except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError):
+            valid = False
+        if not valid:
+            raise RuntimeError("GPU_PREFLIGHT_DIAGNOSTIC_ROOT_INVALID")
     if str(checkout) not in sys.path:
         sys.path.insert(0, str(checkout))
     identity = verify_static_identity(checkout, require_committed_lock=False)
