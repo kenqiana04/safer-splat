@@ -1,0 +1,23 @@
+{
+  "schema": "CERTIFICATION_EXECUTION_STATE_IDENTITY_REPAIR_VALIDATION_CONTRACT_V1",
+  "runtime_authority_sha": "50cadfe614da70ce0345c4b1789c787dc529287e",
+  "spec_authority_sha": "77f8e52c2a2252fe651e4a13e3e30ada25168eb7",
+  "repair_spec_sha256": "5a0365c0d55376406fdd5b9181ef1b551ec29f30a5a96c41f96038e2d7dd0bc4",
+  "root_cause_lock_sha256": "bc4b790ea7a893725249c5ca1e4a097379c88d431a97ec5a2469a19fcb857186",
+  "archived_trials": [22, 28, 57, 59],
+  "predecessor_cycles": {"22": 409, "28": 441, "57": 391, "59": 344},
+  "canonical_dtype": "IEEE754_BINARY32_TORCH_FLOAT32",
+  "canonical_op_order": "x + double_integrator_dynamics(x,u) * float(dt)",
+  "continuity_invariant": "CERTIFICATION_EXECUTION_CONTINUITY_INVARIANT_V1",
+  "old_segments_required_to_pass": false,
+  "frozen_scientific_result": "FAIL_V3_HARD_SAFETY_GATE",
+  "hard_radius_q": 0.015,
+  "runtime_margin_q": 0.0,
+  "rho_seg_q": 0.0,
+  "historical_diagnostic_radius_q": 0.025,
+  "historical_diagnostic_runtime_authority": false,
+  "active_rollout_authorized": false,
+  "controller_qp_authorized": false,
+  "plant_commit_authorized": false,
+  "maximum_valid_gpu_replay_processes": 1
+}
