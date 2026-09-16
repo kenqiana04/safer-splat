@@ -24,14 +24,16 @@ from typing import Any, Iterator
 
 TASK_DIR = Path(__file__).resolve().parent
 PROTOCOL_PATH = TASK_DIR / "SMOKE_REPAIR_V1_PROTOCOL.json"
-LOCK_PATH = TASK_DIR / "SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY1.json"
+LOCK_PATH = TASK_DIR / "SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY2_R3.json"
 ORIGINAL_LOCK_PATH = TASK_DIR / "SMOKE_REPAIR_V1_EXECUTION_LOCK.json"
-CHECKOUT_DEFAULT = Path("/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-repair-smoke-protocol-v1")
+CHECKOUT_DEFAULT = Path("/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-smoke-lock-pointer-r3")
 OLD_RESULT_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_20260916")
-RESULT_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry1_20260916")
+ATTEMPT1_RESULT_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry1_20260916")
+ATTEMPT1_LAUNCHER_LOG_SHA256 = "a1a647cd52426ebce38459c3e87522864266374842b824fb2d7075d10804910f"
+RESULT_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry2_20260916")
 GPU_PREFLIGHT_DIAGNOSTIC_ROOT = Path("/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_preflight_repair_v1_20260916")
 IMPLEMENTATION_HEAD = "546598a70e12fa99f9153f1927d0542ca27862b4"
-BRANCH = "repair-cert-exec-identity-smoke-launcher-guards-r2"
+BRANCH = "repair-cert-exec-identity-smoke-lock-pointer-r3"
 TRIALS = (15, 45, 75)
 AUTHORIZATION_NAME = "SMOKE_REPAIR_V1_INTERNAL_CHILD_AUTHORIZATION.json"
 CHILD_TOKEN_ENV = "SAFER_SPLAT_CERT_EXEC_SMOKE_CHILD_TOKEN"
@@ -397,20 +399,29 @@ def run_one(checkout: Path, root: Path, trial: int) -> int:
 
 
 def gpu_preflight(checkout: Path, root: Path) -> int:
-    verify_static_identity(checkout, require_committed_lock=True)
-    delegate = _load_delegate(checkout)
     try:
+        verify_static_identity(checkout, require_committed_lock=True)
+        delegate = _load_delegate(checkout)
         code = int(delegate.run_preflight(checkout, root))
     except Exception as exc:
         import traceback
+        captured_traceback = traceback.format_exc()
+        try:
+            lock_sha = sha256_file(LOCK_PATH)
+            lock_sha_unavailable_reason = None
+        except (OSError, ValueError) as lock_exc:
+            lock_sha = None
+            lock_sha_unavailable_reason = type(lock_exc).__name__
         failure = {
             "schema": "CERT_EXEC_IDENTITY_REPAIR_SMOKE_GPU_PREFLIGHT_FAILURE_V1",
             "stage": "GPU_PREFLIGHT", "status": "FAIL",
             "exception_type": type(exc).__name__, "exception_message": str(exc),
-            "traceback_tail": traceback.format_exc().splitlines()[-12:],
-            "traceback_sha256": hashlib.sha256(traceback.format_exc().encode()).hexdigest(),
+            "traceback": captured_traceback,
+            "traceback_tail": captured_traceback.splitlines()[-12:],
+            "traceback_sha256": hashlib.sha256(captured_traceback.encode()).hexdigest(),
             "branch": git(checkout, "branch", "--show-current"), "source_head": git(checkout, "rev-parse", "HEAD"),
-            "protocol_sha256": sha256_file(PROTOCOL_PATH), "execution_lock_sha256": sha256_file(LOCK_PATH),
+            "protocol_sha256": sha256_file(PROTOCOL_PATH), "execution_lock_sha256": lock_sha,
+            "execution_lock_sha_unavailable_reason": lock_sha_unavailable_reason,
             "result_root": str(root), "runtime_cycles_executed": 0,
             "smoke_trial_execution_count": 0, "PlantCommit_count": 0,
             "controller_qp_trial_count": 0, "scientific_analysis_performed": False,
@@ -533,6 +544,8 @@ def cpu_static_preflight(checkout: Path) -> dict[str, Any]:
         raise RuntimeError("ORIGINAL_PROTOCOL_OR_LOCK_MUTATION")
     if not OLD_RESULT_ROOT.is_dir() or sha256_file(OLD_RESULT_ROOT / "launcher.log") != OLD_LAUNCHER_LOG_SHA256:
         raise RuntimeError("OLD_FAILED_ROOT_EVIDENCE_MUTATION")
+    if not ATTEMPT1_RESULT_ROOT.is_dir() or sha256_file(ATTEMPT1_RESULT_ROOT / "launcher.log") != ATTEMPT1_LAUNCHER_LOG_SHA256:
+        raise RuntimeError("ATTEMPT1_FAILED_ROOT_EVIDENCE_MUTATION")
     base = load_runtime_base_config(checkout)
     from reproduction.runtime.v3_hard_radius_runtime_wiring_v1.stack_config import project_v3_runtime_config
     projected = project_v3_runtime_config(base)

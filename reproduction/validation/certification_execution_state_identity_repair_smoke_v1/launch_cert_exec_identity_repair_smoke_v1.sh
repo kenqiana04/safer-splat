@@ -2,11 +2,13 @@
 set -euo pipefail
 
 SESSION="cert-exec-identity-repair-smoke-v1"
-CHECKOUT="/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-smoke-launcher-guards-r2"
-ACTIVE_BRANCH="repair-cert-exec-identity-smoke-launcher-guards-r2"
-RESULT_ROOT="/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry1_20260916"
+CHECKOUT="/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-smoke-lock-pointer-r3"
+ACTIVE_BRANCH="repair-cert-exec-identity-smoke-lock-pointer-r3"
+RESULT_ROOT="/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry2_20260916"
 OLD_FAILED_ROOT="/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_20260916"
 OLD_LAUNCHER_LOG_SHA256="e6b627d62ce3a96cb5d975d5e0151fd0c54a93ee547ab34d90668771800f269f"
+ATTEMPT1_FAILED_ROOT="/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry1_20260916"
+ATTEMPT1_LAUNCHER_LOG_SHA256="a1a647cd52426ebce38459c3e87522864266374842b824fb2d7075d10804910f"
 PYTHON="/disk1/zlab/conda_envs/safer_splat_official/bin/python"
 TASK="$CHECKOUT/reproduction/validation/certification_execution_state_identity_repair_smoke_v1"
 RUNNER="$TASK/run_cert_exec_identity_repair_smoke_v1.py"
@@ -19,6 +21,9 @@ guard_static_environment() {
   [[ -d "$OLD_FAILED_ROOT" ]] || { echo OLD_FAILED_ROOT_MISSING >&2; exit 2; }
   [[ -f "$OLD_FAILED_ROOT/launcher.log" ]] || { echo OLD_FAILED_ROOT_LAUNCHER_LOG_MISSING >&2; exit 2; }
   [[ "$(sha256sum "$OLD_FAILED_ROOT/launcher.log" | awk '{print $1}')" == "$OLD_LAUNCHER_LOG_SHA256" ]] || { echo OLD_FAILED_ROOT_IDENTITY_MISMATCH >&2; exit 2; }
+  [[ -d "$ATTEMPT1_FAILED_ROOT" ]] || { echo ATTEMPT1_FAILED_ROOT_MISSING >&2; exit 2; }
+  [[ -f "$ATTEMPT1_FAILED_ROOT/launcher.log" ]] || { echo ATTEMPT1_LAUNCHER_LOG_MISSING >&2; exit 2; }
+  [[ "$(sha256sum "$ATTEMPT1_FAILED_ROOT/launcher.log" | awk '{print $1}')" == "$ATTEMPT1_LAUNCHER_LOG_SHA256" ]] || { echo ATTEMPT1_ROOT_IDENTITY_MISMATCH >&2; exit 2; }
   [[ ! -e "$RESULT_ROOT" ]] || { echo RESULT_ROOT_ABSENT_CHECK_FAILED >&2; exit 2; }
   if tmux has-session -t "$SESSION" 2>/dev/null; then
     echo TMUX_SESSION_ALREADY_EXISTS >&2
