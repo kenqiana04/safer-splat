@@ -1,0 +1,13 @@
+{
+  "schema": "CERT_EXEC_IDENTITY_SMOKE_LAUNCHER_GUARDS_R2_DOWNSTREAM_HANDOFF_V1",
+  "status": "HOLD_FOR_INDEPENDENT_MANUAL_LAUNCH_AUDIT",
+  "branch": "repair-cert-exec-identity-smoke-launcher-guards-r2",
+  "base_head": "c19ffc3571771a16ae85e63b29f877be4c8cc02a",
+  "retry_execution_lock": "reproduction/validation/certification_execution_state_identity_repair_smoke_v1/SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY1_R2.json",
+  "retry_result_root": "/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry1_20260916",
+  "retry_result_root_absent": true,
+  "gpu_count": 0,
+  "tmux_start_count": 0,
+  "smoke_trial_count": 0,
+  "only_next_task": "HOLD_FOR_INDEPENDENT_MANUAL_LAUNCH_AUDIT"
+}
