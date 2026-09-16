@@ -1,0 +1,14 @@
+{
+  "schema": "CERT_EXEC_IDENTITY_SMOKE_LOCK_POINTER_R3_DOWNSTREAM_HANDOFF_V1",
+  "status": "HOLD_FOR_INDEPENDENT_MANUAL_RETRY2_LAUNCH_AUDIT",
+  "branch": "repair-cert-exec-identity-smoke-lock-pointer-r3",
+  "code_repair_commit": "6e3adb9944f8e7d2aa59f53c77add7449e07d257",
+  "execution_lock": "SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY2_R3.json",
+  "retry2_result_root": "/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry2_20260916",
+  "retry2_result_root_absent": true,
+  "gpu_count": 0,
+  "tmux_start_count": 0,
+  "smoke_trial_count": 0,
+  "frozen_scientific_decision_remains": "FAIL_V3_HARD_SAFETY_GATE",
+  "only_next_task": "HOLD_FOR_INDEPENDENT_MANUAL_RETRY2_LAUNCH_AUDIT"
+}

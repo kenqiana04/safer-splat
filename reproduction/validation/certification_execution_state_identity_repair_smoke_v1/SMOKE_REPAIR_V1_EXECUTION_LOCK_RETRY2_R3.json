@@ -1,0 +1,53 @@
+{
+  "schema": "CERT_EXECUTION_IDENTITY_REPAIR_SMOKE_EXECUTION_LOCK_RETRY2_R3_V1",
+  "protocol_sha256": "80b4c15413bdfa9b03b106a725af5cd97b17a51b9e81d03cfe79a7300a8077e7",
+  "protocol_freeze_commit": "fc9757eb5f3fcfcc522ce67a443ff00bd13f00e0",
+  "implementation_authority": "546598a70e12fa99f9153f1927d0542ca27862b4",
+  "base_head": "569e5f307d09c4a889401cc78f7f70693f156f6b",
+  "harness_repair_commit": "6e3adb9944f8e7d2aa59f53c77add7449e07d257",
+  "branch": "repair-cert-exec-identity-smoke-lock-pointer-r3",
+  "worktree": "/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-smoke-lock-pointer-r3",
+  "active_lock_path": "SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY2_R3.json",
+  "superseded_retry1_lock_sha256": "b26bba30304e641ce7b4eca9fe4d367b0cf90b65d262545a3c5085d8e9b7ff8e",
+  "superseded_r2_lock_sha256": "745fd8326affc230ea8fc629edc12e36be618f5b23a9de2a8199f18c1777e8ec",
+  "harness_sha256": {
+    "run_cert_exec_identity_repair_smoke_v1.py": "071b6c5ec25f28393c7821fa1fc2e827efeae47b45f7a708590e31d34ff58c85",
+    "launch_cert_exec_identity_repair_smoke_v1.sh": "7248d8a6999e757681f0b59ac1760818a4a58f7f36c0a8445e31651bd15fc9c2",
+    "validate_cert_exec_identity_repair_smoke_v1.py": "866856610d7f3dbf24c197bfb6d3374435ce42b60f0f90c9da08afc9734f8968",
+    "monitor_cert_exec_identity_repair_smoke_v1.py": "835a1b9acdf1003dd1969a43677365d555873c247403766506bc4d7569a1d859"
+  },
+  "retry_result_root": "/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry2_20260916",
+  "retry_result_root_must_be_absent_before_launch": true,
+  "attempt0_root": "/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_20260916",
+  "attempt0_root_manifest": {
+    "file_count": 1,
+    "files": [{"path": "launcher.log", "size": 2982, "sha256": "e6b627d62ce3a96cb5d975d5e0151fd0c54a93ee547ab34d90668771800f269f"}],
+    "semantic_root_sha256": "439f9fdfe0ac095430dc02f1d9db84cbe5977b1f41e5c9cb4d37250735341e89"
+  },
+  "attempt0_failure_classification": "PRE_TRIAL_GPU_PREFLIGHT_BASE_CONFIG_PLUMBING_FAILURE",
+  "attempt1_root": "/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry1_20260916",
+  "attempt1_root_manifest": {
+    "file_count": 1,
+    "files": [{"path": "launcher.log", "size": 1355, "sha256": "a1a647cd52426ebce38459c3e87522864266374842b824fb2d7075d10804910f"}],
+    "semantic_root_sha256": "60f7e2ff29fea94ea5daf63bff1578b02afc14901e161623ea51b4455a221379"
+  },
+  "attempt1_failure_classification": "PRE_TRIAL_GPU_PREFLIGHT_EXECUTION_LOCK_POINTER_FAILURE",
+  "attempt1_counters": {"smoke_trial_count": 0, "cycle_count": 0, "plant_commit_count": 0, "gpu_runtime_cycle_count": 0, "scientific_outcome_count": 0},
+  "historical_v3_base_config_sha256": "c1dc8b3f17850267f1cb3247795bc193a8944aa59349de5019efdf4ae72b1691",
+  "runtime_repair_tree_sha256": "e23d8cc6326d35c0f89698174a3c22cb148af41836e5a803c03cecca599316ab",
+  "canonical_transition_identity": "canonical-transition:sha256:188eae47698febcd0d5492c1c0df2ea456a2fce23a83a616e28089f0e2f46d5d",
+  "trial_ids": [15, 45, 75],
+  "trial_order": [15, 45, 75],
+  "maximum_completed_cycles_per_trial": 500,
+  "seed": 0,
+  "serial_execution": true,
+  "separate_process_per_trial": true,
+  "physical_gpu": 1,
+  "geometry": {"hard_radius_q": 0.015, "runtime_margin_q": 0.0, "rho_seg_q": 0.0, "epsilon": null, "historical_diagnostic_radius_q": 0.025, "historical_diagnostic_runtime_authority": false},
+  "scientific_analysis_enabled": false,
+  "frozen_scientific_decision_remains": "FAIL_V3_HARD_SAFETY_GATE",
+  "gpu_count_at_freeze": 0,
+  "tmux_start_count_at_freeze": 0,
+  "smoke_trial_count_at_freeze": 0,
+  "plant_commit_count_at_freeze": 0
+}
