@@ -1,0 +1,5 @@
+# Task-local post-freeze compatibility correction
+
+The initial execution lock was committed after protocol commit `895b840ec46ea35528e6800d8826b04188e2ba73`. The committed-lock CPU validator exposed an inherited R6 smoke verifier that treats the later, immutable Pilot directory as a protected diff relative to its earlier implementation ancestor. This is a chronological false positive: the direct-base (`0ccec8d5eb2b4adc553767d55ba35172cb890410`) protected/runtime diff remains zero.
+
+Correction scope: task-local adapter filters `reproduction/pilot` and this new `reproduction/formal` task directory from the earlier R6 verifier's ancestor-relative path list, while retaining the direct-base protected diff audit. The validator accepts a later, explicit harness-correction commit but still requires both protocol and harness commits to be ancestors. No method, cohort, map, Reference, Pilot, or science rule changes were made. The execution lock is refreshed in a separate subsequent commit. No GPU, tmux, formal trial, Reference rerun, or analyzer execution occurred.

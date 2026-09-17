@@ -84,7 +84,10 @@ def smoke_module() -> Any:
     module.CHILD_TOKEN_ENV = TOKEN_ENV
     module.ALLOWED_TASK_REL = TASK_REL
     # Only this newly added task directory is writable; all other R6 protected paths remain read-only.
-    module.PROTECTED_PATHS = tuple(x for x in module.PROTECTED_PATHS if x != 'reproduction/formal')
+    # The R6 smoke verifier predates the immutable Pilot and this Formal task;
+    # the direct-base protected diff is audited separately below.
+    module.PROTECTED_PATHS = tuple(x for x in module.PROTECTED_PATHS
+                                   if x not in ('reproduction/pilot', 'reproduction/formal'))
     return module
 
 

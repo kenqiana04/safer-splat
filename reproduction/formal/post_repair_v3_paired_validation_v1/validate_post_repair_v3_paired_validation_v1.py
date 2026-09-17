@@ -40,16 +40,16 @@ def validate(*, require_lock: bool) -> dict[str, object]:
         raise RuntimeError('COHORT_REFERENCE_OR_WITNESS_CONTRACT_DRIFT')
     if require_lock:
         lock = read(LOCK)
-        if (lock['protocol_freeze_commit'] != lock['harness_repair_commit']
-                or lock['harness_sha256'] != {name: sha(TASK / name) for name in HARNESS}
+        if (lock['harness_sha256'] != {name: sha(TASK / name) for name in HARNESS}
                 or lock['exact_trial_order'] != list(TRIALS)
                 or lock['old_v3_frozen_decision'] != 'FAIL_V3_HARD_SAFETY_GATE'
                 or lock['future_result_root'] != str(ROOT)
                 or lock['protocol_semantic_sha256'] != semantic(p)):
             raise RuntimeError('EXECUTION_LOCK_CONTENT_DRIFT')
-        if subprocess.run(['git', '-C', str(CHECKOUT), 'merge-base', '--is-ancestor',
-                           lock['protocol_freeze_commit'], 'HEAD']).returncode:
-            raise RuntimeError('PROTOCOL_COMMIT_NOT_ANCESTOR')
+        for commit_field in ('protocol_freeze_commit', 'harness_repair_commit'):
+            if subprocess.run(['git', '-C', str(CHECKOUT), 'merge-base', '--is-ancestor',
+                               lock[commit_field], 'HEAD']).returncode:
+                raise RuntimeError('FROZEN_COMMIT_NOT_ANCESTOR:' + commit_field)
         if subprocess.run(['git', '-C', str(CHECKOUT), 'status', '--porcelain', '--',
                            'reproduction/formal/post_repair_v3_paired_validation_v1'],
                           capture_output=True, text=True, check=True).stdout.strip():
