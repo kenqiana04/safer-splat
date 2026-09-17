@@ -9,9 +9,11 @@ from pathlib import Path
 import subprocess
 import sys
 
+from child_process_boundary import normalize_env, normalize_argv, validate_popen_boundary
+
 TASK = Path(__file__).resolve().parent
-CHECKOUT = Path('/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-repair-pilot-freeze-harness-r1')
-BASE = 'e859fbd48384cdcc39162f4beb26ed26c387057c'
+CHECKOUT = Path('/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-pilot-launch-runtime-plumbing-r2')
+BASE = 'd00cbf271358aaedc34534593b04e752ca0c1785'
 PROTOCOL_SHA = '9fb0992b30edbb7a0a2ec48b646a8645eb93aee1805799170dd62a177a03abee'
 PROTOCOL_SEMANTIC_SHA = '92e692b4996b3583c91c03faad542850c8f247ce6f26c96503ec861421baca46'
 NAMES = ('run_cert_exec_identity_repair_pilot_v1.py', 'launch_cert_exec_identity_repair_pilot_v1.sh',
@@ -37,21 +39,36 @@ def validate(pre_freeze: bool) -> dict:
         (passed if condition else failed).append(key)
     git = runner.git
     frozen = runner.protocol()
-    need(git('branch', '--show-current') == 'repair-cert-exec-identity-repair-pilot-freeze-harness-r1', 'EXACT_BRANCH')
+    need(git('branch', '--show-current') == 'repair-cert-exec-identity-pilot-launch-runtime-plumbing-r2', 'EXACT_BRANCH')
     need(subprocess.run(['git', '-C', str(CHECKOUT), 'merge-base', '--is-ancestor', BASE, 'HEAD']).returncode == 0, 'UPSTREAM_ANCESTOR')
     need(git('rev-parse', BASE + ':reproduction/pilot/certification_execution_state_identity_repair_pilot_v1/PILOT_PROTOCOL.json') ==
          git('rev-parse', 'HEAD:reproduction/pilot/certification_execution_state_identity_repair_pilot_v1/PILOT_PROTOCOL.json')
          and runner.digest(runner.PROTOCOL) == PROTOCOL_SHA
          and runner.semantic(frozen) == PROTOCOL_SEMANTIC_SHA, 'PROTOCOL_UNCHANGED')
     need(runner.digest(runner.BLOCKED_LOCK) == runner.BLOCKED_LOCK_SHA256, 'BLOCKED_FREEZE_PRESERVED')
+    need(runner.digest(runner.R1_LOCK) == runner.R1_LOCK_SHA256, 'R1_LOCK_PRESERVED')
     need(git('rev-parse', BASE + ':reproduction/pilot/certification_execution_state_identity_repair_pilot_v1/PILOT_EXECUTION_LOCK.json') ==
          git('rev-parse', 'HEAD:reproduction/pilot/certification_execution_state_identity_repair_pilot_v1/PILOT_EXECUTION_LOCK.json'), 'BLOCKED_LOCK_GIT_BLOB_PRESERVED')
+    need(git('rev-parse', BASE + ':reproduction/pilot/certification_execution_state_identity_repair_pilot_v1/PILOT_EXECUTION_LOCK_REPAIR_R1.json') ==
+         git('rev-parse', 'HEAD:reproduction/pilot/certification_execution_state_identity_repair_pilot_v1/PILOT_EXECUTION_LOCK_REPAIR_R1.json'), 'R1_LOCK_GIT_BLOB_PRESERVED')
+    attempt0 = runner.attempt0_immutable_check()
+    need(attempt0['inventory']['file_count'] == 5 and attempt0['trial_process_count'] == attempt0['cycles'] == attempt0['plant_commits'] == 0,
+         'ATTEMPT0_IMMUTABLE_PRE_RUNTIME_FAILURE')
+    need(attempt0['child_env_root_cause'] == {'key': 'physical_gpu', 'type': 'int', 'value': 1,
+         'source': 'PILOT_PROTOCOL.json.environment.physical_gpu',
+         'path': 'run_batch env.update(protocol()[environment]) -> subprocess.Popen(env)',
+         'os_fsencode_type_error_reproduced_cpu_only': True}, 'ATTEMPT0_FORENSIC_ROOT_CAUSE')
     need(frozen.get('schema') == 'CERTIFICATION_EXECUTION_STATE_IDENTITY_REPAIR_PILOT_PROTOCOL_V1', 'PILOT_SCHEMA')
     need(frozen.get('exposure_label') == 'REUSED_ENGINEERING_COHORT_NOT_SCIENTIFIC_HOLDOUT', 'EXPOSURE_LABEL')
     need(frozen['cohort']['trial_ids'] == frozen['cohort']['trial_order'] == list(runner.TRIALS), 'COHORT_AND_ORDER')
     need(frozen['cohort']['seed'] == 0 and frozen['cohort']['maximum_completed_cycles_per_trial'] == 500, 'SEED_AND_MAX')
     need(frozen['cohort']['serial_execution'] and frozen['cohort']['separate_process_per_trial'] and not frozen['cohort']['automatic_retry'], 'PROCESS_CONTRACT')
     need(frozen['environment']['physical_gpu'] == 1 and frozen['environment']['process_visible_device'] == 'cuda:0', 'GPU_BINDING')
+    child_env = normalize_env({}, frozen['environment'])
+    child_argv = normalize_argv([frozen['environment']['python'], Path(__file__), '--one', '5'])
+    checked_argv, checked_env = validate_popen_boundary(child_argv, child_env)
+    need(checked_argv == child_argv and checked_env['physical_gpu'] == '1'
+         and all(type(key) is str and type(value) is str for key, value in checked_env.items()), 'CHILD_ENV_AND_ARGV_BOUNDARY')
     g = frozen['geometry']
     need((g['hard_radius_q'], g['runtime_margin_q'], g['rho_seg_q'], g['epsilon'], g['historical_diagnostic_radius_q'], g['historical_diagnostic_runtime_authority']) == (0.015, 0.0, 0.0, None, 0.025, False), 'GEOMETRY')
     need(frozen['canonical_transition']['source_sha256'] == '437aac43c3ece27609af6339bfea6ab7b7f0248ca2738ec1691c88c84d747891', 'TRANSITION_SHA')
@@ -64,6 +81,7 @@ def validate(pre_freeze: bool) -> dict:
     need(smoke['status'] == 'PASS_CERTIFICATION_EXECUTION_STATE_IDENTITY_REPAIR_SMOKE_V1', 'UPSTREAM_SMOKE_PASS')
     need(smoke['trials_completed'] == [15,45,75] and smoke['completed_cycles'] == smoke['plant_commits'] == smoke['trace_records'] == smoke['trace_lock_records'] == 1500, 'UPSTREAM_SMOKE_CARDINALITY')
     pilot = runner.smoke_module()
+    need(len(pilot.verify_map_artifacts(frozen)) == 3, 'MAP_ARTIFACTS_3_OF_3')
     need(pilot.delegate_runtime_protocol(CHECKOUT)['trial_ids'] == list(runner.TRIALS), 'DELEGATE_PROTOCOL_CONTRACT')
     need(pilot.delegate_runtime_protocol(CHECKOUT)['dynamics'] == pilot.load_runtime_base_config(CHECKOUT)['dynamics'], 'CHILD_CONFIG_CONSUMPTION_REGRESSION')
     need(all(x == 'PASS' for x in pilot.synthetic_executed_action_continuity_regression().values()), 'EXECUTED_ACTION_CONTINUITY_CONTRACT')
@@ -95,7 +113,7 @@ def validate(pre_freeze: bool) -> dict:
     need('tmux new-session' in launcher and 'TRIALS' not in launcher, 'SINGLE_BATCH_LAUNCHER')
     if runner.LOCK.is_file():
         lock = runner.read(runner.LOCK)
-        need(lock.get('schema') == 'CERT_EXEC_IDENTITY_REPAIR_PILOT_EXECUTION_LOCK_REPAIR_R1_V1', 'LOCK_SCHEMA')
+        need(lock.get('schema') == 'CERT_EXEC_IDENTITY_REPAIR_PILOT_EXECUTION_LOCK_LAUNCH_REPAIR_R2_V1', 'LOCK_SCHEMA')
         need(lock.get('base_head') == BASE and lock.get('branch') == git('branch', '--show-current') and lock.get('worktree') == str(CHECKOUT), 'LOCK_IDENTITY')
         need(lock.get('protocol_sha256') == runner.digest(runner.PROTOCOL) and lock.get('protocol_semantic_sha256') == runner.semantic(frozen), 'LOCK_PROTOCOL_HASHES')
         need(lock.get('upstream_smoke_manifest') == runner.root_manifest(runner.SMOKE_ROOT), 'LOCK_UPSTREAM_MANIFEST')
@@ -104,18 +122,21 @@ def validate(pre_freeze: bool) -> dict:
         need(lock.get('geometry') == g and lock.get('future_result_root') == str(runner.ROOT) and lock.get('automatic_retry') is False, 'LOCK_GEOMETRY_AND_ROOT')
         need(lock.get('scientific_analysis_enabled') is False and lock.get('frozen_scientific_decision_remains') == 'FAIL_V3_HARD_SAFETY_GATE', 'LOCK_SCIENTIFIC_BOUNDARY')
         need(lock.get('protocol_commit') == '0e3479543419705b76b1cb0b264bbbf4c21bfa9f', 'ORIGINAL_PROTOCOL_COMMIT')
-        need(lock.get('supersedes_lock_path') == runner.BLOCKED_LOCK.name
-             and lock.get('supersedes_lock_sha256') == runner.BLOCKED_LOCK_SHA256
-             and lock.get('blocked_freeze_head') == BASE
-             and lock.get('blocked_freeze_status') == 'BLOCKED'
-             and lock.get('superseded_status') == 'BLOCKED'
-             and lock.get('supersession_reason') == 'TASK_LOCAL_FREEZE_HARNESS_CONTRACT_REPAIR_ONLY', 'LOCK_SUPERSESSION_CHAIN')
-        commit = lock.get('harness_repair_commit')
+        need(lock.get('supersedes_lock_path') == runner.R1_LOCK.name
+             and lock.get('supersedes_lock_sha256') == runner.R1_LOCK_SHA256
+             and lock.get('attempt0_root') == str(runner.ATTEMPT0_ROOT)
+             and lock.get('attempt0_semantic_root_sha256') == attempt0['inventory']['semantic_root_sha256']
+             and lock.get('attempt0_classification') == attempt0['classification'], 'LOCK_SUPERSESSION_CHAIN')
+        need(lock.get('branch') == 'repair-cert-exec-identity-pilot-launch-runtime-plumbing-r2'
+             and lock.get('worktree') == str(CHECKOUT)
+             and lock.get('future_result_root') == str(runner.ROOT)
+             and lock.get('no_auto_rerun_after_runtime_start') is True, 'LOCK_RETRY_ROOT_AND_BOUNDARY')
+        commit = lock.get('launch_repair_commit')
         need(isinstance(commit, str) and len(commit) == 40
              and subprocess.run(['git', '-C', str(CHECKOUT), 'merge-base', '--is-ancestor', commit, 'HEAD']).returncode == 0
-             and (pre_freeze or commit == git('rev-parse', 'HEAD^')), 'HARNESS_REPAIR_COMMIT_CONTRACT_PASS')
-        need(runner.LOCK.name == 'PILOT_EXECUTION_LOCK_REPAIR_R1.json'
-             and "LOCK = TASK / 'PILOT_EXECUTION_LOCK_REPAIR_R1.json'" in (TASK / NAMES[0]).read_text(),
+             and (pre_freeze or commit == git('rev-parse', 'HEAD^')), 'LAUNCH_REPAIR_COMMIT_CONTRACT_PASS')
+        need(runner.LOCK.name == 'PILOT_EXECUTION_LOCK_LAUNCH_REPAIR_R2.json'
+             and "LOCK = TASK / 'PILOT_EXECUTION_LOCK_LAUNCH_REPAIR_R2.json'" in (TASK / NAMES[0]).read_text(),
              'ACTIVE_LOCK_POINTER_EXACT')
     elif pre_freeze:
         passed.append('REPAIRED_LOCK_PENDING_HARNESS_COMMIT')
@@ -137,7 +158,7 @@ def validate(pre_freeze: bool) -> dict:
     print('PROTECTED_RUNTIME_DIFF_ZERO')
     print('UPSTREAM_R6_ENGINEERING_HARNESS_IDENTITY_PASS')
     if not pre_freeze:
-        print('HARNESS_REPAIR_COMMIT_CONTRACT_PASS')
+        print('LAUNCH_REPAIR_COMMIT_CONTRACT_PASS')
         print('REPAIRED_EXECUTION_LOCK_CONTRACT_PASS')
     print('PILOT_FREEZE_REPAIR_VALIDATION_PASS')
     return result

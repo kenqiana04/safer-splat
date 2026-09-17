@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-CHECKOUT=/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-repair-pilot-freeze-harness-r1
-RESULT_ROOT=/disk1/zlab/v3_repair_records/cert_exec_identity_repair_pilot_v1_20260916
+CHECKOUT=/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-pilot-launch-runtime-plumbing-r2
+RESULT_ROOT=/disk1/zlab/v3_repair_records/cert_exec_identity_repair_pilot_v1_retry1_20260917
 TASK="$CHECKOUT/reproduction/pilot/certification_execution_state_identity_repair_pilot_v1"
 PYTHON=/disk1/zlab/conda_envs/safer_splat_official/bin/python
 RUNNER="$TASK/run_cert_exec_identity_repair_pilot_v1.py"
@@ -10,11 +10,12 @@ VALIDATOR="$TASK/validate_cert_exec_identity_repair_pilot_v1.py"
 SESSION=cert-exec-identity-repair-pilot-v1
 
 guard() {
-  [[ "$(git -C "$CHECKOUT" branch --show-current)" == repair-cert-exec-identity-repair-pilot-freeze-harness-r1 ]] || { echo BRANCH_MISMATCH >&2; exit 2; }
-  git -C "$CHECKOUT" merge-base --is-ancestor e859fbd48384cdcc39162f4beb26ed26c387057c HEAD || { echo UPSTREAM_DRIFT >&2; exit 2; }
+  [[ "$(git -C "$CHECKOUT" branch --show-current)" == repair-cert-exec-identity-pilot-launch-runtime-plumbing-r2 ]] || { echo BRANCH_MISMATCH >&2; exit 2; }
+  git -C "$CHECKOUT" merge-base --is-ancestor d00cbf271358aaedc34534593b04e752ca0c1785 HEAD || { echo UPSTREAM_DRIFT >&2; exit 2; }
   [[ -z "$(git -C "$CHECKOUT" status --porcelain --untracked-files=all)" ]] || { echo WORKTREE_NOT_CLEAN >&2; exit 2; }
   [[ ! -e "$RESULT_ROOT" ]] || { echo PILOT_RESULT_ROOT_MUST_BE_ABSENT >&2; exit 2; }
   if tmux has-session -t "$SESSION" 2>/dev/null; then echo PILOT_TMUX_ALREADY_EXISTS >&2; exit 2; fi
+  [[ -z "$(nvidia-smi -i 1 --query-compute-apps=pid,used_gpu_memory --format=csv,noheader)" ]] || { echo GPU1_NOT_FREE >&2; exit 2; }
 }
 
 guard
@@ -27,7 +28,7 @@ if [[ "${1:-}" == --prelaunch-check-only ]]; then
 fi
 [[ $# -eq 0 ]] || { echo UNKNOWN_LAUNCHER_ARGUMENT >&2; exit 2; }
 
-# This branch is intentionally unreachable during the protocol-freeze task.
+# Launch only after the superseding task-local lock is committed and prelaunch passes.
 mkdir -p "$RESULT_ROOT"
 COMMAND="cd '$CHECKOUT' && '$PYTHON' '$RUNNER' --gpu-preflight --checkout '$CHECKOUT' --output-dir '$RESULT_ROOT' && '$PYTHON' '$RUNNER' --batch --checkout '$CHECKOUT' --output-dir '$RESULT_ROOT'; rc=\$?; echo PILOT_COMPLETE_OR_STOPPED_NO_SCIENTIFIC_ANALYSIS; exit \$rc"
 tmux new-session -d -s "$SESSION" "exec >'$RESULT_ROOT/launcher.log' 2>&1; $COMMAND"

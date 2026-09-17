@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 import subprocess
 
-ROOT = Path('/disk1/zlab/v3_repair_records/cert_exec_identity_repair_pilot_v1_20260916')
+ROOT = Path('/disk1/zlab/v3_repair_records/cert_exec_identity_repair_pilot_v1_retry1_20260917')
 SESSION = 'cert-exec-identity-repair-pilot-v1'
 
 

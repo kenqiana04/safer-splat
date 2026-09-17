@@ -1,0 +1,57 @@
+{
+  "attempt0_root_mutated": false,
+  "child_authorization_sha256": "5991f3a1cbac4e822650d60b515a122a635dd10037e4c86018d58aac2025739a",
+  "child_env_root_cause": {
+    "key": "physical_gpu",
+    "os_fsencode_type_error_reproduced_cpu_only": true,
+    "path": "run_batch env.update(protocol()[environment]) -> subprocess.Popen(env)",
+    "source": "PILOT_PROTOCOL.json.environment.physical_gpu",
+    "type": "int",
+    "value": 1
+  },
+  "classification": "TRIAL5_PRE_RUNTIME_CHILD_ENV_VALUE_TYPE_FAILURE",
+  "cycles": 0,
+  "gpu1_compute_processes_at_freeze": [],
+  "gpu1_idle_at_freeze": true,
+  "gpu_preflight_sha256": "90054235a02460e9522e2d23fbd919c89e1b29a1687a4435fcabe4743b4512a2",
+  "inventory": {
+    "file_count": 5,
+    "files": [
+      {
+        "path": "PILOT_INTERNAL_CHILD_AUTHORIZATION.json",
+        "sha256": "5991f3a1cbac4e822650d60b515a122a635dd10037e4c86018d58aac2025739a",
+        "size": 621
+      },
+      {
+        "path": "launcher.log",
+        "sha256": "dd73f36cf43c518196e1ef63ca222ae577aacf16a7c12e8af3748772fdadb65a",
+        "size": 2096
+      },
+      {
+        "path": "raw/gpu_preflight.json",
+        "sha256": "90054235a02460e9522e2d23fbd919c89e1b29a1687a4435fcabe4743b4512a2",
+        "size": 2030
+      },
+      {
+        "path": "trial_5_stderr.tmp",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      },
+      {
+        "path": "trial_5_stdout.tmp",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    ],
+    "semantic_root_sha256": "dd2ec21b08d5903c88a82d45ff713f8beb91107f9e0aab5a111afaaabac85e75"
+  },
+  "launcher_log_sha256": "dd73f36cf43c518196e1ef63ca222ae577aacf16a7c12e8af3748772fdadb65a",
+  "plant_commits": 0,
+  "root": "/disk1/zlab/v3_repair_records/cert_exec_identity_repair_pilot_v1_20260916",
+  "schema": "CERT_EXEC_IDENTITY_REPAIR_PILOT_ATTEMPT0_IMMUTABLE_EVIDENCE_V1",
+  "scientific_analysis_count": 0,
+  "stderr_tmp_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_tmp_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tmux_stopped_at_freeze": true,
+  "trial_process_count": 0
+}

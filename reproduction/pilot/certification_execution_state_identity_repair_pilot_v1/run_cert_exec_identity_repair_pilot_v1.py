@@ -16,17 +16,23 @@ import sys
 import tempfile
 from typing import Any
 
+from child_process_boundary import normalize_argv, normalize_env, validate_popen_boundary
+
 TASK = Path(__file__).resolve().parent
-CHECKOUT = Path('/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-repair-pilot-freeze-harness-r1')
-ROOT = Path('/disk1/zlab/v3_repair_records/cert_exec_identity_repair_pilot_v1_20260916')
+CHECKOUT = Path('/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-pilot-launch-runtime-plumbing-r2')
+ROOT = Path('/disk1/zlab/v3_repair_records/cert_exec_identity_repair_pilot_v1_retry1_20260917')
+ATTEMPT0_ROOT = Path('/disk1/zlab/v3_repair_records/cert_exec_identity_repair_pilot_v1_20260916')
+ATTEMPT0_MANIFEST = TASK / 'PILOT_ATTEMPT0_IMMUTABLE_EVIDENCE_MANIFEST.json'
 SMOKE_ROOT = Path('/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry5_20260916')
 SMOKE_REL = 'reproduction/validation/certification_execution_state_identity_repair_smoke_v1/run_cert_exec_identity_repair_smoke_v1.py'
 PROTOCOL = TASK / 'PILOT_PROTOCOL.json'
-LOCK = TASK / 'PILOT_EXECUTION_LOCK_REPAIR_R1.json'
+LOCK = TASK / 'PILOT_EXECUTION_LOCK_LAUNCH_REPAIR_R2.json'
 BLOCKED_LOCK = TASK / 'PILOT_EXECUTION_LOCK.json'
+R1_LOCK = TASK / 'PILOT_EXECUTION_LOCK_REPAIR_R1.json'
 BLOCKED_HEAD = 'e859fbd48384cdcc39162f4beb26ed26c387057c'
 R6_HEAD = '601204bfc14e3ad2c8e3c714b8f5045829491635'
 BLOCKED_LOCK_SHA256 = 'fcfb45eb5505ca274ac7e0c10ad5ce36ac537864c53804f843fe45d9cf8f1083'
+R1_LOCK_SHA256 = 'b0440c7f5f4a52180cc57f9af6d93b9f82e0d54208f6922cf23179b615a44231'
 UPSTREAM_ENGINEERING_HARNESS_DIR = 'reproduction/validation/certification_execution_state_identity_repair_smoke_v1'
 SCIENTIFIC_RUNTIME_PROTECTED_PATHS = ('cbf/', 'dynamics/', 'splat/', 'run.py', 'reproduction/runtime/')
 SMOKE_MANIFEST = TASK / 'UPSTREAM_SMOKE_EVIDENCE_MANIFEST.json'
@@ -98,7 +104,7 @@ def smoke_module() -> Any:
     module.LOCK_PATH = LOCK
     module.CHECKOUT_DEFAULT = CHECKOUT
     module.RESULT_ROOT = ROOT
-    module.BRANCH = 'repair-cert-exec-identity-repair-pilot-freeze-harness-r1'
+    module.BRANCH = 'repair-cert-exec-identity-pilot-launch-runtime-plumbing-r2'
     module.TRIALS = TRIALS
     module.AUTHORIZATION_NAME = AUTH_NAME
     module.CHILD_TOKEN_ENV = TOKEN_ENV
@@ -112,6 +118,22 @@ def root_manifest(root: Path) -> dict[str, Any]:
     files = [{'path': p.relative_to(root).as_posix(), 'size': p.stat().st_size, 'sha256': digest(p)}
              for p in sorted(x for x in root.rglob('*') if x.is_file())]
     return {'file_count': len(files), 'files': files, 'semantic_root_sha256': semantic(files)}
+
+
+def attempt0_immutable_check() -> dict[str, Any]:
+    frozen = read(ATTEMPT0_MANIFEST)
+    if frozen.get('root') != str(ATTEMPT0_ROOT) or frozen.get('classification') != 'TRIAL5_PRE_RUNTIME_CHILD_ENV_VALUE_TYPE_FAILURE':
+        raise RuntimeError('ATTEMPT0_MANIFEST_IDENTITY_MISMATCH')
+    if frozen.get('inventory') != root_manifest(ATTEMPT0_ROOT):
+        raise RuntimeError('ATTEMPT0_EVIDENCE_MUTATION')
+    if any(frozen.get(name) != digest(ATTEMPT0_ROOT / file) for name, file in
+           (('launcher_log_sha256', 'launcher.log'), ('gpu_preflight_sha256', 'raw/gpu_preflight.json'),
+            ('child_authorization_sha256', AUTH_NAME), ('stdout_tmp_sha256', 'trial_5_stdout.tmp'),
+            ('stderr_tmp_sha256', 'trial_5_stderr.tmp'))):
+        raise RuntimeError('ATTEMPT0_FILE_HASH_MISMATCH')
+    if not all(frozen.get(key) == 0 for key in ('trial_process_count', 'cycles', 'plant_commits', 'scientific_analysis_count')):
+        raise RuntimeError('ATTEMPT0_COUNT_MISMATCH')
+    return frozen
 
 
 def upstream_smoke_check() -> dict[str, Any]:
@@ -145,13 +167,16 @@ def upstream_smoke_check() -> dict[str, Any]:
 
 
 def static_contract(*, require_lock: bool, require_absent_root: bool = True) -> dict[str, Any]:
-    if git('branch', '--show-current') != 'repair-cert-exec-identity-repair-pilot-freeze-harness-r1':
+    if git('branch', '--show-current') != 'repair-cert-exec-identity-pilot-launch-runtime-plumbing-r2':
         raise RuntimeError('PILOT_BRANCH_MISMATCH')
     if subprocess.run(['git', '-C', str(CHECKOUT), 'merge-base', '--is-ancestor',
                        BLOCKED_HEAD, 'HEAD']).returncode:
         raise RuntimeError('UPSTREAM_HEAD_NOT_ANCESTOR')
     if digest(BLOCKED_LOCK) != BLOCKED_LOCK_SHA256:
         raise RuntimeError('BLOCKED_FREEZE_LOCK_MUTATION')
+    if digest(R1_LOCK) != R1_LOCK_SHA256:
+        raise RuntimeError('R1_REPAIRED_LOCK_MUTATION')
+    attempt0_immutable_check()
     changed = git('diff', '--name-only', BLOCKED_HEAD).splitlines()
     assert_protected_runtime_diff_zero(changed)
     if any(not path.startswith('reproduction/pilot/certification_execution_state_identity_repair_pilot_v1/') for path in changed):
@@ -193,13 +218,14 @@ def static_contract(*, require_lock: bool, require_absent_root: bool = True) -> 
         lock = read(LOCK)
         if lock.get('protocol_sha256') != digest(PROTOCOL) or lock.get('protocol_semantic_sha256') != semantic(frozen):
             raise RuntimeError('PILOT_LOCK_PROTOCOL_MISMATCH')
-        if (lock.get('schema') != 'CERT_EXEC_IDENTITY_REPAIR_PILOT_EXECUTION_LOCK_REPAIR_R1_V1'
-                or lock.get('supersedes_lock_path') != BLOCKED_LOCK.name
-                or lock.get('supersedes_lock_sha256') != BLOCKED_LOCK_SHA256
-                or lock.get('blocked_freeze_head') != BLOCKED_HEAD
-                or lock.get('blocked_freeze_status') != 'BLOCKED'):
+        if (lock.get('schema') != 'CERT_EXEC_IDENTITY_REPAIR_PILOT_EXECUTION_LOCK_LAUNCH_REPAIR_R2_V1'
+                or lock.get('supersedes_lock_path') != R1_LOCK.name
+                or lock.get('supersedes_lock_sha256') != R1_LOCK_SHA256
+                or lock.get('attempt0_classification') != 'TRIAL5_PRE_RUNTIME_CHILD_ENV_VALUE_TYPE_FAILURE'
+                or lock.get('attempt0_semantic_root_sha256') != attempt0_immutable_check()['inventory']['semantic_root_sha256']
+                or lock.get('future_result_root') != str(ROOT)):
             raise RuntimeError('REPAIRED_LOCK_SUPERSESSION_MISMATCH')
-        commit = lock.get('harness_repair_commit')
+        commit = lock.get('launch_repair_commit')
         if not isinstance(commit, str) or len(commit) != 40 or subprocess.run(
                 ['git', '-C', str(CHECKOUT), 'merge-base', '--is-ancestor', commit, 'HEAD']).returncode:
             raise RuntimeError('HARNESS_REPAIR_COMMIT_CONTRACT_FAIL')
@@ -380,12 +406,13 @@ def run_batch(root: Path) -> int:
         raw = root / 'raw' / f'trial_{trial}'
         if raw.exists():
             raise RuntimeError('EXISTING_TRIAL_EVIDENCE_REQUIRES_MANUAL_AUDIT')
-        auth = module.write_authorization(CHECKOUT, root, trial, token)
         stdout = root / f'trial_{trial}_stdout.tmp'
         stderr = root / f'trial_{trial}_stderr.tmp'
-        env = os.environ.copy(); env.update(protocol()['environment']); env[TOKEN_ENV] = token
-        command = [protocol()['environment']['python'], str(Path(__file__).resolve()), '--one', str(trial),
-                   '--checkout', str(CHECKOUT), '--output-dir', str(root)]
+        env = normalize_env(os.environ.copy(), {**protocol()['environment'], TOKEN_ENV: token})
+        command = normalize_argv([protocol()['environment']['python'], Path(__file__).resolve(), '--one',
+                                  str(trial), '--checkout', CHECKOUT, '--output-dir', root])
+        command, env = validate_popen_boundary(command, env)
+        auth = module.write_authorization(CHECKOUT, root, trial, token)
         with stdout.open('w', encoding='utf-8') as out, stderr.open('w', encoding='utf-8') as err:
             process = subprocess.Popen(command, env=env, stdout=out, stderr=err, text=True)
             code = process.wait()
