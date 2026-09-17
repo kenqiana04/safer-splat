@@ -6,6 +6,8 @@ The sole upstream runtime is R6 commit `601204bfc14e3ad2c8e3c714b8f5045829491635
 
 The frozen order is `[5,15,25,35,45,55,65,75,85,95]`, seed 0, at most 500 completed cycles per trial, serial and separate-process, no automatic retry. This is a reused, outcome-exposed engineering cohort, **not** a scientific holdout. Deadline WARNING/EXPIRED and L3 FAIL are recorded as engineering facts, not automatic pilot failures; only frozen integrity/identity/evidence gates decide pilot PASS.
 
+The first freeze at `e859fbd48384cdcc39162f4beb26ed26c387057c` remains historically **BLOCKED**. Its `PILOT_EXECUTION_LOCK.json` is immutable and inactive. The repaired active pointer is `PILOT_EXECUTION_LOCK_REPAIR_R1.json`; it supersedes the blocked lock without changing `PILOT_PROTOCOL.json`. R6 smoke task files are engineering-harness lineage checked by exact Git tree and frozen byte hashes, while scientific/runtime paths retain a separate hard diff-zero gate.
+
 When independently authorized later, a reviewer first verifies the execution lock and runs `bash launch_cert_exec_identity_repair_pilot_v1.sh --prelaunch-check-only`. This task does not invoke the launch mode. A partial or failed trial remains in place for manual audit; the batch never automatically reruns it. PASS would only authorize a new post-repair paired scientific validation **protocol freeze**, not scientific execution.
 
 No collision/progress/noninferiority, parameter-selection, hard-real-time, or deployment claim follows from this pilot. Historical V3 remains `FAIL_V3_HARD_SAFETY_GATE`; the old result must not be rewritten.

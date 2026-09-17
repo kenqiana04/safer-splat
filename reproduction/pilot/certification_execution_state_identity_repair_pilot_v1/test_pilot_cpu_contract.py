@@ -61,6 +61,15 @@ def fixture(root: Path) -> Path:
 
 
 def main() -> None:
+    assert pilot.digest(pilot.BLOCKED_LOCK) == pilot.BLOCKED_LOCK_SHA256
+    assert pilot.upstream_r6_harness_identity()['status'] == 'UPSTREAM_R6_ENGINEERING_HARNESS_IDENTITY_PASS'
+    assert pilot.classify_changed_paths([pilot.SMOKE_REL])['scientific_runtime_protected'] == []
+    try:
+        pilot.assert_protected_runtime_diff_zero(['reproduction/runtime/fake_mutation.py'])
+    except RuntimeError as exc:
+        assert str(exc) == 'PROTECTED_RUNTIME_DIFF_NONZERO'
+    else:
+        raise AssertionError('protected mutation fixture did not fail closed')
     with tempfile.TemporaryDirectory() as temp:
         root = Path(temp)
         raw = fixture(root)

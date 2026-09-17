@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-CHECKOUT=/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-repair-pilot-protocol-v1
+CHECKOUT=/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-repair-pilot-freeze-harness-r1
 RESULT_ROOT=/disk1/zlab/v3_repair_records/cert_exec_identity_repair_pilot_v1_20260916
 TASK="$CHECKOUT/reproduction/pilot/certification_execution_state_identity_repair_pilot_v1"
 PYTHON=/disk1/zlab/conda_envs/safer_splat_official/bin/python
@@ -10,8 +10,8 @@ VALIDATOR="$TASK/validate_cert_exec_identity_repair_pilot_v1.py"
 SESSION=cert-exec-identity-repair-pilot-v1
 
 guard() {
-  [[ "$(git -C "$CHECKOUT" branch --show-current)" == freeze-cert-exec-identity-repair-pilot-protocol-v1 ]] || { echo BRANCH_MISMATCH >&2; exit 2; }
-  git -C "$CHECKOUT" merge-base --is-ancestor 601204bfc14e3ad2c8e3c714b8f5045829491635 HEAD || { echo UPSTREAM_DRIFT >&2; exit 2; }
+  [[ "$(git -C "$CHECKOUT" branch --show-current)" == repair-cert-exec-identity-repair-pilot-freeze-harness-r1 ]] || { echo BRANCH_MISMATCH >&2; exit 2; }
+  git -C "$CHECKOUT" merge-base --is-ancestor e859fbd48384cdcc39162f4beb26ed26c387057c HEAD || { echo UPSTREAM_DRIFT >&2; exit 2; }
   [[ -z "$(git -C "$CHECKOUT" status --porcelain --untracked-files=all)" ]] || { echo WORKTREE_NOT_CLEAN >&2; exit 2; }
   [[ ! -e "$RESULT_ROOT" ]] || { echo PILOT_RESULT_ROOT_MUST_BE_ABSENT >&2; exit 2; }
   if tmux has-session -t "$SESSION" 2>/dev/null; then echo PILOT_TMUX_ALREADY_EXISTS >&2; exit 2; fi

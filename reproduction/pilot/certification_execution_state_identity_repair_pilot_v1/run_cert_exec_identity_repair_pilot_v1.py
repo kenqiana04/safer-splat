@@ -17,12 +17,18 @@ import tempfile
 from typing import Any
 
 TASK = Path(__file__).resolve().parent
-CHECKOUT = Path('/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-repair-pilot-protocol-v1')
+CHECKOUT = Path('/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-repair-pilot-freeze-harness-r1')
 ROOT = Path('/disk1/zlab/v3_repair_records/cert_exec_identity_repair_pilot_v1_20260916')
 SMOKE_ROOT = Path('/disk1/zlab/v3_repair_records/cert_exec_identity_repair_smoke_v1_retry5_20260916')
 SMOKE_REL = 'reproduction/validation/certification_execution_state_identity_repair_smoke_v1/run_cert_exec_identity_repair_smoke_v1.py'
 PROTOCOL = TASK / 'PILOT_PROTOCOL.json'
-LOCK = TASK / 'PILOT_EXECUTION_LOCK.json'
+LOCK = TASK / 'PILOT_EXECUTION_LOCK_REPAIR_R1.json'
+BLOCKED_LOCK = TASK / 'PILOT_EXECUTION_LOCK.json'
+BLOCKED_HEAD = 'e859fbd48384cdcc39162f4beb26ed26c387057c'
+R6_HEAD = '601204bfc14e3ad2c8e3c714b8f5045829491635'
+BLOCKED_LOCK_SHA256 = 'fcfb45eb5505ca274ac7e0c10ad5ce36ac537864c53804f843fe45d9cf8f1083'
+UPSTREAM_ENGINEERING_HARNESS_DIR = 'reproduction/validation/certification_execution_state_identity_repair_smoke_v1'
+SCIENTIFIC_RUNTIME_PROTECTED_PATHS = ('cbf/', 'dynamics/', 'splat/', 'run.py', 'reproduction/runtime/')
 SMOKE_MANIFEST = TASK / 'UPSTREAM_SMOKE_EVIDENCE_MANIFEST.json'
 TRIALS = (5, 15, 25, 35, 45, 55, 65, 75, 85, 95)
 AUTH_NAME = 'PILOT_INTERNAL_CHILD_AUTHORIZATION.json'
@@ -54,6 +60,31 @@ def git(*args: str) -> str:
     return subprocess.run(['git', '-C', str(CHECKOUT), *args], check=True, capture_output=True, text=True).stdout.strip()
 
 
+def classify_changed_paths(paths: list[str]) -> dict[str, list[str]]:
+    """Do not mistake historical R6 harness lineage for scientific/runtime mutation."""
+    protected = [path for path in paths if any(path == prefix.rstrip('/') or path.startswith(prefix)
+                 for prefix in SCIENTIFIC_RUNTIME_PROTECTED_PATHS)]
+    engineering = [path for path in paths if path.startswith(UPSTREAM_ENGINEERING_HARNESS_DIR + '/')]
+    return {'scientific_runtime_protected': protected, 'upstream_engineering_harness': engineering}
+
+
+def assert_protected_runtime_diff_zero(paths: list[str]) -> None:
+    if classify_changed_paths(paths)['scientific_runtime_protected']:
+        raise RuntimeError('PROTECTED_RUNTIME_DIFF_NONZERO')
+
+
+def upstream_r6_harness_identity() -> dict[str, str]:
+    """Exact Git-tree and byte-hash gate for the reused, read-only R6 harness."""
+    tree = git('rev-parse', f'HEAD:{UPSTREAM_ENGINEERING_HARNESS_DIR}')
+    if tree != git('rev-parse', f'{R6_HEAD}:{UPSTREAM_ENGINEERING_HARNESS_DIR}') or tree != git('rev-parse', f'{BLOCKED_HEAD}:{UPSTREAM_ENGINEERING_HARNESS_DIR}'):
+        raise RuntimeError('UPSTREAM_R6_ENGINEERING_HARNESS_TREE_DRIFT')
+    r6_lock = read(CHECKOUT / UPSTREAM_ENGINEERING_HARNESS_DIR / 'SMOKE_REPAIR_V1_EXECUTION_LOCK_RETRY5_R6.json')
+    for name, expected in r6_lock['harness_sha256'].items():
+        if digest(CHECKOUT / UPSTREAM_ENGINEERING_HARNESS_DIR / name) != expected:
+            raise RuntimeError('UPSTREAM_R6_ENGINEERING_HARNESS_HASH_DRIFT:' + name)
+    return {'status': 'UPSTREAM_R6_ENGINEERING_HARNESS_IDENTITY_PASS', 'git_tree': tree}
+
+
 def smoke_module() -> Any:
     path = CHECKOUT / SMOKE_REL
     spec = importlib.util.spec_from_file_location('_frozen_smoke_pilot_adapter', path)
@@ -67,12 +98,13 @@ def smoke_module() -> Any:
     module.LOCK_PATH = LOCK
     module.CHECKOUT_DEFAULT = CHECKOUT
     module.RESULT_ROOT = ROOT
-    module.BRANCH = 'freeze-cert-exec-identity-repair-pilot-protocol-v1'
+    module.BRANCH = 'repair-cert-exec-identity-repair-pilot-freeze-harness-r1'
     module.TRIALS = TRIALS
     module.AUTHORIZATION_NAME = AUTH_NAME
     module.CHILD_TOKEN_ENV = TOKEN_ENV
     module.ALLOWED_TASK_REL = 'reproduction/pilot/certification_execution_state_identity_repair_pilot_v1'
-    module.PROTECTED_PATHS = tuple(x for x in module.PROTECTED_PATHS if x != 'reproduction/pilot') + (SMOKE_REL,)
+    # R6 task-local lineage is checked by upstream_r6_harness_identity(), not as runtime source.
+    module.PROTECTED_PATHS = tuple(x for x in module.PROTECTED_PATHS if x != 'reproduction/pilot')
     return module
 
 
@@ -113,11 +145,18 @@ def upstream_smoke_check() -> dict[str, Any]:
 
 
 def static_contract(*, require_lock: bool, require_absent_root: bool = True) -> dict[str, Any]:
-    if git('branch', '--show-current') != 'freeze-cert-exec-identity-repair-pilot-protocol-v1':
+    if git('branch', '--show-current') != 'repair-cert-exec-identity-repair-pilot-freeze-harness-r1':
         raise RuntimeError('PILOT_BRANCH_MISMATCH')
     if subprocess.run(['git', '-C', str(CHECKOUT), 'merge-base', '--is-ancestor',
-                       '601204bfc14e3ad2c8e3c714b8f5045829491635', 'HEAD']).returncode:
+                       BLOCKED_HEAD, 'HEAD']).returncode:
         raise RuntimeError('UPSTREAM_HEAD_NOT_ANCESTOR')
+    if digest(BLOCKED_LOCK) != BLOCKED_LOCK_SHA256:
+        raise RuntimeError('BLOCKED_FREEZE_LOCK_MUTATION')
+    changed = git('diff', '--name-only', BLOCKED_HEAD).splitlines()
+    assert_protected_runtime_diff_zero(changed)
+    if any(not path.startswith('reproduction/pilot/certification_execution_state_identity_repair_pilot_v1/') for path in changed):
+        raise RuntimeError('OUT_OF_SCOPE_DIFF')
+    upstream_r6_harness_identity()
     frozen = protocol()
     cohort = frozen['cohort']
     if (cohort['trial_ids'] != list(TRIALS) or cohort['trial_order'] != list(TRIALS)
@@ -154,8 +193,16 @@ def static_contract(*, require_lock: bool, require_absent_root: bool = True) -> 
         lock = read(LOCK)
         if lock.get('protocol_sha256') != digest(PROTOCOL) or lock.get('protocol_semantic_sha256') != semantic(frozen):
             raise RuntimeError('PILOT_LOCK_PROTOCOL_MISMATCH')
-        if lock.get('harness_freeze_commit') is None:
-            raise RuntimeError('PILOT_HARNESS_FREEZE_COMMIT_MISSING')
+        if (lock.get('schema') != 'CERT_EXEC_IDENTITY_REPAIR_PILOT_EXECUTION_LOCK_REPAIR_R1_V1'
+                or lock.get('supersedes_lock_path') != BLOCKED_LOCK.name
+                or lock.get('supersedes_lock_sha256') != BLOCKED_LOCK_SHA256
+                or lock.get('blocked_freeze_head') != BLOCKED_HEAD
+                or lock.get('blocked_freeze_status') != 'BLOCKED'):
+            raise RuntimeError('REPAIRED_LOCK_SUPERSESSION_MISMATCH')
+        commit = lock.get('harness_repair_commit')
+        if not isinstance(commit, str) or len(commit) != 40 or subprocess.run(
+                ['git', '-C', str(CHECKOUT), 'merge-base', '--is-ancestor', commit, 'HEAD']).returncode:
+            raise RuntimeError('HARNESS_REPAIR_COMMIT_CONTRACT_FAIL')
         module.verify_static_identity(CHECKOUT, require_committed_lock=True)
     return {'delegate_protocol_contract': 'PASS', 'child_config_consumption_regression': 'PASS',
             'executed_action_continuity_contract': 'PASS', 'map_artifacts': 'PASS_3_OF_3'}

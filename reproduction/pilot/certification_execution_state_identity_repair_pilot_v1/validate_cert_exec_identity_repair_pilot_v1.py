@@ -10,8 +10,10 @@ import subprocess
 import sys
 
 TASK = Path(__file__).resolve().parent
-CHECKOUT = Path('/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-repair-pilot-protocol-v1')
-BASE = '601204bfc14e3ad2c8e3c714b8f5045829491635'
+CHECKOUT = Path('/disk1/zlab/v3_repair_worktrees/safer-splat-cert-exec-identity-repair-pilot-freeze-harness-r1')
+BASE = 'e859fbd48384cdcc39162f4beb26ed26c387057c'
+PROTOCOL_SHA = '9fb0992b30edbb7a0a2ec48b646a8645eb93aee1805799170dd62a177a03abee'
+PROTOCOL_SEMANTIC_SHA = '92e692b4996b3583c91c03faad542850c8f247ce6f26c96503ec861421baca46'
 NAMES = ('run_cert_exec_identity_repair_pilot_v1.py', 'launch_cert_exec_identity_repair_pilot_v1.sh',
          'validate_cert_exec_identity_repair_pilot_v1.py', 'monitor_cert_exec_identity_repair_pilot_v1.py')
 
@@ -35,8 +37,15 @@ def validate(pre_freeze: bool) -> dict:
         (passed if condition else failed).append(key)
     git = runner.git
     frozen = runner.protocol()
-    need(git('branch', '--show-current') == 'freeze-cert-exec-identity-repair-pilot-protocol-v1', 'EXACT_BRANCH')
+    need(git('branch', '--show-current') == 'repair-cert-exec-identity-repair-pilot-freeze-harness-r1', 'EXACT_BRANCH')
     need(subprocess.run(['git', '-C', str(CHECKOUT), 'merge-base', '--is-ancestor', BASE, 'HEAD']).returncode == 0, 'UPSTREAM_ANCESTOR')
+    need(git('rev-parse', BASE + ':reproduction/pilot/certification_execution_state_identity_repair_pilot_v1/PILOT_PROTOCOL.json') ==
+         git('rev-parse', 'HEAD:reproduction/pilot/certification_execution_state_identity_repair_pilot_v1/PILOT_PROTOCOL.json')
+         and runner.digest(runner.PROTOCOL) == PROTOCOL_SHA
+         and runner.semantic(frozen) == PROTOCOL_SEMANTIC_SHA, 'PROTOCOL_UNCHANGED')
+    need(runner.digest(runner.BLOCKED_LOCK) == runner.BLOCKED_LOCK_SHA256, 'BLOCKED_FREEZE_PRESERVED')
+    need(git('rev-parse', BASE + ':reproduction/pilot/certification_execution_state_identity_repair_pilot_v1/PILOT_EXECUTION_LOCK.json') ==
+         git('rev-parse', 'HEAD:reproduction/pilot/certification_execution_state_identity_repair_pilot_v1/PILOT_EXECUTION_LOCK.json'), 'BLOCKED_LOCK_GIT_BLOB_PRESERVED')
     need(frozen.get('schema') == 'CERTIFICATION_EXECUTION_STATE_IDENTITY_REPAIR_PILOT_PROTOCOL_V1', 'PILOT_SCHEMA')
     need(frozen.get('exposure_label') == 'REUSED_ENGINEERING_COHORT_NOT_SCIENTIFIC_HOLDOUT', 'EXPOSURE_LABEL')
     need(frozen['cohort']['trial_ids'] == frozen['cohort']['trial_order'] == list(runner.TRIALS), 'COHORT_AND_ORDER')
@@ -66,13 +75,27 @@ def validate(pre_freeze: bool) -> dict:
     changed = git('diff', '--name-only', BASE).splitlines()
     prefix = 'reproduction/pilot/certification_execution_state_identity_repair_pilot_v1/'
     need(all(path.startswith(prefix) for path in changed), 'TASK_LOCAL_DIFF_ONLY')
-    need(not git('diff', BASE, '--', 'cbf', 'dynamics', 'splat', 'run.py', 'reproduction/runtime'), 'PROTECTED_RUNTIME_DIFF_ZERO')
+    need(not runner.classify_changed_paths(changed)['scientific_runtime_protected']
+         and not git('diff', BASE, '--', 'cbf', 'dynamics', 'splat', 'run.py', 'reproduction/runtime'), 'PROTECTED_RUNTIME_DIFF_ZERO')
+    upstream = runner.upstream_r6_harness_identity()
+    need(upstream['status'] == 'UPSTREAM_R6_ENGINEERING_HARNESS_IDENTITY_PASS', 'UPSTREAM_R6_ENGINEERING_HARNESS_IDENTITY_PASS')
+    need(runner.classify_changed_paths([runner.SMOKE_REL])['scientific_runtime_protected'] == []
+         and runner.classify_changed_paths([runner.SMOKE_REL])['upstream_engineering_harness'] == [runner.SMOKE_REL],
+         'R6_HISTORICAL_CLASSIFICATION_FIXTURE')
+    try:
+        runner.assert_protected_runtime_diff_zero(['reproduction/runtime/fake_mutation.py'])
+    except RuntimeError as exc:
+        need(str(exc) == 'PROTECTED_RUNTIME_DIFF_NONZERO', 'TRUE_PROTECTED_MUTATION_FAIL_CLOSED_FIXTURE')
+    else:
+        need(False, 'TRUE_PROTECTED_MUTATION_FAIL_CLOSED_FIXTURE')
+    need(git('check-ignore', 'outputs/stonehenge') == 'outputs/stonehenge'
+         and git('check-ignore', 'data/stonehenge') == 'data/stonehenge', 'IGNORED_MAP_BINDINGS')
     launcher = (TASK / NAMES[1]).read_text()
     need('--prelaunch-check-only' in launcher and 'mkdir -p "$RESULT_ROOT"' in launcher and launcher.index('--prelaunch-check-only') < launcher.index('mkdir -p "$RESULT_ROOT"'), 'PRELAUNCH_BEFORE_RESULT_ROOT_CREATION')
     need('tmux new-session' in launcher and 'TRIALS' not in launcher, 'SINGLE_BATCH_LAUNCHER')
     if runner.LOCK.is_file():
         lock = runner.read(runner.LOCK)
-        need(lock.get('schema') == 'CERT_EXEC_IDENTITY_REPAIR_PILOT_EXECUTION_LOCK_V1', 'LOCK_SCHEMA')
+        need(lock.get('schema') == 'CERT_EXEC_IDENTITY_REPAIR_PILOT_EXECUTION_LOCK_REPAIR_R1_V1', 'LOCK_SCHEMA')
         need(lock.get('base_head') == BASE and lock.get('branch') == git('branch', '--show-current') and lock.get('worktree') == str(CHECKOUT), 'LOCK_IDENTITY')
         need(lock.get('protocol_sha256') == runner.digest(runner.PROTOCOL) and lock.get('protocol_semantic_sha256') == runner.semantic(frozen), 'LOCK_PROTOCOL_HASHES')
         need(lock.get('upstream_smoke_manifest') == runner.root_manifest(runner.SMOKE_ROOT), 'LOCK_UPSTREAM_MANIFEST')
@@ -80,9 +103,22 @@ def validate(pre_freeze: bool) -> dict:
         need(lock.get('cohort') == list(runner.TRIALS) and lock.get('seed') == 0 and lock.get('max_cycles') == 500, 'LOCK_COHORT')
         need(lock.get('geometry') == g and lock.get('future_result_root') == str(runner.ROOT) and lock.get('automatic_retry') is False, 'LOCK_GEOMETRY_AND_ROOT')
         need(lock.get('scientific_analysis_enabled') is False and lock.get('frozen_scientific_decision_remains') == 'FAIL_V3_HARD_SAFETY_GATE', 'LOCK_SCIENTIFIC_BOUNDARY')
-        need(bool(lock.get('protocol_freeze_commit')) and lock.get('protocol_freeze_commit') == lock.get('harness_freeze_commit'), 'LOCK_FREEZE_COMMIT')
+        need(lock.get('protocol_commit') == '0e3479543419705b76b1cb0b264bbbf4c21bfa9f', 'ORIGINAL_PROTOCOL_COMMIT')
+        need(lock.get('supersedes_lock_path') == runner.BLOCKED_LOCK.name
+             and lock.get('supersedes_lock_sha256') == runner.BLOCKED_LOCK_SHA256
+             and lock.get('blocked_freeze_head') == BASE
+             and lock.get('blocked_freeze_status') == 'BLOCKED'
+             and lock.get('superseded_status') == 'BLOCKED'
+             and lock.get('supersession_reason') == 'TASK_LOCAL_FREEZE_HARNESS_CONTRACT_REPAIR_ONLY', 'LOCK_SUPERSESSION_CHAIN')
+        commit = lock.get('harness_repair_commit')
+        need(isinstance(commit, str) and len(commit) == 40
+             and subprocess.run(['git', '-C', str(CHECKOUT), 'merge-base', '--is-ancestor', commit, 'HEAD']).returncode == 0
+             and (pre_freeze or commit == git('rev-parse', 'HEAD^')), 'HARNESS_REPAIR_COMMIT_CONTRACT_PASS')
+        need(runner.LOCK.name == 'PILOT_EXECUTION_LOCK_REPAIR_R1.json'
+             and "LOCK = TASK / 'PILOT_EXECUTION_LOCK_REPAIR_R1.json'" in (TASK / NAMES[0]).read_text(),
+             'ACTIVE_LOCK_POINTER_EXACT')
     elif pre_freeze:
-        passed.append('LOCK_PENDING_FIRST_COMMIT')
+        passed.append('REPAIRED_LOCK_PENDING_HARNESS_COMMIT')
     else:
         failed.append('PILOT_EXECUTION_LOCK_MISSING')
     result = {'schema': 'CERT_EXEC_IDENTITY_REPAIR_PILOT_PROTOCOL_VALIDATION_V1', 'status': 'PASS' if not failed else 'FAIL',
@@ -96,6 +132,14 @@ def validate(pre_freeze: bool) -> dict:
     print('CHILD_CONFIG_CONSUMPTION_REGRESSION_PASS')
     print('EXECUTED_ACTION_CONTINUITY_CONTRACT_PASS')
     print('PILOT_PROTOCOL_CONTRACT_PASS')
+    print('BLOCKED_FREEZE_PRESERVED')
+    print('PROTOCOL_UNCHANGED')
+    print('PROTECTED_RUNTIME_DIFF_ZERO')
+    print('UPSTREAM_R6_ENGINEERING_HARNESS_IDENTITY_PASS')
+    if not pre_freeze:
+        print('HARNESS_REPAIR_COMMIT_CONTRACT_PASS')
+        print('REPAIRED_EXECUTION_LOCK_CONTRACT_PASS')
+    print('PILOT_FREEZE_REPAIR_VALIDATION_PASS')
     return result
 
 
