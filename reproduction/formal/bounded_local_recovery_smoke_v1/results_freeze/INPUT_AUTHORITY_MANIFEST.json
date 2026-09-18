@@ -1,0 +1,120 @@
+{
+  "cohort": {
+    "automatic_retry": false,
+    "maximum_completed_cycles_per_trial": 500,
+    "seed": 0,
+    "separate_process_per_trial": true,
+    "serial_execution": true,
+    "source": "PREEXISTING_DEVELOPMENT_EXPOSED_SMOKE",
+    "trial_ids": [
+      15,
+      45,
+      75
+    ],
+    "trial_order": [
+      15,
+      45,
+      75
+    ]
+  },
+  "environment": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "CUDA_VISIBLE_DEVICES": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONHASHSEED": "0",
+    "PYTHONNOUSERSITE": "1",
+    "conda_environment": "/disk1/zlab/conda_envs/safer_splat_official",
+    "physical_gpu": 1,
+    "process_visible_device": "cuda:0",
+    "python": "/disk1/zlab/conda_envs/safer_splat_official/bin/python"
+  },
+  "freeze_branch": "freeze-bounded-local-recovery-smoke-protocol-v1",
+  "future_result_root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_20260918",
+  "future_tmux_session": "bounded_local_recovery_smoke_v1",
+  "gate0_head": "18ba8ed8aa3b4acc326426e05808bd5abe67561c",
+  "geometry": {
+    "effective_radius_q": 0.015,
+    "epsilon": null,
+    "hard_radius_q": 0.015,
+    "historical_diagnostic_radius_q": 0.025,
+    "historical_diagnostic_runtime_authority": false,
+    "rho_seg_q": 0.0,
+    "runtime_margin_q": 0.0,
+    "unit": "q"
+  },
+  "gpu_run_count": 0,
+  "implementation_head": "8184b0ecec20b6e84b1745518903b87bbb5cde8f",
+  "map_artifacts": [
+    {
+      "actual_sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e",
+      "actual_size": 6933,
+      "expected_sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e",
+      "expected_size": 6933,
+      "match": true,
+      "relative_path": "config.yml"
+    },
+    {
+      "actual_sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e",
+      "actual_size": 312,
+      "expected_sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e",
+      "expected_size": 312,
+      "match": true,
+      "relative_path": "dataparser_transforms.json"
+    },
+    {
+      "actual_sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d",
+      "actual_size": 92344786,
+      "expected_sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d",
+      "expected_size": 92344786,
+      "match": true,
+      "relative_path": "nerfstudio_models/step-000029999.ckpt"
+    }
+  ],
+  "map_identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+  "origin": "git@github-kenqiana04-safer-splat-current:kenqiana04/safer-splat.git",
+  "protocol_commit": "ae1aa239ac6b9950e5c1f89e57aff480dbadb7ee",
+  "real_plantcommit_count": 0,
+  "recovery": {
+    "candidate_family": "F1_AXIS_EXTREMA_ONLY",
+    "candidate_order": [
+      "+x",
+      "-x",
+      "+y",
+      "-y",
+      "+z",
+      "-z"
+    ],
+    "forbidden_triggers": [
+      "PRIMARY_C0_FAIL",
+      "PRIMARY_L2_FAIL",
+      "PRIMARY_L3_UNKNOWN",
+      "UNCLASSIFIED_L3_FAIL"
+    ],
+    "generator": "AXIS_EXTREMA_F32_V1",
+    "maximum_candidates": 6,
+    "priority": [
+      "CERTIFIED_PRIMARY",
+      "VALID_RETAINED_BACKUP",
+      "BOUNDED_LOCAL_RECOVERY",
+      "CERTIFIED_TERMINAL",
+      "ASSURANCE_BOUNDARY"
+    ],
+    "source": "SOURCE_BOUNDED_LOCAL_RECOVERY_V1",
+    "trigger": [
+      "SAME_CYCLE_L1_PASS",
+      "PRIMARY_C0_PASS",
+      "PRIMARY_L2_PASS",
+      "PRIMARY_L3_TYPED_CANDIDATE_LOCAL_FAIL",
+      "NO_VALID_RETAINED_BACKUP",
+      "TERMINAL_CURRENT_STATE_PRECERT_PASS",
+      "DEADLINE_OPEN",
+      "EXACT_IDENTITIES",
+      "SOURCE_AUTHORIZED",
+      "EXHAUSTION_KEY_ELIGIBLE"
+    ]
+  },
+  "schema": "BOUNDED_LOCAL_RECOVERY_SMOKE_INPUT_AUTHORITY_MANIFEST_V1",
+  "scientific_verdict_unchanged": "FAIL_POST_REPAIR_V3_PROGRESS_NONINFERIORITY_GATE",
+  "smoke_trial_run_count": 0,
+  "tmux_created_count": 0
+}

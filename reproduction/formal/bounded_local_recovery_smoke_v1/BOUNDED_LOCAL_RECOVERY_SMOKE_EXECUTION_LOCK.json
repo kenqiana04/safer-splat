@@ -1,0 +1,51 @@
+{
+  "candidate_family": "F1_AXIS_EXTREMA_ONLY",
+  "candidate_maximum": 6,
+  "candidate_order": [
+    "+x",
+    "-x",
+    "+y",
+    "-y",
+    "+z",
+    "-z"
+  ],
+  "execution_authorization_token": "EXECUTE_BOUNDED_LOCAL_RECOVERY_SMOKE_V1",
+  "freeze_gpu_run_count": 0,
+  "freeze_real_plantcommit_count": 0,
+  "freeze_smoke_trial_run_count": 0,
+  "freeze_tmux_created_count": 0,
+  "future_result_root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_20260918",
+  "future_tmux_session": "bounded_local_recovery_smoke_v1",
+  "gate0_head": "18ba8ed8aa3b4acc326426e05808bd5abe67561c",
+  "geometry": {
+    "effective_radius_q": 0.015,
+    "epsilon": null,
+    "hard_radius_q": 0.015,
+    "historical_diagnostic_radius_q": 0.025,
+    "historical_diagnostic_runtime_authority": false,
+    "rho_seg_q": 0.0,
+    "runtime_margin_q": 0.0,
+    "unit": "q"
+  },
+  "harness_sha256": {
+    "analyze_bounded_local_recovery_smoke_v1.py": "81782bda6a9d00d8cd60899a0f70c8f77db0e4e77d98d25426fd3dc19ac4d648",
+    "launch_bounded_local_recovery_smoke_v1.py": "6e6c70b4af24ebe0c08a13bc5b7cec91e2545f05fe6969311447a88365a831b3",
+    "monitor_bounded_local_recovery_smoke_v1.py": "180f182608fa0b49886feac2491660b1183e1b49c25d3e26cfdd3c44d31c5be0",
+    "run_bounded_local_recovery_smoke_trial_v1.py": "c4d91656e703109a80218713cc06a089a91970f09605b46ced44f38f7eba1d1c",
+    "validate_bounded_local_recovery_smoke_v1.py": "acafeb3c143d407b5f6053b573506112eed19b67c11b6b57b789e9e45726a922"
+  },
+  "implementation_head": "8184b0ecec20b6e84b1745518903b87bbb5cde8f",
+  "map_identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+  "protocol_commit": "ae1aa239ac6b9950e5c1f89e57aff480dbadb7ee",
+  "protocol_sha256": "16f3f81ee2b8b47f310130ae086a8211834727233d6c80b20df1cf4297d285ef",
+  "recovery_generator": "AXIS_EXTREMA_F32_V1",
+  "recovery_source": "SOURCE_BOUNDED_LOCAL_RECOVERY_V1",
+  "schema": "BOUNDED_LOCAL_RECOVERY_SMOKE_EXECUTION_LOCK_V1",
+  "semantic_protocol_sha256": "320995a7ff1023aefd05a848d2cbdd4f984b22572d0d15ef425a58da6ce42bb9",
+  "trial_order": [
+    15,
+    45,
+    75
+  ],
+  "trial_order_sha256": "f65880d7fe3c1d8127b5cfbbeaff78c4fb462bb658e22d6ae0d69995afe4508a"
+}
