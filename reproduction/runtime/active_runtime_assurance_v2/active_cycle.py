@@ -14,6 +14,11 @@ from .active_runner import ActiveRunner
 from .alternative_provider import NativeExistingAlternativeProvider
 from .authority_registry import AuthorityRegistry
 from .backup_token_store import BackupTokenStore
+from .bounded_recovery import (
+    BoundedRecoveryProvider, RecoveryCandidate, RecoveryExhaustionRegister,
+    RecoveryInventory, RecoverySourceGrant, ScanStatus, SOURCE as RECOVERY_SOURCE,
+    exhaustion_key, has_gate0_geometry,
+)
 from .c0_admission import C0Admission
 from .deadline_runtime import DeadlineTracker
 from .diagnostic_r0 import DiagnosticR0
@@ -40,6 +45,7 @@ from .runtime_types import (
     PublicCycleEvent,
     PublicCyclePhase,
     ReasonScope,
+    RecoveryRoutingFacts,
     RouteResolutionStatus,
     RoutingDecision,
     RuntimePhase,
@@ -82,6 +88,7 @@ class ActiveCycleCoordinator:
         deadline_tracker: DeadlineTracker,
         supervisor: Supervisor,
         active_runner: ActiveRunner,
+        recovery_provider: BoundedRecoveryProvider | None = None,
     ) -> None:
         if active_runner.registry is not registry or active_runner.supervisor is not supervisor:
             raise PublicCycleStateError("COORDINATOR_RUNNER_AUTHORITY_IDENTITY_MISMATCH")
@@ -101,6 +108,10 @@ class ActiveCycleCoordinator:
         self.deadline_tracker = deadline_tracker
         self.supervisor = supervisor
         self.active_runner = active_runner
+        if recovery_provider is not None and recovery_provider.registry is not registry:
+            raise PublicCycleStateError("RECOVERY_PROVIDER_REGISTRY_IDENTITY_MISMATCH")
+        self.recovery_provider = recovery_provider
+        self.recovery_register = RecoveryExhaustionRegister() if recovery_provider is not None else None
         self._session: CoordinatorSession | None = None
 
     @property
@@ -122,6 +133,7 @@ class ActiveCycleCoordinator:
         reason_scope: ReasonScope | str = ReasonScope.NONE,
         repeated_route_state: bool = False,
         backup_state: str | None = None,
+        recovery_facts: RecoveryRoutingFacts | None = None,
     ) -> RuntimeRoutingContext:
         return RuntimeRoutingContext(
             source_phase=source_phase,
@@ -139,6 +151,8 @@ class ActiveCycleCoordinator:
             repeated_route_state=repeated_route_state,
             backup_state=backup_state,
             candidate_provenance_identity=None if candidate is None else candidate.provenance.controller_identity,
+            candidate_source_type=None if candidate is None else candidate.provenance.source_type,
+            recovery_facts=recovery_facts,
         )
 
     def _route(
@@ -276,6 +290,45 @@ class ActiveCycleCoordinator:
             return None
         return "trace-step:sha256:" + canonical_sha256(records[-1])
 
+    def _record_recovery_attempt(self, context: ActiveCycleContext, snapshot: RuntimeStateSnapshot,
+                                 current: RecoveryCandidate, c0_result, l2_result, l3_result,
+                                 deadline: DeadlineObservation, fallback_reason: str,
+                                 resume_search: bool = False,
+                                 exception_stage: str | None = None) -> ActiveCycleContext:
+        if self.recovery_register is None or context.recovery_key is None or context.recovery_scan_id is None:
+            raise PublicCycleStateError("RECOVERY_ATTEMPT_WITHOUT_TRIAL_REGISTER")
+        self.recovery_register.attempted(snapshot.trial_id, context.recovery_key,
+                                         current.generation_rank, current.canonical_control_identity)
+        stage, status = ((exception_stage, CertificateStatus.UNKNOWN) if exception_stage is not None else
+                         ("C0", c0_result.status) if c0_result is not None and c0_result.status != CertificateStatus.PASS else
+                         ("L2", l2_result.status) if l2_result is not None and l2_result.status != CertificateStatus.PASS else
+                         ("L3", l3_result.status) if l3_result is not None else ("UNKNOWN", CertificateStatus.UNKNOWN))
+        disposition = "RECOVERY_CERT_PASS" if l3_result is not None and l3_result.status == CertificateStatus.PASS else f"RECOVERY_{stage}_{status.value}"
+        fields = (
+            ("public_cycle_id", snapshot.cycle_index), ("recovery_scan_id", context.recovery_scan_id),
+            ("exhaustion_key", context.recovery_key), ("candidate_rank", current.generation_rank),
+            ("candidate_id", current.candidate.identity.value), ("candidate_source", RECOVERY_SOURCE),
+            ("canonical_action_identity", current.canonical_control_identity),
+            ("source_state_identity", snapshot.identity.value), ("map_identity", snapshot.map_identity),
+            ("generator_version", "AXIS_EXTREMA_F32_V1"),
+            ("actuator_authority_identity", self.registry.actuator.identity.value),
+            ("C0_status", "NOT_REACHED" if c0_result is None else c0_result.status.value),
+            ("C0_reason", "NOT_REACHED" if c0_result is None else c0_result.reason),
+            ("L2_status", "NOT_REACHED" if l2_result is None else l2_result.status.value),
+            ("L2_reason", "NOT_REACHED" if l2_result is None else l2_result.reason),
+            ("L3_status", "NOT_REACHED" if l3_result is None else l3_result.status.value),
+            ("L3_reason", "NOT_REACHED" if l3_result is None else l3_result.reason),
+            ("deadline_at_relevant_gates", tuple((item.stage, item.status.value) for item in context.deadline_observations)),
+            ("rejected_by_stage", "NONE" if disposition == "RECOVERY_CERT_PASS" else stage),
+            ("final_disposition", disposition), ("supervisor_selected", False),
+            ("plant_commit_authorized", False), ("fallback_reason", fallback_reason),
+            ("exception_stage", exception_stage),
+        )
+        if disposition != "RECOVERY_CERT_PASS" and not resume_search:
+            self.recovery_register.close(snapshot.trial_id, context.recovery_key, ScanStatus.BLOCKED,
+                                         terminal_disposition=fallback_reason)
+        return replace(context, recovery_attempts=context.recovery_attempts + (fields,))
+
     def _blocked_result(
         self,
         context: ActiveCycleContext,
@@ -335,6 +388,7 @@ class ActiveCycleCoordinator:
             stage_failures=context.stage_failures,
             alternative_inventory_evidence=context.alternative_inventory_evidence,
             commit_transaction_result=context.commit_transaction_result,
+            recovery_attempts=context.recovery_attempts,
         )
 
     def _require_session(self) -> CoordinatorSession:
@@ -377,6 +431,8 @@ class ActiveCycleCoordinator:
         routes += (r0_route,)
         ready = r0_route.status == RouteResolutionStatus.RESOLVED and r0_route.destination_phase == RuntimePhase.L1
         self._session = CoordinatorSession(trial_context.trial_id, trial_context.expected_map_identity, trial_context.initial_cycle_index, TrialSessionStatus.READY if ready else TrialSessionStatus.BLOCKED)
+        if ready and self.recovery_register is not None:
+            self.recovery_register.start_trial(trial_context.trial_id)
         return TrialStartResult(
             trial_context.trial_id,
             CertificateStatus.PASS if ready else CertificateStatus.UNKNOWN,
@@ -426,6 +482,12 @@ class ActiveCycleCoordinator:
         alternative_candidates: tuple[Candidate, ...] | None = None
         alternative_index = 0
         attempt_index = 0
+        recovery_facts: RecoveryRoutingFacts | None = None
+        recovery_grant: RecoverySourceGrant | None = None
+        recovery_inventory: RecoveryInventory | None = None
+        recovery_current: RecoveryCandidate | None = None
+        recovery_key_value: str | None = None
+        recovery_scan_started = False
 
         l1_value, error = self._safe_call(self.l1_runtime.evaluate_cycle, snapshot)
         if error:
@@ -481,9 +543,11 @@ class ActiveCycleCoordinator:
             elif destination == RuntimePhase.C0:
                 if candidate is None:
                     return self._blocked_result(context, snapshot, "C0_WITHOUT_CANDIDATE")
-                phase = PublicCyclePhase.PRIMARY_C0 if candidate.role == CandidateRole.PRIMARY else PublicCyclePhase.ALTERNATIVE_C0
+                phase = (PublicCyclePhase.RECOVERY_C0 if candidate.provenance.source_type == RECOVERY_SOURCE else
+                         PublicCyclePhase.PRIMARY_C0 if candidate.role == CandidateRole.PRIMARY else PublicCyclePhase.ALTERNATIVE_C0)
                 context = self._advance(context, phase)
-                c0_result, error = self._safe_call(self.c0_admission.evaluate, candidate, snapshot)
+                c0_result, error = self._safe_call(self.c0_admission.evaluate, candidate, snapshot,
+                    recovery_grant) if candidate.provenance.source_type == RECOVERY_SOURCE else self._safe_call(self.c0_admission.evaluate, candidate, snapshot)
                 if error:
                     context, route = self._stage_failure_route(
                         context,
@@ -493,21 +557,34 @@ class ActiveCycleCoordinator:
                         self._routing_context(RuntimePhase.C0, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, reason_scope=ReasonScope.INFRASTRUCTURE_HEALTH),
                         seen,
                     )
+                    if recovery_current is not None:
+                        context = self._record_recovery_attempt(
+                            context, snapshot, recovery_current, None, None, None,
+                            deadline, route.reason, exception_stage="C0")
+                        recovery_current = None
                     if route.status != RouteResolutionStatus.RESOLVED:
                         return self._blocked_result(context, snapshot, route.reason)
                     continue
                 if candidate.role == CandidateRole.PRIMARY:
                     context = replace(context, primary_c0=c0_result)
-                scope = self.supervisor.classify_reason_scope("C0", c0_result.reason) if c0_result.status == CertificateStatus.UNKNOWN else ReasonScope.NONE
+                scope = (self.supervisor.classify_reason_scope("C0", c0_result.reason)
+                         if c0_result.status == CertificateStatus.UNKNOWN or candidate.provenance.source_type == RECOVERY_SOURCE and c0_result.status == CertificateStatus.FAIL
+                         else ReasonScope.NONE)
                 if c0_result.status == CertificateStatus.UNKNOWN:
                     context = self._record_stage_unknown(context, RuntimePhase.C0, "C0", c0_result.reason, scope, candidate)
                 event = self._c0_event(c0_result.status, scope)
-                context, route = self._route(context, event, self._routing_context(RuntimePhase.C0, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, backup_state=backup_evidence.status.value, reason_scope=scope), seen)
+                context, route = self._route(context, event, self._routing_context(RuntimePhase.C0, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, backup_state=backup_evidence.status.value, reason_scope=scope, recovery_facts=recovery_facts if candidate.provenance.source_type == RECOVERY_SOURCE else None), seen)
+                if candidate.provenance.source_type == RECOVERY_SOURCE and c0_result.status != CertificateStatus.PASS and recovery_current is not None:
+                    context = self._record_recovery_attempt(context, snapshot, recovery_current,
+                                                            c0_result, None, None, deadline, route.reason,
+                                                            route.destination_phase == RuntimePhase.RECOVERY_SEARCH)
+                    recovery_current = None
 
             elif destination == RuntimePhase.L2:
                 if candidate is None:
                     return self._blocked_result(context, snapshot, "L2_WITHOUT_CANDIDATE")
-                phase = PublicCyclePhase.PRIMARY_L2 if candidate.role == CandidateRole.PRIMARY else PublicCyclePhase.ALTERNATIVE_L2
+                phase = (PublicCyclePhase.RECOVERY_L2 if candidate.provenance.source_type == RECOVERY_SOURCE else
+                         PublicCyclePhase.PRIMARY_L2 if candidate.role == CandidateRole.PRIMARY else PublicCyclePhase.ALTERNATIVE_L2)
                 context = self._advance(context, phase)
                 l2_result, error = self._safe_call(self.l2_runtime.evaluate, snapshot, candidate)
                 if error:
@@ -519,6 +596,11 @@ class ActiveCycleCoordinator:
                         self._routing_context(RuntimePhase.L2, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, reason_scope=ReasonScope.INFRASTRUCTURE_HEALTH),
                         seen,
                     )
+                    if recovery_current is not None:
+                        context = self._record_recovery_attempt(
+                            context, snapshot, recovery_current, c0_result, None, None,
+                            deadline, route.reason, exception_stage="L2")
+                        recovery_current = None
                     if route.status != RouteResolutionStatus.RESOLVED:
                         return self._blocked_result(context, snapshot, route.reason)
                     continue
@@ -530,12 +612,18 @@ class ActiveCycleCoordinator:
                 event = self._l2_event(l2_result.status, scope)
                 if l2_result.status == CertificateStatus.PASS:
                     context, deadline = self._observe(context, "L3_DISCOVERY_ADMISSION")
-                context, route = self._route(context, event, self._routing_context(RuntimePhase.L2, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, backup_state=backup_evidence.status.value, reason_scope=scope), seen)
+                context, route = self._route(context, event, self._routing_context(RuntimePhase.L2, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, backup_state=backup_evidence.status.value, reason_scope=scope, recovery_facts=recovery_facts if candidate.provenance.source_type == RECOVERY_SOURCE else None), seen)
+                if candidate.provenance.source_type == RECOVERY_SOURCE and l2_result.status != CertificateStatus.PASS and recovery_current is not None:
+                    context = self._record_recovery_attempt(context, snapshot, recovery_current,
+                                                            c0_result, l2_result, None, deadline, route.reason,
+                                                            route.destination_phase == RuntimePhase.RECOVERY_SEARCH)
+                    recovery_current = None
 
             elif destination == RuntimePhase.L3:
                 if candidate is None or l2_result is None:
                     return self._blocked_result(context, snapshot, "L3_WITHOUT_MATCHING_L2")
-                phase = PublicCyclePhase.PRIMARY_L3 if candidate.role == CandidateRole.PRIMARY else PublicCyclePhase.ALTERNATIVE_L3
+                phase = (PublicCyclePhase.RECOVERY_L3 if candidate.provenance.source_type == RECOVERY_SOURCE else
+                         PublicCyclePhase.PRIMARY_L3 if candidate.role == CandidateRole.PRIMARY else PublicCyclePhase.ALTERNATIVE_L3)
                 context = self._advance(context, phase)
                 l3_result, error = self._safe_call(self.l3_runtime.evaluate, snapshot, candidate, l2_result)
                 if error:
@@ -547,6 +635,11 @@ class ActiveCycleCoordinator:
                         self._routing_context(RuntimePhase.L3, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, reason_scope=ReasonScope.INFRASTRUCTURE_HEALTH),
                         seen,
                     )
+                    if recovery_current is not None:
+                        context = self._record_recovery_attempt(
+                            context, snapshot, recovery_current, c0_result, l2_result, None,
+                            deadline, route.reason, exception_stage="L3")
+                        recovery_current = None
                     if route.status != RouteResolutionStatus.RESOLVED:
                         return self._blocked_result(context, snapshot, route.reason)
                     continue
@@ -554,11 +647,144 @@ class ActiveCycleCoordinator:
                     context = replace(context, primary_l3=l3_result)
                 if l3_result.status == CertificateStatus.PASS:
                     certified_candidate = candidate
-                scope = self.supervisor.classify_reason_scope("L3", l3_result.reason) if l3_result.status == CertificateStatus.UNKNOWN else ReasonScope.NONE
+                scope = (self.supervisor.classify_recovery_l3_fail(l3_result.reason)
+                         if l3_result.status == CertificateStatus.FAIL else
+                         self.supervisor.classify_reason_scope("L3", l3_result.reason)
+                         if l3_result.status == CertificateStatus.UNKNOWN else ReasonScope.NONE)
+                if candidate.role == CandidateRole.PRIMARY and l3_result.status == CertificateStatus.FAIL and self.recovery_provider is not None and self.recovery_register is not None:
+                    backup_class = ("NONE" if token is None else "EXHAUSTED" if token.lifecycle.value == "EXHAUSTED" else "INVALID")
+                    exact = (l1_value is not None and l1_value.state_identity == snapshot.identity and
+                             context.primary_c0 is not None and context.primary_c0.candidate_identity == candidate.identity and
+                             l2_result.candidate_identity == candidate.identity and l3_result.candidate_identity == candidate.identity and
+                             candidate.provenance.state_identity == snapshot.identity and candidate.provenance.map_identity == snapshot.map_identity == self.registry.map_identity)
+                    source_registered = (self.recovery_provider.registry is self.registry and
+                                         has_gate0_geometry(self.registry))
+                    try:
+                        recovery_key_value = exhaustion_key(
+                            snapshot, actuator_identity=self.registry.actuator.identity.value,
+                            geometry_identity=self.registry.geometry.identity.value,
+                            transition_identity=self.recovery_provider.transition_identity,
+                            backend_identity=self.recovery_provider.backend_identity,
+                            backup_routing_class=backup_class,
+                        )
+                        old_scan = self.recovery_register.lookup(snapshot.trial_id, recovery_key_value)
+                        key_eligible = old_scan is None or old_scan.status == ScanStatus.PAUSED
+                    except (ValueError, RuntimeError, OverflowError):
+                        recovery_key_value = None
+                        key_eligible = False
+                    recovery_facts = RecoveryRoutingFacts(
+                        l1_pass=l1_value.status == CertificateStatus.PASS,
+                        primary_exists=context.primary_candidate is not None,
+                        primary_c0_pass=context.primary_c0 is not None and context.primary_c0.status == CertificateStatus.PASS,
+                        primary_l2_pass=l2_result.status == CertificateStatus.PASS,
+                        primary_l3_status=l3_result.status.value,
+                        primary_l3_reason=l3_result.reason,
+                        source_authorized=source_registered,
+                        exact_identities=exact,
+                        exhaustion_eligible=key_eligible,
+                    )
+                    context = replace(context, recovery_key=recovery_key_value)
                 if l3_result.status == CertificateStatus.UNKNOWN:
                     context = self._record_stage_unknown(context, RuntimePhase.L3, "L3", l3_result.reason, scope, candidate)
                 event = self._l3_event(l3_result.status, scope)
-                context, route = self._route(context, event, self._routing_context(RuntimePhase.L3, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, certified_candidate_available=l3_result.status == CertificateStatus.PASS, backup_state=backup_evidence.status.value, reason_scope=scope), seen)
+                context, route = self._route(context, event, self._routing_context(RuntimePhase.L3, deadline, candidate=candidate, backup_present=token is not None, backup_valid=backup_valid, certified_candidate_available=l3_result.status == CertificateStatus.PASS, backup_state=backup_evidence.status.value, reason_scope=scope, recovery_facts=recovery_facts), seen)
+                if candidate.provenance.source_type == RECOVERY_SOURCE and recovery_current is not None:
+                    context = self._record_recovery_attempt(context, snapshot, recovery_current,
+                                                            c0_result, l2_result, l3_result, deadline, route.reason,
+                                                            route.destination_phase == RuntimePhase.RECOVERY_SEARCH)
+                    if l3_result.status == CertificateStatus.PASS:
+                        context = replace(context, recovery_selected_candidate_id=candidate.identity.value)
+                    recovery_current = None
+
+            elif destination == RuntimePhase.RECOVERY_SEARCH:
+                context = self._advance(context, PublicCyclePhase.RECOVERY_SOURCE_QUERY)
+                context, deadline = self._observe(context, "RECOVERY_CANDIDATE_ADMISSION")
+                admission = self.supervisor.route_transition(
+                    PublicCycleEvent.RECOVERY_SCAN_ADMISSION,
+                    self._routing_context(RuntimePhase.RECOVERY_SEARCH, deadline,
+                                          backup_present=token is not None,
+                                          backup_valid=backup_valid,
+                                          recovery_facts=recovery_facts),
+                )
+                context = replace(context, routing_decisions=context.routing_decisions + (admission,))
+                if admission.status != RouteResolutionStatus.RESOLVED:
+                    return self._blocked_result(context, snapshot, admission.reason)
+                if admission.destination_phase != RuntimePhase.RECOVERY_SEARCH:
+                    if recovery_scan_started and self.recovery_register is not None and recovery_key_value is not None:
+                        self.recovery_register.close(snapshot.trial_id, recovery_key_value, ScanStatus.PAUSED,
+                                                     terminal_disposition=admission.reason)
+                    route = admission
+                    continue
+                if recovery_facts is None or recovery_key_value is None or self.recovery_provider is None or self.recovery_register is None:
+                    context, route = self._route(context, PublicCycleEvent.RECOVERY_SOURCE_UNAUTHORIZED,
+                        self._routing_context(RuntimePhase.RECOVERY_SEARCH, deadline, backup_present=token is not None,
+                                              backup_valid=backup_valid, recovery_facts=recovery_facts), seen)
+                    continue
+                if recovery_inventory is None:
+                    grant_context = self._routing_context(RuntimePhase.TERMINAL_EVALUATION, deadline,
+                        backup_present=token is not None, backup_valid=backup_valid,
+                        terminal_evaluated=True, terminal_evidence_eligible=True,
+                        recovery_facts=recovery_facts)
+                    recovery_grant = self.supervisor.authorize_recovery_source(
+                        snapshot, grant_context, self.recovery_provider.transition_identity)
+                    if recovery_grant is None:
+                        context, route = self._route(context, PublicCycleEvent.RECOVERY_SOURCE_UNAUTHORIZED,
+                            self._routing_context(RuntimePhase.RECOVERY_SEARCH, deadline, backup_present=token is not None,
+                                                  backup_valid=backup_valid, recovery_facts=recovery_facts), seen)
+                        continue
+                    recovery_inventory, source_error = self._safe_call(
+                        self.recovery_provider.enumerate, snapshot, recovery_grant, context.primary_candidate)
+                    if source_error is not None or recovery_inventory is None:
+                        context, route = self._route(context, PublicCycleEvent.RECOVERY_SOURCE_UNAUTHORIZED,
+                            self._routing_context(RuntimePhase.RECOVERY_SEARCH, deadline, backup_present=token is not None,
+                                                  backup_valid=backup_valid, recovery_facts=recovery_facts), seen)
+                        continue
+                    if recovery_inventory.status not in {"RECOVERY_AVAILABLE", "RECOVERY_SCAN_EXHAUSTED"}:
+                        context, route = self._route(context, PublicCycleEvent.RECOVERY_SOURCE_UNAUTHORIZED,
+                            self._routing_context(RuntimePhase.RECOVERY_SEARCH, deadline, backup_present=token is not None,
+                                                  backup_valid=backup_valid, recovery_facts=recovery_facts), seen)
+                        continue
+                    scan = self.recovery_register.begin(snapshot.trial_id, recovery_key_value)
+                    recovery_scan_started = True
+                    context = replace(context, recovery_scan_id=scan.scan_id)
+                    for skipped_rank in recovery_inventory.skipped_duplicate_ranks:
+                        context = replace(context, recovery_attempts=context.recovery_attempts +
+                            ((('public_cycle_id', snapshot.cycle_index), ('recovery_scan_id', scan.scan_id),
+                              ('exhaustion_key', recovery_key_value), ('candidate_rank', skipped_rank),
+                              ('candidate_source', RECOVERY_SOURCE), ('final_disposition', 'RECOVERY_DUPLICATE_SKIPPED'),
+                              ('supervisor_selected', False), ('plant_commit_authorized', False)),))
+                scan = self.recovery_register.lookup(snapshot.trial_id, recovery_key_value)
+                if scan is None or scan.status != ScanStatus.ACTIVE:
+                    return self._blocked_result(context, snapshot, "RECOVERY_SCAN_LIFECYCLE_MISSING")
+                available = tuple(item for item in recovery_inventory.candidates
+                                  if item.generation_rank >= scan.cursor and
+                                  item.canonical_control_identity not in scan.tried_control_ids)
+                recovery_facts = replace(recovery_facts, remaining_candidates=bool(available))
+                if not available:
+                    self.recovery_register.close(snapshot.trial_id, recovery_key_value, ScanStatus.EXHAUSTED,
+                                                 terminal_disposition="FALLBACK_TO_CERTIFIED_TERMINAL")
+                    context = replace(context, recovery_attempts=context.recovery_attempts +
+                        ((('public_cycle_id', snapshot.cycle_index), ('recovery_scan_id', context.recovery_scan_id),
+                          ('exhaustion_key', recovery_key_value), ('final_disposition', 'RECOVERY_SCAN_EXHAUSTED'),
+                          ('supervisor_selected', False), ('plant_commit_authorized', False),
+                          ('fallback_reason', 'FALLBACK_TO_CERTIFIED_TERMINAL')),))
+                    context, route = self._route(context, PublicCycleEvent.RECOVERY_SCAN_EXHAUSTED,
+                        self._routing_context(RuntimePhase.RECOVERY_SEARCH, deadline, backup_present=token is not None,
+                                              backup_valid=backup_valid, recovery_facts=recovery_facts), seen)
+                    continue
+                recovery_current = available[0]
+                candidate = recovery_current.candidate
+                c0_result = None
+                l2_result = None
+                l3_result = None
+                certified_candidate = None
+                self.l1_runtime.bind_attempt(l1_value, candidate, attempt_index)
+                attempt_index += 1
+                context = replace(context, alternative_attempts=context.alternative_attempts + (candidate.identity,))
+                context, route = self._route(context, PublicCycleEvent.RECOVERY_CANDIDATE_AVAILABLE,
+                    self._routing_context(RuntimePhase.RECOVERY_SEARCH, deadline, candidate=candidate,
+                                          backup_present=token is not None, backup_valid=backup_valid,
+                                          recovery_facts=recovery_facts), seen)
 
             elif destination == RuntimePhase.ALT_SEARCH:
                 context = self._advance(context, PublicCyclePhase.ALTERNATIVE_ELIGIBILITY)
@@ -658,6 +884,7 @@ class ActiveCycleCoordinator:
                     return self._commit_or_boundary(context, snapshot, decision, boundary=True)
 
             elif destination == RuntimePhase.TERMINAL_EVALUATION:
+                recovery_prefetch = route.rule_id == "REC_L3_PREFETCH"
                 context = self._advance(context, PublicCyclePhase.TERMINAL_EVALUATION)
                 context, deadline = self._observe(context, "TERMINAL_EVALUATION_ADMISSION")
                 terminal_result, error = self._safe_call(self.terminal_runtime.evaluate, snapshot, True, cycle_context.expected_terminal_ref)
@@ -678,7 +905,10 @@ class ActiveCycleCoordinator:
                     terminal_scope = self.supervisor.classify_reason_scope("TERMINAL_EVALUATION", terminal_result.reason)
                     context = self._record_stage_unknown(context, RuntimePhase.TERMINAL_EVALUATION, "TERMINAL_EVALUATION", terminal_result.reason, terminal_scope)
                 terminal_event = self._terminal_event(terminal_result.status, terminal_result.eligible)
-                context, route = self._route(context, terminal_event, self._routing_context(RuntimePhase.TERMINAL_EVALUATION, deadline, backup_present=token is not None, backup_valid=backup_valid, terminal_evaluated=True, terminal_evidence_eligible=terminal_result.status == CertificateStatus.PASS and terminal_result.eligible, backup_state=backup_evidence.status.value, reason_scope=terminal_scope if terminal_result.status == CertificateStatus.UNKNOWN else ReasonScope.NONE), seen)
+                if recovery_prefetch and recovery_facts is not None:
+                    recovery_facts = replace(recovery_facts, terminal_prefetch=True,
+                                             terminal_pass=terminal_result.status == CertificateStatus.PASS and terminal_result.eligible)
+                context, route = self._route(context, terminal_event, self._routing_context(RuntimePhase.TERMINAL_EVALUATION, deadline, backup_present=token is not None, backup_valid=backup_valid, terminal_evaluated=True, terminal_evidence_eligible=terminal_result.status == CertificateStatus.PASS and terminal_result.eligible, backup_state=backup_evidence.status.value, reason_scope=terminal_scope if terminal_result.status == CertificateStatus.UNKNOWN else ReasonScope.NONE, recovery_facts=recovery_facts if recovery_prefetch else None), seen)
                 if route.status == RouteResolutionStatus.RESOLVED and route.destination_phase in {RuntimePhase.COMMIT, RuntimePhase.ASSURANCE_BOUNDARY}:
                     decision, error = self._safe_call(self.supervisor.arbitrate, snapshot, None, None, backup_action, backup_valid, terminal_result, deadline)
                     if error:
@@ -728,6 +958,28 @@ class ActiveCycleCoordinator:
                 return self._blocked_result(context, snapshot, route.reason)
 
     def _commit_or_boundary(self, context: ActiveCycleContext, snapshot: RuntimeStateSnapshot, decision, boundary: bool) -> ActiveCycleResult:
+        if context.recovery_attempts:
+            selected_id = (None if decision.selected_action is None or not decision.allows_commit
+                           else decision.selected_action.source_identity)
+            annotated = []
+            for raw in context.recovery_attempts:
+                fields = dict(raw)
+                selected = fields.get("candidate_id") == selected_id and fields.get("final_disposition") == "RECOVERY_CERT_PASS"
+                fields["supervisor_selected"] = bool(selected)
+                fields["plant_commit_authorized"] = bool(selected and decision.allows_commit)
+                annotated.append(tuple(fields.items()))
+            context = replace(context, recovery_attempts=tuple(annotated))
+            decision = self.supervisor.attach_recovery_evidence(decision, context.recovery_attempts)
+            if self.recovery_register is not None and context.recovery_key is not None:
+                record = self.recovery_register.lookup(snapshot.trial_id, context.recovery_key)
+                if record is not None and record.status == ScanStatus.ACTIVE:
+                    self.recovery_register.close(
+                        snapshot.trial_id, context.recovery_key,
+                        ScanStatus.SELECTED if selected_id == context.recovery_selected_candidate_id and selected_id is not None else ScanStatus.PAUSED,
+                        selected_candidate_id=selected_id if selected_id == context.recovery_selected_candidate_id else None,
+                        terminal_disposition=decision.reason,
+                    )
+            context = replace(context, final_supervisor_decision=decision)
         phase = PublicCyclePhase.ASSURANCE_BOUNDARY if boundary else PublicCyclePhase.COMMIT
         context = self._advance(context, phase)
         before = len(self.active_runner.trace_writer.records)
@@ -771,6 +1023,8 @@ class ActiveCycleCoordinator:
         result = self.active_runner.finalize_trace_result()
         if result.status == FinalizationStatus.FINALIZED:
             self._session = replace(self._require_session(), status=TrialSessionStatus.FINALIZED)
+            if self.recovery_register is not None:
+                self.recovery_register.finalize_trial()
         elif result.status == FinalizationStatus.RECOVERY_REQUIRED:
             self._session = replace(self._require_session(), status=TrialSessionStatus.RECOVERY_REQUIRED)
         else:

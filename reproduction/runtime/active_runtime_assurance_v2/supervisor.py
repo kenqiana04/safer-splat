@@ -8,6 +8,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from .authority_registry import AuthorityRegistry
+from .bounded_recovery import RecoverySourceGrant, SOURCE as RECOVERY_SOURCE
 from .runtime_types import (
     ActionRole,
     AlternativeInventoryEvidence,
@@ -27,6 +28,8 @@ from .runtime_types import (
     RouteResolutionStatus,
     PublicCycleEvent,
     ReasonScope,
+    RecoveryRoutingFacts,
+    RecoverySupervisorDecision,
     SelectedAction,
     StageFailureEvidence,
     SupervisorDecision,
@@ -43,6 +46,7 @@ _REASON_SCOPE_BY_CODE = {
     "TERMINAL_MAP_IDENTITY_MISMATCH": ReasonScope.GLOBAL_AUTHORITY_OR_EVIDENCE,
     "STALE_TERMINAL_REFERENCE": ReasonScope.GLOBAL_AUTHORITY_OR_EVIDENCE,
     "SOURCE_INVALID": ReasonScope.GLOBAL_AUTHORITY_OR_EVIDENCE,
+    "RECOVERY_SOURCE_UNAUTHORIZED": ReasonScope.GLOBAL_AUTHORITY_OR_EVIDENCE,
     "PROVENANCE_MISSING": ReasonScope.GLOBAL_AUTHORITY_OR_EVIDENCE,
     "CANDIDATE_NONFINITE_OR_WRONG_DIMENSION": ReasonScope.CANDIDATE_LOCAL_COMPUTATION,
     "F_ACTUATOR_ADMISSIBILITY_LOCAL": ReasonScope.CANDIDATE_LOCAL_COMPUTATION,
@@ -54,6 +58,59 @@ _REASON_SCOPE_BY_CODE = {
     "CURRENT_QUERY_EXCEPTION": ReasonScope.INFRASTRUCTURE_HEALTH,
     "STAGE_EXCEPTION": ReasonScope.INFRASTRUCTURE_HEALTH,
 }
+
+
+# Only finite, candidate-dependent witness failures whose nested reason is
+# typed as a represented-map unsafe witness or future terminal membership
+# failure may open Gate 0 recovery.  Inconclusive/unknown/global/timeout
+# reasons are never silently converted to a local FAIL.
+_RECOVERY_LOCAL_L3_REASONS = frozenset({
+    "BACKUP_SEGMENT_NOT_CERTIFIED:FINITE_UNSAFE_WITNESS",
+    "BACKUP_SEGMENT_NOT_CERTIFIED:SEGMENT_EXACT_UNSAFE",
+    "TERMINAL_CERTIFICATE_FAILED:TERMINAL_VELOCITY_NOT_ZERO_WITHIN_TOLERANCE",
+    "TERMINAL_CERTIFICATE_FAILED:TERMINAL_ZERO_HOLD_NOT_CERTIFIED:FINITE_UNSAFE_WITNESS",
+    "TERMINAL_CERTIFICATE_FAILED:TERMINAL_ZERO_HOLD_NOT_CERTIFIED:SEGMENT_EXACT_UNSAFE",
+})
+
+
+@dataclass(frozen=True)
+class RecoveryTransitionRule:
+    rule_id: str
+    phase: RuntimePhase
+    event: PublicCycleEvent
+    destination: RuntimePhase
+    guard: str
+
+
+RECOVERY_TRANSITION_RULES = (
+    RecoveryTransitionRule("REC_L3_PREFETCH", RuntimePhase.L3, PublicCycleEvent.L3_WITNESS_ABSENT, RuntimePhase.TERMINAL_EVALUATION, "RECOVERY_ENTRY_EXACT"),
+    RecoveryTransitionRule("REC_TERMINAL_PASS", RuntimePhase.TERMINAL_EVALUATION, PublicCycleEvent.TERMINAL_MEMBER_ELIGIBLE, RuntimePhase.RECOVERY_SEARCH, "PREFETCH_CERTIFIED"),
+    RecoveryTransitionRule("REC_TERMINAL_GUARD", RuntimePhase.TERMINAL_EVALUATION, PublicCycleEvent.TERMINAL_MEMBER_ELIGIBLE, RuntimePhase.ARBITRATION, "PREFETCH_CERTIFIED_DEADLINE_GUARD"),
+    RecoveryTransitionRule("REC_TERMINAL_BLOCK", RuntimePhase.TERMINAL_EVALUATION, PublicCycleEvent.TERMINAL_MEMBER_NOT_ELIGIBLE, RuntimePhase.ASSURANCE_BOUNDARY, "PREFETCH_NOT_CERTIFIED"),
+    RecoveryTransitionRule("REC_TERMINAL_UNKNOWN", RuntimePhase.TERMINAL_EVALUATION, PublicCycleEvent.TERMINAL_UNKNOWN, RuntimePhase.ASSURANCE_BOUNDARY, "PREFETCH_UNKNOWN"),
+    RecoveryTransitionRule("REC_SCAN_PASS", RuntimePhase.RECOVERY_SEARCH, PublicCycleEvent.RECOVERY_CERT_PASS, RuntimePhase.ARBITRATION, "FIRST_FULL_PASS"),
+    RecoveryTransitionRule("REC_SCAN_ADMIT_OPEN", RuntimePhase.RECOVERY_SEARCH, PublicCycleEvent.RECOVERY_SCAN_ADMISSION, RuntimePhase.RECOVERY_SEARCH, "SCAN_ADMISSION_OPEN"),
+    RecoveryTransitionRule("REC_SCAN_ADMIT_GUARD", RuntimePhase.RECOVERY_SEARCH, PublicCycleEvent.RECOVERY_SCAN_ADMISSION, RuntimePhase.ARBITRATION, "SCAN_ADMISSION_NOT_OPEN"),
+    RecoveryTransitionRule("REC_CANDIDATE_AVAILABLE", RuntimePhase.RECOVERY_SEARCH, PublicCycleEvent.RECOVERY_CANDIDATE_AVAILABLE, RuntimePhase.C0, "NEXT_FROZEN_RANK_OPEN"),
+    RecoveryTransitionRule("REC_SCAN_NEXT", RuntimePhase.RECOVERY_SEARCH, PublicCycleEvent.RECOVERY_CANDIDATE_REJECTED, RuntimePhase.RECOVERY_SEARCH, "UNTRIED_REMAIN_OPEN"),
+    RecoveryTransitionRule("REC_SCAN_EXHAUSTED", RuntimePhase.RECOVERY_SEARCH, PublicCycleEvent.RECOVERY_SCAN_EXHAUSTED, RuntimePhase.ARBITRATION, "NO_UNTRIED_CANDIDATE"),
+    RecoveryTransitionRule("REC_SCAN_PAUSED", RuntimePhase.RECOVERY_SEARCH, PublicCycleEvent.RECOVERY_SCAN_PAUSED, RuntimePhase.ARBITRATION, "DEADLINE_NOT_OPEN"),
+    RecoveryTransitionRule("REC_SOURCE_BLOCKED", RuntimePhase.RECOVERY_SEARCH, PublicCycleEvent.RECOVERY_SOURCE_UNAUTHORIZED, RuntimePhase.ARBITRATION, "SOURCE_OR_IDENTITY_BLOCKED"),
+    RecoveryTransitionRule("REC_C0_PASS", RuntimePhase.C0, PublicCycleEvent.C0_PASS, RuntimePhase.L2, "RECOVERY_C0_CERTIFIED"),
+    RecoveryTransitionRule("REC_C0_LOCAL_FAIL", RuntimePhase.C0, PublicCycleEvent.C0_FAIL_LOCAL, RuntimePhase.RECOVERY_SEARCH, "RECOVERY_C0_LOCAL_REJECT"),
+    RecoveryTransitionRule("REC_C0_GLOBAL_FAIL", RuntimePhase.C0, PublicCycleEvent.C0_FAIL_LOCAL, RuntimePhase.ARBITRATION, "RECOVERY_C0_GLOBAL_BLOCK"),
+    RecoveryTransitionRule("REC_C0_UNKNOWN_LOCAL", RuntimePhase.C0, PublicCycleEvent.C0_UNKNOWN_LOCAL, RuntimePhase.ARBITRATION, "RECOVERY_C0_UNKNOWN"),
+    RecoveryTransitionRule("REC_C0_UNKNOWN_GLOBAL", RuntimePhase.C0, PublicCycleEvent.C0_UNKNOWN_GLOBAL, RuntimePhase.ARBITRATION, "RECOVERY_C0_UNKNOWN"),
+    RecoveryTransitionRule("REC_L2_PASS", RuntimePhase.L2, PublicCycleEvent.L2_PASS, RuntimePhase.L3, "RECOVERY_L2_CERTIFIED"),
+    RecoveryTransitionRule("REC_L2_FAIL", RuntimePhase.L2, PublicCycleEvent.L2_FAIL, RuntimePhase.RECOVERY_SEARCH, "RECOVERY_L2_LOCAL_REJECT"),
+    RecoveryTransitionRule("REC_L2_UNKNOWN_LOCAL", RuntimePhase.L2, PublicCycleEvent.L2_UNKNOWN_LOCAL, RuntimePhase.ARBITRATION, "RECOVERY_L2_UNKNOWN"),
+    RecoveryTransitionRule("REC_L2_UNKNOWN_GLOBAL", RuntimePhase.L2, PublicCycleEvent.L2_UNKNOWN_GLOBAL, RuntimePhase.ARBITRATION, "RECOVERY_L2_UNKNOWN"),
+    RecoveryTransitionRule("REC_L3_PASS", RuntimePhase.L3, PublicCycleEvent.L3_WITNESS_FOUND, RuntimePhase.ARBITRATION, "RECOVERY_L3_CERTIFIED"),
+    RecoveryTransitionRule("REC_L3_LOCAL_FAIL", RuntimePhase.L3, PublicCycleEvent.L3_WITNESS_ABSENT, RuntimePhase.RECOVERY_SEARCH, "RECOVERY_L3_LOCAL_REJECT"),
+    RecoveryTransitionRule("REC_L3_GLOBAL_FAIL", RuntimePhase.L3, PublicCycleEvent.L3_WITNESS_ABSENT, RuntimePhase.ARBITRATION, "RECOVERY_L3_UNCLASSIFIED_BLOCK"),
+    RecoveryTransitionRule("REC_L3_UNKNOWN_LOCAL", RuntimePhase.L3, PublicCycleEvent.L3_UNKNOWN_LOCAL, RuntimePhase.ARBITRATION, "RECOVERY_L3_UNKNOWN"),
+    RecoveryTransitionRule("REC_L3_UNKNOWN_GLOBAL", RuntimePhase.L3, PublicCycleEvent.L3_UNKNOWN_GLOBAL, RuntimePhase.ARBITRATION, "RECOVERY_L3_UNKNOWN"),
+)
 
 
 @dataclass(frozen=True)
@@ -211,7 +268,8 @@ class TransitionTable:
         }:
             return not TransitionTable._alternative_branch_available(context)
         if rule.rule_id == "ARB_NAV":
-            return TransitionTable._certified_candidate_fact(context) and context.deadline.status == DeadlineStatus.OPEN
+            return (TransitionTable._certified_candidate_fact(context) and context.deadline.status == DeadlineStatus.OPEN
+                    and not (context.candidate_source_type == RECOVERY_SOURCE and context.retained_backup_valid))
         if rule.rule_id == "ARB_BACKUP_GUARD":
             return (
                 TransitionTable._certified_candidate_fact(context)
@@ -219,7 +277,7 @@ class TransitionTable:
                 and context.deadline.status in {DeadlineStatus.WARNING, DeadlineStatus.EXPIRED}
             )
         if rule.rule_id == "ARB_BACKUP":
-            return not TransitionTable._certified_candidate_fact(context) and context.retained_backup_valid
+            return (not TransitionTable._certified_candidate_fact(context) or context.candidate_source_type == RECOVERY_SOURCE) and context.retained_backup_valid
         if rule.rule_id == "ARB_TERMINAL":
             return not TransitionTable._certified_candidate_fact(context) and not context.retained_backup_valid and context.terminal_evaluated and TransitionTable._terminal_eligibility_fact(context)
         if rule.rule_id == "ARB_EVAL_TERMINAL":
@@ -314,7 +372,117 @@ class Supervisor:
     def route_transition(self, event: PublicCycleEvent | str, runtime_context: RuntimeRoutingContext) -> RoutingDecision:
         if self.transition_table is None:
             return TransitionTable._blocked_decision(runtime_context, RouteResolutionStatus.BLOCKED_MISSING, "ROUTING_RULE_MISSING")
+        if runtime_context.recovery_facts is not None:
+            recovery = runtime_context.recovery_facts
+            if runtime_context.candidate_source_type == RECOVERY_SOURCE and runtime_context.source_phase in {RuntimePhase.C0, RuntimePhase.L2, RuntimePhase.L3}:
+                return self._resolve_recovery(event, runtime_context)
+            elif runtime_context.source_phase == RuntimePhase.L3 and event == PublicCycleEvent.L3_WITNESS_ABSENT:
+                if self._recovery_entry_allowed(runtime_context):
+                    return self._resolve_recovery(event, runtime_context)
+            elif runtime_context.source_phase == RuntimePhase.TERMINAL_EVALUATION and recovery.terminal_prefetch:
+                return self._resolve_recovery(event, runtime_context)
+            elif runtime_context.source_phase == RuntimePhase.RECOVERY_SEARCH:
+                return self._resolve_recovery(event, runtime_context)
         return self.transition_table.resolve(event, runtime_context)
+
+    @staticmethod
+    def classify_recovery_l3_fail(reason: str) -> ReasonScope:
+        return (ReasonScope.CANDIDATE_LOCAL_COMPUTATION if str(reason) in _RECOVERY_LOCAL_L3_REASONS
+                else ReasonScope.UNRESOLVED_SCOPE)
+
+    @classmethod
+    def _recovery_entry_allowed(cls, context: RuntimeRoutingContext) -> bool:
+        facts = context.recovery_facts
+        return bool(facts is not None and context.source_phase == RuntimePhase.L3
+                    and context.candidate_role == CandidateRole.PRIMARY
+                    and context.deadline.status == DeadlineStatus.OPEN
+                    and not context.retained_backup_valid
+                    and facts.l1_pass and facts.primary_exists and facts.primary_c0_pass and facts.primary_l2_pass
+                    and facts.primary_l3_status == CertificateStatus.FAIL.value
+                    and cls.classify_recovery_l3_fail(facts.primary_l3_reason) == ReasonScope.CANDIDATE_LOCAL_COMPUTATION
+                    and facts.source_authorized and facts.exact_identities and facts.exhaustion_eligible)
+
+    @classmethod
+    def _resolve_recovery(cls, event: PublicCycleEvent | str, context: RuntimeRoutingContext) -> RoutingDecision:
+        try:
+            value = event if isinstance(event, PublicCycleEvent) else PublicCycleEvent(str(event))
+        except ValueError:
+            return TransitionTable._blocked_decision(context, RouteResolutionStatus.BLOCKED_MISSING, "RECOVERY_ROUTING_RULE_MISSING")
+        facts = context.recovery_facts
+        matches = []
+        for rule in RECOVERY_TRANSITION_RULES:
+            if rule.phase != context.source_phase or rule.event != value:
+                continue
+            guard = rule.guard
+            if guard.startswith("RECOVERY_C0_") or guard.startswith("RECOVERY_L2_") or guard.startswith("RECOVERY_L3_"):
+                if context.candidate_source_type != RECOVERY_SOURCE:
+                    continue
+            if guard == "RECOVERY_ENTRY_EXACT" and context.candidate_source_type == RECOVERY_SOURCE:
+                continue
+            if guard == "RECOVERY_ENTRY_EXACT" and not cls._recovery_entry_allowed(context):
+                continue
+            if guard == "PREFETCH_CERTIFIED" and not (facts and facts.terminal_prefetch and facts.terminal_pass and context.deadline.status == DeadlineStatus.OPEN):
+                continue
+            if guard == "PREFETCH_CERTIFIED_DEADLINE_GUARD" and not (facts and facts.terminal_prefetch and facts.terminal_pass and context.deadline.status != DeadlineStatus.OPEN):
+                continue
+            if guard in {"PREFETCH_NOT_CERTIFIED", "PREFETCH_UNKNOWN"} and not (facts and facts.terminal_prefetch and not facts.terminal_pass):
+                continue
+            if guard == "UNTRIED_REMAIN_OPEN" and not (facts and facts.remaining_candidates and context.deadline.status == DeadlineStatus.OPEN):
+                continue
+            if guard == "NEXT_FROZEN_RANK_OPEN" and not (facts and facts.remaining_candidates and context.deadline.status == DeadlineStatus.OPEN and context.candidate_source_type == RECOVERY_SOURCE):
+                continue
+            if guard == "NO_UNTRIED_CANDIDATE" and not (facts and not facts.remaining_candidates):
+                continue
+            if guard == "DEADLINE_NOT_OPEN" and context.deadline.status == DeadlineStatus.OPEN:
+                continue
+            if guard == "SCAN_ADMISSION_OPEN" and context.deadline.status != DeadlineStatus.OPEN:
+                continue
+            if guard == "SCAN_ADMISSION_NOT_OPEN" and context.deadline.status == DeadlineStatus.OPEN:
+                continue
+            if guard in {"RECOVERY_C0_LOCAL_REJECT", "RECOVERY_L3_LOCAL_REJECT"} and context.reason_scope != ReasonScope.CANDIDATE_LOCAL_COMPUTATION.value:
+                continue
+            if guard in {"RECOVERY_C0_GLOBAL_BLOCK", "RECOVERY_L3_UNCLASSIFIED_BLOCK"} and context.reason_scope == ReasonScope.CANDIDATE_LOCAL_COMPUTATION.value:
+                continue
+            matches.append(rule)
+        if len(matches) != 1:
+            status = RouteResolutionStatus.BLOCKED_MISSING if not matches else RouteResolutionStatus.BLOCKED_AMBIGUOUS
+            return TransitionTable._blocked_decision(context, status, "RECOVERY_ROUTING_RULE_MISSING" if not matches else "RECOVERY_ROUTING_RULE_AMBIGUOUS")
+        rule = matches[0]
+        return RoutingDecision(
+            status=RouteResolutionStatus.RESOLVED, rule_id=rule.rule_id,
+            source_phase=context.source_phase, destination_phase=rule.destination,
+            may_start_next_stage=True, may_start_new_search=rule.destination == RuntimePhase.RECOVERY_SEARCH,
+            requires_arbitration=rule.destination in {RuntimePhase.ARBITRATION, RuntimePhase.ASSURANCE_BOUNDARY},
+            failure_mapping=None, deadline_interpretation="SUPERVISOR_RECOVERY_GATE0",
+            backup_routing_allowed=True, terminal_routing_allowed=True,
+            commit_allowed=False, reason=rule.guard, action_authority="NONE",
+            observation_result=value.value, guard=rule.guard, reason_scope=context.reason_scope,
+            retained_backup_requirement="NONE_OR_INVALID_OR_EXHAUSTED",
+            deadline_requirement="OPEN" if rule.destination == RuntimePhase.RECOVERY_SEARCH else "ANY",
+            candidate_requirement="PRIMARY_OR_RECOVERY",
+        )
+
+    def authorize_recovery_source(self, snapshot: RuntimeStateSnapshot,
+                                  context: RuntimeRoutingContext, transition_identity: str) -> RecoverySourceGrant | None:
+        facts = context.recovery_facts
+        if not (facts and facts.terminal_prefetch and facts.terminal_pass and
+                context.deadline.status == DeadlineStatus.OPEN and not context.retained_backup_valid):
+            return None
+        if not (facts.l1_pass and facts.primary_c0_pass and facts.primary_l2_pass and
+                facts.source_authorized and facts.exact_identities and facts.exhaustion_eligible and
+                self.classify_recovery_l3_fail(facts.primary_l3_reason) == ReasonScope.CANDIDATE_LOCAL_COMPUTATION):
+            return None
+        if snapshot.map_identity != self.registry.map_identity or not transition_identity:
+            return None
+        return RecoverySourceGrant.create(snapshot, self.registry.actuator.identity.value, transition_identity)
+
+    @staticmethod
+    def attach_recovery_evidence(decision: SupervisorDecision,
+                                 evidence: tuple[tuple[tuple[str, object], ...], ...]) -> RecoverySupervisorDecision:
+        return RecoverySupervisorDecision(decision.cycle_index, decision.state_identity,
+                                          decision.selected_action, decision.allows_commit,
+                                          decision.reason, decision.rule_id,
+                                          decision.prepared_bundle, evidence)
 
     @staticmethod
     def classify_reason_scope(stage_name: str, reason: str) -> ReasonScope:
@@ -425,6 +593,14 @@ class Supervisor:
         terminal_result: TerminalResult | None,
         deadline: DeadlineObservation,
     ) -> SupervisorDecision:
+        if (certified_candidate is not None and
+                certified_candidate.provenance.source_type == RECOVERY_SOURCE and
+                backup_valid and retained_backup_action is not None and
+                retained_backup_action.role == ActionRole.RETAINED_BACKUP):
+            return SupervisorDecision(snapshot.cycle_index, snapshot.identity,
+                                      retained_backup_action, True,
+                                      "VALID_RETAINED_BACKUP_OUTRANKS_RECOVERY",
+                                      "ARB_BACKUP")
         if certified_candidate is not None and l3_result is not None and l3_result.status == CertificateStatus.PASS and l3_result.prepared_bundle is not None and l3_result.candidate_identity == certified_candidate.identity and deadline.status == DeadlineStatus.OPEN:
             role = ActionRole.PRIMARY_NAVIGATION if certified_candidate.role == CandidateRole.PRIMARY else ActionRole.ALTERNATIVE_NAVIGATION
             action = make_action(certified_candidate.vector, role, certified_candidate.identity.value, (self.registry.geometry.identity.value, self.registry.actuator.identity.value, l3_result.evidence_identity or ""))

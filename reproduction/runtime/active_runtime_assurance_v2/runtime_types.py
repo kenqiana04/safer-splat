@@ -120,6 +120,7 @@ class RuntimePhase(str, Enum):
     L2 = "L2"
     L3 = "L3"
     ALT_SEARCH = "ALT_SEARCH"
+    RECOVERY_SEARCH = "RECOVERY_SEARCH"
     ARBITRATION = "ARBITRATION"
     BACKUP_EXECUTION = "BACKUP_EXECUTION"
     TERMINAL_EVALUATION = "TERMINAL_EVALUATION"
@@ -461,6 +462,13 @@ class SupervisorDecision:
 
 
 @dataclass(frozen=True)
+class RecoverySupervisorDecision(SupervisorDecision):
+    """Only recovery decisions carry additive evidence; baseline identity is unchanged."""
+
+    recovery_evidence: tuple[tuple[tuple[str, Any], ...], ...] = ()
+
+
+@dataclass(frozen=True)
 class CommitReceipt:
     cycle_index: int
     pre_state_identity: StateIdentity
@@ -588,6 +596,10 @@ class PublicCyclePhase(str, Enum):
     ALTERNATIVE_C0 = "ALTERNATIVE_C0"
     ALTERNATIVE_L2 = "ALTERNATIVE_L2"
     ALTERNATIVE_L3 = "ALTERNATIVE_L3"
+    RECOVERY_SOURCE_QUERY = "RECOVERY_SOURCE_QUERY"
+    RECOVERY_C0 = "RECOVERY_C0"
+    RECOVERY_L2 = "RECOVERY_L2"
+    RECOVERY_L3 = "RECOVERY_L3"
     BACKUP_VALIDATION = "BACKUP_VALIDATION"
     TERMINAL_EVALUATION = "TERMINAL_EVALUATION"
     ARBITRATION = "ARBITRATION"
@@ -654,6 +666,13 @@ class PublicCycleEvent(str, Enum):
     L3_UNKNOWN_GLOBAL = "L3_UNKNOWN_GLOBAL"
     ALT_AVAILABLE = "ALT_AVAILABLE"
     ALT_EXHAUSTED = "ALT_EXHAUSTED"
+    RECOVERY_CERT_PASS = "RECOVERY_CERT_PASS"
+    RECOVERY_SCAN_ADMISSION = "RECOVERY_SCAN_ADMISSION"
+    RECOVERY_CANDIDATE_AVAILABLE = "RECOVERY_CANDIDATE_AVAILABLE"
+    RECOVERY_CANDIDATE_REJECTED = "RECOVERY_CANDIDATE_REJECTED"
+    RECOVERY_SCAN_EXHAUSTED = "RECOVERY_SCAN_EXHAUSTED"
+    RECOVERY_SCAN_PAUSED = "RECOVERY_SCAN_PAUSED"
+    RECOVERY_SOURCE_UNAUTHORIZED = "RECOVERY_SOURCE_UNAUTHORIZED"
     DEADLINE_GUARD = "DEADLINE_GUARD"
     ARBITRATE = "ARBITRATE"
     EXECUTE_RETAINED_BACKUP = "EXECUTE_RETAINED_BACKUP"
@@ -719,6 +738,27 @@ class RuntimeRoutingContext:
     # never grant permission and are not read by the coordinator as policy.
     backup_state: str | None = None
     candidate_provenance_identity: str | None = None
+    candidate_source_type: str | None = None
+    recovery_facts: RecoveryRoutingFacts | None = None
+
+
+@dataclass(frozen=True)
+class RecoveryRoutingFacts:
+    """Observations only; Supervisor interprets eligibility and priority."""
+
+    l1_pass: bool = False
+    primary_exists: bool = False
+    primary_c0_pass: bool = False
+    primary_l2_pass: bool = False
+    primary_l3_status: str = "NOT_REACHED"
+    primary_l3_reason: str = ""
+    source_authorized: bool = False
+    exact_identities: bool = False
+    exhaustion_eligible: bool = False
+    terminal_prefetch: bool = False
+    terminal_pass: bool = False
+    remaining_candidates: bool = False
+    recovery_candidate_pass: bool = False
 
 
 @dataclass(frozen=True)
@@ -809,6 +849,10 @@ class ActiveCycleContext:
     trace_ref: str | None = None
     stage_failures: tuple[StageFailureEvidence, ...] = ()
     alternative_inventory_evidence: AlternativeInventoryEvidence | None = None
+    recovery_key: str | None = None
+    recovery_scan_id: str | None = None
+    recovery_attempts: tuple[tuple[tuple[str, Any], ...], ...] = ()
+    recovery_selected_candidate_id: str | None = None
 
 
 @dataclass(frozen=True)
@@ -836,6 +880,7 @@ class ActiveCycleResult:
     stage_failures: tuple[StageFailureEvidence, ...] = ()
     alternative_inventory_evidence: AlternativeInventoryEvidence | None = None
     commit_transaction_result: CommitTransactionResult | None = None
+    recovery_attempts: tuple[tuple[tuple[str, Any], ...], ...] = ()
 
 
 @dataclass(frozen=True)

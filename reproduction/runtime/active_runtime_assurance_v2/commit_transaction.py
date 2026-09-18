@@ -15,6 +15,7 @@ from .runtime_types import (
     EvidenceStatus,
     PlantOutcome,
     RuntimeStateSnapshot,
+    RecoverySupervisorDecision,
     SelectedAction,
     TokenMutationStatus,
     TraceStatus,
@@ -45,7 +46,8 @@ class ActiveCommitTransaction:
         return "commit-attempt:sha256:" + canonical_sha256(material)
 
     @staticmethod
-    def _record(snapshot: RuntimeStateSnapshot, action: SelectedAction | None, receipt, reason: str) -> TraceStepRecord:
+    def _record(snapshot: RuntimeStateSnapshot, action: SelectedAction | None, receipt, reason: str,
+                recovery_evidence: tuple[tuple[tuple[str, object], ...], ...] = ()) -> TraceStepRecord:
         role = ActionRole.ASSURANCE_BOUNDARY_NO_ACTION if action is None else action.role
         return TraceStepRecord(
             snapshot.trial_id,
@@ -55,6 +57,8 @@ class ActiveCommitTransaction:
             None if action is None else action.identity,
             None if receipt is None else receipt.executed_action_identity,
             "NO_ACTION" if receipt is None else receipt.reason,
+            (("runtime_reason", reason), ("map_identity", snapshot.map_identity))
+            + (("recovery_attempts", recovery_evidence),) if recovery_evidence else
             (("runtime_reason", reason), ("map_identity", snapshot.map_identity)),
         )
 
@@ -83,12 +87,15 @@ class ActiveCommitTransaction:
         )
 
     def execute(self, snapshot: RuntimeStateSnapshot, decision) -> CommitTransactionResult:
+        recovery_evidence = decision.recovery_evidence if isinstance(decision, RecoverySupervisorDecision) else ()
+        if isinstance(decision, RecoverySupervisorDecision) and not recovery_evidence:
+            return self.aborted(snapshot, decision, "RECOVERY_NORMATIVE_EVIDENCE_MISSING")
         attempt = self.attempt_identity(snapshot, decision)
         action = decision.selected_action
         history = (CommitTransactionState.PREPARED,)
 
         if not decision.allows_commit or action is None:
-            record = self._record(snapshot, None, None, decision.reason)
+            record = self._record(snapshot, None, None, decision.reason, recovery_evidence)
             try:
                 trace_ref = self._append(record)
             except Exception as exc:
@@ -122,7 +129,7 @@ class ActiveCommitTransaction:
         if not receipt.committed:
             history += (CommitTransactionState.PLANT_NOT_COMMITTED,)
             try:
-                trace_ref = self._append(self._record(snapshot, action, receipt, decision.reason))
+                trace_ref = self._append(self._record(snapshot, action, receipt, decision.reason, recovery_evidence))
                 trace_status = TraceStatus.RECORDED
                 recovery_required = False
                 state = CommitTransactionState.PLANT_NOT_COMMITTED
@@ -164,7 +171,7 @@ class ActiveCommitTransaction:
             )
 
         try:
-            trace_ref = self._append(self._record(snapshot, action, receipt, decision.reason))
+            trace_ref = self._append(self._record(snapshot, action, receipt, decision.reason, recovery_evidence))
         except Exception as exc:
             return CommitTransactionResult(
                 attempt, CommitTransactionState.EVIDENCE_INCOMPLETE, PlantOutcome.COMMITTED,
