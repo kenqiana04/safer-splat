@@ -43,3 +43,27 @@ Future execution requires the explicit launcher authorization token:
 
 No Reference pairing, bootstrap non-inferiority analysis, or scientific
 progress claim belongs to this engineering smoke.
+
+## R1 local-infrastructure binding repair
+
+Attempt0 root is immutable:
+
+`/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_20260918`
+
+Attempt0 stopped before the first completed control cycle because the new Git
+worktree did not contain the ignored local `outputs/stonehenge` binding required
+by the legacy V3 stack. It produced zero completed cycles and zero PlantCommit,
+so it is execution-harness evidence, not bounded-recovery method evidence.
+
+Retry1 root:
+
+`/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_retry1_20260918`
+
+Required local ignored bindings:
+
+- `outputs/stonehenge` -> `/disk1/zlab/projects/safer-splat/outputs/stonehenge`
+- `data/stonehenge` -> `/disk1/zlab/projects/safer-splat/data/stonehenge`
+
+The prelaunch validator checks both bindings before any GPU launch. These
+bindings have no routing, controller, CBF, geometry, candidate, or scientific
+authority.

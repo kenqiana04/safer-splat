@@ -14,7 +14,7 @@ PROTOCOL = TASK / "BOUNDED_LOCAL_RECOVERY_SMOKE_PROTOCOL.json"
 LOCK = TASK / "BOUNDED_LOCAL_RECOVERY_SMOKE_EXECUTION_LOCK.json"
 IMPL = "8184b0ecec20b6e84b1745518903b87bbb5cde8f"
 GATE0 = "18ba8ed8aa3b4acc326426e05808bd5abe67561c"
-BRANCH = "freeze-bounded-local-recovery-smoke-protocol-v1"
+BRANCH = "repair-bounded-local-recovery-smoke-local-infra-binding-r1"
 ORIGIN = "git@github-kenqiana04-safer-splat-current:kenqiana04/safer-splat.git"
 HARNESS = ("run_bounded_local_recovery_smoke_trial_v1.py",
            "launch_bounded_local_recovery_smoke_v1.py",
@@ -73,9 +73,28 @@ def validate_freeze(*, require_lock: bool, require_absent_root: bool) -> dict:
          e["conda_environment"] == "/disk1/zlab/conda_envs/safer_splat_official" and
          Path(e["python"]).is_file())
     need("result_root_fixed", p["future_result_root"] ==
-         "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_20260918")
+         "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_retry1_20260918")
     root = Path(p["future_result_root"])
     need("result_root_state", (not root.exists()) if require_absent_root else root.is_dir())
+
+    local_bindings = p.get("local_infrastructure_bindings", {})
+    outputs_binding = REPO / "outputs/stonehenge"
+    data_binding = REPO / "data/stonehenge"
+    outputs_source = Path("/disk1/zlab/projects/safer-splat/outputs/stonehenge")
+    data_source = Path("/disk1/zlab/projects/safer-splat/data/stonehenge")
+
+    need("local_infra_outputs_binding",
+         local_bindings.get("outputs", {}).get("worktree_relative_path") == "outputs/stonehenge" and
+         local_bindings.get("outputs", {}).get("source") == "/disk1/zlab/projects/safer-splat/outputs/stonehenge" and
+         outputs_source.is_dir() and outputs_binding.is_symlink() and
+         outputs_binding.resolve() == outputs_source.resolve())
+
+    need("local_infra_data_binding",
+         local_bindings.get("data", {}).get("worktree_relative_path") == "data/stonehenge" and
+         local_bindings.get("data", {}).get("source") == "/disk1/zlab/projects/safer-splat/data/stonehenge" and
+         data_source.is_dir() and data_binding.is_symlink() and
+         data_binding.resolve() == data_source.resolve())
+
     need("map_identity", m["identity"] ==
          "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8")
     actual = []
