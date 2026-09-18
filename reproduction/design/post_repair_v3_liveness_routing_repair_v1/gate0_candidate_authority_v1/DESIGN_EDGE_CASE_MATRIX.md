@@ -1,0 +1,5 @@
+# Static fixture matrix
+
+E01–E16 use synthetic numeric vectors/authorities only; no map, QP, controller or trial execution. The validator emits exact candidate vector order, deterministic IDs, dedup count and key behavior for every E row. Unsupported authority/identity rows fail closed, not clipped. E15 distinguishes binary32 state bits even if rounded decimal print matches; E16 injects a duplicate generator path for dedup checking without expanding the frozen F1 runtime generator.
+
+R01–R24 are synthetic routing facts, never formal outcomes. The validator asserts one terminal route per case, no dual priority, no uncertified action, no recovery on C0/L2/UNKNOWN, no search at WARNING/EXPIRED, no rescan after exhaustion, and no historical diagnostic authority. See `results/ROUTING_PRIORITY_EXACT_ONE_CHECK.json` for expected/observed destinations and zero counterexamples. “Exact-one” applies to this Gate 0 routing design fixture, not a claim that runtime PR107 table has already been extended.

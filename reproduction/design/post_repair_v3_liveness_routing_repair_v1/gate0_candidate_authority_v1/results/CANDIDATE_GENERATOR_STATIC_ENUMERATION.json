@@ -1,0 +1,444 @@
+{
+  "fixtures": [
+    {
+      "candidate_identities": [
+        "candidate:gate0-fixture:8133fb225618772229d21a7bcf943c3057841b2bf616557893e7be061f550582",
+        "candidate:gate0-fixture:0200d2b16e1b0e2d1cf3a2b44a6f94b040dcee603be7bcb0d6d325458e1457b1",
+        "candidate:gate0-fixture:fd25899cb3dab7fa74b1da83fb327fae9d094bd53a5f414de9a5c0ee4c4ea7a5",
+        "candidate:gate0-fixture:401ee61ecb1a1d08f6523989b09dc6844514706475eb2f5d0cb83d742d93a59d",
+        "candidate:gate0-fixture:45edc7ebc49e2ab783ae707de565404a54af686c26fe582e8fdfd32e3891d462",
+        "candidate:gate0-fixture:8d6a27b38a28c4449e0e41c93c8c867393549ac97c2de7e5f5d674715ff7cde5"
+      ],
+      "canonical_action_identities": [
+        "811dba9029ad5e98f785bff68f527ca7e9f13905c6363c518adf8caf29e84ba0",
+        "2445309dadf9c7b7ee6b4a3196fba07fb346f9e641fd199f935bd2ac8b38ac19",
+        "b8ba45b589589bca2d71e39580aee7e6274def0075c52b82ab679d6f3fe0aa5d",
+        "b393e456bf19fc1e19ed11bde916e9d111f53bb0d0ee9546733a1e59823aebea",
+        "392aeaf045147a8b7fcda4feb1d910606ab9e6a8585b5830564fc9f53d15100f",
+        "bf2d898c8c511d26fe636162a3a92496ce858bf6d6fc5a8406c51912f011d145"
+      ],
+      "count": 6,
+      "dedup_removed": 0,
+      "exhaustion_behavior": "PASS",
+      "exhaustion_key": "9f6f5d0297c1a0bd0955510bb58cdc94af29b058bf561224e4e557b4237fef8d",
+      "id": "E01",
+      "input_state_bits_hash": "55aafe63a249645a99519f74a38c6f6451cb2f7cb34c42eda2bcfd6894a72556",
+      "order": [
+        "+x",
+        "-x",
+        "+y",
+        "-y",
+        "+z",
+        "-z"
+      ],
+      "pass": true
+    },
+    {
+      "candidate_identities": [
+        "candidate:gate0-fixture:e75f1eb6aa0e124c86c45f05508ec0514378a841da41f177ff415f0316e2067b",
+        "candidate:gate0-fixture:43540dafd1345ecbd8776484f0e7e539bd7d8e7aedb1568401af132c3a428c57",
+        "candidate:gate0-fixture:ad9fb9769c95e607aa828d4717d32d18eee6dd96789c89cf8182fd53cdca5e3c",
+        "candidate:gate0-fixture:686ac94f30827a850d1768b574eafe0a77514e84d239b66a5433f9afe716e5f0",
+        "candidate:gate0-fixture:18ea7d7736d9ebb2848d25baa1bae27916d8babc78ff911a4e90d3748770ea6f",
+        "candidate:gate0-fixture:75b2836ab2012285be00ebd8dd283ffa15d2357f4b4c0d2250b9a89def26e972"
+      ],
+      "canonical_action_identities": [
+        "811dba9029ad5e98f785bff68f527ca7e9f13905c6363c518adf8caf29e84ba0",
+        "2445309dadf9c7b7ee6b4a3196fba07fb346f9e641fd199f935bd2ac8b38ac19",
+        "b8ba45b589589bca2d71e39580aee7e6274def0075c52b82ab679d6f3fe0aa5d",
+        "b393e456bf19fc1e19ed11bde916e9d111f53bb0d0ee9546733a1e59823aebea",
+        "392aeaf045147a8b7fcda4feb1d910606ab9e6a8585b5830564fc9f53d15100f",
+        "bf2d898c8c511d26fe636162a3a92496ce858bf6d6fc5a8406c51912f011d145"
+      ],
+      "count": 6,
+      "dedup_removed": 0,
+      "exhaustion_behavior": "PASS",
+      "exhaustion_key": "fcb7983b4fbf22c236de27ec6cdcfed45f8f1c92c7e71c92180de428bb3dc560",
+      "id": "E02",
+      "input_state_bits_hash": "227af74aecc037823cb07c87cb07183bb27fe9dd793ab22535d25c2e04b93459",
+      "order": [
+        "+x",
+        "-x",
+        "+y",
+        "-y",
+        "+z",
+        "-z"
+      ],
+      "pass": true
+    },
+    {
+      "candidate_identities": [
+        "candidate:gate0-fixture:35756241ffa2a4f371d6a01bee6fb42ee5b6d0c32f2c54829a17ecfba4566bb0",
+        "candidate:gate0-fixture:124ca10d17f0f988bfa85175879c2ea0ee5909f18d02bf38288fa0b7b8a4b603",
+        "candidate:gate0-fixture:1ac69e320bf499a3579b98e4aa814778596408b805d22f04182966358e1f94de",
+        "candidate:gate0-fixture:8d7c5a96a4eb0d74bce9c7a558ec93c0725dc7dd08a1fcfb3c90c1eb717a836e",
+        "candidate:gate0-fixture:a549010628cefaf8495333f5163fa56eb6fbb51ffefdcca2c6e6482fd0912fdf",
+        "candidate:gate0-fixture:d89c8fc93643ef80606f54f8c2f5bf31bc8301a902d5990377582e68815b6537"
+      ],
+      "canonical_action_identities": [
+        "811dba9029ad5e98f785bff68f527ca7e9f13905c6363c518adf8caf29e84ba0",
+        "2445309dadf9c7b7ee6b4a3196fba07fb346f9e641fd199f935bd2ac8b38ac19",
+        "b8ba45b589589bca2d71e39580aee7e6274def0075c52b82ab679d6f3fe0aa5d",
+        "b393e456bf19fc1e19ed11bde916e9d111f53bb0d0ee9546733a1e59823aebea",
+        "392aeaf045147a8b7fcda4feb1d910606ab9e6a8585b5830564fc9f53d15100f",
+        "bf2d898c8c511d26fe636162a3a92496ce858bf6d6fc5a8406c51912f011d145"
+      ],
+      "count": 6,
+      "dedup_removed": 0,
+      "exhaustion_behavior": "PASS",
+      "exhaustion_key": "53286ef1e41eab487e0e8f92cd98e34f8f10b521fce9cb504c836a82a1fa99ee",
+      "id": "E03",
+      "input_state_bits_hash": "f2dafbc94f1220df811e643ac41c4d6c72d8292bb367454764ac9eb6d9f8d96e",
+      "order": [
+        "+x",
+        "-x",
+        "+y",
+        "-y",
+        "+z",
+        "-z"
+      ],
+      "pass": true
+    },
+    {
+      "candidate_identities": [
+        "candidate:gate0-fixture:0e5c8a021d92c3781a163df5ccb15d95a5c78abe962b751cedf159c2b84d7dfc",
+        "candidate:gate0-fixture:cce6e2d6326650e6a854909b3eb487843f978f513470b7151a62d66609855260",
+        "candidate:gate0-fixture:7404a0cf04e1952c2ad9d9c6c84eae1500852a7beea1afe73ae875535038ef0e",
+        "candidate:gate0-fixture:23e02a6aa394bcfc5ea12074595ef287457b44a67fff7b48343ca80e90c0b404",
+        "candidate:gate0-fixture:9fc5d364fac2838d5dd1f6d67f6667465d878ecea5e86c818f078c5c9a54da48",
+        "candidate:gate0-fixture:fb1371546c3c3bff4eb0501709b9ed7bef9c76f23efddd88ce43e4646475e69d"
+      ],
+      "canonical_action_identities": [
+        "811dba9029ad5e98f785bff68f527ca7e9f13905c6363c518adf8caf29e84ba0",
+        "2445309dadf9c7b7ee6b4a3196fba07fb346f9e641fd199f935bd2ac8b38ac19",
+        "b8ba45b589589bca2d71e39580aee7e6274def0075c52b82ab679d6f3fe0aa5d",
+        "b393e456bf19fc1e19ed11bde916e9d111f53bb0d0ee9546733a1e59823aebea",
+        "392aeaf045147a8b7fcda4feb1d910606ab9e6a8585b5830564fc9f53d15100f",
+        "bf2d898c8c511d26fe636162a3a92496ce858bf6d6fc5a8406c51912f011d145"
+      ],
+      "count": 6,
+      "dedup_removed": 0,
+      "exhaustion_behavior": "PASS",
+      "exhaustion_key": "dad66efcf6b810783e952c5bef97f8359d18b81195d5970f5cd5dbfd72ef50ea",
+      "id": "E04",
+      "input_state_bits_hash": "c45f6dede482786a7784e20c3b24911872d20144c07e95a581acd91fd20e8e48",
+      "order": [
+        "+x",
+        "-x",
+        "+y",
+        "-y",
+        "+z",
+        "-z"
+      ],
+      "pass": true
+    },
+    {
+      "candidate_identities": [
+        "candidate:gate0-fixture:f80b461cf909dcc4539f5862a3d1e6aef6d3e0168c62c6b25a77802a850851be",
+        "candidate:gate0-fixture:e2e07aea0568b54f73a44de19d5241fff7e6721431f790a23b60aeb0372d85de",
+        "candidate:gate0-fixture:6dd3ea8bff895a8d25bc6c2924d2a2a48c0fff3d2c360c86f7e74b58619642b5",
+        "candidate:gate0-fixture:64cdff9d0add5b2ca00873947ad40645cef09f0a1369dc9b2914f92d4044e975",
+        "candidate:gate0-fixture:47766f7c757b4e1220239e93e533eeb5821de583793671bc321890ecf15b7ea2",
+        "candidate:gate0-fixture:865fe0a06e49468b36b40a47089727f812f97e0c42e528aab202f97e1238111f"
+      ],
+      "canonical_action_identities": [
+        "811dba9029ad5e98f785bff68f527ca7e9f13905c6363c518adf8caf29e84ba0",
+        "2445309dadf9c7b7ee6b4a3196fba07fb346f9e641fd199f935bd2ac8b38ac19",
+        "b8ba45b589589bca2d71e39580aee7e6274def0075c52b82ab679d6f3fe0aa5d",
+        "b393e456bf19fc1e19ed11bde916e9d111f53bb0d0ee9546733a1e59823aebea",
+        "392aeaf045147a8b7fcda4feb1d910606ab9e6a8585b5830564fc9f53d15100f",
+        "bf2d898c8c511d26fe636162a3a92496ce858bf6d6fc5a8406c51912f011d145"
+      ],
+      "count": 6,
+      "dedup_removed": 0,
+      "exhaustion_behavior": "PASS",
+      "exhaustion_key": "5bd24ed1e4117ee554ffb20656a904499569bd724b5011fe9d3d0468034abf39",
+      "id": "E05",
+      "input_state_bits_hash": "16079dce5807bad5bbb8407329b816f0e8460b9c82be0d694773bb41f6cb1f6e",
+      "order": [
+        "+x",
+        "-x",
+        "+y",
+        "-y",
+        "+z",
+        "-z"
+      ],
+      "pass": true
+    },
+    {
+      "candidate_identities": [
+        "candidate:gate0-fixture:0200d2b16e1b0e2d1cf3a2b44a6f94b040dcee603be7bcb0d6d325458e1457b1",
+        "candidate:gate0-fixture:fd25899cb3dab7fa74b1da83fb327fae9d094bd53a5f414de9a5c0ee4c4ea7a5",
+        "candidate:gate0-fixture:401ee61ecb1a1d08f6523989b09dc6844514706475eb2f5d0cb83d742d93a59d",
+        "candidate:gate0-fixture:45edc7ebc49e2ab783ae707de565404a54af686c26fe582e8fdfd32e3891d462",
+        "candidate:gate0-fixture:8d6a27b38a28c4449e0e41c93c8c867393549ac97c2de7e5f5d674715ff7cde5"
+      ],
+      "canonical_action_identities": [
+        "2445309dadf9c7b7ee6b4a3196fba07fb346f9e641fd199f935bd2ac8b38ac19",
+        "b8ba45b589589bca2d71e39580aee7e6274def0075c52b82ab679d6f3fe0aa5d",
+        "b393e456bf19fc1e19ed11bde916e9d111f53bb0d0ee9546733a1e59823aebea",
+        "392aeaf045147a8b7fcda4feb1d910606ab9e6a8585b5830564fc9f53d15100f",
+        "bf2d898c8c511d26fe636162a3a92496ce858bf6d6fc5a8406c51912f011d145"
+      ],
+      "count": 5,
+      "dedup_removed": 1,
+      "exhaustion_behavior": "PASS",
+      "exhaustion_key": "9f6f5d0297c1a0bd0955510bb58cdc94af29b058bf561224e4e557b4237fef8d",
+      "id": "E06",
+      "input_state_bits_hash": "55aafe63a249645a99519f74a38c6f6451cb2f7cb34c42eda2bcfd6894a72556",
+      "order": [
+        "-x",
+        "+y",
+        "-y",
+        "+z",
+        "-z"
+      ],
+      "pass": true
+    },
+    {
+      "candidate_identities": [
+        "candidate:gate0-fixture:8133fb225618772229d21a7bcf943c3057841b2bf616557893e7be061f550582",
+        "candidate:gate0-fixture:0200d2b16e1b0e2d1cf3a2b44a6f94b040dcee603be7bcb0d6d325458e1457b1",
+        "candidate:gate0-fixture:fd25899cb3dab7fa74b1da83fb327fae9d094bd53a5f414de9a5c0ee4c4ea7a5",
+        "candidate:gate0-fixture:45edc7ebc49e2ab783ae707de565404a54af686c26fe582e8fdfd32e3891d462",
+        "candidate:gate0-fixture:8d6a27b38a28c4449e0e41c93c8c867393549ac97c2de7e5f5d674715ff7cde5"
+      ],
+      "canonical_action_identities": [
+        "811dba9029ad5e98f785bff68f527ca7e9f13905c6363c518adf8caf29e84ba0",
+        "2445309dadf9c7b7ee6b4a3196fba07fb346f9e641fd199f935bd2ac8b38ac19",
+        "b8ba45b589589bca2d71e39580aee7e6274def0075c52b82ab679d6f3fe0aa5d",
+        "392aeaf045147a8b7fcda4feb1d910606ab9e6a8585b5830564fc9f53d15100f",
+        "bf2d898c8c511d26fe636162a3a92496ce858bf6d6fc5a8406c51912f011d145"
+      ],
+      "count": 5,
+      "dedup_removed": 1,
+      "exhaustion_behavior": "PASS",
+      "exhaustion_key": "9f6f5d0297c1a0bd0955510bb58cdc94af29b058bf561224e4e557b4237fef8d",
+      "id": "E07",
+      "input_state_bits_hash": "55aafe63a249645a99519f74a38c6f6451cb2f7cb34c42eda2bcfd6894a72556",
+      "order": [
+        "+x",
+        "-x",
+        "+y",
+        "+z",
+        "-z"
+      ],
+      "pass": true
+    },
+    {
+      "candidate_identities": [],
+      "canonical_action_identities": [],
+      "count": 0,
+      "dedup_removed": 0,
+      "exhaustion_behavior": "AUTHORITY_UNSUPPORTED_FAIL_CLOSED",
+      "exhaustion_key": "9f6f5d0297c1a0bd0955510bb58cdc94af29b058bf561224e4e557b4237fef8d",
+      "id": "E08",
+      "input_state_bits_hash": "55aafe63a249645a99519f74a38c6f6451cb2f7cb34c42eda2bcfd6894a72556",
+      "order": [],
+      "pass": true
+    },
+    {
+      "candidate_identities": [
+        "candidate:gate0-fixture:8133fb225618772229d21a7bcf943c3057841b2bf616557893e7be061f550582",
+        "candidate:gate0-fixture:cf8872609673685ca30276a999e814de3ce0da9c590b69a4c72f31ea621b03cb",
+        "candidate:gate0-fixture:34d35ee54b9f64adaf3c19f62642eeae159b73a768cdc4c2dda932162c2599e6",
+        "candidate:gate0-fixture:5e355dbb879fdfc26af47ae25ca303a596c78798fd9aa4a1a255f49c47cf95a0",
+        "candidate:gate0-fixture:c4dc325597bfad1554a7d3700df791f9b7c91030cfe4e297e0f67779976d7b67",
+        "candidate:gate0-fixture:2fe6bcaa9707012024697c4eed2cd63a5d227b2df292c7e95e1e4fae57f2def2"
+      ],
+      "canonical_action_identities": [
+        "811dba9029ad5e98f785bff68f527ca7e9f13905c6363c518adf8caf29e84ba0",
+        "e1e340e6e28040f7f628b72a6c549a8fdf2d93352c84814f29ed50ac05c7b16f",
+        "18f48a780ac433e28c383e728c83d015996c152271371ceeb0257bb728c0bc45",
+        "a9d16fcfa4afeafe7aa2dd9e2346dbea1581805b0acba97dbf8f2947c3e2e027",
+        "ab15bc02dfdb6c3c11e3ae8f9c934db715666e7d3e5936751827ed85e7a1916d",
+        "f22fea9b95415632209547c406dc13eae000277f72d58ae4c929abfaec26b4e9"
+      ],
+      "count": 6,
+      "dedup_removed": 0,
+      "exhaustion_behavior": "PASS",
+      "exhaustion_key": "9f6f5d0297c1a0bd0955510bb58cdc94af29b058bf561224e4e557b4237fef8d",
+      "id": "E09",
+      "input_state_bits_hash": "55aafe63a249645a99519f74a38c6f6451cb2f7cb34c42eda2bcfd6894a72556",
+      "order": [
+        "+x",
+        "-x",
+        "+y",
+        "-y",
+        "+z",
+        "-z"
+      ],
+      "pass": true
+    },
+    {
+      "candidate_identities": [],
+      "canonical_action_identities": [],
+      "count": 0,
+      "dedup_removed": 0,
+      "exhaustion_behavior": "IDENTITY_MISMATCH_FAIL_CLOSED",
+      "exhaustion_key": "9f6f5d0297c1a0bd0955510bb58cdc94af29b058bf561224e4e557b4237fef8d",
+      "id": "E10",
+      "input_state_bits_hash": "55aafe63a249645a99519f74a38c6f6451cb2f7cb34c42eda2bcfd6894a72556",
+      "order": [],
+      "pass": true
+    },
+    {
+      "candidate_identities": [],
+      "canonical_action_identities": [],
+      "count": 0,
+      "dedup_removed": 0,
+      "exhaustion_behavior": "IDENTITY_MISMATCH_FAIL_CLOSED",
+      "exhaustion_key": "9f6f5d0297c1a0bd0955510bb58cdc94af29b058bf561224e4e557b4237fef8d",
+      "id": "E11",
+      "input_state_bits_hash": "55aafe63a249645a99519f74a38c6f6451cb2f7cb34c42eda2bcfd6894a72556",
+      "order": [],
+      "pass": true
+    },
+    {
+      "candidate_identities": [
+        "candidate:gate0-fixture:8133fb225618772229d21a7bcf943c3057841b2bf616557893e7be061f550582",
+        "candidate:gate0-fixture:0200d2b16e1b0e2d1cf3a2b44a6f94b040dcee603be7bcb0d6d325458e1457b1",
+        "candidate:gate0-fixture:fd25899cb3dab7fa74b1da83fb327fae9d094bd53a5f414de9a5c0ee4c4ea7a5",
+        "candidate:gate0-fixture:401ee61ecb1a1d08f6523989b09dc6844514706475eb2f5d0cb83d742d93a59d",
+        "candidate:gate0-fixture:45edc7ebc49e2ab783ae707de565404a54af686c26fe582e8fdfd32e3891d462",
+        "candidate:gate0-fixture:8d6a27b38a28c4449e0e41c93c8c867393549ac97c2de7e5f5d674715ff7cde5"
+      ],
+      "canonical_action_identities": [
+        "811dba9029ad5e98f785bff68f527ca7e9f13905c6363c518adf8caf29e84ba0",
+        "2445309dadf9c7b7ee6b4a3196fba07fb346f9e641fd199f935bd2ac8b38ac19",
+        "b8ba45b589589bca2d71e39580aee7e6274def0075c52b82ab679d6f3fe0aa5d",
+        "b393e456bf19fc1e19ed11bde916e9d111f53bb0d0ee9546733a1e59823aebea",
+        "392aeaf045147a8b7fcda4feb1d910606ab9e6a8585b5830564fc9f53d15100f",
+        "bf2d898c8c511d26fe636162a3a92496ce858bf6d6fc5a8406c51912f011d145"
+      ],
+      "count": 6,
+      "dedup_removed": 0,
+      "exhaustion_behavior": "PASS",
+      "exhaustion_key": "3a55d0ab8259d9ed2e6c76d89bfddf8ed91799e6a80f90e6a42c22d8b22fdfe4",
+      "id": "E12",
+      "input_state_bits_hash": "55aafe63a249645a99519f74a38c6f6451cb2f7cb34c42eda2bcfd6894a72556",
+      "order": [
+        "+x",
+        "-x",
+        "+y",
+        "-y",
+        "+z",
+        "-z"
+      ],
+      "pass": true
+    },
+    {
+      "candidate_identities": [
+        "candidate:gate0-fixture:8133fb225618772229d21a7bcf943c3057841b2bf616557893e7be061f550582",
+        "candidate:gate0-fixture:0200d2b16e1b0e2d1cf3a2b44a6f94b040dcee603be7bcb0d6d325458e1457b1",
+        "candidate:gate0-fixture:fd25899cb3dab7fa74b1da83fb327fae9d094bd53a5f414de9a5c0ee4c4ea7a5",
+        "candidate:gate0-fixture:401ee61ecb1a1d08f6523989b09dc6844514706475eb2f5d0cb83d742d93a59d",
+        "candidate:gate0-fixture:45edc7ebc49e2ab783ae707de565404a54af686c26fe582e8fdfd32e3891d462",
+        "candidate:gate0-fixture:8d6a27b38a28c4449e0e41c93c8c867393549ac97c2de7e5f5d674715ff7cde5"
+      ],
+      "canonical_action_identities": [
+        "811dba9029ad5e98f785bff68f527ca7e9f13905c6363c518adf8caf29e84ba0",
+        "2445309dadf9c7b7ee6b4a3196fba07fb346f9e641fd199f935bd2ac8b38ac19",
+        "b8ba45b589589bca2d71e39580aee7e6274def0075c52b82ab679d6f3fe0aa5d",
+        "b393e456bf19fc1e19ed11bde916e9d111f53bb0d0ee9546733a1e59823aebea",
+        "392aeaf045147a8b7fcda4feb1d910606ab9e6a8585b5830564fc9f53d15100f",
+        "bf2d898c8c511d26fe636162a3a92496ce858bf6d6fc5a8406c51912f011d145"
+      ],
+      "count": 6,
+      "dedup_removed": 0,
+      "exhaustion_behavior": "PASS",
+      "exhaustion_key": "78cdee720127087179aa7c59ab07a6bb6b34652f4f9e5c8ef85cd5b52723f6fc",
+      "id": "E13",
+      "input_state_bits_hash": "55aafe63a249645a99519f74a38c6f6451cb2f7cb34c42eda2bcfd6894a72556",
+      "order": [
+        "+x",
+        "-x",
+        "+y",
+        "-y",
+        "+z",
+        "-z"
+      ],
+      "pass": true
+    },
+    {
+      "candidate_identities": [],
+      "canonical_action_identities": [],
+      "count": 0,
+      "dedup_removed": 0,
+      "exhaustion_behavior": "EXHAUSTED_SAME_KEY_NO_RESCAN",
+      "exhaustion_key": "9f6f5d0297c1a0bd0955510bb58cdc94af29b058bf561224e4e557b4237fef8d",
+      "id": "E14",
+      "input_state_bits_hash": "55aafe63a249645a99519f74a38c6f6451cb2f7cb34c42eda2bcfd6894a72556",
+      "order": [],
+      "pass": true
+    },
+    {
+      "candidate_identities": [
+        "candidate:gate0-fixture:2d19153b8e8ab1559c2d0f3bfee4792877dfedf65ace41dd287144b367ba269c",
+        "candidate:gate0-fixture:45bb10482cf48ad90c4af9309b5575b6207d2617d89e7af25f8cb33eae2d6f40",
+        "candidate:gate0-fixture:bc0c5f0ef7ad5ce9f5335b5df7eb2f25b09b43a790de07dc06a1bc8e1a653f33",
+        "candidate:gate0-fixture:45f5675083c540652a5290e6ca8f69055f2c11b96218bf6545c17928fd654689",
+        "candidate:gate0-fixture:9d04e9bcfeda3cad719cf20789a1f5d21ddb96679f0f824e44e6ed883ba6dc0e",
+        "candidate:gate0-fixture:f8e16e86de01f79de033bd11928aca068d204e0339292779138fc70b70e83aa5"
+      ],
+      "canonical_action_identities": [
+        "811dba9029ad5e98f785bff68f527ca7e9f13905c6363c518adf8caf29e84ba0",
+        "2445309dadf9c7b7ee6b4a3196fba07fb346f9e641fd199f935bd2ac8b38ac19",
+        "b8ba45b589589bca2d71e39580aee7e6274def0075c52b82ab679d6f3fe0aa5d",
+        "b393e456bf19fc1e19ed11bde916e9d111f53bb0d0ee9546733a1e59823aebea",
+        "392aeaf045147a8b7fcda4feb1d910606ab9e6a8585b5830564fc9f53d15100f",
+        "bf2d898c8c511d26fe636162a3a92496ce858bf6d6fc5a8406c51912f011d145"
+      ],
+      "count": 6,
+      "dedup_removed": 0,
+      "exhaustion_behavior": "PASS",
+      "exhaustion_key": "cd0e8af1286b779c62eeba3c938d9573d61ff79b3a710d1eadcf81ce95749734",
+      "id": "E15",
+      "input_state_bits_hash": "34b2a45bf8663c24b508c6c42c5a5dc02fd2ca7bfbfbe5469a725fb458d732d4",
+      "order": [
+        "+x",
+        "-x",
+        "+y",
+        "-y",
+        "+z",
+        "-z"
+      ],
+      "pass": true
+    },
+    {
+      "candidate_identities": [
+        "candidate:gate0-fixture:8133fb225618772229d21a7bcf943c3057841b2bf616557893e7be061f550582",
+        "candidate:gate0-fixture:9b93196a7cc994e5a0fd841c8f788e8f24396525c1aee217ddbd38082aed28a3",
+        "candidate:gate0-fixture:5033a119c90c163ef31efd99b4932fd599ffe18995d536efd480ca96ba1c8d25",
+        "candidate:gate0-fixture:acf9296ad2ef7c21bf974387ce450b2848e482a4fe24884dfa2f52f1cdd2739f",
+        "candidate:gate0-fixture:6970bd1872d1eff89a5e31ededdb157cf730e2829267da3ef29b1943e59b7b70",
+        "candidate:gate0-fixture:07baa4a52286dfda81b6564a569de68b746c61b2a672b51a1456068fe2402d3d"
+      ],
+      "canonical_action_identities": [
+        "811dba9029ad5e98f785bff68f527ca7e9f13905c6363c518adf8caf29e84ba0",
+        "2445309dadf9c7b7ee6b4a3196fba07fb346f9e641fd199f935bd2ac8b38ac19",
+        "b8ba45b589589bca2d71e39580aee7e6274def0075c52b82ab679d6f3fe0aa5d",
+        "b393e456bf19fc1e19ed11bde916e9d111f53bb0d0ee9546733a1e59823aebea",
+        "392aeaf045147a8b7fcda4feb1d910606ab9e6a8585b5830564fc9f53d15100f",
+        "bf2d898c8c511d26fe636162a3a92496ce858bf6d6fc5a8406c51912f011d145"
+      ],
+      "count": 6,
+      "dedup_removed": 1,
+      "exhaustion_behavior": "PASS",
+      "exhaustion_key": "9f6f5d0297c1a0bd0955510bb58cdc94af29b058bf561224e4e557b4237fef8d",
+      "id": "E16",
+      "input_state_bits_hash": "55aafe63a249645a99519f74a38c6f6451cb2f7cb34c42eda2bcfd6894a72556",
+      "order": [
+        "+x",
+        "-x",
+        "+y",
+        "-y",
+        "+z",
+        "-z"
+      ],
+      "pass": true
+    }
+  ],
+  "no_runtime_generator_call": true,
+  "status": "PASS"
+}

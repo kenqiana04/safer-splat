@@ -1,0 +1,3 @@
+# Static order and tie break
+
+`STATIC_CANONICAL_ORDER_V1 = (+x,-x,+y,-y,+z,-z)`; x/y/z are the frozen actuator/world control component order, not a map- or trial-derived frame. Rank is 0–5 before dedup. The earliest occurrence survives exact canonical-action dedup, including dedup against primary. Candidates are evaluated in increasing retained rank, at most once per exhaustion key. A PASS at a lower rank terminates the scan; later candidates are not evaluated merely to compare outcomes. If multiple PASS results somehow exist as precomputed fixtures, Supervisor takes lowest rank after rechecking exact identities and bundle. No weighted objective, progress tie-break or random seed influences this choice. Deadline non-OPEN preempts new work; it does not reorder.

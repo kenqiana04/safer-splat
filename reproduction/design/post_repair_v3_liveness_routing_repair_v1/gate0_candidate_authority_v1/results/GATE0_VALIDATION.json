@@ -1,0 +1,31 @@
+{
+  "active_rerun_count": 0,
+  "checks": {
+    "E01_E16": true,
+    "R01_R24": true,
+    "branch": true,
+    "diff_check": true,
+    "exact_one_zero_counterexamples": true,
+    "exhaustion_lifecycle": true,
+    "generator_order_dedup": true,
+    "input_mutation_count_zero": true,
+    "no_gpu_tmux_trial_plantcommit": true,
+    "no_scientific_authority": true,
+    "production_diff_zero": true,
+    "protocol_exact": true,
+    "required_files": true,
+    "runtime_diff_zero": true,
+    "source_audit": true,
+    "task_local_only": true,
+    "three_families": true,
+    "trace_zero_authority": true,
+    "trigger_priority_causality": true,
+    "upstream_ancestor": true
+  },
+  "gpu_count": 0,
+  "plant_commit_count": 0,
+  "reference_rerun_count": 0,
+  "scientific_verdict_unchanged": true,
+  "status": "PASS_FREEZE_BOUNDED_LOCAL_RECOVERY_CANDIDATE_AUTHORITY_V1",
+  "tmux_count": 0
+}

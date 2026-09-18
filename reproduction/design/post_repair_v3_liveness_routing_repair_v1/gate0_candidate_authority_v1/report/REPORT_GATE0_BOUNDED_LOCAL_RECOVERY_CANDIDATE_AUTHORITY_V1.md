@@ -1,0 +1,11 @@
+# Gate 0 bounded local recovery candidate authority V1
+
+**Decision:** Freeze F1 axis-extrema six-vector candidate authority as a new source, conditional on explicit prospective source admission and typed candidate-local L3 failure. This is a design-only patch to the upstream `CERTIFIED_BOUNDED_LOCAL_RECOVERY`; no runtime source or scientific verdict changes.
+
+The existing native alternative source is not semantically reusable. F2 adds a braking vector that is zero at the observed fixed-point class and is unnecessary for minimum coverage; F3 requires typed local gradients/tangents absent from frozen runtime. F1 uses the six existing actuator endpoints in fixed +x,-x,+y,-y,+z,-z order. It is bounded and planner-free but not complete for continuous or diagonal controls. First fully certified candidate in order may be selected only by Supervisor; each undergoes fresh binding/C0/L2/canonical L3.
+
+Entry retains upstream terminal-prefetch PASS and candidate-local L3 FAIL requirements. Current trace does not expose per-attempt L3 FAIL reason/scope, so implementation must add typed carrier before enabling the source. Unknown/global/identity errors do not trigger search. Valid retained backup outranks recovery, certified terminal is fallback, boundary commits nothing. Exhaustion is trial-local and based on canonical **numeric** state plus material authority, never cycle-indexed snapshot identity alone. Repeated fixed point cannot silently rescan six vectors each cycle.
+
+Sampled-data causality: acceleration does not alter immediate p_(k+1), first alters p_(k+2); this patch does not claim immediate safety repair, liveness improvement, progress NI recovery, real-time performance or complete safe-control coverage. Historical 0.025 q shell remains diagnostic with zero runtime authority. Hard represented-map 0.015 q, margin/rho 0, epsilon NONE, canonical transition, Supervisor and PlantCommit authorities remain unchanged.
+
+Frozen scientific state remains `FAIL_POST_REPAIR_V3_PROGRESS_NONINFERIORITY_GATE`; represented-map hard-safety PASS on the new post-repair result and old V3 hard-safety FAIL are not rewritten. CPU static fixture results and validator appear in `results/`. Only next task after all Gate 0 checks pass: `IMPLEMENT_BOUNDED_POST_REPAIR_V3_LIVENESS_ROUTING_REPAIR_V1`.

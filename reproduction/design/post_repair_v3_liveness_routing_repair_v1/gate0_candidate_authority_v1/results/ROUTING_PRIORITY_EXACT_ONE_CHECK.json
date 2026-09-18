@@ -1,0 +1,176 @@
+{
+  "fixture_count": 24,
+  "model_counterexamples": [],
+  "rows": [
+    {
+      "exact_one": true,
+      "expected": "PRIMARY",
+      "id": "R01",
+      "observed": "PRIMARY",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "BACKUP",
+      "id": "R02",
+      "observed": "BACKUP",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "RECOVERY",
+      "id": "R03",
+      "observed": "RECOVERY",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "RECOVERY",
+      "id": "R04",
+      "observed": "RECOVERY",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "TERMINAL",
+      "id": "R05",
+      "observed": "TERMINAL",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "TERMINAL",
+      "id": "R06",
+      "observed": "TERMINAL",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "BOUNDARY",
+      "id": "R07",
+      "observed": "BOUNDARY",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "TERMINAL",
+      "id": "R08",
+      "observed": "TERMINAL",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "TERMINAL",
+      "id": "R09",
+      "observed": "TERMINAL",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "TERMINAL",
+      "id": "R10",
+      "observed": "TERMINAL",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "BACKUP",
+      "id": "R11",
+      "observed": "BACKUP",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "RECOVERY",
+      "id": "R12",
+      "observed": "RECOVERY",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "BOUNDARY",
+      "id": "R13",
+      "observed": "BOUNDARY",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "TERMINAL",
+      "id": "R14",
+      "observed": "TERMINAL",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "TERMINAL",
+      "id": "R15",
+      "observed": "TERMINAL",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "TERMINAL",
+      "id": "R16",
+      "observed": "TERMINAL",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "TERMINAL",
+      "id": "R17",
+      "observed": "TERMINAL",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "TERMINAL",
+      "id": "R18",
+      "observed": "TERMINAL",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "TERMINAL",
+      "id": "R19",
+      "observed": "TERMINAL",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "RECOVERY",
+      "id": "R20",
+      "observed": "RECOVERY",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "TERMINAL",
+      "id": "R21",
+      "observed": "TERMINAL",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "PRIMARY",
+      "id": "R22",
+      "observed": "PRIMARY",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "RECOVERY",
+      "id": "R23",
+      "observed": "RECOVERY",
+      "pass": true
+    },
+    {
+      "exact_one": true,
+      "expected": "RECOVERY",
+      "id": "R24",
+      "observed": "RECOVERY",
+      "pass": true
+    }
+  ],
+  "scope": "STATIC_DESIGN_ONLY_NOT_EXECUTABLE_RUNTIME_TABLE",
+  "status": "PASS"
+}
