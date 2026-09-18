@@ -115,11 +115,11 @@ def main() -> int:
     modes = parser.add_mutually_exclusive_group(required=True)
     modes.add_argument("--launch", action="store_true", help="Future task only; requires explicit authorization token")
     modes.add_argument("--batch-internal", action="store_true", help=argparse.SUPPRESS)
-    parser.add_argument("--authorize-execution", choices=("EXECUTE_BOUNDED_LOCAL_RECOVERY_SMOKE_V1",))
+    parser.add_argument("--authorize-execution", choices=("EXECUTE_BOUNDED_LOCAL_RECOVERY_SMOKE_V1_R1",))
     parser.add_argument("--launch-token", help=argparse.SUPPRESS)
     args = parser.parse_args()
     if args.launch:
-        if args.authorize_execution != "EXECUTE_BOUNDED_LOCAL_RECOVERY_SMOKE_V1":
+        if args.authorize_execution != "EXECUTE_BOUNDED_LOCAL_RECOVERY_SMOKE_V1_R1":
             raise RuntimeError("FUTURE_EXECUTION_TASK_AUTHORIZATION_REQUIRED")
         launch()
         return 0

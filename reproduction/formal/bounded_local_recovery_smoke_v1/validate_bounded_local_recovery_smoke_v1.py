@@ -143,6 +143,11 @@ def validate_freeze(*, require_lock: bool, require_absent_root: bool) -> dict:
              "--is-ancestor", lock["protocol_commit"], "HEAD"]).returncode == 0)
         need("lock_source", lock["implementation_head"] == IMPL and
              lock["future_result_root"] == str(root))
+        launcher_text = (TASK / "launch_bounded_local_recovery_smoke_v1.py").read_text(encoding="utf-8")
+        need("lock_execution_authorization",
+             lock.get("execution_authorization_token") == "EXECUTE_BOUNDED_LOCAL_RECOVERY_SMOKE_V1_R1" and
+             'choices=("EXECUTE_BOUNDED_LOCAL_RECOVERY_SMOKE_V1_R1",)' in launcher_text and
+             'args.authorize_execution != "EXECUTE_BOUNDED_LOCAL_RECOVERY_SMOKE_V1_R1"' in launcher_text)
     return {"status": "PASS_FREEZE_PRELAUNCH_CPU_VALIDATION_V1", "checks": checks,
             "check_count": len(checks), "gpu_run_count": 0, "tmux_created_count": 0,
             "smoke_trial_run_count": 0, "plantcommit_real_count": 0,
