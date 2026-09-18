@@ -1,0 +1,3 @@
+# Trace and execution boundary
+
+Each attempted candidate contributes ordered fields for cycle/scan/key, source and candidate identity, rank, canonical action identity, source-state/map/generator/actuator authority, C0/L2/L3 status and reason, deadline observations, rejection stage, Supervisor-selected flag, commit-authorized flag and final fallback reason. Duplicate-skip and scan exhaustion are typed facts. The evidence is attached to `RecoverySupervisorDecision` only after final Supervisor arbitration and written by the existing ACTIVE transaction into the same one-record-per-cycle trace path. It has zero execution authority. Trace failure retains the existing evidence-incomplete/recovery-required contract; it is not silently treated as scientific PASS.

@@ -1,0 +1,8 @@
+{
+  "coordinator_orchestration_only": true,
+  "frozen_runner_plant_token_terminal_trace_blobs_unchanged": true,
+  "pass": true,
+  "plant_owner": "PlantCommitAdapter.commit",
+  "supervisor_route_owner": "Supervisor.route_transition",
+  "supervisor_selection_owner": "Supervisor.arbitrate"
+}

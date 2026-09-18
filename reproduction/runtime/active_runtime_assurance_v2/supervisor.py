@@ -84,6 +84,7 @@ class RecoveryTransitionRule:
 
 RECOVERY_TRANSITION_RULES = (
     RecoveryTransitionRule("REC_L3_PREFETCH", RuntimePhase.L3, PublicCycleEvent.L3_WITNESS_ABSENT, RuntimePhase.TERMINAL_EVALUATION, "RECOVERY_ENTRY_EXACT"),
+    RecoveryTransitionRule("REC_ENTRY_IDENTITY_BLOCK", RuntimePhase.L3, PublicCycleEvent.L3_WITNESS_ABSENT, RuntimePhase.ASSURANCE_BOUNDARY, "RECOVERY_IDENTITY_MISMATCH"),
     RecoveryTransitionRule("REC_TERMINAL_PASS", RuntimePhase.TERMINAL_EVALUATION, PublicCycleEvent.TERMINAL_MEMBER_ELIGIBLE, RuntimePhase.RECOVERY_SEARCH, "PREFETCH_CERTIFIED"),
     RecoveryTransitionRule("REC_TERMINAL_GUARD", RuntimePhase.TERMINAL_EVALUATION, PublicCycleEvent.TERMINAL_MEMBER_ELIGIBLE, RuntimePhase.ARBITRATION, "PREFETCH_CERTIFIED_DEADLINE_GUARD"),
     RecoveryTransitionRule("REC_TERMINAL_BLOCK", RuntimePhase.TERMINAL_EVALUATION, PublicCycleEvent.TERMINAL_MEMBER_NOT_ELIGIBLE, RuntimePhase.ASSURANCE_BOUNDARY, "PREFETCH_NOT_CERTIFIED"),
@@ -379,6 +380,9 @@ class Supervisor:
             elif runtime_context.source_phase == RuntimePhase.L3 and event == PublicCycleEvent.L3_WITNESS_ABSENT:
                 if self._recovery_entry_allowed(runtime_context):
                     return self._resolve_recovery(event, runtime_context)
+                if (runtime_context.candidate_role == CandidateRole.PRIMARY and
+                        not recovery.exact_identities):
+                    return self._resolve_recovery(event, runtime_context)
             elif runtime_context.source_phase == RuntimePhase.TERMINAL_EVALUATION and recovery.terminal_prefetch:
                 return self._resolve_recovery(event, runtime_context)
             elif runtime_context.source_phase == RuntimePhase.RECOVERY_SEARCH:
@@ -420,6 +424,10 @@ class Supervisor:
             if guard == "RECOVERY_ENTRY_EXACT" and context.candidate_source_type == RECOVERY_SOURCE:
                 continue
             if guard == "RECOVERY_ENTRY_EXACT" and not cls._recovery_entry_allowed(context):
+                continue
+            if guard == "RECOVERY_IDENTITY_MISMATCH" and not (
+                    facts and context.candidate_role == CandidateRole.PRIMARY and
+                    not facts.exact_identities):
                 continue
             if guard == "PREFETCH_CERTIFIED" and not (facts and facts.terminal_prefetch and facts.terminal_pass and context.deadline.status == DeadlineStatus.OPEN):
                 continue

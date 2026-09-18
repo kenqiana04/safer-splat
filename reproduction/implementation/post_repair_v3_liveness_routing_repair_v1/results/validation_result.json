@@ -1,0 +1,25 @@
+{
+  "active_rollout_count": 0,
+  "checks": {
+    "E16": true,
+    "R24": true,
+    "active_cpu": true,
+    "authority": true,
+    "authorized_diff_only": true,
+    "bypass_body": true,
+    "diff_check": true,
+    "exact_one": true,
+    "gate0_exact": true,
+    "input_mutation_zero": true,
+    "protected_blobs": true,
+    "v3_cpu": true
+  },
+  "formal_count": 0,
+  "gpu_count": 0,
+  "pilot_count": 0,
+  "real_plant_commit_count": 0,
+  "reference_rerun_count": 0,
+  "smoke_count": 0,
+  "status": "PASS_IMPLEMENT_BOUNDED_POST_REPAIR_V3_LIVENESS_ROUTING_REPAIR_V1_VALIDATION",
+  "tmux_count": 0
+}

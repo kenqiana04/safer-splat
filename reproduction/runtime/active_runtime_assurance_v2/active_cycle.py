@@ -937,7 +937,11 @@ class ActiveCycleCoordinator:
             elif destination == RuntimePhase.ASSURANCE_BOUNDARY:
                 decision = context.final_supervisor_decision
                 if decision is None:
-                    decision, error = self._safe_call(self.supervisor.arbitrate, snapshot, None, None, backup_action, backup_valid, terminal_result, deadline)
+                    if route.rule_id == "REC_ENTRY_IDENTITY_BLOCK":
+                        decision, error = self._safe_call(self.supervisor.blocked_cycle_decision,
+                                                          snapshot, "RECOVERY_ENTRY_IDENTITY_MISMATCH")
+                    else:
+                        decision, error = self._safe_call(self.supervisor.arbitrate, snapshot, None, None, backup_action, backup_valid, terminal_result, deadline)
                     if error:
                         context, failed_route = self._stage_failure_route(
                             context,

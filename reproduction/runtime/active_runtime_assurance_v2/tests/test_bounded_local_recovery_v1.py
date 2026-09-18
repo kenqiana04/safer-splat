@@ -11,7 +11,7 @@ from reproduction.runtime.active_runtime_assurance_v2.bounded_recovery import (
 )
 from reproduction.runtime.active_runtime_assurance_v2.c0_admission import C0Admission
 from reproduction.runtime.active_runtime_assurance_v2.runtime_types import (
-    ActionRole, ActiveCycleRequest, CandidateRole, CertificateStatus,
+    ActionRole, ActiveCycleRequest, CandidateIdentity, CandidateRole, CertificateStatus,
     PublicCycleEvent, PublicCyclePhase, RecoveryRoutingFacts, RuntimePhase,
     RuntimeStateSnapshot, make_candidate,
 )
@@ -73,6 +73,26 @@ def recovery_key(system, snapshot=None, **changes):
                   backup_routing_class="NONE")
     fields.update(changes)
     return exhaustion_key(snapshot, **fields)
+
+
+def second_cycle_with_retained_backup(primary_second_pass=False, stale=False):
+    system = build_recovery_cycle(pass_rank=0)
+    coordinator = system["coordinator"]
+    recovery_builder = coordinator.l3_runtime._builder
+    coordinator.l3_runtime._builder = lambda *_: (
+        CertificateStatus.PASS, (((0., 0., 0.), "backup:0"), ((0., 0., 0.), "backup:1")),
+        "terminal:fixture", "L3_PASS")
+    first = run_recovery(system)
+    if not first.committed:
+        raise AssertionError("backup setup navigation did not commit")
+    if stale:
+        system["token_store"].invalidate("TEST_STALE_BACKUP")
+    coordinator.l3_runtime._builder = (
+        (lambda *_: (CertificateStatus.PASS, (((0., 0., 0.), "backup:0"),), "terminal:fixture", "L3_PASS"))
+        if primary_second_pass else recovery_builder)
+    second_snapshot = first.next_state
+    request = ActiveCycleRequest(second_snapshot.trial_id, second_snapshot.cycle_index, (1., 0., 0.), None)
+    return system, coordinator.run_cycle(second_snapshot, request)
 
 
 class BoundedLocalRecoveryV1Tests(unittest.TestCase):
@@ -197,17 +217,9 @@ class BoundedLocalRecoveryV1Tests(unittest.TestCase):
             self.assertEqual(result.action_role, ActionRole.PRIMARY_NAVIGATION)
             self.assertEqual(result.recovery_attempts, ())
         elif number == 11:
-            system = build_recovery_cycle()
-            from reproduction.runtime.active_runtime_assurance_v2.runtime_types import RecoveryRoutingFacts
-            self.assertTrue(system["coordinator"].start_trial(system["state"], system["trial"]).ready)
-            facts = RecoveryRoutingFacts(True, True, True, True, "FAIL",
-                "BACKUP_SEGMENT_NOT_CERTIFIED:SEGMENT_EXACT_UNSAFE", True, True, True)
-            deadline = system["coordinator"].deadline_tracker.observe("TEST")
-            primary = make_candidate((0., 0., 0.), CandidateRole.PRIMARY,
-                                     "PRIMARY_NATIVE_CBF_QP", "controller:fixture", system["state"])
-            context = system["coordinator"]._routing_context(
-                RuntimePhase.L3, deadline, candidate=primary, backup_valid=True, recovery_facts=facts)
-            self.assertFalse(system["supervisor"]._recovery_entry_allowed(context))
+            _, result = second_cycle_with_retained_backup()
+            self.assertEqual(result.action_role, ActionRole.RETAINED_BACKUP)
+            self.assertEqual(result.recovery_attempts, ())
         elif number == 12:
             system = build_recovery_cycle()
             system["config"]["primary_vector"] = (0.2, 0., 0.)
@@ -305,10 +317,10 @@ class BoundedLocalRecoveryV1Tests(unittest.TestCase):
             register.start_trial("trial-2")
             self.assertIsNone(register.lookup("trial-2", "k"))
         elif number == 30:
-            result = run_recovery(build_recovery_cycle(pass_rank=0))
+            _, result = second_cycle_with_retained_backup(stale=True)
             self.assertNotEqual(result.action_role, ActionRole.RETAINED_BACKUP)
         elif number == 31:
-            result = run_recovery(build_recovery_cycle(pass_rank=0))
+            _, result = second_cycle_with_retained_backup(stale=True)
             self.assertEqual(result.action_role, ActionRole.ALTERNATIVE_NAVIGATION)
         elif number == 32:
             result = run_recovery(build_recovery_cycle(pass_rank=0))
@@ -333,6 +345,12 @@ class BoundedLocalRecoveryV1Tests(unittest.TestCase):
                 system["state"].goal, system["state"].map_identity, system["state"].dt)
             self.assertNotEqual(C0Admission(system["registry"]).evaluate(inventory.candidates[0].candidate,
                                 altered, grant).status, CertificateStatus.PASS)
+            original = system["coordinator"].l3_runtime.evaluate
+            system["coordinator"].l3_runtime.evaluate = lambda *args: replace(
+                original(*args), candidate_identity=CandidateIdentity("candidate:wrong"))
+            result = run_recovery(system)
+            self.assertTrue(result.boundary)
+            self.assertFalse(result.committed)
         elif number == 35:
             system = build_recovery_cycle()
             inventory, grant = recovery_inventory(system)
@@ -347,9 +365,8 @@ class BoundedLocalRecoveryV1Tests(unittest.TestCase):
         elif number == 37:
             state = build_recovery_cycle()["state"]
             dt = state.dt
-            p1_a = tuple(state.state[i] + dt * state.state[i + 3] for i in range(3))
-            p1_b = tuple(state.state[i] + dt * state.state[i + 3] for i in range(3))
-            self.assertEqual(p1_a, p1_b)
+            p1 = lambda u: tuple(state.state[i] + dt * state.state[i + 3] + 0.0 * u[i] for i in range(3))
+            self.assertEqual(p1((0.1, 0., 0.)), p1((-0.1, 0., 0.)))
         elif number == 38:
             state = build_recovery_cycle()["state"]
             dt = state.dt

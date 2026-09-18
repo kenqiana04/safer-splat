@@ -12,7 +12,10 @@
     "reproduction/runtime/active_runtime_assurance_v2/bounded_recovery.py": "isolated F1 provider, exact vector identity and trial-owned exhaustion register"
   },
   "task_local": "reproduction/implementation/post_repair_v3_liveness_routing_repair_v1/**",
-  "tests": "reproduction/runtime/active_runtime_assurance_v2/tests/test_bounded_local_recovery_v1.py",
+  "tests": {
+    "reproduction/runtime/active_runtime_assurance_v2/tests/test_bounded_local_recovery_v1.py": "new deterministic Gate 0 implementation fixtures",
+    "reproduction/runtime/active_runtime_assurance_v2/tests/test_existing_runtime_regression.py": "update only superseded PR121 protected-blob assertion for files explicitly authorized here; retain all still-protected blob assertions"
+  },
   "forbidden": ["run.py", "cbf/**", "dynamics/**", "splat/**", "reproduction/cross_dataset/**", "reproduction/runtime/certification_execution_state_identity_repair_v1/**", "reproduction/runtime/v3_hard_radius_runtime_wiring_v1/**", "reproduction/runtime/active_runtime_assurance_v2/plant_commit.py", "reproduction/runtime/active_runtime_assurance_v2/backup_token_store.py", "reproduction/runtime/active_runtime_assurance_v2/terminal_runtime.py", "reproduction/runtime/active_runtime_assurance_v2/trace_writer.py", "reproduction/design/post_repair_v3_liveness_routing_repair_v1/gate0_candidate_authority_v1/**"],
   "change_expansion_policy": "first update this task-local file and justify before changing any additional shared source"
 }

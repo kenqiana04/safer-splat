@@ -1,0 +1,470 @@
+{
+  "E01_E16": "16/16",
+  "R01_R24": "24/24",
+  "routing_rows": [
+    {
+      "expected": "PRIMARY",
+      "id": "R01",
+      "observed": "PRIMARY",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "L3_FOUND",
+        "ARB_NAV"
+      ]
+    },
+    {
+      "expected": "BACKUP",
+      "id": "R02",
+      "observed": "BACKUP",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "L3_ABSENT_ALT",
+        "ALT_DONE",
+        "ARB_BACKUP",
+        "BACKUP_COMMIT"
+      ]
+    },
+    {
+      "expected": "RECOVERY",
+      "id": "R03",
+      "observed": "RECOVERY",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "REC_L3_PREFETCH",
+        "REC_TERMINAL_PASS",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_PASS",
+        "ARB_NAV"
+      ]
+    },
+    {
+      "expected": "RECOVERY",
+      "id": "R04",
+      "observed": "RECOVERY",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "REC_L3_PREFETCH",
+        "REC_TERMINAL_PASS",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_LOCAL_FAIL",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_PASS",
+        "ARB_NAV"
+      ]
+    },
+    {
+      "expected": "TERMINAL",
+      "id": "R05",
+      "observed": "TERMINAL",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "REC_L3_PREFETCH",
+        "REC_TERMINAL_PASS",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_LOCAL_FAIL",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_LOCAL_FAIL",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_LOCAL_FAIL",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_LOCAL_FAIL",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_LOCAL_FAIL",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_LOCAL_FAIL",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_SCAN_EXHAUSTED",
+        "ARB_TERMINAL"
+      ]
+    },
+    {
+      "expected": "TERMINAL",
+      "id": "R06",
+      "observed": "TERMINAL",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "REC_L3_PREFETCH",
+        "REC_TERMINAL_PASS",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_UNKNOWN_GLOBAL",
+        "ARB_TERMINAL"
+      ]
+    },
+    {
+      "expected": "BOUNDARY",
+      "id": "R07",
+      "observed": "BOUNDARY",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "REC_ENTRY_IDENTITY_BLOCK"
+      ]
+    },
+    {
+      "expected": "TERMINAL",
+      "id": "R08",
+      "observed": "TERMINAL",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "REC_L3_PREFETCH",
+        "REC_TERMINAL_GUARD",
+        "ARB_TERMINAL"
+      ]
+    },
+    {
+      "expected": "TERMINAL",
+      "id": "R09",
+      "observed": "TERMINAL",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "L3_ABSENT_ARB",
+        "ARB_EVAL_TERMINAL",
+        "TERM_ELIGIBLE"
+      ]
+    },
+    {
+      "expected": "TERMINAL",
+      "id": "R10",
+      "observed": "TERMINAL",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "L3_ABSENT_ARB",
+        "ARB_EVAL_TERMINAL",
+        "TERM_ELIGIBLE"
+      ]
+    },
+    {
+      "expected": "BACKUP",
+      "id": "R11",
+      "observed": "BACKUP",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "L3_ABSENT_ALT",
+        "ALT_DONE",
+        "ARB_BACKUP",
+        "BACKUP_COMMIT"
+      ]
+    },
+    {
+      "expected": "RECOVERY",
+      "id": "R12",
+      "observed": "RECOVERY",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "REC_L3_PREFETCH",
+        "REC_TERMINAL_PASS",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_PASS",
+        "ARB_NAV"
+      ]
+    },
+    {
+      "expected": "BOUNDARY",
+      "id": "R13",
+      "observed": "BOUNDARY",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "REC_L3_PREFETCH",
+        "REC_TERMINAL_BLOCK"
+      ]
+    },
+    {
+      "expected": "TERMINAL",
+      "id": "R14",
+      "observed": "TERMINAL",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_FAIL_LOCAL_ARB",
+        "ARB_EVAL_TERMINAL",
+        "TERM_ELIGIBLE"
+      ]
+    },
+    {
+      "expected": "TERMINAL",
+      "id": "R15",
+      "observed": "TERMINAL",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_FAIL_ARB",
+        "ARB_EVAL_TERMINAL",
+        "TERM_ELIGIBLE"
+      ]
+    },
+    {
+      "expected": "TERMINAL",
+      "id": "R16",
+      "observed": "TERMINAL",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "L3_UNKNOWN_GLOBAL",
+        "ARB_EVAL_TERMINAL",
+        "TERM_ELIGIBLE"
+      ]
+    },
+    {
+      "expected": "TERMINAL",
+      "id": "R17",
+      "observed": "TERMINAL",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "L3_ABSENT_ARB",
+        "ARB_EVAL_TERMINAL",
+        "TERM_ELIGIBLE"
+      ]
+    },
+    {
+      "expected": "TERMINAL",
+      "id": "R18",
+      "observed": "TERMINAL",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "REC_L3_PREFETCH",
+        "REC_TERMINAL_GUARD",
+        "ARB_TERMINAL"
+      ]
+    },
+    {
+      "expected": "TERMINAL",
+      "id": "R19",
+      "observed": "TERMINAL",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "REC_L3_PREFETCH",
+        "REC_TERMINAL_GUARD",
+        "ARB_TERMINAL"
+      ]
+    },
+    {
+      "expected": "RECOVERY",
+      "id": "R20",
+      "observed": "RECOVERY",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "REC_L3_PREFETCH",
+        "REC_TERMINAL_PASS",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_LOCAL_FAIL",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_PASS",
+        "ARB_NAV"
+      ]
+    },
+    {
+      "expected": "TERMINAL",
+      "id": "R21",
+      "observed": "TERMINAL",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "REC_L3_PREFETCH",
+        "REC_TERMINAL_PASS",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_LOCAL_FAIL",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_LOCAL_FAIL",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_LOCAL_FAIL",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_LOCAL_FAIL",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_LOCAL_FAIL",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_LOCAL_FAIL",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_SCAN_EXHAUSTED",
+        "ARB_TERMINAL"
+      ]
+    },
+    {
+      "expected": "PRIMARY",
+      "id": "R22",
+      "observed": "PRIMARY",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "L3_FOUND",
+        "ARB_NAV"
+      ]
+    },
+    {
+      "expected": "RECOVERY",
+      "id": "R23",
+      "observed": "RECOVERY",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "REC_L3_PREFETCH",
+        "REC_TERMINAL_PASS",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_PASS",
+        "ARB_NAV"
+      ]
+    },
+    {
+      "expected": "RECOVERY",
+      "id": "R24",
+      "observed": "RECOVERY",
+      "pass": true,
+      "runtime_rule_ids": [
+        "L1_PASS",
+        "P0_PRIMARY",
+        "C0_PASS",
+        "L2_PASS",
+        "REC_L3_PREFETCH",
+        "REC_TERMINAL_PASS",
+        "REC_SCAN_ADMIT_OPEN",
+        "REC_CANDIDATE_AVAILABLE",
+        "REC_C0_PASS",
+        "REC_L2_PASS",
+        "REC_L3_PASS",
+        "ARB_NAV"
+      ]
+    }
+  ],
+  "source": "adapted actual runtime provider/coordinator/supervisor CPU fixtures"
+}

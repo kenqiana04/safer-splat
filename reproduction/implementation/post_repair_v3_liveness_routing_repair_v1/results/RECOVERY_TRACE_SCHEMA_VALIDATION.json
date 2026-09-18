@@ -1,0 +1,9 @@
+{
+  "authority": "evidence-only; existing ActiveCommitTransaction trace append",
+  "checks": [
+    "T40 trace attempts",
+    "T41 order",
+    "T42 trace failure ineligibility"
+  ],
+  "pass": true
+}
