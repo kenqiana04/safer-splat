@@ -1,0 +1,18 @@
+{
+  "schema": "BOUNDED_LOCAL_RECOVERY_AUTHORIZED_CHANGESET_V1",
+  "gate0_head": "18ba8ed8aa3b4acc326426e05808bd5abe67561c",
+  "shared_runtime_modify": {
+    "reproduction/runtime/active_runtime_assurance_v2/runtime_types.py": "additive recovery facts, types and context/result evidence fields",
+    "reproduction/runtime/active_runtime_assurance_v2/c0_admission.py": "recovery-specific source admission gate with existing C0 checks preserved",
+    "reproduction/runtime/active_runtime_assurance_v2/supervisor.py": "typed L3 local-reason classification, versioned exact-one recovery routing and final priority",
+    "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py": "orchestration-only terminal prefetch, finite scan, exhaustion and typed fact handoff",
+    "reproduction/runtime/active_runtime_assurance_v2/commit_transaction.py": "ACTIVE-only recovery evidence in existing single trace record; no plant/token reorder"
+  },
+  "shared_runtime_new": {
+    "reproduction/runtime/active_runtime_assurance_v2/bounded_recovery.py": "isolated F1 provider, exact vector identity and trial-owned exhaustion register"
+  },
+  "task_local": "reproduction/implementation/post_repair_v3_liveness_routing_repair_v1/**",
+  "tests": "reproduction/runtime/active_runtime_assurance_v2/tests/test_bounded_local_recovery_v1.py",
+  "forbidden": ["run.py", "cbf/**", "dynamics/**", "splat/**", "reproduction/cross_dataset/**", "reproduction/runtime/certification_execution_state_identity_repair_v1/**", "reproduction/runtime/v3_hard_radius_runtime_wiring_v1/**", "reproduction/runtime/active_runtime_assurance_v2/plant_commit.py", "reproduction/runtime/active_runtime_assurance_v2/backup_token_store.py", "reproduction/runtime/active_runtime_assurance_v2/terminal_runtime.py", "reproduction/runtime/active_runtime_assurance_v2/trace_writer.py", "reproduction/design/post_repair_v3_liveness_routing_repair_v1/gate0_candidate_authority_v1/**"],
+  "change_expansion_policy": "first update this task-local file and justify before changing any additional shared source"
+}

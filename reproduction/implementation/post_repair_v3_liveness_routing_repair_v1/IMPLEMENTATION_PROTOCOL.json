@@ -1,0 +1,14 @@
+{
+  "schema": "BOUNDED_POST_REPAIR_V3_LOCAL_RECOVERY_IMPLEMENTATION_V1",
+  "gate0_head": "18ba8ed8aa3b4acc326426e05808bd5abe67561c",
+  "selected_design": "CERTIFIED_BOUNDED_LOCAL_RECOVERY",
+  "source": "SOURCE_BOUNDED_LOCAL_RECOVERY_V1",
+  "generator": "F1_AXIS_EXTREMA_ONLY",
+  "generator_version": "AXIS_EXTREMA_F32_V1",
+  "max_candidates": 6,
+  "order": ["+x", "-x", "+y", "-y", "+z", "-z"],
+  "scope": "RUNTIME_IMPLEMENTATION_CPU_STATIC_VALIDATION_ONLY",
+  "gpu_authorized": false,
+  "real_plant_commit_authorized": false,
+  "scientific_verdict_mutation_authorized": false
+}
