@@ -1,0 +1,20 @@
+{
+  "schema": "BOUNDED_POST_REPAIR_V3_LIVENESS_ROUTING_DESIGN_AUTHORITY_V1",
+  "task_type": "DESIGN_AND_CPU_STATIC_VALIDATION_ONLY",
+  "diagnostic_head": "63694588fba8bc6c6290cd3d0a337875d5040eaa",
+  "diagnostic_protocol_commit": "e883f3a5faed78fea91a21a078b50e7e60aa27e4",
+  "diagnostic_protocol_sha256": "3109ba50561a21d350a38c0f27f31ed1dfbf78bb42148c8ab9ea11064057f62e",
+  "diagnostic_findings_sha256": "70d99f838be0c1d3ea0b6e38b1b360f4c4e096277eb7d59785ab150cf8d2334a",
+  "post_repair_root": "/disk1/zlab/v3_repair_records/post_repair_v3_paired_validation_v1_20260917",
+  "post_repair_semantic_root": "1c1087cde81692683ccf2eb04847437920cd5bfb29318bf18135a70e20ea6d56",
+  "post_repair_final_acceptance_sha256": "e0606042f340c91cef2d76b3bee3b52f4b8088fa3879ea0663ed1384891dfdef",
+  "frozen_transition_table_sha256": "7ba6f15b29bf362519d64c7bdb5096c3ef0eabd6dff34980099a2a2ac8621596",
+  "existing_transition_rows": 44,
+  "new_scientific_verdict": "FAIL_POST_REPAIR_V3_PROGRESS_NONINFERIORITY_GATE",
+  "old_scientific_verdict": "FAIL_V3_HARD_SAFETY_GATE",
+  "hard_geometry": {"r_hard_q": 0.015, "runtime_margin_q": 0.0, "rho_seg_q": 0.0, "epsilon": "NONE", "historical_diagnostic_radius_q": 0.025, "historical_diagnostic_runtime_authority": false},
+  "mandatory_principles": ["HARD_SAFETY_MONOTONICITY", "SAME_HARD_GEOMETRY", "CERT_EXEC_IDENTITY_PRESERVED", "SUPERVISOR_AUTHORITY_PRESERVED", "PLANT_AUTHORITY_PRESERVED", "NO_HIDDEN_PATH_PLANNER", "BOUNDED_RECOVERY", "TERMINAL_ALWAYS_AVAILABLE_WHEN_REQUIRED", "NO_OUTCOME_TUNING", "AUDITABLE_REENTRY"],
+  "forbidden_actions": ["RUNTIME_MUTATION", "PRODUCTION_MUTATION", "GPU", "TMUX", "ACTIVE_RERUN", "REFERENCE_RERUN", "MAP_QUERY", "CONTROLLER_QP", "PLANT_COMMIT", "PARAMETER_SWEEP", "THRESHOLD_SWEEP", "SCIENTIFIC_VERDICT_MUTATION"],
+  "allowed_change_path": "reproduction/design/post_repair_v3_liveness_routing_repair_v1/",
+  "selection_rule": "Eliminate violations of mandatory principles, then choose minimum sufficient architectural change based only on static contracts and frozen descriptive diagnostics; no numeric weighted outcome score."
+}
