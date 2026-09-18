@@ -1,0 +1,22 @@
+{
+  "schema": "BOUNDED_LOCAL_RECOVERY_CANDIDATE_AUTHORITY_GATE0_V1",
+  "upstream_head": "919c5518b07447d248293de1fe40023c0bfb8f9b",
+  "selected_design": "CERTIFIED_BOUNDED_LOCAL_RECOVERY",
+  "scope": "DESIGN_ONLY_CPU_STATIC",
+  "source": "SOURCE_BOUNDED_LOCAL_RECOVERY_V1",
+  "source_authorization": "PROSPECTIVE_EXPLICIT_REGISTRY_AND_C0_ADMISSION_REQUIRED",
+  "family": "F1_AXIS_EXTREMA_ONLY",
+  "generator_version": "AXIS_EXTREMA_F32_V1",
+  "max_candidates": 6,
+  "order": ["+x", "-x", "+y", "-y", "+z", "-z"],
+  "selection": "FIRST_FULLY_CERTIFIED_CANDIDATE_IN_FROZEN_ORDER_BY_SUPERVISOR",
+  "geometry": {"r_hard_q": 0.015, "margin_q": 0.0, "rho_seg_q": 0.0, "epsilon": null, "historical_diag_radius_q": 0.025, "historical_diag_runtime_authority": false},
+  "trigger": "SAME_CYCLE_L1_PASS_PRIMARY_C0_PASS_L2_PASS_L3_CANDIDATE_LOCAL_FAIL_NO_VALID_BACKUP_PREFETCHED_TERMINAL_PASS_DEADLINE_OPEN_EXACT_IDENTITIES_SOURCE_AUTHORIZED_KEY_NOT_EXHAUSTED",
+  "no_recovery_after": ["PRIMARY_C0_FAIL", "PRIMARY_L2_FAIL", "PRIMARY_L3_UNKNOWN", "UNCLASSIFIED_PRIMARY_L3_FAIL"],
+  "priority": ["CERTIFIED_PRIMARY", "VALID_RETAINED_BACKUP", "BOUNDED_RECOVERY_SEARCH", "PREFETCHED_CERTIFIED_TERMINAL", "ASSURANCE_BOUNDARY"],
+  "trial_ids_used_for_generator": false,
+  "outcome_metrics_used_for_generator": false,
+  "runtime_mutation_authorized": false,
+  "scientific_verdict_mutation_authorized": false,
+  "expected_scientific_verdict": "FAIL_POST_REPAIR_V3_PROGRESS_NONINFERIORITY_GATE"
+}
