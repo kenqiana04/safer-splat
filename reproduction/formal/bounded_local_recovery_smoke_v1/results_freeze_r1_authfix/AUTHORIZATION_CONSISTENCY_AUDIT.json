@@ -1,0 +1,22 @@
+{
+  "execution_authorization_token": "EXECUTE_BOUNDED_LOCAL_RECOVERY_SMOKE_V1_R1",
+  "execution_lock_sha256": "3b367eb0aaf57cd9b75a28e5026b67895bcfb28477c4618ffb8c4d1423dbd8b8",
+  "gpu_run_count": 0,
+  "harness_commit": "1070fb7e9fbf01c3ff3b31912eb0ceeb96155315",
+  "harness_sha256": {
+    "analyze_bounded_local_recovery_smoke_v1.py": "81782bda6a9d00d8cd60899a0f70c8f77db0e4e77d98d25426fd3dc19ac4d648",
+    "launch_bounded_local_recovery_smoke_v1.py": "2e907d0d3bc4c3c149078228912abcb0065de8677e6b8f51f44fab02d997de33",
+    "monitor_bounded_local_recovery_smoke_v1.py": "180f182608fa0b49886feac2491660b1183e1b49c25d3e26cfdd3c44d31c5be0",
+    "run_bounded_local_recovery_smoke_trial_v1.py": "c4d91656e703109a80218713cc06a089a91970f09605b46ced44f38f7eba1d1c",
+    "validate_bounded_local_recovery_smoke_v1.py": "bed18d303857620565b7a38b2bdb712ea3453ebea269b268f6c8248c843734ca"
+  },
+  "launcher_accepts_exact_token": true,
+  "protocol_sha256": "c369f8b2a0376b0b6fb0a7778d15ce694aa394780d4f50acb462d11ae798bf57",
+  "runtime_method_diff_count": 0,
+  "schema": "BOUNDED_LOCAL_RECOVERY_SMOKE_EXECUTION_AUTHORIZATION_AUDIT_R1A",
+  "scientific_semantics_change_count": 0,
+  "smoke_trial_run_count": 0,
+  "status": "PASS",
+  "tmux_created_count": 0,
+  "validator_checks_exact_token": true
+}

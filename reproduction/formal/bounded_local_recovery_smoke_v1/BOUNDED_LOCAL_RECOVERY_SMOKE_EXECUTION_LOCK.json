@@ -1,6 +1,8 @@
 {
   "attempt0_mutation_authorized": false,
   "attempt0_root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_20260918",
+  "authorization_consistency_repair": "R1A_TASK_LOCAL_HARNESS_ONLY",
+  "authorization_harness_commit": "1070fb7e9fbf01c3ff3b31912eb0ceeb96155315",
   "candidate_family": "F1_AXIS_EXTREMA_ONLY",
   "candidate_maximum": 6,
   "candidate_order": [
@@ -31,10 +33,10 @@
   },
   "harness_sha256": {
     "analyze_bounded_local_recovery_smoke_v1.py": "81782bda6a9d00d8cd60899a0f70c8f77db0e4e77d98d25426fd3dc19ac4d648",
-    "launch_bounded_local_recovery_smoke_v1.py": "6e6c70b4af24ebe0c08a13bc5b7cec91e2545f05fe6969311447a88365a831b3",
+    "launch_bounded_local_recovery_smoke_v1.py": "2e907d0d3bc4c3c149078228912abcb0065de8677e6b8f51f44fab02d997de33",
     "monitor_bounded_local_recovery_smoke_v1.py": "180f182608fa0b49886feac2491660b1183e1b49c25d3e26cfdd3c44d31c5be0",
     "run_bounded_local_recovery_smoke_trial_v1.py": "c4d91656e703109a80218713cc06a089a91970f09605b46ced44f38f7eba1d1c",
-    "validate_bounded_local_recovery_smoke_v1.py": "e41cf021396d5a07b5167e168c487307f68f3f6b6656d2731ee76ac5076bf6aa"
+    "validate_bounded_local_recovery_smoke_v1.py": "bed18d303857620565b7a38b2bdb712ea3453ebea269b268f6c8248c843734ca"
   },
   "implementation_head": "8184b0ecec20b6e84b1745518903b87bbb5cde8f",
   "local_infrastructure_bindings": {
@@ -59,7 +61,7 @@
   "recovery_generator": "AXIS_EXTREMA_F32_V1",
   "recovery_source": "SOURCE_BOUNDED_LOCAL_RECOVERY_V1",
   "repair_class": "LOCAL_INFRA_BINDING_ONLY",
-  "schema": "BOUNDED_LOCAL_RECOVERY_SMOKE_EXECUTION_LOCK_V1_R1",
+  "schema": "BOUNDED_LOCAL_RECOVERY_SMOKE_EXECUTION_LOCK_V1_R1A",
   "semantic_protocol_sha256": "177212f75ac3706af8d58cad14ae55345da5c1e4967092a0c326ad5f1345777b",
   "trial_order": [
     15,
