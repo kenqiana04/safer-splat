@@ -1,0 +1,187 @@
+{
+  "current_runtime_rule_count": 44,
+  "exact_one_design_partition": "PASS",
+  "fixtures": [
+    {
+      "destination": "FROZEN_BACKUP_OR_NATIVE_ALT",
+      "extra": {},
+      "id": "C01",
+      "rule_id": "R01",
+      "status": "PASS"
+    },
+    {
+      "destination": "ARBITRATION_NAV",
+      "extra": {
+        "full_chain_required": "L1+C0+L2+L3+bundle"
+      },
+      "id": "C02",
+      "rule_id": "R18",
+      "status": "PASS"
+    },
+    {
+      "destination": "ARBITRATION_TERMINAL",
+      "extra": {},
+      "id": "C03",
+      "rule_id": "R20",
+      "status": "PASS"
+    },
+    {
+      "destination": "ASSURANCE_BOUNDARY",
+      "extra": {},
+      "id": "C04",
+      "rule_id": "R21",
+      "status": "PASS"
+    },
+    {
+      "destination": "RECOVERY_QUERY",
+      "extra": {
+        "commit_allowed": false
+      },
+      "id": "C05",
+      "rule_id": "R11",
+      "status": "PASS"
+    },
+    {
+      "destination": "ARBITRATION_TERMINAL",
+      "extra": {
+        "commit_allowed": false
+      },
+      "id": "C06",
+      "rule_id": "R16",
+      "status": "PASS"
+    },
+    {
+      "destination": "ASSURANCE_BOUNDARY",
+      "extra": {},
+      "id": "C07",
+      "rule_id": "R09",
+      "status": "PASS"
+    },
+    {
+      "destination": "ASSURANCE_BOUNDARY",
+      "extra": {
+        "canonical_transition_mismatch": true
+      },
+      "id": "C08",
+      "rule_id": "R09",
+      "status": "PASS"
+    },
+    {
+      "destination": "ARBITRATION_TERMINAL",
+      "extra": {
+        "deadline": "WARNING",
+        "new_search": false
+      },
+      "id": "C09",
+      "rule_id": "R08",
+      "status": "PASS"
+    },
+    {
+      "destination": "ARBITRATION_TERMINAL",
+      "extra": {
+        "deadline": "EXPIRED",
+        "new_search": false
+      },
+      "id": "C10",
+      "rule_id": "R08",
+      "status": "PASS"
+    },
+    {
+      "destination": "FROZEN_ARBITRATION",
+      "extra": {
+        "stale_backup_cannot_commit": true
+      },
+      "id": "C11",
+      "rule_id": "R03",
+      "status": "PASS"
+    },
+    {
+      "destination": "ARBITRATION_NAV",
+      "extra": {
+        "next_cycle_primary_requires_fresh_chain": true
+      },
+      "id": "C12",
+      "rule_id": "R18",
+      "status": "PASS"
+    },
+    {
+      "destination": "FROZEN_ARBITRATION",
+      "extra": {
+        "same_numeric_state_key_exhausted": true
+      },
+      "id": "C13",
+      "rule_id": "R03",
+      "status": "PASS"
+    },
+    {
+      "destination": "FROZEN_ARBITRATION",
+      "extra": {
+        "source_authority": "ABSENT"
+      },
+      "id": "C14",
+      "rule_id": "R03",
+      "status": "PASS"
+    },
+    {
+      "destination": "FROZEN_ARBITRATION",
+      "extra": {
+        "historical_0p025_authority": false
+      },
+      "id": "C15",
+      "rule_id": "R03",
+      "status": "PASS"
+    },
+    {
+      "destination": "ASSURANCE_BOUNDARY",
+      "extra": {
+        "one_ulp_identity_difference": true
+      },
+      "id": "C16",
+      "rule_id": "R09",
+      "status": "PASS"
+    },
+    {
+      "dp_k1_du": 0.0,
+      "extra": {
+        "no_immediate_h_claim": true
+      },
+      "id": "C17",
+      "status": "PASS"
+    },
+    {
+      "dp_k2_du": 0.0025000000000000005,
+      "extra": {
+        "future_horizon": "L2_H1"
+      },
+      "id": "C18",
+      "status": "PASS"
+    }
+  ],
+  "future_design_rule_count": 22,
+  "future_design_rule_ids": [
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06",
+    "R07",
+    "R08",
+    "R09",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "R18",
+    "R19",
+    "R20",
+    "R21",
+    "R22"
+  ],
+  "primary_admission_partition_combinations": 96,
+  "runtime_implementation_count": 0
+}

@@ -1,0 +1,20 @@
+{
+  "PlantCommit_sole_execution_owner": true,
+  "Supervisor_router_selector_only": true,
+  "canonical_identity_preserved": true,
+  "design_level_result": "PASS",
+  "full_C0_L2_L3_required": true,
+  "hard_geometry": {
+    "epsilon": "NONE",
+    "historical_diagnostic_radius_q": 0.025,
+    "historical_diagnostic_runtime_authority": false,
+    "r_hard_q": 0.015,
+    "rho_seg_q": 0.0,
+    "runtime_margin_q": 0.0
+  },
+  "historical_0p025_runtime_authority": false,
+  "proof_obligations": 20,
+  "stale_backup_never_resurrected": true,
+  "terminal_or_boundary_fallback": true,
+  "valid_backup_priority_preserved": true
+}
