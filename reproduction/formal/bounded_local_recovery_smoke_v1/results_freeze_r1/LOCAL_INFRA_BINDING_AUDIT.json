@@ -1,0 +1,20 @@
+{
+  "controller_authority": false,
+  "data": {
+    "binding": "/disk1/zlab/v3_repair_worktrees/safer-splat-repair-bounded-local-recovery-smoke-local-infra-binding-r1/data/stonehenge",
+    "expected_source": "/disk1/zlab/projects/safer-splat/data/stonehenge",
+    "is_symlink": true,
+    "match": true,
+    "resolved": "/disk1/zlab/datasets/safer_splat_gdrive/data/stonehenge"
+  },
+  "outputs": {
+    "binding": "/disk1/zlab/v3_repair_worktrees/safer-splat-repair-bounded-local-recovery-smoke-local-infra-binding-r1/outputs/stonehenge",
+    "expected_source": "/disk1/zlab/projects/safer-splat/outputs/stonehenge",
+    "is_symlink": true,
+    "match": true,
+    "resolved": "/disk1/zlab/datasets/safer_splat_gdrive/outputs/stonehenge"
+  },
+  "routing_authority": false,
+  "schema": "BOUNDED_LOCAL_RECOVERY_SMOKE_LOCAL_INFRA_BINDING_AUDIT_R1",
+  "scientific_parameter_authority": false
+}

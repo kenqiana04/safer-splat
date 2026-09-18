@@ -1,0 +1,47 @@
+{
+  "classification": "EXECUTION_HARNESS_LOCAL_INFRA_BINDING",
+  "completed_cycles": 0,
+  "file_count": 8,
+  "files": [
+    {
+      "path": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_20260918/BATCH_STOP.json",
+      "sha256": "6f9d2ff6726eb93572b4c0c25d8f7b53cf56e591b693a719684635d6afcc4571"
+    },
+    {
+      "path": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_20260918/BOUNDED_RECOVERY_SMOKE_LAUNCH_AUTHORIZATION.json",
+      "sha256": "dca4125bc251e20e3f09223ab69cd05e8d92ebb67b9a9f31e70d449c43ebeebe"
+    },
+    {
+      "path": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_20260918/raw/trial_15/bounded_recovery_process_metadata.json",
+      "sha256": "a1f94a4c2bd222e2c197ffdc165cc49492c65a3f691d32483ca9778af8f3fbcc"
+    },
+    {
+      "path": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_20260918/raw/trial_15/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74"
+    },
+    {
+      "path": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_20260918/raw/trial_15/process_exit_code.txt",
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3"
+    },
+    {
+      "path": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_20260918/raw/trial_15/stderr.log",
+      "sha256": "b53103246abaf2539f2637f1781ab6f71bc01d1f29c05deb7c7aecc119b07d5d"
+    },
+    {
+      "path": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_20260918/raw/trial_15/stdout.log",
+      "sha256": "ffe12e8ef33acd9b00492f28b82725a0437a651106d30f2c9559cbe70bc5e4f9"
+    },
+    {
+      "path": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_20260918/raw/trial_15/trial_summary.json",
+      "sha256": "778f7eed815085565fdb01b37170c760f8676d15cad15bfb2018088517e5b6e4"
+    }
+  ],
+  "method_evidence": "NONE",
+  "plant_commits": 0,
+  "process_exit_code": 2,
+  "recovery_attempts": 0,
+  "rerun_in_place_authorized": false,
+  "root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_20260918",
+  "schema": "BOUNDED_LOCAL_RECOVERY_SMOKE_ATTEMPT0_FAILURE_EVIDENCE_V1",
+  "trial_id": 15
+}

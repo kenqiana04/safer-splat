@@ -1,0 +1,123 @@
+{
+  "attempt_lineage": {
+    "attempt0_completed_cycles": 0,
+    "attempt0_failure_class": "EXECUTION_HARNESS_LOCAL_INFRA_BINDING",
+    "attempt0_method_evidence": "NONE",
+    "attempt0_mutation_authorized": false,
+    "attempt0_plant_commits": 0,
+    "attempt0_process_exit_code": 2,
+    "attempt0_recovery_attempts": 0,
+    "attempt0_root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_20260918",
+    "attempt0_trial_id": 15,
+    "retry1_root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_retry1_20260918"
+  },
+  "branch": "repair-bounded-local-recovery-smoke-local-infra-binding-r1",
+  "cohort": {
+    "automatic_retry": false,
+    "maximum_completed_cycles_per_trial": 500,
+    "seed": 0,
+    "separate_process_per_trial": true,
+    "serial_execution": true,
+    "source": "PREEXISTING_DEVELOPMENT_EXPOSED_SMOKE",
+    "trial_ids": [
+      15,
+      45,
+      75
+    ],
+    "trial_order": [
+      15,
+      45,
+      75
+    ]
+  },
+  "environment": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "CUDA_VISIBLE_DEVICES": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONHASHSEED": "0",
+    "PYTHONNOUSERSITE": "1",
+    "conda_environment": "/disk1/zlab/conda_envs/safer_splat_official",
+    "physical_gpu": 1,
+    "process_visible_device": "cuda:0",
+    "python": "/disk1/zlab/conda_envs/safer_splat_official/bin/python"
+  },
+  "future_result_root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_retry1_20260918",
+  "future_tmux_session": "bounded_local_recovery_smoke_v1",
+  "gate0_head": "18ba8ed8aa3b4acc326426e05808bd5abe67561c",
+  "geometry": {
+    "effective_radius_q": 0.015,
+    "epsilon": null,
+    "hard_radius_q": 0.015,
+    "historical_diagnostic_radius_q": 0.025,
+    "historical_diagnostic_runtime_authority": false,
+    "rho_seg_q": 0.0,
+    "runtime_margin_q": 0.0,
+    "unit": "q"
+  },
+  "gpu_run_count": 0,
+  "implementation_head": "8184b0ecec20b6e84b1745518903b87bbb5cde8f",
+  "local_infrastructure_bindings": {
+    "authority": "EXECUTION_HARNESS_ONLY_NO_SCIENTIFIC_AUTHORITY",
+    "data": {
+      "required_type": "SYMLINK",
+      "source": "/disk1/zlab/projects/safer-splat/data/stonehenge",
+      "worktree_relative_path": "data/stonehenge"
+    },
+    "git_commit_authority": false,
+    "outputs": {
+      "required_type": "SYMLINK",
+      "source": "/disk1/zlab/projects/safer-splat/outputs/stonehenge",
+      "worktree_relative_path": "outputs/stonehenge"
+    },
+    "runtime_method_authority": false,
+    "scientific_parameter_authority": false
+  },
+  "map_identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+  "origin": "git@github-kenqiana04-safer-splat-current:kenqiana04/safer-splat.git",
+  "protocol_commit": "fd32fae67f8292f20196478eba7a43039e720e64",
+  "real_plantcommit_count": 0,
+  "recovery": {
+    "candidate_family": "F1_AXIS_EXTREMA_ONLY",
+    "candidate_order": [
+      "+x",
+      "-x",
+      "+y",
+      "-y",
+      "+z",
+      "-z"
+    ],
+    "forbidden_triggers": [
+      "PRIMARY_C0_FAIL",
+      "PRIMARY_L2_FAIL",
+      "PRIMARY_L3_UNKNOWN",
+      "UNCLASSIFIED_L3_FAIL"
+    ],
+    "generator": "AXIS_EXTREMA_F32_V1",
+    "maximum_candidates": 6,
+    "priority": [
+      "CERTIFIED_PRIMARY",
+      "VALID_RETAINED_BACKUP",
+      "BOUNDED_LOCAL_RECOVERY",
+      "CERTIFIED_TERMINAL",
+      "ASSURANCE_BOUNDARY"
+    ],
+    "source": "SOURCE_BOUNDED_LOCAL_RECOVERY_V1",
+    "trigger": [
+      "SAME_CYCLE_L1_PASS",
+      "PRIMARY_C0_PASS",
+      "PRIMARY_L2_PASS",
+      "PRIMARY_L3_TYPED_CANDIDATE_LOCAL_FAIL",
+      "NO_VALID_RETAINED_BACKUP",
+      "TERMINAL_CURRENT_STATE_PRECERT_PASS",
+      "DEADLINE_OPEN",
+      "EXACT_IDENTITIES",
+      "SOURCE_AUTHORIZED",
+      "EXHAUSTION_KEY_ELIGIBLE"
+    ]
+  },
+  "repair_class": "LOCAL_INFRA_BINDING_ONLY",
+  "schema": "BOUNDED_LOCAL_RECOVERY_SMOKE_INPUT_AUTHORITY_MANIFEST_V1_R1",
+  "scientific_verdict_unchanged": "FAIL_POST_REPAIR_V3_PROGRESS_NONINFERIORITY_GATE",
+  "smoke_trial_run_count": 0,
+  "tmux_created_count": 0
+}
