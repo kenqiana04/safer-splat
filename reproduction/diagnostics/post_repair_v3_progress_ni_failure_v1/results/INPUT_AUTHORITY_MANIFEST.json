@@ -1,0 +1,38 @@
+{
+  "INPUT_MUTATION_COUNT": 0,
+  "exact85_order_sha256": "307359644268a4c06c102442cebbd99f9dcb42e9c7917ba752aa01ef6349b12c",
+  "execution_counts": {
+    "active_rerun": 0,
+    "controller_qp": 0,
+    "gpu": 0,
+    "map_query": 0,
+    "plant_commit": 0,
+    "reference_rerun": 0,
+    "tmux": 0
+  },
+  "frozen_new_verdict": "FAIL_POST_REPAIR_V3_PROGRESS_NONINFERIORITY_GATE",
+  "frozen_old_verdict": "FAIL_V3_HARD_SAFETY_GATE",
+  "input_manifest_file_count": 769,
+  "key_authority_file_sha256_after": {
+    "/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_r1_retry1_20260915/V3_PAIRED_ANALYSIS_SUMMARY.json": "f98070c1152aa2058f23050d100e9b80bbfc84ca751de9dc553243e41b12e298",
+    "/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_r1_retry1_20260915/V3_PAIRED_PER_PAIR_ANALYSIS.json": "ea3b4848e5f3bf2ec5c26ce59006425cb5ec1ab05245ac9bbe915de17eb250a4",
+    "/disk1/zlab/v3_repair_records/post_repair_v3_paired_validation_v1_20260917/POST_REPAIR_V3_ACTIVE_RAW_EVIDENCE_MANIFEST.json": "f4bd920c853592d4ba82ea2d2db9547f3ac523bca5056a81c147c031e051dce4",
+    "/disk1/zlab/v3_repair_records/post_repair_v3_paired_validation_v1_20260917/POST_REPAIR_V3_FINAL_ACCEPTANCE.json": "e0606042f340c91cef2d76b3bee3b52f4b8088fa3879ea0663ed1384891dfdef",
+    "/disk1/zlab/v3_repair_records/post_repair_v3_paired_validation_v1_20260917/POST_REPAIR_V3_PAIRED_PROGRESS_ANALYSIS.json": "4826368991a833efb26802676da1b3abfa7c1a4ad6aec142c2637ae07f1a88a8",
+    "/disk1/zlab/v3_repair_records/post_repair_v3_paired_validation_v1_20260917/POST_REPAIR_V3_PAIRED_TRIAL_RESULTS.csv": "5b516822150125fd058fb5d4c5725925e045d1158f1cbd7ce6718a5928431e03"
+  },
+  "key_authority_file_sha256_before": {
+    "/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_r1_retry1_20260915/V3_PAIRED_ANALYSIS_SUMMARY.json": "f98070c1152aa2058f23050d100e9b80bbfc84ca751de9dc553243e41b12e298",
+    "/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_r1_retry1_20260915/V3_PAIRED_PER_PAIR_ANALYSIS.json": "ea3b4848e5f3bf2ec5c26ce59006425cb5ec1ab05245ac9bbe915de17eb250a4",
+    "/disk1/zlab/v3_repair_records/post_repair_v3_paired_validation_v1_20260917/POST_REPAIR_V3_ACTIVE_RAW_EVIDENCE_MANIFEST.json": "f4bd920c853592d4ba82ea2d2db9547f3ac523bca5056a81c147c031e051dce4",
+    "/disk1/zlab/v3_repair_records/post_repair_v3_paired_validation_v1_20260917/POST_REPAIR_V3_FINAL_ACCEPTANCE.json": "e0606042f340c91cef2d76b3bee3b52f4b8088fa3879ea0663ed1384891dfdef",
+    "/disk1/zlab/v3_repair_records/post_repair_v3_paired_validation_v1_20260917/POST_REPAIR_V3_PAIRED_PROGRESS_ANALYSIS.json": "4826368991a833efb26802676da1b3abfa7c1a4ad6aec142c2637ae07f1a88a8",
+    "/disk1/zlab/v3_repair_records/post_repair_v3_paired_validation_v1_20260917/POST_REPAIR_V3_PAIRED_TRIAL_RESULTS.csv": "5b516822150125fd058fb5d4c5725925e045d1158f1cbd7ce6718a5928431e03"
+  },
+  "old_v3_root": "/disk1/zlab/v3_execution_records/active_runtime_paired_validation_v3_r1_retry1_20260915",
+  "post_repair_root": "/disk1/zlab/v3_repair_records/post_repair_v3_paired_validation_v1_20260917",
+  "post_repair_semantic_root": "1c1087cde81692683ccf2eb04847437920cd5bfb29318bf18135a70e20ea6d56",
+  "protocol_commit": "e883f3a5faed78fea91a21a078b50e7e60aa27e4",
+  "reference_root": "/disk1/zlab/formal_execution_records/formal_paired_v2_20260911",
+  "source_commit": "92037f8e35f7bf6d363d404a643e5c2ce9a94302"
+}

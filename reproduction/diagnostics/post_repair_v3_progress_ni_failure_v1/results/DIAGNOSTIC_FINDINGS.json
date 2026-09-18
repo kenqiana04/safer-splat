@@ -1,0 +1,53 @@
+{
+  "bottom10_mechanism_counts": {
+    "EARLY_TERMINAL_LOCK_IN": 10
+  },
+  "broad_negative_distribution": false,
+  "causal_root_claim": "EVIDENCE_SUPPORTS_ROUTING_LIVENESS_MECHANISM_AS_PRIMARY_PROGRESS_FAILURE_HYPOTHESIS",
+  "diagnostic_classification": "D POST_REPAIR_ROUTING_SHIFT_ASSOCIATED_WITH_PROGRESS_CHANGE",
+  "execution_counts": {
+    "active_rerun": 0,
+    "controller_qp": 0,
+    "gpu": 0,
+    "map_query": 0,
+    "plant_commit": 0,
+    "reference_rerun": 0,
+    "tmux": 0
+  },
+  "frozen_hard_safety_gate": "PASS",
+  "frozen_scientific_verdict": "FAIL_POST_REPAIR_V3_PROGRESS_NONINFERIORITY_GATE",
+  "input_mutation_count": 0,
+  "mean_delta_change": -0.16497422198378747,
+  "mean_delta_new": 0.017854900313775828,
+  "mean_delta_old": 0.1828291222975633,
+  "median_delta_change": -0.014718318584912751,
+  "negative_tail_concentrated": true,
+  "next_recommended_task": "DESIGN_BOUNDED_POST_REPAIR_V3_LIVENESS_ROUTING_REPAIR_V1",
+  "old_new_associations": {
+    "L3_fail_rate_change": {
+      "pearson": -0.44821055943871985,
+      "spearman": -0.7181607321252075
+    },
+    "primary_rate_change": {
+      "pearson": 0.4722253485552025,
+      "spearman": 0.7244867222814952
+    },
+    "terminal_rate_change": {
+      "pearson": -0.45136799115128046,
+      "spearman": -0.719663037194604
+    }
+  },
+  "old_new_routing_change_associated": true,
+  "old_new_trial_level_comparability": "COMPARABLE_NAMED_PROGRESS_ACTION_ROLE_L3_WITH_OWN_CYCLE_DENOMINATOR",
+  "strong_associations": {
+    "L3_fail_rate_new": true,
+    "fraction_last_100_cycles_terminal": false,
+    "longest_terminal_run_fraction": true,
+    "primary_rate_new": true,
+    "retained_backup_rate_new": true,
+    "terminal_rate_new": true
+  },
+  "trials_improved": 4,
+  "trials_unchanged": 0,
+  "trials_worsened": 81
+}

@@ -1,0 +1,77 @@
+{
+  "associations": {
+    "L3_fail_rate_new": {
+      "pearson": -0.6098232467533458,
+      "spearman": -0.6744728735178385
+    },
+    "fraction_last_100_cycles_terminal": {
+      "pearson": -0.4872113739045843,
+      "spearman": -0.3983988436750533
+    },
+    "longest_terminal_run_fraction": {
+      "pearson": -0.610781823058727,
+      "spearman": -0.6763709909713662
+    },
+    "primary_rate_new": {
+      "pearson": 0.6099431666229692,
+      "spearman": 0.6745966865336204
+    },
+    "retained_backup_rate_new": {
+      "pearson": 0.24986477391492232,
+      "spearman": 0.5203435405484756
+    },
+    "terminal_rate_new": {
+      "pearson": -0.610781823058727,
+      "spearman": -0.6763709909713662
+    }
+  },
+  "interpretation": "descriptive association only; trial-level correlation is not causal proof",
+  "negative_vs_nonnegative": {
+    "negative": {
+      "median_L3_fail_rate": 1.0,
+      "median_backup_rate": 0.0,
+      "median_longest_terminal_run_fraction": 1.0,
+      "median_primary_rate": 0.0,
+      "median_terminal_rate": 1.0,
+      "n": 16
+    },
+    "nonnegative": {
+      "median_L3_fail_rate": 0.662,
+      "median_backup_rate": 0.012,
+      "median_longest_terminal_run_fraction": 0.654,
+      "median_primary_rate": 0.338,
+      "median_terminal_rate": 0.654,
+      "n": 69
+    }
+  },
+  "terminal_rate_quartiles": [
+    {
+      "mean_delta": 0.22927968683104322,
+      "median_delta": 0.03006880397887346,
+      "n": 21,
+      "negative_delta_fraction": 0.047619047619047616,
+      "quartile": 1
+    },
+    {
+      "mean_delta": 0.02412555163960596,
+      "median_delta": 0.019755675259133743,
+      "n": 21,
+      "negative_delta_fraction": 0.0,
+      "quartile": 2
+    },
+    {
+      "mean_delta": 0.020127376462142438,
+      "median_delta": 0.019420385078066673,
+      "n": 22,
+      "negative_delta_fraction": 0.0,
+      "quartile": 3
+    },
+    {
+      "mean_delta": -0.2022212268276105,
+      "median_delta": -0.06124237657477836,
+      "n": 21,
+      "negative_delta_fraction": 0.7142857142857143,
+      "quartile": 4
+    }
+  ]
+}
