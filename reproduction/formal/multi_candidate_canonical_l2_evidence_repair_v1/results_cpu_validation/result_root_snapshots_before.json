@@ -1,0 +1,282 @@
+{
+  "attempt0": {
+    "content_manifest_sha256": "a680dca42b89532d2352edf9675ae4ae88a591c53393ef76e2dd5a4b34870cda",
+    "file_count": 8,
+    "files": [
+      {
+        "path": "BATCH_STOP.json",
+        "sha256": "6f9d2ff6726eb93572b4c0c25d8f7b53cf56e591b693a719684635d6afcc4571",
+        "size": 98
+      },
+      {
+        "path": "BOUNDED_RECOVERY_SMOKE_LAUNCH_AUTHORIZATION.json",
+        "sha256": "dca4125bc251e20e3f09223ab69cd05e8d92ebb67b9a9f31e70d449c43ebeebe",
+        "size": 486
+      },
+      {
+        "path": "raw/trial_15/bounded_recovery_process_metadata.json",
+        "sha256": "a1f94a4c2bd222e2c197ffdc165cc49492c65a3f691d32483ca9778af8f3fbcc",
+        "size": 2012
+      },
+      {
+        "path": "raw/trial_15/gpu_released.txt",
+        "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+        "size": 5
+      },
+      {
+        "path": "raw/trial_15/process_exit_code.txt",
+        "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+        "size": 2
+      },
+      {
+        "path": "raw/trial_15/stderr.log",
+        "sha256": "b53103246abaf2539f2637f1781ab6f71bc01d1f29c05deb7c7aecc119b07d5d",
+        "size": 242
+      },
+      {
+        "path": "raw/trial_15/stdout.log",
+        "sha256": "ffe12e8ef33acd9b00492f28b82725a0437a651106d30f2c9559cbe70bc5e4f9",
+        "size": 252
+      },
+      {
+        "path": "raw/trial_15/trial_summary.json",
+        "sha256": "778f7eed815085565fdb01b37170c760f8676d15cad15bfb2018088517e5b6e4",
+        "size": 1906
+      }
+    ],
+    "root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_20260918"
+  },
+  "retry1": {
+    "content_manifest_sha256": "aeb8f358d6b4ee6f1a2c9c50be2a7423e4fda2c968edb089218b2659cc87e397",
+    "file_count": 45,
+    "files": [
+      {
+        "path": "BATCH_COMPLETE.json",
+        "sha256": "bc3f903207c4a9d2d90d3f9ebc9f96d7d9a9f3d4cebc24d32d68614b88a30843",
+        "size": 75
+      },
+      {
+        "path": "BOUNDED_RECOVERY_SMOKE_LAUNCH_AUTHORIZATION.json",
+        "sha256": "13b4e0c8bc1763649819dd6712a75c4ae1930f7724b476f1c59a0ad60a610e90",
+        "size": 486
+      },
+      {
+        "path": "HARD_SAFETY_SMOKE_AUDIT.json",
+        "sha256": "cc3942f42d227ef913a28edcaca4a4665e0e84280926a5f7eb0f47c29d93bf1e",
+        "size": 790
+      },
+      {
+        "path": "PER_TRIAL_SMOKE_SUMMARY.csv",
+        "sha256": "1fbeb832130c2817c83b677e5a21cd6d1ed06778f804f667ec4fd552e8d8377a",
+        "size": 191
+      },
+      {
+        "path": "RECOVERY_CANDIDATE_ATTEMPTS.csv",
+        "sha256": "e05825b1ee252e766dc85b9041b0e7fc6dd0b9b5844b3a81080382e369e6eb48",
+        "size": 3379
+      },
+      {
+        "path": "RECOVERY_EXHAUSTION_AUDIT.json",
+        "sha256": "07fba9359d59f52dc321c748a66b2a7612981bbc8fb554e090df1169ff2ff638",
+        "size": 72
+      },
+      {
+        "path": "RECOVERY_REJECTION_BREAKDOWN.json",
+        "sha256": "d4508e1b98f22b024178834858d5aed56c6e8be8c88b3b4cc75dc701f143124a",
+        "size": 120
+      },
+      {
+        "path": "RECOVERY_ROUTING_AUDIT.json",
+        "sha256": "da2bebcc49ddc38b815da3c4e46da28198a1faa8f0c3f97fbdcda765f5ee4bf7",
+        "size": 57
+      },
+      {
+        "path": "RECOVERY_SCAN_SUMMARY.csv",
+        "sha256": "e8c17184f84050ca1ff2f76087b18a144b347e9f01cb583c248f06936502abc6",
+        "size": 5863
+      },
+      {
+        "path": "SMOKE_SUMMARY.json",
+        "sha256": "f79f04c0e109391c1d26f388871305b2fe7eeb1a9f9063564fccee19544786bb",
+        "size": 1725
+      },
+      {
+        "path": "TRACE_INTEGRITY_AUDIT.json",
+        "sha256": "c400e323e039e82e8a85eb3490a5e7c2e704b3e17bc029a440349560cc060f5e",
+        "size": 167
+      },
+      {
+        "path": "raw/trial_15/bounded_recovery_process_metadata.json",
+        "sha256": "38ea09dfe3bb97bfc92af866b8227bc92c9f85a6aa4ac39423101763e8e0b368",
+        "size": 2012
+      },
+      {
+        "path": "raw/trial_15/gpu_released.txt",
+        "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+        "size": 5
+      },
+      {
+        "path": "raw/trial_15/process_exit_code.txt",
+        "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "size": 2
+      },
+      {
+        "path": "raw/trial_15/recovery_cycle_observations.jsonl",
+        "sha256": "5cddc3f7b37b7e23cfd38a40d4f64012e718d78e040156050d8c18859b4a4e09",
+        "size": 907938
+      },
+      {
+        "path": "raw/trial_15/recovery_generation.jsonl",
+        "sha256": "a87bc5ab3fd63ce783f8f0ab952a832b58f189419b66019538d9272b1f8f47ef",
+        "size": 1964
+      },
+      {
+        "path": "raw/trial_15/runtime_trace.jsonl",
+        "sha256": "ac18867d1bd59c2c776f2e0e1535937bad6fa68fc602a7f7b01e994d675d55ad",
+        "size": 1420182
+      },
+      {
+        "path": "raw/trial_15/runtime_trace_lock.json",
+        "sha256": "643243dbbe637053461d8a0d2d39d9ff145ff23b492f11e19e40109d318820cf",
+        "size": 354
+      },
+      {
+        "path": "raw/trial_15/stderr.log",
+        "sha256": "dd504c82fa14748fdd91853b48c687877b00043466e0ac20d363025205248a93",
+        "size": 253
+      },
+      {
+        "path": "raw/trial_15/stdout.log",
+        "sha256": "4b8b2f6b896b0496f7c0a840f07c7e205accf453504937b9da69a2d9a328d114",
+        "size": 355
+      },
+      {
+        "path": "raw/trial_15/trial_summary.json",
+        "sha256": "e800f89800cc3ff1175b55ecb6b2f88f1ed3a37c16e7996c7bac050a35747d15",
+        "size": 679225
+      },
+      {
+        "path": "raw/trial_45/bounded_recovery_process_metadata.json",
+        "sha256": "ccfcd8b890bebfcf9c31cf471b5bfd954c7f74913ceea10357ba37b008abda95",
+        "size": 2012
+      },
+      {
+        "path": "raw/trial_45/gpu_released.txt",
+        "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+        "size": 5
+      },
+      {
+        "path": "raw/trial_45/process_exit_code.txt",
+        "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "size": 2
+      },
+      {
+        "path": "raw/trial_45/recovery_cycle_observations.jsonl",
+        "sha256": "bf4ab145e83c55f292cff6a893aa5b5f4be0a32b8198571c5d99b743e24670c9",
+        "size": 908208
+      },
+      {
+        "path": "raw/trial_45/recovery_generation.jsonl",
+        "sha256": "13fe6f30c283cc4bbf0fb5e11869285c1aad705f598c507d925a8496157528c1",
+        "size": 1964
+      },
+      {
+        "path": "raw/trial_45/runtime_trace.jsonl",
+        "sha256": "610e19624564783caba4a212236e29557013161a05a38702e94cd9f52fde4c14",
+        "size": 1409324
+      },
+      {
+        "path": "raw/trial_45/runtime_trace_lock.json",
+        "sha256": "bf9c8c1b33932644caabaa0e457aea4a5fc5f0ef1f1234b72029943aaf0952de",
+        "size": 354
+      },
+      {
+        "path": "raw/trial_45/stderr.log",
+        "sha256": "dd504c82fa14748fdd91853b48c687877b00043466e0ac20d363025205248a93",
+        "size": 253
+      },
+      {
+        "path": "raw/trial_45/stdout.log",
+        "sha256": "078e7864eb04ecbbc032233ae78c7637397cc0711910dc58b46b1db5365071c3",
+        "size": 355
+      },
+      {
+        "path": "raw/trial_45/trial_summary.json",
+        "sha256": "4068a8a112cf9b645c387690672557ade2bbe8dcc4860883d530e5ad101995b4",
+        "size": 692896
+      },
+      {
+        "path": "raw/trial_75/bounded_recovery_process_metadata.json",
+        "sha256": "52d1ef1269f17fe1cd04eb51de79c8a0b15246760e6b8930e1f481d5e0de0154",
+        "size": 2012
+      },
+      {
+        "path": "raw/trial_75/gpu_released.txt",
+        "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+        "size": 5
+      },
+      {
+        "path": "raw/trial_75/process_exit_code.txt",
+        "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "size": 2
+      },
+      {
+        "path": "raw/trial_75/recovery_cycle_observations.jsonl",
+        "sha256": "4c374959d27c751d2c82e54fca3ef1b0322458b3f49c9d374e5bdb73d7601921",
+        "size": 907073
+      },
+      {
+        "path": "raw/trial_75/recovery_generation.jsonl",
+        "sha256": "75f947e3a055e5b6698f725098006f55239cc0ec9493b0f9cbecf1c60de7faa0",
+        "size": 1964
+      },
+      {
+        "path": "raw/trial_75/runtime_trace.jsonl",
+        "sha256": "a45c27e98eef8098447238319c7fdb4596e82a44d5ec798e59d6034d09e8a7f1",
+        "size": 1435851
+      },
+      {
+        "path": "raw/trial_75/runtime_trace_lock.json",
+        "sha256": "158d315f89e2e64d08e2e31c85ce177d60cfb54bec4438e43cf3a6549dd9157b",
+        "size": 354
+      },
+      {
+        "path": "raw/trial_75/stderr.log",
+        "sha256": "dd504c82fa14748fdd91853b48c687877b00043466e0ac20d363025205248a93",
+        "size": 253
+      },
+      {
+        "path": "raw/trial_75/stdout.log",
+        "sha256": "5c9c3cd37c85a1ec2a9a9b8378166af8e2135539d3c495c98f331e0a372266f6",
+        "size": 355
+      },
+      {
+        "path": "raw/trial_75/trial_summary.json",
+        "sha256": "56142e3acc9da0c86488887d9a1d9f5337d0ec0d4050a7b42c7e4f5dd7a12c2e",
+        "size": 653606
+      },
+      {
+        "path": "report/REPORT_BOUNDED_LOCAL_RECOVERY_SMOKE_V1.md",
+        "sha256": "49c253d14e20a27ac95c66c6a5011d0eaf029f54ede6ba1997de758e008eb0e0",
+        "size": 219
+      },
+      {
+        "path": "trial_15_complete.json",
+        "sha256": "04c832506ebbdd00f9fdfeff10095a450b880b07b5208ac4ebc2ade85346af38",
+        "size": 232
+      },
+      {
+        "path": "trial_45_complete.json",
+        "sha256": "331d41a0b5d82378ec840d0fc9d672d1a1e4bbaaa9281cb4be7630b6dd4ce8ca",
+        "size": 232
+      },
+      {
+        "path": "trial_75_complete.json",
+        "sha256": "22c1b2b649c6d32b17c8672fc7ee929174f62f01f317a260ed89069398821bf2",
+        "size": 232
+      }
+    ],
+    "root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_retry1_20260918"
+  },
+  "schema": "MULTI_CANDIDATE_L2_REPAIR_RESULT_ROOT_SNAPSHOT_V1"
+}

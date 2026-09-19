@@ -1,0 +1,61 @@
+{
+  "interpretation": "STRUCTURAL_RUNTIME_EVIDENCE_ONLY_NO_GEOMETRIC_RECERTIFICATION",
+  "root_cause_hypothesis": "H1_PENDING_SEPARATE_CPU_REPRODUCTION",
+  "schema": "MULTI_CANDIDATE_L2_REPAIR_FROZEN_WITNESS_AUDIT_V1",
+  "witnesses": [
+    {
+      "candidate_rank": 0,
+      "candidate_source": "SOURCE_BOUNDED_LOCAL_RECOVERY_V1",
+      "cycle_index": 202,
+      "exception_stage": "L2",
+      "fallback_rule_present": true,
+      "final_action_role": "CERTIFIED_TERMINAL",
+      "final_disposition": "RECOVERY_L2_UNKNOWN",
+      "observation_source_sha256": "5cddc3f7b37b7e23cfd38a40d4f64012e718d78e040156050d8c18859b4a4e09",
+      "primary_l2_pass": true,
+      "recovery_c0_pass": true,
+      "recovery_candidate_available": true,
+      "recovery_l2_not_reached": true,
+      "runtime_error_at_l2": true,
+      "trace_has_legacy_primary_l2": true,
+      "trace_source_sha256": "ac18867d1bd59c2c776f2e0e1535937bad6fa68fc602a7f7b01e994d675d55ad",
+      "trial_id": 15
+    },
+    {
+      "candidate_rank": 0,
+      "candidate_source": "SOURCE_BOUNDED_LOCAL_RECOVERY_V1",
+      "cycle_index": 168,
+      "exception_stage": "L2",
+      "fallback_rule_present": true,
+      "final_action_role": "CERTIFIED_TERMINAL",
+      "final_disposition": "RECOVERY_L2_UNKNOWN",
+      "observation_source_sha256": "bf4ab145e83c55f292cff6a893aa5b5f4be0a32b8198571c5d99b743e24670c9",
+      "primary_l2_pass": true,
+      "recovery_c0_pass": true,
+      "recovery_candidate_available": true,
+      "recovery_l2_not_reached": true,
+      "runtime_error_at_l2": true,
+      "trace_has_legacy_primary_l2": true,
+      "trace_source_sha256": "610e19624564783caba4a212236e29557013161a05a38702e94cd9f52fde4c14",
+      "trial_id": 45
+    },
+    {
+      "candidate_rank": 0,
+      "candidate_source": "SOURCE_BOUNDED_LOCAL_RECOVERY_V1",
+      "cycle_index": 281,
+      "exception_stage": "L2",
+      "fallback_rule_present": true,
+      "final_action_role": "CERTIFIED_TERMINAL",
+      "final_disposition": "RECOVERY_L2_UNKNOWN",
+      "observation_source_sha256": "4c374959d27c751d2c82e54fca3ef1b0322458b3f49c9d374e5bdb73d7601921",
+      "primary_l2_pass": true,
+      "recovery_c0_pass": true,
+      "recovery_candidate_available": true,
+      "recovery_l2_not_reached": true,
+      "runtime_error_at_l2": true,
+      "trace_has_legacy_primary_l2": true,
+      "trace_source_sha256": "a45c27e98eef8098447238319c7fdb4596e82a44d5ec798e59d6034d09e8a7f1",
+      "trial_id": 75
+    }
+  ]
+}

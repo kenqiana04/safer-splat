@@ -1,0 +1,95 @@
+{
+  "candidate_attempt_rows": 3,
+  "read_only": true,
+  "requested_input_files": {
+    "RECOVERY_CANDIDATE_ATTEMPTS.csv": {
+      "path": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_retry1_20260918/RECOVERY_CANDIDATE_ATTEMPTS.csv",
+      "sha256": "e05825b1ee252e766dc85b9041b0e7fc6dd0b9b5844b3a81080382e369e6eb48",
+      "size": 3379
+    },
+    "RECOVERY_EXHAUSTION_AUDIT.json": {
+      "path": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_retry1_20260918/RECOVERY_EXHAUSTION_AUDIT.json",
+      "sha256": "07fba9359d59f52dc321c748a66b2a7612981bbc8fb554e090df1169ff2ff638",
+      "size": 72
+    },
+    "RECOVERY_REJECTION_BREAKDOWN.json": {
+      "path": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_retry1_20260918/RECOVERY_REJECTION_BREAKDOWN.json",
+      "sha256": "d4508e1b98f22b024178834858d5aed56c6e8be8c88b3b4cc75dc701f143124a",
+      "size": 120
+    },
+    "RECOVERY_ROUTING_AUDIT.json": {
+      "path": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_retry1_20260918/RECOVERY_ROUTING_AUDIT.json",
+      "sha256": "da2bebcc49ddc38b815da3c4e46da28198a1faa8f0c3f97fbdcda765f5ee4bf7",
+      "size": 57
+    },
+    "RECOVERY_SCAN_SUMMARY.csv": {
+      "path": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_retry1_20260918/RECOVERY_SCAN_SUMMARY.csv",
+      "sha256": "e8c17184f84050ca1ff2f76087b18a144b347e9f01cb583c248f06936502abc6",
+      "size": 5863
+    },
+    "SMOKE_SUMMARY.json": {
+      "path": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_retry1_20260918/SMOKE_SUMMARY.json",
+      "sha256": "f79f04c0e109391c1d26f388871305b2fe7eeb1a9f9063564fccee19544786bb",
+      "size": 1725
+    }
+  },
+  "scan_rows": 3,
+  "schema": "MULTI_CANDIDATE_L2_REPAIR_RETRY1_INPUT_AUTHORITY_V1",
+  "summary_status": "INCONCLUSIVE_RECOVERY_SEARCH_EXERCISED_BUT_NO_RECOVERY_COMMIT",
+  "witnesses": [
+    {
+      "candidate_rank": 0,
+      "candidate_source": "SOURCE_BOUNDED_LOCAL_RECOVERY_V1",
+      "cycle_index": 202,
+      "exception_stage": "L2",
+      "fallback_rule_present": true,
+      "final_action_role": "CERTIFIED_TERMINAL",
+      "final_disposition": "RECOVERY_L2_UNKNOWN",
+      "observation_source_sha256": "5cddc3f7b37b7e23cfd38a40d4f64012e718d78e040156050d8c18859b4a4e09",
+      "primary_l2_pass": true,
+      "recovery_c0_pass": true,
+      "recovery_candidate_available": true,
+      "recovery_l2_not_reached": true,
+      "runtime_error_at_l2": true,
+      "trace_has_legacy_primary_l2": true,
+      "trace_source_sha256": "ac18867d1bd59c2c776f2e0e1535937bad6fa68fc602a7f7b01e994d675d55ad",
+      "trial_id": 15
+    },
+    {
+      "candidate_rank": 0,
+      "candidate_source": "SOURCE_BOUNDED_LOCAL_RECOVERY_V1",
+      "cycle_index": 168,
+      "exception_stage": "L2",
+      "fallback_rule_present": true,
+      "final_action_role": "CERTIFIED_TERMINAL",
+      "final_disposition": "RECOVERY_L2_UNKNOWN",
+      "observation_source_sha256": "bf4ab145e83c55f292cff6a893aa5b5f4be0a32b8198571c5d99b743e24670c9",
+      "primary_l2_pass": true,
+      "recovery_c0_pass": true,
+      "recovery_candidate_available": true,
+      "recovery_l2_not_reached": true,
+      "runtime_error_at_l2": true,
+      "trace_has_legacy_primary_l2": true,
+      "trace_source_sha256": "610e19624564783caba4a212236e29557013161a05a38702e94cd9f52fde4c14",
+      "trial_id": 45
+    },
+    {
+      "candidate_rank": 0,
+      "candidate_source": "SOURCE_BOUNDED_LOCAL_RECOVERY_V1",
+      "cycle_index": 281,
+      "exception_stage": "L2",
+      "fallback_rule_present": true,
+      "final_action_role": "CERTIFIED_TERMINAL",
+      "final_disposition": "RECOVERY_L2_UNKNOWN",
+      "observation_source_sha256": "4c374959d27c751d2c82e54fca3ef1b0322458b3f49c9d374e5bdb73d7601921",
+      "primary_l2_pass": true,
+      "recovery_c0_pass": true,
+      "recovery_candidate_available": true,
+      "recovery_l2_not_reached": true,
+      "runtime_error_at_l2": true,
+      "trace_has_legacy_primary_l2": true,
+      "trace_source_sha256": "a45c27e98eef8098447238319c7fdb4596e82a44d5ec798e59d6034d09e8a7f1",
+      "trial_id": 75
+    }
+  ]
+}
