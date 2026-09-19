@@ -15,6 +15,7 @@ from reproduction.runtime.active_runtime_assurance_v2.runtime_types import (
     BundleIdentity,
     Candidate,
     CandidateIdentity,
+    CandidateRole,
     CertificateStatus,
     EvidenceResult,
     L1AttemptBinding,
@@ -110,19 +111,40 @@ class CanonicalL2Runtime:
             except Exception as exc:
                 evidence = EvidenceResult(CertificateStatus.UNKNOWN, f"L2_BACKEND_EXCEPTION:{type(exc).__name__}", "none")
         result = L2Result.create(evidence.status, evidence.reason, candidate.identity, p_k1, p_k2, segment_id, evidence.evidence_identity)
-        self._ledger.record(
+        l2_payload = dict(
+            candidate_identity=candidate.identity.value,
+            candidate_role=candidate.role.value,
+            candidate_source_type=candidate.provenance.source_type,
+            x_k1_identity=first.post_state_identity,
+            p_k1_identity=self._transition.position_identity(p_k1),
+            x_k2_identity=second.post_state_identity,
+            p_k2_identity=self._transition.position_identity(p_k2),
+            segment_identity=segment_id,
+            status=evidence.status.value,
+            reason=evidence.reason,
+            evidence_identity=evidence.evidence_identity,
+        )
+        self._ledger.record_scoped(
             snapshot.trial_id,
             snapshot.cycle_index,
-            canonical_l2_x_k1_identity=first.post_state_identity,
-            canonical_l2_p_k1_identity=self._transition.position_identity(p_k1),
-            canonical_l2_x_k2_identity=second.post_state_identity,
-            canonical_l2_p_k2_identity=self._transition.position_identity(p_k2),
-            canonical_l2_segment_identity=segment_id,
-            canonical_l2_status=evidence.status.value,
-            canonical_l2_reason=evidence.reason,
-            canonical_l2_evidence_identity=evidence.evidence_identity,
-            canonical_selected_candidate_identity=candidate.identity.value,
+            "canonical_l2_candidate_evidence",
+            candidate.identity.value,
+            **l2_payload,
         )
+        if candidate.role == CandidateRole.PRIMARY:
+            self._ledger.record(
+                snapshot.trial_id,
+                snapshot.cycle_index,
+                canonical_l2_x_k1_identity=first.post_state_identity,
+                canonical_l2_p_k1_identity=l2_payload["p_k1_identity"],
+                canonical_l2_x_k2_identity=second.post_state_identity,
+                canonical_l2_p_k2_identity=l2_payload["p_k2_identity"],
+                canonical_l2_segment_identity=segment_id,
+                canonical_l2_status=evidence.status.value,
+                canonical_l2_reason=evidence.reason,
+                canonical_l2_evidence_identity=evidence.evidence_identity,
+                canonical_selected_candidate_identity=candidate.identity.value,
+            )
         return result
 
 

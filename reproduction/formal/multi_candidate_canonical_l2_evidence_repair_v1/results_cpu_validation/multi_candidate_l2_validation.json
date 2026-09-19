@@ -1,0 +1,27 @@
+{
+  "anti_rewrite_preserved": true,
+  "details": [
+    "test_t02_single_primary_legacy_compatibility (__main__.MultiCandidateL2Tests) ... ok",
+    "test_t03_primary_plus_recovery_coexist (__main__.MultiCandidateL2Tests) ... ok",
+    "test_t04_primary_plus_all_six_and_deterministic_scope_order (__main__.MultiCandidateL2Tests) ... ok",
+    "test_t05_same_scope_conflicting_rewrite_rejected (__main__.MultiCandidateL2Tests) ... ok",
+    "test_t06_identical_same_scope_is_idempotent (__main__.MultiCandidateL2Tests) ... ok",
+    "test_t07_role_and_source_distinction (__main__.MultiCandidateL2Tests) ... ok",
+    "test_t08_trace_serialization_is_deterministic_and_additive (__main__.MultiCandidateL2Tests) ... ok",
+    "test_t09_scoped_fact_has_no_authority_consumer (__main__.MultiCandidateL2Tests) ... ok",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 8 tests in 1.619s",
+    "",
+    "OK"
+  ],
+  "errors": 0,
+  "failures": 0,
+  "gpu_used": false,
+  "primary_plus_six_evaluations": 7,
+  "schema": "MULTI_CANDIDATE_CANONICAL_L2_CPU_VALIDATION_V1",
+  "status": "PASS_MULTI_CANDIDATE_CANONICAL_L2_CPU_VALIDATION",
+  "tests_run": 8,
+  "trace_schema_identity": "EVALUATION_TRACE_SCHEMA_V2_CERT_EXEC_IDENTITY_V1",
+  "unique_candidate_scopes_expected": 7
+}
