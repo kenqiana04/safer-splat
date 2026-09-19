@@ -1,0 +1,41 @@
+{
+  "historical_result_root_manifests": {
+    "attempt0": {
+      "content_manifest_sha256": "a680dca42b89532d2352edf9675ae4ae88a591c53393ef76e2dd5a4b34870cda",
+      "file_count": 8,
+      "root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_20260918"
+    },
+    "retry1": {
+      "content_manifest_sha256": "aeb8f358d6b4ee6f1a2c9c50be2a7423e4fda2c968edb089218b2659cc87e397",
+      "file_count": 45,
+      "root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_retry1_20260918"
+    }
+  },
+  "historical_roots_mutation_count": 0,
+  "lineage": {
+    "attempt0_root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_20260918",
+    "blocker": "MULTI_CANDIDATE_CANONICAL_L2_EVIDENCE_NAMESPACE_DEFECT",
+    "historical_roots_mutation_authority": false,
+    "natural_witnesses": [
+      {
+        "cycle_index": 202,
+        "trial_id": 15
+      },
+      {
+        "cycle_index": 168,
+        "trial_id": 45
+      },
+      {
+        "cycle_index": 281,
+        "trial_id": 75
+      }
+    ],
+    "repair_head": "2102c8401b61ca8fe74123ab51e8fc9c27ed0895",
+    "repair_status": "PASS_REPAIR_MULTI_CANDIDATE_CANONICAL_L2_EVIDENCE_V1",
+    "retry1_root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_retry1_20260918",
+    "retry1_status": "INCONCLUSIVE_RECOVERY_SEARCH_EXERCISED_BUT_NO_RECOVERY_COMMIT",
+    "retry2_reason": "RETRY_AFTER_CONFIRMED_MULTI_CANDIDATE_CANONICAL_L2_EVIDENCE_REPAIR"
+  },
+  "schema": "BOUNDED_LOCAL_RECOVERY_SMOKE_RETRY2_RETRY1_LINEAGE_AUDIT_V1",
+  "status": "PASS"
+}

@@ -1,0 +1,183 @@
+{
+  "base_head": "2102c8401b61ca8fe74123ab51e8fc9c27ed0895",
+  "dynamics": {
+    "causality": [
+      "d_p_k1_d_u_k=0",
+      "d_p_k2_d_u_k=dt^2_I"
+    ],
+    "dt": 0.05,
+    "identity": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1"
+  },
+  "execution_authorization_token": "EXECUTE_BOUNDED_LOCAL_RECOVERY_SMOKE_RETRY2_V1",
+  "freeze_gpu_run_count": 0,
+  "freeze_real_plantcommit_count": 0,
+  "freeze_smoke_trial_run_count": 0,
+  "freeze_tmux_created_count": 0,
+  "future_result_root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_retry2_v1_20260919",
+  "future_tmux_session": "bounded_local_recovery_smoke_retry2_v1",
+  "gate0_head": "18ba8ed8aa3b4acc326426e05808bd5abe67561c",
+  "geometry": {
+    "effective_radius_q": 0.015,
+    "epsilon": null,
+    "hard_radius_q": 0.015,
+    "historical_diagnostic_radius_q": 0.025,
+    "historical_diagnostic_runtime_authority": false,
+    "rho_seg_q": 0.0,
+    "runtime_margin_q": 0.0,
+    "unit": "q"
+  },
+  "harness_sha256": {
+    "analyze_bounded_local_recovery_smoke_retry2_v1.py": "e1c6af5dff5028fd1958adb275714afaa12602837b9a098e478ef3c888717fb7",
+    "freeze_bounded_local_recovery_smoke_retry2_v1.py": "fc6f27370788b05bef7324e2db93339f2cf3e36f9d57cf191e85d04fbb955b1a",
+    "launch_bounded_local_recovery_smoke_retry2_v1.py": "17d8dc314cfe4918b27274c4d0075d0511a4c6cd2f8118398018e69d90130ced",
+    "monitor_bounded_local_recovery_smoke_retry2_v1.py": "9cf05d3300ae647846d63a7131deb1f5f0a1620715b8cf54a4d714bcbc9a3f32",
+    "run_bounded_local_recovery_smoke_retry2_trial_v1.py": "7649b84b08dee77f36978e3fb56a411f2beaf148f17f7e3d633be51267333e60",
+    "validate_bounded_local_recovery_smoke_retry2_v1.py": "7c622743faf6e46f00f84747c4e2feaba110ba749796753353840be760efb1ac"
+  },
+  "local_infrastructure_bindings": {
+    "authority": "EXECUTION_HARNESS_ONLY_NO_SCIENTIFIC_AUTHORITY",
+    "data": {
+      "required_type": "SYMLINK",
+      "source": "/disk1/zlab/projects/safer-splat/data/stonehenge",
+      "worktree_relative_path": "data/stonehenge"
+    },
+    "git_commit_authority": false,
+    "outputs": {
+      "required_type": "SYMLINK",
+      "source": "/disk1/zlab/projects/safer-splat/outputs/stonehenge",
+      "worktree_relative_path": "outputs/stonehenge"
+    },
+    "runtime_method_authority": false,
+    "scientific_parameter_authority": false
+  },
+  "map_artifacts": [
+    {
+      "relative_path": "config.yml",
+      "sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e",
+      "size": 6933
+    },
+    {
+      "relative_path": "dataparser_transforms.json",
+      "sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e",
+      "size": 312
+    },
+    {
+      "relative_path": "nerfstudio_models/step-000029999.ckpt",
+      "sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d",
+      "size": 92344786
+    }
+  ],
+  "map_identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+  "multi_candidate_l2_evidence": {
+    "candidate_identity_role_source_alignment_required": true,
+    "candidate_scoped_namespace": "canonical_l2_candidate_evidence",
+    "candidate_scoped_required_for_each_l2_evaluation": true,
+    "canonical_l2_evidence_rewrite_exception_count_max": 0,
+    "deterministic_ordering_required": true,
+    "legacy_primary_flat_must_not_be_overwritten": true,
+    "legacy_primary_flat_required": true,
+    "same_scope_conflicting_rewrite_forbidden": true,
+    "trace_schema": "EVALUATION_TRACE_SCHEMA_V2_CERT_EXEC_IDENTITY_V1"
+  },
+  "original_bounded_recovery_implementation_head": "8184b0ecec20b6e84b1745518903b87bbb5cde8f",
+  "protocol_commit": "b1f73464b1b20e0f4f36c611a09e67bbb41f68ea",
+  "protocol_sha256": "2df83af14a9f3d7ece27839fa3b01b0830a149b9bd3829749ec961f8757a05dd",
+  "recovery": {
+    "candidate_family": "F1_AXIS_EXTREMA_ONLY",
+    "candidate_order": [
+      "+x",
+      "-x",
+      "+y",
+      "-y",
+      "+z",
+      "-z"
+    ],
+    "candidate_vectors": {
+      "+x": [
+        0.1,
+        0.0,
+        0.0
+      ],
+      "+y": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "+z": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "-x": [
+        -0.1,
+        0.0,
+        0.0
+      ],
+      "-y": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "-z": [
+        0.0,
+        0.0,
+        -0.1
+      ]
+    },
+    "generator": "AXIS_EXTREMA_F32_V1",
+    "maximum_candidates": 6,
+    "priority": [
+      "CERTIFIED_PRIMARY",
+      "VALID_RETAINED_BACKUP",
+      "BOUNDED_LOCAL_RECOVERY",
+      "CERTIFIED_TERMINAL",
+      "ASSURANCE_BOUNDARY"
+    ],
+    "source": "SOURCE_BOUNDED_LOCAL_RECOVERY_V1",
+    "trigger": [
+      "SAME_CYCLE_L1_PASS",
+      "PRIMARY_C0_PASS",
+      "PRIMARY_L2_PASS",
+      "PRIMARY_L3_TYPED_CANDIDATE_LOCAL_FAIL",
+      "NO_VALID_RETAINED_BACKUP",
+      "TERMINAL_CURRENT_STATE_PRECERT_PASS",
+      "DEADLINE_OPEN",
+      "EXACT_IDENTITIES",
+      "SOURCE_AUTHORIZED",
+      "EXHAUSTION_KEY_ELIGIBLE"
+    ]
+  },
+  "repair_implementation_head": "2102c8401b61ca8fe74123ab51e8fc9c27ed0895",
+  "retry1_lineage": {
+    "attempt0_root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_20260918",
+    "blocker": "MULTI_CANDIDATE_CANONICAL_L2_EVIDENCE_NAMESPACE_DEFECT",
+    "historical_roots_mutation_authority": false,
+    "natural_witnesses": [
+      {
+        "cycle_index": 202,
+        "trial_id": 15
+      },
+      {
+        "cycle_index": 168,
+        "trial_id": 45
+      },
+      {
+        "cycle_index": 281,
+        "trial_id": 75
+      }
+    ],
+    "repair_head": "2102c8401b61ca8fe74123ab51e8fc9c27ed0895",
+    "repair_status": "PASS_REPAIR_MULTI_CANDIDATE_CANONICAL_L2_EVIDENCE_V1",
+    "retry1_root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_retry1_20260918",
+    "retry1_status": "INCONCLUSIVE_RECOVERY_SEARCH_EXERCISED_BUT_NO_RECOVERY_COMMIT",
+    "retry2_reason": "RETRY_AFTER_CONFIRMED_MULTI_CANDIDATE_CANONICAL_L2_EVIDENCE_REPAIR"
+  },
+  "schema": "BOUNDED_LOCAL_RECOVERY_SMOKE_RETRY2_EXECUTION_LOCK_V1",
+  "semantic_protocol_sha256": "4a66e051ad63e5886f95cd8eb96a2e3d64a85b6cd5b1d1de00cbcf0bdf1a0bca",
+  "trial_order": [
+    15,
+    45,
+    75
+  ],
+  "trial_order_sha256": "f65880d7fe3c1d8127b5cfbbeaff78c4fb462bb658e22d6ae0d69995afe4508a"
+}

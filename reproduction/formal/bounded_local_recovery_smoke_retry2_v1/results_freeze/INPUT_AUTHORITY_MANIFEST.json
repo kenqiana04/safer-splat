@@ -1,0 +1,148 @@
+{
+  "base_head": "2102c8401b61ca8fe74123ab51e8fc9c27ed0895",
+  "branch": "freeze-bounded-local-recovery-smoke-retry2-protocol-v1",
+  "cohort": {
+    "automatic_retry": false,
+    "maximum_completed_cycles_per_trial": 500,
+    "seed": 0,
+    "separate_process_per_trial": true,
+    "serial_execution": true,
+    "source": "RETRY1_NATURAL_RECOVERY_WITNESS_COHORT",
+    "trial_ids": [
+      15,
+      45,
+      75
+    ],
+    "trial_order": [
+      15,
+      45,
+      75
+    ]
+  },
+  "dynamics": {
+    "causality": [
+      "d_p_k1_d_u_k=0",
+      "d_p_k2_d_u_k=dt^2_I"
+    ],
+    "dt": 0.05,
+    "identity": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1"
+  },
+  "environment": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "CUDA_VISIBLE_DEVICES": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONHASHSEED": "0",
+    "PYTHONNOUSERSITE": "1",
+    "conda_environment": "/disk1/zlab/conda_envs/safer_splat_official",
+    "physical_gpu": 1,
+    "process_visible_device": "cuda:0",
+    "python": "/disk1/zlab/conda_envs/safer_splat_official/bin/python"
+  },
+  "execution_authorization_token": "EXECUTE_BOUNDED_LOCAL_RECOVERY_SMOKE_RETRY2_V1",
+  "future_result_root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_retry2_v1_20260919",
+  "future_tmux_session": "bounded_local_recovery_smoke_retry2_v1",
+  "geometry": {
+    "effective_radius_q": 0.015,
+    "epsilon": null,
+    "hard_radius_q": 0.015,
+    "historical_diagnostic_radius_q": 0.025,
+    "historical_diagnostic_runtime_authority": false,
+    "rho_seg_q": 0.0,
+    "runtime_margin_q": 0.0,
+    "unit": "q"
+  },
+  "map": {
+    "artifacts": [
+      {
+        "relative_path": "config.yml",
+        "sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e",
+        "size": 6933
+      },
+      {
+        "relative_path": "dataparser_transforms.json",
+        "sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e",
+        "size": 312
+      },
+      {
+        "relative_path": "nerfstudio_models/step-000029999.ckpt",
+        "sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d",
+        "size": 92344786
+      }
+    ],
+    "identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+    "root": "/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724"
+  },
+  "origin": "git@github-kenqiana04-safer-splat-current:kenqiana04/safer-splat.git",
+  "protocol_commit": "b1f73464b1b20e0f4f36c611a09e67bbb41f68ea",
+  "recovery": {
+    "candidate_family": "F1_AXIS_EXTREMA_ONLY",
+    "candidate_order": [
+      "+x",
+      "-x",
+      "+y",
+      "-y",
+      "+z",
+      "-z"
+    ],
+    "candidate_vectors": {
+      "+x": [
+        0.1,
+        0.0,
+        0.0
+      ],
+      "+y": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "+z": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "-x": [
+        -0.1,
+        0.0,
+        0.0
+      ],
+      "-y": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "-z": [
+        0.0,
+        0.0,
+        -0.1
+      ]
+    },
+    "generator": "AXIS_EXTREMA_F32_V1",
+    "maximum_candidates": 6,
+    "priority": [
+      "CERTIFIED_PRIMARY",
+      "VALID_RETAINED_BACKUP",
+      "BOUNDED_LOCAL_RECOVERY",
+      "CERTIFIED_TERMINAL",
+      "ASSURANCE_BOUNDARY"
+    ],
+    "source": "SOURCE_BOUNDED_LOCAL_RECOVERY_V1",
+    "trigger": [
+      "SAME_CYCLE_L1_PASS",
+      "PRIMARY_C0_PASS",
+      "PRIMARY_L2_PASS",
+      "PRIMARY_L3_TYPED_CANDIDATE_LOCAL_FAIL",
+      "NO_VALID_RETAINED_BACKUP",
+      "TERMINAL_CURRENT_STATE_PRECERT_PASS",
+      "DEADLINE_OPEN",
+      "EXACT_IDENTITIES",
+      "SOURCE_AUTHORIZED",
+      "EXHAUSTION_KEY_ELIGIBLE"
+    ]
+  },
+  "schema": "BOUNDED_LOCAL_RECOVERY_SMOKE_RETRY2_INPUT_AUTHORITY_MANIFEST_V1",
+  "scientific_state": {
+    "changed": false,
+    "retry1_status": "INCONCLUSIVE_RECOVERY_SEARCH_EXERCISED_BUT_NO_RECOVERY_COMMIT",
+    "scientific_verdict": "FAIL_POST_REPAIR_V3_PROGRESS_NONINFERIORITY_GATE"
+  }
+}
