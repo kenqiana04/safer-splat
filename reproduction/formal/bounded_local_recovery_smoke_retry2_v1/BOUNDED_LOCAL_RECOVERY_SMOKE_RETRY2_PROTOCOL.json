@@ -1,0 +1,166 @@
+{
+  "schema": "BOUNDED_LOCAL_RECOVERY_SMOKE_RETRY2_PROTOCOL_V1",
+  "role": "DEVELOPMENT_ONLY_GPU_ENGINEERING_SMOKE_NO_EFFICACY_CLAIM",
+  "branch": "freeze-bounded-local-recovery-smoke-retry2-protocol-v1",
+  "implementation_head": "2102c8401b61ca8fe74123ab51e8fc9c27ed0895",
+  "original_bounded_recovery_implementation_head": "8184b0ecec20b6e84b1745518903b87bbb5cde8f",
+  "gate0_head": "18ba8ed8aa3b4acc326426e05808bd5abe67561c",
+  "cohort": {
+    "trial_ids": [15, 45, 75],
+    "trial_order": [15, 45, 75],
+    "source": "RETRY1_NATURAL_RECOVERY_WITNESS_COHORT",
+    "seed": 0,
+    "maximum_completed_cycles_per_trial": 500,
+    "serial_execution": true,
+    "separate_process_per_trial": true,
+    "automatic_retry": false
+  },
+  "environment": {
+    "conda_environment": "/disk1/zlab/conda_envs/safer_splat_official",
+    "python": "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
+    "physical_gpu": 1,
+    "CUDA_VISIBLE_DEVICES": "1",
+    "process_visible_device": "cuda:0",
+    "PYTHONHASHSEED": "0",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "map": {
+    "root": "/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724",
+    "identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+    "artifacts": [
+      {"relative_path": "config.yml", "size": 6933, "sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e"},
+      {"relative_path": "dataparser_transforms.json", "size": 312, "sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e"},
+      {"relative_path": "nerfstudio_models/step-000029999.ckpt", "size": 92344786, "sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d"}
+    ]
+  },
+  "geometry": {
+    "unit": "q",
+    "hard_radius_q": 0.015,
+    "runtime_margin_q": 0.0,
+    "effective_radius_q": 0.015,
+    "rho_seg_q": 0.0,
+    "epsilon": null,
+    "historical_diagnostic_radius_q": 0.025,
+    "historical_diagnostic_runtime_authority": false
+  },
+  "dynamics": {
+    "identity": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1",
+    "dt": 0.05,
+    "causality": ["d_p_k1_d_u_k=0", "d_p_k2_d_u_k=dt^2_I"]
+  },
+  "recovery": {
+    "source": "SOURCE_BOUNDED_LOCAL_RECOVERY_V1",
+    "generator": "AXIS_EXTREMA_F32_V1",
+    "candidate_family": "F1_AXIS_EXTREMA_ONLY",
+    "maximum_candidates": 6,
+    "candidate_order": ["+x", "-x", "+y", "-y", "+z", "-z"],
+    "candidate_vectors": {
+      "+x": [0.1, 0.0, 0.0], "-x": [-0.1, 0.0, 0.0],
+      "+y": [0.0, 0.1, 0.0], "-y": [0.0, -0.1, 0.0],
+      "+z": [0.0, 0.0, 0.1], "-z": [0.0, 0.0, -0.1]
+    },
+    "trigger": [
+      "SAME_CYCLE_L1_PASS", "PRIMARY_C0_PASS", "PRIMARY_L2_PASS",
+      "PRIMARY_L3_TYPED_CANDIDATE_LOCAL_FAIL", "NO_VALID_RETAINED_BACKUP",
+      "TERMINAL_CURRENT_STATE_PRECERT_PASS", "DEADLINE_OPEN", "EXACT_IDENTITIES",
+      "SOURCE_AUTHORIZED", "EXHAUSTION_KEY_ELIGIBLE"
+    ],
+    "priority": ["CERTIFIED_PRIMARY", "VALID_RETAINED_BACKUP", "BOUNDED_LOCAL_RECOVERY", "CERTIFIED_TERMINAL", "ASSURANCE_BOUNDARY"]
+  },
+  "deadline": {
+    "cycle_deadline_duration": 1.0,
+    "latest_safe_commit": 0.8,
+    "warning_reserve": 0.2,
+    "stage_budgets": [],
+    "clock": "MONOTONIC_CLOCK_ACTIVE_SMOKE_V3",
+    "warning_expired_not_automatic_failure": true
+  },
+  "future_result_root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_retry2_v1_20260919",
+  "future_tmux_session": "bounded_local_recovery_smoke_retry2_v1",
+  "execution_authorization_token": "EXECUTE_BOUNDED_LOCAL_RECOVERY_SMOKE_RETRY2_V1",
+  "local_infrastructure_bindings": {
+    "authority": "EXECUTION_HARNESS_ONLY_NO_SCIENTIFIC_AUTHORITY",
+    "outputs": {"worktree_relative_path": "outputs/stonehenge", "source": "/disk1/zlab/projects/safer-splat/outputs/stonehenge", "required_type": "SYMLINK"},
+    "data": {"worktree_relative_path": "data/stonehenge", "source": "/disk1/zlab/projects/safer-splat/data/stonehenge", "required_type": "SYMLINK"},
+    "git_commit_authority": false,
+    "runtime_method_authority": false,
+    "scientific_parameter_authority": false
+  },
+  "retry1_lineage": {
+    "attempt0_root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_20260918",
+    "retry1_root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_v1_retry1_20260918",
+    "retry1_status": "INCONCLUSIVE_RECOVERY_SEARCH_EXERCISED_BUT_NO_RECOVERY_COMMIT",
+    "natural_witnesses": [{"trial_id": 15, "cycle_index": 202}, {"trial_id": 45, "cycle_index": 168}, {"trial_id": 75, "cycle_index": 281}],
+    "blocker": "MULTI_CANDIDATE_CANONICAL_L2_EVIDENCE_NAMESPACE_DEFECT",
+    "repair_status": "PASS_REPAIR_MULTI_CANDIDATE_CANONICAL_L2_EVIDENCE_V1",
+    "repair_head": "2102c8401b61ca8fe74123ab51e8fc9c27ed0895",
+    "retry2_reason": "RETRY_AFTER_CONFIRMED_MULTI_CANDIDATE_CANONICAL_L2_EVIDENCE_REPAIR",
+    "historical_roots_mutation_authority": false
+  },
+  "multi_candidate_l2_evidence": {
+    "trace_schema": "EVALUATION_TRACE_SCHEMA_V2_CERT_EXEC_IDENTITY_V1",
+    "legacy_primary_flat_required": true,
+    "legacy_primary_flat_must_not_be_overwritten": true,
+    "candidate_scoped_namespace": "canonical_l2_candidate_evidence",
+    "candidate_scoped_required_for_each_l2_evaluation": true,
+    "candidate_identity_role_source_alignment_required": true,
+    "deterministic_ordering_required": true,
+    "same_scope_conflicting_rewrite_forbidden": true,
+    "canonical_l2_evidence_rewrite_exception_count_max": 0
+  },
+  "recovery_l2_counters": [
+    "recovery_l2_enter_count", "recovery_l2_result_count", "recovery_l2_pass_count",
+    "recovery_l2_fail_count", "recovery_l2_unknown_count", "recovery_l2_exception_count"
+  ],
+  "rank_progression": {
+    "fields": ["scans_generated", "candidates_generated_per_scan", "attempted_ranks", "max_attempted_rank_per_scan", "duplicate_skipped_ranks"],
+    "must_attempt_all_six": false,
+    "stop_after_fully_certified_selected_candidate_is_valid": true,
+    "candidate_local_rejection_may_resume": true,
+    "global_health_failure_is_fail_closed": true
+  },
+  "hard_zero_integrity_gates": [
+    "process_nonzero_exit_count", "malformed_or_finalization_error_count", "trace_write_failure_count",
+    "trace_commit_atomicity_violation_count", "cert_exec_identity_mismatch_count", "canonical_transition_mismatch_count",
+    "state_continuity_mismatch_count", "state_continuity_unknown_count", "routing_ambiguous_count",
+    "routing_missing_count", "unauthorized_source_execution_count", "unverified_action_execution_count",
+    "stale_backup_execution_count", "same_key_duplicate_retry_count", "internal_recovery_loop_count",
+    "historical_diagnostic_runtime_authority_count", "hard_safety_unknown_count",
+    "represented_map_hard_violation_count", "canonical_l2_evidence_rewrite_exception_count",
+    "candidate_scoped_l2_evidence_missing_count", "candidate_scoped_l2_scope_conflict_count",
+    "legacy_primary_l2_flat_evidence_corruption_count"
+  ],
+  "recovery_exercise": {
+    "eligibility_events_min": 1,
+    "scan_count_min": 1,
+    "candidate_attempt_count_min": 1,
+    "selected_count_min": 1,
+    "plant_commit_count_min": 1
+  },
+  "hard_safety": {
+    "proxy": "FROZEN_POST_REPAIR_REPRESENTED_MAP_HARD_SAFETY",
+    "radius_q": 0.015,
+    "negative_h_is_violation": true,
+    "nonfinite_is_unknown_and_core_failure": true,
+    "tolerance": 0.0,
+    "unit": "q"
+  },
+  "progress_role": "DIAGNOSTIC_ONLY_NO_NI_NO_REFERENCE_PAIRING",
+  "science": {
+    "post_repair_progress_ni": "FAIL_POST_REPAIR_V3_PROGRESS_NONINFERIORITY_GATE",
+    "scientific_oracle_enabled": false,
+    "reference_arm_enabled": false,
+    "formal85_enabled": false,
+    "parameter_selection_enabled": false
+  },
+  "statuses": [
+    "PASS_BOUNDED_LOCAL_RECOVERY_SMOKE_RETRY2_V1",
+    "INCONCLUSIVE_RECOVERY_SEARCH_EXERCISED_BUT_NO_RECOVERY_COMMIT",
+    "INCONCLUSIVE_RECOVERY_PATH_NOT_EXERCISED",
+    "FAIL_MULTI_CANDIDATE_L2_EVIDENCE_REGRESSION",
+    "FAIL_RECOVERY_L2_RUNTIME_INFRASTRUCTURE",
+    "FAIL_SMOKE_RUNTIME_PROCESS", "FAIL_SMOKE_INTEGRITY", "FAIL_SMOKE_HARD_SAFETY"
+  ]
+}
