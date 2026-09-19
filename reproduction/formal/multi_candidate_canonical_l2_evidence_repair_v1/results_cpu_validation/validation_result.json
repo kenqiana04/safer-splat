@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "anti_rewrite_flat": true,
+    "anti_rewrite_scoped": true,
+    "branch": true,
+    "exact_key": true,
+    "h1_confirmed": true,
+    "multi_candidate": true,
+    "origin": true,
+    "protected_diff": true,
+    "regressions": true,
+    "result_roots_unchanged": true,
+    "witnesses": true
+  },
+  "gpu_run_count": 0,
+  "real_smoke_trial_run_count": 0,
+  "retry1_root_mutation_count": 0,
+  "retry1_status": "INCONCLUSIVE_RECOVERY_SEARCH_EXERCISED_BUT_NO_RECOVERY_COMMIT",
+  "schema": "MULTI_CANDIDATE_CANONICAL_L2_EVIDENCE_REPAIR_VALIDATION_V1",
+  "scientific_verdict": "FAIL_POST_REPAIR_V3_PROGRESS_NONINFERIORITY_GATE",
+  "status": "PASS_REPAIR_MULTI_CANDIDATE_CANONICAL_L2_EVIDENCE_V1_VALIDATION",
+  "test_count": 256,
+  "test_pass_count": 256,
+  "tmux_created_count": 0
+}

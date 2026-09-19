@@ -1,0 +1,82 @@
+{
+  "active_runtime_including_bounded_recovery": {
+    "command": [
+      "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "reproduction/runtime/active_runtime_assurance_v2/tests",
+      "-p",
+      "test_*.py",
+      "-q"
+    ],
+    "returncode": 0,
+    "status": "PASS",
+    "tail": [
+      "----------------------------------------------------------------------",
+      "Ran 235 tests in 0.813s",
+      "",
+      "OK"
+    ],
+    "test_count": 235
+  },
+  "historical_mutating_validators_executed": false,
+  "historical_validator_exclusion_reason": "They rewrite frozen upstream evidence; equivalent current CPU suites were run read-only.",
+  "identity_repair": {
+    "command": [
+      "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "reproduction/validation/certification_execution_state_identity_repair_v1/tests",
+      "-p",
+      "test_*.py",
+      "-q"
+    ],
+    "returncode": 0,
+    "status": "PASS",
+    "tail": [
+      "----------------------------------------------------------------------",
+      "Ran 5 tests in 1.521s",
+      "",
+      "OK"
+    ],
+    "test_count": 5
+  },
+  "task_specific": {
+    "command": [
+      "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
+      "/disk1/zlab/v3_repair_worktrees/safer-splat-repair-multi-candidate-canonical-l2-evidence-v1/reproduction/formal/multi_candidate_canonical_l2_evidence_repair_v1/validate_multi_candidate_canonical_l2_evidence_v1.py"
+    ],
+    "returncode": 0,
+    "status": "PASS",
+    "tail": [
+      "{\"anti_rewrite_preserved\": true, \"errors\": 0, \"failures\": 0, \"gpu_used\": false, \"primary_plus_six_evaluations\": 7, \"schema\": \"MULTI_CANDIDATE_CANONICAL_L2_CPU_VALIDATION_V1\", \"status\": \"PASS_MULTI_CANDIDATE_CANONICAL_L2_CPU_VALIDATION\", \"tests\": {\"T02_single_primary_legacy_compatibility\": \"PASS\", \"T03_primary_plus_recovery\": \"PASS\", \"T04_primary_plus_all_six\": \"PASS\", \"T05_same_scope_conflict_rejected\": \"PASS\", \"T06_identical_scope_idempotent\": \"PASS\", \"T07_role_source_distinction\": \"PASS\", \"T08_trace_serialization_deterministic\": \"PASS\", \"T09_no_authority_consumer\": \"PASS\"}, \"tests_run\": 8, \"trace_schema_identity\": \"EVALUATION_TRACE_SCHEMA_V2_CERT_EXEC_IDENTITY_V1\", \"unique_candidate_scopes_expected\": 7}"
+    ],
+    "test_count": null
+  },
+  "v3_wiring": {
+    "command": [
+      "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "reproduction/validation/v3_hard_radius_runtime_wiring_v1/tests",
+      "-p",
+      "test_*.py",
+      "-q"
+    ],
+    "returncode": 0,
+    "status": "PASS",
+    "tail": [
+      "----------------------------------------------------------------------",
+      "Ran 8 tests in 0.002s",
+      "",
+      "OK"
+    ],
+    "test_count": 8
+  }
+}

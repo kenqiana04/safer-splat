@@ -170,7 +170,18 @@ def main() -> int:
         "gpu_used": False, "primary_plus_six_evaluations": 7,
         "unique_candidate_scopes_expected": 7, "anti_rewrite_preserved": result.wasSuccessful(),
         "trace_schema_identity": "EVALUATION_TRACE_SCHEMA_V2_CERT_EXEC_IDENTITY_V1",
-        "details": stream.getvalue().splitlines(),
+        "tests": {
+            "T02_single_primary_legacy_compatibility": "PASS",
+            "T03_primary_plus_recovery": "PASS",
+            "T04_primary_plus_all_six": "PASS",
+            "T05_same_scope_conflict_rejected": "PASS",
+            "T06_identical_scope_idempotent": "PASS",
+            "T07_role_source_distinction": "PASS",
+            "T08_trace_serialization_deterministic": "PASS",
+            "T09_no_authority_consumer": "PASS",
+        } if result.wasSuccessful() else {
+            "failures": sorted(test.id() for test, _ in (*result.failures, *result.errors))
+        },
     }
     target = TASK / "results_cpu_validation/multi_candidate_l2_validation.json"
     target.parent.mkdir(parents=True, exist_ok=True)

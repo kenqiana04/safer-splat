@@ -1,0 +1,41 @@
+{
+  "active_runtime_diff": 0,
+  "authorized_runtime_changed": [
+    "reproduction/runtime/certification_execution_state_identity_repair_v1/evidence.py",
+    "reproduction/runtime/certification_execution_state_identity_repair_v1/repaired_components.py"
+  ],
+  "base": "fff812999a2243e2cd670772abba0a3d5e3214f0",
+  "cbf_diff": 0,
+  "changed_files": [
+    "reproduction/formal/multi_candidate_canonical_l2_evidence_repair_v1/DIAGNOSIS.md",
+    "reproduction/formal/multi_candidate_canonical_l2_evidence_repair_v1/IMPLEMENTATION_PLAN.md",
+    "reproduction/formal/multi_candidate_canonical_l2_evidence_repair_v1/REPAIR_SPEC.md",
+    "reproduction/formal/multi_candidate_canonical_l2_evidence_repair_v1/finalize_validation.py",
+    "reproduction/formal/multi_candidate_canonical_l2_evidence_repair_v1/freeze_retry1_diagnosis.py",
+    "reproduction/formal/multi_candidate_canonical_l2_evidence_repair_v1/pre_repair_reproduce_h1.py",
+    "reproduction/formal/multi_candidate_canonical_l2_evidence_repair_v1/report/FINAL_REPORT.md",
+    "reproduction/formal/multi_candidate_canonical_l2_evidence_repair_v1/results_cpu_validation/frozen_retry1_input_authority.json",
+    "reproduction/formal/multi_candidate_canonical_l2_evidence_repair_v1/results_cpu_validation/frozen_witness_audit.json",
+    "reproduction/formal/multi_candidate_canonical_l2_evidence_repair_v1/results_cpu_validation/multi_candidate_l2_validation.json",
+    "reproduction/formal/multi_candidate_canonical_l2_evidence_repair_v1/results_cpu_validation/pre_repair_h1_reproduction.json",
+    "reproduction/formal/multi_candidate_canonical_l2_evidence_repair_v1/results_cpu_validation/protected_diff_audit.json",
+    "reproduction/formal/multi_candidate_canonical_l2_evidence_repair_v1/results_cpu_validation/regression_results.json",
+    "reproduction/formal/multi_candidate_canonical_l2_evidence_repair_v1/results_cpu_validation/result_root_mutation_audit.json",
+    "reproduction/formal/multi_candidate_canonical_l2_evidence_repair_v1/results_cpu_validation/result_root_snapshots_before.json",
+    "reproduction/formal/multi_candidate_canonical_l2_evidence_repair_v1/results_cpu_validation/validation_result.json",
+    "reproduction/formal/multi_candidate_canonical_l2_evidence_repair_v1/validate_multi_candidate_canonical_l2_evidence_v1.py",
+    "reproduction/runtime/certification_execution_state_identity_repair_v1/evidence.py",
+    "reproduction/runtime/certification_execution_state_identity_repair_v1/repaired_components.py"
+  ],
+  "dynamics_diff": 0,
+  "existing_smoke_diff": 0,
+  "out_of_scope_changed": [],
+  "protected_changed": [],
+  "result_root_mutation_count": 0,
+  "run_py_diff": 0,
+  "schema": "MULTI_CANDIDATE_CANONICAL_L2_PROTECTED_DIFF_AUDIT_V1",
+  "splat_diff": 0,
+  "status": "PASS",
+  "unauthorized_runtime_changed": [],
+  "v3_wiring_diff": 0
+}
