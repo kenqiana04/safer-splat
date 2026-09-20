@@ -6,6 +6,7 @@ from pathlib import Path
 
 HERE=Path(__file__).resolve().parent; TASK=HERE.parent; REPO=TASK.parents[2]
 if str(TASK) not in sys.path: sys.path.insert(0,str(TASK))
+if str(REPO) not in sys.path: sys.path.insert(0,str(REPO))
 BASE="bc96a745af658aa2c8df404fba403dbed4c7b7fe"
 PROTOCOL=TASK/"POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_PROTOCOL.json"; LOCK=TASK/"POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_EXECUTION_LOCK.json"
 TOKEN="EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1_R2"

@@ -1,0 +1,31 @@
+{
+  "failed": [],
+  "gpu_run_count": 0,
+  "pass_count": 18,
+  "real_plantcommit_count": 0,
+  "real_trial_run_count": 0,
+  "schema": "FORMAL85_R2_CPU_STATIC_INTEGRATION_RESULTS_V1",
+  "status": "PASS_FORMAL85_R2_CPU_STATIC_INTEGRATION",
+  "test_count": 18,
+  "tests": {
+    "T01_retry1_failure_authority": "PASS",
+    "T02_phase_matrix": "PASS",
+    "T03_prelaunch_active_tmux_fails": "PASS",
+    "T04_child_active_tmux_passes": "PASS",
+    "T05_child_root_contract": "PASS",
+    "T06_child_authority_fixture": "PASS",
+    "T07_canonical_lock_consistency": "PASS",
+    "T08_retry2_token_consistency": "PASS",
+    "T09_runtime_callsites_explicit": "PASS",
+    "T10_imports_no_execution": "PASS",
+    "T11_projected_protocol_semantics": "PASS",
+    "T12_local_bindings": "PASS",
+    "T13_startup_prerequisites": "PASS",
+    "T14_scientific_equivalence": "PASS",
+    "T15_protected_runtime_diff": "PASS",
+    "T16_percent_monitor": "PASS",
+    "T17_analyzer_postcollection_only": "PASS",
+    "T18_failed_attempt_hashes_immutable": "PASS"
+  },
+  "tmux_created_count": 0
+}

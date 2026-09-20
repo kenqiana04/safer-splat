@@ -11,34 +11,33 @@
     "status": "FAIL_PRE_CYCLE_EXECUTION_HARNESS_LOCK_PATH_MISMATCH",
     "trial_id": 66
   },
-  "attempt0_authority_artifact_sha256": "4dfc0fd635453dd576de094af8e0da56f13da9682aa7ddf6e5bfdd0f6dfc8633",
   "attempt0_authority_files": {
-    "BATCH_STOP.json": {
-      "sha256": "430595f6e5bb87d6fd473ae3880e8fa847acc69a406f02a41c7f4c061e6919a8",
-      "size": 98
-    },
-    "POST_REPAIR_V3_BOUNDED_RECOVERY_LAUNCH_AUTHORIZATION.json": {
-      "sha256": "5adf09483c65e7c92ebab5c2f79ec9d19d66c5ed10fe65fe61f2ea975f697a87",
-      "size": 1163
-    },
-    "parent_failures/trial_66/gpu_released.txt": {
-      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
-      "size": 5
-    },
-    "parent_failures/trial_66/process_exit_code.txt": {
-      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
-      "size": 2
-    },
-    "parent_failures/trial_66/stderr.log": {
-      "sha256": "c4a98cbe4b13e47b7e6ed9eac68b71b6c179ade38970bb37ae49d9f75783a34e",
-      "size": 1732
-    },
-    "parent_failures/trial_66/stdout.log": {
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "size": 0
-    }
+    "BATCH_STOP.json": [
+      98,
+      "430595f6e5bb87d6fd473ae3880e8fa847acc69a406f02a41c7f4c061e6919a8"
+    ],
+    "POST_REPAIR_V3_BOUNDED_RECOVERY_LAUNCH_AUTHORIZATION.json": [
+      1163,
+      "5adf09483c65e7c92ebab5c2f79ec9d19d66c5ed10fe65fe61f2ea975f697a87"
+    ],
+    "parent_failures/trial_66/gpu_released.txt": [
+      5,
+      "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74"
+    ],
+    "parent_failures/trial_66/process_exit_code.txt": [
+      2,
+      "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    ],
+    "parent_failures/trial_66/stderr.log": [
+      1732,
+      "c4a98cbe4b13e47b7e6ed9eac68b71b6c179ade38970bb37ae49d9f75783a34e"
+    ],
+    "parent_failures/trial_66/stdout.log": [
+      0,
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ]
   },
-  "base_head": "6f6ac91be5ffa4ad7c0b8ed3d3851f3293c4979b",
+  "base_head": "bc96a745af658aa2c8df404fba403dbed4c7b7fe",
   "boundary_handling": {
     "boundary_cardinality": "completed_cycles == PlantCommit_count + 1 and assurance_boundary_count == 1",
     "committed_cycle_routing_missing": "INTEGRITY_FAILURE",
@@ -81,7 +80,7 @@
     ]
   },
   "engineering_pilot_freeze_head": "9ab6ad224f0deefbbbdc34f165281a562c0b19cf",
-  "execution_authorization_token": "EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1_R1",
+  "execution_authorization_token": "EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1_R2",
   "formal85_source_protocol_sha256": "19d17e585aacfc18481878543cd7848bf351a5d89362a305fb60de4fcae917c3",
   "freeze_execution_counts": {
     "gpu_run_count": 0,
@@ -89,8 +88,8 @@
     "real_trial_run_count": 0,
     "tmux_created_count": 0
   },
-  "future_result_root": "/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_retry1_20260920",
-  "future_tmux_session": "post_repair_v3_bounded_recovery_paired_validation_v1_retry1",
+  "future_result_root": "/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_retry2_20260920",
+  "future_tmux_session": "post_repair_v3_bounded_recovery_paired_validation_v1_retry2",
   "gate0_head": "18ba8ed8aa3b4acc326426e05808bd5abe67561c",
   "geometry": {
     "coordinate_unit": "q",
@@ -135,12 +134,12 @@
     "unintended_plant_commit_count"
   ],
   "harness_sha256": {
-    "analyze_post_repair_v3_bounded_recovery_paired_validation_v1.py": "8d28d13aa8c36e02e57b208fcfacfe6857546bbf3866489dfba996ca8e8394d9",
-    "freeze_post_repair_v3_bounded_recovery_paired_validation_v1.py": "be726fa846c92bfad4f808daf11daf6eac04b05bee6de21b47b0ce23c58b3b05",
-    "launch_post_repair_v3_bounded_recovery_paired_validation_v1.py": "35cca332b2e4dbcd9a8f10670b265f8c408e718282f4b70b755cdd787a22e466",
+    "analyze_post_repair_v3_bounded_recovery_paired_validation_v1.py": "5b3441a6f6db93d038c456206cad226eb32a880d43829de38d5de8685057c427",
+    "freeze_post_repair_v3_bounded_recovery_paired_validation_v1.py": "728ad022bb9cb2b7b55728d594e0aa57f9bec6ace91222492fd9f903985a16e0",
+    "launch_post_repair_v3_bounded_recovery_paired_validation_v1.py": "ed6d02838659debc71e2be084101b960180ac700896ec36477cd9c79e42706a0",
     "monitor_post_repair_v3_bounded_recovery_paired_validation_v1.py": "ac4f49cf84f96516becde9f2500f92fe7662838ded2f7dbcb9de2ceeea608d04",
-    "run_post_repair_v3_bounded_recovery_trial_v1.py": "12b9c191e787cdf6458e876c7dbd13786d667f3a6b073a1dcc3b30f7346118c0",
-    "validate_post_repair_v3_bounded_recovery_paired_validation_v1.py": "b6a384eb5175d7fa7bc5f85df9726a5669635aa9bd74b68f81e4679b1eeed996"
+    "run_post_repair_v3_bounded_recovery_trial_v1.py": "f302f28ce97979299e57ea25a4a1b25b0ee544f7d68d56ff4258be7c67c310b1",
+    "validate_post_repair_v3_bounded_recovery_paired_validation_v1.py": "cb8edcb654b7656a3caab4c3e72a8ef867b08156c10c817072b2c367a088ab61"
   },
   "historical_active_artifact_hashes": {
     "POST_REPAIR_V3_FINAL_ACCEPTANCE.json": "e0606042f340c91cef2d76b3bee3b52f4b8088fa3879ea0663ed1384891dfdef",
@@ -150,6 +149,7 @@
     "POST_REPAIR_V3_PAIRED_ROUTING_ANALYSIS.json": "9d447ca11be2016e666cfbd1a5ed0537b10a966e9603ae6168f85c8e4b07c232",
     "POST_REPAIR_V3_PAIRED_TRIAL_RESULTS.csv": "5b516822150125fd058fb5d4c5725925e045d1158f1cbd7ce6718a5928431e03"
   },
+  "launch_marker_basename": "POST_REPAIR_V3_BOUNDED_RECOVERY_RETRY2_LAUNCH_AUTHORIZATION.json",
   "map": {
     "artifacts": [
       {
@@ -182,8 +182,8 @@
     "RECOVERY_RANK_PROGRESSION_AUDIT.json": "77cd95221519aeb190f7188d13b0e4271026ea07a1c773c8e5193f6f4447a817",
     "TRACE_INTEGRITY_AUDIT.json": "c7ef7ca5e461c0403a8d2ad20b6f65b9508aba1e17d54a2ae12279ab003530d1"
   },
-  "protocol_commit": "f69d34601ee8a8534883e5ad712aae65cb5e943f",
-  "protocol_sha256": "f5f94dec825eba8ad874018d9c2b071d195e6bdd6240bace81126c75e738900b",
+  "protocol_commit": "64aaccf4eb0d13f20a7f2805f73a3b9fa9da35ed",
+  "protocol_sha256": "5571fb53c93288c845a74c35c92e535bb7fcf4fef19e6a1ea4853efeee30288c",
   "recovery": {
     "M": 6,
     "candidate_order": [
@@ -241,13 +241,51 @@
     "FORMAL_STATISTICAL_ANALYSIS.json": "3a135cceae817200c57c35b73dc9bb7f9a0a4e33527f0034c7fc33c77d7819ae"
   },
   "repair_implementation_head": "2102c8401b61ca8fe74123ab51e8fc9c27ed0895",
-  "repair_protocol_commit": "f69d34601ee8a8534883e5ad712aae65cb5e943f",
+  "repair_protocol_commit": "64aaccf4eb0d13f20a7f2805f73a3b9fa9da35ed",
+  "retry1": {
+    "batch_stop_reason": "CHILD_FAILURE_OR_MISSING_TRACE_LOCK",
+    "completed_public_cycles": 0,
+    "mutation_authority": false,
+    "plant_commit_count": 0,
+    "process_exit_code": 1,
+    "root": "/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_retry1_20260920",
+    "root_cause": "FORMAL85_RETRY1_CHILD_RUNTIME_VALIDATOR_PHASE_MISMATCH",
+    "scientific_authority": "NONE_PRE_CYCLE_FAILURE",
+    "status": "FAIL_PRE_CYCLE_CHILD_RUNTIME_VALIDATOR_PHASE_MISMATCH",
+    "trial_id": 66
+  },
+  "retry1_authority_files": {
+    "BATCH_STOP.json": [
+      98,
+      "430595f6e5bb87d6fd473ae3880e8fa847acc69a406f02a41c7f4c061e6919a8"
+    ],
+    "POST_REPAIR_V3_BOUNDED_RECOVERY_RETRY1_LAUNCH_AUTHORIZATION.json": [
+      1177,
+      "e1e41223a9d1f6e30e7320e792176fec24d354da66daef2f707aff87d6acea15"
+    ],
+    "parent_failures/trial_66/gpu_released.txt": [
+      5,
+      "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74"
+    ],
+    "parent_failures/trial_66/process_exit_code.txt": [
+      2,
+      "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    ],
+    "parent_failures/trial_66/stderr.log": [
+      1452,
+      "156b5a6d5d055a092aa793fa419e264d18be199c4ae32e9924809d460bdf2d23"
+    ],
+    "parent_failures/trial_66/stdout.log": [
+      0,
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ]
+  },
   "retry2_freeze_head": "abea482dc5bf49ed09cc224dedb7019acba67515",
-  "retry_reason": "RETRY_AFTER_CONFIRMED_EXECUTION_HARNESS_LOCK_PATH_REPAIR_R1",
+  "retry_reason": "RETRY_AFTER_CONFIRMED_CHILD_RUNTIME_VALIDATOR_PHASE_REPAIR_R2",
   "schema": "POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_EXECUTION_LOCK_V1",
   "scientific_semantics_diff_count": 0,
-  "scientific_semantics_equivalence_sha256": "546f7196040c67e841df57a9164c5dbd0a65c62c830a4f7d774d98fe334da2ba",
-  "semantic_protocol_sha256": "9e7044605edcde928e5e6e2808b1950c0caa7b4076bc84dc05b3d3dc4625f6c4",
+  "scientific_semantics_equivalence_sha256": "42aefb0b1f577b29816eaceb4600005034679c1a1036bda227894513311bb2cc",
+  "semantic_protocol_sha256": "f7427619161348cc5645d09ebf4d1322477b6c927d2b4a8b72c5f452d9e2aaa8",
   "statistics": {
     "hard_safety": {
       "active_only_hard_discordant_pairs_required": 0,
@@ -361,5 +399,12 @@
     46,
     77
   ],
-  "trial_order_sha256": "307359644268a4c06c102442cebbd99f9dcb42e9c7917ba752aa01ef6349b12c"
+  "trial_order_sha256": "307359644268a4c06c102442cebbd99f9dcb42e9c7917ba752aa01ef6349b12c",
+  "validation_phases": [
+    "freeze",
+    "prelaunch",
+    "batch_runtime",
+    "child_runtime",
+    "postcollection"
+  ]
 }
