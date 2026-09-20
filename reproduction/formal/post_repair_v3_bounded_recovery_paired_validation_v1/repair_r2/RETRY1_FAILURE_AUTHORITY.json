@@ -1,0 +1,26 @@
+{
+  "schema": "FORMAL85_RETRY1_FAILURE_AUTHORITY_R2",
+  "status": "FAIL_PRE_CYCLE_CHILD_RUNTIME_VALIDATOR_PHASE_MISMATCH",
+  "result_root": "/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_retry1_20260920",
+  "files": {
+    "BATCH_STOP.json": {"size": 98, "sha256": "430595f6e5bb87d6fd473ae3880e8fa847acc69a406f02a41c7f4c061e6919a8"},
+    "POST_REPAIR_V3_BOUNDED_RECOVERY_RETRY1_LAUNCH_AUTHORIZATION.json": {"size": 1177, "sha256": "e1e41223a9d1f6e30e7320e792176fec24d354da66daef2f707aff87d6acea15"},
+    "parent_failures/trial_66/stdout.log": {"size": 0, "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},
+    "parent_failures/trial_66/stderr.log": {"size": 1452, "sha256": "156b5a6d5d055a092aa793fa419e264d18be199c4ae32e9924809d460bdf2d23"},
+    "parent_failures/trial_66/process_exit_code.txt": {"size": 2, "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"},
+    "parent_failures/trial_66/gpu_released.txt": {"size": 5, "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74"}
+  },
+  "trial_id": 66,
+  "process_exit_code": 1,
+  "batch_stop_reason": "CHILD_FAILURE_OR_MISSING_TRACE_LOCK",
+  "exact_exception": "RuntimeError: FORMAL85_R1_TMUX_ABSENT_FAIL",
+  "raw_trial_directory_absent": true,
+  "runtime_trace_lock_absent": true,
+  "completed_public_cycles": 0,
+  "plant_commit_count": 0,
+  "scientific_method_run_count": 0,
+  "tmux_inactive": true,
+  "root_cause": "FORMAL85_RETRY1_CHILD_RUNTIME_VALIDATOR_PHASE_MISMATCH",
+  "scientific_authority": "NONE_PRE_CYCLE_FAILURE",
+  "mutation_authority": false
+}
