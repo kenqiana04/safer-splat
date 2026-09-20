@@ -1,0 +1,18 @@
+{
+  "canonical_basename": "POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_EXECUTION_LOCK.json",
+  "checks": {
+    "attempt0_missing_basename_matches": true,
+    "canonical_existing_lock": true,
+    "names_differ": true,
+    "runner_declared_wrong_lock": true,
+    "sha_raises_file_not_found": true,
+    "wrong_lock_absent": true
+  },
+  "exception": "[Errno 2] No such file or directory: '/disk1/zlab/v3_repair_worktrees/safer-splat-repair-post-repair-v3-bounded-recovery-formal85-lock-path-r1/reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_EXECUTION_LOCK.json'",
+  "exception_type": "FileNotFoundError",
+  "gpu_run_count": 0,
+  "runner_declared_basename": "POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_EXECUTION_LOCK.json",
+  "schema": "PRE_REPAIR_LOCK_PATH_REPRODUCTION_R1",
+  "status": "PASS_REPRODUCE_FORMAL85_LOCK_PATH_MISMATCH_R1",
+  "trial_run_count": 0
+}
