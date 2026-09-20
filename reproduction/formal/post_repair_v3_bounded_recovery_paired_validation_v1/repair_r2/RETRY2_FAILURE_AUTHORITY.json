@@ -1,0 +1,29 @@
+{
+  "schema": "FORMAL85_RETRY2_FAILURE_AUTHORITY_R2",
+  "status": "FAIL_PRE_CYCLE_CHILD_RUNTIME_RAW_DIRECTORY_PHASE_MISMATCH",
+  "result_root": "/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_retry2_20260920",
+  "files": {
+    "BATCH_STOP.json": {"size": 98, "sha256": "333bdcecda4aa57560cda65657e5b46083b07b9d677269de3ac4fadd323bcede"},
+    "POST_REPAIR_V3_BOUNDED_RECOVERY_RETRY2_LAUNCH_AUTHORIZATION.json": {"size": 1177, "sha256": "a586c8aa9bd2277180625d9bc4b3d3fa127a0615040e4d8f71d37585e710dcd1"},
+    "raw/trial_66/stdout.log": {"size": 155, "sha256": "cb767a9dc5177846d34a71020e90937aaada6c44170e6b2edb8f3d422944e173"},
+    "raw/trial_66/stderr.log": {"size": 0, "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},
+    "raw/trial_66/process_exit_code.txt": {"size": 2, "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3"},
+    "raw/trial_66/gpu_released.txt": {"size": 5, "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74"},
+    "raw/trial_66/trial_summary.json": {"size": 1809, "sha256": "aa48a9af1b304bdf803a989aad8333178f80c9a4f058e1669049d06fab918eb9"},
+    "raw/trial_66/bounded_recovery_process_metadata.json": {"size": 1791, "sha256": "a7261ea03a9ec58d7830fa980fe8d25ae8078adc1109a1bee4b755d738fba7f8"}
+  },
+  "trial_id": 66,
+  "process_exit_code": 2,
+  "batch_stop_reason": "CHILD_FAILURE_OR_MISSING_TRACE_LOCK",
+  "exact_exception": "RuntimeError: FORMAL85_R2_CHILD_RUNTIME_CHILD_AUTHORITY_FAIL",
+  "raw_trial_directory_present": true,
+  "runtime_trace_lock_absent": true,
+  "completed_public_cycles": 0,
+  "plant_commit_count": 0,
+  "scientific_method_run_count": 0,
+  "tmux_inactive": true,
+  "root_cause": "FORMAL85_RETRY2_CHILD_RUNTIME_RAW_DIRECTORY_PHASE_MISMATCH",
+  "causal_detail": "Delegate run_one creates raw/trial_66 before calling patched verify_source_and_map; CHILD_RUNTIME validation incorrectly treated any raw directory as immutable prior evidence instead of rejecting only immutable trace/trial completion evidence.",
+  "scientific_authority": "NONE_PRE_CYCLE_FAILURE",
+  "mutation_authority": false
+}
