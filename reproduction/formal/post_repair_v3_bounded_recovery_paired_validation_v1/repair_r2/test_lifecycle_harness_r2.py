@@ -53,7 +53,7 @@ def run_tests():
       "T05_child_root_contract":"ROOT_STATE" in errors(P.CHILD_RUNTIME,root_exists=False,tmux_is_active=True,caller_in_tmux=True,marker_exists=True,batch_stop_exists=False,batch_complete_exists=False,immutable_locks=0,child_auth_exists=True),
       "T06_child_authority_fixture":child_auth_ok and child_auth_bad,
       "T07_canonical_lock_consistency":runner.LOCK.resolve()==launcher.LOCK.resolve()==validator.LOCK.resolve()==LOCK.resolve() and delegate.EXECUTION_LOCK_PATH.resolve()==LOCK.resolve(),
-      "T08_retry2_token_consistency":p["execution_authorization_token"]==lock["execution_authorization_token"]==validator.TOKEN==TOKEN and launcher_text.count(TOKEN)>=2,
+      "T08_retry3_token_consistency":p["execution_authorization_token"]==lock["execution_authorization_token"]==validator.TOKEN==TOKEN and launcher_text.count(TOKEN)>=2,
       "T09_runtime_callsites_explicit":runner_text.count("ValidationPhase.CHILD_RUNTIME")>=2 and "require_absent_root=False" not in runner_text and "validate_freeze(" not in runner_text,
       "T10_imports_no_execution":callable(runner.main) and callable(delegate.run_one) and not Path(p["future_result_root"]).exists(),
       "T11_projected_protocol_semantics":runner.projected_v3_protocol()["maximum_completed_cycles_per_trial"]==500 and runner.projected_v3_protocol()["trial_order"]==validator.TRIALS,
