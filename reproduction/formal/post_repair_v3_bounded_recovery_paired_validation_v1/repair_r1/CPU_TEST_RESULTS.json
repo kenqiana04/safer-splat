@@ -1,0 +1,31 @@
+{
+  "failed": [],
+  "gpu_run_count": 0,
+  "pass_count": 18,
+  "real_plantcommit_count": 0,
+  "real_trial_run_count": 0,
+  "schema": "FORMAL85_R1_CPU_TEST_RESULTS_V1",
+  "status": "PASS_FORMAL85_R1_CPU_TESTS",
+  "test_count": 18,
+  "tests": {
+    "T01_pre_repair_reproduction": "PASS",
+    "T02_runner_validator_lock": "PASS",
+    "T03_canonical_lock_exactly_once": "PASS",
+    "T04_wrong_basename_absent": "PASS",
+    "T05_runner_lock_hash": "PASS",
+    "T06_launcher_lock_binding": "PASS",
+    "T07_authorization_consistency": "PASS",
+    "T08_retry1_root_session": "PASS",
+    "T09_attempt0_immutable_not_selected": "PASS",
+    "T10_formal85_order": "PASS",
+    "T11_scientific_equivalence": "PASS",
+    "T12_map_geometry_dynamics_recovery": "PASS",
+    "T13_reference_authority": "PASS",
+    "T14_historical_active_authority": "PASS",
+    "T15_monitor_percentage_contract": "PASS",
+    "T16_analyzer_contract": "PASS",
+    "T17_protected_runtime_diff": "PASS",
+    "T18_no_execution": "PASS"
+  },
+  "tmux_created_count": 0
+}

@@ -5,6 +5,7 @@ import argparse, hashlib, importlib.util, json, subprocess, sys
 from pathlib import Path
 
 REPAIR_DIR=Path(__file__).resolve().parent; TASK=REPAIR_DIR.parent; REPO=TASK.parents[2]
+if str(TASK) not in sys.path: sys.path.insert(0,str(TASK))
 BASE="6f6ac91be5ffa4ad7c0b8ed3d3851f3293c4979b"
 TOKEN="EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1_R1"
 CANONICAL="POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_EXECUTION_LOCK.json"
