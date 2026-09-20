@@ -14,12 +14,13 @@ BASE="bc96a745af658aa2c8df404fba403dbed4c7b7fe"; PILOT_FREEZE="9ab6ad224f0deefbb
 REPAIR="2102c8401b61ca8fe74123ab51e8fc9c27ed0895"; IMPL="8184b0ecec20b6e84b1745518903b87bbb5cde8f"; GATE0="18ba8ed8aa3b4acc326426e05808bd5abe67561c"; RETRY2_FREEZE="abea482dc5bf49ed09cc224dedb7019acba67515"
 BRANCH="repair-post-repair-v3-bounded-recovery-formal85-execution-harness-r2"
 ORIGIN="git@github-kenqiana04-safer-splat-current:kenqiana04/safer-splat.git"
-TOKEN="EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1_R2"
-RESULT_ROOT=Path("/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_retry2_20260920")
-SESSION="post_repair_v3_bounded_recovery_paired_validation_v1_retry2"
+TOKEN="EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1_R3"
+RESULT_ROOT=Path("/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_retry3_20260920")
+SESSION="post_repair_v3_bounded_recovery_paired_validation_v1_retry3"
 ATTEMPT0_ROOT=Path("/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_20260920")
 RETRY1_ROOT=Path("/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_retry1_20260920")
-LAUNCH_MARKER="POST_REPAIR_V3_BOUNDED_RECOVERY_RETRY2_LAUNCH_AUTHORIZATION.json"
+RETRY2_ROOT=Path("/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_retry2_20260920")
+LAUNCH_MARKER="POST_REPAIR_V3_BOUNDED_RECOVERY_RETRY3_LAUNCH_AUTHORIZATION.json"
 CHILD_AUTH="POST_REPAIR_V3_BOUNDED_RECOVERY_INTERNAL_CHILD_AUTHORIZATION.json"
 CHILD_TOKEN_ENV="SAFER_SPLAT_POST_REPAIR_V3_BOUNDED_RECOVERY_CHILD_TOKEN"
 TASK_PREFIX="reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/"
@@ -28,7 +29,8 @@ TRIALS=[66,74,9,12,73,26,79,31,54,18,19,88,38,8,28,29,0,24,37,98,27,91,2,78,76,8
 HARNESS=("run_post_repair_v3_bounded_recovery_trial_v1.py","launch_post_repair_v3_bounded_recovery_paired_validation_v1.py","monitor_post_repair_v3_bounded_recovery_paired_validation_v1.py","analyze_post_repair_v3_bounded_recovery_paired_validation_v1.py","validate_post_repair_v3_bounded_recovery_paired_validation_v1.py","freeze_post_repair_v3_bounded_recovery_paired_validation_v1.py")
 ATTEMPT_FILES={
  ATTEMPT0_ROOT:{"BATCH_STOP.json":(98,"430595f6e5bb87d6fd473ae3880e8fa847acc69a406f02a41c7f4c061e6919a8"),"POST_REPAIR_V3_BOUNDED_RECOVERY_LAUNCH_AUTHORIZATION.json":(1163,"5adf09483c65e7c92ebab5c2f79ec9d19d66c5ed10fe65fe61f2ea975f697a87"),"parent_failures/trial_66/stdout.log":(0,"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"),"parent_failures/trial_66/stderr.log":(1732,"c4a98cbe4b13e47b7e6ed9eac68b71b6c179ade38970bb37ae49d9f75783a34e"),"parent_failures/trial_66/process_exit_code.txt":(2,"4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"),"parent_failures/trial_66/gpu_released.txt":(5,"a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74")},
- RETRY1_ROOT:{"BATCH_STOP.json":(98,"430595f6e5bb87d6fd473ae3880e8fa847acc69a406f02a41c7f4c061e6919a8"),"POST_REPAIR_V3_BOUNDED_RECOVERY_RETRY1_LAUNCH_AUTHORIZATION.json":(1177,"e1e41223a9d1f6e30e7320e792176fec24d354da66daef2f707aff87d6acea15"),"parent_failures/trial_66/stdout.log":(0,"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"),"parent_failures/trial_66/stderr.log":(1452,"156b5a6d5d055a092aa793fa419e264d18be199c4ae32e9924809d460bdf2d23"),"parent_failures/trial_66/process_exit_code.txt":(2,"4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"),"parent_failures/trial_66/gpu_released.txt":(5,"a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74")}}
+ RETRY1_ROOT:{"BATCH_STOP.json":(98,"430595f6e5bb87d6fd473ae3880e8fa847acc69a406f02a41c7f4c061e6919a8"),"POST_REPAIR_V3_BOUNDED_RECOVERY_RETRY1_LAUNCH_AUTHORIZATION.json":(1177,"e1e41223a9d1f6e30e7320e792176fec24d354da66daef2f707aff87d6acea15"),"parent_failures/trial_66/stdout.log":(0,"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"),"parent_failures/trial_66/stderr.log":(1452,"156b5a6d5d055a092aa793fa419e264d18be199c4ae32e9924809d460bdf2d23"),"parent_failures/trial_66/process_exit_code.txt":(2,"4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"),"parent_failures/trial_66/gpu_released.txt":(5,"a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74")},
+ RETRY2_ROOT:{"BATCH_STOP.json":(98,"333bdcecda4aa57560cda65657e5b46083b07b9d677269de3ac4fadd323bcede"),"POST_REPAIR_V3_BOUNDED_RECOVERY_RETRY2_LAUNCH_AUTHORIZATION.json":(1177,"a586c8aa9bd2277180625d9bc4b3d3fa127a0615040e4d8f71d37585e710dcd1"),"raw/trial_66/stdout.log":(155,"cb767a9dc5177846d34a71020e90937aaada6c44170e6b2edb8f3d422944e173"),"raw/trial_66/stderr.log":(0,"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"),"raw/trial_66/process_exit_code.txt":(2,"53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3"),"raw/trial_66/gpu_released.txt":(5,"a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74"),"raw/trial_66/trial_summary.json":(1809,"aa48a9af1b304bdf803a989aad8333178f80c9a4f058e1669049d06fab918eb9"),"raw/trial_66/bounded_recovery_process_metadata.json":(1791,"a7261ea03a9ec58d7830fa980fe8d25ae8078adc1109a1bee4b755d738fba7f8")}}
 
 class ValidationPhase(str,Enum):
     FREEZE="freeze"; PRELAUNCH="prelaunch"; BATCH_RUNTIME="batch_runtime"; CHILD_RUNTIME="child_runtime"; POSTCOLLECTION="postcollection"
@@ -69,7 +71,8 @@ def _validate_child_authority(p:dict,trial_id:int|None)->bool:
     if not token or not auth.is_file(): return False
     data=read(auth); expected={"trial_id":trial_id,"result_root":str(RESULT_ROOT),"source_head":git("rev-parse","HEAD"),"protocol_sha256":sha(PROTOCOL),"execution_lock_sha256":sha(LOCK),"token_sha256":hashlib.sha256(token.encode()).hexdigest()}
     parent=data.get("parent_pid")
-    return all(data.get(k)==v for k,v in expected.items()) and isinstance(parent,int) and parent>0 and Path(f"/proc/{parent}").exists() and not (RESULT_ROOT/"raw"/f"trial_{trial_id}").exists()
+    immutable=(RESULT_ROOT/"raw"/f"trial_{trial_id}"/"runtime_trace_lock.json").exists() or (RESULT_ROOT/f"trial_{trial_id}_complete.json").exists()
+    return all(data.get(k)==v for k,v in expected.items()) and isinstance(parent,int) and parent>0 and Path(f"/proc/{parent}").exists() and not immutable
 
 def validate_phase(phase:ValidationPhase|str,*,trial_id:int|None=None,launch_token:str|None=None,require_clean:bool=False)->dict:
     phase=ValidationPhase(phase); p=read(PROTOCOL); checks={}
@@ -87,12 +90,14 @@ def validate_phase(phase:ValidationPhase|str,*,trial_id:int|None=None,launch_tok
     c=p["cohort"]; need("cohort_execution",len(set(TRIALS))==85 and c["seed"]==0 and c["maximum_completed_cycles_per_trial"]==500 and c["serial_execution"] and c["separate_process_per_trial"] and not c["automatic_retry"])
     need("future_identity",str(RESULT_ROOT)==p["future_result_root"] and p["future_tmux_session"]==SESSION and p["execution_authorization_token"]==TOKEN)
     need("canonical_lock_protocol",p["canonical_execution_lock_basename"]==CANONICAL_LOCK_BASENAME)
-    for label,root in (("attempt0",ATTEMPT0_ROOT),("retry1",RETRY1_ROOT)):
+    for label,root in (("attempt0",ATTEMPT0_ROOT),("retry1",RETRY1_ROOT),("retry2",RETRY2_ROOT)):
         need(label+"_root",root.is_dir())
         for rel,(size,digest) in ATTEMPT_FILES[root].items():
             path=root/rel; need(label+"_"+rel.replace("/","_").replace(".","_"),path.is_file() and path.stat().st_size==size and sha(path)==digest)
-        need(label+"_no_raw_trial",not (root/"raw/trial_66").exists()); need(label+"_no_complete",not (root/"BATCH_COMPLETE.json").exists())
-    lineage=p["execution_attempt"]; need("attempt_lineage",lineage["attempt"]=="RETRY2" and lineage["attempt0"]["completed_public_cycles"]==lineage["retry1"]["completed_public_cycles"]==0 and not lineage["attempt0"]["mutation_authority"] and not lineage["retry1"]["mutation_authority"])
+        if label in ("attempt0","retry1"): need(label+"_no_raw_trial",not (root/"raw/trial_66").exists())
+        else: need("retry2_partial_raw_only",(root/"raw/trial_66").is_dir() and not (root/"raw/trial_66/runtime_trace_lock.json").exists())
+        need(label+"_no_complete",not (root/"BATCH_COMPLETE.json").exists())
+    lineage=p["execution_attempt"]; need("attempt_lineage",lineage["attempt"]=="RETRY3" and lineage["attempt0"]["completed_public_cycles"]==lineage["retry1"]["completed_public_cycles"]==lineage["retry2"]["completed_public_cycles"]==0 and not any(lineage[name]["mutation_authority"] for name in ("attempt0","retry1","retry2")))
     e=p["environment"]; need("environment",e["python"]=="/disk1/zlab/conda_envs/safer_splat_official/bin/python" and e["CUDA_VISIBLE_DEVICES"]=="1" and e["process_visible_device"]=="cuda:0" and e["PYTHONHASHSEED"]=="0" and e["PYTHONNOUSERSITE"]==e["PYTHONDONTWRITEBYTECODE"]=="1" and e["CUBLAS_WORKSPACE_CONFIG"]==":4096:8")
     for item in p["local_infrastructure_bindings"]:
         path=REPO/item["path"]; need("binding_"+item["path"].replace("/","_"),path.is_symlink() and os.readlink(path)==item["target"] and Path(item["target"]).exists() and bool(git("check-ignore",item["path"])))
@@ -123,7 +128,7 @@ def validate_phase(phase:ValidationPhase|str,*,trial_id:int|None=None,launch_tok
     need("lock_order",lock["trial_order"]==TRIALS and lock["trial_order_sha256"]==semantic_hash(TRIALS)); need("authorization_consistency",lock["execution_authorization_token"]==p["execution_authorization_token"]==TOKEN and launcher_source.count(TOKEN)>=2)
     need("lock_retry2_identity",lock["future_result_root"]==str(RESULT_ROOT) and lock["future_tmux_session"]==SESSION)
     need("lock_phase_authority",lock["validation_phases"]==[item.value for item in ValidationPhase] and lock["launch_marker_basename"]==LAUNCH_MARKER)
-    need("lock_failed_attempt_lineage",lock["attempt0"]["root"]==str(ATTEMPT0_ROOT) and lock["retry1"]["root"]==str(RETRY1_ROOT) and not lock["attempt0"]["mutation_authority"] and not lock["retry1"]["mutation_authority"])
+    need("lock_failed_attempt_lineage",lock["attempt0"]["root"]==str(ATTEMPT0_ROOT) and lock["retry1"]["root"]==str(RETRY1_ROOT) and lock["retry2"]["root"]==str(RETRY2_ROOT) and not any(lock[name]["mutation_authority"] for name in ("attempt0","retry1","retry2")))
     committed=git("show",f"{lock['protocol_commit']}:{TASK_PREFIX}{PROTOCOL.name}",binary=True); need("protocol_before_lock",hashlib.sha256(committed).hexdigest()==sha(PROTOCOL))
     equivalence=read(TASK/"repair_r2/SCIENTIFIC_SEMANTICS_EQUIVALENCE_AUDIT.json"); need("scientific_equivalence",equivalence["status"]=="PASS_SCIENTIFIC_SEMANTICS_EQUIVALENCE_R2" and equivalence["scientific_diff_count"]==0)
     protected=("cbf","splat","dynamics","run.py","reproduction/runtime","reproduction/formal/post_repair_v3_paired_validation_v1","reproduction/formal/bounded_local_recovery_smoke_v1","reproduction/formal/bounded_local_recovery_smoke_retry2_v1","reproduction/formal/bounded_local_recovery_engineering_pilot_v1","reproduction/formal/multi_candidate_canonical_l2_evidence_repair_v1")
@@ -132,7 +137,7 @@ def validate_phase(phase:ValidationPhase|str,*,trial_id:int|None=None,launch_tok
     errors=phase_state_errors(phase,root_exists=root_exists,tmux_is_active=tmux_active(),caller_in_tmux=bool(os.environ.get("TMUX")),marker_exists=marker_exists,batch_stop_exists=(RESULT_ROOT/"BATCH_STOP.json").exists(),batch_complete_exists=(RESULT_ROOT/"BATCH_COMPLETE.json").exists(),immutable_locks=locks,child_auth_exists=auth_exists)
     need("phase_state",not errors)
     if phase==ValidationPhase.BATCH_RUNTIME:
-        need("launch_token",bool(launch_token)); marker=read(RESULT_ROOT/LAUNCH_MARKER); expected={"schema":"POST_REPAIR_V3_BOUNDED_RECOVERY_RETRY2_LAUNCH_AUTHORIZATION_V1","token_sha256":hashlib.sha256(launch_token.encode()).hexdigest(),"protocol_sha256":sha(PROTOCOL),"execution_lock_sha256":sha(LOCK),"source_head":git("rev-parse","HEAD"),"trials":TRIALS,"session":SESSION}; need("launch_marker_identity",marker==expected)
+        need("launch_token",bool(launch_token)); marker=read(RESULT_ROOT/LAUNCH_MARKER); expected={"schema":"POST_REPAIR_V3_BOUNDED_RECOVERY_RETRY3_LAUNCH_AUTHORIZATION_V1","token_sha256":hashlib.sha256(launch_token.encode()).hexdigest(),"protocol_sha256":sha(PROTOCOL),"execution_lock_sha256":sha(LOCK),"source_head":git("rev-parse","HEAD"),"trials":TRIALS,"session":SESSION}; need("launch_marker_identity",marker==expected)
     if phase==ValidationPhase.CHILD_RUNTIME: need("child_authority",_validate_child_authority(p,trial_id))
     if phase==ValidationPhase.POSTCOLLECTION: need("batch_complete_identity",read(RESULT_ROOT/"BATCH_COMPLETE.json").get("trial_order")==TRIALS)
     if phase in (ValidationPhase.FREEZE,ValidationPhase.PRELAUNCH):

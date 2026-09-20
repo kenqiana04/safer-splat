@@ -9,7 +9,7 @@ if str(TASK) not in sys.path: sys.path.insert(0,str(TASK))
 if str(REPO) not in sys.path: sys.path.insert(0,str(REPO))
 BASE="bc96a745af658aa2c8df404fba403dbed4c7b7fe"
 PROTOCOL=TASK/"POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_PROTOCOL.json"; LOCK=TASK/"POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_EXECUTION_LOCK.json"
-TOKEN="EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1_R2"
+TOKEN="EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1_R3"
 SCIENTIFIC_KEYS=("cohort","environment","local_infrastructure_bindings","local_binding_authority","map","geometry","dynamics","recovery","engineering_pilot_authority","reference_authority","historical_active_authority","primary_scientific_gates","boundary_contract","hard_zero_integrity_gates","recovery_unknown_and_exception_policy","routing_diagnostics_role","historical_active_diagnostic_role","analysis_authority","decision_contract","scientific_boundary","freeze_execution_counts")
 
 def read(path): return json.loads(Path(path).read_text(encoding="utf-8"))
@@ -30,7 +30,7 @@ def equivalence():
 def run_tests():
     import validate_post_repair_v3_bounded_recovery_paired_validation_v1 as validator
     p=read(PROTOCOL); lock=read(LOCK); runner=load("formal85_r2_runner_test",TASK/"run_post_repair_v3_bounded_recovery_trial_v1.py"); launcher=load("formal85_r2_launcher_test",TASK/"launch_post_repair_v3_bounded_recovery_paired_validation_v1.py")
-    retry1=read(HERE/"RETRY1_FAILURE_AUTHORITY.json"); eq=read(HERE/"SCIENTIFIC_SEMANTICS_EQUIVALENCE_AUDIT.json")
+    retry1=read(HERE/"RETRY1_FAILURE_AUTHORITY.json"); retry2=read(HERE/"RETRY2_FAILURE_AUTHORITY.json"); eq=read(HERE/"SCIENTIFIC_SEMANTICS_EQUIVALENCE_AUDIT.json")
     runner_text=(TASK/"run_post_repair_v3_bounded_recovery_trial_v1.py").read_text(encoding="utf-8"); launcher_text=(TASK/"launch_post_repair_v3_bounded_recovery_paired_validation_v1.py").read_text(encoding="utf-8"); monitor=(TASK/"monitor_post_repair_v3_bounded_recovery_paired_validation_v1.py").read_text(encoding="utf-8"); analyzer=(TASK/"analyze_post_repair_v3_bounded_recovery_paired_validation_v1.py").read_text(encoding="utf-8")
     P=validator.ValidationPhase; errors=validator.phase_state_errors
     matrix_ok=(not errors(P.FREEZE,root_exists=False,tmux_is_active=False,caller_in_tmux=False,marker_exists=False,batch_stop_exists=False,batch_complete_exists=False,immutable_locks=0,child_auth_exists=False) and not errors(P.PRELAUNCH,root_exists=False,tmux_is_active=False,caller_in_tmux=False,marker_exists=False,batch_stop_exists=False,batch_complete_exists=False,immutable_locks=0,child_auth_exists=False) and not errors(P.BATCH_RUNTIME,root_exists=True,tmux_is_active=True,caller_in_tmux=True,marker_exists=True,batch_stop_exists=False,batch_complete_exists=False,immutable_locks=0,child_auth_exists=False) and not errors(P.CHILD_RUNTIME,root_exists=True,tmux_is_active=True,caller_in_tmux=True,marker_exists=True,batch_stop_exists=False,batch_complete_exists=False,immutable_locks=0,child_auth_exists=True) and not errors(P.POSTCOLLECTION,root_exists=True,tmux_is_active=False,caller_in_tmux=False,marker_exists=True,batch_stop_exists=False,batch_complete_exists=True,immutable_locks=85,child_auth_exists=False))
@@ -38,7 +38,7 @@ def run_tests():
     with tempfile.TemporaryDirectory(prefix="formal85_r2_child_") as temp:
         root=Path(temp); validator.RESULT_ROOT=root; token="fixture-token"; os.environ[validator.CHILD_TOKEN_ENV]=token
         auth={"trial_id":66,"result_root":str(root),"source_head":validator.git("rev-parse","HEAD"),"protocol_sha256":validator.sha(validator.PROTOCOL),"execution_lock_sha256":validator.sha(validator.LOCK),"token_sha256":hashlib.sha256(token.encode()).hexdigest(),"parent_pid":os.getpid()}
-        (root/validator.CHILD_AUTH).write_text(json.dumps(auth),encoding="utf-8"); child_auth_ok=validator._validate_child_authority(p,66); auth["token_sha256"]="bad"; (root/validator.CHILD_AUTH).write_text(json.dumps(auth),encoding="utf-8"); child_auth_bad=not validator._validate_child_authority(p,66)
+        (root/validator.CHILD_AUTH).write_text(json.dumps(auth),encoding="utf-8"); (root/"raw/trial_66").mkdir(parents=True); child_auth_ok=validator._validate_child_authority(p,66); (root/"raw/trial_66/runtime_trace_lock.json").write_text("{}",encoding="utf-8"); child_auth_bad=not validator._validate_child_authority(p,66)
     validator.RESULT_ROOT=original_root
     if original_token is None: os.environ.pop(validator.CHILD_TOKEN_ENV,None)
     else: os.environ[validator.CHILD_TOKEN_ENV]=original_token
@@ -46,7 +46,7 @@ def run_tests():
     from reproduction.runtime.active_runtime_assurance_v2.bounded_recovery import SOURCE, GENERATOR, DIRECTIONS
     protected=("cbf","splat","dynamics","run.py","reproduction/runtime")
     checks={
-      "T01_retry1_failure_authority":retry1["root_cause"]=="FORMAL85_RETRY1_CHILD_RUNTIME_VALIDATOR_PHASE_MISMATCH" and retry1["completed_public_cycles"]==retry1["plant_commit_count"]==0,
+      "T01_failed_attempt_authority":retry1["root_cause"]=="FORMAL85_RETRY1_CHILD_RUNTIME_VALIDATOR_PHASE_MISMATCH" and retry2["root_cause"]=="FORMAL85_RETRY2_CHILD_RUNTIME_RAW_DIRECTORY_PHASE_MISMATCH" and retry1["completed_public_cycles"]==retry1["plant_commit_count"]==retry2["completed_public_cycles"]==retry2["plant_commit_count"]==0,
       "T02_phase_matrix":matrix_ok and set(validator.PHASE_CONTRACT)==set(P),
       "T03_prelaunch_active_tmux_fails":"TMUX_STATE" in errors(P.PRELAUNCH,root_exists=False,tmux_is_active=True,caller_in_tmux=True,marker_exists=False,batch_stop_exists=False,batch_complete_exists=False,immutable_locks=0,child_auth_exists=False),
       "T04_child_active_tmux_passes":not errors(P.CHILD_RUNTIME,root_exists=True,tmux_is_active=True,caller_in_tmux=True,marker_exists=True,batch_stop_exists=False,batch_complete_exists=False,immutable_locks=0,child_auth_exists=True),

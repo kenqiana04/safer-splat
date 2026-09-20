@@ -17,7 +17,7 @@ from validate_post_repair_v3_bounded_recovery_paired_validation_v1 import (
 )
 from run_post_repair_v3_bounded_recovery_trial_v1 import AUTH_NAME, TOKEN_ENV
 
-LAUNCH_MARKER = "POST_REPAIR_V3_BOUNDED_RECOVERY_RETRY2_LAUNCH_AUTHORIZATION.json"
+LAUNCH_MARKER = "POST_REPAIR_V3_BOUNDED_RECOVERY_RETRY3_LAUNCH_AUTHORIZATION.json"
 
 
 def write(path: Path, value) -> None:
@@ -37,7 +37,7 @@ def launch() -> None:
     token = secrets.token_hex(32)
     root.mkdir(parents=False, exist_ok=False)
     write(root / LAUNCH_MARKER, {
-        "schema": "POST_REPAIR_V3_BOUNDED_RECOVERY_RETRY2_LAUNCH_AUTHORIZATION_V1",
+        "schema": "POST_REPAIR_V3_BOUNDED_RECOVERY_RETRY3_LAUNCH_AUTHORIZATION_V1",
         "token_sha256": hashlib.sha256(token.encode()).hexdigest(),
         "protocol_sha256": sha(PROTOCOL), "execution_lock_sha256": sha(LOCK),
         "source_head": git("rev-parse", "HEAD"),
@@ -107,11 +107,11 @@ def main() -> int:
     modes = parser.add_mutually_exclusive_group(required=True)
     modes.add_argument("--launch", action="store_true", help="Future task only; requires explicit authorization token")
     modes.add_argument("--batch-internal", action="store_true", help=argparse.SUPPRESS)
-    parser.add_argument("--authorize-execution", choices=("EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1_R2",))
+    parser.add_argument("--authorize-execution", choices=("EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1_R3",))
     parser.add_argument("--launch-token", help=argparse.SUPPRESS)
     args = parser.parse_args()
     if args.launch:
-        if args.authorize_execution != "EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1_R2":
+        if args.authorize_execution != "EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1_R3":
             raise RuntimeError("FUTURE_EXECUTION_TASK_AUTHORIZATION_REQUIRED")
         launch()
         return 0
