@@ -6,17 +6,17 @@ The primary comparison is bounded-recovery Active versus the immutable frozen Re
 
 A valid typed assurance boundary is a complete paired trial. Progress uses the last actually committed state, and hard safety audits only executed segments. A result root that already exists must never be relaunched; `BATCH_STOP` preserves evidence for diagnosis and does not authorize automatic retry.
 
-Attempt0 is immutable at `/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_20260920`. It stopped before the child runtime because the runner referenced a non-existent lock basename. Retry1 uses the canonical `POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_EXECUTION_LOCK.json`; no compatibility copy or symlink exists under the wrong basename.
+Attempt0 and Retry1 are immutable pre-cycle failures. Attempt0 exposed the wrong lock basename; Retry1 exposed a child-runtime validator phase mismatch. Retry2 uses the canonical `POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_EXECUTION_LOCK.json` and explicit `freeze`, `prelaunch`, `batch_runtime`, `child_runtime`, and `postcollection` validation phases.
 
 Future launch, from the worktree root only:
 
 ```bash
-/disk1/zlab/conda_envs/safer_splat_official/bin/python reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/launch_post_repair_v3_bounded_recovery_paired_validation_v1.py --launch --authorize-execution EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1_R1
+/disk1/zlab/conda_envs/safer_splat_official/bin/python reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/launch_post_repair_v3_bounded_recovery_paired_validation_v1.py --launch --authorize-execution EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1_R2
 ```
 
-Future Retry1 result root: `/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_retry1_20260920`
+Future Retry2 result root: `/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_retry2_20260920`
 
-Future Retry1 tmux: `post_repair_v3_bounded_recovery_paired_validation_v1_retry1`
+Future Retry2 tmux: `post_repair_v3_bounded_recovery_paired_validation_v1_retry2`
 
 Compact percentage monitor:
 

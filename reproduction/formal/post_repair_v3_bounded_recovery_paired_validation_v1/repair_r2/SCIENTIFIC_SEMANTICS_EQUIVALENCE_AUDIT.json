@@ -1,0 +1,147 @@
+{
+  "allowed_execution_identity_changes": [
+    "task_type",
+    "base_head",
+    "future_result_root",
+    "future_tmux_session",
+    "execution_authorization_token",
+    "execution_attempt",
+    "only_next_task_after_freeze_pass"
+  ],
+  "base_head": "bc96a745af658aa2c8df404fba403dbed4c7b7fe",
+  "comparisons": {
+    "analysis_authority": {
+      "base_sha256": "34c6d3d54c030842e72311f6575006683003d1c491d58a258e17dd8408d1a240",
+      "equal": true,
+      "retry2_sha256": "34c6d3d54c030842e72311f6575006683003d1c491d58a258e17dd8408d1a240"
+    },
+    "boundary_contract": {
+      "base_sha256": "7b0c5025df637f8d91d7a0aa29cf11d17a9723a30df6def2ffe5d949f9e1837c",
+      "equal": true,
+      "retry2_sha256": "7b0c5025df637f8d91d7a0aa29cf11d17a9723a30df6def2ffe5d949f9e1837c"
+    },
+    "cohort": {
+      "base_sha256": "4d6a1b56fd5e3d6313c4e5fabd4de999cfcba16136fe3c6a5b12d0b58f11a9e7",
+      "equal": true,
+      "retry2_sha256": "4d6a1b56fd5e3d6313c4e5fabd4de999cfcba16136fe3c6a5b12d0b58f11a9e7"
+    },
+    "decision_contract": {
+      "base_sha256": "e90a71ccf45476849e93a8e008ecfe9887ef1c41cd1aec9bf0789dba11d84632",
+      "equal": true,
+      "retry2_sha256": "e90a71ccf45476849e93a8e008ecfe9887ef1c41cd1aec9bf0789dba11d84632"
+    },
+    "dynamics": {
+      "base_sha256": "afc1595b36cb5fd6fe11ab387bda71837f0a508f7e02ba4b9f092a804745e700",
+      "equal": true,
+      "retry2_sha256": "afc1595b36cb5fd6fe11ab387bda71837f0a508f7e02ba4b9f092a804745e700"
+    },
+    "engineering_pilot_authority": {
+      "base_sha256": "ff23b7fd01e9d0c1521761fb9326e14716d0c8bb03e8717a386b3910aa4f4710",
+      "equal": true,
+      "retry2_sha256": "ff23b7fd01e9d0c1521761fb9326e14716d0c8bb03e8717a386b3910aa4f4710"
+    },
+    "environment": {
+      "base_sha256": "ad73a505870a3c2e084b5b962b5d18f40a85d169c8339f48c50701dedafbdb7d",
+      "equal": true,
+      "retry2_sha256": "ad73a505870a3c2e084b5b962b5d18f40a85d169c8339f48c50701dedafbdb7d"
+    },
+    "freeze_execution_counts": {
+      "base_sha256": "79cfc3c5192f7d3cc333c17144614c063b52292dde430f36c9593ffc83e450d8",
+      "equal": true,
+      "retry2_sha256": "79cfc3c5192f7d3cc333c17144614c063b52292dde430f36c9593ffc83e450d8"
+    },
+    "geometry": {
+      "base_sha256": "4a8c9cdef9802a14382583c38092c8affd5032250c0d2ca6e0ced9d457c576ec",
+      "equal": true,
+      "retry2_sha256": "4a8c9cdef9802a14382583c38092c8affd5032250c0d2ca6e0ced9d457c576ec"
+    },
+    "hard_zero_integrity_gates": {
+      "base_sha256": "26e18cb773816a3fc0f05fb9cc9cca3ef556f29402b6340c650074b240bbc687",
+      "equal": true,
+      "retry2_sha256": "26e18cb773816a3fc0f05fb9cc9cca3ef556f29402b6340c650074b240bbc687"
+    },
+    "historical_active_authority": {
+      "base_sha256": "ac777eae3bab80518f152effa7641da780ceaad65b6a07e9f3b6362d2fdef094",
+      "equal": true,
+      "retry2_sha256": "ac777eae3bab80518f152effa7641da780ceaad65b6a07e9f3b6362d2fdef094"
+    },
+    "historical_active_diagnostic_role": {
+      "base_sha256": "18acd8392b8e582eff7b6b1ecedc37c52c0b58ad876e78a42fa651d5db3f8654",
+      "equal": true,
+      "retry2_sha256": "18acd8392b8e582eff7b6b1ecedc37c52c0b58ad876e78a42fa651d5db3f8654"
+    },
+    "local_binding_authority": {
+      "base_sha256": "1aafef00f26eedd565e2471d263403f7a1d1c1684deef2aaee366441ca922695",
+      "equal": true,
+      "retry2_sha256": "1aafef00f26eedd565e2471d263403f7a1d1c1684deef2aaee366441ca922695"
+    },
+    "local_infrastructure_bindings": {
+      "base_sha256": "369abeb643632fa14111126fceb124745c6bbc02a3ca777bb8d4d997e7ce7232",
+      "equal": true,
+      "retry2_sha256": "369abeb643632fa14111126fceb124745c6bbc02a3ca777bb8d4d997e7ce7232"
+    },
+    "map": {
+      "base_sha256": "e74fbbd67f8a7eaec57f533ac54affc04404dae90de04cf23e51e9302db2a237",
+      "equal": true,
+      "retry2_sha256": "e74fbbd67f8a7eaec57f533ac54affc04404dae90de04cf23e51e9302db2a237"
+    },
+    "primary_scientific_gates": {
+      "base_sha256": "0f7e8354a9169490fbe405dbbe4efc5fde1a2e90f54383352e7ada76f8ec51de",
+      "equal": true,
+      "retry2_sha256": "0f7e8354a9169490fbe405dbbe4efc5fde1a2e90f54383352e7ada76f8ec51de"
+    },
+    "recovery": {
+      "base_sha256": "ca84ea6b0b9c047555b5176f14b78343f750446286c936c579b6a071a8530e91",
+      "equal": true,
+      "retry2_sha256": "ca84ea6b0b9c047555b5176f14b78343f750446286c936c579b6a071a8530e91"
+    },
+    "recovery_unknown_and_exception_policy": {
+      "base_sha256": "fa9deac5f0337da540c8e3ccbd2c7691163fc4ee618bd05ed993e992d6fe1b47",
+      "equal": true,
+      "retry2_sha256": "fa9deac5f0337da540c8e3ccbd2c7691163fc4ee618bd05ed993e992d6fe1b47"
+    },
+    "reference_authority": {
+      "base_sha256": "40e1aa556f39ebd5218ef6ab509c08573c7891cef6462bf4cb4f09ac9faad4d7",
+      "equal": true,
+      "retry2_sha256": "40e1aa556f39ebd5218ef6ab509c08573c7891cef6462bf4cb4f09ac9faad4d7"
+    },
+    "routing_diagnostics_role": {
+      "base_sha256": "d754dd6c2471ec58eef146949638e5dd272e3730ecc3efa638e8027b718e31c0",
+      "equal": true,
+      "retry2_sha256": "d754dd6c2471ec58eef146949638e5dd272e3730ecc3efa638e8027b718e31c0"
+    },
+    "scientific_boundary": {
+      "base_sha256": "cfa97ba8297f7e8dab2ad0b84f6a609266a45183b4621bb7b1236da3116a9a62",
+      "equal": true,
+      "retry2_sha256": "cfa97ba8297f7e8dab2ad0b84f6a609266a45183b4621bb7b1236da3116a9a62"
+    }
+  },
+  "schema": "FORMAL85_R2_SCIENTIFIC_SEMANTICS_EQUIVALENCE_AUDIT_V1",
+  "scientific_diff_count": 0,
+  "scientific_diff_fields": [],
+  "scientific_fields": [
+    "cohort",
+    "environment",
+    "local_infrastructure_bindings",
+    "local_binding_authority",
+    "map",
+    "geometry",
+    "dynamics",
+    "recovery",
+    "engineering_pilot_authority",
+    "reference_authority",
+    "historical_active_authority",
+    "primary_scientific_gates",
+    "boundary_contract",
+    "hard_zero_integrity_gates",
+    "recovery_unknown_and_exception_policy",
+    "routing_diagnostics_role",
+    "historical_active_diagnostic_role",
+    "analysis_authority",
+    "decision_contract",
+    "scientific_boundary",
+    "freeze_execution_counts"
+  ],
+  "scientific_semantics_changed": false,
+  "status": "PASS_SCIENTIFIC_SEMANTICS_EQUIVALENCE_R2"
+}

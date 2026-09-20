@@ -3,7 +3,7 @@
 from __future__ import annotations
 import argparse, csv, importlib.util, json, math, os, random, statistics, sys
 from pathlib import Path
-from validate_post_repair_v3_bounded_recovery_paired_validation_v1 import PROTOCOL, REPO, TRIALS, read
+from validate_post_repair_v3_bounded_recovery_paired_validation_v1 import PROTOCOL, REPO, TRIALS, ValidationPhase, read, validate_phase
 
 BLOCK="BLOCK_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_INTEGRITY"
 PASS="PASS_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_ON_FROZEN_STONEHENGE_BENCHMARK"
@@ -62,6 +62,7 @@ def decide(integrity,unknown,active_hard,active_only,lower):
 
 def analyze(write_outputs=True):
     os.chdir(REPO); p=read(PROTOCOL); root=Path(p["future_result_root"])
+    validate_phase(ValidationPhase.POSTCOLLECTION)
     if not (root/"BATCH_COMPLETE.json").is_file() or read(root/"BATCH_COMPLETE.json").get("trial_order")!=TRIALS: raise RuntimeError("ANALYSIS_REQUIRES_85_OF_85_IMMUTABLE_LOCKS")
     if any(not (root/f"trial_{t}_complete.json").is_file() or not (root/"raw"/f"trial_{t}"/"runtime_trace_lock.json").is_file() for t in TRIALS): raise RuntimeError("ANALYSIS_REQUIRES_85_OF_85_IMMUTABLE_LOCKS")
     reference={}

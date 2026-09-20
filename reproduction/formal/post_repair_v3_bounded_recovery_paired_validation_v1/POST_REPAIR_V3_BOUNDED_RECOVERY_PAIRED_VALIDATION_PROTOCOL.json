@@ -1,7 +1,7 @@
 {
   "schema": "POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_PROTOCOL_V1",
-  "task_type": "PROSPECTIVE_FORMAL85_PROTOCOL_FREEZE_NO_EXECUTION",
-  "base_head": "6f6ac91be5ffa4ad7c0b8ed3d3851f3293c4979b",
+  "task_type": "FORMAL85_EXECUTION_HARNESS_R2_REPAIR_AND_START_AUTHORITY",
+  "base_head": "bc96a745af658aa2c8df404fba403dbed4c7b7fe",
   "implementation_head": "2102c8401b61ca8fe74123ab51e8fc9c27ed0895",
   "original_bounded_recovery_implementation_head": "8184b0ecec20b6e84b1745518903b87bbb5cde8f",
   "gate0_head": "18ba8ed8aa3b4acc326426e05808bd5abe67561c",
@@ -22,15 +22,15 @@
     "repeatedly_exposed_benchmark": true,
     "pristine_holdout": false
   },
-  "future_result_root": "/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_retry1_20260920",
-  "future_tmux_session": "post_repair_v3_bounded_recovery_paired_validation_v1_retry1",
-  "execution_authorization_token": "EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1_R1",
+  "future_result_root": "/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_retry2_20260920",
+  "future_tmux_session": "post_repair_v3_bounded_recovery_paired_validation_v1_retry2",
+  "execution_authorization_token": "EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1_R2",
   "canonical_execution_lock_basename": "POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_EXECUTION_LOCK.json",
   "execution_attempt": {
-    "attempt": "RETRY1",
-    "repair_authority": "REPAIR_POST_REPAIR_V3_BOUNDED_RECOVERY_FORMAL85_LOCK_PATH_R1",
-    "repair_base_head": "6f6ac91be5ffa4ad7c0b8ed3d3851f3293c4979b",
-    "retry_reason": "RETRY_AFTER_CONFIRMED_EXECUTION_HARNESS_LOCK_PATH_REPAIR_R1",
+    "attempt": "RETRY2",
+    "repair_authority": "REPAIR_AND_START_POST_REPAIR_V3_BOUNDED_RECOVERY_FORMAL85_V1",
+    "repair_base_head": "bc96a745af658aa2c8df404fba403dbed4c7b7fe",
+    "retry_reason": "RETRY_AFTER_CONFIRMED_CHILD_RUNTIME_VALIDATOR_PHASE_REPAIR_R2",
     "attempt0": {
       "root": "/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_20260920",
       "status": "FAIL_PRE_CYCLE_EXECUTION_HARNESS_LOCK_PATH_MISMATCH",
@@ -40,6 +40,18 @@
       "plant_commit_count": 0,
       "batch_stop_reason": "CHILD_FAILURE_OR_MISSING_TRACE_LOCK",
       "root_cause": "FORMAL85_ATTEMPT0_EXECUTION_HARNESS_LOCK_PATH_MISMATCH",
+      "scientific_authority": "NONE_PRE_CYCLE_FAILURE",
+      "mutation_authority": false
+    },
+    "retry1": {
+      "root": "/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_retry1_20260920",
+      "status": "FAIL_PRE_CYCLE_CHILD_RUNTIME_VALIDATOR_PHASE_MISMATCH",
+      "trial_id": 66,
+      "process_exit_code": 1,
+      "completed_public_cycles": 0,
+      "plant_commit_count": 0,
+      "batch_stop_reason": "CHILD_FAILURE_OR_MISSING_TRACE_LOCK",
+      "root_cause": "FORMAL85_RETRY1_CHILD_RUNTIME_VALIDATOR_PHASE_MISMATCH",
       "scientific_authority": "NONE_PRE_CYCLE_FAILURE",
       "mutation_authority": false
     }
@@ -155,5 +167,5 @@
   },
   "scientific_boundary": {"benchmark":"REPEATEDLY_EXPOSED_STONEHENGE_85","pristine_holdout":false,"cross_scene_generalization":false,"physical_world_safety_claim":false,"hard_real_time_guarantee":false,"deployment_claim":false,"historical_repaired_active_verdict":"FAIL_POST_REPAIR_V3_PROGRESS_NONINFERIORITY_GATE","new_bounded_recovery_formal_result":"NOT_RUN"},
   "freeze_execution_counts": {"gpu_run_count":0,"tmux_created_count":0,"real_trial_run_count":0,"real_plantcommit_count":0},
-  "only_next_task_after_freeze_pass": "EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1"
+  "only_next_task_after_freeze_pass": "EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_RETRY2_V1"
 }

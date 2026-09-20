@@ -76,7 +76,7 @@ def verify_child_authorization(trial: int, root: Path) -> None:
         raise RuntimeError("IMMUTABLE_TRIAL_EVIDENCE_ALREADY_EXISTS_NO_RERUN")
 
 
-def load_delegate():
+def load_delegate(trial_id: int):
     spec = importlib.util.spec_from_file_location("_bounded_recovery_frozen_v3_delegate", V3_RUNNER)
     if spec is None or spec.loader is None:
         raise RuntimeError("V3_DELEGATE_UNAVAILABLE")
@@ -91,8 +91,8 @@ def load_delegate():
     module.PROTECTED_PATHS = tuple(x for x in module.PROTECTED_PATHS if x != "reproduction/formal")
 
     def verify_source_and_map(checkout: Path, _projected: dict, require_execution_lock: bool = True):
-        from validate_post_repair_v3_bounded_recovery_paired_validation_v1 import validate_freeze
-        validate_freeze(require_lock=require_execution_lock, require_absent_root=False)
+        from validate_post_repair_v3_bounded_recovery_paired_validation_v1 import ValidationPhase, validate_phase
+        validate_phase(ValidationPhase.CHILD_RUNTIME, trial_id=trial_id)
         p = read(PROTOCOL)
         return p["map"]["identity"], p["map"]["artifacts"]
 
@@ -217,11 +217,11 @@ def main() -> int:
     p = read(PROTOCOL)
     root = Path(p["future_result_root"])
     verify_child_authorization(args.one, root)
-    from validate_post_repair_v3_bounded_recovery_paired_validation_v1 import validate_freeze
-    validate_freeze(require_lock=True, require_absent_root=False)
+    from validate_post_repair_v3_bounded_recovery_paired_validation_v1 import ValidationPhase, validate_phase
+    validate_phase(ValidationPhase.CHILD_RUNTIME, trial_id=args.one)
     if os.environ.get("CUDA_VISIBLE_DEVICES") != "1":
         raise RuntimeError("PHYSICAL_GPU1_ONLY")
-    delegate = load_delegate()
+    delegate = load_delegate(args.one)
     with capture_recovery_cycles(root, args.one):
         code = int(delegate.run_one(REPO, root, args.one))
     metadata = {
