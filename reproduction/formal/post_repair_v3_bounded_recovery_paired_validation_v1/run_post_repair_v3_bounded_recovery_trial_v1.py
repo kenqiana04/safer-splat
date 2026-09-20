@@ -16,7 +16,7 @@ import sys
 TASK = Path(__file__).resolve().parent
 REPO = TASK.parents[2]
 PROTOCOL = TASK / "POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_PROTOCOL.json"
-LOCK = TASK / "POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_EXECUTION_LOCK.json"
+LOCK = TASK / "POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_EXECUTION_LOCK.json"
 BASE_V3 = REPO / "reproduction/smoke/active_runtime_smoke_v3/SMOKE_V3_PROTOCOL.json"
 V3_RUNNER = REPO / "reproduction/smoke/active_runtime_smoke_v3/run_active_runtime_smoke_v3.py"
 AUTH_NAME = "POST_REPAIR_V3_BOUNDED_RECOVERY_INTERNAL_CHILD_AUTHORIZATION.json"

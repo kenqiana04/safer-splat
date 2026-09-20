@@ -1,15 +1,14 @@
-# Freeze post-repair V3 bounded recovery paired validation
+# Repair Formal85 Attempt0 execution-lock path mismatch R1
 
-- Exact base: `9ab6ad224f0deefbbbdc34f165281a562c0b19cf`.
-- Protocol-before-outcome commit: `3997b6fb12f9c6e32dc0b874c97c6f6824496bed`.
-- Engineering Pilot authority: PASS and `READY_FOR_FORMAL_PAIRED_VALIDATION`.
-- Reuses the exact frozen formal85 order and immutable frozen Reference; neither is changed or rerun.
-- Primary gates: represented-map hard safety at `0.015 q` and paired progress NI (`10000`, seed `20260911`, margin `-0.02`, strict lower bound).
-- Typed assurance-boundary trials remain complete paired observations with no imputation or exclusion.
-- Runtime, Recovery, controller, map, geometry, and historical evidence are unchanged.
-- Freeze execution counts: GPU/tmux/real trials/real PlantCommit = `0/0/0/0`.
-- CPU prelaunch validation: `47/47 PASS`; execution-lock SHA256: `c1bea0d06c25fb3620668acda3c6fc196112470fd91accd53e31ae62264aff2a`.
-- Protected runtime/method/history diff: `0`.
-- Final status: `PASS_FREEZE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1`.
-- Historical repaired-Active verdict remains unchanged; bounded-recovery formal result is `NOT_RUN`.
-- Only next task after freeze PASS: `EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1`.
+- Exact repair base: `6f6ac91be5ffa4ad7c0b8ed3d3851f3293c4979b`.
+- Attempt0 remains immutable and stopped before runtime startup, public cycles, Recovery evaluation, or PlantCommit.
+- Root cause: `FORMAL85_ATTEMPT0_EXECUTION_HARNESS_LOCK_PATH_MISMATCH`.
+- Minimal repair: the child runner now binds the same canonical lock basename as validator and launcher.
+- No duplicate or wrong-basename lock was created.
+- Retry1 uses a new result root, tmux session, launch marker, and authorization token.
+- Validator now checks structured runner/launcher binding, uniqueness, wrong-name absence, synthetic hash-path access, token consistency, and Attempt0 hashes.
+- Exact formal85 order, immutable Reference, map, geometry, dynamics, Recovery, hard-safety gate, progress NI, statistics, and boundary semantics are unchanged.
+- Scientific semantic diff count: `0`.
+- GPU/tmux/real-trial/real-PlantCommit counts: `0/0/0/0`.
+- Historical repaired-Active verdict remains `FAIL_POST_REPAIR_V3_PROGRESS_NONINFERIORITY_GATE`; Retry1 is `NOT_RUN`.
+- Only next task: `EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_RETRY1_V1`.
