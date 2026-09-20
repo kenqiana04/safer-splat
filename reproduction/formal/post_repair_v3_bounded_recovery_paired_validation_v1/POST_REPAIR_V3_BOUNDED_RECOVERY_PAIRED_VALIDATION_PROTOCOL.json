@@ -1,0 +1,140 @@
+{
+  "schema": "POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_PROTOCOL_V1",
+  "task_type": "PROSPECTIVE_FORMAL85_PROTOCOL_FREEZE_NO_EXECUTION",
+  "base_head": "9ab6ad224f0deefbbbdc34f165281a562c0b19cf",
+  "implementation_head": "2102c8401b61ca8fe74123ab51e8fc9c27ed0895",
+  "original_bounded_recovery_implementation_head": "8184b0ecec20b6e84b1745518903b87bbb5cde8f",
+  "gate0_head": "18ba8ed8aa3b4acc326426e05808bd5abe67561c",
+  "retry2_freeze_head": "abea482dc5bf49ed09cc224dedb7019acba67515",
+  "engineering_pilot_freeze_head": "9ab6ad224f0deefbbbdc34f165281a562c0b19cf",
+  "cohort": {
+    "source_path": "reproduction/formal/post_repair_v3_paired_validation_v1/POST_REPAIR_V3_PAIRED_PROTOCOL.json",
+    "source_sha256": "19d17e585aacfc18481878543cd7848bf351a5d89362a305fb60de4fcae917c3",
+    "source_trial_order_sha256": "307359644268a4c06c102442cebbd99f9dcb42e9c7917ba752aa01ef6349b12c",
+    "source": "FROZEN_V3_PRIMARY_85_REUSED_WITHOUT_CHANGE",
+    "trial_ids": [66,74,9,12,73,26,79,31,54,18,19,88,38,8,28,29,0,24,37,98,27,91,2,78,76,80,82,99,56,21,33,44,14,16,61,23,6,96,43,47,51,69,59,63,42,13,4,93,39,49,97,60,83,36,67,86,3,81,87,71,20,53,7,58,40,89,94,68,48,92,34,72,17,32,62,41,52,64,22,84,11,57,1,46,77],
+    "trial_order": [66,74,9,12,73,26,79,31,54,18,19,88,38,8,28,29,0,24,37,98,27,91,2,78,76,80,82,99,56,21,33,44,14,16,61,23,6,96,43,47,51,69,59,63,42,13,4,93,39,49,97,60,83,36,67,86,3,81,87,71,20,53,7,58,40,89,94,68,48,92,34,72,17,32,62,41,52,64,22,84,11,57,1,46,77],
+    "seed": 0,
+    "maximum_completed_cycles_per_trial": 500,
+    "serial_execution": true,
+    "separate_process_per_trial": true,
+    "automatic_retry": false,
+    "repeatedly_exposed_benchmark": true,
+    "pristine_holdout": false
+  },
+  "future_result_root": "/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_20260920",
+  "future_tmux_session": "post_repair_v3_bounded_recovery_paired_validation_v1",
+  "execution_authorization_token": "EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1",
+  "environment": {
+    "conda_environment": "/disk1/zlab/conda_envs/safer_splat_official",
+    "python": "/disk1/zlab/conda_envs/safer_splat_official/bin/python",
+    "physical_gpu": 1,
+    "process_visible_device": "cuda:0",
+    "CUDA_VISIBLE_DEVICES": "1",
+    "PYTHONHASHSEED": "0",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "local_infrastructure_bindings": [
+    {"path": "outputs/stonehenge", "target": "/disk1/zlab/projects/safer-splat/outputs/stonehenge"},
+    {"path": "data/stonehenge", "target": "/disk1/zlab/projects/safer-splat/data/stonehenge"}
+  ],
+  "local_binding_authority": "EXECUTION_HARNESS_ONLY_NO_SCIENTIFIC_AUTHORITY",
+  "map": {
+    "root": "/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724",
+    "identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+    "artifacts": [
+      {"relative_path": "config.yml", "size": 6933, "sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e"},
+      {"relative_path": "dataparser_transforms.json", "size": 312, "sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e"},
+      {"relative_path": "nerfstudio_models/step-000029999.ckpt", "size": 92344786, "sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d"}
+    ]
+  },
+  "geometry": {"coordinate_unit": "q", "hard_radius_q": 0.015, "runtime_margin_q": 0.0, "effective_radius_q": 0.015, "rho_seg_q": 0.0, "epsilon": null, "historical_diagnostic_radius_q": 0.025, "historical_diagnostic_runtime_authority": false},
+  "dynamics": {"identity": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1", "dt": 0.05, "d_p_k1_d_u_k": 0, "d_p_k2_d_u_k": "dt^2_I", "proposal_source": "CURRENT_PRIMARY_CBF_QP", "actuator_bounds": [-0.1,0.1], "velocity_bounds": [-0.1,0.1]},
+  "recovery": {
+    "source": "SOURCE_BOUNDED_LOCAL_RECOVERY_V1", "generator": "AXIS_EXTREMA_F32_V1", "family": "F1_AXIS_EXTREMA_ONLY", "M": 6,
+    "candidate_order": ["+x","-x","+y","-y","+z","-z"],
+    "vectors": {"+x":[0.1,0.0,0.0],"-x":[-0.1,0.0,0.0],"+y":[0.0,0.1,0.0],"-y":[0.0,-0.1,0.0],"+z":[0.0,0.0,0.1],"-z":[0.0,0.0,-0.1]},
+    "parameter_tuning_authorized": false
+  },
+  "engineering_pilot_authority": {
+    "root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_engineering_pilot_v1_20260919",
+    "status": "PASS_BOUNDED_LOCAL_RECOVERY_ENGINEERING_PILOT_V1",
+    "engineering_decision": "READY_FOR_FORMAL_PAIRED_VALIDATION",
+    "source_mutation_authority": false,
+    "scientific_parameter_selection_authority": false
+  },
+  "reference_authority": {
+    "root": "/disk1/zlab/formal_execution_records/formal_paired_v2_20260911",
+    "worktree": "/disk1/zlab/formal_execution_worktrees/safer-splat-formal-v2",
+    "reuse_lock": "reproduction/validation/active_runtime_paired_validation_v3/V3_REFERENCE_REUSE_LOCK.json",
+    "primary_count": 85,
+    "hard_violation_trials": 0,
+    "unknown_segments": 0,
+    "reference_rerun_authorized": false
+  },
+  "historical_active_authority": {
+    "root": "/disk1/zlab/v3_repair_records/post_repair_v3_paired_validation_v1_20260917",
+    "verdict": "FAIL_POST_REPAIR_V3_PROGRESS_NONINFERIORITY_GATE",
+    "role": "HISTORICAL_REPAIRED_ACTIVE_DIAGNOSTIC_ONLY",
+    "primary_reference_arm": false,
+    "historical_result_rewritten": false
+  },
+  "primary_scientific_gates": {
+    "hard_safety": {
+      "oracle": "FROZEN_V3_1_LIPSCHITZ_SWEPT_SEGMENT_REPRESENTED_MAP_PROXY",
+      "radius_q": 0.015,
+      "negative_clearance_rule": "ANY_EXACT_NEGATIVE_IS_UNSAFE_NO_CLAMP_OR_ULP_TOLERANCE",
+      "epsilon": null,
+      "bounded_recovery_active_hard_violation_trials_required": 0,
+      "active_only_hard_discordant_pairs_required": 0,
+      "unresolved_hard_safety_unknown_segments_required": 0,
+      "frozen_reference_hard_violation_trials_required": 0
+    },
+    "progress_noninferiority": {
+      "paired_delta": "normalized_progress_bounded_recovery_active - normalized_progress_frozen_reference",
+      "normalized_progress": "(d_start_to_goal - d_final_to_goal) / d_start_to_goal",
+      "clipping": "NONE",
+      "pairs": 85,
+      "bootstrap": "PAIRED_PERCENTILE",
+      "resamples": 10000,
+      "seed": 20260911,
+      "ci": "95_PERCENT_PERCENTILE",
+      "margin": -0.02,
+      "comparator": "STRICT_GREATER_THAN",
+      "pass_rule": "lower95 > -0.02",
+      "equality": "FAIL"
+    }
+  },
+  "boundary_contract": {
+    "typed_assurance_boundary_is_valid_complete_trial": true,
+    "required": {"termination_reason":"ASSURANCE_BOUNDARY","hard_blocker":null,"process_exit_code":0,"finalization_status":"FINALIZED","trace_lock":true,"boundary_cycle_committed":false,"unauthorized_plant_commit":false,"integrity_violation":false,"hard_safety_unknown":false,"trace_inconsistency":false},
+    "routing_rule_missing_with_complete_typed_boundary": "VALID_FAIL_CLOSED_BOUNDARY_NOT_AUTOMATIC_INTEGRITY_FAILURE",
+    "committed_cycle_routing_missing": "INTEGRITY_FAILURE",
+    "max_completed_cycle_cardinality": "completed_cycles == PlantCommit_count unless an explicit frozen no-action complete semantic proves otherwise",
+    "boundary_cardinality": "completed_cycles == PlantCommit_count + 1 and assurance_boundary_count == 1",
+    "progress_final_state": "LAST_ACTUALLY_COMMITTED_STATE",
+    "hard_safety_segments": "ACTUALLY_COMMITTED_TRAJECTORY_SEGMENTS_ONLY",
+    "uncommitted_boundary_segment_fabricated": false,
+    "imputation": "NONE",
+    "exclusion": "NONE"
+  },
+  "hard_zero_integrity_gates": [
+    "process_nonzero_exit_count","malformed_or_finalization_error_count","trace_write_failure_count","trace_commit_atomicity_violation_count","cert_exec_identity_mismatch_count","canonical_transition_mismatch_count","state_continuity_mismatch_count","state_continuity_unknown_count","routing_ambiguous_count","unauthorized_source_execution_count","unverified_action_execution_count","stale_backup_execution_count","same_key_duplicate_retry_count","internal_recovery_loop_count","historical_diagnostic_runtime_authority_count","canonical_l2_evidence_rewrite_exception_count","candidate_scoped_l2_evidence_missing_count","candidate_scoped_l2_scope_conflict_count","legacy_primary_l2_flat_evidence_corruption_count","selected_executed_identity_mismatch_count","duplicate_plant_commit_count","duplicate_trace_append_count","illegal_token_mutation_count","evidence_incomplete_count","plant_outcome_unknown_count","nonfinite_count","action_bound_violation_count","exception_count","cuda_oom_count","unintended_plant_commit_count"
+  ],
+  "recovery_unknown_and_exception_policy": {"finite_C0_L2_L3_FAIL_allowed": true, "L2_or_L3_exception": "INTEGRITY_BLOCK", "candidate_scoped_evidence_missing_or_conflict": "INTEGRITY_BLOCK", "uncertified_recovery_execution": "INTEGRITY_BLOCK"},
+  "routing_diagnostics_role": "DESCRIPTIVE_ONLY_NO_ROUTING_CONDITIONED_GATE_OR_TUNING",
+  "historical_active_diagnostic_role": "SECONDARY_DIAGNOSTIC_ONLY_NOT_PRIMARY_FORMAL_GATE",
+  "analysis_authority": {"during_collection": false, "post_collection_only_after_85_immutable_locks": true, "authorization_flag": "--post-collection-authorized", "reference_rerun": false, "scientific_oracle_feedback": false},
+  "decision_contract": {
+    "integrity_or_unknown": "BLOCK_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_INTEGRITY",
+    "hard_pass_ni_pass": "PASS_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_ON_FROZEN_STONEHENGE_BENCHMARK",
+    "hard_fail_ni_pass": "FAIL_POST_REPAIR_V3_BOUNDED_RECOVERY_HARD_SAFETY_GATE",
+    "hard_pass_ni_fail": "FAIL_POST_REPAIR_V3_BOUNDED_RECOVERY_PROGRESS_NONINFERIORITY_GATE",
+    "hard_fail_ni_fail": "FAIL_POST_REPAIR_V3_BOUNDED_RECOVERY_HARD_SAFETY_AND_PROGRESS_NI_GATES"
+  },
+  "scientific_boundary": {"benchmark":"REPEATEDLY_EXPOSED_STONEHENGE_85","pristine_holdout":false,"cross_scene_generalization":false,"physical_world_safety_claim":false,"hard_real_time_guarantee":false,"deployment_claim":false,"historical_repaired_active_verdict":"FAIL_POST_REPAIR_V3_PROGRESS_NONINFERIORITY_GATE","new_bounded_recovery_formal_result":"NOT_RUN"},
+  "freeze_execution_counts": {"gpu_run_count":0,"tmux_created_count":0,"real_trial_run_count":0,"real_plantcommit_count":0},
+  "only_next_task_after_freeze_pass": "EXECUTE_POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_V1"
+}
