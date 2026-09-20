@@ -1,0 +1,25 @@
+{
+  "authority": "EXECUTION_HARNESS_ONLY_NO_SCIENTIFIC_AUTHORITY",
+  "bindings": [
+    {
+      "git_ignored": true,
+      "is_symlink": true,
+      "link_text": "/disk1/zlab/projects/safer-splat/outputs/stonehenge",
+      "path": "outputs/stonehenge",
+      "resolved": "/disk1/zlab/datasets/safer_splat_gdrive/outputs/stonehenge",
+      "source_exists": true,
+      "target": "/disk1/zlab/projects/safer-splat/outputs/stonehenge"
+    },
+    {
+      "git_ignored": true,
+      "is_symlink": true,
+      "link_text": "/disk1/zlab/projects/safer-splat/data/stonehenge",
+      "path": "data/stonehenge",
+      "resolved": "/disk1/zlab/datasets/safer_splat_gdrive/data/stonehenge",
+      "source_exists": true,
+      "target": "/disk1/zlab/projects/safer-splat/data/stonehenge"
+    }
+  ],
+  "schema": "LOCAL_INFRA_BINDING_AUDIT_V1",
+  "status": "PASS"
+}

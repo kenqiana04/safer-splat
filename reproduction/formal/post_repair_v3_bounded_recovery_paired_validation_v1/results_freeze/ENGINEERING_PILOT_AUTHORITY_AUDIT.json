@@ -1,0 +1,77 @@
+{
+  "artifacts": {
+    "BATCH_COMPLETE.json": {
+      "sha256": "b6bac799bdb11cf7ef8e18d9d5e121ec33c6b623bc4ce1acb5b5a2b7d70bd87c",
+      "size": 147
+    },
+    "HARD_SAFETY_PILOT_AUDIT.json": {
+      "sha256": "170e400e67a71c57e42d9592497fb003b825213a87d64e1918f459e62c269bfd",
+      "size": 2250
+    },
+    "MULTI_CANDIDATE_L2_EVIDENCE_AUDIT.json": {
+      "sha256": "7855d0786f1f895319b6355c46ca8448b77e67e6e1d246f20df928c2c6fd4dad",
+      "size": 193820
+    },
+    "PILOT_PROGRESS_DIAGNOSTIC.json": {
+      "sha256": "f1a7b95cddf213451289c306df4fd08785a5734efdd3ef085d43cd47061b83e8",
+      "size": 6490
+    },
+    "PILOT_ROUTING_DIAGNOSTIC.json": {
+      "sha256": "8769ab50950fee8e4a43edc6be5014d6be78cbf7b7bdf471bca7f1e00fc9a77a",
+      "size": 13101
+    },
+    "PILOT_SUMMARY.json": {
+      "sha256": "c90d411104ea80166098648f54bf25de663ca3c108606444e64a0d293f6b74a3",
+      "size": 255567
+    },
+    "RECOVERY_L2_REACHABILITY_AUDIT.json": {
+      "sha256": "fb997db03dacdc9f47f2f217c1ae8e0495fa81bbab56351a5e33a95230b67534",
+      "size": 207
+    },
+    "RECOVERY_RANK_PROGRESSION_AUDIT.json": {
+      "sha256": "77cd95221519aeb190f7188d13b0e4271026ea07a1c773c8e5193f6f4447a817",
+      "size": 29717
+    },
+    "TRACE_INTEGRITY_AUDIT.json": {
+      "sha256": "c7ef7ca5e461c0403a8d2ad20b6f65b9508aba1e17d54a2ae12279ab003530d1",
+      "size": 169
+    }
+  },
+  "authoritative_status": "PASS_BOUNDED_LOCAL_RECOVERY_ENGINEERING_PILOT_V1",
+  "engineering_decision": "READY_FOR_FORMAL_PAIRED_VALIDATION",
+  "key_facts": {
+    "PlantCommit_count": 5685,
+    "catastrophic_progress_regression_signal": false,
+    "global_min_hard_clearance_q": 6.091051268216448e-07,
+    "hard_unknown_segments": 0,
+    "hard_violation_segments": 0,
+    "main_trace_record_count": 5687,
+    "progress_mean_delta": 0.10197577637613552,
+    "progress_median_delta": 0.00917741362965778,
+    "progress_positive_zero_negative": [
+      12,
+      0,
+      0
+    ],
+    "public_cycle_count": 5687,
+    "recovery_PlantCommit_count": 141,
+    "recovery_candidate_attempt_count": 154,
+    "recovery_candidate_trace_record_count": 154,
+    "recovery_eligibility_events": 143,
+    "recovery_l2_enter_count": 154,
+    "recovery_l2_exception_count": 0,
+    "recovery_l2_fail_count": 11,
+    "recovery_l2_pass_count": 143,
+    "recovery_l2_result_count": 154,
+    "recovery_l2_unknown_count": 0,
+    "recovery_scan_count": 143,
+    "recovery_selected_count": 141,
+    "trace_lock_record_count": 5687,
+    "trials_completed": 12
+  },
+  "root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_engineering_pilot_v1_20260919",
+  "schema": "ENGINEERING_PILOT_AUTHORITY_AUDIT_V1",
+  "scientific_parameter_selection_authority": false,
+  "source_mutation_authority": false,
+  "status": "PASS"
+}

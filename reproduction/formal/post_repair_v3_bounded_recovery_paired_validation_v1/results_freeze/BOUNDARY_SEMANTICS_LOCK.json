@@ -1,0 +1,28 @@
+{
+  "contract": {
+    "boundary_cardinality": "completed_cycles == PlantCommit_count + 1 and assurance_boundary_count == 1",
+    "committed_cycle_routing_missing": "INTEGRITY_FAILURE",
+    "exclusion": "NONE",
+    "hard_safety_segments": "ACTUALLY_COMMITTED_TRAJECTORY_SEGMENTS_ONLY",
+    "imputation": "NONE",
+    "max_completed_cycle_cardinality": "completed_cycles == PlantCommit_count unless an explicit frozen no-action complete semantic proves otherwise",
+    "progress_final_state": "LAST_ACTUALLY_COMMITTED_STATE",
+    "required": {
+      "boundary_cycle_committed": false,
+      "finalization_status": "FINALIZED",
+      "hard_blocker": null,
+      "hard_safety_unknown": false,
+      "integrity_violation": false,
+      "process_exit_code": 0,
+      "termination_reason": "ASSURANCE_BOUNDARY",
+      "trace_inconsistency": false,
+      "trace_lock": true,
+      "unauthorized_plant_commit": false
+    },
+    "routing_rule_missing_with_complete_typed_boundary": "VALID_FAIL_CLOSED_BOUNDARY_NOT_AUTOMATIC_INTEGRITY_FAILURE",
+    "typed_assurance_boundary_is_valid_complete_trial": true,
+    "uncommitted_boundary_segment_fabricated": false
+  },
+  "schema": "BOUNDARY_SEMANTICS_LOCK_V1",
+  "status": "FROZEN"
+}

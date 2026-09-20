@@ -1,0 +1,31 @@
+{
+  "base": "9ab6ad224f0deefbbbdc34f165281a562c0b19cf",
+  "changed_files": [
+    "reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/DRAFT_PR_BODY.md",
+    "reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/IMPLEMENTATION_PLAN.md",
+    "reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/POST_REPAIR_V3_BOUNDED_RECOVERY_PAIRED_VALIDATION_PROTOCOL.json",
+    "reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/README.md",
+    "reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/analyze_post_repair_v3_bounded_recovery_paired_validation_v1.py",
+    "reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/freeze_post_repair_v3_bounded_recovery_paired_validation_v1.py",
+    "reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/launch_post_repair_v3_bounded_recovery_paired_validation_v1.py",
+    "reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/monitor_post_repair_v3_bounded_recovery_paired_validation_v1.py",
+    "reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/run_post_repair_v3_bounded_recovery_trial_v1.py",
+    "reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/validate_post_repair_v3_bounded_recovery_paired_validation_v1.py"
+  ],
+  "protected_changed": [],
+  "protected_paths": [
+    "cbf",
+    "splat",
+    "dynamics",
+    "run.py",
+    "reproduction/runtime",
+    "reproduction/formal/post_repair_v3_paired_validation_v1",
+    "reproduction/formal/bounded_local_recovery_smoke_v1",
+    "reproduction/formal/bounded_local_recovery_smoke_retry2_v1",
+    "reproduction/formal/bounded_local_recovery_engineering_pilot_v1",
+    "reproduction/formal/multi_candidate_canonical_l2_evidence_repair_v1"
+  ],
+  "runtime_diff_count": 0,
+  "schema": "PROTECTED_DIFF_AUDIT_V1",
+  "status": "PASS"
+}
