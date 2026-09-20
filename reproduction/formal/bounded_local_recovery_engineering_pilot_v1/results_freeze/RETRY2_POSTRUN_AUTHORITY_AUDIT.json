@@ -1,0 +1,69 @@
+{
+  "analyzer_status": "PASS_BOUNDED_LOCAL_RECOVERY_SMOKE_RETRY2_V1",
+  "artifacts": {
+    "BATCH_COMPLETE.json": {
+      "sha256": "bc3f903207c4a9d2d90d3f9ebc9f96d7d9a9f3d4cebc24d32d68614b88a30843",
+      "size": 75
+    },
+    "HARD_SAFETY_SMOKE_AUDIT.json": {
+      "sha256": "a1a4de5664b0adaeb67769722c4427ed6b013d0cc62cf393d0e9564ac6507865",
+      "size": 800
+    },
+    "MULTI_CANDIDATE_L2_EVIDENCE_AUDIT.json": {
+      "sha256": "da8e108a4d3e34c81991178aab757b088356520d555041c359e0dfe8adfefe41",
+      "size": 35373
+    },
+    "RECOVERY_L2_REACHABILITY_AUDIT.json": {
+      "sha256": "a2a806afdf12c4a5a7d0fa51397e97d645681971eb6e65d53832646a7ff8643c",
+      "size": 203
+    },
+    "RECOVERY_RANK_PROGRESSION_AUDIT.json": {
+      "sha256": "f7a965fe12335f1bef3c012e0df9e83abf86fe1f644953069773305f253ce1ea",
+      "size": 5424
+    },
+    "SMOKE_SUMMARY.json": {
+      "sha256": "d15bb3723d88fe343f38bf1d7690f1aaebafbad1b392ae05c7692151e0246e4e",
+      "size": 44952
+    },
+    "TRACE_INTEGRITY_AUDIT.json": {
+      "sha256": "d6fa91d68d0a4d4eb09b4838eae0f7715949f30a558a6ebcebc23c790ea952d6",
+      "size": 168
+    }
+  },
+  "key_counts": {
+    "global_min_hard_clearance_q": 5.447789746652355e-05,
+    "hard_unknown_segments": 0,
+    "hard_violation_segments": 0,
+    "plant_commits": 1500,
+    "public_cycles": 1500,
+    "recovery_attempts": 28,
+    "recovery_eligibility": 26,
+    "recovery_l2_enter": 28,
+    "recovery_l2_exception": 0,
+    "recovery_l2_fail": 2,
+    "recovery_l2_pass": 26,
+    "recovery_l2_result": 28,
+    "recovery_l2_unknown": 0,
+    "recovery_plant_commit": 26,
+    "recovery_scans": 26,
+    "recovery_selected": 26
+  },
+  "rank_resume_witnesses": [
+    {
+      "cycle_index": 248,
+      "rank0": "L2_FAIL",
+      "rank1": "L2_PASS",
+      "trial_id": 45
+    },
+    {
+      "cycle_index": 295,
+      "rank0": "L2_FAIL",
+      "rank1": "L2_PASS",
+      "trial_id": 45
+    }
+  ],
+  "schema": "BOUNDED_LOCAL_RECOVERY_ENGINEERING_PILOT_RETRY2_POSTRUN_AUTHORITY_AUDIT_V1",
+  "source_mutation_authority": false,
+  "source_result_root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_retry2_v1_20260919",
+  "status": "PASS"
+}

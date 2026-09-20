@@ -1,0 +1,314 @@
+{
+  "base_head": "abea482dc5bf49ed09cc224dedb7019acba67515",
+  "branch": "freeze-bounded-local-recovery-engineering-pilot-v1",
+  "cohort": {
+    "automatic_retry": false,
+    "deterministic_controls": [
+      66,
+      88,
+      2,
+      14,
+      63,
+      36,
+      58,
+      62,
+      77
+    ],
+    "maximum_completed_cycles_per_trial": 500,
+    "missing_anchors": [
+      15,
+      45,
+      75
+    ],
+    "outcome_data_consulted_for_controls": false,
+    "present_anchors": [
+      12,
+      24,
+      68
+    ],
+    "requested_anchors": [
+      12,
+      15,
+      24,
+      45,
+      68,
+      75
+    ],
+    "seed": 0,
+    "selected_control_indices_in_remaining_order": [
+      0,
+      10,
+      20,
+      30,
+      41,
+      51,
+      61,
+      71,
+      81
+    ],
+    "selection_rule": "K=12-len(present_anchors); remove present anchors from frozen order; choose K positions floor(i*(N-1)/(K-1)+0.5), i=0..K-1; duplicate positions shift right to nearest unused; sort selected controls and anchors by frozen order",
+    "separate_process_per_trial": true,
+    "serial_execution": true,
+    "source": "FROZEN_POST_REPAIR_V3_FORMAL85_ORDER",
+    "source_git_blob": "c9ccc8e9385748ef8f5afae86b1a8582560856b0",
+    "source_path": "reproduction/formal/post_repair_v3_paired_validation_v1/POST_REPAIR_V3_PAIRED_PROTOCOL.json",
+    "source_sha256": "19d17e585aacfc18481878543cd7848bf351a5d89362a305fb60de4fcae917c3",
+    "source_trial_order_sha256": "307359644268a4c06c102442cebbd99f9dcb42e9c7917ba752aa01ef6349b12c",
+    "targeted_engineering_selection": true,
+    "trial_ids": [
+      66,
+      12,
+      88,
+      24,
+      2,
+      14,
+      63,
+      36,
+      58,
+      68,
+      62,
+      77
+    ],
+    "trial_order": [
+      66,
+      12,
+      88,
+      24,
+      2,
+      14,
+      63,
+      36,
+      58,
+      68,
+      62,
+      77
+    ]
+  },
+  "dynamics": {
+    "causality": [
+      "d_p_k1_d_u_k=0",
+      "d_p_k2_d_u_k=dt^2_I"
+    ],
+    "dt": 0.05,
+    "identity": "POSITION_FIRST_FORWARD_EULER_DOUBLE_INTEGRATOR_V1"
+  },
+  "environment": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "CUDA_VISIBLE_DEVICES": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONHASHSEED": "0",
+    "PYTHONNOUSERSITE": "1",
+    "conda_environment": "/disk1/zlab/conda_envs/safer_splat_official",
+    "physical_gpu": 1,
+    "process_visible_device": "cuda:0",
+    "python": "/disk1/zlab/conda_envs/safer_splat_official/bin/python"
+  },
+  "execution_authorization_token": "EXECUTE_BOUNDED_LOCAL_RECOVERY_ENGINEERING_PILOT_V1",
+  "future_result_root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_engineering_pilot_v1_20260919",
+  "future_tmux_session": "bounded_local_recovery_engineering_pilot_v1",
+  "geometry": {
+    "effective_radius_q": 0.015,
+    "epsilon": null,
+    "hard_radius_q": 0.015,
+    "historical_diagnostic_radius_q": 0.025,
+    "historical_diagnostic_runtime_authority": false,
+    "rho_seg_q": 0.0,
+    "runtime_margin_q": 0.0,
+    "unit": "q"
+  },
+  "historical_comparator": {
+    "artifacts": {
+      "POST_REPAIR_V3_FINAL_ACCEPTANCE.json": {
+        "sha256": "e0606042f340c91cef2d76b3bee3b52f4b8088fa3879ea0663ed1384891dfdef",
+        "size": 5458
+      },
+      "POST_REPAIR_V3_PAIRED_COLLECTION_SUMMARY.json": {
+        "sha256": "bacfbd4e93f70791d57546d8b3200a69d9b58a598b91de8a2680e27cd36e41e2",
+        "size": 3464
+      },
+      "POST_REPAIR_V3_PAIRED_HARD_SAFETY_ANALYSIS.json": {
+        "sha256": "0e991a3847b79d56845e207600a91b7ea5fe23ffff8c5ad4b47060f0f028e14b",
+        "size": 373
+      },
+      "POST_REPAIR_V3_PAIRED_ROUTING_ANALYSIS.json": {
+        "sha256": "9d447ca11be2016e666cfbd1a5ed0537b10a966e9603ae6168f85c8e4b07c232",
+        "size": 35900
+      },
+      "POST_REPAIR_V3_PAIRED_TRIAL_RESULTS.csv": {
+        "sha256": "5b516822150125fd058fb5d4c5725925e045d1158f1cbd7ce6718a5928431e03",
+        "size": 17457
+      }
+    },
+    "role": "DIAGNOSTIC_HISTORICAL_SAME_TRIAL_NO_NI_NO_FORMAL_CAUSAL_CLAIM",
+    "root": "/disk1/zlab/v3_repair_records/post_repair_v3_paired_validation_v1_20260917",
+    "same_trial_availability": [
+      66,
+      12,
+      88,
+      24,
+      2,
+      14,
+      63,
+      36,
+      58,
+      68,
+      62,
+      77
+    ],
+    "source_mutation_authority": false
+  },
+  "map": {
+    "artifacts": [
+      {
+        "relative_path": "config.yml",
+        "sha256": "cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e",
+        "size": 6933
+      },
+      {
+        "relative_path": "dataparser_transforms.json",
+        "sha256": "92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e",
+        "size": 312
+      },
+      {
+        "relative_path": "nerfstudio_models/step-000029999.ckpt",
+        "sha256": "ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d",
+        "size": 92344786
+      }
+    ],
+    "identity": "c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8",
+    "root": "/disk1/zlab/projects/safer-splat/outputs/stonehenge/splatfacto/2024-09-11_100724"
+  },
+  "origin": "git@github-kenqiana04-safer-splat-current:kenqiana04/safer-splat.git",
+  "protocol_commit": "36867df578786cf6f8b19dca8d3cae1198aaff85",
+  "recovery": {
+    "candidate_family": "F1_AXIS_EXTREMA_ONLY",
+    "candidate_order": [
+      "+x",
+      "-x",
+      "+y",
+      "-y",
+      "+z",
+      "-z"
+    ],
+    "candidate_vectors": {
+      "+x": [
+        0.1,
+        0.0,
+        0.0
+      ],
+      "+y": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "+z": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "-x": [
+        -0.1,
+        0.0,
+        0.0
+      ],
+      "-y": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "-z": [
+        0.0,
+        0.0,
+        -0.1
+      ]
+    },
+    "generator": "AXIS_EXTREMA_F32_V1",
+    "maximum_candidates": 6,
+    "source": "SOURCE_BOUNDED_LOCAL_RECOVERY_V1"
+  },
+  "retry2_authority": {
+    "artifacts": {
+      "BATCH_COMPLETE.json": {
+        "sha256": "bc3f903207c4a9d2d90d3f9ebc9f96d7d9a9f3d4cebc24d32d68614b88a30843",
+        "size": 75
+      },
+      "HARD_SAFETY_SMOKE_AUDIT.json": {
+        "sha256": "a1a4de5664b0adaeb67769722c4427ed6b013d0cc62cf393d0e9564ac6507865",
+        "size": 800
+      },
+      "MULTI_CANDIDATE_L2_EVIDENCE_AUDIT.json": {
+        "sha256": "da8e108a4d3e34c81991178aab757b088356520d555041c359e0dfe8adfefe41",
+        "size": 35373
+      },
+      "RECOVERY_L2_REACHABILITY_AUDIT.json": {
+        "sha256": "a2a806afdf12c4a5a7d0fa51397e97d645681971eb6e65d53832646a7ff8643c",
+        "size": 203
+      },
+      "RECOVERY_RANK_PROGRESSION_AUDIT.json": {
+        "sha256": "f7a965fe12335f1bef3c012e0df9e83abf86fe1f644953069773305f253ce1ea",
+        "size": 5424
+      },
+      "SMOKE_SUMMARY.json": {
+        "sha256": "d15bb3723d88fe343f38bf1d7690f1aaebafbad1b392ae05c7692151e0246e4e",
+        "size": 44952
+      },
+      "TRACE_INTEGRITY_AUDIT.json": {
+        "sha256": "d6fa91d68d0a4d4eb09b4838eae0f7715949f30a558a6ebcebc23c790ea952d6",
+        "size": 168
+      }
+    },
+    "counts": {
+      "global_min_hard_clearance_q": 5.447789746652355e-05,
+      "hard_unknown_segments": 0,
+      "hard_violation_segments": 0,
+      "plant_commits": 1500,
+      "public_cycles": 1500,
+      "recovery_attempts": 28,
+      "recovery_eligibility": 26,
+      "recovery_l2_enter": 28,
+      "recovery_l2_exception": 0,
+      "recovery_l2_fail": 2,
+      "recovery_l2_pass": 26,
+      "recovery_l2_result": 28,
+      "recovery_l2_unknown": 0,
+      "recovery_plant_commit": 26,
+      "recovery_scans": 26,
+      "recovery_selected": 26
+    },
+    "rank_resume_witnesses": [
+      {
+        "cycle_index": 248,
+        "rank0": "L2_FAIL",
+        "rank1": "L2_PASS",
+        "trial_id": 45
+      },
+      {
+        "cycle_index": 295,
+        "rank0": "L2_FAIL",
+        "rank1": "L2_PASS",
+        "trial_id": 45
+      }
+    ],
+    "root": "/disk1/zlab/v3_repair_records/bounded_local_recovery_smoke_retry2_v1_20260919",
+    "source_mutation_authority": false,
+    "status": "PASS_BOUNDED_LOCAL_RECOVERY_SMOKE_RETRY2_V1"
+  },
+  "runtime_authorities": {
+    "bounded_recovery": "8184b0ecec20b6e84b1745518903b87bbb5cde8f",
+    "gate0": "18ba8ed8aa3b4acc326426e05808bd5abe67561c",
+    "repair": "2102c8401b61ca8fe74123ab51e8fc9c27ed0895",
+    "retry2_freeze": "abea482dc5bf49ed09cc224dedb7019acba67515"
+  },
+  "schema": "BOUNDED_LOCAL_RECOVERY_ENGINEERING_PILOT_INPUT_AUTHORITY_MANIFEST_V1",
+  "scientific_state": {
+    "efficacy_claim_authorized": false,
+    "engineering_only": true,
+    "formal_scientific_verdict": "FAIL_POST_REPAIR_V3_PROGRESS_NONINFERIORITY_GATE",
+    "historical_comparator_role": "DIAGNOSTIC_HISTORICAL_SAME_TRIAL_NO_NI_NO_FORMAL_CAUSAL_CLAIM",
+    "noninferiority_analysis": false,
+    "parameter_selection_enabled": false,
+    "reference_arm_enabled": false,
+    "retry2_status": "PASS_BOUNDED_LOCAL_RECOVERY_SMOKE_RETRY2_V1",
+    "scientific_state_changed": false
+  }
+}
