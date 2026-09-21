@@ -8884,8 +8884,10 @@
     "represented_map_hard_violation_count": [
       {
         "contribution": 0,
-        "formal_oracle_confirmation": "pending_authorized_analyzer",
-        "source": "Retry3 collection monitor frozen authority"
+        "formal_oracle_confirmation": "confirmed_authorized_analyzer",
+        "formal_oracle_status": "PASS",
+        "source": "Retry3 collection monitor frozen authority",
+        "value": 0
       }
     ],
     "routing_ambiguous_count": [
@@ -13586,7 +13588,9 @@
       }
     ]
   },
+  "formal_oracle_confirmation": "confirmed_authorized_analyzer",
   "formal_oracle_required_for": "represented_map_hard_violation_count",
+  "formal_oracle_status": "PASS",
   "gate_count": 30,
   "schema": "POSTCOLLECTION_HARD_ZERO_COVERAGE_AUDIT_V1",
   "supported": 30,

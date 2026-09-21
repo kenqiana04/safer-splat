@@ -24,7 +24,7 @@ def fail(msg): raise RuntimeError(msg)
 def main():
  ap=argparse.ArgumentParser(); ap.add_argument('--phase',choices=('preanalysis','postanalysis'),required=True); a=ap.parse_args(); checks=[]
  def need(name,ok,detail): checks.append({'name':name,'pass':bool(ok),'detail':detail});
- need('collection_head',subprocess.check_output(['git','rev-parse','HEAD'],cwd=REPO,text=True).strip()==BASE,'expected a06c088 collection provenance at validation checkout')
+ need('collection_head_ancestor',subprocess.run(['git','merge-base','--is-ancestor',BASE,'HEAD'],cwd=REPO).returncode==0,'analysis HEAD retains a06c088 collection provenance as an ancestor')
  need('batch_complete',(ROOT/'BATCH_COMPLETE.json').is_file() and read(ROOT/'BATCH_COMPLETE.json').get('trial_order')==list(TRIALS) and read(ROOT/'BATCH_COMPLETE.json').get('trials_completed')==85,'BATCH_COMPLETE exact order and count')
  need('no_batch_stop',not (ROOT/'BATCH_STOP.json').exists(),'BATCH_STOP absent')
  marker=ROOT/'POST_REPAIR_V3_BOUNDED_RECOVERY_RETRY3_LAUNCH_AUTHORIZATION.json'; need('launch_marker',marker.is_file() and read(marker).get('source_head')==EXPECT_SOURCE,'Retry3 launch marker source HEAD')

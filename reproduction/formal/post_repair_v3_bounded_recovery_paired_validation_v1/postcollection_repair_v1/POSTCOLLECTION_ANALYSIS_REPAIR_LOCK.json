@@ -1,0 +1,182 @@
+{
+  "analysis_branch": "repair-formal85-retry3-postcollection-analysis-v1",
+  "analysis_execution": {
+    "collection_rerun_count": 0,
+    "failed_preoutput_analysis_attempts": 1,
+    "gpu_trial_count": 0,
+    "raw_evidence_mutation_count": 0,
+    "reference_rerun_count": 0,
+    "successful_postcollection_analysis_count": 1,
+    "trial_rerun_count": 0
+  },
+  "analyzer": {
+    "path": "/disk1/zlab/v3_repair_worktrees/safer-splat-repair-formal85-retry3-postcollection-analysis-v1/reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/analyze_post_repair_v3_bounded_recovery_paired_validation_v1.py",
+    "sha256": "dfb65f1f698ebb96e83acf6a2fe6d56bc764accf06026f792295ac2f974673df"
+  },
+  "boundary_contract": {
+    "count": 34,
+    "trial_ids": [
+      74,
+      12,
+      73,
+      79,
+      54,
+      29,
+      0,
+      24,
+      98,
+      78,
+      82,
+      56,
+      21,
+      33,
+      44,
+      14,
+      61,
+      43,
+      47,
+      51,
+      42,
+      13,
+      49,
+      97,
+      53,
+      58,
+      34,
+      17,
+      62,
+      52,
+      22,
+      84,
+      57,
+      46
+    ],
+    "typed_boundary_invalid_count": 0
+  },
+  "collection_head": "a06c08820eff5bd1f2a2fae7569f7d87bed9013c",
+  "hard_safety_contract": {
+    "epsilon": null,
+    "global_min_hard_clearance_q": 4.591307551154856e-09,
+    "hard_gate_pass": true,
+    "hard_unknown_segments": 0,
+    "hard_violation_segments": 0,
+    "negative_tolerance": null
+  },
+  "interpretation_report": {
+    "external_path": "/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_retry3_20260920/report/REPORT_FORMAL85_RETRY3_RESULT_INTERPRETATION_CN.md",
+    "sha256": "1120ce2aa9c6b2afb5eef512bb787a47fdfc04c6012e9ab286839858e5020976",
+    "task_local_path": "/disk1/zlab/v3_repair_worktrees/safer-splat-repair-formal85-retry3-postcollection-analysis-v1/reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/postcollection_repair_v1/REPORT_FORMAL85_RETRY3_RESULT_INTERPRETATION_CN.md"
+  },
+  "official_outputs": {
+    "POST_REPAIR_V3_BOUNDED_RECOVERY_BOUNDARY_ANALYSIS.json": {
+      "sha256": "829e1cdd32ec3c9663db734ba962f7ea98434ae430f85d30c149a9c66fd39ff8",
+      "size": 16048
+    },
+    "POST_REPAIR_V3_BOUNDED_RECOVERY_COLLECTION_SUMMARY.json": {
+      "sha256": "d75af9f7b6cfde0a2c3b5c3034bcb03c7e05d7ff42156881ded94e3e3217a4bb",
+      "size": 2746
+    },
+    "POST_REPAIR_V3_BOUNDED_RECOVERY_CONTINUITY_ANALYSIS.json": {
+      "sha256": "d5f4809932cee0b52df0e68cca5233e20ce702fc8df2293939c376ae3de0840a",
+      "size": 358173
+    },
+    "POST_REPAIR_V3_BOUNDED_RECOVERY_FAILURE_REGISTER.csv": {
+      "sha256": "ba03528fcd7c9afd280af78e6f1357a9f1797ef7109f97cdff7c260986c24fb4",
+      "size": 30
+    },
+    "POST_REPAIR_V3_BOUNDED_RECOVERY_HARD_SAFETY_ANALYSIS.json": {
+      "sha256": "ecc06abdc380f0fc2ef615343eefbf12453d2f57d305260e8b09b9d5904c4ec6",
+      "size": 315
+    },
+    "POST_REPAIR_V3_BOUNDED_RECOVERY_HISTORICAL_ACTIVE_DIAGNOSTIC.json": {
+      "sha256": "64335c199abf748dd8e7f68cd84bf2907307cb0f2d8ebe3cece2a99391ea6b6c",
+      "size": 8300
+    },
+    "POST_REPAIR_V3_BOUNDED_RECOVERY_PROGRESS_ANALYSIS.json": {
+      "sha256": "0cbab319df4248e60ca0ed6af5e83821bbba6b9fbf9d15f29d0369ef6145c9b7",
+      "size": 521
+    },
+    "POST_REPAIR_V3_BOUNDED_RECOVERY_RECOVERY_ANALYSIS.json": {
+      "sha256": "6bd3252ae7541c79790a20a750955aed41a972a2c41808bf5ada0cf3ed1a6872",
+      "size": 366
+    },
+    "POST_REPAIR_V3_BOUNDED_RECOVERY_ROUTING_ANALYSIS.json": {
+      "sha256": "dd957359727fecf20553d79bcf78e85cb2af5b106b6f535e89516d1b4c443d98",
+      "size": 62509
+    },
+    "POST_REPAIR_V3_BOUNDED_RECOVERY_TRIAL_RESULTS.csv": {
+      "sha256": "e4c141dbd7c73759cefda08d5c7d8791cd8ff138dedc52d7b22bf01c79a9a76f",
+      "size": 13751
+    }
+  },
+  "recovery_contract": {
+    "candidate_attempts": 970,
+    "eligibility_events": 874,
+    "exhaustion": 0,
+    "l2_enter": 970,
+    "l2_exception": 0,
+    "l2_fail": 96,
+    "l2_pass": 874,
+    "l2_result": 970,
+    "l2_unknown": 0,
+    "l3_exception": 0,
+    "l3_fail": 0,
+    "l3_pass": 874,
+    "l3_result": 874,
+    "l3_unknown": 0,
+    "plantcommit": 840,
+    "rank_resume": 96,
+    "scans": 874,
+    "selected": 840
+  },
+  "repair_audits": {
+    "ANALYZER_DRY_PARSE_AUDIT.json": {
+      "path": "/disk1/zlab/v3_repair_worktrees/safer-splat-repair-formal85-retry3-postcollection-analysis-v1/reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/postcollection_repair_v1/ANALYZER_DRY_PARSE_AUDIT.json",
+      "sha256": "5a27ed25250aabc84b950e80f6413ebb6ea3b5a0e5cd013c42110c552f79999a"
+    },
+    "HARD_ZERO_COVERAGE_AUDIT.json": {
+      "path": "/disk1/zlab/v3_repair_worktrees/safer-splat-repair-formal85-retry3-postcollection-analysis-v1/reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/postcollection_repair_v1/HARD_ZERO_COVERAGE_AUDIT.json",
+      "sha256": "7110d1164ce2f2472898f39c212a38e4f2ab2553674889388df7e5f1ff53db91"
+    },
+    "RAW_EVIDENCE_MANIFEST.json": {
+      "path": "/disk1/zlab/v3_repair_worktrees/safer-splat-repair-formal85-retry3-postcollection-analysis-v1/reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/postcollection_repair_v1/RAW_EVIDENCE_MANIFEST.json",
+      "sha256": "5611cb27abb692d2fde1e92a9968ab9adea6fa83334be0ce08db6ed6815832a0"
+    },
+    "REFERENCE_FROZEN_OUTCOMES_AUTHORITY_AUDIT.json": {
+      "path": "/disk1/zlab/v3_repair_worktrees/safer-splat-repair-formal85-retry3-postcollection-analysis-v1/reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/postcollection_repair_v1/REFERENCE_FROZEN_OUTCOMES_AUTHORITY_AUDIT.json",
+      "sha256": "ca6386c1ee0426f046032c15d37bd5a404fbf541f80a69de429c2b2ac57b0056"
+    },
+    "SCIENTIFIC_SEMANTICS_EQUIVALENCE.json": {
+      "path": "/disk1/zlab/v3_repair_worktrees/safer-splat-repair-formal85-retry3-postcollection-analysis-v1/reproduction/formal/post_repair_v3_bounded_recovery_paired_validation_v1/postcollection_repair_v1/SCIENTIFIC_SEMANTICS_EQUIVALENCE.json",
+      "sha256": "e8ce73e5ab121bbd19b92b882582d42c4028414cc869d565ed0fd64aa5459d60"
+    }
+  },
+  "retry3_root": "/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_retry3_20260920",
+  "schema": "POST_REPAIR_V3_FORMAL85_RETRY3_POSTCOLLECTION_ANALYSIS_REPAIR_LOCK_V1",
+  "scientific_boundary": "REPEATEDLY_EXPOSED_STONEHENGE_85_ONLY_NO_CROSS_SCENE_NO_PHYSICAL_DEPLOYMENT_NO_CAUSAL_ROUTING_CLAIM",
+  "source_authority": {
+    "batch_complete": {
+      "path": "/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_retry3_20260920/BATCH_COMPLETE.json",
+      "sha256": "80e7af1530e2a30b7d9d2b0adc60efa2f9c085ff26abc6b484b7b2f19bd440c1"
+    },
+    "frozen_reference": {
+      "path": "/disk1/zlab/v3_repair_worktrees/safer-splat-repair-formal85-retry3-postcollection-analysis-v1/reproduction/formal/post_repair_v3_paired_validation_v1/REFERENCE_FROZEN_OUTCOMES.json",
+      "sha256": "de34cee7d887d9c14ac40fdee9881334140f342a7df4b71e59af1561ac50ab65"
+    },
+    "launch_marker": {
+      "path": "/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_retry3_20260920/POST_REPAIR_V3_BOUNDED_RECOVERY_RETRY3_LAUNCH_AUTHORIZATION.json",
+      "sha256": "3e4381958eee7bbe23aab9070444b675f3792b5eb7898090e9cdf8c163bcbf18"
+    },
+    "raw_manifest_semantic_sha256": "ec333a5379fc0794de3bc59d6e11187412e08dfca97348206e6fddb53ce2d017"
+  },
+  "statistical_contract": {
+    "lower95": 0.04509815356239353,
+    "margin": -0.02,
+    "n": 85,
+    "resamples": 10000,
+    "seed": 20260911,
+    "strict_comparator": "lower95 > -0.02",
+    "strict_ni_pass": true,
+    "upper95": 0.13986898284831606
+  }
+}

@@ -1,9 +1,9 @@
 {
-  "check_count": 14,
+  "check_count": 16,
   "checks": [
     {
-      "detail": "expected a06c088 collection provenance at validation checkout",
-      "name": "collection_head",
+      "detail": "analysis HEAD retains a06c088 collection provenance as an ancestor",
+      "name": "collection_head_ancestor",
       "pass": true
     },
     {
@@ -62,8 +62,18 @@
       "pass": true
     },
     {
-      "detail": "formal outputs absent before official analysis",
-      "name": "outputs_absent_preanalysis",
+      "detail": "formal output set generated",
+      "name": "outputs_present",
+      "pass": true
+    },
+    {
+      "detail": "formal decision is typed",
+      "name": "analysis_status",
+      "pass": true
+    },
+    {
+      "detail": "raw evidence semantic manifest unchanged",
+      "name": "raw_unchanged",
       "pass": true
     },
     {
@@ -74,10 +84,10 @@
   ],
   "collection_head": "a06c08820eff5bd1f2a2fae7569f7d87bed9013c",
   "gpu_run_count": 0,
-  "phase": "preanalysis",
+  "phase": "postanalysis",
   "reference_rerun_count": 0,
   "retry3_root": "/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_retry3_20260920",
   "schema": "POSTCOLLECTION_ANALYSIS_REPAIR_VALIDATION_V1",
-  "status": "PASS_POSTCOLLECTION_ANALYSIS_REPAIR_PREVALIDATION",
+  "status": "PASS_POSTCOLLECTION_ANALYSIS_REPAIR_VALIDATION",
   "trial_rerun_count": 0
 }
