@@ -143,8 +143,8 @@ class TransitionRule:
 
 class TransitionTable:
     def __init__(self, rules: tuple[TransitionRule, ...]) -> None:
-        if len(rules) != 44 or len({rule.rule_id for rule in rules}) != 44:
-            raise ValueError("TRANSITION_TABLE_NOT_44_EXACTLY_ONCE")
+        if len(rules) != 46 or len({rule.rule_id for rule in rules}) != 46:
+            raise ValueError("TRANSITION_TABLE_NOT_46_EXACTLY_ONCE")
         self.rules = rules
         self.by_id = {rule.rule_id: rule for rule in rules}
 
@@ -212,6 +212,10 @@ class TransitionTable:
             return True
         if requirement == "OPEN":
             return status == DeadlineStatus.OPEN
+        if requirement == "WARNING":
+            return status == DeadlineStatus.WARNING
+        if requirement == "EXPIRED":
+            return status == DeadlineStatus.EXPIRED
         if requirement == "GUARD_OR_EXPIRED":
             return status in {DeadlineStatus.WARNING, DeadlineStatus.EXPIRED}
         return False
@@ -276,6 +280,22 @@ class TransitionTable:
                 TransitionTable._certified_candidate_fact(context)
                 and context.retained_backup_valid
                 and context.deadline.status in {DeadlineStatus.WARNING, DeadlineStatus.EXPIRED}
+            )
+        if rule.rule_id == "ARB_RECOVERY_WARNING_BOUNDARY":
+            return (
+                TransitionTable._certified_candidate_fact(context)
+                and context.candidate_source_type == RECOVERY_SOURCE
+                and not context.retained_backup_valid
+                and context.deadline.status == DeadlineStatus.WARNING
+                and not TransitionTable._terminal_eligibility_fact(context)
+            )
+        if rule.rule_id == "ARB_RECOVERY_EXPIRED_BOUNDARY":
+            return (
+                TransitionTable._certified_candidate_fact(context)
+                and context.candidate_source_type == RECOVERY_SOURCE
+                and not context.retained_backup_valid
+                and context.deadline.status == DeadlineStatus.EXPIRED
+                and not TransitionTable._terminal_eligibility_fact(context)
             )
         if rule.rule_id == "ARB_BACKUP":
             return (not TransitionTable._certified_candidate_fact(context) or context.candidate_source_type == RECOVERY_SOURCE) and context.retained_backup_valid
@@ -622,6 +642,21 @@ class Supervisor:
                 True,
                 "CERTIFIED_NAVIGATION_NOT_TIMELY_USE_VALID_RETAINED_BACKUP" if guard_handoff else "STILL_VALID_RETAINED_BACKUP",
                 "ARB_BACKUP_GUARD" if guard_handoff else "ARB_BACKUP",
+            )
+        if (certified_candidate is not None and
+                certified_candidate.provenance.source_type == RECOVERY_SOURCE and
+                l3_result is not None and
+                l3_result.status == CertificateStatus.PASS and
+                l3_result.prepared_bundle is not None and
+                l3_result.candidate_identity == certified_candidate.identity and
+                not backup_valid and
+                deadline.status in {DeadlineStatus.WARNING, DeadlineStatus.EXPIRED} and
+                not (terminal_result is not None and terminal_result.status == CertificateStatus.PASS and terminal_result.eligible)):
+            boundary_rule = ("ARB_RECOVERY_WARNING_BOUNDARY" if deadline.status == DeadlineStatus.WARNING
+                              else "ARB_RECOVERY_EXPIRED_BOUNDARY")
+            return SupervisorDecision(
+                snapshot.cycle_index, snapshot.identity, None, False,
+                "DEADLINE_INADMISSIBLE_NO_VALID_BACKUP", boundary_rule,
             )
         if terminal_result is not None and terminal_result.status == CertificateStatus.PASS and terminal_result.eligible:
             action = make_action(self.registry.terminal.zero_hold, ActionRole.CERTIFIED_TERMINAL, terminal_result.evidence_identity or "terminal", (self.registry.terminal.identity.value, self.registry.actuator.identity.value, self.registry.geometry.identity.value))
