@@ -1,0 +1,296 @@
+{
+  "check_count": 57,
+  "checks": [
+    {
+      "detail": "required implementation artifact",
+      "name": "file:README.md",
+      "pass": true
+    },
+    {
+      "detail": "required implementation artifact",
+      "name": "file:CPU_REGRESSION_RESULT.json",
+      "pass": true
+    },
+    {
+      "detail": "required implementation artifact",
+      "name": "file:DIFF_SCOPE_AUDIT.json",
+      "pass": true
+    },
+    {
+      "detail": "required implementation artifact",
+      "name": "file:FROZEN_34_CASE_OFFLINE_REPLAY.json",
+      "pass": true
+    },
+    {
+      "detail": "required implementation artifact",
+      "name": "file:FROZEN_34_CASE_REPLAY.csv",
+      "pass": true
+    },
+    {
+      "detail": "required implementation artifact",
+      "name": "file:IMPLEMENTATION_REVIEW.json",
+      "pass": true
+    },
+    {
+      "detail": "required implementation artifact",
+      "name": "file:ROUTING_RULE_CONFORMANCE_AUDIT.json",
+      "pass": true
+    },
+    {
+      "detail": "required implementation artifact",
+      "name": "file:RUNTIME_INVARIANT_AUDIT.json",
+      "pass": true
+    },
+    {
+      "detail": "required implementation artifact",
+      "name": "file:SCIENTIFIC_BEHAVIOR_EQUIVALENCE.json",
+      "pass": true
+    },
+    {
+      "detail": "required implementation artifact",
+      "name": "file:downstream_handoff.json",
+      "pass": true
+    },
+    {
+      "detail": "required implementation artifact",
+      "name": "file:report/REPORT_IMPLEMENT_CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_COMPLETION_V1.md",
+      "pass": true
+    },
+    {
+      "detail": "required implementation artifact",
+      "name": "file:validate_implementation_v1.py",
+      "pass": true
+    },
+    {
+      "detail": "base reachable",
+      "name": "base_is_ancestor",
+      "pass": true
+    },
+    {
+      "detail": "implementation branch",
+      "name": "branch",
+      "pass": true
+    },
+    {
+      "detail": "frozen origin",
+      "name": "origin",
+      "pass": true
+    },
+    {
+      "detail": "PASS_CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_COMPLETION_DESIGN_V1",
+      "name": "design_status",
+      "pass": true
+    },
+    {
+      "detail": "D/HIGH",
+      "name": "design_classification",
+      "pass": true
+    },
+    {
+      "detail": "IMPLEMENT_CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_COMPLETION_V1",
+      "name": "design_next_task",
+      "pass": true
+    },
+    {
+      "detail": "design-only lock",
+      "name": "design_lock_scope",
+      "pass": true
+    },
+    {
+      "detail": "PASS_CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_COMPLETION_DESIGN_VALIDATION",
+      "name": "design_validation",
+      "pass": true
+    },
+    {
+      "detail": "IMPLEMENT_CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_COMPLETION_V1",
+      "name": "handoff_ready",
+      "pass": true
+    },
+    {
+      "detail": "46",
+      "name": "transition_row_count",
+      "pass": true
+    },
+    {
+      "detail": "46",
+      "name": "transition_unique_ids",
+      "pass": true
+    },
+    {
+      "detail": "1",
+      "name": "ARB_RECOVERY_WARNING_BOUNDARY:exactly_once",
+      "pass": true
+    },
+    {
+      "detail": "{'rule_id': 'ARB_RECOVERY_WARNING_BOUNDARY', 'source_phase': 'ARBITRATION', 'guard': 'certified Recovery is deadline-inadmissible and no valid retained backup exists', 'observation/result': 'ARBITRATE', 'reason_scope': 'NONE', 'retained_backup_requirement': 'NONE_OR_INVALID_OR_EXHAUSTED', 'deadline_requirement': 'WARNING', 'candidate_requirement': 'PRIMARY_OR_ALTERNATIVE', 'destination_phase': 'ASSURANCE_BOUNDARY', 'action_authority': 'NONE', 'commit_allowed': 'false', 'old_backup_retained': 'false', 'new_backup_created': 'false', 'theorem_interpretation': 'deadline-inadmissible Recovery fails closed without a valid retained backup', 'failure_code_if_any': 'DEADLINE_INADMISSIBLE_NO_VALID_BACKUP'}",
+      "name": "ARB_RECOVERY_WARNING_BOUNDARY:predicate",
+      "pass": true
+    },
+    {
+      "detail": "{'rule_id': 'ARB_RECOVERY_WARNING_BOUNDARY', 'source_phase': 'ARBITRATION', 'guard': 'certified Recovery is deadline-inadmissible and no valid retained backup exists', 'observation/result': 'ARBITRATE', 'reason_scope': 'NONE', 'retained_backup_requirement': 'NONE_OR_INVALID_OR_EXHAUSTED', 'deadline_requirement': 'WARNING', 'candidate_requirement': 'PRIMARY_OR_ALTERNATIVE', 'destination_phase': 'ASSURANCE_BOUNDARY', 'action_authority': 'NONE', 'commit_allowed': 'false', 'old_backup_retained': 'false', 'new_backup_created': 'false', 'theorem_interpretation': 'deadline-inadmissible Recovery fails closed without a valid retained backup', 'failure_code_if_any': 'DEADLINE_INADMISSIBLE_NO_VALID_BACKUP'}",
+      "name": "ARB_RECOVERY_WARNING_BOUNDARY:boundary_fields",
+      "pass": true
+    },
+    {
+      "detail": "1",
+      "name": "ARB_RECOVERY_EXPIRED_BOUNDARY:exactly_once",
+      "pass": true
+    },
+    {
+      "detail": "{'rule_id': 'ARB_RECOVERY_EXPIRED_BOUNDARY', 'source_phase': 'ARBITRATION', 'guard': 'certified Recovery is expired and no valid retained backup exists', 'observation/result': 'ARBITRATE', 'reason_scope': 'NONE', 'retained_backup_requirement': 'NONE_OR_INVALID_OR_EXHAUSTED', 'deadline_requirement': 'EXPIRED', 'candidate_requirement': 'PRIMARY_OR_ALTERNATIVE', 'destination_phase': 'ASSURANCE_BOUNDARY', 'action_authority': 'NONE', 'commit_allowed': 'false', 'old_backup_retained': 'false', 'new_backup_created': 'false', 'theorem_interpretation': 'expired Recovery fails closed with no post-expiry search or commit', 'failure_code_if_any': 'DEADLINE_INADMISSIBLE_NO_VALID_BACKUP'}",
+      "name": "ARB_RECOVERY_EXPIRED_BOUNDARY:predicate",
+      "pass": true
+    },
+    {
+      "detail": "{'rule_id': 'ARB_RECOVERY_EXPIRED_BOUNDARY', 'source_phase': 'ARBITRATION', 'guard': 'certified Recovery is expired and no valid retained backup exists', 'observation/result': 'ARBITRATE', 'reason_scope': 'NONE', 'retained_backup_requirement': 'NONE_OR_INVALID_OR_EXHAUSTED', 'deadline_requirement': 'EXPIRED', 'candidate_requirement': 'PRIMARY_OR_ALTERNATIVE', 'destination_phase': 'ASSURANCE_BOUNDARY', 'action_authority': 'NONE', 'commit_allowed': 'false', 'old_backup_retained': 'false', 'new_backup_created': 'false', 'theorem_interpretation': 'expired Recovery fails closed with no post-expiry search or commit', 'failure_code_if_any': 'DEADLINE_INADMISSIBLE_NO_VALID_BACKUP'}",
+      "name": "ARB_RECOVERY_EXPIRED_BOUNDARY:boundary_fields",
+      "pass": true
+    },
+    {
+      "detail": "minimal Supervisor support",
+      "name": "supervisor_support",
+      "pass": true
+    },
+    {
+      "detail": "True",
+      "name": "replay:all_after_expected",
+      "pass": true
+    },
+    {
+      "detail": "True",
+      "name": "replay:all_before_missing",
+      "pass": true
+    },
+    {
+      "detail": "True",
+      "name": "replay:all_boundary_destination",
+      "pass": true
+    },
+    {
+      "detail": "True",
+      "name": "replay:all_no_commit",
+      "pass": true
+    },
+    {
+      "detail": "True",
+      "name": "replay:all_resolved",
+      "pass": true
+    },
+    {
+      "detail": "True",
+      "name": "replay:all_typed_valid",
+      "pass": true
+    },
+    {
+      "detail": "True",
+      "name": "replay:expired_count",
+      "pass": true
+    },
+    {
+      "detail": "True",
+      "name": "replay:row_count",
+      "pass": true
+    },
+    {
+      "detail": "True",
+      "name": "replay:warning_count",
+      "pass": true
+    },
+    {
+      "detail": "27",
+      "name": "replay_warning_27",
+      "pass": true
+    },
+    {
+      "detail": "7",
+      "name": "replay_expired_7",
+      "pass": true
+    },
+    {
+      "detail": "0",
+      "name": "replay_missing_zero",
+      "pass": true
+    },
+    {
+      "detail": "no action/plant delta",
+      "name": "replay_action_delta_zero",
+      "pass": true
+    },
+    {
+      "detail": "0",
+      "name": "replay_unknown_fail_zero",
+      "pass": true
+    },
+    {
+      "detail": "PASS",
+      "name": "artifact_status:RUNTIME_INVARIANT_AUDIT.json",
+      "pass": true
+    },
+    {
+      "detail": "PASS",
+      "name": "artifact_status:ROUTING_RULE_CONFORMANCE_AUDIT.json",
+      "pass": true
+    },
+    {
+      "detail": "PASS",
+      "name": "artifact_status:DIFF_SCOPE_AUDIT.json",
+      "pass": true
+    },
+    {
+      "detail": "PASS_CPU_RELEVANT_REGRESSIONS",
+      "name": "artifact_status:CPU_REGRESSION_RESULT.json",
+      "pass": true
+    },
+    {
+      "detail": "PASS_SCIENTIFIC_BEHAVIOR_EQUIVALENCE",
+      "name": "artifact_status:SCIENTIFIC_BEHAVIOR_EQUIVALENCE.json",
+      "pass": true
+    },
+    {
+      "detail": "PASS_IMPLEMENT_CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_COMPLETION_V1",
+      "name": "artifact_status:IMPLEMENTATION_REVIEW.json",
+      "pass": true
+    },
+    {
+      "detail": "{'Formal85_result_change': 0, 'NI_contract_change': 0, 'Reference_change': 0, 'action_value_change': 0, 'candidate_generation_change': 0, 'certification_change': 0, 'deadline_numeric_change': 0, 'hard_safety_contract_change': 0, 'plant_outcome_change': 0, 'progress_definition_change': 0, 'scientific_diff_count': 0, 'trajectory_authority_change': 0}",
+      "name": "scientific_diff_all_zero",
+      "pass": true
+    },
+    {
+      "detail": "no GPU command issued",
+      "name": "gpu_trials_zero",
+      "pass": true
+    },
+    {
+      "detail": "no Formal85 command issued",
+      "name": "formal85_reruns_zero",
+      "pass": true
+    },
+    {
+      "detail": "no Reference command issued",
+      "name": "reference_reruns_zero",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "authorized_changed_scope",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "protected_diff_zero",
+      "pass": true
+    },
+    {
+      "detail": "final worktree status",
+      "name": "worktree_clean",
+      "pass": true
+    }
+  ],
+  "formal85_rerun_count": 0,
+  "gpu_run_count": 0,
+  "implementation_scope": "ROUTING_COMPLETENESS_ONLY",
+  "reference_rerun_count": 0,
+  "schema": "IMPLEMENT_CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_COMPLETION_VALIDATION_V1",
+  "status": "PASS_IMPLEMENT_CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_COMPLETION_V1_VALIDATION"
+}

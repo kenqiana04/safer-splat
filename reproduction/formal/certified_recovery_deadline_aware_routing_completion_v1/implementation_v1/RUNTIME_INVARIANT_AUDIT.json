@@ -1,0 +1,43 @@
+{
+  "all_read_only_files_unchanged": true,
+  "boundary_uses_existing_commit_or_boundary_path": true,
+  "coordinator_consumes_routing_decision": true,
+  "coordinator_direct_plant_commit_call": false,
+  "new_rows_no_post_expiry_search": true,
+  "read_only_file_hashes": {
+    "reproduction/runtime/active_runtime_assurance_v2/active_cycle.py": {
+      "base_sha256": "3a791da12805b76384dae4467e688f77693e122b6ebd28fa3529481b5d963b36",
+      "current_sha256": "3a791da12805b76384dae4467e688f77693e122b6ebd28fa3529481b5d963b36",
+      "unchanged": true
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/active_runner.py": {
+      "base_sha256": "974a6c2522e0d8019494c5d8556d979af08bf2eceda2c61e835da462cd34a7ef",
+      "current_sha256": "974a6c2522e0d8019494c5d8556d979af08bf2eceda2c61e835da462cd34a7ef",
+      "unchanged": true
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/backup_token_store.py": {
+      "base_sha256": "a65b879c2c42e3a68f5bdb57a43258fde80621eb4e625eee7db76cdc3066aee2",
+      "current_sha256": "a65b879c2c42e3a68f5bdb57a43258fde80621eb4e625eee7db76cdc3066aee2",
+      "unchanged": true
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/plant_commit.py": {
+      "base_sha256": "b9d779fed66a9e034ddd3c7e5c977c7a4422b7bc11c57acc4412b47558d9830a",
+      "current_sha256": "b9d779fed66a9e034ddd3c7e5c977c7a4422b7bc11c57acc4412b47558d9830a",
+      "unchanged": true
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/terminal_runtime.py": {
+      "base_sha256": "b972b15d1ad33bbd3e0ae3bd4786da7483dc5d61707fbd7ce1901d3c3f79ec7f",
+      "current_sha256": "b972b15d1ad33bbd3e0ae3bd4786da7483dc5d61707fbd7ce1901d3c3f79ec7f",
+      "unchanged": true
+    },
+    "reproduction/runtime/active_runtime_assurance_v2/trace_writer.py": {
+      "base_sha256": "e4e2c4607cf77ce2b959b69bf8fa3a014778a78d0cf410b1de0fb5a806a988b7",
+      "current_sha256": "e4e2c4607cf77ce2b959b69bf8fa3a014778a78d0cf410b1de0fb5a806a988b7",
+      "unchanged": true
+    }
+  },
+  "schema": "RUNTIME_INVARIANT_AUDIT_V1",
+  "selected_executed_identity_fabrication": false,
+  "status": "PASS",
+  "token_cursor_change_on_boundary": false
+}

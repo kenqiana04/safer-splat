@@ -1,0 +1,18 @@
+{
+  "authorized_source_paths": [
+    "reproduction/runtime/active_runtime_assurance_v2/supervisor.py",
+    "reproduction/runtime/active_runtime_assurance_v2/tests/test_certified_recovery_deadline_boundary.py",
+    "reproduction/specification/method_logic_closure_v2/STATE_TRANSITION_TABLE_V2.csv"
+  ],
+  "changed_paths_at_commit_a": [
+    "reproduction/runtime/active_runtime_assurance_v2/supervisor.py",
+    "reproduction/runtime/active_runtime_assurance_v2/tests/test_certified_recovery_deadline_boundary.py",
+    "reproduction/specification/method_logic_closure_v2/STATE_TRANSITION_TABLE_V2.csv"
+  ],
+  "protected_runtime_diff": [],
+  "runtime_method_diff_outside_supervisor": [],
+  "schema": "DIFF_SCOPE_AUDIT_V1",
+  "status": "PASS",
+  "task_local_prefix": "reproduction/formal/certified_recovery_deadline_aware_routing_completion_v1/",
+  "unauthorized_paths": []
+}

@@ -1,0 +1,32 @@
+{
+  "action_authority_none": true,
+  "commit_allowed_false": true,
+  "destination_boundary": true,
+  "new_rule_ids": [
+    "ARB_RECOVERY_WARNING_BOUNDARY",
+    "ARB_RECOVERY_EXPIRED_BOUNDARY"
+  ],
+  "new_rules_exactly_two": true,
+  "no_overlap_in_34_replay": true,
+  "no_search": true,
+  "non_recovery_prevents_new": true,
+  "open_cannot_match_new": true,
+  "probes": {
+    "expired_no_backup_recovery": "ARB_RECOVERY_EXPIRED_BOUNDARY",
+    "expired_valid_backup": "ARB_BACKUP_GUARD",
+    "open_no_backup_recovery": "ARB_NAV",
+    "warning_no_backup_recovery": "ARB_RECOVERY_WARNING_BOUNDARY",
+    "warning_primary_no_backup": null,
+    "warning_terminal_eligible_recovery": null,
+    "warning_uncertified_recovery": null,
+    "warning_valid_backup": "ARB_BACKUP_GUARD"
+  },
+  "schema": "ROUTING_RULE_CONFORMANCE_AUDIT_V1",
+  "status": "PASS",
+  "table_row_count": 46,
+  "terminal_eligible_prevents_new": true,
+  "uncertified_prevents_new": true,
+  "unique_rule_count": 46,
+  "valid_backup_prevents_new": true,
+  "warning_expired_mutually_exclusive": true
+}

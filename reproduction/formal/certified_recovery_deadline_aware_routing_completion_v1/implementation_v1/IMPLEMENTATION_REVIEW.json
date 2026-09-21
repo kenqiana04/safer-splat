@@ -1,0 +1,9 @@
+{
+  "authority": "Supervisor remains routing/selection owner; boundary rows have no action and no commit authority.",
+  "equivalence": "34/34 offline contexts resolve to explicit boundary with 0 action/plant/scientific deltas.",
+  "legacy_test_note": "Three frozen 44-row assertions are superseded by the additive 46-row table and were not modified.",
+  "next_task": "DIAGNOSE_BOUNDARY_TEMPORAL_RECOVERABILITY_V1",
+  "schema": "IMPLEMENTATION_REVIEW_V1",
+  "source_change": "Two additive transition rows and minimal Supervisor guards/arbitration support.",
+  "verdict": "PASS_IMPLEMENT_CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_COMPLETION_V1"
+}

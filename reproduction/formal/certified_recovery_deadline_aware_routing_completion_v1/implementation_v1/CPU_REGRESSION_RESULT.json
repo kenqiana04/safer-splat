@@ -1,0 +1,27 @@
+{
+  "existing_relevant_tests": {
+    "count": 11,
+    "failed": 0,
+    "modules": [
+      "test_public_cycle_deadline",
+      "test_deadline_aware_backup_arbitration_row"
+    ],
+    "passed": 11
+  },
+  "gpu_runs": 0,
+  "legacy_static_44_row_checks": {
+    "count": 3,
+    "not_used_as_runtime_failure": true,
+    "status": "SUPERSEDED_BY_TWO_ADDITIVE_BOUNDARY_ROWS"
+  },
+  "new_tests": {
+    "count": 12,
+    "failed": 0,
+    "name": "test_certified_recovery_deadline_boundary",
+    "passed": 12
+  },
+  "schema": "CPU_REGRESSION_RESULT_V1",
+  "status": "PASS_CPU_RELEVANT_REGRESSIONS",
+  "total_relevant_failures": 0,
+  "trial_reruns": 0
+}
