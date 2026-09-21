@@ -1,0 +1,4227 @@
+{
+  "file_count": 844,
+  "files": [
+    {
+      "path": "trial_0/bounded_recovery_process_metadata.json",
+      "sha256": "07045c944eb0c68f148a368a929fc2a9ef6e5051bee371108a83bb58e41d7f55",
+      "size": 1790
+    },
+    {
+      "path": "trial_0/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_0/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_0/recovery_cycle_observations.jsonl",
+      "sha256": "5b1e6bfde64dee2da160fbefd7de867c2b5b9baaf88fe5a1bce9a7c1592a74c0",
+      "size": 918293
+    },
+    {
+      "path": "trial_0/recovery_generation.jsonl",
+      "sha256": "236f734cd5eb658c61d13d909f7641afeaff04d643da47287d5c3c304511d456",
+      "size": 9815
+    },
+    {
+      "path": "trial_0/runtime_trace.jsonl",
+      "sha256": "0d7e945f263ea4a43aa4b988034884ba9693888b257670d9b9f8089e84e77270",
+      "size": 1965207
+    },
+    {
+      "path": "trial_0/runtime_trace_lock.json",
+      "sha256": "68199307342532214b67d721a60412bc75e8a05172d992e6be53bc173ff9679c",
+      "size": 354
+    },
+    {
+      "path": "trial_0/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_0/stdout.log",
+      "sha256": "ffbee7e0b08c978df140f106fc5a4332f12e8ca17293f6a6f86827aa92cc3e6c",
+      "size": 354
+    },
+    {
+      "path": "trial_0/trial_summary.json",
+      "sha256": "b985cf387a71efb7670d013252625a2381534b94e4b7ec3962e7a09a02c8a8ca",
+      "size": 607573
+    },
+    {
+      "path": "trial_1/bounded_recovery_process_metadata.json",
+      "sha256": "ea9da16dd1fb6b0288c5b05dfcdc5ea86a18c1256b1db56d2edfc3c0e60a5a7b",
+      "size": 1790
+    },
+    {
+      "path": "trial_1/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_1/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_1/recovery_cycle_observations.jsonl",
+      "sha256": "34cdb60aefb2dd7a8e6a2a696b14387e4c88d29cbd4f591227793d865c078b82",
+      "size": 949316
+    },
+    {
+      "path": "trial_1/recovery_generation.jsonl",
+      "sha256": "955c2d799b96d8cdfef412dadba684fc490cf5b2046f93bdb5d1b45ec266f5d4",
+      "size": 41223
+    },
+    {
+      "path": "trial_1/runtime_trace.jsonl",
+      "sha256": "731b2d0d2dbe1544f91598c625f72774a0497f80c5c2cf43500abbfb614a4da8",
+      "size": 1983894
+    },
+    {
+      "path": "trial_1/runtime_trace_lock.json",
+      "sha256": "cabec9549222d16bdf3dc93b95c855eab23eab0db31d64cdd0315b304d40e953",
+      "size": 354
+    },
+    {
+      "path": "trial_1/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_1/stdout.log",
+      "sha256": "2df6021d85e6d330ceb7aa1f41cbd101789ed01d6daf848d335dd6baed4a7715",
+      "size": 354
+    },
+    {
+      "path": "trial_1/trial_summary.json",
+      "sha256": "00d29017f28abb767cb62a76d55f9d19565391bd616768e7dc65a49f8d7f195c",
+      "size": 642798
+    },
+    {
+      "path": "trial_11/bounded_recovery_process_metadata.json",
+      "sha256": "54e38ae0bf411803cd5f0365eacba2ed8a6a78957fa270a7361bc734eae4860a",
+      "size": 1791
+    },
+    {
+      "path": "trial_11/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_11/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_11/recovery_cycle_observations.jsonl",
+      "sha256": "5e6d9aaae367b5b5ac4c3ce665ee354e6f570622d5a530618c1a86844fe94cb3",
+      "size": 916876
+    },
+    {
+      "path": "trial_11/recovery_generation.jsonl",
+      "sha256": "9ae4fb98e5295d9f0caf53e34374572397f38da9c0fb793936ba68efed552c6a",
+      "size": 9820
+    },
+    {
+      "path": "trial_11/runtime_trace.jsonl",
+      "sha256": "fff181b1c60dde872e1cd52c35859d1a5bf5370d91ada2abe6e480a3048c4285",
+      "size": 1977822
+    },
+    {
+      "path": "trial_11/runtime_trace_lock.json",
+      "sha256": "5b54524fba812c21472f556ab94fbfba2f1582e780b513e15704b89ce8c186a9",
+      "size": 354
+    },
+    {
+      "path": "trial_11/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_11/stdout.log",
+      "sha256": "f47606dbf16c3bd519f49faa74cd3371849cf7e0cdd1e43a1f7cd87a26b011fe",
+      "size": 355
+    },
+    {
+      "path": "trial_11/trial_summary.json",
+      "sha256": "005c0b2b6b91fda4851844ce11283f8b6b54a0cbbc400b40bc0c7d4f2ea9eaf2",
+      "size": 603576
+    },
+    {
+      "path": "trial_12/bounded_recovery_process_metadata.json",
+      "sha256": "9e3a1bb0c4fc531eb916b2ea6a31fb87c0f2e3f7ffc7df85b5c13d92f249434b",
+      "size": 1791
+    },
+    {
+      "path": "trial_12/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_12/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_12/recovery_cycle_observations.jsonl",
+      "sha256": "611be98a2ff3be7c3f342e3e998210febd44d43d5918c477c0ca5f55b98e3c36",
+      "size": 3120
+    },
+    {
+      "path": "trial_12/recovery_generation.jsonl",
+      "sha256": "9b3183bd446940292e0e31f4fdb9636488e078571dd0e836e76fb5681ef1740f",
+      "size": 1962
+    },
+    {
+      "path": "trial_12/runtime_trace.jsonl",
+      "sha256": "277e458f569a63d1e84522aeccd372258a3d1d67f7f1b7d88a1cd2989e7cd340",
+      "size": 6634
+    },
+    {
+      "path": "trial_12/runtime_trace_lock.json",
+      "sha256": "55f6cdf3a827f02cccc8cd64d8c2af4a17e7e2e2714430762fceef85f221ba84",
+      "size": 352
+    },
+    {
+      "path": "trial_12/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_12/stdout.log",
+      "sha256": "7bad7afd34f553529a3a6c73a15cb324a32119439ae07c07825f8d2a772817d0",
+      "size": 355
+    },
+    {
+      "path": "trial_12/trial_summary.json",
+      "sha256": "c6d671a1745556a15a8cb8fbd2425f77aa3e75d538312b042ca45905ad8df394",
+      "size": 5912
+    },
+    {
+      "path": "trial_13/bounded_recovery_process_metadata.json",
+      "sha256": "13c3dfc3ae49f5c5c63547a40f16d52f80005d796915893edd9c9f343555de81",
+      "size": 1791
+    },
+    {
+      "path": "trial_13/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_13/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_13/recovery_cycle_observations.jsonl",
+      "sha256": "4a1c32aba3ab5853c2f9b4a736146c48093a87795fafc71ad4ccc350919e76e7",
+      "size": 744806
+    },
+    {
+      "path": "trial_13/recovery_generation.jsonl",
+      "sha256": "896cec688840e470259876d50ad7eeaf0437b4317e445c61134325080d0fa1da",
+      "size": 13748
+    },
+    {
+      "path": "trial_13/runtime_trace.jsonl",
+      "sha256": "92ae096ff38fa93a11765c7a9b2ccd27a50bf12aef66ab0e3a6fe9f676202ba1",
+      "size": 1573451
+    },
+    {
+      "path": "trial_13/runtime_trace_lock.json",
+      "sha256": "c81dda3fc6b40287fb119b499a10040a49a1c4bcd57ebf73b6e4bb1a281ca20c",
+      "size": 354
+    },
+    {
+      "path": "trial_13/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_13/stdout.log",
+      "sha256": "122e252597cb01642900be7ffb4b6064ba2774cf55c0774cd7d3647d065be42b",
+      "size": 355
+    },
+    {
+      "path": "trial_13/trial_summary.json",
+      "sha256": "68cbf48104af75d8c8559212cc52017cdf50856129049093bf5740e081c64fff",
+      "size": 502312
+    },
+    {
+      "path": "trial_14/bounded_recovery_process_metadata.json",
+      "sha256": "51cd00a48d32b98a25b8536d3bd4a5b66404f4985a1224a0c69a2fc795eb3524",
+      "size": 1791
+    },
+    {
+      "path": "trial_14/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_14/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_14/recovery_cycle_observations.jsonl",
+      "sha256": "80b17e0a402b47ae2ff2b5237eb0b8c5e2f2ef8c24b01e2a5de117decd8752a6",
+      "size": 775837
+    },
+    {
+      "path": "trial_14/recovery_generation.jsonl",
+      "sha256": "c47411bf33d038dafe6d2e10e4535989e119d00ac0f3165ee168054edee8050c",
+      "size": 41244
+    },
+    {
+      "path": "trial_14/runtime_trace.jsonl",
+      "sha256": "bd95bac9782af6f882be1b84f0151fac2c3ce0c3fa0126a414910c82d317422f",
+      "size": 1622514
+    },
+    {
+      "path": "trial_14/runtime_trace_lock.json",
+      "sha256": "be4040de81a482b17ec64622c47c37b4a4acb72d0d4b5c7c9bf3153d7915290a",
+      "size": 354
+    },
+    {
+      "path": "trial_14/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_14/stdout.log",
+      "sha256": "ff86b83dbee0b51e9839157de2e02d9ff01cff87101ba75fa69269121ee3c3ab",
+      "size": 355
+    },
+    {
+      "path": "trial_14/trial_summary.json",
+      "sha256": "fdff09981699600718b022f221541454af78438fe2de80d16e6e77e4241cd25a",
+      "size": 520548
+    },
+    {
+      "path": "trial_16/bounded_recovery_process_metadata.json",
+      "sha256": "9742eeb764e6b02164a4a9bb9f088799a152befa470fb27932ba3584c6791d6b",
+      "size": 1791
+    },
+    {
+      "path": "trial_16/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_16/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_16/recovery_cycle_observations.jsonl",
+      "sha256": "77656accd8bdb8636b50da4662a1c5af732bacbde67e898253b5c2bbff53709b",
+      "size": 944198
+    },
+    {
+      "path": "trial_16/recovery_generation.jsonl",
+      "sha256": "b4647a4092a2f9e73b571daf80bfbb6c5b5554f5c855c027ae75f03bb3c0d817",
+      "size": 33386
+    },
+    {
+      "path": "trial_16/runtime_trace.jsonl",
+      "sha256": "2c0e012c820baab4d1b33c1e063aa3d46276c51c0a4b40cefe99f213abfed7cb",
+      "size": 1957416
+    },
+    {
+      "path": "trial_16/runtime_trace_lock.json",
+      "sha256": "3ab1fb527d6e814820c7651abda461afee1f491290dc459cf72c751594ed1120",
+      "size": 354
+    },
+    {
+      "path": "trial_16/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_16/stdout.log",
+      "sha256": "6b471bfd6f7766eb54e068f6068daa58ab11701bde5e6dbe47ad73a7c1e9e545",
+      "size": 355
+    },
+    {
+      "path": "trial_16/trial_summary.json",
+      "sha256": "d882670ea10e22c126fc8a2a3bb2fcc4fcbf3c8429bc2039eeba503383c9fe0c",
+      "size": 648860
+    },
+    {
+      "path": "trial_17/bounded_recovery_process_metadata.json",
+      "sha256": "f572be8a91e5402fe31b8f719f443aa82de8a6bfb6684d582647b0d43fc9dc27",
+      "size": 1791
+    },
+    {
+      "path": "trial_17/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_17/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_17/recovery_cycle_observations.jsonl",
+      "sha256": "043b419e1c62151d7745303e43129f9653d8acce6366e5d2786853f1b12f4818",
+      "size": 3113
+    },
+    {
+      "path": "trial_17/recovery_generation.jsonl",
+      "sha256": "8d3adf1e8ec4283200ea387968e83899f8ac2941e109d1997b00acc3b84960ff",
+      "size": 1962
+    },
+    {
+      "path": "trial_17/runtime_trace.jsonl",
+      "sha256": "5c2369539bc0a4ac70d293a4666bdc8f3f3307347388c88543bdcefd68767947",
+      "size": 6631
+    },
+    {
+      "path": "trial_17/runtime_trace_lock.json",
+      "sha256": "223e5d77dc06d54ae337cd1ff5f65c510f997c0e53905ec49ff8a8c9920a6fea",
+      "size": 352
+    },
+    {
+      "path": "trial_17/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_17/stdout.log",
+      "sha256": "084276c714f24910b3cfbfedf70b4fcf947992bc7ca72259264ce9d509047be2",
+      "size": 355
+    },
+    {
+      "path": "trial_17/trial_summary.json",
+      "sha256": "db8a62e8c070ca3dffb15a11e996ef2a25ec5178ea2b438d9e124b91ebea6adb",
+      "size": 5908
+    },
+    {
+      "path": "trial_18/bounded_recovery_process_metadata.json",
+      "sha256": "827df6035c4167b8f9fa72b938719354713d0dabee9c107d3015ab3bbe2a17e9",
+      "size": 1791
+    },
+    {
+      "path": "trial_18/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_18/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_18/recovery_cycle_observations.jsonl",
+      "sha256": "ade0290f051742edaad1c9987e59e31d4a084781cff8d932d2a18e518b0c56d6",
+      "size": 908001
+    },
+    {
+      "path": "trial_18/runtime_trace.jsonl",
+      "sha256": "5b14100437ecce0e2b8515dec28843ddb9930b7e7eee1c0f887f5db973bac25c",
+      "size": 1973693
+    },
+    {
+      "path": "trial_18/runtime_trace_lock.json",
+      "sha256": "39ada6b5e86e6735e4d77653b5b6c98c2ca22f4952c923ca1fb29128d3a247ff",
+      "size": 354
+    },
+    {
+      "path": "trial_18/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_18/stdout.log",
+      "sha256": "43d0326170af405196eb41fda62b22336d79e344409cc918248f696f2fd55f9a",
+      "size": 355
+    },
+    {
+      "path": "trial_18/trial_summary.json",
+      "sha256": "d53f938a6f0c16ff7e46d0a30c8581edcb2f47e0fa4bee54f924b84f672ec62c",
+      "size": 592699
+    },
+    {
+      "path": "trial_19/bounded_recovery_process_metadata.json",
+      "sha256": "61ee19050200dec40d17ec568f5e1368810e84a0cccef3b1d4cafaaedcd7fb0e",
+      "size": 1791
+    },
+    {
+      "path": "trial_19/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_19/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_19/recovery_cycle_observations.jsonl",
+      "sha256": "455ea404f90d2bb3632c944937172025445dfd5209fc314b7cee19a182a8f22c",
+      "size": 908346
+    },
+    {
+      "path": "trial_19/runtime_trace.jsonl",
+      "sha256": "c005b0acc622230f37c9273f445431a7509656876a07117d446858b639c3a844",
+      "size": 1971633
+    },
+    {
+      "path": "trial_19/runtime_trace_lock.json",
+      "sha256": "1fbc2b23a8fe8a4d59762667e27668d97f2d7430a1c7d5cf8093ca564f76f039",
+      "size": 354
+    },
+    {
+      "path": "trial_19/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_19/stdout.log",
+      "sha256": "9302597deafb579042b49885f8a989bf97f4dd3edd721d3e79f8a88f81a0c19b",
+      "size": 355
+    },
+    {
+      "path": "trial_19/trial_summary.json",
+      "sha256": "fc22483c00867a680486a6b2c26a727af1c30c5f26d3faf7ad2ebabce58be0b3",
+      "size": 593928
+    },
+    {
+      "path": "trial_2/bounded_recovery_process_metadata.json",
+      "sha256": "53f8da275383dd0bbb90350d7c3253a9d2bee02dbab53265d47c561fe42aac7b",
+      "size": 1790
+    },
+    {
+      "path": "trial_2/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_2/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_2/recovery_cycle_observations.jsonl",
+      "sha256": "79c00ebdb9724937bc88fec76f9ef51e2d7f3c4158dea915540503aec5297b90",
+      "size": 947842
+    },
+    {
+      "path": "trial_2/recovery_generation.jsonl",
+      "sha256": "981ad2fedd2143e9f0d3e6d4d3580f899ed17bb9ee09b3f4e7953624fdd93206",
+      "size": 39260
+    },
+    {
+      "path": "trial_2/runtime_trace.jsonl",
+      "sha256": "d2c18e45c7bc07d945c02cbf1c991fddd20986f5fe2fd7feb6335cc4f9a37d5d",
+      "size": 1979107
+    },
+    {
+      "path": "trial_2/runtime_trace_lock.json",
+      "sha256": "bf3be6d8b9c24b36da9eafca84f55d6ae38282776fdbc7ab60cd53728496a957",
+      "size": 354
+    },
+    {
+      "path": "trial_2/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_2/stdout.log",
+      "sha256": "cb53fb94518d8890f412c595948d120a53f7494eb85f32259e6c88d8fac9d427",
+      "size": 354
+    },
+    {
+      "path": "trial_2/trial_summary.json",
+      "sha256": "53cf47ae03283584449f40195b1ac8b4b1523d40b3a1961b13bea9ee5e65ac0c",
+      "size": 643137
+    },
+    {
+      "path": "trial_20/bounded_recovery_process_metadata.json",
+      "sha256": "a468c5e7ec39e427afd6868d46a8f7c8ea9ea5540bf58db8f2f699cfa1414071",
+      "size": 1791
+    },
+    {
+      "path": "trial_20/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_20/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_20/recovery_cycle_observations.jsonl",
+      "sha256": "26d36b88fcf2aeab4e0c7ed2edd4a5240eee8395de0d799b373810f019c3bef3",
+      "size": 907822
+    },
+    {
+      "path": "trial_20/runtime_trace.jsonl",
+      "sha256": "8fae211f1a5b16f1b6050f5a89bbc38fbf361f081a1ba3b9587d615ee6028aad",
+      "size": 1980696
+    },
+    {
+      "path": "trial_20/runtime_trace_lock.json",
+      "sha256": "4e946c17a171499e7e19136bb8e43566bc9a8fdc07ab72a8ffdcc5d0ceb694ad",
+      "size": 354
+    },
+    {
+      "path": "trial_20/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_20/stdout.log",
+      "sha256": "5ed460edd32d1468aeb24b95b1d421ad473cb0117e3f093c91aa1e4cb009686b",
+      "size": 355
+    },
+    {
+      "path": "trial_20/trial_summary.json",
+      "sha256": "b0ff5e9291132e7bbf3a93dc4e546806a0a6257b17920663b5f47d4e6a648989",
+      "size": 588229
+    },
+    {
+      "path": "trial_21/bounded_recovery_process_metadata.json",
+      "sha256": "88922172e7f5a8038e9019831da0294e5a23ad4ffb6422d3721f83fdbf73c291",
+      "size": 1791
+    },
+    {
+      "path": "trial_21/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_21/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_21/recovery_cycle_observations.jsonl",
+      "sha256": "2f68af40a96de2c05d4441b5dd7bb9452a917fdd4e998399c022e9788f596991",
+      "size": 848369
+    },
+    {
+      "path": "trial_21/recovery_generation.jsonl",
+      "sha256": "d54bd4dda184034a2fa670d9fa67a38b8921a2e79b7107dce7f8e1fb063c6a38",
+      "size": 37316
+    },
+    {
+      "path": "trial_21/runtime_trace.jsonl",
+      "sha256": "2002e9050aa63f2ed6d551fece65204ec9a01675854991fcdf7d520fd29036f0",
+      "size": 1773173
+    },
+    {
+      "path": "trial_21/runtime_trace_lock.json",
+      "sha256": "d9eb7bcb143024002f2a6a8e31f980162e34edeff320f469389bd91a61db773e",
+      "size": 354
+    },
+    {
+      "path": "trial_21/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_21/stdout.log",
+      "sha256": "d3075be9edaa0458dea330de2107e5040996a00a6978380a277765c02b78874e",
+      "size": 355
+    },
+    {
+      "path": "trial_21/trial_summary.json",
+      "sha256": "4113d05a8674a31ae26e832a572f10c7f8f7e0022367647fbbf4bd3b7a32ecf9",
+      "size": 571816
+    },
+    {
+      "path": "trial_22/bounded_recovery_process_metadata.json",
+      "sha256": "d20453140f792920638d083d74de9b5ce95002e5b78b56dc223f42aeb70a27bd",
+      "size": 1791
+    },
+    {
+      "path": "trial_22/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_22/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_22/recovery_cycle_observations.jsonl",
+      "sha256": "b02ce4f83b1563fba1d2a09cc4e0cb27b9dba2464aa5efae24b82bb57b575828",
+      "size": 750382
+    },
+    {
+      "path": "trial_22/recovery_generation.jsonl",
+      "sha256": "70ea617b16ab29dd54b3d23567eb3195297c70d5fc1cc0e135416cffb6b2a090",
+      "size": 29460
+    },
+    {
+      "path": "trial_22/runtime_trace.jsonl",
+      "sha256": "3f4dfe22082ab6d4de64a92df08e0552409176df7ea3c38e13a70d4ddc403af3",
+      "size": 1582257
+    },
+    {
+      "path": "trial_22/runtime_trace_lock.json",
+      "sha256": "d6a73e7687371b14a9eca475fa6b9aa1912b4f432571ead4be3a64b63c8c11bd",
+      "size": 354
+    },
+    {
+      "path": "trial_22/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_22/stdout.log",
+      "sha256": "8b87b4801240528457b69021b4dce6ed18831c1ca056c11e6cb68885c0f7c874",
+      "size": 355
+    },
+    {
+      "path": "trial_22/trial_summary.json",
+      "sha256": "50891f5003d3afe5cfdee0323cd35c1a4a67d13d7123484d9f7b526d2a5b942f",
+      "size": 501763
+    },
+    {
+      "path": "trial_23/bounded_recovery_process_metadata.json",
+      "sha256": "12a8727698df96ad0bd7053a74e13c7e3de829f2d68e68ccee1b31845163677a",
+      "size": 1791
+    },
+    {
+      "path": "trial_23/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_23/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_23/recovery_cycle_observations.jsonl",
+      "sha256": "0293083253c516064a55e2ba607a57a65bb5586ca5e2266829d1eb0ab66eef2a",
+      "size": 955174
+    },
+    {
+      "path": "trial_23/recovery_generation.jsonl",
+      "sha256": "e85b997b49c8e13ae5ce048f2ab68818dd2c09a51bebc016dc6c33aae04114a4",
+      "size": 45171
+    },
+    {
+      "path": "trial_23/runtime_trace.jsonl",
+      "sha256": "2394e30c4564c6a1d046dc758f55e29fda49a2067a4c89110fb1e2bdfe5b0a0e",
+      "size": 1972285
+    },
+    {
+      "path": "trial_23/runtime_trace_lock.json",
+      "sha256": "62bd6f8fc0c8fb35579cf935bdd7720368c853836bd8f1c7455b00cbdbbb31e8",
+      "size": 354
+    },
+    {
+      "path": "trial_23/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_23/stdout.log",
+      "sha256": "ea635fc9f6ae84c97a8431c5e8e5dfd72cbe120ca7283972aee1da827299e9c6",
+      "size": 355
+    },
+    {
+      "path": "trial_23/trial_summary.json",
+      "sha256": "8cac8aa60e5178c263953e58c6b4eeed92ab4c8536808d8a0654779cdf4ef2ed",
+      "size": 656034
+    },
+    {
+      "path": "trial_24/bounded_recovery_process_metadata.json",
+      "sha256": "f85b97e0c2b54ac13235d8b69cc45ecc9c6e01920d5aaac0ed347a7c2473a302",
+      "size": 1791
+    },
+    {
+      "path": "trial_24/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_24/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_24/recovery_cycle_observations.jsonl",
+      "sha256": "2786fca0ea0a725f3829b9fc15f883e42ee3f5e542fe9e3fce53644feb8af0be",
+      "size": 424662
+    },
+    {
+      "path": "trial_24/recovery_generation.jsonl",
+      "sha256": "578ef847a55303f517afba547921cbdf9f328b2b3db5a25647b32a75f2d10a4d",
+      "size": 5892
+    },
+    {
+      "path": "trial_24/runtime_trace.jsonl",
+      "sha256": "4e3b298a7ce19a0511100c62ffdfff13a40977f03852706132c898157aaf7dbf",
+      "size": 915816
+    },
+    {
+      "path": "trial_24/runtime_trace_lock.json",
+      "sha256": "7eace2cdc7a714398732220c42882913f76d9386daebb37c2cc31dbdae6a8479",
+      "size": 354
+    },
+    {
+      "path": "trial_24/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_24/stdout.log",
+      "sha256": "93ab684eebff1808d160395532101d0a309401115719d37c57390d409b40b197",
+      "size": 355
+    },
+    {
+      "path": "trial_24/trial_summary.json",
+      "sha256": "83ac22cfbc719c10aa595ee4907c7b7e57c06c0aa57fcc8f4073a2f45a90c557",
+      "size": 281222
+    },
+    {
+      "path": "trial_26/bounded_recovery_process_metadata.json",
+      "sha256": "789d976c82c47c006faac1c094080efcbe777fe39c7b69995d99e81214c73a08",
+      "size": 1791
+    },
+    {
+      "path": "trial_26/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_26/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_26/recovery_cycle_observations.jsonl",
+      "sha256": "c0fd85096d88702c2120670e2c1e18d82e0d0f80184cbfac39a217814e172526",
+      "size": 921187
+    },
+    {
+      "path": "trial_26/recovery_generation.jsonl",
+      "sha256": "8e5114da5178c927d448d264c20b2c684a1cf62d5d10807cf0c2d2a95796cfac",
+      "size": 11784
+    },
+    {
+      "path": "trial_26/runtime_trace.jsonl",
+      "sha256": "be926b4d4fb1fb1bd2f5f3e0ec3f9b49abe085fd87e9775877cafda527723534",
+      "size": 1977915
+    },
+    {
+      "path": "trial_26/runtime_trace_lock.json",
+      "sha256": "c3265844da48edc4290ef14e8efba29f95c5a41980f4b6bae7097f5e042c03ca",
+      "size": 354
+    },
+    {
+      "path": "trial_26/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_26/stdout.log",
+      "sha256": "4726e826fd27b7a2c5986ff8edf7d056579fd79c03db4ca2d1aac9eb2eaa942d",
+      "size": 355
+    },
+    {
+      "path": "trial_26/trial_summary.json",
+      "sha256": "b5b306b41b88b5a8acde4d6facbccc3d0b3892dd89ce4553989129954abead7c",
+      "size": 606376
+    },
+    {
+      "path": "trial_27/bounded_recovery_process_metadata.json",
+      "sha256": "93a7abc359263cfd8850bca89cc2a2620c59b4006acf98630821372994181a2e",
+      "size": 1791
+    },
+    {
+      "path": "trial_27/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_27/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_27/recovery_cycle_observations.jsonl",
+      "sha256": "df208755cc37fc5df909b6db6049f387195607f580bdfd1a659152ff298b4573",
+      "size": 944871
+    },
+    {
+      "path": "trial_27/recovery_generation.jsonl",
+      "sha256": "436cbc3f9d1bba1dca741c1546cd0c32e9145db79602a312c7cce50c235959ee",
+      "size": 33388
+    },
+    {
+      "path": "trial_27/runtime_trace.jsonl",
+      "sha256": "73a287efd20ddf1e3dead054c03d225245ee8bce555bf7c98b6a777e6ec56be6",
+      "size": 1970871
+    },
+    {
+      "path": "trial_27/runtime_trace_lock.json",
+      "sha256": "b6122284d80f0847cd165c5bf6cac3aca62d24e0d913acf923bcaf1488170126",
+      "size": 354
+    },
+    {
+      "path": "trial_27/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_27/stdout.log",
+      "sha256": "8b635ec906df4653c6d890b9ce21f4dcb9557735ab36388dc4390386c3fd7904",
+      "size": 355
+    },
+    {
+      "path": "trial_27/trial_summary.json",
+      "sha256": "dd2acf477f7d76bbcab12dd4d85ef8d90b3d008321a54938d25b5c7bdb68cec7",
+      "size": 640194
+    },
+    {
+      "path": "trial_28/bounded_recovery_process_metadata.json",
+      "sha256": "b66ab7d4a0dbcfef7e77ec7e784e09ec251bfaecd6973f5d9895c8a5f8e73869",
+      "size": 1791
+    },
+    {
+      "path": "trial_28/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_28/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_28/recovery_cycle_observations.jsonl",
+      "sha256": "ca99117b3f943cc0b539a57edc68921ca3b51c8214e0b0c29654014eeeaa6dd0",
+      "size": 958940
+    },
+    {
+      "path": "trial_28/recovery_generation.jsonl",
+      "sha256": "e60135786708d12c6fff09cadf4b07299b63cd4e9044acafd4fe008597dc57bd",
+      "size": 49100
+    },
+    {
+      "path": "trial_28/runtime_trace.jsonl",
+      "sha256": "7247ea96af14bf5c2a912b331f841d1b0352ffadcac45181b73648150010c8c1",
+      "size": 1995541
+    },
+    {
+      "path": "trial_28/runtime_trace_lock.json",
+      "sha256": "856155400031ef4e8e7c1920772372da003a01d7addbe80bbfd911bc76e9713b",
+      "size": 354
+    },
+    {
+      "path": "trial_28/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_28/stdout.log",
+      "sha256": "59c5a0c3742849a9589f19bebcb012b91315f913c70e17eda9a5fef52c0e1747",
+      "size": 355
+    },
+    {
+      "path": "trial_28/trial_summary.json",
+      "sha256": "bda6160dff73199a36519c9ee9921aba000fd592fd491719d041dc9633a21909",
+      "size": 646749
+    },
+    {
+      "path": "trial_29/bounded_recovery_process_metadata.json",
+      "sha256": "f4cc8ecead1565ddb32c02c4de701063952df0f82eec569c85185e48abcd1e6a",
+      "size": 1791
+    },
+    {
+      "path": "trial_29/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_29/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_29/recovery_cycle_observations.jsonl",
+      "sha256": "00816cdb25d76a1636b9b66f16ec823b7cd678f5e8f2a3a68fc236145e273d12",
+      "size": 883842
+    },
+    {
+      "path": "trial_29/recovery_generation.jsonl",
+      "sha256": "3ced4b43e33424119cd620f9cea272fe392f2f469ff973e33a51ce199029df1a",
+      "size": 19640
+    },
+    {
+      "path": "trial_29/runtime_trace.jsonl",
+      "sha256": "7e7f3344436324c5bdfce7c1cb0f2d5c6403a1dac2d5d789e6ce62ee4a7544db",
+      "size": 1868597
+    },
+    {
+      "path": "trial_29/runtime_trace_lock.json",
+      "sha256": "882d12e07535bbcb672c5a90b948337c9f7daf821120255ed736fba61339f386",
+      "size": 354
+    },
+    {
+      "path": "trial_29/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_29/stdout.log",
+      "sha256": "8df4bad419f42633887f3c53280fa040d895b34bbe91520111fb96a5f132bc85",
+      "size": 355
+    },
+    {
+      "path": "trial_29/trial_summary.json",
+      "sha256": "7ec4c3a335812f65ad40b4f97bda2b25988764cae26b3a87261de4d37f189f9e",
+      "size": 593846
+    },
+    {
+      "path": "trial_3/bounded_recovery_process_metadata.json",
+      "sha256": "61c49841dde4730437e015a82f4522b00e2ccca1800f97ee15c7237ceb102ea0",
+      "size": 1790
+    },
+    {
+      "path": "trial_3/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_3/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_3/recovery_cycle_observations.jsonl",
+      "sha256": "3b13518e40c9afb6cde5fa2db1d202d6023cf208027ebdf742df6ac31efbc822",
+      "size": 918389
+    },
+    {
+      "path": "trial_3/recovery_generation.jsonl",
+      "sha256": "ff5c829c76440f01533320235830b94c97ddf88ba2d75d01210e6e8e7ccb4a03",
+      "size": 9815
+    },
+    {
+      "path": "trial_3/runtime_trace.jsonl",
+      "sha256": "f126603bda8fe8b957d5aec6fdf502c60ab1eb04caf81003b752f3faeefa45fe",
+      "size": 1978700
+    },
+    {
+      "path": "trial_3/runtime_trace_lock.json",
+      "sha256": "d3d4d51ec8183db82fbb89741324e6c83448960ce7ba43dffbfe845210ee09d5",
+      "size": 354
+    },
+    {
+      "path": "trial_3/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_3/stdout.log",
+      "sha256": "07c6a16d2cae05a7f1edb28609175cc084881997460640ff43a349de9930e1be",
+      "size": 354
+    },
+    {
+      "path": "trial_3/trial_summary.json",
+      "sha256": "e34eeab23d41bf51b20d5cf033f26b29fd200668630e5220a40e23639a2c09b0",
+      "size": 603165
+    },
+    {
+      "path": "trial_31/bounded_recovery_process_metadata.json",
+      "sha256": "edb3c4a0e0b19aaf176113a5d18acec7b854e3576bde4cf38ceac4eea34636e1",
+      "size": 1791
+    },
+    {
+      "path": "trial_31/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_31/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_31/recovery_cycle_observations.jsonl",
+      "sha256": "4aa87258e33db087fc5238fa81b8a9d2ed36d52ad87324ca8c13a8cfec24a207",
+      "size": 956824
+    },
+    {
+      "path": "trial_31/recovery_generation.jsonl",
+      "sha256": "1f0a138779250ee8f6e1a8994cda6e351dc386efc249db4acf4fff8b6ce3b52b",
+      "size": 37315
+    },
+    {
+      "path": "trial_31/runtime_trace.jsonl",
+      "sha256": "6087913070610066d112cd324c864fce659da11e95d01e1efa0b988e3eb7211c",
+      "size": 1992296
+    },
+    {
+      "path": "trial_31/runtime_trace_lock.json",
+      "sha256": "3ee76f32cc3ba20eee8d7b25f1dc57888611f0fbcbdca258ccf934e9b5e621e3",
+      "size": 354
+    },
+    {
+      "path": "trial_31/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_31/stdout.log",
+      "sha256": "28956dd9521b22d92ee9e5af2bf487ce5036c32505770b03919a6a34ae165725",
+      "size": 355
+    },
+    {
+      "path": "trial_31/trial_summary.json",
+      "sha256": "61a4805bfb314fc883f61f61539d633267b5a78ce79f69145d09b5cc14c0600b",
+      "size": 673448
+    },
+    {
+      "path": "trial_32/bounded_recovery_process_metadata.json",
+      "sha256": "0e78e3939217d8e7b5c1cad45a2c940fd60ade566beda20d56661ff37b2f936c",
+      "size": 1791
+    },
+    {
+      "path": "trial_32/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_32/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_32/recovery_cycle_observations.jsonl",
+      "sha256": "a6849b23f7918b6452bede4a62ff4263dba706511ed0684080f239233ffd2cbc",
+      "size": 950275
+    },
+    {
+      "path": "trial_32/recovery_generation.jsonl",
+      "sha256": "91b007350d724ef8fd6da998c08e5fcdbab4ee87be4bc9d5c29925f896427320",
+      "size": 35352
+    },
+    {
+      "path": "trial_32/runtime_trace.jsonl",
+      "sha256": "3906b6cbad09e0ce59d4defd4af50b07911768c2c20a18cd8147471380cce23c",
+      "size": 1987612
+    },
+    {
+      "path": "trial_32/runtime_trace_lock.json",
+      "sha256": "40ed4efe1646df5cbff47736744a876364fa16cc2025327bbaa84916122dced4",
+      "size": 354
+    },
+    {
+      "path": "trial_32/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_32/stdout.log",
+      "sha256": "f8e918f4e78be33a360f971c033b13ef1ea6c0cb83e30ef070b75a71df644920",
+      "size": 355
+    },
+    {
+      "path": "trial_32/trial_summary.json",
+      "sha256": "2457291c93bf8bccff8e56da9d2d22ef0f902aca27768f6d2f50d82213ee82e6",
+      "size": 681770
+    },
+    {
+      "path": "trial_33/bounded_recovery_process_metadata.json",
+      "sha256": "5ea394d48690648df07206424b3cba7a6e72232d4350d6b9d643363d1a642f79",
+      "size": 1791
+    },
+    {
+      "path": "trial_33/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_33/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_33/recovery_cycle_observations.jsonl",
+      "sha256": "9bb746ab805d772a6d4cbf68ebebbb94bd916bc80d60010c11d08f4d2c7928f8",
+      "size": 952739
+    },
+    {
+      "path": "trial_33/recovery_generation.jsonl",
+      "sha256": "c8b8883b2029f15f0df79d6cb28d88f40543bcce8e0e60bd88321fcc01397a96",
+      "size": 51060
+    },
+    {
+      "path": "trial_33/runtime_trace.jsonl",
+      "sha256": "fea7d1d2f0ded0fe2735ad66b6dfd1fbb2d7c25de734f5e21022615598c156fe",
+      "size": 1985822
+    },
+    {
+      "path": "trial_33/runtime_trace_lock.json",
+      "sha256": "e200549cebf38688fd5405b8f9d97a6ab47ee008d814ac0ce5761677c4b92589",
+      "size": 354
+    },
+    {
+      "path": "trial_33/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_33/stdout.log",
+      "sha256": "68fa17627989c50f656ddf11d1f92b86f0a067994fed4dce1b861c6c38a0a124",
+      "size": 355
+    },
+    {
+      "path": "trial_33/trial_summary.json",
+      "sha256": "6d99dfd37ea77bf60fe4f81a32cc848095b1b78edf92e664047f67b1215c73f2",
+      "size": 641631
+    },
+    {
+      "path": "trial_34/bounded_recovery_process_metadata.json",
+      "sha256": "df3a1c7114e120f5446c94563e4f75465ebcdb6af0a013fda24d50c4b4f5df7f",
+      "size": 1791
+    },
+    {
+      "path": "trial_34/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_34/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_34/recovery_cycle_observations.jsonl",
+      "sha256": "49d1be2e874ccd3b69daa77c24d6cf1726ee7bc0907d01ee1915816427f037a5",
+      "size": 478016
+    },
+    {
+      "path": "trial_34/recovery_generation.jsonl",
+      "sha256": "aa877c5498d8485c719d06754cb4b5758a045817254239ef00b28f40af1b17ea",
+      "size": 23564
+    },
+    {
+      "path": "trial_34/runtime_trace.jsonl",
+      "sha256": "187e071d613f9d5f991e1af6f3f288b269c70ff165979145c1668cd75d0760e9",
+      "size": 997035
+    },
+    {
+      "path": "trial_34/runtime_trace_lock.json",
+      "sha256": "0c3f5f91342ab15701f43c47f3730b3112b17e1fec995777bb80de98b8a768e5",
+      "size": 354
+    },
+    {
+      "path": "trial_34/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_34/stdout.log",
+      "sha256": "3e9964ebe3c5d35487c7d5a8c0169bb0f0e6b1379c0fc07e6bb925fcf7340417",
+      "size": 355
+    },
+    {
+      "path": "trial_34/trial_summary.json",
+      "sha256": "9fd613389be3a21710c9b67a00cfe3fe3045c63be9d313a327836f421521c8c2",
+      "size": 323674
+    },
+    {
+      "path": "trial_36/bounded_recovery_process_metadata.json",
+      "sha256": "852a02b6bad15f1b199e6cb4de8c99595b85f6b2f79405e56d20b59aa484fe3a",
+      "size": 1791
+    },
+    {
+      "path": "trial_36/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_36/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_36/recovery_cycle_observations.jsonl",
+      "sha256": "756e9f9cc52577017c362dd0faa37fde6bc3280f616ad86d3f62997279301eed",
+      "size": 946667
+    },
+    {
+      "path": "trial_36/recovery_generation.jsonl",
+      "sha256": "358932cb6394d646468745f8e46b1933bbad380442ee7ec3ef660ae1f56827d4",
+      "size": 35350
+    },
+    {
+      "path": "trial_36/runtime_trace.jsonl",
+      "sha256": "2e2d934f0e829354df75be6e7e651dd94951421d53bf67eef67379761da64809",
+      "size": 1976815
+    },
+    {
+      "path": "trial_36/runtime_trace_lock.json",
+      "sha256": "6a63626fba17a30a8273941df40db4bb4b12bbdaa9be0c81becc71494b45a9ca",
+      "size": 354
+    },
+    {
+      "path": "trial_36/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_36/stdout.log",
+      "sha256": "161a5a046a5744729d105f91749eabf495bc64094baeb25c24ff4141de44a198",
+      "size": 355
+    },
+    {
+      "path": "trial_36/trial_summary.json",
+      "sha256": "d713e27fb7ec20f8cb4809d5db908eae59b784442ee0940e0ae78ee81cf242ea",
+      "size": 689085
+    },
+    {
+      "path": "trial_37/bounded_recovery_process_metadata.json",
+      "sha256": "d838ad46357342cb511b3438bf7a20b869fc015ebbf002bd0d23ace588421db6",
+      "size": 1791
+    },
+    {
+      "path": "trial_37/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_37/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_37/recovery_cycle_observations.jsonl",
+      "sha256": "87461f37dce59a3cc19328982d4e47bbf9d495e0d9001cf577f3b3a200cef1e9",
+      "size": 947748
+    },
+    {
+      "path": "trial_37/recovery_generation.jsonl",
+      "sha256": "d9de5da3b551024e19f6754112c7c5bfabe0c36254feaa2249b46a3229f2df2f",
+      "size": 35351
+    },
+    {
+      "path": "trial_37/runtime_trace.jsonl",
+      "sha256": "1ecc7d54c7b83fc26a1d51d8080bda26cb4a558b3bb389070f36fc00fc62d175",
+      "size": 1973833
+    },
+    {
+      "path": "trial_37/runtime_trace_lock.json",
+      "sha256": "cff97e96c3515fb5148e69a4be8328d7fca7a014b53344de4d36527058702bce",
+      "size": 354
+    },
+    {
+      "path": "trial_37/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_37/stdout.log",
+      "sha256": "22f183d0996ca82731688ce875d5bb6c991b4497864f44e8906bac2cd2da559e",
+      "size": 355
+    },
+    {
+      "path": "trial_37/trial_summary.json",
+      "sha256": "6c456a30fbc5946185748d614557e2a60298962a7d9cab789802bf2383330bec",
+      "size": 687750
+    },
+    {
+      "path": "trial_38/bounded_recovery_process_metadata.json",
+      "sha256": "cf431b55e0351b6c3161ba6cef18f0426d849cc03d6cb3aa80c0da1927d24235",
+      "size": 1791
+    },
+    {
+      "path": "trial_38/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_38/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_38/recovery_cycle_observations.jsonl",
+      "sha256": "aad01bf43767bbe74d2ed677608b00c2a3f20124603289a92c0243a86cd993be",
+      "size": 945921
+    },
+    {
+      "path": "trial_38/recovery_generation.jsonl",
+      "sha256": "f479562fe361661784abec59f1feadea27b2bea605f208502df7b8286423396a",
+      "size": 33388
+    },
+    {
+      "path": "trial_38/runtime_trace.jsonl",
+      "sha256": "cc356bdb6c71540926133b6008b29bba2d69e96b16a5a3e62f2462c420f1ab82",
+      "size": 1968543
+    },
+    {
+      "path": "trial_38/runtime_trace_lock.json",
+      "sha256": "c61bbf645d469ba5aca91d1eecdb9c4a8d5f1d6d80278eb7fbb6c5d9ba78f31d",
+      "size": 354
+    },
+    {
+      "path": "trial_38/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_38/stdout.log",
+      "sha256": "afcb608bc3c7ab66856174f543bf843c20a5a88ca8d62cb91406a13e2a795a53",
+      "size": 355
+    },
+    {
+      "path": "trial_38/trial_summary.json",
+      "sha256": "daea79baf34ee8dceb8032dafb4c7bf03242f285a0100c522cc1ea8b57092932",
+      "size": 679281
+    },
+    {
+      "path": "trial_39/bounded_recovery_process_metadata.json",
+      "sha256": "2f98d9553bfbd2a669503979edf5fbd0a4ac95dbd26a9725e0952a85875303e8",
+      "size": 1791
+    },
+    {
+      "path": "trial_39/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_39/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_39/recovery_cycle_observations.jsonl",
+      "sha256": "31c7c4bdcd7af94f532755e9c9b997a88812b77b4c99607f23a414858ae999b3",
+      "size": 950701
+    },
+    {
+      "path": "trial_39/recovery_generation.jsonl",
+      "sha256": "e1aefb0be1bdcdcbfd1b732c0e2b43ac861209a79dd4795996b5f8b197ae71d4",
+      "size": 33386
+    },
+    {
+      "path": "trial_39/runtime_trace.jsonl",
+      "sha256": "7f4655453cc3c591cd905e5b0cf6b8fdf116d4bf97f067db71db4acf0f6cc653",
+      "size": 1974995
+    },
+    {
+      "path": "trial_39/runtime_trace_lock.json",
+      "sha256": "4e3abaf451d5ff30bc67e182d44ce0bdb6fd97e00ba750ca3e6f83ecc7f6099a",
+      "size": 354
+    },
+    {
+      "path": "trial_39/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_39/stdout.log",
+      "sha256": "69df4d7ae5646f9f98381c575471e22c6d7975d05361f2f7b8002188a34c2a3f",
+      "size": 355
+    },
+    {
+      "path": "trial_39/trial_summary.json",
+      "sha256": "a0d94ea78ba9e3a85463164781eb1bd6036576785a8e0d7aef030aa6df730b20",
+      "size": 650273
+    },
+    {
+      "path": "trial_4/bounded_recovery_process_metadata.json",
+      "sha256": "851d44969d1ba89eaf45838154a07001cc9e411f094ea728b77cf30004675d99",
+      "size": 1790
+    },
+    {
+      "path": "trial_4/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_4/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_4/recovery_cycle_observations.jsonl",
+      "sha256": "da86c55bfc565891d63992ee5f012ae9803e92120abb1967da093caa62499611",
+      "size": 914172
+    },
+    {
+      "path": "trial_4/recovery_generation.jsonl",
+      "sha256": "21571a9031773b478f2152c48169af8fa3a50274c898cfd44938c1ed848ab23d",
+      "size": 5889
+    },
+    {
+      "path": "trial_4/runtime_trace.jsonl",
+      "sha256": "e3c91ebbcf1431dc568a00b27bb7e8b309722bf9f34f510ff68225f54f10b583",
+      "size": 1972866
+    },
+    {
+      "path": "trial_4/runtime_trace_lock.json",
+      "sha256": "093c6e1fb093f3f8fbb187b51e029d3dc95599d1de3be8dbc26bea8116e71ab3",
+      "size": 354
+    },
+    {
+      "path": "trial_4/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_4/stdout.log",
+      "sha256": "6962dc90e4c10885bb9bd3cfaade4470e1aa4136b6a551328ca9a7c268ad2907",
+      "size": 354
+    },
+    {
+      "path": "trial_4/trial_summary.json",
+      "sha256": "55601378d1eb6e44b8c0f0a47983ab02de69322d29d43e1d2a026075882f0e8c",
+      "size": 601363
+    },
+    {
+      "path": "trial_40/bounded_recovery_process_metadata.json",
+      "sha256": "b2e2e3fe8bf2184b0054d7cc4bbb5b53cda4ee8f1e93088f407ebe95197ce45f",
+      "size": 1791
+    },
+    {
+      "path": "trial_40/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_40/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_40/recovery_cycle_observations.jsonl",
+      "sha256": "baff1d97f77c56a95e496247969ec22f6d85556488e4e12cbe638fc68aae931f",
+      "size": 921103
+    },
+    {
+      "path": "trial_40/recovery_generation.jsonl",
+      "sha256": "e9adf0ac31d714c827ea1e465a5e7d5feab80b5397106945685cc996415af5ab",
+      "size": 15711
+    },
+    {
+      "path": "trial_40/runtime_trace.jsonl",
+      "sha256": "ad3cdf1a6fda550508ef74e94dfb2558968b278114bf07b3ed6e56a93aa40b32",
+      "size": 1942352
+    },
+    {
+      "path": "trial_40/runtime_trace_lock.json",
+      "sha256": "14f613834e2729b4d39512aef450d26b26bb65ed4cf28fc3abf8f1a187bdc73d",
+      "size": 354
+    },
+    {
+      "path": "trial_40/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_40/stdout.log",
+      "sha256": "6f34f36f5706726b0763a0cd849c962fa6a8fc1908fff7debb298f34d6e3fba5",
+      "size": 355
+    },
+    {
+      "path": "trial_40/trial_summary.json",
+      "sha256": "f46ebf72c3ba730cd2f2a09bf2609750aef8db29fbd1e3e61691093c697fddd1",
+      "size": 698189
+    },
+    {
+      "path": "trial_41/bounded_recovery_process_metadata.json",
+      "sha256": "8dbfbe3777aff951be0e9d06707725b3f96b424bf9e8586b66f81123d686d29c",
+      "size": 1791
+    },
+    {
+      "path": "trial_41/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_41/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_41/recovery_cycle_observations.jsonl",
+      "sha256": "ab919ce82e1bd7e815c6d642ff7ee9d6adddfcb4c8a16e46aaf86daf56c10aee",
+      "size": 921930
+    },
+    {
+      "path": "trial_41/recovery_generation.jsonl",
+      "sha256": "54fc85d87513fdd94940f5e02306de72f750d93ce5b7fe3dbf3025ae391365e3",
+      "size": 15712
+    },
+    {
+      "path": "trial_41/runtime_trace.jsonl",
+      "sha256": "3a1dde50c3b5851d33c04cc47bba2568b4385f7ecdf3cf1d32d9fdc94f345289",
+      "size": 1947587
+    },
+    {
+      "path": "trial_41/runtime_trace_lock.json",
+      "sha256": "68966d07f4925a77c03cc0e0837f33dcf9a7a1f0f0d00c9f5daa97ced59a1ea8",
+      "size": 354
+    },
+    {
+      "path": "trial_41/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_41/stdout.log",
+      "sha256": "6b8cbc0e4084810dca795a7e0096d21a6ab80a1db53359c2888e6eb5541e044a",
+      "size": 355
+    },
+    {
+      "path": "trial_41/trial_summary.json",
+      "sha256": "542a4e3521de322746e06c831a200bc3408fbe7ffee1f95d335fd9cfa4e4fd53",
+      "size": 698135
+    },
+    {
+      "path": "trial_42/bounded_recovery_process_metadata.json",
+      "sha256": "507504635719dd3096efb875a2e04f4e35122b60f92c34c27108ecdc5b449570",
+      "size": 1791
+    },
+    {
+      "path": "trial_42/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_42/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_42/recovery_cycle_observations.jsonl",
+      "sha256": "3b42a880e6f991f73d4ce272ea97c960fef672a4d6c10fab7d6d2779ae6e1e38",
+      "size": 934060
+    },
+    {
+      "path": "trial_42/recovery_generation.jsonl",
+      "sha256": "bd4fdd25e829c1c7db649a7ee0dc3bfef9e9d515302d2b97ccf39eff915ac16e",
+      "size": 47133
+    },
+    {
+      "path": "trial_42/runtime_trace.jsonl",
+      "sha256": "901dc3bcde6d1708342d2fb6fa50b396461601daa28f30f34ac3e63d8c56a586",
+      "size": 1925362
+    },
+    {
+      "path": "trial_42/runtime_trace_lock.json",
+      "sha256": "3dc4182a41657a83596b04c95908a96c7579a69b7b8c20a8ed2f908db8982ac8",
+      "size": 354
+    },
+    {
+      "path": "trial_42/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_42/stdout.log",
+      "sha256": "15d0c9b771c0f952f11636d85284ea7a6fe20065e5d09a1cc2383819ad7933be",
+      "size": 355
+    },
+    {
+      "path": "trial_42/trial_summary.json",
+      "sha256": "272716aa33d7da7364b8007dc85a7929a3f437e36e50e779fedbacd267dd7063",
+      "size": 627826
+    },
+    {
+      "path": "trial_43/bounded_recovery_process_metadata.json",
+      "sha256": "0509847064010bf5397e14b510cd69eef09f34e5afcd62a7921462b6c4eb52f5",
+      "size": 1791
+    },
+    {
+      "path": "trial_43/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_43/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_43/recovery_cycle_observations.jsonl",
+      "sha256": "0a37980662c1a220457dadc63a1a0dbec65c5884351926938bb37dc84f0088f7",
+      "size": 509344
+    },
+    {
+      "path": "trial_43/recovery_generation.jsonl",
+      "sha256": "7c4bc936fbec0e3a30deceff1db96690c18d3d2114220afbc334baf4d82153aa",
+      "size": 21603
+    },
+    {
+      "path": "trial_43/runtime_trace.jsonl",
+      "sha256": "3a6db973cd579b611f3534d20d943fba42609d8e001f936a5a2d95f1d97dd931",
+      "size": 1061281
+    },
+    {
+      "path": "trial_43/runtime_trace_lock.json",
+      "sha256": "db1a8116ab5e9572aa5761e433f09ccd9fd2cb1593b8e5347190011ea1427e46",
+      "size": 354
+    },
+    {
+      "path": "trial_43/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_43/stdout.log",
+      "sha256": "2458f5287f5cbfbed3fbe20b14389ca55fd038bea4a9783f533c4994c93f8569",
+      "size": 355
+    },
+    {
+      "path": "trial_43/trial_summary.json",
+      "sha256": "4f73767f2bc3e00dabd3f6dcaea8e650dd29ee0d6f06b005ca126edad193322e",
+      "size": 348809
+    },
+    {
+      "path": "trial_44/bounded_recovery_process_metadata.json",
+      "sha256": "826a00080df478ec6070a8a9e3e6d753a26df8b79ab7cc54f252fc6c9bc9c806",
+      "size": 1791
+    },
+    {
+      "path": "trial_44/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_44/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_44/recovery_cycle_observations.jsonl",
+      "sha256": "ee6e245e4b3b47fac8da28cac26cfcef6c00ae59c443d4b3e673c0a2afbc2148",
+      "size": 376508
+    },
+    {
+      "path": "trial_44/recovery_generation.jsonl",
+      "sha256": "0729aa2dfe11ab3bde9b874e19fb795727e63b2d9d1c6bbd1dc1b53eca7374f8",
+      "size": 5892
+    },
+    {
+      "path": "trial_44/runtime_trace.jsonl",
+      "sha256": "a2be0f1432210fc2b30bc1a27d497428aba0f7ed0c8283e41d9fa57697514e9e",
+      "size": 802994
+    },
+    {
+      "path": "trial_44/runtime_trace_lock.json",
+      "sha256": "26a731e6e24bd7117bc228ce1c5740937c5b171d48861903ad1c8e19957a0d5c",
+      "size": 354
+    },
+    {
+      "path": "trial_44/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_44/stdout.log",
+      "sha256": "25ebde8065d77e2ca5d94aa467e192ef136b3bcb04da6462a13aedcaf8c3a298",
+      "size": 355
+    },
+    {
+      "path": "trial_44/trial_summary.json",
+      "sha256": "f40bfd27e70cd09b29bbd8ef86ecc2b93fd3ff3bbfb891288404dbd700cf1580",
+      "size": 253662
+    },
+    {
+      "path": "trial_46/bounded_recovery_process_metadata.json",
+      "sha256": "df93f0849c4af5e4ca1e49112878017e5184fae61773833c234a47f8b0a1ef75",
+      "size": 1791
+    },
+    {
+      "path": "trial_46/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_46/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_46/recovery_cycle_observations.jsonl",
+      "sha256": "656d673e587a173974be6c45f822b141fe04b3ae61a6143422b48f0528a0c5f7",
+      "size": 729208
+    },
+    {
+      "path": "trial_46/recovery_generation.jsonl",
+      "sha256": "9c6501d2d16adedb71b324afd4361fc6a30db170000df80818c1bad0a9911376",
+      "size": 15712
+    },
+    {
+      "path": "trial_46/runtime_trace.jsonl",
+      "sha256": "6a478d22d061edd81dc8e8bac027f4ce04af8a43e45874efbf51449713d27edb",
+      "size": 1530065
+    },
+    {
+      "path": "trial_46/runtime_trace_lock.json",
+      "sha256": "f89be5c68ad75addfe1791d60dd4641dc15ffc8c7ff6d720c774d0e9c1ac9d3b",
+      "size": 354
+    },
+    {
+      "path": "trial_46/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_46/stdout.log",
+      "sha256": "abafb3236e578d83cfd60a729ab3e7c1f806f6c7d657cdd683a4f6db81c41c77",
+      "size": 355
+    },
+    {
+      "path": "trial_46/trial_summary.json",
+      "sha256": "b09e87238a99292a9a1f7fa5f1e431a7ca031a0d4c931246590bb4166f27fbee",
+      "size": 493748
+    },
+    {
+      "path": "trial_47/bounded_recovery_process_metadata.json",
+      "sha256": "243caf297f985ab6692f566a71cb911d41412582d10e496845907778999f3782",
+      "size": 1791
+    },
+    {
+      "path": "trial_47/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_47/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_47/recovery_cycle_observations.jsonl",
+      "sha256": "6118d37cfd9ea32f5b54bf700ec4135e153473d78f54d33cda288b7bc54bc495",
+      "size": 622228
+    },
+    {
+      "path": "trial_47/recovery_generation.jsonl",
+      "sha256": "7fd706be48c5c9009916e0ea406b46ebf325ad440fd56bae5f632bc8111f4187",
+      "size": 31424
+    },
+    {
+      "path": "trial_47/runtime_trace.jsonl",
+      "sha256": "1749e2d5cb9a7cb3c9b70f2073e371c178297fdae7b183a2f6533db2d5c78df9",
+      "size": 1296317
+    },
+    {
+      "path": "trial_47/runtime_trace_lock.json",
+      "sha256": "6161b62d41d347085206c2e5bb728bf63874b104db5c092ca5cdb2e481f0ffdb",
+      "size": 354
+    },
+    {
+      "path": "trial_47/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_47/stdout.log",
+      "sha256": "7b3744ad5c61ca06f26957b37b0f73dfd956b84f564d1258ff12cb20a22425ad",
+      "size": 355
+    },
+    {
+      "path": "trial_47/trial_summary.json",
+      "sha256": "b300f6be71ff595bac1bd7276ffbec0ad3aca64dcf51e11e1348db6b177cfa4b",
+      "size": 417104
+    },
+    {
+      "path": "trial_48/bounded_recovery_process_metadata.json",
+      "sha256": "9ef10273a64f5e1bdf11172c53b9efbadc86b137b7fc4a163d568a9f0d8abc45",
+      "size": 1791
+    },
+    {
+      "path": "trial_48/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_48/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_48/recovery_cycle_observations.jsonl",
+      "sha256": "fffcb5e4bfadd35404bb7c1427d5b6c10d9068d8b911cb66db0d265c60e1cf87",
+      "size": 946968
+    },
+    {
+      "path": "trial_48/recovery_generation.jsonl",
+      "sha256": "bf33add60c5731843eed00399a303e534e473130851da52c714555788e780fd6",
+      "size": 29460
+    },
+    {
+      "path": "trial_48/runtime_trace.jsonl",
+      "sha256": "dea91feff28c5ca387ab365631991a71548681e63cbf5982fd747061dfba9e26",
+      "size": 1964929
+    },
+    {
+      "path": "trial_48/runtime_trace_lock.json",
+      "sha256": "1f055c7bbd398cdf4cf91d98d6b61845aedb56966c570338d374cb8f47dfb5a6",
+      "size": 354
+    },
+    {
+      "path": "trial_48/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_48/stdout.log",
+      "sha256": "63627946b038e377c5ddac26af9fb9b7b9ad72afa0e2b6312eda8fa6b5e38669",
+      "size": 355
+    },
+    {
+      "path": "trial_48/trial_summary.json",
+      "sha256": "98ae8d4fdf762bd54a441fb7991a085863d94aa4e5fc5767ee49804a1ca91d97",
+      "size": 664606
+    },
+    {
+      "path": "trial_49/bounded_recovery_process_metadata.json",
+      "sha256": "a66a2f7833679ded959168deb93c6b2ca14725285eff537f654386d054cdb39e",
+      "size": 1791
+    },
+    {
+      "path": "trial_49/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_49/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_49/recovery_cycle_observations.jsonl",
+      "sha256": "7fae378db66373706ea24ca7df67cbbbbeded14d705abeb6eb4a287fa142a740",
+      "size": 504697
+    },
+    {
+      "path": "trial_49/recovery_generation.jsonl",
+      "sha256": "2bb38603a4520c7879cdb663b8d83f7b8d0b438a4d91620e2f4310a2ef5e76ec",
+      "size": 7856
+    },
+    {
+      "path": "trial_49/runtime_trace.jsonl",
+      "sha256": "166569a011c0de235465d6e64bbf5afde9488702c2fbe39f1726179591f60910",
+      "size": 1066614
+    },
+    {
+      "path": "trial_49/runtime_trace_lock.json",
+      "sha256": "35d368e97f239cacdd291a78a79ab5ee65f1dc96b2ef389297e47902cc6dc98e",
+      "size": 354
+    },
+    {
+      "path": "trial_49/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_49/stdout.log",
+      "sha256": "f2716f4a47eb44d579b855b3e5252d344ac0da9d911ec43edf09cb4129b35515",
+      "size": 355
+    },
+    {
+      "path": "trial_49/trial_summary.json",
+      "sha256": "edb22535d86786473a9662553cdb6aae40f4825ff75bb09acad1eb594e9da43a",
+      "size": 342903
+    },
+    {
+      "path": "trial_51/bounded_recovery_process_metadata.json",
+      "sha256": "43564a72d4dee7e29453dc91c23df0ebf3fcd32f10c2c167db075b03a1ef5d79",
+      "size": 1791
+    },
+    {
+      "path": "trial_51/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_51/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_51/recovery_cycle_observations.jsonl",
+      "sha256": "015d2eb8564f91039cc022b563ca7183eb0aec88291805fb6652a52680356d14",
+      "size": 602780
+    },
+    {
+      "path": "trial_51/recovery_generation.jsonl",
+      "sha256": "38cd220f240c67da6f4dbffedde4f4217507c786cfeacbe2e9ce4a7405128378",
+      "size": 19640
+    },
+    {
+      "path": "trial_51/runtime_trace.jsonl",
+      "sha256": "535733ea51b34a1da6d2bd1a29f9a1f1417679174f9c2cf719318b8d3cbfe39e",
+      "size": 1269418
+    },
+    {
+      "path": "trial_51/runtime_trace_lock.json",
+      "sha256": "c557d3596ebb86cec021115a85aa7f5634a43c88377b139ba7a76d117930d3dc",
+      "size": 354
+    },
+    {
+      "path": "trial_51/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_51/stdout.log",
+      "sha256": "01fa8bf21738b4a36be0e290c1a5054e4f2f7f4db06073e6768866fb9e943877",
+      "size": 355
+    },
+    {
+      "path": "trial_51/trial_summary.json",
+      "sha256": "ee1893f5cef8b150486bd9f8dd9379429c25adafeab1a2e6f5e87d4be25a42d2",
+      "size": 407122
+    },
+    {
+      "path": "trial_52/bounded_recovery_process_metadata.json",
+      "sha256": "478876ac39d0ed07b0c57c83479c56db977fd65a3337df6ee58263d28adb3190",
+      "size": 1791
+    },
+    {
+      "path": "trial_52/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_52/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_52/recovery_cycle_observations.jsonl",
+      "sha256": "ea6a9e93b60bf0ec4d0f91cd78aa8b1adc047b9d5dcb3854283a99e80a16379f",
+      "size": 3121
+    },
+    {
+      "path": "trial_52/recovery_generation.jsonl",
+      "sha256": "1486776b018ad22bbf5e8e5fe6ed35272879f3a2a31d941dedfdea9589cc3b6c",
+      "size": 1962
+    },
+    {
+      "path": "trial_52/runtime_trace.jsonl",
+      "sha256": "7bd37874dcead95c5396be26eecca91b960ccca3dd2a86b003978d66d851f6f8",
+      "size": 6634
+    },
+    {
+      "path": "trial_52/runtime_trace_lock.json",
+      "sha256": "82507d95a2d9c293285cdfcf866d1f7ebd880320e10c55bfeedb18ffe0def86b",
+      "size": 352
+    },
+    {
+      "path": "trial_52/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_52/stdout.log",
+      "sha256": "5172d07660028d6fb7f6d47390d4078959dc5542533d9774bf9398ed6ee4b84b",
+      "size": 355
+    },
+    {
+      "path": "trial_52/trial_summary.json",
+      "sha256": "7b5153683f016ba054bb3b3532db50d0e9679df6ebae90a0b93624dff403db98",
+      "size": 5913
+    },
+    {
+      "path": "trial_53/bounded_recovery_process_metadata.json",
+      "sha256": "e11ba728d85b8f35aeb5d3612194659d99bc4226fa0d0eabd616962c7a10d641",
+      "size": 1791
+    },
+    {
+      "path": "trial_53/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_53/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_53/recovery_cycle_observations.jsonl",
+      "sha256": "800eab16bfd068e27ab9e0791a8a132eae322831476c50f52319fafc76bca2c2",
+      "size": 572399
+    },
+    {
+      "path": "trial_53/recovery_generation.jsonl",
+      "sha256": "e3d98f2b60d3f943a857b660d6a59ea87bbe9234ae4ef614511b9dd5a4369fe0",
+      "size": 7856
+    },
+    {
+      "path": "trial_53/runtime_trace.jsonl",
+      "sha256": "750092b9e9e1828eed2c12938a0a79fabf0967865ced70f70708e48ed5ea324d",
+      "size": 1225396
+    },
+    {
+      "path": "trial_53/runtime_trace_lock.json",
+      "sha256": "ae13a497da117e0cb9704a3d72d5187715786dfc74ebea3c2108b0d490df3af5",
+      "size": 354
+    },
+    {
+      "path": "trial_53/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_53/stdout.log",
+      "sha256": "4d63209dadbdb14ecc36e2c0aef12f1c91e188ef79d0ad50aa35e2456b340d93",
+      "size": 355
+    },
+    {
+      "path": "trial_53/trial_summary.json",
+      "sha256": "067088053168b89ff495dda4013fad05b6de5380def7db8029bcb4e8bf8e55c1",
+      "size": 382104
+    },
+    {
+      "path": "trial_54/bounded_recovery_process_metadata.json",
+      "sha256": "c9441a3cdf0d566168219d2b7f8149c6a1d6893d9af5ab7bf38ce548229f013f",
+      "size": 1791
+    },
+    {
+      "path": "trial_54/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_54/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_54/recovery_cycle_observations.jsonl",
+      "sha256": "c2d71b91f99448ce086f87b2de24966fb1926ee4910fdd38d53c51a1dad2698d",
+      "size": 483252
+    },
+    {
+      "path": "trial_54/recovery_generation.jsonl",
+      "sha256": "1a6b73bd3b28261b13c2d233e00b129058de408783ef534276e91a3ecc7eaaf3",
+      "size": 21603
+    },
+    {
+      "path": "trial_54/runtime_trace.jsonl",
+      "sha256": "ede5f64f6e240689b41e7871d377443fe2b241e3035b207cc88e2e44341a5988",
+      "size": 1012389
+    },
+    {
+      "path": "trial_54/runtime_trace_lock.json",
+      "sha256": "fbb76caf607cf5fd51d67d31358f506c71a0d87ffb5ba101c311c1b90207d3d8",
+      "size": 354
+    },
+    {
+      "path": "trial_54/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_54/stdout.log",
+      "sha256": "83e510573cd20e84502137321e9175919a9e1c5a968aba1315caa40609507858",
+      "size": 355
+    },
+    {
+      "path": "trial_54/trial_summary.json",
+      "sha256": "5e3e34736325be7131e5280bb51d75532e80ac3bc5a87be182d89f6029dce686",
+      "size": 325922
+    },
+    {
+      "path": "trial_56/bounded_recovery_process_metadata.json",
+      "sha256": "94e6cd755659b10e64fbb9dc75459cc33ea47c5fe73cf57873350cc9ed1317aa",
+      "size": 1791
+    },
+    {
+      "path": "trial_56/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_56/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_56/recovery_cycle_observations.jsonl",
+      "sha256": "8d2d55e76743f90bdb7e6c13c4e5d98fe80ac2fc1b053e34ee7aa69454f21b29",
+      "size": 476323
+    },
+    {
+      "path": "trial_56/recovery_generation.jsonl",
+      "sha256": "a95d161fd90561a82d3ba6dd59659e71b1212ccac90f7ea666b8bb3a5d9556f0",
+      "size": 17673
+    },
+    {
+      "path": "trial_56/runtime_trace.jsonl",
+      "sha256": "a911f6d43c076234488c9346b7b0637cd97650fa26caae16cb601bca6f38dcaa",
+      "size": 999116
+    },
+    {
+      "path": "trial_56/runtime_trace_lock.json",
+      "sha256": "1bc0470ee910f71ac93b2d6b3fa1678b3a02d75e60b3bfa4f59ce672e4b85e32",
+      "size": 354
+    },
+    {
+      "path": "trial_56/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_56/stdout.log",
+      "sha256": "301a2f11cf2a1b3868fc1da899cb8b916d52d182ed0e48a6f1dd0863ed3c8103",
+      "size": 355
+    },
+    {
+      "path": "trial_56/trial_summary.json",
+      "sha256": "2ae76453b66149a82b0fb689956db58d0fd8755b8210dfe1e38b3ad51573b797",
+      "size": 323939
+    },
+    {
+      "path": "trial_57/bounded_recovery_process_metadata.json",
+      "sha256": "bff8fd4aa1c79f0828b933a18d2d20cb1c6e57509f40807d28b417673d7a9763",
+      "size": 1791
+    },
+    {
+      "path": "trial_57/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_57/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_57/recovery_cycle_observations.jsonl",
+      "sha256": "9e85b8790abf82bcd936a55ed0fb467b070e4c4956ae51576686a18ce137ee96",
+      "size": 3113
+    },
+    {
+      "path": "trial_57/recovery_generation.jsonl",
+      "sha256": "b1de1e7d57d4b973c64ef3d15a9ec4d864b3305afa6c48ee9c572919e02e28e2",
+      "size": 1962
+    },
+    {
+      "path": "trial_57/runtime_trace.jsonl",
+      "sha256": "1e4afab92f996bbd06e76319fc7edabec1db6b67b8be31e933776aea99433f4b",
+      "size": 6631
+    },
+    {
+      "path": "trial_57/runtime_trace_lock.json",
+      "sha256": "6ba10eeaa7e5c674b32d074b417ed5129d3bd71742f016502d97e5ca96ea87ac",
+      "size": 352
+    },
+    {
+      "path": "trial_57/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_57/stdout.log",
+      "sha256": "6c5356d65d583383d64d7b722b3a60cb4a7c844ba062fc21950c053f5c4cb0b2",
+      "size": 355
+    },
+    {
+      "path": "trial_57/trial_summary.json",
+      "sha256": "c5900e18bee7af17981d54ac851aa8186e7ca4102ae476d9cc3fe440fe0a0041",
+      "size": 5905
+    },
+    {
+      "path": "trial_58/bounded_recovery_process_metadata.json",
+      "sha256": "c557ab2537295951e9383cf2309e13ebed0c3b1a2ae37f2cd8759f4ad77f966d",
+      "size": 1791
+    },
+    {
+      "path": "trial_58/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_58/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_58/recovery_cycle_observations.jsonl",
+      "sha256": "b254bb8ef5cfa19efb261c5ade42e554db27b075db46a302782bf86e1262f408",
+      "size": 421241
+    },
+    {
+      "path": "trial_58/recovery_generation.jsonl",
+      "sha256": "db96137e2bbfe6ee3d31895c51ca9d87c550cebb08203a8e02dd5d1ef345e296",
+      "size": 15712
+    },
+    {
+      "path": "trial_58/runtime_trace.jsonl",
+      "sha256": "01c09e8a5c610d4334c979df9772da137154d450e9f84e2d96ee3e69eb8fe66a",
+      "size": 882732
+    },
+    {
+      "path": "trial_58/runtime_trace_lock.json",
+      "sha256": "2a2f9caa8649486f6043e23cbd6125403c1a73707a626288f99130899705880b",
+      "size": 354
+    },
+    {
+      "path": "trial_58/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_58/stdout.log",
+      "sha256": "ac5b9bee65659d08717b9be018ea1125663b743a7d475353e66958b370d2702d",
+      "size": 355
+    },
+    {
+      "path": "trial_58/trial_summary.json",
+      "sha256": "69ca74ddbfabc6ea70d3d89d5ddd6b5860294da6a3d330b8c24056a31779eb30",
+      "size": 285937
+    },
+    {
+      "path": "trial_59/bounded_recovery_process_metadata.json",
+      "sha256": "bbade02906be087545b98e2aad09708c0aa740a3d2164e68b8234b240c5e24e3",
+      "size": 1791
+    },
+    {
+      "path": "trial_59/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_59/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_59/recovery_cycle_observations.jsonl",
+      "sha256": "c79990f213956abebbaf4e447dcaf04268a6a3d49a2cc36b08f04bfaf8d0eceb",
+      "size": 961995
+    },
+    {
+      "path": "trial_59/recovery_generation.jsonl",
+      "sha256": "f5aa19f3de732ee0fd08d1f6a1dde538c6b5ebe42169c6a001b1c232137f1ce9",
+      "size": 41244
+    },
+    {
+      "path": "trial_59/runtime_trace.jsonl",
+      "sha256": "ba164dd2bb7cf0e719b0f40ff6932b7d1b3d7f1efff269393d0043dedb31c949",
+      "size": 1989611
+    },
+    {
+      "path": "trial_59/runtime_trace_lock.json",
+      "sha256": "1fc9973e89ef514587510b069be5f4e95065068bbc13d48338534d3f0c56513f",
+      "size": 354
+    },
+    {
+      "path": "trial_59/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_59/stdout.log",
+      "sha256": "d892eedfe18c1fc5c0d4f663af5d27988b58d3889e62815690008c25ef724e15",
+      "size": 355
+    },
+    {
+      "path": "trial_59/trial_summary.json",
+      "sha256": "1a0b4bf991171d66ffc23ab3977e3b05a8d2a4944eb6d30985048753f9c23544",
+      "size": 665706
+    },
+    {
+      "path": "trial_6/bounded_recovery_process_metadata.json",
+      "sha256": "f9851d450a8f689b5df0b2bb19211e8d551b639f9bdd56f2e836becd96cb7dc1",
+      "size": 1790
+    },
+    {
+      "path": "trial_6/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_6/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_6/recovery_cycle_observations.jsonl",
+      "sha256": "252f8fbdef8f372540efa17b6a59888f4ca06e50991e8222e97c48a3968a9237",
+      "size": 912132
+    },
+    {
+      "path": "trial_6/recovery_generation.jsonl",
+      "sha256": "77ca61e52534fe029940f3b3930bb6e8642523e6413ff5631ac78d49c9a320c8",
+      "size": 3926
+    },
+    {
+      "path": "trial_6/runtime_trace.jsonl",
+      "sha256": "6163e9b0dbedabc20e0a1bc89af9f659287c9b1f7105cdf9c047a032fe61c535",
+      "size": 1979050
+    },
+    {
+      "path": "trial_6/runtime_trace_lock.json",
+      "sha256": "9fcc4dae9fc02c3c7666be5d2b25bf62af8d6fceb59094595efbaed02f24ee31",
+      "size": 354
+    },
+    {
+      "path": "trial_6/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_6/stdout.log",
+      "sha256": "d94f1e0cd9e81d015c78f7b956af27cda90838e531beb81f74bcdd9220881125",
+      "size": 354
+    },
+    {
+      "path": "trial_6/trial_summary.json",
+      "sha256": "6fc7fce05fb5d003443af1aec454764d26529fbdd592c4122a597e4686912ce2",
+      "size": 594771
+    },
+    {
+      "path": "trial_60/bounded_recovery_process_metadata.json",
+      "sha256": "9edf5ddc34058b1a62f554b755eb1b314fb34c725d7c290067a6a506a4c0f39d",
+      "size": 1791
+    },
+    {
+      "path": "trial_60/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_60/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_60/recovery_cycle_observations.jsonl",
+      "sha256": "9072c56e278c224bb170d6f91e58c6d9811871362e6ca0d7929908b782869e29",
+      "size": 947092
+    },
+    {
+      "path": "trial_60/recovery_generation.jsonl",
+      "sha256": "4d1791562fb3f35e0871862f418d36ad5c1d3a743370fd8f33cecc38d6fe51ab",
+      "size": 35349
+    },
+    {
+      "path": "trial_60/runtime_trace.jsonl",
+      "sha256": "799412627e65b1efe1cb5d95da18a1e7e04e68249429a55f8883e14735d80118",
+      "size": 1975870
+    },
+    {
+      "path": "trial_60/runtime_trace_lock.json",
+      "sha256": "01aa0d392fc7e51e10cc0b7e52b7448249a8b942482e1cccb78163013625e1ef",
+      "size": 354
+    },
+    {
+      "path": "trial_60/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_60/stdout.log",
+      "sha256": "6c7e4959d7d286208ef1ee4eef83f4122552e77d1bfb9aeabadc571faf89db78",
+      "size": 355
+    },
+    {
+      "path": "trial_60/trial_summary.json",
+      "sha256": "b0e3bfb52e9e44290956a548977d47b274d37ee62e4b51e29a4b3ecad2148026",
+      "size": 686748
+    },
+    {
+      "path": "trial_61/bounded_recovery_process_metadata.json",
+      "sha256": "5369b8549b30a8e5079dfe0cc497ae29bdd0fed4529bc1fa65f50692050b0d04",
+      "size": 1791
+    },
+    {
+      "path": "trial_61/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_61/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_61/recovery_cycle_observations.jsonl",
+      "sha256": "0bc78c2df95f115e863449e912705ca890b42da11bb4d3c10a8dc1e35aabe1e3",
+      "size": 290013
+    },
+    {
+      "path": "trial_61/recovery_generation.jsonl",
+      "sha256": "8ea79a1e2f3c33dc65f79931d4980c5ddd716659156d61dde079a07632bcf382",
+      "size": 11781
+    },
+    {
+      "path": "trial_61/runtime_trace.jsonl",
+      "sha256": "654d20e0a9dc70365ce649473501f64464458e883713fd75afb254d06240baf0",
+      "size": 613723
+    },
+    {
+      "path": "trial_61/runtime_trace_lock.json",
+      "sha256": "ddf6d07efa96c20f1fef022e7b84f62d13ab24ead7653ae8ab4454e404072523",
+      "size": 354
+    },
+    {
+      "path": "trial_61/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_61/stdout.log",
+      "sha256": "b005636997f1c0b9ed55e17844ac5a4516b69b8898f44327ffbdc9363022417a",
+      "size": 355
+    },
+    {
+      "path": "trial_61/trial_summary.json",
+      "sha256": "697bb3b706337d782c4bfccc92ed9c49d4113592eee416046a8cb894c15b2dc8",
+      "size": 195563
+    },
+    {
+      "path": "trial_62/bounded_recovery_process_metadata.json",
+      "sha256": "e60d68f638c013122c849eda34e1839896d27736a08dafd599bff455805cb876",
+      "size": 1791
+    },
+    {
+      "path": "trial_62/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_62/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_62/recovery_cycle_observations.jsonl",
+      "sha256": "fbcd823f1b0ccf94931e41d2119256b5d2659aca067e7bfce3b32912d47741e5",
+      "size": 460382
+    },
+    {
+      "path": "trial_62/recovery_generation.jsonl",
+      "sha256": "941662f67460b431bd4be44726316982c63559e95bd8b59b88495f83fdb2b03d",
+      "size": 25530
+    },
+    {
+      "path": "trial_62/runtime_trace.jsonl",
+      "sha256": "efaecdc4aef55956732d397071145f73c7f243ef98acafa8a386edd314cde55a",
+      "size": 955446
+    },
+    {
+      "path": "trial_62/runtime_trace_lock.json",
+      "sha256": "6c0a3ad83b31bee0bd4d062665ad73c847efb9e64ad0c80b745b7071a5073a39",
+      "size": 354
+    },
+    {
+      "path": "trial_62/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_62/stdout.log",
+      "sha256": "6e0b68f300b973b4a3b86902577d1649a6440c377da1f0e336c9e3fb54f242cc",
+      "size": 355
+    },
+    {
+      "path": "trial_62/trial_summary.json",
+      "sha256": "07ff9607cf9ed43b95d9ce3b594e093a239d1d3e3511bbb29c0701d8e0c71237",
+      "size": 316422
+    },
+    {
+      "path": "trial_63/bounded_recovery_process_metadata.json",
+      "sha256": "89930e901dbadb48ea09813235aa882a0f0b8585cc1e23386a716826538db22e",
+      "size": 1791
+    },
+    {
+      "path": "trial_63/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_63/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_63/recovery_cycle_observations.jsonl",
+      "sha256": "9eb2e12d822f03226166e9c92cf3ca0020289dbba7a6f483a9ed33de76d7d051",
+      "size": 908938
+    },
+    {
+      "path": "trial_63/recovery_generation.jsonl",
+      "sha256": "564c598527446cb30baa8b6459ed38f9c31fdff66781ae01be8e4698f90ef243",
+      "size": 3928
+    },
+    {
+      "path": "trial_63/runtime_trace.jsonl",
+      "sha256": "2574a8915f4c15cb785ffbd6af43fa95a0aece910b646a72ac9296c2c65753e4",
+      "size": 1983668
+    },
+    {
+      "path": "trial_63/runtime_trace_lock.json",
+      "sha256": "b7b9454bcd8b844bec47f19cdab1367cfed83345dbdb3fceb6e838d0441ef7f4",
+      "size": 354
+    },
+    {
+      "path": "trial_63/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_63/stdout.log",
+      "sha256": "9e6d101452f1b4e9b0d5795e328a5d81edb6c8450292194edb68b8b553e5e369",
+      "size": 355
+    },
+    {
+      "path": "trial_63/trial_summary.json",
+      "sha256": "3d104aa629e1325e622c9ead3ac07880227b8874fb0d1146cd79c79871f884e6",
+      "size": 591760
+    },
+    {
+      "path": "trial_64/bounded_recovery_process_metadata.json",
+      "sha256": "f511f437e32b426b94da55b7a6981bb8d193790aaead5a1774ca6442fcf58560",
+      "size": 1791
+    },
+    {
+      "path": "trial_64/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_64/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_64/recovery_cycle_observations.jsonl",
+      "sha256": "3eb5c4158ffb3ae0f8384fb9d504a3558f91f5f03ef38339172dd5ed7c2c5204",
+      "size": 904076
+    },
+    {
+      "path": "trial_64/runtime_trace.jsonl",
+      "sha256": "fa91e402e5b7336245eac86eb46b49ccd41cf8eee441c4dacdccb54dba1e6f1b",
+      "size": 1976956
+    },
+    {
+      "path": "trial_64/runtime_trace_lock.json",
+      "sha256": "56e3fde7a7f531f35c0666fddf06ca825033b224c26ea59f9f8bd8f6a74007ee",
+      "size": 354
+    },
+    {
+      "path": "trial_64/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_64/stdout.log",
+      "sha256": "efdb059e04a8fedc4b774d289375780d799745b6189877dd07e6e4c710c279e9",
+      "size": 355
+    },
+    {
+      "path": "trial_64/trial_summary.json",
+      "sha256": "47ff428771ac4d1c5fb69df036b284a92e11877e122f78e0ead07e9dc7c86fca",
+      "size": 590642
+    },
+    {
+      "path": "trial_66/bounded_recovery_process_metadata.json",
+      "sha256": "7a8061824351f935bfc06409590844565f7d62d3f471efa951c0fc15d09f68d4",
+      "size": 1791
+    },
+    {
+      "path": "trial_66/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_66/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_66/recovery_cycle_observations.jsonl",
+      "sha256": "ff8ec6fc044c7bb91d1f20af538bc68220152ea33e0612e4ef2f07a463309781",
+      "size": 911811
+    },
+    {
+      "path": "trial_66/recovery_generation.jsonl",
+      "sha256": "bc9d5761bd01c82c5d7a9b32a89889b8a08ac27b8f265f6d00a52fee9a187952",
+      "size": 5892
+    },
+    {
+      "path": "trial_66/runtime_trace.jsonl",
+      "sha256": "90907b69f723c830a4ffb97e103e3ff91df5711d7e6557ed1390bd3600c1dea6",
+      "size": 1965538
+    },
+    {
+      "path": "trial_66/runtime_trace_lock.json",
+      "sha256": "741af29c4390563c91226e8165b7258466926e37ff25581dffafebb2ad4f6e9c",
+      "size": 354
+    },
+    {
+      "path": "trial_66/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_66/stdout.log",
+      "sha256": "8e6d43939590bb19904b3e7066bbb963dce0799c383551a4bd92e9b4713c1b78",
+      "size": 355
+    },
+    {
+      "path": "trial_66/trial_summary.json",
+      "sha256": "f8420123fcd505ffe9c06322cd78d9b38decceb057bb5184be4afa8892618789",
+      "size": 606193
+    },
+    {
+      "path": "trial_67/bounded_recovery_process_metadata.json",
+      "sha256": "88546db6589186478b352e24641e16d7f22ddd9e6965a41d25ab05e24067b024",
+      "size": 1791
+    },
+    {
+      "path": "trial_67/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_67/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_67/recovery_cycle_observations.jsonl",
+      "sha256": "bb49515ae2c36854baaa4439dae2c858824fe2bc5458238d6b990b1379386438",
+      "size": 904788
+    },
+    {
+      "path": "trial_67/runtime_trace.jsonl",
+      "sha256": "e18669e152617eb40e1a7aa3191212ef7dca9fed9551387bd625d0fab2362b25",
+      "size": 1975048
+    },
+    {
+      "path": "trial_67/runtime_trace_lock.json",
+      "sha256": "fdce174cc63ed60ea106cda5ab7100a5b9f7120b3c8a9b2927fd2e778580ff4b",
+      "size": 354
+    },
+    {
+      "path": "trial_67/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_67/stdout.log",
+      "sha256": "c288d394c9ccf1bb380065d63bb4e08f929e72918520f4834b55e69a87257099",
+      "size": 355
+    },
+    {
+      "path": "trial_67/trial_summary.json",
+      "sha256": "0887d3793cfdc6cf6d245bf8cc43b7597f928b88e298a7e1a178485af08931ca",
+      "size": 591814
+    },
+    {
+      "path": "trial_68/bounded_recovery_process_metadata.json",
+      "sha256": "13fd888161701d31a6cc1db37cca2ffb18ba5d68a254a532d4ec7819a2b8d564",
+      "size": 1791
+    },
+    {
+      "path": "trial_68/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_68/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_68/recovery_cycle_observations.jsonl",
+      "sha256": "1fa468c9b8ad2a468e77e7602b8b047ca343be468f65622f66bdabe92ff9430e",
+      "size": 914025
+    },
+    {
+      "path": "trial_68/recovery_generation.jsonl",
+      "sha256": "4d145ff1305ffeabeb55c31bfda82a90abae2636eb5c19a12370c93781f88611",
+      "size": 9820
+    },
+    {
+      "path": "trial_68/runtime_trace.jsonl",
+      "sha256": "76c66298b9fcd964fa0b3868e29e6a1631cc674eb5b6642bfe46339cd695ef3e",
+      "size": 1980283
+    },
+    {
+      "path": "trial_68/runtime_trace_lock.json",
+      "sha256": "ae1ef04f22681eeeb5391a34ad4eec697eef38f902f6ab0aecd2a64b7248da53",
+      "size": 354
+    },
+    {
+      "path": "trial_68/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_68/stdout.log",
+      "sha256": "d1324d4d7cac338f215d07d07163f0dc0d40c51bd7314465b1ec0c1c5c1b0159",
+      "size": 355
+    },
+    {
+      "path": "trial_68/trial_summary.json",
+      "sha256": "8c02c70dd12b9fb3d1d59daaae52a379e2f5ccfc1320c1f9519e17946e7c91a4",
+      "size": 602177
+    },
+    {
+      "path": "trial_69/bounded_recovery_process_metadata.json",
+      "sha256": "17f1896237cf29fe56aafb42a48f7b3893726ab1de9c170674004fbfcd5d3b80",
+      "size": 1791
+    },
+    {
+      "path": "trial_69/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_69/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_69/recovery_cycle_observations.jsonl",
+      "sha256": "ae4563415ff3b1dea81581c82a80dfc61df0416153fc11573ad052656bf4daca",
+      "size": 949492
+    },
+    {
+      "path": "trial_69/recovery_generation.jsonl",
+      "sha256": "2b59560989ddfee6911751c8c90f74713b121b9e1dcf567c217199a76ba7b0ab",
+      "size": 41244
+    },
+    {
+      "path": "trial_69/runtime_trace.jsonl",
+      "sha256": "3be5920480c142ef9015ca868613d12750b3a29824ee58dbf566a544aeb4b8a2",
+      "size": 1981315
+    },
+    {
+      "path": "trial_69/runtime_trace_lock.json",
+      "sha256": "5b1504c6e34755d8a18f9f11e6835a6fd26b3bae9e08d640c1aaacf50212d42c",
+      "size": 354
+    },
+    {
+      "path": "trial_69/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_69/stdout.log",
+      "sha256": "00a4fa42b47772f6c27e50c19b1dafde5c765dc24670602fe33419c468f720ed",
+      "size": 355
+    },
+    {
+      "path": "trial_69/trial_summary.json",
+      "sha256": "243d0fd4fcfbf5f1e7d7a2b97299998b2603c42af9f41630756cd294b1b29b5b",
+      "size": 644935
+    },
+    {
+      "path": "trial_7/bounded_recovery_process_metadata.json",
+      "sha256": "2b9ca7598018b99d58c212efcc1a0cafdfd861c2ff7bb0c99ee873c7e68b2f2d",
+      "size": 1790
+    },
+    {
+      "path": "trial_7/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_7/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_7/recovery_cycle_observations.jsonl",
+      "sha256": "01690b6f12ccece69505e534471ae22212f7175cb2d56e52cd9ef417fd9c5514",
+      "size": 939800
+    },
+    {
+      "path": "trial_7/recovery_generation.jsonl",
+      "sha256": "ebf8fd98a5ba17a77f0448c775cb3c9bde2ed54a729a8ccf4bdc7748dc1b8194",
+      "size": 31408
+    },
+    {
+      "path": "trial_7/runtime_trace.jsonl",
+      "sha256": "ea5bd3aaa0b96a3d957c9ad1434c1859d49841133997b16dd0196942c93aca60",
+      "size": 1989934
+    },
+    {
+      "path": "trial_7/runtime_trace_lock.json",
+      "sha256": "1693acd289ef6d05a49f48d9d8f7f83ad0ba55bab8348db2b7077796e6800329",
+      "size": 354
+    },
+    {
+      "path": "trial_7/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_7/stdout.log",
+      "sha256": "d40e82fd5b19b46e908b3452df2cb4da8a0361e2431bb48d9ab7866a0dd4aa76",
+      "size": 354
+    },
+    {
+      "path": "trial_7/trial_summary.json",
+      "sha256": "40009e468c3826949d3a738a6b5dddb226aabe0195b7178cc6e607546a592ae6",
+      "size": 625573
+    },
+    {
+      "path": "trial_71/bounded_recovery_process_metadata.json",
+      "sha256": "6d53eccc59d6d30e46a85473fd152b0162ee0a32bb3b580dbaee169a6a06a77a",
+      "size": 1791
+    },
+    {
+      "path": "trial_71/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_71/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_71/recovery_cycle_observations.jsonl",
+      "sha256": "f5336387996fd47aeb17e4991b1e5a2f5b9c7474f613158db518932e177be4b8",
+      "size": 940509
+    },
+    {
+      "path": "trial_71/recovery_generation.jsonl",
+      "sha256": "3878b8346885a99dd74afb46d78204d12ebd2485669ffee594488952e750fb19",
+      "size": 29458
+    },
+    {
+      "path": "trial_71/runtime_trace.jsonl",
+      "sha256": "551a9bae94720d5d0d7bef83d3d7b72df0b847049be453dd5bc7754b67cbaf70",
+      "size": 1968374
+    },
+    {
+      "path": "trial_71/runtime_trace_lock.json",
+      "sha256": "d1c3bda9117eead07b58b5acc47c710dd669d4f5011e02b601d3494f8baad0b5",
+      "size": 354
+    },
+    {
+      "path": "trial_71/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_71/stdout.log",
+      "sha256": "0adf76f108ce90040e65665db57b6c53cb8dac94fa5eb9bb606c4f76c7f20cb5",
+      "size": 355
+    },
+    {
+      "path": "trial_71/trial_summary.json",
+      "sha256": "2b52382b19ba5a2c3030088ab9e98b53ff1de29f1b78257409611220caebdd91",
+      "size": 636365
+    },
+    {
+      "path": "trial_72/bounded_recovery_process_metadata.json",
+      "sha256": "c1a9952c5962afff8dbe85da2332bab2eb96425048085e422316e615f5f9e6d9",
+      "size": 1791
+    },
+    {
+      "path": "trial_72/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_72/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_72/recovery_cycle_observations.jsonl",
+      "sha256": "0208e44c64d7c03e647b3dd1a7f0ab7f8d1c81bc8de3019867f14f931b96ed83",
+      "size": 927676
+    },
+    {
+      "path": "trial_72/recovery_generation.jsonl",
+      "sha256": "e90f90aa7b018115c7b5205dd19ff509313539e03fde61e2c26195328bce0ea4",
+      "size": 19636
+    },
+    {
+      "path": "trial_72/runtime_trace.jsonl",
+      "sha256": "02b9b9f9a86167e3b3c999ab76988368594339d4e0a16dfac5e3e1c1960bfec8",
+      "size": 1941831
+    },
+    {
+      "path": "trial_72/runtime_trace_lock.json",
+      "sha256": "07fa3e0d008f31eefd6fa010e9dba3f5ae1000fa3155b66954ab863750245d28",
+      "size": 354
+    },
+    {
+      "path": "trial_72/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_72/stdout.log",
+      "sha256": "d68d5e1c08e10a6b8c80405c4629910da1fb82d816b26060719abe5a32f12881",
+      "size": 355
+    },
+    {
+      "path": "trial_72/trial_summary.json",
+      "sha256": "db64fae90888565bf7d0686a4727ef14917c63b425907e21bca3475f6cbfe435",
+      "size": 690149
+    },
+    {
+      "path": "trial_73/bounded_recovery_process_metadata.json",
+      "sha256": "b6ebe9d6c0edf2e272ea0c24a6b7bf3572e511752ea5e5be8c1f215d3896a527",
+      "size": 1791
+    },
+    {
+      "path": "trial_73/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_73/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_73/recovery_cycle_observations.jsonl",
+      "sha256": "cad15d46113ae8bc9e13e866ebc189d2c500e75ce5a2a126cdd1abdc0841be42",
+      "size": 495563
+    },
+    {
+      "path": "trial_73/recovery_generation.jsonl",
+      "sha256": "52097fae663f5f4bd510a5e45a24c2d134b7b6595a4f845752d00a54f5002806",
+      "size": 27494
+    },
+    {
+      "path": "trial_73/runtime_trace.jsonl",
+      "sha256": "5d138a1ea706bcdbcc4bd66af97e629d087c79cb52f72cc0e6a9e24d444e592c",
+      "size": 1031263
+    },
+    {
+      "path": "trial_73/runtime_trace_lock.json",
+      "sha256": "f4c6ef441207b61aee4a5932b81ddf79c72c96a70390ff2fecd6748557ff243e",
+      "size": 354
+    },
+    {
+      "path": "trial_73/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_73/stdout.log",
+      "sha256": "5f3a83ab4e838f8b70de95dd2eeb783f798054a2df7cfa0f85e7133f92fbf772",
+      "size": 355
+    },
+    {
+      "path": "trial_73/trial_summary.json",
+      "sha256": "4e5365f16f69d08d9afdbf469eb489c77c40aa92142d1c6a770a388c3c08daa5",
+      "size": 337087
+    },
+    {
+      "path": "trial_74/bounded_recovery_process_metadata.json",
+      "sha256": "196120a15747b117ce78acec26cb0fecff445d1b13d82f2db04b92d219d9bb08",
+      "size": 1791
+    },
+    {
+      "path": "trial_74/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_74/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_74/recovery_cycle_observations.jsonl",
+      "sha256": "a69027bb8bc8c2e787476ccaf5e4e1ba0821af8eb51210a4034ad280a73ed1e2",
+      "size": 3116
+    },
+    {
+      "path": "trial_74/recovery_generation.jsonl",
+      "sha256": "83b208aea90686de7562514f1f473cead7dd6641bed5dcd3042eb176635b08a9",
+      "size": 1962
+    },
+    {
+      "path": "trial_74/runtime_trace.jsonl",
+      "sha256": "b0d6e4c5c46090a1c993b0f7f9e3a1cb0d124d7f419291030b1ab69e9e3497b7",
+      "size": 6631
+    },
+    {
+      "path": "trial_74/runtime_trace_lock.json",
+      "sha256": "bb33bee2ff3a50ef213fa1a57772f7a0d05af0b4b40caa850aec0e0d6d812150",
+      "size": 352
+    },
+    {
+      "path": "trial_74/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_74/stdout.log",
+      "sha256": "8b4f87b99ff4dbcc6240e7cc50928fdfef11c06aa002f230959f635b5f90c27a",
+      "size": 355
+    },
+    {
+      "path": "trial_74/trial_summary.json",
+      "sha256": "b37aa7956e110a45caa19fa5965dae7c4bc4bfed5d4620ea72cd15cbdc2000a5",
+      "size": 5905
+    },
+    {
+      "path": "trial_76/bounded_recovery_process_metadata.json",
+      "sha256": "bc46a0d5d8be4385ed909b06664e55d30e075ee03b7b9c68ad0c585e59da8cd7",
+      "size": 1791
+    },
+    {
+      "path": "trial_76/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_76/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_76/recovery_cycle_observations.jsonl",
+      "sha256": "08ee953efb691f523aae8c7a0c95eeb09f1598705f8f0421e280233415df7f98",
+      "size": 932955
+    },
+    {
+      "path": "trial_76/recovery_generation.jsonl",
+      "sha256": "638151bf611f824cf0454af9fa73ae638276afb56e76bd760cf775b178b2ce6d",
+      "size": 25526
+    },
+    {
+      "path": "trial_76/runtime_trace.jsonl",
+      "sha256": "2ae97a7d090d976a136c01e412be0f2f06c4f106bbd8254b9239c2760e40be26",
+      "size": 1984858
+    },
+    {
+      "path": "trial_76/runtime_trace_lock.json",
+      "sha256": "d1a8fb714f4e447d5f4c1c36f37e4659ce85465cd3012553ed06025c19d4fcb6",
+      "size": 354
+    },
+    {
+      "path": "trial_76/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_76/stdout.log",
+      "sha256": "c75bfd4654f8cfac339ddd6cb8d0da044f7918099f61efe1f97e9940193f6150",
+      "size": 355
+    },
+    {
+      "path": "trial_76/trial_summary.json",
+      "sha256": "ff29e48268a14435f30adb5f468725dd5d96322143a3f6e0773277137482af7f",
+      "size": 620823
+    },
+    {
+      "path": "trial_77/bounded_recovery_process_metadata.json",
+      "sha256": "6c84a8761cbf8cd02e75552a425ef4b78fa5f969f5702436966826b7f723252e",
+      "size": 1791
+    },
+    {
+      "path": "trial_77/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_77/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_77/recovery_cycle_observations.jsonl",
+      "sha256": "6f0302534d80d402b3238a5910f5a9cba25a01b56a320b5d6d91e0822d22a0c8",
+      "size": 934451
+    },
+    {
+      "path": "trial_77/recovery_generation.jsonl",
+      "sha256": "dbe9a3d8cc9d76955013bc31ae5ba43f1512aae212c2e9f58c4320660fc09635",
+      "size": 25530
+    },
+    {
+      "path": "trial_77/runtime_trace.jsonl",
+      "sha256": "52df544e6f24399e77c5aaf53b90b35ccad9b062163f8768af40495c4593ebe7",
+      "size": 1961510
+    },
+    {
+      "path": "trial_77/runtime_trace_lock.json",
+      "sha256": "8f16fde9eff1fbfc0dd1788d1384fc8d9473af2054320a55e20b1da12f4d2897",
+      "size": 354
+    },
+    {
+      "path": "trial_77/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_77/stdout.log",
+      "sha256": "6da8aa56dd95d433e6a9246c8226fad81b0f51637f96dc5604dab6d582faf1d9",
+      "size": 355
+    },
+    {
+      "path": "trial_77/trial_summary.json",
+      "sha256": "22fff415c4f52c2ed1f3a07cb5d918b474ed7891075e5f19953fdd36c70f0784",
+      "size": 635154
+    },
+    {
+      "path": "trial_78/bounded_recovery_process_metadata.json",
+      "sha256": "c644ef439f69a0096ca8762f564df1c0d16ee61e6ee91b0657b96dae5fdc1300",
+      "size": 1791
+    },
+    {
+      "path": "trial_78/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_78/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_78/recovery_cycle_observations.jsonl",
+      "sha256": "3a698cee1f20802e410996098ac2f4b300e5abc68def1700df6468944f61b074",
+      "size": 795505
+    },
+    {
+      "path": "trial_78/recovery_generation.jsonl",
+      "sha256": "93d74f2cfab6c8777ccb2de7314ae1c22a6cf10186f1379daae544826316e099",
+      "size": 37315
+    },
+    {
+      "path": "trial_78/runtime_trace.jsonl",
+      "sha256": "d094e1fd16dd5e71ea5d7638b1f555d75e52dc672b6be3a36815a358f0bbeabc",
+      "size": 1638773
+    },
+    {
+      "path": "trial_78/runtime_trace_lock.json",
+      "sha256": "a4d91b1ddb7da84c8d86c2ee127cc9ec5db1b5089db42abfb9c1252b26e3fba8",
+      "size": 354
+    },
+    {
+      "path": "trial_78/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_78/stdout.log",
+      "sha256": "93b3ab11f9c07ef5dd051080fe6a7f29f4d6aa948662a62163964d53a36d9db3",
+      "size": 355
+    },
+    {
+      "path": "trial_78/trial_summary.json",
+      "sha256": "0efc6d1f513e0762ca4a4669bcf583c07e864c0b71ebf81cd91f701cef470feb",
+      "size": 540986
+    },
+    {
+      "path": "trial_79/bounded_recovery_process_metadata.json",
+      "sha256": "827a031eab56fa2535acaee586975b154a3f6a26ffffc7159bf3c74446f9b3ad",
+      "size": 1791
+    },
+    {
+      "path": "trial_79/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_79/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_79/recovery_cycle_observations.jsonl",
+      "sha256": "cb262f199a0c178ca37467e3fc51c4d34c67edabe1e1518b453913a66fd87f4f",
+      "size": 723663
+    },
+    {
+      "path": "trial_79/recovery_generation.jsonl",
+      "sha256": "60b10392784d290631a34e2f05c0fc9f13b735f57dc8c0588493c1a782df67e7",
+      "size": 23568
+    },
+    {
+      "path": "trial_79/runtime_trace.jsonl",
+      "sha256": "041747acb5b8fa2202daa471f09d773c81846cf99d6d6ebc793a5a219363d8a8",
+      "size": 1504508
+    },
+    {
+      "path": "trial_79/runtime_trace_lock.json",
+      "sha256": "2e0c8afaca9de3cbf2bccba9561efce38e470bde8a4fa7848068512941b00b59",
+      "size": 354
+    },
+    {
+      "path": "trial_79/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_79/stdout.log",
+      "sha256": "bbcf6b01d1fed562daff78d5fa247a133301ee73d9201dc4170e0a80947ca830",
+      "size": 355
+    },
+    {
+      "path": "trial_79/trial_summary.json",
+      "sha256": "2c8d7c937f95bbb773284a6094e7a8f30d41d41d78c11019648f74d0d6db931b",
+      "size": 488627
+    },
+    {
+      "path": "trial_8/bounded_recovery_process_metadata.json",
+      "sha256": "6299636e27fc99538946db15ce0b03fe5bedeea5c460403a6dc0a3e3f183210f",
+      "size": 1790
+    },
+    {
+      "path": "trial_8/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_8/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_8/recovery_cycle_observations.jsonl",
+      "sha256": "b28d2114cfb2192c7513594c9631b8e5840dcc4bfb2db68c88dc3f93a2e70da5",
+      "size": 918541
+    },
+    {
+      "path": "trial_8/recovery_generation.jsonl",
+      "sha256": "ace4d1f5ccb57611e44a6ccf11595d7a86d9c38fa8ef6ccf194c77f89f698d76",
+      "size": 9815
+    },
+    {
+      "path": "trial_8/runtime_trace.jsonl",
+      "sha256": "e6e604e0ce22627f30a8fc9f4e4d9df57c69a7849b8501e7d6771ba55641898c",
+      "size": 1971870
+    },
+    {
+      "path": "trial_8/runtime_trace_lock.json",
+      "sha256": "f563e9212e9a855bc26f8921dd7427ac46c82995e5a74b3638507fbde36b22a0",
+      "size": 354
+    },
+    {
+      "path": "trial_8/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_8/stdout.log",
+      "sha256": "7eadd6cf999d4b52567b622458890d3bc46cf3796ff7c5de98df2f67bb22647f",
+      "size": 354
+    },
+    {
+      "path": "trial_8/trial_summary.json",
+      "sha256": "a0be926b9f0358dc0ef58b396fc9fa3528afc7b9f841395563e4468faae17561",
+      "size": 607255
+    },
+    {
+      "path": "trial_80/bounded_recovery_process_metadata.json",
+      "sha256": "c24ce93bfe7d5a1f3d004716c727ab7c3c59a542d7e8e5c0f60678f0bdf3e16d",
+      "size": 1791
+    },
+    {
+      "path": "trial_80/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_80/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_80/recovery_cycle_observations.jsonl",
+      "sha256": "d24cf40bc8d01018ddf321e5d0e0f1ca868b87be7c387512d1230de47acdf4bf",
+      "size": 929147
+    },
+    {
+      "path": "trial_80/recovery_generation.jsonl",
+      "sha256": "545ada32ae1796ee74208a5a81e6615d5f4e3e22680fca38c0f87aaf25f5575d",
+      "size": 19639
+    },
+    {
+      "path": "trial_80/runtime_trace.jsonl",
+      "sha256": "bf4cea19d78b569001266dc5f38c6513f957990e0438846098e8b301f0eea9f3",
+      "size": 1970135
+    },
+    {
+      "path": "trial_80/runtime_trace_lock.json",
+      "sha256": "6bbfcd9020c97da121e3b9b0f15d7345ebfd4c78a1c37051bbe900c8730d1e72",
+      "size": 354
+    },
+    {
+      "path": "trial_80/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_80/stdout.log",
+      "sha256": "1014ad2deeb949427f434dbabfea05fa4bfdb425b1507bcccc3b68bbf95037c8",
+      "size": 355
+    },
+    {
+      "path": "trial_80/trial_summary.json",
+      "sha256": "d7cf3dea7d2a6d80c3fae1812904946d06918a51488aadb59d52963beabc0c7a",
+      "size": 622747
+    },
+    {
+      "path": "trial_81/bounded_recovery_process_metadata.json",
+      "sha256": "b443c9226479bf487a158039dd693b75fec1da1c2a8b3ffabed075dab3a58e95",
+      "size": 1791
+    },
+    {
+      "path": "trial_81/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_81/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_81/recovery_cycle_observations.jsonl",
+      "sha256": "f0fef73a7f1938dbf0bf06bbfaa94ddfe970abb306e765a026e3365719498f75",
+      "size": 923878
+    },
+    {
+      "path": "trial_81/recovery_generation.jsonl",
+      "sha256": "677f899b8deed005aa7ec465dd23f50ec665e3406f10d0f1935a8e45b41d71cf",
+      "size": 15706
+    },
+    {
+      "path": "trial_81/runtime_trace.jsonl",
+      "sha256": "ab81683e0c7bbc7dc166956952f798461adfa3ce95bd63a82948a5fe8d4358c5",
+      "size": 1978454
+    },
+    {
+      "path": "trial_81/runtime_trace_lock.json",
+      "sha256": "4cd19ae423179f16e39ae130989f9afd055826447d998af6a18c18b8064043b8",
+      "size": 354
+    },
+    {
+      "path": "trial_81/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_81/stdout.log",
+      "sha256": "0384f6680ecf95f7d4447f7e41b2ccaf6b4114fcd4b76d7ee43b8a128ca476f9",
+      "size": 355
+    },
+    {
+      "path": "trial_81/trial_summary.json",
+      "sha256": "8db9fdf2b09296ebc68fc15a2e1b3ee58c2c135cb94a0aa22459e91c71a2237d",
+      "size": 612029
+    },
+    {
+      "path": "trial_82/bounded_recovery_process_metadata.json",
+      "sha256": "3c59b99d1506ae8310221026bda1a2f2fb5c9f6aa259b8c5774cc09d4c8be7e0",
+      "size": 1791
+    },
+    {
+      "path": "trial_82/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_82/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_82/recovery_cycle_observations.jsonl",
+      "sha256": "0a41a78a427b4bd8260b919c83b0cc79b33d75f94df9d508449823a26b96232a",
+      "size": 508390
+    },
+    {
+      "path": "trial_82/recovery_generation.jsonl",
+      "sha256": "6c00ddbb8d7f6a59137d57d6260617f8d3f935f8900715c49edce6415279bdac",
+      "size": 15711
+    },
+    {
+      "path": "trial_82/runtime_trace.jsonl",
+      "sha256": "c285c2796c797293bdbca0f2a822a3c86990a8c0368b09773b162d6b43bf25bb",
+      "size": 1069058
+    },
+    {
+      "path": "trial_82/runtime_trace_lock.json",
+      "sha256": "0f8705eeaaa2cf0d90eb68294231497b6b11b0ec5c6eff25949e9402cff50d96",
+      "size": 354
+    },
+    {
+      "path": "trial_82/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_82/stdout.log",
+      "sha256": "165ee6af1a2336a144632f0a7db37ba79ff78d90cb96f8dc7b2748d2ec90c703",
+      "size": 355
+    },
+    {
+      "path": "trial_82/trial_summary.json",
+      "sha256": "a55b6ddbc0f83a62b7bf00d20d8816bf93ea26867c12bce7bbfd5c2f1d3f0862",
+      "size": 345249
+    },
+    {
+      "path": "trial_83/bounded_recovery_process_metadata.json",
+      "sha256": "f0377676bf56c289e4066adb78f0aef624f815ae70eb05dbb86b408132003141",
+      "size": 1791
+    },
+    {
+      "path": "trial_83/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_83/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_83/recovery_cycle_observations.jsonl",
+      "sha256": "c0046c11e609692ad69f54aa44364d4d5f28167647a002347009681c77d0b1f5",
+      "size": 916311
+    },
+    {
+      "path": "trial_83/recovery_generation.jsonl",
+      "sha256": "16263990182604de63fbaa94950063848576b15b708c077773e0ad1f6cc0ce38",
+      "size": 9815
+    },
+    {
+      "path": "trial_83/runtime_trace.jsonl",
+      "sha256": "15e0ccba8acafb5e985a72c193b7fe96caad45c39e8027f85f421897a53c3602",
+      "size": 1980084
+    },
+    {
+      "path": "trial_83/runtime_trace_lock.json",
+      "sha256": "815f90f6a3f95c1fd188114ce17388631d8f48589d9f067736355ca99daae1b2",
+      "size": 354
+    },
+    {
+      "path": "trial_83/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_83/stdout.log",
+      "sha256": "3399e9caac9d90fc9488a36fd48d51b1903b21b1a595aa283fb01702d8127ec0",
+      "size": 355
+    },
+    {
+      "path": "trial_83/trial_summary.json",
+      "sha256": "156d1737460dec9632ba5b917adaaaebd9d067c36766037e6712001b26f01c65",
+      "size": 602797
+    },
+    {
+      "path": "trial_84/bounded_recovery_process_metadata.json",
+      "sha256": "7e211844c3f5dc9af21e4ea18d0b20cd2367045bb6bdc0a90e76dbf6c5c822cf",
+      "size": 1791
+    },
+    {
+      "path": "trial_84/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_84/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_84/recovery_cycle_observations.jsonl",
+      "sha256": "b08dceec38bee07b43afc0adab46d109003deb9eaadad57add16dfebc8a9484e",
+      "size": 742926
+    },
+    {
+      "path": "trial_84/recovery_generation.jsonl",
+      "sha256": "064c43b1b2908b2b895d60eab78e75311d58f6fbd43a33b2e2a8d7c267444331",
+      "size": 29458
+    },
+    {
+      "path": "trial_84/runtime_trace.jsonl",
+      "sha256": "6c14a2c2feb8f26c049faff8de290b829c947aa31a2f8e2f641198ae576b132c",
+      "size": 1555314
+    },
+    {
+      "path": "trial_84/runtime_trace_lock.json",
+      "sha256": "092ecb521ee093e171fcd52c33675905ac0071d95f773263af4543b1b29e71b8",
+      "size": 354
+    },
+    {
+      "path": "trial_84/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_84/stdout.log",
+      "sha256": "c112314364d4ef26c9de94cda565bf1674a193898d7e17e65ce1b77960cdcb4b",
+      "size": 355
+    },
+    {
+      "path": "trial_84/trial_summary.json",
+      "sha256": "33bbd31132fa7634d0b301ee77b6b4bfefb0ac3e5784176816d3f052b14f9f8b",
+      "size": 504338
+    },
+    {
+      "path": "trial_86/bounded_recovery_process_metadata.json",
+      "sha256": "bc48c643982ce1c953081df9c7685e38b97f058ee3fb22c1835eaa4f77ff9872",
+      "size": 1791
+    },
+    {
+      "path": "trial_86/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_86/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_86/recovery_cycle_observations.jsonl",
+      "sha256": "d1970e1c59850c9875fa2b9f0df97a2aba5379919ceb172eba6f3ba106021ee0",
+      "size": 962727
+    },
+    {
+      "path": "trial_86/recovery_generation.jsonl",
+      "sha256": "d6339658227f0f3ee238ba2748afd6813009672e1d6da72833e81a64389cdba3",
+      "size": 54992
+    },
+    {
+      "path": "trial_86/runtime_trace.jsonl",
+      "sha256": "80768e50a5b61afb8bab00f4d8d115f3bce1e81eced3eabc3f4428e877dc21d8",
+      "size": 1996795
+    },
+    {
+      "path": "trial_86/runtime_trace_lock.json",
+      "sha256": "37c59d8e9b281f8c085f692f3250c9f874fbcc970eea7ecfbd6379012d00e4b8",
+      "size": 354
+    },
+    {
+      "path": "trial_86/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_86/stdout.log",
+      "sha256": "88e05c814e2612368a9abb9774397251fbe2f89e4b6586ddf62bd1d60aec0f73",
+      "size": 355
+    },
+    {
+      "path": "trial_86/trial_summary.json",
+      "sha256": "cd0c4d21238cdeb65848bcbe15fbdd45119e8cc8702deb25e82b09ec3eb0da62",
+      "size": 653803
+    },
+    {
+      "path": "trial_87/bounded_recovery_process_metadata.json",
+      "sha256": "f57896b76b770f523e0d506f0462953a4aed481b11430ba381fc09dc5b1f21ef",
+      "size": 1791
+    },
+    {
+      "path": "trial_87/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_87/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_87/recovery_cycle_observations.jsonl",
+      "sha256": "b62e6f6ad5df0f6a15f70759566c73884875ec125943d87211e263089b609abf",
+      "size": 920602
+    },
+    {
+      "path": "trial_87/recovery_generation.jsonl",
+      "sha256": "01ff60392e65a72589410f899bf13f86cba5c57518a87962167ea2e512db80c5",
+      "size": 13746
+    },
+    {
+      "path": "trial_87/runtime_trace.jsonl",
+      "sha256": "9217bc75cee82273e169aa365eef30d04c3106382b672adcabf0cc7719e1e61f",
+      "size": 1981995
+    },
+    {
+      "path": "trial_87/runtime_trace_lock.json",
+      "sha256": "ed2126b90e94bd77205f083a03222d18e0736fd60d79e4322669d98845a365a3",
+      "size": 354
+    },
+    {
+      "path": "trial_87/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_87/stdout.log",
+      "sha256": "2401eaf20bdf4904a4a0ff0b880369ce7b6689f57392f0a7ba438ba181fa084a",
+      "size": 355
+    },
+    {
+      "path": "trial_87/trial_summary.json",
+      "sha256": "6e1bc0e49173431668fb7fe7144843c6ab08aef36144a095ceb303a3e40857f8",
+      "size": 606241
+    },
+    {
+      "path": "trial_88/bounded_recovery_process_metadata.json",
+      "sha256": "759bd3bb9f441f2dc524e6a9284c1e8bab6780157701de96e30ef832f4996116",
+      "size": 1791
+    },
+    {
+      "path": "trial_88/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_88/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_88/recovery_cycle_observations.jsonl",
+      "sha256": "4656c9a0184fde72fb5985dfe0a626dfa1a8425a234fe2cc1d3ccfeff53be71b",
+      "size": 919789
+    },
+    {
+      "path": "trial_88/recovery_generation.jsonl",
+      "sha256": "7eb1f647e633f1734bf5bc311314dc10cb3b78949a842d9e9b82b70c7b91fce5",
+      "size": 13748
+    },
+    {
+      "path": "trial_88/runtime_trace.jsonl",
+      "sha256": "1b776253ea7893361dd978585b6cd273307a6731d8b7820313f48b6aaa7395ae",
+      "size": 1981347
+    },
+    {
+      "path": "trial_88/runtime_trace_lock.json",
+      "sha256": "92b6a9ca8b0ab51c1c366a114672479f4404a18484c825ab1c8303979a3c292a",
+      "size": 354
+    },
+    {
+      "path": "trial_88/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_88/stdout.log",
+      "sha256": "a41ee461cd48dc23cf8d8369e8100400cdabb1f233258c07b5d7aa7182f79ccf",
+      "size": 355
+    },
+    {
+      "path": "trial_88/trial_summary.json",
+      "sha256": "c59acc1f0fdf3133e012f2edbba106623b78f1a0700a22bc5801bbda09c4d125",
+      "size": 606877
+    },
+    {
+      "path": "trial_89/bounded_recovery_process_metadata.json",
+      "sha256": "b22369af34db73c80c02e0b3660cf6c00951821930bc4f95d16fda28cd8f9e8c",
+      "size": 1791
+    },
+    {
+      "path": "trial_89/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_89/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_89/recovery_cycle_observations.jsonl",
+      "sha256": "c7f339d31009e50660a02e455053ebf1bea8ed4e1c44cc327dbae7147ae0b808",
+      "size": 926985
+    },
+    {
+      "path": "trial_89/recovery_generation.jsonl",
+      "sha256": "9ebf70b1b6b1e4e8ca899f62bfda75facf6e15a64c7fe57aad4405a3e3048be0",
+      "size": 21604
+    },
+    {
+      "path": "trial_89/runtime_trace.jsonl",
+      "sha256": "7ad82d42bba9cf05679ae92c80cd19f8ba170cbfb251813bb0b6d12a4e5f9f20",
+      "size": 1990554
+    },
+    {
+      "path": "trial_89/runtime_trace_lock.json",
+      "sha256": "0ca48fe815c231869a671cfeddb3593332dbe801ab120fd98450d8e9c7a585b0",
+      "size": 354
+    },
+    {
+      "path": "trial_89/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_89/stdout.log",
+      "sha256": "eae138cd2bb7909c53d342595cf9ddf712c84c765e3ba24fb38891bb169a9bee",
+      "size": 355
+    },
+    {
+      "path": "trial_89/trial_summary.json",
+      "sha256": "611bc08af5c3bc28cee35b1d71354af9fe144a8cb62d13ea4ea12a583beacbd0",
+      "size": 611863
+    },
+    {
+      "path": "trial_9/bounded_recovery_process_metadata.json",
+      "sha256": "7770846b78b0b1fe8b43fee283e58d2a7d6ff8d589765177b2d8afba0ada915a",
+      "size": 1790
+    },
+    {
+      "path": "trial_9/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_9/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_9/recovery_cycle_observations.jsonl",
+      "sha256": "a6e374381cf85fb42bb89f88a26f9dbd43aee6f6cb8b14c655a1198f8598039e",
+      "size": 924595
+    },
+    {
+      "path": "trial_9/recovery_generation.jsonl",
+      "sha256": "012575e95491eeed17c307319b64b4d6fab0fe520b19709183c7b17ba3e1cd4a",
+      "size": 17667
+    },
+    {
+      "path": "trial_9/runtime_trace.jsonl",
+      "sha256": "830801408c1c34a33cc79ef71dea4e5d8283370bd58da0699bb2fd9cfe00ad22",
+      "size": 1982985
+    },
+    {
+      "path": "trial_9/runtime_trace_lock.json",
+      "sha256": "619a039f4715e3f08066ce8860ed36cd88d905c10562d1d2bdcbefa4d0e4fdd9",
+      "size": 354
+    },
+    {
+      "path": "trial_9/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_9/stdout.log",
+      "sha256": "35086f685e322ca3bf5e82701a78ce1942c04553b8b96718c65d40816224394b",
+      "size": 354
+    },
+    {
+      "path": "trial_9/trial_summary.json",
+      "sha256": "c98db6582f9e866f2a3488225d3e0134ac9297f67f782e407aa150a3b5479834",
+      "size": 611122
+    },
+    {
+      "path": "trial_91/bounded_recovery_process_metadata.json",
+      "sha256": "7a37cd2d082674b85af9d603a1836207c1ec81aaee4978f21e688ac5c9021a46",
+      "size": 1791
+    },
+    {
+      "path": "trial_91/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_91/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_91/recovery_cycle_observations.jsonl",
+      "sha256": "6ae79b086a0c792c03c728edc0e59a9dda535d731c7b935023c27c8eb66f5dbe",
+      "size": 906256
+    },
+    {
+      "path": "trial_91/runtime_trace.jsonl",
+      "sha256": "8550463c5255526d775a4d98a19f99705a2a74a2aceda14fef039a3d57b2f722",
+      "size": 1980219
+    },
+    {
+      "path": "trial_91/runtime_trace_lock.json",
+      "sha256": "3243cfaa3effa5c2abb95401df4a85d72bb824602f85dbbb31632f2875193a9d",
+      "size": 354
+    },
+    {
+      "path": "trial_91/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_91/stdout.log",
+      "sha256": "1024f6d2296d07396fd0c4d55dbe11d5e49a9699c0d21f8a3dc1b8338539b8a8",
+      "size": 355
+    },
+    {
+      "path": "trial_91/trial_summary.json",
+      "sha256": "b204958d794de9ee3b769f4f9a8162d8ad874a84087da87b23db95b4c1a0f903",
+      "size": 588480
+    },
+    {
+      "path": "trial_92/bounded_recovery_process_metadata.json",
+      "sha256": "b5849c4d38eb655860fbb3dc17542736bbcaf32319f12b33e89a9440bd43dfaa",
+      "size": 1791
+    },
+    {
+      "path": "trial_92/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_92/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_92/recovery_cycle_observations.jsonl",
+      "sha256": "42a4d296048d46908c4f0118aad855c6599e4d5ee1840d45d84e3dd2f5f6878a",
+      "size": 925081
+    },
+    {
+      "path": "trial_92/recovery_generation.jsonl",
+      "sha256": "fa18b6e254d8f2255326a5e28ae0a3ff7182c5c8285907a71eaa83f0ca942cc6",
+      "size": 17676
+    },
+    {
+      "path": "trial_92/runtime_trace.jsonl",
+      "sha256": "4eefd5c6964f701660ad63a419174d679d2542824998971fc62accbcbe4cd6e3",
+      "size": 1981588
+    },
+    {
+      "path": "trial_92/runtime_trace_lock.json",
+      "sha256": "0359064f72d81231ab26825c28032054225dca8829c06d8f5ba44333d07a11c6",
+      "size": 354
+    },
+    {
+      "path": "trial_92/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_92/stdout.log",
+      "sha256": "2b3325c25e3d2df1177c6b0fb3af05daf5bb614eddb2b4f74eff3ba6e1425405",
+      "size": 355
+    },
+    {
+      "path": "trial_92/trial_summary.json",
+      "sha256": "47fc4490d2d81ee43a877dddd4595b11e0d1b97fea807922e6cf9afaa64b5aaa",
+      "size": 612536
+    },
+    {
+      "path": "trial_93/bounded_recovery_process_metadata.json",
+      "sha256": "5e44efd1f09c95d939c75da83f421071c4052e4563668ff7c53bd8d2d4e0e42a",
+      "size": 1791
+    },
+    {
+      "path": "trial_93/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_93/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_93/recovery_cycle_observations.jsonl",
+      "sha256": "777e582fa4eb3e087823f31e433a447cd1e042e361ff23ca66b84836ba71aea2",
+      "size": 920743
+    },
+    {
+      "path": "trial_93/recovery_generation.jsonl",
+      "sha256": "06630462ca0474e822d7e8be09e66e2481b3e3a48f5f9831f17f7668c47d6efa",
+      "size": 13748
+    },
+    {
+      "path": "trial_93/runtime_trace.jsonl",
+      "sha256": "d9490d757ad6410e0adac7a0e05487ec48d7c85562de0ed90487e1bd6de3bd19",
+      "size": 1987320
+    },
+    {
+      "path": "trial_93/runtime_trace_lock.json",
+      "sha256": "9e6731287c78b99b3de96f66b8823ed348c7fb6404fd03a906d4fbbdef50e71f",
+      "size": 354
+    },
+    {
+      "path": "trial_93/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_93/stdout.log",
+      "sha256": "d529cb44b03178def34061cbf63f51b0f05aef30851b5c7f0618719709f6d574",
+      "size": 355
+    },
+    {
+      "path": "trial_93/trial_summary.json",
+      "sha256": "2b3b754e3f3289d295bedaccc86f3df32f4c47a5a164a5880c2655437ab85e40",
+      "size": 602976
+    },
+    {
+      "path": "trial_94/bounded_recovery_process_metadata.json",
+      "sha256": "823f1523063966bd300189be8a6a33f3b74cefe8abcf239185b017ab3717753f",
+      "size": 1791
+    },
+    {
+      "path": "trial_94/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_94/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_94/recovery_cycle_observations.jsonl",
+      "sha256": "5297b8a7a17345c5b4de56070a71a65847cdacd2eef60ab19bf69a08d1397f83",
+      "size": 936558
+    },
+    {
+      "path": "trial_94/recovery_generation.jsonl",
+      "sha256": "01e0276df8ba1ddc3d126148a56f0055dea6c5c1cfe4ccce151d9f8c9fd0db63",
+      "size": 29460
+    },
+    {
+      "path": "trial_94/runtime_trace.jsonl",
+      "sha256": "6056b4828c5012d5cf7f3140c698cdd0551c5baeb15ca8fab1627ae0bce0e14d",
+      "size": 1976008
+    },
+    {
+      "path": "trial_94/runtime_trace_lock.json",
+      "sha256": "d0656ddb9367ae3665570fbc459503e551b18a1a20515a1d1b9b2ca552deb582",
+      "size": 354
+    },
+    {
+      "path": "trial_94/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_94/stdout.log",
+      "sha256": "522324a2e70b35900fd6fb5089ee4596906565215d5e12eadf77de3e6ca20eb8",
+      "size": 355
+    },
+    {
+      "path": "trial_94/trial_summary.json",
+      "sha256": "7e117bf6c422559a95eb7d187af3fc4e12d27d75ec31013d5811ee3dfba77f5d",
+      "size": 631557
+    },
+    {
+      "path": "trial_96/bounded_recovery_process_metadata.json",
+      "sha256": "9077e192743122bb1fd8a03c3dcec44b7b2e773aa603936a35e84e2e6b915917",
+      "size": 1791
+    },
+    {
+      "path": "trial_96/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_96/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_96/recovery_cycle_observations.jsonl",
+      "sha256": "2d4df72b2985ddbb0f5b460c0036a4c9b9ad0b716cc8b1b7ac952a03331b3d8d",
+      "size": 914526
+    },
+    {
+      "path": "trial_96/recovery_generation.jsonl",
+      "sha256": "bfe6d118087150973df2f2fec263806d5f071940f575669e66d2516cf8d6c669",
+      "size": 5892
+    },
+    {
+      "path": "trial_96/runtime_trace.jsonl",
+      "sha256": "a2dd6f803892ec56d5dd8132a8d272d2934c427ee66b60463948eed7dfa06454",
+      "size": 1971359
+    },
+    {
+      "path": "trial_96/runtime_trace_lock.json",
+      "sha256": "1d2a28e5469d7a499df528a2686bf584c68d01a3b2a4a624706208c736e5b2e2",
+      "size": 354
+    },
+    {
+      "path": "trial_96/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_96/stdout.log",
+      "sha256": "0c41e1a9b9e917ddb6345654aeb3a156a288c805dad9792eab95889a4a61ffb6",
+      "size": 355
+    },
+    {
+      "path": "trial_96/trial_summary.json",
+      "sha256": "9040f92ba78990d607d027262944b99376998c620cea6ae31489d55e2a0c0694",
+      "size": 602243
+    },
+    {
+      "path": "trial_97/bounded_recovery_process_metadata.json",
+      "sha256": "4eeaba85c59f3bb64c4a7a779c3736b3b57050cd5819ff51cfdf98cb6fb86140",
+      "size": 1791
+    },
+    {
+      "path": "trial_97/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_97/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_97/recovery_cycle_observations.jsonl",
+      "sha256": "4ab52b5579751d286496dc050936be5f022c488a3ab9c2395b117f4cf931f0bd",
+      "size": 858354
+    },
+    {
+      "path": "trial_97/recovery_generation.jsonl",
+      "sha256": "72857e203138e0410ab380adef47ea4fe233ee0be81d147b268ebe8078679548",
+      "size": 11782
+    },
+    {
+      "path": "trial_97/runtime_trace.jsonl",
+      "sha256": "57da848dbe3d0fe611fdc08f3f3077b0d5de6892909befbd7ba11eedf0ddcde9",
+      "size": 1841598
+    },
+    {
+      "path": "trial_97/runtime_trace_lock.json",
+      "sha256": "49d0187e2356bc2c80a41c12655eaeeb0c18eac29e5af8229e111178a178cbe0",
+      "size": 354
+    },
+    {
+      "path": "trial_97/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_97/stdout.log",
+      "sha256": "e283ed99a0ac2e6cf367bd9a44d54077bc8d623fea27d21dadde384dc700700e",
+      "size": 355
+    },
+    {
+      "path": "trial_97/trial_summary.json",
+      "sha256": "d9d749ea66479203d97d738074b6441005a392bac925fdb7f36ef55676d502da",
+      "size": 567257
+    },
+    {
+      "path": "trial_98/bounded_recovery_process_metadata.json",
+      "sha256": "0ba29de1a139fa5810b496b9faa1bc8897414da7c3a5b8afccbed5110f00d540",
+      "size": 1791
+    },
+    {
+      "path": "trial_98/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_98/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_98/recovery_cycle_observations.jsonl",
+      "sha256": "d1efc48eccb72eca0ea326208b521cb5ec3fd82820771a13c47752005310882d",
+      "size": 685300
+    },
+    {
+      "path": "trial_98/recovery_generation.jsonl",
+      "sha256": "b371c67d98e1c5c4f89d696ffdb27847be85c10aeaffea87fb60c2c1d1014a30",
+      "size": 3928
+    },
+    {
+      "path": "trial_98/runtime_trace.jsonl",
+      "sha256": "d40305b81aeb24af75863b15e01dd7060c82a224fa3a4bb42dc23184c750ca08",
+      "size": 1484563
+    },
+    {
+      "path": "trial_98/runtime_trace_lock.json",
+      "sha256": "af255834d926e957a069b1e54585725a133f862b44eb3eb2a308647c32dfa76e",
+      "size": 354
+    },
+    {
+      "path": "trial_98/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_98/stdout.log",
+      "sha256": "d18406dce0cd5675bd65634fdd167d2e8f7ee429812a7383d8b5c6a7fac1489b",
+      "size": 355
+    },
+    {
+      "path": "trial_98/trial_summary.json",
+      "sha256": "bb3af70030234264dcfe79b14adeb9db40cef242fd7665cec829d9d8526f910e",
+      "size": 447934
+    },
+    {
+      "path": "trial_99/bounded_recovery_process_metadata.json",
+      "sha256": "12c55238facde60bc4ea641ae89ca38dcb546b9999eee712c8b114965a86c934",
+      "size": 1791
+    },
+    {
+      "path": "trial_99/gpu_released.txt",
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74",
+      "size": 5
+    },
+    {
+      "path": "trial_99/process_exit_code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    {
+      "path": "trial_99/recovery_cycle_observations.jsonl",
+      "sha256": "97653e86bc156c530cc4dae8886aac8c0155a23752d7c9247e203f59eefca305",
+      "size": 921032
+    },
+    {
+      "path": "trial_99/recovery_generation.jsonl",
+      "sha256": "b934ced6e3666ceba9fa7ee47bf33c5c01a3cb95d278d58e9f5566145db87d76",
+      "size": 9820
+    },
+    {
+      "path": "trial_99/runtime_trace.jsonl",
+      "sha256": "57fb3f4551c474ca1c1e0ceacee48109e2fa174f4dbf39ab4cd44ff076dd22d9",
+      "size": 1969561
+    },
+    {
+      "path": "trial_99/runtime_trace_lock.json",
+      "sha256": "0a70624a3b41c1448769b7943c531673ebb043d4f06dc7a821f90ddf679ff135",
+      "size": 354
+    },
+    {
+      "path": "trial_99/stderr.log",
+      "sha256": "3739162c12a570f6bbab05a3bc0cc5c81ea515f34c5302ddd98d91699980aeec",
+      "size": 263
+    },
+    {
+      "path": "trial_99/stdout.log",
+      "sha256": "f238759e63eb4c1cbb53065aaf5b5559e597df571f798b67b7929f7028dbc1cc",
+      "size": 355
+    },
+    {
+      "path": "trial_99/trial_summary.json",
+      "sha256": "c7fcdcee778e9d5f110a28a8c498898c26850014f21fac8c0d38d0c970357b7d",
+      "size": 608758
+    }
+  ],
+  "schema": "POSTCOLLECTION_RAW_EVIDENCE_MANIFEST_V1",
+  "semantic_root_sha256": "ec333a5379fc0794de3bc59d6e11187412e08dfca97348206e6fddb53ce2d017"
+}

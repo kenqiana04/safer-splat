@@ -1,0 +1,83 @@
+{
+  "check_count": 14,
+  "checks": [
+    {
+      "detail": "expected a06c088 collection provenance at validation checkout",
+      "name": "collection_head",
+      "pass": true
+    },
+    {
+      "detail": "BATCH_COMPLETE exact order and count",
+      "name": "batch_complete",
+      "pass": true
+    },
+    {
+      "detail": "BATCH_STOP absent",
+      "name": "no_batch_stop",
+      "pass": true
+    },
+    {
+      "detail": "Retry3 launch marker source HEAD",
+      "name": "launch_marker",
+      "pass": true
+    },
+    {
+      "detail": "85 completion markers",
+      "name": "trial_complete_locks",
+      "pass": true
+    },
+    {
+      "detail": "85 runtime_trace_lock files",
+      "name": "runtime_trace_locks",
+      "pass": true
+    },
+    {
+      "detail": "canonical frozen reference authority",
+      "name": "reference_audit",
+      "pass": true
+    },
+    {
+      "detail": "read-only dry parse 85/85",
+      "name": "dry_parse",
+      "pass": true
+    },
+    {
+      "detail": "30/30 supported hard-zero gates plus formal safety oracle slot",
+      "name": "hard_zero_coverage",
+      "pass": true
+    },
+    {
+      "detail": "scientific contract unchanged except reference implementation binding",
+      "name": "scientific_equivalence",
+      "pass": true
+    },
+    {
+      "detail": "only task-local analyzer/evidence files changed",
+      "name": "task_scope",
+      "pass": true
+    },
+    {
+      "detail": "protected runtime diff zero",
+      "name": "protected_runtime_diff",
+      "pass": true
+    },
+    {
+      "detail": "formal outputs absent before official analysis",
+      "name": "outputs_absent_preanalysis",
+      "pass": true
+    },
+    {
+      "detail": "GPU1 has no task-owned compute process",
+      "name": "gpu1_available",
+      "pass": true
+    }
+  ],
+  "collection_head": "a06c08820eff5bd1f2a2fae7569f7d87bed9013c",
+  "gpu_run_count": 0,
+  "phase": "preanalysis",
+  "reference_rerun_count": 0,
+  "retry3_root": "/disk1/zlab/v3_repair_records/post_repair_v3_bounded_recovery_paired_validation_v1_retry3_20260920",
+  "schema": "POSTCOLLECTION_ANALYSIS_REPAIR_VALIDATION_V1",
+  "status": "PASS_POSTCOLLECTION_ANALYSIS_REPAIR_PREVALIDATION",
+  "trial_rerun_count": 0
+}
