@@ -1,0 +1,80 @@
+{
+  "deadline_runtime": {
+    "authority": "observation only; Supervisor retains deadline policy authority",
+    "computational_semantics": [
+      "elapsed = max(0, clock.now() - start)",
+      "remaining = latest_safe_commit - elapsed",
+      "remaining <= 0 -> EXPIRED",
+      "0 < remaining <= warning_reserve -> WARNING",
+      "remaining > warning_reserve -> OPEN"
+    ],
+    "lines": "63-74",
+    "path": "reproduction/runtime/active_runtime_assurance_v2/deadline_runtime.py"
+  },
+  "implementation": {
+    "arbitrate_lines": "594-629",
+    "branch_guard_lines": "260-288",
+    "observed_gap": "ARB_NAV requires OPEN; ARB_BACKUP_GUARD requires valid retained backup; ARB_BOUNDARY excludes a certified candidate, leaving certified Recovery with WARNING/EXPIRED and no valid backup without an explicit applicable boundary row.",
+    "path": "reproduction/runtime/active_runtime_assurance_v2/supervisor.py",
+    "resolve_lines": "318-335"
+  },
+  "schema": "CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_SOURCE_SEMANTICS_AUDIT_V1",
+  "semantic_conclusion": {
+    "classification": "D",
+    "confidence": "HIGH",
+    "expired": "intentional fail-close when no valid retained backup exists; with a valid backup, backup guard remains authoritative",
+    "warning": "intentional fail-close when no valid retained backup exists; with a valid backup, backup guard remains authoritative"
+  },
+  "status": "PASS_SOURCE_SEMANTICS_SUFFICIENT",
+  "tests": {
+    "backup_arbitration": "tests/test_deadline_aware_backup_arbitration_row.py",
+    "deadline": "tests/test_public_cycle_deadline.py",
+    "observed_contract": [
+      "WARNING/EXPIRED plus valid retained backup resolves ARB_BACKUP_GUARD",
+      "OPEN plus certified candidate resolves ARB_NAV",
+      "no valid backup does not match the backup guard",
+      "warning/expired are not automatic scientific failure"
+    ]
+  },
+  "transition_table": {
+    "path": "reproduction/specification/method_logic_closure_v2/STATE_TRANSITION_TABLE_V2.csv",
+    "rows": {
+      "ARB_BACKUP": {
+        "backup": "VALID",
+        "candidate": "NONE",
+        "deadline": "ANY",
+        "destination": "BACKUP_EXECUTION"
+      },
+      "ARB_BACKUP_GUARD": {
+        "backup": "VALID",
+        "candidate": "PRIMARY_OR_ALTERNATIVE",
+        "deadline": "GUARD_OR_EXPIRED",
+        "destination": "BACKUP_EXECUTION"
+      },
+      "ARB_BOUNDARY": {
+        "backup": "NONE",
+        "candidate": "NONE",
+        "deadline": "ANY",
+        "destination": "ASSURANCE_BOUNDARY"
+      },
+      "ARB_EVAL_TERMINAL": {
+        "backup": "NONE",
+        "candidate": "NONE",
+        "deadline": "OPEN",
+        "destination": "TERMINAL_EVALUATION"
+      },
+      "ARB_NAV": {
+        "backup": "ANY",
+        "candidate": "PRIMARY_OR_ALTERNATIVE",
+        "deadline": "OPEN",
+        "destination": "COMMIT"
+      },
+      "ARB_TERMINAL": {
+        "backup": "NONE",
+        "candidate": "NONE",
+        "deadline": "ANY",
+        "destination": "COMMIT"
+      }
+    }
+  }
+}

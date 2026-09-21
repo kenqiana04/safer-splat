@@ -1,0 +1,20 @@
+{
+  "case_definition": "WARNING/EXPIRED cases are intentionally boundary when no valid retained backup exists; the missing explicit boundary coverage row is a routing-completeness gap, not permission to select Recovery late.",
+  "confidence": "HIGH",
+  "expired": {
+    "automatic_failure": false,
+    "meaning": "deadline-inadmissible navigation; preserve fail-close boundary",
+    "observed": "7 final certified-Recovery boundary rows had EXPIRED and no valid retained backup",
+    "valid_backup_behavior": "existing ARB_BACKUP_GUARD remains selected"
+  },
+  "overall_case": "D",
+  "root_cause": "MISSING_EXPLICIT_CERTIFIED_RECOVERY_NONOPEN_BOUNDARY_ROUTE",
+  "schema": "CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_SEMANTICS_CLASSIFICATION_V1",
+  "scientific_claim_boundary": "No collision, progress, efficacy, NI, or deployment claim is changed.",
+  "warning": {
+    "automatic_failure": false,
+    "meaning": "deadline-inadmissible navigation; preserve fail-close boundary",
+    "observed": "27 final certified-Recovery boundary rows had WARNING and no valid retained backup",
+    "valid_backup_behavior": "existing ARB_BACKUP_GUARD remains selected"
+  }
+}
