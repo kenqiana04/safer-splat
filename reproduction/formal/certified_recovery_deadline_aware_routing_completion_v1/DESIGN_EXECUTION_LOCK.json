@@ -1,0 +1,32 @@
+{
+  "base_head": "e61798341f956f9960b5e5607ba6fdccc5547c36",
+  "boundary_counts": {
+    "expired": 7,
+    "total": 34,
+    "warning": 27
+  },
+  "classification": "D",
+  "confidence": "HIGH",
+  "design_branch": "design-certified-recovery-deadline-aware-routing-completion-v1",
+  "execution_scope": "DESIGN_ONLY_NO_IMPLEMENTATION_NO_GPU_NO_FORMAL85_RERUN",
+  "formal85_rerun_count": 0,
+  "gpu_run_count": 0,
+  "origin": "git@github-kenqiana04-safer-splat-current:kenqiana04/safer-splat.git",
+  "proposed_rule_ids": [
+    "ARB_RECOVERY_WARNING_BOUNDARY",
+    "ARB_RECOVERY_EXPIRED_BOUNDARY"
+  ],
+  "rollout_count": 0,
+  "runtime_implementation_performed": false,
+  "runtime_source_diff": 0,
+  "schema": "CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_COMPLETION_DESIGN_EXECUTION_LOCK_V1",
+  "scientific_result_mutation": false,
+  "source_artifact_hashes": {
+    "boundary_truth_table": "2c3944a92dd33be99338598b2bd8c18a0c3a74e07de7310517f01276bb66e568",
+    "deadline_backup_test": "80b091efbd876b994d312527c713299bf1d7f109dda82e837f00b818970d53ad",
+    "deadline_runtime": "429f70619d4f25dc2d06e4569476f9e53d3e4d50764bc51b0ad2a3cb2c6674d5",
+    "deadline_test": "6fad2c63e600ab9e7f61dc8e0b48e9e97f12a20ef24c3b7663512956152f2a80",
+    "supervisor": "40b46a5b39c0f583c884058752cefe76098f0727e141c981a77de8c5fb163c66",
+    "transition_table": "7ba6f15b29bf362519d64c7bdb5096c3ef0eabd6dff34980099a2a2ac8621596"
+  }
+}

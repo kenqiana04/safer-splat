@@ -1,0 +1,17 @@
+{
+  "classification": "D",
+  "confidence": "HIGH",
+  "expired_boundary_rows": 7,
+  "new_rule_ids": [
+    "ARB_RECOVERY_WARNING_BOUNDARY",
+    "ARB_RECOVERY_EXPIRED_BOUNDARY"
+  ],
+  "only_next_task": "IMPLEMENT_CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_COMPLETION_V1",
+  "plant_outcome_changes": 0,
+  "protected_runtime_diff": 0,
+  "recovery_action_reroutes": 0,
+  "schema": "CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_COMPLETION_DOWNSTREAM_HANDOFF_V1",
+  "scientific_result_mutation": false,
+  "status": "READY_FOR_IMPLEMENTATION",
+  "warning_boundary_rows": 27
+}

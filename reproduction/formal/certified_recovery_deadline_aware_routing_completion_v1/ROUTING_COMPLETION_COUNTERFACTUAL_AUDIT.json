@@ -1,0 +1,21 @@
+{
+  "expired_boundary_rows": 7,
+  "higher_priority_preemption": 0,
+  "interpretation": "The counterfactual replaces 34 unresolved lookups with explicit no-action boundary rule IDs; it does not create a Recovery action or alter any plant/scientific outcome.",
+  "open_cases_changed": 0,
+  "plant_outcome_changes": 0,
+  "primary_or_alternative_cases_changed": 0,
+  "proposed_rule_counts": {
+    "ARB_RECOVERY_EXPIRED_BOUNDARY": 7,
+    "ARB_RECOVERY_WARNING_BOUNDARY": 27
+  },
+  "recovery_action_reroutes": 0,
+  "rule_ambiguity": 0,
+  "schema": "CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_COMPLETION_COUNTERFACTUAL_V1",
+  "scientific_result_mutation": false,
+  "selected_count_changes": 0,
+  "source_rows": 34,
+  "unknown_or_fail_admitted": 0,
+  "valid_backup_cases_changed": 0,
+  "warning_boundary_rows": 27
+}

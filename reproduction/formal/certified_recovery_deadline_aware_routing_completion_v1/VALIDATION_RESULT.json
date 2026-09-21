@@ -1,0 +1,232 @@
+{
+  "check_count": 45,
+  "checks": [
+    {
+      "detail": "required task-local artifact",
+      "name": "file:README.md",
+      "pass": true
+    },
+    {
+      "detail": "required task-local artifact",
+      "name": "file:DESIGN_INPUT_LOCK.json",
+      "pass": true
+    },
+    {
+      "detail": "required task-local artifact",
+      "name": "file:SOURCE_SEMANTICS_AUDIT.json",
+      "pass": true
+    },
+    {
+      "detail": "required task-local artifact",
+      "name": "file:DEADLINE_ROUTING_SEMANTICS_CLASSIFICATION.json",
+      "pass": true
+    },
+    {
+      "detail": "required task-local artifact",
+      "name": "file:ROUTING_COMPLETION_TRUTH_TABLE.md",
+      "pass": true
+    },
+    {
+      "detail": "required task-local artifact",
+      "name": "file:CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_COMPLETION_V1_SPEC.md",
+      "pass": true
+    },
+    {
+      "detail": "required task-local artifact",
+      "name": "file:ROUTING_COMPLETION_IMPLEMENTATION_PLAN.md",
+      "pass": true
+    },
+    {
+      "detail": "required task-local artifact",
+      "name": "file:ROUTING_COMPLETION_COUNTERFACTUAL_AUDIT.json",
+      "pass": true
+    },
+    {
+      "detail": "required task-local artifact",
+      "name": "file:ROUTING_COMPLETION_PROOF_OBLIGATIONS.md",
+      "pass": true
+    },
+    {
+      "detail": "required task-local artifact",
+      "name": "file:DESIGN_EXECUTION_LOCK.json",
+      "pass": true
+    },
+    {
+      "detail": "required task-local artifact",
+      "name": "file:FINAL_DECISION.json",
+      "pass": true
+    },
+    {
+      "detail": "required task-local artifact",
+      "name": "file:downstream_handoff.json",
+      "pass": true
+    },
+    {
+      "detail": "required task-local artifact",
+      "name": "file:DRAFT_PR_BODY.md",
+      "pass": true
+    },
+    {
+      "detail": "required task-local artifact",
+      "name": "file:report/REPORT_DESIGN_CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_COMPLETION_V1.md",
+      "pass": true
+    },
+    {
+      "detail": "required task-local artifact",
+      "name": "file:validate_certified_recovery_deadline_aware_routing_completion_v1.py",
+      "pass": true
+    },
+    {
+      "detail": "base reachable",
+      "name": "base_is_ancestor",
+      "pass": true
+    },
+    {
+      "detail": "design-certified-recovery-deadline-aware-routing-completion-v1",
+      "name": "branch",
+      "pass": true
+    },
+    {
+      "detail": "git@github-kenqiana04-safer-splat-current:kenqiana04/safer-splat.git",
+      "name": "origin",
+      "pass": true
+    },
+    {
+      "detail": "D",
+      "name": "classification_case",
+      "pass": true
+    },
+    {
+      "detail": "HIGH",
+      "name": "classification_confidence",
+      "pass": true
+    },
+    {
+      "detail": "27 final certified-Recovery boundary rows had WARNING and no valid retained backup",
+      "name": "warning_count",
+      "pass": true
+    },
+    {
+      "detail": "7 final certified-Recovery boundary rows had EXPIRED and no valid retained backup",
+      "name": "expired_count",
+      "pass": true
+    },
+    {
+      "detail": "PASS_SOURCE_SEMANTICS_SUFFICIENT",
+      "name": "source_status",
+      "pass": true
+    },
+    {
+      "detail": "27",
+      "name": "counter_warning",
+      "pass": true
+    },
+    {
+      "detail": "7",
+      "name": "counter_expired",
+      "pass": true
+    },
+    {
+      "detail": "0",
+      "name": "counter_no_recovery_action",
+      "pass": true
+    },
+    {
+      "detail": "0",
+      "name": "counter_no_plant_change",
+      "pass": true
+    },
+    {
+      "detail": "0",
+      "name": "counter_no_unknown_fail",
+      "pass": true
+    },
+    {
+      "detail": "0",
+      "name": "counter_no_ambiguity",
+      "pass": true
+    },
+    {
+      "detail": "e61798341f956f9960b5e5607ba6fdccc5547c36",
+      "name": "input_base",
+      "pass": true
+    },
+    {
+      "detail": "False",
+      "name": "execution_scope",
+      "pass": true
+    },
+    {
+      "detail": "/disk1/zlab/tmp/formal85_retry3_routing_completion_diagnosis_v1/BOUNDARY_FINAL_CYCLE_TRUTH_TABLE.json",
+      "name": "source_hash:boundary_truth_table",
+      "pass": true
+    },
+    {
+      "detail": "/disk1/zlab/v3_repair_worktrees/safer-splat-design-certified-recovery-deadline-aware-routing-completion-v1/reproduction/runtime/active_runtime_assurance_v2/tests/test_deadline_aware_backup_arbitration_row.py",
+      "name": "source_hash:deadline_backup_test",
+      "pass": true
+    },
+    {
+      "detail": "/disk1/zlab/v3_repair_worktrees/safer-splat-design-certified-recovery-deadline-aware-routing-completion-v1/reproduction/runtime/active_runtime_assurance_v2/deadline_runtime.py",
+      "name": "source_hash:deadline_runtime",
+      "pass": true
+    },
+    {
+      "detail": "/disk1/zlab/v3_repair_worktrees/safer-splat-design-certified-recovery-deadline-aware-routing-completion-v1/reproduction/runtime/active_runtime_assurance_v2/tests/test_public_cycle_deadline.py",
+      "name": "source_hash:deadline_test",
+      "pass": true
+    },
+    {
+      "detail": "/disk1/zlab/v3_repair_worktrees/safer-splat-design-certified-recovery-deadline-aware-routing-completion-v1/reproduction/runtime/active_runtime_assurance_v2/supervisor.py",
+      "name": "source_hash:supervisor",
+      "pass": true
+    },
+    {
+      "detail": "/disk1/zlab/v3_repair_worktrees/safer-splat-design-certified-recovery-deadline-aware-routing-completion-v1/reproduction/specification/method_logic_closure_v2/STATE_TRANSITION_TABLE_V2.csv",
+      "name": "source_hash:transition_table",
+      "pass": true
+    },
+    {
+      "detail": "reproduction/formal/certified_recovery_deadline_aware_routing_completion_v1/CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_COMPLETION_V1_SPEC.md\nreproduction/formal/certified_recovery_deadline_aware_routing_completion_v1/DEADLINE_ROUTING_SEMANTICS_CLASSIFICATION.json\nreproduction/formal/certified_recovery_deadline_aware_routing_completion_v1/DESIGN_EXECUTION_LOCK.json\nreproduction/formal/certified_recovery_deadline_aware_routing_completion_v1/DESIGN_INPUT_LOCK.json\nreproduction/formal/certified_recovery_deadline_aware_routing_completion_v1/DRAFT_PR_BODY.md\nreproduction/formal/certified_recovery_deadline_aware_routing_completion_v1/FINAL_DECISION.json\nreproduction/formal/certified_recovery_deadline_aware_routing_completion_v1/README.md\nreproduction/formal/certified_recovery_deadline_aware_routing_completion_v1/ROUTING_COMPLETION_COUNTERFACTUAL_AUDIT.json\nreproduction/formal/certified_recovery_deadline_aware_routing_completion_v1/ROUTING_COMPLETION_IMPLEMENTATION_PLAN.md\nreproduction/formal/certified_recovery_deadline_aware_routing_completion_v1/ROUTING_COMPLETION_PROOF_OBLIGATIONS.md\nreproduction/formal/certified_recovery_deadline_aware_routing_completion_v1/ROUTING_COMPLETION_TRUTH_TABLE.md\nreproduction/formal/certified_recovery_deadline_aware_routing_completion_v1/SOURCE_SEMANTICS_AUDIT.json\nreproduction/formal/certified_recovery_deadline_aware_routing_completion_v1/VALIDATION_RESULT.json\nreproduction/formal/certified_recovery_deadline_aware_routing_completion_v1/downstream_handoff.json\nreproduction/formal/certified_recovery_deadline_aware_routing_completion_v1/report/REPORT_DESIGN_CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_COMPLETION_V1.md\nreproduction/formal/certified_recovery_deadline_aware_routing_completion_v1/validate_certified_recovery_deadline_aware_routing_completion_v1.py",
+      "name": "changed_paths_task_local",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "protected_diff_zero",
+      "pass": true
+    },
+    {
+      "detail": "scope markers",
+      "name": "scope_tokens:README.md",
+      "pass": true
+    },
+    {
+      "detail": "scope markers",
+      "name": "scope_tokens:CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_COMPLETION_V1_SPEC.md",
+      "pass": true
+    },
+    {
+      "detail": "scope markers",
+      "name": "scope_tokens:ROUTING_COMPLETION_PROOF_OBLIGATIONS.md",
+      "pass": true
+    },
+    {
+      "detail": "0",
+      "name": "gpu_runs_zero",
+      "pass": true
+    },
+    {
+      "detail": "0",
+      "name": "formal85_reruns_zero",
+      "pass": true
+    },
+    {
+      "detail": "False",
+      "name": "scientific_mutation_false",
+      "pass": true
+    }
+  ],
+  "schema": "CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_COMPLETION_VALIDATION_V1",
+  "status": "PASS_CERTIFIED_RECOVERY_DEADLINE_AWARE_ROUTING_COMPLETION_DESIGN_VALIDATION"
+}
