@@ -5,6 +5,8 @@ import unittest
 
 from reproduction.runtime.active_runtime_assurance_v2.bounded_recovery import SOURCE as RECOVERY_SOURCE
 from reproduction.runtime.active_runtime_assurance_v2.runtime_types import (
+    ActionRole,
+    CandidateIdentity,
     CandidateRole,
     CertificateStatus,
     DeadlineObservation,
@@ -55,13 +57,13 @@ class CertifiedRecoveryDeadlineBoundaryTests(unittest.TestCase):
     def route(self, context: RuntimeRoutingContext):
         return self.table.resolve(PublicCycleEvent.ARBITRATE, context)
 
-    def test_t1_warning_certified_recovery_without_backup_is_explicit_boundary(self):
+    def test_t1_warning_certified_recovery_without_backup_selects_navigation(self):
         decision = self.route(self.context(DeadlineStatus.WARNING))
         self.assertEqual(decision.status, RouteResolutionStatus.RESOLVED)
-        self.assertEqual(decision.rule_id, "ARB_RECOVERY_WARNING_BOUNDARY")
-        self.assertEqual(decision.destination_phase, RuntimePhase.ASSURANCE_BOUNDARY)
-        self.assertFalse(decision.commit_allowed)
-        self.assertEqual(decision.action_authority, "NONE")
+        self.assertEqual(decision.rule_id, "ARB_RECOVERY_WARNING_CERTIFIED_NAVIGATION")
+        self.assertEqual(decision.destination_phase, RuntimePhase.COMMIT)
+        self.assertTrue(decision.commit_allowed)
+        self.assertEqual(decision.action_authority, "CERTIFIED_NAVIGATION")
         self.assertFalse(decision.may_start_new_search)
 
     def test_t2_expired_certified_recovery_without_backup_is_explicit_boundary(self):
@@ -89,7 +91,8 @@ class CertifiedRecoveryDeadlineBoundaryTests(unittest.TestCase):
 
     def test_t6_recovery_l2_unknown_cannot_match_new_boundary(self):
         decision = self.route(self.context(DeadlineStatus.WARNING, certified=False))
-        self.assertNotIn(decision.rule_id, {"ARB_RECOVERY_WARNING_BOUNDARY", "ARB_RECOVERY_EXPIRED_BOUNDARY"})
+        self.assertEqual(decision.rule_id, "ARB_RECOVERY_WARNING_BOUNDARY")
+        self.assertFalse(decision.commit_allowed)
 
     def test_t7_recovery_l3_fail_cannot_match_new_boundary(self):
         decision = self.route(self.context(DeadlineStatus.EXPIRED, certified=False))
@@ -97,7 +100,8 @@ class CertifiedRecoveryDeadlineBoundaryTests(unittest.TestCase):
 
     def test_t8_identity_or_bundle_gap_cannot_match_new_boundary(self):
         decision = self.route(self.context(DeadlineStatus.WARNING, certified=False))
-        self.assertNotEqual(decision.rule_id, "ARB_RECOVERY_WARNING_BOUNDARY")
+        self.assertEqual(decision.rule_id, "ARB_RECOVERY_WARNING_BOUNDARY")
+        self.assertFalse(decision.commit_allowed)
 
     def test_t9_primary_or_alternative_source_cannot_match_recovery_rows(self):
         decision = self.route(self.context(DeadlineStatus.WARNING, source="PRIMARY_NATIVE_CBF_QP"))
@@ -106,7 +110,7 @@ class CertifiedRecoveryDeadlineBoundaryTests(unittest.TestCase):
     def test_t10_warning_and_expired_rows_are_mutually_exclusive(self):
         warning = self.route(self.context(DeadlineStatus.WARNING))
         expired = self.route(self.context(DeadlineStatus.EXPIRED))
-        self.assertEqual(warning.rule_id, "ARB_RECOVERY_WARNING_BOUNDARY")
+        self.assertEqual(warning.rule_id, "ARB_RECOVERY_WARNING_CERTIFIED_NAVIGATION")
         self.assertEqual(expired.rule_id, "ARB_RECOVERY_EXPIRED_BOUNDARY")
         self.assertNotEqual(warning.rule_id, expired.rule_id)
 
@@ -126,34 +130,56 @@ class CertifiedRecoveryDeadlineBoundaryTests(unittest.TestCase):
         l3 = L3Result(CertificateStatus.PASS, "L3_PASS", candidate.identity, bundle, "l3:fixture")
         return candidate, l3
 
-    def test_t11_supervisor_boundary_decision_has_no_executable_action(self):
+    def test_t11_supervisor_warning_selects_recovery_and_expired_stays_boundary(self):
         candidate, l3 = self._certified_recovery()
-        for status, rule in ((DeadlineStatus.WARNING, "ARB_RECOVERY_WARNING_BOUNDARY"), (DeadlineStatus.EXPIRED, "ARB_RECOVERY_EXPIRED_BOUNDARY")):
-            decision = self.system["supervisor"].arbitrate(
-                self.snapshot,
-                candidate,
-                l3,
-                None,
-                False,
-                None,
-                DeadlineObservation(status, "FINAL_COMMIT_GUARD", 0.9, 0.1, "deadline:test"),
-            )
-            self.assertEqual(decision.rule_id, rule)
-            self.assertIsNone(decision.selected_action)
-            self.assertFalse(decision.allows_commit)
-
-    def test_t12_boundary_decision_cannot_trigger_plant_commit(self):
-        candidate, l3 = self._certified_recovery()
-        decision = self.system["supervisor"].arbitrate(
-            self.snapshot,
-            candidate,
-            l3,
-            None,
-            False,
-            None,
+        warning = self.system["supervisor"].arbitrate(
+            self.snapshot, candidate, l3, None, False, None,
             DeadlineObservation(DeadlineStatus.WARNING, "FINAL_COMMIT_GUARD", 0.9, 0.1, "deadline:test"),
         )
-        self.assertEqual(decision.rule_id, "ARB_RECOVERY_WARNING_BOUNDARY")
+        self.assertEqual(warning.rule_id, "ARB_RECOVERY_WARNING_CERTIFIED_NAVIGATION")
+        self.assertEqual(warning.selected_action.role, ActionRole.ALTERNATIVE_NAVIGATION)
+        self.assertTrue(warning.allows_commit)
+        expired = self.system["supervisor"].arbitrate(
+            self.snapshot, candidate, l3, None, False, None,
+            DeadlineObservation(DeadlineStatus.EXPIRED, "FINAL_COMMIT_GUARD", 0.9, 0.1, "deadline:test"),
+        )
+        self.assertEqual(expired.rule_id, "ARB_RECOVERY_EXPIRED_BOUNDARY")
+        self.assertIsNone(expired.selected_action)
+        self.assertFalse(expired.allows_commit)
+
+    def test_t12_warning_action_preserves_candidate_and_authority_identity(self):
+        candidate, l3 = self._certified_recovery()
+        decision = self.system["supervisor"].arbitrate(
+            self.snapshot, candidate, l3, None, False, None,
+            DeadlineObservation(DeadlineStatus.WARNING, "FINAL_COMMIT_GUARD", 0.9, 0.1, "deadline:test"),
+        )
+        self.assertEqual(decision.rule_id, "ARB_RECOVERY_WARNING_CERTIFIED_NAVIGATION")
+        self.assertEqual(decision.selected_action.role, ActionRole.ALTERNATIVE_NAVIGATION)
+        self.assertEqual(decision.selected_action.source_identity, candidate.identity.value)
+        self.assertEqual(decision.prepared_bundle.identity, l3.prepared_bundle.identity)
+        self.assertIn(self.system["registry"].geometry.identity.value, decision.selected_action.authority_references)
+        self.assertIn(self.system["registry"].actuator.identity.value, decision.selected_action.authority_references)
+        self.assertIn(l3.evidence_identity, decision.selected_action.authority_references)
+
+    def test_t13_identity_mismatch_blocks_warning_recovery_action(self):
+        candidate, l3 = self._certified_recovery()
+        mismatched_l3 = dataclasses.replace(l3, candidate_identity=CandidateIdentity("candidate:mismatch"))
+        decision = self.system["supervisor"].arbitrate(
+            self.snapshot, candidate, mismatched_l3, None, False, None,
+            DeadlineObservation(DeadlineStatus.WARNING, "FINAL_COMMIT_GUARD", 0.9, 0.1, "deadline:test"),
+        )
+        self.assertEqual(decision.rule_id, "ARB_BOUNDARY")
+        self.assertIsNone(decision.selected_action)
+        self.assertFalse(decision.allows_commit)
+
+    def test_t14_l3_fail_blocks_warning_recovery_action(self):
+        candidate, l3 = self._certified_recovery()
+        failed_l3 = dataclasses.replace(l3, status=CertificateStatus.FAIL, reason="L3_FAIL")
+        decision = self.system["supervisor"].arbitrate(
+            self.snapshot, candidate, failed_l3, None, False, None,
+            DeadlineObservation(DeadlineStatus.WARNING, "FINAL_COMMIT_GUARD", 0.9, 0.1, "deadline:test"),
+        )
+        self.assertEqual(decision.rule_id, "ARB_BOUNDARY")
         self.assertIsNone(decision.selected_action)
         self.assertFalse(decision.allows_commit)
 
