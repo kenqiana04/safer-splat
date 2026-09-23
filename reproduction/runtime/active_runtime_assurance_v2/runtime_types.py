@@ -853,6 +853,7 @@ class ActiveCycleContext:
     recovery_scan_id: str | None = None
     recovery_attempts: tuple[tuple[tuple[str, Any], ...], ...] = ()
     recovery_selected_candidate_id: str | None = None
+    certified_candidate: Candidate | None = None
 
 
 @dataclass(frozen=True)

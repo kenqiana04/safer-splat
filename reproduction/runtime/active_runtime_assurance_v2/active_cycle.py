@@ -647,6 +647,7 @@ class ActiveCycleCoordinator:
                     context = replace(context, primary_l3=l3_result)
                 if l3_result.status == CertificateStatus.PASS:
                     certified_candidate = candidate
+                    context = replace(context, certified_candidate=candidate)
                 scope = (self.supervisor.classify_recovery_l3_fail(l3_result.reason)
                          if l3_result.status == CertificateStatus.FAIL else
                          self.supervisor.classify_reason_scope("L3", l3_result.reason)
@@ -778,6 +779,7 @@ class ActiveCycleCoordinator:
                 l2_result = None
                 l3_result = None
                 certified_candidate = None
+                context = replace(context, certified_candidate=None)
                 self.l1_runtime.bind_attempt(l1_value, candidate, attempt_index)
                 attempt_index += 1
                 context = replace(context, alternative_attempts=context.alternative_attempts + (candidate.identity,))
@@ -855,13 +857,23 @@ class ActiveCycleCoordinator:
                 context = self._advance(context, PublicCyclePhase.BACKUP_VALIDATION)
                 context = self._advance(context, PublicCyclePhase.ARBITRATION)
                 context, deadline = self._observe(context, "FINAL_COMMIT_GUARD")
+                persisted_certified_candidate = context.certified_candidate
+                arbitration_candidate = (
+                    persisted_certified_candidate
+                    if (
+                        persisted_certified_candidate is not None
+                        and l3_result is not None
+                        and persisted_certified_candidate.identity == l3_result.candidate_identity
+                    )
+                    else None
+                )
                 arbitration_context = self._routing_context(
                     RuntimePhase.ARBITRATION,
                     deadline,
-                    candidate=certified_candidate,
+                    candidate=arbitration_candidate,
                     backup_present=token is not None,
                     backup_valid=backup_valid,
-                    certified_candidate_available=certified_candidate is not None and l3_result is not None,
+                    certified_candidate_available=arbitration_candidate is not None,
                     terminal_evaluated=terminal_result is not None,
                     terminal_evidence_eligible=terminal_result is not None and terminal_result.status == CertificateStatus.PASS and terminal_result.eligible,
                     backup_state=backup_evidence.status.value,
@@ -871,7 +883,16 @@ class ActiveCycleCoordinator:
                     return self._blocked_result(context, snapshot, route.reason)
                 if route.destination_phase == RuntimePhase.TERMINAL_EVALUATION:
                     continue
-                decision, error = self._safe_call(self.supervisor.arbitrate, snapshot, certified_candidate, l3_result if certified_candidate is not None else None, backup_action, backup_valid, terminal_result, deadline)
+                decision, error = self._safe_call(
+                    self.supervisor.arbitrate,
+                    snapshot,
+                    arbitration_candidate,
+                    l3_result if arbitration_candidate is not None else None,
+                    backup_action,
+                    backup_valid,
+                    terminal_result,
+                    deadline,
+                )
                 if error:
                     context, failed_route = self._stage_failure_route(context, RuntimePhase.ARBITRATION, "ARBITRATION", error, arbitration_context, seen)
                     return self._blocked_result(context, snapshot, failed_route.reason)
