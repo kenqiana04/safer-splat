@@ -233,9 +233,14 @@ class TransitionTable:
         return False
 
     @staticmethod
-    def _candidate_matches(requirement: str, context: RuntimeRoutingContext) -> bool:
+    def _candidate_matches(requirement: str, context: RuntimeRoutingContext, rule_id: str | None = None) -> bool:
         if requirement == "NONE":
-            return not context.candidate_available
+            if not context.candidate_available:
+                return True
+            # Keep the frozen ARB_TERMINAL row identity and admit only the
+            # already-certified, deadline-inadmissible Recovery case that
+            # Supervisor.arbitrate already resolves as ARB_TERMINAL.
+            return rule_id == "ARB_TERMINAL" and TransitionTable._inadmissible_recovery_terminal_fact(context)
         if requirement == "PRIMARY":
             return context.candidate_available and context.candidate_role == CandidateRole.PRIMARY
         if requirement == "ALTERNATIVE":
@@ -243,6 +248,18 @@ class TransitionTable:
         if requirement == "PRIMARY_OR_ALTERNATIVE":
             return context.candidate_available and context.candidate_role in {CandidateRole.PRIMARY, CandidateRole.ALTERNATIVE}
         return False
+
+    @staticmethod
+    def _inadmissible_recovery_terminal_fact(context: RuntimeRoutingContext) -> bool:
+        """Narrow terminal-only Recovery exception for the existing row."""
+        return (
+            TransitionTable._certified_candidate_fact(context)
+            and context.candidate_source_type == RECOVERY_SOURCE
+            and context.deadline.status in {DeadlineStatus.WARNING, DeadlineStatus.EXPIRED}
+            and not context.retained_backup_valid
+            and context.terminal_evaluated
+            and TransitionTable._terminal_eligibility_fact(context)
+        )
 
     @staticmethod
     def _alternative_branch_available(context: RuntimeRoutingContext) -> bool:
@@ -300,7 +317,10 @@ class TransitionTable:
         if rule.rule_id == "ARB_BACKUP":
             return (not TransitionTable._certified_candidate_fact(context) or context.candidate_source_type == RECOVERY_SOURCE) and context.retained_backup_valid
         if rule.rule_id == "ARB_TERMINAL":
-            return not TransitionTable._certified_candidate_fact(context) and not context.retained_backup_valid and context.terminal_evaluated and TransitionTable._terminal_eligibility_fact(context)
+            return ((not TransitionTable._certified_candidate_fact(context) or
+                     TransitionTable._inadmissible_recovery_terminal_fact(context)) and
+                    not context.retained_backup_valid and context.terminal_evaluated and
+                    TransitionTable._terminal_eligibility_fact(context))
         if rule.rule_id == "ARB_EVAL_TERMINAL":
             return not TransitionTable._certified_candidate_fact(context) and not context.retained_backup_valid and not context.terminal_evaluated and context.deadline.status == DeadlineStatus.OPEN
         if rule.rule_id == "ARB_BOUNDARY":
@@ -346,7 +366,7 @@ class TransitionTable:
                 and rule.observation_result == event_value
                 and self._deadline_matches(rule.deadline_requirement, context.deadline.status)
                 and self._backup_matches(rule.retained_backup_requirement, context)
-                and self._candidate_matches(rule.candidate_requirement, context)
+                and self._candidate_matches(rule.candidate_requirement, context, rule.rule_id)
                 and self._branch_guard(rule, context)
             ]
         if len(matches) != 1:
@@ -642,6 +662,16 @@ class Supervisor:
                 True,
                 "CERTIFIED_NAVIGATION_NOT_TIMELY_USE_VALID_RETAINED_BACKUP" if guard_handoff else "STILL_VALID_RETAINED_BACKUP",
                 "ARB_BACKUP_GUARD" if guard_handoff else "ARB_BACKUP",
+            )
+        if (certified_candidate is not None and
+                certified_candidate.provenance.source_type == RECOVERY_SOURCE and
+                not (l3_result is not None and
+                     l3_result.status == CertificateStatus.PASS and
+                     l3_result.prepared_bundle is not None and
+                     l3_result.candidate_identity == certified_candidate.identity)):
+            return SupervisorDecision(
+                snapshot.cycle_index, snapshot.identity, None, False,
+                "RECOVERY_CERTIFICATION_IDENTITY_OR_STATUS_INVALID", "ARB_BOUNDARY",
             )
         if (certified_candidate is not None and
                 certified_candidate.provenance.source_type == RECOVERY_SOURCE and
