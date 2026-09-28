@@ -1,0 +1,233 @@
+{
+  "count": 5,
+  "pairs": [
+    {
+      "cycle": {
+        "cycle_index": 252,
+        "phase_history": [
+          "CYCLE_BEGIN",
+          "L1_IMMEDIATE_CERTIFICATION",
+          "PRIMARY_PROPOSAL",
+          "PRIMARY_C0",
+          "PRIMARY_L2",
+          "PRIMARY_L3",
+          "TERMINAL_EVALUATION",
+          "RECOVERY_SOURCE_QUERY",
+          "BACKUP_VALIDATION",
+          "ARBITRATION",
+          "COMMIT",
+          "TRACE_APPEND",
+          "CYCLE_COMPLETE"
+        ],
+        "routing_rule_ids": [
+          "L1_PASS",
+          "P0_PRIMARY",
+          "C0_PASS",
+          "L2_PASS",
+          "REC_L3_PREFETCH",
+          "REC_TERMINAL_PASS",
+          "REC_SCAN_ADMIT_OPEN",
+          "REC_SCAN_EXHAUSTED",
+          "ARB_TERMINAL"
+        ]
+      },
+      "record": {
+        "exhaustion_key": "recovery-key:sha256:9f23c95c84f421500c8fce94b3a8ab8c229008048703f62fc7140448c7b478dc",
+        "fallback_reason": "FALLBACK_TO_CERTIFIED_TERMINAL",
+        "final_disposition": "RECOVERY_SCAN_EXHAUSTED",
+        "plant_commit_authorized": false,
+        "public_cycle_id": 252,
+        "recovery_scan_id": "recovery-scan:sha256:c56af7598fb3b798af97bc4f27c13ccc2195ef1fcd5e2afea40d48dcee6f9199",
+        "supervisor_selected": false
+      },
+      "trial_id": 34
+    },
+    {
+      "cycle": {
+        "cycle_index": 416,
+        "phase_history": [
+          "CYCLE_BEGIN",
+          "L1_IMMEDIATE_CERTIFICATION",
+          "PRIMARY_PROPOSAL",
+          "PRIMARY_C0",
+          "PRIMARY_L2",
+          "PRIMARY_L3",
+          "TERMINAL_EVALUATION",
+          "RECOVERY_SOURCE_QUERY",
+          "RECOVERY_C0",
+          "RECOVERY_L2",
+          "RECOVERY_SOURCE_QUERY",
+          "BACKUP_VALIDATION",
+          "ARBITRATION",
+          "COMMIT",
+          "TRACE_APPEND",
+          "CYCLE_COMPLETE"
+        ],
+        "routing_rule_ids": [
+          "L1_PASS",
+          "P0_PRIMARY",
+          "C0_PASS",
+          "L2_PASS",
+          "REC_L3_PREFETCH",
+          "REC_TERMINAL_PASS",
+          "REC_SCAN_ADMIT_OPEN",
+          "REC_CANDIDATE_AVAILABLE",
+          "REC_C0_PASS",
+          "REC_L2_FAIL",
+          "REC_SCAN_ADMIT_OPEN",
+          "REC_SCAN_EXHAUSTED",
+          "ARB_TERMINAL"
+        ]
+      },
+      "record": {
+        "exhaustion_key": "recovery-key:sha256:810668c90e5628722cacf2180489ef3d964adb375c35715619a59f2e8e01d09d",
+        "fallback_reason": "FALLBACK_TO_CERTIFIED_TERMINAL",
+        "final_disposition": "RECOVERY_SCAN_EXHAUSTED",
+        "plant_commit_authorized": false,
+        "public_cycle_id": 416,
+        "recovery_scan_id": "recovery-scan:sha256:85702a5534799b93853cf9b402b3fb6abd8e637a11a9438bcbc02d7e5ad593ec",
+        "supervisor_selected": false
+      },
+      "trial_id": 44
+    },
+    {
+      "cycle": {
+        "cycle_index": 327,
+        "phase_history": [
+          "CYCLE_BEGIN",
+          "L1_IMMEDIATE_CERTIFICATION",
+          "PRIMARY_PROPOSAL",
+          "PRIMARY_C0",
+          "PRIMARY_L2",
+          "PRIMARY_L3",
+          "TERMINAL_EVALUATION",
+          "RECOVERY_SOURCE_QUERY",
+          "RECOVERY_C0",
+          "RECOVERY_L2",
+          "RECOVERY_SOURCE_QUERY",
+          "BACKUP_VALIDATION",
+          "ARBITRATION",
+          "COMMIT",
+          "TRACE_APPEND",
+          "CYCLE_COMPLETE"
+        ],
+        "routing_rule_ids": [
+          "L1_PASS",
+          "P0_PRIMARY",
+          "C0_PASS",
+          "L2_PASS",
+          "REC_L3_PREFETCH",
+          "REC_TERMINAL_PASS",
+          "REC_SCAN_ADMIT_OPEN",
+          "REC_CANDIDATE_AVAILABLE",
+          "REC_C0_PASS",
+          "REC_L2_FAIL",
+          "REC_SCAN_ADMIT_OPEN",
+          "REC_SCAN_EXHAUSTED",
+          "ARB_TERMINAL"
+        ]
+      },
+      "record": {
+        "exhaustion_key": "recovery-key:sha256:2bb6383a92ffc2f1c752aa8cc0f1460ec9322e49a9a655254786c87d9022bf33",
+        "fallback_reason": "FALLBACK_TO_CERTIFIED_TERMINAL",
+        "final_disposition": "RECOVERY_SCAN_EXHAUSTED",
+        "plant_commit_authorized": false,
+        "public_cycle_id": 327,
+        "recovery_scan_id": "recovery-scan:sha256:938d837ec3c64dc7b7881a028dfc49299209f6a7df5e6f3e1ec63aa5e407e344",
+        "supervisor_selected": false
+      },
+      "trial_id": 52
+    },
+    {
+      "cycle": {
+        "cycle_index": 156,
+        "phase_history": [
+          "CYCLE_BEGIN",
+          "L1_IMMEDIATE_CERTIFICATION",
+          "PRIMARY_PROPOSAL",
+          "PRIMARY_C0",
+          "PRIMARY_L2",
+          "PRIMARY_L3",
+          "TERMINAL_EVALUATION",
+          "RECOVERY_SOURCE_QUERY",
+          "BACKUP_VALIDATION",
+          "ARBITRATION",
+          "COMMIT",
+          "TRACE_APPEND",
+          "CYCLE_COMPLETE"
+        ],
+        "routing_rule_ids": [
+          "L1_PASS",
+          "P0_PRIMARY",
+          "C0_PASS",
+          "L2_PASS",
+          "REC_L3_PREFETCH",
+          "REC_TERMINAL_PASS",
+          "REC_SCAN_ADMIT_OPEN",
+          "REC_SCAN_EXHAUSTED",
+          "ARB_TERMINAL"
+        ]
+      },
+      "record": {
+        "exhaustion_key": "recovery-key:sha256:aed66259f8dd35a5c2a372cc64d11d1d018706634abb58216d1adbf114303278",
+        "fallback_reason": "FALLBACK_TO_CERTIFIED_TERMINAL",
+        "final_disposition": "RECOVERY_SCAN_EXHAUSTED",
+        "plant_commit_authorized": false,
+        "public_cycle_id": 156,
+        "recovery_scan_id": "recovery-scan:sha256:fc9c1d64f2268078a27ba49ef5648589d98acca706c6eaaf3f8e5b9be50ff14b",
+        "supervisor_selected": false
+      },
+      "trial_id": 61
+    },
+    {
+      "cycle": {
+        "cycle_index": 430,
+        "phase_history": [
+          "CYCLE_BEGIN",
+          "L1_IMMEDIATE_CERTIFICATION",
+          "PRIMARY_PROPOSAL",
+          "PRIMARY_C0",
+          "PRIMARY_L2",
+          "PRIMARY_L3",
+          "TERMINAL_EVALUATION",
+          "RECOVERY_SOURCE_QUERY",
+          "RECOVERY_C0",
+          "RECOVERY_L2",
+          "RECOVERY_SOURCE_QUERY",
+          "BACKUP_VALIDATION",
+          "ARBITRATION",
+          "COMMIT",
+          "TRACE_APPEND",
+          "CYCLE_COMPLETE"
+        ],
+        "routing_rule_ids": [
+          "L1_PASS",
+          "P0_PRIMARY",
+          "C0_PASS",
+          "L2_PASS",
+          "REC_L3_PREFETCH",
+          "REC_TERMINAL_PASS",
+          "REC_SCAN_ADMIT_OPEN",
+          "REC_CANDIDATE_AVAILABLE",
+          "REC_C0_PASS",
+          "REC_L2_FAIL",
+          "REC_SCAN_ADMIT_OPEN",
+          "REC_SCAN_EXHAUSTED",
+          "ARB_TERMINAL"
+        ]
+      },
+      "record": {
+        "exhaustion_key": "recovery-key:sha256:0b679a8989ed43864c986ca270ac73f905041e499fe54efdb235bd219313581d",
+        "fallback_reason": "FALLBACK_TO_CERTIFIED_TERMINAL",
+        "final_disposition": "RECOVERY_SCAN_EXHAUSTED",
+        "plant_commit_authorized": false,
+        "public_cycle_id": 430,
+        "recovery_scan_id": "recovery-scan:sha256:7b78d96ab645da5e6f3d631981a6510336f607f98dd97ef23b025e008493fb90",
+        "supervisor_selected": false
+      },
+      "trial_id": 78
+    }
+  ],
+  "schema": "FROZEN_FIVE_EXHAUSTION_MARKER_FIXTURE_V1",
+  "source_sha256": "6722bc5b81b638ecf004221ef98bd995004601a5cecda105cef6f86da77cde5a"
+}

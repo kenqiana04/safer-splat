@@ -11,6 +11,72 @@ HARD_FAIL="FAIL_POST_REPAIR_V3_BOUNDED_RECOVERY_HARD_SAFETY_GATE"
 NI_FAIL="FAIL_POST_REPAIR_V3_BOUNDED_RECOVERY_PROGRESS_NONINFERIORITY_GATE"
 BOTH_FAIL="FAIL_POST_REPAIR_V3_BOUNDED_RECOVERY_HARD_SAFETY_AND_PROGRESS_NI_GATES"
 
+EXHAUSTION_MARKER_KEYS = frozenset({
+    "exhaustion_key", "fallback_reason", "final_disposition", "plant_commit_authorized",
+    "public_cycle_id", "recovery_scan_id", "supervisor_selected",
+})
+EXPECTED_TRACE_SCHEMA = "EVALUATION_TRACE_SCHEMA_V2_CERT_EXEC_IDENTITY_V1"
+
+def is_legitimate_recovery_scan_exhaustion_marker(record, cycle, trace_schema_identity):
+    """Recognize only the exact frozen, non-action-bearing exhaustion summary."""
+    return (
+        isinstance(record, dict)
+        and set(record) == EXHAUSTION_MARKER_KEYS
+        and record.get("final_disposition") == "RECOVERY_SCAN_EXHAUSTED"
+        and record.get("fallback_reason") == "FALLBACK_TO_CERTIFIED_TERMINAL"
+        and bool(record.get("exhaustion_key"))
+        and bool(record.get("recovery_scan_id"))
+        and record.get("public_cycle_id") == cycle.get("cycle_index")
+        and record.get("supervisor_selected") is False
+        and record.get("plant_commit_authorized") is False
+        and "REC_SCAN_EXHAUSTED" in cycle.get("routing_rule_ids", [])
+        and "RECOVERY_SOURCE_QUERY" in cycle.get("phase_history", [])
+        and "ARBITRATION" in cycle.get("phase_history", [])
+        and trace_schema_identity == EXPECTED_TRACE_SCHEMA
+    )
+
+def _has_action_authority(record):
+    return (
+        record.get("supervisor_selected") is True
+        or record.get("plant_commit_authorized") is True
+        or any(record.get(key) not in (None, "") for key in
+               ("action_role", "selected_action_identity", "executed_action_identity", "commit_receipt"))
+    )
+
+def classify_recovery_records(record_pairs, allowed_source, trace_schema_identity):
+    """Separate candidate/action records from the exact exhaustion bookkeeping row."""
+    marker_flags = [
+        is_legitimate_recovery_scan_exhaustion_marker(record, cycle, trace_schema_identity)
+        for record, cycle in record_pairs
+    ]
+    nonmarkers = [record for (record, _), marker in zip(record_pairs, marker_flags) if not marker]
+    unauthorized = sum(record.get("candidate_source") != allowed_source for record in nonmarkers)
+    seen = {}
+    duplicate_count = 0
+    for record in nonmarkers:
+        # Only candidate-bearing rows contribute to the bounded rank cardinality.
+        if not record.get("candidate_id"):
+            continue
+        key = record.get("exhaustion_key")
+        signature = (record.get("candidate_rank"), record.get("canonical_action_identity"))
+        signatures = seen.setdefault(key, set())
+        if signature in signatures:
+            duplicate_count += 1
+        signatures.add(signature)
+    invalid_action_events = sum(
+        _has_action_authority(record) and not record.get("candidate_id")
+        for record in nonmarkers
+    )
+    over_bound_groups = sum(len(signatures) > 6 for signatures in seen.values())
+    return {
+        "legitimate_exhaustion_marker_count": sum(marker_flags),
+        "unauthorized_source_execution_count": unauthorized,
+        "same_key_duplicate_retry_count": duplicate_count,
+        "internal_recovery_loop_count": over_bound_groups + invalid_action_events,
+        "invalid_internal_loop_action_bearing_count": invalid_action_events,
+        "over_bound_candidate_groups": over_bound_groups,
+    }
+
 def lines(path:Path):
     if not path.is_file(): raise RuntimeError("REQUIRED_IMMUTABLE_EVIDENCE_MISSING:"+str(path))
     return [json.loads(x) for x in path.read_text(encoding="utf-8").splitlines() if x]
@@ -84,7 +150,7 @@ def decide(integrity,unknown,active_hard,active_only,lower):
     hard=active_hard==0 and active_only==0; ni=lower>-0.02
     return PASS if hard and ni else HARD_FAIL if not hard and ni else NI_FAIL if hard else BOTH_FAIL
 
-def analyze(write_outputs=True):
+def analyze(write_outputs=True, integrity_only=False):
     os.chdir(REPO); p=read(PROTOCOL); root=Path(p["future_result_root"])
     if not (root/"BATCH_COMPLETE.json").is_file() or (root/"BATCH_STOP.json").exists(): raise RuntimeError("ANALYSIS_REQUIRES_COMPLETE_NO_STOP_BATCH")
     complete=read(root/"BATCH_COMPLETE.json")
@@ -94,7 +160,7 @@ def analyze(write_outputs=True):
     old_path=Path(p["historical_active_authority"]["root"])/"POST_REPAIR_V3_PAIRED_TRIAL_RESULTS.csv"
     with old_path.open(encoding="utf-8",newline="") as f: old={int(r["trial_id"]):r for r in csv.DictReader(f)}
     if set(old)!=set(TRIALS): raise RuntimeError("HISTORICAL_ACTIVE_TRIAL_SET_MISMATCH")
-    states_by_trial={}; rows=[]; boundary_rows=[]; audit={g:{"value":0,"evidence":[]} for g in p["hard_zero_integrity_gates"]}; recovery={k:0 for k in ("eligibility_events","scans","candidate_attempts","l2_enter","l2_result","l2_pass","l2_fail","l2_unknown","l2_exception","l3_result","l3_pass","l3_fail","l3_unknown","l3_exception","selected","plantcommit","rank_resume","exhaustion")}
+    states_by_trial={}; rows=[]; boundary_rows=[]; audit={g:{"value":0,"evidence":[]} for g in p["hard_zero_integrity_gates"]}; recovery={k:0 for k in ("eligibility_events","scans","candidate_attempts","l2_enter","l2_result","l2_pass","l2_fail","l2_unknown","l2_exception","l3_result","l3_pass","l3_fail","l3_unknown","l3_exception","selected","plantcommit","rank_resume","exhaustion")}; exhaustion_marker_count=0; invalid_internal_loop_action_bearing_count=0
     def add(g,v,t,src):
         audit[g]["value"]+=int(v); audit[g]["evidence"].append({"trial_id":t,"source":src,"contribution":int(v)})
     for trial in TRIALS:
@@ -118,15 +184,16 @@ def analyze(write_outputs=True):
             ids=[str(r) for r in x.get("routing_rule_ids",[])]; failures=json.dumps(x.get("stage_failures",[]),sort_keys=True)
             route_bad+=sum(any(k in r for k in ("AMBIGUOUS","MISSING")) for r in ids)+int("ROUTING_RULE_AMBIGUOUS" in failures or "ROUTING_RULE_MISSING" in failures)
         add("routing_ambiguous_count",sum("AMBIGUOUS" in json.dumps(x.get("stage_failures",[])) for x in obs),trial,"routing_rule_ids/stage_failures")
-        allowed=p["recovery"]["source"]; add("unauthorized_source_execution_count",sum(a.get("candidate_source")!=allowed for a in attempts),trial,"recovery_attempts.candidate_source")
+        allowed=p["recovery"]["source"]
+        record_pairs=[(a,x) for x in obs for a in x.get("recovery_attempts",[])]
+        recovery_class=classify_recovery_records(record_pairs,allowed,lock.get("schema_identity"))
+        exhaustion_marker_count+=recovery_class["legitimate_exhaustion_marker_count"]
+        invalid_internal_loop_action_bearing_count+=recovery_class["invalid_internal_loop_action_bearing_count"]
+        add("unauthorized_source_execution_count",recovery_class["unauthorized_source_execution_count"],trial,"non-marker recovery records.candidate_source")
         add("unverified_action_execution_count",sum(bool(x.get("committed")) and (not x.get("selected_action_identity") or x.get("selected_action_identity")!=x.get("executed_action_identity") or facts_by_cycle.get(x.get("cycle_index"),{}).get("canonical_selected_candidate_identity") is None) for x in obs),trial,"observation and trace identities")
         add("stale_backup_execution_count",sum(bool(x.get("committed")) and "BACKUP" in str(x.get("action_role")) and any(k in str(x.get("backup_status")) for k in ("STALE","INVALID","NONE")) for x in obs),trial,"backup_status/action_role")
-        seen={}; dup=loops=0
-        for a in attempts:
-            key=a.get("exhaustion_key"); sig=(a.get("candidate_rank"),a.get("canonical_action_identity")); prev=seen.setdefault(key,set())
-            if sig in prev: dup+=1
-            prev.add(sig)
-        loops=sum(len(v)>6 for v in seen.values()); add("same_key_duplicate_retry_count",dup,trial,"recovery attempt exhaustion_key/rank/action"); add("internal_recovery_loop_count",loops,trial,"recovery attempt bounded rank cardinality")
+        add("same_key_duplicate_retry_count",recovery_class["same_key_duplicate_retry_count"],trial,"candidate-bearing recovery rows exhaustion_key/rank/action")
+        add("internal_recovery_loop_count",recovery_class["internal_recovery_loop_count"],trial,"candidate-bearing bounded rank cardinality plus action-bearing malformed rows")
         add("historical_diagnostic_runtime_authority_count",summary.get("v3_wiring_audit",{}).get("historical_diagnostic_runtime_authority",False) is not False,trial,"v3_wiring_audit")
         stderr=(raw/"stderr.log").read_text(errors="replace") if (raw/"stderr.log").is_file() else ""; add("canonical_l2_evidence_rewrite_exception_count",stderr.count("CANONICAL_EVIDENCE_REWRITE_FORBIDDEN:canonical_l2_"),trial,"stderr.log")
         scoped_missing=scoped_conflict=primary_corrupt=0
@@ -156,6 +223,22 @@ def analyze(write_outputs=True):
         termination=summary.get("termination_reason"); valid_boundary=(termination=="ASSURANCE_BOUNDARY" and summary.get("hard_blocker") is None and summary.get("finalization_status")=="FINALIZED" and boundaries==1 and len(obs)==commits+1 and not obs[-1].get("committed"))
         if boundaries: boundary_rows.append({"trial_id":trial,"cycle_index":obs[-1]["cycle_index"],"final_supervisor_reason":obs[-1].get("supervisor_reason"),"completed_cycles":len(obs),"plant_commit_count":commits,"last_committed_progress":progress,"reference_progress":reference[trial]["normalized_progress"],"paired_delta":progress-reference[trial]["normalized_progress"],"deadline_state_at_boundary":(obs[-1].get("deadline_observations") or [{}])[-1].get("status"),"recovery_activity_before_boundary":sum(bool(x.get("recovery_attempts")) for x in obs),"typed_boundary_contract_valid":valid_boundary})
         rows.append({"trial_id":trial,"bounded_recovery_progress":progress,"reference_progress":reference[trial]["normalized_progress"],"paired_progress_delta":progress-reference[trial]["normalized_progress"],"old_repaired_active_progress":float(old[trial]["active_progress"]),"bounded_recovery_minus_old_active":progress-float(old[trial]["active_progress"]),"completed_cycles":len(obs),"plant_commits":commits,"assurance_boundary_count":boundaries,**{f"{k}_commits":v for k,v in roles.items()}})
+    if integrity_only:
+        hard_zero={k:v["value"] if isinstance(v,dict) else v for k,v in audit.items()}
+        pre_hard_integrity_pass=not any(hard_zero.values()) and recovery["l2_exception"]==recovery["l3_exception"]==0 and all(x.get("typed_boundary_contract_valid",True) for x in boundary_rows)
+        return {
+            "schema":"ANALYZER_INTEGRITY_CLASSIFICATION_AFTER_V1",
+            "status":"PASS_ANALYZER_INTEGRITY_PREFLIGHT" if pre_hard_integrity_pass else "FAIL_ANALYZER_INTEGRITY_PREFLIGHT",
+            "trials_completed":85,"public_cycle_records":sum(len(lines(root/"raw"/f"trial_{trial}"/"recovery_cycle_observations.jsonl")) for trial in TRIALS),
+            "hard_zero_counts":hard_zero,"legitimate_exhaustion_marker_count":exhaustion_marker_count,
+            "unauthorized_source_execution_count":hard_zero.get("unauthorized_source_execution_count",0),
+            "invalid_internal_loop_action_bearing_count":invalid_internal_loop_action_bearing_count,
+            "internal_recovery_loop_count":hard_zero.get("internal_recovery_loop_count",0),
+            "recovery_l2_exception_count":recovery["l2_exception"],"recovery_l3_exception_count":recovery["l3_exception"],
+            "routing_completeness_pass":hard_zero.get("routing_ambiguous_count",0)==0 and hard_zero.get("unauthorized_source_execution_count",0)==0 and hard_zero.get("unverified_action_execution_count",0)==0,
+            "collection_integrity_pass_before_hard_safety_recompute":pre_hard_integrity_pass,
+            "hard_safety_recomputed":False,"progress_bootstrap_recomputed":False,
+        }
     hard=hard_proxy(states_by_trial,p); hard_by={x["trial_id"]:x for x in hard}
     for row in rows:
         row.update(hard_by[row["trial_id"]]); ref=reference[row["trial_id"]]; row["reference_hard_violation"]=bool(ref["hard_violation"]); row["active_only_hard_discordant"]=row["hard_violation_segments"]>0 and not row["reference_hard_violation"]
@@ -165,7 +248,7 @@ def analyze(write_outputs=True):
     progress={"n":85,"mean_delta":statistics.mean(deltas),"median_delta":statistics.median(deltas),"min_delta":min(deltas),"max_delta":max(deltas),"positive_count":sum(x>0 for x in deltas),"zero_count":sum(x==0 for x in deltas),"negative_count":sum(x<0 for x in deltas),"bootstrap_percentile_95":ci,"margin":-0.02,"strict_comparator":"lower95 > -0.02","equality_at_margin":"FAIL","clipping":"NONE","strict_ni_pass":ci is not None and ci["lower95"]>-0.02}
     routing={"descriptive_only":True,"role":"DESCRIPTIVE_ONLY_NO_ROUTING_CONDITIONED_GATE_OR_TUNING","totals":{k:sum(x[f"{k}_commits"] for x in rows) for k in ("primary","backup","recovery","terminal")},"boundary_trials":len(boundary_rows),"per_trial":rows}
     hard_result={"active_hard_violation_trials":active_hard,"hard_violation_segments":sum(x["hard_violation_segments"] for x in hard),"hard_unknown_segments":unknown,"active_only_hard_discordant_pairs":active_only,"reference_hard_violation_trials":sum(bool(x["hard_violation"]) for x in reference.values()),"global_min_hard_clearance_q":min(x["minimum_hard_clearance_q"] for x in hard if x["minimum_hard_clearance_q"] is not None),"negative_tolerance":None,"epsilon":None,"hard_gate_pass":active_hard==active_only==unknown==0}
-    result={"schema":"POST_REPAIR_V3_BOUNDED_RECOVERY_COLLECTION_SUMMARY_V1","status":decision,"trials_completed":85,"hard_zero_counts":hard_zero,"recovery":recovery,"historical_repaired_active_verdict":"FAIL_POST_REPAIR_V3_PROGRESS_NONINFERIORITY_GATE","historical_result_rewritten":False,"scientific_boundary":p["scientific_boundary"],"reference_authority_schema":reference_manifest["schema"],"reference_authority_path":str(reference_path)}
+    result={"schema":"POST_REPAIR_V3_BOUNDED_RECOVERY_COLLECTION_SUMMARY_V1","status":decision,"trials_completed":85,"hard_zero_counts":hard_zero,"recovery":recovery,"recovery_exhaustion_classification":{"legitimate_exhaustion_marker_count":exhaustion_marker_count,"invalid_internal_loop_action_bearing_count":invalid_internal_loop_action_bearing_count},"historical_repaired_active_verdict":"FAIL_POST_REPAIR_V3_PROGRESS_NONINFERIORITY_GATE","historical_result_rewritten":False,"scientific_boundary":p["scientific_boundary"],"reference_authority_schema":reference_manifest["schema"],"reference_authority_path":str(reference_path)}
     if write_outputs:
         fields=list(rows[0]);
         with (root/"POST_REPAIR_V3_BOUNDED_RECOVERY_TRIAL_RESULTS.csv").open("w",encoding="utf-8",newline="") as f: w=csv.DictWriter(f,fieldnames=fields); w.writeheader(); w.writerows(rows)
@@ -175,7 +258,10 @@ def analyze(write_outputs=True):
     return result
 
 def main()->int:
-    a=argparse.ArgumentParser(description=__doc__); a.add_argument("--post-collection-authorized",action="store_true"); args=a.parse_args()
-    if not args.post_collection_authorized: raise RuntimeError("POST_COLLECTION_AUTHORIZATION_REQUIRED")
-    result=analyze(True); print(result["status"]); return 0 if result["status"]!=BLOCK else 2
+    a=argparse.ArgumentParser(description=__doc__); a.add_argument("--post-collection-authorized",action="store_true"); a.add_argument("--integrity-only",action="store_true"); args=a.parse_args()
+    if not args.post_collection_authorized and not args.integrity_only: raise RuntimeError("POST_COLLECTION_AUTHORIZATION_REQUIRED")
+    result=analyze(not args.integrity_only,args.integrity_only)
+    if args.integrity_only:
+        print(json.dumps(result,sort_keys=True)); return 0 if result["status"]=="PASS_ANALYZER_INTEGRITY_PREFLIGHT" else 2
+    print(result["status"]); return 0 if result["status"]!=BLOCK else 2
 if __name__=="__main__": raise SystemExit(main())
