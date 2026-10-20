@@ -1,0 +1,14 @@
+{
+  "acceptance_rule": "A terminal checkpoint at step 29999 represents 30000 completed iterations for this installed Trainer implementation.",
+  "checkpoint_filename_format": "step-{step:09d}.ckpt",
+  "checkpoint_state_step_semantics": "The saved state stores the zero-based Trainer step passed to save_checkpoint.",
+  "completed_iterations": 30000,
+  "expected_terminal_checkpoint_filename": "step-000029999.ckpt",
+  "final_save_behavior": "self.save_checkpoint(self.step) after the training loop",
+  "fresh_run_start_step": 0,
+  "loop_expression": "for step in range(self._start_step, self._start_step + num_iterations)",
+  "max_num_iterations": 30000,
+  "nerfstudio_version": "1.1.5",
+  "source": "nerfstudio/engine/trainer.py",
+  "terminal_zero_based_step": 29999
+}
