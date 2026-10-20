@@ -1,0 +1,14 @@
+{
+  "attempt_count_transition": "0_to_1_only_when_ns_train_process_is_observed",
+  "preflight_failure_attempt_count": 0,
+  "preflight_failure_terminal": true,
+  "retry_allowed": false,
+  "resume_allowed": false,
+  "gpu_change_allowed": false,
+  "post_training_commands_allowed_only_after": [
+    "successful_ns_train_exit",
+    "final_checkpoint_identity_pass",
+    "checkpoint_integrity_pass",
+    "metric_invariant_pass"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "BLOCKED_BY_EXECUTION_RECORD_PARENT_MISSING",
+  "attempt_count": 0,
+  "canonical_identity": "PASS",
+  "environment": "PASS",
+  "dataset": "PASS",
+  "disk": "PASS",
+  "output": "PASS",
+  "cli": "PASS",
+  "gpu": "PASS_GPU_IDLE_THREE_SAMPLES",
+  "blocking_path": "/disk1/zlab/formal_execution_records",
+  "blocking_operation": "mkdir /disk1/zlab/formal_execution_records/tum_fr1_room_splatfacto_v1r2_seed20260716",
+  "retry_performed": false,
+  "training_started": false
+}

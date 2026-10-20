@@ -1,0 +1,8 @@
+{
+  "commands": [
+    "ns-eval --load-config $RUN/config.yml --output-path $RUN/reports/eval_metrics.json",
+    "ns-render dataset --load-config $RUN/config.yml --output-path $RUN/renders --image-format png --rendered-output-names rgb --split val"
+  ],
+  "run_path": "/disk1/zlab/formal_splatfacto_runs/tum_fr1_room_splatfacto_v1/splatfacto/20260716_000000",
+  "only_after_successful_training_validation": true
+}
