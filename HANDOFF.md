@@ -1,15 +1,24 @@
 # FAS / safer-splat 固定交接文档
 
-> **先读结论：** 用户确认GPU1释放后，现场空闲门通过；唯一一次D/L逻辑GPU会话已启动并结束。但D在Factory之前的新增DEV设备身份检查失败：`PHYSICAL_UUID_MAPPING_FAILED`（要求当前PID出现在nvidia-smi计算进程表，未满足）。**GPU会话1，Factory/周期/提交/求解/几何均0，L未启动；没有原生两臂比较结果。** 这是接线/设备验证阻断，不证明用错GPU，也不证明成熟A或参考跟踪失败。会话79.524秒，49件工件已封印，无自动重试。旧资源阻断和CPU结果保留。
+> **先读结论：** 用户另行授权“修复阻断重新跑一次”后，DEV设备门已修复并实测通过：逻辑cuda:0的PCI为82:00.0，与GPU1 UUID一致。**本次唯一重试在Factory初始化遇到独立TORCH_HOME缺AlexNet缓存，下载被offline gate拒绝；Factory尝试1/完成0、周期/提交/求解/几何0，L未运行。** 20.145秒后退出。已用原H260既存同SHA权重离线补齐任务缓存，但没有再次启动；两臂科学结论仍NOT_EVALUATED。61件工件封印，无自动后继。
 
 - 正式维护位置：**https://github.com/kenqiana04/safer-splat/blob/master/HANDOFF.md**；本机文件只是工作副本，阶段更新须同步到 GitHub。
 - 最后更新：**2026-11-06，Asia/Shanghai**（Git 提交记录提供精确发布时间）。
 - 更新者：**Codex，本 safer-splat 会话**。
-- 本次文档变更：记录资源释放后的唯一会话及设备身份门失败；仅改本交接文档，不发布研究代码、不改变默认配置。
+- 本次文档变更：记录一次修复重试的设备门通过、缓存接线遗漏及离线补齐；仅改本交接文档，不发布研究代码、不改变默认配置。
 - 最近实测阶段：`FAS_TRIAL23_SAME_SOURCE_QP_REFERENCE_CPU_DIAGNOSIS_V1`，`run_20261106T043951Z`。
 - 状态依据：最近阶段封存文件及本会话只读核查；不是对整台服务器当前所有进程的监控。
 
-### 最新GPU1释放后尝试：设备身份门失败，已结束
+### 最新一次获授权修复重试：设备门通过，Factory缓存失败
+
+- 服务器包：`/disk1/zlab/tmp/fas_trial23_fixed_mature_a_reference_native_pair_v1/run_20261106T073111Z/`；同名本地research-output下`SEALED_RESULT/`。61件封印SHA `c8ce7117b2886ebd474af877ea5f053cff1d26e634a7196a19aed0438de11a6b`。
+- 修复仅DEV设备绑定：使用物理GPU1 UUID设置可见设备，调用已有libcudart获取逻辑0 PCI，再与nvidia-smi UUID/PCI交叉核对。保存`DEVICE_MAPPING_RAW.json`实测PASS；PID表空不再单独判错设备。12项CPU检查（原10+PCI正负2）通过。
+- 源228/968项及3HEAD/37文件匹配；保护前后相同、clean。D PID3207028进入Factory初始化，nerfstudio的LPIPS构造因隔离TORCH_HOME漏复制旧缓存而请求AlexNet下载，offline_gate拒绝。没有放网、安装、替换组件或改变安全语义。
+- GPU会话1，Factory尝试1/完成0，控制周期0、PlantCommit0、solver0、geometry0；L NOT_STARTED。墙钟20.144743秒。没有D/L Progress或A层恢复/权限结论。
+- 失败后只做CPU文件操作：原H260与/home/zlab缓存同名244408911字节文件的完整SHA一致，复制到新任务独立缓存并复核；见`results/OFFLINE_CACHE_REPAIR.json`。这是当轮接线修复，不是缺依赖安装；补齐后未再次启动CUDA/Factory。
+- 一次重试已消费，父子进程退出，资源释放，无自动续跑。旧49件失败包不改。若后续继续，须新授权、新目录、新资源门，复用两项DEV修复，不扩大试验。文档检查点`codex/checkpoint-before-trial23-cache-stop-20261106T073111Z`，基于`f4cdcb58a9cff99d47fb26fb360960ca9dce4a60`。
+
+### 前次GPU1释放后尝试：设备身份门失败，已结束
 
 - 包：`/disk1/zlab/tmp/fas_trial23_fixed_mature_a_reference_native_pair_v1/run_20261106T071541Z/`；本地同名研究输出根下`SEALED_RESULT/`为完整下载副本。
 - 来源：H260的228项、上轮CPU参考的968项封印全量通过；三保护HEAD和37个源/地图/Profile文件匹配且前后clean。10项CPU接口/算术/静态检查通过，不是原生权限PASS。
@@ -72,7 +81,7 @@
 
 ### 推荐下一步——尚未执行
 
-**固定成熟A层的参考身份接线与有限同参考对照**已完成独立接线和10项CPU检查，唯一GPU会话在Factory前设备身份门终止；新的GPU验证/重试需重新授权，而不是先做A*或扩搜局部动作：
+**固定成熟A层的参考身份接线与有限同参考对照**已完成独立接线和12项CPU检查，设备门在授权重试中实测通过，但Factory缓存初始化失败；缓存已离线补齐、未再启动。新的GPU重试需重新授权，而不是先做A*或扩搜局部动作：
 
 - 两组同源QP的CPU比较已完成；继续保持相同目标/CBF行/六盒行/求解器/PD，不可把旧无盒B拿来与有盒A混称单因素。
 - task goal继续在snapshot内；tracking target在旁路记录并关联state/candidate/action身份，不擅改Token格式或沿用旧Token。本轮CPU日志没有任何native资格。
@@ -116,7 +125,7 @@
 |Trial23阶段0/A无QP两组CPU跟踪|已结束并封印|保留旧43工件，不重跑|
 |本轮同源QP两参考CPU对照|已结束并封印|两个子进程正常退出，无后台后继任务|
 |完整四组参考×FAS对照|NOT_READY|前两组CPU已实跑，成熟A两组及原生等价尚未验证|
-|成熟A相同参考对照|负责人释放GPU1后会话已尝试；D在设备身份门失败，Factory0/提交0，L未启动|49件已封印；不自动重试，先修复设备映射证据接线，后续GPU需授权|
+|成熟A相同参考对照|授权修复重试中设备门PASS，D Factory初始化因独立缓存缺权重失败；提交0，L未运行|61件已封印；已有缓存离线补齐但未再次GPU验证，无自动后继|
 |A/G H260 的 `R03_G`、`R04_G`、`R04_A`|历史待办，不在运行或排队|旧续跑曾资源阻断，不自动恢复；先确认用户是否仍要继续此支线|
 |服务器其他用户/项目作业|07:12:59 UTC：GPU1仍有PID3142527，4372 MiB|只是一次复查，不持续监控，不声称此后资源状态|
 
