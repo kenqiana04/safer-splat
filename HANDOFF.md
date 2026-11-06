@@ -1,12 +1,12 @@
 # FAS / safer-splat 固定交接文档
 
-> **先读结论：** 当前目标是诊断任务参考、跟踪与安全过滤/恢复资格层的边界，不是立刻加入 Planner。最近 CPU 准入验证已完成，**四组对照尚未具备准入条件**。Trial23 的起终点直线通过共享 CPU Gaussian 闭段检查，因此不能直接认定其停滞是“缺少绕障路线”。本文件不授予新的实验或 GPU 权限。
+> **先读结论：** Trial23 隔离 CPU 阶段0/A已完成：不加QP/FAS，直接目标PD接受38步后第39个待推进段被共享几何判UNSAFE；固定直线前视参考＋同PD接受368步、368段通过，并达到本轮软件到达阈值。**四组对照仍未就绪，尚未验证相同CBF-QP或成熟A层下是否保持该效果。** 不必先引入绕障Planner；优先隔离参考与过滤层。以上不是原生执行或物理安全证明，本文件不授予后继实验权限。
 
 - 正式维护位置：**https://github.com/kenqiana04/safer-splat/blob/master/HANDOFF.md**；本机文件只是工作副本，阶段更新须同步到 GitHub。
 - 最后更新：**2026-11-06，Asia/Shanghai**（Git 提交记录提供精确发布时间）。
 - 更新者：**Codex，本 safer-splat 会话**。
-- 本次文档变更：首次建立 GitHub 默认分支的固定 `HANDOFF.md` 与维护规则 `AGENTS.md`；未启动实验。
-- 最近实测阶段：`FAS_MAP_PATH_TRACKING_ADMISSION_V1`，`run_20261106T034059Z`。
+- 本次文档变更：同步已完成的Trial23两组CPU跟踪诊断；仅改本交接文档，不发布研究代码、不改变默认配置。
+- 最近实测阶段：`FAS_TRIAL23_STRAIGHT_REFERENCE_CPU_DIAGNOSIS_V1`，`run_20261106T041825Z`。
 - 状态依据：最近阶段封存文件及本会话只读核查；不是对整台服务器当前所有进程的监控。
 
 ## 1. 当前目标、结论与下一步
@@ -21,18 +21,18 @@
 
 ### 最新明确裁决
 
-`ADMISSION_VALIDATION_COMPLETED_FOUR_ARM_NOT_READY`
+`PASS_STAGE_A_CPU_TRACKING_DIAGNOSIS_WITH_LIMITS`
 
-已完成源锁、有限 CPU 几何、接口/身份负控、原 canonical 算术、历史轨迹描述性分析、独立复核与封印。未完成实际路径跟踪验证、四组同源 CPU 对照接口、A* 搜索或任何新原生闭环。
+`STRAIGHT_REFERENCE_TRACKABLE_IN_CPU_PROXY_DOMAIN`；仅Trial23已知开发任务、固定参数。完成两组CPU模型跟踪、逐运动段源FULL检查、17项合同测试、4099项独立复算与43文件封印。未运行QP、PSF、Factory、Supervisor、Token、PlantCommit、GPU或A*。最终task goal始终不变。
 
 ### 推荐下一步——尚未执行
 
-优先冻结 **Trial23 的表示地图任务域与直线参考跟踪合同**，而不是先做大规模 A*：
+优先另行授权 **同源CBF-QP的CPU数值/失败语义准入与两种参考对照**，而不是先做A*或直接跳到四组：
 
-- 明确采用有限 Gaussian **代理模型导航域**，还是要求由观测支持证明的自由空间域；不能用 Gaussian 中心 bbox 偷换为已观测自由空间。
-- 保持最终 task goal，独立定义 tracking target、参考来源、有效期、固定切换规则与跟踪误差度量。
-- 依据已通过的 Trial23 静态直线，另行授权有限 CPU 跟踪验证；逐实际运动段检查，不把路径通过当作跟踪通过。
-- 若普通参考解决问题，接受工程解释；若仍被过滤/恢复/资格限制，再定位首次分歧。不要重启 c220/c240/c259 局部 LP/PSF 扩搜。
+- 两组共享同一QP目标/CBF行/动作盒、求解器与数值失败语义，仅改变PD tracking target；不可用旧无盒B对比有盒A来声称单因素。
+- task goal与tracking target继续分离；CPU参考日志不能自动获得snapshot/Backup/Token身份与原生时效资格。
+- 本轮.10q诊断域仅是范围限制，不是已观测自由空间或认证安全管；其余地图未知域仍未解决。
+- 若同QP后才停滞，定位首次过滤差异；只有其后才讨论同成熟A恢复/资格层。后继阶段需单独授权。停止逐点LP/PSF筛选，不自动接Planner。
 
 这一下一步是建议，**不是排队任务、自动续跑或已获原生授权**。
 
@@ -45,8 +45,8 @@
 - 当前 HEAD：`d0b4f2278763fedeb4fd9bc26ff7f55a7c5c2b23`
 - **这不是服务器 Candidate/Frozen/Perf 的同一版本，不能用本机 HEAD 冒充原生实验方法身份。**
 - 已有 dirty 状态必须保留：已跟踪修改为 `reproduction/cross_dataset/tum_splatfacto_v1r5_command_preregistration_v1/v1r5_exact_training_command.sh`，另有 `.codex*`、`.tmp*`、`docs/` 及 reproduction 下未跟踪文件/目录。不要执行 reset、clean、stash 或批量 add。
-- 本次只提交、推送 `HANDOFF.md`、`AGENTS.md`；使用基于远端 `master` 的隔离工作树，不修改上述已有文件或切换本机工作分支。文档发布不表示实验源码/数据被上传或方法版本改变。
-- GitHub发布基点：`master@d77a0633d0c46c8be8ae1abf0e91c756271334a2`；隔离分支 `codex/handoff-github-20261106`。发布提交号以 GitHub 文件历史为准。
+- 本次只提交、推送 `HANDOFF.md`；使用基于远端 `master` 的隔离工作树，不修改上述已有文件或切换本机工作分支。文档发布不表示实验源码/数据被上传或方法版本改变。
+- GitHub发布基点：`master@1cd717c647cde5ec291237ae8ac918986eb39367`；隔离分支 `codex/handoff-github-20261106`。修改前命名检查点分支：`codex/checkpoint-before-trial23-cpu-20261106T0432`。发布提交号以 GitHub 文件历史为准。
 - 修改前命名检查点：`C:\Users\zlab\Documents\Codex\research-output\checkpoints\FAS_HANDOFF_BEFORE_20261106T035713Z\CHECKPOINT.json`。包含 HEAD、分支、完整 porcelain 状态和已有 tracked diff；这是文件检查点，不是 Git commit，也不是所有未跟踪数据的备份。
 
 ### 服务器保护工作树（最近 CPU 阶段前后均匹配、clean）
@@ -67,9 +67,9 @@
 
 |任务|状态|注意事项|
 |---|---|---|
-|本轮地图/路径/跟踪准入 CPU 验证|已结束并封印|没有遗留后台进程或自动后继任务；指本会话创建的工作|
-|四组路径参考对照|NOT_STARTED / NOT_READY|有效域、跟踪及同源 CPU 接口未资格|
-|Trial23 直线参考跟踪合同|建议，待后续任务授权|不要以本交接作为执行许可|
+|本轮Trial23阶段0/A两组CPU跟踪|已结束并封印|两个子进程正常退出；没有自动后继任务|
+|四组路径参考对照|NOT_STARTED / NOT_READY|同源CPU QP与成熟A层未资格，观测支持域未建立|
+|同QP下直接目标/直线参考对照|建议，待单独授权|不依据本交接自动执行|
 |A/G H260 的 `R03_G`、`R04_G`、`R04_A`|历史待办，不在运行或排队|旧续跑曾资源阻断，不自动恢复；先确认用户是否仍要继续此支线|
 |服务器其他用户/项目作业|UNKNOWN|本次文档维护不查进程或 GPU，不声称服务器空闲|
 
@@ -112,6 +112,32 @@ Candidate 下 `reproduction/runtime/active_runtime_assurance_v2/runtime_types.py
 
 ## 5. 最新实测结果与负结果
 
+### Trial23直线参考CPU诊断（最新）
+
+固定同初态、goal、地图、原PD两级clip及源binary32 Euler。D直接目标，L当前位置在线投影到p0→goal线段后前视`.02q`，不引入速度前馈；task goal未被航点替换。H500、每臂600秒/1000 FULL、每段32 FULL、固定D→L各一次。`.10q`范围不是安全走廊。原终端1e-12/hold及FAS权限不修改，本阶段不调用它们。
+
+|指标|D：直接目标PD|L：直线参考＋同PD|
+|---|---:|---:|
+|接受CPU模型步|38|368|
+|待检查段数|39|368|
+|闭段源状态|38 SAFE、1 UNSAFE|368 SAFE|
+|终止|c38待推进段UNSAFE，未接受|软件到达阈值连续10步|
+|共同H38 Progress|0.096012407697|0.089844146220|
+|H260 Progress|NA（未覆盖）|0.796985728614|
+|各自终点Progress，非同H比较|0.096012407697|0.997131337912|
+|终点距离 q|0.708911404035|0.002249618563|
+|终点速度 q/模型秒|0.069473405707|0.001552176059|
+|最大偏离直线 q|0.065168096892|0.009191732950|
+|FULL调用|45|368|
+|臂墙钟秒，含初始化|17.171535|122.567561|
+|逐步p50/p95秒|0.328338 / 0.397715|0.328283 / 0.341115|
+
+到达阈值只用于本轮软件诊断：距goal≤`.01q`且速度≤`.005q/模型秒`连续10个接受状态，不追溯历史Goal、不替代严格FAS终端资格。没有新原生导航或PlantCommit。
+
+必须保留负结果：共同H38时L进展更低；L有累计负向目标距离变化约`.01050572q`，不是严格单调趋近。D不足60步，不能用0个near-stall命中声称无停滞；L309个滚动窗口0命中。L到达支持CPU代理模型内可跟踪，不证明参考能通过QP/FAS、不是整个旧停滞的唯一因果解释。
+
+总新FULL413；原始407个待检查段，406个接受模型步；UNSAFE段不纳入接受轨迹。17合同测试、4099独立复算通过，Progress最大差约1.46e−16。源前后3HEAD/47文件及附加源不变，父50工件复验通过。至封印702.73秒，30分钟预算内；D/L固定顺序，时延不作严格算法加速比。源几何是共享CPU Gaussian代理、q非米、无独立GPU舍入包络或物理真值。
+
 ### 地图、路径、跟踪准入 CPU 阶段
 
 配置：四个固定初态 Trial23/54/89/1；8个端点；每任务一条直连；最多264次底层 FULL，每段最多64次、90秒。源段 backend 保持4096节点与1e-10参数容差，不修改安全语义。
@@ -141,17 +167,25 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 ### 尚未完成的资格
 
 - 未定义并验证有限导航有效域/观测支持与 UNKNOWN 策略；不发明 bbox 自由空间。
-- 无真实路线跟踪 rollout，无冻结航点切换规则和实际运动逐段资格。
+- Trial23阶段A已有隔离CPU跟踪；未建立同QP/FAS跟踪、原生参考时效及授权绑定，不能泛化为真实机器人路线跟踪。
 - 无四组共同CPU QP数值/失败语义等价性验证；成熟A原生权限不可由CPU算术继承。
-- 无新Goal Success评价。建议过的位置`.01q`、速度`.005q/模型秒`、连续10步仅待冻结评价标准，不是旧实验成功阈值，也不替代Terminal容差。
+- 本轮Trial23阶段A已冻结软件Goal阈值并评分，但旧实验没有该统一Goal评分；软件到达不等于FAS严格Terminal、native授权或物理成功。
 
-### 本轮接线失败与修复
+### 上一准入阶段接线失败与修复（保留历史）
 
 首轮导入 canonical_transition 的父包会连带导入 `stack_factory`；本任务import防线在其模块执行前拦截。改为按原文件绝对路径加载纯canonical模块后，通过相同测试。未修改源码、未实例化Factory、未放宽权限。保留 `logs/validate_attempt1.log`、第二次成功日志和 `WIRING_REPAIR_LOG.md`。
 
 ## 6. 证据位置、封印与复核入口
 
 ### 最新权威包
+
+- 服务器：`/disk1/zlab/tmp/fas_trial23_straight_reference_cpu_diagnosis_v1/run_20261106T041825Z/`
+- 本机副本：`C:\Users\zlab\Documents\Codex\research-output\FAS_TRIAL23_STRAIGHT_REFERENCE_CPU_DIAGNOSIS_V1\run_20261106T041825Z\SEALED_RESULT\`
+- 43工件清单自身SHA256：`543e247e50ae93df26cbc1f796dcb98ccf6fb57d9ba3aa373766affdf78dc7c5`。
+- 核心：`FINAL_SCIENTIFIC_ENGINEERING_VERDICT.md`、`results/SCORECARD.csv`、`results/PAIRED.json`、`results/INDEPENDENT_CROSSCHECK.json`、`inputs/PREREGISTRATION.json`、`results/D/`与`results/L/`完整原始周期/查询日志。
+- `REPRODUCE.md`给出只读复验；`SEAL_RECEIPT.json`清单外，避免自指。禁止在已封印包中重跑写出脚本。
+
+### 上一准入权威包
 
 - 服务器：`/disk1/zlab/tmp/fas_map_path_tracking_admission_v1/run_20261106T034059Z/`
 - 本机封存副本：`C:\Users\zlab\Documents\Codex\research-output\FAS_MAP_PATH_TRACKING_ADMISSION_V1\run_20261106T034059Z\SEALED_RESULT\`
@@ -178,7 +212,7 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 - A/G：`9e4cdf42775a3d1092f6dfa8ed81a0a6315ebd82e14cc438d9e0a9a91af24db2`
 - 旧三臂资源阻断：`29e0c06d12242de2bd9bb92b8f58c08a77053567e690ca94dbeaed92eb47fb09`（历史记录，不据此推断当前资源）
 
-最近阶段全量复验旧路线59成员和A/G 228成员；旧B/V只校验清单自身及直接消费的4个raw成员，没有宣称本轮全量重算旧闭环。
+上一准入阶段全量复验旧路线59成员和A/G 228成员；旧B/V只校验清单自身及直接消费的4个raw成员。最新跟踪阶段复验直接父包50成员与实际消费源，不宣称重新全量重算这些旧闭环。
 
 ### 地图资产
 
@@ -186,7 +220,7 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 - checkpoint：`nerfstudio_models/step-000029999.ckpt`，SHA `ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d`
 - 配置：`config.yml`；变换：`dataparser_transforms.json`。变换scale `.3333` 不等于已经标定米制尺度。
 - CPU消费的有效参数：`/disk1/zlab/tmp/fas_system_native_qp_gpu_first_locked_11_pairs_v5/run_20261023T082659Z/results/GPU_EFFECTIVE_MAP_PARAMETERS.npz`
-- NPZ SHA：`4c3b18e009f3bb85241a6dec7de67b4aff0b85f58b87b094e3616bcd8e4c43e0`；116446个Gaussian，数组与dtype/hash见最新`SOURCE_LOCK.json`及`inputs/API_QUALIFICATION.json`。
+- NPZ SHA：`4c3b18e009f3bb85241a6dec7de67b4aff0b85f58b87b094e3616bcd8e4c43e0`；116446个Gaussian，数组与dtype/hash见最新`inputs/PREREGISTRATION.json`及上一准入包`inputs/API_QUALIFICATION.json`。
 
 ## 7. 四组对照的进入条件
 
@@ -223,4 +257,5 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 
 ### 阶段更新记录
 
+- **2026-11-06 / Codex / Trial23阶段0/A**：用户授权后完成无QP/FAS的D/L隔离CPU诊断。D38个接受步后c38待推进段UNSAFE；L368个接受步及软件阈值到达。总413FULL、17合同测试、4099独立复算、43文件封印；3保护HEAD/47文件不变；全部原生权限0。四组仍未就绪；下一步只建议同源QP准入及两参考对照，NOT_STARTED。
 - **2026-11-06 / Codex**：首次建立固定交接与AGENTS维护规则。登记最新地图/路径/跟踪CPU准入包：Trial23直连条件通过、其余三直连有不安全见证；57合同测试、91复核、65FULL；四组未准入；无新原生执行。按用户澄清改为GitHub正式维护，仅文档提交推送；既有本机dirty完整保留。
