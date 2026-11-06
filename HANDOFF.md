@@ -1,13 +1,61 @@
 # FAS / safer-splat 固定交接文档
 
-> **先读结论：** 最新用户授权A0–A3已执行A0核查，裁决 **STOPPED_AT_A0_REQUIRED_DOMAIN_GATE**：本窗口SSH正常，但固定Stonehenge观测支持导航域仍UNRESOLVED，故A1–A3未启动。A0至封存保守341.287345s/600s，新增FULL/QP/GPU/测试/规划均0；15件封印完成，无自动后继。旧Trial23 D500/L417、Trial17直线FAIL及所有历史失败保留。
+> **先读结论：** 最新完成Stonehenge观测支持材料的严格只读清点：精确checkpoint/配置/变换与保留ZIP一致；已找到501帧RGBA及关联位姿，但未取得绑定当前地图的真实深度、有效性mask、尺度标定与观测支持域证据。当前域仍UNESTABLISHED，原 **STOPPED_AT_A0_REQUIRED_DOMAIN_GATE** 保留，A1–A3未启动、B/C未授权。本次新增实验/FULL/QP/GPU均0，无新审计工件。用户选择先补观测支持，再研究规划→跟踪→FAS；后续仅方案，不自动续跑。
 
 - 正式维护位置：**https://github.com/kenqiana04/safer-splat/blob/master/HANDOFF.md**；本机文件只是工作副本，阶段更新须同步到 GitHub。
-- 最后更新：**2026-11-06 23:45，Asia/Shanghai**（Git 提交记录提供精确发布时间）。
+- 最后更新：**2026-11-07 00:08，Asia/Shanghai**（Git 提交记录提供精确发布时间）。
 - 更新者：**Codex，本 safer-splat 会话**。
-- 本次文档变更：补记新授权Trial17/53的真实CPU准入否定结果、立即停止、零原生执行及封存；仅提交本交接文档，不发布研究代码、不改变默认配置。
+- 本次文档变更：按用户明确请求补记Stonehenge只读材料清点、内容/归档核验与限制、坐标/训练划分不确定性、补证路线及论文claim边界；仅更新HANDOFF，不新增服务器私密绝对路径。
 - 最近实测阶段：CPU准入`run_20261106T111343Z`，5/6请求实际完成、7FULL，39件封印。最近原生仍是Trial23 `run_20261106T095437Z`的917真实提交；未重跑旧12场景或旧D/L。
 - 状态依据：本会话4090服务器实际记录、独立只读复算和封印核验。**今后项目实验、测试及计算默认在4090服务器执行；Windows仅作连接客户端和获授权的文档/Git维护。设备选择和实验资源仍须遵守当轮授权，不是无限GPU授权。**
+
+### Stonehenge观测支持证据只读清点：相机/RGBA存在，有效域仍未建立
+
+- **2026-11-07 / Codex / 本Safer-Splat窗口**：用户选择继续“补齐观测支持范围→规划→跟踪→FAS安全链”的研究路线。随后授权的是一次严格只读清点，不恢复已停止A0–A3、不复用旧预算、不切换为proxy-model-only研究。清点期间原SSH成功，读取、目录清点、归档对照和轻量元数据解析完成；没有文件写入、新审计工件、GitHub更新、规划/训练/渲染/实验/FULL/QP/GPU。**本次另据用户“更新下交接”的明确请求，仅维护HANDOFF。**
+- 当前裁决：**OBSERVATION_EVIDENCE_INVENTORIED_DOMAIN_STILL_UNESTABLISHED**。路径仍NOT_EVALUATED，A0域门阻断保留；A1–A3未启动，B/C未授权；Trial17直线FAIL、Trial53直线NOT_RUN及Trial23历史结果不改。此次清点不是导航、安全或新实验PASS。
+- 以下来源使用已有数据包相对路径与内容摘要，不新增公开服务器私密绝对路径。检索覆盖已知Stonehenge数据/输出目录、三个保留ZIP的Stonehenge成员，以及相关数据/资产/源码目录的有限深度名称清点；不是全服务器缺失证明。
+
+|材料|实际核验|仍未建立的内容|
+|---|---|---|
+|精确模型|数据包内 `outputs/stonehenge/splatfacto/2024-09-11_100724/nerfstudio_models/step-000029999.ckpt`；当前磁盘SHA与既有锁定值及原ZIP成员完全一致|未加载模型；文件身份不是几何真实性证明|
+|训练配置|同目录 `config.yml` 已按文本读取，未反序列化Python对象YAML；Stonehenge、InstantNGP parser、scene_scale=.3333、fraction=.9；与原ZIP一致|没有原训练环境版本及实际消费帧清单|
+|坐标变换|同目录 `dataparser_transforms.json` 为单位旋转、零平移，另列scale=.3333；与原ZIP一致|未确认原坐标的米制含义或独立标定|
+|相机位姿|数据包 `data/stonehenge/transforms{,_train,_val,_test}.json` 均解析；train199、val151、test151；501个分组位姿均为有限4×4、齐次底行正确，旋转正交误差约8.3e−8以内|基本结构检查不是位姿精度或图像—地图重投影验证|
+|内参|显式水平视场角0.6911112070083618；当前parser结合800×800图像推得fx=fy≈1111.111031px、cx=cy=400，畸变使用缺省0|缺独立标定；默认零畸变不是测量证据|
+|图像|数据目录507文件：4 JSON、2辅助Python、501 PNG；所有位姿路径可按parser的.png补全规则解析到文件，头信息均800×800/8-bit/RGBA；各分组render0共3张抽查SHA与原ZIP一致|未全量解码/检查视觉内容；真实采集或合成来源尚未核实；文件名render不足以确定来源|
+|真实深度、有效性mask|上述数据目录及ZIP Stonehenge成员中未发现对应文件；所有帧仅有transform_matrix/file_path，未见depth/mask路径字段|RGBA alpha语义未验证，不能充当深度有效性mask；不能据此宣称全服务器没有深度|
+|独立场景几何、真实尺度、观测支持域|所查材料未找到绑定当前精确地图的可用证据；无可直接采用的独立mesh/尺度标定/支持域证明|相机视锥、相机或Gaussian bbox、Near/Far及模型渲染深度均不能替代真实已观测自由空间|
+
+**精确来源摘要（当前读取与原ZIP逐字节对照通过）：**
+
+- checkpoint：`ac14f5ced354c93f26cf92404540712eff65bd02554d9e9ed0332508e290382d`。
+- config.yml：`cd6ea45ad01553f0ce1531ad08cfaf8359e95041b39c77291d94e75f2d2f2f8e`。
+- dataparser_transforms.json：`92a1af2f195be3b32e0422418aff40cbd426c1cf9d8f7d5da87629519f5a0f8e`。
+- transforms.json与transforms_train.json字节相同：`b983423062d5bd075438ef06887d01be05fe1fe10a49eedc4fbbd8a031517805`。
+- transforms_val.json：`dfe3c08e2e2c3f315317ae5474cd50bce255aa132a56e1b197fab8ed649701d7`。
+- transforms_test.json：`fddda8ec77976602c5c442da887d4a4b0232b56391cf6767b58598c4a9fe3a69`。
+- ZIP对照是现有磁盘文件与保留归档成员的一致性证据，不是独立官方签名、原训练输入manifest或完整训练过程证明。已有逻辑map identity仍为 `c9eade9ca89b741768a0ca33b3a755b2656402864f121aefdceaed4b0174f7c8`；不将其与checkpoint文件SHA混为一谈。
+
+**坐标、数据接线及划分的核验限制：**
+
+- 当前安装metadata为Nerfstudio **1.1.5**。只读检查 `nerfstudio/data/dataparsers/instant_ngp_dataparser.py`、`data/datamanagers/full_images_datamanager.py`、`data/utils/dataparsers_utils.py`及冻结项目 `splat/gsplat_utils.py`、`ns_utils/nerfstudio_utils.py`，未导入/执行这些运行时模块。
+- 配置内部parser保留默认 `data/ours/posterv2`，但当前FullImageDatamanager源码会用外层 `data/stonehenge` 覆盖。该源码解释了配置路径如何对应现有数据；不能仅凭同一场景名称证明2024年训练过程。
+- 当前parser读取 `transforms.json` 并按.9 fraction，从199帧推得180训练/19评估；不会直接把val/test目录各151帧当成训练配置实际采用的评估划分。此为当前源码静态推导，**原训练版本、实际划分及消费帧仍未验证**。
+- 当前parser将相机平移乘.3333、旋转不变；保存变换为单位刚体变换。现有Gaussian loader直接使用模型坐标。这能解释原相机坐标到训练/地图q坐标的缩放关系，但原坐标单位、相机轴约定与地图配准准确度尚须验证；q不是已确认的米。不能据scale把.015q转换成真实机器人米制半径。
+- 元数据Near=1.5/Far=3.5没有独立距离/自由空间含义；当前parser相关路径未把它们作为真实深度证据。相机位姿、RGB及视锥不能独自确定第一可见表面前的可靠空闲区和遮挡后UNKNOWN。
+
+**下一步补证与研究方案（仅建议，未授权执行）：**
+
+1. 补来源链：原训练版本、实际帧清单、采集或合成生成说明、尺度依据；绑定精确checkpoint、相机与RGB身份。
+2. 补独立几何：若原场景为合成，寻找原场景几何、生成相机及单位约定；若为真实采集，取得配准传感器深度、有效性mask、内外参及尺度证据。任何新采集、生成或重建工作另定范围与预算；不将被评价Gaussian的渲染深度当独立真值。
+3. 验证坐标、重投影、深度定义与误差界；随后以有效观测和保守误差明确FREE/OCCUPIED/UNKNOWN，遮挡后、无效深度、域外保持UNKNOWN。支持域绑定地图/坐标/证据版本；只凭包围盒不得准入。
+4. 研究顺序为“支持域→完整路径边验证→跟踪参考→原FAS认证/Deadline/Token/提交链→软件执行与独立评价”。路径需同时满足域与几何条件；跟踪只改变名义参考、最终task goal不变；分别报告路线、可跟踪性、资格链及到达结果，不能把静态PASS升级为动态成功。阶段资源/停止条件须另行明确，不恢复已关闭A0–A3、不默认扩预算。
+
+**当前论文claim边界：**
+
+- 可支持：原有固定Gaussian表示下的软件实验及其原限定范围；Trial23参考收益的案例性证据；直线参考适用性和观测域缺口的分析。
+- 不可支持：观测自由空间已建立、通用绕障导航成功、真实物理无碰撞保证或跨场景泛化。新的完整导航claim须有域/几何/跟踪/资格链证据及独立评价。
+- 清点任务已结束，无新后台任务；此次清点及本次文档更新未重新检查服务器全局进程，当前全局作业/资源状态UNKNOWN。**没有为只读清点新建封印包或审计工件**；细节证据保留在本会话工具输出和现有源文件，后续不得编造新包位置。
 
 ### 已授权A0–A3实际执行：A0有效域门阻断，后续未启动
 
@@ -490,6 +538,8 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 6. 刷新时间与更新者，检查Git diff只涉及本轮文档；仅stage交接相关文件，提交并以非强推方式同步GitHub默认分支，核对远端SHA与文件。分支保护不允许直推则提交PR并说明尚未合入。若本轮明确只读，遵守只读并在回复注明未更新。
 
 ### 阶段更新记录
+
+- **2026-11-07 00:08 / Codex / Stonehenge只读观测材料清点后按请求更新交接**：确认501帧RGBA和关联位姿、四JSON及精确checkpoint/配置/变换的归档一致性；当前parser可推导180/19划分和.3333坐标缩放，但原训练消费帧、真实尺度、深度/mask/观测支持域仍未建立。保留A0阻断及17 FAIL/53 NOT_RUN，新增实验0、无新审计包。用户选择先补观测支持再研究规划→跟踪→FAS，仅方案，未恢复旧预算。公开更新仅HANDOFF，不新增私密绝对路径。
 
 - **2026-11-06 23:45 / Codex / 获批A0–A3后有效域门停止**：原SSH成功、预算封印核验；97保护文件/三HEAD及45输入父包成员一致。当前观测域仍UNRESOLVED，A0未通过，A1–A3未启动；未改代理研究范围。A0至封存保守341.287345s、FULL/QP/GPU/测试均0；15件包da0cb62a…，无后继，B/C仍未授权。
 
