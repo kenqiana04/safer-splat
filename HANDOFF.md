@@ -1,6 +1,6 @@
 # FAS / safer-splat 固定交接文档
 
-> **先读结论：** 2026-11-06 06:42:11 UTC，用户授权中断的GPU1原PID2990859已自行退出，但GPU1出现新PID3142527占4372 MiB，不属于明确终止授权。按“其他未授权占用即停止”条件，本轮未发任何信号、未启动D/L。**三次启动前资源检查均无新GPU会话、Factory、求解、几何查询、Token或PlantCommit。** 不把相同环境路径当同进程，不自动切GPU0、不排队或续跑。旧CPU参考收益结论不变，完整成熟A仍未验证。
+> **先读结论：** 用户已明确授权中断GPU1的PID3142527。2026-11-06 07:11 UTC核实root/run_mapping3d.py、functional3dgs、容器、GPU和start_ticks一致后，SSH账户zlab发送SIGINT遭`Operation not permitted`拒绝，成功发送信号0。07:12:59 UTC复查目标仍占4372 MiB。**当前阻断是操作系统信号权限，不是缺用户授权；D/L未启动，所有新实验计数0。** 未用sudo/docker/SIGKILL绕过，需负责人在有权限的作业会话中结束进程；无自动等待/续跑。旧CPU结论不变。
 
 - 正式维护位置：**https://github.com/kenqiana04/safer-splat/blob/master/HANDOFF.md**；本机文件只是工作副本，阶段更新须同步到 GitHub。
 - 最后更新：**2026-11-06，Asia/Shanghai**（Git 提交记录提供精确发布时间）。
@@ -9,7 +9,15 @@
 - 最近实测阶段：`FAS_TRIAL23_SAME_SOURCE_QP_REFERENCE_CPU_DIAGNOSIS_V1`，`run_20261106T043951Z`。
 - 状态依据：最近阶段封存文件及本会话只读核查；不是对整台服务器当前所有进程的监控。
 
-### 最新明确PID中断授权：原目标已退出，新占用者阻断
+### 最新PID3142527中断授权：系统权限拒绝
+
+- `BLOCKED_PROCESS_SIGNAL_PERMISSION`。UID0、run_mapping3d.py、functional3dgs、原Docker cgroup和GPU1均匹配；启动时间北京时间14:31:36，start_ticks=118439017，发信号前再核对未变。
+- Python pidfd接口不可用的首检查未发信号；随后普通SIGINT一次发送调用被系统拒绝：`PermissionError [Errno 1] Operation not permitted`。没有提权/绕过或再次终止。07:12:59 UTC目标仍在。
+- 本地包：`C:\Users\zlab\Documents\Codex\research-output\FAS_TRIAL23_FIXED_MATURE_A_REFERENCE_NATIVE_PAIR_V1\run_20261106T071123Z`；3件工件；清单SHA `d93d045b1a17fbfe0f3e311c692ccddf128eb7c54d146463aaacd256567f64cf`。
+- GPU/Factory/Token/PlantCommit/求解/几何/CPU测试全0；源码、地图、默认开关不动，旧失败保留。同步SSH退出，无本任务后台/租约/自动后继。需要负责人使用有权限的原作业会话结束目标，不重复索取同一用户许可。
+- 文档检查点`codex/checkpoint-before-trial23-signal-denied-20261106T071123Z`，基于`b87fb110f4a416da90c8043eb1d2fffb10d35f44`。
+
+### 前次明确PID中断授权：原目标已退出，新占用者阻断
 
 - 现场时间：2026-11-06 06:42:11 UTC。授权目标PID2990859的ps无记录，/proc条目不存在；未发送信号。
 - GPU1 UUID仍为`GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d`，新compute PID3142527、functional3dgs环境占4372 MiB。相同环境不证明同一作业，不扩展终止授权。裁决`BLOCKED_NEW_UNAUTHORIZED_GPU1_OCCUPANT`。
@@ -98,9 +106,9 @@
 |Trial23阶段0/A无QP两组CPU跟踪|已结束并封印|保留旧43工件，不重跑|
 |本轮同源QP两参考CPU对照|已结束并封印|两个子进程正常退出，无后台后继任务|
 |完整四组参考×FAS对照|NOT_READY|前两组CPU已实跑，成熟A两组及原生等价尚未验证|
-|成熟A相同参考对照|第三次明确PID中断授权核查：原PID已退出，GPU1有新未授权PID3142527；D/L未启动|三个独立阻断包保留，无排队；新动作需针对真实资源明确授权|
+|成熟A相同参考对照|PID3142527已获用户中断授权且身份匹配，但zlab发送SIGINT被系统权限拒绝；D/L未启动|需有权限的负责人结束作业；旧包保留，无自动等待/续跑|
 |A/G H260 的 `R03_G`、`R04_G`、`R04_A`|历史待办，不在运行或排队|旧续跑曾资源阻断，不自动恢复；先确认用户是否仍要继续此支线|
-|服务器其他用户/项目作业|06:42:11 UTC：GPU1有PID3142527；GPU0无compute行|只是一次快照，不持续监控，不声称此后资源状态|
+|服务器其他用户/项目作业|07:12:59 UTC：GPU1仍有PID3142527，4372 MiB|只是一次复查，不持续监控，不声称此后资源状态|
 
 H260 正式包里八个臂目录并不表示八臂完成：最近只读核查发现后三个待办结果目录为空，最终记录仍是 5 个初始化臂、1300 提交、2 对完整配对。
 
@@ -326,6 +334,7 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 
 ### 阶段更新记录
 
+- **2026-11-06 / Codex / PID3142527明确授权与信号拒绝**：完整核对目标身份和start_ticks后尝试一次SIGINT，系统返回EPERM，信号未发出；失败后复查目标仍在。未通过sudo/docker/SIGKILL绕过。3件工件封印，清单d93d045b…；实验未启动，权限与资源问题未解决。
 - **2026-11-06 / Codex / 明确PID中断授权核查**：授权目标2990859已退出，GPU1新PID3142527占4372 MiB，依用户“其他占用即停”条件终止准入。未发信号、未自动转GPU0、未启动实验。4件阻断工件封印，清单0cfa6ac2…；源和旧包未改，无后继。
 - **2026-11-06 / Codex / Trial23 GPU0改设备准入**：用户仅把设备改为GPU0，其余预算不变。05:27:22 UTC物理GPU0已有PID2972493占4372 MiB，停止不排队。额外只读定位了worker两处写死GPU1与逻辑cuda:0，未改代码/初始化CUDA。4件阻断工件复验，实验计数全0；旧GPU1包清单SHA不变，无自动后继。
 - **2026-11-06 / Codex / Trial23固定成熟A两参考原生准入**：用户明确批准1次GPU1会话、2 Factory、≤1000提交、≤2000求解/50000几何调用；首次资源门发现GPU1 PID2990859占4372 MiB，按合同停止。新实验计数全0，来源完整复核/接线/CPU测试/D/L运行均未开始。6件阻断工件封印，不排队、不自动恢复；旧CPU结果及53次量化正残差边界不变。
