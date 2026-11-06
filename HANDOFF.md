@@ -1,15 +1,52 @@
 # FAS / safer-splat 固定交接文档
 
-> **先读结论：** 最新服务器独立 DEV 观察器 CPU 验证 **12/12 PASS**，测试进程已退出；但随后 SSH 输入编码错误中断了后置保护复核、报告与封印，整体交付仍为 **PARTIAL / CLOSEOUT_BLOCKED_BY_TRANSPORT_ENCODING**。不得写成已封印或 GPU 准入通过。下一步仅补齐后置核验和封印，不重跑测试；需要另行明确授权服务器访问。本次只更新 GitHub 交接。原生 D 仍只有88次提交、L未启动；c87已提交后停止及全部历史失败记录保持不变。
+> **先读结论：** 服务器CPU观察器12/12的收尾已补齐；另经本次明确授权，Trial23固定成熟A的D/L原生软件诊断完成，裁决 **COMPLETED_BOUNDED_PAIR_WITH_LIMITS**。D实际提交500步、未到达；L实际提交417步、达到预注册软件到达条件。共同H260 Progress为D **0.09666634** / L **0.68800032**；917个执行段共享地图Oracle全部SAFE。L c56 WARNING触发1次合法retained Backup；无超角色时限transition、无未决提交。旧D88失败包、Windows失败、CPU收尾故障均保留。不是物理安全、20Hz或路径规划创新证明；所有本任务进程已退出，无自动后继。
 
 - 正式维护位置：**https://github.com/kenqiana04/safer-splat/blob/master/HANDOFF.md**；本机文件只是工作副本，阶段更新须同步到 GitHub。
-- 最后更新：**2026-11-06 17:19，Asia/Shanghai**（Git 提交记录提供精确发布时间）。
+- 最后更新：**2026-11-06 18:18，Asia/Shanghai**（Git 提交记录提供精确发布时间）。
 - 更新者：**Codex，本 safer-splat 会话**。
-- 本次文档变更：记录服务器 CPU 12场景、真实计时、收尾编码阻断及未完成项；仅改本交接文档，不发布研究代码、不改变默认配置。
-- 最近实测阶段：服务器观察器 CPU 验证 `run_20261106T091159Z`（测试完成，未封印）；最近原生阶段仍为 `run_20261106T073852Z`（部分D，L未运行）。
-- 状态依据：本会话已返回的服务器运行输出与已保存文件；本次交接更新没有重新连接服务器，也不是服务器全局进程监控。
+- 本次文档变更：补记服务器CPU封存、新授权D/L实际结果、完整时效与事后解析修复；仅提交本交接文档，不发布研究代码、不改变默认配置。
+- 最近实测阶段：`run_20261106T095437Z`，GPU1单会话、两个独立Factory、917真实提交，102件封印；上一CPU包40件封存，不重跑12场景。
+- 状态依据：本会话4090服务器实际记录、独立只读复算和封印核验。**今后项目实验、测试及计算默认在4090服务器执行；Windows仅作连接客户端和获授权的文档/Git维护。设备选择和实验资源仍须遵守当轮授权，不是无限GPU授权。**
 
-### 最新阶段：服务器观察器 CPU 12/12通过，收尾未完成
+### 最新原生诊断：修复观察器后D/L均完成
+
+- 目录：`/disk1/zlab/tmp/fas_trial23_fixed_mature_a_observer_repaired_native_pair_v1/run_20261106T095437Z/`。102成员清单SHA：`7c073167c4ca89ca28bddcc8761e3a641450ddd2a01554d8bd44e9135febfd35`。系统sha256sum及独立逐项摘要均通过；清单外`SEAL_RECEIPT.json`明确排除自身、清单、缓存/tmp。缓存身份单独锁定。
+- 固定H260来源成熟A `FAS_MATURE_NATIVE_PSF_RECOVERY_DEV_V1`，`experiment_arm=A`、optional guard=false、原TieredPSFWitness、原deadline及失败语义。D→L，每臂上限500；最终goal相同，L仅使用冻结.02q直线前视nominal输入，不增加Planner。原保护源码和默认开关不变；独立DEV worker只解除本次授权入口阻断，observer核心与CPU封存同SHA。
+
+|指标|D直接目标|L直线前视|
+|---|---:|---:|
+|实际尝试/提交|500/500|417/417|
+|停止原因|500上限，未到达|软件到达，非严格Terminal|
+|共同H260 Progress|0.0966663398720|0.6880003190347|
+|实际终点Progress|0.0966680470970|0.9971743411106|
+|终点距离q / 速度q每模型秒|0.708397248474 / 2.01357e-7|0.002215895249 / 0.001517444928|
+|Primary / retained Backup|500 / 0|416 / 1|
+|PSF尝试 / 支撑Primary提交|59 / 59|3 / 3|
+|Oracle SAFE/UNSAFE/UNKNOWN|500/0/0|417/0/0|
+|字节静止周期 / 最长连续|198 / 194|1 / 1|
+|末60步ΔProgress|0|0.0462238963621|
+|near-stall窗口 / 所有60步窗口|258/441|0/358|
+|entry→PlantReturn p50/p95/p99/max ms|340.089/445.113/509.426/835.851|434.301/499.142/690.536/1728.087|
+|guard→transition p50/p95/max ms|0.900/1.041/1.446|1.009/1.152/1.542|
+|最小共享Oracle clearance q|1.97581749e-7|0.00994886074485|
+
+- 软件到达：距离≤.01q且速度≤.005q/模型秒连续10步；L在第417次提交满足，不能写成1e-12严格Terminal。D首次near-stall窗c183–242；该新运行不改写旧V轨迹的c186–245。
+- 首次nominal和QP字节分歧均c0，后续状态自然分叉。L c56：Primary C0/L2/L3 PASS，最终guard620.615302ms=WARNING，原路由`CERTIFIED_NAVIGATION_NOT_TIMELY_USE_VALID_RETAINED_BACKUP`，retained Backup于transition621.359376ms执行，仍在800ms后备时限内。这不是非法提交。其余916次最终OPEN；实际transition超过各角色门限0次，Boundary0、未决提交0。
+- D59次、L3次原制动均在同一Terminal速度证书失败家族触发PSF，全部见证PASS并支撑同一候选Primary首控；不是62种失效，也非执行62条预测整尾。L事件为c380/c382/c408。C0/L1/L2/L3最后结果917/917 PASS，事务COMPLETE/Token APPLIED/trace RECORDED逐条核对。
+- 新D c87：guard227.258861ms、transition228.088336ms；旧c87同步日志干扰未复现，但没有无观察器随机对照，不能把新旧差当严格观察器因果效应。持久化成本未消失：L c12 entry→PlantReturn1728.086734ms，其中entry→epoch1336.045640ms、intent→ack1335.665022ms；原epoch后transition391.564022ms。区间仍含调度，不归因单一fsync，不事后扣时或声称硬实时。
+- 预算：GPU1会话1、Factory2、尝试/提交917、solve979（D559/L420）、geometry API调用11075（D4761/L6314）；会话702.492992s，D348.960899s/L352.703659s，均未触上限。Factory init4.252002s/4.361256s。GPU1 UUID/PCI核对，logical0映射物理GPU1；采样显存最大1764MiB，非严格峰值。两臂torch peak allocated129047552B/reserved148897792B。没有GPU0实验或终止其他进程。
+- 观察器917 intent/outcome闭合，真实收据与state/candidate/action/goal/参考摘要、Token后继、单次Plant、binary32 Euler核对；两个trace FINALIZED。保护3HEAD/38文件及原运行37文件/地图/Profile前后一致、clean，运行code lock未变。新增CPU测试0；事后纯数据复算不调用GPU/solver/geometry。
+- 事后补充解析初版错误：将参考内部ID误比为整个参考记录SHA、将plant_calls列表误当数字；依worker136–139/151/154行修正纯解析，V1失败文件与V2通过输出均封存。另有创建补充脚本的绝对patch路径拒绝，改为任务目录相对路径；无修改raw或重跑原生。不得删除失败记录。
+- 当前原生issued32正半空间残差D38/500、L11/417，最大5.111410184e-10 / 4.03149513772e-10；旧CPU53次另列，未clip或放宽阈值。CPU/GPU非逐位等价，不能拼成严格四组FAS单因素增益。
+- 结论仅是：本已知Trial23中，参考收益能通过固定成熟A完整原生软件资格链；D仍可合法微动趋停。原系统不用Planner仍可作为安全过滤研究；本次直线参考不是新路径规划算法。三任务进程3342040/3342192/3347611已退出、计算进程表空，无自动后继。
+- 核心文件：`FINAL_REPORT.md`、`results/SCORECARD.json`、`results/PAIRED.json`、`results/TRANSACTION_TIMING_AUDIT_V2.json`、`results/PER_CYCLE_TIMING_V2.csv`、`results/RESOURCE_SUMMARY.json`、`SOURCE_LOCK.json`、`SEAL_RECEIPT.json`。
+
+### 服务器观察器 CPU 阶段：12/12通过；后续收尾已完成（旧故障保留）
+
+- **后续补齐记录**：在同一服务器包完成3个保护HEAD/工作树及38文件后置核对，全部与前置一致；原31件工件未改，新增测试0。40件清单经系统sha256sum及独立摘要复验。清单SHA `6fe629588f4d1754643e1bf27abfc370a81ff1b3f5485118ea9913e52c077349`，清单外`SEAL_RECEIPT.json` SHA `b3d7808b6f4b28aa71356e48a57f7d5a386ff9d62524c6758e0196509d9b9cac`。
+- 补齐时finalizer在哈希全部通过后，因中文“成功”不匹配英文`OK`断言退出1；未修改清单或重跑测试，独立逐文件哈希复核后完成清单外回执，保留该故障。收尾至封存225.550199s，非原测试成本。服务器GitHub fetch曾发生GnuTLS -110，未换路重试，待发布补充保存在`/disk1/zlab/tmp/fas_handoff_cpu_closeout_publish_v1/run_20261106T093743Z/`。本次后续任务统一补记GitHub；不是把当时发布失败改为成功。
+- 以下段落保留**最初测试结束时的状态**；其中“未封印/后置待核验”已由上述补齐记录解决。CPU证据仍不赋予GPU准入，也不证明掉电/跨重启exactly-once或真实GPU时效。
 
 - 目录：`/disk1/zlab/tmp/fas_dev_observer_server_cpu_validation_v1/run_20261106T091159Z/`。实际主机 `zlab-Super-Server`，用户 `zlab` / UID1000，解释器 `/usr/bin/python3`；使用正常 `zlab-4090` 通道，无提权、无访问拒绝。今后项目实验和测试仅在服务器运行；Windows仅用于获授权的文档/Git维护，不继续本机测试。
 - **CPU结果12 PASS / 0 FAIL / 0 NOT_RUN，进程exit=0**。仅1个测试进程；套件内部墙钟1.2304334838408977s，含进程启动1.2803700200747699s；临时测试数据20,719字节。预算120s / 最多2进程 / 16MiB；内部100s监护、外部115s超时。没有自动使用剩余额度。
@@ -30,7 +67,7 @@
 - V2：`C:\Users\zlab\Documents\Codex\research-output\FAS_DEV_OBSERVER_CPU_FAILURE_RESOLUTION_V2\run_20261106T085252Z`，4次固定计时探测后12场景通过，总2测试进程、约0.4431371s、27399字节；用户要求改为仅服务器后未封印。Windows `GetTickCount64`报告15.625ms分辨率，25ms注入曾读出16ms，而同区间`QueryPerformanceCounter`为25.1874/25.253ms；旧断言在4探测中2次为假。修正测试测量而非放宽20/40ms阈值；该Windows解释不自动覆盖Linux。
 - V1/V2与服务器新预算分别记账，旧失败和未封印状态保留；不得将Windows测试写成服务器原生集成验证。
 
-### 最新一次原预算运行：D 88步，观察器时效干扰导致停止
+### 上一次原预算运行（历史保留）：D 88步，观察器时效干扰导致停止
 
 - 服务器包：`/disk1/zlab/tmp/fas_trial23_fixed_mature_a_reference_native_pair_v1/run_20261106T073852Z/`；本机research-output同名目录下`SEALED_RESULT/`完整副本。76件封印SHA：`d91e07014697826d9907a9b22326e2a4287da38a6a23ffa4a94d3fce2f6e4988`。
 - 现场GPU1空闲、物理UUID/PCI映射通过，已修复代码及同SHA离线缓存复用；12项CPU检查通过。固定A、optional guard false、原TieredPSFWitness运行身份已落盘。三HEAD/37保护文件前后clean且哈希一致。
@@ -108,7 +145,7 @@
 
 ### 最新明确裁决
 
-观察器最新状态：**CPU 12/12 PASS；工程收尾 PARTIAL / CLOSEOUT_BLOCKED_BY_TRANSPORT_ENCODING**，详见文首。以下为仍有效的上一完整CPU参考比较结论，不是本次观察器封印裁决：
+最新状态：**COMPLETED_BOUNDED_PAIR_WITH_LIMITS**，D500/L417，封存完成，详见文首。CPU观察器收尾已补齐，但其证据不等于原生权限；本次原生资格来自新授权与实际链路。以下为保留的较早CPU参考结论，不与新GPU数据混成四组：
 
 `PASS_SAME_SOURCE_CPU_QP_REFERENCE_DIAGNOSIS_WITH_LIMITS`
 
@@ -116,17 +153,12 @@
 
 ### 推荐下一步——尚未执行
 
-**唯一紧接动作：补齐已完成服务器CPU验证的后置保护复核、报告和封印，NOT_STARTED。** 需要用户另行授权服务器访问；采用ASCII转义传输避免重复编码失败，只处理`run_20261106T091159Z`收尾，不重跑12场景、不消耗新测试额度、不启动GPU。本次更新交接不包含该访问授权。
+**本次有界任务已结束。唯一下一步建议：先审阅该单任务证据和完整持久化成本，决定是否另行授权同数值域、同合同的独立任务复验，NOT_STARTED。** 不自动扩样，不重复Trial23求好结果，不重跑旧CPU两组，不接A*或继续局部LP/PSF筛选。
 
-**后续原生研究仍待单独批准：** 固定成熟A的D已有88次提交、L未运行。观察器CPU修复验证不等于原生时效通过；只有收尾证据闭合、精确wrapper/资源与预算准入完成，才讨论新授权的一次有界验证。不得将c87归因为参考/成熟A质量，不启动A*或局部动作扩搜：
-
-- 两组同源QP的CPU比较已完成；继续保持相同目标/CBF行/六盒行/求解器/PD，不可把旧无盒B拿来与有盒A混称单因素。
-- task goal继续在snapshot内；tracking target在旁路记录并关联state/candidate/action身份，不擅改Token格式或沿用旧Token。本轮CPU日志没有任何native资格。
-- 本轮.10q诊断域仅是范围限制，不是已观测自由空间或认证安全管；其余地图未知域仍未解决。
-- 若继续CPU成熟A对照，必须先固定其真实资格与时效语义；若需要GPU/Factory/Token/PlantCommit，必须另获明确授权。不能把CPU前两组与GPU后两组拼成严格公平四组。
-- 成熟A若仍阻断可跟踪参考，定位后备/拒绝/时效的首次分歧；不放宽安全条件。停止逐点LP/PSF筛选，不自动接Planner或改研究主版本。
-
-这一下一步是建议，**不是排队任务、自动续跑或已获原生授权**。
+- task goal继续在snapshot；tracking target旁路绑定state/candidate/action，不能擅改Token、半径、Deadline或安全门。
+- 参考收益已穿过成熟A，但仅单个已知开发Trial23，D→L固定顺序；无跨地图泛化、无严格实时或物理安全证据。
+- 原CPU与新GPU数值域不同，不能直接计算FAS单因素增益；.10q诊断域也不是自由空间/安全管证明。
+- 新GPU、Factory或导航任务均须另行授权和现场资源门；默认4090服务器执行不等于持续占用或无限授权。
 
 ## 2. 使用版本、分支与工作区状态
 
@@ -138,10 +170,10 @@
 - **这不是服务器 Candidate/Frozen/Perf 的同一版本，不能用本机 HEAD 冒充原生实验方法身份。**
 - 已有 dirty 状态必须保留：已跟踪修改为 `reproduction/cross_dataset/tum_splatfacto_v1r5_command_preregistration_v1/v1r5_exact_training_command.sh`，另有 `.codex*`、`.tmp*`、`docs/` 及 reproduction 下未跟踪文件/目录。不要执行 reset、clean、stash 或批量 add。
 - 本次只提交、推送 `HANDOFF.md`；使用基于远端 `master` 的隔离工作树，不修改上述已有文件或切换本机工作分支。文档发布不表示实验源码/数据被上传或方法版本改变。
-- 本次GitHub发布基点：`master@74cf88d54714722843724819bf7d7bc67e43dbbc`；隔离分支 `codex/handoff-server-cpu-20261106t091941z`，隔离工作树 `C:\Users\zlab\Documents\Codex\github-publish-work\safer-splat-handoff-server-cpu-20261106T091941Z`。修改前命名文件检查点：`C:\Users\zlab\Documents\Codex\research-output\checkpoints\FAS_HANDOFF_BEFORE_20261106T091941Z\CHECKPOINT.json`，保存HEAD/分支/dirty及关键文件哈希；不是实验封印或全部未跟踪文件备份。发布提交号以GitHub文件历史为准。
+- 本次GitHub发布基点：`master@0ff50587ec0b0b9e6054483a976218069d62aa90`；隔离分支 `codex/handoff-trial23-observer-native-20261106t095437z`，隔离工作树 `C:\Users\zlab\Documents\Codex\github-publish-work\safer-splat-handoff-native-20261106T095437Z`。修改前命名检查点分支 `codex/checkpoint-before-trial23-observer-native-20261106t095437z`；不包含用户未提交文件备份，不恢复/reset用户工作树。发布提交号以GitHub文件历史为准。
 - 修改前命名检查点：`C:\Users\zlab\Documents\Codex\research-output\checkpoints\FAS_HANDOFF_BEFORE_20261106T035713Z\CHECKPOINT.json`。包含 HEAD、分支、完整 porcelain 状态和已有 tracked diff；这是文件检查点，不是 Git commit，也不是所有未跟踪数据的备份。
 
-### 服务器保护工作树（最近 CPU 阶段前后均匹配、clean）
+### 服务器保护工作树（最近原生D/L阶段前后均匹配、clean）
 
 共同父目录：`/disk1/zlab/v3_repair_worktrees/`
 
@@ -151,7 +183,7 @@
 |Frozen|`safer-splat-fas-vnext-l2-deadline-routing-correctness-v1`|`481c3e5e24648d0219e1969f1145648ac99f6943`|
 |Perf|`safer-splat-fas-vnext-map-epoch-cache-perf-v1`|`b0a6bbb96512cef5085feada98a900bf9d8ff15f`|
 
-最近阶段对 47 个保护文件做前后 SHA 一致性核对。这里记录的是该阶段快照，下一次需要用到时重新核对，不宣称永久 clean。
+本次对CPU锁定38个文件及原运行37文件/地图/Profile快照做前后核对，两组有重叠，不相加为75个不同文件。三HEAD/dirty一致。较早47文件口径不与本轮混同；下一次使用时重新核对，不宣称永久clean。
 
 现有 SSH 别名为 `zlab-4090`，本会话曾成功使用已有连接。Python 路径为 `/disk1/zlab/conda_envs/safer_splat_official/bin/python`。不在文档保存密码/私钥；连接和执行范围以每轮用户授权为准。
 
@@ -161,10 +193,10 @@
 |---|---|---|
 |Trial23阶段0/A无QP两组CPU跟踪|已结束并封印|保留旧43工件，不重跑|
 |本轮同源QP两参考CPU对照|已结束并封印|两个子进程正常退出，无后台后继任务|
-|完整四组参考×FAS对照|NOT_READY|前两组CPU已实跑，成熟A两组及原生等价尚未验证|
-|成熟A相同参考对照|D88真实提交，c87实际转换越过OPEN边界；提交前同步日志区间占时效间隔99.6%，L未启动|76件已封印；需要先修复DEV观察器时效干扰，未实施、无自动后继|
+|完整四组参考×FAS对照|跨数值域，不能作严格四组因果比较|前两组CPU已实跑，固定成熟A的D/L已在GPU软件仿真完成；CPU/GPU非逐位等价|
+|成熟A相同参考对照|本次D500/L417完成并封印，旧D88失败独立保留|102件；无运行中任务、无自动后继|
 |A/G H260 的 `R03_G`、`R04_G`、`R04_A`|历史待办，不在运行或排队|旧续跑曾资源阻断，不自动恢复；先确认用户是否仍要继续此支线|
-|服务器其他用户/项目作业|07:12:59 UTC：GPU1仍有PID3142527，4372 MiB|只是一次复查，不持续监控，不声称此后资源状态|
+|服务器其他用户/项目作业|本次结束后compute进程表空；GPU0/GPU1各6MiB基线|只是收尾被动快照，不持续监控、不保证未来空闲；没有终止他人进程|
 
 H260 正式包里八个臂目录并不表示八臂完成：最近只读核查发现后三个待办结果目录为空，最终记录仍是 5 个初始化臂、1300 提交、2 对完整配对。
 
@@ -205,7 +237,7 @@ Candidate 下 `reproduction/runtime/active_runtime_assurance_v2/runtime_types.py
 
 ## 5. 最新实测结果与负结果
 
-### Trial23同源QP两参考CPU诊断（最新）
+### Trial23同源QP两参考CPU诊断（历史；最新原生结果见文首）
 
 直接导入源CBF/DoubleIntegrator和成熟A原六盒行函数；alpha5/beta1、minimal=True、Clarabel defaults不变。失败PD fallback被拒绝，不当作成功动作。与阶段A相同初态/goal/地图/PD/前视.02q/binary32/H500/到达阈值，固定D→L各一次，仍不加FAS恢复/权限层。
 
@@ -301,10 +333,10 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 
 ## 6. 证据位置、封印与复核入口
 
-### 最新观察器原始证据（未封印）
+### 观察器 CPU 原始证据（已补齐封印，原收尾失败保留）
 
-- 服务器：`/disk1/zlab/tmp/fas_dev_observer_server_cpu_validation_v1/run_20261106T091159Z/`；以`results/CPU_RESULTS.json`、`results/S04_COMPONENTS.json`、`results/LAUNCH_RECEIPT.json`及日志为入口。实际12/12 CPU通过，尚缺后置保护、最终报告与清单；没有可报告的manifest SHA，也未声称完整下载到本机。
-- 最近原生封印仍是文首`run_20261106T073852Z`的76件部分D结果。下面的968件包是最近完整同源CPU QP参考比较，证据域不同，不合并。
+- 服务器：`/disk1/zlab/tmp/fas_dev_observer_server_cpu_validation_v1/run_20261106T091159Z/`；以`results/CPU_RESULTS.json`、`results/S04_COMPONENTS.json`、`results/LAUNCH_RECEIPT.json`及日志为入口。12/12 CPU通过；后置保护、FINAL_REPORT与40件清单已补齐，manifest SHA `6fe629588f4d1754643e1bf27abfc370a81ff1b3f5485118ea9913e52c077349`。未声称完整下载到本机，复验不重跑测试。
+- 最近原生封印是文首`run_20261106T095437Z`的102件D/L结果，清单SHA `7c073167c4ca89ca28bddcc8761e3a641450ddd2a01554d8bd44e9135febfd35`；完整服务器根目录及核心文件见文首。旧`run_20261106T073852Z`76件部分D失败结果保留。下面的968件包是完整同源CPU QP参考比较，证据域不同，不合并。
 
 ### 最近完整CPU参考比较权威包
 
@@ -362,7 +394,7 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 
 ## 7. 四组对照的进入条件
 
-拟议四组为直接目标/航点参考 × 无FAS/固定成熟A，四组都使用同一QP。前两个参考＋QP臂已在隔离CPU域完成；成熟A的D仅88次原生提交后停止、L未启动，不能称完整四组完成，也不能跨CPU/GPU数值域直接计算FAS单因素增益。
+拟议四组为直接目标/航点参考 × 无FAS/固定成熟A，四组都使用同一QP。前两个参考＋QP臂在隔离CPU域完成；固定成熟A的新D500/L417在GPU原生软件域完成。旧D88/L未启动仅属历史失败包。仍不能把两种数值域拼成严格四组因果试验，不能直接计算FAS单因素增益。
 
 1. 同一源QP、盒约束、量化、求解失败规则；不能用原无盒与有盒混称同QP。
 2. 同地图、初态、最终goal、动力学与单位；两个航点组共享路径与跟踪规则。
@@ -395,6 +427,7 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 
 ### 阶段更新记录
 
+- **2026-11-06 18:18 / Codex / 服务器观察器收尾与新授权固定A原生D/L**：先复验CPU40件、原生父包76件及保护身份，未重跑12场景；新独立DEV保持CPU观察器核心，复用设备绑定/离线缓存，D→L实际完成500/417提交。917/917执行段Oracle SAFE；共同H260 Progress 0.09666634/0.68800032；L软件到达，c56 WARNING合法后备1次，无超角色transition。会话702.493s、solve979、geometry11075，所有预算内；保护前后一致、102件封印7c073167…、任务进程退出。事后解析路径/schema错误修复与原失败均留存，不重跑实验。GitHub仅发布HANDOFF，旧CPU编码/中文OK断言/Git fetch失败均补记而非回改裁决。后续只建议审阅证据再决定是否授权独立复验，不自动扩样。
 - **2026-11-06 17:19 / Codex / 服务器观察器CPU验证与未完成收尾**：新授权预算内1进程完成12/12场景，含启动1.280370s、20,719字节，Linux真实单调钟及20/40ms阈值不变。随后中文stdin编码失败发生于后置脚本执行前，SSH退出1；后置保护/报告/清单未完成，整体PARTIAL，不宣称GPU准入。保留Windows V1失败、V2未封印以及原生c87已提交后停止。此次仅GitHub HANDOFF更新，没有重连、测试或新实验。
 - **2026-11-06 / Codex / PID3142527明确授权与信号拒绝**：完整核对目标身份和start_ticks后尝试一次SIGINT，系统返回EPERM，信号未发出；失败后复查目标仍在。未通过sudo/docker/SIGKILL绕过。3件工件封印，清单d93d045b…；实验未启动，权限与资源问题未解决。
 - **2026-11-06 / Codex / 明确PID中断授权核查**：授权目标2990859已退出，GPU1新PID3142527占4372 MiB，依用户“其他占用即停”条件终止准入。未发信号、未自动转GPU0、未启动实验。4件阻断工件封印，清单0cfa6ac2…；源和旧包未改，无后继。
