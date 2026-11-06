@@ -3,11 +3,21 @@
 > **先读结论：** 最新授权任务已实际完成服务器CPU接入与有界准入，裁决 **COMPLETED_BOUNDED_ADMISSION_WITH_NEGATIVE_RESULT / APPLICABILITY_LIMIT_STATIC_LINE_REJECTED**。8项接口检查PASS；固定6请求中4个端点PASS、Trial17直线FAIL（FINITE_UNSAFE_WITNESS）、Trial53直线因首个非PASS停止而NOT_RUN。7次FULL、几何进程4.529989s，四臂GPU全部未启动。不是停在计划，也不是成熟A运行失败或“收益只能在Trial23”的证明。旧Trial23 D500/L417实际结果与全部失败保留；本次39件封印完成、进程退出，无自动后继。
 
 - 正式维护位置：**https://github.com/kenqiana04/safer-splat/blob/master/HANDOFF.md**；本机文件只是工作副本，阶段更新须同步到 GitHub。
-- 最后更新：**2026-11-06 19:20，Asia/Shanghai**（Git 提交记录提供精确发布时间）。
+- 最后更新：**2026-11-06 23:22，Asia/Shanghai**（Git 提交记录提供精确发布时间）。
 - 更新者：**Codex，本 safer-splat 会话**。
 - 本次文档变更：补记新授权Trial17/53的真实CPU准入否定结果、立即停止、零原生执行及封存；仅提交本交接文档，不发布研究代码、不改变默认配置。
 - 最近实测阶段：CPU准入`run_20261106T111343Z`，5/6请求实际完成、7FULL，39件封印。最近原生仍是Trial23 `run_20261106T095437Z`的917真实提交；未重跑旧12场景或旧D/L。
 - 状态依据：本会话4090服务器实际记录、独立只读复算和封印核验。**今后项目实验、测试及计算默认在4090服务器执行；Windows仅作连接客户端和获授权的文档/Git维护。设备选择和实验资源仍须遵守当轮授权，不是无限GPU授权。**
+
+### 本窗口接续核对：绕障预算待核实，未启动新计算
+
+- **2026-11-06 23:22 Asia/Shanghai，BUZHIDAO / Safer-Splat-1 / Safer-Splat 窗口**：收到用户继续绕障实验的交接，正常复用 `ssh zlab4090`，实际主机 `zlab-Super-Server`、UID1000；连接成功，没有权限拒绝。当前用户要求所有实验在服务器执行、保留安全门、不得干预其他进程或实物设备；预算不能核实时停在相关操作前。
+- 本次状态为 **BLOCKED_BUDGET_UNVERIFIED_FOR_DETOUR_EXECUTION**，仅完成现状核对与接续合同准备，**绕障实验未完成**。最新直线准入包39、Trial23原生包102、地图准入包50、原规划包6成员共197件全部逐项摘要通过；准入SOURCE_LOCK中的97来源文件与三个保护HEAD/clean状态一致。原Trial23 D500/L417、Trial17直线FAIL、Trial53直线NOT_RUN及四原生臂NOT_STARTED保持原归属。
+- 在服务器项目、三个保护工作树及 `/disk1/zlab/tmp` 深度≤3的近期合同/授权/预算/报告/计划文件检查范围内，未找到后续绕障包或独立绕障预算。**这仅是所查范围未发现，绕障后续状态仍UNVERIFIED，不推断全局从未开始。** 所查服务器目录未发现相关AGENTS/SKILL；`/home/zlab/.agents`为空；已读取GitHub AGENTS与HANDOFF。
+- 原 `AUTHORIZATION.json` 的132FULL/300s和条件四臂GPU额度属于首非PASS即停的已关闭直线计划，不能作为绕障剩余额度继续消费。地图合同还要求先定义导航支持有效域；当前该条件仍未解决。已在本窗口请求提供绕障预算或记录位置，不重问SSH授权。
+- 被动进程快照未发现匹配本任务的运行worker；GPU1 UUID `GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d` 有其他进程PID3317124占4370MiB。仅为检查时快照，未操作该进程、未排队或持续轮询。新增测试/FULL/求解/GPU会话/Factory/PlantCommit均0；哈希审计不计作实验。
+- 服务器新包：`/disk1/zlab/tmp/fas_detour_continuation_readonly_audit_v1/run_20261106T152244Z/`；6成员清单SHA `a2411ba0b84ee03467b806e72d8b7b009ecf4ca227c6335498cc8716126e30e9`，清单外SEAL_RECEIPT避免自指。包含 `AUDIT_SUMMARY.json`、`MANIFEST_VERIFICATION.json`、`PROTECTED_VERIFICATION.json`、进程/GPU快照和 `NEXT_STEP_CONTRACT.md`。未覆盖旧封印包或保护源码。
+- 下一步：核实独立绕障预算与有限导航有效域，事前冻结任务、规划/跟踪规则、完整闭边验证、FULL/墙钟/候选/重试上限和UNKNOWN处理，再于新DEV推进CPU参考与几何验证；路径通过后才讨论同数值域软件对照。原生GPU须满足其独立预算、资源和完整资格门。上述计算均NOT_STARTED，无自动后继。
 
 ### 最新实际阶段：Trial17直线准入FAIL，按合同停止四臂计划
 
@@ -455,6 +465,8 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 6. 刷新时间与更新者，检查Git diff只涉及本轮文档；仅stage交接相关文件，提交并以非强推方式同步GitHub默认分支，核对远端SHA与文件。分支保护不允许直推则提交PR并说明尚未合入。若本轮明确只读，遵守只读并在回复注明未更新。
 
 ### 阶段更新记录
+
+- **2026-11-06 23:22 / Codex / Safer-Splat窗口接续审计**：SSH成功；197历史成员、97保护文件和三HEAD复验一致。所查范围未发现后续绕障预算，绕障状态仍UNVERIFIED；原直线计划已关闭，不能回收余额。保存6件只读核对包a2411ba0…与下一步合同；新实验全部0，等待预算位置及导航域门解决，未干预GPU1其他作业。仅更新HANDOFF。
 
 - **2026-11-06 19:20 / Codex / Trial17/53有界准入否定结果**：用户批准准入及通过后的四臂，本轮实际8接口PASS；四端点PASS后17直线FINITE_UNSAFE_WITNESS（比例.75、h=−2.24974239245e−4q²），立即停止，53直线NOT_RUN，四GPU臂未启动。7FULL/4.529989s、0GPU/Factory/提交/求解；账本与字节独立复核、3HEAD/97来源不变、39件封印910aea7c…；旧失败保留，任务进程退出，GitHub仅更新HANDOFF。不能据此宣称跨任务性能或成熟A失败。
 - **2026-11-06 19:03 / Codex / 服务器只读跨任务复验设计**：复验102+50成员、34消费来源、三HEAD/38文件/3地图资产；从冻结85输入排除16已知任务，固定哈希选17/53，6D字节与历史state identity一致。保存2任务4臂AB/BA条件方案；两直线未查，先建议≤132FULL CPU准入，原生45min/4Factory等预算尚需另行授权。0测试/新求解/FULL/GPU/Factory/提交，6件方案封印87e061cc…；仅GitHub HANDOFF发布，旧失败不变，无自动后继。
