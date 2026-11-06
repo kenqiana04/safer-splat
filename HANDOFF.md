@@ -1,13 +1,27 @@
 # FAS / safer-splat 固定交接文档
 
-> **先读结论：** 服务器CPU观察器12/12的收尾已补齐；另经本次明确授权，Trial23固定成熟A的D/L原生软件诊断完成，裁决 **COMPLETED_BOUNDED_PAIR_WITH_LIMITS**。D实际提交500步、未到达；L实际提交417步、达到预注册软件到达条件。共同H260 Progress为D **0.09666634** / L **0.68800032**；917个执行段共享地图Oracle全部SAFE。L c56 WARNING触发1次合法retained Backup；无超角色时限transition、无未决提交。旧D88失败包、Windows失败、CPU收尾故障均保留。不是物理安全、20Hz或路径规划创新证明；所有本任务进程已退出，无自动后继。
+> **先读结论：** 最新阶段仅完成4090服务器冻结来源核查与跨任务复验设计：**SOURCE_AND_DESIGN_LOCKED_GEOMETRY_ADMISSION_PENDING**。事前固定规则从69个未被既有DEV名单排除的候选ID中选出Trial17/53，拟各做固定成熟A的D/L对照，顺序17 D→L、53 L→D；两条直线资格尚未检查，所有新实验均NOT_STARTED。原Trial23实测裁决仍为 **COMPLETED_BOUNDED_PAIR_WITH_LIMITS**：D500、L417提交，共同H260 Progress 0.09666634/0.68800032，L软件到达，917执行段共享Oracle SAFE。旧D88、Windows及收尾故障全部保留。新方案不是GPU授权、物理安全或跨任务增益证明，无自动后继。
 
 - 正式维护位置：**https://github.com/kenqiana04/safer-splat/blob/master/HANDOFF.md**；本机文件只是工作副本，阶段更新须同步到 GitHub。
-- 最后更新：**2026-11-06 18:18，Asia/Shanghai**（Git 提交记录提供精确发布时间）。
+- 最后更新：**2026-11-06 19:03，Asia/Shanghai**（Git 提交记录提供精确发布时间）。
 - 更新者：**Codex，本 safer-splat 会话**。
-- 本次文档变更：补记服务器CPU封存、新授权D/L实际结果、完整时效与事后解析修复；仅提交本交接文档，不发布研究代码、不改变默认配置。
+- 本次文档变更：补记只读来源核查、Trial17/53固定选样、条件准入与拟议预算；仅提交本交接文档，不发布研究代码、不改变默认配置，不启动实验。
 - 最近实测阶段：`run_20261106T095437Z`，GPU1单会话、两个独立Factory、917真实提交，102件封印；上一CPU包40件封存，不重跑12场景。
 - 状态依据：本会话4090服务器实际记录、独立只读复算和封印核验。**今后项目实验、测试及计算默认在4090服务器执行；Windows仅作连接客户端和获授权的文档/Git维护。设备选择和实验资源仍须遵守当轮授权，不是无限GPU授权。**
+
+### 最新规划阶段：两任务四臂设计锁定，几何准入仍待批准
+
+- 服务器包：`/disk1/zlab/tmp/fas_fixed_a_dl_independent_task_replication_plan_v1/run_20261106T105714Z/`。6件文档/JSON清单SHA `87e061cc9a67c2f39aa8a6990f4566907f0302c7b28baaf24f438c25f5709618`；系统sha256sum与独立逐项摘要通过，清单外`SEAL_RECEIPT.json`不自指。这是方案封存，不是新增实验PASS。
+- 实际只读核查：最新原生包102成员、地图准入包50成员完整复验；历史Full85的2831成员仅核验直接消费子集，未全量审计。34个消费来源、三保护HEAD/38文件及3地图资产前后相同，工作树clean。源码/身份计算全部在`zlab-Super-Server`完成，未导入运行时，未运行任何测试、CUDA、GPU/Factory/Token/PlantCommit、求解或FULL。没有探测当前GPU资源，不假定未来空闲。
+- 选样来源：历史`fas_vnext_corrected_full85_v1/run_20261011T153359Z/EXECUTION_LOCK.json`，SHA `a9f3e02a6ee27749447525b070a29fdd95fbf2d1a9cdd98d02bafb3819460de4`。85个ID排除既有COHORT列出的12个DEV来源及23/54/89/1共16个，剩69；按固定salt `FAS_FIXED_A_DL_INDEPENDENT_TASK_REPLICATION_V1` + `:` + 十进制ID的SHA排序取前二，得到 **17、53**。完整排名/排除理由/6D字节锁保存在`SELECTION_AND_ORDER_LOCK.json`。
+- 两任务的初始零速度、原goal/map/dt、canonical state identity与历史首trace一致；未复用旧控制器成绩作为成熟A基线。选择先于读取个体历史结果；之后读到旧终点/首角色，未改变选样。它们是新增参考比较任务，**不是全项目未见过的holdout或独立环境样本**；来自同地图环形任务族，53与54相邻，相关性保留。不得根据后续结果换样本。
+- 旧直连：Trial23共享CPU条件PASS（39 FULL）；54/89/1为`FINITE_UNSAFE_WITNESS`（4/7/7）。均属既有结果，且全部`route_qualified=false`、全局地图支持域UNRESOLVED。新17/53直线及端点为NOT_CHECKED；旧500步轨迹不证明直线安全，静态PASS也不等于动力学可跟踪或真实物理无碰撞。
+- **唯一建议的下一步，尚未授权/启动**：固定17/53各起点、终点、完整直线，共6个顶层CPU请求、最多132次实际FULL（4点+两线各64）、计算墙钟≤300s、1进程、无重试/替换；单点≤15s、单线≤90s，计数无法可靠约束则不启动。任一FAIL/UNKNOWN/超限/身份问题停止该复验计划，不搜索绕行、不调参数。另最多8项新输入/顺序/计数接口检查，≤120s、2进程、16MiB；复用观察器12项旧证据，不重跑套件。
+- **仅在两任务准入通过后可另行批准的原生预算建议**：T17-D→T17-L→T53-L→T53-D；GPU1单会话、4独立Factory、每臂≤500周期/600s，总尝试/提交各≤2000、求解≤4000、几何调用≤100000；会话≤2700s（45min），2400s后不入新周期。初始化、失败、后验和全部持久化开销计账；联合上限可能导致删失，不能承诺满额。此预算不是旧两臂授权自动翻倍。
+- 固定同一原生GPU数值栈与成熟A、原TieredPSFWitness、optional guard=false、冻结.02q直线前视和实际PD算术/dtype、最终task goal、半径/Terminal/Deadline/身份链。四臂状态/后备/Token/缓存独立，同seed0；只读磁盘缓存同SHA，记录冷热与顺序影响。旧CPU53次量化残差与CPU/GPU非逐位等价继续分域，不计算跨域FAS单因素收益。
+- 主要指标：每任务有实际共同H260时的Progress差L−D；提前停止不补终态、不伪造H260，另列实际共同长度、软件到达、末60步/near-stall、角色与拒绝、Oracle、完整wall/关键区间时效。只有2任务，不做周期独立样本推断或显著性；方向一致与工程幅度分开，数值持平容差1e−6不等于有用增益，.01 Progress仅为事前建议的实用幅度标记。若一正一负则STATE_DEPENDENT；路线准入失败则APPLICABILITY_LIMIT，不将它误当控制性能失败。
+- 未来最小接线缺口：旧`prepare.py:57`硬编码23/89/54/1，旧session仍为2Factory/1000/2000/50000，必须在另行授权的新DEV中显式接入17/53身份与4臂预算；本轮未实施。不得改成熟A/安全门或静默沿用旧PARITY里的A/G描述。关键证据：最新`instrumentation.py:7–24`、`native_worker.py:127–154`；Candidate smoke`:438–445`与runtime_types`:162–183,260–263`。
+- 文件：`FINAL_REPORT.md`、`SOURCE_LOCK.json`、`SELECTION_AND_ORDER_LOCK.json`、`PROPOSED_BUDGET.json`、`READONLY_CROSSCHECK.json`、`REPRODUCE_READONLY.md`。SSH正常结束，没有测试/实验子进程或后继。首个非TTY交互stdin关闭发生于项目命令前；随后同一账号配置TTY成功，无访问拒绝/提权。所有旧失败原件保持不变。
 
 ### 最新原生诊断：修复观察器后D/L均完成
 
@@ -145,7 +159,7 @@
 
 ### 最新明确裁决
 
-最新状态：**COMPLETED_BOUNDED_PAIR_WITH_LIMITS**，D500/L417，封存完成，详见文首。CPU观察器收尾已补齐，但其证据不等于原生权限；本次原生资格来自新授权与实际链路。以下为保留的较早CPU参考结论，不与新GPU数据混成四组：
+最新规划状态：**SOURCE_AND_DESIGN_LOCKED_GEOMETRY_ADMISSION_PENDING**，17/53选样与拟议四臂方案封存，查询/实验未启动。最新实际原生状态仍是**COMPLETED_BOUNDED_PAIR_WITH_LIMITS**，D500/L417，封存完成，详见文首。CPU观察器收尾已补齐，但其证据不等于原生权限；原生资格来自此前新授权与实际链路。以下为保留的较早CPU参考结论，不与新GPU数据混成四组：
 
 `PASS_SAME_SOURCE_CPU_QP_REFERENCE_DIAGNOSIS_WITH_LIMITS`
 
@@ -153,7 +167,7 @@
 
 ### 推荐下一步——尚未执行
 
-**本次有界任务已结束。唯一下一步建议：先审阅该单任务证据和完整持久化成本，决定是否另行授权同数值域、同合同的独立任务复验，NOT_STARTED。** 不自动扩样，不重复Trial23求好结果，不重跑旧CPU两组，不接A*或继续局部LP/PSF筛选。
+**本次只读规划已结束。唯一下一步建议：另行批准固定Trial17/53的有限CPU直线/端点准入和最小输入接线检查，NOT_STARTED。** 两条均通过后再决定是否批准文首四臂原生预算；任一不合格保留原样本并停止，不自动扩样，不重复Trial23求好结果，不重跑旧CPU两组，不接A*或继续局部LP/PSF筛选。
 
 - task goal继续在snapshot；tracking target旁路绑定state/candidate/action，不能擅改Token、半径、Deadline或安全门。
 - 参考收益已穿过成熟A，但仅单个已知开发Trial23，D→L固定顺序；无跨地图泛化、无严格实时或物理安全证据。
@@ -170,7 +184,7 @@
 - **这不是服务器 Candidate/Frozen/Perf 的同一版本，不能用本机 HEAD 冒充原生实验方法身份。**
 - 已有 dirty 状态必须保留：已跟踪修改为 `reproduction/cross_dataset/tum_splatfacto_v1r5_command_preregistration_v1/v1r5_exact_training_command.sh`，另有 `.codex*`、`.tmp*`、`docs/` 及 reproduction 下未跟踪文件/目录。不要执行 reset、clean、stash 或批量 add。
 - 本次只提交、推送 `HANDOFF.md`；使用基于远端 `master` 的隔离工作树，不修改上述已有文件或切换本机工作分支。文档发布不表示实验源码/数据被上传或方法版本改变。
-- 本次GitHub发布基点：`master@0ff50587ec0b0b9e6054483a976218069d62aa90`；隔离分支 `codex/handoff-trial23-observer-native-20261106t095437z`，隔离工作树 `C:\Users\zlab\Documents\Codex\github-publish-work\safer-splat-handoff-native-20261106T095437Z`。修改前命名检查点分支 `codex/checkpoint-before-trial23-observer-native-20261106t095437z`；不包含用户未提交文件备份，不恢复/reset用户工作树。发布提交号以GitHub文件历史为准。
+- 本次GitHub发布基点：`master@9c6cc461983fae3507e6cfd3b37534a216f955aa`；隔离分支 `codex/handoff-reference-replication-plan-20261106`，隔离工作树 `C:\Users\zlab\Documents\Codex\github-publish-work\safer-splat-handoff-replication-plan-20261106`。修改前命名检查点分支 `codex/checkpoint-before-reference-replication-plan-20261106`；不包含用户未提交文件备份，不恢复/reset用户工作树。发布提交号以GitHub文件历史为准。
 - 修改前命名检查点：`C:\Users\zlab\Documents\Codex\research-output\checkpoints\FAS_HANDOFF_BEFORE_20261106T035713Z\CHECKPOINT.json`。包含 HEAD、分支、完整 porcelain 状态和已有 tracked diff；这是文件检查点，不是 Git commit，也不是所有未跟踪数据的备份。
 
 ### 服务器保护工作树（最近原生D/L阶段前后均匹配、clean）
@@ -427,6 +441,7 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 
 ### 阶段更新记录
 
+- **2026-11-06 19:03 / Codex / 服务器只读跨任务复验设计**：复验102+50成员、34消费来源、三HEAD/38文件/3地图资产；从冻结85输入排除16已知任务，固定哈希选17/53，6D字节与历史state identity一致。保存2任务4臂AB/BA条件方案；两直线未查，先建议≤132FULL CPU准入，原生45min/4Factory等预算尚需另行授权。0测试/新求解/FULL/GPU/Factory/提交，6件方案封印87e061cc…；仅GitHub HANDOFF发布，旧失败不变，无自动后继。
 - **2026-11-06 18:18 / Codex / 服务器观察器收尾与新授权固定A原生D/L**：先复验CPU40件、原生父包76件及保护身份，未重跑12场景；新独立DEV保持CPU观察器核心，复用设备绑定/离线缓存，D→L实际完成500/417提交。917/917执行段Oracle SAFE；共同H260 Progress 0.09666634/0.68800032；L软件到达，c56 WARNING合法后备1次，无超角色transition。会话702.493s、solve979、geometry11075，所有预算内；保护前后一致、102件封印7c073167…、任务进程退出。事后解析路径/schema错误修复与原失败均留存，不重跑实验。GitHub仅发布HANDOFF，旧CPU编码/中文OK断言/Git fetch失败均补记而非回改裁决。后续只建议审阅证据再决定是否授权独立复验，不自动扩样。
 - **2026-11-06 17:19 / Codex / 服务器观察器CPU验证与未完成收尾**：新授权预算内1进程完成12/12场景，含启动1.280370s、20,719字节，Linux真实单调钟及20/40ms阈值不变。随后中文stdin编码失败发生于后置脚本执行前，SSH退出1；后置保护/报告/清单未完成，整体PARTIAL，不宣称GPU准入。保留Windows V1失败、V2未封印以及原生c87已提交后停止。此次仅GitHub HANDOFF更新，没有重连、测试或新实验。
 - **2026-11-06 / Codex / PID3142527明确授权与信号拒绝**：完整核对目标身份和start_ticks后尝试一次SIGINT，系统返回EPERM，信号未发出；失败后复查目标仍在。未通过sudo/docker/SIGKILL绕过。3件工件封印，清单d93d045b…；实验未启动，权限与资源问题未解决。
