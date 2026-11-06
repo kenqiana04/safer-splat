@@ -1,11 +1,11 @@
 # FAS / safer-splat 固定交接文档
 
-> **先读结论：** 最新完成Stonehenge观测支持材料的严格只读清点：精确checkpoint/配置/变换与保留ZIP一致；已找到501帧RGBA及关联位姿，但未取得绑定当前地图的真实深度、有效性mask、尺度标定与观测支持域证据。当前域仍UNESTABLISHED，原 **STOPPED_AT_A0_REQUIRED_DOMAIN_GATE** 保留，A1–A3未启动、B/C未授权。本次新增实验/FULL/QP/GPU均0，无新审计工件。用户选择先补观测支持，再研究规划→跟踪→FAS；后续仅方案，不自动续跑。
+> **先读结论：** 2026-11-07 04:03（Asia/Shanghai）复核：4090原SSH连接成功；独立绕障预算提案12成员与A0执行包15成员清单再次通过。A0已执行核查并因有效域门停止，累计至封存341.287345s，FULL/QP/GPU均0；A1–A3未启动，B/C未授权。早于该A0包的独立绕障累计消耗仍UNKNOWN；2336历史CPU FULL不是绕障消耗。  最新完成Stonehenge观测支持材料的严格只读清点：精确checkpoint/配置/变换与保留ZIP一致；已找到501帧RGBA及关联位姿，但未取得绑定当前地图的真实深度、有效性mask、尺度标定与观测支持域证据。当前域仍UNESTABLISHED，原 **STOPPED_AT_A0_REQUIRED_DOMAIN_GATE** 保留，A1–A3未启动、B/C未授权。本次新增实验/FULL/QP/GPU均0，无新审计工件。用户选择先补观测支持，再研究规划→跟踪→FAS；后续仅方案，不自动续跑。
 
 - 正式维护位置：**https://github.com/kenqiana04/safer-splat/blob/master/HANDOFF.md**；本机文件只是工作副本，阶段更新须同步到 GitHub。
-- 最后更新：**2026-11-07 00:08，Asia/Shanghai**（Git 提交记录提供精确发布时间）。
+- 最后更新：**2026-11-07 04:03，Asia/Shanghai**（Git 提交记录提供精确发布时间）。
 - 更新者：**Codex，本 safer-splat 会话**。
-- 本次文档变更：按用户明确请求补记Stonehenge只读材料清点、内容/归档核验与限制、坐标/训练划分不确定性、补证路线及论文claim边界；仅更新HANDOFF，不新增服务器私密绝对路径。
+- 本次文档变更：按用户“更新下交接”刷新当前裁决、预算/执行分账、下一步与任务表，消除旧“待确认”段落被误读为当前状态的问题。仅更新HANDOFF；Stonehenge清点沿用已记录证据，本轮未重新清点图像/模型；没有新增实验、预算授权或服务器工件。
 - 最近实测阶段：CPU准入`run_20261106T111343Z`，5/6请求实际完成、7FULL，39件封印。最近原生仍是Trial23 `run_20261106T095437Z`的917真实提交；未重跑旧12场景或旧D/L。
 - 状态依据：本会话4090服务器实际记录、独立只读复算和封印核验。**今后项目实验、测试及计算默认在4090服务器执行；Windows仅作连接客户端和获授权的文档/Git维护。设备选择和实验资源仍须遵守当轮授权，不是无限GPU授权。**
 
@@ -68,7 +68,9 @@
 - 服务器新包：`/disk1/zlab/tmp/fas_detour_a0_a3_execution_v1/run_20261106T154105Z/`。15成员清单SHA `da0cb62afb43a40b00b29dd4c82140e44abae9588301cdf3079f241901bc65fd`，清单外SEAL_RECEIPT记录通过与墙钟。入口 `FINAL_REPORT.json`、`PHASE_LEDGER.jsonl`、`MAP_DOMAIN_GATE_EVIDENCE.json`、`DOMAIN_METADATA_CROSSCHECK.json`、`INPUT_IDENTITY_LOCK.json`、`STOP_REASON_AND_NEXT_OPTIONS.json`。
 - 下一步仅有两类条件选择，均未执行：提供/另行批准建立与map/frame绑定的观测支持域证据（有限域、可复现来源、域外与不确定UNKNOWN）；或者用户另行明确确认仅共享Gaussian代理模型的范围变更，并审阅修订的域/规划合同及明确剩余或新预算，不能自动重置预算。当前任务已按停止条件结束，无自动后继。
 
-### 绕障预算核查与分阶段新提案（等待用户确认）
+### 绕障预算核查与分阶段新提案（历史提案；A阶段后获批并在A0停止）
+
+以下“未授权/等待确认”仅描述2026-11-06 23:32时点；当前以文首及A0执行记录为准。旧提案原件未改，B/C仍未获批，停止后的A阶段不自动续用或重置额度。
 
 - **2026-11-06 23:32 Asia/Shanghai**：按用户“先检查已有交接、任务目录和账本；找不到则提出预算；不要重复实验”的新要求完成服务器资料核查与方案准备。本轮新测试/FULL/求解/GPU/Factory/PlantCommit均0。
 - 扩展检索tmp、maintenance_records、v3_repair/execution/diagnostic_records及主项目目录，深度≤5、限定文档/JSON/JSONL元数据；枚举23180路径、命中39相关文档，并追读9个相关包的收据与账本。检索范围和限制落盘，不声称全服务器不存在其他记录。**未找到Trial17/53独立绕障授权或执行账本，既往绕障累计消耗UNKNOWN，不能写0。** 本次直接消费96个封存来源成员与其manifest摘要全部匹配，读取前后内容一致。
@@ -257,7 +259,7 @@
 
 ### 最新明确裁决
 
-最新状态：**COMPLETED_BOUNDED_ADMISSION_WITH_NEGATIVE_RESULT / APPLICABILITY_LIMIT_STATIC_LINE_REJECTED**。17/53已实际做CPU准入，17直线FAIL使53直线与全部GPU臂停止，见文首。最新实际原生状态仍是**COMPLETED_BOUNDED_PAIR_WITH_LIMITS**，Trial23 D500/L417，不是本轮新增提交。CPU观察器收尾已补齐，但其证据不等于原生权限；原生资格来自此前新授权与实际链路。以下为保留的较早CPU参考结论，不与新GPU数据混成四组：
+当前绕障状态：**STOPPED_AT_A0_REQUIRED_DOMAIN_GATE / OBSERVATION_EVIDENCE_INVENTORIED_DOMAIN_STILL_UNESTABLISHED**。独立A0–A3预算已获批，但A0因缺少绑定当前地图的有效观测域而停止；A1–A3未启动，B/C未授权。2026-11-07只读复验预算12成员、执行15成员均通过；A0封存消耗341.287345s、FULL/QP/GPU均0，早前独立绕障消耗仍UNKNOWN。此前直线准入的 **COMPLETED_BOUNDED_ADMISSION_WITH_NEGATIVE_RESULT / APPLICABILITY_LIMIT_STATIC_LINE_REJECTED** 是历史阶段：17直线FAIL、53直线及四GPU臂未启动，不能继承其预算。最新实际原生状态仍是**COMPLETED_BOUNDED_PAIR_WITH_LIMITS**，Trial23 D500/L417，不是本轮新增提交。CPU观察器收尾已补齐，但其证据不等于原生权限；原生资格来自此前新授权与实际链路。以下为保留的较早CPU参考结论，不与新GPU数据混成四组：
 
 `PASS_SAME_SOURCE_CPU_QP_REFERENCE_DIAGNOSIS_WITH_LIMITS`
 
@@ -265,7 +267,7 @@
 
 ### 推荐下一步——尚未执行
 
-**本次授权任务已依科学停止门结束，不续跑剩余查询或GPU。唯一下一步建议：先明确研究目标是“合格直连任务的跟踪”还是“包含绕障的成熟参考比较”，据此另行批准新的适用域/路线方案，NOT_STARTED。** 不换17、不补查53、不重复Trial23求好结果，不重跑旧CPU两组，不自动接A*或继续局部LP/PSF筛选。现有证据不足以把直线追踪当作一般导航参考，任何问题定义变化都不能冒称本轮既定复验。
+**A0任务已依有效域停止条件结束。本次仅更新交接，未恢复实验。用户已选择先补观测支持证据，再研究规划→跟踪→FAS；下一步是审阅并另定补证任务的范围、分阶段预算及停止条件，NOT_STARTED。** 当前没有获批的新补证/规划预算；不因原A阶段尚有未用额度而自动续跑。代理模型研究仍需明确范围变更与预算确认。 不换17、不补查53、不重复Trial23求好结果，不重跑旧CPU两组，不自动接A*或继续局部LP/PSF筛选。现有证据不足以把直线追踪当作一般导航参考，任何问题定义变化都不能冒称本轮既定复验。
 
 - task goal继续在snapshot；tracking target旁路绑定state/candidate/action，不能擅改Token、半径、Deadline或安全门。
 - 参考收益已穿过成熟A，但仅单个已知开发Trial23，D→L固定顺序；无跨地图泛化、无严格实时或物理安全证据。
@@ -274,7 +276,13 @@
 
 ## 2. 使用版本、分支与工作区状态
 
-### 本机仓库（本次现场读取）
+### 本次文档维护客户端与远端基点
+
+- 2026-11-07本窗口客户端为Windows Safer-Splat-1；本地master尚无提交，已有未跟踪error.log保持不动。命名元数据检查点`handoff-before-budget-status-refresh-20261107T0403`记录本地状态及原文件摘要；不是未跟踪数据备份。
+- GitHub默认分支发布前基点`7c3e616c6459fffaca99289241dbfe5941558b76`，HANDOFF blob `746e2d8ea08616c13327f3b2630560b4e973aa77`。通过GitHub文件API按原blob校验仅更新HANDOFF；不切换本地分支，不改服务器工作树。发布提交号以文件历史为准。
+- 本轮原SSH别名`zlab4090`连接至`zlab-Super-Server`成功。没有重新核查三个保护工作树完整状态或GPU/全局进程，不将下述历史快照当作当前状态。
+
+### 较早维护窗口的本机仓库（历史快照，非本次客户端）
 
 - 根目录：`C:\Users\zlab\Documents\Codex\github-clean-work\safer-splat`
 - 当前分支：`tum-splatfacto-v1r5-command-preregistration-v1`
@@ -303,12 +311,15 @@
 
 |任务|状态|注意事项|
 |---|---|---|
+|Trial17/53绕障A0–A3|A0已核查但未通过，任务停止；A1–A3未启动|封存341.287345s；FULL/QP/GPU0；不自动续用旧额度|
+|绕障B/C|NOT_AUTHORIZED_NOT_STARTED|须前置证据与新的明确决定，原直线预算不转入|
+|观测支持补证|已完成材料只读清点，有效域仍未建立；后续补证NOT_STARTED|先审阅新范围、预算和停止条件；无后台后继|
 |Trial23阶段0/A无QP两组CPU跟踪|已结束并封印|保留旧43工件，不重跑|
 |本轮同源QP两参考CPU对照|已结束并封印|两个子进程正常退出，无后台后继任务|
 |完整四组参考×FAS对照|跨数值域，不能作严格四组因果比较|前两组CPU已实跑，固定成熟A的D/L已在GPU软件仿真完成；CPU/GPU非逐位等价|
 |成熟A相同参考对照|本次D500/L417完成并封印，旧D88失败独立保留|102件；无运行中任务、无自动后继|
 |A/G H260 的 `R03_G`、`R04_G`、`R04_A`|历史待办，不在运行或排队|旧续跑曾资源阻断，不自动恢复；先确认用户是否仍要继续此支线|
-|服务器其他用户/项目作业|会话结束时compute表空；稍后封存时GPU0其他作业PID3360988占1620MiB，GPU1无compute进程|两个不同时间的被动快照；未干预、不持续监控、不保证未来空闲|
+|服务器其他用户/项目作业|本次未检查GPU/全局进程，当前UNKNOWN|旧原生封存快照仅是历史；SSH可连接不代表GPU空闲|
 
 H260 正式包里八个臂目录并不表示八臂完成：最近只读核查发现后三个待办结果目录为空，最终记录仍是 5 个初始化臂、1300 提交、2 对完整配对。
 
@@ -538,6 +549,8 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 6. 刷新时间与更新者，检查Git diff只涉及本轮文档；仅stage交接相关文件，提交并以非强推方式同步GitHub默认分支，核对远端SHA与文件。分支保护不允许直推则提交PR并说明尚未合入。若本轮明确只读，遵守只读并在回复注明未更新。
 
 ### 阶段更新记录
+
+- **2026-11-07 04:03 / Codex / 交接与绕障账本状态复核**：原SSH成功；复读独立预算、授权、A0账本/最终报告/封存回执，预算12及执行15成员清单全部通过。A0最终至封存341.287345s（FINAL_REPORT封存前值341.284620s，两者时点不同），FULL/QP/GPU/测试/规划均0；A1–A3未启动、B/C未授权、早前独立绕障累计仍UNKNOWN。保留2336历史主线CPU FULL单列，不挪用直线额度。刷新正文裁决/下一步/任务表并标明旧待确认段落为历史；不重跑实验、不改预算与封印，无新服务器工件、无新后台任务；全局资源未检查。仅发布HANDOFF。
 
 - **2026-11-07 00:08 / Codex / Stonehenge只读观测材料清点后按请求更新交接**：确认501帧RGBA和关联位姿、四JSON及精确checkpoint/配置/变换的归档一致性；当前parser可推导180/19划分和.3333坐标缩放，但原训练消费帧、真实尺度、深度/mask/观测支持域仍未建立。保留A0阻断及17 FAIL/53 NOT_RUN，新增实验0、无新审计包。用户选择先补观测支持再研究规划→跟踪→FAS，仅方案，未恢复旧预算。公开更新仅HANDOFF，不新增私密绝对路径。
 
