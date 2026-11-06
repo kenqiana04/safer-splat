@@ -1,15 +1,27 @@
 # FAS / safer-splat 固定交接文档
 
-> **先读结论：** 用户另行授权“修复阻断重新跑一次”后，DEV设备门已修复并实测通过：逻辑cuda:0的PCI为82:00.0，与GPU1 UUID一致。**本次唯一重试在Factory初始化遇到独立TORCH_HOME缺AlexNet缓存，下载被offline gate拒绝；Factory尝试1/完成0、周期/提交/求解/几何0，L未运行。** 20.145秒后退出。已用原H260既存同SHA权重离线补齐任务缓存，但没有再次启动；两臂科学结论仍NOT_EVALUATED。61件工件封印，无自动后继。
+> **先读结论：** 用户再次授权后，设备/缓存/Factory均通过，D实际提交88步，L按异常停止条件未启动。**c87最终guard为OPEN（236.46ms），但提交前DEV同步日志区间耗时458.54ms，实际transition入口696.80ms超过600ms OPEN边界。** 日志区间占guard→transition间隔99.6%，存在严重观察器时效干扰，不能据此判成熟A本体太慢或参考无效。88段共享Oracle SAFE，4次PSF尾见证支撑Primary；并非完整配对成功。76件工件封印、会话140.217秒、已退出，无自动后继。
 
 - 正式维护位置：**https://github.com/kenqiana04/safer-splat/blob/master/HANDOFF.md**；本机文件只是工作副本，阶段更新须同步到 GitHub。
 - 最后更新：**2026-11-06，Asia/Shanghai**（Git 提交记录提供精确发布时间）。
 - 更新者：**Codex，本 safer-splat 会话**。
-- 本次文档变更：记录一次修复重试的设备门通过、缓存接线遗漏及离线补齐；仅改本交接文档，不发布研究代码、不改变默认配置。
-- 最近实测阶段：`FAS_TRIAL23_SAME_SOURCE_QP_REFERENCE_CPU_DIAGNOSIS_V1`，`run_20261106T043951Z`。
+- 本次文档变更：记录D的88次真实软件提交、c87时效停止与观察日志混杂；仅改本交接文档，不发布研究代码、不改变默认配置。
+- 最近实测阶段：`FAS_TRIAL23_FIXED_MATURE_A_REFERENCE_NATIVE_PAIR_V1`，`run_20261106T073852Z`（部分D，L未运行）；此前CPU完整比较仍是`run_20261106T043951Z`。
 - 状态依据：最近阶段封存文件及本会话只读核查；不是对整台服务器当前所有进程的监控。
 
-### 最新一次获授权修复重试：设备门通过，Factory缓存失败
+### 最新一次原预算运行：D 88步，观察器时效干扰导致停止
+
+- 服务器包：`/disk1/zlab/tmp/fas_trial23_fixed_mature_a_reference_native_pair_v1/run_20261106T073852Z/`；本机research-output同名目录下`SEALED_RESULT/`完整副本。76件封印SHA：`d91e07014697826d9907a9b22326e2a4287da38a6a23ffa4a94d3fce2f6e4988`。
+- 现场GPU1空闲、物理UUID/PCI映射通过，已修复代码及同SHA离线缓存复用；12项CPU检查通过。固定A、optional guard false、原TieredPSFWitness运行身份已落盘。三HEAD/37保护文件前后clean且哈希一致。
+- GPU会话1、Factory1、尝试/提交88、求解92（88P0+4PSF）、几何API调用1022。会话140.217s，D139.830s，初始化59.453s；未超过任何预算。GPU1采样最大1764MiB，不是严格峰值。
+- D全部Primary，C0/L2/L3 PASS各88，最终guard OPEN88；4次PSF见证支撑4次Primary首控提交。Oracle SAFE/UNSAFE/UNKNOWN=88/0/0。实际终点Progress=.0870109418862、距离=.715970396681q、末速度=.00758140283623q/模型秒；H260未覆盖。L NOT_STARTED，不能完成配对结论。
+- 首次阻断c87：guard236.460774ms；observer写日志前236.995104ms；原Plant入口695.532655ms；transition入口696.802104ms；返回697.844807ms。原OPEN阈值600ms；异常不是EXPIRED（800ms）。实际已提交后任务监测停止，不能写成预先拦截。
+- `native_worker.py:110–115`提交前同步append/flush/fsync及调度区间458.537551ms，占guard→transition460.341330ms的99.608%。这不是孤立fsync测量、也没有无观察器对照，但强烈限制时效归因；本次不能估计无仪器化A性能。下一步只建议DEV观察器非干扰修复，不修改Deadline/安全门，不事后扣时。
+- 独立收据复算及Token后继身份核对通过，Trace FINALIZED88不等于合法时效PASS。原NATIVE_RESULT.final_state因停止前未更新仍为cycle87，实际最后receipt为cycle88，端点以receipt为准；原timely_new_method_navigation88只是guard采样口径，实际transition OPEN87/88。
+- 本轮issued32正半空间残差29/88，最大5.111410184e-10；与旧CPU53次分开。最小共享Oracle clearance约.007172765861q；不证明物理安全、严格GPU误差或20Hz。
+- 父子进程退出、GPU资源释放、无自动后继。日志问题定位不授权再跑D或启动L，未进行结果导向重试。文档检查点`codex/checkpoint-before-trial23-native-stop-20261106T073852Z`，基于`ebc5b5aa0037731223585dfca20ad37d2f976fe4`。
+
+### 前次获授权修复重试：设备门通过，Factory缓存失败
 
 - 服务器包：`/disk1/zlab/tmp/fas_trial23_fixed_mature_a_reference_native_pair_v1/run_20261106T073111Z/`；同名本地research-output下`SEALED_RESULT/`。61件封印SHA `c8ce7117b2886ebd474af877ea5f053cff1d26e634a7196a19aed0438de11a6b`。
 - 修复仅DEV设备绑定：使用物理GPU1 UUID设置可见设备，调用已有libcudart获取逻辑0 PCI，再与nvidia-smi UUID/PCI交叉核对。保存`DEVICE_MAPPING_RAW.json`实测PASS；PID表空不再单独判错设备。12项CPU检查（原10+PCI正负2）通过。
@@ -81,7 +93,7 @@
 
 ### 推荐下一步——尚未执行
 
-**固定成熟A层的参考身份接线与有限同参考对照**已完成独立接线和12项CPU检查，设备门在授权重试中实测通过，但Factory缓存初始化失败；缓存已离线补齐、未再启动。新的GPU重试需重新授权，而不是先做A*或扩搜局部动作：
+**固定成熟A层的参考身份接线与有限同参考对照**已有D的88次原生软件提交，但c87发生接受时效异常且观察器同步日志是主要时间区间，L未运行。优先处理DEV观察器时效非干扰，不将该结果归因为参考/成熟A质量；新GPU重试需重新授权，不启动A*或局部动作扩搜：
 
 - 两组同源QP的CPU比较已完成；继续保持相同目标/CBF行/六盒行/求解器/PD，不可把旧无盒B拿来与有盒A混称单因素。
 - task goal继续在snapshot内；tracking target在旁路记录并关联state/candidate/action身份，不擅改Token格式或沿用旧Token。本轮CPU日志没有任何native资格。
@@ -125,7 +137,7 @@
 |Trial23阶段0/A无QP两组CPU跟踪|已结束并封印|保留旧43工件，不重跑|
 |本轮同源QP两参考CPU对照|已结束并封印|两个子进程正常退出，无后台后继任务|
 |完整四组参考×FAS对照|NOT_READY|前两组CPU已实跑，成熟A两组及原生等价尚未验证|
-|成熟A相同参考对照|授权修复重试中设备门PASS，D Factory初始化因独立缓存缺权重失败；提交0，L未运行|61件已封印；已有缓存离线补齐但未再次GPU验证，无自动后继|
+|成熟A相同参考对照|D88真实提交，c87实际转换越过OPEN边界；提交前同步日志区间占时效间隔99.6%，L未启动|76件已封印；需要先修复DEV观察器时效干扰，未实施、无自动后继|
 |A/G H260 的 `R03_G`、`R04_G`、`R04_A`|历史待办，不在运行或排队|旧续跑曾资源阻断，不自动恢复；先确认用户是否仍要继续此支线|
 |服务器其他用户/项目作业|07:12:59 UTC：GPU1仍有PID3142527，4372 MiB|只是一次复查，不持续监控，不声称此后资源状态|
 
