@@ -1,13 +1,24 @@
 # FAS / safer-splat 固定交接文档
 
-> **先读结论：** 最新授权任务已实际完成服务器CPU接入与有界准入，裁决 **COMPLETED_BOUNDED_ADMISSION_WITH_NEGATIVE_RESULT / APPLICABILITY_LIMIT_STATIC_LINE_REJECTED**。8项接口检查PASS；固定6请求中4个端点PASS、Trial17直线FAIL（FINITE_UNSAFE_WITNESS）、Trial53直线因首个非PASS停止而NOT_RUN。7次FULL、几何进程4.529989s，四臂GPU全部未启动。不是停在计划，也不是成熟A运行失败或“收益只能在Trial23”的证明。旧Trial23 D500/L417实际结果与全部失败保留；本次39件封印完成、进程退出，无自动后继。
+> **先读结论：** 最新用户授权A0–A3已执行A0核查，裁决 **STOPPED_AT_A0_REQUIRED_DOMAIN_GATE**：本窗口SSH正常，但固定Stonehenge观测支持导航域仍UNRESOLVED，故A1–A3未启动。A0至封存保守341.287345s/600s，新增FULL/QP/GPU/测试/规划均0；15件封印完成，无自动后继。旧Trial23 D500/L417、Trial17直线FAIL及所有历史失败保留。
 
 - 正式维护位置：**https://github.com/kenqiana04/safer-splat/blob/master/HANDOFF.md**；本机文件只是工作副本，阶段更新须同步到 GitHub。
-- 最后更新：**2026-11-06 23:32，Asia/Shanghai**（Git 提交记录提供精确发布时间）。
+- 最后更新：**2026-11-06 23:45，Asia/Shanghai**（Git 提交记录提供精确发布时间）。
 - 更新者：**Codex，本 safer-splat 会话**。
 - 本次文档变更：补记新授权Trial17/53的真实CPU准入否定结果、立即停止、零原生执行及封存；仅提交本交接文档，不发布研究代码、不改变默认配置。
 - 最近实测阶段：CPU准入`run_20261106T111343Z`，5/6请求实际完成、7FULL，39件封印。最近原生仍是Trial23 `run_20261106T095437Z`的917真实提交；未重跑旧12场景或旧D/L。
 - 状态依据：本会话4090服务器实际记录、独立只读复算和封印核验。**今后项目实验、测试及计算默认在4090服务器执行；Windows仅作连接客户端和获授权的文档/Git维护。设备选择和实验资源仍须遵守当轮授权，不是无限GPU授权。**
+
+### 已授权A0–A3实际执行：A0有效域门阻断，后续未启动
+
+- **2026-11-06 23:45 Asia/Shanghai**：用户经本窗口交接明确确认仅A0–A3，锁定交接commit `5a1e8e899e1b5971a83c0bce0f6daba41b5d4534`及预算清单 `4720ddd1834a5138166a5fdcdcb253c945e7db7814e344dfe78f27fcd06ddf5d`；总2640s/4096FULL/0QP/0GPU，B/C未授权。原预算提案原件不改，新AUTHORIZATION另存。
+- 本窗口原 `ssh zlab4090` 实际成功，主机 `zlab-Super-Server` / UID1000；预算12成员复验通过，未发现重复绕障worker。另一发送端报告的SSH Permission denied原样视为其环境观察，不据此宣称服务器离线；本窗口未换主机/账号/通道/权限配置，也未重试本窗口被拒绝操作。
+- **实际裁决：STOPPED_AT_A0_REQUIRED_DOMAIN_GATE**。A0已核查但未通过；A1/A2/A3均NOT_STARTED，B/C NOT_AUTHORIZED。当前17/53 `inputs/FROZEN_CONTRACT.json` 的 `navigation_domain.status=UNRESOLVED`、`bounds=null`、`observed_free_space=null`；原地图合同同样拒绝路线准入。地图资产目录仅config.yml、dataparser_transforms.json、checkpoint；metadata交叉检查未找到绑定本Stonehenge地图的已建立观测支持域。其他ETH3D/TUM/Replica合同不能转用；训练scale/Gaussian bbox不等于观测自由空间。
+- 97保护来源及三个HEAD/clean状态一致；17/53准入父包39、选样方案6成员复验通过，原6D初态/最终goal、map/Profile、q单位、.015q/reserve0身份另存锁定。因域门失败，没有伪称完整PRM/跟踪合同已合格。
+- A0核查至封存**保守计时341.287345s / 600s**，计时锚点采用服务器15:39:20 UTC，早于首个成功预检时间15:39:28 UTC 8秒，含连接预检、编排和落盘；非CPU性能基准。封存于15:45:01 UTC。15件工件封存前123186B，未触2GiB工件上限；未启动实验worker，合成测试0、采样0、候选边0、FULL0、QP0、GPU0、Factory0、PlantCommit0、旧实验重跑0、进程信号0。后续GitHub交接维护与实验阶段计时分列，不将文件核查冒充实验。
+- **路径状态NOT_EVALUATED**：未进入搜索，不能标为预算内未找到路线，更不能声称无路或规划器失败。历史独立绕障消耗仍UNKNOWN，剩余旧直线额度没有使用。本次没有变更为proxy-model-only研究。
+- 服务器新包：`/disk1/zlab/tmp/fas_detour_a0_a3_execution_v1/run_20261106T154105Z/`。15成员清单SHA `da0cb62afb43a40b00b29dd4c82140e44abae9588301cdf3079f241901bc65fd`，清单外SEAL_RECEIPT记录通过与墙钟。入口 `FINAL_REPORT.json`、`PHASE_LEDGER.jsonl`、`MAP_DOMAIN_GATE_EVIDENCE.json`、`DOMAIN_METADATA_CROSSCHECK.json`、`INPUT_IDENTITY_LOCK.json`、`STOP_REASON_AND_NEXT_OPTIONS.json`。
+- 下一步仅有两类条件选择，均未执行：提供/另行批准建立与map/frame绑定的观测支持域证据（有限域、可复现来源、域外与不确定UNKNOWN）；或者用户另行明确确认仅共享Gaussian代理模型的范围变更，并审阅修订的域/规划合同及明确剩余或新预算，不能自动重置预算。当前任务已按停止条件结束，无自动后继。
 
 ### 绕障预算核查与分阶段新提案（等待用户确认）
 
@@ -479,6 +490,8 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 6. 刷新时间与更新者，检查Git diff只涉及本轮文档；仅stage交接相关文件，提交并以非强推方式同步GitHub默认分支，核对远端SHA与文件。分支保护不允许直推则提交PR并说明尚未合入。若本轮明确只读，遵守只读并在回复注明未更新。
 
 ### 阶段更新记录
+
+- **2026-11-06 23:45 / Codex / 获批A0–A3后有效域门停止**：原SSH成功、预算封印核验；97保护文件/三HEAD及45输入父包成员一致。当前观测域仍UNRESOLVED，A0未通过，A1–A3未启动；未改代理研究范围。A0至封存保守341.287345s、FULL/QP/GPU/测试均0；15件包da0cb62a…，无后继，B/C仍未授权。
 
 - **2026-11-06 23:32 / Codex / 绕障历史预算核查与新提案**：扩展检索与96消费成员核验，未找到17/53独立绕障授权/账本，累计绕障消耗UNKNOWN。列清主线CPU2336FULL、旧D88和新917原生提交及其他任务MPPI消耗，不转旧余额。提交待确认A阶段44min/4096FULL/0GPU方案，B42min与C45min各另议；12件新包4720ddd1…；新增实验0。
 
