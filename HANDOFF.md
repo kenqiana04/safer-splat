@@ -1,15 +1,25 @@
 # FAS / safer-splat 固定交接文档
 
-> **先读结论：** 用户已明确授权中断GPU1的PID3142527。2026-11-06 07:11 UTC核实root/run_mapping3d.py、functional3dgs、容器、GPU和start_ticks一致后，SSH账户zlab发送SIGINT遭`Operation not permitted`拒绝，成功发送信号0。07:12:59 UTC复查目标仍占4372 MiB。**当前阻断是操作系统信号权限，不是缺用户授权；D/L未启动，所有新实验计数0。** 未用sudo/docker/SIGKILL绕过，需负责人在有权限的作业会话中结束进程；无自动等待/续跑。旧CPU结论不变。
+> **先读结论：** 用户确认GPU1释放后，现场空闲门通过；唯一一次D/L逻辑GPU会话已启动并结束。但D在Factory之前的新增DEV设备身份检查失败：`PHYSICAL_UUID_MAPPING_FAILED`（要求当前PID出现在nvidia-smi计算进程表，未满足）。**GPU会话1，Factory/周期/提交/求解/几何均0，L未启动；没有原生两臂比较结果。** 这是接线/设备验证阻断，不证明用错GPU，也不证明成熟A或参考跟踪失败。会话79.524秒，49件工件已封印，无自动重试。旧资源阻断和CPU结果保留。
 
 - 正式维护位置：**https://github.com/kenqiana04/safer-splat/blob/master/HANDOFF.md**；本机文件只是工作副本，阶段更新须同步到 GitHub。
 - 最后更新：**2026-11-06，Asia/Shanghai**（Git 提交记录提供精确发布时间）。
 - 更新者：**Codex，本 safer-splat 会话**。
-- 本次文档变更：记录固定成熟A两参考任务的资源阻断与零执行消耗；仅改本交接文档，不发布研究代码、不改变默认配置。
+- 本次文档变更：记录资源释放后的唯一会话及设备身份门失败；仅改本交接文档，不发布研究代码、不改变默认配置。
 - 最近实测阶段：`FAS_TRIAL23_SAME_SOURCE_QP_REFERENCE_CPU_DIAGNOSIS_V1`，`run_20261106T043951Z`。
 - 状态依据：最近阶段封存文件及本会话只读核查；不是对整台服务器当前所有进程的监控。
 
-### 最新PID3142527中断授权：系统权限拒绝
+### 最新GPU1释放后尝试：设备身份门失败，已结束
+
+- 包：`/disk1/zlab/tmp/fas_trial23_fixed_mature_a_reference_native_pair_v1/run_20261106T071541Z/`；本地同名研究输出根下`SEALED_RESULT/`为完整下载副本。
+- 来源：H260的228项、上轮CPU参考的968项封印全量通过；三保护HEAD和37个源/地图/Profile文件匹配且前后clean。10项CPU接口/算术/静态检查通过，不是原生权限PASS。
+- GPU1物理UUID `GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d`、PCI `00000000:82:00.0`、4090；启动前6MiB、无compute进程。本轮未发送进程终止信号。D→L事前锁定，A核心身份及默认OFF不改。
+- D PID3189781，`code/native_worker.py:51`失败。查询设备属性后要求本PID出现在计算进程表的新增断言未通过，16次父进程采样compute表为空；显存采样最大8MiB，不是负载峰值。worker即时device_rows/逻辑设备UUID未落盘，不能确诊错GPU。延迟上下文或监控可见性是假设，不是已证实根因。
+- GPU会话1/Factory0/周期0/提交0/求解0/几何0；D无轨迹，L NOT_STARTED。不存在可报告的Progress/两臂首次认证分歧。79.524438秒，无结果导向重试；父子进程已退出、GPU计算进程表为空，无后继。
+- 独立核算仅验证零执行、代码锁、保护快照及计数，不虚称完整轨迹审计。49件封印复验，清单SHA `7f52db8c6a0c27fb7907ad1034d92e4a6062258bcba32c8de3215c075e97d5cf`。主文件`FINAL_REPORT.md`、`results/INDEPENDENT_CROSSCHECK.json`、`GPU_SESSION_RESULT.json`。
+- 下一步仅建议修复DEV逻辑UUID/PCI证据采集；不删除安全检查，不重构A，不延长时限。新的CUDA验证或D/L执行需另行明确授权，不在本包重启。文档检查点`codex/checkpoint-before-trial23-device-gate-20261106T0730`，基于`f303b4b4a10fe422a4236fb3f004adaf4e321674`。
+
+### 历史PID3142527中断授权：系统权限拒绝（随后负责人释放）
 
 - `BLOCKED_PROCESS_SIGNAL_PERMISSION`。UID0、run_mapping3d.py、functional3dgs、原Docker cgroup和GPU1均匹配；启动时间北京时间14:31:36，start_ticks=118439017，发信号前再核对未变。
 - Python pidfd接口不可用的首检查未发信号；随后普通SIGINT一次发送调用被系统拒绝：`PermissionError [Errno 1] Operation not permitted`。没有提权/绕过或再次终止。07:12:59 UTC目标仍在。
@@ -62,7 +72,7 @@
 
 ### 推荐下一步——尚未执行
 
-**固定成熟A层的参考身份接线与有限同参考对照**已获本次有界授权，但在资源门终止；如需重试必须重新授权，而不是先做A*或扩搜局部动作：
+**固定成熟A层的参考身份接线与有限同参考对照**已完成独立接线和10项CPU检查，唯一GPU会话在Factory前设备身份门终止；新的GPU验证/重试需重新授权，而不是先做A*或扩搜局部动作：
 
 - 两组同源QP的CPU比较已完成；继续保持相同目标/CBF行/六盒行/求解器/PD，不可把旧无盒B拿来与有盒A混称单因素。
 - task goal继续在snapshot内；tracking target在旁路记录并关联state/candidate/action身份，不擅改Token格式或沿用旧Token。本轮CPU日志没有任何native资格。
@@ -106,7 +116,7 @@
 |Trial23阶段0/A无QP两组CPU跟踪|已结束并封印|保留旧43工件，不重跑|
 |本轮同源QP两参考CPU对照|已结束并封印|两个子进程正常退出，无后台后继任务|
 |完整四组参考×FAS对照|NOT_READY|前两组CPU已实跑，成熟A两组及原生等价尚未验证|
-|成熟A相同参考对照|PID3142527已获用户中断授权且身份匹配，但zlab发送SIGINT被系统权限拒绝；D/L未启动|需有权限的负责人结束作业；旧包保留，无自动等待/续跑|
+|成熟A相同参考对照|负责人释放GPU1后会话已尝试；D在设备身份门失败，Factory0/提交0，L未启动|49件已封印；不自动重试，先修复设备映射证据接线，后续GPU需授权|
 |A/G H260 的 `R03_G`、`R04_G`、`R04_A`|历史待办，不在运行或排队|旧续跑曾资源阻断，不自动恢复；先确认用户是否仍要继续此支线|
 |服务器其他用户/项目作业|07:12:59 UTC：GPU1仍有PID3142527，4372 MiB|只是一次复查，不持续监控，不声称此后资源状态|
 
