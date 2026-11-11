@@ -1,5 +1,53 @@
 # FAS / safer-splat 固定交接文档
 
+> **当前结论（2026-11-11）：PARTIAL_NATIVE_DIAGNOSTIC_STOPPED。** Trial61 绕障路径与CPU跟踪通过；原生D完成500提交但停滞，R在第54次已提交动作的真实transition入口超原时限约87微秒后停止。没有完整H260配对，不宣称导航改善；全部任务已退出、无自动后继。下文新增阶段为当前状态，旧失败原文保留。
+
+## 当前阶段：Trial61 绕障参考端到端诊断（2026-11-11）
+
+- 当前目标：在固定成熟 A、安全合同与最终 goal 下检验直接参考 D 与绕障参考 R；只评价现有 Gaussian 代理模型，不将搜索盒或无观测区域称为已确认自由空间。用户本轮明确批准了独立 DEV 实现、有限搜索、CPU 跟踪及原生软件对照；这是新范围，不追溯恢复或改判旧 Trial17/53 A0 域门阻断。
+- 最后更新：2026-11-11，Asia/Shanghai；更新者：Codex，本 safer-splat 会话。正式交接分支 master；本次仅更新 HANDOFF.md。修改前命名检查点 HANDOFF_BEFORE_TRIAL61_DETOUR_20261111，旧 blob 025ade90ffb6c676b6dd64565cca8483cb4b411d 已保存在新包 inputs/HANDOFF_BEFORE_20261111.md 与 HANDOFF_CHECKPOINT.json。
+- 实际环境：zlab-Super-Server / zlab，原 zlab-4090 SSH；实验和测试均在服务器。GPU1 UUID GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d，资源门通过后仅一次会话；未干预他人进程或物理硬件。
+- 成熟版本：FAS_MATURE_NATIVE_PSF_RECOVERY_DEV_V1，experiment_arm=A，optional_guard_effectively_enabled=False，原 TieredPSFWitness。沿用封存 Trial23 run_20261106T095437Z 的原生 worker/cycle audit；仅独立 DEV 参考适配和接线改变。固定 task goal、地图/顺序、.015q 半径、dt=.05、动作/速度盒、1e-12 终端、.8s guard/.2s reserve；真实单调钟，不扣除观察器时间。精确版本、源码/地图 SHA 见 SOURCE_LOCK.json 与 native_pair/DEV_DIFF.patch。
+- 保护 Candidate 33e34a3ac8d710452775ffe688af77393f734fa9、Frozen 481c3e5e24648d0219e1969f1145648ac99f6943、Perf b0a6bbb96512cef5085feada98a900bf9d8ff15f：三个 HEAD/工作树状态及 81 个保护/外部来源文件前后一致。未修改保护源码、默认开关或旧数据；算法代码没有 commit/push。
+
+### 实际结果与完整分母
+
+|阶段|实际完成|结论边界|
+|---|---|---|
+|规划接口|确认 OMPL 2.0.1 C++ 采样绕过 Python override、无可用 setStateSamplerAllocator；改用标准有限 Lazy PRM 的最小独立实现|不是官方 OMPL 实现，也不是原创算法；旧失效计数记录保留|
+|路线搜索/复验|seed61 PCG64；512样本、6候选；前4顶点UNSAFE、第5完整边UNSAFE、第6接受；10边、长度0.8928280999884618q；新逐边完整复验均SAFE|194 CPU FULL、24 motion checks、65.646672s；没有平滑、换seed或第二采样阶段；不证明观测域/现实安全|
+|CPU动力学跟踪|.02q前视/.005q航点切换；429接受步/429段SAFE；Progress 0.9971049685647213；动作与速度盒通过|133.363934s；软件到达 .01q位置/.005速度/连续10周期，非严格Terminal；CPU/GPU不保证逐位等价|
+|原生 D|500尝试/500提交；500 Primary/OPEN/Oracle SAFE；418原制动见证、82 PSF见证；H260 Progress .08541265693212023，H500 .08541368574505083|未软件到达；末60步ΔProgress=0，首次near-stall c176–235；582求解/4808几何|
+|原生 R|54尝试/54提交；54 Primary/OPEN/Oracle SAFE；54原制动见证、0 PSF；观察终点Progress .06083424396895853|c53实际transition时效超限，已提交后停止；到达为删失，H260不可得，少于60步不能判near-stall；54求解/736几何|
+
+- 本轮不是成功的完整 D/R 对照：R 提前停止，不能比较共同 H260、完整到达率或宣称绕行参考提高 FAS 导航。D 的 H260 与旧记录一致只是复现证据，不增加独立任务。
+- D 末速度 2.3507155918288796e-7 q/模型秒，最小记录代理净空 5.712748631037788e-8q；R 终点速度 .043173160520995124，最小记录代理净空 .014371726022039467q。两者样本长度不同，不据此排名安全性。
+- entry→Plant返回 ms：D p50/p95/p99/max=276.7874815/453.37884665/489.86475978/631.559337；R=382.5067135/434.61344995/551.18453449/656.293216。入口成本含 epoch 前意图落盘，不能直接以全入口时延代替原授权判据；不是20Hz/WCET证明。
+
+### 实质阻断：R c53 的实际接受时效
+
+- 最终 guard=599.018170964ms，原判 OPEN；Plant入口=599.668920971ms；transition入口=600.087358849ms，超过原600ms资格界约0.087358849ms。guard→transition间隔1.069187885ms。
+- 第54次真实软件提交已经发生，随后审计发现异常并停止；不得改为未提交、补签或扣时。该动作原制动L3通过，QP solve 2.47262ms，执行闭段Oracle SAFE；不是已证几何碰撞或PSF拒绝。
+- 结果层面为 D 500 次实际transition及时、R 53次及时+1次超限。原 source guard 的54次OPEN与实际transition时刻是不同证据，不以旧摘要的timely计数代替。
+- c53 L3_DISCOVERY_ADMISSION约338.432ms，c52约127.907ms；现有分段计时不能把全部差值归因到单一模块。关键间隔包含原调用、检查、调度及内存观察；没有无观察器对照，不能断言是fsync或观察器唯一原因。
+- 原事务 COMPLETE、Token APPLIED、trace RECORDED；最终 trace FINALIZED，54条；commit-in-doubt=false，未验证执行段0。SCORECARD 的 trace_finalized 字段来自 arm_execution_evidence_complete=false，不能误读为最终trace未封存，应以 trace_finalization_record.status=FINALIZED 为准。
+- 安全时效异常后没有重试、放宽reserve/deadline或继续剩余周期。任务已退出，无自动后继。
+
+### 工程失败、资源和封印
+
+- 保留旧OMPL采样计数失败包 run_20261111T024648Z（manifest 018013f9182633e22a9a863d35f57ca1c6814cb277d532a8c99713be205eed1f）。
+- CPU首次跟踪被包级import隔离门阻止，0步/0FULL、1.838679s；改为精确 canonical 源文件加载，新 tracking_attempt2 成功，未修改门。原生准备先后有外部AlexNet SHA索引 KeyError、空目录 FileExistsError/派生 prepare import失败；均发生在GPU/Factory前，保留首次日志及修复版本。
+- 候选6中间记录状态遗留CHECKING，已披露，不改历史行；最终PLAN_RESULT、冻结路径和10条新完整证书/独立复核构成接受依据。
+- CPU接线8/8通过，1.213898391s；不是额外GPU资格或物理安全证明。独立算术/身份核对554原生状态链、429CPU步及10路线边；不新增QP/几何来补历史。
+- 实际累计：原生1会话/2Factory/554尝试与提交/636求解/5544几何API调用，432.763193s；CPU规划194 FULL + 跟踪429 FULL。跨阶段6167几何API计数仅记账，不混同数值域。均在本轮预注册有限预算内；参数和上限见 PREREGISTRATION.json。
+- 权威新包：`/disk1/zlab/tmp/fas_trial61_detour_reference_pipeline_v2/run_20261111T025448Z/`。130工件，2026-11-11T03:15:46Z封存；清单复验通过，manifest SHA256 **a995b2f151d66fe9ac25d44c26580454ac15b973f3f2d9a8af71666fe6c12241**。SEAL_RECEIPT.json为清单外回执，封存后不改。
+- 阅读入口：FINAL_REPORT.md、results/SCORECARD.json、PER_CYCLE.csv、ACTUAL_TIME_VIOLATIONS.json、INDEPENDENT_CROSSCHECK.json、RESOURCE_TOTAL.json、CANDIDATE_PATH.json、PATH_REVALIDATION.json、native_pair/GPU_SESSION_RESULT.json、PROTECTED_AFTER.json。失败日志、原始receipt/trace/时钟在对应子目录。
+- **下一步 NOT_STARTED**：优先审查最终guard至真实接受点的时效覆盖缺口，提出保持原合同的接受点验证方案；需要改核心或再运行时另取明确授权。暂不继续换规划参数、找赢家或重跑R。当前仅可确认代理地图中已有一条全边检查通过且CPU动态可跟踪的路线；完整成熟A执行及参考收益仍未闭合，地图支持域与独立物理误差界仍未知。
+
+---
+
+## 2026-11-07及以前交接原文（历史状态，不作为本轮授权或当前运行状态）
+
 > **先读结论：** 2026-11-07 04:03（Asia/Shanghai）复核：4090原SSH连接成功；独立绕障预算提案12成员与A0执行包15成员清单再次通过。A0已执行核查并因有效域门停止，累计至封存341.287345s，FULL/QP/GPU均0；A1–A3未启动，B/C未授权。早于该A0包的独立绕障累计消耗仍UNKNOWN；2336历史CPU FULL不是绕障消耗。  最新完成Stonehenge观测支持材料的严格只读清点：精确checkpoint/配置/变换与保留ZIP一致；已找到501帧RGBA及关联位姿，但未取得绑定当前地图的真实深度、有效性mask、尺度标定与观测支持域证据。当前域仍UNESTABLISHED，原 **STOPPED_AT_A0_REQUIRED_DOMAIN_GATE** 保留，A1–A3未启动、B/C未授权。本次新增实验/FULL/QP/GPU均0，无新审计工件。用户选择先补观测支持，再研究规划→跟踪→FAS；后续仅方案，不自动续跑。
 
 - 正式维护位置：**https://github.com/kenqiana04/safer-splat/blob/master/HANDOFF.md**；本机文件只是工作副本，阶段更新须同步到 GitHub。
@@ -549,6 +597,8 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 6. 刷新时间与更新者，检查Git diff只涉及本轮文档；仅stage交接相关文件，提交并以非强推方式同步GitHub默认分支，核对远端SHA与文件。分支保护不允许直推则提交PR并说明尚未合入。若本轮明确只读，遵守只读并在回复注明未更新。
 
 ### 阶段更新记录
+
+- **2026-11-11 / Codex / Trial61代理绕障端到端诊断**：修复不可靠OMPL计数接口，采用有限Lazy PRM，512样本/6候选得到10边全段SAFE路径；CPU跟踪429步软件到达。原生D500未到达、R54在实际transition超600ms约87微秒后停止，不重试；1会话/2Factory/554提交/636求解/5544原生几何，CPU623FULL。81保护来源及3HEAD不变，130工件封印a995b2f1…，无后继。仅发布HANDOFF，完整对照未完成，不改变任何旧裁决。
 
 - **2026-11-07 04:03 / Codex / 交接与绕障账本状态复核**：原SSH成功；复读独立预算、授权、A0账本/最终报告/封存回执，预算12及执行15成员清单全部通过。A0最终至封存341.287345s（FINAL_REPORT封存前值341.284620s，两者时点不同），FULL/QP/GPU/测试/规划均0；A1–A3未启动、B/C未授权、早前独立绕障累计仍UNKNOWN。保留2336历史主线CPU FULL单列，不挪用直线额度。刷新正文裁决/下一步/任务表并标明旧待确认段落为历史；不重跑实验、不改预算与封印，无新服务器工件、无新后台任务；全局资源未检查。仅发布HANDOFF。
 
