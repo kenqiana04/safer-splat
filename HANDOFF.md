@@ -1,5 +1,59 @@
 # FAS / safer-splat 固定交接文档
 
+> **当前结论（2026-11-11）：三案例×两种规划器的CPU路径对照已完成；原生六臂因GPU1占用全部未启动。** 六条冻结路径共184闭段通过原FULL复验，不等于可跟踪或到达。历史557条QP中60条量化后正残差已核清，不能声称严格半空间可行。资源门关闭，无自动后继。
+
+## 当前阶段：成熟规划参考匹配对照 V1（2026-11-11）
+
+- **裁决：CPU_PLANNING_COMPLETE_NATIVE_BLOCKED_RESOURCE_CONFLICT**，不是完整闭环对照PASS。用户授权本轮成熟方法审查、适配、有界规划及条件原生比较；没有授权终止/共用其他GPU作业，未绕过资源门。
+- 更新者Codex，本Safer-Splat会话；封存UTC **2026-11-11T10:05:14.212500Z**（北京时间18:05:14）。正式GitHub master仅更新HANDOFF。命名检查点 `MATURE_REFERENCE_COMPARE_HANDOFF_BEFORE_V1`，旧blob `fd316f94da73c0507dfbece886604298044286d4` 全文保存在本包inputs/HANDOFF_BEFORE.md。旧R557到达与全部失败记录原样保留。
+- 服务器zlab-Super-Server/zlab，经正常zlab-4090；新包：
+  `/disk1/zlab/tmp/fas_mature_reference_matched_comparison_v1/run_20261111T094603Z/`
+- 原生启动前GPU1物理UUID `GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d` 出现PID806672，进程路径functional3dgs/bin/python，进程显存4424MiB、设备总已用4432MiB。启动器报 `GPU1_RESOURCE_CONFLICT_NO_QUEUE`，位于session_new.py:15、GPU_SESSION_CLAIM创建之前。**本任务GPU会话=0、Factory=0、新QP/PSF求解=0、PlantCommit=0；全部六臂NOT_RUN。** 未终止/共用该进程、未换GPU0、未排队/重试。快照不构成对该作业用途或归属的完整鉴定。
+- 当前无本任务运行/等待进程，无自动后继。读取历史残差与新CPU规划不是原生导航；不得给出本轮到达率、H260 Progress、时效或实际运动安全比较。
+
+### 冻结方法、任务与公平边界
+
+- 比较**规划参考**，两种规划器将共享同一 `ACCEPTED_MOTION_LOCAL_ARC_V1`、.02q前视、成熟A、原TieredPSFWitness、CBF-QP、动作/速度约束、1e-12终端/hold和 `FAS_SOFTWARE_ACCEPTANCE_DEADLINE_DEV_V1`。最终task goal不变。原.8s/.2s时限不放宽，原模型dt=.05不解释为20Hz。
+- 项目有限Lazy PRM：标准算法的项目实现，**不是官方成熟库**；官方OMPL 2.0.1 RRTConnect：range=.02、seed61、首条精确解，不平滑、不换种子。原C++采样绕过Python计数的问题没有掩盖：本轮不声称内部采样计数受控，改用经过验证的实际状态/运动/FULL和墙钟硬限额。
+- 官方出处：[RRTConnect](https://ompl.kavrakilab.org/classompl_1_1geometric_1_1RRTConnect.html)、[MotionValidator](https://ompl.kavrakilab.org/classompl_1_1base_1_1MotionValidator.html)。OMPL二进制SHA `16ccc417ed3432e7e36115712232ea84b4d3ce83643eb50092ae97c8c71a1db2`。搜索核心未重写，仅用共同原FULL替代状态/完整闭段有效性接口。
+- Trial61=开发案例；Trial17=已知直线受阻挑战；Trial53=事前固定补充评估案例，**都不是全项目从未见过的holdout**。顺序固定61-PRM→61-RRT→17-RRT→17-PRM→53-PRM→53-RRT。
+- 每个规划器/案例300秒、3000 FULL、1024实际运动几何查询、4096状态检查；共享同样float32字节缓存规则，最终路径复验绕过缓存。PRM固定512/k12后至多1024/k24、最多64候选；搜索盒[-.5,-.5,0]–[.5,.5,.3]仅是计算范围，**不是已观测自由空间**。
+- 原生预注册最多6Factory、700周期/900秒每臂、5500秒单GPU会话、8400求解/120000几何；这些原生预算本轮均未使用。不能直接运行已封印目录，应另建执行包并重新资源准入。
+- 接口探针10项通过，另1项种子顺序检查通过：首探针晚设种子警告保留，正式搜索在任何随机对象构造前设种子。两CPU探针约.998s；原生接线另立1进程/30秒准备预算，合并静态场景检查6组的端点字节/初始参考/错路径拒绝，内部.0353s，含传输准备约4.12s。不是GPU端到端验证。
+
+### 实际CPU规划结果
+
+|任务|项目Lazy PRM 路长q / 段 / 秒 / FULL|官方RRTConnect 路长q / 段 / 秒 / FULL|原生比较|
+|---|---|---|---|
+|61|.8928281 / 10 / 63.690 / 189|.9807007 / 50 / 206.412 / 614|两臂NOT_RUN|
+|17|.9321636 / 11 / 74.788 / 217|.9010830 / 46 / 97.148 / 289|两臂NOT_RUN|
+|53|.8974526 / 10 / 28.488 / 78|1.1220001 / 57 / 222.782 / 668|两臂NOT_RUN|
+
+- 全六组规划和最终闭段复验通过；累计**2055 FULL、853运动几何查询、694.506秒规划进程总墙钟**；184条最终路径闭段新鲜复验SAFE。搜索期间374个状态/运动请求UNSAFE全部保留，UNKNOWN请求0。不是374次碰撞/动作，也没有真实执行。
+- 各组失败候选、全查询START/RETURN、字节路径与计数守恒独立核查通过。路径几何证据仍是原共享Gaussian代理、没有独立物理真值/观测支持域误差上界；没有运行新的动力学跟踪或闭环。
+- RRTConnect是成熟快速首解基线，不是优化型强基线的全集。本轮无平滑/路径优化，不能用PRM三例更快、两例更短宣称优于全部成熟规划方法。Trial17两种路径均存在也不能把历史直线UNSAFE改写为错误。
+
+### 历史60次正QP残差：已确认及缺口
+
+- 从旧R557原始RAW_CYCLES逐条核对控制字节、原始/量化后最大残差、动作盒与L2/L3/执行段记录。**557个raw64最大残差均<=0，60个issued32最大残差>0**；非新增求解或新历史矩阵。
+- 正值min6.1697175e-14，中位1.0362429e-10，p95=4.5926832e-10，max8.6105385e-10（c275）。c275 raw64最大残差−1.0662355e-10，issued32转为正；60条动作盒均严格满足，因此正值来自原归一化CBF行。
+- 真实符号是 `A u-b>0` 表示线性约束违反，非正安全裕量。双积分器源谓词为 `gᵀu+vᵀHv+6gᵀv+5h>=0`，按梯度范数归一化；残差单位q/模型秒²，不是净空q或barrier q²。
+- 源Clarabel 0.10.0仅DefaultSettings+verboseFalse，tol_feas=1e-8；这不是issued32硬保证，不能以“小于solver tolerance”抹零。C0核来源/身份/动作盒，不重新逐行核CBF；L2/L3和执行段FULL是独立的安全义务。60条均历史L2/L3 PASS、执行段SAFE，只说明该记录中后续检查通过，**不证明正残差普遍无害、严格CBF可行或物理安全**。
+- 历史仅保存矩阵哈希和最大残差，没有逐行载荷，因此违反行/Gaussian身份仍UNKNOWN；本轮没有新求解补写历史。全部周期和分布见HISTORICAL_QP_RESIDUAL_AUDIT.json/CSV。
+- 未改残差、源码、阈值或历史裁决；新比较也只共享原实际数值合同。若主张严格P0可行，需独立量化感知修复版本与重新匹配对照，本轮不声称完成。
+
+### 未运行方法、来源及封印
+
+- 官方SplatNav服务器已有HEAD `e996e229daca4e25703a13243541371290a6f7f8`，现存dirty保持。SplatPlan/Bezier及RRT*真实存在，但SplatPlan Stonehenge默认radius=.01而本任务.015，廊道/碰撞和动力学输出合同需专门适配；**NOT_RUN，未宣称战胜它**。[官方仓库](https://github.com/chengine/splatnav)。
+- 已有MPPI是CBFKit MPPI GS软代价CPU H20适配，旧任务73/12/74/66/9/26/79/31，并非本轮Trial61/17/53完整成熟A对照；未伪称pytorch_mppi已集成，软代价不是安全证书。优化型规划/同目标任务型MPC本轮均未挑战。
+- 70项保护来源及Candidate/Frozen/Perf三HEAD/dirty无变化；含额外外部工件总95文件后置复核一致。仅独立DEV实验文件、参考旁路接线与文档新增，原代码/default/历史数据不变。
+- **166工件封印**，SHA清单现场复验通过；manifest自身SHA：
+  `97774c6a52f925b37198575047163be0a952d93858a2a8a2e7cb8e617a472ede`
+- 关键文件：FINAL_REPORT.md、PREREGISTRATION.json、NATIVE_ADMISSION_BUDGET_ADDENDUM.json、SOURCE_LOCK.json、DEV_DIFF.patch、results/CASE_RESULTS.csv、results/CPU_PATH_INDEPENDENT_AUDIT.json、results/HISTORICAL_QP_RESIDUAL_AUDIT.json/CSV、results/GPU_RESOURCE_GATE_BLOCK.json、PROTECTED_AFTER.json、ARTIFACT_SHA256.txt。SEAL_RECEIPT.json是封印外回执，不自引用。
+- **下一步（未启动）**：资源可用并明确继续后，新执行包复用六条冻结路线、参数和相同安全层，执行原预注册六臂；不重搜、不调参、不把已封印包当可写运行目录。本轮不足以回答谁更能到达、谁更安全或是否存在FAS独有创新。
+
+## 以下为历史封存阶段（原文保留，不代表当前运行）
+
 > **当前结论（2026-11-11）：Trial61 冻结 R 已通过原软件到达判据。** 从冻结初态完整重跑一次，557次实际提交后停止；c547–556连续10次同时满足距离<=.01q、速度<=.005q/模型秒。终距.002207373q、末速.001352092、Progress=.997185134。共同前500步动作/状态与上一轮逐位一致。557代理SAFE、0时效违规、0重试；封存退出，无自动后继。不是严格Terminal、物理安全或泛化证明。
 
 ## 当前阶段：Trial61 R 最终到达验证 V1（2026-11-11）
@@ -792,6 +846,8 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 6. 刷新时间与更新者，检查Git diff只涉及本轮文档；仅stage交接相关文件，提交并以非强推方式同步GitHub默认分支，核对远端SHA与文件。分支保护不允许直推则提交PR并说明尚未合入。若本轮明确只读，遵守只读并在回复注明未更新。
 
 ### 阶段更新记录
+
+- 2026-11-11：成熟参考对照V1完成61/17/53×PRM/RRT六组CPU规划（2055 FULL、184最终闭段复验），历史60次issued32正QP残差审计完成；GPU1资源冲突导致原生六臂全部NOT_RUN，0 Factory/提交，无排队重试。166工件封印97774c6a52f925b37198575047163be0a952d93858a2a8a2e7cb8e617a472ede。
 
 - **2026-11-11 / Codex / Trial61冻结R最终到达**：从初态完整重跑一次，700步/900秒单臂预算下557提交软件到达；c522–525曾合格4步后速度超限重置，最终c547–556连续10步。前500动作/状态与父R逐位一致；557代理SAFE、19 PSF、0近停滞/接受违规/未决/重试。532.499s、576求解/7471几何；70来源/三HEAD不变，85工件b1dfea8d…封存。仅HANDOFF发布，任务退出，无自动后继；非严格Terminal或物理安全/泛化证明。
 
