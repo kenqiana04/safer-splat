@@ -1,5 +1,69 @@
 # FAS / safer-splat 固定交接文档
 
+> **当前结论（2026-11-11）：软件接受点修复及新D/R各500提交已完成；两臂均未到达。** R共同H260进展多22.3621个百分点，但末段发现路径索引/前视更新固定点。无接受时效违规、无未决提交；任务已退出。下文当前阶段为最新，旧失败原样保留。
+
+## 当前阶段：Trial61 软件接受点修复与新 D/R 对照（2026-11-11）
+
+- **当前裁决：ACCEPTANCE_REPAIR_VALIDATED_NATIVE_PAIR_COMPLETED**。服务器 CPU 16/16场景首轮通过；新同版本 D/R 各500次真实软件提交，1000/1000代理Oracle SAFE，接受时刻均符合角色时限，0未决、0原生重试。两臂均未软件到达；本裁决不是导航到达PASS。
+- 更新者：Codex，本Safer-Splat会话；更新时间2026-11-11 Asia/Shanghai。正式GitHub master，仅发布HANDOFF，不提交实验源码。更新前命名检查点HANDOFF_BEFORE_TRIAL61_ACCEPTANCE_REPAIR_20261111，旧blob 12f1958a9a3c61e634187c9c618f7a02fd93cfd8及全文存主包inputs。
+- 实验均在 zlab-Super-Server / zlab，经原 zlab-4090；GPU1 UUID GPU-78ef17e4-66cc-4a58-fe43-67d31be8981d。无物理设备、无安装、无他人进程操作。所有任务已退出，GPU会话释放，无自动后继。
+- 核心仍为固定成熟 A、原 TieredPSFWitness、同QP/地图/goal/初态/半径/动作/速度界/终端/Deadline；**执行适配层已变化，不能称原成熟A完全未改**。新合同FAS_SOFTWARE_ACCEPTANCE_DEADLINE_DEV_V1，AcceptancePlant SHA256 044017f2fb814996e03e3127894b8f5bf7799c21c5973e77b04cf910ee94e773；两臂同用。源版本与新差异在SOURCE_LOCK、DEV_DIFF及原生身份文件。旧D不与新R混作单因素对照。
+- 70锁定外部来源文件及三保护HEAD/工作树状态前后一致，父包130工件再次全量复验；原代码、默认开关、旧54次失败提交均未改。
+
+### 原缺口与修复的准确范围
+
+1. 原active_cycle.run_cycle在第454行start原epoch；第859行采样FINAL_COMMIT_GUARD。之后仍有仲裁/事务身份构造/Plant身份检查/纯canonical状态计算。原Plant自身没有真正接受前的时效复查。原事务先Plant，再Token prepare/activate或consume，再trace；Token/trace失败保留已提交。
+2. 新适配层保留原校验与同canonical数值图，先准备候选后状态和收据，再在单写锁内以真实monotonic采样作软件接受决策。导航elapsed<.8-.2；后备采用上轮实验的<.8接受口径；合法Terminal ANY保持。过期返回committed=False、post_state=None、executed_action_identity=None；原事务Token UNCHANGED，协调器结束该臂，不替换动作或重放。
+3. **原Supervisor某些EXPIRED分支仍可选择有效保留Backup**，不能说源码原本一律800ms禁止；新增接受门把上轮实验实际提交判据前移，可能收紧原仲裁动作集合。因此同时重跑D/R，明确新执行合同。
+4. 已接受后证据/Token/trace异常不得写成未提交；未知状态保守停止、保留已知收据、不自动重放。CPU场景验证重复拒绝、计算跨时限、异常、原观察器接线与零同步I/O；模拟回调不证明真实掉电或跨重启exactly-once。
+5. 软件接受的线性化采样不是硬实时保证：采样后OS可能抢占，返回/Token/trace可晚于deadline。原transition入口检查仍保留，prospective计算结束后才采样接受。不能宣称物理动作、外部可见写入或磁盘在截止前原子完成。
+6. 旧R c53 54次提交后超限事实不改；本轮相同前54次数值链逐位一致，但c53接受584.903655ms，未复现旧超限。运行耗时差异不能单归修复，拒绝分支由CPU故障场景验证，不能说本轮原生已观察到过期拒绝。
+
+### 新同版本结果（实际独立D→R）
+
+|指标|D 直接目标|R 冻结绕行|
+|---|---:|---:|
+|尝试/提交|500/500|500/500|
+|软件到达|H500未到达|H500未到达|
+|H260 Progress|0.08541265693212023|0.3090334777268925|
+|H500 Progress|0.08541368574505083|0.30879213483073725|
+|末60步ΔProgress|0|-2.722503600338655e-8|
+|首次near-stall窗口|c176–235|c247–306|
+|Primary / OPEN|500 / 500|500 / 500|
+|PSF支撑实际提交|82|58|
+|执行段共享Oracle SAFE|500|500|
+|最小记录proxy净空q|5.712748631037788e-8|0.011952441862670596|
+|接受耗时max ms|450.297815|584.903655|
+|最小接受余量ms|149.702185|15.096345|
+|entry→Plant返回p50/p95/max ms|276.538 / 456.837 / 685.810|311.324 / 461.525 / 3167.102|
+
+- 共同H260 R−D=0.22362082079477225，即**+22.362082个百分点**；不能叫到达成功。仅Trial61已知开发任务、固定顺序、无重复样本，不作泛化/显著性或纯性能加速结论。
+- D新旧500次、R新旧共同54次动作/状态binary32字节无差异，旧时效失败仍保留。这里只是数值复核，不是新的独立任务。
+- 全入口耗时不扣除epoch前开销：R c288 entry→Plant返回3167.102351ms，其中entry→epoch2699.780459ms，epoch→Plant返回467.321892ms。前段包含意图持久化与调度，不能全归fsync；600ms内接受不等于入口600ms完成，更非20Hz。
+
+### 新查明的R末段参考固定点（封存后仅只读算术）
+
+- R末段不同于D：D末60步名义动作范数中位数.141937477、执行约1.096e-13；R名义动作本身仅2.351062399e-8、执行约1.710e-8，不能一概归因“QP压住强PD”。
+- path_reference.py:7只在距当前段终点<=.005q时更新段号；第8行截断投影；第10–13行前视.02q可以沿下一段越过拐点。这组规则可产生固定点：越过旧顶点而没进入其.005q切段球时，段号仍旧，前视点却位于下一段.02q处；到该点后PD为零，索引不前进。
+- 本轮R自c115进入零基段2，至c499仍在段2；原始投影参数1.250300719>1，截断投影固定旧顶点；距旧顶点.020000046208q>.005q，距返回target仅5.92890872056e-8q。独立按下一段方向构造的.02q固定点与记录target相同；不是新运行跟踪器。
+- 这支持末段“参考不再要求推进”的具体机制；不能排除此前QP/动力学历史影响，也不证明修切段即可到达。CPU无QP跟踪曾通过，与该事实不冲突：参考规则对过滤后的轨迹未充分验证。不能据此称FAS/Gaussian独有困难或安全约束错误。
+- 单位纠正：会话更新一度口误“5毫米(q)”后立即纠正为**0.005q，非米制**；文档与数据始终使用q。
+
+### 资源、失败记录与封存
+
+- CPU首轮16/16，1测试进程，脚本墙钟0.233633412s（真实单调钟，模拟老化epoch/回调，不是GPU时效证明）；未重规划/CPU路线跟踪或重跑旧结果。
+- 原生1会话/2Factory/1000尝试与提交/1140求解/10384几何，817.103455949s；D357.667650s，R在原600s单臂内；总1800s、2000求解/50000几何上限未触及，重试0。1000状态/身份/接受点核验及2000审计记录哈希通过。
+- 保留只读定位缺失cycle_coordinator.py（正确路径active_cycle.py）、查询使用未配置python别名、运行前修正result字段名等工程记录。主封存已成功，但外层PowerShell/SSH返回码转义使bash exit收到非数字；工具exit1不等于封存失败。随后只读复验通过，未重复finalize或实验。
+- 主包：`/disk1/zlab/tmp/fas_trial61_acceptance_deadline_repair_v1/run_20261111T033642Z/`；100工件，清单SHA **efae2699ddd4dc473e76d7cc5c9c23ee93109c7b7a992b13cc401e02a0fdbd7c**。入口FINAL_REPORT.md、results/SCORECARD.json、INDEPENDENT_CROSSCHECK.json、SOURCE_LINE_INDEX.json、HISTORICAL_NUMERIC_COMPARISON.json、RESOURCE_TOTAL.json、native_pair/raw/D|R/results。
+- 独立只读补充包：`/disk1/zlab/tmp/fas_trial61_acceptance_deadline_repair_v1/postseal_readonly_20261111T0355Z/`；清单SHA **1970580acdcecf1e9682c955362d80d716154f42d05870b215979f9ed6e1f9e2**。入口READONLY_SUPPLEMENT_CN.md、REFERENCE_FIXED_POINT_EVIDENCE.json、FULL_COST_WORST_CYCLES.json、CLOSURE_WRAPPER_STATUS.json。补充不改主封印，0新增QP/几何/实验。
+- 当前支持域、独立物理配准误差仍未知；SAFE/净空仅共享Gaussian代理。软件到达判据仍.01q、速度<=.005q/模型秒、连续10提交，非1e-12严格Terminal。
+
+**下一步 NOT_STARTED：** 优先修复/验证成熟路径跟踪器的单调路径进度与拐点更新合同，用已冻结R拐点附近状态检查不锁死、不跳过路径段，并保持所有路线/几何/安全门；先有限CPU验证，再另行明确新原生验证范围。不要继续加长500周期、换种子/路线或调整CBF来掩盖参考固定点。本文更新不授权下一轮运行。
+
+---
+
+## 上一阶段及更早交接原文（历史状态；不作为当前授权）
+
 > **当前结论（2026-11-11）：PARTIAL_NATIVE_DIAGNOSTIC_STOPPED。** Trial61 绕障路径与CPU跟踪通过；原生D完成500提交但停滞，R在第54次已提交动作的真实transition入口超原时限约87微秒后停止。没有完整H260配对，不宣称导航改善；全部任务已退出、无自动后继。下文新增阶段为当前状态，旧失败原文保留。
 
 ## 当前阶段：Trial61 绕障参考端到端诊断（2026-11-11）
@@ -597,6 +661,8 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 6. 刷新时间与更新者，检查Git diff只涉及本轮文档；仅stage交接相关文件，提交并以非强推方式同步GitHub默认分支，核对远端SHA与文件。分支保护不允许直推则提交PR并说明尚未合入。若本轮明确只读，遵守只读并在回复注明未更新。
 
 ### 阶段更新记录
+
+- **2026-11-11 / Codex / Trial61接受点修复及新D/R**：新DEV AcceptancePlant在prospective计算与全部检查后执行原时限接受门，16/16 CPU故障场景通过；新D/R各500真实提交、1000Oracle SAFE、0接受违规。H260 .085412657/.309033478，两臂均未到达；R末段被只读定位为段2/前视目标固定点。主100工件efae2699…，只读补充1970580a…；70保护来源/三HEAD及父130工件不变，1GPU会话817.103s、1140求解/10384几何，无重试/后继。外层shell返回码错误与旧超时失败保留，仅发布HANDOFF。
 
 - **2026-11-11 / Codex / Trial61代理绕障端到端诊断**：修复不可靠OMPL计数接口，采用有限Lazy PRM，512样本/6候选得到10边全段SAFE路径；CPU跟踪429步软件到达。原生D500未到达、R54在实际transition超600ms约87微秒后停止，不重试；1会话/2Factory/554提交/636求解/5544原生几何，CPU623FULL。81保护来源及3HEAD不变，130工件封印a995b2f1…，无后继。仅发布HANDOFF，完整对照未完成，不改变任何旧裁决。
 
