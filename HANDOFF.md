@@ -1,8 +1,27 @@
 # FAS / safer-splat 固定交接文档
 
+> **当前结论（2026-11-12）：候选 A 第一轮机制审查为 NARROW，尚未形成新的执行裁剪算法。** 固定后备模式与必检条件的拒绝逆像可以跨不同查询成立；原 Gaussian 数值验证器的不误删保证、总成本优势和新颖性仍未建立。简单失败球已被 Safety Certificates 的碰撞证书覆盖。本轮无新 GPU/导航/求解/几何查询；六臂封存与历史失败不改。
+
+## 当前阶段：候选 A 拒绝证书机制可行性审查 V1（2026-11-12）
+
+- 当前目标：从明确失败见证建立有有效域的跨候选拒绝；只研究 A，不扩展 B，不预设 FAS/Gaussian 构成贡献。
+- 裁决 **NARROW**：限定固定后备模式、单个必检几何条件及外向误差包络。已给解析证明、两个无相同失败状态前缀的不同查询正例、跨模式误删反例。不能由指定尾失败推出同首控全部后备失败。
+- 关键新复核：六臂98条PSF事件的原制动失败全部为终端速度未达容差，随后98/98 PSF PASS。错误地把原制动FAIL变成整个首控拒绝会删除这些已接受结果。六规划账1235 RETURN中374 UNSAFE（69状态/305运动）；它们不是原生后备失败样本，不能混算命中率。
+- 实际源链：canonical binary32转移、饱和/ceil可变制动、共享FULL闭段、terminal/hold、TieredPSFWitness及实际接受时限。源25次距离二分与1e-8扰动不构成可复用误差上界；原FAIL包装也不等于数学不可行。
+- 已深入核对指定五篇的算法/公式/定理。Safety Certificates作者全文Alg1明确包含碰撞区域拒绝；仿射逆像、转移预计算、Lipschitz失败球本身不主张原创。Gatekeeper接受安全定理不等于拒绝可跨候选推广。
+- 服务器 zlab-Super-Server / zlab；项目HEAD `ab643b8b75d2867cccde54bc7283d9868d48cdc2`、分支 `audit-v3-validation-cohort-source-feasibility-v1`；三保护HEAD及70保护文件前后不变。正式交接仍GitHub master；本机旧HANDOFF与dirty保留。
+- 新包：`/disk1/zlab/tmp/fas_candidate_a_rejection_certificate_review_v1/run_20261112T043342Z/`
+- 主报告 `REPORT_CANDIDATE_A_CN.md`，另有源码逐行快照/哈希、历史reason/见证字段复核、4例算术结果、操作与复核说明。21工件清单SHA **91a74686bb030244896ff7218abbb23f124e292d9d4c974409c01d9dfc7f0a93**；封存UTC 2026-11-12T04:42:48.769056Z，回执清单外。
+- 上游224+166+8=398成员全量只读哈希复验。1个服务器标准库微计算进程、4个固定案例，600s CPU硬上限下算术体墙钟0.000106494s；process_time差低于计量粒度，**不是零开销或加速benchmark**。无torch/原canonical导入，不称GPU复现。新GPU/Factory/Token/PlantCommit/QP/PSF/FULL均0。
+- 只读定位时的旧本地交接、缺文件路径、reason及witness字段名问题均在报告说明；没有重跑旧实验、改判历史结果或修改安全阈值。命名检查点 `candidate-a-mechanism-review-before-artifact-write`，原交接blob `9409cf5b1ba4b0745320e5c0ca26ff2d39bb88fe`及完整原文保留在新包。
+- 下一步 **NOT_STARTED**：只考虑对一个保存的有限不安全见证/固定模式补足数值误差包络，并与“碰撞Safety Certificate+相同转移预计算”作等信息还原攻击。误差证明不成立则停在数学模型；机制等效则关闭本构造创新主张。未批准/启动正式评估器、GPU或下一批导航。
+- 更新者：Codex，本Safer-Splat-1会话。相关任务进程检查未发现native_worker/session_new，当前审查脚本已退出；未建立后台任务或自动后继。本次仅发布HANDOFF，不提交算法/数据。
+
+## 历史已封存阶段（保留，不作为新运行授权）
+
 > **当前结论（2026-11-11）：三任务×两种冻结规划参考的原生六臂全部完成，6/6满足原软件到达条件。** 3405次实际提交、3405共享Gaussian执行段SAFE，0执行段UNSAFE/UNKNOWN、0近停滞窗口；不是严格Terminal、物理安全、普适导航或FAS创新证明。规划优劣随任务变化。全部进程退出，无自动后继。正QP残差和6次WARNING后备仍完整保留。
 
-## 当前阶段：冻结六路线原生闭环对照完成 V1（2026-11-11）
+## 已完成阶段：冻结六路线原生闭环对照完成 V1（2026-11-11）
 
 - **裁决：COMPLETED_SIX_ARM_FROZEN_REFERENCE_COMPARISON_WITH_LIMITS。** 本次用户明确批准在GPU1空闲时复用六条冻结路线/参数完成原预算，不重搜、不调参、不干扰其他作业。启动前实际GPU1空闲，通过单会话锁和每臂资源门；未使用GPU0、未终止/共用其他作业。
 - 更新者Codex，本Safer-Splat-1会话；主包封存UTC **2026-11-11T11:14:17.046299Z**，勘误封存约11:16:56Z。正式交接仅GitHub master HANDOFF；命名检查点 `FROZEN_SIX_ARM_NATIVE_BEFORE_V1`，修改前blob `93a527f85cf89a8fa81c447d5591b77814304713` 完整保存在新包inputs/HANDOFF_BEFORE.md。服务器分析/实验，不在Windows运行测试；本地仅辅助代码传输暂存和交接，不动本地工作树。
@@ -924,6 +943,8 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 6. 刷新时间与更新者，检查Git diff只涉及本轮文档；仅stage交接相关文件，提交并以非强推方式同步GitHub默认分支，核对远端SHA与文件。分支保护不允许直推则提交PR并说明尚未合入。若本轮明确只读，遵守只读并在回复注明未更新。
 
 ### 阶段更新记录
+
+- **2026-11-12 / Codex / 候选A机制可行性审查**：NARROW；固定模式必要约束逆像可跨查询，4例服务器算术与模式反例；原Gaussian数值误差界/总成本优势未立。98原尾终端FAIL→PSF PASS禁止泛化删除首控；Safety Certificates已含碰撞区域。398历史工件/70保护源/三HEAD复验，21件91a74686…封存；新GPU/求解/FULL/执行0，仅更新HANDOFF，无后继。
 
 - **2026-11-11 / Codex / 冻结六路线原生复验完成**：GPU1空闲后1会话6Factory，61/17/53×PRM/RRT六臂均软件到达（559/649/504/597/453/643提交），3405代理SAFE、6次WARNING合法Backup、98 PSF提交、0接受违规/重试/近停滞。3317.446s、3503求解/46579几何，134来源/三HEAD不变；224工件4036f8d9…封存。显存列映射勘误独立8工件79857e76…，原包不改；257实际P0正残差及53-RRT两条raw64正值完整披露。仅HANDOFF发布，无后继，非物理安全/普适优势。
 
