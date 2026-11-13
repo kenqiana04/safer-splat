@@ -1,8 +1,57 @@
 # FAS / safer-splat 固定交接文档
 
-> **当前结论（2026-11-12）：候选 A 第一轮机制审查为 NARROW，尚未形成新的执行裁剪算法。** 固定后备模式与必检条件的拒绝逆像可以跨不同查询成立；原 Gaussian 数值验证器的不误删保证、总成本优势和新颖性仍未建立。简单失败球已被 Safety Certificates 的碰撞证书覆盖。本轮无新 GPU/导航/求解/几何查询；六臂封存与历史失败不改。
+> **当前结论（2026-11-13）：本轮“拒绝证书＋逆像”构造已结案，关闭独立创新主张。** 等信息、等数值要求下，现有构造可由碰撞 Safety Certificates＋相同转移预计算＋历史违规约束优先检查等效表达。终端早检查与相同运动段复用仅登记为 **NOT_STARTED 工程备选**，不是后继任务。不开发 Gaussian 全链误差包络，不启动证明、修复或实验，不自动扩展 B；本支线结束。
 
-## 当前阶段：候选 A 拒绝证书机制可行性审查 V1（2026-11-12）
+## 当前阶段：候选 A 结构差异与可节约成本审查结案（2026-11-13）
+
+- **结案裁决：CLOSED_INDEPENDENT_NOVELTY_CLAIM_ENGINEERING_OPTIONS_NOT_STARTED。** 只关闭当前“拒绝证书＋逆像”具体构造，不宣称整个拒绝证书研究方向无解。用户已明确要求结束支线；上一阶段关于补误差包络及本轮审查中提出的最小终端等价性证明建议，均不再作为待执行计划。
+- 优化对象固定为**原生确定性制动尾分支验证**。规划阶段几何请求单列，不能借其失败频率论证原生尾段命中率或加速。
+- 结构还原：固定模式下 `a^T(M ξ+d)>b-rho+epsilon` 与预计算 `w=a^T M, eta=b-rho-a^T d` 后的 `w^T ξ>eta+epsilon` 是相同判断；失败球的入口逆像与在同一预计算位置上检查碰撞证书是同一覆盖条件。模式/地图/数值误差与失效管理两方均需承担。跨不同查询优于完全相同查询缓存，并不证明优于该组合强基线；没有新增结构或实测总成本优势证据。
+- 真实顺序：首控界→首段几何→canonical后继与h_stop→逐尾动作界/几何/转移→终端速度1e-12→终端位置→zero-hold。确定性尾的终端必要条件可以作为工程上的前置检查候选，但必须保留真实binary32图、饱和/ceil模式、有限性与动作约束。通过早检查不能省略后续安全检查；失败只否定指定制动尾，不否定同首控PSF。
+- 三值/时效边界：提前获知终端失败不自动保留原先首先遇到的几何UNKNOWN、异常reason及恢复路由；不能将UNKNOWN悄悄改为FAIL。缓存几何不复用旧OPEN/Token，加速也可能改变原时效仲裁与轨迹。本次未实施或证明这种重排与绑定。
+
+### 保留的历史分母与调用拆分（只读日志复算，不是新实验）
+
+|原生臂|原制动终端速度失败后PSF PASS|失败分支几何调用|其中两段共享前缀|其余分支独有调用|
+|---|---:|---:|---:|---:|
+|61-PRM|19|46|38|8|
+|61-RRT|29|78|58|20|
+|17-PRM|6|14|12|2|
+|17-RRT|16|38|32|6|
+|53-PRM|17|42|34|8|
+|53-RRT|11|25|22|3|
+|合计|**98**|**243**|**196**|**47**|
+
+- **98/98** 原分支reason为 `TERMINAL_CERTIFICATE_FAILED:TERMINAL_VELOCITY_NOT_ZERO_WITHIN_TOLERANCE`，随后同首控PSF均PASS；不是98个独立任务，不能将原尾失败扩大成首控不可恢复。这些是六臂/三任务中的相关事件，历史真实结果不改。
+- 51次h_stop=1、47次h_stop=2；243=98个首段＋145个制动尾段。对98条记录，首段与L1、第一制动段与L2的端点binary32字节全部一致；position-first使第二位置不依赖尾首动作。196次属于普通相同运动段复用的潜在覆盖范围，不是拒绝证书独占能力。仍需地图/半径/后端/候选证据合法绑定，**未实现缓存、未发新资格**。
+- 相对相同段复用，终端早检查剩余可避免的分支独有几何调用为47次。98条在速度判据失败后，终端位置与hold原本没有执行，不计入可节约工作。通过分支的完整验证及同首控PSF保留。
+- 原生分支外包计时：从原epoch＋`L3_DISCOVERY_ADMISSION.elapsed` 到原制动返回后创建的PSF `entry_ns`，98次合计 **5.148574580秒**；47个最后独有调用从geometry ENTER到上述PSF entry的包络合计 **0.944806380秒**。后者中位数19.756553ms、最大24.310398ms。
+- **包络不是独占几何耗时，也不是实测加速。** CALL_BUDGET只有ENTER、没有逐调用EXIT；区间含收尾/记账/调度。在冻结历史成本核算中仅是对应可删工作的理想外包上界；扣除预检查、复用/绑定、成功分支及失效管理开销后的净收益UNKNOWN。不得事后从历史时延扣时、据此改判OPEN或承诺新闭环加速。
+- 98次PSF自身entry→return合计 **20.541659762秒**，必须保留，不属于可删成本。六臂原会话3317.445856秒仅作尺度参照，不将不同阶段、不同数值域或修改后轨迹混算加速比。
+- 规划数据另列：父包1235条RETURN=861 SAFE＋374 UNSAFE＋0 UNKNOWN；374分为69状态/305运动请求。没有据此估计原生尾段证书收益，也未开展规划拒绝域新验证。
+
+### 可复核来源、版本与本轮维护边界
+
+- 原生包 R：`/disk1/zlab/tmp/fas_mature_reference_frozen_six_arm_native_v1/run_20261111T101823Z/`；清单SHA `4036f8d97603d54a4804e350da5d69f9898e5a3678eb1cb3eb9c6c00db3cd1cf`。计数/包络来自 `native_pair/raw/<arm>/results/{PSF_EVENTS,RAW_CYCLES,CALL_BUDGET}.jsonl`，按cycle/state/candidate关联；并核对PSF保存的states与原L1/L2端点字节。例61-PRM c521：3次原分支几何、h_stop=2、原分支包络63.827361ms、随后PSF PASS；不是新运行。
+- 既有机制审查包：`/disk1/zlab/tmp/fas_candidate_a_rejection_certificate_review_v1/run_20261112T043342Z/`，21工件清单SHA `91a74686bb030244896ff7218abbb23f124e292d9d4c974409c01d9dfc7f0a93`。其中 `REPORT_CANDIDATE_A_CN.md` 第129–174行记录强机制还原与历史NARROW；原包不改写。父规划包见下方历史索引。
+- 源C：`/disk1/zlab/v3_repair_worktrees/safer-splat-fas-vnext-tail-cardinality-targeted-repair-v1`，HEAD `33e34a3ac8d710452775ffe688af77393f734fa9`。Q=C＋`/reproduction/cross_dataset/fas_cbf_unified_executable_safety_certifier_v1`；核查 `Q/certifier/backup_certifier.py:19–52`、`terminal_certificate.py:27–39`、`terminal_set.py:13–14`、`braking_backup_policy.py:20–45`。运行时 `C/reproduction/runtime/certification_execution_state_identity_repair_v1/repaired_components.py:49–69,97–113,162–178` 与 `stack_factory.py:112–163` 给出共享段与canonical绑定。`R/native_pair/code/psf_recovery.py:74–89,113–133` 保留原制动失败后的同首控PSF；`instrumentation.py:35–38,54–57` 确认几何仅记录ENTER。
+- 本轮审查正常只读连接已确认zlab-Super-Server/zlab、项目 `/disk1/zlab/projects/safer-splat`，HEAD `ab643b8b75d2867cccde54bc7283d9868d48cdc2`。本结案发布只维护文档，不重新检查GPU/整机任务，不宣称服务器当前空闲；没有本支线运行、排队或自动后继任务。
+- 发布基点：GitHub master `6f0b36387d36a27a297c952b1b66dc325c8326f3`；隔离文档分支 `codex/candidate-a-closeout-20261113`；修改前命名检查点分支 `codex/checkpoint-a-closeout-20261113` 指向该基点，保留旧HANDOFF。它不是对用户全部dirty/未跟踪数据的备份；原本机工作树、历史失败、服务器封印、算法源码及默认开关均不修改。本结案记录即本节，发布版本以GitHub文件历史为准，不另造实验封印。
+- 最后更新：**2026-11-13，Asia/Shanghai**；更新者：**Codex，本Safer-Splat-1会话**。本次只提交/推送HANDOFF；新证明/修复/测试/导航/QP/PSF/FULL/GPU/Factory/Token/PlantCommit均0。封存成功不等于新增科学验证。
+
+### 结案后的任务状态与重启门槛
+
+|事项|状态|约束|
+|---|---|---|
+|当前拒绝证书＋逆像的独立创新主张|CLOSED|不作为新算法贡献，不自动继续研发|
+|终端必要条件早检查|ENGINEERING_OPTION / NOT_STARTED|仅登记；证明、修复、测试及实验均未启动、未排队|
+|相同运动段复用|ENGINEERING_OPTION / NOT_STARTED|仅登记；必须另行核对绑定与UNKNOWN/时效语义|
+|Gaussian全链误差包络|NOT_STARTED / NOT_PLANNED_IN_THIS_BRANCH|本支线不继续开发|
+|B方向|NOT_STARTED|不自动扩展或转移任务|
+
+**结束条件已满足：完成结案交接后停止。** 只有出现新的、相对上述强机制不能等效复制的机制证据，或明确部署需求，才重新讨论是否开启；仍须另行明确授权，旧建议和本HANDOFF不构成实验权限。没有新证据/需求时，不以补模块、补误差包络或优化名义为由恢复该支线。
+
+## 历史阶段：候选 A 拒绝证书机制可行性审查 V1（2026-11-12；后续建议已由上述结案取代）
 
 - 当前目标：从明确失败见证建立有有效域的跨候选拒绝；只研究 A，不扩展 B，不预设 FAS/Gaussian 构成贡献。
 - 裁决 **NARROW**：限定固定后备模式、单个必检几何条件及外向误差包络。已给解析证明、两个无相同失败状态前缀的不同查询正例、跨模式误删反例。不能由指定尾失败推出同首控全部后备失败。
@@ -944,6 +993,7 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 
 ### 阶段更新记录
 
+- **2026-11-13 / Codex / 候选A结构与成本审查结案**：关闭当前拒绝证书＋逆像的独立创新主张；98原制动终端FAIL后同首控PSF PASS保留。243次原分支几何＝196次共享前缀＋47次分支独有；5.148575s/0.944806s仅历史计时包络，不是实测加速。终端早检查/同段复用仅NOT_STARTED工程备选；不启动证明、修复、实验或Gaussian误差开发，不扩B。仅文档发布，旧封印与失败不变；完成交接即结束，新的非等效机制或明确部署需求才可重新讨论授权。
 - **2026-11-12 / Codex / 候选A机制可行性审查**：NARROW；固定模式必要约束逆像可跨查询，4例服务器算术与模式反例；原Gaussian数值误差界/总成本优势未立。98原尾终端FAIL→PSF PASS禁止泛化删除首控；Safety Certificates已含碰撞区域。398历史工件/70保护源/三HEAD复验，21件91a74686…封存；新GPU/求解/FULL/执行0，仅更新HANDOFF，无后继。
 
 - **2026-11-11 / Codex / 冻结六路线原生复验完成**：GPU1空闲后1会话6Factory，61/17/53×PRM/RRT六臂均软件到达（559/649/504/597/453/643提交），3405代理SAFE、6次WARNING合法Backup、98 PSF提交、0接受违规/重试/近停滞。3317.446s、3503求解/46579几何，134来源/三HEAD不变；224工件4036f8d9…封存。显存列映射勘误独立8工件79857e76…，原包不改；257实际P0正残差及53-RRT两条raw64正值完整披露。仅HANDOFF发布，无后继，非物理安全/普适优势。
