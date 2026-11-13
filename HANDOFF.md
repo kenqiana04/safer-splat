@@ -14,7 +14,7 @@
 - 成本：服务器只读哈希/重计CPU2.641251s、墙钟4.717913s；另封存CPU1.223236s、墙钟1.257975s。前置短读取未单独CPU计时，账户余额UNKNOWN。规划0/48、新几何/优化/模型运行0。保留显示JSON类型错误、输出截断、归档非Git及运行前CSV字段修正，不掩盖失败；无科学重试或排队。
 - 工件`/disk1/zlab/tmp/fas_independent_map_task_v1/run_20261113T145337Z/`：11文件封印复验PASS，清单SHA **`1d68e008050aa5705297e4f50cf5b6ced93ae30916960a6a6c2dd7e01eaf1f71`**；报告SHA **`288c0c24c5654ec7e28190b422ecddc0f2c247088ce1a4b139ee9ed1da7642dd`**。含REPORT、只读复现入口/配置、INPUT_PROVENANCE/TASK_RESULTS/HISTORICAL_QUERY_RECOUNT及操作账。本机仅报告`C:\Users\zlab\Desktop\REPORT\REPORT_INDEPENDENT_MAP_TASK_CN_20261113.md`，SHA一致。
 - **下一步：暂不加跑。** 若另获后续任务，先验证一个版本绑定、坐标一致、unknown边界明确的局部独立参考域，优先现有semantic mesh与正式资产对应；再决定空间留出任务与同源T。当前无任务级取舍实证，不推新增局部余量算法，也不判GS不可用或固定余量已足够。本轮进程已退出，无自动后继。
-- 发布基点`c1fb4d2bc8aaa979a0b47898887885b7556a08b8`；检查点`codex/checkpoint-independent-map-20261113`，文档分支`codex/independent-map-task-20261113`；仅发布HANDOFF摘要。更新：**2026-11-13 23:02 Asia/Shanghai，Codex / 本Safer-Splat-1会话**。
+- 发布基点`c1fb4d2bc8aaa979a0b47898887885b7556a08b8`；检查点`codex/checkpoint-independent-map-20261113`，文档分支`codex/independent-map-task-20261113`；仅发布HANDOFF摘要。更新：**2026-11-13 22:59 Asia/Shanghai，Codex / 本Safer-Splat-1会话**。
 
 ## 历史阶段：固定G/R3四曲线成熟重定时验收（2026-11-13）
 
@@ -1173,7 +1173,7 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 
 ### 阶段更新记录
 
-- 2026-11-13 23:02：完成独立地图任务准入与旧查询重计，裁决C/INPUT_NOT_READY。Replica原mesh存在但可靠全扫掠覆盖域未闭合，ARKitScenes原资格不通过；35源前后匹配，192旧查询重计一致，新规划/几何/任务0。11文件封存，重定时支线正式关闭；报告回传，无自动后继。
+- 2026-11-13 22:59：完成独立地图任务准入与旧查询重计，裁决C/INPUT_NOT_READY。Replica原mesh存在但可靠全扫掠覆盖域未闭合，ARKitScenes原资格不通过；35源前后匹配，192旧查询重计一致，新规划/几何/任务0。11文件封存，重定时支线正式关闭；报告回传，无自动后继。
 - 2026-11-13 22:30：完成四曲线官方toppra独立重定时24次验收，裁决D。同网格与M0差≤2.94e-6，但末两档变化.136–.663模型秒且O1有段内>.1加速度见证；不启动新回放/FULL，不替换O0或时间安排。125工件封存，本轮结束，无自动后继；历史D/53S缺项不回填。
 - 2026-11-13 21:51：完成固定候选路径转换机制核验；14条新回放/3577段通过，O1八条均更短但更慢且更费努力，保留O0并关闭弧长直接替换主张。精确细分不改同网格时间，细化揭示原一拍差不稳健；旧在线D/53S缺项不回填。工件`fas_path_transformation_v1/run_20261113T133500Z`封存，任务退出，无自动后继。
 
