@@ -1,8 +1,26 @@
 # FAS / safer-splat 固定交接文档
 
+> **当前结论（2026-11-13）：规划—执行—安全共有假设独立审查完成，带来源限制；没有新算法获得立项资格。** 原Excel保留，修订表审查P01–P15并补P16–P21；H1/H3为NEED_EVIDENCE，H2/H4为ADAPT_ONLY。唯一优先建议是先取证真实plant的信息年龄与剩余后备有效窗口，**不是已启动任务或实验授权**。已关闭的A拒绝证书＋逆像支线继续关闭，不扩B，不启动误差包络/终端前置。
+
+## 当前阶段：论文共有假设独立审查完成（2026-11-13）
+
+- **裁决：REVIEW_COMPLETE_WITH_SOURCE_LIMITS / NO_NEW_ALGORITHM_APPROVED。** 初稿大多数判断审慎；修正“纳入/外置/限定”混合维度、P04兼容域及P06配套控制器责任、版本与补充证据边界。保留原五表，新增六表、120条多维覆盖、20项确认/修正、4项候选裁决；21篇文献与24条来源记录，不把阅读当作实验复现。
+- 直接先例：PSF已有状态/输入置信集合，PFaSTrack已有参数化界，2026-05-24 safe-dual gatekeeper v2已有主动辨识、安全与预算；ASAP-MPC/旧提交机制处理计算期间跟踪和未来接续；Eclares与Persistification已有能源返航/增广状态不变性。不能由旧版future work推当前空白，不能要求图搜索独自完成感知和控制。
+- SUPER已补读官方主文相关方法与第16页公式；补充Theorem 1访问403、正式勘误`10.1126/scirobotics.adx3476`正文未取得，影响UNKNOWN。未将未知算成论文遗漏，也未声称仓库PDF已包含更正。P19以v2为准，不能搬用v1假设编号。
+- 本轮手工推导：一维延迟加速＋制动安全距离；带有界地图纠错的充分停止条件；计划辨识激励被安全过滤消除的反例及条件性奇异值扰动界。均为条件性分析/已有工具，不是FAS新算法或数值实验。强基线全部成功时仍可比代价，但同信息标准治理得到同一包络则没有独立增量。
+- **唯一下一步建议 / NOT_STARTED**：如另行批准，只核查已存正常/异常接受记录是否具备同钟观测→接受年龄、计算期间plant实际演化/控制、后备剩余有效期与可信界。区分软件接线问题与真实延迟—恢复需求；若状态冻结或成熟同信息方案直接覆盖，停止该科研构造。H1非并行主线；不新建能源/辨识模块。
+- 来源：输入`C:\Users\zlab\Downloads\planning_safety_assumptions_matrix.xlsx`，SHA `b312b61c1743671f4a374bb41c52cab2490747ab63b6b631e9aa0b99f8daecd8`；原2200单元格比较0差异，修订版11表、120个P/V键完整、0错误单元格。这是**文档完整性复核**，不是CPU科学验证。
+- 服务器归档：`/disk1/zlab/tmp/fas_planning_safety_assumptions_review_v1/run_20261113T043023Z/`。27成员清单SHA **045e7abe8acebaec5ff7a9bfd58fdfd90ab890167f4539dc38c43705ce985b57**，传输ZIP前后SHA一致，服务器逐项验证及`sha256sum -c`全部通过。主文件`REPORT_ASSUMPTION_REVIEW_CN.md`、`planning_safety_assumptions_matrix_reviewed.xlsx`、`SOURCE_EVIDENCE.csv`。本机副本`C:\Users\zlab\Documents\Codex\research-output\FAS_ASSUMPTION_REVIEW_20261113\`；文献和工件不提交GitHub。
+- 本轮正常SSH确认`zlab-Super-Server / zlab`，项目`/disk1/zlab/projects/safer-splat`，HEAD `ab643b8b75d2867cccde54bc7283d9868d48cdc2`、分支`audit-v3-validation-cohort-source-feasibility-v1`。只读项目结案/版本材料；不重跑六臂、不复核全历史运行、不宣称GPU当前空闲。原98次PSF恢复、243/196/47拆分与包络非实测加速的边界保留。
+- 新导航/GPU/Factory/Token/PlantCommit/QP/PSF/FULL/训练/性能实验均**0**；没有后台任务、排队或自动后继。Windows只读取用户Excel、处理文献与生成交付物；服务器保存独立副本。未修改算法、历史数据、默认开关或安全合同。保留SUPER访问失败及文档工具问题记录。
+- 发布：基点`9d99e979cede4f8b7ea5e51c890b610a454f1bdb`；文档分支`codex/assumptions-review-20261113`；修改前检查点`codex/checkpoint-assumptions-review-20261113`。原主工作树dirty不清理，仅stage/push HANDOFF；提交版本以GitHub文件历史为准。
+- 最后更新：**2026-11-13，Asia/Shanghai**；更新者：**Codex，本Safer-Splat-1会话**。本轮交付后停止，未将取证建议写成已执行。
+
+## 历史已结案：候选 A 结构差异与成本审查
+
 > **当前结论（2026-11-13）：本轮“拒绝证书＋逆像”构造已结案，关闭独立创新主张。** 等信息、等数值要求下，现有构造可由碰撞 Safety Certificates＋相同转移预计算＋历史违规约束优先检查等效表达。终端早检查与相同运动段复用仅登记为 **NOT_STARTED 工程备选**，不是后继任务。不开发 Gaussian 全链误差包络，不启动证明、修复或实验，不自动扩展 B；本支线结束。
 
-## 当前阶段：候选 A 结构差异与可节约成本审查结案（2026-11-13）
+## 已结案阶段：候选 A 结构差异与可节约成本审查（2026-11-13）
 
 - **结案裁决：CLOSED_INDEPENDENT_NOVELTY_CLAIM_ENGINEERING_OPTIONS_NOT_STARTED。** 只关闭当前“拒绝证书＋逆像”具体构造，不宣称整个拒绝证书研究方向无解。用户已明确要求结束支线；上一阶段关于补误差包络及本轮审查中提出的最小终端等价性证明建议，均不再作为待执行计划。
 - 优化对象固定为**原生确定性制动尾分支验证**。规划阶段几何请求单列，不能借其失败频率论证原生尾段命中率或加速。
@@ -993,6 +1011,7 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 
 ### 阶段更新记录
 
+- **2026-11-13 / Codex / 共有假设独立审查**：P01–P15及6篇直接先例；保留原Excel五表、增六表/120多维项/20差异。H1/H3 NEED_EVIDENCE、H2/H4 ADAPT_ONLY，无新算法立项；H3仅优先取证真实plant年龄与后备窗口。SUPER主文已补、勘误存在但正文和补充理论未核实；safe-dual核至2026 v2。27工件045e7abe…服务器封存，文档校验非科学实验；新GPU/求解/FULL/导航0，A保持关闭，后继未启动。
 - **2026-11-13 / Codex / 候选A结构与成本审查结案**：关闭当前拒绝证书＋逆像的独立创新主张；98原制动终端FAIL后同首控PSF PASS保留。243次原分支几何＝196次共享前缀＋47次分支独有；5.148575s/0.944806s仅历史计时包络，不是实测加速。终端早检查/同段复用仅NOT_STARTED工程备选；不启动证明、修复、实验或Gaussian误差开发，不扩B。仅文档发布，旧封印与失败不变；完成交接即结束，新的非等效机制或明确部署需求才可重新讨论授权。
 - **2026-11-12 / Codex / 候选A机制可行性审查**：NARROW；固定模式必要约束逆像可跨查询，4例服务器算术与模式反例；原Gaussian数值误差界/总成本优势未立。98原尾终端FAIL→PSF PASS禁止泛化删除首控；Safety Certificates已含碰撞区域。398历史工件/70保护源/三HEAD复验，21件91a74686…封存；新GPU/求解/FULL/执行0，仅更新HANDOFF，无后继。
 
