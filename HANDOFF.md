@@ -1,8 +1,18 @@
 # FAS / safer-splat 固定交接文档
 
-> **当前结论（2026-11-16）：安全后备接受域定向审查 NARROW_ENGINEERING_BASELINE_ONLY。** 已证明解析模型中“无几何最小努力提案失败≠同首控无安全尾”；成熟状态约束PSF/MPC已覆盖此能力，未证明FAS独立优势。一次40ms CPU提案因构造超时返回MaxTime，数值配对未完成并停止；不启动原生实验。候选B结案C和六事件STOP_THIS_SCHEDULING_INCREMENT保持关闭。
+> **当前结论（2026-11-16）：固定首控原生几何后备实验 F0_PASS_NO_CONSERVATISM_WITNESS。** 唯一Trial61首拐角构造入口Start/C0/L1/L2均PASS，原制动尾完整通过；按预注册规则M不启动，无PSF求解、无动作提交。仅CERTIFIED_OFFLINE，不是ACCEPTED_TIMELY；没有发现本入口的几何生成器漏解，不自动找第二入口，FAS主线不变。
 
-## 当前阶段：FAS安全认证保守性与名义接受域（2026-11-16）
+## 当前阶段：FAS固定首控原生几何后备见证（2026-11-16）
+
+- **固定入口/来源**：只用Trial61保存路线首拐角，t=(w1−w0)/norm，p=w1−.0025t、v=.02t、u0=0，转binary32一次。state=(-.25028541684150696,-.3031495213508606,.05260443687438965,.01988423988223076,-.0019215625943616033,-.0009615616872906685)，首控由原OwnedProposalSource真实绑定的DEV来源发出；不是历史Primary或P0输出。地图116446Gaussian、顺序/数组SHA、.015q/rho0、dt.05及原盒界保持。
+- **实际资格/停止**：Start/C0/L1/L2 PASS；F0原制动h_stop=4，加首控与zero-hold共6个完整闭段全部CERTIFIED_SAFE，终端三轴速度0、hold状态不变。原无几何PSF和M均NOT_RUN（制动已通过），正式F0=1、M=0，无重试或第二入口。最小保存barrier下界.0021246199257516536q²，对应原代理净空下界约.033472878249q；非独立真值或严格浮点包络。
+- **H/h与原生范围**：保存第0多面体仅GUIDANCE_ONLY；起点/前两后继代数包含通过，没有完整覆盖/可靠数值分离证明，未据H/h授予认证。原query_distance精确方法体+逐数组哈希的有效地图在GPU1执行，沿原canonical/区间闭段/制动/terminal/hold类；不是CPU替代oracle。未初始化生产Factory、未调用run_cycle、未发Token或生成可执行prepared bundle、未PlantCommit。完整见证仅CERTIFIED_OFFLINE。
+- **时效/成本**：单调钟离线epoch设在C0/L1/L2之前；F0_RETURN OPEN约210.224ms，不冒称原协调器或实际接受。冷Start7.365s在周期外；L1 50.496ms、L2 22.298ms、F0完整136.668ms。worker CPU7.518349s/墙钟41.834411s、GPU会话39.439009s；FULL10、求解0、GPU1会话1、Factory/Token/PlantCommit0。原40ms和600ms规则未放宽。GPU1 UUID78ef17e4…→逻辑0，启动前空闲；普通账户额度剩56%（查询时点）。
+- **复核/失败**：6保存GPU转移与CPU binary32算术逐字节一致，仅这6点；首控/state/map/terminal及6段证据hash核对PASS。42来源SHA、2保护HEAD/dirty前后一致。收尾v1模板缺C变量NameError，保存失败代码，仅修模板后封存，无新原生计算；v1精确CPU未落盘（25s上限），成功收尾CPU约.139s。不能把worker计量当精确整轮CPU。23件清单复验PASS。
+- **工件/发布**：`/disk1/zlab/tmp/fas_geometry_guided_backup_v1/run_20261116T043500Z/`；`REPORT_FAS_GEOMETRY_GUIDED_BACKUP_CN.md`，清单SHA `f989717b86a6bf2f6a1c78ff5578effa4ab71e0f32a99157b4b534c949e21491`。仅REPORT复制到工位REPORT目录；仅发布本摘要，不公开代码/原始数据。基点aeb4e929，检查点`codex/checkpoint-geometry-backup-20261116`，文档分支`codex/geometry-guided-backup-20261116`。生产HEAD ab643b8b…、原生参考33e34a3…保持。
+- **下一步/结束**：本入口作为原制动可通过的负对照资产；不补M、不调整入口、不据此否定一般保守性，也不宣称成熟PSF不足。任务进程110633已退出，GPU资源释放，无运行/等待或自动后继。候选B、提前仲裁和其他关闭支线不重开。更新者Codex，本Safer-Splat-1会话，2026-11-16。
+
+## 历史阶段：FAS安全认证保守性与名义接受域（2026-11-16）
 
 - **问题/源码**：区分存在合格尾、受限生成器找到并认证、原时限下实际接受；PD参考与P0 issued候选也分开。原制动按速度选h_stop；PSF固定N8、u0、early_rest(v7=v8=0)，优化调用H/h为空，几何仅事后完整检查。retained是旧有效后缀而非新首控证明；原末端、hold、Token与接受门不改。
 - **解析正例**：位置优先dt=.05、逐轴u/v≤.1、机器人.015q+球障碍.005q；p=(-.0035,.01999,0)、v=(.02,0,0)、u0=0。原制动与无几何最小努力尾最小净空均−1e−5q；同首控/同N8/同early-rest转向尾+4.6199141e−5q、末速0/hold不动。精确有理数全段证明，非历史Gaussian状态、非原生binary32全链。努力由1/750增至7/3000，不称全面改善。镜像半空间不适用及必然不安全前段反例保留。
@@ -1256,6 +1266,8 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 6. 刷新时间与更新者，检查Git diff只涉及本轮文档；仅stage交接相关文件，提交并以非强推方式同步GitHub默认分支，核对远端SHA与文件。分支保护不允许直推则提交PR并说明尚未合入。若本轮明确只读，遵守只读并在回复注明未更新。
 
 ### 阶段更新记录
+
+- **2026-11-16 / Codex / 固定入口原生几何后备实验**：Start/C0/L1/L2与原制动完整见证PASS，h_stop4、6闭段/terminal/hold合格；F0=1、M=0、PSF求解0、FULL10。仅CERTIFIED_OFFLINE，原生接受未测试；H/h仅GUIDANCE_ONLY且未优化使用。修复报告模板NameError而未重跑，42来源/2树不变，23件封印f989717b…；按停止规则结案，不找第二入口，FAS主线保留。
 
 - **2026-11-16 / Codex / 后备认证保守性审查**：定位PSF空几何H/h提案；同首控N8解析正例证明制动/最小努力拒绝而安全转向尾存在，成熟具约束MPC已覆盖。5见证/36解析段、1 CPU QP因40ms构造预算耗尽MaxTime，配对停止，原生调用0。10来源/2HEAD不变，8件封印1703237b…；仅推荐成熟强基线接入，不宣称新算法或及时性，六事件调度与损失预算分支继续关闭。
 
