@@ -1,8 +1,18 @@
 # FAS / safer-splat 固定交接文档
 
-> **当前结论（2026-11-16）：B，零角共同数值修复通过，但冻结三条件未形成F0几何失败/M完整PASS差异。** CPU24项、CUDA12项及5次几何回归通过；NORMAL两臂制动完整PASS；POSITIVE原制动确有几何拒绝，但约1.72/1.74秒才返回、已EXPIRED，两个PSF均未求解；不可补救反例L2拒绝。旧UNKNOWN与缺失张量不改，生产源码不改，无提交或自动后继。
+> **当前结论（2026-11-16）：离线构造层A，限定原认证合同。** 两次真实求解均Solved；E和F0_offline第4段几何拒绝，W和M_offline通过修复版完整段/terminal/hold。成熟状态约束PSF在此固定合成Gaussian入口补足无几何努力生成器，但不是独立新算法或及时提交证据。四条binary32 v7均有>1e−12残差，原末控闭合后v8=0；若要求更强的v7也严格静止，则不能沿用A。旧在线B/EXPIRED、旧UNKNOWN保持，无自动后继。
 
-## 当前阶段：零角修复与同一冻结Gaussian基准（2026-11-16）
+## 当前阶段：FAS固定后备离线构造能力（2026-11-16）
+
+- **共同合同/权限**：只消费旧POSITIVE字节与EVIDENCE中E/W分数控制，原地图数组/H/h/.015q/u0/N8/early_rest/盒界/terminal/hold不变；补丁SHA a2d9b055…共同使用。独立runner直接调用成熟求解器及原基础认证，不调用Tiered在线入口、不创建DeadlineTracker/Token/prepared bundle，不重置旧epoch。每次构造+求解资源上限2秒只用于离线诊断，生产40ms和600/800ms未改。统一OFFLINE_NO_EXECUTION_AUTHORITY/在线NOT_TESTED。
+- **真实两次求解**：F0_offline与M_offline各一次Clarabel，均Solved，6/15迭代，72变量/57等式，96/104不等式；唯一数学差异为8个H/h位置约束。构造+求解外层104.287/3.606ms，矩阵78.261/1.761ms、创建12.425/.263ms、迭代.363/1.183ms。无warm start/重试；固定F0→M存在冷调用/调度混杂，不以M更快声称成本优势。H/h仍GUIDANCE_ONLY，不授认证。
+- **四尾结果**：E与F0_offline第4段j3均FINITE_UNSAFE_WITNESS，后续terminal/hold未运行；W和M_offline各8段+终端/hold完整PASS。E/W/F0/M控制努力分别.001333333472/.002333333472/.001333333174/.001360791597；M比F0约2.06%更费努力，换取安全代理认证。四条分别认证，无跨非同输入证书复用；原制动失败与正常/不可补救对照仅引用旧结果，不重跑。
+- **early_rest精确边界**：原QP的v7/v8等式与canonical终端认证分开。E/W v7最大3.259629e−9，F0 4.656613e−10，M 2.328306e−10；原有限末控闭合后v8均0，不清零状态。原native严格门在v8，故W/M为CERTIFIED_OFFLINE_PATCHED_ROTATION；四条均不满足另加的binary32 v7≤1e−12，不宣称第7步精确静止或更强合同PASS。
+- **认证/资源**：E/W/F0/M认证2339.784/677.116/2331.284/1224.835ms，FULL146/42/146/76，区间节点146/41/146/75；加1次初始化有限查询，合计FULL411/1024、节点408、正式优化2/2、尾4/4。共同初始化8.520891s；worker CPU12.136252s、墙钟15.587215s、GPU1单会话13.590496s；收尾CPU.135131s。嵌套计时不累加、末尾I/O/普通SSH非精确全量CPU。M认证本身>600ms，也没有真实接受测试，旧EXPIRED不改。GPU实时空闲/UUID核验，账户读取余53%。
+- **保护/证据**：34项保存转移/hold CPU binary32逐字节复核，42来源/2保护树不变，输入及补丁SHA匹配；33工件封印复验通过，清单SHA `48bd04bb9176e32cebcddb90fb3cdc74f7775b2040f21a4905c9134092e1db81`。工件`/disk1/zlab/tmp/fas_offline_backup_capability_v1/run_20261116T073000Z/`，报告`REPORT_FAS_OFFLINE_BACKUP_CAPABILITY_CN.md`仅复制工位REPORT。无新增依赖/生产修改/Factory/Token/PlantCommit/导航，无未处理数值或JSON错误；worker已退出、无等待任务。
+- **交接/决定**：GitHub基点03b4de6，检查点`codex/checkpoint-offline-capability-20261116`，文档分支`codex/offline-backup-capability-20261116`；仅发布本摘要。保留A类能力基准及成熟状态约束PSF强工程对照，不宣称FAS独立算法贡献、一般优势或物理安全。完成即结束，不自动派生认证提速/缓存批处理/调度/导航；FAS主线和已结案支线不变。更新者Codex，本Safer-Splat-1会话，2026-11-16。
+
+## 历史阶段：零角修复与同一冻结Gaussian基准（2026-11-16）
 
 - **共同补丁**：独立副本在除法前令非活动分母合法，小角极限按四元数实部符号处理；实际转换入口拒绝全零/非有限，合法非单位仍按原合同归一化。保留普通角路径及1e−6正规化，不修改距离二分、barrier、1e−8、Hessian或双Gaussian记录。原SHA07bd1ff3…，新SHA `a2d9b05515c986d7fff6f55b69250238ccc0dac41d06b7e59f689dea30b2d66d`；新结果外层实现/见证身份绑定补丁，不复用旧证书或Token。
 - **固定回归**：12组CPU float32/64共24项、CUDA实际float32共12项PASS；原零角中间值新采集NPZ，旧包NOT_SERIALIZED不回填。身份/负身份精确I；CPU/GPU对独立闭式矩阵最大误差1.3113022e−6，普通角与旧有限输出差0；正交/行列式最大约2.55e−6，原固定正规化误差如实保留。5次GPU几何单测通过，球h最大误差2.3283064e−10，梯度1.5508147e−9；各向异性单测普通角h/梯度/Hessian与旧输出差0，不算第四科学场景。NaN/Inf与有限性mask、异常索引正常保存，无本轮JSON失败。
@@ -1285,6 +1295,8 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 6. 刷新时间与更新者，检查Git diff只涉及本轮文档；仅stage交接相关文件，提交并以非强推方式同步GitHub默认分支，核对远端SHA与文件。分支保护不允许直推则提交PR并说明尚未合入。若本轮明确只读，遵守只读并在回复注明未更新。
 
 ### 阶段更新记录
+
+- 2026-11-16：固定正例离线E/W+F0/M完成，真实求解2次均Solved；E/F0几何拒绝，W/M原合同完整PASS，构造层A。binary32 v7残差和v8闭合边界单列，在线NOT_TESTED/旧EXPIRED不改。FULL411、33工件封存、保护不变，无新在线批次或自动后继。
 
 - 2026-11-16：独立零角修复CPU24/CUDA12回归及5次几何查询通过，同轮完成原三条件；NORMAL完整PASS，POSITIVE两臂制动几何拒绝但已EXPIRED、PSF均未求解，前段反例L2拒绝。裁决B，不调整冻结条件。43工件封存、42文件/2树保护通过，旧UNKNOWN与缺失张量保持，无生产修改/实际提交/自动后继。
 
