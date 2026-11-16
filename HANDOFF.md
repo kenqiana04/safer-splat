@@ -1,8 +1,21 @@
 # FAS / safer-splat 固定交接文档
 
-> **当前结论（2026-11-16）：离线构造层A，限定原认证合同。** 两次真实求解均Solved；E和F0_offline第4段几何拒绝，W和M_offline通过修复版完整段/terminal/hold。成熟状态约束PSF在此固定合成Gaussian入口补足无几何努力生成器，但不是独立新算法或及时提交证据。四条binary32 v7均有>1e−12残差，原末控闭合后v8=0；若要求更强的v7也严格静止，则不能沿用A。旧在线B/EXPIRED、旧UNKNOWN保持，无自动后继。
+> **当前结论（2026-11-16）：生成—完整认证联合设计裁决B。** 同一冻结合成Gaussian入口，成熟裕量C和根区间缺口代理Q均完整PASS、36 FULL/35节点；Q相对正确C没有节点收益，努力高1.43%，匹配冷进程构造也更贵。保留C为FAS离线工程基线，M保留最低努力基线；关闭本次Q独立增量主张。旧构造层A、在线EXPIRED及UNKNOWN均保持，接受仍NOT_TESTED，无自动后继。
 
-## 当前阶段：FAS固定后备离线构造能力（2026-11-16）
+## 当前阶段：FAS后备生成—完整认证联合设计（2026-11-16）
+
+- **共同合同**：旧POSITIVE字节/u0/N8/early_rest实数等式、.015q、dt=.05位置优先binary32、逐轴.1、H/h GUIDANCE_ONLY、旋转补丁a2d9b055…全部保持。v7残差记录但不另加门；六尾v8=0及zero-hold合格。无Factory/Token/prepared bundle/PlantCommit，不改40ms及600/800ms，全部OFFLINE_NO_EXECUTION_AUTHORITY。
+- **差额定位**：旧W/M的41/75节点中，固定前两段均5+17；34节点差额只在j2/j3/j4：9/3/3对31/13/5。保存查询重建树、字节和下界匹配；global_lower含被细分父区间负界，不当紧净空。新C/Q固定22+可变12+hold1节点，均35；另1次terminal CBF，故每尾36FULL。未改原验证器/强度/节点预算。
+- **唯一机制与强对照**：共同努力上限取已存W=.0023333334724110542，canonical性能容差1e−9单列。C最大化可变p3…p8的归一化最小半空间裕量，再最小努力；Q最小化可变j2…7的“半段长−中点引导裕量”正缺口，再最小努力。各两阶段Clarabel，2秒离线资源保护；Q只预测工作量，不是安全证书，不用免费M验证反馈。无参数扫描/策略修订。
+- **实际配对**：W1→M1→C→Q→M2→W2共6完整认证全部PASS；W/M控制和状态与旧字节一致、换序节点一致。努力W .002333333472、M .001360791597、C .001999839440、Q .002028448311；FULL分别42/76/36/36。认证W662.869–677.578ms，M1163.046–1196.858ms，C561.312ms、Q560.996ms。C相对M以约46.96%更多努力减少必要认证工作；Q不优于C，不声称全面支配或WCET。
+- **计时纠偏/限制**：首次C/Q构造678.245/132.127ms受首次CVXPY编译混杂；另各一次同样新CPU进程复测87.571/133.213ms，提案float64字节各自完全一致，无新GPU证书。共8次优化，未调机制。核心阶段拼接C约652.022ms/Q697.260ms不等于端到端接受；各尾身份/I/O未单计、包含总墙钟。M本轮未重求，不把历史3.606ms和新计时当完整公平净加速；W非通用免费生成器。
+- **资源/保护/失败**：FULL309/2048、节点302、认证6/10、优化8/12；GPU1一次22.113129s、worker CPU11.449901s/墙钟22.453226s，CPU计时1.353217s，预分析/build/收尾合计已计约12.9783s；普通SSH/首次build/一个打印SyntaxError CPU未精确计量。54保存转移/hold算术复核，42来源/2树HEAD和dirty不变。服务器旧Git sparse clone初始化错误后在明确未克隆的同目录改no-checkout成功，无认证拒绝或换权限。原生/计时进程已退出、GPU1释放，GPU0他人作业未动。账户查询时余51%。
+- **工件/版本/决定**：`/disk1/zlab/tmp/fas_generation_verification_v1/run_20261116T080000Z/`；报告`REPORT_FAS_GENERATION_VERIFICATION_CN.md`，45工件清单SHA `d6936dd989bcf121b10ddc07f967f08d90d56ed80c4a6800523a5db51291ab0d`。生产ab643b8b…、参考33e34a3…不变；GitHub基点c405cbbc，服务器独立文档分支codex/generation-verification-20261116，命名检查点codex/checkpoint-generation-verification-20261116，仅发布HANDOFF。报告仅复制工位REPORT。停止本次Q增量，不默认部署C或继续导航；FAS主线保持，单个已知合成入口非物理安全或普适性能结论。更新者Codex，本Safer-Splat-1会话，2026-11-16。
+
+
+> **上阶段结论（2026-11-16）：离线构造层A，限定原认证合同。** 两次真实求解均Solved；E和F0_offline第4段几何拒绝，W和M_offline通过修复版完整段/terminal/hold。成熟状态约束PSF在此固定合成Gaussian入口补足无几何努力生成器，但不是独立新算法或及时提交证据。四条binary32 v7均有>1e−12残差，原末控闭合后v8=0；若要求更强的v7也严格静止，则不能沿用A。旧在线B/EXPIRED、旧UNKNOWN保持，无自动后继。
+
+## 历史阶段：FAS固定后备离线构造能力（2026-11-16）
 
 - **共同合同/权限**：只消费旧POSITIVE字节与EVIDENCE中E/W分数控制，原地图数组/H/h/.015q/u0/N8/early_rest/盒界/terminal/hold不变；补丁SHA a2d9b055…共同使用。独立runner直接调用成熟求解器及原基础认证，不调用Tiered在线入口、不创建DeadlineTracker/Token/prepared bundle，不重置旧epoch。每次构造+求解资源上限2秒只用于离线诊断，生产40ms和600/800ms未改。统一OFFLINE_NO_EXECUTION_AUTHORITY/在线NOT_TESTED。
 - **真实两次求解**：F0_offline与M_offline各一次Clarabel，均Solved，6/15迭代，72变量/57等式，96/104不等式；唯一数学差异为8个H/h位置约束。构造+求解外层104.287/3.606ms，矩阵78.261/1.761ms、创建12.425/.263ms、迭代.363/1.183ms。无warm start/重试；固定F0→M存在冷调用/调度混杂，不以M更快声称成本优势。H/h仍GUIDANCE_ONLY，不授认证。
@@ -1295,6 +1308,8 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 6. 刷新时间与更新者，检查Git diff只涉及本轮文档；仅stage交接相关文件，提交并以非强推方式同步GitHub默认分支，核对远端SHA与文件。分支保护不允许直推则提交PR并说明尚未合入。若本轮明确只读，遵守只读并在回复注明未更新。
 
 ### 阶段更新记录
+
+- 2026-11-16：固定入口生成—认证C/Q配对完成，六尾完整PASS，C/Q同36FULL/35节点；Q努力与匹配构造成本均无额外收益，裁决B，保留成熟裕量工程基线。8次优化/309FULL，旧时效与UNKNOWN不变，无实际提交或自动后继。
 
 - 2026-11-16：固定正例离线E/W+F0/M完成，真实求解2次均Solved；E/F0几何拒绝，W/M原合同完整PASS，构造层A。binary32 v7残差和v8闭合边界单列，在线NOT_TESTED/旧EXPIRED不改。FULL411、33工件封存、保护不变，无新在线批次或自动后继。
 
