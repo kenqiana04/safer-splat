@@ -1,8 +1,18 @@
 # FAS / safer-splat 固定交接文档
 
-> **当前结论（2026-11-16）：受控Gaussian机制基准 INPUT_NUMERIC_UNKNOWN_STOPPED。** 三条件已冻结，正常对照第一次原生FULL返回NONFINITE_GAUSSIAN_QUERY，立即停止；F0/M正式构造与求解均0。源码定位单位四元数零角转换0/0及乘法掩码NaN传播；未修生产函数、未换几何、未重试。尚未检验原生生成器漏解或成熟约束PSF补足。既有Trial61制动PASS负对照保留，FAS主线不变。
+> **当前结论（2026-11-16）：B，零角共同数值修复通过，但冻结三条件未形成F0几何失败/M完整PASS差异。** CPU24项、CUDA12项及5次几何回归通过；NORMAL两臂制动完整PASS；POSITIVE原制动确有几何拒绝，但约1.72/1.74秒才返回、已EXPIRED，两个PSF均未求解；不可补救反例L2拒绝。旧UNKNOWN与缺失张量不改，生产源码不改，无提交或自动后继。
 
-## 当前阶段：FAS原生Gaussian后备构造保守性受控基准（2026-11-16）
+## 当前阶段：零角修复与同一冻结Gaussian基准（2026-11-16）
+
+- **共同补丁**：独立副本在除法前令非活动分母合法，小角极限按四元数实部符号处理；实际转换入口拒绝全零/非有限，合法非单位仍按原合同归一化。保留普通角路径及1e−6正规化，不修改距离二分、barrier、1e−8、Hessian或双Gaussian记录。原SHA07bd1ff3…，新SHA `a2d9b05515c986d7fff6f55b69250238ccc0dac41d06b7e59f689dea30b2d66d`；新结果外层实现/见证身份绑定补丁，不复用旧证书或Token。
+- **固定回归**：12组CPU float32/64共24项、CUDA实际float32共12项PASS；原零角中间值新采集NPZ，旧包NOT_SERIALIZED不回填。身份/负身份精确I；CPU/GPU对独立闭式矩阵最大误差1.3113022e−6，普通角与旧有限输出差0；正交/行列式最大约2.55e−6，原固定正规化误差如实保留。5次GPU几何单测通过，球h最大误差2.3283064e−10，梯度1.5508147e−9；各向异性单测普通角h/梯度/Hessian与旧输出差0，不算第四科学场景。NaN/Inf与有限性mask、异常索引正常保存，无本轮JSON失败。
+- **冻结与结果**：直接复制旧PROTOCOL/NPZ/MAP_MAPPING并复核字节/SHA，未改三个初态/首控/目标/H/h、半径、dt、盒界、N8/early_rest、终端/hold。三个Start PASS；NORMAL和POSITIVE的两臂C0/L1/L2均PASS。NORMAL两臂h_stop4、首控+4制动+hold共6段完整PASS，末速度0，离线返回OPEN159.362/142.355ms。仅CERTIFIED_OFFLINE_PATCHED_ROTATION，接受NOT_TESTED。
+- **正例限制**：两臂原制动第4段（含u0、j3）中点FINITE_UNSAFE_WITNESS；F0/M在PSF入口elapsed1717.672/1738.156ms已EXPIRED，返回PSF_NOT_OPEN_NO_SOLVER，均UNKNOWN，求解0。这是原制动几何失败已映射，但完整F0/M生成器差异仍未建立；不能说M无解或40ms求解超时。MANDATORY_UNSAFE的L2 p1≈−.024→p2≈−.019拒绝，M不绕过共同前段失败。H/h仍GUIDANCE_ONLY且未实际送入求解器。
+- **成本/解释**：FULL268/2048（几何回归5；正常/正例/反例及前置263），正式构造4、PSF0/6；单GPU1会话15.735720s，worker CPU10.443963s/墙钟16.287643s，CPU回归2.547758s。bootstrap/build/回归/worker计CPU13.044822s，收尾另2.291557s；末尾写出/普通SSH非全量精确计费。正例每臂118次FULL，近边界安全段存在73节点细分；L1/L2约73/248ms、制动认证约1.4s。日志/同步成本包含，未做无观察器对照，不能全归因或扣时改判。SAFE字段global_lower包含粗父区间负界，不当紧净空或真实碰撞。
+- **保护/封存**：42来源文件、2保护树前后不变；保存状态转移18项CPU binary32逐字节复核，仅这些链。43工件封印通过，清单SHA `4e305a8907e3c633d5b82d05c5f5aec990c251ded9ae6450ffc649a8ac80bb2d`。工件`/disk1/zlab/tmp/fas_quaternion_fix_controlled_v1/run_20261116T070000Z/`，报告`REPORT_FAS_QUATERNION_FIX_AND_CONTROLLED_BASELINE_CN.md`仅复制工位REPORT。GPU1启动前实时空闲/UUID→CUDA0核验；账户读取时余54%。worker236196退出，无运行/等待、无自动后继；Factory/Token/PlantCommit/导航0。
+- **交接与结束**：GitHub基点ae3da797，检查点`codex/checkpoint-quaternion-fix-20261116`，文档分支`codex/quaternion-fix-controlled-20261116`；仅公开HANDOFF。保留共同数值工程修复与B类结果，不追加PSF、不改40ms/600ms、不挪入口。若未来研究离线构造能力须另行明确授权和非提交资格，不能混作原时限内能力；本轮不启动后继机制。FAS主线及所有已结案支线保持。更新者Codex，本Safer-Splat-1会话，2026-11-16。
+
+## 历史阶段：FAS原生Gaussian后备构造保守性受控基准（2026-11-16）
 
 - **冻结与身份**：正常/解析正例/不可补救首段共3条件，顺序NORMAL→POSITIVE→MANDATORY_UNSAFE；u0=0、原dt.05位置优先binary32、逐轴u/v界.1、N8/early_rest、terminal1e−12/hold不变。两个相同Gaussian记录表示一个半轴float32(.005)球，中心0、四元数(1,0,0,0)，机器人.015q；重复为预先规避原单批squeeze形状风险，不改变占据并集。单独合成map身份，不冒充Stonehenge或历史Primary。H=[.1,-1,0],h=-.0201仅GUIDANCE_ONLY，未用于认证。
 - **真实执行**：GPU1资源门空闲，UUID78ef17e4…→CUDA0/PCI82:00.0核对PASS；原GSplatLoader.query_distance方法体及GPU距离内核调用1次。NORMAL Start返回NONFINITE_GAUSSIAN_QUERY；C0/L1/L2、F0/M、完整段、terminal/hold均NOT_RUN；另外2条件NOT_RUN。新候选尚未发出，无Token/Factory/PlantCommit/导航。接受资格NOT_TESTED，不把UNKNOWN当UNSAFE或PSF失败。
@@ -1275,6 +1285,8 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 6. 刷新时间与更新者，检查Git diff只涉及本轮文档；仅stage交接相关文件，提交并以非强推方式同步GitHub默认分支，核对远端SHA与文件。分支保护不允许直推则提交PR并说明尚未合入。若本轮明确只读，遵守只读并在回复注明未更新。
 
 ### 阶段更新记录
+
+- 2026-11-16：独立零角修复CPU24/CUDA12回归及5次几何查询通过，同轮完成原三条件；NORMAL完整PASS，POSITIVE两臂制动几何拒绝但已EXPIRED、PSF均未求解，前段反例L2拒绝。裁决B，不调整冻结条件。43工件封存、42文件/2树保护通过，旧UNKNOWN与缺失张量保持，无生产修改/实际提交/自动后继。
 
 - 2026-11-16：受控Gaussian机制基准在NORMAL首个FULL非有限时按约停止；正式F0/M与求解0，源码定位单位四元数零角NaN链；另有NaN日志序列化失败，原始逐查询载荷NOT_SERIALIZED。标准库收尾、42文件/2树保护及19工件封印通过，未重试、未修生产内核，无自动后继。原Trial61 PASS与所有旧失败保持。
 
