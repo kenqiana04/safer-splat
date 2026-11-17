@@ -1,8 +1,20 @@
 # FAS / safer-splat 固定交接文档
 
-> **当前结论（2026-11-17）：FAS认证感知后备方法设计完成，未新增实验。** 保留低速C_match覆盖与高速仅j3两节点差异；暂停当前T性能优势主张。唯一推荐下一步是有界工程依赖消融：模板种子直接取C第一阶段原始解，省去C第二阶段种子努力优化，最终逐叶SOC与完整认证不变。尚未实现或证明净收益，不称T2/独立算法创新。
+> **当前结论（2026-11-17）：C1种子原型准备完成，裁决D——GPU资源阻断，六组原生配对未运行。** C1深复制/六组入口/计量封装已在独立目录实现并做无求解mock及静态复核；不称原生P1通过，不判断T_C1性能。FAS主线与旧结论保留。
 
-## 当前阶段：FAS认证感知后备最小重构设计（2026-11-17）
+## 当前阶段：FAS C1种子重构与依赖消融准备（2026-11-17）
+
+- **来源/合同**：基点88102372；按交接定位certification_aware_backup_method/run_20261117T084938Z报告，直接消费direct_margin_matched源码与tight_budget_geometry_transfer地图。唯一算法变化为T_C1使用当前C第一阶段原始解，不做种子C2；C目标和模板/深度/B64/反馈/canonical/认证不改。生产源码、共享环境、旧工件只读。
+- **资源阻断**：本轮首次实时GPU1=17106MiB、86%，PID973573（ftdmamba，17098MiB）；GPU0亦有他人作业，未切换/抢占/终止。未自动复查或等待。精确快照墙钟未同时采集，不以目录时间替代；账户额度UNKNOWN，未沿用历史余额。GPU会话0，无实验后台进程。
+- **实现/无求解检查**：c1_only在原状态/残差通过后深复制U/P/V/gamma/残差；回调与返回独立。C只增加阶段1日志，数学AST保持。两轮各9项mock PASS，模拟Problem.solve总6次但真实优化0。测试覆盖副本、残差拒绝、128FULL含pre、超时不回填、UNKNOWN、模板依赖；原生入口实际共用被测预算对象。
+- **静态修复/门禁**：候选canonical ValueError局部关闭、六组块前计数/时间规划预留、热/含pre时间轴分开、PRE_RETURN与权威RESULT返回事件分开。独立静态复验PASS；正式P1/P2全链BLOCKED，未运行第一配对块。native_runner_UNVALIDATED SHA fb836678136f15a8c44e43182399d25e9d497e371655a833955c1af60cd5e061；不得把静态门替代原生验收。
+- **冻结/结果**：M/C/D_half/T_old/T_C1/C1_direct六组；两个旧Rz30开发输入+预定Rz0/Rz30各Y19975 V0165/V0185四局部条件，字节/cap冻结。四项仅在列明7目录的冻结输入中未发现，不称全历史未见。36方法行全部NOT_RUN，努力/节点UNKNOWN；求解/尾/FULL/原生前置/Token/PlantCommit均0。
+- **计费/未完成**：mock CPU1.532095s、墙钟12.91093s，冻结整理CPU.021356s；文本复制/SSH开销未逐项计量UNKNOWN，未来配置行政预扣10s但非实测/严格上界。保留原总300s CPU/GPU、96求解、48尾、2048FULL及每方法2s/128FULL；当前没有新数值收益。原生GPU入口、六组P1、余下块及P2均待资源允许并明确接续，不能重置累计账。
+- **交付/下一步**：/disk1/zlab/tmp/fas_c1_seed_refactor_v1/run_20261117T092425Z/；REPORT_FAS_C1_SEED_REFACTOR_CN.md、独立代码/差分/冻结配置/mock入口、METHOD_RESULTS/STAGE_COSTS/SEED_TEMPLATE_DIAGNOSTICS。报告SHA9f0dbabb6cb9c13a602ea3dc9354298897a9d004f0c0b1aa1dbd1148d938edd1。当前仅mock可复现，native需重新资源/账户准入及实际P1。无自动重试/后继；不调参、不部署。检查点codex/checkpoint-c1-seed-refactor-20261117，文档分支codex/c1-seed-refactor-20261117，仅HANDOFF发布。更新者Codex，Safer-Splat-1，2026-11-17。
+
+> **上一阶段结论（2026-11-17）：FAS认证感知后备方法设计完成，未新增实验。** 保留低速C_match覆盖与高速仅j3两节点差异；暂停当前T性能优势主张。唯一推荐下一步是有界工程依赖消融：模板种子直接取C第一阶段原始解，省去C第二阶段种子努力优化，最终逐叶SOC与完整认证不变。尚未实现或证明净收益，不称T2/独立算法创新。
+
+## 历史阶段：FAS认证感知后备最小重构设计（2026-11-17）
 
 - **输入/版本**：基点1514bcfd；定向读取equal_effort_structure/run_20261117T075100Z及resume_second、direct_margin_matched/run_20261117T035600Z源码/保存证据。生产、历史与安全门未改，不重新封印全历史。
 - **机制边界**：provider中点距离减区间半长度乘段长决定细分，统一H/h裕量不能单独决定工作。高速T根余量5.974e-9q不是物理净空或稳定性证明；C负父粗界不是碰撞。后验努力匹配、两个已见输入、无在线收益保持。
@@ -1420,6 +1432,8 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 6. 刷新时间与更新者，检查Git diff只涉及本轮文档；仅stage交接相关文件，提交并以非强推方式同步GitHub默认分支，核对远端SHA与文件。分支保护不允许直推则提交PR并说明尚未合入。若本轮明确只读，遵守只读并在回复注明未更新。
 
 ### 阶段更新记录
+
+- 2026-11-17｜C1种子重构准备（D）：GPU1首次检查86%/17.1GiB他人作业，未运行六组。C1深复制与六组入口静态完成、两轮9项无求解mock PASS；原生P1/P2 BLOCKED，0优化/0FULL/0GPU。36方法行NOT_RUN，工件fas_c1_seed_refactor_v1/run_20261117T092425Z，无自动重试。
 
 - 2026-11-17｜认证感知后备方法设计完成、未新增实验：暂停当前T性能主张，仅推荐C1原始解替代C1+C2模板种子的依赖消融；原认证/反馈不改，M/C/D/原T/重组/直接C1六组协议未执行。M1设计复验PASS，新增优化/GPU/FULL均0。工件fas_certification_aware_backup_method_v1/run_20261117T084938Z。
 
