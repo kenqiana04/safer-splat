@@ -1,8 +1,21 @@
 # FAS / safer-splat 固定交接文档
 
-> **当前结论（2026-11-18）：固定首控双障碍迁移20/20方法完成；保留努力—认证工作取舍，不主张总体净成本优势。** 两个不同椭球均有实际相关证据，T_C1四项首次完整合格；D_half四项努力更低、三项返回更早，T只在前方低速单次快约10.08ms。T较D少4/4/6/2节点，不等于稳定净提速。保留成熟强基线和机制资产，暂停一般性能优势主张，不开发T2或部署。
+> **当前结论（2026-11-18）：FAS固定后备顺序36/36软件单周期完成，裁决D；没有及时接受/实际提交改善证据。** F/B各4次完整制动PASS但迟到，C的12次C1均数值optimal却超原40ms构造窗口；全部实际接受点NOT_REACHED、提交0。正常PASS另触发原冻结ARBITRATION缺项，安全关闭；不是AcceptancePlant拒收。不放宽时限、不追加实验。
 
-## 当前阶段：FAS最小多障碍迁移与实际用途核查（2026-11-18）
+## 当前阶段：固定成熟后备构造器调用顺序准入与软件单周期（2026-11-18）
+
+- **来源/配置**：基点540e8476；四个原多障碍输入+两原Rz0制动PASS输入，直接保存字节；六输入已见。F=brake→原空H energy；B=brake→冻结C1_direct；C=C1_direct→仅原允许且OPEN的明确候选FAIL才brake。三方法同修复Gaussian、binary32、固定u0、r/dt/盒约束、terminal/hold与原600/800ms；C1数学/cap/40ms不改。无T/C2/模板。
+- **实际结果**：顺序F/B/C及C/B/F共36周期，16真实优化（F3/B1/C12）、42后备尝试、1749FULL/1705节点，最大单周期118FULL未触256。困难F/B16次制动均FINITE_UNSAFE；F3次energy成功但后续FULL准入迟到；B1次C1越全局OPEN，另一次构造耗尽剩余窗口未进solver。C12次optimal但构造47.573–164.541ms>40ms，UNKNOWN关闭、不转brake。全部NO_COMMIT，接受事件/实际动作/活动Token均0，不把无输出填0努力。
+- **完整证据/路由边界**：两个正常输入F/B共8次brake完整PASS，原CanonicalL3生成PREPARED_UNCOMMITTED bundle，terminal/zero-hold通过；周期约1.36–1.69s。保存链为L3_FOUND RESOLVED→FINAL_COMMIT_GUARD EXPIRED→ARBITRATION BLOCKED_MISSING/ROUTING_RULE_MISSING。同原46行表；certified SOURCE_NATIVE_EXISTING PRIMARY且无retained不匹配只供Recovery的过期边界，也不匹配无candidate边界。不是选错表，不是Plant拒收；未改路由，不能称正向接受/Token激活已原生验收。
+- **生命周期/实现**：合成地图独立factory注入真实CanonicalL1/L2/L3、VNextCoordinator/Supervisor、原Token/Trace/ActiveRunner与AcceptancePlant；非直接运行116446地图factory。每周期freshDEV source/资格对象，Start按原start_trial在run_cycle前，当前状态FULL成本单列；run_cycle唯一真实epoch，尾尝试不重置。不预求解，不复用旧尾/Token/认证答案；仅真实提交才更新状态，本批没有更新。共同保守修正未认证制动不一律FAIL，UNKNOWN不恢复；原生产源码不改。
+- **复核/修复**：13项接受语义mock+6项候选路由mock PASS，非原生成功接受。首完整块退出GPU后P1通过，原样续33周期；P2核36独立source、全部finite查询与179段、8bundle、0提交、源码/输入身份通过。初稿把缺项错定位L3_FOUND，已据原context更正ARBITRATION，保留勘误、无科学重跑。普通字段/非有限分类/来源SHA/finally收据/计数修复均科学运行前完成。
+- **资源/保护**：GPU1启动两次实时6MiB/0%且无compute，账户普通允许剩15%/14%；GPU0他人进程不动。两会话GPU53.131817/180s，含mock已计CPU39.855671s，复核另约.116476s；零散准备/SSH非全量计时，CPU行政扣账60/300s非实测上界。36/48/72/6144等上限内（实际36周期/16solve/42attempt）；保护checkout HEAD33e34a3两次前后clean不变。worker均退出，GPU已释放，无后台等待/自动后继、无硬件/导航/Gazebo/训练。
+- **工件/交接**：/disk1/zlab/tmp/fas_backup_order_cycle_v1/run_20261118T033830Z/；REPORT_FAS_BACKUP_ORDER_CYCLE_CN.md SHA3be9100026a4f7eb29e13e3f410391c67f4af81bd5a693412cfc8e12b23b9d38，PAIRED_CYCLE_RESULTS/ATTEMPT_COSTS/PROPOSAL_COSTS/EVENTS、原context与实际接受空回执、独立实现/冻结输入/差分和P1/P2。仅报告复制既有REPORT，原型/数据不公开。检查点codex/checkpoint-backup-order-cycle-20261118，文档分支codex/backup-order-cycle-results-20261118。
+- **下一步/停止**：保留成熟构造与FAS安全主线，停止本轮在线顺序收益主张；当前构造编译与完整认证成本需分开看，缺失关闭路由也不授权迟到提交。本轮不自动预构造/改路由/放宽门/重跑，不新增T2、选择器、场景或部署。更新者Codex/Safer-Splat-1，2026-11-18。
+
+> **上一阶段结论（2026-11-18）：固定首控双障碍迁移20/20方法完成；保留努力—认证工作取舍，不主张总体净成本优势。** 两个不同椭球均有实际相关证据，T_C1四项首次完整合格；D_half四项努力更低、三项返回更早，T只在前方低速单次快约10.08ms。T较D少4/4/6/2节点，不等于稳定净提速。保留成熟强基线和机制资产，暂停一般性能优势主张，不开发T2或部署。
+
+## 历史阶段：FAS最小多障碍迁移与实际用途核查（2026-11-18）
 
 - **版本/冻结**：正式基点bc6d0f2e；直接继承c1_seed_refactor/resume_20261118T021441Z。独立集合适配只将理想模板/法向/SOC/反馈扩为逐障碍；原native每FULL仍计算两条h取最小，认证器/旋转补丁不变。预先固定SIDE_BAND与AHEAD_SWITCH两排列、vx=.0165/.0185共四输入，两个Gaussian中心不同、数量仍2；H/h GUIDANCE_ONLY，r=.015q、dt=.05、binary32、u0/N8/early_rest/v8/hold/cap和40ms/600-800ms不变。
 - **实际结果**：M/C/D_half/C1_direct/T_C1共20方法，16完整PASS、4M在含pre128FULL后WORK_LIMIT_UNKNOWN；M不是几何FAIL或物理无解。四次原制动均FINITE_UNSAFE_WITNESS，未重跑无几何PSF，不能推断生产PSF必然失败。36优化、24尾调用（20+4制动）、1018FULL、998节点；T反馈0，不称反馈迁移验证。C/D/C1/T四输入均在热.75s内完整返回，含pre曲线分列，无截止倒填。
@@ -1456,6 +1469,8 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 6. 刷新时间与更新者，检查Git diff只涉及本轮文档；仅stage交接相关文件，提交并以非强推方式同步GitHub默认分支，核对远端SHA与文件。分支保护不允许直推则提交PR并说明尚未合入。若本轮明确只读，遵守只读并在回复注明未更新。
 
 ### 阶段更新记录
+
+- 2026-11-18 Codex：固定F/B/C六输入两顺序36周期完成，裁决D；8原制动完整PASS迟到、C1构造均超40ms，0实际接受/提交。16优化/1749FULL，GPU53.132s。原ARBITRATION过期native有证据无retained缺项安全关闭，非Plant拒收；P1/P2通过，原生正向接受未覆盖。工件fas_backup_order_cycle_v1/run_20261118T033830Z，无自动后继。
 
 - 2026-11-18 Codex：固定双障碍四输入五方法20组完成，16PASS/4M限额UNKNOWN，4制动几何FAIL；36优化/1018FULL，GPU29.446s。两障碍实际相关；T省认证工作但D努力更低且三例更快，未证稳定总成本优势。P1/P2通过，工件fas_multi_obstacle_backup_v1/run_20261118T025831Z；仅离线，无部署/T2/自动后继。
 
