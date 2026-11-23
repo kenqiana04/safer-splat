@@ -2,6 +2,8 @@
 
 ## 当前阶段：H3 最后一场单独复查，计算余量仍不足，正式进入保持 7/8
 
+- 最新重试（2026-11-23 19:07:47 +08:00）：仅正常供给 FAS。原 Guard 的 4 个样本为 25/68/100/100%，中位数 84% > 60%；账户通过，显存余量仍为 966 MiB。CUDA 前阻断，0 新回执，进程已退出，不排队、不开 H4。隔离证据 `/disk1/zlab/tmp/fas_stonehenge_four_system_full_mission_v1/h3_last_retry_20261123T110727Z/`；REPORT_STONEHENGE_H3_NORMAL_FAS_RETRY_1907_CN.md 已复制并校验哈希。更新者 Codex，科学配置与前七场不变。
+
 - 2026-11-23 仅对正常供给 FAS 启动一次冻结准入。账户通过；MEM-V2 空闲 7110 MiB，门后余 966 MiB；四次利用率 74/95/75/78%，中位数 76.5% > 60%。CUDA 前 STOP_INSUFFICIENT_COMPUTE_HEADROOM，未进入正式场次，非方法失败。前七场及旧阻断保持。
 - 此次新增 0 原生点、0 求解、0 GPU 会话、0 回执；外层 CPU 0.46 s。正常供给 FAS 的任务推进仍缺测，无新排序证据。不等卡不重试，无后台任务，H4 未启动。方法、生产及安全门不改。
 - 原账与报告：`/disk1/zlab/tmp/fas_stonehenge_four_system_full_mission_v1/h3_last_20261123T110142Z/`；REPORT_STONEHENGE_H3_LAST_NORMAL_FAS_ADMISSION_CN.md 已复制本机并校验 SHA-256。沿用 codex/handoff-h3-resume-20261123 交接，更新者 Codex / Safer-Splat-1。
@@ -1817,6 +1819,8 @@ Trial23 通过是**原共享CPU函数的条件结果**。另外三条直连 FAIL
 6. 刷新时间与更新者，检查Git diff只涉及本轮文档；仅stage交接相关文件，提交并以非强推方式同步GitHub默认分支，核对远端SHA与文件。分支保护不允许直推则提交PR并说明尚未合入。若本轮明确只读，遵守只读并在回复注明未更新。
 
 ### 阶段更新记录
+
+- 2026-11-23 19:07 +08:00：仅重试 H3 正常供给 FAS；共享计算门未通过（84% > 60%），未产生正式结果，仍 7/8。
 
 - 2026-11-23：H3 最后一场再授权后仅检查一次。计算负载中位数 76.5% 超原门，CUDA 前停止，正式仍 7/8；已退出，未开 H4。
 
